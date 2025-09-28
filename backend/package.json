@@ -9,10 +9,8 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.19.4",
-    "@supabase/supabase-js": "^2.57.4",
     "@trigger.dev/sdk": "4.0.4",
-    "hono": "^4.9.8",
-    "resend": "^6.1.0"
+    "hono": "^4.9.8"
   },
   "devDependencies": {
     "@trigger.dev/build": "4.0.4",
