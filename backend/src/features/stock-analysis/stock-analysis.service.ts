@@ -1,5 +1,6 @@
 import { getProductOrderHistory } from "./order-history/order-history.service";
-import { calculateDailyConsumption } from "./consumption.utils";
+import { calculateDailyConsumption } from "./utils/consumption.utils";
+import { predictStockStatus } from "./utils/prediction.utils";
 import type { ProductAtRisk, StockAnalysisResult } from "./stock-analysis.types";
 
 /**
@@ -13,18 +14,18 @@ export async function analyzeStockForClient(
   clientId: number = 3,  // Arthur Schwaiger pour tests
   daysOfHistory: number = 365
 ): Promise<StockAnalysisResult> {
-  console.log(`\nAnalyse stock pour client ${clientId}`);
+  // console.log(`\nAnalyse stock pour client ${clientId}`);
 
   // 1. Récupération de l'historique
   const orderHistory = await getProductOrderHistory(clientId, daysOfHistory);
-  console.log(`${orderHistory.products.length} produits trouvés dans l'historique`);
+  // console.log(`${orderHistory.products.length} produits trouvés dans l'historique`);
 
   const productsAtRisk: ProductAtRisk[] = [];
 
   // 2. Pour chaque produit, calculer la consommation
   for (const product of orderHistory.products) {
-    console.log(`\n  Produit: ${product.product_name}`);
-    console.log(`     Commandes: ${product.orders.length}`);
+    // console.log(`\n  Produit: ${product.product_name}`);
+    // console.log(`     Commandes: ${product.orders.length}`);
 
     // Calcul consommation moyenne
     const consumptionPerDay = calculateDailyConsumption(
@@ -32,9 +33,20 @@ export async function analyzeStockForClient(
       daysOfHistory
     );
 
-    console.log(`     Consommation: ${consumptionPerDay.toFixed(2)} unités/jour`);
+    // console.log(`     Consommation: ${consumptionPerDay.toFixed(2)} unités/jour`);
 
-    // TODO: prediction.utils
+    // Skip si pas de consommation
+    if (consumptionPerDay <= 0) {
+      continue;
+    }
+
+    // Prédiction du stock
+    const stockPrediction = predictStockStatus(
+      product,
+      consumptionPerDay,
+      new Date()
+    );
+
     // TODO: calcul quantités
     // Pour l'instant on met des valeurs temporaires pour tester
 
@@ -43,7 +55,7 @@ export async function analyzeStockForClient(
       product_name: product.product_name,
       product_uom: product.product_uom_id,
       consumption_per_day: consumptionPerDay,
-      days_until_stockout: 0, // TODO
+      days_until_stockout: stockPrediction.daysUntilStockout,
       quantity_needed: 0,     // TODO
       quantity_to_order: 0,   // TODO
     });

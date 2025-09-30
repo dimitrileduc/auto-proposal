@@ -108,8 +108,9 @@ clients_inactifs = getInactiveClients(seuil_inactivité)
 
 pour chaque client in clients_inactifs {
 
-  // IMPORTANT: Ajuster la période pour clients récents
-  ancienneté = getClientAge(client.id)
+  //TOCHECK ? Ajuster la période pour clients récents
+  // ancienneté = getClientAge(client.id)
+  // ou prendre en compte la date de la premiere commande .
   période_analyse = min(ancienneté, 365_jours)
 
   // 2. ORDER HISTORY SERVICE

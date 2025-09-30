@@ -1,4 +1,4 @@
-import type { OrderLineDetail } from "./order-history/order-history.types";
+import type { OrderLineDetail } from "../order-history/order-history.types";
 
 /**
  * Calcule la consommation moyenne par jour basée sur l'historique des commandes
@@ -19,7 +19,7 @@ export function calculateDailyConsumption(
   // Calcul du total des quantités commandées
   const totalQuantity = orders.reduce((sum, order) => sum + order.quantity, 0);
 
-  console.log(`     Total commandé: ${totalQuantity} unités sur ${daysOfHistory} jours`);
+  // console.log(`     Total commandé: ${totalQuantity} unités sur ${daysOfHistory} jours`);
 
   // Consommation moyenne par jour
   const dailyConsumption = totalQuantity / daysOfHistory;
