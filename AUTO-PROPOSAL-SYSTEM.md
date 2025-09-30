@@ -75,18 +75,19 @@ src/
 │   ├── client-inactivity/
 │   │   ├── inactivity.service.ts             // Logique détection inactivité
 │   │   └── inactivity.utils.ts               // Utils dates, calculs simples
-│   ├── stock-analysis/
+│   ├── stock-replenishment/
 │   │   ├── order-history/
 │   │   │   ├── order-history.types.ts        // Types/interfaces
 │   │   │   ├── order-history.service.ts      // Récupération historique client
 │   │   │   └── transform.utils.ts            // Transformation data
-│   │   ├── stock.service.ts                  // Algo prédiction rupture
-│   │   ├── consumption.utils.ts              // Calculs consommation/jour
-│   │   └── prediction.utils.ts               // Utils prédiction stock
+│   │   ├── utils/
+│   │   │   ├── consumption.utils.ts          // Calculs consommation/jour
+│   │   │   ├── prediction.utils.ts           // Utils prédiction stock
+│   │   │   └── quantity.utils.ts             // Calculs quantités à commander
+│   │   └── stock-replenishment.service.ts    // Orchestrateur principal
 │   └── proposal-generation/
 │       ├── proposal.service.ts               // Génération devis Odoo
-│       ├── quantity.utils.ts                 // Calculs quantités, MOQ
-│       └── formatting.utils.ts               // Format devis
+│       └── formatting.utils.ts               // Format devis pour API
 ├── infrastructure/
 │   └── odoo/
 │       ├── odoo.service.ts                   // API calls Odoo (JSON-2)
@@ -178,12 +179,15 @@ pour chaque client in clients_inactifs {
 
 - Client inactivity detection
 - Order history retrieval & grouping
+- Stock replenishment analysis
+  - `consumption.utils.ts` ✅
+  - `prediction.utils.ts` ✅
+  - Refactoring: `stock-analysis` → `stock-replenishment` ✅
 
-### 🚧 En cours (Stock Analysis)
+### 🚧 En cours (Stock Replenishment)
 
-- [ ] `consumption.utils.ts`
-- [ ] `prediction.utils.ts`
-- [ ] `stock.service.ts`
+- [ ] `quantity.utils.ts`
+- [ ] Filtrage produits selon seuil (19j)
 
 ### ❌ À faire
 
@@ -191,4 +195,4 @@ pour chaque client in clients_inactifs {
 - [ ] Trigger.dev orchestration
 - [ ] Email notifications
 
-**Status** : 🚧 35% complété (~20h restantes)
+**Status** : 🚧 45% complété (~15h restantes)

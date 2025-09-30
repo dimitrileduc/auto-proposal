@@ -1,4 +1,4 @@
-export interface ProductAtRisk {
+export interface ProductStockStatus {
   product_id: number;
   product_name: string;
   product_uom: [number, string];
@@ -10,7 +10,7 @@ export interface ProductAtRisk {
   quantity_to_order: number;     // arrondie selon MOQ & multiples UoM (ex: 72 si vendu par 12)
 }
 
-export interface StockAnalysisResult {
+export interface StockReplenishmentResult {
   client_id: number;
-  products_at_risk: ProductAtRisk[];
+  products: ProductStockStatus[];
 }

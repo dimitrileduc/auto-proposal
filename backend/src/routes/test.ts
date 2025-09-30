@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { getInactiveClients } from '../features/client-inactivity/inactivity.service'
-import { getProductOrderHistory } from '../features/stock-analysis/order-history/order-history.service'
-import { analyzeStockForClient } from '../features/stock-analysis/stock-analysis.service'
+import { getProductOrderHistory } from '../features/stock-replenishment/order-history/order-history.service'
+import { calculateReplenishmentNeeds } from '../features/stock-replenishment/stock-replenishment.service'
 
 const test = new Hono()
 
@@ -77,16 +77,16 @@ test.get('/orders/history', async (c) => {
 })
 
 /**
- * GET /test/stock/analysis?partnerId=3
- * Route de test pour l'analyse de stock (calcul consommation)
+ * GET /test/stock/replenishment?partnerId=3
+ * Route de test pour le calcul des besoins de réapprovisionnement
  */
-test.get('/stock/analysis', async (c) => {
+test.get('/stock/replenishment', async (c) => {
   try {
     const partnerIdParam = c.req.query('partnerId')
     const partnerId = partnerIdParam ? parseInt(partnerIdParam, 10) : 3  // Arthur par défaut
 
-    console.log('Démarrage analyse stock...')
-    const analysis = await analyzeStockForClient(partnerId)
+    console.log('Calcul des besoins de réapprovisionnement...')
+    const analysis = await calculateReplenishmentNeeds(partnerId)
 
     return c.json({
       success: true,

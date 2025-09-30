@@ -1,26 +1,26 @@
 import { getProductOrderHistory } from "./order-history/order-history.service";
 import { calculateDailyConsumption } from "./utils/consumption.utils";
 import { predictStockStatus } from "./utils/prediction.utils";
-import type { ProductAtRisk, StockAnalysisResult } from "./stock-analysis.types";
+import type { ProductStockStatus, StockReplenishmentResult } from "./stock-replenishment.types";
 
 /**
- * Analyse le stock d'un client et identifie les produits à risque de rupture
+ * Calcule les besoins de réapprovisionnement d'un client
  *
  * @param clientId ID du client Odoo (défaut: 3 = Arthur Schwaiger)
  * @param daysOfHistory Nombre de jours d'historique à analyser (défaut: 365)
- * @returns Liste des produits nécessitant une commande
+ * @returns Statut des produits avec consommation et prédictions
  */
-export async function analyzeStockForClient(
+export async function calculateReplenishmentNeeds(
   clientId: number = 3,  // Arthur Schwaiger pour tests
   daysOfHistory: number = 365
-): Promise<StockAnalysisResult> {
+): Promise<StockReplenishmentResult> {
   // console.log(`\nAnalyse stock pour client ${clientId}`);
 
   // 1. Récupération de l'historique
   const orderHistory = await getProductOrderHistory(clientId, daysOfHistory);
   // console.log(`${orderHistory.products.length} produits trouvés dans l'historique`);
 
-  const productsAtRisk: ProductAtRisk[] = [];
+  const analyzedProducts: ProductStockStatus[] = [];
 
   // 2. Pour chaque produit, calculer la consommation
   for (const product of orderHistory.products) {
@@ -50,7 +50,7 @@ export async function analyzeStockForClient(
     // TODO: calcul quantités
     // Pour l'instant on met des valeurs temporaires pour tester
 
-    productsAtRisk.push({
+    analyzedProducts.push({
       product_id: product.product_id,
       product_name: product.product_name,
       product_uom: product.product_uom_id,
@@ -63,6 +63,6 @@ export async function analyzeStockForClient(
 
   return {
     client_id: clientId,
-    products_at_risk: productsAtRisk,
+    products: analyzedProducts,
   };
 }
