@@ -1,28 +1,28 @@
-## 📋 Contexte et Objectif
-
-Implémenter un système automatisé qui génère et envoie des propositions de commandes aux clients pour maintenir des commandes régulières sans effort commercial.
-
-### Principe de base
+### Principe
 
 - **Ne proposer que les produits déjà commandés** par le client historiquement
 - **Détecter automatiquement** les besoins basés sur l'inactivité et le risque de rupture
 - **Automatiser complètement** la génération de devis et l'envoi d'emails
 
-## 🎯 Déclencheurs du Système
+## 🎯 Déclencheur du Système
 
-### 1. Inactivité Client
+### Inactivité Client
 
 - Le client n'a plus commandé depuis **X jours** (paramétrable, ex: 30 jours)
 
-### 2. Risque de Rupture Estimé
+## 📊 Analyse Déclenchée
 
-- Calcul basé sur : **consommation/jour** (calculée sur l'historique) + **dernière commande**
-- Estimation du stock restant théorique
-- Prédiction de rupture selon la couverture cible
+### Prédiction de Rupture de Stock
+
+Une fois un client identifié comme inactif, le système analyse pour chaque produit :
+
+- **Consommation/jour** calculée sur l'historique
+- **Stock restant théorique** basé sur la dernière commande
+- **Date de rupture estimée** selon la consommation moyenne
 
 ## ⚙️ Paramètres de Configuration
 
-### Paramètres Globaux (pas par client pour simplicité)
+### Paramètres Globaux
 
 - **X jours d'inactivité** : seuil de déclenchement (ex: 30 jours)
 - **Couverture cible** : nombre de jours de stock souhaité (ex: 14 jours)
@@ -34,23 +34,25 @@ Implémenter un système automatisé qui génère et envoie des propositions de 
 ```
 ┌─ CRON Quotidien ─┐
 │                  │
-├─ 1. Analyse Inactivité
+├─ 1. Détection Clients Inactifs
 │  └─ Clients sans commande depuis X jours
 │
-├─ 2. Analyse Risque Rupture ⭐
+├─ 2. Analyse Stock & Calcul Quantités ⭐
+│  ├─ Récupération historique commandes
 │  ├─ Calcul consommation/jour par produit
-│  ├─ Estimation stock restant
-│  ├─ Calcul date rupture estimée
-│  └─ Filtrage selon couverture cible + lead time
+│  ├─ Estimation stock restant théorique
+│  ├─ Prédiction date de rupture
+│  ├─ Filtrage produits à risque
+│  ├─ Calcul quantités brutes nécessaires
+│  └─ Ajustement final (MOQ & multiples UoM)
 │
 ├─ 3. Génération Devis Odoo
-│  ├─ Calcul quantités suggérées
-│  ├─ Respect MOQ & multiples
-│  └─ Création devis automatique (draft)
+│  ├─ Formatage données pour API
+│  ├─ Création devis automatique (draft)
+│  └─ Tag "Auto-proposal" pour traçabilité
 │
 └─ 4. Notification Email
-   ├─ Template email standard Odoo
-   ├─ Tag "Auto-proposal" pour suivi
+   ├─ message_post avec lien portal
    └─ Envoi automatique au client
 ```
 
@@ -68,55 +70,73 @@ Implémenter un système automatisé qui génère et envoie des propositions de 
 ```
 src/
 ├── config/
-│   └── auto-proposal.ts              // Paramètres globaux configurables
-├── features/                         // Organisation par fonctionnalité métier
+│   └── auto-proposal.ts                      // Paramètres globaux configurables
+├── features/                                 // Features réutilisables et agnostiques
 │   ├── client-inactivity/
-│   │   ├── inactivity.service.ts     // Logique détection inactivité
-│   │   └── inactivity.utils.ts       // Utils dates, calculs simples
+│   │   ├── inactivity.service.ts             // Logique détection inactivité
+│   │   └── inactivity.utils.ts               // Utils dates, calculs simples
 │   ├── stock-analysis/
-│   │   ├── stock.service.ts          // Algo prédiction rupture
-│   │   ├── consumption.utils.ts      // Calculs consommation/jour
-│   │   └── prediction.utils.ts       // Utils prédiction stock
-│   ├── proposal-generation/
-│   │   ├── proposal.service.ts       // Génération devis Odoo
-│   │   ├── quantity.utils.ts         // Calculs quantités, MOQ
-│   │   └── formatting.utils.ts       // Format devis
-│   └── odoo-integration/
-│       ├── odoo.service.ts           // API calls Odoo
-│       └── odoo.adapter.ts           // Mapping données
+│   │   ├── order-history/
+│   │   │   ├── order-history.types.ts        // Types/interfaces
+│   │   │   ├── order-history.service.ts      // Récupération historique client
+│   │   │   └── transform.utils.ts            // Transformation data
+│   │   ├── stock.service.ts                  // Algo prédiction rupture
+│   │   ├── consumption.utils.ts              // Calculs consommation/jour
+│   │   └── prediction.utils.ts               // Utils prédiction stock
+│   └── proposal-generation/
+│       ├── proposal.service.ts               // Génération devis Odoo
+│       ├── quantity.utils.ts                 // Calculs quantités, MOQ
+│       └── formatting.utils.ts               // Format devis
+├── infrastructure/
+│   └── odoo/
+│       ├── odoo.service.ts                   // API calls Odoo (JSON-2)
+│
+├── workflows/
+│   └── auto-proposal/
+│       └── auto-proposal.workflow.ts         // Orchestrateur (compose features)
 ├── trigger/
-│   ├── auto-proposal.task.ts         // Task principale (orchestrateur)
-│   └── daily-scheduler.ts            // Cron quotidien
-└── types.ts                          // Types TypeScript
+│   ├── auto-proposal.task.ts                 // Task Trigger.dev
+│   └── daily-scheduler.ts                    // Cron quotidien
+└── types.ts                                  // Types globaux
 ```
 
 ## 🧮 Algorithme de Détection (Cœur du Système)
 
 ```javascript
-pour chaque client {
-  dernière_commande = date_dernière_commande(client)
+// 1. CLIENT INACTIVITY SERVICE
+clients_inactifs = getInactiveClients(seuil_inactivité)
 
-  // 1. Check inactivité
-  si (aujourd'hui - dernière_commande > seuil_inactivité) {
+pour chaque client in clients_inactifs {
 
-    // 2. Pour chaque produit commandé historiquement
-    pour chaque produit_historique {
-      // Calcul consommation moyenne
-      conso_jour = moyenne_commandes_12_mois / 30
+  // IMPORTANT: Ajuster la période pour clients récents
+  ancienneté = getClientAge(client.id)
+  période_analyse = min(ancienneté, 365_jours)
 
-      // Estimation stock restant
-      jours_écoulés = aujourd'hui - dernière_commande
-      stock_estimé = dernière_quantité - (jours_écoulés * conso_jour)
+  // 2. ORDER HISTORY SERVICE
+  historique = getProductOrderHistory(client.id, période_analyse)
 
-      // Prédiction rupture
-      jours_avant_rupture = stock_estimé / conso_jour
+  // 3. CONSUMPTION UTILS
+  pour chaque produit in historique.products {
+    conso_jour = calculateDailyConsumption(produit.orders, période_analyse)
 
-      // Déclenchement si risque
-      si (jours_avant_rupture <= couverture_cible + lead_time) {
-        quantité_suggérée = (couverture_cible + lead_time) * conso_jour
-        // → Ajouter au devis automatique
-      }
+    // 4. PREDICTION UTILS
+    dernière_qty = produit.orders[0].quantity  // Plus récente
+    jours_écoulés = aujourd'hui - produit.orders[0].date
+    stock_estimé = dernière_qty - (jours_écoulés * conso_jour)
+    jours_avant_rupture = stock_estimé / conso_jour
+
+    // 5. STOCK SERVICE (orchestrateur)
+    si (jours_avant_rupture <= couverture_cible + lead_time) {
+      produits_à_commander.push({
+        product_id: produit.id,
+        quantité_suggérée: (couverture_cible + lead_time) * conso_jour
+      })
     }
+  }
+
+  // 6. PROPOSAL SERVICE
+  si (produits_à_commander.length > 0) {
+    createProposal(client.id, produits_à_commander)
   }
 }
 ```
@@ -141,14 +161,6 @@ pour chaque client {
 - Logs détaillés pour monitoring
 - Métriques de performance du système
 
-## 📊 Avantages Business
-
-- **Maintien de commandes régulières** sans intervention commerciale
-- **Anticipation des ruptures** de stock client
-- **Automatisation complète** du processus de relance
-- **Personnalisation** basée sur l'historique réel du client
-- **Gain de temps commercial** significatif
-
 ## 🚀 Mise en Production
 
 ### Phase 1 : Implémentation Core
@@ -157,14 +169,25 @@ pour chaque client {
 2. Intégration API Odoo (devis + emails)
 3. Configuration du cron quotidien
 
-### Phase 2 : Monitoring & Optimisation
-
-1. Tableaux de bord de performance
-2. Ajustement des paramètres selon retours terrain
-3. Extensions possibles (paramétrage par client si nécessaire)
-
 ---
 
-**Status** : 🔄 En conception
-**Complexité estimée** : Moyenne (focus sur l'algorithme de prédiction)
-**Impact business** : Élevé (automatisation des relances commerciales)
+## 📝 TODO (30/09/2025)
+
+### ✅ Fait
+
+- Client inactivity detection
+- Order history retrieval & grouping
+
+### 🚧 En cours (Stock Analysis)
+
+- [ ] `consumption.utils.ts`
+- [ ] `prediction.utils.ts`
+- [ ] `stock.service.ts`
+
+### ❌ À faire
+
+- [ ] Proposal generation
+- [ ] Trigger.dev orchestration
+- [ ] Email notifications
+
+**Status** : 🚧 35% complété (~20h restantes)

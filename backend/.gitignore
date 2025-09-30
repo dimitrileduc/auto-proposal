@@ -16,6 +16,10 @@ node_modules/
 .env.local
 .env.production
 
+# odoo mcp config
+odoo_config.json
+.mcp.json
+
 # logs
 logs/
 *.log

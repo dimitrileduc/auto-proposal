@@ -7,6 +7,7 @@ interface OdooOrder {
   date_order: string;
   name: string;
   state: string;
+  order_line?: number[];
 }
 
 export interface OdooPartner {
@@ -14,6 +15,20 @@ export interface OdooPartner {
   name: string;
   email: string | false;
   sale_order_ids: number[];
+}
+
+export interface OdooOrderLine {
+  id: number;
+  product_id: [number, string];
+  product_uom_qty: number;
+  product_uom_id: [number, string];
+  price_unit: number;
+  order_id: [number, string];
+}
+
+export interface OrderHistory {
+  orders: OdooOrder[];
+  orderLines: OdooOrderLine[];
 }
 
 // Odoo configuration
@@ -147,6 +162,83 @@ export async function getInactiveCompanyPartners(
       ? error
       : new Error(
           `Erreur lors de la récupération des partenaires inactifs: ${error}`
+        );
+  }
+}
+
+/**
+ * Récupère l'historique des commandes d'un partenaire
+ *
+ * @param partnerId ID du partenaire Odoo
+ * @param days Nombre de jours d'historique
+ * @param includeDraftOrders Inclure les commandes draft (défaut: false)
+ * @returns Historique brut avec orders et orderLines
+ * @throws {Error} En cas d'erreur API ou de configuration
+ *
+ * @example
+ * ```typescript
+ * const history = await getOrderHistoryByPartner(3, 360, true)
+ * console.log(`${history.orders.length} commandes trouvées`)
+ * ```
+ */
+export async function getOrderHistoryByPartner(
+  partnerId: number,
+  days: number,
+  includeDraftOrders: boolean = false
+): Promise<OrderHistory> {
+  if (days <= 0) {
+    throw new Error("Le nombre de jours doit être positif");
+  }
+
+  const dateLimitStr = getDateDaysAgo(days);
+
+  const states = includeDraftOrders
+    ? ["draft", "sent", "sale", "done"]
+    : ["sale", "done"];
+
+  try {
+    // RPC 1: Récupérer les commandes du partenaire avec leurs dates
+    const orders = await odooApiRequest<OdooOrder[]>(
+      "sale.order/search_read",
+      {
+        domain: [
+          ["partner_id", "=", partnerId],
+          ["date_order", ">=", dateLimitStr],
+          ["state", "in", states],
+        ],
+        fields: ["id", "name", "date_order", "partner_id", "state", "order_line"],
+      }
+    );
+
+    // Extraire tous les IDs de order_line
+    const orderLineIds = orders.flatMap((order) => order.order_line || []);
+
+    if (orderLineIds.length === 0) {
+      return { orders: [], orderLines: [] };
+    }
+
+    // RPC 2: Récupérer les détails des order_lines
+    const orderLines = await odooApiRequest<OdooOrderLine[]>(
+      "sale.order.line/read",
+      {
+        ids: orderLineIds,
+        fields: [
+          "id",
+          "product_id",
+          "product_uom_qty",
+          "product_uom_id",
+          "price_unit",
+          "order_id",
+        ],
+      }
+    );
+
+    return { orders, orderLines };
+  } catch (error) {
+    throw error instanceof Error
+      ? error
+      : new Error(
+          `Erreur lors de la récupération de l'historique du partenaire ${partnerId}: ${error}`
         );
   }
 }
