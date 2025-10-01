@@ -1,44 +1,95 @@
-# Stock Replenishment Algorithm
+# Stock Replenishment Module
 
-## Overview
+Module d'analyse prédictive pour éviter les ruptures de stock chez les clients.
 
-Calcule les besoins de réapprovisionnement pour éviter les ruptures de stock.
-
-## Algorithme
-
-### 1. Seuil de déclenchement
+## Architecture
 
 ```
-Seuil = TargetCoverage (14j) + LeadTime (5j) = 19 jours
+stock-replenishment/
+├── stock-replenishment.service.ts   # Orchestrateur principal
+├── order-history/
+│   ├── order-history.service.ts     # Récupération historique Odoo
+│   └── transform.utils.ts           # Groupement par produit
+└── utils/
+    ├── consumption.utils.ts         # Calcul consommation/jour
+    ├── prediction.utils.ts          # Prédiction rupture stock
+    └── quantity.utils.ts            # Calcul quantités à commander
 ```
 
-### 2. Filtrage
+## Flow
 
-Produits concernés : stock restant < 19 jours
-
-### 3. Calcul des quantités
+### 1. Récupération historique (order-history)
 
 ```typescript
-// Si stock > 0 : commander la différence
-if (daysUntilStockout > 0) {
-  daysToOrder = 19 - daysUntilStockout
-}
-// Si rupture : commander pour 19 jours
-else {
-  daysToOrder = 19
-}
+// Récupère 365 jours de commandes du client
+const orderHistory = await getProductOrderHistory(clientId, 365);
 
-quantity = daysToOrder * consumptionPerDay
+// Retourne les produits groupés avec leurs commandes
+{
+  products: [
+    {
+      product_id: 123,
+      product_name: "Tomates",
+      orders: [
+        { date: "2024-01-15", quantity: 50 },
+        { date: "2024-01-01", quantity: 45 },
+      ],
+    },
+  ];
+}
 ```
 
-### Exemples
+### 2. Calcul consommation (consumption.utils)
 
-| Stock actuel | Action | Quantité |
-|-------------|--------|----------|
-| 25 jours | Skip | 0 |
-| 16 jours | Commander | 3 jours |
-| 3 jours | Commander | 16 jours |
-| Rupture | Commander | 19 jours |
+```typescript
+// Pour chaque produit: quantité totale / période
+consumptionPerDay = totalQuantity / 365;
+// Ex: 500 unités en 365j = 1.37 unités/jour
+```
+
+### 3. Prédiction rupture (prediction.utils)
+
+```typescript
+// Basé sur la dernière commande
+daysElapsed = today - lastOrderDate;
+stockRemaining = lastQuantity - daysElapsed * consumptionPerDay;
+daysUntilStockout = stockRemaining / consumptionPerDay;
+
+// Ex: Commandé 50 unités il y a 10j
+// Stock estimé = 50 - (10 * 1.37) = 36.3
+// Rupture dans = 36.3 / 1.37 = 26 jours
+```
+
+### 4. Décision & Calcul quantités
+
+```typescript
+// Seuil critique = 14j (couverture) + 5j (livraison) = 19j
+
+if (daysUntilStockout > 19) {
+  // Pas d'action nécessaire
+  continue;
+}
+
+// Calcul ajusté selon situation:
+if (daysUntilStockout > 0) {
+  // Stock restant: compléter la différence
+  daysToOrder = 19 - daysUntilStockout;
+} else {
+  // Déjà en rupture: commander pour 19j
+  daysToOrder = 19;
+}
+
+quantity = daysToOrder * consumptionPerDay;
+```
+
+## Exemples
+
+| Situation | Stock estimé | Action    | Calcul         | Quantité |
+| --------- | ------------ | --------- | -------------- | -------- |
+| Client OK | 25 jours     | Skip      | -              | 0        |
+| À risque  | 16 jours     | Commander | (19-16) × 1.37 | 4.11     |
+| Critique  | 3 jours      | Commander | (19-3) × 1.37  | 21.92    |
+| Rupture   | -10 jours    | Commander | 19 × 1.37      | 26.03    |
 
 ## API
 
