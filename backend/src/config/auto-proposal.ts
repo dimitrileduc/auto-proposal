@@ -1,9 +1,16 @@
 // Configuration auto-proposal
 export const autoProposalConfig = {
-  inactivityDaysThreshold: 30,  // Clients inactifs depuis X jours
+  // Client inactivity detection
+  inactivityDaysThreshold: 30,
 
-  // Inclure les commandes draft dans l'analyse d'inactivité
-  // true = inclure les drafts (recommandé pour test car on crée des commandes passées en draft)
-  // false = seulement les commandes confirmées (état 'sale')
-  includeDraftOrders: true
+  // Stock replenishment parameters
+  targetCoverage: 14,
+  leadTime: 5,
+  analysisWindowDays: 365,
+
+  // Testing configuration (to update in production)
+  testing: {
+    defaultClientId: 3,          // Arthur Schwaiger (demo client)
+    includeDraftOrders: true,    // Include draft orders in analysis
+  }
 };

@@ -9,7 +9,7 @@ import type { OrderLineDetail } from "../order-history/order-history.types";
  */
 export function calculateDailyConsumption(
   orders: OrderLineDetail[],
-  daysOfHistory: number = 365
+  daysOfHistory: number
 ): number {
   // Pas de commandes = pas de consommation
   if (orders.length === 0) {

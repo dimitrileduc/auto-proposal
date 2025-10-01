@@ -13,7 +13,6 @@ export function predictStockStatus(
   consumptionPerDay: number,
   currentDate: Date = new Date()
 ): { estimatedStock: number; daysUntilStockout: number } {
-
   // Si pas de commandes, pas de stock
   if (product.orders.length === 0) {
     return { estimatedStock: 0, daysUntilStockout: 0 };
@@ -29,24 +28,14 @@ export function predictStockStatus(
     (currentDate.getTime() - lastOrderDate.getTime()) / (1000 * 60 * 60 * 24)
   );
 
-  // console.log(`     Dernière commande: ${lastQuantity} unités il y a ${daysElapsed} jours`);
-
   // Estimation du stock restant
-  const estimatedStock = lastQuantity - (daysElapsed * consumptionPerDay);
-
-  // console.log(`     Stock estimé: ${estimatedStock.toFixed(2)} unités`);
+  const estimatedStock = lastQuantity - daysElapsed * consumptionPerDay;
 
   // Calcul des jours avant rupture (négatif = déjà en rupture)
   const daysUntilStockout = Math.trunc(estimatedStock / consumptionPerDay);
 
-  // if (estimatedStock > 0) {
-  //   console.log(`     Rupture prévue dans: ${daysUntilStockout} jours`);
-  // } else {
-  //   console.log(`     En rupture depuis: ${Math.abs(daysUntilStockout)} jours`);
-  // }
-
   return {
     estimatedStock,
-    daysUntilStockout
+    daysUntilStockout,
   };
 }

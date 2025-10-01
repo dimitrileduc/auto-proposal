@@ -18,13 +18,13 @@ import type { ClientOrderHistory } from "./order-history.types";
  * ```
  */
 export async function getProductOrderHistory(
-  partnerId: number = 3,
-  days: number = 360
+  partnerId: number = autoProposalConfig.testing.defaultClientId,
+  days: number = autoProposalConfig.analysisWindowDays
 ): Promise<ClientOrderHistory> {
   const rawHistory = await getOrderHistoryByPartner(
     partnerId,
     days,
-    autoProposalConfig.includeDraftOrders
+    autoProposalConfig.testing.includeDraftOrders
   );
   return transformOrderHistory(rawHistory, partnerId);
 }

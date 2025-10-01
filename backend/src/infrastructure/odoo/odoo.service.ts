@@ -73,6 +73,7 @@ async function odooApiRequest<T = any>(
       method: "POST",
       headers: getJsonApiHeaders(),
       body: JSON.stringify(body),
+      signal: AbortSignal.timeout(10000), // 10s timeout
     });
 
     if (!response.ok) {
@@ -144,8 +145,9 @@ export async function getInactiveCompanyPartners(
       {
         domain: [
           ["is_company", "=", true],
-          //  ["customer_rank", ">", 0], NOTE: Client should have a customer_rank > 0 on Odoo -> tofix
-          ["id", "!=", 1], //temp fix:  Exclure société mère (demo-food-autopilot = admin)
+          // TODO: Uncomment when customer_rank is properly configured in Odoo
+          // Currently some valid customers have customer_rank = 0 in the database
+          // ["customer_rank", ">", 0],
           "|", // Union de deux groupes d'inactifs
           ["sale_order_ids", "=", false], // GROUPE 1: Jamais commandé
           "&", // GROUPE 2: A commandé mais pas récemment

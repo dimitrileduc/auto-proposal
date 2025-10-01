@@ -10,7 +10,7 @@
 
 - Le client n'a plus commandé depuis **X jours** (paramétrable, ex: 30 jours)
 
-## 📊 Analyse Déclenchée
+## Analyse Déclenchée
 
 ### Prédiction de Rupture de Stock
 
@@ -20,7 +20,7 @@ Une fois un client identifié comme inactif, le système analyse pour chaque pro
 - **Stock restant théorique** basé sur la dernière commande
 - **Date de rupture estimée** selon la consommation moyenne
 
-## ⚙️ Paramètres de Configuration
+## Paramètres de Configuration
 
 ### Paramètres Globaux
 
@@ -29,7 +29,7 @@ Une fois un client identifié comme inactif, le système analyse pour chaque pro
 - **Lead time** : délai de livraison (ex: 5 jours)
 - **MOQ & multiples d'UoM** : minimum de commande (ex: 300€ ou moyenne des 12 derniers mois)
 
-## 🔄 Workflow Technique
+## 🔄 Workflow Technique ( Archtecture des steps TBC w/ Arthur )
 
 ```
 ┌─ CRON Quotidien ─┐
@@ -37,33 +37,19 @@ Une fois un client identifié comme inactif, le système analyse pour chaque pro
 ├─ 1. Détection Clients Inactifs
 │  └─ Clients sans commande depuis X jours
 │
-├─ 2. Analyse Stock & Calcul Quantités ⭐
-│  ├─ Récupération historique commandes
-│  ├─ Calcul consommation/jour par produit
-│  ├─ Estimation stock restant théorique
-│  ├─ Prédiction date de rupture
-│  ├─ Filtrage produits à risque
-│  ├─ Calcul quantités brutes nécessaires
-│  └─ Ajustement final (MOQ & multiples UoM)
+├─ 2. Analyse Stock & Calcul Quantités
+│  ├─ Récupération historique commandes (365j)
+│  ├─ Calcul consommation moyenne/jour
+│  ├─ Prédiction jours avant rupture
+│  └─ Calcul quantités ajustées (seuil 19j)
 │
 ├─ 3. Génération Devis Odoo
-│  ├─ Formatage données pour API
-│  ├─ Création devis automatique (draft)
-│  └─ Tag "Auto-proposal" pour traçabilité
+│  ├─ Création devis draft
+│  └─ Tag "Auto-proposal"
 │
 └─ 4. Notification Email
-   ├─ message_post avec lien portal
-   └─ Envoi automatique au client
+   └─ Template standard Odoo
 ```
-
-## 🏗️ Architecture Technique
-
-### Stack Technologique
-
-- **Backend** : Hono.js + TypeScript
-- **Orchestration** : Trigger.dev v4 (tasks + scheduled jobs)
-- **Intégration** : API Odoo pour devis et emails
-- **Cron** : Exécution quotidienne via Trigger.dev
 
 ### Structure de Fichiers
 
@@ -92,66 +78,34 @@ src/
 │   └── odoo/
 │       ├── odoo.service.ts                   // API calls Odoo (JSON-2)
 │
-├── workflows/
-│   └── auto-proposal/
-│       └── auto-proposal.workflow.ts         // Orchestrateur (compose features)
-├── trigger/
-│   ├── auto-proposal.task.ts                 // Task Trigger.dev
-│   └── daily-scheduler.ts                    // Cron quotidien
+├── trigger/ ( TBC )
+│
 └── types.ts                                  // Types globaux
 ```
 
-## 🧮 Algorithme de Détection (Cœur du Système)
+## Algorithme
 
-```javascript
-// 1. CLIENT INACTIVITY SERVICE
-clients_inactifs = getInactiveClients(seuil_inactivité)
+Voir doc détaillée ici : `backend/src/features/stock-replenishment/README.md`
 
-pour chaque client in clients_inactifs {
-
-  //TOCHECK ? Ajuster la période pour clients récents
-  // ancienneté = getClientAge(client.id)
-  // ou prendre en compte la date de la premiere commande .
-  période_analyse = min(ancienneté, 365_jours)
-
-  // 2. ORDER HISTORY SERVICE
-  historique = getProductOrderHistory(client.id, période_analyse)
-
-  // 3. CONSUMPTION UTILS
-  pour chaque produit in historique.products {
-    conso_jour = calculateDailyConsumption(produit.orders, période_analyse)
-
-    // 4. PREDICTION UTILS
-    dernière_qty = produit.orders[0].quantity  // Plus récente
-    jours_écoulés = aujourd'hui - produit.orders[0].date
-    stock_estimé = dernière_qty - (jours_écoulés * conso_jour)
-    jours_avant_rupture = stock_estimé / conso_jour
-
-    // 5. STOCK SERVICE (orchestrateur)
-    si (jours_avant_rupture <= couverture_cible + lead_time) {
-      produits_à_commander.push({
-        product_id: produit.id,
-        quantité_suggérée: (couverture_cible + lead_time) * conso_jour
-      })
-    }
-  }
-
-  // 6. PROPOSAL SERVICE
-  si (produits_à_commander.length > 0) {
-    createProposal(client.id, produits_à_commander)
-  }
-}
+```
+Pour chaque client inactif depuis 30+ jours:
+  1. Récupérer historique commandes (365j)
+  2. Pour chaque produit commandé:
+     - Calculer consommation/jour
+     - Prédire jours avant rupture
+     - Si rupture < 19j → Commander la différence
+  3. Si produits à commander → Générer devis
 ```
 
-## 🎯 Actions Automatisées
+## Actions Automatisées
 
 ### 1. Génération Devis Odoo
 
 - Création automatique d'un devis en mode **draft**
-- Calcul intelligent des quantités basé sur l'algorithme
+- Calcul des quantités basé sur l'algorithme
 - Respect des contraintes MOQ et multiples d'UoM
 
-### 2. Envoi Email
+### 2. Envoi Email ( Tbc : Oddo Api vs MailSender Api)
 
 - Template email standard d'Odoo
 - Message type : _"Ci-joint une proposition de commande"_
@@ -163,36 +117,22 @@ pour chaque client in clients_inactifs {
 - Logs détaillés pour monitoring
 - Métriques de performance du système
 
-## 🚀 Mise en Production
-
-### Phase 1 : Implémentation Core
-
-1. Développement de l'algorithme de détection
-2. Intégration API Odoo (devis + emails)
-3. Configuration du cron quotidien
-
 ---
 
-## 📝 TODO (30/09/2025)
+## 📝 TODO
 
-### ✅ Fait
+### DONE
 
 - Client inactivity detection
-- Order history retrieval & grouping
-- Stock replenishment analysis
-  - `consumption.utils.ts` ✅
-  - `prediction.utils.ts` ✅
-  - Refactoring: `stock-analysis` → `stock-replenishment` ✅
+- Order history retrieval
+- Stock replenishment analysis (100%)
+  - Calcul consommation
+  - Prédiction rupture
+  - Calcul quantités ajustées
 
-### 🚧 En cours (Stock Replenishment)
+### TODO
 
-- [ ] `quantity.utils.ts`
-- [ ] Filtrage produits selon seuil (19j)
-
-### ❌ À faire
-
-- [ ] Proposal generation
+- [ ] Algo : Uom et Moq
+- [ ] Proposal generation (devis Odoo)
 - [ ] Trigger.dev orchestration
 - [ ] Email notifications
-
-**Status** : 🚧 45% complété (~15h restantes)
