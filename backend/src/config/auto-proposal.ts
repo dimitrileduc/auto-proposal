@@ -7,6 +7,7 @@ export const autoProposalConfig = {
   targetCoverage: 14,
   leadTime: 5,
   analysisWindowDays: 365,
+  minRequiredHistoryDaysForProduct: 30,  // Minimum product history for reliable consumption calculation
 
   // Testing configuration (to update in production)
   testing: {

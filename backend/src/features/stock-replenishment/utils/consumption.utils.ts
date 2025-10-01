@@ -1,28 +1,53 @@
+import { autoProposalConfig } from "../../../config/auto-proposal";
 import type { OrderLineDetail } from "../order-history/order-history.types";
 
 /**
  * Calcule la consommation moyenne par jour basée sur l'historique des commandes
  *
- * @param orders Liste des commandes d'un produit
- * @param daysOfHistory Période totale d'analyse en jours
+ * Adapte automatiquement la période de calcul pour les produits récents :
+ * - Produit commandé depuis 60j → calcul sur 60j (pas 365j)
+ * - Évite de sous-estimer la consommation des nouveaux produits
+ *
+ * @param orders Liste des commandes d'un produit (triées par date décroissante)
+ * @param daysOfHistory Période totale d'analyse en jours (ex: 365)
+ * @param currentDate
  * @returns Consommation moyenne par jour
  */
 export function calculateDailyConsumption(
   orders: OrderLineDetail[],
-  daysOfHistory: number
+  daysOfHistory: number,
+  currentDate: Date = new Date()
 ): number {
-  // Pas de commandes = pas de consommation
   if (orders.length === 0) {
     return 0;
   }
 
-  // Calcul du total des quantités commandées
   const totalQuantity = orders.reduce((sum, order) => sum + order.quantity, 0);
 
-  // console.log(`     Total commandé: ${totalQuantity} unités sur ${daysOfHistory} jours`);
+  // Trouver la première commande de ce produit
+  const firstOrderDate = new Date(
+    Math.min(...orders.map((o) => new Date(o.date_order).getTime()))
+  );
 
-  // Consommation moyenne par jour
-  const dailyConsumption = totalQuantity / daysOfHistory;
+  // Jours depuis la première commande du produit
+  const daysSinceFirstOrder = Math.floor(
+    (currentDate.getTime() - firstOrderDate.getTime()) / (1000 * 60 * 60 * 24)
+  );
 
-  return dailyConsumption;
+  // Warning si historique insuffisant pour calcul fiable
+  // Note: En production ce cas ne devrait pas arriver car les clients sont filtrés
+  // par inactivityDaysThreshold.
+  if (
+    daysSinceFirstOrder < autoProposalConfig.minRequiredHistoryDaysForProduct
+  ) {
+    console.warn(
+      `Low confidence: product has only ${daysSinceFirstOrder} days of history ` +
+        `(< ${autoProposalConfig.minRequiredHistoryDaysForProduct}d threshold)`
+    );
+  }
+
+  // Adapter la période: utiliser l'historique réel si < fenêtre d'analyse
+  const actualDays = Math.min(daysOfHistory, daysSinceFirstOrder);
+
+  return totalQuantity / actualDays;
 }
