@@ -6,7 +6,7 @@ Module d'analyse prédictive pour éviter les ruptures de stock chez les clients
 
 ```
 stock-replenishment/
-├── stock-replenishment.service.ts   # Orchestrateur principal
+├── stock-replenishment.service.ts   # main
 ├── order-history/
 │   ├── order-history.service.ts     # Récupération historique Odoo
 │   └── transform.utils.ts           # Groupement par produit
@@ -90,31 +90,6 @@ quantity = daysToOrder * consumptionPerDay;
 | À risque  | 16 jours     | Commander | (19-16) × 1.37 | 4.11     |
 | Critique  | 3 jours      | Commander | (19-3) × 1.37  | 21.92    |
 | Rupture   | -10 jours    | Commander | 19 × 1.37      | 26.03    |
-
-## API
-
-### calculateReplenishmentNeeds()
-
-Analyse complète pour un client :
-
-```typescript
-const result = await calculateReplenishmentNeeds(
-  clientId,     // ID client Odoo
-  365           // Jours d'historique
-)
-
-// Retourne:
-{
-  client_id: number,
-  products: [{
-    product_id: number,
-    product_name: string,
-    consumption_per_day: number,
-    days_until_stockout: number,
-    quantity_to_order: number
-  }]
-}
-```
 
 ## Configuration
 
