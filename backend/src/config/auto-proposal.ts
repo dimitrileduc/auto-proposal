@@ -1,5 +1,10 @@
+import { OdooApiType } from "../types";
+
 // Configuration auto-proposal
 export const autoProposalConfig = {
+  // Odoo API type
+  odooApiType: OdooApiType.XMLRPC,
+
   // Client inactivity detection
   inactivityDaysThreshold: 30,
 
