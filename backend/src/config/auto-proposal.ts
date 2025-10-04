@@ -11,8 +11,15 @@ export const autoProposalConfig = {
   // Stock replenishment parameters
   targetCoverage: 14,
   leadTime: 5,
-  analysisWindowDays: 365,
+  analysisWindowDays: 180,  // Fenêtre d'analyse unifiée (consommation + quantité)
   minRequiredHistoryDaysForProduct: 30,  // Minimum product history for reliable consumption calculation
+
+  // Quantity calculation strategy
+  quantityStrategy: {
+    maxRecentOrderLines: 5,                 // Limiter l'analyse aux 5 lignes de commande les plus récentes
+    minOrdersForMediumConfidence: 2,        // Seuil pour confiance Medium
+    minOrdersForHighConfidence: 5,          // Seuil pour confiance High
+  },
 
   // Testing configuration (to update in production)
   testing: {

@@ -2,102 +2,162 @@
 
 Module d'analyse prédictive pour éviter les ruptures de stock chez les clients.
 
+---
+
 ## Architecture
 
 ```
 stock-replenishment/
-├── stock-replenishment.service.ts   # main
+├── stock-replenishment.service.ts   # Orchestrateur principal
 ├── order-history/
 │   ├── order-history.service.ts     # Récupération historique Odoo
 │   └── transform.utils.ts           # Groupement par produit
-└── utils/
-    ├── consumption.utils.ts         # Calcul consommation/jour
-    ├── prediction.utils.ts          # Prédiction rupture stock
-    └── quantity.utils.ts            # Calcul quantités à commander
+├── utils/
+│   ├── consumption.utils.ts         # Calcul consommation/jour
+│   ├── prediction.utils.ts          # Prédiction rupture stock
+│   ├── quantity.utils.ts            # Calcul quantités (médiane)
+│   └── median.utils.ts              # Calcul médiane
+└── docs/
+    └── QUANTITY-STRATEGY.md         # Stratégie de calcul détaillée
 ```
 
-## Flow
+---
 
-### 1. Récupération historique (order-history)
+## Flow complet
+
+### 1. Récupération historique
 
 ```typescript
-// Récupère 365 jours de commandes du client
 const orderHistory = await getProductOrderHistory(clientId, 365);
 
-// Retourne les produits groupés avec leurs commandes
+// Retourne:
 {
   products: [
     {
-      product_id: 123,
-      product_name: "Tomates",
+      product_id: 26,
+      product_name: "Mobius Blanche 33cl",
       orders: [
-        { date: "2024-01-15", quantity: 50 },
-        { date: "2024-01-01", quantity: 45 },
+        { date_order: "2024-01-15", quantity: 12 },
+        { date_order: "2024-01-01", quantity: 12 },
       ],
     },
   ];
 }
 ```
 
-### 2. Calcul consommation (consumption.utils)
+---
+
+### 2. Calcul consommation (trigger)
 
 ```typescript
-// Pour chaque produit: quantité totale / période
-consumptionPerDay = totalQuantity / 365;
-// Ex: 500 unités en 365j = 1.37 unités/jour
+consumptionPerDay = totalQuantity / daysOfHistory;
 ```
 
-### 3. Prédiction rupture (prediction.utils)
+---
+
+### 3. Prédiction rupture (trigger)
 
 ```typescript
-// Basé sur la dernière commande
 daysElapsed = today - lastOrderDate;
 stockRemaining = lastQuantity - daysElapsed * consumptionPerDay;
 daysUntilStockout = stockRemaining / consumptionPerDay;
 
-// Ex: Commandé 50 unités il y a 10j
-// Stock estimé = 50 - (10 * 1.37) = 36.3
+// Ex: Commandé 50 unités il y a 10j, consomme 1.37/j
+// Stock estimé = 50 - (10 × 1.37) = 36.3
 // Rupture dans = 36.3 / 1.37 = 26 jours
 ```
 
-### 4. Décision & Calcul quantités
+---
+
+### 4. Décision (trigger)
 
 ```typescript
-// Seuil critique = 14j (couverture) + 5j (livraison) = 19j
+// Seuil = 14j (couverture) + 5j (lead time) = 19j
 
 if (daysUntilStockout > 19) {
-  // Pas d'action nécessaire
-  continue;
+  continue; // Skip, stock suffisant
 }
 
-// Calcul ajusté selon situation:
-if (daysUntilStockout > 0) {
-  // Stock restant: compléter la différence
-  daysToOrder = 19 - daysUntilStockout;
-} else {
-  // Déjà en rupture: commander pour 19j
-  daysToOrder = 19;
-}
-
-quantity = daysToOrder * consumptionPerDay;
+// → Risque de rupture détecté
 ```
 
-## Exemples
+---
 
-| Situation | Stock estimé | Action    | Calcul         | Quantité |
-| --------- | ------------ | --------- | -------------- | -------- |
-| Client OK | 25 jours     | Skip      | -              | 0        |
-| À risque  | 16 jours     | Commander | (19-16) × 1.37 | 4.11     |
-| Critique  | 3 jours      | Commander | (19-3) × 1.37  | 21.92    |
-| Rupture   | -10 jours    | Commander | 19 × 1.37      | 26.03    |
+### 5. Calcul quantité (médiane)
+
+**📖 Voir [QUANTITY-STRATEGY.md](./docs/QUANTITY-STRATEGY.md) pour détails**
+
+```typescript
+// Filtrer historique récent (6 mois)
+const recentOrders = orders.filter(order => order.date_order >= cutoffDate);
+
+// Calculer selon stratégie médiane
+const calculation = calculateQuantityFromHistory(recentOrders);
+
+// Résultat:
+{
+  quantity: 12,
+  metadata: {
+    strategy: "median_recent_orders",
+    confidence: "high",
+    historical_quantities: [10, 12, 11, 12, 12],
+    order_count: 5,
+    median_value: 12
+  }
+}
+```
+
+---
+
+## Exemple complet
+
+```typescript
+// Client commande 12 unités tous les 2 semaines
+const result = await calculateReplenishmentNeeds(clientId);
+
+{
+  client_id: 3,
+  products: [
+    {
+      product_id: 26,
+      product_name: "Mobius Blanche 33cl",
+      product_uom: [1, "Units"],
+      quantity_to_order: 12,           // ← Médiane de l'historique
+      calculation_metadata: {
+        strategy: "median_recent_orders",
+        confidence: "high",
+        historical_quantities: [12, 12, 12, 12, 12],
+        order_count: 8,
+        median_value: 12
+      }
+    }
+  ]
+}
+```
+
+---
 
 ## Configuration
 
 ```typescript
 // config/auto-proposal.ts
 {
-  targetCoverage: 14,      // Stock souhaité après livraison
-  leadTime: 5,            // Délai livraison
-  analysisWindowDays: 365 // Période d'analyse
+  // Trigger + Quantité (fenêtre unifiée)
+  targetCoverage: 14,          // Couverture cible
+  leadTime: 5,                 // Délai livraison
+  analysisWindowDays: 180,     // Période analyse (6 mois)
+
+  // Quantité (médiane historique)
+  quantityStrategy: {
+    maxRecentOrderLines: 5,              // 5 dernières lignes
+    minOrdersForMediumConfidence: 2,     // ≥2 = Medium
+    minOrdersForHighConfidence: 5,       // ≥5 = High
+  }
 }
 ```
+
+---
+
+## Documentation
+
+- **[QUANTITY-STRATEGY.md](./docs/QUANTITY-STRATEGY.md)** - Stratégie de calcul des quantités (médiane, 4 niveaux, cas de test)

@@ -35,4 +35,9 @@ lerna-debug.log*
 # scripts
 scripts/
 
+# test files
+*test*
+*Test*
+*TEST*
+
 .trigger
