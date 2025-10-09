@@ -1,0 +1,613 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T16:50:20.832Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 60423,
+    "name": "LA PAPILLOTE - traiteur épicerie",
+    "email": "contact-epicerie@lapapillote.be"
+  },
+  "summary": {
+    "total_products_to_order": 18
+  },
+  "products": [
+    {
+      "product_id": 13054,
+      "product_name": "[LV157] LV Ketchup aux tomates 263 ml bio",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 24.15
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13061,
+      "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 13.1
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 14450,
+      "product_name": "[LV330] LV BIO Tartinade Toscana 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 2,
+          "price_unit": 14.52
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.017543859649122806,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 13070,
+      "product_name": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 13.53
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 14452,
+      "product_name": "[LV332] LV Tartinade Olive Caper Tomato 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 14.52
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16746,
+      "product_name": "[JF004] JF MAYONNAIS POIVRE 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 19.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16766,
+      "product_name": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 19.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18269,
+      "product_name": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 28.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18272,
+      "product_name": "[JOY02] JOY! Organic Strawberry Jam 370g",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 28.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18275,
+      "product_name": "[JOY03] JOY! Organic Apricot Jam 370g",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 28.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18310,
+      "product_name": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
+      "product_uom": [
+        58,
+        "TU24"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 33.84
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18307,
+      "product_name": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+      "product_uom": [
+        58,
+        "TU24"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 33.84
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18309,
+      "product_name": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
+      "product_uom": [
+        58,
+        "TU24"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 33.84
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18349,
+      "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 2,
+          "price_unit": 18.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.017543859649122806,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 18352,
+      "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 2,
+          "price_unit": 18.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.017543859649122806,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 18355,
+      "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 18.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18351,
+      "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 2,
+          "price_unit": 18.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.017543859649122806,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 18348,
+      "product_name": "[fsv13] Pistaches grillées salées bio vrac 2,6kg ",
+      "product_uom": [
+        1,
+        "TU1"
+      ],
+      "order_history": [
+        {
+          "order_id": 89323,
+          "order_name": "S37446",
+          "date_order": "2025-06-17 06:43:18",
+          "quantity": 1,
+          "price_unit": 64.83
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008771929824561403,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    }
+  ]
+}

@@ -9,7 +9,8 @@ export interface OrderLineDetail {
 export interface ProductOrderHistory {
   product_id: number;
   product_name: string;
-  product_uom_id: [number, string];
+  product_uom: [number, string];
+  product_type: string;  // "product" | "service" | "consu"
   orders: OrderLineDetail[];
 }
 

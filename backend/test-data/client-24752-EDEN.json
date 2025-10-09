@@ -1,0 +1,297 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T16:50:20.762Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 24752,
+    "name": "EDEN",
+    "email": "edengourmets8@gmail.com"
+  },
+  "summary": {
+    "total_products_to_order": 6
+  },
+  "products": [
+    {
+      "product_id": 14602,
+      "product_name": "[PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90560,
+          "order_name": "S38683",
+          "date_order": "2025-08-22 10:51:37",
+          "quantity": 10,
+          "price_unit": 9.3
+        },
+        {
+          "order_id": 88823,
+          "order_name": "S36946",
+          "date_order": "2025-05-21 07:28:00",
+          "quantity": 6,
+          "price_unit": 9.3
+        },
+        {
+          "order_id": 88697,
+          "order_name": "S36820",
+          "date_order": "2025-05-15 09:07:26",
+          "quantity": 6,
+          "price_unit": 9.3
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.14965986394557823,
+        "estimated_stock_remaining": 2.816326530612245,
+        "days_until_stockout": 18,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 6,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          10,
+          6,
+          6
+        ],
+        "order_count": 3,
+        "median_value": 6
+      }
+    },
+    {
+      "product_id": 9070,
+      "product_name": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90560,
+          "order_name": "S38683",
+          "date_order": "2025-08-22 10:51:37",
+          "quantity": 10,
+          "price_unit": 9.3
+        },
+        {
+          "order_id": 88823,
+          "order_name": "S36946",
+          "date_order": "2025-05-21 07:28:00",
+          "quantity": 6,
+          "price_unit": 9.3
+        },
+        {
+          "order_id": 88697,
+          "order_name": "S36820",
+          "date_order": "2025-05-15 09:07:26",
+          "quantity": 6,
+          "price_unit": 9.3
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.14965986394557823,
+        "estimated_stock_remaining": 2.816326530612245,
+        "days_until_stockout": 18,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 6,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          10,
+          6,
+          6
+        ],
+        "order_count": 3,
+        "median_value": 6
+      }
+    },
+    {
+      "product_id": 9182,
+      "product_name": "[PF1694] LD FR TARTINAD BIO POIVRON 200",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90560,
+          "order_name": "S38683",
+          "date_order": "2025-08-22 10:51:37",
+          "quantity": 10,
+          "price_unit": 9.3
+        },
+        {
+          "order_id": 88823,
+          "order_name": "S36946",
+          "date_order": "2025-05-21 07:28:00",
+          "quantity": 6,
+          "price_unit": 9.3
+        },
+        {
+          "order_id": 88697,
+          "order_name": "S36820",
+          "date_order": "2025-05-15 09:07:26",
+          "quantity": 6,
+          "price_unit": 9.3
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.14965986394557823,
+        "estimated_stock_remaining": 2.816326530612245,
+        "days_until_stockout": 18,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 6,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          10,
+          6,
+          6
+        ],
+        "order_count": 3,
+        "median_value": 6
+      }
+    },
+    {
+      "product_id": 17340,
+      "product_name": "[PF3200] LD FR TARTINADE BIO ASPERGE 180G",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90560,
+          "order_name": "S38683",
+          "date_order": "2025-08-22 10:51:37",
+          "quantity": 10,
+          "price_unit": 10.2
+        },
+        {
+          "order_id": 88823,
+          "order_name": "S36946",
+          "date_order": "2025-05-21 07:28:00",
+          "quantity": 6,
+          "price_unit": 10.2
+        },
+        {
+          "order_id": 88697,
+          "order_name": "S36820",
+          "date_order": "2025-05-15 09:07:26",
+          "quantity": 6,
+          "price_unit": 10.2
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.14965986394557823,
+        "estimated_stock_remaining": 2.816326530612245,
+        "days_until_stockout": 18,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 6,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          10,
+          6,
+          6
+        ],
+        "order_count": 3,
+        "median_value": 6
+      }
+    },
+    {
+      "product_id": 9184,
+      "product_name": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88823,
+          "order_name": "S36946",
+          "date_order": "2025-05-21 07:28:00",
+          "quantity": 6,
+          "price_unit": 9.3
+        },
+        {
+          "order_id": 88697,
+          "order_name": "S36820",
+          "date_order": "2025-05-15 09:07:26",
+          "quantity": 6,
+          "price_unit": 9.3
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.08163265306122448,
+        "estimated_stock_remaining": -5.5102040816326525,
+        "days_until_stockout": -67,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 6,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          6,
+          6
+        ],
+        "order_count": 2,
+        "median_value": 6
+      }
+    },
+    {
+      "product_id": 9180,
+      "product_name": "[PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88823,
+          "order_name": "S36946",
+          "date_order": "2025-05-21 07:28:00",
+          "quantity": 6,
+          "price_unit": 11.1
+        },
+        {
+          "order_id": 88697,
+          "order_name": "S36820",
+          "date_order": "2025-05-15 09:07:26",
+          "quantity": 6,
+          "price_unit": 11.1
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.08163265306122448,
+        "estimated_stock_remaining": -5.5102040816326525,
+        "days_until_stockout": -67,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 6,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          6,
+          6
+        ],
+        "order_count": 2,
+        "median_value": 6
+      }
+    }
+  ]
+}

@@ -30,15 +30,27 @@ export async function calculateReplenishmentNeeds(
   const analyzedProducts: ProductStockStatus[] = [];
 
   // 2. Pour chaque produit, analyser le risque de rupture
+  console.log(`\n🔍 Analyse de ${orderHistory.products.length} produits pour client ${clientId}...`);
+
   for (const product of orderHistory.products) {
+    console.log(`\n  📦 Produit: ${product.product_name} (ID: ${product.product_id})`);
+
+    // Skip produits de type "service" (transport, frais, etc.)
+    if (product.product_type === "service") {
+      console.log(`     ❌ SKIP: Produit de type service`);
+      continue;
+    }
+
     // Calcul consommation moyenne
     const consumptionPerDay = calculateDailyConsumption(
       product.orders,
       daysOfHistory
     );
+    console.log(`     Consommation/jour: ${consumptionPerDay.toFixed(4)}`);
 
     // Skip si pas de consommation
     if (consumptionPerDay <= 0) {
+      console.log(`     ❌ SKIP: Pas de consommation`);
       continue;
     }
 
@@ -48,22 +60,32 @@ export async function calculateReplenishmentNeeds(
       consumptionPerDay,
       new Date()
     );
+    console.log(`     Stock restant estimé: ${stockPrediction.estimatedStock.toFixed(2)}`);
+    console.log(`     Jours avant rupture: ${stockPrediction.daysUntilStockout.toFixed(1)}j`);
 
     const { targetCoverage, leadTime } = autoProposalConfig;
     const replenishmentThresholdDays = targetCoverage + leadTime;
+    console.log(`     Seuil réappro: ${replenishmentThresholdDays}j (couverture ${targetCoverage}j + lead time ${leadTime}j)`);
 
     // TRIGGER: Skip si stock suffisant (pas de risque de rupture)
     if (stockPrediction.daysUntilStockout > replenishmentThresholdDays) {
+      console.log(`     ❌ SKIP: Stock OK (${stockPrediction.daysUntilStockout.toFixed(1)}j > ${replenishmentThresholdDays}j)`);
       continue;
     }
+
+    console.log(`     ✅ TRIGGER: Risque de rupture détecté!`);
 
     // QUANTITÉ: Calculer selon médiane de l'historique
     const calculation = calculateQuantityFromHistory(product.orders);
+    console.log(`     Quantité calculée: ${calculation.quantity} (${calculation.metadata.strategy}, ${calculation.metadata.confidence})`);
 
     // Skip si pas d'historique récent pour calculer la quantité
     if (calculation.quantity === null) {
+      console.log(`     ❌ SKIP: Pas d'historique pour calculer quantité`);
       continue;
     }
+
+    console.log(`     ✅ À COMMANDER: ${calculation.quantity} unités`);
 
     // TODO: Ajustement MOQ/multiples à implémenter plus tard
     // const quantityToOrder = adjustQuantityForConstraints(calculation.quantity);
@@ -71,11 +93,32 @@ export async function calculateReplenishmentNeeds(
     analyzedProducts.push({
       product_id: product.product_id,
       product_name: product.product_name,
-      product_uom: product.product_uom_id,
+      product_uom: product.product_uom,
+
+      // 1. Historique des commandes (base)
+      order_history: product.orders.map((order) => ({
+        order_id: order.order_id,
+        order_name: order.order_name,
+        date_order: order.date_order,
+        quantity: order.quantity,
+        price_unit: order.price_unit,
+      })),
+
+      // 2. Stock prediction (Phase 1: TRIGGER)
+      stock_prediction: {
+        consumption_per_day: consumptionPerDay,
+        estimated_stock_remaining: stockPrediction.estimatedStock,
+        days_until_stockout: stockPrediction.daysUntilStockout,
+        replenishment_threshold_days: replenishmentThresholdDays,
+      },
+
+      // 3. Quantity calculation (Phase 2: QUANTITÉ)
       quantity_to_order: calculation.quantity,
       calculation_metadata: calculation.metadata,
     });
   }
+
+  console.log(`\n✅ Analyse terminée: ${analyzedProducts.length} produits à commander\n`);
 
   return {
     client_id: clientId,

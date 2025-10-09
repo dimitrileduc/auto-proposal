@@ -1,0 +1,768 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T15:29:06.414Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 17564,
+    "name": "Abbinante Ophélie (La Panetière Provençale)",
+    "email": "abbinante.ophelie@hotmail.com"
+  },
+  "summary": {
+    "total_products_to_order": 21
+  },
+  "products": [
+    {
+      "product_id": 13058,
+      "product_name": "[LV160] LV Tartinade Aubergine 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 2,
+          "price_unit": 12.79
+        },
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 12.79
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.018404907975460124,
+        "estimated_stock_remaining": -0.11656441717791433,
+        "days_until_stockout": -6,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          2,
+          1
+        ],
+        "order_count": 2,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 13061,
+      "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 13.1
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13062,
+      "product_name": "[LV131] LV Tartinade Potiron 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 2,
+          "price_unit": 13.1
+        },
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 13.1
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.018404907975460124,
+        "estimated_stock_remaining": -0.11656441717791433,
+        "days_until_stockout": -6,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          2,
+          1
+        ],
+        "order_count": 2,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 13063,
+      "product_name": "[LV132] LV Tartinade Houmous type 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 2,
+          "price_unit": 13.29
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.017391304347826087,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 13064,
+      "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 4,
+          "price_unit": 12.67
+        },
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 2,
+          "price_unit": 12.67
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.03680981595092025,
+        "estimated_stock_remaining": -0.23312883435582865,
+        "days_until_stockout": -6,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 3,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          4,
+          2
+        ],
+        "order_count": 2,
+        "median_value": 3
+      }
+    },
+    {
+      "product_id": 13067,
+      "product_name": "[LV135] LV Tartinade Basilico 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 13.53
+        },
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 2,
+          "price_unit": 13.53
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.018404907975460124,
+        "estimated_stock_remaining": -1.1165644171779143,
+        "days_until_stockout": -60,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          1,
+          2
+        ],
+        "order_count": 2,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 13068,
+      "product_name": "[LV136] LV Tartinade Betterave 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 13.1
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 14450,
+      "product_name": "[LV330] LV BIO Tartinade Toscana 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 14.52
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13094,
+      "product_name": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+      "product_uom": [
+        34,
+        "TU16"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 23.92
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13096,
+      "product_name": "[LV002] LV Pizza Croccantina au romarin 150 g bio",
+      "product_uom": [
+        2,
+        "TU12"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 27.03
+        },
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 27.03
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.012269938650306749,
+        "estimated_stock_remaining": -0.41104294478527614,
+        "days_until_stockout": -33,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          1,
+          1
+        ],
+        "order_count": 2,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18416,
+      "product_name": "[REB05] REB chips bio - sel de mer 35g",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 17.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18376,
+      "product_name": "[SOWA04] SOWA thé glacé pêche 250ml",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 26.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18374,
+      "product_name": "[SOWA01] SOWA citron menthe 250ml",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 23.8
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18345,
+      "product_name": "[PAO01] PAOLA cola verre 250ml - le cola des Belges",
+      "product_uom": [
+        58,
+        "TU24"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 25.2
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.008695652173913044,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 14999,
+      "product_name": "[LV342] LV Organic Broccoli Spread 190 g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 13.53
+        },
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 13.53
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.012269938650306749,
+        "estimated_stock_remaining": -0.41104294478527614,
+        "days_until_stockout": -33,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          1,
+          1
+        ],
+        "order_count": 2,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 19272,
+      "product_name": "[LV357] LV Tartinade BIO Asperge 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 89308,
+          "order_name": "S37431",
+          "date_order": "2025-06-16 08:43:50",
+          "quantity": 1,
+          "price_unit": 18.6
+        },
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 18.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.012269938650306749,
+        "estimated_stock_remaining": -0.41104294478527614,
+        "days_until_stockout": -33,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          1,
+          1
+        ],
+        "order_count": 2,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13060,
+      "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 3,
+          "price_unit": 13.1
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.018404907975460124,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 3,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          3
+        ],
+        "order_count": 1,
+        "median_value": 3
+      }
+    },
+    {
+      "product_id": 13070,
+      "product_name": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 4,
+          "price_unit": 13.53
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.024539877300613498,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 4,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          4
+        ],
+        "order_count": 1,
+        "median_value": 4
+      }
+    },
+    {
+      "product_id": 14452,
+      "product_name": "[LV332] LV Tartinade Olive Caper Tomato 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 14.52
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.006134969325153374,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18415,
+      "product_name": "[REB06] REB chips bio - paprika fumé 35g",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 17.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.006134969325153374,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18260,
+      "product_name": "[fsv04] Amande nature bio vrac 2,8 kg",
+      "product_uom": [
+        1,
+        "TU1"
+      ],
+      "order_history": [
+        {
+          "order_id": 88308,
+          "order_name": "S36431",
+          "date_order": "2025-04-29 10:50:28",
+          "quantity": 1,
+          "price_unit": 34.72
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.006134969325153374,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    }
+  ]
+}

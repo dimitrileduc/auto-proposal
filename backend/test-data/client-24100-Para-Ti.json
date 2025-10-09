@@ -1,0 +1,1075 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T16:50:20.834Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 24100,
+    "name": "Para Ti",
+    "email": "corneel.martens@para-ti.be"
+  },
+  "summary": {
+    "total_products_to_order": 32
+  },
+  "products": [
+    {
+      "product_id": 17768,
+      "product_name": "[MF0060] MF Passata",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 2,
+          "price_unit": 12.37
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.014925373134328358,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 17769,
+      "product_name": "[MF0061] MF Compote",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 3,
+          "price_unit": 12.37
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.022388059701492536,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 3,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          3
+        ],
+        "order_count": 1,
+        "median_value": 3
+      }
+    },
+    {
+      "product_id": 18275,
+      "product_name": "[JOY03] JOY! Organic Apricot Jam 370g",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 27.92
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18276,
+      "product_name": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 27.92
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18273,
+      "product_name": "[JOY08] JOY! Organic Raspberry Jam 370g",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 31.84
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18272,
+      "product_name": "[JOY02] JOY! Organic Strawberry Jam 370g",
+      "product_uom": [
+        31,
+        "TU8"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 27.92
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 14850,
+      "product_name": "[MF0047] MF Mayonnaise 250ml",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 2,
+          "price_unit": 16.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.014925373134328358,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 18327,
+      "product_name": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 16.05
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18329,
+      "product_name": "[NUT02] NUTS & BERRIES energy bar Superfood bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 16.05
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18324,
+      "product_name": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 17.55
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18325,
+      "product_name": "[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 17.55
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18328,
+      "product_name": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 16.05
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16747,
+      "product_name": "[JF003] JF MAYONNAIS WASABI 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 19.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16777,
+      "product_name": "[JF007] JF SAUCE MAYO TOMAT 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 19.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16780,
+      "product_name": "[JF009] JF SAUCE TARTARE 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 19.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16778,
+      "product_name": "[JF018] JF SAUCE SAMOURAI 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 19.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16761,
+      "product_name": "[JF020] JF SAUCE AIOLI 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 19.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13063,
+      "product_name": "[LV132] LV Tartinade Houmous type 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 13.29
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13067,
+      "product_name": "[LV135] LV Tartinade Basilico 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 13.53
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13060,
+      "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 13.1
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13064,
+      "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 12.67
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 564,
+      "product_name": "[MF0024] MF KETCHUP 250g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 16.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13043,
+      "product_name": "[LV145] LV Sauce Tartare 200 ml ",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 14.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13044,
+      "product_name": "[LV146] LV Sauce Aïoli 200 ml",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 14.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13055,
+      "product_name": "[LV158] LV Moutarde 200 ml",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 14.2
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16790,
+      "product_name": "[JF025] JF VINAIGRETTE FH WECK 200ML",
+      "product_uom": [
+        32,
+        "TU9"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 27
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16785,
+      "product_name": "[JF028] JF VINAIGRET CAESAR WECK 200ML",
+      "product_uom": [
+        32,
+        "TU9"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 27
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16786,
+      "product_name": "[JF024] JF VINAIGRET CIBOULE WECK 200M",
+      "product_uom": [
+        32,
+        "TU9"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 1,
+          "price_unit": 27
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.007462686567164179,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 16738,
+      "product_name": "[JF039] JF MAYO BARAKI SQUEEZE 300ML",
+      "product_uom": [
+        2,
+        "TU12"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 2,
+          "price_unit": 30
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.014925373134328358,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 16737,
+      "product_name": "[JF038] JF KETCHUP SQUEEZE 300ML",
+      "product_uom": [
+        2,
+        "TU12"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 2,
+          "price_unit": 26.4
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.014925373134328358,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 2,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          2
+        ],
+        "order_count": 1,
+        "median_value": 2
+      }
+    },
+    {
+      "product_id": 14925,
+      "product_name": "[VID0010] Consigne casier",
+      "product_uom": [
+        1,
+        "TU1"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 42,
+          "price_unit": 0.15
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.31343283582089554,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 42,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          42
+        ],
+        "order_count": 1,
+        "median_value": 42
+      }
+    },
+    {
+      "product_id": 14924,
+      "product_name": "[VID0009] Consigne casier",
+      "product_uom": [
+        1,
+        "TU1"
+      ],
+      "order_history": [
+        {
+          "order_id": 88986,
+          "order_name": "S37109",
+          "date_order": "2025-05-28 07:02:04",
+          "quantity": 7,
+          "price_unit": 1.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.05223880597014925,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 7,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          7
+        ],
+        "order_count": 1,
+        "median_value": 7
+      }
+    }
+  ]
+}

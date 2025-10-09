@@ -22,7 +22,8 @@ export interface OdooOrderLine {
   id: number;
   product_id: [number, string] | false;
   product_uom_qty: number;
-  product_uom_id: [number, string];
+  product_uom: [number, string];
+  product_type: string;  // "product" | "service" | "consu"
   price_unit: number;
   order_id: [number, string];
 }

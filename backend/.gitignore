@@ -15,6 +15,7 @@ node_modules/
 .env
 .env.local
 .env.production
+.env.prod
 
 # odoo mcp config
 odoo_config.json
@@ -39,5 +40,8 @@ scripts/
 *test*
 *Test*
 *TEST*
+
+# Exception: keep test-data directory
+!test-data/
 
 .trigger

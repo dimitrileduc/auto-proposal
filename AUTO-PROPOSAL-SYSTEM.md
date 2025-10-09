@@ -71,7 +71,7 @@ Une fois un client identifié comme inactif, le système analyse chaque produit 
   analysisWindowDays: 180,               // Fenêtre d'analyse unifiée (6 mois)
   targetCoverage: 14,                    // Stock souhaité après livraison
   leadTime: 5,                           // Délai livraison
-  minRequiredHistoryDaysForProduct: 30,  // Historique minimum pour calcul fiable
+
 
   // Phase 2 (Stratégie médiane)
   quantityStrategy: {
@@ -198,6 +198,10 @@ backend/src/
 ### TODO
 
 - [ ] Contraintes MOQ/multiples UoM
+- [x] Filtrer produits de service
+  - [x] Filtrer via `product_type === "service"` (champ Odoo standard)
+  - [x] Implémenté dans les 2 clients (XML-RPC + JSON-2)
+  - [x] Impact : Évite de proposer "Djo Transport" comme produit physique
 - [ ] Génération devis Odoo
   - [ ] Création devis draft via API
   - [ ] Tag "Auto-proposal" sur devis

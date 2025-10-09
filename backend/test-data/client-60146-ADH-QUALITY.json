@@ -1,0 +1,328 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T15:29:06.416Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 60146,
+    "name": "ADH QUALITY",
+    "email": "anne.de.hollain@pandora.be"
+  },
+  "summary": {
+    "total_products_to_order": 5
+  },
+  "products": [
+    {
+      "product_id": 18353,
+      "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 90828,
+          "order_name": "S38951",
+          "date_order": "2025-09-03 09:30:00",
+          "quantity": 8,
+          "price_unit": 16
+        },
+        {
+          "order_id": 89600,
+          "order_name": "S37723",
+          "date_order": "2025-06-27 09:53:23",
+          "quantity": 9,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88787,
+          "order_name": "S36910",
+          "date_order": "2025-05-19 14:39:44",
+          "quantity": 1,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88714,
+          "order_name": "S36837",
+          "date_order": "2025-05-16 06:37:23",
+          "quantity": 2,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88257,
+          "order_name": "S36380",
+          "date_order": "2025-04-28 14:18:12",
+          "quantity": 6,
+          "price_unit": 16
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.15853658536585366,
+        "estimated_stock_remaining": 2.2926829268292686,
+        "days_until_stockout": 14,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 6,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "high",
+        "historical_quantities": [
+          8,
+          9,
+          1,
+          2,
+          6
+        ],
+        "order_count": 5,
+        "median_value": 6
+      }
+    },
+    {
+      "product_id": 18349,
+      "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 90828,
+          "order_name": "S38951",
+          "date_order": "2025-09-03 09:30:00",
+          "quantity": 7,
+          "price_unit": 16
+        },
+        {
+          "order_id": 89600,
+          "order_name": "S37723",
+          "date_order": "2025-06-27 09:53:23",
+          "quantity": 9,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88714,
+          "order_name": "S36837",
+          "date_order": "2025-05-16 06:37:23",
+          "quantity": 2,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88257,
+          "order_name": "S36380",
+          "date_order": "2025-04-28 14:18:12",
+          "quantity": 6,
+          "price_unit": 16
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.14634146341463414,
+        "estimated_stock_remaining": 1.7317073170731714,
+        "days_until_stockout": 11,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 7,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          7,
+          9,
+          2,
+          6
+        ],
+        "order_count": 4,
+        "median_value": 7
+      }
+    },
+    {
+      "product_id": 18352,
+      "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 90828,
+          "order_name": "S38951",
+          "date_order": "2025-09-03 09:30:00",
+          "quantity": 3,
+          "price_unit": 16
+        },
+        {
+          "order_id": 89600,
+          "order_name": "S37723",
+          "date_order": "2025-06-27 09:53:23",
+          "quantity": 3,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88815,
+          "order_name": "S36938",
+          "date_order": "2025-05-20 13:29:35",
+          "quantity": 1,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88714,
+          "order_name": "S36837",
+          "date_order": "2025-05-16 06:37:23",
+          "quantity": 1,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88257,
+          "order_name": "S36380",
+          "date_order": "2025-04-28 14:18:12",
+          "quantity": 1,
+          "price_unit": 16
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.054878048780487805,
+        "estimated_stock_remaining": 1.024390243902439,
+        "days_until_stockout": 18,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "high",
+        "historical_quantities": [
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "order_count": 5,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18355,
+      "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 90828,
+          "order_name": "S38951",
+          "date_order": "2025-09-03 09:30:00",
+          "quantity": 7,
+          "price_unit": 16
+        },
+        {
+          "order_id": 89600,
+          "order_name": "S37723",
+          "date_order": "2025-06-27 09:53:23",
+          "quantity": 9,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88787,
+          "order_name": "S36910",
+          "date_order": "2025-05-19 14:39:44",
+          "quantity": 1,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88714,
+          "order_name": "S36837",
+          "date_order": "2025-05-16 06:37:23",
+          "quantity": 1,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88257,
+          "order_name": "S36380",
+          "date_order": "2025-04-28 14:18:12",
+          "quantity": 3,
+          "price_unit": 16
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.12804878048780488,
+        "estimated_stock_remaining": 2.3902439024390247,
+        "days_until_stockout": 18,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 3,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "high",
+        "historical_quantities": [
+          7,
+          9,
+          1,
+          1,
+          3
+        ],
+        "order_count": 5,
+        "median_value": 3
+      }
+    },
+    {
+      "product_id": 18351,
+      "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 90828,
+          "order_name": "S38951",
+          "date_order": "2025-09-03 09:30:00",
+          "quantity": 1,
+          "price_unit": 16
+        },
+        {
+          "order_id": 89600,
+          "order_name": "S37723",
+          "date_order": "2025-06-27 09:53:23",
+          "quantity": 1,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88714,
+          "order_name": "S36837",
+          "date_order": "2025-05-16 06:37:23",
+          "quantity": 2,
+          "price_unit": 16
+        },
+        {
+          "order_id": 88257,
+          "order_name": "S36380",
+          "date_order": "2025-04-28 14:18:12",
+          "quantity": 1,
+          "price_unit": 16
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.03048780487804878,
+        "estimated_stock_remaining": -0.09756097560975618,
+        "days_until_stockout": -3,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "order_count": 4,
+        "median_value": 1
+      }
+    }
+  ]
+}

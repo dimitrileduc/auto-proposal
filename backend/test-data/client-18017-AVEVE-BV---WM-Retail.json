@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T15:29:06.416Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 18017,
+    "name": "AVEVE BV - WM Retail",
+    "email": "servicedesk.retail@aveve.be"
+  },
+  "summary": {
+    "total_products_to_order": 3
+  },
+  "products": [
+    {
+      "product_id": 13060,
+      "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90367,
+          "order_name": "S38490",
+          "date_order": "2025-08-13 08:06:26",
+          "quantity": 125,
+          "price_unit": 12.36
+        },
+        {
+          "order_id": 90273,
+          "order_name": "S38396",
+          "date_order": "2025-08-13 08:04:11",
+          "quantity": 125,
+          "price_unit": 12.36
+        },
+        {
+          "order_id": 88762,
+          "order_name": "S36885",
+          "date_order": "2025-05-19 07:59:44",
+          "quantity": 125,
+          "price_unit": 12.36
+        },
+        {
+          "order_id": 88077,
+          "order_name": "S36200",
+          "date_order": "2025-04-15 09:08:01",
+          "quantity": 125,
+          "price_unit": 12.36
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 2.824858757062147,
+        "estimated_stock_remaining": -36.016949152542395,
+        "days_until_stockout": -12,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 125,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          125,
+          125,
+          125,
+          125
+        ],
+        "order_count": 4,
+        "median_value": 125
+      }
+    },
+    {
+      "product_id": 13064,
+      "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90367,
+          "order_name": "S38490",
+          "date_order": "2025-08-13 08:06:26",
+          "quantity": 125,
+          "price_unit": 11.94
+        },
+        {
+          "order_id": 90273,
+          "order_name": "S38396",
+          "date_order": "2025-08-13 08:04:11",
+          "quantity": 125,
+          "price_unit": 11.94
+        },
+        {
+          "order_id": 88762,
+          "order_name": "S36885",
+          "date_order": "2025-05-19 07:59:44",
+          "quantity": 125,
+          "price_unit": 11.94
+        },
+        {
+          "order_id": 88077,
+          "order_name": "S36200",
+          "date_order": "2025-04-15 09:08:01",
+          "quantity": 125,
+          "price_unit": 11.94
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 2.824858757062147,
+        "estimated_stock_remaining": -36.016949152542395,
+        "days_until_stockout": -12,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 125,
+      "calculation_metadata": {
+        "strategy": "median_recent_orders",
+        "confidence": "medium",
+        "historical_quantities": [
+          125,
+          125,
+          125,
+          125
+        ],
+        "order_count": 4,
+        "median_value": 125
+      }
+    },
+    {
+      "product_id": 13061,
+      "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+      "product_uom": [
+        1,
+        "TU1"
+      ],
+      "order_history": [
+        {
+          "order_id": 89936,
+          "order_name": "S38059",
+          "date_order": "2025-07-15 06:36:10",
+          "quantity": 750,
+          "price_unit": 2.06
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 8.720930232558139,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 750,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          750
+        ],
+        "order_count": 1,
+        "median_value": 750
+      }
+    }
+  ]
+}

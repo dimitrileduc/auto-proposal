@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T15:29:06.411Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 73485,
+    "name": "ANAMAC, UNIPESSOAL, LDA",
+    "email": "info@anamac.com"
+  },
+  "summary": {
+    "total_products_to_order": 7
+  },
+  "products": [
+    {
+      "product_id": 16745,
+      "product_name": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90507,
+          "order_name": "S38630",
+          "date_order": "2025-08-28 13:01:14",
+          "quantity": 15,
+          "price_unit": 18.36
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.35714285714285715,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 15,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          15
+        ],
+        "order_count": 1,
+        "median_value": 15
+      }
+    },
+    {
+      "product_id": 16749,
+      "product_name": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90507,
+          "order_name": "S38630",
+          "date_order": "2025-08-28 13:01:14",
+          "quantity": 10,
+          "price_unit": 15.24
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.23809523809523808,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 10,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          10
+        ],
+        "order_count": 1,
+        "median_value": 10
+      }
+    },
+    {
+      "product_id": 16780,
+      "product_name": "[JF009] JF SAUCE TARTARE 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90507,
+          "order_name": "S38630",
+          "date_order": "2025-08-28 13:01:14",
+          "quantity": 18,
+          "price_unit": 15.24
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.42857142857142855,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 18,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          18
+        ],
+        "order_count": 1,
+        "median_value": 18
+      }
+    },
+    {
+      "product_id": 16771,
+      "product_name": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90507,
+          "order_name": "S38630",
+          "date_order": "2025-08-28 13:01:14",
+          "quantity": 10,
+          "price_unit": 15.24
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.23809523809523808,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 10,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          10
+        ],
+        "order_count": 1,
+        "median_value": 10
+      }
+    },
+    {
+      "product_id": 16761,
+      "product_name": "[JF020] JF SAUCE AIOLI 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90507,
+          "order_name": "S38630",
+          "date_order": "2025-08-28 13:01:14",
+          "quantity": 20,
+          "price_unit": 15.24
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.47619047619047616,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 20,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          20
+        ],
+        "order_count": 1,
+        "median_value": 20
+      }
+    },
+    {
+      "product_id": 16755,
+      "product_name": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90507,
+          "order_name": "S38630",
+          "date_order": "2025-08-28 13:01:14",
+          "quantity": 8,
+          "price_unit": 15.24
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.19047619047619047,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 8,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          8
+        ],
+        "order_count": 1,
+        "median_value": 8
+      }
+    },
+    {
+      "product_id": 16754,
+      "product_name": "[JF023] JF MOUTARDE DOUCE 250ML WECK",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90507,
+          "order_name": "S38630",
+          "date_order": "2025-08-28 13:01:14",
+          "quantity": 8,
+          "price_unit": 15.24
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.19047619047619047,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 8,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          8
+        ],
+        "order_count": 1,
+        "median_value": 8
+      }
+    }
+  ]
+}
