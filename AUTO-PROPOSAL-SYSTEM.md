@@ -137,13 +137,13 @@ L'API Odoo v17 ne permet pas d'obtenir les prix actuels avec pricelist via XML-R
 ├─ 2. Analyse Stock & Calcul Quantités
 │  │  (features/stock-replenishment/)
 │  │
-│  ├─ Phase 1: TRIGGER (Détection risque rupture)
+│  ├─ A: TRIGGER (Détection risque rupture)
 │  │  ├─ Récupération historique 180j (order-history/)
 │  │  ├─ Calcul consommation/jour (utils/consumption.utils.ts)
 │  │  ├─ Prédiction jours avant rupture (utils/prediction.utils.ts)
 │  │  └─ Skip si daysUntilStockout > 19j
 │  │
-│  └─ Phase 2: QUANTITÉ (Médiane historique)
+│  └─ B: QUANTITÉ (Médiane historique)
 │     └─ Calcul médiane selon stratégie 4 niveaux (utils/quantity.utils.ts)
 │
 ├─ 2.5. Préparation Proposition avec Pricing & MOQ
@@ -154,13 +154,14 @@ L'API Odoo v17 ne permet pas d'obtenir les prix actuels avec pricelist via XML-R
 │  └─ Ajustement MOQ si total < 300€ (moq/)
 │     └─ Algorithme round-robin par fréquence de commande
 │
-├─ 3. Génération Devis Odoo
+├─ 3. Génération Devis Odoo (Draft)
 │  │  (features/proposal-generation/)
 │  ├─ Création devis draft via XML-RPC/JSON-2
 │  └─ Tag "Auto-proposal"
 │
 └─ 4. Email Client
-   └─ Automatique via création devis Odoo
+   └─ mail.template.send_mail() + mail.mail.send()
+   └─ Template: sale.email_template_edi_sale
 ```
 
 ### Structure
@@ -231,24 +232,39 @@ backend/src/
 
 ## 🚀 Prochaines Étapes
 
-### Phase 3 : Génération Devis Odoo (TODO)
+### Phase 3 : Génération Devis Odoo ✅
 
 **Objectif** : Transformer la proposition validée en devis Odoo draft
 
 - Création devis **draft** via XML-RPC ou JSON-RPC 2.0
 - Tag **"Auto-proposal"** pour traçabilité
 - Utilisation des données de la Phase 2.5 (quantités ajustées + prix)
-- **Email automatique** envoyé par Odoo lors de la création
 
 **Note** : Les contraintes MOQ et UoM sont déjà gérées en Phase 2.5
 
-### Phase 4 : Anti-spam (TODO)
+### Phase 4 : Email Client (TODO)
+
+**Objectif** : Envoyer l'email du devis au client
+
+**Implémentation** :
+```typescript
+// 1. Récupérer template ID
+const templateId = await getTemplateId('sale.email_template_edi_sale');
+
+// 2. Créer l'email
+const mailId = await odoo.execute_kw('mail.template', 'send_mail', [templateId, quoteId]);
+
+// 3. Envoyer (Odoo 16+)
+await odoo.execute_kw('mail.mail', 'send', [mailId]);
+```
+
+### Phase 5 : Anti-spam (TODO)
 
 - Vérifier dernière proposition auto pour ce client
 - Config `minDaysBetweenProposals` (ex: 7 jours)
 - Skip si proposition récente existe
 
-### Phase 5 : Orchestration Trigger.dev (TODO)
+### Phase 6 : Orchestration Trigger.dev (TODO)
 
 - CRON quotidien orchestrant toutes les phases
 - Gestion des erreurs et retry logic
@@ -272,15 +288,19 @@ backend/src/
   - Enrichissement avec prix historiques
   - Ajustement MOQ (300€) avec algorithme round-robin
   - Architecture future-proof pour prix actuels (mode `currentPriceForClient`)
+- **Phase 3** : Quote generation
+  - Création devis draft via XML-RPC
+  - Tag "Auto-proposal" (ID: 82)
+  - Tests validés (client 24199 avec MOQ, client 81 sans MOQ)
 
 ### TODO 🚧
 
-- [ ] **Phase 3** : Génération devis Odoo
-  - [ ] Création devis draft via API
-  - [ ] Tag "Auto-proposal" sur devis
-  - [ ] Anti-spam : éviter propositions répétées (config: minDaysBetweenProposals)
-- [ ] **Phase 4** : Orchestration Trigger.dev (CRON quotidien)
-- [ ] **Phase 5** : Email automatique via création devis Odoo
+- [ ] **Phase 4** : Email automatique
+  - [ ] Implémenter sendQuotationEmail() avec mail.template
+  - [ ] Template: sale.email_template_edi_sale
+- [ ] **Phase 5** : Anti-spam
+  - [ ] Config minDaysBetweenProposals
+- [ ] **Phase 6** : Orchestration Trigger.dev (CRON quotidien)
 
 ### NOTES 📝
 

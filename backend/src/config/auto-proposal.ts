@@ -25,6 +25,12 @@ export const autoProposalConfig = {
     minimumOrderAmount: 300, // MOQ global en euros
   },
 
+  // Quote generation configuration
+  quoteGeneration: {
+    autoProposalTagId: 82, // Tag "Auto-proposal" créé dans Odoo (crm.tag)
+    noteTemplate: "🤖 Proposition automatique générée par Auto-Proposal System",
+  },
+
   // Testing configuration (to update in production)
   testing: {
     defaultClientId: 3, // Arthur Schwaiger (demo client)
