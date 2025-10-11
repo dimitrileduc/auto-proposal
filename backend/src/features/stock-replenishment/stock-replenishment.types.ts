@@ -33,5 +33,6 @@ export interface ProductStockStatus {
 
 export interface StockReplenishmentResult {
   client_id: number;
-  products: ProductStockStatus[];
+  products: ProductStockStatus[]; // Uniquement les produits avec risque de rupture
+  total_products_in_history: number; // Nombre total de produits dans l'historique (180j) avant filtrage
 }

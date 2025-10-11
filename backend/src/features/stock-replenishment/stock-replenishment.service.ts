@@ -123,5 +123,6 @@ export async function calculateReplenishmentNeeds(
   return {
     client_id: clientId,
     products: analyzedProducts,
+    total_products_in_history: orderHistory.products.length, // Nombre total avant filtrage
   };
 }
