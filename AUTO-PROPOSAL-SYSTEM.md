@@ -145,25 +145,6 @@ Système automatique de génération de propositions commerciales pour clients i
 
 ---
 
-### Phase 5: Anti-spam (TODO)
-
-**Objectif**: Éviter les propositions répétées
-
-- Vérifier dernière proposition auto pour ce client
-- Config `minDaysBetweenProposals` (ex: 7 jours)
-- Skip si proposition récente existe
-
----
-
-### Phase 6: Orchestration Trigger.dev (TODO)
-
-**Objectif**: CRON quotidien orchestrant toutes les phases
-
-- Gestion des erreurs et retry logic
-- Monitoring et alertes
-
----
-
 ## ⚙️ Configuration
 
 ```typescript
@@ -226,8 +207,9 @@ backend/src/
 ### 🚧 TODO
 
 - [ ] **Phase 4**: Email automatique (mail.template API)
-- [ ] **Phase 5**: Anti-spam (minDaysBetweenProposals)
-- [ ] **Phase 6**: Orchestration Trigger.dev (CRON quotidien)
+- [ ] **Orchestration**: Trigger.dev CRON quotidien
+- [ ] **Anti-spam**: minDaysBetweenProposals entre propositions
+- [ ] **Monitoring**: Logs, alertes, retry logic
 
 ---
 
