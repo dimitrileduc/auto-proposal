@@ -10,6 +10,9 @@ import type {
   OdooOrder,
   OdooOrderLine,
   OrderHistory,
+  PartnerCompanyInfo,
+  OdooSaleOrder,
+  OdooSaleOrderLine,
 } from "./odoo-client.types";
 import {
   buildRecentOrdersDomain,
@@ -159,6 +162,115 @@ export function createXmlRpcClient(): OdooClient {
           ? error
           : new Error(
               `Erreur lors de la récupération de l'historique du partenaire ${partnerId}: ${error}`
+            );
+      }
+    },
+
+    async getPartnerCompanyInfo(partnerId: number) {
+      try {
+        const result = await odoo.searchRead<PartnerCompanyInfo>(
+          "res.partner",
+          [["id", "=", partnerId]],
+          { fields: ["name", "company_id"] }
+        );
+
+        if (result.length === 0) {
+          throw new Error(`Partner ${partnerId} not found`);
+        }
+
+        return result[0];
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(
+              `Erreur lors de la récupération des infos du partenaire ${partnerId}: ${error}`
+            );
+      }
+    },
+
+    async createSaleOrder(data: {
+      partner_id: number;
+      company_id: number;
+      tag_ids?: any[];
+      note?: string;
+    }): Promise<number> {
+      try {
+        return await odoo.create("sale.order", data);
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(`Erreur lors de la création du sale.order: ${error}`);
+      }
+    },
+
+    async createSaleOrderLine(data: {
+      order_id: number;
+      product_id: number;
+      product_uom_qty: number;
+      price_unit: number;
+    }): Promise<number> {
+      try {
+        return await odoo.create("sale.order.line", data);
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(`Erreur lors de la création de la sale.order.line: ${error}`);
+      }
+    },
+
+    async getSaleOrderDetails(quoteId: number) {
+      try {
+        // Récupérer le devis
+        const orders = await odoo.searchRead<OdooSaleOrder>(
+          "sale.order",
+          [["id", "=", quoteId]],
+          {
+            fields: [
+              "name",
+              "partner_id",
+              "company_id",
+              "state",
+              "amount_untaxed",
+              "amount_tax",
+              "amount_total",
+              "order_line",
+              "tag_ids",
+              "date_order",
+            ],
+          }
+        );
+
+        if (orders.length === 0) {
+          throw new Error(`Sale order ${quoteId} not found`);
+        }
+
+        // Récupérer les lignes
+        const lines = await odoo.searchRead<OdooSaleOrderLine>(
+          "sale.order.line",
+          [["order_id", "=", quoteId]],
+          {
+            fields: [
+              "order_id",
+              "product_id",
+              "product_uom",
+              "product_uom_qty",
+              "price_unit",
+              "price_subtotal",
+              "price_total",
+              "tax_id",
+            ],
+          }
+        );
+
+        return {
+          order: orders[0],
+          lines: lines,
+        };
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(
+              `Erreur lors de la récupération des détails du devis ${quoteId}: ${error}`
             );
       }
     },

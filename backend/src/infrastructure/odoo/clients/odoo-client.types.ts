@@ -34,6 +34,46 @@ export interface OrderHistory {
 }
 
 /**
+ * Informations partner avec company
+ */
+export interface PartnerCompanyInfo {
+  name: string;
+  company_id: [number, string];
+}
+
+/**
+ * Sale Order complet avec totaux et taxes
+ */
+export interface OdooSaleOrder {
+  id: number;
+  name: string;                    // Ex: "S39591"
+  partner_id: [number, string];    // [24199, "AUX DELICES D'EMBOURG"]
+  company_id: [number, string];    // [3, "FOODPRINT SRL"]
+  state: string;                   // "draft" | "sent" | "sale" | "cancel"
+  amount_untaxed: number;          // Total HT
+  amount_tax: number;              // Total taxes
+  amount_total: number;            // Total TTC
+  order_line: number[];            // IDs des lignes
+  tag_ids: number[];               // IDs des tags
+  date_order: string;              // Date création
+}
+
+/**
+ * Sale Order Line détaillée avec prix et taxes
+ */
+export interface OdooSaleOrderLine {
+  id: number;
+  order_id: [number, string];
+  product_id: [number, string];
+  product_uom: [number, string];   // Ex: [27, "TU6"]
+  product_uom_qty: number;
+  price_unit: number;
+  price_subtotal: number;          // HT
+  price_total: number;             // TTC
+  tax_id: number[];                // IDs des taxes
+}
+
+/**
  * Interface du client Odoo
  * Implémentée par XML-RPC et JSON-2
  */
@@ -51,4 +91,37 @@ export interface OdooClient {
     days: number,
     includeDraftOrders: boolean
   ): Promise<OrderHistory>;
+
+  /**
+   * Récupère les infos partner avec company (requis pour multi-company)
+   */
+  getPartnerCompanyInfo(partnerId: number): Promise<PartnerCompanyInfo>;
+
+  /**
+   * Crée un sale.order (devis)
+   */
+  createSaleOrder(data: {
+    partner_id: number;
+    company_id: number;
+    tag_ids?: any[];
+    note?: string;
+  }): Promise<number>;
+
+  /**
+   * Crée une sale.order.line
+   */
+  createSaleOrderLine(data: {
+    order_id: number;
+    product_id: number;
+    product_uom_qty: number;
+    price_unit: number;
+  }): Promise<number>;
+
+  /**
+   * Récupère les détails complets d'un devis avec lignes et taxes
+   */
+  getSaleOrderDetails(quoteId: number): Promise<{
+    order: OdooSaleOrder;
+    lines: OdooSaleOrderLine[];
+  }>;
 }
