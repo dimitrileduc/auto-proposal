@@ -1,0 +1,514 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T15:29:06.353Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 24199,
+    "name": "AUX DELICES D'EMBOURG",
+    "email": "auxdelicesdembourg@gmail.com"
+  },
+  "summary": {
+    "total_products_to_order": 15
+  },
+  "products": [
+    {
+      "product_id": 17769,
+      "product_name": "[MF0061] MF Compote",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 12.37
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 575,
+      "product_name": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 14.46
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18380,
+      "product_name": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 31.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18377,
+      "product_name": "[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 31.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18378,
+      "product_name": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 31.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18379,
+      "product_name": "[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml",
+      "product_uom": [
+        77,
+        "TU20"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 31.6
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18349,
+      "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 17.7
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18356,
+      "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+      "product_uom": [
+        33,
+        "TU10"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 25.3
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18384,
+      "product_name": "[WIG07] WIGNAC cidre naturel bio sans alcool 750ml",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 21.3
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 18383,
+      "product_name": "[WIG06] WIGNAC cidre naturel bio sans alcool 330ml",
+      "product_uom": [
+        2,
+        "TU12"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 22.2
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 572,
+      "product_name": "[MF0032] MF Tarti Pois chiches 250 g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 14.46
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 573,
+      "product_name": "[MF0033] MF Tarti Poivron chilli 250g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 14.46
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 13100,
+      "product_name": "[LV040] LV Caprons apéritifs 240g",
+      "product_uom": [
+        27,
+        "TU6"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 1,
+          "price_unit": 16.44
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.01282051282051282,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 1,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          1
+        ],
+        "order_count": 1,
+        "median_value": 1
+      }
+    },
+    {
+      "product_id": 14924,
+      "product_name": "[VID0009] Consigne casier",
+      "product_uom": [
+        1,
+        "TU1"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 4,
+          "price_unit": 1.5
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.05128205128205128,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 4,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          4
+        ],
+        "order_count": 1,
+        "median_value": 4
+      }
+    },
+    {
+      "product_id": 14925,
+      "product_name": "[VID0010] Consigne casier",
+      "product_uom": [
+        1,
+        "TU1"
+      ],
+      "order_history": [
+        {
+          "order_id": 90068,
+          "order_name": "S38191",
+          "date_order": "2025-07-23 07:43:47",
+          "quantity": 24,
+          "price_unit": 0.15
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.3076923076923077,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 24,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          24
+        ],
+        "order_count": 1,
+        "median_value": 24
+      }
+    }
+  ]
+}

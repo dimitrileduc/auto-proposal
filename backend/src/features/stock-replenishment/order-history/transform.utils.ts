@@ -36,7 +36,8 @@ export function transformOrderHistory(
       productsMap.set(productId, {
         product_id: productId,
         product_name: productName,
-        product_uom_id: line.product_uom_id,
+        product_uom: line.product_uom,
+        product_type: line.product_type,
         orders: [],
       });
     }

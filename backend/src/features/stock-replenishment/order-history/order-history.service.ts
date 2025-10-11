@@ -9,13 +9,13 @@ const odooClient = createOdooClient(autoProposalConfig.odooApiType);
  * Récupère et transforme l'historique des commandes d'un client groupé par produit
  *
  * @param partnerId ID du partenaire Odoo (défaut: 3 = Arthur Schwaiger pour tests)
- * @param days Nombre de jours d'historique (défaut: 360 = 12 mois)
+ * @param days Nombre de jours d'historique (défaut: 180 = 6 mois)
  * @returns Historique structuré par produit
  * @throws {Error} En cas d'erreur
  *
  * @example
  * ```typescript
- * const history = await getProductOrderHistory(3, 360)
+ * const history = await getProductOrderHistory(3, 180)
  * console.log(`${history.products.length} produits commandés`)
  * ```
  */

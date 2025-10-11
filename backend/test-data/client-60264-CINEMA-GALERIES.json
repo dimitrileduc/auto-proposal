@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T16:50:20.835Z",
+    "analysis_window_days": 180,
+    "target_coverage_days": 14,
+    "lead_time_days": 5,
+    "replenishment_threshold_days": 19
+  },
+  "client": {
+    "id": 60264,
+    "name": "CINEMA GALERIES",
+    "email": "luke@galeries.be"
+  },
+  "summary": {
+    "total_products_to_order": 5
+  },
+  "products": [
+    {
+      "product_id": 18323,
+      "product_name": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 90340,
+          "order_name": "S38463",
+          "date_order": "2025-08-12 09:56:21",
+          "quantity": 5,
+          "price_unit": 18.9
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.08620689655172414,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 5,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          5
+        ],
+        "order_count": 1,
+        "median_value": 5
+      }
+    },
+    {
+      "product_id": 18325,
+      "product_name": "[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 90340,
+          "order_name": "S38463",
+          "date_order": "2025-08-12 09:56:21",
+          "quantity": 5,
+          "price_unit": 18.9
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.08620689655172414,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 5,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          5
+        ],
+        "order_count": 1,
+        "median_value": 5
+      }
+    },
+    {
+      "product_id": 18326,
+      "product_name": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 90340,
+          "order_name": "S38463",
+          "date_order": "2025-08-12 09:56:21",
+          "quantity": 3,
+          "price_unit": 17.25
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.05172413793103448,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 3,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          3
+        ],
+        "order_count": 1,
+        "median_value": 3
+      }
+    },
+    {
+      "product_id": 18328,
+      "product_name": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 90340,
+          "order_name": "S38463",
+          "date_order": "2025-08-12 09:56:21",
+          "quantity": 5,
+          "price_unit": 17.25
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.08620689655172414,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 5,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          5
+        ],
+        "order_count": 1,
+        "median_value": 5
+      }
+    },
+    {
+      "product_id": 18324,
+      "product_name": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+      "product_uom": [
+        75,
+        "TU15"
+      ],
+      "order_history": [
+        {
+          "order_id": 90340,
+          "order_name": "S38463",
+          "date_order": "2025-08-12 09:56:21",
+          "quantity": 4,
+          "price_unit": 18.9
+        }
+      ],
+      "stock_prediction": {
+        "consumption_per_day": 0.06896551724137931,
+        "estimated_stock_remaining": 0,
+        "days_until_stockout": 0,
+        "replenishment_threshold_days": 19
+      },
+      "quantity_to_order": 4,
+      "calculation_metadata": {
+        "strategy": "single_recent_order",
+        "confidence": "low",
+        "historical_quantities": [
+          4
+        ],
+        "order_count": 1,
+        "median_value": 4
+      }
+    }
+  ]
+}

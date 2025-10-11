@@ -8,114 +8,179 @@
 
 ### Inactivité Client
 
-- Le client n'a plus commandé depuis **X jours** (paramétrable, ex: 30 jours)
+- Le client n'a plus commandé depuis **30 jours** (configurable via `inactivityDaysThreshold`)
+- Vérification quotidienne via CRON
 
-## Analyse Déclenchée
+## 📊 Analyse à Deux Phases
 
-### Prédiction de Rupture de Stock
+Une fois un client identifié comme inactif, le système analyse chaque produit en **deux phases distinctes** :
 
-Une fois un client identifié comme inactif, le système analyse pour chaque produit :
+### Phase 1 : TRIGGER (Détection Risque de Rupture)
 
-- **Consommation/jour** calculée sur l'historique
-- **Stock restant théorique** basé sur la dernière commande
-- **Date de rupture estimée** selon la consommation moyenne
+**But** : Détecter si un produit risque une rupture de stock
+
+1. **Calcul consommation/jour** sur 180 jours d'historique
+
+   - `consumptionPerDay = totalQuantity / actualDays`
+   - `actualDays = min(180, daysSinceFirstOrder)` - Produits récents : évite de diviser par 180j si commandé depuis 60j seulement
+
+2. **Prédiction stock restant**
+
+   - `stockRemaining = lastQuantity - (daysElapsed × consumptionPerDay)`
+   - `daysUntilStockout = stockRemaining / consumptionPerDay`
+
+3. **Décision : Commander ?**
+   - Seuil : `targetCoverage (14j) + leadTime (5j) = 19 jours`
+   - Si `daysUntilStockout > 19j` → Skip (stock OK)
+   - Si `daysUntilStockout ≤ 19j` → Passer à Phase 2
+
+### Phase 2 : QUANTITÉ (Calcul Basé Historique Réel)
+
+**But** : Proposer une quantité réaliste basée sur l'historique du client
+
+**Stratégie à 4 niveaux** (selon nombre de lignes de commande) :
+
+| Lignes commandes | Quantité proposée       | Confiance | Stratégie            |
+| ---------------- | ----------------------- | --------- | -------------------- |
+| 0                | Skip                    | -         | -                    |
+| 1                | Répéter cette quantité  | Low       | single_recent_order  |
+| 2-4              | Médiane de toutes       | Medium    | median_recent_orders |
+| 5+               | Médiane des 5 dernières | High      | median_recent_orders |
+
+**Pourquoi la médiane ?**
+
+- Ignore les outliers (événements exceptionnels)
+- Exemple : `[10, 12, 11, 100, 12]` → Médiane = 12 ✅ (vs Moyenne = 29 ❌)
+
+**Pourquoi les 5 dernières ?**
+
+- Capte l'évolution récente du client (croissance, changement pattern)
+- Exemple : `[10, 10, 15, 20, 25, 30, 35, 40, 45, 50]` → Médiane 5 dernières = 40 ✅
+
+📖 **Détails complets** : `backend/src/features/stock-replenishment/docs/QUANTITY-STRATEGY.md`
 
 ## Paramètres de Configuration
 
-### Paramètres Globaux
+```typescript
+// backend/src/config/auto-proposal.ts
+{
+  // Détection inactivité
+  inactivityDaysThreshold: 30,           // Seuil déclenchement
 
-- **X jours d'inactivité** : seuil de déclenchement (ex: 30 jours)
-- **Couverture cible** : nombre de jours de stock souhaité (ex: 14 jours)
-- **Lead time** : délai de livraison (ex: 5 jours)
-- **MOQ & multiples d'UoM** : minimum de commande (ex: 300€ ou moyenne des 12 derniers mois)
+  // Phase 1 (Trigger) + Phase 2 (Quantité)
+  analysisWindowDays: 180,               // Fenêtre d'analyse unifiée (6 mois)
+  targetCoverage: 14,                    // Stock souhaité après livraison
+  leadTime: 5,                           // Délai livraison
 
-## 🔄 Workflow Technique ( Archtecture des steps TBC w/ Arthur )
+
+  // Phase 2 (Stratégie médiane)
+  quantityStrategy: {
+    maxRecentOrderLines: 5,              // Limiter aux 5 dernières lignes
+    minOrdersForMediumConfidence: 2,     // ≥2 lignes = Medium confidence
+    minOrdersForHighConfidence: 5,       // ≥5 lignes = High confidence
+  },
+
+  // Anti-spam (TODO)
+  // minDaysBetweenProposals: 7,        // Jours minimum entre 2 propositions auto
+}
+```
+
+## 🔄 Workflow
 
 ```
-┌─ CRON Quotidien ─┐
-│                  │
+┌─ CRON Quotidien (Trigger.dev) ─┐
+│
 ├─ 1. Détection Clients Inactifs
-│  └─ Clients sans commande depuis X jours
+│  └─ Clients sans commande depuis 30j
+│     (features/client-inactivity/)
 │
 ├─ 2. Analyse Stock & Calcul Quantités
-│  ├─ Récupération historique commandes (365j)
-│  ├─ Calcul consommation moyenne/jour
-│  ├─ Prédiction jours avant rupture
-│  └─ Calcul quantités ajustées (seuil 19j)
+│  │  (features/stock-replenishment/)
+│  │
+│  ├─ Phase 1: TRIGGER (Détection risque rupture)
+│  │  ├─ Récupération historique 180j (order-history/)
+│  │  ├─ Calcul consommation/jour (utils/consumption.utils.ts)
+│  │  ├─ Prédiction jours avant rupture (utils/prediction.utils.ts)
+│  │  └─ Skip si daysUntilStockout > 19j
+│  │
+│  └─ Phase 2: QUANTITÉ (Médiane historique)
+│     └─ Calcul médiane selon stratégie 4 niveaux (utils/quantity.utils.ts)
 │
 ├─ 3. Génération Devis Odoo
-│  ├─ Création devis draft
+│  │  (features/proposal-generation/)
+│  ├─ Création devis draft via XML-RPC/JSON-2
 │  └─ Tag "Auto-proposal"
 │
-└─ 4. Notification Email
-   └─ Template standard Odoo
+└─ 4. Email Client
+   └─ Automatique via création devis Odoo
 ```
 
-### Structure de Fichiers
+### Structure
 
 ```
-src/
+backend/src/
 ├── config/
-│   └── auto-proposal.ts                      // Paramètres globaux configurables
-├── features/                                 // Features réutilisables et agnostiques
+│   └── auto-proposal.ts                      // Configuration globale
+│
+├── features/                                 // Features métier réutilisables
 │   ├── client-inactivity/
-│   │   ├── inactivity.service.ts             // Logique détection inactivité
-│   │   └── inactivity.utils.ts               // Utils dates, calculs simples
-│   ├── stock-replenishment/
+│   │   ├── inactivity.service.ts             // Détection clients inactifs
+│   │   └── inactivity.utils.ts               // Utils dates
+│   │
+│   ├── stock-replenishment/                  // Module prédiction stock
+│   │   ├── stock-replenishment.service.ts    // Orchestrateur 2 phases
 │   │   ├── order-history/
-│   │   │   ├── order-history.types.ts        // Types/interfaces
-│   │   │   ├── order-history.service.ts      // Récupération historique client
-│   │   │   └── transform.utils.ts            // Transformation data
+│   │   │   ├── order-history.service.ts      // Fetch historique Odoo
+│   │   │   ├── order-history.types.ts        // Types
+│   │   │   └── transform.utils.ts            // Groupement par produit
 │   │   ├── utils/
-│   │   │   ├── consumption.utils.ts          // Calculs consommation/jour
-│   │   │   ├── prediction.utils.ts           // Utils prédiction stock
-│   │   │   └── quantity.utils.ts             // Calculs quantités à commander
-│   │   └── stock-replenishment.service.ts    // Orchestrateur principal
-│   └── proposal-generation/
+│   │   │   ├── consumption.utils.ts          // Phase 1: Consommation/jour
+│   │   │   ├── prediction.utils.ts           // Phase 1: Prédiction rupture
+│   │   │   ├── quantity.utils.ts             // Phase 2: Stratégie médiane
+│   │   │   └── median.utils.ts               // Calcul médiane
+│   │   ├── docs/
+│   │   │   └── QUANTITY-STRATEGY.md          // Doc stratégie 4 niveaux
+│   │   └── README.md                         // Doc module
+│   │
+│   └── proposal-generation/ (TODO)
 │       ├── proposal.service.ts               // Génération devis Odoo
-│       └── formatting.utils.ts               // Format devis pour API
+│       └── formatting.utils.ts               // Format payload API
+│
 ├── infrastructure/
 │   └── odoo/
-│       ├── odoo.service.ts                   // API calls Odoo (JSON-2)
+│       ├── odoo.service.ts                   // Factory Odoo (JSON-2 ou XML-RPC)
+│       ├── clients/
+│       │   ├── odoo-client.types.ts          // Interface commune
+│       │   ├── odoo-domains.ts               // Domaines Odoo réutilisables
+│       │   ├── json2-client.ts               // Adapter JSON-RPC 2.0 (Odoo v19+)
+│       │   └── xmlrpc-client.ts              // Adapter XML-RPC (Odoo < v19)
+│       └── seed-test-orders.ts               // Script test: génère data de test
 │
-├── trigger/ ( TBC )
+├── trigger/ (TODO)
+│   └── daily-auto-proposal.ts                // Task Trigger.dev quotidien
 │
-└── types.ts                                  // Types globaux
+└── types.ts                                   // Types globaux (OdooApiType)
 ```
 
-## Algorithme
+**Liens documentation** :
 
-Voir doc détaillée ici : `backend/src/features/stock-replenishment/README.md`
+- Analyse stock : `backend/src/features/stock-replenishment/README.md`
+- Stratégie quantités : `backend/src/features/stock-replenishment/docs/QUANTITY-STRATEGY.md`
 
-```
-Pour chaque client inactif depuis 30+ jours:
-  1. Récupérer historique commandes (365j)
-  2. Pour chaque produit commandé:
-     - Calculer consommation/jour
-     - Prédire jours avant rupture
-     - Si rupture < 19j → Commander la différence
-  3. Si produits à commander → Générer devis
-```
+## Actions
 
-## Actions Automatisées
+### 1. Génération Devis Odoo (TODO)
 
-### 1. Génération Devis Odoo
+- Création devis **draft** via XML-RPC ou JSON-RPC 2.0
+- Tag **"Auto-proposal"** pour traçabilité
+- Contraintes MOQ/multiples UoM (à implémenter)
+- **Email automatique** envoyé par Odoo
 
-- Création automatique d'un devis en mode **draft**
-- Calcul des quantités basé sur l'algorithme
-- Respect des contraintes MOQ et multiples d'UoM
+### 2. Anti-spam (TODO)
 
-### 2. Envoi Email ( Tbc : Oddo Api vs MailSender Api)
-
-- Template email standard d'Odoo
-- Message type : _"Ci-joint une proposition de commande"_
-- Pièce jointe : devis PDF généré
-
-### 3. Suivi et Traçabilité
-
-- Tag **"Auto-proposal"** sur tous les devis générés
-- Logs détaillés pour monitoring
-- Métriques de performance du système
+- Vérifier dernière proposition auto pour ce client
+- Config `minDaysBetweenProposals` (ex: 7 jours)
+- Skip si proposition récente existe
 
 ---
 
@@ -132,7 +197,14 @@ Pour chaque client inactif depuis 30+ jours:
 
 ### TODO
 
-- [ ] Algo : Uom et Moq
-- [ ] Proposal generation (devis Odoo)
-- [ ] Trigger.dev orchestration
-- [ ] Email notifications
+- [ ] Contraintes MOQ/multiples UoM
+- [x] Filtrer produits de service
+  - [x] Filtrer via `product_type === "service"` (champ Odoo standard)
+  - [x] Implémenté dans les 2 clients (XML-RPC + JSON-2)
+  - [x] Impact : Évite de proposer "Djo Transport" comme produit physique
+- [ ] Génération devis Odoo
+  - [ ] Création devis draft via API
+  - [ ] Tag "Auto-proposal" sur devis
+  - [ ] Anti-spam : éviter propositions répétées (config: minDaysBetweenProposals)
+- [ ] Orchestration Trigger.dev (CRON quotidien)
+- [ ] Email : automatique via création devis Odoo

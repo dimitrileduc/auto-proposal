@@ -1,13 +1,34 @@
+import type { QuantityCalculationMetadata } from "./utils/quantity.utils";
+
+export interface OrderHistoryDetail {
+  order_id: number;
+  order_name: string;
+  date_order: string;
+  quantity: number;
+  price_unit: number;
+}
+
+export interface StockPredictionDetails {
+  consumption_per_day: number;
+  estimated_stock_remaining: number;
+  days_until_stockout: number;
+  replenishment_threshold_days: number;
+}
+
 export interface ProductStockStatus {
   product_id: number;
   product_name: string;
   product_uom: [number, string];
 
-  consumption_per_day: number;
-  days_until_stockout: number; // négatif = déjà en rupture
+  // 1. Historique des commandes (base)
+  order_history: OrderHistoryDetail[];
 
-  quantity_needed: number; // quantité brute calculée (ex: 63.5)
-  quantity_to_order: number; // arrondie selon MOQ & multiples UoM
+  // 2. Stock prediction (Phase 1: TRIGGER)
+  stock_prediction: StockPredictionDetails;
+
+  // 3. Quantity calculation (Phase 2: QUANTITÉ)
+  quantity_to_order: number;
+  calculation_metadata: QuantityCalculationMetadata;
 }
 
 export interface StockReplenishmentResult {

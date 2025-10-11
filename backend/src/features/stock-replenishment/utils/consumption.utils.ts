@@ -34,18 +34,6 @@ export function calculateDailyConsumption(
     (currentDate.getTime() - firstOrderDate.getTime()) / (1000 * 60 * 60 * 24)
   );
 
-  // Warning si historique insuffisant pour calcul fiable
-  // Note: En production ce cas ne devrait pas arriver car les clients sont filtrés
-  // par inactivityDaysThreshold.
-  if (
-    daysSinceFirstOrder < autoProposalConfig.minRequiredHistoryDaysForProduct
-  ) {
-    console.warn(
-      `Low confidence: product has only ${daysSinceFirstOrder} days of history ` +
-        `(< ${autoProposalConfig.minRequiredHistoryDaysForProduct}d threshold)`
-    );
-  }
-
   // Adapter la période: utiliser l'historique réel si < fenêtre d'analyse
   const actualDays = Math.min(daysOfHistory, daysSinceFirstOrder);
 
