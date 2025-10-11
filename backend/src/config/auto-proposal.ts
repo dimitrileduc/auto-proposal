@@ -1,5 +1,5 @@
 import { OdooApiType } from "../types";
-
+// TODO MOVE TO SHARED folder
 // Configuration auto-proposal
 export const autoProposalConfig = {
   // Odoo API type
@@ -18,6 +18,11 @@ export const autoProposalConfig = {
     maxRecentOrderLines: 5, // Limiter l'analyse aux 5 lignes de commande les plus récentes
     minOrdersForMediumConfidence: 2, // Seuil pour confiance Medium
     minOrdersForHighConfidence: 5, // Seuil pour confiance High
+  },
+
+  // Pricing & MOQ configuration
+  pricing: {
+    minimumOrderAmount: 300, // MOQ global en euros
   },
 
   // Testing configuration (to update in production)

@@ -59,6 +59,42 @@ Une fois un client identifié comme inactif, le système analyse chaque produit 
 
 📖 **Détails complets** : `backend/src/features/stock-replenishment/docs/QUANTITY-STRATEGY.md`
 
+### Phase 2.5 : PRICING & MOQ (Préparation Proposition)
+
+**But** : Transformer les quantités calculées en proposition de commande validée avec prix et MOQ
+
+**Étapes** :
+
+1. **Enrichissement avec prix**
+
+   - Mode `historyPriceForClient` : Utilise le `price_unit` de la dernière commande validée
+   - Mode `currentPriceForClient` : Non implémenté (limitation API Odoo v17)
+
+2. **Calcul du total de la commande**
+
+   - `Total = Σ (quantity_to_order × current_price_unit)`
+
+3. **Ajustement MOQ (Minimum Order Quantity)**
+   - Si `Total < 300€` → Ajustement en round-robin
+   - Algorithme : Distribuer le gap en priorisant les produits les plus commandés
+   - Arrêt dès que le MOQ est atteint
+
+**Limitation actuelle - Pricing** :
+
+L'API Odoo v17 ne permet pas d'obtenir les prix actuels avec pricelist via XML-RPC :
+
+- Les méthodes publiques ont été supprimées depuis Odoo v16+
+- Le mode `historyPriceForClient` utilise les prix de l'historique de commandes
+- Le prix historique inclut le pricelist client mais avec l'ancien palier de quantité
+
+**Solutions futures** :
+
+1. Module custom Odoo exposant une méthode publique
+2. Création d'une `sale.order.line` temporaire pour lire le prix calculé
+3. Réplication de la logique pricelist côté backend (non recommandé)
+
+📖 **Détails complets** : `backend/src/features/proposal-preparation/README.md`
+
 ## Paramètres de Configuration
 
 ```typescript
@@ -72,12 +108,16 @@ Une fois un client identifié comme inactif, le système analyse chaque produit 
   targetCoverage: 14,                    // Stock souhaité après livraison
   leadTime: 5,                           // Délai livraison
 
-
   // Phase 2 (Stratégie médiane)
   quantityStrategy: {
     maxRecentOrderLines: 5,              // Limiter aux 5 dernières lignes
     minOrdersForMediumConfidence: 2,     // ≥2 lignes = Medium confidence
     minOrdersForHighConfidence: 5,       // ≥5 lignes = High confidence
+  },
+
+  // Phase 2.5 (Pricing & MOQ)
+  pricing: {
+    minimumOrderAmount: 300,             // MOQ global en euros
   },
 
   // Anti-spam (TODO)
@@ -105,6 +145,14 @@ Une fois un client identifié comme inactif, le système analyse chaque produit 
 │  │
 │  └─ Phase 2: QUANTITÉ (Médiane historique)
 │     └─ Calcul médiane selon stratégie 4 niveaux (utils/quantity.utils.ts)
+│
+├─ 2.5. Préparation Proposition avec Pricing & MOQ
+│  │  (features/proposal-preparation/)
+│  │
+│  ├─ Enrichissement avec prix historiques (pricing/)
+│  ├─ Calcul total de la commande
+│  └─ Ajustement MOQ si total < 300€ (moq/)
+│     └─ Algorithme round-robin par fréquence de commande
 │
 ├─ 3. Génération Devis Odoo
 │  │  (features/proposal-generation/)
@@ -142,6 +190,19 @@ backend/src/
 │   │   │   └── QUANTITY-STRATEGY.md          // Doc stratégie 4 niveaux
 │   │   └── README.md                         // Doc module
 │   │
+│   ├── proposal-preparation/                 // Module pricing & MOQ
+│   │   ├── proposal-preparation.service.ts   // Orchestrateur Phase 2.5
+│   │   ├── proposal-preparation.types.ts     // Types TypeScript
+│   │   ├── pricing/
+│   │   │   └── pricing.service.ts            // Enrichissement prix historiques
+│   │   ├── moq/
+│   │   │   ├── moq-adjustment.service.ts     // Logique ajustement MOQ
+│   │   │   └── adjustment-strategy.utils.ts  // Tri produits par fréquence
+│   │   ├── __tests__/
+│   │   │   ├── test-utils.ts                 // Chargement fichiers JSON test
+│   │   │   └── proposal-preparation.test.ts  // Tests d'intégration
+│   │   └── README.md                         // Doc module
+│   │
 │   └── proposal-generation/ (TODO)
 │       ├── proposal.service.ts               // Génération devis Odoo
 │       └── formatting.utils.ts               // Format payload API
@@ -166,45 +227,76 @@ backend/src/
 
 - Analyse stock : `backend/src/features/stock-replenishment/README.md`
 - Stratégie quantités : `backend/src/features/stock-replenishment/docs/QUANTITY-STRATEGY.md`
+- Pricing & MOQ : `backend/src/features/proposal-preparation/README.md`
 
-## Actions
+## 🚀 Prochaines Étapes
 
-### 1. Génération Devis Odoo (TODO)
+### Phase 3 : Génération Devis Odoo (TODO)
+
+**Objectif** : Transformer la proposition validée en devis Odoo draft
 
 - Création devis **draft** via XML-RPC ou JSON-RPC 2.0
 - Tag **"Auto-proposal"** pour traçabilité
-- Contraintes MOQ/multiples UoM (à implémenter)
-- **Email automatique** envoyé par Odoo
+- Utilisation des données de la Phase 2.5 (quantités ajustées + prix)
+- **Email automatique** envoyé par Odoo lors de la création
 
-### 2. Anti-spam (TODO)
+**Note** : Les contraintes MOQ et UoM sont déjà gérées en Phase 2.5
+
+### Phase 4 : Anti-spam (TODO)
 
 - Vérifier dernière proposition auto pour ce client
 - Config `minDaysBetweenProposals` (ex: 7 jours)
 - Skip si proposition récente existe
 
+### Phase 5 : Orchestration Trigger.dev (TODO)
+
+- CRON quotidien orchestrant toutes les phases
+- Gestion des erreurs et retry logic
+- Monitoring et alertes
+
 ---
 
 ## 📝 TODO
 
-### DONE
+### DONE ✅
 
-- Client inactivity detection
-- Order history retrieval
-- Stock replenishment analysis (100%)
-  - Calcul consommation
+- **Phase 0** : Client inactivity detection
+- **Phase 1** : Stockout detection (TRIGGER)
+  - Calcul consommation/jour
   - Prédiction rupture
-  - Calcul quantités ajustées
+  - Filtrage des produits de service
+- **Phase 2** : Quantity calculation
+  - Stratégie médiane à 4 niveaux
+  - Gestion UoM native Odoo
+- **Phase 2.5** : Proposal preparation (Pricing & MOQ)
+  - Enrichissement avec prix historiques
+  - Ajustement MOQ (300€) avec algorithme round-robin
+  - Architecture future-proof pour prix actuels (mode `currentPriceForClient`)
 
-### TODO
+### TODO 🚧
 
-- [ ] Contraintes MOQ/multiples UoM
-- [x] Filtrer produits de service
-  - [x] Filtrer via `product_type === "service"` (champ Odoo standard)
-  - [x] Implémenté dans les 2 clients (XML-RPC + JSON-2)
-  - [x] Impact : Évite de proposer "Djo Transport" comme produit physique
-- [ ] Génération devis Odoo
+- [ ] **Phase 3** : Génération devis Odoo
   - [ ] Création devis draft via API
   - [ ] Tag "Auto-proposal" sur devis
   - [ ] Anti-spam : éviter propositions répétées (config: minDaysBetweenProposals)
-- [ ] Orchestration Trigger.dev (CRON quotidien)
-- [ ] Email : automatique via création devis Odoo
+- [ ] **Phase 4** : Orchestration Trigger.dev (CRON quotidien)
+- [ ] **Phase 5** : Email automatique via création devis Odoo
+
+### NOTES 📝
+
+- [x] UoM - Géré nativement par Odoo (aucune conversion nécessaire)
+- [x] Filtrer produits de service
+  - Filtré via `product_type === "service"` (champ Odoo standard)
+  - Implémenté dans les 2 clients (XML-RPC + JSON-2)
+  - Impact : Évite de proposer "Djo Transport" comme produit physique
+- [x] Pricing - Limitation API Odoo v17
+  - Impossible d'obtenir prix actuels avec pricelist via XML-RPC
+  - Mode `historyPriceForClient` implémenté (prix de l'historique)
+  - Solutions futures : module custom Odoo ou sale.order.line temporaire
+
+---
+
+## 📦 Note sur les UoM
+
+Les quantités récupérées d'Odoo sont **déjà dans le bon UoM** (TU6, TU12, etc.). Aucune conversion nécessaire.
+Détails: voir `backend/src/features/proposal-preparation/README.md`
