@@ -28,8 +28,21 @@ export async function generateQuote(
   const partnerInfo = await odooClient.getPartnerCompanyInfo(
     proposal.client_id
   );
-  const companyId = partnerInfo.company_id[0];
-  const companyName = partnerInfo.company_id[1];
+
+  // Si le partner n'a pas de company_id (false), utiliser company 1 par défaut
+  let companyId: number;
+  let companyName: string;
+
+  if (!partnerInfo.company_id || partnerInfo.company_id === false) {
+    // Utiliser company_id 1 par défaut (première company Odoo)
+    companyId = 1;
+    companyName = "Default Company";
+    console.warn(`⚠️  Client ${proposal.client_id} sans company_id, utilisation company 1 par défaut`);
+  } else {
+    companyId = partnerInfo.company_id[0];
+    companyName = partnerInfo.company_id[1];
+  }
+
   const clientName = partnerInfo.name;
 
   // 2. Créer le devis (sale.order) avec tag

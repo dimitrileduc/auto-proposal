@@ -31,9 +31,14 @@ export const autoProposalConfig = {
     noteTemplate: "🤖 Proposition automatique générée par Auto-Proposal System",
   },
 
+  // Workflow configuration
+  workflow: {
+    maxClientsForProposalGeneration: 50, // Limite de clients pour Phase 2.5 (Proposal) + Phase 3 (Quote). Phase 1 (Stock Analysis) est faite pour TOUS les clients inactifs.
+  },
+
   // Testing configuration (to update in production)
   testing: {
     defaultClientId: 3, // Arthur Schwaiger (demo client)
-    includeDraftOrders: true, // Include draft orders in analysis
+    includeDraftOrders: false, // Include draft orders in analysis
   },
 };

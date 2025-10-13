@@ -44,9 +44,23 @@ Système automatique de génération de propositions commerciales pour clients i
 │  ├─ Création devis draft via XML-RPC
 │  └─ Tag "Auto-proposal" (ID: 82)
 │
-└─ Phase 4: Email Client (TODO)
-   └─ mail.template.send_mail() + mail.mail.send()
-   └─ Template: sale.email_template_edi_sale
+├─ Phase 4: Email Client (TODO)
+│  └─ mail.template.send_mail() + mail.mail.send()
+│  └─ Template: sale.email_template_edi_sale
+│
+└─ Phase 5: Génération Rapports ✅
+   │  📖 backend/src/reports/ + backend/src/workflow/
+   │
+   ├─ Rapport Global (global-report-{date}.md)
+   │  ├─ Statistiques globales (clients inactifs, avec historique, avec risque)
+   │  ├─ Liste des exemples détaillés avec liens
+   │  └─ Tableau comparatif RAW → AJUSTÉ → ODOO
+   │
+   └─ Rapports Clients (client-{id}-{name}.md)
+      ├─ Phase 1: Stock Analysis (RAW) avec dropdowns par produit
+      ├─ Phase 2.5: Pricing + MOQ (ADJUSTED)
+      ├─ Phase 3: Devis Odoo (QUOTE)
+      └─ Comparaison prix historiques vs Odoo
 ```
 
 ---
@@ -145,6 +159,29 @@ Système automatique de génération de propositions commerciales pour clients i
 
 ---
 
+### Phase 5: Génération Rapports ✅
+
+**Objectif**: Générer des rapports markdown pour suivi et analyse
+
+**2 types de rapports**:
+
+#### 1. Rapport Global (`global-report-{date}.md`)
+- **Statistiques globales**: Clients inactifs, avec historique, avec risque, total produits, moyenne
+- **Liste des exemples**: Les N clients traités avec liens vers rapports détaillés
+- **Tableau comparatif**: Client | ID | Produits | RAW (€) | AJUSTÉ (€) | ODOO HT (€) | Rapport
+
+#### 2. Rapports Clients (`client-{id}-{name}.md`)
+- **Phase 1 (RAW)**: Stock Analysis avec dropdowns par produit (historique, prédiction, calcul quantité)
+- **Phase 2.5 (ADJUSTED)**: Pricing + MOQ (prix historiques, ajustement MOQ si < 300€)
+- **Phase 3 (QUOTE)**: Devis Odoo réel (prix avec pricelist, taxes, total TTC)
+- **Comparaison**: Écart prix historiques vs Odoo
+
+**Localisation**: `reports-output/`
+
+📖 `backend/src/reports/` + `backend/src/workflow/README.md`
+
+---
+
 ## ⚙️ Configuration
 
 ```typescript
@@ -186,6 +223,17 @@ backend/src/
 │   ├── proposal-preparation/                 // Phase 2.5
 │   └── proposal-generation/                  // Phase 3
 │
+├── reports/                                  // Phase 5
+│   ├── formatters.ts                         // Utils markdown (tables, titles, etc.)
+│   ├── client-report.ts                      // Rapport par client (3 phases)
+│   └── global-report.ts                      // Rapport global (stats + tableau)
+│
+├── workflow/                                 // Orchestration
+│   ├── auto-proposal.workflow.ts             // Workflow principal
+│   ├── client-proposal.workflow.ts           // Workflow 1 client
+│   ├── workflow.stats.ts                     // Stats globales
+│   └── README.md                             // 📖 Doc workflow
+│
 ├── infrastructure/
 │   └── odoo/                                 // Clients XML-RPC & JSON-2
 │
@@ -203,6 +251,7 @@ backend/src/
 - **Phase 2**: Quantity calculation (stratégie médiane)
 - **Phase 2.5**: Proposal preparation (Pricing & MOQ)
 - **Phase 3**: Quote generation (draft avec tag)
+- **Phase 5**: Report generation (global + par client)
 
 ### 🚧 TODO
 
@@ -215,6 +264,7 @@ backend/src/
 
 ## 📖 Documentation détaillée
 
+- **Workflow orchestration**: `backend/src/workflow/README.md`
 - **Phase 1 & 2**: `backend/src/features/stock-replenishment/README.md`
 - **Stratégie quantités**: `backend/src/features/stock-replenishment/docs/QUANTITY-STRATEGY.md`
 - **Phase 2.5**: `backend/src/features/proposal-preparation/README.md`
