@@ -39,6 +39,6 @@ export const autoProposalConfig = {
   // Testing configuration (to update in production)
   testing: {
     defaultClientId: 3, // Arthur Schwaiger (demo client)
-    includeDraftOrders: true, // Include draft orders in analysis
+    includeDraftOrders: false, // Include draft orders in analysis
   },
 };

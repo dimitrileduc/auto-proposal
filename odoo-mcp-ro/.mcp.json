@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "odoo-mcp-ro": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {
+        "ODOO_URL": "https://collectif-copy-prod-24346379.dev.odoo.com",
+        "ODOO_DB": "collectif-copy-prod-24346379",
+        "ODOO_USERNAME": "rachel.renson@moutarderie.be",
+        "ODOO_PASSWORD": "f247481d2f61368df4b0b3fd92e48e79b4f0abea"
+      }
+    }
+  }
+}
