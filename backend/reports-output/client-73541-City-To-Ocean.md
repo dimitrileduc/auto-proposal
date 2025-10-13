@@ -1,8 +1,8 @@
-# 📊 Rapport Auto-Proposal - CPL - VEGEMAR asbl
+# 📊 Rapport Auto-Proposal - City To Ocean
 
-**📅 Date:** 13/10/2025 12:27
-**🆔 Client ID:** 73333
-**📧 Email:** frederic.beyrus@provincedeliege.be
+**📅 Date:** 13/10/2025 14:32
+**🆔 Client ID:** 73541
+**📧 Email:** pieter@citytoocean.org
 **⏱️ Durée d'exécution:** 1.8s
 
 ---
@@ -15,16 +15,16 @@
 - Modérés (0 < rupture ≤ 19j): 0
 
 **Total produits (Phase 1): 3**
-**Quantité totale brute: 34 unités**
+**Quantité totale brute: 26 unités**
 
 ### Détails par produit
 
 
 <details>
-<summary>🔴 <strong>[DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> (ID: 17728) - 3 unités</summary>
+<summary>🔴 <strong>OI/Intercalaire plastique consigné</strong> (ID: 14111) - 16 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0246
+- **Consommation/jour**: 0.4103
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
 - **Seuil réappro**: 19j
@@ -33,22 +33,22 @@
 
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
-| 2025-06-13 | S37432 | 3 | 15.12€ |
+| 2025-09-04 | S38697 | 16 | 5.00€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
 - **Confiance**: low
-- **Quantités historiques**: [3]
+- **Quantités historiques**: [16]
 - **Nombre commandes**: 1
-- **Valeur médiane**: 3
+- **Valeur médiane**: 16
 
 </details>
 
 <details>
-<summary>🔴 <strong>[DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> (ID: 17730) - 17 unités</summary>
+<summary>🔴 <strong>OI/Palette IND-DIN</strong> (ID: 14556) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1393
+- **Consommation/jour**: 0.0513
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
 - **Seuil réappro**: 19j
@@ -57,22 +57,22 @@
 
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
-| 2025-06-13 | S37432 | 17 | 15.12€ |
+| 2025-09-04 | S38697 | 2 | 18.00€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
 - **Confiance**: low
-- **Quantités historiques**: [17]
+- **Quantités historiques**: [2]
 - **Nombre commandes**: 1
-- **Valeur médiane**: 17
+- **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> (ID: 17729) - 14 unités</summary>
+<summary>🔴 <strong>CPL/Intercalaire plastique consigné</strong> (ID: 9733) - 8 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1148
+- **Consommation/jour**: 0.0899
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
 - **Seuil réappro**: 19j
@@ -81,14 +81,14 @@
 
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
-| 2025-06-13 | S37432 | 14 | 15.12€ |
+| 2025-07-16 | S37771 | 8 | 4.20€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
 - **Confiance**: low
-- **Quantités historiques**: [14]
+- **Quantités historiques**: [8]
 - **Nombre commandes**: 1
-- **Valeur médiane**: 14
+- **Valeur médiane**: 8
 
 </details>
 
@@ -100,43 +100,49 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 514.08€**
+- **Montant initial: 149.60€**
 - **MOQ requis: 300.00€**
-- ✅ **Déjà au-dessus du MOQ**
+- ⚠️ **Gap à combler: 150.40€**
+
+### Après ajustement MOQ
+
+- **Produits ajustés: 3/3**
+- **Montant ajouté: +159.00€**
+- **Montant final: 308.60€**
 
 ### Détails produits avec pricing
 
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [DAF002] DAF Lime and Ginge... | 17728 | 3 | 0 | 3 | 15.12€ | 45.36€ |
-| [DAF004] DAF Peach and Lemo... | 17730 | 17 | 0 | 17 | 15.12€ | 257.04€ |
-| [DAF003] DAF Passionfruit w... | 17729 | 14 | 0 | 14 | 15.12€ | 211.68€ |
+| OI/Intercalaire plastique c... | 14111 | 16 | +6 | 22 | 5.00€ | 110.00€ |
+| OI/Palette IND-DIN | 14556 | 2 | +6 | 8 | 18.00€ | 144.00€ |
+| CPL/Intercalaire plastique ... | 9733 | 8 | +5 | 13 | 4.20€ | 54.60€ |
 
-**Total (Phase 2.5): 514.08€**
+**Total (Phase 2.5): 308.60€**
 
 ---
 
 ## 📄 PHASE 3 - DEVIS ODOO CRÉÉ
 
 
-**Devis ID:** 91533
-**Nom:** S39656
+**Devis ID:** 91547
+**Nom:** S39670
 **État:** draft
-**Date création:** 13/10/2025 10:22
+**Date création:** 13/10/2025 12:24
 
 ### Montants calculés par Odoo (avec ristournes/pricelists)
 
 
 | Produit | ID | Qté | Prix unit. Odoo | HT | TVA | TTC |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [DAF002] DAF Lime and Ginge... | 17728 | 3 | 15.12€ | 45.36€ | 2.72€ | 48.08€ |
-| [DAF004] DAF Peach and Lemo... | 17730 | 17 | 15.12€ | 257.04€ | 15.42€ | 272.46€ |
-| [DAF003] DAF Passionfruit w... | 17729 | 14 | 15.12€ | 211.68€ | 12.70€ | 224.38€ |
+| OI/Intercalaire plastique c... | 14111 | 22 | 5.00€ | 110.00€ | 0.00€ | 110.00€ |
+| OI/Palette IND-DIN | 14556 | 8 | 18.00€ | 144.00€ | 0.00€ | 144.00€ |
+| CPL/Intercalaire plastique ... | 9733 | 13 | 4.20€ | 54.60€ | 0.00€ | 54.60€ |
 
-**Total HT (Odoo): 514.08€**
-**Total TVA: 30.84€**
-**Total TTC: 544.92€**
+**Total HT (Odoo): 308.60€**
+**Total TVA: 0.00€**
+**Total TTC: 308.60€**
 
 ---
 
@@ -145,6 +151,6 @@
 
 | Métrique | Phase 2.5 (Prix historiques) | Phase 3 (Prix Odoo réels) | Écart |
 | --- | --- | --- | --- |
-| Montant HT | 514.08€ | 514.08€ | +0.00€ (0.0%) |
+| Montant HT | 308.60€ | 308.60€ | +0.00€ (0.0%) |
 
 > ⚠️ **Note**: Les prix Odoo peuvent différer des prix historiques en raison des pricelists, promotions, et ristournes actives.
