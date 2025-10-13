@@ -3,6 +3,10 @@ import { prepareProposal } from "../features/proposal-preparation/proposal-prepa
 import { generateQuote } from "../features/proposal-generation/proposal-generation.service";
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
+import { prepareClientReportData } from "./workflow.client-stats";
+import { generateClientReport } from "../reports/client-report";
+import * as fs from "fs/promises";
+import * as path from "path";
 import type { InactiveClient } from "../features/client-inactivity/inactivity.types";
 import type {
   ClientProposalResult,
@@ -111,6 +115,27 @@ export async function runClientAutoProposal(
 
     result.success = true;
     result.executionTime = Date.now() - startTime;
+
+    // Générer le rapport client si hasRisk
+    if (result.hasRisk) {
+      try {
+        const reportData = prepareClientReportData(result, config);
+        if (reportData) {
+          const markdownReport = generateClientReport(reportData);
+          const reportsOutputDir = path.join(process.cwd(), "reports-output");
+          await fs.mkdir(reportsOutputDir, { recursive: true });
+
+          const reportFileName = `client-${client.id}-${client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
+          const reportFilePath = path.join(reportsOutputDir, reportFileName);
+          await fs.writeFile(reportFilePath, markdownReport, "utf-8");
+
+          console.log(`📝 Report generated: ${reportFileName}`);
+        }
+      } catch (error) {
+        console.error(`Failed to generate report for client ${client.id}:`, error);
+        // Ne pas faire échouer le workflow pour une erreur de rapport
+      }
+    }
 
     return result;
   } catch (error) {

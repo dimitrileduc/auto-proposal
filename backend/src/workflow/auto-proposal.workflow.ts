@@ -4,7 +4,6 @@ import { calculateReplenishmentNeeds } from "../features/stock-replenishment/sto
 import { autoProposalConfig } from "../config/auto-proposal";
 import { calculateGlobalWorkflowStatistics } from "./workflow.stats";
 import { prepareAllClientReportData } from "./workflow.client-stats";
-import { generateClientReport } from "../reports/client-report";
 import { generateGlobalReport } from "../reports/global-report";
 import type {
   WorkflowOptions,
@@ -158,23 +157,12 @@ export async function runAutoProposalWorkflow(
 
     const executionTime = Date.now() - startTime;
 
-    // 6. Générer rapports markdown
-    console.log("\n📝 Generating reports...");
+    // 6. Générer rapport global markdown
+    console.log("\n📝 Generating global report...");
     const reportsOutputDir = path.join(process.cwd(), "reports-output");
     await fs.mkdir(reportsOutputDir, { recursive: true });
 
-    // Générer rapports clients individuels (tous ceux avec full workflow)
-    for (const reportData of clientReportData) {
-      try {
-        const markdownReport = generateClientReport(reportData);
-        const reportFileName = `client-${reportData.client.id}-${reportData.client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
-        const reportFilePath = path.join(reportsOutputDir, reportFileName);
-        await fs.writeFile(reportFilePath, markdownReport, "utf-8");
-        console.log(`   ✅ ${reportFileName}`);
-      } catch (error) {
-        console.error(`   ❌ Failed to generate report for client ${reportData.client.id}:`, error);
-      }
-    }
+    // Note: Les rapports clients individuels sont maintenant générés directement dans client-proposal.workflow.ts
 
     // Générer rapport global
     const globalReportData: GlobalReportData = {

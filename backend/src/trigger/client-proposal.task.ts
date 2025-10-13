@@ -34,6 +34,7 @@ export interface ClientProposalTaskResult {
  * - Phase 1 & 2: Stock Analysis + Quantity Calculation
  * - Phase 2.5: Proposal Preparation (Pricing + MOQ)
  * - Phase 3: Quote Generation (si !skipQuoteGeneration)
+ * - Génération du rapport markdown automatique si hasRisk
  *
  * La configuration utilise autoProposalConfig comme fallback pour tous les paramètres
  */
