@@ -74,6 +74,20 @@ export interface OdooSaleOrderLine {
 }
 
 /**
+ * Résultat de l'envoi d'email de devis
+ */
+export interface EmailSendResult {
+  success: boolean;
+  template_id: number;
+  email_sent_to: string[];
+  email_blocked_for: string[];  // Emails bloqués (client réel en mode test)
+  quote_id: number;
+  quote_name: string;
+  mode: 'test' | 'production';
+  error?: string;
+}
+
+/**
  * Interface du client Odoo
  * Implémentée par XML-RPC et JSON-2
  */
@@ -124,4 +138,23 @@ export interface OdooClient {
     order: OdooSaleOrder;
     lines: OdooSaleOrderLine[];
   }>;
+
+  /**
+   * Envoie un devis par email (Mode TEST ou PRODUCTION)
+   * En mode TEST: email uniquement à testEmail (client bloqué)
+   * En mode PRODUCTION: email au client + CC à testEmail
+   *
+   * @param quoteId - ID du devis
+   * @param quoteName - Nom du devis (ex: "S39712")
+   * @param clientEmail - Email du client (pour logs/blocage)
+   * @param testMode - Si true, bloque l'envoi au client
+   * @param testEmail - Email de test/monitoring
+   */
+  sendQuoteByEmail(
+    quoteId: number,
+    quoteName: string,
+    clientEmail: string,
+    testMode: boolean,
+    testEmail: string
+  ): Promise<EmailSendResult>;
 }

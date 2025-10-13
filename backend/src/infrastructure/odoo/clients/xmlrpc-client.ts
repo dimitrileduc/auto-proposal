@@ -13,6 +13,7 @@ import type {
   PartnerCompanyInfo,
   OdooSaleOrder,
   OdooSaleOrderLine,
+  EmailSendResult,
 } from "./odoo-client.types";
 import {
   buildRecentOrdersDomain,
@@ -272,6 +273,109 @@ export function createXmlRpcClient(): OdooClient {
           : new Error(
               `Erreur lors de la récupération des détails du devis ${quoteId}: ${error}`
             );
+      }
+    },
+
+    async sendQuoteByEmail(
+      quoteId: number,
+      quoteName: string,
+      clientEmail: string,
+      testMode: boolean,
+      testEmail: string
+    ): Promise<EmailSendResult> {
+      try {
+        console.log(`\n📧 Odoo XML-RPC: Sending quote ${quoteName} (ID: ${quoteId})`);
+        console.log(`   Mode: ${testMode ? 'TEST' : 'PRODUCTION'}`);
+
+        // Récupérer le template ID pour les devis
+        const templates = await odoo.searchRead<{ id: number; name: string }>(
+          "mail.template",
+          [
+            ["model", "=", "sale.order"],
+            ["name", "ilike", "Sales Order"]  // Cherche le template standard
+          ],
+          { fields: ["id", "name"], limit: 1 }
+        );
+
+        if (templates.length === 0) {
+          throw new Error("No email template found for sale.order");
+        }
+
+        const templateId = templates[0].id;
+        console.log(`   Using template: ${templates[0].name} (ID: ${templateId})`);
+
+        const emailsSentTo: string[] = [];
+        const emailsBlockedFor: string[] = [];
+
+        if (testMode) {
+          // MODE TEST: Email uniquement à testEmail
+          console.log(`   🔒 TEST MODE: Overriding recipient`);
+          console.log(`   ✅ Email will go ONLY to: ${testEmail}`);
+          console.log(`   🚫 Client email ${clientEmail} is BLOCKED`);
+
+          emailsSentTo.push(testEmail);
+          emailsBlockedFor.push(clientEmail);
+        } else {
+          // MODE PRODUCTION: Email normal au client
+          console.log(`   ⚠️  PRODUCTION MODE:`);
+          console.log(`      TO: ${clientEmail} (client)`);
+          emailsSentTo.push(clientEmail);
+        }
+
+        // Utiliser mail.template.send_mail pour envoyer
+        console.log(`   Sending email via template...`);
+
+        try {
+          let emailValues = {};
+
+          if (testMode) {
+            // En mode TEST, forcer l'email à aller à testEmail
+            emailValues = {
+              email_to: testEmail,
+              partner_ids: [],  // Clear les partners
+              email_cc: '',     // Clear le CC
+            };
+            console.log(`   Forcing email_to: ${testEmail}`);
+          }
+
+          // send_mail avec tous les paramètres positionnels
+          // Signature: send_mail(res_id, force_send=False, raise_exception=False, email_values=None)
+          const mailIds = await odoo.execute("mail.template", "send_mail", [
+            templateId,           // Template ID (self)
+            quoteId,             // res_id (sale.order)
+            true,                // force_send
+            false,               // raise_exception
+            emailValues          // email_values dict
+          ]);
+
+          console.log(`   ✅ Email sent successfully! Mail ID(s): ${mailIds}`);
+        } catch (sendError) {
+          throw new Error(`Failed to send email: ${sendError}`);
+        }
+
+        return {
+          success: true,
+          template_id: templateId,
+          email_sent_to: emailsSentTo,
+          email_blocked_for: emailsBlockedFor,
+          quote_id: quoteId,
+          quote_name: quoteName,
+          mode: testMode ? 'test' : 'production'
+        };
+
+      } catch (error: any) {
+        console.error(`   ❌ Email send failed:`, error);
+
+        return {
+          success: false,
+          template_id: 0,
+          email_sent_to: [],
+          email_blocked_for: testMode ? [clientEmail] : [],
+          quote_id: quoteId,
+          quote_name: quoteName,
+          mode: testMode ? 'test' : 'production',
+          error: error.message || String(error)
+        };
       }
     },
   };
