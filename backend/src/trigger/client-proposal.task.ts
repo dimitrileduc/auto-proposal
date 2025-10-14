@@ -24,6 +24,10 @@ export interface ClientProposalTaskResult {
     quoteName?: string;
     quoteId?: number;
   };
+  report: {
+    complete?: string;  // Le rapport markdown complet
+    quote?: string;  // Le rapport markdown du devis seul
+  };
   executionTime: number;
 }
 
@@ -123,6 +127,10 @@ export const clientProposalTask = task({
           finalAmount: result.finalAmount ?? 0,
           quoteName: result.quoteName,
           quoteId: result.quoteId,
+        },
+        report: {
+          complete: result.reportMarkdown,  // Le rapport markdown complet (si généré)
+          quote: result.quoteMarkdown,  // Le rapport markdown du devis seul (si généré)
         },
         executionTime: Date.now() - startTime,
       };

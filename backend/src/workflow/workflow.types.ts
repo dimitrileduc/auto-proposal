@@ -74,6 +74,8 @@ export interface ClientProposalResult {
   quoteName?: string;
   quoteId?: number;
   reportPath?: string;
+  reportMarkdown?: string; // Contenu markdown du rapport complet
+  quoteMarkdown?: string; // Contenu markdown du devis seul
   error?: string;
   executionTime?: number; // ms
 }

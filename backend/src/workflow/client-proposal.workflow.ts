@@ -4,7 +4,7 @@ import { generateQuote } from "../features/proposal-generation/proposal-generati
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
 import { prepareClientReportData } from "./workflow.client-stats";
-import { generateClientReport } from "../reports/client-report";
+import { generateClientReport, generateQuoteReport } from "../reports/client-report";
 import * as fs from "fs/promises";
 import * as path from "path";
 import type { InactiveClient } from "../features/client-inactivity/inactivity.types";
@@ -121,13 +121,24 @@ export async function runClientAutoProposal(
       try {
         const reportData = prepareClientReportData(result, config);
         if (reportData) {
+          // Générer le rapport complet
           const markdownReport = generateClientReport(reportData);
+
+          // Générer le rapport devis seul (si quote existe)
+          const quoteMarkdown = generateQuoteReport(reportData);
+
+          // Sauvegarder le rapport complet sur disque
           const reportsOutputDir = path.join(process.cwd(), "reports-output");
           await fs.mkdir(reportsOutputDir, { recursive: true });
 
           const reportFileName = `client-${client.id}-${client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
           const reportFilePath = path.join(reportsOutputDir, reportFileName);
           await fs.writeFile(reportFilePath, markdownReport, "utf-8");
+
+          // Ajouter les rapports au résultat
+          result.reportPath = reportFilePath;
+          result.reportMarkdown = markdownReport;
+          result.quoteMarkdown = quoteMarkdown;
 
           console.log(`📝 Report generated: ${reportFileName}`);
         }

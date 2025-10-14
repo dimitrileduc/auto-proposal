@@ -51,6 +51,31 @@ export function generateClientReport(data: ClientReportData): string {
 }
 
 /**
+ * Génère uniquement la section devis Odoo en markdown
+ */
+export function generateQuoteReport(data: ClientReportData): string | undefined {
+  if (!data.phases.quote) {
+    return undefined;
+  }
+
+  const sections: string[] = [];
+
+  // En-tête simplifié pour le devis seul
+  sections.push(title(`📄 Devis Odoo - ${data.client.name}`, 1));
+  sections.push(statsBlock({
+    "📅 Date": formatDate(data.executionDate),
+    "🆔 Client ID": data.client.id,
+    "📧 Email": data.client.email || "N/A",
+  }));
+  sections.push(separator());
+
+  // Phase 3 uniquement
+  sections.push(generatePhase3Section(data));
+
+  return sections.join("\n");
+}
+
+/**
  * Section: Metadata
  */
 function generateMetadataSection(data: ClientReportData): string {
