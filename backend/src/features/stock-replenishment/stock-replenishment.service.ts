@@ -17,13 +17,20 @@ import type {
  * 2. Quantité: Médiane de l'historique réel (pas consommation × jours)
  *
  * @param clientId ID du client Odoo
- * @param daysOfHistory Nombre de jours d'historique à analyser
+ * @param config Configuration optionnelle (analysisWindowDays, targetCoverage, leadTime)
  * @returns Produits à commander avec quantités recommandées
  */
 export async function calculateReplenishmentNeeds(
   clientId: number = autoProposalConfig.testing.defaultClientId,
-  daysOfHistory: number = autoProposalConfig.analysisWindowDays
+  config?: {
+    analysisWindowDays?: number;
+    targetCoverage?: number;
+    leadTime?: number;
+  }
 ): Promise<StockReplenishmentResult> {
+  // Utiliser les valeurs de config ou les valeurs par défaut
+  const daysOfHistory = config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays;
+
   // 1. Récupération de l'historique
   const orderHistory = await getProductOrderHistory(clientId, daysOfHistory);
 
@@ -63,7 +70,9 @@ export async function calculateReplenishmentNeeds(
     console.log(`     Stock restant estimé: ${stockPrediction.estimatedStock.toFixed(2)}`);
     console.log(`     Jours avant rupture: ${stockPrediction.daysUntilStockout.toFixed(1)}j`);
 
-    const { targetCoverage, leadTime } = autoProposalConfig;
+    // Utiliser les valeurs de config ou les valeurs par défaut
+    const targetCoverage = config?.targetCoverage ?? autoProposalConfig.targetCoverage;
+    const leadTime = config?.leadTime ?? autoProposalConfig.leadTime;
     const replenishmentThresholdDays = targetCoverage + leadTime;
     console.log(`     Seuil réappro: ${replenishmentThresholdDays}j (couverture ${targetCoverage}j + lead time ${leadTime}j)`);
 

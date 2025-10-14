@@ -50,7 +50,11 @@ export async function runClientAutoProposal(
   try {
     // Phase 1 & 2: Stock Analysis + Quantity Calculation
     const stockStart = Date.now();
-    const stockAnalysis = await calculateReplenishmentNeeds(client.id);
+    const stockAnalysis = await calculateReplenishmentNeeds(client.id, {
+      analysisWindowDays: config.analysisWindowDays,
+      targetCoverage: config.targetCoverage,
+      leadTime: config.leadTime
+    });
     phaseTimings.stockAnalysis = Date.now() - stockStart;
 
     result.phases.stockAnalysis = stockAnalysis;
@@ -82,7 +86,7 @@ export async function runClientAutoProposal(
 
     // Phase 2.5: Proposal Preparation (Pricing + MOQ)
     const proposalStart = Date.now();
-    const proposalFinal = await prepareProposal(
+    const proposalFinal = prepareProposal(
       stockAnalysis,
       undefined,
       "historyPriceForClient",

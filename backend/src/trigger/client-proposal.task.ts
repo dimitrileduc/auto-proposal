@@ -76,6 +76,8 @@ export const clientProposalTask = task({
         payload.config?.leadTime ??
         autoProposalConfig.leadTime,
 
+      // replenishmentThreshold est toujours calculé comme targetCoverage + leadTime
+      // Il sera recalculé dans calculateReplenishmentNeeds avec les valeurs custom
       replenishmentThreshold:
         (payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage) +
         (payload.config?.leadTime ?? autoProposalConfig.leadTime),
