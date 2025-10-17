@@ -5,6 +5,7 @@ import { configure } from "@trigger.dev/sdk/v3";
 import health from "./routes/health";
 import { test } from "./routes/test";
 import workflow from "./routes/workflow";
+import clientTask from "./routes/client-task";
 
 // Configure Trigger.dev
 configure({
@@ -17,6 +18,7 @@ const app = new Hono();
 app.route("/", health);
 app.route("/test", test);
 app.route("/workflow", workflow);
+app.route("/client-task", clientTask);
 
 // server
 serve(
