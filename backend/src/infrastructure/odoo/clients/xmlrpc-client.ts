@@ -44,7 +44,7 @@ export function createXmlRpcClient(): OdooClient {
   });
 
   return {
-    async getInactiveCompanyPartners(days: number): Promise<OdooPartner[]> {
+    async getInactiveCompanyPartners(days: number, excludeTagId?: number): Promise<OdooPartner[]> {
       if (days <= 0) {
         throw new Error("Le nombre de jours doit être positif");
       }
@@ -54,7 +54,7 @@ export function createXmlRpcClient(): OdooClient {
       try {
         // RPC 1: Récupérer les commandes récentes
         const recentOrders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildRecentOrdersDomain(dateLimitStr),
+          buildRecentOrdersDomain(dateLimitStr, excludeTagId),
           {
             fields: ["partner_id"],
           }

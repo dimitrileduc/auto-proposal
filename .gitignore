@@ -3,3 +3,6 @@
 # Fichiers
 .DS_Store
 *.log
+
+# MCP config
+odoo-mcp-ro/.mcp.json

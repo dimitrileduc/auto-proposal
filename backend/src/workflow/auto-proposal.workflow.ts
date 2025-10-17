@@ -55,17 +55,24 @@ export async function runAutoProposalWorkflow(
       options?.maxClientsForProposalGeneration ??
       autoProposalConfig.workflow.maxClientsForProposalGeneration,
     skipQuoteGeneration: options?.skipQuoteGeneration ?? false,
+    excludeAutoProposalQuotes:
+      options?.excludeAutoProposalQuotes ??
+      autoProposalConfig.workflow.excludeAutoProposalQuotes,
   };
 
   console.log("\n🚀 AUTO-PROPOSAL WORKFLOW STARTED");
   console.log(`   Mode: ${config.skipQuoteGeneration ? "TEST (skip quotes)" : "PRODUCTION"}`);
   console.log(`   Inactivity threshold: ${config.inactivityDays} days`);
-  console.log(`   Analysis window: ${config.analysisWindowDays} days\n`);
+  console.log(`   Analysis window: ${config.analysisWindowDays} days`);
+  console.log(`   Exclude auto-proposal quotes: ${config.excludeAutoProposalQuotes ? "YES (tag 82)" : "NO"}\n`);
 
   try {
     // 1. Récupérer tous les clients inactifs
     console.log("📊 Fetching inactive clients...");
-    const allInactiveClients = await getInactiveClients(config.inactivityDays);
+    const allInactiveClients = await getInactiveClients(
+      config.inactivityDays,
+      config.excludeAutoProposalQuotes ? autoProposalConfig.quoteGeneration.autoProposalTagId : undefined
+    );
     console.log(`   Found ${allInactiveClients.length} inactive clients\n`);
 
     // 2. Loop sur TOUS les clients inactifs

@@ -94,8 +94,10 @@ export interface EmailSendResult {
 export interface OdooClient {
   /**
    * Récupère les partenaires company inactifs
+   * @param days Nombre de jours d'inactivité
+   * @param excludeTagId Optionnel: Tag ID à exclure des commandes récentes (ex: tag auto-proposal 82)
    */
-  getInactiveCompanyPartners(days: number): Promise<OdooPartner[]>;
+  getInactiveCompanyPartners(days: number, excludeTagId?: number): Promise<OdooPartner[]>;
 
   /**
    * Récupère l'historique des commandes d'un partenaire

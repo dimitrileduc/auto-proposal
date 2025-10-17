@@ -9,6 +9,7 @@ import type { GlobalWorkflowStatistics } from "./workflow.stats";
 export interface WorkflowOptions {
   skipQuoteGeneration?: boolean; // Si true, ne crée pas les devis dans Odoo (mode test)
   maxClientsForProposalGeneration?: number | "all"; // Limite de clients pour Phase 2.5 + 3 (override config)
+  excludeAutoProposalQuotes?: boolean; // Si true, exclut les commandes avec tag auto-proposal lors de la détection d'inactivité (override config)
 }
 
 /**
@@ -25,6 +26,7 @@ export interface WorkflowConfig {
   // Runtime overrides
   maxClientsForProposalGeneration: number | "all";
   skipQuoteGeneration: boolean;
+  excludeAutoProposalQuotes: boolean;
 }
 
 /**

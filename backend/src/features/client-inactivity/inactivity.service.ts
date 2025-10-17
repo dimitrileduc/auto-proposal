@@ -9,18 +9,27 @@ const odooClient = createOdooClient(autoProposalConfig.odooApiType);
  * Récupère les clients inactifs
  *
  * @param days Nombre de jours d'inactivité (défaut: config.inactivityDaysThreshold)
+ * @param excludeAutoProposalTagId Optionnel: Tag ID à exclure des commandes récentes.
+ *        Si undefined, utilise config.workflow.excludeAutoProposalQuotes pour déterminer si on exclut le tag 82
  * @returns Liste des clients inactifs
  * @throws {Error} En cas d'erreur
  *
  * @example
  * ```typescript
+ * // Utilise le comportement par défaut de la config (excludeAutoProposalQuotes: true)
  * const inactiveClients = await getInactiveClients(30)
- * console.log(`${inactiveClients.length} clients inactifs`)
+ *
+ * // Force l'exclusion du tag 82
+ * const inactiveClients = await getInactiveClients(30, 82)
+ *
+ * // Force l'inclusion (pas d'exclusion)
+ * const inactiveClients = await getInactiveClients(30, undefined)
  * ```
  */
 export async function getInactiveClients(
-  days: number = autoProposalConfig.inactivityDaysThreshold
+  days: number = autoProposalConfig.inactivityDaysThreshold,
+  excludeAutoProposalTagId?: number
 ): Promise<InactiveClient[]> {
-  const partners = await odooClient.getInactiveCompanyPartners(days);
+  const partners = await odooClient.getInactiveCompanyPartners(days, excludeAutoProposalTagId);
   return transformInactiveClients(partners);
 }

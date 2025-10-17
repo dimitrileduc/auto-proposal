@@ -83,7 +83,7 @@ async function odooApiRequest<T = any>(
  */
 export function createJson2Client(): OdooClient {
   return {
-    async getInactiveCompanyPartners(days: number): Promise<OdooPartner[]> {
+    async getInactiveCompanyPartners(days: number, excludeTagId?: number): Promise<OdooPartner[]> {
       if (days <= 0) {
         throw new Error("Le nombre de jours doit être positif");
       }
@@ -95,7 +95,7 @@ export function createJson2Client(): OdooClient {
         const recentOrders = await odooApiRequest<OdooOrder[]>(
           "sale.order/search_read",
           {
-            domain: buildRecentOrdersDomain(dateLimitStr),
+            domain: buildRecentOrdersDomain(dateLimitStr, excludeTagId),
             fields: ["partner_id"],
           }
         );

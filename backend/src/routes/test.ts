@@ -2,29 +2,41 @@ import { Hono } from 'hono'
 import { getInactiveClients } from '../features/client-inactivity/inactivity.service'
 import { getProductOrderHistory } from '../features/stock-replenishment/order-history/order-history.service'
 import { calculateReplenishmentNeeds } from '../features/stock-replenishment/stock-replenishment.service'
+import { autoProposalConfig } from '../config/auto-proposal'
 
 const test = new Hono()
 
 /**
- * GET /test/clients/inactive?days=30
+ * GET /test/clients/inactive?days=30&excludeAutoProposal=true
  * Route de test pour récupérer les clients inactifs
  */
 test.get('/clients/inactive', async (c) => {
   try {
     const daysParam = c.req.query('days')
+    const excludeAutoProposalParam = c.req.query('excludeAutoProposal')
+
     const days = daysParam ? parseInt(daysParam, 10) : 30
+    const excludeAutoProposal = excludeAutoProposalParam === 'true'
 
     if (isNaN(days) || days <= 0) {
       return c.json({ error: 'Le paramètre days doit être un nombre positif' }, 400)
     }
 
-    const inactiveClients = await getInactiveClients(days)
+    const excludeTagId = excludeAutoProposal
+      ? autoProposalConfig.quoteGeneration.autoProposalTagId
+      : undefined
+
+    const inactiveClients = await getInactiveClients(days, excludeTagId)
 
     return c.json({
       success: true,
       data: inactiveClients,
       count: inactiveClients.length,
-      filters: { days }
+      filters: {
+        days,
+        excludeAutoProposal,
+        excludeTagId
+      }
     })
 
   } catch (error) {

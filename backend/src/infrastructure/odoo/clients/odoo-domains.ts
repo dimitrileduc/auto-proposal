@@ -14,15 +14,28 @@ type OdooDomain = Array<OdooDomainCondition | OdooDomainOperator>;
 
 /**
  * Domain pour récupérer les commandes depuis une date donnée
+ * @param dateLimitStr Date limite au format ISO
+ * @param excludeTagId Optionnel: Tag ID à exclure (ex: tag auto-proposal 82)
  */
-export function buildRecentOrdersDomain(dateLimitStr: string): OdooDomainCondition[] {
-  return [["date_order", ">=", dateLimitStr]];
+export function buildRecentOrdersDomain(
+  dateLimitStr: string,
+  excludeTagId?: number
+): OdooDomainCondition[] {
+  const domain: OdooDomainCondition[] = [["date_order", ">=", dateLimitStr]];
+
+  if (excludeTagId !== undefined) {
+    // Exclure les commandes ayant ce tag
+    domain.push(["tag_ids", "not in", [excludeTagId]]);
+  }
+
+  return domain;
 }
 
 /**
  * Domain pour récupérer les partenaires inactifs
  * - Partenaires company uniquement
  * - Avec customer_rank > 0 (ont déjà été clients)
+ * - Partenaires actifs uniquement (non archivés dans Odoo)
  * - Soit jamais commandé (sale_order_ids = false)
  * - Soit pas commandé récemment (id not in activePartnerIds)
  */
@@ -30,6 +43,7 @@ export function buildInactivePartnersDomain(activePartnerIds: number[]): any[] {
   return [
     ["is_company", "=", true],
     ["customer_rank", ">", 0],
+    ["active", "=", true], // Exclure les clients archivés
     "|", // Union de deux groupes d'inactifs
     ["sale_order_ids", "=", false], // GROUPE 1: Jamais commandé
     "&", // GROUPE 2: A commandé mais pas récemment
