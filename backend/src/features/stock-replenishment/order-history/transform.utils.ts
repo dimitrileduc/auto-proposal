@@ -4,7 +4,10 @@ import type { ClientOrderHistory, ProductOrderHistory } from "./order-history.ty
 /**
  * Transforme l'historique brut Odoo en structure groupée par produit
  *
- * @param rawHistory Données brutes d'Odoo (orders + orderLines)
+ * Note: Le filtrage des produits non-food (consignes, palettes, emballages, etc.)
+ * est fait côté Odoo dans la requête pour optimiser les performances.
+ *
+ * @param rawHistory Données brutes d'Odoo (orders + orderLines déjà filtrées)
  * @param partnerId ID du partenaire
  * @returns Historique structuré par produit avec commandes triées par date décroissante
  */

@@ -31,6 +31,79 @@ export const autoProposalConfig = {
     noteTemplate: "🤖 Proposition automatique générée par Auto-Proposal System",
   },
 
+  // Product filtering configuration
+  productFiltering: {
+    // Catégories de produits à exclure de l'analyse (consignes, palettes, emballages, lavage, etc.)
+    excludedCategoryIds: [
+      // Consignes
+      8, // Bring Back / Bouteilles - non facturés
+      10, // BB-Lavage a façon - Casiers (consignés)
+      12, // BB-Palettes (consignés)
+      14, // Bring Back / Bocaux - non facturés
+      17, // Bring Back / Clé en main - Consignes
+      19, // Bring Back / Clé en main - casiers
+      20, // Bring Back / Casiers - non facturés
+      25, // FoodPrint / Consignes FP (parent)
+      40, // FoodPrint / Consignes FP / Casier
+      46, // FoodPrint / Consignes FP / Bocaux-Bouteilles
+      287, // CMB / EMBALLAGE / CONSIGNE
+      582, // FoodPrint / Consignes FP / Autres consignes
+      // Palettes
+      294, // CMB / EMBALLAGE / PALETTE
+      // Emballages
+      24, // FoodPrint / Emballages
+      29, // FoodPrint / Emballages / Etiquette
+      30, // FoodPrint / Emballages / Couvercle
+      249, // CMB / EMBALLAGE / CARTON
+      252, // CMB / EMBALLAGE / ETIQUETTE
+      253, // CMB / EMBALLAGE / FILM
+      262, // CMB / EMBALLAGE / METAL COUVERCLE
+      264, // CMB / EMBALLAGE / PLASTIQUE COUVERCLE
+      265, // CMB / EMBALLAGE / PLASTIQUE POT
+      276, // CMB / EMBALLAGE / VERRE
+      291, // CMB / EMBALLAGE
+      538, // CMB / EMBALLAGE / TRIPACK
+      556, // CMB / BW EMBALLAGE ET REMPLISSAGE
+      557, // CMB / EMBALLAGE / NETTOYAGE
+      583, // FoodPrint / Emballages
+      585, // FoodPrint / Emballages / Emballages sales
+      586, // FoodPrint / Emballages / Emballages pour production
+      587, // FoodPrint / Emballages / Autres emballages
+      // Lavage à façon
+      7, // BB-Lavage à façon - Bouteilles
+      13, // BB-Lavage à façon - bocaux
+      15, // Bring Back / Clé en main - Bouteilles
+      16, // Bring Back / Clé en main - bocaux
+      18, // Prestation de lavage
+      // Fermetures / Bouchons
+      50, // Bring Back / Fermetures bocaux
+      51, // Bring Back / Fermetures bocaux
+      52, // Bring Back / Clé en main - Fermetures
+      // Vaisselle
+      547, // FoodPrint / La Vache / Vaisselle
+      577, // COWATCH / VAISSELLE
+      // Transport
+      21, // Bring back / Transports
+      289, // CMB / TRANSPORT
+      551, // FoodPrint / Transport
+      580, // COWATCH / TRANSPORT
+      // Consommables / Frais généraux
+      11, // Bring Back / Consommables
+      26, // FoodPrint / Frais généraux
+      284, // CMB / CONSOMMABLES VETEMENTS
+      285, // CMB / CONSOMMABLES PRODUITS ENTRETIEN
+      286, // CMB / CONSOMMABLES AUTRES FRAIS PERSONNEL
+      288, // CMB / COMMISSIONS
+      295, // CMB / FRAIS DE MANUTENTION
+      555, // CMB / REMISE RABAIS RISTOURNE
+      560, // CMB / CONSULTANCE
+      // Stockage / Services
+      53, // Stockage
+      554, // manuta
+      697, // froid
+    ],
+  },
+
   // Workflow configuration
   workflow: {
     maxClientsForProposalGeneration: 50, // Limite de clients pour Phase 2.5 (Proposal) + Phase 3 (Quote). Phase 1 (Stock Analysis) est faite pour TOUS les clients inactifs.

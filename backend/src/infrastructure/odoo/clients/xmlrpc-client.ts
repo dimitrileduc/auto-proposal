@@ -86,7 +86,8 @@ export function createXmlRpcClient(): OdooClient {
     async getOrderHistoryByPartner(
       partnerId: number,
       days: number,
-      includeDraftOrders: boolean = false
+      includeDraftOrders: boolean = false,
+      excludedCategoryIds?: number[]
     ): Promise<OrderHistory> {
       if (days <= 0) {
         throw new Error("Le nombre de jours doit être positif");
@@ -128,16 +129,29 @@ export function createXmlRpcClient(): OdooClient {
           };
         }
 
-        // RPC 2: Récupérer les détails des order_lines
-        const orderLines = await odoo.read<OdooOrderLine>("sale.order.line", orderLineIds, [
-          "id",
-          "product_id",
-          "product_uom_qty",
-          "product_uom",
-          "product_type",
-          "price_unit",
-          "order_id",
-        ]);
+        // RPC 2: Récupérer les détails des order_lines avec filtrage produits non-food
+        const domain: any[] = [["id", "in", orderLineIds]];
+
+        // Filtrer les produits de catégories exclues (consignes, palettes, emballages, etc.)
+        if (excludedCategoryIds && excludedCategoryIds.length > 0) {
+          domain.push(["product_id.categ_id", "not in", excludedCategoryIds]);
+        }
+
+        const orderLines = await odoo.searchRead<OdooOrderLine>(
+          "sale.order.line",
+          domain,
+          {
+            fields: [
+              "id",
+              "product_id",
+              "product_uom_qty",
+              "product_uom",
+              "product_type",
+              "price_unit",
+              "order_id",
+            ],
+          }
+        );
 
         return {
           orders: orders.map((order) => ({

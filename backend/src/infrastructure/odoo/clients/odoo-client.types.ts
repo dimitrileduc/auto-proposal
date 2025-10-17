@@ -26,6 +26,7 @@ export interface OdooOrderLine {
   product_type: string;  // "product" | "service" | "consu"
   price_unit: number;
   order_id: [number, string];
+  categ_id?: [number, string];  // Catégorie produit (pour filtrage non-food)
 }
 
 export interface OrderHistory {
@@ -101,11 +102,16 @@ export interface OdooClient {
 
   /**
    * Récupère l'historique des commandes d'un partenaire
+   * @param partnerId ID du partenaire
+   * @param days Nombre de jours d'historique
+   * @param includeDraftOrders Inclure les commandes draft
+   * @param excludedCategoryIds IDs de catégories à exclure (consignes, palettes, emballages, etc.)
    */
   getOrderHistoryByPartner(
     partnerId: number,
     days: number,
-    includeDraftOrders: boolean
+    includeDraftOrders: boolean,
+    excludedCategoryIds?: number[]
   ): Promise<OrderHistory>;
 
   /**

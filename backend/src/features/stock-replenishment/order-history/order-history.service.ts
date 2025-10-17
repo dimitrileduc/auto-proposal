@@ -26,7 +26,8 @@ export async function getProductOrderHistory(
   const rawHistory = await odooClient.getOrderHistoryByPartner(
     partnerId,
     days,
-    autoProposalConfig.testing.includeDraftOrders
+    autoProposalConfig.testing.includeDraftOrders,
+    autoProposalConfig.productFiltering.excludedCategoryIds
   );
   return transformOrderHistory(rawHistory, partnerId);
 }

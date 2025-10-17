@@ -127,7 +127,8 @@ export function createJson2Client(): OdooClient {
     async getOrderHistoryByPartner(
       partnerId: number,
       days: number,
-      includeDraftOrders: boolean = false
+      includeDraftOrders: boolean = false,
+      excludedCategoryIds?: number[]
     ): Promise<OrderHistory> {
       if (days <= 0) {
         throw new Error("Le nombre de jours doit être positif");
@@ -163,11 +164,18 @@ export function createJson2Client(): OdooClient {
           return { orders: [], orderLines: [] };
         }
 
-        // RPC 2: Récupérer les détails des order_lines
+        // RPC 2: Récupérer les détails des order_lines avec filtrage produits non-food
+        const domain: any[] = [["id", "in", orderLineIds]];
+
+        // Filtrer les produits de catégories exclues (consignes, palettes, emballages, etc.)
+        if (excludedCategoryIds && excludedCategoryIds.length > 0) {
+          domain.push(["product_id.categ_id", "not in", excludedCategoryIds]);
+        }
+
         const orderLines = await odooApiRequest<OdooOrderLine[]>(
-          "sale.order.line/read",
+          "sale.order.line/search_read",
           {
-            ids: orderLineIds,
+            domain,
             fields: [
               "id",
               "product_id",
