@@ -20,21 +20,23 @@ import * as path from "path";
  *
  * Étapes:
  * 1. Récupère TOUS les clients inactifs (Phase 0)
- * 2. Loop sur TOUS les clients pour Phase 1 (Stock Analysis)
- *    → Détecte risque de rupture de stock pour chaque client
+ * 2. Loop sur les clients à analyser (limité par maxClientsToAnalyze pour debug)
+ *    → Phase 1 (Stock Analysis): Détecte risque de rupture de stock pour chaque client
  * 3. Pour les N premiers clients AVEC RISQUE (selon maxClientsForProposalGeneration):
  *    → Phase 2.5: Proposal Preparation (pricing, MOQ)
  *    → Phase 3: Quote Generation (création devis Odoo si !skipQuoteGeneration)
  * 4. Calcule statistiques globales (avec calculateGlobalWorkflowStatistics)
  * 5. Retourne résultats complets avec stats + données brutes
  *
- * Note: Phase 1 est TOUJOURS faite pour tous les clients inactifs afin d'avoir
- * des statistiques complètes. La limitation maxClientsForProposalGeneration
- * s'applique uniquement aux phases 2.5 et 3 (génération de proposals/quotes).
+ * Notes:
+ * - maxClientsToAnalyze limite le nombre de clients traités (toutes phases, pour debug rapide)
+ * - maxClientsForProposalGeneration limite uniquement Phase 2.5/3 (génération proposals/quotes)
+ * - Liste complète des inactifs conservée pour statistiques exactes
  *
  * @param options - Options runtime
- * @param options.skipQuoteGeneration - Si true, skip Phase 3 (mode test)
+ * @param options.maxClientsToAnalyze - Limite le nombre total de clients à analyser (debug)
  * @param options.maxClientsForProposalGeneration - Limite Phase 2.5/3 aux N premiers avec risque
+ * @param options.skipQuoteGeneration - Si true, skip Phase 3 (mode test)
  * @returns Résultat global avec statistiques et données brutes
  */
 export async function runAutoProposalWorkflow(
@@ -42,22 +44,18 @@ export async function runAutoProposalWorkflow(
 ): Promise<WorkflowResult> {
   const startTime = Date.now();
 
-  // Merge config + options runtime
+  // Merge config + options runtime (payload override config)
   const config: WorkflowConfig = {
-    inactivityDays: autoProposalConfig.inactivityDaysThreshold,
-    analysisWindowDays: autoProposalConfig.analysisWindowDays,
-    targetCoverage: autoProposalConfig.targetCoverage,
-    leadTime: autoProposalConfig.leadTime,
-    replenishmentThreshold:
-      autoProposalConfig.targetCoverage + autoProposalConfig.leadTime,
-    moqMinimum: autoProposalConfig.pricing.minimumOrderAmount,
-    maxClientsForProposalGeneration:
-      options?.maxClientsForProposalGeneration ??
-      autoProposalConfig.workflow.maxClientsForProposalGeneration,
+    inactivityDays: options?.inactivityDays ?? autoProposalConfig.inactivityDaysThreshold,
+    analysisWindowDays: options?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
+    targetCoverage: options?.targetCoverage ?? autoProposalConfig.targetCoverage,
+    leadTime: options?.leadTime ?? autoProposalConfig.leadTime,
+    replenishmentThreshold: (options?.targetCoverage ?? autoProposalConfig.targetCoverage) + (options?.leadTime ?? autoProposalConfig.leadTime),
+    moqMinimum: options?.moqMinimum ?? autoProposalConfig.pricing.minimumOrderAmount,
+    maxClientsToAnalyze: options?.maxClientsToAnalyze ?? "all",
+    maxClientsForProposalGeneration: options?.maxClientsForProposalGeneration ?? autoProposalConfig.workflow.maxClientsForProposalGeneration,
     skipQuoteGeneration: options?.skipQuoteGeneration ?? false,
-    excludeAutoProposalQuotes:
-      options?.excludeAutoProposalQuotes ??
-      autoProposalConfig.workflow.excludeAutoProposalQuotes,
+    excludeAutoProposalQuotes: options?.excludeAutoProposalQuotes ?? autoProposalConfig.workflow.excludeAutoProposalQuotes,
   };
 
   console.log("\n🚀 AUTO-PROPOSAL WORKFLOW STARTED");
@@ -75,8 +73,14 @@ export async function runAutoProposalWorkflow(
     );
     console.log(`   Found ${allInactiveClients.length} inactive clients\n`);
 
-    // 2. Loop sur TOUS les clients inactifs
-    console.log("📊 Analyzing ALL inactive clients...\n");
+    // 2. Limiter les clients à analyser (debug)
+    const maxToAnalyze = config.maxClientsToAnalyze === "all"
+      ? allInactiveClients.length
+      : config.maxClientsToAnalyze;
+    const clientsToProcess = allInactiveClients.slice(0, maxToAnalyze);
+
+    // 3. Loop sur les clients à traiter
+    console.log(`📊 Analyzing ${clientsToProcess.length}/${allInactiveClients.length} inactive clients...\n`);
 
     const clientResults: ClientProposalResult[] = [];
     const maxProposalGeneration = config.maxClientsForProposalGeneration === "all"
@@ -84,7 +88,7 @@ export async function runAutoProposalWorkflow(
       : config.maxClientsForProposalGeneration;
 
     console.log(
-      `   Phase 1 (Stock Analysis): ALL ${allInactiveClients.length} clients`
+      `   Phase 1 (Stock Analysis): ${clientsToProcess.length} clients (of ${allInactiveClients.length} inactive)`
     );
     console.log(
       `   Phase 2.5 (Proposal) + Phase 3 (Quote): First ${maxProposalGeneration === Infinity ? "ALL" : maxProposalGeneration} clients with risk\n`
@@ -93,11 +97,11 @@ export async function runAutoProposalWorkflow(
     let processedCount = 0;
     let clientsWithRiskCount = 0;
 
-    for (const client of allInactiveClients) {
+    for (const client of clientsToProcess) {
       processedCount++;
 
       if (processedCount % 100 === 0) {
-        console.log(`   Progress: ${processedCount}/${allInactiveClients.length}...`);
+        console.log(`   Progress: ${processedCount}/${clientsToProcess.length}...`);
       }
 
       try {
@@ -205,7 +209,7 @@ export async function runAutoProposalWorkflow(
 
     console.log("\n✅ WORKFLOW COMPLETED");
     console.log(
-      `   Processed: ${clientResults.length}/${allInactiveClients.length} clients`
+      `   Processed: ${clientResults.length}/${clientsToProcess.length} clients (${allInactiveClients.length} total inactive)`
     );
     console.log(`   With order history: ${statistics.clientsWithOrderHistory}`);
     console.log(`   With risk: ${statistics.clientsWithRisk}`);

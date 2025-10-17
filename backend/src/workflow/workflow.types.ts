@@ -5,11 +5,21 @@ import type { GlobalWorkflowStatistics } from "./workflow.stats";
 
 /**
  * Options runtime pour le workflow (override config)
+ * Tous les paramètres peuvent être overridés depuis le payload (e.g. Trigger.dev)
  */
 export interface WorkflowOptions {
+  // Paramètres d'analyse
+  inactivityDays?: number; // Seuil d'inactivité en jours
+  analysisWindowDays?: number; // Fenêtre d'analyse historique en jours
+  targetCoverage?: number; // Couverture cible en jours
+  leadTime?: number; // Délai d'approvisionnement en jours
+  moqMinimum?: number; // Montant minimum de commande (MOQ)
+
+  // Paramètres de workflow
+  maxClientsToAnalyze?: number | "all"; // Debug: limite le nombre total de clients à analyser (Phase 1)
+  maxClientsForProposalGeneration?: number | "all"; // Limite de clients pour Phase 2.5 + 3
   skipQuoteGeneration?: boolean; // Si true, ne crée pas les devis dans Odoo (mode test)
-  maxClientsForProposalGeneration?: number | "all"; // Limite de clients pour Phase 2.5 + 3 (override config)
-  excludeAutoProposalQuotes?: boolean; // Si true, exclut les commandes avec tag auto-proposal lors de la détection d'inactivité (override config)
+  excludeAutoProposalQuotes?: boolean; // Si true, exclut les commandes avec tag auto-proposal lors de la détection d'inactivité
 }
 
 /**
@@ -24,6 +34,7 @@ export interface WorkflowConfig {
   replenishmentThreshold: number; // targetCoverage + leadTime
   moqMinimum: number;
   // Runtime overrides
+  maxClientsToAnalyze: number | "all";
   maxClientsForProposalGeneration: number | "all";
   skipQuoteGeneration: boolean;
   excludeAutoProposalQuotes: boolean;

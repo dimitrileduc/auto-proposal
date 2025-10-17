@@ -15,6 +15,7 @@ const workflow = new Hono();
  * Body (optionnel):
  * {
  *   "skipQuoteGeneration": false,
+ *   "maxClientsToAnalyze": "all",
  *   "maxClientsForProposalGeneration": 10
  * }
  */
@@ -23,11 +24,13 @@ workflow.post("/", async (c) => {
     const body = await c.req.json().catch(() => ({}));
     const {
       skipQuoteGeneration = false,
+      maxClientsToAnalyze = "all",
       maxClientsForProposalGeneration = 10,
     } = body;
 
     const result = await runAutoProposalWorkflow({
       skipQuoteGeneration,
+      maxClientsToAnalyze,
       maxClientsForProposalGeneration,
     });
 
