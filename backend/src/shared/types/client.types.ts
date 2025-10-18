@@ -24,14 +24,14 @@ export interface ClientProcessingConfig {
   moqMinimum: number;
 
   /** Si true, skip la création du devis Odoo (Phase 3) */
-  skipQuoteGeneration: boolean;
+  skipOdooQuoteGeneration: boolean;
 }
 
 /**
  * Payload pour la task Trigger.dev "client-proposal"
  *
  * Cette task traite un client individuel et exécute
- * le workflow complet (ou partiel si skipQuoteGeneration=true)
+ * le workflow complet (ou partiel si skipOdooQuoteGeneration=true)
  */
 export interface ClientTaskPayload {
   /** Client à traiter */

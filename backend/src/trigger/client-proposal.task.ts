@@ -88,9 +88,13 @@ export const clientProposalTask = task({
         payload.config.moqMinimum ??
         autoProposalConfig.pricing.minimumOrderAmount,
 
-      skipQuoteGeneration:
-        payload.config.skipQuoteGeneration ??
+      skipOdooQuoteGeneration:
+        payload.config.skipOdooQuoteGeneration ??
         false,
+
+      shouldGenerateReport:
+        payload.config.shouldGenerateReport ??
+        true,
     };
 
     const result: ClientProposalResult = {
@@ -182,7 +186,7 @@ export const clientProposalTask = task({
       }
 
       // Phase 3: Quote Generation (si pas en mode skip)
-      if (!config.skipQuoteGeneration) {
+      if (!config.skipOdooQuoteGeneration) {
         const quoteStart = Date.now();
         const quote = await generateQuote(proposalFinal, odooClient);
         phaseTimings.quoteGeneration = Date.now() - quoteStart;
@@ -195,21 +199,21 @@ export const clientProposalTask = task({
       result.success = true;
       result.executionTime = Date.now() - startTime;
 
-      // Générer le rapport client si hasRisk
+      // Générer le rapport client si hasRisk ET shouldGenerateReport
       let reportMarkdown: string | undefined;
       let quoteMarkdown: string | undefined;
       let reportPath: string | undefined;
 
-      if (result.hasRisk) {
+      if (result.hasRisk && config.shouldGenerateReport) {
         try {
           const reportData = prepareClientReportData(result, {
             ...config,
             replenishmentThreshold,
             // Add the missing fields from WorkflowConfig that prepareClientReportData expects
             inactivityDays: autoProposalConfig.inactivityDaysThreshold,
-            maxClientsForProposalGeneration: autoProposalConfig.workflow.maxClientsForProposalGeneration,
+            generateReports: autoProposalConfig.workflow.generateReports,
             maxClientsToAnalyze: "all",
-            excludeAutoProposalQuotes: autoProposalConfig.workflow.excludeAutoProposalQuotes,
+            forceReanalysis: autoProposalConfig.workflow.forceReanalysis,
           });
 
           if (reportData) {

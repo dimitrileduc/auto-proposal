@@ -17,9 +17,9 @@ export interface WorkflowOptions {
 
   // Paramètres de workflow
   maxClientsToAnalyze?: number | "all"; // Debug: limite le nombre total de clients à analyser (Phase 1)
-  maxClientsForProposalGeneration?: number | "all"; // Limite de clients pour Phase 2.5 + 3
-  skipQuoteGeneration?: boolean; // Si true, ne crée pas les devis dans Odoo (mode test)
-  excludeAutoProposalQuotes?: boolean; // Si true, exclut les commandes avec tag auto-proposal lors de la détection d'inactivité
+  generateReports?: boolean; // Si true, génère les rapports markdown pour tous les clients avec risk
+  skipOdooQuoteGeneration?: boolean; // Si true, ne crée pas les devis dans Odoo (mode test)
+  forceReanalysis?: boolean; // Si true, force la réanalyse de tous les clients inactifs, même ceux ayant déjà des devis auto-proposal
 }
 
 /**
@@ -35,9 +35,9 @@ export interface WorkflowConfig {
   moqMinimum: number;
   // Runtime overrides
   maxClientsToAnalyze: number | "all";
-  maxClientsForProposalGeneration: number | "all";
-  skipQuoteGeneration: boolean;
-  excludeAutoProposalQuotes: boolean;
+  generateReports: boolean;
+  skipOdooQuoteGeneration: boolean;
+  forceReanalysis: boolean;
 }
 
 /**

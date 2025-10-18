@@ -106,8 +106,8 @@ export const autoProposalConfig = {
 
   // Workflow configuration
   workflow: {
-    maxClientsForProposalGeneration: 50, // Limite de clients pour Phase 2.5 (Proposal) + Phase 3 (Quote). Phase 1 (Stock Analysis) est faite pour TOUS les clients inactifs.
-    excludeAutoProposalQuotes: true, // Si true, exclut les commandes avec tag auto-proposal (tag 82) lors de la détection d'inactivité pour éviter le spam
+    generateReports: true, // Si true, génère les rapports markdown pour tous les clients avec risk. Si false, skip tous les rapports.
+    forceReanalysis: false, // Si true, force la réanalyse de tous les clients inactifs, même ceux ayant déjà des devis auto-proposal (tag 82). Par défaut false pour éviter le spam.
   },
 
   // Testing configuration (to update in production)

@@ -24,7 +24,8 @@ const clientTask = new Hono();
  *     "targetCoverage": 14,
  *     "leadTime": 5,
  *     "moqMinimum": 300,
- *     "skipQuoteGeneration": true
+ *     "skipOdooQuoteGeneration": true,  // Si true, skip création devis Odoo
+ *     "shouldGenerateReport": true  // Si true, génère rapport markdown
  *   }
  * }
  */
@@ -49,7 +50,8 @@ clientTask.post("/", async (c) => {
         targetCoverage: config.targetCoverage,
         leadTime: config.leadTime,
         moqMinimum: config.moqMinimum,
-        skipQuoteGeneration: config.skipQuoteGeneration,
+        skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
+        shouldGenerateReport: config.shouldGenerateReport,
       },
     };
 
