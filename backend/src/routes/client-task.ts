@@ -21,11 +21,12 @@ const clientTask = new Hono();
  *   "clientEmail": "lvdp@alavi.be",  // Optionnel
  *   "config": {  // Optionnel, overrides des paramètres
  *     "analysisWindowDays": 180,
+ *     "analysisEndDate": "2025-10-26 23:59:59",  // Date de référence pour l'analyse d'historique (format: "YYYY-MM-DD HH:MM:SS"). Default: aujourd'hui
  *     "targetCoverage": 14,
  *     "leadTime": 5,
  *     "moqMinimum": 300,
  *     "skipOdooQuoteGeneration": true,  // Si true, skip création devis Odoo
- *     "shouldGenerateReport": true  // Si true, génère rapport markdown
+ *     "shouldGenerateReport": true  // Si true, génère les rapports markdown pour les clients avec risk. Default: true
  *   }
  * }
  */
@@ -47,6 +48,7 @@ clientTask.post("/", async (c) => {
       },
       config: {
         analysisWindowDays: config.analysisWindowDays,
+        analysisEndDate: config.analysisEndDate,
         targetCoverage: config.targetCoverage,
         leadTime: config.leadTime,
         moqMinimum: config.moqMinimum,

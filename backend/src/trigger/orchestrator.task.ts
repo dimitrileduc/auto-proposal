@@ -4,6 +4,7 @@ import { autoProposalConfig } from "../config/auto-proposal";
 import { calculateGlobalWorkflowStatistics } from "../workflow/workflow.stats";
 import { prepareAllClientReportData } from "../workflow/workflow.client-stats";
 import { generateGlobalReport } from "../reports/global-report";
+import { getTodayAsDateString, getDateDaysAgo } from "../utils/date.utils";
 import type { OrchestratorTaskPayload, OrchestratorConfig } from "../shared/types";
 import { clientProposalTask } from "./client-proposal.task";
 import type { GlobalReportData } from "../reports/global-report";
@@ -60,10 +61,14 @@ export const orchestratorTask = task({
 
     // Merge config + options runtime (payload override config)
     const config: OrchestratorConfig = {
-      inactivityDays:
-        payload.config?.inactivityDays ?? autoProposalConfig.inactivityDaysThreshold,
+      dateMin:
+        payload.config?.dateMin ?? getDateDaysAgo(30),
+      dateMax:
+        payload.config?.dateMax ?? getTodayAsDateString(),
       analysisWindowDays:
         payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
+      analysisEndDate:
+        payload.config?.analysisEndDate ?? payload.config?.dateMax ?? getTodayAsDateString(),
       targetCoverage:
         payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage,
       leadTime:
@@ -84,15 +89,17 @@ export const orchestratorTask = task({
 
     console.log("\n🚀 AUTO-PROPOSAL ORCHESTRATOR STARTED");
     console.log(`   Mode: ${config.skipOdooQuoteGeneration ? "TEST (skip Odoo quotes)" : "PRODUCTION"}`);
-    console.log(`   Inactivity threshold: ${config.inactivityDays} days`);
+    console.log(`   Inactivity period: ${config.dateMin} to ${config.dateMax}`);
     console.log(`   Analysis window: ${config.analysisWindowDays} days`);
+    console.log(`   Analysis end date: ${config.analysisEndDate}`);
     console.log(`   Force reanalysis: ${config.forceReanalysis ? "YES (include clients with tag 82)" : "NO (skip tag 82)"}\n`);
 
     try {
       // 1. Récupérer tous les clients inactifs
       console.log("📊 Fetching inactive clients...");
       const allInactiveClients = await getInactiveClients(
-        config.inactivityDays,
+        config.dateMin,
+        config.dateMax,
         config.forceReanalysis ? autoProposalConfig.quoteGeneration.autoProposalTagId : undefined
       );
       console.log(`   Found ${allInactiveClients.length} inactive clients\n`);
@@ -138,6 +145,7 @@ export const orchestratorTask = task({
                 },
                 config: {
                   analysisWindowDays: config.analysisWindowDays,
+                  analysisEndDate: config.analysisEndDate,
                   targetCoverage: config.targetCoverage,
                   leadTime: config.leadTime,
                   moqMinimum: config.moqMinimum,
@@ -235,8 +243,13 @@ export const orchestratorTask = task({
       );
 
       // 7. Préparer données pour rapports clients
+      // Note: inactivityDays est calculé pour rétrocompatibilité avec les rapports
+      // (sera supprimé par l'Agent 7 lors de la mise à jour des types WorkflowConfig)
+      const inactivityDaysForReport = Math.round(
+        (new Date(config.dateMax).getTime() - new Date(config.dateMin).getTime()) / (1000 * 60 * 60 * 24)
+      );
       const clientReportData = prepareAllClientReportData(clientResults, {
-        inactivityDays: config.inactivityDays,
+        inactivityDays: inactivityDaysForReport,
         analysisWindowDays: config.analysisWindowDays,
         targetCoverage: config.targetCoverage,
         leadTime: config.leadTime,

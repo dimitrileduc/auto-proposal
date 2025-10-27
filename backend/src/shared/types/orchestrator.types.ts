@@ -10,8 +10,11 @@ import type { ClientProcessingConfig } from "./client.types";
  * spécifiques à l'orchestration batch.
  */
 export interface OrchestratorConfig extends ClientProcessingConfig {
-  /** Seuil d'inactivité en jours (ex: 90 jours sans commande) */
-  inactivityDays: number;
+  /** Date minimum pour la détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS") */
+  dateMin: string;
+
+  /** Date maximum pour la détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS") */
+  dateMax: string;
 
   /** Limite le nombre de clients à analyser (debug), "all" = tous */
   maxClientsToAnalyze: number | "all";

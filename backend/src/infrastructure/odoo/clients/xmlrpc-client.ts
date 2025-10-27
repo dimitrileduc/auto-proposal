@@ -3,7 +3,7 @@
  */
 
 import { OdooClient as XmlRpcOdoo } from "odoo-xmlrpc-ts";
-import { getDateDaysAgo } from "../../../utils/date.utils";
+import { calculateDateBefore } from "../../../utils/date.utils";
 import type {
   OdooClient,
   OdooPartner,
@@ -44,17 +44,11 @@ export function createXmlRpcClient(): OdooClient {
   });
 
   return {
-    async getInactiveCompanyPartners(days: number, excludeTagId?: number): Promise<OdooPartner[]> {
-      if (days <= 0) {
-        throw new Error("Le nombre de jours doit être positif");
-      }
-
-      const dateLimitStr = getDateDaysAgo(days);
-
+    async getInactiveCompanyPartners(dateMin: string, dateMax: string, excludeTagId?: number): Promise<OdooPartner[]> {
       try {
-        // RPC 1: Récupérer les commandes récentes
+        // RPC 1: Récupérer les commandes récentes dans la période [dateMin, dateMax]
         const recentOrders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildRecentOrdersDomain(dateLimitStr, excludeTagId),
+          buildRecentOrdersDomain(dateMin, dateMax, excludeTagId),
           {
             fields: ["partner_id"],
           }
@@ -85,24 +79,25 @@ export function createXmlRpcClient(): OdooClient {
 
     async getOrderHistoryByPartner(
       partnerId: number,
-      days: number,
-      includeDraftOrders: boolean = false,
+      windowDays: number,
+      referenceDate: string,
+      includeDraftOrders: boolean,
       excludedCategoryIds?: number[]
     ): Promise<OrderHistory> {
-      if (days <= 0) {
+      if (windowDays <= 0) {
         throw new Error("Le nombre de jours doit être positif");
       }
 
-      const dateLimitStr = getDateDaysAgo(days);
+      const dateStart = calculateDateBefore(referenceDate, windowDays);
 
       const states = includeDraftOrders
         ? ["draft", "sent", "sale", "done"]
         : ["sale", "done"];
 
       try {
-        // RPC 1: Récupérer les commandes du partenaire
+        // RPC 1: Récupérer les commandes du partenaire depuis dateStart
         const orders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildPartnerOrdersDomain(partnerId, dateLimitStr, states),
+          buildPartnerOrdersDomain(partnerId, dateStart, states),
           {
             fields: ["id", "name", "date_order", "partner_id", "state", "order_line"],
           }

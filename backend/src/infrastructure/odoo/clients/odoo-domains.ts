@@ -13,15 +13,20 @@ type OdooDomainOperator = "|" | "&" | "!";
 type OdooDomain = Array<OdooDomainCondition | OdooDomainOperator>;
 
 /**
- * Domain pour récupérer les commandes depuis une date donnée
- * @param dateLimitStr Date limite au format ISO
+ * Domain pour récupérer les commandes dans une période donnée
+ * @param dateMin Date minimum de la période (format: "YYYY-MM-DD HH:MM:SS")
+ * @param dateMax Date maximum de la période (format: "YYYY-MM-DD HH:MM:SS")
  * @param excludeTagId Optionnel: Tag ID à exclure (ex: tag auto-proposal 82)
  */
 export function buildRecentOrdersDomain(
-  dateLimitStr: string,
+  dateMin: string,
+  dateMax: string,
   excludeTagId?: number
 ): OdooDomainCondition[] {
-  const domain: OdooDomainCondition[] = [["date_order", ">=", dateLimitStr]];
+  const domain: OdooDomainCondition[] = [
+    ["date_order", ">=", dateMin],
+    ["date_order", "<=", dateMax],
+  ];
 
   if (excludeTagId !== undefined) {
     // Exclure les commandes ayant ce tag

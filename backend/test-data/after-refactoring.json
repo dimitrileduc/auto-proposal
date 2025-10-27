@@ -1,0 +1,199 @@
+{
+  "captureDate": "2025-10-27T08:10:45.393Z",
+  "config": {
+    "dateMin": "2025-09-27 00:00:00",
+    "dateMax": "2025-10-27 00:00:00",
+    "dateMinCalculated": "2025-09-27 00:00:00",
+    "dateMaxCalculated": "2025-10-27 00:00:00",
+    "analysisWindowDays": 180,
+    "analysisEndDate": "2025-10-27 00:00:00",
+    "targetCoverage": 14,
+    "leadTime": 5,
+    "forceReanalysis": true,
+    "skipOdooQuoteGeneration": true
+  },
+  "inactiveClients": {
+    "total": 1536
+  },
+  "sampleClients": [
+    {
+      "clientId": 9956,
+      "clientName": "-B-Local",
+      "clientEmail": "achat@b-local.be",
+      "productsAtRisk": [
+        {
+          "product_id": 18272,
+          "product_name": "[JOY02] JOY! Organic Strawberry Jam 370g",
+          "quantity_to_order": 4,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0303,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18274,
+          "product_name": "[JOY06] JOY! Organic Rhubarb Jam 370g",
+          "quantity_to_order": 2,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0152,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18327,
+          "product_name": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18329,
+          "product_name": "[NUT02] NUTS & BERRIES energy bar Superfood bio 40g",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18328,
+          "product_name": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18326,
+          "product_name": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18325,
+          "product_name": "[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18324,
+          "product_name": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18346,
+          "product_name": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        },
+        {
+          "product_id": 18273,
+          "product_name": "[JOY08] JOY! Organic Raspberry Jam 370g",
+          "quantity_to_order": 1,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.0076,
+          "estimated_stock_remaining": 0
+        }
+      ],
+      "totalProductsAtRisk": 10
+    },
+    {
+      "clientId": 81,
+      "clientName": "100% Liégeois",
+      "clientEmail": "hello@100lg.be",
+      "productsAtRisk": [
+        {
+          "product_id": 18353,
+          "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+          "quantity_to_order": 6,
+          "days_until_stockout": -8,
+          "consumption_per_day": 0.1092,
+          "estimated_stock_remaining": -0.95
+        },
+        {
+          "product_id": 18352,
+          "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+          "quantity_to_order": 6,
+          "days_until_stockout": -38,
+          "consumption_per_day": 0.092,
+          "estimated_stock_remaining": -3.54
+        },
+        {
+          "product_id": 18349,
+          "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+          "quantity_to_order": 6,
+          "days_until_stockout": 0,
+          "consumption_per_day": 0.1207,
+          "estimated_stock_remaining": 0.10
+        },
+        {
+          "product_id": 18351,
+          "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+          "quantity_to_order": 5,
+          "days_until_stockout": -35,
+          "consumption_per_day": 0.0862,
+          "estimated_stock_remaining": -3.07
+        },
+        {
+          "product_id": 18355,
+          "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+          "quantity_to_order": 15,
+          "days_until_stockout": -21,
+          "consumption_per_day": 0.2471,
+          "estimated_stock_remaining": -5.26
+        },
+        {
+          "product_id": 18356,
+          "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+          "quantity_to_order": 5,
+          "days_until_stockout": -55,
+          "consumption_per_day": 0.0747,
+          "estimated_stock_remaining": -4.13
+        }
+      ],
+      "totalProductsAtRisk": 6
+    },
+    {
+      "clientId": 3857,
+      "clientName": "3B TRADING & CONSULTING GmbH",
+      "clientEmail": "bbayrak@3bgastro.de",
+      "productsAtRisk": [
+        {
+          "product_id": 8983,
+          "product_name": "[PF0070] FILOU/LD SAUCE ANDALOUSE  10 L",
+          "quantity_to_order": 39,
+          "days_until_stockout": 2,
+          "consumption_per_day": 1.1941,
+          "estimated_stock_remaining": 3.40
+        }
+      ],
+      "totalProductsAtRisk": 1
+    },
+    {
+      "clientId": 23109,
+      "clientName": "3M GENUSSWERTE GMBH",
+      "clientEmail": "info@genusswerte.de",
+      "productsAtRisk": [],
+      "totalProductsAtRisk": 0
+    },
+    {
+      "clientId": 17426,
+      "clientName": "AB InBev",
+      "clientEmail": null,
+      "productsAtRisk": [],
+      "totalProductsAtRisk": 0
+    }
+  ],
+  "summary": {
+    "totalInactiveClients": 1536,
+    "sampleSize": 5,
+    "totalProductsAtRiskAcrossSamples": 17
+  }
+}

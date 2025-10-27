@@ -6,7 +6,9 @@ export const autoProposalConfig = {
   odooApiType: OdooApiType.XMLRPC,
 
   // Client inactivity detection
-  inactivityDaysThreshold: 30,
+  // Note: inactivityDaysThreshold has been replaced by dateMin/dateMax in OrchestratorConfig
+  // Defaults are now calculated at runtime: dateMin = today - 30 days, dateMax = today
+  // This allows for flexible date-based analysis instead of a fixed number of days
 
   // Stock replenishment parameters
   targetCoverage: 14,

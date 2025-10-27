@@ -17,7 +17,8 @@ const orchestratorTaskRoute = new Hono();
  * Body (tous optionnels):
  * {
  *   "config": {
- *     "inactivityDays": 90,
+ *     "dateMin": "2025-09-26 00:00:00",  // Date minimum pour détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS"). Default: aujourd'hui - 30 jours
+ *     "dateMax": "2025-10-26 23:59:59",  // Date maximum pour détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS"). Default: aujourd'hui
  *     "analysisWindowDays": 180,
  *     "targetCoverage": 14,
  *     "leadTime": 5,
@@ -37,7 +38,8 @@ orchestratorTaskRoute.post("/", async (c) => {
     // Préparer le payload pour la task
     const payload: OrchestratorTaskPayload = {
       config: {
-        inactivityDays: config.inactivityDays,
+        dateMin: config.dateMin,
+        dateMax: config.dateMax,
         analysisWindowDays: config.analysisWindowDays,
         targetCoverage: config.targetCoverage,
         leadTime: config.leadTime,
@@ -50,6 +52,9 @@ orchestratorTaskRoute.post("/", async (c) => {
     };
 
     console.log(`🚀 Triggering auto-proposal-orchestrator task`);
+    if (config.dateMin && config.dateMax) {
+      console.log(`   Inactivity period: ${config.dateMin} to ${config.dateMax}`);
+    }
     if (config.maxClientsToAnalyze) {
       console.log(`   Max clients to analyze: ${config.maxClientsToAnalyze}`);
     }
