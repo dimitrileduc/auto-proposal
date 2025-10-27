@@ -157,6 +157,36 @@ pnpm trigger:dev
 curl -X POST http://localhost:3000/api/orchestrator-task
 ```
 
+**Formats de dates acceptés :**
+
+Les paramètres `dateMin`, `dateMax` et `analysisEndDate` acceptent plusieurs formats pour faciliter l'usage :
+
+```bash
+# Tous ces formats sont équivalents et parsés automatiquement :
+curl -X POST http://localhost:3000/api/orchestrator-task \
+  -H "Content-Type: application/json" \
+  -d '{"config": {"dateMin": "010125"}}'           # Format court JJMMAA
+
+curl -X POST http://localhost:3000/api/orchestrator-task \
+  -H "Content-Type: application/json" \
+  -d '{"config": {"dateMin": "01/01/25"}}'         # Format JJ/MM/AA
+
+curl -X POST http://localhost:3000/api/orchestrator-task \
+  -H "Content-Type: application/json" \
+  -d '{"config": {"dateMin": "01/01/2025"}}'       # Format JJ/MM/AAAA
+
+curl -X POST http://localhost:3000/api/orchestrator-task \
+  -H "Content-Type: application/json" \
+  -d '{"config": {"dateMin": "2025-01-01"}}'       # Format ISO AAAA-MM-JJ
+```
+
+**Formats invalides (retournent une erreur explicite) :**
+```bash
+curl -d '{"config": {"dateMin": "2025/01/01"}}'   # ❌ Slash inversé
+curl -d '{"config": {"dateMin": "25-01-01"}}'     # ❌ Ordre invalide
+curl -d '{"config": {"dateMin": "hello"}}'        # ❌ Texte
+```
+
 **Options utiles :**
 ```bash
 # Mode test : 5 clients max, sans créer de devis
@@ -164,10 +194,10 @@ curl -X POST http://localhost:3000/api/orchestrator-task \
   -H "Content-Type: application/json" \
   -d '{"config": {"maxClientsToAnalyze": 5, "skipOdooQuoteGeneration": true}}'
 
-# Dates custom
+# Dates custom (formats courts acceptés)
 curl -X POST http://localhost:3000/api/orchestrator-task \
   -H "Content-Type: application/json" \
-  -d '{"config": {"dateMin": "2025-09-01 00:00:00", "dateMax": "2025-10-01 00:00:00"}}'
+  -d '{"config": {"dateMin": "010925", "dateMax": "011025"}}'
 ```
 
 ### 3. Lancer l'analyse d'UN seul client

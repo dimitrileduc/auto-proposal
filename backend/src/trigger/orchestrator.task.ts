@@ -4,7 +4,7 @@ import { autoProposalConfig } from "../config/auto-proposal";
 import { calculateGlobalWorkflowStatistics } from "../workflow/workflow.stats";
 import { prepareAllClientReportData } from "../workflow/workflow.client-stats";
 import { generateGlobalReport } from "../reports/global-report";
-import { getTodayAsDateString, getDateDaysAgo } from "../utils/date.utils";
+import { getTodayAsDateString, getDateDaysAgo, parseUserDateInput } from "../utils/date.utils";
 import type { OrchestratorTaskPayload, OrchestratorConfig } from "../shared/types";
 import { clientProposalTask } from "./client-proposal.task";
 import type { GlobalReportData } from "../reports/global-report";
@@ -61,14 +61,19 @@ export const orchestratorTask = task({
 
     // Merge config + options runtime (payload override config)
     const config: OrchestratorConfig = {
-      dateMin:
-        payload.config?.dateMin ?? getDateDaysAgo(30),
-      dateMax:
-        payload.config?.dateMax ?? getTodayAsDateString(),
+      dateMin: payload.config?.dateMin
+        ? parseUserDateInput(payload.config.dateMin)
+        : getDateDaysAgo(30),
+      dateMax: payload.config?.dateMax
+        ? parseUserDateInput(payload.config.dateMax)
+        : getTodayAsDateString(),
       analysisWindowDays:
         payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
-      analysisEndDate:
-        payload.config?.analysisEndDate ?? payload.config?.dateMax ?? getTodayAsDateString(),
+      analysisEndDate: payload.config?.analysisEndDate
+        ? parseUserDateInput(payload.config.analysisEndDate)
+        : payload.config?.dateMax
+          ? parseUserDateInput(payload.config.dateMax)
+          : getTodayAsDateString(),
       targetCoverage:
         payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage,
       leadTime:
