@@ -20,10 +20,11 @@ export const autoProposalConfig = {
   // Odoo API type
   odooApiType: OdooApiType.XMLRPC,
 
-  // Client inactivity detection
-  // Note: inactivityDaysThreshold has been replaced by dateMin/dateMax in OrchestratorConfig
-  // Defaults are now calculated at runtime: dateMin = today - 30 days, dateMax = today
-  // This allows for flexible date-based analysis instead of a fixed number of days
+  // Client inactivity detection (defaults calculés dynamiquement si null)
+  inactivityDetection: {
+    dateMin: null,  // Si null: aujourd'hui - 30 jours
+    dateMax: null,  // Si null: aujourd'hui
+  },
 
   // Stock replenishment parameters
   targetCoverage: 14,
@@ -93,20 +94,19 @@ odooApiType: OdooApiType.XMLRPC
 - **Par défaut:** `XMLRPC` (compatibilité maximale avec toutes versions Odoo)
 - **Impact:** Détermine quel client Odoo sera utilisé dans tout le système
 
-### 2. Détection d'Inactivité (DEPRECATED)
+### 2. Détection d'Inactivité
 
 ```typescript
-// AVANT refactoring:
-inactivityDaysThreshold: 30
-
-// APRÈS refactoring (calcul runtime dans orchestrator.task.ts):
-// dateMin = subDays(new Date(), 30)
-// dateMax = new Date()
+inactivityDetection: {
+  dateMin: null,  // Si null: aujourd'hui - 30 jours
+  dateMax: null,  // Si null: aujourd'hui
+}
 ```
 
-- ⚠️ **Note:** Le paramètre `inactivityDaysThreshold` n'est plus utilisé
-- **Nouvelle approche:** Les dates sont calculées dynamiquement dans `OrchestratorConfig`
-- **Avantage:** Permet des analyses rétroactives avec `dateMin`/`dateMax` personnalisés
+- **Defaults:** `null` pour calcul dynamique dans `orchestrator.task.ts`
+- **Calcul runtime:** `dateMin = getDateDaysAgo(30)`, `dateMax = getTodayAsDateString()`
+- **Override:** Possibilité de fournir `dateMin`/`dateMax` personnalisés via payload HTTP
+- **Avantage:** Permet des analyses rétroactives avec dates explicites
 
 ### 3. Paramètres d'Analyse Stock
 
@@ -234,39 +234,33 @@ testing: {
 
 ## 🔧 Guides Pratiques
 
-<details><summary>Comment modifier la période d'inactivité ?</summary>
+<details><summary>Comment modifier la période d'inactivité par défaut ?</summary>
 
-**AVANT refactoring (DEPRECATED):**
+**Option 1:** Modifier les defaults dans `auto-proposal.ts` (affecte tous les runs):
 
 ```typescript
-// ❌ Plus utilisé
-inactivityDaysThreshold: 45; // 45 jours au lieu de 30
+inactivityDetection: {
+  dateMin: null,  // Si null: getDateDaysAgo(45) au lieu de 30
+  dateMax: null,
+}
+// Note: Le calcul `getDateDaysAgo(30)` est codé dans orchestrator.task.ts:66
 ```
 
-**APRÈS refactoring (méthode actuelle):**
+**Option 2:** Passer une config personnalisée lors du trigger (override ponctuel):
 
-Modifier directement dans `backend/src/trigger/orchestrator.task.ts`:
-
-```typescript
-export const orchestratorTask = task({
-  id: "orchestrator",
-  run: async (config?: OrchestratorConfig) => {
-    const defaultConfig: Required<OrchestratorConfig> = {
-      dateMin: format(subDays(new Date(), 45), "yyyy-MM-dd HH:mm:ss"), // ← 45 jours
-      dateMax: format(new Date(), "yyyy-MM-dd HH:mm:ss"),
-      // ...
-    };
-  },
-});
+```bash
+curl -X POST http://localhost:3000/api/orchestrator-task \
+  -H "Content-Type: application/json" \
+  -d '{"config": {"dateMin": "010925", "dateMax": "011025"}}'
 ```
 
-**Ou** passer une config personnalisée lors du trigger:
+**Option 3:** Définir des defaults non-null dans `auto-proposal.ts`:
 
 ```typescript
-await orchestratorTask.trigger({
-  dateMin: "2025-01-01 00:00:00", // Période spécifique
-  dateMax: "2025-01-31 23:59:59",
-});
+inactivityDetection: {
+  dateMin: "2025-09-01 00:00:00",  // Fixe au lieu de dynamique
+  dateMax: "2025-10-01 00:00:00",
+}
 ```
 
 </details>

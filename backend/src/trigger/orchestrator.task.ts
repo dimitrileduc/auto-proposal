@@ -63,17 +63,12 @@ export const orchestratorTask = task({
     const config: OrchestratorConfig = {
       dateMin: payload.config?.dateMin
         ? parseUserDateInput(payload.config.dateMin)
-        : getDateDaysAgo(30),
+        : autoProposalConfig.inactivityDetection.dateMin ?? getDateDaysAgo(30),
       dateMax: payload.config?.dateMax
         ? parseUserDateInput(payload.config.dateMax)
-        : getTodayAsDateString(),
+        : autoProposalConfig.inactivityDetection.dateMax ?? getTodayAsDateString(),
       analysisWindowDays:
         payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
-      analysisEndDate: payload.config?.analysisEndDate
-        ? parseUserDateInput(payload.config.analysisEndDate)
-        : payload.config?.dateMax
-          ? parseUserDateInput(payload.config.dateMax)
-          : getTodayAsDateString(),
       targetCoverage:
         payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage,
       leadTime:
@@ -95,8 +90,7 @@ export const orchestratorTask = task({
     console.log("\n🚀 AUTO-PROPOSAL ORCHESTRATOR STARTED");
     console.log(`   Mode: ${config.skipOdooQuoteGeneration ? "TEST (skip Odoo quotes)" : "PRODUCTION"}`);
     console.log(`   Inactivity period: ${config.dateMin} to ${config.dateMax}`);
-    console.log(`   Analysis window: ${config.analysisWindowDays} days`);
-    console.log(`   Analysis end date: ${config.analysisEndDate}`);
+    console.log(`   Analysis window: ${config.analysisWindowDays} days (before dateMax)`);
     console.log(`   Force reanalysis: ${config.forceReanalysis ? "YES (include clients with tag 82)" : "NO (skip tag 82)"}\n`);
 
     try {
@@ -150,7 +144,7 @@ export const orchestratorTask = task({
                 },
                 config: {
                   analysisWindowDays: config.analysisWindowDays,
-                  analysisEndDate: config.analysisEndDate,
+                  analysisEndDate: config.dateMax,
                   targetCoverage: config.targetCoverage,
                   leadTime: config.leadTime,
                   moqMinimum: config.moqMinimum,

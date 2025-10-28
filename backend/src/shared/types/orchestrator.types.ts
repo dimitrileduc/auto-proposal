@@ -1,15 +1,7 @@
-import type { ClientProcessingConfig } from "./client.types";
-
 /**
  * Configuration pour l'orchestrateur auto-proposal
- *
- * Utilisé par:
- * - orchestrator.task.ts (task Trigger.dev principale)
- *
- * Hérite de ClientProcessingConfig et ajoute les paramètres
- * spécifiques à l'orchestration batch.
  */
-export interface OrchestratorConfig extends ClientProcessingConfig {
+export interface OrchestratorConfig {
   /** Date minimum pour la détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS") */
   dateMin: string;
 
@@ -24,6 +16,21 @@ export interface OrchestratorConfig extends ClientProcessingConfig {
 
   /** Si true, génère les rapports markdown pour tous les clients avec risk */
   generateReports: boolean;
+
+  /** Nombre de jours d'historique à analyser (ex: 180 = 6 mois) */
+  analysisWindowDays: number;
+
+  /** Jours de couverture souhaités (ex: 14 jours) */
+  targetCoverage: number;
+
+  /** Délai d'approvisionnement en jours (ex: 5 jours) */
+  leadTime: number;
+
+  /** Montant minimum de commande en euros (MOQ) */
+  moqMinimum: number;
+
+  /** Si true, skip la création du devis Odoo (Phase 3) */
+  skipOdooQuoteGeneration: boolean;
 }
 
 /**

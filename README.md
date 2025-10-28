@@ -95,8 +95,11 @@ graph TD
 ```typescript
 // backend/src/config/auto-proposal.ts
 {
-  // Détection inactivité (DEPRECATED - utiliser dateMin/dateMax dans l'API)
-  inactivityDaysThreshold: 30,
+  // Période d'inactivité (defaults calculés dynamiquement si null)
+  inactivityDetection: {
+    dateMin: null,             // Si null: aujourd'hui - 30 jours
+    dateMax: null,             // Si null: aujourd'hui
+  },
 
   // Analyse stock
   analysisWindowDays: 180,     // 6 mois d'historique
@@ -317,13 +320,12 @@ mcp__odoo__search_records model="product.product" domain=[["id","=",26]]
 POST /api/orchestrator-task
 {
   "config": {
-    // Période d'inactivité (dates explicites)
-    "dateMin": "2025-09-27 00:00:00",
-    "dateMax": "2025-10-27 00:00:00",
+    // Période d'inactivité
+    "dateMin": "010925",              // Formats: "JJMMAA", "JJ/MM/AA", "JJ/MM/AAAA", "AAAA-MM-JJ"
+    "dateMax": "011025",              // (= référence analyse stock)
 
     // Analyse historique
     "analysisWindowDays": 180,        // 6 mois (défaut)
-    "analysisEndDate": "2025-10-27 00:00:00",  // Date de référence
 
     // Seuils
     "targetCoverage": 14,             // Jours de couverture (défaut)
@@ -369,9 +371,8 @@ POST /api/orchestrator-task
 ```json
 {
   "config": {
-    "dateMin": "2025-09-01 00:00:00",
-    "dateMax": "2025-10-01 00:00:00",
-    "analysisEndDate": "2025-10-01 00:00:00",
+    "dateMin": "010925",
+    "dateMax": "011025",
     "skipOdooQuoteGeneration": true
   }
 }

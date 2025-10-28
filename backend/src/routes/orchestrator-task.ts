@@ -17,16 +17,21 @@ const orchestratorTaskRoute = new Hono();
  * Body (tous optionnels):
  * {
  *   "config": {
- *     "dateMin": "2025-09-26 00:00:00",  // Date minimum pour détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS"). Default: aujourd'hui - 30 jours
- *     "dateMax": "2025-10-26 23:59:59",  // Date maximum pour détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS"). Default: aujourd'hui
- *     "analysisWindowDays": 180,
- *     "targetCoverage": 14,
- *     "leadTime": 5,
- *     "moqMinimum": 300,
- *     "maxClientsToAnalyze": 3,  // "all" ou nombre, pour debug
- *     "generateReports": true,  // Si true, génère les rapports markdown pour tous les clients avec risk
- *     "skipOdooQuoteGeneration": true,  // Si true, skip création devis Odoo (mode test)
- *     "forceReanalysis": false  // Si true, réanalyse même les clients avec devis auto-proposal (tag 82)
+ *     // Période d'inactivité
+ *     "dateMin": "010925",                    // Date min inactivité. Formats: "JJMMAA", "JJ/MM/AA", "JJ/MM/AAAA", "AAAA-MM-JJ". Default: config ou aujourd'hui - 30j
+ *     "dateMax": "011025",                    // Date max inactivité (= référence analyse stock). Default: config ou aujourd'hui
+ *
+ *     // Analyse stock
+ *     "analysisWindowDays": 180,              // Jours d'historique avant dateMax. Default: config (180)
+ *     "targetCoverage": 14,                   // Jours de couverture. Default: config (14)
+ *     "leadTime": 5,                          // Délai livraison. Default: config (5)
+ *     "moqMinimum": 300,                      // MOQ en euros. Default: config (300)
+ *
+ *     // Workflow
+ *     "maxClientsToAnalyze": "all",           // "all" ou nombre (debug). Default: "all"
+ *     "generateReports": true,                // Génère rapports markdown. Default: config (true)
+ *     "skipOdooQuoteGeneration": false,       // Mode TEST (pas de devis). Default: false
+ *     "forceReanalysis": false                // Réanalyse clients avec tag 82. Default: config (false)
  *   }
  * }
  */
