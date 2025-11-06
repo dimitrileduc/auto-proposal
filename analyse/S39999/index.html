@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport Comparatif - LE TIROIR DES SAVEURS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9; /* Fond légèrement plus gris */
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px; /* Coins légèrement moins arrondis */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Ombre plus subtile */
+        }
+
+        h1 {
+            font-size: 2.2rem; /* Taille légèrement réduite */
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0; /* Bordure grise subtile */
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1; /* Plus de bordure gauche, juste une ligne basse */
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem; /* Taille réduite */
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: none; /* Pas d'ombre */
+            border: 1px solid #ecf0f1; /* Bordure simple */
+        }
+
+        th {
+            background: #f8f9fa; /* Fond gris clair */
+            color: #4A5568; /* Texte gris-bleu */
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Status colors (parcimonie) */
+        .status-success {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .status-warning {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .status-error {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* Dropdowns */
+        details {
+            margin: 15px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        details:hover {
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08); /* Ombre légère au survol */
+        }
+
+        details[open] {
+            border-color: #a0aec0; /* Bordure grise quand ouvert */
+        }
+
+        summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            background: #f8f9fa;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border-left: 4px solid #e0e0e0; /* Bordure grise neutre */
+            transition: all 0.2s ease;
+        }
+
+        summary:hover {
+            background: #e9ecef;
+        }
+
+        details[open] summary {
+            background: #f8f9fa; /* Reste gris clair */
+            border-left-color: #4A5568; /* Couleur accent sobre */
+        }
+
+        details .content {
+            padding: 20px;
+            background: white;
+        }
+
+        details ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        details li {
+            margin: 8px 0;
+        }
+
+        /* Section dividers */
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 40px 0;
+        }
+
+        /* Category sections (style de bordure colorée retiré) */
+        .category-section {
+            margin: 30px 0;
+        }
+
+        /* Code elements */
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #c7254e;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Insight box (style "carnaval" retiré) */
+        .insight-box {
+            background: #f8f9fa; /* Fond gris clair */
+            border-left: 5px solid #4A5568; /* Couleur accent sobre */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .insight-box h4 {
+            color: #2c3e50; /* Couleur titre sombre */
+            margin-top: 0;
+        }
+
+        .insight-box p {
+            color: #333; /* Couleur texte standard */
+            margin: 10px 0 0 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+
+            details {
+                border: 1px solid #ccc;
+            }
+
+            summary {
+                background: #f0f0f0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 RAPPORT COMPARATIF : Prédiction vs Réel</h1>
+        <p class="subtitle">Cas Client : LE TIROIR DES SAVEURS (30 octobre 2025)</p>
+
+        <hr>
+
+        <h2>🎯 RÉSUMÉ</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Métrique</th>
+                    <th>Résultat</th>
+                    <!-- Colonne Statut supprimée -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Précision montant</strong></td>
+                    <td>61% (1108€ réel vs 1818€ prédit)</td>
+                </tr>
+                <tr>
+                    <td><strong>Taux détection produits</strong></td>
+                    <td>78% (7/9 produits détectés)</td>
+                </tr>
+                <tr>
+                    <td><strong>Taux quantité exacte</strong></td>
+                    <td><strong>57% (4/7 quantités parfaites)</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>MOQ atteint (300€)</strong></td>
+                    <td>✅ Oui (1108€)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>📈 RÉPARTITION PAR CATÉGORIE D'ERREUR</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Nombre</th>
+                    <th>% Total</th>
+                    <th>Montant Écart</th>
+                    <th>Observation Clé</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="status-success">✅ <strong>Parfait</strong></td>
+                    <td>4</td>
+                    <td>29%</td>
+                    <td>0€</td>
+                    <td>Tous ont confiance MEDIUM ou historique stable</td>
+                </tr>
+                <tr>
+                    <td class="status-warning">⚠️ <strong>Erreur quantité</strong></td>
+                    <td>3</td>
+                    <td>21%</td>
+                    <td>-105€</td>
+                    <td>Écarts modérés (-11% à -38%)</td>
+                </tr>
+                <tr>
+                    <td class="status-error">❌ <strong>Sur-prédit</strong></td>
+                    <td>5</td>
+                    <td>36%</td>
+                    <td><strong>-769€</strong></td>
+                    <td>🚨 <strong>100% sont LOW confidence</strong></td>
+                </tr>
+                <tr>
+                    <td class="status-error">❌ <strong>Manqué</strong></td>
+                    <td>2</td>
+                    <td>14%</td>
+                    <td>+164€</td>
+                    <td>Hors fenêtre d'analyse (180 jours)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="insight-box">
+            <h4>🔑 Insight Principal</h4>
+            <p><strong>100% des sur-prédictions (5/5) sont des produits LOW confidence</strong> avec 1 seule commande historique, représentant <strong>88% de l'erreur brute</strong> (-769€ sur -874€ d'écart négatif).</p>
+            <p>Les produits MEDIUM confidence ont un taux de réussite de 75% (3/4 parfaits, 1/4 avec léger écart).</p>
+        </div>
+
+        <hr>
+
+        <h2>📊 TABLEAU RÉCAPITULATIF</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Produit</th>
+                    <th>Prédit</th>
+                    <th>Réel</th>
+                    <th>Écart</th>
+                    <th>Confiance</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>REB02</strong> - Chips Paprika</td>
+                    <td>8 TU10<br>150€</td>
+                    <td>8 TU10<br>150€</td>
+                    <td><strong>0%</strong></td>
+                    <td>MEDIUM</td>
+                    <td class="status-success">✅ Parfait</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>REB01</strong> - Chips Sel de mer</td>
+                    <td>8 TU10<br>150€</td>
+                    <td>8 TU10<br>150€</td>
+                    <td><strong>0%</strong></td>
+                    <td>MEDIUM</td>
+                    <td class="status-success">✅ Parfait</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>REB03</strong> - Chips Poivre noir</td>
+                    <td>4 TU10<br>75€</td>
+                    <td>4 TU10<br>75€</td>
+                    <td><strong>0%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-success">✅ Parfait</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>KOKO03</strong> - Kombucha Framboise</td>
+                    <td>8 TU12<br>202€</td>
+                    <td>8 TU12<br>202€</td>
+                    <td><strong>0%</strong></td>
+                    <td>MEDIUM</td>
+                    <td class="status-success">✅ Parfait</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>KOKO02</strong> - Kombucha Citron</td>
+                    <td>9 TU12<br>215€</td>
+                    <td>8 TU12<br>202€</td>
+                    <td><strong>-11%</strong></td>
+                    <td>MEDIUM</td>
+                    <td class="status-warning">⚠️ Léger</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>REB04</strong> - Chips Thym</td>
+                    <td>6 TU10<br>113€</td>
+                    <td>4 TU10<br>75€</td>
+                    <td><strong>-33%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-warning">⚠️ Moyen</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>UPI07</strong> - Jus Framboise</td>
+                    <td>8 TU12<br>143€</td>
+                    <td>5 TU12<br>89€</td>
+                    <td><strong>-38%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-warning">⚠️ Moyen</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>WIG01</strong> - Cidre WIGNAC</td>
+                    <td>4 TU12<br>103€</td>
+                    <td>0<br>0€</td>
+                    <td><strong>-100%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-error">❌ Sur-prédit</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>KOKO01</strong> - Kombucha Original</td>
+                    <td>10 TU12<br>239€</td>
+                    <td>0<br>0€</td>
+                    <td><strong>-100%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-error">❌ Sur-prédit</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>RISH04</strong> - Kombucha Basil</td>
+                    <td>5 TU12<br>125€</td>
+                    <td>0<br>0€</td>
+                    <td><strong>-100%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-error">❌ Sur-prédit</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><strong>UPI02</strong> - Jus Fraise</td>
+                    <td>8 TU12<br>143€</td>
+                    <td>0<br>0€</td>
+                    <td><strong>-100%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-error">❌ Sur-prédit</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td><strong>REB11</strong> - Chips Truffes</td>
+                    <td>6 TU10<br>159€</td>
+                    <td>0<br>0€</td>
+                    <td><strong>-100%</strong></td>
+                    <td>LOW</td>
+                    <td class="status-error">❌ Sur-prédit</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><strong>REB08</strong> - Chips Piment 🔍</td>
+                    <td>0<br>0€</td>
+                    <td>4 TU10<br>75€</td>
+                    <td><strong>+100%</strong></td>
+                    <td>-</td>
+                    <td class="status-error">❌ Manqué</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td><strong>UPI04</strong> - Jus Cerise 🔍</td>
+                    <td>0<br>0€</td>
+                    <td>5 TU12<br>89€</td>
+                    <td><strong>+100%</strong></td>
+                    <td>-</td>
+                    <td class="status-error">❌ Manqué</td>
+                </tr>
+                <tr style="font-weight: bold; background: #f8f9fa;">
+                    <td></td>
+                    <td><strong>TOTAL</strong></td>
+                    <td><strong>1 818€</strong></td>
+                    <td><strong>1 108€</strong></td>
+                    <td><strong>-39%</strong></td>
+                    <td></td>
+                    <td><strong>7/9 détectés</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="color: #7f8c8d; margin-top: 10px;">🔍 = Produits manqués (hors fenêtre d'analyse ou substituables)</p>
+
+        <!-- SECTION DÉPLACÉE ICI -->
+        <hr>
+
+        <h2>📋 COMPARAISON DÉTAILLÉE : PRÉDICTION vs RÉEL</h2>
+
+        <h3>✅ Prédictions Parfaites (4 produits)</h3>
+
+        <div class="category-section category-perfect">
+            <details>
+                <summary><strong>REB02 - Chips Paprika</strong> | Prédit: 8 TU10 (150€) | Réel: 8 TU10 (150€) | ✅ 0% écart</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S38790</strong> (28/08/2025) : 8 TU10 @ 18,80€</li>
+                        <li><strong>S36772</strong> (14/05/2025) : 8 TU10 @ 18,80€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>median_recent_orders</code></li>
+                        <li><strong>Confiance</strong> : MEDIUM (2 commandes)</li>
+                        <li><strong>Quantités historiques</strong> : [8, 8]</li>
+                        <li><strong>Médiane calculée</strong> : 8 TU10</li>
+                        <li><strong>Quantité prédite</strong> : 8 TU10</li>
+                    </ul>
+
+                    <h4>✅ Résultat</h4>
+                    <p>Prédiction parfaite : 8 TU10 prédit = 8 TU10 réel (0% écart)</p>
+                    <p>Le client commande toujours la même quantité, le système a correctement identifié ce pattern.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>REB01 - Chips Sel de mer</strong> | Prédit: 8 TU10 (150€) | Réel: 8 TU10 (150€) | ✅ 0% écart</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S38790</strong> (28/08/2025) : 8 TU10 @ 18,80€</li>
+                        <li><strong>S36772</strong> (14/05/2025) : 8 TU10 @ 18,80€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>median_recent_orders</code></li>
+                        <li><strong>Confiance</strong> : MEDIUM (2 commandes)</li>
+                        <li><strong>Quantités historiques</strong> : [8, 8]</li>
+                        <li><strong>Médiane calculée</strong> : 8 TU10</li>
+                        <li><strong>Quantité prédite</strong> : 8 TU10</li>
+                    </ul>
+
+                    <h4>✅ Résultat</h4>
+                    <p>Prédiction parfaite : 8 TU10 prédit = 8 TU10 réel (0% écart)</p>
+                    <p>Le client commande toujours la même quantité, le système a correctement identifié ce pattern.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>REB03 - Chips Poivre noir</strong> | Prédit: 4 TU10 (75€) | Réel: 4 TU10 (75€) | ✅ 0% écart</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S36772</strong> (14/05/2025) : 4 TU10 @ 18,80€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [4]</li>
+                        <li><strong>Dernière commande</strong> : 4 TU10</li>
+                        <li><strong>Quantité prédite</strong> : 4 TU10</li>
+                    </ul>
+
+                    <h4>✅ Résultat</h4>
+                    <p>Prédiction parfaite : 4 TU10 prédit = 4 TU10 réel (0% écart)</p>
+                    <p>Malgré la confiance LOW (1 seule commande), la prédiction est parfaite. Le client a reproduit son comportement précédent.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>KOKO03 - Kombucha Framboise</strong> | Prédit: 8 TU12 (202€) | Réel: 8 TU12 (202€) | ✅ 0% écart</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S38790</strong> (28/08/2025) : 6 TU12 @ 25,20€</li>
+                        <li><strong>S37694</strong> (26/06/2025) : 10 TU12 @ 23,88€</li>
+                        <li><strong>S36772</strong> (14/05/2025) : 8 TU12 @ 25,20€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>median_recent_orders</code></li>
+                        <li><strong>Confiance</strong> : MEDIUM (3 commandes)</li>
+                        <li><strong>Quantités historiques</strong> : [6, 10, 8]</li>
+                        <li><strong>Médiane calculée</strong> : 8 TU12</li>
+                        <li><strong>Quantité prédite</strong> : 8 TU12</li>
+                    </ul>
+
+                    <h4>✅ Résultat</h4>
+                    <p>Prédiction parfaite : 8 TU12 prédit = 8 TU12 réel (0% écart)</p>
+                    <p>La médiane des 3 commandes passées correspond exactement à la commande réelle.</p>
+                </div>
+            </details>
+        </div>
+
+        <h3>⚠️ Prédictions avec Écart de Quantité (3 produits)</h3>
+
+        <div class="category-section category-warning">
+            <details>
+                <summary><strong>KOKO02 - Kombucha Citron</strong> | Prédit: 9 TU12 (215€) | Réel: 8 TU12 (202€) | ⚠️ -11% écart</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S37694</strong> (26/06/2025) : 10 TU12 @ 23,88€</li>
+                        <li><strong>S36772</strong> (14/05/2025) : 8 TU12 @ 25,20€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>median_recent_orders</code></li>
+                        <li><strong>Confiance</strong> : MEDIUM (2 commandes)</li>
+                        <li><strong>Quantités historiques</strong> : [10, 8]</li>
+                        <li><strong>Médiane calculée</strong> : 9 TU12</li>
+                        <li><strong>Quantité prédite</strong> : 9 TU12</li>
+                    </ul>
+
+                    <h4>⚠️ Résultat</h4>
+                    <p>Légère sur-prédiction : 9 TU12 prédit > 8 TU12 réel (-11% écart, -13€)</p>
+                    <p>La médiane de [10, 8] donne 9, mais le client a commandé 8. Écart acceptable.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>REB04 - Chips Thym</strong> | Prédit: 6 TU10 (113€) | Réel: 4 TU10 (75€) | ⚠️ -33% écart</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S36772</strong> (14/05/2025) : 6 TU10 @ 18,80€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [6]</li>
+                        <li><strong>Dernière commande</strong> : 6 TU10</li>
+                        <li><strong>Quantité prédite</strong> : 6 TU10</li>
+                    </ul>
+
+                    <h4>⚠️ Résultat</h4>
+                    <p>Sur-prédiction modérée : 6 TU10 prédit > 4 TU10 réel (-33% écart, -38€)</p>
+                    <p>Avec 1 seule commande historique, le système répète la dernière quantité. Le client a réduit sa commande de 6 à 4.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>UPI07 - Jus Framboise</strong> | Prédit: 8 TU12 (143€) | Réel: 5 TU12 (89€) | ⚠️ -38% écart</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S36772</strong> (14/05/2025) : 8 TU12 @ 17,88€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [8]</li>
+                        <li><strong>Dernière commande</strong> : 8 TU12</li>
+                        <li><strong>Quantité prédite</strong> : 8 TU12</li>
+                    </ul>
+
+                    <h4>⚠️ Résultat</h4>
+                    <p>Sur-prédiction modérée : 8 TU12 prédit > 5 TU12 réel (-38% écart, -54€)</p>
+                    <p>Avec 1 seule commande historique, le système répète la dernière quantité. Le client a réduit sa commande de 8 à 5.</p>
+                </div>
+            </details>
+        </div>
+
+        <h3>❌ Sur-prédictions (5 produits non commandés)</h3>
+
+        <div class="category-section category-error">
+            <details>
+                <summary><strong>WIG01 - Cidre WIGNAC</strong> | Prédit: 4 TU12 (103€) | Réel: 0 | ❌ -100% sur-prédit</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S38790</strong> (28/08/2025) : 4 TU12 @ 25,80€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [4]</li>
+                        <li><strong>Dernière commande</strong> : 4 TU12</li>
+                        <li><strong>Quantité prédite</strong> : 4 TU12</li>
+                    </ul>
+
+                    <h4>❌ Résultat</h4>
+                    <p>Sur-prédiction totale : 4 TU12 prédit > 0 réel (-100% écart, -103€)</p>
+                    <p>Le client a commandé ce produit 1 seule fois il y a 63 jours et ne l'a jamais re-commandé. C'était probablement un test non concluant.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>KOKO01 - Kombucha Original</strong> | Prédit: 10 TU12 (239€) | Réel: 0 | ❌ -100% sur-prédit</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S37694</strong> (26/06/2025) : 10 TU12 @ 23,88€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [10]</li>
+                        <li><strong>Dernière commande</strong> : 10 TU12</li>
+                        <li><strong>Quantité prédite</strong> : 10 TU12</li>
+                    </ul>
+
+                    <h4>❌ Résultat</h4>
+                    <p>Sur-prédiction totale : 10 TU12 prédit > 0 réel (-100% écart, -239€)</p>
+                    <p>Le client a commandé ce produit 1 seule fois il y a 126 jours et ne l'a jamais re-commandé. Le client préfère les variétés aromatisées (Citron, Framboise).</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>RISH04 - Kombucha Basil</strong> | Prédit: 5 TU12 (125€) | Réel: 0 | ❌ -100% sur-prédit</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S37694</strong> (26/06/2025) : 5 TU12 @ 25,08€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [5]</li>
+                        <li><strong>Dernière commande</strong> : 5 TU12</li>
+                        <li><strong>Quantité prédite</strong> : 5 TU12</li>
+                    </ul>
+
+                    <h4>❌ Résultat</h4>
+                    <p>Sur-prédiction totale : 5 TU12 prédit > 0 réel (-100% écart, -125€)</p>
+                    <p>Le client a commandé ce produit 1 seule fois il y a 126 jours et ne l'a jamais re-commandé. C'était probablement un test.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>UPI02 - Jus Fraise</strong> | Prédit: 8 TU12 (143€) | Réel: 0 (substitué par UPI04) | ❌ -100% sur-prédit</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S36772</strong> (14/05/2025) : 8 TU12 @ 17,88€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [8]</li>
+                        <li><strong>Dernière commande</strong> : 8 TU12</li>
+                        <li><strong>Quantité prédite</strong> : 8 TU12</li>
+                    </ul>
+
+                    <h4>❌ Résultat</h4>
+                    <p>Sur-prédiction totale : 8 TU12 prédit > 0 réel (-100% écart, -143€)</p>
+                    <p>Le client a commandé ce produit 1 seule fois il y a 169 jours. Cette fois, il a substitué par UPI04 (Cerise) qui n'était pas dans l'historique de la fenêtre d'analyse.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>REB11 - Chips Truffes</strong> | Prédit: 6 TU10 (159€) | Réel: 0 | ❌ -100% sur-prédit</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <ul>
+                        <li><strong>S36772</strong> (14/05/2025) : 6 TU10 @ 26,50€</li>
+                    </ul>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : <code>single_recent_order</code></li>
+                        <li><strong>Confiance</strong> : LOW (1 seule commande)</li>
+                        <li><strong>Quantités historiques</strong> : [6]</li>
+                        <li><strong>Dernière commande</strong> : 6 TU10</li>
+                        <li><strong>Quantité prédite</strong> : 6 TU10</li>
+                    </ul>
+
+                    <h4>❌ Résultat</h4>
+                    <p>Sur-prédiction totale : 6 TU10 prédit > 0 réel (-100% écart, -159€)</p>
+                    <p>Produit premium commandé 1 seule fois il y a 169 jours, jamais re-commandé. Le prix élevé (26,50€ vs 18,80€ pour les autres chips) suggère que c'était un test.</p>
+                </div>
+            </details>
+        </div>
+
+        <h3>❌ Produits Manqués (2 produits commandés mais non prédits)</h3>
+
+        <div class="category-section category-error">
+            <details>
+                <summary><strong>REB08 - Chips Piment</strong> | Prédit: 0 | Réel: 4 TU10 (75€) | 🔍 Manqué</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <p><strong>Aucune commande dans la fenêtre d'analyse (180 jours)</strong></p>
+                    <p>Dernière commande hors fenêtre : 28/03/2025 (216 jours)</p>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : Produit hors fenêtre d'analyse</li>
+                        <li><strong>Confiance</strong> : N/A</li>
+                        <li><strong>Quantité prédite</strong> : 0 (non détecté)</li>
+                    </ul>
+
+                    <h4>❌ Résultat</h4>
+                    <p>Produit manqué : 0 prédit < 4 TU10 réel (+75€)</p>
+                    <p>Le produit avait été commandé il y a 216 jours, soit au-delà de la fenêtre d'analyse de 180 jours. Le système ne l'a donc pas détecté.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary><strong>UPI04 - Jus Cerise</strong> | Prédit: 0 | Réel: 5 TU12 (89€) | 🔍 Manqué</summary>
+                <div class="content">
+                    <h4>📊 Historique des commandes</h4>
+                    <p><strong>Aucune commande dans la fenêtre d'analyse (180 jours)</strong></p>
+
+                    <h4>🔢 Calcul de la quantité prédite</h4>
+                    <ul>
+                        <li><strong>Stratégie</strong> : Produit hors fenêtre d'analyse ou nouvelle substitution</li>
+                        <li><strong>Confiance</strong> : N/A</li>
+                        <li><strong>Quantité prédite</strong> : 0 (non détecté)</li>
+                    </ul>
+
+                    <h4>❌ Résultat</h4>
+                    <p>Produit manqué : 0 prédit < 5 TU12 réel (+89€)</p>
+                    <p>Le client a substitué UPI02 (Fraise) par UPI04 (Cerise). Ce produit n'était pas dans l'historique de la fenêtre d'analyse.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- FIN DE LA SECTION DÉPLACÉE -->
+
+        <div class="footer">
+            <p><strong>Rapport généré le</strong> : 5 novembre 2025</p>
+            <p><strong>Cas analysé</strong> : Vente S39999 - LE TIROIR DES SAVEURS</p>
+            <p><strong>Analysé par</strong> : Auto-Proposal System v2</p>
+            <p><strong>Données sources</strong> : prediction-S39999.json + SALE-S39999-le-tiroir-des-saveurs.md</p>
+        </div>
+    </div>
+
+    <script>
+        // Script pour améliorer l'UX des dropdowns
+        document.querySelectorAll('details').forEach(detail => {
+            detail.addEventListener('toggle', function() {
+                if (this.open) {
+                    // Fermer les autres details dans la même section
+                    const section = this.closest('.category-section');
+                    if (section) {
+                        section.querySelectorAll('details[open]').forEach(openDetail => {
+                            if (openDetail !== this) {
+                                openDetail.removeAttribute('open');
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
