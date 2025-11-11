@@ -97,9 +97,15 @@ export interface OdooClient {
    * Récupère les partenaires company inactifs
    * @param dateMin Date minimum pour la période d'inactivité (format: "YYYY-MM-DD HH:MM:SS")
    * @param dateMax Date maximum pour la période d'inactivité (format: "YYYY-MM-DD HH:MM:SS")
-   * @param excludeTagId Optionnel: Tag ID à exclure des commandes récentes (ex: tag auto-proposal 82)
+   * @param excludeOrderTagId Optionnel: Tag ID à exclure des commandes récentes (ex: tag auto-proposal 82)
+   * @param excludedPartnerTagId Optionnel: Tag partner à exclure des résultats (ex: tag "exclude-auto-proposal")
    */
-  getInactiveCompanyPartners(dateMin: string, dateMax: string, excludeTagId?: number): Promise<OdooPartner[]>;
+  getInactiveCompanyPartners(
+    dateMin: string,
+    dateMax: string,
+    excludeOrderTagId?: number,
+    excludedPartnerTagId?: number | null
+  ): Promise<OdooPartner[]>;
 
   /**
    * Récupère l'historique des commandes d'un partenaire

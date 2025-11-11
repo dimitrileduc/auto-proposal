@@ -85,6 +85,9 @@ export const orchestratorTask = task({
       generateReports:
         payload.config?.generateReports ??
         autoProposalConfig.workflow.generateReports,
+      excludedPartnerTagId:
+        payload.config?.excludedPartnerTagId ??
+        autoProposalConfig.inactivityDetection.excludedPartnerTagId,
     };
 
     console.log("\n🚀 AUTO-PROPOSAL ORCHESTRATOR STARTED");
@@ -99,7 +102,8 @@ export const orchestratorTask = task({
       const allInactiveClients = await getInactiveClients(
         config.dateMin,
         config.dateMax,
-        config.forceReanalysis ? autoProposalConfig.quoteGeneration.autoProposalTagId : undefined
+        config.forceReanalysis ? autoProposalConfig.quoteGeneration.autoProposalTagId : undefined,
+        config.excludedPartnerTagId
       );
       console.log(`   Found ${allInactiveClients.length} inactive clients\n`);
 

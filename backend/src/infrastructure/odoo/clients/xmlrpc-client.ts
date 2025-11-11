@@ -44,11 +44,16 @@ export function createXmlRpcClient(): OdooClient {
   });
 
   return {
-    async getInactiveCompanyPartners(dateMin: string, dateMax: string, excludeTagId?: number): Promise<OdooPartner[]> {
+    async getInactiveCompanyPartners(
+      dateMin: string,
+      dateMax: string,
+      excludeOrderTagId?: number,
+      excludedPartnerTagId?: number | null
+    ): Promise<OdooPartner[]> {
       try {
         // RPC 1: Récupérer les commandes récentes dans la période [dateMin, dateMax]
         const recentOrders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildRecentOrdersDomain(dateMin, dateMax, excludeTagId),
+          buildRecentOrdersDomain(dateMin, dateMax, excludeOrderTagId),
           {
             fields: ["partner_id"],
           }
@@ -61,7 +66,7 @@ export function createXmlRpcClient(): OdooClient {
 
         // RPC 2: Récupérer les partenaires inactifs
         const inactivePartners = await odoo.searchRead<OdooPartner>("res.partner",
-          buildInactivePartnersDomain(activePartnerIds),
+          buildInactivePartnersDomain(activePartnerIds, excludedPartnerTagId),
           {
             fields: ["name", "email", "id"],
           }

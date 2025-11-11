@@ -53,7 +53,8 @@ export async function calculateReplenishmentNeeds(
     // Calcul consommation moyenne
     const consumptionPerDay = calculateDailyConsumption(
       product.orders,
-      daysOfHistory
+      daysOfHistory,
+      new Date(analysisEndDate)
     );
     console.log(`     Consommation/jour: ${consumptionPerDay.toFixed(4)}`);
 
@@ -67,7 +68,7 @@ export async function calculateReplenishmentNeeds(
     const stockPrediction = predictStockStatus(
       product,
       consumptionPerDay,
-      new Date()
+      new Date(analysisEndDate)
     );
     console.log(`     Stock restant estimé: ${stockPrediction.estimatedStock.toFixed(2)}`);
     console.log(`     Jours avant rupture: ${stockPrediction.daysUntilStockout.toFixed(1)}j`);

@@ -6,7 +6,7 @@
     },
     "config": {
       "analysisWindowDays": 180,
-      "analysisEndDate": "2025-10-29 00:00:00",
+      "analysisEndDate": "2025-10-30 00:00:00",
       "targetCoverage": 14,
       "leadTime": 5,
       "moqMinimum": 300,
@@ -40,7 +40,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -80,9 +80,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -114,7 +114,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -154,9 +154,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -195,9 +195,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -236,9 +236,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -277,9 +277,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -311,7 +311,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -344,7 +344,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -377,7 +377,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -410,7 +410,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -443,7 +443,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -476,7 +476,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -509,7 +509,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -542,7 +542,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -575,7 +575,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -608,7 +608,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -641,7 +641,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -674,7 +674,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -713,7 +713,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -756,9 +756,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -793,7 +793,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -836,9 +836,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -880,9 +880,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -924,9 +924,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -968,9 +968,9 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.014388489208633094,
-                "estimated_stock_remaining": 0.07913669064748197,
-                "days_until_stockout": 5,
+                "consumption_per_day": 0.015267175572519083,
+                "estimated_stock_remaining": 0.1297709923664122,
+                "days_until_stockout": 8,
                 "replenishment_threshold_days": 19
               },
               "quantity_to_order": 1,
@@ -1005,7 +1005,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1041,7 +1041,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1077,7 +1077,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1113,7 +1113,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1149,7 +1149,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.015625,
+                "consumption_per_day": 0.017543859649122806,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1185,7 +1185,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1221,7 +1221,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1257,7 +1257,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1293,7 +1293,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1329,7 +1329,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1365,7 +1365,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1401,7 +1401,7 @@
                 }
               ],
               "stock_prediction": {
-                "consumption_per_day": 0.007194244604316547,
+                "consumption_per_day": 0.007633587786259542,
                 "estimated_stock_remaining": 0,
                 "days_until_stockout": 0,
                 "replenishment_threshold_days": 19
@@ -1432,7 +1432,7 @@
       "moqAdjustmentApplied": false,
       "initialAmount": 444.5399999999999,
       "moqGapFilled": 0,
-      "executionTime": 1374
+      "executionTime": 6443
     },
     "summary": {
       "hasRisk": true,
@@ -1442,5 +1442,5 @@
       "finalAmount": 444.5399999999999
     },
     "report": {},
-    "executionTime": 1374
+    "executionTime": 6444
   }

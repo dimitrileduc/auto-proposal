@@ -31,6 +31,9 @@ export interface OrchestratorConfig {
 
   /** Si true, skip la création du devis Odoo (Phase 3) */
   skipOdooQuoteGeneration: boolean;
+
+  /** Tag partner à exclure définitivement de l'analyse (ex: 195 = "exclude-auto-proposal"). Si null, pas de filtrage. */
+  excludedPartnerTagId?: number | null;
 }
 
 /**

@@ -1,959 +1,793 @@
 {
-    "client": {
-      "id": 60450
-    },
-    "config": {
-      "analysisWindowDays": 180,
-      "analysisEndDate": "2025-10-30 00:00:00",
-      "targetCoverage": 14,
-      "leadTime": 5,
-      "moqMinimum": 300,
-      "skipOdooQuoteGeneration": true,
-      "shouldGenerateReport": false
-    },
-    "result": {
-      "clientId": 60450,
-      "success": true,
-      "hasRisk": true,
-      "phases": {
-        "stockAnalysis": {
-          "client_id": 60450,
-          "products": [
-            {
-              "product_id": 18349,
-              "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.09142857142857143,
-                "estimated_stock_remaining": 1.6914285714285713,
-                "days_until_stockout": 18,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  8,
-                  8
-                ],
-                "order_count": 2,
-                "median_value": 8
+  "client": {
+    "id": 60450,
+    "name": "",
+    "email": ""
+  },
+  "config": {
+    "analysisWindowDays": 180,
+    "analysisEndDate": "2025-10-30 00:00:00",
+    "targetCoverage": 14,
+    "leadTime": 5,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true,
+    "shouldGenerateReport": false
+  },
+  "result": {
+    "clientId": 60450,
+    "clientName": "",
+    "clientEmail": "",
+    "success": true,
+    "hasRisk": true,
+    "phases": {
+      "stockAnalysis": {
+        "client_id": 60450,
+        "products": [
+          {
+            "product_id": 18381,
+            "product_name": "[WIG01] WIGNAC cidre naturel bio 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 90667,
+                "order_name": "S38790",
+                "date_order": "2025-08-28 06:08:37",
+                "quantity": 4,
+                "price_unit": 25.8
               }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.06451612903225806,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
             },
-            {
-              "product_id": 18353,
-              "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
-              "product_uom": [
-                33,
-                "TU10"
+            "quantity_to_order": 4,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                4
               ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.09142857142857143,
-                "estimated_stock_remaining": 1.6914285714285713,
-                "days_until_stockout": 18,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  8,
-                  8
-                ],
-                "order_count": 2,
-                "median_value": 8
-              }
-            },
-            {
-              "product_id": 18381,
-              "product_name": "[WIG01] WIGNAC cidre naturel bio 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 4,
-                  "price_unit": 25.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.057971014492753624,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 4,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  4
-                ],
-                "order_count": 1,
-                "median_value": 4
-              }
-            },
-            {
-              "product_id": 18288,
-              "product_name": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 6,
-                  "price_unit": 25.2
-                },
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 10,
-                  "price_unit": 23.88
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 25.2
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.13714285714285715,
-                "estimated_stock_remaining": -3.4628571428571426,
-                "days_until_stockout": -25,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  6,
-                  10,
-                  8
-                ],
-                "order_count": 3,
-                "median_value": 8
-              }
-            },
-            {
-              "product_id": 18287,
-              "product_name": "[KOKO02] KOKO Kombucha Lemon Ginger 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 10,
-                  "price_unit": 23.88
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 25.2
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.10285714285714286,
-                "estimated_stock_remaining": -3.5771428571428565,
-                "days_until_stockout": -34,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 9,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  10,
-                  8
-                ],
-                "order_count": 2,
-                "median_value": 9
-              }
-            },
-            {
-              "product_id": 18289,
-              "product_name": "[KOKO01] KOKO Kombucha original 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 10,
-                  "price_unit": 23.88
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.07575757575757576,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 10,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  10
-                ],
-                "order_count": 1,
-                "median_value": 10
-              }
-            },
-            {
-              "product_id": 18361,
-              "product_name": "[RISH04] RISH kombucha BIO - smash basil 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 5,
-                  "price_unit": 25.08
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.03787878787878788,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 5,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  5
-                ],
-                "order_count": 1,
-                "median_value": 5
-              }
-            },
-            {
-              "product_id": 18282,
-              "product_name": "[UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 17.88
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.045714285714285714,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  8
-                ],
-                "order_count": 1,
-                "median_value": 8
-              }
-            },
-            {
-              "product_id": 18281,
-              "product_name": "[UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 17.88
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.045714285714285714,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  8
-                ],
-                "order_count": 1,
-                "median_value": 8
-              }
-            },
-            {
-              "product_id": 18355,
-              "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 6,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.03428571428571429,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 6,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  6
-                ],
-                "order_count": 1,
-                "median_value": 6
-              }
-            },
-            {
-              "product_id": 18356,
-              "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 6,
-                  "price_unit": 26.5
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.03428571428571429,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 6,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  6
-                ],
-                "order_count": 1,
-                "median_value": 6
-              }
-            },
-            {
-              "product_id": 18352,
-              "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 4,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.022857142857142857,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 4,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  4
-                ],
-                "order_count": 1,
-                "median_value": 4
-              }
+              "order_count": 1,
+              "median_value": 4
             }
-          ],
-          "total_products_in_history": 12
-        },
-        "proposalFinal": {
-          "client_id": 60450,
-          "products": [
-            {
-              "product_id": 18349,
-              "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.09142857142857143,
-                "estimated_stock_remaining": 1.6914285714285713,
-                "days_until_stockout": 18,
-                "replenishment_threshold_days": 19
+          },
+          {
+            "product_id": 18288,
+            "product_name": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 90667,
+                "order_name": "S38790",
+                "date_order": "2025-08-28 06:08:37",
+                "quantity": 6,
+                "price_unit": 25.2
               },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  8,
-                  8
-                ],
-                "order_count": 2,
-                "median_value": 8
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 10,
+                "price_unit": 23.88
               },
-              "current_price_unit": 18.8,
-              "subtotal": 150.4,
-              "moq_adjustment": 0
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 25.2
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.14285714285714285,
+              "estimated_stock_remaining": -2.857142857142856,
+              "days_until_stockout": -19,
+              "replenishment_threshold_days": 19
             },
-            {
-              "product_id": 18353,
-              "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
-              "product_uom": [
-                33,
-                "TU10"
+            "quantity_to_order": 8,
+            "calculation_metadata": {
+              "strategy": "median_recent_orders",
+              "confidence": "medium",
+              "historical_quantities": [
+                6,
+                10,
+                8
               ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.09142857142857143,
-                "estimated_stock_remaining": 1.6914285714285713,
-                "days_until_stockout": 18,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  8,
-                  8
-                ],
-                "order_count": 2,
-                "median_value": 8
-              },
-              "current_price_unit": 18.8,
-              "subtotal": 150.4,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18381,
-              "product_name": "[WIG01] WIGNAC cidre naturel bio 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 4,
-                  "price_unit": 25.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.057971014492753624,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 4,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  4
-                ],
-                "order_count": 1,
-                "median_value": 4
-              },
-              "current_price_unit": 25.8,
-              "subtotal": 103.2,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18288,
-              "product_name": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 90667,
-                  "order_name": "S38790",
-                  "date_order": "2025-08-28 06:08:37",
-                  "quantity": 6,
-                  "price_unit": 25.2
-                },
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 10,
-                  "price_unit": 23.88
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 25.2
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.13714285714285715,
-                "estimated_stock_remaining": -3.4628571428571426,
-                "days_until_stockout": -25,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  6,
-                  10,
-                  8
-                ],
-                "order_count": 3,
-                "median_value": 8
-              },
-              "current_price_unit": 25.2,
-              "subtotal": 201.6,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18287,
-              "product_name": "[KOKO02] KOKO Kombucha Lemon Ginger 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 10,
-                  "price_unit": 23.88
-                },
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 25.2
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.10285714285714286,
-                "estimated_stock_remaining": -3.5771428571428565,
-                "days_until_stockout": -34,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 9,
-              "calculation_metadata": {
-                "strategy": "median_recent_orders",
-                "confidence": "medium",
-                "historical_quantities": [
-                  10,
-                  8
-                ],
-                "order_count": 2,
-                "median_value": 9
-              },
-              "current_price_unit": 23.88,
-              "subtotal": 214.92,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18289,
-              "product_name": "[KOKO01] KOKO Kombucha original 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 10,
-                  "price_unit": 23.88
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.07575757575757576,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 10,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  10
-                ],
-                "order_count": 1,
-                "median_value": 10
-              },
-              "current_price_unit": 23.88,
-              "subtotal": 238.79999999999998,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18361,
-              "product_name": "[RISH04] RISH kombucha BIO - smash basil 330ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 89571,
-                  "order_name": "S37694",
-                  "date_order": "2025-06-26 08:32:42",
-                  "quantity": 5,
-                  "price_unit": 25.08
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.03787878787878788,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 5,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  5
-                ],
-                "order_count": 1,
-                "median_value": 5
-              },
-              "current_price_unit": 25.08,
-              "subtotal": 125.39999999999999,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18282,
-              "product_name": "[UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 17.88
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.045714285714285714,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  8
-                ],
-                "order_count": 1,
-                "median_value": 8
-              },
-              "current_price_unit": 17.88,
-              "subtotal": 143.04,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18281,
-              "product_name": "[UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml",
-              "product_uom": [
-                2,
-                "TU12"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 8,
-                  "price_unit": 17.88
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.045714285714285714,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 8,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  8
-                ],
-                "order_count": 1,
-                "median_value": 8
-              },
-              "current_price_unit": 17.88,
-              "subtotal": 143.04,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18355,
-              "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 6,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.03428571428571429,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 6,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  6
-                ],
-                "order_count": 1,
-                "median_value": 6
-              },
-              "current_price_unit": 18.8,
-              "subtotal": 112.80000000000001,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18356,
-              "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 6,
-                  "price_unit": 26.5
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.03428571428571429,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 6,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  6
-                ],
-                "order_count": 1,
-                "median_value": 6
-              },
-              "current_price_unit": 26.5,
-              "subtotal": 159,
-              "moq_adjustment": 0
-            },
-            {
-              "product_id": 18352,
-              "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
-              "product_uom": [
-                33,
-                "TU10"
-              ],
-              "order_history": [
-                {
-                  "order_id": 88649,
-                  "order_name": "S36772",
-                  "date_order": "2025-05-14 11:28:53",
-                  "quantity": 4,
-                  "price_unit": 18.8
-                }
-              ],
-              "stock_prediction": {
-                "consumption_per_day": 0.022857142857142857,
-                "estimated_stock_remaining": 0,
-                "days_until_stockout": 0,
-                "replenishment_threshold_days": 19
-              },
-              "quantity_to_order": 4,
-              "calculation_metadata": {
-                "strategy": "single_recent_order",
-                "confidence": "low",
-                "historical_quantities": [
-                  4
-                ],
-                "order_count": 1,
-                "median_value": 4
-              },
-              "current_price_unit": 18.8,
-              "subtotal": 75.2,
-              "moq_adjustment": 0
+              "order_count": 3,
+              "median_value": 8
             }
-          ],
-          "total_amount": 1817.8,
-          "moq_adjustment_applied": false
-        }
+          },
+          {
+            "product_id": 18287,
+            "product_name": "[KOKO02] KOKO Kombucha Lemon Ginger 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 10,
+                "price_unit": 23.88
+              },
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 25.2
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.10714285714285714,
+              "estimated_stock_remaining": -3.3928571428571423,
+              "days_until_stockout": -31,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 9,
+            "calculation_metadata": {
+              "strategy": "median_recent_orders",
+              "confidence": "medium",
+              "historical_quantities": [
+                10,
+                8
+              ],
+              "order_count": 2,
+              "median_value": 9
+            }
+          },
+          {
+            "product_id": 18289,
+            "product_name": "[KOKO01] KOKO Kombucha original 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 10,
+                "price_unit": 23.88
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.08,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 10,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                10
+              ],
+              "order_count": 1,
+              "median_value": 10
+            }
+          },
+          {
+            "product_id": 18361,
+            "product_name": "[RISH04] RISH kombucha BIO - smash basil 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 5,
+                "price_unit": 25.08
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.04,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 5,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                5
+              ],
+              "order_count": 1,
+              "median_value": 5
+            }
+          },
+          {
+            "product_id": 18282,
+            "product_name": "[UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 17.88
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.047619047619047616,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 8,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                8
+              ],
+              "order_count": 1,
+              "median_value": 8
+            }
+          },
+          {
+            "product_id": 18281,
+            "product_name": "[UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 17.88
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.047619047619047616,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 8,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                8
+              ],
+              "order_count": 1,
+              "median_value": 8
+            }
+          },
+          {
+            "product_id": 18355,
+            "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+            "product_uom": [
+              33,
+              "TU10"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 6,
+                "price_unit": 18.8
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.03571428571428571,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 6,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                6
+              ],
+              "order_count": 1,
+              "median_value": 6
+            }
+          },
+          {
+            "product_id": 18356,
+            "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+            "product_uom": [
+              33,
+              "TU10"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 6,
+                "price_unit": 26.5
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.03571428571428571,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 6,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                6
+              ],
+              "order_count": 1,
+              "median_value": 6
+            }
+          },
+          {
+            "product_id": 18352,
+            "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+            "product_uom": [
+              33,
+              "TU10"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 4,
+                "price_unit": 18.8
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.023809523809523808,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 4,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                4
+              ],
+              "order_count": 1,
+              "median_value": 4
+            }
+          }
+        ],
+        "total_products_in_history": 12
       },
-      "productsCount": 12,
-      "urgentProductsCount": 10,
-      "moderateProductsCount": 2,
-      "finalAmount": 1817.8,
-      "moqAdjustmentApplied": false,
-      "initialAmount": 1817.8,
-      "moqGapFilled": 0,
-      "executionTime": 7628
+      "proposalFinal": {
+        "client_id": 60450,
+        "products": [
+          {
+            "product_id": 18381,
+            "product_name": "[WIG01] WIGNAC cidre naturel bio 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 90667,
+                "order_name": "S38790",
+                "date_order": "2025-08-28 06:08:37",
+                "quantity": 4,
+                "price_unit": 25.8
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.06451612903225806,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 4,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                4
+              ],
+              "order_count": 1,
+              "median_value": 4
+            },
+            "current_price_unit": 25.8,
+            "subtotal": 103.2,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18288,
+            "product_name": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 90667,
+                "order_name": "S38790",
+                "date_order": "2025-08-28 06:08:37",
+                "quantity": 6,
+                "price_unit": 25.2
+              },
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 10,
+                "price_unit": 23.88
+              },
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 25.2
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.14285714285714285,
+              "estimated_stock_remaining": -2.857142857142856,
+              "days_until_stockout": -19,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 8,
+            "calculation_metadata": {
+              "strategy": "median_recent_orders",
+              "confidence": "medium",
+              "historical_quantities": [
+                6,
+                10,
+                8
+              ],
+              "order_count": 3,
+              "median_value": 8
+            },
+            "current_price_unit": 25.2,
+            "subtotal": 201.6,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18287,
+            "product_name": "[KOKO02] KOKO Kombucha Lemon Ginger 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 10,
+                "price_unit": 23.88
+              },
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 25.2
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.10714285714285714,
+              "estimated_stock_remaining": -3.3928571428571423,
+              "days_until_stockout": -31,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 9,
+            "calculation_metadata": {
+              "strategy": "median_recent_orders",
+              "confidence": "medium",
+              "historical_quantities": [
+                10,
+                8
+              ],
+              "order_count": 2,
+              "median_value": 9
+            },
+            "current_price_unit": 23.88,
+            "subtotal": 214.92,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18289,
+            "product_name": "[KOKO01] KOKO Kombucha original 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 10,
+                "price_unit": 23.88
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.08,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 10,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                10
+              ],
+              "order_count": 1,
+              "median_value": 10
+            },
+            "current_price_unit": 23.88,
+            "subtotal": 238.79999999999998,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18361,
+            "product_name": "[RISH04] RISH kombucha BIO - smash basil 330ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 89571,
+                "order_name": "S37694",
+                "date_order": "2025-06-26 08:32:42",
+                "quantity": 5,
+                "price_unit": 25.08
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.04,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 5,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                5
+              ],
+              "order_count": 1,
+              "median_value": 5
+            },
+            "current_price_unit": 25.08,
+            "subtotal": 125.39999999999999,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18282,
+            "product_name": "[UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 17.88
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.047619047619047616,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 8,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                8
+              ],
+              "order_count": 1,
+              "median_value": 8
+            },
+            "current_price_unit": 17.88,
+            "subtotal": 143.04,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18281,
+            "product_name": "[UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml",
+            "product_uom": [
+              2,
+              "TU12"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 8,
+                "price_unit": 17.88
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.047619047619047616,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 8,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                8
+              ],
+              "order_count": 1,
+              "median_value": 8
+            },
+            "current_price_unit": 17.88,
+            "subtotal": 143.04,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18355,
+            "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+            "product_uom": [
+              33,
+              "TU10"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 6,
+                "price_unit": 18.8
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.03571428571428571,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 6,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                6
+              ],
+              "order_count": 1,
+              "median_value": 6
+            },
+            "current_price_unit": 18.8,
+            "subtotal": 112.80000000000001,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18356,
+            "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+            "product_uom": [
+              33,
+              "TU10"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 6,
+                "price_unit": 26.5
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.03571428571428571,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 6,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                6
+              ],
+              "order_count": 1,
+              "median_value": 6
+            },
+            "current_price_unit": 26.5,
+            "subtotal": 159,
+            "moq_adjustment": 0
+          },
+          {
+            "product_id": 18352,
+            "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+            "product_uom": [
+              33,
+              "TU10"
+            ],
+            "order_history": [
+              {
+                "order_id": 88649,
+                "order_name": "S36772",
+                "date_order": "2025-05-14 11:28:53",
+                "quantity": 4,
+                "price_unit": 18.8
+              }
+            ],
+            "stock_prediction": {
+              "consumption_per_day": 0.023809523809523808,
+              "estimated_stock_remaining": 0,
+              "days_until_stockout": 0,
+              "replenishment_threshold_days": 19
+            },
+            "quantity_to_order": 4,
+            "calculation_metadata": {
+              "strategy": "single_recent_order",
+              "confidence": "low",
+              "historical_quantities": [
+                4
+              ],
+              "order_count": 1,
+              "median_value": 4
+            },
+            "current_price_unit": 18.8,
+            "subtotal": 75.2,
+            "moq_adjustment": 0
+          }
+        ],
+        "total_amount": 1517,
+        "moq_adjustment_applied": false
+      }
     },
-    "summary": {
-      "hasRisk": true,
-      "productsCount": 12,
-      "urgentProductsCount": 10,
-      "moderateProductsCount": 2,
-      "finalAmount": 1817.8
-    },
-    "report": {},
-    "executionTime": 7628
-  }
+    "productsCount": 10,
+    "urgentProductsCount": 10,
+    "moderateProductsCount": 0,
+    "finalAmount": 1517,
+    "moqAdjustmentApplied": false,
+    "initialAmount": 1517,
+    "moqGapFilled": 0,
+    "executionTime": 1241
+  },
+  "summary": {
+    "hasRisk": true,
+    "productsCount": 10,
+    "urgentProductsCount": 10,
+    "moderateProductsCount": 0,
+    "finalAmount": 1517
+  },
+  "report": {},
+  "executionTime": 1241
+}
