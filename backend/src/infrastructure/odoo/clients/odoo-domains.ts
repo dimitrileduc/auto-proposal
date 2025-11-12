@@ -13,15 +13,20 @@ type OdooDomainOperator = "|" | "&" | "!";
 type OdooDomain = Array<OdooDomainCondition | OdooDomainOperator>;
 
 /**
- * Domain pour récupérer les commandes depuis une date donnée
- * @param dateLimitStr Date limite au format ISO
+ * Domain pour récupérer les commandes dans une période donnée
+ * @param dateMin Date minimum de la période (format: "YYYY-MM-DD HH:MM:SS")
+ * @param dateMax Date maximum de la période (format: "YYYY-MM-DD HH:MM:SS")
  * @param excludeTagId Optionnel: Tag ID à exclure (ex: tag auto-proposal 82)
  */
 export function buildRecentOrdersDomain(
-  dateLimitStr: string,
+  dateMin: string,
+  dateMax: string,
   excludeTagId?: number
 ): OdooDomainCondition[] {
-  const domain: OdooDomainCondition[] = [["date_order", ">=", dateLimitStr]];
+  const domain: OdooDomainCondition[] = [
+    ["date_order", ">=", dateMin],
+    ["date_order", "<=", dateMax],
+  ];
 
   if (excludeTagId !== undefined) {
     // Exclure les commandes ayant ce tag
@@ -38,9 +43,14 @@ export function buildRecentOrdersDomain(
  * - Partenaires actifs uniquement (non archivés dans Odoo)
  * - Soit jamais commandé (sale_order_ids = false)
  * - Soit pas commandé récemment (id not in activePartnerIds)
+ * @param activePartnerIds IDs des partenaires actifs (ayant commandé récemment)
+ * @param excludedPartnerTagId Tag partner à exclure (ex: tag "exclude-auto-proposal")
  */
-export function buildInactivePartnersDomain(activePartnerIds: number[]): any[] {
-  return [
+export function buildInactivePartnersDomain(
+  activePartnerIds: number[],
+  excludedPartnerTagId?: number | null
+): any[] {
+  const domain: any[] = [
     ["is_company", "=", true],
     ["customer_rank", ">", 0],
     ["active", "=", true], // Exclure les clients archivés
@@ -49,7 +59,14 @@ export function buildInactivePartnersDomain(activePartnerIds: number[]): any[] {
     "&", // GROUPE 2: A commandé mais pas récemment
     ["sale_order_ids", "!=", false],
     ["id", "not in", activePartnerIds],
-  ] as any[]; // Cast nécessaire car odoo-xmlrpc-ts ne supporte pas les opérateurs logiques dans le type
+  ];
+
+  // Filtrer les partenaires ayant le tag d'exclusion (ex: "exclude-auto-proposal")
+  if (excludedPartnerTagId != null && excludedPartnerTagId > 0) {
+    domain.push(["category_id", "not in", [excludedPartnerTagId]]);
+  }
+
+  return domain;
 }
 
 /**

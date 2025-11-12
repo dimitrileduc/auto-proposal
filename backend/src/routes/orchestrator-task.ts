@@ -17,15 +17,21 @@ const orchestratorTaskRoute = new Hono();
  * Body (tous optionnels):
  * {
  *   "config": {
- *     "inactivityDays": 90,
- *     "analysisWindowDays": 180,
- *     "targetCoverage": 14,
- *     "leadTime": 5,
- *     "moqMinimum": 300,
- *     "maxClientsToAnalyze": 3,  // "all" ou nombre, pour debug
- *     "generateReports": true,  // Si true, génère les rapports markdown pour tous les clients avec risk
- *     "skipOdooQuoteGeneration": true,  // Si true, skip création devis Odoo (mode test)
- *     "forceReanalysis": false  // Si true, réanalyse même les clients avec devis auto-proposal (tag 82)
+ *     // Période d'inactivité
+ *     "dateMin": "010925",                    // Date min inactivité. Formats: "JJMMAA", "JJ/MM/AA", "JJ/MM/AAAA", "AAAA-MM-JJ". Default: config ou aujourd'hui - 30j
+ *     "dateMax": "011025",                    // Date max inactivité (= référence analyse stock). Default: config ou aujourd'hui
+ *
+ *     // Analyse stock
+ *     "analysisWindowDays": 180,              // Jours d'historique avant dateMax. Default: config (180)
+ *     "targetCoverage": 14,                   // Jours de couverture. Default: config (14)
+ *     "leadTime": 5,                          // Délai livraison. Default: config (5)
+ *     "moqMinimum": 300,                      // MOQ en euros. Default: config (300)
+ *
+ *     // Workflow
+ *     "maxClientsToAnalyze": "all",           // "all" ou nombre (debug). Default: "all"
+ *     "generateReports": true,                // Génère rapports markdown. Default: config (true)
+ *     "skipOdooQuoteGeneration": false,       // Mode TEST (pas de devis). Default: false
+ *     "forceReanalysis": false                // Réanalyse clients avec tag 82. Default: config (false)
  *   }
  * }
  */
@@ -37,7 +43,8 @@ orchestratorTaskRoute.post("/", async (c) => {
     // Préparer le payload pour la task
     const payload: OrchestratorTaskPayload = {
       config: {
-        inactivityDays: config.inactivityDays,
+        dateMin: config.dateMin,
+        dateMax: config.dateMax,
         analysisWindowDays: config.analysisWindowDays,
         targetCoverage: config.targetCoverage,
         leadTime: config.leadTime,
@@ -50,6 +57,9 @@ orchestratorTaskRoute.post("/", async (c) => {
     };
 
     console.log(`🚀 Triggering auto-proposal-orchestrator task`);
+    if (config.dateMin && config.dateMax) {
+      console.log(`   Inactivity period: ${config.dateMin} to ${config.dateMax}`);
+    }
     if (config.maxClientsToAnalyze) {
       console.log(`   Max clients to analyze: ${config.maxClientsToAnalyze}`);
     }

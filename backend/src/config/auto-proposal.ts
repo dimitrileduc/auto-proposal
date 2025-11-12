@@ -5,8 +5,12 @@ export const autoProposalConfig = {
   // Odoo API type
   odooApiType: OdooApiType.XMLRPC,
 
-  // Client inactivity detection
-  inactivityDaysThreshold: 30,
+  // Client inactivity detection (defaults calculés dynamiquement si null)
+  inactivityDetection: {
+    dateMin: null as string | null, // Si null: aujourd'hui - 30 jours
+    dateMax: null as string | null, // Si null: aujourd'hui
+    excludedPartnerTagId: 195, // Tag "exclude-auto-proposal" - Les clients avec ce tag sont définitivement exclus de l'analyse
+  },
 
   // Stock replenishment parameters
   targetCoverage: 14,

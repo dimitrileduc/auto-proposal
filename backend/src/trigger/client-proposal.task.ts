@@ -4,6 +4,7 @@ import { prepareProposal } from "../features/proposal-preparation/proposal-prepa
 import { generateQuote } from "../features/proposal-generation/proposal-generation.service";
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
+import { getTodayAsDateString, parseUserDateInput } from "../utils/date.utils";
 import { prepareClientReportData } from "../workflow/workflow.client-stats";
 import { generateClientReport, generateQuoteReport } from "../reports/client-report";
 import * as fs from "fs/promises";
@@ -76,6 +77,10 @@ export const clientProposalTask = task({
         payload.config.analysisWindowDays ??
         autoProposalConfig.analysisWindowDays,
 
+      analysisEndDate: payload.config.analysisEndDate
+        ? parseUserDateInput(payload.config.analysisEndDate)
+        : getTodayAsDateString(),
+
       targetCoverage:
         payload.config.targetCoverage ??
         autoProposalConfig.targetCoverage,
@@ -111,6 +116,7 @@ export const clientProposalTask = task({
       const stockStart = Date.now();
       const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
         analysisWindowDays: config.analysisWindowDays,
+        analysisEndDate: config.analysisEndDate,
         targetCoverage: config.targetCoverage,
         leadTime: config.leadTime,
       });

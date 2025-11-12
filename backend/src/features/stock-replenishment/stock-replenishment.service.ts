@@ -3,7 +3,7 @@ import { calculateDailyConsumption } from "./utils/consumption.utils";
 import { predictStockStatus } from "./utils/prediction.utils";
 import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
-import { getDateDaysAgo } from "../../utils/date.utils";
+import { getTodayAsDateString } from "../../utils/date.utils";
 import type {
   ProductStockStatus,
   StockReplenishmentResult,
@@ -17,22 +17,24 @@ import type {
  * 2. Quantité: Médiane de l'historique réel (pas consommation × jours)
  *
  * @param clientId ID du client Odoo
- * @param config Configuration optionnelle (analysisWindowDays, targetCoverage, leadTime)
+ * @param config Configuration optionnelle (analysisWindowDays, analysisEndDate, targetCoverage, leadTime)
  * @returns Produits à commander avec quantités recommandées
  */
 export async function calculateReplenishmentNeeds(
   clientId: number = autoProposalConfig.testing.defaultClientId,
   config?: {
     analysisWindowDays?: number;
+    analysisEndDate?: string;
     targetCoverage?: number;
     leadTime?: number;
   }
 ): Promise<StockReplenishmentResult> {
   // Utiliser les valeurs de config ou les valeurs par défaut
   const daysOfHistory = config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays;
+  const analysisEndDate = config?.analysisEndDate ?? getTodayAsDateString();
 
   // 1. Récupération de l'historique
-  const orderHistory = await getProductOrderHistory(clientId, daysOfHistory);
+  const orderHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
 
   const analyzedProducts: ProductStockStatus[] = [];
 
@@ -51,7 +53,8 @@ export async function calculateReplenishmentNeeds(
     // Calcul consommation moyenne
     const consumptionPerDay = calculateDailyConsumption(
       product.orders,
-      daysOfHistory
+      daysOfHistory,
+      new Date(analysisEndDate)
     );
     console.log(`     Consommation/jour: ${consumptionPerDay.toFixed(4)}`);
 
@@ -65,7 +68,7 @@ export async function calculateReplenishmentNeeds(
     const stockPrediction = predictStockStatus(
       product,
       consumptionPerDay,
-      new Date()
+      new Date(analysisEndDate)
     );
     console.log(`     Stock restant estimé: ${stockPrediction.estimatedStock.toFixed(2)}`);
     console.log(`     Jours avant rupture: ${stockPrediction.daysUntilStockout.toFixed(1)}j`);

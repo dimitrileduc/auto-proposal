@@ -14,6 +14,9 @@ export interface ClientProcessingConfig {
   /** Nombre de jours d'historique à analyser (ex: 180 = 6 mois) */
   analysisWindowDays: number;
 
+  /** Date de référence pour l'analyse d'historique (format: "YYYY-MM-DD HH:MM:SS"). Si non fournie, utilise aujourd'hui. */
+  analysisEndDate?: string;
+
   /** Jours de couverture souhaités (ex: 14 jours) */
   targetCoverage: number;
 
@@ -25,6 +28,9 @@ export interface ClientProcessingConfig {
 
   /** Si true, skip la création du devis Odoo (Phase 3) */
   skipOdooQuoteGeneration: boolean;
+
+  /** Si true, génère les rapports markdown pour les clients avec risk. Default: true */
+  shouldGenerateReport?: boolean;
 }
 
 /**

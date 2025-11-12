@@ -6,6 +6,7 @@ import health from "./routes/health";
 import { test } from "./routes/test";
 import clientTask from "./routes/client-task";
 import orchestratorTask from "./routes/orchestrator-task";
+import baselineTest from "./routes/baseline-test.route";
 
 // Configure Trigger.dev
 configure({
@@ -19,6 +20,7 @@ app.route("/", health);
 app.route("/test", test);
 app.route("/client-task", clientTask);
 app.route("/orchestrator-task", orchestratorTask);
+app.route("/baseline-test", baselineTest); // Temporary route for refactoring validation
 
 // server
 serve(

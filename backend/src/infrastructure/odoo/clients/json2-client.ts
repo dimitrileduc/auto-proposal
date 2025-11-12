@@ -2,7 +2,7 @@
  * Client Odoo utilisant l'API JSON-2 (Odoo v19+)
  */
 
-import { getDateDaysAgo } from "../../../utils/date.utils";
+import { calculateDateBefore } from "../../../utils/date.utils";
 import type {
   OdooClient,
   OdooPartner,
@@ -83,19 +83,13 @@ async function odooApiRequest<T = any>(
  */
 export function createJson2Client(): OdooClient {
   return {
-    async getInactiveCompanyPartners(days: number, excludeTagId?: number): Promise<OdooPartner[]> {
-      if (days <= 0) {
-        throw new Error("Le nombre de jours doit être positif");
-      }
-
-      const dateLimitStr = getDateDaysAgo(days);
-
+    async getInactiveCompanyPartners(dateMin: string, dateMax: string, excludeTagId?: number): Promise<OdooPartner[]> {
       try {
-        // RPC 1: Récupérer les commandes récentes et leurs partner_ids
+        // RPC 1: Récupérer les commandes récentes dans la période [dateMin, dateMax]
         const recentOrders = await odooApiRequest<OdooOrder[]>(
           "sale.order/search_read",
           {
-            domain: buildRecentOrdersDomain(dateLimitStr, excludeTagId),
+            domain: buildRecentOrdersDomain(dateMin, dateMax, excludeTagId),
             fields: ["partner_id"],
           }
         );
@@ -126,26 +120,27 @@ export function createJson2Client(): OdooClient {
 
     async getOrderHistoryByPartner(
       partnerId: number,
-      days: number,
-      includeDraftOrders: boolean = false,
+      windowDays: number,
+      referenceDate: string,
+      includeDraftOrders: boolean,
       excludedCategoryIds?: number[]
     ): Promise<OrderHistory> {
-      if (days <= 0) {
+      if (windowDays <= 0) {
         throw new Error("Le nombre de jours doit être positif");
       }
 
-      const dateLimitStr = getDateDaysAgo(days);
+      const dateStart = calculateDateBefore(referenceDate, windowDays);
 
       const states = includeDraftOrders
         ? ["draft", "sent", "sale", "done"]
         : ["sale", "done"];
 
       try {
-        // RPC 1: Récupérer les commandes du partenaire avec leurs dates
+        // RPC 1: Récupérer les commandes du partenaire depuis dateStart
         const orders = await odooApiRequest<OdooOrder[]>(
           "sale.order/search_read",
           {
-            domain: buildPartnerOrdersDomain(partnerId, dateLimitStr, states),
+            domain: buildPartnerOrdersDomain(partnerId, dateStart, states),
             fields: [
               "id",
               "name",
