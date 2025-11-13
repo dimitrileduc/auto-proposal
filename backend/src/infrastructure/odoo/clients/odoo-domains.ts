@@ -71,17 +71,29 @@ export function buildInactivePartnersDomain(
 
 /**
  * Domain pour récupérer les commandes d'un partenaire spécifique
- * - Depuis une date donnée
+ * - Depuis une date donnée jusqu'à une date de référence
  * - Filtrées par états (draft, sent, sale, done)
+ * @param partnerId ID du partenaire
+ * @param dateLimitStr Date minimum (format: "YYYY-MM-DD HH:MM:SS")
+ * @param states États des commandes à inclure
+ * @param referenceDate Date maximum (format: "YYYY-MM-DD HH:MM:SS") - CRITIQUE pour backtest time travel
  */
 export function buildPartnerOrdersDomain(
   partnerId: number,
   dateLimitStr: string,
-  states: string[]
+  states: string[],
+  referenceDate?: string
 ): OdooDomainCondition[] {
-  return [
+  const domain: OdooDomainCondition[] = [
     ["partner_id", "=", partnerId],
     ["date_order", ">=", dateLimitStr],
     ["state", "in", states],
   ];
+
+  // CRITIQUE pour backtest: ne pas inclure les commandes après la date de référence
+  if (referenceDate) {
+    domain.push(["date_order", "<", referenceDate]);
+  }
+
+  return domain;
 }

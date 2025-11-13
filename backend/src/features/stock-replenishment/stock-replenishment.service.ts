@@ -36,7 +36,8 @@ export async function calculateReplenishmentNeeds(
   // 1. Récupération de l'historique
   const orderHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
 
-  const analyzedProducts: ProductStockStatus[] = [];
+  const analyzedProducts: ProductStockStatus[] = []; // Produits à commander uniquement
+  const allProducts: ProductStockStatus[] = []; // TOUS les produits analysés (pour backtest)
 
   // 2. Pour chaque produit, analyser le risque de rupture
   console.log(`\n🔍 Analyse de ${orderHistory.products.length} produits pour client ${clientId}...`);
@@ -79,14 +80,6 @@ export async function calculateReplenishmentNeeds(
     const replenishmentThresholdDays = targetCoverage + leadTime;
     console.log(`     Seuil réappro: ${replenishmentThresholdDays}j (couverture ${targetCoverage}j + lead time ${leadTime}j)`);
 
-    // TRIGGER: Skip si stock suffisant (pas de risque de rupture)
-    if (stockPrediction.daysUntilStockout > replenishmentThresholdDays) {
-      console.log(`     ❌ SKIP: Stock OK (${stockPrediction.daysUntilStockout.toFixed(1)}j > ${replenishmentThresholdDays}j)`);
-      continue;
-    }
-
-    console.log(`     ✅ TRIGGER: Risque de rupture détecté!`);
-
     // QUANTITÉ: Calculer selon médiane de l'historique
     const calculation = calculateQuantityFromHistory(product.orders);
     console.log(`     Quantité calculée: ${calculation.quantity} (${calculation.metadata.strategy}, ${calculation.metadata.confidence})`);
@@ -97,12 +90,8 @@ export async function calculateReplenishmentNeeds(
       continue;
     }
 
-    console.log(`     ✅ À COMMANDER: ${calculation.quantity} unités`);
-
-    // TODO: Ajustement MOQ/multiples à implémenter plus tard
-    // const quantityToOrder = adjustQuantityForConstraints(calculation.quantity);
-
-    analyzedProducts.push({
+    // Créer l'objet produit analysé (avec toutes ses infos)
+    const productStatus: ProductStockStatus = {
       product_id: product.product_id,
       product_name: product.product_name,
       product_uom: product.product_uom,
@@ -127,7 +116,22 @@ export async function calculateReplenishmentNeeds(
       // 3. Quantity calculation (Phase 2: QUANTITÉ)
       quantity_to_order: calculation.quantity,
       calculation_metadata: calculation.metadata,
-    });
+    };
+
+    // Ajouter TOUS les produits analysés (pour backtest)
+    allProducts.push(productStatus);
+
+    // TRIGGER: Skip si stock suffisant (pas de risque de rupture)
+    if (stockPrediction.daysUntilStockout > replenishmentThresholdDays) {
+      console.log(`     ❌ SKIP: Stock OK (${stockPrediction.daysUntilStockout.toFixed(1)}j > ${replenishmentThresholdDays}j)`);
+      continue;
+    }
+
+    console.log(`     ✅ TRIGGER: Risque de rupture détecté!`);
+    console.log(`     ✅ À COMMANDER: ${calculation.quantity} unités`);
+
+    // Ajouter dans les produits à commander (pour prod)
+    analyzedProducts.push(productStatus);
   }
 
   console.log(`\n✅ Analyse terminée: ${analyzedProducts.length} produits à commander\n`);
@@ -136,5 +140,6 @@ export async function calculateReplenishmentNeeds(
     client_id: clientId,
     products: analyzedProducts,
     total_products_in_history: orderHistory.products.length, // Nombre total avant filtrage
+    all_products: allProducts, // TOUS les produits analysés (pour backtest)
   };
 }

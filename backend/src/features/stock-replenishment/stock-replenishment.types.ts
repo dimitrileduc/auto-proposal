@@ -35,4 +35,5 @@ export interface StockReplenishmentResult {
   client_id: number;
   products: ProductStockStatus[]; // Uniquement les produits avec risque de rupture
   total_products_in_history: number; // Nombre total de produits dans l'historique (180j) avant filtrage
+  all_products?: ProductStockStatus[]; // TOUS les produits analysés (avec + sans rupture) pour backtest
 }

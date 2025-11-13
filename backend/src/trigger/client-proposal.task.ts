@@ -125,58 +125,49 @@ export const clientProposalTask = task({
       result.phases.stockAnalysis = stockAnalysis;
 
       // Vérifier si le client a des produits à commander
-      if (stockAnalysis.products.length === 0) {
-        result.hasRisk = false;
-        result.success = true;
-        result.executionTime = Date.now() - startTime;
-        result.productsCount = 0;
+      const hasProducts = stockAnalysis.products.length > 0;
+      result.hasRisk = hasProducts;
+      result.productsCount = hasProducts ? stockAnalysis.products.length : 0;
 
+      // Définir le seuil de réapprovisionnement
+      const replenishmentThreshold = config.targetCoverage + config.leadTime;
+
+      if (hasProducts) {
+        // Compter les produits urgents (daysUntilStockout <= 0)
+        result.urgentProductsCount = stockAnalysis.products.filter(
+          (p) => p.stock_prediction.days_until_stockout <= 0
+        ).length;
+
+        // Compter les produits modérés (0 < days <= threshold)
+        result.moderateProductsCount = stockAnalysis.products.filter(
+          (p) =>
+            p.stock_prediction.days_until_stockout > 0 &&
+            p.stock_prediction.days_until_stockout <= replenishmentThreshold
+        ).length;
+
+        console.log(`📊 Client ${payload.client.name}: ${result.productsCount} products at risk`);
+      } else {
+        result.urgentProductsCount = 0;
+        result.moderateProductsCount = 0;
         console.log(`✅ Client ${payload.client.name}: No replenishment needed`);
-
-        return {
-          client: {
-            id: payload.client.id,
-            name: payload.client.name,
-            email: payload.client.email ?? undefined,
-          },
-          config,
-          result,
-          summary: {
-            hasRisk: false,
-            productsCount: 0,
-            urgentProductsCount: 0,
-            moderateProductsCount: 0,
-            finalAmount: 0,
-          },
-          report: {},
-          executionTime: Date.now() - startTime,
-        };
       }
 
-      result.hasRisk = true;
-      result.productsCount = stockAnalysis.products.length;
-
-      // Compter les produits urgents (daysUntilStockout <= 0)
-      result.urgentProductsCount = stockAnalysis.products.filter(
-        (p) => p.stock_prediction.days_until_stockout <= 0
-      ).length;
-
-      // Compter les produits modérés (0 < days <= threshold)
-      const replenishmentThreshold = config.targetCoverage + config.leadTime;
-      result.moderateProductsCount = stockAnalysis.products.filter(
-        (p) =>
-          p.stock_prediction.days_until_stockout > 0 &&
-          p.stock_prediction.days_until_stockout <= replenishmentThreshold
-      ).length;
-
       // Phase 2.5: Proposal Preparation (Pricing + MOQ)
+      // Créer un proposalFinal même si products.length === 0 pour la génération de rapport
       const proposalStart = Date.now();
-      const proposalFinal = prepareProposal(
-        stockAnalysis,
-        undefined,
-        "historyPriceForClient",
-        config.moqMinimum
-      );
+      const proposalFinal = hasProducts
+        ? prepareProposal(
+            stockAnalysis,
+            undefined,
+            "historyPriceForClient",
+            config.moqMinimum
+          )
+        : {
+            products: [],
+            total_amount: 0,
+            currency: "EUR",
+            moq_adjustment_applied: false,
+          };
       phaseTimings.proposalPreparation = Date.now() - proposalStart;
 
       result.phases.proposalFinal = proposalFinal;
@@ -191,8 +182,8 @@ export const clientProposalTask = task({
         result.moqGapFilled = 0;
       }
 
-      // Phase 3: Quote Generation (si pas en mode skip)
-      if (!config.skipOdooQuoteGeneration) {
+      // Phase 3: Quote Generation (si pas en mode skip ET si produits à commander)
+      if (!config.skipOdooQuoteGeneration && hasProducts) {
         const quoteStart = Date.now();
         const quote = await generateQuote(proposalFinal, odooClient);
         phaseTimings.quoteGeneration = Date.now() - quoteStart;
@@ -205,12 +196,12 @@ export const clientProposalTask = task({
       result.success = true;
       result.executionTime = Date.now() - startTime;
 
-      // Générer le rapport client si hasRisk ET shouldGenerateReport
+      // Générer le rapport client si shouldGenerateReport (même si hasRisk = false pour debug backtest)
       let reportMarkdown: string | undefined;
       let quoteMarkdown: string | undefined;
       let reportPath: string | undefined;
 
-      if (result.hasRisk && config.shouldGenerateReport) {
+      if (config.shouldGenerateReport) {
         try {
           const reportData = prepareClientReportData(result, {
             ...config,
@@ -245,10 +236,14 @@ export const clientProposalTask = task({
         }
       }
 
-      console.log(
-        `✅ Client ${payload.client.name}: ${result.productsCount} products at risk, ` +
-        `${result.finalAmount?.toFixed(2)}€ HT${result.quoteName ? ` → Quote ${result.quoteName}` : ""}`
-      );
+      if (result.hasRisk) {
+        console.log(
+          `✅ Client ${payload.client.name}: ${result.productsCount} products at risk, ` +
+          `${result.finalAmount?.toFixed(2)}€ HT${result.quoteName ? ` → Quote ${result.quoteName}` : ""}`
+        );
+      } else {
+        console.log(`✅ Client ${payload.client.name}: Complete - No replenishment needed`);
+      }
 
       // Retourne un objet complet avec toutes les informations utiles
       return {

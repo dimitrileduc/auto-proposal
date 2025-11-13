@@ -21,8 +21,9 @@ export function prepareClientReportData(
   clientResult: ClientProposalResult,
   config: WorkflowConfig
 ): ClientReportData | null {
-  // Ne générer un rapport que pour les clients avec risque et succès
-  if (!clientResult.success || !clientResult.hasRisk) {
+  // Ne générer un rapport que si le traitement a réussi
+  // (hasRisk n'est plus une condition - utile pour le backtest où on veut voir pourquoi hasRisk=false)
+  if (!clientResult.success) {
     return null;
   }
 

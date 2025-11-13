@@ -174,4 +174,16 @@ export interface OdooClient {
     testMode: boolean,
     testEmail: string
   ): Promise<EmailSendResult>;
+
+  /**
+   * Récupère la dernière commande validée d'un client (pour backtesting)
+   * @param clientId - ID du client
+   * @returns Dernière commande avec { id, name, date_order, partner_name }
+   */
+  getLastClientOrder(clientId: number): Promise<{
+    id: number;
+    name: string;
+    date_order: string;
+    partner_name: string;
+  }>;
 }

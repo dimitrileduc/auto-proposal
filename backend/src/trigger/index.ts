@@ -10,4 +10,7 @@ export type { ClientProposalTaskResult } from "./client-proposal.task";
 export { orchestratorTask } from "./orchestrator.task";
 export type { OrchestratorTaskResult } from "./orchestrator.task";
 
+export { backtestClientTask } from "./backtest-client.task";
+export type { BacktestClientTaskResult } from "./backtest-client.task";
+
 // Future: export { autoProposalCron } from "./auto-proposal-cron.task";
