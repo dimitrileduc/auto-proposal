@@ -68,6 +68,7 @@ export interface OdooSaleOrderLine {
   product_id: [number, string];
   product_uom: [number, string];   // Ex: [27, "TU6"]
   product_uom_qty: number;
+  product_type: string;            // "product" | "service" | "consu"
   price_unit: number;
   price_subtotal: number;          // HT
   price_total: number;             // TTC

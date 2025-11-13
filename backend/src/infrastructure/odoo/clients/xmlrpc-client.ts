@@ -269,6 +269,7 @@ export function createXmlRpcClient(): OdooClient {
               "product_id",
               "product_uom",
               "product_uom_qty",
+              "product_type",
               "price_unit",
               "price_subtotal",
               "price_total",

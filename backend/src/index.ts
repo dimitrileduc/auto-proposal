@@ -8,6 +8,7 @@ import clientTask from "./routes/client-task";
 import orchestratorTask from "./routes/orchestrator-task";
 import baselineTest from "./routes/baseline-test.route";
 import backtestClientRoute from "./routes/backtest-client.route";
+import backtestAggregateRoute from "./routes/backtest-aggregate.route";
 
 // Configure Trigger.dev
 configure({
@@ -23,6 +24,7 @@ app.route("/client-task", clientTask);
 app.route("/orchestrator-task", orchestratorTask);
 app.route("/baseline-test", baselineTest); // Temporary route for refactoring validation
 app.route("/backtest-client", backtestClientRoute);
+app.route("/backtest/aggregate", backtestAggregateRoute);
 
 // server
 serve(
