@@ -55,7 +55,7 @@ export function calculateGlobalWorkflowStatistics(
 
   // Un client a un historique de commande SI:
   // - phases.stockAnalysis.total_products_in_history > 0
-  // Cela indique qu'il a commandé des produits dans les 180 derniers jours
+  // Cela indique qu'il a commandé des produits dans les x derniers jours
   const clientsWithOrderHistory = clientResults.filter(
     r => r.success && r.phases.stockAnalysis && r.phases.stockAnalysis.total_products_in_history > 0
   ).length;

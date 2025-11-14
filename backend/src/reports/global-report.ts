@@ -82,7 +82,7 @@ function generateGlobalStatsTable(data: GlobalReportData): string {
   const rows = [
     ["👥 **Clients inactifs** (30j+)", `**${stats.totalInactiveClients}**`],
     ["🔍 **Échantillon analysé**", `**${stats.clientsAnalyzed}** clients`],
-    ["📋 **Clients avec historique de commande** (180j)", `**${stats.clientsWithOrderHistory}** / ${stats.totalInactiveClients} (${percentWithHistory}%)`],
+    ["📋 **Clients avec historique de commande** (270j)", `**${stats.clientsWithOrderHistory}** / ${stats.totalInactiveClients} (${percentWithHistory}%)`],
     ["✅ **Clients avec stock OK**", `**${stats.clientsWithoutRisk}** (pas de risque)`],
     ["⚠️ **Clients avec risque de rupture**", `**${stats.clientsWithRisk}** / ${stats.clientsWithOrderHistory} (${percentWithRisk}%)`],
     ["📦 **Total produits à commander**", `**${stats.totalProducts}**`],
