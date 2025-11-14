@@ -1,0 +1,22 @@
+{
+  "clientId": 38842,
+  "clientName": "DLL AD WELKENRAEDT ETS ADOLPHE",
+  "orderName": "S39091",
+  "orderDate": "2025-09-09 11:13:17",
+  "cutoffDate": "2025-09-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 18,
+    "fp": 26,
+    "fn": 5,
+    "precision": 0.4090909090909091,
+    "recall": 0.782608695652174,
+    "f1Score": 0.537313432835821,
+    "mae": 0.4444444444444444,
+    "mape": 36.111111111111114
+  },
+  "distribution": {
+    "exactMatch": 10,
+    "partialMatch": 8
+  }
+}

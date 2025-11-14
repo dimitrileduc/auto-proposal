@@ -1,0 +1,22 @@
+{
+  "clientId": 71685,
+  "clientName": "CRANSHOF BENOIT",
+  "orderName": "S39184",
+  "orderDate": "2025-09-25 13:09:42",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 24,
+    "fn": 0,
+    "precision": 0.22580645161290322,
+    "recall": 1,
+    "f1Score": 0.3684210526315789,
+    "mae": 0.8571428571428571,
+    "mape": 57.142857142857146
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 6
+  }
+}

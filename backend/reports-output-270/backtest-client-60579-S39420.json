@@ -1,0 +1,22 @@
+{
+  "clientId": 60579,
+  "clientName": "Wandercoop",
+  "orderName": "S39420",
+  "orderDate": "2025-10-02 06:12:05",
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 14,
+    "fn": 1,
+    "precision": 0.391304347826087,
+    "recall": 0.9,
+    "f1Score": 0.5454545454545454,
+    "mae": 1,
+    "mape": 49.07407407407407
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 7
+  }
+}

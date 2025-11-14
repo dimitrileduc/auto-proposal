@@ -1,0 +1,22 @@
+{
+  "clientId": 60190,
+  "clientName": "EUROPADRINKS",
+  "orderName": "S39384",
+  "orderDate": "2025-09-25 06:30:28",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.4166666666666667,
+    "recall": 1,
+    "f1Score": 0.5882352941176471,
+    "mae": 5.6,
+    "mape": 56
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 2
+  }
+}

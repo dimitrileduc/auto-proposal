@@ -1,0 +1,22 @@
+{
+  "clientId": 60485,
+  "clientName": "MARMA",
+  "orderName": "S39106",
+  "orderDate": "2025-09-09 12:33:37",
+  "cutoffDate": "2025-09-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.2,
+    "recall": 1,
+    "f1Score": 0.33333333333333337,
+    "mae": 14,
+    "mape": 77.77777777777779
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

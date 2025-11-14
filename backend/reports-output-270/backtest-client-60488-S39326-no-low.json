@@ -1,0 +1,22 @@
+{
+  "clientId": 60488,
+  "clientName": "MDH FOODSERVICE",
+  "orderName": "S39326",
+  "orderDate": "2025-09-22 09:26:25",
+  "cutoffDate": "2025-09-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1Score": 0.7692307692307693,
+    "mae": 2.2,
+    "mape": 83.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 2
+  }
+}

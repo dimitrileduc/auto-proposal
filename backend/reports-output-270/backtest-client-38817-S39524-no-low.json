@@ -1,0 +1,22 @@
+{
+  "clientId": 38817,
+  "clientName": "DLL AD MALMEDY",
+  "orderName": "S39524",
+  "orderDate": "2025-10-02 13:25:55",
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 24,
+    "fp": 20,
+    "fn": 0,
+    "precision": 0.5454545454545454,
+    "recall": 1,
+    "f1Score": 0.7058823529411764,
+    "mae": 0.9166666666666666,
+    "mape": 51.00694444444445
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 19
+  }
+}

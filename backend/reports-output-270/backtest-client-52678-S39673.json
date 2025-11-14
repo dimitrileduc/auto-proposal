@@ -1,0 +1,22 @@
+{
+  "clientId": 52678,
+  "clientName": "VivArdent SRL",
+  "orderName": "S39673",
+  "orderDate": "2025-10-13 07:44:22",
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 7,
+    "fn": 3,
+    "precision": 0.6666666666666666,
+    "recall": 0.8235294117647058,
+    "f1Score": 0.7368421052631577,
+    "mae": 0.42857142857142855,
+    "mape": 35.714285714285715
+  },
+  "distribution": {
+    "exactMatch": 10,
+    "partialMatch": 4
+  }
+}

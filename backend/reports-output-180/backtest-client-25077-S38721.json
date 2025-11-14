@@ -1,0 +1,22 @@
+{
+  "clientId": 25077,
+  "clientName": "Maison JUPRELLE Cie, SA",
+  "orderName": "S38721",
+  "orderDate": "2025-08-26 06:47:38",
+  "cutoffDate": "2025-08-25 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 3,
+    "fn": 4,
+    "precision": 0.8235294117647058,
+    "recall": 0.7777777777777778,
+    "f1Score": 0.7999999999999999,
+    "mae": 0.9285714285714286,
+    "mape": 46.07142857142857
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 9
+  }
+}

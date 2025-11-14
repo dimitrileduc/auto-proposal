@@ -1,0 +1,22 @@
+{
+  "clientId": 38736,
+  "clientName": "CRF MARKET BEAURAING DEMARS",
+  "orderName": "S39613",
+  "orderDate": "2025-10-08 07:09:40",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 17,
+    "fn": 1,
+    "precision": 0.37037037037037035,
+    "recall": 0.9090909090909091,
+    "f1Score": 0.5263157894736842,
+    "mae": 0.9,
+    "mape": 37.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 6
+  }
+}

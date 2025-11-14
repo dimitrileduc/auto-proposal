@@ -1,0 +1,22 @@
+{
+  "clientId": 72487,
+  "clientName": "ROCHEFRAIS",
+  "orderName": "S39356",
+  "orderDate": "2025-09-24 08:46:14",
+  "cutoffDate": "2025-09-23 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.6,
+    "recall": 1,
+    "f1Score": 0.7499999999999999,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 0
+  }
+}

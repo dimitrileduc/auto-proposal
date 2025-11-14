@@ -1,0 +1,22 @@
+{
+  "clientId": 29069,
+  "clientName": "CRF HYPER MARKET EUPEN",
+  "orderName": "S39365",
+  "orderDate": "2025-09-24 09:13:07",
+  "cutoffDate": "2025-09-23 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 54,
+    "fn": 2,
+    "precision": 0.14285714285714285,
+    "recall": 0.8181818181818182,
+    "f1Score": 0.2432432432432432,
+    "mae": 0.3333333333333333,
+    "mape": 22.22222222222222
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 2
+  }
+}

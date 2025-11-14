@@ -1,0 +1,22 @@
+{
+  "clientId": 38935,
+  "clientName": "ITM Gerpinnes/ GERPIDIS N.V.",
+  "orderName": "S39443",
+  "orderDate": "2025-10-01 07:28:00",
+  "cutoffDate": "2025-09-30 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 17,
+    "fn": 1,
+    "precision": 0.34615384615384615,
+    "recall": 0.9,
+    "f1Score": 0.5,
+    "mae": 0.2222222222222222,
+    "mape": 14.814814814814813
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 2
+  }
+}

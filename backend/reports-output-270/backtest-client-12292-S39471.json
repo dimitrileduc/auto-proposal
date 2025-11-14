@@ -1,0 +1,22 @@
+{
+  "clientId": 12292,
+  "clientName": "Green Peas",
+  "orderName": "S39471",
+  "orderDate": "2025-10-09 06:35:27",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 9,
+    "fn": 2,
+    "precision": 0.5714285714285714,
+    "recall": 0.8571428571428571,
+    "f1Score": 0.6857142857142857,
+    "mae": 0.4166666666666667,
+    "mape": 23.61111111111111
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 5
+  }
+}

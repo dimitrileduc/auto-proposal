@@ -1,0 +1,22 @@
+{
+  "clientId": 8630,
+  "clientName": "Dorfladen An Ennen",
+  "orderName": "S38825",
+  "orderDate": "2025-09-08 06:51:50",
+  "cutoffDate": "2025-09-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 21,
+    "fn": 4,
+    "precision": 0.3,
+    "recall": 0.6923076923076923,
+    "f1Score": 0.41860465116279066,
+    "mae": 0.2222222222222222,
+    "mape": 11.11111111111111
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 2
+  }
+}

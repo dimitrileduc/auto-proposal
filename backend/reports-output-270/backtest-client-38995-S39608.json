@@ -1,0 +1,22 @@
+{
+  "clientId": 38995,
+  "clientName": "MASETTI",
+  "orderName": "S39608",
+  "orderDate": "2025-10-08 06:19:58",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 21,
+    "fp": 8,
+    "fn": 3,
+    "precision": 0.7241379310344828,
+    "recall": 0.875,
+    "f1Score": 0.7924528301886793,
+    "mae": 3.0952380952380953,
+    "mape": 68.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 13
+  }
+}

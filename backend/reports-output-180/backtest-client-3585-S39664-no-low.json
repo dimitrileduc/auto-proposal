@@ -1,0 +1,22 @@
+{
+  "clientId": 3585,
+  "clientName": "ILIS    SA",
+  "orderName": "S39664",
+  "orderDate": "2025-10-10 09:19:46",
+  "cutoffDate": "2025-10-09 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 80,
+    "mape": 50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

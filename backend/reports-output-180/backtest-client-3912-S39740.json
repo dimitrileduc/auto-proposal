@@ -1,0 +1,22 @@
+{
+  "clientId": 3912,
+  "clientName": "LEGEND FOOD",
+  "orderName": "S39740",
+  "orderDate": "2025-10-15 11:44:02",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 3590,
+    "mape": 86.20689655172414
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  }
+}

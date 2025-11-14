@@ -1,0 +1,22 @@
+{
+  "clientId": 13621,
+  "clientName": "FOODPRINT SRL",
+  "orderName": "S39729",
+  "orderDate": "2025-10-14 14:05:41",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 241,
+    "fn": 4,
+    "precision": 0.012295081967213115,
+    "recall": 0.42857142857142855,
+    "f1Score": 0.02390438247011952,
+    "mae": 205.66666666666666,
+    "mape": 66.66666666666667
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  }
+}

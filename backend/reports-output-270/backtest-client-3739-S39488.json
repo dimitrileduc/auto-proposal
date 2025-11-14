@@ -1,0 +1,22 @@
+{
+  "clientId": 3739,
+  "clientName": "SPUNTINI TIENEN",
+  "orderName": "S39488",
+  "orderDate": "2025-10-01 13:11:18",
+  "cutoffDate": "2025-09-30 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  }
+}

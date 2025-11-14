@@ -1,0 +1,22 @@
+{
+  "clientId": 99,
+  "clientName": "La Fermette Godelaine de Saint-Georges",
+  "orderName": "S39676",
+  "orderDate": "2025-10-13 07:37:52",
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 20,
+    "fn": 7,
+    "precision": 0.23076923076923078,
+    "recall": 0.46153846153846156,
+    "f1Score": 0.30769230769230776,
+    "mae": 0.16666666666666666,
+    "mape": 16.666666666666668
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 1
+  }
+}

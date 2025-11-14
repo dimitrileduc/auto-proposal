@@ -1,0 +1,22 @@
+{
+  "clientId": 3511,
+  "clientName": "CARRY GERON SA",
+  "orderName": "S39571",
+  "orderDate": "2025-10-06 09:20:55",
+  "cutoffDate": "2025-10-05 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0.6,
+    "recall": 0.75,
+    "f1Score": 0.6666666666666665,
+    "mae": 12,
+    "mape": 13.636363636363638
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 1
+  }
+}

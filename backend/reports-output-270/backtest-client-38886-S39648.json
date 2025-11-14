@@ -1,0 +1,22 @@
+{
+  "clientId": 38886,
+  "clientName": "E-CENTER VIELER",
+  "orderName": "S39648",
+  "orderDate": "2025-10-13 07:49:36",
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 10,
+    "fn": 13,
+    "precision": 0.47368421052631576,
+    "recall": 0.4090909090909091,
+    "f1Score": 0.43902439024390244,
+    "mae": 1.2222222222222223,
+    "mape": 88.88888888888889
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 7
+  }
+}

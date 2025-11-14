@@ -1,0 +1,22 @@
+{
+  "clientId": 39051,
+  "clientName": "RIXALIM SA 9881",
+  "orderName": "S39270",
+  "orderDate": "2025-09-22 06:15:50",
+  "cutoffDate": "2025-09-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 10,
+    "fn": 1,
+    "precision": 0.4117647058823529,
+    "recall": 0.875,
+    "f1Score": 0.56,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 0
+  }
+}

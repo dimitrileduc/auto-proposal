@@ -1,0 +1,22 @@
+{
+  "clientId": 23342,
+  "clientName": "Epicerie Uhoda Kennedy",
+  "orderName": "S39409",
+  "orderDate": "2025-10-08 07:16:30",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 27,
+    "fn": 9,
+    "precision": 0.03571428571428571,
+    "recall": 0.1,
+    "f1Score": 0.05263157894736841,
+    "mae": 1,
+    "mape": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

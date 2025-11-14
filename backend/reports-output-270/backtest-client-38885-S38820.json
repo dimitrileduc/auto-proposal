@@ -1,0 +1,22 @@
+{
+  "clientId": 38885,
+  "clientName": "E CENTER ENGELS WIDDERSDORF",
+  "orderName": "S38820",
+  "orderDate": "2025-08-28 08:56:36",
+  "cutoffDate": "2025-08-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 11,
+    "fn": 2,
+    "precision": 0.42105263157894735,
+    "recall": 0.8,
+    "f1Score": 0.5517241379310345,
+    "mae": 0.125,
+    "mape": 4.166666666666666
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 1
+  }
+}

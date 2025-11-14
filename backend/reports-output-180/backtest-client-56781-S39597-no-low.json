@@ -1,0 +1,22 @@
+{
+  "clientId": 56781,
+  "clientName": "SA INTERANS",
+  "orderName": "S39597",
+  "orderDate": "2025-10-13 07:41:43",
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 9,
+    "fn": 13,
+    "precision": 0.5263157894736842,
+    "recall": 0.43478260869565216,
+    "f1Score": 0.47619047619047616,
+    "mae": 0.6,
+    "mape": 19.999999999999996
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 3
+  }
+}

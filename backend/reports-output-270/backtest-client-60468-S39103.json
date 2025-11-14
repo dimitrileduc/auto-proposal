@@ -1,0 +1,22 @@
+{
+  "clientId": 60468,
+  "clientName": "LES SORBIERS",
+  "orderName": "S39103",
+  "orderDate": "2025-09-17 06:38:08",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 11,
+    "fn": 2,
+    "precision": 0.21428571428571427,
+    "recall": 0.6,
+    "f1Score": 0.3157894736842105,
+    "mae": 0.6666666666666666,
+    "mape": 25
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  }
+}

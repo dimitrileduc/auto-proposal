@@ -1,0 +1,22 @@
+{
+  "clientId": 3840,
+  "clientName": "KORO HANDELS GmbH",
+  "orderName": "S39714",
+  "orderDate": "2025-10-14 07:59:02",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 7,
+    "fn": 2,
+    "precision": 0.2222222222222222,
+    "recall": 0.5,
+    "f1Score": 0.30769230769230765,
+    "mae": 31.5,
+    "mape": 32.5953488372093
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  }
+}

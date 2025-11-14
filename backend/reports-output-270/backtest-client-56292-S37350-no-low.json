@@ -1,0 +1,22 @@
+{
+  "clientId": 56292,
+  "clientName": "DLL AD GENVAL",
+  "orderName": "S37350",
+  "orderDate": "2025-06-11 07:09:09",
+  "cutoffDate": "2025-06-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 18,
+    "fn": 8,
+    "precision": 0.14285714285714285,
+    "recall": 0.2727272727272727,
+    "f1Score": 0.18749999999999997,
+    "mae": 0.6666666666666666,
+    "mape": 33.333333333333336
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  }
+}

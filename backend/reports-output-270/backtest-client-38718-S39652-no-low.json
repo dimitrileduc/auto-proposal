@@ -1,0 +1,22 @@
+{
+  "clientId": 38718,
+  "clientName": "CENSE DU MAYEUR",
+  "orderName": "S39652",
+  "orderDate": "2025-10-09 11:32:03",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 19,
+    "fp": 21,
+    "fn": 9,
+    "precision": 0.475,
+    "recall": 0.6785714285714286,
+    "f1Score": 0.5588235294117648,
+    "mae": 0.6842105263157895,
+    "mape": 49.122807017543856
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 12
+  }
+}
