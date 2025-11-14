@@ -4,8 +4,8 @@
 .DS_Store
 *.log
 
-# Reports output
-backend/reports-output/*.md
+# # Reports output
+# backend/reports-output/*.md
 
 # MCP config
 odoo-mcp-ro/.mcp.json
