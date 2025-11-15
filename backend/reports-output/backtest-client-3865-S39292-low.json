@@ -1,0 +1,22 @@
+{
+  "clientId": 3865,
+  "clientName": "REWE MARKT GMBH - WEST",
+  "orderName": "S39292",
+  "orderDate": "2025-09-23 06:18:30",
+  "cutoffDate": "2025-09-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 9,
+    "fn": 5,
+    "precision": 0.1,
+    "recall": 0.16666666666666666,
+    "f1Score": 0.125,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  }
+}

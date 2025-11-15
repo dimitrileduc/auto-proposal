@@ -1,0 +1,22 @@
+{
+  "clientId": 71197,
+  "clientName": "Le Cortil asbl, Amandine Duhaut",
+  "orderName": "S39713",
+  "orderDate": "2025-10-14 10:02:46",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 5,
+    "precision": 1,
+    "recall": 0.16666666666666666,
+    "f1Score": 0.2857142857142857,
+    "mae": 1,
+    "mape": 25
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

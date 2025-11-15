@@ -1,0 +1,22 @@
+{
+  "clientId": 34498,
+  "clientName": "D'ICI NANINNE",
+  "orderName": "S39519",
+  "orderDate": "2025-10-03 06:18:15",
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 3.642857142857143,
+    "mape": 187.85714285714286
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 14
+  }
+}

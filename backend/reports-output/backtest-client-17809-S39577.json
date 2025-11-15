@@ -1,0 +1,22 @@
+{
+  "clientId": 17809,
+  "clientName": "AU RAYON BIO",
+  "orderName": "S39577",
+  "orderDate": "2025-10-09 06:15:56",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 4,
+    "fn": 7,
+    "precision": 0.7333333333333333,
+    "recall": 0.6111111111111112,
+    "f1Score": 0.6666666666666666,
+    "mae": 0.8181818181818182,
+    "mape": 45.454545454545446
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 9
+  }
+}

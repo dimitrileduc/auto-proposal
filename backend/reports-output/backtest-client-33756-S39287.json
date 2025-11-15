@@ -1,0 +1,22 @@
+{
+  "clientId": 33756,
+  "clientName": "BELICIOUS",
+  "orderName": "S39287",
+  "orderDate": "2025-09-22 06:23:29",
+  "cutoffDate": "2025-09-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 19,
+    "fp": 4,
+    "fn": 7,
+    "precision": 0.8260869565217391,
+    "recall": 0.7307692307692307,
+    "f1Score": 0.7755102040816326,
+    "mae": 2.210526315789474,
+    "mape": 47.92397660818713
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 13
+  }
+}

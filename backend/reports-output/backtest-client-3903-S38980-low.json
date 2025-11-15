@@ -1,0 +1,22 @@
+{
+  "clientId": 3903,
+  "clientName": "LECONTE ETS",
+  "orderName": "S38980",
+  "orderDate": "2025-09-04 08:31:02",
+  "cutoffDate": "2025-09-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1,
+    "recall": 0.5,
+    "f1Score": 0.6666666666666666,
+    "mae": 14,
+    "mape": 58.333333333333336
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

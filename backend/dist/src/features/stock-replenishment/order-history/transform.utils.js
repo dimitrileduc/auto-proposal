@@ -1,0 +1,50 @@
+/**
+ * Transforme l'historique brut Odoo en structure groupée par produit
+ *
+ * Note: Le filtrage des produits non-food (consignes, palettes, emballages, etc.)
+ * est fait côté Odoo dans la requête pour optimiser les performances.
+ *
+ * @param rawHistory Données brutes d'Odoo (orders + orderLines déjà filtrées)
+ * @param partnerId ID du partenaire
+ * @returns Historique structuré par produit avec commandes triées par date décroissante
+ */
+export function transformOrderHistory(rawHistory, partnerId) {
+    if (rawHistory.orders.length === 0) {
+        return {
+            partner_id: partnerId,
+            products: [],
+        };
+    }
+    const ordersMap = new Map(rawHistory.orders.map((order) => [order.id, order]));
+    const productsMap = new Map();
+    for (const line of rawHistory.orderLines) {
+        const order = ordersMap.get(line.order_id[0]);
+        if (!order)
+            continue;
+        const productId = line.product_id[0];
+        const productName = line.product_id[1];
+        if (!productsMap.has(productId)) {
+            productsMap.set(productId, {
+                product_id: productId,
+                product_name: productName,
+                product_uom: line.product_uom,
+                product_type: line.product_type,
+                orders: [],
+            });
+        }
+        productsMap.get(productId).orders.push({
+            order_id: order.id,
+            order_name: order.name,
+            date_order: order.date_order,
+            quantity: line.product_uom_qty,
+            price_unit: line.price_unit,
+        });
+    }
+    for (const product of productsMap.values()) {
+        product.orders.sort((a, b) => new Date(b.date_order).getTime() - new Date(a.date_order).getTime());
+    }
+    return {
+        partner_id: partnerId,
+        products: Array.from(productsMap.values()),
+    };
+}

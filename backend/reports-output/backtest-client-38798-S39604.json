@@ -1,0 +1,22 @@
+{
+  "clientId": 38798,
+  "clientName": "DLL AD DOLHAIN ETS ALPO",
+  "orderName": "S39604",
+  "orderDate": "2025-10-08 07:12:54",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 9,
+    "fn": 6,
+    "precision": 0.5714285714285714,
+    "recall": 0.6666666666666666,
+    "f1Score": 0.6153846153846153,
+    "mae": 0.8333333333333334,
+    "mape": 23.333333333333332
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 4
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "clientId": 52403,
+  "clientName": "SA SEMAF - AD Thorembais",
+  "orderName": "S39162",
+  "orderDate": "2025-09-17 12:21:02",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 15,
+    "fp": 3,
+    "fn": 4,
+    "precision": 0.8333333333333334,
+    "recall": 0.7894736842105263,
+    "f1Score": 0.8108108108108109,
+    "mae": 1.0666666666666667,
+    "mape": 35
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 10
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "clientId": 60522,
+  "clientName": "PURE BASTOGNE",
+  "orderName": "S38818",
+  "orderDate": "2025-09-01 06:44:29",
+  "cutoffDate": "2025-08-31 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 6,
+    "fn": 2,
+    "precision": 0.14285714285714285,
+    "recall": 0.3333333333333333,
+    "f1Score": 0.2,
+    "mae": 7,
+    "mape": 70
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

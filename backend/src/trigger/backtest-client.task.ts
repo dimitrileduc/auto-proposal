@@ -191,17 +191,17 @@ export const backtestClientTask = task({
       console.log(`      MAE: ${comparison.quantityMetrics.mae.toFixed(2)} unités`);
       console.log(`      MAPE: ${comparison.quantityMetrics.mape.toFixed(1)}%`);
 
-      // Filtrer systemProposal sans produits low confidence
-      const systemProposalNoLow = {
+      // SWAP: Rapport principal = sans low confidence (données propres 2+ commandes)
+      const systemProposalClean = {
         ...systemProposal,
         products: systemProposal.products.filter((p) =>
           p.calculation_metadata?.confidence !== 'low'
         )
       } as typeof systemProposal;
 
-      // 2ème comparaison SANS LOW confidence
-      const comparisonNoLow = compareSystemPredictionVsRealOrder(
-        systemProposalNoLow,
+      // Comparaison CLEAN (rapport principal)
+      const comparisonClean = compareSystemPredictionVsRealOrder(
+        systemProposalClean,
         realOrderDetails.lines,
         systemResult.result.phases.stockAnalysis,
         {
@@ -215,12 +215,43 @@ export const backtestClientTask = task({
         }
       );
 
-      console.log(`   ✅ Comparison NO-LOW complete:`);
-      console.log(`      TP: ${comparisonNoLow.truePositives.length}`);
-      console.log(`      FP: ${comparisonNoLow.falsePositives.length}`);
-      console.log(`      FN: ${comparisonNoLow.falseNegatives.length}`);
-      console.log(`      Precision: ${(comparisonNoLow.productMetrics.precision * 100).toFixed(1)}%`);
-      console.log(`      Recall: ${(comparisonNoLow.productMetrics.recall * 100).toFixed(1)}%\n`);
+      console.log(`   ✅ Comparison CLEAN (2+ commandes) complete:`);
+      console.log(`      TP: ${comparisonClean.truePositives.length}`);
+      console.log(`      FP: ${comparisonClean.falsePositives.length}`);
+      console.log(`      FN: ${comparisonClean.falseNegatives.length}`);
+      console.log(`      Precision: ${(comparisonClean.productMetrics.precision * 100).toFixed(1)}%`);
+      console.log(`      Recall: ${(comparisonClean.productMetrics.recall * 100).toFixed(1)}%`);
+
+      // SWAP: Rapport secondaire = only low confidence (sparse data 1 commande)
+      const systemProposalLow = {
+        ...systemProposal,
+        products: systemProposal.products.filter((p) =>
+          p.calculation_metadata?.confidence === 'low'
+        )
+      } as typeof systemProposal;
+
+      // Comparaison LOW (rapport secondaire)
+      const comparisonLow = compareSystemPredictionVsRealOrder(
+        systemProposalLow,
+        realOrderDetails.lines,
+        systemResult.result.phases.stockAnalysis,
+        {
+          clientId: payload.clientId,
+          clientName: lastOrder.partner_name,
+          orderName: lastOrder.name,
+          orderDate: lastOrder.date_order,
+          cutoffDate,
+          daysBeforePrediction,
+          analysisWindowDays: payload.config?.analysisWindowDays,
+        }
+      );
+
+      console.log(`   ✅ Comparison LOW (1 commande) complete:`);
+      console.log(`      TP: ${comparisonLow.truePositives.length}`);
+      console.log(`      FP: ${comparisonLow.falsePositives.length}`);
+      console.log(`      FN: ${comparisonLow.falseNegatives.length}`);
+      console.log(`      Precision: ${(comparisonLow.productMetrics.precision * 100).toFixed(1)}%`);
+      console.log(`      Recall: ${(comparisonLow.productMetrics.recall * 100).toFixed(1)}%\n`);
 
       // 6️⃣ Génération des rapports markdown + JSON
       console.log("📝 Step 6/6: Generating backtest reports...");
@@ -228,32 +259,39 @@ export const backtestClientTask = task({
       const reportsOutputDir = path.join(process.cwd(), "reports-output");
       await fs.mkdir(reportsOutputDir, { recursive: true });
 
-      // Générer rapport Markdown
-      const reportMarkdown = generateBacktestReport(comparison);
+      // SWAP: Rapport PRINCIPAL = CLEAN (2+ commandes, données propres pour ML)
+      const reportMarkdown = generateBacktestReport(comparisonClean);
       const reportFileNameMd = `backtest-client-${payload.clientId}-${lastOrder.name}.md`;
       const reportPathMd = path.join(reportsOutputDir, reportFileNameMd);
       await fs.writeFile(reportPathMd, reportMarkdown, "utf-8");
-      console.log(`   ✅ Markdown report saved: ${reportFileNameMd}`);
+      console.log(`   ✅ Markdown CLEAN report saved: ${reportFileNameMd}`);
 
-      // Générer rapport JSON
-      const reportJSON = generateBacktestReportJSON(comparison);
+      // Rapport JSON CLEAN
+      const reportJSON = generateBacktestReportJSON(comparisonClean);
       const reportFileNameJson = `backtest-client-${payload.clientId}-${lastOrder.name}.json`;
       const reportPathJson = path.join(reportsOutputDir, reportFileNameJson);
       await fs.writeFile(reportPathJson, JSON.stringify(reportJSON, null, 2), "utf-8");
-      console.log(`   ✅ JSON report saved: ${reportFileNameJson}`);
+      console.log(`   ✅ JSON CLEAN report saved: ${reportFileNameJson}`);
 
-      // Générer rapports NO-LOW
-      const reportMarkdownNoLow = generateBacktestReport(comparisonNoLow);
-      const reportFileNameMdNoLow = `backtest-client-${payload.clientId}-${lastOrder.name}-no-low.md`;
-      const reportPathMdNoLow = path.join(reportsOutputDir, reportFileNameMdNoLow);
-      await fs.writeFile(reportPathMdNoLow, reportMarkdownNoLow, "utf-8");
-      console.log(`   ✅ Markdown NO-LOW report saved: ${reportFileNameMdNoLow}`);
+      // SWAP: Rapport SECONDAIRE = LOW (1 commande, sparse data isolé)
+      const reportMarkdownLow = generateBacktestReport(comparisonLow);
+      const reportFileNameMdLow = `backtest-client-${payload.clientId}-${lastOrder.name}-low.md`;
+      const reportPathMdLow = path.join(reportsOutputDir, reportFileNameMdLow);
+      await fs.writeFile(reportPathMdLow, reportMarkdownLow, "utf-8");
+      console.log(`   ✅ Markdown LOW report saved: ${reportFileNameMdLow}`);
 
-      const reportJSONNoLow = generateBacktestReportJSON(comparisonNoLow);
-      const reportFileNameJsonNoLow = `backtest-client-${payload.clientId}-${lastOrder.name}-no-low.json`;
-      const reportPathJsonNoLow = path.join(reportsOutputDir, reportFileNameJsonNoLow);
-      await fs.writeFile(reportPathJsonNoLow, JSON.stringify(reportJSONNoLow, null, 2), "utf-8");
-      console.log(`   ✅ JSON NO-LOW report saved: ${reportFileNameJsonNoLow}`);
+      const reportJSONLow = generateBacktestReportJSON(comparisonLow);
+      const reportFileNameJsonLow = `backtest-client-${payload.clientId}-${lastOrder.name}-low.json`;
+      const reportPathJsonLow = path.join(reportsOutputDir, reportFileNameJsonLow);
+      await fs.writeFile(reportPathJsonLow, JSON.stringify(reportJSONLow, null, 2), "utf-8");
+      console.log(`   ✅ JSON LOW report saved: ${reportFileNameJsonLow}`);
+
+      // Générer aussi le rapport ALL (legacy, pour comparaison)
+      const reportMarkdownAll = generateBacktestReport(comparison);
+      const reportFileNameMdAll = `backtest-client-${payload.clientId}-${lastOrder.name}-all.md`;
+      const reportPathMdAll = path.join(reportsOutputDir, reportFileNameMdAll);
+      await fs.writeFile(reportPathMdAll, reportMarkdownAll, "utf-8");
+      console.log(`   ✅ Markdown ALL report saved: ${reportFileNameMdAll}`);
 
       const executionTime = Date.now() - startTime;
       console.log(`✅ BACKTEST COMPLETED in ${(executionTime / 1000).toFixed(1)}s\n`);
@@ -266,31 +304,31 @@ export const backtestClientTask = task({
         orderDate: lastOrder.date_order,
         cutoffDate,
         comparison: {
-          truePositives: comparison.truePositives.length,
-          falsePositives: comparison.falsePositives.length,
-          falseNegatives: comparison.falseNegatives.length,
-          precision: comparison.productMetrics.precision,
-          recall: comparison.productMetrics.recall,
-          f1Score: comparison.productMetrics.f1Score,
-          mae: comparison.quantityMetrics.mae,
-          mape: comparison.quantityMetrics.mape,
+          truePositives: comparisonClean.truePositives.length,
+          falsePositives: comparisonClean.falsePositives.length,
+          falseNegatives: comparisonClean.falseNegatives.length,
+          precision: comparisonClean.productMetrics.precision,
+          recall: comparisonClean.productMetrics.recall,
+          f1Score: comparisonClean.productMetrics.f1Score,
+          mae: comparisonClean.quantityMetrics.mae,
+          mape: comparisonClean.quantityMetrics.mape,
         },
         comparisonNoLow: {
-          truePositives: comparisonNoLow.truePositives.length,
-          falsePositives: comparisonNoLow.falsePositives.length,
-          falseNegatives: comparisonNoLow.falseNegatives.length,
-          precision: comparisonNoLow.productMetrics.precision,
-          recall: comparisonNoLow.productMetrics.recall,
-          f1Score: comparisonNoLow.productMetrics.f1Score,
-          mae: comparisonNoLow.quantityMetrics.mae,
-          mape: comparisonNoLow.quantityMetrics.mape,
+          truePositives: comparisonLow.truePositives.length,
+          falsePositives: comparisonLow.falsePositives.length,
+          falseNegatives: comparisonLow.falseNegatives.length,
+          precision: comparisonLow.productMetrics.precision,
+          recall: comparisonLow.productMetrics.recall,
+          f1Score: comparisonLow.productMetrics.f1Score,
+          mae: comparisonLow.quantityMetrics.mae,
+          mape: comparisonLow.quantityMetrics.mape,
         },
         reportPath: reportPathMd,  // Legacy: keep markdown path for backward compatibility
         reportPaths: {
           markdown: reportPathMd,
           json: reportPathJson,
-          markdownNoLow: reportPathMdNoLow,
-          jsonNoLow: reportPathJsonNoLow,
+          markdownNoLow: reportPathMdLow,
+          jsonNoLow: reportPathJsonLow,
         },
         executionTime,
       };

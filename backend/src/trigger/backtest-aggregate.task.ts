@@ -156,6 +156,7 @@ export const backtestAggregateTask = task({
           if (run.ok) {
             // Succès: extraire les métriques
             const taskResult = run.output;
+            // SWAP: comparison = CLEAN (2+ commandes), comparisonNoLow = LOW (1 commande)
             allResults.push({
               clientId: taskResult.clientId,
               clientName: taskResult.clientName,
@@ -170,7 +171,7 @@ export const backtestAggregateTask = task({
               },
             });
 
-            // Collecter version NO-LOW si disponible
+            // Collecter version LOW (sparse data) si disponible
             if (taskResult.comparisonNoLow) {
               allResultsNoLow.push({
                 clientId: taskResult.clientId,
@@ -257,7 +258,7 @@ export const backtestAggregateTask = task({
 
     const timestamp = new Date().toISOString().split("T")[0];
 
-    // Données du rapport
+    // SWAP: Rapport PRINCIPAL = CLEAN (2+ commandes, données propres)
     const reportData: AggregateReportData = {
       executionDate: new Date().toISOString(),
       config: {
@@ -270,18 +271,18 @@ export const backtestAggregateTask = task({
       individualResults: allResults,
     };
 
-    // JSON brut (pour analyse programmatique)
+    // JSON CLEAN (pour analyse programmatique)
     const jsonPath = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}.json`);
     await fs.writeFile(jsonPath, JSON.stringify(reportData, null, 2), "utf-8");
-    console.log(`   ✅ JSON report saved: backtest-aggregate-${timestamp}.json`);
+    console.log(`   ✅ JSON CLEAN report saved: backtest-aggregate-${timestamp}.json`);
 
-    // Markdown (pour lecture humaine)
+    // Markdown CLEAN (pour lecture humaine)
     const markdownReport = generateAggregateMarkdownReport(reportData);
     const mdPath = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}.md`);
     await fs.writeFile(mdPath, markdownReport, "utf-8");
-    console.log(`   ✅ Markdown report saved: backtest-aggregate-${timestamp}.md`);
+    console.log(`   ✅ Markdown CLEAN report saved: backtest-aggregate-${timestamp}.md`);
 
-    // Générer rapports NO-LOW si on a des données
+    // SWAP: Rapport SECONDAIRE = LOW (1 commande, sparse data isolé)
     if (allResultsNoLow.length > 0) {
       const successfulResultsNoLow = allResultsNoLow.filter((r) => r.success && r.metrics);
 
@@ -301,18 +302,18 @@ export const backtestAggregateTask = task({
         individualResults: allResultsNoLow,
       };
 
-      // JSON NO-LOW
-      const jsonPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-no-low.json`);
+      // JSON LOW (sparse data)
+      const jsonPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-low.json`);
       await fs.writeFile(jsonPathNoLow, JSON.stringify(reportDataNoLow, null, 2), "utf-8");
-      console.log(`   ✅ JSON NO-LOW report saved: backtest-aggregate-${timestamp}-no-low.json`);
+      console.log(`   ✅ JSON LOW report saved: backtest-aggregate-${timestamp}-low.json`);
 
-      // Markdown NO-LOW
+      // Markdown LOW (sparse data)
       const markdownReportNoLow = generateAggregateMarkdownReport(reportDataNoLow);
-      const mdPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-no-low.md`);
+      const mdPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-low.md`);
       await fs.writeFile(mdPathNoLow, markdownReportNoLow, "utf-8");
-      console.log(`   ✅ Markdown NO-LOW report saved: backtest-aggregate-${timestamp}-no-low.md`);
+      console.log(`   ✅ Markdown LOW report saved: backtest-aggregate-${timestamp}-low.md`);
 
-      console.log(`   📊 NO-LOW: ${successfulResultsNoLow.length} clients analyzed`);
+      console.log(`   📊 LOW (sparse data): ${successfulResultsNoLow.length} clients analyzed`);
     }
 
     // ===== ÉTAPE 5: RÉSULTAT FINAL =====

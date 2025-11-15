@@ -1,0 +1,22 @@
+{
+  "clientId": 17819,
+  "clientName": "Tirtiaux Fruits srl",
+  "orderName": "S39691",
+  "orderDate": "2025-10-14 13:40:25",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 18,
+    "fn": 24,
+    "precision": 0.21739130434782608,
+    "recall": 0.1724137931034483,
+    "f1Score": 0.19230769230769232,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 0
+  }
+}

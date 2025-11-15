@@ -1,0 +1,22 @@
+{
+  "clientId": 113,
+  "clientName": "Le bon Wagon Eupen",
+  "orderName": "S39623",
+  "orderDate": "2025-10-08 10:15:32",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 5,
+    "fn": 15,
+    "precision": 0.2857142857142857,
+    "recall": 0.11764705882352941,
+    "f1Score": 0.16666666666666666,
+    "mae": 0.5,
+    "mape": 50
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  }
+}

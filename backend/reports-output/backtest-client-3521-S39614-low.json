@@ -1,0 +1,22 @@
+{
+  "clientId": 3521,
+  "clientName": "LA CAILLE DES FAGNES",
+  "orderName": "S39614",
+  "orderDate": "2025-10-08 14:19:11",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "clientId": 58284,
+  "clientName": "SPRL GOOD & FOOD",
+  "orderName": "S39546",
+  "orderDate": "2025-10-03 12:32:05",
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 203.66666666666666,
+    "mape": 171.71026392961878
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  }
+}

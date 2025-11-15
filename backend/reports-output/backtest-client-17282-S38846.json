@@ -1,0 +1,22 @@
+{
+  "clientId": 17282,
+  "clientName": "Hyper St Agathe Berchem",
+  "orderName": "S38846",
+  "orderDate": "2025-09-01 06:41:12",
+  "cutoffDate": "2025-08-31 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 15,
+    "fp": 0,
+    "fn": 7,
+    "precision": 1,
+    "recall": 0.6818181818181818,
+    "f1Score": 0.8108108108108109,
+    "mae": 0.8666666666666667,
+    "mape": 30.66666666666666
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 8
+  }
+}

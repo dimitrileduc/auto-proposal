@@ -1,0 +1,22 @@
+{
+  "clientId": 9952,
+  "clientName": "Chaman",
+  "orderName": "S39672",
+  "orderDate": "2025-10-15 04:58:48",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 9,
+    "fn": 16,
+    "precision": 0.3076923076923077,
+    "recall": 0.2,
+    "f1Score": 0.24242424242424246,
+    "mae": 0.25,
+    "mape": 25
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 1
+  }
+}

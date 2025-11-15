@@ -1,0 +1,22 @@
+{
+  "clientId": 3547,
+  "clientName": "K&F DE PAUW",
+  "orderName": "S39711",
+  "orderDate": "2025-10-14 07:25:09",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  }
+}

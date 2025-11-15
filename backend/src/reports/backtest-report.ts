@@ -39,6 +39,36 @@ export function filterLowConfidence(
 }
 
 /**
+ * Filtre pour garder UNIQUEMENT les produits avec low confidence (1 seule commande)
+ *
+ * @param comparison - Résultat complet de la comparaison système vs réalité
+ * @returns Nouvelle comparaison avec seulement les produits low confidence
+ */
+export function filterOnlyLowConfidence(
+  comparison: BacktestComparisonResult
+): BacktestComparisonResult {
+  // Filtrer les True Positives (garder seulement low)
+  const filteredTP = comparison.truePositives.filter(tp => tp.confidence === 'low');
+
+  // Recalculer métriques produit
+  const productMetrics = calculateProductMetrics(
+    filteredTP.length,
+    comparison.falsePositives.length,
+    comparison.falseNegatives.length
+  );
+
+  // Recalculer métriques quantité
+  const quantityMetrics = calculateQuantityMetrics(filteredTP);
+
+  return {
+    ...comparison,
+    truePositives: filteredTP,
+    productMetrics,
+    quantityMetrics,
+  };
+}
+
+/**
  * Génère un rapport markdown détaillé du backtest
  *
  * @param comparison - Résultat complet de la comparaison système vs réalité
