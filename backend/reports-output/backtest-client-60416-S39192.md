@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 55.6% | 18 produits prédits, 10 corrects |
-| **Rappel** | 76.9% | 13 produits réels, 10 détectés |
-| **F1-Score** | 64.5% | Score équilibré global |
+| **Précision** | 42.3% | 26 produits prédits, 11 corrects |
+| **Rappel** | 84.6% | 13 produits réels, 11 détectés |
+| **F1-Score** | 56.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.30 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 18.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
+| **MAE** | 0.27 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 8 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (10)
+## True Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -147,12 +147,13 @@
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV132] LV Tartinade Houmous type 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (8)
+## False Positives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,14 +178,21 @@
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: -0.4u (-10j restants) → prédit 1u mais non commandé |
 | [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock prédit: 0.3u (19j restants) → prédit 1u mais non commandé |
+| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.5u (-41j restants) → prédit 1u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: -0.5u (-41j restants) → prédit 1u mais non commandé |
+| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: -0.5u (-41j restants) → prédit 1u mais non commandé |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -206,9 +214,8 @@
 |---------|---------------|--------|
 | [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JOY05] Organic Cherry Jam 370g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:47.792Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:09.325Z*

@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DLL AD BATTICE
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 38785
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.0s
+**⏱️ Durée d'exécution:** 2.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 30**
-- Urgents (rupture ≤ 0j): 23
-- Modérés (0 < rupture ≤ 19j): 7
+**Produits à risque détectés: 28**
+- Urgents (rupture ≤ 0j): 18
+- Modérés (0 < rupture ≤ 19j): 10
 
-**Total produits (Phase 1): 30**
-**Quantité totale brute: 50 unités**
+**Total produits (Phase 1): 28**
+**Quantité totale brute: 46 unités**
 
 ### Détails par produit
 
@@ -332,12 +332,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
+<summary>🟡 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0143
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0127
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **9j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -345,12 +345,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-23 | S38197 | 1 | 19.50€ |
+| 2025-03-07 | S35264 | 2 | 19.50€ |
+| 2024-12-09 | S33713 | 1 | 19.50€ |
+| 2024-11-07 | S33169 | 1 | 19.50€ |
+| 2024-10-02 | S32563 | 1 | 19.50€ |
+| 2024-03-27 | S29527 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 1, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -381,12 +386,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
+<summary>🟡 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0143
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0127
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **9j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -394,12 +399,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-23 | S38197 | 1 | 25.80€ |
+| 2025-03-07 | S35264 | 2 | 25.80€ |
+| 2025-01-16 | S34251 | 1 | 25.80€ |
+| 2024-10-02 | S32563 | 2 | 25.80€ |
+| 2024-03-27 | S29527 | 1 | 25.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 1, 2, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -431,36 +440,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF025] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 16790) - 2 unités</summary>
+<summary>🟡 <strong>[JF026] JF VINAIGRET TRUFFES WECK 200M</strong> (ID: 16788) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0206
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-26 | S37693 | 2 | 27.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF026] JF VINAIGRET TRUFFES WECK 200M</strong> (ID: 16788) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0095
+- **Stock restant estimé**: 0.07
+- **Jours avant rupture**: **7j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -468,12 +453,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-26 | S37693 | 1 | 31.50€ |
+| 2025-01-16 | S34251 | 1 | 31.50€ |
+| 2024-10-02 | S32563 | 1 | 31.50€ |
+| 2024-08-08 | S31603 | 1 | 31.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -679,9 +667,9 @@
 <summary>🔴 <strong>[JF028] JF VINAIGRET CAESAR WECK 200ML</strong> (ID: 16785) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0071
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0082
+- **Stock restant estimé**: -0.15
+- **Jours avant rupture**: **-17j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -689,12 +677,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-14 | S36762 | 1 | 27.00€ |
+| 2024-11-07 | S33169 | 1 | 27.00€ |
+| 2024-08-08 | S31603 | 1 | 27.00€ |
+| 2024-05-30 | S30552 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -703,9 +694,9 @@
 <summary>🔴 <strong>[JF024] JF VINAIGRET CIBOULE WECK 200M</strong> (ID: 16786) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0071
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0119
+- **Stock restant estimé**: -0.67
+- **Jours avant rupture**: **-56j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -713,37 +704,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-14 | S36762 | 1 | 27.00€ |
+| 2025-03-07 | S35264 | 1 | 27.00€ |
+| 2024-12-09 | S33713 | 1 | 27.00€ |
+| 2024-10-02 | S32563 | 1 | 27.00€ |
+| 2024-08-08 | S31603 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> (ID: 16777) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0143
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-14 | S36762 | 2 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -779,7 +750,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 964.18€**
+- **Montant initial: 871.18€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -804,7 +775,6 @@
 | [JF004] JF MAYONNAIS POIVRE... | 16746 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF014] JF SAUCE BEARNAISE ... | 16769 | 1 | 0 | 1 | 25.80€ | 25.80€ |
 | [JF057] JF EGG MAYONNAISE 7... | 19366 | 1 | 0 | 1 | 27.78€ | 27.78€ |
-| [JF025] JF VINAIGRETTE FH W... | 16790 | 2 | 0 | 2 | 27.00€ | 54.00€ |
 | [JF026] JF VINAIGRET TRUFFE... | 16788 | 1 | 0 | 1 | 31.50€ | 31.50€ |
 | [JF011] JF SAUCE TARTARE 47... | 16782 | 1 | 0 | 1 | 25.80€ | 25.80€ |
 | [TVF005] TVF TARTINADE BIO ... | 16824 | 2 | 0 | 2 | 10.80€ | 21.60€ |
@@ -816,9 +786,8 @@
 | [LD014] LD Organic Avocado ... | 19434 | 1 | 0 | 1 | 14.50€ | 14.50€ |
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF024] JF VINAIGRET CIBOUL... | 16786 | 1 | 0 | 1 | 27.00€ | 27.00€ |
-| [JF007] JF SAUCE MAYO TOMAT... | 16777 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [TVF002] TVF TARTINADE BIO ... | 16830 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 
-**Total (Phase 2.5): 964.18€**
+**Total (Phase 2.5): 871.18€**
 
 ---

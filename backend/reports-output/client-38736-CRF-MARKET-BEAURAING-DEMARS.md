@@ -1,48 +1,24 @@
 # 📊 Rapport Auto-Proposal - CRF MARKET BEAURAING DEMARS
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 38736
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.0s
+**⏱️ Durée d'exécution:** 3.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 27**
-- Urgents (rupture ≤ 0j): 20
+**Produits à risque détectés: 20**
+- Urgents (rupture ≤ 0j): 13
 - Modérés (0 < rupture ≤ 19j): 7
 
-**Total produits (Phase 1): 27**
-**Quantité totale brute: 50 unités**
+**Total produits (Phase 1): 20**
+**Quantité totale brute: 40 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[JF020] JF SAUCE AIOLI 250ML WECK</strong> (ID: 16761) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0741
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-09 | S39099 | 2 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
 
 <details>
 <summary>🔴 <strong>[JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> (ID: 16763) - 2 unités</summary>
@@ -67,30 +43,6 @@
 - **Quantités historiques**: [2, 1, 2]
 - **Nombre commandes**: 3
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF024] JF VINAIGRET CIBOULE WECK 200M</strong> (ID: 16786) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0370
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-09 | S39099 | 1 | 27.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -305,30 +257,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF018] JF SAUCE SAMOURAI 250ML WECK</strong> (ID: 16778) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0179
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-11 | S38465 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -351,54 +279,6 @@
 - **Quantités historiques**: [1, 1, 1]
 - **Nombre commandes**: 3
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> (ID: 16753) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0357
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-11 | S38309 | 2 | 26.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 16738) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0357
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-11 | S38309 | 2 | 30.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -506,36 +386,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
+<summary>🔴 <strong>[JF032] JF SAUCE LAPIN 380GX6</strong> (ID: 16774) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0097
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-25 | S37626 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF032] JF SAUCE LAPIN 380GX6</strong> (ID: 16774) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0097
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0171
+- **Stock restant estimé**: -0.76
+- **Jours avant rupture**: **-44j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -543,36 +399,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-25 | S37626 | 1 | 13.50€ |
+| 2025-02-17 | S34904 | 1 | 13.50€ |
+| 2024-10-21 | S32799 | 2 | 13.50€ |
+| 2024-06-24 | S30942 | 4 | 13.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF031] JF SAUCE LIEGEOISE 380GX6</strong> (ID: 16776) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0194
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-25 | S37626 | 2 | 13.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 2, 4]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 2
 
 </details>
@@ -656,9 +491,9 @@
 <summary>🔴 <strong>[TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> (ID: 16825) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0160
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0324
+- **Stock restant estimé**: -2.06
+- **Jours avant rupture**: **-63j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -666,36 +501,44 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-03 | S37177 | 2 | 10.80€ |
+| 2025-01-06 | S34131 | 3 | 10.80€ |
+| 2024-12-03 | S33617 | 3 | 10.80€ |
+| 2024-09-24 | S32395 | 2 | 10.80€ |
+| 2024-08-22 | S31776 | 1 | 10.80€ |
+| 2024-06-24 | S30942 | 4 | 10.80€ |
+| 2024-04-30 | S30004 | 2 | 10.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 3, 3, 2, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> (ID: 16736) - 1 unités</summary>
+<summary>🔴 <strong>[JF034] JF SAMOURAI SQUEEZE 300ML</strong> (ID: 16760) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0068
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0041
+- **Stock restant estimé**: -0.72
+- **Jours avant rupture**: **-174j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
 
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
-| 2025-05-12 | S36629 | 1 | 26.40€ |
+| 2025-04-15 | S36190 | 0 | 26.40€ |
+| 2024-12-03 | S33617 | 1 | 26.40€ |
+| 2024-06-10 | S30700 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [0, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -708,7 +551,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 824.90€**
+- **Montant initial: 593.60€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -717,9 +560,7 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [JF020] JF SAUCE AIOLI 250M... | 16761 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF015] JF SAUCE ANDALOUSE ... | 16763 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF024] JF VINAIGRET CIBOUL... | 16786 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [LD013] LD Tuscan Organic S... | 19398 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [TVF006] TVF TARTINADE BIO ... | 16833 | 3 | 0 | 3 | 10.80€ | 32.40€ |
 | [TVF005] TVF TARTINADE BIO ... | 16824 | 3 | 0 | 3 | 10.80€ | 32.40€ |
@@ -728,23 +569,18 @@
 | [LD014] LD Organic Avocado ... | 19434 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [TVF009] TVF TARTINADE BIO ... | 16832 | 3 | 0 | 3 | 10.80€ | 32.40€ |
 | [JF037] JF BBQ SQUEEZE 300ML | 16729 | 1 | 0 | 1 | 26.40€ | 26.40€ |
-| [JF018] JF SAUCE SAMOURAI 2... | 16778 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF014] JF SAUCE BEARNAISE ... | 16769 | 1 | 0 | 1 | 25.80€ | 25.80€ |
-| [JF036] JF MITRAILLETTE SQU... | 16753 | 2 | 0 | 2 | 26.40€ | 52.80€ |
-| [JF039] JF MAYO BARAKI SQUE... | 16738 | 2 | 0 | 2 | 30.00€ | 60.00€ |
 | [JF005] JF MAYONNAISE OEUFS... | 16749 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [TVF003] TVF TARTINADE BIO ... | 16826 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 | [JF011] JF SAUCE TARTARE 47... | 16782 | 1 | 0 | 1 | 25.80€ | 25.80€ |
 | [JF008] JF MAYONNA DU CHEF ... | 16743 | 1 | 0 | 1 | 25.80€ | 25.80€ |
-| [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF032] JF SAUCE LAPIN 380GX6 | 16774 | 1 | 0 | 1 | 13.50€ | 13.50€ |
-| [JF031] JF SAUCE LIEGEOISE ... | 16776 | 2 | 0 | 2 | 13.50€ | 27.00€ |
+| [JF032] JF SAUCE LAPIN 380GX6 | 16774 | 2 | 0 | 2 | 13.50€ | 27.00€ |
 | [LD010] LD Organic Truffle ... | 19395 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 | [LD015] LD Onion Spread 180g | 19435 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [TVF001] TVF TARTINADE BIO ... | 16827 | 3 | 0 | 3 | 10.80€ | 32.40€ |
 | [TVF008] TVF TARTINADE BIO ... | 16825 | 2 | 0 | 2 | 10.80€ | 21.60€ |
-| [JF040] JF CURRY KETCHUP SQ... | 16736 | 1 | 0 | 1 | 26.40€ | 26.40€ |
+| [JF034] JF SAMOURAI SQUEEZE... | 16760 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 
-**Total (Phase 2.5): 824.90€**
+**Total (Phase 2.5): 593.60€**
 
 ---

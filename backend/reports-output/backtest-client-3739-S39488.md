@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
+| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 100.0% | Score équilibré global |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,7 +158,13 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF0088] FILOU VOL AU VENT 800 GR | 3 | Stock prédit: 0.1u (6j restants) → prédit 3u mais non commandé |
+
 
 ---
 
@@ -181,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:04.170Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:28.497Z*

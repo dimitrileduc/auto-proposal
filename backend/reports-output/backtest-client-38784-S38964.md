@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 52.2% | 23 produits prédits, 12 corrects |
+| **Précision** | 48.0% | 25 produits prédits, 12 corrects |
 | **Rappel** | 66.7% | 18 produits réels, 12 détectés |
-| **F1-Score** | 58.5% | Score équilibré global |
+| **F1-Score** | 55.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -154,7 +154,7 @@
 
 ---
 
-## False Positives (11)
+## False Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -185,6 +185,8 @@
 | [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: -0.3u (-15j restants) → prédit 1u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: -0.3u (-15j restants) → prédit 1u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.2u (-17j restants) → prédit 1u mais non commandé |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: -0.4u (-34j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -210,13 +212,13 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock suffisant: 0.2u (34j restants > seuil 19j) |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 0.2u (34j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:27.796Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:00.526Z*

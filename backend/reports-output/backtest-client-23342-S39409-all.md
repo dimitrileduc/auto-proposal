@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 4.4% | 45 produits prédits, 2 corrects |
+| **Précision** | 4.8% | 42 produits prédits, 2 corrects |
 | **Rappel** | 20.0% | 10 produits réels, 2 détectés |
-| **F1-Score** | 7.3% | Score équilibré global |
+| **F1-Score** | 7.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (43)
+## False Positives (40)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,7 +169,6 @@
 | [LV133] LV Tartinade Ananas Coco 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | Stock prédit: 1.2u (14j restants) → prédit 3u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: 0.3u (4j restants) → prédit 2u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
@@ -182,12 +181,11 @@
 | [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | Stock prédit: -1.8u (-53j restants) → prédit 2u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: -1.7u (-38j restants) → prédit 1u mais non commandé |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock prédit: -1.5u (-50j restants) → prédit 2u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock prédit: -2.1u (-42j restants) → prédit 2u mais non commandé |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock prédit: 0.1u (4j restants) → prédit 2u mais non commandé |
-| [LV135] LV Tartinade Basilico 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV135] LV Tartinade Basilico 190g | 3 | Stock prédit: -1.3u (-32j restants) → prédit 3u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB010] CB Jus de Pomme cubis 3l | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [CB010] CB Jus de Pomme cubis 3l | 2 | Stock prédit: 0.2u (6j restants) → prédit 2u mais non commandé |
 | [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: -1.0u (-49j restants) → prédit 1u mais non commandé |
@@ -195,17 +193,16 @@
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: -2.7u (-71j restants) → prédit 2u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | Stock prédit: -2.7u (-71j restants) → prédit 2u mais non commandé |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Stock prédit: -1.1u (-40j restants) → prédit 2u mais non commandé |
-| [CB005] CB Apple juice 1l | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [CB005] CB Apple juice 1l | 1 | Stock prédit: -0.4u (-30j restants) → prédit 1u mais non commandé |
 | [LV189] LV Tartinade Houmous Type 380g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV187] LV Tartinade Mangue Curry 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [RIT08] RITCHIE Citron - canette 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 2 | Stock prédit: -2.2u (-74j restants) → prédit 2u mais non commandé |
+| [RIT08] RITCHIE Citron - canette 330ml | 2 | Stock prédit: -0.6u (-39j restants) → prédit 2u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | Stock prédit: -2.5u (-99j restants) → prédit 2u mais non commandé |
+| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: -2.4u (-126j restants) → prédit 1u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock prédit: -0.7u (-74j restants) → prédit 1u mais non commandé |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -243,4 +240,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:13.646Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:16.869Z*

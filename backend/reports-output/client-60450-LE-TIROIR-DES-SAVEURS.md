@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - LE TIROIR DES SAVEURS
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 60450
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 1.9s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 16**
-- Urgents (rupture ≤ 0j): 16
+**Produits à risque détectés: 14**
+- Urgents (rupture ≤ 0j): 14
 - Modérés (0 < rupture ≤ 19j): 0
 
-**Total produits (Phase 1): 16**
-**Quantité totale brute: 90 unités**
+**Total produits (Phase 1): 14**
+**Quantité totale brute: 74 unités**
 
 ### Détails par produit
 
@@ -71,54 +71,6 @@
 - **Quantités historiques**: [10, 8, 8, 6]
 - **Nombre commandes**: 4
 - **Valeur médiane**: 8
-
-</details>
-
-<details>
-<summary>🔴 <strong>[KOKO01] KOKO Kombucha original 330ml</strong> (ID: 18289) - 10 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1639
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-26 | S37694 | 10 | 23.88€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [10]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 10
-
-</details>
-
-<details>
-<summary>🔴 <strong>[RISH04] RISH kombucha BIO - smash basil 330ml</strong> (ID: 18361) - 5 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0820
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-26 | S37694 | 5 | 25.08€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [5]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 5
 
 </details>
 
@@ -375,12 +327,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> (ID: 18279) - 5 unités</summary>
+<summary>🔴 <strong>[UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> (ID: 18279) - 4 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0278
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0367
+- **Stock restant estimé**: -1.61
+- **Jours avant rupture**: **-43j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -388,13 +340,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-02-27 | S35107 | 5 | 17.88€ |
+| 2025-01-20 | S34218 | 3 | 17.88€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [5]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 5
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [5, 3]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 4
 
 </details>
 
@@ -430,7 +383,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1916.26€**
+- **Montant initial: 1534.18€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -441,8 +394,6 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [KOKO02] KOKO Kombucha Lemo... | 18287 | 8 | 0 | 8 | 23.88€ | 191.04€ |
 | [KOKO03] KOKO Kombucha Rasp... | 18288 | 8 | 0 | 8 | 23.88€ | 191.04€ |
-| [KOKO01] KOKO Kombucha orig... | 18289 | 10 | 0 | 10 | 23.88€ | 238.80€ |
-| [RISH04] RISH kombucha BIO ... | 18361 | 5 | 0 | 5 | 25.08€ | 125.40€ |
 | [UPI07] Jus de pomme-frambo... | 18282 | 7 | 0 | 7 | 17.88€ | 125.16€ |
 | [UPI02] Jus de pomme-fraise... | 18281 | 7 | 0 | 7 | 17.88€ | 125.16€ |
 | [REB02] ReBEL chips premium... | 18349 | 6 | 0 | 6 | 18.80€ | 112.80€ |
@@ -453,9 +404,9 @@
 | [REB08] ReBEL chips premium... | 18351 | 4 | 0 | 4 | 18.80€ | 75.20€ |
 | [WIG01] WIGNAC cidre nature... | 18381 | 4 | 0 | 4 | 25.80€ | 103.20€ |
 | [WIG06] WIGNAC cidre nature... | 18383 | 4 | 0 | 4 | 22.20€ | 88.80€ |
-| [UPI04] Jus de pomme-cerise... | 18279 | 5 | 0 | 5 | 17.88€ | 89.40€ |
+| [UPI04] Jus de pomme-cerise... | 18279 | 4 | 0 | 4 | 17.88€ | 71.52€ |
 | [UPI05] Jus de pomme-gingem... | 18283 | 2 | 0 | 2 | 17.88€ | 35.76€ |
 
-**Total (Phase 2.5): 1916.26€**
+**Total (Phase 2.5): 1534.18€**
 
 ---

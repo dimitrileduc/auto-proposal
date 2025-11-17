@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
+| **Précision** | 25.0% | 4 produits prédits, 1 corrects |
 | **Rappel** | 50.0% | 2 produits réels, 1 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **F1-Score** | 33.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,6 +164,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 20 | Stock prédit: 2.4u (4j restants) → prédit 20u mais non commandé |
+| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 12 | Stock prédit: 2.7u (16j restants) → prédit 12u mais non commandé |
 | [PF3284] LD MOUTARDE DOUCE 250ML WECK | 10 | Stock prédit: 1.0u (3j restants) → prédit 10u mais non commandé |
 
 
@@ -194,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:00.970Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:26.704Z*

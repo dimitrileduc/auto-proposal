@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.0% | 10 produits prédits, 3 corrects |
-| **Rappel** | 7.1% | 42 produits réels, 3 détectés |
-| **F1-Score** | 11.5% | Score équilibré global |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 42 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,19 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [MF0021] MF Sauce BBQ 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (7)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,17 +158,11 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF049] JF DISPLAY SAUCES Squeeze | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0051] MF Kidney Beans 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (39)
+## False Negatives (42)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -229,7 +215,10 @@
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 0.5u (6j restants > seuil 19j) |
 | [JF029] JF VOL AU VENT BOCAL 400G | 2 | Stock suffisant: 2.1u (54j restants > seuil 19j) |
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock suffisant: -0.6u (-49j restants > seuil 19j) |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock suffisant: -1.3u (-86j restants > seuil 19j) |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock suffisant: -0.7u (-63j restants > seuil 19j) |
 | [MF0053] MF Maïs 500g | 1 | Stock suffisant: 0.2u (3j restants > seuil 19j) |
+| [MF0021] MF Sauce BBQ 250ml | 1 | Stock suffisant: 0.1u (8j restants > seuil 19j) |
 | [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock suffisant: 0.4u (11j restants > seuil 19j) |
 | [MF0031] MF Tarti Olives verte 250g  | 1 | Stock suffisant: 0.5u (16j restants > seuil 19j) |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock suffisant: -0.7u (-7j restants > seuil 19j) |
@@ -239,4 +228,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:31.896Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:37.620Z*

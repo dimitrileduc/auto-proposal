@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 21.6% | 37 produits prédits, 8 corrects |
+| **Précision** | 22.2% | 36 produits prédits, 8 corrects |
 | **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 33.3% | Score équilibré global |
+| **F1-Score** | 34.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (29)
+## False Positives (28)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,7 +174,6 @@
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.8u (-8j restants) → prédit 2u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -190,7 +189,7 @@
 | [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
 | [LEA05] LEAMO organic lemon lemonade 330 ml | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.4u (-32j restants) → prédit 1u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -230,4 +229,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:55.664Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:01.633Z*

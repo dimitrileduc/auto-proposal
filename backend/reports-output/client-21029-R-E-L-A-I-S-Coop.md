@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - R.E.L.A.I.S.Coop
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 21029
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 997ms
+**⏱️ Durée d'exécution:** 4.0s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 44**
-- Urgents (rupture ≤ 0j): 41
+**Produits à risque détectés: 42**
+- Urgents (rupture ≤ 0j): 39
 - Modérés (0 < rupture ≤ 19j): 3
 
-**Total produits (Phase 1): 44**
-**Quantité totale brute: 81 unités**
+**Total produits (Phase 1): 42**
+**Quantité totale brute: 78 unités**
 
 ### Détails par produit
 
@@ -152,30 +152,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV156] LV Sauce barbecue 263 ml bio</strong> (ID: 13053) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0333
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-07 | S38406 | 2 | 26.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🟡 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -198,30 +174,6 @@
 - **Quantités historiques**: [2, 2, 1]
 - **Nombre commandes**: 3
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV159] LV Tartinade aux Truffes  135g </strong> (ID: 13057) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0167
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-07 | S38406 | 1 | 18.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -1051,9 +1003,9 @@
 <summary>🔴 <strong>[MF0051] MF Kidney Beans 500g</strong> (ID: 16949) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0138
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0150
+- **Stock restant estimé**: -0.17
+- **Jours avant rupture**: **-11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1061,12 +1013,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-14 | S36779 | 2 | 12.00€ |
+| 2025-03-20 | S35466 | 1 | 12.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -1100,9 +1053,9 @@
 <summary>🔴 <strong>[LV336] LV BIO Tartinade Tomato Basilico 380g</strong> (ID: 14453) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0152
+- **Stock restant estimé**: -1.21
+- **Jours avant rupture**: **-79j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1110,12 +1063,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-14 | S36779 | 1 | 25.09€ |
+| 2025-03-20 | S35466 | 1 | 25.09€ |
+| 2025-01-30 | S34595 | 1 | 25.09€ |
+| 2024-09-18 | S32294 | 2 | 24.36€ |
+| 2024-07-03 | S31114 | 2 | 24.36€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 2]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1152,7 +1109,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1482.26€**
+- **Montant initial: 1410.46€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1166,9 +1123,7 @@
 | [LV146] LV Sauce Aïoli 200 ml | 13044 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [LV147] LV Sauce Cocktail 2... | 13045 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [LV149] LV Sauce Aioli Pest... | 13048 | 2 | 0 | 2 | 14.69€ | 29.38€ |
-| [LV156] LV Sauce barbecue 2... | 13053 | 2 | 0 | 2 | 26.60€ | 53.20€ |
 | [LV157] LV Ketchup aux toma... | 13054 | 2 | 0 | 2 | 24.15€ | 48.30€ |
-| [LV159] LV Tartinade aux Tr... | 13057 | 1 | 0 | 1 | 18.60€ | 18.60€ |
 | [LV160] LV Tartinade Auberg... | 13058 | 3 | 0 | 3 | 12.79€ | 38.37€ |
 | [LV129] LV Tartinade Carott... | 13059 | 3 | 0 | 3 | 13.04€ | 39.12€ |
 | [LV161] LV Tartinade Mangue... | 13060 | 3 | 0 | 3 | 13.10€ | 39.30€ |
@@ -1206,6 +1161,6 @@
 | [LV336] LV BIO Tartinade To... | 14453 | 1 | 0 | 1 | 25.09€ | 25.09€ |
 | [fsv17] Mélange de noix bio... | 18301 | 1 | 0 | 1 | 39.69€ | 39.69€ |
 
-**Total (Phase 2.5): 1482.26€**
+**Total (Phase 2.5): 1410.46€**
 
 ---

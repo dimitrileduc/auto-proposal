@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 20.0% | 10 produits prédits, 2 corrects |
-| **Rappel** | 18.2% | 11 produits réels, 2 détectés |
-| **F1-Score** | 19.0% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,18 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (8)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,24 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (9)
+## False Negatives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -197,9 +177,11 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.3u (47j restants > seuil 19j) |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock suffisant: -0.4u (-29j restants > seuil 19j) |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock suffisant: -0.3u (-14j restants > seuil 19j) |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock suffisant: -0.8u (-29j restants > seuil 19j) |
+| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: -0.8u (-44j restants > seuil 19j) |
 | [LD013] LD Tuscan Organic Spread 180 g | 1 | Stock suffisant: 0.5u (9j restants > seuil 19j) |
 | [LD010] LD Organic Truffle Spread 135 g | 1 | Stock suffisant: -0.6u (-27j restants > seuil 19j) |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 6 | Stock suffisant: -1.1u (-27j restants > seuil 19j) |
@@ -209,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:01.845Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:06.591Z*

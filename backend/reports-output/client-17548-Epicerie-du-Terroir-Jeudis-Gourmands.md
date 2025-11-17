@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Epicerie du Terroir Jeudis Gourmands
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 17548
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 3.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 14**
-- Urgents (rupture ≤ 0j): 11
-- Modérés (0 < rupture ≤ 19j): 3
+**Produits à risque détectés: 13**
+- Urgents (rupture ≤ 0j): 9
+- Modérés (0 < rupture ≤ 19j): 4
 
-**Total produits (Phase 1): 14**
-**Quantité totale brute: 18 unités**
+**Total produits (Phase 1): 13**
+**Quantité totale brute: 17 unités**
 
 ### Détails par produit
 
@@ -146,12 +146,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV131] LV Tartinade Potiron 190g</strong> (ID: 13062) - 1 unités</summary>
+<summary>🟡 <strong>[LV131] LV Tartinade Potiron 190g</strong> (ID: 13062) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0123
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0119
+- **Stock restant estimé**: 0.04
+- **Jours avant rupture**: **3j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -159,12 +159,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-22 | S38151 | 1 | 13.10€ |
+| 2024-11-26 | S33496 | 2 | 12.72€ |
+| 2024-10-03 | S32568 | 1 | 12.72€ |
+| 2024-05-28 | S30469 | 1 | 12.72€ |
+| 2023-12-07 | S28047 | 3 | 12.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 1, 1, 3]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -221,9 +225,9 @@
 <summary>🔴 <strong>[LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> (ID: 13097) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0074
+- **Stock restant estimé**: -0.07
+- **Jours avant rupture**: **-9j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -231,36 +235,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-20 | S36929 | 1 | 29.45€ |
+| 2025-02-04 | S34647 | 1 | 29.45€ |
+| 2024-11-26 | S33496 | 1 | 29.16€ |
+| 2024-05-28 | S30469 | 1 | 29.16€ |
+| 2023-12-07 | S28047 | 1 | 29.16€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-17 | S36152 | 1 | 23.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -269,9 +253,9 @@
 <summary>🔴 <strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> (ID: 18349) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0080
+- **Stock restant estimé**: -0.42
+- **Jours avant rupture**: **-52j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -279,12 +263,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-17 | S36152 | 1 | 17.70€ |
+| 2025-02-04 | S34647 | 1 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -317,9 +302,9 @@
 <summary>🔴 <strong>[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> (ID: 18323) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0080
+- **Stock restant estimé**: -0.42
+- **Jours avant rupture**: **-52j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -327,12 +312,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-17 | S36152 | 1 | 17.55€ |
+| 2025-02-04 | S34647 | 1 | 17.55€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -369,7 +355,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 353.38€**
+- **Montant initial: 330.34€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -387,12 +373,11 @@
 | [RIT01] RITCHIE Orange - ve... | 18371 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [LV003] LV Pizza Croccantin... | 13097 | 1 | 0 | 1 | 29.45€ | 29.45€ |
-| [MF0050] MF Cornichons aigr... | 16936 | 1 | 0 | 1 | 23.04€ | 23.04€ |
 | [REB02] ReBEL chips premium... | 18349 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [REB05] REB chips bio - sel... | 18416 | 1 | 0 | 1 | 17.60€ | 17.60€ |
 | [NUT07] NUTS & BERRIES Bar ... | 18323 | 1 | 0 | 1 | 17.55€ | 17.55€ |
 | [LV136] LV Tartinade Better... | 13068 | 2 | 0 | 2 | 13.10€ | 26.20€ |
 
-**Total (Phase 2.5): 353.38€**
+**Total (Phase 2.5): 330.34€**
 
 ---

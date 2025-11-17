@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 10 produits prédits, 5 corrects |
-| **Rappel** | 29.4% | 17 produits réels, 5 détectés |
-| **F1-Score** | 37.0% | Score équilibré global |
+| **Précision** | 40.0% | 15 produits prédits, 6 corrects |
+| **Rappel** | 35.3% | 17 produits réels, 6 détectés |
+| **F1-Score** | 37.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| Exact Match (=0u) | 6 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -143,11 +143,12 @@
 | [JF029] JF VOL AU VENT BOCAL 400G | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (5)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,11 +173,15 @@
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 3 | Stock prédit: 0.9u (15j restants) → prédit 3u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | Stock prédit: -0.3u (-6j restants) → prédit 2u mais non commandé |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.1u (15j restants) → prédit 1u mais non commandé |
+| [TVF016] TVF TARTINADE BIO POIS CHICHES 380G | 2 | Stock prédit: -0.6u (-59j restants) → prédit 2u mais non commandé |
+| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 2 | Stock prédit: -0.6u (-59j restants) → prédit 2u mais non commandé |
+| [TVF017] TVF TARTINADE BIO TOMATE 380G | 2 | Stock prédit: -1.7u (-98j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (12)
+## False Negatives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -196,11 +201,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 0.8u (52j restants > seuil 19j) |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: 0.5u (20j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock suffisant: 0.6u (33j restants > seuil 19j) |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock suffisant: 1.3u (38j restants > seuil 19j) |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: 0.6u (24j restants > seuil 19j) |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 3 | Stock suffisant: 2.3u (25j restants > seuil 19j) |
@@ -212,4 +216,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:28.401Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:02.526Z*

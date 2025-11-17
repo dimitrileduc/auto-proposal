@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 15.8% | 57 produits prédits, 9 corrects |
+| **Précision** | 17.3% | 52 produits prédits, 9 corrects |
 | **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 26.5% | Score équilibré global |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (48)
+## False Positives (43)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,14 +172,11 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: 0.5u (17j restants) → prédit 1u mais non commandé |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: 0.3u (9j restants) → prédit 1u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
-| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.5u (-13j restants) → prédit 1u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
@@ -203,7 +200,6 @@
 | [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
 | [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 1 | Stock prédit: -0.7u (-31j restants) → prédit 1u mais non commandé |
 | [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV036] LV Olives Vertes dénoyautées BE 350g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
@@ -213,11 +209,10 @@
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | Stock prédit: -0.7u (-51j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (4j restants) → prédit 1u mais non commandé |
+| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.0u (4j restants) → prédit 1u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -249,4 +244,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:50.849Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:55.782Z*

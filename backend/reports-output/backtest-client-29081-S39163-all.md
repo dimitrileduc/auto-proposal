@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 31.3% | 64 produits prédits, 20 corrects |
-| **Rappel** | 69.0% | 29 produits réels, 20 détectés |
-| **F1-Score** | 43.0% | Score équilibré global |
+| **Précision** | 42.2% | 45 produits prédits, 19 corrects |
+| **Rappel** | 65.5% | 29 produits réels, 19 détectés |
+| **F1-Score** | 51.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 17.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 15 | Égalité parfaite |
+| **MAE** | 0.26 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 18.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 14 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (20)
+## True Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -151,7 +151,6 @@
 | [LD013] LD Tuscan Organic Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0030] MF Tarti Mangue Curry 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0013] MF Olives Vertes 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0032] MF Tarti Pois chiches 250 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -162,7 +161,7 @@
 
 ---
 
-## False Positives (44)
+## False Positives (26)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -182,26 +181,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
-| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 1 | Stock prédit: -0.2u (-5j restants) → prédit 1u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | Stock prédit: -0.4u (-9j restants) → prédit 1u mais non commandé |
 | [LD014] LD Organic Avocado Spread 180 g | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [CB005] CB Apple juice 1l | 2 | Stock prédit: -0.7u (-14j restants) → prédit 2u mais non commandé |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.4u (-14j restants) → prédit 1u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: -0.4u (-14j restants) → prédit 1u mais non commandé |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [LD015] LD Onion Spread 180g | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
@@ -212,25 +201,17 @@
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: -0.6u (-22j restants) → prédit 1u mais non commandé |
 | [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.5u (-18j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB006] CB Blackcurrant Apple juice 1l | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.4u (-26j restants) → prédit 1u mais non commandé |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [CB010] CB Jus de Pomme cubis 3l | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: -0.3u (-29j restants) → prédit 1u mais non commandé |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0029] MF Tarti Datte chili 250g | 2 | Stock prédit: -1.4u (-46j restants) → prédit 2u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: -0.1u (-18j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -257,10 +238,11 @@
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.3u (29j restants > seuil 19j) |
 | [MF0059] MF Confi Fraise- Ardbei | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [MF0027] MF Tarti Aubergine 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock suffisant: 0.7u (108j restants > seuil 19j) |
 | [VID0009] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 36 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:54.704Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:00.068Z*

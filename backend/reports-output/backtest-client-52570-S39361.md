@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 47.1% | 17 produits prédits, 8 corrects |
+| **Précision** | 40.0% | 20 produits prédits, 8 corrects |
 | **Rappel** | 88.9% | 9 produits réels, 8 détectés |
-| **F1-Score** | 61.5% | Score équilibré global |
+| **F1-Score** | 55.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -179,6 +179,9 @@
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
 | [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 3 | Stock prédit: -0.6u (-10j restants) → prédit 3u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -0.6u (-35j restants) → prédit 2u mais non commandé |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: -0.7u (-66j restants) → prédit 1u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: -0.7u (-66j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -208,4 +211,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:06.132Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:08.068Z*

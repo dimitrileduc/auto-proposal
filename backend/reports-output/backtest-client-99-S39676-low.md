@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 21.1% | 19 produits prédits, 4 corrects |
-| **Rappel** | 30.8% | 13 produits réels, 4 détectés |
-| **F1-Score** | 25.0% | Score équilibré global |
+| **Précision** | 42.9% | 7 produits prédits, 3 corrects |
+| **Rappel** | 23.1% | 13 produits réels, 3 détectés |
+| **F1-Score** | 30.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
+| Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,7 +138,6 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -146,7 +145,7 @@
 
 ---
 
-## False Positives (15)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,26 +165,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA10] LEAMO ginger beer bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB005] CB Apple juice 1l | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB010] CB Jus de Pomme cubis 3l | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0014] MF Olives noires 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA04] LEAMO ginger beer bio 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -207,6 +195,7 @@
 |---------|---------------|--------|
 | [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 1.0u (40j restants > seuil 19j) |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock suffisant: -0.5u (-29j restants > seuil 19j) |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock suffisant: -0.1u (-7j restants > seuil 19j) |
 | [MF0053] MF Maïs 500g | 1 | Stock suffisant: -1.3u (-48j restants > seuil 19j) |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: 0.5u (7j restants > seuil 19j) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.9u (19j restants > seuil 19j) |
@@ -218,4 +207,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:38.365Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:32.034Z*

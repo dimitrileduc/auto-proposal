@@ -1,48 +1,24 @@
 # 📊 Rapport Auto-Proposal - Au gré du vent
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 71559
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.0s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 28**
-- Urgents (rupture ≤ 0j): 26
+**Produits à risque détectés: 25**
+- Urgents (rupture ≤ 0j): 23
 - Modérés (0 < rupture ≤ 19j): 2
 
-**Total produits (Phase 1): 28**
-**Quantité totale brute: 51 unités**
+**Total produits (Phase 1): 25**
+**Quantité totale brute: 42 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> (ID: 18353) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0488
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-19 | S38566 | 2 | 17.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
 
 <details>
 <summary>🔴 <strong>[LV002] LV Pizza Croccantina au romarin 150 g bio</strong> (ID: 13096) - 2 unités</summary>
@@ -58,30 +34,6 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-19 | S38566 | 2 | 27.03€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV134] LV BIO Tartinade Olives Vertes 190g</strong> (ID: 13066) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0488
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-19 | S38566 | 2 | 14.15€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
@@ -146,9 +98,9 @@
 <summary>🔴 <strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> (ID: 18349) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0196
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0290
+- **Stock restant estimé**: -0.96
+- **Jours avant rupture**: **-33j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -156,12 +108,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-19 | S37491 | 2 | 17.70€ |
+| 2025-03-26 | S35624 | 3 | 17.70€ |
+| 2025-03-06 | S35229 | 1 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 3, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -170,9 +124,9 @@
 <summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0196
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0290
+- **Stock restant estimé**: -0.96
+- **Jours avant rupture**: **-33j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -180,12 +134,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-19 | S37491 | 2 | 17.70€ |
+| 2025-03-26 | S35624 | 3 | 17.70€ |
+| 2025-03-06 | S35229 | 1 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 3, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -194,9 +150,9 @@
 <summary>🔴 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18356) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0196
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0290
+- **Stock restant estimé**: -0.96
+- **Jours avant rupture**: **-33j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -204,47 +160,25 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-19 | S37491 | 2 | 25.30€ |
+| 2025-03-26 | S35624 | 3 | 25.30€ |
+| 2025-03-06 | S35229 | 1 | 25.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 3, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[WIG04] WIGNAC cidre rosé bio 750ml</strong> (ID: 18386) - 2 unités</summary>
+<summary>🔴 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0196
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-19 | S37491 | 2 | 27.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0144
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0201
+- **Stock restant estimé**: -0.79
+- **Jours avant rupture**: **-39j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -252,13 +186,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36727 | 2 | 14.50€ |
+| 2025-03-21 | S35538 | 1 | 14.50€ |
+| 2025-03-14 | S35401 | 1 | 14.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 1]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 1
 
 </details>
 
@@ -266,9 +202,9 @@
 <summary>🔴 <strong>[LV132] LV Tartinade Houmous type 190g</strong> (ID: 13063) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0144
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0302
+- **Stock restant estimé**: -2.19
+- **Jours avant rupture**: **-72j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -276,23 +212,25 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36727 | 2 | 13.29€ |
+| 2025-03-21 | S35538 | 2 | 13.29€ |
+| 2025-03-14 | S35401 | 2 | 13.29€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18358) - 2 unités</summary>
+<summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18358) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0144
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0201
+- **Stock restant estimé**: -0.79
+- **Jours avant rupture**: **-39j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -300,13 +238,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36727 | 2 | 25.08€ |
+| 2025-03-21 | S35538 | 1 | 25.08€ |
+| 2025-03-14 | S35401 | 1 | 25.08€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 1]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 1
 
 </details>
 
@@ -556,12 +496,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV146] LV Sauce Aïoli 200 ml</strong> (ID: 13044) - 2 unités</summary>
+<summary>🔴 <strong>[LV146] LV Sauce Aïoli 200 ml</strong> (ID: 13044) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0119
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0201
+- **Stock restant estimé**: -1.38
+- **Jours avant rupture**: **-68j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -569,13 +509,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36127 | 2 | 14.50€ |
+| 2025-03-21 | S35538 | 1 | 14.50€ |
+| 2025-03-14 | S35401 | 1 | 14.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 1]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 1
 
 </details>
 
@@ -607,9 +549,9 @@
 <summary>🔴 <strong>[DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> (ID: 17728) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0119
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0145
+- **Stock restant estimé**: -0.43
+- **Jours avant rupture**: **-30j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -617,12 +559,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36127 | 2 | 15.12€ |
+| 2025-03-06 | S35229 | 1 | 15.12€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -655,9 +598,9 @@
 <summary>🔴 <strong>[OCC02] OCCHIOLINO premium limoncello 500ml</strong> (ID: 18332) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0097
+- **Stock restant estimé**: -0.62
+- **Jours avant rupture**: **-64j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -665,12 +608,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36127 | 1 | 104.40€ |
+| 2025-03-06 | S35229 | 1 | 104.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -707,7 +651,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1211.77€**
+- **Montant initial: 1039.99€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -716,18 +660,15 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [REB01] ReBEL chips premium... | 18353 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [LV002] LV Pizza Croccantin... | 13096 | 2 | 0 | 2 | 27.03€ | 54.06€ |
-| [LV134] LV BIO Tartinade Ol... | 13066 | 2 | 0 | 2 | 14.15€ | 28.30€ |
 | [TEN03] TENSAÏ TEA  thé bla... | 18377 | 2 | 0 | 2 | 31.60€ | 63.20€ |
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 2 | 0 | 2 | 31.60€ | 63.20€ |
 | [REB02] ReBEL chips premium... | 18349 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB03] ReBEL chips premium... | 18352 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB11] ReBEL chips premium... | 18356 | 2 | 0 | 2 | 25.30€ | 50.60€ |
-| [WIG04] WIGNAC cidre rosé b... | 18386 | 2 | 0 | 2 | 27.00€ | 54.00€ |
-| [LV145] LV Sauce Tartare 20... | 13043 | 2 | 0 | 2 | 14.50€ | 29.00€ |
+| [LV145] LV Sauce Tartare 20... | 13043 | 1 | 0 | 1 | 14.50€ | 14.50€ |
 | [LV132] LV Tartinade Houmou... | 13063 | 2 | 0 | 2 | 13.29€ | 26.58€ |
-| [RISH02] RISH kombucha BIO ... | 18358 | 2 | 0 | 2 | 25.08€ | 50.16€ |
+| [RISH02] RISH kombucha BIO ... | 18358 | 1 | 0 | 1 | 25.08€ | 25.08€ |
 | [NOD02] NODA limonade bio f... | 18307 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [NOD01] NODA limonade bio f... | 18310 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [WIG06] WIGNAC cidre nature... | 18383 | 1 | 0 | 1 | 22.20€ | 22.20€ |
@@ -738,13 +679,13 @@
 | [DAF004] DAF Peach and Lemo... | 17730 | 3 | 0 | 3 | 15.12€ | 45.36€ |
 | [RISH05] RISH kombucha BIO ... | 18360 | 1 | 0 | 1 | 57.00€ | 57.00€ |
 | [LV215] LV Biscuits apéro F... | 13091 | 2 | 0 | 2 | 25.56€ | 51.12€ |
-| [LV146] LV Sauce Aïoli 200 ml | 13044 | 2 | 0 | 2 | 14.50€ | 29.00€ |
+| [LV146] LV Sauce Aïoli 200 ml | 13044 | 1 | 0 | 1 | 14.50€ | 14.50€ |
 | [LV001] LV Pizza Croccantin... | 13095 | 1 | 0 | 1 | 27.03€ | 27.03€ |
 | [DAF002] DAF Lime and Ginge... | 17728 | 2 | 0 | 2 | 15.12€ | 30.24€ |
 | [TEN02] TENSAÏ TEA  thé noi... | 18379 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [OCC02] OCCHIOLINO premium ... | 18332 | 1 | 0 | 1 | 104.40€ | 104.40€ |
 | [DAM05] Dr. Antonio Martins... | 18268 | 2 | 0 | 2 | 26.40€ | 52.80€ |
 
-**Total (Phase 2.5): 1211.77€**
+**Total (Phase 2.5): 1039.99€**
 
 ---

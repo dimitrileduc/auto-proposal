@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 57.1% | 7 produits prédits, 4 corrects |
-| **Rappel** | 80.0% | 5 produits réels, 4 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 62.5% | 8 produits prédits, 5 corrects |
+| **Rappel** | 100.0% | 5 produits réels, 5 détectés |
+| **F1-Score** | 76.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 73.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,6 +142,7 @@
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 20 | 20 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 11 | 3 | 8.0 | 266.7% | ✅ partial |
 
 
 ---
@@ -173,7 +174,7 @@
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -188,14 +189,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 3 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:10.440Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:14.982Z*

@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 52.9% | 34 produits prédits, 18 corrects |
-| **Rappel** | 90.0% | 20 produits réels, 18 détectés |
+| **Précision** | 51.4% | 37 produits prédits, 19 corrects |
+| **Rappel** | 95.0% | 20 produits réels, 19 détectés |
 | **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.83 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 66.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 8 | Égalité parfaite |
+| **MAE** | 0.79 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 63.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
 | Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (18)
+## True Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -156,11 +156,12 @@
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (16)
+## False Positives (18)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -196,11 +197,13 @@
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 | [LD015] LD Onion Spread 180g | 2 | Stock prédit: -2.6u (-51j restants) → prédit 2u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 3 | Stock prédit: -1.0u (-19j restants) → prédit 3u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock prédit: 0.1u (19j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -220,10 +223,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 1.1u (22j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:50.667Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:55.254Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 58.6% | 29 produits prédits, 17 corrects |
+| **Précision** | 54.8% | 31 produits prédits, 17 corrects |
 | **Rappel** | 73.9% | 23 produits réels, 17 détectés |
-| **F1-Score** | 65.4% | Score équilibré global |
+| **F1-Score** | 63.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -159,7 +159,7 @@
 
 ---
 
-## False Positives (12)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -191,6 +191,8 @@
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | Stock prédit: -0.5u (-26j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: -0.6u (-38j restants) → prédit 1u mais non commandé |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.1u (12j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -220,9 +222,9 @@
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock suffisant: 0.2u (20j restants > seuil 19j) |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock suffisant: 0.9u (26j restants > seuil 19j) |
 | [LD008] LD Tartinade Pois chiches bio 180g   | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.4u (41j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:24.801Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:56.537Z*

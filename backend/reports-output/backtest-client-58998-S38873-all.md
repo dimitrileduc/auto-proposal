@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
+| **Précision** | 66.7% | 3 produits prédits, 2 corrects |
 | **Rappel** | 66.7% | 3 produits réels, 2 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,7 +165,6 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 38 | Stock prédit: 7.6u (8j restants) → prédit 38u mais non commandé |
-| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
 
 
 ---
@@ -195,4 +194,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:27.037Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:29.980Z*

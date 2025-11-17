@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - BEES COOP
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 38709
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 11**
-- Urgents (rupture ≤ 0j): 4
+**Produits à risque détectés: 10**
+- Urgents (rupture ≤ 0j): 3
 - Modérés (0 < rupture ≤ 19j): 7
 
-**Total produits (Phase 1): 11**
-**Quantité totale brute: 18 unités**
+**Total produits (Phase 1): 10**
+**Quantité totale brute: 17 unités**
 
 ### Détails par produit
 
@@ -239,30 +239,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF025] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 16790) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0132
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-30 | S37777 | 1 | 27.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF028] JF VINAIGRET CAESAR WECK 200ML</strong> (ID: 16785) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -293,9 +269,9 @@
 <summary>🔴 <strong>[JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> (ID: 16736) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0105
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0123
+- **Stock restant estimé**: -0.17
+- **Jours avant rupture**: **-13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -303,12 +279,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37331 | 1 | 26.40€ |
+| 2024-11-21 | S33428 | 1 | 26.40€ |
+| 2024-10-22 | S32885 | 2 | 26.40€ |
+| 2024-06-28 | S30978 | 1 | 26.40€ |
+| 2024-05-13 | S30242 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -321,7 +301,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 464.10€**
+- **Montant initial: 437.10€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -338,10 +318,9 @@
 | [JF034] JF SAMOURAI SQUEEZE... | 16760 | 2 | 0 | 2 | 26.40€ | 52.80€ |
 | [JF022] JF MOUTARDE MIEL 25... | 16755 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF039] JF MAYO BARAKI SQUE... | 16738 | 3 | 0 | 3 | 30.00€ | 90.00€ |
-| [JF025] JF VINAIGRETTE FH W... | 16790 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF040] JF CURRY KETCHUP SQ... | 16736 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 
-**Total (Phase 2.5): 464.10€**
+**Total (Phase 2.5): 437.10€**
 
 ---

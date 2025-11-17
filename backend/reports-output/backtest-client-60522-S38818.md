@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 14.3% | 7 produits prédits, 1 corrects |
-| **Rappel** | 33.3% | 3 produits réels, 1 détectés |
-| **F1-Score** | 20.0% | Score équilibré global |
+| **Précision** | 22.2% | 9 produits prédits, 2 corrects |
+| **Rappel** | 66.7% | 3 produits réels, 2 détectés |
+| **F1-Score** | 33.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 7.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 70.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
+| **MAE** | 3.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 35.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,11 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 3 | 10 | 7.0 | 70.0% | ✅ partial |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (6)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,11 +170,12 @@
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 4 | Stock prédit: -0.8u (-15j restants) → prédit 4u mais non commandé |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 5 | Stock prédit: -4.6u (-32j restants) → prédit 5u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: -0.2u (-20j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -193,10 +195,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:53.572Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:16.704Z*

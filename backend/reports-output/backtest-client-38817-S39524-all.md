@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 53.3% | 45 produits prédits, 24 corrects |
+| **Précision** | 55.8% | 43 produits prédits, 24 corrects |
 | **Rappel** | 100.0% | 24 produits réels, 24 détectés |
-| **F1-Score** | 69.6% | Score équilibré global |
+| **F1-Score** | 71.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -166,7 +166,7 @@
 
 ---
 
-## False Positives (21)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -198,13 +198,11 @@
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (7j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD010] LD Organic Truffle Spread 135 g | 1 | Stock prédit: -1.0u (-34j restants) → prédit 1u mais non commandé |
 | [LD012] LD Organic Samphire Spread 135 g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -1.0u (-50j restants) → prédit 1u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: -1.2u (-56j restants) → prédit 2u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: -1.5u (-59j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | Stock prédit: -1.5u (-45j restants) → prédit 3u mais non commandé |
 | [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.8u (-61j restants) → prédit 1u mais non commandé |
 
@@ -230,4 +228,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:18.291Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:31.524Z*

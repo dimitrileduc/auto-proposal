@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - La fermette
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 9942
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.3s
+**⏱️ Durée d'exécution:** 2.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 42**
-- Urgents (rupture ≤ 0j): 31
-- Modérés (0 < rupture ≤ 19j): 11
+**Produits à risque détectés: 38**
+- Urgents (rupture ≤ 0j): 23
+- Modérés (0 < rupture ≤ 19j): 15
 
-**Total produits (Phase 1): 42**
-**Quantité totale brute: 45 unités**
+**Total produits (Phase 1): 38**
+**Quantité totale brute: 41 unités**
 
 ### Détails par produit
 
@@ -191,54 +191,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0024] MF KETCHUP 250g</strong> (ID: 564) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0833
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S38824 | 1 | 16.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0030] MF Tarti Mangue Curry 250g </strong> (ID: 570) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0833
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S38824 | 1 | 14.46€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> (ID: 18307) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -404,30 +356,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[ORG08] ORGANICA crunchy fruit framboise 12g</strong> (ID: 18341) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0156
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-18 | S38133 | 1 | 37.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> (ID: 18310) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -477,30 +405,6 @@
 - **Confiance**: high
 - **Quantités historiques**: [1, 1, 1, 1, 1]
 - **Nombre commandes**: 6
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> (ID: 16980) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0156
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-18 | S38133 | 1 | 20.62€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -634,12 +538,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0047] MF Mayonnaise 250ml</strong> (ID: 14850) - 1 unités</summary>
+<summary>🟡 <strong>[MF0047] MF Mayonnaise 250ml</strong> (ID: 14850) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0128
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0108
+- **Stock restant estimé**: 0.16
+- **Jours avant rupture**: **14j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -647,23 +551,26 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-04 | S37888 | 1 | 16.50€ |
+| 2024-12-13 | S33906 | 2 | 16.50€ |
+| 2024-08-05 | S31520 | 2 | 16.50€ |
+| 2024-03-12 | S29175 | 1 | 16.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 2, 1]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0033] MF Tarti Poivron chilli 250g</strong> (ID: 573) - 1 unités</summary>
+<summary>🟡 <strong>[MF0033] MF Tarti Poivron chilli 250g</strong> (ID: 573) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0128
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0108
+- **Stock restant estimé**: 0.16
+- **Jours avant rupture**: **14j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -671,12 +578,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-04 | S37888 | 1 | 14.46€ |
+| 2025-03-03 | S35148 | 1 | 14.46€ |
+| 2024-10-07 | S32617 | 1 | 14.46€ |
+| 2024-08-05 | S31520 | 1 | 14.46€ |
+| 2024-05-27 | S30447 | 1 | 14.46€ |
+| 2024-03-12 | S29175 | 1 | 14.46€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -758,12 +670,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
+<summary>🟡 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0128
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0108
+- **Stock restant estimé**: 0.16
+- **Jours avant rupture**: **14j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -771,12 +683,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-04 | S37888 | 1 | 23.04€ |
+| 2025-03-03 | S35148 | 1 | 23.04€ |
+| 2024-12-13 | S33906 | 1 | 23.04€ |
+| 2024-05-27 | S30447 | 2 | 23.04€ |
+| 2024-03-12 | S29175 | 1 | 23.04€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -834,12 +750,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JOY03] JOY! Organic Apricot Jam 370g</strong> (ID: 18275) - 1 unités</summary>
+<summary>🟡 <strong>[JOY03] JOY! Organic Apricot Jam 370g</strong> (ID: 18275) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0079
+- **Stock restant estimé**: 0.08
+- **Jours avant rupture**: **9j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -847,12 +763,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-26 | S37044 | 1 | 27.92€ |
+| 2025-01-10 | S34230 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -908,12 +825,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18308) - 2 unités</summary>
+<summary>🔴 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18308) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0138
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0178
+- **Stock restant estimé**: -0.58
+- **Jours avant rupture**: **-32j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -921,13 +838,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-28 | S36387 | 2 | 32.40€ |
+| 2025-03-03 | S35148 | 1 | 32.40€ |
+| 2025-02-07 | S34749 | 1 | 32.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 1]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 1
 
 </details>
 
@@ -959,9 +878,9 @@
 <summary>🔴 <strong>[MF0028] ​MF Tarti Carotte Gingembre 250g</strong> (ID: 568) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0063
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0126
+- **Stock restant estimé**: -1.00
+- **Jours avant rupture**: **-79j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -969,12 +888,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36028 | 1 | 14.46€ |
+| 2025-03-03 | S35148 | 1 | 14.46€ |
+| 2024-10-07 | S32617 | 2 | 14.46€ |
+| 2024-08-05 | S31520 | 1 | 14.46€ |
+| 2024-05-27 | S30447 | 1 | 14.46€ |
+| 2024-03-12 | S29175 | 1 | 14.46€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -983,9 +907,9 @@
 <summary>🔴 <strong>[OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> (ID: 18330) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0063
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0100
+- **Stock restant estimé**: -0.58
+- **Jours avant rupture**: **-58j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -993,12 +917,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36028 | 1 | 77.40€ |
+| 2025-03-03 | S35148 | 1 | 77.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -1031,9 +956,9 @@
 <summary>🔴 <strong>[MF0054] MF Noix de cajou - Fleur de sel 133g</strong> (ID: 16978) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0088
+- **Stock restant estimé**: -0.58
+- **Jours avant rupture**: **-66j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1041,12 +966,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-24 | S35564 | 1 | 20.62€ |
+| 2024-10-07 | S32617 | 1 | 20.62€ |
+| 2024-08-05 | S31520 | 1 | 20.62€ |
+| 2024-03-12 | S29175 | 2 | 20.62€ |
+| 2023-11-07 | S27437 | 1 | 20.62€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1055,9 +984,9 @@
 <summary>🔴 <strong>[CB006] CB Blackcurrant Apple juice 1l</strong> (ID: 14944) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0097
+- **Stock restant estimé**: -0.75
+- **Jours avant rupture**: **-77j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1065,12 +994,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-24 | S35564 | 1 | 21.60€ |
+| 2025-01-10 | S34230 | 1 | 21.60€ |
+| 2024-12-13 | S33906 | 1 | 21.60€ |
+| 2024-08-05 | S31520 | 1 | 21.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1107,7 +1039,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1174.19€**
+- **Montant initial: 1069.51€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1122,24 +1054,20 @@
 | [ALO31] ORGANIC CRUNCH aloe... | 18335 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [ALO32] ORGANIC CRUNCH aloe... | 18337 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [MF0053] MF Maïs 500g | 16951 | 1 | 0 | 1 | 11.40€ | 11.40€ |
-| [MF0024] MF KETCHUP 250g | 564 | 1 | 0 | 1 | 16.50€ | 16.50€ |
-| [MF0030] MF Tarti Mangue Cu... | 570 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [NOD02] NODA limonade bio f... | 18307 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [ALO33] ORGANIC CRUNCH aloe... | 18334 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [REB01] ReBEL chips premium... | 18353 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB02] ReBEL chips premium... | 18349 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB11] ReBEL chips premium... | 18356 | 1 | 0 | 1 | 25.30€ | 25.30€ |
 | [OCC02] OCCHIOLINO premium ... | 18332 | 1 | 0 | 1 | 104.40€ | 104.40€ |
-| [ORG08] ORGANICA crunchy fr... | 18341 | 1 | 0 | 1 | 37.20€ | 37.20€ |
 | [NOD01] NODA limonade bio f... | 18310 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [MF0012] MF Olives Mix 500g | 552 | 1 | 0 | 1 | 27.60€ | 27.60€ |
-| [MF0056] MF Noix de cajou -... | 16980 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [JOY04] JOY! Organic Four-F... | 18276 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [JOY06] JOY! Organic Rhubar... | 18274 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [TEN01] TENSAÏ TEA  thé ver... | 18380 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [OCC03] OCCHIOLINO SUCO - c... | 18333 | 1 | 0 | 1 | 59.70€ | 59.70€ |
-| [MF0047] MF Mayonnaise 250ml | 14850 | 1 | 0 | 1 | 16.50€ | 16.50€ |
+| [MF0047] MF Mayonnaise 250ml | 14850 | 2 | 0 | 2 | 16.50€ | 33.00€ |
 | [MF0033] MF Tarti Poivron c... | 573 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [MF0035] MF Tarti Tomate Ai... | 575 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [MF0027] MF Tarti Aubergine... | 567 | 1 | 0 | 1 | 14.46€ | 14.46€ |
@@ -1150,7 +1078,7 @@
 | [JOY03] JOY! Organic Aprico... | 18275 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [TEN03] TENSAÏ TEA  thé bla... | 18377 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [CB007] CB Apple Nettle jui... | 14945 | 1 | 0 | 1 | 17.40€ | 17.40€ |
-| [NOD03] NODA limonade bio f... | 18308 | 2 | 0 | 2 | 32.40€ | 64.80€ |
+| [NOD03] NODA limonade bio f... | 18308 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [ORG03] ORGANICA crunchy fr... | 18343 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [MF0028] ​MF Tarti Carotte ... | 568 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [OCC01] OCCHIOLINO huile d'... | 18330 | 1 | 0 | 1 | 77.40€ | 77.40€ |
@@ -1159,6 +1087,6 @@
 | [CB006] CB Blackcurrant App... | 14944 | 1 | 0 | 1 | 21.60€ | 21.60€ |
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 
-**Total (Phase 2.5): 1174.19€**
+**Total (Phase 2.5): 1069.51€**
 
 ---

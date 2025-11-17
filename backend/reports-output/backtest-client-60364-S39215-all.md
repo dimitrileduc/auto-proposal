@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 10 produits prédits, 4 corrects |
+| **Précision** | 44.4% | 9 produits prédits, 4 corrects |
 | **Rappel** | 100.0% | 4 produits réels, 4 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **F1-Score** | 61.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -146,7 +146,7 @@
 
 ---
 
-## False Positives (6)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,7 +166,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 7 | Stock prédit: 0.0u (0j restants) → prédit 7u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 28 | Stock prédit: -0.2u (0j restants) → prédit 28u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 23 | Stock prédit: -6.1u (-11j restants) → prédit 23u mais non commandé |
@@ -195,4 +194,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:05.059Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:13.630Z*

@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 5 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,13 +152,7 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
@@ -191,4 +185,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:26.914Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:17.002Z*

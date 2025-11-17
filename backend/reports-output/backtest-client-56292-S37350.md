@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.8% | 26 produits prédits, 8 corrects |
+| **Précision** | 29.6% | 27 produits prédits, 8 corrects |
 | **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 43.2% | Score équilibré global |
+| **F1-Score** | 42.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (18)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -186,6 +186,7 @@
 | [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
 | [LEA05] LEAMO organic lemon lemonade 330 ml | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.4u (-32j restants) → prédit 1u mais non commandé |
 
@@ -219,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:55.661Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:01.630Z*

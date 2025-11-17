@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 15 produits prédits, 15 corrects |
-| **Rappel** | 68.2% | 22 produits réels, 15 détectés |
-| **F1-Score** | 81.1% | Score équilibré global |
+| **Précision** | 100.0% | 18 produits prédits, 18 corrects |
+| **Rappel** | 81.8% | 22 produits réels, 18 détectés |
+| **F1-Score** | 90.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.87 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 30.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 8 | Avec erreur |
+| **MAE** | 0.78 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 28.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
+| Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (15)
+## True Positives (18)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -150,7 +150,10 @@
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF021] JF PICKLES 350 ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | 3 | 2.0 | 66.7% | ✅ partial |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 3 | 2.0 | 66.7% | ✅ partial |
 
@@ -176,7 +179,7 @@
 
 ---
 
-## False Negatives (7)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -196,10 +199,7 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock suffisant: 0.8u (37j restants > seuil 19j) |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock suffisant: 0.3u (27j restants > seuil 19j) |
@@ -207,4 +207,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:24.088Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:38.719Z*

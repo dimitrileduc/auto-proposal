@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 20 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 11 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (20)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,26 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [FIL20] FIL CARBONNADES 800G BOCAL  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -216,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:02.247Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:07.983Z*

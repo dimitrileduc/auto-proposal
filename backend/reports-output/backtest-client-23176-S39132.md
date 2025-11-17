@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 71.4% | 14 produits prédits, 10 corrects |
-| **Rappel** | 52.6% | 19 produits réels, 10 détectés |
-| **F1-Score** | 60.6% | Score équilibré global |
+| **Précision** | 75.0% | 16 produits prédits, 12 corrects |
+| **Rappel** | 63.2% | 19 produits réels, 12 détectés |
+| **F1-Score** | 68.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 68.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| **MAE** | 0.67 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 56.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (10)
+## True Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -148,6 +148,8 @@
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV161] LV Tartinade Mangue curry 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV136] LV Tartinade Betterave 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -180,7 +182,7 @@
 
 ---
 
-## False Negatives (9)
+## False Negatives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -200,17 +202,15 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [MF0061] MF Compote | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock suffisant: 0.6u (74j restants > seuil 19j) |
+| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock suffisant: 0.6u (56j restants > seuil 19j) |
+| [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: 1.1u (74j restants > seuil 19j) |
+| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock suffisant: 0.8u (62j restants > seuil 19j) |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock suffisant: 0.4u (26j restants > seuil 19j) |
+| [MF0061] MF Compote | 2 | Stock suffisant: 0.4u (26j restants > seuil 19j) |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock suffisant: 0.5u (22j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:59.399Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:23.132Z*

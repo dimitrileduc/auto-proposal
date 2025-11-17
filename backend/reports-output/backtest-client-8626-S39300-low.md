@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 14.3% | 28 produits prédits, 4 corrects |
-| **Rappel** | 26.7% | 15 produits réels, 4 détectés |
-| **F1-Score** | 18.6% | Score équilibré global |
+| **Précision** | 11.5% | 26 produits prédits, 3 corrects |
+| **Rappel** | 20.0% | 15 produits réels, 3 détectés |
+| **F1-Score** | 14.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,14 +139,13 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (24)
+## False Positives (23)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -168,7 +167,6 @@
 |---------|-------------|--------|
 | [LV146] LV Sauce Aïoli 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -194,7 +192,7 @@
 
 ---
 
-## False Negatives (11)
+## False Negatives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -214,6 +212,7 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock suffisant: -0.0u (-3j restants > seuil 19j) |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | Stock suffisant: -0.1u (-7j restants > seuil 19j) |
 | [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | Stock suffisant: -0.1u (-7j restants > seuil 19j) |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: -0.1u (-7j restants > seuil 19j) |
@@ -229,4 +228,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:49.201Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:24.131Z*

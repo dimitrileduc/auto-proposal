@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 47.1% | 17 produits prédits, 8 corrects |
+| **Précision** | 44.4% | 18 produits prédits, 8 corrects |
 | **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **F1-Score** | 55.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -179,6 +179,7 @@
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: -0.2u (-3j restants) → prédit 2u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: -0.3u (-23j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -210,4 +211,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:46.239Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:49.230Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 76.2% | 21 produits prédits, 16 corrects |
-| **Rappel** | 94.1% | 17 produits réels, 16 détectés |
-| **F1-Score** | 84.2% | Score équilibré global |
+| **Précision** | 70.8% | 24 produits prédits, 17 corrects |
+| **Rappel** | 100.0% | 17 produits réels, 17 détectés |
+| **F1-Score** | 82.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -63,8 +63,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.06 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 3.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 15 | Égalité parfaite |
+| **MAPE** | 2.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 16 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (16)
+## True Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -154,11 +154,12 @@
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (5)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -183,11 +184,13 @@
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.4u (-23j restants) → prédit 1u mais non commandé |
+| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: -0.9u (-83j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -202,14 +205,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:29.262Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:35.961Z*

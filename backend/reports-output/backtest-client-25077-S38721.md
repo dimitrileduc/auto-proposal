@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 91.7% | 12 produits prédits, 11 corrects |
-| **Rappel** | 61.1% | 18 produits réels, 11 détectés |
-| **F1-Score** | 73.3% | Score équilibré global |
+| **Précision** | 87.5% | 16 produits prédits, 14 corrects |
+| **Rappel** | 77.8% | 18 produits réels, 14 détectés |
+| **F1-Score** | 82.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.18 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 58.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| **MAE** | 0.93 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 46.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (11)
+## True Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -149,11 +149,14 @@
 | [LV330] LV BIO Tartinade Toscana 190g | 5 | 6 | 1.0 | 16.7% | ✅ partial |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 4 | 1 | 3.0 | 300.0% | ✅ partial |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (1)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,11 +177,12 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 5 | Stock prédit: -0.5u (-4j restants) → prédit 5u mais non commandé |
+| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: -0.2u (-14j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -201,12 +205,9 @@
 | [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock suffisant: 0.7u (20j restants > seuil 19j) |
 | [LV132] LV Tartinade Houmous type 190g | 4 | Stock suffisant: 2.1u (28j restants > seuil 19j) |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | Stock suffisant: 0.7u (20j restants > seuil 19j) |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:17.799Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:46.729Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 46.7% | 15 produits prédits, 7 corrects |
+| **Précision** | 43.8% | 16 produits prédits, 7 corrects |
 | **Rappel** | 70.0% | 10 produits réels, 7 détectés |
-| **F1-Score** | 56.0% | Score équilibré global |
+| **F1-Score** | 53.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -149,7 +149,7 @@
 
 ---
 
-## False Positives (8)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,6 +177,7 @@
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.6u (-30j restants) → prédit 1u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | Stock prédit: -3.4u (-96j restants) → prédit 2u mais non commandé |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | Stock prédit: -2.4u (-91j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -208,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:16.042Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:18.786Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 4.0% | 25 produits prédits, 1 corrects |
+| **Précision** | 7.7% | 13 produits prédits, 1 corrects |
 | **Rappel** | 10.0% | 10 produits réels, 1 détectés |
-| **F1-Score** | 5.7% | Score équilibré global |
+| **F1-Score** | 8.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (24)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,29 +163,17 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV135] LV Tartinade Basilico 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB010] CB Jus de Pomme cubis 3l | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB005] CB Apple juice 1l | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV189] LV Tartinade Houmous Type 380g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV187] LV Tartinade Mangue Curry 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [RIT08] RITCHIE Citron - canette 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -224,4 +212,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:13.645Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:16.868Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.0% | 15 produits prédits, 9 corrects |
-| **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 69.2% | Score équilibré global |
+| **Précision** | 52.6% | 19 produits prédits, 10 corrects |
+| **Rappel** | 90.9% | 11 produits réels, 10 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.44 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 34.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
+| **MAE** | 1.30 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 30.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (9)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -147,11 +147,12 @@
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF021] JF PICKLES 350 ML | 4 | 6 | 2.0 | 33.3% | ✅ partial |
 | [LV136] LV Tartinade Betterave 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (6)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -176,12 +177,15 @@
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: -0.5u (-18j restants) → prédit 1u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 2 | Stock prédit: -0.9u (-25j restants) → prédit 2u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.6u (13j restants) → prédit 4u mais non commandé |
+| [LV146] LV Sauce Aïoli 200 ml | 2 | Stock prédit: -0.6u (-25j restants) → prédit 2u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: -1.4u (-50j restants) → prédit 2u mais non commandé |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock prédit: -0.1u (-7j restants) → prédit 2u mais non commandé |
+| [JF044] JF OIGNONS ROUGES 350 ML | 3 | Stock prédit: -1.6u (-89j restants) → prédit 3u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -201,10 +205,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | Stock suffisant: 0.6u (21j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:37.843Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:42.538Z*

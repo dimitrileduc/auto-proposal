@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DANTESSE GmbH
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 3831
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 866ms
+**⏱️ Durée d'exécution:** 2.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 12**
-- Urgents (rupture ≤ 0j): 8
+**Produits à risque détectés: 7**
+- Urgents (rupture ≤ 0j): 3
 - Modérés (0 < rupture ≤ 19j): 4
 
-**Total produits (Phase 1): 12**
-**Quantité totale brute: 539 unités**
+**Total produits (Phase 1): 7**
+**Quantité totale brute: 190 unités**
 
 ### Détails par produit
 
@@ -124,30 +124,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1693] LD FR TARTINAD BIO CAROTTE 200</strong> (ID: 9181) - 50 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.6579
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-16 | S38112 | 50 | 9.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [50]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 50
-
-</details>
-
-<details>
 <summary>🟡 <strong>[PF1694] LD FR TARTINAD BIO POIVRON 200</strong> (ID: 9182) - 63 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -169,102 +145,6 @@
 - **Quantités historiques**: [75, 50]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 63
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1695] LD FR TARTINADE BIO TOMATE 200</strong> (ID: 9070) - 50 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.6579
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-16 | S38112 | 50 | 9.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [50]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 50
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF2937] LD FR TARTINADE BIO POIS 200</strong> (ID: 9426) - 60 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.7895
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-16 | S38112 | 60 | 9.90€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [60]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 60
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G</strong> (ID: 14602) - 92 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.2105
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-16 | S38112 | 92 | 10.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [92]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 92
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1809] LD SAUCE BEARNAISE 250ML WECK</strong> (ID: 9264) - 67 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.6036
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-11 | S37392 | 67 | 15.24€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [67]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 67
 
 </details>
 
@@ -294,12 +174,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1803] LD SAUCE TARTARE 250ML WECK</strong> (ID: 9258) - 50 unités</summary>
+<summary>🔴 <strong>[PF1803] LD SAUCE TARTARE 250ML WECK</strong> (ID: 9258) - 20 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3623
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.4181
+- **Stock restant estimé**: -7.69
+- **Jours avant rupture**: **-18j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -307,13 +187,27 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36834 | 50 | 15.24€ |
+| 2025-03-20 | S35517 | 25 | 15.24€ |
+| 2025-01-27 | S34528 | 10 | 15.24€ |
+| 2024-12-04 | S33668 | 10 | 14.70€ |
+| 2024-11-21 | S33444 | 20 | 14.70€ |
+| 2024-11-15 | S33305 | 12 | 14.70€ |
+| 2024-10-18 | S32846 | 12 | 14.70€ |
+| 2024-09-25 | S32383 | 15 | 14.70€ |
+| 2024-07-17 | S31321 | 32 | 14.70€ |
+| 2024-06-07 | S30686 | 10 | 14.70€ |
+| 2024-05-28 | S30498 | 10 | 14.70€ |
+| 2024-04-23 | S29913 | 10 | 14.70€ |
+| 2024-01-17 | S28567 | 20 | 14.70€ |
+| 2023-11-24 | S27757 | 10 | 14.70€ |
+| 2023-10-23 | S04980 | 50 | 14.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [50]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 50
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [50, 25, 10, 10, 20]
+- **Nombre commandes**: 15
+- **Valeur médiane**: 20
 
 </details>
 
@@ -325,7 +219,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 6311.58€**
+- **Montant initial: 2340.90€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -338,15 +232,10 @@
 | [PF3274] JF BURGER SAUCE 925ML | 15038 | 1 | 0 | 1 | 39.60€ | 39.60€ |
 | [PF1799] LD MAYONNAISE OEUF... | 9254 | 50 | 0 | 50 | 15.24€ | 762.00€ |
 | [PF1696] CB9012 LD FR TARTI... | 9184 | 50 | 0 | 50 | 9.90€ | 495.00€ |
-| [PF1693] LD FR TARTINAD BIO... | 9181 | 50 | 0 | 50 | 9.60€ | 480.00€ |
 | [PF1694] LD FR TARTINAD BIO... | 9182 | 63 | 0 | 63 | 9.90€ | 623.70€ |
-| [PF1695] LD FR TARTINADE BI... | 9070 | 50 | 0 | 50 | 9.60€ | 480.00€ |
-| [PF2937] LD FR TARTINADE BI... | 9426 | 60 | 0 | 60 | 9.90€ | 594.00€ |
-| [PF3246] AA0105 - LD FR TAR... | 14602 | 92 | 0 | 92 | 10.20€ | 938.40€ |
-| [PF1809] LD SAUCE BEARNAISE... | 9264 | 67 | 0 | 67 | 15.24€ | 1021.08€ |
 | [PF3273] JF MITRAILLETTE SA... | 15037 | 1 | 0 | 1 | 39.60€ | 39.60€ |
-| [PF1803] LD SAUCE TARTARE 2... | 9258 | 50 | 0 | 50 | 15.24€ | 762.00€ |
+| [PF1803] LD SAUCE TARTARE 2... | 9258 | 20 | 0 | 20 | 15.24€ | 304.80€ |
 
-**Total (Phase 2.5): 6311.58€**
+**Total (Phase 2.5): 2340.90€**
 
 ---

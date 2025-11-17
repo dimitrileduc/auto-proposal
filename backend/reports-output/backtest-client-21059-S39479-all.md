@@ -185,7 +185,7 @@
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.4u (-23j restants) → prédit 1u mais non commandé |
 | [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: -0.9u (-83j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -209,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:29.264Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:35.965Z*

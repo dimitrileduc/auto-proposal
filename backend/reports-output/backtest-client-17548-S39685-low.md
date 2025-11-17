@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 11 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 6 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (11)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,14 +159,9 @@
 |---------|-------------|--------|
 | [fsv18] Mendiant bio vrac 2,8kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT01] RITCHIE Orange - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV136] LV Tartinade Betterave 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
@@ -197,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:07.973Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:35.901Z*

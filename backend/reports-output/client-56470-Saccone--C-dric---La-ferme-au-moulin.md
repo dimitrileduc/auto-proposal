@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Saccone, Cédric - La ferme au moulin
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 56470
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.9s
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 57**
-- Urgents (rupture ≤ 0j): 44
-- Modérés (0 < rupture ≤ 19j): 13
+**Produits à risque détectés: 52**
+- Urgents (rupture ≤ 0j): 35
+- Modérés (0 < rupture ≤ 19j): 17
 
-**Total produits (Phase 1): 57**
-**Quantité totale brute: 71 unités**
+**Total produits (Phase 1): 52**
+**Quantité totale brute: 65 unités**
 
 ### Détails par produit
 
@@ -263,54 +263,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1, 2]
 - **Nombre commandes**: 3
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> (ID: 13095) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-09 | S37970 | 1 | 27.03€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> (ID: 13097) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-09 | S37970 | 1 | 29.45€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -787,12 +739,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 1 unités</summary>
+<summary>🟡 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0130
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0120
+- **Stock restant estimé**: 0.08
+- **Jours avant rupture**: **6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -800,60 +752,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-27 | S37071 | 1 | 14.50€ |
+| 2025-01-29 | S34571 | 1 | 14.50€ |
+| 2024-07-31 | S31479 | 2 | 14.22€ |
+| 2024-06-21 | S30875 | 1 | 14.22€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV146] LV Sauce Aïoli 200 ml</strong> (ID: 13044) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0130
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-27 | S37071 | 1 | 14.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV147] LV Sauce Cocktail 200 ml</strong> (ID: 13045) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0130
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-27 | S37071 | 1 | 15.48€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 2, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -932,36 +839,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV133] LV Tartinade Ananas Coco 190g</strong> (ID: 13065) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0130
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-27 | S37071 | 1 | 13.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV332] LV Tartinade Olive Caper Tomato 190g</strong> (ID: 14452) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0130
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0192
+- **Stock restant estimé**: -0.48
+- **Jours avant rupture**: **-24j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -969,12 +852,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-27 | S37071 | 1 | 14.52€ |
+| 2025-01-29 | S34571 | 2 | 14.52€ |
+| 2024-09-06 | S32009 | 1 | 14.10€ |
+| 2024-07-31 | S31479 | 2 | 14.10€ |
+| 2024-07-09 | S31195 | 1 | 14.10€ |
+| 2024-06-21 | S30875 | 1 | 14.10€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 1, 2, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -1175,12 +1063,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV345] LV Spread KIDS 200ml Organic</strong> (ID: 17066) - 2 unités</summary>
+<summary>🟡 <strong>[LV345] LV Spread KIDS 200ml Organic</strong> (ID: 17066) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0161
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0154
+- **Stock restant estimé**: 0.09
+- **Jours avant rupture**: **5j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1188,12 +1076,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35905 | 2 | 14.22€ |
+| 2025-01-29 | S34571 | 1 | 14.22€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -1223,12 +1112,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> (ID: 13080) - 1 unités</summary>
+<summary>🟡 <strong>[LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> (ID: 13080) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0072
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **14j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1236,12 +1125,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35905 | 1 | 26.66€ |
+| 2025-01-29 | S34571 | 1 | 26.66€ |
+| 2024-06-21 | S30875 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1250,9 +1141,9 @@
 <summary>🔴 <strong>[LV331] LV Tartinade Lentils Balsamico 190g</strong> (ID: 14451) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0161
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0205
+- **Stock restant estimé**: -0.54
+- **Jours avant rupture**: **-26j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1260,23 +1151,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35905 | 2 | 14.52€ |
+| 2025-01-29 | S34571 | 2 | 14.52€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV130] LV BIO Tartinade Paprika Chili 190g</strong> (ID: 13061) - 2 unités</summary>
+<summary>🔴 <strong>[LV130] LV BIO Tartinade Paprika Chili 190g</strong> (ID: 13061) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0161
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0192
+- **Stock restant estimé**: -0.38
+- **Jours avant rupture**: **-19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1284,13 +1176,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35905 | 2 | 13.10€ |
+| 2025-01-29 | S34571 | 2 | 13.10€ |
+| 2024-09-06 | S32009 | 1 | 12.72€ |
+| 2024-08-09 | S31613 | 1 | 12.72€ |
+| 2024-07-09 | S31195 | 1 | 12.72€ |
+| 2024-06-21 | S30875 | 1 | 12.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 2, 1, 1, 1]
+- **Nombre commandes**: 6
+- **Valeur médiane**: 1
 
 </details>
 
@@ -1343,12 +1240,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> (ID: 13050) - 1 unités</summary>
+<summary>🟡 <strong>[LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> (ID: 13050) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0072
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **14j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1356,12 +1253,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35905 | 1 | 19.09€ |
+| 2024-07-09 | S31195 | 1 | 18.72€ |
+| 2024-06-21 | S30875 | 1 | 18.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1370,9 +1269,9 @@
 <summary>🔴 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0125
+- **Stock restant estimé**: -0.55
+- **Jours avant rupture**: **-44j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1380,12 +1279,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35905 | 1 | 19.28€ |
+| 2025-01-29 | S34571 | 1 | 19.28€ |
+| 2024-07-31 | S31479 | 2 | 18.90€ |
+| 2024-07-09 | S31195 | 1 | 18.90€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 2, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1422,7 +1324,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1491.58€**
+- **Montant initial: 1378.30€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1441,8 +1343,6 @@
 | [FO001] FO CITRONNADE BIO 33cl | 17731 | 1 | 0 | 1 | 17.20€ | 17.20€ |
 | [LV142] LV Mayonnaise en bo... | 13040 | 1 | 0 | 1 | 34.78€ | 34.78€ |
 | [LV330] LV BIO Tartinade To... | 14450 | 1 | 0 | 1 | 14.52€ | 14.52€ |
-| [LV001] LV Pizza Croccantin... | 13095 | 1 | 0 | 1 | 27.03€ | 27.03€ |
-| [LV003] LV Pizza Croccantin... | 13097 | 1 | 0 | 1 | 29.45€ | 29.45€ |
 | [NOM04] NOMADIC barre proté... | 18319 | 1 | 0 | 1 | 17.55€ | 17.55€ |
 | [NOM01] NOMADIC barre proté... | 18318 | 1 | 0 | 1 | 17.55€ | 17.55€ |
 | [NUT02] NUTS & BERRIES ener... | 18329 | 1 | 0 | 1 | 16.05€ | 16.05€ |
@@ -1463,12 +1363,9 @@
 | [NOD03] NODA limonade bio f... | 18308 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [NOD04] NODA limonade bio f... | 18309 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [LV145] LV Sauce Tartare 20... | 13043 | 1 | 0 | 1 | 14.50€ | 14.50€ |
-| [LV146] LV Sauce Aïoli 200 ml | 13044 | 1 | 0 | 1 | 14.50€ | 14.50€ |
-| [LV147] LV Sauce Cocktail 2... | 13045 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [LV149] LV Sauce Aioli Pest... | 13048 | 1 | 0 | 1 | 14.69€ | 14.69€ |
 | [LV161] LV Tartinade Mangue... | 13060 | 2 | 0 | 2 | 13.10€ | 26.20€ |
 | [LV132] LV Tartinade Houmou... | 13063 | 1 | 0 | 1 | 13.29€ | 13.29€ |
-| [LV133] LV Tartinade Ananas... | 13065 | 1 | 0 | 1 | 13.72€ | 13.72€ |
 | [LV332] LV Tartinade Olive ... | 14452 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [LV188] LV Tartinade Auberg... | 13071 | 1 | 0 | 1 | 23.48€ | 23.48€ |
 | [FO002] FO ORGANIC FRUITY H... | 17732 | 1 | 0 | 1 | 17.20€ | 17.20€ |
@@ -1482,13 +1379,13 @@
 | [LV209] LV Confit de Figues... | 13079 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [LV165] LV Vol-au-vent (ave... | 13080 | 1 | 0 | 1 | 26.66€ | 26.66€ |
 | [LV331] LV Tartinade Lentil... | 14451 | 2 | 0 | 2 | 14.52€ | 29.04€ |
-| [LV130] LV BIO Tartinade Pa... | 13061 | 2 | 0 | 2 | 13.10€ | 26.20€ |
+| [LV130] LV BIO Tartinade Pa... | 13061 | 1 | 0 | 1 | 13.10€ | 13.10€ |
 | [RIT05] RITCHIE Cola - verr... | 18367 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [RIT06] RITCHIE Cola ZERO -... | 18369 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [LV153] LV Vinaigrette Cibo... | 13050 | 1 | 0 | 1 | 19.09€ | 19.09€ |
 | [LV154] LV Vinaigrette Miel... | 13051 | 1 | 0 | 1 | 19.28€ | 19.28€ |
 | [LV155] LV Vinaigrette Caes... | 13052 | 1 | 0 | 1 | 20.38€ | 20.38€ |
 
-**Total (Phase 2.5): 1491.58€**
+**Total (Phase 2.5): 1378.30€**
 
 ---

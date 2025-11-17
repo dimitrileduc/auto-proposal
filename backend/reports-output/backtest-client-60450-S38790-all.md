@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 25.0% | 16 produits prédits, 4 corrects |
+| **Précision** | 28.6% | 14 produits prédits, 4 corrects |
 | **Rappel** | 100.0% | 4 produits réels, 4 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **F1-Score** | 44.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -146,7 +146,7 @@
 
 ---
 
-## False Positives (12)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,8 +167,6 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 8 | Stock prédit: -0.8u (-4j restants) → prédit 8u mais non commandé |
-| [KOKO01] KOKO Kombucha original 330ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 7 | Stock prédit: -0.1u (-1j restants) → prédit 7u mais non commandé |
 | [UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml | 7 | Stock prédit: -0.1u (-1j restants) → prédit 7u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 5 | Stock prédit: -2.1u (-26j restants) → prédit 5u mais non commandé |
@@ -176,7 +174,7 @@
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 4 | Stock prédit: -2.9u (-44j restants) → prédit 4u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 4 | Stock prédit: -1.6u (-35j restants) → prédit 4u mais non commandé |
 | [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 4 | Stock prédit: -1.6u (-43j restants) → prédit 4u mais non commandé |
 | [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
@@ -201,4 +199,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:54.976Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:26.308Z*

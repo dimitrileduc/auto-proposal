@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 16.0% | 25 produits prédits, 4 corrects |
-| **Rappel** | 13.8% | 29 produits réels, 4 détectés |
-| **F1-Score** | 14.8% | Score équilibré global |
+| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
+| **Rappel** | 3.4% | 29 produits réels, 1 détectés |
+| **F1-Score** | 6.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,15 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0013] MF Olives Vertes 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (21)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,32 +163,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB006] CB Blackcurrant Apple juice 1l | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [CB010] CB Jus de Pomme cubis 3l | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (25)
+## False Negatives (28)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -231,8 +208,11 @@
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.3u (29j restants > seuil 19j) |
 | [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock suffisant: -0.2u (-10j restants > seuil 19j) |
 | [MF0059] MF Confi Fraise- Ardbei | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock suffisant: -0.0u (-7j restants > seuil 19j) |
 | [MF0027] MF Tarti Aubergine 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock suffisant: 0.1u (10j restants > seuil 19j) |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: -0.3u (-13j restants > seuil 19j) |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock suffisant: 0.7u (108j restants > seuil 19j) |
 | [CB001] CB Apple juice 25cl | 1 | Stock suffisant: -0.7u (-14j restants > seuil 19j) |
 | [VID0009] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 36 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -240,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:54.703Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:00.066Z*

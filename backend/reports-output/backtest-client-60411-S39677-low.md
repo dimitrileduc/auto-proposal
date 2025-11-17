@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 22.2% | 18 produits prédits, 4 corrects |
-| **Rappel** | 26.7% | 15 produits réels, 4 détectés |
-| **F1-Score** | 24.2% | Score équilibré global |
+| **Précision** | 25.0% | 12 produits prédits, 3 corrects |
+| **Rappel** | 20.0% | 15 produits réels, 3 détectés |
+| **F1-Score** | 22.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
+| Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,12 +141,11 @@
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (14)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,18 +172,13 @@
 | [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV158] LV Moutarde 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -215,8 +209,9 @@
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.4u (17j restants > seuil 19j) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.5u (22j restants > seuil 19j) |
 | [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock suffisant: -0.5u (-54j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:58.880Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:06.251Z*

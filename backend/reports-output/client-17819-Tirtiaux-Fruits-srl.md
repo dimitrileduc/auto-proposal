@@ -1,48 +1,24 @@
 # 📊 Rapport Auto-Proposal - Tirtiaux Fruits srl
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 17819
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.9s
+**⏱️ Durée d'exécution:** 3.8s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 55**
-- Urgents (rupture ≤ 0j): 50
-- Modérés (0 < rupture ≤ 19j): 5
+**Produits à risque détectés: 47**
+- Urgents (rupture ≤ 0j): 39
+- Modérés (0 < rupture ≤ 19j): 8
 
-**Total produits (Phase 1): 55**
-**Quantité totale brute: 72 unités**
+**Total produits (Phase 1): 47**
+**Quantité totale brute: 65 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S39068 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
 
 <details>
 <summary>🔴 <strong>[JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> (ID: 16749) - 2 unités</summary>
@@ -69,30 +45,6 @@
 - **Quantités historiques**: [1, 2, 2, 1, 2]
 - **Nombre commandes**: 5
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> (ID: 16777) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S39068 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -141,54 +93,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF023] JF MOUTARDE DOUCE 250ML WECK</strong> (ID: 16754) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S39068 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF029] JF VOL AU VENT BOCAL 400G</strong> (ID: 16792) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S39068 | 1 | 15.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -323,30 +227,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV156] LV Sauce barbecue 263 ml bio</strong> (ID: 13053) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S39068 | 1 | 26.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV162] LV Tartinade Tomato Basilico 190g</strong> (ID: 13064) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -396,30 +276,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1, 1]
 - **Nombre commandes**: 3
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV137] LV Tartinade Lentilles Curry 190g</strong> (ID: 13069) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-08 | S39068 | 1 | 13.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -894,30 +750,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 16738) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-07 | S37911 | 1 | 30.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV143] LV Mayonnaise (huile 70%) 200 ml </strong> (ID: 13041) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -995,12 +827,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV134] LV BIO Tartinade Olives Vertes 190g</strong> (ID: 13066) - 1 unités</summary>
+<summary>🔴 <strong>[LV134] LV BIO Tartinade Olives Vertes 190g</strong> (ID: 13066) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0213
+- **Stock restant estimé**: -1.06
+- **Jours avant rupture**: **-50j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1008,13 +840,22 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-07 | S37911 | 1 | 14.15€ |
+| 2025-04-02 | S35772 | 2 | 14.15€ |
+| 2025-03-03 | S35150 | 2 | 14.15€ |
+| 2025-01-14 | S34307 | 1 | 14.15€ |
+| 2024-12-12 | S33756 | 2 | 13.74€ |
+| 2024-11-12 | S33205 | 1 | 13.74€ |
+| 2024-09-02 | S32036 | 1 | 13.74€ |
+| 2024-05-31 | S30564 | 2 | 13.74€ |
+| 2024-02-29 | S29141 | 1 | 13.74€ |
+| 2023-11-07 | S04848 | 2 | 13.74€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 2, 1, 2]
+- **Nombre commandes**: 10
+- **Valeur médiane**: 2
 
 </details>
 
@@ -1122,12 +963,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> (ID: 17728) - 1 unités</summary>
+<summary>🟡 <strong>[DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> (ID: 17728) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0074
+- **Stock restant estimé**: 0.09
+- **Jours avant rupture**: **12j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1135,23 +976,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37320 | 1 | 15.12€ |
+| 2025-01-14 | S34307 | 1 | 15.12€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> (ID: 17729) - 1 unités</summary>
+<summary>🟡 <strong>[DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> (ID: 17729) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0074
+- **Stock restant estimé**: 0.09
+- **Jours avant rupture**: **12j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1159,12 +1001,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37320 | 1 | 15.12€ |
+| 2025-01-14 | S34307 | 1 | 15.12€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -1173,9 +1016,9 @@
 <summary>🔴 <strong>[LV331] LV Tartinade Lentils Balsamico 190g</strong> (ID: 14451) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0177
+- **Stock restant estimé**: -1.18
+- **Jours avant rupture**: **-66j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1183,23 +1026,32 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37320 | 1 | 14.52€ |
+| 2025-03-03 | S35150 | 1 | 14.52€ |
+| 2024-12-12 | S33756 | 2 | 14.10€ |
+| 2024-09-02 | S32036 | 1 | 14.10€ |
+| 2024-06-24 | S30927 | 2 | 14.10€ |
+| 2024-04-29 | S30003 | 1 | 14.10€ |
+| 2024-02-29 | S29141 | 1 | 14.10€ |
+| 2024-02-02 | S28762 | 1 | 14.10€ |
+| 2024-01-09 | S28453 | 1 | 14.10€ |
+| 2023-12-05 | S28008 | 1 | 14.10€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 2]
+- **Nombre commandes**: 10
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[CB001] CB Apple juice 25cl</strong> (ID: 14937) - 1 unités</summary>
+<summary>🟡 <strong>[CB001] CB Apple juice 25cl</strong> (ID: 14937) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0078
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0072
+- **Stock restant estimé**: 0.08
+- **Jours avant rupture**: **10j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1207,12 +1059,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-05 | S37265 | 1 | 28.80€ |
+| 2025-01-14 | S34307 | 1 | 28.80€ |
+| 2024-09-02 | S32036 | 1 | 28.80€ |
+| 2024-04-02 | S29579 | 1 | 28.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1221,9 +1076,9 @@
 <summary>🔴 <strong>[JF026] JF VINAIGRET TRUFFES WECK 200M</strong> (ID: 16788) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0078
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0105
+- **Stock restant estimé**: -0.36
+- **Jours avant rupture**: **-34j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1231,36 +1086,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-05 | S37265 | 1 | 31.50€ |
+| 2025-03-03 | S35150 | 1 | 31.50€ |
+| 2025-01-14 | S34307 | 1 | 31.50€ |
+| 2024-09-02 | S32036 | 1 | 31.50€ |
+| 2024-06-24 | S30927 | 1 | 31.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF011] JF SAUCE TARTARE 470ML WECK</strong> (ID: 16782) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0078
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-05 | S37265 | 1 | 25.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1269,9 +1104,9 @@
 <summary>🔴 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0078
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0108
+- **Stock restant estimé**: -0.39
+- **Jours avant rupture**: **-36j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1279,12 +1114,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-05 | S37265 | 1 | 25.80€ |
+| 2025-03-03 | S35150 | 1 | 25.80€ |
+| 2025-01-14 | S34307 | 1 | 25.80€ |
+| 2024-09-30 | S32472 | 1 | 25.80€ |
+| 2024-08-05 | S31517 | 1 | 25.80€ |
+| 2024-04-02 | S29579 | 1 | 25.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -1293,9 +1133,9 @@
 <summary>🔴 <strong>[JF018] JF SAUCE SAMOURAI 250ML WECK</strong> (ID: 16778) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0092
+- **Stock restant estimé**: -0.41
+- **Jours avant rupture**: **-44j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1303,12 +1143,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-12 | S36681 | 1 | 19.50€ |
+| 2025-03-03 | S35150 | 1 | 19.50€ |
+| 2024-11-12 | S33205 | 1 | 19.50€ |
+| 2024-08-05 | S31517 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1317,9 +1160,9 @@
 <summary>🔴 <strong>[JF021] JF PICKLES 350 ML</strong> (ID: 16759) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0072
+- **Stock restant estimé**: -0.10
+- **Jours avant rupture**: **-13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1327,12 +1170,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-12 | S36681 | 1 | 20.94€ |
+| 2025-01-14 | S34307 | 1 | 20.94€ |
+| 2024-08-05 | S31517 | 1 | 20.94€ |
+| 2024-04-02 | S29579 | 1 | 20.94€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1365,9 +1211,9 @@
 <summary>🔴 <strong>[LV131] LV Tartinade Potiron 190g</strong> (ID: 13062) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0162
+- **Stock restant estimé**: -1.49
+- **Jours avant rupture**: **-91j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1375,12 +1221,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-12 | S36681 | 1 | 13.10€ |
+| 2024-12-12 | S33756 | 3 | 12.72€ |
+| 2024-09-02 | S32036 | 1 | 12.72€ |
+| 2024-08-05 | S31517 | 1 | 12.72€ |
+| 2024-06-24 | S30927 | 1 | 12.72€ |
+| 2024-02-29 | S29141 | 2 | 12.72€ |
+| 2023-12-05 | S28008 | 2 | 12.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 3, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -1389,9 +1241,9 @@
 <summary>🔴 <strong>[LV133] LV Tartinade Ananas Coco 190g</strong> (ID: 13065) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0118
+- **Stock restant estimé**: -0.81
+- **Jours avant rupture**: **-68j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1399,12 +1251,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-12 | S36681 | 1 | 13.72€ |
+| 2025-03-03 | S35150 | 1 | 13.72€ |
+| 2024-12-12 | S33756 | 2 | 13.32€ |
+| 2024-06-24 | S30927 | 1 | 13.32€ |
+| 2024-04-29 | S30003 | 1 | 13.32€ |
+| 2024-02-29 | S29141 | 1 | 13.32€ |
+| 2023-12-05 | S28008 | 1 | 13.32€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -1417,7 +1275,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1301.32€**
+- **Montant initial: 1145.85€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1426,22 +1284,16 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF005] JF MAYONNAISE OEUFS... | 16749 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF007] JF SAUCE MAYO TOMAT... | 16777 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF055] JF HONEY MUSTARD MA... | 19355 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF015] JF SAUCE ANDALOUSE ... | 16763 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF023] JF MOUTARDE DOUCE 2... | 16754 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF029] JF VOL AU VENT BOCA... | 16792 | 1 | 0 | 1 | 15.00€ | 15.00€ |
 | [JF031] JF SAUCE LIEGEOISE ... | 16776 | 1 | 0 | 1 | 13.50€ | 13.50€ |
 | [JF032] JF SAUCE LAPIN 380GX6 | 16774 | 1 | 0 | 1 | 13.50€ | 13.50€ |
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF025] JF VINAIGRETTE FH W... | 16790 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF027] JF VINAIGRET MIEL M... | 16787 | 1 | 0 | 1 | 27.00€ | 27.00€ |
-| [LV156] LV Sauce barbecue 2... | 13053 | 1 | 0 | 1 | 26.60€ | 26.60€ |
 | [LV162] LV Tartinade Tomato... | 13064 | 2 | 0 | 2 | 12.67€ | 25.34€ |
 | [LV332] LV Tartinade Olive ... | 14452 | 1 | 0 | 1 | 14.52€ | 14.52€ |
-| [LV137] LV Tartinade Lentil... | 13069 | 1 | 0 | 1 | 13.72€ | 13.72€ |
 | [REB04] ReBEL chips premium... | 18355 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [JF008] JF MAYONNA DU CHEF ... | 16743 | 1 | 0 | 1 | 25.80€ | 25.80€ |
 | [JF012] JF SAUCE BEARNAISE ... | 16766 | 2 | 0 | 2 | 19.50€ | 39.00€ |
@@ -1460,11 +1312,10 @@
 | [JF001] JF MAYONNAI TRUFFES... | 16745 | 2 | 0 | 2 | 23.40€ | 46.80€ |
 | [JF054] JF LEMON MAYONNAISE... | 19354 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF057] JF EGG MAYONNAISE 7... | 19366 | 1 | 0 | 1 | 27.78€ | 27.78€ |
-| [JF039] JF MAYO BARAKI SQUE... | 16738 | 1 | 0 | 1 | 30.00€ | 30.00€ |
 | [LV143] LV Mayonnaise (huil... | 13041 | 1 | 0 | 1 | 13.76€ | 13.76€ |
 | [LV159] LV Tartinade aux Tr... | 13057 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 | [LV129] LV Tartinade Carott... | 13059 | 2 | 0 | 2 | 13.04€ | 26.08€ |
-| [LV134] LV BIO Tartinade Ol... | 13066 | 1 | 0 | 1 | 14.15€ | 14.15€ |
+| [LV134] LV BIO Tartinade Ol... | 13066 | 2 | 0 | 2 | 14.15€ | 28.30€ |
 | [LV126] LV Tartinade Tomate... | 13070 | 3 | 0 | 3 | 13.53€ | 40.59€ |
 | [REB02] ReBEL chips premium... | 18349 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
@@ -1474,7 +1325,6 @@
 | [LV331] LV Tartinade Lentil... | 14451 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [CB001] CB Apple juice 25cl | 14937 | 1 | 0 | 1 | 28.80€ | 28.80€ |
 | [JF026] JF VINAIGRET TRUFFE... | 16788 | 1 | 0 | 1 | 31.50€ | 31.50€ |
-| [JF011] JF SAUCE TARTARE 47... | 16782 | 1 | 0 | 1 | 25.80€ | 25.80€ |
 | [JF014] JF SAUCE BEARNAISE ... | 16769 | 1 | 0 | 1 | 25.80€ | 25.80€ |
 | [JF018] JF SAUCE SAMOURAI 2... | 16778 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF021] JF PICKLES 350 ML | 16759 | 1 | 0 | 1 | 20.94€ | 20.94€ |
@@ -1482,6 +1332,6 @@
 | [LV131] LV Tartinade Potiro... | 13062 | 1 | 0 | 1 | 13.10€ | 13.10€ |
 | [LV133] LV Tartinade Ananas... | 13065 | 1 | 0 | 1 | 13.72€ | 13.72€ |
 
-**Total (Phase 2.5): 1301.32€**
+**Total (Phase 2.5): 1145.85€**
 
 ---

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 44.8% | 29 produits prédits, 13 corrects |
-| **Rappel** | 68.4% | 19 produits réels, 13 détectés |
-| **F1-Score** | 54.2% | Score équilibré global |
+| **Précision** | 42.9% | 28 produits prédits, 12 corrects |
+| **Rappel** | 63.2% | 19 produits réels, 12 détectés |
+| **F1-Score** | 51.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.46 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 34.6% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.42 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (13)
+## True Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -149,7 +149,6 @@
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV135] LV Tartinade Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -187,7 +186,7 @@
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -2.6u (-59j restants) → prédit 2u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | Stock prédit: -0.9u (-28j restants) → prédit 3u mais non commandé |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -1.3u (-71j restants) → prédit 1u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 2 | Stock prédit: -0.7u (-39j restants) → prédit 2u mais non commandé |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 2 | Stock prédit: -1.7u (-66j restants) → prédit 2u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -195,7 +194,7 @@
 
 ---
 
-## False Negatives (6)
+## False Negatives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -215,6 +214,7 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 0.3u (37j restants > seuil 19j) |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 1.0u (33j restants > seuil 19j) |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: 0.8u (44j restants > seuil 19j) |
@@ -225,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:51.467Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:56.202Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 44.9% | 69 produits prédits, 31 corrects |
+| **Précision** | 47.7% | 65 produits prédits, 31 corrects |
 | **Rappel** | 73.8% | 42 produits réels, 31 détectés |
-| **F1-Score** | 55.9% | Score équilibré global |
+| **F1-Score** | 57.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -173,7 +173,7 @@
 
 ---
 
-## False Positives (38)
+## False Positives (34)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -207,8 +207,6 @@
 | [MF0027] MF Tarti Aubergine 250g  | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
 | [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
 | [MF0013] MF Olives Vertes 500g | 2 | Stock prédit: 0.4u (11j restants) → prédit 2u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
@@ -227,10 +225,8 @@
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -2.1u (-38j restants) → prédit 2u mais non commandé |
 | [MF0014] MF Olives noires 500g | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-14j restants) → prédit 1u mais non commandé |
-| [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0051] MF Kidney Beans 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.1u (19j restants) → prédit 1u mais non commandé |
+| [MF0060] MF Passata | 1 | Stock prédit: -0.2u (-26j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -270,4 +266,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:31.897Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:37.621Z*

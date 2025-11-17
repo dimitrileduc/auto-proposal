@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - SASPJ ass. RENAUD JOSEPH ET RENAUD FABIAN
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 60416
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 4.1s
 
 ---
 
@@ -11,8 +11,8 @@
 
 
 **Produits à risque détectés: 32**
-- Urgents (rupture ≤ 0j): 26
-- Modérés (0 < rupture ≤ 19j): 6
+- Urgents (rupture ≤ 0j): 25
+- Modérés (0 < rupture ≤ 19j): 7
 
 **Total produits (Phase 1): 32**
 **Quantité totale brute: 34 unités**
@@ -411,12 +411,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 1 unités</summary>
+<summary>🟡 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0250
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0179
+- **Stock restant estimé**: 0.28
+- **Jours avant rupture**: **15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -424,12 +424,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-05 | S38243 | 1 | 17.70€ |
+| 2025-03-11 | S35281 | 1 | 17.70€ |
+| 2025-02-03 | S34622 | 2 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -462,9 +464,9 @@
 <summary>🔴 <strong>[LV147] LV Sauce Cocktail 200 ml</strong> (ID: 13045) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.06
+- **Jours avant rupture**: **-6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -472,12 +474,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36878 | 1 | 15.48€ |
+| 2025-02-03 | S34622 | 1 | 15.48€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -486,9 +489,9 @@
 <summary>🔴 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.06
+- **Jours avant rupture**: **-6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -496,12 +499,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36878 | 1 | 14.50€ |
+| 2025-02-03 | S34622 | 1 | 14.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -560,9 +564,9 @@
 <summary>🔴 <strong>[LV156] LV Sauce barbecue 263 ml bio</strong> (ID: 13053) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.06
+- **Jours avant rupture**: **-6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -570,12 +574,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36878 | 1 | 26.60€ |
+| 2025-02-03 | S34622 | 1 | 26.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -682,9 +687,9 @@
 <summary>🔴 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0107
+- **Stock restant estimé**: -0.64
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -692,12 +697,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36120 | 1 | 24.15€ |
+| 2025-03-11 | S35281 | 1 | 24.15€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -730,9 +736,9 @@
 <summary>🔴 <strong>[JOY06] JOY! Organic Rhubarb Jam 370g</strong> (ID: 18274) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0107
+- **Stock restant estimé**: -0.64
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -740,12 +746,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36120 | 1 | 27.92€ |
+| 2025-03-11 | S35281 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -754,9 +761,9 @@
 <summary>🔴 <strong>[JOY04] JOY! Organic Four-Fruit Jam 370g</strong> (ID: 18276) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0107
+- **Stock restant estimé**: -0.64
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -764,12 +771,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36120 | 1 | 27.92€ |
+| 2025-03-11 | S35281 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -778,9 +786,9 @@
 <summary>🔴 <strong>[JOY03] JOY! Organic Apricot Jam 370g</strong> (ID: 18275) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0107
+- **Stock restant estimé**: -0.64
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -788,12 +796,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36120 | 1 | 27.92€ |
+| 2025-03-11 | S35281 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.0% | 10 produits prédits, 3 corrects |
+| **Précision** | 27.3% | 11 produits prédits, 3 corrects |
 | **Rappel** | 75.0% | 4 produits réels, 3 détectés |
-| **F1-Score** | 42.9% | Score équilibré global |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,6 +172,7 @@
 | [REB11] ReBEL chips premium & bio - truffes 125g | 5 | Stock prédit: -1.0u (-15j restants) → prédit 5u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 4 | Stock prédit: -2.9u (-44j restants) → prédit 4u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 4 | Stock prédit: -1.6u (-35j restants) → prédit 4u mais non commandé |
+| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 4 | Stock prédit: -1.6u (-43j restants) → prédit 4u mais non commandé |
 
 
 ---
@@ -201,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:54.973Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:26.305Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
-| **Rappel** | 10.0% | 10 produits réels, 1 détectés |
-| **F1-Score** | 16.7% | Score équilibré global |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 10 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,13 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -168,7 +162,7 @@
 
 ---
 
-## False Negatives (9)
+## False Negatives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -197,8 +191,9 @@
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: 1.4u (37j restants > seuil 19j) |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock suffisant: -2.1u (-27j restants > seuil 19j) |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock suffisant: -0.1u (-6j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:51.778Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:14.908Z*

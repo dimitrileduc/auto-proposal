@@ -6,17 +6,17 @@
   "cutoffDate": "2025-09-10 00:00:00",
   "daysBeforePrediction": 1,
   "metrics": {
-    "tp": 16,
-    "fp": 23,
-    "fn": 13,
-    "precision": 0.41025641025641024,
-    "recall": 0.5517241379310345,
-    "f1Score": 0.47058823529411764,
-    "mae": 0.3125,
-    "mape": 21.875
+    "tp": 18,
+    "fp": 25,
+    "fn": 11,
+    "precision": 0.4186046511627907,
+    "recall": 0.6206896551724138,
+    "f1Score": 0.5,
+    "mae": 0.2777777777777778,
+    "mape": 19.444444444444443
   },
   "distribution": {
-    "exactMatch": 11,
+    "exactMatch": 13,
     "partialMatch": 5
   }
 }

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 24.5% | 53 produits prédits, 13 corrects |
+| **Précision** | 25.0% | 52 produits prédits, 13 corrects |
 | **Rappel** | 86.7% | 15 produits réels, 13 détectés |
-| **F1-Score** | 38.2% | Score équilibré global |
+| **F1-Score** | 38.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -155,7 +155,7 @@
 
 ---
 
-## False Positives (40)
+## False Positives (39)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -184,7 +184,6 @@
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
 | [LV209] LV Confit de Figues Bio 150g (bocal weck) | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
 | [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: -0.6u (-32j restants) → prédit 1u mais non commandé |
-| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: -0.6u (-32j restants) → prédit 1u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
 | [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
@@ -245,4 +244,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:49.202Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:24.133Z*

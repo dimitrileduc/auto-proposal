@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.89 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 11 | Avec erreur |
+| **MAE** | 0.78 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 28.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
+| Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -150,10 +150,10 @@
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF021] JF PICKLES 350 ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | 3 | 2.0 | 66.7% | ✅ partial |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 3 | 2.0 | 66.7% | ✅ partial |
 
@@ -207,4 +207,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:24.093Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:38.722Z*

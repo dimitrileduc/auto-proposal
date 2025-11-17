@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Epicerie Uhoda Kennedy
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 23342
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 961ms
+**⏱️ Durée d'exécution:** 3.2s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 45**
-- Urgents (rupture ≤ 0j): 37
-- Modérés (0 < rupture ≤ 19j): 8
+**Produits à risque détectés: 42**
+- Urgents (rupture ≤ 0j): 33
+- Modérés (0 < rupture ≤ 19j): 9
 
-**Total produits (Phase 1): 45**
-**Quantité totale brute: 71 unités**
+**Total produits (Phase 1): 42**
+**Quantité totale brute: 67 unités**
 
 ### Détails par produit
 
@@ -151,30 +151,6 @@
 - **Quantités historiques**: [1, 2, 1, 3, 2]
 - **Nombre commandes**: 5
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV331] LV Tartinade Lentils Balsamico 190g</strong> (ID: 14451) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-26 | S39408 | 1 | 14.52€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -483,9 +459,9 @@
 <summary>🔴 <strong>[LV130] LV BIO Tartinade Paprika Chili 190g</strong> (ID: 13061) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0241
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0493
+- **Stock restant estimé**: -2.09
+- **Jours avant rupture**: **-42j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -493,12 +469,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-15 | S38032 | 2 | 13.10€ |
+| 2025-03-21 | S35542 | 2 | 13.10€ |
+| 2025-01-03 | S34003 | 5 | 13.10€ |
+| 2024-11-14 | S33282 | 2 | 12.72€ |
+| 2024-09-13 | S32241 | 8 | 12.72€ |
+| 2024-07-29 | S31438 | 3 | 12.72€ |
+| 2024-04-09 | S29687 | 5 | 12.72€ |
+| 2024-01-23 | S28635 | 6 | 12.72€ |
+| 2023-10-27 | S27298 | 2 | 12.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 2, 5, 2, 8]
+- **Nombre commandes**: 9
 - **Valeur médiane**: 2
 
 </details>
@@ -529,12 +513,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV135] LV Tartinade Basilico 190g</strong> (ID: 13067) - 2 unités</summary>
+<summary>🔴 <strong>[LV135] LV Tartinade Basilico 190g</strong> (ID: 13067) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0241
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0394
+- **Stock restant estimé**: -1.27
+- **Jours avant rupture**: **-32j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -542,13 +526,21 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-15 | S38032 | 2 | 13.53€ |
+| 2025-01-03 | S34003 | 4 | 13.53€ |
+| 2024-11-14 | S33282 | 1 | 13.14€ |
+| 2024-09-13 | S32241 | 6 | 13.14€ |
+| 2024-07-29 | S31438 | 3 | 13.14€ |
+| 2024-05-06 | S30050 | 3 | 13.14€ |
+| 2024-04-09 | S29687 | 4 | 13.14€ |
+| 2024-01-23 | S28635 | 2 | 13.14€ |
+| 2023-10-27 | S27298 | 3 | 13.14€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 4, 1, 6, 3]
+- **Nombre commandes**: 9
+- **Valeur médiane**: 3
 
 </details>
 
@@ -577,36 +569,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> (ID: 18384) - 1 unités</summary>
+<summary>🟡 <strong>[CB010] CB Jus de Pomme cubis 3l</strong> (ID: 14948) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0120
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-15 | S38032 | 1 | 21.30€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[CB010] CB Jus de Pomme cubis 3l</strong> (ID: 14948) - 3 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0306
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0288
+- **Stock restant estimé**: 0.18
+- **Jours avant rupture**: **6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -614,13 +582,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-30 | S37667 | 3 | 7.80€ |
+| 2025-03-13 | S35357 | 2 | 7.80€ |
+| 2025-02-05 | S34691 | 2 | 7.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 3
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2, 2]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 2
 
 </details>
 
@@ -806,9 +776,9 @@
 <summary>🔴 <strong>[CB005] CB Apple juice 1l</strong> (ID: 14941) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0089
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0123
+- **Stock restant estimé**: -0.38
+- **Jours avant rupture**: **-30j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -816,12 +786,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-16 | S37458 | 1 | 15.00€ |
+| 2025-03-21 | S35542 | 1 | 15.00€ |
+| 2025-02-05 | S34691 | 1 | 15.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -847,30 +819,6 @@
 - **Quantités historiques**: [2]
 - **Nombre commandes**: 1
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV187] LV Tartinade Mangue Curry 380g</strong> (ID: 13073) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0068
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-13 | S36730 | 1 | 24.97€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -924,12 +872,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl</strong> (ID: 17733) - 3 unités</summary>
+<summary>🔴 <strong>[FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl</strong> (ID: 17733) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0169
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0290
+- **Stock restant estimé**: -2.16
+- **Jours avant rupture**: **-74j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -937,13 +885,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S35900 | 3 | 17.20€ |
+| 2025-03-21 | S35542 | 2 | 17.20€ |
+| 2025-03-13 | S35357 | 1 | 17.20€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 3
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2, 1]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 2
 
 </details>
 
@@ -951,9 +901,9 @@
 <summary>🔴 <strong>[RIT08] RITCHIE Citron - canette 330ml</strong> (ID: 18363) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0112
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0145
+- **Stock restant estimé**: -0.58
+- **Jours avant rupture**: **-39j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -961,12 +911,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S35900 | 2 | 30.96€ |
+| 2025-03-13 | S35357 | 1 | 30.96€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -975,9 +926,9 @@
 <summary>🔴 <strong>[RISH03] RISH kombucha BIO - gingembre 330ml</strong> (ID: 18357) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0112
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0254
+- **Stock restant estimé**: -2.51
+- **Jours avant rupture**: **-99j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -985,12 +936,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S35900 | 2 | 25.08€ |
+| 2025-03-21 | S35542 | 1 | 25.08€ |
+| 2025-03-13 | S35357 | 1 | 25.08€ |
+| 2025-01-03 | S34003 | 3 | 25.08€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 1, 3]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 2
 
 </details>
@@ -999,9 +953,9 @@
 <summary>🔴 <strong>[FO001] FO CITRONNADE BIO 33cl</strong> (ID: 17731) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0193
+- **Stock restant estimé**: -2.44
+- **Jours avant rupture**: **-126j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1009,12 +963,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S35900 | 1 | 17.20€ |
+| 2025-03-21 | S35542 | 2 | 17.20€ |
+| 2025-03-13 | S35357 | 1 | 17.20€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1095,9 +1051,9 @@
 <summary>🔴 <strong>[RIT07] RITCHIE Orange - canette 330ml</strong> (ID: 18370) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0097
+- **Stock restant estimé**: -0.72
+- **Jours avant rupture**: **-74j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1105,12 +1061,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S35900 | 1 | 30.96€ |
+| 2025-03-13 | S35357 | 1 | 30.96€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -1147,7 +1104,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1455.19€**
+- **Montant initial: 1382.93€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1161,7 +1118,6 @@
 | [LV133] LV Tartinade Ananas... | 13065 | 2 | 0 | 2 | 13.72€ | 27.44€ |
 | [LV126] LV Tartinade Tomate... | 13070 | 3 | 0 | 3 | 13.53€ | 40.59€ |
 | [LV330] LV BIO Tartinade To... | 14450 | 2 | 0 | 2 | 14.52€ | 29.04€ |
-| [LV331] LV Tartinade Lentil... | 14451 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [DAF003] DAF Passionfruit w... | 17729 | 1 | 0 | 1 | 15.12€ | 15.12€ |
 | [DAF002] DAF Lime and Ginge... | 17728 | 1 | 0 | 1 | 15.12€ | 15.12€ |
 | [REB11] ReBEL chips premium... | 18356 | 1 | 0 | 1 | 25.30€ | 25.30€ |
@@ -1176,10 +1132,9 @@
 | [NUT02] NUTS & BERRIES ener... | 18329 | 2 | 0 | 2 | 16.05€ | 32.10€ |
 | [LV130] LV BIO Tartinade Pa... | 13061 | 2 | 0 | 2 | 13.10€ | 26.20€ |
 | [LV332] LV Tartinade Olive ... | 14452 | 2 | 0 | 2 | 14.52€ | 29.04€ |
-| [LV135] LV Tartinade Basili... | 13067 | 2 | 0 | 2 | 13.53€ | 27.06€ |
+| [LV135] LV Tartinade Basili... | 13067 | 3 | 0 | 3 | 13.53€ | 40.59€ |
 | [ORG01] ORGANICA crunchy fr... | 18338 | 1 | 0 | 1 | 30.72€ | 30.72€ |
-| [WIG07] WIGNAC cidre nature... | 18384 | 1 | 0 | 1 | 21.30€ | 21.30€ |
-| [CB010] CB Jus de Pomme cub... | 14948 | 3 | 0 | 3 | 7.80€ | 23.40€ |
+| [CB010] CB Jus de Pomme cub... | 14948 | 2 | 0 | 2 | 7.80€ | 15.60€ |
 | [LB004] LB Blonde (6,5%) 33CL | 13644 | 1 | 0 | 1 | 42.08€ | 42.08€ |
 | [LV159] LV Tartinade aux Tr... | 13057 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 | [LV345] LV Spread KIDS 200m... | 17066 | 1 | 0 | 1 | 14.22€ | 14.22€ |
@@ -1189,10 +1144,9 @@
 | [MATE02] MATE MATE thé glac... | 18299 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [CB005] CB Apple juice 1l | 14941 | 1 | 0 | 1 | 15.00€ | 15.00€ |
 | [LV189] LV Tartinade Houmou... | 13075 | 2 | 0 | 2 | 25.15€ | 50.30€ |
-| [LV187] LV Tartinade Mangue... | 13073 | 1 | 0 | 1 | 24.97€ | 24.97€ |
 | [LV142] LV Mayonnaise en bo... | 13040 | 1 | 0 | 1 | 34.78€ | 34.78€ |
 | [NUT01] NUTS & BERRIES ener... | 18327 | 3 | 0 | 3 | 16.05€ | 48.15€ |
-| [FO003] FO ORGANIC FRUITY P... | 17733 | 3 | 0 | 3 | 17.20€ | 51.60€ |
+| [FO003] FO ORGANIC FRUITY P... | 17733 | 2 | 0 | 2 | 17.20€ | 34.40€ |
 | [RIT08] RITCHIE Citron - ca... | 18363 | 2 | 0 | 2 | 30.96€ | 61.92€ |
 | [RISH03] RISH kombucha BIO ... | 18357 | 2 | 0 | 2 | 25.08€ | 50.16€ |
 | [FO001] FO CITRONNADE BIO 33cl | 17731 | 1 | 0 | 1 | 17.20€ | 17.20€ |
@@ -1202,6 +1156,6 @@
 | [RIT07] RITCHIE Orange - ca... | 18370 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [RIT10] RITCHIE Cola ZERO -... | 18368 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 
-**Total (Phase 2.5): 1455.19€**
+**Total (Phase 2.5): 1382.93€**
 
 ---

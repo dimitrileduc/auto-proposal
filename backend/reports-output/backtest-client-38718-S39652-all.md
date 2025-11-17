@@ -198,11 +198,11 @@
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.9u (-29j restants) → prédit 1u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [RIT04] RITCHIE Pamplemousse - verre 275ml | 2 | Stock prédit: -0.9u (-33j restants) → prédit 2u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-46j restants) → prédit 1u mais non commandé |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -0.9u (-73j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -239,4 +239,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:59.969Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:00.641Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 84.0% | 25 produits prédits, 21 corrects |
+| **Précision** | 80.8% | 26 produits prédits, 21 corrects |
 | **Rappel** | 87.5% | 24 produits réels, 21 détectés |
-| **F1-Score** | 85.7% | Score équilibré global |
+| **F1-Score** | 84.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -163,7 +163,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -187,6 +187,7 @@
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 5 | Stock prédit: -0.2u (-1j restants) → prédit 5u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 25 | Stock prédit: 0.3u (0j restants) → prédit 25u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 4 | Stock prédit: -2.4u (-49j restants) → prédit 4u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 5 | Stock prédit: -5.6u (-77j restants) → prédit 5u mais non commandé |
 
 
 ---
@@ -218,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:06.265Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:08.205Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 5.3% | 19 produits prédits, 1 corrects |
-| **Rappel** | 14.3% | 7 produits réels, 1 détectés |
-| **F1-Score** | 7.7% | Score équilibré global |
+| **Précision** | 0.0% | 12 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 7 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [RIT01] RITCHIE Orange - verre 275ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (18)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,9 +159,6 @@
 |---------|-------------|--------|
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -175,17 +166,14 @@
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (6)
+## False Negatives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -206,6 +194,7 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | Stock suffisant: -0.2u (-7j restants > seuil 19j) |
+| [RIT01] RITCHIE Orange - verre 275ml | 2 | Stock suffisant: -0.1u (-7j restants > seuil 19j) |
 | [RIT05] RITCHIE Cola - verre 275ml | 2 | Stock suffisant: 0.2u (9j restants > seuil 19j) |
 | [RIT11] RITCHIE Orange Sanguine - verre 275ml | 2 | Stock suffisant: -0.3u (-17j restants > seuil 19j) |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: -0.9u (-20j restants > seuil 19j) |
@@ -215,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:45.779Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:18.514Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
-| **Rappel** | 33.3% | 3 produits réels, 1 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 625.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 500.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,13 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 750 | 125 | 625.0 | 500.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -162,7 +156,7 @@
 
 ---
 
-## False Negatives (2)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -182,10 +176,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 125 | Stock suffisant: 293.0u (57j restants > seuil 19j) |
 | [LV162] LV Tartinade Tomato Basilico 190g | 125 | Stock suffisant: -41.7u (-14j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 125 | Stock suffisant: -41.7u (-14j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:08.856Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:20.443Z*

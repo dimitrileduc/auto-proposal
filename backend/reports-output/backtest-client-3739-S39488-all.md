@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 3 | Stock prédit: 0.1u (6j restants) → prédit 3u mais non commandé |
 
 
 ---
@@ -187,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:04.172Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:28.500Z*

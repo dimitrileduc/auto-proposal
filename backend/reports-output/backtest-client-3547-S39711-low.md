@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,14 +152,7 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [PF1801] LD MAYONNA DU CHEF 470 ML WECK | 110 | Stock prédit: 0.0u (0j restants) → prédit 110u mais non commandé |
-| [PF1892] LD TARTINADE BIO TRUFFES 135G | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
@@ -188,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:37.512Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:31.615Z*

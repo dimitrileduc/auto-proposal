@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - BELGISCHES ROTES KREUZ
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 3446
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.1s
+**⏱️ Durée d'exécution:** 2.6s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 9**
-- Urgents (rupture ≤ 0j): 9
+**Produits à risque détectés: 7**
+- Urgents (rupture ≤ 0j): 7
 - Modérés (0 < rupture ≤ 19j): 0
 
-**Total produits (Phase 1): 9**
-**Quantité totale brute: 1038 unités**
+**Total produits (Phase 1): 7**
+**Quantité totale brute: 1010 unités**
 
 ### Détails par produit
 
@@ -165,54 +165,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0093] FILOU MOUTARDE 300GR</strong> (ID: 8995) - 10 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0840
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-27 | S37090 | 10 | 11.16€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [10]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 10
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1539] FILOU BOULETTE CHASSEUR 800G</strong> (ID: 9121) - 18 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1513
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-27 | S37090 | 18 | 33.36€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [18]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 18
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PI3208] PI TARTARE BIO CONS 250ML</strong> (ID: 11070) - 316 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -244,7 +196,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 7832.40€**
+- **Montant initial: 7120.32€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -259,10 +211,8 @@
 | [PF0088] FILOU VOL AU VENT ... | 8991 | 18 | 0 | 18 | 37.80€ | 680.40€ |
 | [PF0084] FILOU CARBONNADES ... | 8988 | 18 | 0 | 18 | 52.56€ | 946.08€ |
 | [PF1224] FILOU BOULETTES TO... | 9031 | 18 | 0 | 18 | 33.36€ | 600.48€ |
-| [PF0093] FILOU MOUTARDE 300GR | 8995 | 10 | 0 | 10 | 11.16€ | 111.60€ |
-| [PF1539] FILOU BOULETTE CHA... | 9121 | 18 | 0 | 18 | 33.36€ | 600.48€ |
 | [PI3208] PI TARTARE BIO CON... | 11070 | 316 | 0 | 316 | 0.87€ | 274.20€ |
 
-**Total (Phase 2.5): 7832.40€**
+**Total (Phase 2.5): 7120.32€**
 
 ---

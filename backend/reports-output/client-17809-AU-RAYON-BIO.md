@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - AU RAYON BIO
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 17809
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.1s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
@@ -523,9 +523,9 @@
 <summary>🔴 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0136
+- **Stock restant estimé**: -0.96
+- **Jours avant rupture**: **-70j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -533,12 +533,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-16 | S36832 | 1 | 24.15€ |
+| 2025-04-07 | S35804 | 1 | 24.15€ |
+| 2024-09-09 | S32164 | 2 | 23.68€ |
+| 2024-07-15 | S31287 | 1 | 23.68€ |
+| 2024-05-21 | S30366 | 1 | 23.68€ |
+| 2024-03-15 | S29335 | 1 | 23.68€ |
+| 2023-12-15 | S28214 | 2 | 23.68€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -547,9 +553,9 @@
 <summary>🔴 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0082
+- **Stock restant estimé**: -0.19
+- **Jours avant rupture**: **-22j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -557,12 +563,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-16 | S36832 | 1 | 19.28€ |
+| 2025-02-04 | S34649 | 1 | 19.28€ |
+| 2024-10-08 | S32643 | 1 | 18.90€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>

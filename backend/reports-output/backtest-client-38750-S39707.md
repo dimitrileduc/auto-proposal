@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 56.5% | 23 produits prédits, 13 corrects |
+| **Précision** | 46.4% | 28 produits prédits, 13 corrects |
 | **Rappel** | 81.3% | 16 produits réels, 13 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 59.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -155,7 +155,7 @@
 
 ---
 
-## False Positives (10)
+## False Positives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -183,8 +183,13 @@
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.2u (5j restants) → prédit 2u mais non commandé |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | Stock prédit: 0.2u (10j restants) → prédit 2u mais non commandé |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock prédit: -0.2u (-9j restants) → prédit 2u mais non commandé |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.1u (12j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.2u (-18j restants) → prédit 1u mais non commandé |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -0.2u (-18j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.3u (-17j restants) → prédit 1u mais non commandé |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock prédit: -3.0u (-124j restants) → prédit 1u mais non commandé |
+| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: -0.3u (-41j restants) → prédit 1u mais non commandé |
+| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.0u (8j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -209,11 +214,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.1u (20j restants > seuil 19j) |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:52.461Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:57.278Z*

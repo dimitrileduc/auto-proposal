@@ -1,72 +1,24 @@
 # 📊 Rapport Auto-Proposal - FOODPRINT SRL
 
-**📅 Date:** 15/11/2025 10:44
+**📅 Date:** 17/11/2025 12:58
 **🆔 Client ID:** 13621
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.3s
+**⏱️ Durée d'exécution:** 3.2s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 243**
-- Urgents (rupture ≤ 0j): 195
-- Modérés (0 < rupture ≤ 19j): 48
+**Produits à risque détectés: 213**
+- Urgents (rupture ≤ 0j): 158
+- Modérés (0 < rupture ≤ 19j): 55
 
-**Total produits (Phase 1): 243**
-**Quantité totale brute: 54582 unités**
+**Total produits (Phase 1): 213**
+**Quantité totale brute: 38952 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[PF1951] LV TARTINADE BIO BASILIC 400G</strong> (ID: 9369) - 166 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 55.3333
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-10-09 | S39645 | 166 | 14.16€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [166]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 166
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1791] TARTI ALNATUR BIO OLIVE 200ML</strong> (ID: 9246) - 300 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 100.0000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-10-09 | S39645 | 300 | 7.68€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [300]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 300
-
-</details>
 
 <details>
 <summary>🟡 <strong>[PF1790] TARTI ALNATUR BIO TOMATE 200ML</strong> (ID: 9273) - 300 unités</summary>
@@ -90,78 +42,6 @@
 - **Quantités historiques**: [300, 300]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 300
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1473] JF MAYONNAIS POIVRE 250ML WECK</strong> (ID: 9100) - 200 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 66.6667
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-10-09 | S39644 | 200 | 14.82€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 200
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1784] JF MOUTARDE DOUCE 250ML WECK</strong> (ID: 9240) - 200 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 66.6667
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-10-09 | S39644 | 200 | 13.68€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 200
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1601] JF SAMOURAI SQUEEZE 300ML</strong> (ID: 9146) - 130 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 43.3333
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-10-09 | S39644 | 130 | 14.76€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [130]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 130
 
 </details>
 
@@ -1802,30 +1682,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1462] LV AIOLI BIO 200ML</strong> (ID: 9094) - 185 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 10.2778
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-24 | S39371 | 185 | 9.36€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [185]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 185
-
-</details>
-
-<details>
 <summary>🔴 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18808) - 56 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -2212,30 +2068,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1703] LV MAYONNAISE BIO 470ML WECK</strong> (ID: 9190) - 140 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 4.5161
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-11 | S39168 | 140 | 21.99€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [140]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 140
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF1460] LV MAYONNAISE BIO 200ML</strong> (ID: 9092) - 370 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -2289,12 +2121,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1639] JF BURGER SQUEEZE 300ML</strong> (ID: 9160) - 150 unités</summary>
+<summary>🟡 <strong>[PF1639] JF BURGER SQUEEZE 300ML</strong> (ID: 9160) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.8387
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.5110
+- **Stock restant estimé**: 41.16
+- **Jours avant rupture**: **11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -2302,37 +2134,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-11 | S39167 | 150 | 15.96€ |
+| 2025-03-12 | S35364 | 300 | 15.96€ |
+| 2025-01-09 | S34221 | 150 | 15.96€ |
+| 2024-09-16 | S32205 | 150 | 15.96€ |
+| 2024-07-08 | S31167 | 150 | 15.96€ |
+| 2024-05-16 | S30347 | 25 | 15.96€ |
+| 2024-03-13 | S29307 | 150 | 15.96€ |
+| 2024-02-29 | S29166 | 1000 | 15.96€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [150, 300, 150, 150, 150]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 150
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PI3102] PI TARTI PAPRIKA CONS 250</strong> (ID: 9698) - 1488 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 48.0000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-11 | S39157 | 1488 | 1.27€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1488]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1488
 
 </details>
 
@@ -2575,30 +2390,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1811] LV SAUCE AIOLI PESTO 250M WECK</strong> (ID: 9266) - 200 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 5.4054
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-05 | S39009 | 200 | 15.12€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 200
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF3237] LV MAYONNAISE POIVRE 250ML WECK </strong> (ID: 14444) - 400 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -2679,30 +2470,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1819] LV VINAIGRETTE CIBOU WECK 200M</strong> (ID: 9272) - 150 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 4.0541
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-05 | S39009 | 150 | 10.98€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 150
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF1786] TARTI ALNATUR BIO MANGUE 200ML</strong> (ID: 9241) - 450 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -2779,12 +2546,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1849] JF KETCHUP SQUEEZE 300ML</strong> (ID: 9289) - 60 unités</summary>
+<summary>🔴 <strong>[PF1849] JF KETCHUP SQUEEZE 300ML</strong> (ID: 9289) - 55 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.6216
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.3418
+- **Stock restant estimé**: -26.65
+- **Jours avant rupture**: **-11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -2792,13 +2559,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-05 | S39003 | 60 | 14.76€ |
+| 2025-04-11 | S36004 | 50 | 14.76€ |
+| 2025-01-09 | S34221 | 55 | 14.76€ |
+| 2024-07-08 | S31167 | 120 | 14.76€ |
+| 2024-05-16 | S30347 | 55 | 14.76€ |
+| 2024-03-13 | S29307 | 44 | 14.76€ |
+| 2024-02-29 | S29166 | 1000 | 14.76€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [60]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 60
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [60, 50, 55, 120, 55]
+- **Nombre commandes**: 7
+- **Valeur médiane**: 55
 
 </details>
 
@@ -3022,50 +2795,28 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1768] LV TARTINADE BIO TRUFFES 135G</strong> (ID: 9226) - 500 unités</summary>
+<summary>🔴 <strong>[PF3366] LV BE TARTINADE BIO ASPERGE 190G</strong> (ID: 19304) - 350 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 10.8696
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.0837
+- **Stock restant estimé**: -157.27
+- **Jours avant rupture**: **-51j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
 
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
-| 2025-08-27 | S38806 | 500 | 11.46€ |
+| 2025-08-22 | S38679 | 0 | 11.10€ |
+| 2025-04-11 | S36005 | 350 | 11.10€ |
+| 2025-02-27 | S35106 | 350 | 11.10€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [500]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 500
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3321] LV BE TARTINADE BIO KIDS 190G</strong> (ID: 17592) - 466 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 9.1373
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38681 | 466 | 8.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [466]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 466
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [0, 350, 350]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 350
 
 </details>
 
@@ -3144,12 +2895,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1721] LV VIN CAESAR PET 250 BIO</strong> (ID: 9199) - 260 unités</summary>
+<summary>🟡 <strong>[PF1721] LV VIN CAESAR PET 250 BIO</strong> (ID: 9199) - 260 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 5.0980
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.8324
+- **Stock restant estimé**: 64.55
+- **Jours avant rupture**: **16j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -3157,36 +2908,22 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-22 | S38668 | 260 | 12.78€ |
+| 2025-04-11 | S36006 | 561 | 12.78€ |
+| 2025-02-17 | S34934 | 260 | 12.78€ |
+| 2024-12-05 | S33702 | 260 | 12.78€ |
+| 2024-09-25 | S32393 | 260 | 12.78€ |
+| 2024-08-08 | S31604 | 0 | 12.78€ |
+| 2024-06-19 | S30860 | 180 | 12.78€ |
+| 2024-05-07 | S30204 | 260 | 12.78€ |
+| 2024-02-02 | S28795 | 260 | 12.78€ |
+| 2024-01-10 | S28475 | 260 | 12.78€ |
+| 2023-11-02 | S27415 | 160 | 13.02€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [260]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 260
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1720] LV VIN MIEL MOU PET 250 BIO</strong> (ID: 9198) - 260 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 5.0980
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38668 | 260 | 12.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [260]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [260, 561, 260, 260, 260]
+- **Nombre commandes**: 11
 - **Valeur médiane**: 260
 
 </details>
@@ -3213,30 +2950,6 @@
 - **Quantités historiques**: [50, 100]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 75
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PI3308] PI TARTINADE AUBERGINE BIO ECOTERRA CONS 250G</strong> (ID: 17492) - 1152 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 22.5882
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38661 | 1152 | 1.27€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1152]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1152
 
 </details>
 
@@ -3469,30 +3182,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3236] LV MAYONNAISE WASABI 250ML WECK</strong> (ID: 14443) - 200 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 3.7037
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-19 | S38580 | 200 | 14.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 200
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PI3200] PI TARTI AUBERGINE CONS 250</strong> (ID: 9696) - 1356 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -3514,54 +3203,6 @@
 - **Quantités historiques**: [1152, 1560]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 1356
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF0524] FILOU SAUCE TOMATE 815 GR</strong> (ID: 9038) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0152
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-07 | S38408 | 1 | 25.56€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1140] FILOU SAUCE CHASSEUR 850G</strong> (ID: 9065) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0152
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-07 | S38408 | 1 | 25.56€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -3590,54 +3231,6 @@
 - **Quantités historiques**: [1, 2, 1, 1, 1]
 - **Nombre commandes**: 5
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PI3307] PI TARTINADE POMME BIO CONS 250G</strong> (ID: 17491) - 1777 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 26.5224
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-06 | S38361 | 1777 | 1.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1777]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1777
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PI3309] PI TARTINADE CAROTTE BIO ECOTERRA CONS 250G</strong> (ID: 17493) - 1527 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 22.7910
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-06 | S38361 | 1527 | 1.27€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1527]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1527
 
 </details>
 
@@ -3772,36 +3365,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3338] LV DE BROTAUFSTRICH BIO POTIRON 180G</strong> (ID: 17656) - 616 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 7.1628
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-18 | S38150 | 616 | 7.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [616]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 616
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF1484] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 9104) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.5789
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.9255
+- **Stock restant estimé**: -127.93
+- **Jours avant rupture**: **-43j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -3809,37 +3378,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37985 | 150 | 16.83€ |
+| 2025-03-12 | S35364 | 150 | 16.83€ |
+| 2024-10-01 | S32529 | 150 | 16.83€ |
+| 2024-07-08 | S31167 | 150 | 16.83€ |
+| 2024-04-15 | S29778 | 129 | 16.83€ |
+| 2024-02-29 | S29166 | 1000 | 16.83€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [150, 150, 150, 150, 129]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 150
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3227] JF SAUCE LIEGEOISE 380GX6</strong> (ID: 14407) - 438 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 4.6105
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-09 | S37985 | 438 | 8.28€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [438]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 438
 
 </details>
 
@@ -3847,9 +3397,9 @@
 <summary>🔴 <strong>[PF3226] JF SAUCE LAPIN 380GX6</strong> (ID: 14404) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.5789
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.1997
+- **Stock restant estimé**: -58.97
+- **Jours avant rupture**: **-26j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -3857,12 +3407,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37985 | 150 | 8.04€ |
+| 2025-01-06 | S34097 | 150 | 8.04€ |
+| 2024-02-29 | S29166 | 1000 | 8.04€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [150, 150, 1000]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 150
 
 </details>
@@ -3871,9 +3423,9 @@
 <summary>🔴 <strong>[PF1534] JF SAUCE COCKTAIL 250ML WECK</strong> (ID: 9118) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.1053
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.7085
+- **Stock restant estimé**: -57.31
+- **Jours avant rupture**: **-21j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -3881,12 +3433,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37985 | 200 | 14.40€ |
+| 2025-02-05 | S34684 | 200 | 14.40€ |
+| 2024-11-06 | S33146 | 200 | 14.40€ |
+| 2024-08-28 | S31968 | 200 | 14.40€ |
+| 2024-02-29 | S29166 | 1000 | 14.40€ |
+| 2023-12-13 | S28198 | 12 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [200, 200, 200, 200, 1000]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 200
 
 </details>
@@ -3921,9 +3478,9 @@
 <summary>🔴 <strong>[PF1540] JF SAUCE SAMOURAI 250ML WECK</strong> (ID: 9122) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.1053
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.3604
+- **Stock restant estimé**: -119.24
+- **Jours avant rupture**: **-35j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -3931,23 +3488,28 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37983 | 200 | 14.70€ |
+| 2025-04-11 | S36004 | 200 | 14.70€ |
+| 2025-01-06 | S34097 | 200 | 14.70€ |
+| 2024-10-01 | S32529 | 195 | 14.70€ |
+| 2024-06-19 | S30862 | 191 | 14.70€ |
+| 2024-02-29 | S29166 | 1000 | 14.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [200, 200, 200, 195, 191]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 200
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3371] JF MAYONNAISE MIEL MOUTARDE 250ML WECK</strong> (ID: 19363) - 200 unités</summary>
+<summary>🟡 <strong>[PF3371] JF MAYONNAISE MIEL MOUTARDE 250ML WECK</strong> (ID: 19363) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.1053
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.9900
+- **Stock restant estimé**: 10.95
+- **Jours avant rupture**: **5j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -3955,23 +3517,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37983 | 200 | 14.40€ |
+| 2025-03-25 | S35622 | 200 | 14.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [200, 200]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 200
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3372] JF SAUCE CHIPOTLE 250ML WECK</strong> (ID: 19364) - 200 unités</summary>
+<summary>🟡 <strong>[PF3372] JF SAUCE CHIPOTLE 250ML WECK</strong> (ID: 19364) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.1053
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.9900
+- **Stock restant estimé**: 10.95
+- **Jours avant rupture**: **5j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -3979,12 +3542,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37983 | 200 | 14.40€ |
+| 2025-03-25 | S35622 | 200 | 14.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [200, 200]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 200
 
 </details>
@@ -4268,12 +3832,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PI3103] PI TARTI DATTES CONS 250G BIO</strong> (ID: 9699) - 1596 unités</summary>
+<summary>🟡 <strong>[PI3203] PI TARTI MANGUE CONS 250</strong> (ID: 9701) - 1560 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 14.5091
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 12.4128
+- **Stock restant estimé**: 230.59
+- **Jours avant rupture**: **18j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4281,61 +3845,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-24 | S37651 | 1596 | 1.27€ |
+| 2025-03-17 | S35450 | 1560 | 1.27€ |
+| 2025-01-06 | S34095 | 1496 | 1.27€ |
+| 2024-08-08 | S31605 | 780 | 1.27€ |
+| 2024-03-21 | S29431 | 1586 | 1.27€ |
+| 2024-02-21 | S29034 | 780 | 1.60€ |
+| 2023-11-24 | S27824 | 742 | 1.63€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1596]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1596
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PI3202] PI TARTI OLIVE CONS 250</strong> (ID: 9700) - 1560 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 14.1818
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-24 | S37651 | 1560 | 1.27€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1560]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1596, 1560, 1496, 780, 1586]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1560
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PI3203] PI TARTI MANGUE CONS 250</strong> (ID: 9701) - 1596 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 14.5091
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-24 | S37651 | 1596 | 1.27€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1596]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1596
 
 </details>
 
@@ -4362,30 +3884,6 @@
 - **Quantités historiques**: [350, 350, 220]
 - **Nombre commandes**: 3
 - **Valeur médiane**: 350
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1770] LV MOUT ANCIENNE BIO 200</strong> (ID: 9228) - 185 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.6818
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-24 | S37650 | 185 | 9.12€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [185]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 185
 
 </details>
 
@@ -4467,9 +3965,9 @@
 <summary>🔴 <strong>[PF1924] JF PICKLES 350 ML</strong> (ID: 9344) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.6129
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.6227
+- **Stock restant estimé**: -125.21
+- **Jours avant rupture**: **-47j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4477,12 +3975,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-10 | S37338 | 200 | 13.08€ |
+| 2024-08-08 | S31600 | 200 | 13.08€ |
+| 2024-03-13 | S29307 | 150 | 13.08€ |
+| 2024-02-29 | S29166 | 1000 | 13.08€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [200, 200, 150, 1000]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 200
 
 </details>
@@ -4491,9 +3992,9 @@
 <summary>🔴 <strong>[PF1688] JF BBQ SQUEEZE 300ML</strong> (ID: 9176) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.2097
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.0525
+- **Stock restant estimé**: -228.50
+- **Jours avant rupture**: **-74j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4501,12 +4002,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-10 | S37338 | 150 | 14.76€ |
+| 2025-03-12 | S35364 | 150 | 14.76€ |
+| 2024-11-14 | S33273 | 150 | 14.76€ |
+| 2024-07-08 | S31167 | 124 | 14.76€ |
+| 2024-03-26 | S29502 | 130 | 14.76€ |
+| 2024-03-13 | S29307 | 100 | 14.76€ |
+| 2024-02-29 | S29166 | 1000 | 14.76€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [150, 150, 150, 124, 130]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 150
 
 </details>
@@ -4612,12 +4119,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3240] TVF TARTINADE BIO BETTERAVE RAIFORT 180G</strong> (ID: 14447) - 300 unités</summary>
+<summary>🔴 <strong>[PF3240] TVF TARTINADE BIO BETTERAVE RAIFORT 180G</strong> (ID: 14447) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.3438
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.9611
+- **Stock restant estimé**: -79.02
+- **Jours avant rupture**: **-26j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4625,13 +4132,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-06 | S37307 | 300 | 7.80€ |
+| 2025-01-09 | S34226 | 150 | 7.80€ |
+| 2024-10-01 | S32528 | 150 | 7.80€ |
+| 2024-03-13 | S29306 | 150 | 7.80€ |
+| 2024-02-29 | S29166 | 1000 | 7.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [300]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 300
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [300, 150, 150, 150, 1000]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 150
 
 </details>
 
@@ -4684,12 +4195,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PI3267] PI MAYONNAISE BIO CONS 250ML</strong> (ID: 14913) - 640 unités</summary>
+<summary>🔴 <strong>[PI3267] PI MAYONNAISE BIO CONS 250ML</strong> (ID: 14913) - 560 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.6715
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 6.4847
+- **Stock restant estimé**: -248.40
+- **Jours avant rupture**: **-38j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4697,13 +4208,21 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-28 | S37134 | 640 | 6.33€ |
+| 2025-02-17 | S34935 | 560 | 6.33€ |
+| 2025-01-06 | S34095 | 592.17 | 6.33€ |
+| 2024-11-06 | S33141 | 346 | 6.33€ |
+| 2024-09-25 | S32393 | 118 | 6.33€ |
+| 2024-08-08 | S31605 | 396 | 6.33€ |
+| 2024-05-16 | S30345 | 680 | 6.33€ |
+| 2024-02-02 | S28795 | 587 | 6.33€ |
+| 2024-01-09 | S28441 | 244 | 6.33€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [640]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 640
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [640, 560, 592.17, 346, 118]
+- **Nombre commandes**: 9
+- **Valeur médiane**: 560
 
 </details>
 
@@ -4736,9 +4255,9 @@
 <summary>🔴 <strong>[PF1850] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 9290) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.0949
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.6988
+- **Stock restant estimé**: -219.74
+- **Jours avant rupture**: **-81j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4746,12 +4265,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-28 | S37131 | 150 | 18.60€ |
+| 2025-02-17 | S34931 | 150 | 18.60€ |
+| 2024-09-16 | S32205 | 145 | 18.60€ |
+| 2024-05-16 | S30347 | 150 | 18.60€ |
+| 2024-02-29 | S29166 | 1000 | 18.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [150, 150, 145, 150, 1000]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 150
 
 </details>
@@ -4878,36 +4401,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0539] JF VOL AU VENT 2,5 KG</strong> (ID: 9034) - 1 unités</summary>
+<summary>🟡 <strong>[PF1563] LV AIOLI PESTO BIO 200ML</strong> (ID: 9135) - 175 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0068
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-19 | S36886 | 1 | 65.94€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1563] LV AIOLI PESTO BIO 200ML</strong> (ID: 9135) - 185 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.2333
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.1690
+- **Stock restant estimé**: 9.65
+- **Jours avant rupture**: **8j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4915,23 +4414,28 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36824 | 185 | 9.36€ |
+| 2024-09-16 | S32207 | 185 | 9.36€ |
+| 2024-08-08 | S31604 | 85 | 9.36€ |
+| 2024-03-26 | S29502 | 175 | 0.00€ |
+| 2024-01-10 | S28475 | 100 | 9.36€ |
+| 2023-11-02 | S27415 | 100 | 9.54€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [185]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 185
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [185, 185, 85, 175, 100]
+- **Nombre commandes**: 6
+- **Valeur médiane**: 175
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF2003] TVF TARTINADE BIO PAPRIKA200ML</strong> (ID: 9687) - 354 unités</summary>
+<summary>🔴 <strong>[PF2003] TVF TARTINADE BIO PAPRIKA200ML</strong> (ID: 9687) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.3600
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 4.5753
+- **Stock restant estimé**: -332.29
+- **Jours avant rupture**: **-72j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4939,23 +4443,31 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36823 | 354 | 7.86€ |
+| 2025-03-19 | S35498 | 150 | 7.86€ |
+| 2025-03-12 | S35363 | 150 | 7.86€ |
+| 2024-12-05 | S33703 | 150 | 7.86€ |
+| 2024-10-15 | S32782 | 150 | 7.86€ |
+| 2024-07-03 | S31105 | 150 | 7.86€ |
+| 2024-04-15 | S29778 | 300 | 7.86€ |
+| 2024-03-13 | S29306 | 300 | 7.86€ |
+| 2024-02-29 | S29166 | 1000 | 7.86€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [354]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 354
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [354, 150, 150, 150, 150]
+- **Nombre commandes**: 9
+- **Valeur médiane**: 150
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF2004] TVF TARTINADE BIO CAROTTE200ML</strong> (ID: 9686) - 300 unités</summary>
+<summary>🔴 <strong>[PF2004] TVF TARTINADE BIO CAROTTE200ML</strong> (ID: 9686) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.0000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.6548
+- **Stock restant estimé**: -248.22
+- **Jours avant rupture**: **-67j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -4963,13 +4475,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36823 | 300 | 7.80€ |
+| 2025-03-19 | S35498 | 150 | 7.80€ |
+| 2025-01-06 | S34096 | 150 | 7.80€ |
+| 2024-10-29 | S33014 | 150 | 7.80€ |
+| 2024-08-08 | S31604 | 110 | 7.80€ |
+| 2024-03-13 | S29306 | 300 | 7.80€ |
+| 2024-02-29 | S29166 | 1000 | 7.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [300]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 300
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [300, 150, 150, 150, 110]
+- **Nombre commandes**: 7
+- **Valeur médiane**: 150
 
 </details>
 
@@ -4995,6 +4513,39 @@
 - **Quantités historiques**: [300, 150]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 225
+
+</details>
+
+<details>
+<summary>🔴 <strong>[PF2007] TVF TARTINADE BIO TOMATE 200ML</strong> (ID: 9688) - 200 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 4.3655
+- **Stock restant estimé**: -654.82
+- **Jours avant rupture**: **-150j**
+- **Seuil réappro**: 19j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-05-15 | S36823 | 0 | 7.56€ |
+| 2025-03-19 | S35498 | 150 | 7.56€ |
+| 2025-03-12 | S35363 | 200 | 7.56€ |
+| 2025-01-06 | S34102 | 300 | 7.56€ |
+| 2024-12-05 | S33701 | 244 | 7.56€ |
+| 2024-10-15 | S32782 | 150 | 7.56€ |
+| 2024-09-16 | S32206 | 150 | 7.56€ |
+| 2024-08-08 | S31604 | 86 | 7.56€ |
+| 2024-04-24 | S29952 | 300 | 7.56€ |
+| 2024-02-29 | S29166 | 1000 | 7.56€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [0, 150, 200, 300, 244]
+- **Nombre commandes**: 10
+- **Valeur médiane**: 200
 
 </details>
 
@@ -5075,12 +4626,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1780] TARTINAPERO BIO OLIVE 200ML</strong> (ID: 9236) - 350 unités</summary>
+<summary>🔴 <strong>[PF1780] TARTINAPERO BIO OLIVE 200ML</strong> (ID: 9236) - 340 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.3179
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.4876
+- **Stock restant estimé**: -25.62
+- **Jours avant rupture**: **-10j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -5088,23 +4639,27 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-14 | S36777 | 350 | 7.68€ |
+| 2025-01-14 | S34318 | 330 | 7.68€ |
+| 2024-06-11 | S30733 | 329 | 7.68€ |
+| 2024-04-03 | S29604 | 350 | 7.68€ |
+| 2023-11-29 | S27924 | 340 | 7.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 350
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [350, 330, 329, 350, 340]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 340
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1781] TARTINAPERO BIO LENTILLE 200ML</strong> (ID: 9237) - 350 unités</summary>
+<summary>🟡 <strong>[PF1781] TARTINAPERO BIO LENTILLE 200ML</strong> (ID: 9237) - 350 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.3179
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.1798
+- **Stock restant estimé**: 20.84
+- **Jours avant rupture**: **9j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -5112,37 +4667,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-14 | S36777 | 350 | 7.98€ |
+| 2024-11-27 | S33562 | 350 | 7.98€ |
+| 2024-10-10 | S32700 | 100 | 7.98€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [350, 350, 100]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 350
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3322] LV FR TARTINAPERO BIO KIDS 190G</strong> (ID: 17593) - 250 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.6556
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-14 | S36777 | 250 | 8.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [250]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 250
 
 </details>
 
@@ -5916,108 +5449,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1818] LV VINAIGRETTE MOUTA WECK 200M</strong> (ID: 9271) - 150 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.9434
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-06 | S36550 | 150 | 10.92€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 150
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3309] LV FR TARTINAPERO BIO BROCOLI 190G</strong> (ID: 17408) - 350 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 2.2013
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-06 | S36550 | 350 | 7.68€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 350
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3308] LV FR TARTINAPERO BIO OIGNON 190G</strong> (ID: 17407) - 350 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 2.2013
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-06 | S36550 | 350 | 7.74€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 350
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1550] LV MOUTARDE BIO 200ML</strong> (ID: 9127) - 185 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.1212
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-30 | S36449 | 185 | 9.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [185]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 185
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF1683] LV TARTINADE BIO MANGUE 400G</strong> (ID: 9171) - 166 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.0061
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.4181
+- **Stock restant estimé**: -397.99
+- **Jours avant rupture**: **-116j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -6025,23 +5462,35 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-30 | S36449 | 166 | 14.58€ |
+| 2025-03-21 | S35552 | 249 | 14.58€ |
+| 2025-01-22 | S34427 | 166 | 14.58€ |
+| 2025-01-09 | S34226 | 152 | 14.58€ |
+| 2024-10-15 | S32782 | 166 | 14.58€ |
+| 2024-09-25 | S32391 | 83 | 14.58€ |
+| 2024-09-16 | S32206 | 166 | 14.58€ |
+| 2024-06-19 | S30861 | 160 | 14.58€ |
+| 2024-05-14 | S30277 | 160 | 14.58€ |
+| 2024-05-07 | S30203 | 160 | 14.58€ |
+| 2024-04-03 | S29605 | 83 | 14.58€ |
+| 2024-03-13 | S29306 | 160 | 14.58€ |
+| 2024-01-10 | S28475 | 320 | 14.58€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [166]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [166, 249, 166, 152, 166]
+- **Nombre commandes**: 13
 - **Valeur médiane**: 166
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF2002] TVF TARTINADE BIO MANGUE 200ML</strong> (ID: 9685) - 300 unités</summary>
+<summary>🔴 <strong>[PF2002] TVF TARTINADE BIO MANGUE 200ML</strong> (ID: 9685) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.8182
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 4.4788
+- **Stock restant estimé**: -439.01
+- **Jours avant rupture**: **-98j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -6049,13 +5498,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-30 | S36447 | 300 | 7.80€ |
+| 2025-03-12 | S35363 | 150 | 7.80€ |
+| 2025-01-06 | S34102 | 300 | 7.80€ |
+| 2024-10-29 | S33014 | 150 | 7.80€ |
+| 2024-09-16 | S32206 | 150 | 7.80€ |
+| 2024-05-16 | S30348 | 297 | 7.80€ |
+| 2024-03-13 | S29306 | 300 | 7.80€ |
+| 2024-02-29 | S29166 | 1000 | 7.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [300]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 300
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [300, 150, 300, 150, 150]
+- **Nombre commandes**: 8
+- **Valeur médiane**: 150
 
 </details>
 
@@ -6063,9 +5519,9 @@
 <summary>🔴 <strong>[PF2005] TVF TARTINADE BIO OLIVE 200ML</strong> (ID: 9689) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.9091
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 2.9611
+- **Stock restant estimé**: -338.58
+- **Jours avant rupture**: **-114j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -6073,12 +5529,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-30 | S36447 | 150 | 7.68€ |
+| 2025-03-12 | S35363 | 150 | 7.68€ |
+| 2024-12-05 | S33703 | 150 | 7.68€ |
+| 2024-05-16 | S30348 | 300 | 7.68€ |
+| 2024-02-29 | S29166 | 1000 | 7.68€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [150, 150, 150, 300, 1000]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 150
 
 </details>
@@ -6109,36 +5569,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0608] FILOU/LD SAUCE SAMOURAI  10 L</strong> (ID: 8978) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0058
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-23 | S36357 | 1 | 25.67€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF1628] LV TARTINADE BIO HOUMOUS 200ML</strong> (ID: 9155) - 700 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.0698
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 11.1354
+- **Stock restant estimé**: -1215.28
+- **Jours avant rupture**: **-109j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -6146,12 +5582,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-23 | S36351 | 700 | 7.92€ |
+| 2025-04-11 | S36005 | 350 | 7.92€ |
+| 2025-02-17 | S34933 | 700 | 7.92€ |
+| 2025-01-06 | S34094 | 700 | 7.92€ |
+| 2024-12-05 | S33703 | 350 | 7.92€ |
+| 2024-10-01 | S32528 | 350 | 7.92€ |
+| 2024-09-16 | S32206 | 700 | 7.92€ |
+| 2024-08-08 | S31604 | 700 | 7.92€ |
+| 2024-05-07 | S30203 | 687 | 7.92€ |
+| 2024-02-02 | S28795 | 1050 | 7.92€ |
+| 2024-01-10 | S28475 | 750 | 7.92€ |
+| 2023-11-24 | S27825 | 350 | 8.04€ |
+| 2023-10-19 | S04911 | 675 | 8.04€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [700]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [700, 350, 700, 700, 350]
+- **Nombre commandes**: 13
 - **Valeur médiane**: 700
 
 </details>
@@ -6160,9 +5608,9 @@
 <summary>🔴 <strong>[PF1686] LV TARTINADE BIO PAPRIKA 400G</strong> (ID: 9174) - 166 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.9651
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.6153
+- **Stock restant estimé**: -455.83
+- **Jours avant rupture**: **-126j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -6170,12 +5618,23 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-23 | S36351 | 166 | 13.68€ |
+| 2025-02-17 | S34933 | 83 | 13.68€ |
+| 2025-01-22 | S34427 | 332 | 13.68€ |
+| 2025-01-06 | S34094 | 166 | 13.68€ |
+| 2024-11-06 | S33140 | 166 | 13.68€ |
+| 2024-09-16 | S32206 | 164 | 13.68€ |
+| 2024-06-19 | S30861 | 210 | 13.68€ |
+| 2024-05-14 | S30277 | 160 | 13.68€ |
+| 2024-04-03 | S29605 | 194 | 13.86€ |
+| 2024-03-13 | S29306 | 160 | 13.86€ |
+| 2024-01-10 | S28475 | 360 | 13.68€ |
+| 2024-01-09 | S28441 | 160 | 13.86€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [166]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [166, 83, 332, 166, 166]
+- **Nombre commandes**: 12
 - **Valeur médiane**: 166
 
 </details>
@@ -6184,9 +5643,9 @@
 <summary>🔴 <strong>[PF3234] LV BE TARTINADE BIO LENTILLE BALSAMIQUE 190G</strong> (ID: 14441) - 350 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.0349
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.3149
+- **Stock restant estimé**: -220.17
+- **Jours avant rupture**: **-66j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -6194,37 +5653,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-23 | S36351 | 350 | 8.40€ |
+| 2025-02-17 | S34933 | 350 | 8.40€ |
+| 2024-12-05 | S33703 | 350 | 8.40€ |
+| 2024-09-16 | S32206 | 344 | 8.40€ |
+| 2024-05-07 | S30203 | 339 | 8.52€ |
+| 2024-03-13 | S29306 | 343 | 8.52€ |
+| 2023-10-19 | S04911 | 324 | 8.52€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [350, 350, 350, 344, 339]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 350
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3228] LV VOL AU VENT BIO 400 GR</strong> (ID: 14414) - 660 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 3.8372
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-23 | S36350 | 660 | 17.28€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [660]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 660
 
 </details>
 
@@ -6236,7 +5677,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 4171449.65€**
+- **Montant initial: 4089862.02€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -6245,12 +5686,7 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [PF1951] LV TARTINADE BIO B... | 9369 | 166 | 0 | 166 | 14.16€ | 2350.56€ |
-| [PF1791] TARTI ALNATUR BIO ... | 9246 | 300 | 0 | 300 | 7.68€ | 2304.00€ |
 | [PF1790] TARTI ALNATUR BIO ... | 9273 | 300 | 0 | 300 | 7.32€ | 2196.00€ |
-| [PF1473] JF MAYONNAIS POIVR... | 9100 | 200 | 0 | 200 | 14.82€ | 2964.00€ |
-| [PF1784] JF MOUTARDE DOUCE ... | 9240 | 200 | 0 | 200 | 13.68€ | 2736.00€ |
-| [PF1601] JF SAMOURAI SQUEEZ... | 9146 | 130 | 0 | 130 | 14.76€ | 1918.80€ |
 | [PF1793] LV MAYONNAI TRUFFE... | 9248 | 200 | 0 | 200 | 17.94€ | 3588.00€ |
 | [PF3394] LV SAUCE BOURGUIGN... | 19866 | 200 | 0 | 200 | 14.70€ | 2940.00€ |
 | [PF1773] TARTINAPERO BIO MA... | 9229 | 434 | 0 | 434 | 7.80€ | 3385.20€ |
@@ -6310,7 +5746,6 @@
 | [PF0121] FILOU MAYONNAISE O... | 9000 | 3 | 0 | 3 | 16.08€ | 48.24€ |
 | [PF1539] FILOU BOULETTE CHA... | 9121 | 1 | 0 | 1 | 33.00€ | 33.00€ |
 | [PF1224] FILOU BOULETTES TO... | 9031 | 1 | 0 | 1 | 33.00€ | 33.00€ |
-| [PF1462] LV AIOLI BIO 200ML | 9094 | 185 | 0 | 185 | 9.36€ | 1731.60€ |
 | [REB08] ReBEL chips premium... | 18808 | 56 | 0 | 56 | 14.30€ | 800.80€ |
 | [REB11] ReBEL chips premium... | 18813 | 56 | 0 | 56 | 20.35€ | 1139.60€ |
 | [PF2972] LD FR TARTINADE BI... | 9430 | 118 | 0 | 118 | 7.68€ | 906.24€ |
@@ -6325,11 +5760,9 @@
 | [fsv08] Banana chips bio vr... | 18835 | 5 | 0 | 5 | 9.02€ | 45.10€ |
 | [fsv10] Noix de cajou oigno... | 18842 | 7 | 0 | 7 | 48.84€ | 341.88€ |
 | [fsv13] Pistaches grillées ... | 18845 | 4 | 0 | 4 | 50.60€ | 202.40€ |
-| [PF1703] LV MAYONNAISE BIO ... | 9190 | 140 | 0 | 140 | 21.99€ | 3078.74€ |
 | [PF1460] LV MAYONNAISE BIO ... | 9092 | 370 | 0 | 370 | 8.82€ | 3263.40€ |
 | [PF1527] JF SAUCE BEARNAISE... | 9114 | 200 | 0 | 200 | 14.34€ | 2868.00€ |
 | [PF1639] JF BURGER SQUEEZE ... | 9160 | 150 | 0 | 150 | 15.96€ | 2394.00€ |
-| [PI3102] PI TARTI PAPRIKA C... | 9698 | 1488 | 0 | 1488 | 1.27€ | 1889.76€ |
 | [PF1810] LV SAUCE BEARNAISE... | 9265 | 400 | 0 | 400 | 14.34€ | 5736.00€ |
 | [NOD04] NODA limonade bio f... | 18883 | 135 | 0 | 135 | 19.01€ | 2566.08€ |
 | [WIG07] WIGNAC cidre nature... | 18822 | 8 | 0 | 8 | 19.80€ | 158.40€ |
@@ -6339,15 +5772,13 @@
 | [WIG04] WIGNAC cidre rosé b... | 18824 | 15 | 0 | 15 | 22.44€ | 336.60€ |
 | [PAO03] PAOLA cola canette ... | 18909 | 25 | 0 | 25 | 19.80€ | 495.00€ |
 | [PAO04] PAOLA cola ZERO can... | 18907 | 20 | 0 | 20 | 19.80€ | 396.00€ |
-| [PF1811] LV SAUCE AIOLI PES... | 9266 | 200 | 0 | 200 | 15.12€ | 3024.00€ |
 | [PF3237] LV MAYONNAISE POIV... | 14444 | 400 | 0 | 400 | 14.82€ | 5928.00€ |
 | [PF1775] TARTINAPERO BIO PA... | 9231 | 392 | 0 | 392 | 7.86€ | 3081.12€ |
 | [PF2978] TARTINAPERO BIO AI... | 9436 | 392 | 0 | 392 | 7.68€ | 3010.56€ |
-| [PF1819] LV VINAIGRETTE CIB... | 9272 | 150 | 0 | 150 | 10.98€ | 1647.00€ |
 | [PF1786] TARTI ALNATUR BIO ... | 9241 | 450 | 0 | 450 | 7.50€ | 3375.00€ |
 | [PF1789] TARTI ALNATUR BIO ... | 9244 | 600 | 0 | 600 | 7.50€ | 4500.00€ |
 | [PF1967] JF SAUCE AIOLI 250... | 9385 | 200 | 0 | 200 | 14.70€ | 2940.00€ |
-| [PF1849] JF KETCHUP SQUEEZE... | 9289 | 60 | 0 | 60 | 14.76€ | 885.60€ |
+| [PF1849] JF KETCHUP SQUEEZE... | 9289 | 55 | 0 | 55 | 14.76€ | 811.80€ |
 | [PF3370] JF MAYONNAISE CITR... | 19362 | 200 | 0 | 200 | 13.68€ | 2736.00€ |
 | [PF3387] JF VINAIGRETTE CAE... | 19847 | 200 | 0 | 200 | 8.70€ | 1740.00€ |
 | [PF3383] JF VINAIGRETTE CIB... | 19843 | 200 | 0 | 200 | 8.34€ | 1668.00€ |
@@ -6357,15 +5788,12 @@
 | [PF1694] LD FR TARTINAD BIO... | 9182 | 1 | 0 | 1 | 7.86€ | 7.86€ |
 | [PF2937] LD FR TARTINADE BI... | 9426 | 100 | 0 | 100 | 7.92€ | 792.00€ |
 | [PF2980] LV TARTINADE BIO A... | 9438 | 700 | 0 | 700 | 7.68€ | 5376.00€ |
-| [PF1768] LV TARTINADE BIO T... | 9226 | 500 | 0 | 500 | 11.46€ | 5730.00€ |
-| [PF3321] LV BE TARTINADE BI... | 17592 | 466 | 0 | 466 | 8.04€ | 3746.64€ |
+| [PF3366] LV BE TARTINADE BI... | 19304 | 350 | 0 | 350 | 11.10€ | 3885.00€ |
 | [PF3395] LV SDP SAUCE COCKT... | 19868 | 2100 | 0 | 2100 | 0.86€ | 1806.00€ |
 | [PF3392] LV FR TARTINAPERO ... | 19864 | 434 | 0 | 434 | 11.10€ | 4817.40€ |
 | [PI3346] PI TARTINADE BETTE... | 18933 | 5400 | 0 | 5400 | 1.27€ | 6858.00€ |
 | [PF1721] LV VIN CAESAR PET ... | 9199 | 260 | 0 | 260 | 12.78€ | 3322.80€ |
-| [PF1720] LV VIN MIEL MOU PE... | 9198 | 260 | 0 | 260 | 12.60€ | 3276.00€ |
 | [PF2990] LD TARTINADE BIO S... | 11037 | 75 | 0 | 75 | 10.56€ | 792.00€ |
-| [PI3308] PI TARTINADE AUBER... | 17492 | 1152 | 0 | 1152 | 1.27€ | 1463.04€ |
 | [OCC05] OCCHIOLINO premium ... | 18817 | 3 | 0 | 3 | 85.80€ | 257.40€ |
 | [PAO01] PAOLA cola verre 25... | 18910 | 13 | 0 | 13 | 19.80€ | 257.40€ |
 | [PAO02] PAOLA cola ZERO ver... | 18908 | 10 | 0 | 10 | 19.80€ | 198.00€ |
@@ -6375,21 +5803,14 @@
 | [JOY06] JOY! Confiture bio ... | 18854 | 200 | 0 | 200 | 20.94€ | 4188.80€ |
 | [JOY08] JOY! Confiture bio ... | 18853 | 200 | 0 | 200 | 24.64€ | 4928.00€ |
 | [RIT10] RITCHIE Cola ZERO -... | 18922 | 5 | 0 | 5 | 27.00€ | 135.03€ |
-| [PF3236] LV MAYONNAISE WASA... | 14443 | 200 | 0 | 200 | 14.70€ | 2940.00€ |
 | [PI3200] PI TARTI AUBERGINE... | 9696 | 1356 | 0 | 1356 | 1.27€ | 1722.12€ |
-| [PF0524] FILOU SAUCE TOMATE... | 9038 | 1 | 0 | 1 | 25.56€ | 25.56€ |
-| [PF1140] FILOU SAUCE CHASSE... | 9065 | 1 | 0 | 1 | 25.56€ | 25.56€ |
 | [PF1599] FILOU MAYONNAISE O... | 9145 | 1 | 0 | 1 | 21.48€ | 21.48€ |
-| [PI3307] PI TARTINADE POMME... | 17491 | 1777 | 0 | 1777 | 1.20€ | 2135.95€ |
-| [PI3309] PI TARTINADE CAROT... | 17493 | 1527 | 0 | 1527 | 1.27€ | 1939.29€ |
 | [BUD02] BUDDY bio functiona... | 18830 | 60 | 0 | 60 | 12.67€ | 760.32€ |
 | [BUD03] BUDDY bio functiona... | 18832 | 60 | 0 | 60 | 12.67€ | 760.32€ |
 | [BUD04] BUDDY bio functiona... | 18831 | 60 | 0 | 60 | 12.67€ | 760.32€ |
 | [PF3331] LV SDP SAUCE POIVR... | 17627 | 2100 | 0 | 2100 | 0.89€ | 1869.00€ |
 | [PF3330] LV SDP SAUCE TARTA... | 17626 | 2100 | 0 | 2100 | 0.86€ | 1806.00€ |
-| [PF3338] LV DE BROTAUFSTRIC... | 17656 | 616 | 0 | 616 | 7.50€ | 4620.00€ |
 | [PF1484] JF VINAIGRETTE FH ... | 9104 | 150 | 0 | 150 | 16.83€ | 2524.50€ |
-| [PF3227] JF SAUCE LIEGEOISE... | 14407 | 438 | 0 | 438 | 8.28€ | 3626.64€ |
 | [PF3226] JF SAUCE LAPIN 380GX6 | 14404 | 150 | 0 | 150 | 8.04€ | 1206.00€ |
 | [PF1534] JF SAUCE COCKTAIL ... | 9118 | 200 | 0 | 200 | 14.40€ | 2880.00€ |
 | [PF1533] JF SAUCE ANDALOUSE... | 9117 | 200 | 0 | 200 | 14.70€ | 2940.00€ |
@@ -6407,11 +5828,8 @@
 | [KOKO01] KOKO Kombucha orig... | 18867 | 40 | 0 | 40 | 15.97€ | 638.88€ |
 | [KOKO02] KOKO Kombucha citr... | 18865 | 68 | 0 | 68 | 15.97€ | 1086.10€ |
 | [KOKO03] KOKO Kombucha fram... | 18866 | 80 | 0 | 80 | 15.97€ | 1277.76€ |
-| [PI3103] PI TARTI DATTES CO... | 9699 | 1596 | 0 | 1596 | 1.27€ | 2026.92€ |
-| [PI3202] PI TARTI OLIVE CON... | 9700 | 1560 | 0 | 1560 | 1.27€ | 1981.20€ |
-| [PI3203] PI TARTI MANGUE CO... | 9701 | 1596 | 0 | 1596 | 1.27€ | 2026.92€ |
+| [PI3203] PI TARTI MANGUE CO... | 9701 | 1560 | 0 | 1560 | 1.27€ | 1981.20€ |
 | [PF1461] LV TARTARE BIO 200ML | 9093 | 350 | 0 | 350 | 9.06€ | 3171.00€ |
-| [PF1770] LV MOUT ANCIENNE B... | 9228 | 185 | 0 | 185 | 9.12€ | 1687.20€ |
 | [PF1640] JF MITRAILLETTE SQ... | 9161 | 130 | 0 | 130 | 15.96€ | 2074.80€ |
 | [AQUA01] AQUAPAX - eau miné... | 18829 | 111 | 0 | 111 | 6.60€ | 732.60€ |
 | [LEA09] LEAMO cola bio 330ml | 18868 | 8 | 0 | 8 | 23.10€ | 184.80€ |
@@ -6421,10 +5839,10 @@
 | [ALO31] ORGANIC CRUNCH aloe... | 18898 | 896 | 0 | 896 | 7.66€ | 6859.78€ |
 | [ALO30] ORGANIC CRUNCH aloe... | 18899 | 603 | 0 | 603 | 7.66€ | 4616.57€ |
 | [ALO32] ORGANIC CRUNCH aloe... | 18900 | 549 | 0 | 549 | 7.66€ | 4203.14€ |
-| [PF3240] TVF TARTINADE BIO ... | 14447 | 300 | 0 | 300 | 7.80€ | 2340.00€ |
+| [PF3240] TVF TARTINADE BIO ... | 14447 | 150 | 0 | 150 | 7.80€ | 1170.00€ |
 | [JOY05] JOY! Confiture bio ... | 18850 | 200 | 0 | 200 | 24.64€ | 4928.00€ |
 | [JOY01] JOY! Confiture bio ... | 18848 | 200 | 0 | 200 | 18.92€ | 3784.00€ |
-| [PI3267] PI MAYONNAISE BIO ... | 14913 | 640 | 0 | 640 | 6.33€ | 4051.20€ |
+| [PI3267] PI MAYONNAISE BIO ... | 14913 | 560 | 0 | 560 | 6.33€ | 3544.80€ |
 | [PF1684] LV TARTINADE BIO A... | 9172 | 166 | 0 | 166 | 13.26€ | 2201.16€ |
 | [PF1850] JF MAYO BARAKI SQU... | 9290 | 150 | 0 | 150 | 18.60€ | 2790.00€ |
 | [ORG10] ORGANICA crunchy fr... | 18905 | 54 | 0 | 54 | 21.78€ | 1176.12€ |
@@ -6432,17 +5850,16 @@
 | [LEA06] LEAMO maté 330ml | 18872 | 5 | 0 | 5 | 23.10€ | 115.50€ |
 | [LEA07] LEAMO orangeade bio... | 18873 | 10 | 0 | 10 | 23.98€ | 239.80€ |
 | [LEA10] LEAMO ginger beer b... | 18869 | 30 | 0 | 30 | 23.98€ | 719.40€ |
-| [PF0539] JF VOL AU VENT 2,5 KG | 9034 | 1 | 0 | 1 | 65.94€ | 65.94€ |
-| [PF1563] LV AIOLI PESTO BIO... | 9135 | 185 | 0 | 185 | 9.36€ | 1731.60€ |
-| [PF2003] TVF TARTINADE BIO ... | 9687 | 354 | 0 | 354 | 7.86€ | 2782.44€ |
-| [PF2004] TVF TARTINADE BIO ... | 9686 | 300 | 0 | 300 | 7.80€ | 2340.00€ |
+| [PF1563] LV AIOLI PESTO BIO... | 9135 | 175 | 0 | 175 | 9.36€ | 1638.00€ |
+| [PF2003] TVF TARTINADE BIO ... | 9687 | 150 | 0 | 150 | 7.86€ | 1179.00€ |
+| [PF2004] TVF TARTINADE BIO ... | 9686 | 150 | 0 | 150 | 7.80€ | 1170.00€ |
 | [PF2006] TVF TARTINADE BIO ... | 9690 | 225 | 0 | 225 | 7.68€ | 1728.00€ |
+| [PF2007] TVF TARTINADE BIO ... | 9688 | 200 | 0 | 200 | 7.56€ | 1512.00€ |
 | [PF0502] FILOU MOUTARDE SQU... | 9027 | 1 | 0 | 1 | 16.92€ | 16.92€ |
 | [PF1689] FILOU CURRY KETCH ... | 9177 | 1 | 0 | 1 | 21.48€ | 21.48€ |
 | [fsv01] Cerneaux de noix na... | 18936 | 15 | 0 | 15 | 19.36€ | 290.40€ |
-| [PF1780] TARTINAPERO BIO OL... | 9236 | 350 | 0 | 350 | 7.68€ | 2688.00€ |
+| [PF1780] TARTINAPERO BIO OL... | 9236 | 340 | 0 | 340 | 7.68€ | 2611.20€ |
 | [PF1781] TARTINAPERO BIO LE... | 9237 | 350 | 0 | 350 | 7.98€ | 2793.00€ |
-| [PF3322] LV FR TARTINAPERO ... | 17593 | 250 | 0 | 250 | 8.04€ | 2010.00€ |
 | [PF1634] LV VINAIGRET CAESA... | 9158 | 75 | 0 | 75 | 16.83€ | 1262.25€ |
 | [SOWA01] SOWA citron menthe... | 18928 | 5 | 0 | 5 | 23.44€ | 117.20€ |
 | [SOWA02] SOWA bissap 250ml | 18927 | 5 | 0 | 5 | 26.19€ | 130.95€ |
@@ -6475,20 +5892,14 @@
 | [PF3246] AA0105 - LD FR TAR... | 14602 | 150 | 0 | 150 | 8.70€ | 1305.00€ |
 | [PF3349] LD FR TARTINADE BI... | 17870 | 100 | 0 | 100 | 9.29€ | 929.00€ |
 | [PF3361] LD FR TARTINADE BI... | 18409 | 150 | 0 | 150 | 8.04€ | 1206.00€ |
-| [PF1818] LV VINAIGRETTE MOU... | 9271 | 150 | 0 | 150 | 10.92€ | 1638.00€ |
-| [PF3309] LV FR TARTINAPERO ... | 17408 | 350 | 0 | 350 | 7.68€ | 2688.00€ |
-| [PF3308] LV FR TARTINAPERO ... | 17407 | 350 | 0 | 350 | 7.74€ | 2709.00€ |
-| [PF1550] LV MOUTARDE BIO 200ML | 9127 | 185 | 0 | 185 | 9.00€ | 1665.00€ |
 | [PF1683] LV TARTINADE BIO M... | 9171 | 166 | 0 | 166 | 14.58€ | 2420.28€ |
-| [PF2002] TVF TARTINADE BIO ... | 9685 | 300 | 0 | 300 | 7.80€ | 2340.00€ |
+| [PF2002] TVF TARTINADE BIO ... | 9685 | 150 | 0 | 150 | 7.80€ | 1170.00€ |
 | [PF2005] TVF TARTINADE BIO ... | 9689 | 150 | 0 | 150 | 7.68€ | 1152.00€ |
 | [PF0072] FILOU MAYONNAISE O... | 8984 | 3 | 0 | 3 | 23.10€ | 69.30€ |
-| [PF0608] FILOU/LD SAUCE SAM... | 8978 | 1 | 0 | 1 | 25.67€ | 25.67€ |
 | [PF1628] LV TARTINADE BIO H... | 9155 | 700 | 0 | 700 | 7.92€ | 5544.00€ |
 | [PF1686] LV TARTINADE BIO P... | 9174 | 166 | 0 | 166 | 13.68€ | 2270.88€ |
 | [PF3234] LV BE TARTINADE BI... | 14441 | 350 | 0 | 350 | 8.40€ | 2940.00€ |
-| [PF3228] LV VOL AU VENT BIO... | 14414 | 660 | 0 | 660 | 17.28€ | 11404.80€ |
 
-**Total (Phase 2.5): 4171449.65€**
+**Total (Phase 2.5): 4089862.02€**
 
 ---

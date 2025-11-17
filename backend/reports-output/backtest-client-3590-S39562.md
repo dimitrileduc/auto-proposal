@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
+| **Précision** | 33.3% | 9 produits prédits, 3 corrects |
 | **Rappel** | 75.0% | 4 produits réels, 3 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **F1-Score** | 46.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,6 +170,7 @@
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
 | [PF3290] JF MAYO BARAKI 925ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
 | [PF0088] FILOU VOL AU VENT 800 GR | 2 | Stock prédit: -1.6u (-65j restants) → prédit 2u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -1.1u (-87j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -194,9 +195,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF0084] FILOU CARBONNADES 800 GR | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [PF0084] FILOU CARBONNADES 800 GR | 1 | Stock suffisant: 0.7u (47j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:14.515Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:00.845Z*

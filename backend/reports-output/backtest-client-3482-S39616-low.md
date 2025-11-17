@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 2 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,11 +157,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [PF1598] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [PF1601] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF1846] BELGIAN BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1639] JF BURGER SQUEEZE 300ML | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
 
 
 ---
@@ -192,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:33.437Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:39.132Z*

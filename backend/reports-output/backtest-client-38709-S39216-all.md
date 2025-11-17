@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 63.6% | 11 produits prédits, 7 corrects |
+| **Précision** | 70.0% | 10 produits prédits, 7 corrects |
 | **Rappel** | 77.8% | 9 produits réels, 7 détectés |
-| **F1-Score** | 70.0% | Score équilibré global |
+| **F1-Score** | 73.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -149,7 +149,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,7 +172,6 @@
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.3u (19j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -203,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:48.854Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:52.583Z*

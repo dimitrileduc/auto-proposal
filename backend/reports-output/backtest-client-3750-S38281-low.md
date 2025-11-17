@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 2 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,9 +157,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 15 | Stock prédit: 0.0u (0j restants) → prédit 15u mais non commandé |
 | [FIL09] FIL MOUTARDE 300G BOCAL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -191,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:05.854Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:14.421Z*

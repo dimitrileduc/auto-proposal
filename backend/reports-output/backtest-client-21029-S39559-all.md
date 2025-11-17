@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 68.2% | 44 produits prédits, 30 corrects |
+| **Précision** | 71.4% | 42 produits prédits, 30 corrects |
 | **Rappel** | 83.3% | 36 produits réels, 30 détectés |
-| **F1-Score** | 75.0% | Score équilibré global |
+| **F1-Score** | 76.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -172,7 +172,7 @@
 
 ---
 
-## False Positives (14)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -195,8 +195,6 @@
 | [LV146] LV Sauce Aïoli 200 ml | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: -0.7u (-24j restants) → prédit 1u mais non commandé |
 | [LV149] LV Sauce Aioli Pesto 200ml | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV139] LV Tartinade Paprika Chili 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV189] LV Tartinade Houmous Type 380g | 1 | Stock prédit: -1.1u (-31j restants) → prédit 1u mais non commandé |
 | [KOKO01] KOKO Kombucha original 330ml | 1 | Stock prédit: -0.3u (-15j restants) → prédit 1u mais non commandé |
@@ -204,7 +202,7 @@
 | [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv05] Noix de pecan nature bio vrac 2,2kg  | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
 | [fsv02] Noix de cajou nature bio vrac 2,8kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: -1.2u (-79j restants) → prédit 1u mais non commandé |
 | [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -240,4 +238,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:11.620Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:38.556Z*

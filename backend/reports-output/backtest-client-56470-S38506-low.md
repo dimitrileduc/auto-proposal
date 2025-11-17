@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 32.4% | 37 produits prédits, 12 corrects |
-| **Rappel** | 80.0% | 15 produits réels, 12 détectés |
-| **F1-Score** | 46.2% | Score équilibré global |
+| **Précision** | 20.8% | 24 produits prédits, 5 corrects |
+| **Rappel** | 33.3% | 15 produits réels, 5 détectés |
+| **F1-Score** | 25.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 40.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (12)
+## True Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,19 +142,12 @@
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV132] LV Tartinade Houmous type 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (25)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -183,27 +176,21 @@
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV146] LV Sauce Aïoli 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV149] LV Sauce Aioli Pesto 200ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV188] LV Tartinade Aubergine  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV209] LV Confit de Figues Bio 150g (bocal weck) | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV165] LV Vol-au-vent (avec viande de volaille) 400 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT05] RITCHIE Cola - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -223,11 +210,18 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock suffisant: 0.1u (14j restants > seuil 19j) |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: -0.9u (-35j restants > seuil 19j) |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: -0.4u (-19j restants > seuil 19j) |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: -0.5u (-26j restants > seuil 19j) |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | Stock suffisant: -0.5u (-24j restants > seuil 19j) |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock suffisant: 0.1u (6j restants > seuil 19j) |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock suffisant: 0.7u (70j restants > seuil 19j) |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock suffisant: 0.8u (174j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:35.001Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:06.330Z*

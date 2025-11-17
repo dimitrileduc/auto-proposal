@@ -245,6 +245,7 @@ export const backtestAggregateTask = task({
       successfulResults.map((r) => r.metrics!)
     );
 
+    console.log(`   CLEAN (2+ orders) - ${successfulResults.length} clients:`);
     console.log(`   Mean Recall: ${(aggregateMetrics.mean.recall * 100).toFixed(1)}%`);
     console.log(`   Median Recall: ${(aggregateMetrics.median.recall * 100).toFixed(1)}%`);
     console.log(`   Mean MAPE: ${aggregateMetrics.mean.mape.toFixed(1)}%`);

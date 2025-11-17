@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 57.1% | 7 produits prédits, 4 corrects |
-| **Rappel** | 44.4% | 9 produits réels, 4 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **Précision** | 37.5% | 16 produits prédits, 6 corrects |
+| **Rappel** | 66.7% | 9 produits réels, 6 détectés |
+| **F1-Score** | 48.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 112.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| **MAE** | 0.83 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,14 +139,16 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (3)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,13 +169,20 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: 0.2u (10j restants) → prédit 2u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: -0.8u (-39j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -2.2u (-72j restants) → prédit 2u mais non commandé |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | Stock prédit: -0.8u (-46j restants) → prédit 2u mais non commandé |
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 2 | Stock prédit: -1.8u (-102j restants) → prédit 2u mais non commandé |
+| [LV146] LV Sauce Aïoli 200 ml | 1 | Stock prédit: -1.4u (-68j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.6u (-64j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (5)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -193,13 +202,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [WIG03] WIGNAC cidre naturel bio 750ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:34.838Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:38.386Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 71.4% | 7 produits prédits, 5 corrects |
-| **Rappel** | 29.4% | 17 produits réels, 5 détectés |
-| **F1-Score** | 41.7% | Score équilibré global |
+| **Précision** | 69.2% | 13 produits prédits, 9 corrects |
+| **Rappel** | 52.9% | 17 produits réels, 9 détectés |
+| **F1-Score** | 60.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 0.22 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,16 +138,20 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF029] JF VOL AU VENT BOCAL 400G | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF032] JF SAUCE LAPIN 380GX6 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (2)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,11 +173,13 @@
 |---------|-------------|--------|
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: -0.3u (-27j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (12)
+## False Negatives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -195,12 +201,8 @@
 |---------|---------------|--------|
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 0.5u (20j restants > seuil 19j) |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -209,4 +211,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:05.194Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:36.941Z*

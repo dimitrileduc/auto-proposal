@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 8 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 15 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (8)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,13 +157,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DIS0006] Plastic sign TVF | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -208,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:21.685Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:36.116Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 15 produits prédits, 5 corrects |
-| **Rappel** | 50.0% | 10 produits réels, 5 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
+| **Rappel** | 20.0% | 10 produits réels, 2 détectés |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,15 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (10)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,21 +164,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF049] JF DISPLAY SAUCES Squeeze | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (5)
+## False Negatives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -203,11 +192,14 @@
 |---------|---------------|--------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | Stock suffisant: 1.3u (63j restants > seuil 19j) |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock suffisant: 0.5u (38j restants > seuil 19j) |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock suffisant: -6.8u (-113j restants > seuil 19j) |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock suffisant: 0.5u (38j restants > seuil 19j) |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock suffisant: 0.2u (6j restants > seuil 19j) |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock suffisant: 0.5u (41j restants > seuil 19j) |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock suffisant: 1.0u (38j restants > seuil 19j) |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 0.5u (38j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:07.578Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:35.310Z*

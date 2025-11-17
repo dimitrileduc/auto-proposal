@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 15.4% | 52 produits prédits, 8 corrects |
-| **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 25.4% | Score équilibré global |
+| **Précision** | 15.9% | 44 produits prédits, 7 corrects |
+| **Rappel** | 63.6% | 11 produits réels, 7 détectés |
+| **F1-Score** | 25.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 54.2% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 54.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -143,14 +143,13 @@
 | [MF0029] MF Tarti Datte chili 250g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF029] JF VOL AU VENT BOCAL 400G | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (44)
+## False Positives (37)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,7 +171,6 @@
 |---------|-------------|--------|
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: 0.6u (10j restants) → prédit 1u mais non commandé |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 3 | Stock prédit: 1.2u (9j restants) → prédit 3u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [MF0032] MF Tarti Pois chiches 250 g | 2 | Stock prédit: 0.4u (1j restants) → prédit 2u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 1.2u (18j restants) → prédit 1u mais non commandé |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock prédit: 0.8u (7j restants) → prédit 2u mais non commandé |
@@ -186,16 +184,14 @@
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 4 | Stock prédit: -0.8u (-7j restants) → prédit 4u mais non commandé |
 | [MF0033] MF Tarti Poivron chilli 250g | 2 | Stock prédit: 1.1u (15j restants) → prédit 2u mais non commandé |
 | [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -3.2u (-26j restants) → prédit 2u mais non commandé |
 | [LD014] LD Organic Avocado Spread 180 g | 3 | Stock prédit: 0.5u (14j restants) → prédit 3u mais non commandé |
 | [LD013] LD Tuscan Organic Spread 180 g | 3 | Stock prédit: -0.5u (-14j restants) → prédit 3u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: -0.4u (-13j restants) → prédit 2u mais non commandé |
+| [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: 0.2u (13j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | Stock prédit: -0.8u (-24j restants) → prédit 2u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | Stock prédit: -2.5u (-25j restants) → prédit 3u mais non commandé |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 3 | Stock prédit: 0.5u (10j restants) → prédit 3u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -0.4u (-9j restants) → prédit 2u mais non commandé |
 | [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -0.6u (-29j restants) → prédit 1u mais non commandé |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -1.2u (-51j restants) → prédit 1u mais non commandé |
@@ -209,16 +205,12 @@
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 3 | Stock prédit: -1.6u (-50j restants) → prédit 3u mais non commandé |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock prédit: -0.7u (-39j restants) → prédit 2u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 2 | Stock prédit: -0.7u (-39j restants) → prédit 2u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: -1.0u (-90j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -239,10 +231,11 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | Stock suffisant: 1.6u (26j restants > seuil 19j) |
+| [JF029] JF VOL AU VENT BOCAL 400G | 2 | Stock suffisant: 0.6u (74j restants > seuil 19j) |
 | [VID0009] Consigne casier | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 12 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:37.326Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:30.456Z*

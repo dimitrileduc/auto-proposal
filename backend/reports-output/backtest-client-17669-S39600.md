@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 31.4% | 35 produits prédits, 11 corrects |
+| **Précision** | 30.6% | 36 produits prédits, 11 corrects |
 | **Rappel** | 91.7% | 12 produits réels, 11 détectés |
-| **F1-Score** | 46.8% | Score équilibré global |
+| **F1-Score** | 45.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -153,7 +153,7 @@
 
 ---
 
-## False Positives (24)
+## False Positives (25)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -197,6 +197,7 @@
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 3 | Stock prédit: -6.1u (-60j restants) → prédit 3u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 3 | Stock prédit: -4.5u (-54j restants) → prédit 3u mais non commandé |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.6u (-21j restants) → prédit 1u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -226,4 +227,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:23.956Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:12.828Z*

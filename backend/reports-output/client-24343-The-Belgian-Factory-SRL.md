@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - The Belgian Factory SRL
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 24343
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.1s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 0
 
 **Total produits (Phase 1): 5**
-**Quantité totale brute: 168 unités**
+**Quantité totale brute: 212 unités**
 
 ### Détails par produit
 
@@ -99,12 +99,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV138] LV Tartinade Carotte gingembre  380g</strong> (ID: 13072) - 32 unités</summary>
+<summary>🔴 <strong>[LV138] LV Tartinade Carotte gingembre  380g</strong> (ID: 13072) - 60 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1860
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.8773
+- **Stock restant estimé**: -118.90
+- **Jours avant rupture**: **-135j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -112,23 +112,33 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-08 | S35867 | 32 | 14.44€ |
+| 2025-01-13 | S34133 | 64 | 14.44€ |
+| 2024-12-11 | S33804 | 60 | 14.44€ |
+| 2024-07-05 | S31155 | 32 | 14.44€ |
+| 2024-05-31 | S30565 | 80 | 14.44€ |
+| 2024-05-14 | S30262 | 160 | 14.44€ |
+| 2024-05-07 | S30197 | 32 | 14.44€ |
+| 2024-04-02 | S29583 | 32 | 14.44€ |
+| 2024-03-15 | S29366 | 32 | 14.44€ |
+| 2024-02-28 | S29131 | 16 | 14.44€ |
+| 2023-12-15 | S28232 | 32 | 14.44€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [32]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 32
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [32, 64, 60, 32, 80]
+- **Nombre commandes**: 11
+- **Valeur médiane**: 60
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV139] LV Tartinade Paprika Chili 380g</strong> (ID: 13074) - 16 unités</summary>
+<summary>🔴 <strong>[LV139] LV Tartinade Paprika Chili 380g</strong> (ID: 13074) - 32 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0930
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.0000
+- **Stock restant estimé**: -156.00
+- **Jours avant rupture**: **-156j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -136,13 +146,27 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-08 | S35867 | 16 | 14.70€ |
+| 2025-03-24 | S35588 | 32 | 14.70€ |
+| 2025-02-19 | S34967 | 16 | 14.70€ |
+| 2025-02-14 | S34883 | 32 | 14.70€ |
+| 2025-01-13 | S34133 | 64 | 14.70€ |
+| 2024-12-11 | S33804 | 60 | 14.70€ |
+| 2024-11-19 | S33342 | 16 | 14.70€ |
+| 2024-10-18 | S32844 | 64 | 14.70€ |
+| 2024-08-29 | S31989 | 32 | 14.70€ |
+| 2024-05-14 | S30262 | 160 | 14.70€ |
+| 2024-05-07 | S30197 | 48 | 14.70€ |
+| 2024-04-02 | S29583 | 32 | 14.70€ |
+| 2024-02-28 | S29131 | 16 | 14.70€ |
+| 2024-02-28 | S29131 | 32 | 14.70€ |
+| 2023-12-15 | S28232 | 32 | 14.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [16]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 16
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [16, 32, 16, 32, 64]
+- **Nombre commandes**: 15
+- **Valeur médiane**: 32
 
 </details>
 
@@ -154,7 +178,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 2485.76€**
+- **Montant initial: 3125.28€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -166,9 +190,9 @@
 | [LV189] LV Tartinade Houmou... | 13075 | 48 | 0 | 48 | 14.64€ | 702.72€ |
 | [LV188] LV Tartinade Auberg... | 13071 | 32 | 0 | 32 | 14.28€ | 456.96€ |
 | [LV187] LV Tartinade Mangue... | 13073 | 40 | 0 | 40 | 15.72€ | 628.80€ |
-| [LV138] LV Tartinade Carott... | 13072 | 32 | 0 | 32 | 14.44€ | 462.08€ |
-| [LV139] LV Tartinade Paprik... | 13074 | 16 | 0 | 16 | 14.70€ | 235.20€ |
+| [LV138] LV Tartinade Carott... | 13072 | 60 | 0 | 60 | 14.44€ | 866.40€ |
+| [LV139] LV Tartinade Paprik... | 13074 | 32 | 0 | 32 | 14.70€ | 470.40€ |
 
-**Total (Phase 2.5): 2485.76€**
+**Total (Phase 2.5): 3125.28€**
 
 ---

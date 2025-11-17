@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - MASETTI
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 38995
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.6s
+**⏱️ Durée d'exécution:** 1.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 27**
-- Urgents (rupture ≤ 0j): 20
+**Produits à risque détectés: 26**
+- Urgents (rupture ≤ 0j): 19
 - Modérés (0 < rupture ≤ 19j): 7
 
-**Total produits (Phase 1): 27**
-**Quantité totale brute: 304 unités**
+**Total produits (Phase 1): 26**
+**Quantité totale brute: 284 unités**
 
 ### Détails par produit
 
@@ -651,30 +651,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF017] JF SAUCE COCKTAIL 250ML WECK</strong> (ID: 16771) - 20 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2469
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-17 | S38120 | 20 | 15.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [20]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 20
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF026] JF VINAIGRET TRUFFES WECK 200M</strong> (ID: 16788) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -729,9 +705,9 @@
 <summary>🔴 <strong>[JF024] JF VINAIGRET CIBOULE WECK 200M</strong> (ID: 16786) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0342
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0725
+- **Stock restant estimé**: -5.59
+- **Jours avant rupture**: **-77j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -739,12 +715,23 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36743 | 5 | 21.60€ |
+| 2025-03-10 | S35267 | 10 | 21.60€ |
+| 2025-02-11 | S34600 | 5 | 21.60€ |
+| 2024-12-23 | S33851 | 4 | 27.00€ |
+| 2024-10-03 | S32452 | 2 | 27.00€ |
+| 2024-07-12 | S31283 | 10 | 27.00€ |
+| 2024-06-21 | S30903 | 1 | 27.00€ |
+| 2024-05-30 | S30554 | 1 | 27.00€ |
+| 2024-05-08 | S30219 | 1 | 27.00€ |
+| 2024-04-15 | S29742 | 1 | 27.00€ |
+| 2024-03-15 | S29341 | 1 | 27.00€ |
+| 2024-03-06 | S29207 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [5]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [5, 10, 5, 4, 2]
+- **Nombre commandes**: 12
 - **Valeur médiane**: 5
 
 </details>
@@ -757,7 +744,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 3878.40€**
+- **Montant initial: 3566.40€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -789,11 +776,10 @@
 | [TVF009] TVF TARTINADE BIO ... | 16832 | 25 | 0 | 25 | 8.64€ | 216.00€ |
 | [TVF003] TVF TARTINADE BIO ... | 16826 | 25 | 0 | 25 | 8.64€ | 216.00€ |
 | [TVF004] TVF TARTINADE BIO ... | 16829 | 25 | 0 | 25 | 8.64€ | 216.00€ |
-| [JF017] JF SAUCE COCKTAIL 2... | 16771 | 20 | 0 | 20 | 15.60€ | 312.00€ |
 | [JF026] JF VINAIGRET TRUFFE... | 16788 | 2 | 0 | 2 | 25.20€ | 50.40€ |
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 4 | 0 | 4 | 21.60€ | 86.40€ |
 | [JF024] JF VINAIGRET CIBOUL... | 16786 | 5 | 0 | 5 | 21.60€ | 108.00€ |
 
-**Total (Phase 2.5): 3878.40€**
+**Total (Phase 2.5): 3566.40€**
 
 ---

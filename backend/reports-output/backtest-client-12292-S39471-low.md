@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
-| **Rappel** | 7.1% | 14 produits réels, 1 détectés |
-| **F1-Score** | 13.3% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 14 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,13 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [MF0051] MF Kidney Beans 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -162,7 +156,7 @@
 
 ---
 
-## False Negatives (13)
+## False Negatives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -192,6 +186,7 @@
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
 | [MF0027] MF Tarti Aubergine 250g  | 3 | Stock suffisant: 0.2u (2j restants > seuil 19j) |
 | [MF0052] MF Pois chiches  500g | 3 | Stock suffisant: -1.4u (-25j restants > seuil 19j) |
+| [MF0051] MF Kidney Beans 500g | 1 | Stock suffisant: 0.1u (2j restants > seuil 19j) |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock suffisant: -2.5u (-24j restants > seuil 19j) |
 | [VID0010] Consigne casier | 78 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0009] Consigne casier | 13 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -199,4 +194,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:24.270Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:30.574Z*

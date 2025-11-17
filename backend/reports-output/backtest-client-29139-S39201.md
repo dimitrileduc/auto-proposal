@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 47.5% | 59 produits prédits, 28 corrects |
-| **Rappel** | 66.7% | 42 produits réels, 28 détectés |
-| **F1-Score** | 55.4% | Score équilibré global |
+| **Précision** | 48.4% | 64 produits prédits, 31 corrects |
+| **Rappel** | 73.8% | 42 produits réels, 31 détectés |
+| **F1-Score** | 58.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.39 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 29.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 17 | Égalité parfaite |
+| **MAE** | 0.35 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 26.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 20 | Égalité parfaite |
 | Partial Match (>0u) | 11 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (28)
+## True Positives (31)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -165,12 +165,15 @@
 | [LD012] LD Organic Samphire Spread 135 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [MF0021] MF Sauce BBQ 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (31)
+## False Positives (33)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -221,11 +224,13 @@
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -2.1u (-38j restants) → prédit 2u mais non commandé |
 | [MF0014] MF Olives noires 500g | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-14j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.1u (19j restants) → prédit 1u mais non commandé |
+| [MF0060] MF Passata | 1 | Stock prédit: -0.2u (-26j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (14)
+## False Negatives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -254,13 +259,10 @@
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 2 | Stock suffisant: 1.9u (35j restants > seuil 19j) |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock suffisant: 2.7u (40j restants > seuil 19j) |
 | [JF029] JF VOL AU VENT BOCAL 400G | 2 | Stock suffisant: 2.1u (54j restants > seuil 19j) |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [MF0021] MF Sauce BBQ 250ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [VID0009] Consigne casier | 5 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 30 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:31.895Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:37.618Z*

@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 9 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 2 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,8 +163,6 @@
 | [PF0088] FILOU VOL AU VENT 800 GR | 18 | Stock prédit: 0.0u (0j restants) → prédit 18u mais non commandé |
 | [PF0084] FILOU CARBONNADES 800 GR | 18 | Stock prédit: 0.0u (0j restants) → prédit 18u mais non commandé |
 | [PF1224] FILOU BOULETTES TOMATE 800 GR | 18 | Stock prédit: 0.0u (0j restants) → prédit 18u mais non commandé |
-| [PF0093] FILOU MOUTARDE 300GR | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
-| [PF1539] FILOU BOULETTE CHASSEUR 800G | 18 | Stock prédit: 0.0u (0j restants) → prédit 18u mais non commandé |
 | [PI3208] PI TARTARE BIO CONS 250ML | 316 | Stock prédit: 0.0u (0j restants) → prédit 316u mais non commandé |
 
 
@@ -196,4 +194,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:30.769Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:04.702Z*

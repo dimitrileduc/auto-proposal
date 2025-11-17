@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 75.0% | 8 produits prédits, 6 corrects |
-| **Rappel** | 66.7% | 9 produits réels, 6 détectés |
-| **F1-Score** | 70.6% | Score équilibré global |
+| **Précision** | 77.8% | 9 produits prédits, 7 corrects |
+| **Rappel** | 77.8% | 9 produits réels, 7 détectés |
+| **F1-Score** | 77.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.67 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 22.2% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.71 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 26.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (6)
+## True Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -144,6 +144,7 @@
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
@@ -174,7 +175,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -194,11 +195,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock suffisant: 2.1u (27j restants > seuil 19j) |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 2 | Stock suffisant: 0.8u (34j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:48.851Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:52.580Z*

@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - VivArdent SRL
 
-**📅 Date:** 15/11/2025 10:50
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 52678
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 3.6s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 2
 
 **Total produits (Phase 1): 19**
-**Quantité totale brute: 22 unités**
+**Quantité totale brute: 26 unités**
 
 ### Détails par produit
 
@@ -279,12 +279,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> (ID: 13094) - 1 unités</summary>
+<summary>🔴 <strong>[LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> (ID: 13094) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0149
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0383
+- **Stock restant estimé**: -1.57
+- **Jours avant rupture**: **-40j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -292,13 +292,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-05 | S38300 | 1 | 23.92€ |
+| 2025-01-16 | S34325 | 6 | 23.92€ |
+| 2025-01-07 | S34146 | 1 | 23.92€ |
+| 2024-12-02 | S33606 | 6 | 23.68€ |
+| 2024-08-08 | S31591 | 3 | 23.68€ |
+| 2024-06-05 | S30644 | 3 | 23.68€ |
+| 2024-04-11 | S29686 | 1 | 23.68€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 6, 1, 6, 3]
+- **Nombre commandes**: 7
+- **Valeur médiane**: 3
 
 </details>
 
@@ -354,12 +360,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV129] LV Tartinade Carotte Gingembre 190g</strong> (ID: 13059) - 1 unités</summary>
+<summary>🔴 <strong>[LV129] LV Tartinade Carotte Gingembre 190g</strong> (ID: 13059) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0255
+- **Stock restant estimé**: -1.99
+- **Jours avant rupture**: **-77j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -367,13 +373,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-16 | S37316 | 1 | 13.04€ |
+| 2025-01-16 | S34325 | 2 | 13.04€ |
+| 2025-01-07 | S34146 | 2 | 13.04€ |
+| 2024-12-02 | S33606 | 3 | 12.66€ |
+| 2024-11-12 | S33199 | 2 | 12.66€ |
+| 2024-08-08 | S31591 | 1 | 12.66€ |
+| 2024-04-11 | S29686 | 3 | 12.66€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 2, 3, 2]
+- **Nombre commandes**: 7
+- **Valeur médiane**: 2
 
 </details>
 
@@ -476,12 +488,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV159] LV Tartinade aux Truffes  135g </strong> (ID: 13057) - 1 unités</summary>
+<summary>🔴 <strong>[LV159] LV Tartinade aux Truffes  135g </strong> (ID: 13057) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0058
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.55
+- **Jours avant rupture**: **-60j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -489,13 +501,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36295 | 1 | 18.60€ |
+| 2024-11-12 | S33199 | 2 | 18.06€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -507,7 +520,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 415.60€**
+- **Montant initial: 495.08€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -526,16 +539,16 @@
 | [LV330] LV BIO Tartinade To... | 14450 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [LV215] LV Biscuits apéro F... | 13091 | 1 | 0 | 1 | 25.56€ | 25.56€ |
 | [LV216] LV Biscuits apéro F... | 13092 | 1 | 0 | 1 | 25.56€ | 25.56€ |
-| [LV055] LV Mini grissini à ... | 13094 | 1 | 0 | 1 | 23.92€ | 23.92€ |
+| [LV055] LV Mini grissini à ... | 13094 | 3 | 0 | 3 | 23.92€ | 71.76€ |
 | [LV002] LV Pizza Croccantin... | 13096 | 1 | 0 | 1 | 27.03€ | 27.03€ |
 | [LV003] LV Pizza Croccantin... | 13097 | 1 | 0 | 1 | 29.45€ | 29.45€ |
-| [LV129] LV Tartinade Carott... | 13059 | 1 | 0 | 1 | 13.04€ | 13.04€ |
+| [LV129] LV Tartinade Carott... | 13059 | 2 | 0 | 2 | 13.04€ | 26.08€ |
 | [LV126] LV Tartinade Tomate... | 13070 | 1 | 0 | 1 | 13.53€ | 13.53€ |
 | [LV214] LV Biscuits apéro t... | 13090 | 1 | 0 | 1 | 25.56€ | 25.56€ |
 | [LV342] LV Organic Broccoli... | 14999 | 2 | 0 | 2 | 13.53€ | 27.06€ |
 | [LV357] LV Tartinade BIO As... | 19272 | 2 | 0 | 2 | 18.60€ | 37.20€ |
-| [LV159] LV Tartinade aux Tr... | 13057 | 1 | 0 | 1 | 18.60€ | 18.60€ |
+| [LV159] LV Tartinade aux Tr... | 13057 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 
-**Total (Phase 2.5): 415.60€**
+**Total (Phase 2.5): 495.08€**
 
 ---

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 51.2% | 43 produits prédits, 22 corrects |
+| **Précision** | 57.9% | 38 produits prédits, 22 corrects |
 | **Rappel** | 91.7% | 24 produits réels, 22 détectés |
-| **F1-Score** | 65.7% | Score équilibré global |
+| **F1-Score** | 71.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -164,7 +164,7 @@
 
 ---
 
-## False Positives (21)
+## False Positives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -184,12 +184,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0052] MF Pois chiches  500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0053] MF Maïs 500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [MF0061] MF Compote | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
@@ -197,8 +193,7 @@
 | [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [WIG04] WIGNAC cidre rosé bio 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | Stock prédit: 0.3u (15j restants) → prédit 2u mais non commandé |
 | [UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -235,4 +230,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:17.295Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:29.523Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 23.1% | 13 produits prédits, 3 corrects |
-| **Rappel** | 16.7% | 18 produits réels, 3 détectés |
-| **F1-Score** | 19.4% | Score équilibré global |
+| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
+| **Rappel** | 5.6% | 18 produits réels, 1 détectés |
+| **F1-Score** | 10.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,13 +139,11 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (10)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,21 +163,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF016] TVF TARTINADE BIO POIS CHICHES 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (15)
+## False Negatives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -205,9 +194,11 @@
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock suffisant: 0.6u (17j restants > seuil 19j) |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock suffisant: -0.1u (-18j restants > seuil 19j) |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | Stock suffisant: -0.4u (-11j restants > seuil 19j) |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock suffisant: 0.1u (4j restants > seuil 19j) |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 5 | Stock suffisant: -0.6u (-14j restants > seuil 19j) |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | Stock suffisant: -0.3u (-32j restants > seuil 19j) |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
 | [LD013] LD Tuscan Organic Spread 180 g | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
 | [LD014] LD Organic Avocado Spread 180 g | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
@@ -218,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:33.600Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:49.660Z*

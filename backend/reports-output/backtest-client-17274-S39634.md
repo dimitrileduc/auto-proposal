@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 72.7% | 11 produits prédits, 8 corrects |
-| **Rappel** | 38.1% | 21 produits réels, 8 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **Précision** | 80.0% | 15 produits prédits, 12 corrects |
+| **Rappel** | 57.1% | 21 produits réels, 12 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.38 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 18.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.58 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 37.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,6 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -146,6 +147,9 @@
 | [JF029] JF VOL AU VENT BOCAL 400G | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 4 | 2 | 2.0 | 100.0% | ✅ partial |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -177,7 +181,7 @@
 
 ---
 
-## False Negatives (13)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -197,11 +201,7 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 2 | Stock suffisant: 1.1u (57j restants > seuil 19j) |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.3u (24j restants > seuil 19j) |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.3u (24j restants > seuil 19j) |
@@ -214,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:02.397Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:33.929Z*

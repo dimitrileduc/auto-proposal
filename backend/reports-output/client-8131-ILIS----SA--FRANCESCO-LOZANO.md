@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - ILIS    SA, FRANCESCO LOZANO
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 8131
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 895ms
+**⏱️ Durée d'exécution:** 2.6s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 4
 
 **Total produits (Phase 1): 7**
-**Quantité totale brute: 319 unités**
+**Quantité totale brute: 328 unités**
 
 ### Détails par produit
 
@@ -226,12 +226,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0520] YVALLI PET BOUL TOMATE 2,5 KG</strong> (ID: 9314) - 6 unités</summary>
+<summary>🔴 <strong>[PF0520] YVALLI PET BOUL TOMATE 2,5 KG</strong> (ID: 9314) - 15 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0800
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.1132
+- **Stock restant estimé**: -2.49
+- **Jours avant rupture**: **-22j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -239,13 +239,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-04 | S35816 | 6 | 47.28€ |
+| 2024-09-26 | S32423 | 24 | 45.90€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [6]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 6
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [6, 24]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 15
 
 </details>
 
@@ -257,7 +258,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 4218.60€**
+- **Montant initial: 4644.12€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -272,8 +273,8 @@
 | [PF0085] FILOU CURRY KETCHU... | 8989 | 52 | 0 | 52 | 19.57€ | 1017.64€ |
 | [PF0959] FILOU TOMATO KETCH... | 17752 | 52 | 0 | 52 | 17.80€ | 925.60€ |
 | [PF0097] FILOU MOUTARDE 5 KG | 8998 | 20 | 0 | 20 | 7.21€ | 144.20€ |
-| [PF0520] YVALLI PET BOUL TO... | 9314 | 6 | 0 | 6 | 47.28€ | 283.68€ |
+| [PF0520] YVALLI PET BOUL TO... | 9314 | 15 | 0 | 15 | 47.28€ | 709.20€ |
 
-**Total (Phase 2.5): 4218.60€**
+**Total (Phase 2.5): 4644.12€**
 
 ---

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 92.3% | 13 produits prédits, 12 corrects |
-| **Rappel** | 63.2% | 19 produits réels, 12 détectés |
-| **F1-Score** | 75.0% | Score équilibré global |
+| **Précision** | 86.7% | 15 produits prédits, 13 corrects |
+| **Rappel** | 68.4% | 19 produits réels, 13 détectés |
+| **F1-Score** | 76.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.83 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 61.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| **MAE** | 0.77 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 56.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
 | Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (12)
+## True Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -150,11 +150,12 @@
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [JF029] JF VOL AU VENT BOCAL 400G | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (1)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -175,11 +176,12 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF021] JF PICKLES 350 ML | 3 | Stock prédit: -0.6u (-17j restants) → prédit 3u mais non commandé |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: -0.9u (-59j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -202,12 +204,11 @@
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 3 | Stock suffisant: 0.7u (21j restants > seuil 19j) |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock suffisant: 1.4u (23j restants > seuil 19j) |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | Stock suffisant: 0.9u (32j restants > seuil 19j) |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock suffisant: 1.2u (27j restants > seuil 19j) |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:40.596Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:58.655Z*

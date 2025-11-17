@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - BIOFRESH BELGIUM NV-SA
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 60207
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.1s
+**⏱️ Durée d'exécution:** 3.8s
 
 ---
 
@@ -429,9 +429,9 @@
 <summary>🔴 <strong>[ALO30] ORGANIC CRUNCH aloe vera drink original 500ml</strong> (ID: 18336) - 126 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8750
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.4264
+- **Stock restant estimé**: -79.40
+- **Jours avant rupture**: **-55j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -439,12 +439,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36803 | 126 | 12.60€ |
+| 2025-04-08 | S35872 | 126 | 12.60€ |
+| 2025-01-14 | S34321 | 126 | 12.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [126]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [126, 126, 126]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 126
 
 </details>
@@ -453,9 +455,9 @@
 <summary>🔴 <strong>[ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml</strong> (ID: 18335) - 126 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8750
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.4264
+- **Stock restant estimé**: -79.40
+- **Jours avant rupture**: **-55j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -463,12 +465,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36803 | 126 | 12.60€ |
+| 2025-04-08 | S35872 | 126 | 12.60€ |
+| 2025-01-14 | S34321 | 126 | 12.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [126]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [126, 126, 126]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 126
 
 </details>
@@ -477,9 +481,9 @@
 <summary>🔴 <strong>[ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml</strong> (ID: 18334) - 126 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8750
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.9019
+- **Stock restant estimé**: -147.87
+- **Jours avant rupture**: **-77j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -487,12 +491,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36803 | 126 | 12.60€ |
+| 2025-04-08 | S35872 | 126 | 12.60€ |
+| 2025-01-30 | S34596 | 126 | 12.60€ |
+| 2025-01-14 | S34321 | 126 | 12.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [126]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [126, 126, 126, 126]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 126
 
 </details>

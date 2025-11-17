@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DLL AD MALMEDY
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 38817
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.3s
+**⏱️ Durée d'exécution:** 3.2s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 45**
-- Urgents (rupture ≤ 0j): 30
+**Produits à risque détectés: 43**
+- Urgents (rupture ≤ 0j): 28
 - Modérés (0 < rupture ≤ 19j): 15
 
-**Total produits (Phase 1): 45**
-**Quantité totale brute: 100 unités**
+**Total produits (Phase 1): 43**
+**Quantité totale brute: 98 unités**
 
 ### Détails par produit
 
@@ -792,30 +792,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> (ID: 16753) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0145
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-23 | S38198 | 1 | 26.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF027] JF VINAIGRET MIEL MOU WECK 200</strong> (ID: 16787) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -972,30 +948,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF034] JF SAMOURAI SQUEEZE 300ML</strong> (ID: 16760) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0098
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-20 | S37508 | 1 | 26.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> (ID: 16832) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -1050,9 +1002,9 @@
 <summary>🔴 <strong>[JF023] JF MOUTARDE DOUCE 250ML WECK</strong> (ID: 16754) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0145
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0254
+- **Stock restant estimé**: -1.51
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1060,12 +1012,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36831 | 2 | 19.50€ |
+| 2025-03-27 | S35661 | 1 | 19.50€ |
+| 2024-11-04 | S32878 | 3 | 19.50€ |
+| 2024-10-22 | S32879 | 2 | 19.50€ |
+| 2024-06-17 | S30825 | 1 | 19.50€ |
+| 2024-05-16 | S30326 | 3 | 19.50€ |
+| 2024-04-16 | S29798 | 0 | 19.50€ |
+| 2024-03-28 | S29563 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 1, 3, 2, 1]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 2
 
 </details>
@@ -1099,9 +1058,9 @@
 <summary>🔴 <strong>[JF038] JF KETCHUP SQUEEZE 300ML</strong> (ID: 16737) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0072
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0132
+- **Stock restant estimé**: -0.82
+- **Jours avant rupture**: **-61j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1109,12 +1068,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36831 | 1 | 26.40€ |
+| 2025-02-27 | S35110 | 1 | 26.40€ |
+| 2024-11-04 | S32878 | 1 | 26.40€ |
+| 2024-10-22 | S32879 | 1 | 26.40€ |
+| 2024-09-27 | S32442 | 1 | 26.40€ |
+| 2024-06-17 | S30825 | 1 | 26.40€ |
+| 2024-05-16 | S30326 | 0 | 26.40€ |
+| 2024-04-16 | S29798 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 1
 
 </details>
@@ -1202,7 +1168,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1841.72€**
+- **Montant initial: 1788.92€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1240,14 +1206,12 @@
 | [JF054] JF LEMON MAYONNAISE... | 19354 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF008] JF MAYONNA DU CHEF ... | 16743 | 4 | 0 | 4 | 25.80€ | 103.20€ |
 | [JF033] JF ANDALOUSE SQUEEZ... | 15058 | 1 | 0 | 1 | 26.40€ | 26.40€ |
-| [JF036] JF MITRAILLETTE SQU... | 16753 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF027] JF VINAIGRET MIEL M... | 16787 | 2 | 0 | 2 | 27.00€ | 54.00€ |
 | [TVF004] TVF TARTINADE BIO ... | 16829 | 3 | 0 | 3 | 10.80€ | 32.40€ |
 | [LD011] LD Organic Kids Spr... | 19396 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [LD010] LD Organic Truffle ... | 19395 | 1 | 0 | 1 | 18.60€ | 18.60€ |
 | [LD012] LD Organic Samphire... | 19397 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 | [JF026] JF VINAIGRET TRUFFE... | 16788 | 2 | 0 | 2 | 31.50€ | 63.00€ |
-| [JF034] JF SAMOURAI SQUEEZE... | 16760 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [TVF009] TVF TARTINADE BIO ... | 16832 | 1 | 0 | 1 | 10.80€ | 10.80€ |
 | [LD007] LD Organic Pineappl... | 19392 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [JF023] JF MOUTARDE DOUCE 2... | 16754 | 2 | 0 | 2 | 19.50€ | 39.00€ |
@@ -1257,6 +1221,6 @@
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 2 | 0 | 2 | 27.00€ | 54.00€ |
 | [TVF007] TVF TARTINADE BIO ... | 16828 | 1 | 0 | 1 | 10.80€ | 10.80€ |
 
-**Total (Phase 2.5): 1841.72€**
+**Total (Phase 2.5): 1788.92€**
 
 ---

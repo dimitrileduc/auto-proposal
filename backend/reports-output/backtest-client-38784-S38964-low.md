@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 10 produits prédits, 4 corrects |
-| **Rappel** | 22.2% | 18 produits réels, 4 détectés |
-| **F1-Score** | 28.6% | Score équilibré global |
+| **Précision** | 66.7% | 3 produits prédits, 2 corrects |
+| **Rappel** | 11.1% | 18 produits réels, 2 détectés |
+| **F1-Score** | 19.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
+| Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,13 +140,11 @@
 |---------|--------|------|-----------|----------|------|
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (6)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,16 +165,11 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (14)
+## False Negatives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -204,9 +197,11 @@
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: -0.5u (-10j restants > seuil 19j) |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock suffisant: 0.2u (9j restants > seuil 19j) |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock suffisant: 0.2u (34j restants > seuil 19j) |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock suffisant: -0.3u (-15j restants > seuil 19j) |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock suffisant: 0.2u (9j restants > seuil 19j) |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 0.2u (34j restants > seuil 19j) |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock suffisant: -0.3u (-10j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: -0.3u (-10j restants > seuil 19j) |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock suffisant: -0.3u (-15j restants > seuil 19j) |
@@ -214,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:27.797Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:00.528Z*

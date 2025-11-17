@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 68.0% | 25 produits prédits, 17 corrects |
+| **Précision** | 77.3% | 22 produits prédits, 17 corrects |
 | **Rappel** | 89.5% | 19 produits réels, 17 détectés |
-| **F1-Score** | 77.3% | Score équilibré global |
+| **F1-Score** | 82.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -159,7 +159,7 @@
 
 ---
 
-## False Positives (8)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -180,13 +180,10 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 0.3u (6j restants) → prédit 2u mais non commandé |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: 0.6u (17j restants) → prédit 2u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: -0.2u (-30j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -217,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:58.293Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:04.856Z*

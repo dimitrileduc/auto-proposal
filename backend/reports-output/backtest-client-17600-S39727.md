@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 18.2% | 22 produits prédits, 4 corrects |
-| **Rappel** | 57.1% | 7 produits réels, 4 détectés |
-| **F1-Score** | 27.6% | Score équilibré global |
+| **Précision** | 25.0% | 24 produits prédits, 6 corrects |
+| **Rappel** | 85.7% | 7 produits réels, 6 détectés |
+| **F1-Score** | 38.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 150.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 62.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 143.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 58.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,6 +142,8 @@
 | [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | 434 | 0.0 | 0.0% | 🎯 exact |
 | [LV363] LV BIO Tartin'apero Avocat 180g  | 434 | 434 | 0.0 | 0.0% | 🎯 exact |
 | [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 600 | 200 | 400.0 | 200.0% | ✅ partial |
+| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | 200 | 0.0 | 0.0% | 🎯 exact |
+| [LV356] LV SET 3 X 135G trisauces  SDP | 512 | 256 | 256.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -188,7 +190,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -208,11 +210,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV356] LV SET 3 X 135G trisauces  SDP | 256 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 414.3u (84j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:24.314Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:13.406Z*

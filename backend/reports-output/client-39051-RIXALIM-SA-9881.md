@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - RIXALIM SA 9881
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 39051
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.4s
+**⏱️ Durée d'exécution:** 3.5s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 4
 
 **Total produits (Phase 1): 15**
-**Quantité totale brute: 20 unités**
+**Quantité totale brute: 23 unités**
 
 ### Détails par produit
 
@@ -257,9 +257,9 @@
 <summary>🔴 <strong>[JF035] JF BURGER SQUEEZE 300ML</strong> (ID: 16731) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0099
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0115
+- **Stock restant estimé**: -0.16
+- **Jours avant rupture**: **-13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -267,12 +267,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37353 | 1 | 26.40€ |
+| 2025-03-13 | S35354 | 1 | 26.40€ |
+| 2024-07-11 | S31262 | 3 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 3]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -281,9 +283,9 @@
 <summary>🔴 <strong>[JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 16738) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0099
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0105
+- **Stock restant estimé**: -0.06
+- **Jours avant rupture**: **-5j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -291,23 +293,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37353 | 1 | 30.00€ |
+| 2025-03-13 | S35354 | 1 | 30.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> (ID: 16762) - 1 unités</summary>
+<summary>🔴 <strong>[JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> (ID: 16762) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0073
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0157
+- **Stock restant estimé**: -1.15
+- **Jours avant rupture**: **-73j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -315,23 +318,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-06 | S36530 | 1 | 21.00€ |
+| 2025-03-13 | S35354 | 2 | 21.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> (ID: 16763) - 1 unités</summary>
+<summary>🔴 <strong>[JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> (ID: 16763) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0073
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0115
+- **Stock restant estimé**: -0.57
+- **Jours avant rupture**: **-49j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -339,13 +343,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-06 | S36530 | 1 | 19.50€ |
+| 2025-03-13 | S35354 | 2 | 19.50€ |
+| 2024-07-11 | S31262 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 2]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 2
 
 </details>
 
@@ -375,12 +381,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF033] JF ANDALOUSE SQUEEZE 300ML</strong> (ID: 15058) - 1 unités</summary>
+<summary>🔴 <strong>[JF033] JF ANDALOUSE SQUEEZE 300ML</strong> (ID: 15058) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0061
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0069
+- **Stock restant estimé**: -0.14
+- **Jours avant rupture**: **-19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -388,13 +394,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-08 | S35889 | 1 | 26.40€ |
+| 2024-07-11 | S31262 | 2 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -406,7 +413,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 450.60€**
+- **Montant initial: 517.50€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -426,11 +433,11 @@
 | [JF004] JF MAYONNAIS POIVRE... | 16746 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF035] JF BURGER SQUEEZE 3... | 16731 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF039] JF MAYO BARAKI SQUE... | 16738 | 1 | 0 | 1 | 30.00€ | 30.00€ |
-| [JF019] JF SAUCE AIOLI PEST... | 16762 | 1 | 0 | 1 | 21.00€ | 21.00€ |
-| [JF015] JF SAUCE ANDALOUSE ... | 16763 | 1 | 0 | 1 | 19.50€ | 19.50€ |
+| [JF019] JF SAUCE AIOLI PEST... | 16762 | 2 | 0 | 2 | 21.00€ | 42.00€ |
+| [JF015] JF SAUCE ANDALOUSE ... | 16763 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF005] JF MAYONNAISE OEUFS... | 16749 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF033] JF ANDALOUSE SQUEEZ... | 15058 | 1 | 0 | 1 | 26.40€ | 26.40€ |
+| [JF033] JF ANDALOUSE SQUEEZ... | 15058 | 2 | 0 | 2 | 26.40€ | 52.80€ |
 
-**Total (Phase 2.5): 450.60€**
+**Total (Phase 2.5): 517.50€**
 
 ---

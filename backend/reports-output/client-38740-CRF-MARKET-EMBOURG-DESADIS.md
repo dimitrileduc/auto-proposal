@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - CRF MARKET EMBOURG DESADIS
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 38740
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.8s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 44**
-- Urgents (rupture ≤ 0j): 27
+**Produits à risque détectés: 42**
+- Urgents (rupture ≤ 0j): 25
 - Modérés (0 < rupture ≤ 19j): 17
 
-**Total produits (Phase 1): 44**
-**Quantité totale brute: 58 unités**
+**Total produits (Phase 1): 42**
+**Quantité totale brute: 56 unités**
 
 ### Détails par produit
 
@@ -844,30 +844,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF018] JF SAUCE SAMOURAI 250ML WECK</strong> (ID: 16778) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0145
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-23 | S38200 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 16738) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -1023,9 +999,9 @@
 <summary>🔴 <strong>[JF026] JF VINAIGRET TRUFFES WECK 200M</strong> (ID: 16788) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0079
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.14
+- **Jours avant rupture**: **-15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1033,36 +1009,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-27 | S37091 | 1 | 31.50€ |
+| 2025-02-28 | S35135 | 1 | 31.50€ |
+| 2024-09-26 | S32420 | 1 | 31.50€ |
+| 2024-06-21 | S30918 | 1 | 31.50€ |
+| 2024-03-26 | S29513 | 1 | 31.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF003] JF MAYONNAIS WASABI 250ML WECK</strong> (ID: 16747) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0079
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-27 | S37091 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1071,9 +1027,9 @@
 <summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0079
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.14
+- **Jours avant rupture**: **-15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1081,12 +1037,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-27 | S37091 | 1 | 19.50€ |
+| 2025-02-28 | S35135 | 1 | 19.50€ |
+| 2024-08-14 | S31665 | 1 | 19.50€ |
+| 2024-06-21 | S30918 | 1 | 19.50€ |
+| 2024-03-26 | S29513 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1095,9 +1055,9 @@
 <summary>🔴 <strong>[JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> (ID: 16762) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0061
+- **Stock restant estimé**: -0.02
+- **Jours avant rupture**: **-3j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1105,12 +1065,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-16 | S36242 | 1 | 21.00€ |
+| 2024-08-14 | S31665 | 1 | 21.00€ |
+| 2024-05-28 | S30422 | 1 | 21.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1119,9 +1081,9 @@
 <summary>🔴 <strong>[JF025] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 16790) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.51
+- **Jours avant rupture**: **-56j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1129,12 +1091,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-16 | S36242 | 1 | 27.00€ |
+| 2025-01-16 | S34333 | 1 | 27.00€ |
+| 2024-08-14 | S31665 | 1 | 27.00€ |
+| 2024-05-28 | S30422 | 1 | 27.00€ |
+| 2024-03-26 | S29513 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1147,7 +1113,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1093.64€**
+- **Montant initial: 1054.64€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1188,7 +1154,6 @@
 | [RISH02] RISH kombucha BIO ... | 18358 | 1 | 0 | 1 | 25.08€ | 25.08€ |
 | [JF031] JF SAUCE LIEGEOISE ... | 16776 | 1 | 0 | 1 | 13.50€ | 13.50€ |
 | [JF033] JF ANDALOUSE SQUEEZ... | 15058 | 1 | 0 | 1 | 26.40€ | 26.40€ |
-| [JF018] JF SAUCE SAMOURAI 2... | 16778 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF039] JF MAYO BARAKI SQUE... | 16738 | 1 | 0 | 1 | 30.00€ | 30.00€ |
 | [JF017] JF SAUCE COCKTAIL 2... | 16771 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF036] JF MITRAILLETTE SQU... | 16753 | 1 | 0 | 1 | 26.40€ | 26.40€ |
@@ -1196,11 +1161,10 @@
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF024] JF VINAIGRET CIBOUL... | 16786 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF026] JF VINAIGRET TRUFFE... | 16788 | 1 | 0 | 1 | 31.50€ | 31.50€ |
-| [JF003] JF MAYONNAIS WASABI... | 16747 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF019] JF SAUCE AIOLI PEST... | 16762 | 1 | 0 | 1 | 21.00€ | 21.00€ |
 | [JF025] JF VINAIGRETTE FH W... | 16790 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 
-**Total (Phase 2.5): 1093.64€**
+**Total (Phase 2.5): 1054.64€**
 
 ---

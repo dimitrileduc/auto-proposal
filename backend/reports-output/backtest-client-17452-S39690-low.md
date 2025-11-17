@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 13 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,16 +152,7 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [LV209] LV Confit de Figues Bio 150g (bocal weck) | 75 | Stock prédit: 0.0u (0j restants) → prédit 75u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 15 | Stock prédit: 0.0u (0j restants) → prédit 15u mais non commandé |
-| [LV339] LV Tripack apéro | 64 | Stock prédit: 0.0u (0j restants) → prédit 64u mais non commandé |
-| [LV221] LV Cornichons Aigre-Doux 670g | 80 | Stock prédit: 0.0u (0j restants) → prédit 80u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
@@ -202,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:02.493Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:44.638Z*

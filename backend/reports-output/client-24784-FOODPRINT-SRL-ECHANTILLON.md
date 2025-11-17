@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - FOODPRINT SRL ECHANTILLON
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:58
 **🆔 Client ID:** 24784
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 655ms
+**⏱️ Durée d'exécution:** 2.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 78**
-- Urgents (rupture ≤ 0j): 68
-- Modérés (0 < rupture ≤ 19j): 10
+**Produits à risque détectés: 47**
+- Urgents (rupture ≤ 0j): 34
+- Modérés (0 < rupture ≤ 19j): 13
 
-**Total produits (Phase 1): 78**
-**Quantité totale brute: 94 unités**
+**Total produits (Phase 1): 47**
+**Quantité totale brute: 59 unités**
 
 ### Détails par produit
 
@@ -41,30 +41,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> (ID: 18307) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0714
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-29 | S39446 | 1 | 32.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -145,30 +121,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> (ID: 13094) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0714
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-29 | S39446 | 1 | 23.92€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[LV002] LV Pizza Croccantina au romarin 150 g bio</strong> (ID: 13096) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -189,54 +141,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0058] MF Confi Groseilles Bessen</strong> (ID: 17766) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0476
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 1 | 14.44€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0059] MF Confi Fraise- Ardbei</strong> (ID: 17767) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0476
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 1 | 16.51€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -317,54 +221,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0014] MF Olives noires 500g</strong> (ID: 554) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0476
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 1 | 27.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0013] MF Olives Vertes 500g</strong> (ID: 553) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0476
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 1 | 27.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[MF0012] MF Olives Mix 500g</strong> (ID: 552) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -415,102 +271,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0028] ​MF Tarti Carotte Gingembre 250g</strong> (ID: 568) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0952
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 2 | 14.46€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0027] MF Tarti Aubergine 250g </strong> (ID: 567) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0952
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 2 | 14.46€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0021] MF Sauce BBQ 250ml</strong> (ID: 561) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0952
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 2 | 18.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0024] MF KETCHUP 250g</strong> (ID: 564) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0952
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 2 | 16.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🟡 <strong>[MF0047] MF Mayonnaise 250ml</strong> (ID: 14850) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -532,54 +292,6 @@
 - **Quantités historiques**: [2, 1]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0052] MF Pois chiches  500g</strong> (ID: 16950) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0476
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 1 | 12.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0051] MF Kidney Beans 500g</strong> (ID: 16949) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0476
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39310 | 1 | 12.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -632,30 +344,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> (ID: 18329) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0476
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-22 | S39331 | 1 | 16.05€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[OCC02] OCCHIOLINO premium limoncello 500ml</strong> (ID: 18332) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -669,30 +357,6 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-22 | S39331 | 1 | 104.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV188] LV Tartinade Aubergine  380g</strong> (ID: 13071) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0400
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-18 | S39276 | 1 | 23.48€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
@@ -728,54 +392,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV143] LV Mayonnaise (huile 70%) 200 ml </strong> (ID: 13041) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-12 | S39165 | 1 | 13.76€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV159] LV Tartinade aux Truffes  135g </strong> (ID: 13057) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-12 | S39165 | 1 | 18.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV132] LV Tartinade Houmous type 190g</strong> (ID: 13063) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -800,30 +416,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV126] LV Tartinade Tomate Ail des Ours 190g</strong> (ID: 13070) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-12 | S39165 | 1 | 13.53€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[MF0062] ​MF Tarti Betterave rouge</strong> (ID: 18421) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -837,30 +429,6 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-12 | S39165 | 1 | 14.46€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-12 | S39165 | 1 | 23.04€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
@@ -935,30 +503,6 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-12 | S39165 | 1 | 27.36€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[ORG01] ORGANICA crunchy fruit ananas 16g</strong> (ID: 18338) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-12 | S39165 | 1 | 30.72€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
@@ -1141,30 +685,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV129] LV Tartinade Carotte Gingembre 190g</strong> (ID: 13059) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0192
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38659 | 1 | 13.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[REB04] ReBEL chips premium & bio - thym/romarin125g</strong> (ID: 18355) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -1210,30 +730,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV133] LV Tartinade Ananas Coco 190g</strong> (ID: 13065) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0192
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38659 | 1 | 13.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -1288,12 +784,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV330] LV BIO Tartinade Toscana 190g</strong> (ID: 14450) - 1 unités</summary>
+<summary>🟡 <strong>[LV330] LV BIO Tartinade Toscana 190g</strong> (ID: 14450) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0159
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0128
+- **Stock restant estimé**: 0.19
+- **Jours avant rupture**: **15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1301,36 +797,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-11 | S38428 | 1 | 14.52€ |
+| 2025-04-15 | S36202 | 1 | 14.52€ |
+| 2025-02-13 | S34877 | 1 | 14.52€ |
+| 2025-01-21 | S34431 | 1 | 14.52€ |
+| 2024-09-26 | S32437 | 1 | 14.10€ |
+| 2024-04-03 | S29614 | 1 | 14.10€ |
+| 2024-01-30 | S28737 | 1 | 14.10€ |
+| 2023-11-23 | S27807 | 1 | 14.10€ |
+| 2023-11-09 | S27540 | 1 | 14.10€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV216] LV Biscuits apéro Fromage & Oignon 100g bio</strong> (ID: 13092) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0159
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-11 | S38428 | 1 | 25.56€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 9
 - **Valeur médiane**: 1
 
 </details>
@@ -1436,108 +916,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> (ID: 18300) - 1 unités</summary>
+<summary>🟡 <strong>[REB06] REB chips bio - paprika fumé 35g</strong> (ID: 18415) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 35.76€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> (ID: 18310) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 32.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> (ID: 18380) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 31.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> (ID: 18377) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 31.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[REB06] REB chips bio - paprika fumé 35g</strong> (ID: 18415) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0100
+- **Stock restant estimé**: 0.03
+- **Jours avant rupture**: **3j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1545,12 +929,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-08 | S37946 | 1 | 17.60€ |
+| 2025-03-26 | S35635 | 1 | 17.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -1559,9 +944,9 @@
 <summary>🔴 <strong>[REB05] REB chips bio - sel de mer 35g</strong> (ID: 18416) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0120
+- **Stock restant estimé**: -0.16
+- **Jours avant rupture**: **-13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1569,60 +954,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-08 | S37946 | 1 | 17.60€ |
+| 2025-03-26 | S35635 | 1 | 17.60€ |
+| 2025-02-04 | S34655 | 1 | 17.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF003] JF MAYONNAIS WASABI 250ML WECK</strong> (ID: 16747) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> (ID: 16753) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 26.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1652,60 +991,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF024] JF VINAIGRET CIBOULE WECK 200M</strong> (ID: 16786) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 27.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> (ID: 16743) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0103
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37946 | 1 | 25.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> (ID: 16763) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0098
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0099
+- **Stock restant estimé**: -0.01
+- **Jours avant rupture**: **-1j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1713,12 +1004,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-03 | S37849 | 1 | 19.50€ |
+| 2025-04-03 | S35794 | 1 | 19.50€ |
+| 2025-01-21 | S34431 | 1 | 19.50€ |
+| 2024-09-05 | S32104 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1744,30 +1038,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF022] JF MOUTARDE MIEL 250ML WECK</strong> (ID: 16755) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0092
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-26 | S37707 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -1801,9 +1071,9 @@
 <summary>🔴 <strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> (ID: 18353) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0087
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0127
+- **Stock restant estimé**: -0.46
+- **Jours avant rupture**: **-36j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1811,12 +1081,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-20 | S37592 | 1 | 17.70€ |
+| 2025-03-28 | S35680 | 1 | 17.70€ |
+| 2025-02-18 | S34952 | 1 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1873,9 +1145,9 @@
 <summary>🔴 <strong>[JF038] JF KETCHUP SQUEEZE 300ML</strong> (ID: 16737) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0078
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0100
+- **Stock restant estimé**: -0.29
+- **Jours avant rupture**: **-29j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1883,23 +1155,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-06 | S37296 | 1 | 26.40€ |
+| 2025-03-27 | S35651 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> (ID: 16736) - 1 unités</summary>
+<summary>🟡 <strong>[JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> (ID: 16736) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0078
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0074
+- **Stock restant estimé**: 0.04
+- **Jours avant rupture**: **5j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1907,12 +1180,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-06 | S37296 | 1 | 26.40€ |
+| 2025-03-27 | S35651 | 1 | 26.40€ |
+| 2024-09-05 | S32104 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1925,7 +1200,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1957.01€**
+- **Montant initial: 1221.44€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1935,44 +1210,25 @@
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [MF0031] MF Tarti Olives ve... | 571 | 1 | 0 | 1 | 14.46€ | 14.46€ |
-| [NOD02] NODA limonade bio f... | 18307 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [NOD03] NODA limonade bio f... | 18308 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [LV161] LV Tartinade Mangue... | 13060 | 1 | 0 | 1 | 13.10€ | 13.10€ |
 | [LV130] LV BIO Tartinade Pa... | 13061 | 1 | 0 | 1 | 13.10€ | 13.10€ |
-| [LV055] LV Mini grissini à ... | 13094 | 1 | 0 | 1 | 23.92€ | 23.92€ |
 | [LV002] LV Pizza Croccantin... | 13096 | 1 | 0 | 1 | 27.03€ | 27.03€ |
-| [MF0058] MF Confi Groseille... | 17766 | 1 | 0 | 1 | 14.44€ | 14.44€ |
-| [MF0059] MF Confi Fraise- A... | 17767 | 1 | 0 | 1 | 16.51€ | 16.51€ |
 | [MF0054] MF Noix de cajou -... | 16978 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [MF0055] MF Noix de cajou -... | 16979 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [MF0056] MF Noix de cajou -... | 16980 | 1 | 0 | 1 | 20.62€ | 20.62€ |
-| [MF0014] MF Olives noires 500g | 554 | 1 | 0 | 1 | 27.60€ | 27.60€ |
-| [MF0013] MF Olives Vertes 500g | 553 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0012] MF Olives Mix 500g | 552 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0033] MF Tarti Poivron c... | 573 | 2 | 0 | 2 | 14.46€ | 28.92€ |
-| [MF0028] ​MF Tarti Carotte ... | 568 | 2 | 0 | 2 | 14.46€ | 28.92€ |
-| [MF0027] MF Tarti Aubergine... | 567 | 2 | 0 | 2 | 14.46€ | 28.92€ |
-| [MF0021] MF Sauce BBQ 250ml | 561 | 2 | 0 | 2 | 18.60€ | 37.20€ |
-| [MF0024] MF KETCHUP 250g | 564 | 2 | 0 | 2 | 16.50€ | 33.00€ |
 | [MF0047] MF Mayonnaise 250ml | 14850 | 2 | 0 | 2 | 16.50€ | 33.00€ |
-| [MF0052] MF Pois chiches  500g | 16950 | 1 | 0 | 1 | 12.00€ | 12.00€ |
-| [MF0051] MF Kidney Beans 500g | 16949 | 1 | 0 | 1 | 12.00€ | 12.00€ |
 | [DIS0001] Display M&F | 9730 | 1 | 0 | 1 | 0.00€ | 0.00€ |
 | [PAO02] PAOLA cola ZERO ver... | 18347 | 1 | 0 | 1 | 25.20€ | 25.20€ |
-| [NUT02] NUTS & BERRIES ener... | 18329 | 1 | 0 | 1 | 16.05€ | 16.05€ |
 | [OCC02] OCCHIOLINO premium ... | 18332 | 1 | 0 | 1 | 104.40€ | 104.40€ |
-| [LV188] LV Tartinade Auberg... | 13071 | 1 | 0 | 1 | 23.48€ | 23.48€ |
 | [TVF015] TVF TARTINADE BIO ... | 17670 | 1 | 0 | 1 | 20.40€ | 20.40€ |
-| [LV143] LV Mayonnaise (huil... | 13041 | 1 | 0 | 1 | 13.76€ | 13.76€ |
-| [LV159] LV Tartinade aux Tr... | 13057 | 1 | 0 | 1 | 18.60€ | 18.60€ |
 | [LV132] LV Tartinade Houmou... | 13063 | 1 | 0 | 1 | 13.29€ | 13.29€ |
-| [LV126] LV Tartinade Tomate... | 13070 | 1 | 0 | 1 | 13.53€ | 13.53€ |
 | [MF0062] ​MF Tarti Betterav... | 18421 | 1 | 0 | 1 | 14.46€ | 14.46€ |
-| [MF0050] MF Cornichons aigr... | 16936 | 1 | 0 | 1 | 23.04€ | 23.04€ |
 | [REB11] ReBEL chips premium... | 18356 | 1 | 0 | 1 | 25.30€ | 25.30€ |
 | [JOY04] JOY! Organic Four-F... | 18276 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [JOY01] JOY! Organic Sweet ... | 18269 | 1 | 0 | 1 | 27.36€ | 27.36€ |
-| [ORG01] ORGANICA crunchy fr... | 18338 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [ORG09] ORGANICA crunchy fr... | 18339 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [ORG10] ORGANICA crunchy fr... | 18342 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [LD013] LD Tuscan Organic S... | 19398 | 4 | 0 | 4 | 14.50€ | 58.00€ |
@@ -1980,32 +1236,20 @@
 | [LD007] LD Organic Pineappl... | 19392 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [LD011] LD Organic Kids Spr... | 19396 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [LV357] LV Tartinade BIO As... | 19272 | 1 | 0 | 1 | 18.60€ | 18.60€ |
-| [LV129] LV Tartinade Carott... | 13059 | 1 | 0 | 1 | 13.04€ | 13.04€ |
 | [REB04] ReBEL chips premium... | 18355 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
-| [LV133] LV Tartinade Ananas... | 13065 | 1 | 0 | 1 | 13.72€ | 13.72€ |
 | [LV342] LV Organic Broccoli... | 14999 | 2 | 0 | 2 | 13.53€ | 27.06€ |
 | [fsv11] Noix de cajou mexic... | 18313 | 1 | 0 | 1 | 59.72€ | 59.72€ |
 | [LV330] LV BIO Tartinade To... | 14450 | 1 | 0 | 1 | 14.52€ | 14.52€ |
-| [LV216] LV Biscuits apéro F... | 13092 | 1 | 0 | 1 | 25.56€ | 25.56€ |
 | [REB08] ReBEL chips premium... | 18351 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [JF054] JF LEMON MAYONNAISE... | 19354 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF055] JF HONEY MUSTARD MA... | 19355 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF056] JF SAUCE CHIPOTLE 2... | 19356 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [MATE01] MATE MATE thé glac... | 18300 | 1 | 0 | 1 | 35.76€ | 35.76€ |
-| [NOD01] NODA limonade bio f... | 18310 | 1 | 0 | 1 | 32.40€ | 32.40€ |
-| [TEN01] TENSAÏ TEA  thé ver... | 18380 | 1 | 0 | 1 | 31.60€ | 31.60€ |
-| [TEN03] TENSAÏ TEA  thé bla... | 18377 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [REB06] REB chips bio - pap... | 18415 | 1 | 0 | 1 | 17.60€ | 17.60€ |
 | [REB05] REB chips bio - sel... | 18416 | 1 | 0 | 1 | 17.60€ | 17.60€ |
-| [JF003] JF MAYONNAIS WASABI... | 16747 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF036] JF MITRAILLETTE SQU... | 16753 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF031] JF SAUCE LIEGEOISE ... | 16776 | 1 | 0 | 1 | 13.50€ | 13.50€ |
-| [JF024] JF VINAIGRET CIBOUL... | 16786 | 1 | 0 | 1 | 27.00€ | 27.00€ |
-| [JF008] JF MAYONNA DU CHEF ... | 16743 | 1 | 0 | 1 | 25.80€ | 25.80€ |
 | [JF015] JF SAUCE ANDALOUSE ... | 16763 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF001] JF MAYONNAI TRUFFES... | 16745 | 1 | 0 | 1 | 23.40€ | 23.40€ |
-| [JF022] JF MOUTARDE MIEL 25... | 16755 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF017] JF SAUCE COCKTAIL 2... | 16771 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [REB01] ReBEL chips premium... | 18353 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [NUT01] NUTS & BERRIES ener... | 18327 | 1 | 0 | 1 | 16.05€ | 16.05€ |
@@ -2013,6 +1257,6 @@
 | [JF038] JF KETCHUP SQUEEZE ... | 16737 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF040] JF CURRY KETCHUP SQ... | 16736 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 
-**Total (Phase 2.5): 1957.01€**
+**Total (Phase 2.5): 1221.44€**
 
 ---

@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 14 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 13 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (14)
+## False Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -162,14 +162,13 @@
 | [LV160] LV Tartinade Aubergine 190g | 2 | Stock prédit: 0.8u (18j restants) → prédit 2u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: 0.7u (14j restants) → prédit 2u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: 0.0u (1j restants) → prédit 2u mais non commandé |
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.0u (3j restants) → prédit 1u mais non commandé |
 | [RIT01] RITCHIE Orange - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -0.1u (-9j restants) → prédit 1u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: -0.4u (-52j restants) → prédit 1u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock prédit: -0.4u (-52j restants) → prédit 1u mais non commandé |
 | [LV136] LV Tartinade Betterave 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
@@ -200,4 +199,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:07.974Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:35.902Z*

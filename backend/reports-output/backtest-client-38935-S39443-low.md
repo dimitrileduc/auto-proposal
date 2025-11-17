@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 23.1% | 13 produits prédits, 3 corrects |
-| **Rappel** | 30.0% | 10 produits réels, 3 détectés |
-| **F1-Score** | 26.1% | Score équilibré global |
+| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
+| **Rappel** | 10.0% | 10 produits réels, 1 détectés |
+| **F1-Score** | 16.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,14 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (10)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,21 +163,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF011] JF SAUCE TARTARE 470ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -200,8 +189,10 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: -0.3u (-26j restants > seuil 19j) |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.2u (29j restants > seuil 19j) |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: -0.3u (-26j restants > seuil 19j) |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock suffisant: -0.1u (-8j restants > seuil 19j) |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock suffisant: -0.3u (-26j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: -0.3u (-26j restants > seuil 19j) |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | Stock suffisant: 0.1u (2j restants > seuil 19j) |
@@ -210,4 +201,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:37.577Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:57.833Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 5 produits prédits, 2 corrects |
-| **Rappel** | 40.0% | 5 produits réels, 2 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **Précision** | 50.0% | 6 produits prédits, 3 corrects |
+| **Rappel** | 60.0% | 5 produits réels, 3 détectés |
+| **F1-Score** | 54.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,6 +140,7 @@
 |---------|--------|------|-----------|----------|------|
 | [LV105] LV Tomate Basil Aufstr 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
 | [LV106] LV Oliven Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
+| [LV343] LV Toskana Aufstrich 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -171,7 +172,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -192,10 +193,9 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | Stock suffisant: 123.0u (28j restants > seuil 19j) |
-| [LV343] LV Toskana Aufstrich 180g | 300 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV347] LV Trüffel Aufstrich 180g DE | 150 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:31.714Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:23.399Z*

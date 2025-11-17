@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 22.6% | 31 produits prédits, 7 corrects |
+| **Précision** | 25.9% | 27 produits prédits, 7 corrects |
 | **Rappel** | 53.8% | 13 produits réels, 7 détectés |
-| **F1-Score** | 31.8% | Score équilibré global |
+| **F1-Score** | 35.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -149,7 +149,7 @@
 
 ---
 
-## False Positives (24)
+## False Positives (20)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,25 +172,21 @@
 | [JOY02] JOY! Organic Strawberry Jam 370g | 3 | Stock prédit: 1.1u (5j restants) → prédit 3u mais non commandé |
 | [JOY03] JOY! Organic Apricot Jam 370g | 3 | Stock prédit: 1.1u (5j restants) → prédit 3u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | Stock prédit: 0.4u (3j restants) → prédit 2u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [CB010] CB Jus de Pomme cubis 3l | 4 | Stock prédit: -0.7u (-9j restants) → prédit 4u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.6u (-32j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -0.1u (-13j restants) → prédit 1u mais non commandé |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 2 | Stock prédit: 0.4u (17j restants) → prédit 2u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0058] MF Confi Groseilles Bessen | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0059] MF Confi Fraise- Ardbei | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: -0.6u (-57j restants) → prédit 1u mais non commandé |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: -0.2u (-19j restants) → prédit 1u mais non commandé |
 | [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: -0.7u (-60j restants) → prédit 1u mais non commandé |
 | [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
@@ -227,4 +223,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:51.864Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:57.001Z*

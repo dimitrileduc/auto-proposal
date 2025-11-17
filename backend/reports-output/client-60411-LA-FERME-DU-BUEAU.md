@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - LA FERME DU BUEAU
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 60411
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.8s
+**⏱️ Durée d'exécution:** 2.8s
 
 ---
 
@@ -680,9 +680,9 @@
 <summary>🔴 <strong>[LV158] LV Moutarde 200 ml</strong> (ID: 13055) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0068
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0084
+- **Stock restant estimé**: -0.23
+- **Jours avant rupture**: **-27j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -690,12 +690,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36879 | 1 | 14.20€ |
+| 2025-02-17 | S34900 | 1 | 14.20€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -704,9 +705,9 @@
 <summary>🔴 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0058
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0078
+- **Stock restant estimé**: -0.34
+- **Jours avant rupture**: **-43j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -714,12 +715,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36304 | 1 | 14.50€ |
+| 2025-01-27 | S34524 | 1 | 14.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -728,9 +730,9 @@
 <summary>🔴 <strong>[LV147] LV Sauce Cocktail 200 ml</strong> (ID: 13045) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0058
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0116
+- **Stock restant estimé**: -1.01
+- **Jours avant rupture**: **-87j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -738,12 +740,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36304 | 1 | 15.48€ |
+| 2025-02-17 | S34900 | 1 | 15.48€ |
+| 2025-01-27 | S34524 | 1 | 15.48€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -752,9 +756,9 @@
 <summary>🔴 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0058
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0084
+- **Stock restant estimé**: -0.46
+- **Jours avant rupture**: **-54j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -762,12 +766,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36304 | 1 | 19.28€ |
+| 2025-02-17 | S34900 | 1 | 19.28€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -800,9 +805,9 @@
 <summary>🔴 <strong>[JOY03] JOY! Organic Apricot Jam 370g</strong> (ID: 18275) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0058
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0084
+- **Stock restant estimé**: -0.46
+- **Jours avant rupture**: **-54j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -810,12 +815,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36304 | 1 | 27.92€ |
+| 2025-02-17 | S34900 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -824,9 +830,9 @@
 <summary>🔴 <strong>[WIG04] WIGNAC cidre rosé bio 750ml</strong> (ID: 18386) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0058
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0127
+- **Stock restant estimé**: -1.19
+- **Jours avant rupture**: **-94j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -834,12 +840,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36304 | 1 | 27.00€ |
+| 2025-03-10 | S35282 | 1 | 27.00€ |
+| 2025-02-17 | S34900 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>

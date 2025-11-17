@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 82.4% | 17 produits prédits, 14 corrects |
+| **Précision** | 87.5% | 16 produits prédits, 14 corrects |
 | **Rappel** | 77.8% | 18 produits réels, 14 détectés |
-| **F1-Score** | 80.0% | Score équilibré global |
+| **F1-Score** | 82.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,8 +177,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 5 | Stock prédit: -0.5u (-4j restants) → prédit 5u mais non commandé |
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: -0.2u (-14j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -211,4 +210,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:17.802Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:46.732Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 45 produits prédits, 18 corrects |
-| **Rappel** | 51.4% | 35 produits réels, 18 détectés |
-| **F1-Score** | 45.0% | Score équilibré global |
+| **Précision** | 42.5% | 40 produits prédits, 17 corrects |
+| **Rappel** | 48.6% | 35 produits réels, 17 détectés |
+| **F1-Score** | 45.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.44 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.41 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 29.4% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 10 | Égalité parfaite |
-| Partial Match (>0u) | 8 | Avec erreur |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (18)
+## True Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -150,17 +150,16 @@
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV189] LV Tartinade Houmous Type 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (27)
+## False Positives (23)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -195,23 +194,19 @@
 | [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.4u (14j restants) → prédit 1u mais non commandé |
 | [MF0060] MF Passata | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [MF0051] MF Kidney Beans 500g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: -0.3u (-18j restants) → prédit 1u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -0.7u (-18j restants) → prédit 2u mais non commandé |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV165] LV Vol-au-vent (avec viande de volaille) 400 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV214] LV Biscuits apéro tomate basilic 100g bio  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV165] LV Vol-au-vent (avec viande de volaille) 400 g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: -0.6u (-41j restants) → prédit 1u mais non commandé |
 | [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: -0.4u (-31j restants) → prédit 1u mais non commandé |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -1.0u (-81j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (17)
+## False Negatives (18)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -247,9 +242,10 @@
 | [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 4 | Stock suffisant: 1.7u (34j restants > seuil 19j) |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | Stock suffisant: 0.7u (21j restants > seuil 19j) |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: 1.5u (79j restants > seuil 19j) |
 | [WIG03] WIGNAC cidre naturel bio 750ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:10.904Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:38.346Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 28.6% | 7 produits prédits, 2 corrects |
-| **Rappel** | 11.8% | 17 produits réels, 2 détectés |
-| **F1-Score** | 16.7% | Score équilibré global |
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
+| **Rappel** | 5.9% | 17 produits réels, 1 détectés |
+| **F1-Score** | 10.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,12 +139,11 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (5)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,16 +163,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0059] MF Confi Fraise- Ardbei | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (15)
+## False Negatives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -193,6 +189,7 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | Stock suffisant: -0.8u (-47j restants > seuil 19j) |
 | [MF0013] MF Olives Vertes 500g | 1 | Stock suffisant: 0.3u (21j restants > seuil 19j) |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: 1.3u (22j restants > seuil 19j) |
 | [MF0029] MF Tarti Datte chili 250g | 2 | Stock suffisant: 0.8u (17j restants > seuil 19j) |
@@ -212,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:54.819Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:18.538Z*

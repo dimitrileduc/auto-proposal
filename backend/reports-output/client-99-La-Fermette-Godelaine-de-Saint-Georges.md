@@ -1,48 +1,24 @@
 # 📊 Rapport Auto-Proposal - La Fermette Godelaine de Saint-Georges
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 99
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.4s
+**⏱️ Durée d'exécution:** 2.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 39**
-- Urgents (rupture ≤ 0j): 32
-- Modérés (0 < rupture ≤ 19j): 7
+**Produits à risque détectés: 33**
+- Urgents (rupture ≤ 0j): 24
+- Modérés (0 < rupture ≤ 19j): 9
 
-**Total produits (Phase 1): 39**
-**Quantité totale brute: 42 unités**
+**Total produits (Phase 1): 33**
+**Quantité totale brute: 36 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[MF0012] MF Olives Mix 500g</strong> (ID: 552) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-10-09 | S39578 | 1 | 27.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
 
 <details>
 <summary>🟡 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18351) - 2 unités</summary>
@@ -340,12 +316,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LEA10] LEAMO ginger beer bio 330ml</strong> (ID: 18291) - 1 unités</summary>
+<summary>🟡 <strong>[LEA10] LEAMO ginger beer bio 330ml</strong> (ID: 18291) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0250
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0182
+- **Stock restant estimé**: 0.27
+- **Jours avant rupture**: **15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -353,12 +329,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-01 | S38890 | 1 | 33.80€ |
+| 2025-03-03 | S35149 | 1 | 33.80€ |
+| 2025-02-05 | S34696 | 1 | 33.80€ |
+| 2025-01-20 | S34403 | 1 | 33.80€ |
+| 2025-01-09 | S34116 | 1 | 33.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -526,12 +506,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[CB005] CB Apple juice 1l</strong> (ID: 14941) - 1 unités</summary>
+<summary>🟡 <strong>[CB005] CB Apple juice 1l</strong> (ID: 14941) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0118
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0105
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **10j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -539,36 +519,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-18 | S38124 | 1 | 15.00€ |
+| 2025-03-03 | S35149 | 1 | 15.00€ |
+| 2025-01-20 | S34403 | 1 | 15.00€ |
+| 2024-11-26 | S33485 | 1 | 15.00€ |
+| 2024-06-20 | S30830 | 1 | 15.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[CB010] CB Jus de Pomme cubis 3l</strong> (ID: 14948) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0118
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-18 | S38124 | 1 | 7.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -626,30 +586,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[ORG08] ORGANICA crunchy fruit framboise 12g</strong> (ID: 18341) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0105
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37933 | 1 | 37.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> (ID: 18345) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -702,9 +638,9 @@
 <summary>🔴 <strong>[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> (ID: 18380) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0105
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0114
+- **Stock restant estimé**: -0.08
+- **Jours avant rupture**: **-7j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -712,36 +648,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-08 | S37933 | 1 | 31.60€ |
+| 2025-03-18 | S35442 | 1 | 31.60€ |
+| 2025-01-20 | S34403 | 1 | 31.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0014] MF Olives noires 500g</strong> (ID: 554) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0105
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37933 | 1 | 27.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -767,30 +681,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0034] MF Tarti Pomme Raifort 250g </strong> (ID: 574) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0105
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37933 | 1 | 14.46€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -847,9 +737,9 @@
 <summary>🔴 <strong>[LEA04] LEAMO ginger beer bio 750ml</strong> (ID: 18292) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0088
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0145
+- **Stock restant estimé**: -0.66
+- **Jours avant rupture**: **-45j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -857,12 +747,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-19 | S37489 | 1 | 32.40€ |
+| 2025-04-01 | S35735 | 1 | 32.40€ |
+| 2025-01-09 | S34116 | 2 | 32.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -895,9 +787,9 @@
 <summary>🔴 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18356) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0076
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0121
+- **Stock restant estimé**: -0.58
+- **Jours avant rupture**: **-48j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -905,12 +797,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-02 | S37175 | 1 | 25.30€ |
+| 2025-04-01 | S35735 | 1 | 25.30€ |
+| 2025-02-05 | S34696 | 1 | 25.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -919,9 +813,9 @@
 <summary>🔴 <strong>[MF0060] MF Passata</strong> (ID: 17768) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0076
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0094
+- **Stock restant estimé**: -0.23
+- **Jours avant rupture**: **-24j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -929,36 +823,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-02 | S37175 | 1 | 12.37€ |
+| 2025-01-20 | S34403 | 1 | 12.37€ |
+| 2024-11-26 | S33485 | 1 | 12.37€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0013] MF Olives Vertes 500g</strong> (ID: 553) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-19 | S36893 | 1 | 27.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1044,7 +916,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 999.37€**
+- **Montant initial: 857.11€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1053,7 +925,6 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [MF0012] MF Olives Mix 500g | 552 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [REB08] ReBEL chips premium... | 18351 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [ALO30] ORGANIC CRUNCH aloe... | 18336 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [ALO33] ORGANIC CRUNCH aloe... | 18334 | 1 | 0 | 1 | 15.48€ | 15.48€ |
@@ -1072,27 +943,22 @@
 | [MF0030] MF Tarti Mangue Cu... | 570 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [CB005] CB Apple juice 1l | 14941 | 1 | 0 | 1 | 15.00€ | 15.00€ |
-| [CB010] CB Jus de Pomme cub... | 14948 | 1 | 0 | 1 | 7.80€ | 7.80€ |
 | [MF0029] MF Tarti Datte chi... | 569 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [MF0053] MF Maïs 500g | 16951 | 1 | 0 | 1 | 11.40€ | 11.40€ |
-| [ORG08] ORGANICA crunchy fr... | 18341 | 1 | 0 | 1 | 37.20€ | 37.20€ |
 | [PAO01] PAOLA cola verre 25... | 18345 | 1 | 0 | 1 | 25.20€ | 25.20€ |
 | [TEN02] TENSAÏ TEA  thé noi... | 18379 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [TEN01] TENSAÏ TEA  thé ver... | 18380 | 1 | 0 | 1 | 31.60€ | 31.60€ |
-| [MF0014] MF Olives noires 500g | 554 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0052] MF Pois chiches  500g | 16950 | 1 | 0 | 1 | 12.00€ | 12.00€ |
-| [MF0034] MF Tarti Pomme Rai... | 574 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [ORG01] ORGANICA crunchy fr... | 18338 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [MATE02] MATE MATE thé glac... | 18299 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [LEA04] LEAMO ginger beer b... | 18292 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [PAO02] PAOLA cola ZERO ver... | 18347 | 1 | 0 | 1 | 25.20€ | 25.20€ |
 | [REB11] ReBEL chips premium... | 18356 | 1 | 0 | 1 | 25.30€ | 25.30€ |
 | [MF0060] MF Passata | 17768 | 1 | 0 | 1 | 12.37€ | 12.37€ |
-| [MF0013] MF Olives Vertes 500g | 553 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0055] MF Noix de cajou -... | 16979 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [ORG09] ORGANICA crunchy fr... | 18339 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [JOY07] JOY! Organic Fig Ja... | 18271 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 
-**Total (Phase 2.5): 999.37€**
+**Total (Phase 2.5): 857.11€**
 
 ---

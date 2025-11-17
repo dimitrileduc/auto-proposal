@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 27 produits prédits, 9 corrects |
+| **Précision** | 34.6% | 26 produits prédits, 9 corrects |
 | **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 47.4% | Score équilibré global |
+| **F1-Score** | 48.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (18)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -178,7 +178,6 @@
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.7u (12j restants) → prédit 1u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: 1.1u (16j restants) → prédit 2u mais non commandé |
 | [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv08] Banana chips bio vrac 1,6kg | 4 | Stock prédit: 0.6u (5j restants) → prédit 4u mais non commandé |
 | [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
@@ -187,7 +186,7 @@
 | [OCC05] OCCHIOLINO premium arancello 500ml | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
 | [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: -0.4u (-16j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-29j restants) → prédit 1u mais non commandé |
 | [RISH05] RISH kombucha BIO - rose 750ml | 1 | Stock prédit: -0.9u (-76j restants) → prédit 1u mais non commandé |
 
 
@@ -219,4 +218,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:15.320Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:03.920Z*

@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 11 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,14 +152,7 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [LV344] LV Colis apéro | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
@@ -198,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:46.241Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:49.231Z*

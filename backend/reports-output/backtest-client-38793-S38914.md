@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.5% | 16 produits prédits, 6 corrects |
-| **Rappel** | 42.9% | 14 produits réels, 6 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **Précision** | 40.0% | 25 produits prédits, 10 corrects |
+| **Rappel** | 71.4% | 14 produits réels, 10 détectés |
+| **F1-Score** | 51.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.60 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 55.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (6)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,14 +141,18 @@
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (10)
+## False Positives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -178,11 +182,16 @@
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -0.5u (-13j restants) → prédit 2u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: -0.5u (-13j restants) → prédit 2u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: -0.5u (-13j restants) → prédit 2u mais non commandé |
+| [SOWA03] SOWA ginger beer ardent 250ml | 1 | Stock prédit: -0.0u (-3j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.7u (-46j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.2u (-16j restants) → prédit 1u mais non commandé |
+| [JF029] JF VOL AU VENT BOCAL 400G | 3 | Stock prédit: -0.7u (-23j restants) → prédit 3u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock prédit: -0.8u (-42j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (8)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -202,16 +211,12 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock suffisant: 0.3u (54j restants > seuil 19j) |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.2u (34j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:33.792Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:50.847Z*

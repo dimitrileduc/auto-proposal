@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 21.7% | 23 produits prédits, 5 corrects |
-| **Rappel** | 17.2% | 29 produits réels, 5 détectés |
-| **F1-Score** | 19.2% | Score équilibré global |
+| **Précision** | 25.0% | 4 produits prédits, 1 corrects |
+| **Rappel** | 3.4% | 29 produits réels, 1 détectés |
+| **F1-Score** | 6.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,16 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (18)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,29 +163,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (24)
+## False Negatives (28)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -212,8 +193,10 @@
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: -0.4u (-10j restants > seuil 19j) |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock suffisant: -0.4u (-10j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 3 | Stock suffisant: -2.5u (-48j restants > seuil 19j) |
+| [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: -1.5u (-91j restants > seuil 19j) |
 | [LV132] LV Tartinade Houmous type 190g | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
 | [LV162] LV Tartinade Tomato Basilico 190g | 3 | Stock suffisant: -0.7u (-8j restants > seuil 19j) |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock suffisant: -1.1u (-50j restants > seuil 19j) |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: -0.6u (-24j restants > seuil 19j) |
 | [LV136] LV Tartinade Betterave 190g | 1 | Stock suffisant: 0.4u (27j restants > seuil 19j) |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock suffisant: -1.5u (-32j restants > seuil 19j) |
@@ -225,6 +208,7 @@
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock suffisant: -0.7u (-39j restants > seuil 19j) |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: -0.6u (-12j restants > seuil 19j) |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock suffisant: -0.2u (-10j restants > seuil 19j) |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock suffisant: -0.4u (-36j restants > seuil 19j) |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.2u (9j restants > seuil 19j) |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: -0.6u (-24j restants > seuil 19j) |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: -0.7u (-39j restants > seuil 19j) |
@@ -232,9 +216,10 @@
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: -0.4u (-19j restants > seuil 19j) |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: -0.2u (-10j restants > seuil 19j) |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock suffisant: 0.1u (12j restants > seuil 19j) |
 | [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:41.073Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:48.013Z*

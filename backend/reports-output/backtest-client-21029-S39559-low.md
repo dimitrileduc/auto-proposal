@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 36.4% | 11 produits prédits, 4 corrects |
-| **Rappel** | 11.1% | 36 produits réels, 4 détectés |
-| **F1-Score** | 17.0% | Score équilibré global |
+| **Précision** | 42.9% | 7 produits prédits, 3 corrects |
+| **Rappel** | 8.3% | 36 produits réels, 3 détectés |
+| **F1-Score** | 14.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 37.5% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,12 +141,11 @@
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [MF0051] MF Kidney Beans 500g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (7)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,18 +165,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV156] LV Sauce barbecue 263 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV139] LV Tartinade Paprika Chili 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv02] Noix de cajou nature bio vrac 2,8kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (32)
+## False Negatives (33)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -200,6 +196,7 @@
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [MF0052] MF Pois chiches  500g | 2 | Stock suffisant: -0.7u (-24j restants > seuil 19j) |
+| [MF0051] MF Kidney Beans 500g | 1 | Stock suffisant: -0.2u (-11j restants > seuil 19j) |
 | [MF0053] MF Maïs 500g | 3 | Stock suffisant: 0.9u (26j restants > seuil 19j) |
 | [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 3 | Stock suffisant: -1.5u (-35j restants > seuil 19j) |
 | [LV145] LV Sauce Tartare 200 ml  | 2 | Stock suffisant: 0.3u (12j restants > seuil 19j) |
@@ -233,4 +230,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:11.618Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:38.555Z*

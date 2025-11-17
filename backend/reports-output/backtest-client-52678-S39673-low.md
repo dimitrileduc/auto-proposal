@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.0% | 5 produits prédits, 3 corrects |
-| **Rappel** | 17.6% | 17 produits réels, 3 détectés |
-| **F1-Score** | 27.3% | Score équilibré global |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 17 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,15 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -171,7 +163,7 @@
 
 ---
 
-## False Negatives (14)
+## False Negatives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -194,7 +186,9 @@
 | [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock suffisant: -0.6u (-23j restants > seuil 19j) |
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock suffisant: 0.4u (19j restants > seuil 19j) |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock suffisant: 0.4u (19j restants > seuil 19j) |
+| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: -0.5u (-60j restants > seuil 19j) |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: -0.6u (-23j restants > seuil 19j) |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock suffisant: -2.0u (-77j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: -0.2u (-9j restants > seuil 19j) |
 | [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock suffisant: -0.2u (-9j restants > seuil 19j) |
@@ -202,6 +196,7 @@
 | [LV214] LV Biscuits apéro tomate basilic 100g bio  | 1 | Stock suffisant: -0.4u (-30j restants > seuil 19j) |
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock suffisant: -0.2u (-9j restants > seuil 19j) |
 | [LV216] LV Biscuits apéro Fromage & Oignon 100g bio | 1 | Stock suffisant: -0.2u (-9j restants > seuil 19j) |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock suffisant: -1.6u (-40j restants > seuil 19j) |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock suffisant: -0.1u (-8j restants > seuil 19j) |
 | [VID0009] Consigne casier | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 18 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -209,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:04.437Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:35.736Z*

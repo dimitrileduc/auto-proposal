@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.0% | 20 produits prédits, 6 corrects |
-| **Rappel** | 35.3% | 17 produits réels, 6 détectés |
-| **F1-Score** | 32.4% | Score équilibré global |
+| **Précision** | 44.4% | 9 produits prédits, 4 corrects |
+| **Rappel** | 23.5% | 17 produits réels, 4 détectés |
+| **F1-Score** | 30.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.17 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (6)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,17 +138,15 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LD010] LD Organic Truffle Spread 135 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LD012] LD Organic Samphire Spread 135 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LD013] LD Tuscan Organic Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LD015] LD Onion Spread 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (14)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -168,25 +166,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD009] LD Organic Asparagus Spread 180 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD014] LD Organic Avocado Spread 180 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF016] TVF TARTINADE BIO POIS CHICHES 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF017] TVF TARTINADE BIO TOMATE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (13)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -206,11 +195,13 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 0.8u (52j restants > seuil 19j) |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: 0.5u (20j restants > seuil 19j) |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
 | [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock suffisant: 0.2u (16j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock suffisant: 0.6u (33j restants > seuil 19j) |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.1u (4j restants > seuil 19j) |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock suffisant: -0.2u (-7j restants > seuil 19j) |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock suffisant: 0.4u (12j restants > seuil 19j) |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock suffisant: 0.3u (9j restants > seuil 19j) |
@@ -221,4 +212,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:28.406Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:02.528Z*

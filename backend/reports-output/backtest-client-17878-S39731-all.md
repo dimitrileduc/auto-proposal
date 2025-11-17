@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.5% | 32 produits prédits, 12 corrects |
+| **Précision** | 38.7% | 31 produits prédits, 12 corrects |
 | **Rappel** | 75.0% | 16 produits réels, 12 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **F1-Score** | 51.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -154,7 +154,7 @@
 
 ---
 
-## False Positives (20)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -190,9 +190,8 @@
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.2u (-13j restants) → prédit 1u mais non commandé |
 | [LV188] LV Tartinade Aubergine  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -0.3u (-21j restants) → prédit 1u mais non commandé |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.4u (-45j restants) → prédit 1u mais non commandé |
+| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: -0.3u (-41j restants) → prédit 1u mais non commandé |
 | [fsv08] Banana chips bio vrac 1,6kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -226,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:46.462Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:48.449Z*

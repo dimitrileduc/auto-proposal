@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - SDP Rungis
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 17600
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 3.6s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 31**
-- Urgents (rupture ≤ 0j): 22
-- Modérés (0 < rupture ≤ 19j): 9
+**Produits à risque détectés: 24**
+- Urgents (rupture ≤ 0j): 14
+- Modérés (0 < rupture ≤ 19j): 10
 
-**Total produits (Phase 1): 31**
-**Quantité totale brute: 9193 unités**
+**Total produits (Phase 1): 24**
+**Quantité totale brute: 7649 unités**
 
 ### Détails par produit
 
@@ -300,30 +300,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV317] LV "CLASSIQUE" WECK Vinaigrette CIBOULETTE 200ml</strong> (ID: 13162) - 150 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 3.9474
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-04 | S38981 | 150 | 23.13€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 150
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml </strong> (ID: 13350) - 350 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -510,36 +486,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV333] LV "CLASSIQUE" WECK Mayonnaise au WASABI 250ml SDP </strong> (ID: 14610) - 200 unités</summary>
+<summary>🟡 <strong>[LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml</strong> (ID: 13160) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 3.7037
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-19 | S38333 | 200 | 16.56€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 200
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml</strong> (ID: 13160) - 200 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.9608
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.6552
+- **Stock restant estimé**: 31.17
+- **Jours avant rupture**: **18j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -547,23 +499,28 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-02 | S37799 | 200 | 16.38€ |
+| 2025-01-14 | S34313 | 200 | 16.38€ |
+| 2024-06-11 | S30718 | 200 | 16.38€ |
+| 2024-04-02 | S29601 | 200 | 16.38€ |
+| 2023-12-19 | S27916 | 200 | 16.74€ |
+| 2023-10-18 | S04900 | 200 | 16.74€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [200]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [200, 200, 200, 200, 200]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 200
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV356] LV SET 3 X 135G trisauces  SDP</strong> (ID: 17597) - 256 unités</summary>
+<summary>🔴 <strong>[LV356] LV SET 3 X 135G trisauces  SDP</strong> (ID: 17597) - 512 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.5098
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 3.2668
+- **Stock restant estimé**: -77.22
+- **Jours avant rupture**: **-23j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -571,13 +528,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-02 | S37799 | 256 | 19.65€ |
+| 2024-10-01 | S32515 | 512 | 17.80€ |
+| 2024-08-07 | S31506 | 640 | 17.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [256]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 256
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [256, 512, 640]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 512
 
 </details>
 
@@ -602,30 +561,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [350, 350]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 350
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV318] LV BIO Tartin'apero Ananas Coco SDP 200 ml </strong> (ID: 13354) - 350 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 3.4314
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-02 | S37799 | 350 | 9.61€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 350
 
 </details>
@@ -730,102 +665,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[LV353] LV BIO Tartin'apero Kids 200ml</strong> (ID: 17378) - 250 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.6340
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-12 | S36713 | 250 | 9.55€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [250]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 250
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV315] LV "CLASSIQUE" WECK Vinaigrette MOUTARDE 200ml</strong> (ID: 13163) - 150 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.9434
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-06 | S36535 | 150 | 22.86€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 150
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV349] LV BIO Tartin'apero Brocoli 200 ml </strong> (ID: 17374) - 350 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 2.2013
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-06 | S36535 | 350 | 9.55€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 350
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV350] LV BIO Tartin'apero Oignon 200 ml </strong> (ID: 17375) - 350 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 2.2013
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-06 | S36535 | 350 | 9.55€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [350]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 350
-
-</details>
-
 
 ---
 
@@ -834,7 +673,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 112678.84€**
+- **Montant initial: 95062.74€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -853,7 +692,6 @@
 | [LV235] LV "CLASSIQUE" WECK... | 13159 | 600 | 0 | 600 | 16.38€ | 9828.00€ |
 | [LV314] LV "CLASSIQUE" WECK... | 13158 | 200 | 0 | 200 | 16.92€ | 3384.00€ |
 | [LV334] LA VACHE TRAD Sauce... | 14117 | 300 | 0 | 300 | 16.56€ | 4968.00€ |
-| [LV317] LV "CLASSIQUE" WECK... | 13162 | 150 | 0 | 150 | 23.13€ | 3469.50€ |
 | [LV304] LV BIO Tartin'apero... | 13350 | 350 | 0 | 350 | 9.64€ | 3374.00€ |
 | [LV307] LV BIO Tartin'apero... | 13352 | 350 | 0 | 350 | 9.61€ | 3363.50€ |
 | [LV tritart 135] LV BIO SET... | 13359 | 320 | 0 | 320 | 18.16€ | 5811.20€ |
@@ -861,20 +699,14 @@
 | [LV362] LV BIO Tartin'apero... | 19856 | 217 | 0 | 217 | 13.46€ | 2920.82€ |
 | [LV364] LV SDP SAUCE Cockta... | 19858 | 175 | 0 | 175 | 6.20€ | 1085.00€ |
 | [LV306] LV BIO Tartin'apero... | 13355 | 350 | 0 | 350 | 9.61€ | 3363.50€ |
-| [LV333] LV "CLASSIQUE" WECK... | 14610 | 200 | 0 | 200 | 16.56€ | 3312.00€ |
 | [LV233] LV "CLASSIQUE" WECK... | 13160 | 200 | 0 | 200 | 16.38€ | 3276.00€ |
-| [LV356] LV SET 3 X 135G tri... | 17597 | 256 | 0 | 256 | 19.65€ | 5030.40€ |
+| [LV356] LV SET 3 X 135G tri... | 17597 | 512 | 0 | 512 | 19.65€ | 10060.80€ |
 | [LV301] LV BIO Tartin'apero... | 13347 | 350 | 0 | 350 | 9.30€ | 3255.00€ |
-| [LV318] LV BIO Tartin'apero... | 13354 | 350 | 0 | 350 | 9.61€ | 3363.50€ |
 | [LV327] LV BIO Tartin'apero... | 14112 | 350 | 0 | 350 | 9.85€ | 3447.50€ |
 | [LV359] LV SDP SAUCE POIVRE... | 19338 | 350 | 0 | 350 | 6.48€ | 2268.00€ |
 | [LV360] LV SDP SAUCE TARTAR... | 19339 | 350 | 0 | 350 | 6.30€ | 2205.00€ |
 | [LV316] LV "CLASSIQUE" WECK... | 13164 | 75 | 0 | 75 | 24.12€ | 1809.00€ |
-| [LV353] LV BIO Tartin'apero... | 17378 | 250 | 0 | 250 | 9.55€ | 2387.50€ |
-| [LV315] LV "CLASSIQUE" WECK... | 13163 | 150 | 0 | 150 | 22.86€ | 3429.00€ |
-| [LV349] LV BIO Tartin'apero... | 17374 | 350 | 0 | 350 | 9.55€ | 3342.50€ |
-| [LV350] LV BIO Tartin'apero... | 17375 | 350 | 0 | 350 | 9.55€ | 3342.50€ |
 
-**Total (Phase 2.5): 112678.84€**
+**Total (Phase 2.5): 95062.74€**
 
 ---

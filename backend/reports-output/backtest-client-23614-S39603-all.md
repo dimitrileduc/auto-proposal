@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 42.9% | 7 produits prédits, 3 corrects |
+| **Précision** | 50.0% | 6 produits prédits, 3 corrects |
 | **Rappel** | 60.0% | 5 produits réels, 3 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **F1-Score** | 54.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -168,7 +168,6 @@
 | [LV103] LV Mango Curry Aufstrich 180g | 300 | Stock prédit: -25.7u (-2j restants) → prédit 300u mais non commandé |
 | [LV104] LV Paprika Chili Aufstri 180g DE | 300 | Stock prédit: -155.2u (-11j restants) → prédit 300u mais non commandé |
 | [LV348] LV Tartinade Dattes-Chili 180g BE bio | 300 | Stock prédit: -186.2u (-18j restants) → prédit 300u mais non commandé |
-| [LV346] LV Kürbis Aufstrich 180g DE | 616 | Stock prédit: 0.0u (0j restants) → prédit 616u mais non commandé |
 
 
 ---
@@ -199,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:31.717Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:23.401Z*

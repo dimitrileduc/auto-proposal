@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 2 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,7 +152,14 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 15 | Stock prédit: -6.1u (-39j restants) → prédit 15u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 10 | Stock prédit: -2.4u (-23j restants) → prédit 10u mais non commandé |
+
 
 ---
 
@@ -182,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:05.852Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:14.419Z*

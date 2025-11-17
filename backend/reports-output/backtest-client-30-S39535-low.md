@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 2 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,7 +157,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [FIL10] FIL MAYONNAISE ŒUFS 10L SEAU  | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [FIL09] FIL MOUTARDE 300G BOCAL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -192,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:10.713Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:55.049Z*

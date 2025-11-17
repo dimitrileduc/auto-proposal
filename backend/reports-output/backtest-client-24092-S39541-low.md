@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 24 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 11 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (24)
+## False Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,30 +157,17 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1892] LD TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0539] JF VOL AU VENT 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1598] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1849] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1601] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0096] FILOU MOUTARDE 3 KG | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF3301] DLL MAYONNAISE CITRON 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF3340] CARRE MAYONNAISE BELGE 720ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF3248] AA0347 - LD FR TARTINAD BIO RAIFORT 135G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -210,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:21.312Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:08.800Z*

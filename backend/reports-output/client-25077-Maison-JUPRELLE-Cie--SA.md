@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Maison JUPRELLE Cie, SA
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 25077
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.1s
+**⏱️ Durée d'exécution:** 2.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 17**
-- Urgents (rupture ≤ 0j): 11
+**Produits à risque détectés: 16**
+- Urgents (rupture ≤ 0j): 10
 - Modérés (0 < rupture ≤ 19j): 6
 
-**Total produits (Phase 1): 17**
-**Quantité totale brute: 52 unités**
+**Total produits (Phase 1): 16**
+**Quantité totale brute: 51 unités**
 
 ### Détails par produit
 
@@ -310,9 +310,9 @@
 <summary>🔴 <strong>[LV131] LV Tartinade Potiron 190g</strong> (ID: 13062) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0120
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0147
+- **Stock restant estimé**: -0.22
+- **Jours avant rupture**: **-14j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -320,12 +320,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-02 | S37163 | 1 | 13.10€ |
+| 2025-02-05 | S34677 | 1 | 13.10€ |
+| 2024-07-08 | S31162 | 2 | 12.72€ |
+| 2024-05-30 | S30507 | 1 | 12.72€ |
+| 2024-04-09 | S29688 | 2 | 12.72€ |
+| 2024-01-23 | S28528 | 2 | 12.72€ |
+| 2023-10-12 | S04802 | 1 | 12.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 2]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -356,36 +362,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV331] LV Tartinade Lentils Balsamico 190g</strong> (ID: 14451) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0120
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-02 | S37163 | 1 | 14.52€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> (ID: 18277) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0100
+- **Stock restant estimé**: -0.11
+- **Jours avant rupture**: **-11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -393,12 +375,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-05 | S36481 | 1 | 15.00€ |
+| 2025-02-05 | S34677 | 1 | 15.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -407,9 +390,9 @@
 <summary>🔴 <strong>[UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> (ID: 18279) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0100
+- **Stock restant estimé**: -0.11
+- **Jours avant rupture**: **-11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -417,12 +400,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-05 | S36481 | 1 | 16.68€ |
+| 2025-02-05 | S34677 | 1 | 16.68€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -431,9 +415,9 @@
 <summary>🔴 <strong>[UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> (ID: 18282) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0100
+- **Stock restant estimé**: -0.11
+- **Jours avant rupture**: **-11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -441,12 +425,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-05 | S36481 | 1 | 16.68€ |
+| 2025-02-05 | S34677 | 1 | 16.68€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -459,7 +444,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 737.03€**
+- **Montant initial: 722.51€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -481,11 +466,10 @@
 | [LV055] LV Mini grissini à ... | 13094 | 2 | 0 | 2 | 23.92€ | 47.84€ |
 | [LV131] LV Tartinade Potiro... | 13062 | 1 | 0 | 1 | 13.10€ | 13.10€ |
 | [LV134] LV BIO Tartinade Ol... | 13066 | 4 | 0 | 4 | 14.15€ | 56.60€ |
-| [LV331] LV Tartinade Lentil... | 14451 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [UPI01] Jus de pomme bio d'... | 18277 | 1 | 0 | 1 | 15.00€ | 15.00€ |
 | [UPI04] Jus de pomme-cerise... | 18279 | 1 | 0 | 1 | 16.68€ | 16.68€ |
 | [UPI07] Jus de pomme-frambo... | 18282 | 1 | 0 | 1 | 16.68€ | 16.68€ |
 
-**Total (Phase 2.5): 737.03€**
+**Total (Phase 2.5): 722.51€**
 
 ---

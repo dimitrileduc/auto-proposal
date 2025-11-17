@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 28.6% | 7 produits prédits, 2 corrects |
-| **Rappel** | 10.5% | 19 produits réels, 2 détectés |
-| **F1-Score** | 15.4% | Score équilibré global |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 19 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,18 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (5)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,16 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (17)
+## False Negatives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -194,12 +183,14 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock suffisant: 0.3u (14j restants > seuil 19j) |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock suffisant: -0.5u (-45j restants > seuil 19j) |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock suffisant: -0.7u (-51j restants > seuil 19j) |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock suffisant: 0.2u (5j restants > seuil 19j) |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock suffisant: -0.7u (-51j restants > seuil 19j) |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: 0.8u (24j restants > seuil 19j) |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock suffisant: 0.5u (14j restants > seuil 19j) |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: -0.4u (-36j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: -0.1u (-8j restants > seuil 19j) |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.3u (14j restants > seuil 19j) |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 4 | Stock suffisant: -0.8u (-24j restants > seuil 19j) |
@@ -214,4 +205,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:58.292Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:04.855Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 29.6% | 27 produits prédits, 8 corrects |
+| **Précision** | 28.6% | 28 produits prédits, 8 corrects |
 | **Rappel** | 88.9% | 9 produits réels, 8 détectés |
-| **F1-Score** | 44.4% | Score équilibré global |
+| **F1-Score** | 43.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (19)
+## False Positives (20)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -189,6 +189,7 @@
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 3 | Stock prédit: -0.2u (-5j restants) → prédit 3u mais non commandé |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock prédit: -0.9u (-22j restants) → prédit 2u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: -0.7u (-41j restants) → prédit 1u mais non commandé |
+| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: -0.2u (-19j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -218,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:47.239Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:53.229Z*

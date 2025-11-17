@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - croquez Local
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 17591
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.0s
+**⏱️ Durée d'exécution:** 4.0s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 45**
-- Urgents (rupture ≤ 0j): 29
-- Modérés (0 < rupture ≤ 19j): 16
+**Produits à risque détectés: 40**
+- Urgents (rupture ≤ 0j): 23
+- Modérés (0 < rupture ≤ 19j): 17
 
-**Total produits (Phase 1): 45**
-**Quantité totale brute: 59 unités**
+**Total produits (Phase 1): 40**
+**Quantité totale brute: 52 unités**
 
 ### Détails par produit
 
@@ -390,30 +390,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18351) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0769
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-10 | S38889 | 2 | 17.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18358) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -735,30 +711,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> (ID: 13040) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0133
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-23 | S38192 | 1 | 34.78€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV336] LV BIO Tartinade Tomato Basilico 380g</strong> (ID: 14453) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -812,9 +764,9 @@
 <summary>🔴 <strong>[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> (ID: 13095) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0133
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0142
+- **Stock restant estimé**: -0.06
+- **Jours avant rupture**: **-4j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -822,12 +774,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-23 | S38192 | 1 | 27.03€ |
+| 2025-03-11 | S35228 | 1 | 27.03€ |
+| 2025-01-16 | S34320 | 1 | 27.03€ |
+| 2024-11-20 | S33394 | 1 | 26.76€ |
+| 2024-10-21 | S32819 | 1 | 26.76€ |
+| 2024-06-24 | S30941 | 1 | 26.76€ |
+| 2024-05-06 | S30060 | 1 | 26.76€ |
+| 2024-03-15 | S29340 | 1 | 26.76€ |
+| 2024-01-11 | S28462 | 1 | 26.76€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 9
 - **Valeur médiane**: 1
 
 </details>
@@ -883,35 +843,11 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV156] LV Sauce barbecue 263 ml bio</strong> (ID: 13053) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0089
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-16 | S37354 | 1 | 26.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> (ID: 13080) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
 - **Consommation/jour**: 0.0089
-- **Stock restant estimé**: 0.00
+- **Stock restant estimé**: -0.00
 - **Jours avant rupture**: **0j**
 - **Seuil réappro**: 19j
 
@@ -920,60 +856,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-16 | S37354 | 1 | 26.66€ |
+| 2025-01-16 | S34320 | 1 | 26.66€ |
+| 2024-06-24 | S30941 | 1 | 26.40€ |
+| 2024-03-15 | S29340 | 1 | 26.40€ |
+| 2023-12-05 | S27971 | 2 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV040] LV Caprons apéritifs 240g</strong> (ID: 13100) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0089
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-16 | S37354 | 1 | 16.44€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV214] LV Biscuits apéro tomate basilic 100g bio </strong> (ID: 13090) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0089
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-16 | S37354 | 1 | 25.56€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 2]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1032,9 +924,9 @@
 <summary>🔴 <strong>[LV345] LV Spread KIDS 200ml Organic</strong> (ID: 17066) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0089
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0143
+- **Stock restant estimé**: -0.60
+- **Jours avant rupture**: **-41j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1042,23 +934,27 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-16 | S37354 | 1 | 14.22€ |
+| 2025-03-11 | S35228 | 1 | 14.22€ |
+| 2025-01-16 | S34320 | 1 | 14.22€ |
+| 2024-11-20 | S33394 | 1 | 14.22€ |
+| 2024-10-21 | S32819 | 1 | 14.22€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV332] LV Tartinade Olive Caper Tomato 190g</strong> (ID: 14452) - 2 unités</summary>
+<summary>🟡 <strong>[LV332] LV Tartinade Olive Caper Tomato 190g</strong> (ID: 14452) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0179
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0164
+- **Stock restant estimé**: 0.16
+- **Jours avant rupture**: **9j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1066,13 +962,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-16 | S37354 | 2 | 14.52€ |
+| 2025-03-11 | S35228 | 1 | 14.52€ |
+| 2024-11-20 | S33394 | 1 | 14.10€ |
+| 2024-10-21 | S32819 | 1 | 14.10€ |
+| 2024-08-27 | S31747 | 1 | 14.10€ |
+| 2024-03-15 | S29340 | 1 | 14.10€ |
+| 2024-01-11 | S28462 | 2 | 14.10€ |
+| 2023-12-05 | S27971 | 2 | 14.10€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 1, 1, 1, 1]
+- **Nombre commandes**: 8
+- **Valeur médiane**: 1
 
 </details>
 
@@ -1129,9 +1032,9 @@
 <summary>🔴 <strong>[LV002] LV Pizza Croccantina au romarin 150 g bio</strong> (ID: 13096) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0062
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0126
+- **Stock restant estimé**: -1.03
+- **Jours avant rupture**: **-81j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1139,12 +1042,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-28 | S36392 | 1 | 27.03€ |
+| 2025-03-11 | S35228 | 1 | 27.03€ |
+| 2025-01-16 | S34320 | 1 | 27.03€ |
+| 2024-11-20 | S33394 | 1 | 26.76€ |
+| 2024-10-21 | S32819 | 1 | 26.76€ |
+| 2024-08-27 | S31747 | 1 | 26.76€ |
+| 2024-03-15 | S29340 | 1 | 26.76€ |
+| 2024-01-11 | S28462 | 1 | 26.76€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 1
 
 </details>
@@ -1157,7 +1067,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1043.83€**
+- **Montant initial: 890.53€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1180,7 +1090,6 @@
 | [REB02] ReBEL chips premium... | 18349 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [REB01] ReBEL chips premium... | 18353 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
-| [REB08] ReBEL chips premium... | 18351 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [RISH02] RISH kombucha BIO ... | 18358 | 1 | 0 | 1 | 25.08€ | 25.08€ |
 | [NUT05] NUTS & BERRIES Bar ... | 18325 | 2 | 0 | 2 | 17.55€ | 35.10€ |
 | [NUT08] NUTS & BERRIES Bar ... | 18322 | 1 | 0 | 1 | 17.55€ | 17.55€ |
@@ -1194,24 +1103,20 @@
 | [MF0053] MF Maïs 500g | 16951 | 1 | 0 | 1 | 11.40€ | 11.40€ |
 | [MF0060] MF Passata | 17768 | 1 | 0 | 1 | 12.37€ | 12.37€ |
 | [MF0051] MF Kidney Beans 500g | 16949 | 1 | 0 | 1 | 12.00€ | 12.00€ |
-| [LV142] LV Mayonnaise en bo... | 13040 | 1 | 0 | 1 | 34.78€ | 34.78€ |
 | [LV336] LV BIO Tartinade To... | 14453 | 1 | 0 | 1 | 25.09€ | 25.09€ |
 | [LV342] LV Organic Broccoli... | 14999 | 2 | 0 | 2 | 13.53€ | 27.06€ |
 | [LV001] LV Pizza Croccantin... | 13095 | 1 | 0 | 1 | 27.03€ | 27.03€ |
 | [MATE02] MATE MATE thé glac... | 18299 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [WIG07] WIGNAC cidre nature... | 18384 | 1 | 0 | 1 | 21.30€ | 21.30€ |
-| [LV156] LV Sauce barbecue 2... | 13053 | 1 | 0 | 1 | 26.60€ | 26.60€ |
 | [LV165] LV Vol-au-vent (ave... | 13080 | 1 | 0 | 1 | 26.66€ | 26.66€ |
-| [LV040] LV Caprons apéritif... | 13100 | 1 | 0 | 1 | 16.44€ | 16.44€ |
-| [LV214] LV Biscuits apéro t... | 13090 | 1 | 0 | 1 | 25.56€ | 25.56€ |
 | [LV357] LV Tartinade BIO As... | 19272 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 | [LV189] LV Tartinade Houmou... | 13075 | 1 | 0 | 1 | 25.15€ | 25.15€ |
 | [LV345] LV Spread KIDS 200m... | 17066 | 1 | 0 | 1 | 14.22€ | 14.22€ |
-| [LV332] LV Tartinade Olive ... | 14452 | 2 | 0 | 2 | 14.52€ | 29.04€ |
+| [LV332] LV Tartinade Olive ... | 14452 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [LV147] LV Sauce Cocktail 2... | 13045 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [WIG06] WIGNAC cidre nature... | 18383 | 1 | 0 | 1 | 22.20€ | 22.20€ |
 | [LV002] LV Pizza Croccantin... | 13096 | 1 | 0 | 1 | 27.03€ | 27.03€ |
 
-**Total (Phase 2.5): 1043.83€**
+**Total (Phase 2.5): 890.53€**
 
 ---

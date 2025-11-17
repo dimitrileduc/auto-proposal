@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - BIOK THOREMBAIS
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 60213
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.8s
+**⏱️ Durée d'exécution:** 4.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 21**
-- Urgents (rupture ≤ 0j): 12
-- Modérés (0 < rupture ≤ 19j): 9
+**Produits à risque détectés: 18**
+- Urgents (rupture ≤ 0j): 8
+- Modérés (0 < rupture ≤ 19j): 10
 
-**Total produits (Phase 1): 21**
-**Quantité totale brute: 27 unités**
+**Total produits (Phase 1): 18**
+**Quantité totale brute: 24 unités**
 
 ### Détails par produit
 
@@ -361,54 +361,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18308) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-03 | S38921 | 1 | 30.78€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[ORG08] ORGANICA crunchy fruit framboise 12g</strong> (ID: 18341) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0244
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-12 | S38475 | 1 | 35.34€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JOY05] Organic Cherry Jam 370g</strong> (ID: 18270) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -436,12 +388,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JOY04] JOY! Organic Four-Fruit Jam 370g</strong> (ID: 18276) - 1 unités</summary>
+<summary>🟡 <strong>[JOY04] JOY! Organic Four-Fruit Jam 370g</strong> (ID: 18276) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0244
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0211
+- **Stock restant estimé**: 0.14
+- **Jours avant rupture**: **6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -449,12 +401,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-12 | S38475 | 1 | 26.52€ |
+| 2025-03-11 | S35315 | 1 | 27.92€ |
+| 2025-03-05 | S35199 | 1 | 27.92€ |
+| 2025-02-18 | S34939 | 1 | 27.92€ |
+| 2025-01-28 | S34547 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -512,30 +468,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[ORG01] ORGANICA crunchy fruit ananas 16g</strong> (ID: 18338) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0132
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37940 | 1 | 29.18€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JOY06] JOY! Organic Rhubarb Jam 370g</strong> (ID: 18274) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -565,9 +497,9 @@
 <summary>🔴 <strong>[ORG10] ORGANICA crunchy fruit mangue 18g</strong> (ID: 18342) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0097
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0120
+- **Stock restant estimé**: -0.23
+- **Jours avant rupture**: **-19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -575,12 +507,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37346 | 1 | 30.72€ |
+| 2025-02-18 | S34939 | 1 | 30.72€ |
+| 2025-01-14 | S34294 | 1 | 30.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -617,7 +551,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 678.64€**
+- **Montant initial: 583.34€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -637,17 +571,14 @@
 | [KOKO02] KOKO Kombucha Lemo... | 18287 | 1 | 0 | 1 | 22.69€ | 22.69€ |
 | [KOKO03] KOKO Kombucha Rasp... | 18288 | 2 | 0 | 2 | 22.69€ | 45.37€ |
 | [NOD04] NODA limonade bio f... | 18309 | 1 | 0 | 1 | 30.78€ | 30.78€ |
-| [NOD03] NODA limonade bio f... | 18308 | 1 | 0 | 1 | 30.78€ | 30.78€ |
-| [ORG08] ORGANICA crunchy fr... | 18341 | 1 | 0 | 1 | 35.34€ | 35.34€ |
 | [JOY05] Organic Cherry Jam ... | 18270 | 1 | 0 | 1 | 30.25€ | 30.25€ |
 | [JOY04] JOY! Organic Four-F... | 18276 | 1 | 0 | 1 | 26.52€ | 26.52€ |
 | [NOD02] NODA limonade bio f... | 18307 | 1 | 0 | 1 | 30.78€ | 30.78€ |
 | [JOY03] JOY! Organic Aprico... | 18275 | 1 | 0 | 1 | 26.52€ | 26.52€ |
-| [ORG01] ORGANICA crunchy fr... | 18338 | 1 | 0 | 1 | 29.18€ | 29.18€ |
 | [JOY06] JOY! Organic Rhubar... | 18274 | 1 | 0 | 1 | 26.52€ | 26.52€ |
 | [ORG10] ORGANICA crunchy fr... | 18342 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [OCC03] OCCHIOLINO SUCO - c... | 18333 | 1 | 0 | 1 | 59.70€ | 59.70€ |
 
-**Total (Phase 2.5): 678.64€**
+**Total (Phase 2.5): 583.34€**
 
 ---

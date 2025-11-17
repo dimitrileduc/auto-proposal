@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Ferme de Warichet
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 23316
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.4s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 43**
-- Urgents (rupture ≤ 0j): 42
-- Modérés (0 < rupture ≤ 19j): 1
+**Produits à risque détectés: 38**
+- Urgents (rupture ≤ 0j): 36
+- Modérés (0 < rupture ≤ 19j): 2
 
-**Total produits (Phase 1): 43**
-**Quantité totale brute: 76 unités**
+**Total produits (Phase 1): 38**
+**Quantité totale brute: 67 unités**
 
 ### Détails par produit
 
@@ -71,78 +71,6 @@
 - **Quantités historiques**: [3, 4, 2, 4]
 - **Nombre commandes**: 4
 - **Valeur médiane**: 4
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0052] MF Pois chiches  500g</strong> (ID: 16950) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37942 | 2 | 12.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0053] MF Maïs 500g</strong> (ID: 16951) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37942 | 2 | 11.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37942 | 2 | 23.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -609,30 +537,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV138] LV Tartinade Carotte gingembre  380g</strong> (ID: 13072) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0161
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-08 | S37942 | 1 | 23.67€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV342] LV Organic Broccoli Spread 190 g</strong> (ID: 14999) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -858,36 +762,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> (ID: 13050) - 2 unités</summary>
+<summary>🟡 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0206
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-03 | S37198 | 2 | 19.09€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0206
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0179
+- **Stock restant estimé**: 0.27
+- **Jours avant rupture**: **15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -895,12 +775,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-03 | S37198 | 2 | 19.28€ |
+| 2024-12-16 | S33913 | 1 | 18.90€ |
+| 2024-10-15 | S32747 | 2 | 18.90€ |
+| 2024-06-17 | S30809 | 3 | 18.90€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 2, 3]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 2
 
 </details>
@@ -1107,7 +990,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1296.03€**
+- **Montant initial: 1141.30€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1118,9 +1001,6 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [LV160] LV Tartinade Auberg... | 13058 | 4 | 0 | 4 | 12.79€ | 51.16€ |
 | [LV055] LV Mini grissini à ... | 13094 | 4 | 0 | 4 | 23.92€ | 95.68€ |
-| [MF0052] MF Pois chiches  500g | 16950 | 2 | 0 | 2 | 12.00€ | 24.00€ |
-| [MF0053] MF Maïs 500g | 16951 | 2 | 0 | 2 | 11.40€ | 22.80€ |
-| [MF0050] MF Cornichons aigr... | 16936 | 2 | 0 | 2 | 23.04€ | 46.08€ |
 | [MF0061] MF Compote | 17769 | 2 | 0 | 2 | 12.37€ | 24.74€ |
 | [FO001] FO CITRONNADE BIO 33cl | 17731 | 1 | 0 | 1 | 17.20€ | 17.20€ |
 | [LV159] LV Tartinade aux Tr... | 13057 | 1 | 0 | 1 | 18.60€ | 18.60€ |
@@ -1139,7 +1019,6 @@
 | [LV331] LV Tartinade Lentil... | 14451 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [LV332] LV Tartinade Olive ... | 14452 | 2 | 0 | 2 | 14.52€ | 29.04€ |
 | [LV188] LV Tartinade Auberg... | 13071 | 3 | 0 | 3 | 23.48€ | 70.44€ |
-| [LV138] LV Tartinade Carott... | 13072 | 1 | 0 | 1 | 23.67€ | 23.67€ |
 | [LV342] LV Organic Broccoli... | 14999 | 2 | 0 | 2 | 13.53€ | 27.06€ |
 | [LV345] LV Spread KIDS 200m... | 17066 | 2 | 0 | 2 | 14.22€ | 28.44€ |
 | [RIT11] RITCHIE Orange Sang... | 19370 | 1 | 0 | 1 | 30.96€ | 30.96€ |
@@ -1149,7 +1028,6 @@
 | [UPI06] Jus de pomme-rhubar... | 18285 | 1 | 0 | 1 | 16.68€ | 16.68€ |
 | [WIG07] WIGNAC cidre nature... | 18384 | 1 | 0 | 1 | 21.30€ | 21.30€ |
 | [WIG04] WIGNAC cidre rosé b... | 18386 | 1 | 0 | 1 | 27.00€ | 27.00€ |
-| [LV153] LV Vinaigrette Cibo... | 13050 | 2 | 0 | 2 | 19.09€ | 38.18€ |
 | [LV154] LV Vinaigrette Miel... | 13051 | 2 | 0 | 2 | 19.28€ | 38.56€ |
 | [LV155] LV Vinaigrette Caes... | 13052 | 1 | 0 | 1 | 20.38€ | 20.38€ |
 | [LV357] LV Tartinade BIO As... | 19272 | 3 | 0 | 3 | 18.60€ | 55.80€ |
@@ -1160,6 +1038,6 @@
 | [RIT03] RITCHIE Citron-Ging... | 18365 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [LV156] LV Sauce barbecue 2... | 13053 | 1 | 0 | 1 | 26.60€ | 26.60€ |
 
-**Total (Phase 2.5): 1296.03€**
+**Total (Phase 2.5): 1141.30€**
 
 ---

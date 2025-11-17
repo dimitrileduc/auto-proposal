@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 6.3% | 32 produits prédits, 2 corrects |
+| **Précision** | 6.5% | 31 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 11.8% | Score équilibré global |
+| **F1-Score** | 12.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (30)
+## False Positives (29)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,27 +173,26 @@
 | [PF0093] FILOU MOUTARDE 300GR | 3 | Stock prédit: 0.5u (6j restants) → prédit 3u mais non commandé |
 | [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.2u (-3j restants) → prédit 15u mais non commandé |
 | [PF0094] FILOU MOUTARDE 700 GR | 3 | Stock prédit: -0.4u (-6j restants) → prédit 3u mais non commandé |
-| [PF0078] FILOU CHASSEUR 5 L | 7 | Stock prédit: 0.0u (0j restants) → prédit 7u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 44 | Stock prédit: -15.7u (-36j restants) → prédit 44u mais non commandé |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 0.4u (14j restants) → prédit 2u mais non commandé |
 | [PF0096] FILOU MOUTARDE 3 KG | 20 | Stock prédit: -0.2u (0j restants) → prédit 20u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.8u (18j restants) → prédit 4u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock prédit: 0.3u (14j restants) → prédit 2u mais non commandé |
-| [FIL09] FIL MOUTARDE 300G BOCAL | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
 | [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [FIL23] FIL MAYONNAISE 300ML SQUEEZE  | 12 | Stock prédit: 0.0u (0j restants) → prédit 12u mais non commandé |
 | [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.5u (-40j restants) → prédit 2u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock prédit: -1.2u (-42j restants) → prédit 1u mais non commandé |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: -1.0u (-68j restants) → prédit 2u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.4u (-41j restants) → prédit 1u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF3290] JF MAYO BARAKI 925ML | 19 | Stock prédit: 0.0u (0j restants) → prédit 19u mais non commandé |
-| [PF3272] JF PEPPER MAYONNAISE 925ML | 19 | Stock prédit: 0.0u (0j restants) → prédit 19u mais non commandé |
-| [PF3273] JF MITRAILLETTE SAUCE 925ML | 15 | Stock prédit: 0.0u (0j restants) → prédit 15u mais non commandé |
+| [PF3290] JF MAYO BARAKI 925ML | 8 | Stock prédit: -8.6u (-53j restants) → prédit 8u mais non commandé |
+| [PF3272] JF PEPPER MAYONNAISE 925ML | 4 | Stock prédit: -4.1u (-30j restants) → prédit 4u mais non commandé |
+| [PF3273] JF MITRAILLETTE SAUCE 925ML | 8 | Stock prédit: -10.3u (-69j restants) → prédit 8u mais non commandé |
 
 
 ---
@@ -217,4 +216,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:16.914Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:03.712Z*

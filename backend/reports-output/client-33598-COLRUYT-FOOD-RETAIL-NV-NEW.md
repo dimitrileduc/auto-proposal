@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - COLRUYT FOOD RETAIL NV NEW
 
-**📅 Date:** 15/11/2025 10:44
+**📅 Date:** 17/11/2025 12:58
 **🆔 Client ID:** 33598
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.2s
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
@@ -1142,9 +1142,9 @@
 <summary>🔴 <strong>[ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml</strong> (ID: 18334) - 126 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8750
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.0370
+- **Stock restant estimé**: -23.33
+- **Jours avant rupture**: **-22j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1152,12 +1152,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-21 | S36904 | 126 | 11.40€ |
+| 2025-02-11 | S34825 | 126 | 11.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [126]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [126, 126]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 126
 
 </details>

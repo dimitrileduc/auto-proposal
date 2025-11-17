@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 47.1% | 17 produits prédits, 8 corrects |
-| **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **Précision** | 45.0% | 20 produits prédits, 9 corrects |
+| **Rappel** | 81.8% | 11 produits réels, 9 détectés |
+| **F1-Score** | 58.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 40.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| **MAE** | 0.89 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 35.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -144,13 +144,14 @@
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF032] JF SAUCE LAPIN 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LD010] LD Organic Truffle Spread 135 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | 6 | 3.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (9)
+## False Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -179,11 +180,13 @@
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: 0.4u (13j restants) → prédit 2u mais non commandé |
 | [LD015] LD Onion Spread 180g | 2 | Stock prédit: -1.4u (-51j restants) → prédit 2u mais non commandé |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | Stock prédit: -2.1u (-63j restants) → prédit 2u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.7u (-174j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -204,10 +207,9 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.3u (47j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:01.844Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:06.588Z*

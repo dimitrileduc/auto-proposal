@@ -6,17 +6,17 @@
   "cutoffDate": "2025-10-14 00:00:00",
   "daysBeforePrediction": 1,
   "metrics": {
-    "tp": 1,
-    "fp": 6,
-    "fn": 15,
-    "precision": 0.14285714285714285,
-    "recall": 0.0625,
-    "f1Score": 0.08695652173913043,
+    "tp": 0,
+    "fp": 3,
+    "fn": 16,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
     "mae": 0,
     "mape": 0
   },
   "distribution": {
-    "exactMatch": 1,
+    "exactMatch": 0,
     "partialMatch": 0
   }
 }

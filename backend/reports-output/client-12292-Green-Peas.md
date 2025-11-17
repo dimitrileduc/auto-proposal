@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Green Peas
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 12292
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.1s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
@@ -11,8 +11,8 @@
 
 
 **Produits à risque détectés: 19**
-- Urgents (rupture ≤ 0j): 15
-- Modérés (0 < rupture ≤ 19j): 4
+- Urgents (rupture ≤ 0j): 14
+- Modérés (0 < rupture ≤ 19j): 5
 
 **Total produits (Phase 1): 19**
 **Quantité totale brute: 35 unités**
@@ -156,12 +156,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0051] MF Kidney Beans 500g</strong> (ID: 16949) - 1 unités</summary>
+<summary>🟡 <strong>[MF0051] MF Kidney Beans 500g</strong> (ID: 16949) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0271
+- **Stock restant estimé**: 0.08
+- **Jours avant rupture**: **2j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -169,12 +169,23 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-03 | S38866 | 1 | 12.00€ |
+| 2025-04-04 | S35820 | 2 | 12.00€ |
+| 2025-02-21 | S34999 | 1 | 12.00€ |
+| 2025-02-07 | S34757 | 1 | 12.00€ |
+| 2025-01-07 | S34154 | 1 | 12.00€ |
+| 2024-12-09 | S33546 | 1 | 12.00€ |
+| 2024-08-05 | S31516 | 3 | 12.00€ |
+| 2024-05-13 | S30231 | 1 | 12.00€ |
+| 2024-03-29 | S29569 | 2 | 12.00€ |
+| 2024-03-12 | S29268 | 2 | 12.00€ |
+| 2024-02-12 | S28914 | 1 | 12.00€ |
+| 2023-12-12 | S28098 | 2 | 12.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 1, 1, 1]
+- **Nombre commandes**: 12
 - **Valeur médiane**: 1
 
 </details>

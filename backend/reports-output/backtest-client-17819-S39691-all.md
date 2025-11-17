@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 49.1% | 55 produits prédits, 27 corrects |
+| **Précision** | 57.4% | 47 produits prédits, 27 corrects |
 | **Rappel** | 93.1% | 29 produits réels, 27 détectés |
-| **F1-Score** | 64.3% | Score équilibré global |
+| **F1-Score** | 71.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.37 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 30.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 18 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| **MAE** | 0.41 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 34.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 17 | Égalité parfaite |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -157,7 +157,7 @@
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -169,7 +169,7 @@
 
 ---
 
-## False Positives (28)
+## False Positives (20)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -189,34 +189,26 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock prédit: -0.4u (-19j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.6u (-24j restants) → prédit 1u mais non commandé |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | Stock prédit: -0.5u (-10j restants) → prédit 3u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock prédit: -0.6u (-35j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock prédit: -1.2u (-35j restants) → prédit 2u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: -0.1u (-7j restants) → prédit 2u mais non commandé |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.1u (12j restants) → prédit 1u mais non commandé |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: -1.2u (-66j restants) → prédit 1u mais non commandé |
+| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.4u (-34j restants) → prédit 1u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.4u (-44j restants) → prédit 1u mais non commandé |
+| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.1u (-13j restants) → prédit 1u mais non commandé |
+| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: -0.8u (-68j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -247,4 +239,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:41.075Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:48.014Z*

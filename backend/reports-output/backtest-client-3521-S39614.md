@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,6 +164,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF0078] FILOU CHASSEUR 5 L | 15 | Stock prédit: 0.3u (1j restants) → prédit 15u mais non commandé |
+| [PF0097] FILOU MOUTARDE 5 KG | 2 | Stock prédit: -0.4u (-31j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -187,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:39.245Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:43.934Z*

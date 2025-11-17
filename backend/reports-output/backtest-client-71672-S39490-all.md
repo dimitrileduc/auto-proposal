@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 65.6% | 32 produits prédits, 21 corrects |
-| **Rappel** | 91.3% | 23 produits réels, 21 détectés |
-| **F1-Score** | 76.4% | Score équilibré global |
+| **Précision** | 66.7% | 30 produits prédits, 20 corrects |
+| **Rappel** | 87.0% | 23 produits réels, 20 détectés |
+| **F1-Score** | 75.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.24 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 19.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 16 | Égalité parfaite |
+| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 15 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (21)
+## True Positives (20)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -144,7 +144,6 @@
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -163,7 +162,7 @@
 
 ---
 
-## False Positives (11)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -184,21 +183,20 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
-| [DIS0004] Display JF bois | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -1.4u (-36j restants) → prédit 2u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: -1.3u (-49j restants) → prédit 1u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: -1.2u (-32j restants) → prédit 2u mais non commandé |
 | [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: -0.1u (-5j restants) → prédit 2u mais non commandé |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | Stock prédit: -1.8u (-92j restants) → prédit 2u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -218,10 +216,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.4u (41j restants > seuil 19j) |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock suffisant: 0.3u (22j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.3u (22j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:44.207Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:02.133Z*

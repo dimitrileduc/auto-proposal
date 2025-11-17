@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 16.7% | 6 produits prédits, 1 corrects |
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
 | **Rappel** | 25.0% | 4 produits réels, 1 détectés |
-| **F1-Score** | 20.0% | Score équilibré global |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,10 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [KOKO01] KOKO Kombucha original 330ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
@@ -199,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:54.975Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:26.307Z*

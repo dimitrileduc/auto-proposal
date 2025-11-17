@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 36.0% | 25 produits prédits, 9 corrects |
+| **Précision** | 34.6% | 26 produits prédits, 9 corrects |
 | **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **F1-Score** | 48.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (16)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -186,6 +186,7 @@
 | [OCC05] OCCHIOLINO premium arancello 500ml | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
 | [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: -0.4u (-16j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-29j restants) → prédit 1u mais non commandé |
 | [RISH05] RISH kombucha BIO - rose 750ml | 1 | Stock prédit: -0.9u (-76j restants) → prédit 1u mais non commandé |
 
 
@@ -217,4 +218,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:15.318Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:03.917Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 44.4% | 27 produits prédits, 12 corrects |
+| **Précision** | 46.2% | 26 produits prédits, 12 corrects |
 | **Rappel** | 92.3% | 13 produits réels, 12 détectés |
-| **F1-Score** | 60.0% | Score équilibré global |
+| **F1-Score** | 61.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -154,7 +154,7 @@
 
 ---
 
-## False Positives (15)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -183,7 +183,6 @@
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
 | [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | Stock prédit: 0.1u (1j restants) → prédit 2u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -2.1u (-56j restants) → prédit 1u mais non commandé |
@@ -218,4 +217,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:22.737Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:12.026Z*

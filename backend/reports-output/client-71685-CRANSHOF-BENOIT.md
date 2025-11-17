@@ -1,6 +1,6 @@
 # 📊 Rapport Auto-Proposal - CRANSHOF BENOIT
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 71685
 **📧 Email:** N/A
 **⏱️ Durée d'exécution:** 2.9s
@@ -10,12 +10,12 @@
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 31**
-- Urgents (rupture ≤ 0j): 25
+**Produits à risque détectés: 28**
+- Urgents (rupture ≤ 0j): 22
 - Modérés (0 < rupture ≤ 19j): 6
 
-**Total produits (Phase 1): 31**
-**Quantité totale brute: 40 unités**
+**Total produits (Phase 1): 28**
+**Quantité totale brute: 37 unités**
 
 ### Détails par produit
 
@@ -148,30 +148,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> (ID: 18353) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0238
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-12 | S38469 | 1 | 17.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> (ID: 18349) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -192,30 +168,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0238
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-12 | S38469 | 1 | 17.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -242,30 +194,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1, 1]
 - **Nombre commandes**: 3
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> (ID: 18365) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0238
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-12 | S38469 | 1 | 30.96€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -547,9 +475,9 @@
 <summary>🔴 <strong>[RIT01] RITCHIE Orange - verre 275ml</strong> (ID: 18371) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0096
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0104
+- **Stock restant estimé**: -0.08
+- **Jours avant rupture**: **-7j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -557,12 +485,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-11 | S37339 | 1 | 30.96€ |
+| 2025-03-14 | S35414 | 1 | 30.96€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -619,9 +548,9 @@
 <summary>🔴 <strong>[CB006] CB Blackcurrant Apple juice 1l</strong> (ID: 14944) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0104
+- **Stock restant estimé**: -0.59
+- **Jours avant rupture**: **-56j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -629,12 +558,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-23 | S36327 | 1 | 21.60€ |
+| 2025-03-14 | S35414 | 1 | 21.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -692,9 +622,9 @@
 <summary>🔴 <strong>[LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> (ID: 13094) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0131
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0155
+- **Stock restant estimé**: -0.38
+- **Jours avant rupture**: **-24j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -702,12 +632,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-23 | S36327 | 2 | 23.92€ |
+| 2025-03-14 | S35414 | 1 | 23.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -764,9 +695,9 @@
 <summary>🔴 <strong>[LV345] LV Spread KIDS 200ml Organic</strong> (ID: 17066) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0115
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0155
+- **Stock restant estimé**: -0.70
+- **Jours avant rupture**: **-45j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -774,12 +705,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-02 | S35771 | 2 | 14.22€ |
+| 2025-03-14 | S35414 | 1 | 14.22€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -792,7 +724,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 762.93€**
+- **Montant initial: 696.57€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -806,11 +738,8 @@
 | [LV130] LV BIO Tartinade Pa... | 13061 | 2 | 0 | 2 | 13.10€ | 26.20€ |
 | [LV161] LV Tartinade Mangue... | 13060 | 1 | 0 | 1 | 13.10€ | 13.10€ |
 | [LV160] LV Tartinade Auberg... | 13058 | 2 | 0 | 2 | 12.79€ | 25.58€ |
-| [REB01] ReBEL chips premium... | 18353 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [REB02] ReBEL chips premium... | 18349 | 1 | 0 | 1 | 17.70€ | 17.70€ |
-| [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [RIT02] RITCHIE Citron - Fr... | 18364 | 1 | 0 | 1 | 30.96€ | 30.96€ |
-| [RIT03] RITCHIE Citron-Ging... | 18365 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [RIT05] RITCHIE Cola - verr... | 18367 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [UPI03] Jus de pomme-poire ... | 18284 | 1 | 0 | 1 | 16.68€ | 16.68€ |
 | [UPI09] Jus de pomme-orange... | 18278 | 1 | 0 | 1 | 16.68€ | 16.68€ |
@@ -833,6 +762,6 @@
 | [LV129] LV Tartinade Carott... | 13059 | 1 | 0 | 1 | 13.04€ | 13.04€ |
 | [LV345] LV Spread KIDS 200m... | 17066 | 2 | 0 | 2 | 14.22€ | 28.44€ |
 
-**Total (Phase 2.5): 762.93€**
+**Total (Phase 2.5): 696.57€**
 
 ---

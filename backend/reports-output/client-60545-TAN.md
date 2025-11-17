@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - TAN
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 60545
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.7s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 23**
-- Urgents (rupture ≤ 0j): 15
+**Produits à risque détectés: 21**
+- Urgents (rupture ≤ 0j): 13
 - Modérés (0 < rupture ≤ 19j): 8
 
-**Total produits (Phase 1): 23**
-**Quantité totale brute: 31 unités**
+**Total produits (Phase 1): 21**
+**Quantité totale brute: 28 unités**
 
 ### Détails par produit
 
@@ -378,30 +378,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[ORG10] ORGANICA crunchy fruit mangue 18g</strong> (ID: 18342) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0204
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-16 | S38049 | 1 | 30.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JOY03] JOY! Organic Apricot Jam 370g</strong> (ID: 18275) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -526,30 +502,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> (ID: 18379) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0238
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-11 | S37332 | 2 | 31.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🔴 <strong>[BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> (ID: 18265) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -603,9 +555,9 @@
 <summary>🔴 <strong>[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> (ID: 18266) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0118
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0258
+- **Stock restant estimé**: -2.35
+- **Jours avant rupture**: **-91j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -613,12 +565,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-18 | S35437 | 2 | 14.88€ |
+| 2025-02-24 | S35039 | 2 | 14.88€ |
+| 2025-01-13 | S34279 | 2 | 14.88€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -631,7 +585,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 691.32€**
+- **Montant initial: 597.40€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -653,17 +607,15 @@
 | [REB02] ReBEL chips premium... | 18349 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [ORG09] ORGANICA crunchy fr... | 18339 | 1 | 0 | 1 | 30.72€ | 30.72€ |
-| [ORG10] ORGANICA crunchy fr... | 18342 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [JOY03] JOY! Organic Aprico... | 18275 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [JOY02] JOY! Organic Strawb... | 18272 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [JOY04] JOY! Organic Four-F... | 18276 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [LEA09] LEAMO cola bio 330ml | 18290 | 1 | 0 | 1 | 33.80€ | 33.80€ |
-| [TEN02] TENSAÏ TEA  thé noi... | 18379 | 2 | 0 | 2 | 31.60€ | 63.20€ |
 | [BUD04] BUDDY Organic Energ... | 18265 | 2 | 0 | 2 | 14.88€ | 29.76€ |
 | [JOY05] Organic Cherry Jam ... | 18270 | 1 | 0 | 1 | 31.84€ | 31.84€ |
 | [BUD03] BUDDY biologische e... | 18266 | 2 | 0 | 2 | 14.88€ | 29.76€ |
 
-**Total (Phase 2.5): 691.32€**
+**Total (Phase 2.5): 597.40€**
 
 ---

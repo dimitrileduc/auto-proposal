@@ -1,0 +1,22 @@
+{
+  "clientId": 38721,
+  "clientName": "COMARKT HUMBEEK  - IZOCK BV",
+  "orderName": "S39211",
+  "orderDate": "2025-09-16 08:54:45",
+  "cutoffDate": "2025-09-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 11,
+    "fn": 18,
+    "precision": 0.26666666666666666,
+    "recall": 0.18181818181818182,
+    "f1Score": 0.21621621621621623,
+    "mae": 0.25,
+    "mape": 12.5
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 1
+  }
+}

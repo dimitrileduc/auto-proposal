@@ -183,9 +183,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 870 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 870 | Stock suffisant: 448.2u (82j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:56.375Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:27.904Z*

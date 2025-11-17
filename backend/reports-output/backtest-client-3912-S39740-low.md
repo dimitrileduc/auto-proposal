@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
-| **Rappel** | 33.3% | 3 produits réels, 1 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 30.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 3.4% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,13 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 900 | 870 | 30.0 | 3.4% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -162,7 +156,7 @@
 
 ---
 
-## False Negatives (2)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -184,8 +178,9 @@
 |---------|---------------|--------|
 | [PI2911] PI SAUCE BURGER BA PO | 17400 | Stock suffisant: 5290.6u (18j restants > seuil 19j) |
 | [PI2910] PI SAUCE ALGERIENNE BA PO | 2610 | Stock suffisant: 3906.8u (19j restants > seuil 19j) |
+| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 870 | Stock suffisant: 448.2u (82j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:56.377Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:27.906Z*

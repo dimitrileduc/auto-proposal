@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.0% | 25 produits prédits, 15 corrects |
+| **Précision** | 51.7% | 29 produits prédits, 15 corrects |
 | **Rappel** | 60.0% | 25 produits réels, 15 détectés |
-| **F1-Score** | 60.0% | Score équilibré global |
+| **F1-Score** | 55.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -157,7 +157,7 @@
 
 ---
 
-## False Positives (10)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -187,6 +187,10 @@
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.1u (11j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: 0.1u (3j restants) → prédit 2u mais non commandé |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock prédit: -1.5u (-32j restants) → prédit 2u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.2u (-106j restants) → prédit 1u mais non commandé |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: -0.0u (-5j restants) → prédit 1u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -0.2u (-28j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -212,17 +216,17 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [LD008] LD Tartinade Pois chiches bio 180g   | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock suffisant: 0.4u (100j restants > seuil 19j) |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock suffisant: 0.5u (71j restants > seuil 19j) |
 | [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock suffisant: 0.7u (24j restants > seuil 19j) |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.7u (117j restants > seuil 19j) |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.3u (76j restants > seuil 19j) |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.4u (104j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:18.887Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:31.125Z*

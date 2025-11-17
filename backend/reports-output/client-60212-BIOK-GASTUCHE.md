@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - BIOK GASTUCHE
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 60212
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.2s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 27**
-- Urgents (rupture ≤ 0j): 11
+**Produits à risque détectés: 26**
+- Urgents (rupture ≤ 0j): 10
 - Modérés (0 < rupture ≤ 19j): 16
 
-**Total produits (Phase 1): 27**
-**Quantité totale brute: 36 unités**
+**Total produits (Phase 1): 26**
+**Quantité totale brute: 35 unités**
 
 ### Détails par produit
 
@@ -532,30 +532,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[ORG09] ORGANICA crunchy fruit cerise 20g</strong> (ID: 18339) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0244
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-27 | S38705 | 1 | 29.18€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> (ID: 18288) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -805,7 +781,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 752.19€**
+- **Montant initial: 723.01€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -831,7 +807,6 @@
 | [MATE02] MATE MATE thé glac... | 18299 | 1 | 0 | 1 | 30.78€ | 30.78€ |
 | [JOY06] JOY! Organic Rhubar... | 18274 | 1 | 0 | 1 | 26.52€ | 26.52€ |
 | [ORG08] ORGANICA crunchy fr... | 18341 | 1 | 0 | 1 | 35.34€ | 35.34€ |
-| [ORG09] ORGANICA crunchy fr... | 18339 | 1 | 0 | 1 | 29.18€ | 29.18€ |
 | [KOKO03] KOKO Kombucha Rasp... | 18288 | 1 | 0 | 1 | 22.69€ | 22.69€ |
 | [JOY01] JOY! Organic Sweet ... | 18269 | 1 | 0 | 1 | 25.99€ | 25.99€ |
 | [ORG03] ORGANICA crunchy fr... | 18343 | 1 | 0 | 1 | 29.18€ | 29.18€ |
@@ -842,6 +817,6 @@
 | [NOD03] NODA limonade bio f... | 18308 | 1 | 0 | 1 | 30.78€ | 30.78€ |
 | [REB11] ReBEL chips premium... | 18356 | 1 | 0 | 1 | 24.04€ | 24.04€ |
 
-**Total (Phase 2.5): 752.19€**
+**Total (Phase 2.5): 723.01€**
 
 ---

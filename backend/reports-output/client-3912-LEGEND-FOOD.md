@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - LEGEND FOOD
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 3912
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 3**
-- Urgents (rupture ≤ 0j): 1
+**Produits à risque détectés: 2**
+- Urgents (rupture ≤ 0j): 0
 - Modérés (0 < rupture ≤ 19j): 2
 
-**Total produits (Phase 1): 3**
-**Quantité totale brute: 22050 unités**
+**Total produits (Phase 1): 2**
+**Quantité totale brute: 21150 unités**
 
 ### Détails par produit
 
@@ -74,30 +74,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[PI0095] PI SAUCE CHEESY EASY 70% PO </strong> (ID: 9449) - 900 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 10.8434
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-22 | S38166 | 900 | 2.28€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [900]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 900
-
-</details>
-
 
 ---
 
@@ -106,7 +82,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 37764.00€**
+- **Montant initial: 35712.00€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -117,8 +93,7 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PI2911] PI SAUCE BURGER BA PO | 9457 | 12600 | 0 | 12600 | 1.64€ | 20664.00€ |
 | [PI2910] PI SAUCE ALGERIENN... | 9456 | 8550 | 0 | 8550 | 1.76€ | 15048.00€ |
-| [PI0095] PI SAUCE CHEESY EA... | 9449 | 900 | 0 | 900 | 2.28€ | 2052.00€ |
 
-**Total (Phase 2.5): 37764.00€**
+**Total (Phase 2.5): 35712.00€**
 
 ---

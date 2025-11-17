@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
-| **Rappel** | 33.3% | 9 produits réels, 3 détectés |
-| **F1-Score** | 35.3% | Score équilibré global |
+| **Précision** | 44.4% | 9 produits prédits, 4 corrects |
+| **Rappel** | 44.4% | 9 produits réels, 4 détectés |
+| **F1-Score** | 44.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,6 +141,7 @@
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -174,7 +175,7 @@
 
 ---
 
-## False Negatives (6)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -197,11 +198,10 @@
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock suffisant: 0.6u (36j restants > seuil 19j) |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock suffisant: 1.4u (22j restants > seuil 19j) |
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:53.176Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:25.110Z*

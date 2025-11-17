@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - LE CELLIER DU BAUDET - épicerie
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 60436
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.6s
+**⏱️ Durée d'exécution:** 2.8s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 37**
-- Urgents (rupture ≤ 0j): 34
-- Modérés (0 < rupture ≤ 19j): 3
+**Produits à risque détectés: 34**
+- Urgents (rupture ≤ 0j): 30
+- Modérés (0 < rupture ≤ 19j): 4
 
-**Total produits (Phase 1): 37**
-**Quantité totale brute: 62 unités**
+**Total produits (Phase 1): 34**
+**Quantité totale brute: 56 unités**
 
 ### Détails par produit
 
@@ -91,30 +91,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [3, 2, 2]
 - **Nombre commandes**: 3
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[RISH03] RISH kombucha BIO - gingembre 330ml</strong> (ID: 18357) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0426
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-26 | S38663 | 2 | 25.08€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 2
 
 </details>
@@ -328,12 +304,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV040] LV Caprons apéritifs 240g</strong> (ID: 13100) - 1 unités</summary>
+<summary>🟡 <strong>[LV040] LV Caprons apéritifs 240g</strong> (ID: 13100) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0213
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0179
+- **Stock restant estimé**: 0.16
+- **Jours avant rupture**: **8j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -341,12 +317,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-26 | S38663 | 1 | 16.44€ |
+| 2025-04-02 | S35779 | 1 | 16.44€ |
+| 2025-03-03 | S35153 | 2 | 16.44€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -375,30 +353,6 @@
 - **Quantités historiques**: [1, 1, 1, 2]
 - **Nombre commandes**: 4
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> (ID: 13050) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0244
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-22 | S38164 | 2 | 19.09€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -531,9 +485,9 @@
 <summary>🔴 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18356) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0244
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0266
+- **Stock restant estimé**: -0.18
+- **Jours avant rupture**: **-6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -541,12 +495,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-22 | S38164 | 2 | 25.30€ |
+| 2025-03-03 | S35153 | 3 | 25.30€ |
+| 2025-01-22 | S34441 | 2 | 25.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 3, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -725,30 +681,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> (ID: 18379) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0163
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-11 | S37349 | 2 | 31.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🔴 <strong>[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> (ID: 18327) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -874,9 +806,9 @@
 <summary>🔴 <strong>[LV126] LV Tartinade Tomate Ail des Ours 190g</strong> (ID: 13070) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0128
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0155
+- **Stock restant estimé**: -0.42
+- **Jours avant rupture**: **-27j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -884,12 +816,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-09 | S36639 | 2 | 13.53€ |
+| 2025-04-02 | S35779 | 1 | 13.53€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -898,9 +831,9 @@
 <summary>🔴 <strong>[MANA02] MANA natural energy drink - tropical passion 250ml</strong> (ID: 18298) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0064
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0090
+- **Stock restant estimé**: -0.40
+- **Jours avant rupture**: **-44j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -908,12 +841,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-09 | S36639 | 1 | 32.80€ |
+| 2025-03-03 | S35153 | 1 | 32.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -950,7 +884,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1302.57€**
+- **Montant initial: 1151.03€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -962,7 +896,6 @@
 | [SOWA03] SOWA ginger beer a... | 18375 | 2 | 0 | 2 | 26.60€ | 53.20€ |
 | [SOWA01] SOWA citron menthe... | 18374 | 2 | 0 | 2 | 23.80€ | 47.60€ |
 | [RISH01] RISH kombucha BIO ... | 18359 | 2 | 0 | 2 | 25.08€ | 50.16€ |
-| [RISH03] RISH kombucha BIO ... | 18357 | 2 | 0 | 2 | 25.08€ | 50.16€ |
 | [REB01] ReBEL chips premium... | 18353 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB02] ReBEL chips premium... | 18349 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB03] ReBEL chips premium... | 18352 | 2 | 0 | 2 | 17.70€ | 35.40€ |
@@ -973,7 +906,6 @@
 | [KOKO02] KOKO Kombucha Lemo... | 18287 | 2 | 0 | 2 | 23.88€ | 47.76€ |
 | [LV040] LV Caprons apéritif... | 13100 | 1 | 0 | 1 | 16.44€ | 16.44€ |
 | [LV055] LV Mini grissini à ... | 13094 | 1 | 0 | 1 | 23.92€ | 23.92€ |
-| [LV153] LV Vinaigrette Cibo... | 13050 | 2 | 0 | 2 | 19.09€ | 38.18€ |
 | [LV130] LV BIO Tartinade Pa... | 13061 | 2 | 0 | 2 | 13.10€ | 26.20€ |
 | [LV132] LV Tartinade Houmou... | 13063 | 2 | 0 | 2 | 13.29€ | 26.58€ |
 | [LV330] LV BIO Tartinade To... | 14450 | 2 | 0 | 2 | 14.52€ | 29.04€ |
@@ -987,7 +919,6 @@
 | [NUT07] NUTS & BERRIES Bar ... | 18323 | 2 | 0 | 2 | 17.55€ | 35.10€ |
 | [TEN01] TENSAÏ TEA  thé ver... | 18380 | 2 | 0 | 2 | 31.60€ | 63.20€ |
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 2 | 0 | 2 | 31.60€ | 63.20€ |
-| [TEN02] TENSAÏ TEA  thé noi... | 18379 | 2 | 0 | 2 | 31.60€ | 63.20€ |
 | [NUT01] NUTS & BERRIES ener... | 18327 | 2 | 0 | 2 | 16.05€ | 32.10€ |
 | [NUT02] NUTS & BERRIES ener... | 18329 | 2 | 0 | 2 | 16.05€ | 32.10€ |
 | [RISH02] RISH kombucha BIO ... | 18358 | 2 | 0 | 2 | 25.08€ | 50.16€ |
@@ -997,6 +928,6 @@
 | [MANA02] MANA natural energ... | 18298 | 1 | 0 | 1 | 32.80€ | 32.80€ |
 | [TEN03] TENSAÏ TEA  thé bla... | 18377 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 
-**Total (Phase 2.5): 1302.57€**
+**Total (Phase 2.5): 1151.03€**
 
 ---

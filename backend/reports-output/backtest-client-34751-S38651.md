@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 75.0% | 4 produits prédits, 3 corrects |
+| **Précision** | 42.9% | 7 produits prédits, 3 corrects |
 | **Rappel** | 75.0% | 4 produits réels, 3 détectés |
-| **F1-Score** | 75.0% | Score équilibré global |
+| **F1-Score** | 54.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,6 +166,9 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [UPI01] Jus de pomme bio d'UPIGNY 250ml | 17 | Stock prédit: -16.5u (-58j restants) → prédit 17u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.3u (-32j restants) → prédit 1u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: -0.7u (-67j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.5u (-59j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -195,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:54.374Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:17.707Z*

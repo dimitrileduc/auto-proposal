@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 70.6% | 17 produits prédits, 12 corrects |
+| **Précision** | 66.7% | 18 produits prédits, 12 corrects |
 | **Rappel** | 100.0% | 12 produits réels, 12 détectés |
-| **F1-Score** | 82.8% | Score équilibré global |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -154,7 +154,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -179,6 +179,7 @@
 | [LV132] LV Tartinade Houmous type 190g | 10 | Stock prédit: -14.5u (-61j restants) → prédit 10u mais non commandé |
 | [LV138] LV Tartinade Carotte gingembre  380g | 10 | Stock prédit: -9.7u (-54j restants) → prédit 10u mais non commandé |
 | [LV217] LV Tartinade Basilic 380g | 10 | Stock prédit: -4.1u (-30j restants) → prédit 10u mais non commandé |
+| [LV097] LV Asperges (origine UE)  280 g  | 5 | Stock prédit: -11.5u (-86j restants) → prédit 5u mais non commandé |
 
 
 ---
@@ -202,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:57.794Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:19.910Z*

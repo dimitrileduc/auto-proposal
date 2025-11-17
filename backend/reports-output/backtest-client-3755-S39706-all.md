@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 5 produits prédits, 2 corrects |
+| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,7 +166,6 @@
 |---------|-------------|--------|
 | [PF0077] FILOU PROVENCALE 5 L | 1 | Stock prédit: -1.1u (-25j restants) → prédit 1u mais non commandé |
 | [PF3272] JF PEPPER MAYONNAISE 925ML | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
-| [PF3270] JF TRUFFLE MAYONNAISE 925ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -190,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:43.914Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:38.404Z*

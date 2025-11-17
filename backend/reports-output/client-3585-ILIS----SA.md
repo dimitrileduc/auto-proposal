@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - ILIS    SA
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 3585
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 1.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 7**
-- Urgents (rupture ≤ 0j): 6
-- Modérés (0 < rupture ≤ 19j): 1
+**Produits à risque détectés: 5**
+- Urgents (rupture ≤ 0j): 3
+- Modérés (0 < rupture ≤ 19j): 2
 
-**Total produits (Phase 1): 7**
-**Quantité totale brute: 512 unités**
+**Total produits (Phase 1): 5**
+**Quantité totale brute: 482 unités**
 
 ### Détails par produit
 
@@ -76,12 +76,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 6 unités</summary>
+<summary>🟡 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2308
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.1502
+- **Stock restant estimé**: 2.09
+- **Jours avant rupture**: **13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -89,12 +89,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-12 | S39177 | 6 | 37.80€ |
+| 2024-08-06 | S31540 | 10 | 36.00€ |
+| 2024-06-10 | S30693 | 3 | 36.00€ |
+| 2024-05-31 | S30568 | 3 | 36.00€ |
+| 2024-04-25 | S29984 | 10 | 36.00€ |
+| 2024-03-22 | S29469 | 10 | 36.00€ |
+| 2024-02-23 | S29061 | 10 | 36.00€ |
+| 2024-02-09 | S28889 | 10 | 36.00€ |
+| 2024-01-18 | S28590 | 10 | 36.00€ |
+| 2024-01-05 | S28392 | 10 | 36.00€ |
+| 2023-12-01 | S27962 | 10 | 36.00€ |
+| 2023-11-03 | S27424 | 10 | 36.00€ |
+| 2023-10-20 | S04936 | 6 | 36.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [6]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [6, 10, 3, 3, 10]
+- **Nombre commandes**: 13
 - **Valeur médiane**: 6
 
 </details>
@@ -126,30 +138,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0089] FILOU VOL AU VENT 400 GR</strong> (ID: 8992) - 6 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1500
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-29 | S38828 | 6 | 24.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [6]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 6
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF0959] FILOU TOMATO KETCHUP 10KG</strong> (ID: 17752) - 52 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -173,30 +161,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[PF0520] YVALLI PET BOUL TOMATE 2,5 KG</strong> (ID: 9314) - 24 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1558
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-07 | S36568 | 24 | 47.28€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [24]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 24
-
-</details>
-
 
 ---
 
@@ -205,7 +169,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 7370.00€**
+- **Montant initial: 6087.68€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -218,10 +182,8 @@
 | [PF0077] FILOU PROVENCALE 5 L | 8986 | 80 | 0 | 80 | 9.37€ | 749.60€ |
 | [PF0088] FILOU VOL AU VENT ... | 8991 | 6 | 0 | 6 | 37.80€ | 226.80€ |
 | [PF0085] FILOU CURRY KETCHU... | 8989 | 104 | 0 | 104 | 19.57€ | 2035.28€ |
-| [PF0089] FILOU VOL AU VENT ... | 8992 | 6 | 0 | 6 | 24.60€ | 147.60€ |
 | [PF0959] FILOU TOMATO KETCH... | 17752 | 52 | 0 | 52 | 17.80€ | 925.60€ |
-| [PF0520] YVALLI PET BOUL TO... | 9314 | 24 | 0 | 24 | 47.28€ | 1134.72€ |
 
-**Total (Phase 2.5): 7370.00€**
+**Total (Phase 2.5): 6087.68€**
 
 ---

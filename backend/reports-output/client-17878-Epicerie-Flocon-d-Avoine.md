@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Epicerie Flocon d'Avoine
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 17878
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.1s
+**⏱️ Durée d'exécution:** 4.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 32**
-- Urgents (rupture ≤ 0j): 19
+**Produits à risque détectés: 31**
+- Urgents (rupture ≤ 0j): 18
 - Modérés (0 < rupture ≤ 19j): 13
 
-**Total produits (Phase 1): 32**
-**Quantité totale brute: 33 unités**
+**Total produits (Phase 1): 31**
+**Quantité totale brute: 32 unités**
 
 ### Détails par produit
 
@@ -726,36 +726,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> (ID: 13097) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0072
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-28 | S37086 | 1 | 29.45€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0083
+- **Stock restant estimé**: -0.37
+- **Jours avant rupture**: **-45j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -763,12 +739,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-30 | S36443 | 1 | 19.28€ |
+| 2024-11-22 | S33464 | 2 | 18.90€ |
+| 2024-06-17 | S30795 | 1 | 18.90€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -777,9 +755,9 @@
 <summary>🔴 <strong>[LV331] LV Tartinade Lentils Balsamico 190g</strong> (ID: 14451) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0130
+- **Stock restant estimé**: -1.16
+- **Jours avant rupture**: **-89j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -787,12 +765,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-30 | S36443 | 1 | 14.52€ |
+| 2024-12-12 | S33795 | 1 | 14.10€ |
+| 2024-11-22 | S33464 | 2 | 14.10€ |
+| 2024-09-26 | S32422 | 1 | 14.10€ |
+| 2024-07-29 | S31452 | 1 | 14.10€ |
+| 2024-04-22 | S29893 | 1 | 14.10€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -801,9 +784,9 @@
 <summary>🔴 <strong>[LEA07] LEAMO orangeade bio 330ml</strong> (ID: 18295) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0081
+- **Stock restant estimé**: -0.34
+- **Jours avant rupture**: **-41j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -811,12 +794,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-30 | S36443 | 1 | 33.80€ |
+| 2025-02-07 | S34741 | 1 | 33.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -853,7 +837,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 622.48€**
+- **Montant initial: 593.03€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -889,12 +873,11 @@
 | [PAO01] PAOLA cola verre 25... | 18345 | 1 | 0 | 1 | 25.20€ | 25.20€ |
 | [LV188] LV Tartinade Auberg... | 13071 | 1 | 0 | 1 | 23.48€ | 23.48€ |
 | [LV002] LV Pizza Croccantin... | 13096 | 1 | 0 | 1 | 27.03€ | 27.03€ |
-| [LV003] LV Pizza Croccantin... | 13097 | 1 | 0 | 1 | 29.45€ | 29.45€ |
 | [LV154] LV Vinaigrette Miel... | 13051 | 1 | 0 | 1 | 19.28€ | 19.28€ |
 | [LV331] LV Tartinade Lentil... | 14451 | 1 | 0 | 1 | 14.52€ | 14.52€ |
 | [LEA07] LEAMO orangeade bio... | 18295 | 1 | 0 | 1 | 33.80€ | 33.80€ |
 | [fsv08] Banana chips bio vr... | 18263 | 1 | 0 | 1 | 10.65€ | 10.65€ |
 
-**Total (Phase 2.5): 622.48€**
+**Total (Phase 2.5): 593.03€**
 
 ---

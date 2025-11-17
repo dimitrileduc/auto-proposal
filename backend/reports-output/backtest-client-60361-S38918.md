@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 6 produits prédits, 3 corrects |
-| **Rappel** | 30.0% | 10 produits réels, 3 détectés |
-| **F1-Score** | 37.5% | Score équilibré global |
+| **Précision** | 57.1% | 7 produits prédits, 4 corrects |
+| **Rappel** | 40.0% | 10 produits réels, 4 détectés |
+| **F1-Score** | 47.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 66.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,6 +141,7 @@
 | [RIT01] RITCHIE Orange - verre 275ml | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -172,7 +173,7 @@
 
 ---
 
-## False Negatives (7)
+## False Negatives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -198,9 +199,8 @@
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 3 | Stock suffisant: 1.9u (24j restants > seuil 19j) |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 1.4u (37j restants > seuil 19j) |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: 1.4u (37j restants > seuil 19j) |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:51.777Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:14.907Z*

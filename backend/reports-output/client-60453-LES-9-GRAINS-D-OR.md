@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - LES 9 GRAINS D'OR
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 60453
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 31**
-- Urgents (rupture ≤ 0j): 24
+**Produits à risque détectés: 27**
+- Urgents (rupture ≤ 0j): 20
 - Modérés (0 < rupture ≤ 19j): 7
 
-**Total produits (Phase 1): 31**
-**Quantité totale brute: 42 unités**
+**Total produits (Phase 1): 27**
+**Quantité totale brute: 37 unités**
 
 ### Détails par produit
 
@@ -96,30 +96,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[ORG01] ORGANICA crunchy fruit ananas 16g</strong> (ID: 18338) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0500
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-16 | S39101 | 1 | 30.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> (ID: 18266) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -177,30 +153,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-05 | S38787 | 1 | 17.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> (ID: 16980) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -224,54 +176,6 @@
 - **Confiance**: high
 - **Quantités historiques**: [1, 1, 1, 1, 1]
 - **Nombre commandes**: 5
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> (ID: 18327) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0645
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-05 | S38787 | 2 | 16.05€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[ORG09] ORGANICA crunchy fruit cerise 20g</strong> (ID: 18339) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0323
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-05 | S38787 | 1 | 30.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -561,9 +465,9 @@
 <summary>🔴 <strong>[MF0012] MF Olives Mix 500g</strong> (ID: 552) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0103
+- **Stock restant estimé**: -0.14
+- **Jours avant rupture**: **-13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -571,12 +475,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-17 | S37039 | 1 | 27.60€ |
+| 2025-03-25 | S35420 | 1 | 27.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -682,9 +587,9 @@
 <summary>🔴 <strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> (ID: 18349) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0068
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0113
+- **Stock restant estimé**: -0.65
+- **Jours avant rupture**: **-57j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -692,12 +597,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36485 | 1 | 17.70€ |
+| 2025-01-27 | S34389 | 1 | 17.70€ |
+| 2025-01-13 | S34273 | 1 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -730,9 +637,9 @@
 <summary>🔴 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18351) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0068
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0079
+- **Stock restant estimé**: -0.16
+- **Jours avant rupture**: **-19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -740,12 +647,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36485 | 1 | 17.70€ |
+| 2025-01-27 | S34389 | 1 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -807,7 +715,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 890.06€**
+- **Montant initial: 778.82€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -819,13 +727,9 @@
 | [JOY02] JOY! Organic Strawb... | 18272 | 3 | 0 | 3 | 27.92€ | 83.76€ |
 | [JOY03] JOY! Organic Aprico... | 18275 | 3 | 0 | 3 | 27.92€ | 83.76€ |
 | [JOY04] JOY! Organic Four-F... | 18276 | 2 | 0 | 2 | 27.92€ | 55.84€ |
-| [ORG01] ORGANICA crunchy fr... | 18338 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [BUD03] BUDDY biologische e... | 18266 | 2 | 0 | 2 | 14.88€ | 29.76€ |
 | [BUD04] BUDDY Organic Energ... | 18265 | 1 | 0 | 1 | 14.88€ | 14.88€ |
-| [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [MF0056] MF Noix de cajou -... | 16980 | 1 | 0 | 1 | 20.62€ | 20.62€ |
-| [NUT01] NUTS & BERRIES ener... | 18327 | 2 | 0 | 2 | 16.05€ | 32.10€ |
-| [ORG09] ORGANICA crunchy fr... | 18339 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [MF0055] MF Noix de cajou -... | 16979 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [MF0013] MF Olives Vertes 500g | 553 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [ORG10] ORGANICA crunchy fr... | 18342 | 1 | 0 | 1 | 30.72€ | 30.72€ |
@@ -848,6 +752,6 @@
 | [NUT03] NUTS & BERRIES ener... | 18328 | 1 | 0 | 1 | 16.05€ | 16.05€ |
 | [fsv13] Pistaches grillées ... | 18348 | 1 | 0 | 1 | 52.08€ | 52.08€ |
 
-**Total (Phase 2.5): 890.06€**
+**Total (Phase 2.5): 778.82€**
 
 ---

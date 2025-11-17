@@ -7,7 +7,7 @@
   "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
-    "fp": 8,
+    "fp": 5,
     "fn": 10,
     "precision": 0,
     "recall": 0,

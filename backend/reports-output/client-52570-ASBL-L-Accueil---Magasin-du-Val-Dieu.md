@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - ASBL L'Accueil - Magasin du Val Dieu
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 52570
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.5s
+**⏱️ Durée d'exécution:** 1.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 24**
-- Urgents (rupture ≤ 0j): 14
+**Produits à risque détectés: 23**
+- Urgents (rupture ≤ 0j): 13
 - Modérés (0 < rupture ≤ 19j): 10
 
-**Total produits (Phase 1): 24**
-**Quantité totale brute: 64 unités**
+**Total produits (Phase 1): 23**
+**Quantité totale brute: 60 unités**
 
 ### Détails par produit
 
@@ -361,30 +361,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV135] LV Tartinade Basilico 190g</strong> (ID: 13067) - 4 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0816
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-04 | S38290 | 4 | 13.53€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [4]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 4
-
-</details>
-
-<details>
 <summary>🟡 <strong>[MF0055] MF Noix de cajou - Curry 133g</strong> (ID: 16979) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -563,9 +539,9 @@
 <summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0126
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0161
+- **Stock restant estimé**: -0.56
+- **Jours avant rupture**: **-35j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -573,12 +549,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-16 | S36241 | 2 | 17.70€ |
+| 2025-03-20 | S35488 | 1 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -587,9 +564,9 @@
 <summary>🔴 <strong>[REB06] REB chips bio - paprika fumé 35g</strong> (ID: 18415) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0063
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0108
+- **Stock restant estimé**: -0.71
+- **Jours avant rupture**: **-66j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -597,12 +574,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-16 | S36241 | 1 | 17.60€ |
+| 2025-03-20 | S35488 | 1 | 17.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -611,9 +589,9 @@
 <summary>🔴 <strong>[REB05] REB chips bio - sel de mer 35g</strong> (ID: 18416) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0063
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0108
+- **Stock restant estimé**: -0.71
+- **Jours avant rupture**: **-66j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -621,12 +599,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-16 | S36241 | 1 | 17.60€ |
+| 2025-03-20 | S35488 | 1 | 17.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -663,7 +642,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1227.78€**
+- **Montant initial: 1173.66€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -684,7 +663,6 @@
 | [LV162] LV Tartinade Tomato... | 13064 | 4 | 0 | 4 | 12.67€ | 50.68€ |
 | [LV136] LV Tartinade Better... | 13068 | 4 | 0 | 4 | 13.10€ | 52.40€ |
 | [LV055] LV Mini grissini à ... | 13094 | 2 | 0 | 2 | 23.92€ | 47.84€ |
-| [LV135] LV Tartinade Basili... | 13067 | 4 | 0 | 4 | 13.53€ | 54.12€ |
 | [MF0055] MF Noix de cajou -... | 16979 | 2 | 0 | 2 | 20.62€ | 41.24€ |
 | [MF0056] MF Noix de cajou -... | 16980 | 2 | 0 | 2 | 20.62€ | 41.24€ |
 | [MF0054] MF Noix de cajou -... | 16978 | 2 | 0 | 2 | 20.62€ | 41.24€ |
@@ -697,6 +675,6 @@
 | [REB05] REB chips bio - sel... | 18416 | 1 | 0 | 1 | 17.60€ | 17.60€ |
 | [REB04] ReBEL chips premium... | 18355 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 
-**Total (Phase 2.5): 1227.78€**
+**Total (Phase 2.5): 1173.66€**
 
 ---

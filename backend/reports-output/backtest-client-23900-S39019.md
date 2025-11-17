@@ -201,7 +201,7 @@
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock suffisant: 1.7u (25j restants > seuil 19j) |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock suffisant: 3.4u (29j restants > seuil 19j) |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock suffisant: 2.7u (41j restants > seuil 19j) |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock suffisant: 0.9u (44j restants > seuil 19j) |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 0.8u (23j restants > seuil 19j) |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.8u (23j restants > seuil 19j) |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock suffisant: 0.9u (37j restants > seuil 19j) |
@@ -210,4 +210,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:14.591Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:44.128Z*

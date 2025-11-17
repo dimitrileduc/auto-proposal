@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 9 produits prédits, 3 corrects |
+| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
 | **Rappel** | 100.0% | 3 produits réels, 3 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **F1-Score** | 54.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (6)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,12 +165,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [ING0271] SIROP D'AGAVE BIO | 25 | Stock prédit: 0.0u (0j restants) → prédit 25u mais non commandé |
 | [PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML | 483 | Stock prédit: 57.9u (8j restants) → prédit 483u mais non commandé |
 | [PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML | 286 | Stock prédit: -195.4u (-46j restants) → prédit 286u mais non commandé |
 | [PF3360] DLL MAYONNAISE AVOCAT 200ML | 421 | Stock prédit: -158.0u (-25j restants) → prédit 421u mais non commandé |
-| [PF3352] DLL MARINADE AVOCAT TOMATES SECHEES 240ML | 564 | Stock prédit: 0.0u (0j restants) → prédit 564u mais non commandé |
-| [PF3351] DLL MARINADE AVOCAT BBQ 240ML | 564 | Stock prédit: 0.0u (0j restants) → prédit 564u mais non commandé |
+| [PF3352] DLL MARINADE AVOCAT TOMATES SECHEES 240ML | 285 | Stock prédit: -298.8u (-46j restants) → prédit 285u mais non commandé |
+| [PF3351] DLL MARINADE AVOCAT BBQ 240ML | 285 | Stock prédit: -297.8u (-46j restants) → prédit 285u mais non commandé |
 
 
 ---
@@ -194,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:53.116Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:51.205Z*

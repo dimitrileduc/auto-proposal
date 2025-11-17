@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 42.4% | 33 produits prédits, 14 corrects |
+| **Précision** | 37.8% | 37 produits prédits, 14 corrects |
 | **Rappel** | 93.3% | 15 produits réels, 14 détectés |
-| **F1-Score** | 58.3% | Score équilibré global |
+| **F1-Score** | 53.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Positives (19)
+## False Positives (23)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -195,6 +195,10 @@
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.5u (-28j restants) → prédit 1u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: -0.5u (-42j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.5u (-42j restants) → prédit 1u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.1u (-15j restants) → prédit 1u mais non commandé |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: -0.1u (-15j restants) → prédit 1u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -0.0u (-3j restants) → prédit 1u mais non commandé |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: -0.5u (-56j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -224,4 +228,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:21.862Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:27.003Z*

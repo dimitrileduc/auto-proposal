@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 5.6% | 36 produits prédits, 2 corrects |
+| **Précision** | 5.7% | 35 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 10.5% | Score équilibré global |
+| **F1-Score** | 10.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (34)
+## False Positives (33)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,7 +169,6 @@
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-7j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
 | [LV036] LV Olives Vertes dénoyautées BE 350g | 139 | Stock prédit: -29.9u (-10j restants) → prédit 139u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | Stock prédit: -7.1u (-62j restants) → prédit 8u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 3 | Stock prédit: -2.7u (-62j restants) → prédit 3u mais non commandé |
@@ -221,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:10.715Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:55.050Z*

@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DLL AD CHASTRE BV
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 38793
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 37**
-- Urgents (rupture ≤ 0j): 31
-- Modérés (0 < rupture ≤ 19j): 6
+**Produits à risque détectés: 31**
+- Urgents (rupture ≤ 0j): 24
+- Modérés (0 < rupture ≤ 19j): 7
 
-**Total produits (Phase 1): 37**
-**Quantité totale brute: 58 unités**
+**Total produits (Phase 1): 31**
+**Quantité totale brute: 53 unités**
 
 ### Détails par produit
 
@@ -282,12 +282,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF017] JF SAUCE COCKTAIL 250ML WECK</strong> (ID: 16771) - 1 unités</summary>
+<summary>🔴 <strong>[JF017] JF SAUCE COCKTAIL 250ML WECK</strong> (ID: 16771) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0145
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0181
+- **Stock restant estimé**: -0.25
+- **Jours avant rupture**: **-13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -295,37 +295,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-24 | S37634 | 1 | 19.50€ |
+| 2024-11-20 | S33411 | 4 | 19.50€ |
+| 2024-10-14 | S32735 | 1 | 19.50€ |
+| 2024-04-23 | S29944 | 3 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> (ID: 16762) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0145
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-24 | S37634 | 1 | 21.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 4, 1, 3]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
 
 </details>
 
@@ -505,12 +484,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> (ID: 16777) - 1 unités</summary>
+<summary>🔴 <strong>[JF020] JF SAUCE AIOLI 250ML WECK</strong> (ID: 16761) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0102
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0105
+- **Stock restant estimé**: -0.03
+- **Jours avant rupture**: **-2j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -518,66 +497,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-26 | S37066 | 1 | 19.50€ |
+| 2024-11-20 | S33411 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF020] JF SAUCE AIOLI 250ML WECK</strong> (ID: 16761) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0102
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-26 | S37066 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> (ID: 19356) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0204
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-26 | S37066 | 2 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF022] JF MOUTARDE MIEL 250ML WECK</strong> (ID: 16755) - 2 unités</summary>
+<summary>🔴 <strong>[JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> (ID: 19356) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
 - **Consommation/jour**: 0.0204
@@ -628,9 +560,9 @@
 <summary>🔴 <strong>[SOWA03] SOWA ginger beer ardent 250ml</strong> (ID: 18375) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0102
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0106
+- **Stock restant estimé**: -0.04
+- **Jours avant rupture**: **-3j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -638,36 +570,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-26 | S37066 | 1 | 26.60€ |
+| 2025-02-24 | S35035 | 1 | 26.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF026] JF VINAIGRET TRUFFES WECK 200M</strong> (ID: 16788) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0102
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-26 | S37066 | 1 | 31.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -676,9 +585,9 @@
 <summary>🔴 <strong>[JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> (ID: 16746) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0156
+- **Stock restant estimé**: -0.73
+- **Jours avant rupture**: **-46j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -686,23 +595,25 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36720 | 1 | 19.50€ |
+| 2024-11-20 | S33411 | 4 | 19.50€ |
+| 2024-08-12 | S31634 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 4, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF018] JF SAUCE SAMOURAI 250ML WECK</strong> (ID: 16778) - 2 unités</summary>
+<summary>🟡 <strong>[JF018] JF SAUCE SAMOURAI 250ML WECK</strong> (ID: 16778) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0180
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0155
+- **Stock restant estimé**: 0.28
+- **Jours avant rupture**: **17j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -710,37 +621,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36720 | 2 | 19.50€ |
+| 2025-02-24 | S35035 | 2 | 19.50€ |
+| 2024-10-14 | S32735 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF037] JF BBQ SQUEEZE 300ML</strong> (ID: 16729) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-13 | S36720 | 1 | 26.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -748,9 +637,9 @@
 <summary>🔴 <strong>[OCC02] OCCHIOLINO premium limoncello 500ml</strong> (ID: 18332) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0106
+- **Stock restant estimé**: -0.17
+- **Jours avant rupture**: **-16j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -758,12 +647,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36720 | 1 | 104.40€ |
+| 2025-02-24 | S35035 | 1 | 104.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -796,9 +686,9 @@
 <summary>🔴 <strong>[JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> (ID: 16763) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0153
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0217
+- **Stock restant estimé**: -0.85
+- **Jours avant rupture**: **-38j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -806,12 +696,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-23 | S36330 | 2 | 19.50€ |
+| 2024-11-20 | S33411 | 4 | 19.50€ |
+| 2024-10-14 | S32735 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 4, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -820,9 +712,9 @@
 <summary>🔴 <strong>[JF029] JF VOL AU VENT BOCAL 400G</strong> (ID: 16792) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0229
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0280
+- **Stock restant estimé**: -0.66
+- **Jours avant rupture**: **-23j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -830,12 +722,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-23 | S36330 | 3 | 15.00€ |
+| 2024-11-20 | S33411 | 2 | 15.00€ |
+| 2024-10-14 | S32735 | 4 | 15.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2, 4]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 3
 
 </details>
@@ -861,30 +755,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 16738) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0076
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-23 | S36330 | 1 | 30.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -917,9 +787,9 @@
 <summary>🔴 <strong>[JF031] JF SAUCE LIEGEOISE 380GX6</strong> (ID: 16776) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0131
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0181
+- **Stock restant estimé**: -0.78
+- **Jours avant rupture**: **-42j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -927,12 +797,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-01 | S35724 | 2 | 13.50€ |
+| 2024-11-20 | S33411 | 2 | 13.50€ |
+| 2024-10-14 | S32735 | 3 | 13.50€ |
+| 2024-04-23 | S29944 | 2 | 13.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2, 3, 2]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 2
 
 </details>
@@ -945,7 +818,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1226.76€**
+- **Montant initial: 1098.36€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -964,8 +837,7 @@
 | [TVF002] TVF TARTINADE BIO ... | 16830 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 | [JF003] JF MAYONNAIS WASABI... | 16747 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF008] JF MAYONNA DU CHEF ... | 16743 | 1 | 0 | 1 | 25.80€ | 25.80€ |
-| [JF017] JF SAUCE COCKTAIL 2... | 16771 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF019] JF SAUCE AIOLI PEST... | 16762 | 1 | 0 | 1 | 21.00€ | 21.00€ |
+| [JF017] JF SAUCE COCKTAIL 2... | 16771 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [REB01] ReBEL chips premium... | 18353 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB02] ReBEL chips premium... | 18349 | 2 | 0 | 2 | 17.70€ | 35.40€ |
@@ -973,25 +845,20 @@
 | [REB04] ReBEL chips premium... | 18355 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB08] ReBEL chips premium... | 18351 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [OCC03] OCCHIOLINO SUCO - c... | 18333 | 1 | 0 | 1 | 59.70€ | 59.70€ |
-| [JF007] JF SAUCE MAYO TOMAT... | 16777 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF020] JF SAUCE AIOLI 250M... | 16761 | 1 | 0 | 1 | 19.50€ | 19.50€ |
+| [JF020] JF SAUCE AIOLI 250M... | 16761 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF056] JF SAUCE CHIPOTLE 2... | 19356 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF022] JF MOUTARDE MIEL 25... | 16755 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [KLAK01] KLAK Maté 330ml | 18286 | 1 | 0 | 1 | 33.36€ | 33.36€ |
 | [SOWA03] SOWA ginger beer a... | 18375 | 1 | 0 | 1 | 26.60€ | 26.60€ |
-| [JF026] JF VINAIGRET TRUFFE... | 16788 | 1 | 0 | 1 | 31.50€ | 31.50€ |
 | [JF004] JF MAYONNAIS POIVRE... | 16746 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF018] JF SAUCE SAMOURAI 2... | 16778 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF037] JF BBQ SQUEEZE 300ML | 16729 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [OCC02] OCCHIOLINO premium ... | 18332 | 1 | 0 | 1 | 104.40€ | 104.40€ |
 | [REB05] REB chips bio - sel... | 18416 | 2 | 0 | 2 | 17.60€ | 35.20€ |
 | [JF015] JF SAUCE ANDALOUSE ... | 16763 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF029] JF VOL AU VENT BOCA... | 16792 | 3 | 0 | 3 | 15.00€ | 45.00€ |
 | [JF035] JF BURGER SQUEEZE 3... | 16731 | 1 | 0 | 1 | 26.40€ | 26.40€ |
-| [JF039] JF MAYO BARAKI SQUE... | 16738 | 1 | 0 | 1 | 30.00€ | 30.00€ |
 | [TVF006] TVF TARTINADE BIO ... | 16833 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 | [JF031] JF SAUCE LIEGEOISE ... | 16776 | 2 | 0 | 2 | 13.50€ | 27.00€ |
 
-**Total (Phase 2.5): 1226.76€**
+**Total (Phase 2.5): 1098.36€**
 
 ---

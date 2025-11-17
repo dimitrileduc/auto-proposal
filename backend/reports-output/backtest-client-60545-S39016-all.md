@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.4% | 23 produits prédits, 7 corrects |
+| **Précision** | 33.3% | 21 produits prédits, 7 corrects |
 | **Rappel** | 70.0% | 10 produits réels, 7 détectés |
-| **F1-Score** | 42.4% | Score équilibré global |
+| **F1-Score** | 45.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -149,7 +149,7 @@
 
 ---
 
-## False Positives (16)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -175,16 +175,14 @@
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.5u (14j restants) → prédit 1u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: 0.6u (19j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.6u (-30j restants) → prédit 1u mais non commandé |
 | [LEA09] LEAMO cola bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | Stock prédit: -3.4u (-96j restants) → prédit 2u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | Stock prédit: -2.4u (-91j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -216,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:16.045Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:18.789Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 41.7% | 24 produits prédits, 10 corrects |
-| **Rappel** | 58.8% | 17 produits réels, 10 détectés |
-| **F1-Score** | 48.8% | Score équilibré global |
+| **Précision** | 33.3% | 33 produits prédits, 11 corrects |
+| **Rappel** | 64.7% | 17 produits réels, 11 détectés |
+| **F1-Score** | 44.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.20 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.27 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 22.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 8 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (10)
+## True Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -148,11 +148,12 @@
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (14)
+## False Positives (22)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -181,16 +182,24 @@
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.5u (-24j restants) → prédit 1u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
 | [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
+| [MF0047] MF Mayonnaise 250ml | 2 | Stock prédit: 0.2u (14j restants) → prédit 2u mais non commandé |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
 | [MF0027] MF Tarti Aubergine 250g  | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
 | [MF0061] MF Compote | 1 | Stock prédit: -0.7u (-33j restants) → prédit 1u mais non commandé |
 | [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.2u (-16j restants) → prédit 1u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.1u (9j restants) → prédit 1u mais non commandé |
 | [CB007] CB Apple Nettle juice 1l | 1 | Stock prédit: -0.9u (-57j restants) → prédit 1u mais non commandé |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock prédit: -1.0u (-79j restants) → prédit 1u mais non commandé |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: -0.6u (-58j restants) → prédit 1u mais non commandé |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: -0.6u (-66j restants) → prédit 1u mais non commandé |
+| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.8u (-77j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -211,7 +220,6 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [LB006] LB Brown (7,0%)  33CL | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock suffisant: 0.7u (24j restants > seuil 19j) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.8u (36j restants > seuil 19j) |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -221,4 +229,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:47.868Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:52.407Z*

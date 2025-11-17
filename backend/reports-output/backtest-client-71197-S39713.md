@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
 | **Rappel** | 16.7% | 6 produits réels, 1 détectés |
-| **F1-Score** | 28.6% | Score équilibré global |
+| **F1-Score** | 22.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,7 +158,14 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [CB002] CB Cherry Apple juice 25cl | 2 | Stock prédit: -0.7u (-48j restants) → prédit 2u mais non commandé |
+| [CB001] CB Apple juice 25cl | 2 | Stock prédit: -1.1u (-92j restants) → prédit 2u mais non commandé |
+
 
 ---
 
@@ -191,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:06.177Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:38.406Z*

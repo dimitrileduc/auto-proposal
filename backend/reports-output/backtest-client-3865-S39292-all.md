@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 17.9% | 28 produits prédits, 5 corrects |
+| **Précision** | 20.0% | 25 produits prédits, 5 corrects |
 | **Rappel** | 83.3% | 6 produits réels, 5 détectés |
-| **F1-Score** | 29.4% | Score équilibré global |
+| **F1-Score** | 32.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -147,7 +147,7 @@
 
 ---
 
-## False Positives (23)
+## False Positives (20)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,7 +170,6 @@
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.5u (-3j restants) → prédit 2u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: 1.4u (16j restants) → prédit 2u mais non commandé |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: -0.8u (-9j restants) → prédit 2u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: 0.9u (15j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock prédit: 0.6u (8j restants) → prédit 2u mais non commandé |
@@ -179,16 +178,14 @@
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
 | [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: 0.3u (17j restants) → prédit 2u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.0u (-30j restants) → prédit 2u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-22j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -1.0u (-45j restants) → prédit 1u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock prédit: -0.2u (-6j restants) → prédit 2u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.4u (-27j restants) → prédit 1u mais non commandé |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: -2.9u (-85j restants) → prédit 2u mais non commandé |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -219,4 +216,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:31.118Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:22.606Z*

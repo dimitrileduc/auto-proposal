@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 43.8% | 32 produits prédits, 14 corrects |
+| **Précision** | 50.0% | 28 produits prédits, 14 corrects |
 | **Rappel** | 73.7% | 19 produits réels, 14 détectés |
-| **F1-Score** | 54.9% | Score équilibré global |
+| **F1-Score** | 59.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Positives (18)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,23 +177,19 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.5u (10j restants) → prédit 2u mais non commandé |
-| [MF0014] MF Olives noires 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0027] MF Tarti Aubergine 250g  | 2 | Stock prédit: 0.7u (17j restants) → prédit 2u mais non commandé |
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | Stock prédit: 0.5u (10j restants) → prédit 2u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: 0.3u (17j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: -0.3u (-33j restants) → prédit 1u mais non commandé |
 | [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 | [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.5u (-26j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 2 | Stock prédit: -1.2u (-44j restants) → prédit 2u mais non commandé |
 | [MF0053] MF Maïs 500g | 2 | Stock prédit: -0.9u (-35j restants) → prédit 2u mais non commandé |
 | [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: -0.5u (-35j restants) → prédit 1u mais non commandé |
-| [WIG01] WIGNAC cidre naturel bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0051] MF Kidney Beans 500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [WIG01] WIGNAC cidre naturel bio 330ml | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -227,4 +223,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:31.209Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:47.490Z*

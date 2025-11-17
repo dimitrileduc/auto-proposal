@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.3% | 33 produits prédits, 10 corrects |
-| **Rappel** | 58.8% | 17 produits réels, 10 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **Précision** | 30.0% | 40 produits prédits, 12 corrects |
+| **Rappel** | 70.6% | 17 produits réels, 12 détectés |
+| **F1-Score** | 42.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.30 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
+| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (10)
+## True Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -148,11 +148,13 @@
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV133] LV Tartinade Ananas Coco 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (23)
+## False Positives (28)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -191,15 +193,20 @@
 | [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: -0.4u (-22j restants) → prédit 1u mais non commandé |
 | [LV217] LV Tartinade Basilic 380g | 1 | Stock prédit: -0.7u (-37j restants) → prédit 1u mais non commandé |
+| [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: -0.4u (-25j restants) → prédit 1u mais non commandé |
+| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: -0.2u (-12j restants) → prédit 2u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.8u (-113j restants) → prédit 1u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -0.9u (-54j restants) → prédit 1u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: -0.5u (-48j restants) → prédit 1u mais non commandé |
+| [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: -0.5u (-57j restants) → prédit 1u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -1.0u (-87j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -219,15 +226,13 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock suffisant: 1.2u (31j restants > seuil 19j) |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock suffisant: 1.4u (40j restants > seuil 19j) |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock suffisant: 1.4u (40j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:06.955Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:06.486Z*

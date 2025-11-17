@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Energy Services Management - Epicerie Uhoda Damré
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 57352
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.8s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 29**
-- Urgents (rupture ≤ 0j): 19
+**Produits à risque détectés: 28**
+- Urgents (rupture ≤ 0j): 18
 - Modérés (0 < rupture ≤ 19j): 10
 
-**Total produits (Phase 1): 29**
-**Quantité totale brute: 42 unités**
+**Total produits (Phase 1): 28**
+**Quantité totale brute: 41 unités**
 
 ### Détails par produit
 
@@ -543,30 +543,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0118
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-16 | S37437 | 1 | 17.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV135] LV Tartinade Basilico 190g</strong> (ID: 13067) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -672,9 +648,9 @@
 <summary>🔴 <strong>[ALO30] ORGANIC CRUNCH aloe vera drink original 500ml</strong> (ID: 18336) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0136
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0187
+- **Stock restant estimé**: -0.75
+- **Jours avant rupture**: **-39j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -682,12 +658,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-15 | S36189 | 2 | 15.48€ |
+| 2025-02-07 | S34752 | 2 | 15.48€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -773,7 +750,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 866.15€**
+- **Montant initial: 848.45€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -802,7 +779,6 @@
 | [LV126] LV Tartinade Tomate... | 13070 | 2 | 0 | 2 | 13.53€ | 27.06€ |
 | [LV357] LV Tartinade BIO As... | 19272 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 | [LV342] LV Organic Broccoli... | 14999 | 2 | 0 | 2 | 13.53€ | 27.06€ |
-| [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [LV135] LV Tartinade Basili... | 13067 | 1 | 0 | 1 | 13.53€ | 13.53€ |
 | [REB01] ReBEL chips premium... | 18353 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB02] ReBEL chips premium... | 18349 | 3 | 0 | 3 | 17.70€ | 53.10€ |
@@ -812,6 +788,6 @@
 | [ALO33] ORGANIC CRUNCH aloe... | 18334 | 2 | 0 | 2 | 15.48€ | 30.96€ |
 | [LV138] LV Tartinade Carott... | 13072 | 1 | 0 | 1 | 23.67€ | 23.67€ |
 
-**Total (Phase 2.5): 866.15€**
+**Total (Phase 2.5): 848.45€**
 
 ---

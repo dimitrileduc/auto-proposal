@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 12 produits prédits, 6 corrects |
-| **Rappel** | 85.7% | 7 produits réels, 6 détectés |
-| **F1-Score** | 63.2% | Score équilibré global |
+| **Précision** | 43.8% | 16 produits prédits, 7 corrects |
+| **Rappel** | 100.0% | 7 produits réels, 7 détectés |
+| **F1-Score** | 60.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.83 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 58.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.86 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 57.1% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (6)
+## True Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -144,11 +144,12 @@
 | [RIT02] RITCHIE Citron - Framboise - verre 275ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [RIT05] RITCHIE Cola - verre 275ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [RIT01] RITCHIE Orange - verre 275ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (6)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,12 +174,15 @@
 | [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
 | [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: 0.1u (7j restants) → prédit 1u mais non commandé |
 | [CB010] CB Jus de Pomme cubis 3l | 2 | Stock prédit: -2.2u (-47j restants) → prédit 2u mais non commandé |
+| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.6u (-56j restants) → prédit 1u mais non commandé |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock prédit: -0.6u (-36j restants) → prédit 2u mais non commandé |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: -0.4u (-24j restants) → prédit 2u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 2 | Stock prédit: -0.7u (-45j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -193,14 +197,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [RIT01] RITCHIE Orange - verre 275ml | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:45.777Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:18.513Z*

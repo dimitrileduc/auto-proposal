@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 41.7% | 12 produits prédits, 5 corrects |
-| **Rappel** | 26.3% | 19 produits réels, 5 détectés |
-| **F1-Score** | 32.3% | Score équilibré global |
+| **Précision** | 66.7% | 3 produits prédits, 2 corrects |
+| **Rappel** | 10.5% | 19 produits réels, 2 détectés |
+| **F1-Score** | 18.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,14 +140,11 @@
 |---------|--------|------|-----------|----------|------|
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (7)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,18 +164,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0014] MF Olives noires 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG01] WIGNAC cidre naturel bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0051] MF Kidney Beans 500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (14)
+## False Negatives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -199,6 +190,7 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: 0.4u (5j restants > seuil 19j) |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: 0.0u (2j restants > seuil 19j) |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | Stock suffisant: -0.2u (-9j restants > seuil 19j) |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: 0.5u (5j restants > seuil 19j) |
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 2 | Stock suffisant: 0.8u (22j restants > seuil 19j) |
@@ -210,10 +202,12 @@
 | [MF0047] MF Mayonnaise 250ml | 4 | Stock suffisant: -1.0u (-16j restants > seuil 19j) |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: 0.3u (5j restants > seuil 19j) |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock suffisant: 0.9u (27j restants > seuil 19j) |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock suffisant: 0.0u (2j restants > seuil 19j) |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock suffisant: 0.0u (2j restants > seuil 19j) |
 | [VID0009] Consigne casier | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 48 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:31.208Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:47.488Z*

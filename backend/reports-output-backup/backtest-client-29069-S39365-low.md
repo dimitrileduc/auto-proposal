@@ -1,0 +1,219 @@
+# Rapport Backtest - Client CRF HYPER MARKET EUPEN
+
+## Contexte
+
+- **Client** : CRF HYPER MARKET EUPEN (ID: 29069)
+- **Commande réelle** : S39365
+- **Date commande** : 2025-09-24 09:13:07
+- **Date cutoff système** : 2025-09-23 00:00:00
+- **Jours d'avance** : 1j
+
+---
+
+## Métriques Globales
+
+### Niveau Produit (Détection)
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **Précision** | 0.0% | 20 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
+
+<details>
+<summary>Comment est calculée la Précision ?</summary>
+
+**En simple** : Sur 10 produits prédits, combien sont vraiment commandés ?
+
+**Calcul** : Précision = True Positives ÷ (True Positives + False Positives)
+
+**Exemple** : Si le système prédit 10 produits et que 8 sont commandés → Précision = 80%
+
+**Bon score** : > 80% (peu de fausses alertes)
+</details>
+
+<details>
+<summary>Comment est calculé le Rappel ?</summary>
+
+**En simple** : Sur 10 produits commandés, combien ont été détectés ?
+
+**Calcul** : Rappel = True Positives ÷ (True Positives + False Negatives)
+
+**Exemple** : Si le client commande 10 produits et que 7 sont détectés → Rappel = 70%
+
+**Bon score** : > 80% (peu de besoins manqués)
+</details>
+
+<details>
+<summary>Comment est calculé le F1-Score ?</summary>
+
+**En simple** : Moyenne harmonique entre Précision et Rappel (score équilibré)
+
+**Calcul** : F1 = 2 × (Précision × Rappel) ÷ (Précision + Rappel)
+
+**Pourquoi ?** : On peut avoir 100% de précision mais 50% de rappel. Le F1 combine les deux.
+
+**Bon score** : > 80% (système performant globalement)
+</details>
+
+### Niveau Quantité (Précision)
+
+**⚠️ Important**: Ces métriques sont calculées **uniquement sur les True Positives** (produits correctement détectés).
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
+
+<details>
+<summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
+
+**Exact Match (🎯)** : Quantité prédite = Quantité réelle (erreur = 0)
+- Exemple : Système prédit 10, Client commande 10 → Exact Match
+
+**Partial Match (✅)** : Quantité prédite ≠ Quantité réelle (erreur > 0)
+- Exemple : Système prédit 10, Client commande 12 → Partial Match (erreur = 2 unités)
+
+**Note** : Seuls les True Positives ont un match type (les produits bien détectés)
+</details>
+
+<details>
+<summary>Comment est calculé le MAE ?</summary>
+
+**Nom complet** : Mean Absolute Error (Erreur Absolue Moyenne)
+
+**En simple** : En moyenne, le système se trompe de combien d'unités ?
+
+**Calcul** : MAE = Moyenne des |Qté Prédite - Qté Réelle|
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 2 unités
+- Produit B : Prédit 5, Réel 4 → Erreur = 1 unité
+- Produit C : Prédit 8, Réel 11 → Erreur = 3 unités
+- MAE = (2 + 1 + 3) ÷ 3 = 2 unités
+
+**Bon score** : < 2 unités (très précis)
+</details>
+
+<details>
+<summary>Comment est calculé le MAPE ?</summary>
+
+**Nom complet** : Mean Absolute Percentage Error (Erreur Absolue Moyenne en %)
+
+**En simple** : En moyenne, le système se trompe de combien en pourcentage ?
+
+**Calcul** : MAPE = Moyenne des (|Qté Prédite - Qté Réelle| ÷ Qté Réelle × 100%)
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 16.7%
+- Produit B : Prédit 5, Réel 4 → Erreur = 25%
+- MAPE = (16.7% + 25%) ÷ 2 = 20.8%
+
+**Bon score** : < 30%
+
+**Note** : Moins fiable que MAE pour petites quantités (prédit 2, réel 1 = 100% mais seulement 1 unité d'écart)
+</details>
+
+---
+
+## True Positives (0)
+
+<details>
+<summary>Qu'est-ce qu'un True Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit ET que le client a vraiment commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client commande ce produit
+- → True Positive (bonne prédiction)
+
+**C'est bon** : Plus il y en a, mieux c'est
+</details>
+
+*Aucun produit correctement prédit (rappel = 0%)*
+
+---
+
+## False Positives (20)
+
+<details>
+<summary>Qu'est-ce qu'un False Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit MAIS que le client n'a pas commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client ne commande PAS ce produit
+- → False Positive (fausse alerte)
+
+**Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
+</details>
+
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [FIL20] FIL CARBONNADES 800G BOCAL  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
+| [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+
+
+---
+
+## False Negatives (11)
+
+<details>
+<summary>Qu'est-ce qu'un False Negative ?</summary>
+
+**En simple** : Un produit que le système n'a PAS prédit MAIS que le client a commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Pas besoin de commander ce produit"
+- Réalité : Le client commande ce produit
+- → False Negative (besoin manqué)
+
+**Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
+</details>
+
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [FIL08] FIL MOUTARDE 700G BOCAL | 2 | Stock suffisant: -3.1u (-34j restants > seuil 19j) |
+| [FIL09] FIL MOUTARDE 300G BOCAL | 2 | Stock suffisant: -2.6u (-46j restants > seuil 19j) |
+| [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 3 | Stock suffisant: -0.9u (-8j restants > seuil 19j) |
+| [FIL18] FIL VOL AU VENT 800G BOCAL  | 4 | Stock suffisant: -2.5u (-21j restants > seuil 19j) |
+| [FIL19] FIL VOL AU VENT 400G BOCAL | 4 | Stock suffisant: -1.9u (-18j restants > seuil 19j) |
+| [FIL21] FIL BOULETTES SAUCE CHASSEUR 800G BOCAL  | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
+| [FIL22] FIL BOULLETTES SAUCE TOMATE 800G BOCAL  | 1 | Stock suffisant: -0.6u (-41j restants > seuil 19j) |
+| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock suffisant: -0.4u (-12j restants > seuil 19j) |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 1.7u (23j restants > seuil 19j) |
+| [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock suffisant: 2.6u (34j restants > seuil 19j) |
+| [LD011] LD Organic Kids Spread 180 g | 1 | Stock suffisant: -0.9u (-39j restants > seuil 19j) |
+
+
+---
+
+*Rapport généré automatiquement le 2025-11-15T09:47:02.247Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 27.6% | 29 produits prédits, 8 corrects |
+| **Précision** | 28.6% | 28 produits prédits, 8 corrects |
 | **Rappel** | 88.9% | 9 produits réels, 8 détectés |
-| **F1-Score** | 42.1% | Score équilibré global |
+| **F1-Score** | 43.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (21)
+## False Positives (20)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,7 +173,6 @@
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 0.7u (11j restants) → prédit 2u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 3 | Stock prédit: 1.2u (17j restants) → prédit 3u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | Stock prédit: 1.6u (15j restants) → prédit 3u mais non commandé |
@@ -190,7 +189,7 @@
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 3 | Stock prédit: -0.2u (-5j restants) → prédit 3u mais non commandé |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock prédit: -0.9u (-22j restants) → prédit 2u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: -0.7u (-41j restants) → prédit 1u mais non commandé |
-| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: -0.2u (-19j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -220,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:47.242Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:53.233Z*

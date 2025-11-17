@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - VITAFRAIS SAS
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 58998
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 3.6s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 4**
-- Urgents (rupture ≤ 0j): 2
-- Modérés (0 < rupture ≤ 19j): 2
+**Produits à risque détectés: 3**
+- Urgents (rupture ≤ 0j): 0
+- Modérés (0 < rupture ≤ 19j): 3
 
-**Total produits (Phase 1): 4**
-**Quantité totale brute: 128 unités**
+**Total produits (Phase 1): 3**
+**Quantité totale brute: 88 unités**
 
 ### Détails par produit
 
@@ -47,12 +47,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1695] LD FR TARTINADE BIO TOMATE 200</strong> (ID: 9070) - 25 unités</summary>
+<summary>🟡 <strong>[PF1695] LD FR TARTINADE BIO TOMATE 200</strong> (ID: 9070) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.9231
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.1984
+- **Stock restant estimé**: 9.42
+- **Jours avant rupture**: **7j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -60,12 +60,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-14 | S38528 | 25 | 9.60€ |
+| 2025-02-05 | S34689 | 125 | 9.60€ |
+| 2025-01-29 | S34584 | 50 | 9.60€ |
+| 2025-01-14 | S34312 | 25 | 9.60€ |
+| 2025-01-08 | S34173 | 25 | 9.60€ |
+| 2024-12-18 | S33943 | 52 | 9.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [25]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [25, 125, 50, 25, 25]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 25
 
 </details>
@@ -95,30 +100,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML</strong> (ID: 9187) - 40 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 2.0000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-07 | S38404 | 40 | 13.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [40]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 40
-
-</details>
-
 
 ---
 
@@ -127,7 +108,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1403.10€**
+- **Montant initial: 875.10€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -139,8 +120,7 @@
 | [PF1694] LD FR TARTINAD BIO... | 9182 | 25 | 0 | 25 | 9.90€ | 247.50€ |
 | [PF1695] LD FR TARTINADE BI... | 9070 | 25 | 0 | 25 | 9.60€ | 240.00€ |
 | [PF1692] CB9005 LD FR AIOLI... | 9180 | 38 | 0 | 38 | 10.20€ | 387.60€ |
-| [PF1699] CB9006 LD FR VINAI... | 9187 | 40 | 0 | 40 | 13.20€ | 528.00€ |
 
-**Total (Phase 2.5): 1403.10€**
+**Total (Phase 2.5): 875.10€**
 
 ---

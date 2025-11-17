@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - SPUNTINI TIENEN
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 3739
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 698ms
+**⏱️ Durée d'exécution:** 3.6s
 
 ---
 
@@ -11,8 +11,8 @@
 
 
 **Produits à risque détectés: 2**
-- Urgents (rupture ≤ 0j): 1
-- Modérés (0 < rupture ≤ 19j): 1
+- Urgents (rupture ≤ 0j): 0
+- Modérés (0 < rupture ≤ 19j): 2
 
 **Total produits (Phase 1): 2**
 **Quantité totale brute: 163 unités**
@@ -48,12 +48,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 3 unités</summary>
+<summary>🟡 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0214
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0205
+- **Stock restant estimé**: 0.13
+- **Jours avant rupture**: **6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -61,12 +61,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-12 | S36717 | 3 | 37.80€ |
+| 2025-01-28 | S34569 | 2 | 37.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 3
 
 </details>

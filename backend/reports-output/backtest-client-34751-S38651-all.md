@@ -166,10 +166,10 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [UPI01] Jus de pomme bio d'UPIGNY 250ml | 17 | Stock prédit: -16.5u (-58j restants) → prédit 17u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.3u (-32j restants) → prédit 1u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: -0.7u (-67j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.5u (-59j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -199,4 +199,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:54.377Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:17.710Z*

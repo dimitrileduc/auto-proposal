@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
-| **Rappel** | 20.0% | 5 produits réels, 1 détectés |
-| **F1-Score** | 33.3% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 7.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 233.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,13 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 10 | 3 | 7.0 | 233.3% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -162,7 +156,7 @@
 
 ---
 
-## False Negatives (4)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -186,8 +180,9 @@
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 20 | Stock suffisant: 3.7u (4j restants > seuil 19j) |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: -0.4u (-5j restants > seuil 19j) |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: -3.0u (-49j restants > seuil 19j) |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 3 | Stock suffisant: 0.3u (3j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:10.441Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:14.983Z*

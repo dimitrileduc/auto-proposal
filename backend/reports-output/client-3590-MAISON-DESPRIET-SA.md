@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - MAISON DESPRIET SA
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:58
 **🆔 Client ID:** 3590
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 975ms
+**⏱️ Durée d'exécution:** 1.8s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 10**
-- Urgents (rupture ≤ 0j): 4
+**Produits à risque détectés: 9**
+- Urgents (rupture ≤ 0j): 3
 - Modérés (0 < rupture ≤ 19j): 6
 
-**Total produits (Phase 1): 10**
-**Quantité totale brute: 311 unités**
+**Total produits (Phase 1): 9**
+**Quantité totale brute: 310 unités**
 
 ### Détails par produit
 
@@ -153,30 +153,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0084] FILOU CARBONNADES 800 GR</strong> (ID: 8988) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0435
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-11 | S39155 | 1 | 52.56€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF3266] JF SAUCE BEARNAISE 3L</strong> (ID: 14903) - 30 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -286,9 +262,9 @@
 <summary>🔴 <strong>[PF3274] JF BURGER SAUCE 925ML</strong> (ID: 15038) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0061
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0129
+- **Stock restant estimé**: -1.13
+- **Jours avant rupture**: **-87j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -296,12 +272,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36323 | 1 | 39.60€ |
+| 2024-12-19 | S33961 | 1 | 99999.99€ |
+| 2024-10-10 | S32686 | 1 | 38.40€ |
+| 2024-09-30 | S32449 | 1 | 38.40€ |
+| 2024-05-06 | S30130 | 1 | 38.40€ |
+| 2024-04-29 | S30014 | 1 | 38.40€ |
+| 2024-04-10 | S29718 | 1 | 38.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -314,7 +296,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 3951.94€**
+- **Montant initial: 3899.38€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -327,13 +309,12 @@
 | [PF0075] FILOU CHASSEUR  10 L | 8985 | 104 | 0 | 104 | 16.66€ | 1732.64€ |
 | [PF1140] FILOU SAUCE CHASSE... | 9065 | 4 | 0 | 4 | 25.92€ | 103.68€ |
 | [PF0524] FILOU SAUCE TOMATE... | 9038 | 7 | 0 | 7 | 25.92€ | 181.44€ |
-| [PF0084] FILOU CARBONNADES ... | 8988 | 1 | 0 | 1 | 52.56€ | 52.56€ |
 | [PF3266] JF SAUCE BEARNAISE 3L | 14903 | 30 | 0 | 30 | 9.17€ | 275.10€ |
 | [PF3273] JF MITRAILLETTE SA... | 15037 | 1 | 0 | 1 | 39.60€ | 39.60€ |
 | [PF3290] JF MAYO BARAKI 925ML | 17018 | 1 | 0 | 1 | 46.92€ | 46.92€ |
 | [PF0088] FILOU VOL AU VENT ... | 8991 | 2 | 0 | 2 | 37.80€ | 75.60€ |
 | [PF3274] JF BURGER SAUCE 925ML | 15038 | 1 | 0 | 1 | 39.60€ | 39.60€ |
 
-**Total (Phase 2.5): 3951.94€**
+**Total (Phase 2.5): 3899.38€**
 
 ---

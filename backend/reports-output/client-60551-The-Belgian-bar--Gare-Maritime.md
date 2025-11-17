@@ -1,6 +1,6 @@
 # 📊 Rapport Auto-Proposal - The Belgian bar @Gare Maritime
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 60551
 **📧 Email:** N/A
 **⏱️ Durée d'exécution:** 2.3s
@@ -101,9 +101,9 @@
 <summary>🔴 <strong>[REB05] REB chips bio - sel de mer 35g</strong> (ID: 18416) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0186
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0246
+- **Stock restant estimé**: -0.97
+- **Jours avant rupture**: **-39j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -111,12 +111,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-06 | S36528 | 3 | 17.60€ |
+| 2025-03-11 | S35276 | 3 | 17.60€ |
+| 2025-01-03 | S34051 | 1 | 17.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 3, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 3
 
 </details>

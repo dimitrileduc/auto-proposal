@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - CRF MARKET REMOUCHAMPS FONVAL
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 38760
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.3s
+**⏱️ Durée d'exécution:** 2.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 29**
-- Urgents (rupture ≤ 0j): 13
+**Produits à risque détectés: 28**
+- Urgents (rupture ≤ 0j): 12
 - Modérés (0 < rupture ≤ 19j): 16
 
-**Total produits (Phase 1): 29**
-**Quantité totale brute: 52 unités**
+**Total produits (Phase 1): 28**
+**Quantité totale brute: 51 unités**
 
 ### Détails par produit
 
@@ -97,30 +97,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1, 1]
 - **Nombre commandes**: 3
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF038] JF KETCHUP SQUEEZE 300ML</strong> (ID: 16737) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0417
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38669 | 1 | 26.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -777,9 +753,9 @@
 <summary>🔴 <strong>[JF029] JF VOL AU VENT BOCAL 400G</strong> (ID: 16792) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0097
+- **Stock restant estimé**: -0.19
+- **Jours avant rupture**: **-19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -787,12 +763,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36826 | 1 | 15.00€ |
+| 2024-11-13 | S33254 | 2 | 15.00€ |
+| 2024-08-01 | S31503 | 0 | 15.00€ |
+| 2024-07-19 | S31414 | 0 | 15.00€ |
+| 2024-07-05 | S31157 | 1 | 15.00€ |
+| 2024-06-04 | S30627 | 0 | 15.00€ |
+| 2024-05-16 | S30329 | 0 | 15.00€ |
+| 2024-04-16 | S29784 | 1 | 15.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 0, 0, 1]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 1
 
 </details>
@@ -805,7 +788,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1120.26€**
+- **Montant initial: 1093.86€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -817,7 +800,6 @@
 | [JF033] JF ANDALOUSE SQUEEZ... | 15058 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF034] JF SAMOURAI SQUEEZE... | 16760 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF037] JF BBQ SQUEEZE 300ML | 16729 | 1 | 0 | 1 | 26.40€ | 26.40€ |
-| [JF038] JF KETCHUP SQUEEZE ... | 16737 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF039] JF MAYO BARAKI SQUE... | 16738 | 1 | 0 | 1 | 30.00€ | 30.00€ |
 | [JF004] JF MAYONNAIS POIVRE... | 16746 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
@@ -844,6 +826,6 @@
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF029] JF VOL AU VENT BOCA... | 16792 | 1 | 0 | 1 | 15.00€ | 15.00€ |
 
-**Total (Phase 2.5): 1120.26€**
+**Total (Phase 2.5): 1093.86€**
 
 ---

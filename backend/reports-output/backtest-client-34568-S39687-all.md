@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 43.8% | 16 produits prédits, 7 corrects |
+| **Précision** | 50.0% | 14 produits prédits, 7 corrects |
 | **Rappel** | 43.8% | 16 produits réels, 7 détectés |
-| **F1-Score** | 43.8% | Score équilibré global |
+| **F1-Score** | 46.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -149,7 +149,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,15 +169,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
 | [fsv02] Noix de cajou nature bio vrac 2,8kg  | 4 | Stock prédit: -3.6u (-61j restants) → prédit 4u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.4u (-36j restants) → prédit 1u mais non commandé |
+| [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 5 | Stock prédit: -1.6u (-36j restants) → prédit 5u mais non commandé |
 
 
 ---
@@ -215,4 +213,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:29.269Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:31.404Z*

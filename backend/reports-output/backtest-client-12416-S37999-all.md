@@ -164,7 +164,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 20 | Stock prédit: 2.4u (4j restants) → prédit 20u mais non commandé |
-| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 12 | Stock prédit: 2.7u (16j restants) → prédit 12u mais non commandé |
 | [PF3284] LD MOUTARDE DOUCE 250ML WECK | 10 | Stock prédit: 1.0u (3j restants) → prédit 10u mais non commandé |
 
 
@@ -195,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:00.972Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:26.707Z*

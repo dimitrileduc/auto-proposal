@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.8% | 13 produits prédits, 4 corrects |
-| **Rappel** | 20.0% | 20 produits réels, 4 détectés |
-| **F1-Score** | 24.2% | Score équilibré global |
+| **Précision** | 33.3% | 18 produits prédits, 6 corrects |
+| **Rappel** | 30.0% | 20 produits réels, 6 détectés |
+| **F1-Score** | 31.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| **MAE** | 0.17 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,11 +142,13 @@
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0031] MF Tarti Olives verte 250g  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (9)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,12 +176,15 @@
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -1.5u (-41j restants) → prédit 2u mais non commandé |
+| [MF0024] MF KETCHUP 250g | 2 | Stock prédit: -0.6u (-34j restants) → prédit 2u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.7u (-57j restants) → prédit 1u mais non commandé |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: -0.2u (-25j restants) → prédit 1u mais non commandé |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.2u (-27j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (16)
+## False Negatives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -200,18 +205,16 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [LV145] LV Sauce Tartare 200 ml  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.8u (90j restants > seuil 19j) |
+| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.8u (95j restants > seuil 19j) |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.3u (20j restants > seuil 19j) |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.7u (77j restants > seuil 19j) |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 1.7u (126j restants > seuil 19j) |
 | [LV136] LV Tartinade Betterave 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: 0.9u (20j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.9u (21j restants > seuil 19j) |
 | [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock suffisant: 0.7u (56j restants > seuil 19j) |
 | [VID0009] Consigne casier | 4 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 24 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -219,4 +222,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:51.068Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:56.654Z*

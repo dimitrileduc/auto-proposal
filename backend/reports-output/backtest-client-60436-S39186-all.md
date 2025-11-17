@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 24.3% | 37 produits prédits, 9 corrects |
+| **Précision** | 26.5% | 34 produits prédits, 9 corrects |
 | **Rappel** | 90.0% | 10 produits réels, 9 détectés |
-| **F1-Score** | 38.3% | Score équilibré global |
+| **F1-Score** | 40.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (28)
+## False Positives (25)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,13 +173,11 @@
 |---------|-------------|--------|
 | [SOWA03] SOWA ginger beer ardent 250ml | 2 | Stock prédit: 0.3u (7j restants) → prédit 2u mais non commandé |
 | [SOWA01] SOWA citron menthe 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -0.3u (-6j restants) → prédit 2u mais non commandé |
 | [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -0.2u (-8j restants) → prédit 2u mais non commandé |
-| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.5u (-15j restants) → prédit 1u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -1.1u (-43j restants) → prédit 1u mais non commandé |
@@ -191,13 +189,12 @@
 | [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | Stock prédit: -1.0u (-41j restants) → prédit 2u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: -0.0u (-2j restants) → prédit 2u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: -0.0u (-2j restants) → prédit 2u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock prédit: -1.2u (-45j restants) → prédit 2u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: -0.4u (-44j restants) → prédit 1u mais non commandé |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -228,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:07.042Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:10.787Z*

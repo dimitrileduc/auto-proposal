@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Al-Terre-Native
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 24840
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 4.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 19**
-- Urgents (rupture ≤ 0j): 16
+**Produits à risque détectés: 18**
+- Urgents (rupture ≤ 0j): 15
 - Modérés (0 < rupture ≤ 19j): 3
 
-**Total produits (Phase 1): 19**
-**Quantité totale brute: 35 unités**
+**Total produits (Phase 1): 18**
+**Quantité totale brute: 33 unités**
 
 ### Détails par produit
 
@@ -205,30 +205,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 2, 2, 2]
 - **Nombre commandes**: 4
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV344] LV Colis apéro</strong> (ID: 17065) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-02 | S38888 | 2 | 15.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 2
 
 </details>
@@ -466,9 +442,9 @@
 <summary>🔴 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0104
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0138
+- **Stock restant estimé**: -0.33
+- **Jours avant rupture**: **-23j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -476,12 +452,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-18 | S37413 | 1 | 24.15€ |
+| 2025-02-07 | S34763 | 1 | 24.15€ |
+| 2024-10-03 | S32497 | 1 | 23.68€ |
+| 2024-07-15 | S31285 | 1 | 23.68€ |
+| 2024-05-21 | S30360 | 1 | 23.68€ |
+| 2024-03-12 | S29260 | 1 | 23.68€ |
+| 2024-02-12 | S28925 | 1 | 23.68€ |
+| 2023-12-12 | S28107 | 2 | 23.68€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 1
 
 </details>
@@ -519,7 +502,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 516.60€**
+- **Montant initial: 485.60€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -535,7 +518,6 @@
 | [LV134] LV BIO Tartinade Ol... | 13066 | 2 | 0 | 2 | 14.15€ | 28.30€ |
 | [LV330] LV BIO Tartinade To... | 14450 | 3 | 0 | 3 | 14.52€ | 43.56€ |
 | [LV342] LV Organic Broccoli... | 14999 | 2 | 0 | 2 | 13.53€ | 27.06€ |
-| [LV344] LV Colis apéro | 17065 | 2 | 0 | 2 | 15.50€ | 31.00€ |
 | [LV154] LV Vinaigrette Miel... | 13051 | 1 | 0 | 1 | 19.28€ | 19.28€ |
 | [LV161] LV Tartinade Mangue... | 13060 | 2 | 0 | 2 | 13.10€ | 26.20€ |
 | [LV133] LV Tartinade Ananas... | 13065 | 2 | 0 | 2 | 13.72€ | 27.44€ |
@@ -548,6 +530,6 @@
 | [LV157] LV Ketchup aux toma... | 13054 | 1 | 0 | 1 | 24.15€ | 24.15€ |
 | [LV357] LV Tartinade BIO As... | 19272 | 2 | 0 | 2 | 18.60€ | 37.20€ |
 
-**Total (Phase 2.5): 516.60€**
+**Total (Phase 2.5): 485.60€**
 
 ---

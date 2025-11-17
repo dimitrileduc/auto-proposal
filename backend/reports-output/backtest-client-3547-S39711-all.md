@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 11.1% | 9 produits prédits, 1 corrects |
+| **Précision** | 14.3% | 7 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 20.0% | Score équilibré global |
+| **F1-Score** | 25.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (8)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,12 +164,10 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 200 | Stock prédit: 96.0u (17j restants) → prédit 200u mais non commandé |
-| [PF1801] LD MAYONNA DU CHEF 470 ML WECK | 110 | Stock prédit: 0.0u (0j restants) → prédit 110u mais non commandé |
 | [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | Stock prédit: 4.9u (2j restants) → prédit 50u mais non commandé |
 | [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 200 | Stock prédit: 100.9u (19j restants) → prédit 200u mais non commandé |
 | [PF1194] GF VIN FINES HERBES WECK 330ML | 145 | Stock prédit: 11.0u (3j restants) → prédit 145u mais non commandé |
 | [PF0193] GF VIN ANCIENNE JERRYCAN 5L | 25 | Stock prédit: 0.2u (0j restants) → prédit 25u mais non commandé |
-| [PF1892] LD TARTINADE BIO TRUFFES 135G | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
 | [PF1193] GF VIN TOMATE WECK 330ML | 145 | Stock prédit: -89.0u (-44j restants) → prédit 145u mais non commandé |
 
 
@@ -194,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:37.513Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:31.616Z*

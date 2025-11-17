@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 10 produits prédits, 4 corrects |
-| **Rappel** | 100.0% | 4 produits réels, 4 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **Précision** | 33.3% | 9 produits prédits, 3 corrects |
+| **Rappel** | 75.0% | 4 produits réels, 3 détectés |
+| **F1-Score** | 46.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 8.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 42.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| **MAE** | 11.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 56.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,7 +140,6 @@
 |---------|--------|------|-----------|----------|------|
 | [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact |
 | [PF0075] FILOU CHASSEUR  10 L | 104 | 88 | 16.0 | 18.2% | ✅ partial |
-| [PF0084] FILOU CARBONNADES 800 GR | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [PF3266] JF SAUCE BEARNAISE 3L | 30 | 12 | 18.0 | 150.0% | ✅ partial |
 
 
@@ -171,12 +170,12 @@
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
 | [PF3290] JF MAYO BARAKI 925ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
 | [PF0088] FILOU VOL AU VENT 800 GR | 2 | Stock prédit: -1.6u (-65j restants) → prédit 2u mais non commandé |
-| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -1.1u (-87j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (0)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -191,8 +190,14 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-*Aucun faux négatif (rappel = 100%)*
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [PF0084] FILOU CARBONNADES 800 GR | 1 | Stock suffisant: 0.7u (47j restants > seuil 19j) |
+
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:14.519Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:00.848Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 28.6% | 28 produits prédits, 8 corrects |
+| **Précision** | 29.6% | 27 produits prédits, 8 corrects |
 | **Rappel** | 80.0% | 10 produits réels, 8 détectés |
-| **F1-Score** | 42.1% | Score équilibré global |
+| **F1-Score** | 43.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (20)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -182,11 +182,10 @@
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock prédit: 0.1u (5j restants) → prédit 2u mais non commandé |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Stock prédit: -0.7u (-14j restants) → prédit 2u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (18j restants) → prédit 1u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | Stock prédit: -1.2u (-20j restants) → prédit 2u mais non commandé |
 | [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.1u (-3j restants) → prédit 2u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 2 | Stock prédit: -0.6u (-19j restants) → prédit 2u mais non commandé |
@@ -220,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:30.521Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:23.208Z*

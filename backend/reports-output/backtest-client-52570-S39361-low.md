@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 9 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,10 +159,6 @@
 |---------|-------------|--------|
 | [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV135] LV Tartinade Basilico 190g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
@@ -201,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:06.134Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:08.070Z*

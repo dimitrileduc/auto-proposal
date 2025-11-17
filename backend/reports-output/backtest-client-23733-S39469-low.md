@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 6 produits prédits, 2 corrects |
-| **Rappel** | 18.2% | 11 produits réels, 2 détectés |
-| **F1-Score** | 23.5% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,18 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 4 | 2 | 2.0 | 100.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (4)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,20 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [LV146] LV Sauce Aïoli 200 ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF044] JF OIGNONS ROUGES 350 ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (9)
+## False Negatives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -194,7 +178,9 @@
 |---------|---------------|--------|
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 4 | Stock suffisant: -0.3u (-5j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | Stock suffisant: -2.8u (-51j restants > seuil 19j) |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock suffisant: -1.8u (-56j restants > seuil 19j) |
 | [JF021] JF PICKLES 350 ML | 6 | Stock suffisant: -2.2u (-25j restants > seuil 19j) |
+| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | Stock suffisant: 0.6u (21j restants > seuil 19j) |
 | [LV155] LV Vinaigrette Caesar 250 ml | 3 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
 | [LV140] LV Moutarde à l'ancienne  200ml | 3 | Stock suffisant: 1.1u (11j restants > seuil 19j) |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 4 | Stock suffisant: -2.0u (-10j restants > seuil 19j) |
@@ -205,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:37.844Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:42.539Z*

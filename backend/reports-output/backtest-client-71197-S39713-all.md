@@ -166,8 +166,8 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
-| [CB002] CB Cherry Apple juice 25cl | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [CB002] CB Cherry Apple juice 25cl | 2 | Stock prédit: -0.7u (-48j restants) → prédit 2u mais non commandé |
+| [CB001] CB Apple juice 25cl | 2 | Stock prédit: -1.1u (-92j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -199,4 +199,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:06.180Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:38.409Z*

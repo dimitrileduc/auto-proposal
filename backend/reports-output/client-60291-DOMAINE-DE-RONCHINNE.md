@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DOMAINE DE RONCHINNE
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 60291
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.2s
+**⏱️ Durée d'exécution:** 3.6s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 27**
-- Urgents (rupture ≤ 0j): 13
+**Produits à risque détectés: 26**
+- Urgents (rupture ≤ 0j): 12
 - Modérés (0 < rupture ≤ 19j): 14
 
-**Total produits (Phase 1): 27**
-**Quantité totale brute: 52 unités**
+**Total produits (Phase 1): 26**
+**Quantité totale brute: 49 unités**
 
 ### Détails par produit
 
@@ -380,30 +380,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> (ID: 18330) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0833
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-17 | S39205 | 1 | 77.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[fsv08] Banana chips bio vrac 1,6kg</strong> (ID: 18263) - 4 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -747,12 +723,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18358) - 3 unités</summary>
+<summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18358) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0254
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0338
+- **Stock restant estimé**: -0.99
+- **Jours avant rupture**: **-29j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -760,13 +736,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-03 | S37179 | 3 | 25.08€ |
+| 2025-03-25 | S35586 | 2 | 25.08€ |
+| 2025-03-18 | S35421 | 1 | 25.08€ |
+| 2025-03-11 | S35305 | 1 | 25.08€ |
+| 2025-01-22 | S34458 | 1 | 25.08€ |
+| 2025-01-06 | S34115 | 1 | 25.08€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 3
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [3, 2, 1, 1, 1]
+- **Nombre commandes**: 6
+- **Valeur médiane**: 1
 
 </details>
 
@@ -803,7 +784,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1593.26€**
+- **Montant initial: 1465.70€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -823,7 +804,6 @@
 | [TEN01] TENSAÏ TEA  thé ver... | 18380 | 2 | 0 | 2 | 31.60€ | 63.20€ |
 | [RIT01] RITCHIE Orange - ve... | 18371 | 2 | 0 | 2 | 30.96€ | 61.92€ |
 | [OCC03] OCCHIOLINO SUCO - c... | 18333 | 1 | 0 | 1 | 59.70€ | 59.70€ |
-| [OCC01] OCCHIOLINO huile d'... | 18330 | 1 | 0 | 1 | 77.40€ | 77.40€ |
 | [fsv08] Banana chips bio vr... | 18263 | 4 | 0 | 4 | 10.65€ | 42.60€ |
 | [RIT03] RITCHIE Citron-Ging... | 18365 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [RIT11] RITCHIE Orange Sang... | 19370 | 2 | 0 | 2 | 30.96€ | 61.92€ |
@@ -837,9 +817,9 @@
 | [NOD01] NODA limonade bio f... | 18310 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [NOD02] NODA limonade bio f... | 18307 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 2 | 0 | 2 | 31.60€ | 63.20€ |
-| [RISH02] RISH kombucha BIO ... | 18358 | 3 | 0 | 3 | 25.08€ | 75.24€ |
+| [RISH02] RISH kombucha BIO ... | 18358 | 1 | 0 | 1 | 25.08€ | 25.08€ |
 | [RISH05] RISH kombucha BIO ... | 18360 | 1 | 0 | 1 | 57.00€ | 57.00€ |
 
-**Total (Phase 2.5): 1593.26€**
+**Total (Phase 2.5): 1465.70€**
 
 ---

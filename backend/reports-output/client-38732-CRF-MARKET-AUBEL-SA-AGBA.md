@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - CRF MARKET AUBEL SA AGBA
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 38732
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.2s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 40**
-- Urgents (rupture ≤ 0j): 23
-- Modérés (0 < rupture ≤ 19j): 17
+**Produits à risque détectés: 38**
+- Urgents (rupture ≤ 0j): 19
+- Modérés (0 < rupture ≤ 19j): 19
 
-**Total produits (Phase 1): 40**
-**Quantité totale brute: 76 unités**
+**Total produits (Phase 1): 38**
+**Quantité totale brute: 75 unités**
 
 ### Détails par produit
 
@@ -880,30 +880,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 16738) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0141
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-01 | S37794 | 1 | 30.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LD015] LD Onion Spread 180g</strong> (ID: 19435) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -955,12 +931,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> (ID: 16736) - 1 unités</summary>
+<summary>🟡 <strong>[JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> (ID: 16753) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0079
+- **Stock restant estimé**: 0.07
+- **Jours avant rupture**: **8j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -968,36 +944,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36819 | 1 | 26.40€ |
+| 2024-12-10 | S33783 | 1 | 26.40€ |
+| 2024-05-22 | S30376 | 1 | 26.40€ |
+| 2024-04-23 | S29806 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> (ID: 16753) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-15 | S36819 | 1 | 26.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1006,9 +961,9 @@
 <summary>🔴 <strong>[JF026] JF VINAIGRET TRUFFES WECK 200M</strong> (ID: 16788) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0085
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0166
+- **Stock restant estimé**: -0.96
+- **Jours avant rupture**: **-57j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1016,12 +971,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36819 | 1 | 31.50€ |
+| 2024-12-10 | S33783 | 2 | 31.50€ |
+| 2024-12-02 | S33299 | 1 | 31.50€ |
+| 2024-09-09 | S32076 | 1 | 31.50€ |
+| 2024-08-09 | S31609 | 1 | 31.50€ |
+| 2024-07-16 | S31311 | 1 | 31.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 1, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -1051,12 +1011,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
+<summary>🟡 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0067
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0059
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1064,13 +1024,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S35897 | 1 | 19.50€ |
+| 2024-04-23 | S29806 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -1082,7 +1043,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1286.80€**
+- **Montant initial: 1249.90€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1123,15 +1084,13 @@
 | [JF020] JF SAUCE AIOLI 250M... | 16761 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF019] JF SAUCE AIOLI PEST... | 16762 | 1 | 0 | 1 | 21.00€ | 21.00€ |
 | [JF038] JF KETCHUP SQUEEZE ... | 16737 | 1 | 0 | 1 | 26.40€ | 26.40€ |
-| [JF039] JF MAYO BARAKI SQUE... | 16738 | 1 | 0 | 1 | 30.00€ | 30.00€ |
 | [LD015] LD Onion Spread 180g | 19435 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [LD007] LD Organic Pineappl... | 19392 | 3 | 0 | 3 | 14.50€ | 43.50€ |
-| [JF040] JF CURRY KETCHUP SQ... | 16736 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF036] JF MITRAILLETTE SQU... | 16753 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF026] JF VINAIGRET TRUFFE... | 16788 | 1 | 0 | 1 | 31.50€ | 31.50€ |
 | [DIS0003] Display TVF bois | 17251 | 1 | 0 | 1 | 0.00€ | 0.00€ |
-| [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
+| [JF002] JF MAYONNAI BASILIC... | 16744 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 
-**Total (Phase 2.5): 1286.80€**
+**Total (Phase 2.5): 1249.90€**
 
 ---

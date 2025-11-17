@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - CENSE DU MAYEUR
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 38718
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.5s
+**⏱️ Durée d'exécution:** 3.5s
 
 ---
 
@@ -928,9 +928,9 @@
 <summary>🔴 <strong>[JF037] JF BBQ SQUEEZE 300ML</strong> (ID: 16729) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0093
+- **Stock restant estimé**: -0.44
+- **Jours avant rupture**: **-46j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -938,12 +938,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-05 | S36473 | 1 | 26.40€ |
+| 2025-01-08 | S34158 | 1 | 26.40€ |
+| 2024-08-21 | S31756 | 1 | 26.40€ |
+| 2024-05-31 | S30556 | 1 | 26.40€ |
+| 2024-04-15 | S29758 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -952,9 +956,9 @@
 <summary>🔴 <strong>[JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> (ID: 16738) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0122
+- **Stock restant estimé**: -0.89
+- **Jours avant rupture**: **-73j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -962,12 +966,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-05 | S36473 | 1 | 30.00€ |
+| 2025-01-08 | S34158 | 1 | 30.00€ |
+| 2024-08-21 | S31756 | 2 | 30.00€ |
+| 2024-07-15 | S31286 | 1 | 30.00€ |
+| 2024-05-31 | S30556 | 1 | 30.00€ |
+| 2024-03-12 | S29272 | 1 | 30.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -976,9 +985,9 @@
 <summary>🔴 <strong>[JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> (ID: 16753) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0093
+- **Stock restant estimé**: -0.56
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -986,12 +995,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36322 | 1 | 26.40€ |
+| 2025-01-08 | S34158 | 1 | 26.40€ |
+| 2024-07-15 | S31286 | 1 | 26.40€ |
+| 2024-07-01 | S31033 | 1 | 26.40€ |
+| 2024-04-15 | S29758 | 1 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1000,9 +1013,9 @@
 <summary>🔴 <strong>[JF038] JF KETCHUP SQUEEZE 300ML</strong> (ID: 16737) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0060
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0173
+- **Stock restant estimé**: -1.90
+- **Jours avant rupture**: **-110j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1010,12 +1023,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36322 | 1 | 26.40€ |
+| 2025-03-24 | S35562 | 1 | 26.40€ |
+| 2025-01-08 | S34158 | 1 | 26.40€ |
+| 2024-08-21 | S31756 | 3 | 26.40€ |
+| 2024-07-01 | S31033 | 2 | 26.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 3, 2]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1048,9 +1065,9 @@
 <summary>🔴 <strong>[RISH01] RISH kombucha BIO - original 330ml</strong> (ID: 18359) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0119
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0184
+- **Stock restant estimé**: -1.09
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1058,12 +1075,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36322 | 2 | 25.08€ |
+| 2025-04-04 | S35811 | 1 | 25.08€ |
+| 2025-01-08 | S34158 | 2 | 25.08€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -1072,9 +1091,9 @@
 <summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18358) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0119
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0184
+- **Stock restant estimé**: -1.09
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1082,12 +1101,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36322 | 2 | 25.08€ |
+| 2025-04-04 | S35811 | 1 | 25.08€ |
+| 2025-01-08 | S34158 | 2 | 25.08€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -1096,9 +1117,9 @@
 <summary>🔴 <strong>[RISH04] RISH kombucha BIO - smash basil 330ml</strong> (ID: 18361) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0119
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0184
+- **Stock restant estimé**: -1.09
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1106,12 +1127,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36322 | 2 | 25.08€ |
+| 2025-04-04 | S35811 | 1 | 25.08€ |
+| 2025-01-08 | S34158 | 2 | 25.08€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>

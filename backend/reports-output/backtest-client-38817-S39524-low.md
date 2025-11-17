@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 25.0% | 4 produits prédits, 1 corrects |
-| **Rappel** | 4.2% | 24 produits réels, 1 détectés |
-| **F1-Score** | 7.1% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 24 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (3)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,19 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (23)
+## False Negatives (24)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -201,6 +187,7 @@
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: -1.6u (-61j restants > seuil 19j) |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 8 | Stock suffisant: -0.5u (-3j restants > seuil 19j) |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 3 | Stock suffisant: -1.4u (-17j restants > seuil 19j) |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: -0.8u (-61j restants > seuil 19j) |
 | [LD009] LD Organic Asparagus Spread 180 g | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
 | [LD011] LD Organic Kids Spread 180 g | 3 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LD014] LD Organic Avocado Spread 180 g | 3 | Stock suffisant: 1.0u (17j restants > seuil 19j) |
@@ -217,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:18.290Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:31.523Z*

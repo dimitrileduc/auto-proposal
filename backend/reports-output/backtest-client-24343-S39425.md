@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
+| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
 | **Rappel** | 50.0% | 2 produits réels, 1 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,6 +165,8 @@
 |---------|-------------|--------|
 | [LV188] LV Tartinade Aubergine  380g | 32 | Stock prédit: -9.9u (-17j restants) → prédit 32u mais non commandé |
 | [LV187] LV Tartinade Mangue Curry 380g | 40 | Stock prédit: -18.7u (-40j restants) → prédit 40u mais non commandé |
+| [LV138] LV Tartinade Carotte gingembre  380g | 60 | Stock prédit: -118.9u (-135j restants) → prédit 60u mais non commandé |
+| [LV139] LV Tartinade Paprika Chili 380g | 32 | Stock prédit: -156.0u (-156j restants) → prédit 32u mais non commandé |
 
 
 ---
@@ -194,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:21.835Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:28.458Z*

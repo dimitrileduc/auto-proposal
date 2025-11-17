@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 44.1% | 34 produits prédits, 15 corrects |
+| **Précision** | 51.7% | 29 produits prédits, 15 corrects |
 | **Rappel** | 83.3% | 18 produits réels, 15 détectés |
-| **F1-Score** | 57.7% | Score équilibré global |
+| **F1-Score** | 63.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -157,7 +157,7 @@
 
 ---
 
-## False Positives (19)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,25 +177,20 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: 0.3u (19j restants) → prédit 1u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.3u (19j restants) → prédit 1u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.7u (-31j restants) → prédit 1u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.2u (13j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: -0.4u (-20j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -0.3u (-16j restants) → prédit 1u mais non commandé |
 | [LD015] LD Onion Spread 180g | 2 | Stock prédit: -0.3u (-12j restants) → prédit 2u mais non commandé |
 | [LD009] LD Organic Asparagus Spread 180 g | 2 | Stock prédit: -0.3u (-12j restants) → prédit 2u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: -0.2u (-18j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF016] TVF TARTINADE BIO POIS CHICHES 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: -0.2u (-22j restants) → prédit 1u mais non commandé |
+| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: -0.6u (-66j restants) → prédit 1u mais non commandé |
+| [TVF016] TVF TARTINADE BIO POIS CHICHES 380G | 1 | Stock prédit: -0.6u (-66j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -227,4 +222,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:33.601Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:49.662Z*

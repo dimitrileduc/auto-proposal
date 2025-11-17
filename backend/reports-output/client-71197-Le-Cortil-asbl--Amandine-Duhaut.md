@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Le Cortil asbl, Amandine Duhaut
 
-**📅 Date:** 15/11/2025 10:50
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 71197
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.6s
+**⏱️ Durée d'exécution:** 1.3s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 1
 
 **Total produits (Phase 1): 6**
-**Quantité totale brute: 17 unités**
+**Quantité totale brute: 18 unités**
 
 ### Détails par produit
 
@@ -123,9 +123,9 @@
 <summary>🔴 <strong>[CB002] CB Cherry Apple juice 25cl</strong> (ID: 14938) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0111
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0152
+- **Stock restant estimé**: -0.74
+- **Jours avant rupture**: **-48j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -133,23 +133,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-15 | S36159 | 2 | 40.80€ |
+| 2025-01-22 | S34444 | 2 | 40.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[CB001] CB Apple juice 25cl</strong> (ID: 14937) - 1 unités</summary>
+<summary>🔴 <strong>[CB001] CB Apple juice 25cl</strong> (ID: 14937) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0114
+- **Stock restant estimé**: -1.05
+- **Jours avant rupture**: **-92j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -157,13 +158,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-15 | S36159 | 1 | 28.80€ |
+| 2025-01-22 | S34444 | 2 | 28.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -175,7 +177,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 356.72€**
+- **Montant initial: 385.52€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -189,8 +191,8 @@
 | [MANA02] MANA natural energ... | 18298 | 2 | 0 | 2 | 32.80€ | 65.60€ |
 | [DAF001] DAF Elderflower wi... | 17727 | 6 | 0 | 6 | 15.12€ | 90.72€ |
 | [CB002] CB Cherry Apple jui... | 14938 | 2 | 0 | 2 | 40.80€ | 81.60€ |
-| [CB001] CB Apple juice 25cl | 14937 | 1 | 0 | 1 | 28.80€ | 28.80€ |
+| [CB001] CB Apple juice 25cl | 14937 | 2 | 0 | 2 | 28.80€ | 57.60€ |
 
-**Total (Phase 2.5): 356.72€**
+**Total (Phase 2.5): 385.52€**
 
 ---

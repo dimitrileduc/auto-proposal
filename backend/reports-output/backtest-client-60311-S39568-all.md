@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 61.5% | 13 produits prédits, 8 corrects |
-| **Rappel** | 88.9% | 9 produits réels, 8 détectés |
-| **F1-Score** | 72.7% | Score équilibré global |
+| **Précision** | 54.5% | 11 produits prédits, 6 corrects |
+| **Rappel** | 66.7% | 9 produits réels, 6 détectés |
+| **F1-Score** | 60.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.75 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 52.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 30.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,11 +141,9 @@
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [UPI01] Jus de pomme bio d'UPIGNY 250ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -179,7 +177,7 @@
 
 ---
 
-## False Negatives (1)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -200,8 +198,10 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock suffisant: 1.1u (34j restants > seuil 19j) |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.7u (46j restants > seuil 19j) |
+| [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 3 | Stock suffisant: 1.5u (89j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:39.593Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:14.313Z*

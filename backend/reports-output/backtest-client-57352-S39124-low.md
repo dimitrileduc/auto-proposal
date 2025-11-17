@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 14.3% | 7 produits prédits, 1 corrects |
-| **Rappel** | 5.3% | 19 produits réels, 1 détectés |
-| **F1-Score** | 7.7% | Score équilibré global |
+| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 19 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (6)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,14 +160,13 @@
 | [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (18)
+## False Negatives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -199,6 +192,7 @@
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: -0.4u (-31j restants > seuil 19j) |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock suffisant: -2.0u (-43j restants > seuil 19j) |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -0.6u (-22j restants > seuil 19j) |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 0.3u (37j restants > seuil 19j) |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.4u (6j restants > seuil 19j) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 0.3u (13j restants > seuil 19j) |
@@ -215,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:51.466Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:56.200Z*

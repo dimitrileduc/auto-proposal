@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 27 produits prédits, 9 corrects |
+| **Précision** | 34.6% | 26 produits prédits, 9 corrects |
 | **Rappel** | 52.9% | 17 produits réels, 9 détectés |
-| **F1-Score** | 40.9% | Score équilibré global |
+| **F1-Score** | 41.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.22 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 22.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 27.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -146,12 +146,12 @@
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (18)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,10 +177,9 @@
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: -0.6u (-18j restants) → prédit 2u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -0.5u (-9j restants) → prédit 2u mais non commandé |
-| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
 | [MF0060] MF Passata | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
 | [CB005] CB Apple juice 1l | 2 | Stock prédit: -0.1u (-5j restants) → prédit 2u mais non commandé |
 | [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
@@ -188,7 +187,7 @@
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
 | [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0059] MF Confi Fraise- Ardbei | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: -0.5u (-60j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -225,4 +224,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:54.820Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:18.539Z*

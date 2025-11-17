@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 63.6% | 22 produits prédits, 14 corrects |
+| **Précision** | 53.8% | 26 produits prédits, 14 corrects |
 | **Rappel** | 63.6% | 22 produits réels, 14 détectés |
-| **F1-Score** | 63.6% | Score équilibré global |
+| **F1-Score** | 58.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Positives (8)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -179,11 +179,15 @@
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.5u (-20j restants) → prédit 1u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.9u (-27j restants) → prédit 1u mais non commandé |
 | [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | Stock prédit: 0.2u (15j restants) → prédit 1u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | Stock prédit: 0.2u (15j restants) → prédit 1u mais non commandé |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: 0.1u (6j restants) → prédit 2u mais non commandé |
 | [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.1u (6j restants) → prédit 2u mais non commandé |
 | [JF037] JF BBQ SQUEEZE 300ML | 2 | Stock prédit: 0.5u (16j restants) → prédit 2u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.2u (-23j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -208,16 +212,16 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.4u (51j restants > seuil 19j) |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock suffisant: 0.5u (95j restants > seuil 19j) |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock suffisant: 0.8u (398j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:25.999Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:57.127Z*

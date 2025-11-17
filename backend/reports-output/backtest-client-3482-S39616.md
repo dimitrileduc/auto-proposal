@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 2 produits prédits, 2 corrects |
+| **Précision** | 33.3% | 6 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 100.0% | Score équilibré global |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,7 +159,16 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 3 | Stock prédit: -5.0u (-97j restants) → prédit 3u mais non commandé |
+| [PF1598] JF ANDALOUSE SQUEEZE 300ML | 3 | Stock prédit: -3.8u (-66j restants) → prédit 3u mais non commandé |
+| [PF1601] JF SAMOURAI SQUEEZE 300ML | 4 | Stock prédit: -7.4u (-120j restants) → prédit 4u mais non commandé |
+| [PF1639] JF BURGER SQUEEZE 300ML | 4 | Stock prédit: -4.0u (-68j restants) → prédit 4u mais non commandé |
+
 
 ---
 
@@ -182,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:33.435Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:39.130Z*

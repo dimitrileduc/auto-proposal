@@ -1,0 +1,22 @@
+{
+  "clientId": 60286,
+  "clientName": "DEPOT VRAC ATH",
+  "orderName": "S38709",
+  "orderDate": "2025-08-26 07:26:18",
+  "cutoffDate": "2025-08-25 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 12,
+    "fn": 29,
+    "precision": 0.07692307692307693,
+    "recall": 0.03333333333333333,
+    "f1Score": 0.046511627906976744,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  }
+}

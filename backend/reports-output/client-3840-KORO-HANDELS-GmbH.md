@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - KORO HANDELS GmbH
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 3840
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.9s
+**⏱️ Durée d'exécution:** 3.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 6**
-- Urgents (rupture ≤ 0j): 4
+**Produits à risque détectés: 5**
+- Urgents (rupture ≤ 0j): 3
 - Modérés (0 < rupture ≤ 19j): 2
 
-**Total produits (Phase 1): 6**
-**Quantité totale brute: 9423 unités**
+**Total produits (Phase 1): 5**
+**Quantité totale brute: 9380 unités**
 
 ### Détails par produit
 
@@ -108,36 +108,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3258] NL_AUFSTR_038 KORO TARTINADE BIO TOMATE 380G</strong> (ID: 14868) - 43 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.4624
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-11 | S38002 | 43 | 24.36€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [43]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 43
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G</strong> (ID: 14813) - 166 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.2969
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.6331
+- **Stock restant estimé**: -43.04
+- **Jours avant rupture**: **-26j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -145,12 +121,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-06 | S37305 | 166 | 8.04€ |
+| 2025-01-14 | S34316 | 0 | 8.04€ |
+| 2024-12-18 | S33950 | 166 | 8.04€ |
+| 2024-11-12 | S33219 | 164 | 8.04€ |
+| 2024-07-10 | S31212 | 166 | 8.04€ |
+| 2024-05-23 | S30411 | 166 | 8.04€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [166]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [166, 0, 166, 164, 166]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 166
 
 </details>
@@ -189,7 +170,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 114427.32€**
+- **Montant initial: 113379.84€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -201,10 +182,9 @@
 | [PF3320] DE_AUFSTR_043 KORO... | 17556 | 70 | 0 | 70 | 25.80€ | 1806.00€ |
 | [PF3312] DE_AUFSTR_036_T6 K... | 17449 | 1728 | 0 | 1728 | 11.94€ | 20632.32€ |
 | [PF3314] DE_AUFSTR_038_T6 K... | 17451 | 4416 | 0 | 4416 | 12.18€ | 53786.88€ |
-| [PF3258] NL_AUFSTR_038 KORO... | 14868 | 43 | 0 | 43 | 24.36€ | 1047.48€ |
 | [PF3252] DK_AUFSTR_040 KORO... | 14813 | 166 | 0 | 166 | 8.04€ | 1334.64€ |
 | [PF3342] DE_AUFSTR_042_T6 K... | 17800 | 3000 | 0 | 3000 | 11.94€ | 35820.00€ |
 
-**Total (Phase 2.5): 114427.32€**
+**Total (Phase 2.5): 113379.84€**
 
 ---

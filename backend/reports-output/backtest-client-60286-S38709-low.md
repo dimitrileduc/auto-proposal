@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 7.7% | 13 produits prédits, 1 corrects |
-| **Rappel** | 3.3% | 30 produits réels, 1 détectés |
-| **F1-Score** | 4.7% | Score équilibré global |
+| **Précision** | 0.0% | 9 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 30 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [RIT07] RITCHIE Orange - canette 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (12)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,9 +157,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -179,7 +170,7 @@
 
 ---
 
-## False Negatives (29)
+## False Negatives (30)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -225,6 +216,7 @@
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | Stock suffisant: -8.6u (-42j restants > seuil 19j) |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | Stock suffisant: 1.3u (4j restants > seuil 19j) |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 6 | Stock suffisant: -1.7u (-10j restants > seuil 19j) |
+| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock suffisant: 0.3u (16j restants > seuil 19j) |
 | [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock suffisant: -0.5u (-15j restants > seuil 19j) |
 | [RIT09] RITCHIE Cola - canette 330ml | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | Stock suffisant: -0.5u (-15j restants > seuil 19j) |
@@ -232,4 +224,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:58.952Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:56.040Z*

@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 26 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 19 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 11 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (26)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,9 +157,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -168,7 +165,6 @@
 | [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV036] LV Olives Vertes dénoyautées BE 350g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
@@ -177,11 +173,8 @@
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -222,4 +215,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:50.848Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:55.781Z*

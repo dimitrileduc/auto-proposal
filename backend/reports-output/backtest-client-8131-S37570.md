@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 83.3% | 6 produits prédits, 5 corrects |
+| **Précision** | 71.4% | 7 produits prédits, 5 corrects |
 | **Rappel** | 100.0% | 5 produits réels, 5 détectés |
-| **F1-Score** | 90.9% | Score équilibré global |
+| **F1-Score** | 83.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -147,7 +147,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -168,6 +168,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF0097] FILOU MOUTARDE 5 KG | 20 | Stock prédit: -15.1u (-17j restants) → prédit 20u mais non commandé |
+| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 15 | Stock prédit: -2.5u (-22j restants) → prédit 15u mais non commandé |
 
 
 ---
@@ -191,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:26.912Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:17.000Z*

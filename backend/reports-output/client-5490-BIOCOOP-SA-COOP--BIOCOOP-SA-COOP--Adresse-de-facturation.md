@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - BIOCOOP SA COOP, BIOCOOP SA COOP, Adresse de facturation
 
-**📅 Date:** 15/11/2025 10:44
+**📅 Date:** 17/11/2025 12:58
 **🆔 Client ID:** 5490
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.4s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 

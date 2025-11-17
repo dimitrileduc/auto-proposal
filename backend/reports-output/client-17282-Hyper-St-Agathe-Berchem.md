@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Hyper St Agathe Berchem
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 17282
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.3s
+**⏱️ Durée d'exécution:** 2.9s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 2
 
 **Total produits (Phase 1): 18**
-**Quantité totale brute: 30 unités**
+**Quantité totale brute: 34 unités**
 
 ### Détails par produit
 
@@ -337,12 +337,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
+<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0123
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0144
+- **Stock restant estimé**: -0.16
+- **Jours avant rupture**: **-11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -350,13 +350,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-10 | S37292 | 1 | 19.50€ |
+| 2025-01-06 | S34016 | 1 | 19.50€ |
+| 2024-12-13 | S33884 | 3 | 19.50€ |
+| 2024-04-30 | S29961 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 3, 2]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
 
 </details>
 
@@ -386,12 +389,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF022] JF MOUTARDE MIEL 250ML WECK</strong> (ID: 16755) - 1 unités</summary>
+<summary>🔴 <strong>[JF022] JF MOUTARDE MIEL 250ML WECK</strong> (ID: 16755) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0123
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0269
+- **Stock restant estimé**: -1.18
+- **Jours avant rupture**: **-43j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -399,23 +402,25 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-10 | S37292 | 1 | 19.50€ |
+| 2025-02-06 | S34717 | 3 | 19.50€ |
+| 2024-12-13 | S33884 | 3 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 3, 3]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 3
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF025] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 16790) - 1 unités</summary>
+<summary>🔴 <strong>[JF025] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 16790) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0123
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0146
+- **Stock restant estimé**: -0.19
+- **Jours avant rupture**: **-12j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -423,13 +428,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-10 | S37292 | 1 | 27.00€ |
+| 2025-02-06 | S34717 | 2 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -492,7 +498,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 683.04€**
+- **Montant initial: 768.54€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -513,13 +519,13 @@
 | [JF014] JF SAUCE BEARNAISE ... | 16769 | 2 | 0 | 2 | 25.80€ | 51.60€ |
 | [JF021] JF PICKLES 350 ML | 16759 | 1 | 0 | 1 | 20.94€ | 20.94€ |
 | [JF018] JF SAUCE SAMOURAI 2... | 16778 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
+| [JF002] JF MAYONNAI BASILIC... | 16744 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF003] JF MAYONNAIS WASABI... | 16747 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF022] JF MOUTARDE MIEL 25... | 16755 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF025] JF VINAIGRETTE FH W... | 16790 | 1 | 0 | 1 | 27.00€ | 27.00€ |
+| [JF022] JF MOUTARDE MIEL 25... | 16755 | 3 | 0 | 3 | 19.50€ | 58.50€ |
+| [JF025] JF VINAIGRETTE FH W... | 16790 | 2 | 0 | 2 | 27.00€ | 54.00€ |
 | [JF026] JF VINAIGRET TRUFFE... | 16788 | 1 | 0 | 1 | 31.50€ | 31.50€ |
 | [JF020] JF SAUCE AIOLI 250M... | 16761 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 
-**Total (Phase 2.5): 683.04€**
+**Total (Phase 2.5): 768.54€**
 
 ---

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 42.1% | 19 produits prédits, 8 corrects |
+| **Précision** | 44.4% | 18 produits prédits, 8 corrects |
 | **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 53.3% | Score équilibré global |
+| **F1-Score** | 55.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (11)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,14 +173,13 @@
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
-| [LV344] LV Colis apéro | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.4u (-18j restants) → prédit 1u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 2 | Stock prédit: -0.3u (-7j restants) → prédit 2u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: -0.2u (-3j restants) → prédit 2u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: -0.3u (-23j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -212,4 +211,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:46.243Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:49.233Z*

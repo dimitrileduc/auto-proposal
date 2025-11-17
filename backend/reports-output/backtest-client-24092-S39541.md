@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
+| **Précision** | 10.0% | 10 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 33.3% | Score équilibré global |
+| **F1-Score** | 18.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,9 +163,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [PF1798] LD MAYONNAI POIVRE 250ML WECK | 0 | Stock prédit: -0.0u (-25j restants) → prédit 0u mais non commandé |
 | [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 2 | Stock prédit: -0.4u (-6j restants) → prédit 2u mais non commandé |
 | [PF0094] FILOU MOUTARDE 700 GR | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
+| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 6 | Stock prédit: -1.2u (-50j restants) → prédit 6u mais non commandé |
 | [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
+| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.7u (-21j restants) → prédit 1u mais non commandé |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 2 | Stock prédit: 0.0u (3j restants) → prédit 2u mais non commandé |
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
 | [PF1695] LD FR TARTINADE BIO TOMATE 200 | 1 | Stock prédit: -0.9u (-77j restants) → prédit 1u mais non commandé |
 
 
@@ -190,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:21.310Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:08.798Z*

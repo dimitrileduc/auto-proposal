@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 21.7% | 23 produits prédits, 5 corrects |
+| **Précision** | 50.0% | 10 produits prédits, 5 corrects |
 | **Rappel** | 83.3% | 6 produits réels, 5 détectés |
-| **F1-Score** | 34.5% | Score équilibré global |
+| **F1-Score** | 62.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 160.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 26.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 60.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -141,13 +141,13 @@
 | [PF0403] BORNIBUS MAYO KOSHER 220G | 750 | 600 | 150.0 | 25.0% | ✅ partial |
 | [PF0625] BORNIBUS MAYO WASAB KOSHER 220 | 600 | 600 | 0.0 | 0.0% | 🎯 exact |
 | [PF1541] BORNIBUS AIOLI KOSHER 220G | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
-| [PF1542] BORNIBUS BEARNAISE KOSHER 2 10G | 250 | 600 | 350.0 | 58.3% | ✅ partial |
-| [PF1543] BORNIBUS TARTARE KOSHER 220G | 300 | 600 | 300.0 | 50.0% | ✅ partial |
+| [PF1542] BORNIBUS BEARNAISE KOSHER 2 10G | 600 | 600 | 0.0 | 0.0% | 🎯 exact |
+| [PF1543] BORNIBUS TARTARE KOSHER 220G | 450 | 600 | 150.0 | 25.0% | ✅ partial |
 
 
 ---
 
-## False Positives (18)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,22 +169,9 @@
 |---------|-------------|--------|
 | [PF3398] BS1833 - BORNIBUS BEARNAISE KOSHER BOCAL 825G  | 96 | Stock prédit: 0.0u (0j restants) → prédit 96u mais non commandé |
 | [PF3397] BS1833 COSCO - BORNIBUS BEARNAISE KOSHER BOCAL 825G | 600 | Stock prédit: 0.0u (0j restants) → prédit 600u mais non commandé |
-| [PF1352] BR1214 - KETCHUP KOSHER 500 ML BIB | 108 | Stock prédit: 0.0u (0j restants) → prédit 108u mais non commandé |
-| [PF1715] BATON ROUGE KETCHUP 3 KG | 50 | Stock prédit: 0.0u (0j restants) → prédit 50u mais non commandé |
-| [PF0679] BR MAYONNAISE KOSHER 500ML BOC | 220 | Stock prédit: 0.0u (0j restants) → prédit 220u mais non commandé |
-| [PF1902] BR MAYO KOSHER 275 GR BOC | 130 | Stock prédit: 0.0u (0j restants) → prédit 130u mais non commandé |
-| [PF1905] BR TARTARE KOSHE SQUEEZE 300ML | 56 | Stock prédit: 0.0u (0j restants) → prédit 56u mais non commandé |
-| [PF1906] BR1586 -  VIN FH KOSHER SQUEEZE 300ML | 56 | Stock prédit: 0.0u (0j restants) → prédit 56u mais non commandé |
-| [PF1983] BR1588 - BBQ KOSHER SQUEEZE 300ML | 112 | Stock prédit: 0.0u (0j restants) → prédit 112u mais non commandé |
-| [PF1618] BORNIBUS MAYO BAIES ROSES 220G | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
-| [PF1938] BR MAYONNAISE KOSHE  1000ML BOC | 384 | Stock prédit: 0.0u (0j restants) → prédit 384u mais non commandé |
 | [PF1980] BR1582 - KETCHUP KOSHE SQUEEZE 300ML | 56 | Stock prédit: 16.5u (17j restants) → prédit 56u mais non commandé |
 | [PF1981] BR BEARNAISE KOSH SQUEEZ 300ML | 56 | Stock prédit: 16.5u (17j restants) → prédit 56u mais non commandé |
-| [PF1379] BR MAYONNAISE KOSHER  5L  | 1000 | Stock prédit: 0.0u (0j restants) → prédit 1000u mais non commandé |
-| [PF3337] BS1886 - BORNIBUS MAYO TRUFFES KOSHER 210G | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
-| [PF3369] BS1826 COSCO - BORNIBUS MAYONNAISE KOSHE 825G | 720 | Stock prédit: 0.0u (0j restants) → prédit 720u mais non commandé |
-| [PF2014] BR1561 - MOUT DIJON SQUEEZE 300ML | 278 | Stock prédit: 0.0u (0j restants) → prédit 278u mais non commandé |
-| [PF1903] BR BURGER KOSHER SQUEEZE 300ML | 112 | Stock prédit: 0.0u (0j restants) → prédit 112u mais non commandé |
+| [PF3337] BS1886 - BORNIBUS MAYO TRUFFES KOSHER 210G | 374 | Stock prédit: -35.0u (-8j restants) → prédit 374u mais non commandé |
 
 
 ---
@@ -214,4 +201,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:41.640Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:46.553Z*

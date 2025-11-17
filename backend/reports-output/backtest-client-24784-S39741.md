@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 22 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 29 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (22)
+## False Positives (29)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,12 +173,19 @@
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: 0.2u (15j restants) → prédit 1u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (3j restants) → prédit 1u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: -0.2u (-13j restants) → prédit 1u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock prédit: -0.8u (-49j restants) → prédit 1u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-29j restants) → prédit 1u mais non commandé |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (5j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -208,4 +215,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:07.683Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:52.510Z*

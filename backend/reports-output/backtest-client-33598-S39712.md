@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 12.1% | 33 produits prédits, 4 corrects |
+| **Précision** | 11.8% | 34 produits prédits, 4 corrects |
 | **Rappel** | 100.0% | 4 produits réels, 4 détectés |
-| **F1-Score** | 21.6% | Score équilibré global |
+| **F1-Score** | 21.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -146,7 +146,7 @@
 
 ---
 
-## False Positives (29)
+## False Positives (30)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -195,6 +195,7 @@
 | [PF1624] BONI VINAIGRETTE MANGUE 450ML | 378 | Stock prédit: -2398.2u (-77j restants) → prédit 378u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 126 | Stock prédit: -80.9u (-48j restants) → prédit 126u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 100 | Stock prédit: -60.7u (-52j restants) → prédit 100u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 126 | Stock prédit: -23.3u (-22j restants) → prédit 126u mais non commandé |
 
 
 ---
@@ -218,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:01.084Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:43.216Z*

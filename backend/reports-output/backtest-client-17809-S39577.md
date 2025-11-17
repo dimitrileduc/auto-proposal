@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 73.3% | 15 produits prédits, 11 corrects |
-| **Rappel** | 61.1% | 18 produits réels, 11 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 76.5% | 17 produits prédits, 13 corrects |
+| **Rappel** | 72.2% | 18 produits réels, 13 détectés |
+| **F1-Score** | 74.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.82 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 45.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| **MAE** | 0.69 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 38.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
 | Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (11)
+## True Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -149,6 +149,8 @@
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -181,7 +183,7 @@
 
 ---
 
-## False Negatives (7)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -201,8 +203,6 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: 2.2u (33j restants > seuil 19j) |
 | [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: 2.2u (71j restants > seuil 19j) |
 | [LV132] LV Tartinade Houmous type 190g | 1 | Stock suffisant: 2.7u (55j restants > seuil 19j) |
@@ -212,4 +212,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:05.155Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:04.696Z*

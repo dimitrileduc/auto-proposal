@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - EUROPADRINKS
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 60190
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.8s
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
@@ -11,11 +11,11 @@
 
 
 **Produits à risque détectés: 12**
-- Urgents (rupture ≤ 0j): 7
-- Modérés (0 < rupture ≤ 19j): 5
+- Urgents (rupture ≤ 0j): 6
+- Modérés (0 < rupture ≤ 19j): 6
 
 **Total produits (Phase 1): 12**
-**Quantité totale brute: 170 unités**
+**Quantité totale brute: 153 unités**
 
 ### Détails par produit
 
@@ -241,12 +241,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> (ID: 18309) - 2 unités</summary>
+<summary>🟡 <strong>[NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> (ID: 18309) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0169
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0160
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -254,23 +254,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-28 | S37116 | 2 | 25.44€ |
+| 2025-01-16 | S34352 | 2 | 25.44€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[REB06] REB chips bio - paprika fumé 35g</strong> (ID: 18415) - 35 unités</summary>
+<summary>🔴 <strong>[REB06] REB chips bio - paprika fumé 35g</strong> (ID: 18415) - 18 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2174
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.3113
+- **Stock restant estimé**: -15.12
+- **Jours avant rupture**: **-48j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -278,13 +279,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-15 | S36224 | 35 | 16.00€ |
+| 2025-03-17 | S35436 | 15 | 17.60€ |
+| 2025-01-27 | S34543 | 20 | 16.00€ |
+| 2025-01-09 | S34191 | 10 | 17.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [35]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 35
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [35, 15, 20, 10]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 18
 
 </details>
 
@@ -346,7 +350,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 3052.27€**
+- **Montant initial: 2780.27€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -364,10 +368,10 @@
 | [MATE01] MATE MATE thé glac... | 18300 | 15 | 0 | 15 | 29.04€ | 435.60€ |
 | [REB05] REB chips bio - sel... | 18416 | 30 | 0 | 30 | 16.00€ | 480.00€ |
 | [NOD04] NODA limonade bio f... | 18309 | 2 | 0 | 2 | 25.44€ | 50.88€ |
-| [REB06] REB chips bio - pap... | 18415 | 35 | 0 | 35 | 16.00€ | 560.00€ |
+| [REB06] REB chips bio - pap... | 18415 | 18 | 0 | 18 | 16.00€ | 288.00€ |
 | [NOM04] NOMADIC barre proté... | 18319 | 5 | 0 | 5 | 17.55€ | 87.75€ |
 | [NOM01] NOMADIC barre proté... | 18318 | 4 | 0 | 4 | 17.55€ | 70.20€ |
 
-**Total (Phase 2.5): 3052.27€**
+**Total (Phase 2.5): 2780.27€**
 
 ---

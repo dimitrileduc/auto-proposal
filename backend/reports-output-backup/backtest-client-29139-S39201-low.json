@@ -1,0 +1,22 @@
+{
+  "clientId": 29139,
+  "clientName": "DLL AD EUPEN EUSCO",
+  "orderName": "S39201",
+  "orderDate": "2025-09-17 11:24:53",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 7,
+    "fn": 39,
+    "precision": 0.3,
+    "recall": 0.07142857142857142,
+    "f1Score": 0.11538461538461536,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 0
+  }
+}

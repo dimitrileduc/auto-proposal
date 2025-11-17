@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - SAS CSF, ENTREPÔT NÎMES
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 56952
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 972ms
+**⏱️ Durée d'exécution:** 2.8s
 
 ---
 

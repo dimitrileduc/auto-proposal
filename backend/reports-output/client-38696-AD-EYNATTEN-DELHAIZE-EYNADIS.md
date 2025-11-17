@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - AD EYNATTEN DELHAIZE EYNADIS
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 38696
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.3s
+**⏱️ Durée d'exécution:** 1.8s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 52**
-- Urgents (rupture ≤ 0j): 37
-- Modérés (0 < rupture ≤ 19j): 15
+**Produits à risque détectés: 44**
+- Urgents (rupture ≤ 0j): 27
+- Modérés (0 < rupture ≤ 19j): 17
 
-**Total produits (Phase 1): 52**
-**Quantité totale brute: 111 unités**
+**Total produits (Phase 1): 44**
+**Quantité totale brute: 93 unités**
 
 ### Détails par produit
 
@@ -134,30 +134,6 @@
 - **Quantités historiques**: [2, 3, 2, 3, 4]
 - **Nombre commandes**: 6
 - **Valeur médiane**: 3
-
-</details>
-
-<details>
-<summary>🔴 <strong>[TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g</strong> (ID: 16828) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3333
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-29 | S39431 | 2 | 10.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -605,30 +581,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0227
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38647 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> (ID: 16763) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -651,30 +603,6 @@
 - **Quantités historiques**: [2, 1, 10]
 - **Nombre commandes**: 3
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF029] JF VOL AU VENT BOCAL 400G</strong> (ID: 16792) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0227
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38647 | 1 | 15.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
 
 </details>
 
@@ -755,12 +683,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> (ID: 16832) - 1 unités</summary>
+<summary>🔴 <strong>[TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> (ID: 16832) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0227
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0325
+- **Stock restant estimé**: -0.43
+- **Jours avant rupture**: **-13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -768,23 +696,29 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-22 | S38647 | 1 | 10.80€ |
+| 2025-03-13 | S35355 | 4 | 10.80€ |
+| 2024-12-09 | S33739 | 1 | 10.80€ |
+| 2024-11-25 | S33329 | 2 | 10.80€ |
+| 2024-10-11 | S32685 | 3 | 10.80€ |
+| 2024-07-31 | S31481 | 2 | 10.80€ |
+| 2024-05-31 | S30572 | 3 | 10.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 4, 1, 2, 3]
+- **Nombre commandes**: 7
+- **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0031] MF Tarti Olives verte 250g </strong> (ID: 571) - 1 unités</summary>
+<summary>🟡 <strong>[MF0031] MF Tarti Olives verte 250g </strong> (ID: 571) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0227
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0174
+- **Stock restant estimé**: 0.23
+- **Jours avant rupture**: **13j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -792,36 +726,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-22 | S38647 | 1 | 14.46€ |
+| 2025-03-13 | S35355 | 2 | 14.46€ |
+| 2024-12-09 | S33739 | 1 | 14.46€ |
+| 2024-07-31 | S31481 | 2 | 14.46€ |
+| 2024-06-19 | S30866 | 1 | 14.46€ |
+| 2024-05-06 | S30028 | 2 | 14.46€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0227
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-22 | S38647 | 1 | 23.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 2, 1, 2, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -881,12 +796,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> (ID: 16826) - 3 unités</summary>
+<summary>🟡 <strong>[TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> (ID: 16826) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0545
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0459
+- **Stock restant estimé**: 0.48
+- **Jours avant rupture**: **10j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -894,12 +809,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-11 | S38456 | 3 | 10.80€ |
+| 2025-03-13 | S35355 | 3 | 10.80€ |
+| 2025-02-11 | S34814 | 1 | 10.80€ |
+| 2024-12-09 | S33739 | 5 | 10.80€ |
+| 2024-11-25 | S33329 | 2 | 10.80€ |
+| 2024-07-11 | S31231 | 1 | 10.80€ |
+| 2024-05-31 | S30572 | 3 | 10.80€ |
+| 2024-04-30 | S29822 | 6 | 10.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [3, 3, 1, 5, 2]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 3
 
 </details>
@@ -1253,36 +1175,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> (ID: 16762) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0111
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-08 | S35860 | 2 | 21.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🔴 <strong>[MF0021] MF Sauce BBQ 250ml</strong> (ID: 561) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0111
+- **Stock restant estimé**: -1.01
+- **Jours avant rupture**: **-90j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1290,85 +1188,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-08 | S35860 | 1 | 18.60€ |
+| 2024-12-09 | S33739 | 2 | 18.60€ |
+| 2024-10-11 | S32685 | 1 | 18.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0053] MF Maïs 500g</strong> (ID: 16951) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-08 | S35860 | 1 | 11.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0052] MF Pois chiches  500g</strong> (ID: 16950) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-08 | S35860 | 1 | 12.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[TVF004] TVF TARTINADE BIO OLIVE 180g</strong> (ID: 16829) - 10 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0556
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-08 | S35860 | 10 | 10.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [10]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 10
 
 </details>
 
@@ -1380,7 +1208,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1935.60€**
+- **Montant initial: 1693.86€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1393,7 +1221,6 @@
 | [JF056] JF SAUCE CHIPOTLE 2... | 19356 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF027] JF VINAIGRET MIEL M... | 16787 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [TVF006] TVF TARTINADE BIO ... | 16833 | 3 | 0 | 3 | 10.80€ | 32.40€ |
-| [TVF007] TVF TARTINADE BIO ... | 16828 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 | [MF0032] MF Tarti Pois chic... | 572 | 2 | 0 | 2 | 14.46€ | 28.92€ |
 | [JF020] JF SAUCE AIOLI 250M... | 16761 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [TVF002] TVF TARTINADE BIO ... | 16830 | 2 | 0 | 2 | 10.80€ | 21.60€ |
@@ -1410,15 +1237,12 @@
 | [JF031] JF SAUCE LIEGEOISE ... | 16776 | 1 | 0 | 1 | 13.50€ | 13.50€ |
 | [MF0033] MF Tarti Poivron c... | 573 | 2 | 0 | 2 | 14.46€ | 28.92€ |
 | [MF0013] MF Olives Vertes 500g | 553 | 1 | 0 | 1 | 27.60€ | 27.60€ |
-| [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF015] JF SAUCE ANDALOUSE ... | 16763 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF029] JF VOL AU VENT BOCA... | 16792 | 1 | 0 | 1 | 15.00€ | 15.00€ |
 | [LD014] LD Organic Avocado ... | 19434 | 3 | 0 | 3 | 14.50€ | 43.50€ |
 | [LD013] LD Tuscan Organic S... | 19398 | 3 | 0 | 3 | 14.50€ | 43.50€ |
 | [TVF008] TVF TARTINADE BIO ... | 16825 | 2 | 0 | 2 | 10.80€ | 21.60€ |
-| [TVF009] TVF TARTINADE BIO ... | 16832 | 1 | 0 | 1 | 10.80€ | 10.80€ |
+| [TVF009] TVF TARTINADE BIO ... | 16832 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 | [MF0031] MF Tarti Olives ve... | 571 | 1 | 0 | 1 | 14.46€ | 14.46€ |
-| [MF0050] MF Cornichons aigr... | 16936 | 1 | 0 | 1 | 23.04€ | 23.04€ |
 | [JF024] JF VINAIGRET CIBOUL... | 16786 | 2 | 0 | 2 | 27.00€ | 54.00€ |
 | [TVF001] TVF TARTINADE BIO ... | 16827 | 3 | 0 | 3 | 10.80€ | 32.40€ |
 | [TVF003] TVF TARTINADE BIO ... | 16826 | 3 | 0 | 3 | 10.80€ | 32.40€ |
@@ -1436,12 +1260,8 @@
 | [MF0028] ​MF Tarti Carotte ... | 568 | 3 | 0 | 3 | 14.46€ | 43.38€ |
 | [JF025] JF VINAIGRETTE FH W... | 16790 | 2 | 0 | 2 | 27.00€ | 54.00€ |
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 2 | 0 | 2 | 27.00€ | 54.00€ |
-| [JF019] JF SAUCE AIOLI PEST... | 16762 | 2 | 0 | 2 | 21.00€ | 42.00€ |
 | [MF0021] MF Sauce BBQ 250ml | 561 | 1 | 0 | 1 | 18.60€ | 18.60€ |
-| [MF0053] MF Maïs 500g | 16951 | 1 | 0 | 1 | 11.40€ | 11.40€ |
-| [MF0052] MF Pois chiches  500g | 16950 | 1 | 0 | 1 | 12.00€ | 12.00€ |
-| [TVF004] TVF TARTINADE BIO ... | 16829 | 10 | 0 | 10 | 10.80€ | 108.00€ |
 
-**Total (Phase 2.5): 1935.60€**
+**Total (Phase 2.5): 1693.86€**
 
 ---

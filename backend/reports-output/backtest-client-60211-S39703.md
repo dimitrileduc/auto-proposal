@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 24 produits prédits, 8 corrects |
+| **Précision** | 32.0% | 25 produits prédits, 8 corrects |
 | **Rappel** | 80.0% | 10 produits réels, 8 détectés |
-| **F1-Score** | 47.1% | Score équilibré global |
+| **F1-Score** | 45.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (16)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -180,6 +180,7 @@
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
 | [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock prédit: 0.1u (5j restants) → prédit 2u mais non commandé |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Stock prédit: -0.7u (-14j restants) → prédit 2u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (18j restants) → prédit 1u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
@@ -216,4 +217,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:30.518Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:23.205Z*

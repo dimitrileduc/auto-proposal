@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.0% | 5 produits prédits, 3 corrects |
-| **Rappel** | 16.7% | 18 produits réels, 3 détectés |
-| **F1-Score** | 26.1% | Score équilibré global |
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
+| **Rappel** | 5.6% | 18 produits réels, 1 détectés |
+| **F1-Score** | 9.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,8 +139,6 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [LV345] LV Spread KIDS 200ml Organic | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -171,7 +169,7 @@
 
 ---
 
-## False Negatives (15)
+## False Negatives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -191,6 +189,8 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock suffisant: -0.2u (-22j restants > seuil 19j) |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock suffisant: -1.0u (-70j restants > seuil 19j) |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.5u (5j restants > seuil 19j) |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 3 | Stock suffisant: -0.3u (-3j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: 2.2u (33j restants > seuil 19j) |
@@ -210,4 +210,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:05.157Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:04.698Z*

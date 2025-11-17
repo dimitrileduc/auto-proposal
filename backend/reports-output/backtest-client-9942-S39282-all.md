@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 26.2% | 42 produits prédits, 11 corrects |
+| **Précision** | 28.9% | 38 produits prédits, 11 corrects |
 | **Rappel** | 64.7% | 17 produits réels, 11 détectés |
-| **F1-Score** | 37.3% | Score équilibré global |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.18 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 18.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 9 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.27 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 22.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 8 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -148,12 +148,12 @@
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (31)
+## False Positives (27)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -176,33 +176,29 @@
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.6u (18j restants) → prédit 1u mais non commandé |
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
 | [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.5u (12j restants) → prédit 1u mais non commandé |
-| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
 | [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -1.4u (-37j restants) → prédit 1u mais non commandé |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -1.0u (-39j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.5u (-24j restants) → prédit 1u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
 | [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
-| [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0047] MF Mayonnaise 250ml | 2 | Stock prédit: 0.2u (14j restants) → prédit 2u mais non commandé |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
 | [MF0027] MF Tarti Aubergine 250g  | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
 | [MF0061] MF Compote | 1 | Stock prédit: -0.7u (-33j restants) → prédit 1u mais non commandé |
 | [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.2u (-16j restants) → prédit 1u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.1u (9j restants) → prédit 1u mais non commandé |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [CB007] CB Apple Nettle juice 1l | 1 | Stock prédit: -0.9u (-57j restants) → prédit 1u mais non commandé |
 | [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock prédit: -1.0u (-79j restants) → prédit 1u mais non commandé |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: -0.6u (-58j restants) → prédit 1u mais non commandé |
 | [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: -0.6u (-66j restants) → prédit 1u mais non commandé |
+| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.8u (-77j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -238,4 +234,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:47.871Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:52.411Z*

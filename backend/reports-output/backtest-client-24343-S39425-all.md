@@ -165,8 +165,8 @@
 |---------|-------------|--------|
 | [LV188] LV Tartinade Aubergine  380g | 32 | Stock prédit: -9.9u (-17j restants) → prédit 32u mais non commandé |
 | [LV187] LV Tartinade Mangue Curry 380g | 40 | Stock prédit: -18.7u (-40j restants) → prédit 40u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 32 | Stock prédit: 0.0u (0j restants) → prédit 32u mais non commandé |
-| [LV139] LV Tartinade Paprika Chili 380g | 16 | Stock prédit: 0.0u (0j restants) → prédit 16u mais non commandé |
+| [LV138] LV Tartinade Carotte gingembre  380g | 60 | Stock prédit: -118.9u (-135j restants) → prédit 60u mais non commandé |
+| [LV139] LV Tartinade Paprika Chili 380g | 32 | Stock prédit: -156.0u (-156j restants) → prédit 32u mais non commandé |
 
 
 ---
@@ -196,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:21.837Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:28.461Z*

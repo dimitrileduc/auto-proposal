@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 3 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,15 +152,7 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [ING0271] SIROP D'AGAVE BIO | 25 | Stock prédit: 0.0u (0j restants) → prédit 25u mais non commandé |
-| [PF3352] DLL MARINADE AVOCAT TOMATES SECHEES 240ML | 564 | Stock prédit: 0.0u (0j restants) → prédit 564u mais non commandé |
-| [PF3351] DLL MARINADE AVOCAT BBQ 240ML | 564 | Stock prédit: 0.0u (0j restants) → prédit 564u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
@@ -191,4 +183,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:53.115Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:51.204Z*

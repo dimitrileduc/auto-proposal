@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - BONNI, ACHAT
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 8200
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.8s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 32**
-- Urgents (rupture ≤ 0j): 24
-- Modérés (0 < rupture ≤ 19j): 8
+**Produits à risque détectés: 31**
+- Urgents (rupture ≤ 0j): 21
+- Modérés (0 < rupture ≤ 19j): 10
 
-**Total produits (Phase 1): 32**
-**Quantité totale brute: 201 unités**
+**Total produits (Phase 1): 31**
+**Quantité totale brute: 202 unités**
 
 ### Détails par produit
 
@@ -312,12 +312,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 7 unités</summary>
+<summary>🔴 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 44 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1321
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.4286
+- **Stock restant estimé**: -15.71
+- **Jours avant rupture**: **-36j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -325,13 +325,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-07 | S38414 | 7 | 8.96€ |
+| 2025-03-10 | S35299 | 80 | 8.96€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [7]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 7
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [7, 80]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 44
 
 </details>
 
@@ -360,12 +361,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> (ID: 16746) - 2 unités</summary>
+<summary>🟡 <strong>[JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> (ID: 16746) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0377
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0296
+- **Stock restant estimé**: 0.43
+- **Jours avant rupture**: **14j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -373,12 +374,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-07 | S38289 | 2 | 19.50€ |
+| 2025-03-25 | S35591 | 2 | 19.50€ |
+| 2025-03-10 | S35296 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2, 2]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 2
 
 </details>
@@ -410,12 +413,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> (ID: 16745) - 4 unités</summary>
+<summary>🟡 <strong>[JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> (ID: 16745) - 4 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0426
+- **Stock restant estimé**: 0.77
+- **Jours avant rupture**: **18j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -423,12 +426,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-15 | S38072 | 4 | 23.40€ |
+| 2025-03-25 | S35591 | 4 | 23.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [4]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [4, 4]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 4
 
 </details>
@@ -504,30 +508,6 @@
 - **Quantités historiques**: [2, 1]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[FIL09] FIL MOUTARDE 300G BOCAL</strong> (ID: 19238) - 4 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-15 | S38072 | 4 | 13.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [4]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 4
 
 </details>
 
@@ -655,12 +635,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF020] JF SAUCE AIOLI 250ML WECK</strong> (ID: 16761) - 1 unités</summary>
+<summary>🔴 <strong>[JF020] JF SAUCE AIOLI 250ML WECK</strong> (ID: 16761) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0074
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0148
+- **Stock restant estimé**: -1.01
+- **Jours avant rupture**: **-68j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -668,13 +648,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-16 | S36844 | 1 | 19.50€ |
+| 2025-03-10 | S35296 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -682,9 +663,9 @@
 <summary>🔴 <strong>[JF017] JF SAUCE COCKTAIL 250ML WECK</strong> (ID: 16771) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0074
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0106
+- **Stock restant estimé**: -0.45
+- **Jours avant rupture**: **-41j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -692,12 +673,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-16 | S36844 | 1 | 19.50€ |
+| 2025-03-25 | S35591 | 1 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -751,12 +733,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3290] JF MAYO BARAKI 925ML</strong> (ID: 17018) - 19 unités</summary>
+<summary>🔴 <strong>[PF3290] JF MAYO BARAKI 925ML</strong> (ID: 17018) - 8 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1111
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.1612
+- **Stock restant estimé**: -8.56
+- **Jours avant rupture**: **-53j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -764,23 +746,28 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S36014 | 19 | 46.92€ |
+| 2025-03-24 | S35593 | 15 | 46.92€ |
+| 2025-03-17 | S35417 | 3 | 46.92€ |
+| 2025-02-11 | S34812 | 8 | 46.92€ |
+| 2025-02-04 | S34648 | 2 | 46.92€ |
+| 2024-11-29 | S33592 | 2 | 0.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [19]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 19
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [19, 15, 3, 8, 2]
+- **Nombre commandes**: 6
+- **Valeur médiane**: 8
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3272] JF PEPPER MAYONNAISE 925ML</strong> (ID: 15017) - 19 unités</summary>
+<summary>🔴 <strong>[PF3272] JF PEPPER MAYONNAISE 925ML</strong> (ID: 15017) - 4 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1111
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.1349
+- **Stock restant estimé**: -4.06
+- **Jours avant rupture**: **-30j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -788,23 +775,27 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S36014 | 19 | 46.92€ |
+| 2025-03-24 | S35593 | 15 | 46.92€ |
+| 2025-02-11 | S34812 | 4 | 46.92€ |
+| 2025-02-04 | S34648 | 1 | 46.92€ |
+| 2024-11-29 | S33592 | 2 | 0.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [19]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 19
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [19, 15, 4, 1, 2]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 4
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3273] JF MITRAILLETTE SAUCE 925ML</strong> (ID: 15037) - 15 unités</summary>
+<summary>🔴 <strong>[PF3273] JF MITRAILLETTE SAUCE 925ML</strong> (ID: 15037) - 8 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0877
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.1480
+- **Stock restant estimé**: -10.31
+- **Jours avant rupture**: **-69j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -812,13 +803,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-11 | S36014 | 15 | 39.60€ |
+| 2025-03-24 | S35593 | 15 | 39.60€ |
+| 2025-03-17 | S35417 | 3 | 39.60€ |
+| 2025-02-11 | S34812 | 8 | 39.60€ |
+| 2025-02-04 | S34648 | 2 | 39.60€ |
+| 2024-11-29 | S33592 | 2 | 0.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [15]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 15
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [15, 15, 3, 8, 2]
+- **Nombre commandes**: 6
+- **Valeur médiane**: 8
 
 </details>
 
@@ -830,7 +826,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 5234.24€**
+- **Montant initial: 4035.34€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -850,7 +846,7 @@
 | [PF0093] FILOU MOUTARDE 300GR | 8995 | 3 | 0 | 3 | 11.16€ | 33.48€ |
 | [PF0165] FILOU COCKTAIL FRE... | 9006 | 15 | 0 | 15 | 8.76€ | 131.40€ |
 | [PF0094] FILOU MOUTARDE 700 GR | 8996 | 3 | 0 | 3 | 7.44€ | 22.32€ |
-| [PF0078] FILOU CHASSEUR 5 L | 8987 | 7 | 0 | 7 | 8.96€ | 62.72€ |
+| [PF0078] FILOU CHASSEUR 5 L | 8987 | 44 | 0 | 44 | 8.96€ | 394.24€ |
 | [JF012] JF SAUCE BEARNAISE ... | 16766 | 3 | 0 | 3 | 19.50€ | 58.50€ |
 | [JF004] JF MAYONNAIS POIVRE... | 16746 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [PF0096] FILOU MOUTARDE 3 KG | 8997 | 20 | 0 | 20 | 5.15€ | 103.00€ |
@@ -858,20 +854,19 @@
 | [JF033] JF ANDALOUSE SQUEEZ... | 15058 | 4 | 0 | 4 | 26.40€ | 105.60€ |
 | [JF038] JF KETCHUP SQUEEZE ... | 16737 | 2 | 0 | 2 | 26.40€ | 52.80€ |
 | [JF039] JF MAYO BARAKI SQUE... | 16738 | 2 | 0 | 2 | 30.00€ | 60.00€ |
-| [FIL09] FIL MOUTARDE 300G B... | 19238 | 4 | 0 | 4 | 13.20€ | 52.80€ |
 | [FIL11] FIL MAYONNAISE ŒUFS... | 19240 | 10 | 0 | 10 | 19.28€ | 192.80€ |
 | [FIL23] FIL MAYONNAISE 300M... | 19252 | 12 | 0 | 12 | 25.75€ | 309.00€ |
 | [PF1844] FILOU ANDALOUSE SQ... | 9284 | 2 | 0 | 2 | 21.84€ | 43.68€ |
 | [JF005] JF MAYONNAISE OEUFS... | 16749 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF019] JF SAUCE AIOLI PEST... | 16762 | 1 | 0 | 1 | 21.00€ | 21.00€ |
-| [JF020] JF SAUCE AIOLI 250M... | 16761 | 1 | 0 | 1 | 19.50€ | 19.50€ |
+| [JF020] JF SAUCE AIOLI 250M... | 16761 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF017] JF SAUCE COCKTAIL 2... | 16771 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF056] JF SAUCE CHIPOTLE 2... | 19356 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF054] JF LEMON MAYONNAISE... | 19354 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [PF3290] JF MAYO BARAKI 925ML | 17018 | 19 | 0 | 19 | 46.92€ | 891.48€ |
-| [PF3272] JF PEPPER MAYONNAI... | 15017 | 19 | 0 | 19 | 46.92€ | 891.48€ |
-| [PF3273] JF MITRAILLETTE SA... | 15037 | 15 | 0 | 15 | 39.60€ | 594.00€ |
+| [PF3290] JF MAYO BARAKI 925ML | 17018 | 8 | 0 | 8 | 46.92€ | 375.36€ |
+| [PF3272] JF PEPPER MAYONNAI... | 15017 | 4 | 0 | 4 | 46.92€ | 187.68€ |
+| [PF3273] JF MITRAILLETTE SA... | 15037 | 8 | 0 | 8 | 39.60€ | 316.80€ |
 
-**Total (Phase 2.5): 5234.24€**
+**Total (Phase 2.5): 4035.34€**
 
 ---

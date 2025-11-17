@@ -183,9 +183,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 125 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 125 | Stock suffisant: 293.0u (57j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:08.855Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:20.441Z*

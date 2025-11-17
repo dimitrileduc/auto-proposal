@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - BIOK CORBAIS
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 60211
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.5s
+**⏱️ Durée d'exécution:** 4.0s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 28**
-- Urgents (rupture ≤ 0j): 15
-- Modérés (0 < rupture ≤ 19j): 13
+**Produits à risque détectés: 27**
+- Urgents (rupture ≤ 0j): 13
+- Modérés (0 < rupture ≤ 19j): 14
 
-**Total produits (Phase 1): 28**
-**Quantité totale brute: 37 unités**
+**Total produits (Phase 1): 27**
+**Quantité totale brute: 36 unités**
 
 ### Détails par produit
 
@@ -527,12 +527,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JOY06] JOY! Organic Rhubarb Jam 370g</strong> (ID: 18274) - 1 unités</summary>
+<summary>🟡 <strong>[JOY06] JOY! Organic Rhubarb Jam 370g</strong> (ID: 18274) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0294
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0251
+- **Stock restant estimé**: 0.15
+- **Jours avant rupture**: **5j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -540,13 +540,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-09-10 | S39073 | 1 | 27.92€ |
+| 2025-03-10 | S35300 | 2 | 27.92€ |
+| 2025-03-03 | S35163 | 2 | 26.52€ |
+| 2025-02-17 | S34915 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 2, 1]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
 
 </details>
 
@@ -724,30 +727,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18308) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0222
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-16 | S38041 | 2 | 32.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🔴 <strong>[DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> (ID: 17727) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -833,7 +812,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 924.08€**
+- **Montant initial: 887.20€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -859,18 +838,17 @@
 | [RISH02] RISH kombucha BIO ... | 18358 | 1 | 0 | 1 | 25.08€ | 25.08€ |
 | [JOY04] JOY! Organic Four-F... | 18276 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [JOY07] JOY! Organic Fig Ja... | 18271 | 1 | 0 | 1 | 27.92€ | 27.92€ |
-| [JOY06] JOY! Organic Rhubar... | 18274 | 1 | 0 | 1 | 27.92€ | 27.92€ |
+| [JOY06] JOY! Organic Rhubar... | 18274 | 2 | 0 | 2 | 27.92€ | 55.84€ |
 | [ORG04] ORGANICA crunchy fr... | 18340 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [MATE02] MATE MATE thé glac... | 18299 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [REB02] ReBEL chips premium... | 18349 | 1 | 0 | 1 | 17.70€ | 17.70€ |
 | [JOY01] JOY! Organic Sweet ... | 18269 | 1 | 0 | 1 | 27.36€ | 27.36€ |
 | [NOD02] NODA limonade bio f... | 18307 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [BUD03] BUDDY biologische e... | 18266 | 1 | 0 | 1 | 14.88€ | 14.88€ |
-| [NOD03] NODA limonade bio f... | 18308 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [DAF001] DAF Elderflower wi... | 17727 | 2 | 0 | 2 | 15.12€ | 30.24€ |
 | [DAF003] DAF Passionfruit w... | 17729 | 2 | 0 | 2 | 15.12€ | 30.24€ |
 | [ORG01] ORGANICA crunchy fr... | 18338 | 2 | 0 | 2 | 30.72€ | 61.44€ |
 
-**Total (Phase 2.5): 924.08€**
+**Total (Phase 2.5): 887.20€**
 
 ---

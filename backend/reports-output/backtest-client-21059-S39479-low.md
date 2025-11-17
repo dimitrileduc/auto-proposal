@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
-| **Rappel** | 5.9% | 17 produits réels, 1 détectés |
-| **F1-Score** | 10.0% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 17 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (2)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,18 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (16)
+## False Negatives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -198,6 +185,7 @@
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: -0.3u (-17j restants > seuil 19j) |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: -0.7u (-13j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: -1.0u (-16j restants > seuil 19j) |
+| [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: -1.9u (-118j restants > seuil 19j) |
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock suffisant: -0.4u (-5j restants > seuil 19j) |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: -1.0u (-16j restants > seuil 19j) |
 | [LV136] LV Tartinade Betterave 190g | 1 | Stock suffisant: -0.5u (-10j restants > seuil 19j) |
@@ -209,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:29.263Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:35.963Z*

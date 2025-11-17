@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 36.0% | 25 produits prédits, 9 corrects |
-| **Rappel** | 60.0% | 15 produits réels, 9 détectés |
-| **F1-Score** | 45.0% | Score équilibré global |
+| **Précision** | 38.5% | 26 produits prédits, 10 corrects |
+| **Rappel** | 66.7% | 15 produits réels, 10 détectés |
+| **F1-Score** | 48.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.11 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 11.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 8 | Égalité parfaite |
+| **MAE** | 0.10 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (9)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,6 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -191,7 +192,7 @@
 
 ---
 
-## False Negatives (6)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -212,7 +213,6 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [REB06] REB chips bio - paprika fumé 35g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.3u (26j restants > seuil 19j) |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
@@ -221,4 +221,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:49.199Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:24.129Z*

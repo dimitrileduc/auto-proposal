@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DLL AD EUPEN EUSCO
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 29139
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.7s
+**⏱️ Durée d'exécution:** 3.8s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 69**
-- Urgents (rupture ≤ 0j): 41
-- Modérés (0 < rupture ≤ 19j): 28
+**Produits à risque détectés: 65**
+- Urgents (rupture ≤ 0j): 35
+- Modérés (0 < rupture ≤ 19j): 30
 
-**Total produits (Phase 1): 69**
-**Quantité totale brute: 117 unités**
+**Total produits (Phase 1): 65**
+**Quantité totale brute: 113 unités**
 
 ### Détails par produit
 
@@ -827,54 +827,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JOY02] JOY! Organic Strawberry Jam 370g</strong> (ID: 18272) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-27 | S38768 | 1 | 27.92€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[ORG04] ORGANICA crunchy fruit fraise 12g</strong> (ID: 18340) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-27 | S38768 | 1 | 30.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[JF003] JF MAYONNAIS WASABI 250ML WECK</strong> (ID: 16747) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -1665,12 +1617,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0021] MF Sauce BBQ 250ml</strong> (ID: 561) - 1 unités</summary>
+<summary>🟡 <strong>[MF0021] MF Sauce BBQ 250ml</strong> (ID: 561) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0110
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0101
+- **Stock restant estimé**: 0.08
+- **Jours avant rupture**: **8j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1678,60 +1630,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-16 | S37281 | 1 | 18.60€ |
+| 2023-12-05 | S28012 | 5 | 18.60€ |
+| 2023-10-20 | S04950 | 1 | 18.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0061] MF Compote</strong> (ID: 17769) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0110
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-16 | S37281 | 1 | 12.37€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0051] MF Kidney Beans 500g</strong> (ID: 16949) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0110
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-16 | S37281 | 1 | 12.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 5, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1762,12 +1668,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
+<summary>🟡 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0057
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1775,12 +1681,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36144 | 1 | 23.04€ |
+| 2024-07-11 | S31258 | 1 | 23.04€ |
+| 2023-12-05 | S28012 | 1 | 23.04€ |
+| 2023-10-20 | S04950 | 1 | 0.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1789,9 +1698,9 @@
 <summary>🔴 <strong>[MF0054] MF Noix de cajou - Fleur de sel 133g</strong> (ID: 16978) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0110
+- **Stock restant estimé**: -0.70
+- **Jours avant rupture**: **-63j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1799,12 +1708,17 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36144 | 1 | 20.62€ |
+| 2025-02-06 | S34698 | 1 | 20.62€ |
+| 2024-08-05 | S31532 | 1 | 20.62€ |
+| 2024-06-24 | S30939 | 1 | 20.62€ |
+| 2024-05-13 | S30243 | 1 | 20.62€ |
+| 2024-03-21 | S29445 | 1 | 20.62€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1
 
 </details>
@@ -1813,9 +1727,9 @@
 <summary>🔴 <strong>[MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> (ID: 16980) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0065
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0147
+- **Stock restant estimé**: -1.27
+- **Jours avant rupture**: **-86j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1823,12 +1737,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36144 | 1 | 20.62€ |
+| 2025-03-11 | S35274 | 1 | 20.62€ |
+| 2024-10-04 | S32602 | 1 | 20.62€ |
+| 2024-08-05 | S31532 | 1 | 20.62€ |
+| 2024-06-24 | S30939 | 1 | 20.62€ |
+| 2024-05-13 | S30243 | 2 | 20.62€ |
+| 2024-03-21 | S29445 | 1 | 20.62€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -1837,9 +1757,9 @@
 <summary>🔴 <strong>[MF0060] MF Passata</strong> (ID: 17768) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0066
+- **Stock restant estimé**: -0.17
+- **Jours avant rupture**: **-26j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1847,12 +1767,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-20 | S35483 | 1 | 12.37€ |
+| 2024-11-14 | S33287 | 1 | 12.37€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -1865,7 +1786,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 2342.20€**
+- **Montant initial: 2259.19€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1903,8 +1824,6 @@
 | [MF0053] MF Maïs 500g | 16951 | 1 | 0 | 1 | 11.40€ | 11.40€ |
 | [MF0012] MF Olives Mix 500g | 552 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0013] MF Olives Vertes 500g | 553 | 2 | 0 | 2 | 27.60€ | 55.20€ |
-| [JOY02] JOY! Organic Strawb... | 18272 | 1 | 0 | 1 | 27.92€ | 27.92€ |
-| [ORG04] ORGANICA crunchy fr... | 18340 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [JF003] JF MAYONNAIS WASABI... | 16747 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF009] JF SAUCE TARTARE 25... | 16780 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [TVF006] TVF TARTINADE BIO ... | 16833 | 4 | 0 | 4 | 10.80€ | 43.20€ |
@@ -1936,14 +1855,12 @@
 | [JF034] JF SAMOURAI SQUEEZE... | 16760 | 1 | 0 | 1 | 26.40€ | 26.40€ |
 | [JF055] JF HONEY MUSTARD MA... | 19355 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [MF0021] MF Sauce BBQ 250ml | 561 | 1 | 0 | 1 | 18.60€ | 18.60€ |
-| [MF0061] MF Compote | 17769 | 1 | 0 | 1 | 12.37€ | 12.37€ |
-| [MF0051] MF Kidney Beans 500g | 16949 | 1 | 0 | 1 | 12.00€ | 12.00€ |
 | [MF0055] MF Noix de cajou -... | 16979 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [MF0050] MF Cornichons aigr... | 16936 | 1 | 0 | 1 | 23.04€ | 23.04€ |
 | [MF0054] MF Noix de cajou -... | 16978 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [MF0056] MF Noix de cajou -... | 16980 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [MF0060] MF Passata | 17768 | 1 | 0 | 1 | 12.37€ | 12.37€ |
 
-**Total (Phase 2.5): 2342.20€**
+**Total (Phase 2.5): 2259.19€**
 
 ---

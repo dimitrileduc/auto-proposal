@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 3 produits prédits, 3 corrects |
-| **Rappel** | 100.0% | 3 produits réels, 3 détectés |
-| **F1-Score** | 100.0% | Score équilibré global |
+| **Précision** | 100.0% | 2 produits prédits, 2 corrects |
+| **Rappel** | 66.7% | 3 produits réels, 2 détectés |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 3590.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 86.2% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 5370.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 127.6% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,7 +140,6 @@
 |---------|--------|------|-----------|----------|------|
 | [PI2911] PI SAUCE BURGER BA PO | 12600 | 17400 | 4800.0 | 27.6% | ✅ partial |
 | [PI2910] PI SAUCE ALGERIENNE BA PO | 8550 | 2610 | 5940.0 | 227.6% | ✅ partial |
-| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 900 | 870 | 30.0 | 3.4% | ✅ partial |
 
 
 ---
@@ -164,7 +163,7 @@
 
 ---
 
-## False Negatives (0)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -179,8 +178,14 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-*Aucun faux négatif (rappel = 100%)*
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 870 | Stock suffisant: 448.2u (82j restants > seuil 19j) |
+
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:56.378Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:27.907Z*

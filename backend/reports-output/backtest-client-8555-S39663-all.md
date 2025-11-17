@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 14 produits prédits, 7 corrects |
+| **Précision** | 53.8% | 13 produits prédits, 7 corrects |
 | **Rappel** | 77.8% | 9 produits réels, 7 détectés |
-| **F1-Score** | 60.9% | Score équilibré global |
+| **F1-Score** | 63.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -149,7 +149,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,7 +173,6 @@
 | [PF0077] FILOU PROVENCALE 5 L | 10 | Stock prédit: 1.0u (2j restants) → prédit 10u mais non commandé |
 | [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
 | [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 40 | Stock prédit: -8.4u (-11j restants) → prédit 40u mais non commandé |
-| [PF1845] FILOU SAMOURAI SQUEEZE 300ML | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
 | [PF0088] FILOU VOL AU VENT 800 GR | 40 | Stock prédit: -28.3u (-35j restants) → prédit 40u mais non commandé |
 | [PF0089] FILOU VOL AU VENT 400 GR | 30 | Stock prédit: -15.1u (-17j restants) → prédit 30u mais non commandé |
 
@@ -206,4 +205,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:30.118Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:20.811Z*

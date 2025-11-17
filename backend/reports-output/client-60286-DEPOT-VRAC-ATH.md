@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - DEPOT VRAC ATH
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 60286
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 804ms
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
@@ -11,11 +11,11 @@
 
 
 **Produits à risque détectés: 69**
-- Urgents (rupture ≤ 0j): 46
-- Modérés (0 < rupture ≤ 19j): 23
+- Urgents (rupture ≤ 0j): 42
+- Modérés (0 < rupture ≤ 19j): 27
 
 **Total produits (Phase 1): 69**
-**Quantité totale brute: 139 unités**
+**Quantité totale brute: 140 unités**
 
 ### Détails par produit
 
@@ -890,12 +890,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> (ID: 18310) - 1 unités</summary>
+<summary>🟡 <strong>[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> (ID: 18310) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0217
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0172
+- **Stock restant estimé**: 0.21
+- **Jours avant rupture**: **12j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -903,23 +903,25 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37974 | 1 | 32.40€ |
+| 2025-02-17 | S34911 | 2 | 32.40€ |
+| 2025-01-03 | S34043 | 1 | 32.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> (ID: 18309) - 1 unités</summary>
+<summary>🟡 <strong>[NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> (ID: 18309) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0217
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0172
+- **Stock restant estimé**: 0.21
+- **Jours avant rupture**: **12j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -927,23 +929,25 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37974 | 1 | 32.40€ |
+| 2025-02-17 | S34911 | 2 | 32.40€ |
+| 2025-01-03 | S34043 | 1 | 32.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18308) - 1 unités</summary>
+<summary>🟡 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18308) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0217
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0172
+- **Stock restant estimé**: 0.21
+- **Jours avant rupture**: **12j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -951,12 +955,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37974 | 1 | 32.40€ |
+| 2025-02-17 | S34911 | 2 | 32.40€ |
+| 2025-01-03 | S34043 | 1 | 32.40€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1222,12 +1228,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[RIT07] RITCHIE Orange - canette 330ml</strong> (ID: 18370) - 1 unités</summary>
+<summary>🟡 <strong>[RIT07] RITCHIE Orange - canette 330ml</strong> (ID: 18370) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0217
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0160
+- **Stock restant estimé**: 0.27
+- **Jours avant rupture**: **16j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1235,13 +1241,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-09 | S37974 | 1 | 30.96€ |
+| 2025-02-17 | S34911 | 2 | 30.96€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -1909,7 +1916,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 2757.11€**
+- **Montant initial: 2788.07€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1961,7 +1968,7 @@
 | [RISH01] RISH kombucha BIO ... | 18359 | 1 | 0 | 1 | 25.08€ | 25.08€ |
 | [PAO03] PAOLA cola canette ... | 18344 | 10 | 0 | 10 | 25.20€ | 252.00€ |
 | [RIT08] RITCHIE Citron - ca... | 18363 | 1 | 0 | 1 | 30.96€ | 30.96€ |
-| [RIT07] RITCHIE Orange - ca... | 18370 | 1 | 0 | 1 | 30.96€ | 30.96€ |
+| [RIT07] RITCHIE Orange - ca... | 18370 | 2 | 0 | 2 | 30.96€ | 61.92€ |
 | [RIT10] RITCHIE Cola ZERO -... | 18368 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [RIT09] RITCHIE Cola - cane... | 18366 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [LV332] LV Tartinade Olive ... | 14452 | 1 | 0 | 1 | 14.52€ | 14.52€ |
@@ -1988,6 +1995,6 @@
 | [NUT07] NUTS & BERRIES Bar ... | 18323 | 4 | 0 | 4 | 17.55€ | 70.20€ |
 | [JOY01] JOY! Organic Sweet ... | 18269 | 3 | 0 | 3 | 27.36€ | 82.08€ |
 
-**Total (Phase 2.5): 2757.11€**
+**Total (Phase 2.5): 2788.07€**
 
 ---

@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Conserverie Et Moutarderie Belge
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:58
 **🆔 Client ID:** 30
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.5s
+**⏱️ Durée d'exécution:** 2.2s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 36**
-- Urgents (rupture ≤ 0j): 33
+**Produits à risque détectés: 35**
+- Urgents (rupture ≤ 0j): 32
 - Modérés (0 < rupture ≤ 19j): 3
 
-**Total produits (Phase 1): 36**
-**Quantité totale brute: 254 unités**
+**Total produits (Phase 1): 35**
+**Quantité totale brute: 252 unités**
 
 ### Détails par produit
 
@@ -204,30 +204,6 @@
 - **Quantités historiques**: [161, 117]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 139
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF023] JF MOUTARDE DOUCE 250ML WECK</strong> (ID: 16754) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0290
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-24 | S38225 | 2 | 13.86€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -936,7 +912,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 13901382.08€**
+- **Montant initial: 13901354.37€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -952,7 +928,6 @@
 | [JF036] JF MITRAILLETTE SQU... | 16753 | 1 | 0 | 1 | 16.20€ | 16.20€ |
 | [JF039] JF MAYO BARAKI SQUE... | 16738 | 1 | 0 | 1 | 18.84€ | 18.84€ |
 | [LV036] LV Olives Vertes dé... | 13101 | 139 | 0 | 139 | 99999.99€ | 13899998.61€ |
-| [JF023] JF MOUTARDE DOUCE 2... | 16754 | 2 | 0 | 2 | 13.86€ | 27.71€ |
 | [JF034] JF SAMOURAI SQUEEZE... | 16760 | 1 | 0 | 1 | 14.99€ | 14.99€ |
 | [JF001] JF MAYONNAI TRUFFES... | 16745 | 8 | 0 | 8 | 18.11€ | 144.92€ |
 | [JF055] JF HONEY MUSTARD MA... | 19355 | 3 | 0 | 3 | 14.52€ | 43.56€ |
@@ -982,6 +957,6 @@
 | [FIL09] FIL MOUTARDE 300G B... | 19238 | 1 | 0 | 1 | 10.80€ | 10.80€ |
 | [DIS0003] Display TVF bois | 17251 | 4 | 0 | 4 | 0.00€ | 0.00€ |
 
-**Total (Phase 2.5): 13901382.08€**
+**Total (Phase 2.5): 13901354.37€**
 
 ---

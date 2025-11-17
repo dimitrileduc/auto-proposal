@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.60 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 56.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 2.20 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 22.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -142,7 +142,7 @@
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 13 | 10 | 3.0 | 30.0% | ✅ partial |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 15 | 15 | 0.0 | 0.0% | 🎯 exact |
-| [REB06] REB chips bio - paprika fumé 35g | 35 | 10 | 25.0 | 250.0% | ✅ partial |
+| [REB06] REB chips bio - paprika fumé 35g | 18 | 10 | 8.0 | 80.0% | ✅ partial |
 
 
 ---
@@ -171,7 +171,7 @@
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 6 | Stock prédit: 1.3u (7j restants) → prédit 6u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 30 | Stock prédit: -19.8u (-19j restants) → prédit 30u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 30 | Stock prédit: -4.0u (-5j restants) → prédit 30u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: 0.1u (6j restants) → prédit 2u mais non commandé |
 | [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 5 | Stock prédit: -3.3u (-57j restants) → prédit 5u mais non commandé |
 | [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 4 | Stock prédit: -2.4u (-52j restants) → prédit 4u mais non commandé |
 
@@ -197,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:14.443Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:19.269Z*

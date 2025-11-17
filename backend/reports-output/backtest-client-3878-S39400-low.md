@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 2 produits prédits, 2 corrects |
-| **Rappel** | 66.7% | 3 produits réels, 2 détectés |
-| **F1-Score** | 80.0% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 30.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,14 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO | 100 | 40 | 60.0 | 150.0% | ✅ partial |
-| [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | 150 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -163,7 +156,7 @@
 
 ---
 
-## False Negatives (1)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -183,9 +176,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | Stock suffisant: -713.1u (-145j restants > seuil 19j) |
+| [PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO | 40 | Stock suffisant: -46.7u (-56j restants > seuil 19j) |
 | [CONS070] PALETTE EURO | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:21.240Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:27.059Z*

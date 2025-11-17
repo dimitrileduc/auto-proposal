@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 56.1% | 41 produits prédits, 23 corrects |
-| **Rappel** | 95.8% | 24 produits réels, 23 détectés |
-| **F1-Score** | 70.8% | Score équilibré global |
+| **Précision** | 55.8% | 43 produits prédits, 24 corrects |
+| **Rappel** | 100.0% | 24 produits réels, 24 détectés |
+| **F1-Score** | 71.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.96 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 56.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| **MAE** | 0.92 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 54.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
 | Partial Match (>0u) | 20 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (23)
+## True Positives (24)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -159,13 +159,14 @@
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [LD011] LD Organic Kids Spread 180 g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (18)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -201,13 +202,14 @@
 | [LD012] LD Organic Samphire Spread 135 g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -1.0u (-50j restants) → prédit 1u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: -1.2u (-56j restants) → prédit 2u mais non commandé |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: -1.5u (-59j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | Stock prédit: -1.5u (-45j restants) → prédit 3u mais non commandé |
 | [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.8u (-61j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -222,14 +224,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:18.288Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:31.522Z*

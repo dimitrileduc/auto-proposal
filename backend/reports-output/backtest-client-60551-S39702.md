@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 3 produits prédits, 3 corrects |
-| **Rappel** | 37.5% | 8 produits réels, 3 détectés |
-| **F1-Score** | 54.5% | Score équilibré global |
+| **Précision** | 100.0% | 4 produits prédits, 4 corrects |
+| **Rappel** | 50.0% | 8 produits réels, 4 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.67 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1.75 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 106.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,6 +141,7 @@
 | [LV188] LV Tartinade Aubergine  380g | 9 | 12 | 3.0 | 25.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [REB05] REB chips bio - sel de mer 35g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 
 
 ---
@@ -164,7 +165,7 @@
 
 ---
 
-## False Negatives (5)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -187,10 +188,9 @@
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
 | [REB06] REB chips bio - paprika fumé 35g | 1 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
-| [REB05] REB chips bio - sel de mer 35g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:37.175Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:10.706Z*

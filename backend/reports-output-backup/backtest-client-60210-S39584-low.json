@@ -1,0 +1,22 @@
+{
+  "clientId": 60210,
+  "clientName": "BIOK BOIS DE VILLERS",
+  "orderName": "S39584",
+  "orderDate": "2025-10-08 07:05:30",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 14,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  }
+}

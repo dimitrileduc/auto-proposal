@@ -1,96 +1,24 @@
 # 📊 Rapport Auto-Proposal - CRF HYPER MARKET EUPEN
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 29069
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.9s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 63**
-- Urgents (rupture ≤ 0j): 52
-- Modérés (0 < rupture ≤ 19j): 11
+**Produits à risque détectés: 56**
+- Urgents (rupture ≤ 0j): 41
+- Modérés (0 < rupture ≤ 19j): 15
 
-**Total produits (Phase 1): 63**
-**Quantité totale brute: 92 unités**
+**Total produits (Phase 1): 56**
+**Quantité totale brute: 81 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[MF0060] MF Passata</strong> (ID: 17768) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-17 | S39202 | 1 | 12.37€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0053] MF Maïs 500g</strong> (ID: 16951) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-17 | S39202 | 1 | 11.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0013] MF Olives Vertes 500g</strong> (ID: 553) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-17 | S39202 | 1 | 27.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
 
 <details>
 <summary>🟡 <strong>[TVF001] TVF TARTINADE BIO MANGUE 180g</strong> (ID: 16827) - 2 unités</summary>
@@ -174,30 +102,6 @@
 - **Confiance**: high
 - **Quantités historiques**: [1, 1, 1, 2, 3]
 - **Nombre commandes**: 5
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF017] JF SAUCE COCKTAIL 250ML WECK</strong> (ID: 16771) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-17 | S39202 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -757,30 +661,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0021] MF Sauce BBQ 250ml</strong> (ID: 561) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0217
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-07 | S38355 | 1 | 18.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> (ID: 16736) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -802,30 +682,6 @@
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF028] JF VINAIGRET CAESAR WECK 200ML</strong> (ID: 16785) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0238
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-30 | S37764 | 2 | 27.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -1034,9 +890,9 @@
 <summary>🔴 <strong>[MF0047] MF Mayonnaise 250ml</strong> (ID: 14850) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0119
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0171
+- **Stock restant estimé**: -0.43
+- **Jours avant rupture**: **-25j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1044,12 +900,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-30 | S37764 | 1 | 16.50€ |
+| 2024-12-12 | S33853 | 1 | 16.50€ |
+| 2024-08-29 | S31960 | 2 | 16.50€ |
+| 2024-08-06 | S31533 | 1 | 16.50€ |
+| 2024-05-16 | S30320 | 1 | 16.50€ |
+| 2024-04-23 | S29909 | 1 | 16.50€ |
+| 2024-01-09 | S28435 | 2 | 16.50€ |
+| 2023-11-23 | S27779 | 1 | 16.50€ |
+| 2023-10-20 | S04949 | 2 | 16.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 2, 1, 1]
+- **Nombre commandes**: 9
 - **Valeur médiane**: 1
 
 </details>
@@ -1206,12 +1070,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g</strong> (ID: 16828) - 1 unités</summary>
+<summary>🟡 <strong>[TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g</strong> (ID: 16828) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0119
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0113
+- **Stock restant estimé**: 0.05
+- **Jours avant rupture**: **4j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1219,12 +1083,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-30 | S37764 | 1 | 10.80€ |
+| 2024-12-12 | S33853 | 1 | 10.80€ |
+| 2024-10-04 | S32604 | 1 | 10.80€ |
+| 2024-06-19 | S30869 | 1 | 10.80€ |
+| 2024-06-04 | S30596 | 1 | 10.80€ |
+| 2024-05-16 | S30320 | 0 | 10.80€ |
+| 2024-04-09 | S29674 | 1 | 10.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -1280,12 +1150,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> (ID: 16777) - 1 unités</summary>
+<summary>🟡 <strong>[JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> (ID: 16777) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0093
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0088
+- **Stock restant estimé**: 0.05
+- **Jours avant rupture**: **5j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1293,12 +1163,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-06 | S37278 | 1 | 19.50€ |
+| 2025-01-08 | S34119 | 1 | 19.50€ |
+| 2024-08-06 | S31533 | 1 | 19.50€ |
+| 2024-05-16 | S30320 | 0 | 19.50€ |
+| 2024-03-05 | S29183 | 2 | 19.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 0, 2]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1500,36 +1374,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF021] JF PICKLES 350 ML</strong> (ID: 16759) - 1 unités</summary>
+<summary>🟡 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0075
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-12 | S36545 | 1 | 20.94€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0075
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0067
+- **Stock restant estimé**: 0.11
+- **Jours avant rupture**: **15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1537,12 +1387,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-12 | S36545 | 1 | 23.04€ |
+| 2024-06-19 | S30869 | 1 | 23.04€ |
+| 2024-05-16 | S30320 | 0 | 23.04€ |
+| 2024-03-21 | S29450 | 1 | 23.04€ |
+| 2024-02-05 | S28816 | 1 | 23.04€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 0, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1572,12 +1426,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> (ID: 16832) - 4 unités</summary>
+<summary>🟡 <strong>[TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> (ID: 16832) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0253
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0226
+- **Stock restant estimé**: 0.43
+- **Jours avant rupture**: **19j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1585,13 +1439,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-17 | S36161 | 4 | 10.80€ |
+| 2025-03-20 | S35471 | 1 | 10.80€ |
+| 2024-12-12 | S33853 | 2 | 10.80€ |
+| 2024-12-02 | S33336 | 1 | 10.80€ |
+| 2024-10-04 | S32604 | 1 | 10.80€ |
+| 2024-06-04 | S30596 | 1 | 10.80€ |
+| 2024-05-16 | S30320 | 1 | 10.80€ |
+| 2024-04-09 | S29674 | 1 | 10.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [4]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 4
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [4, 1, 2, 1, 1]
+- **Nombre commandes**: 8
+- **Valeur médiane**: 1
 
 </details>
 
@@ -1599,9 +1460,9 @@
 <summary>🔴 <strong>[MF0061] MF Compote</strong> (ID: 17769) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0063
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0068
+- **Stock restant estimé**: -0.07
+- **Jours avant rupture**: **-10j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1609,12 +1470,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-17 | S36161 | 1 | 12.37€ |
+| 2024-12-02 | S33336 | 1 | 12.37€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -1627,7 +1489,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 2305.85€**
+- **Montant initial: 2109.04€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1636,13 +1498,9 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [MF0060] MF Passata | 17768 | 1 | 0 | 1 | 12.37€ | 12.37€ |
-| [MF0053] MF Maïs 500g | 16951 | 1 | 0 | 1 | 11.40€ | 11.40€ |
-| [MF0013] MF Olives Vertes 500g | 553 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [TVF001] TVF TARTINADE BIO ... | 16827 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 | [TVF005] TVF TARTINADE BIO ... | 16824 | 3 | 0 | 3 | 10.80€ | 32.40€ |
 | [TVF003] TVF TARTINADE BIO ... | 16826 | 1 | 0 | 1 | 10.80€ | 10.80€ |
-| [JF017] JF SAUCE COCKTAIL 2... | 16771 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF048] JF DISPLAY SAUCES 2... | 17396 | 1 | 0 | 1 | 390.00€ | 390.00€ |
 | [FIL21] FIL BOULETTES SAUCE... | 19250 | 1 | 0 | 1 | 39.56€ | 39.56€ |
 | [FIL18] FIL VOL AU VENT 800... | 19247 | 4 | 0 | 4 | 44.89€ | 179.56€ |
@@ -1664,9 +1522,7 @@
 | [LD013] LD Tuscan Organic S... | 19398 | 2 | 0 | 2 | 14.50€ | 29.00€ |
 | [MF0031] MF Tarti Olives ve... | 571 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [MF0035] MF Tarti Tomate Ai... | 575 | 3 | 0 | 3 | 14.46€ | 43.38€ |
-| [MF0021] MF Sauce BBQ 250ml | 561 | 1 | 0 | 1 | 18.60€ | 18.60€ |
 | [JF040] JF CURRY KETCHUP SQ... | 16736 | 1 | 0 | 1 | 26.40€ | 26.40€ |
-| [JF028] JF VINAIGRET CAESAR... | 16785 | 2 | 0 | 2 | 27.00€ | 54.00€ |
 | [JF003] JF MAYONNAIS WASABI... | 16747 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF018] JF SAUCE SAMOURAI 2... | 16778 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF004] JF MAYONNAIS POIVRE... | 16746 | 1 | 0 | 1 | 19.50€ | 19.50€ |
@@ -1694,12 +1550,11 @@
 | [ORG09] ORGANICA crunchy fr... | 18339 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [ORG10] ORGANICA crunchy fr... | 18342 | 1 | 0 | 1 | 30.72€ | 30.72€ |
 | [FIL27] FIL MOUTARDE 300ML ... | 19256 | 1 | 0 | 1 | 20.27€ | 20.27€ |
-| [JF021] JF PICKLES 350 ML | 16759 | 1 | 0 | 1 | 20.94€ | 20.94€ |
 | [MF0050] MF Cornichons aigr... | 16936 | 1 | 0 | 1 | 23.04€ | 23.04€ |
 | [FIL20] FIL CARBONNADES 800... | 19249 | 1 | 0 | 1 | 62.60€ | 62.60€ |
-| [TVF009] TVF TARTINADE BIO ... | 16832 | 4 | 0 | 4 | 10.80€ | 43.20€ |
+| [TVF009] TVF TARTINADE BIO ... | 16832 | 1 | 0 | 1 | 10.80€ | 10.80€ |
 | [MF0061] MF Compote | 17769 | 1 | 0 | 1 | 12.37€ | 12.37€ |
 
-**Total (Phase 2.5): 2305.85€**
+**Total (Phase 2.5): 2109.04€**
 
 ---

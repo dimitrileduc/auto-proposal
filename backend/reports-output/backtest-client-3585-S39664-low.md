@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,10 +157,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
 | [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | Stock prédit: 0.0u (0j restants) → prédit 52u mais non commandé |
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 24 | Stock prédit: 0.0u (0j restants) → prédit 24u mais non commandé |
 
 
 ---
@@ -190,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:39.836Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:43.582Z*

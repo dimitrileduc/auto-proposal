@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 24 produits prédits, 8 corrects |
+| **Précision** | 34.8% | 23 produits prédits, 8 corrects |
 | **Rappel** | 88.9% | 9 produits réels, 8 détectés |
-| **F1-Score** | 48.5% | Score équilibré global |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (16)
+## False Positives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,14 +177,13 @@
 | [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV136] LV Tartinade Betterave 190g | 4 | Stock prédit: 0.4u (3j restants) → prédit 4u mais non commandé |
-| [LV135] LV Tartinade Basilico 190g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
 | [MF0055] MF Noix de cajou - Curry 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
 | [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 3 | Stock prédit: -0.6u (-10j restants) → prédit 3u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -0.6u (-35j restants) → prédit 2u mais non commandé |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: -0.7u (-66j restants) → prédit 1u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: -0.7u (-66j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
@@ -215,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:06.135Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:08.071Z*

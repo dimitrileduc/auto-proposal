@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Kazidomi France
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 23356
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.0s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 9
 
 **Total produits (Phase 1): 18**
-**Quantité totale brute: 222 unités**
+**Quantité totale brute: 217 unités**
 
 ### Détails par produit
 
@@ -471,12 +471,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV097] LV Asperges (origine UE)  280 g </strong> (ID: 13083) - 10 unités</summary>
+<summary>🔴 <strong>[LV097] LV Asperges (origine UE)  280 g </strong> (ID: 13083) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0621
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.1338
+- **Stock restant estimé**: -11.54
+- **Jours avant rupture**: **-86j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -484,13 +484,23 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-29 | S36237 | 10 | 20.81€ |
+| 2025-03-18 | S35461 | 3 | 20.81€ |
+| 2024-12-10 | S33773 | 4 | 20.81€ |
+| 2024-10-04 | S32614 | 5 | 20.81€ |
+| 2024-09-03 | S32054 | 6 | 20.81€ |
+| 2024-08-14 | S31643 | 5 | 20.81€ |
+| 2024-07-01 | S31052 | 12 | 3.47€ |
+| 2024-05-28 | S30490 | 2 | 20.81€ |
+| 2024-03-22 | S29467 | 18 | 3.47€ |
+| 2023-11-29 | S27914 | 30 | 3.47€ |
+| 2023-10-13 | S04811 | 2 | 20.81€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [10]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 10
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [10, 3, 4, 5, 6]
+- **Nombre commandes**: 11
+- **Valeur médiane**: 5
 
 </details>
 
@@ -502,7 +512,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 2963.24€**
+- **Montant initial: 2859.20€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -528,8 +538,8 @@
 | [LV138] LV Tartinade Carott... | 13072 | 10 | 0 | 10 | 20.70€ | 206.98€ |
 | [LV126] LV Tartinade Tomate... | 13070 | 10 | 0 | 10 | 11.82€ | 118.23€ |
 | [LV217] LV Tartinade Basili... | 13077 | 10 | 0 | 10 | 21.75€ | 217.51€ |
-| [LV097] LV Asperges (origin... | 13083 | 10 | 0 | 10 | 20.81€ | 208.08€ |
+| [LV097] LV Asperges (origin... | 13083 | 5 | 0 | 5 | 20.81€ | 104.04€ |
 
-**Total (Phase 2.5): 2963.24€**
+**Total (Phase 2.5): 2859.20€**
 
 ---

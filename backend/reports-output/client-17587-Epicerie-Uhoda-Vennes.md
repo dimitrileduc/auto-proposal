@@ -1,20 +1,20 @@
 # 📊 Rapport Auto-Proposal - Epicerie Uhoda Vennes
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 17587
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 43**
-- Urgents (rupture ≤ 0j): 31
-- Modérés (0 < rupture ≤ 19j): 12
+**Produits à risque détectés: 42**
+- Urgents (rupture ≤ 0j): 29
+- Modérés (0 < rupture ≤ 19j): 13
 
-**Total produits (Phase 1): 43**
+**Total produits (Phase 1): 42**
 **Quantité totale brute: 54 unités**
 
 ### Détails par produit
@@ -389,30 +389,6 @@
 - **Confiance**: high
 - **Quantités historiques**: [1, 1, 1, 1, 1]
 - **Nombre commandes**: 5
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV187] LV Tartinade Mangue Curry 380g</strong> (ID: 13073) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0250
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-25 | S38692 | 1 | 24.97€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -860,36 +836,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV189] LV Tartinade Houmous Type 380g</strong> (ID: 13075) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0106
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-02 | S37800 | 1 | 25.15€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml</strong> (ID: 18285) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0106
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0137
+- **Stock restant estimé**: -0.29
+- **Jours avant rupture**: **-20j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -897,12 +849,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-02 | S37800 | 1 | 16.68€ |
+| 2025-03-21 | S35557 | 1 | 16.68€ |
+| 2025-02-27 | S35111 | 1 | 16.68€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -933,12 +887,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[CB001] CB Apple juice 25cl</strong> (ID: 14937) - 1 unités</summary>
+<summary>🟡 <strong>[CB001] CB Apple juice 25cl</strong> (ID: 14937) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
 - **Consommation/jour**: 0.0088
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Stock restant estimé**: 0.01
+- **Jours avant rupture**: **1j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -946,12 +900,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-13 | S37419 | 1 | 28.80€ |
+| 2025-02-18 | S34925 | 1 | 28.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -978,6 +933,32 @@
 - **Quantités historiques**: [2, 1]
 - **Nombre commandes**: 2
 - **Valeur médiane**: 2
+
+</details>
+
+<details>
+<summary>🔴 <strong>[ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml</strong> (ID: 18337) - 1 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0074
+- **Stock restant estimé**: -0.84
+- **Jours avant rupture**: **-113j**
+- **Seuil réappro**: 19j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-06-13 | S37419 | 0 | 15.48€ |
+| 2025-03-21 | S35557 | 1 | 15.48€ |
+| 2025-01-08 | S34033 | 1 | 15.48€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [0, 1, 1]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 1
 
 </details>
 
@@ -1011,9 +992,9 @@
 <summary>🔴 <strong>[LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> (ID: 13050) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0073
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0120
+- **Stock restant estimé**: -0.64
+- **Jours avant rupture**: **-53j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1021,12 +1002,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-20 | S36923 | 1 | 19.09€ |
+| 2025-03-21 | S35557 | 1 | 19.09€ |
+| 2025-01-27 | S34520 | 1 | 19.09€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1035,9 +1018,9 @@
 <summary>🔴 <strong>[LV133] LV Tartinade Ananas Coco 190g</strong> (ID: 13065) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0073
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0106
+- **Stock restant estimé**: -0.45
+- **Jours avant rupture**: **-42j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1045,12 +1028,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-20 | S36923 | 1 | 13.72€ |
+| 2024-11-12 | S33230 | 1 | 13.32€ |
+| 2024-09-24 | S32398 | 1 | 13.32€ |
+| 2024-06-26 | S30977 | 2 | 13.32€ |
+| 2024-03-18 | S29374 | 1 | 13.32€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1084,9 +1071,9 @@
 <summary>🔴 <strong>[LV138] LV Tartinade Carotte gingembre  380g</strong> (ID: 13072) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0084
+- **Stock restant estimé**: -0.48
+- **Jours avant rupture**: **-57j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1094,12 +1081,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35898 | 1 | 23.67€ |
+| 2025-02-27 | S35111 | 1 | 23.67€ |
+| 2025-01-27 | S34520 | 1 | 23.67€ |
+| 2024-01-04 | S28368 | 2 | 22.98€ |
+| 2023-10-19 | S04886 | 1 | 22.98€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -1129,12 +1120,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB05] REB chips bio - sel de mer 35g</strong> (ID: 18416) - 1 unités</summary>
+<summary>🔴 <strong>[REB05] REB chips bio - sel de mer 35g</strong> (ID: 18416) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0112
+- **Stock restant estimé**: -0.97
+- **Jours avant rupture**: **-87j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1142,13 +1133,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-10 | S35898 | 1 | 17.60€ |
+| 2025-01-08 | S34033 | 2 | 17.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
@@ -1160,7 +1152,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1094.56€**
+- **Montant initial: 1077.52€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1182,7 +1174,6 @@
 | [LV132] LV Tartinade Houmou... | 13063 | 1 | 0 | 1 | 13.29€ | 13.29€ |
 | [LV330] LV BIO Tartinade To... | 14450 | 2 | 0 | 2 | 14.52€ | 29.04€ |
 | [LV131] LV Tartinade Potiro... | 13062 | 1 | 0 | 1 | 13.10€ | 13.10€ |
-| [LV187] LV Tartinade Mangue... | 13073 | 1 | 0 | 1 | 24.97€ | 24.97€ |
 | [LV139] LV Tartinade Paprik... | 13074 | 1 | 0 | 1 | 24.97€ | 24.97€ |
 | [MATE02] MATE MATE thé glac... | 18299 | 2 | 0 | 2 | 32.40€ | 64.80€ |
 | [NOD01] NODA limonade bio f... | 18310 | 1 | 0 | 1 | 32.40€ | 32.40€ |
@@ -1200,19 +1191,19 @@
 | [LB004] LB Blonde (6,5%) 33CL | 13644 | 1 | 0 | 1 | 42.08€ | 42.08€ |
 | [LV137] LV Tartinade Lentil... | 13069 | 1 | 0 | 1 | 13.72€ | 13.72€ |
 | [LV217] LV Tartinade Basili... | 13077 | 1 | 0 | 1 | 25.09€ | 25.09€ |
-| [LV189] LV Tartinade Houmou... | 13075 | 1 | 0 | 1 | 25.15€ | 25.15€ |
 | [UPI06] Jus de pomme-rhubar... | 18285 | 1 | 0 | 1 | 16.68€ | 16.68€ |
 | [UPI03] Jus de pomme-poire ... | 18284 | 1 | 0 | 1 | 16.68€ | 16.68€ |
 | [CB001] CB Apple juice 25cl | 14937 | 1 | 0 | 1 | 28.80€ | 28.80€ |
 | [LV134] LV BIO Tartinade Ol... | 13066 | 2 | 0 | 2 | 14.15€ | 28.30€ |
+| [ALO32] ORGANIC CRUNCH aloe... | 18337 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [ALO33] ORGANIC CRUNCH aloe... | 18334 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [LV153] LV Vinaigrette Cibo... | 13050 | 1 | 0 | 1 | 19.09€ | 19.09€ |
 | [LV133] LV Tartinade Ananas... | 13065 | 1 | 0 | 1 | 13.72€ | 13.72€ |
 | [ALO31] ORGANIC CRUNCH aloe... | 18335 | 1 | 0 | 1 | 15.48€ | 15.48€ |
 | [LV138] LV Tartinade Carott... | 13072 | 1 | 0 | 1 | 23.67€ | 23.67€ |
 | [ALO30] ORGANIC CRUNCH aloe... | 18336 | 1 | 0 | 1 | 15.48€ | 15.48€ |
-| [REB05] REB chips bio - sel... | 18416 | 1 | 0 | 1 | 17.60€ | 17.60€ |
+| [REB05] REB chips bio - sel... | 18416 | 2 | 0 | 2 | 17.60€ | 35.20€ |
 
-**Total (Phase 2.5): 1094.56€**
+**Total (Phase 2.5): 1077.52€**
 
 ---

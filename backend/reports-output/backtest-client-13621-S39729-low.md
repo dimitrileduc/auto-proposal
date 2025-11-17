@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 141 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 83 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 7 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (141)
+## False Positives (83)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,11 +157,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1951] LV TARTINADE BIO BASILIC 400G | 166 | Stock prédit: 0.0u (0j restants) → prédit 166u mais non commandé |
-| [PF1791] TARTI ALNATUR BIO OLIVE 200ML | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
-| [PF1473] JF MAYONNAIS POIVRE 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1784] JF MOUTARDE DOUCE 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1601] JF SAMOURAI SQUEEZE 300ML | 130 | Stock prédit: 0.0u (0j restants) → prédit 130u mais non commandé |
 | [RF001] REFIELD Compote de pommes 500g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RF002] REFIELD Passata tomates 500G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF3400] JF MAYONNAISE OEUFS SQUEEZE 300ML | 112 | Stock prédit: 0.0u (0j restants) → prédit 112u mais non commandé |
@@ -188,16 +183,9 @@
 | [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 36 | Stock prédit: 0.0u (0j restants) → prédit 36u mais non commandé |
-| [PF1462] LV AIOLI BIO 200ML | 185 | Stock prédit: 0.0u (0j restants) → prédit 185u mais non commandé |
 | [UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
-| [PF1703] LV MAYONNAISE BIO 470ML WECK | 140 | Stock prédit: 0.0u (0j restants) → prédit 140u mais non commandé |
-| [PF1639] JF BURGER SQUEEZE 300ML | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PI3102] PI TARTI PAPRIKA CONS 250 | 1488 | Stock prédit: 0.0u (0j restants) → prédit 1488u mais non commandé |
-| [PF1811] LV SAUCE AIOLI PESTO 250M WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1819] LV VINAIGRETTE CIBOU WECK 200M | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF1849] JF KETCHUP SQUEEZE 300ML | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
 | [PF3387] JF VINAIGRETTE CAESAR 240ML | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
 | [PF3383] JF VINAIGRETTE CIBOULETTE 240ML  | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
 | [PF3386] JF VINAIGRETTE MIEL MOUTARDE 240ML | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
@@ -205,56 +193,22 @@
 | [PF3384] JF VINAIGRETTE FINES HERBES 240ML  | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
 | [PF1694] LD FR TARTINAD BIO POIVRON 200 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [PF2937] LD FR TARTINADE BIO POIS 200 | 100 | Stock prédit: -0.0u (0j restants) → prédit 100u mais non commandé |
-| [PF1768] LV TARTINADE BIO TRUFFES 135G | 500 | Stock prédit: 0.0u (0j restants) → prédit 500u mais non commandé |
-| [PF3321] LV BE TARTINADE BIO KIDS 190G | 466 | Stock prédit: 0.0u (0j restants) → prédit 466u mais non commandé |
 | [PF3395] LV SDP SAUCE COCKTAIL 125G | 2100 | Stock prédit: 0.0u (0j restants) → prédit 2100u mais non commandé |
 | [PF3392] LV FR TARTINAPERO BIO ASPERGE BOCAL 190G | 434 | Stock prédit: 0.0u (0j restants) → prédit 434u mais non commandé |
-| [PF1721] LV VIN CAESAR PET 250 BIO | 260 | Stock prédit: 0.0u (0j restants) → prédit 260u mais non commandé |
-| [PF1720] LV VIN MIEL MOU PET 250 BIO | 260 | Stock prédit: 0.0u (0j restants) → prédit 260u mais non commandé |
-| [PI3308] PI TARTINADE AUBERGINE BIO ECOTERRA CONS 250G | 1152 | Stock prédit: 0.0u (0j restants) → prédit 1152u mais non commandé |
 | [OCC05] OCCHIOLINO premium arancello 500ml | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [JOY06] JOY! Confiture bio à la rhubarbe 370g | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
 | [JOY08] JOY! Confiture bio à la framboise 370g | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF3236] LV MAYONNAISE WASABI 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF0524] FILOU SAUCE TOMATE 815 GR | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PI3307] PI TARTINADE POMME BIO CONS 250G | 1777 | Stock prédit: 0.0u (0j restants) → prédit 1777u mais non commandé |
-| [PI3309] PI TARTINADE CAROTTE BIO ECOTERRA CONS 250G | 1527 | Stock prédit: 0.0u (0j restants) → prédit 1527u mais non commandé |
-| [PF3338] LV DE BROTAUFSTRICH BIO POTIRON 180G | 616 | Stock prédit: 0.0u (0j restants) → prédit 616u mais non commandé |
-| [PF1484] JF VINAIGRETTE FH WECK 200ML | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF3227] JF SAUCE LIEGEOISE 380GX6 | 438 | Stock prédit: 0.0u (0j restants) → prédit 438u mais non commandé |
-| [PF3226] JF SAUCE LAPIN 380GX6 | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF1534] JF SAUCE COCKTAIL 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1540] JF SAUCE SAMOURAI 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF3371] JF MAYONNAISE MIEL MOUTARDE 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF3372] JF SAUCE CHIPOTLE 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
 | [fsv05] Noix de pecan nature bio vrac 2,2kg  | 8 | Stock prédit: 0.0u (0j restants) → prédit 8u mais non commandé |
 | [KOKO01] KOKO Kombucha original 330ml | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
-| [PI3103] PI TARTI DATTES CONS 250G BIO | 1596 | Stock prédit: 0.0u (0j restants) → prédit 1596u mais non commandé |
-| [PI3202] PI TARTI OLIVE CONS 250 | 1560 | Stock prédit: 0.0u (0j restants) → prédit 1560u mais non commandé |
-| [PI3203] PI TARTI MANGUE CONS 250 | 1596 | Stock prédit: 0.0u (0j restants) → prédit 1596u mais non commandé |
-| [PF1770] LV MOUT ANCIENNE BIO 200 | 185 | Stock prédit: 0.0u (0j restants) → prédit 185u mais non commandé |
 | [AQUA01] AQUAPAX - eau minérale naturelle 500ml | 111 | Stock prédit: 0.0u (0j restants) → prédit 111u mais non commandé |
-| [PF1924] JF PICKLES 350 ML | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1688] JF BBQ SQUEEZE 300ML | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF3240] TVF TARTINADE BIO BETTERAVE RAIFORT 180G | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
 | [JOY05] JOY! Confiture bio à la cerise 370g | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
 | [JOY01] JOY! Confiture bio à l' orange douce 370g | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PI3267] PI MAYONNAISE BIO CONS 250ML | 640 | Stock prédit: 0.0u (0j restants) → prédit 640u mais non commandé |
-| [PF1850] JF MAYO BARAKI SQUEEZE 300ML | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
 | [LEA05] LEAMO limonade bio au citron 330ml | 27 | Stock prédit: 0.0u (0j restants) → prédit 27u mais non commandé |
 | [LEA06] LEAMO maté 330ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [LEA07] LEAMO orangeade bio 330ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [LEA10] LEAMO ginger beer bio 330ml | 30 | Stock prédit: 0.0u (0j restants) → prédit 30u mais non commandé |
-| [PF0539] JF VOL AU VENT 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1563] LV AIOLI PESTO BIO 200ML | 185 | Stock prédit: 0.0u (0j restants) → prédit 185u mais non commandé |
-| [PF2003] TVF TARTINADE BIO PAPRIKA200ML | 354 | Stock prédit: 0.0u (0j restants) → prédit 354u mais non commandé |
-| [PF2004] TVF TARTINADE BIO CAROTTE200ML | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
 | [fsv01] Cerneaux de noix nature bio vrac 1,8 kg | 15 | Stock prédit: 0.0u (0j restants) → prédit 15u mais non commandé |
-| [PF1780] TARTINAPERO BIO OLIVE 200ML | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF1781] TARTINAPERO BIO LENTILLE 200ML | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF3322] LV FR TARTINAPERO BIO KIDS 190G | 250 | Stock prédit: 0.0u (0j restants) → prédit 250u mais non commandé |
 | [SOWA01] SOWA citron menthe 250ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [SOWA02] SOWA bissap 250ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [SOWA03] SOWA ginger beer ardent 250ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
@@ -286,18 +240,6 @@
 | [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
 | [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 100 | Stock prédit: 0.0u (0j restants) → prédit 100u mais non commandé |
 | [PF3361] LD FR TARTINADE BIO OIGNON 180G | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF1818] LV VINAIGRETTE MOUTA WECK 200M | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF3309] LV FR TARTINAPERO BIO BROCOLI 190G | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF3308] LV FR TARTINAPERO BIO OIGNON 190G | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF1550] LV MOUTARDE BIO 200ML | 185 | Stock prédit: 0.0u (0j restants) → prédit 185u mais non commandé |
-| [PF1683] LV TARTINADE BIO MANGUE 400G | 166 | Stock prédit: 0.0u (0j restants) → prédit 166u mais non commandé |
-| [PF2002] TVF TARTINADE BIO MANGUE 200ML | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
-| [PF2005] TVF TARTINADE BIO OLIVE 200ML | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF0608] FILOU/LD SAUCE SAMOURAI  10 L | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1628] LV TARTINADE BIO HOUMOUS 200ML | 700 | Stock prédit: 0.0u (0j restants) → prédit 700u mais non commandé |
-| [PF1686] LV TARTINADE BIO PAPRIKA 400G | 166 | Stock prédit: 0.0u (0j restants) → prédit 166u mais non commandé |
-| [PF3234] LV BE TARTINADE BIO LENTILLE BALSAMIQUE 190G | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF3228] LV VOL AU VENT BIO 400 GR | 660 | Stock prédit: 0.0u (0j restants) → prédit 660u mais non commandé |
 
 
 ---
@@ -333,4 +275,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:01.676Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:44.373Z*

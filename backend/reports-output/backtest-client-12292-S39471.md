@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 55.6% | 18 produits prédits, 10 corrects |
-| **Rappel** | 71.4% | 14 produits réels, 10 détectés |
-| **F1-Score** | 62.5% | Score équilibré global |
+| **Précision** | 57.9% | 19 produits prédits, 11 corrects |
+| **Rappel** | 78.6% | 14 produits réels, 11 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.60 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 38.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
+| **MAE** | 0.55 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 34.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (10)
+## True Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,6 +142,7 @@
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0051] MF Kidney Beans 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0027] MF Tarti Aubergine 250g  | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [MF0029] MF Tarti Datte chili 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -184,7 +185,7 @@
 
 ---
 
-## False Negatives (4)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -205,11 +206,10 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 0.5u (29j restants > seuil 19j) |
-| [MF0051] MF Kidney Beans 500g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [VID0010] Consigne casier | 78 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0009] Consigne casier | 13 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:24.269Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:30.571Z*

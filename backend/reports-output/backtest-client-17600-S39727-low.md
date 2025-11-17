@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 22.2% | 9 produits prédits, 2 corrects |
-| **Rappel** | 28.6% | 7 produits réels, 2 détectés |
-| **F1-Score** | 25.0% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 7 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,18 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | 200 | 0.0 | 0.0% | 🎯 exact |
-| [LV356] LV SET 3 X 135G trisauces  SDP | 256 | 256 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (7)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,23 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [LV317] LV "CLASSIQUE" WECK Vinaigrette CIBOULETTE 200ml | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [LV333] LV "CLASSIQUE" WECK Mayonnaise au WASABI 250ml SDP  | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [LV318] LV BIO Tartin'apero Ananas Coco SDP 200 ml  | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [LV353] LV BIO Tartin'apero Kids 200ml | 250 | Stock prédit: 0.0u (0j restants) → prédit 250u mais non commandé |
-| [LV315] LV "CLASSIQUE" WECK Vinaigrette MOUTARDE 200ml | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [LV349] LV BIO Tartin'apero Brocoli 200 ml  | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [LV350] LV BIO Tartin'apero Oignon 200 ml  | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (5)
+## False Negatives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -195,7 +176,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | Stock suffisant: 31.2u (18j restants > seuil 19j) |
 | [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 200 | Stock suffisant: -352.9u (-15j restants > seuil 19j) |
+| [LV356] LV SET 3 X 135G trisauces  SDP | 256 | Stock suffisant: -77.2u (-23j restants > seuil 19j) |
 | [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 400 | Stock suffisant: 154.7u (13j restants > seuil 19j) |
 | [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | Stock suffisant: 357.2u (18j restants > seuil 19j) |
 | [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 414.3u (84j restants > seuil 19j) |
@@ -204,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:24.316Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:13.408Z*

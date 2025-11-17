@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 16.7% | 6 produits prédits, 1 corrects |
-| **Rappel** | 5.0% | 20 produits réels, 1 détectés |
-| **F1-Score** | 7.7% | Score équilibré global |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 20 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (5)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,16 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DIS0003] Display TVF bois | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (19)
+## False Negatives (20)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -204,6 +194,7 @@
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock suffisant: 0.5u (19j restants > seuil 19j) |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock suffisant: -0.1u (-6j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | Stock suffisant: 0.5u (7j restants > seuil 19j) |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock suffisant: -1.0u (-57j restants > seuil 19j) |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 1.1u (22j restants > seuil 19j) |
 | [LD010] LD Organic Truffle Spread 135 g | 1 | Stock suffisant: 0.5u (19j restants > seuil 19j) |
 | [LD014] LD Organic Avocado Spread 180 g | 2 | Stock suffisant: -0.4u (-3j restants > seuil 19j) |
@@ -215,4 +206,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:50.669Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:55.257Z*

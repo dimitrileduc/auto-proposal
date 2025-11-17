@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Epicerie Uhoda Beaufays
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 17669
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 3.4s
 
 ---
 
@@ -1104,9 +1104,9 @@
 <summary>🔴 <strong>[LV345] LV Spread KIDS 200ml Organic</strong> (ID: 17066) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0097
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0150
+- **Stock restant estimé**: -0.55
+- **Jours avant rupture**: **-36j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1114,12 +1114,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-25 | S37681 | 1 | 14.22€ |
+| 2025-01-20 | S34396 | 1 | 14.22€ |
+| 2024-12-10 | S33796 | 1 | 14.22€ |
+| 2024-11-07 | S33178 | 2 | 14.22€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 2]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 27.3% | 33 produits prédits, 9 corrects |
+| **Précision** | 25.7% | 35 produits prédits, 9 corrects |
 | **Rappel** | 69.2% | 13 produits réels, 9 détectés |
-| **F1-Score** | 39.1% | Score équilibré global |
+| **F1-Score** | 37.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (24)
+## False Positives (26)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -193,6 +193,8 @@
 | [LV187] LV Tartinade Mangue Curry 380g | 144 | Stock prédit: 19.1u (7j restants) → prédit 144u mais non commandé |
 | [LV146] LV Sauce Aïoli 200 ml | 100 | Stock prédit: 40.2u (11j restants) → prédit 100u mais non commandé |
 | [LV157] LV Ketchup aux tomates 263 ml bio | 63 | Stock prédit: -28.0u (-37j restants) → prédit 63u mais non commandé |
+| [LV156] LV Sauce barbecue 263 ml bio | 25 | Stock prédit: -23.8u (-63j restants) → prédit 25u mais non commandé |
+| [LV221] LV Cornichons Aigre-Doux 670g | 80 | Stock prédit: -112.7u (-90j restants) → prédit 80u mais non commandé |
 | [LV140] LV Moutarde à l'ancienne  200ml | 30 | Stock prédit: -19.4u (-55j restants) → prédit 30u mais non commandé |
 | [LV220] LV Cornichons Fins au vinaigre 330g | 126 | Stock prédit: -81.4u (-55j restants) → prédit 126u mais non commandé |
 
@@ -227,4 +229,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:02.491Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:44.636Z*

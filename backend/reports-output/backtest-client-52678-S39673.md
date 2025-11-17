@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 71.4% | 14 produits prédits, 10 corrects |
-| **Rappel** | 58.8% | 17 produits réels, 10 détectés |
-| **F1-Score** | 64.5% | Score équilibré global |
+| **Précision** | 76.5% | 17 produits prédits, 13 corrects |
+| **Rappel** | 76.5% | 17 produits réels, 13 détectés |
+| **F1-Score** | 76.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.10 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.31 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 26.9% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 9 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (10)
+## True Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -146,8 +146,11 @@
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV216] LV Biscuits apéro Fromage & Oignon 100g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV214] LV Biscuits apéro tomate basilic 100g bio  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -180,7 +183,7 @@
 
 ---
 
-## False Negatives (7)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -200,15 +203,12 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV136] LV Tartinade Betterave 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [VID0009] Consigne casier | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 18 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:04.435Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:35.732Z*

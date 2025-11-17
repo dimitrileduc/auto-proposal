@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 25.0% | 8 produits prédits, 2 corrects |
+| **Précision** | 28.6% | 7 produits prédits, 2 corrects |
 | **Rappel** | 40.0% | 5 produits réels, 2 détectés |
-| **F1-Score** | 30.8% | Score équilibré global |
+| **F1-Score** | 33.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (6)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,7 +164,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [fsv04] Amande nature bio vrac 2,8 kg | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -201,4 +200,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:47.382Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:08.108Z*

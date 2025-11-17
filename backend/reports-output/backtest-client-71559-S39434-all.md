@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 21.4% | 28 produits prédits, 6 corrects |
+| **Précision** | 24.0% | 25 produits prédits, 6 corrects |
 | **Rappel** | 66.7% | 9 produits réels, 6 détectés |
-| **F1-Score** | 32.4% | Score équilibré global |
+| **F1-Score** | 35.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 91.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 0.83 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 3 | 1 | 2.0 | 200.0% | ✅ partial |
@@ -148,7 +148,7 @@
 
 ---
 
-## False Positives (22)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -168,16 +168,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: 0.2u (10j restants) → prédit 2u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV145] LV Sauce Tartare 200 ml  | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: -0.8u (-39j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -2.2u (-72j restants) → prédit 2u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -185,10 +182,10 @@
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | Stock prédit: -0.8u (-46j restants) → prédit 2u mais non commandé |
 | [RISH05] RISH kombucha BIO - rose 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 2 | Stock prédit: -1.8u (-102j restants) → prédit 2u mais non commandé |
-| [LV146] LV Sauce Aïoli 200 ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV146] LV Sauce Aïoli 200 ml | 1 | Stock prédit: -1.4u (-68j restants) → prédit 1u mais non commandé |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.6u (-64j restants) → prédit 1u mais non commandé |
 | [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
@@ -221,4 +218,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:34.843Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:38.394Z*

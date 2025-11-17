@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 11.1% | 9 produits prédits, 1 corrects |
-| **Rappel** | 6.3% | 16 produits réels, 1 détectés |
-| **F1-Score** | 8.0% | Score équilibré global |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 16 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (8)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,19 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
 
 
 ---
 
-## False Negatives (15)
+## False Negatives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -205,6 +192,7 @@
 | [LV149] LV Sauce Aioli Pesto 200ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: -0.4u (-36j restants > seuil 19j) |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -214,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:29.268Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:31.403Z*

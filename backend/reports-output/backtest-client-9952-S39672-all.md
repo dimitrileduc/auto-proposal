@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.9% | 29 produits prédits, 11 corrects |
-| **Rappel** | 55.0% | 20 produits réels, 11 détectés |
-| **F1-Score** | 44.9% | Score équilibré global |
+| **Précision** | 30.0% | 20 produits prédits, 6 corrects |
+| **Rappel** | 30.0% | 20 produits réels, 6 détectés |
+| **F1-Score** | 30.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.18 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 13.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 9 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.17 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (11)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,13 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV160] LV Tartinade Aubergine 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV161] LV Tartinade Mangue curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0031] MF Tarti Olives verte 250g  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -153,7 +148,7 @@
 
 ---
 
-## False Positives (18)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -175,27 +170,23 @@
 |---------|-------------|--------|
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: 0.7u (15j restants) → prédit 2u mais non commandé |
 | [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.5u (-15j restants) → prédit 1u mais non commandé |
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
-| [LV188] LV Tartinade Aubergine  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -1.5u (-41j restants) → prédit 2u mais non commandé |
-| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0024] MF KETCHUP 250g | 2 | Stock prédit: -0.6u (-34j restants) → prédit 2u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.7u (-57j restants) → prédit 1u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: -0.2u (-25j restants) → prédit 1u mais non commandé |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.2u (-27j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -216,6 +207,11 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [LV145] LV Sauce Tartare 200 ml  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.8u (90j restants > seuil 19j) |
+| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.8u (95j restants > seuil 19j) |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.3u (20j restants > seuil 19j) |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.7u (77j restants > seuil 19j) |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 1.7u (126j restants > seuil 19j) |
 | [LV136] LV Tartinade Betterave 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: 0.9u (20j restants > seuil 19j) |
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
@@ -228,4 +224,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:51.072Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:56.657Z*

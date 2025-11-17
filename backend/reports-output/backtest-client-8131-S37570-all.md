@@ -168,7 +168,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF0097] FILOU MOUTARDE 5 KG | 20 | Stock prédit: -15.1u (-17j restants) → prédit 20u mais non commandé |
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
+| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 15 | Stock prédit: -2.5u (-22j restants) → prédit 15u mais non commandé |
 
 
 ---
@@ -192,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:26.915Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:17.003Z*

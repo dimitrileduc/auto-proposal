@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - BVBA DRINK & FOOD
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 3755
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.1s
+**⏱️ Durée d'exécution:** 1.7s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 5**
-- Urgents (rupture ≤ 0j): 2
+**Produits à risque détectés: 4**
+- Urgents (rupture ≤ 0j): 1
 - Modérés (0 < rupture ≤ 19j): 3
 
-**Total produits (Phase 1): 5**
-**Quantité totale brute: 86 unités**
+**Total produits (Phase 1): 4**
+**Quantité totale brute: 85 unités**
 
 ### Détails par produit
 
@@ -136,30 +136,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[PF3270] JF TRUFFLE MAYONNAISE 925ML</strong> (ID: 15001) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-11 | S37360 | 1 | 74.16€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
 
 ---
 
@@ -168,7 +144,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 905.96€**
+- **Montant initial: 831.80€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -181,8 +157,7 @@
 | [PF0085] FILOU CURRY KETCHU... | 8989 | 3 | 0 | 3 | 19.57€ | 58.71€ |
 | [PF0077] FILOU PROVENCALE 5 L | 8986 | 1 | 0 | 1 | 9.37€ | 9.37€ |
 | [PF3272] JF PEPPER MAYONNAI... | 15017 | 1 | 0 | 1 | 46.92€ | 46.92€ |
-| [PF3270] JF TRUFFLE MAYONNA... | 15001 | 1 | 0 | 1 | 74.16€ | 74.16€ |
 
-**Total (Phase 2.5): 905.96€**
+**Total (Phase 2.5): 831.80€**
 
 ---

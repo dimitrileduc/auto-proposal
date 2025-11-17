@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Le bon Wagon Eupen
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 113
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 27**
-- Urgents (rupture ≤ 0j): 20
-- Modérés (0 < rupture ≤ 19j): 7
+**Produits à risque détectés: 26**
+- Urgents (rupture ≤ 0j): 18
+- Modérés (0 < rupture ≤ 19j): 8
 
-**Total produits (Phase 1): 27**
-**Quantité totale brute: 37 unités**
+**Total produits (Phase 1): 26**
+**Quantité totale brute: 35 unités**
 
 ### Détails par produit
 
@@ -260,12 +260,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0024] MF KETCHUP 250g</strong> (ID: 564) - 1 unités</summary>
+<summary>🟡 <strong>[MF0024] MF KETCHUP 250g</strong> (ID: 564) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0208
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0172
+- **Stock restant estimé**: 0.18
+- **Jours avant rupture**: **10j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -273,12 +273,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-19 | S38542 | 1 | 15.84€ |
+| 2025-02-25 | S35043 | 1 | 16.50€ |
+| 2025-01-14 | S34256 | 1 | 16.50€ |
+| 2024-09-02 | S32029 | 2 | 16.50€ |
+| 2024-06-04 | S30583 | 2 | 16.50€ |
+| 2024-03-14 | S29178 | 2 | 16.50€ |
+| 2024-01-23 | S28624 | 2 | 16.50€ |
+| 2023-11-07 | S27451 | 1 | 16.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 2]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 1
 
 </details>
@@ -410,30 +417,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0208
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-19 | S38542 | 1 | 16.99€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -664,12 +647,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0054] MF Noix de cajou - Fleur de sel 133g</strong> (ID: 16978) - 2 unités</summary>
+<summary>🔴 <strong>[MF0054] MF Noix de cajou - Fleur de sel 133g</strong> (ID: 16978) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0114
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0157
+- **Stock restant estimé**: -0.75
+- **Jours avant rupture**: **-47j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -677,13 +660,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36151 | 2 | 19.80€ |
+| 2025-02-25 | S35043 | 1 | 20.62€ |
+| 2024-10-28 | S33001 | 2 | 20.62€ |
+| 2024-07-01 | S31037 | 1 | 20.62€ |
+| 2024-04-25 | S29945 | 1 | 20.62€ |
+| 2024-03-14 | S29178 | 2 | 20.62€ |
+| 2023-12-14 | S28187 | 1 | 20.62€ |
+| 2023-11-07 | S27451 | 1 | 20.62€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 1, 2, 1, 1]
+- **Nombre commandes**: 8
+- **Valeur médiane**: 1
 
 </details>
 
@@ -691,9 +681,9 @@
 <summary>🔴 <strong>[MF0052] MF Pois chiches  500g</strong> (ID: 16950) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0057
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0088
+- **Stock restant estimé**: -0.53
+- **Jours avant rupture**: **-60j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -701,12 +691,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-14 | S36151 | 1 | 11.52€ |
+| 2024-10-28 | S33001 | 1 | 12.00€ |
+| 2024-07-01 | S31037 | 1 | 12.00€ |
+| 2024-04-25 | S29945 | 1 | 12.00€ |
+| 2024-03-14 | S29178 | 1 | 12.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -719,7 +713,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 591.23€**
+- **Montant initial: 554.45€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -743,7 +737,6 @@
 | [NUT01] NUTS & BERRIES ener... | 18327 | 1 | 0 | 1 | 15.41€ | 15.41€ |
 | [NUT06] NUTS & BERRIES Bar ... | 18324 | 1 | 0 | 1 | 16.85€ | 16.85€ |
 | [REB01] ReBEL chips premium... | 18353 | 1 | 0 | 1 | 16.99€ | 16.99€ |
-| [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 16.99€ | 16.99€ |
 | [NOC02] NOCCIOLATA Pâte noi... | 18304 | 1 | 0 | 1 | 18.14€ | 18.14€ |
 | [CB005] CB Apple juice 1l | 14941 | 2 | 0 | 2 | 14.40€ | 28.80€ |
 | [CB006] CB Blackcurrant App... | 14944 | 1 | 0 | 1 | 20.74€ | 20.74€ |
@@ -753,9 +746,9 @@
 | [NUT04] NUTS & BERRIES ener... | 18326 | 2 | 0 | 2 | 16.05€ | 32.10€ |
 | [NUT05] NUTS & BERRIES Bar ... | 18325 | 1 | 0 | 1 | 16.85€ | 16.85€ |
 | [MF0059] MF Confi Fraise- A... | 17767 | 1 | 0 | 1 | 15.85€ | 15.85€ |
-| [MF0054] MF Noix de cajou -... | 16978 | 2 | 0 | 2 | 19.80€ | 39.59€ |
+| [MF0054] MF Noix de cajou -... | 16978 | 1 | 0 | 1 | 19.80€ | 19.80€ |
 | [MF0052] MF Pois chiches  500g | 16950 | 1 | 0 | 1 | 11.52€ | 11.52€ |
 
-**Total (Phase 2.5): 591.23€**
+**Total (Phase 2.5): 554.45€**
 
 ---

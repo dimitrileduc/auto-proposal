@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 21 produits prédits, 7 corrects |
-| **Rappel** | 70.0% | 10 produits réels, 7 détectés |
-| **F1-Score** | 45.2% | Score équilibré global |
+| **Précision** | 32.0% | 25 produits prédits, 8 corrects |
+| **Rappel** | 80.0% | 10 produits réels, 8 détectés |
+| **F1-Score** | 45.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.43 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 23.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
+| **MAE** | 0.38 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 20.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (7)
+## True Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -144,12 +144,13 @@
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 
 
 ---
 
-## False Positives (14)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,6 +173,7 @@
 | [SOWA03] SOWA ginger beer ardent 250ml | 2 | Stock prédit: 0.3u (7j restants) → prédit 2u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -0.3u (-6j restants) → prédit 2u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -0.2u (-8j restants) → prédit 2u mais non commandé |
+| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.5u (-15j restants) → prédit 1u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
@@ -183,11 +185,13 @@
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: -0.0u (-2j restants) → prédit 2u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: -0.0u (-2j restants) → prédit 2u mais non commandé |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock prédit: -1.2u (-45j restants) → prédit 2u mais non commandé |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: -0.4u (-44j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -209,9 +213,8 @@
 |---------|---------------|--------|
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:07.039Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:10.784Z*

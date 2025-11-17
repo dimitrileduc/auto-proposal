@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 12 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (12)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -161,14 +161,9 @@
 | [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -0.1u (-8j restants) → prédit 1u mais non commandé |
 | [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 50 | Stock prédit: 16.9u (13j restants) → prédit 50u mais non commandé |
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 50 | Stock prédit: 13.0u (9j restants) → prédit 50u mais non commandé |
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 50 | Stock prédit: 0.0u (0j restants) → prédit 50u mais non commandé |
 | [PF1694] LD FR TARTINAD BIO POIVRON 200 | 63 | Stock prédit: 9.9u (11j restants) → prédit 63u mais non commandé |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 50 | Stock prédit: 0.0u (0j restants) → prédit 50u mais non commandé |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
-| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 92 | Stock prédit: 0.0u (0j restants) → prédit 92u mais non commandé |
-| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 67 | Stock prédit: 0.0u (0j restants) → prédit 67u mais non commandé |
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-45j restants) → prédit 1u mais non commandé |
-| [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | Stock prédit: 0.0u (0j restants) → prédit 50u mais non commandé |
+| [PF1803] LD SAUCE TARTARE 250ML WECK | 20 | Stock prédit: -7.7u (-18j restants) → prédit 20u mais non commandé |
 
 
 ---
@@ -198,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:51.112Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:45.403Z*

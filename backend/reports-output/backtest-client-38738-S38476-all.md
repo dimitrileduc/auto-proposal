@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 36.7% | 30 produits prédits, 11 corrects |
-| **Rappel** | 64.7% | 17 produits réels, 11 détectés |
-| **F1-Score** | 46.8% | Score équilibré global |
+| **Précision** | 41.7% | 24 produits prédits, 10 corrects |
+| **Rappel** | 58.8% | 17 produits réels, 10 détectés |
+| **F1-Score** | 48.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.09 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 9.1% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 10 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (11)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -148,12 +148,11 @@
 | [LD012] LD Organic Samphire Spread 135 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LD013] LD Tuscan Organic Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LD015] LD Onion Spread 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (19)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,9 +172,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.3u (6j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: 0.9u (15j restants) → prédit 2u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 3 | Stock prédit: 0.9u (15j restants) → prédit 3u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
@@ -185,18 +182,15 @@
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD009] LD Organic Asparagus Spread 180 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD014] LD Organic Avocado Spread 180 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF016] TVF TARTINADE BIO POIS CHICHES 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF017] TVF TARTINADE BIO TOMATE 380G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.1u (15j restants) → prédit 1u mais non commandé |
+| [TVF016] TVF TARTINADE BIO POIS CHICHES 380G | 2 | Stock prédit: -0.6u (-59j restants) → prédit 2u mais non commandé |
+| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 2 | Stock prédit: -0.6u (-59j restants) → prédit 2u mais non commandé |
+| [TVF017] TVF TARTINADE BIO TOMATE 380G | 2 | Stock prédit: -1.7u (-98j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (6)
+## False Negatives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -216,6 +210,7 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 0.8u (52j restants > seuil 19j) |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: 0.5u (20j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock suffisant: 0.6u (33j restants > seuil 19j) |
@@ -226,4 +221,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:28.408Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:02.529Z*

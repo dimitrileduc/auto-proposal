@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 14.3% | 7 produits prédits, 1 corrects |
+| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 25.0% | Score équilibré global |
+| **F1-Score** | 33.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (6)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,11 +164,9 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF0077] FILOU PROVENCALE 5 L | 80 | Stock prédit: -36.7u (-6j restants) → prédit 80u mais non commandé |
-| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: 2.1u (13j restants) → prédit 6u mais non commandé |
 | [PF0085] FILOU CURRY KETCHUP  10 KG | 104 | Stock prédit: -74.8u (-16j restants) → prédit 104u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
 | [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | Stock prédit: 0.0u (0j restants) → prédit 52u mais non commandé |
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 24 | Stock prédit: 0.0u (0j restants) → prédit 24u mais non commandé |
 
 
 ---
@@ -192,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:39.837Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:43.583Z*

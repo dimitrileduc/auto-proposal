@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - MEX - AL  EL SOMBRERO IMPORT/E
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 3809
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 1.4s
 
 ---
 

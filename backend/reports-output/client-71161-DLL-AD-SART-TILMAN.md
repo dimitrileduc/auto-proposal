@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DLL AD SART TILMAN
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 71161
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 3.3s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 18**
-- Urgents (rupture ≤ 0j): 12
+**Produits à risque détectés: 17**
+- Urgents (rupture ≤ 0j): 11
 - Modérés (0 < rupture ≤ 19j): 6
 
-**Total produits (Phase 1): 18**
-**Quantité totale brute: 41 unités**
+**Total produits (Phase 1): 17**
+**Quantité totale brute: 39 unités**
 
 ### Détails par produit
 
@@ -234,30 +234,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF022] JF MOUTARDE MIEL 250ML WECK</strong> (ID: 16755) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0488
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-27 | S38792 | 2 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
 <summary>🟡 <strong>[JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> (ID: 19356) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -437,9 +413,9 @@
 <summary>🔴 <strong>[JF028] JF VINAIGRET CAESAR WECK 200ML</strong> (ID: 16785) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0081
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0155
+- **Stock restant estimé**: -0.92
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -447,12 +423,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-05 | S37280 | 1 | 27.00€ |
+| 2025-03-21 | S35553 | 1 | 27.00€ |
+| 2025-02-13 | S34865 | 1 | 27.00€ |
+| 2025-01-22 | S34456 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -461,9 +440,9 @@
 <summary>🔴 <strong>[JF024] JF VINAIGRET CIBOULE WECK 200M</strong> (ID: 16786) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0063
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0155
+- **Stock restant estimé**: -1.48
+- **Jours avant rupture**: **-95j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -471,12 +450,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-30 | S36453 | 1 | 27.00€ |
+| 2025-03-21 | S35553 | 1 | 27.00€ |
+| 2025-02-13 | S34865 | 1 | 27.00€ |
+| 2025-01-22 | S34456 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -489,7 +471,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 846.06€**
+- **Montant initial: 807.06€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -506,7 +488,6 @@
 | [JF009] JF SAUCE TARTARE 25... | 16780 | 4 | 0 | 4 | 19.50€ | 78.00€ |
 | [JF015] JF SAUCE ANDALOUSE ... | 16763 | 3 | 0 | 3 | 19.50€ | 58.50€ |
 | [JF017] JF SAUCE COCKTAIL 2... | 16771 | 2 | 0 | 2 | 19.50€ | 39.00€ |
-| [JF022] JF MOUTARDE MIEL 25... | 16755 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF056] JF SAUCE CHIPOTLE 2... | 19356 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF031] JF SAUCE LIEGEOISE ... | 16776 | 4 | 0 | 4 | 13.50€ | 54.00€ |
 | [JF057] JF EGG MAYONNAISE 7... | 19366 | 3 | 0 | 3 | 27.78€ | 83.34€ |
@@ -517,6 +498,6 @@
 | [JF028] JF VINAIGRET CAESAR... | 16785 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 | [JF024] JF VINAIGRET CIBOUL... | 16786 | 1 | 0 | 1 | 27.00€ | 27.00€ |
 
-**Total (Phase 2.5): 846.06€**
+**Total (Phase 2.5): 807.06€**
 
 ---

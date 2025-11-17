@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - La ferme du vieux bure
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 23826
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.2s
+**⏱️ Durée d'exécution:** 2.4s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 57**
-- Urgents (rupture ≤ 0j): 45
-- Modérés (0 < rupture ≤ 19j): 12
+**Produits à risque détectés: 52**
+- Urgents (rupture ≤ 0j): 38
+- Modérés (0 < rupture ≤ 19j): 14
 
-**Total produits (Phase 1): 57**
-**Quantité totale brute: 62 unités**
+**Total produits (Phase 1): 52**
+**Quantité totale brute: 57 unités**
 
 ### Détails par produit
 
@@ -43,54 +43,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1, 1, 1]
 - **Nombre commandes**: 4
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV159] LV Tartinade aux Truffes  135g </strong> (ID: 13057) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-25 | S38695 | 1 | 18.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV129] LV Tartinade Carotte Gingembre 190g</strong> (ID: 13059) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-25 | S38695 | 1 | 13.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -280,30 +232,6 @@
 - **Confiance**: high
 - **Quantités historiques**: [1, 2, 1, 1, 2]
 - **Nombre commandes**: 5
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV143] LV Mayonnaise (huile 70%) 200 ml </strong> (ID: 13041) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0256
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-05 | S38343 | 1 | 13.76€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -1075,30 +1003,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV215] LV Biscuits apéro Fromage Parmesan 100g bio </strong> (ID: 13091) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0097
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-02 | S37168 | 1 | 25.56€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV036] LV Olives Vertes dénoyautées BE 350g</strong> (ID: 13101) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -1316,12 +1220,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0013] MF Olives Vertes 500g</strong> (ID: 553) - 1 unités</summary>
+<summary>🟡 <strong>[MF0013] MF Olives Vertes 500g</strong> (ID: 553) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0067
+- **Stock restant estimé**: 0.03
+- **Jours avant rupture**: **4j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1329,23 +1233,25 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36307 | 1 | 27.60€ |
+| 2024-11-20 | S33386 | 1 | 27.60€ |
+| 2024-06-24 | S30931 | 1 | 27.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0012] MF Olives Mix 500g</strong> (ID: 552) - 1 unités</summary>
+<summary>🟡 <strong>[MF0012] MF Olives Mix 500g</strong> (ID: 552) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0067
+- **Stock restant estimé**: 0.03
+- **Jours avant rupture**: **4j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -1353,12 +1259,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-22 | S36307 | 1 | 27.60€ |
+| 2024-11-20 | S33386 | 1 | 27.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -1412,30 +1319,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0069
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-22 | S36307 | 1 | 24.15€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[fsv03] Noisette nature bio vrac 2,8kg </strong> (ID: 18311) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -1467,7 +1350,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1431.91€**
+- **Montant initial: 1336.80€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1477,8 +1360,6 @@
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [LV153] LV Vinaigrette Cibo... | 13050 | 1 | 0 | 1 | 19.09€ | 19.09€ |
-| [LV159] LV Tartinade aux Tr... | 13057 | 1 | 0 | 1 | 18.60€ | 18.60€ |
-| [LV129] LV Tartinade Carott... | 13059 | 1 | 0 | 1 | 13.04€ | 13.04€ |
 | [LV130] LV BIO Tartinade Pa... | 13061 | 1 | 0 | 1 | 13.10€ | 13.10€ |
 | [LV134] LV BIO Tartinade Ol... | 13066 | 1 | 0 | 1 | 14.15€ | 14.15€ |
 | [NOD01] NODA limonade bio f... | 18310 | 1 | 0 | 1 | 32.40€ | 32.40€ |
@@ -1486,7 +1367,6 @@
 | [NOD04] NODA limonade bio f... | 18309 | 1 | 0 | 1 | 32.40€ | 32.40€ |
 | [RIT02] RITCHIE Citron - Fr... | 18364 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [LV160] LV Tartinade Auberg... | 13058 | 1 | 0 | 1 | 12.79€ | 12.79€ |
-| [LV143] LV Mayonnaise (huil... | 13041 | 1 | 0 | 1 | 13.76€ | 13.76€ |
 | [LV154] LV Vinaigrette Miel... | 13051 | 1 | 0 | 1 | 19.28€ | 19.28€ |
 | [LV161] LV Tartinade Mangue... | 13060 | 2 | 0 | 2 | 13.10€ | 26.20€ |
 | [LV162] LV Tartinade Tomato... | 13064 | 1 | 0 | 1 | 12.67€ | 12.67€ |
@@ -1517,7 +1397,6 @@
 | [fsv17] Mélange de noix bio... | 18301 | 1 | 0 | 1 | 39.69€ | 39.69€ |
 | [LV126] LV Tartinade Tomate... | 13070 | 1 | 0 | 1 | 13.53€ | 13.53€ |
 | [LV135] LV Tartinade Basili... | 13067 | 1 | 0 | 1 | 13.53€ | 13.53€ |
-| [LV215] LV Biscuits apéro F... | 13091 | 1 | 0 | 1 | 25.56€ | 25.56€ |
 | [LV036] LV Olives Vertes dé... | 13101 | 1 | 0 | 1 | 9.60€ | 9.60€ |
 | [NUT06] NUTS & BERRIES Bar ... | 18324 | 1 | 0 | 1 | 17.55€ | 17.55€ |
 | [PAO02] PAOLA cola ZERO ver... | 18347 | 2 | 0 | 2 | 25.20€ | 50.40€ |
@@ -1531,9 +1410,8 @@
 | [MF0012] MF Olives Mix 500g | 552 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0050] MF Cornichons aigr... | 16936 | 1 | 0 | 1 | 23.04€ | 23.04€ |
 | [LV156] LV Sauce barbecue 2... | 13053 | 1 | 0 | 1 | 26.60€ | 26.60€ |
-| [LV157] LV Ketchup aux toma... | 13054 | 1 | 0 | 1 | 24.15€ | 24.15€ |
 | [fsv03] Noisette nature bio... | 18311 | 1 | 0 | 1 | 40.74€ | 40.74€ |
 
-**Total (Phase 2.5): 1431.91€**
+**Total (Phase 2.5): 1336.80€**
 
 ---

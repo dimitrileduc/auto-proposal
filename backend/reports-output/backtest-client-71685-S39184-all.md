@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 22.6% | 31 produits prédits, 7 corrects |
+| **Précision** | 25.0% | 28 produits prédits, 7 corrects |
 | **Rappel** | 100.0% | 7 produits réels, 7 détectés |
-| **F1-Score** | 36.8% | Score équilibré global |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -149,7 +149,7 @@
 
 ---
 
-## False Positives (24)
+## False Positives (21)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -171,10 +171,7 @@
 |---------|-------------|--------|
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
 | [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
@@ -186,13 +183,13 @@
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.6u (-56j restants) → prédit 1u mais non commandé |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock prédit: -0.6u (-36j restants) → prédit 2u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: -0.4u (-24j restants) → prédit 2u mais non commandé |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 2 | Stock prédit: -0.7u (-45j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -216,4 +213,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:45.780Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:18.515Z*

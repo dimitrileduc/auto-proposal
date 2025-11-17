@@ -7,11 +7,11 @@
   "daysBeforePrediction": 1,
   "metrics": {
     "tp": 15,
-    "fp": 10,
+    "fp": 14,
     "fn": 10,
-    "precision": 0.6,
+    "precision": 0.5172413793103449,
     "recall": 0.6,
-    "f1Score": 0.6,
+    "f1Score": 0.5555555555555556,
     "mae": 0.4,
     "mape": 30
   },

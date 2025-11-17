@@ -189,12 +189,12 @@
 | [LV036] LV Olives Vertes dénoyautées BE 350g | 1 | Stock prédit: -0.3u (-24j restants) → prédit 1u mais non commandé |
 | [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV158] LV Moutarde 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV158] LV Moutarde 200 ml | 1 | Stock prédit: -0.2u (-27j restants) → prédit 1u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: -0.3u (-43j restants) → prédit 1u mais non commandé |
+| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: -1.0u (-87j restants) → prédit 1u mais non commandé |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.5u (-54j restants) → prédit 1u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [WIG04] WIGNAC cidre rosé bio 750ml | 1 | Stock prédit: -1.2u (-94j restants) → prédit 1u mais non commandé |
 | [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -227,4 +227,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:58.881Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:06.252Z*

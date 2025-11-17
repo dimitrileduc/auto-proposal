@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 29.0% | 31 produits prédits, 9 corrects |
+| **Précision** | 27.3% | 33 produits prédits, 9 corrects |
 | **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 42.9% | Score équilibré global |
+| **F1-Score** | 40.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (22)
+## False Positives (24)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -193,6 +193,8 @@
 | [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
 | [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 1 | Stock prédit: -0.7u (-31j restants) → prédit 1u mais non commandé |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | Stock prédit: -0.7u (-51j restants) → prédit 1u mais non commandé |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (4j restants) → prédit 1u mais non commandé |
+| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.0u (4j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -223,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:50.846Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:55.779Z*

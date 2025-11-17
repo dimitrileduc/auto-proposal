@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.0% | 5 produits prédits, 3 corrects |
-| **Rappel** | 50.0% | 6 produits réels, 3 détectés |
-| **F1-Score** | 54.5% | Score équilibré global |
+| **Précision** | 62.5% | 8 produits prédits, 5 corrects |
+| **Rappel** | 83.3% | 6 produits réels, 5 détectés |
+| **F1-Score** | 71.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 50.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 8.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 60.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,11 +141,13 @@
 | [PF0403] BORNIBUS MAYO KOSHER 220G | 750 | 600 | 150.0 | 25.0% | ✅ partial |
 | [PF0625] BORNIBUS MAYO WASAB KOSHER 220 | 600 | 600 | 0.0 | 0.0% | 🎯 exact |
 | [PF1541] BORNIBUS AIOLI KOSHER 220G | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
+| [PF1542] BORNIBUS BEARNAISE KOSHER 2 10G | 600 | 600 | 0.0 | 0.0% | 🎯 exact |
+| [PF1543] BORNIBUS TARTARE KOSHER 220G | 450 | 600 | 150.0 | 25.0% | ✅ partial |
 
 
 ---
 
-## False Positives (2)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,11 +169,12 @@
 |---------|-------------|--------|
 | [PF1980] BR1582 - KETCHUP KOSHE SQUEEZE 300ML | 56 | Stock prédit: 16.5u (17j restants) → prédit 56u mais non commandé |
 | [PF1981] BR BEARNAISE KOSH SQUEEZ 300ML | 56 | Stock prédit: 16.5u (17j restants) → prédit 56u mais non commandé |
+| [PF3337] BS1886 - BORNIBUS MAYO TRUFFES KOSHER 210G | 374 | Stock prédit: -35.0u (-8j restants) → prédit 374u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -191,11 +194,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF1542] BORNIBUS BEARNAISE KOSHER 2 10G | 600 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [PF1543] BORNIBUS TARTARE KOSHER 220G | 600 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [CONS070] PALETTE EURO | 10 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:41.637Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:46.550Z*

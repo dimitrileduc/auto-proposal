@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - HOUTOPIA
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 60361
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.1s
+**⏱️ Durée d'exécution:** 2.1s
 
 ---
 
@@ -207,9 +207,9 @@
 <summary>🔴 <strong>[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> (ID: 18323) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0137
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0144
+- **Stock restant estimé**: -0.10
+- **Jours avant rupture**: **-6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -217,12 +217,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-08 | S35875 | 2 | 18.90€ |
+| 2025-02-04 | S34658 | 1 | 18.90€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>

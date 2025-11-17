@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.9% | 23 produits prédits, 14 corrects |
+| **Précision** | 50.0% | 28 produits prédits, 14 corrects |
 | **Rappel** | 93.3% | 15 produits réels, 14 détectés |
-| **F1-Score** | 73.7% | Score équilibré global |
+| **F1-Score** | 65.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -184,7 +184,12 @@
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: -0.5u (-18j restants) → prédit 1u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: -0.1u (-6j restants) → prédit 2u mais non commandé |
 | [JF021] JF PICKLES 350 ML | 2 | Stock prédit: -0.4u (-23j restants) → prédit 2u mais non commandé |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: -1.0u (-83j restants) → prédit 1u mais non commandé |
+| [JF037] JF BBQ SQUEEZE 300ML | 0 | Stock prédit: 0.0u (3j restants) → prédit 0u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.3u (-40j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -214,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:21.683Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:36.114Z*

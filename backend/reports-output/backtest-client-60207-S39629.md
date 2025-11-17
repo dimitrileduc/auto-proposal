@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 6.7% | 15 produits prédits, 1 corrects |
+| **Précision** | 5.6% | 18 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 12.5% | Score équilibré global |
+| **F1-Score** | 10.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (14)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,6 +177,9 @@
 | [JOY02] JOY! Organic Strawberry Jam 370g | 56 | Stock prédit: -62.3u (-56j restants) → prédit 56u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 35 | Stock prédit: -14.2u (-36j restants) → prédit 35u mais non commandé |
 | [ORG09] ORGANICA crunchy fruit cerise 20g | 18 | Stock prédit: -3.7u (-18j restants) → prédit 18u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 126 | Stock prédit: -79.4u (-55j restants) → prédit 126u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 126 | Stock prédit: -79.4u (-55j restants) → prédit 126u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 126 | Stock prédit: -147.9u (-77j restants) → prédit 126u mais non commandé |
 
 
 ---
@@ -200,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:45.312Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:41.001Z*

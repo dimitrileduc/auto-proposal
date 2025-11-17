@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 9 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 13 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,14 +158,8 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB002] CB Cherry Apple juice 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -207,4 +201,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:00.801Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:25.331Z*

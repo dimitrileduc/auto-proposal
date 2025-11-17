@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - COALLA LOGISTICA SL
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 12416
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.3s
+**⏱️ Durée d'exécution:** 3.2s
 
 ---
 
@@ -11,11 +11,11 @@
 
 
 **Produits à risque détectés: 4**
-- Urgents (rupture ≤ 0j): 1
-- Modérés (0 < rupture ≤ 19j): 3
+- Urgents (rupture ≤ 0j): 0
+- Modérés (0 < rupture ≤ 19j): 4
 
 **Total produits (Phase 1): 4**
-**Quantité totale brute: 85 unités**
+**Quantité totale brute: 92 unités**
 
 ### Détails par produit
 
@@ -76,12 +76,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1809] LD SAUCE BEARNAISE 250ML WECK</strong> (ID: 9264) - 5 unités</summary>
+<summary>🟡 <strong>[PF1809] LD SAUCE BEARNAISE 250ML WECK</strong> (ID: 9264) - 12 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3571
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.1642
+- **Stock restant estimé**: 2.70
+- **Jours avant rupture**: **16j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -89,13 +89,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-24 | S37656 | 5 | 16.08€ |
+| 2025-01-06 | S34099 | 20 | 15.60€ |
+| 2024-11-29 | S33595 | 10 | 15.60€ |
+| 2024-11-04 | S33107 | 12 | 15.60€ |
+| 2024-07-17 | S31324 | 20 | 15.60€ |
+| 2023-12-28 | S28308 | 12 | 15.60€ |
+| 2023-12-07 | S28074 | 20 | 15.60€ |
+| 2023-09-13 | S04383 | 10 | 15.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [5]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 5
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [5, 20, 10, 12, 20]
+- **Nombre commandes**: 8
+- **Valeur médiane**: 12
 
 </details>
 
@@ -135,7 +142,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1358.40€**
+- **Montant initial: 1470.96€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -146,9 +153,9 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PF1799] LD MAYONNAISE OEUF... | 9254 | 20 | 0 | 20 | 16.08€ | 321.60€ |
 | [PF1803] LD SAUCE TARTARE 2... | 9258 | 50 | 0 | 50 | 16.08€ | 804.00€ |
-| [PF1809] LD SAUCE BEARNAISE... | 9264 | 5 | 0 | 5 | 16.08€ | 80.40€ |
+| [PF1809] LD SAUCE BEARNAISE... | 9264 | 12 | 0 | 12 | 16.08€ | 192.96€ |
 | [PF3284] LD MOUTARDE DOUCE ... | 16993 | 10 | 0 | 10 | 15.24€ | 152.40€ |
 
-**Total (Phase 2.5): 1358.40€**
+**Total (Phase 2.5): 1470.96€**
 
 ---

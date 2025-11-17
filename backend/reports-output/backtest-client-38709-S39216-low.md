@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
-| **Rappel** | 11.1% | 9 produits réels, 1 détectés |
-| **F1-Score** | 16.7% | Score équilibré global |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (2)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,12 +158,11 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (8)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -189,6 +182,7 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 2 | Stock suffisant: -0.2u (-13j restants > seuil 19j) |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock suffisant: 0.0u (1j restants > seuil 19j) |
 | [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock suffisant: 0.6u (14j restants > seuil 19j) |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 6 | Stock suffisant: 1.2u (7j restants > seuil 19j) |
@@ -201,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:48.853Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:52.582Z*

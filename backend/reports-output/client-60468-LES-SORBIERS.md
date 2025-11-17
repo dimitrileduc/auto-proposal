@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - LES SORBIERS
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 60468
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 3.9s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 17**
-- Urgents (rupture ≤ 0j): 12
+**Produits à risque détectés: 16**
+- Urgents (rupture ≤ 0j): 11
 - Modérés (0 < rupture ≤ 19j): 5
 
-**Total produits (Phase 1): 17**
-**Quantité totale brute: 39 unités**
+**Total produits (Phase 1): 16**
+**Quantité totale brute: 36 unités**
 
 ### Détails par produit
 
@@ -172,30 +172,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [3, 3]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 3
-
-</details>
-
-<details>
-<summary>🔴 <strong>[fsv04] Amande nature bio vrac 2,8 kg</strong> (ID: 18260) - 3 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0714
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-04 | S38283 | 3 | 40.74€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 3
 
 </details>
@@ -452,7 +428,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1213.86€**
+- **Montant initial: 1091.64€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -467,7 +443,6 @@
 | [REB02] ReBEL chips premium... | 18349 | 3 | 0 | 3 | 18.80€ | 56.40€ |
 | [fsv10] Noix de cajou oigno... | 18315 | 3 | 0 | 3 | 59.72€ | 179.16€ |
 | [fsv03] Noisette nature bio... | 18311 | 3 | 0 | 3 | 40.74€ | 122.22€ |
-| [fsv04] Amande nature bio v... | 18260 | 3 | 0 | 3 | 40.74€ | 122.22€ |
 | [JOY08] JOY! Organic Raspbe... | 18273 | 3 | 0 | 3 | 33.60€ | 100.80€ |
 | [LV189] LV Tartinade Houmou... | 13075 | 1 | 0 | 1 | 25.15€ | 25.15€ |
 | [LV336] LV BIO Tartinade To... | 14453 | 1 | 0 | 1 | 25.09€ | 25.09€ |
@@ -479,6 +454,6 @@
 | [LV001] LV Pizza Croccantin... | 13095 | 3 | 0 | 3 | 27.03€ | 81.09€ |
 | [REB08] ReBEL chips premium... | 18351 | 1 | 0 | 1 | 18.80€ | 18.80€ |
 
-**Total (Phase 2.5): 1213.86€**
+**Total (Phase 2.5): 1091.64€**
 
 ---

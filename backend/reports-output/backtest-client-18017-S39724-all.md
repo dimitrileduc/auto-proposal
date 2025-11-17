@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 3 produits prédits, 3 corrects |
-| **Rappel** | 100.0% | 3 produits réels, 3 détectés |
-| **F1-Score** | 100.0% | Score équilibré global |
+| **Précision** | 100.0% | 2 produits prédits, 2 corrects |
+| **Rappel** | 66.7% | 3 produits réels, 2 détectés |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 208.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 166.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,7 +140,6 @@
 |---------|--------|------|-----------|----------|------|
 | [LV161] LV Tartinade Mangue curry 190g | 125 | 125 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 125 | 125 | 0.0 | 0.0% | 🎯 exact |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 750 | 125 | 625.0 | 500.0% | ✅ partial |
 
 
 ---
@@ -164,7 +163,7 @@
 
 ---
 
-## False Negatives (0)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -179,8 +178,14 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-*Aucun faux négatif (rappel = 100%)*
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 125 | Stock suffisant: 293.0u (57j restants > seuil 19j) |
+
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:08.858Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:20.444Z*

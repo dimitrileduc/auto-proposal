@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - LA CAILLE DES FAGNES
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 3521
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.6s
+**⏱️ Durée d'exécution:** 2.5s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 2
 
 **Total produits (Phase 1): 3**
-**Quantité totale brute: 71 unités**
+**Quantité totale brute: 72 unités**
 
 ### Détails par produit
 
@@ -76,12 +76,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0097] FILOU MOUTARDE 5 KG</strong> (ID: 8998) - 1 unités</summary>
+<summary>🔴 <strong>[PF0097] FILOU MOUTARDE 5 KG</strong> (ID: 8998) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0095
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0136
+- **Stock restant estimé**: -0.43
+- **Jours avant rupture**: **-31j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -89,13 +89,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-23 | S37617 | 1 | 7.21€ |
+| 2025-02-03 | S34631 | 2 | 7.21€ |
+| 2024-08-06 | S31549 | 2 | 7.00€ |
+| 2024-02-27 | S29099 | 3 | 7.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 2, 3]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
 
 </details>
 
@@ -107,7 +110,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1076.61€**
+- **Montant initial: 1083.82€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -118,8 +121,8 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PF0075] FILOU CHASSEUR  10 L | 8985 | 55 | 0 | 55 | 17.00€ | 935.00€ |
 | [PF0078] FILOU CHASSEUR 5 L | 8987 | 15 | 0 | 15 | 8.96€ | 134.40€ |
-| [PF0097] FILOU MOUTARDE 5 KG | 8998 | 1 | 0 | 1 | 7.21€ | 7.21€ |
+| [PF0097] FILOU MOUTARDE 5 KG | 8998 | 2 | 0 | 2 | 7.21€ | 14.42€ |
 
-**Total (Phase 2.5): 1076.61€**
+**Total (Phase 2.5): 1083.82€**
 
 ---

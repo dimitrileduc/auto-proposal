@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - SCHMETS  DELICATESSES, ACHAT
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 8555
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 2.8s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 14**
-- Urgents (rupture ≤ 0j): 9
+**Produits à risque détectés: 13**
+- Urgents (rupture ≤ 0j): 8
 - Modérés (0 < rupture ≤ 19j): 5
 
-**Total produits (Phase 1): 14**
-**Quantité totale brute: 438 unités**
+**Total produits (Phase 1): 13**
+**Quantité totale brute: 398 unités**
 
 ### Détails par produit
 
@@ -316,30 +316,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1845] FILOU SAMOURAI SQUEEZE 300ML</strong> (ID: 9285) - 40 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5970
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-05 | S38292 | 40 | 21.84€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [40]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 40
-
-</details>
-
-<details>
 <summary>🔴 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 40 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -399,7 +375,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 9043.22€**
+- **Montant initial: 8169.62€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -419,10 +395,9 @@
 | [PF0121] FILOU MAYONNAISE O... | 9000 | 80 | 0 | 80 | 16.38€ | 1310.40€ |
 | [PF1844] FILOU ANDALOUSE SQ... | 9284 | 40 | 0 | 40 | 21.84€ | 873.60€ |
 | [PF1689] FILOU CURRY KETCH ... | 9177 | 40 | 0 | 40 | 21.84€ | 873.60€ |
-| [PF1845] FILOU SAMOURAI SQU... | 9285 | 40 | 0 | 40 | 21.84€ | 873.60€ |
 | [PF0088] FILOU VOL AU VENT ... | 8991 | 40 | 0 | 40 | 37.80€ | 1512.00€ |
 | [PF0089] FILOU VOL AU VENT ... | 8992 | 30 | 0 | 30 | 24.60€ | 738.00€ |
 
-**Total (Phase 2.5): 9043.22€**
+**Total (Phase 2.5): 8169.62€**
 
 ---

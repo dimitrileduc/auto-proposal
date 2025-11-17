@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 12.5% | 16 produits prédits, 2 corrects |
-| **Rappel** | 20.0% | 10 produits réels, 2 détectés |
-| **F1-Score** | 15.4% | Score équilibré global |
+| **Précision** | 11.1% | 9 produits prédits, 1 corrects |
+| **Rappel** | 10.0% | 10 produits réels, 1 détectés |
+| **F1-Score** | 10.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,12 +139,11 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (14)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,24 +164,18 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [SOWA01] SOWA citron menthe 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [SOWA04] SOWA thé glacé pêche 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (8)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -208,10 +201,11 @@
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: -0.8u (-13j restants > seuil 19j) |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock suffisant: -0.5u (-8j restants > seuil 19j) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: -0.5u (-8j restants > seuil 19j) |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
 | [RISH01] RISH kombucha BIO - original 330ml | 3 | Stock suffisant: 0.8u (18j restants > seuil 19j) |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | Stock suffisant: -1.2u (-46j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:07.041Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:10.786Z*

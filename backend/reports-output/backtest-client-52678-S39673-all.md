@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.15 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 11.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 11 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.31 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 26.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -146,11 +146,11 @@
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV216] LV Biscuits apéro Fromage & Oignon 100g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV214] LV Biscuits apéro tomate basilic 100g bio  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -213,4 +213,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:04.438Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:35.737Z*

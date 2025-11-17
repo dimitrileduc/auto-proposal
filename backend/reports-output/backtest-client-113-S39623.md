@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 35.0% | 20 produits prédits, 7 corrects |
-| **Rappel** | 41.2% | 17 produits réels, 7 détectés |
-| **F1-Score** | 37.8% | Score équilibré global |
+| **Précision** | 34.8% | 23 produits prédits, 8 corrects |
+| **Rappel** | 47.1% | 17 produits réels, 8 détectés |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.14 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 14.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 18.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (7)
+## True Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -145,11 +145,12 @@
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (13)
+## False Positives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -175,6 +176,7 @@
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: -0.6u (-18j restants) → prédit 2u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -0.5u (-9j restants) → prédit 2u mais non commandé |
+| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
 | [MF0060] MF Passata | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
@@ -182,11 +184,12 @@
 | [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
+| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: -0.5u (-60j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (10)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -206,7 +209,6 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [MF0013] MF Olives Vertes 500g | 1 | Stock suffisant: 0.3u (21j restants > seuil 19j) |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: 1.3u (22j restants > seuil 19j) |
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
@@ -220,4 +222,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:54.817Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:18.536Z*

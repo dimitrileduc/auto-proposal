@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - HYGIENA SA
 
-**📅 Date:** 15/11/2025 10:44
+**📅 Date:** 17/11/2025 12:58
 **🆔 Client ID:** 17452
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 3.4s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 37**
-- Urgents (rupture ≤ 0j): 24
+**Produits à risque détectés: 35**
+- Urgents (rupture ≤ 0j): 22
 - Modérés (0 < rupture ≤ 19j): 13
 
-**Total produits (Phase 1): 37**
-**Quantité totale brute: 8062 unités**
+**Total produits (Phase 1): 35**
+**Quantité totale brute: 7933 unités**
 
 ### Détails par produit
 
@@ -822,30 +822,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV209] LV Confit de Figues Bio 150g (bocal weck)</strong> (ID: 13079) - 75 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.7979
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-09 | S37980 | 75 | 16.98€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [75]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 75
-
-</details>
-
-<details>
 <summary>🔴 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 63 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -871,12 +847,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV156] LV Sauce barbecue 263 ml bio</strong> (ID: 13053) - 15 unités</summary>
+<summary>🔴 <strong>[LV156] LV Sauce barbecue 263 ml bio</strong> (ID: 13053) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1456
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.3766
+- **Stock restant estimé**: -23.79
+- **Jours avant rupture**: **-63j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -884,37 +860,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-30 | S37746 | 15 | 18.64€ |
+| 2025-02-07 | S34768 | 50 | 18.64€ |
+| 2024-09-09 | S32157 | 25 | 18.64€ |
+| 2024-08-05 | S30800 | 15 | 18.64€ |
+| 2024-06-13 | S30784 | 40 | 18.64€ |
+| 2024-05-06 | S30146 | 50 | 18.64€ |
+| 2023-12-19 | S28212 | 25 | 18.64€ |
+| 2023-10-25 | S26498 | 50 | 18.64€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [15]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 15
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV339] LV Tripack apéro</strong> (ID: 14986) - 64 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5203
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-10 | S37327 | 64 | 16.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [64]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 64
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [15, 50, 25, 15, 40]
+- **Nombre commandes**: 8
+- **Valeur médiane**: 25
 
 </details>
 
@@ -922,9 +881,9 @@
 <summary>🔴 <strong>[LV221] LV Cornichons Aigre-Doux 670g</strong> (ID: 13106) - 80 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5161
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 1.2431
+- **Stock restant estimé**: -112.68
+- **Jours avant rupture**: **-90j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -932,12 +891,23 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-09 | S36661 | 80 | 10.98€ |
+| 2025-04-02 | S35782 | 80 | 10.98€ |
+| 2025-02-07 | S34769 | 112 | 10.98€ |
+| 2024-12-19 | S33920 | 63 | 10.98€ |
+| 2024-11-12 | S33249 | 63 | 10.98€ |
+| 2024-09-09 | S32157 | 48 | 10.98€ |
+| 2024-08-05 | S30800 | 48 | 10.98€ |
+| 2024-05-06 | S30144 | 80 | 10.98€ |
+| 2024-04-18 | S29845 | 96 | 10.98€ |
+| 2024-02-02 | S28784 | 128 | 10.98€ |
+| 2023-12-19 | S28207 | 54 | 10.98€ |
+| 2023-10-18 | S04874 | 48 | 10.98€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [80]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [80, 80, 112, 63, 63]
+- **Nombre commandes**: 12
 - **Valeur médiane**: 80
 
 </details>
@@ -1000,7 +970,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 82875.92€**
+- **Montant initial: 80720.02€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1039,14 +1009,12 @@
 | [LV187] LV Tartinade Mangue... | 13073 | 144 | 0 | 144 | 17.34€ | 2496.96€ |
 | [LV330] LV BIO Tartinade To... | 14450 | 250 | 0 | 250 | 10.14€ | 2535.00€ |
 | [LV146] LV Sauce Aïoli 200 ml | 13044 | 100 | 0 | 100 | 10.26€ | 1026.00€ |
-| [LV209] LV Confit de Figues... | 13079 | 75 | 0 | 75 | 16.98€ | 1273.50€ |
 | [LV157] LV Ketchup aux toma... | 13054 | 63 | 0 | 63 | 16.96€ | 1068.48€ |
-| [LV156] LV Sauce barbecue 2... | 13053 | 15 | 0 | 15 | 18.64€ | 279.60€ |
-| [LV339] LV Tripack apéro | 14986 | 64 | 0 | 64 | 16.70€ | 1068.80€ |
+| [LV156] LV Sauce barbecue 2... | 13053 | 25 | 0 | 25 | 18.64€ | 466.00€ |
 | [LV221] LV Cornichons Aigre... | 13106 | 80 | 0 | 80 | 10.98€ | 878.40€ |
 | [LV140] LV Moutarde à l'anc... | 13056 | 30 | 0 | 30 | 10.32€ | 309.60€ |
 | [LV220] LV Cornichons Fins ... | 13105 | 126 | 0 | 126 | 10.20€ | 1285.20€ |
 
-**Total (Phase 2.5): 82875.92€**
+**Total (Phase 2.5): 80720.02€**
 
 ---

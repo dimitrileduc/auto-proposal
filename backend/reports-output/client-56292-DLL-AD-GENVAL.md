@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DLL AD GENVAL
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 56292
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.9s
+**⏱️ Durée d'exécution:** 1.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 37**
-- Urgents (rupture ≤ 0j): 20
-- Modérés (0 < rupture ≤ 19j): 17
+**Produits à risque détectés: 36**
+- Urgents (rupture ≤ 0j): 18
+- Modérés (0 < rupture ≤ 19j): 18
 
-**Total produits (Phase 1): 37**
-**Quantité totale brute: 38 unités**
+**Total produits (Phase 1): 36**
+**Quantité totale brute: 37 unités**
 
 ### Détails par produit
 
@@ -188,30 +188,6 @@
 - **Confiance**: high
 - **Quantités historiques**: [1, 2, 2, 1, 1]
 - **Nombre commandes**: 8
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> (ID: 16777) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0500
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-20 | S36912 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -786,12 +762,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
+<summary>🟡 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0161
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0135
+- **Stock restant estimé**: 0.16
+- **Jours avant rupture**: **11j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -799,12 +775,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-08 | S35885 | 1 | 25.80€ |
+| 2024-08-26 | S31932 | 1 | 25.80€ |
+| 2024-07-10 | S31180 | 2 | 25.80€ |
+| 2024-06-04 | S30597 | 1 | 25.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 2, 1]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 1
 
 </details>
@@ -1011,7 +990,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 928.98€**
+- **Montant initial: 909.48€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1026,7 +1005,6 @@
 | [JF004] JF MAYONNAIS POIVRE... | 16746 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF009] JF SAUCE TARTARE 25... | 16780 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF008] JF MAYONNA DU CHEF ... | 16743 | 1 | 0 | 1 | 25.80€ | 25.80€ |
-| [JF007] JF SAUCE MAYO TOMAT... | 16777 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF005] JF MAYONNAISE OEUFS... | 16749 | 2 | 0 | 2 | 19.50€ | 39.00€ |
 | [JF054] JF LEMON MAYONNAISE... | 19354 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF055] JF HONEY MUSTARD MA... | 19355 | 1 | 0 | 1 | 19.50€ | 19.50€ |
@@ -1058,6 +1036,6 @@
 | [LEA06] LEAMO maté 330ml | 18294 | 1 | 0 | 1 | 33.80€ | 33.80€ |
 | [LEA07] LEAMO orangeade bio... | 18295 | 1 | 0 | 1 | 33.80€ | 33.80€ |
 
-**Total (Phase 2.5): 928.98€**
+**Total (Phase 2.5): 909.48€**
 
 ---

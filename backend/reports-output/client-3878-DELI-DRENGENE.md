@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - DELI DRENGENE
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 3878
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.9s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
@@ -15,7 +15,7 @@
 - Modérés (0 < rupture ≤ 19j): 3
 
 **Total produits (Phase 1): 5**
-**Quantité totale brute: 923 unités**
+**Quantité totale brute: 903 unités**
 
 ### Détails par produit
 
@@ -102,12 +102,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO</strong> (ID: 14901) - 100 unités</summary>
+<summary>🔴 <strong>[PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO</strong> (ID: 14901) - 80 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5682
-- **Stock restant estimé**: -0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.8333
+- **Stock restant estimé**: -46.67
+- **Jours avant rupture**: **-56j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -115,13 +115,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-31 | S35720 | 100 | 12.84€ |
+| 2025-02-03 | S34635 | 50 | 12.84€ |
+| 2025-01-02 | S34028 | 50 | 12.84€ |
+| 2024-10-16 | S32802 | 100 | 12.84€ |
+| 2024-03-08 | S29234 | 80 | 12.84€ |
+| 2024-02-19 | S28984 | 60 | 12.84€ |
+| 2024-01-15 | S28525 | 100 | 12.84€ |
+| 2023-10-16 | S04838 | 50 | 12.84€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [100]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 100
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [100, 50, 50, 100, 80]
+- **Nombre commandes**: 8
+- **Valeur médiane**: 80
 
 </details>
 
@@ -129,9 +136,9 @@
 <summary>🔴 <strong>[PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO</strong> (ID: 14889) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8523
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 4.9038
+- **Stock restant estimé**: -713.07
+- **Jours avant rupture**: **-145j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -139,12 +146,30 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-31 | S35720 | 150 | 15.72€ |
+| 2025-02-26 | S35096 | 150 | 15.72€ |
+| 2025-02-03 | S34635 | 150 | 15.72€ |
+| 2025-01-02 | S34028 | 300 | 15.72€ |
+| 2024-11-18 | S33332 | 200 | 15.72€ |
+| 2024-10-30 | S33039 | 200 | 15.72€ |
+| 2024-09-30 | S32492 | 150 | 15.72€ |
+| 2024-09-05 | S32065 | 150 | 15.72€ |
+| 2024-08-12 | S31635 | 200 | 15.72€ |
+| 2024-07-11 | S31268 | 200 | 15.72€ |
+| 2024-05-31 | S30560 | 150 | 15.72€ |
+| 2024-05-28 | S30486 | 150 | 15.72€ |
+| 2024-03-08 | S29234 | 150 | 15.72€ |
+| 2024-02-19 | S28984 | 150 | 15.72€ |
+| 2024-01-15 | S28525 | 150 | 15.72€ |
+| 2023-12-28 | S28309 | 150 | 15.72€ |
+| 2023-12-04 | S27989 | 300 | 15.72€ |
+| 2023-11-15 | S27666 | 114 | 15.72€ |
+| 2023-11-07 | S27498 | 200 | 15.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [150]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [150, 150, 150, 300, 200]
+- **Nombre commandes**: 19
 - **Valeur médiane**: 150
 
 </details>
@@ -157,7 +182,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 9269.40€**
+- **Montant initial: 9012.60€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -169,9 +194,9 @@
 | [PF3264] 3313 - LD DD SAUCE... | 14896 | 150 | 0 | 150 | 12.84€ | 1926.00€ |
 | [PF1057] DD MAYONNAISE TRUF... | 9059 | 468 | 0 | 468 | 6.40€ | 2995.20€ |
 | [PF3263] 3312 - LD DD MAYON... | 14895 | 55 | 0 | 55 | 12.84€ | 706.20€ |
-| [PF3265] 3314 - LD DD SAUCE... | 14901 | 100 | 0 | 100 | 12.84€ | 1284.00€ |
+| [PF3265] 3314 - LD DD SAUCE... | 14901 | 80 | 0 | 80 | 12.84€ | 1027.20€ |
 | [PF3260] 3311 - LD DD MAYO ... | 14889 | 150 | 0 | 150 | 15.72€ | 2358.00€ |
 
-**Total (Phase 2.5): 9269.40€**
+**Total (Phase 2.5): 9012.60€**
 
 ---

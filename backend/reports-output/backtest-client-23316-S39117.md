@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 81.5% | 27 produits prédits, 22 corrects |
+| **Précision** | 78.6% | 28 produits prédits, 22 corrects |
 | **Rappel** | 91.7% | 24 produits réels, 22 détectés |
-| **F1-Score** | 86.3% | Score équilibré global |
+| **F1-Score** | 84.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -164,7 +164,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -189,6 +189,7 @@
 | [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | Stock prédit: 0.3u (15j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -219,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:17.292Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:29.519Z*

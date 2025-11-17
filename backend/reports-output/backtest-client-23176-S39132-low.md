@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 16 produits prédits, 8 corrects |
-| **Rappel** | 42.1% | 19 produits réels, 8 détectés |
-| **F1-Score** | 45.7% | Score équilibré global |
+| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 19 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,24 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV135] LV Tartinade Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV133] LV Tartinade Ananas Coco 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV136] LV Tartinade Betterave 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [MF0061] MF Compote | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (8)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,19 +157,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV188] LV Tartinade Aubergine  380g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV138] LV Tartinade Carotte gingembre  380g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV165] LV Vol-au-vent (avec viande de volaille) 400 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -202,19 +184,27 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock suffisant: 0.6u (74j restants > seuil 19j) |
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.2u (5j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 3 | Stock suffisant: -2.7u (-55j restants > seuil 19j) |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.1u (4j restants > seuil 19j) |
 | [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: -0.1u (-5j restants > seuil 19j) |
 | [LV132] LV Tartinade Houmous type 190g | 2 | Stock suffisant: -1.4u (-55j restants > seuil 19j) |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: -0.3u (-5j restants > seuil 19j) |
+| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock suffisant: 0.6u (56j restants > seuil 19j) |
+| [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: 1.1u (74j restants > seuil 19j) |
+| [LV136] LV Tartinade Betterave 190g | 2 | Stock suffisant: -0.4u (-20j restants > seuil 19j) |
+| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock suffisant: 0.8u (62j restants > seuil 19j) |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock suffisant: -0.4u (-14j restants > seuil 19j) |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -0.8u (-27j restants > seuil 19j) |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: -0.1u (-6j restants > seuil 19j) |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | Stock suffisant: -1.2u (-35j restants > seuil 19j) |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock suffisant: -0.1u (-5j restants > seuil 19j) |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock suffisant: 0.4u (26j restants > seuil 19j) |
+| [MF0061] MF Compote | 2 | Stock suffisant: 0.4u (26j restants > seuil 19j) |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock suffisant: 0.5u (22j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:59.401Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:23.134Z*

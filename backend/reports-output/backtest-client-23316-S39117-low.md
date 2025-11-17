@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 16 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 10 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 24 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (16)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,16 +157,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0052] MF Pois chiches  500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0053] MF Maïs 500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [MF0061] MF Compote | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [WIG04] WIGNAC cidre rosé bio 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
@@ -225,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:17.294Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:29.522Z*

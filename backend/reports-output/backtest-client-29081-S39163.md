@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 41.0% | 39 produits prédits, 16 corrects |
-| **Rappel** | 55.2% | 29 produits réels, 16 détectés |
-| **F1-Score** | 47.1% | Score équilibré global |
+| **Précision** | 41.9% | 43 produits prédits, 18 corrects |
+| **Rappel** | 62.1% | 29 produits réels, 18 détectés |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.31 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 21.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 11 | Égalité parfaite |
+| **MAE** | 0.28 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 19.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 13 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (16)
+## True Positives (18)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -153,12 +153,14 @@
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (23)
+## False Positives (25)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -198,14 +200,16 @@
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: -0.6u (-22j restants) → prédit 1u mais non commandé |
 | [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.5u (-18j restants) → prédit 1u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.4u (-26j restants) → prédit 1u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: -0.3u (-29j restants) → prédit 1u mais non commandé |
 | [MF0029] MF Tarti Datte chili 250g | 2 | Stock prédit: -1.4u (-46j restants) → prédit 2u mais non commandé |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: -0.1u (-18j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (13)
+## False Negatives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -232,14 +236,12 @@
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock suffisant: 0.5u (31j restants > seuil 19j) |
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.3u (29j restants > seuil 19j) |
 | [MF0059] MF Confi Fraise- Ardbei | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [MF0027] MF Tarti Aubergine 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock suffisant: 0.7u (108j restants > seuil 19j) |
 | [VID0009] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 36 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:54.701Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:00.064Z*

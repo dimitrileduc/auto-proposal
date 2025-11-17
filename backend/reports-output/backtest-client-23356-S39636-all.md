@@ -179,7 +179,7 @@
 | [LV132] LV Tartinade Houmous type 190g | 10 | Stock prédit: -14.5u (-61j restants) → prédit 10u mais non commandé |
 | [LV138] LV Tartinade Carotte gingembre  380g | 10 | Stock prédit: -9.7u (-54j restants) → prédit 10u mais non commandé |
 | [LV217] LV Tartinade Basilic 380g | 10 | Stock prédit: -4.1u (-30j restants) → prédit 10u mais non commandé |
-| [LV097] LV Asperges (origine UE)  280 g  | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [LV097] LV Asperges (origine UE)  280 g  | 5 | Stock prédit: -11.5u (-86j restants) → prédit 5u mais non commandé |
 
 
 ---
@@ -203,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:57.797Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:19.913Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 5 produits prédits, 2 corrects |
+| **Précision** | 66.7% | 3 produits prédits, 2 corrects |
 | **Rappel** | 33.3% | 6 produits réels, 2 détectés |
-| **F1-Score** | 36.4% | Score équilibré global |
+| **F1-Score** | 44.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,8 +165,6 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
-| [CB002] CB Cherry Apple juice 25cl | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -199,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:06.179Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:38.408Z*

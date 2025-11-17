@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - MDH FOODSERVICE
 
-**📅 Date:** 15/11/2025 10:47
+**📅 Date:** 17/11/2025 13:01
 **🆔 Client ID:** 60488
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 2.7s
 
 ---
 
@@ -11,11 +11,11 @@
 
 
 **Produits à risque détectés: 8**
-- Urgents (rupture ≤ 0j): 6
-- Modérés (0 < rupture ≤ 19j): 2
+- Urgents (rupture ≤ 0j): 5
+- Modérés (0 < rupture ≤ 19j): 3
 
 **Total produits (Phase 1): 8**
-**Quantité totale brute: 51 unités**
+**Quantité totale brute: 52 unités**
 
 ### Détails par produit
 
@@ -218,12 +218,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18356) - 10 unités</summary>
+<summary>🟡 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18356) - 11 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1010
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0978
+- **Stock restant estimé**: 0.32
+- **Jours avant rupture**: **3j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -231,13 +231,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-13 | S37439 | 10 | 25.30€ |
+| 2025-02-07 | S34759 | 12 | 25.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [10]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 10
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [10, 12]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 11
 
 </details>
 
@@ -249,7 +250,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1135.40€**
+- **Montant initial: 1160.70€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -265,8 +266,8 @@
 | [REB08] ReBEL chips premium... | 18351 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB02] ReBEL chips premium... | 18349 | 2 | 0 | 2 | 17.00€ | 34.00€ |
 | [REB03] ReBEL chips premium... | 18352 | 1 | 0 | 1 | 17.00€ | 17.00€ |
-| [REB11] ReBEL chips premium... | 18356 | 10 | 0 | 10 | 25.30€ | 253.00€ |
+| [REB11] ReBEL chips premium... | 18356 | 11 | 0 | 11 | 25.30€ | 278.30€ |
 
-**Total (Phase 2.5): 1135.40€**
+**Total (Phase 2.5): 1160.70€**
 
 ---

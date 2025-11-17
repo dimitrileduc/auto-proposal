@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 3 produits prédits, 3 corrects |
-| **Rappel** | 33.3% | 9 produits réels, 3 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 77.8% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,15 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -164,7 +156,7 @@
 
 ---
 
-## False Negatives (6)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -188,10 +180,13 @@
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: 0.8u (18j restants > seuil 19j) |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: 0.4u (18j restants > seuil 19j) |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: -0.4u (-16j restants > seuil 19j) |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.7u (46j restants > seuil 19j) |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock suffisant: -0.2u (-10j restants > seuil 19j) |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock suffisant: -0.2u (-16j restants > seuil 19j) |
 | [UPI01] Jus de pomme bio d'UPIGNY 250ml | 3 | Stock suffisant: 0.1u (3j restants > seuil 19j) |
+| [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 3 | Stock suffisant: 1.5u (89j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:39.592Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:14.312Z*

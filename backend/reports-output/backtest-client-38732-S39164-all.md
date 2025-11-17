@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 47.5% | 40 produits prédits, 19 corrects |
+| **Précision** | 50.0% | 38 produits prédits, 19 corrects |
 | **Rappel** | 95.0% | 20 produits réels, 19 détectés |
-| **F1-Score** | 63.3% | Score équilibré global |
+| **F1-Score** | 65.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -161,7 +161,7 @@
 
 ---
 
-## False Positives (21)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -195,13 +195,11 @@
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.9u (-26j restants) → prédit 1u mais non commandé |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -0.5u (-18j restants) → prédit 1u mais non commandé |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD015] LD Onion Spread 180g | 2 | Stock prédit: -2.6u (-51j restants) → prédit 2u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 3 | Stock prédit: -1.0u (-19j restants) → prédit 3u mais non commandé |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
 | [DIS0003] Display TVF bois | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock prédit: 0.1u (19j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -231,4 +229,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:50.670Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:55.258Z*

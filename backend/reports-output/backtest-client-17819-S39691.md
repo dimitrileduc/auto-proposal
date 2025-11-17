@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 68.8% | 32 produits prédits, 22 corrects |
-| **Rappel** | 75.9% | 29 produits réels, 22 détectés |
-| **F1-Score** | 72.1% | Score équilibré global |
+| **Précision** | 60.5% | 43 produits prédits, 26 corrects |
+| **Rappel** | 89.7% | 29 produits réels, 26 détectés |
+| **F1-Score** | 72.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.45 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 37.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 13 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| **MAE** | 0.42 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 35.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 16 | Égalité parfaite |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (22)
+## True Positives (26)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -157,14 +157,18 @@
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (10)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -194,11 +198,18 @@
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock prédit: -0.6u (-35j restants) → prédit 1u mais non commandé |
 | [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock prédit: -1.2u (-35j restants) → prédit 2u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: -0.1u (-7j restants) → prédit 2u mais non commandé |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.1u (12j restants) → prédit 1u mais non commandé |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: -1.2u (-66j restants) → prédit 1u mais non commandé |
+| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.4u (-34j restants) → prédit 1u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.4u (-44j restants) → prédit 1u mais non commandé |
+| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.1u (-13j restants) → prédit 1u mais non commandé |
+| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: -0.8u (-68j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -218,15 +229,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV136] LV Tartinade Betterave 190g | 1 | Stock suffisant: 0.4u (27j restants > seuil 19j) |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:41.072Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:48.011Z*

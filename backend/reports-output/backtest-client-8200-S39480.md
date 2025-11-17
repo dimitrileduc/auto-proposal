@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 13.3% | 15 produits prédits, 2 corrects |
+| **Précision** | 8.7% | 23 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 23.5% | Score équilibré global |
+| **F1-Score** | 16.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (13)
+## False Positives (21)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,11 +172,19 @@
 | [PF0093] FILOU MOUTARDE 300GR | 3 | Stock prédit: 0.5u (6j restants) → prédit 3u mais non commandé |
 | [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.2u (-3j restants) → prédit 15u mais non commandé |
 | [PF0094] FILOU MOUTARDE 700 GR | 3 | Stock prédit: -0.4u (-6j restants) → prédit 3u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 44 | Stock prédit: -15.7u (-36j restants) → prédit 44u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 0.4u (14j restants) → prédit 2u mais non commandé |
 | [PF0096] FILOU MOUTARDE 3 KG | 20 | Stock prédit: -0.2u (0j restants) → prédit 20u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.8u (18j restants) → prédit 4u mais non commandé |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock prédit: 0.3u (14j restants) → prédit 2u mais non commandé |
 | [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.5u (-40j restants) → prédit 2u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock prédit: -1.2u (-42j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: -1.0u (-68j restants) → prédit 2u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.4u (-41j restants) → prédit 1u mais non commandé |
+| [PF3290] JF MAYO BARAKI 925ML | 8 | Stock prédit: -8.6u (-53j restants) → prédit 8u mais non commandé |
+| [PF3272] JF PEPPER MAYONNAISE 925ML | 4 | Stock prédit: -4.1u (-30j restants) → prédit 4u mais non commandé |
+| [PF3273] JF MITRAILLETTE SAUCE 925ML | 8 | Stock prédit: -10.3u (-69j restants) → prédit 8u mais non commandé |
 
 
 ---
@@ -200,4 +208,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:16.912Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:03.707Z*

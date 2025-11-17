@@ -1,48 +1,24 @@
 # 📊 Rapport Auto-Proposal - SPRL GOOD & FOOD
 
-**📅 Date:** 15/11/2025 10:45
+**📅 Date:** 17/11/2025 12:59
 **🆔 Client ID:** 58284
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.9s
+**⏱️ Durée d'exécution:** 3.9s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 9**
-- Urgents (rupture ≤ 0j): 8
+**Produits à risque détectés: 8**
+- Urgents (rupture ≤ 0j): 7
 - Modérés (0 < rupture ≤ 19j): 1
 
-**Total produits (Phase 1): 9**
-**Quantité totale brute: 3313 unités**
+**Total produits (Phase 1): 8**
+**Quantité totale brute: 2730 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[ING0271] SIROP D'AGAVE BIO</strong> (ID: 8797) - 25 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.9615
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-09-05 | S39013 | 25 | 3.25€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [25]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 25
-
-</details>
 
 <details>
 <summary>🔴 <strong>[PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML</strong> (ID: 18405) - 338 unités</summary>
@@ -196,12 +172,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3352] DLL MARINADE AVOCAT TOMATES SECHEES 240ML</strong> (ID: 18400) - 564 unités</summary>
+<summary>🔴 <strong>[PF3352] DLL MARINADE AVOCAT TOMATES SECHEES 240ML</strong> (ID: 18400) - 285 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.1778
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 6.3910
+- **Stock restant estimé**: -298.78
+- **Jours avant rupture**: **-46j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -209,23 +185,26 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36909 | 564 | 4.80€ |
+| 2025-03-13 | S35395 | 5 | 4.80€ |
+| 2025-02-03 | S34638 | 3 | 4.80€ |
+| 2025-01-08 | S34172 | 1128 | 4.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [564]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 564
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [564, 5, 3, 1128]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 285
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3351] DLL MARINADE AVOCAT BBQ 240ML</strong> (ID: 18399) - 564 unités</summary>
+<summary>🔴 <strong>[PF3351] DLL MARINADE AVOCAT BBQ 240ML</strong> (ID: 18399) - 285 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.1778
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 6.3835
+- **Stock restant estimé**: -297.77
+- **Jours avant rupture**: **-46j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -233,13 +212,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36909 | 564 | 6.05€ |
+| 2025-03-13 | S35395 | 5 | 6.05€ |
+| 2025-02-03 | S34638 | 1 | 6.05€ |
+| 2025-01-08 | S34172 | 1128 | 6.05€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [564]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 564
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [564, 5, 1, 1128]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 285
 
 </details>
 
@@ -251,7 +233,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 17997.82€**
+- **Montant initial: 14889.42€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -260,16 +242,15 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [ING0271] SIROP D'AGAVE BIO | 8797 | 25 | 0 | 25 | 3.25€ | 81.25€ |
 | [PF3357] DLL DRESSING AVOCA... | 18405 | 338 | 0 | 338 | 5.61€ | 1896.18€ |
 | [PF3358] DLL DRESSING AVOCA... | 18406 | 350 | 0 | 350 | 4.75€ | 1662.50€ |
 | [PF3353] DLL DRESSING AVOCA... | 18401 | 282 | 0 | 282 | 5.16€ | 1455.12€ |
 | [PF3355] DLL DRESSING AVOCA... | 18403 | 483 | 0 | 483 | 5.41€ | 2613.03€ |
 | [PF3350] DLL MARINADE AVOCA... | 18387 | 286 | 0 | 286 | 5.72€ | 1635.92€ |
 | [PF3360] DLL MAYONNAISE AVO... | 18408 | 421 | 0 | 421 | 6.02€ | 2534.42€ |
-| [PF3352] DLL MARINADE AVOCA... | 18400 | 564 | 0 | 564 | 4.80€ | 2707.20€ |
-| [PF3351] DLL MARINADE AVOCA... | 18399 | 564 | 0 | 564 | 6.05€ | 3412.20€ |
+| [PF3352] DLL MARINADE AVOCA... | 18400 | 285 | 0 | 285 | 4.80€ | 1368.00€ |
+| [PF3351] DLL MARINADE AVOCA... | 18399 | 285 | 0 | 285 | 6.05€ | 1724.25€ |
 
-**Total (Phase 2.5): 17997.82€**
+**Total (Phase 2.5): 14889.42€**
 
 ---

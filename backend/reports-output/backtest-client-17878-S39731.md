@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 44.0% | 25 produits prédits, 11 corrects |
-| **Rappel** | 68.8% | 16 produits réels, 11 détectés |
-| **F1-Score** | 53.7% | Score équilibré global |
+| **Précision** | 42.9% | 28 produits prédits, 12 corrects |
+| **Rappel** | 75.0% | 16 produits réels, 12 détectés |
+| **F1-Score** | 54.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.09 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 9.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 10 | Égalité parfaite |
+| **MAE** | 0.08 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 8.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 11 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (11)
+## True Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -149,11 +149,12 @@
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV133] LV Tartinade Ananas Coco 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (14)
+## False Positives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -187,11 +188,13 @@
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: -0.5u (-23j restants) → prédit 1u mais non commandé |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.2u (-13j restants) → prédit 1u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -0.3u (-21j restants) → prédit 1u mais non commandé |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.4u (-45j restants) → prédit 1u mais non commandé |
+| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: -0.3u (-41j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (5)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -213,11 +216,10 @@
 |---------|---------------|--------|
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 12.3u (68j restants > seuil 19j) |
 | [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | Stock suffisant: 0.5u (43j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:46.458Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:48.446Z*

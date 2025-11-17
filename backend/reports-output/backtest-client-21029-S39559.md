@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 78.8% | 33 produits prédits, 26 corrects |
-| **Rappel** | 72.2% | 36 produits réels, 26 détectés |
-| **F1-Score** | 75.4% | Score équilibré global |
+| **Précision** | 77.1% | 35 produits prédits, 27 corrects |
+| **Rappel** | 75.0% | 36 produits réels, 27 détectés |
+| **F1-Score** | 76.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.42 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 23.1% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.44 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 25.9% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 15 | Égalité parfaite |
-| Partial Match (>0u) | 11 | Avec erreur |
+| Partial Match (>0u) | 12 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (26)
+## True Positives (27)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -163,12 +163,13 @@
 | [fsv08] Banana chips bio vrac 1,6kg | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [fsv18] Mendiant bio vrac 2,8kg | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0051] MF Kidney Beans 500g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV217] LV Tartinade Basilic 380g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (7)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -195,11 +196,12 @@
 | [KOKO01] KOKO Kombucha original 330ml | 1 | Stock prédit: -0.3u (-15j restants) → prédit 1u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.2u (-11j restants) → prédit 1u mais non commandé |
 | [fsv05] Noix de pecan nature bio vrac 2,2kg  | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
+| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: -1.2u (-79j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (10)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -221,7 +223,6 @@
 |---------|---------------|--------|
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0051] MF Kidney Beans 500g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [MF0053] MF Maïs 500g | 3 | Stock suffisant: 0.9u (26j restants > seuil 19j) |
 | [LV331] LV Tartinade Lentils Balsamico 190g | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
@@ -233,4 +234,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:11.617Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:38.553Z*

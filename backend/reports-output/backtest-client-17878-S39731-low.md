@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 14.3% | 7 produits prédits, 1 corrects |
-| **Rappel** | 6.3% | 16 produits réels, 1 détectés |
-| **F1-Score** | 8.7% | Score équilibré global |
+| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 16 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (6)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,15 +159,12 @@
 |---------|-------------|--------|
 | [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV188] LV Tartinade Aubergine  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [fsv08] Banana chips bio vrac 1,6kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (15)
+## False Negatives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -204,6 +195,7 @@
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: -1.2u (-89j restants > seuil 19j) |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 12.3u (68j restants > seuil 19j) |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | Stock suffisant: 0.2u (13j restants > seuil 19j) |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
@@ -212,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:46.461Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:48.448Z*

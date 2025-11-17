@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Un poids c'est tout
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 9940
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.5s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 32**
-- Urgents (rupture ≤ 0j): 23
-- Modérés (0 < rupture ≤ 19j): 9
+**Produits à risque détectés: 28**
+- Urgents (rupture ≤ 0j): 16
+- Modérés (0 < rupture ≤ 19j): 12
 
-**Total produits (Phase 1): 32**
-**Quantité totale brute: 52 unités**
+**Total produits (Phase 1): 28**
+**Quantité totale brute: 48 unités**
 
 ### Détails par produit
 
@@ -141,30 +141,6 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-08-05 | S38306 | 1 | 35.76€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0014] MF Olives noires 500g</strong> (ID: 554) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0303
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-05 | S38306 | 1 | 27.60€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: single_recent_order
@@ -302,30 +278,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 3, 1]
 - **Nombre commandes**: 3
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0032] MF Tarti Pois chiches 250 g</strong> (ID: 572) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0303
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-05 | S38306 | 1 | 14.46€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -485,30 +437,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0013] MF Olives Vertes 500g</strong> (ID: 553) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0122
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-17 | S37466 | 1 | 27.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[MF0052] MF Pois chiches  500g</strong> (ID: 16950) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -584,12 +512,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> (ID: 18287) - 1 unités</summary>
+<summary>🔴 <strong>[KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> (ID: 18287) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0122
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0264
+- **Stock restant estimé**: -1.17
+- **Jours avant rupture**: **-44j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -597,13 +525,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-17 | S37466 | 1 | 23.88€ |
+| 2025-02-17 | S34786 | 3 | 23.88€ |
+| 2025-01-23 | S34484 | 2 | 23.88€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 3, 2]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 2
 
 </details>
 
@@ -657,12 +587,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18351) - 2 unités</summary>
+<summary>🟡 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18351) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0180
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0176
+- **Stock restant estimé**: 0.04
+- **Jours avant rupture**: **2j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -670,12 +600,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36883 | 2 | 17.70€ |
+| 2025-01-23 | S34484 | 2 | 17.70€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -731,12 +662,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> (ID: 18380) - 1 unités</summary>
+<summary>🟡 <strong>[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> (ID: 18380) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0088
+- **Stock restant estimé**: 0.02
+- **Jours avant rupture**: **2j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -744,23 +675,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36883 | 1 | 31.60€ |
+| 2025-01-23 | S34484 | 1 | 31.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> (ID: 18378) - 1 unités</summary>
+<summary>🟡 <strong>[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> (ID: 18378) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0088
+- **Stock restant estimé**: 0.02
+- **Jours avant rupture**: **2j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -768,12 +700,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36883 | 1 | 31.60€ |
+| 2025-01-23 | S34484 | 1 | 31.60€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -782,9 +715,9 @@
 <summary>🔴 <strong>[WIG01] WIGNAC cidre naturel bio 330ml</strong> (ID: 18381) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0090
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0099
+- **Stock restant estimé**: -0.10
+- **Jours avant rupture**: **-10j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -792,37 +725,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36883 | 1 | 25.80€ |
+| 2025-02-17 | S34786 | 1 | 25.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[MF0051] MF Kidney Beans 500g</strong> (ID: 16949) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0132
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-08 | S35853 | 2 | 12.00€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
 
 </details>
 
@@ -834,7 +744,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 972.64€**
+- **Montant initial: 902.86€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -848,24 +758,21 @@
 | [REB04] ReBEL chips premium... | 18355 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [KOKO01] KOKO Kombucha orig... | 18289 | 1 | 0 | 1 | 23.88€ | 23.88€ |
 | [MATE01] MATE MATE thé glac... | 18300 | 1 | 0 | 1 | 35.76€ | 35.76€ |
-| [MF0014] MF Olives noires 500g | 554 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0012] MF Olives Mix 500g | 552 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0047] MF Mayonnaise 250ml | 14850 | 3 | 0 | 3 | 16.50€ | 49.50€ |
 | [MF0027] MF Tarti Aubergine... | 567 | 2 | 0 | 2 | 14.46€ | 28.92€ |
 | [MF0028] ​MF Tarti Carotte ... | 568 | 2 | 0 | 2 | 14.46€ | 28.92€ |
 | [MF0030] MF Tarti Mangue Cu... | 570 | 1 | 0 | 1 | 14.46€ | 14.46€ |
-| [MF0032] MF Tarti Pois chic... | 572 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [MF0033] MF Tarti Poivron c... | 573 | 3 | 0 | 3 | 14.46€ | 43.38€ |
 | [MF0034] MF Tarti Pomme Rai... | 574 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [MF0035] MF Tarti Tomate Ai... | 575 | 2 | 0 | 2 | 14.46€ | 28.92€ |
 | [TEN03] TENSAÏ TEA  thé bla... | 18377 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [MF0021] MF Sauce BBQ 250ml | 561 | 1 | 0 | 1 | 18.60€ | 18.60€ |
 | [MF0029] MF Tarti Datte chi... | 569 | 1 | 0 | 1 | 14.46€ | 14.46€ |
-| [MF0013] MF Olives Vertes 500g | 553 | 1 | 0 | 1 | 27.60€ | 27.60€ |
 | [MF0052] MF Pois chiches  500g | 16950 | 2 | 0 | 2 | 12.00€ | 24.00€ |
 | [MF0050] MF Cornichons aigr... | 16936 | 2 | 0 | 2 | 23.04€ | 46.08€ |
 | [PAO02] PAOLA cola ZERO ver... | 18347 | 1 | 0 | 1 | 25.20€ | 25.20€ |
-| [KOKO02] KOKO Kombucha Lemo... | 18287 | 1 | 0 | 1 | 23.88€ | 23.88€ |
+| [KOKO02] KOKO Kombucha Lemo... | 18287 | 2 | 0 | 2 | 23.88€ | 47.76€ |
 | [REB11] ReBEL chips premium... | 18356 | 1 | 0 | 1 | 25.30€ | 25.30€ |
 | [REB03] ReBEL chips premium... | 18352 | 2 | 0 | 2 | 17.70€ | 35.40€ |
 | [REB08] ReBEL chips premium... | 18351 | 2 | 0 | 2 | 17.70€ | 35.40€ |
@@ -874,8 +781,7 @@
 | [TEN01] TENSAÏ TEA  thé ver... | 18380 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [WIG01] WIGNAC cidre nature... | 18381 | 1 | 0 | 1 | 25.80€ | 25.80€ |
-| [MF0051] MF Kidney Beans 500g | 16949 | 2 | 0 | 2 | 12.00€ | 24.00€ |
 
-**Total (Phase 2.5): 972.64€**
+**Total (Phase 2.5): 902.86€**
 
 ---

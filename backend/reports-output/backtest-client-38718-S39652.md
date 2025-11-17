@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 51.5% | 33 produits prédits, 17 corrects |
-| **Rappel** | 60.7% | 28 produits réels, 17 détectés |
-| **F1-Score** | 55.7% | Score équilibré global |
+| **Précision** | 47.5% | 40 produits prédits, 19 corrects |
+| **Rappel** | 67.9% | 28 produits réels, 19 détectés |
+| **F1-Score** | 55.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.71 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 49.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
+| **MAE** | 0.63 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 43.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 8 | Égalité parfaite |
 | Partial Match (>0u) | 11 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (17)
+## True Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -155,11 +155,13 @@
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JOY08] JOY! Organic Raspberry Jam 370g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (16)
+## False Positives (21)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -195,11 +197,16 @@
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.9u (-29j restants) → prédit 1u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [RIT04] RITCHIE Pamplemousse - verre 275ml | 2 | Stock prédit: -0.9u (-33j restants) → prédit 2u mais non commandé |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-46j restants) → prédit 1u mais non commandé |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -0.9u (-73j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -221,8 +228,6 @@
 |---------|---------------|--------|
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock suffisant: 1.2u (30j restants > seuil 19j) |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 1.1u (24j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 6 | Stock suffisant: 3.2u (23j restants > seuil 19j) |
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 1.0u (22j restants > seuil 19j) |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock suffisant: 1.0u (23j restants > seuil 19j) |
@@ -234,4 +239,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:59.966Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:00.638Z*

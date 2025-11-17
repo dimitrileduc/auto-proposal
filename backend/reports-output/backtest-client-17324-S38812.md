@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 6 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -162,6 +162,8 @@
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | Stock prédit: 0.4u (8j restants) → prédit 4u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | Stock prédit: 0.4u (8j restants) → prédit 4u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 7 | Stock prédit: -6.0u (-70j restants) → prédit 7u mais non commandé |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 10 | Stock prédit: 1.4u (10j restants) → prédit 10u mais non commandé |
 
 
 ---
@@ -189,11 +191,11 @@
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 5 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 5 | Stock suffisant: 5.0u (109j restants > seuil 19j) |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.5u (75j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:06.376Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:31.903Z*

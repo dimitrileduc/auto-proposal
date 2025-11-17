@@ -1,48 +1,24 @@
 # 📊 Rapport Auto-Proposal - PURE BASTOGNE
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 60522
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.6s
+**⏱️ Durée d'exécution:** 3.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 20**
-- Urgents (rupture ≤ 0j): 17
-- Modérés (0 < rupture ≤ 19j): 3
+**Produits à risque détectés: 17**
+- Urgents (rupture ≤ 0j): 13
+- Modérés (0 < rupture ≤ 19j): 4
 
-**Total produits (Phase 1): 20**
-**Quantité totale brute: 39 unités**
+**Total produits (Phase 1): 17**
+**Quantité totale brute: 30 unités**
 
 ### Détails par produit
 
-
-<details>
-<summary>🔴 <strong>[OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml </strong> (ID: 18333) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0541
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-24 | S38218 | 2 | 59.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
 
 <details>
 <summary>🟡 <strong>[OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> (ID: 18330) - 2 unités</summary>
@@ -320,30 +296,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JOY04] JOY! Organic Four-Fruit Jam 370g</strong> (ID: 18276) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0135
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-17 | S37435 | 1 | 27.92€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[JOY06] JOY! Organic Rhubarb Jam 370g</strong> (ID: 18274) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -369,12 +321,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JOY03] JOY! Organic Apricot Jam 370g</strong> (ID: 18275) - 1 unités</summary>
+<summary>🟡 <strong>[JOY03] JOY! Organic Apricot Jam 370g</strong> (ID: 18275) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0093
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0087
+- **Stock restant estimé**: 0.07
+- **Jours avant rupture**: **7j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -382,12 +334,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-15 | S36399 | 1 | 27.92€ |
+| 2025-01-13 | S34270 | 1 | 27.92€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -420,9 +373,9 @@
 <summary>🔴 <strong>[JOY01] JOY! Organic Sweet Orange Jam 370g</strong> (ID: 18269) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0074
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0087
+- **Stock restant estimé**: -0.18
+- **Jours avant rupture**: **-20j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -430,37 +383,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-17 | S35707 | 1 | 27.36€ |
+| 2025-01-13 | S34270 | 1 | 27.36€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> (ID: 18309) - 6 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0444
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-17 | S35707 | 6 | 32.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [6]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 6
 
 </details>
 
@@ -520,7 +450,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1318.84€**
+- **Montant initial: 977.12€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -529,7 +459,6 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [OCC03] OCCHIOLINO SUCO - c... | 18333 | 2 | 0 | 2 | 59.70€ | 119.40€ |
 | [OCC01] OCCHIOLINO huile d'... | 18330 | 2 | 0 | 2 | 77.40€ | 154.80€ |
 | [JOY05] Organic Cherry Jam ... | 18270 | 1 | 0 | 1 | 31.84€ | 31.84€ |
 | [JOY02] JOY! Organic Strawb... | 18272 | 1 | 0 | 1 | 27.92€ | 27.92€ |
@@ -541,15 +470,13 @@
 | [TEN04] TENSAÏ TEA  thé mat... | 18378 | 2 | 0 | 2 | 31.60€ | 63.20€ |
 | [TEN02] TENSAÏ TEA  thé noi... | 18379 | 1 | 0 | 1 | 31.60€ | 31.60€ |
 | [TEN01] TENSAÏ TEA  thé ver... | 18380 | 1 | 0 | 1 | 31.60€ | 31.60€ |
-| [JOY04] JOY! Organic Four-F... | 18276 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [JOY06] JOY! Organic Rhubar... | 18274 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [JOY03] JOY! Organic Aprico... | 18275 | 1 | 0 | 1 | 27.92€ | 27.92€ |
 | [JOY08] JOY! Organic Raspbe... | 18273 | 1 | 0 | 1 | 31.84€ | 31.84€ |
 | [JOY01] JOY! Organic Sweet ... | 18269 | 1 | 0 | 1 | 27.36€ | 27.36€ |
-| [NOD04] NODA limonade bio f... | 18309 | 6 | 0 | 6 | 32.40€ | 194.40€ |
 | [RIT07] RITCHIE Orange - ca... | 18370 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 | [RIT08] RITCHIE Citron - ca... | 18363 | 1 | 0 | 1 | 30.96€ | 30.96€ |
 
-**Total (Phase 2.5): 1318.84€**
+**Total (Phase 2.5): 977.12€**
 
 ---

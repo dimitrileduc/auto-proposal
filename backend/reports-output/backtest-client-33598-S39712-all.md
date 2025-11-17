@@ -197,7 +197,7 @@
 | [PF1624] BONI VINAIGRETTE MANGUE 450ML | 378 | Stock prédit: -2398.2u (-77j restants) → prédit 378u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 126 | Stock prédit: -80.9u (-48j restants) → prédit 126u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 100 | Stock prédit: -60.7u (-52j restants) → prédit 100u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 126 | Stock prédit: 0.0u (0j restants) → prédit 126u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 126 | Stock prédit: -23.3u (-22j restants) → prédit 126u mais non commandé |
 
 
 ---
@@ -221,4 +221,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:01.087Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:43.219Z*

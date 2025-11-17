@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Dorfladen An Ennen
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:03
 **🆔 Client ID:** 8630
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 2.9s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 24**
-- Urgents (rupture ≤ 0j): 23
+**Produits à risque détectés: 22**
+- Urgents (rupture ≤ 0j): 21
 - Modérés (0 < rupture ≤ 19j): 1
 
-**Total produits (Phase 1): 24**
-**Quantité totale brute: 27 unités**
+**Total produits (Phase 1): 22**
+**Quantité totale brute: 25 unités**
 
 ### Détails par produit
 
@@ -279,9 +279,9 @@
 <summary>🔴 <strong>[MF0032] MF Tarti Pois chiches 250 g</strong> (ID: 572) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0091
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0097
+- **Stock restant estimé**: -0.07
+- **Jours avant rupture**: **-6j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -289,12 +289,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36875 | 1 | 14.46€ |
+| 2025-01-08 | S33990 | 1 | 14.46€ |
+| 2024-09-16 | S32261 | 1 | 14.46€ |
+| 2024-04-05 | S29594 | 1 | 14.46€ |
+| 2024-02-02 | S28787 | 1 | 14.46€ |
+| 2023-12-05 | S27975 | 1 | 14.46€ |
+| 2023-09-14 | S04107 | 1 | 14.46€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -380,9 +386,9 @@
 <summary>🔴 <strong>[MF0028] ​MF Tarti Carotte Gingembre 250g</strong> (ID: 568) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0091
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0124
+- **Stock restant estimé**: -0.37
+- **Jours avant rupture**: **-29j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -390,12 +396,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-19 | S36875 | 1 | 14.46€ |
+| 2025-01-31 | S34610 | 1 | 14.46€ |
+| 2025-01-08 | S33990 | 3 | 14.46€ |
+| 2024-04-05 | S29594 | 1 | 14.46€ |
+| 2024-02-02 | S28787 | 1 | 14.46€ |
+| 2023-12-05 | S27975 | 1 | 14.46€ |
+| 2023-09-14 | S04107 | 1 | 14.46€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 3, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -501,30 +513,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[MF0021] MF Sauce BBQ 250ml</strong> (ID: 561) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0067
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-10 | S35958 | 1 | 18.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[REB05] REB chips bio - sel de mer 35g</strong> (ID: 18416) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -549,36 +537,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[CB002] CB Cherry Apple juice 25cl</strong> (ID: 14938) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0067
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-10 | S35958 | 1 | 40.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[MF0055] MF Noix de cajou - Curry 133g</strong> (ID: 16979) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0120
+- **Stock restant estimé**: -1.14
+- **Jours avant rupture**: **-95j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -586,12 +550,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-11 | S35273 | 1 | 20.62€ |
+| 2025-01-31 | S34610 | 1 | 20.62€ |
+| 2024-11-14 | S33276 | 1 | 20.62€ |
+| 2024-07-01 | S31048 | 2 | 20.62€ |
+| 2024-04-05 | S29594 | 1 | 20.62€ |
+| 2024-02-02 | S28787 | 1 | 20.62€ |
+| 2023-11-07 | S27439 | 1 | 20.62€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -600,9 +570,9 @@
 <summary>🔴 <strong>[LV040] LV Caprons apéritifs 240g</strong> (ID: 13100) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0068
+- **Stock restant estimé**: -0.21
+- **Jours avant rupture**: **-30j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -610,12 +580,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-11 | S35273 | 1 | 16.44€ |
+| 2024-11-14 | S33276 | 1 | 15.66€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -628,7 +599,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 482.69€**
+- **Montant initial: 423.29€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -656,12 +627,10 @@
 | [MF0029] MF Tarti Datte chi... | 569 | 1 | 0 | 1 | 14.46€ | 14.46€ |
 | [NUT06] NUTS & BERRIES Bar ... | 18324 | 1 | 0 | 1 | 17.55€ | 17.55€ |
 | [REB08] ReBEL chips premium... | 18351 | 2 | 0 | 2 | 17.70€ | 35.40€ |
-| [MF0021] MF Sauce BBQ 250ml | 561 | 1 | 0 | 1 | 18.60€ | 18.60€ |
 | [REB05] REB chips bio - sel... | 18416 | 1 | 0 | 1 | 17.60€ | 17.60€ |
-| [CB002] CB Cherry Apple jui... | 14938 | 1 | 0 | 1 | 40.80€ | 40.80€ |
 | [MF0055] MF Noix de cajou -... | 16979 | 1 | 0 | 1 | 20.62€ | 20.62€ |
 | [LV040] LV Caprons apéritif... | 13100 | 1 | 0 | 1 | 16.44€ | 16.44€ |
 
-**Total (Phase 2.5): 482.69€**
+**Total (Phase 2.5): 423.29€**
 
 ---

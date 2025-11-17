@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - ILLICO VENDING
 
-**📅 Date:** 15/11/2025 10:48
+**📅 Date:** 17/11/2025 13:02
 **🆔 Client ID:** 60364
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.3s
+**⏱️ Durée d'exécution:** 2.9s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 10**
-- Urgents (rupture ≤ 0j): 7
+**Produits à risque détectés: 9**
+- Urgents (rupture ≤ 0j): 6
 - Modérés (0 < rupture ≤ 19j): 3
 
-**Total produits (Phase 1): 10**
-**Quantité totale brute: 128 unités**
+**Total produits (Phase 1): 9**
+**Quantité totale brute: 118 unités**
 
 ### Détails par produit
 
@@ -69,30 +69,6 @@
 - **Quantités historiques**: [6, 8, 8]
 - **Nombre commandes**: 3
 - **Valeur médiane**: 8
-
-</details>
-
-<details>
-<summary>🔴 <strong>[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> (ID: 18327) - 10 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2564
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-06 | S38265 | 10 | 14.40€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [10]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 10
 
 </details>
 
@@ -285,7 +261,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1745.10€**
+- **Montant initial: 1601.10€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -296,7 +272,6 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [REB05] REB chips bio - sel... | 18416 | 8 | 0 | 8 | 17.40€ | 139.20€ |
 | [REB06] REB chips bio - pap... | 18415 | 8 | 0 | 8 | 17.40€ | 139.20€ |
-| [NUT01] NUTS & BERRIES ener... | 18327 | 10 | 0 | 10 | 14.40€ | 144.00€ |
 | [NOM03] NOMADIC barre proté... | 18321 | 7 | 0 | 7 | 15.75€ | 110.25€ |
 | [NOM04] NOMADIC barre proté... | 18319 | 4 | 0 | 4 | 15.75€ | 63.00€ |
 | [NOM01] NOMADIC barre proté... | 18318 | 7 | 0 | 7 | 15.75€ | 110.25€ |
@@ -305,6 +280,6 @@
 | [NUT02] NUTS & BERRIES ener... | 18329 | 13 | 0 | 13 | 14.40€ | 187.20€ |
 | [ALO32] ORGANIC CRUNCH aloe... | 18337 | 20 | 0 | 20 | 12.00€ | 240.00€ |
 
-**Total (Phase 2.5): 1745.10€**
+**Total (Phase 2.5): 1601.10€**
 
 ---

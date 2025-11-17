@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 16.7% | 6 produits prédits, 1 corrects |
+| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
 | **Rappel** | 25.0% | 4 produits réels, 1 détectés |
-| **F1-Score** | 20.0% | Score équilibré global |
+| **F1-Score** | 22.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,8 +165,7 @@
 |---------|-------------|--------|
 | [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1728 | Stock prédit: 466.6u (6j restants) → prédit 1728u mais non commandé |
 | [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4416 | Stock prédit: 690.6u (4j restants) → prédit 4416u mais non commandé |
-| [PF3258] NL_AUFSTR_038 KORO TARTINADE BIO TOMATE 380G | 43 | Stock prédit: 0.0u (0j restants) → prédit 43u mais non commandé |
-| [PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G | 166 | Stock prédit: 0.0u (0j restants) → prédit 166u mais non commandé |
+| [PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G | 166 | Stock prédit: -43.0u (-26j restants) → prédit 166u mais non commandé |
 | [PF3342] DE_AUFSTR_042_T6 KORO TARTINADE BIO PAPRIKA CHILI 380G | 3000 | Stock prédit: -6019.7u (-88j restants) → prédit 3000u mais non commandé |
 
 
@@ -199,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:24.114Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:12.403Z*

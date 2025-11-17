@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.80 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 66.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 73.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -142,7 +142,7 @@
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 20 | 20 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 10 | 3 | 7.0 | 233.3% | ✅ partial |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 11 | 3 | 8.0 | 266.7% | ✅ partial |
 
 
 ---
@@ -193,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:10.442Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:14.984Z*

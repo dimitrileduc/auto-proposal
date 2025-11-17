@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 53.3% | 15 produits prédits, 8 corrects |
+| **Précision** | 42.1% | 19 produits prédits, 8 corrects |
 | **Rappel** | 61.5% | 13 produits réels, 8 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,10 +173,14 @@
 | [CB005] CB Apple juice 1l | 2 | Stock prédit: -0.7u (-19j restants) → prédit 2u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: -0.7u (-30j restants) → prédit 1u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: -0.4u (-19j restants) → prédit 1u mais non commandé |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.8u (-50j restants) → prédit 1u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: -0.5u (-35j restants) → prédit 1u mais non commandé |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock prédit: -0.4u (-29j restants) → prédit 1u mais non commandé |
 | [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.8u (-50j restants) → prédit 1u mais non commandé |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: -0.5u (-35j restants) → prédit 1u mais non commandé |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: -1.1u (-95j restants) → prédit 1u mais non commandé |
+| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: -0.2u (-30j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -210,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:00.799Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:25.329Z*

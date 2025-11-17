@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
-| **Rappel** | 8.3% | 12 produits réels, 1 détectés |
-| **F1-Score** | 13.3% | Score équilibré global |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 12 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (2)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,13 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [JF021] JF PICKLES 350 ML | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -194,6 +187,7 @@
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock suffisant: 1.7u (25j restants > seuil 19j) |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock suffisant: 3.4u (29j restants > seuil 19j) |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock suffisant: 2.7u (41j restants > seuil 19j) |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock suffisant: 0.9u (44j restants > seuil 19j) |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 0.8u (23j restants > seuil 19j) |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.8u (23j restants > seuil 19j) |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock suffisant: 0.9u (37j restants > seuil 19j) |
@@ -204,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:49:14.593Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:44.130Z*

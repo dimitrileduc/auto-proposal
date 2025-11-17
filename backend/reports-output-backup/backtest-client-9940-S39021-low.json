@@ -1,0 +1,22 @@
+{
+  "clientId": 9940,
+  "clientName": "Un poids c'est tout",
+  "orderName": "S39021",
+  "orderDate": "2025-09-09 06:26:24",
+  "cutoffDate": "2025-09-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 7,
+    "fn": 14,
+    "precision": 0.4166666666666667,
+    "recall": 0.2631578947368421,
+    "f1Score": 0.3225806451612903,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 0
+  }
+}

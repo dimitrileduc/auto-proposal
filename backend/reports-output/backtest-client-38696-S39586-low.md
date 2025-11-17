@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 5.3% | 19 produits prédits, 1 corrects |
-| **Rappel** | 9.1% | 11 produits réels, 1 détectés |
-| **F1-Score** | 6.7% | Score équilibré global |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF029] JF VOL AU VENT BOCAL 400G | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (18)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,12 +157,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [LD009] LD Organic Asparagus Spread 180 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
@@ -176,16 +164,11 @@
 | [LD011] LD Organic Kids Spread 180 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [LD012] LD Organic Samphire Spread 135 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [LD015] LD Onion Spread 180g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [MF0021] MF Sauce BBQ 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 
 
 ---
 
-## False Negatives (10)
+## False Negatives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -209,6 +192,7 @@
 | [MF0029] MF Tarti Datte chili 250g | 2 | Stock suffisant: 0.8u (7j restants > seuil 19j) |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: -0.5u (-8j restants > seuil 19j) |
+| [JF029] JF VOL AU VENT BOCAL 400G | 2 | Stock suffisant: 0.6u (74j restants > seuil 19j) |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock suffisant: -1.0u (-8j restants > seuil 19j) |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | Stock suffisant: -0.9u (-21j restants > seuil 19j) |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 3 | Stock suffisant: 0.7u (14j restants > seuil 19j) |
@@ -219,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:37.325Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:30.455Z*

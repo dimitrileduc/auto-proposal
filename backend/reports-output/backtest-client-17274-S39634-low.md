@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 55.6% | 9 produits prédits, 5 corrects |
-| **Rappel** | 23.8% | 21 produits réels, 5 détectés |
-| **F1-Score** | 33.3% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 21 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 70.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,21 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 4 | 2 | 2.0 | 100.0% | ✅ partial |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (4)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -162,20 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 7 | Stock prédit: 0.0u (0j restants) → prédit 7u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (16)
+## False Negatives (21)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -195,10 +176,15 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock suffisant: -0.1u (-9j restants > seuil 19j) |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock suffisant: -0.2u (-8j restants > seuil 19j) |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock suffisant: -0.6u (-22j restants > seuil 19j) |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock suffisant: -0.2u (-7j restants > seuil 19j) |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 3 | Stock suffisant: -1.9u (-47j restants > seuil 19j) |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 4 | Stock suffisant: -1.0u (-16j restants > seuil 19j) |
+| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 2 | Stock suffisant: 1.1u (57j restants > seuil 19j) |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock suffisant: -3.0u (-88j restants > seuil 19j) |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.3u (24j restants > seuil 19j) |
@@ -215,4 +201,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:50:02.399Z*
+*Rapport généré automatiquement le 2025-11-17T12:04:33.931Z*

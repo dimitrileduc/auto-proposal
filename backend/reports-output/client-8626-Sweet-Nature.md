@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - Sweet Nature
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 8626
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 2.9s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 53**
-- Urgents (rupture ≤ 0j): 53
+**Produits à risque détectés: 52**
+- Urgents (rupture ≤ 0j): 52
 - Modérés (0 < rupture ≤ 19j): 0
 
-**Total produits (Phase 1): 53**
-**Quantité totale brute: 61 unités**
+**Total produits (Phase 1): 52**
+**Quantité totale brute: 60 unités**
 
 ### Détails par produit
 
@@ -298,30 +298,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl</strong> (ID: 17732) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0120
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-01 | S37792 | 1 | 17.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🔴 <strong>[FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl</strong> (ID: 17733) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -376,9 +352,9 @@
 <summary>🔴 <strong>[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> (ID: 18326) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0120
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0126
+- **Stock restant estimé**: -0.05
+- **Jours avant rupture**: **-3j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -386,12 +362,14 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-07-01 | S37792 | 1 | 16.05€ |
+| 2025-03-20 | S35475 | 1 | 16.05€ |
+| 2025-01-27 | S34526 | 1 | 16.05€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 1]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -1332,7 +1310,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1196.27€**
+- **Montant initial: 1179.07€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -1352,7 +1330,6 @@
 | [LV342] LV Organic Broccoli... | 14999 | 1 | 0 | 1 | 13.53€ | 13.53€ |
 | [LV209] LV Confit de Figues... | 13079 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [FO001] FO CITRONNADE BIO 33cl | 17731 | 1 | 0 | 1 | 17.20€ | 17.20€ |
-| [FO002] FO ORGANIC FRUITY H... | 17732 | 1 | 0 | 1 | 17.20€ | 17.20€ |
 | [FO003] FO ORGANIC FRUITY P... | 17733 | 1 | 0 | 1 | 17.20€ | 17.20€ |
 | [NUT01] NUTS & BERRIES ener... | 18327 | 1 | 0 | 1 | 16.05€ | 16.05€ |
 | [NUT04] NUTS & BERRIES ener... | 18326 | 1 | 0 | 1 | 16.05€ | 16.05€ |
@@ -1395,6 +1372,6 @@
 | [FIL11] FIL MAYONNAISE ŒUFS... | 19240 | 1 | 0 | 1 | 19.28€ | 19.28€ |
 | [UPI08] Jus de pomme-citron... | 18280 | 1 | 0 | 1 | 16.68€ | 16.68€ |
 
-**Total (Phase 2.5): 1196.27€**
+**Total (Phase 2.5): 1179.07€**
 
 ---

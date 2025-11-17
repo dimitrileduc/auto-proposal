@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 9 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,7 +158,6 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
-| [PF1845] FILOU SAMOURAI SQUEEZE 300ML | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
 
 
 ---
@@ -196,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:30.117Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:20.810Z*

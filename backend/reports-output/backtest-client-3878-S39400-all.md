@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 30.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 20.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO | 100 | 40 | 60.0 | 150.0% | ✅ partial |
+| [PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO | 80 | 40 | 40.0 | 100.0% | ✅ partial |
 | [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | 150 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -196,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:21.243Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:27.060Z*

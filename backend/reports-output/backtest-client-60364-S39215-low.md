@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 4 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,7 +157,6 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 7 | Stock prédit: 0.0u (0j restants) → prédit 7u mais non commandé |
 
 
@@ -191,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:05.057Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:13.629Z*

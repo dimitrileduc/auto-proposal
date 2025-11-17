@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 4 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,7 +159,6 @@
 |---------|-------------|--------|
 | [LV209] LV Confit de Figues Bio 150g (bocal weck) | 100 | Stock prédit: 0.0u (0j restants) → prédit 100u mais non commandé |
 | [LV339] LV Tripack apéro | 184 | Stock prédit: 0.0u (0j restants) → prédit 184u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 126 | Stock prédit: 0.0u (0j restants) → prédit 126u mais non commandé |
 
 
 ---
@@ -192,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:01.086Z*
+*Rapport généré automatiquement le 2025-11-17T11:58:43.218Z*

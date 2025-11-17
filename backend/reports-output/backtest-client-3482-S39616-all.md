@@ -164,11 +164,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [PF1598] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [PF1601] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 3 | Stock prédit: -5.0u (-97j restants) → prédit 3u mais non commandé |
+| [PF1598] JF ANDALOUSE SQUEEZE 300ML | 3 | Stock prédit: -3.8u (-66j restants) → prédit 3u mais non commandé |
+| [PF1601] JF SAMOURAI SQUEEZE 300ML | 4 | Stock prédit: -7.4u (-120j restants) → prédit 4u mais non commandé |
 | [PF1846] BELGIAN BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1639] JF BURGER SQUEEZE 300ML | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
+| [PF1639] JF BURGER SQUEEZE 300ML | 4 | Stock prédit: -4.0u (-68j restants) → prédit 4u mais non commandé |
 
 
 ---
@@ -192,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:33.438Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:39.133Z*

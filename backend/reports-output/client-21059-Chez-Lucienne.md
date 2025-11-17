@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Chez Lucienne
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 21059
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.6s
+**⏱️ Durée d'exécution:** 3.7s
 
 ---
 
@@ -639,8 +639,8 @@
 <summary>🔴 <strong>[LV147] LV Sauce Cocktail 200 ml</strong> (ID: 13045) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0104
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 0.0103
+- **Stock restant estimé**: 0.01
 - **Jours avant rupture**: **0j**
 - **Seuil réappro**: 19j
 
@@ -649,12 +649,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-25 | S37648 | 1 | 15.48€ |
+| 2025-03-06 | S35252 | 1 | 15.48€ |
+| 2024-12-13 | S33873 | 1 | 15.18€ |
+| 2024-10-07 | S32626 | 1 | 15.18€ |
+| 2024-04-29 | S29977 | 1 | 15.18€ |
+| 2023-12-07 | S28070 | 1 | 15.18€ |
+| 2023-11-21 | S27720 | 1 | 15.18€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>
@@ -663,9 +669,9 @@
 <summary>🔴 <strong>[LV131] LV Tartinade Potiron 190g</strong> (ID: 13062) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0162
+- **Stock restant estimé**: -1.92
+- **Jours avant rupture**: **-118j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -673,12 +679,20 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-02 | S35780 | 1 | 13.10€ |
+| 2025-03-06 | S35252 | 1 | 13.10€ |
+| 2025-01-29 | S34585 | 1 | 13.10€ |
+| 2024-12-04 | S33647 | 1 | 12.72€ |
+| 2024-11-07 | S33155 | 1 | 12.72€ |
+| 2024-06-13 | S30757 | 1 | 12.72€ |
+| 2024-04-29 | S29977 | 1 | 12.72€ |
+| 2023-12-07 | S28070 | 2 | 12.72€ |
+| 2023-11-21 | S27720 | 2 | 12.72€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 9
 - **Valeur médiane**: 1
 
 </details>
@@ -687,9 +701,9 @@
 <summary>🔴 <strong>[LV137] LV Tartinade Lentilles Curry 190g</strong> (ID: 13069) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0056
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0103
+- **Stock restant estimé**: -0.86
+- **Jours avant rupture**: **-83j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -697,12 +711,18 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-04-02 | S35780 | 1 | 13.72€ |
+| 2025-01-29 | S34585 | 1 | 13.72€ |
+| 2024-12-04 | S33647 | 1 | 13.32€ |
+| 2024-10-07 | S32626 | 1 | 13.32€ |
+| 2024-02-05 | S28789 | 1 | 13.32€ |
+| 2023-12-07 | S28070 | 1 | 13.32€ |
+| 2023-11-21 | S27720 | 1 | 13.32€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>

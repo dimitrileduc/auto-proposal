@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
-| **Rappel** | 13.3% | 15 produits réels, 2 détectés |
-| **F1-Score** | 21.1% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 15 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,18 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [LV149] LV Sauce Aioli Pesto 200ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV146] LV Sauce Aïoli 200 ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (2)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,18 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (13)
+## False Negatives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -199,6 +185,8 @@
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 4 | Stock suffisant: 1.2u (40j restants > seuil 19j) |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 2 | Stock suffisant: 2.1u (57j restants > seuil 19j) |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV146] LV Sauce Aïoli 200 ml | 1 | Stock suffisant: -0.3u (-11j restants > seuil 19j) |
+| [LV149] LV Sauce Aioli Pesto 200ml | 1 | Stock suffisant: 0.3u (11j restants > seuil 19j) |
 | [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock suffisant: -0.0u (-2j restants > seuil 19j) |
 | [LV160] LV Tartinade Aubergine 190g | 2 | Stock suffisant: -0.1u (-1j restants > seuil 19j) |
 | [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.2u (2j restants > seuil 19j) |
@@ -207,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:14.079Z*
+*Rapport généré automatiquement le 2025-11-17T12:02:24.556Z*

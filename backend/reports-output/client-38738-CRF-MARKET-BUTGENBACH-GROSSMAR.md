@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - CRF MARKET BUTGENBACH GROSSMAR
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 38738
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.5s
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 30**
-- Urgents (rupture ≤ 0j): 23
-- Modérés (0 < rupture ≤ 19j): 7
+**Produits à risque détectés: 24**
+- Urgents (rupture ≤ 0j): 15
+- Modérés (0 < rupture ≤ 19j): 9
 
-**Total produits (Phase 1): 30**
-**Quantité totale brute: 39 unités**
+**Total produits (Phase 1): 24**
+**Quantité totale brute: 32 unités**
 
 ### Détails par produit
 
@@ -48,30 +48,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF017] JF SAUCE COCKTAIL 250ML WECK</strong> (ID: 16771) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-22 | S38185 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
 <summary>🟡 <strong>[JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> (ID: 16762) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -92,30 +68,6 @@
 - **Confiance**: medium
 - **Quantités historiques**: [1, 1]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF002] JF MAYONNAI BASILIC 250ML WECK</strong> (ID: 16744) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0526
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-22 | S38185 | 1 | 19.50€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
 - **Valeur médiane**: 1
 
 </details>
@@ -351,12 +303,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF028] JF VINAIGRET CAESAR WECK 200ML</strong> (ID: 16785) - 1 unités</summary>
+<summary>🟡 <strong>[JF028] JF VINAIGRET CAESAR WECK 200ML</strong> (ID: 16785) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0116
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0110
+- **Stock restant estimé**: 0.05
+- **Jours avant rupture**: **4j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -364,12 +316,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-16 | S36843 | 1 | 27.00€ |
+| 2024-11-04 | S32877 | 1 | 27.00€ |
+| 2024-08-30 | S31993 | 1 | 27.00€ |
+| 2024-06-28 | S31029 | 1 | 27.00€ |
+| 2024-05-14 | S30268 | 1 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 1
 
 </details>
@@ -567,108 +523,12 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g</strong> (ID: 16828) - 2 unités</summary>
+<summary>🟡 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0233
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-16 | S36843 | 2 | 10.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> (ID: 18264) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0233
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-16 | S36843 | 2 | 14.88€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> (ID: 18266) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0233
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-16 | S36843 | 2 | 14.88€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> (ID: 18265) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0233
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-16 | S36843 | 2 | 14.88€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[JF014] JF SAUCE BEARNAISE 470ML WECK</strong> (ID: 16769) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0064
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0058
+- **Stock restant estimé**: 0.09
+- **Jours avant rupture**: **15j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -676,23 +536,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-06 | S35241 | 1 | 25.80€ |
+| 2024-08-30 | S31993 | 1 | 25.80€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF016] TVF TARTINADE BIO POIS CHICHES 380G</strong> (ID: 17671) - 1 unités</summary>
+<summary>🔴 <strong>[TVF016] TVF TARTINADE BIO POIS CHICHES 380G</strong> (ID: 17671) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0064
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0103
+- **Stock restant estimé**: -0.61
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -700,23 +561,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-06 | S35241 | 1 | 20.40€ |
+| 2024-10-22 | S32876 | 2 | 15.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF015] TVF TARTINADE BIO AUBERGINE 380G</strong> (ID: 17670) - 1 unités</summary>
+<summary>🔴 <strong>[TVF015] TVF TARTINADE BIO AUBERGINE 380G</strong> (ID: 17670) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0064
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0103
+- **Stock restant estimé**: -0.61
+- **Jours avant rupture**: **-59j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -724,23 +586,24 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-06 | S35241 | 1 | 20.40€ |
+| 2024-10-22 | S32876 | 2 | 15.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[TVF017] TVF TARTINADE BIO TOMATE 380G</strong> (ID: 17672) - 1 unités</summary>
+<summary>🔴 <strong>[TVF017] TVF TARTINADE BIO TOMATE 380G</strong> (ID: 17672) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0064
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0171
+- **Stock restant estimé**: -1.69
+- **Jours avant rupture**: **-98j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -748,13 +611,15 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-03-06 | S35241 | 1 | 20.40€ |
+| 2024-11-04 | S32877 | 2 | 20.40€ |
+| 2024-10-22 | S32876 | 2 | 15.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 2, 2]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 2
 
 </details>
 
@@ -766,7 +631,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 650.98€**
+- **Montant initial: 562.30€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -776,9 +641,7 @@
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [JF015] JF SAUCE ANDALOUSE ... | 16763 | 1 | 0 | 1 | 19.50€ | 19.50€ |
-| [JF017] JF SAUCE COCKTAIL 2... | 16771 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF019] JF SAUCE AIOLI PEST... | 16762 | 1 | 0 | 1 | 21.00€ | 21.00€ |
-| [JF002] JF MAYONNAI BASILIC... | 16744 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [JF001] JF MAYONNAI TRUFFES... | 16745 | 1 | 0 | 1 | 23.40€ | 23.40€ |
 | [TVF005] TVF TARTINADE BIO ... | 16824 | 2 | 0 | 2 | 10.80€ | 21.60€ |
 | [TVF009] TVF TARTINADE BIO ... | 16832 | 3 | 0 | 3 | 10.80€ | 32.40€ |
@@ -797,15 +660,11 @@
 | [LD013] LD Tuscan Organic S... | 19398 | 1 | 0 | 1 | 14.50€ | 14.50€ |
 | [LD014] LD Organic Avocado ... | 19434 | 1 | 0 | 1 | 14.50€ | 14.50€ |
 | [LD015] LD Onion Spread 180g | 19435 | 1 | 0 | 1 | 14.50€ | 14.50€ |
-| [TVF007] TVF TARTINADE BIO ... | 16828 | 2 | 0 | 2 | 10.80€ | 21.60€ |
-| [BUD02] BUDDY Organic Energ... | 18264 | 2 | 0 | 2 | 14.88€ | 29.76€ |
-| [BUD03] BUDDY biologische e... | 18266 | 2 | 0 | 2 | 14.88€ | 29.76€ |
-| [BUD04] BUDDY Organic Energ... | 18265 | 2 | 0 | 2 | 14.88€ | 29.76€ |
 | [JF014] JF SAUCE BEARNAISE ... | 16769 | 1 | 0 | 1 | 25.80€ | 25.80€ |
-| [TVF016] TVF TARTINADE BIO ... | 17671 | 1 | 0 | 1 | 20.40€ | 20.40€ |
-| [TVF015] TVF TARTINADE BIO ... | 17670 | 1 | 0 | 1 | 20.40€ | 20.40€ |
-| [TVF017] TVF TARTINADE BIO ... | 17672 | 1 | 0 | 1 | 20.40€ | 20.40€ |
+| [TVF016] TVF TARTINADE BIO ... | 17671 | 2 | 0 | 2 | 20.40€ | 40.80€ |
+| [TVF015] TVF TARTINADE BIO ... | 17670 | 2 | 0 | 2 | 20.40€ | 40.80€ |
+| [TVF017] TVF TARTINADE BIO ... | 17672 | 2 | 0 | 2 | 20.40€ | 40.80€ |
 
-**Total (Phase 2.5): 650.98€**
+**Total (Phase 2.5): 562.30€**
 
 ---

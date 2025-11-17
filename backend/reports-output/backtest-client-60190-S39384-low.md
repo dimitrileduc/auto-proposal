@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
-| **Rappel** | 20.0% | 5 produits réels, 1 détectés |
-| **F1-Score** | 28.6% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 25.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 250.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [REB06] REB chips bio - paprika fumé 35g | 35 | 10 | 25.0 | 250.0% | ✅ partial |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (1)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,17 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (4)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -189,6 +177,7 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 10 | Stock suffisant: -1.6u (-5j restants > seuil 19j) |
+| [REB06] REB chips bio - paprika fumé 35g | 10 | Stock suffisant: -15.1u (-48j restants > seuil 19j) |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 10 | Stock suffisant: 4.9u (16j restants > seuil 19j) |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 15 | Stock suffisant: 7.0u (18j restants > seuil 19j) |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 5 | Stock suffisant: 1.5u (9j restants > seuil 19j) |
@@ -196,4 +185,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:14.442Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:19.268Z*

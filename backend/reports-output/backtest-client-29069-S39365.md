@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 20.9% | 43 produits prédits, 9 corrects |
+| **Précision** | 18.4% | 49 produits prédits, 9 corrects |
 | **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 33.3% | Score équilibré global |
+| **F1-Score** | 30.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (34)
+## False Positives (40)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -196,15 +196,21 @@
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: -0.3u (-17j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: -0.6u (-29j restants) → prédit 1u mais non commandé |
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
+| [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: -0.4u (-25j restants) → prédit 1u mais non commandé |
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: -0.3u (-17j restants) → prédit 1u mais non commandé |
 | [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: -0.3u (-17j restants) → prédit 1u mais non commandé |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 2 | Stock prédit: 0.1u (4j restants) → prédit 2u mais non commandé |
 | [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: -0.3u (-17j restants) → prédit 1u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-28j restants) → prédit 1u mais non commandé |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-28j restants) → prédit 1u mais non commandé |
+| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (5j restants) → prédit 1u mais non commandé |
 | [FIL24] FIL CURRY KETCHUP 300ML SQUEEZE  | 1 | Stock prédit: -1.1u (-55j restants) → prédit 1u mais non commandé |
 | [FIL27] FIL MOUTARDE 300ML SQUEEZE  | 1 | Stock prédit: -0.7u (-53j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.1u (15j restants) → prédit 1u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: 0.4u (19j restants) → prédit 1u mais non commandé |
+| [MF0061] MF Compote | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -235,4 +241,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:02.245Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:07.981Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
-| **Rappel** | 33.3% | 3 produits réels, 1 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **Précision** | 66.7% | 3 produits prédits, 2 corrects |
+| **Rappel** | 66.7% | 3 produits réels, 2 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 50.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 66.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
+| **MAE** | 25.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,6 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF1694] LD FR TARTINAD BIO POIVRON 200 | 25 | 75 | 50.0 | 66.7% | ✅ partial |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -168,7 +169,7 @@
 
 ---
 
-## False Negatives (2)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -189,9 +190,8 @@
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
 | [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 75 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 25 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:47:27.035Z*
+*Rapport généré automatiquement le 2025-11-17T12:01:29.978Z*

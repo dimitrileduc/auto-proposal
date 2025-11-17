@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DELISALADES
 
-**📅 Date:** 15/11/2025 10:46
+**📅 Date:** 17/11/2025 13:00
 **🆔 Client ID:** 23733
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.1s
+**⏱️ Durée d'exécution:** 2.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 21**
-- Urgents (rupture ≤ 0j): 16
+**Produits à risque détectés: 19**
+- Urgents (rupture ≤ 0j): 14
 - Modérés (0 < rupture ≤ 19j): 5
 
-**Total produits (Phase 1): 21**
-**Quantité totale brute: 66 unités**
+**Total produits (Phase 1): 19**
+**Quantité totale brute: 61 unités**
 
 ### Détails par produit
 
@@ -376,30 +376,6 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> (ID: 16743) - 3 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0429
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-23 | S38205 | 3 | 25.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [3]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 3
-
-</details>
-
-<details>
 <summary>🟡 <strong>[LV136] LV Tartinade Betterave 190g</strong> (ID: 13068) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
@@ -429,9 +405,9 @@
 <summary>🔴 <strong>[LV146] LV Sauce Aïoli 200 ml</strong> (ID: 13044) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0190
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0252
+- **Stock restant estimé**: -0.64
+- **Jours avant rupture**: **-25j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -439,12 +415,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-18 | S37528 | 2 | 13.50€ |
+| 2025-03-20 | S35526 | 2 | 13.50€ |
+| 2025-01-16 | S34353 | 2 | 13.50€ |
+| 2024-11-19 | S33365 | 2 | 13.50€ |
+| 2024-06-17 | S30823 | 2 | 13.50€ |
+| 2024-04-18 | S29869 | 2 | 13.50€ |
+| 2024-01-03 | S28352 | 3 | 13.50€ |
+| 2023-10-17 | S04853 | 3 | 13.50€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 2, 2, 2, 2]
+- **Nombre commandes**: 8
 - **Valeur médiane**: 2
 
 </details>
@@ -453,9 +436,9 @@
 <summary>🔴 <strong>[JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> (ID: 16762) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0167
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0317
+- **Stock restant estimé**: -1.80
+- **Jours avant rupture**: **-56j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -463,37 +446,19 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-06-03 | S37216 | 2 | 21.00€ |
+| 2025-03-20 | S35526 | 2 | 21.00€ |
+| 2025-02-13 | S34874 | 2 | 21.00€ |
+| 2024-11-19 | S33365 | 4 | 21.00€ |
+| 2024-10-07 | S32631 | 2 | 21.00€ |
+| 2024-06-17 | S30823 | 0 | 21.00€ |
+| 2024-05-14 | S30279 | 4 | 21.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 2, 2, 4, 2]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> (ID: 13040) - 4 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0333
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-03 | S37216 | 4 | 32.10€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [4]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 4
 
 </details>
 
@@ -527,9 +492,9 @@
 <summary>🔴 <strong>[JF025] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 16790) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0137
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0144
+- **Stock restant estimé**: -0.11
+- **Jours avant rupture**: **-7j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -537,23 +502,27 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-08 | S36610 | 2 | 27.00€ |
+| 2024-11-19 | S33365 | 3 | 27.00€ |
+| 2024-10-07 | S32631 | 1 | 27.00€ |
+| 2024-06-17 | S30823 | 0 | 27.00€ |
+| 2024-03-26 | S29505 | 2 | 27.00€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [2]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [2, 3, 1, 0, 2]
+- **Nombre commandes**: 5
 - **Valeur médiane**: 2
 
 </details>
 
 <details>
-<summary>🔴 <strong>[JF044] JF OIGNONS ROUGES 350 ML</strong> (ID: 16757) - 1 unités</summary>
+<summary>🔴 <strong>[JF044] JF OIGNONS ROUGES 350 ML</strong> (ID: 16757) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0068
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0178
+- **Stock restant estimé**: -1.60
+- **Jours avant rupture**: **-89j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -561,13 +530,16 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-08 | S36610 | 1 | 12.30€ |
+| 2025-01-07 | S34048 | 3 | 12.30€ |
+| 2024-06-17 | S30823 | 3 | 12.30€ |
+| 2024-05-14 | S30279 | 2 | 12.30€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 3, 3, 2]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 3
 
 </details>
 
@@ -579,7 +551,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1187.27€**
+- **Montant initial: 1006.07€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -601,15 +573,13 @@
 | [JF003] JF MAYONNAIS WASABI... | 16747 | 3 | 0 | 3 | 19.50€ | 58.50€ |
 | [JF027] JF VINAIGRET MIEL M... | 16787 | 3 | 0 | 3 | 27.00€ | 81.00€ |
 | [JF021] JF PICKLES 350 ML | 16759 | 4 | 0 | 4 | 20.94€ | 83.76€ |
-| [JF008] JF MAYONNA DU CHEF ... | 16743 | 3 | 0 | 3 | 25.80€ | 77.40€ |
 | [LV136] LV Tartinade Better... | 13068 | 2 | 0 | 2 | 11.94€ | 23.88€ |
 | [LV146] LV Sauce Aïoli 200 ml | 13044 | 2 | 0 | 2 | 13.50€ | 27.00€ |
 | [JF019] JF SAUCE AIOLI PEST... | 16762 | 2 | 0 | 2 | 21.00€ | 42.00€ |
-| [LV142] LV Mayonnaise en bo... | 13040 | 4 | 0 | 4 | 32.10€ | 128.40€ |
 | [LV055] LV Mini grissini à ... | 13094 | 2 | 0 | 2 | 21.16€ | 42.32€ |
 | [JF025] JF VINAIGRETTE FH W... | 16790 | 2 | 0 | 2 | 27.00€ | 54.00€ |
-| [JF044] JF OIGNONS ROUGES 3... | 16757 | 1 | 0 | 1 | 12.30€ | 12.30€ |
+| [JF044] JF OIGNONS ROUGES 3... | 16757 | 3 | 0 | 3 | 12.30€ | 36.90€ |
 
-**Total (Phase 2.5): 1187.27€**
+**Total (Phase 2.5): 1006.07€**
 
 ---

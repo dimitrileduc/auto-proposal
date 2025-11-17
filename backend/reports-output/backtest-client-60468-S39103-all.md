@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 17.6% | 17 produits prédits, 3 corrects |
+| **Précision** | 18.8% | 16 produits prédits, 3 corrects |
 | **Rappel** | 60.0% | 5 produits réels, 3 détectés |
-| **F1-Score** | 27.3% | Score équilibré global |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (14)
+## False Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -171,7 +171,6 @@
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | Stock prédit: 0.7u (12j restants) → prédit 3u mais non commandé |
 | [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 3 | Stock prédit: 0.7u (13j restants) → prédit 3u mais non commandé |
 | [fsv03] Noisette nature bio vrac 2,8kg  | 3 | Stock prédit: 0.7u (13j restants) → prédit 3u mais non commandé |
-| [fsv04] Amande nature bio vrac 2,8 kg | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
 | [JOY08] JOY! Organic Raspberry Jam 370g | 3 | Stock prédit: -1.9u (-35j restants) → prédit 3u mais non commandé |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 3 | Stock prédit: -2.6u (-42j restants) → prédit 3u mais non commandé |
@@ -209,4 +208,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:47.383Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:08.109Z*

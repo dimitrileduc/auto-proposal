@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 6 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (6)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,6 +163,7 @@
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 50 | Stock prédit: 13.0u (9j restants) → prédit 50u mais non commandé |
 | [PF1694] LD FR TARTINAD BIO POIVRON 200 | 63 | Stock prédit: 9.9u (11j restants) → prédit 63u mais non commandé |
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-45j restants) → prédit 1u mais non commandé |
+| [PF1803] LD SAUCE TARTARE 250ML WECK | 20 | Stock prédit: -7.7u (-18j restants) → prédit 20u mais non commandé |
 
 
 ---
@@ -192,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:51.110Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:45.401Z*

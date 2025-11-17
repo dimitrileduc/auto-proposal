@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 27.9% | 43 produits prédits, 12 corrects |
+| **Précision** | 28.6% | 42 produits prédits, 12 corrects |
 | **Rappel** | 70.6% | 17 produits réels, 12 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **F1-Score** | 40.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -154,7 +154,7 @@
 
 ---
 
-## False Positives (31)
+## False Positives (30)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -182,7 +182,6 @@
 | [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.8u (-17j restants) → prédit 2u mais non commandé |
-| [LV187] LV Tartinade Mangue Curry 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
@@ -195,16 +194,16 @@
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: -0.4u (-22j restants) → prédit 1u mais non commandé |
 | [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV217] LV Tartinade Basilic 380g | 1 | Stock prédit: -0.7u (-37j restants) → prédit 1u mais non commandé |
-| [LV189] LV Tartinade Houmous Type 380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: -0.4u (-25j restants) → prédit 1u mais non commandé |
-| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: -0.2u (-12j restants) → prédit 2u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.8u (-113j restants) → prédit 1u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -0.9u (-54j restants) → prédit 1u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: -0.5u (-48j restants) → prédit 1u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: -0.5u (-57j restants) → prédit 1u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -1.0u (-87j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -238,4 +237,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:06.958Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:06.489Z*

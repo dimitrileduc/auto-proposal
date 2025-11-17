@@ -180,19 +180,19 @@
 | [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock prédit: 0.3u (19j restants) → prédit 1u mais non commandé |
 | [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.5u (-41j restants) → prédit 1u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: -0.5u (-41j restants) → prédit 1u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: -0.5u (-41j restants) → prédit 1u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: -0.6u (-59j restants) → prédit 1u mais non commandé |
 | [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -224,4 +224,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:48:47.795Z*
+*Rapport généré automatiquement le 2025-11-17T12:03:09.328Z*

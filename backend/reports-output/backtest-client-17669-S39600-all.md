@@ -198,7 +198,7 @@
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 3 | Stock prédit: -6.1u (-60j restants) → prédit 3u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 3 | Stock prédit: -4.5u (-54j restants) → prédit 3u mais non commandé |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.6u (-21j restants) → prédit 1u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -228,4 +228,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:45:23.959Z*
+*Rapport généré automatiquement le 2025-11-17T11:59:12.833Z*

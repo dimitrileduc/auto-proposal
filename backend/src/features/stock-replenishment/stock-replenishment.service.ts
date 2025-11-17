@@ -33,16 +33,21 @@ export async function calculateReplenishmentNeeds(
   const daysOfHistory = config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays;
   const analysisEndDate = config?.analysisEndDate ?? getTodayAsDateString();
 
-  // 1. Récupération de l'historique
-  const orderHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
+  // 1. Récupération de l'historique récent (180j)
+  const recentHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
+
+  // 2. Récupération de l'historique complet (730j) pour fenêtre adaptative
+  const fullHistory = await getProductOrderHistory(clientId, 730, analysisEndDate);
+
+  console.log(
+    `\n🔍 Analyse de ${recentHistory.products.length} produits pour client ${clientId}...`
+  );
 
   const analyzedProducts: ProductStockStatus[] = []; // Produits à commander uniquement
   const allProducts: ProductStockStatus[] = []; // TOUS les produits analysés (pour backtest)
 
-  // 2. Pour chaque produit, analyser le risque de rupture
-  console.log(`\n🔍 Analyse de ${orderHistory.products.length} produits pour client ${clientId}...`);
-
-  for (const product of orderHistory.products) {
+  // 3. Pour chaque produit récent, analyser le risque de rupture
+  for (const product of recentHistory.products) {
     console.log(`\n  📦 Produit: ${product.product_name} (ID: ${product.product_id})`);
 
     // Skip produits de type "service" (transport, frais, etc.)
@@ -51,10 +56,27 @@ export async function calculateReplenishmentNeeds(
       continue;
     }
 
+    // Fenêtre adaptative : Si 1 commande dans 180j, check historique 730j
+    let ordersToUse = product.orders;
+    let windowDays = daysOfHistory;
+
+    if (product.orders.length === 1) {
+      // Lookup dans fullHistory
+      const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
+
+      if (fullProduct && fullProduct.orders.length > 1) {
+        ordersToUse = fullProduct.orders;
+        windowDays = 730;
+        console.log(
+          `     ℹ️ 1 commande dans 180j, élargissement → ${fullProduct.orders.length} commandes sur 730j`
+        );
+      }
+    }
+
     // Calcul consommation moyenne
     const consumptionPerDay = calculateDailyConsumption(
-      product.orders,
-      daysOfHistory,
+      ordersToUse,
+      windowDays,
       new Date(analysisEndDate)
     );
     console.log(`     Consommation/jour: ${consumptionPerDay.toFixed(4)}`);
@@ -81,7 +103,7 @@ export async function calculateReplenishmentNeeds(
     console.log(`     Seuil réappro: ${replenishmentThresholdDays}j (couverture ${targetCoverage}j + lead time ${leadTime}j)`);
 
     // QUANTITÉ: Calculer selon médiane de l'historique
-    const calculation = calculateQuantityFromHistory(product.orders);
+    const calculation = calculateQuantityFromHistory(ordersToUse);
     console.log(`     Quantité calculée: ${calculation.quantity} (${calculation.metadata.strategy}, ${calculation.metadata.confidence})`);
 
     // Skip si pas d'historique récent pour calculer la quantité
@@ -97,7 +119,7 @@ export async function calculateReplenishmentNeeds(
       product_uom: product.product_uom,
 
       // 1. Historique des commandes (base)
-      order_history: product.orders.map((order) => ({
+      order_history: ordersToUse.map((order) => ({
         order_id: order.order_id,
         order_name: order.order_name,
         date_order: order.date_order,
@@ -139,7 +161,7 @@ export async function calculateReplenishmentNeeds(
   return {
     client_id: clientId,
     products: analyzedProducts,
-    total_products_in_history: orderHistory.products.length, // Nombre total avant filtrage
+    total_products_in_history: recentHistory.products.length, // Nombre total avant filtrage
     all_products: allProducts, // TOUS les produits analysés (pour backtest)
   };
 }

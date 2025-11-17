@@ -164,7 +164,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF0078] FILOU CHASSEUR 5 L | 15 | Stock prédit: 0.3u (1j restants) → prédit 15u mais non commandé |
-| [PF0097] FILOU MOUTARDE 5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [PF0097] FILOU MOUTARDE 5 KG | 2 | Stock prédit: -0.4u (-31j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-15T09:46:39.248Z*
+*Rapport généré automatiquement le 2025-11-17T12:00:43.936Z*

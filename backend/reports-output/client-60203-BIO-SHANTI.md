@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - BIO SHANTI
 
-**📅 Date:** 15/11/2025 10:49
+**📅 Date:** 17/11/2025 13:04
 **🆔 Client ID:** 60203
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.3s
+**⏱️ Durée d'exécution:** 3.4s
 
 ---
 
@@ -329,9 +329,9 @@
 <summary>🔴 <strong>[ORG08] ORGANICA crunchy fruit framboise 12g</strong> (ID: 18341) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0080
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
+- **Consommation/jour**: 0.0103
+- **Stock restant estimé**: -0.28
+- **Jours avant rupture**: **-27j**
 - **Seuil réappro**: 19j
 
 ### 📦 Historique Commandes
@@ -339,12 +339,13 @@
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
 | 2025-05-13 | S36744 | 1 | 37.20€ |
+| 2025-03-04 | S34896 | 1 | 37.20€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
