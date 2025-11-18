@@ -1,0 +1,22 @@
+{
+  "clientId": 29081,
+  "clientName": "CRF MARKET EUPEN SHOPPING CENT ROTENBERG",
+  "orderName": "S39163",
+  "orderDate": "2025-09-11 13:46:55",
+  "cutoffDate": "2025-09-11 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  }
+}

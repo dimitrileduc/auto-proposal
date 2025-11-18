@@ -1,0 +1,22 @@
+{
+  "clientId": 71161,
+  "clientName": "DLL AD SART TILMAN",
+  "orderName": "S39625",
+  "orderDate": "2025-10-09 06:56:37",
+  "cutoffDate": "2025-10-09 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 14,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1,
+    "recall": 0.9333333333333333,
+    "f1Score": 0.9655172413793104,
+    "mae": 0.7857142857142857,
+    "mape": 54.76190476190476
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 7
+  }
+}

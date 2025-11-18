@@ -1,0 +1,22 @@
+{
+  "clientId": 60146,
+  "clientName": "ADH QUALITY",
+  "orderName": "S39626",
+  "orderDate": "2025-10-08 12:21:50",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 4.666666666666667,
+    "mape": 466.6666666666667
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 5
+  }
+}

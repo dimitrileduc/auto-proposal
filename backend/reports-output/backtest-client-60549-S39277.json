@@ -1,0 +1,22 @@
+{
+  "clientId": 60549,
+  "clientName": "TERRAGUSTO",
+  "orderName": "S39277",
+  "orderDate": "2025-09-18 09:21:44",
+  "cutoffDate": "2025-09-18 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 5,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8333333333333334,
+    "recall": 1,
+    "f1Score": 0.9090909090909091,
+    "mae": 5.2,
+    "mape": 48.785714285714285
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 5
+  }
+}

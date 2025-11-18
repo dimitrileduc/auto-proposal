@@ -1,0 +1,22 @@
+{
+  "clientId": 23826,
+  "clientName": "La ferme du vieux bure",
+  "orderName": "S38925",
+  "orderDate": "2025-09-15 06:25:43",
+  "cutoffDate": "2025-09-15 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 9,
+    "fp": 25,
+    "fn": 0,
+    "precision": 0.2647058823529412,
+    "recall": 1,
+    "f1Score": 0.4186046511627907,
+    "mae": 0.1111111111111111,
+    "mape": 5.555555555555555
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 1
+  }
+}

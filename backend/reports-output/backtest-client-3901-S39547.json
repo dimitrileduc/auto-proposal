@@ -1,0 +1,22 @@
+{
+  "clientId": 3901,
+  "clientName": "CASIMEX",
+  "orderName": "S39547",
+  "orderDate": "2025-10-03 12:50:33",
+  "cutoffDate": "2025-10-03 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 5,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.4166666666666667,
+    "recall": 1,
+    "f1Score": 0.5882352941176471,
+    "mae": 60,
+    "mape": 10
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 2
+  }
+}

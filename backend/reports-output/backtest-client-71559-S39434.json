@@ -1,0 +1,22 @@
+{
+  "clientId": 71559,
+  "clientName": "Au gré du vent",
+  "orderName": "S39434",
+  "orderDate": "2025-10-01 07:27:06",
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 1,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.1,
+    "recall": 1,
+    "f1Score": 0.18181818181818182,
+    "mae": 1,
+    "mape": 50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

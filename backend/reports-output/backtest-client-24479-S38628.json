@@ -1,0 +1,22 @@
+{
+  "clientId": 24479,
+  "clientName": "THE BELGIAN FACTORY",
+  "orderName": "S38628",
+  "orderDate": "2025-08-20 14:34:55",
+  "cutoffDate": "2025-08-20 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 42,
+    "mape": 33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

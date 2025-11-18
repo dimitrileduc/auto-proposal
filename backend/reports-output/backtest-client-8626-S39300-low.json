@@ -1,0 +1,22 @@
+{
+  "clientId": 8626,
+  "clientName": "Sweet Nature",
+  "orderName": "S39300",
+  "orderDate": "2025-09-24 06:56:53",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 2,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.2857142857142857,
+    "recall": 1,
+    "f1Score": 0.4444444444444445,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 0
+  }
+}

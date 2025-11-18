@@ -1,0 +1,22 @@
+{
+  "clientId": 3574,
+  "clientName": "BEFOOD NV",
+  "orderName": "S39353",
+  "orderDate": "2025-09-23 12:33:26",
+  "cutoffDate": "2025-09-23 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 69,
+    "mape": 39.20454545454545
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

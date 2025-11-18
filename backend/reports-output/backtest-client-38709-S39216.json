@@ -1,0 +1,22 @@
+{
+  "clientId": 38709,
+  "clientName": "BEES COOP",
+  "orderName": "S39216",
+  "orderDate": "2025-09-16 08:36:35",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 9,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.5625,
+    "recall": 1,
+    "f1Score": 0.72,
+    "mae": 0.7777777777777778,
+    "mape": 31.48148148148148
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 6
+  }
+}

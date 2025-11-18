@@ -1,0 +1,22 @@
+{
+  "clientId": 3812,
+  "clientName": "ÖKORING HANDELS GMBH",
+  "orderName": "S39594",
+  "orderDate": "2025-10-08 06:30:49",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 6,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 0
+  }
+}
