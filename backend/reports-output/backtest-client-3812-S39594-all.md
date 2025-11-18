@@ -5,8 +5,8 @@
 - **Client** : ÖKORING HANDELS GMBH (ID: 3812)
 - **Commande réelle** : S39594
 - **Date commande** : 2025-10-08 06:30:49
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 83.3% | 6 produits prédits, 5 corrects |
-| **Rappel** | 62.5% | 8 produits réels, 5 détectés |
-| **F1-Score** | 71.4% | Score équilibré global |
+| **Précision** | 66.7% | 9 produits prédits, 6 corrects |
+| **Rappel** | 75.0% | 8 produits réels, 6 détectés |
+| **F1-Score** | 70.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| Exact Match (=0u) | 6 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,6 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [MF0030] MF Tarti Mangue Curry 250g  | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
 | [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
 | [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
 | [MF0029] MF Tarti Datte chili 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
@@ -147,7 +148,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,12 +168,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0031] MF Tarti Olives verte 250g  | 16 | Stock prédit: -4.4u (-8j restants) → prédit 16u mais non commandé |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | Stock prédit: 11.5u (20j restants) → prédit 16u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 16 | Stock prédit: 12.3u (27j restants) → prédit 16u mais non commandé |
+| [MF0031] MF Tarti Olives verte 250g  | 16 | Stock prédit: -6.0u (-11j restants) → prédit 16u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -192,11 +195,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MF0030] MF Tarti Mangue Curry 250g  | 16 | Stock suffisant: 24.0u (20j restants > seuil 19j) |
-| [VID0009] Consigne casier | 96 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 576 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 96 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 576 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:50.456Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:39.650Z*

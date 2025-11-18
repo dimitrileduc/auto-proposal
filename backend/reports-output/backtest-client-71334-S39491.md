@@ -5,8 +5,8 @@
 - **Client** : BIODIS (ID: 71334)
 - **Commande réelle** : S39491
 - **Date commande** : 2025-10-01 11:19:31
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 14.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 19.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 17.20 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 29.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -145,8 +145,8 @@
 | [PF2973] LD FR TARTINADE BIO ANANAS 200 | 31 | 31 | 0.0 | 0.0% | 🎯 exact |
 | [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 62 | 62 | 0.0 | 0.0% | 🎯 exact |
-| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 31 | 31 | 0.0 | 0.0% | 🎯 exact |
-| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 62 | 31 | 31.0 | 100.0% | ✅ partial |
+| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 47 | 31 | 16.0 | 51.6% | ✅ partial |
+| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 78 | 31 | 47.0 | 151.6% | ✅ partial |
 | [PF2937] LD FR TARTINADE BIO POIS 200 | 47 | 31 | 16.0 | 51.6% | ✅ partial |
 
 
@@ -172,14 +172,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 434 | Stock prédit: 131.1u (10j restants) → prédit 434u mais non commandé |
-| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 62 | Stock prédit: -8.5u (-2j restants) → prédit 62u mais non commandé |
-| [PF3361] LD FR TARTINADE BIO OIGNON 180G | 62 | Stock prédit: -25.1u (-15j restants) → prédit 62u mais non commandé |
-| [PF1690] LD BBQ BIO 300G | 25 | Stock prédit: -31.1u (-41j restants) → prédit 25u mais non commandé |
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 25 | Stock prédit: -31.1u (-41j restants) → prédit 25u mais non commandé |
-| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 47 | Stock prédit: -90.7u (-55j restants) → prédit 47u mais non commandé |
-| [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML | 40 | Stock prédit: -17.0u (-27j restants) → prédit 40u mais non commandé |
-| [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 47 | Stock prédit: -4.2u (-6j restants) → prédit 47u mais non commandé |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 434 | Stock prédit: 75.8u (5j restants) → prédit 434u mais non commandé |
+| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 62 | Stock prédit: -6.9u (-2j restants) → prédit 62u mais non commandé |
+| [PF3361] LD FR TARTINADE BIO OIGNON 180G | 62 | Stock prédit: -9.5u (-7j restants) → prédit 62u mais non commandé |
+| [PF1690] LD BBQ BIO 300G | 25 | Stock prédit: -23.1u (-36j restants) → prédit 25u mais non commandé |
+| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 25 | Stock prédit: -23.1u (-36j restants) → prédit 25u mais non commandé |
+| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 31 | Stock prédit: -68.4u (-51j restants) → prédit 31u mais non commandé |
+| [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML | 40 | Stock prédit: -17.1u (-28j restants) → prédit 40u mais non commandé |
+| [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 47 | Stock prédit: -4.4u (-6j restants) → prédit 47u mais non commandé |
 
 
 ---
@@ -204,9 +204,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF1892] LD TARTINADE BIO TRUFFES 135G | 100 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [PF1892] LD TARTINADE BIO TRUFFES 135G | 100 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:36.953Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:27.073Z*

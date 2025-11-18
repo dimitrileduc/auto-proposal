@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - KORO HANDELS GmbH
 
-**📅 Date:** 17/11/2025 12:59
+**📅 Date:** 18/11/2025 11:43
 **🆔 Client ID:** 3840
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.5s
+**⏱️ Durée d'exécution:** 4.0s
 
 ---
 
@@ -11,11 +11,11 @@
 
 
 **Produits à risque détectés: 5**
-- Urgents (rupture ≤ 0j): 3
-- Modérés (0 < rupture ≤ 19j): 2
+- Urgents (rupture ≤ 0j): 2
+- Modérés (0 < rupture ≤ 30j): 3
 
 **Total produits (Phase 1): 5**
-**Quantité totale brute: 9380 unités**
+**Quantité totale brute: 7706 unités**
 
 ### Détails par produit
 
@@ -24,10 +24,10 @@
 <summary>🔴 <strong>[PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G</strong> (ID: 17556) - 70 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 21.3125
-- **Stock restant estimé**: -20.94
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 20.6667
+- **Stock restant estimé**: -39.67
+- **Jours avant rupture**: **-1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -48,13 +48,40 @@
 </details>
 
 <details>
+<summary>🟡 <strong>[PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G</strong> (ID: 17450) - 1518 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 65.8737
+- **Stock restant estimé**: 1236.51
+- **Jours avant rupture**: **18j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-09 | S39498 | 1500 | 13.14€ |
+| 2025-09-10 | S39149 | 1494 | 13.14€ |
+| 2025-08-14 | S38517 | 1536 | 13.14€ |
+| 2025-07-10 | S38001 | 1728 | 13.14€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1500, 1494, 1536, 1728]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 1518
+
+</details>
+
+<details>
 <summary>🟡 <strong>[PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G</strong> (ID: 17449) - 1728 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 67.9720
-- **Stock restant estimé**: 466.56
-- **Jours avant rupture**: **6j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 81.2632
+- **Stock restant estimé**: 119.47
+- **Jours avant rupture**: **1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -66,25 +93,24 @@
 | 2025-08-14 | S38517 | 1344 | 11.94€ |
 | 2025-07-18 | S38149 | 1728 | 11.94€ |
 | 2025-07-10 | S38001 | 0 | 11.94€ |
-| 2025-05-22 | S36996 | 2000 | 11.94€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [1826, 1826, 996, 1344, 1728]
-- **Nombre commandes**: 7
+- **Nombre commandes**: 6
 - **Valeur médiane**: 1728
 
 </details>
 
 <details>
-<summary>🟡 <strong>[PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G</strong> (ID: 17451) - 4416 unités</summary>
+<summary>🟡 <strong>[PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G</strong> (ID: 17451) - 4224 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 162.2682
-- **Stock restant estimé**: 690.64
-- **Jours avant rupture**: **4j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 146.7586
+- **Stock restant estimé**: 854.07
+- **Jours avant rupture**: **5j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -93,72 +119,38 @@
 | 2025-09-22 | S39307 | 3936 | 12.18€ |
 | 2025-09-10 | S38952 | 4608 | 12.18€ |
 | 2025-07-18 | S38149 | 4224 | 12.18€ |
-| 2025-06-06 | S37305 | 4608 | 12.18€ |
-| 2025-05-22 | S36996 | 4416 | 12.18€ |
-| 2025-05-08 | S36641 | 3788 | 12.18€ |
-| 2025-04-16 | S36260 | 3466 | 12.18€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [3936, 4608, 4224, 4608, 4416]
-- **Nombre commandes**: 7
-- **Valeur médiane**: 4416
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G</strong> (ID: 14813) - 166 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.6331
-- **Stock restant estimé**: -43.04
-- **Jours avant rupture**: **-26j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-06 | S37305 | 166 | 8.04€ |
-| 2025-01-14 | S34316 | 0 | 8.04€ |
-| 2024-12-18 | S33950 | 166 | 8.04€ |
-| 2024-11-12 | S33219 | 164 | 8.04€ |
-| 2024-07-10 | S31212 | 166 | 8.04€ |
-| 2024-05-23 | S30411 | 166 | 8.04€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [166, 0, 166, 164, 166]
-- **Nombre commandes**: 6
-- **Valeur médiane**: 166
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3342] DE_AUFSTR_042_T6 KORO TARTINADE BIO PAPRIKA CHILI 380G</strong> (ID: 17800) - 3000 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 68.3312
-- **Stock restant estimé**: -6019.72
-- **Jours avant rupture**: **-88j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-02 | S37199 | 3000 | 11.94€ |
-| 2025-05-22 | S36996 | 6000 | 11.94€ |
-| 2025-05-08 | S36641 | 1728 | 11.94€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [3000, 6000, 1728]
+- **Quantités historiques**: [3936, 4608, 4224]
 - **Nombre commandes**: 3
-- **Valeur médiane**: 3000
+- **Valeur médiane**: 4224
+
+</details>
+
+<details>
+<summary>🔴 <strong>[PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G</strong> (ID: 14814) - 166 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 10.0606
+- **Stock restant estimé**: -45.27
+- **Jours avant rupture**: **-4j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-22 | S39307 | 166 | 8.04€ |
+| 2025-09-10 | S38952 | 166 | 8.04€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [166, 166]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 166
 
 </details>
 
@@ -170,7 +162,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 113379.84€**
+- **Montant initial: 95167.80€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -180,11 +172,11 @@
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PF3320] DE_AUFSTR_043 KORO... | 17556 | 70 | 0 | 70 | 25.80€ | 1806.00€ |
+| [PF3313] DE_AUFSTR_034_T6 K... | 17450 | 1518 | 0 | 1518 | 13.14€ | 19946.52€ |
 | [PF3312] DE_AUFSTR_036_T6 K... | 17449 | 1728 | 0 | 1728 | 11.94€ | 20632.32€ |
-| [PF3314] DE_AUFSTR_038_T6 K... | 17451 | 4416 | 0 | 4416 | 12.18€ | 53786.88€ |
-| [PF3252] DK_AUFSTR_040 KORO... | 14813 | 166 | 0 | 166 | 8.04€ | 1334.64€ |
-| [PF3342] DE_AUFSTR_042_T6 K... | 17800 | 3000 | 0 | 3000 | 11.94€ | 35820.00€ |
+| [PF3314] DE_AUFSTR_038_T6 K... | 17451 | 4224 | 0 | 4224 | 12.18€ | 51448.32€ |
+| [PF3253] DK_AUFSTR_039 KORO... | 14814 | 166 | 0 | 166 | 8.04€ | 1334.64€ |
 
-**Total (Phase 2.5): 113379.84€**
+**Total (Phase 2.5): 95167.80€**
 
 ---

@@ -47,8 +47,8 @@ export interface BacktestAggregatePayload {
 
   /** Configuration propagée à chaque backtest enfant (pour A/B testing) */
   config?: {
-    analysisWindowDays?: number;  // Défaut: 180j (depuis autoProposalConfig)
-    targetCoverage?: number;      // Défaut: 14j (depuis autoProposalConfig)
+    analysisWindowDays?: number;  // Défaut: 120j (depuis autoProposalConfig)
+    targetCoverage?: number;      // Défaut: 25j (depuis autoProposalConfig)
     leadTime?: number;            // Défaut: 5j (depuis autoProposalConfig)
   };
 }
@@ -128,6 +128,7 @@ export const backtestAggregateTask = task({
 
     const allResults: BacktestIndividualResult[] = [];
     const allResultsNoLow: BacktestIndividualResult[] = [];
+    const allResultsAll: BacktestIndividualResult[] = [];
 
     for (let chunkIdx = 0; chunkIdx < totalChunks; chunkIdx++) {
       const chunkStart = chunkIdx * BATCH_SIZE;
@@ -157,22 +158,27 @@ export const backtestAggregateTask = task({
             // Succès: extraire les métriques
             const taskResult = run.output;
             // SWAP: comparison = CLEAN (2+ commandes), comparisonNoLow = LOW (1 commande)
-            allResults.push({
-              clientId: taskResult.clientId,
-              clientName: taskResult.clientName,
-              orderName: taskResult.orderName,
-              success: true,
-              metrics: {
-                precision: taskResult.comparison.precision,
-                recall: taskResult.comparison.recall,
-                f1Score: taskResult.comparison.f1Score,
-                mae: taskResult.comparison.mae,
-                mape: taskResult.comparison.mape,
-              },
-            });
 
-            // Collecter version LOW (sparse data) si disponible
-            if (taskResult.comparisonNoLow) {
+            // Filtrer CLEAN: inclure seulement si client a commandé des produits CLEAN (TP+FN > 0)
+            if (taskResult.comparison.truePositives + taskResult.comparison.falseNegatives > 0) {
+              allResults.push({
+                clientId: taskResult.clientId,
+                clientName: taskResult.clientName,
+                orderName: taskResult.orderName,
+                success: true,
+                metrics: {
+                  precision: taskResult.comparison.precision,
+                  recall: taskResult.comparison.recall,
+                  f1Score: taskResult.comparison.f1Score,
+                  mae: taskResult.comparison.mae,
+                  mape: taskResult.comparison.mape,
+                },
+              });
+            }
+
+            // Filtrer LOW: inclure seulement si client a commandé des produits LOW (TP+FN > 0)
+            if (taskResult.comparisonNoLow &&
+                taskResult.comparisonNoLow.truePositives + taskResult.comparisonNoLow.falseNegatives > 0) {
               allResultsNoLow.push({
                 clientId: taskResult.clientId,
                 clientName: taskResult.clientName,
@@ -184,6 +190,24 @@ export const backtestAggregateTask = task({
                   f1Score: taskResult.comparisonNoLow.f1Score,
                   mae: taskResult.comparisonNoLow.mae,
                   mape: taskResult.comparisonNoLow.mape,
+                },
+              });
+            }
+
+            // Filtrer ALL: inclure seulement si client a commandé des produits (TP+FN > 0)
+            if (taskResult.comparisonAll &&
+                taskResult.comparisonAll.truePositives + taskResult.comparisonAll.falseNegatives > 0) {
+              allResultsAll.push({
+                clientId: taskResult.clientId,
+                clientName: taskResult.clientName,
+                orderName: taskResult.orderName,
+                success: true,
+                metrics: {
+                  precision: taskResult.comparisonAll.precision,
+                  recall: taskResult.comparisonAll.recall,
+                  f1Score: taskResult.comparisonAll.f1Score,
+                  mae: taskResult.comparisonAll.mae,
+                  mape: taskResult.comparisonAll.mape,
                 },
               });
             }
@@ -315,6 +339,40 @@ export const backtestAggregateTask = task({
       console.log(`   ✅ Markdown LOW report saved: backtest-aggregate-${timestamp}-low.md`);
 
       console.log(`   📊 LOW (sparse data): ${successfulResultsNoLow.length} clients analyzed`);
+    }
+
+    // Rapport ALL (tous les produits: clean + low)
+    if (allResultsAll.length > 0) {
+      const successfulResultsAll = allResultsAll.filter((r) => r.success && r.metrics);
+
+      const aggregateMetricsAll = calculateAggregateStatistics(
+        successfulResultsAll.map((r) => r.metrics!)
+      );
+
+      const reportDataAll: AggregateReportData = {
+        executionDate: new Date().toISOString(),
+        config: {
+          daysBeforePrediction: payload.daysBeforePrediction ?? 1,
+          analysisWindowDays: payload.config?.analysisWindowDays,
+          targetCoverage: payload.config?.targetCoverage,
+          leadTime: payload.config?.leadTime,
+        },
+        aggregateMetrics: aggregateMetricsAll,
+        individualResults: allResultsAll,
+      };
+
+      // JSON ALL
+      const jsonPathAll = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-all.json`);
+      await fs.writeFile(jsonPathAll, JSON.stringify(reportDataAll, null, 2), "utf-8");
+      console.log(`   ✅ JSON ALL report saved: backtest-aggregate-${timestamp}-all.json`);
+
+      // Markdown ALL
+      const markdownReportAll = generateAggregateMarkdownReport(reportDataAll);
+      const mdPathAll = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-all.md`);
+      await fs.writeFile(mdPathAll, markdownReportAll, "utf-8");
+      console.log(`   ✅ Markdown ALL report saved: backtest-aggregate-${timestamp}-all.md`);
+
+      console.log(`   📊 ALL (tous produits): ${successfulResultsAll.length} clients analyzed`);
     }
 
     // ===== ÉTAPE 5: RÉSULTAT FINAL =====

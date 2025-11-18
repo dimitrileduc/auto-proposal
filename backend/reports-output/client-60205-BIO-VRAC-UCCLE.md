@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - BIO VRAC UCCLE
 
-**📅 Date:** 17/11/2025 13:01
+**📅 Date:** 18/11/2025 11:45
 **🆔 Client ID:** 60205
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 2.3s
 
 ---
 
@@ -12,10 +12,10 @@
 
 **Produits à risque détectés: 13**
 - Urgents (rupture ≤ 0j): 10
-- Modérés (0 < rupture ≤ 19j): 3
+- Modérés (0 < rupture ≤ 30j): 3
 
 **Total produits (Phase 1): 13**
-**Quantité totale brute: 58 unités**
+**Quantité totale brute: 60 unités**
 
 ### Détails par produit
 
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18351) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.4357
-- **Stock restant estimé**: 0.85
-- **Jours avant rupture**: **1j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.4153
+- **Stock restant estimé**: 0.86
+- **Jours avant rupture**: **2j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -40,14 +40,12 @@
 | 2025-03-06 | S35211 | 5 | 17.70€ |
 | 2025-02-24 | S35031 | 10 | 17.70€ |
 | 2025-01-29 | S34581 | 11 | 17.70€ |
-| 2025-01-16 | S34343 | 1 | 17.70€ |
-| 2025-01-06 | S34065 | 11 | 17.70€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [10, 8, 4, 1, 5]
-- **Nombre commandes**: 9
+- **Nombre commandes**: 7
 - **Valeur médiane**: 5
 
 </details>
@@ -56,10 +54,10 @@
 <summary>🟡 <strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> (ID: 18349) - 8 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.4429
-- **Stock restant estimé**: 1.70
-- **Jours avant rupture**: **3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.3983
+- **Stock restant estimé**: 2.24
+- **Jours avant rupture**: **5j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -71,14 +69,12 @@
 | 2025-03-06 | S35211 | 2 | 17.70€ |
 | 2025-02-24 | S35031 | 8 | 17.70€ |
 | 2025-01-29 | S34581 | 12 | 17.70€ |
-| 2025-01-16 | S34343 | 5 | 17.70€ |
-| 2025-01-06 | S34065 | 10 | 17.70€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [11, 2, 12, 2, 8]
-- **Nombre commandes**: 8
+- **Nombre commandes**: 6
 - **Valeur médiane**: 8
 
 </details>
@@ -87,10 +83,10 @@
 <summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18352) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.4214
-- **Stock restant estimé**: -2.85
+- **Consommation/jour**: 0.3898
+- **Stock restant estimé**: -2.58
 - **Jours avant rupture**: **-6j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -103,14 +99,12 @@
 | 2025-03-06 | S35211 | 2 | 17.70€ |
 | 2025-02-24 | S35031 | 10 | 17.70€ |
 | 2025-01-29 | S34581 | 13 | 17.70€ |
-| 2025-01-16 | S34343 | 8 | 17.70€ |
-| 2025-01-06 | S34065 | 5 | 17.70€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [6, 9, 5, 1, 2]
-- **Nombre commandes**: 9
+- **Nombre commandes**: 7
 - **Valeur médiane**: 5
 
 </details>
@@ -119,10 +113,10 @@
 <summary>🔴 <strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> (ID: 18353) - 11 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8714
-- **Stock restant estimé**: -2.30
+- **Consommation/jour**: 0.8136
+- **Stock restant estimé**: -1.90
 - **Jours avant rupture**: **-2j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -135,14 +129,12 @@
 | 2025-03-06 | S35211 | 10 | 17.70€ |
 | 2025-02-24 | S35031 | 7 | 17.70€ |
 | 2025-01-29 | S34581 | 23 | 17.70€ |
-| 2025-01-16 | S34343 | 2 | 17.70€ |
-| 2025-01-06 | S34065 | 24 | 17.70€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [16, 19, 10, 11, 10]
-- **Nombre commandes**: 9
+- **Nombre commandes**: 7
 - **Valeur médiane**: 11
 
 </details>
@@ -151,10 +143,10 @@
 <summary>🔴 <strong>[REB04] ReBEL chips premium & bio - thym/romarin125g</strong> (ID: 18355) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3857
-- **Stock restant estimé**: -1.10
-- **Jours avant rupture**: **-2j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.3220
+- **Stock restant estimé**: -0.08
+- **Jours avant rupture**: **0j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -167,14 +159,12 @@
 | 2025-03-06 | S35211 | 4 | 17.70€ |
 | 2025-02-24 | S35031 | 1 | 17.70€ |
 | 2025-01-29 | S34581 | 10 | 17.70€ |
-| 2025-01-16 | S34343 | 9 | 17.70€ |
-| 2025-01-06 | S34065 | 7 | 17.70€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [7, 8, 5, 3, 4]
-- **Nombre commandes**: 9
+- **Nombre commandes**: 7
 - **Valeur médiane**: 5
 
 </details>
@@ -183,10 +173,10 @@
 <summary>🟡 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18356) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2071
-- **Stock restant estimé**: 1.65
-- **Jours avant rupture**: **7j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.1695
+- **Stock restant estimé**: 2.27
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -198,13 +188,12 @@
 | 2025-03-06 | S35211 | 1 | 25.30€ |
 | 2025-02-24 | S35031 | 1 | 25.30€ |
 | 2025-01-29 | S34581 | 4 | 25.30€ |
-| 2025-01-06 | S34065 | 9 | 25.30€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [6, 3, 5, 1, 1]
-- **Nombre commandes**: 7
+- **Nombre commandes**: 6
 - **Valeur médiane**: 3
 
 </details>
@@ -213,10 +202,10 @@
 <summary>🔴 <strong>[RISH04] RISH kombucha BIO - smash basil 330ml</strong> (ID: 18361) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1500
-- **Stock restant estimé**: -5.05
-- **Jours avant rupture**: **-33j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.1271
+- **Stock restant estimé**: -3.64
+- **Jours avant rupture**: **-28j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -225,26 +214,24 @@
 | 2025-03-20 | S35481 | 5 | 25.08€ |
 | 2025-02-24 | S35031 | 5 | 25.08€ |
 | 2025-01-29 | S34581 | 5 | 25.08€ |
-| 2025-01-16 | S34343 | 1 | 25.08€ |
-| 2025-01-06 | S34065 | 5 | 25.08€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [5, 5, 5, 1, 5]
-- **Nombre commandes**: 5
+- **Confiance**: medium
+- **Quantités historiques**: [5, 5, 5]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 5
 
 </details>
 
 <details>
-<summary>🔴 <strong>[RISH03] RISH kombucha BIO - gingembre 330ml</strong> (ID: 18357) - 2 unités</summary>
+<summary>🔴 <strong>[RISH03] RISH kombucha BIO - gingembre 330ml</strong> (ID: 18357) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1286
-- **Stock restant estimé**: -6.61
-- **Jours avant rupture**: **-51j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.1017
+- **Stock restant estimé**: -4.92
+- **Jours avant rupture**: **-48j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -254,15 +241,13 @@
 | 2025-03-06 | S35211 | 1 | 25.08€ |
 | 2025-02-24 | S35031 | 3 | 25.08€ |
 | 2025-01-29 | S34581 | 6 | 25.08€ |
-| 2025-01-16 | S34343 | 2 | 25.08€ |
-| 2025-01-06 | S34065 | 4 | 25.08€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [2, 1, 3, 6, 2]
-- **Nombre commandes**: 6
-- **Valeur médiane**: 2
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1, 3, 6]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 3
 
 </details>
 
@@ -270,10 +255,10 @@
 <summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18358) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0929
-- **Stock restant estimé**: -4.22
-- **Jours avant rupture**: **-45j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0763
+- **Stock restant estimé**: -3.19
+- **Jours avant rupture**: **-41j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -282,26 +267,24 @@
 | 2025-03-20 | S35481 | 2 | 25.08€ |
 | 2025-02-24 | S35031 | 3 | 25.08€ |
 | 2025-01-29 | S34581 | 4 | 25.08€ |
-| 2025-01-16 | S34343 | 1 | 25.08€ |
-| 2025-01-06 | S34065 | 3 | 25.08€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [2, 3, 4, 1, 3]
-- **Nombre commandes**: 5
+- **Confiance**: medium
+- **Quantités historiques**: [2, 3, 4]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 3
 
 </details>
 
 <details>
-<summary>🔴 <strong>[RISH01] RISH kombucha BIO - original 330ml</strong> (ID: 18359) - 2 unités</summary>
+<summary>🔴 <strong>[RISH01] RISH kombucha BIO - original 330ml</strong> (ID: 18359) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1214
-- **Stock restant estimé**: -6.14
-- **Jours avant rupture**: **-50j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0932
+- **Stock restant estimé**: -4.34
+- **Jours avant rupture**: **-46j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -311,15 +294,13 @@
 | 2025-03-06 | S35211 | 3 | 25.08€ |
 | 2025-02-24 | S35031 | 2 | 25.08€ |
 | 2025-01-29 | S34581 | 4 | 25.08€ |
-| 2025-01-16 | S34343 | 2 | 25.08€ |
-| 2025-01-06 | S34065 | 4 | 25.08€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [2, 3, 2, 4, 2]
-- **Nombre commandes**: 6
-- **Valeur médiane**: 2
+- **Confiance**: medium
+- **Quantités historiques**: [2, 3, 2, 4]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 3
 
 </details>
 
@@ -327,10 +308,10 @@
 <summary>🔴 <strong>[RISH05] RISH kombucha BIO - rose 750ml</strong> (ID: 18360) - 4 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1571
-- **Stock restant estimé**: -6.53
+- **Consommation/jour**: 0.1525
+- **Stock restant estimé**: -6.37
 - **Jours avant rupture**: **-41j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -340,14 +321,12 @@
 | 2025-03-06 | S35211 | 4 | 57.00€ |
 | 2025-02-24 | S35031 | 6 | 57.00€ |
 | 2025-01-29 | S34581 | 4 | 57.00€ |
-| 2025-01-16 | S34343 | 2 | 57.00€ |
-| 2025-01-06 | S34065 | 2 | 57.00€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [4, 4, 6, 4, 2]
-- **Nombre commandes**: 6
+- **Confiance**: medium
+- **Quantités historiques**: [4, 4, 6, 4]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 4
 
 </details>
@@ -356,10 +335,10 @@
 <summary>🔴 <strong>[MF0050] MF Cornichons aigre doux (belge) 500g</strong> (ID: 16936) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0513
-- **Stock restant estimé**: -2.67
-- **Jours avant rupture**: **-51j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0508
+- **Stock restant estimé**: -2.68
+- **Jours avant rupture**: **-52j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -381,10 +360,10 @@
 <summary>🔴 <strong>[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> (ID: 18300) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0500
-- **Stock restant estimé**: -2.55
-- **Jours avant rupture**: **-50j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0339
+- **Stock restant estimé**: -1.12
+- **Jours avant rupture**: **-33j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -392,14 +371,12 @@
 | --- | --- | --- | --- |
 | 2025-02-24 | S35031 | 2 | 35.76€ |
 | 2025-01-29 | S34581 | 2 | 35.76€ |
-| 2025-01-16 | S34343 | 1 | 35.76€ |
-| 2025-01-06 | S34065 | 2 | 35.76€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [2, 2, 1, 2]
-- **Nombre commandes**: 4
+- **Quantités historiques**: [2, 2]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 2
 
 </details>
@@ -412,7 +389,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1347.30€**
+- **Montant initial: 1397.46€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -428,13 +405,13 @@
 | [REB04] ReBEL chips premium... | 18355 | 5 | 0 | 5 | 17.70€ | 88.50€ |
 | [REB11] ReBEL chips premium... | 18356 | 3 | 0 | 3 | 25.30€ | 75.90€ |
 | [RISH04] RISH kombucha BIO ... | 18361 | 5 | 0 | 5 | 25.08€ | 125.40€ |
-| [RISH03] RISH kombucha BIO ... | 18357 | 2 | 0 | 2 | 25.08€ | 50.16€ |
+| [RISH03] RISH kombucha BIO ... | 18357 | 3 | 0 | 3 | 25.08€ | 75.24€ |
 | [RISH02] RISH kombucha BIO ... | 18358 | 3 | 0 | 3 | 25.08€ | 75.24€ |
-| [RISH01] RISH kombucha BIO ... | 18359 | 2 | 0 | 2 | 25.08€ | 50.16€ |
+| [RISH01] RISH kombucha BIO ... | 18359 | 3 | 0 | 3 | 25.08€ | 75.24€ |
 | [RISH05] RISH kombucha BIO ... | 18360 | 4 | 0 | 4 | 57.00€ | 228.00€ |
 | [MF0050] MF Cornichons aigr... | 16936 | 3 | 0 | 3 | 23.04€ | 69.12€ |
 | [MATE01] MATE MATE thé glac... | 18300 | 2 | 0 | 2 | 35.76€ | 71.52€ |
 
-**Total (Phase 2.5): 1347.30€**
+**Total (Phase 2.5): 1397.46€**
 
 ---

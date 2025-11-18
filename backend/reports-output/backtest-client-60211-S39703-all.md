@@ -5,8 +5,8 @@
 - **Client** : BIOK CORBAIS (ID: 60211)
 - **Commande réelle** : S39703
 - **Date commande** : 2025-10-16 06:40:28
-- **Date cutoff système** : 2025-10-15 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-16 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 29.6% | 27 produits prédits, 8 corrects |
-| **Rappel** | 80.0% | 10 produits réels, 8 détectés |
-| **F1-Score** | 43.2% | Score équilibré global |
+| **Précision** | 32.3% | 31 produits prédits, 10 corrects |
+| **Rappel** | 100.0% | 10 produits réels, 10 détectés |
+| **F1-Score** | 48.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 40.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,19 +138,21 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (19)
+## False Positives (21)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,30 +172,32 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.7u (12j restants) → prédit 1u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.8u (19j restants) → prédit 1u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.8u (19j restants) → prédit 1u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 2 | Stock prédit: 0.6u (7j restants) → prédit 2u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.8u (19j restants) → prédit 1u mais non commandé |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.7u (13j restants) → prédit 1u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.6u (10j restants) → prédit 1u mais non commandé |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 2 | Stock prédit: 0.8u (24j restants) → prédit 2u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: -0.2u (0j restants) → prédit 2u mais non commandé |
+| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 2 | Stock prédit: 0.5u (6j restants) → prédit 2u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.8u (23j restants) → prédit 1u mais non commandé |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: 0.8u (19j restants) → prédit 1u mais non commandé |
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 2 | Stock prédit: 0.2u (7j restants) → prédit 2u mais non commandé |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: -0.2u (-1j restants) → prédit 2u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -0.7u (-13j restants) → prédit 1u mais non commandé |
+| [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock prédit: 0.1u (5j restants) → prédit 2u mais non commandé |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Stock prédit: -0.7u (-14j restants) → prédit 2u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (18j restants) → prédit 1u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | Stock prédit: -1.2u (-20j restants) → prédit 2u mais non commandé |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.1u (-3j restants) → prédit 2u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 2 | Stock prédit: -0.6u (-19j restants) → prédit 2u mais non commandé |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock prédit: -1.5u (-21j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.4u (21j restants) → prédit 1u mais non commandé |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | Stock prédit: -1.2u (-21j restants) → prédit 2u mais non commandé |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.2u (-3j restants) → prédit 2u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 2 | Stock prédit: -0.6u (-20j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -208,15 +212,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 3.1u (35j restants > seuil 19j) |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 0.9u (29j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:23.208Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:10.867Z*

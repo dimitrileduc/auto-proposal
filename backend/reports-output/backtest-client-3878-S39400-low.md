@@ -5,8 +5,8 @@
 - **Client** : DELI DRENGENE (ID: 3878)
 - **Commande réelle** : S39400
 - **Date commande** : 2025-09-25 14:14:25
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-25 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,16 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | Stock suffisant: -713.1u (-145j restants > seuil 19j) |
-| [PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO | 40 | Stock suffisant: -46.7u (-56j restants > seuil 19j) |
-| [CONS070] PALETTE EURO | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:27.059Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:16.634Z*

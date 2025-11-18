@@ -5,8 +5,8 @@
 - **Client** : The Belgian Factory SRL (ID: 24343)
 - **Commande réelle** : S39425
 - **Date commande** : 2025-09-29 06:52:19
-- **Date cutoff système** : 2025-09-28 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-29 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
-| **Rappel** | 50.0% | 2 produits réels, 1 détectés |
-| **F1-Score** | 28.6% | Score équilibré global |
+| **Précision** | 40.0% | 5 produits prédits, 2 corrects |
+| **Rappel** | 100.0% | 2 produits réels, 2 détectés |
+| **F1-Score** | 57.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 32.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 40.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 29.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 56.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,12 +138,13 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV189] LV Tartinade Houmous Type 380g | 48 | 80 | 32.0 | 40.0% | ✅ partial |
+| [LV189] LV Tartinade Houmous Type 380g | 32 | 80 | 48.0 | 60.0% | ✅ partial |
+| [LV217] LV Tartinade Basilic 380g | 32 | 21 | 11.0 | 52.4% | ✅ partial |
 
 
 ---
 
-## False Positives (4)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,15 +164,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV188] LV Tartinade Aubergine  380g | 32 | Stock prédit: -9.9u (-17j restants) → prédit 32u mais non commandé |
-| [LV187] LV Tartinade Mangue Curry 380g | 40 | Stock prédit: -18.7u (-40j restants) → prédit 40u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 60 | Stock prédit: -118.9u (-135j restants) → prédit 60u mais non commandé |
-| [LV139] LV Tartinade Paprika Chili 380g | 32 | Stock prédit: -156.0u (-156j restants) → prédit 32u mais non commandé |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 4 | Stock prédit: 1.6u (24j restants) → prédit 4u mais non commandé |
+| [LV188] LV Tartinade Aubergine  380g | 32 | Stock prédit: -12.2u (-21j restants) → prédit 32u mais non commandé |
+| [LV187] LV Tartinade Mangue Curry 380g | 48 | Stock prédit: -189.0u (-94j restants) → prédit 48u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -186,14 +186,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV217] LV Tartinade Basilic 380g | 21 | Stock suffisant: 29.6u (31j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:28.461Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:18.206Z*

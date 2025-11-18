@@ -5,8 +5,8 @@
 - **Client** : CASIMEX (ID: 3901)
 - **Commande réelle** : S39547
 - **Date commande** : 2025-10-03 12:50:33
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 6 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,13 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3398] BS1833 - BORNIBUS BEARNAISE KOSHER BOCAL 825G  | 96 | Stock prédit: 0.0u (0j restants) → prédit 96u mais non commandé |
-| [PF3397] BS1833 COSCO - BORNIBUS BEARNAISE KOSHER BOCAL 825G | 600 | Stock prédit: 0.0u (0j restants) → prédit 600u mais non commandé |
+| [PF3398] BS1833 - BORNIBUS BEARNAISE KOSHER BOCAL 825G  | 96 | Stock prédit: 32.7u (15j restants) → prédit 96u mais non commandé |
+| [PF3397] BS1833 COSCO - BORNIBUS BEARNAISE KOSHER BOCAL 825G | 600 | Stock prédit: 204.5u (15j restants) → prédit 600u mais non commandé |
 
 
 ---
 
-## False Negatives (6)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,19 +178,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0403] BORNIBUS MAYO KOSHER 220G | 600 | Stock suffisant: -42.9u (-2j restants > seuil 19j) |
-| [PF0625] BORNIBUS MAYO WASAB KOSHER 220 | 600 | Stock suffisant: 100.8u (6j restants > seuil 19j) |
-| [PF1541] BORNIBUS AIOLI KOSHER 220G | 300 | Stock suffisant: 77.3u (11j restants > seuil 19j) |
-| [PF1542] BORNIBUS BEARNAISE KOSHER 2 10G | 600 | Stock suffisant: -185.8u (-32j restants > seuil 19j) |
-| [PF1543] BORNIBUS TARTARE KOSHER 220G | 600 | Stock suffisant: -62.1u (-13j restants > seuil 19j) |
-| [CONS070] PALETTE EURO | 10 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:46.551Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:38.271Z*

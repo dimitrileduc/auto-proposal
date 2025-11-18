@@ -5,8 +5,8 @@
 - **Client** : Vervicoop (ID: 34568)
 - **Commande réelle** : S39687
 - **Date commande** : 2025-10-13 07:33:10
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 16 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,12 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (16)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,29 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [MF0029] MF Tarti Datte chili 250g | 1 | Stock suffisant: 0.5u (46j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: -0.1u (-9j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: 0.1u (3j restants > seuil 19j) |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: -0.7u (-38j restants > seuil 19j) |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock suffisant: -0.1u (-9j restants > seuil 19j) |
-| [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | Stock suffisant: 0.1u (6j restants > seuil 19j) |
-| [CB005] CB Apple juice 1l | 2 | Stock suffisant: -0.1u (-9j restants > seuil 19j) |
-| [LV149] LV Sauce Aioli Pesto 200ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: -0.4u (-36j restants > seuil 19j) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0009] Consigne casier | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:31.403Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:25.128Z*

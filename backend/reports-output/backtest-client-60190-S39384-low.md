@@ -5,8 +5,8 @@
 - **Client** : EUROPADRINKS (ID: 60190)
 - **Commande réelle** : S39384
 - **Date commande** : 2025-09-25 06:30:28
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-25 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (5)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,18 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 10 | Stock suffisant: -1.6u (-5j restants > seuil 19j) |
-| [REB06] REB chips bio - paprika fumé 35g | 10 | Stock suffisant: -15.1u (-48j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 10 | Stock suffisant: 4.9u (16j restants > seuil 19j) |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 15 | Stock suffisant: 7.0u (18j restants > seuil 19j) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 5 | Stock suffisant: 1.5u (9j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:19.268Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:08.612Z*

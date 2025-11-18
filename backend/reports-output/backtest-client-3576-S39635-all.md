@@ -5,8 +5,8 @@
 - **Client** : HOUGARDY S.A. (ID: 3576)
 - **Commande réelle** : S39635
 - **Date commande** : 2025-10-09 09:00:46
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 60 | Stock prédit: 31.7u (19j restants) → prédit 60u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 40 | Stock prédit: 30.8u (19j restants) → prédit 40u mais non commandé |
 
 
 ---
@@ -187,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:23.996Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:16.436Z*

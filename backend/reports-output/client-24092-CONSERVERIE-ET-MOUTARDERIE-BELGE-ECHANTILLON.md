@@ -1,24 +1,49 @@
 # 📊 Rapport Auto-Proposal - CONSERVERIE ET MOUTARDERIE BELGE ECHANTILLON
 
-**📅 Date:** 17/11/2025 12:59
+**📅 Date:** 18/11/2025 11:42
 **🆔 Client ID:** 24092
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.0s
+**⏱️ Durée d'exécution:** 2.2s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 21**
-- Urgents (rupture ≤ 0j): 19
-- Modérés (0 < rupture ≤ 19j): 2
+**Produits à risque détectés: 18**
+- Urgents (rupture ≤ 0j): 12
+- Modérés (0 < rupture ≤ 30j): 6
 
-**Total produits (Phase 1): 21**
-**Quantité totale brute: 28 unités**
+**Total produits (Phase 1): 18**
+**Quantité totale brute: 26 unités**
 
 ### Détails par produit
 
+
+<details>
+<summary>🟡 <strong>[PF0093] FILOU MOUTARDE 300GR</strong> (ID: 8995) - 1 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0392
+- **Stock restant estimé**: 0.69
+- **Jours avant rupture**: **17j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-24 | S39364 | 1 | 13.20€ |
+| 2025-08-12 | S38482 | 1 | 13.20€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 1
+
+</details>
 
 <details>
 <summary>🔴 <strong>[PF1798] LD MAYONNAI POIVRE 250ML WECK</strong> (ID: 9253) - 0 unités</summary>
@@ -26,8 +51,8 @@
 ### 📊 Prédiction Stock
 - **Consommation/jour**: 0.0014
 - **Stock restant estimé**: -0.04
-- **Jours avant rupture**: **-25j**
-- **Seuil réappro**: 19j
+- **Jours avant rupture**: **-27j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -49,13 +74,13 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1693] LD FR TARTINAD BIO CAROTTE 200</strong> (ID: 9181) - 1 unités</summary>
+<summary>🟡 <strong>[PF1693] LD FR TARTINAD BIO CAROTTE 200</strong> (ID: 9181) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0385
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0244
+- **Stock restant estimé**: 0.34
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -73,13 +98,13 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1768] LV TARTINADE BIO TRUFFES 135G</strong> (ID: 9226) - 1 unités</summary>
+<summary>🟡 <strong>[PF1768] LV TARTINADE BIO TRUFFES 135G</strong> (ID: 9226) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0385
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0244
+- **Stock restant estimé**: 0.34
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -100,10 +125,10 @@
 <summary>🔴 <strong>[PF1689] FILOU CURRY KETCH SQUEEZE 300</strong> (ID: 9177) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0600
-- **Stock restant estimé**: -0.40
+- **Consommation/jour**: 0.0588
+- **Stock restant estimé**: -0.41
 - **Jours avant rupture**: **-6j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -122,13 +147,38 @@
 </details>
 
 <details>
+<summary>🟡 <strong>[PF1687] JF CURRY KETCHUP SQUEEZE 300ML</strong> (ID: 9175) - 2 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0326
+- **Stock restant estimé**: 0.66
+- **Jours avant rupture**: **20j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-08-22 | S38685 | 2 | 26.40€ |
+| 2025-07-02 | S37807 | 1 | 26.40€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 1]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 2
+
+</details>
+
+<details>
 <summary>🔴 <strong>[PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> (ID: 9000) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1013
-- **Stock restant estimé**: -1.05
-- **Jours avant rupture**: **-10j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.1000
+- **Stock restant estimé**: -1.10
+- **Jours avant rupture**: **-11j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -152,10 +202,10 @@
 <summary>🔴 <strong>[PF0609] YVALLI SAUCE TOMATE 2,5 KG</strong> (ID: 9348) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0200
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0244
+- **Stock restant estimé**: -0.24
+- **Jours avant rupture**: **-10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -176,10 +226,10 @@
 <summary>🔴 <strong>[PF0509] YVALLI GR BOUL TOMATE 2,5 KG</strong> (ID: 9310) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0200
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0244
+- **Stock restant estimé**: -0.24
+- **Jours avant rupture**: **-10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -200,10 +250,10 @@
 <summary>🔴 <strong>[PF0520] YVALLI PET BOUL TOMATE 2,5 KG</strong> (ID: 9314) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0200
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0244
+- **Stock restant estimé**: -0.24
+- **Jours avant rupture**: **-10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -224,10 +274,10 @@
 <summary>🔴 <strong>[PF0094] FILOU MOUTARDE 700 GR</strong> (ID: 8996) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0220
-- **Stock restant estimé**: -0.10
-- **Jours avant rupture**: **-4j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0217
+- **Stock restant estimé**: -0.11
+- **Jours avant rupture**: **-5j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -250,9 +300,9 @@
 
 ### 📊 Prédiction Stock
 - **Consommation/jour**: 0.0241
-- **Stock restant estimé**: -1.21
+- **Stock restant estimé**: -1.23
 - **Jours avant rupture**: **-50j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -275,10 +325,10 @@
 <summary>🔴 <strong>[PF0501] YVALLI VINAIGRETTE 5 KG JERRY</strong> (ID: 9026) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0200
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0244
+- **Stock restant estimé**: -0.24
+- **Jours avant rupture**: **-10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -299,10 +349,10 @@
 <summary>🔴 <strong>[PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML</strong> (ID: 9145) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0220
-- **Stock restant estimé**: -0.10
-- **Jours avant rupture**: **-4j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0217
+- **Stock restant estimé**: -0.11
+- **Jours avant rupture**: **-5j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -324,10 +374,10 @@
 <summary>🔴 <strong>[PF1552] LV KETCHUP BIO 290G</strong> (ID: 9129) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0200
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0244
+- **Stock restant estimé**: -0.24
+- **Jours avant rupture**: **-10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -348,10 +398,10 @@
 <summary>🔴 <strong>[PF1533] JF SAUCE ANDALOUSE 250ML WECK</strong> (ID: 9117) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0350
-- **Stock restant estimé**: -0.75
-- **Jours avant rupture**: **-21j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0349
+- **Stock restant estimé**: -0.78
+- **Jours avant rupture**: **-22j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -382,10 +432,10 @@
 <summary>🟡 <strong>[PF0959] FILOU TOMATO KETCHUP 10KG</strong> (ID: 17752) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0097
+- **Consommation/jour**: 0.0096
 - **Stock restant estimé**: 0.03
-- **Jours avant rupture**: **3j**
-- **Seuil réappro**: 19j
+- **Jours avant rupture**: **2j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -408,9 +458,9 @@
 
 ### 📊 Prédiction Stock
 - **Consommation/jour**: 0.0098
-- **Stock restant estimé**: 0.02
-- **Jours avant rupture**: **2j**
-- **Seuil réappro**: 19j
+- **Stock restant estimé**: 0.01
+- **Jours avant rupture**: **1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -434,127 +484,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML</strong> (ID: 17480) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0074
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-19 | S36897 | 1 | 14.94€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML</strong> (ID: 17479) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0074
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-19 | S36897 | 1 | 14.34€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3301] DLL MAYONNAISE CITRON 300ML</strong> (ID: 17369) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0074
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-19 | S36897 | 1 | 9.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3340] CARRE MAYONNAISE BELGE 720ML</strong> (ID: 17777) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0074
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-19 | S36897 | 1 | 21.36€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [1]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF1695] LD FR TARTINADE BIO TOMATE 200</strong> (ID: 9070) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0120
-- **Stock restant estimé**: -0.93
-- **Jours avant rupture**: **-77j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-24 | S36368 | 1 | 9.06€ |
-| 2025-04-18 | S36282 | 1 | 12.30€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [1, 1]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
 
 ---
 
@@ -563,7 +492,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 600472.01€**
+- **Montant initial: 600468.59€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -572,10 +501,12 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [PF0093] FILOU MOUTARDE 300GR | 8995 | 1 | 0 | 1 | 13.20€ | 13.20€ |
 | [PF1798] LD MAYONNAI POIVRE... | 9253 | 0 | 0 | 0 | 0.00€ | 0.00€ |
 | [PF1693] LD FR TARTINAD BIO... | 9181 | 1 | 0 | 1 | 12.30€ | 12.30€ |
 | [PF1768] LV TARTINADE BIO T... | 9226 | 1 | 0 | 1 | 12.30€ | 12.30€ |
 | [PF1689] FILOU CURRY KETCH ... | 9177 | 2 | 0 | 2 | 19.32€ | 38.64€ |
+| [PF1687] JF CURRY KETCHUP S... | 9175 | 2 | 0 | 2 | 26.40€ | 52.80€ |
 | [PF0121] FILOU MAYONNAISE O... | 9000 | 2 | 0 | 2 | 18.00€ | 36.00€ |
 | [PF0609] YVALLI SAUCE TOMAT... | 9348 | 1 | 0 | 1 | 37.20€ | 37.20€ |
 | [PF0509] YVALLI GR BOUL TOM... | 9310 | 1 | 0 | 1 | 52.50€ | 52.50€ |
@@ -588,12 +519,7 @@
 | [PF1533] JF SAUCE ANDALOUSE... | 9117 | 1 | 0 | 1 | 19.50€ | 19.50€ |
 | [PF0959] FILOU TOMATO KETCH... | 17752 | 2 | 0 | 2 | 18.70€ | 37.40€ |
 | [PF0070] FILOU/LD SAUCE AND... | 8983 | 1 | 0 | 1 | 28.75€ | 28.75€ |
-| [PF3316] DLL VINAIGRETTE FI... | 17480 | 1 | 0 | 1 | 14.94€ | 14.94€ |
-| [PF3315] DLL VINAIGRETTE YO... | 17479 | 1 | 0 | 1 | 14.34€ | 14.34€ |
-| [PF3301] DLL MAYONNAISE CIT... | 17369 | 1 | 0 | 1 | 9.72€ | 9.72€ |
-| [PF3340] CARRE MAYONNAISE B... | 17777 | 1 | 0 | 1 | 21.36€ | 21.36€ |
-| [PF1695] LD FR TARTINADE BI... | 9070 | 1 | 0 | 1 | 9.06€ | 9.06€ |
 
-**Total (Phase 2.5): 600472.01€**
+**Total (Phase 2.5): 600468.59€**
 
 ---

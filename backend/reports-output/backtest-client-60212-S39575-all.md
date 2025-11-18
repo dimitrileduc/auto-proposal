@@ -5,8 +5,8 @@
 - **Client** : BIOK GASTUCHE (ID: 60212)
 - **Commande réelle** : S39575
 - **Date commande** : 2025-10-09 06:38:48
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 46.2% | 26 produits prédits, 12 corrects |
+| **Précision** | 44.4% | 27 produits prédits, 12 corrects |
 | **Rappel** | 92.3% | 13 produits réels, 12 détectés |
-| **F1-Score** | 61.5% | Score équilibré global |
+| **F1-Score** | 60.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -154,7 +154,7 @@
 
 ---
 
-## False Positives (14)
+## False Positives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,20 +174,21 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: 0.6u (7j restants) → prédit 1u mais non commandé |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | Stock prédit: 2.1u (12j restants) → prédit 3u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: 0.8u (24j restants) → prédit 1u mais non commandé |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: 0.5u (5j restants) → prédit 1u mais non commandé |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | Stock prédit: 1.9u (10j restants) → prédit 3u mais non commandé |
 | [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Stock prédit: 0.4u (9j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: 0.5u (5j restants) → prédit 2u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.4u (14j restants) → prédit 1u mais non commandé |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Stock prédit: 0.3u (9j restants) → prédit 2u mais non commandé |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.4u (23j restants) → prédit 1u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
 | [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | Stock prédit: 0.1u (1j restants) → prédit 2u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -2.1u (-56j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -1.5u (-49j restants) → prédit 1u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: -2.2u (-90j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -1.8u (-53j restants) → prédit 1u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock prédit: -1.3u (-46j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -212,9 +213,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock suffisant: 1.8u (50j restants > seuil 19j) |
+| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock suffisant: 1.7u (38j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:12.026Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:00.395Z*

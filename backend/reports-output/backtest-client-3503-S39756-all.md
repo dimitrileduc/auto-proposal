@@ -5,8 +5,8 @@
 - **Client** : VAN HEES BENELUX GmbH (ID: 3503)
 - **Commande réelle** : S39756
 - **Date commande** : 2025-10-16 06:37:26
-- **Date cutoff système** : 2025-10-15 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-16 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 1 produits réels, 0 détectés |
-| **F1-Score** | 0.0% | Score équilibré global |
+| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 100.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (0)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,7 +133,13 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-*Aucun produit correctement prédit (rappel = 0%)*
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
+|---------|--------|------|-----------|----------|------|
+| [PF0075] FILOU CHASSEUR  10 L | 132 | 132 | 0.0 | 0.0% | 🎯 exact |
+
 
 ---
 
@@ -156,7 +162,7 @@
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,14 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0075] FILOU CHASSEUR  10 L | 132 | Stock suffisant: 132.0u (20j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:12.657Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:02.804Z*

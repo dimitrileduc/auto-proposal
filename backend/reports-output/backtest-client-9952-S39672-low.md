@@ -5,8 +5,8 @@
 - **Client** : Chaman (ID: 9952)
 - **Commande réelle** : S39672
 - **Date commande** : 2025-10-15 04:58:48
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-15 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 20 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,13 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: -1.0u (-49j restants) → prédit 1u mais non commandé |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: -1.0u (-49j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (20)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,33 +178,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV342] LV Organic Broccoli Spread 190 g | 1 | Stock suffisant: 0.3u (9j restants > seuil 19j) |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.8u (90j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.8u (95j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.3u (20j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.7u (77j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 1.7u (126j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock suffisant: 0.7u (12j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: 0.9u (20j restants > seuil 19j) |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: -0.4u (-26j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: 0.1u (6j restants > seuil 19j) |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.9u (21j restants > seuil 19j) |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | Stock suffisant: -0.8u (-41j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock suffisant: -0.1u (-6j restants > seuil 19j) |
-| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock suffisant: 0.7u (56j restants > seuil 19j) |
-| [VID0009] Consigne casier | 4 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 24 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:56.655Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:45.534Z*

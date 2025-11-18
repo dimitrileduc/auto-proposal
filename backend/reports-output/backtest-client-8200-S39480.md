@@ -5,8 +5,8 @@
 - **Client** : BONNI, ACHAT (ID: 8200)
 - **Commande réelle** : S39480
 - **Date commande** : 2025-10-01 05:53:38
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 8.7% | 23 produits prédits, 2 corrects |
+| **Précision** | 9.5% | 21 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 16.0% | Score équilibré global |
+| **F1-Score** | 17.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (21)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,27 +164,25 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3274] JF BURGER SAUCE 925ML | 3 | Stock prédit: 0.5u (5j restants) → prédit 3u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 1.4u (17j restants) → prédit 2u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 6 | Stock prédit: 2.6u (11j restants) → prédit 6u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 6 | Stock prédit: 1.9u (7j restants) → prédit 6u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.4u (14j restants) → prédit 1u mais non commandé |
-| [PF0093] FILOU MOUTARDE 300GR | 3 | Stock prédit: 0.5u (6j restants) → prédit 3u mais non commandé |
-| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.2u (-3j restants) → prédit 15u mais non commandé |
-| [PF0094] FILOU MOUTARDE 700 GR | 3 | Stock prédit: -0.4u (-6j restants) → prédit 3u mais non commandé |
-| [PF0078] FILOU CHASSEUR 5 L | 44 | Stock prédit: -15.7u (-36j restants) → prédit 44u mais non commandé |
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 44 | Stock prédit: 36.4u (28j restants) → prédit 44u mais non commandé |
+| [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 4 | Stock prédit: 5.0u (30j restants) → prédit 4u mais non commandé |
+| [PF3270] JF TRUFFLE MAYONNAISE 925ML | 12 | Stock prédit: 4.9u (26j restants) → prédit 12u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 3 | Stock prédit: 0.4u (4j restants) → prédit 3u mais non commandé |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 3 | Stock prédit: 1.2u (14j restants) → prédit 3u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | Stock prédit: 1.9u (7j restants) → prédit 7u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 7 | Stock prédit: 1.4u (5j restants) → prédit 7u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
+| [PF0093] FILOU MOUTARDE 300GR | 3 | Stock prédit: -0.5u (-5j restants) → prédit 3u mais non commandé |
+| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.3u (-3j restants) → prédit 15u mais non commandé |
+| [PF0094] FILOU MOUTARDE 700 GR | 3 | Stock prédit: -0.2u (-3j restants) → prédit 3u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 44 | Stock prédit: -16.0u (-37j restants) → prédit 44u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 0.4u (14j restants) → prédit 2u mais non commandé |
-| [PF0096] FILOU MOUTARDE 3 KG | 20 | Stock prédit: -0.2u (0j restants) → prédit 20u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.8u (18j restants) → prédit 4u mais non commandé |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
+| [PF0096] FILOU MOUTARDE 3 KG | 24 | Stock prédit: -20.0u (-32j restants) → prédit 24u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.7u (17j restants) → prédit 4u mais non commandé |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock prédit: -0.1u (-3j restants) → prédit 2u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock prédit: 0.3u (14j restants) → prédit 2u mais non commandé |
-| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.5u (-40j restants) → prédit 2u mais non commandé |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock prédit: -1.2u (-42j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: -1.0u (-68j restants) → prédit 2u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.4u (-41j restants) → prédit 1u mais non commandé |
-| [PF3290] JF MAYO BARAKI 925ML | 8 | Stock prédit: -8.6u (-53j restants) → prédit 8u mais non commandé |
-| [PF3272] JF PEPPER MAYONNAISE 925ML | 4 | Stock prédit: -4.1u (-30j restants) → prédit 4u mais non commandé |
-| [PF3273] JF MITRAILLETTE SAUCE 925ML | 8 | Stock prédit: -10.3u (-69j restants) → prédit 8u mais non commandé |
+| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.5u (-41j restants) → prédit 2u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.8u (-31j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -208,4 +206,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:03.707Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:52.764Z*

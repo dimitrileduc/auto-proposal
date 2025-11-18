@@ -5,8 +5,8 @@
 - **Client** : Conserverie Et Moutarderie Belge (ID: 30)
 - **Commande réelle** : S39535
 - **Date commande** : 2025-10-03 08:01:58
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 2 produits réels, 0 détectés |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,20 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [FIL10] FIL MAYONNAISE ŒUFS 10L SEAU  | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [FIL09] FIL MOUTARDE 300G BOCAL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DIS0003] Display TVF bois | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -180,15 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: 0.8u (15j restants > seuil 19j) |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: 0.3u (12j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:55.049Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:44.967Z*

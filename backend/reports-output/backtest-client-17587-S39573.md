@@ -5,8 +5,8 @@
 - **Client** : Epicerie Uhoda Vennes (ID: 17587)
 - **Commande réelle** : S39573
 - **Date commande** : 2025-10-06 09:26:46
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 30.0% | 40 produits prédits, 12 corrects |
-| **Rappel** | 70.6% | 17 produits réels, 12 détectés |
-| **F1-Score** | 42.1% | Score équilibré global |
+| **Précision** | 26.8% | 41 produits prédits, 11 corrects |
+| **Rappel** | 64.7% | 17 produits réels, 11 détectés |
+| **F1-Score** | 37.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 9 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.45 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 27.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (12)
+## True Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,22 +139,21 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [LV160] LV Tartinade Aubergine 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV159] LV Tartinade aux Truffes  135g  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV131] LV Tartinade Potiron 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV139] LV Tartinade Paprika Chili 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (28)
+## False Positives (30)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,39 +173,41 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV135] LV Tartinade Basilico 190g | 2 | Stock prédit: 0.4u (10j restants) → prédit 2u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: 0.9u (16j restants) → prédit 1u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 0.9u (14j restants) → prédit 2u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 0.8u (13j restants) → prédit 2u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.8u (-17j restants) → prédit 2u mais non commandé |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
+| [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: 0.8u (12j restants) → prédit 1u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.9u (18j restants) → prédit 1u mais non commandé |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 1.1u (25j restants) → prédit 1u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 1.1u (25j restants) → prédit 2u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 0.7u (11j restants) → prédit 2u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 0.5u (7j restants) → prédit 2u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.5u (18j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: 0.6u (25j restants) → prédit 1u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: -0.3u (-9j restants) → prédit 1u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
+| [LV187] LV Tartinade Mangue Curry 380g | 1 | Stock prédit: 0.4u (23j restants) → prédit 1u mais non commandé |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [CB005] CB Apple juice 1l | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.5u (-20j restants) → prédit 1u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.3u (-12j restants) → prédit 1u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.5u (-20j restants) → prédit 1u mais non commandé |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
-| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.6u (-21j restants) → prédit 1u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 1 | Stock prédit: -0.2u (-11j restants) → prédit 1u mais non commandé |
+| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 2 | Stock prédit: -0.6u (-21j restants) → prédit 2u mais non commandé |
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: -0.4u (-22j restants) → prédit 1u mais non commandé |
 | [LV217] LV Tartinade Basilic 380g | 1 | Stock prédit: -0.7u (-37j restants) → prédit 1u mais non commandé |
-| [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
-| [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: -0.4u (-25j restants) → prédit 1u mais non commandé |
-| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: -0.2u (-12j restants) → prédit 2u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.8u (-113j restants) → prédit 1u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -0.9u (-54j restants) → prédit 1u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: -0.5u (-48j restants) → prédit 1u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: -0.5u (-57j restants) → prédit 1u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -1.0u (-87j restants) → prédit 2u mais non commandé |
+| [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: -0.3u (-21j restants) → prédit 1u mais non commandé |
+| [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: -0.4u (-26j restants) → prédit 1u mais non commandé |
+| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.8u (-114j restants) → prédit 1u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -1.1u (-59j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (5)
+## False Negatives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -226,13 +227,14 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock suffisant: 1.2u (31j restants > seuil 19j) |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock suffisant: 1.4u (40j restants > seuil 19j) |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock suffisant: 1.4u (40j restants > seuil 19j) |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock suffisant: 1.5u (56j restants > seuil 30j) |
+| [LV133] LV Tartinade Ananas Coco 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock suffisant: 1.3u (33j restants > seuil 30j) |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock suffisant: 1.3u (33j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:06.486Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:58.082Z*

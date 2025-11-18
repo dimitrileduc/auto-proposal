@@ -5,8 +5,8 @@
 - **Client** : TERROIRIST, Thomas (ID: 68258)
 - **Commande réelle** : S39352
 - **Date commande** : 2025-09-24 12:49:59
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 10 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,23 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JOY02] JOY! Organic Strawberry Jam 370g | 4 | Stock suffisant: -0.7u (-2j restants > seuil 19j) |
-| [JOY03] JOY! Organic Apricot Jam 370g | 4 | Stock suffisant: 0.2u (1j restants > seuil 19j) |
-| [JOY05] Organic Cherry Jam 370g | 2 | Stock suffisant: 0.6u (3j restants > seuil 19j) |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock suffisant: 0.3u (5j restants > seuil 19j) |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 6 | Stock suffisant: 2.0u (9j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 4 | Stock suffisant: 1.9u (11j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 6 | Stock suffisant: 1.3u (6j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 2.1u (14j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 | Stock suffisant: -0.4u (-2j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 6 | Stock suffisant: 2.5u (9j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:42.211Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:32.646Z*

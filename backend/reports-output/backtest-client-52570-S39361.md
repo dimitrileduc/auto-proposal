@@ -5,8 +5,8 @@
 - **Client** : ASBL L'Accueil - Magasin du Val Dieu (ID: 52570)
 - **Commande réelle** : S39361
 - **Date commande** : 2025-09-24 09:45:50
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 20 produits prédits, 8 corrects |
+| **Précision** | 57.1% | 14 produits prédits, 8 corrects |
 | **Rappel** | 88.9% | 9 produits réels, 8 détectés |
-| **F1-Score** | 55.2% | Score équilibré global |
+| **F1-Score** | 69.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (12)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,18 +170,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [WIG01] WIGNAC cidre naturel bio 330ml | 3 | Stock prédit: 2.5u (17j restants) → prédit 3u mais non commandé |
-| [WIG02] WIGNAC cidre rosé bio 330ml | 3 | Stock prédit: 1.5u (11j restants) → prédit 3u mais non commandé |
-| [WIG03] WIGNAC cidre naturel bio 750ml | 4 | Stock prédit: 2.0u (10j restants) → prédit 4u mais non commandé |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 4 | Stock prédit: 2.3u (14j restants) → prédit 4u mais non commandé |
-| [LV136] LV Tartinade Betterave 190g | 4 | Stock prédit: 0.4u (3j restants) → prédit 4u mais non commandé |
-| [MF0055] MF Noix de cajou - Curry 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
+| [WIG01] WIGNAC cidre naturel bio 330ml | 3 | Stock prédit: 2.3u (16j restants) → prédit 3u mais non commandé |
+| [WIG02] WIGNAC cidre rosé bio 330ml | 3 | Stock prédit: 1.4u (10j restants) → prédit 3u mais non commandé |
+| [WIG03] WIGNAC cidre naturel bio 750ml | 4 | Stock prédit: 1.7u (9j restants) → prédit 4u mais non commandé |
+| [WIG04] WIGNAC cidre rosé bio 750ml | 4 | Stock prédit: 1.7u (9j restants) → prédit 4u mais non commandé |
+| [LV136] LV Tartinade Betterave 190g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 3 | Stock prédit: -0.6u (-10j restants) → prédit 3u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -0.6u (-35j restants) → prédit 2u mais non commandé |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: -0.7u (-66j restants) → prédit 1u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: -0.7u (-66j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -206,9 +200,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV133] LV Tartinade Ananas Coco 190g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV133] LV Tartinade Ananas Coco 190g | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:08.068Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:58.659Z*

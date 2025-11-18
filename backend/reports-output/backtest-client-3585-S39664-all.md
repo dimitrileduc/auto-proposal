@@ -5,8 +5,8 @@
 - **Client** : ILIS    SA (ID: 3585)
 - **Commande réelle** : S39664
 - **Date commande** : 2025-10-10 09:19:46
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-10 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -163,10 +163,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 80 | Stock prédit: -36.7u (-6j restants) → prédit 80u mais non commandé |
-| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: 2.1u (13j restants) → prédit 6u mais non commandé |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 104 | Stock prédit: -74.8u (-16j restants) → prédit 104u mais non commandé |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | Stock prédit: 0.0u (0j restants) → prédit 52u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 80 | Stock prédit: -41.1u (-7j restants) → prédit 80u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: 2.0u (13j restants) → prédit 6u mais non commandé |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 104 | Stock prédit: -76.4u (-17j restants) → prédit 104u mais non commandé |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | Stock prédit: -100.3u (-26j restants) → prédit 52u mais non commandé |
 
 
 ---
@@ -190,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:43.583Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:35.498Z*

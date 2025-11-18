@@ -5,8 +5,8 @@
 - **Client** : BIOK THOREMBAIS (ID: 60213)
 - **Commande réelle** : S39350
 - **Date commande** : 2025-09-24 13:05:32
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 10 produits réels, 0 détectés |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,17 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,23 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 0.3u (10j restants > seuil 19j) |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: 1.1u (22j restants > seuil 19j) |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock suffisant: 1.2u (30j restants > seuil 19j) |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 2 | Stock suffisant: 0.7u (5j restants > seuil 19j) |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock suffisant: 1.1u (11j restants > seuil 19j) |
-| [KOKO01] KOKO Kombucha original 330ml | 1 | Stock suffisant: 1.5u (18j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: 1.6u (12j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | Stock suffisant: 0.9u (8j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.8u (12j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:52.219Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:41.859Z*

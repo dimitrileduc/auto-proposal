@@ -5,8 +5,8 @@
 - **Client** : Al-Terre-Native (ID: 24840)
 - **Commande réelle** : S39376
 - **Date commande** : 2025-09-24 13:11:31
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 44.4% | 18 produits prédits, 8 corrects |
-| **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 55.2% | Score équilibré global |
+| **Précision** | 41.7% | 24 produits prédits, 10 corrects |
+| **Rappel** | 90.9% | 11 produits réels, 10 détectés |
+| **F1-Score** | 57.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.38 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 31.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| **MAE** | 0.30 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,11 +138,13 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV160] LV Tartinade Aubergine 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV160] LV Tartinade Aubergine 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV131] LV Tartinade Potiron 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV330] LV BIO Tartinade Toscana 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV137] LV Tartinade Lentilles Curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV330] LV BIO Tartinade Toscana 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV161] LV Tartinade Mangue curry 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV136] LV Tartinade Betterave 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV331] LV Tartinade Lentils Balsamico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV357] LV Tartinade BIO Asperge 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -150,7 +152,7 @@
 
 ---
 
-## False Positives (10)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,21 +172,25 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock prédit: 1.1u (27j restants) → prédit 2u mais non commandé |
+| [LV188] LV Tartinade Aubergine  380g | 2 | Stock prédit: 0.4u (15j restants) → prédit 2u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.4u (-18j restants) → prédit 1u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 2 | Stock prédit: -0.3u (-7j restants) → prédit 2u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 2 | Stock prédit: 1.1u (27j restants) → prédit 2u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (14j restants) → prédit 1u mais non commandé |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.4u (-21j restants) → prédit 1u mais non commandé |
+| [LV133] LV Tartinade Ananas Coco 190g | 2 | Stock prédit: -0.2u (-5j restants) → prédit 2u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: -0.2u (-3j restants) → prédit 2u mais non commandé |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: -0.3u (-23j restants) → prédit 1u mais non commandé |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | Stock prédit: -0.6u (-11j restants) → prédit 3u mais non commandé |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: -0.3u (-24j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -204,11 +210,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | Stock suffisant: 1.1u (23j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 2 | Stock suffisant: 0.6u (31j restants > seuil 19j) |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:49.230Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:41.901Z*

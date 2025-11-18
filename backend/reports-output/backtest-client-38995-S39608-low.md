@@ -5,8 +5,8 @@
 - **Client** : MASETTI (ID: 38995)
 - **Commande réelle** : S39608
 - **Date commande** : 2025-10-08 06:19:58
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 24 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (24)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,37 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 25 | Stock suffisant: 13.0u (28j restants > seuil 19j) |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 25 | Stock suffisant: -11.7u (-10j restants > seuil 19j) |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 25 | Stock suffisant: 2.1u (3j restants > seuil 19j) |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 25 | Stock suffisant: -24.4u (-40j restants > seuil 19j) |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 25 | Stock suffisant: -31.3u (-45j restants > seuil 19j) |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 15 | Stock suffisant: 7.1u (10j restants > seuil 19j) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 10 | Stock suffisant: -6.9u (-19j restants > seuil 19j) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 5 | Stock suffisant: -5.2u (-16j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 20 | Stock suffisant: 3.0u (14j restants > seuil 19j) |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock suffisant: -1.9u (-15j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 5 | Stock suffisant: 0.6u (8j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 10 | Stock suffisant: 3.0u (13j restants > seuil 19j) |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: 1.4u (29j restants > seuil 19j) |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock suffisant: -1.7u (-15j restants > seuil 19j) |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock suffisant: 1.0u (10j restants > seuil 19j) |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: -2.6u (-18j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 4 | Stock suffisant: -0.3u (-8j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 2.0u (40j restants > seuil 19j) |
-| [JF037] JF BBQ SQUEEZE 300ML | 3 | Stock suffisant: 1.2u (10j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 4 | Stock suffisant: -3.3u (-31j restants > seuil 19j) |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | Stock suffisant: -1.3u (-32j restants > seuil 19j) |
-| [JF029] JF VOL AU VENT BOCAL 400G | 10 | Stock suffisant: -1.0u (-11j restants > seuil 19j) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 10 | Stock suffisant: -1.7u (-14j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 10 | Stock suffisant: -1.0u (-5j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:08.207Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:58.347Z*

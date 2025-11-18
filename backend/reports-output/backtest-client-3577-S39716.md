@@ -5,8 +5,8 @@
 - **Client** : ITM ALIMENTAIRE BELGIUM (ID: 3577)
 - **Commande réelle** : S39716
 - **Date commande** : 2025-10-14 08:27:27
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -164,7 +164,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF2997] ITM BO VIN YOGORETTE PET 450 | 112 | Stock prédit: 90.5u (12j restants) → prédit 112u mais non commandé |
+| [PF2997] ITM BO VIN YOGORETTE PET 450 | 112 | Stock prédit: 75.7u (8j restants) → prédit 112u mais non commandé |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:03.104Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:52.966Z*

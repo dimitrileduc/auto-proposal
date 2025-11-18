@@ -5,8 +5,8 @@
 - **Client** : DEPOT VRAC ATH (ID: 60286)
 - **Commande réelle** : S38709
 - **Date commande** : 2025-08-26 07:26:18
-- **Date cutoff système** : 2025-08-25 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-08-26 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 60 produits prédits, 30 corrects |
+| **Précision** | 48.4% | 62 produits prédits, 30 corrects |
 | **Rappel** | 100.0% | 30 produits réels, 30 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 65.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.43 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 12.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 24 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAPE** | 14.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 25 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -159,7 +159,7 @@
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 10 | 6 | 4.0 | 66.7% | ✅ partial |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
 | [RIT08] RITCHIE Citron - canette 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [RIT07] RITCHIE Orange - canette 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -167,12 +167,12 @@
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 6 | 3 | 3.0 | 100.0% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 10 | 3 | 7.0 | 233.3% | ✅ partial |
 
 
 ---
 
-## False Positives (30)
+## False Positives (32)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -192,36 +192,38 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
-| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
-| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
-| [JOY07] JOY! Organic Fig Jam 370g | 3 | Stock prédit: 1.5u (17j restants) → prédit 3u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV131] LV Tartinade Potiron 190g | 2 | Stock prédit: 1.0u (20j restants) → prédit 2u mais non commandé |
+| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
+| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
+| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
+| [JOY07] JOY! Organic Fig Jam 370g | 3 | Stock prédit: 1.4u (16j restants) → prédit 3u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 2 | Stock prédit: 1.6u (20j restants) → prédit 2u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock prédit: 0.6u (7j restants) → prédit 2u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | Stock prédit: 0.5u (5j restants) → prédit 2u mais non commandé |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Stock prédit: -0.9u (-21j restants) → prédit 1u mais non commandé |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Stock prédit: -0.9u (-21j restants) → prédit 1u mais non commandé |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: -0.6u (-16j restants) → prédit 1u mais non commandé |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: -0.9u (-21j restants) → prédit 1u mais non commandé |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock prédit: -0.4u (-12j restants) → prédit 1u mais non commandé |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.4u (-12j restants) → prédit 1u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 2 | Stock prédit: -1.6u (-15j restants) → prédit 2u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | Stock prédit: -0.6u (-7j restants) → prédit 2u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -1.0u (-27j restants) → prédit 1u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -1.0u (-27j restants) → prédit 1u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: -1.8u (-34j restants) → prédit 2u mais non commandé |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | Stock prédit: -3.3u (-38j restants) → prédit 3u mais non commandé |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 3 | Stock prédit: -3.3u (-38j restants) → prédit 3u mais non commandé |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 3 | Stock prédit: -3.3u (-38j restants) → prédit 3u mais non commandé |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 3 | Stock prédit: -3.3u (-38j restants) → prédit 3u mais non commandé |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 3 | Stock prédit: -3.3u (-38j restants) → prédit 3u mais non commandé |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 3 | Stock prédit: -3.3u (-38j restants) → prédit 3u mais non commandé |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 3 | Stock prédit: -3.3u (-38j restants) → prédit 3u mais non commandé |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 4 | Stock prédit: -2.3u (-39j restants) → prédit 4u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 3 | Stock prédit: -2.2u (-62j restants) → prédit 3u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | Stock prédit: 0.4u (4j restants) → prédit 2u mais non commandé |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Stock prédit: -0.9u (-22j restants) → prédit 1u mais non commandé |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Stock prédit: -0.9u (-22j restants) → prédit 1u mais non commandé |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: -0.6u (-17j restants) → prédit 1u mais non commandé |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: -0.9u (-22j restants) → prédit 1u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock prédit: -0.4u (-13j restants) → prédit 1u mais non commandé |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.4u (-13j restants) → prédit 1u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 2 | Stock prédit: -2.1u (-19j restants) → prédit 2u mais non commandé |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | Stock prédit: -0.7u (-8j restants) → prédit 2u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -0.9u (-26j restants) → prédit 1u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.9u (-26j restants) → prédit 1u mais non commandé |
+| [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: -1.8u (-35j restants) → prédit 2u mais non commandé |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | Stock prédit: -3.3u (-39j restants) → prédit 3u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 3 | Stock prédit: -3.3u (-39j restants) → prédit 3u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 3 | Stock prédit: -3.3u (-39j restants) → prédit 3u mais non commandé |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 3 | Stock prédit: -3.3u (-39j restants) → prédit 3u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 3 | Stock prédit: -3.3u (-39j restants) → prédit 3u mais non commandé |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 3 | Stock prédit: -3.3u (-39j restants) → prédit 3u mais non commandé |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 3 | Stock prédit: -3.3u (-39j restants) → prédit 3u mais non commandé |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 4 | Stock prédit: -2.4u (-39j restants) → prédit 4u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 3 | Stock prédit: -4.1u (-80j restants) → prédit 3u mais non commandé |
 
 
 ---
@@ -245,4 +247,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:56.038Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:47.293Z*

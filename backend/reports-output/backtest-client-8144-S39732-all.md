@@ -5,8 +5,8 @@
 - **Client** : DELISALADES, Jean-Luc Durré (ID: 8144)
 - **Commande réelle** : S39732
 - **Date commande** : 2025-10-15 07:52:35
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-15 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
+| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 100.0% | Score équilibré global |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,7 +158,13 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 160 | Stock prédit: 152.9u (21j restants) → prédit 160u mais non commandé |
+
 
 ---
 
@@ -181,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:04.106Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:53.768Z*

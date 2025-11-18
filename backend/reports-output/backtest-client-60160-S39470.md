@@ -5,8 +5,8 @@
 - **Client** : ASIE A TIK (ID: 60160)
 - **Commande réelle** : S39470
 - **Date commande** : 2025-10-01 07:15:18
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 28.6% | 7 produits prédits, 2 corrects |
-| **Rappel** | 66.7% | 3 produits réels, 2 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
+| **Rappel** | 100.0% | 3 produits réels, 3 détectés |
+| **F1-Score** | 54.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 8.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 2.67 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,8 +138,9 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 10 | 10 | 0.0 | 0.0% | 🎯 exact |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 10 | 12 | 2.0 | 16.7% | ✅ partial |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 6 | 10 | 4.0 | 40.0% | ✅ partial |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 9 | 10 | 1.0 | 10.0% | ✅ partial |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 9 | 12 | 3.0 | 25.0% | ✅ partial |
 
 
 ---
@@ -164,16 +165,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 8 | Stock prédit: -0.8u (-3j restants) → prédit 8u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 10 | Stock prédit: -3.1u (-20j restants) → prédit 10u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 8 | Stock prédit: -6.4u (-32j restants) → prédit 8u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 5 | Stock prédit: -0.3u (-2j restants) → prédit 5u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 8 | Stock prédit: -7.8u (-58j restants) → prédit 8u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 8 | Stock prédit: -2.3u (-9j restants) → prédit 8u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 9 | Stock prédit: -2.9u (-18j restants) → prédit 9u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 8 | Stock prédit: -0.7u (-5j restants) → prédit 8u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 8 | Stock prédit: -0.7u (-5j restants) → prédit 8u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 8 | Stock prédit: -13.8u (-75j restants) → prédit 8u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -188,14 +189,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 10 | Stock suffisant: 4.5u (32j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:37.803Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:27.302Z*

@@ -5,8 +5,8 @@
 - **Client** : Ferme A l'arbre (ID: 24304)
 - **Commande réelle** : S39576
 - **Date commande** : 2025-10-06 09:27:30
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 20 produits réels, 0 détectés |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,13 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA09] LEAMO cola bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: -2.9u (-41j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (20)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,33 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: 0.6u (18j restants > seuil 19j) |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: 0.6u (18j restants > seuil 19j) |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock suffisant: 0.7u (24j restants > seuil 19j) |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 0.1u (3j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | Stock suffisant: 0.7u (3j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: 1.0u (6j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | Stock suffisant: 1.7u (15j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | Stock suffisant: 1.4u (10j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: 1.0u (6j restants > seuil 19j) |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock suffisant: 0.9u (9j restants > seuil 19j) |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock suffisant: -0.4u (-8j restants > seuil 19j) |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock suffisant: -0.3u (-5j restants > seuil 19j) |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock suffisant: -0.7u (-9j restants > seuil 19j) |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: -0.3u (-2j restants > seuil 19j) |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock suffisant: 1.3u (8j restants > seuil 19j) |
-| [VID0009] Consigne casier | 4 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 24 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:41.845Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:29.876Z*

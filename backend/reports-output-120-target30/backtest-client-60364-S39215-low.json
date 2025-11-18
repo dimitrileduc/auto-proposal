@@ -1,0 +1,22 @@
+{
+  "clientId": 60364,
+  "clientName": "ILLICO VENDING",
+  "orderName": "S39215",
+  "orderDate": "2025-09-16 08:28:00",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  }
+}

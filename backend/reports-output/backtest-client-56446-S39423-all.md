@@ -5,8 +5,8 @@
 - **Client** : Lacia (Marias SA) (ID: 56446)
 - **Commande réelle** : S39423
 - **Date commande** : 2025-09-26 09:53:51
-- **Date cutoff système** : 2025-09-25 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-26 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -176,13 +176,13 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| BB/BC-MMP-540ml/Propre | 4732 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| CPL/Intercalaire plastique consigné | 28 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-IND-DIN | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/CA-MMP-540ml/VIDE | 1536 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-EU | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| BB/BC-MMP-540ml/Propre | 4732 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| CPL/Intercalaire plastique consigné | 28 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| BB/Palette-IND-DIN | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| BB/CA-MMP-540ml/VIDE | 1536 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| BB/Palette-EU | 8 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:28.582Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:18.122Z*

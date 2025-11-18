@@ -5,8 +5,8 @@
 - **Client** : ADH QUALITY (ID: 60146)
 - **Commande réelle** : S39626
 - **Date commande** : 2025-10-08 12:21:50
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 3 produits prédits, 3 corrects |
-| **Rappel** | 50.0% | 6 produits réels, 3 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 100.0% | 6 produits prédits, 6 corrects |
+| **Rappel** | 100.0% | 6 produits réels, 6 détectés |
+| **F1-Score** | 100.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 533.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 4.67 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 466.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,9 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 8 | 1 | 7.0 | 700.0% | ✅ partial |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 9 | 1 | 8.0 | 800.0% | ✅ partial |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 9 | 1 | 8.0 | 800.0% | ✅ partial |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | 1 | 7.0 | 700.0% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 8 | 1 | 7.0 | 700.0% | ✅ partial |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 5 | 1 | 4.0 | 400.0% | ✅ partial |
 
 
 ---
@@ -164,7 +167,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -179,16 +182,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 1.7u (24j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 2.7u (20j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 1.2u (20j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:35.581Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:25.703Z*

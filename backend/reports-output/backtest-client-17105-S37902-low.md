@@ -5,8 +5,8 @@
 - **Client** : FOODPRINT SRL, FOODPRINT SRL, Adresse de facturation (ID: 17105)
 - **Commande réelle** : S37902
 - **Date commande** : 2025-07-04 11:57:50
-- **Date cutoff système** : 2025-07-03 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-07-04 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 28 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 2 produits réels, 0 détectés |
+| **Précision** | 0.0% | 46 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (28)
+## False Positives (46)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,39 +157,57 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1469] JF MAYONNAI TRUFFES 250ML WECK | 400 | Stock prédit: 0.0u (0j restants) → prédit 400u mais non commandé |
-| [PF1473] JF MAYONNAIS POIVRE 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PI3267] PI MAYONNAISE BIO CONS 250ML | 680 | Stock prédit: 0.0u (0j restants) → prédit 680u mais non commandé |
-| [PF1706] LV TARTINADE BIO BETTERAVE 200 | 990 | Stock prédit: 0.0u (0j restants) → prédit 990u mais non commandé |
-| [PF1768] LV TARTINADE BIO TRUFFES 135G | 500 | Stock prédit: 0.0u (0j restants) → prédit 500u mais non commandé |
-| [PF1786] TARTI ALNATUR BIO MANGUE 200ML | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
-| [PF1789] TARTI ALNATUR BIO PAPRIKA 200M | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
-| [PF3233] LV BE TARTINADE BIO TOSCANE 190G | 1050 | Stock prédit: 0.0u (0j restants) → prédit 1050u mais non commandé |
-| [PF3307] LV DE BROTAUFSTRICH BIO DATTE CHILI 180G | 300 | Stock prédit: 0.0u (0j restants) → prédit 300u mais non commandé |
-| [PF2002] TVF TARTINADE BIO MANGUE 200ML | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF2003] TVF TARTINADE BIO PAPRIKA200ML | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF2007] TVF TARTINADE BIO TOMATE 200ML | 350 | Stock prédit: 0.0u (0j restants) → prédit 350u mais non commandé |
-| [PF1703] LV MAYONNAISE BIO 470ML WECK | 140 | Stock prédit: 0.0u (0j restants) → prédit 140u mais non commandé |
-| [PF1462] LV AIOLI BIO 200ML | 370 | Stock prédit: 0.0u (0j restants) → prédit 370u mais non commandé |
-| [PF1557] LV TARTINADE BIO AUBERGINE 200 | 2000 | Stock prédit: 0.0u (0j restants) → prédit 2000u mais non commandé |
-| [PF1951] LV TARTINADE BIO BASILIC 400G | 166 | Stock prédit: 0.0u (0j restants) → prédit 166u mais non commandé |
-| [PF1707] LV TARTINADE BIO LENTILLE 200 | 330 | Stock prédit: 0.0u (0j restants) → prédit 330u mais non commandé |
-| [PF1629] LV TARTINADE BIO TOMATE 200ML | 2310 | Stock prédit: 0.0u (0j restants) → prédit 2310u mais non commandé |
-| [PF3235] LV BE TARTINADE BIO TOMATE OLIVE CAPRE 190G | 330 | Stock prédit: 0.0u (0j restants) → prédit 330u mais non commandé |
-| [PF3366] LV BE TARTINADE BIO ASPERGE 190G | 700 | Stock prédit: 0.0u (0j restants) → prédit 700u mais non commandé |
-| [PF1719] LV VIN CIBOULET PET 250 BIO | 500 | Stock prédit: 0.0u (0j restants) → prédit 500u mais non commandé |
-| [PF1967] JF SAUCE AIOLI 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1639] JF BURGER SQUEEZE 300ML | 150 | Stock prédit: 0.0u (0j restants) → prédit 150u mais non commandé |
-| [PF1524] JF VINAIGRET TRUFFES WECK 200M | 130 | Stock prédit: 0.0u (0j restants) → prédit 130u mais non commandé |
-| [PF1553] JF VINAIGRET MIEL MOU WECK 200 | 120 | Stock prédit: 0.0u (0j restants) → prédit 120u mais non commandé |
-| [PF1793] LV MAYONNAI TRUFFES 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1800] LV MAYONNAISE OEUFS 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
-| [PF1810] LV SAUCE BEARNAISE 250ML WECK | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
+| [PF1797] LV MAYONNAI TOMATE 250ML WECK | 200 | Stock prédit: 200.0u (3j restants) → prédit 200u mais non commandé |
+| [PF1804] LV SAUCE TARTARE 250ML WECK | 400 | Stock prédit: 400.0u (3j restants) → prédit 400u mais non commandé |
+| [PF3237] LV MAYONNAISE POIVRE 250ML WECK  | 200 | Stock prédit: 200.0u (3j restants) → prédit 200u mais non commandé |
+| [PF1942] LV BIO TRIPACK SAUCES 3X135ML | 256 | Stock prédit: 256.0u (3j restants) → prédit 256u mais non commandé |
+| [PF1775] TARTINAPERO BIO PAPRIKA 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1773] TARTINAPERO BIO MANGUE 200ML | 700 | Stock prédit: 700.0u (3j restants) → prédit 700u mais non commandé |
+| [PF1779] TARTINAPERO BIO HOUMOUS 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1778] TARTINAPERO BIO TOMATE 200ML | 700 | Stock prédit: 700.0u (3j restants) → prédit 700u mais non commandé |
+| [PF1780] TARTINAPERO BIO OLIVE 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1855] LV TARTINAPERO BIO TRIPACK | 2560 | Stock prédit: 2560.0u (3j restants) → prédit 2560u mais non commandé |
+| [PF2978] TARTINAPERO BIO AIL OURS 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1630] LV TARTINADE BIO ANANAS 200ML | 330 | Stock prédit: 330.0u (3j restants) → prédit 330u mais non commandé |
+| [PF1705] LV TARTINADE BIO BASILIC 200ML | 660 | Stock prédit: 660.0u (3j restants) → prédit 660u mais non commandé |
+| [PF1558] LV TARTINADE BIO CAROTTE 200ML | 1330 | Stock prédit: 1330.0u (3j restants) → prédit 1330u mais non commandé |
+| [PF1628] LV TARTINADE BIO HOUMOUS 200ML | 1330 | Stock prédit: 1330.0u (3j restants) → prédit 1330u mais non commandé |
+| [PF1683] LV TARTINADE BIO MANGUE 400G | 330 | Stock prédit: 330.0u (3j restants) → prédit 330u mais non commandé |
+| [PF1556] LV TARTINADE BIO MANGUE 200ML | 2664 | Stock prédit: 2664.0u (3j restants) → prédit 2664u mais non commandé |
+| [PF1704] LV TARTINADE BIO OLIVE 200 | 990 | Stock prédit: 990.0u (3j restants) → prédit 990u mais non commandé |
+| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 1980 | Stock prédit: 1980.0u (3j restants) → prédit 1980u mais non commandé |
+| [PF1686] LV TARTINADE BIO PAPRIKA 400G | 332 | Stock prédit: 332.0u (3j restants) → prédit 332u mais non commandé |
+| [PF3365] LV BE TARTINADE BIO BROCOLI 190G | 990 | Stock prédit: 990.0u (3j restants) → prédit 990u mais non commandé |
+| [PF1469] JF MAYONNAI TRUFFES 250ML WECK | 400 | Stock prédit: -400.0u (-3j restants) → prédit 400u mais non commandé |
+| [PF1473] JF MAYONNAIS POIVRE 250ML WECK | 200 | Stock prédit: -200.0u (-3j restants) → prédit 200u mais non commandé |
+| [PI3267] PI MAYONNAISE BIO CONS 250ML | 680 | Stock prédit: -680.0u (-3j restants) → prédit 680u mais non commandé |
+| [PF1706] LV TARTINADE BIO BETTERAVE 200 | 990 | Stock prédit: -990.0u (-3j restants) → prédit 990u mais non commandé |
+| [PF1768] LV TARTINADE BIO TRUFFES 135G | 500 | Stock prédit: -500.0u (-3j restants) → prédit 500u mais non commandé |
+| [PF1786] TARTI ALNATUR BIO MANGUE 200ML | 300 | Stock prédit: -300.0u (-3j restants) → prédit 300u mais non commandé |
+| [PF1789] TARTI ALNATUR BIO PAPRIKA 200M | 300 | Stock prédit: -300.0u (-3j restants) → prédit 300u mais non commandé |
+| [PF3233] LV BE TARTINADE BIO TOSCANE 190G | 1050 | Stock prédit: -1050.0u (-3j restants) → prédit 1050u mais non commandé |
+| [PF3307] LV DE BROTAUFSTRICH BIO DATTE CHILI 180G | 300 | Stock prédit: -300.0u (-3j restants) → prédit 300u mais non commandé |
+| [PF2002] TVF TARTINADE BIO MANGUE 200ML | 350 | Stock prédit: -350.0u (-3j restants) → prédit 350u mais non commandé |
+| [PF2003] TVF TARTINADE BIO PAPRIKA200ML | 350 | Stock prédit: -350.0u (-3j restants) → prédit 350u mais non commandé |
+| [PF2007] TVF TARTINADE BIO TOMATE 200ML | 350 | Stock prédit: -350.0u (-3j restants) → prédit 350u mais non commandé |
+| [PF1703] LV MAYONNAISE BIO 470ML WECK | 140 | Stock prédit: -280.0u (-6j restants) → prédit 140u mais non commandé |
+| [PF1462] LV AIOLI BIO 200ML | 370 | Stock prédit: -740.0u (-6j restants) → prédit 370u mais non commandé |
+| [PF1557] LV TARTINADE BIO AUBERGINE 200 | 2000 | Stock prédit: -4000.0u (-6j restants) → prédit 2000u mais non commandé |
+| [PF1951] LV TARTINADE BIO BASILIC 400G | 166 | Stock prédit: -332.0u (-6j restants) → prédit 166u mais non commandé |
+| [PF1707] LV TARTINADE BIO LENTILLE 200 | 330 | Stock prédit: -660.0u (-6j restants) → prédit 330u mais non commandé |
+| [PF1629] LV TARTINADE BIO TOMATE 200ML | 2310 | Stock prédit: -4620.0u (-6j restants) → prédit 2310u mais non commandé |
+| [PF3235] LV BE TARTINADE BIO TOMATE OLIVE CAPRE 190G | 330 | Stock prédit: -660.0u (-6j restants) → prédit 330u mais non commandé |
+| [PF3366] LV BE TARTINADE BIO ASPERGE 190G | 700 | Stock prédit: -1400.0u (-6j restants) → prédit 700u mais non commandé |
+| [PF1719] LV VIN CIBOULET PET 250 BIO | 500 | Stock prédit: -1000.0u (-6j restants) → prédit 500u mais non commandé |
+| [PF1967] JF SAUCE AIOLI 250ML WECK | 200 | Stock prédit: -3066.7u (-46j restants) → prédit 200u mais non commandé |
+| [PF1639] JF BURGER SQUEEZE 300ML | 150 | Stock prédit: -2300.0u (-46j restants) → prédit 150u mais non commandé |
+| [PF1524] JF VINAIGRET TRUFFES WECK 200M | 130 | Stock prédit: -1993.3u (-46j restants) → prédit 130u mais non commandé |
+| [PF1553] JF VINAIGRET MIEL MOU WECK 200 | 120 | Stock prédit: -1840.0u (-46j restants) → prédit 120u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -204,15 +222,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [PF1224] FILOU BOULETTES TOMATE 800 GR | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:19.577Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:09.318Z*

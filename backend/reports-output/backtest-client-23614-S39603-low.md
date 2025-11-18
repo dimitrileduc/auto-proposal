@@ -5,8 +5,8 @@
 - **Client** : Alnatura Produktions- und Handels GmbH, Invoice Address (ID: 23614)
 - **Commande réelle** : S39603
 - **Date commande** : 2025-10-08 06:27:53
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (5)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,18 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | Stock suffisant: 123.0u (28j restants > seuil 19j) |
-| [LV105] LV Tomate Basil Aufstr 180g | 300 | Stock suffisant: -100.0u (-15j restants > seuil 19j) |
-| [LV106] LV Oliven Aufstrich 180g DE | 300 | Stock suffisant: -86.4u (-17j restants > seuil 19j) |
-| [LV343] LV Toskana Aufstrich 180g | 300 | Stock suffisant: -203.5u (-56j restants > seuil 19j) |
-| [LV347] LV Trüffel Aufstrich 180g DE | 150 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:23.400Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:12.637Z*

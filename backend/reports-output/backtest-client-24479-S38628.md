@@ -5,8 +5,8 @@
 - **Client** : THE BELGIAN FACTORY (ID: 24479)
 - **Commande réelle** : S38628
 - **Date commande** : 2025-08-20 14:34:55
-- **Date cutoff système** : 2025-08-19 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-08-20 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
+| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 100.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 63.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 42.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,12 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1878] JEFKE MOUTARDE PET 2,1 L | 63 | 126 | 63.0 | 50.0% | ✅ partial |
+| [PF1878] JEFKE MOUTARDE PET 2,1 L | 84 | 126 | 42.0 | 33.3% | ✅ partial |
 
 
 ---
 
-## False Positives (1)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,13 +158,7 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 80 | Stock prédit: -205.1u (-90j restants) → prédit 80u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
@@ -187,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:00.199Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:50.250Z*

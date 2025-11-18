@@ -5,8 +5,8 @@
 - **Client** : DANTESSE GmbH (ID: 3831)
 - **Commande réelle** : S39512
 - **Date commande** : 2025-10-02 08:37:42
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 1 produits réels, 0 détectés |
-| **F1-Score** | 0.0% | Score équilibré global |
+| **Précision** | 16.7% | 6 produits prédits, 1 corrects |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (0)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,11 +133,17 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-*Aucun produit correctement prédit (rappel = 0%)*
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
+|---------|--------|------|-----------|----------|------|
+| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 250 | 0.0 | 0.0% | 🎯 exact |
+
 
 ---
 
-## False Positives (7)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,18 +163,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1807] LD SAUCE ANDALOUSE 250ML WECK | 5 | Stock prédit: 2.0u (5j restants) → prédit 5u mais non commandé |
-| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -0.1u (-8j restants) → prédit 1u mais non commandé |
-| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 50 | Stock prédit: 16.9u (13j restants) → prédit 50u mais non commandé |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 50 | Stock prédit: 13.0u (9j restants) → prédit 50u mais non commandé |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 63 | Stock prédit: 9.9u (11j restants) → prédit 63u mais non commandé |
-| [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-45j restants) → prédit 1u mais non commandé |
-| [PF1803] LD SAUCE TARTARE 250ML WECK | 20 | Stock prédit: -7.7u (-18j restants) → prédit 20u mais non commandé |
+| [PF1807] LD SAUCE ANDALOUSE 250ML WECK | 5 | Stock prédit: 1.8u (4j restants) → prédit 5u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -0.1u (-9j restants) → prédit 1u mais non commandé |
+| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 50 | Stock prédit: 16.0u (13j restants) → prédit 50u mais non commandé |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 75 | Stock prédit: -4.5u (-2j restants) → prédit 75u mais non commandé |
+| [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-46j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -183,14 +187,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | Stock suffisant: 203.2u (34j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:45.403Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:37.237Z*

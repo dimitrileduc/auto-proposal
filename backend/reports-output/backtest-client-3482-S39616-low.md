@@ -5,8 +5,8 @@
 - **Client** : VDS  FOOD (ID: 3482)
 - **Commande réelle** : S39616
 - **Date commande** : 2025-10-08 14:25:30
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 2 produits réels, 0 détectés |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,17 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [PF1846] BELGIAN BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,15 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 80 | Stock suffisant: 32.3u (8j restants > seuil 19j) |
-| [PF0077] FILOU PROVENCALE 5 L | 8 | Stock suffisant: -1.1u (-1j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:39.132Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:28.666Z*

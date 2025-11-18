@@ -5,8 +5,8 @@
 - **Client** : DEPOT VRAC ATH (ID: 60286)
 - **Commande réelle** : S38709
 - **Date commande** : 2025-08-26 07:26:18
-- **Date cutoff système** : 2025-08-25 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-08-26 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 9 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 30 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,20 +157,20 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
+| [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -7.4u (-59j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (30)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -185,43 +185,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 2 | Stock suffisant: 0.4u (4j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock suffisant: 0.8u (12j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.5u (5j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock suffisant: 0.8u (12j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 0.4u (4j restants > seuil 19j) |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock suffisant: 0.5u (5j restants > seuil 19j) |
-| [LV133] LV Tartinade Ananas Coco 190g | 2 | Stock suffisant: 0.3u (3j restants > seuil 19j) |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock suffisant: 0.5u (5j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock suffisant: 0.4u (4j restants > seuil 19j) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | Stock suffisant: 0.8u (11j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 2 | Stock suffisant: 0.7u (9j restants > seuil 19j) |
-| [LV135] LV Tartinade Basilico 190g | 2 | Stock suffisant: 0.2u (1j restants > seuil 19j) |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | Stock suffisant: -2.2u (-37j restants > seuil 19j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock suffisant: 0.3u (2j restants > seuil 19j) |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock suffisant: 0.2u (4j restants > seuil 19j) |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock suffisant: -0.6u (-20j restants > seuil 19j) |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock suffisant: -1.0u (-27j restants > seuil 19j) |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock suffisant: -1.3u (-26j restants > seuil 19j) |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: -1.3u (-26j restants > seuil 19j) |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: -1.3u (-26j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 8 | Stock suffisant: 1.3u (4j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 6 | Stock suffisant: 1.3u (4j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | Stock suffisant: -8.6u (-42j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | Stock suffisant: 1.3u (4j restants > seuil 19j) |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 6 | Stock suffisant: -1.7u (-10j restants > seuil 19j) |
-| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock suffisant: 0.3u (16j restants > seuil 19j) |
-| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock suffisant: -0.5u (-15j restants > seuil 19j) |
-| [RIT09] RITCHIE Cola - canette 330ml | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | Stock suffisant: -0.5u (-15j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:56.040Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:47.295Z*

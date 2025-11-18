@@ -5,8 +5,8 @@
 - **Client** : CARREFOUR BELGIUM SA, CD Carrefour Kontich (ID: 17251)
 - **Commande réelle** : S39718
 - **Date commande** : 2025-10-14 08:41:27
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 8 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (8)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,21 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF1952] CARRE VIN CIBOULET PET 450 | 98 | Stock suffisant: -243.4u (-13j restants > seuil 19j) |
-| [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8 | 108 | Stock suffisant: 24.0u (1j restants > seuil 19j) |
-| [PF3343] SIMPL CARRE VOL AU VENT 800 GR | 96 | Stock suffisant: 114.7u (7j restants > seuil 19j) |
-| [PF01012] CARREFOUR VOL AU VENT 400 GR | 192 | Stock suffisant: 124.8u (5j restants > seuil 19j) |
-| [PF3339] CARRE MAYONNAISE ANCIENNE 500ML | 96 | Stock suffisant: 29.3u (2j restants > seuil 19j) |
-| [PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8 | 108 | Stock suffisant: 100.8u (10j restants > seuil 19j) |
-| [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR | 192 | Stock suffisant: 222.4u (10j restants > seuil 19j) |
-| [PF3341] CARRE MAYONNAISE BIO 500ML | 110 | Stock suffisant: -10.8u (-1j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:46.122Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:35.318Z*

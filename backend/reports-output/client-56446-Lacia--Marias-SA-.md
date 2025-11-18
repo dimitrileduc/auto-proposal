@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Lacia (Marias SA)
 
-**📅 Date:** 17/11/2025 13:01
+**📅 Date:** 18/11/2025 11:45
 **🆔 Client ID:** 56446
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.9s
+**⏱️ Durée d'exécution:** 2.6s
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Produits à risque détectés: 0**
 - Urgents (rupture ≤ 0j): 0
-- Modérés (0 < rupture ≤ 19j): 0
+- Modérés (0 < rupture ≤ 30j): 0
 
 **Total produits (Phase 1): 0**
 **Quantité totale brute: 0 unités**

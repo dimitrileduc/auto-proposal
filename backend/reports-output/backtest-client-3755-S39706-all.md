@@ -5,8 +5,8 @@
 - **Client** : BVBA DRINK & FOOD (ID: 3755)
 - **Commande réelle** : S39706
 - **Date commande** : 2025-10-14 06:43:12
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -164,8 +164,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 1 | Stock prédit: -1.1u (-25j restants) → prédit 1u mais non commandé |
-| [PF3272] JF PEPPER MAYONNAISE 925ML | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 1 | Stock prédit: -1.4u (-28j restants) → prédit 1u mais non commandé |
+| [PF3272] JF PEPPER MAYONNAISE 925ML | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -189,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:38.404Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:28.639Z*

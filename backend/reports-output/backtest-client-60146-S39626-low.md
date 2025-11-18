@@ -5,8 +5,8 @@
 - **Client** : ADH QUALITY (ID: 60146)
 - **Commande réelle** : S39626
 - **Date commande** : 2025-10-08 12:21:50
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 6 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (6)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,19 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 1.7u (24j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 2.7u (20j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: 2.7u (16j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: 2.1u (13j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 1.2u (20j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:35.580Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:25.702Z*

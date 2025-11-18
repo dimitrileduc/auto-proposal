@@ -5,8 +5,8 @@
 - **Client** : La ferme du vieux bure (ID: 23826)
 - **Commande réelle** : S38925
 - **Date commande** : 2025-09-15 06:25:43
-- **Date cutoff système** : 2025-09-14 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-15 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 27.3% | 33 produits prédits, 9 corrects |
+| **Précision** | 26.5% | 34 produits prédits, 9 corrects |
 | **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 40.9% | Score équilibré global |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -151,7 +151,7 @@
 
 ---
 
-## False Positives (24)
+## False Positives (25)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -171,30 +171,31 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: 0.5u (17j restants) → prédit 1u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: 0.3u (9j restants) → prédit 1u mais non commandé |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.5u (-13j restants) → prédit 1u mais non commandé |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: -0.4u (-10j restants) → prédit 1u mais non commandé |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
-| [LV158] LV Moutarde 200 ml | 1 | Stock prédit: -0.7u (-23j restants) → prédit 1u mais non commandé |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock prédit: -0.3u (-12j restants) → prédit 1u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: 0.3u (9j restants) → prédit 1u mais non commandé |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (14j restants) → prédit 1u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.3u (9j restants) → prédit 1u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.3u (9j restants) → prédit 1u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.3u (9j restants) → prédit 1u mais non commandé |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
+| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 2 | Stock prédit: 0.4u (21j restants) → prédit 2u mais non commandé |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.5u (-14j restants) → prédit 1u mais non commandé |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: -0.5u (-14j restants) → prédit 1u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
+| [LV158] LV Moutarde 200 ml | 1 | Stock prédit: -0.4u (-16j restants) → prédit 1u mais non commandé |
+| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.8u (-36j restants) → prédit 1u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -0.7u (-21j restants) → prédit 2u mais non commandé |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: -0.7u (-31j restants) → prédit 1u mais non commandé |
-| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: -0.3u (-18j restants) → prédit 1u mais non commandé |
-| [fsv08] Banana chips bio vrac 1,6kg | 1 | Stock prédit: -0.7u (-31j restants) → prédit 1u mais non commandé |
-| [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
-| [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 1 | Stock prédit: -0.7u (-31j restants) → prédit 1u mais non commandé |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | Stock prédit: -0.7u (-51j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.0u (4j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.0u (4j restants) → prédit 1u mais non commandé |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: -0.6u (-29j restants) → prédit 1u mais non commandé |
+| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.2u (18j restants) → prédit 1u mais non commandé |
+| [fsv08] Banana chips bio vrac 1,6kg | 1 | Stock prédit: -0.8u (-36j restants) → prédit 1u mais non commandé |
+| [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
+| [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 1 | Stock prédit: -0.8u (-36j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -219,10 +220,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [CWLVRB0011] CW LV RB SALAD BOWL H107/ Ø 245mm | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [fsv18] Mendiant bio vrac 2,8kg | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [CWLVRB0011] CW LV RB SALAD BOWL H107/ Ø 245mm | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [fsv18] Mendiant bio vrac 2,8kg | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:55.779Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:46.923Z*

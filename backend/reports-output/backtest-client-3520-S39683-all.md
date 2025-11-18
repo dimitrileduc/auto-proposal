@@ -5,8 +5,8 @@
 - **Client** : ROCH EPICES (ID: 3520)
 - **Commande réelle** : S39683
 - **Date commande** : 2025-10-13 08:20:19
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -181,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:04.783Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:55.116Z*

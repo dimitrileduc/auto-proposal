@@ -5,8 +5,8 @@
 - **Client** : COLRUYT FOOD RETAIL NV NEW (ID: 33598)
 - **Commande réelle** : S39712
 - **Date commande** : 2025-10-14 13:24:27
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 4 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,13 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV209] LV Confit de Figues Bio 150g (bocal weck) | 100 | Stock prédit: 0.0u (0j restants) → prédit 100u mais non commandé |
-| [LV339] LV Tripack apéro | 184 | Stock prédit: 0.0u (0j restants) → prédit 184u mais non commandé |
+| [LV209] LV Confit de Figues Bio 150g (bocal weck) | 100 | Stock prédit: -75.0u (-6j restants) → prédit 100u mais non commandé |
+| [LV339] LV Tripack apéro | 184 | Stock prédit: -138.0u (-6j restants) → prédit 184u mais non commandé |
 
 
 ---
 
-## False Negatives (4)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,17 +178,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV136] LV Tartinade Betterave 190g | 100 | Stock suffisant: 5.0u (1j restants > seuil 19j) |
-| [LV135] LV Tartinade Basilico 190g | 100 | Stock suffisant: -14.6u (-4j restants > seuil 19j) |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 48 | Stock suffisant: -2.1u (-1j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 100 | Stock suffisant: 71.7u (10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:43.218Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:32.644Z*

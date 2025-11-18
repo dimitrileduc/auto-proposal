@@ -5,8 +5,8 @@
 - **Client** : DELISALADES (ID: 23733)
 - **Commande réelle** : S39469
 - **Date commande** : 2025-10-03 08:03:20
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,24 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 4 | Stock suffisant: -0.3u (-5j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | Stock suffisant: -2.8u (-51j restants > seuil 19j) |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock suffisant: -1.8u (-56j restants > seuil 19j) |
-| [JF021] JF PICKLES 350 ML | 6 | Stock suffisant: -2.2u (-25j restants > seuil 19j) |
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | Stock suffisant: 0.6u (21j restants > seuil 19j) |
-| [LV155] LV Vinaigrette Caesar 250 ml | 3 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [LV140] LV Moutarde à l'ancienne  200ml | 3 | Stock suffisant: 1.1u (11j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 4 | Stock suffisant: -2.0u (-10j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 8 | Stock suffisant: -1.3u (-6j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | Stock suffisant: 1.3u (5j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 3 | Stock suffisant: 0.2u (4j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:42.539Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:31.080Z*

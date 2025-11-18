@@ -1,0 +1,22 @@
+{
+  "clientId": 38699,
+  "clientName": "AMAUDIS SA",
+  "orderName": "S39656",
+  "orderDate": "2025-10-13 07:38:53",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 8,
+    "fp": 2,
+    "fn": 9,
+    "precision": 0.8,
+    "recall": 0.47058823529411764,
+    "f1Score": 0.5925925925925927,
+    "mae": 0.5,
+    "mape": 37.5
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 4
+  }
+}

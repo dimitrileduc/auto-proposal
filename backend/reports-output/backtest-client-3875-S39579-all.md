@@ -5,8 +5,8 @@
 - **Client** : E.L.D. GMBH (ID: 3875)
 - **Commande réelle** : S39579
 - **Date commande** : 2025-10-06 12:04:21
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -163,9 +163,9 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 64 | Stock prédit: 19.2u (3j restants) → prédit 64u mais non commandé |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 64 | Stock prédit: 4.5u (1j restants) → prédit 64u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 192 | Stock prédit: 97.1u (18j restants) → prédit 192u mais non commandé |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 64 | Stock prédit: 25.7u (6j restants) → prédit 64u mais non commandé |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 64 | Stock prédit: 7.3u (2j restants) → prédit 64u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 160 | Stock prédit: 104.2u (24j restants) → prédit 160u mais non commandé |
 
 
 ---
@@ -190,10 +190,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [VID0009] Consigne casier | 192 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 1152 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 192 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 1152 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:49.603Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:38.637Z*

@@ -5,8 +5,8 @@
 - **Client** : Oufticoop SC (ID: 34558)
 - **Commande réelle** : S39719
 - **Date commande** : 2025-10-14 10:33:03
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 15 produits réels, 0 détectés |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,19 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
-| [REB06] REB chips bio - paprika fumé 35g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (15)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -179,28 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock suffisant: 1.2u (13j restants > seuil 19j) |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock suffisant: -1.4u (-18j restants > seuil 19j) |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 3 | Stock suffisant: -1.2u (-12j restants > seuil 19j) |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 3 | Stock suffisant: -0.8u (-9j restants > seuil 19j) |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 3 | Stock suffisant: -0.4u (-5j restants > seuil 19j) |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 3 | Stock suffisant: -0.4u (-3j restants > seuil 19j) |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | Stock suffisant: -0.8u (-13j restants > seuil 19j) |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 3 | Stock suffisant: -1.0u (-10j restants > seuil 19j) |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 3 | Stock suffisant: -0.6u (-7j restants > seuil 19j) |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock suffisant: -0.8u (-9j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 0.5u (7j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock suffisant: -1.3u (-13j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 4 | Stock suffisant: -0.1u (-3j restants > seuil 19j) |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: -0.6u (-31j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:59.636Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:49.282Z*

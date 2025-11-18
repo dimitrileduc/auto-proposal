@@ -1,5 +1,5 @@
 import { getProductOrderHistory } from "./order-history/order-history.service";
-import { calculateDailyConsumption } from "./utils/consumption.utils";
+import { calculateDailyConsumption, calculateClientReorderWindow } from "./utils/consumption.utils";
 import { predictStockStatus } from "./utils/prediction.utils";
 import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
@@ -39,6 +39,14 @@ export async function calculateReplenishmentNeeds(
   // 2. Récupération de l'historique complet (730j) pour fenêtre adaptative
   const fullHistory = await getProductOrderHistory(clientId, 730, analysisEndDate);
 
+  // 3. Calculer la fenêtre moyenne de recommande du client
+  const clientReorderWindow = calculateClientReorderWindow(recentHistory.products);
+  if (clientReorderWindow) {
+    console.log(`\n📏 Fenêtre moyenne de recommande client: ${clientReorderWindow.toFixed(1)}j`);
+  } else {
+    console.log(`\n📏 Fenêtre client: N/A (pas assez de produits réguliers)`);
+  }
+
   console.log(
     `\n🔍 Analyse de ${recentHistory.products.length} produits pour client ${clientId}...`
   );
@@ -77,7 +85,8 @@ export async function calculateReplenishmentNeeds(
     const consumptionPerDay = calculateDailyConsumption(
       ordersToUse,
       windowDays,
-      new Date(analysisEndDate)
+      new Date(analysisEndDate),
+      clientReorderWindow ?? undefined
     );
     console.log(`     Consommation/jour: ${consumptionPerDay.toFixed(4)}`);
 
@@ -142,6 +151,8 @@ export async function calculateReplenishmentNeeds(
 
     // Ajouter TOUS les produits analysés (pour backtest)
     allProducts.push(productStatus);
+
+  
 
     // TRIGGER: Skip si stock suffisant (pas de risque de rupture)
     if (stockPrediction.daysUntilStockout > replenishmentThresholdDays) {

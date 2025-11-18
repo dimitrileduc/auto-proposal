@@ -5,8 +5,8 @@
 - **Client** : Fonk's Backwaren SA (ID: 12319)
 - **Commande réelle** : S39316
 - **Date commande** : 2025-09-22 08:25:35
-- **Date cutoff système** : 2025-09-21 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
-| **F1-Score** | 0.0% | Score équilibré global |
+| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
+| **Rappel** | 33.3% | 3 produits réels, 1 détectés |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 12.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 24.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (0)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,7 +133,13 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-*Aucun produit correctement prédit (rappel = 0%)*
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
+|---------|--------|------|-----------|----------|------|
+| [MF0043] MF Brotaufstrich Apfel Meerrettich 250g | 38 | 50 | 12.0 | 24.0% | ✅ partial |
+
 
 ---
 
@@ -157,12 +163,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0034] MF Tarti Pomme Raifort 250g  | 22 | Stock prédit: -31.1u (-89j restants) → prédit 22u mais non commandé |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 21 | Stock prédit: -24.9u (-90j restants) → prédit 21u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -182,11 +188,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MF0043] MF Brotaufstrich Apfel Meerrettich 250g | 50 | Stock suffisant: 12.3u (22j restants > seuil 19j) |
-| [VID0009] Consigne casier | 50 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 300 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 50 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 300 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:47.600Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:36.500Z*

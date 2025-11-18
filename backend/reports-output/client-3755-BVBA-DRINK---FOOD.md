@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - BVBA DRINK & FOOD
 
-**📅 Date:** 17/11/2025 12:59
+**📅 Date:** 18/11/2025 11:43
 **🆔 Client ID:** 3755
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Produits à risque détectés: 4**
 - Urgents (rupture ≤ 0j): 1
-- Modérés (0 < rupture ≤ 19j): 3
+- Modérés (0 < rupture ≤ 30j): 3
 
 **Total produits (Phase 1): 4**
 **Quantité totale brute: 85 unités**
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 80 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.4444
-- **Stock restant estimé**: 22.22
-- **Jours avant rupture**: **5j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 4.6602
+- **Stock restant estimé**: 14.76
+- **Jours avant rupture**: **3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -39,16 +39,12 @@
 | 2025-07-31 | S38272 | 80 | 8.96€ |
 | 2025-07-23 | S38195 | 80 | 8.96€ |
 | 2025-07-02 | S37810 | 80 | 8.96€ |
-| 2025-06-13 | S37375 | 80 | 8.96€ |
-| 2025-05-16 | S36853 | 80 | 8.96€ |
-| 2025-05-06 | S36534 | 80 | 8.96€ |
-| 2025-04-15 | S36186 | 80 | 8.96€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [80, 80, 80, 80, 80]
-- **Nombre commandes**: 10
+- **Nombre commandes**: 6
 - **Valeur médiane**: 80
 
 </details>
@@ -57,10 +53,10 @@
 <summary>🟡 <strong>[PF0085] FILOU CURRY KETCHUP  10 KG</strong> (ID: 8989) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0889
-- **Stock restant estimé**: 0.69
+- **Consommation/jour**: 0.0874
+- **Stock restant estimé**: 0.64
 - **Jours avant rupture**: **7j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -70,15 +66,12 @@
 | 2025-08-25 | S38700 | 3 | 19.57€ |
 | 2025-07-31 | S38272 | 1 | 19.57€ |
 | 2025-07-02 | S37810 | 2 | 19.57€ |
-| 2025-05-16 | S36853 | 3 | 19.57€ |
-| 2025-05-06 | S36534 | 3 | 19.57€ |
-| 2025-04-15 | S36186 | 1 | 19.57€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [3, 3, 1, 2, 3]
-- **Nombre commandes**: 7
+- **Confiance**: medium
+- **Quantités historiques**: [3, 3, 1, 2]
+- **Nombre commandes**: 4
 - **Valeur médiane**: 3
 
 </details>
@@ -87,10 +80,10 @@
 <summary>🔴 <strong>[PF0077] FILOU PROVENCALE 5 L</strong> (ID: 8986) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0440
-- **Stock restant estimé**: -1.11
-- **Jours avant rupture**: **-25j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0485
+- **Stock restant estimé**: -1.38
+- **Jours avant rupture**: **-28j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -99,14 +92,12 @@
 | 2025-08-25 | S38700 | 1 | 9.37€ |
 | 2025-07-31 | S38272 | 1 | 9.37€ |
 | 2025-07-02 | S37810 | 3 | 9.37€ |
-| 2025-05-16 | S36853 | 1 | 9.37€ |
-| 2025-05-06 | S36534 | 1 | 9.37€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [1, 1, 3, 1, 1]
-- **Nombre commandes**: 5
+- **Confiance**: medium
+- **Quantités historiques**: [1, 1, 3]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 1
 
 </details>
@@ -115,10 +106,10 @@
 <summary>🟡 <strong>[PF3272] JF PEPPER MAYONNAISE 925ML</strong> (ID: 15017) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0111
-- **Stock restant estimé**: 0.19
-- **Jours avant rupture**: **17j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0127
+- **Stock restant estimé**: 0.06
+- **Jours avant rupture**: **5j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -126,12 +117,17 @@
 | --- | --- | --- | --- |
 | 2025-07-31 | S38272 | 1 | 46.92€ |
 | 2025-04-15 | S36186 | 1 | 46.92€ |
+| 2025-03-28 | S35682 | 1 | 46.92€ |
+| 2024-09-24 | S32364 | 1 | 45.60€ |
+| 2024-08-21 | S31757 | 1 | 45.60€ |
+| 2024-06-12 | S30758 | 1 | 45.60€ |
+| 2024-04-08 | S29677 | 1 | 45.60€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [1, 1]
-- **Nombre commandes**: 2
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 7
 - **Valeur médiane**: 1
 
 </details>

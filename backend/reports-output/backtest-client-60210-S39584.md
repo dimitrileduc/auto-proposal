@@ -5,8 +5,8 @@
 - **Client** : BIOK BOIS DE VILLERS (ID: 60210)
 - **Commande réelle** : S39584
 - **Date commande** : 2025-10-08 07:05:30
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 54.5% | 22 produits prédits, 12 corrects |
-| **Rappel** | 85.7% | 14 produits réels, 12 détectés |
+| **Précision** | 52.0% | 25 produits prédits, 13 corrects |
+| **Rappel** | 92.9% | 14 produits réels, 13 détectés |
 | **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.67 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 54.2% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.69 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 57.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 7 | Avec erreur |
+| Partial Match (>0u) | 8 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (12)
+## True Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -147,6 +147,7 @@
 | [ORG09] ORGANICA crunchy fruit cerise 20g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
@@ -154,7 +155,7 @@
 
 ---
 
-## False Positives (10)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,21 +175,23 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 5 | Stock prédit: 0.2u (1j restants) → prédit 5u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 3 | Stock prédit: -1.1u (-9j restants) → prédit 3u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -0.5u (-7j restants) → prédit 2u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: -0.4u (-9j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 5 | Stock prédit: -1.5u (-7j restants) → prédit 5u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 3 | Stock prédit: -0.8u (-7j restants) → prédit 3u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -1.2u (-13j restants) → prédit 2u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: -0.3u (-7j restants) → prédit 1u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.4u (21j restants) → prédit 1u mais non commandé |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: -0.6u (-12j restants) → prédit 1u mais non commandé |
-| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.2u (-5j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 2 | Stock prédit: 0.9u (30j restants) → prédit 2u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.4u (21j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -208,10 +211,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [REB05] REB chips bio - sel de mer 35g | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 1.3u (25j restants > seuil 19j) |
+| [REB05] REB chips bio - sel de mer 35g | 6 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:18.283Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:08.428Z*

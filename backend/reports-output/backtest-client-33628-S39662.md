@@ -5,8 +5,8 @@
 - **Client** : LIDL BELGIE GMBH (ID: 33628)
 - **Commande réelle** : S39662
 - **Date commande** : 2025-10-13 04:38:31
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -163,8 +163,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 400 | Stock prédit: -313.6u (-3j restants) → prédit 400u mais non commandé |
-| [PF3328] DELUXE MIX SAUCES 250ML WECK | 384 | Stock prédit: -88.3u (0j restants) → prédit 384u mais non commandé |
+| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 400 | Stock prédit: -406.0u (-4j restants) → prédit 400u mais non commandé |
+| [PF3328] DELUXE MIX SAUCES 250ML WECK | 384 | Stock prédit: -173.2u (-1j restants) → prédit 384u mais non commandé |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:53.715Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:43.162Z*

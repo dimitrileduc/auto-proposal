@@ -5,8 +5,8 @@
 - **Client** : KORO HANDELS GmbH (ID: 3840)
 - **Commande réelle** : S39714
 - **Date commande** : 2025-10-14 07:59:02
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
-| **Rappel** | 25.0% | 4 produits réels, 1 détectés |
-| **F1-Score** | 22.2% | Score équilibré global |
+| **Précision** | 40.0% | 5 produits prédits, 2 corrects |
+| **Rappel** | 50.0% | 4 produits réels, 2 détectés |
+| **F1-Score** | 44.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 27.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 62.8% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 22.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 32.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,11 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G | 70 | 43 | 27.0 | 62.8% | ✅ partial |
+| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1518 | 1500 | 18.0 | 1.2% | ✅ partial |
 
 
 ---
 
-## False Positives (4)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,15 +164,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1728 | Stock prédit: 466.6u (6j restants) → prédit 1728u mais non commandé |
-| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4416 | Stock prédit: 690.6u (4j restants) → prédit 4416u mais non commandé |
-| [PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G | 166 | Stock prédit: -43.0u (-26j restants) → prédit 166u mais non commandé |
-| [PF3342] DE_AUFSTR_042_T6 KORO TARTINADE BIO PAPRIKA CHILI 380G | 3000 | Stock prédit: -6019.7u (-88j restants) → prédit 3000u mais non commandé |
+| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1728 | Stock prédit: 119.5u (1j restants) → prédit 1728u mais non commandé |
+| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4224 | Stock prédit: 854.1u (5j restants) → prédit 4224u mais non commandé |
+| [PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G | 166 | Stock prédit: -45.3u (-4j restants) → prédit 166u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -191,11 +191,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1500 | Stock suffisant: 1316.1u (21j restants > seuil 19j) |
-| [PF3363] DE_AUFSTR_041_T6 KORO TARTINADE BIO BETTERAVE 380G  | 172 | Stock suffisant: 164.4u (64j restants > seuil 19j) |
-| [PF3364] DE_OLIVE_013_T6 KORO TARTINADE BIO OLIVE 380G | 86 | Stock suffisant: 76.3u (23j restants > seuil 19j) |
+| [PF3363] DE_AUFSTR_041_T6 KORO TARTINADE BIO BETTERAVE 380G  | 172 | Stock suffisant: 156.2u (39j restants > seuil 30j) |
+| [PF3364] DE_OLIVE_013_T6 KORO TARTINADE BIO OLIVE 380G | 86 | Stock suffisant: 77.6u (37j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:12.403Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:02.463Z*

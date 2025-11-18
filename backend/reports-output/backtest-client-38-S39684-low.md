@@ -5,8 +5,8 @@
 - **Client** : Atelier Constant-Berger : Pressoir, cidrerie & distillerie (ID: 38)
 - **Commande réelle** : S39684
 - **Date commande** : 2025-10-13 06:25:30
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 2 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,15 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| BB/BT-Fraich-1l-BR/Propre | 8736 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-IND-DIN | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:27.658Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:17.067Z*

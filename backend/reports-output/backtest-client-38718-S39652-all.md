@@ -5,8 +5,8 @@
 - **Client** : CENSE DU MAYEUR (ID: 38718)
 - **Commande réelle** : S39652
 - **Date commande** : 2025-10-09 11:32:03
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 48.8% | 41 produits prédits, 20 corrects |
-| **Rappel** | 71.4% | 28 produits réels, 20 détectés |
-| **F1-Score** | 58.0% | Score équilibré global |
+| **Précision** | 53.3% | 45 produits prédits, 24 corrects |
+| **Rappel** | 85.7% | 28 produits réels, 24 détectés |
+| **F1-Score** | 65.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.60 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 41.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 9 | Égalité parfaite |
-| Partial Match (>0u) | 11 | Avec erreur |
+| **MAE** | 0.63 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 47.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 11 | Égalité parfaite |
+| Partial Match (>0u) | 13 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (20)
+## True Positives (24)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,25 +139,29 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF057] JF EGG MAYONNAISE 720ML WECK | 5 | 6 | 1.0 | 16.7% | ✅ partial |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [RIT05] RITCHIE Cola - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -182,32 +186,32 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock prédit: 1.1u (23j restants) → prédit 2u mais non commandé |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 0.8u (14j restants) → prédit 2u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.7u (11j restants) → prédit 1u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 1.0u (21j restants) → prédit 2u mais non commandé |
+| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock prédit: -0.3u (-5j restants) → prédit 1u mais non commandé |
 | [RIT08] RITCHIE Citron - canette 330ml | 2 | Stock prédit: 0.7u (11j restants) → prédit 2u mais non commandé |
 | [RIT11] RITCHIE Orange Sanguine - verre 275ml | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: 0.6u (8j restants) → prédit 2u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 3 | Stock prédit: -1.4u (-15j restants) → prédit 3u mais non commandé |
+| [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: 0.7u (11j restants) → prédit 2u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 3 | Stock prédit: -1.3u (-14j restants) → prédit 3u mais non commandé |
+| [JOY07] JOY! Organic Fig Jam 370g | 3 | Stock prédit: 1.0u (24j restants) → prédit 3u mais non commandé |
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 3 | Stock prédit: -0.5u (-7j restants) → prédit 3u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 3 | Stock prédit: -1.3u (-14j restants) → prédit 3u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: -0.3u (-7j restants) → prédit 2u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 3 | Stock prédit: -0.9u (-15j restants) → prédit 3u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 3 | Stock prédit: -2.7u (-29j restants) → prédit 3u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 3 | Stock prédit: -0.5u (-9j restants) → prédit 3u mais non commandé |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -0.6u (-24j restants) → prédit 2u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.9u (-29j restants) → prédit 1u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 2 | Stock prédit: -0.9u (-33j restants) → prédit 2u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-46j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -0.9u (-73j restants) → prédit 1u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 2 | Stock prédit: -1.1u (-59j restants) → prédit 2u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
+| [JF021] JF PICKLES 350 ML | 4 | Stock prédit: -1.3u (-19j restants) → prédit 4u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 3 | Stock prédit: -1.6u (-21j restants) → prédit 3u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 3 | Stock prédit: -0.8u (-12j restants) → prédit 3u mais non commandé |
+| [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -1.3u (-36j restants) → prédit 2u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.2u (-11j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | Stock prédit: -1.5u (-44j restants) → prédit 2u mais non commandé |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 2 | Stock prédit: -0.5u (-21j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (8)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -227,16 +231,12 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock suffisant: 1.2u (30j restants > seuil 19j) |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 1.1u (24j restants > seuil 19j) |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 6 | Stock suffisant: 3.2u (23j restants > seuil 19j) |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 1.0u (22j restants > seuil 19j) |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock suffisant: 1.0u (23j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 1.3u (37j restants > seuil 19j) |
-| [RIT01] RITCHIE Orange - verre 275ml | 2 | Stock suffisant: 1.2u (28j restants > seuil 19j) |
-| [RIT05] RITCHIE Cola - verre 275ml | 2 | Stock suffisant: 1.7u (27j restants > seuil 19j) |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [RIT01] RITCHIE Orange - verre 275ml | 2 | Stock suffisant: 1.3u (35j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:00.641Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:48.690Z*

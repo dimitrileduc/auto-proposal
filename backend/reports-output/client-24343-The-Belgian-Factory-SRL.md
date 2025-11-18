@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - The Belgian Factory SRL
 
-**📅 Date:** 17/11/2025 13:00
+**📅 Date:** 18/11/2025 11:44
 **🆔 Client ID:** 24343
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.7s
+**⏱️ Durée d'exécution:** 3.9s
 
 ---
 
@@ -11,23 +11,23 @@
 
 
 **Produits à risque détectés: 5**
-- Urgents (rupture ≤ 0j): 5
-- Modérés (0 < rupture ≤ 19j): 0
+- Urgents (rupture ≤ 0j): 3
+- Modérés (0 < rupture ≤ 30j): 2
 
 **Total produits (Phase 1): 5**
-**Quantité totale brute: 212 unités**
+**Quantité totale brute: 148 unités**
 
 ### Détails par produit
 
 
 <details>
-<summary>🔴 <strong>[LV189] LV Tartinade Houmous Type 380g</strong> (ID: 13075) - 48 unités</summary>
+<summary>🔴 <strong>[LV189] LV Tartinade Houmous Type 380g</strong> (ID: 13075) - 32 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.1163
-- **Stock restant estimé**: -9.30
-- **Jours avant rupture**: **-8j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.1636
+- **Stock restant estimé**: -12.22
+- **Jours avant rupture**: **-10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -36,14 +36,73 @@
 | 2025-08-21 | S38638 | 32 | 14.64€ |
 | 2025-08-20 | S38606 | 32 | 14.64€ |
 | 2025-06-10 | S37310 | 64 | 14.64€ |
-| 2025-04-08 | S35867 | 64 | 14.64€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [32, 32, 64, 64]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 48
+- **Quantités historiques**: [32, 32, 64]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 32
+
+</details>
+
+<details>
+<summary>🟡 <strong>[LV217] LV Tartinade Basilic 380g</strong> (ID: 13077) - 32 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 1.2231
+- **Stock restant estimé**: 17.52
+- **Jours avant rupture**: **14j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-08-21 | S38638 | 64 | 15.30€ |
+| 2025-04-08 | S35867 | 96 | 15.30€ |
+| 2025-02-19 | S34967 | 16 | 15.30€ |
+| 2025-02-14 | S34883 | 32 | 15.30€ |
+| 2025-01-16 | S34324 | 32 | 15.30€ |
+| 2025-01-13 | S34133 | 16 | 15.30€ |
+| 2024-11-19 | S33342 | 4 | 15.30€ |
+| 2024-11-12 | S33241 | 18 | 15.30€ |
+| 2024-09-12 | S32229 | 64 | 15.30€ |
+| 2024-07-05 | S31155 | 32 | 15.30€ |
+| 2024-05-31 | S30565 | 80 | 15.30€ |
+| 2024-05-14 | S30262 | 160 | 15.30€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [64, 96, 16, 32, 32]
+- **Nombre commandes**: 12
+- **Valeur médiane**: 32
+
+</details>
+
+<details>
+<summary>🟡 <strong>[JF025] JF VINAIGRETTE FH WECK 200ML</strong> (ID: 16790) - 4 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0636
+- **Stock restant estimé**: 1.58
+- **Jours avant rupture**: **24j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-08-21 | S38624 | 4 | 21.60€ |
+| 2025-06-10 | S37310 | 3 | 21.60€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [4, 3]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 4
 
 </details>
 
@@ -51,10 +110,10 @@
 <summary>🔴 <strong>[LV188] LV Tartinade Aubergine  380g</strong> (ID: 13071) - 32 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5581
-- **Stock restant estimé**: -9.86
-- **Jours avant rupture**: **-17j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.5818
+- **Stock restant estimé**: -12.22
+- **Jours avant rupture**: **-21j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -62,25 +121,24 @@
 | --- | --- | --- | --- |
 | 2025-07-14 | S37989 | 32 | 14.28€ |
 | 2025-06-10 | S37310 | 32 | 14.28€ |
-| 2025-04-08 | S35867 | 32 | 14.28€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [32, 32, 32]
-- **Nombre commandes**: 3
+- **Quantités historiques**: [32, 32]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 32
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV187] LV Tartinade Mangue Curry 380g</strong> (ID: 13073) - 40 unités</summary>
+<summary>🔴 <strong>[LV187] LV Tartinade Mangue Curry 380g</strong> (ID: 13073) - 48 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.4651
-- **Stock restant estimé**: -18.70
-- **Jours avant rupture**: **-40j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 2.0092
+- **Stock restant estimé**: -189.01
+- **Jours avant rupture**: **-94j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -88,85 +146,29 @@
 | --- | --- | --- | --- |
 | 2025-06-10 | S37310 | 32 | 15.72€ |
 | 2025-04-08 | S35867 | 48 | 15.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [32, 48]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 40
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV138] LV Tartinade Carotte gingembre  380g</strong> (ID: 13072) - 60 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8773
-- **Stock restant estimé**: -118.90
-- **Jours avant rupture**: **-135j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-08 | S35867 | 32 | 14.44€ |
-| 2025-01-13 | S34133 | 64 | 14.44€ |
-| 2024-12-11 | S33804 | 60 | 14.44€ |
-| 2024-07-05 | S31155 | 32 | 14.44€ |
-| 2024-05-31 | S30565 | 80 | 14.44€ |
-| 2024-05-14 | S30262 | 160 | 14.44€ |
-| 2024-05-07 | S30197 | 32 | 14.44€ |
-| 2024-04-02 | S29583 | 32 | 14.44€ |
-| 2024-03-15 | S29366 | 32 | 14.44€ |
-| 2024-02-28 | S29131 | 16 | 14.44€ |
-| 2023-12-15 | S28232 | 32 | 14.44€ |
+| 2025-02-19 | S34967 | 48 | 15.72€ |
+| 2025-02-14 | S34883 | 32 | 15.72€ |
+| 2025-02-14 | S34883 | 96 | 15.72€ |
+| 2025-01-13 | S34133 | 96 | 15.72€ |
+| 2024-12-11 | S33804 | 60 | 15.72€ |
+| 2024-11-19 | S33342 | 16 | 15.72€ |
+| 2024-11-15 | S33308 | 36 | 15.72€ |
+| 2024-11-12 | S33241 | 80 | 15.72€ |
+| 2024-09-12 | S32229 | 96 | 15.72€ |
+| 2024-06-12 | S30748 | 160 | 15.72€ |
+| 2024-05-31 | S30565 | 80 | 15.72€ |
+| 2024-05-14 | S30262 | 160 | 15.72€ |
+| 2024-04-02 | S29583 | 64 | 15.72€ |
+| 2024-03-15 | S29366 | 32 | 15.72€ |
+| 2024-02-28 | S29131 | 16 | 15.72€ |
+| 2023-12-15 | S28232 | 160 | 15.72€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
-- **Quantités historiques**: [32, 64, 60, 32, 80]
-- **Nombre commandes**: 11
-- **Valeur médiane**: 60
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV139] LV Tartinade Paprika Chili 380g</strong> (ID: 13074) - 32 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.0000
-- **Stock restant estimé**: -156.00
-- **Jours avant rupture**: **-156j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-08 | S35867 | 16 | 14.70€ |
-| 2025-03-24 | S35588 | 32 | 14.70€ |
-| 2025-02-19 | S34967 | 16 | 14.70€ |
-| 2025-02-14 | S34883 | 32 | 14.70€ |
-| 2025-01-13 | S34133 | 64 | 14.70€ |
-| 2024-12-11 | S33804 | 60 | 14.70€ |
-| 2024-11-19 | S33342 | 16 | 14.70€ |
-| 2024-10-18 | S32844 | 64 | 14.70€ |
-| 2024-08-29 | S31989 | 32 | 14.70€ |
-| 2024-05-14 | S30262 | 160 | 14.70€ |
-| 2024-05-07 | S30197 | 48 | 14.70€ |
-| 2024-04-02 | S29583 | 32 | 14.70€ |
-| 2024-02-28 | S29131 | 16 | 14.70€ |
-| 2024-02-28 | S29131 | 32 | 14.70€ |
-| 2023-12-15 | S28232 | 32 | 14.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [16, 32, 16, 32, 64]
-- **Nombre commandes**: 15
-- **Valeur médiane**: 32
+- **Quantités historiques**: [32, 48, 48, 32, 96]
+- **Nombre commandes**: 18
+- **Valeur médiane**: 48
 
 </details>
 
@@ -178,7 +180,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 3125.28€**
+- **Montant initial: 2256.00€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -187,12 +189,12 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [LV189] LV Tartinade Houmou... | 13075 | 48 | 0 | 48 | 14.64€ | 702.72€ |
+| [LV189] LV Tartinade Houmou... | 13075 | 32 | 0 | 32 | 14.64€ | 468.48€ |
+| [LV217] LV Tartinade Basili... | 13077 | 32 | 0 | 32 | 15.30€ | 489.60€ |
+| [JF025] JF VINAIGRETTE FH W... | 16790 | 4 | 0 | 4 | 21.60€ | 86.40€ |
 | [LV188] LV Tartinade Auberg... | 13071 | 32 | 0 | 32 | 14.28€ | 456.96€ |
-| [LV187] LV Tartinade Mangue... | 13073 | 40 | 0 | 40 | 15.72€ | 628.80€ |
-| [LV138] LV Tartinade Carott... | 13072 | 60 | 0 | 60 | 14.44€ | 866.40€ |
-| [LV139] LV Tartinade Paprik... | 13074 | 32 | 0 | 32 | 14.70€ | 470.40€ |
+| [LV187] LV Tartinade Mangue... | 13073 | 48 | 0 | 48 | 15.72€ | 754.56€ |
 
-**Total (Phase 2.5): 3125.28€**
+**Total (Phase 2.5): 2256.00€**
 
 ---

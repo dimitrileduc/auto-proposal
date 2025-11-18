@@ -5,8 +5,8 @@
 - **Client** : CARRY GERON SA (ID: 3511)
 - **Commande réelle** : S39571
 - **Date commande** : 2025-10-06 09:20:55
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.0% | 5 produits prédits, 3 corrects |
-| **Rappel** | 75.0% | 4 produits réels, 3 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 66.7% | 6 produits prédits, 4 corrects |
+| **Rappel** | 100.0% | 4 produits réels, 4 détectés |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 12.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 13.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 18.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 41.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,7 +140,8 @@
 |---------|--------|------|-----------|----------|------|
 | [PF0078] FILOU CHASSEUR 5 L | 100 | 100 | 0.0 | 0.0% | 🎯 exact |
 | [PF0075] FILOU CHASSEUR  10 L | 52 | 88 | 36.0 | 40.9% | ✅ partial |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 24 | 24 | 0.0 | 0.0% | 🎯 exact |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 18 | 24 | 6.0 | 25.0% | ✅ partial |
+| [PF0096] FILOU MOUTARDE 3 KG | 60 | 30 | 30.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -165,13 +166,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0097] FILOU MOUTARDE 5 KG | 30 | Stock prédit: -3.6u (-3j restants) → prédit 30u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 4 | Stock prédit: -4.6u (-32j restants) → prédit 4u mais non commandé |
+| [PF0097] FILOU MOUTARDE 5 KG | 30 | Stock prédit: -2.8u (-2j restants) → prédit 30u mais non commandé |
+| [PF0089] FILOU VOL AU VENT 400 GR | 6 | Stock prédit: -4.3u (-32j restants) → prédit 6u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -186,14 +187,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0096] FILOU MOUTARDE 3 KG | 30 | Stock suffisant: 18.3u (36j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:01.617Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:51.318Z*

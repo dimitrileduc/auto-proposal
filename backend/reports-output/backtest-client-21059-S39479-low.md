@@ -5,8 +5,8 @@
 - **Client** : Chez Lucienne (ID: 21059)
 - **Commande réelle** : S39479
 - **Date commande** : 2025-10-01 07:30:26
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 17 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (17)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,30 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock suffisant: -0.3u (-6j restants > seuil 19j) |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock suffisant: 0.2u (3j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.6u (17j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.3u (6j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.3u (6j restants > seuil 19j) |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: -0.3u (-17j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: -0.7u (-13j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: -1.0u (-16j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: -1.9u (-118j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock suffisant: -0.4u (-5j restants > seuil 19j) |
-| [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: -1.0u (-16j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 1 | Stock suffisant: -0.5u (-10j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | Stock suffisant: 0.3u (5j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -0.3u (-7j restants > seuil 19j) |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock suffisant: -0.0u (-1j restants > seuil 19j) |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock suffisant: 0.1u (5j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:35.963Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:26.094Z*

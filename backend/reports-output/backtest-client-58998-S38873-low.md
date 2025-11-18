@@ -5,8 +5,8 @@
 - **Client** : VITAFRAIS SAS (ID: 58998)
 - **Commande réelle** : S38873
 - **Date commande** : 2025-08-29 11:55:17
-- **Date cutoff système** : 2025-08-28 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-08-29 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,16 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 75 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 75 | Stock suffisant: 9.9u (8j restants > seuil 19j) |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 25 | Stock suffisant: 9.4u (7j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:29.979Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:19.502Z*

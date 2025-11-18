@@ -341,7 +341,7 @@ calculateMedian([12]) // 12
 ```typescript
 // Dans backend/src/config/auto-proposal.ts
 export const autoProposalConfig = {
-  analysisWindowDays: 180, // ← Changer ici (défaut: 6 mois)
+  analysisWindowDays: 120, // ← Changer ici (défaut: 4 mois)
 }
 ```
 
@@ -365,14 +365,14 @@ Le seuil de rupture = `targetCoverage` (couverture souhaitée) + `leadTime` (dé
 ```typescript
 // Dans backend/src/config/auto-proposal.ts
 export const autoProposalConfig = {
-  targetCoverage: 14, // ← Jours de couverture souhaitée (défaut: 14j)
+  targetCoverage: 25, // ← Jours de couverture souhaitée (défaut: 25j)
   leadTime: 5, // ← Délai de livraison en jours (défaut: 5j)
 }
 ```
 
 **Exemple:**
-- `targetCoverage: 14` + `leadTime: 5` = **seuil à 19 jours**
-- Si stock client prédit < 19j → déclenche recommandation de commande
+- `targetCoverage: 25` + `leadTime: 5` = **seuil à 30 jours**
+- Si stock client prédit < 30j → déclenche recommandation de commande
 
 **Ou passer dynamiquement:**
 
@@ -472,10 +472,10 @@ export const autoProposalConfig = {
 <details><summary>Configuration et paramètres</summary>
 
 **Paramètres par défaut:**
-- `analysisWindowDays: 180` (6 mois d'historique)
-- `targetCoverage: 14` (14 jours de couverture souhaitée)
+- `analysisWindowDays: 120` (4 mois d'historique)
+- `targetCoverage: 25` (25 jours de couverture souhaitée)
 - `leadTime: 5` (5 jours de délai de livraison)
-- Seuil de rupture = `targetCoverage + leadTime = 19 jours`
+- Seuil de rupture = `targetCoverage + leadTime = 30 jours`
 
 **Date de référence:**
 - `analysisEndDate` permet l'analyse rétroactive

@@ -5,8 +5,8 @@
 - **Client** : Chez Lucienne (ID: 21059)
 - **Commande réelle** : S39479
 - **Date commande** : 2025-10-01 07:30:26
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 70.8% | 24 produits prédits, 17 corrects |
-| **Rappel** | 100.0% | 17 produits réels, 17 détectés |
-| **F1-Score** | 82.9% | Score équilibré global |
+| **Précision** | 66.7% | 24 produits prédits, 16 corrects |
+| **Rappel** | 94.1% | 17 produits réels, 16 détectés |
+| **F1-Score** | 78.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -63,8 +63,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.06 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 2.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 16 | Égalité parfaite |
+| **MAPE** | 3.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 15 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (17)
+## True Positives (16)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -154,12 +154,11 @@
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (7)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -179,18 +178,19 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.5u (13j restants) → prédit 1u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.4u (-23j restants) → prédit 1u mais non commandé |
+| [RISH05] RISH kombucha BIO - rose 750ml | 1 | Stock prédit: 0.6u (21j restants) → prédit 1u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.5u (12j restants) → prédit 1u mais non commandé |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | Stock prédit: 0.7u (28j restants) → prédit 1u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (9j restants) → prédit 1u mais non commandé |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.4u (-24j restants) → prédit 1u mais non commandé |
 | [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Stock prédit: -0.9u (-83j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (0)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -205,8 +205,14 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-*Aucun faux négatif (rappel = 100%)*
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:35.961Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:26.092Z*

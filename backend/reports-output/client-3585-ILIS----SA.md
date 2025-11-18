@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - ILIS    SA
 
-**📅 Date:** 17/11/2025 13:01
+**📅 Date:** 18/11/2025 11:45
 **🆔 Client ID:** 3585
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.7s
+**⏱️ Durée d'exécution:** 3.6s
 
 ---
 
@@ -11,8 +11,8 @@
 
 
 **Produits à risque détectés: 5**
-- Urgents (rupture ≤ 0j): 3
-- Modérés (0 < rupture ≤ 19j): 2
+- Urgents (rupture ≤ 0j): 4
+- Modérés (0 < rupture ≤ 30j): 1
 
 **Total produits (Phase 1): 5**
 **Quantité totale brute: 482 unités**
@@ -21,13 +21,13 @@
 
 
 <details>
-<summary>🟡 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 240 unités</summary>
+<summary>🔴 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 240 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 18.0645
-- **Stock restant estimé**: 23.23
-- **Jours avant rupture**: **1j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 17.7778
+- **Stock restant estimé**: 8.89
+- **Jours avant rupture**: **0j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -51,10 +51,10 @@
 <summary>🔴 <strong>[PF0077] FILOU PROVENCALE 5 L</strong> (ID: 8986) - 80 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 5.7813
-- **Stock restant estimé**: -36.72
-- **Jours avant rupture**: **-6j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 5.6923
+- **Stock restant estimé**: -41.08
+- **Jours avant rupture**: **-7j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -79,10 +79,10 @@
 <summary>🟡 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1502
-- **Stock restant estimé**: 2.09
+- **Consommation/jour**: 0.1500
+- **Stock restant estimé**: 1.95
 - **Jours avant rupture**: **13j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -115,10 +115,10 @@
 <summary>🔴 <strong>[PF0085] FILOU CURRY KETCHUP  10 KG</strong> (ID: 8989) - 104 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.4688
-- **Stock restant estimé**: -74.75
-- **Jours avant rupture**: **-16j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 4.4000
+- **Stock restant estimé**: -76.40
+- **Jours avant rupture**: **-17j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -141,10 +141,10 @@
 <summary>🔴 <strong>[PF0959] FILOU TOMATO KETCHUP 10KG</strong> (ID: 17752) - 52 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.3000
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 3.7143
+- **Stock restant estimé**: -100.29
+- **Jours avant rupture**: **-26j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 

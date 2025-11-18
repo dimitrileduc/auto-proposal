@@ -5,8 +5,8 @@
 - **Client** : COLRUYT FOOD RETAIL NV NEW (ID: 33598)
 - **Commande réelle** : S39712
 - **Date commande** : 2025-10-14 13:24:27
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 11.1% | 36 produits prédits, 4 corrects |
+| **Précision** | 11.8% | 34 produits prédits, 4 corrects |
 | **Rappel** | 100.0% | 4 produits réels, 4 détectés |
-| **F1-Score** | 20.0% | Score équilibré global |
+| **F1-Score** | 21.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -146,7 +146,7 @@
 
 ---
 
-## False Positives (32)
+## False Positives (30)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -166,38 +166,36 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3302] BONI BIO MAYONNAISE 500ML | 110 | Stock prédit: 36.7u (1j restants) → prédit 110u mais non commandé |
-| [PF1654] ECONOM COLRUYT MOUTARDE 2,1 Kg | 336 | Stock prédit: 269.6u (12j restants) → prédit 336u mais non commandé |
-| [PF1503] BONI VINAI MOUTARDE 450ML | 126 | Stock prédit: 58.8u (2j restants) → prédit 126u mais non commandé |
-| [PF1502] BONI VINAI FINE HERBE 450ML | 252 | Stock prédit: -73.5u (0j restants) → prédit 252u mais non commandé |
-| [PF1501] BONI VINAI CIBOULETTE 450ML | 378 | Stock prédit: 170.1u (2j restants) → prédit 378u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 80 | Stock prédit: 64.8u (17j restants) → prédit 80u mais non commandé |
-| [LV160] LV Tartinade Aubergine 190g | 100 | Stock prédit: 70.3u (9j restants) → prédit 100u mais non commandé |
-| [LV161] LV Tartinade Mangue curry 190g | 100 | Stock prédit: 57.6u (5j restants) → prédit 100u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 100 | Stock prédit: 74.6u (11j restants) → prédit 100u mais non commandé |
-| [LV162] LV Tartinade Tomato Basilico 190g | 100 | Stock prédit: 68.4u (8j restants) → prédit 100u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 100 | Stock prédit: 49.7u (11j restants) → prédit 100u mais non commandé |
-| [LV209] LV Confit de Figues Bio 150g (bocal weck) | 100 | Stock prédit: 0.0u (0j restants) → prédit 100u mais non commandé |
-| [LV339] LV Tripack apéro | 184 | Stock prédit: 0.0u (0j restants) → prédit 184u mais non commandé |
-| [LV155] LV Vinaigrette Caesar 250 ml | 80 | Stock prédit: 34.4u (13j restants) → prédit 80u mais non commandé |
-| [LV147] LV Sauce Cocktail 200 ml | 50 | Stock prédit: 21.5u (13j restants) → prédit 50u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 100 | Stock prédit: 25.2u (8j restants) → prédit 100u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 126 | Stock prédit: 20.7u (6j restants) → prédit 126u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 100 | Stock prédit: 5.0u (1j restants) → prédit 100u mais non commandé |
-| [LV146] LV Sauce Aïoli 200 ml | 50 | Stock prédit: -2.2u (-1j restants) → prédit 50u mais non commandé |
-| [LV165] LV Vol-au-vent (avec viande de volaille) 400 g | 48 | Stock prédit: 3.6u (3j restants) → prédit 48u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 56 | Stock prédit: -0.7u (0j restants) → prédit 56u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 55 | Stock prédit: -64.2u (-21j restants) → prédit 55u mais non commandé |
-| [LV159] LV Tartinade aux Truffes  135g  | 100 | Stock prédit: 14.5u (8j restants) → prédit 100u mais non commandé |
-| [LV342] LV Organic Broccoli Spread 190 g | 100 | Stock prédit: -100.4u (-26j restants) → prédit 100u mais non commandé |
-| [PF3259] EVD MOUTARDE FORTE 350 GR | 3900 | Stock prédit: 627.3u (11j restants) → prédit 3900u mais non commandé |
-| [LV149] LV Sauce Aioli Pesto 200ml | 50 | Stock prédit: -11.8u (-16j restants) → prédit 50u mais non commandé |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 56 | Stock prédit: -47.8u (-41j restants) → prédit 56u mais non commandé |
-| [PF1626] BONI VINAI MIEL MOUTARDE 450ML | 126 | Stock prédit: -1445.9u (-92j restants) → prédit 126u mais non commandé |
-| [PF1624] BONI VINAIGRETTE MANGUE 450ML | 378 | Stock prédit: -2398.2u (-77j restants) → prédit 378u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 126 | Stock prédit: -80.9u (-48j restants) → prédit 126u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 100 | Stock prédit: -60.7u (-52j restants) → prédit 100u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 126 | Stock prédit: -23.3u (-22j restants) → prédit 126u mais non commandé |
+| [PF3259] EVD MOUTARDE FORTE 350 GR | 3900 | Stock prédit: 3900.0u (30j restants) → prédit 3900u mais non commandé |
+| [PF3302] BONI BIO MAYONNAISE 500ML | 110 | Stock prédit: 14.3u (0j restants) → prédit 110u mais non commandé |
+| [PF1654] ECONOM COLRUYT MOUTARDE 2,1 Kg | 336 | Stock prédit: 237.4u (9j restants) → prédit 336u mais non commandé |
+| [PF1503] BONI VINAI MOUTARDE 450ML | 126 | Stock prédit: 37.1u (1j restants) → prédit 126u mais non commandé |
+| [PF1502] BONI VINAI FINE HERBE 450ML | 252 | Stock prédit: -164.3u (-1j restants) → prédit 252u mais non commandé |
+| [PF1501] BONI VINAI CIBOULETTE 450ML | 378 | Stock prédit: 137.0u (2j restants) → prédit 378u mais non commandé |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 80 | Stock prédit: 61.4u (16j restants) → prédit 80u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 27 | Stock prédit: 22.0u (22j restants) → prédit 27u mais non commandé |
+| [LV160] LV Tartinade Aubergine 190g | 100 | Stock prédit: 67.2u (10j restants) → prédit 100u mais non commandé |
+| [LV161] LV Tartinade Mangue curry 190g | 100 | Stock prédit: 50.2u (5j restants) → prédit 100u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 100 | Stock prédit: 66.1u (9j restants) → prédit 100u mais non commandé |
+| [LV162] LV Tartinade Tomato Basilico 190g | 100 | Stock prédit: 64.0u (8j restants) → prédit 100u mais non commandé |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 100 | Stock prédit: 38.6u (8j restants) → prédit 100u mais non commandé |
+| [LV209] LV Confit de Figues Bio 150g (bocal weck) | 100 | Stock prédit: -75.0u (-6j restants) → prédit 100u mais non commandé |
+| [LV339] LV Tripack apéro | 184 | Stock prédit: -138.0u (-6j restants) → prédit 184u mais non commandé |
+| [LV155] LV Vinaigrette Caesar 250 ml | 80 | Stock prédit: 36.2u (15j restants) → prédit 80u mais non commandé |
+| [LV147] LV Sauce Cocktail 200 ml | 50 | Stock prédit: 22.6u (15j restants) → prédit 50u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 100 | Stock prédit: 10.0u (3j restants) → prédit 100u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 126 | Stock prédit: 30.8u (11j restants) → prédit 126u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 100 | Stock prédit: -13.3u (-4j restants) → prédit 100u mais non commandé |
+| [LV146] LV Sauce Aïoli 200 ml | 50 | Stock prédit: 1.0u (0j restants) → prédit 50u mais non commandé |
+| [LV165] LV Vol-au-vent (avec viande de volaille) 400 g | 48 | Stock prédit: 4.3u (3j restants) → prédit 48u mais non commandé |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 56 | Stock prédit: 5.0u (3j restants) → prédit 56u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 55 | Stock prédit: -83.0u (-24j restants) → prédit 55u mais non commandé |
+| [LV159] LV Tartinade aux Truffes  135g  | 100 | Stock prédit: 13.5u (7j restants) → prédit 100u mais non commandé |
+| [LV342] LV Organic Broccoli Spread 190 g | 125 | Stock prédit: -97.4u (-26j restants) → prédit 125u mais non commandé |
+| [LV149] LV Sauce Aioli Pesto 200ml | 50 | Stock prédit: -18.8u (-24j restants) → prédit 50u mais non commandé |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 56 | Stock prédit: -34.8u (-34j restants) → prédit 56u mais non commandé |
+| [PF1626] BONI VINAI MIEL MOUTARDE 450ML | 126 | Stock prédit: -191.2u (-61j restants) → prédit 126u mais non commandé |
+| [PF1624] BONI VINAIGRETTE MANGUE 450ML | 625 | Stock prédit: -208.5u (-19j restants) → prédit 625u mais non commandé |
 
 
 ---
@@ -221,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:43.219Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:32.646Z*

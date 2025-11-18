@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET BEAURAING DEMARS (ID: 38736)
 - **Commande réelle** : S39613
 - **Date commande** : 2025-10-08 07:09:40
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 45.0% | 20 produits prédits, 9 corrects |
-| **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 58.1% | Score équilibré global |
+| **Précision** | 41.2% | 17 produits prédits, 7 corrects |
+| **Rappel** | 63.6% | 11 produits réels, 7 détectés |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.89 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 35.9% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.57 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 24.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (9)
+## True Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -145,13 +145,11 @@
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LD010] LD Organic Truffle Spread 135 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | 6 | 3.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (11)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -171,22 +169,21 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.4u (-4j restants) → prédit 2u mais non commandé |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 3 | Stock prédit: -0.2u (-2j restants) → prédit 3u mais non commandé |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | Stock prédit: 0.3u (4j restants) → prédit 3u mais non commandé |
-| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.5u (17j restants) → prédit 2u mais non commandé |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | Stock prédit: 0.5u (17j restants) → prédit 2u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 3 | Stock prédit: 0.4u (13j restants) → prédit 3u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: 0.4u (13j restants) → prédit 2u mais non commandé |
-| [LD015] LD Onion Spread 180g | 2 | Stock prédit: -1.4u (-51j restants) → prédit 2u mais non commandé |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | Stock prédit: -2.1u (-63j restants) → prédit 2u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.7u (-174j restants) → prédit 1u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.5u (-5j restants) → prédit 2u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.5u (30j restants) → prédit 1u mais non commandé |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: 0.4u (21j restants) → prédit 2u mais non commandé |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | Stock prédit: 0.5u (10j restants) → prédit 2u mais non commandé |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: 0.1u (1j restants) → prédit 2u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | Stock prédit: -0.5u (-5j restants) → prédit 3u mais non commandé |
+| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.5u (16j restants) → prédit 2u mais non commandé |
+| [LD014] LD Organic Avocado Spread 180 g | 2 | Stock prédit: 0.5u (16j restants) → prédit 2u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.4u (14j restants) → prédit 2u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.2u (-5j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -206,10 +203,12 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.3u (47j restants > seuil 19j) |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.3u (47j restants > seuil 30j) |
+| [LD010] LD Organic Truffle Spread 135 g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 6 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:06.592Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:57.726Z*

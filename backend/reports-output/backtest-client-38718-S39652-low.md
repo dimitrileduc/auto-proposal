@@ -5,8 +5,8 @@
 - **Client** : CENSE DU MAYEUR (ID: 38718)
 - **Commande réelle** : S39652
 - **Date commande** : 2025-10-09 11:32:03
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
-| **Rappel** | 3.6% | 28 produits réels, 1 détectés |
-| **F1-Score** | 6.9% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,13 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -162,7 +156,7 @@
 
 ---
 
-## False Negatives (27)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,40 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock suffisant: 0.3u (4j restants > seuil 19j) |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock suffisant: 1.2u (30j restants > seuil 19j) |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 4 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock suffisant: 0.1u (2j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 3 | Stock suffisant: 0.6u (8j restants > seuil 19j) |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: 1.1u (24j restants > seuil 19j) |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock suffisant: 0.8u (14j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: -0.6u (-59j restants > seuil 19j) |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: -1.9u (-110j restants > seuil 19j) |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 6 | Stock suffisant: 3.2u (23j restants > seuil 19j) |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 1.0u (22j restants > seuil 19j) |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: 0.7u (10j restants > seuil 19j) |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock suffisant: 0.6u (8j restants > seuil 19j) |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | Stock suffisant: 1.0u (23j restants > seuil 19j) |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock suffisant: -1.1u (-38j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: 0.9u (17j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: 0.7u (10j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock suffisant: 0.8u (13j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock suffisant: 1.0u (18j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 1.3u (37j restants > seuil 19j) |
-| [RIT01] RITCHIE Orange - verre 275ml | 2 | Stock suffisant: 1.2u (28j restants > seuil 19j) |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 1 | Stock suffisant: 0.2u (4j restants > seuil 19j) |
-| [RIT05] RITCHIE Cola - verre 275ml | 2 | Stock suffisant: 1.7u (27j restants > seuil 19j) |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | Stock suffisant: -0.6u (-27j restants > seuil 19j) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: -0.1u (-7j restants > seuil 19j) |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 0.3u (9j restants > seuil 19j) |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: -0.6u (-15j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:00.640Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:48.689Z*

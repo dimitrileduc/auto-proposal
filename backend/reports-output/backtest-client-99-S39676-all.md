@@ -5,8 +5,8 @@
 - **Client** : La Fermette Godelaine de Saint-Georges (ID: 99)
 - **Commande réelle** : S39676
 - **Date commande** : 2025-10-13 07:37:52
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 27.3% | 33 produits prédits, 9 corrects |
-| **Rappel** | 69.2% | 13 produits réels, 9 détectés |
-| **F1-Score** | 39.1% | Score équilibré global |
+| **Précision** | 30.3% | 33 produits prédits, 10 corrects |
+| **Rappel** | 76.9% | 13 produits réels, 10 détectés |
+| **F1-Score** | 43.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.22 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 22.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.10 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (9)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,7 +138,9 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [MF0053] MF Maïs 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -146,12 +148,11 @@
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (24)
+## False Positives (23)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -171,35 +172,34 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.9u (15j restants) → prédit 1u mais non commandé |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
-| [KOKO01] KOKO Kombucha original 330ml | 2 | Stock prédit: -0.3u (-4j restants) → prédit 2u mais non commandé |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
-| [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
-| [LEA10] LEAMO ginger beer bio 330ml | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.4u (-17j restants) → prédit 1u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -1.0u (-29j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -0.7u (-25j restants) → prédit 1u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.0u (-2j restants) → prédit 1u mais non commandé |
-| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: -0.7u (-25j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
-| [CB005] CB Apple juice 1l | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
-| [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.3u (-19j restants) → prédit 1u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0052] MF Pois chiches  500g | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
-| [LEA04] LEAMO ginger beer bio 750ml | 1 | Stock prédit: -0.7u (-45j restants) → prédit 1u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: -0.6u (-48j restants) → prédit 1u mais non commandé |
-| [MF0060] MF Passata | 1 | Stock prédit: -0.2u (-24j restants) → prédit 1u mais non commandé |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: -0.6u (-57j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.9u (28j restants) → prédit 1u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.9u (21j restants) → prédit 1u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.9u (25j restants) → prédit 1u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: 1.8u (21j restants) → prédit 1u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.8u (11j restants) → prédit 1u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.8u (13j restants) → prédit 1u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: 1.8u (21j restants) → prédit 1u mais non commandé |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
+| [KOKO01] KOKO Kombucha original 330ml | 2 | Stock prédit: -0.7u (-8j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.5u (18j restants) → prédit 1u mais non commandé |
+| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
+| [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: -1.1u (-21j restants) → prédit 1u mais non commandé |
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: -0.8u (-18j restants) → prédit 1u mais non commandé |
+| [LEA10] LEAMO ginger beer bio 330ml | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.8u (-28j restants) → prédit 1u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.9u (-30j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -1.6u (-37j restants) → prédit 1u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
+| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: -0.8u (-28j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
+| [CB005] CB Apple juice 1l | 1 | Stock prédit: 0.1u (9j restants) → prédit 1u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: -3.8u (-76j restants) → prédit 1u mais non commandé |
+| [LEA04] LEAMO ginger beer bio 750ml | 1 | Stock prédit: -0.7u (-46j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (4)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -219,12 +219,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 1.0u (40j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.9u (20j restants > seuil 19j) |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock suffisant: 0.9u (37j restants > seuil 19j) |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock suffisant: 0.9u (37j restants > seuil 19j) |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 0.9u (40j restants > seuil 30j) |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock suffisant: 0.9u (35j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:32.035Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:20.464Z*

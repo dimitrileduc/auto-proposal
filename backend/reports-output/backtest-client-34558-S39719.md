@@ -5,8 +5,8 @@
 - **Client** : Oufticoop SC (ID: 34558)
 - **Commande réelle** : S39719
 - **Date commande** : 2025-10-14 10:33:03
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 71.4% | 21 produits prédits, 15 corrects |
+| **Précision** | 65.2% | 23 produits prédits, 15 corrects |
 | **Rappel** | 100.0% | 15 produits réels, 15 détectés |
-| **F1-Score** | 83.3% | Score équilibré global |
+| **F1-Score** | 78.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -157,7 +157,7 @@
 
 ---
 
-## False Positives (6)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,12 +177,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | Stock prédit: 0.4u (3j restants) → prédit 4u mais non commandé |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | Stock prédit: -0.3u (-7j restants) → prédit 2u mais non commandé |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: -1.8u (-42j restants) → prédit 1u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: -1.5u (-60j restants) → prédit 1u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.3u (-24j restants) → prédit 1u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -2.3u (-69j restants) → prédit 1u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 5 | Stock prédit: 2.0u (16j restants) → prédit 5u mais non commandé |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | Stock prédit: 0.7u (10j restants) → prédit 2u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | Stock prédit: 0.7u (7j restants) → prédit 4u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | Stock prédit: -0.7u (-13j restants) → prédit 2u mais non commandé |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: -1.6u (-40j restants) → prédit 1u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: -2.5u (-71j restants) → prédit 1u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.9u (-48j restants) → prédit 1u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -2.5u (-71j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -206,4 +208,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:59.633Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:49.280Z*

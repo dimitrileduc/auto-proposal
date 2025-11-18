@@ -5,8 +5,8 @@
 - **Client** : BIOCOOP SA COOP, BIOCOOP SA COOP, Adresse de facturation (ID: 5490)
 - **Commande réelle** : S39754
 - **Date commande** : 2025-10-16 06:33:00
-- **Date cutoff système** : 2025-10-15 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-16 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 10 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,23 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF1690] LD BBQ BIO 300G | 25 | Stock suffisant: -32.8u (-14j restants > seuil 19j) |
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 50 | Stock suffisant: -46.7u (-5j restants > seuil 19j) |
-| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | Stock suffisant: -84.2u (-8j restants > seuil 19j) |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 434 | Stock suffisant: -318.3u (-5j restants > seuil 19j) |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 434 | Stock suffisant: -405.1u (-5j restants > seuil 19j) |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 434 | Stock suffisant: -491.1u (-6j restants > seuil 19j) |
-| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 62 | Stock suffisant: -95.1u (-7j restants > seuil 19j) |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 62 | Stock suffisant: -82.7u (-6j restants > seuil 19j) |
-| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 93 | Stock suffisant: -104.0u (-13j restants > seuil 19j) |
-| [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 124 | Stock suffisant: -433.3u (-10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:44.818Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:34.047Z*

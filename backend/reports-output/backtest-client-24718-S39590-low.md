@@ -5,8 +5,8 @@
 - **Client** : Brasserie Artisanale De Namur (Houppe) (ID: 24718)
 - **Commande réelle** : S39590
 - **Date commande** : 2025-10-07 06:10:13
-- **Date cutoff système** : 2025-10-06 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 7 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (7)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,20 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| undefined | 0 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| Palette-IND NON STANDARD  | 0 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/BT-APO-33cl-BR/Propre | 23104 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| OI/Intercalaire plastique consigné | 64 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| OI/Palette IND-DIN | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/CA-BBPack-33cl/VIDE | 880 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-IND-DIN | 11 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:09.260Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:57.657Z*

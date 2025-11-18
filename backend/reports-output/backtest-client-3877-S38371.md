@@ -5,8 +5,8 @@
 - **Client** : ZELECTED FOODS (ID: 3877)
 - **Commande réelle** : S38371
 - **Date commande** : 2025-08-06 11:57:24
-- **Date cutoff système** : 2025-08-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-08-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
+| **Précision** | 14.3% | 7 produits prédits, 1 corrects |
 | **Rappel** | 50.0% | 2 produits réels, 1 détectés |
-| **F1-Score** | 28.6% | Score équilibré global |
+| **F1-Score** | 22.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (4)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,10 +163,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF2995] ZF PIZZA DRESSING 250ML | 640 | Stock prédit: 80.0u (3j restants) → prédit 640u mais non commandé |
-| [PF1919] ZF MAYO BEARNAISE 180GR | 1050 | Stock prédit: -741.2u (-17j restants) → prédit 1050u mais non commandé |
-| [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR | 1050 | Stock prédit: -452.8u (-12j restants) → prédit 1050u mais non commandé |
-| [PF3242] ZF SAUCE AIOLI 180GR | 868 | Stock prédit: -151.4u (-5j restants) → prédit 868u mais non commandé |
+| [PF2995] ZF PIZZA DRESSING 250ML | 640 | Stock prédit: 65.3u (2j restants) → prédit 640u mais non commandé |
+| [PF1919] ZF MAYO BEARNAISE 180GR | 1176 | Stock prédit: -1106.5u (-22j restants) → prédit 1176u mais non commandé |
+| [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR | 1302 | Stock prédit: -1601.1u (-27j restants) → prédit 1302u mais non commandé |
+| [PF3242] ZF SAUCE AIOLI 180GR | 868 | Stock prédit: -606.5u (-15j restants) → prédit 868u mais non commandé |
+| [PF2994] ZF CAESAR DRESSING 250ML | 320 | Stock prédit: 45.3u (7j restants) → prédit 320u mais non commandé |
+| [PF2993] ZF RANCH DRESSING 250ML | 137 | Stock prédit: 132.4u (25j restants) → prédit 137u mais non commandé |
 
 
 ---
@@ -191,9 +193,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [CONS070] PALETTE EURO | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [CONS070] PALETTE EURO | 6 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:25.259Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:15.602Z*

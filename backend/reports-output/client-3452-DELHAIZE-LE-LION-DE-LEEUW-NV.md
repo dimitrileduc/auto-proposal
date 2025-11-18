@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - DELHAIZE LE LION/DE LEEUW NV
 
-**📅 Date:** 17/11/2025 12:58
+**📅 Date:** 18/11/2025 11:42
 **🆔 Client ID:** 3452
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.1s
+**⏱️ Durée d'exécution:** 3.2s
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Produits à risque détectés: 4**
 - Urgents (rupture ≤ 0j): 3
-- Modérés (0 < rupture ≤ 19j): 1
+- Modérés (0 < rupture ≤ 30j): 1
 
 **Total produits (Phase 1): 4**
 **Quantité totale brute: 848 unités**
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF3300] DLL MAYONNAISE OEUFS 300ML</strong> (ID: 17368) - 130 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 23.2402
-- **Stock restant estimé**: 111.12
-- **Jours avant rupture**: **4j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 23.1356
+- **Stock restant estimé**: 89.24
+- **Jours avant rupture**: **3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -46,22 +46,12 @@
 | 2025-06-27 | S37720 | 130 | 9.72€ |
 | 2025-06-23 | S37603 | 260 | 9.72€ |
 | 2025-06-16 | S37457 | 130 | 9.72€ |
-| 2025-06-10 | S37340 | 130 | 9.72€ |
-| 2025-06-06 | S37294 | 130 | 9.72€ |
-| 2025-06-03 | S37173 | 130 | 9.72€ |
-| 2025-05-22 | S36990 | 130 | 9.72€ |
-| 2025-05-19 | S36884 | 130 | 9.72€ |
-| 2025-05-15 | S36813 | 130 | 9.72€ |
-| 2025-05-12 | S36690 | 130 | 9.72€ |
-| 2025-05-05 | S36493 | 130 | 9.72€ |
-| 2025-04-18 | S36284 | 130 | 9.72€ |
-| 2025-04-15 | S36184 | 260 | 9.72€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [390, 130, 130, 130, 130]
-- **Nombre commandes**: 23
+- **Nombre commandes**: 13
 - **Valeur médiane**: 130
 
 </details>
@@ -70,10 +60,10 @@
 <summary>🔴 <strong>[PF3301] DLL MAYONNAISE CITRON 300ML</strong> (ID: 17369) - 130 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 14.5251
-- **Stock restant estimé**: -349.33
-- **Jours avant rupture**: **-24j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 15.1163
+- **Stock restant estimé**: -383.95
+- **Jours avant rupture**: **-25j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -86,15 +76,12 @@
 | 2025-08-11 | S38446 | 130 | 9.72€ |
 | 2025-08-05 | S38325 | 130 | 9.72€ |
 | 2025-07-18 | S38141 | 260 | 9.72€ |
-| 2025-05-09 | S36656 | 520 | 9.72€ |
-| 2025-04-18 | S36284 | 260 | 9.72€ |
-| 2025-04-15 | S36184 | 520 | 9.72€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [130, 130, 390, 130, 130]
-- **Nombre commandes**: 10
+- **Nombre commandes**: 7
 - **Valeur médiane**: 130
 
 </details>
@@ -103,10 +90,10 @@
 <summary>🔴 <strong>[PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML</strong> (ID: 17479) - 98 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 16.9721
-- **Stock restant estimé**: -462.08
-- **Jours avant rupture**: **-27j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 12.4576
+- **Stock restant estimé**: -325.56
+- **Jours avant rupture**: **-26j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -123,22 +110,12 @@
 | 2025-06-30 | S37755 | 294 | 14.34€ |
 | 2025-06-27 | S37720 | 98 | 14.34€ |
 | 2025-06-16 | S37457 | 98 | 14.34€ |
-| 2025-06-10 | S37340 | 196 | 14.34€ |
-| 2025-06-06 | S37294 | 98 | 14.34€ |
-| 2025-06-03 | S37173 | 98 | 14.34€ |
-| 2025-05-22 | S36990 | 98 | 14.34€ |
-| 2025-05-19 | S36884 | 98 | 14.34€ |
-| 2025-05-15 | S36813 | 196 | 14.34€ |
-| 2025-05-12 | S36690 | 98 | 14.34€ |
-| 2025-05-09 | S36656 | 196 | 14.34€ |
-| 2025-04-18 | S36284 | 98 | 14.34€ |
-| 2025-04-15 | S36184 | 392 | 14.34€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [98, 98, 98, 98, 196]
-- **Nombre commandes**: 21
+- **Nombre commandes**: 11
 - **Valeur médiane**: 98
 
 </details>
@@ -147,10 +124,10 @@
 <summary>🔴 <strong>[PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML</strong> (ID: 17480) - 490 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 29.5642
-- **Stock restant estimé**: -779.62
-- **Jours avant rupture**: **-26j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 30.9009
+- **Stock restant estimé**: -854.63
+- **Jours avant rupture**: **-27j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -168,22 +145,12 @@
 | 2025-06-30 | S37755 | 294 | 14.94€ |
 | 2025-06-27 | S37720 | 196 | 14.94€ |
 | 2025-06-23 | S37603 | 98 | 14.94€ |
-| 2025-06-10 | S37340 | 196 | 14.94€ |
-| 2025-06-03 | S37173 | 392 | 14.94€ |
-| 2025-05-22 | S36990 | 196 | 14.94€ |
-| 2025-05-19 | S36884 | 196 | 14.94€ |
-| 2025-05-15 | S36813 | 98 | 14.94€ |
-| 2025-05-12 | S36690 | 196 | 14.94€ |
-| 2025-05-09 | S36656 | 98 | 14.94€ |
-| 2025-05-05 | S36493 | 98 | 14.94€ |
-| 2025-04-18 | S36284 | 98 | 14.94€ |
-| 2025-04-15 | S36184 | 294 | 14.94€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [196, 686, 490, 98, 490]
-- **Nombre commandes**: 22
+- **Nombre commandes**: 12
 - **Valeur médiane**: 490
 
 </details>

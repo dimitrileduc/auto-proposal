@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET BEAURAING DEMARS (ID: 38736)
 - **Commande réelle** : S39613
 - **Date commande** : 2025-10-08 07:09:40
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,24 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.3u (47j restants > seuil 19j) |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock suffisant: -0.4u (-29j restants > seuil 19j) |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock suffisant: -0.3u (-14j restants > seuil 19j) |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock suffisant: -0.8u (-29j restants > seuil 19j) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: -0.8u (-44j restants > seuil 19j) |
-| [LD013] LD Tuscan Organic Spread 180 g | 1 | Stock suffisant: 0.5u (9j restants > seuil 19j) |
-| [LD010] LD Organic Truffle Spread 135 g | 1 | Stock suffisant: -0.6u (-27j restants > seuil 19j) |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 6 | Stock suffisant: -1.1u (-27j restants > seuil 19j) |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 5 | Stock suffisant: -0.3u (-3j restants > seuil 19j) |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 3 | Stock suffisant: -1.2u (-21j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:06.591Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:57.725Z*

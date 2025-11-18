@@ -5,8 +5,8 @@
 - **Client** : MARMA (ID: 60485)
 - **Commande réelle** : S39106
 - **Date commande** : 2025-09-09 12:33:37
-- **Date cutoff système** : 2025-09-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 14.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 77.8% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 18.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 32 | 18 | 14.0 | 77.8% | ✅ partial |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 36 | 18 | 18.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -163,10 +163,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 42 | Stock prédit: -145.4u (-34j restants) → prédit 42u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 63 | Stock prédit: -85.7u (-29j restants) → prédit 63u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 63 | Stock prédit: -66.2u (-22j restants) → prédit 63u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 42 | Stock prédit: -38.9u (-44j restants) → prédit 42u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 32 | Stock prédit: 15.8u (27j restants) → prédit 32u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 53 | Stock prédit: -6.7u (-6j restants) → prédit 53u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 63 | Stock prédit: 4.5u (3j restants) → prédit 63u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 42 | Stock prédit: -38.8u (-44j restants) → prédit 42u mais non commandé |
 
 
 ---
@@ -190,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:38.979Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:28.701Z*

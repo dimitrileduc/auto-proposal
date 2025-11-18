@@ -5,8 +5,8 @@
 - **Client** : FOODPRINT SRL, FOODPRINT SRL, Adresse de facturation (ID: 17105)
 - **Commande réelle** : S37902
 - **Date commande** : 2025-07-04 11:57:50
-- **Date cutoff système** : 2025-07-03 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-07-04 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -157,7 +157,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1790] TARTI ALNATUR BIO TOMATE 200ML | 300 | Stock prédit: -75.0u (-1j restants) → prédit 300u mais non commandé |
+| [PF1790] TARTI ALNATUR BIO TOMATE 200ML | 300 | Stock prédit: -100.0u (-1j restants) → prédit 300u mais non commandé |
 
 
 ---
@@ -182,10 +182,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [PF1224] FILOU BOULETTES TOMATE 800 GR | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [PF0088] FILOU VOL AU VENT 800 GR | 8 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [PF1224] FILOU BOULETTES TOMATE 800 GR | 8 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:19.576Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:09.316Z*

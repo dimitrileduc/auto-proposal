@@ -5,8 +5,8 @@
 - **Client** : LES 9 GRAINS D'OR (ID: 60453)
 - **Commande réelle** : S39427
 - **Date commande** : 2025-10-08 07:07:34
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 13 produits réels, 0 détectés |
+| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,18 +157,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0058] MF Confi Groseilles Bessen | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0059] MF Confi Fraise- Ardbei | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [MF0061] MF Compote | 1 | Stock prédit: -1.4u (-32j restants) → prédit 1u mais non commandé |
+| [MF0060] MF Passata | 1 | Stock prédit: -1.4u (-32j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: -3.9u (-89j restants) → prédit 1u mais non commandé |
+| [MF0058] MF Confi Groseilles Bessen | 1 | Stock prédit: -3.9u (-89j restants) → prédit 1u mais non commandé |
+| [MF0059] MF Confi Fraise- Ardbei | 1 | Stock prédit: -3.9u (-89j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (13)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -183,26 +181,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [MF0024] MF KETCHUP 250g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock suffisant: -0.1u (-5j restants > seuil 19j) |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | Stock suffisant: -0.5u (-9j restants > seuil 19j) |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock suffisant: -0.2u (-14j restants > seuil 19j) |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock suffisant: -0.3u (-6j restants > seuil 19j) |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock suffisant: 1.0u (57j restants > seuil 19j) |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
-| [fsv08] Banana chips bio vrac 1,6kg | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: 0.4u (7j restants > seuil 19j) |
-| [VID0009] Consigne casier | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 18 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:57.000Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:47.549Z*

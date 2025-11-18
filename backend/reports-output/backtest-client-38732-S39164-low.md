@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET AUBEL SA AGBA (ID: 38732)
 - **Commande réelle** : S39164
 - **Date commande** : 2025-09-12 06:37:01
-- **Date cutoff système** : 2025-09-11 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-12 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 20 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,12 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [DIS0003] Display TVF bois | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [DIS0003] Display TVF bois | 1 | Stock prédit: -2.3u (-83j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (20)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,33 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock suffisant: 0.2u (4j restants > seuil 19j) |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock suffisant: -0.9u (-26j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock suffisant: 0.5u (19j restants > seuil 19j) |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock suffisant: 0.3u (9j restants > seuil 19j) |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock suffisant: 0.5u (18j restants > seuil 19j) |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: 0.2u (3j restants > seuil 19j) |
-| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock suffisant: 0.3u (9j restants > seuil 19j) |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock suffisant: 1.9u (17j restants > seuil 19j) |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock suffisant: 0.2u (4j restants > seuil 19j) |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock suffisant: 0.5u (19j restants > seuil 19j) |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock suffisant: -0.1u (-6j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | Stock suffisant: 0.5u (7j restants > seuil 19j) |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock suffisant: -1.0u (-57j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 1.1u (22j restants > seuil 19j) |
-| [LD010] LD Organic Truffle Spread 135 g | 1 | Stock suffisant: 0.5u (19j restants > seuil 19j) |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | Stock suffisant: -0.4u (-3j restants > seuil 19j) |
-| [LD011] LD Organic Kids Spread 180 g | 2 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock suffisant: -1.9u (-21j restants > seuil 19j) |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock suffisant: 0.1u (0j restants > seuil 19j) |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 1 | Stock suffisant: -1.5u (-18j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:55.257Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:45.328Z*

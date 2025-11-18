@@ -24,8 +24,8 @@ const backtestAggregateRoute = new Hono();
  *   // Paramètres communs
  *   "daysBeforePrediction": 1,        // Optionnel, défaut: 1
  *   "config": {                       // Optionnel
- *     "analysisWindowDays": 180,
- *     "targetCoverage": 14,
+ *     "analysisWindowDays": 120,
+ *     "targetCoverage": 25,
  *     "leadTime": 5
  *   }
  * }
@@ -58,15 +58,15 @@ const backtestAggregateRoute = new Hono();
  *
  * Cas d'usage A/B Testing:
  * ```bash
- * # Test Config A (180j) - Auto-découverte 50 clients
+ * # Test Config A (120j) - Auto-découverte 50 clients
+ * curl -X POST http://localhost:3000/backtest/aggregate \
+ *   -H "Content-Type: application/json" \
+ *   -d '{"config": {"analysisWindowDays": 120}}'
+ *
+ * # Test Config B (180j) - Auto-découverte 50 clients
  * curl -X POST http://localhost:3000/backtest/aggregate \
  *   -H "Content-Type: application/json" \
  *   -d '{"config": {"analysisWindowDays": 180}}'
- *
- * # Test Config B (365j) - Auto-découverte 50 clients
- * curl -X POST http://localhost:3000/backtest/aggregate \
- *   -H "Content-Type: application/json" \
- *   -d '{"config": {"analysisWindowDays": 365}}'
  *
  * # Comparer les 2 JSON résultants pour voir quelle config performe mieux
  * ```

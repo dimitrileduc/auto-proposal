@@ -193,9 +193,9 @@ const reportData: GlobalReportData = {
     totalProducts: 150,
   },
   config: {
-    replenishmentThreshold: 19,
-    targetCoverageDays: 14,
-    analysisWindowDays: 180,
+    replenishmentThreshold: 30,
+    targetCoverageDays: 25,
+    analysisWindowDays: 120,
     moqMinimum: 300,
   },
 };
@@ -268,8 +268,8 @@ const clientData: ClientReportData = {
     moqGap: 100.00,
   },
   config: {
-    replenishmentThreshold: 19,
-    targetCoverageDays: 14,
+    replenishmentThreshold: 30,
+    targetCoverageDays: 25,
     moqMinimum: 300,
   },
 };

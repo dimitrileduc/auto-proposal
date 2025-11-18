@@ -5,8 +5,8 @@
 - **Client** : MASETTI (ID: 38995)
 - **Commande réelle** : S39608
 - **Date commande** : 2025-10-08 06:19:58
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 80.8% | 26 produits prédits, 21 corrects |
-| **Rappel** | 87.5% | 24 produits réels, 21 détectés |
-| **F1-Score** | 84.0% | Score équilibré global |
+| **Précision** | 82.1% | 28 produits prédits, 23 corrects |
+| **Rappel** | 95.8% | 24 produits réels, 23 détectés |
+| **F1-Score** | 88.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 3.05 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 66.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 8 | Égalité parfaite |
-| Partial Match (>0u) | 13 | Avec erreur |
+| **MAE** | 2.61 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 51.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
+| Partial Match (>0u) | 16 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (21)
+## True Positives (23)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,20 +142,22 @@
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 30 | 15 | 15.0 | 100.0% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 15 | 10 | 5.0 | 50.0% | ✅ partial |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 10 | 5 | 5.0 | 100.0% | ✅ partial |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 8 | 5 | 3.0 | 60.0% | ✅ partial |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 10 | 20 | 10.0 | 50.0% | ✅ partial |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 4 | 2 | 2.0 | 100.0% | ✅ partial |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 4 | 5 | 1.0 | 20.0% | ✅ partial |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 10 | 10 | 0.0 | 0.0% | 🎯 exact |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 4 | 1 | 3.0 | 300.0% | ✅ partial |
-| [JF035] JF BURGER SQUEEZE 300ML | 5 | 1 | 4.0 | 400.0% | ✅ partial |
-| [JF037] JF BBQ SQUEEZE 300ML | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
+| [JF035] JF BURGER SQUEEZE 300ML | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [JF037] JF BBQ SQUEEZE 300ML | 5 | 3 | 2.0 | 66.7% | ✅ partial |
 | [JF029] JF VOL AU VENT BOCAL 400G | 4 | 10 | 6.0 | 60.0% | ✅ partial |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 3 | 4 | 1.0 | 25.0% | ✅ partial |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [JF032] JF SAUCE LAPIN 380GX6 | 5 | 10 | 5.0 | 50.0% | ✅ partial |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 5 | 10 | 5.0 | 50.0% | ✅ partial |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | 10 | 3.0 | 30.0% | ✅ partial |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -183,16 +185,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 25 | Stock prédit: -2.5u (-3j restants) → prédit 25u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 5 | Stock prédit: -0.2u (-1j restants) → prédit 5u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 25 | Stock prédit: 0.3u (0j restants) → prédit 25u mais non commandé |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 4 | Stock prédit: -2.4u (-49j restants) → prédit 4u mais non commandé |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 5 | Stock prédit: -5.6u (-77j restants) → prédit 5u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 25 | Stock prédit: 4.3u (7j restants) → prédit 25u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 5 | Stock prédit: -0.5u (-2j restants) → prédit 5u mais non commandé |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 4 | Stock prédit: 1.7u (17j restants) → prédit 4u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 25 | Stock prédit: 6.0u (26j restants) → prédit 25u mais non commandé |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 3 | Stock prédit: -3.0u (-55j restants) → prédit 3u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -212,11 +214,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 25 | Stock suffisant: 13.0u (28j restants > seuil 19j) |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: 1.4u (29j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 2.0u (40j restants > seuil 19j) |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock suffisant: 2.2u (40j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:08.205Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:58.345Z*

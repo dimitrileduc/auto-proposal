@@ -1,33 +1,33 @@
 # 📊 Rapport Auto-Proposal - THE BELGIAN FACTORY
 
-**📅 Date:** 17/11/2025 12:59
+**📅 Date:** 18/11/2025 11:43
 **🆔 Client ID:** 24479
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.1s
+**⏱️ Durée d'exécution:** 2.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 2**
-- Urgents (rupture ≤ 0j): 2
-- Modérés (0 < rupture ≤ 19j): 0
+**Produits à risque détectés: 1**
+- Urgents (rupture ≤ 0j): 1
+- Modérés (0 < rupture ≤ 30j): 0
 
-**Total produits (Phase 1): 2**
-**Quantité totale brute: 143 unités**
+**Total produits (Phase 1): 1**
+**Quantité totale brute: 84 unités**
 
 ### Détails par produit
 
 
 <details>
-<summary>🔴 <strong>[PF1878] JEFKE MOUTARDE PET 2,1 L</strong> (ID: 9311) - 63 unités</summary>
+<summary>🔴 <strong>[PF1878] JEFKE MOUTARDE PET 2,1 L</strong> (ID: 9311) - 84 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8571
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.7807
+- **Stock restant estimé**: -47.04
+- **Jours avant rupture**: **-26j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -35,42 +35,22 @@
 | --- | --- | --- | --- |
 | 2025-06-30 | S37725 | 42 | 16.02€ |
 | 2025-03-24 | S35592 | 84 | 15.30€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [42, 84]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 63
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 80 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 2.2626
-- **Stock restant estimé**: -205.08
-- **Jours avant rupture**: **-90j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-14 | S36158 | 80 | 8.96€ |
-| 2025-04-07 | S35868 | 5 | 8.96€ |
-| 2025-03-31 | S35726 | 80 | 8.96€ |
-| 2025-03-12 | S35362 | 80 | 8.96€ |
-| 2025-03-07 | S35246 | 80 | 8.96€ |
-| 2025-02-20 | S34984 | 80 | 8.96€ |
+| 2024-12-02 | S33616 | 252 | 15.30€ |
+| 2024-10-24 | S32940 | 84 | 15.30€ |
+| 2024-07-05 | S31145 | 84 | 15.30€ |
+| 2024-06-12 | S30751 | 126 | 15.30€ |
+| 2024-05-07 | S30193 | 42 | 15.30€ |
+| 2024-05-07 | S30191 | 84 | 15.30€ |
+| 2024-03-13 | S29312 | 126 | 15.30€ |
+| 2023-11-24 | S27773 | 126 | 15.30€ |
+| 2023-10-05 | S04696 | 168 | 17.16€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
-- **Quantités historiques**: [80, 5, 80, 80, 80]
-- **Nombre commandes**: 6
-- **Valeur médiane**: 80
+- **Quantités historiques**: [42, 84, 252, 84, 84]
+- **Nombre commandes**: 11
+- **Valeur médiane**: 84
 
 </details>
 
@@ -82,7 +62,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1726.06€**
+- **Montant initial: 1345.68€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -91,9 +71,8 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [PF1878] JEFKE MOUTARDE PET... | 9311 | 63 | 0 | 63 | 16.02€ | 1009.26€ |
-| [PF0078] FILOU CHASSEUR 5 L | 8987 | 80 | 0 | 80 | 8.96€ | 716.80€ |
+| [PF1878] JEFKE MOUTARDE PET... | 9311 | 84 | 0 | 84 | 16.02€ | 1345.68€ |
 
-**Total (Phase 2.5): 1726.06€**
+**Total (Phase 2.5): 1345.68€**
 
 ---

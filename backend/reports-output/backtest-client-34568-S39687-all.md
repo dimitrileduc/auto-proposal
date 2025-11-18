@@ -5,8 +5,8 @@
 - **Client** : Vervicoop (ID: 34568)
 - **Commande réelle** : S39687
 - **Date commande** : 2025-10-13 07:33:10
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 14 produits prédits, 7 corrects |
+| **Précision** | 46.7% | 15 produits prédits, 7 corrects |
 | **Rappel** | 43.8% | 16 produits réels, 7 détectés |
-| **F1-Score** | 46.7% | Score équilibré global |
+| **F1-Score** | 45.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.43 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 21.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.14 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 7.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,18 +138,18 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [MF0029] MF Tarti Datte chili 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [CB005] CB Apple juice 1l | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (7)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,13 +169,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
-| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 4 | Stock prédit: -3.6u (-61j restants) → prédit 4u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.4u (-36j restants) → prédit 1u mais non commandé |
-| [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 5 | Stock prédit: -1.6u (-36j restants) → prédit 5u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock prédit: 0.4u (27j restants) → prédit 1u mais non commandé |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.7u (23j restants) → prédit 2u mais non commandé |
+| [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | Stock prédit: -0.4u (-28j restants) → prédit 2u mais non commandé |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.4u (-28j restants) → prédit 2u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
+| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 3 | Stock prédit: -6.3u (-73j restants) → prédit 3u mais non commandé |
 
 
 ---
@@ -200,17 +201,17 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MF0029] MF Tarti Datte chili 250g | 1 | Stock suffisant: 0.5u (46j restants > seuil 19j) |
-| [LV149] LV Sauce Aioli Pesto 200ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0009] Consigne casier | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV149] LV Sauce Aioli Pesto 200ml | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 6 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:31.404Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:25.130Z*

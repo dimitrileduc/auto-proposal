@@ -5,8 +5,8 @@
 - **Client** : DLL AD GENVAL (ID: 56292)
 - **Commande réelle** : S37350
 - **Date commande** : 2025-06-11 07:09:09
-- **Date cutoff système** : 2025-06-10 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-06-11 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 22.2% | 36 produits prédits, 8 corrects |
-| **Rappel** | 72.7% | 11 produits réels, 8 détectés |
-| **F1-Score** | 34.0% | Score équilibré global |
+| **Précision** | 25.0% | 36 produits prédits, 9 corrects |
+| **Rappel** | 81.8% | 11 produits réels, 9 détectés |
+| **F1-Score** | 38.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,18 +139,19 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (28)
+## False Positives (27)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,39 +171,38 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock prédit: -0.7u (-7j restants) → prédit 1u mais non commandé |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.8u (-8j restants) → prédit 2u mais non commandé |
-| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.4u (11j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-3j restants) → prédit 1u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
-| [LEA05] LEAMO organic lemon lemonade 330 ml | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: -0.9u (-10j restants) → prédit 2u mais non commandé |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: -0.4u (-5j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: -0.9u (-9j restants) → prédit 2u mais non commandé |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -1.2u (-11j restants) → prédit 2u mais non commandé |
+| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: -0.5u (-7j restants) → prédit 1u mais non commandé |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: -0.5u (-7j restants) → prédit 1u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: -0.6u (-8j restants) → prédit 2u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
+| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: -0.5u (-7j restants) → prédit 1u mais non commandé |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.6u (9j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.7u (10j restants) → prédit 1u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: 0.6u (9j restants) → prédit 1u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: 0.6u (9j restants) → prédit 1u mais non commandé |
+| [LEA05] LEAMO organic lemon lemonade 330 ml | 1 | Stock prédit: 0.3u (17j restants) → prédit 1u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.4u (19j restants) → prédit 1u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.4u (-32j restants) → prédit 1u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA06] LEAMO maté 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -222,11 +222,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.5u (20j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.6u (28j restants > seuil 19j) |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock suffisant: 0.6u (28j restants > seuil 19j) |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.7u (40j restants > seuil 30j) |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock suffisant: 0.7u (40j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:01.633Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:53.306Z*

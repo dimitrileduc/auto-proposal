@@ -5,8 +5,8 @@
 - **Client** : DLL AD GENVAL (ID: 56292)
 - **Commande réelle** : S37350
 - **Date commande** : 2025-06-11 07:09:09
-- **Date cutoff système** : 2025-06-10 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-06-11 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 9 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,20 +157,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA06] LEAMO maté 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: -0.5u (-7j restants) → prédit 1u mais non commandé |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: -0.5u (-7j restants) → prédit 1u mais non commandé |
+| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: -0.5u (-7j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -185,24 +179,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 2 | Stock suffisant: -0.2u (-3j restants > seuil 19j) |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.5u (20j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.6u (28j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock suffisant: 0.6u (28j restants > seuil 19j) |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock suffisant: 0.4u (16j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock suffisant: 0.2u (4j restants > seuil 19j) |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.2u (5j restants > seuil 19j) |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock suffisant: 0.4u (16j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: -0.3u (-7j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:01.632Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:53.304Z*

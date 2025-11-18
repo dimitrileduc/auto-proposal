@@ -5,8 +5,8 @@
 - **Client** : LES 9 GRAINS D'OR (ID: 60453)
 - **Commande réelle** : S39427
 - **Date commande** : 2025-10-08 07:07:34
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 35.0% | 20 produits prédits, 7 corrects |
+| **Précision** | 36.8% | 19 produits prédits, 7 corrects |
 | **Rappel** | 53.8% | 13 produits réels, 7 détectés |
-| **F1-Score** | 42.4% | Score équilibré global |
+| **F1-Score** | 43.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.57 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 35.7% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 42.9% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 4 | Avec erreur |
 
@@ -140,16 +140,16 @@
 |---------|--------|------|-----------|----------|------|
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0055] MF Noix de cajou - Curry 133g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (13)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,16 +172,15 @@
 | [JOY02] JOY! Organic Strawberry Jam 370g | 3 | Stock prédit: 1.1u (5j restants) → prédit 3u mais non commandé |
 | [JOY03] JOY! Organic Apricot Jam 370g | 3 | Stock prédit: 1.1u (5j restants) → prédit 3u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | Stock prédit: 0.4u (3j restants) → prédit 2u mais non commandé |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 2 | Stock prédit: 0.4u (11j restants) → prédit 2u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
-| [CB010] CB Jus de Pomme cubis 3l | 4 | Stock prédit: -0.7u (-9j restants) → prédit 4u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.6u (-32j restants) → prédit 1u mais non commandé |
+| [CB010] CB Jus de Pomme cubis 3l | 4 | Stock prédit: -1.0u (-13j restants) → prédit 4u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.6u (-33j restants) → prédit 1u mais non commandé |
 | [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -0.1u (-13j restants) → prédit 1u mais non commandé |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 2 | Stock prédit: 0.4u (17j restants) → prédit 2u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: -0.6u (-57j restants) → prédit 1u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: -0.2u (-19j restants) → prédit 1u mais non commandé |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: -0.7u (-60j restants) → prédit 1u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -206,14 +205,14 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MF0024] MF KETCHUP 250g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock suffisant: 1.0u (57j restants > seuil 19j) |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [fsv08] Banana chips bio vrac 1,6kg | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0009] Consigne casier | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 18 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [MF0024] MF KETCHUP 250g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock suffisant: 1.0u (57j restants > seuil 30j) |
+| [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [fsv08] Banana chips bio vrac 1,6kg | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 18 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:56.998Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:47.547Z*

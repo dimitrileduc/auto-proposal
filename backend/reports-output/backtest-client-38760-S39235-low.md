@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET REMOUCHAMPS FONVAL (ID: 38760)
 - **Commande réelle** : S39235
 - **Date commande** : 2025-09-17 11:37:02
-- **Date cutoff système** : 2025-09-16 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-17 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,22 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: -0.7u (-43j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.3u (11j restants > seuil 19j) |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock suffisant: 0.2u (6j restants > seuil 19j) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 4 | Stock suffisant: -1.8u (-22j restants > seuil 19j) |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock suffisant: 0.4u (16j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.8u (16j restants > seuil 19j) |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 2 | Stock suffisant: 0.8u (16j restants > seuil 19j) |
-| [JF021] JF PICKLES 350 ML | 1 | Stock suffisant: 0.5u (27j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: -0.2u (-4j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:53.231Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:44.304Z*

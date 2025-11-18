@@ -5,8 +5,8 @@
 - **Client** : LA FERME DU BUEAU (ID: 60411)
 - **Commande réelle** : S39677
 - **Date commande** : 2025-10-14 06:47:17
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 25.0% | 12 produits prédits, 3 corrects |
-| **Rappel** | 20.0% | 15 produits réels, 3 détectés |
-| **F1-Score** | 22.2% | Score équilibré global |
+| **Précision** | 30.0% | 10 produits prédits, 3 corrects |
+| **Rappel** | 100.0% | 3 produits réels, 3 détectés |
+| **F1-Score** | 46.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,20 +165,18 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
+| [MF0061] MF Compote | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (12)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -193,25 +191,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [RIT05] RITCHIE Cola - verre 275ml | 2 | Stock suffisant: 0.8u (15j restants > seuil 19j) |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | Stock suffisant: -0.1u (-3j restants > seuil 19j) |
-| [RIT01] RITCHIE Orange - verre 275ml | 1 | Stock suffisant: 0.3u (10j restants > seuil 19j) |
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock suffisant: 0.3u (10j restants > seuil 19j) |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock suffisant: -0.4u (-19j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock suffisant: 0.6u (12j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | Stock suffisant: -1.0u (-33j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.5u (22j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.4u (17j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.5u (22j restants > seuil 19j) |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock suffisant: -0.5u (-54j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:06.251Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:55.121Z*

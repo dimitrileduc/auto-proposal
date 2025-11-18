@@ -5,8 +5,8 @@
 - **Client** : DOMAINE DE RONCHINNE (ID: 60291)
 - **Commande réelle** : S39452
 - **Date commande** : 2025-10-01 07:17:25
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,24 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [RIT01] RITCHIE Orange - verre 275ml | 2 | Stock suffisant: 0.4u (3j restants > seuil 19j) |
-| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | Stock suffisant: -0.7u (-11j restants > seuil 19j) |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | Stock suffisant: 1.1u (6j restants > seuil 19j) |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock suffisant: 0.3u (4j restants > seuil 19j) |
-| [RIT05] RITCHIE Cola - verre 275ml | 2 | Stock suffisant: 0.7u (2j restants > seuil 19j) |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 2 | Stock suffisant: 1.0u (5j restants > seuil 19j) |
-| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock suffisant: 0.1u (2j restants > seuil 19j) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 1 | Stock suffisant: 2.3u (36j restants > seuil 19j) |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock suffisant: 3.6u (32j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:03.919Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:51.375Z*

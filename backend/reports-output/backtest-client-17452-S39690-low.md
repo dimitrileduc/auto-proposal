@@ -5,8 +5,8 @@
 - **Client** : HYGIENA SA (ID: 17452)
 - **Commande réelle** : S39690
 - **Date commande** : 2025-10-13 08:23:06
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 13 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (13)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,26 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV161] LV Tartinade Mangue curry 190g | 775 | Stock suffisant: -56.4u (-3j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 775 | Stock suffisant: 167.8u (11j restants > seuil 19j) |
-| [LV188] LV Tartinade Aubergine  380g | 112 | Stock suffisant: -12.9u (-4j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 620 | Stock suffisant: -167.0u (-12j restants > seuil 19j) |
-| [LV139] LV Tartinade Paprika Chili 380g | 128 | Stock suffisant: 68.6u (25j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 279 | Stock suffisant: -3.1u (0j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 1085 | Stock suffisant: 13.9u (0j restants > seuil 19j) |
-| [LV336] LV BIO Tartinade Tomato Basilico 380g | 32 | Stock suffisant: 178.3u (39j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 186 | Stock suffisant: 405.8u (43j restants > seuil 19j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 124 | Stock suffisant: -46.5u (-15j restants > seuil 19j) |
-| [LV345] LV Spread KIDS 200ml Organic | 62 | Stock suffisant: -43.8u (-19j restants > seuil 19j) |
-| [LV342] LV Organic Broccoli Spread 190 g | 310 | Stock suffisant: -5.4u (0j restants > seuil 19j) |
-| [LV357] LV Tartinade BIO Asperge 190g | 248 | Stock suffisant: 85.4u (46j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:44.638Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:33.864Z*

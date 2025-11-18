@@ -5,8 +5,8 @@
 - **Client** : C.F. GRELL NACHF. NATURKOST (ID: 3863)
 - **Commande réelle** : S39705
 - **Date commande** : 2025-10-13 14:04:36
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 3 produits prédits, 3 corrects |
-| **Rappel** | 50.0% | 6 produits réels, 3 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 100.0% | 4 produits prédits, 4 corrects |
+| **Rappel** | 66.7% | 6 produits réels, 4 détectés |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAE** | 8.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,6 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | 16 | 16.0 | 100.0% | ✅ partial |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 48 | 16.0 | 33.3% | ✅ partial |
 | [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
 | [MF0062] ​MF Tarti Betterave rouge | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
 
@@ -164,7 +165,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -184,11 +185,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 48 | Stock suffisant: 42.6u (23j restants > seuil 19j) |
-| [VID0009] Consigne casier | 96 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 576 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 96 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 576 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:33.016Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:23.842Z*

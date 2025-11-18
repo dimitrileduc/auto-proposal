@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - MAISON DESPRIET SA
 
-**📅 Date:** 17/11/2025 12:58
+**📅 Date:** 18/11/2025 11:42
 **🆔 Client ID:** 3590
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.8s
+**⏱️ Durée d'exécution:** 2.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 9**
+**Produits à risque détectés: 8**
 - Urgents (rupture ≤ 0j): 3
-- Modérés (0 < rupture ≤ 19j): 6
+- Modérés (0 < rupture ≤ 30j): 5
 
-**Total produits (Phase 1): 9**
-**Quantité totale brute: 310 unités**
+**Total produits (Phase 1): 8**
+**Quantité totale brute: 303 unités**
 
 ### Détails par produit
 
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 160 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 21.8182
-- **Stock restant estimé**: 130.91
-- **Jours avant rupture**: **6j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 24.1379
+- **Stock restant estimé**: 95.17
+- **Jours avant rupture**: **3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -45,17 +45,12 @@
 | 2025-06-30 | S37717 | 320 | 8.78€ |
 | 2025-06-19 | S37524 | 400 | 8.78€ |
 | 2025-06-11 | S37396 | 160 | 8.78€ |
-| 2025-06-06 | S37269 | 320 | 8.78€ |
-| 2025-05-26 | S37051 | 160 | 8.78€ |
-| 2025-05-12 | S36684 | 80 | 8.78€ |
-| 2025-04-28 | S36396 | 80 | 8.78€ |
-| 2025-04-22 | S36323 | 160 | 8.78€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [240, 160, 160, 160, 160]
-- **Nombre commandes**: 17
+- **Nombre commandes**: 12
 - **Valeur médiane**: 160
 
 </details>
@@ -64,10 +59,10 @@
 <summary>🟡 <strong>[PF0075] FILOU CHASSEUR  10 L</strong> (ID: 8985) - 104 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 8.4465
-- **Stock restant estimé**: 89.77
-- **Jours avant rupture**: **10j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 8.4167
+- **Stock restant estimé**: 81.50
+- **Jours avant rupture**: **9j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -80,16 +75,12 @@
 | 2025-07-29 | S38247 | 52 | 16.66€ |
 | 2025-06-30 | S37717 | 110 | 16.66€ |
 | 2025-06-19 | S37524 | 275 | 16.66€ |
-| 2025-06-06 | S37269 | 220 | 16.66€ |
-| 2025-05-26 | S37051 | 110 | 16.66€ |
-| 2025-05-12 | S36684 | 52 | 16.66€ |
-| 2025-04-28 | S36396 | 52 | 16.66€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [132, 132, 104, 104, 52]
-- **Nombre commandes**: 11
+- **Nombre commandes**: 7
 - **Valeur médiane**: 104
 
 </details>
@@ -98,10 +89,10 @@
 <summary>🟡 <strong>[PF1140] FILOU SAUCE CHASSEUR 850G</strong> (ID: 9065) - 4 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3396
-- **Stock restant estimé**: 2.30
-- **Jours avant rupture**: **6j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.3519
+- **Stock restant estimé**: 1.89
+- **Jours avant rupture**: **5j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -113,17 +104,47 @@
 | 2025-07-22 | S38177 | 10 | 25.92€ |
 | 2025-06-30 | S37717 | 4 | 25.92€ |
 | 2025-06-19 | S37524 | 4 | 25.92€ |
-| 2025-06-06 | S37269 | 4 | 25.92€ |
-| 2025-05-26 | S37051 | 2 | 25.92€ |
-| 2025-05-12 | S36684 | 4 | 25.92€ |
-| 2025-04-28 | S36396 | 6 | 25.92€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [4, 12, 4, 10, 4]
-- **Nombre commandes**: 10
+- **Nombre commandes**: 6
 - **Valeur médiane**: 4
+
+</details>
+
+<details>
+<summary>🟡 <strong>[PF3271] JF WASABI MAYONNAISE 925ML</strong> (ID: 15002) - 1 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0203
+- **Stock restant estimé**: 0.59
+- **Jours avant rupture**: **29j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-15 | S39207 | 1 | 46.92€ |
+| 2025-04-22 | S36323 | 1 | 46.92€ |
+| 2024-12-19 | S33961 | 1 | 99999.99€ |
+| 2024-10-10 | S32686 | 1 | 45.60€ |
+| 2024-09-30 | S32449 | 1 | 45.60€ |
+| 2024-08-14 | S31682 | 1 | 45.60€ |
+| 2024-08-07 | S31579 | 1 | 45.60€ |
+| 2024-05-23 | S30397 | 1 | 45.60€ |
+| 2024-05-06 | S30130 | 1 | 45.60€ |
+| 2024-04-29 | S30014 | 1 | 45.60€ |
+| 2024-04-10 | S29718 | 1 | 45.60€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 11
+- **Valeur médiane**: 1
 
 </details>
 
@@ -131,10 +152,10 @@
 <summary>🟡 <strong>[PF0524] FILOU SAUCE TOMATE 815 GR</strong> (ID: 9038) - 7 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1217
-- **Stock restant estimé**: 1.69
+- **Consommation/jour**: 0.1207
+- **Stock restant estimé**: 1.59
 - **Jours avant rupture**: **13j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -153,13 +174,13 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3266] JF SAUCE BEARNAISE 3L</strong> (ID: 14903) - 30 unités</summary>
+<summary>🔴 <strong>[PF3266] JF SAUCE BEARNAISE 3L</strong> (ID: 14903) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.1447
-- **Stock restant estimé**: -6.33
-- **Jours avant rupture**: **-5j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.9259
+- **Stock restant estimé**: -2.22
+- **Jours avant rupture**: **-2j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -169,28 +190,24 @@
 | 2025-07-29 | S38247 | 20 | 9.17€ |
 | 2025-06-30 | S37717 | 30 | 9.17€ |
 | 2025-06-19 | S37524 | 30 | 9.17€ |
-| 2025-06-06 | S37269 | 30 | 9.17€ |
-| 2025-05-26 | S37051 | 20 | 9.17€ |
-| 2025-05-12 | S36684 | 20 | 9.17€ |
-| 2025-04-28 | S36396 | 12 | 9.17€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [20, 20, 30, 30, 30]
-- **Nombre commandes**: 8
-- **Valeur médiane**: 30
+- **Confiance**: medium
+- **Quantités historiques**: [20, 20, 30, 30]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 25
 
 </details>
 
 <details>
-<summary>🟡 <strong>[PF3273] JF MITRAILLETTE SAUCE 925ML</strong> (ID: 15037) - 1 unités</summary>
+<summary>🔴 <strong>[PF3273] JF MITRAILLETTE SAUCE 925ML</strong> (ID: 15037) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0121
-- **Stock restant estimé**: 0.10
-- **Jours avant rupture**: **8j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0221
+- **Stock restant estimé**: -0.66
+- **Jours avant rupture**: **-29j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -198,83 +215,13 @@
 | --- | --- | --- | --- |
 | 2025-07-22 | S38177 | 1 | 39.60€ |
 | 2025-04-22 | S36323 | 1 | 39.60€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [1, 1]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🟡 <strong>[PF3290] JF MAYO BARAKI 925ML</strong> (ID: 17018) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0121
-- **Stock restant estimé**: 0.10
-- **Jours avant rupture**: **8j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-22 | S38177 | 1 | 46.92€ |
-| 2025-04-22 | S36323 | 1 | 46.92€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [1, 1]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 1
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 2 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0252
-- **Stock restant estimé**: -1.65
-- **Jours avant rupture**: **-65j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-12 | S36684 | 2 | 37.80€ |
-| 2025-04-28 | S36396 | 2 | 37.80€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [2, 2]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 2
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3274] JF BURGER SAUCE 925ML</strong> (ID: 15038) - 1 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0129
-- **Stock restant estimé**: -1.13
-- **Jours avant rupture**: **-87j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-04-22 | S36323 | 1 | 39.60€ |
-| 2024-12-19 | S33961 | 1 | 99999.99€ |
+| 2025-03-31 | S35711 | 1 | 39.60€ |
 | 2024-10-10 | S32686 | 1 | 38.40€ |
 | 2024-09-30 | S32449 | 1 | 38.40€ |
+| 2024-09-16 | S32264 | 1 | 38.40€ |
+| 2024-08-14 | S31682 | 1 | 38.40€ |
+| 2024-08-07 | S31579 | 1 | 38.40€ |
+| 2024-05-23 | S30397 | 1 | 38.40€ |
 | 2024-05-06 | S30130 | 1 | 38.40€ |
 | 2024-04-29 | S30014 | 1 | 38.40€ |
 | 2024-04-10 | S29718 | 1 | 38.40€ |
@@ -283,7 +230,40 @@
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [1, 1, 1, 1, 1]
-- **Nombre commandes**: 7
+- **Nombre commandes**: 12
+- **Valeur médiane**: 1
+
+</details>
+
+<details>
+<summary>🔴 <strong>[PF3290] JF MAYO BARAKI 925ML</strong> (ID: 17018) - 1 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0184
+- **Stock restant estimé**: -0.38
+- **Jours avant rupture**: **-20j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-07-22 | S38177 | 1 | 46.92€ |
+| 2025-04-22 | S36323 | 1 | 46.92€ |
+| 2025-03-31 | S35711 | 1 | 46.92€ |
+| 2024-10-10 | S32686 | 1 | 45.60€ |
+| 2024-09-30 | S32449 | 1 | 45.60€ |
+| 2024-06-06 | S30667 | 1 | 45.60€ |
+| 2024-05-31 | S30561 | 1 | 45.60€ |
+| 2024-05-06 | S30130 | 1 | 45.60€ |
+| 2024-04-29 | S30014 | 1 | 45.60€ |
+| 2024-04-10 | S29718 | 1 | 45.60€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 1, 1]
+- **Nombre commandes**: 10
 - **Valeur médiane**: 1
 
 </details>
@@ -296,7 +276,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 3899.38€**
+- **Montant initial: 3785.25€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -308,13 +288,12 @@
 | [PF0078] FILOU CHASSEUR 5 L | 8987 | 160 | 0 | 160 | 8.78€ | 1404.80€ |
 | [PF0075] FILOU CHASSEUR  10 L | 8985 | 104 | 0 | 104 | 16.66€ | 1732.64€ |
 | [PF1140] FILOU SAUCE CHASSE... | 9065 | 4 | 0 | 4 | 25.92€ | 103.68€ |
+| [PF3271] JF WASABI MAYONNAI... | 15002 | 1 | 0 | 1 | 46.92€ | 46.92€ |
 | [PF0524] FILOU SAUCE TOMATE... | 9038 | 7 | 0 | 7 | 25.92€ | 181.44€ |
-| [PF3266] JF SAUCE BEARNAISE 3L | 14903 | 30 | 0 | 30 | 9.17€ | 275.10€ |
+| [PF3266] JF SAUCE BEARNAISE 3L | 14903 | 25 | 0 | 25 | 9.17€ | 229.25€ |
 | [PF3273] JF MITRAILLETTE SA... | 15037 | 1 | 0 | 1 | 39.60€ | 39.60€ |
 | [PF3290] JF MAYO BARAKI 925ML | 17018 | 1 | 0 | 1 | 46.92€ | 46.92€ |
-| [PF0088] FILOU VOL AU VENT ... | 8991 | 2 | 0 | 2 | 37.80€ | 75.60€ |
-| [PF3274] JF BURGER SAUCE 925ML | 15038 | 1 | 0 | 1 | 39.60€ | 39.60€ |
 
-**Total (Phase 2.5): 3899.38€**
+**Total (Phase 2.5): 3785.25€**
 
 ---

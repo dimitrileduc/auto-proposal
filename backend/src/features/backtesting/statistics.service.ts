@@ -243,8 +243,8 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 ### Configuration
 
 - **Jours d'avance** : ${data.config.daysBeforePrediction ?? 1}j
-- **Fenêtre d'analyse** : ${data.config.analysisWindowDays ?? 180}j
-- **Couverture cible** : ${data.config.targetCoverage ?? 14}j
+- **Fenêtre d'analyse** : ${data.config.analysisWindowDays ?? 120}j
+- **Couverture cible** : ${data.config.targetCoverage ?? 25}j
 - **Lead time** : ${data.config.leadTime ?? 5}j
 
 ---

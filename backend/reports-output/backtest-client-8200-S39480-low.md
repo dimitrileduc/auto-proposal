@@ -5,8 +5,8 @@
 - **Client** : BONNI, ACHAT (ID: 8200)
 - **Commande réelle** : S39480
 - **Date commande** : 2025-10-01 05:53:38
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 8 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 2 produits réels, 0 détectés |
+| **Précision** | 0.0% | 6 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (8)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,18 +158,16 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
-| [FIL23] FIL MAYONNAISE 300ML SQUEEZE  | 12 | Stock prédit: 0.0u (0j restants) → prédit 12u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock prédit: -4.4u (-32j restants) → prédit 3u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: -10.0u (-55j restants) → prédit 4u mais non commandé |
+| [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 10 | Stock prédit: -25.0u (-55j restants) → prédit 10u mais non commandé |
+| [FIL23] FIL MAYONNAISE 300ML SQUEEZE  | 12 | Stock prédit: -30.0u (-55j restants) → prédit 12u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -4.4u (-97j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -184,15 +182,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 32 | Stock suffisant: -18.6u (-20j restants > seuil 19j) |
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 8 | Stock suffisant: 4.6u (16j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:03.709Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:52.766Z*

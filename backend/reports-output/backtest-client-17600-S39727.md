@@ -5,8 +5,8 @@
 - **Client** : SDP Rungis (ID: 17600)
 - **Commande réelle** : S39727
 - **Date commande** : 2025-10-14 13:50:03
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 143.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 58.4% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 126.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.1% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -141,7 +141,7 @@
 | [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 198 | 400 | 202.0 | 50.5% | ✅ partial |
 | [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | 434 | 0.0 | 0.0% | 🎯 exact |
 | [LV363] LV BIO Tartin'apero Avocat 180g  | 434 | 434 | 0.0 | 0.0% | 🎯 exact |
-| [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 600 | 200 | 400.0 | 200.0% | ✅ partial |
+| [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 500 | 200 | 300.0 | 150.0% | ✅ partial |
 | [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | 200 | 0.0 | 0.0% | 🎯 exact |
 | [LV356] LV SET 3 X 135G trisauces  SDP | 512 | 256 | 256.0 | 100.0% | ✅ partial |
 
@@ -168,24 +168,24 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml | 200 | Stock prédit: 145.8u (10j restants) → prédit 200u mais non commandé |
-| [LV236] LV "CLASSIQUE" WECK Sauce TARTARE 250ml | 200 | Stock prédit: 163.4u (17j restants) → prédit 200u mais non commandé |
-| [LV303] LV BIO  Tartin'apero Mangue curry SDP 200 ml  | 434 | Stock prédit: 348.4u (16j restants) → prédit 434u mais non commandé |
-| [LV302] LV BIO Tartin'apero Carotte Gingembre SDP 200 ml  | 350 | Stock prédit: 112.2u (12j restants) → prédit 350u mais non commandé |
-| [LV314] LV "CLASSIQUE" WECK Sauce AIOLI PESTO 250ml | 200 | Stock prédit: 51.0u (13j restants) → prédit 200u mais non commandé |
-| [LV334] LA VACHE TRAD Sauce au poivre bocal 250ml WECK SDP | 300 | Stock prédit: -86.8u (-11j restants) → prédit 300u mais non commandé |
-| [LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml  | 350 | Stock prédit: -42.4u (-3j restants) → prédit 350u mais non commandé |
-| [LV307] LV BIO Tartin'apero Houmous type SDP 200 ml  | 350 | Stock prédit: 79.3u (8j restants) → prédit 350u mais non commandé |
-| [LV tritart 135] LV BIO SET 3 X 135G TARTIN'APERO SDP | 320 | Stock prédit: -80.5u (-9j restants) → prédit 320u mais non commandé |
-| [LV337] LV BIO Tartin'apero TOMATE AIL DES OURS SDP 200ml | 350 | Stock prédit: -24.4u (-2j restants) → prédit 350u mais non commandé |
+| [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml | 200 | Stock prédit: 132.8u (9j restants) → prédit 200u mais non commandé |
+| [LV234] LV "CLASSIQUE" WECK Mayonnaise aus œufs 250ml | 400 | Stock prédit: 332.0u (24j restants) → prédit 400u mais non commandé |
+| [LV313] LV "CLASSIQUE" WECK Sauce COCKTAIL 250ml | 200 | Stock prédit: 163.6u (22j restants) → prédit 200u mais non commandé |
+| [LV236] LV "CLASSIQUE" WECK Sauce TARTARE 250ml | 400 | Stock prédit: 151.5u (15j restants) → prédit 400u mais non commandé |
+| [LV303] LV BIO  Tartin'apero Mangue curry SDP 200 ml  | 434 | Stock prédit: 335.2u (16j restants) → prédit 434u mais non commandé |
+| [LV358] LV SDP SAUCE BEARNAISE 125G (copie) | 350 | Stock prédit: 169.1u (25j restants) → prédit 350u mais non commandé |
+| [LV302] LV BIO Tartin'apero Carotte Gingembre SDP 200 ml  | 392 | Stock prédit: -192.8u (-9j restants) → prédit 392u mais non commandé |
+| [LV314] LV "CLASSIQUE" WECK Sauce AIOLI PESTO 250ml | 200 | Stock prédit: -83.6u (-11j restants) → prédit 200u mais non commandé |
+| [LV334] LA VACHE TRAD Sauce au poivre bocal 250ml WECK SDP | 200 | Stock prédit: -102.9u (-13j restants) → prédit 200u mais non commandé |
+| [LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml  | 392 | Stock prédit: -79.9u (-6j restants) → prédit 392u mais non commandé |
+| [LV307] LV BIO Tartin'apero Houmous type SDP 200 ml  | 392 | Stock prédit: 137.1u (18j restants) → prédit 392u mais non commandé |
+| [LV tritart 135] LV BIO SET 3 X 135G TARTIN'APERO SDP | 256 | Stock prédit: -131.7u (-13j restants) → prédit 256u mais non commandé |
+| [LV337] LV BIO Tartin'apero TOMATE AIL DES OURS SDP 200ml | 434 | Stock prédit: -27.2u (-2j restants) → prédit 434u mais non commandé |
 | [LV362] LV BIO Tartin'apero Olives Câpres Tomate SDP 200 ml bio (copie) | 217 | Stock prédit: -4.0u (0j restants) → prédit 217u mais non commandé |
 | [LV364] LV SDP SAUCE Cocktail  125ML | 175 | Stock prédit: -4.0u (0j restants) → prédit 175u mais non commandé |
-| [LV306] LV BIO Tartin'apero Olives Vertes SDP200 ml  | 350 | Stock prédit: -20.6u (-2j restants) → prédit 350u mais non commandé |
-| [LV301] LV BIO Tartin'apero Aubergine SDP 200 ml  | 350 | Stock prédit: -116.7u (-25j restants) → prédit 350u mais non commandé |
-| [LV327] LV BIO Tartin'apero Toscane SDP 200 ml   | 350 | Stock prédit: -116.7u (-25j restants) → prédit 350u mais non commandé |
-| [LV359] LV SDP SAUCE POIVRE 125ML | 350 | Stock prédit: -249.3u (-54j restants) → prédit 350u mais non commandé |
-| [LV360] LV SDP SAUCE TARTARE 125ML | 350 | Stock prédit: -249.3u (-54j restants) → prédit 350u mais non commandé |
-| [LV316] LV "CLASSIQUE" WECK Vinaigrette CAESAR 200ml | 75 | Stock prédit: -144.3u (-153j restants) → prédit 75u mais non commandé |
+| [LV306] LV BIO Tartin'apero Olives Vertes SDP200 ml  | 350 | Stock prédit: -23.8u (-3j restants) → prédit 350u mais non commandé |
+| [LV301] LV BIO Tartin'apero Aubergine SDP 200 ml  | 350 | Stock prédit: 24.2u (7j restants) → prédit 350u mais non commandé |
+| [LV327] LV BIO Tartin'apero Toscane SDP 200 ml   | 350 | Stock prédit: 24.2u (7j restants) → prédit 350u mais non commandé |
 
 
 ---
@@ -210,9 +210,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 414.3u (84j restants > seuil 19j) |
+| [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 418.7u (136j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:13.406Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:03.259Z*

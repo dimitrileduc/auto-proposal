@@ -5,8 +5,8 @@
 - **Client** : DELISALADES (ID: 23733)
 - **Commande réelle** : S39469
 - **Date commande** : 2025-10-03 08:03:20
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 52.6% | 19 produits prédits, 10 corrects |
-| **Rappel** | 90.9% | 11 produits réels, 10 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 52.9% | 17 produits prédits, 9 corrects |
+| **Rappel** | 81.8% | 11 produits réels, 9 détectés |
+| **F1-Score** | 64.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.30 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 30.8% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 33.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| Partial Match (>0u) | 8 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (10)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,21 +138,20 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV155] LV Vinaigrette Caesar 250 ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [LV140] LV Moutarde à l'ancienne  200ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 3 | 2.0 | 66.7% | ✅ partial |
+| [LV140] LV Moutarde à l'ancienne  200ml | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 5 | 4 | 1.0 | 25.0% | ✅ partial |
-| [LV161] LV Tartinade Mangue curry 190g | 4 | 8 | 4.0 | 50.0% | ✅ partial |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 5 | 4 | 1.0 | 25.0% | ✅ partial |
+| [LV161] LV Tartinade Mangue curry 190g | 5 | 8 | 3.0 | 37.5% | ✅ partial |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | 4 | 2.0 | 50.0% | ✅ partial |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF021] JF PICKLES 350 ML | 4 | 6 | 2.0 | 33.3% | ✅ partial |
+| [JF021] JF PICKLES 350 ML | 5 | 6 | 1.0 | 16.7% | ✅ partial |
 | [LV136] LV Tartinade Betterave 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (9)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,20 +171,19 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV162] LV Tartinade Tomato Basilico 190g | 10 | Stock prédit: 6.6u (16j restants) → prédit 10u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 3 | Stock prédit: -1.6u (-34j restants) → prédit 3u mais non commandé |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: -0.5u (-18j restants) → prédit 1u mais non commandé |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 2 | Stock prédit: -0.9u (-25j restants) → prédit 2u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.6u (13j restants) → prédit 4u mais non commandé |
-| [LV146] LV Sauce Aïoli 200 ml | 2 | Stock prédit: -0.6u (-25j restants) → prédit 2u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: -1.4u (-50j restants) → prédit 2u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock prédit: -0.1u (-7j restants) → prédit 2u mais non commandé |
-| [JF044] JF OIGNONS ROUGES 350 ML | 3 | Stock prédit: -1.6u (-89j restants) → prédit 3u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 3 | Stock prédit: 0.6u (6j restants) → prédit 3u mais non commandé |
+| [LV162] LV Tartinade Tomato Basilico 190g | 12 | Stock prédit: 5.5u (12j restants) → prédit 12u mais non commandé |
+| [LV133] LV Tartinade Ananas Coco 190g | 3 | Stock prédit: 1.0u (11j restants) → prédit 3u mais non commandé |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 3 | Stock prédit: -1.2u (-30j restants) → prédit 3u mais non commandé |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: -0.6u (-20j restants) → prédit 1u mais non commandé |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 2 | Stock prédit: -1.4u (-32j restants) → prédit 2u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.3u (5j restants) → prédit 4u mais non commandé |
+| [LV146] LV Sauce Aïoli 200 ml | 2 | Stock prédit: -0.7u (-26j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -205,9 +203,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | Stock suffisant: 0.6u (21j restants > seuil 19j) |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:42.540Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:31.081Z*

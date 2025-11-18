@@ -5,8 +5,8 @@
 - **Client** : DELHAIZE LE LION/DE LEEUW NV (ID: 3452)
 - **Commande réelle** : S39686
 - **Date commande** : 2025-10-13 07:49:42
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -164,8 +164,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 111.1u (4j restants) → prédit 130u mais non commandé |
-| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 490 | Stock prédit: -779.6u (-26j restants) → prédit 490u mais non commandé |
+| [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 89.2u (3j restants) → prédit 130u mais non commandé |
+| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 490 | Stock prédit: -854.6u (-27j restants) → prédit 490u mais non commandé |
 
 
 ---
@@ -189,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:53.515Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:42.765Z*

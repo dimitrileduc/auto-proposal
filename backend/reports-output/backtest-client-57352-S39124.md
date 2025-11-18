@@ -5,8 +5,8 @@
 - **Client** : Energy Services Management - Epicerie Uhoda Damré (ID: 57352)
 - **Commande réelle** : S39124
 - **Date commande** : 2025-09-11 11:16:42
-- **Date cutoff système** : 2025-09-10 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-11 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 52.2% | 23 produits prédits, 12 corrects |
-| **Rappel** | 63.2% | 19 produits réels, 12 détectés |
-| **F1-Score** | 57.1% | Score équilibré global |
+| **Précision** | 58.3% | 24 produits prédits, 14 corrects |
+| **Rappel** | 73.7% | 19 produits réels, 14 détectés |
+| **F1-Score** | 65.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.42 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAE** | 0.64 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 53.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
+| Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (12)
+## True Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,15 +138,17 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV132] LV Tartinade Houmous type 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV162] LV Tartinade Tomato Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV132] LV Tartinade Houmous type 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | 0 | 1.0 | 0.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV330] LV BIO Tartinade Toscana 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV135] LV Tartinade Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -154,7 +156,7 @@
 
 ---
 
-## False Positives (11)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,22 +176,21 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock prédit: -0.9u (-14j restants) → prédit 2u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: -0.6u (-22j restants) → prédit 1u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: -1.9u (-55j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -2.6u (-59j restants) → prédit 2u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | Stock prédit: -0.9u (-28j restants) → prédit 3u mais non commandé |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -1.3u (-71j restants) → prédit 1u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 2 | Stock prédit: -0.7u (-39j restants) → prédit 2u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 2 | Stock prédit: -1.7u (-66j restants) → prédit 2u mais non commandé |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
+| [LV160] LV Tartinade Aubergine 190g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
+| [LV136] LV Tartinade Betterave 190g | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 3 | Stock prédit: 0.8u (24j restants) → prédit 3u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: -0.9u (-30j restants) → prédit 2u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: -0.8u (-23j restants) → prédit 1u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: -0.6u (-32j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -1.4u (-44j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -209,15 +210,13 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 0.3u (37j restants > seuil 19j) |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 1.0u (33j restants > seuil 19j) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: 0.8u (44j restants > seuil 19j) |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock suffisant: 1.4u (26j restants > seuil 19j) |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock suffisant: 0.8u (20j restants > seuil 19j) |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 2 | Stock suffisant: 0.8u (20j restants > seuil 19j) |
+| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock suffisant: 1.6u (33j restants > seuil 30j) |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 0.3u (37j restants > seuil 30j) |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 1.0u (33j restants > seuil 30j) |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: 0.8u (44j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:56.198Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:47.344Z*

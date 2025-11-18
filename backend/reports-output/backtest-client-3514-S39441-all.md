@@ -5,8 +5,8 @@
 - **Client** : LA FAGNARDE (ID: 3514)
 - **Commande réelle** : S39441
 - **Date commande** : 2025-09-29 15:22:37
-- **Date cutoff système** : 2025-09-28 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-29 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
-| **Rappel** | 50.0% | 2 produits réels, 1 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 66.7% | 3 produits prédits, 2 corrects |
+| **Rappel** | 100.0% | 2 produits réels, 2 détectés |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 3.6% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,11 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 26 | 28 | 2.0 | 7.1% | ✅ partial |
 
 
 ---
 
-## False Positives (0)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,11 +159,17 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF0096] FILOU MOUTARDE 3 KG | 140 | Stock prédit: 5.2u (1j restants) → prédit 140u mais non commandé |
+
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,14 +184,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 28 | Stock suffisant: 15.1u (31j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:22.798Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:14.517Z*

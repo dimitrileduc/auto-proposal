@@ -5,8 +5,8 @@
 - **Client** : DELITRAITEUR (ID: 60283)
 - **Commande réelle** : S39542
 - **Date commande** : 2025-10-03 13:14:16
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 26.43 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 93.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 28.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 99.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 20 | 60 | 40.0 | 66.7% | ✅ partial |
-| [LV161] LV Tartinade Mangue curry 190g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 19 | 60 | 41.0 | 68.3% | ✅ partial |
+| [LV161] LV Tartinade Mangue curry 190g | 15 | 25 | 10.0 | 40.0% | ✅ partial |
 | [LV162] LV Tartinade Tomato Basilico 190g | 25 | 7 | 18.0 | 257.1% | ✅ partial |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 10 | 40 | 30.0 | 75.0% | ✅ partial |
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 10 | 60 | 50.0 | 83.3% | ✅ partial |
@@ -169,9 +169,9 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 63 | Stock prédit: -0.6u (0j restants) → prédit 63u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 21 | Stock prédit: -25.8u (-32j restants) → prédit 21u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 63 | Stock prédit: 0.5u (0j restants) → prédit 63u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 126 | Stock prédit: -39.2u (-13j restants) → prédit 126u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 21 | Stock prédit: -18.5u (-27j restants) → prédit 21u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 53 | Stock prédit: -5.8u (-5j restants) → prédit 53u mais non commandé |
 
 
 ---
@@ -196,10 +196,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 50 | Stock suffisant: 31.7u (32j restants > seuil 19j) |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 40 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV160] LV Tartinade Aubergine 190g | 50 | Stock suffisant: 32.2u (36j restants > seuil 30j) |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 40 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:10.264Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:58.860Z*

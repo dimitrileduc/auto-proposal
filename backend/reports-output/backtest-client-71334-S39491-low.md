@@ -5,8 +5,8 @@
 - **Client** : BIODIS (ID: 71334)
 - **Commande réelle** : S39491
 - **Date commande** : 2025-10-01 11:19:31
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,24 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 93 | Stock suffisant: -44.9u (-10j restants > seuil 19j) |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 217 | Stock suffisant: 43.5u (7j restants > seuil 19j) |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 93 | Stock suffisant: -27.3u (-5j restants > seuil 19j) |
-| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | Stock suffisant: -6.0u (-3j restants > seuil 19j) |
-| [PF1892] LD TARTINADE BIO TRUFFES 135G | 100 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 31 | Stock suffisant: -35.2u (-50j restants > seuil 19j) |
-| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 31 | Stock suffisant: -90.7u (-55j restants > seuil 19j) |
-| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 31 | Stock suffisant: -23.0u (-14j restants > seuil 19j) |
-| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 31 | Stock suffisant: 4.3u (4j restants > seuil 19j) |
-| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 25 | Stock suffisant: 6.1u (8j restants > seuil 19j) |
-| [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 62 | Stock suffisant: 3.3u (1j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:36.955Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:27.075Z*

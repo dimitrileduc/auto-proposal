@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - SRL WAL’EPICES
 
-**📅 Date:** 17/11/2025 13:01
+**📅 Date:** 18/11/2025 11:45
 **🆔 Client ID:** 3691
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.7s
+**⏱️ Durée d'exécution:** 3.8s
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Produits à risque détectés: 1**
 - Urgents (rupture ≤ 0j): 0
-- Modérés (0 < rupture ≤ 19j): 1
+- Modérés (0 < rupture ≤ 30j): 1
 
 **Total produits (Phase 1): 1**
 **Quantité totale brute: 160 unités**
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 160 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 6.2136
-- **Stock restant estimé**: 91.65
-- **Jours avant rupture**: **14j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.1538
+- **Stock restant estimé**: 86.15
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 

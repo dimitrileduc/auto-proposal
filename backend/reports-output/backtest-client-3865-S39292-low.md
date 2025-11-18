@@ -5,8 +5,8 @@
 - **Client** : REWE MARKT GMBH - WEST (ID: 3865)
 - **Commande réelle** : S39292
 - **Date commande** : 2025-09-23 06:18:30
-- **Date cutoff système** : 2025-09-22 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-23 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 6 produits réels, 0 détectés |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,18 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (6)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,19 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock suffisant: -1.5u (-53j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | Stock suffisant: 0.5u (2j restants > seuil 19j) |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock suffisant: 0.8u (4j restants > seuil 19j) |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock suffisant: -0.5u (-6j restants > seuil 19j) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock suffisant: -1.4u (-10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:22.604Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:12.240Z*

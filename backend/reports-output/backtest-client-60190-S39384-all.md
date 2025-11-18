@@ -5,8 +5,8 @@
 - **Client** : EUROPADRINKS (ID: 60190)
 - **Commande réelle** : S39384
 - **Date commande** : 2025-09-25 06:30:28
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-25 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 41.7% | 12 produits prédits, 5 corrects |
-| **Rappel** | 100.0% | 5 produits réels, 5 détectés |
-| **F1-Score** | 58.8% | Score équilibré global |
+| **Précision** | 36.4% | 11 produits prédits, 4 corrects |
+| **Rappel** | 80.0% | 5 produits réels, 4 détectés |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.20 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 22.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| **MAE** | 1.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,8 +141,7 @@
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 10 | 10 | 0.0 | 0.0% | 🎯 exact |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 13 | 10 | 3.0 | 30.0% | ✅ partial |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 15 | 15 | 0.0 | 0.0% | 🎯 exact |
-| [REB06] REB chips bio - paprika fumé 35g | 18 | 10 | 8.0 | 80.0% | ✅ partial |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 18 | 15 | 3.0 | 20.0% | ✅ partial |
 
 
 ---
@@ -167,18 +166,18 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 15 | Stock prédit: 4.6u (9j restants) → prédit 15u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 6 | Stock prédit: 1.3u (7j restants) → prédit 6u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 30 | Stock prédit: -19.8u (-19j restants) → prédit 30u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 30 | Stock prédit: -4.0u (-5j restants) → prédit 30u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 15 | Stock prédit: -4.2u (-5j restants) → prédit 15u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 15 | Stock prédit: 4.3u (9j restants) → prédit 15u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 6 | Stock prédit: 0.9u (5j restants) → prédit 6u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 36 | Stock prédit: -11.4u (-15j restants) → prédit 36u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 6 | Stock prédit: 3.9u (23j restants) → prédit 6u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 42 | Stock prédit: -4.5u (-6j restants) → prédit 42u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: 0.1u (6j restants) → prédit 2u mais non commandé |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 5 | Stock prédit: -3.3u (-57j restants) → prédit 5u mais non commandé |
-| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 4 | Stock prédit: -2.4u (-52j restants) → prédit 4u mais non commandé |
 
 
 ---
 
-## False Negatives (0)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -193,8 +192,14 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-*Aucun faux négatif (rappel = 100%)*
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [REB06] REB chips bio - paprika fumé 35g | 10 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:19.269Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:08.613Z*

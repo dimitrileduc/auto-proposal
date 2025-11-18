@@ -5,8 +5,8 @@
 - **Client** : SA SEMAF - AD Thorembais (ID: 52403)
 - **Commande réelle** : S39162
 - **Date commande** : 2025-09-17 12:21:02
-- **Date cutoff système** : 2025-09-16 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-17 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 19 produits réels, 0 détectés |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,17 +152,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (19)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,32 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock suffisant: 0.3u (14j restants > seuil 19j) |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock suffisant: -0.5u (-45j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock suffisant: -0.7u (-51j restants > seuil 19j) |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock suffisant: 0.2u (5j restants > seuil 19j) |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock suffisant: -0.7u (-51j restants > seuil 19j) |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: 0.8u (24j restants > seuil 19j) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock suffisant: 0.5u (14j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: -0.4u (-36j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: -0.1u (-8j restants > seuil 19j) |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.3u (14j restants > seuil 19j) |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 4 | Stock suffisant: -0.8u (-24j restants > seuil 19j) |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 4 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 4 | Stock suffisant: -0.7u (-15j restants > seuil 19j) |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 4 | Stock suffisant: -0.4u (-6j restants > seuil 19j) |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | Stock suffisant: -0.5u (-11j restants > seuil 19j) |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock suffisant: 0.2u (8j restants > seuil 19j) |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 4 | Stock suffisant: -1.2u (-31j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:04.855Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:54.521Z*

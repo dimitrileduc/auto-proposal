@@ -5,8 +5,8 @@
 - **Client** : D'ICI WEPION (ID: 60278)
 - **Commande réelle** : S39328
 - **Date commande** : 2025-10-01 13:30:34
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 88.9% | 9 produits prédits, 8 corrects |
-| **Rappel** | 80.0% | 10 produits réels, 8 détectés |
-| **F1-Score** | 84.2% | Score équilibré global |
+| **Précision** | 75.0% | 12 produits prédits, 9 corrects |
+| **Rappel** | 90.0% | 10 produits réels, 9 détectés |
+| **F1-Score** | 81.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 32.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| **MAE** | 1.11 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 28.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -144,13 +144,14 @@
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 5 | 3 | 2.0 | 66.7% | ✅ partial |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 3 | 6 | 3.0 | 50.0% | ✅ partial |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
 
 
 ---
 
-## False Positives (1)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,12 +171,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.3u (18j restants) → prédit 1u mais non commandé |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | Stock prédit: 0.6u (10j restants) → prédit 2u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 2 | Stock prédit: 0.6u (10j restants) → prédit 2u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -195,10 +198,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | Stock suffisant: 1.4u (45j restants > seuil 19j) |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock suffisant: 1.5u (67j restants > seuil 19j) |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock suffisant: 1.5u (75j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:09.030Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:59.577Z*

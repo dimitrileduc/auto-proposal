@@ -5,8 +5,8 @@
 - **Client** : Chaman (ID: 9952)
 - **Commande réelle** : S39672
 - **Date commande** : 2025-10-15 04:58:48
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-15 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 18 produits prédits, 6 corrects |
-| **Rappel** | 30.0% | 20 produits réels, 6 détectés |
-| **F1-Score** | 31.6% | Score équilibré global |
+| **Précision** | 42.1% | 19 produits prédits, 8 corrects |
+| **Rappel** | 40.0% | 20 produits réels, 8 détectés |
+| **F1-Score** | 41.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.17 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
+| **MAE** | 0.13 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 6.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (6)
+## True Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,17 +138,19 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV161] LV Tartinade Mangue curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0031] MF Tarti Olives verte 250g  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (12)
+## False Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -168,23 +170,22 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: 0.7u (15j restants) → prédit 2u mais non commandé |
-| [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.5u (-15j restants) → prédit 1u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
-| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
-| [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -1.5u (-41j restants) → prédit 2u mais non commandé |
-| [MF0024] MF KETCHUP 250g | 2 | Stock prédit: -0.6u (-34j restants) → prédit 2u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.7u (-57j restants) → prédit 1u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: -0.2u (-25j restants) → prédit 1u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.2u (-27j restants) → prédit 1u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: 0.9u (22j restants) → prédit 1u mais non commandé |
+| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock prédit: 0.9u (22j restants) → prédit 1u mais non commandé |
+| [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
+| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: 0.3u (18j restants) → prédit 1u mais non commandé |
+| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
+| [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -1.1u (-35j restants) → prédit 2u mais non commandé |
+| [MF0024] MF KETCHUP 250g | 2 | Stock prédit: -0.6u (-35j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (14)
+## False Negatives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -204,22 +205,20 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.8u (90j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.8u (95j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.3u (20j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.7u (77j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 1.7u (126j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: 0.9u (20j restants > seuil 19j) |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.9u (21j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock suffisant: 0.7u (56j restants > seuil 19j) |
-| [VID0009] Consigne casier | 4 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 24 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock suffisant: 0.8u (89j restants > seuil 30j) |
+| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.8u (94j restants > seuil 30j) |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.7u (77j restants > seuil 30j) |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 1.6u (125j restants > seuil 30j) |
+| [LV136] LV Tartinade Betterave 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock suffisant: 0.7u (56j restants > seuil 30j) |
+| [VID0009] Consigne casier | 4 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 24 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:56.654Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:45.532Z*

@@ -13,9 +13,9 @@ export const autoProposalConfig = {
   },
 
   // Stock replenishment parameters
-  targetCoverage: 14,
+  targetCoverage: 25,
   leadTime: 5,
-  analysisWindowDays: 180,
+  analysisWindowDays: 120,
 
   // Quantity calculation strategy
   quantityStrategy: {

@@ -5,8 +5,8 @@
 - **Client** : MAISON DESPRIET SA, Nicole (ID: 57477)
 - **Commande réelle** : S39661
 - **Date commande** : 2025-10-10 09:26:10
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-10 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 2.60 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 46.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAPE** | 16.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,9 +138,9 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0096] FILOU MOUTARDE 3 KG | 9 | 8 | 1.0 | 12.5% | ✅ partial |
+| [PF0096] FILOU MOUTARDE 3 KG | 3 | 8 | 5.0 | 62.5% | ✅ partial |
 | [PF0524] FILOU SAUCE TOMATE 815 GR | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 6 | 2 | 4.0 | 200.0% | ✅ partial |
+| [PF1140] FILOU SAUCE CHASSEUR 850G | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact |
 | [PF0075] FILOU CHASSEUR  10 L | 52 | 44 | 8.0 | 18.2% | ✅ partial |
 
@@ -185,4 +185,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:28.182Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:17.446Z*

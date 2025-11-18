@@ -5,8 +5,8 @@
 - **Client** : Brasserie Artisanale De Namur (Houppe) (ID: 24718)
 - **Commande réelle** : S39590
 - **Date commande** : 2025-10-07 06:10:13
-- **Date cutoff système** : 2025-10-06 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -176,15 +176,15 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| undefined | 0 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| Palette-IND NON STANDARD  | 0 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/BT-APO-33cl-BR/Propre | 23104 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| OI/Intercalaire plastique consigné | 64 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| OI/Palette IND-DIN | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/CA-BBPack-33cl/VIDE | 880 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-IND-DIN | 11 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| undefined | 0 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| Palette-IND NON STANDARD  | 0 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| BB/BT-APO-33cl-BR/Propre | 23104 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| OI/Intercalaire plastique consigné | 64 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| OI/Palette IND-DIN | 8 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| BB/CA-BBPack-33cl/VIDE | 880 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| BB/Palette-IND-DIN | 11 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:09.261Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:57.658Z*

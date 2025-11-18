@@ -5,8 +5,8 @@
 - **Client** : NATURKOST WEST GMBH (ID: 3818)
 - **Commande réelle** : S39694
 - **Date commande** : 2025-10-13 10:17:04
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 4.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 32 | 0.0 | 0.0% | 🎯 exact |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 32 | 32 | 0.0 | 0.0% | 🎯 exact |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 24 | 32 | 8.0 | 25.0% | ✅ partial |
 
 
 ---
@@ -164,8 +164,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | Stock prédit: -10.7u (-4j restants) → prédit 32u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 48 | Stock prédit: -4.8u (-3j restants) → prédit 48u mais non commandé |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | Stock prédit: -5.0u (-2j restants) → prédit 32u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 64 | Stock prédit: -8.2u (-6j restants) → prédit 64u mais non commandé |
 
 
 ---
@@ -190,10 +190,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [VID0009] Consigne casier | 64 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 384 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 64 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 384 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:57.232Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:47.856Z*

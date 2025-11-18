@@ -1,33 +1,136 @@
 # 📊 Rapport Auto-Proposal - HYGIENA SA
 
-**📅 Date:** 17/11/2025 12:58
+**📅 Date:** 18/11/2025 11:42
 **🆔 Client ID:** 17452
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.4s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 35**
-- Urgents (rupture ≤ 0j): 22
-- Modérés (0 < rupture ≤ 19j): 13
+**Produits à risque détectés: 38**
+- Urgents (rupture ≤ 0j): 15
+- Modérés (0 < rupture ≤ 30j): 23
 
-**Total produits (Phase 1): 35**
-**Quantité totale brute: 7933 unités**
+**Total produits (Phase 1): 38**
+**Quantité totale brute: 9112 unités**
 
 ### Détails par produit
 
 
 <details>
+<summary>🟡 <strong>[LV135] LV Tartinade Basilico 190g</strong> (ID: 13067) - 341 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 9.3269
+- **Stock restant estimé**: 241.69
+- **Jours avant rupture**: **25j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-08 | S39619 | 279 | 9.42€ |
+| 2025-08-26 | S38746 | 341 | 9.42€ |
+| 2025-06-30 | S37749 | 350 | 9.42€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [279, 341, 350]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 341
+
+</details>
+
+<details>
+<summary>🟡 <strong>[LV143] LV Mayonnaise (huile 70%) 200 ml </strong> (ID: 13041) - 186 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 5.8750
+- **Stock restant estimé**: 126.50
+- **Jours avant rupture**: **21j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-08 | S39617 | 150 | 9.84€ |
+| 2025-08-26 | S38747 | 186 | 9.84€ |
+| 2025-06-30 | S37744 | 275 | 9.84€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [150, 186, 275]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 186
+
+</details>
+
+<details>
+<summary>🟡 <strong>[LV159] LV Tartinade aux Truffes  135g </strong> (ID: 13057) - 295 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 12.5319
+- **Stock restant estimé**: 228.87
+- **Jours avant rupture**: **18j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-08 | S39615 | 279 | 12.90€ |
+| 2025-08-26 | S38744 | 310 | 12.90€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [279, 310]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 295
+
+</details>
+
+<details>
+<summary>🟡 <strong>[LV002] LV Pizza Croccantina au romarin 150 g bio</strong> (ID: 13096) - 56 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 1.5556
+- **Stock restant estimé**: 38.89
+- **Jours avant rupture**: **24j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-01 | S39499 | 56 | 18.72€ |
+| 2025-08-04 | S38313 | 56 | 18.72€ |
+| 2025-06-26 | S37692 | 56 | 18.72€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [56, 56, 56]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 56
+
+</details>
+
+<details>
 <summary>🟡 <strong>[LV348] LV Tartinade Dattes-Chili 180g BE bio</strong> (ID: 17339) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.6977
-- **Stock restant estimé**: 44.67
+- **Consommation/jour**: 4.5909
+- **Stock restant estimé**: 43.50
 - **Jours avant rupture**: **9j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -47,13 +150,13 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[LV342] LV Organic Broccoli Spread 190 g</strong> (ID: 14999) - 155 unités</summary>
+<summary>🔴 <strong>[LV342] LV Organic Broccoli Spread 190 g</strong> (ID: 14999) - 275 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 6.6145
-- **Stock restant estimé**: -5.42
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.8173
+- **Stock restant estimé**: -20.96
+- **Jours avant rupture**: **-3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -62,28 +165,24 @@
 | 2025-08-29 | S38634 | 279 | 9.42€ |
 | 2025-08-26 | S38748 | 155 | 9.42€ |
 | 2025-06-30 | S37748 | 275 | 9.42€ |
-| 2025-06-03 | S37213 | 125 | 9.42€ |
-| 2025-05-23 | S37013 | 100 | 9.42€ |
-| 2025-05-09 | S36659 | 100 | 9.42€ |
-| 2025-04-15 | S36227 | 150 | 9.42€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [279, 155, 275, 125, 100]
-- **Nombre commandes**: 7
-- **Valeur médiane**: 155
+- **Confiance**: medium
+- **Quantités historiques**: [279, 155, 275]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 275
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV133] LV Tartinade Ananas Coco 190g</strong> (ID: 13065) - 275 unités</summary>
+<summary>🟡 <strong>[LV133] LV Tartinade Ananas Coco 190g</strong> (ID: 13065) - 317 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 7.5922
-- **Stock restant estimé**: 107.54
-- **Jours avant rupture**: **14j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.0962
+- **Stock restant estimé**: 165.77
+- **Jours avant rupture**: **27j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -91,27 +190,24 @@
 | --- | --- | --- | --- |
 | 2025-08-29 | S38634 | 434 | 9.66€ |
 | 2025-06-30 | S37748 | 200 | 9.66€ |
-| 2025-05-09 | S36660 | 300 | 9.66€ |
-| 2025-04-23 | S36337 | 275 | 9.66€ |
-| 2025-04-15 | S36230 | 150 | 9.66€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [434, 200, 300, 275, 150]
-- **Nombre commandes**: 5
-- **Valeur médiane**: 275
+- **Confiance**: medium
+- **Quantités historiques**: [434, 200]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 317
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 225 unités</summary>
+<summary>🟡 <strong>[LV145] LV Sauce Tartare 200 ml </strong> (ID: 13043) - 225 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 5.3333
-- **Stock restant estimé**: -20.33
-- **Jours avant rupture**: **-3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 4.4912
+- **Stock restant estimé**: 13.91
+- **Jours avant rupture**: **3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -120,26 +216,24 @@
 | 2025-08-26 | S38751 | 225 | 10.26€ |
 | 2025-08-26 | S38747 | 62 | 10.26€ |
 | 2025-06-20 | S37588 | 225 | 10.26€ |
-| 2025-05-15 | S36810 | 250 | 10.26€ |
-| 2025-04-23 | S36334 | 150 | 10.26€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [225, 62, 225, 250, 150]
-- **Nombre commandes**: 5
+- **Confiance**: medium
+- **Quantités historiques**: [225, 62, 225]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 225
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV331] LV Tartinade Lentils Balsamico 190g</strong> (ID: 14451) - 200 unités</summary>
+<summary>🔴 <strong>[LV331] LV Tartinade Lentils Balsamico 190g</strong> (ID: 14451) - 147 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 3.0335
-- **Stock restant estimé**: -46.54
-- **Jours avant rupture**: **-15j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 2.8173
+- **Stock restant estimé**: -39.41
+- **Jours avant rupture**: **-13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -147,14 +241,13 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38750 | 93 | 10.14€ |
 | 2025-06-30 | S37748 | 200 | 10.14€ |
-| 2025-04-15 | S36228 | 250 | 10.14€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [93, 200, 250]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 200
+- **Quantités historiques**: [93, 200]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 147
 
 </details>
 
@@ -162,10 +255,10 @@
 <summary>🟡 <strong>[LV129] LV Tartinade Carotte Gingembre 190g</strong> (ID: 13059) - 585 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 12.4022
-- **Stock restant estimé**: 49.50
-- **Jours avant rupture**: **3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 11.2500
+- **Stock restant estimé**: 91.25
+- **Jours avant rupture**: **8j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -173,26 +266,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38749 | 620 | 9.12€ |
 | 2025-06-30 | S37748 | 550 | 9.12€ |
-| 2025-05-23 | S37012 | 350 | 9.12€ |
-| 2025-04-15 | S36229 | 700 | 9.12€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [620, 550, 350, 700]
-- **Nombre commandes**: 4
+- **Quantités historiques**: [620, 550]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 585
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV161] LV Tartinade Mangue curry 190g</strong> (ID: 13060) - 1050 unités</summary>
+<summary>🔴 <strong>[LV161] LV Tartinade Mangue curry 190g</strong> (ID: 13060) - 928 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 18.7484
-- **Stock restant estimé**: -56.43
-- **Jours avant rupture**: **-3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 17.8462
+- **Stock restant estimé**: -32.77
+- **Jours avant rupture**: **-1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -200,25 +291,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38749 | 806 | 9.12€ |
 | 2025-06-30 | S37748 | 1050 | 9.12€ |
-| 2025-05-09 | S36665 | 1050 | 9.12€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [806, 1050, 1050]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 1050
+- **Quantités historiques**: [806, 1050]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 928
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV130] LV BIO Tartinade Paprika Chili 190g</strong> (ID: 13061) - 750 unités</summary>
+<summary>🔴 <strong>[LV130] LV BIO Tartinade Paprika Chili 190g</strong> (ID: 13061) - 742 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 13.0643
-- **Stock restant estimé**: -166.96
-- **Jours avant rupture**: **-12j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 14.2692
+- **Stock restant estimé**: -236.65
+- **Jours avant rupture**: **-16j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -226,52 +316,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38749 | 434 | 9.12€ |
 | 2025-06-30 | S37748 | 1050 | 9.12€ |
-| 2025-04-23 | S36340 | 750 | 9.12€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [434, 1050, 750]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 750
+- **Quantités historiques**: [434, 1050]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 742
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV131] LV Tartinade Potiron 190g</strong> (ID: 13062) - 159 unités</summary>
+<summary>🔴 <strong>[LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> (ID: 13080) - 24 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.0424
-- **Stock restant estimé**: 31.05
-- **Jours avant rupture**: **7j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-08-26 | S38749 | 217 | 9.12€ |
-| 2025-06-20 | S37590 | 100 | 9.12€ |
-| 2025-04-29 | S36439 | 350 | 9.12€ |
-| 2025-04-29 | S36433 | 0 | 9.12€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [217, 100, 350, 0]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 159
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> (ID: 13080) - 16 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3575
-- **Stock restant estimé**: -0.45
-- **Jours avant rupture**: **-1j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.4615
+- **Stock restant estimé**: -5.69
+- **Jours avant rupture**: **-12j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -279,25 +341,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38748 | 16 | 18.60€ |
 | 2025-06-30 | S37749 | 32 | 18.60€ |
-| 2025-04-15 | S36230 | 16 | 18.60€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [16, 32, 16]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 16
+- **Quantités historiques**: [16, 32]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 24
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV188] LV Tartinade Aubergine  380g</strong> (ID: 13071) - 144 unités</summary>
+<summary>🔴 <strong>[LV188] LV Tartinade Aubergine  380g</strong> (ID: 13071) - 128 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.7152
-- **Stock restant estimé**: -12.90
-- **Jours avant rupture**: **-4j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 2.4615
+- **Stock restant estimé**: -3.69
+- **Jours avant rupture**: **-1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -305,25 +366,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38748 | 112 | 16.62€ |
 | 2025-06-30 | S37749 | 144 | 16.62€ |
-| 2025-04-29 | S36433 | 192 | 16.62€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [112, 144, 192]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 144
+- **Quantités historiques**: [112, 144]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 128
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV149] LV Sauce Aioli Pesto 200ml</strong> (ID: 13048) - 81 unités</summary>
+<summary>🔴 <strong>[LV149] LV Sauce Aioli Pesto 200ml</strong> (ID: 13048) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.0872
-- **Stock restant estimé**: -38.01
-- **Jours avant rupture**: **-34j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.4694
+- **Stock restant estimé**: -10.06
+- **Jours avant rupture**: **-21j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -331,24 +391,32 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38747 | 12 | 10.38€ |
 | 2025-05-15 | S36809 | 150 | 10.38€ |
+| 2025-03-05 | S35202 | 25 | 10.38€ |
+| 2024-11-12 | S33248 | 25 | 10.38€ |
+| 2024-09-09 | S32152 | 25 | 10.38€ |
+| 2024-08-05 | S30800 | 10 | 10.38€ |
+| 2024-05-06 | S30147 | 25 | 10.38€ |
+| 2024-04-08 | S29676 | 25 | 10.38€ |
+| 2023-12-19 | S28212 | 15 | 10.38€ |
+| 2023-10-25 | S26499 | 25 | 10.38€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [12, 150]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 81
+- **Confiance**: high
+- **Quantités historiques**: [12, 150, 25, 25, 25]
+- **Nombre commandes**: 10
+- **Valeur médiane**: 25
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV158] LV Moutarde 200 ml</strong> (ID: 13055) - 50 unités</summary>
+<summary>🔴 <strong>[LV158] LV Moutarde 200 ml</strong> (ID: 13055) - 38 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.0234
-- **Stock restant estimé**: -22.08
-- **Jours avant rupture**: **-21j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.7212
+- **Stock restant estimé**: -8.89
+- **Jours avant rupture**: **-12j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -356,25 +424,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38747 | 25 | 10.08€ |
 | 2025-06-30 | S37746 | 50 | 10.08€ |
-| 2025-04-23 | S36337 | 100 | 10.08€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [25, 50, 100]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 50
+- **Quantités historiques**: [25, 50]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 38
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV160] LV Tartinade Aubergine 190g</strong> (ID: 13058) - 700 unités</summary>
+<summary>🟡 <strong>[LV160] LV Tartinade Aubergine 190g</strong> (ID: 13058) - 784 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 15.2215
-- **Stock restant estimé**: 167.81
-- **Jours avant rupture**: **11j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 15.0769
+- **Stock restant estimé**: 159.38
+- **Jours avant rupture**: **10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -382,25 +449,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38747 | 868 | 8.94€ |
 | 2025-06-30 | S37748 | 700 | 8.94€ |
-| 2025-05-15 | S36811 | 700 | 8.94€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [868, 700, 700]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 700
+- **Quantités historiques**: [868, 700]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 784
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV132] LV Tartinade Houmous type 190g</strong> (ID: 13063) - 350 unités</summary>
+<summary>🔴 <strong>[LV132] LV Tartinade Houmous type 190g</strong> (ID: 13063) - 380 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 6.2011
-- **Stock restant estimé**: 24.75
-- **Jours avant rupture**: **3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 7.3077
+- **Stock restant estimé**: -33.46
+- **Jours avant rupture**: **-4j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -408,25 +474,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38747 | 310 | 9.24€ |
 | 2025-06-30 | S37746 | 450 | 9.24€ |
-| 2025-04-15 | S36228 | 350 | 9.24€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [310, 450, 350]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 350
+- **Quantités historiques**: [310, 450]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 380
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV162] LV Tartinade Tomato Basilico 190g</strong> (ID: 13064) - 700 unités</summary>
+<summary>🟡 <strong>[LV162] LV Tartinade Tomato Basilico 190g</strong> (ID: 13064) - 784 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 18.5674
-- **Stock restant estimé**: 13.90
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 15.0769
+- **Stock restant estimé**: 159.38
+- **Jours avant rupture**: **10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -434,26 +499,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38747 | 868 | 8.82€ |
 | 2025-06-30 | S37749 | 700 | 8.82€ |
-| 2025-05-23 | S37014 | 700 | 8.82€ |
-| 2025-05-23 | S37012 | 350 | 8.82€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [868, 700, 700, 350]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 700
+- **Quantités historiques**: [868, 700]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 784
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV134] LV BIO Tartinade Olives Vertes 190g</strong> (ID: 13066) - 248 unités</summary>
+<summary>🔴 <strong>[LV134] LV BIO Tartinade Olives Vertes 190g</strong> (ID: 13066) - 299 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.4581
-- **Stock restant estimé**: 42.93
-- **Jours avant rupture**: **9j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 5.7500
+- **Stock restant estimé**: -22.25
+- **Jours avant rupture**: **-3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -461,14 +524,13 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38747 | 248 | 9.72€ |
 | 2025-06-30 | S37748 | 350 | 9.72€ |
-| 2025-04-15 | S36230 | 200 | 9.72€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [248, 350, 200]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 248
+- **Quantités historiques**: [248, 350]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 299
 
 </details>
 
@@ -476,10 +538,10 @@
 <summary>🔴 <strong>[LV345] LV Spread KIDS 200ml Organic</strong> (ID: 17066) - 62 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.3010
-- **Stock restant estimé**: -43.84
+- **Consommation/jour**: 2.2788
+- **Stock restant estimé**: -45.11
 - **Jours avant rupture**: **-19j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -499,13 +561,39 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> (ID: 13050) - 140 unités</summary>
+<summary>🟡 <strong>[LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> (ID: 13040) - 99 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 3.2727
-- **Stock restant estimé**: 29.45
+- **Consommation/jour**: 2.1441
+- **Stock restant estimé**: 31.23
+- **Jours avant rupture**: **14j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-08-26 | S38746 | 132 | 24.30€ |
+| 2025-06-30 | S37745 | 22 | 24.30€ |
+| 2025-06-16 | S37460 | 99 | 24.30€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [132, 22, 99]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 99
+
+</details>
+
+<details>
+<summary>🟡 <strong>[LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> (ID: 13050) - 170 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 3.2692
+- **Stock restant estimé**: 26.35
 - **Jours avant rupture**: **8j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -513,26 +601,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38746 | 180 | 13.14€ |
 | 2025-06-30 | S37746 | 160 | 13.14€ |
-| 2025-05-09 | S36662 | 120 | 13.14€ |
-| 2025-04-29 | S36441 | 80 | 13.14€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [180, 160, 120, 80]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 140
+- **Quantités historiques**: [180, 160]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 170
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 35 unités</summary>
+<summary>🔴 <strong>[LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> (ID: 13051) - 30 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.4194
-- **Stock restant estimé**: -35.29
-- **Jours avant rupture**: **-24j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.8475
+- **Stock restant estimé**: -9.83
+- **Jours avant rupture**: **-11j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -541,25 +627,24 @@
 | 2025-08-26 | S38746 | 30 | 13.74€ |
 | 2025-06-30 | S37746 | 30 | 13.74€ |
 | 2025-06-16 | S37460 | 40 | 13.74€ |
-| 2025-05-09 | S36661 | 120 | 13.74€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [30, 30, 40, 120]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 35
+- **Quantités historiques**: [30, 30, 40]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 30
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV155] LV Vinaigrette Caesar 250 ml</strong> (ID: 13052) - 90 unités</summary>
+<summary>🟡 <strong>[LV155] LV Vinaigrette Caesar 250 ml</strong> (ID: 13052) - 75 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.8121
-- **Stock restant estimé**: 6.64
-- **Jours avant rupture**: **3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.4423
+- **Stock restant estimé**: 22.21
+- **Jours avant rupture**: **15j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -567,25 +652,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38746 | 90 | 14.04€ |
 | 2025-06-30 | S37746 | 60 | 14.04€ |
-| 2025-05-15 | S36810 | 120 | 14.04€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [90, 60, 120]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 90
+- **Quantités historiques**: [90, 60]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 75
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV137] LV Tartinade Lentilles Curry 190g</strong> (ID: 13069) - 175 unités</summary>
+<summary>🟡 <strong>[LV137] LV Tartinade Lentilles Curry 190g</strong> (ID: 13069) - 128 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 5.6145
-- **Stock restant estimé**: -103.27
-- **Jours avant rupture**: **-18j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 2.4519
+- **Stock restant estimé**: 39.76
+- **Jours avant rupture**: **16j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -593,27 +677,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38746 | 155 | 9.54€ |
 | 2025-06-30 | S37750 | 100 | 9.54€ |
-| 2025-06-03 | S37212 | 225 | 9.54€ |
-| 2025-04-23 | S36335 | 350 | 9.54€ |
-| 2025-04-15 | S36228 | 175 | 9.54€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [155, 100, 225, 350, 175]
-- **Nombre commandes**: 5
-- **Valeur médiane**: 175
+- **Confiance**: medium
+- **Quantités historiques**: [155, 100]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 128
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV332] LV Tartinade Olive Caper Tomato 190g</strong> (ID: 14452) - 237 unités</summary>
+<summary>🟡 <strong>[LV332] LV Tartinade Olive Caper Tomato 190g</strong> (ID: 14452) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 6.3520
-- **Stock restant estimé**: -55.19
-- **Jours avant rupture**: **-8j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 4.7105
+- **Stock restant estimé**: 15.61
+- **Jours avant rupture**: **3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -622,15 +703,38 @@
 | 2025-08-26 | S38746 | 237 | 10.14€ |
 | 2025-06-30 | S37750 | 100 | 10.14€ |
 | 2025-06-20 | S37589 | 200 | 10.14€ |
-| 2025-06-03 | S37212 | 350 | 10.14€ |
-| 2025-04-15 | S36228 | 250 | 10.14€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [237, 100, 200, 350, 250]
-- **Nombre commandes**: 5
-- **Valeur médiane**: 237
+- **Confiance**: medium
+- **Quantités historiques**: [237, 100, 200]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 200
+
+</details>
+
+<details>
+<summary>🟡 <strong>[LV139] LV Tartinade Paprika Chili 380g</strong> (ID: 13074) - 192 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 3.6923
+- **Stock restant estimé**: 18.46
+- **Jours avant rupture**: **4j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-08-26 | S38746 | 192 | 17.34€ |
+| 2025-06-30 | S37746 | 192 | 17.34€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [192, 192]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 192
 
 </details>
 
@@ -638,10 +742,10 @@
 <summary>🔴 <strong>[LV217] LV Tartinade Basilic 380g</strong> (ID: 13077) - 32 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.7151
-- **Stock restant estimé**: -0.89
-- **Jours avant rupture**: **-1j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.8579
+- **Stock restant estimé**: -8.32
+- **Jours avant rupture**: **-9j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -650,24 +754,36 @@
 | 2025-08-26 | S38746 | 32 | 17.58€ |
 | 2025-06-03 | S37214 | 64 | 17.58€ |
 | 2025-04-15 | S36228 | 32 | 17.58€ |
+| 2025-02-07 | S34770 | 64 | 17.58€ |
+| 2024-11-12 | S33248 | 16 | 17.58€ |
+| 2024-10-11 | S32726 | 64 | 17.58€ |
+| 2024-10-11 | S32722 | 30 | 17.58€ |
+| 2024-09-09 | S32152 | 48 | 17.58€ |
+| 2024-08-05 | S30800 | 32 | 17.58€ |
+| 2024-05-24 | S30434 | 64 | 17.58€ |
+| 2024-05-06 | S30144 | 48 | 17.58€ |
+| 2024-04-18 | S29844 | 48 | 17.58€ |
+| 2024-03-05 | S29204 | 32 | 17.58€ |
+| 2023-12-19 | S28217 | 16 | 17.58€ |
+| 2023-10-18 | S04874 | 32 | 17.58€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [32, 64, 32]
-- **Nombre commandes**: 3
+- **Confiance**: high
+- **Quantités historiques**: [32, 64, 32, 64, 16]
+- **Nombre commandes**: 15
 - **Valeur médiane**: 32
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV040] LV Caprons apéritifs 240g</strong> (ID: 13100) - 108 unités</summary>
+<summary>🟡 <strong>[LV040] LV Caprons apéritifs 240g</strong> (ID: 13100) - 99 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.7095
-- **Stock restant estimé**: 29.36
-- **Jours avant rupture**: **17j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.9038
+- **Stock restant estimé**: 18.52
+- **Jours avant rupture**: **9j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -675,25 +791,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38746 | 108 | 15.00€ |
 | 2025-06-30 | S37746 | 90 | 15.00€ |
-| 2025-04-15 | S36226 | 108 | 15.00€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [108, 90, 108]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 108
+- **Quantités historiques**: [108, 90]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 99
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV136] LV Tartinade Betterave 190g</strong> (ID: 13068) - 350 unités</summary>
+<summary>🟡 <strong>[LV136] LV Tartinade Betterave 190g</strong> (ID: 13068) - 396 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 7.6577
-- **Stock restant estimé**: -11.26
-- **Jours avant rupture**: **-1j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.9386
+- **Stock restant estimé**: 14.89
+- **Jours avant rupture**: **2j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -701,25 +816,24 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38744 | 341 | 9.12€ |
 | 2025-06-20 | S37588 | 450 | 9.12€ |
-| 2025-05-15 | S36810 | 350 | 9.12€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [341, 450, 350]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 350
+- **Quantités historiques**: [341, 450]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 396
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV138] LV Tartinade Carotte gingembre  380g</strong> (ID: 13072) - 192 unités</summary>
+<summary>🟡 <strong>[LV138] LV Tartinade Carotte gingembre  380g</strong> (ID: 13072) - 176 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.9497
-- **Stock restant estimé**: 8.31
-- **Jours avant rupture**: **2j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 2.7145
+- **Stock restant estimé**: 16.42
+- **Jours avant rupture**: **6j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -728,24 +842,35 @@
 | 2025-08-26 | S38744 | 144 | 16.74€ |
 | 2025-06-03 | S37212 | 192 | 16.74€ |
 | 2025-04-15 | S36228 | 192 | 16.74€ |
+| 2025-02-07 | S34770 | 176 | 16.74€ |
+| 2024-11-12 | S33248 | 112 | 16.74€ |
+| 2024-09-09 | S32157 | 128 | 16.74€ |
+| 2024-08-05 | S30800 | 128 | 16.74€ |
+| 2024-05-06 | S30148 | 48 | 16.74€ |
+| 2024-04-08 | S29675 | 192 | 16.74€ |
+| 2024-03-05 | S29205 | 96 | 16.74€ |
+| 2024-02-06 | S28849 | 192 | 16.74€ |
+| 2024-01-23 | S28641 | 192 | 16.74€ |
+| 2023-12-19 | S28212 | 128 | 16.74€ |
+| 2023-10-18 | S04874 | 48 | 16.74€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [144, 192, 192]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 192
+- **Confiance**: high
+- **Quantités historiques**: [144, 192, 192, 176, 112]
+- **Nombre commandes**: 14
+- **Valeur médiane**: 176
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV187] LV Tartinade Mangue Curry 380g</strong> (ID: 13073) - 144 unités</summary>
+<summary>🟡 <strong>[LV187] LV Tartinade Mangue Curry 380g</strong> (ID: 13073) - 152 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.7152
-- **Stock restant estimé**: 19.10
-- **Jours avant rupture**: **7j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 2.9231
+- **Stock restant estimé**: 6.62
+- **Jours avant rupture**: **2j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -753,25 +878,49 @@
 | --- | --- | --- | --- |
 | 2025-08-26 | S38744 | 144 | 17.34€ |
 | 2025-06-30 | S37746 | 160 | 17.34€ |
-| 2025-04-29 | S36437 | 144 | 17.34€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [144, 160, 144]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 144
+- **Quantités historiques**: [144, 160]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 152
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV330] LV BIO Tartinade Toscana 190g</strong> (ID: 14450) - 250 unités</summary>
+<summary>🟡 <strong>[LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> (ID: 13094) - 120 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 8.5698
-- **Stock restant estimé**: -3.06
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 2.3077
+- **Stock restant estimé**: 51.54
+- **Jours avant rupture**: **22j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-08-26 | S38744 | 160 | 15.84€ |
+| 2025-06-30 | S37746 | 80 | 15.84€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [160, 80]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 120
+
+</details>
+
+<details>
+<summary>🟡 <strong>[LV330] LV BIO Tartinade Toscana 190g</strong> (ID: 14450) - 342 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 6.5769
+- **Stock restant estimé**: 92.00
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -779,28 +928,24 @@
 | --- | --- | --- | --- |
 | 2025-08-21 | S38635 | 434 | 10.14€ |
 | 2025-06-30 | S37749 | 250 | 10.14€ |
-| 2025-05-23 | S37011 | 150 | 10.14€ |
-| 2025-05-15 | S36810 | 350 | 10.14€ |
-| 2025-04-29 | S36439 | 200 | 10.14€ |
-| 2025-04-15 | S36230 | 150 | 10.14€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [434, 250, 150, 350, 200]
-- **Nombre commandes**: 6
-- **Valeur médiane**: 250
+- **Confiance**: medium
+- **Quantités historiques**: [434, 250]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 342
 
 </details>
 
 <details>
-<summary>🟡 <strong>[LV146] LV Sauce Aïoli 200 ml</strong> (ID: 13044) - 100 unités</summary>
+<summary>🟡 <strong>[LV146] LV Sauce Aïoli 200 ml</strong> (ID: 13044) - 174 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 3.4667
-- **Stock restant estimé**: 40.20
-- **Jours avant rupture**: **11j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 3.3365
+- **Stock restant estimé**: 43.50
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -808,27 +953,24 @@
 | --- | --- | --- | --- |
 | 2025-08-21 | S38636 | 217 | 10.26€ |
 | 2025-06-30 | S37746 | 130 | 10.26€ |
-| 2025-05-15 | S36810 | 50 | 10.26€ |
-| 2025-05-09 | S36662 | 75 | 10.26€ |
-| 2025-04-29 | S36440 | 100 | 10.26€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [217, 130, 50, 75, 100]
-- **Nombre commandes**: 5
-- **Valeur médiane**: 100
+- **Confiance**: medium
+- **Quantités historiques**: [217, 130]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 174
 
 </details>
 
 <details>
-<summary>🔴 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 63 unités</summary>
+<summary>🔴 <strong>[LV157] LV Ketchup aux tomates 263 ml bio</strong> (ID: 13054) - 75 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.7576
-- **Stock restant estimé**: -28.03
-- **Jours avant rupture**: **-37j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.5493
+- **Stock restant estimé**: -111.13
+- **Jours avant rupture**: **-71j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -836,13 +978,22 @@
 | --- | --- | --- | --- |
 | 2025-06-30 | S37748 | 50 | 16.96€ |
 | 2025-04-29 | S36438 | 75 | 16.96€ |
+| 2025-03-21 | S35547 | 100 | 16.96€ |
+| 2024-11-12 | S33246 | 150 | 16.96€ |
+| 2024-09-09 | S32157 | 75 | 16.96€ |
+| 2024-06-14 | S30799 | 100 | 16.96€ |
+| 2024-05-06 | S30147 | 100 | 16.96€ |
+| 2024-03-05 | S29205 | 75 | 16.96€ |
+| 2024-01-23 | S28641 | 150 | 16.96€ |
+| 2023-12-19 | S28212 | 75 | 16.96€ |
+| 2023-11-02 | S27406 | 150 | 16.96€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [50, 75]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 63
+- **Confiance**: high
+- **Quantités historiques**: [50, 75, 100, 150, 75]
+- **Nombre commandes**: 11
+- **Valeur médiane**: 75
 
 </details>
 
@@ -850,10 +1001,10 @@
 <summary>🔴 <strong>[LV156] LV Sauce barbecue 263 ml bio</strong> (ID: 13053) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3766
-- **Stock restant estimé**: -23.79
-- **Jours avant rupture**: **-63j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.3760
+- **Stock restant estimé**: -24.11
+- **Jours avant rupture**: **-64j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -877,91 +1028,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[LV221] LV Cornichons Aigre-Doux 670g</strong> (ID: 13106) - 80 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.2431
-- **Stock restant estimé**: -112.68
-- **Jours avant rupture**: **-90j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-09 | S36661 | 80 | 10.98€ |
-| 2025-04-02 | S35782 | 80 | 10.98€ |
-| 2025-02-07 | S34769 | 112 | 10.98€ |
-| 2024-12-19 | S33920 | 63 | 10.98€ |
-| 2024-11-12 | S33249 | 63 | 10.98€ |
-| 2024-09-09 | S32157 | 48 | 10.98€ |
-| 2024-08-05 | S30800 | 48 | 10.98€ |
-| 2024-05-06 | S30144 | 80 | 10.98€ |
-| 2024-04-18 | S29845 | 96 | 10.98€ |
-| 2024-02-02 | S28784 | 128 | 10.98€ |
-| 2023-12-19 | S28207 | 54 | 10.98€ |
-| 2023-10-18 | S04874 | 48 | 10.98€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [80, 80, 112, 63, 63]
-- **Nombre commandes**: 12
-- **Valeur médiane**: 80
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV140] LV Moutarde à l'ancienne  200ml</strong> (ID: 13056) - 30 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3509
-- **Stock restant estimé**: -19.39
-- **Jours avant rupture**: **-55j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-09 | S36660 | 35 | 10.32€ |
-| 2025-04-23 | S36337 | 25 | 10.32€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [35, 25]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 30
-
-</details>
-
-<details>
-<summary>🔴 <strong>[LV220] LV Cornichons Fins au vinaigre 330g</strong> (ID: 13105) - 126 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 1.4737
-- **Stock restant estimé**: -81.42
-- **Jours avant rupture**: **-55j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-09 | S36660 | 147 | 10.20€ |
-| 2025-04-23 | S36337 | 105 | 10.20€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [147, 105]
-- **Nombre commandes**: 2
-- **Valeur médiane**: 126
-
-</details>
-
 
 ---
 
@@ -970,7 +1036,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 80720.02€**
+- **Montant initial: 96929.68€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -979,42 +1045,45 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [LV135] LV Tartinade Basili... | 13067 | 341 | 0 | 341 | 9.42€ | 3212.22€ |
+| [LV143] LV Mayonnaise (huil... | 13041 | 186 | 0 | 186 | 9.84€ | 1830.24€ |
+| [LV159] LV Tartinade aux Tr... | 13057 | 295 | 0 | 295 | 12.90€ | 3805.50€ |
+| [LV002] LV Pizza Croccantin... | 13096 | 56 | 0 | 56 | 18.72€ | 1048.32€ |
 | [LV348] LV Tartinade Dattes... | 17339 | 6 | 0 | 6 | 9.72€ | 58.32€ |
-| [LV342] LV Organic Broccoli... | 14999 | 155 | 0 | 155 | 9.42€ | 1460.10€ |
-| [LV133] LV Tartinade Ananas... | 13065 | 275 | 0 | 275 | 9.66€ | 2656.50€ |
+| [LV342] LV Organic Broccoli... | 14999 | 275 | 0 | 275 | 9.42€ | 2590.50€ |
+| [LV133] LV Tartinade Ananas... | 13065 | 317 | 0 | 317 | 9.66€ | 3062.22€ |
 | [LV145] LV Sauce Tartare 20... | 13043 | 225 | 0 | 225 | 10.26€ | 2308.50€ |
-| [LV331] LV Tartinade Lentil... | 14451 | 200 | 0 | 200 | 10.14€ | 2028.00€ |
+| [LV331] LV Tartinade Lentil... | 14451 | 147 | 0 | 147 | 10.14€ | 1490.58€ |
 | [LV129] LV Tartinade Carott... | 13059 | 585 | 0 | 585 | 9.12€ | 5335.20€ |
-| [LV161] LV Tartinade Mangue... | 13060 | 1050 | 0 | 1050 | 9.12€ | 9576.00€ |
-| [LV130] LV BIO Tartinade Pa... | 13061 | 750 | 0 | 750 | 9.12€ | 6840.00€ |
-| [LV131] LV Tartinade Potiro... | 13062 | 159 | 0 | 159 | 9.12€ | 1450.08€ |
-| [LV165] LV Vol-au-vent (ave... | 13080 | 16 | 0 | 16 | 18.60€ | 297.60€ |
-| [LV188] LV Tartinade Auberg... | 13071 | 144 | 0 | 144 | 16.62€ | 2393.28€ |
-| [LV149] LV Sauce Aioli Pest... | 13048 | 81 | 0 | 81 | 10.38€ | 840.78€ |
-| [LV158] LV Moutarde 200 ml | 13055 | 50 | 0 | 50 | 10.08€ | 504.00€ |
-| [LV160] LV Tartinade Auberg... | 13058 | 700 | 0 | 700 | 8.94€ | 6258.00€ |
-| [LV132] LV Tartinade Houmou... | 13063 | 350 | 0 | 350 | 9.24€ | 3234.00€ |
-| [LV162] LV Tartinade Tomato... | 13064 | 700 | 0 | 700 | 8.82€ | 6174.00€ |
-| [LV134] LV BIO Tartinade Ol... | 13066 | 248 | 0 | 248 | 9.72€ | 2410.56€ |
+| [LV161] LV Tartinade Mangue... | 13060 | 928 | 0 | 928 | 9.12€ | 8463.36€ |
+| [LV130] LV BIO Tartinade Pa... | 13061 | 742 | 0 | 742 | 9.12€ | 6767.04€ |
+| [LV165] LV Vol-au-vent (ave... | 13080 | 24 | 0 | 24 | 18.60€ | 446.40€ |
+| [LV188] LV Tartinade Auberg... | 13071 | 128 | 0 | 128 | 16.62€ | 2127.36€ |
+| [LV149] LV Sauce Aioli Pest... | 13048 | 25 | 0 | 25 | 10.38€ | 259.50€ |
+| [LV158] LV Moutarde 200 ml | 13055 | 38 | 0 | 38 | 10.08€ | 383.04€ |
+| [LV160] LV Tartinade Auberg... | 13058 | 784 | 0 | 784 | 8.94€ | 7008.96€ |
+| [LV132] LV Tartinade Houmou... | 13063 | 380 | 0 | 380 | 9.24€ | 3511.20€ |
+| [LV162] LV Tartinade Tomato... | 13064 | 784 | 0 | 784 | 8.82€ | 6914.88€ |
+| [LV134] LV BIO Tartinade Ol... | 13066 | 299 | 0 | 299 | 9.72€ | 2906.28€ |
 | [LV345] LV Spread KIDS 200m... | 17066 | 62 | 0 | 62 | 9.42€ | 584.04€ |
-| [LV153] LV Vinaigrette Cibo... | 13050 | 140 | 0 | 140 | 13.14€ | 1839.60€ |
-| [LV154] LV Vinaigrette Miel... | 13051 | 35 | 0 | 35 | 13.74€ | 480.90€ |
-| [LV155] LV Vinaigrette Caes... | 13052 | 90 | 0 | 90 | 14.04€ | 1263.60€ |
-| [LV137] LV Tartinade Lentil... | 13069 | 175 | 0 | 175 | 9.54€ | 1669.50€ |
-| [LV332] LV Tartinade Olive ... | 14452 | 237 | 0 | 237 | 10.14€ | 2403.18€ |
+| [LV142] LV Mayonnaise en bo... | 13040 | 99 | 0 | 99 | 24.30€ | 2405.70€ |
+| [LV153] LV Vinaigrette Cibo... | 13050 | 170 | 0 | 170 | 13.14€ | 2233.80€ |
+| [LV154] LV Vinaigrette Miel... | 13051 | 30 | 0 | 30 | 13.74€ | 412.20€ |
+| [LV155] LV Vinaigrette Caes... | 13052 | 75 | 0 | 75 | 14.04€ | 1053.00€ |
+| [LV137] LV Tartinade Lentil... | 13069 | 128 | 0 | 128 | 9.54€ | 1221.12€ |
+| [LV332] LV Tartinade Olive ... | 14452 | 200 | 0 | 200 | 10.14€ | 2028.00€ |
+| [LV139] LV Tartinade Paprik... | 13074 | 192 | 0 | 192 | 17.34€ | 3329.28€ |
 | [LV217] LV Tartinade Basili... | 13077 | 32 | 0 | 32 | 17.58€ | 562.56€ |
-| [LV040] LV Caprons apéritif... | 13100 | 108 | 0 | 108 | 15.00€ | 1620.00€ |
-| [LV136] LV Tartinade Better... | 13068 | 350 | 0 | 350 | 9.12€ | 3192.00€ |
-| [LV138] LV Tartinade Carott... | 13072 | 192 | 0 | 192 | 16.74€ | 3214.08€ |
-| [LV187] LV Tartinade Mangue... | 13073 | 144 | 0 | 144 | 17.34€ | 2496.96€ |
-| [LV330] LV BIO Tartinade To... | 14450 | 250 | 0 | 250 | 10.14€ | 2535.00€ |
-| [LV146] LV Sauce Aïoli 200 ml | 13044 | 100 | 0 | 100 | 10.26€ | 1026.00€ |
-| [LV157] LV Ketchup aux toma... | 13054 | 63 | 0 | 63 | 16.96€ | 1068.48€ |
+| [LV040] LV Caprons apéritif... | 13100 | 99 | 0 | 99 | 15.00€ | 1485.00€ |
+| [LV136] LV Tartinade Better... | 13068 | 396 | 0 | 396 | 9.12€ | 3611.52€ |
+| [LV138] LV Tartinade Carott... | 13072 | 176 | 0 | 176 | 16.74€ | 2946.24€ |
+| [LV187] LV Tartinade Mangue... | 13073 | 152 | 0 | 152 | 17.34€ | 2635.68€ |
+| [LV055] LV Mini grissini à ... | 13094 | 120 | 0 | 120 | 15.84€ | 1900.80€ |
+| [LV330] LV BIO Tartinade To... | 14450 | 342 | 0 | 342 | 10.14€ | 3467.88€ |
+| [LV146] LV Sauce Aïoli 200 ml | 13044 | 174 | 0 | 174 | 10.26€ | 1785.24€ |
+| [LV157] LV Ketchup aux toma... | 13054 | 75 | 0 | 75 | 16.96€ | 1272.00€ |
 | [LV156] LV Sauce barbecue 2... | 13053 | 25 | 0 | 25 | 18.64€ | 466.00€ |
-| [LV221] LV Cornichons Aigre... | 13106 | 80 | 0 | 80 | 10.98€ | 878.40€ |
-| [LV140] LV Moutarde à l'anc... | 13056 | 30 | 0 | 30 | 10.32€ | 309.60€ |
-| [LV220] LV Cornichons Fins ... | 13105 | 126 | 0 | 126 | 10.20€ | 1285.20€ |
 
-**Total (Phase 2.5): 80720.02€**
+**Total (Phase 2.5): 96929.68€**
 
 ---

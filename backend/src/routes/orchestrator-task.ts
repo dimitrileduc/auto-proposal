@@ -22,8 +22,8 @@ const orchestratorTaskRoute = new Hono();
  *     "dateMax": "011025",                    // Date max inactivité (= référence analyse stock). Default: config ou aujourd'hui
  *
  *     // Analyse stock
- *     "analysisWindowDays": 180,              // Jours d'historique avant dateMax. Default: config (180)
- *     "targetCoverage": 14,                   // Jours de couverture. Default: config (14)
+ *     "analysisWindowDays": 120,              // Jours d'historique avant dateMax. Default: config (120)
+ *     "targetCoverage": 25,                   // Jours de couverture. Default: config (25)
  *     "leadTime": 5,                          // Délai livraison. Default: config (5)
  *     "moqMinimum": 300,                      // MOQ en euros. Default: config (300)
  *

@@ -5,8 +5,8 @@
 - **Client** : Alnatura Produktions- und Handels GmbH, Invoice Address (ID: 23614)
 - **Commande réelle** : S39603
 - **Date commande** : 2025-10-08 06:27:53
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 6 produits prédits, 3 corrects |
+| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
 | **Rappel** | 60.0% | 5 produits réels, 3 détectés |
-| **F1-Score** | 54.5% | Score équilibré global |
+| **F1-Score** | 46.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -138,14 +138,14 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
 | [LV105] LV Tomate Basil Aufstr 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
 | [LV106] LV Oliven Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
-| [LV343] LV Toskana Aufstrich 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (3)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,9 +165,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV103] LV Mango Curry Aufstrich 180g | 300 | Stock prédit: -25.7u (-2j restants) → prédit 300u mais non commandé |
-| [LV104] LV Paprika Chili Aufstri 180g DE | 300 | Stock prédit: -155.2u (-11j restants) → prédit 300u mais non commandé |
-| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 300 | Stock prédit: -186.2u (-18j restants) → prédit 300u mais non commandé |
+| [LV160] LV Tartinade Aubergine 190g | 300 | Stock prédit: 128.6u (25j restants) → prédit 300u mais non commandé |
+| [LV103] LV Mango Curry Aufstrich 180g | 300 | Stock prédit: -42.9u (-4j restants) → prédit 300u mais non commandé |
+| [LV104] LV Paprika Chili Aufstri 180g DE | 300 | Stock prédit: -128.6u (-10j restants) → prédit 300u mais non commandé |
+| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 300 | Stock prédit: -218.9u (-20j restants) → prédit 300u mais non commandé |
+| [LV341] LV Zwiebel Aufstrich 180g | 300 | Stock prédit: 68.8u (18j restants) → prédit 300u mais non commandé |
 
 
 ---
@@ -192,10 +194,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | Stock suffisant: 123.0u (28j restants > seuil 19j) |
-| [LV347] LV Trüffel Aufstrich 180g DE | 150 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV343] LV Toskana Aufstrich 180g | 300 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV347] LV Trüffel Aufstrich 180g DE | 150 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:23.399Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:12.635Z*

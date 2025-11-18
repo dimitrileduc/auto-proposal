@@ -5,8 +5,8 @@
 - **Client** : BEES COOP (ID: 38709)
 - **Commande réelle** : S39216
 - **Date commande** : 2025-09-16 08:36:35
-- **Date cutoff système** : 2025-09-15 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-16 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 77.8% | 9 produits prédits, 7 corrects |
-| **Rappel** | 77.8% | 9 produits réels, 7 détectés |
-| **F1-Score** | 77.8% | Score équilibré global |
+| **Précision** | 56.3% | 16 produits prédits, 9 corrects |
+| **Rappel** | 100.0% | 9 produits réels, 9 détectés |
+| **F1-Score** | 72.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.71 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 26.2% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.78 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 31.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (7)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,8 +138,10 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [JF038] JF KETCHUP SQUEEZE 300ML | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 4 | 6 | 2.0 | 33.3% | ✅ partial |
+| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 3 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -149,7 +151,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,13 +171,18 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.3u (19j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 3 | Stock prédit: 1.4u (26j restants) → prédit 3u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 1.3u (20j restants) → prédit 2u mais non commandé |
+| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: 0.7u (26j restants) → prédit 1u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: -1.1u (-14j restants) → prédit 2u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock prédit: 0.7u (22j restants) → prédit 2u mais non commandé |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -190,15 +197,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock suffisant: 2.1u (27j restants > seuil 19j) |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 2 | Stock suffisant: 0.8u (34j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:52.580Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:43.919Z*

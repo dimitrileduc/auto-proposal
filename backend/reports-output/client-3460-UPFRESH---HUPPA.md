@@ -1,33 +1,33 @@
 # 📊 Rapport Auto-Proposal - UPFRESH - HUPPA
 
-**📅 Date:** 17/11/2025 12:59
+**📅 Date:** 18/11/2025 11:43
 **🆔 Client ID:** 3460
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.6s
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 3**
-- Urgents (rupture ≤ 0j): 1
-- Modérés (0 < rupture ≤ 19j): 2
+**Produits à risque détectés: 2**
+- Urgents (rupture ≤ 0j): 2
+- Modérés (0 < rupture ≤ 30j): 0
 
-**Total produits (Phase 1): 3**
-**Quantité totale brute: 170 unités**
+**Total produits (Phase 1): 2**
+**Quantité totale brute: 166 unités**
 
 ### Détails par produit
 
 
 <details>
-<summary>🟡 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 160 unités</summary>
+<summary>🔴 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 160 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 9.3333
-- **Stock restant estimé**: 29.33
-- **Jours avant rupture**: **3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 10.3093
+- **Stock restant estimé**: 5.36
+- **Jours avant rupture**: **0j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -41,19 +41,12 @@
 | 2025-07-18 | S38148 | 120 | 8.96€ |
 | 2025-07-11 | S38017 | 80 | 8.96€ |
 | 2025-06-27 | S37733 | 160 | 8.96€ |
-| 2025-05-28 | S37145 | 120 | 8.96€ |
-| 2025-05-23 | S37036 | 80 | 8.96€ |
-| 2025-05-20 | S36919 | 80 | 8.96€ |
-| 2025-05-09 | S36670 | 80 | 8.96€ |
-| 2025-05-09 | S36670 | 80 | 8.96€ |
-| 2025-04-11 | S36022 | 160 | 8.96€ |
-| 2025-04-04 | S35829 | 80 | 8.96€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [160, 80, 160, 80, 160]
-- **Nombre commandes**: 15
+- **Nombre commandes**: 8
 - **Valeur médiane**: 160
 
 </details>
@@ -62,10 +55,10 @@
 <summary>🔴 <strong>[PF0088] FILOU VOL AU VENT 800 GR</strong> (ID: 8991) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2683
-- **Stock restant estimé**: -2.98
+- **Consommation/jour**: 0.2651
+- **Stock restant estimé**: -3.16
 - **Jours avant rupture**: **-11j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -84,33 +77,6 @@
 
 </details>
 
-<details>
-<summary>🟡 <strong>[PF3270] JF TRUFFLE MAYONNAISE 925ML</strong> (ID: 15001) - 4 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.1156
-- **Stock restant estimé**: 0.90
-- **Jours avant rupture**: **7j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-06-27 | S37733 | 12 | 74.16€ |
-| 2025-05-20 | S36919 | 4 | 74.16€ |
-| 2025-05-09 | S36670 | 1 | 74.16€ |
-| 2025-04-11 | S36022 | 3 | 74.16€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [12, 4, 1, 3]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 4
-
-</details>
-
 
 ---
 
@@ -119,7 +85,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 1957.04€**
+- **Montant initial: 1660.40€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -130,8 +96,7 @@
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PF0078] FILOU CHASSEUR 5 L | 8987 | 160 | 0 | 160 | 8.96€ | 1433.60€ |
 | [PF0088] FILOU VOL AU VENT ... | 8991 | 6 | 0 | 6 | 37.80€ | 226.80€ |
-| [PF3270] JF TRUFFLE MAYONNA... | 15001 | 4 | 0 | 4 | 74.16€ | 296.64€ |
 
-**Total (Phase 2.5): 1957.04€**
+**Total (Phase 2.5): 1660.40€**
 
 ---

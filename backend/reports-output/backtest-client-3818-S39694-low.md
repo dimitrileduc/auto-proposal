@@ -5,8 +5,8 @@
 - **Client** : NATURKOST WEST GMBH (ID: 3818)
 - **Commande réelle** : S39694
 - **Date commande** : 2025-10-13 10:17:04
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 4 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (4)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,17 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 32 | Stock suffisant: -5.5u (-4j restants > seuil 19j) |
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | Stock suffisant: 13.0u (11j restants > seuil 19j) |
-| [VID0009] Consigne casier | 64 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 384 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:57.234Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:47.857Z*

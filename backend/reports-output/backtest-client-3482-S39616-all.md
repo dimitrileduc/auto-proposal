@@ -5,8 +5,8 @@
 - **Client** : VDS  FOOD (ID: 3482)
 - **Commande réelle** : S39616
 - **Date commande** : 2025-10-08 14:25:30
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 28.6% | 7 produits prédits, 2 corrects |
+| **Précision** | 100.0% | 2 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 44.4% | Score équilibré global |
+| **F1-Score** | 100.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 3.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 43.8% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 5.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 62.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -139,12 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact |
-| [PF0077] FILOU PROVENCALE 5 L | 15 | 8 | 7.0 | 87.5% | ✅ partial |
+| [PF0077] FILOU PROVENCALE 5 L | 18 | 8 | 10.0 | 125.0% | ✅ partial |
 
 
 ---
 
-## False Positives (5)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -159,17 +159,7 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 3 | Stock prédit: -5.0u (-97j restants) → prédit 3u mais non commandé |
-| [PF1598] JF ANDALOUSE SQUEEZE 300ML | 3 | Stock prédit: -3.8u (-66j restants) → prédit 3u mais non commandé |
-| [PF1601] JF SAMOURAI SQUEEZE 300ML | 4 | Stock prédit: -7.4u (-120j restants) → prédit 4u mais non commandé |
-| [PF1846] BELGIAN BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1639] JF BURGER SQUEEZE 300ML | 4 | Stock prédit: -4.0u (-68j restants) → prédit 4u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
@@ -192,4 +182,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:39.133Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:28.667Z*

@@ -5,8 +5,8 @@
 - **Client** : TERRA NATURKOST HANDELS KG (ID: 3868)
 - **Commande réelle** : S39421
 - **Date commande** : 2025-09-26 09:47:05
-- **Date cutoff système** : 2025-09-25 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-26 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,8 +17,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 66.7% | 6 produits prédits, 4 corrects |
-| **Rappel** | 28.6% | 14 produits réels, 4 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **Rappel** | 100.0% | 4 produits réels, 4 détectés |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -166,13 +166,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV189] LV Tartinade Houmous Type 380g | 75 | Stock prédit: 0.0u (0j restants) → prédit 75u mais non commandé |
-| [LV336] LV BIO Tartinade Tomato Basilico 380g | 75 | Stock prédit: 0.0u (0j restants) → prédit 75u mais non commandé |
+| [LV189] LV Tartinade Houmous Type 380g | 75 | Stock prédit: -31.0u (-19j restants) → prédit 75u mais non commandé |
+| [LV336] LV BIO Tartinade Tomato Basilico 380g | 75 | Stock prédit: -31.0u (-19j restants) → prédit 75u mais non commandé |
 
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -187,23 +187,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | Stock suffisant: -26.2u (-18j restants > seuil 19j) |
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 48 | Stock suffisant: 11.0u (6j restants > seuil 19j) |
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 64 | Stock suffisant: 29.3u (11j restants > seuil 19j) |
-| [MF0062] ​MF Tarti Betterave rouge | 32 | Stock suffisant: -47.7u (-21j restants > seuil 19j) |
-| [VID0009] Consigne casier | 160 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 960 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 25 | Stock suffisant: -10.5u (-3j restants > seuil 19j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 25 | Stock suffisant: 4.7u (3j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 25 | Stock suffisant: -75.0u (-32j restants > seuil 19j) |
-| [LV159] LV Tartinade aux Truffes  135g  | 25 | Stock suffisant: 4.7u (3j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:33.955Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:23.890Z*

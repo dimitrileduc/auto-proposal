@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - Atelier Constant-Berger : Pressoir, cidrerie & distillerie
 
-**📅 Date:** 17/11/2025 13:00
+**📅 Date:** 18/11/2025 11:44
 **🆔 Client ID:** 38
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.7s
+**⏱️ Durée d'exécution:** 3.6s
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Produits à risque détectés: 0**
 - Urgents (rupture ≤ 0j): 0
-- Modérés (0 < rupture ≤ 19j): 0
+- Modérés (0 < rupture ≤ 30j): 0
 
 **Total produits (Phase 1): 0**
 **Quantité totale brute: 0 unités**

@@ -5,8 +5,8 @@
 - **Client** : VITAFRAIS SAS (ID: 58998)
 - **Commande réelle** : S38873
 - **Date commande** : 2025-08-29 11:55:17
-- **Date cutoff système** : 2025-08-28 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-08-29 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 66.7% | 3 produits prédits, 2 corrects |
+| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
 | **Rappel** | 66.7% | 3 produits réels, 2 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 57.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,7 +164,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 38 | Stock prédit: 7.6u (8j restants) → prédit 38u mais non commandé |
+| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 25 | Stock prédit: 17.0u (29j restants) → prédit 25u mais non commandé |
+| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 38 | Stock prédit: 6.9u (8j restants) → prédit 38u mais non commandé |
 
 
 ---
@@ -189,9 +190,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 75 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 75 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:29.978Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:19.500Z*

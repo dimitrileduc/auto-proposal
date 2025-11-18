@@ -5,8 +5,8 @@
 - **Client** : SPRL GOOD & FOOD (ID: 58284)
 - **Commande réelle** : S39546
 - **Date commande** : 2025-10-03 12:32:05
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
+| **Précision** | 42.9% | 7 produits prédits, 3 corrects |
 | **Rappel** | 100.0% | 3 produits réels, 3 détectés |
-| **F1-Score** | 54.5% | Score équilibré global |
+| **F1-Score** | 60.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 203.67 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 171.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 123.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 102.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -138,14 +138,14 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 338 | 110 | 228.0 | 207.3% | ✅ partial |
+| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 216 | 110 | 106.0 | 96.4% | ✅ partial |
 | [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML | 350 | 124 | 226.0 | 182.3% | ✅ partial |
-| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 282 | 125 | 157.0 | 125.6% | ✅ partial |
+| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 162 | 125 | 37.0 | 29.6% | ✅ partial |
 
 
 ---
 
-## False Positives (5)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,11 +165,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML | 483 | Stock prédit: 57.9u (8j restants) → prédit 483u mais non commandé |
-| [PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML | 286 | Stock prédit: -195.4u (-46j restants) → prédit 286u mais non commandé |
-| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 421 | Stock prédit: -158.0u (-25j restants) → prédit 421u mais non commandé |
-| [PF3352] DLL MARINADE AVOCAT TOMATES SECHEES 240ML | 285 | Stock prédit: -298.8u (-46j restants) → prédit 285u mais non commandé |
-| [PF3351] DLL MARINADE AVOCAT BBQ 240ML | 285 | Stock prédit: -297.8u (-46j restants) → prédit 285u mais non commandé |
+| [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML | 200 | Stock prédit: 208.5u (25j restants) → prédit 200u mais non commandé |
+| [PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML | 401 | Stock prédit: 15.8u (2j restants) → prédit 401u mais non commandé |
+| [PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML | 8 | Stock prédit: -305.1u (-47j restants) → prédit 8u mais non commandé |
+| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 141 | Stock prédit: -271.9u (-32j restants) → prédit 141u mais non commandé |
 
 
 ---
@@ -193,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:51.202Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:40.640Z*

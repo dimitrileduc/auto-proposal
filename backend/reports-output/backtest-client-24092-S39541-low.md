@@ -5,8 +5,8 @@
 - **Client** : CONSERVERIE ET MOUTARDERIE BELGE ECHANTILLON (ID: 24092)
 - **Commande réelle** : S39541
 - **Date commande** : 2025-10-03 10:10:16
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 11 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 1 produits réels, 0 détectés |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (11)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,22 +157,18 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF3301] DLL MAYONNAISE CITRON 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PF3340] CARRE MAYONNAISE BELGE 720ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
+| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
+| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
+| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
+| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
+| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
+| [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -187,14 +183,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 1 | Stock suffisant: -1.1u (-10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:08.800Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:57.966Z*

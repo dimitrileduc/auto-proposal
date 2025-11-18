@@ -5,8 +5,8 @@
 - **Client** : Epicerie Uhoda Beaufays (ID: 17669)
 - **Commande réelle** : S39600
 - **Date commande** : 2025-10-08 07:26:15
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 12 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,12 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.3u (-19j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (12)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,25 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock suffisant: -0.1u (-3j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: 0.6u (8j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | Stock suffisant: 0.7u (13j restants > seuil 19j) |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock suffisant: 0.9u (16j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: -0.3u (-7j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.3u (8j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock suffisant: -0.3u (-4j restants > seuil 19j) |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock suffisant: -1.4u (-48j restants > seuil 19j) |
-| [LV342] LV Organic Broccoli Spread 190 g | 1 | Stock suffisant: -4.6u (-62j restants > seuil 19j) |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 0.9u (33j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:12.831Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:01.885Z*

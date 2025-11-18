@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET EUPEN SHOPPING CENT ROTENBERG (ID: 29081)
 - **Commande réelle** : S39163
 - **Date commande** : 2025-09-11 13:46:55
-- **Date cutoff système** : 2025-09-10 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-11 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,8 +17,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 50.0% | 2 produits prédits, 1 corrects |
-| **Rappel** | 3.4% | 29 produits réels, 1 détectés |
-| **F1-Score** | 6.5% | Score équilibré global |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -163,12 +163,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [CB010] CB Jus de Pomme cubis 3l | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
+| [CB010] CB Jus de Pomme cubis 3l | 6 | Stock prédit: -9.9u (-53j restants) → prédit 6u mais non commandé |
 
 
 ---
 
-## False Negatives (28)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -183,41 +183,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock suffisant: 0.4u (24j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock suffisant: -0.4u (-26j restants > seuil 19j) |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock suffisant: 0.2u (8j restants > seuil 19j) |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock suffisant: -0.7u (-46j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock suffisant: -0.6u (-22j restants > seuil 19j) |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock suffisant: -0.2u (-15j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock suffisant: 0.5u (31j restants > seuil 19j) |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock suffisant: -0.6u (-12j restants > seuil 19j) |
-| [LD013] LD Tuscan Organic Spread 180 g | 1 | Stock suffisant: -0.5u (-18j restants > seuil 19j) |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock suffisant: 0.3u (29j restants > seuil 19j) |
-| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock suffisant: -0.2u (-10j restants > seuil 19j) |
-| [MF0059] MF Confi Fraise- Ardbei | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock suffisant: -0.0u (-7j restants > seuil 19j) |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock suffisant: 0.1u (10j restants > seuil 19j) |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: -0.3u (-13j restants > seuil 19j) |
-| [MF0013] MF Olives Vertes 500g | 1 | Stock suffisant: 0.7u (108j restants > seuil 19j) |
-| [CB001] CB Apple juice 25cl | 1 | Stock suffisant: -0.7u (-14j restants > seuil 19j) |
-| [VID0009] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 36 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:00.066Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:51.952Z*

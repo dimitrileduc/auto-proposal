@@ -5,8 +5,8 @@
 - **Client** : AU RAYON BIO (ID: 17809)
 - **Commande réelle** : S39577
 - **Date commande** : 2025-10-09 06:15:56
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
-| **Rappel** | 5.6% | 18 produits réels, 1 détectés |
-| **F1-Score** | 9.5% | Score équilibré global |
+| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 100.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,18 +158,11 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-
-*Produits prédits mais non commandés*
-
-| Produit | Qté prédite | Raison |
-|---------|-------------|--------|
-| [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-
+*Aucun faux positif (précision = 100%)*
 
 ---
 
-## False Negatives (17)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -184,30 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock suffisant: -0.2u (-22j restants > seuil 19j) |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock suffisant: -1.0u (-70j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.5u (5j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 3 | Stock suffisant: -0.3u (-3j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: 2.2u (33j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock suffisant: 0.1u (0j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: 2.2u (71j restants > seuil 19j) |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock suffisant: 2.7u (55j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock suffisant: 0.7u (8j restants > seuil 19j) |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock suffisant: -0.6u (-10j restants > seuil 19j) |
-| [LV135] LV Tartinade Basilico 190g | 3 | Stock suffisant: -1.1u (-14j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 3 | Stock suffisant: -0.8u (-12j restants > seuil 19j) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | Stock suffisant: -2.2u (-51j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | Stock suffisant: -0.5u (-8j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock suffisant: -3.0u (-45j restants > seuil 19j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: 1.7u (34j restants > seuil 19j) |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock suffisant: -0.6u (-10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:04.698Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:55.480Z*

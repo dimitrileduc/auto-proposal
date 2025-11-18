@@ -5,8 +5,8 @@
 - **Client** : SODEXO SAFRAN BE3723 (ID: 60539)
 - **Commande réelle** : S39496
 - **Date commande** : 2025-10-01 14:11:18
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.13 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 22.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAE** | 2.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,14 +138,14 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 6 | 5 | 1.0 | 20.0% | ✅ partial |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
-| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 6 | 5 | 1.0 | 20.0% | ✅ partial |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 9 | 5 | 4.0 | 80.0% | ✅ partial |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
+| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
 | [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
-| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 6 | 5 | 1.0 | 20.0% | ✅ partial |
+| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -189,11 +189,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:12.597Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:02.137Z*

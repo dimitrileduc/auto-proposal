@@ -5,8 +5,8 @@
 - **Client** : BELICIOUS (ID: 33756)
 - **Commande réelle** : S39287
 - **Date commande** : 2025-09-22 06:23:29
-- **Date cutoff système** : 2025-09-21 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 79.2% | 24 produits prédits, 19 corrects |
-| **Rappel** | 73.1% | 26 produits réels, 19 détectés |
-| **F1-Score** | 76.0% | Score équilibré global |
+| **Précision** | 78.3% | 23 produits prédits, 18 corrects |
+| **Rappel** | 69.2% | 26 produits réels, 18 détectés |
+| **F1-Score** | 73.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.21 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 47.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 13 | Avec erreur |
+| **MAE** | 3.28 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 53.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 18 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (19)
+## True Positives (18)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,25 +138,24 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 4 | 3 | 1.0 | 33.3% | ✅ partial |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 8 | 2 | 6.0 | 300.0% | ✅ partial |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 6 | 12 | 6.0 | 50.0% | ✅ partial |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 5 | 10 | 5.0 | 50.0% | ✅ partial |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 5 | 12 | 7.0 | 58.3% | ✅ partial |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 3 | 9 | 6.0 | 66.7% | ✅ partial |
+| [MF0055] MF Noix de cajou - Curry 133g | 4 | 9 | 5.0 | 55.6% | ✅ partial |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 4 | 9 | 5.0 | 55.6% | ✅ partial |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 4 | 9 | 5.0 | 55.6% | ✅ partial |
-| [MF0014] MF Olives noires 500g | 2 | 5 | 3.0 | 60.0% | ✅ partial |
-| [MF0013] MF Olives Vertes 500g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
-| [MF0012] MF Olives Mix 500g | 4 | 5 | 1.0 | 20.0% | ✅ partial |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 3 | 8 | 5.0 | 62.5% | ✅ partial |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
+| [MF0013] MF Olives Vertes 500g | 4 | 5 | 1.0 | 20.0% | ✅ partial |
+| [MF0012] MF Olives Mix 500g | 3 | 5 | 2.0 | 40.0% | ✅ partial |
+| [MF0052] MF Pois chiches  500g | 3 | 9 | 6.0 | 66.7% | ✅ partial |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | 8 | 6.0 | 75.0% | ✅ partial |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 4 | 6 | 2.0 | 33.3% | ✅ partial |
 | [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 3 | 8 | 5.0 | 62.5% | ✅ partial |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 3 | 6 | 3.0 | 50.0% | ✅ partial |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -181,16 +180,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.5u (-9j restants) → prédit 2u mais non commandé |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | Stock prédit: 0.4u (15j restants) → prédit 2u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | Stock prédit: -4.7u (-37j restants) → prédit 1u mais non commandé |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 6 | Stock prédit: 0.0u (0j restants) → prédit 6u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: -2.3u (-20j restants) → prédit 3u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | Stock prédit: 0.3u (13j restants) → prédit 2u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: -0.7u (-7j restants) → prédit 2u mais non commandé |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 7 | Stock prédit: -5.4u (-38j restants) → prédit 7u mais non commandé |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 3 | Stock prédit: 0.5u (3j restants) → prédit 3u mais non commandé |
 
 
 ---
 
-## False Negatives (7)
+## False Negatives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -210,15 +209,16 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock suffisant: 1.1u (38j restants > seuil 19j) |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 10 | Stock suffisant: 3.8u (26j restants > seuil 19j) |
-| [LD008] LD Tartinade Pois chiches bio 180g   | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0055] MF Noix de cajou - Curry 133g | 9 | Stock suffisant: 1.7u (21j restants > seuil 19j) |
-| [MF0052] MF Pois chiches  500g | 9 | Stock suffisant: 2.8u (65j restants > seuil 19j) |
-| [VID0009] Consigne casier | 51 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 306 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock suffisant: 1.1u (40j restants > seuil 30j) |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LD008] LD Tartinade Pois chiches bio 180g   | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [MF0014] MF Olives noires 500g | 5 | Stock suffisant: 1.6u (114j restants > seuil 30j) |
+| [VID0009] Consigne casier | 51 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 306 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:48.637Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:38.112Z*

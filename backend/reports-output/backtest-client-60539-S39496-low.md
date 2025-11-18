@@ -5,8 +5,8 @@
 - **Client** : SODEXO SAFRAN BE3723 (ID: 60539)
 - **Commande réelle** : S39496
 - **Date commande** : 2025-10-01 14:11:18
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,24 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 5 | Stock suffisant: -1.8u (-12j restants > seuil 19j) |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 5 | Stock suffisant: -1.2u (-9j restants > seuil 19j) |
-| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 5 | Stock suffisant: -2.3u (-16j restants > seuil 19j) |
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 5 | Stock suffisant: -4.4u (-23j restants > seuil 19j) |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 5 | Stock suffisant: -6.0u (-28j restants > seuil 19j) |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 5 | Stock suffisant: 0.1u (0j restants > seuil 19j) |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 5 | Stock suffisant: 2.1u (17j restants > seuil 19j) |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 5 | Stock suffisant: 2.1u (17j restants > seuil 19j) |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:12.599Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:02.138Z*

@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - ROCH EPICES
 
-**📅 Date:** 17/11/2025 13:01
+**📅 Date:** 18/11/2025 11:44
 **🆔 Client ID:** 3520
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.5s
+**⏱️ Durée d'exécution:** 3.0s
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Produits à risque détectés: 1**
 - Urgents (rupture ≤ 0j): 0
-- Modérés (0 < rupture ≤ 19j): 1
+- Modérés (0 < rupture ≤ 30j): 1
 
 **Total produits (Phase 1): 1**
 **Quantité totale brute: 208 unités**
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 208 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 9.3654
-- **Stock restant estimé**: 47.62
-- **Jours avant rupture**: **5j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 11.0521
+- **Stock restant estimé**: 16.32
+- **Jours avant rupture**: **1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -38,14 +38,12 @@
 | 2025-08-20 | S38608 | 240 | 8.96€ |
 | 2025-07-08 | S37951 | 320 | 8.96€ |
 | 2025-07-08 | S37951 | 133 | 8.96€ |
-| 2025-06-10 | S37314 | 240 | 8.96€ |
-| 2025-05-08 | S36604 | 160 | 8.96€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [160, 208, 240, 320, 133]
-- **Nombre commandes**: 7
+- **Nombre commandes**: 5
 - **Valeur médiane**: 208
 
 </details>

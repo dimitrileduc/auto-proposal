@@ -5,8 +5,8 @@
 - **Client** : NIKITA (ID: 3465)
 - **Commande réelle** : S39476
 - **Date commande** : 2025-09-30 11:42:33
-- **Date cutoff système** : 2025-09-29 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-30 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 1 produits réels, 0 détectés |
-| **F1-Score** | 0.0% | Score équilibré global |
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1000.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 35.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (0)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,7 +133,13 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-*Aucun produit correctement prédit (rappel = 0%)*
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
+|---------|--------|------|-----------|----------|------|
+| [PI2790] PI MOUTARDE BLANCHE | 1800 | 2800 | 1000.0 | 35.7% | ✅ partial |
+
 
 ---
 
@@ -157,13 +163,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3378] MOUTARDE BLANCHE VRAC | 1800 | Stock prédit: -1669.6u (-32j restants) → prédit 1800u mais non commandé |
-| [PF0162] MOUTARDE JAUNE VRAC | 1800 | Stock prédit: -3482.6u (-59j restants) → prédit 1800u mais non commandé |
+| [PF3378] MOUTARDE BLANCHE VRAC | 1800 | Stock prédit: -1776.9u (-33j restants) → prédit 1800u mais non commandé |
+| [PF0162] MOUTARDE JAUNE VRAC | 1800 | Stock prédit: -3100.0u (-57j restants) → prédit 1800u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,14 +184,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PI2790] PI MOUTARDE BLANCHE | 2800 | Stock suffisant: 2073.9u (106j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:20.974Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:10.513Z*

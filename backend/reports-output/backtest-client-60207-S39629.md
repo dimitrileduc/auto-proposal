@@ -5,8 +5,8 @@
 - **Client** : BIOFRESH BELGIUM NV-SA (ID: 60207)
 - **Commande réelle** : S39629
 - **Date commande** : 2025-10-08 13:49:43
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 5.6% | 18 produits prédits, 1 corrects |
+| **Précision** | 6.7% | 15 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 10.5% | Score équilibré global |
+| **F1-Score** | 12.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (17)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,23 +163,20 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JOY03] JOY! Organic Apricot Jam 370g | 21 | Stock prédit: 3.1u (5j restants) → prédit 21u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 28 | Stock prédit: -1.6u (-2j restants) → prédit 28u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 18 | Stock prédit: 7.9u (15j restants) → prédit 18u mais non commandé |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 45 | Stock prédit: 17.9u (19j restants) → prédit 45u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 18 | Stock prédit: 7.9u (15j restants) → prédit 18u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 60 | Stock prédit: 8.2u (6j restants) → prédit 60u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 30 | Stock prédit: 11.9u (10j restants) → prédit 30u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 70 | Stock prédit: -125.2u (-80j restants) → prédit 70u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 14 | Stock prédit: -13.8u (-44j restants) → prédit 14u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 14 | Stock prédit: -4.4u (-29j restants) → prédit 14u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 18 | Stock prédit: -8.8u (-29j restants) → prédit 18u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 56 | Stock prédit: -62.3u (-56j restants) → prédit 56u mais non commandé |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 35 | Stock prédit: -14.2u (-36j restants) → prédit 35u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 18 | Stock prédit: -3.7u (-18j restants) → prédit 18u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 126 | Stock prédit: -79.4u (-55j restants) → prédit 126u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 126 | Stock prédit: -79.4u (-55j restants) → prédit 126u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 126 | Stock prédit: -147.9u (-77j restants) → prédit 126u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 35 | Stock prédit: 31.1u (22j restants) → prédit 35u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 28 | Stock prédit: 4.6u (10j restants) → prédit 28u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 21 | Stock prédit: -4.9u (-5j restants) → prédit 21u mais non commandé |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 18 | Stock prédit: 7.6u (15j restants) → prédit 18u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 60 | Stock prédit: 13.8u (12j restants) → prédit 60u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 20 | Stock prédit: 4.6u (12j restants) → prédit 20u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 30 | Stock prédit: 13.8u (12j restants) → prédit 30u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 35 | Stock prédit: -43.8u (-68j restants) → prédit 35u mais non commandé |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 21 | Stock prédit: -20.7u (-53j restants) → prédit 21u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 18 | Stock prédit: -9.0u (-45j restants) → prédit 18u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 18 | Stock prédit: -14.4u (-40j restants) → prédit 18u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 56 | Stock prédit: -72.2u (-61j restants) → prédit 56u mais non commandé |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 28 | Stock prédit: -20.8u (-46j restants) → prédit 28u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 18 | Stock prédit: -16.9u (-52j restants) → prédit 18u mais non commandé |
 
 
 ---
@@ -203,4 +200,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:41.001Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:30.433Z*

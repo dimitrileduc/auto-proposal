@@ -5,8 +5,8 @@
 - **Client** : Lacia (Marias SA) (ID: 56446)
 - **Commande réelle** : S39423
 - **Date commande** : 2025-09-26 09:53:51
-- **Date cutoff système** : 2025-09-25 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-26 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (5)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,18 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| BB/BC-MMP-540ml/Propre | 4732 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| CPL/Intercalaire plastique consigné | 28 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-IND-DIN | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/CA-MMP-540ml/VIDE | 1536 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-EU | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:28.581Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:18.121Z*

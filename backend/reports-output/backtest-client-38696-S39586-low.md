@@ -5,8 +5,8 @@
 - **Client** : AD EYNATTEN DELHAIZE EYNADIS (ID: 38696)
 - **Commande réelle** : S39586
 - **Date commande** : 2025-10-07 06:59:59
-- **Date cutoff système** : 2025-10-06 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,18 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LD007] LD Organic Pineapple Coconut Spread 180 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [LD009] LD Organic Asparagus Spread 180 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [LD010] LD Organic Truffle Spread 135 g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
-| [LD011] LD Organic Kids Spread 180 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [LD012] LD Organic Samphire Spread 135 g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [LD015] LD Onion Spread 180g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: -2.7u (-82j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -183,24 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | Stock suffisant: 1.6u (26j restants > seuil 19j) |
-| [MF0029] MF Tarti Datte chili 250g | 2 | Stock suffisant: 0.8u (7j restants > seuil 19j) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: -0.5u (-8j restants > seuil 19j) |
-| [JF029] JF VOL AU VENT BOCAL 400G | 2 | Stock suffisant: 0.6u (74j restants > seuil 19j) |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock suffisant: -1.0u (-8j restants > seuil 19j) |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | Stock suffisant: -0.9u (-21j restants > seuil 19j) |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 3 | Stock suffisant: 0.7u (14j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | Stock suffisant: 2.1u (6j restants > seuil 19j) |
-| [VID0009] Consigne casier | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 12 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:30.455Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:19.846Z*

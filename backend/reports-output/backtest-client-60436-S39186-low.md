@@ -5,8 +5,8 @@
 - **Client** : LE CELLIER DU BAUDET - épicerie (ID: 60436)
 - **Commande réelle** : S39186
 - **Date commande** : 2025-10-14 06:46:09
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 11.1% | 9 produits prédits, 1 corrects |
-| **Rappel** | 10.0% | 10 produits réels, 1 détectés |
-| **F1-Score** | 10.5% | Score équilibré global |
+| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 33.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (8)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,19 +163,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [SOWA01] SOWA citron menthe 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [SOWA04] SOWA thé glacé pêche 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [SOWA01] SOWA citron menthe 250ml | 2 | Stock prédit: -0.7u (-13j restants) → prédit 2u mais non commandé |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: -0.4u (-13j restants) → prédit 1u mais non commandé |
+| [SOWA04] SOWA thé glacé pêche 250ml | 1 | Stock prédit: -1.4u (-48j restants) → prédit 1u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: -1.4u (-48j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -190,22 +186,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock suffisant: 0.5u (14j restants > seuil 19j) |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: -0.8u (-13j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: -0.8u (-13j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock suffisant: -0.5u (-8j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: -0.5u (-8j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
-| [RISH01] RISH kombucha BIO - original 330ml | 3 | Stock suffisant: 0.8u (18j restants > seuil 19j) |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | Stock suffisant: -1.2u (-46j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:10.786Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:58.925Z*

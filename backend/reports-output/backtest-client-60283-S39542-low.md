@@ -5,8 +5,8 @@
 - **Client** : DELITRAITEUR (ID: 60283)
 - **Commande réelle** : S39542
 - **Date commande** : 2025-10-03 13:14:16
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,22 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 40 | Stock suffisant: -11.2u (-15j restants > seuil 19j) |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 60 | Stock suffisant: -7.6u (-13j restants > seuil 19j) |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 45 | Stock suffisant: 0.5u (0j restants > seuil 19j) |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 60 | Stock suffisant: 14.4u (11j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 50 | Stock suffisant: 31.7u (32j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 25 | Stock suffisant: -12.8u (-21j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 18 | Stock suffisant: -24.4u (-44j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 7 | Stock suffisant: -14.4u (-17j restants > seuil 19j) |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 40 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:10.263Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:58.859Z*

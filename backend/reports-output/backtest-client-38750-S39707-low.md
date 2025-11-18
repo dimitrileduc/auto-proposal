@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET LA CALAMINE GEKEL (ID: 38750)
 - **Commande réelle** : S39707
 - **Date commande** : 2025-10-14 12:44:54
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
-| **Rappel** | 6.3% | 16 produits réels, 1 détectés |
-| **F1-Score** | 11.8% | Score équilibré global |
+| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,13 +133,7 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
@@ -162,7 +156,7 @@
 
 ---
 
-## False Negatives (15)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,28 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.1u (20j restants > seuil 19j) |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock suffisant: -0.3u (-10j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock suffisant: -0.3u (-5j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock suffisant: 0.2u (10j restants > seuil 19j) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock suffisant: -2.0u (-67j restants > seuil 19j) |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock suffisant: -0.9u (-32j restants > seuil 19j) |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock suffisant: -0.5u (-32j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock suffisant: -0.6u (-17j restants > seuil 19j) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock suffisant: -0.1u (-3j restants > seuil 19j) |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: 0.4u (10j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock suffisant: 0.2u (10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:57.281Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:46.123Z*

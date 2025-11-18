@@ -5,8 +5,8 @@
 - **Client** : Wandercoop (ID: 60579)
 - **Commande réelle** : S39420
 - **Date commande** : 2025-10-02 06:12:05
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 10 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,13 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.7u (14j restants) → prédit 1u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.7u (14j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,23 +178,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock suffisant: -1.8u (-34j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: 1.3u (10j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 1.3u (11j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: 0.4u (3j restants > seuil 19j) |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 3 | Stock suffisant: -0.1u (-1j restants > seuil 19j) |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | Stock suffisant: 1.6u (26j restants > seuil 19j) |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 2 | Stock suffisant: 0.6u (9j restants > seuil 19j) |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 4 | Stock suffisant: -1.0u (-13j restants > seuil 19j) |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 3 | Stock suffisant: -0.3u (-3j restants > seuil 19j) |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:41.210Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:31.445Z*

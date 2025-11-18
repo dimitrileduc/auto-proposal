@@ -5,8 +5,8 @@
 - **Client** : MDH FOODSERVICE (ID: 60488)
 - **Commande réelle** : S39326
 - **Date commande** : 2025-09-22 09:26:25
-- **Date cutoff système** : 2025-09-21 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 73.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 3.20 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 88.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,8 +139,8 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JOY03] JOY! Organic Apricot Jam 370g | 10 | 10 | 0.0 | 0.0% | 🎯 exact |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 20 | 20 | 0.0 | 0.0% | 🎯 exact |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 15 | 20 | 5.0 | 25.0% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 5 | 2 | 3.0 | 150.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 11 | 3 | 8.0 | 266.7% | ✅ partial |
 
@@ -167,9 +167,9 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: -0.7u (-12j restants) → prédit 2u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.6u (-38j restants) → prédit 1u mais non commandé |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 3 | Stock prédit: -0.5u (-9j restants) → prédit 3u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.7u (-39j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -193,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:14.984Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:06.321Z*

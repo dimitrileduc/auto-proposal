@@ -5,8 +5,8 @@
 - **Client** : BIOK BOIS DE VILLERS (ID: 60210)
 - **Commande réelle** : S39584
 - **Date commande** : 2025-10-08 07:05:30
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 14 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (14)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,27 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | Stock suffisant: -0.1u (0j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [REB05] REB chips bio - sel de mer 35g | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 6 | Stock suffisant: -0.4u (-2j restants > seuil 19j) |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock suffisant: 0.4u (9j restants > seuil 19j) |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock suffisant: 0.0u (1j restants > seuil 19j) |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock suffisant: 0.7u (16j restants > seuil 19j) |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 3 | Stock suffisant: -2.2u (-38j restants > seuil 19j) |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock suffisant: -0.6u (-12j restants > seuil 19j) |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 0.9u (14j restants > seuil 19j) |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 1.3u (25j restants > seuil 19j) |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: 0.9u (9j restants > seuil 19j) |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | Stock suffisant: -0.3u (-4j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:18.285Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:08.430Z*

@@ -1,0 +1,22 @@
+{
+  "clientId": 17274,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper Malmedy",
+  "orderName": "S39634",
+  "orderDate": "2025-10-09 06:08:46",
+  "cutoffDate": "2025-10-09 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 11,
+    "fp": 3,
+    "fn": 10,
+    "precision": 0.7857142857142857,
+    "recall": 0.5238095238095238,
+    "f1Score": 0.6285714285714286,
+    "mae": 0.18181818181818182,
+    "mape": 11.363636363636363
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 2
+  }
+}

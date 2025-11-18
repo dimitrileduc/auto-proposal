@@ -5,8 +5,8 @@
 - **Client** : SCHMETS  DELICATESSES, ACHAT (ID: 8555)
 - **Commande réelle** : S39663
 - **Date commande** : 2025-10-13 08:25:46
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,12 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
+| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: -19.1u (-22j restants) → prédit 40u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,22 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 40 | Stock suffisant: 27.1u (44j restants > seuil 19j) |
-| [PF0502] FILOU MOUTARDE SQUEEZE 300 ML | 40 | Stock suffisant: 14.9u (12j restants > seuil 19j) |
-| [PF1539] FILOU BOULETTE CHASSEUR 800G | 2 | Stock suffisant: -0.2u (-1j restants > seuil 19j) |
-| [PF1224] FILOU BOULETTES TOMATE 800 GR | 4 | Stock suffisant: 0.4u (5j restants > seuil 19j) |
-| [PF0084] FILOU CARBONNADES 800 GR | 4 | Stock suffisant: 0.4u (5j restants > seuil 19j) |
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 65 | Stock suffisant: -15.1u (-5j restants > seuil 19j) |
-| [PF0094] FILOU MOUTARDE 700 GR | 20 | Stock suffisant: 0.6u (0j restants > seuil 19j) |
-| [PF0096] FILOU MOUTARDE 3 KG | 10 | Stock suffisant: 1.7u (26j restants > seuil 19j) |
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 44 | Stock suffisant: 12.1u (7j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:20.810Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:10.063Z*

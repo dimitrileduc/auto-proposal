@@ -5,8 +5,8 @@
 - **Client** : Au gré du vent (ID: 71559)
 - **Commande réelle** : S39434
 - **Date commande** : 2025-10-01 07:27:06
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 9 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,19 +158,11 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH05] RISH kombucha BIO - rose 750ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -185,22 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | Stock suffisant: -0.4u (-30j restants > seuil 19j) |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock suffisant: -1.7u (-46j restants > seuil 19j) |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Stock suffisant: -1.7u (-58j restants > seuil 19j) |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Stock suffisant: -1.7u (-46j restants > seuil 19j) |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | Stock suffisant: 0.2u (10j restants > seuil 19j) |
-| [WIG03] WIGNAC cidre naturel bio 750ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock suffisant: -0.8u (-39j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:38.393Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:26.303Z*

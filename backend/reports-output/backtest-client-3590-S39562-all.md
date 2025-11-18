@@ -5,8 +5,8 @@
 - **Client** : MAISON DESPRIET SA (ID: 3590)
 - **Commande réelle** : S39562
 - **Date commande** : 2025-10-06 09:21:48
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 9 produits prédits, 3 corrects |
+| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
 | **Rappel** | 75.0% | 4 produits réels, 3 détectés |
-| **F1-Score** | 46.2% | Score équilibré global |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 11.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 56.1% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 9.67 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 42.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -140,12 +140,12 @@
 |---------|--------|------|-----------|----------|------|
 | [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact |
 | [PF0075] FILOU CHASSEUR  10 L | 104 | 88 | 16.0 | 18.2% | ✅ partial |
-| [PF3266] JF SAUCE BEARNAISE 3L | 30 | 12 | 18.0 | 150.0% | ✅ partial |
+| [PF3266] JF SAUCE BEARNAISE 3L | 25 | 12 | 13.0 | 108.3% | ✅ partial |
 
 
 ---
 
-## False Positives (6)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,12 +165,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 4 | Stock prédit: 2.3u (6j restants) → prédit 4u mais non commandé |
-| [PF0524] FILOU SAUCE TOMATE 815 GR | 7 | Stock prédit: 1.7u (13j restants) → prédit 7u mais non commandé |
-| [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
-| [PF3290] JF MAYO BARAKI 925ML | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
-| [PF0088] FILOU VOL AU VENT 800 GR | 2 | Stock prédit: -1.6u (-65j restants) → prédit 2u mais non commandé |
-| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -1.1u (-87j restants) → prédit 1u mais non commandé |
+| [PF1140] FILOU SAUCE CHASSEUR 850G | 4 | Stock prédit: 1.9u (5j restants) → prédit 4u mais non commandé |
+| [PF3271] JF WASABI MAYONNAISE 925ML | 1 | Stock prédit: 0.6u (29j restants) → prédit 1u mais non commandé |
+| [PF0524] FILOU SAUCE TOMATE 815 GR | 7 | Stock prédit: 1.6u (13j restants) → prédit 7u mais non commandé |
+| [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-29j restants) → prédit 1u mais non commandé |
+| [PF3290] JF MAYO BARAKI 925ML | 1 | Stock prédit: -0.4u (-20j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -195,9 +194,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF0084] FILOU CARBONNADES 800 GR | 1 | Stock suffisant: 0.7u (47j restants > seuil 19j) |
+| [PF0084] FILOU CARBONNADES 800 GR | 1 | Stock suffisant: 0.7u (46j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:00.848Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:50.170Z*

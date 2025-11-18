@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET LA CALAMINE GEKEL (ID: 38750)
 - **Commande réelle** : S39707
 - **Date commande** : 2025-10-14 12:44:54
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 46.4% | 28 produits prédits, 13 corrects |
+| **Précision** | 54.2% | 24 produits prédits, 13 corrects |
 | **Rappel** | 81.3% | 16 produits réels, 13 détectés |
-| **F1-Score** | 59.1% | Score équilibré global |
+| **F1-Score** | 65.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.23 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 15.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 10 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.08 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 3.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 12 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -141,9 +141,9 @@
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -155,7 +155,7 @@
 
 ---
 
-## False Positives (15)
+## False Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -175,21 +175,17 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -0.3u (-11j restants) → prédit 2u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -1.0u (-22j restants) → prédit 2u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.4u (10j restants) → prédit 2u mais non commandé |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.2u (5j restants) → prédit 2u mais non commandé |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | Stock prédit: 0.2u (10j restants) → prédit 2u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock prédit: -0.2u (-9j restants) → prédit 2u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.4u (30j restants) → prédit 1u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -0.4u (-12j restants) → prédit 2u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock prédit: -0.4u (-12j restants) → prédit 2u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.4u (-12j restants) → prédit 2u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.6u (21j restants) → prédit 2u mais non commandé |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.1u (12j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.2u (-18j restants) → prédit 1u mais non commandé |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -0.2u (-18j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.3u (-17j restants) → prédit 1u mais non commandé |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock prédit: -3.0u (-124j restants) → prédit 1u mais non commandé |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: -0.3u (-41j restants) → prédit 1u mais non commandé |
-| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.0u (8j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -214,11 +210,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: 0.1u (20j restants > seuil 19j) |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:57.278Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:46.121Z*

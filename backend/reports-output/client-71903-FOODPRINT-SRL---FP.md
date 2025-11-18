@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - FOODPRINT SRL - FP
 
-**📅 Date:** 17/11/2025 12:58
+**📅 Date:** 18/11/2025 11:42
 **🆔 Client ID:** 71903
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.0s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
@@ -11,8 +11,8 @@
 
 
 **Produits à risque détectés: 104**
-- Urgents (rupture ≤ 0j): 0
-- Modérés (0 < rupture ≤ 19j): 0
+- Urgents (rupture ≤ 0j): 104
+- Modérés (0 < rupture ≤ 30j): 0
 
 **Total produits (Phase 1): 104**
 **Quantité totale brute: 5195 unités**
@@ -21,13 +21,13 @@
 
 
 <details>
-<summary>🟡 <strong>[ORG01] ORGANICA crunchy fruit ananas 16g</strong> (ID: 18901) - 36 unités</summary>
+<summary>🔴 <strong>[ORG01] ORGANICA crunchy fruit ananas 16g</strong> (ID: 18901) - 36 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 72.0000
+- **Stock restant estimé**: -36.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -46,13 +46,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[ORG03] ORGANICA crunchy fruit myrtille 16g</strong> (ID: 18906) - 54 unités</summary>
+<summary>🔴 <strong>[ORG03] ORGANICA crunchy fruit myrtille 16g</strong> (ID: 18906) - 54 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 108.0000
+- **Stock restant estimé**: -54.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -71,13 +71,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[ORG04] ORGANICA crunchy fruit fraise 12g</strong> (ID: 18903) - 90 unités</summary>
+<summary>🔴 <strong>[ORG04] ORGANICA crunchy fruit fraise 12g</strong> (ID: 18903) - 90 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 180.0000
+- **Stock restant estimé**: -90.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -96,13 +96,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[ORG08] ORGANICA crunchy fruit framboise 12g</strong> (ID: 18904) - 72 unités</summary>
+<summary>🔴 <strong>[ORG08] ORGANICA crunchy fruit framboise 12g</strong> (ID: 18904) - 72 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 144.0000
+- **Stock restant estimé**: -72.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -121,13 +121,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[ORG09] ORGANICA crunchy fruit cerise 20g</strong> (ID: 18902) - 54 unités</summary>
+<summary>🔴 <strong>[ORG09] ORGANICA crunchy fruit cerise 20g</strong> (ID: 18902) - 54 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 108.0000
+- **Stock restant estimé**: -54.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -146,13 +146,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[ORG10] ORGANICA crunchy fruit mangue 18g</strong> (ID: 18905) - 36 unités</summary>
+<summary>🔴 <strong>[ORG10] ORGANICA crunchy fruit mangue 18g</strong> (ID: 18905) - 36 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 71.0000
+- **Stock restant estimé**: -36.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -171,13 +171,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv01] Cerneaux de noix nature bio vrac 1,8 kg</strong> (ID: 18936) - 6 unités</summary>
+<summary>🔴 <strong>[fsv01] Cerneaux de noix nature bio vrac 1,8 kg</strong> (ID: 18936) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 11.0000
+- **Stock restant estimé**: -6.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -196,13 +196,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv02] Noix de cajou nature bio vrac 2,8kg </strong> (ID: 18841) - 10 unités</summary>
+<summary>🔴 <strong>[fsv02] Noix de cajou nature bio vrac 2,8kg </strong> (ID: 18841) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 20.0000
+- **Stock restant estimé**: -15.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -221,13 +221,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv03] Noisette nature bio vrac 2,8kg </strong> (ID: 18838) - 8 unités</summary>
+<summary>🔴 <strong>[fsv03] Noisette nature bio vrac 2,8kg </strong> (ID: 18838) - 8 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 15.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -246,13 +246,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv05] Noix de pecan nature bio vrac 2,2kg </strong> (ID: 18843) - 6 unités</summary>
+<summary>🔴 <strong>[fsv05] Noix de pecan nature bio vrac 2,2kg </strong> (ID: 18843) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 11.0000
+- **Stock restant estimé**: -6.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -271,13 +271,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv06] Noix du Brésil nature bio vrac 3kg</strong> (ID: 18844) - 5 unités</summary>
+<summary>🔴 <strong>[fsv06] Noix du Brésil nature bio vrac 3kg</strong> (ID: 18844) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -295,13 +295,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> (ID: 18842) - 3 unités</summary>
+<summary>🔴 <strong>[fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> (ID: 18842) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 5.0000
+- **Stock restant estimé**: -1.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -320,13 +320,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv11] Noix de cajou mexicaines bio vrac 2,8kg </strong> (ID: 18840) - 4 unités</summary>
+<summary>🔴 <strong>[fsv11] Noix de cajou mexicaines bio vrac 2,8kg </strong> (ID: 18840) - 4 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 4.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -344,13 +344,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv13] Pistaches grillées salées bio vrac 2,6kg </strong> (ID: 18845) - 5 unités</summary>
+<summary>🔴 <strong>[fsv13] Pistaches grillées salées bio vrac 2,6kg </strong> (ID: 18845) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -368,13 +368,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv14] Amandes grillées bio vrac 2,8kg</strong> (ID: 18834) - 3 unités</summary>
+<summary>🔴 <strong>[fsv14] Amandes grillées bio vrac 2,8kg</strong> (ID: 18834) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 3.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -392,13 +392,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv17] Mélange de noix bio vrac 2,75kg</strong> (ID: 18837) - 3 unités</summary>
+<summary>🔴 <strong>[fsv17] Mélange de noix bio vrac 2,75kg</strong> (ID: 18837) - 3 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 6.0000
+- **Stock restant estimé**: -1.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -417,13 +417,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv18] Mendiant bio vrac 2,8kg</strong> (ID: 18836) - 5 unités</summary>
+<summary>🔴 <strong>[fsv18] Mendiant bio vrac 2,8kg</strong> (ID: 18836) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -441,13 +441,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[fsv09] Noix de cajou grillées salées bio vrac 2,8kg </strong> (ID: 18839) - 5 unités</summary>
+<summary>🔴 <strong>[fsv09] Noix de cajou grillées salées bio vrac 2,8kg </strong> (ID: 18839) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -465,13 +465,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> (ID: 18828) - 180 unités</summary>
+<summary>🔴 <strong>[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> (ID: 18828) - 180 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 180.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -489,13 +489,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> (ID: 18826) - 180 unités</summary>
+<summary>🔴 <strong>[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> (ID: 18826) - 180 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 180.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -513,13 +513,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[LEA04] LEAMO ginger beer bio 750ml</strong> (ID: 18870) - 10 unités</summary>
+<summary>🔴 <strong>[LEA04] LEAMO ginger beer bio 750ml</strong> (ID: 18870) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 10.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -537,13 +537,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[LEA09] LEAMO cola bio 330ml</strong> (ID: 18868) - 10 unités</summary>
+<summary>🔴 <strong>[LEA09] LEAMO cola bio 330ml</strong> (ID: 18868) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 10.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -561,13 +561,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[LEA10] LEAMO ginger beer bio 330ml</strong> (ID: 18869) - 15 unités</summary>
+<summary>🔴 <strong>[LEA10] LEAMO ginger beer bio 330ml</strong> (ID: 18869) - 15 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 15.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -585,13 +585,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> (ID: 18825) - 120 unités</summary>
+<summary>🔴 <strong>[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> (ID: 18825) - 120 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 120.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -609,13 +609,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> (ID: 18827) - 60 unités</summary>
+<summary>🔴 <strong>[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> (ID: 18827) - 60 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 60.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -633,13 +633,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[DAM05] Dr. Antonio Martins eau de coco bio & fairtrade 330ml</strong> (ID: 18846) - 30 unités</summary>
+<summary>🔴 <strong>[DAM05] Dr. Antonio Martins eau de coco bio & fairtrade 330ml</strong> (ID: 18846) - 30 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 30.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -657,13 +657,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[SOWA01] SOWA citron menthe 250ml</strong> (ID: 18928) - 6 unités</summary>
+<summary>🔴 <strong>[SOWA01] SOWA citron menthe 250ml</strong> (ID: 18928) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 12.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -682,13 +682,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[SOWA02] SOWA bissap 250ml</strong> (ID: 18927) - 6 unités</summary>
+<summary>🔴 <strong>[SOWA02] SOWA bissap 250ml</strong> (ID: 18927) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 12.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -707,13 +707,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[SOWA03] SOWA ginger beer ardent 250ml</strong> (ID: 18929) - 6 unités</summary>
+<summary>🔴 <strong>[SOWA03] SOWA ginger beer ardent 250ml</strong> (ID: 18929) - 6 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 12.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -732,13 +732,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[SOWA04] SOWA thé glacé pêche 250ml</strong> (ID: 18930) - 5 unités</summary>
+<summary>🔴 <strong>[SOWA04] SOWA thé glacé pêche 250ml</strong> (ID: 18930) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 10.0000
+- **Stock restant estimé**: -8.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -757,13 +757,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[KLAK01] KLAK Maté 330ml</strong> (ID: 18864) - 2 unités</summary>
+<summary>🔴 <strong>[KLAK01] KLAK Maté 330ml</strong> (ID: 18864) - 2 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 4.0000
+- **Stock restant estimé**: -2.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -782,13 +782,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> (ID: 18910) - 13 unités</summary>
+<summary>🔴 <strong>[PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> (ID: 18910) - 13 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 25.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -807,13 +807,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> (ID: 18908) - 10 unités</summary>
+<summary>🔴 <strong>[PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> (ID: 18908) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 25.0000
+- **Stock restant estimé**: -20.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -833,13 +833,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> (ID: 18907) - 18 unités</summary>
+<summary>🔴 <strong>[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> (ID: 18907) - 18 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 35.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -858,13 +858,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> (ID: 18909) - 26 unités</summary>
+<summary>🔴 <strong>[PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> (ID: 18909) - 26 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 52.0000
+- **Stock restant estimé**: -27.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -883,13 +883,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[BUD02] BUDDY bio functional & energy drink citorn & gingembre - 250ml</strong> (ID: 18830) - 60 unités</summary>
+<summary>🔴 <strong>[BUD02] BUDDY bio functional & energy drink citorn & gingembre - 250ml</strong> (ID: 18830) - 60 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 60.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -907,13 +907,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[BUD03] BUDDY bio functional & energy drink mangue passion - 250ml</strong> (ID: 18832) - 60 unités</summary>
+<summary>🔴 <strong>[BUD03] BUDDY bio functional & energy drink mangue passion - 250ml</strong> (ID: 18832) - 60 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 60.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -931,13 +931,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[BUD04] BUDDY bio functional & energy drink grenade hibiscus - 250ml</strong> (ID: 18831) - 60 unités</summary>
+<summary>🔴 <strong>[BUD04] BUDDY bio functional & energy drink grenade hibiscus - 250ml</strong> (ID: 18831) - 60 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 60.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -955,13 +955,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT01] RITCHIE Orange - verre 275ml</strong> (ID: 18925) - 20 unités</summary>
+<summary>🔴 <strong>[RIT01] RITCHIE Orange - verre 275ml</strong> (ID: 18925) - 20 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 20.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -979,13 +979,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT02] RITCHIE Citron - verre 275ml</strong> (ID: 18918) - 20 unités</summary>
+<summary>🔴 <strong>[RIT02] RITCHIE Citron - verre 275ml</strong> (ID: 18918) - 20 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 20.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1003,13 +1003,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> (ID: 18919) - 5 unités</summary>
+<summary>🔴 <strong>[RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> (ID: 18919) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1027,13 +1027,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT04] RITCHIE Pamplemousse - verre 275ml</strong> (ID: 18926) - 20 unités</summary>
+<summary>🔴 <strong>[RIT04] RITCHIE Pamplemousse - verre 275ml</strong> (ID: 18926) - 20 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 20.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1051,13 +1051,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT05] RITCHIE Cola - verre 275ml</strong> (ID: 18921) - 15 unités</summary>
+<summary>🔴 <strong>[RIT05] RITCHIE Cola - verre 275ml</strong> (ID: 18921) - 15 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 15.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1075,13 +1075,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT06] RITCHIE Cola ZERO - verre 275ml</strong> (ID: 18923) - 5 unités</summary>
+<summary>🔴 <strong>[RIT06] RITCHIE Cola ZERO - verre 275ml</strong> (ID: 18923) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1099,13 +1099,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT07] RITCHIE Orange - canette 330ml</strong> (ID: 18924) - 5 unités</summary>
+<summary>🔴 <strong>[RIT07] RITCHIE Orange - canette 330ml</strong> (ID: 18924) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1123,13 +1123,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT08] RITCHIE Citron - canette 330ml</strong> (ID: 18917) - 5 unités</summary>
+<summary>🔴 <strong>[RIT08] RITCHIE Citron - canette 330ml</strong> (ID: 18917) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1147,13 +1147,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT09] RITCHIE Cola - canette 330ml</strong> (ID: 18920) - 5 unités</summary>
+<summary>🔴 <strong>[RIT09] RITCHIE Cola - canette 330ml</strong> (ID: 18920) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1171,13 +1171,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RIT10] RITCHIE Cola ZERO - canette 330ml</strong> (ID: 18922) - 5 unités</summary>
+<summary>🔴 <strong>[RIT10] RITCHIE Cola ZERO - canette 330ml</strong> (ID: 18922) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1195,13 +1195,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> (ID: 18884) - 90 unités</summary>
+<summary>🔴 <strong>[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> (ID: 18884) - 90 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 90.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1219,13 +1219,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> (ID: 18881) - 180 unités</summary>
+<summary>🔴 <strong>[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> (ID: 18881) - 180 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 180.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1243,13 +1243,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18882) - 180 unités</summary>
+<summary>🔴 <strong>[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> (ID: 18882) - 180 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 180.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1267,13 +1267,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> (ID: 18883) - 180 unités</summary>
+<summary>🔴 <strong>[NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> (ID: 18883) - 180 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 180.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1291,13 +1291,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[KOKO02] KOKO Kombucha citron gingembre 330ml</strong> (ID: 18865) - 40 unités</summary>
+<summary>🔴 <strong>[KOKO02] KOKO Kombucha citron gingembre 330ml</strong> (ID: 18865) - 40 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 40.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1315,13 +1315,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[KOKO03] KOKO Kombucha framboise hibiscus 330ml</strong> (ID: 18866) - 40 unités</summary>
+<summary>🔴 <strong>[KOKO03] KOKO Kombucha framboise hibiscus 330ml</strong> (ID: 18866) - 40 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 40.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1339,13 +1339,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[KOKO01] KOKO Kombucha original 330ml</strong> (ID: 18867) - 40 unités</summary>
+<summary>🔴 <strong>[KOKO01] KOKO Kombucha original 330ml</strong> (ID: 18867) - 40 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 40.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1363,13 +1363,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>Palette EURO</strong> (ID: 19381) - 333 unités</summary>
+<summary>🔴 <strong>Palette EURO</strong> (ID: 19381) - 333 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 333.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1387,13 +1387,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> (ID: 18892) - 42 unités</summary>
+<summary>🔴 <strong>[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> (ID: 18892) - 42 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 84.0000
+- **Stock restant estimé**: -36.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1412,13 +1412,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> (ID: 18891) - 36 unités</summary>
+<summary>🔴 <strong>[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> (ID: 18891) - 36 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 84.0000
+- **Stock restant estimé**: -36.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1438,13 +1438,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> (ID: 18888) - 18 unités</summary>
+<summary>🔴 <strong>[NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> (ID: 18888) - 18 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 35.0000
+- **Stock restant estimé**: -12.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1463,13 +1463,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> (ID: 18895) - 30 unités</summary>
+<summary>🔴 <strong>[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> (ID: 18895) - 30 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 60.0000
+- **Stock restant estimé**: -36.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1488,13 +1488,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> (ID: 18894) - 42 unités</summary>
+<summary>🔴 <strong>[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> (ID: 18894) - 42 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 84.0000
+- **Stock restant estimé**: -60.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1513,13 +1513,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> (ID: 18861) - 10 unités</summary>
+<summary>🔴 <strong>[UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> (ID: 18861) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 10.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1537,13 +1537,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[UPI08] Jus de pomme-citron bio d'UPIGNY 250ml</strong> (ID: 18857) - 13 unités</summary>
+<summary>🔴 <strong>[UPI08] Jus de pomme-citron bio d'UPIGNY 250ml</strong> (ID: 18857) - 13 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 25.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1562,13 +1562,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> (ID: 18859) - 13 unités</summary>
+<summary>🔴 <strong>[UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> (ID: 18859) - 13 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 25.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1587,13 +1587,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> (ID: 18856) - 15 unités</summary>
+<summary>🔴 <strong>[UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> (ID: 18856) - 15 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 15.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1611,13 +1611,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml</strong> (ID: 18863) - 10 unités</summary>
+<summary>🔴 <strong>[UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml</strong> (ID: 18863) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 20.0000
+- **Stock restant estimé**: -10.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1636,13 +1636,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[JOY08] JOY! Confiture bio à la framboise 370g</strong> (ID: 18853) - 196 unités</summary>
+<summary>🔴 <strong>[JOY08] JOY! Confiture bio à la framboise 370g</strong> (ID: 18853) - 196 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 196.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1660,13 +1660,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml </strong> (ID: 18815) - 8 unités</summary>
+<summary>🔴 <strong>[OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml </strong> (ID: 18815) - 8 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 15.0000
+- **Stock restant estimé**: -5.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1685,13 +1685,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[WIG01] WIGNAC cidre naturel bio 330ml</strong> (ID: 18819) - 10 unités</summary>
+<summary>🔴 <strong>[WIG01] WIGNAC cidre naturel bio 330ml</strong> (ID: 18819) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 10.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1709,13 +1709,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[WIG02] WIGNAC cidre rosé bio 330ml</strong> (ID: 18823) - 20 unités</summary>
+<summary>🔴 <strong>[WIG02] WIGNAC cidre rosé bio 330ml</strong> (ID: 18823) - 20 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 20.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1733,13 +1733,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[WIG03] WIGNAC cidre naturel bio 750ml</strong> (ID: 18820) - 30 unités</summary>
+<summary>🔴 <strong>[WIG03] WIGNAC cidre naturel bio 750ml</strong> (ID: 18820) - 30 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 30.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1757,13 +1757,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[WIG04] WIGNAC cidre rosé bio 750ml</strong> (ID: 18824) - 20 unités</summary>
+<summary>🔴 <strong>[WIG04] WIGNAC cidre rosé bio 750ml</strong> (ID: 18824) - 20 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 20.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1781,13 +1781,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[WIG06] WIGNAC cidre naturel bio sans alcool 330ml</strong> (ID: 18821) - 30 unités</summary>
+<summary>🔴 <strong>[WIG06] WIGNAC cidre naturel bio sans alcool 330ml</strong> (ID: 18821) - 30 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 30.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1805,13 +1805,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> (ID: 18822) - 20 unités</summary>
+<summary>🔴 <strong>[WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> (ID: 18822) - 20 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 20.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1829,13 +1829,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18912) - 25 unités</summary>
+<summary>🔴 <strong>[RISH02] RISH kombucha BIO - hibiscus 330ml</strong> (ID: 18912) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 50.0000
+- **Stock restant estimé**: -25.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1855,13 +1855,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RISH03] RISH kombucha BIO - gingembre 330ml</strong> (ID: 18911) - 25 unités</summary>
+<summary>🔴 <strong>[RISH03] RISH kombucha BIO - gingembre 330ml</strong> (ID: 18911) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 60.0000
+- **Stock restant estimé**: -35.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1881,13 +1881,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RISH04] RISH kombucha BIO - smash basil 330ml</strong> (ID: 18915) - 25 unités</summary>
+<summary>🔴 <strong>[RISH04] RISH kombucha BIO - smash basil 330ml</strong> (ID: 18915) - 25 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 60.0000
+- **Stock restant estimé**: -35.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1907,13 +1907,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RISH01] RISH kombucha BIO - original 330ml</strong> (ID: 18913) - 23 unités</summary>
+<summary>🔴 <strong>[RISH01] RISH kombucha BIO - original 330ml</strong> (ID: 18913) - 23 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 45.0000
+- **Stock restant estimé**: -35.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1932,13 +1932,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[RISH05] RISH kombucha BIO - rose 750ml</strong> (ID: 18914) - 8 unités</summary>
+<summary>🔴 <strong>[RISH05] RISH kombucha BIO - rose 750ml</strong> (ID: 18914) - 8 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 15.0000
+- **Stock restant estimé**: -12.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1957,13 +1957,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[JOY03] JOY! Confiture bio à l'abricot 370g</strong> (ID: 18849) - 203 unités</summary>
+<summary>🔴 <strong>[JOY03] JOY! Confiture bio à l'abricot 370g</strong> (ID: 18849) - 203 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 203.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -1981,13 +1981,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> (ID: 18855) - 46 unités</summary>
+<summary>🔴 <strong>[UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> (ID: 18855) - 46 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 46.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2005,13 +2005,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml</strong> (ID: 18860) - 10 unités</summary>
+<summary>🔴 <strong>[UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml</strong> (ID: 18860) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 10.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2029,13 +2029,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[OCC02] OCCHIOLINO premium limoncello 500ml</strong> (ID: 18818) - 5 unités</summary>
+<summary>🔴 <strong>[OCC02] OCCHIOLINO premium limoncello 500ml</strong> (ID: 18818) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2053,13 +2053,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[OCC05] OCCHIOLINO premium arancello 500ml</strong> (ID: 18817) - 5 unités</summary>
+<summary>🔴 <strong>[OCC05] OCCHIOLINO premium arancello 500ml</strong> (ID: 18817) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 5.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2077,13 +2077,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> (ID: 18816) - 10 unités</summary>
+<summary>🔴 <strong>[OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> (ID: 18816) - 10 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 10.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2101,13 +2101,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[JOY02] JOY! Confiture bio à la fraise 370g</strong> (ID: 18852) - 196 unités</summary>
+<summary>🔴 <strong>[JOY02] JOY! Confiture bio à la fraise 370g</strong> (ID: 18852) - 196 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 196.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2125,13 +2125,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[JOY04] JOY! Confiture bio aux 4 fruits 370g</strong> (ID: 18847) - 199 unités</summary>
+<summary>🔴 <strong>[JOY04] JOY! Confiture bio aux 4 fruits 370g</strong> (ID: 18847) - 199 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 199.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2149,13 +2149,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[JOY06] JOY! Confiture bio à la rhubarbe 370g</strong> (ID: 18854) - 257 unités</summary>
+<summary>🔴 <strong>[JOY06] JOY! Confiture bio à la rhubarbe 370g</strong> (ID: 18854) - 257 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 257.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2173,13 +2173,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> (ID: 18896) - 36 unités</summary>
+<summary>🔴 <strong>[NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> (ID: 18896) - 36 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 36.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2197,13 +2197,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> (ID: 18893) - 48 unités</summary>
+<summary>🔴 <strong>[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> (ID: 18893) - 48 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 48.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2221,13 +2221,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> (ID: 18890) - 36 unités</summary>
+<summary>🔴 <strong>[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> (ID: 18890) - 36 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 36.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2245,13 +2245,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> (ID: 18889) - 36 unités</summary>
+<summary>🔴 <strong>[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> (ID: 18889) - 36 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 36.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2269,13 +2269,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> (ID: 18887) - 12 unités</summary>
+<summary>🔴 <strong>[NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> (ID: 18887) - 12 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 12.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2293,13 +2293,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> (ID: 18886) - 12 unités</summary>
+<summary>🔴 <strong>[NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> (ID: 18886) - 12 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 12.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2317,13 +2317,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[JOY05] JOY! Confiture bio à la cerise 370g</strong> (ID: 18850) - 200 unités</summary>
+<summary>🔴 <strong>[JOY05] JOY! Confiture bio à la cerise 370g</strong> (ID: 18850) - 200 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 200.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2341,13 +2341,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[JOY07] JOY! Confiture bio à la figue 370g</strong> (ID: 18851) - 281 unités</summary>
+<summary>🔴 <strong>[JOY07] JOY! Confiture bio à la figue 370g</strong> (ID: 18851) - 281 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
+- **Consommation/jour**: 281.0000
 - **Stock restant estimé**: 0.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2365,13 +2365,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18809) - 56 unités</summary>
+<summary>🔴 <strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> (ID: 18809) - 56 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 336.0000
+- **Stock restant estimé**: -280.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2394,13 +2394,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18808) - 56 unités</summary>
+<summary>🔴 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18808) - 56 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 392.0000
+- **Stock restant estimé**: -336.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2424,13 +2424,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> (ID: 18806) - 56 unités</summary>
+<summary>🔴 <strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> (ID: 18806) - 56 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 504.0000
+- **Stock restant estimé**: -448.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2453,13 +2453,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> (ID: 18810) - 56 unités</summary>
+<summary>🔴 <strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> (ID: 18810) - 56 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 504.0000
+- **Stock restant estimé**: -392.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2483,13 +2483,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB04] ReBEL chips premium & bio - thym/romarin125g</strong> (ID: 18812) - 56 unités</summary>
+<summary>🔴 <strong>[REB04] ReBEL chips premium & bio - thym/romarin125g</strong> (ID: 18812) - 56 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 504.0000
+- **Stock restant estimé**: -392.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2513,13 +2513,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB05] ReBEL chips premium & bio - sel de mer 35g</strong> (ID: 18811) - 64 unités</summary>
+<summary>🔴 <strong>[REB05] ReBEL chips premium & bio - sel de mer 35g</strong> (ID: 18811) - 64 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 214.0000
+- **Stock restant estimé**: -150.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2540,13 +2540,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB06] ReBEL chips premium & bio - paprika fumé 35g</strong> (ID: 18807) - 64 unités</summary>
+<summary>🔴 <strong>[REB06] ReBEL chips premium & bio - paprika fumé 35g</strong> (ID: 18807) - 64 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 128.0000
+- **Stock restant estimé**: -64.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -2565,13 +2565,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18813) - 56 unités</summary>
+<summary>🔴 <strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> (ID: 18813) - 56 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: Infinity
-- **Stock restant estimé**: 0.00
+- **Consommation/jour**: 168.0000
+- **Stock restant estimé**: -112.00
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 

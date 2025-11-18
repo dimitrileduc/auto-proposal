@@ -5,8 +5,8 @@
 - **Client** : BEES COOP (ID: 38709)
 - **Commande réelle** : S39216
 - **Date commande** : 2025-09-16 08:36:35
-- **Date cutoff système** : 2025-09-15 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-16 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,12 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.7u (23j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,22 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 2 | Stock suffisant: -0.2u (-13j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock suffisant: 0.0u (1j restants > seuil 19j) |
-| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock suffisant: 0.6u (14j restants > seuil 19j) |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 6 | Stock suffisant: 1.2u (7j restants > seuil 19j) |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: -0.7u (-31j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock suffisant: 0.4u (8j restants > seuil 19j) |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock suffisant: 2.1u (27j restants > seuil 19j) |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 2 | Stock suffisant: 0.8u (34j restants > seuil 19j) |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock suffisant: 0.3u (5j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:52.582Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:43.921Z*

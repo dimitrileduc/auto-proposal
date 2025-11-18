@@ -5,8 +5,8 @@
 - **Client** : ILIS    SA (ID: 3585)
 - **Commande réelle** : S39664
 - **Date commande** : 2025-10-10 09:19:46
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-10 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 1 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 1 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -157,12 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | Stock prédit: 0.0u (0j restants) → prédit 52u mais non commandé |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | Stock prédit: -100.3u (-26j restants) → prédit 52u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -177,14 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | Stock suffisant: 23.2u (1j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:43.582Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:35.497Z*

@@ -5,8 +5,8 @@
 - **Client** : DOMAINE DE RONCHINNE (ID: 60291)
 - **Commande réelle** : S39452
 - **Date commande** : 2025-10-01 07:17:25
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 34.6% | 26 produits prédits, 9 corrects |
-| **Rappel** | 81.8% | 11 produits réels, 9 détectés |
-| **F1-Score** | 48.6% | Score équilibré global |
+| **Précision** | 34.5% | 29 produits prédits, 10 corrects |
+| **Rappel** | 90.9% | 11 produits réels, 10 détectés |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.78 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 61.1% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1.20 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 105.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (9)
+## True Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,16 +142,17 @@
 | [RIT05] RITCHIE Cola - verre 275ml | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [RIT01] RITCHIE Orange - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [fsv17] Mélange de noix bio vrac 2,75kg | 5 | 1 | 4.0 | 400.0% | ✅ partial |
+| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [RIT11] RITCHIE Orange Sanguine - verre 275ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [RIT08] RITCHIE Citron - canette 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (17)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -171,28 +172,30 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: 0.6u (6j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock prédit: 2.3u (17j restants) → prédit 3u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 1.4u (12j restants) → prédit 2u mais non commandé |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.6u (7j restants) → prédit 2u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.7u (12j restants) → prédit 1u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: 1.1u (16j restants) → prédit 2u mais non commandé |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
-| [fsv08] Banana chips bio vrac 1,6kg | 4 | Stock prédit: 0.6u (5j restants) → prédit 4u mais non commandé |
-| [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
-| [RIT07] RITCHIE Orange - canette 330ml | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -1.2u (-22j restants) → prédit 1u mais non commandé |
-| [OCC05] OCCHIOLINO premium arancello 500ml | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
-| [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: -0.4u (-16j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-29j restants) → prédit 1u mais non commandé |
-| [RISH05] RISH kombucha BIO - rose 750ml | 1 | Stock prédit: -0.9u (-76j restants) → prédit 1u mais non commandé |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: 0.4u (3j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock prédit: 2.1u (13j restants) → prédit 3u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 1.4u (13j restants) → prédit 2u mais non commandé |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.5u (5j restants) → prédit 2u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 0.5u (5j restants) → prédit 2u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 3 | Stock prédit: 0.8u (8j restants) → prédit 3u mais non commandé |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: 0.6u (16j restants) → prédit 1u mais non commandé |
+| [fsv08] Banana chips bio vrac 1,6kg | 4 | Stock prédit: 0.4u (2j restants) → prédit 4u mais non commandé |
+| [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | Stock prédit: 2.9u (18j restants) → prédit 5u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: 0.9u (23j restants) → prédit 2u mais non commandé |
+| [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
+| [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
+| [RIT07] RITCHIE Orange - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.6u (-16j restants) → prédit 1u mais non commandé |
+| [OCC05] OCCHIOLINO premium arancello 500ml | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
+| [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.5u (28j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-30j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -212,10 +215,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 1 | Stock suffisant: 2.3u (36j restants > seuil 19j) |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock suffisant: 3.6u (32j restants > seuil 19j) |
+| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock suffisant: 0.7u (37j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:03.917Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:51.373Z*

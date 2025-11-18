@@ -5,8 +5,8 @@
 - **Client** : Au gré du vent (ID: 71559)
 - **Commande réelle** : S39434
 - **Date commande** : 2025-10-01 07:27:06
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.5% | 16 produits prédits, 6 corrects |
-| **Rappel** | 66.7% | 9 produits réels, 6 détectés |
-| **F1-Score** | 48.0% | Score équilibré global |
+| **Précision** | 10.0% | 10 produits prédits, 1 corrects |
+| **Rappel** | 11.1% | 9 produits réels, 1 détectés |
+| **F1-Score** | 10.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.83 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (6)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,17 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 3 | 1 | 2.0 | 200.0% | ✅ partial |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 3 | 1 | 2.0 | 200.0% | ✅ partial |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (10)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -168,21 +163,20 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: 0.2u (10j restants) → prédit 2u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: 0.8u (27j restants) → prédit 2u mais non commandé |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock prédit: 0.3u (8j restants) → prédit 2u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: 0.7u (24j restants) → prédit 2u mais non commandé |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | Stock prédit: 0.3u (20j restants) → prédit 1u mais non commandé |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | Stock prédit: 0.3u (20j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: -0.8u (-39j restants) → prédit 1u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -2.2u (-72j restants) → prédit 2u mais non commandé |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | Stock prédit: -0.8u (-46j restants) → prédit 2u mais non commandé |
-| [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 2 | Stock prédit: -1.8u (-102j restants) → prédit 2u mais non commandé |
-| [LV146] LV Sauce Aïoli 200 ml | 1 | Stock prédit: -1.4u (-68j restants) → prédit 1u mais non commandé |
-| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.6u (-64j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -202,11 +196,16 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [WIG03] WIGNAC cidre naturel bio 750ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [WIG03] WIGNAC cidre naturel bio 750ml | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:38.386Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:26.300Z*

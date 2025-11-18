@@ -5,8 +5,8 @@
 - **Client** : Epicerie Uhoda Vennes (ID: 17587)
 - **Commande réelle** : S39573
 - **Date commande** : 2025-10-06 09:26:46
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 17 produits réels, 0 détectés |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,13 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: -1.8u (-60j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (17)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -178,30 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock suffisant: -0.6u (-53j restants > seuil 19j) |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock suffisant: 0.6u (25j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock suffisant: 1.2u (31j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.8u (13j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: -1.3u (-22j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock suffisant: 0.8u (13j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 2 | Stock suffisant: -0.5u (-12j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 0.5u (6j restants > seuil 19j) |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock suffisant: -0.5u (-42j restants > seuil 19j) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | Stock suffisant: -1.5u (-56j restants > seuil 19j) |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | Stock suffisant: -0.1u (-1j restants > seuil 19j) |
-| [LV139] LV Tartinade Paprika Chili 380g | 1 | Stock suffisant: 0.2u (10j restants > seuil 19j) |
-| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | Stock suffisant: -0.0u (-3j restants > seuil 19j) |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Stock suffisant: -0.6u (-14j restants > seuil 19j) |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock suffisant: 1.4u (40j restants > seuil 19j) |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock suffisant: 1.4u (40j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:06.488Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:58.083Z*

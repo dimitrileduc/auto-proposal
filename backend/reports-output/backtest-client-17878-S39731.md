@@ -5,8 +5,8 @@
 - **Client** : Epicerie Flocon d'Avoine (ID: 17878)
 - **Commande réelle** : S39731
 - **Date commande** : 2025-10-15 05:02:02
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-15 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 42.9% | 28 produits prédits, 12 corrects |
+| **Précision** | 46.2% | 26 produits prédits, 12 corrects |
 | **Rappel** | 75.0% | 16 produits réels, 12 détectés |
-| **F1-Score** | 54.5% | Score équilibré global |
+| **F1-Score** | 57.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -147,14 +147,14 @@
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV133] LV Tartinade Ananas Coco 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (16)
+## False Positives (14)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,22 +174,20 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV161] LV Tartinade Mangue curry 190g | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
+| [LV161] LV Tartinade Mangue curry 190g | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: -0.2u (-5j restants) → prédit 1u mais non commandé |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: -0.2u (-5j restants) → prédit 1u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: -0.2u (-5j restants) → prédit 1u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: 0.2u (13j restants) → prédit 1u mais non commandé |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: 0.2u (13j restants) → prédit 1u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.2u (-13j restants) → prédit 1u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
-| [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock prédit: -0.7u (-27j restants) → prédit 1u mais non commandé |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: -0.5u (-23j restants) → prédit 1u mais non commandé |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.2u (-13j restants) → prédit 1u mais non commandé |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -0.3u (-21j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.4u (-45j restants) → prédit 1u mais non commandé |
-| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: -0.3u (-41j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.4u (30j restants) → prédit 1u mais non commandé |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: 0.2u (16j restants) → prédit 1u mais non commandé |
+| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.3u (-16j restants) → prédit 1u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock prédit: -0.3u (-16j restants) → prédit 1u mais non commandé |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: -0.3u (-16j restants) → prédit 1u mais non commandé |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -214,12 +212,12 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 12.3u (68j restants > seuil 19j) |
-| [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | Stock suffisant: 0.5u (43j restants > seuil 19j) |
+| [LV159] LV Tartinade aux Truffes  135g  | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 10.6u (45j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:48.446Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:38.722Z*

@@ -5,8 +5,8 @@
 - **Client** : Epicerie Flocon d'Avoine (ID: 17878)
 - **Commande réelle** : S39731
 - **Date commande** : 2025-10-15 05:02:02
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-15 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 16 produits réels, 0 détectés |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,14 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV188] LV Tartinade Aubergine  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [fsv08] Banana chips bio vrac 1,6kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: -1.4u (-41j restants) → prédit 1u mais non commandé |
+| [LV188] LV Tartinade Aubergine  380g | 1 | Stock prédit: -2.7u (-77j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (16)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -179,29 +178,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.3u (15j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock suffisant: 0.3u (15j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock suffisant: 0.3u (15j restants > seuil 19j) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock suffisant: 0.1u (6j restants > seuil 19j) |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock suffisant: -0.7u (-16j restants > seuil 19j) |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 1 | Stock suffisant: 0.0u (1j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: -1.2u (-89j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: 12.3u (68j restants > seuil 19j) |
-| [LV342] LV Organic Broccoli Spread 190 g | 1 | Stock suffisant: 0.2u (13j restants > seuil 19j) |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | Stock suffisant: 0.5u (43j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:48.448Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:38.724Z*

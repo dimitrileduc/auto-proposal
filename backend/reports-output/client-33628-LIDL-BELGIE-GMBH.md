@@ -1,6 +1,6 @@
 # 📊 Rapport Auto-Proposal - LIDL BELGIE GMBH
 
-**📅 Date:** 17/11/2025 12:58
+**📅 Date:** 18/11/2025 11:42
 **🆔 Client ID:** 33628
 **📧 Email:** N/A
 **⏱️ Durée d'exécution:** 2.9s
@@ -12,7 +12,7 @@
 
 **Produits à risque détectés: 3**
 - Urgents (rupture ≤ 0j): 3
-- Modérés (0 < rupture ≤ 19j): 0
+- Modérés (0 < rupture ≤ 30j): 0
 
 **Total produits (Phase 1): 3**
 **Quantité totale brute: 1040 unités**
@@ -24,10 +24,10 @@
 <summary>🔴 <strong>[PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK</strong> (ID: 17620) - 400 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 102.4000
-- **Stock restant estimé**: -313.60
-- **Jours avant rupture**: **-3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 100.3922
+- **Stock restant estimé**: -405.96
+- **Jours avant rupture**: **-4j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -57,10 +57,10 @@
 <summary>🔴 <strong>[PF3328] DELUXE MIX SAUCES 250ML WECK</strong> (ID: 17622) - 384 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 94.0800
-- **Stock restant estimé**: -88.32
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 92.2353
+- **Stock restant estimé**: -173.18
+- **Jours avant rupture**: **-1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -90,10 +90,10 @@
 <summary>🔴 <strong>[PF3279] KANIA BOULETTES TOMATE 800 GR (7404167)</strong> (ID: 16925) - 256 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 23.9553
-- **Stock restant estimé**: -606.39
-- **Jours avant rupture**: **-25j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 24.7018
+- **Stock restant estimé**: -657.96
+- **Jours avant rupture**: **-26j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -109,16 +109,12 @@
 | 2025-07-04 | S37890 | 128 | 16.08€ |
 | 2025-06-27 | S37724 | 128 | 16.08€ |
 | 2025-06-20 | S37571 | 128 | 16.08€ |
-| 2025-06-02 | S37169 | 128 | 16.08€ |
-| 2025-05-28 | S37087 | 128 | 16.08€ |
-| 2025-04-15 | S36207 | 512 | 16.08€ |
-| 2025-04-15 | S36183 | 704 | 16.08€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [256, 256, 1024, 256, 256]
-- **Nombre commandes**: 14
+- **Nombre commandes**: 10
 - **Valeur médiane**: 256
 
 </details>

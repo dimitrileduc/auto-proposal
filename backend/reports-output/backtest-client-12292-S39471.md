@@ -5,8 +5,8 @@
 - **Client** : Green Peas (ID: 12292)
 - **Commande réelle** : S39471
 - **Date commande** : 2025-10-09 06:35:27
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 57.9% | 19 produits prédits, 11 corrects |
-| **Rappel** | 78.6% | 14 produits réels, 11 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 60.0% | 20 produits prédits, 12 corrects |
+| **Rappel** | 85.7% | 14 produits réels, 12 détectés |
+| **F1-Score** | 70.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.55 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 34.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 19.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 8 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (11)
+## True Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,12 +142,13 @@
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0051] MF Kidney Beans 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0027] MF Tarti Aubergine 250g  | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [MF0029] MF Tarti Datte chili 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0033] MF Tarti Poivron chilli 250g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [MF0052] MF Pois chiches  500g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -173,19 +174,19 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 2 | Stock prédit: -0.6u (-13j restants) → prédit 2u mais non commandé |
-| [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -1.4u (-19j restants) → prédit 2u mais non commandé |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.2u (-5j restants) → prédit 1u mais non commandé |
-| [MF0061] MF Compote | 2 | Stock prédit: -0.6u (-13j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
+| [MF0012] MF Olives Mix 500g | 2 | Stock prédit: -0.7u (-13j restants) → prédit 2u mais non commandé |
+| [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -0.8u (-15j restants) → prédit 2u mais non commandé |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [MF0061] MF Compote | 2 | Stock prédit: 0.1u (3j restants) → prédit 2u mais non commandé |
 | [MF0060] MF Passata | 2 | Stock prédit: 0.3u (11j restants) → prédit 2u mais non commandé |
 | [MF0024] MF KETCHUP 250g | 6 | Stock prédit: -4.7u (-43j restants) → prédit 6u mais non commandé |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: -0.4u (-27j restants) → prédit 1u mais non commandé |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: -1.4u (-58j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -205,11 +206,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 0.5u (29j restants > seuil 19j) |
-| [VID0010] Consigne casier | 78 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0009] Consigne casier | 13 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 78 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 13 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:30.571Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:20.696Z*

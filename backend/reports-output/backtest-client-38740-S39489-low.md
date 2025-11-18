@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET EMBOURG DESADIS (ID: 38740)
 - **Commande réelle** : S39489
 - **Date commande** : 2025-10-02 06:18:26
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,8 +17,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 20.0% | 5 produits prédits, 1 corrects |
-| **Rappel** | 6.7% | 15 produits réels, 1 détectés |
-| **F1-Score** | 10.0% | Score équilibré global |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 33.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -164,14 +164,14 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DIS0003] Display TVF bois | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [DIS0003] Display TVF bois | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (14)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -186,27 +186,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 3 | Stock suffisant: -0.6u (-5j restants > seuil 19j) |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock suffisant: -0.6u (-5j restants > seuil 19j) |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock suffisant: 0.2u (3j restants > seuil 19j) |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 1 | Stock suffisant: 0.9u (12j restants > seuil 19j) |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock suffisant: -0.5u (-5j restants > seuil 19j) |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | Stock suffisant: 0.6u (6j restants > seuil 19j) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock suffisant: 0.5u (15j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: -0.3u (-13j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock suffisant: 0.2u (6j restants > seuil 19j) |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock suffisant: 0.4u (14j restants > seuil 19j) |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock suffisant: -0.2u (-13j restants > seuil 19j) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock suffisant: 0.5u (10j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock suffisant: -0.1u (-1j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock suffisant: -0.5u (-28j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:27.005Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:16.753Z*

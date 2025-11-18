@@ -5,8 +5,8 @@
 - **Client** : CARREFOUR BELGIUM SA, CD Carrefour Kontich (ID: 17251)
 - **Commande réelle** : S39718
 - **Date commande** : 2025-10-14 08:41:27
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -170,11 +170,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3340] CARRE MAYONNAISE BELGE 720ML | 80 | Stock prédit: 10.6u (0j restants) → prédit 80u mais non commandé |
-| [PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8 | 96 | Stock prédit: 63.4u (9j restants) → prédit 96u mais non commandé |
-| [PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML | 112 | Stock prédit: -11.9u (-2j restants) → prédit 112u mais non commandé |
-| [PF2933] CARRE VIN MIEL MOU PET 450 BIO | 98 | Stock prédit: -266.8u (-49j restants) → prédit 98u mais non commandé |
-| [PF2932] CARRE VIN CIBOULET PET 450 BIO | 98 | Stock prédit: -369.3u (-59j restants) → prédit 98u mais non commandé |
+| [PF3340] CARRE MAYONNAISE BELGE 720ML | 80 | Stock prédit: 6.5u (0j restants) → prédit 80u mais non commandé |
+| [PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8 | 96 | Stock prédit: 57.2u (8j restants) → prédit 96u mais non commandé |
+| [PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML | 112 | Stock prédit: -14.0u (-3j restants) → prédit 112u mais non commandé |
+| [PF2933] CARRE VIN MIEL MOU PET 450 BIO | 98 | Stock prédit: -322.3u (-52j restants) → prédit 98u mais non commandé |
+| [PF2932] CARRE VIN CIBOULET PET 450 BIO | 98 | Stock prédit: -438.8u (-62j restants) → prédit 98u mais non commandé |
 
 
 ---
@@ -198,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:46.120Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:35.316Z*

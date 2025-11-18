@@ -1,0 +1,22 @@
+{
+  "clientId": 38785,
+  "clientName": "DLL AD BATTICE",
+  "orderName": "S39528",
+  "orderDate": "2025-10-03 06:08:19",
+  "cutoffDate": "2025-10-03 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 0,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "mape": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  }
+}

@@ -5,8 +5,8 @@
 - **Client** : La fermette (ID: 9942)
 - **Commande réelle** : S39282
 - **Date commande** : 2025-09-22 06:26:45
-- **Date cutoff système** : 2025-09-21 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 17 produits réels, 0 détectés |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,16 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -2.1u (-43j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: -4.6u (-97j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (17)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -181,30 +178,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LB006] LB Brown (7,0%)  33CL | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock suffisant: -1.0u (-39j restants > seuil 19j) |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock suffisant: -0.6u (-29j restants > seuil 19j) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: -0.1u (-5j restants > seuil 19j) |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock suffisant: -0.6u (-32j restants > seuil 19j) |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock suffisant: 0.7u (24j restants > seuil 19j) |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock suffisant: 0.6u (18j restants > seuil 19j) |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock suffisant: 0.6u (19j restants > seuil 19j) |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock suffisant: 0.6u (18j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: 0.3u (5j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: 0.4u (7j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.5u (14j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.8u (36j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: -0.4u (-19j restants > seuil 19j) |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0009] Consigne casier | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:52.410Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:39.351Z*

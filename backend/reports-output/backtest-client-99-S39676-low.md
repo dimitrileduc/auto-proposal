@@ -5,8 +5,8 @@
 - **Client** : La Fermette Godelaine de Saint-Georges (ID: 99)
 - **Commande réelle** : S39676
 - **Date commande** : 2025-10-13 07:37:52
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 42.9% | 7 produits prédits, 3 corrects |
-| **Rappel** | 23.1% | 13 produits réels, 3 détectés |
-| **F1-Score** | 30.0% | Score équilibré global |
+| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
+| **Rappel** | 100.0% | 2 produits réels, 2 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
+| Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,12 +140,11 @@
 |---------|--------|------|-----------|----------|------|
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (4)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,15 +164,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: -1.1u (-21j restants) → prédit 1u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: -3.8u (-76j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -188,23 +185,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 1.0u (40j restants > seuil 19j) |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock suffisant: -0.5u (-29j restants > seuil 19j) |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock suffisant: -0.1u (-7j restants > seuil 19j) |
-| [MF0053] MF Maïs 500g | 1 | Stock suffisant: -1.3u (-48j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: 0.5u (7j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.9u (19j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: 0.7u (10j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.9u (20j restants > seuil 19j) |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock suffisant: 0.9u (37j restants > seuil 19j) |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock suffisant: 0.9u (37j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:32.034Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:20.463Z*

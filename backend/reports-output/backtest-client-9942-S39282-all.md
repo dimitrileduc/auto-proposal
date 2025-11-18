@@ -5,8 +5,8 @@
 - **Client** : La fermette (ID: 9942)
 - **Commande réelle** : S39282
 - **Date commande** : 2025-09-22 06:26:45
-- **Date cutoff système** : 2025-09-21 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 28.9% | 38 produits prédits, 11 corrects |
+| **Précision** | 32.4% | 34 produits prédits, 11 corrects |
 | **Rappel** | 64.7% | 17 produits réels, 11 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **F1-Score** | 43.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.27 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 22.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 8 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.18 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 18.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,6 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -148,12 +149,11 @@
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (27)
+## False Positives (23)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,33 +173,29 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.6u (18j restants) → prédit 1u mais non commandé |
+| [CB010] CB Jus de Pomme cubis 3l | 3 | Stock prédit: 1.8u (20j restants) → prédit 3u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.6u (16j restants) → prédit 1u mais non commandé |
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
-| [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.5u (12j restants) → prédit 1u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
-| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -1.4u (-37j restants) → prédit 1u mais non commandé |
+| [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: 0.7u (26j restants) → prédit 1u mais non commandé |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: 0.6u (19j restants) → prédit 1u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.6u (16j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -2.1u (-43j restants) → prédit 1u mais non commandé |
+| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -1.2u (-35j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -1.0u (-39j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.5u (-24j restants) → prédit 1u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
-| [MF0047] MF Mayonnaise 250ml | 2 | Stock prédit: 0.2u (14j restants) → prédit 2u mais non commandé |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.8u (-33j restants) → prédit 1u mais non commandé |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
-| [MF0061] MF Compote | 1 | Stock prédit: -0.7u (-33j restants) → prédit 1u mais non commandé |
-| [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.2u (-16j restants) → prédit 1u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.1u (9j restants) → prédit 1u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB007] CB Apple Nettle juice 1l | 1 | Stock prédit: -0.9u (-57j restants) → prédit 1u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | Stock prédit: -1.0u (-79j restants) → prédit 1u mais non commandé |
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: -0.6u (-58j restants) → prédit 1u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: -0.6u (-66j restants) → prédit 1u mais non commandé |
-| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.8u (-77j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.8u (-34j restants) → prédit 1u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.8u (-34j restants) → prédit 1u mais non commandé |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: -0.8u (-34j restants) → prédit 1u mais non commandé |
+| [MF0047] MF Mayonnaise 250ml | 2 | Stock prédit: 0.2u (13j restants) → prédit 2u mais non commandé |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.2u (13j restants) → prédit 1u mais non commandé |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.8u (-34j restants) → prédit 1u mais non commandé |
+| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock prédit: -0.6u (-28j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.2u (13j restants) → prédit 1u mais non commandé |
+| [MF0061] MF Compote | 1 | Stock prédit: -0.8u (-34j restants) → prédit 1u mais non commandé |
+| [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: -4.6u (-97j restants) → prédit 1u mais non commandé |
+| [CB007] CB Apple Nettle juice 1l | 1 | Stock prédit: -1.0u (-57j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -224,14 +220,14 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LB006] LB Brown (7,0%)  33CL | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock suffisant: 0.7u (24j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.8u (36j restants > seuil 19j) |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0009] Consigne casier | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 6 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LB006] LB Brown (7,0%)  33CL | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.7u (31j restants > seuil 30j) |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0009] Consigne casier | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 6 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:52.411Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:39.353Z*

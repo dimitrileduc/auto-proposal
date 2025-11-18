@@ -5,8 +5,8 @@
 - **Client** : MAISON DESPRIET SA, Nicole (ID: 57477)
 - **Commande réelle** : S39661
 - **Date commande** : 2025-10-10 09:26:10
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-10 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (5)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,18 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | Stock suffisant: 62.0u (9j restants > seuil 19j) |
-| [PF0075] FILOU CHASSEUR  10 L | 44 | Stock suffisant: -9.5u (-5j restants > seuil 19j) |
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 2 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [PF0524] FILOU SAUCE TOMATE 815 GR | 2 | Stock suffisant: 1.0u (14j restants > seuil 19j) |
-| [PF0096] FILOU MOUTARDE 3 KG | 8 | Stock suffisant: -2.8u (-15j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:28.181Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:17.445Z*

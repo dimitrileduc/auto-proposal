@@ -5,8 +5,8 @@
 - **Client** : DUMORTIER   ETS. (ID: 3894)
 - **Commande réelle** : S39696
 - **Date commande** : 2025-10-13 13:02:08
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
-| **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
+| **Rappel** | 50.0% | 2 produits réels, 1 détectés |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 13.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 54.5% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 24.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -139,7 +139,6 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 48 | 24 | 24.0 | 100.0% | ✅ partial |
-| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 24 | 22 | 2.0 | 9.1% | ✅ partial |
 
 
 ---
@@ -164,13 +163,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 80 | Stock prédit: 2.8u (1j restants) → prédit 80u mais non commandé |
-| [PF0549] YVALLI SAUCE PIZZA 2,5 KG | 24 | Stock prédit: 6.1u (11j restants) → prédit 24u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 80 | Stock prédit: 3.8u (1j restants) → prédit 80u mais non commandé |
+| [PF0549] YVALLI SAUCE PIZZA 2,5 KG | 24 | Stock prédit: 8.8u (18j restants) → prédit 24u mais non commandé |
 
 
 ---
 
-## False Negatives (0)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -185,8 +184,14 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-*Aucun faux négatif (rappel = 100%)*
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 22 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:00.452Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:48.313Z*

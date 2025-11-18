@@ -5,8 +5,8 @@
 - **Client** : TAN (ID: 60545)
 - **Commande réelle** : S39016
 - **Date commande** : 2025-09-05 14:01:26
-- **Date cutoff système** : 2025-09-04 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-05 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 43.8% | 16 produits prédits, 7 corrects |
-| **Rappel** | 70.0% | 10 produits réels, 7 détectés |
-| **F1-Score** | 53.8% | Score équilibré global |
+| **Précision** | 42.9% | 21 produits prédits, 9 corrects |
+| **Rappel** | 90.0% | 10 produits réels, 9 détectés |
+| **F1-Score** | 58.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.57 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 42.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 0.56 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 38.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (7)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,6 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [ORG03] ORGANICA crunchy fruit myrtille 16g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -149,7 +151,7 @@
 
 ---
 
-## False Positives (9)
+## False Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -169,20 +171,23 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 1.2u (19j restants) → prédit 2u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.5u (14j restants) → prédit 1u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: 0.6u (19j restants) → prédit 1u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 1.3u (28j restants) → prédit 2u mais non commandé |
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: 0.4u (10j restants) → prédit 1u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | Stock prédit: 1.3u (27j restants) → prédit 2u mais non commandé |
+| [LEA10] LEAMO ginger beer bio 330ml | 2 | Stock prédit: 0.9u (13j restants) → prédit 2u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.4u (12j restants) → prédit 1u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.4u (12j restants) → prédit 1u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: 0.5u (13j restants) → prédit 1u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (20j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.4u (27j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.3u (20j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.6u (-30j restants) → prédit 1u mais non commandé |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | Stock prédit: -3.4u (-96j restants) → prédit 2u mais non commandé |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | Stock prédit: -2.4u (-91j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -202,11 +207,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock suffisant: 0.7u (28j restants > seuil 19j) |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 2 | Stock suffisant: 0.7u (28j restants > seuil 19j) |
-| [KOKO01] KOKO Kombucha original 330ml | 1 | Stock suffisant: 0.7u (39j restants > seuil 19j) |
+| [KOKO01] KOKO Kombucha original 330ml | 1 | Stock suffisant: 0.7u (39j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:18.786Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:07.932Z*

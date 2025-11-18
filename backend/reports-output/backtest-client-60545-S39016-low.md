@@ -5,8 +5,8 @@
 - **Client** : TAN (ID: 60545)
 - **Commande réelle** : S39016
 - **Date commande** : 2025-09-05 14:01:26
-- **Date cutoff système** : 2025-09-04 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-05 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 10 produits réels, 0 détectés |
+| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,16 +157,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LEA09] LEAMO cola bio 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: 1.1u (20j restants) → prédit 2u mais non commandé |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.6u (20j restants) → prédit 1u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: -0.4u (-15j restants) → prédit 1u mais non commandé |
+| [LEA09] LEAMO cola bio 330ml | 1 | Stock prédit: -1.4u (-49j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -181,23 +180,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: -1.8u (-23j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: -0.3u (-6j restants > seuil 19j) |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock suffisant: 0.0u (1j restants > seuil 19j) |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock suffisant: 0.7u (28j restants > seuil 19j) |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 2 | Stock suffisant: 0.7u (28j restants > seuil 19j) |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock suffisant: 0.5u (14j restants > seuil 19j) |
-| [KOKO01] KOKO Kombucha original 330ml | 1 | Stock suffisant: 0.7u (39j restants > seuil 19j) |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock suffisant: 0.6u (19j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:18.788Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:07.934Z*

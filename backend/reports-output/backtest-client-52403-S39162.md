@@ -5,8 +5,8 @@
 - **Client** : SA SEMAF - AD Thorembais (ID: 52403)
 - **Commande réelle** : S39162
 - **Date commande** : 2025-09-17 12:21:02
-- **Date cutoff système** : 2025-09-16 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-17 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 81.0% | 21 produits prédits, 17 corrects |
-| **Rappel** | 89.5% | 19 produits réels, 17 détectés |
-| **F1-Score** | 85.0% | Score équilibré global |
+| **Précision** | 76.5% | 17 produits prédits, 13 corrects |
+| **Rappel** | 68.4% | 19 produits réels, 13 détectés |
+| **F1-Score** | 72.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.94 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 30.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
+| **MAE** | 1.31 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 46.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (17)
+## True Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,23 +138,19 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | 4 | 3.0 | 75.0% | ✅ partial |
 | [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -179,15 +175,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 0.3u (6j restants) → prédit 2u mais non commandé |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: 0.6u (17j restants) → prédit 2u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: -0.2u (-30j restants) → prédit 1u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 0.2u (5j restants) → prédit 2u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: 0.7u (19j restants) → prédit 2u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.7u (19j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -207,10 +203,14 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock suffisant: 0.8u (24j restants > seuil 19j) |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock suffisant: 0.5u (45j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:04.853Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:54.519Z*

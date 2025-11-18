@@ -5,8 +5,8 @@
 - **Client** : CORA S.A. (ID: 38724)
 - **Commande réelle** : S39065
 - **Date commande** : 2025-09-08 07:10:00
-- **Date cutoff système** : 2025-09-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 8 produits prédits, 8 corrects |
-| **Rappel** | 44.4% | 18 produits réels, 8 détectés |
-| **F1-Score** | 61.5% | Score équilibré global |
+| **Précision** | 100.0% | 11 produits prédits, 11 corrects |
+| **Rappel** | 61.1% | 18 produits réels, 11 détectés |
+| **F1-Score** | 75.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 7.75 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 39.9% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 9.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 64.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 7 | Avec erreur |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (8)
+## True Positives (11)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,14 +138,17 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 13 | 33 | 20.0 | 60.6% | ✅ partial |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 4 | 6 | 2.0 | 33.3% | ✅ partial |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 9 | 25 | 16.0 | 64.0% | ✅ partial |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 14 | 33 | 19.0 | 57.6% | ✅ partial |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 8 | 6 | 2.0 | 33.3% | ✅ partial |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 7 | 8 | 1.0 | 12.5% | ✅ partial |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 16 | 25 | 9.0 | 36.0% | ✅ partial |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 13 | 25 | 12.0 | 48.0% | ✅ partial |
 | [FIL18] FIL VOL AU VENT 800G BOCAL  | 16 | 32 | 16.0 | 50.0% | ✅ partial |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 5 | 8 | 3.0 | 37.5% | ✅ partial |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 4 | 8 | 4.0 | 50.0% | ✅ partial |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 5 | 13 | 8.0 | 61.5% | ✅ partial |
 | [JF035] JF BURGER SQUEEZE 300ML | 3 | 7 | 4.0 | 57.1% | ✅ partial |
-| [JF037] JF BBQ SQUEEZE 300ML | 5 | 6 | 1.0 | 16.7% | ✅ partial |
 | [FIL22] FIL BOULLETTES SAUCE TOMATE 800G BOCAL  | 8 | 8 | 0.0 | 0.0% | 🎯 exact |
+| [FIL20] FIL CARBONNADES 800G BOCAL  | 32 | 8 | 24.0 | 300.0% | ✅ partial |
 
 
 ---
@@ -169,7 +172,7 @@
 
 ---
 
-## False Negatives (10)
+## False Negatives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -189,18 +192,15 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 25 | Stock suffisant: 16.6u (35j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 25 | Stock suffisant: 5.3u (22j restants > seuil 19j) |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 8 | Stock suffisant: 6.3u (28j restants > seuil 19j) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 25 | Stock suffisant: 16.1u (25j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 11 | Stock suffisant: 4.6u (38j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 15 | Stock suffisant: 12.2u (43j restants > seuil 19j) |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 5 | Stock suffisant: 7.5u (45j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 13 | Stock suffisant: 4.5u (27j restants > seuil 19j) |
-| [FIL20] FIL CARBONNADES 800G BOCAL  | 8 | Stock suffisant: 7.3u (29j restants > seuil 19j) |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 21 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 25 | Stock suffisant: 16.0u (32j restants > seuil 30j) |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 25 | Stock suffisant: 5.3u (31j restants > seuil 30j) |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 11 | Stock suffisant: 4.5u (37j restants > seuil 30j) |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 15 | Stock suffisant: 12.0u (47j restants > seuil 30j) |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 5 | Stock suffisant: 7.4u (51j restants > seuil 30j) |
+| [JF037] JF BBQ SQUEEZE 300ML | 6 | Stock suffisant: 4.6u (47j restants > seuil 30j) |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 21 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:16.408Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:07.143Z*

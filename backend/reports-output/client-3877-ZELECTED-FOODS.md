@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - ZELECTED FOODS
 
-**📅 Date:** 17/11/2025 13:00
+**📅 Date:** 18/11/2025 11:44
 **🆔 Client ID:** 3877
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.2s
+**⏱️ Durée d'exécution:** 2.4s
 
 ---
 
@@ -11,11 +11,11 @@
 
 
 **Produits à risque détectés: 7**
-- Urgents (rupture ≤ 0j): 6
-- Modérés (0 < rupture ≤ 19j): 1
+- Urgents (rupture ≤ 0j): 4
+- Modérés (0 < rupture ≤ 30j): 3
 
 **Total produits (Phase 1): 7**
-**Quantité totale brute: 5070 unités**
+**Quantité totale brute: 5745 unités**
 
 ### Détails par produit
 
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF2995] ZF PIZZA DRESSING 250ML</strong> (ID: 11041) - 640 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 26.6667
-- **Stock restant estimé**: 80.00
-- **Jours avant rupture**: **3j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 26.1224
+- **Stock restant estimé**: 65.31
+- **Jours avant rupture**: **2j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -46,13 +46,13 @@
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1919] ZF MAYO BEARNAISE 180GR</strong> (ID: 9339) - 1050 unités</summary>
+<summary>🔴 <strong>[PF1919] ZF MAYO BEARNAISE 180GR</strong> (ID: 9339) - 1176 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 42.5659
-- **Stock restant estimé**: -741.16
-- **Jours avant rupture**: **-17j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 49.1522
+- **Stock restant estimé**: -1106.46
+- **Jours avant rupture**: **-22j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -62,25 +62,24 @@
 | 2025-05-28 | S37139 | 1302 | 5.34€ |
 | 2025-05-19 | S36911 | 868 | 5.34€ |
 | 2025-05-05 | S36498 | 1050 | 5.34€ |
-| 2025-03-28 | S35686 | 969 | 5.34€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [1302, 1302, 868, 1050, 969]
-- **Nombre commandes**: 5
-- **Valeur médiane**: 1050
+- **Confiance**: medium
+- **Quantités historiques**: [1302, 1302, 868, 1050]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 1176
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR</strong> (ID: 9342) - 1050 unités</summary>
+<summary>🔴 <strong>[PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR</strong> (ID: 9342) - 1302 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 36.5581
-- **Stock restant estimé**: -452.79
-- **Jours avant rupture**: **-12j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 59.2464
+- **Stock restant estimé**: -1601.07
+- **Jours avant rupture**: **-27j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -89,15 +88,13 @@
 | 2025-06-17 | S37514 | 1302 | 5.22€ |
 | 2025-06-13 | S37441 | 1050 | 5.22€ |
 | 2025-05-28 | S37139 | 1736 | 5.22€ |
-| 2025-03-28 | S35686 | 0 | 5.22€ |
-| 2025-03-28 | S35686 | 628 | 5.22€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [1302, 1050, 1736, 0, 628]
-- **Nombre commandes**: 5
-- **Valeur médiane**: 1050
+- **Confiance**: medium
+- **Quantités historiques**: [1302, 1050, 1736]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 1302
 
 </details>
 
@@ -105,10 +102,10 @@
 <summary>🔴 <strong>[PF1937] ZF MAYO TAPAS TRUFFES 180GR</strong> (ID: 9355) - 1302 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 39.2432
-- **Stock restant estimé**: -581.68
-- **Jours avant rupture**: **-14j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 38.8929
+- **Stock restant estimé**: -603.75
+- **Jours avant rupture**: **-15j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -131,10 +128,10 @@
 <summary>🔴 <strong>[PF3242] ZF SAUCE AIOLI 180GR</strong> (ID: 14562) - 868 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 30.2791
-- **Stock restant estimé**: -151.40
-- **Jours avant rupture**: **-5j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 38.9487
+- **Stock restant estimé**: -606.49
+- **Jours avant rupture**: **-15j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -143,63 +140,67 @@
 | 2025-06-17 | S37514 | 1302 | 5.28€ |
 | 2025-05-28 | S37139 | 868 | 5.28€ |
 | 2025-05-19 | S36911 | 868 | 5.28€ |
-| 2025-03-28 | S35686 | 0 | 5.28€ |
-| 2025-03-28 | S35686 | 868 | 5.28€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [1302, 868, 868, 0, 868]
-- **Nombre commandes**: 5
+- **Confiance**: medium
+- **Quantités historiques**: [1302, 868, 868]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 868
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3367] ZF MAYONNAISE TRUFFES 1000 ML</strong> (ID: 19309) - 80 unités</summary>
+<summary>🟡 <strong>[PF2994] ZF CAESAR DRESSING 250ML</strong> (ID: 11040) - 320 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5229
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.4646
+- **Stock restant estimé**: 45.25
+- **Jours avant rupture**: **7j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
-| 2025-03-04 | S35179 | 80 | 27.60€ |
+| 2025-05-05 | S36498 | 640 | 5.64€ |
+| 2025-04-28 | S36412 | 0 | 5.64€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [80]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 80
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [640, 0]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 320
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF3368] ZF MAYO CHIPOTLE 1000 ML</strong> (ID: 19310) - 80 unités</summary>
+<summary>🟡 <strong>[PF2993] ZF RANCH DRESSING 250ML</strong> (ID: 11039) - 137 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5229
-- **Stock restant estimé**: 0.00
-- **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 5.1274
+- **Stock restant estimé**: 132.39
+- **Jours avant rupture**: **25j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
 | Date | Commande | Qté | Prix unit. |
 | --- | --- | --- | --- |
-| 2025-03-04 | S35179 | 80 | 20.10€ |
+| 2025-04-28 | S36412 | 640 | 5.28€ |
+| 2025-03-28 | S35686 | 0 | 5.28€ |
+| 2024-05-08 | S30226 | 640 | 5.28€ |
+| 2024-05-08 | S30226 | 137 | 5.28€ |
+| 2024-04-19 | S29888 | 0 | 5.28€ |
+| 2024-02-26 | S29091 | 1280 | 5.28€ |
 
 ### 🧮 Calcul Quantité
-- **Stratégie**: single_recent_order
-- **Confiance**: low
-- **Quantités historiques**: [80]
-- **Nombre commandes**: 1
-- **Valeur médiane**: 80
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [640, 0, 640, 137, 0]
+- **Nombre commandes**: 6
+- **Valeur médiane**: 137
 
 </details>
 
@@ -211,7 +212,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 31766.64€**
+- **Montant initial: 32467.08€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -221,13 +222,13 @@
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PF2995] ZF PIZZA DRESSING ... | 11041 | 640 | 0 | 640 | 5.76€ | 3686.40€ |
-| [PF1919] ZF MAYO BEARNAISE ... | 9339 | 1050 | 0 | 1050 | 5.34€ | 5607.00€ |
-| [PF1922] ZF MAYO SAMOURA CH... | 9342 | 1050 | 0 | 1050 | 5.22€ | 5481.00€ |
+| [PF1919] ZF MAYO BEARNAISE ... | 9339 | 1176 | 0 | 1176 | 5.34€ | 6279.84€ |
+| [PF1922] ZF MAYO SAMOURA CH... | 9342 | 1302 | 0 | 1302 | 5.22€ | 6796.44€ |
 | [PF1937] ZF MAYO TAPAS TRUF... | 9355 | 1302 | 0 | 1302 | 6.60€ | 8593.20€ |
 | [PF3242] ZF SAUCE AIOLI 180GR | 14562 | 868 | 0 | 868 | 5.28€ | 4583.04€ |
-| [PF3367] ZF MAYONNAISE TRUF... | 19309 | 80 | 0 | 80 | 27.60€ | 2208.00€ |
-| [PF3368] ZF MAYO CHIPOTLE 1... | 19310 | 80 | 0 | 80 | 20.10€ | 1608.00€ |
+| [PF2994] ZF CAESAR DRESSING... | 11040 | 320 | 0 | 320 | 5.64€ | 1804.80€ |
+| [PF2993] ZF RANCH DRESSING ... | 11039 | 137 | 0 | 137 | 5.28€ | 723.36€ |
 
-**Total (Phase 2.5): 31766.64€**
+**Total (Phase 2.5): 32467.08€**
 
 ---

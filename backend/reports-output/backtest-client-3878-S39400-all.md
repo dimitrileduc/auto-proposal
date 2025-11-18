@@ -5,8 +5,8 @@
 - **Client** : DELI DRENGENE (ID: 3878)
 - **Commande réelle** : S39400
 - **Date commande** : 2025-09-25 14:14:25
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-25 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 40.0% | 5 produits prédits, 2 corrects |
-| **Rappel** | 66.7% | 3 produits réels, 2 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 20.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (2)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,18 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO | 80 | 40 | 40.0 | 100.0% | ✅ partial |
-| [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | 150 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (3)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,14 +157,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO | 150 | Stock prédit: 66.6u (15j restants) → prédit 150u mais non commandé |
-| [PF1057] DD MAYONNAISE TRUFFES  1000 ML | 468 | Stock prédit: 161.8u (18j restants) → prédit 468u mais non commandé |
-| [PF3263] 3312 - LD DD MAYONNAISE WASABI 280ML DTO | 55 | Stock prédit: 5.5u (4j restants) → prédit 55u mais non commandé |
+| [PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO | 150 | Stock prédit: 74.4u (19j restants) → prédit 150u mais non commandé |
+| [PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO | 30 | Stock prédit: 0.7u (0j restants) → prédit 30u mais non commandé |
+| [PF1925] DD SAUCE TARTARE  1000 ML | 80 | Stock prédit: 44.0u (24j restants) → prédit 80u mais non commandé |
+| [PF1057] DD MAYONNAISE TRUFFES  1000 ML | 486 | Stock prédit: 129.1u (13j restants) → prédit 486u mais non commandé |
+| [PF3263] 3312 - LD DD MAYONNAISE WASABI 280ML DTO | 70 | Stock prédit: 11.8u (10j restants) → prédit 70u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -191,9 +186,11 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [CONS070] PALETTE EURO | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO | 40 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [CONS070] PALETTE EURO | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:27.060Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:16.635Z*

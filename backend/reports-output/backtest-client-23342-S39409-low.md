@@ -5,8 +5,8 @@
 - **Client** : Epicerie Uhoda Kennedy (ID: 23342)
 - **Commande réelle** : S39409
 - **Date commande** : 2025-10-08 07:16:30
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 7.7% | 13 produits prédits, 1 corrects |
-| **Rappel** | 10.0% | 10 produits réels, 1 détectés |
-| **F1-Score** | 8.7% | Score équilibré global |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
+| **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -64,7 +64,7 @@
 |----------|--------|----------------|
 | **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
+| Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (0)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -133,17 +133,11 @@
 **C'est bon** : Plus il y en a, mieux c'est
 </details>
 
-
-*Produits correctement détectés par le système*
-
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
-|---------|--------|------|-----------|----------|------|
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-
+*Aucun produit correctement prédit (rappel = 0%)*
 
 ---
 
-## False Positives (12)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,23 +157,18 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: 0.7u (21j restants) → prédit 1u mais non commandé |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.7u (21j restants) → prédit 1u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV189] LV Tartinade Houmous Type 380g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: -1.6u (-52j restants) → prédit 1u mais non commandé |
+| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: -2.1u (-67j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -194,22 +183,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LB003] LB Festive (4,5%) 33CL | 1 | Stock suffisant: 0.3u (25j restants > seuil 19j) |
-| [LB005] LB Amber (5,2%) 33CL | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 1.4u (23j restants > seuil 19j) |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock suffisant: 0.9u (27j restants > seuil 19j) |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock suffisant: 0.4u (25j restants > seuil 19j) |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock suffisant: 0.7u (26j restants > seuil 19j) |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock suffisant: -2.1u (-74j restants > seuil 19j) |
-| [KLAK01] KLAK Maté 330ml | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | Stock suffisant: 0.7u (58j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:16.868Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:06.814Z*

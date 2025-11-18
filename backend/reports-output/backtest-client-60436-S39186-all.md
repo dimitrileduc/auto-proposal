@@ -5,8 +5,8 @@
 - **Client** : LE CELLIER DU BAUDET - épicerie (ID: 60436)
 - **Commande réelle** : S39186
 - **Date commande** : 2025-10-14 06:46:09
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 26.5% | 34 produits prédits, 9 corrects |
-| **Rappel** | 90.0% | 10 produits réels, 9 détectés |
-| **F1-Score** | 40.9% | Score équilibré global |
+| **Précision** | 33.3% | 24 produits prédits, 8 corrects |
+| **Rappel** | 80.0% | 10 produits réels, 8 détectés |
+| **F1-Score** | 47.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 18.5% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (9)
+## True Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -146,12 +146,11 @@
 | [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 
 
 ---
 
-## False Positives (25)
+## False Positives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,35 +171,26 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [SOWA03] SOWA ginger beer ardent 250ml | 2 | Stock prédit: 0.3u (7j restants) → prédit 2u mais non commandé |
-| [SOWA01] SOWA citron menthe 250ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [SOWA01] SOWA citron menthe 250ml | 2 | Stock prédit: -0.7u (-13j restants) → prédit 2u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -0.3u (-6j restants) → prédit 2u mais non commandé |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -0.2u (-8j restants) → prédit 2u mais non commandé |
-| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.5u (-15j restants) → prédit 1u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: -0.4u (-13j restants) → prédit 1u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -0.3u (-9j restants) → prédit 2u mais non commandé |
+| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -0.2u (-8j restants) → prédit 2u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -1.1u (-43j restants) → prédit 1u mais non commandé |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -0.9u (-38j restants) → prédit 1u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
-| [SOWA04] SOWA thé glacé pêche 250ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [SOWA04] SOWA thé glacé pêche 250ml | 1 | Stock prédit: -1.4u (-48j restants) → prédit 1u mais non commandé |
 | [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | Stock prédit: -1.0u (-41j restants) → prédit 2u mais non commandé |
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: -1.4u (-48j restants) → prédit 1u mais non commandé |
 | [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | Stock prédit: -1.0u (-41j restants) → prédit 2u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: -0.0u (-2j restants) → prédit 2u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: -0.0u (-2j restants) → prédit 2u mais non commandé |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | Stock prédit: -1.2u (-45j restants) → prédit 2u mais non commandé |
-| [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: -0.4u (-27j restants) → prédit 2u mais non commandé |
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: -0.4u (-44j restants) → prédit 1u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -220,9 +210,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:10.787Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:58.926Z*

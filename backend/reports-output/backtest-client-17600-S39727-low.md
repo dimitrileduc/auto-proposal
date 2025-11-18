@@ -5,8 +5,8 @@
 - **Client** : SDP Rungis (ID: 17600)
 - **Commande réelle** : S39727
 - **Date commande** : 2025-10-14 13:50:03
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 7 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (7)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,20 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | Stock suffisant: 31.2u (18j restants > seuil 19j) |
-| [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 200 | Stock suffisant: -352.9u (-15j restants > seuil 19j) |
-| [LV356] LV SET 3 X 135G trisauces  SDP | 256 | Stock suffisant: -77.2u (-23j restants > seuil 19j) |
-| [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 400 | Stock suffisant: 154.7u (13j restants > seuil 19j) |
-| [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | Stock suffisant: 357.2u (18j restants > seuil 19j) |
-| [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 414.3u (84j restants > seuil 19j) |
-| [LV363] LV BIO Tartin'apero Avocat 180g  | 434 | Stock suffisant: 335.7u (13j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:13.408Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:03.262Z*

@@ -5,8 +5,8 @@
 - **Client** : BIOK GASTUCHE (ID: 60212)
 - **Commande réelle** : S39575
 - **Date commande** : 2025-10-09 06:38:48
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 13 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (13)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,26 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock suffisant: -0.9u (-31j restants > seuil 19j) |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock suffisant: 1.8u (50j restants > seuil 19j) |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock suffisant: 0.1u (7j restants > seuil 19j) |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: -0.3u (-6j restants > seuil 19j) |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: 0.8u (18j restants > seuil 19j) |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock suffisant: 0.7u (9j restants > seuil 19j) |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock suffisant: -1.0u (-24j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: -0.4u (-2j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock suffisant: 1.9u (8j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock suffisant: 1.4u (11j restants > seuil 19j) |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock suffisant: 0.2u (5j restants > seuil 19j) |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:12.025Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:00.394Z*

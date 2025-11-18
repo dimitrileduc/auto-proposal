@@ -5,8 +5,8 @@
 - **Client** : Atelier Constant-Berger : Pressoir, cidrerie & distillerie (ID: 38)
 - **Commande réelle** : S39684
 - **Date commande** : 2025-10-13 06:25:30
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -176,10 +176,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| BB/BT-Fraich-1l-BR/Propre | 8736 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| BB/Palette-IND-DIN | 8 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| BB/BT-Fraich-1l-BR/Propre | 8736 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| BB/Palette-IND-DIN | 8 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:27.659Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:17.068Z*

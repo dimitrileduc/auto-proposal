@@ -5,8 +5,8 @@
 - **Client** : Al-Terre-Native (ID: 24840)
 - **Commande réelle** : S39376
 - **Date commande** : 2025-09-24 13:11:31
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,24 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: -0.7u (-13j restants > seuil 19j) |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock suffisant: 0.8u (14j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | Stock suffisant: -0.3u (-4j restants > seuil 19j) |
-| [LV136] LV Tartinade Betterave 190g | 1 | Stock suffisant: -0.4u (-18j restants > seuil 19j) |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | Stock suffisant: 1.1u (23j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 2 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-| [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock suffisant: -1.0u (-31j restants > seuil 19j) |
-| [LV131] LV Tartinade Potiron 190g | 2 | Stock suffisant: 0.6u (31j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 1.0u (18j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:49.231Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:41.903Z*

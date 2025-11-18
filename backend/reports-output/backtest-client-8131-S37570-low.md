@@ -5,8 +5,8 @@
 - **Client** : ILIS    SA, FRANCESCO LOZANO (ID: 8131)
 - **Commande réelle** : S37570
 - **Date commande** : 2025-06-20 08:53:32
-- **Date cutoff système** : 2025-06-19 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-06-20 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (5)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,18 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 50 | Stock suffisant: 8.2u (3j restants > seuil 19j) |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 104 | Stock suffisant: 13.3u (5j restants > seuil 19j) |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | Stock suffisant: 14.4u (9j restants > seuil 19j) |
-| [PF0078] FILOU CHASSEUR 5 L | 800 | Stock suffisant: 57.8u (2j restants > seuil 19j) |
-| [PF0088] FILOU VOL AU VENT 800 GR | 10 | Stock suffisant: -1.4u (-1j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:17.002Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:07.262Z*

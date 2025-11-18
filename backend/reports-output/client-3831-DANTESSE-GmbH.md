@@ -1,6 +1,6 @@
 # 📊 Rapport Auto-Proposal - DANTESSE GmbH
 
-**📅 Date:** 17/11/2025 12:59
+**📅 Date:** 18/11/2025 11:43
 **🆔 Client ID:** 3831
 **📧 Email:** N/A
 **⏱️ Durée d'exécution:** 2.3s
@@ -10,24 +10,51 @@
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 7**
+**Produits à risque détectés: 6**
 - Urgents (rupture ≤ 0j): 3
-- Modérés (0 < rupture ≤ 19j): 4
+- Modérés (0 < rupture ≤ 30j): 3
 
-**Total produits (Phase 1): 7**
-**Quantité totale brute: 190 unités**
+**Total produits (Phase 1): 6**
+**Quantité totale brute: 382 unités**
 
 ### Détails par produit
 
 
 <details>
+<summary>🟡 <strong>[PF1792] LD MAYONNAI TRUFFES 250ML WECK</strong> (ID: 9247) - 250 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 7.1875
+- **Stock restant estimé**: 185.31
+- **Jours avant rupture**: **25j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-22 | S39308 | 250 | 18.36€ |
+| 2025-09-03 | S38943 | 250 | 18.36€ |
+| 2025-07-16 | S38112 | 55 | 18.36€ |
+| 2025-06-11 | S37385 | 250 | 18.36€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [250, 250, 55, 250]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 250
+
+</details>
+
+<details>
 <summary>🟡 <strong>[PF1807] LD SAUCE ANDALOUSE 250ML WECK</strong> (ID: 9262) - 5 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.3704
-- **Stock restant estimé**: 2.04
-- **Jours avant rupture**: **5j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.3571
+- **Stock restant estimé**: 1.79
+- **Jours avant rupture**: **4j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -49,10 +76,10 @@
 <summary>🔴 <strong>[PF3274] JF BURGER SAUCE 925ML</strong> (ID: 15038) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0153
-- **Stock restant estimé**: -0.12
-- **Jours avant rupture**: **-8j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0089
+- **Stock restant estimé**: -0.08
+- **Jours avant rupture**: **-9j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -60,13 +87,12 @@
 | --- | --- | --- | --- |
 | 2025-09-22 | S39308 | 0 | 39.60€ |
 | 2025-06-11 | S37392 | 1 | 39.60€ |
-| 2025-05-22 | S36985 | 1 | 39.60€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [0, 1, 1]
-- **Nombre commandes**: 3
+- **Quantités historiques**: [0, 1]
+- **Nombre commandes**: 2
 - **Valeur médiane**: 1
 
 </details>
@@ -75,10 +101,10 @@
 <summary>🟡 <strong>[PF1799] LD MAYONNAISE OEUFS 250ML WECK</strong> (ID: 9254) - 50 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.2252
-- **Stock restant estimé**: 16.92
+- **Consommation/jour**: 1.2143
+- **Stock restant estimé**: 16.00
 - **Jours avant rupture**: **13j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -98,13 +124,13 @@
 </details>
 
 <details>
-<summary>🟡 <strong>[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G</strong> (ID: 9184) - 50 unités</summary>
+<summary>🔴 <strong>[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G</strong> (ID: 9184) - 75 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.3699
-- **Stock restant estimé**: 13.01
-- **Jours avant rupture**: **9j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.9481
+- **Stock restant estimé**: -4.55
+- **Jours avant rupture**: **-2j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -112,39 +138,13 @@
 | --- | --- | --- | --- |
 | 2025-09-03 | S38943 | 50 | 9.90€ |
 | 2025-07-16 | S38112 | 100 | 9.90€ |
-| 2025-05-07 | S36569 | 50 | 9.90€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [50, 100, 50]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 50
-
-</details>
-
-<details>
-<summary>🟡 <strong>[PF1694] LD FR TARTINAD BIO POIVRON 200</strong> (ID: 9182) - 63 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8562
-- **Stock restant estimé**: 9.93
-- **Jours avant rupture**: **11j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-07-16 | S38112 | 75 | 9.90€ |
-| 2025-05-07 | S36569 | 50 | 9.90€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [75, 50]
+- **Quantités historiques**: [50, 100]
 - **Nombre commandes**: 2
-- **Valeur médiane**: 63
+- **Valeur médiane**: 75
 
 </details>
 
@@ -152,10 +152,10 @@
 <summary>🔴 <strong>[PF3273] JF MITRAILLETTE SAUCE 925ML</strong> (ID: 15037) - 1 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.0153
-- **Stock restant estimé**: -0.69
-- **Jours avant rupture**: **-45j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.0152
+- **Stock restant estimé**: -0.70
+- **Jours avant rupture**: **-46j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -173,44 +173,6 @@
 
 </details>
 
-<details>
-<summary>🔴 <strong>[PF1803] LD SAUCE TARTARE 250ML WECK</strong> (ID: 9258) - 20 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.4181
-- **Stock restant estimé**: -7.69
-- **Jours avant rupture**: **-18j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-15 | S36834 | 50 | 15.24€ |
-| 2025-03-20 | S35517 | 25 | 15.24€ |
-| 2025-01-27 | S34528 | 10 | 15.24€ |
-| 2024-12-04 | S33668 | 10 | 14.70€ |
-| 2024-11-21 | S33444 | 20 | 14.70€ |
-| 2024-11-15 | S33305 | 12 | 14.70€ |
-| 2024-10-18 | S32846 | 12 | 14.70€ |
-| 2024-09-25 | S32383 | 15 | 14.70€ |
-| 2024-07-17 | S31321 | 32 | 14.70€ |
-| 2024-06-07 | S30686 | 10 | 14.70€ |
-| 2024-05-28 | S30498 | 10 | 14.70€ |
-| 2024-04-23 | S29913 | 10 | 14.70€ |
-| 2024-01-17 | S28567 | 20 | 14.70€ |
-| 2023-11-24 | S27757 | 10 | 14.70€ |
-| 2023-10-23 | S04980 | 50 | 14.70€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [50, 25, 10, 10, 20]
-- **Nombre commandes**: 15
-- **Valeur médiane**: 20
-
-</details>
-
 
 ---
 
@@ -219,7 +181,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 2340.90€**
+- **Montant initial: 6249.90€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -228,14 +190,13 @@
 
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [PF1792] LD MAYONNAI TRUFFE... | 9247 | 250 | 0 | 250 | 18.36€ | 4590.00€ |
 | [PF1807] LD SAUCE ANDALOUSE... | 9262 | 5 | 0 | 5 | 15.24€ | 76.20€ |
 | [PF3274] JF BURGER SAUCE 925ML | 15038 | 1 | 0 | 1 | 39.60€ | 39.60€ |
 | [PF1799] LD MAYONNAISE OEUF... | 9254 | 50 | 0 | 50 | 15.24€ | 762.00€ |
-| [PF1696] CB9012 LD FR TARTI... | 9184 | 50 | 0 | 50 | 9.90€ | 495.00€ |
-| [PF1694] LD FR TARTINAD BIO... | 9182 | 63 | 0 | 63 | 9.90€ | 623.70€ |
+| [PF1696] CB9012 LD FR TARTI... | 9184 | 75 | 0 | 75 | 9.90€ | 742.50€ |
 | [PF3273] JF MITRAILLETTE SA... | 15037 | 1 | 0 | 1 | 39.60€ | 39.60€ |
-| [PF1803] LD SAUCE TARTARE 2... | 9258 | 20 | 0 | 20 | 15.24€ | 304.80€ |
 
-**Total (Phase 2.5): 2340.90€**
+**Total (Phase 2.5): 6249.90€**
 
 ---

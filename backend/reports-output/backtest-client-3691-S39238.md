@@ -5,8 +5,8 @@
 - **Client** : SRL WAL’EPICES (ID: 3691)
 - **Commande réelle** : S39238
 - **Date commande** : 2025-09-17 06:30:43
-- **Date cutoff système** : 2025-09-16 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-17 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -182,9 +182,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF0097] FILOU MOUTARDE 5 KG | 10 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [PF0097] FILOU MOUTARDE 5 KG | 10 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:46.378Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:35.096Z*

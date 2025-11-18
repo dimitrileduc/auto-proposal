@@ -5,8 +5,8 @@
 - **Client** : LA CAILLE DES FAGNES (ID: 3521)
 - **Commande réelle** : S39614
 - **Date commande** : 2025-10-08 14:19:11
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -163,8 +163,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 15 | Stock prédit: 0.3u (1j restants) → prédit 15u mais non commandé |
-| [PF0097] FILOU MOUTARDE 5 KG | 2 | Stock prédit: -0.4u (-31j restants) → prédit 2u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 18 | Stock prédit: -0.8u (-2j restants) → prédit 18u mais non commandé |
+| [PF0097] FILOU MOUTARDE 5 KG | 2 | Stock prédit: -0.4u (-32j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:43.936Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:35.265Z*

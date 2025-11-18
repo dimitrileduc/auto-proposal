@@ -5,8 +5,8 @@
 - **Client** : DLL PROXY FERRIERES DELCOU (ID: 38854)
 - **Commande réelle** : S39275
 - **Date commande** : 2025-09-18 12:28:28
-- **Date cutoff système** : 2025-09-17 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-18 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,8 +17,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 16.7% | 6 produits prédits, 1 corrects |
-| **Rappel** | 7.7% | 13 produits réels, 1 détectés |
-| **F1-Score** | 10.5% | Score équilibré global |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -163,16 +163,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LD013] LD Tuscan Organic Spread 180 g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LD015] LD Onion Spread 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LD013] LD Tuscan Organic Spread 180 g | 1 | Stock prédit: -0.7u (-25j restants) → prédit 1u mais non commandé |
+| [LD015] LD Onion Spread 180g | 1 | Stock prédit: -0.7u (-25j restants) → prédit 1u mais non commandé |
+| [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: -1.3u (-46j restants) → prédit 1u mais non commandé |
+| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 2 | Stock prédit: -4.6u (-82j restants) → prédit 2u mais non commandé |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: -4.6u (-82j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (12)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -187,25 +187,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | Stock suffisant: -0.0u (0j restants > seuil 19j) |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | Stock suffisant: -0.2u (-10j restants > seuil 19j) |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock suffisant: 0.5u (35j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock suffisant: 0.3u (13j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock suffisant: -0.8u (-17j restants > seuil 19j) |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock suffisant: 0.5u (25j restants > seuil 19j) |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock suffisant: -0.5u (-29j restants > seuil 19j) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock suffisant: 1.4u (20j restants > seuil 19j) |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock suffisant: 0.0u (6j restants > seuil 19j) |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 2 | Stock suffisant: 0.4u (9j restants > seuil 19j) |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock suffisant: 0.2u (4j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:03.848Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:54.120Z*

@@ -5,8 +5,8 @@
 - **Client** : TERROIRIST, Thomas (ID: 68258)
 - **Commande réelle** : S39352
 - **Date commande** : 2025-09-24 12:49:59
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 58.8% | 17 produits prédits, 10 corrects |
+| **Précision** | 55.6% | 18 produits prédits, 10 corrects |
 | **Rappel** | 100.0% | 10 produits réels, 10 détectés |
-| **F1-Score** | 74.1% | Score équilibré global |
+| **F1-Score** | 71.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 31.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.90 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 26.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
@@ -145,14 +145,14 @@
 | [JOY05] Organic Cherry Jam 370g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 4 | 6 | 2.0 | 33.3% | ✅ partial |
 
 
 ---
 
-## False Positives (7)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,13 +172,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JOY07] JOY! Organic Fig Jam 370g | 3 | Stock prédit: 2.0u (19j restants) → prédit 3u mais non commandé |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 10 | Stock prédit: 5.3u (14j restants) → prédit 10u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | Stock prédit: -4.4u (-23j restants) → prédit 2u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 4 | Stock prédit: -2.5u (-29j restants) → prédit 4u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 4 | Stock prédit: -2.2u (-27j restants) → prédit 4u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 4 | Stock prédit: -3.3u (-47j restants) → prédit 4u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 4 | Stock prédit: -2.9u (-38j restants) → prédit 4u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 3 | Stock prédit: 3.7u (30j restants) → prédit 3u mais non commandé |
+| [JOY07] JOY! Organic Fig Jam 370g | 3 | Stock prédit: 1.9u (18j restants) → prédit 3u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 10 | Stock prédit: 2.8u (5j restants) → prédit 10u mais non commandé |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | Stock prédit: -4.5u (-24j restants) → prédit 2u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 3 | Stock prédit: -0.3u (-4j restants) → prédit 3u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 3 | Stock prédit: -0.3u (-4j restants) → prédit 3u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 4 | Stock prédit: -5.5u (-60j restants) → prédit 4u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 4 | Stock prédit: -7.0u (-61j restants) → prédit 4u mais non commandé |
 
 
 ---
@@ -202,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:42.212Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:32.647Z*

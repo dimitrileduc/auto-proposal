@@ -5,8 +5,8 @@
 - **Client** : MAISON DESPRIET SA (ID: 3590)
 - **Commande réelle** : S39562
 - **Date commande** : 2025-10-06 09:21:48
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 4 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (4)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,17 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | Stock suffisant: 130.9u (6j restants > seuil 19j) |
-| [PF0075] FILOU CHASSEUR  10 L | 88 | Stock suffisant: 89.8u (10j restants > seuil 19j) |
-| [PF3266] JF SAUCE BEARNAISE 3L | 12 | Stock suffisant: -6.3u (-5j restants > seuil 19j) |
-| [PF0084] FILOU CARBONNADES 800 GR | 1 | Stock suffisant: 0.7u (47j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:59:00.847Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:50.169Z*

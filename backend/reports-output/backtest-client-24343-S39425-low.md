@@ -5,8 +5,8 @@
 - **Client** : The Belgian Factory SRL (ID: 24343)
 - **Commande réelle** : S39425
 - **Date commande** : 2025-09-29 06:52:19
-- **Date cutoff système** : 2025-09-28 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-29 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 2 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,15 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV189] LV Tartinade Houmous Type 380g | 80 | Stock suffisant: -9.3u (-8j restants > seuil 19j) |
-| [LV217] LV Tartinade Basilic 380g | 21 | Stock suffisant: 29.6u (31j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:28.460Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:18.205Z*

@@ -5,8 +5,8 @@
 - **Client** : RETAIL PARTNERS  SA (ID: 3476)
 - **Commande réelle** : S39658
 - **Date commande** : 2025-10-09 13:03:56
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -163,10 +163,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1501] BONI VINAI CIBOULETTE 450ML | 126 | Stock prédit: 56.4u (9j restants) → prédit 126u mais non commandé |
-| [PF1502] BONI VINAI FINE HERBE 450ML | 252 | Stock prédit: -328.3u (-39j restants) → prédit 252u mais non commandé |
-| [PF1503] BONI VINAI MOUTARDE 450ML | 126 | Stock prédit: -106.1u (-32j restants) → prédit 126u mais non commandé |
-| [PF3302] BONI BIO MAYONNAISE 500ML | 110 | Stock prédit: -42.0u (-19j restants) → prédit 110u mais non commandé |
+| [PF1501] BONI VINAI CIBOULETTE 450ML | 126 | Stock prédit: 51.5u (9j restants) → prédit 126u mais non commandé |
+| [PF1502] BONI VINAI FINE HERBE 450ML | 252 | Stock prédit: -317.3u (-39j restants) → prédit 252u mais non commandé |
+| [PF1503] BONI VINAI MOUTARDE 450ML | 126 | Stock prédit: -150.7u (-38j restants) → prédit 126u mais non commandé |
+| [PF3302] BONI BIO MAYONNAISE 500ML | 110 | Stock prédit: -78.2u (-29j restants) → prédit 110u mais non commandé |
 
 
 ---
@@ -190,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:20.659Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:10.804Z*

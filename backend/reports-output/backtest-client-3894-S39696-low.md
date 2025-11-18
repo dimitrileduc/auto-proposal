@@ -5,8 +5,8 @@
 - **Client** : DUMORTIER   ETS. (ID: 3894)
 - **Commande réelle** : S39696
 - **Date commande** : 2025-10-13 13:02:08
-- **Date cutoff système** : 2025-10-12 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 2 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (2)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,15 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 24 | Stock suffisant: -3.5u (-2j restants > seuil 19j) |
-| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 22 | Stock suffisant: -17.6u (-65j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:00.453Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:48.315Z*

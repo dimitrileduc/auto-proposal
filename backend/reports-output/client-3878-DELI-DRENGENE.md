@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - DELI DRENGENE
 
-**📅 Date:** 17/11/2025 13:00
+**📅 Date:** 18/11/2025 11:44
 **🆔 Client ID:** 3878
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 3.7s
+**⏱️ Durée d'exécution:** 3.1s
 
 ---
 
@@ -11,11 +11,11 @@
 
 
 **Produits à risque détectés: 5**
-- Urgents (rupture ≤ 0j): 2
-- Modérés (0 < rupture ≤ 19j): 3
+- Urgents (rupture ≤ 0j): 1
+- Modérés (0 < rupture ≤ 30j): 4
 
 **Total produits (Phase 1): 5**
-**Quantité totale brute: 903 unités**
+**Quantité totale brute: 816 unités**
 
 ### Détails par produit
 
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO</strong> (ID: 14896) - 150 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.3919
-- **Stock restant estimé**: 66.55
-- **Jours avant rupture**: **15j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 3.7815
+- **Stock restant estimé**: 74.37
+- **Jours avant rupture**: **19j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -36,25 +36,74 @@
 | 2025-09-04 | S38994 | 150 | 12.84€ |
 | 2025-06-27 | S37732 | 150 | 12.84€ |
 | 2025-05-28 | S37142 | 150 | 12.84€ |
-| 2025-04-28 | S36420 | 200 | 12.84€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [150, 150, 150, 200]
-- **Nombre commandes**: 4
+- **Quantités historiques**: [150, 150, 150]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 150
 
 </details>
 
 <details>
-<summary>🟡 <strong>[PF1057] DD MAYONNAISE TRUFFES  1000 ML</strong> (ID: 9059) - 468 unités</summary>
+<summary>🔴 <strong>[PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO</strong> (ID: 14893) - 30 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 8.8555
-- **Stock restant estimé**: 161.78
-- **Jours avant rupture**: **18j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.4634
+- **Stock restant estimé**: 0.73
+- **Jours avant rupture**: **0j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-04 | S38994 | 30 | 12.84€ |
+| 2025-08-14 | S38531 | 30 | 12.84€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [30, 30]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 30
+
+</details>
+
+<details>
+<summary>🟡 <strong>[PF1925] DD SAUCE TARTARE  1000 ML</strong> (ID: 9345) - 80 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 1.7978
+- **Stock restant estimé**: 44.04
+- **Jours avant rupture**: **24j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-04 | S38994 | 80 | 4.40€ |
+| 2025-06-27 | S37732 | 80 | 4.40€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [80, 80]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 80
+
+</details>
+
+<details>
+<summary>🟡 <strong>[PF1057] DD MAYONNAISE TRUFFES  1000 ML</strong> (ID: 9059) - 486 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 9.4369
+- **Stock restant estimé**: 129.09
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -62,26 +111,24 @@
 | --- | --- | --- | --- |
 | 2025-08-14 | S38531 | 516 | 6.40€ |
 | 2025-06-13 | S37443 | 456 | 6.40€ |
-| 2025-05-12 | S36718 | 480 | 6.40€ |
-| 2025-04-03 | S35796 | 80 | 6.40€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [516, 456, 480, 80]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 468
+- **Quantités historiques**: [516, 456]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 486
 
 </details>
 
 <details>
-<summary>🟡 <strong>[PF3263] 3312 - LD DD MAYONNAISE WASABI 280ML DTO</strong> (ID: 14895) - 55 unités</summary>
+<summary>🟡 <strong>[PF3263] 3312 - LD DD MAYONNAISE WASABI 280ML DTO</strong> (ID: 14895) - 70 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.3636
-- **Stock restant estimé**: 5.45
-- **Jours avant rupture**: **4j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.1765
+- **Stock restant estimé**: 11.76
+- **Jours avant rupture**: **10j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -89,88 +136,13 @@
 | --- | --- | --- | --- |
 | 2025-08-14 | S38531 | 60 | 12.84€ |
 | 2025-05-28 | S37142 | 80 | 12.84€ |
-| 2025-05-12 | S36718 | 50 | 12.84€ |
-| 2025-03-31 | S35720 | 50 | 12.84€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: medium
-- **Quantités historiques**: [60, 80, 50, 50]
-- **Nombre commandes**: 4
-- **Valeur médiane**: 55
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO</strong> (ID: 14901) - 80 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.8333
-- **Stock restant estimé**: -46.67
-- **Jours avant rupture**: **-56j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-03-31 | S35720 | 100 | 12.84€ |
-| 2025-02-03 | S34635 | 50 | 12.84€ |
-| 2025-01-02 | S34028 | 50 | 12.84€ |
-| 2024-10-16 | S32802 | 100 | 12.84€ |
-| 2024-03-08 | S29234 | 80 | 12.84€ |
-| 2024-02-19 | S28984 | 60 | 12.84€ |
-| 2024-01-15 | S28525 | 100 | 12.84€ |
-| 2023-10-16 | S04838 | 50 | 12.84€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [100, 50, 50, 100, 80]
-- **Nombre commandes**: 8
-- **Valeur médiane**: 80
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO</strong> (ID: 14889) - 150 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 4.9038
-- **Stock restant estimé**: -713.07
-- **Jours avant rupture**: **-145j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-03-31 | S35720 | 150 | 15.72€ |
-| 2025-02-26 | S35096 | 150 | 15.72€ |
-| 2025-02-03 | S34635 | 150 | 15.72€ |
-| 2025-01-02 | S34028 | 300 | 15.72€ |
-| 2024-11-18 | S33332 | 200 | 15.72€ |
-| 2024-10-30 | S33039 | 200 | 15.72€ |
-| 2024-09-30 | S32492 | 150 | 15.72€ |
-| 2024-09-05 | S32065 | 150 | 15.72€ |
-| 2024-08-12 | S31635 | 200 | 15.72€ |
-| 2024-07-11 | S31268 | 200 | 15.72€ |
-| 2024-05-31 | S30560 | 150 | 15.72€ |
-| 2024-05-28 | S30486 | 150 | 15.72€ |
-| 2024-03-08 | S29234 | 150 | 15.72€ |
-| 2024-02-19 | S28984 | 150 | 15.72€ |
-| 2024-01-15 | S28525 | 150 | 15.72€ |
-| 2023-12-28 | S28309 | 150 | 15.72€ |
-| 2023-12-04 | S27989 | 300 | 15.72€ |
-| 2023-11-15 | S27666 | 114 | 15.72€ |
-| 2023-11-07 | S27498 | 200 | 15.72€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [150, 150, 150, 300, 200]
-- **Nombre commandes**: 19
-- **Valeur médiane**: 150
+- **Quantités historiques**: [60, 80]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 70
 
 </details>
 
@@ -182,7 +154,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 9012.60€**
+- **Montant initial: 6672.40€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -192,11 +164,11 @@
 | Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | [PF3264] 3313 - LD DD SAUCE... | 14896 | 150 | 0 | 150 | 12.84€ | 1926.00€ |
-| [PF1057] DD MAYONNAISE TRUF... | 9059 | 468 | 0 | 468 | 6.40€ | 2995.20€ |
-| [PF3263] 3312 - LD DD MAYON... | 14895 | 55 | 0 | 55 | 12.84€ | 706.20€ |
-| [PF3265] 3314 - LD DD SAUCE... | 14901 | 80 | 0 | 80 | 12.84€ | 1027.20€ |
-| [PF3260] 3311 - LD DD MAYO ... | 14889 | 150 | 0 | 150 | 15.72€ | 2358.00€ |
+| [PF3261] 3320 - LD DD MAYON... | 14893 | 30 | 0 | 30 | 12.84€ | 385.20€ |
+| [PF1925] DD SAUCE TARTARE  ... | 9345 | 80 | 0 | 80 | 4.40€ | 352.00€ |
+| [PF1057] DD MAYONNAISE TRUF... | 9059 | 486 | 0 | 486 | 6.40€ | 3110.40€ |
+| [PF3263] 3312 - LD DD MAYON... | 14895 | 70 | 0 | 70 | 12.84€ | 898.80€ |
 
-**Total (Phase 2.5): 9012.60€**
+**Total (Phase 2.5): 6672.40€**
 
 ---

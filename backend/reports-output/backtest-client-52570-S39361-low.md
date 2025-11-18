@@ -5,8 +5,8 @@
 - **Client** : ASBL L'Accueil - Magasin du Val Dieu (ID: 52570)
 - **Commande réelle** : S39361
 - **Date commande** : 2025-09-24 09:45:50
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 9 produits réels, 0 détectés |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,14 +157,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -179,22 +178,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 3 | Stock suffisant: -2.7u (-19j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | Stock suffisant: 0.9u (8j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 3 | Stock suffisant: -0.2u (-1j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 3 | Stock suffisant: -0.2u (-1j restants > seuil 19j) |
-| [LV133] LV Tartinade Ananas Coco 190g | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock suffisant: -0.4u (-22j restants > seuil 19j) |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock suffisant: -0.1u (-4j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:08.070Z*
+*Rapport généré automatiquement le 2025-11-18T10:43:58.661Z*

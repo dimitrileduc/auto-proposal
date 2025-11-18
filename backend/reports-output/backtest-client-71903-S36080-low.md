@@ -5,8 +5,8 @@
 - **Client** : FOODPRINT SRL - FP (ID: 71903)
 - **Commande réelle** : S36080
 - **Date commande** : 2025-04-14 08:31:16
-- **Date cutoff système** : 2025-04-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-04-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,8 +17,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 14.8% | 61 produits prédits, 9 corrects |
-| **Rappel** | 75.0% | 12 produits réels, 9 détectés |
-| **F1-Score** | 24.7% | Score équilibré global |
+| **Rappel** | 100.0% | 9 produits réels, 9 détectés |
+| **F1-Score** | 25.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -171,63 +171,63 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
-| [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
-| [fsv14] Amandes grillées bio vrac 2,8kg | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
-| [fsv18] Mendiant bio vrac 2,8kg | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
-| [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 180 | Stock prédit: NaNu (NaNj restants) → prédit 180u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 180 | Stock prédit: NaNu (NaNj restants) → prédit 180u mais non commandé |
-| [LEA04] LEAMO ginger beer bio 750ml | 10 | Stock prédit: NaNu (NaNj restants) → prédit 10u mais non commandé |
-| [LEA09] LEAMO cola bio 330ml | 10 | Stock prédit: NaNu (NaNj restants) → prédit 10u mais non commandé |
-| [LEA10] LEAMO ginger beer bio 330ml | 15 | Stock prédit: NaNu (NaNj restants) → prédit 15u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 120 | Stock prédit: NaNu (NaNj restants) → prédit 120u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 60 | Stock prédit: NaNu (NaNj restants) → prédit 60u mais non commandé |
-| [DAM05] Dr. Antonio Martins eau de coco bio & fairtrade 330ml | 30 | Stock prédit: NaNu (NaNj restants) → prédit 30u mais non commandé |
-| [BUD02] BUDDY bio functional & energy drink citorn & gingembre - 250ml | 60 | Stock prédit: NaNu (NaNj restants) → prédit 60u mais non commandé |
-| [BUD03] BUDDY bio functional & energy drink mangue passion - 250ml | 60 | Stock prédit: NaNu (NaNj restants) → prédit 60u mais non commandé |
-| [BUD04] BUDDY bio functional & energy drink grenade hibiscus - 250ml | 60 | Stock prédit: NaNu (NaNj restants) → prédit 60u mais non commandé |
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 20 | Stock prédit: NaNu (NaNj restants) → prédit 20u mais non commandé |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 90 | Stock prédit: NaNu (NaNj restants) → prédit 90u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 180 | Stock prédit: NaNu (NaNj restants) → prédit 180u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 180 | Stock prédit: NaNu (NaNj restants) → prédit 180u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 180 | Stock prédit: NaNu (NaNj restants) → prédit 180u mais non commandé |
-| [KOKO02] KOKO Kombucha citron gingembre 330ml | 40 | Stock prédit: NaNu (NaNj restants) → prédit 40u mais non commandé |
-| [KOKO03] KOKO Kombucha framboise hibiscus 330ml | 40 | Stock prédit: NaNu (NaNj restants) → prédit 40u mais non commandé |
-| [KOKO01] KOKO Kombucha original 330ml | 40 | Stock prédit: NaNu (NaNj restants) → prédit 40u mais non commandé |
-| Palette EURO | 333 | Stock prédit: NaNu (NaNj restants) → prédit 333u mais non commandé |
-| [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 10 | Stock prédit: NaNu (NaNj restants) → prédit 10u mais non commandé |
-| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 15 | Stock prédit: NaNu (NaNj restants) → prédit 15u mais non commandé |
-| [JOY08] JOY! Confiture bio à la framboise 370g | 196 | Stock prédit: NaNu (NaNj restants) → prédit 196u mais non commandé |
-| [WIG01] WIGNAC cidre naturel bio 330ml | 10 | Stock prédit: NaNu (NaNj restants) → prédit 10u mais non commandé |
-| [WIG02] WIGNAC cidre rosé bio 330ml | 20 | Stock prédit: NaNu (NaNj restants) → prédit 20u mais non commandé |
-| [WIG03] WIGNAC cidre naturel bio 750ml | 30 | Stock prédit: NaNu (NaNj restants) → prédit 30u mais non commandé |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 20 | Stock prédit: NaNu (NaNj restants) → prédit 20u mais non commandé |
-| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 30 | Stock prédit: NaNu (NaNj restants) → prédit 30u mais non commandé |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 20 | Stock prédit: NaNu (NaNj restants) → prédit 20u mais non commandé |
-| [JOY03] JOY! Confiture bio à l'abricot 370g | 203 | Stock prédit: NaNu (NaNj restants) → prédit 203u mais non commandé |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 46 | Stock prédit: NaNu (NaNj restants) → prédit 46u mais non commandé |
-| [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml | 10 | Stock prédit: NaNu (NaNj restants) → prédit 10u mais non commandé |
-| [OCC02] OCCHIOLINO premium limoncello 500ml | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
-| [OCC05] OCCHIOLINO premium arancello 500ml | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 10 | Stock prédit: NaNu (NaNj restants) → prédit 10u mais non commandé |
-| [JOY02] JOY! Confiture bio à la fraise 370g | 196 | Stock prédit: NaNu (NaNj restants) → prédit 196u mais non commandé |
-| [JOY04] JOY! Confiture bio aux 4 fruits 370g | 199 | Stock prédit: NaNu (NaNj restants) → prédit 199u mais non commandé |
-| [JOY06] JOY! Confiture bio à la rhubarbe 370g | 257 | Stock prédit: NaNu (NaNj restants) → prédit 257u mais non commandé |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 36 | Stock prédit: NaNu (NaNj restants) → prédit 36u mais non commandé |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 48 | Stock prédit: NaNu (NaNj restants) → prédit 48u mais non commandé |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 36 | Stock prédit: NaNu (NaNj restants) → prédit 36u mais non commandé |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 36 | Stock prédit: NaNu (NaNj restants) → prédit 36u mais non commandé |
-| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 12 | Stock prédit: NaNu (NaNj restants) → prédit 12u mais non commandé |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 12 | Stock prédit: NaNu (NaNj restants) → prédit 12u mais non commandé |
-| [JOY05] JOY! Confiture bio à la cerise 370g | 200 | Stock prédit: NaNu (NaNj restants) → prédit 200u mais non commandé |
-| [JOY07] JOY! Confiture bio à la figue 370g | 281 | Stock prédit: NaNu (NaNj restants) → prédit 281u mais non commandé |
+| [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
+| [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [fsv14] Amandes grillées bio vrac 2,8kg | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
+| [fsv18] Mendiant bio vrac 2,8kg | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 180 | Stock prédit: 0.0u (0j restants) → prédit 180u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 180 | Stock prédit: 0.0u (0j restants) → prédit 180u mais non commandé |
+| [LEA04] LEAMO ginger beer bio 750ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [LEA09] LEAMO cola bio 330ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [LEA10] LEAMO ginger beer bio 330ml | 15 | Stock prédit: 0.0u (0j restants) → prédit 15u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 120 | Stock prédit: 0.0u (0j restants) → prédit 120u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
+| [DAM05] Dr. Antonio Martins eau de coco bio & fairtrade 330ml | 30 | Stock prédit: 0.0u (0j restants) → prédit 30u mais non commandé |
+| [BUD02] BUDDY bio functional & energy drink citorn & gingembre - 250ml | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
+| [BUD03] BUDDY bio functional & energy drink mangue passion - 250ml | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
+| [BUD04] BUDDY bio functional & energy drink grenade hibiscus - 250ml | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 90 | Stock prédit: 0.0u (0j restants) → prédit 90u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 180 | Stock prédit: 0.0u (0j restants) → prédit 180u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 180 | Stock prédit: 0.0u (0j restants) → prédit 180u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 180 | Stock prédit: 0.0u (0j restants) → prédit 180u mais non commandé |
+| [KOKO02] KOKO Kombucha citron gingembre 330ml | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
+| [KOKO03] KOKO Kombucha framboise hibiscus 330ml | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
+| [KOKO01] KOKO Kombucha original 330ml | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
+| Palette EURO | 333 | Stock prédit: 0.0u (0j restants) → prédit 333u mais non commandé |
+| [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 15 | Stock prédit: 0.0u (0j restants) → prédit 15u mais non commandé |
+| [JOY08] JOY! Confiture bio à la framboise 370g | 196 | Stock prédit: 0.0u (0j restants) → prédit 196u mais non commandé |
+| [WIG01] WIGNAC cidre naturel bio 330ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [WIG02] WIGNAC cidre rosé bio 330ml | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
+| [WIG03] WIGNAC cidre naturel bio 750ml | 30 | Stock prédit: 0.0u (0j restants) → prédit 30u mais non commandé |
+| [WIG04] WIGNAC cidre rosé bio 750ml | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
+| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 30 | Stock prédit: 0.0u (0j restants) → prédit 30u mais non commandé |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
+| [JOY03] JOY! Confiture bio à l'abricot 370g | 203 | Stock prédit: 0.0u (0j restants) → prédit 203u mais non commandé |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 46 | Stock prédit: 0.0u (0j restants) → prédit 46u mais non commandé |
+| [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [OCC05] OCCHIOLINO premium arancello 500ml | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
+| [JOY02] JOY! Confiture bio à la fraise 370g | 196 | Stock prédit: 0.0u (0j restants) → prédit 196u mais non commandé |
+| [JOY04] JOY! Confiture bio aux 4 fruits 370g | 199 | Stock prédit: 0.0u (0j restants) → prédit 199u mais non commandé |
+| [JOY06] JOY! Confiture bio à la rhubarbe 370g | 257 | Stock prédit: 0.0u (0j restants) → prédit 257u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 36 | Stock prédit: 0.0u (0j restants) → prédit 36u mais non commandé |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 48 | Stock prédit: 0.0u (0j restants) → prédit 48u mais non commandé |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 36 | Stock prédit: 0.0u (0j restants) → prédit 36u mais non commandé |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 36 | Stock prédit: 0.0u (0j restants) → prédit 36u mais non commandé |
+| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 12 | Stock prédit: 0.0u (0j restants) → prédit 12u mais non commandé |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 12 | Stock prédit: 0.0u (0j restants) → prédit 12u mais non commandé |
+| [JOY05] JOY! Confiture bio à la cerise 370g | 200 | Stock prédit: 0.0u (0j restants) → prédit 200u mais non commandé |
+| [JOY07] JOY! Confiture bio à la figue 370g | 281 | Stock prédit: 0.0u (0j restants) → prédit 281u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -242,16 +242,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 112 | Stock suffisant: NaNu (NaNj restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 56 | Stock suffisant: NaNu (NaNj restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 56 | Stock suffisant: NaNu (NaNj restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:54.147Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:42.991Z*

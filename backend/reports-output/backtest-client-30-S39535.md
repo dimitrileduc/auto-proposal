@@ -5,8 +5,8 @@
 - **Client** : Conserverie Et Moutarderie Belge (ID: 30)
 - **Commande réelle** : S39535
 - **Date commande** : 2025-10-03 08:01:58
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 6.5% | 31 produits prédits, 2 corrects |
+| **Précision** | 5.7% | 35 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 12.1% | Score équilibré global |
+| **F1-Score** | 10.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -144,7 +144,7 @@
 
 ---
 
-## False Positives (29)
+## False Positives (33)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -164,35 +164,39 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: -0.6u (-13j restants) → prédit 1u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: -0.8u (-16j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-7j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
-| [LV036] LV Olives Vertes dénoyautées BE 350g | 139 | Stock prédit: -29.9u (-10j restants) → prédit 139u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | Stock prédit: -7.1u (-62j restants) → prédit 8u mais non commandé |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 3 | Stock prédit: -2.7u (-62j restants) → prédit 3u mais non commandé |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 5 | Stock prédit: -4.4u (-62j restants) → prédit 5u mais non commandé |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 3 | Stock prédit: -2.7u (-62j restants) → prédit 3u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 4 | Stock prédit: -3.5u (-62j restants) → prédit 4u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 9 | Stock prédit: -8.0u (-61j restants) → prédit 9u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 4 | Stock prédit: -6.4u (-81j restants) → prédit 4u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: -2.7u (-62j restants) → prédit 3u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: -1.8u (-62j restants) → prédit 2u mais non commandé |
-| [LV161] LV Tartinade Mangue curry 190g | 6 | Stock prédit: -5.3u (-62j restants) → prédit 6u mais non commandé |
-| [LV160] LV Tartinade Aubergine 190g | 6 | Stock prédit: -5.3u (-62j restants) → prédit 6u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 4 | Stock prédit: -3.5u (-62j restants) → prédit 4u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | Stock prédit: -5.3u (-62j restants) → prédit 6u mais non commandé |
-| [LV131] LV Tartinade Potiron 190g | 2 | Stock prédit: -1.8u (-62j restants) → prédit 2u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: -1.8u (-62j restants) → prédit 2u mais non commandé |
-| [LV162] LV Tartinade Tomato Basilico 190g | 6 | Stock prédit: -5.3u (-62j restants) → prédit 6u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 6 | Stock prédit: -5.3u (-62j restants) → prédit 6u mais non commandé |
-| [LV330] LV BIO Tartinade Toscana 190g | 4 | Stock prédit: -3.5u (-62j restants) → prédit 4u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 2 | Stock prédit: -1.8u (-62j restants) → prédit 2u mais non commandé |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock prédit: -1.8u (-62j restants) → prédit 2u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 4 | Stock prédit: -3.5u (-62j restants) → prédit 4u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: -2.7u (-62j restants) → prédit 3u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 3 | Stock prédit: -0.4u (-12j restants) → prédit 3u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | Stock prédit: NaNu (NaNj restants) → prédit 8u mais non commandé |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
+| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 9 | Stock prédit: NaNu (NaNj restants) → prédit 9u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
+| [LV161] LV Tartinade Mangue curry 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
+| [LV160] LV Tartinade Aubergine 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
+| [LV131] LV Tartinade Potiron 190g | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
+| [LV162] LV Tartinade Tomato Basilico 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
+| [LV136] LV Tartinade Betterave 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
+| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
+| [LV342] LV Organic Broccoli Spread 190 g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
+| [LV357] LV Tartinade BIO Asperge 190g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
+| [DIS0003] Display TVF bois | 3 | Stock prédit: 1.0u (29j restants) → prédit 3u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [LV036] LV Olives Vertes dénoyautées BE 350g | 139 | Stock prédit: -30.8u (-11j restants) → prédit 139u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 3 | Stock prédit: -12.3u (-97j restants) → prédit 3u mais non commandé |
 
 
 ---
@@ -216,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T11:58:55.047Z*
+*Rapport généré automatiquement le 2025-11-18T10:42:44.966Z*

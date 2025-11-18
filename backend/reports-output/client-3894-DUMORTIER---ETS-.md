@@ -1,21 +1,21 @@
 # 📊 Rapport Auto-Proposal - DUMORTIER   ETS.
 
-**📅 Date:** 17/11/2025 13:00
+**📅 Date:** 18/11/2025 11:44
 **🆔 Client ID:** 3894
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 2.8s
+**⏱️ Durée d'exécution:** 3.5s
 
 ---
 
 ## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
 
 
-**Produits à risque détectés: 4**
-- Urgents (rupture ≤ 0j): 2
-- Modérés (0 < rupture ≤ 19j): 2
+**Produits à risque détectés: 3**
+- Urgents (rupture ≤ 0j): 0
+- Modérés (0 < rupture ≤ 30j): 3
 
-**Total produits (Phase 1): 4**
-**Quantité totale brute: 176 unités**
+**Total produits (Phase 1): 3**
+**Quantité totale brute: 152 unités**
 
 ### Détails par produit
 
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF0077] FILOU PROVENCALE 5 L</strong> (ID: 8986) - 80 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 2.4134
-- **Stock restant estimé**: 2.77
+- **Consommation/jour**: 2.3077
+- **Stock restant estimé**: 3.85
 - **Jours avant rupture**: **1j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -36,26 +36,24 @@
 | 2025-09-09 | S39096 | 80 | 9.37€ |
 | 2025-07-31 | S38268 | 80 | 9.37€ |
 | 2025-06-30 | S37683 | 80 | 9.37€ |
-| 2025-05-02 | S36475 | 160 | 9.37€ |
-| 2025-04-15 | S36211 | 32 | 9.37€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [80, 80, 80, 160, 32]
-- **Nombre commandes**: 5
+- **Confiance**: medium
+- **Quantités historiques**: [80, 80, 80]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 80
 
 </details>
 
 <details>
-<summary>🔴 <strong>[PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> (ID: 9029) - 48 unités</summary>
+<summary>🟡 <strong>[PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> (ID: 9029) - 48 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 1.6089
-- **Stock restant estimé**: -3.49
-- **Jours avant rupture**: **-2j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 1.3846
+- **Stock restant estimé**: 2.31
+- **Jours avant rupture**: **1j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -64,15 +62,12 @@
 | 2025-09-09 | S39096 | 48 | 45.12€ |
 | 2025-07-31 | S38268 | 48 | 45.12€ |
 | 2025-06-30 | S37683 | 48 | 45.12€ |
-| 2025-06-04 | S37155 | 48 | 45.12€ |
-| 2025-05-02 | S36475 | 48 | 45.12€ |
-| 2025-04-15 | S36211 | 48 | 45.12€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
-- **Confiance**: high
-- **Quantités historiques**: [48, 48, 48, 48, 48]
-- **Nombre commandes**: 6
+- **Confiance**: medium
+- **Quantités historiques**: [48, 48, 48]
+- **Nombre commandes**: 3
 - **Valeur médiane**: 48
 
 </details>
@@ -81,10 +76,10 @@
 <summary>🟡 <strong>[PF0549] YVALLI SAUCE PIZZA 2,5 KG</strong> (ID: 9035) - 24 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 0.5581
-- **Stock restant estimé**: 6.14
-- **Jours avant rupture**: **11j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 0.4615
+- **Stock restant estimé**: 8.77
+- **Jours avant rupture**: **18j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -92,32 +87,6 @@
 | --- | --- | --- | --- |
 | 2025-09-09 | S39096 | 24 | 37.08€ |
 | 2025-06-30 | S37683 | 24 | 37.08€ |
-| 2025-06-04 | S37155 | 24 | 37.08€ |
-
-### 🧮 Calcul Quantité
-- **Stratégie**: median_recent_orders
-- **Confiance**: medium
-- **Quantités historiques**: [24, 24, 24]
-- **Nombre commandes**: 3
-- **Valeur médiane**: 24
-
-</details>
-
-<details>
-<summary>🔴 <strong>[PF0509] YVALLI GR BOUL TOMATE 2,5 KG</strong> (ID: 9310) - 24 unités</summary>
-
-### 📊 Prédiction Stock
-- **Consommation/jour**: 0.2682
-- **Stock restant estimé**: -17.56
-- **Jours avant rupture**: **-65j**
-- **Seuil réappro**: 19j
-
-### 📦 Historique Commandes
-
-| Date | Commande | Qté | Prix unit. |
-| --- | --- | --- | --- |
-| 2025-05-09 | S36589 | 24 | 54.06€ |
-| 2025-04-15 | S36211 | 24 | 54.06€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
@@ -136,7 +105,7 @@
 
 ### Avant ajustement MOQ
 
-- **Montant initial: 5102.72€**
+- **Montant initial: 3805.28€**
 - **MOQ requis: 300.00€**
 - ✅ **Déjà au-dessus du MOQ**
 
@@ -148,8 +117,7 @@
 | [PF0077] FILOU PROVENCALE 5 L | 8986 | 80 | 0 | 80 | 9.37€ | 749.60€ |
 | [PF0516] YVALLI PROVENCALE ... | 9029 | 48 | 0 | 48 | 45.12€ | 2165.76€ |
 | [PF0549] YVALLI SAUCE PIZZA... | 9035 | 24 | 0 | 24 | 37.08€ | 889.92€ |
-| [PF0509] YVALLI GR BOUL TOM... | 9310 | 24 | 0 | 24 | 54.06€ | 1297.44€ |
 
-**Total (Phase 2.5): 5102.72€**
+**Total (Phase 2.5): 3805.28€**
 
 ---

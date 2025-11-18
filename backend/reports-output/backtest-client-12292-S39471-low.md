@@ -5,8 +5,8 @@
 - **Client** : Green Peas (ID: 12292)
 - **Commande réelle** : S39471
 - **Date commande** : 2025-10-09 06:35:27
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-09 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 14 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (14)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,27 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock suffisant: -0.4u (-9j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock suffisant: 0.5u (10j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 0.5u (29j restants > seuil 19j) |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock suffisant: -0.4u (-9j restants > seuil 19j) |
-| [MF0029] MF Tarti Datte chili 250g | 1 | Stock suffisant: -0.4u (-9j restants > seuil 19j) |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | Stock suffisant: -0.2u (-5j restants > seuil 19j) |
-| [MF0027] MF Tarti Aubergine 250g  | 3 | Stock suffisant: 0.2u (2j restants > seuil 19j) |
-| [MF0052] MF Pois chiches  500g | 3 | Stock suffisant: -1.4u (-25j restants > seuil 19j) |
-| [MF0051] MF Kidney Beans 500g | 1 | Stock suffisant: 0.1u (2j restants > seuil 19j) |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock suffisant: -2.5u (-24j restants > seuil 19j) |
-| [VID0010] Consigne casier | 78 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0009] Consigne casier | 13 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:30.574Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:20.698Z*

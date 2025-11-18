@@ -5,8 +5,8 @@
 - **Client** : MDH FOODSERVICE (ID: 60488)
 - **Commande réelle** : S39326
 - **Date commande** : 2025-09-22 09:26:25
-- **Date cutoff système** : 2025-09-21 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 5 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (5)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,18 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JOY03] JOY! Organic Apricot Jam 370g | 10 | Stock suffisant: 1.4u (3j restants > seuil 19j) |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 20 | Stock suffisant: 3.7u (4j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock suffisant: -0.4u (-5j restants > seuil 19j) |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock suffisant: -3.0u (-49j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 3 | Stock suffisant: 0.3u (3j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:14.983Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:06.320Z*

@@ -5,8 +5,8 @@
 - **Client** : Energy Services Management - Epicerie Uhoda Damré (ID: 57352)
 - **Commande réelle** : S39124
 - **Date commande** : 2025-09-11 11:16:42
-- **Date cutoff système** : 2025-09-10 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-11 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 19 produits réels, 0 détectés |
+| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,16 +157,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
+| [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: -3.1u (-52j restants) → prédit 2u mais non commandé |
+| [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -3.1u (-52j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (19)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -181,32 +179,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [LV159] LV Tartinade aux Truffes  135g  | 0 | Stock suffisant: 0.3u (11j restants > seuil 19j) |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock suffisant: 0.3u (11j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock suffisant: 1.2u (19j restants > seuil 19j) |
-| [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: -0.4u (-31j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock suffisant: -2.0u (-43j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -0.6u (-22j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock suffisant: 0.3u (37j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock suffisant: 0.4u (6j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: -0.1u (-2j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock suffisant: 0.3u (13j restants > seuil 19j) |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock suffisant: -0.7u (-16j restants > seuil 19j) |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock suffisant: 0.3u (11j restants > seuil 19j) |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock suffisant: 1.0u (33j restants > seuil 19j) |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock suffisant: 0.8u (44j restants > seuil 19j) |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock suffisant: 1.4u (26j restants > seuil 19j) |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock suffisant: 0.8u (20j restants > seuil 19j) |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 2 | Stock suffisant: 0.8u (20j restants > seuil 19j) |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock suffisant: 0.2u (3j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:56.200Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:47.345Z*

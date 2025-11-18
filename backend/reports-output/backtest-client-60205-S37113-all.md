@@ -5,8 +5,8 @@
 - **Client** : BIO VRAC UCCLE (ID: 60205)
 - **Commande réelle** : S37113
 - **Date commande** : 2025-05-28 08:11:24
-- **Date cutoff système** : 2025-05-27 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-05-28 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -168,13 +168,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 5 | Stock prédit: -5.0u (-33j restants) → prédit 5u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | Stock prédit: -6.6u (-51j restants) → prédit 2u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | Stock prédit: -4.2u (-45j restants) → prédit 3u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: -6.1u (-50j restants) → prédit 2u mais non commandé |
-| [RISH05] RISH kombucha BIO - rose 750ml | 4 | Stock prédit: -6.5u (-41j restants) → prédit 4u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 3 | Stock prédit: -2.7u (-51j restants) → prédit 3u mais non commandé |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | Stock prédit: -2.5u (-50j restants) → prédit 2u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 5 | Stock prédit: -3.6u (-28j restants) → prédit 5u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 3 | Stock prédit: -4.9u (-48j restants) → prédit 3u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | Stock prédit: -3.2u (-41j restants) → prédit 3u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 3 | Stock prédit: -4.3u (-46j restants) → prédit 3u mais non commandé |
+| [RISH05] RISH kombucha BIO - rose 750ml | 4 | Stock prédit: -6.4u (-41j restants) → prédit 4u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 3 | Stock prédit: -2.7u (-52j restants) → prédit 3u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | Stock prédit: -1.1u (-33j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -198,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:39.383Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:33.104Z*

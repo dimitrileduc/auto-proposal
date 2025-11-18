@@ -1,9 +1,9 @@
 # 📊 Rapport Auto-Proposal - CARREFOUR BELGIUM SA, CD Carrefour Kontich
 
-**📅 Date:** 17/11/2025 12:58
+**📅 Date:** 18/11/2025 11:42
 **🆔 Client ID:** 17251
 **📧 Email:** N/A
-**⏱️ Durée d'exécution:** 1.9s
+**⏱️ Durée d'exécution:** 2.3s
 
 ---
 
@@ -11,8 +11,8 @@
 
 
 **Produits à risque détectés: 13**
-- Urgents (rupture ≤ 0j): 6
-- Modérés (0 < rupture ≤ 19j): 7
+- Urgents (rupture ≤ 0j): 7
+- Modérés (0 < rupture ≤ 30j): 6
 
 **Total produits (Phase 1): 13**
 **Quantité totale brute: 1580 unités**
@@ -24,10 +24,10 @@
 <summary>🟡 <strong>[PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR</strong> (ID: 14415) - 192 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 21.8667
-- **Stock restant estimé**: 222.40
-- **Jours avant rupture**: **10j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 21.5172
+- **Stock restant estimé**: 201.93
+- **Jours avant rupture**: **9j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -49,21 +49,12 @@
 | 2025-07-08 | S37947 | 96 | 23.36€ |
 | 2025-07-01 | S37787 | 96 | 23.36€ |
 | 2025-06-19 | S37540 | 288 | 23.36€ |
-| 2025-06-10 | S37336 | 96 | 23.36€ |
-| 2025-06-03 | S37227 | 96 | 23.36€ |
-| 2025-05-28 | S37082 | 96 | 23.36€ |
-| 2025-05-13 | S36732 | 96 | 23.36€ |
-| 2025-05-06 | S36538 | 96 | 23.36€ |
-| 2025-04-29 | S36430 | 192 | 23.36€ |
-| 2025-04-22 | S36317 | 192 | 23.36€ |
-| 2025-04-15 | S36225 | 96 | 23.36€ |
-| 2025-04-15 | S36197 | 480 | 23.36€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [288, 192, 384, 96, 96]
-- **Nombre commandes**: 25
+- **Nombre commandes**: 16
 - **Valeur médiane**: 192
 
 </details>
@@ -72,10 +63,10 @@
 <summary>🟡 <strong>[PF01012] CARREFOUR VOL AU VENT 400 GR</strong> (ID: 8999) - 192 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 22.4000
-- **Stock restant estimé**: 124.80
-- **Jours avant rupture**: **5j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 22.7797
+- **Stock restant estimé**: 100.88
+- **Jours avant rupture**: **4j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -98,22 +89,12 @@
 | 2025-07-01 | S37787 | 288 | 20.83€ |
 | 2025-06-24 | S37632 | 96 | 20.83€ |
 | 2025-06-17 | S37504 | 96 | 20.83€ |
-| 2025-06-10 | S37336 | 96 | 20.83€ |
-| 2025-06-03 | S37227 | 96 | 20.83€ |
-| 2025-05-28 | S37082 | 96 | 20.83€ |
-| 2025-05-20 | S36921 | 96 | 20.83€ |
-| 2025-05-13 | S36732 | 96 | 20.83€ |
-| 2025-05-06 | S36538 | 96 | 20.83€ |
-| 2025-04-29 | S36430 | 192 | 20.83€ |
-| 2025-04-22 | S36317 | 96 | 20.83€ |
-| 2025-04-15 | S36225 | 192 | 20.83€ |
-| 2025-04-15 | S36197 | 288 | 20.83€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [192, 96, 288, 192, 192]
-- **Nombre commandes**: 27
+- **Nombre commandes**: 17
 - **Valeur médiane**: 192
 
 </details>
@@ -122,10 +103,10 @@
 <summary>🟡 <strong>[PF3225] CARREFOUR CARBONNADES 680 GR PAR 8</strong> (ID: 14410) - 108 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 16.8000
-- **Stock restant estimé**: 24.00
+- **Consommation/jour**: 13.9655
+- **Stock restant estimé**: 24.21
 - **Jours avant rupture**: **1j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -144,32 +125,24 @@
 | 2025-07-08 | S37947 | 108 | 26.80€ |
 | 2025-06-24 | S37632 | 108 | 26.80€ |
 | 2025-06-19 | S37540 | 216 | 26.80€ |
-| 2025-06-10 | S37336 | 108 | 26.80€ |
-| 2025-05-28 | S37082 | 108 | 26.80€ |
-| 2025-05-08 | S36628 | 216 | 26.80€ |
-| 2025-05-05 | S36520 | 108 | 26.80€ |
-| 2025-04-29 | S36430 | 216 | 26.80€ |
-| 2025-04-22 | S36317 | 108 | 26.80€ |
-| 2025-04-15 | S36225 | 216 | 26.80€ |
-| 2025-04-15 | S36197 | 324 | 26.80€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [108, 108, 108, 108, 108]
-- **Nombre commandes**: 21
+- **Nombre commandes**: 13
 - **Valeur médiane**: 108
 
 </details>
 
 <details>
-<summary>🟡 <strong>[PF3339] CARRE MAYONNAISE ANCIENNE 500ML</strong> (ID: 17773) - 96 unités</summary>
+<summary>🔴 <strong>[PF3339] CARRE MAYONNAISE ANCIENNE 500ML</strong> (ID: 17773) - 96 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 13.3333
-- **Stock restant estimé**: 29.33
-- **Jours avant rupture**: **2j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 14.7027
+- **Stock restant estimé**: 7.78
+- **Jours avant rupture**: **0j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -187,20 +160,12 @@
 | 2025-07-08 | S37947 | 192 | 15.72€ |
 | 2025-07-01 | S37787 | 192 | 15.72€ |
 | 2025-06-24 | S37632 | 96 | 15.72€ |
-| 2025-06-10 | S37336 | 96 | 15.72€ |
-| 2025-06-03 | S37227 | 96 | 15.72€ |
-| 2025-05-20 | S36921 | 96 | 15.72€ |
-| 2025-05-13 | S36732 | 96 | 15.72€ |
-| 2025-05-06 | S36538 | 96 | 15.72€ |
-| 2025-04-29 | S36430 | 96 | 15.72€ |
-| 2025-04-22 | S36317 | 96 | 15.72€ |
-| 2025-04-15 | S36225 | 96 | 15.72€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [96, 96, 96, 96, 192]
-- **Nombre commandes**: 20
+- **Nombre commandes**: 12
 - **Valeur médiane**: 96
 
 </details>
@@ -209,10 +174,10 @@
 <summary>🟡 <strong>[PF3343] SIMPL CARRE VOL AU VENT 800 GR</strong> (ID: 17811) - 192 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 15.4667
-- **Stock restant estimé**: 114.67
-- **Jours avant rupture**: **7j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 17.0847
+- **Stock restant estimé**: 89.49
+- **Jours avant rupture**: **5j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -233,20 +198,12 @@
 | 2025-07-08 | S37947 | 96 | 21.20€ |
 | 2025-07-01 | S37787 | 96 | 21.20€ |
 | 2025-06-17 | S37504 | 96 | 21.20€ |
-| 2025-06-10 | S37336 | 96 | 21.20€ |
-| 2025-06-03 | S37227 | 96 | 21.20€ |
-| 2025-05-28 | S37082 | 96 | 21.20€ |
-| 2025-05-20 | S36921 | 96 | 21.20€ |
-| 2025-05-13 | S36732 | 96 | 21.20€ |
-| 2025-04-29 | S36430 | 96 | 21.20€ |
-| 2025-04-22 | S36317 | 96 | 21.20€ |
-| 2025-04-15 | S36225 | 96 | 21.20€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [192, 192, 192, 192, 96]
-- **Nombre commandes**: 23
+- **Nombre commandes**: 15
 - **Valeur médiane**: 192
 
 </details>
@@ -255,10 +212,10 @@
 <summary>🔴 <strong>[PF3340] CARRE MAYONNAISE BELGE 720ML</strong> (ID: 17777) - 80 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 13.8728
-- **Stock restant estimé**: 10.64
+- **Consommation/jour**: 12.2523
+- **Stock restant estimé**: 6.49
 - **Jours avant rupture**: **0j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -278,20 +235,12 @@
 | 2025-07-08 | S37947 | 80 | 21.36€ |
 | 2025-07-01 | S37787 | 240 | 21.36€ |
 | 2025-06-24 | S37632 | 80 | 21.36€ |
-| 2025-06-13 | S37400 | 160 | 21.36€ |
-| 2025-06-10 | S37336 | 240 | 21.36€ |
-| 2025-05-28 | S37082 | 160 | 21.36€ |
-| 2025-05-20 | S36921 | 80 | 21.36€ |
-| 2025-05-13 | S36732 | 80 | 21.36€ |
-| 2025-05-06 | S36538 | 80 | 21.36€ |
-| 2025-04-29 | S36430 | 160 | 21.36€ |
-| 2025-04-22 | S36317 | 80 | 21.36€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [80, 160, 80, 80, 80]
-- **Nombre commandes**: 22
+- **Nombre commandes**: 14
 - **Valeur médiane**: 80
 
 </details>
@@ -300,10 +249,10 @@
 <summary>🟡 <strong>[PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8</strong> (ID: 17812) - 96 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 6.5243
-- **Stock restant estimé**: 63.38
-- **Jours avant rupture**: **9j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.4615
+- **Stock restant estimé**: 57.23
+- **Jours avant rupture**: **8j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -329,10 +278,10 @@
 <summary>🟡 <strong>[PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8</strong> (ID: 17868) - 108 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 9.6000
-- **Stock restant estimé**: 100.80
+- **Consommation/jour**: 9.1525
+- **Stock restant estimé**: 97.02
 - **Jours avant rupture**: **10j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -347,16 +296,12 @@
 | 2025-07-08 | S37947 | 108 | 17.60€ |
 | 2025-07-01 | S37787 | 108 | 17.60€ |
 | 2025-06-17 | S37504 | 108 | 17.60€ |
-| 2025-05-05 | S36516 | 108 | 17.60€ |
-| 2025-04-29 | S36430 | 108 | 17.60€ |
-| 2025-04-22 | S36317 | 108 | 17.60€ |
-| 2025-04-15 | S36214 | 324 | 17.60€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [216, 108, 108, 108, 108]
-- **Nombre commandes**: 13
+- **Nombre commandes**: 9
 - **Valeur médiane**: 108
 
 </details>
@@ -365,10 +310,10 @@
 <summary>🔴 <strong>[PF1952] CARRE VIN CIBOULET PET 450</strong> (ID: 9370) - 98 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 17.9667
-- **Stock restant estimé**: -243.37
+- **Consommation/jour**: 15.8919
+- **Stock restant estimé**: -219.84
 - **Jours avant rupture**: **-13j**
-- **Seuil réappro**: 19j
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -385,21 +330,12 @@
 | 2025-07-08 | S37947 | 98 | 12.48€ |
 | 2025-07-01 | S37787 | 196 | 12.48€ |
 | 2025-06-24 | S37632 | 98 | 12.48€ |
-| 2025-06-13 | S37400 | 196 | 12.48€ |
-| 2025-06-10 | S37336 | 294 | 12.48€ |
-| 2025-05-28 | S37082 | 196 | 12.48€ |
-| 2025-05-20 | S36921 | 196 | 12.48€ |
-| 2025-05-13 | S36732 | 98 | 12.48€ |
-| 2025-05-06 | S36538 | 98 | 12.48€ |
-| 2025-04-29 | S36430 | 98 | 12.48€ |
-| 2025-04-22 | S36317 | 98 | 12.48€ |
-| 2025-04-15 | S36225 | 196 | 12.48€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [98, 98, 98, 392, 196]
-- **Nombre commandes**: 20
+- **Nombre commandes**: 11
 - **Valeur médiane**: 98
 
 </details>
@@ -408,10 +344,10 @@
 <summary>🔴 <strong>[PF3341] CARRE MAYONNAISE BIO 500ML</strong> (ID: 17780) - 110 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 6.3584
-- **Stock restant estimé**: -10.81
-- **Jours avant rupture**: **-1j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.9369
+- **Stock restant estimé**: -28.74
+- **Jours avant rupture**: **-4j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -424,15 +360,12 @@
 | 2025-07-11 | S38014 | 110 | 21.48€ |
 | 2025-07-08 | S37947 | 110 | 21.48€ |
 | 2025-06-24 | S37632 | 110 | 21.48€ |
-| 2025-06-03 | S37227 | 110 | 21.48€ |
-| 2025-05-13 | S36732 | 110 | 21.48€ |
-| 2025-04-22 | S36317 | 110 | 21.48€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [110, 110, 110, 110, 110]
-- **Nombre commandes**: 10
+- **Nombre commandes**: 7
 - **Valeur médiane**: 110
 
 </details>
@@ -441,10 +374,10 @@
 <summary>🔴 <strong>[PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML</strong> (ID: 19772) - 112 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 4.7660
-- **Stock restant estimé**: -11.91
-- **Jours avant rupture**: **-2j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 4.6667
+- **Stock restant estimé**: -14.00
+- **Jours avant rupture**: **-3j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -466,10 +399,10 @@
 <summary>🔴 <strong>[PF2933] CARRE VIN MIEL MOU PET 450 BIO</strong> (ID: 9425) - 98 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 5.4444
-- **Stock restant estimé**: -266.78
-- **Jours avant rupture**: **-49j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 6.1802
+- **Stock restant estimé**: -322.25
+- **Jours avant rupture**: **-52j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -482,15 +415,12 @@
 | 2025-07-01 | S37787 | 98 | 23.76€ |
 | 2025-06-27 | S37722 | 98 | 23.76€ |
 | 2025-06-24 | S37632 | 98 | 23.76€ |
-| 2025-05-20 | S36921 | 98 | 23.76€ |
-| 2025-04-22 | S36317 | 98 | 23.76€ |
-| 2025-04-15 | S36225 | 98 | 23.76€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [98, 98, 98, 98, 98]
-- **Nombre commandes**: 10
+- **Nombre commandes**: 7
 - **Valeur médiane**: 98
 
 </details>
@@ -499,10 +429,10 @@
 <summary>🔴 <strong>[PF2932] CARRE VIN CIBOULET PET 450 BIO</strong> (ID: 9424) - 98 unités</summary>
 
 ### 📊 Prédiction Stock
-- **Consommation/jour**: 6.2312
-- **Stock restant estimé**: -369.34
-- **Jours avant rupture**: **-59j**
-- **Seuil réappro**: 19j
+- **Consommation/jour**: 7.0631
+- **Stock restant estimé**: -438.79
+- **Jours avant rupture**: **-62j**
+- **Seuil réappro**: 30j
 
 ### 📦 Historique Commandes
 
@@ -516,15 +446,12 @@
 | 2025-07-01 | S37787 | 98 | 23.76€ |
 | 2025-06-27 | S37722 | 98 | 23.76€ |
 | 2025-06-24 | S37632 | 98 | 23.76€ |
-| 2025-05-28 | S37082 | 98 | 23.76€ |
-| 2025-05-13 | S36732 | 98 | 23.76€ |
-| 2025-04-22 | S36317 | 98 | 23.76€ |
 
 ### 🧮 Calcul Quantité
 - **Stratégie**: median_recent_orders
 - **Confiance**: high
 - **Quantités historiques**: [98, 98, 98, 98, 98]
-- **Nombre commandes**: 11
+- **Nombre commandes**: 8
 - **Valeur médiane**: 98
 
 </details>

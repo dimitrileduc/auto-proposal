@@ -5,8 +5,8 @@
 - **Client** : TERRA NATURKOST HANDELS KG (ID: 3868)
 - **Commande réelle** : S39421
 - **Date commande** : 2025-09-26 09:47:05
-- **Date cutoff système** : 2025-09-25 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-26 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,8 +17,8 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 80.0% | 10 produits prédits, 8 corrects |
-| **Rappel** | 57.1% | 14 produits réels, 8 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Rappel** | 80.0% | 10 produits réels, 8 détectés |
+| **F1-Score** | 80.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 30.75 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 122.9% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 28.75 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 117.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 7 | Avec erreur |
 
@@ -138,13 +138,13 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 64 | 48 | 16.0 | 33.3% | ✅ partial |
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 64 | 64 | 0.0 | 0.0% | 🎯 exact |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 48 | 48 | 0.0 | 0.0% | 🎯 exact |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 72 | 64 | 8.0 | 12.5% | ✅ partial |
 | [LV348] LV Tartinade Dattes-Chili 180g BE bio | 75 | 25 | 50.0 | 200.0% | ✅ partial |
 | [LV331] LV Tartinade Lentils Balsamico 190g | 50 | 25 | 25.0 | 100.0% | ✅ partial |
 | [LV159] LV Tartinade aux Truffes  135g  | 50 | 25 | 25.0 | 100.0% | ✅ partial |
 | [MF0048] MF Delikatess Mayonnaise 250ml DE | 48 | 16 | 32.0 | 200.0% | ✅ partial |
-| [MF0062] ​MF Tarti Betterave rouge | 80 | 32 | 48.0 | 150.0% | ✅ partial |
+| [MF0062] ​MF Tarti Betterave rouge | 72 | 32 | 40.0 | 125.0% | ✅ partial |
 | [LV136] LV Tartinade Betterave 190g | 75 | 25 | 50.0 | 200.0% | ✅ partial |
 
 
@@ -170,13 +170,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV342] LV Organic Broccoli Spread 190 g | 50 | Stock prédit: 4.7u (3j restants) → prédit 50u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 50 | Stock prédit: 4.7u (3j restants) → prédit 50u mais non commandé |
+| [LV342] LV Organic Broccoli Spread 190 g | 50 | Stock prédit: 3.5u (2j restants) → prédit 50u mais non commandé |
+| [LV133] LV Tartinade Ananas Coco 190g | 50 | Stock prédit: 3.5u (2j restants) → prédit 50u mais non commandé |
 
 
 ---
 
-## False Negatives (6)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -196,14 +196,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [VID0009] Consigne casier | 160 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [VID0010] Consigne casier | 960 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 25 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 25 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 25 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [LV345] LV Spread KIDS 200ml Organic | 25 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
+| [VID0009] Consigne casier | 160 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 960 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:33.954Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:23.888Z*

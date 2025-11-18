@@ -5,8 +5,8 @@
 - **Client** : LA FERME DU BUEAU (ID: 60411)
 - **Commande réelle** : S39677
 - **Date commande** : 2025-10-14 06:47:17
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 35.3% | 34 produits prédits, 12 corrects |
-| **Rappel** | 80.0% | 15 produits réels, 12 détectés |
-| **F1-Score** | 49.0% | Score équilibré global |
+| **Précision** | 37.1% | 35 produits prédits, 13 corrects |
+| **Rappel** | 86.7% | 15 produits réels, 13 détectés |
+| **F1-Score** | 52.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,9 +62,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 8.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 10 | Égalité parfaite |
+| **MAE** | 0.31 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 10.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 11 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (12)
+## True Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -142,14 +142,15 @@
 | [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [RIT01] RITCHIE Orange - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -174,33 +175,33 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.4u (17j restants) → prédit 1u mais non commandé |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
+| [LV160] LV Tartinade Aubergine 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [LV161] LV Tartinade Mangue curry 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
+| [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
+| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock prédit: 0.4u (20j restants) → prédit 1u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
 | [MF0060] MF Passata | 1 | Stock prédit: -0.2u (-12j restants) → prédit 1u mais non commandé |
-| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.2u (18j restants) → prédit 1u mais non commandé |
-| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: -0.3u (-24j restants) → prédit 1u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.3u (-24j restants) → prédit 1u mais non commandé |
-| [LV036] LV Olives Vertes dénoyautées BE 350g | 1 | Stock prédit: -0.3u (-24j restants) → prédit 1u mais non commandé |
-| [MF0061] MF Compote | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV158] LV Moutarde 200 ml | 1 | Stock prédit: -0.2u (-27j restants) → prédit 1u mais non commandé |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: -0.3u (-43j restants) → prédit 1u mais non commandé |
-| [LV147] LV Sauce Cocktail 200 ml | 1 | Stock prédit: -1.0u (-87j restants) → prédit 1u mais non commandé |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: -0.5u (-54j restants) → prédit 1u mais non commandé |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 1 | Stock prédit: -1.2u (-94j restants) → prédit 1u mais non commandé |
-| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
+| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: -0.4u (-32j restants) → prédit 1u mais non commandé |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.4u (-32j restants) → prédit 1u mais non commandé |
+| [LV036] LV Olives Vertes dénoyautées BE 350g | 1 | Stock prédit: -0.7u (-47j restants) → prédit 1u mais non commandé |
+| [MF0061] MF Compote | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
+| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -220,11 +221,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock suffisant: 0.5u (22j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock suffisant: 0.5u (22j restants > seuil 19j) |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:06.252Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:55.123Z*

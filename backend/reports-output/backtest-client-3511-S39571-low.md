@@ -5,8 +5,8 @@
 - **Client** : CARRY GERON SA (ID: 3511)
 - **Commande réelle** : S39571
 - **Date commande** : 2025-10-06 09:20:55
-- **Date cutoff système** : 2025-10-05 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 4 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (4)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,17 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF0075] FILOU CHASSEUR  10 L | 88 | Stock suffisant: 5.2u (2j restants > seuil 19j) |
-| [PF0078] FILOU CHASSEUR 5 L | 100 | Stock suffisant: 44.4u (12j restants > seuil 19j) |
-| [PF0096] FILOU MOUTARDE 3 KG | 30 | Stock suffisant: 18.3u (36j restants > seuil 19j) |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 24 | Stock suffisant: -5.9u (-10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:01.619Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:51.319Z*

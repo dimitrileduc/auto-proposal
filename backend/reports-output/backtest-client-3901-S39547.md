@@ -5,8 +5,8 @@
 - **Client** : CASIMEX (ID: 3901)
 - **Commande réelle** : S39547
 - **Date commande** : 2025-10-03 12:50:33
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-03 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 62.5% | 8 produits prédits, 5 corrects |
+| **Précision** | 41.7% | 12 produits prédits, 5 corrects |
 | **Rappel** | 83.3% | 6 produits réels, 5 détectés |
-| **F1-Score** | 71.4% | Score équilibré global |
+| **F1-Score** | 55.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -147,7 +147,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,9 +167,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1980] BR1582 - KETCHUP KOSHE SQUEEZE 300ML | 56 | Stock prédit: 16.5u (17j restants) → prédit 56u mais non commandé |
-| [PF1981] BR BEARNAISE KOSH SQUEEZ 300ML | 56 | Stock prédit: 16.5u (17j restants) → prédit 56u mais non commandé |
-| [PF3337] BS1886 - BORNIBUS MAYO TRUFFES KOSHER 210G | 374 | Stock prédit: -35.0u (-8j restants) → prédit 374u mais non commandé |
+| [PF1317] BR MAYONNAISE KOSHER 500ML BIB | 378 | Stock prédit: 210.5u (21j restants) → prédit 378u mais non commandé |
+| [PF0679] BR MAYONNAISE KOSHER 500ML BOC | 647 | Stock prédit: 91.3u (24j restants) → prédit 647u mais non commandé |
+| [PF1980] BR1582 - KETCHUP KOSHE SQUEEZE 300ML | 56 | Stock prédit: 15.9u (17j restants) → prédit 56u mais non commandé |
+| [PF1981] BR BEARNAISE KOSH SQUEEZ 300ML | 56 | Stock prédit: 15.9u (17j restants) → prédit 56u mais non commandé |
+| [PF1379] BR MAYONNAISE KOSHER  5L  | 1000 | Stock prédit: 263.6u (27j restants) → prédit 1000u mais non commandé |
+| [PF3337] BS1886 - BORNIBUS MAYO TRUFFES KOSHER 210G | 374 | Stock prédit: -38.5u (-8j restants) → prédit 374u mais non commandé |
+| [PF3369] BS1826 COSCO - BORNIBUS MAYONNAISE KOSHE 825G | 540 | Stock prédit: 154.5u (30j restants) → prédit 540u mais non commandé |
 
 
 ---
@@ -194,9 +198,9 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [CONS070] PALETTE EURO | 10 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [CONS070] PALETTE EURO | 10 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:46.550Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:38.269Z*

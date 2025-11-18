@@ -5,8 +5,8 @@
 - **Client** : Tirtiaux Fruits srl (ID: 17819)
 - **Commande réelle** : S39691
 - **Date commande** : 2025-10-14 13:40:25
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 60.5% | 43 produits prédits, 26 corrects |
-| **Rappel** | 89.7% | 29 produits réels, 26 détectés |
-| **F1-Score** | 72.2% | Score équilibré global |
+| **Précision** | 75.0% | 32 produits prédits, 24 corrects |
+| **Rappel** | 82.8% | 29 produits réels, 24 détectés |
+| **F1-Score** | 78.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.42 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 35.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 16 | Égalité parfaite |
-| Partial Match (>0u) | 10 | Avec erreur |
+| **MAE** | 0.46 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 36.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 13 | Égalité parfaite |
+| Partial Match (>0u) | 11 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (26)
+## True Positives (24)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -141,6 +141,7 @@
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [LV136] LV Tartinade Betterave 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
@@ -148,27 +149,24 @@
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV160] LV Tartinade Aubergine 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV161] LV Tartinade Mangue curry 190g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
-| [LV132] LV Tartinade Houmous type 190g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
-| [LV135] LV Tartinade Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [LV132] LV Tartinade Houmous type 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV135] LV Tartinade Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (17)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -188,28 +186,19 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock prédit: -0.4u (-19j restants) → prédit 1u mais non commandé |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.6u (-24j restants) → prédit 1u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | Stock prédit: -0.5u (-10j restants) → prédit 3u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.4u (-19j restants) → prédit 1u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock prédit: -0.5u (-10j restants) → prédit 2u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock prédit: -0.6u (-35j restants) → prédit 1u mais non commandé |
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock prédit: -1.2u (-35j restants) → prédit 2u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: -0.1u (-7j restants) → prédit 2u mais non commandé |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.1u (12j restants) → prédit 1u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock prédit: -1.2u (-66j restants) → prédit 1u mais non commandé |
-| [CB001] CB Apple juice 25cl | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.4u (-34j restants) → prédit 1u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.4u (-44j restants) → prédit 1u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.1u (-13j restants) → prédit 1u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: -0.8u (-68j restants) → prédit 1u mais non commandé |
+| [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock prédit: -0.6u (-36j restants) → prédit 1u mais non commandé |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock prédit: -0.6u (-23j restants) → prédit 2u mais non commandé |
 
 
 ---
 
-## False Negatives (3)
+## False Negatives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -229,11 +218,13 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV136] LV Tartinade Betterave 190g | 1 | Stock suffisant: 0.4u (27j restants > seuil 19j) |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock suffisant: 0.0u (0j restants > seuil 19j) |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
+| [LV131] LV Tartinade Potiron 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:48.011Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:37.298Z*

@@ -161,8 +161,8 @@ await runAutoProposalWorkflow({
 ```typescript
 {
   inactivityDaysThreshold: 30,
-  analysisWindowDays: 180,
-  targetCoverage: 14,
+  analysisWindowDays: 120,
+  targetCoverage: 25,
   leadTime: 5,
   minimumOrderAmount: 300,
   workflow: {

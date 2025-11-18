@@ -5,8 +5,8 @@
 - **Client** : D'ICI WEPION (ID: 60278)
 - **Commande réelle** : S39328
 - **Date commande** : 2025-10-01 13:30:34
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 10 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (10)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,23 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 5 | Stock suffisant: 0.5u (4j restants > seuil 19j) |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 3 | Stock suffisant: 1.2u (14j restants > seuil 19j) |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 5 | Stock suffisant: 1.4u (18j restants > seuil 19j) |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 5 | Stock suffisant: 1.7u (11j restants > seuil 19j) |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | Stock suffisant: 0.1u (0j restants > seuil 19j) |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 3 | Stock suffisant: -0.3u (-17j restants > seuil 19j) |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | Stock suffisant: 1.4u (45j restants > seuil 19j) |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock suffisant: 1.5u (67j restants > seuil 19j) |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock suffisant: 0.3u (18j restants > seuil 19j) |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 6 | Stock suffisant: -0.1u (-1j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:02:09.029Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:59.576Z*

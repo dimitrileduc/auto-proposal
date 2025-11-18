@@ -5,8 +5,8 @@
 - **Client** : CORA S.A. (ID: 38724)
 - **Commande réelle** : S39065
 - **Date commande** : 2025-09-08 07:10:00
-- **Date cutoff système** : 2025-09-07 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-08 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 18 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (18)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,31 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 25 | Stock suffisant: 16.6u (35j restants > seuil 19j) |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 25 | Stock suffisant: 5.3u (22j restants > seuil 19j) |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 33 | Stock suffisant: 12.0u (17j restants > seuil 19j) |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 6 | Stock suffisant: 2.3u (9j restants > seuil 19j) |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 8 | Stock suffisant: 6.3u (28j restants > seuil 19j) |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 25 | Stock suffisant: 16.1u (25j restants > seuil 19j) |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 11 | Stock suffisant: 4.6u (38j restants > seuil 19j) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 25 | Stock suffisant: 11.2u (18j restants > seuil 19j) |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 15 | Stock suffisant: 12.2u (43j restants > seuil 19j) |
-| [FIL18] FIL VOL AU VENT 800G BOCAL  | 32 | Stock suffisant: 13.7u (17j restants > seuil 19j) |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 5 | Stock suffisant: 7.5u (45j restants > seuil 19j) |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 8 | Stock suffisant: 3.9u (10j restants > seuil 19j) |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 13 | Stock suffisant: 4.5u (27j restants > seuil 19j) |
-| [JF035] JF BURGER SQUEEZE 300ML | 7 | Stock suffisant: 2.1u (7j restants > seuil 19j) |
-| [JF037] JF BBQ SQUEEZE 300ML | 6 | Stock suffisant: 3.9u (11j restants > seuil 19j) |
-| [FIL22] FIL BOULLETTES SAUCE TOMATE 800G BOCAL  | 8 | Stock suffisant: 6.5u (13j restants > seuil 19j) |
-| [FIL20] FIL CARBONNADES 800G BOCAL  | 8 | Stock suffisant: 7.3u (29j restants > seuil 19j) |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 21 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:16.410Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:07.145Z*

@@ -5,8 +5,8 @@
 - **Client** : CRF MARKET EMBOURG DESADIS (ID: 38740)
 - **Commande réelle** : S39489
 - **Date commande** : 2025-10-02 06:18:26
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 35.7% | 42 produits prédits, 15 corrects |
+| **Précision** | 36.6% | 41 produits prédits, 15 corrects |
 | **Rappel** | 100.0% | 15 produits réels, 15 détectés |
-| **F1-Score** | 52.6% | Score équilibré global |
+| **F1-Score** | 53.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -157,7 +157,7 @@
 
 ---
 
-## False Positives (27)
+## False Positives (26)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,33 +177,32 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
+| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
 | [LD013] LD Tuscan Organic Spread 180 g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 2 | Stock prédit: 1.1u (21j restants) → prédit 2u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 2 | Stock prédit: 1.1u (21j restants) → prédit 2u mais non commandé |
+| [ORG04] ORGANICA crunchy fruit fraise 12g | 2 | Stock prédit: 1.1u (21j restants) → prédit 2u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
 | [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.6u (19j restants) → prédit 1u mais non commandé |
-| [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: 0.4u (8j restants) → prédit 1u mais non commandé |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: -0.2u (-3j restants) → prédit 1u mais non commandé |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.5u (19j restants) → prédit 1u mais non commandé |
+| [JF029] JF VOL AU VENT BOCAL 400G | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: 0.8u (18j restants) → prédit 2u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: 0.7u (14j restants) → prédit 2u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock prédit: 0.4u (7j restants) → prédit 1u mais non commandé |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [DIS0003] Display TVF bois | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.8u (-25j restants) → prédit 2u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.5u (-28j restants) → prédit 1u mais non commandé |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: -0.5u (-42j restants) → prédit 1u mais non commandé |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.5u (-42j restants) → prédit 1u mais non commandé |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: -0.1u (-15j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: -0.1u (-15j restants) → prédit 1u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -0.0u (-3j restants) → prédit 1u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: -0.5u (-56j restants) → prédit 1u mais non commandé |
+| [DIS0003] Display TVF bois | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (28j restants) → prédit 1u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -227,4 +226,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:27.007Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:16.754Z*

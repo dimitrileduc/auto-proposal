@@ -5,8 +5,8 @@
 - **Client** : ASIE A TIK (ID: 60160)
 - **Commande réelle** : S39470
 - **Date commande** : 2025-10-01 07:15:18
-- **Date cutoff système** : 2025-09-30 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -17,7 +17,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Précision** | 0.0% | 0 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 3 produits réels, 0 détectés |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -156,7 +156,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -171,16 +171,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 10 | Stock suffisant: -5.5u (-16j restants > seuil 19j) |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 10 | Stock suffisant: 4.5u (32j restants > seuil 19j) |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 12 | Stock suffisant: -2.8u (-10j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:37.831Z*
+*Rapport généré automatiquement le 2025-11-18T10:45:27.303Z*

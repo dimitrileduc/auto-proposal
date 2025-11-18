@@ -5,8 +5,8 @@
 - **Client** : CRF HYPER MARKET EUPEN (ID: 29069)
 - **Commande réelle** : S39365
 - **Date commande** : 2025-09-24 09:13:07
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-24 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,18 +157,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [FIL20] FIL CARBONNADES 800G BOCAL  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: 0.7u (26j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -183,24 +177,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [FIL08] FIL MOUTARDE 700G BOCAL | 2 | Stock suffisant: -3.1u (-34j restants > seuil 19j) |
-| [FIL09] FIL MOUTARDE 300G BOCAL | 2 | Stock suffisant: -2.6u (-46j restants > seuil 19j) |
-| [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 3 | Stock suffisant: -0.9u (-8j restants > seuil 19j) |
-| [FIL18] FIL VOL AU VENT 800G BOCAL  | 4 | Stock suffisant: -2.5u (-21j restants > seuil 19j) |
-| [FIL19] FIL VOL AU VENT 400G BOCAL | 4 | Stock suffisant: -1.9u (-18j restants > seuil 19j) |
-| [FIL21] FIL BOULETTES SAUCE CHASSEUR 800G BOCAL  | 1 | Stock suffisant: -0.2u (-6j restants > seuil 19j) |
-| [FIL22] FIL BOULLETTES SAUCE TOMATE 800G BOCAL  | 1 | Stock suffisant: -0.6u (-41j restants > seuil 19j) |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock suffisant: -0.4u (-12j restants > seuil 19j) |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock suffisant: 1.7u (23j restants > seuil 19j) |
-| [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock suffisant: 2.6u (34j restants > seuil 19j) |
-| [LD011] LD Organic Kids Spread 180 g | 1 | Stock suffisant: -0.9u (-39j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:01:07.983Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:58.131Z*

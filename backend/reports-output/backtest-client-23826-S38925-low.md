@@ -5,8 +5,8 @@
 - **Client** : La ferme du vieux bure (ID: 23826)
 - **Commande réelle** : S38925
 - **Date commande** : 2025-09-15 06:25:43
-- **Date cutoff système** : 2025-09-14 00:00:00
-- **Jours d'avance** : 1j
+- **Date cutoff système** : 2025-09-15 00:00:00
+- **Jours d'avance** : 0j
 
 ---
 
@@ -16,8 +16,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 19 produits prédits, 0 corrects |
-| **Rappel** | 0.0% | 11 produits réels, 0 détectés |
+| **Précision** | 0.0% | 10 produits prédits, 0 corrects |
+| **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
 <details>
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (19)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,30 +157,21 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LB003] LB Festive (4,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV036] LV Olives Vertes dénoyautées BE 350g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [LV156] LV Sauce barbecue 263 ml bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -0.4u (-11j restants) → prédit 1u mais non commandé |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock prédit: -0.4u (-11j restants) → prédit 1u mais non commandé |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: -0.4u (-11j restants) → prédit 1u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: -0.4u (-11j restants) → prédit 1u mais non commandé |
+| [LB003] LB Festive (4,5%) 33CL | 1 | Stock prédit: -1.9u (-53j restants) → prédit 1u mais non commandé |
+| [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: -1.9u (-53j restants) → prédit 1u mais non commandé |
+| [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: -1.9u (-53j restants) → prédit 1u mais non commandé |
+| [fsv17] Mélange de noix bio vrac 2,75kg | 1 | Stock prédit: -1.9u (-53j restants) → prédit 1u mais non commandé |
+| [LV036] LV Olives Vertes dénoyautées BE 350g | 1 | Stock prédit: -2.7u (-76j restants) → prédit 1u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: -2.7u (-76j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (11)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -195,24 +186,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [CWLVRB0011] CW LV RB SALAD BOWL H107/ Ø 245mm | 3 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV136] LV Tartinade Betterave 190g | 2 | Stock suffisant: -0.3u (-12j restants > seuil 19j) |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock suffisant: -1.2u (-44j restants > seuil 19j) |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock suffisant: 0.1u (1j restants > seuil 19j) |
-| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock suffisant: -1.2u (-21j restants > seuil 19j) |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock suffisant: -1.8u (-57j restants > seuil 19j) |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | Stock suffisant: 0.4u (10j restants > seuil 19j) |
-| [RIT01] RITCHIE Orange - verre 275ml | 1 | Stock suffisant: -0.6u (-15j restants > seuil 19j) |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 1 | Stock suffisant: -0.1u (-1j restants > seuil 19j) |
-| [fsv18] Mendiant bio vrac 2,8kg | 1 | Jamais commandé avant dans les 180j précédents (pas d'historique) |
-| [LV135] LV Tartinade Basilico 190g | 1 | Stock suffisant: -1.9u (-67j restants > seuil 19j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-17T12:00:55.781Z*
+*Rapport généré automatiquement le 2025-11-18T10:44:46.924Z*

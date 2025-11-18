@@ -62,7 +62,17 @@ export interface BacktestClientTaskResult {
     mae: number;
     mape: number;
   };
-  comparisonNoLow?: {  // Nouveau: métriques sans produits low confidence
+  comparisonNoLow?: {  // Métriques pour produits low confidence (1 commande)
+    truePositives: number;
+    falsePositives: number;
+    falseNegatives: number;
+    precision: number;
+    recall: number;
+    f1Score: number;
+    mae: number;
+    mape: number;
+  };
+  comparisonAll?: {  // Métriques pour TOUS les produits (clean + low)
     truePositives: number;
     falsePositives: number;
     falseNegatives: number;
@@ -76,8 +86,8 @@ export interface BacktestClientTaskResult {
   reportPaths: {
     markdown: string;
     json: string;
-    markdownNoLow?: string;  // Nouveau: rapport sans low confidence
-    jsonNoLow?: string;      // Nouveau: rapport JSON sans low confidence
+    markdownNoLow?: string;  // Rapport low confidence
+    jsonNoLow?: string;      // Rapport JSON low confidence
   };
   executionTime: number;
 }
@@ -199,10 +209,17 @@ export const backtestClientTask = task({
         )
       } as typeof systemProposal;
 
+      // Filtrer realOrderLines pour CLEAN: garder seulement les produits qui ont confidence !== 'low'
+      const allProducts = systemResult.result.phases.stockAnalysis.all_products ?? systemResult.result.phases.stockAnalysis.products;
+      const realOrderLinesClean = realOrderDetails.lines.filter((line) => {
+        const analyzedProduct = allProducts.find(p => p.product_id === line.product_id[0]);
+        return !analyzedProduct || analyzedProduct.calculation_metadata?.confidence !== 'low';
+      });
+
       // Comparaison CLEAN (rapport principal)
       const comparisonClean = compareSystemPredictionVsRealOrder(
         systemProposalClean,
-        realOrderDetails.lines,
+        realOrderLinesClean,
         systemResult.result.phases.stockAnalysis,
         {
           clientId: payload.clientId,
@@ -230,10 +247,16 @@ export const backtestClientTask = task({
         )
       } as typeof systemProposal;
 
+      // Filtrer realOrderLines pour LOW: garder seulement les produits qui ont confidence === 'low'
+      const realOrderLinesLow = realOrderDetails.lines.filter((line) => {
+        const analyzedProduct = allProducts.find(p => p.product_id === line.product_id[0]);
+        return analyzedProduct?.calculation_metadata?.confidence === 'low';
+      });
+
       // Comparaison LOW (rapport secondaire)
       const comparisonLow = compareSystemPredictionVsRealOrder(
         systemProposalLow,
-        realOrderDetails.lines,
+        realOrderLinesLow,
         systemResult.result.phases.stockAnalysis,
         {
           clientId: payload.clientId,
@@ -322,6 +345,16 @@ export const backtestClientTask = task({
           f1Score: comparisonLow.productMetrics.f1Score,
           mae: comparisonLow.quantityMetrics.mae,
           mape: comparisonLow.quantityMetrics.mape,
+        },
+        comparisonAll: {
+          truePositives: comparison.truePositives.length,
+          falsePositives: comparison.falsePositives.length,
+          falseNegatives: comparison.falseNegatives.length,
+          precision: comparison.productMetrics.precision,
+          recall: comparison.productMetrics.recall,
+          f1Score: comparison.productMetrics.f1Score,
+          mae: comparison.quantityMetrics.mae,
+          mape: comparison.quantityMetrics.mape,
         },
         reportPath: reportPathMd,  // Legacy: keep markdown path for backward compatibility
         reportPaths: {

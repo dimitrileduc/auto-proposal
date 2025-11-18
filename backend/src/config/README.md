@@ -27,9 +27,9 @@ export const autoProposalConfig = {
   },
 
   // Stock replenishment parameters
-  targetCoverage: 14,
+  targetCoverage: 25,
   leadTime: 5,
-  analysisWindowDays: 180,
+  analysisWindowDays: 120,
 
   // Quantity calculation strategy
   quantityStrategy: {
@@ -111,9 +111,9 @@ inactivityDetection: {
 ### 3. Paramètres d'Analyse Stock
 
 ```typescript
-targetCoverage: 14,     // Jours de couverture cible
+targetCoverage: 25,     // Jours de couverture cible
 leadTime: 5,            // Délai de livraison en jours
-analysisWindowDays: 180 // Fenêtre d'historique à analyser
+analysisWindowDays: 120 // Fenêtre d'historique à analyser
 ```
 
 - **`targetCoverage`:** Nombre de jours de stock souhaité après réapprovisionnement
@@ -124,7 +124,7 @@ analysisWindowDays: 180 // Fenêtre d'historique à analyser
 
 ```
 seuilRupture = (targetCoverage + leadTime) jours
-             = (14 + 5) = 19 jours
+             = (25 + 5) = 30 jours
 ```
 
 ### 4. Stratégie de Quantité (Médiane)
@@ -270,10 +270,10 @@ inactivityDetection: {
 Modifier les paramètres `targetCoverage` et `leadTime` dans `auto-proposal.ts`:
 
 ```typescript
-// Exemple: Augmenter le seuil de 19 à 25 jours
-targetCoverage: 18, // 18 jours au lieu de 14
-leadTime: 7, // 7 jours au lieu de 5
-// → Seuil = 18 + 7 = 25 jours
+// Exemple: Augmenter le seuil de 30 à 35 jours
+targetCoverage: 30, // 30 jours au lieu de 25
+leadTime: 5, // 5 jours (inchangé)
+// → Seuil = 30 + 5 = 35 jours
 ```
 
 **Impact:**
@@ -445,14 +445,14 @@ Certains paramètres sont interdépendants:
 
 ```typescript
 // ✅ Cohérent
-targetCoverage: 14,
+targetCoverage: 25,
 leadTime: 5,
-analysisWindowDays: 180, // 6 mois > (14 + 5) jours
+analysisWindowDays: 120, // 4 mois > (25 + 5) jours
 
 // ❌ Incohérent
-targetCoverage: 30,
+targetCoverage: 60,
 leadTime: 10,
-analysisWindowDays: 30, // Fenêtre trop courte pour calculer consommation sur 40 jours
+analysisWindowDays: 60, // Fenêtre trop courte pour calculer consommation sur 70 jours
 ```
 
 **Règle:** `analysisWindowDays` doit être **significativement plus grand** que `targetCoverage + leadTime`.
