@@ -1,0 +1,22 @@
+{
+  "clientId": 60411,
+  "clientName": "LA FERME DU BUEAU",
+  "orderName": "S39677",
+  "orderDate": "2025-10-14 06:47:17",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 10,
+    "fp": 15,
+    "fn": 0,
+    "precision": 0.4,
+    "recall": 1,
+    "f1Score": 0.5714285714285715,
+    "mae": 0.4,
+    "mape": 13.333333333333332
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 2
+  }
+}

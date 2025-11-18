@@ -210,10 +210,11 @@ export const backtestClientTask = task({
       } as typeof systemProposal;
 
       // Filtrer realOrderLines pour CLEAN: garder seulement les produits qui ont confidence !== 'low'
+      // EXCLURE les produits avec 0 historique (pas dans allProducts) ET les produits low (1 commande)
       const allProducts = systemResult.result.phases.stockAnalysis.all_products ?? systemResult.result.phases.stockAnalysis.products;
       const realOrderLinesClean = realOrderDetails.lines.filter((line) => {
         const analyzedProduct = allProducts.find(p => p.product_id === line.product_id[0]);
-        return !analyzedProduct || analyzedProduct.calculation_metadata?.confidence !== 'low';
+        return analyzedProduct && analyzedProduct.calculation_metadata?.confidence !== 'low';
       });
 
       // Comparaison CLEAN (rapport principal)

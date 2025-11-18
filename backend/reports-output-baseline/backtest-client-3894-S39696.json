@@ -1,0 +1,22 @@
+{
+  "clientId": 3894,
+  "clientName": "DUMORTIER   ETS.",
+  "orderName": "S39696",
+  "orderDate": "2025-10-13 13:02:08",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 24,
+    "mape": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  }
+}

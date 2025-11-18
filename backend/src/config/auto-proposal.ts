@@ -22,6 +22,7 @@ export const autoProposalConfig = {
     maxRecentOrderLines: 5, // Limiter l'analyse aux 5 lignes de commande les plus récentes
     minOrdersForMediumConfidence: 2, // Seuil pour confiance Medium
     minOrdersForHighConfidence: 5, // Seuil pour confiance High
+    lowMaxThresholdDays: 190, // Filtre conservatif pour produits LOW: skip si dernière commande > 190j (one-time purchase)
   },
 
   // Pricing & MOQ configuration
