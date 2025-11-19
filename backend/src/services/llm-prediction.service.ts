@@ -30,6 +30,7 @@ export interface LLMUsage {
 export interface LLMPredictionResult {
   prediction: LLMPrediction;
   usage: LLMUsage;
+  model: string; // Model name for debugging/tracking
 }
 
 interface OrderHistoryItem {
@@ -44,7 +45,7 @@ interface LLMPredictionInput {
 }
 
 /**
- * Prédit la quantité à commander en utilisant Claude 3.5 Sonnet
+ * Prédit la quantité à commander en utilisant Claude Sonnet 4.5
  *
  * Inspiré de l'article "Forecasting Shipments with LLMs" (IRIS by Argon & Co)
  * Approche: Donner UNIQUEMENT les données brutes, laisser le LLM déduire tout le reste
@@ -55,6 +56,8 @@ interface LLMPredictionInput {
 export async function predictWithLLM(
   input: LLMPredictionInput
 ): Promise<LLMPredictionResult> {
+  const MODEL_NAME = "claude-sonnet-4-5-20250929";
+
   const currentDate =
     input.currentDate || new Date().toISOString().split("T")[0];
 
@@ -63,43 +66,67 @@ export async function predictWithLLM(
     .map((order) => `${order.date} | ${order.quantity}u`)
     .join("\n");
 
-  const prompt = `Tu es un expert Supply Chain B2B.
+  const prompt = `Tu es un expert Senior en Supply Chain Agroalimentaire (B2B).
+Ton objectif est de prédire la quantité optimale de réapprovisionnement pour éviter la rupture sans sur-stocker.
 
-HISTORIQUE DES COMMANDES:
+CONTEXTE PRODUIT:
+- Nom: ${input.productName}
+- Date actuelle: ${currentDate}
+- Secteur: Agroalimentaire B2B (saisonnalité forte, promotions fréquentes)
+
+HISTORIQUE DES COMMANDES (du plus récent au plus ancien):
 
 Date       | Quantité
 -----------|----------
 ${historyTable}
 
-Produit: ${input.productName}
-Date actuelle: ${currentDate}
+TA MISSION (Chain of Thought):
 
-Tâche: Recommander la quantité pour la prochaine commande.
+ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)
+Identifie les commandes anormales qui ressemblent à des événements ponctuels:
+- Promotions (quantités > 2x la moyenne)
+- Stockage préventif (gros pic isolé)
+- Corrections de stock
+→ Ignore ces outliers pour estimer la "demande de fond réelle"
 
-Raisonne étape par étape:
-1. Analyse les intervalles entre commandes (régulier ou erratique?)
-2. Analyse les quantités (stable, tendance, ou variations normales?)
-3. Recommande une quantité CONSERVATIVE basée sur l'historique
+ÉTAPE 2: SAISONNALITÉ
+Analyse si le produit montre des variations saisonnières:
+- Y a-t-il des pics récurrents à certaines périodes? (été, hiver, fêtes)
+- Sommes-nous actuellement en période haute ou basse?
+→ Ajuste ta prédiction selon la période actuelle
 
-Note: En B2B, des variations de ±30% sont normales (stock safety, achats groupés, promotions).`;
+ÉTAPE 3: TENDANCE RÉCENTE
+Compare les 4 dernières commandes vs les précédentes:
+- Volume en hausse, stable, ou en baisse?
+- Fréquence de commande en accélération ou ralentissement?
+→ Applique un coefficient de tendance (+X%, stable, -X%)
+
+ÉTAPE 4: RECOMMANDATION FINALE
+Synthétise les 3 analyses pour recommander une quantité:
+- Base: Demande de fond (post-nettoyage)
+- Ajustement saisonnier: +/- selon période
+- Ajustement tendance: +/- selon évolution récente
+- Sécurité: Reste CONSERVATEUR (mieux vaut sous-estimer que sur-stocker)
+
+Note: Variations de ±30% sont normales en B2B (achats groupés, sécurité stock).`;
 
   try {
     const { object, usage } = await generateObject({
-      model: anthropic("claude-3-5-haiku-20241022"),
+      model: anthropic(MODEL_NAME),
       schema: predictionSchema,
       prompt,
     });
 
     console.log("🔍 Raw usage object from AI SDK:", JSON.stringify(usage, null, 2));
 
-    // Calcul du coût (Claude 3.5 Haiku pricing - 2025)
-    // Source: https://pricepertoken.com/pricing-page/model/anthropic-claude-3.5-haiku
+    // Calcul du coût (Claude Sonnet 4.5 pricing - 2025)
+    // Source: https://www.anthropic.com/pricing
     const inputTokens = usage.inputTokens ?? 0;
     const outputTokens = usage.outputTokens ?? 0;
     const totalTokens = usage.totalTokens ?? inputTokens + outputTokens;
 
-    const inputCostUSD = (inputTokens / 1_000_000) * 0.80; // $0.80/1M tokens
-    const outputCostUSD = (outputTokens / 1_000_000) * 4.00; // $4.00/1M tokens
+    const inputCostUSD = (inputTokens / 1_000_000) * 3.00; // $3.00/1M tokens
+    const outputCostUSD = (outputTokens / 1_000_000) * 15.00; // $15.00/1M tokens
     const totalCostUSD = inputCostUSD + outputCostUSD;
 
     return {
@@ -110,6 +137,7 @@ Note: En B2B, des variations de ±30% sont normales (stock safety, achats group�
         totalTokens: totalTokens,
         costUSD: totalCostUSD,
       },
+      model: MODEL_NAME,
     };
   } catch (error) {
     console.error("LLM prediction failed:", error);

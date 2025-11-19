@@ -1,0 +1,29 @@
+{
+  "clientId": 17251,
+  "clientName": "CARREFOUR BELGIUM SA, CD Carrefour Kontich",
+  "orderName": "S39718",
+  "orderDate": "2025-10-14 08:41:27",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 8,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.6153846153846154,
+    "recall": 1,
+    "f1Score": 0.761904761904762,
+    "mae": 22.5,
+    "mape": 19.791666666666664
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 19985,
+    "completionTokens": 13993,
+    "totalTokens": 33978,
+    "costUSD": 0.26985000000000003
+  }
+}
