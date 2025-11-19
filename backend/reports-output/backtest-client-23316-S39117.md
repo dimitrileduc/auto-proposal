@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.55 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 31.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 10 | Égalité parfaite |
-| Partial Match (>0u) | 12 | Avec erreur |
+| **MAE** | 0.36 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 18.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 14 | Égalité parfaite |
+| Partial Match (>0u) | 8 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -143,23 +143,23 @@
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV131] LV Tartinade Potiron 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV132] LV Tartinade Houmous type 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV133] LV Tartinade Ananas Coco 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV135] LV Tartinade Basilico 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV136] LV Tartinade Betterave 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV133] LV Tartinade Ananas Coco 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV135] LV Tartinade Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV136] LV Tartinade Betterave 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV188] LV Tartinade Aubergine  380g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV345] LV Spread KIDS 200ml Organic | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV137] LV Tartinade Lentilles Curry 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV188] LV Tartinade Aubergine  380g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LV342] LV Organic Broccoli Spread 190 g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV345] LV Spread KIDS 200ml Organic | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV357] LV Tartinade BIO Asperge 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV357] LV Tartinade BIO Asperge 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -184,10 +184,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV162] LV Tartinade Tomato Basilico 190g | 4 | Stock prédit: 2.9u (20j restants) → prédit 4u mais non commandé |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 1 | Stock prédit: 0.8u (22j restants) → prédit 1u mais non commandé |
-| [UPI08] Jus de pomme-citron bio d'UPIGNY 250ml | 1 | Stock prédit: 0.8u (22j restants) → prédit 1u mais non commandé |
-| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 1 | Stock prédit: 0.8u (22j restants) → prédit 1u mais non commandé |
+| [LV162] LV Tartinade Tomato Basilico 190g | 5 | Stock prédit: 2.9u (20j restants) → prédit 5u mais non commandé |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 2 | Stock prédit: 0.8u (22j restants) → prédit 2u mais non commandé |
+| [UPI08] Jus de pomme-citron bio d'UPIGNY 250ml | 2 | Stock prédit: 0.8u (22j restants) → prédit 2u mais non commandé |
+| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 2 | Stock prédit: 0.8u (22j restants) → prédit 2u mais non commandé |
 | [RIT02] RITCHIE Citron - Framboise - verre 275ml | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
 | [RIT05] RITCHIE Cola - verre 275ml | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
 | [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
@@ -225,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:04.644Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:37.304Z*

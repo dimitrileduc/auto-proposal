@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 6.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 4 | 5 | 1.0 | 20.0% | ✅ partial |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -168,7 +168,7 @@
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock prédit: 0.8u (11j restants) → prédit 3u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | Stock prédit: 1.8u (27j restants) → prédit 3u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: -0.1u (-3j restants) → prédit 2u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: -0.5u (-22j restants) → prédit 1u mais non commandé |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: -1.8u (-45j restants) → prédit 1u mais non commandé |
 | [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 2 | Stock prédit: -0.4u (-11j restants) → prédit 2u mais non commandé |
@@ -202,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:45.447Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:18.081Z*

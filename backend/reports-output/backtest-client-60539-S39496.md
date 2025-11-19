@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 7 | Avec erreur |
+| **MAE** | 1.88 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 37.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 8 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,14 +138,14 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 9 | 5 | 4.0 | 80.0% | ✅ partial |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
-| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
-| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 6 | 5 | 1.0 | 20.0% | ✅ partial |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 6 | 5 | 1.0 | 20.0% | ✅ partial |
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
+| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
+| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:46.386Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:19.496Z*

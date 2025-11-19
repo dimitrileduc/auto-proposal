@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 49.2% | 63 produits prédits, 31 corrects |
+| **Précision** | 48.4% | 64 produits prédits, 31 corrects |
 | **Rappel** | 73.8% | 42 produits réels, 31 détectés |
-| **F1-Score** | 59.0% | Score équilibré global |
+| **F1-Score** | 58.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.58 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 38.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 17 | Égalité parfaite |
-| Partial Match (>0u) | 14 | Avec erreur |
+| **MAE** | 0.45 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 33.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 18 | Égalité parfaite |
+| Partial Match (>0u) | 13 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,25 +138,25 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [LD013] LD Tuscan Organic Spread 180 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 4 | 2 | 2.0 | 100.0% | ✅ partial |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0032] MF Tarti Pois chiches 250 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0053] MF Maïs 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -168,12 +168,12 @@
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LD012] LD Organic Samphire Spread 135 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [MF0021] MF Sauce BBQ 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0021] MF Sauce BBQ 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (32)
+## False Positives (33)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -193,6 +193,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [JF049] JF DISPLAY SAUCES Squeeze | 1 | Stock prédit: 0.7u (14j restants) → prédit 1u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 3 | Stock prédit: 0.4u (4j restants) → prédit 3u mais non commandé |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: -0.5u (-6j restants) → prédit 2u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: 0.5u (6j restants) → prédit 2u mais non commandé |
@@ -206,13 +207,13 @@
 | [MF0033] MF Tarti Poivron chilli 250g | 2 | Stock prédit: 0.3u (3j restants) → prédit 2u mais non commandé |
 | [MF0027] MF Tarti Aubergine 250g  | 2 | Stock prédit: -0.3u (-4j restants) → prédit 2u mais non commandé |
 | [MF0012] MF Olives Mix 500g | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
-| [MF0013] MF Olives Vertes 500g | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
+| [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
 | [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [LD009] LD Organic Asparagus Spread 180 g | 2 | Stock prédit: -0.4u (-13j restants) → prédit 2u mais non commandé |
 | [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: -2.3u (-52j restants) → prédit 2u mais non commandé |
-| [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: -1.4u (-44j restants) → prédit 2u mais non commandé |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | Stock prédit: -1.4u (-44j restants) → prédit 1u mais non commandé |
 | [LD015] LD Onion Spread 180g | 2 | Stock prédit: -0.4u (-13j restants) → prédit 2u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 3 | Stock prédit: 0.1u (3j restants) → prédit 3u mais non commandé |
 | [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: -0.6u (-28j restants) → prédit 2u mais non commandé |
@@ -264,4 +265,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:11.113Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:44.808Z*

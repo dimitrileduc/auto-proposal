@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.60 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 23.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -141,7 +141,7 @@
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 5 | 3 | 2.0 | 66.7% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -175,12 +175,12 @@
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: -0.5u (-4j restants) → prédit 3u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock prédit: 0.5u (7j restants) → prédit 2u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: -0.6u (-4j restants) → prédit 3u mais non commandé |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock prédit: 0.1u (1j restants) → prédit 2u mais non commandé |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 3 | Stock prédit: 0.1u (1j restants) → prédit 3u mais non commandé |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.1u (-31j restants) → prédit 2u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-23j restants) → prédit 1u mais non commandé |
@@ -215,4 +215,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:55.619Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:30.174Z*

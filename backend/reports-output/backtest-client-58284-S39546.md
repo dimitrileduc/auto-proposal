@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 123.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 102.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 170.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 143.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -138,9 +138,9 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 216 | 110 | 106.0 | 96.4% | ✅ partial |
-| [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML | 350 | 124 | 226.0 | 182.3% | ✅ partial |
-| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 162 | 125 | 37.0 | 29.6% | ✅ partial |
+| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 292 | 110 | 182.0 | 165.5% | ✅ partial |
+| [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML | 337 | 124 | 213.0 | 171.8% | ✅ partial |
+| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 241 | 125 | 116.0 | 92.8% | ✅ partial |
 
 
 ---
@@ -165,10 +165,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML | 200 | Stock prédit: 208.5u (25j restants) → prédit 200u mais non commandé |
-| [PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML | 401 | Stock prédit: 15.8u (2j restants) → prédit 401u mais non commandé |
-| [PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML | 8 | Stock prédit: -305.1u (-47j restants) → prédit 8u mais non commandé |
-| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 141 | Stock prédit: -271.9u (-32j restants) → prédit 141u mais non commandé |
+| [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML | 227 | Stock prédit: 208.5u (25j restants) → prédit 227u mais non commandé |
+| [PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML | 360 | Stock prédit: 15.8u (2j restants) → prédit 360u mais non commandé |
+| [PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML | 229 | Stock prédit: -305.1u (-47j restants) → prédit 229u mais non commandé |
+| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 329 | Stock prédit: -271.9u (-32j restants) → prédit 329u mais non commandé |
 
 
 ---
@@ -192,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:23.745Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:58.538Z*

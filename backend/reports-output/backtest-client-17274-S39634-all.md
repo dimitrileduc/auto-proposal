@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.18 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 11.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 9 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.36 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 18.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -144,9 +144,9 @@
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF032] JF SAUCE LAPIN 380GX6 | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
-| [JF029] JF VOL AU VENT BOCAL 400G | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
+| [JF029] JF VOL AU VENT BOCAL 400G | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 
@@ -214,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:07.680Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:42.049Z*

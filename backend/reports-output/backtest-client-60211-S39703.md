@@ -64,8 +64,8 @@
 |----------|--------|----------------|
 | **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 40.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,14 +139,14 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JOY02] JOY! Organic Strawberry Jam 370g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -174,12 +174,12 @@
 |---------|-------------|--------|
 | [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.7u (13j restants) → prédit 1u mais non commandé |
 | [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.6u (10j restants) → prédit 1u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 2 | Stock prédit: 0.8u (24j restants) → prédit 2u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: -0.2u (0j restants) → prédit 2u mais non commandé |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.8u (24j restants) → prédit 1u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 3 | Stock prédit: -0.2u (0j restants) → prédit 3u mais non commandé |
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 2 | Stock prédit: 0.5u (6j restants) → prédit 2u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.8u (23j restants) → prédit 1u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: 0.8u (19j restants) → prédit 1u mais non commandé |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 2 | Stock prédit: 0.2u (7j restants) → prédit 2u mais non commandé |
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
@@ -187,9 +187,9 @@
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock prédit: -1.5u (-21j restants) → prédit 1u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.4u (21j restants) → prédit 1u mais non commandé |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | Stock prédit: -1.2u (-21j restants) → prédit 2u mais non commandé |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.2u (-3j restants) → prédit 2u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock prédit: 0.4u (21j restants) → prédit 2u mais non commandé |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 3 | Stock prédit: -1.2u (-21j restants) → prédit 3u mais non commandé |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 3 | Stock prédit: -0.2u (-3j restants) → prédit 3u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 2 | Stock prédit: -0.6u (-20j restants) → prédit 2u mais non commandé |
 
 
@@ -214,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:54.222Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:28.442Z*

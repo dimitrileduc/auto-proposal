@@ -144,12 +144,12 @@
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0051] MF Kidney Beans 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0027] MF Tarti Aubergine 250g  | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [MF0027] MF Tarti Aubergine 250g  | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [MF0029] MF Tarti Datte chili 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [MF0052] MF Pois chiches  500g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
+| [MF0052] MF Pois chiches  500g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 
 
 ---
@@ -175,7 +175,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 2 | Stock prédit: -0.7u (-13j restants) → prédit 2u mais non commandé |
+| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -0.7u (-13j restants) → prédit 1u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -0.8u (-15j restants) → prédit 2u mais non commandé |
 | [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
 | [MF0061] MF Compote | 2 | Stock prédit: 0.1u (3j restants) → prédit 2u mais non commandé |
@@ -205,4 +205,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:03.491Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:37.767Z*

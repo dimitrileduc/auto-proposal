@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.30 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 52.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| **MAE** | 2.40 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 62.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,12 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 3 | 6 | 3.0 | 50.0% | ✅ partial |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 3 | 6 | 3.0 | 50.0% | ✅ partial |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 4 | 6 | 2.0 | 33.3% | ✅ partial |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 6 | 4.0 | 66.7% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 6 | 3.0 | 50.0% | ✅ partial |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 6 | 5.0 | 83.3% | ✅ partial |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | 5 | 1.0 | 20.0% | ✅ partial |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 6 | 4.0 | 66.7% | ✅ partial |
@@ -174,7 +174,7 @@
 |---------|-------------|--------|
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.3u (17j restants) → prédit 1u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.3u (17j restants) → prédit 1u mais non commandé |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 1.2u (26j restants) → prédit 1u mais non commandé |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | Stock prédit: 1.2u (26j restants) → prédit 2u mais non commandé |
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: -5.0u (-92j restants) → prédit 1u mais non commandé |
 
@@ -210,4 +210,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:14.074Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:47.165Z*

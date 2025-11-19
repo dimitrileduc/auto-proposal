@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 14.7% | 34 produits prédits, 5 corrects |
-| **Rappel** | 33.3% | 15 produits réels, 5 détectés |
-| **F1-Score** | 20.4% | Score équilibré global |
+| **Précision** | 20.5% | 44 produits prédits, 9 corrects |
+| **Rappel** | 60.0% | 15 produits réels, 9 détectés |
+| **F1-Score** | 30.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.44 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 22.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,6 +138,10 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV145] LV Sauce Tartare 200 ml  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -147,7 +151,7 @@
 
 ---
 
-## False Positives (29)
+## False Positives (35)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,7 +174,11 @@
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
+| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 2 | Stock prédit: 0.7u (16j restants) → prédit 2u mais non commandé |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
@@ -180,6 +188,8 @@
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.7u (16j restants) → prédit 2u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 0.7u (16j restants) → prédit 2u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [LEA09] LEAMO cola bio 330ml | 2 | Stock prédit: 0.1u (5j restants) → prédit 2u mais non commandé |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | Stock prédit: 0.1u (5j restants) → prédit 2u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 2 | Stock prédit: -1.6u (-34j restants) → prédit 2u mais non commandé |
@@ -200,7 +210,7 @@
 
 ---
 
-## False Negatives (10)
+## False Negatives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -220,10 +230,6 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
@@ -234,4 +240,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:40.476Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:15.491Z*

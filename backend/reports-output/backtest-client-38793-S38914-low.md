@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 25.0% | 4 produits prédits, 1 corrects |
+| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **F1-Score** | 33.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,6 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: 0.6u (13j restants) → prédit 2u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -1.3u (-27j restants) → prédit 2u mais non commandé |
 | [KLAK01] KLAK Maté 330ml | 1 | Stock prédit: -1.4u (-57j restants) → prédit 1u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -3.3u (-70j restants) → prédit 2u mais non commandé |
@@ -189,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:24.674Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:58.607Z*

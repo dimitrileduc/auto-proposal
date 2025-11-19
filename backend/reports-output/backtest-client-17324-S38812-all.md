@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 8 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 6 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (7)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -158,12 +158,13 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | Stock prédit: 0.5u (27j restants) → prédit 2u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock prédit: 0.1u (2j restants) → prédit 3u mais non commandé |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 4 | Stock prédit: -1.0u (-10j restants) → prédit 4u mais non commandé |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | Stock prédit: 0.4u (7j restants) → prédit 4u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -2.0u (-55j restants) → prédit 1u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 3 | Stock prédit: -1.0u (-10j restants) → prédit 3u mais non commandé |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: 0.8u (21j restants) → prédit 2u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | Stock prédit: 0.4u (7j restants) → prédit 3u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 4 | Stock prédit: -2.0u (-55j restants) → prédit 4u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.1u (13j restants) → prédit 1u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 10 | Stock prédit: 1.3u (9j restants) → prédit 10u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 13 | Stock prédit: 1.3u (9j restants) → prédit 13u mais non commandé |
 
 
 ---
@@ -198,4 +199,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:07.457Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:39.685Z*

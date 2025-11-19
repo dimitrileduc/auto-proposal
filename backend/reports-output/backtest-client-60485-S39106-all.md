@@ -163,10 +163,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 32 | Stock prédit: 15.8u (27j restants) → prédit 32u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 53 | Stock prédit: -6.7u (-6j restants) → prédit 53u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 35 | Stock prédit: 15.8u (27j restants) → prédit 35u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 49 | Stock prédit: -6.7u (-6j restants) → prédit 49u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 63 | Stock prédit: 4.5u (3j restants) → prédit 63u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 42 | Stock prédit: -38.8u (-44j restants) → prédit 42u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 35 | Stock prédit: -38.8u (-44j restants) → prédit 35u mais non commandé |
 
 
 ---
@@ -190,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:12.968Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:46.679Z*

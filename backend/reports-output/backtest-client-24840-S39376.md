@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.30 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.40 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 30.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV160] LV Tartinade Aubergine 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV160] LV Tartinade Aubergine 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV131] LV Tartinade Potiron 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -173,9 +173,9 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock prédit: 1.1u (27j restants) → prédit 2u mais non commandé |
-| [LV188] LV Tartinade Aubergine  380g | 2 | Stock prédit: 0.4u (15j restants) → prédit 2u mais non commandé |
+| [LV188] LV Tartinade Aubergine  380g | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
 | [LV345] LV Spread KIDS 200ml Organic | 2 | Stock prédit: 1.1u (27j restants) → prédit 2u mais non commandé |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (14j restants) → prédit 1u mais non commandé |
@@ -209,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:25.173Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:58.284Z*

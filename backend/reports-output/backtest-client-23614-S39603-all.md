@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 17.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 5.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
+| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 248 | 300 | 52.0 | 17.3% | ✅ partial |
 | [LV105] LV Tomate Basil Aufstr 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
 | [LV106] LV Oliven Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
 
@@ -200,4 +200,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:55.015Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:28.969Z*

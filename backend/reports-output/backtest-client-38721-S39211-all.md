@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.20 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 15.0% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 8 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -138,9 +138,9 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -173,7 +173,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.5u (-20j restants) → prédit 1u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -1.3u (-34j restants) → prédit 2u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -1.3u (-34j restants) → prédit 1u mais non commandé |
 | [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.3u (-12j restants) → prédit 1u mais non commandé |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | Stock prédit: -2.1u (-41j restants) → prédit 1u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
@@ -221,4 +221,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:31.284Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:05.359Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.14 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 6.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 12 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.07 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 3.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 13 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -144,7 +144,7 @@
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -177,17 +177,17 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 1.1u (23j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 1.1u (23j restants) → prédit 2u mais non commandé |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | Stock prédit: 1.7u (14j restants) → prédit 3u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | Stock prédit: 1.7u (14j restants) → prédit 4u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | Stock prédit: 0.7u (6j restants) → prédit 3u mais non commandé |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: 1.1u (23j restants) → prédit 2u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: 0.4u (4j restants) → prédit 2u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 3 | Stock prédit: 0.9u (14j restants) → prédit 3u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.9u (14j restants) → prédit 2u mais non commandé |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 3 | Stock prédit: 1.6u (23j restants) → prédit 3u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
@@ -227,4 +227,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:35.079Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:08.242Z*

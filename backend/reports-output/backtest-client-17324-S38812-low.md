@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,7 +152,13 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: 0.8u (21j restants) → prédit 2u mais non commandé |
+
 
 ---
 
@@ -175,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:07.456Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:39.684Z*

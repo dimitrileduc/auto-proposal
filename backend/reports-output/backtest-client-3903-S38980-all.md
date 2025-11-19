@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 7.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 29.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 9.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 37.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 10 | 24 | 14.0 | 58.3% | ✅ partial |
-| [PF0077] FILOU PROVENCALE 5 L | 30 | 30 | 0.0 | 0.0% | 🎯 exact |
+| [PF0077] FILOU PROVENCALE 5 L | 35 | 30 | 5.0 | 16.7% | ✅ partial |
 
 
 ---
@@ -182,4 +182,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:23.452Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:56.473Z*

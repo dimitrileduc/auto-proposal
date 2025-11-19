@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.09 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 9.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 10 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 11 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV162] LV Tartinade Tomato Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -176,9 +176,9 @@
 | [LV146] LV Sauce Aïoli 200 ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: -1.2u (-45j restants) → prédit 1u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock prédit: -1.0u (-42j restants) → prédit 2u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | Stock prédit: -1.7u (-52j restants) → prédit 2u mais non commandé |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -1.7u (-52j restants) → prédit 2u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: -1.0u (-42j restants) → prédit 1u mais non commandé |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | Stock prédit: -1.7u (-52j restants) → prédit 1u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: -1.7u (-52j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
 | [LV209] LV Confit de Figues Bio 150g (bocal weck) | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
 | [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: -0.8u (-36j restants) → prédit 1u mais non commandé |
@@ -223,4 +223,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:56.281Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:29.046Z*

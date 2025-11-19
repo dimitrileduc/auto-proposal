@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 35.83 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 144.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 11 | Avec erreur |
+| **MAE** | 32.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 126.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 12 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,13 +138,13 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 48 | 48 | 0.0 | 0.0% | 🎯 exact |
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 72 | 64 | 8.0 | 12.5% | ✅ partial |
-| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 75 | 25 | 50.0 | 200.0% | ✅ partial |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 50 | 25 | 25.0 | 100.0% | ✅ partial |
-| [LV159] LV Tartinade aux Truffes  135g  | 50 | 25 | 25.0 | 100.0% | ✅ partial |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 48 | 16 | 32.0 | 200.0% | ✅ partial |
-| [MF0062] ​MF Tarti Betterave rouge | 72 | 32 | 40.0 | 125.0% | ✅ partial |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 42 | 48 | 6.0 | 12.5% | ✅ partial |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 54 | 64 | 10.0 | 15.6% | ✅ partial |
+| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 50 | 25 | 25.0 | 100.0% | ✅ partial |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 42 | 25 | 17.0 | 68.0% | ✅ partial |
+| [LV159] LV Tartinade aux Truffes  135g  | 42 | 25 | 17.0 | 68.0% | ✅ partial |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 38 | 16 | 22.0 | 137.5% | ✅ partial |
+| [MF0062] ​MF Tarti Betterave rouge | 69 | 32 | 37.0 | 115.6% | ✅ partial |
 | [LV136] LV Tartinade Betterave 190g | 75 | 25 | 50.0 | 200.0% | ✅ partial |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 75 | 25 | 50.0 | 200.0% | ✅ partial |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 75 | 25 | 50.0 | 200.0% | ✅ partial |
@@ -174,8 +174,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV342] LV Organic Broccoli Spread 190 g | 50 | Stock prédit: 3.5u (2j restants) → prédit 50u mais non commandé |
-| [LV133] LV Tartinade Ananas Coco 190g | 50 | Stock prédit: 3.5u (2j restants) → prédit 50u mais non commandé |
+| [LV342] LV Organic Broccoli Spread 190 g | 42 | Stock prédit: 3.5u (2j restants) → prédit 42u mais non commandé |
+| [LV133] LV Tartinade Ananas Coco 190g | 42 | Stock prédit: 3.5u (2j restants) → prédit 42u mais non commandé |
 | [LV189] LV Tartinade Houmous Type 380g | 75 | Stock prédit: -31.0u (-19j restants) → prédit 75u mais non commandé |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 75 | Stock prédit: -31.0u (-19j restants) → prédit 75u mais non commandé |
 
@@ -208,4 +208,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:07.078Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:40.964Z*

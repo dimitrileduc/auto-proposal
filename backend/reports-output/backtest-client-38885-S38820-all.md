@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 10.4% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 6 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -139,12 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -171,7 +171,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: -0.2u (-6j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 0.4u (8j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.4u (8j restants) → prédit 2u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.3u (17j restants) → prédit 1u mais non commandé |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | Stock prédit: 0.3u (17j restants) → prédit 1u mais non commandé |
 
@@ -204,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:08.058Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:40.882Z*

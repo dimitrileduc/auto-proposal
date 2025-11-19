@@ -174,7 +174,7 @@
 | [LV160] LV Tartinade Aubergine 190g | 2 | Stock prédit: 0.7u (13j restants) → prédit 2u mais non commandé |
 | [LV161] LV Tartinade Mangue curry 190g | 2 | Stock prédit: 0.7u (13j restants) → prédit 2u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: 0.7u (13j restants) → prédit 2u mais non commandé |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
 
 
@@ -199,4 +199,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:08.477Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:42.072Z*

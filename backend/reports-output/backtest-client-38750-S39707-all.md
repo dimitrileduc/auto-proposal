@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.08 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 3.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 12 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.15 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 7.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 11 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -143,7 +143,7 @@
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -176,9 +176,9 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.4u (30j restants) → prédit 1u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -0.4u (-12j restants) → prédit 2u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock prédit: -0.4u (-12j restants) → prédit 2u mais non commandé |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.4u (-12j restants) → prédit 2u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-12j restants) → prédit 1u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-12j restants) → prédit 1u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | Stock prédit: -0.4u (-12j restants) → prédit 1u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.6u (21j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
@@ -217,4 +217,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:31.807Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:04.905Z*

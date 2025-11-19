@@ -85,7 +85,7 @@ export function compareSystemPredictionVsRealOrder(systemProposal, realOrderLine
             }
             else {
                 // Produit PAS dans stockAnalysis → jamais commandé avant dans la fenêtre d'analyse
-                const windowDays = orderContext.analysisWindowDays ?? 180;
+                const windowDays = orderContext.analysisWindowDays ?? 120;
                 reason = `Jamais commandé avant dans les ${windowDays}j précédents (pas d'historique)`;
             }
             falseNegatives.push({

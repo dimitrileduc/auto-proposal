@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 55.8% | 52 produits prédits, 29 corrects |
+| **Précision** | 48.3% | 60 produits prédits, 29 corrects |
 | **Rappel** | 82.9% | 35 produits réels, 29 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 61.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.45 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 28.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.41 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 29.6% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 17 | Égalité parfaite |
 | Partial Match (>0u) | 12 | Avec erreur |
 
@@ -138,21 +138,21 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV157] LV Ketchup aux tomates 263 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV158] LV Moutarde 200 ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV160] LV Tartinade Aubergine 190g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV135] LV Tartinade Basilico 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -160,7 +160,7 @@
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -171,7 +171,7 @@
 
 ---
 
-## False Positives (23)
+## False Positives (31)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -197,7 +197,15 @@
 | [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
 | [LV137] LV Tartinade Lentilles Curry 190g | 2 | Stock prédit: 1.0u (29j restants) → prédit 2u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | Stock prédit: 0.9u (22j restants) → prédit 2u mais non commandé |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
 | [WIG02] WIGNAC cidre rosé bio 330ml | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
 | [MF0052] MF Pois chiches  500g | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
 | [MF0053] MF Maïs 500g | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
@@ -248,4 +256,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:11.091Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:46.315Z*

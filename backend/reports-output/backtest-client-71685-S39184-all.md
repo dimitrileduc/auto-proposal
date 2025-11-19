@@ -178,7 +178,7 @@
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 3 | Stock prédit: -3.0u (-35j restants) → prédit 3u mais non commandé |
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock prédit: -1.0u (-35j restants) → prédit 1u mais non commandé |
 | [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
-| [CB010] CB Jus de Pomme cubis 3l | 3 | Stock prédit: -2.3u (-49j restants) → prédit 3u mais non commandé |
+| [CB010] CB Jus de Pomme cubis 3l | 2 | Stock prédit: -2.3u (-49j restants) → prédit 2u mais non commandé |
 | [LV214] LV Biscuits apéro tomate basilic 100g bio  | 1 | Stock prédit: -2.0u (-70j restants) → prédit 1u mais non commandé |
 | [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 1 | Stock prédit: -2.0u (-70j restants) → prédit 1u mais non commandé |
 | [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 1 | Stock prédit: -2.0u (-70j restants) → prédit 1u mais non commandé |
@@ -206,4 +206,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:52.255Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:26.021Z*

@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 37.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 13 | Avec erreur |
+| **MAPE** | 32.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 8 | Égalité parfaite |
+| Partial Match (>0u) | 12 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -145,17 +145,17 @@
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 3 | 2.0 | 66.7% | ✅ partial |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 5 | 4 | 1.0 | 25.0% | ✅ partial |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF021] JF PICKLES 350 ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF021] JF PICKLES 350 ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | 3 | 2.0 | 66.7% | ✅ partial |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 
@@ -200,4 +200,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:12.880Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:45.960Z*

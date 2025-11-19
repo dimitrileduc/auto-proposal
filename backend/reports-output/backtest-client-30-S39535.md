@@ -193,10 +193,10 @@
 | [LV348] LV Tartinade Dattes-Chili 180g BE bio | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [DIS0003] Display TVF bois | 3 | Stock prédit: 1.0u (29j restants) → prédit 3u mais non commandé |
+| [DIS0003] Display TVF bois | 2 | Stock prédit: 1.0u (29j restants) → prédit 2u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
-| [LV036] LV Olives Vertes dénoyautées BE 350g | 139 | Stock prédit: -30.8u (-11j restants) → prédit 139u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 3 | Stock prédit: -12.3u (-97j restants) → prédit 3u mais non commandé |
+| [LV036] LV Olives Vertes dénoyautées BE 350g | 146 | Stock prédit: -30.8u (-11j restants) → prédit 146u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: -12.3u (-97j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -220,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:28.986Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:04.106Z*

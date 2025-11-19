@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 41.7% | 12 produits prédits, 5 corrects |
+| **Précision** | 35.7% | 14 produits prédits, 5 corrects |
 | **Rappel** | 83.3% | 6 produits réels, 5 détectés |
-| **F1-Score** | 55.6% | Score équilibré global |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 60.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 83.80 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 15.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,16 +138,16 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0403] BORNIBUS MAYO KOSHER 220G | 750 | 600 | 150.0 | 25.0% | ✅ partial |
+| [PF0403] BORNIBUS MAYO KOSHER 220G | 700 | 600 | 100.0 | 16.7% | ✅ partial |
 | [PF0625] BORNIBUS MAYO WASAB KOSHER 220 | 600 | 600 | 0.0 | 0.0% | 🎯 exact |
-| [PF1541] BORNIBUS AIOLI KOSHER 220G | 300 | 300 | 0.0 | 0.0% | 🎯 exact |
-| [PF1542] BORNIBUS BEARNAISE KOSHER 2 10G | 600 | 600 | 0.0 | 0.0% | 🎯 exact |
-| [PF1543] BORNIBUS TARTARE KOSHER 220G | 450 | 600 | 150.0 | 25.0% | ✅ partial |
+| [PF1541] BORNIBUS AIOLI KOSHER 220G | 268 | 300 | 32.0 | 10.7% | ✅ partial |
+| [PF1542] BORNIBUS BEARNAISE KOSHER 2 10G | 483 | 600 | 117.0 | 19.5% | ✅ partial |
+| [PF1543] BORNIBUS TARTARE KOSHER 220G | 430 | 600 | 170.0 | 28.3% | ✅ partial |
 
 
 ---
 
-## False Positives (7)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,13 +167,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1317] BR MAYONNAISE KOSHER 500ML BIB | 378 | Stock prédit: 210.5u (21j restants) → prédit 378u mais non commandé |
-| [PF0679] BR MAYONNAISE KOSHER 500ML BOC | 647 | Stock prédit: 91.3u (24j restants) → prédit 647u mais non commandé |
+| [PF3398] BS1833 - BORNIBUS BEARNAISE KOSHER BOCAL 825G  | 96 | Stock prédit: 32.7u (15j restants) → prédit 96u mais non commandé |
+| [PF3397] BS1833 COSCO - BORNIBUS BEARNAISE KOSHER BOCAL 825G | 600 | Stock prédit: 204.5u (15j restants) → prédit 600u mais non commandé |
+| [PF1317] BR MAYONNAISE KOSHER 500ML BIB | 432 | Stock prédit: 210.5u (21j restants) → prédit 432u mais non commandé |
+| [PF0679] BR MAYONNAISE KOSHER 500ML BOC | 561 | Stock prédit: 91.3u (24j restants) → prédit 561u mais non commandé |
 | [PF1980] BR1582 - KETCHUP KOSHE SQUEEZE 300ML | 56 | Stock prédit: 15.9u (17j restants) → prédit 56u mais non commandé |
 | [PF1981] BR BEARNAISE KOSH SQUEEZ 300ML | 56 | Stock prédit: 15.9u (17j restants) → prédit 56u mais non commandé |
-| [PF1379] BR MAYONNAISE KOSHER  5L  | 1000 | Stock prédit: 263.6u (27j restants) → prédit 1000u mais non commandé |
-| [PF3337] BS1886 - BORNIBUS MAYO TRUFFES KOSHER 210G | 374 | Stock prédit: -38.5u (-8j restants) → prédit 374u mais non commandé |
-| [PF3369] BS1826 COSCO - BORNIBUS MAYONNAISE KOSHE 825G | 540 | Stock prédit: 154.5u (30j restants) → prédit 540u mais non commandé |
+| [PF1379] BR MAYONNAISE KOSHER  5L  | 853 | Stock prédit: 263.6u (27j restants) → prédit 853u mais non commandé |
+| [PF3337] BS1886 - BORNIBUS MAYO TRUFFES KOSHER 210G | 420 | Stock prédit: -38.5u (-8j restants) → prédit 420u mais non commandé |
+| [PF3369] BS1826 COSCO - BORNIBUS MAYONNAISE KOSHE 825G | 600 | Stock prédit: 154.5u (30j restants) → prédit 600u mais non commandé |
 
 
 ---
@@ -203,4 +205,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:20.806Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:53.821Z*

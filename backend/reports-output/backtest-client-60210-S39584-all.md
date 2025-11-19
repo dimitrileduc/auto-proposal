@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.69 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 57.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.85 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 61.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 8 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 5 | 6 | 1.0 | 16.7% | ✅ partial |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 | 6 | 2.0 | 33.3% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -150,7 +150,7 @@
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [ORG04] ORGANICA crunchy fruit fraise 12g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [ORG04] ORGANICA crunchy fruit fraise 12g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
 
 
 ---
@@ -216,4 +216,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:51.678Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:25.397Z*

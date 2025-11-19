@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 53.8% | 26 produits prédits, 14 corrects |
+| **Précision** | 51.9% | 27 produits prédits, 14 corrects |
 | **Rappel** | 73.7% | 19 produits réels, 14 détectés |
-| **F1-Score** | 62.2% | Score équilibré global |
+| **F1-Score** | 60.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.64 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 53.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 42.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,12 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV132] LV Tartinade Houmous type 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV132] LV Tartinade Houmous type 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | 0 | 1.0 | 0.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -156,7 +156,7 @@
 
 ---
 
-## False Positives (12)
+## False Positives (13)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -181,9 +181,10 @@
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [LV136] LV Tartinade Betterave 190g | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 3 | Stock prédit: 0.8u (24j restants) → prédit 3u mais non commandé |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: -0.9u (-30j restants) → prédit 2u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: -0.8u (-23j restants) → prédit 1u mais non commandé |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: -0.9u (-30j restants) → prédit 1u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | Stock prédit: -0.8u (-23j restants) → prédit 2u mais non commandé |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: -0.6u (-32j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: -3.1u (-52j restants) → prédit 2u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -3.1u (-52j restants) → prédit 2u mais non commandé |
@@ -221,4 +222,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:29.530Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:03.128Z*

@@ -178,7 +178,7 @@
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | Stock prédit: 1.0u (13j restants) → prédit 3u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 3 | Stock prédit: 1.0u (13j restants) → prédit 3u mais non commandé |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 1 | Stock prédit: 0.3u (27j restants) → prédit 1u mais non commandé |
 | [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
@@ -223,4 +223,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:37.064Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:11.497Z*

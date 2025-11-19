@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAE** | 0.70 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 65.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,9 +139,9 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 4 | 1 | 3.0 | 300.0% | ✅ partial |
-| [JF032] JF SAUCE LAPIN 380GX6 | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 5 | 1 | 4.0 | 400.0% | ✅ partial |
+| [JF032] JF SAUCE LAPIN 380GX6 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF029] JF VOL AU VENT BOCAL 400G | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -174,7 +174,7 @@
 |---------|-------------|--------|
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: 0.6u (14j restants) → prédit 2u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.4u (25j restants) → prédit 1u mais non commandé |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.9u (25j restants) → prédit 1u mais non commandé |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: 0.9u (25j restants) → prédit 2u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 0.4u (8j restants) → prédit 2u mais non commandé |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: 0.3u (6j restants) → prédit 2u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.4u (-23j restants) → prédit 1u mais non commandé |
@@ -212,4 +212,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:27.071Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:58.898Z*

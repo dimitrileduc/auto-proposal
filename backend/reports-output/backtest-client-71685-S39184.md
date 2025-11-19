@@ -173,7 +173,7 @@
 | [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
 | [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
 | [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
-| [CB010] CB Jus de Pomme cubis 3l | 3 | Stock prédit: -2.3u (-49j restants) → prédit 3u mais non commandé |
+| [CB010] CB Jus de Pomme cubis 3l | 2 | Stock prédit: -2.3u (-49j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -197,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:52.252Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:26.019Z*

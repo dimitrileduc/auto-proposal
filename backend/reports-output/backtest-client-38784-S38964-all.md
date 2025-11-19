@@ -178,7 +178,7 @@
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: -0.3u (-12j restants) → prédit 1u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock prédit: -0.3u (-12j restants) → prédit 1u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -1.0u (-25j restants) → prédit 2u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -1.0u (-25j restants) → prédit 1u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: -0.6u (-12j restants) → prédit 2u mais non commandé |
 | [JF048] JF DISPLAY SAUCES 250ML  | 1 | Stock prédit: -1.7u (-44j restants) → prédit 1u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.3u (26j restants) → prédit 1u mais non commandé |
@@ -219,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:34.078Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:07.497Z*

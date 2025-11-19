@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 6.3% | 16 produits prédits, 1 corrects |
+| **Précision** | 5.6% | 18 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 11.8% | Score équilibré global |
+| **F1-Score** | 10.5% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (15)
+## False Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,19 +165,21 @@
 |---------|-------------|--------|
 | [PF0093] FILOU MOUTARDE 300GR | 1 | Stock prédit: 0.7u (17j restants) → prédit 1u mais non commandé |
 | [PF1798] LD MAYONNAI POIVRE 250ML WECK | 0 | Stock prédit: -0.0u (-27j restants) → prédit 0u mais non commandé |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
+| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
 | [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 2 | Stock prédit: -0.4u (-6j restants) → prédit 2u mais non commandé |
 | [PF1687] JF CURRY KETCHUP SQUEEZE 300ML | 2 | Stock prédit: 0.7u (20j restants) → prédit 2u mais non commandé |
 | [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [PF0094] FILOU MOUTARDE 700 GR | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
-| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 6 | Stock prédit: -1.2u (-50j restants) → prédit 6u mais non commandé |
+| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 3 | Stock prédit: -1.2u (-50j restants) → prédit 3u mais non commandé |
 | [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
 | [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.8u (-22j restants) → prédit 1u mais non commandé |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 2 | Stock prédit: 0.0u (2j restants) → prédit 2u mais non commandé |
-| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.8u (-22j restants) → prédit 2u mais non commandé |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 2 | Stock prédit: 0.0u (1j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -201,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:42.781Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:16.709Z*

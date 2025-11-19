@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: -0.8u (-40j restants) → prédit 1u mais non commandé |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: -1.4u (-70j restants) → prédit 1u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: -1.4u (-70j restants) → prédit 1u mais non commandé |
@@ -183,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:42.476Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:17.403Z*

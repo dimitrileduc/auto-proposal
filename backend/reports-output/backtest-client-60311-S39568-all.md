@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.60 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 36.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 43.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -140,7 +140,7 @@
 |---------|--------|------|-----------|----------|------|
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 1 | 3 | 2.0 | 66.7% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
@@ -169,7 +169,7 @@
 |---------|-------------|--------|
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
-| [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 2 | Stock prédit: -1.4u (-52j restants) → prédit 2u mais non commandé |
+| [UPI06] Jus de pomme-rhubarbe bio d'UPIGNY 250ml | 1 | Stock prédit: -1.4u (-52j restants) → prédit 1u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | Stock prédit: 0.2u (7j restants) → prédit 2u mais non commandé |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 2 | Stock prédit: 0.6u (24j restants) → prédit 2u mais non commandé |
 | [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | Stock prédit: 0.6u (24j restants) → prédit 2u mais non commandé |
@@ -206,4 +206,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:47.460Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:19.426Z*

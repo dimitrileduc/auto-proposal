@@ -173,19 +173,19 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 2 | Stock prédit: 0.5u (17j restants) → prédit 2u mais non commandé |
-| [MF0055] MF Noix de cajou - Curry 133g | 2 | Stock prédit: -0.5u (-16j restants) → prédit 2u mais non commandé |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: -0.5u (-16j restants) → prédit 1u mais non commandé |
 | [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: -0.5u (-16j restants) → prédit 2u mais non commandé |
-| [MF0030] MF Tarti Mangue Curry 250g  | 3 | Stock prédit: -0.5u (-9j restants) → prédit 3u mais non commandé |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: -0.5u (-16j restants) → prédit 1u mais non commandé |
+| [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -0.5u (-9j restants) → prédit 2u mais non commandé |
 | [MF0024] MF KETCHUP 250g | 1 | Stock prédit: 0.2u (9j restants) → prédit 1u mais non commandé |
 | [MF0060] MF Passata | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: 0.3u (25j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.3u (25j restants) → prédit 1u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: 0.1u (7j restants) → prédit 1u mais non commandé |
 | [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [CB005] CB Apple juice 1l | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
-| [CB006] CB Blackcurrant Apple juice 1l | 1 | Stock prédit: -0.3u (-11j restants) → prédit 1u mais non commandé |
+| [CB005] CB Apple juice 1l | 2 | Stock prédit: -0.2u (-8j restants) → prédit 2u mais non commandé |
+| [CB006] CB Blackcurrant Apple juice 1l | 2 | Stock prédit: -0.3u (-11j restants) → prédit 2u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: 0.1u (11j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: -0.1u (-11j restants) → prédit 1u mais non commandé |
 
@@ -217,4 +217,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:52.088Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:27.212Z*

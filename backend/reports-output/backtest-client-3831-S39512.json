@@ -12,11 +12,11 @@
     "precision": 0.16666666666666666,
     "recall": 1,
     "f1Score": 0.2857142857142857,
-    "mae": 0,
-    "mape": 0
+    "mae": 39,
+    "mape": 15.6
   },
   "distribution": {
-    "exactMatch": 1,
-    "partialMatch": 0
+    "exactMatch": 0,
+    "partialMatch": 1
   }
 }

@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.67 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 3.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 30.6% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -140,7 +140,7 @@
 |---------|--------|------|-----------|----------|------|
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 6 | 10 | 4.0 | 40.0% | ✅ partial |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 9 | 10 | 1.0 | 10.0% | ✅ partial |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 9 | 12 | 3.0 | 25.0% | ✅ partial |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 7 | 12 | 5.0 | 41.7% | ✅ partial |
 
 
 ---
@@ -165,11 +165,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 8 | Stock prédit: -2.3u (-9j restants) → prédit 8u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 7 | Stock prédit: -2.3u (-9j restants) → prédit 7u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 9 | Stock prédit: -2.9u (-18j restants) → prédit 9u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 8 | Stock prédit: -0.7u (-5j restants) → prédit 8u mais non commandé |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 8 | Stock prédit: -0.7u (-5j restants) → prédit 8u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 8 | Stock prédit: -13.8u (-75j restants) → prédit 8u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 9 | Stock prédit: -13.8u (-75j restants) → prédit 9u mais non commandé |
 
 
 ---
@@ -193,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:10.772Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:45.278Z*

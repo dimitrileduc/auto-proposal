@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -169,7 +169,7 @@
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | Stock prédit: 0.7u (24j restants) → prédit 2u mais non commandé |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | Stock prédit: 0.3u (20j restants) → prédit 1u mais non commandé |
 | [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | Stock prédit: 0.3u (20j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: -1.0u (-33j restants) → prédit 2u mais non commandé |
@@ -209,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:09.575Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:43.094Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.13 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 6.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.38 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 31.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV330] LV BIO Tartinade Toscana 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -171,8 +171,8 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock prédit: 0.9u (22j restants) → prédit 1u mais non commandé |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock prédit: 0.9u (22j restants) → prédit 1u mais non commandé |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: 0.9u (22j restants) → prédit 2u mais non commandé |
+| [MF0027] MF Tarti Aubergine 250g  | 2 | Stock prédit: 0.9u (22j restants) → prédit 2u mais non commandé |
 | [MF0047] MF Mayonnaise 250ml | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
@@ -214,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:28.000Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:02.108Z*

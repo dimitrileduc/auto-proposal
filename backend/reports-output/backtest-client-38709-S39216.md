@@ -171,13 +171,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 3 | Stock prédit: 1.4u (26j restants) → prédit 3u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 1.4u (26j restants) → prédit 2u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 1.3u (20j restants) → prédit 2u mais non commandé |
 | [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: 0.7u (26j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: -1.1u (-14j restants) → prédit 2u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | Stock prédit: 0.7u (22j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [JF037] JF BBQ SQUEEZE 300ML | 2 | Stock prédit: -0.2u (-8j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -201,4 +201,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:27.407Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:01.220Z*

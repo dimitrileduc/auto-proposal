@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 4.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 40.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 12 | 10 | 2.0 | 20.0% | ✅ partial |
+| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 14 | 10 | 4.0 | 40.0% | ✅ partial |
 
 
 ---
@@ -193,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:15.451Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:49.336Z*

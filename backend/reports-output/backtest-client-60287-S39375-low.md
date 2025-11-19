@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [RISH06] RISH kombucha BIO - tagette 750ml | 2 | Stock prédit: 0.3u (7j restants) → prédit 2u mais non commandé |
+| [RISH05] RISH kombucha BIO - rose 750ml | 2 | Stock prédit: 0.3u (7j restants) → prédit 2u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 3 | Stock prédit: -2.5u (-35j restants) → prédit 3u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 2 | Stock prédit: -1.7u (-35j restants) → prédit 2u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 4 | Stock prédit: -3.3u (-35j restants) → prédit 4u mais non commandé |
@@ -183,4 +185,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:39.660Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:12.381Z*

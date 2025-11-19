@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.46 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 29.8% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.43 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 30.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 16 | Égalité parfaite |
 | Partial Match (>0u) | 12 | Avec erreur |
 
@@ -138,21 +138,21 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV157] LV Ketchup aux tomates 263 ml bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV158] LV Moutarde 200 ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV160] LV Tartinade Aubergine 190g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV135] LV Tartinade Basilico 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -160,7 +160,7 @@
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -243,4 +243,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:11.088Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:46.312Z*

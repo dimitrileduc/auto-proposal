@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 12.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 29.38 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 26.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,13 +138,13 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact |
-| [PF01012] CARREFOUR VOL AU VENT 400 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact |
+| [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR | 243 | 192 | 51.0 | 26.6% | ✅ partial |
+| [PF01012] CARREFOUR VOL AU VENT 400 GR | 186 | 192 | 6.0 | 3.1% | ✅ partial |
 | [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8 | 108 | 108 | 0.0 | 0.0% | 🎯 exact |
-| [PF3339] CARRE MAYONNAISE ANCIENNE 500ML | 96 | 96 | 0.0 | 0.0% | 🎯 exact |
-| [PF3343] SIMPL CARRE VOL AU VENT 800 GR | 192 | 96 | 96.0 | 100.0% | ✅ partial |
-| [PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8 | 108 | 108 | 0.0 | 0.0% | 🎯 exact |
-| [PF1952] CARRE VIN CIBOULET PET 450 | 98 | 98 | 0.0 | 0.0% | 🎯 exact |
+| [PF3339] CARRE MAYONNAISE ANCIENNE 500ML | 102 | 96 | 6.0 | 6.3% | ✅ partial |
+| [PF3343] SIMPL CARRE VOL AU VENT 800 GR | 186 | 96 | 90.0 | 93.8% | ✅ partial |
+| [PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8 | 144 | 108 | 36.0 | 33.3% | ✅ partial |
+| [PF1952] CARRE VIN CIBOULET PET 450 | 144 | 98 | 46.0 | 46.9% | ✅ partial |
 | [PF3341] CARRE MAYONNAISE BIO 500ML | 110 | 110 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -170,8 +170,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3340] CARRE MAYONNAISE BELGE 720ML | 80 | Stock prédit: 6.5u (0j restants) → prédit 80u mais non commandé |
-| [PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8 | 96 | Stock prédit: 57.2u (8j restants) → prédit 96u mais non commandé |
+| [PF3340] CARRE MAYONNAISE BELGE 720ML | 101 | Stock prédit: 6.5u (0j restants) → prédit 101u mais non commandé |
+| [PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8 | 109 | Stock prédit: 57.2u (8j restants) → prédit 109u mais non commandé |
 | [PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML | 112 | Stock prédit: -14.0u (-3j restants) → prédit 112u mais non commandé |
 | [PF2933] CARRE VIN MIEL MOU PET 450 BIO | 98 | Stock prédit: -322.3u (-52j restants) → prédit 98u mais non commandé |
 | [PF2932] CARRE VIN CIBOULET PET 450 BIO | 98 | Stock prédit: -438.8u (-62j restants) → prédit 98u mais non commandé |
@@ -198,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:18.849Z*
+*Rapport généré automatiquement le 2025-11-18T20:01:53.821Z*

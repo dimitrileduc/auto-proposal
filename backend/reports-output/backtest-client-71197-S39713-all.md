@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 7.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 175.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 6.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 150.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 11 | 4 | 7.0 | 175.0% | ✅ partial |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 10 | 4 | 6.0 | 150.0% | ✅ partial |
 
 
 ---
@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 9 | Stock prédit: -1.2u (-19j restants) → prédit 9u mais non commandé |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 10 | Stock prédit: -1.2u (-19j restants) → prédit 10u mais non commandé |
 
 
 ---
@@ -188,13 +188,13 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 4 | Stock suffisant: 2.4u (77j restants > seuil 0j) |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 4 | Stock suffisant: 2.4u (77j restants > seuil 30j) |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 6 | Stock suffisant: 1.5u (58j restants > seuil 30j) |
 | [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 6 | Stock suffisant: 1.5u (58j restants > seuil 30j) |
 | [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 4 | Stock suffisant: 2.1u (41j restants > seuil 30j) |
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 4 | Stock suffisant: 1.6u (78j restants > seuil 0j) |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 4 | Stock suffisant: 1.6u (78j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:11.681Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:45.636Z*

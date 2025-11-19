@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 12 produits prédits, 4 corrects |
+| **Précision** | 30.8% | 13 produits prédits, 4 corrects |
 | **Rappel** | 50.0% | 8 produits réels, 4 détectés |
-| **F1-Score** | 40.0% | Score équilibré global |
+| **F1-Score** | 38.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 0.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,14 +139,14 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (8)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,7 +172,8 @@
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 0.6u (20j restants) → prédit 2u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: -0.4u (-29j restants) → prédit 2u mais non commandé |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.4u (-29j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
 
 
@@ -206,4 +207,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:42.056Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:15.824Z*

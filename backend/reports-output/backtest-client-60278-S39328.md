@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 1.11 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 28.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAPE** | 27.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,11 +138,11 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 | 5 | 1.0 | 20.0% | ✅ partial |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 5 | 2.0 | 40.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 5 | 3 | 2.0 | 66.7% | ✅ partial |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 3 | 6 | 3.0 | 50.0% | ✅ partial |
 | [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -203,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:43.848Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:16.283Z*

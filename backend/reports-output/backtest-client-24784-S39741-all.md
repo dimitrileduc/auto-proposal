@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 33 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 47 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 1 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (33)
+## False Positives (47)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -170,9 +170,23 @@
 | [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [MF0033] MF Tarti Poivron chilli 250g | 2 | Stock prédit: 0.3u (3j restants) → prédit 2u mais non commandé |
 | [MF0047] MF Mayonnaise 250ml | 2 | Stock prédit: 0.3u (3j restants) → prédit 2u mais non commandé |
+| [DIS0001] Display M&F | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
+| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.4u (17j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: 0.4u (26j restants) → prédit 1u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [LD013] LD Tuscan Organic Spread 180 g | 4 | Stock prédit: 0.3u (2j restants) → prédit 4u mais non commandé |
+| [LD015] LD Onion Spread 180g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.7u (-22j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
@@ -219,4 +233,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:25.253Z*
+*Rapport généré automatiquement le 2025-11-18T20:01:59.785Z*

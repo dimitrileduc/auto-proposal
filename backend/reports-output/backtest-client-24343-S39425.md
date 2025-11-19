@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 29.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 56.2% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 39.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 112.6% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV189] LV Tartinade Houmous Type 380g | 32 | 80 | 48.0 | 60.0% | ✅ partial |
-| [LV217] LV Tartinade Basilic 380g | 32 | 21 | 11.0 | 52.4% | ✅ partial |
+| [LV189] LV Tartinade Houmous Type 380g | 37 | 80 | 43.0 | 53.8% | ✅ partial |
+| [LV217] LV Tartinade Basilic 380g | 57 | 21 | 36.0 | 171.4% | ✅ partial |
 
 
 ---
@@ -166,7 +166,7 @@
 |---------|-------------|--------|
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 4 | Stock prédit: 1.6u (24j restants) → prédit 4u mais non commandé |
 | [LV188] LV Tartinade Aubergine  380g | 32 | Stock prédit: -12.2u (-21j restants) → prédit 32u mais non commandé |
-| [LV187] LV Tartinade Mangue Curry 380g | 48 | Stock prédit: -189.0u (-94j restants) → prédit 48u mais non commandé |
+| [LV187] LV Tartinade Mangue Curry 380g | 44 | Stock prédit: -189.0u (-94j restants) → prédit 44u mais non commandé |
 
 
 ---
@@ -190,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:01.863Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:36.735Z*

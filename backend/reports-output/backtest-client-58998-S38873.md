@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 25.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 37.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 92.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 25 | 75 | 50.0 | 66.7% | ✅ partial |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 33 | 75 | 42.0 | 56.0% | ✅ partial |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 57 | 25 | 32.0 | 128.0% | ✅ partial |
 
 
 ---
@@ -165,7 +165,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 25 | Stock prédit: 17.0u (29j restants) → prédit 25u mais non commandé |
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 38 | Stock prédit: 6.9u (8j restants) → prédit 38u mais non commandé |
+| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 33 | Stock prédit: 6.9u (8j restants) → prédit 33u mais non commandé |
 
 
 ---
@@ -189,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:04.167Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:38.089Z*

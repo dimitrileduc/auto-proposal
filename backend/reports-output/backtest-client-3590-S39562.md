@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 9.67 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 42.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 22.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 47.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,9 +138,9 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact |
-| [PF0075] FILOU CHASSEUR  10 L | 104 | 88 | 16.0 | 18.2% | ✅ partial |
-| [PF3266] JF SAUCE BEARNAISE 3L | 25 | 12 | 13.0 | 108.3% | ✅ partial |
+| [PF0078] FILOU CHASSEUR 5 L | 187 | 160 | 27.0 | 16.9% | ✅ partial |
+| [PF0075] FILOU CHASSEUR  10 L | 117 | 88 | 29.0 | 33.0% | ✅ partial |
+| [PF3266] JF SAUCE BEARNAISE 3L | 23 | 12 | 11.0 | 91.7% | ✅ partial |
 
 
 ---
@@ -165,9 +165,9 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 4 | Stock prédit: 1.9u (5j restants) → prédit 4u mais non commandé |
+| [PF1140] FILOU SAUCE CHASSEUR 850G | 7 | Stock prédit: 1.9u (5j restants) → prédit 7u mais non commandé |
 | [PF3271] JF WASABI MAYONNAISE 925ML | 1 | Stock prédit: 0.6u (29j restants) → prédit 1u mais non commandé |
-| [PF0524] FILOU SAUCE TOMATE 815 GR | 7 | Stock prédit: 1.6u (13j restants) → prédit 7u mais non commandé |
+| [PF0524] FILOU SAUCE TOMATE 815 GR | 6 | Stock prédit: 1.6u (13j restants) → prédit 6u mais non commandé |
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-29j restants) → prédit 1u mais non commandé |
 | [PF3290] JF MAYO BARAKI 925ML | 1 | Stock prédit: -0.4u (-20j restants) → prédit 1u mais non commandé |
 
@@ -199,4 +199,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:34.381Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:07.910Z*

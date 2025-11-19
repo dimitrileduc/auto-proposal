@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.46 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 0.38 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 30.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 8 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -141,7 +141,7 @@
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -176,7 +176,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.3u (18j restants) → prédit 1u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.6u (18j restants) → prédit 1u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock prédit: 0.6u (18j restants) → prédit 2u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: 0.9u (18j restants) → prédit 2u mais non commandé |
 | [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 0.9u (18j restants) → prédit 2u mais non commandé |
@@ -219,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:14.474Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:48.580Z*

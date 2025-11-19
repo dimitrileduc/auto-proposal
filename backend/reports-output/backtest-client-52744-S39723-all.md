@@ -160,22 +160,22 @@
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 6 | Stock prédit: 4.0u (19j restants) → prédit 6u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | Stock prédit: 5.0u (16j restants) → prédit 8u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 4 | Stock prédit: 2.4u (14j restants) → prédit 4u mais non commandé |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 4 | Stock prédit: 2.2u (11j restants) → prédit 4u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 5 | Stock prédit: 2.2u (11j restants) → prédit 5u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | Stock prédit: 3.0u (29j restants) → prédit 3u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 4 | Stock prédit: 3.7u (29j restants) → prédit 4u mais non commandé |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 3 | Stock prédit: 2.0u (20j restants) → prédit 3u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 6 | Stock prédit: 0.2u (0j restants) → prédit 6u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 4 | Stock prédit: 2.0u (9j restants) → prédit 4u mais non commandé |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 8 | Stock prédit: 5.5u (21j restants) → prédit 8u mais non commandé |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 5 | Stock prédit: 0.2u (0j restants) → prédit 5u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 5 | Stock prédit: 2.0u (9j restants) → prédit 5u mais non commandé |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 7 | Stock prédit: 5.5u (21j restants) → prédit 7u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.7u (19j restants) → prédit 1u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 2 | Stock prédit: 1.2u (13j restants) → prédit 2u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 4 | Stock prédit: 1.7u (7j restants) → prédit 4u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 8 | Stock prédit: 4.2u (22j restants) → prédit 8u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | Stock prédit: 0.5u (8j restants) → prédit 2u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 5 | Stock prédit: 1.7u (7j restants) → prédit 5u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 9 | Stock prédit: 4.2u (22j restants) → prédit 9u mais non commandé |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 3 | Stock prédit: 0.5u (8j restants) → prédit 3u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 4 | Stock prédit: -0.9u (-7j restants) → prédit 4u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: -0.8u (-18j restants) → prédit 1u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 5 | Stock prédit: 0.2u (1j restants) → prédit 5u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock prédit: -0.7u (-29j restants) → prédit 2u mais non commandé |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -0.7u (-29j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -205,4 +205,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:51.260Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:24.137Z*

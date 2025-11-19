@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 41.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -140,8 +140,8 @@
 |---------|--------|------|-----------|----------|------|
 | [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
@@ -170,7 +170,7 @@
 |---------|-------------|--------|
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | Stock prédit: 1.1u (15j restants) → prédit 2u mais non commandé |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 3 | Stock prédit: 1.1u (15j restants) → prédit 3u mais non commandé |
 | [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [JOY07] JOY! Organic Fig Jam 370g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: -0.3u (-16j restants) → prédit 1u mais non commandé |
@@ -208,4 +208,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:57.861Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:32.424Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 29.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 23.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3301] DLL MAYONNAISE CITRON 300ML | 130 | 130 | 0.0 | 0.0% | 🎯 exact |
-| [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML | 98 | 98 | 0.0 | 0.0% | 🎯 exact |
+| [PF3301] DLL MAYONNAISE CITRON 300ML | 182 | 130 | 52.0 | 40.0% | ✅ partial |
+| [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML | 105 | 98 | 7.0 | 7.1% | ✅ partial |
 
 
 ---
@@ -164,8 +164,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 89.2u (3j restants) → prédit 130u mais non commandé |
-| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 490 | Stock prédit: -854.6u (-27j restants) → prédit 490u mais non commandé |
+| [PF3300] DLL MAYONNAISE OEUFS 300ML | 217 | Stock prédit: 89.2u (3j restants) → prédit 217u mais non commandé |
+| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 392 | Stock prédit: -854.6u (-27j restants) → prédit 392u mais non commandé |
 
 
 ---
@@ -189,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:26.248Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:00.185Z*

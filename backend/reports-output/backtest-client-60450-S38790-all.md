@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 29.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 9 | 6 | 3.0 | 50.0% | ✅ partial |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 6 | 8 | 2.0 | 25.0% | ✅ partial |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 7 | 8 | 1.0 | 12.5% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 6 | 8 | 2.0 | 25.0% | ✅ partial |
 
 
@@ -166,8 +166,8 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 9 | Stock prédit: -0.6u (-3j restants) → prédit 9u mais non commandé |
-| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 6 | Stock prédit: -0.2u (-1j restants) → prédit 6u mais non commandé |
-| [UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml | 6 | Stock prédit: -1.1u (-12j restants) → prédit 6u mais non commandé |
+| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 7 | Stock prédit: -0.2u (-1j restants) → prédit 7u mais non commandé |
+| [UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml | 7 | Stock prédit: -1.1u (-12j restants) → prédit 7u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 5 | Stock prédit: -2.6u (-32j restants) → prédit 5u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 5 | Stock prédit: -1.0u (-15j restants) → prédit 5u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 4 | Stock prédit: -3.0u (-44j restants) → prédit 4u mais non commandé |
@@ -200,4 +200,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:01.256Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:35.021Z*

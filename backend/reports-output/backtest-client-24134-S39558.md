@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.27 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 77.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.91 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 54.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 10 | Avec erreur |
 
@@ -143,11 +143,11 @@
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [LV149] LV Sauce Aioli Pesto 200ml | 3 | 1 | 2.0 | 200.0% | ✅ partial |
-| [LV160] LV Tartinade Aubergine 190g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
-| [LV161] LV Tartinade Mangue curry 190g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
+| [LV149] LV Sauce Aioli Pesto 200ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV160] LV Tartinade Aubergine 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV161] LV Tartinade Mangue curry 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV146] LV Sauce Aïoli 200 ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV159] LV Tartinade aux Truffes  135g  | 4 | 2 | 2.0 | 100.0% | ✅ partial |
+| [LV159] LV Tartinade aux Truffes  135g  | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV162] LV Tartinade Tomato Basilico 190g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -173,18 +173,18 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV145] LV Sauce Tartare 200 ml  | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
 | [LV147] LV Sauce Cocktail 200 ml | 2 | Stock prédit: 0.4u (16j restants) → prédit 2u mais non commandé |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | Stock prédit: 1.2u (16j restants) → prédit 3u mais non commandé |
 | [LV131] LV Tartinade Potiron 190g | 3 | Stock prédit: 1.5u (26j restants) → prédit 3u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 3 | Stock prédit: 0.2u (2j restants) → prédit 3u mais non commandé |
-| [LV135] LV Tartinade Basilico 190g | 6 | Stock prédit: 1.0u (12j restants) → prédit 6u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 5 | Stock prédit: 1.2u (11j restants) → prédit 5u mais non commandé |
+| [LV135] LV Tartinade Basilico 190g | 5 | Stock prédit: 1.0u (12j restants) → prédit 5u mais non commandé |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 4 | Stock prédit: 1.2u (11j restants) → prédit 4u mais non commandé |
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: -0.5u (-28j restants) → prédit 1u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 1 | Stock prédit: -0.0u (-2j restants) → prédit 1u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | Stock prédit: -0.4u (-7j restants) → prédit 2u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 3 | Stock prédit: -0.4u (-7j restants) → prédit 3u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 3 | Stock prédit: -2.5u (-47j restants) → prédit 3u mais non commandé |
-| [LV330] LV BIO Tartinade Toscana 190g | 4 | Stock prédit: -4.0u (-56j restants) → prédit 4u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 3 | Stock prédit: -4.0u (-56j restants) → prédit 3u mais non commandé |
 
 
 ---
@@ -216,4 +216,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:57.442Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:30.499Z*

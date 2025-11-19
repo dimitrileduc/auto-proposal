@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 2 | Stock prédit: -3.1u (-52j restants) → prédit 2u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -3.1u (-52j restants) → prédit 2u mais non commandé |
 
@@ -182,4 +183,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:29.529Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:03.126Z*

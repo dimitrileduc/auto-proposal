@@ -188,7 +188,7 @@
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: 0.2u (16j restants) → prédit 1u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.2u (16j restants) → prédit 1u mais non commandé |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: 0.2u (16j restants) → prédit 2u mais non commandé |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | Stock prédit: 0.2u (16j restants) → prédit 1u mais non commandé |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: -0.4u (-26j restants) → prédit 1u mais non commandé |
 
 
@@ -229,4 +229,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:43.083Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:17.053Z*

@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 33.3% | 27 produits prédits, 9 corrects |
+| **Précision** | 32.1% | 28 produits prédits, 9 corrects |
 | **Rappel** | 64.3% | 14 produits réels, 9 détectés |
-| **F1-Score** | 43.9% | Score équilibré global |
+| **F1-Score** | 42.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.56 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 55.6% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 4 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
@@ -143,15 +143,15 @@
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
 ---
 
-## False Positives (18)
+## False Positives (19)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -173,12 +173,13 @@
 |---------|-------------|--------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: 1.0u (27j restants) → prédit 2u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: 0.4u (8j restants) → prédit 2u mais non commandé |
+| [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: 0.6u (13j restants) → prédit 2u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 0.8u (20j restants) → prédit 2u mais non commandé |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: 0.7u (15j restants) → prédit 2u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.5u (10j restants) → prédit 2u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock prédit: 0.2u (8j restants) → prédit 2u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: -1.3u (-27j restants) → prédit 2u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
@@ -186,7 +187,7 @@
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
 | [KLAK01] KLAK Maté 330ml | 1 | Stock prédit: -1.4u (-57j restants) → prédit 1u mais non commandé |
 | [SOWA03] SOWA ginger beer ardent 250ml | 1 | Stock prédit: -0.0u (-3j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.7u (-47j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: -0.7u (-47j restants) → prédit 2u mais non commandé |
 | [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.2u (-16j restants) → prédit 1u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: -3.3u (-70j restants) → prédit 2u mais non commandé |
 
@@ -222,4 +223,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:24.675Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:58.608Z*

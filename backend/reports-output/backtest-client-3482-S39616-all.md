@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 62.5% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 5.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 68.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact |
-| [PF0077] FILOU PROVENCALE 5 L | 18 | 8 | 10.0 | 125.0% | ✅ partial |
+| [PF0077] FILOU PROVENCALE 5 L | 19 | 8 | 11.0 | 137.5% | ✅ partial |
 
 
 ---
@@ -182,4 +182,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:11.258Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:45.535Z*

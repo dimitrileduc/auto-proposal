@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
+| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
 | [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
@@ -185,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:42.780Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:16.708Z*

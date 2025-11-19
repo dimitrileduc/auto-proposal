@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 88.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 111.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 96.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF2036] ITM BOULETTES TOMATE 800 GR | 64 | 128 | 64.0 | 50.0% | ✅ partial |
-| [PF2996] ITM BO VIN CIBOULET PET 450 | 224 | 112 | 112.0 | 100.0% | ✅ partial |
+| [PF2036] ITM BOULETTES TOMATE 800 GR | 85 | 128 | 43.0 | 33.6% | ✅ partial |
+| [PF2996] ITM BO VIN CIBOULET PET 450 | 291 | 112 | 179.0 | 159.8% | ✅ partial |
 
 
 ---
@@ -164,7 +164,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF2997] ITM BO VIN YOGORETTE PET 450 | 112 | Stock prédit: 75.7u (8j restants) → prédit 112u mais non commandé |
+| [PF2997] ITM BO VIN YOGORETTE PET 450 | 157 | Stock prédit: 75.7u (8j restants) → prédit 157u mais non commandé |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:35.983Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:09.910Z*

@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 11.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 13.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 29.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0075] FILOU CHASSEUR  10 L | 55 | 44 | 11.0 | 25.0% | ✅ partial |
+| [PF0075] FILOU CHASSEUR  10 L | 57 | 44 | 13.0 | 29.5% | ✅ partial |
 
 
 ---
@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 18 | Stock prédit: -0.8u (-2j restants) → prédit 18u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 17 | Stock prédit: -0.8u (-2j restants) → prédit 17u mais non commandé |
 | [PF0097] FILOU MOUTARDE 5 KG | 2 | Stock prédit: -0.4u (-32j restants) → prédit 2u mais non commandé |
 
 
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:18.652Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:52.136Z*

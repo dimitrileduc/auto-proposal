@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 16 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,20 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [DIS0001] Display M&F | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
+| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.4u (17j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [LD013] LD Tuscan Organic Spread 180 g | 4 | Stock prédit: 0.3u (2j restants) → prédit 4u mais non commandé |
+| [LD015] LD Onion Spread 180g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
 | [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: -1.2u (-54j restants) → prédit 1u mais non commandé |
 
@@ -182,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:25.252Z*
+*Rapport généré automatiquement le 2025-11-18T20:01:59.784Z*

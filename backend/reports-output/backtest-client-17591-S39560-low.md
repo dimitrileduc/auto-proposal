@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
+| **Précision** | 10.0% | 10 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 18.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -143,7 +143,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,6 +163,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | Stock prédit: 0.9u (22j restants) → prédit 2u mais non commandé |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
+| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | Stock prédit: 0.4u (22j restants) → prédit 1u mais non commandé |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | Stock prédit: -0.6u (-27j restants) → prédit 1u mais non commandé |
 
 
@@ -187,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:11.090Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:46.314Z*

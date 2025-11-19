@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 17.20 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 29.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 13.30 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 23.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,16 +138,16 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 93 | 93 | 0.0 | 0.0% | 🎯 exact |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 124 | 217 | 93.0 | 42.9% | ✅ partial |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 93 | 93 | 0.0 | 0.0% | 🎯 exact |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 95 | 93 | 2.0 | 2.2% | ✅ partial |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 163 | 217 | 54.0 | 24.9% | ✅ partial |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 110 | 93 | 17.0 | 18.3% | ✅ partial |
 | [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | 40 | 0.0 | 0.0% | 🎯 exact |
 | [PF2973] LD FR TARTINADE BIO ANANAS 200 | 31 | 31 | 0.0 | 0.0% | 🎯 exact |
 | [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 62 | 62 | 0.0 | 0.0% | 🎯 exact |
-| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 47 | 31 | 16.0 | 51.6% | ✅ partial |
-| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 78 | 31 | 47.0 | 151.6% | ✅ partial |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 47 | 31 | 16.0 | 51.6% | ✅ partial |
+| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 50 | 31 | 19.0 | 61.3% | ✅ partial |
+| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 62 | 31 | 31.0 | 100.0% | ✅ partial |
+| [PF2937] LD FR TARTINADE BIO POIS 200 | 41 | 31 | 10.0 | 32.3% | ✅ partial |
 
 
 ---
@@ -172,14 +172,14 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 434 | Stock prédit: 75.8u (5j restants) → prédit 434u mais non commandé |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 376 | Stock prédit: 75.8u (5j restants) → prédit 376u mais non commandé |
 | [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 62 | Stock prédit: -6.9u (-2j restants) → prédit 62u mais non commandé |
-| [PF3361] LD FR TARTINADE BIO OIGNON 180G | 62 | Stock prédit: -9.5u (-7j restants) → prédit 62u mais non commandé |
+| [PF3361] LD FR TARTINADE BIO OIGNON 180G | 57 | Stock prédit: -9.5u (-7j restants) → prédit 57u mais non commandé |
 | [PF1690] LD BBQ BIO 300G | 25 | Stock prédit: -23.1u (-36j restants) → prédit 25u mais non commandé |
 | [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 25 | Stock prédit: -23.1u (-36j restants) → prédit 25u mais non commandé |
-| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 31 | Stock prédit: -68.4u (-51j restants) → prédit 31u mais non commandé |
+| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 52 | Stock prédit: -68.4u (-51j restants) → prédit 52u mais non commandé |
 | [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML | 40 | Stock prédit: -17.1u (-28j restants) → prédit 40u mais non commandé |
-| [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 47 | Stock prédit: -4.4u (-6j restants) → prédit 47u mais non commandé |
+| [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 52 | Stock prédit: -4.4u (-6j restants) → prédit 52u mais non commandé |
 
 
 ---
@@ -203,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:10.453Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:44.540Z*

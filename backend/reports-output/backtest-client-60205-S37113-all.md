@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.17 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 45.9% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 3.83 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 34.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 6 | Avec erreur |
 
@@ -138,12 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 5 | 10 | 5.0 | 50.0% | ✅ partial |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | 14 | 6.0 | 42.9% | ✅ partial |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 5 | 8 | 3.0 | 37.5% | ✅ partial |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 11 | 20 | 9.0 | 45.0% | ✅ partial |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 5 | 8 | 3.0 | 37.5% | ✅ partial |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 3 | 8 | 5.0 | 62.5% | ✅ partial |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 7 | 10 | 3.0 | 30.0% | ✅ partial |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 7 | 14 | 7.0 | 50.0% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 6 | 8 | 2.0 | 25.0% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 15 | 20 | 5.0 | 25.0% | ✅ partial |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 6 | 8 | 2.0 | 25.0% | ✅ partial |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 4 | 8 | 4.0 | 50.0% | ✅ partial |
 
 
 ---
@@ -169,7 +169,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [RISH04] RISH kombucha BIO - smash basil 330ml | 5 | Stock prédit: -3.6u (-28j restants) → prédit 5u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 3 | Stock prédit: -4.9u (-48j restants) → prédit 3u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | Stock prédit: -4.9u (-48j restants) → prédit 2u mais non commandé |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | Stock prédit: -3.2u (-41j restants) → prédit 3u mais non commandé |
 | [RISH01] RISH kombucha BIO - original 330ml | 3 | Stock prédit: -4.3u (-46j restants) → prédit 3u mais non commandé |
 | [RISH05] RISH kombucha BIO - rose 750ml | 4 | Stock prédit: -6.4u (-41j restants) → prédit 4u mais non commandé |
@@ -198,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:15.572Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:48.082Z*

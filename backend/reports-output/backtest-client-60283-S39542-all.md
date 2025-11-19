@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 28.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 99.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 26.29 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 81.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 7 | Avec erreur |
 
@@ -138,13 +138,13 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 19 | 60 | 41.0 | 68.3% | ✅ partial |
-| [LV161] LV Tartinade Mangue curry 190g | 15 | 25 | 10.0 | 40.0% | ✅ partial |
-| [LV162] LV Tartinade Tomato Basilico 190g | 25 | 7 | 18.0 | 257.1% | ✅ partial |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 10 | 40 | 30.0 | 75.0% | ✅ partial |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 10 | 60 | 50.0 | 83.3% | ✅ partial |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 18 | 45 | 27.0 | 60.0% | ✅ partial |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 38 | 18 | 20.0 | 111.1% | ✅ partial |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 18 | 60 | 42.0 | 70.0% | ✅ partial |
+| [LV161] LV Tartinade Mangue curry 190g | 12 | 25 | 13.0 | 52.0% | ✅ partial |
+| [LV162] LV Tartinade Tomato Basilico 190g | 18 | 7 | 11.0 | 157.1% | ✅ partial |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 13 | 40 | 27.0 | 67.5% | ✅ partial |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 12 | 60 | 48.0 | 80.0% | ✅ partial |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 17 | 45 | 28.0 | 62.2% | ✅ partial |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 33 | 18 | 15.0 | 83.3% | ✅ partial |
 
 
 ---
@@ -171,7 +171,7 @@
 |---------|-------------|--------|
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 126 | Stock prédit: -39.2u (-13j restants) → prédit 126u mais non commandé |
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 21 | Stock prédit: -18.5u (-27j restants) → prédit 21u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 53 | Stock prédit: -5.8u (-5j restants) → prédit 53u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 56 | Stock prédit: -5.8u (-5j restants) → prédit 56u mais non commandé |
 
 
 ---
@@ -202,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:43.868Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:17.547Z*

@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5370.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 127.6% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 5445.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 130.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PI2911] PI SAUCE BURGER BA PO | 12600 | 17400 | 4800.0 | 27.6% | ✅ partial |
-| [PI2910] PI SAUCE ALGERIENNE BA PO | 8550 | 2610 | 5940.0 | 227.6% | ✅ partial |
+| [PI2910] PI SAUCE ALGERIENNE BA PO | 8700 | 2610 | 6090.0 | 233.3% | ✅ partial |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:02.053Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:35.849Z*

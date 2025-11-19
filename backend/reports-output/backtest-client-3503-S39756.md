@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 18.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 13.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0075] FILOU CHASSEUR  10 L | 132 | 132 | 0.0 | 0.0% | 🎯 exact |
+| [PF0075] FILOU CHASSEUR  10 L | 114 | 132 | 18.0 | 13.6% | ✅ partial |
 
 
 ---
@@ -181,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:45.448Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:19.935Z*

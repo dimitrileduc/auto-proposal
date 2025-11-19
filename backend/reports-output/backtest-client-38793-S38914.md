@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 43.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 4 | Égalité parfaite |
 | Partial Match (>0u) | 4 | Avec erreur |
 
@@ -143,8 +143,8 @@
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
@@ -177,13 +177,13 @@
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.5u (10j restants) → prédit 2u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock prédit: 0.2u (8j restants) → prédit 2u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
 | [SOWA03] SOWA ginger beer ardent 250ml | 1 | Stock prédit: -0.0u (-3j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.7u (-47j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: -0.7u (-47j restants) → prédit 2u mais non commandé |
 | [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: -0.2u (-16j restants) → prédit 1u mais non commandé |
 
 
@@ -214,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:24.672Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:58.605Z*

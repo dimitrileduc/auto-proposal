@@ -190,7 +190,7 @@
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: -0.6u (-33j restants) → prédit 1u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | Stock prédit: -0.4u (-24j restants) → prédit 1u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: -1.0u (-27j restants) → prédit 2u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.3u (-13j restants) → prédit 1u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: -0.3u (-13j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -222,4 +222,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:37.690Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:10.012Z*

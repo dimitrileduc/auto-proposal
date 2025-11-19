@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 8.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 10.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 52.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,10 +138,10 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | 16 | 16.0 | 100.0% | ✅ partial |
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 48 | 16.0 | 33.3% | ✅ partial |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 34 | 16 | 18.0 | 112.5% | ✅ partial |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 38 | 48 | 10.0 | 20.8% | ✅ partial |
 | [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
-| [MF0062] ​MF Tarti Betterave rouge | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
+| [MF0062] ​MF Tarti Betterave rouge | 28 | 16 | 12.0 | 75.0% | ✅ partial |
 
 
 ---
@@ -191,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:08.477Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:40.945Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.42 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 31.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 11 | Égalité parfaite |
-| Partial Match (>0u) | 8 | Avec erreur |
+| **MAE** | 0.47 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 32.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 10 | Égalité parfaite |
+| Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -149,7 +149,7 @@
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF029] JF VOL AU VENT BOCAL 400G | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
-| [JF032] JF SAUCE LAPIN 380GX6 | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
+| [JF032] JF SAUCE LAPIN 380GX6 | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [LD011] LD Organic Kids Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -188,9 +188,9 @@
 | [LD013] LD Tuscan Organic Spread 180 g | 2 | Stock prédit: 0.4u (7j restants) → prédit 2u mais non commandé |
 | [LD010] LD Organic Truffle Spread 135 g | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
 | [LD012] LD Organic Samphire Spread 135 g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [LD014] LD Organic Avocado Spread 180 g | 1 | Stock prédit: 0.9u (27j restants) → prédit 1u mais non commandé |
+| [LD014] LD Organic Avocado Spread 180 g | 2 | Stock prédit: 0.9u (27j restants) → prédit 2u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-10j restants) → prédit 1u mais non commandé |
@@ -226,4 +226,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:30.085Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:04.359Z*

@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 52.6% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.94 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.9% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 6 | Égalité parfaite |
 | Partial Match (>0u) | 11 | Avec erreur |
 
@@ -139,16 +139,16 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [LV159] LV Tartinade aux Truffes  135g  | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [LV160] LV Tartinade Aubergine 190g | 8 | 6 | 2.0 | 33.3% | ✅ partial |
+| [LV160] LV Tartinade Aubergine 190g | 7 | 6 | 1.0 | 16.7% | ✅ partial |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV161] LV Tartinade Mangue curry 190g | 5 | 4 | 1.0 | 25.0% | ✅ partial |
-| [LV132] LV Tartinade Houmous type 190g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [LV132] LV Tartinade Houmous type 190g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 5 | 2 | 3.0 | 150.0% | ✅ partial |
 | [LV133] LV Tartinade Ananas Coco 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV135] LV Tartinade Basilico 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 6 | 5 | 1.0 | 20.0% | ✅ partial |
-| [LV330] LV BIO Tartinade Toscana 190g | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
+| [LV330] LV BIO Tartinade Toscana 190g | 5 | 6 | 1.0 | 16.7% | ✅ partial |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 4 | 1 | 3.0 | 300.0% | ✅ partial |
@@ -204,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:20.074Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:55.300Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 6.75 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 21.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 5.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 19.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,10 +138,10 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0024] MF KETCHUP 250g | 16 | 32 | 16.0 | 50.0% | ✅ partial |
-| [MF0047] MF Mayonnaise 250ml | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
-| [MF0053] MF Maïs 500g | 40 | 48 | 8.0 | 16.7% | ✅ partial |
-| [MF0021] MF Sauce BBQ 250ml | 13 | 16 | 3.0 | 18.8% | ✅ partial |
+| [MF0024] MF KETCHUP 250g | 23 | 32 | 9.0 | 28.1% | ✅ partial |
+| [MF0047] MF Mayonnaise 250ml | 20 | 16 | 4.0 | 25.0% | ✅ partial |
+| [MF0053] MF Maïs 500g | 42 | 48 | 6.0 | 12.5% | ✅ partial |
+| [MF0021] MF Sauce BBQ 250ml | 14 | 16 | 2.0 | 12.5% | ✅ partial |
 
 
 ---
@@ -184,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:28.257Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:00.787Z*

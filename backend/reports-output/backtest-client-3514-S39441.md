@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 3.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 3.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 9.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 26 | 28 | 2.0 | 7.1% | ✅ partial |
+| [PF0078] FILOU CHASSEUR 5 L | 77 | 80 | 3.0 | 3.8% | ✅ partial |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 24 | 28 | 4.0 | 14.3% | ✅ partial |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:57.168Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:31.076Z*

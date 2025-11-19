@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 5.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 295.0% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 249.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 4 | Avec erreur |
 
@@ -140,8 +140,8 @@
 |---------|--------|------|-----------|----------|------|
 | [REB05] REB chips bio - sel de mer 35g | 7 | 10 | 3.0 | 30.0% | ✅ partial |
 | [REB06] REB chips bio - paprika fumé 35g | 7 | 1 | 6.0 | 600.0% | ✅ partial |
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 6 | 12 | 6.0 | 50.0% | ✅ partial |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 6 | 1 | 5.0 | 500.0% | ✅ partial |
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 4 | 12 | 8.0 | 66.7% | ✅ partial |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 4 | 1 | 3.0 | 300.0% | ✅ partial |
 
 
 ---
@@ -167,8 +167,8 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 28 | Stock prédit: -0.4u (0j restants) → prédit 28u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 25 | Stock prédit: -3.5u (-7j restants) → prédit 25u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 20 | Stock prédit: -8.3u (-30j restants) → prédit 20u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 27 | Stock prédit: -3.5u (-7j restants) → prédit 27u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 22 | Stock prédit: -8.3u (-30j restants) → prédit 22u mais non commandé |
 
 
 ---
@@ -192,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:47.045Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:20.879Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.11 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 5.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 8 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 22.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -143,8 +143,8 @@
 | [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [RIT01] RITCHIE Orange - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LV136] LV Tartinade Betterave 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LV136] LV Tartinade Betterave 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [LV330] LV BIO Tartinade Toscana 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV135] LV Tartinade Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
@@ -180,7 +180,7 @@
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: 0.3u (9j restants) → prédit 1u mais non commandé |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
-| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 2 | Stock prédit: 0.4u (21j restants) → prédit 2u mais non commandé |
+| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | Stock prédit: 0.4u (21j restants) → prédit 1u mais non commandé |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | Stock prédit: -0.5u (-14j restants) → prédit 1u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: 0.2u (11j restants) → prédit 1u mais non commandé |
@@ -194,7 +194,7 @@
 | [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
 | [LB003] LB Festive (4,5%) 33CL | 1 | Stock prédit: -1.9u (-53j restants) → prédit 1u mais non commandé |
 | [LB004] LB Blonde (6,5%) 33CL | 1 | Stock prédit: -1.9u (-53j restants) → prédit 1u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: 0.3u (14j restants) → prédit 2u mais non commandé |
 | [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.8u (-36j restants) → prédit 1u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -0.7u (-21j restants) → prédit 2u mais non commandé |
 | [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: -1.9u (-53j restants) → prédit 1u mais non commandé |
@@ -236,4 +236,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:29.111Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:02.690Z*

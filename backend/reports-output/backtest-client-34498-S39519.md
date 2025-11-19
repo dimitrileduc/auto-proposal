@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 3.21 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 189.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 13 | Avec erreur |
+| **MAE** | 2.64 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 161.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 12 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,18 +139,18 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 7 | 4 | 3.0 | 75.0% | ✅ partial |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 7 | 4 | 3.0 | 75.0% | ✅ partial |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 5 | 4 | 1.0 | 25.0% | ✅ partial |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 6 | 4 | 2.0 | 50.0% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 8 | 5 | 3.0 | 60.0% | ✅ partial |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 7 | 5 | 2.0 | 40.0% | ✅ partial |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 5 | 2 | 3.0 | 150.0% | ✅ partial |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 6 | 1 | 5.0 | 500.0% | ✅ partial |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 7 | 2 | 5.0 | 250.0% | ✅ partial |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 7 | 4 | 3.0 | 75.0% | ✅ partial |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 6 | 2 | 4.0 | 200.0% | ✅ partial |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 5 | 1 | 4.0 | 400.0% | ✅ partial |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 6 | 2 | 4.0 | 200.0% | ✅ partial |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 6 | 4 | 2.0 | 50.0% | ✅ partial |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 5 | 2 | 3.0 | 150.0% | ✅ partial |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 5 | 1 | 4.0 | 400.0% | ✅ partial |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 8 | 1 | 7.0 | 700.0% | ✅ partial |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 7 | 1 | 6.0 | 600.0% | ✅ partial |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 
 
@@ -194,4 +194,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:33.874Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:07.800Z*

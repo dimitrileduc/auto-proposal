@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 7 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (5)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: 0.7u (21j restants) → prédit 1u mais non commandé |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | Stock prédit: 0.7u (21j restants) → prédit 1u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
@@ -185,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:50.064Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:23.946Z*

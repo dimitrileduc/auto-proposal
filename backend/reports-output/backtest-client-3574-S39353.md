@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 69.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 39.2% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 75.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 42.6% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0164] FILOU MOUTARDE  10 KG | 107 | 176 | 69.0 | 39.2% | ✅ partial |
+| [PF0164] FILOU MOUTARDE  10 KG | 101 | 176 | 75.0 | 42.6% | ✅ partial |
 
 
 ---
@@ -181,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:16.248Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:48.476Z*

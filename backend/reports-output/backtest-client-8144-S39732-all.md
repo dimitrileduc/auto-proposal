@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 3.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 7.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3251] JEFKE CHIVE VINAIGRETTE 5L | 40 | 40 | 0.0 | 0.0% | 🎯 exact |
+| [PF3251] JEFKE CHIVE VINAIGRETTE 5L | 37 | 40 | 3.0 | 7.5% | ✅ partial |
 
 
 ---
@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | Stock prédit: 152.9u (21j restants) → prédit 160u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 144 | Stock prédit: 152.9u (21j restants) → prédit 144u mais non commandé |
 
 
 ---
@@ -187,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:37.781Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:11.510Z*

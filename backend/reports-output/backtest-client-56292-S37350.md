@@ -173,7 +173,7 @@
 |---------|-------------|--------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: -0.9u (-10j restants) → prédit 2u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: -0.4u (-5j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: -0.9u (-9j restants) → prédit 2u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: -0.9u (-9j restants) → prédit 1u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -1.2u (-11j restants) → prédit 2u mais non commandé |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: -0.6u (-8j restants) → prédit 2u mais non commandé |
@@ -187,7 +187,7 @@
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
 | [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.6u (9j restants) → prédit 1u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.7u (10j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | Stock prédit: 0.7u (10j restants) → prédit 2u mais non commandé |
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: 0.6u (9j restants) → prédit 1u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: 0.6u (9j restants) → prédit 1u mais non commandé |
 | [LEA05] LEAMO organic lemon lemonade 330 ml | 1 | Stock prédit: 0.3u (17j restants) → prédit 1u mais non commandé |
@@ -225,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:35.846Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:09.285Z*

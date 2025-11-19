@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 74.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 38.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 86.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 45.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 265 | 191 | 74.0 | 38.7% | ✅ partial |
+| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 277 | 191 | 86.0 | 45.0% | ✅ partial |
 
 
 ---
@@ -181,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:00.251Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:36.075Z*

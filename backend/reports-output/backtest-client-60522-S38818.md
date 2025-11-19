@@ -166,7 +166,7 @@
 |---------|-------------|--------|
 | [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 2 | Stock prédit: 0.5u (12j restants) → prédit 2u mais non commandé |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | Stock prédit: -0.3u (-6j restants) → prédit 2u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 3 | Stock prédit: -0.3u (-6j restants) → prédit 3u mais non commandé |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 3 | Stock prédit: -2.1u (-22j restants) → prédit 3u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
 
@@ -192,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:50.053Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:22.381Z*

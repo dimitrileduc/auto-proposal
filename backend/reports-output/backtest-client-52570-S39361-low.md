@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,7 +152,14 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
+
 
 ---
 
@@ -175,4 +182,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:41.657Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:15.343Z*

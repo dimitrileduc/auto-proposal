@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.69 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 65.4% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 61.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 5 | Égalité parfaite |
 | Partial Match (>0u) | 8 | Avec erreur |
 
@@ -143,14 +143,14 @@
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -177,15 +177,15 @@
 |---------|-------------|--------|
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: 0.5u (13j restants) → prédit 1u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | Stock prédit: 1.4u (20j restants) → prédit 2u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock prédit: 0.5u (13j restants) → prédit 2u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 3 | Stock prédit: 1.4u (20j restants) → prédit 3u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: 0.5u (11j restants) → prédit 2u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.1u (8j restants) → prédit 1u mais non commandé |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: -0.8u (-27j restants) → prédit 2u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: -0.8u (-27j restants) → prédit 2u mais non commandé |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: -1.1u (-51j restants) → prédit 2u mais non commandé |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | Stock prédit: -1.1u (-51j restants) → prédit 1u mais non commandé |
 | [LD013] LD Tuscan Organic Spread 180 g | 2 | Stock prédit: -3.6u (-62j restants) → prédit 2u mais non commandé |
 | [LD015] LD Onion Spread 180g | 1 | Stock prédit: -1.8u (-62j restants) → prédit 1u mais non commandé |
 | [LD014] LD Organic Avocado Spread 180 g | 1 | Stock prédit: -1.8u (-62j restants) → prédit 1u mais non commandé |
@@ -222,4 +222,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:25.077Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:57.698Z*

@@ -161,7 +161,7 @@
 | [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: 1.2u (22j restants) → prédit 2u mais non commandé |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 3 | Stock prédit: -0.2u (-2j restants) → prédit 3u mais non commandé |
 | [RIT07] RITCHIE Orange - canette 330ml | 3 | Stock prédit: 1.1u (28j restants) → prédit 3u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 3 | Stock prédit: -0.2u (-7j restants) → prédit 3u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 2 | Stock prédit: -0.2u (-7j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -185,4 +185,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:39.658Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:12.380Z*

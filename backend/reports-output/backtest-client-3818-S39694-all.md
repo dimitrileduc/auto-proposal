@@ -164,8 +164,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | Stock prédit: -5.0u (-2j restants) → prédit 32u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 64 | Stock prédit: -8.2u (-6j restants) → prédit 64u mais non commandé |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 46 | Stock prédit: -5.0u (-2j restants) → prédit 46u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 45 | Stock prédit: -8.2u (-6j restants) → prédit 45u mais non commandé |
 
 
 ---
@@ -196,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:30.547Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:04.338Z*

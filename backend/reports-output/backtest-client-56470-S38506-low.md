@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 10.0% | 10 produits prédits, 1 corrects |
-| **Rappel** | 20.0% | 5 produits réels, 1 détectés |
-| **F1-Score** | 13.3% | Score équilibré global |
+| **Précision** | 25.0% | 20 produits prédits, 5 corrects |
+| **Rappel** | 100.0% | 5 produits réels, 5 détectés |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 40.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (1)
+## True Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -138,12 +138,16 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LV132] LV Tartinade Houmous type 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
 
-## False Positives (9)
+## False Positives (15)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -163,6 +167,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [FO001] FO CITRONNADE BIO 33cl | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.2u (8j restants) → prédit 1u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 2 | Stock prédit: -1.6u (-34j restants) → prédit 2u mais non commandé |
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | Stock prédit: -1.6u (-34j restants) → prédit 2u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: -1.6u (-34j restants) → prédit 2u mais non commandé |
@@ -176,7 +186,7 @@
 
 ---
 
-## False Negatives (4)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -191,17 +201,8 @@
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | Stock suffisant: 0.2u (8j restants > seuil 0j) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:40.475Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:15.490Z*

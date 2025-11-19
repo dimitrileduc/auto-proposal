@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1000.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 35.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1180.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 42.1% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PI2790] PI MOUTARDE BLANCHE | 1800 | 2800 | 1000.0 | 35.7% | ✅ partial |
+| [PI2790] PI MOUTARDE BLANCHE | 1620 | 2800 | 1180.0 | 42.1% | ✅ partial |
 
 
 ---
@@ -163,8 +163,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3378] MOUTARDE BLANCHE VRAC | 1800 | Stock prédit: -1776.9u (-33j restants) → prédit 1800u mais non commandé |
-| [PF0162] MOUTARDE JAUNE VRAC | 1800 | Stock prédit: -3100.0u (-57j restants) → prédit 1800u mais non commandé |
+| [PF3378] MOUTARDE BLANCHE VRAC | 1260 | Stock prédit: -1776.9u (-33j restants) → prédit 1260u mais non commandé |
+| [PF0162] MOUTARDE JAUNE VRAC | 2100 | Stock prédit: -3100.0u (-57j restants) → prédit 2100u mais non commandé |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:55.769Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:28.676Z*

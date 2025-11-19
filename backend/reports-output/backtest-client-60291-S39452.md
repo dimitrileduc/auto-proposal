@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.20 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 105.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1.10 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 3 | Égalité parfaite |
 | Partial Match (>0u) | 7 | Avec erreur |
 
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [RIT05] RITCHIE Cola - verre 275ml | 4 | 2 | 2.0 | 100.0% | ✅ partial |
+| [RIT05] RITCHIE Cola - verre 275ml | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [RIT01] RITCHIE Orange - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [fsv17] Mélange de noix bio vrac 2,75kg | 5 | 1 | 4.0 | 400.0% | ✅ partial |
@@ -174,23 +174,23 @@
 |---------|-------------|--------|
 | [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: 0.4u (3j restants) → prédit 1u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock prédit: 2.1u (13j restants) → prédit 3u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 1.4u (13j restants) → prédit 2u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | Stock prédit: 1.4u (13j restants) → prédit 3u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.5u (5j restants) → prédit 2u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 0.5u (5j restants) → prédit 2u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 3 | Stock prédit: 0.8u (8j restants) → prédit 3u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.6u (19j restants) → prédit 1u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: 0.8u (8j restants) → prédit 2u mais non commandé |
 | [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: 0.6u (16j restants) → prédit 1u mais non commandé |
-| [fsv08] Banana chips bio vrac 1,6kg | 4 | Stock prédit: 0.4u (2j restants) → prédit 4u mais non commandé |
+| [fsv08] Banana chips bio vrac 1,6kg | 3 | Stock prédit: 0.4u (2j restants) → prédit 3u mais non commandé |
 | [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | Stock prédit: 2.9u (18j restants) → prédit 5u mais non commandé |
 | [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: 0.9u (23j restants) → prédit 2u mais non commandé |
-| [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
-| [RIT07] RITCHIE Orange - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
+| [RIT09] RITCHIE Cola - canette 330ml | 1 | Stock prédit: -0.8u (-18j restants) → prédit 1u mais non commandé |
+| [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | Stock prédit: -0.8u (-18j restants) → prédit 1u mais non commandé |
+| [RIT07] RITCHIE Orange - canette 330ml | 1 | Stock prédit: -0.8u (-18j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.6u (-16j restants) → prédit 1u mais non commandé |
 | [OCC05] OCCHIOLINO premium arancello 500ml | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
 | [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.5u (28j restants) → prédit 1u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-30j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 2 | Stock prédit: 0.5u (28j restants) → prédit 2u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | Stock prédit: -1.0u (-30j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -220,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:34.987Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:08.515Z*

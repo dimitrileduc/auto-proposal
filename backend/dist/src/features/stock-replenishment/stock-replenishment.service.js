@@ -1,5 +1,5 @@
 import { getProductOrderHistory } from "./order-history/order-history.service";
-import { calculateDailyConsumption } from "./utils/consumption.utils";
+import { calculateDailyConsumption, calculateClientReorderWindow } from "./utils/consumption.utils";
 import { predictStockStatus } from "./utils/prediction.utils";
 import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
@@ -19,21 +19,43 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
     // Utiliser les valeurs de config ou les valeurs par défaut
     const daysOfHistory = config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays;
     const analysisEndDate = config?.analysisEndDate ?? getTodayAsDateString();
-    // 1. Récupération de l'historique
-    const orderHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
+    // 1. Récupération de l'historique récent (180j)
+    const recentHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
+    // 2. Récupération de l'historique complet (730j) pour fenêtre adaptative
+    const fullHistory = await getProductOrderHistory(clientId, 730, analysisEndDate);
+    // 3. Calculer la fenêtre moyenne de recommande du client
+    const clientReorderWindow = calculateClientReorderWindow(recentHistory.products);
+    if (clientReorderWindow) {
+        console.log(`\n📏 Fenêtre moyenne de recommande client: ${clientReorderWindow.toFixed(1)}j`);
+    }
+    else {
+        console.log(`\n📏 Fenêtre client: N/A (pas assez de produits réguliers)`);
+    }
+    console.log(`\n🔍 Analyse de ${recentHistory.products.length} produits pour client ${clientId}...`);
     const analyzedProducts = []; // Produits à commander uniquement
     const allProducts = []; // TOUS les produits analysés (pour backtest)
-    // 2. Pour chaque produit, analyser le risque de rupture
-    console.log(`\n🔍 Analyse de ${orderHistory.products.length} produits pour client ${clientId}...`);
-    for (const product of orderHistory.products) {
+    // 3. Pour chaque produit récent, analyser le risque de rupture
+    for (const product of recentHistory.products) {
         console.log(`\n  📦 Produit: ${product.product_name} (ID: ${product.product_id})`);
         // Skip produits de type "service" (transport, frais, etc.)
         if (product.product_type === "service") {
             console.log(`     ❌ SKIP: Produit de type service`);
             continue;
         }
+        // Fenêtre adaptative : Si 1 commande dans 180j, check historique 730j
+        let ordersToUse = product.orders;
+        let windowDays = daysOfHistory;
+        if (product.orders.length === 1) {
+            // Lookup dans fullHistory
+            const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
+            if (fullProduct && fullProduct.orders.length > 1) {
+                ordersToUse = fullProduct.orders;
+                windowDays = 730;
+                console.log(`     ℹ️ 1 commande dans 180j, élargissement → ${fullProduct.orders.length} commandes sur 730j`);
+            }
+        }
         // Calcul consommation moyenne
-        const consumptionPerDay = calculateDailyConsumption(product.orders, daysOfHistory, new Date(analysisEndDate));
+        const consumptionPerDay = calculateDailyConsumption(ordersToUse, windowDays, new Date(analysisEndDate), clientReorderWindow ?? undefined);
         console.log(`     Consommation/jour: ${consumptionPerDay.toFixed(4)}`);
         // Skip si pas de consommation
         if (consumptionPerDay <= 0) {
@@ -50,7 +72,7 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
         const replenishmentThresholdDays = targetCoverage + leadTime;
         console.log(`     Seuil réappro: ${replenishmentThresholdDays}j (couverture ${targetCoverage}j + lead time ${leadTime}j)`);
         // QUANTITÉ: Calculer selon médiane de l'historique
-        const calculation = calculateQuantityFromHistory(product.orders);
+        const calculation = calculateQuantityFromHistory(ordersToUse);
         console.log(`     Quantité calculée: ${calculation.quantity} (${calculation.metadata.strategy}, ${calculation.metadata.confidence})`);
         // Skip si pas d'historique récent pour calculer la quantité
         if (calculation.quantity === null) {
@@ -63,7 +85,7 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
             product_name: product.product_name,
             product_uom: product.product_uom,
             // 1. Historique des commandes (base)
-            order_history: product.orders.map((order) => ({
+            order_history: ordersToUse.map((order) => ({
                 order_id: order.order_id,
                 order_name: order.order_name,
                 date_order: order.date_order,
@@ -97,7 +119,7 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
     return {
         client_id: clientId,
         products: analyzedProducts,
-        total_products_in_history: orderHistory.products.length, // Nombre total avant filtrage
+        total_products_in_history: recentHistory.products.length, // Nombre total avant filtrage
         all_products: allProducts, // TOUS les produits analysés (pour backtest)
     };
 }

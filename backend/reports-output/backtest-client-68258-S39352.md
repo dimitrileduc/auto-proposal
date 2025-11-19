@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.90 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 26.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 28.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,12 +139,12 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JOY02] JOY! Organic Strawberry Jam 370g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
-| [JOY03] JOY! Organic Apricot Jam 370g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 4 | 6 | 2.0 | 33.3% | ✅ partial |
+| [JOY03] JOY! Organic Apricot Jam 370g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 3 | 6 | 3.0 | 50.0% | ✅ partial |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JOY05] Organic Cherry Jam 370g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 4 | 6 | 2.0 | 33.3% | ✅ partial |
@@ -173,11 +173,11 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 3 | Stock prédit: 3.7u (30j restants) → prédit 3u mais non commandé |
-| [JOY07] JOY! Organic Fig Jam 370g | 3 | Stock prédit: 1.9u (18j restants) → prédit 3u mais non commandé |
+| [JOY07] JOY! Organic Fig Jam 370g | 2 | Stock prédit: 1.9u (18j restants) → prédit 2u mais non commandé |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 10 | Stock prédit: 2.8u (5j restants) → prédit 10u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | Stock prédit: -4.5u (-24j restants) → prédit 2u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 3 | Stock prédit: -0.3u (-4j restants) → prédit 3u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 3 | Stock prédit: -0.3u (-4j restants) → prédit 3u mais non commandé |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 4 | Stock prédit: -4.5u (-24j restants) → prédit 4u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 4 | Stock prédit: -0.3u (-4j restants) → prédit 4u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 4 | Stock prédit: -0.3u (-4j restants) → prédit 4u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 4 | Stock prédit: -5.5u (-60j restants) → prédit 4u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 4 | Stock prédit: -7.0u (-61j restants) → prédit 4u mais non commandé |
 
@@ -203,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:17.659Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:49.944Z*

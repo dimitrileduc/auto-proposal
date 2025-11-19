@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.44 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 27.8% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -143,7 +143,7 @@
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -173,7 +173,7 @@
 |---------|-------------|--------|
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.3u (-5j restants) → prédit 2u mais non commandé |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: -0.3u (-10j restants) → prédit 1u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.1u (5j restants) → prédit 2u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | Stock prédit: -0.3u (-16j restants) → prédit 1u mais non commandé |
 
 
@@ -216,4 +216,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:01.853Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:33.906Z*

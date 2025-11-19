@@ -16,9 +16,9 @@ const clientTask = new Hono();
  *   "clientName": "ALAVI",  // Optionnel, pour affichage
  *   "clientEmail": "lvdp@alavi.be",  // Optionnel
  *   "config": {  // Optionnel, overrides des paramètres
- *     "analysisWindowDays": 180,
+ *     "analysisWindowDays": 120,
  *     "analysisEndDate": "2025-10-26 23:59:59",  // Date de référence pour l'analyse d'historique (format: "YYYY-MM-DD HH:MM:SS"). Default: aujourd'hui
- *     "targetCoverage": 14,
+ *     "targetCoverage": 25,
  *     "leadTime": 5,
  *     "moqMinimum": 300,
  *     "skipOdooQuoteGeneration": true,  // Si true, skip création devis Odoo

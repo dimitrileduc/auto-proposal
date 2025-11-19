@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 5.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0077] FILOU PROVENCALE 5 L | 30 | 30 | 0.0 | 0.0% | 🎯 exact |
+| [PF0077] FILOU PROVENCALE 5 L | 35 | 30 | 5.0 | 16.7% | ✅ partial |
 
 
 ---
@@ -181,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:23.449Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:56.470Z*

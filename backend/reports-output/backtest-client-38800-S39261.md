@@ -173,7 +173,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: -0.1u (-3j restants) → prédit 2u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 1 | Stock prédit: 0.4u (23j restants) → prédit 1u mais non commandé |
@@ -203,4 +203,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:32.677Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:07.040Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.21 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 10.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 15 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 0.32 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 18.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 13 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,7 +139,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [JF032] JF SAUCE LAPIN 380GX6 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -149,7 +149,7 @@
 | [LD015] LD Onion Spread 180g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -227,4 +227,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:19.683Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:51.815Z*

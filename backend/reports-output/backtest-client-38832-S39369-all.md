@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.52 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 31.7% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 33.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 13 | Égalité parfaite |
 | Partial Match (>0u) | 10 | Avec erreur |
 
@@ -153,10 +153,10 @@
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [LD013] LD Tuscan Organic Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [LD014] LD Organic Avocado Spread 180 g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | 6 | 2.0 | 33.3% | ✅ partial |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 4 | 5 | 1.0 | 20.0% | ✅ partial |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LD011] LD Organic Kids Spread 180 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -185,16 +185,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock prédit: 0.4u (10j restants) → prédit 2u mais non commandé |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | Stock prédit: 0.4u (10j restants) → prédit 3u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 0.4u (11j restants) → prédit 2u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [LD009] LD Organic Asparagus Spread 180 g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [LD012] LD Organic Samphire Spread 135 g | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
 | [LD015] LD Onion Spread 180g | 1 | Stock prédit: -0.4u (-24j restants) → prédit 1u mais non commandé |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | Stock prédit: -3.3u (-69j restants) → prédit 3u mais non commandé |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | Stock prédit: -3.3u (-69j restants) → prédit 2u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 3 | Stock prédit: -0.2u (-4j restants) → prédit 3u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 3 | Stock prédit: -1.3u (-35j restants) → prédit 3u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | Stock prédit: -0.8u (-39j restants) → prédit 1u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 2 | Stock prédit: -0.8u (-39j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -225,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:23.283Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:57.907Z*

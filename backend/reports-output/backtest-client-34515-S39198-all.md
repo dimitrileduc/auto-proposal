@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 60.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 40.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 4 | Égalité parfaite |
 | Partial Match (>0u) | 6 | Avec erreur |
 
@@ -142,11 +142,11 @@
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0032] MF Tarti Pois chiches 250 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
@@ -226,4 +226,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:00.478Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:34.481Z*

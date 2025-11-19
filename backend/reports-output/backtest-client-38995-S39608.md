@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.61 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 51.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 16 | Avec erreur |
+| **MAE** | 3.22 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 54.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
+| Partial Match (>0u) | 18 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,26 +138,26 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 33 | 25 | 8.0 | 32.0% | ✅ partial |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 30 | 15 | 15.0 | 100.0% | ✅ partial |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 15 | 10 | 5.0 | 50.0% | ✅ partial |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 27 | 15 | 12.0 | 80.0% | ✅ partial |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 13 | 10 | 3.0 | 30.0% | ✅ partial |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 8 | 5 | 3.0 | 60.0% | ✅ partial |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 10 | 20 | 10.0 | 50.0% | ✅ partial |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 4 | 2 | 2.0 | 100.0% | ✅ partial |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 9 | 20 | 11.0 | 55.0% | ✅ partial |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 4 | 5 | 1.0 | 20.0% | ✅ partial |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 10 | 10 | 0.0 | 0.0% | 🎯 exact |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | 10 | 2.0 | 20.0% | ✅ partial |
 | [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF035] JF BURGER SQUEEZE 300ML | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [JF037] JF BBQ SQUEEZE 300ML | 5 | 3 | 2.0 | 66.7% | ✅ partial |
-| [JF029] JF VOL AU VENT BOCAL 400G | 4 | 10 | 6.0 | 60.0% | ✅ partial |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 3 | 4 | 1.0 | 25.0% | ✅ partial |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF029] JF VOL AU VENT BOCAL 400G | 3 | 10 | 7.0 | 70.0% | ✅ partial |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 3 | 4 | 1.0 | 25.0% | ✅ partial |
-| [JF032] JF SAUCE LAPIN 380GX6 | 5 | 10 | 5.0 | 50.0% | ✅ partial |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | 10 | 3.0 | 30.0% | ✅ partial |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
+| [JF032] JF SAUCE LAPIN 380GX6 | 6 | 10 | 4.0 | 40.0% | ✅ partial |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 8 | 10 | 2.0 | 20.0% | ✅ partial |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 35 | 25 | 10.0 | 40.0% | ✅ partial |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -219,4 +219,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:41.993Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:14.909Z*

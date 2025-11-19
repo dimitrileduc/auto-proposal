@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 39.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 15.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 250 | 0.0 | 0.0% | 🎯 exact |
+| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 211 | 250 | 39.0 | 15.6% | ✅ partial |
 
 
 ---
@@ -164,9 +164,9 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1807] LD SAUCE ANDALOUSE 250ML WECK | 5 | Stock prédit: 1.8u (4j restants) → prédit 5u mais non commandé |
-| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -0.1u (-9j restants) → prédit 1u mais non commandé |
-| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 50 | Stock prédit: 16.0u (13j restants) → prédit 50u mais non commandé |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 75 | Stock prédit: -4.5u (-2j restants) → prédit 75u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 0 | Stock prédit: -0.1u (-9j restants) → prédit 0u mais non commandé |
+| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 45 | Stock prédit: 16.0u (13j restants) → prédit 45u mais non commandé |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 67 | Stock prédit: -4.5u (-2j restants) → prédit 67u mais non commandé |
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-46j restants) → prédit 1u mais non commandé |
 
 
@@ -191,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:20.454Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:52.336Z*

@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 9.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 64.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 10 | Avec erreur |
+| **MAE** | 7.73 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 47.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,17 +138,17 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 14 | 33 | 19.0 | 57.6% | ✅ partial |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 8 | 6 | 2.0 | 33.3% | ✅ partial |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 15 | 33 | 18.0 | 54.5% | ✅ partial |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 6 | 6 | 0.0 | 0.0% | 🎯 exact |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 7 | 8 | 1.0 | 12.5% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 16 | 25 | 9.0 | 36.0% | ✅ partial |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 13 | 25 | 12.0 | 48.0% | ✅ partial |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 12 | 25 | 13.0 | 52.0% | ✅ partial |
 | [FIL18] FIL VOL AU VENT 800G BOCAL  | 16 | 32 | 16.0 | 50.0% | ✅ partial |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 4 | 8 | 4.0 | 50.0% | ✅ partial |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 5 | 13 | 8.0 | 61.5% | ✅ partial |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 5 | 8 | 3.0 | 37.5% | ✅ partial |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 4 | 13 | 9.0 | 69.2% | ✅ partial |
 | [JF035] JF BURGER SQUEEZE 300ML | 3 | 7 | 4.0 | 57.1% | ✅ partial |
 | [FIL22] FIL BOULLETTES SAUCE TOMATE 800G BOCAL  | 8 | 8 | 0.0 | 0.0% | 🎯 exact |
-| [FIL20] FIL CARBONNADES 800G BOCAL  | 32 | 8 | 24.0 | 300.0% | ✅ partial |
+| [FIL20] FIL CARBONNADES 800G BOCAL  | 20 | 8 | 12.0 | 150.0% | ✅ partial |
 
 
 ---
@@ -202,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:49.792Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:23.905Z*

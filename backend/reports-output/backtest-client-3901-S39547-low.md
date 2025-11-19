@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -152,7 +152,14 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF3398] BS1833 - BORNIBUS BEARNAISE KOSHER BOCAL 825G  | 96 | Stock prédit: 32.7u (15j restants) → prédit 96u mais non commandé |
+| [PF3397] BS1833 COSCO - BORNIBUS BEARNAISE KOSHER BOCAL 825G | 600 | Stock prédit: 204.5u (15j restants) → prédit 600u mais non commandé |
+
 
 ---
 
@@ -175,4 +182,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:20.805Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:53.819Z*

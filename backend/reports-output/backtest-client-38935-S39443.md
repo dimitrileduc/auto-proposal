@@ -178,7 +178,7 @@
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | Stock prédit: -1.7u (-46j restants) → prédit 2u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.3u (-26j restants) → prédit 1u mais non commandé |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.1u (16j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock prédit: -0.1u (-13j restants) → prédit 2u mais non commandé |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: -0.1u (-13j restants) → prédit 1u mais non commandé |
 | [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 2 | Stock prédit: -0.6u (-41j restants) → prédit 2u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock prédit: -1.1u (-38j restants) → prédit 2u mais non commandé |
 | [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.1u (-13j restants) → prédit 1u mais non commandé |
@@ -214,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:31.055Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:03.789Z*

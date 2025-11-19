@@ -13,10 +13,10 @@
     "recall": 1,
     "f1Score": 0.7692307692307693,
     "mae": 3.2,
-    "mape": 88.33333333333333
+    "mape": 97.33333333333333
   },
   "distribution": {
-    "exactMatch": 2,
-    "partialMatch": 3
+    "exactMatch": 1,
+    "partialMatch": 4
   }
 }

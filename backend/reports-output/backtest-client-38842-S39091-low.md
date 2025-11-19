@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (1)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
 | [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: -1.5u (-52j restants) → prédit 1u mais non commandé |
 
 
@@ -181,4 +185,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:30.086Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:04.361Z*

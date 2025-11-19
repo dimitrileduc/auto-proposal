@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 128.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 26.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 6.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3279] KANIA BOULETTES TOMATE 800 GR (7404167) | 256 | 384 | 128.0 | 33.3% | ✅ partial |
+| [PF3279] KANIA BOULETTES TOMATE 800 GR (7404167) | 410 | 384 | 26.0 | 6.8% | ✅ partial |
 
 
 ---
@@ -163,8 +163,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 400 | Stock prédit: -406.0u (-4j restants) → prédit 400u mais non commandé |
-| [PF3328] DELUXE MIX SAUCES 250ML WECK | 384 | Stock prédit: -173.2u (-1j restants) → prédit 384u mais non commandé |
+| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 455 | Stock prédit: -406.0u (-4j restants) → prédit 455u mais non commandé |
+| [PF3328] DELUXE MIX SAUCES 250ML WECK | 486 | Stock prédit: -173.2u (-1j restants) → prédit 486u mais non commandé |
 
 
 ---
@@ -188,4 +188,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:26.449Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:00.781Z*

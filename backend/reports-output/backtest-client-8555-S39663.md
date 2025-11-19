@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 8.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 40.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 6.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 37.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,13 +139,13 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [PF0502] FILOU MOUTARDE SQUEEZE 300 ML | 40 | 40 | 0.0 | 0.0% | 🎯 exact |
-| [PF1539] FILOU BOULETTE CHASSEUR 800G | 4 | 2 | 2.0 | 100.0% | ✅ partial |
-| [PF1224] FILOU BOULETTES TOMATE 800 GR | 4 | 4 | 0.0 | 0.0% | 🎯 exact |
-| [PF0084] FILOU CARBONNADES 800 GR | 3 | 4 | 1.0 | 25.0% | ✅ partial |
-| [PF0094] FILOU MOUTARDE 700 GR | 30 | 20 | 10.0 | 50.0% | ✅ partial |
-| [PF0096] FILOU MOUTARDE 3 KG | 4 | 10 | 6.0 | 60.0% | ✅ partial |
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 74 | 44 | 30.0 | 68.2% | ✅ partial |
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 80 | 65 | 15.0 | 23.1% | ✅ partial |
+| [PF1539] FILOU BOULETTE CHASSEUR 800G | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [PF1224] FILOU BOULETTES TOMATE 800 GR | 3 | 4 | 1.0 | 25.0% | ✅ partial |
+| [PF0084] FILOU CARBONNADES 800 GR | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [PF0094] FILOU MOUTARDE 700 GR | 28 | 20 | 8.0 | 40.0% | ✅ partial |
+| [PF0096] FILOU MOUTARDE 3 KG | 3 | 10 | 7.0 | 70.0% | ✅ partial |
+| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 64 | 44 | 20.0 | 45.5% | ✅ partial |
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 76 | 65 | 11.0 | 16.9% | ✅ partial |
 
 
 ---
@@ -170,13 +170,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 7 | Stock prédit: 3.4u (21j restants) → prédit 7u mais non commandé |
-| [PF0075] FILOU CHASSEUR  10 L | 10 | Stock prédit: 5.0u (22j restants) → prédit 10u mais non commandé |
-| [PF0078] FILOU CHASSEUR 5 L | 10 | Stock prédit: 1.1u (2j restants) → prédit 10u mais non commandé |
-| [PF0077] FILOU PROVENCALE 5 L | 10 | Stock prédit: 3.1u (9j restants) → prédit 10u mais non commandé |
-| [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 40 | Stock prédit: -0.3u (0j restants) → prédit 40u mais non commandé |
-| [PF0088] FILOU VOL AU VENT 800 GR | 30 | Stock prédit: -61.9u (-56j restants) → prédit 30u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 30 | Stock prédit: -16.0u (-18j restants) → prédit 30u mais non commandé |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 6 | Stock prédit: 3.4u (21j restants) → prédit 6u mais non commandé |
+| [PF0075] FILOU CHASSEUR  10 L | 9 | Stock prédit: 5.0u (22j restants) → prédit 9u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 13 | Stock prédit: 1.1u (2j restants) → prédit 13u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 11 | Stock prédit: 3.1u (9j restants) → prédit 11u mais non commandé |
+| [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 37 | Stock prédit: -0.3u (0j restants) → prédit 37u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 42 | Stock prédit: -61.9u (-56j restants) → prédit 42u mais non commandé |
+| [PF0089] FILOU VOL AU VENT 400 GR | 47 | Stock prédit: -16.0u (-18j restants) → prédit 47u mais non commandé |
 
 
 ---
@@ -206,4 +206,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:52.820Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:27.713Z*

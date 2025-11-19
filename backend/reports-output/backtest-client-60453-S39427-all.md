@@ -169,8 +169,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JOY02] JOY! Organic Strawberry Jam 370g | 3 | Stock prédit: 1.1u (5j restants) → prédit 3u mais non commandé |
-| [JOY03] JOY! Organic Apricot Jam 370g | 3 | Stock prédit: 1.1u (5j restants) → prédit 3u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 4 | Stock prédit: 1.1u (5j restants) → prédit 4u mais non commandé |
+| [JOY03] JOY! Organic Apricot Jam 370g | 4 | Stock prédit: 1.1u (5j restants) → prédit 4u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | Stock prédit: 0.4u (3j restants) → prédit 2u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
@@ -220,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:30.129Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:03.707Z*

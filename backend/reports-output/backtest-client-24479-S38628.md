@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 42.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 22.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 17.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1878] JEFKE MOUTARDE PET 2,1 L | 84 | 126 | 42.0 | 33.3% | ✅ partial |
+| [PF1878] JEFKE MOUTARDE PET 2,1 L | 104 | 126 | 22.0 | 17.5% | ✅ partial |
 
 
 ---
@@ -181,4 +181,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:34.450Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:07.932Z*

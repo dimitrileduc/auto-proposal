@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.88 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 87.5% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 75.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 6 | Avec erreur |
 
@@ -140,11 +140,11 @@
 |---------|--------|------|-----------|----------|------|
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 1 | 2.0 | 200.0% | ✅ partial |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF035] JF BURGER SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 
 
@@ -170,19 +170,19 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: 0.8u (23j restants) → prédit 2u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: 0.8u (23j restants) → prédit 1u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | Stock prédit: 0.6u (8j restants) → prédit 2u mais non commandé |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 2 | Stock prédit: 0.8u (23j restants) → prédit 2u mais non commandé |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: 0.8u (23j restants) → prédit 1u mais non commandé |
 | [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 2 | Stock prédit: 1.6u (28j restants) → prédit 2u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: 0.7u (15j restants) → prédit 2u mais non commandé |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | Stock prédit: 0.8u (23j restants) → prédit 2u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | Stock prédit: 0.2u (1j restants) → prédit 3u mais non commandé |
-| [JF028] JF VINAIGRET CAESAR WECK 200ML | 2 | Stock prédit: 0.7u (16j restants) → prédit 2u mais non commandé |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | Stock prédit: 0.8u (23j restants) → prédit 1u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.2u (1j restants) → prédit 4u mais non commandé |
+| [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | Stock prédit: 0.7u (16j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -1.1u (-24j restants) → prédit 1u mais non commandé |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | Stock prédit: -1.1u (-24j restants) → prédit 1u mais non commandé |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock prédit: -1.1u (-24j restants) → prédit 2u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: -1.1u (-24j restants) → prédit 2u mais non commandé |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.4u (14j restants) → prédit 1u mais non commandé |
+| [JF037] JF BBQ SQUEEZE 300ML | 2 | Stock prédit: 0.4u (14j restants) → prédit 2u mais non commandé |
 | [JF021] JF PICKLES 350 ML | 3 | Stock prédit: -3.5u (-46j restants) → prédit 3u mais non commandé |
 
 
@@ -216,4 +216,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:18.504Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:50.901Z*

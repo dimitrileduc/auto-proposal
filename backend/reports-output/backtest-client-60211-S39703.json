@@ -16,7 +16,7 @@
     "mape": 40
   },
   "distribution": {
-    "exactMatch": 5,
-    "partialMatch": 5
+    "exactMatch": 6,
+    "partialMatch": 4
   }
 }

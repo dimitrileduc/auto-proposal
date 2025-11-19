@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.21 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 14.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 11 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.14 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 7.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 12 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -144,7 +144,7 @@
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -187,9 +187,9 @@
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: -0.5u (-18j restants) → prédit 1u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: 0.1u (6j restants) → prédit 1u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | Stock prédit: 0.1u (6j restants) → prédit 2u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: -0.1u (-6j restants) → prédit 2u mais non commandé |
-| [JF021] JF PICKLES 350 ML | 2 | Stock prédit: -0.2u (-15j restants) → prédit 2u mais non commandé |
+| [JF021] JF PICKLES 350 ML | 1 | Stock prédit: -0.2u (-15j restants) → prédit 1u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: -2.6u (-83j restants) → prédit 1u mais non commandé |
 
 
@@ -220,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:10.277Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:42.161Z*

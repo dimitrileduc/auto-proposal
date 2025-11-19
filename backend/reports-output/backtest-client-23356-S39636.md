@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.40 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 49.4% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 5.90 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 56.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 9 | Avec erreur |
 
@@ -138,16 +138,16 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV129] LV Tartinade Carotte Gingembre 190g | 19 | 27 | 8.0 | 29.6% | ✅ partial |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 7 | 7 | 0.0 | 0.0% | 🎯 exact |
-| [LV135] LV Tartinade Basilico 190g | 23 | 16 | 7.0 | 43.8% | ✅ partial |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 18 | 27 | 9.0 | 33.3% | ✅ partial |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 6 | 7 | 1.0 | 14.3% | ✅ partial |
+| [LV135] LV Tartinade Basilico 190g | 24 | 16 | 8.0 | 50.0% | ✅ partial |
 | [LV137] LV Tartinade Lentilles Curry 190g | 11 | 9 | 2.0 | 22.2% | ✅ partial |
 | [LV161] LV Tartinade Mangue curry 190g | 22 | 7 | 15.0 | 214.3% | ✅ partial |
-| [LV162] LV Tartinade Tomato Basilico 190g | 25 | 32 | 7.0 | 21.9% | ✅ partial |
-| [LV160] LV Tartinade Aubergine 190g | 11 | 17 | 6.0 | 35.3% | ✅ partial |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 4 | 6 | 2.0 | 33.3% | ✅ partial |
-| [LV342] LV Organic Broccoli Spread 190 g | 10 | 6 | 4.0 | 66.7% | ✅ partial |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 8 | 11 | 3.0 | 27.3% | ✅ partial |
+| [LV162] LV Tartinade Tomato Basilico 190g | 26 | 32 | 6.0 | 18.8% | ✅ partial |
+| [LV160] LV Tartinade Aubergine 190g | 9 | 17 | 8.0 | 47.1% | ✅ partial |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 3 | 6 | 3.0 | 50.0% | ✅ partial |
+| [LV342] LV Organic Broccoli Spread 190 g | 13 | 6 | 7.0 | 116.7% | ✅ partial |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 11 | 11 | 0.0 | 0.0% | 🎯 exact |
 
 
 ---
@@ -172,10 +172,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 14 | Stock prédit: 7.7u (30j restants) → prédit 14u mais non commandé |
-| [LV139] LV Tartinade Paprika Chili 380g | 6 | Stock prédit: -2.1u (-18j restants) → prédit 6u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 10 | Stock prédit: -89.6u (-94j restants) → prédit 10u mais non commandé |
-| [LV138] LV Tartinade Carotte gingembre  380g | 10 | Stock prédit: -29.2u (-80j restants) → prédit 10u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 15 | Stock prédit: 7.7u (30j restants) → prédit 15u mais non commandé |
+| [LV139] LV Tartinade Paprika Chili 380g | 5 | Stock prédit: -2.1u (-18j restants) → prédit 5u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 12 | Stock prédit: -89.6u (-94j restants) → prédit 12u mais non commandé |
+| [LV138] LV Tartinade Carotte gingembre  380g | 9 | Stock prédit: -29.2u (-80j restants) → prédit 9u mais non commandé |
 | [LV217] LV Tartinade Basilic 380g | 10 | Stock prédit: -4.9u (-34j restants) → prédit 10u mais non commandé |
 
 
@@ -207,4 +207,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:55.469Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:28.384Z*

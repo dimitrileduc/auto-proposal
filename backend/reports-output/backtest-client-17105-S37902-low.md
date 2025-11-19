@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 25 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 46 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (25)
+## False Positives (46)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,27 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [PF1797] LV MAYONNAI TOMATE 250ML WECK | 200 | Stock prédit: 200.0u (3j restants) → prédit 200u mais non commandé |
+| [PF1804] LV SAUCE TARTARE 250ML WECK | 400 | Stock prédit: 400.0u (3j restants) → prédit 400u mais non commandé |
+| [PF3237] LV MAYONNAISE POIVRE 250ML WECK  | 200 | Stock prédit: 200.0u (3j restants) → prédit 200u mais non commandé |
+| [PF1942] LV BIO TRIPACK SAUCES 3X135ML | 256 | Stock prédit: 256.0u (3j restants) → prédit 256u mais non commandé |
+| [PF1775] TARTINAPERO BIO PAPRIKA 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1773] TARTINAPERO BIO MANGUE 200ML | 700 | Stock prédit: 700.0u (3j restants) → prédit 700u mais non commandé |
+| [PF1779] TARTINAPERO BIO HOUMOUS 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1778] TARTINAPERO BIO TOMATE 200ML | 700 | Stock prédit: 700.0u (3j restants) → prédit 700u mais non commandé |
+| [PF1780] TARTINAPERO BIO OLIVE 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1855] LV TARTINAPERO BIO TRIPACK | 2560 | Stock prédit: 2560.0u (3j restants) → prédit 2560u mais non commandé |
+| [PF2978] TARTINAPERO BIO AIL OURS 200ML | 350 | Stock prédit: 350.0u (3j restants) → prédit 350u mais non commandé |
+| [PF1630] LV TARTINADE BIO ANANAS 200ML | 330 | Stock prédit: 330.0u (3j restants) → prédit 330u mais non commandé |
+| [PF1705] LV TARTINADE BIO BASILIC 200ML | 660 | Stock prédit: 660.0u (3j restants) → prédit 660u mais non commandé |
+| [PF1558] LV TARTINADE BIO CAROTTE 200ML | 1330 | Stock prédit: 1330.0u (3j restants) → prédit 1330u mais non commandé |
+| [PF1628] LV TARTINADE BIO HOUMOUS 200ML | 1330 | Stock prédit: 1330.0u (3j restants) → prédit 1330u mais non commandé |
+| [PF1683] LV TARTINADE BIO MANGUE 400G | 330 | Stock prédit: 330.0u (3j restants) → prédit 330u mais non commandé |
+| [PF1556] LV TARTINADE BIO MANGUE 200ML | 2664 | Stock prédit: 2664.0u (3j restants) → prédit 2664u mais non commandé |
+| [PF1704] LV TARTINADE BIO OLIVE 200 | 990 | Stock prédit: 990.0u (3j restants) → prédit 990u mais non commandé |
+| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 1980 | Stock prédit: 1980.0u (3j restants) → prédit 1980u mais non commandé |
+| [PF1686] LV TARTINADE BIO PAPRIKA 400G | 332 | Stock prédit: 332.0u (3j restants) → prédit 332u mais non commandé |
+| [PF3365] LV BE TARTINADE BIO BROCOLI 190G | 990 | Stock prédit: 990.0u (3j restants) → prédit 990u mais non commandé |
 | [PF1469] JF MAYONNAI TRUFFES 250ML WECK | 400 | Stock prédit: -400.0u (-3j restants) → prédit 400u mais non commandé |
 | [PF1473] JF MAYONNAIS POIVRE 250ML WECK | 200 | Stock prédit: -200.0u (-3j restants) → prédit 200u mais non commandé |
 | [PI3267] PI MAYONNAISE BIO CONS 250ML | 680 | Stock prédit: -680.0u (-3j restants) → prédit 680u mais non commandé |
@@ -205,4 +226,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:53.366Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:27.282Z*

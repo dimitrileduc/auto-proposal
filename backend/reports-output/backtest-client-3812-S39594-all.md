@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 3.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 21.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,10 +138,10 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0030] MF Tarti Mangue Curry 250g  | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
+| [MF0030] MF Tarti Mangue Curry 250g  | 21 | 16 | 5.0 | 31.3% | ✅ partial |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 21 | 16 | 5.0 | 31.3% | ✅ partial |
 | [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
-| [MF0029] MF Tarti Datte chili 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
+| [MF0029] MF Tarti Datte chili 250g | 27 | 16 | 11.0 | 68.8% | ✅ partial |
 | [MF0043] MF Brotaufstrich Apfel Meerrettich 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
 | [MF0027] MF Tarti Aubergine 250g  | 16 | 16 | 0.0 | 0.0% | 🎯 exact |
 
@@ -201,4 +201,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:23.156Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:57.748Z*

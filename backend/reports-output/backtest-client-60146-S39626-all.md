@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 4.67 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 466.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 4.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 433.3% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 5 | Avec erreur |
 
@@ -138,12 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 9 | 1 | 8.0 | 800.0% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 8 | 1 | 7.0 | 700.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | 1 | 7.0 | 700.0% | ✅ partial |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 8 | 1 | 7.0 | 700.0% | ✅ partial |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 5 | 1 | 4.0 | 400.0% | ✅ partial |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 4 | 1 | 3.0 | 300.0% | ✅ partial |
 
 
 ---
@@ -186,4 +186,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:08.574Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:41.681Z*

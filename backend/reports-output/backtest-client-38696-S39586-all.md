@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 60.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAE** | 1.38 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 66.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -144,7 +144,7 @@
 | [MF0029] MF Tarti Datte chili 250g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 3 | 1 | 2.0 | 200.0% | ✅ partial |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -175,34 +175,34 @@
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | Stock prédit: 1.5u (21j restants) → prédit 2u mais non commandé |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: 0.4u (4j restants) → prédit 1u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | Stock prédit: 1.5u (24j restants) → prédit 2u mais non commandé |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 3 | Stock prédit: 1.3u (12j restants) → prédit 3u mais non commandé |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock prédit: 1.3u (12j restants) → prédit 2u mais non commandé |
 | [MF0032] MF Tarti Pois chiches 250 g | 2 | Stock prédit: 0.2u (0j restants) → prédit 2u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 5 | Stock prédit: 6.9u (28j restants) → prédit 5u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 6 | Stock prédit: 6.9u (28j restants) → prédit 6u mais non commandé |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 2 | Stock prédit: 1.2u (19j restants) → prédit 2u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: 1.1u (15j restants) → prédit 1u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: 1.1u (15j restants) → prédit 2u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.4u (9j restants) → prédit 1u mais non commandé |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock prédit: 1.2u (19j restants) → prédit 2u mais non commandé |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.4u (9j restants) → prédit 1u mais non commandé |
 | [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.5u (14j restants) → prédit 1u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: 0.3u (10j restants) → prédit 2u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.5u (25j restants) → prédit 1u mais non commandé |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 2 | Stock prédit: 0.3u (10j restants) → prédit 2u mais non commandé |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | Stock prédit: 0.3u (10j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.2u (3j restants) → prédit 1u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: 1.3u (21j restants) → prédit 2u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 4 | Stock prédit: -0.8u (-8j restants) → prédit 4u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: -0.8u (-8j restants) → prédit 3u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 5 | Stock prédit: 1.6u (13j restants) → prédit 5u mais non commandé |
 | [MF0033] MF Tarti Poivron chilli 250g | 2 | Stock prédit: 1.6u (29j restants) → prédit 2u mais non commandé |
 | [MF0013] MF Olives Vertes 500g | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 2 | Stock prédit: 0.4u (25j restants) → prédit 2u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -3.2u (-27j restants) → prédit 2u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 3 | Stock prédit: -3.2u (-27j restants) → prédit 3u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: 0.8u (29j restants) → prédit 2u mais non commandé |
-| [LD014] LD Organic Avocado Spread 180 g | 3 | Stock prédit: 0.5u (13j restants) → prédit 3u mais non commandé |
-| [LD013] LD Tuscan Organic Spread 180 g | 3 | Stock prédit: -0.5u (-15j restants) → prédit 3u mais non commandé |
+| [LD014] LD Organic Avocado Spread 180 g | 2 | Stock prédit: 0.5u (13j restants) → prédit 2u mais non commandé |
+| [LD013] LD Tuscan Organic Spread 180 g | 2 | Stock prédit: -0.5u (-15j restants) → prédit 2u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: -0.5u (-14j restants) → prédit 2u mais non commandé |
 | [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: 0.2u (12j restants) → prédit 1u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | Stock prédit: -0.1u (-6j restants) → prédit 1u mais non commandé |
@@ -243,4 +243,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:02.628Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:37.417Z*

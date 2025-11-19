@@ -63,7 +63,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.27 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 21.2% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 16.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 8 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -138,12 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -207,4 +207,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:42.474Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:17.402Z*

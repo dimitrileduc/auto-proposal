@@ -178,9 +178,9 @@
 | [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.1u (-4j restants) → prédit 2u mais non commandé |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | Stock prédit: -0.9u (-38j restants) → prédit 1u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -0.3u (-20j restants) → prédit 1u mais non commandé |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | Stock prédit: -1.0u (-41j restants) → prédit 2u mais non commandé |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | Stock prédit: -1.0u (-41j restants) → prédit 1u mais non commandé |
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | Stock prédit: -1.0u (-41j restants) → prédit 2u mais non commandé |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | Stock prédit: -1.0u (-41j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -204,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:44.775Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:18.482Z*

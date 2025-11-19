@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 64.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 84.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 43.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 128 | 192 | 64.0 | 33.3% | ✅ partial |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 108 | 192 | 84.0 | 43.8% | ✅ partial |
 
 
 ---
@@ -163,9 +163,9 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 64 | Stock prédit: 25.7u (6j restants) → prédit 64u mais non commandé |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 64 | Stock prédit: 7.3u (2j restants) → prédit 64u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 160 | Stock prédit: 104.2u (24j restants) → prédit 160u mais non commandé |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 78 | Stock prédit: 25.7u (6j restants) → prédit 78u mais non commandé |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 77 | Stock prédit: 7.3u (2j restants) → prédit 77u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 133 | Stock prédit: 104.2u (24j restants) → prédit 133u mais non commandé |
 
 
 ---
@@ -196,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:21.457Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:56.937Z*

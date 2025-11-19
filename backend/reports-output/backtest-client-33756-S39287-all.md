@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 3.28 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 53.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 18 | Avec erreur |
+| **MAE** | 3.06 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 51.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 15 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,21 +138,21 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 4 | 3 | 1.0 | 33.3% | ✅ partial |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 5 | 10 | 5.0 | 50.0% | ✅ partial |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 5 | 12 | 7.0 | 58.3% | ✅ partial |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF011] JF SAUCE TARTARE 470ML WECK | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 6 | 10 | 4.0 | 40.0% | ✅ partial |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 6 | 2 | 4.0 | 200.0% | ✅ partial |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 6 | 12 | 6.0 | 50.0% | ✅ partial |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [MF0055] MF Noix de cajou - Curry 133g | 4 | 9 | 5.0 | 55.6% | ✅ partial |
 | [MF0054] MF Noix de cajou - Fleur de sel 133g | 4 | 9 | 5.0 | 55.6% | ✅ partial |
 | [MF0056] MF Noix de cajou - Herbes de Provence 133g | 4 | 9 | 5.0 | 55.6% | ✅ partial |
-| [MF0013] MF Olives Vertes 500g | 4 | 5 | 1.0 | 20.0% | ✅ partial |
-| [MF0012] MF Olives Mix 500g | 3 | 5 | 2.0 | 40.0% | ✅ partial |
+| [MF0013] MF Olives Vertes 500g | 3 | 5 | 2.0 | 40.0% | ✅ partial |
+| [MF0012] MF Olives Mix 500g | 4 | 5 | 1.0 | 20.0% | ✅ partial |
 | [MF0052] MF Pois chiches  500g | 3 | 9 | 6.0 | 66.7% | ✅ partial |
 | [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 2 | 8 | 6.0 | 75.0% | ✅ partial |
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 4 | 6 | 2.0 | 33.3% | ✅ partial |
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 5 | 6 | 1.0 | 16.7% | ✅ partial |
 | [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 3 | 8 | 5.0 | 62.5% | ✅ partial |
 | [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 3 | 6 | 3.0 | 50.0% | ✅ partial |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
@@ -180,11 +180,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: -2.3u (-20j restants) → prédit 3u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -2.3u (-20j restants) → prédit 2u mais non commandé |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | Stock prédit: 0.3u (13j restants) → prédit 2u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: -0.7u (-7j restants) → prédit 2u mais non commandé |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 7 | Stock prédit: -5.4u (-38j restants) → prédit 7u mais non commandé |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 3 | Stock prédit: 0.5u (3j restants) → prédit 3u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 3 | Stock prédit: -0.7u (-7j restants) → prédit 3u mais non commandé |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 5 | Stock prédit: -5.4u (-38j restants) → prédit 5u mais non commandé |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 6 | Stock prédit: 0.5u (3j restants) → prédit 6u mais non commandé |
 
 
 ---
@@ -221,4 +221,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:21.446Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:54.857Z*

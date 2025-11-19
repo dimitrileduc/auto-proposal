@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.46 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 36.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 13 | Égalité parfaite |
-| Partial Match (>0u) | 11 | Avec erreur |
+| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 14 | Égalité parfaite |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV162] LV Tartinade Tomato Basilico 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV136] LV Tartinade Betterave 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -149,7 +149,7 @@
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [LV160] LV Tartinade Aubergine 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [LV161] LV Tartinade Mangue curry 190g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
 | [LV132] LV Tartinade Houmous type 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV135] LV Tartinade Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
@@ -230,4 +230,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:19.489Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:53.454Z*

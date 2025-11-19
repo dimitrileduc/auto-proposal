@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 8.08 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 47.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| **MAPE** | 49.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,8 +147,8 @@
 | [RIT08] RITCHIE Citron - canette 330ml | 5 | 10 | 5.0 | 50.0% | ✅ partial |
 | [RIT09] RITCHIE Cola - canette 330ml | 5 | 6 | 1.0 | 16.7% | ✅ partial |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 5 | 2 | 3.0 | 150.0% | ✅ partial |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 56 | 112 | 56.0 | 50.0% | ✅ partial |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 56 | 56 | 0.0 | 0.0% | 🎯 exact |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 75 | 112 | 37.0 | 33.0% | ✅ partial |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 75 | 56 | 19.0 | 33.9% | ✅ partial |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 56 | 56 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -179,17 +179,17 @@
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 90 | Stock prédit: -90.0u (0j restants) → prédit 90u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 72 | Stock prédit: -72.0u (0j restants) → prédit 72u mais non commandé |
 | [ORG09] ORGANICA crunchy fruit cerise 20g | 54 | Stock prédit: -54.0u (0j restants) → prédit 54u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 36 | Stock prédit: -36.0u (0j restants) → prédit 36u mais non commandé |
-| [fsv01] Cerneaux de noix nature bio vrac 1,8 kg | 6 | Stock prédit: -6.0u (0j restants) → prédit 6u mais non commandé |
-| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 10 | Stock prédit: -15.0u (0j restants) → prédit 10u mais non commandé |
-| [fsv03] Noisette nature bio vrac 2,8kg  | 8 | Stock prédit: -10.0u (0j restants) → prédit 8u mais non commandé |
-| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 6 | Stock prédit: -6.0u (0j restants) → prédit 6u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 35 | Stock prédit: -36.0u (0j restants) → prédit 35u mais non commandé |
+| [fsv01] Cerneaux de noix nature bio vrac 1,8 kg | 5 | Stock prédit: -6.0u (0j restants) → prédit 5u mais non commandé |
+| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 8 | Stock prédit: -15.0u (0j restants) → prédit 8u mais non commandé |
+| [fsv03] Noisette nature bio vrac 2,8kg  | 7 | Stock prédit: -10.0u (0j restants) → prédit 7u mais non commandé |
+| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 5 | Stock prédit: -6.0u (0j restants) → prédit 5u mais non commandé |
 | [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 3 | Stock prédit: -1.0u (0j restants) → prédit 3u mais non commandé |
 | [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
 | [fsv13] Pistaches grillées salées bio vrac 2,6kg  | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [fsv14] Amandes grillées bio vrac 2,8kg | 3 | Stock prédit: 0.0u (0j restants) → prédit 3u mais non commandé |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 3 | Stock prédit: -1.0u (0j restants) → prédit 3u mais non commandé |
+| [fsv17] Mélange de noix bio vrac 2,75kg | 4 | Stock prédit: -1.0u (0j restants) → prédit 4u mais non commandé |
 | [fsv18] Mendiant bio vrac 2,8kg | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 5 | Stock prédit: 0.0u (0j restants) → prédit 5u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 180 | Stock prédit: 0.0u (0j restants) → prédit 180u mais non commandé |
@@ -200,14 +200,14 @@
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 120 | Stock prédit: 0.0u (0j restants) → prédit 120u mais non commandé |
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
 | [DAM05] Dr. Antonio Martins eau de coco bio & fairtrade 330ml | 30 | Stock prédit: 0.0u (0j restants) → prédit 30u mais non commandé |
-| [SOWA01] SOWA citron menthe 250ml | 6 | Stock prédit: -10.0u (0j restants) → prédit 6u mais non commandé |
-| [SOWA02] SOWA bissap 250ml | 6 | Stock prédit: -10.0u (0j restants) → prédit 6u mais non commandé |
-| [SOWA03] SOWA ginger beer ardent 250ml | 6 | Stock prédit: -10.0u (0j restants) → prédit 6u mais non commandé |
-| [SOWA04] SOWA thé glacé pêche 250ml | 5 | Stock prédit: -8.0u (0j restants) → prédit 5u mais non commandé |
+| [SOWA01] SOWA citron menthe 250ml | 5 | Stock prédit: -10.0u (0j restants) → prédit 5u mais non commandé |
+| [SOWA02] SOWA bissap 250ml | 5 | Stock prédit: -10.0u (0j restants) → prédit 5u mais non commandé |
+| [SOWA03] SOWA ginger beer ardent 250ml | 5 | Stock prédit: -10.0u (0j restants) → prédit 5u mais non commandé |
+| [SOWA04] SOWA thé glacé pêche 250ml | 4 | Stock prédit: -8.0u (0j restants) → prédit 4u mais non commandé |
 | [KLAK01] KLAK Maté 330ml | 2 | Stock prédit: -2.0u (0j restants) → prédit 2u mais non commandé |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 13 | Stock prédit: -10.0u (0j restants) → prédit 13u mais non commandé |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 10 | Stock prédit: -20.0u (0j restants) → prédit 10u mais non commandé |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 18 | Stock prédit: -10.0u (0j restants) → prédit 18u mais non commandé |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 8 | Stock prédit: -20.0u (0j restants) → prédit 8u mais non commandé |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 20 | Stock prédit: -10.0u (0j restants) → prédit 20u mais non commandé |
 | [PAO03] PAOLA cola canette 330ml - le cola des Belges | 26 | Stock prédit: -27.0u (0j restants) → prédit 26u mais non commandé |
 | [BUD02] BUDDY bio functional & energy drink citorn & gingembre - 250ml | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
 | [BUD03] BUDDY bio functional & energy drink mangue passion - 250ml | 60 | Stock prédit: 0.0u (0j restants) → prédit 60u mais non commandé |
@@ -221,11 +221,11 @@
 | [KOKO03] KOKO Kombucha framboise hibiscus 330ml | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
 | [KOKO01] KOKO Kombucha original 330ml | 40 | Stock prédit: 0.0u (0j restants) → prédit 40u mais non commandé |
 | Palette EURO | 333 | Stock prédit: 0.0u (0j restants) → prédit 333u mais non commandé |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 42 | Stock prédit: -36.0u (0j restants) → prédit 42u mais non commandé |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 36 | Stock prédit: -36.0u (0j restants) → prédit 36u mais non commandé |
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 18 | Stock prédit: -12.0u (0j restants) → prédit 18u mais non commandé |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 30 | Stock prédit: -36.0u (0j restants) → prédit 30u mais non commandé |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 42 | Stock prédit: -60.0u (0j restants) → prédit 42u mais non commandé |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 44 | Stock prédit: -36.0u (0j restants) → prédit 44u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 30 | Stock prédit: -36.0u (0j restants) → prédit 30u mais non commandé |
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 19 | Stock prédit: -12.0u (0j restants) → prédit 19u mais non commandé |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 28 | Stock prédit: -36.0u (0j restants) → prédit 28u mais non commandé |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 36 | Stock prédit: -60.0u (0j restants) → prédit 36u mais non commandé |
 | [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
 | [UPI08] Jus de pomme-citron bio d'UPIGNY 250ml | 13 | Stock prédit: -10.0u (0j restants) → prédit 13u mais non commandé |
 | [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 13 | Stock prédit: -10.0u (0j restants) → prédit 13u mais non commandé |
@@ -239,11 +239,11 @@
 | [WIG04] WIGNAC cidre rosé bio 750ml | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
 | [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 30 | Stock prédit: 0.0u (0j restants) → prédit 30u mais non commandé |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 25 | Stock prédit: -25.0u (0j restants) → prédit 25u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 25 | Stock prédit: -35.0u (0j restants) → prédit 25u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 25 | Stock prédit: -35.0u (0j restants) → prédit 25u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 23 | Stock prédit: -35.0u (0j restants) → prédit 23u mais non commandé |
-| [RISH05] RISH kombucha BIO - rose 750ml | 8 | Stock prédit: -12.0u (0j restants) → prédit 8u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 21 | Stock prédit: -25.0u (0j restants) → prédit 21u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 23 | Stock prédit: -35.0u (0j restants) → prédit 23u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 23 | Stock prédit: -35.0u (0j restants) → prédit 23u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 18 | Stock prédit: -35.0u (0j restants) → prédit 18u mais non commandé |
+| [RISH05] RISH kombucha BIO - rose 750ml | 6 | Stock prédit: -12.0u (0j restants) → prédit 6u mais non commandé |
 | [JOY03] JOY! Confiture bio à l'abricot 370g | 203 | Stock prédit: 0.0u (0j restants) → prédit 203u mais non commandé |
 | [UPI01] Jus de pomme bio d'UPIGNY 250ml | 46 | Stock prédit: 0.0u (0j restants) → prédit 46u mais non commandé |
 | [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml | 10 | Stock prédit: 0.0u (0j restants) → prédit 10u mais non commandé |
@@ -263,8 +263,8 @@
 | [JOY07] JOY! Confiture bio à la figue 370g | 281 | Stock prédit: 0.0u (0j restants) → prédit 281u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 56 | Stock prédit: -280.0u (0j restants) → prédit 56u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 56 | Stock prédit: -336.0u (0j restants) → prédit 56u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 56 | Stock prédit: -448.0u (0j restants) → prédit 56u mais non commandé |
-| [REB05] ReBEL chips premium & bio - sel de mer 35g | 64 | Stock prédit: -150.0u (0j restants) → prédit 64u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 75 | Stock prédit: -448.0u (0j restants) → prédit 75u mais non commandé |
+| [REB05] ReBEL chips premium & bio - sel de mer 35g | 56 | Stock prédit: -150.0u (0j restants) → prédit 56u mais non commandé |
 | [REB06] ReBEL chips premium & bio - paprika fumé 35g | 64 | Stock prédit: -64.0u (0j restants) → prédit 64u mais non commandé |
 
 
@@ -289,4 +289,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:26.674Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:01.219Z*

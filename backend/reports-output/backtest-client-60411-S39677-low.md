@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 6 produits prédits, 3 corrects |
+| **Précision** | 30.0% | 10 produits prédits, 3 corrects |
 | **Rappel** | 100.0% | 3 produits réels, 3 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 46.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -145,7 +145,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (7)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -165,6 +165,10 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
 | [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
 | [MF0061] MF Compote | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 1 | Stock prédit: -1.6u (-69j restants) → prédit 1u mais non commandé |
@@ -191,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:39.265Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:12.703Z*

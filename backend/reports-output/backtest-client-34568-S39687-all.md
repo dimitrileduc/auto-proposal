@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 14 produits prédits, 7 corrects |
+| **Précision** | 46.7% | 15 produits prédits, 7 corrects |
 | **Rappel** | 43.8% | 16 produits réels, 7 détectés |
-| **F1-Score** | 46.7% | Score équilibré global |
+| **F1-Score** | 45.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.14 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 7.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.43 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 21.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -139,17 +139,17 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
 | [MF0029] MF Tarti Datte chili 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [CB005] CB Apple juice 1l | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
 ---
 
-## False Positives (7)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -172,8 +172,9 @@
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock prédit: 0.4u (27j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.7u (23j restants) → prédit 2u mais non commandé |
 | [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: 0.2u (10j restants) → prédit 1u mais non commandé |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | Stock prédit: -0.4u (-28j restants) → prédit 2u mais non commandé |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | Stock prédit: -0.4u (-28j restants) → prédit 2u mais non commandé |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | Stock prédit: -0.4u (-28j restants) → prédit 1u mais non commandé |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | Stock prédit: -0.4u (-28j restants) → prédit 1u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [fsv02] Noix de cajou nature bio vrac 2,8kg  | 3 | Stock prédit: -6.3u (-73j restants) → prédit 3u mais non commandé |
 
@@ -213,4 +214,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:06.193Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:39.906Z*

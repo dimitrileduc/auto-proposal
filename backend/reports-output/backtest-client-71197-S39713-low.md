@@ -157,7 +157,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 9 | Stock prédit: -1.2u (-19j restants) → prédit 9u mais non commandé |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 10 | Stock prédit: -1.2u (-19j restants) → prédit 10u mais non commandé |
 
 
 ---
@@ -182,10 +182,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 4 | Stock suffisant: 2.4u (77j restants > seuil 0j) |
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 4 | Stock suffisant: 1.6u (78j restants > seuil 0j) |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 4 | Stock suffisant: 2.4u (77j restants > seuil 30j) |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 4 | Stock suffisant: 1.6u (78j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:11.680Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:45.635Z*

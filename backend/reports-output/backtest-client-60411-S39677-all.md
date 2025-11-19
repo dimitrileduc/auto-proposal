@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 41.9% | 31 produits prédits, 13 corrects |
+| **Précision** | 37.1% | 35 produits prédits, 13 corrects |
 | **Rappel** | 86.7% | 15 produits réels, 13 détectés |
-| **F1-Score** | 56.5% | Score équilibré global |
+| **F1-Score** | 52.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 0.31 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 10.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 11 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAPE** | 11.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 10 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,9 +140,9 @@
 |---------|--------|------|-----------|----------|------|
 | [RIT05] RITCHIE Cola - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [RIT01] RITCHIE Orange - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -155,7 +155,7 @@
 
 ---
 
-## False Positives (18)
+## False Positives (22)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -177,13 +177,17 @@
 |---------|-------------|--------|
 | [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
 | [LV160] LV Tartinade Aubergine 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
 | [LV131] LV Tartinade Potiron 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.5u (29j restants) → prédit 1u mais non commandé |
 | [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock prédit: 0.4u (20j restants) → prédit 1u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
 | [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.4u (16j restants) → prédit 1u mais non commandé |
 | [MF0060] MF Passata | 1 | Stock prédit: -0.2u (-12j restants) → prédit 1u mais non commandé |
 | [LV143] LV Mayonnaise (huile 70%) 200 ml  | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Stock prédit: 0.2u (17j restants) → prédit 1u mais non commandé |
@@ -223,4 +227,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:39.266Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:12.704Z*

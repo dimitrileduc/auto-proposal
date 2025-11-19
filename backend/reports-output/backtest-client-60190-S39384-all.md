@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 17.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 10 | 10 | 0.0 | 0.0% | 🎯 exact |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | 10 | 2.0 | 20.0% | ✅ partial |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 5 | 5 | 0.0 | 0.0% | 🎯 exact |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 13 | 10 | 3.0 | 30.0% | ✅ partial |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 18 | 15 | 3.0 | 20.0% | ✅ partial |
@@ -168,10 +168,10 @@
 |---------|-------------|--------|
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 15 | Stock prédit: -4.2u (-5j restants) → prédit 15u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 15 | Stock prédit: 4.3u (9j restants) → prédit 15u mais non commandé |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 6 | Stock prédit: 0.9u (5j restants) → prédit 6u mais non commandé |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 36 | Stock prédit: -11.4u (-15j restants) → prédit 36u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 6 | Stock prédit: 3.9u (23j restants) → prédit 6u mais non commandé |
-| [REB05] REB chips bio - sel de mer 35g | 42 | Stock prédit: -4.5u (-6j restants) → prédit 42u mais non commandé |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 5 | Stock prédit: 0.9u (5j restants) → prédit 5u mais non commandé |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 29 | Stock prédit: -11.4u (-15j restants) → prédit 29u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 7 | Stock prédit: 3.9u (23j restants) → prédit 7u mais non commandé |
+| [REB05] REB chips bio - sel de mer 35g | 49 | Stock prédit: -4.5u (-6j restants) → prédit 49u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | Stock prédit: 0.1u (6j restants) → prédit 2u mais non commandé |
 
 
@@ -202,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:52.458Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:26.944Z*

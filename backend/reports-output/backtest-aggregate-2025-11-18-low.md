@@ -2,7 +2,7 @@
 
 ## Contexte
 
-- **Date d'exécution** : 18/11/2025 16:43:12
+- **Date d'exécution** : 18/11/2025 21:07:46
 - **Clients analysés** : 34
 - **Clients réussis** : 34
 - **Clients échoués** : 0
@@ -22,10 +22,10 @@
 
 | Métrique | Moyenne | Médiane | Interprétation |
 |----------|---------|---------|----------------|
-| **Recall** | 90.3% | 100.0% | % de besoins réels détectés |
-| **Precision** | 51.6% | 50.0% | % de prédictions correctes (50.0% proposés non commandés) |
-| **F1-Score** | 61.1% | 66.7% | Équilibre détection/précision |
-| **MAPE** | 31.1% | 0.0% | Écart moyen sur les quantités prédites |
+| **Recall** | 97.1% | 100.0% | % de besoins réels détectés |
+| **Precision** | 53.5% | 50.0% | % de prédictions correctes (50.0% proposés non commandés) |
+| **F1-Score** | 63.5% | 66.7% | Équilibre détection/précision |
+| **MAPE** | 32.3% | 0.0% | Écart moyen sur les quantités prédites |
 
 <details>
 <summary>Qu'est-ce que la Moyenne vs Médiane ?</summary>
@@ -108,20 +108,20 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥80% | 30 | 88% |
-| 50-80% | 1 | 3% |
-| <50% | 3 | 9% |
+| ≥80% | 33 | 97% |
+| 50-80% | 0 | 0% |
+| <50% | 1 | 3% |
 
 ### Justesse des prédictions (Precision)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥70% | 8 | 24% |
-| 40-70% | 14 | 41% |
-| <40% | 12 | 35% |
+| ≥70% | 9 | 26% |
+| 40-70% | 12 | 35% |
+| <40% | 13 | 38% |
 
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:12.941Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:46.934Z*

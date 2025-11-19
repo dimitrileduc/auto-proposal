@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 12.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 24.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 8.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [MF0043] MF Brotaufstrich Apfel Meerrettich 250g | 38 | 50 | 12.0 | 24.0% | ✅ partial |
+| [MF0043] MF Brotaufstrich Apfel Meerrettich 250g | 42 | 50 | 8.0 | 16.0% | ✅ partial |
 
 
 ---
@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0034] MF Tarti Pomme Raifort 250g  | 21 | Stock prédit: -24.9u (-90j restants) → prédit 21u mais non commandé |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 17 | Stock prédit: -24.9u (-90j restants) → prédit 17u mais non commandé |
 
 
 ---
@@ -187,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:19.169Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:54.082Z*

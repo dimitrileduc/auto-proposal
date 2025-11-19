@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -146,7 +146,7 @@
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF028] JF VINAIGRET CAESAR WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -177,7 +177,7 @@
 | [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | Stock prédit: 0.3u (26j restants) → prédit 1u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | Stock prédit: -0.2u (-15j restants) → prédit 1u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | Stock prédit: -1.4u (-54j restants) → prédit 2u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock prédit: -1.4u (-54j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -209,4 +209,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:42:15.075Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:47.700Z*

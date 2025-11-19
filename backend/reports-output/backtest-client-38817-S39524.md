@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.95 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 44.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 13 | Avec erreur |
+| **MAE** | 0.79 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 39.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 8 | Égalité parfaite |
+| Partial Match (>0u) | 11 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,23 +138,23 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 3 | 4 | 1.0 | 25.0% | ✅ partial |
 | [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 5 | 8 | 3.0 | 37.5% | ✅ partial |
 | [LD014] LD Organic Avocado Spread 180 g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [LD015] LD Onion Spread 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [LD013] LD Tuscan Organic Spread 180 g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
-| [LD009] LD Organic Asparagus Spread 180 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [LD013] LD Tuscan Organic Spread 180 g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
+| [LD009] LD Organic Asparagus Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 6 | 5 | 1.0 | 20.0% | ✅ partial |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 3 | 2.0 | 66.7% | ✅ partial |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 4 | 2 | 2.0 | 100.0% | ✅ partial |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 4 | 3 | 1.0 | 33.3% | ✅ partial |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [LD011] LD Organic Kids Spread 180 g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [JF026] JF VINAIGRET TRUFFES WECK 200M | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 
@@ -188,7 +188,7 @@
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: -0.3u (-16j restants) → prédit 2u mais non commandé |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 2 | Stock prédit: -0.5u (-23j restants) → prédit 2u mais non commandé |
+| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: -0.5u (-23j restants) → prédit 1u mais non commandé |
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.4u (-10j restants) → prédit 2u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 3 | Stock prédit: -0.1u (-1j restants) → prédit 3u mais non commandé |
@@ -196,7 +196,7 @@
 | [LD010] LD Organic Truffle Spread 135 g | 1 | Stock prédit: -0.4u (-18j restants) → prédit 1u mais non commandé |
 | [LD012] LD Organic Samphire Spread 135 g | 2 | Stock prédit: -0.0u (0j restants) → prédit 2u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -1.1u (-52j restants) → prédit 1u mais non commandé |
-| [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: -1.2u (-56j restants) → prédit 2u mais non commandé |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | Stock prédit: -1.2u (-56j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -227,4 +227,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:05.484Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:38.952Z*

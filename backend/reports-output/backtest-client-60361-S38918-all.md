@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.86 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 46.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 1.29 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 69.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,12 +138,12 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [RIT01] RITCHIE Orange - verre 275ml | 2 | 4 | 2.0 | 50.0% | ✅ partial |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 5 | 4 | 1.0 | 25.0% | ✅ partial |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [RIT01] RITCHIE Orange - verre 275ml | 3 | 4 | 1.0 | 25.0% | ✅ partial |
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 7 | 4 | 3.0 | 75.0% | ✅ partial |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 4 | 3 | 1.0 | 33.3% | ✅ partial |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 
 
@@ -204,4 +204,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:48.868Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:20.987Z*

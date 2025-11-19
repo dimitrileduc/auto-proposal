@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 55.2% | 29 produits prédits, 16 corrects |
-| **Rappel** | 84.2% | 19 produits réels, 16 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **Précision** | 56.7% | 30 produits prédits, 17 corrects |
+| **Rappel** | 89.5% | 19 produits réels, 17 détectés |
+| **F1-Score** | 69.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.75 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 59.9% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| **MAE** | 0.65 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 49.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 9 | Égalité parfaite |
+| Partial Match (>0u) | 8 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -118,7 +118,7 @@
 
 ---
 
-## True Positives (16)
+## True Positives (17)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -140,12 +140,13 @@
 |---------|--------|------|-----------|----------|------|
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | 1 | 3.0 | 300.0% | ✅ partial |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | 2 | 1.0 | 50.0% | ✅ partial |
+| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [KOKO01] KOKO Kombucha original 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0012] MF Olives Mix 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [MF0024] MF KETCHUP 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [MF0047] MF Mayonnaise 250ml | 3 | 4 | 1.0 | 25.0% | ✅ partial |
-| [MF0033] MF Tarti Poivron chilli 250g | 3 | 1 | 2.0 | 200.0% | ✅ partial |
+| [MF0047] MF Mayonnaise 250ml | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [MF0033] MF Tarti Poivron chilli 250g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [MF0052] MF Pois chiches  500g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [MF0050] MF Cornichons aigre doux (belge) 500g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
@@ -184,7 +185,7 @@
 | [MF0030] MF Tarti Mangue Curry 250g  | 2 | Stock prédit: -0.6u (-13j restants) → prédit 2u mais non commandé |
 | [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | Stock prédit: 0.5u (10j restants) → prédit 2u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: -0.3u (-34j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 0 | Stock prédit: -0.3u (-34j restants) → prédit 0u mais non commandé |
 | [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.5u (-26j restants) → prédit 1u mais non commandé |
 | [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: -0.7u (-34j restants) → prédit 1u mais non commandé |
 | [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 2 | Stock prédit: -1.2u (-45j restants) → prédit 2u mais non commandé |
@@ -195,7 +196,7 @@
 
 ---
 
-## False Negatives (3)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -215,11 +216,10 @@
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock suffisant: 0.3u (15j restants > seuil 0j) |
 | [VID0009] Consigne casier | 8 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 | [VID0010] Consigne casier | 48 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:21.888Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:53.618Z*

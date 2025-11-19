@@ -63,9 +63,9 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 1.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 8 | Avec erreur |
+| **MAPE** | 30.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -144,8 +144,8 @@
 | [LV161] LV Tartinade Mangue curry 190g | 5 | 8 | 3.0 | 37.5% | ✅ partial |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | 4 | 2.0 | 50.0% | ✅ partial |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 3 | 4 | 1.0 | 25.0% | ✅ partial |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 3 | 2 | 1.0 | 50.0% | ✅ partial |
-| [JF021] JF PICKLES 350 ML | 5 | 6 | 1.0 | 16.7% | ✅ partial |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [JF021] JF PICKLES 350 ML | 4 | 6 | 2.0 | 33.3% | ✅ partial |
 | [LV136] LV Tartinade Betterave 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 
 
@@ -174,9 +174,9 @@
 | [LV145] LV Sauce Tartare 200 ml  | 3 | Stock prédit: 0.6u (6j restants) → prédit 3u mais non commandé |
 | [LV162] LV Tartinade Tomato Basilico 190g | 12 | Stock prédit: 5.5u (12j restants) → prédit 12u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 3 | Stock prédit: 1.0u (11j restants) → prédit 3u mais non commandé |
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 3 | Stock prédit: -1.2u (-30j restants) → prédit 3u mais non commandé |
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | Stock prédit: -1.2u (-30j restants) → prédit 2u mais non commandé |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | Stock prédit: -0.6u (-20j restants) → prédit 1u mais non commandé |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 2 | Stock prédit: -1.4u (-32j restants) → prédit 2u mais non commandé |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: -1.4u (-32j restants) → prédit 1u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.3u (5j restants) → prédit 4u mais non commandé |
 | [LV146] LV Sauce Aïoli 200 ml | 2 | Stock prédit: -0.7u (-26j restants) → prédit 2u mais non commandé |
 
@@ -202,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:15.456Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:49.540Z*

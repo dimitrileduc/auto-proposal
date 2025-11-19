@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 11.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 26.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 12.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 27.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 39 | 44 | 5.0 | 11.4% | ✅ partial |
-| [PF0608] FILOU/LD SAUCE SAMOURAI  10 L | 26 | 44 | 18.0 | 40.9% | ✅ partial |
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 44 | 44 | 0.0 | 0.0% | 🎯 exact |
+| [PF0608] FILOU/LD SAUCE SAMOURAI  10 L | 20 | 44 | 24.0 | 54.5% | ✅ partial |
 
 
 ---
@@ -182,4 +182,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:56.053Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:29.478Z*

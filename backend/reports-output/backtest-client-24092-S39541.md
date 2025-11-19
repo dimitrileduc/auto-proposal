@@ -168,11 +168,11 @@
 | [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 2 | Stock prédit: -0.4u (-6j restants) → prédit 2u mais non commandé |
 | [PF1687] JF CURRY KETCHUP SQUEEZE 300ML | 2 | Stock prédit: 0.7u (20j restants) → prédit 2u mais non commandé |
 | [PF0094] FILOU MOUTARDE 700 GR | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
-| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 6 | Stock prédit: -1.2u (-50j restants) → prédit 6u mais non commandé |
+| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 3 | Stock prédit: -1.2u (-50j restants) → prédit 3u mais non commandé |
 | [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
-| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.8u (-22j restants) → prédit 1u mais non commandé |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 2 | Stock prédit: 0.0u (2j restants) → prédit 2u mais non commandé |
-| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -0.8u (-22j restants) → prédit 2u mais non commandé |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 2 | Stock prédit: 0.0u (1j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -196,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:42.778Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:16.706Z*

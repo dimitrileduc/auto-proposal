@@ -16,7 +16,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 2 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 4 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -137,7 +137,7 @@
 
 ---
 
-## False Positives (2)
+## False Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -157,6 +157,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [REB05] REB chips bio - sel de mer 35g | 2 | Stock prédit: 1.1u (20j restants) → prédit 2u mais non commandé |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.6u (20j restants) → prédit 1u mais non commandé |
 | [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: -0.4u (-15j restants) → prédit 1u mais non commandé |
 | [LEA09] LEAMO cola bio 330ml | 1 | Stock prédit: -1.4u (-49j restants) → prédit 1u mais non commandé |
 
@@ -182,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:51.574Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:25.088Z*

@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 7.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 175.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 6.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 150.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 11 | 4 | 7.0 | 175.0% | ✅ partial |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 10 | 4 | 6.0 | 150.0% | ✅ partial |
 
 
 ---
@@ -189,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:43:11.678Z*
+*Rapport généré automatiquement le 2025-11-18T20:07:45.634Z*

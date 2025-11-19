@@ -144,7 +144,7 @@
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [CB001] CB Apple juice 25cl | 2 | 1 | 1.0 | 100.0% | ✅ partial |
@@ -155,7 +155,7 @@
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [MF0032] MF Tarti Pois chiches 250 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
@@ -184,10 +184,10 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: 0.4u (23j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | Stock prédit: -0.8u (-15j restants) → prédit 2u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | Stock prédit: -0.8u (-15j restants) → prédit 1u mais non commandé |
 | [JF029] JF VOL AU VENT BOCAL 400G | 1 | Stock prédit: 0.4u (23j restants) → prédit 1u mais non commandé |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | Stock prédit: 0.8u (23j restants) → prédit 1u mais non commandé |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: 0.8u (23j restants) → prédit 2u mais non commandé |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 1 | Stock prédit: -0.2u (-5j restants) → prédit 1u mais non commandé |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | Stock prédit: -0.5u (-11j restants) → prédit 1u mais non commandé |
 | [LD014] LD Organic Avocado Spread 180 g | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
@@ -211,7 +211,7 @@
 | [CB010] CB Jus de Pomme cubis 3l | 6 | Stock prédit: -9.9u (-53j restants) → prédit 6u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: -0.1u (-7j restants) → prédit 1u mais non commandé |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | Stock prédit: 0.1u (19j restants) → prédit 1u mais non commandé |
-| [MF0029] MF Tarti Datte chili 250g | 1 | Stock prédit: -0.3u (-14j restants) → prédit 1u mais non commandé |
+| [MF0029] MF Tarti Datte chili 250g | 2 | Stock prédit: -0.3u (-14j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -248,4 +248,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:35.217Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:08.332Z*

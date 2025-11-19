@@ -16,9 +16,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 57.1% | 14 produits prédits, 8 corrects |
+| **Précision** | 50.0% | 16 produits prédits, 8 corrects |
 | **Rappel** | 88.9% | 9 produits réels, 8 détectés |
-| **F1-Score** | 69.6% | Score équilibré global |
+| **F1-Score** | 64.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.75 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 41.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 0.63 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 37.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [LV160] LV Tartinade Aubergine 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
+| [LV160] LV Tartinade Aubergine 190g | 3 | 3 | 0.0 | 0.0% | 🎯 exact |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV161] LV Tartinade Mangue curry 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
 | [LV162] LV Tartinade Tomato Basilico 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial |
@@ -150,7 +150,7 @@
 
 ---
 
-## False Positives (6)
+## False Positives (8)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -174,6 +174,8 @@
 | [WIG02] WIGNAC cidre rosé bio 330ml | 3 | Stock prédit: 1.4u (10j restants) → prédit 3u mais non commandé |
 | [WIG03] WIGNAC cidre naturel bio 750ml | 4 | Stock prédit: 1.7u (9j restants) → prédit 4u mais non commandé |
 | [WIG04] WIGNAC cidre rosé bio 750ml | 4 | Stock prédit: 1.7u (9j restants) → prédit 4u mais non commandé |
+| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
 | [LV136] LV Tartinade Betterave 190g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 3 | Stock prédit: -0.6u (-10j restants) → prédit 3u mais non commandé |
 
@@ -205,4 +207,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:41.658Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:15.345Z*

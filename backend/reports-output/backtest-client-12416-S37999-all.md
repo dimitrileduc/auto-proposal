@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 10.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 7.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 16.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1795] LD MAYONNAI WASABI 250ML WECK | 30 | 30 | 0.0 | 0.0% | 🎯 exact |
-| [PF1803] LD SAUCE TARTARE 250ML WECK | 40 | 50 | 10.0 | 20.0% | ✅ partial |
+| [PF1795] LD MAYONNAI WASABI 250ML WECK | 27 | 30 | 3.0 | 10.0% | ✅ partial |
+| [PF1803] LD SAUCE TARTARE 250ML WECK | 39 | 50 | 11.0 | 22.0% | ✅ partial |
 
 
 ---
@@ -164,11 +164,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 10 | Stock prédit: 8.3u (18j restants) → prédit 10u mais non commandé |
-| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 10 | Stock prédit: 0.4u (0j restants) → prédit 10u mais non commandé |
-| [PF1805] LD SAUCE COCKTAIL 250ML WECK | 8 | Stock prédit: 2.9u (20j restants) → prédit 8u mais non commandé |
+| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 13 | Stock prédit: 8.3u (18j restants) → prédit 13u mais non commandé |
+| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 13 | Stock prédit: 0.4u (0j restants) → prédit 13u mais non commandé |
+| [PF1805] LD SAUCE COCKTAIL 250ML WECK | 7 | Stock prédit: 2.9u (20j restants) → prédit 7u mais non commandé |
 | [PF1809] LD SAUCE BEARNAISE 250ML WECK | 12 | Stock prédit: 2.5u (15j restants) → prédit 12u mais non commandé |
-| [PF3284] LD MOUTARDE DOUCE 250ML WECK | 8 | Stock prédit: 0.8u (2j restants) → prédit 8u mais non commandé |
+| [PF3284] LD MOUTARDE DOUCE 250ML WECK | 7 | Stock prédit: 0.8u (2j restants) → prédit 7u mais non commandé |
 
 
 ---
@@ -192,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:59.653Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:32.274Z*

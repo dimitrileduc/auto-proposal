@@ -141,10 +141,10 @@
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 3 | 1.0 | 33.3% | ✅ partial |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [LD014] LD Organic Avocado Spread 180 g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF032] JF SAUCE LAPIN 380GX6 | 1 | 2 | 1.0 | 50.0% | ✅ partial |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 3 | 2 | 1.0 | 50.0% | ✅ partial |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
@@ -177,15 +177,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [LD011] LD Organic Kids Spread 180 g | 1 | Stock prédit: 0.1u (2j restants) → prédit 1u mais non commandé |
 | [LD013] LD Tuscan Organic Spread 180 g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
 | [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 2 | Stock prédit: 1.1u (21j restants) → prédit 2u mais non commandé |
 | [ORG03] ORGANICA crunchy fruit myrtille 16g | 2 | Stock prédit: 1.1u (21j restants) → prédit 2u mais non commandé |
 | [ORG04] ORGANICA crunchy fruit fraise 12g | 2 | Stock prédit: 1.1u (21j restants) → prédit 2u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 2 | Stock prédit: 0.9u (12j restants) → prédit 2u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 2 | Stock prédit: 0.9u (12j restants) → prédit 2u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 2 | Stock prédit: 0.9u (12j restants) → prédit 2u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | Stock prédit: 0.5u (19j restants) → prédit 1u mais non commandé |
 | [JF029] JF VOL AU VENT BOCAL 400G | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | Stock prédit: -0.2u (-4j restants) → prédit 1u mais non commandé |
@@ -194,14 +194,14 @@
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | Stock prédit: 0.4u (7j restants) → prédit 1u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | Stock prédit: 0.4u (7j restants) → prédit 2u mais non commandé |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [DIS0003] Display TVF bois | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
 | [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-28j restants) → prédit 1u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (28j restants) → prédit 1u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.2u (-7j restants) → prédit 2u mais non commandé |
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 
 
@@ -226,4 +226,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:59.994Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:32.705Z*

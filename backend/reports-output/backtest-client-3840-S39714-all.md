@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 22.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 32.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 62.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 113.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -138,8 +138,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G | 70 | 43 | 27.0 | 62.8% | ✅ partial |
-| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1518 | 1500 | 18.0 | 1.2% | ✅ partial |
+| [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G | 140 | 43 | 97.0 | 225.6% | ✅ partial |
+| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1528 | 1500 | 28.0 | 1.9% | ✅ partial |
 
 
 ---
@@ -164,8 +164,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1728 | Stock prédit: 119.5u (1j restants) → prédit 1728u mais non commandé |
-| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4224 | Stock prédit: 854.1u (5j restants) → prédit 4224u mais non commandé |
+| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1589 | Stock prédit: 119.5u (1j restants) → prédit 1589u mais non commandé |
+| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4208 | Stock prédit: 854.1u (5j restants) → prédit 4208u mais non commandé |
 | [PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G | 166 | Stock prédit: -45.3u (-4j restants) → prédit 166u mais non commandé |
 
 
@@ -197,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:45.185Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:19.314Z*

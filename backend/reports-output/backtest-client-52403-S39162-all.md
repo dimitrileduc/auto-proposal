@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.31 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 46.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 10 | Avec erreur |
+| **MAE** | 1.46 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 51.9% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 11 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -143,13 +143,13 @@
 | [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 1 | 4 | 3.0 | 75.0% | ✅ partial |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 1 | 4 | 3.0 | 75.0% | ✅ partial |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | 2 | 0.0 | 0.0% | 🎯 exact |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | 2 | 1.0 | 50.0% | ✅ partial |
 | [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 
 
@@ -213,4 +213,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:37.868Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:11.103Z*

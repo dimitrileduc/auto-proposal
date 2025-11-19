@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 18.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 21.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 16.30 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 19.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,13 +140,13 @@
 |---------|--------|------|-----------|----------|------|
 | [PF1694] LD FR TARTINAD BIO POIVRON 200 | 434 | 434 | 0.0 | 0.0% | 🎯 exact |
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 434 | 434 | 0.0 | 0.0% | 🎯 exact |
-| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 31 | 62 | 31.0 | 50.0% | ✅ partial |
-| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 31 | 93 | 62.0 | 66.7% | ✅ partial |
-| [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 62 | 124 | 62.0 | 50.0% | ✅ partial |
+| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 37 | 62 | 25.0 | 40.3% | ✅ partial |
+| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 43 | 93 | 50.0 | 53.8% | ✅ partial |
+| [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 60 | 124 | 64.0 | 51.6% | ✅ partial |
 | [PF1690] LD BBQ BIO 300G | 25 | 25 | 0.0 | 0.0% | 🎯 exact |
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 25 | 50 | 25.0 | 50.0% | ✅ partial |
+| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 32 | 50 | 18.0 | 36.0% | ✅ partial |
 | [PF1695] LD FR TARTINADE BIO TOMATE 200 | 434 | 434 | 0.0 | 0.0% | 🎯 exact |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 62 | 62 | 0.0 | 0.0% | 🎯 exact |
+| [PF2937] LD FR TARTINADE BIO POIS 200 | 56 | 62 | 6.0 | 9.7% | ✅ partial |
 | [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | 40 | 0.0 | 0.0% | 🎯 exact |
 
 
@@ -174,17 +174,17 @@
 |---------|-------------|--------|
 | [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 31 | Stock prédit: 31.0u (8j restants) → prédit 31u mais non commandé |
 | [PF3361] LD FR TARTINADE BIO OIGNON 180G | 31 | Stock prédit: 31.0u (11j restants) → prédit 31u mais non commandé |
-| [PF3382] CB9032 - LD FR PUREE DE RAIFORT BIO 135g | 150 | Stock prédit: 25.0u (1j restants) → prédit 150u mais non commandé |
+| [PF3382] CB9032 - LD FR PUREE DE RAIFORT BIO 135g | 92 | Stock prédit: 25.0u (1j restants) → prédit 92u mais non commandé |
 | [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 434 | Stock prédit: 434.0u (11j restants) → prédit 434u mais non commandé |
 | [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 434 | Stock prédit: 0.0u (0j restants) → prédit 434u mais non commandé |
 | [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML | 40 | Stock prédit: -19.2u (-4j restants) → prédit 40u mais non commandé |
-| [PF3248] AA0347 - LD FR TARTINAD BIO RAIFORT 135G | 240 | Stock prédit: -782.0u (-17j restants) → prédit 240u mais non commandé |
-| [PF1840] LD TARTINADE BIO TRIPACK | 1235 | Stock prédit: -5125.0u (-18j restants) → prédit 1235u mais non commandé |
-| [PF1892] LD TARTINADE BIO TRUFFES 135G | 639 | Stock prédit: -2150.0u (-18j restants) → prédit 639u mais non commandé |
-| [PF2991] LD TARTINADE BIO CHATAIGNE135G | 400 | Stock prédit: -1385.0u (-18j restants) → prédit 400u mais non commandé |
-| [PF2990] LD TARTINADE BIO SALICORN 135G | 307 | Stock prédit: -1084.0u (-18j restants) → prédit 307u mais non commandé |
-| [PF3310] CB9026 - LD FR PESTO BIO CHAMPIGNONS TRUFFES 135G | 188 | Stock prédit: -611.0u (-18j restants) → prédit 188u mais non commandé |
-| [PF3311] CB9027 - LD FR TARTINADE BIO CEPES 135G | 422 | Stock prédit: -1395.0u (-17j restants) → prédit 422u mais non commandé |
+| [PF3248] AA0347 - LD FR TARTINAD BIO RAIFORT 135G | 230 | Stock prédit: -782.0u (-17j restants) → prédit 230u mais non commandé |
+| [PF1840] LD TARTINADE BIO TRIPACK | 1369 | Stock prédit: -5125.0u (-18j restants) → prédit 1369u mais non commandé |
+| [PF1892] LD TARTINADE BIO TRUFFES 135G | 608 | Stock prédit: -2150.0u (-18j restants) → prédit 608u mais non commandé |
+| [PF2991] LD TARTINADE BIO CHATAIGNE135G | 384 | Stock prédit: -1385.0u (-18j restants) → prédit 384u mais non commandé |
+| [PF2990] LD TARTINADE BIO SALICORN 135G | 299 | Stock prédit: -1084.0u (-18j restants) → prédit 299u mais non commandé |
+| [PF3310] CB9026 - LD FR PESTO BIO CHAMPIGNONS TRUFFES 135G | 168 | Stock prédit: -611.0u (-18j restants) → prédit 168u mais non commandé |
+| [PF3311] CB9027 - LD FR TARTINADE BIO CEPES 135G | 398 | Stock prédit: -1395.0u (-17j restants) → prédit 398u mais non commandé |
 | [PF2972] LD FR TARTINADE BIO OLIVE 200 | 434 | Stock prédit: -16.7u (-1j restants) → prédit 434u mais non commandé |
 | [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 248 | Stock prédit: -240.8u (-20j restants) → prédit 248u mais non commandé |
 | [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 434 | Stock prédit: -575.4u (-39j restants) → prédit 434u mais non commandé |
@@ -211,4 +211,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:17.652Z*
+*Rapport généré automatiquement le 2025-11-18T20:01:52.024Z*

@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 195.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 150.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 130.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0563] BONI MOUTARDE DOUCE 300 GR | 325 | 130 | 195.0 | 150.0% | ✅ partial |
+| [PF0563] BONI MOUTARDE DOUCE 300 GR | 260 | 130 | 130.0 | 100.0% | ✅ partial |
 
 
 ---
@@ -164,7 +164,7 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1501] BONI VINAI CIBOULETTE 450ML | 126 | Stock prédit: 51.5u (9j restants) → prédit 126u mais non commandé |
-| [PF1502] BONI VINAI FINE HERBE 450ML | 252 | Stock prédit: -317.3u (-39j restants) → prédit 252u mais non commandé |
+| [PF1502] BONI VINAI FINE HERBE 450ML | 227 | Stock prédit: -317.3u (-39j restants) → prédit 227u mais non commandé |
 | [PF1503] BONI VINAI MOUTARDE 450ML | 126 | Stock prédit: -150.7u (-38j restants) → prédit 126u mais non commandé |
 | [PF3302] BONI BIO MAYONNAISE 500ML | 110 | Stock prédit: -78.2u (-29j restants) → prédit 110u mais non commandé |
 
@@ -190,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:54.050Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:28.532Z*

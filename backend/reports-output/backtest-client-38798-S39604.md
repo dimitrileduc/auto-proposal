@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.91 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 47.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 7 | Avec erreur |
+| **MAE** | 0.82 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 23.6% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,15 +140,15 @@
 |---------|--------|------|-----------|----------|------|
 | [JF057] JF EGG MAYONNAISE 720ML WECK | 2 | 1 | 1.0 | 100.0% | ✅ partial |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF029] JF VOL AU VENT BOCAL 400G | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 4 | 5 | 1.0 | 20.0% | ✅ partial |
-| [LD013] LD Tuscan Organic Spread 180 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | 1 | 1.0 | 100.0% | ✅ partial |
+| [JF029] JF VOL AU VENT BOCAL 400G | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 3 | 5 | 2.0 | 40.0% | ✅ partial |
+| [LD013] LD Tuscan Organic Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
+| [LD014] LD Organic Avocado Spread 180 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 5 | 4.0 | 80.0% | ✅ partial |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 1 | 0.0 | 0.0% | 🎯 exact |
-| [JF032] JF SAUCE LAPIN 380GX6 | 4 | 5 | 1.0 | 20.0% | ✅ partial |
+| [JF032] JF SAUCE LAPIN 380GX6 | 3 | 5 | 2.0 | 40.0% | ✅ partial |
 
 
 ---
@@ -212,4 +212,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:23.478Z*
+*Rapport généré automatiquement le 2025-11-18T20:05:57.412Z*

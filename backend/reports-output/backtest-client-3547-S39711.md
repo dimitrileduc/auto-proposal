@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 26.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 13.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 200 | 200 | 0.0 | 0.0% | 🎯 exact |
+| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 174 | 200 | 26.0 | 13.0% | ✅ partial |
 
 
 ---
@@ -164,14 +164,14 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 200 | Stock prédit: 96.6u (18j restants) → prédit 200u mais non commandé |
-| [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | Stock prédit: -1.7u (0j restants) → prédit 50u mais non commandé |
+| [PF1803] LD SAUCE TARTARE 250ML WECK | 100 | Stock prédit: -1.7u (0j restants) → prédit 100u mais non commandé |
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 200 | Stock prédit: 96.6u (18j restants) → prédit 200u mais non commandé |
 | [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 200 | Stock prédit: 80.6u (13j restants) → prédit 200u mais non commandé |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 138 | Stock prédit: 119.5u (29j restants) → prédit 138u mais non commandé |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 155 | Stock prédit: 119.5u (29j restants) → prédit 155u mais non commandé |
 | [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 200 | Stock prédit: 96.6u (18j restants) → prédit 200u mais non commandé |
-| [PF1194] GF VIN FINES HERBES WECK 330ML | 153 | Stock prédit: 33.3u (12j restants) → prédit 153u mais non commandé |
+| [PF1194] GF VIN FINES HERBES WECK 330ML | 155 | Stock prédit: 33.3u (12j restants) → prédit 155u mais non commandé |
 | [PF0193] GF VIN ANCIENNE JERRYCAN 5L | 25 | Stock prédit: 4.2u (10j restants) → prédit 25u mais non commandé |
-| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 150 | Stock prédit: 73.3u (28j restants) → prédit 150u mais non commandé |
+| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 167 | Stock prédit: 73.3u (28j restants) → prédit 167u mais non commandé |
 | [PF1193] GF VIN TOMATE WECK 330ML | 145 | Stock prédit: -75.5u (-40j restants) → prédit 145u mais non commandé |
 
 
@@ -196,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:03.613Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:38.942Z*

@@ -160,8 +160,8 @@
 | [PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO | 150 | Stock prédit: 74.4u (19j restants) → prédit 150u mais non commandé |
 | [PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO | 30 | Stock prédit: 0.7u (0j restants) → prédit 30u mais non commandé |
 | [PF1925] DD SAUCE TARTARE  1000 ML | 80 | Stock prédit: 44.0u (24j restants) → prédit 80u mais non commandé |
-| [PF1057] DD MAYONNAISE TRUFFES  1000 ML | 486 | Stock prédit: 129.1u (13j restants) → prédit 486u mais non commandé |
-| [PF3263] 3312 - LD DD MAYONNAISE WASABI 280ML DTO | 70 | Stock prédit: 11.8u (10j restants) → prédit 70u mais non commandé |
+| [PF1057] DD MAYONNAISE TRUFFES  1000 ML | 496 | Stock prédit: 129.1u (13j restants) → prédit 496u mais non commandé |
+| [PF3263] 3312 - LD DD MAYONNAISE WASABI 280ML DTO | 67 | Stock prédit: 11.8u (10j restants) → prédit 67u mais non commandé |
 
 
 ---
@@ -193,4 +193,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:59.855Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:33.340Z*

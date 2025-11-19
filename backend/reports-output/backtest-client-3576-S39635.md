@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 37.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 23.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact |
+| [PF0078] FILOU CHASSEUR 5 L | 123 | 160 | 37.0 | 23.1% | ✅ partial |
 
 
 ---
@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 40 | Stock prédit: 30.8u (19j restants) → prédit 40u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 47 | Stock prédit: 30.8u (19j restants) → prédit 47u mais non commandé |
 
 
 ---
@@ -187,4 +187,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:37:59.412Z*
+*Rapport généré automatiquement le 2025-11-18T20:02:32.763Z*

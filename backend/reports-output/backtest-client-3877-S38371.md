@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1338.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 1263.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 47.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF1937] ZF MAYO TAPAS TRUFFES 180GR | 1302 | 2640 | 1338.0 | 50.7% | ✅ partial |
+| [PF1937] ZF MAYO TAPAS TRUFFES 180GR | 1377 | 2640 | 1263.0 | 47.8% | ✅ partial |
 
 
 ---
@@ -164,11 +164,11 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF2995] ZF PIZZA DRESSING 250ML | 640 | Stock prédit: 65.3u (2j restants) → prédit 640u mais non commandé |
-| [PF1919] ZF MAYO BEARNAISE 180GR | 1176 | Stock prédit: -1106.5u (-22j restants) → prédit 1176u mais non commandé |
-| [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR | 1302 | Stock prédit: -1601.1u (-27j restants) → prédit 1302u mais non commandé |
-| [PF3242] ZF SAUCE AIOLI 180GR | 868 | Stock prédit: -606.5u (-15j restants) → prédit 868u mais non commandé |
-| [PF2994] ZF CAESAR DRESSING 250ML | 320 | Stock prédit: 45.3u (7j restants) → prédit 320u mais non commandé |
-| [PF2993] ZF RANCH DRESSING 250ML | 137 | Stock prédit: 132.4u (25j restants) → prédit 137u mais non commandé |
+| [PF1919] ZF MAYO BEARNAISE 180GR | 1190 | Stock prédit: -1106.5u (-22j restants) → prédit 1190u mais non commandé |
+| [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR | 1290 | Stock prédit: -1601.1u (-27j restants) → prédit 1290u mais non commandé |
+| [PF3242] ZF SAUCE AIOLI 180GR | 1085 | Stock prédit: -606.5u (-15j restants) → prédit 1085u mais non commandé |
+| [PF2994] ZF CAESAR DRESSING 250ML | 427 | Stock prédit: 45.3u (7j restants) → prédit 427u mais non commandé |
+| [PF2993] ZF RANCH DRESSING 250ML | 360 | Stock prédit: 132.4u (25j restants) → prédit 360u mais non commandé |
 
 
 ---
@@ -192,4 +192,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:38:59.050Z*
+*Rapport généré automatiquement le 2025-11-18T20:03:32.135Z*

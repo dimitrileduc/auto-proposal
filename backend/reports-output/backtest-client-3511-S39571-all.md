@@ -62,10 +62,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 18.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 41.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 22.25 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 44.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -138,10 +138,10 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0078] FILOU CHASSEUR 5 L | 100 | 100 | 0.0 | 0.0% | 🎯 exact |
-| [PF0075] FILOU CHASSEUR  10 L | 52 | 88 | 36.0 | 40.9% | ✅ partial |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 18 | 24 | 6.0 | 25.0% | ✅ partial |
-| [PF0096] FILOU MOUTARDE 3 KG | 60 | 30 | 30.0 | 100.0% | ✅ partial |
+| [PF0078] FILOU CHASSEUR 5 L | 127 | 100 | 27.0 | 27.0% | ✅ partial |
+| [PF0075] FILOU CHASSEUR  10 L | 59 | 88 | 29.0 | 33.0% | ✅ partial |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 16 | 24 | 8.0 | 33.3% | ✅ partial |
+| [PF0096] FILOU MOUTARDE 3 KG | 55 | 30 | 25.0 | 83.3% | ✅ partial |
 
 
 ---
@@ -166,8 +166,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0097] FILOU MOUTARDE 5 KG | 30 | Stock prédit: -2.8u (-2j restants) → prédit 30u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 6 | Stock prédit: -4.3u (-32j restants) → prédit 6u mais non commandé |
+| [PF0097] FILOU MOUTARDE 5 KG | 27 | Stock prédit: -2.8u (-2j restants) → prédit 27u mais non commandé |
+| [PF0089] FILOU VOL AU VENT 400 GR | 5 | Stock prédit: -4.3u (-32j restants) → prédit 5u mais non commandé |
 
 
 ---
@@ -191,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:39:36.708Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:10.484Z*

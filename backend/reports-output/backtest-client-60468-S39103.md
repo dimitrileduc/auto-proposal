@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 3 | 4 | 1.0 | 25.0% | ✅ partial |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | 4 | 2.0 | 50.0% | ✅ partial |
 
 
 ---
@@ -163,7 +163,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JOY05] Organic Cherry Jam 370g | 4 | Stock prédit: 1.3u (27j restants) → prédit 4u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 3 | Stock prédit: 1.3u (27j restants) → prédit 3u mais non commandé |
 | [JOY03] JOY! Organic Apricot Jam 370g | 2 | Stock prédit: -0.6u (-8j restants) → prédit 2u mais non commandé |
 | [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | Stock prédit: -0.6u (-8j restants) → prédit 2u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock prédit: 1.1u (24j restants) → prédit 3u mais non commandé |
@@ -198,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:41:41.652Z*
+*Rapport généré automatiquement le 2025-11-18T20:06:15.181Z*

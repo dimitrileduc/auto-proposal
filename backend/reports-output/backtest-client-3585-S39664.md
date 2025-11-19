@@ -62,8 +62,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 80.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 96.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 60.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -138,7 +138,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type |
 |---------|--------|------|-----------|----------|------|
-| [PF0078] FILOU CHASSEUR 5 L | 240 | 160 | 80.0 | 50.0% | ✅ partial |
+| [PF0078] FILOU CHASSEUR 5 L | 256 | 160 | 96.0 | 60.0% | ✅ partial |
 
 
 ---
@@ -163,9 +163,9 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 80 | Stock prédit: -41.1u (-7j restants) → prédit 80u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 70 | Stock prédit: -41.1u (-7j restants) → prédit 70u mais non commandé |
 | [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: 2.0u (13j restants) → prédit 6u mais non commandé |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 104 | Stock prédit: -76.4u (-17j restants) → prédit 104u mais non commandé |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 108 | Stock prédit: -76.4u (-17j restants) → prédit 108u mais non commandé |
 
 
 ---
@@ -189,4 +189,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-18T15:40:18.568Z*
+*Rapport généré automatiquement le 2025-11-18T20:04:50.875Z*

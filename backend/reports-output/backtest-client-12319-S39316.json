@@ -12,8 +12,8 @@
     "precision": 0.5,
     "recall": 1,
     "f1Score": 0.6666666666666666,
-    "mae": 12,
-    "mape": 24
+    "mae": 8,
+    "mape": 16
   },
   "distribution": {
     "exactMatch": 0,
