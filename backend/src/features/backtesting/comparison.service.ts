@@ -77,6 +77,12 @@ export function compareSystemPredictionVsRealOrder(
         ? (absoluteError / realQty) * 100
         : 0;
 
+      // Récupérer les infos LLM si disponibles
+      const analyzedProduct = analyzedProducts.get(productId);
+      const quantitySource = analyzedProduct?.quantity_source;
+      const medianQty = quantitySource === 'llm' ? analyzedProduct?.calculation_metadata.median : undefined;
+      const llmPrediction = analyzedProduct?.llm_prediction;
+
       truePositives.push({
         productId,
         productName: systemProduct.product_name,
@@ -86,6 +92,9 @@ export function compareSystemPredictionVsRealOrder(
         errorPercent,
         matchType: classifyQuantityMatch(predictedQty, realQty),
         confidence: systemProduct.calculation_metadata.confidence,
+        quantitySource,
+        medianQty,
+        llmPrediction,
       });
     } else {
       // FALSE POSITIVE: Le système a prédit MAIS le client n'a pas commandé
@@ -154,6 +163,7 @@ export function compareSystemPredictionVsRealOrder(
     falseNegatives,
     productMetrics,
     quantityMetrics,
+    llmUsage: stockAnalysis.llm_usage,
   };
 }
 

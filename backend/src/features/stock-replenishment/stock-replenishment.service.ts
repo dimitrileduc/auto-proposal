@@ -4,6 +4,8 @@ import { predictStockStatus } from "./utils/prediction.utils";
 import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
 import { getTodayAsDateString } from "../../utils/date.utils";
+import { predictWithLLM, type LLMPredictionResult } from "../../services/llm-prediction.service";
+import pLimit from "p-limit";
 import type {
   ProductStockStatus,
   StockReplenishmentResult,
@@ -53,6 +55,12 @@ export async function calculateReplenishmentNeeds(
 
   const analyzedProducts: ProductStockStatus[] = []; // Produits à commander uniquement
   const allProducts: ProductStockStatus[] = []; // TOUS les produits analysés (pour backtest)
+
+  // Tracking LLM usage
+  let totalLLMCalls = 0;
+  let totalPromptTokens = 0;
+  let totalCompletionTokens = 0;
+  let totalCostUSD = 0;
 
   // 3. Pour chaque produit récent, analyser le risque de rupture
   for (const product of recentHistory.products) {
@@ -111,15 +119,77 @@ export async function calculateReplenishmentNeeds(
     const replenishmentThresholdDays = targetCoverage + leadTime;
     console.log(`     Seuil réappro: ${replenishmentThresholdDays}j (couverture ${targetCoverage}j + lead time ${leadTime}j)`);
 
-    // QUANTITÉ: Calculer selon médiane de l'historique
+    // QUANTITÉ: Calculer selon médiane de l'historique (baseline)
     const calculation = calculateQuantityFromHistory(ordersToUse);
-    console.log(`     Quantité calculée: ${calculation.quantity} (${calculation.metadata.strategy}, ${calculation.metadata.confidence})`);
+    console.log(`     Quantité médiane: ${calculation.quantity} (${calculation.metadata.strategy}, ${calculation.metadata.confidence})`);
 
     // Skip si pas d'historique récent pour calculer la quantité
     if (calculation.quantity === null) {
       console.log(`     ❌ SKIP: Pas d'historique pour calculer quantité`);
       continue;
     }
+
+    // STRATÉGIE: Si >2 commandes → LLM, sinon → médiane
+    let finalQuantity = calculation.quantity;
+    let llmPrediction = undefined;
+    let quantitySource: "median" | "llm" = "median";
+
+    if (ordersToUse.length > 2) {
+      try {
+        console.log(`     🤖 Prédiction LLM (${ordersToUse.length} commandes)...`);
+
+        // Préparer l'historique pour le LLM (du plus récent au plus ancien)
+        const orderHistory = [...ordersToUse]
+          .sort(
+            (a, b) =>
+              new Date(b.date_order).getTime() -
+              new Date(a.date_order).getTime()
+          )
+          .map((order) => ({
+            date: order.date_order,
+            quantity: order.quantity,
+          }));
+
+        const llmResult = await predictWithLLM({
+          productName: product.product_name,
+          orderHistory,
+          currentDate: analysisEndDate,
+        });
+
+        // REMPLACER la médiane par LLM
+        finalQuantity = llmResult.prediction.recommended_quantity;
+        quantitySource = "llm";
+
+        llmPrediction = {
+          quantity: llmResult.prediction.recommended_quantity,
+          confidence: llmResult.prediction.confidence,
+          reasoning: llmResult.prediction.reasoning,
+          temporal_analysis: llmResult.prediction.temporal_analysis,
+          quantity_analysis: llmResult.prediction.quantity_analysis,
+          trend_detected: llmResult.prediction.trend_detected,
+        };
+
+        // Accumuler l'usage
+        totalLLMCalls++;
+        totalPromptTokens += llmResult.usage.promptTokens;
+        totalCompletionTokens += llmResult.usage.completionTokens;
+        totalCostUSD += llmResult.usage.costUSD;
+
+        const llmDiff = llmResult.prediction.recommended_quantity - calculation.quantity;
+        const llmDiffPct = (llmDiff / calculation.quantity) * 100;
+        console.log(
+          `     ✅ LLM: ${llmResult.prediction.recommended_quantity}u (${llmResult.prediction.confidence}) | vs médiane: ${llmDiff > 0 ? "+" : ""}${llmDiff}u (${llmDiffPct > 0 ? "+" : ""}${llmDiffPct.toFixed(1)}%) | $${llmResult.usage.costUSD.toFixed(4)}`
+        );
+      } catch (error) {
+        console.log(`     ⚠️ LLM prediction failed, fallback to median: ${error instanceof Error ? error.message : "Unknown error"}`);
+        // Fallback: garder médiane
+        quantitySource = "median";
+      }
+    } else {
+      console.log(`     📊 Médiane utilisée (≤2 commandes, pas de LLM)`);
+    }
+
+    console.log(`     ✅ Quantité finale: ${finalQuantity}u (source: ${quantitySource})`);
 
     // Créer l'objet produit analysé (avec toutes ses infos)
     const productStatus: ProductStockStatus = {
@@ -145,8 +215,12 @@ export async function calculateReplenishmentNeeds(
       },
 
       // 3. Quantity calculation (Phase 2: QUANTITÉ)
-      quantity_to_order: calculation.quantity,
+      quantity_to_order: finalQuantity, // LLM si >2 commandes, sinon médiane
       calculation_metadata: calculation.metadata,
+
+      // 4. LLM prediction (si utilisé)
+      llm_prediction: llmPrediction,
+      quantity_source: quantitySource,
     };
 
     // Ajouter TOUS les produits analysés (pour backtest)
@@ -167,12 +241,29 @@ export async function calculateReplenishmentNeeds(
     analyzedProducts.push(productStatus);
   }
 
-  console.log(`\n✅ Analyse terminée: ${analyzedProducts.length} produits à commander\n`);
+  console.log(`\n✅ Analyse terminée: ${analyzedProducts.length} produits à commander`);
+
+  // Log LLM usage
+  if (totalLLMCalls > 0) {
+    console.log(`\n💰 LLM Usage:`);
+    console.log(`   Calls: ${totalLLMCalls}`);
+    console.log(`   Tokens: ${totalPromptTokens} input + ${totalCompletionTokens} output = ${totalPromptTokens + totalCompletionTokens} total`);
+    console.log(`   Cost: $${totalCostUSD.toFixed(4)} (~${(totalCostUSD * 100).toFixed(2)} cents)`);
+  }
+
+  console.log();
 
   return {
     client_id: clientId,
     products: analyzedProducts,
     total_products_in_history: recentHistory.products.length, // Nombre total avant filtrage
     all_products: allProducts, // TOUS les produits analysés (pour backtest)
+    llm_usage: totalLLMCalls > 0 ? {
+      calls: totalLLMCalls,
+      promptTokens: totalPromptTokens,
+      completionTokens: totalCompletionTokens,
+      totalTokens: totalPromptTokens + totalCompletionTokens,
+      costUSD: totalCostUSD,
+    } : undefined,
   };
 }

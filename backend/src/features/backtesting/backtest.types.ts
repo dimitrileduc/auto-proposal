@@ -6,6 +6,17 @@
  */
 
 /**
+ * Résumé d'usage LLM
+ */
+export interface LLMUsageSummary {
+  calls: number;
+  promptTokens: number;
+  completionTokens: number;
+  totalTokens: number;
+  costUSD: number;
+}
+
+/**
  * Résultat complet de la comparaison Système vs Réel
  */
 export interface BacktestComparisonResult {
@@ -40,6 +51,9 @@ export interface BacktestComparisonResult {
       partialMatch: number; // Erreur > 0 (avec erreur)
     };
   };
+
+  // Usage LLM (si utilisé)
+  llmUsage?: LLMUsageSummary;
 }
 
 /**
@@ -54,6 +68,18 @@ export interface ProductMatch {
   errorPercent: number;         // Erreur en pourcentage (pour MAPE)
   matchType: 'exact' | 'partial';  // exact = égalité parfaite, partial = erreur > 0
   confidence: 'low' | 'medium' | 'high';  // Niveau de confiance de la prédiction (basé sur historique)
+
+  // Infos LLM (si utilisé pour prédire la quantité)
+  quantitySource?: 'median' | 'llm';
+  medianQty?: number; // Quantité médiane (pour comparaison si LLM utilisé)
+  llmPrediction?: {
+    quantity: number;
+    confidence: 'low' | 'medium' | 'high';
+    reasoning: string;
+    temporal_analysis: string;
+    quantity_analysis: string;
+    trend_detected: boolean;
+  };
 }
 
 /**

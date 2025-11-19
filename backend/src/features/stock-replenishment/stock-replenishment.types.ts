@@ -15,6 +15,15 @@ export interface StockPredictionDetails {
   replenishment_threshold_days: number;
 }
 
+export interface LLMPredictionDetails {
+  quantity: number;
+  confidence: "low" | "medium" | "high";
+  reasoning: string;
+  temporal_analysis: string;
+  quantity_analysis: string;
+  trend_detected: boolean;
+}
+
 export interface ProductStockStatus {
   product_id: number;
   product_name: string;
@@ -29,6 +38,18 @@ export interface ProductStockStatus {
   // 3. Quantity calculation (Phase 2: QUANTITÉ)
   quantity_to_order: number;
   calculation_metadata: QuantityCalculationMetadata;
+
+  // 4. LLM prediction (si utilisé pour >2 commandes)
+  llm_prediction?: LLMPredictionDetails;
+  quantity_source?: "median" | "llm"; // Source de la quantité finale
+}
+
+export interface LLMUsageSummary {
+  calls: number;
+  promptTokens: number;
+  completionTokens: number;
+  totalTokens: number;
+  costUSD: number;
 }
 
 export interface StockReplenishmentResult {
@@ -36,4 +57,5 @@ export interface StockReplenishmentResult {
   products: ProductStockStatus[]; // Uniquement les produits avec risque de rupture
   total_products_in_history: number; // Nombre total de produits dans l'historique (180j) avant filtrage
   all_products?: ProductStockStatus[]; // TOUS les produits analysés (avec + sans rupture) pour backtest
+  llm_usage?: LLMUsageSummary; // Usage LLM pour ce client (si utilisé)
 }
