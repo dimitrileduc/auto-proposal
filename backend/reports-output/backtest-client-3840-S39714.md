@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 7
+- **Tokens**: 10,907 input + 1,439 output = 12,346 total
+- **Coût**: $0.0543 (~5.43¢)
+- **Coût par produit LLM**: $0.0078
+
 
 ---
 
@@ -64,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 22.50 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 32.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 13.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 20.1% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -140,8 +147,59 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G | 70 | 43 | 27.0 | 62.8% | ✅ partial | 📊 Médiane |
-| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1518 | 1500 | 18.0 | 1.2% | ✅ partial | 📊 Médiane |
+| [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G | 60 | 43 | 17.0 | 39.5% | ✅ partial | 🤖 LLM |
+| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1510 | 1500 | 10.0 | 0.7% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G</strong> - LLM: 60u vs Médiane: undefinedu (Réel: 43u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 60u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 43u
+- 📉 **Erreur LLM**: 17u (39.5%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. L'analyse se base uniquement sur la tendance récente (3 mois) : médiane de 69,5u après exclusion de l'outlier de 500u (commande événementielle). Recommandation conservatrice de 60u compte tenu du manque d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G</strong> - LLM: 1510u vs Médiane: undefinedu (Réel: 1500u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1510u (confidence: medium)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1500u
+- 📉 **Erreur LLM**: 10u (0.7%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline = 0. Les 3 derniers mois montrent une demande stable autour de 1500-1536u sans tendance nette. Recommandation basée sur la médiane récente (1500u) avec léger ajustement conservateur à 1510u pour couvrir la demande observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -168,8 +226,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1728 | Stock prédit: 119.5u (1j restants) → prédit 1728u mais non commandé |
-| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4224 | Stock prédit: 854.1u (5j restants) → prédit 4224u mais non commandé |
+| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1450 | Stock prédit: 119.5u (1j restants) → prédit 1450u mais non commandé |
+| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4256 | Stock prédit: 854.1u (5j restants) → prédit 4256u mais non commandé |
 | [PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G | 166 | Stock prédit: -45.3u (-4j restants) → prédit 166u mais non commandé |
 
 
@@ -201,4 +259,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:10.117Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:15.194Z*

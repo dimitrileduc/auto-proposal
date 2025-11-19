@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 33
+- **Tokens**: 50,824 input + 6,649 output = 57,473 total
+- **Coût**: $0.2522 (~25.22¢)
+- **Coût par produit LLM**: $0.0076
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.13 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,14 +147,137 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
 | [MF0053] MF Maïs 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+
+
+### 🤖 Détails des Prédictions LLM (5 produits)
+
+
+<details>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée de référence N-1 disponible, donc baseline = 0. Les 3 derniers mois montrent une activité minimale (3 commandes unitaires). Par prudence, je recommande 1 unité pour maintenir la disponibilité sans risque de surstockage sur ce produit à rotation très faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent seulement 2 commandes minimes (1u et 2u), suggérant un produit en phase de lancement ou à très faible rotation. Recommandation prudente de 2 unités basée uniquement sur la tendance récente observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande très faible et sporadique (1-2 unités). Recommandation conservatrice de 2 unités basée uniquement sur la tendance récente observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. Les 3-4 derniers mois montrent une demande très faible et sporadique (1-2u par commande). En l'absence de référence historique et vu la faible fréquence d'achat, je recommande un réapprovisionnement conservateur de 2 unités pour limiter le risque de surstockage.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible, donc impossible d'établir une baseline fiable. La tendance des 3 derniers mois montre une demande stable et régulière de 2 unités par commande. Recommandation basée uniquement sur l'historique récent, d'où une confiance faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -177,10 +307,10 @@
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.9u (28j restants) → prédit 1u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.9u (21j restants) → prédit 1u mais non commandé |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.9u (25j restants) → prédit 1u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: 1.8u (21j restants) → prédit 1u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 2 | Stock prédit: 1.8u (21j restants) → prédit 2u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.8u (11j restants) → prédit 1u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.8u (13j restants) → prédit 1u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: 1.8u (21j restants) → prédit 1u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 2 | Stock prédit: 1.8u (21j restants) → prédit 2u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
 | [KOKO01] KOKO Kombucha original 330ml | 2 | Stock prédit: -0.7u (-8j restants) → prédit 2u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.5u (18j restants) → prédit 1u mais non commandé |
@@ -225,4 +355,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:32.196Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:14.200Z*

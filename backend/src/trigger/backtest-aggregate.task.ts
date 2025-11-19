@@ -66,6 +66,14 @@ export interface BacktestAggregateResult {
 
   individualResults: BacktestIndividualResult[];
 
+  llm_usage?: {
+    calls: number;
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+    costUSD: number;
+  };
+
   reports: {
     json: string;      // Path vers backtest-aggregate-{date}.json
     markdown: string;  // Path vers backtest-aggregate-{date}.md
@@ -129,6 +137,12 @@ export const backtestAggregateTask = task({
     const allResults: BacktestIndividualResult[] = [];
     const allResultsNoLow: BacktestIndividualResult[] = [];
     const allResultsAll: BacktestIndividualResult[] = [];
+
+    // Track LLM usage across all clients
+    let totalLLMCalls = 0;
+    let totalPromptTokens = 0;
+    let totalCompletionTokens = 0;
+    let totalCostUSD = 0;
 
     for (let chunkIdx = 0; chunkIdx < totalChunks; chunkIdx++) {
       const chunkStart = chunkIdx * BATCH_SIZE;
@@ -212,6 +226,14 @@ export const backtestAggregateTask = task({
               });
             }
 
+            // Aggregate LLM usage
+            if (taskResult.llm_usage) {
+              totalLLMCalls += taskResult.llm_usage.calls;
+              totalPromptTokens += taskResult.llm_usage.promptTokens;
+              totalCompletionTokens += taskResult.llm_usage.completionTokens;
+              totalCostUSD += taskResult.llm_usage.costUSD;
+            }
+
             console.log(
               `   ✅ ${taskResult.clientName}: Recall ${(taskResult.comparison.recall * 100).toFixed(1)}%, ` +
               `MAPE ${taskResult.comparison.mape.toFixed(1)}%`
@@ -275,6 +297,15 @@ export const backtestAggregateTask = task({
     console.log(`   Mean MAPE: ${aggregateMetrics.mean.mape.toFixed(1)}%`);
     console.log(`   Median MAPE: ${aggregateMetrics.median.mape.toFixed(1)}%`);
 
+    // Log LLM usage summary
+    if (totalLLMCalls > 0) {
+      console.log(`\n💰 LLM Usage Summary:`);
+      console.log(`   Total Calls: ${totalLLMCalls}`);
+      console.log(`   Total Tokens: ${totalPromptTokens + totalCompletionTokens} (${totalPromptTokens} prompt + ${totalCompletionTokens} completion)`);
+      console.log(`   Total Cost: $${totalCostUSD.toFixed(4)}`);
+      console.log(`   Avg Cost per Client: $${(totalCostUSD / successfulResults.length).toFixed(4)}`);
+    }
+
     // ===== ÉTAPE 4: GÉNÉRATION RAPPORTS =====
     console.log(`\n📝 Generating reports...`);
 
@@ -294,6 +325,13 @@ export const backtestAggregateTask = task({
       },
       aggregateMetrics,
       individualResults: allResults,
+      llm_usage: totalLLMCalls > 0 ? {
+        calls: totalLLMCalls,
+        promptTokens: totalPromptTokens,
+        completionTokens: totalCompletionTokens,
+        totalTokens: totalPromptTokens + totalCompletionTokens,
+        costUSD: totalCostUSD,
+      } : undefined,
     };
 
     // JSON CLEAN (pour analyse programmatique)
@@ -391,6 +429,13 @@ export const backtestAggregateTask = task({
       clientsFailed: allResults.length - successfulResults.length,
       aggregateMetrics,
       individualResults: allResults,
+      llm_usage: totalLLMCalls > 0 ? {
+        calls: totalLLMCalls,
+        promptTokens: totalPromptTokens,
+        completionTokens: totalCompletionTokens,
+        totalTokens: totalPromptTokens + totalCompletionTokens,
+        costUSD: totalCostUSD,
+      } : undefined,
       reports: {
         json: jsonPath,
         markdown: mdPath,

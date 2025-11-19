@@ -19,9 +19,9 @@ export interface LLMPredictionDetails {
   quantity: number;
   confidence: "low" | "medium" | "high";
   reasoning: string;
-  temporal_analysis: string;
-  quantity_analysis: string;
-  trend_detected: boolean;
+  baseline_quantity: number; // Médiane N-1 après de-eventing
+  outliers_detected: number[]; // Outliers détectés (> 2x médiane)
+  trend_ratio: string; // Ex: "+15%", "stable", "-10%"
 }
 
 export interface ProductStockStatus {

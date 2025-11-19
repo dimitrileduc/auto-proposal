@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 7
+- **Tokens**: 10,622 input + 1,312 output = 11,934 total
+- **Coût**: $0.0515 (~5.15¢)
+- **Coût par produit LLM**: $0.0074
+
 
 ---
 
@@ -64,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 123.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 102.7% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 4.33 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 3.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -140,9 +147,84 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 216 | 110 | 106.0 | 96.4% | ✅ partial | 📊 Médiane |
-| [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML | 350 | 124 | 226.0 | 182.3% | ✅ partial | 📊 Médiane |
-| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 162 | 125 | 37.0 | 29.6% | ✅ partial | 📊 Médiane |
+| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 111 | 110 | 1.0 | 0.9% | ✅ partial | 🤖 LLM |
+| [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML | 135 | 124 | 11.0 | 8.9% | ✅ partial | 🤖 LLM |
+| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 126 | 125 | 1.0 | 0.8% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (3 produits)
+
+
+<details>
+<summary><strong>1. [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML</strong> - LLM: 111u vs Médiane: undefinedu (Réel: 110u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 111u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 110u
+- 📉 **Erreur LLM**: 1u (0.9%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. La seule référence est une commande récente de 111u en août 2025. Par prudence, on recommande cette quantité observée comme point de départ, mais avec une confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML</strong> - LLM: 135u vs Médiane: undefinedu (Réel: 124u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 135u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 124u
+- 📉 **Erreur LLM**: 11u (8.9%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline fiable. La seule observation récente (135u en août 2025) sert de référence minimale. Recommandation basée uniquement sur cette commande isolée, d'où une confiance faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML</strong> - LLM: 126u vs Médiane: undefinedu (Réel: 125u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 126u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 125u
+- 📉 **Erreur LLM**: 1u (0.8%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. La seule référence est une commande récente de 126u en août 2025. Par prudence, je recommande cette quantité observée comme point de départ, mais avec une confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -196,4 +278,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:52.074Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:41.539Z*

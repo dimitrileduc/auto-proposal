@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 4
+- **Tokens**: 6,275 input + 805 output = 7,080 total
+- **Coût**: $0.0309 (~3.09¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -65,7 +72,7 @@
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | 8.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
+| **MAPE** | 41.7% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -140,10 +147,109 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | 16 | 16.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 48 | 16.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 16 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [MF0062] ​MF Tarti Betterave rouge | 16 | 16 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 40 | 16 | 24.0 | 150.0% | ✅ partial | 🤖 LLM |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 40 | 48 | 8.0 | 16.7% | ✅ partial | 🤖 LLM |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 16 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [MF0062] ​MF Tarti Betterave rouge | 16 | 16 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (4 produits)
+
+
+<details>
+<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM: 40u vs Médiane: undefinedu (Réel: 16u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 40u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 16u
+- 📉 **Erreur LLM**: 24u (150.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline fiable. La tendance récente montre une décroissance régulière (64→48→32→16u sur 3 mois, soit -25% en moyenne). Recommandation basée uniquement sur la trajectoire descendante observée, avec prudence car manque d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM: 40u vs Médiane: undefinedu (Réel: 48u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 40u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 48u
+- 📉 **Erreur LLM**: 8u (16.7%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'une baseline fiable. Les 4 derniers mois montrent une demande oscillant entre 32u et 48u (médiane 40u). Sans historique de référence, je recommande prudemment 40u basé uniquement sur la tendance récente observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - LLM: 16u vs Médiane: undefinedu (Réel: 16u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 16u (confidence: medium)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 16u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir un baseline historique. Les 4 commandes récentes montrent une régularité parfaite à 16u (toutes identiques), suggérant un cycle de réapprovisionnement stable. En l'absence d'historique et de variation, je recommande 16u avec confiance moyenne.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM: 16u vs Médiane: undefinedu (Réel: 16u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 16u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 16u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline = 0. Les 3 derniers mois montrent une consommation récente stable à 16u (juillet avec 64u identifié comme outlier potentiel). Recommandation basée uniquement sur la tendance récente observée, d'où une confiance faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -188,4 +294,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:33.176Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:06.000Z*

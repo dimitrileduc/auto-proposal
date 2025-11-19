@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 5
+- **Tokens**: 7,738 input + 1,012 output = 8,750 total
+- **Coût**: $0.0384 (~3.84¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 100.0% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 0.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -140,8 +147,59 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 3 | 1 | 2.0 | 200.0% | ✅ partial | 📊 Médiane |
+| [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 80u vs Médiane: undefinedu (Réel: 80u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 80u (confidence: medium)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 80u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline = 0. Les 5 dernières commandes (juillet-septembre 2025) montrent une demande parfaitement stable à 80u. En l'absence d'historique de référence mais avec une tendance récente très régulière, je recommande 80u avec confiance moyenne.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline = 0. Les 3 derniers mois montrent une activité naissante (1u, 3u, 3u) avec une moyenne de ~2.3u. Par prudence et en absence d'historique, je recommande 2u en approche conservatrice pour ce produit apparemment nouveau ou peu actif.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -193,4 +251,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:39.056Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:09.692Z*

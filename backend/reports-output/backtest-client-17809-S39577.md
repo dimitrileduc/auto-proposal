@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 13
+- **Tokens**: 20,107 input + 2,596 output = 22,703 total
+- **Coût**: $0.0993 (~9.93¢)
+- **Coût par produit LLM**: $0.0076
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.83 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 9 | Avec erreur |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 66.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,18 +147,285 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 3 | 1 | 2.0 | 200.0% | ✅ partial | 📊 Médiane |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [LV131] LV Tartinade Potiron 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [LV135] LV Tartinade Basilico 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [LV136] LV Tartinade Betterave 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [LV160] LV Tartinade Aubergine 190g | 3 | 1 | 2.0 | 200.0% | ✅ partial | 🤖 LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV131] LV Tartinade Potiron 190g | 3 | 1 | 2.0 | 200.0% | ✅ partial | 🤖 LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [LV135] LV Tartinade Basilico 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
+| [LV136] LV Tartinade Betterave 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [LV330] LV BIO Tartinade Toscana 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
+
+
+### 🤖 Détails des Prédictions LLM (11 produits)
+
+
+<details>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM: 3u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 3u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 2u (200.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. La recommandation se base uniquement sur les 3 derniers mois montrant une demande faible et stable (2-3 unités). Confiance faible en raison de l'absence totale d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'un baseline fiable. Les 3 derniers mois montrent une demande très faible et sporadique (1-3u). En l'absence d'historique, recommandation conservatrice de 2u basée uniquement sur la médiane récente (2u).
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'un baseline fiable. Les 3 derniers mois montrent une demande très faible (1-3u) suggérant un produit récent ou à rotation lente. Recommandation conservatrice de 2u basée uniquement sur la tendance récente observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - LLM: 3u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 3u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 2u (200.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Baseline N-1 établi à 1u après exclusion de l'outlier (2u > 2×médiane). La tendance actuelle montre une commande de 3u, soit +200% vs baseline, mais avec un seul point de données récent. Recommandation alignée sur la demande observée en septembre 2025, avec prudence vu l'historique limité.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline solide. La tendance actuelle montre une demande faible et récente (2-3u sur 3 mois). Recommandation conservatrice basée uniquement sur l'historique récent observé dans VUE 2.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>6. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline robuste. Les 3 derniers mois montrent une demande sporadique très faible (1-2u par commande). Par prudence, je recommande 1 unité compte tenu du caractère très marginal de ce produit de niche bio.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande très faible et sporadique (1-2 unités). Recommandation conservatrice de 2 unités compte tenu du manque d'historique et de la faible vélocité observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>8. [LV136] LV Tartinade Betterave 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline solide. Les 3 derniers mois montrent des commandes très faibles et décroissantes (3u→2u→1u). Recommandation conservatrice de 2 unités basée uniquement sur la tendance récente, avec une confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>9. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande très faible et constante (1u/mois). Recommandation minimale de 1 unité compte tenu de l'activité récente sporadique et du manque de données de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>10. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline solide. Les 3 derniers mois montrent une demande très faible (1-2 unités sporadiques). Recommandation minimale de 1 unité par prudence, avec confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>11. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM: 3u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 3u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. Les données récentes montrent uniquement 2 commandes (2u et 3u) sur les 3 derniers mois, suggérant un produit à très faible rotation. Recommandation conservatrice de 3 unités basée uniquement sur l'observation récente, avec confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -212,4 +486,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:31:02.139Z*
+*Rapport généré automatiquement le 2025-11-19T17:54:07.546Z*

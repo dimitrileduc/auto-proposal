@@ -11,10 +11,10 @@
 
 ### 💰 Usage LLM
 
-- **Appels**: 26
-- **Tokens**: 40,026 input + 27,907 output = 67,933 total
-- **Coût**: $0.5387 (~53.87¢)
-- **Coût par produit LLM**: $0.0207
+- **Appels**: 25
+- **Tokens**: 38,065 input + 5,089 output = 43,154 total
+- **Coût**: $0.1905 (~19.05¢)
+- **Coût par produit LLM**: $0.0076
 
 
 ---
@@ -196,7 +196,7 @@
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.0u (-2j restants) → prédit 1u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock prédit: -0.8u (-49j restants) → prédit 1u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.9u (-53j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 50 | Stock prédit: -0.5u (-36j restants) → prédit 50u mais non commandé |
 
 
 ---
@@ -220,4 +220,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:28:43.627Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:37.135Z*

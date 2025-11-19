@@ -2,7 +2,7 @@
 
 ## Contexte
 
-- **Date d'exécution** : 19/11/2025 17:31:09
+- **Date d'exécution** : 19/11/2025 18:54:34
 - **Clients analysés** : 3
 - **Clients réussis** : 3
 - **Clients échoués** : 0
@@ -26,6 +26,8 @@
 | **Precision** | 54.9% | 50.0% | % de prédictions correctes (50.0% proposés non commandés) |
 | **F1-Score** | 64.1% | 66.7% | Équilibre détection/précision |
 | **MAPE** | 36.1% | 50.0% | Écart moyen sur les quantités prédites |
+
+
 
 <details>
 <summary>Qu'est-ce que la Moyenne vs Médiane ?</summary>
@@ -124,4 +126,4 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:31:09.916Z*
+*Rapport généré automatiquement le 2025-11-19T17:54:34.031Z*

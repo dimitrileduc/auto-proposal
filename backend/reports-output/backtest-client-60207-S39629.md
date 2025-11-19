@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 8
+- **Tokens**: 12,294 input + 1,608 output = 13,902 total
+- **Coût**: $0.0610 (~6.10¢)
+- **Coût par produit LLM**: $0.0076
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 10.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 8.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,7 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 120 | 120 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 110 | 120 | 10.0 | 8.3% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM: 110u vs Médiane: undefinedu (Réel: 120u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 110u (confidence: medium)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 120u
+- 📉 **Erreur LLM**: 10u (8.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. Les 3 derniers mois montrent une demande récurrente autour de 120u (3 commandes) avec une exception à 60u. Recommandation basée sur la médiane récente de 120u, légèrement ajustée à 110u par prudence vu l'absence d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -167,16 +201,16 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 35 | Stock prédit: 31.1u (22j restants) → prédit 35u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 28 | Stock prédit: 4.6u (10j restants) → prédit 28u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 21 | Stock prédit: -4.9u (-5j restants) → prédit 21u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 60 | Stock prédit: 31.1u (22j restants) → prédit 60u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 14 | Stock prédit: 4.6u (10j restants) → prédit 14u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 18 | Stock prédit: -4.9u (-5j restants) → prédit 18u mais non commandé |
 | [ORG08] ORGANICA crunchy fruit framboise 12g | 18 | Stock prédit: 7.6u (15j restants) → prédit 18u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 60 | Stock prédit: 13.8u (12j restants) → prédit 60u mais non commandé |
 | [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 20 | Stock prédit: 4.6u (12j restants) → prédit 20u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 30 | Stock prédit: 13.8u (12j restants) → prédit 30u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 45 | Stock prédit: 13.8u (12j restants) → prédit 45u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 35 | Stock prédit: -43.8u (-68j restants) → prédit 35u mais non commandé |
 | [JOY08] JOY! Organic Raspberry Jam 370g | 21 | Stock prédit: -20.7u (-53j restants) → prédit 21u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 18 | Stock prédit: -9.0u (-45j restants) → prédit 18u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 9 | Stock prédit: -9.0u (-45j restants) → prédit 9u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 18 | Stock prédit: -14.4u (-40j restants) → prédit 18u mais non commandé |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 56 | Stock prédit: -72.2u (-61j restants) → prédit 56u mais non commandé |
 | [JOY06] JOY! Organic Rhubarb Jam 370g | 28 | Stock prédit: -20.8u (-46j restants) → prédit 28u mais non commandé |
@@ -204,4 +238,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:41.539Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:24.503Z*

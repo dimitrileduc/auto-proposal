@@ -12,9 +12,9 @@
 ### 💰 Usage LLM
 
 - **Appels**: 22
-- **Tokens**: 34,117 input + 25,289 output = 59,406 total
-- **Coût**: $0.4817 (~48.17¢)
-- **Coût par produit LLM**: $0.0219
+- **Tokens**: 33,704 input + 4,458 output = 38,162 total
+- **Coût**: $0.1680 (~16.80¢)
+- **Coût par produit LLM**: $0.0076
 
 
 ---
@@ -71,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 83.40 unités | Erreur moyenne absolue (métrique principale) |
+| **MAE** | 84.40 unités | Erreur moyenne absolue (métrique principale) |
 | **MAPE** | 20.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 10 | Avec erreur |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,14 +147,14 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [LV342] LV Organic Broccoli Spread 190 g | 230 | 310 | 80.0 | 25.8% | ✅ partial | 🤖 LLM |
+| [LV342] LV Organic Broccoli Spread 190 g | 217 | 310 | 93.0 | 30.0% | ✅ partial | 🤖 LLM |
 | [LV331] LV Tartinade Lentils Balsamico 190g | 147 | 124 | 23.0 | 18.5% | ✅ partial | 📊 Médiane |
 | [LV161] LV Tartinade Mangue curry 190g | 928 | 775 | 153.0 | 19.7% | ✅ partial | 📊 Médiane |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 742 | 620 | 122.0 | 19.7% | ✅ partial | 📊 Médiane |
 | [LV188] LV Tartinade Aubergine  380g | 128 | 112 | 16.0 | 14.3% | ✅ partial | 📊 Médiane |
 | [LV160] LV Tartinade Aubergine 190g | 784 | 775 | 9.0 | 1.2% | ✅ partial | 📊 Médiane |
 | [LV162] LV Tartinade Tomato Basilico 190g | 784 | 1085 | 301.0 | 27.7% | ✅ partial | 📊 Médiane |
-| [LV345] LV Spread KIDS 200ml Organic | 65 | 62 | 3.0 | 4.8% | ✅ partial | 🤖 LLM |
+| [LV345] LV Spread KIDS 200ml Organic | 62 | 62 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 | [LV139] LV Tartinade Paprika Chili 380g | 192 | 128 | 64.0 | 50.0% | ✅ partial | 📊 Médiane |
 | [LV330] LV BIO Tartinade Toscana 190g | 342 | 279 | 63.0 | 22.6% | ✅ partial | 📊 Médiane |
 
@@ -163,71 +163,23 @@
 
 
 <details>
-<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM: 230u vs Médiane: undefinedu (Réel: 310u)</summary>
+<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM: 217u vs Médiane: undefinedu (Réel: 310u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 230u (confidence: medium)
+- 🤖 **LLM prédit**: 217u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 310u
-- 📉 **Erreur LLM**: 80u (25.8%)
+- 📉 **Erreur LLM**: 93u (30.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)
-- Commande 1: 2025-08-29 → 279u
-- Commande 2: 2025-08-26 → 155u
-- Commande 3: 2025-06-30 → 275u
-
-Moyenne: (279+155+275)/3 = 236.33u
-Écart-type: ~60u (variation ~25%)
-
-Les variations observées (155u à 279u) restent dans une fourchette acceptable (±30% mentionné comme normal en B2B). La commande de 155u pourrait être une commande partielle ou un ajustement, mais pas un outlier extrême à éliminer complètement.
-
-**Demande de fond estimée: ~235-240u** (en gardant toutes les commandes comme représentatives)
-
-ÉTAPE 2: SAISONNALITÉ
-Le produit "LV Organic Broccoli Spread" (tartinade bio au brocoli) présente des indices saisonniers intéressants:
-- Dernières commandes concentrées en août (279u + 155u) et juin (275u)
-- Période actuelle: Mi-octobre 2025 → Début d'automne
-
-**Analyse saisonnière**: Les tartinades végétales bio tendent à avoir une demande plus forte en été (BBQ, apéritifs, salades) et début d'automne. Octobre reste une période modérée-bonne (rentrée, début de saison froide avec consommation de produits réconfortants).
-
-Cependant, on observe un gap de commande entre fin juin et fin août (2 mois), puis plus rien depuis le 29 août jusqu'au 13 octobre (6 semaines). Cela suggère soit des stocks existants, soit une baisse d'activité.
-
-**Ajustement saisonnier: Neutre à légèrement négatif** (-5%)
-
-ÉTAPE 3: TENDANCE RÉCENTE
-- Avec seulement 3 points de données sur 3,5 mois, la visibilité est limitée
-- Pattern observé: 275u (juin) → 155u (août) → 279u (août) 
-- Les deux commandes d'août rapprochées (3 jours d'écart) totalisent 434u, ce qui pourrait indiquer un fractionnement ou un rattrapage de stock après la période juin-août
-
-**Fréquence**: Irrégulière (2 mois de gap, puis 2 commandes en 3 jours, puis 6 semaines sans commande)
-
-**Tendance volume**: Stable autour de 235-240u en moyenne, mais comportement d'achat irrégulier qui complique la prédiction.
-
-**Ajustement tendance: Conservateur (-10%)** car le gap actuel de 6 semaines suggère soit un sur-stock existant, soit une demande ralentie.
-
-ÉTAPE 4: RECOMMANDATION FINALE
-- Base demande de fond: 236u
-- Ajustement saisonnier (octobre, post-été): -5% → 224u
-- Ajustement tendance (prudence sur gap temporel): -10% → ~210u
-- Marge de sécurité raisonnable: +10% → ~230u
-
-**RECOMMANDATION: 230 unités**
-
-Cette quantité représente un compromis conservateur qui:
-✓ Reflète la moyenne historique (~236u)
-✓ Tient compte du gap temporel depuis la dernière commande
-✓ Évite le sur-stockage dans un contexte d'incertitude
-✓ Reste suffisant pour couvrir la demande normale d'octobre
-
+Aucune donnée N-1 disponible pour établir une baseline historique. La recommandation se base uniquement sur les 2 commandes récentes (279u et 155u) avec une moyenne de 217u. Confiance faible due à l'absence d'historique et au faible nombre de points de données.
 
 **📅 Analyse Temporelle:**
-Historique très court (3 commandes sur 3,5 mois) avec pattern irrégulier: gap de 2 mois (juin-août), puis 2 commandes concentrées en 3 jours (26-29 août), puis nouveau gap de 6 semaines jusqu'à aujourd'hui. Cette irrégularité suggère des achats par lots ou une gestion de stock opportuniste plutôt qu'un réapprovisionnement régulier. L'absence de commande depuis 45 jours indique soit un stock restant, soit une baisse temporaire d'activité.
+undefined
 
 **📊 Analyse Quantité:**
-Les quantités oscillent entre 155u et 279u avec une moyenne de 236u. La variance de ±25% est normale pour du B2B. Les deux commandes d'août (155+279=434u) sur 3 jours pourraient représenter une commande unique fractionnée ou un rattrapage après le gap estival. La commande de juin (275u) et celle du 29 août (279u) sont très proches, suggérant une demande de fond autour de 275u. La commande de 155u apparaît comme une demi-commande ou un ajustement.
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -235,63 +187,23 @@ Les quantités oscillent entre 155u et 279u avec une moyenne de 236u. La varianc
 
 
 <details>
-<summary><strong>2. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM: 65u vs Médiane: undefinedu (Réel: 62u)</summary>
+<summary><strong>2. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM: 62u vs Médiane: undefinedu (Réel: 62u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 65u (confidence: low)
+- 🤖 **LLM prédit**: 62u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 62u
-- 📉 **Erreur LLM**: 3u (4.8%)
+- 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-**ÉTAPE 1 - DE-EVENTING:**
-- 2025-08-26: 62u (commande récente, semble normale)
-- 2025-06-30: 150u + 25u = 175u (deux commandes le même jour!)
-- Total sur 3 commandes: 237u
-
-La double commande du 30 juin est suspecte. Il s'agit probablement:
-- Soit d'un stockage préventif avant les vacances d'été
-- Soit d'une correction/ajustement de stock
-- Soit d'une demande promotionnelle
-
-En excluant le pic de 150u, nous avons: (62 + 25) / 2 = 43.5u comme demande de fond estimée.
-
-**ÉTAPE 2 - SAISONNALITÉ:**
-- Produit: "LV Spread KIDS 200ml Organic" → produit enfant, bio, format petit
-- Juin-Août: Période estivale avec possibles pics (vacances, pique-niques, camps d'été)
-- Date actuelle: 13 octobre → Rentrée scolaire passée, début automne
-- Le gros volume en juin pourrait correspondre à une anticipation de demande estivale
-
-Octobre est probablement une période de demande moyenne/normale pour ce type de produit (hors période de vacances).
-
-**ÉTAPE 3 - TENDANCE RÉCENTE:**
-- Données très limitées (3 commandes seulement, sur ~3.5 mois)
-- Fréquence: Pas de commande depuis le 26 août (48 jours écoulés)
-- Intervalle juin→août: ~57 jours
-- La dernière commande réelle: 62u (26 août)
-
-Avec si peu de données, difficile d'établir une tendance claire. Cependant:
-- Le délai depuis la dernière commande (48j) suggère qu'une commande est imminente
-- Volume de la dernière commande normale: 62u
-
-**ÉTAPE 4 - RECOMMANDATION FINALE:**
-- Base demande de fond: ~45u (en excluant le pic)
-- Dernière commande normale: 62u
-- Ajustement saisonnier: Neutre/légèrement positif (octobre = période normale)
-- Ajustement tendance: Impossible à déterminer (données insuffisantes)
-- Principe de précaution: Prendre comme référence la dernière commande réelle (62u) avec légère marge
-
-**RECOMMANDATION: 65u**
-- Basé sur la dernière commande normale (62u) + 5% de sécurité
-- Approche conservatrice face au manque de données
-- Évite le sur-stockage tout en couvrant la demande probable
+Absence totale de données N-1 empêche d'établir une baseline historique fiable. La seule référence disponible est une commande unique de 62u en août 2025. Par prudence, je recommande cette quantité observée comme point de départ, mais avec une confiance faible nécessitant un suivi rapproché.
 
 **📅 Analyse Temporelle:**
-Historique très court (3 commandes sur 3.5 mois). Intervalles: ~57 jours entre juin et août, puis 48 jours depuis. Fréquence d'environ 50-60 jours entre commandes. La prochaine commande est attendue maintenant (délai écoulé).
+undefined
 
 **📊 Analyse Quantité:**
-Volumes très variables: 25u, 62u, et 150u. La commande de 150u semble être un outlier (possible événement promotionnel ou stockage préventif estival). Les volumes normaux semblent se situer entre 25-62u, avec 62u comme référence la plus récente et fiable.
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -322,26 +234,26 @@ Volumes très variables: 25u, 62u, et 150u. La commande de 150u semble être un 
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV135] LV Tartinade Basilico 190g | 290 | Stock prédit: 241.7u (25j restants) → prédit 290u mais non commandé |
-| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 165 | Stock prédit: 126.5u (21j restants) → prédit 165u mais non commandé |
+| [LV135] LV Tartinade Basilico 190g | 310 | Stock prédit: 241.7u (25j restants) → prédit 310u mais non commandé |
+| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 168 | Stock prédit: 126.5u (21j restants) → prédit 168u mais non commandé |
 | [LV159] LV Tartinade aux Truffes  135g  | 295 | Stock prédit: 228.9u (18j restants) → prédit 295u mais non commandé |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 56 | Stock prédit: 38.9u (24j restants) → prédit 56u mais non commandé |
-| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 12 | Stock prédit: 43.5u (9j restants) → prédit 12u mais non commandé |
+| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 6 | Stock prédit: 43.5u (9j restants) → prédit 6u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 317 | Stock prédit: 165.8u (27j restants) → prédit 317u mais non commandé |
-| [LV145] LV Sauce Tartare 200 ml  | 200 | Stock prédit: 13.9u (3j restants) → prédit 200u mais non commandé |
+| [LV145] LV Sauce Tartare 200 ml  | 144 | Stock prédit: 13.9u (3j restants) → prédit 144u mais non commandé |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 585 | Stock prédit: 91.3u (8j restants) → prédit 585u mais non commandé |
 | [LV165] LV Vol-au-vent (avec viande de volaille) 400 g | 24 | Stock prédit: -5.7u (-12j restants) → prédit 24u mais non commandé |
-| [LV149] LV Sauce Aioli Pesto 200ml | 15 | Stock prédit: -10.1u (-21j restants) → prédit 15u mais non commandé |
+| [LV149] LV Sauce Aioli Pesto 200ml | 12 | Stock prédit: -10.1u (-21j restants) → prédit 12u mais non commandé |
 | [LV158] LV Moutarde 200 ml | 38 | Stock prédit: -8.9u (-12j restants) → prédit 38u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 380 | Stock prédit: -33.5u (-4j restants) → prédit 380u mais non commandé |
 | [LV134] LV BIO Tartinade Olives Vertes 190g | 299 | Stock prédit: -22.3u (-3j restants) → prédit 299u mais non commandé |
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 85 | Stock prédit: 31.2u (14j restants) → prédit 85u mais non commandé |
+| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 132 | Stock prédit: 31.2u (14j restants) → prédit 132u mais non commandé |
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 170 | Stock prédit: 26.3u (8j restants) → prédit 170u mais non commandé |
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 30 | Stock prédit: -9.8u (-11j restants) → prédit 30u mais non commandé |
 | [LV155] LV Vinaigrette Caesar 250 ml | 75 | Stock prédit: 22.2u (15j restants) → prédit 75u mais non commandé |
 | [LV137] LV Tartinade Lentilles Curry 190g | 128 | Stock prédit: 39.8u (16j restants) → prédit 128u mais non commandé |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 160 | Stock prédit: 15.6u (3j restants) → prédit 160u mais non commandé |
-| [LV217] LV Tartinade Basilic 380g | 40 | Stock prédit: -8.3u (-9j restants) → prédit 40u mais non commandé |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 237 | Stock prédit: 15.6u (3j restants) → prédit 237u mais non commandé |
+| [LV217] LV Tartinade Basilic 380g | 32 | Stock prédit: -8.3u (-9j restants) → prédit 32u mais non commandé |
 | [LV040] LV Caprons apéritifs 240g | 99 | Stock prédit: 18.5u (9j restants) → prédit 99u mais non commandé |
 | [LV136] LV Tartinade Betterave 190g | 396 | Stock prédit: 14.9u (2j restants) → prédit 396u mais non commandé |
 | [LV138] LV Tartinade Carotte gingembre  380g | 144 | Stock prédit: 16.4u (6j restants) → prédit 144u mais non commandé |
@@ -381,4 +293,4 @@ Volumes très variables: 25u, 62u, et 150u. La commande de 150u semble être un 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:27:20.334Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:12.717Z*

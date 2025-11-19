@@ -12,9 +12,9 @@
 ### 💰 Usage LLM
 
 - **Appels**: 8
-- **Tokens**: 12,785 input + 9,653 output = 22,438 total
-- **Coût**: $0.1831 (~18.31¢)
-- **Coût par produit LLM**: $0.0229
+- **Tokens**: 12,390 input + 1,653 output = 14,043 total
+- **Coût**: $0.0620 (~6.20¢)
+- **Coût par produit LLM**: $0.0077
 
 
 ---
@@ -158,79 +158,22 @@
 <summary><strong>1. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 1u (confidence: medium)
+- 🤖 **LLM prédit**: 1u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1 - DE-EVENTING:
-L'historique montre 5 commandes sur 4 mois (juin à septembre 2025):
-- 4 commandes de 1u (26/09, 08/09, 26/08, 19/06)
-- 1 commande de 2u (24/07)
-La commande de 2u en juillet représente le double de la moyenne, mais reste modeste en valeur absolue. Il pourrait s'agir d'un petit pic saisonnier estival (période BBQ/grillades où le ketchup curry est plus demandé) plutôt qu'un vrai outlier promotionnel. Je conserve cette donnée car elle semble cohérente avec la saisonnalité attendue.
-Demande de fond réelle = 1u par commande (majorité absolue)
-
-ÉTAPE 2 - SAISONNALITÉ:
-Le produit "Curry Ketchup" suggère un usage typique pour les grillades, hot-dogs, frites - produits d'été/automne.
-Observations temporelles:
-- Juin: 1u (début été)
-- Juillet: 2u (pic été - BBQ)
-- Août: 1u (fin été)
-- Septembre: 2 commandes de 1u (début automne, fréquence accélérée)
-Nous sommes début octobre (03/10/2025) = sortie de la période estivale haute. La demande devrait normalement diminuer légèrement en automne/hiver pour ce type de condiment.
-Ajustement saisonnier: Neutre à légèrement baissier (-0 à -10%)
-
-ÉTAPE 3 - TENDANCE RÉCENTE:
-Comparaison 4 dernières commandes vs historique:
-- Fréquence: Accélération nette en septembre (2 commandes en 1 mois: 08/09 et 26/09, soit ~18 jours d'intervalle)
-- Avant septembre: intervalles de 33 jours (août-juillet) et 35 jours (juillet-juin)
-- Quantités: Stable à 1u pour les 3 dernières commandes (après le pic de 2u en juillet)
-
-La fréquence s'accélère malgré la sortie de saison haute, ce qui pourrait indiquer:
-1. Une fidélisation client croissante
-2. Un besoin de réassort plus fréquent (rotation plus rapide)
-3. Commandes plus petites mais plus régulières
-
-Cependant, les quantités unitaires restent à 1u systématiquement.
-Ajustement tendance: Stable sur la quantité, mais vigilance sur fréquence (+0%)
-
-ÉTAPE 4 - RECOMMANDATION FINALE:
-Base de demande nettoyée: 1u
-Ajustement saisonnier (octobre, sortie été): ±0%
-Ajustement tendance (quantités stables, fréquence accrue): ±0%
-Coefficient de sécurité: Approche conservatrice privilégiée
-
-RECOMMANDATION: 1 unité
-La fréquence accrue des commandes (2x en septembre) suggère que le client préfère commander plus souvent en petites quantités plutôt que de stocker. Recommander 1u est cohérent avec ce pattern et évite le sur-stockage. Si rupture, le délai de réapprovisionnement semble acceptable vu la fréquence de ~18-20 jours entre commandes récentes.
-
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une consommation très faible et régulière (1u/mois principalement, avec 1 pic à 2u). Je recommande 1 unité en approche conservatrice pour ce produit à rotation minimale.
 
 **📅 Analyse Temporelle:**
-
-Intervalles entre commandes:
-- 26/09 → 08/09: 18 jours
-- 08/09 → 26/08: 13 jours
-- 26/08 → 24/07: 33 jours
-- 24/07 → 19/06: 35 jours
-
-Observation clé: Forte accélération de la fréquence en septembre 2025 (2 commandes en 1 mois vs 1 commande par mois avant). L'intervalle moyen est passé de ~34 jours (juin-août) à ~15 jours (septembre). Cette accélération se produit paradoxalement en sortie de saison haute, suggérant soit une croissance de la base client, soit un changement de comportement d'achat vers des commandes plus fréquentes et plus petites.
-
+undefined
 
 **📊 Analyse Quantité:**
+undefined
 
-Distribution des quantités commandées:
-- 1u: 4 occurrences (80%)
-- 2u: 1 occurrence (20%, juillet - pic saisonnier probable)
-Quantité moyenne: 1.2u
-Quantité médiane: 1u
-Écart-type: faible (0.45u)
-
-La quantité unitaire (1u) est clairement le standard pour ce produit. Le pic à 2u en juillet s'explique probablement par la saisonnalité estivale (grillades, ketchup curry pour BBQ). Aucun signe de commandes exceptionnelles ou promotionnelles. Le pattern montre un client B2B avec un besoin régulier et modeste, probablement un petit restaurateur ou food-truck avec rotation stable.
-
-
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
@@ -239,60 +182,20 @@ La quantité unitaire (1u) est clairement le standard pour ce produit. Le pic à
 <summary><strong>2. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 1u (confidence: medium)
+- 🤖 **LLM prédit**: 1u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-**ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)**
-L'historique montre 3 commandes très régulières de 1 unité chacune (100% uniformité):
-- 2025-09-08: 1u
-- 2025-07-24: 1u
-- 2025-06-19: 1u
-
-Aucune anomalie détectée. Pas de pics promotionnels ni de corrections de stock. La demande de fond réelle est clairement de 1 unité par commande. Aucun outlier à éliminer.
-
-**ÉTAPE 2: SAISONNALITÉ**
-Analyse des périodes:
-- Juin (19): 1u - Début d'été
-- Juillet (24): 1u - Plein été
-- Septembre (08): 1u - Rentrée
-
-Le ketchup étant typiquement un produit saisonnier (pic en été pour BBQ, restauration en terrasse), on aurait pu s'attendre à des quantités supérieures en juillet-août. Le fait que les commandes restent stables à 1u suggère soit:
-1. Un client B2B de petite taille avec besoin constant
-2. Un format 300ml squeeze destiné à un usage spécifique non saisonnier
-
-Date actuelle: 3 octobre 2025 = début d'automne, période traditionnellement plus basse pour les condiments estivaux. Pas d'ajustement à la hausse nécessaire.
-
-**ÉTAPE 3: TENDANCE RÉCENTE**
-Analyse temporelle des intervalles:
-- 19 juin → 24 juillet = 35 jours
-- 24 juillet → 8 septembre = 46 jours
-- 8 septembre → 3 octobre = 25 jours
-
-Fréquence: ~35 jours en moyenne, avec le dernier intervalle à seulement 25 jours. On observe une légère accélération de la fréquence de commande, MAIS les quantités restent parfaitement stables à 1u.
-
-Conclusion tendance: Demande stable en volume (1u/commande), fréquence stable-à-légèrement-croissante. Pas de signal de croissance en volume unitaire.
-
-**ÉTAPE 4: RECOMMANDATION FINALE**
-- Base de demande nettoyée: 1 unité
-- Coefficient saisonnier (octobre): 0% (période normale-à-basse, pas d'ajustement)
-- Coefficient tendance: 0% (volume par commande parfaitement stable)
-- Coefficient sécurité: Conservateur = maintien à 1u
-
-Le pattern est extrêmement régulier et prévisible. Le client commande systématiquement 1 unité à intervalle de ~35 jours. Recommander plus que 1 unité créerait du sur-stockage inutile.
-
-**RECOMMANDATION: 1 unité**
-
+Absence totale de données N-1 empêche l'établissement d'une baseline fiable. Les 3 derniers mois montrent seulement 2 commandes unitaires (juillet et septembre 2025), suggérant une demande très sporadique. Recommandation minimale de 1 unité par précaution, mais confiance faible vu le manque d'historique.
 
 **📅 Analyse Temporelle:**
-Intervalle moyen de 35 jours entre commandes (19/06→24/07: 35j, 24/07→08/09: 46j, 08/09→03/10: 25j). La fréquence est globalement stable avec une légère accélération récente (dernier intervalle de 25j). Le prochain besoin est imminent, étant donné que nous sommes à 25 jours depuis la dernière commande.
+undefined
 
 **📊 Analyse Quantité:**
-Demande extrêmement stable et homogène: 100% des commandes à 1 unité (3/3). Aucune variation de quantité observée sur l'historique disponible. Pattern typique d'un petit client B2B avec consommation régulière et prévisible. Pas d'achats groupés, pas de stockage préventif, pas de promotions. La moyenne arithmétique (1u), médiane (1u) et mode (1u) convergent parfaitement.
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -344,7 +247,7 @@ Demande extrêmement stable et homogène: 100% des commandes à 1 unité (3/3). 
 | [LV331] LV Tartinade Lentils Balsamico 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 1.0u (12j restants) → prédit 2u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
@@ -355,7 +258,7 @@ Demande extrêmement stable et homogène: 100% des commandes à 1 unité (3/3). 
 | [DIS0003] Display TVF bois | 3 | Stock prédit: 1.0u (29j restants) → prédit 3u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
 | [LV036] LV Olives Vertes dénoyautées BE 350g | 139 | Stock prédit: -30.8u (-11j restants) → prédit 139u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 3 | Stock prédit: -12.3u (-97j restants) → prédit 3u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: -12.3u (-97j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -379,4 +282,4 @@ Demande extrêmement stable et homogène: 100% des commandes à 1 unité (3/3). 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:29:20.677Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:45.610Z*

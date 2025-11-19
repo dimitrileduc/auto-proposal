@@ -12,9 +12,9 @@
 ### 💰 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 6,621 input + 4,906 output = 11,527 total
-- **Coût**: $0.0935 (~9.35¢)
-- **Coût par produit LLM**: $0.0234
+- **Tokens**: 6,355 input + 836 output = 7,191 total
+- **Coût**: $0.0316 (~3.16¢)
+- **Coût par produit LLM**: $0.0079
 
 
 ---
@@ -184,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:28:49.586Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:33.281Z*

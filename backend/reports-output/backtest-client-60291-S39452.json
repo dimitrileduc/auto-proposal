@@ -13,17 +13,17 @@
     "recall": 0.9090909090909091,
     "f1Score": 0.5000000000000001,
     "mae": 1.2,
-    "mape": 110
+    "mape": 105
   },
   "distribution": {
-    "exactMatch": 2,
-    "partialMatch": 8
+    "exactMatch": 3,
+    "partialMatch": 7
   },
   "llmUsage": {
     "calls": 21,
-    "promptTokens": 32508,
-    "completionTokens": 23591,
-    "totalTokens": 56099,
-    "costUSD": 0.4513890000000001
+    "promptTokens": 32637,
+    "completionTokens": 4221,
+    "totalTokens": 36858,
+    "costUSD": 0.16122599999999995
   }
 }

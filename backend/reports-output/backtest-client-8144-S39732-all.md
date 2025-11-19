@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 2
+- **Tokens**: 3,155 input + 423 output = 3,578 total
+- **Coût**: $0.0158 (~1.58¢)
+- **Coût par produit LLM**: $0.0079
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 2.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 5.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,7 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF3251] JEFKE CHIVE VINAIGRETTE 5L | 40 | 40 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [PF3251] JEFKE CHIVE VINAIGRETTE 5L | 38 | 40 | 2.0 | 5.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF3251] JEFKE CHIVE VINAIGRETTE 5L</strong> - LLM: 38u vs Médiane: undefinedu (Réel: 40u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 38u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 40u
+- 📉 **Erreur LLM**: 2u (5.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. La recommandation se base uniquement sur la tendance récente (VUE 2) montrant une demande stable autour de 37,5u (médiane de 40u, 40u, 40u, 30u). Confiance faible en raison de l'absence totale de référentiel historique pour valider la normalité de ces volumes.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -191,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:29:56.598Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:03.038Z*

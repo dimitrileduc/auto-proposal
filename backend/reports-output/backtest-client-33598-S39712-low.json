@@ -20,10 +20,10 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 25,
-    "promptTokens": 39640,
-    "completionTokens": 28103,
-    "totalTokens": 67743,
-    "costUSD": 0.540465
+    "calls": 24,
+    "promptTokens": 37476,
+    "completionTokens": 4950,
+    "totalTokens": 42426,
+    "costUSD": 0.186678
   }
 }

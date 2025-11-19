@@ -12,11 +12,18 @@
     "precision": 0.20833333333333334,
     "recall": 1,
     "f1Score": 0.3448275862068966,
-    "mae": 0.8,
-    "mape": 33.33333333333333
+    "mae": 0.6,
+    "mape": 23.333333333333332
   },
   "distribution": {
-    "exactMatch": 2,
-    "partialMatch": 3
+    "exactMatch": 3,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 35618,
+    "completionTokens": 4751,
+    "totalTokens": 40369,
+    "costUSD": 0.17811900000000003
   }
 }

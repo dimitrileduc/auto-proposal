@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 8
+- **Tokens**: 12,398 input + 1,684 output = 14,082 total
+- **Coût**: $0.0625 (~6.25¢)
+- **Coût par produit LLM**: $0.0078
+
 
 ---
 
@@ -140,7 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 250 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 250 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF1792] LD MAYONNAI TRUFFES 250ML WECK</strong> - LLM: 250u vs Médiane: undefinedu (Réel: 250u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 250u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 250u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. La recommandation se base uniquement sur la tendance récente (VUE 2) qui montre 2 commandes de 250u en septembre et 1 commande de 55u en juillet. Je retiens 250u comme quantité standard observée récemment, mais la confiance est faible par manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -169,7 +203,7 @@
 |---------|-------------|--------|
 | [PF1807] LD SAUCE ANDALOUSE 250ML WECK | 5 | Stock prédit: 1.8u (4j restants) → prédit 5u mais non commandé |
 | [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -0.1u (-9j restants) → prédit 1u mais non commandé |
-| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 50 | Stock prédit: 16.0u (13j restants) → prédit 50u mais non commandé |
+| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 43 | Stock prédit: 16.0u (13j restants) → prédit 43u mais non commandé |
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 75 | Stock prédit: -4.5u (-2j restants) → prédit 75u mais non commandé |
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-46j restants) → prédit 1u mais non commandé |
 
@@ -195,4 +229,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:47.743Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:33.476Z*

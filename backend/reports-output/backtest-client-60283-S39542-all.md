@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 7
+- **Tokens**: 10,887 input + 1,434 output = 12,321 total
+- **Coût**: $0.0542 (~5.42¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 28.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 99.3% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 26.29 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 86.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 7 | Avec erreur |
 
@@ -140,13 +147,136 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 19 | 60 | 41.0 | 68.3% | ✅ partial | 📊 Médiane |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 18 | 60 | 42.0 | 70.0% | ✅ partial | 🤖 LLM |
 | [LV161] LV Tartinade Mangue curry 190g | 15 | 25 | 10.0 | 40.0% | ✅ partial | 📊 Médiane |
-| [LV162] LV Tartinade Tomato Basilico 190g | 25 | 7 | 18.0 | 257.1% | ✅ partial | 📊 Médiane |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 10 | 40 | 30.0 | 75.0% | ✅ partial | 📊 Médiane |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 10 | 60 | 50.0 | 83.3% | ✅ partial | 📊 Médiane |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 18 | 45 | 27.0 | 60.0% | ✅ partial | 📊 Médiane |
+| [LV162] LV Tartinade Tomato Basilico 190g | 20 | 7 | 13.0 | 185.7% | ✅ partial | 🤖 LLM |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 15 | 40 | 25.0 | 62.5% | ✅ partial | 🤖 LLM |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 13 | 60 | 47.0 | 78.3% | ✅ partial | 🤖 LLM |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 18 | 45 | 27.0 | 60.0% | ✅ partial | 🤖 LLM |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 38 | 18 | 20.0 | 111.1% | ✅ partial | 📊 Médiane |
+
+
+### 🤖 Détails des Prédictions LLM (5 produits)
+
+
+<details>
+<summary><strong>1. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM: 18u vs Médiane: undefinedu (Réel: 60u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 18u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 60u
+- 📉 **Erreur LLM**: 42u (70.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. La recommandation se base uniquement sur les 4 derniers mois (médiane = 18.5u) avec une tendance récente légèrement haussière (17-20u vs 10u en juillet). Confiance faible en raison de l'absence d'historique de référence pour validation.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM: 20u vs Médiane: undefinedu (Réel: 7u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 20u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 7u
+- 📉 **Erreur LLM**: 13u (185.7%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. La recommandation se base uniquement sur la tendance des 3 derniers mois (médiane: 25u, dernière commande: 10u), suggérant une demande modérée et décroissante. Par prudence, on recommande 20u comme point de départ conservateur.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM: 15u vs Médiane: undefinedu (Réel: 40u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 15u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 40u
+- 📉 **Erreur LLM**: 25u (62.5%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline = 0. Les 3 derniers mois montrent une demande récente de 10-20u avec moyenne de 15u. Recommandation basée uniquement sur la tendance actuelle avec confiance faible due à l'absence d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM: 13u vs Médiane: undefinedu (Réel: 60u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 13u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 60u
+- 📉 **Erreur LLM**: 47u (78.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, impossible d'établir une baseline historique. Recommandation basée uniquement sur la tendance récente (3 mois) montrant une médiane de 10u avec une commande de 20u en juillet. Approche très conservatrice conseillée : 13u représente la médiane récente +30% pour couvrir la variabilité observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM: 18u vs Médiane: undefinedu (Réel: 45u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 18u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 45u
+- 📉 **Erreur LLM**: 27u (60.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'une baseline historique fiable. Les 2 commandes récentes (18u en juillet et septembre 2025) suggèrent un produit en phase de lancement avec demande naissante. Recommandation conservatrice alignée sur la demande récente observée, à ajuster rapidement selon l'évolution réelle.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -206,4 +336,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:31:08.807Z*
+*Rapport généré automatiquement le 2025-11-19T17:54:21.333Z*

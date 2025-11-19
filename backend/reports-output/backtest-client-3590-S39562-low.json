@@ -21,9 +21,9 @@
   },
   "llmUsage": {
     "calls": 8,
-    "promptTokens": 12888,
-    "completionTokens": 9279,
-    "totalTokens": 22167,
-    "costUSD": 0.17784900000000003
+    "promptTokens": 12428,
+    "completionTokens": 1724,
+    "totalTokens": 14152,
+    "costUSD": 0.063144
   }
 }

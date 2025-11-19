@@ -11,10 +11,10 @@
 
 ### 💰 Usage LLM
 
-- **Appels**: 11
-- **Tokens**: 17,098 input + 12,676 output = 29,774 total
-- **Coût**: $0.2414 (~24.14¢)
-- **Coût par produit LLM**: $0.0219
+- **Appels**: 16
+- **Tokens**: 24,734 input + 3,256 output = 27,990 total
+- **Coût**: $0.1230 (~12.30¢)
+- **Coût par produit LLM**: $0.0077
 
 
 ---
@@ -158,46 +158,20 @@
 <summary><strong>1. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - LLM: 6u vs Médiane: undefinedu (Réel: 8u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 6u (confidence: medium)
+- 🤖 **LLM prédit**: 6u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 8u
 - 📉 **Erreur LLM**: 2u (25.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-**ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)**
-Historique analysé: 6u, 6u, 1u, 10u, 6u
-- La commande de 10u (30/07/2025) représente 167% de la moyenne (5.8u) et semble être un pic isolé, possiblement lié à un stockage préventif ou besoin ponctuel estival.
-- La commande de 1u (07/08/2025) est anormalement basse, probablement une commande de dépannage ou correction.
-- Après nettoyage, la demande de fond réelle se stabilise autour de **6 unités** (3 commandes sur 5 à ce niveau).
-
-**ÉTAPE 2: SAISONNALITÉ**
-- Le produit est une mayonnaise (produit estival typique en agroalimentaire B2B).
-- Pic observé fin juillet (10u) cohérent avec demande estivale forte.
-- Nous sommes au 01/10/2025, début d'automne = **période de baisse saisonnière** pour les sauces froides type mayonnaise.
-- La dernière commande (24/09) montre un retour à 6u, confirmant la sortie de la période haute.
-- Ajustement saisonnier: Neutre à légèrement négatif (-0 à -10%).
-
-**ÉTAPE 3: TENDANCE RÉCENTE**
-Les 4 dernières commandes (6u, 6u, 1u, 10u):
-- Fréquence: 42 jours → 6 jours → 8 jours → 54 jours. Intervalle très variable mais récemment stable (6-8 jours entre août).
-- Volume post-pic estival: Retour stable à 6u (commande la plus récente).
-- **Tendance: STABLE** autour de 6u en post-saison, sans signal de croissance ni décroissance marquée.
-- Coefficient tendance: 0% (stable).
-
-**ÉTAPE 4: RECOMMANDATION FINALE**
-- Base de demande de fond: 6 unités
-- Ajustement saisonnier (automne): 0% (déjà reflété dans la dernière commande)
-- Ajustement tendance: 0% (stable)
-- **Recommandation conservatrice: 6 unités**
-
-Cette quantité correspond à la demande récurrente observée hors événements, adaptée à la période actuelle (post-été), et limite le risque de sur-stockage sur un produit saisonnier entrant en période basse.
+Aucune donnée N-1 disponible pour établir une baseline fiable. La recommandation se base uniquement sur les 3 derniers mois (médiane = 6u, excluant le pic à 10u). Confiance faible en raison de l'historique limité et absence de référence annuelle.
 
 **📅 Analyse Temporelle:**
-Intervalle moyen entre commandes: ~38 jours (très variable). Séquence: 54j → 8j → 6j → 42j. La fréquence s'est accélérée durant l'été (6-8 jours) puis ralentie (42 jours) en sortie de saison. Pattern cohérent avec la saisonnalité estivale de la mayonnaise. Prochaine commande attendue dans 30-45 jours environ.
+undefined
 
 **📊 Analyse Quantité:**
-Quantités: 6u, 6u, 1u, 10u, 6u. Moyenne brute: 5.8u. Mode: 6u (60% des commandes). Le pic à 10u (+72% vs mode) est un outlier estival isolé. La commande de 1u est anormale (dépannage). La quantité normalisée récurrente est clairement **6 unités**, confirmée par 3 occurrences dont la plus récente.
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -229,14 +203,14 @@ Quantités: 6u, 6u, 1u, 10u, 6u. Moyenne brute: 5.8u. Mode: 6u (60% des commande
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 48 | Stock prédit: 36.4u (28j restants) → prédit 48u mais non commandé |
-| [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 5 | Stock prédit: 5.0u (30j restants) → prédit 5u mais non commandé |
-| [PF3270] JF TRUFFLE MAYONNAISE 925ML | 8 | Stock prédit: 4.9u (26j restants) → prédit 8u mais non commandé |
+| [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 4 | Stock prédit: 5.0u (30j restants) → prédit 4u mais non commandé |
+| [PF3270] JF TRUFFLE MAYONNAISE 925ML | 6 | Stock prédit: 4.9u (26j restants) → prédit 6u mais non commandé |
 | [PF3274] JF BURGER SAUCE 925ML | 3 | Stock prédit: 0.4u (4j restants) → prédit 3u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 3 | Stock prédit: 1.2u (14j restants) → prédit 3u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | Stock prédit: 1.9u (7j restants) → prédit 7u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 7 | Stock prédit: 1.4u (5j restants) → prédit 7u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 6 | Stock prédit: 1.9u (7j restants) → prédit 6u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 6 | Stock prédit: 1.4u (5j restants) → prédit 6u mais non commandé |
 | [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
-| [PF0093] FILOU MOUTARDE 300GR | 3 | Stock prédit: -0.5u (-5j restants) → prédit 3u mais non commandé |
+| [PF0093] FILOU MOUTARDE 300GR | 4 | Stock prédit: -0.5u (-5j restants) → prédit 4u mais non commandé |
 | [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.3u (-3j restants) → prédit 15u mais non commandé |
 | [PF0094] FILOU MOUTARDE 700 GR | 3 | Stock prédit: -0.2u (-3j restants) → prédit 3u mais non commandé |
 | [PF0078] FILOU CHASSEUR 5 L | 44 | Stock prédit: -16.0u (-37j restants) → prédit 44u mais non commandé |
@@ -270,4 +244,4 @@ Quantités: 6u, 6u, 1u, 10u, 6u. Moyenne brute: 5.8u. Mode: 6u (60% des commande
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:09.478Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:00.975Z*

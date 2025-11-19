@@ -82,6 +82,13 @@ export interface BacktestClientTaskResult {
     mae: number;
     mape: number;
   };
+  llm_usage?: {  // Usage LLM pour ce client
+    calls: number;
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+    costUSD: number;
+  };
   reportPath: string;  // Path au rapport Markdown (legacy)
   reportPaths: {
     markdown: string;
@@ -320,6 +327,23 @@ export const backtestClientTask = task({
       const executionTime = Date.now() - startTime;
       console.log(`✅ BACKTEST COMPLETED in ${(executionTime / 1000).toFixed(1)}s\n`);
 
+      // Extract LLM usage from stockAnalysis (if present)
+      console.log("🔍 DEBUG: Checking for LLM usage data...");
+      const stockAnalysis = systemResult.result.phases.stockAnalysis;
+      if (stockAnalysis) {
+        console.log("   stockAnalysis keys:", Object.keys(stockAnalysis));
+        console.log("   llm_usage value:", stockAnalysis.llm_usage);
+      } else {
+        console.log("   ⚠️ stockAnalysis is undefined");
+      }
+
+      const llmUsage = stockAnalysis?.llm_usage;
+      if (llmUsage) {
+        console.log(`   💰 LLM Usage: ${llmUsage.calls} calls, ${llmUsage.totalTokens} tokens, $${llmUsage.costUSD.toFixed(4)}\n`);
+      } else {
+        console.log(`   ⚠️ No LLM usage data found\n`);
+      }
+
       return {
         success: true,
         clientId: payload.clientId,
@@ -357,6 +381,7 @@ export const backtestClientTask = task({
           mae: comparison.quantityMetrics.mae,
           mape: comparison.quantityMetrics.mape,
         },
+        llm_usage: llmUsage,
         reportPath: reportPathMd,  // Legacy: keep markdown path for backward compatibility
         reportPaths: {
           markdown: reportPathMd,

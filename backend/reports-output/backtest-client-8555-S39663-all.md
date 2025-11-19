@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 11
+- **Tokens**: 16,788 input + 2,152 output = 18,940 total
+- **Coût**: $0.0826 (~8.26¢)
+- **Coût par produit LLM**: $0.0075
+
 
 ---
 
@@ -64,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 8.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 40.8% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 7.38 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 39.8% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 6 | Avec erreur |
 
@@ -144,10 +151,61 @@
 | [PF1539] FILOU BOULETTE CHASSEUR 800G | 4 | 2 | 2.0 | 100.0% | ✅ partial | 📊 Médiane |
 | [PF1224] FILOU BOULETTES TOMATE 800 GR | 4 | 4 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
 | [PF0084] FILOU CARBONNADES 800 GR | 3 | 4 | 1.0 | 25.0% | ✅ partial | 📊 Médiane |
-| [PF0094] FILOU MOUTARDE 700 GR | 30 | 20 | 10.0 | 50.0% | ✅ partial | 📊 Médiane |
+| [PF0094] FILOU MOUTARDE 700 GR | 30 | 20 | 10.0 | 50.0% | ✅ partial | 🤖 LLM |
 | [PF0096] FILOU MOUTARDE 3 KG | 4 | 10 | 6.0 | 60.0% | ✅ partial | 📊 Médiane |
 | [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 74 | 44 | 30.0 | 68.2% | ✅ partial | 📊 Médiane |
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 80 | 65 | 15.0 | 23.1% | ✅ partial | 📊 Médiane |
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 75 | 65 | 10.0 | 15.4% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF0094] FILOU MOUTARDE 700 GR</strong> - LLM: 30u vs Médiane: undefinedu (Réel: 20u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 30u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 20u
+- 📉 **Erreur LLM**: 10u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, impossible d'établir une baseline historique. Seules 2 commandes récentes observées (40u et 20u) sur les 3 derniers mois. Recommandation basée sur la médiane des commandes récentes (30u), mais confiance faible en l'absence d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - LLM: 75u vs Médiane: undefinedu (Réel: 65u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 75u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 65u
+- 📉 **Erreur LLM**: 10u (15.4%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 (baseline impossible à établir). Seules 2 commandes récentes disponibles (70u et 80u, moyenne 75u). Recommandation basée uniquement sur l'historique court récent avec confiance faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -174,13 +232,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 7 | Stock prédit: 3.4u (21j restants) → prédit 7u mais non commandé |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 5 | Stock prédit: 3.4u (21j restants) → prédit 5u mais non commandé |
 | [PF0075] FILOU CHASSEUR  10 L | 10 | Stock prédit: 5.0u (22j restants) → prédit 10u mais non commandé |
 | [PF0078] FILOU CHASSEUR 5 L | 10 | Stock prédit: 1.1u (2j restants) → prédit 10u mais non commandé |
 | [PF0077] FILOU PROVENCALE 5 L | 10 | Stock prédit: 3.1u (9j restants) → prédit 10u mais non commandé |
 | [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: -19.1u (-22j restants) → prédit 40u mais non commandé |
 | [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 40 | Stock prédit: -0.3u (0j restants) → prédit 40u mais non commandé |
-| [PF0088] FILOU VOL AU VENT 800 GR | 30 | Stock prédit: -61.9u (-56j restants) → prédit 30u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 64 | Stock prédit: -61.9u (-56j restants) → prédit 64u mais non commandé |
 | [PF0089] FILOU VOL AU VENT 400 GR | 30 | Stock prédit: -16.0u (-18j restants) → prédit 30u mais non commandé |
 
 
@@ -211,4 +269,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:18.352Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:34.964Z*

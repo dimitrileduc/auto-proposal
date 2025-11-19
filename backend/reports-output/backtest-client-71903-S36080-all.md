@@ -12,9 +12,9 @@
 ### 💰 Usage LLM
 
 - **Appels**: 12
-- **Tokens**: 18,535 input + 15,012 output = 33,547 total
-- **Coût**: $0.2808 (~28.08¢)
-- **Coût par produit LLM**: $0.0234
+- **Tokens**: 18,835 input + 2,473 output = 21,308 total
+- **Coût**: $0.0936 (~9.36¢)
+- **Coût par produit LLM**: $0.0078
 
 
 ---
@@ -71,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 3.42 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 43.8% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 8 | Avec erreur |
+| **MAE** | 8.08 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 48.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 10 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -156,8 +156,8 @@
 | [RIT08] RITCHIE Citron - canette 330ml | 5 | 10 | 5.0 | 50.0% | ✅ partial | 📊 Médiane |
 | [RIT09] RITCHIE Cola - canette 330ml | 5 | 6 | 1.0 | 16.7% | ✅ partial | 📊 Médiane |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 5 | 2 | 3.0 | 150.0% | ✅ partial | 📊 Médiane |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 112 | 112 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 56 | 56 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 67 | 112 | 45.0 | 40.2% | ✅ partial | 🤖 LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 67 | 56 | 11.0 | 19.6% | ✅ partial | 🤖 LLM |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 56 | 56 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 
 
@@ -165,68 +165,23 @@
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 112u vs Médiane: undefinedu (Réel: 112u)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 67u vs Médiane: undefinedu (Réel: 112u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 112u (confidence: medium)
+- 🤖 **LLM prédit**: 67u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 112u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 45u (40.2%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-**ÉTAPE 1: DE-EVENTING**
-L'historique montre 7 commandes concentrées sur le 12 avril 2025, toutes dans une fenêtre de ~50 minutes (09:42 à 10:32):
-- 5 commandes de 56u (quantité standard)
-- 2 commandes de 112u (double de la quantité standard)
-Total: 504u en une seule journée
-
-Cette concentration temporelle extrême suggère fortement un événement ponctuel (préparation d'un week-end, rattrapage post-rupture, ou consolidation de plusieurs demandes clients). Il s'agit clairement d'une anomalie, pas d'une demande quotidienne normale.
-
-**Demande de fond estimée:** En temps normal, ce produit semble avoir un pattern de commande de 56u (unité de base), avec parfois 112u (double commande). La fréquence normale reste inconnue avec seulement cet historique, mais la quantité unitaire standard est clairement 56u.
-
-**ÉTAPE 2: SAISONNALITÉ**
-Produit: Chips premium bio - profil snacking
-- Nous sommes mi-avril (printemps), période généralement moyenne pour le snacking
-- Pas encore en haute saison estivale (BBQ, apéritifs, terrasses) qui commence mai-juin
-- Pas de période promotionnelle majeure identifiable actuellement
-- Produit bio/premium: moins sensible aux variations saisonnières que les chips standard
-
-**Ajustement saisonnier:** Neutre à légèrement positif (+0 à +10%) car nous approchons de la période pré-estivale où la demande de snacking commence à augmenter.
-
-**ÉTAPE 3: TENDANCE RÉCENTE**
-Problème majeur: L'historique ne contient qu'UN SEUL jour de données (12 avril). Impossible d'établir une tendance fiable.
-- Pas de comparaison possible avec les semaines précédentes
-- Impossible de déterminer si la fréquence s'accélère ou ralentit
-- Le pic du 12/04 est probablement un rattrapage, suggérant une rupture ou sous-approvisionnement antérieur
-
-**Ajustement tendance:** Impossible à calculer de manière fiable. Par prudence, restons conservateurs.
-
-**ÉTAPE 4: RECOMMANDATION FINALE**
-Base de calcul:
-- Quantité standard observée: 56u (format de base)
-- Quantité double observée: 112u (commande importante)
-- Historique insuffisant pour calculer une fréquence hebdomadaire/mensuelle
-
-Recommandation: **112 unités**
-
-Justification:
-1. C'est la quantité "double" observée dans l'historique, représentant une commande importante mais pas exceptionnelle
-2. Permet de couvrir une demande normale sans sur-stocker dangereusement
-3. Produit agroalimentaire premium bio = rotation probablement modérée, DLC à respecter
-4. En l'absence de données historiques suffisantes, mieux vaut être conservateur
-5. Si la demande est de 56u par cycle, 112u offre une marge de sécurité x2
-
-**RÉSERVES IMPORTANTES:**
-- Confiance MEDIUM car historique très limité (1 seul jour)
-- Le pic du 12/04 fausse l'analyse - besoin de 4-6 semaines de données pour une prédiction robuste
-- Recommandation à ajuster rapidement dès réception de plus de données historiques
+Aucune donnée historique N-1 disponible pour établir une baseline. La recommandation se base uniquement sur la tendance récente (VUE 2) avec une médiane de 56u et une moyenne de ~67u sur les 5 dernières commandes concentrées sur le 12/04. Confiance faible en l'absence de référentiel annuel.
 
 **📅 Analyse Temporelle:**
-Historique extrêmement limité: toutes les commandes datent du 12 avril 2025 (il y a 2 jours), concentrées sur 50 minutes. Aucune donnée sur la fréquence normale de réapprovisionnement. Impossible d'établir un cycle de commande typique (hebdomadaire? bi-hebdomadaire?). Cette concentration suggère un événement ponctuel de rattrapage plutôt qu'un pattern régulier. CRITIQUE: Besoin urgent de données sur au moins 4-8 semaines pour établir une fréquence et une saisonnalité fiables.
+undefined
 
 **📊 Analyse Quantité:**
-7 commandes analysées, total 504u sur une seule journée. Pattern identifié: quantité de base = 56u (apparaît 5 fois), quantité double = 112u (apparaît 2 fois). Le ratio 56u/112u suggère un conditionnement ou une logique d'achat par multiples de 56. Moyenne brute: 72u/commande, mais non représentative car toutes les commandes sont concentrées sur un événement unique. La quantité 56u semble être l'unité standard de commande normale, 112u représentant une commande renforcée.
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -234,71 +189,23 @@ Historique extrêmement limité: toutes les commandes datent du 12 avril 2025 (i
 
 
 <details>
-<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM: 56u vs Médiane: undefinedu (Réel: 56u)</summary>
+<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM: 67u vs Médiane: undefinedu (Réel: 56u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 56u (confidence: medium)
+- 🤖 **LLM prédit**: 67u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 56u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 11u (19.6%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1 - DE-EVENTING (Nettoyage des outliers):
-Les commandes montrent un pattern très concentré sur une seule date (2025-04-12), avec 7 commandes passées entre 10h04 et 10h32. Cela représente un total de 504 unités en moins d'une heure.
-Pattern observé: 112u + 56u + 56u + 56u + 56u + 56u + 112u = 504u
-Cette concentration temporelle suggère fortement:
-- Une correction de stock massive
-- Un rattrapage de commandes groupées
-- Ou une opération promotionnelle/événementielle
-
-Il s'agit clairement d'un événement ponctuel anormal, PAS d'une demande récurrente. La répétition de 56u (unité de base) et 112u (2x l'unité) indique probablement le format de conditionnement standard.
-
-Demande de fond réelle estimée: Impossible à déterminer avec certitude car nous n'avons qu'un seul jour de données, mais l'unité de commande récurrente semble être 56u (format standard).
-
-ÉTAPE 2 - SAISONNALITÉ:
-Date actuelle: mi-avril 2025
-Produit: Chips premium bio thym/romarin - produit apéritif
-Période: Début de printemps, approche de la période estivale
-Saisonnalité attendue: 
-- Les chips apéritives ont généralement une demande accrue en période estivale (BBQ, apéros extérieurs) et pendant les fêtes
-- Mi-avril = période pré-estivale, demande qui commence à augmenter
-- Cependant, SANS historique de plusieurs mois/années, impossible de confirmer le pattern saisonnier de ce produit spécifique
-
-Ajustement saisonnier: Neutre (données insuffisantes pour affirmer la phase)
-
-ÉTAPE 3 - TENDANCE RÉCENTE:
-Problème majeur: L'historique ne couvre qu'UNE SEULE DATE (2025-04-12), avec 7 commandes concentrées sur 28 minutes.
-Il n'y a AUCUNE donnée sur:
-- La fréquence normale de commande
-- Le volume habituel
-- L'évolution sur les semaines/mois précédents
-
-Impossible de déterminer une tendance fiable. L'événement du 12 avril semble exceptionnel et ne peut servir de base pour extrapoler une tendance.
-
-ÉTAPE 4 - RECOMMANDATION FINALE:
-Base de calcul:
-- Unité de commande standard identifiée: 56u (format le plus récurrent)
-- Absence d'historique normal exploitable
-- Principe de précaution: CONSERVATEUR pour éviter le sur-stockage
-
-Recommandation: 56 unités
-Justification:
-1. 56u = format standard de conditionnement apparent
-2. Sans historique fiable, on privilégie la prudence
-3. L'événement du 12/04 (504u) ne doit PAS servir de référence
-4. Mieux vaut une petite rupture qu'un sur-stock de produits bio périssables
-5. Cette quantité permet de tester la demande réelle post-événement
-
-AVERTISSEMENT: Cette recommandation est basée sur des données TRÈS limitées (1 jour, événement anormal). Un suivi rapproché est ESSENTIEL pour ajuster dès les prochaines commandes normales.
-
+Aucune donnée N-1 disponible empêche l'établissement d'une baseline fiable. Les 5 commandes récentes (12/04) montrent un pattern régulier de 56u avec un pic à 112u (= 2×56u, possiblement 2 commandes groupées). En l'absence d'historique, je recommande prudemment la médiane récente (56u) + 20% de marge = 67u pour tester la demande.
 
 **📅 Analyse Temporelle:**
-L'historique ne couvre qu'une seule date (2025-04-12) avec 7 commandes concentrées sur 28 minutes (10h04-10h32). Il n'y a aucune information sur les intervalles de commande normaux, la fréquence hebdomadaire ou mensuelle. Cette concentration extrême suggère un événement exceptionnel (correction de stock, promotion, rattrapage) plutôt qu'un pattern de commande régulier. IMPOSSIBLE d'établir une cadence normale de réapprovisionnement avec ces données.
+undefined
 
 **📊 Analyse Quantité:**
-Total commandé le 12/04: 504 unités en 7 commandes. Formats observés: 56u (x5 commandes) et 112u (x2 commandes), suggérant que 56u est l'unité de conditionnement standard. Cette quantité massive sur une période ultra-courte est clairement anormale et ne reflète pas une demande quotidienne/hebdomadaire typique. Sans autres points de comparaison historiques, impossible de distinguer la demande normale du pic exceptionnel. Le volume de 504u doit être considéré comme un outlier total.
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -309,68 +216,20 @@ Total commandé le 12/04: 504 unités en 7 commandes. Formats observés: 56u (x5
 <summary><strong>3. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM: 56u vs Médiane: undefinedu (Réel: 56u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 56u (confidence: medium)
+- 🤖 **LLM prédit**: 56u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 56u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1 - DE-EVENTING:
-L'historique ne présente que 3 commandes, toutes effectuées le même jour (2025-04-12) sur une période de 27 minutes (10:04 à 10:31). Les quantités sont identiques (56u × 3 = 168u total). Ce pattern suggère fortement:
-- Soit une commande groupée fragmentée en 3 lignes techniques (même client, même système)
-- Soit 3 clients différents ayant commandé simultanément
-- Soit un événement ponctuel (promotion, salon, lancement)
-
-Aucune donnée historique antérieure n'est disponible pour identifier la "demande de fond normale". Ces 3 commandes identiques et simultanées ne permettent pas d'établir une baseline fiable. Cependant, la répétition exacte de 56u suggère qu'il s'agit d'une unité de commande standard (probablement un conditionnement par carton/palette).
-
-ÉTAPE 2 - SAISONNALITÉ:
-Impossible d'analyser la saisonnalité avec seulement 1 jour d'historique. Cependant:
-- Période actuelle: mi-avril (printemps)
-- Produit: chips premium bio à la truffe → produit d'apéritif haut de gamme
-- La truffe est traditionnellement associée à l'automne/hiver, mais les chips sont consommées toute l'année
-- Mi-avril = pas de période festive majeure → demande probablement moyenne/basse
-
-Sans données historiques sur plusieurs mois, aucun ajustement saisonnier ne peut être appliqué de manière fiable.
-
-ÉTAPE 3 - TENDANCE RÉCENTE:
-Impossible d'établir une tendance avec un seul jour de données. Les 3 commandes de 56u le même jour ne montrent ni hausse ni baisse, juste une répétition. Il n'y a aucune donnée antérieure pour comparer l'évolution.
-
-Point d'attention: L'absence totale de commandes avant le 12/04 (ou leur non-disponibilité dans l'historique) est problématique. Soit:
-- C'est un nouveau produit (lancement récent)
-- Les données historiques n'ont pas été fournies
-- Il y a eu une rupture de stock prolongée avant
-
-ÉTAPE 4 - RECOMMANDATION FINALE:
-Base de calcul:
-- Quantité unitaire observée: 56u (standard apparent)
-- Fréquence: inconnue (données insuffisantes)
-- Demande journalière estimée: impossible à calculer précisément
-
-Approche CONSERVATRICE retenue:
-Avec si peu de données et l'incertitude sur la nature de ces commandes groupées, je recommande:
-→ 56 unités (1 unité de commande standard)
-
-Justification:
-1. Pattern de commande observé = 56u (unité standard)
-2. Principe de précaution: données insuffisantes → ne pas sur-anticiper
-3. Éviter le sur-stockage d'un produit premium bio (DLC courte probable)
-4. En B2B, mieux vaut réapprovisionner fréquemment qu'immobiliser du capital
-5. Cette quantité permet de tester la demande réelle sur les prochains jours
-
-ALERTE: Cette recommandation est hautement incertaine. Idéalement, il faudrait:
-- Minimum 3-4 semaines d'historique pour établir une baseline
-- Information sur le délai de livraison fournisseur
-- Connaissance du stock actuel
-- Données de vente sortante (pas juste les réappros)
-
+Aucune donnée historique N-1 disponible, impossible d'établir une baseline de référence. La recommandation se base uniquement sur la tendance récente (3 commandes identiques de 56u en avril 2025). Confiance faible car pas de visibilité sur la saisonnalité ou la demande structurelle.
 
 **📅 Analyse Temporelle:**
-Historique extrêmement limité: seulement 3 commandes enregistrées le même jour (2025-04-12) sur 27 minutes. Aucune donnée antérieure disponible. Intervalle entre commandes = quasi-nul (quelques minutes), ce qui indique soit un traitement batch informatique, soit un événement commercial ponctuel. Impossible de déterminer la fréquence normale de réapprovisionnement. Ce pattern ne reflète probablement pas un rythme de commande régulier. La période écoulée depuis la dernière commande (2 jours au 14/04) est trop courte pour être significative.
+undefined
 
 **📊 Analyse Quantité:**
-Toutes les commandes sont strictement identiques: 56 unités. Cette uniformité parfaite suggère un conditionnement standardisé (carton, palette partielle) plutôt qu'une demande organique variable. Volume total observé: 168u sur un seul jour. Sans contexte additionnel, impossible de distinguer si 56u représente une commande client unique ou une unité logistique standard. L'absence de variation (pas de 50u, 60u, ou autres quantités) indique une contrainte logistique/packaging forte. Aucune baseline de "demande normale" ne peut être calculée avec ces 3 points identiques et simultanés.
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -468,7 +327,7 @@ Toutes les commandes sont strictement identiques: 56 unités. Cette uniformité 
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 20 | Stock prédit: 0.0u (0j restants) → prédit 20u mais non commandé |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 25 | Stock prédit: -25.0u (0j restants) → prédit 25u mais non commandé |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 20 | Stock prédit: -35.0u (0j restants) → prédit 20u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 25 | Stock prédit: -35.0u (0j restants) → prédit 25u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 20 | Stock prédit: -35.0u (0j restants) → prédit 20u mais non commandé |
 | [RISH01] RISH kombucha BIO - original 330ml | 23 | Stock prédit: -35.0u (0j restants) → prédit 23u mais non commandé |
 | [RISH05] RISH kombucha BIO - rose 750ml | 8 | Stock prédit: -12.0u (0j restants) → prédit 8u mais non commandé |
 | [JOY03] JOY! Confiture bio à l'abricot 370g | 203 | Stock prédit: 0.0u (0j restants) → prédit 203u mais non commandé |
@@ -490,7 +349,7 @@ Toutes les commandes sont strictement identiques: 56 unités. Cette uniformité 
 | [JOY07] JOY! Confiture bio à la figue 370g | 281 | Stock prédit: 0.0u (0j restants) → prédit 281u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 56 | Stock prédit: -280.0u (0j restants) → prédit 56u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 56 | Stock prédit: -336.0u (0j restants) → prédit 56u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 112 | Stock prédit: -448.0u (0j restants) → prédit 112u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 78 | Stock prédit: -448.0u (0j restants) → prédit 78u mais non commandé |
 | [REB05] ReBEL chips premium & bio - sel de mer 35g | 64 | Stock prédit: -150.0u (0j restants) → prédit 64u mais non commandé |
 | [REB06] ReBEL chips premium & bio - paprika fumé 35g | 64 | Stock prédit: -64.0u (0j restants) → prédit 64u mais non commandé |
 
@@ -516,4 +375,4 @@ Toutes les commandes sont strictement identiques: 56 unités. Cette uniformité 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:28:27.726Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:32.291Z*

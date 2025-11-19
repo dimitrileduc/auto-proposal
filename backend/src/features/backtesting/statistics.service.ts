@@ -218,6 +218,13 @@ export interface AggregateReportData {
   };
   aggregateMetrics: AggregateMetrics;
   individualResults: BacktestIndividualResult[];
+  llm_usage?: {
+    calls: number;
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+    costUSD: number;
+  };
 }
 
 /**
@@ -259,6 +266,18 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 | **Precision** | ${(aggregateMetrics.mean.precision * 100).toFixed(1)}% | ${(aggregateMetrics.median.precision * 100).toFixed(1)}% | % de prédictions correctes (${(100 - aggregateMetrics.median.precision * 100).toFixed(1)}% proposés non commandés) |
 | **F1-Score** | ${(aggregateMetrics.mean.f1Score * 100).toFixed(1)}% | ${(aggregateMetrics.median.f1Score * 100).toFixed(1)}% | Équilibre détection/précision |
 | **MAPE** | ${aggregateMetrics.mean.mape.toFixed(1)}% | ${aggregateMetrics.median.mape.toFixed(1)}% | Écart moyen sur les quantités prédites |
+
+${data.llm_usage ? `
+### Utilisation LLM (Claude Sonnet 4.5)
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **Appels LLM** | ${data.llm_usage.calls} | Nombre de produits prédits par LLM (>2 commandes historiques) |
+| **Tokens Total** | ${data.llm_usage.totalTokens.toLocaleString('fr-FR')} | ${data.llm_usage.promptTokens.toLocaleString('fr-FR')} prompt + ${data.llm_usage.completionTokens.toLocaleString('fr-FR')} completion |
+| **Coût Total** | $${data.llm_usage.costUSD.toFixed(4)} | Claude Sonnet 4.5: $3/$15 per million tokens |
+| **Coût Moyen/Client** | $${(data.llm_usage.costUSD / successfulResults.length).toFixed(4)} | Coût moyen par client analysé |
+| **Coût Moyen/Appel** | $${(data.llm_usage.costUSD / data.llm_usage.calls).toFixed(6)} | Coût moyen par prédiction LLM |
+` : ''}
 
 <details>
 <summary>Qu'est-ce que la Moyenne vs Médiane ?</summary>

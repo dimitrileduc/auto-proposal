@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 2
+- **Tokens**: 3,115 input + 390 output = 3,505 total
+- **Coût**: $0.0152 (~1.52¢)
+- **Coût par produit LLM**: $0.0076
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 32.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,7 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [PF0078] FILOU CHASSEUR 5 L | 128 | 160 | 32.0 | 20.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 128u vs Médiane: undefinedu (Réel: 160u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 128u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 160u
+- 📉 **Erreur LLM**: 32u (20.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, impossibilité d'établir une baseline historique. La recommandation se base uniquement sur la médiane des 3 derniers mois (128u = moyenne entre 80 et 160). Confiance faible car absence totale d'historique de référence pour ce produit.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -191,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:25.571Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:44.976Z*

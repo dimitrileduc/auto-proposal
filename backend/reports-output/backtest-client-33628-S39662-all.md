@@ -12,9 +12,9 @@
 ### 💰 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 4,938 input + 3,779 output = 8,717 total
-- **Coût**: $0.0715 (~7.15¢)
-- **Coût par produit LLM**: $0.0238
+- **Tokens**: 4,778 input + 616 output = 5,394 total
+- **Coût**: $0.0236 (~2.36¢)
+- **Coût par produit LLM**: $0.0079
 
 
 ---
@@ -157,72 +157,22 @@
 <summary><strong>1. [PF3279] KANIA BOULETTES TOMATE 800 GR (7404167)</strong> - LLM: 256u vs Médiane: undefinedu (Réel: 384u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 256u (confidence: high)
+- 🤖 **LLM prédit**: 256u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 384u
 - 📉 **Erreur LLM**: 128u (33.3%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1 - DE-EVENTING:
-La commande du 2025-08-26 (1024u) est clairement un outlier - elle représente 4x la quantité standard observée. Il s'agit très probablement d'une promotion, d'un stockage préventif ou d'une commande exceptionnelle. En l'excluant, les 9 autres commandes montrent un pattern beaucoup plus stable:
-- 6 commandes à 256u (août-septembre)
-- 4 commandes à 128u (juin-juillet)
-La demande de fond réelle oscille entre 128u et 256u.
-
-ÉTAPE 2 - SAISONNALITÉ:
-On observe une progression nette liée à la saisonnalité:
-- Juin-Juillet 2025: 4 commandes de 128u (période basse - été)
-- Août-Septembre 2025: 6 commandes de 256u (doublement des volumes)
-- Date actuelle: 13 octobre 2025
-
-Pour un produit "boulettes tomate", la hausse août-septembre correspond à la rentrée scolaire et au retour des habitudes de consommation institutionnelles (restauration collective, cantines). Octobre maintient généralement ce niveau avant les variations hivernales. Nous sommes donc en période HAUTE/STABLE, justifiant le maintien du niveau 256u.
-
-ÉTAPE 3 - TENDANCE RÉCENTE:
-Les 4 dernières commandes (hors outlier) montrent:
-- 05/09: 256u
-- 01/09: 256u
-- 14/08: 256u
-- 08/08: 256u
-
-Stabilité parfaite à 256u depuis début août. La fréquence est également régulière (3-6 jours d'intervalle). Aucune accélération ni ralentissement détecté. Tendance = STABLE (coefficient 0%).
-
-ÉTAPE 4 - RECOMMANDATION FINALE:
-- Base de demande (post-nettoyage): 256u (standard août-septembre)
-- Ajustement saisonnier: 0% (octobre maintient le niveau rentrée)
-- Ajustement tendance: 0% (parfaite stabilité)
-- Facteur sécurité: Approche conservatrice maintenue
-
-Calcul: 256u × 1.0 (saison) × 1.0 (tendance) = 256u
-
-La dernière commande date du 05/09, soit 38 jours. Avec une fréquence historique de 4-7 jours en période haute, le réapprovisionnement est urgent.
-
+Aucune donnée N-1 disponible pour établir un baseline historique. En VUE 2, la médiane est 256u avec 1024u identifié comme outlier (>2×256). Recommandation basée uniquement sur la tendance récente (256u récurrent), d'où une confiance faible.
 
 **📅 Analyse Temporelle:**
-
-Fréquence des commandes:
-- Juin-Juillet: Intervalle moyen de 7-14 jours (4 commandes sur 32 jours)
-- Août-Septembre (hors outlier): Intervalle moyen de 3-6 jours (6 commandes sur 35 jours) - Accélération nette
-- Depuis dernière commande (05/09): 38 jours écoulés - ALERTE RUPTURE
-
-L'accélération de la fréquence en août-septembre (doublement du rythme) confirme la hausse saisonnière. Le délai actuel de 38 jours sans commande suggère soit une rupture en cours, soit un stock tampon épuisé. Réapprovisionnement URGENT nécessaire.
-
+undefined
 
 **📊 Analyse Quantité:**
+undefined
 
-Distribution des quantités (hors outlier 1024u):
-- 128u: 4 occurrences (40%) - Période juin-juillet
-- 256u: 6 occurrences (60%) - Période août-septembre
-
-Moyenne hors outlier: 199u
-Médiane: 256u
-Mode: 256u (dominante récente)
-
-Le doublement de 128u → 256u entre juillet et août est cohérent et structurel (pas une variation aléatoire). Les 256u représentent la norme établie depuis 2.5 mois pour la période post-rentrée. Volume stable et prévisible.
-
-
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
@@ -276,4 +226,4 @@ Le doublement de 128u → 256u entre juillet et août est cohérent et structure
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:28:58.418Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:40.076Z*

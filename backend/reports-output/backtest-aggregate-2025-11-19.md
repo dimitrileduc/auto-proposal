@@ -2,7 +2,7 @@
 
 ## Contexte
 
-- **Date d'exécution** : 19/11/2025 17:31:09
+- **Date d'exécution** : 19/11/2025 18:54:34
 - **Clients analysés** : 48
 - **Clients réussis** : 48
 - **Clients échoués** : 0
@@ -25,7 +25,19 @@
 | **Recall** | 94.4% | 100.0% | % de besoins réels détectés |
 | **Precision** | 40.0% | 41.4% | % de prédictions correctes (58.6% proposés non commandés) |
 | **F1-Score** | 52.7% | 57.8% | Équilibre détection/précision |
-| **MAPE** | 34.4% | 32.7% | Écart moyen sur les quantités prédites |
+| **MAPE** | 34.6% | 28.9% | Écart moyen sur les quantités prédites |
+
+
+### Utilisation LLM (Claude Sonnet 4.5)
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **Appels LLM** | 837 | Nombre de produits prédits par LLM (>2 commandes historiques) |
+| **Tokens Total** | 1 465 565 | 1 295 489 prompt + 170 076 completion |
+| **Coût Total** | $6.4376 | Claude Sonnet 4.5: $3/$15 per million tokens |
+| **Coût Moyen/Client** | $0.1341 | Coût moyen par client analysé |
+| **Coût Moyen/Appel** | $0.007691 | Coût moyen par prédiction LLM |
+
 
 <details>
 <summary>Qu'est-ce que la Moyenne vs Médiane ?</summary>
@@ -124,4 +136,4 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:31:09.915Z*
+*Rapport généré automatiquement le 2025-11-19T17:54:34.029Z*

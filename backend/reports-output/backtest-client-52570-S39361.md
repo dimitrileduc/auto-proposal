@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 13
+- **Tokens**: 20,117 input + 2,653 output = 22,770 total
+- **Coût**: $0.1001 (~10.01¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.75 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 41.7% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 0.63 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 37.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,14 +147,113 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
+| [LV160] LV Tartinade Aubergine 190g | 3 | 3 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [LV161] LV Tartinade Mangue curry 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [LV162] LV Tartinade Tomato Basilico 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [LV161] LV Tartinade Mangue curry 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 | [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
 | [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
 | [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
+
+
+### 🤖 Détails des Prédictions LLM (4 produits)
+
+
+<details>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM: 3u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 3u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir un baseline historique. Les 3 derniers mois montrent une activité récente modeste (1u, 4u, 4u) avec une médiane de 4 unités. Recommandation conservatrice de 3 unités basée uniquement sur la tendance récente, avec confiance faible due à l'absence de référentiel historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM: 4u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 4u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline fiable. La tendance actuelle montre une demande régulière et stable de 4 unités par commande sur les 3 derniers mois. Recommandation basée uniquement sur l'observation récente, d'où une confiance faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM: 4u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 4u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique robuste. Les 3 derniers mois montrent une demande stable et régulière de 4 unités par commande. Recommandation basée uniquement sur la tendance récente avec confiance faible en raison du manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche d'établir une baseline historique. Les 3 derniers mois montrent une demande faible et stable (1-2u par commande, ~5u sur 3 mois). Recommandation conservatrice de 2u basée uniquement sur la tendance récente observée, avec confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -203,4 +309,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:31:07.521Z*
+*Rapport généré automatiquement le 2025-11-19T17:54:22.129Z*

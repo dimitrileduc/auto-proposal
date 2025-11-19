@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 10
+- **Tokens**: 15,416 input + 2,087 output = 17,503 total
+- **Coût**: $0.0776 (~7.76¢)
+- **Coût par produit LLM**: $0.0078
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 40.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,7 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 200 | 200 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 160 | 200 | 40.0 | 20.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF1809] LD SAUCE BEARNAISE 250ML WECK</strong> - LLM: 160u vs Médiane: undefinedu (Réel: 200u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 160u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 200u
+- 📉 **Erreur LLM**: 40u (20.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. La recommandation se base uniquement sur la tendance des 3 derniers mois (médiane: 200u, moyenne: 161u) avec une approche conservatrice compte tenu de la décroissance récente (84u en septembre). Confiance faible due à l'absence de référentiel historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -168,10 +202,10 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 200 | Stock prédit: 96.6u (18j restants) → prédit 200u mais non commandé |
-| [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | Stock prédit: -1.7u (0j restants) → prédit 50u mais non commandé |
+| [PF1803] LD SAUCE TARTARE 250ML WECK | 125 | Stock prédit: -1.7u (0j restants) → prédit 125u mais non commandé |
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 200 | Stock prédit: 96.6u (18j restants) → prédit 200u mais non commandé |
 | [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 200 | Stock prédit: 80.6u (13j restants) → prédit 200u mais non commandé |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 138 | Stock prédit: 119.5u (29j restants) → prédit 138u mais non commandé |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 200 | Stock prédit: 119.5u (29j restants) → prédit 200u mais non commandé |
 | [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 200 | Stock prédit: 96.6u (18j restants) → prédit 200u mais non commandé |
 | [PF1194] GF VIN FINES HERBES WECK 330ML | 153 | Stock prédit: 33.3u (12j restants) → prédit 153u mais non commandé |
 | [PF0193] GF VIN ANCIENNE JERRYCAN 5L | 25 | Stock prédit: 4.2u (10j restants) → prédit 25u mais non commandé |
@@ -200,4 +234,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:31.771Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:58.832Z*

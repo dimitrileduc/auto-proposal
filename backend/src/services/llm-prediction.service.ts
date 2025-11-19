@@ -3,19 +3,22 @@ import { anthropic } from "@ai-sdk/anthropic";
 import { z } from "zod";
 
 /**
- * Schéma de prédiction LLM
+ * Schéma de prédiction LLM (approche IRIS structured)
+ * JSON strict avec étapes explicites de raisonnement
  */
 const predictionSchema = z.object({
+  baseline_quantity: z
+    .number()
+    .describe("Médiane année N-1 après nettoyage des outliers"),
+  outliers_detected: z
+    .array(z.number())
+    .describe("Quantités identifiées comme outliers (> 2x médiane)"),
+  trend_ratio: z
+    .string()
+    .describe("Ratio de tendance observé (ex: +15%, stable, -10%)"),
   recommended_quantity: z.number().int().positive(),
   confidence: z.enum(["low", "medium", "high"]),
-  reasoning: z.string().describe("Raisonnement complet étape par étape"),
-  temporal_analysis: z
-    .string()
-    .describe("Analyse des intervalles entre commandes"),
-  quantity_analysis: z.string().describe("Analyse des quantités commandées"),
-  trend_detected: z
-    .boolean()
-    .describe("Y a-t-il une tendance claire ou juste des variations normales?"),
+  reasoning: z.string().describe("Résumé court du raisonnement (2-3 phrases)"),
 });
 
 export type LLMPrediction = z.infer<typeof predictionSchema>;
@@ -40,7 +43,8 @@ interface OrderHistoryItem {
 
 interface LLMPredictionInput {
   productName: string;
-  orderHistory: OrderHistoryItem[];
+  recentOrders: OrderHistoryItem[]; // Last 3 months (max 5 orders)
+  lastYearOrders: OrderHistoryItem[]; // Same period last year (max 5 orders)
   currentDate?: string; // Date actuelle (défaut: aujourd'hui)
 }
 
@@ -61,54 +65,70 @@ export async function predictWithLLM(
   const currentDate =
     input.currentDate || new Date().toISOString().split("T")[0];
 
-  // Construire le tableau Markdown de l'historique (du plus récent au plus ancien)
-  const historyTable = input.orderHistory
-    .map((order) => `${order.date} | ${order.quantity}u`)
-    .join("\n");
+  // Construire les 2 tableaux Markdown séparés
+  const recentTable = input.recentOrders.length > 0
+    ? input.recentOrders.map((order) => `${order.date} | ${order.quantity}u`).join("\n")
+    : "(Aucune commande récente)";
 
-  const prompt = `Tu es un expert Senior en Supply Chain Agroalimentaire (B2B).
-Ton objectif est de prédire la quantité optimale de réapprovisionnement pour éviter la rupture sans sur-stocker.
+  const lastYearTable = input.lastYearOrders.length > 0
+    ? input.lastYearOrders.map((order) => `${order.date} | ${order.quantity}u`).join("\n")
+    : "(Aucune donnée N-1)";
 
-CONTEXTE PRODUIT:
-- Nom: ${input.productName}
-- Date actuelle: ${currentDate}
-- Secteur: Agroalimentaire B2B (saisonnalité forte, promotions fréquentes)
+  const prompt = `Tu es un expert Supply Chain Agroalimentaire B2B.
+MISSION: Prédire la quantité optimale de réapprovisionnement.
 
-HISTORIQUE DES COMMANDES (du plus récent au plus ancien):
+PRODUIT: ${input.productName}
+DATE ACTUELLE: ${currentDate}
+
+DONNÉES (2 VUES):
+
+═══ VUE 1: RÉFÉRENCE (Même période année N-1) ═══
+Utilise ceci pour estimer la "demande de fond normale".
 
 Date       | Quantité
 -----------|----------
-${historyTable}
+${lastYearTable}
 
-TA MISSION (Chain of Thought):
+═══ VUE 2: TENDANCE ACTUELLE (3 derniers mois) ═══
+Utilise ceci pour détecter les changements récents.
 
-ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)
-Identifie les commandes anormales qui ressemblent à des événements ponctuels:
-- Promotions (quantités > 2x la moyenne)
-- Stockage préventif (gros pic isolé)
-- Corrections de stock
-→ Ignore ces outliers pour estimer la "demande de fond réelle"
+Date       | Quantité
+-----------|----------
+${recentTable}
 
-ÉTAPE 2: SAISONNALITÉ
-Analyse si le produit montre des variations saisonnières:
-- Y a-t-il des pics récurrents à certaines périodes? (été, hiver, fêtes)
-- Sommes-nous actuellement en période haute ou basse?
-→ Ajuste ta prédiction selon la période actuelle
+ÉTAPES (OBLIGATOIRES):
 
-ÉTAPE 3: TENDANCE RÉCENTE
-Compare les 4 dernières commandes vs les précédentes:
-- Volume en hausse, stable, ou en baisse?
-- Fréquence de commande en accélération ou ralentissement?
-→ Applique un coefficient de tendance (+X%, stable, -X%)
+1️⃣ DE-EVENTING
+   Identifie les outliers dans VUE 1 en utilisant le critère mathématique:
+   → Outlier = quantité > 2 × médiane(VUE 1)
+   → Calcule la médiane SANS ces outliers = "baseline_quantity"
 
-ÉTAPE 4: RECOMMANDATION FINALE
-Synthétise les 3 analyses pour recommander une quantité:
-- Base: Demande de fond (post-nettoyage)
-- Ajustement saisonnier: +/- selon période
-- Ajustement tendance: +/- selon évolution récente
-- Sécurité: Reste CONSERVATEUR (mieux vaut sous-estimer que sur-stocker)
+2️⃣ TENDANCE
+   Compare VUE 2 vs VUE 1 (même période):
+   → Si VUE 2 est vide, trend_ratio = "stable"
+   → Sinon, calcule le ratio moyen (ex: +15%, stable, -10%)
 
-Note: Variations de ±30% sont normales en B2B (achats groupés, sécurité stock).`;
+3️⃣ PROJECTION
+   Applique la formule:
+   → recommended_quantity = baseline_quantity × (1 + trend_ratio)
+   → Ajuste selon saisonnalité actuelle si applicable
+   → Reste CONSERVATEUR (variations ±30% normales en B2B)
+
+RÉSULTAT (JSON strict):
+{
+  "baseline_quantity": nombre (médiane N-1 après de-eventing),
+  "outliers_detected": [liste des quantités outliers],
+  "trend_ratio": "±X%" ou "stable",
+  "recommended_quantity": nombre entier positif,
+  "confidence": "low" | "medium" | "high",
+  "reasoning": "résumé court 2-3 phrases"
+}`;
+
+  // Log prompt pour debug
+  console.log(`\n🔍 LLM Prompt pour ${input.productName}:`);
+  console.log(`Recent orders (${input.recentOrders.length}):`, JSON.stringify(input.recentOrders));
+  console.log(`Last year orders (${input.lastYearOrders.length}):`, JSON.stringify(input.lastYearOrders));
+  console.log(`\nPrompt complet:\n${prompt}\n`);
 
   try {
     const { object, usage } = await generateObject({

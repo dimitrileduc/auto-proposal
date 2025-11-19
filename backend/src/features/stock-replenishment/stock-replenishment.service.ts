@@ -5,6 +5,7 @@ import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
 import { getTodayAsDateString } from "../../utils/date.utils";
 import { predictWithLLM, type LLMPredictionResult } from "../../services/llm-prediction.service";
+import { splitOrdersByPeriod } from "../../utils/date-period.utils";
 import pLimit from "p-limit";
 import type {
   ProductStockStatus,
@@ -180,21 +181,25 @@ export async function calculateReplenishmentNeeds(
         const { product, ordersToUse } = productData;
 
         try {
-          // Préparer l'historique pour le LLM (du plus récent au plus ancien)
-          const orderHistory = [...ordersToUse]
-            .sort(
-              (a, b) =>
-                new Date(b.date_order).getTime() -
-                new Date(a.date_order).getTime()
-            )
-            .map((order) => ({
-              date: order.date_order,
-              quantity: order.quantity,
-            }));
+          // Split orders into 2 views: recent (3 months) + same period last year
+          // Following IRIS article: max 5 orders per view to avoid LLM confusion
+          const { recent, lastYear } = splitOrdersByPeriod(
+            ordersToUse,
+            analysisEndDate,
+            3, // 3 months period
+            5  // max 5 orders per view
+          );
 
           const llmResult = await predictWithLLM({
             productName: product.product_name,
-            orderHistory,
+            recentOrders: recent.map(o => ({
+              date: o.date_order,
+              quantity: o.quantity,
+            })),
+            lastYearOrders: lastYear.map(o => ({
+              date: o.date_order,
+              quantity: o.quantity,
+            })),
             currentDate: analysisEndDate,
           });
 
@@ -242,9 +247,9 @@ export async function calculateReplenishmentNeeds(
         quantity: llmResult.prediction.recommended_quantity,
         confidence: llmResult.prediction.confidence,
         reasoning: llmResult.prediction.reasoning,
-        temporal_analysis: llmResult.prediction.temporal_analysis,
-        quantity_analysis: llmResult.prediction.quantity_analysis,
-        trend_detected: llmResult.prediction.trend_detected,
+        baseline_quantity: llmResult.prediction.baseline_quantity,
+        outliers_detected: llmResult.prediction.outliers_detected,
+        trend_ratio: llmResult.prediction.trend_ratio,
       };
 
       // Accumuler l'usage

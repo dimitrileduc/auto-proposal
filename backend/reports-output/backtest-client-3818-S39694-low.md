@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 3
+- **Tokens**: 4,642 input + 609 output = 5,251 total
+- **Coût**: $0.0231 (~2.31¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -177,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:57.869Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:51.593Z*

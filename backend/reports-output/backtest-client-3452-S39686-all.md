@@ -12,9 +12,9 @@
 ### 💰 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 6,621 input + 4,906 output = 11,527 total
-- **Coût**: $0.0935 (~9.35¢)
-- **Coût par produit LLM**: $0.0234
+- **Tokens**: 6,355 input + 836 output = 7,191 total
+- **Coût**: $0.0316 (~3.16¢)
+- **Coût par produit LLM**: $0.0079
 
 
 ---
@@ -158,69 +158,22 @@
 <summary><strong>1. [PF3301] DLL MAYONNAISE CITRON 300ML</strong> - LLM: 130u vs Médiane: undefinedu (Réel: 130u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 130u (confidence: medium)
+- 🤖 **LLM prédit**: 130u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 130u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-**ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)**
-- Commande du 2025-08-22: 390u → OUTLIER détecté (3x la moyenne des autres commandes)
-- Cette commande représente un événement ponctuel (promotion, stockage préventif, ou correction)
-- Commandes "normales" identifiées: 130u (récurrent), 260u (2x130u, probablement commande groupée standard)
-- Demande de fond réelle estimée: **130u par commande**
-
-**ÉTAPE 2: SAISONNALITÉ**
-- Produit: Mayonnaise citron → Produit condimentaire avec potentiel saisonnier estivale (BBQ, salades)
-- Période historique analysée: Juillet-Septembre (été/début automne)
-- Date actuelle: 13 octobre 2025 → **SORTIE de la période estivale haute**
-- On observe une baisse de fréquence: dernières commandes en septembre (08/09 et 01/09), puis plus rien en octobre
-- Ajustement saisonnier: **-10% à -15%** (baisse naturelle post-saison estivale)
-
-**ÉTAPE 3: TENDANCE RÉCENTE**
-- 4 dernières commandes "normales" (hors outlier): 130u, 130u, 130u, 130u
-- Fréquence des commandes:
-  * Juillet-Août: très rapprochées (3-8 jours d'intervalle)
-  * Septembre: espacées (7 jours entre les deux)
-  * Octobre: aucune commande depuis 35 jours
-- **Tendance: Ralentissement net** de la demande et de la fréquence
-- Volume unitaire: stable à 130u quand il y a commande
-- Coefficient tendance: **Baisse modérée** (demande existe mais moins fréquente)
-
-**ÉTAPE 4: RECOMMANDATION FINALE**
-- Base de fond: 130u
-- Ajustement saisonnier (octobre post-été): Neutre sur quantité unitaire (le ralentissement est déjà dans la fréquence)
-- Ajustement tendance: Demande stable à 130u quand elle survient
-- Contexte actuel: Pas de commande depuis 35 jours → le client a probablement encore du stock ou demande réduite
-- **Approche conservatrice**: Recommander la quantité standard observée = **130u**
-- Rationale: Quand le client commandera, ce sera probablement 130u (pattern constant), mais la fréquence sera plus espacée
-
+Absence totale de données N-1, baseline établie sur les 3 derniers mois uniquement. Médiane actuelle = 130u, avec 1 outlier détecté (390u, probablement commande événementielle). Tendance stable observée sur 4/5 commandes récentes à 130u, mais confiance faible due au manque d'historique de référence.
 
 **📅 Analyse Temporelle:**
-
-Fréquence historique: Très variable selon la période.
-- Juillet-Août (haute saison): commandes tous les 3-8 jours (très fréquent)
-- Septembre: ralentissement à ~7 jours entre commandes
-- Octobre actuel: aucune commande depuis 35 jours
-
-Le pattern montre une forte saisonnalité estivale avec des commandes fréquentes, suivie d'un net ralentissement en automne. L'intervalle actuel de 35 jours sans commande confirme que nous sommes en période basse. La prochaine commande pourrait survenir sous peu ou être encore plus espacée selon les besoins du client.
-
+undefined
 
 **📊 Analyse Quantité:**
+undefined
 
-Quantités observées (hors outlier):
-- Mode dominant: 130u (apparaît 5 fois sur 7 commandes)
-- 1x 260u (exactement 2x130u, commande groupée standard)
-- 1x 390u (3x130u, outlier probable - événement ponctuel)
-
-La quantité de base est clairement **130u** (unité de commande standard). Le 260u est un multiple logique (2x). Le 390u du 22/08 est un événement isolé à exclure de l'analyse de fond.
-
-Conclusion: Le client commande systématiquement par lots de 130u (1x ou 2x selon ses besoins). Aucune tendance à la hausse ou baisse des volumes unitaires, seulement une variation de fréquence liée à la saisonnalité.
-
-
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
@@ -229,89 +182,22 @@ Conclusion: Le client commande systématiquement par lots de 130u (1x ou 2x selo
 <summary><strong>2. [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML</strong> - LLM: 98u vs Médiane: undefinedu (Réel: 98u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 98u (confidence: high)
+- 🤖 **LLM prédit**: 98u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 98u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1 - DE-EVENTING (Nettoyage des outliers):
-- Commandes multiples de 98u détectées: 98u apparaît 8 fois
-- Commandes de 196u (2x98): 3 occurrences (14/08, 18/07, total cohérent avec lot double)
-- Commande de 294u (3x98): 1 occurrence le 30/06 (possiblement un pic promotionnel ou stockage préventif avant période estivale)
-- Pattern clair: l'unité de commande de base est 98u
-- Demande de fond réelle = 98u par commande, avec occasionnellement des lots multiples
-
-ÉTAPE 2 - SAISONNALITÉ:
-- Juin-Juillet 2025: Activité intense avec 5 commandes en 32 jours, incluant la commande exceptionnelle de 294u (30/06) et une de 196u (18/07)
-- Août 2025: Fréquence très élevée avec 5 commandes en 1 mois (intervalle moyen de ~6 jours)
-- Septembre 2025: Ralentissement notable avec seulement 2 commandes espacées de 7 jours
-- Octobre actuel (13/10): 35 jours sans commande depuis la dernière (08/09)
-- Analyse: Le produit "VINAIGRETTE YOGORETTE" montre une forte saisonnalité estivale (juin-août = pic de consommation pour salades). Octobre marque une période basse post-été.
-- Impact: Nous sommes en période de ralentissement saisonnier attendu
-
-ÉTAPE 3 - TENDANCE RÉCENTE:
-- 4 dernières commandes (août-septembre): 98u, 98u, 98u, 98u → Volume stable à 98u/commande
-- Fréquence: Août = très rapprochée (5-7 jours), Septembre = espacée (7 jours puis arrêt)
-- Tendance détectée: DÉCÉLÉRATION CLAIRE de la demande
-- Volume stable à 98u mais fréquence en baisse marquée (35 jours d'écart actuel vs 5-7 jours en août)
-- Coefficient tendance: -20% à -30% attendu pour période automnale
-
-ÉTAPE 4 - RECOMMANDATION FINALE:
-- Base de demande (nettoyée): 98u (unité standard)
-- Ajustement saisonnier: Période basse (octobre-hiver pour salades) → Neutre à -15%
-- Ajustement tendance: Décélération confirmée → -15%
-- Ajustement global potentiel: -25% à -30%
-- Calcul: 98u × 0.75 = 73.5u
-
-DÉCISION CONSERVATRICE:
-Malgré les ajustements négatifs, je recommande de maintenir 98u car:
-1. C'est l'unité de commande standard (conditionnement probable)
-2. Évite la rupture si la demande se maintient
-3. Le client pourrait commander bientôt (35 jours d'écart est long)
-4. Approche conservatrice B2B: mieux vaut avoir 98u disponibles que risquer une rupture
-5. La tendance baissière est saisonnière (normale), pas structurelle
-
-Si le produit était vendu en unités libres, je recommanderais 75u, mais le pattern historique montre clairement des lots de 98u.
-
+Aucune donnée historique N-1 disponible, ce qui empêche d'établir une baseline fiable. La recommandation se base uniquement sur la tendance récente (3 derniers mois) montrant une demande stable de 98u (avec un pic isolé de 196u en août). Confiance faible en raison de l'absence de référence historique pour valider ce niveau de demande.
 
 **📅 Analyse Temporelle:**
-
-Intervalles entre commandes:
-- 08/09 → 01/09: 7 jours
-- 01/09 → 25/08: 7 jours  
-- 25/08 → 19/08: 6 jours
-- 19/08 → 14/08: 5 jours
-- 14/08 → 11/08: 3 jours
-- 11/08 → 05/08: 6 jours
-- 05/08 → 18/07: 18 jours
-- 18/07 → 30/06: -18 jours (chevauchement, commandes rapprochées)
-- 30/06 → 27/06: 3 jours
-- 27/06 → 16/06: 11 jours
-
-Fréquence moyenne août: ~5-7 jours (pic d'activité)
-Fréquence septembre: 7 jours puis arrêt
-Écart actuel (13/10 depuis 08/09): 35 jours → TRÈS SUPÉRIEUR à la normale, indiquant ralentissement saisonnier fort
-
+undefined
 
 **📊 Analyse Quantité:**
+undefined
 
-Distribution des quantités:
-- 98u: 8 occurrences (73% des commandes) → STANDARD
-- 196u: 2 occurrences (18% des commandes) → DOUBLE LOT
-- 294u: 1 occurrence (9% des commandes) → TRIPLE LOT (outlier probable)
-
-Moyenne brute: 134u
-Moyenne sans outlier (294u): 118u
-Médiane: 98u
-Mode: 98u (nettement dominant)
-
-Conclusion: 98u est l'unité de base incontestable, probablement liée au conditionnement carton/palette. Les commandes de 196u et 294u sont des multiples pour stock anticipé ou demandes exceptionnelles.
-
-
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
@@ -340,8 +226,8 @@ Conclusion: 98u est l'unité de base incontestable, probablement liée au condit
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3300] DLL MAYONNAISE OEUFS 300ML | 260 | Stock prédit: 89.2u (3j restants) → prédit 260u mais non commandé |
-| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 294 | Stock prédit: -854.6u (-27j restants) → prédit 294u mais non commandé |
+| [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 89.2u (3j restants) → prédit 130u mais non commandé |
+| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 392 | Stock prédit: -854.6u (-27j restants) → prédit 392u mais non commandé |
 
 
 ---
@@ -365,4 +251,4 @@ Conclusion: 98u est l'unité de base incontestable, probablement liée au condit
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:28:49.587Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:33.282Z*

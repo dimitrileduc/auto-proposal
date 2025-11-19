@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 35
+- **Tokens**: 54,583 input + 7,049 output = 61,632 total
+- **Coût**: $0.2695 (~26.95¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.18 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 13.6% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 9 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.09 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 9.1% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 10 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,17 +147,260 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV132] LV Tartinade Houmous type 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [LV342] LV Organic Broccoli Spread 190 g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (10 produits)
+
+
+<details>
+<summary><strong>1. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande très faible et régulière (1u par commande espacée). Recommandation minimale de 1u compte tenu du caractère spécialisé du produit (tartinade ail des ours) et du manque de visibilité historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'une baseline fiable. Les 5 derniers mois montrent une demande très faible et stable (1-2u par commande, moyenne ~1.4u). Recommandation conservatrice de 2 unités basée uniquement sur l'historique récent d'un produit apparemment en phase de lancement ou à rotation très lente.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV132] LV Tartinade Houmous type 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'une baseline fiable. Les 3 derniers mois montrent une demande émergente très faible (2u et 1u). Par conservatisme, recommandation de 2 unités basée uniquement sur l'historique récent minimal.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande très faible et irrégulière (3u, 1u, 1u). Par prudence, je recommande 2 unités basées uniquement sur la tendance récente observée, avec une confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible, donc baseline=0. Les 3 derniers mois montrent une demande stable et faible (1u/mois). Recommandation conservatrice de 1 unité basée uniquement sur la tendance récente observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande constante et régulière de 1 unité par mois. Recommandation conservatrice de 1 unité basée uniquement sur la tendance récente, mais avec faible confiance due à l'absence de référence historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>7. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent seulement 2 commandes unitaires (août et septembre 2025), suggérant un produit à très faible rotation ou nouveau référencement. Par prudence, je recommande 1 unité compte tenu de l'activité minimale observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent des commandes unitaires très espacées (1u par commande). Recommandation minimale de 1 unité en raison du manque de données et du pattern de faible volume observé.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>9. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande très faible et sporadique (1-2 unités). Par prudence, je recommande 1 unité compte tenu du manque de visibilité historique et de la faible vélocité observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>10. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 (baseline = 0). Une seule commande de 1u observée dans les 3 derniers mois suggère un produit nouveau ou à très faible rotation. Recommandation minimale conservatrice de 1u en attendant plus d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -189,20 +439,20 @@
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock prédit: -0.4u (-6j restants) → prédit 1u mais non commandé |
 | [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: 0.3u (7j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 0.4u (4j restants) → prédit 1u mais non commandé |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 0.4u (4j restants) → prédit 2u mais non commandé |
 | [LV136] LV Tartinade Betterave 190g | 1 | Stock prédit: -0.4u (-10j restants) → prédit 1u mais non commandé |
 | [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | Stock prédit: -1.6u (-21j restants) → prédit 1u mais non commandé |
 | [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | Stock prédit: -1.6u (-20j restants) → prédit 1u mais non commandé |
 | [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.3u (-19j restants) → prédit 1u mais non commandé |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | Stock prédit: -0.4u (-10j restants) → prédit 1u mais non commandé |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | Stock prédit: -0.4u (-10j restants) → prédit 2u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: -0.4u (-10j restants) → prédit 1u mais non commandé |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | Stock prédit: -1.1u (-21j restants) → prédit 1u mais non commandé |
 | [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: -2.1u (-56j restants) → prédit 1u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 2 | Stock prédit: -2.1u (-56j restants) → prédit 2u mais non commandé |
 | [LV133] LV Tartinade Ananas Coco 190g | 1 | Stock prédit: -2.1u (-61j restants) → prédit 1u mais non commandé |
 | [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 3 | Stock prédit: -6.3u (-61j restants) → prédit 3u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 3 | Stock prédit: -4.4u (-54j restants) → prédit 3u mais non commandé |
-| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 1 | Stock prédit: -0.5u (-19j restants) → prédit 1u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 2 | Stock prédit: -0.5u (-19j restants) → prédit 2u mais non commandé |
 | [LV345] LV Spread KIDS 200ml Organic | 1 | Stock prédit: -0.6u (-37j restants) → prédit 1u mais non commandé |
 
 
@@ -233,4 +483,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:08.184Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:33.540Z*

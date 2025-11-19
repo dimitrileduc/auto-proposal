@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 15
+- **Tokens**: 23,419 input + 3,096 output = 26,515 total
+- **Coût**: $0.1167 (~11.67¢)
+- **Coût par produit LLM**: $0.0078
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 54.2% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 8 | Avec erreur |
+| **MAE** | 1.10 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 64.2% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 9 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,16 +147,259 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | 4 | 3.0 | 75.0% | ✅ partial | 📊 Médiane |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | 4 | 3.0 | 75.0% | ✅ partial | 🤖 LLM |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (10 produits)
+
+
+<details>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 5 commandes récentes (juillet-septembre 2025) montrent une demande très faible et irrégulière de 1-3 unités. Recommandation conservatrice de 2 unités basée uniquement sur la médiane des 3 derniers mois, avec forte incertitude due à l'absence de référence annuelle.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible, donc baseline = 0. La tendance récente (3 derniers mois) montre des commandes faibles et irrégulières (1-3u). En l'absence d'historique de référence et avec une activité récente minimale, je recommande prudemment 2 unités basé uniquement sur l'observation des 3 derniers mois.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'une baseline fiable. Les 3 derniers mois montrent des commandes sporadiques (1-2u) suggérant un produit en phase de lancement ou à faible rotation. Recommandation ultra-conservatrice de 1 unité par prudence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline fiable. Les 3 derniers mois montrent une demande très faible et sporadique (1-2u par commande, 4 commandes en 3 mois). En l'absence d'historique de référence, je recommande 2 unités par conservatisme, correspondant à la commande type récente.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline = 0. Les 3 derniers mois montrent une demande très faible et régulière (1u par commande, 5 commandes sur 3 mois). Recommandation minimale de 1u par précaution, avec confiance faible vu l'absence d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>6. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande très faible et stable (1-2 unités/commande). Recommandation conservatrice basée uniquement sur la tendance récente observée, avec confiance faible en raison de l'absence de référence annuelle.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>7. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 4u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 4u
+- 📉 **Erreur LLM**: 3u (75.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande ultra-faible et régulière (1u/mois). Recommandation minimale de 1 unité basée uniquement sur la tendance récente, avec confiance faible due à l'absence de référentiel historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>8. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande sporadique de 1 unité (juillet x2, septembre x1), suggérant un produit à très faible rotation. Recommandation minimale de 1 unité par prudence, mais confiance faible due au manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>9. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible, impossible d'établir une baseline fiable. Les 3 derniers mois montrent seulement 2 commandes ponctuelles (2u et 1u) suggérant une demande émergente ou très faible. Recommandation conservatrice de 2 unités basée uniquement sur l'activité récente minimale.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>10. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline fiable. Les 3 derniers mois montrent seulement 2 commandes très faibles (1-2u en juillet). Recommandation minimale de 2u par prudence, mais confiance très faible nécessitant surveillance rapprochée des prochaines commandes.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -180,7 +430,7 @@
 | [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.8u (28j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.7u (17j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: 0.6u (10j restants) → prédit 1u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 1.3u (12j restants) → prédit 1u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 1.3u (12j restants) → prédit 2u mais non commandé |
 | [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.7u (14j restants) → prédit 1u mais non commandé |
 | [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.7u (14j restants) → prédit 1u mais non commandé |
 | [JOY08] JOY! Organic Raspberry Jam 370g | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
@@ -209,4 +459,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:42.953Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:26.947Z*

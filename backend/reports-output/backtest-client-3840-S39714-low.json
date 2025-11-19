@@ -18,5 +18,12 @@
   "distribution": {
     "exactMatch": 0,
     "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 10907,
+    "completionTokens": 1439,
+    "totalTokens": 12346,
+    "costUSD": 0.054306
   }
 }

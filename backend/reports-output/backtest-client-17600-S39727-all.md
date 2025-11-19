@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 21
+- **Tokens**: 32,449 input + 4,323 output = 36,772 total
+- **Coût**: $0.1622 (~16.22¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 126.33 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 50.1% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 3 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 167.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 59.7% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,12 +147,135 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 198 | 400 | 202.0 | 50.5% | ✅ partial | 📊 Médiane |
-| [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | 434 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV363] LV BIO Tartin'apero Avocat 180g  | 434 | 434 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 500 | 200 | 300.0 | 150.0% | ✅ partial | 📊 Médiane |
+| [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 200 | 400 | 200.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | 434 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV363] LV BIO Tartin'apero Avocat 180g  | 219 | 434 | 215.0 | 49.5% | ✅ partial | 🤖 LLM |
+| [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 467 | 200 | 267.0 | 133.5% | ✅ partial | 🤖 LLM |
 | [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | 200 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV356] LV SET 3 X 135G trisauces  SDP | 512 | 256 | 256.0 | 100.0% | ✅ partial | 📊 Médiane |
+| [LV356] LV SET 3 X 135G trisauces  SDP | 576 | 256 | 320.0 | 125.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (5 produits)
+
+
+<details>
+<summary><strong>1. [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP</strong> - LLM: 200u vs Médiane: undefinedu (Réel: 400u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 200u (confidence: medium)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 400u
+- 📉 **Erreur LLM**: 200u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline = 0. Les 3 derniers mois montrent une demande stable autour de 200u (avec une commande scindée en août: 196u+4u=200u). En l'absence d'historique N-1, je recommande la quantité récurrente observée de 200u, avec une confiance moyenne car le pattern récent est cohérent.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml </strong> - LLM: 434u vs Médiane: undefinedu (Réel: 434u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 434u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 434u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. Les 3 derniers mois montrent une demande stable à 434u/commande. Recommandation basée uniquement sur la tendance récente observée, d'où une confiance faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV363] LV BIO Tartin'apero Avocat 180g </strong> - LLM: 219u vs Médiane: undefinedu (Réel: 434u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 219u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 434u
+- 📉 **Erreur LLM**: 215u (49.5%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline fiable. Les données récentes montrent 434u et 4u (probablement correction) avec un outlier de 864u détecté. En l'absence de référence, la recommandation se base sur la commande récente normale de 434u divisée par 2 pour rester conservateur face à l'incertitude totale sur la saisonnalité et la demande structurelle.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml</strong> - LLM: 467u vs Médiane: undefinedu (Réel: 200u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 467u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 200u
+- 📉 **Erreur LLM**: 267u (133.5%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'une baseline historique. La recommandation se base uniquement sur la médiane des 3 derniers mois (400u), ce qui suggère une demande régulière récente. Confiance faible due au manque de profondeur historique et d'insight saisonnier.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [LV356] LV SET 3 X 135G trisauces  SDP</strong> - LLM: 576u vs Médiane: undefinedu (Réel: 256u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 576u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 256u
+- 📉 **Erreur LLM**: 320u (125.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+La médiane de référence N-1 est de 576u (aucun outlier détecté). Aucune commande récente dans les 3 derniers mois indique soit une rupture d'activité, soit un changement de pattern client. Par prudence, je recommande la baseline sans ajustement, mais la confiance est faible en raison du manque total de données récentes.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -173,15 +303,15 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml | 200 | Stock prédit: 132.8u (9j restants) → prédit 200u mais non commandé |
-| [LV234] LV "CLASSIQUE" WECK Mayonnaise aus œufs 250ml | 400 | Stock prédit: 332.0u (24j restants) → prédit 400u mais non commandé |
+| [LV234] LV "CLASSIQUE" WECK Mayonnaise aus œufs 250ml | 350 | Stock prédit: 332.0u (24j restants) → prédit 350u mais non commandé |
 | [LV313] LV "CLASSIQUE" WECK Sauce COCKTAIL 250ml | 200 | Stock prédit: 163.6u (22j restants) → prédit 200u mais non commandé |
-| [LV236] LV "CLASSIQUE" WECK Sauce TARTARE 250ml | 400 | Stock prédit: 151.5u (15j restants) → prédit 400u mais non commandé |
+| [LV236] LV "CLASSIQUE" WECK Sauce TARTARE 250ml | 300 | Stock prédit: 151.5u (15j restants) → prédit 300u mais non commandé |
 | [LV303] LV BIO  Tartin'apero Mangue curry SDP 200 ml  | 434 | Stock prédit: 335.2u (16j restants) → prédit 434u mais non commandé |
 | [LV358] LV SDP SAUCE BEARNAISE 125G (copie) | 350 | Stock prédit: 169.1u (25j restants) → prédit 350u mais non commandé |
 | [LV302] LV BIO Tartin'apero Carotte Gingembre SDP 200 ml  | 392 | Stock prédit: -192.8u (-9j restants) → prédit 392u mais non commandé |
 | [LV314] LV "CLASSIQUE" WECK Sauce AIOLI PESTO 250ml | 200 | Stock prédit: -83.6u (-11j restants) → prédit 200u mais non commandé |
-| [LV334] LA VACHE TRAD Sauce au poivre bocal 250ml WECK SDP | 200 | Stock prédit: -102.9u (-13j restants) → prédit 200u mais non commandé |
-| [LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml  | 392 | Stock prédit: -79.9u (-6j restants) → prédit 392u mais non commandé |
+| [LV334] LA VACHE TRAD Sauce au poivre bocal 250ml WECK SDP | 300 | Stock prédit: -102.9u (-13j restants) → prédit 300u mais non commandé |
+| [LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml  | 434 | Stock prédit: -79.9u (-6j restants) → prédit 434u mais non commandé |
 | [LV307] LV BIO Tartin'apero Houmous type SDP 200 ml  | 392 | Stock prédit: 137.1u (18j restants) → prédit 392u mais non commandé |
 | [LV tritart 135] LV BIO SET 3 X 135G TARTIN'APERO SDP | 256 | Stock prédit: -131.7u (-13j restants) → prédit 256u mais non commandé |
 | [LV337] LV BIO Tartin'apero TOMATE AIL DES OURS SDP 200ml | 434 | Stock prédit: -27.2u (-2j restants) → prédit 434u mais non commandé |
@@ -219,4 +349,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:16.958Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:33.720Z*

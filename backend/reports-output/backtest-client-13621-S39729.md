@@ -11,10 +11,10 @@
 
 ### 💰 Usage LLM
 
-- **Appels**: 93
-- **Tokens**: 145,433 input + 110,084 output = 255,517 total
-- **Coût**: $2.0876 (~208.76¢)
-- **Coût par produit LLM**: $0.0224
+- **Appels**: 119
+- **Tokens**: 182,523 input + 24,149 output = 206,672 total
+- **Coût**: $0.9098 (~90.98¢)
+- **Coût par produit LLM**: $0.0076
 
 
 ---
@@ -71,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 159.25 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 52.5% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 171.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 58.4% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
@@ -150,7 +150,7 @@
 | [PF3394] LV SAUCE BOURGUIGNONNE 250ML WECK | 200 | 400 | 200.0 | 50.0% | ✅ partial | 🤖 LLM |
 | [PF1778] TARTINAPERO BIO TOMATE 200ML | 434 | 434 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 | [PF3393] LV FR TARTINAPERO BIO AVOCAT BOCAL 190G | 651 | 434 | 217.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [PF1810] LV SAUCE BEARNAISE 250ML WECK | 420 | 200 | 220.0 | 110.0% | ✅ partial | 🤖 LLM |
+| [PF1810] LV SAUCE BEARNAISE 250ML WECK | 467 | 200 | 267.0 | 133.5% | ✅ partial | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (3 produits)
@@ -160,70 +160,20 @@
 <summary><strong>1. [PF3394] LV SAUCE BOURGUIGNONNE 250ML WECK</strong> - LLM: 200u vs Médiane: undefinedu (Réel: 400u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 200u (confidence: high)
+- 🤖 **LLM prédit**: 200u (confidence: medium)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 400u
 - 📉 **Erreur LLM**: 200u (50.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1 - DE-EVENTING:
-L'historique montre 3 commandes identiques de 200 unités chacune. Aucun outlier détecté:
-- Pas de pic promotionnel (aucune commande > 2x la moyenne)
-- Pas de correction de stock visible
-- Stabilité parfaite = demande de fond réelle = 200u
-
-ÉTAPE 2 - SAISONNALITÉ:
-Produit: Sauce Bourguignonne (plat hivernal typique)
-- Historique couvre: Août (22/08), Septembre (16/09), Octobre (09/10)
-- Période actuelle: Mi-octobre = DÉBUT de saison haute pour produits mijotés/hivernaux
-- Les commandes sont espacées d'environ 23-27 jours, suggérant un cycle de rotation régulier
-- Observation: Les 200u sont commandées en fin d'été/début automne, juste avant la montée en demande
-- Ajustement saisonnier: NEUTRE car nous sommes au seuil de la saison (pas encore en plein pic hivernal nov-fév)
-
-ÉTAPE 3 - TENDANCE RÉCENTE:
-Sur les 3 dernières commandes disponibles:
-- Quantités: 200u → 200u → 200u (stabilité absolue)
-- Intervalles: ~24-27 jours (régularité parfaite)
-- Aucune accélération ou ralentissement détectable
-- Tendance: STABLE à 0% de variation
-
-ÉTAPE 4 - SYNTHÈSE ET RECOMMANDATION:
-- Base (demande de fond): 200u
-- Ajustement saisonnier: 0% (début de saison, pas de correction nécessaire)
-- Ajustement tendance: 0% (stabilité parfaite)
-- Coefficient de sécurité: Non appliqué (historique trop stable et prévisible)
-
-CALCUL FINAL: 200 × 1.00 × 1.00 = 200 unités
-
-La régularité parfaite des commandes (même quantité, même intervalle) sur 3 mois consécutifs indique un système de réapprovisionnement bien calibré. Le client semble avoir trouvé son rythme optimal. Recommandation conservatrice: maintenir 200u.
-
+Aucune donnée N-1 disponible, donc la baseline est établie sur la médiane des 3 derniers mois (200u) qui montre une régularité parfaite. Aucun outlier détecté, pattern stable avec commandes mensuelles constantes. Recommandation conservatrice à 200u en attendant plus d'historique pour affiner.
 
 **📅 Analyse Temporelle:**
-
-Intervalles entre commandes:
-- 09/10 → 16/09 = 23 jours
-- 16/09 → 22/08 = 25 jours
-Moyenne: ~24 jours (cycle mensuel régulier)
-
-Régularité: EXCELLENTE - Le client commande tous les ~3-4 semaines de manière prévisible. Aucune accélération ni ralentissement. Cette stabilité temporelle renforce la fiabilité de la prédiction et suggère une rotation stock bien maîtrisée.
-
+undefined
 
 **📊 Analyse Quantité:**
-
-Analyse des volumes:
-- Toutes les commandes: 200u (100% de stabilité)
-- Moyenne: 200u | Écart-type: 0u
-- Coefficient de variation: 0% (exceptionnellement stable)
-
-Aucune variation détectée sur 3 mois. Cette constance absolue indique soit:
-1. Un contrat de livraison récurrent calibré
-2. Une demande client finale très stable
-3. Un système de réapprovisionnement automatisé optimal
-
-Pas d'outlier, pas d'événement promotionnel, pas de correction. La demande de fond réelle = 200u.
-
+undefined
 
 **📈 Tendance détectée:** ❌ Non
 
@@ -234,135 +184,46 @@ Pas d'outlier, pas d'événement promotionnel, pas de correction. La demande de 
 <summary><strong>2. [PF1778] TARTINAPERO BIO TOMATE 200ML</strong> - LLM: 434u vs Médiane: undefinedu (Réel: 434u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 434u (confidence: high)
+- 🤖 **LLM prédit**: 434u (confidence: medium)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 434u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-**ÉTAPE 1: DE-EVENTING**
-En analysant l'historique:
-- 2025-10-09: 434u + 0u (ligne à 0u = correction technique, à ignorer)
-- 2025-09-05: 434u
-- 2025-08-19: 434u
-- 2025-06-24: 350u
-
-Les quantités sont remarquablement stables (434u sur les 3 dernières commandes effectives). La commande de 350u en juin est légèrement inférieure (-19%) mais reste dans la plage normale de variation B2B (±30%). Aucun outlier majeur détecté type promotion (>868u) ou pic anormal.
-
-**ÉTAPE 2: SAISONNALITÉ**
-Produit "Tartinapero Bio Tomate" = apéritif, forte connotation estivale/barbecue.
-- Juin (350u): début de saison haute
-- Août (434u): pleine saison haute → pic attendu
-- Septembre (434u): fin de saison haute, maintien du volume
-- Octobre (434u): sortie de saison, mais volume maintenu
-
-Nous sommes mi-octobre: normalement en baisse saisonnière post-été. CEPENDANT, le client continue de commander 434u, suggérant soit un changement de profil de consommation (produit devenu permanent dans l'assortiment), soit un décalage saisonnier vers l'automne.
-
-**ÉTAPE 3: TENDANCE RÉCENTE**
-Sur les 4 dernières commandes effectives:
-- Volume: 350 → 434 → 434 → 434u = stabilisation à 434u (+24% vs juin, puis plateau stable)
-- Fréquence: juin → août (65j) → sept (17j) → oct (34j) = cadence variable mais moyenne ~39 jours
-- Tendance: **Stabilisation à un niveau haut de 434u** depuis 3 commandes consécutives
-
-Pas de signe de ralentissement malgré la sortie de période estivale = signal fort de demande structurelle.
-
-**ÉTAPE 4: RECOMMANDATION FINALE**
-- Base de demande nettoyée: **434u** (standard établi sur 3 commandes)
-- Ajustement saisonnier: 0% (malgré octobre, la demande ne fléchit pas)
-- Ajustement tendance: 0% (plateau stable, pas d'accélération ni décélération)
-- Principe de précaution: Aucune raison de dévier du standard observé
-
-**CONCLUSION: 434 unités** - Le produit a trouvé son rythme de croisière à ce niveau, indépendamment de la saisonnalité attendue. Recommander moins serait risquer une rupture face à une demande prouvée stable.
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une demande récurrente stable de 434u (apparaissant 3 fois sur 4 enregistrements, avec 1 zéro ponctuel). Recommandation basée uniquement sur la tendance récente observée, d'où une confiance moyenne.
 
 **📅 Analyse Temporelle:**
-Fréquence inter-commandes: 65 jours (juin-août), 17 jours (août-sept), 34 jours (sept-oct). Moyenne ≈ 39 jours. La variabilité est normale en B2B où les commandes sont groupées. Pas de tendance claire à l'accélération ou ralentissement - rythme irrégulier mais volumes constants suggèrent un réapprovisionnement à la demande plutôt qu'un calendrier fixe.
+undefined
 
 **📊 Analyse Quantité:**
-Quantités commandées très stables: 434u répété sur 3 commandes consécutives (août-sept-oct). La commande de 350u en juin représente un niveau inférieur de -19%, possiblement lié au début de montée saisonnière. Volume moyen global: 410u. Volume moyen des 3 dernières: 434u. Aucun pic promotionnel détecté (max observé = 434u). Coefficient de variation faible = demande prévisible.
+undefined
 
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
 
 <details>
-<summary><strong>3. [PF1810] LV SAUCE BEARNAISE 250ML WECK</strong> - LLM: 420u vs Médiane: undefinedu (Réel: 200u)</summary>
+<summary><strong>3. [PF1810] LV SAUCE BEARNAISE 250ML WECK</strong> - LLM: 467u vs Médiane: undefinedu (Réel: 200u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 420u (confidence: medium)
+- 🤖 **LLM prédit**: 467u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 200u
-- 📉 **Erreur LLM**: 220u (110.0%)
+- 📉 **Erreur LLM**: 267u (133.5%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-**ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)**
-
-Analyse des 3 commandes disponibles:
-- 2025-09-10: 400u
-- 2025-09-05: 400u  
-- 2025-08-19: 600u
-
-Moyenne: 467u
-Écart-type: ~94u
-
-La commande du 19/08 (600u) représente 1.3x la moyenne. Ce n'est pas un outlier majeur (seuil 2x non atteint), mais elle est significativement supérieure. Il pourrait s'agir:
-- D'un stockage préventif avant septembre
-- D'une demande légèrement plus forte en août
-
-Les deux dernières commandes (400u) montrent une stabilisation. Je considère 400u comme la **demande de fond actuelle**.
-
-**ÉTAPE 2: SAISONNALITÉ**
-
-Produit: Sauce Béarnaise (produit d'accompagnement, typiquement pour viandes grillées)
-- Saisonnalité probable: HAUTE en été (BBQ, grillades) / BASSE en automne-hiver
-- Date actuelle: 14 octobre 2025 = **début de période basse**
-- Historique récent: août-septembre = fin de période haute
-
-Observations:
-- 600u en août (pleine saison BBQ)
-- 400u début septembre (baisse post-été)
-- Nous sommes maintenant mi-octobre = période creuse attendue
-
-**Ajustement saisonnier: -10 à -15%** (sortie de saison estivale)
-
-**ÉTAPE 3: TENDANCE RÉCENTE**
-
-Avec seulement 3 points, la tendance est limitée mais claire:
-- 600u → 400u → 400u = **décroissance puis stabilisation**
-- Fréquence: 15 jours entre les deux dernières commandes (5 sept - 10 sept = 5 jours), puis ~1 mois sans nouvelle commande
-
-La tendance montre:
-- Baisse de 33% (600→400) entre août et septembre
-- Stabilisation en septembre (2x 400u à 5 jours d'intervalle)
-- Rythme actuel semble être ~400u tous les 20-30 jours
-
-**Coefficient de tendance: stable à légèrement baissier (-5%)**
-
-**ÉTAPE 4: RECOMMANDATION FINALE**
-
-Base de calcul:
-- Demande de fond stabilisée: **400u**
-- Ajustement saisonnier (entrée automne): **-10%** → 360u
-- Ajustement tendance (stable/légèrement baissier): **-5%** → 342u
-- Marge de sécurité conservatrice: **+20%** → 410u
-
-**Quantité recommandée: 420u** (arrondi commercial)
-
-Rationale:
-- Les deux dernières commandes à 400u établissent une baseline claire
-- La période (octobre) justifie une légère réduction vs été
-- L'approche conservatrice privilégie 420u plutôt que 400u pour éviter rupture
-- Reste sous les 600u d'août (qui semble surestimé pour la saison actuelle)
+Absence totale de données N-1 empêche l'établissement d'un baseline fiable. La recommandation se base uniquement sur la médiane des 3 derniers mois (400u), légèrement ajustée pour tenir compte de la variation observée (600u en août). Confiance faible due au manque d'historique et au faible nombre de points de données.
 
 **📅 Analyse Temporelle:**
-Historique très limité (3 commandes sur 2 mois). Fréquence observée: commandes rapprochées début septembre (5 jours d'écart) suggérant un besoin ponctuel fort, puis probablement ~1 mois depuis la dernière. Pattern probable: commandes tous les 20-30 jours en période normale. L'absence de données avant août limite l'analyse saisonnière complète.
+undefined
 
 **📊 Analyse Quantité:**
-Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probable effet saisonnier été + BBQ). Stabilisation nette à 400u en septembre (2 commandes identiques). Coefficient de variation acceptable (~20%) indiquant une demande relativement stable hors effet saisonnier. Base de 400u semble être le niveau standard actuel.
+undefined
 
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
@@ -402,16 +263,16 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 | [PF1793] LV MAYONNAI TRUFFES 250ML WECK | 200 | Stock prédit: 164.0u (18j restants) → prédit 200u mais non commandé |
 | [PF1804] LV SAUCE TARTARE 250ML WECK | 300 | Stock prédit: 136.8u (8j restants) → prédit 300u mais non commandé |
 | [PF1773] TARTINAPERO BIO MANGUE 200ML | 434 | Stock prédit: 349.2u (16j restants) → prédit 434u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 84 | Stock prédit: 72.0u (9j restants) → prédit 84u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 56 | Stock prédit: 72.0u (9j restants) → prédit 56u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 56 | Stock prédit: 23.1u (3j restants) → prédit 56u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 56 | Stock prédit: 32.5u (6j restants) → prédit 56u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 56 | Stock prédit: 24.6u (3j restants) → prédit 56u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 2 | Stock prédit: -1.6u (-3j restants) → prédit 2u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 120 | Stock prédit: 84.7u (16j restants) → prédit 120u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 80 | Stock prédit: 45.9u (22j restants) → prédit 80u mais non commandé |
+| [PF0089] FILOU VOL AU VENT 400 GR | 4 | Stock prédit: -1.6u (-3j restants) → prédit 4u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 180 | Stock prédit: 84.7u (16j restants) → prédit 180u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 90 | Stock prédit: 45.9u (22j restants) → prédit 90u mais non commandé |
 | [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 8 | Stock prédit: 7.8u (25j restants) → prédit 8u mais non commandé |
 | [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 8 | Stock prédit: 3.4u (15j restants) → prédit 8u mais non commandé |
-| [PF0088] FILOU VOL AU VENT 800 GR | 24 | Stock prédit: 16.7u (12j restants) → prédit 24u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 17 | Stock prédit: 16.7u (12j restants) → prédit 17u mais non commandé |
 | [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 24 | Stock prédit: 16.6u (26j restants) → prédit 24u mais non commandé |
 | [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 24 | Stock prédit: 16.6u (26j restants) → prédit 24u mais non commandé |
 | [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 49 | Stock prédit: 13.4u (4j restants) → prédit 49u mais non commandé |
@@ -419,19 +280,19 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 | [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 30 | Stock prédit: 15.4u (21j restants) → prédit 30u mais non commandé |
 | [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 37 | Stock prédit: -2.1u (0j restants) → prédit 37u mais non commandé |
 | [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 37 | Stock prédit: -2.1u (0j restants) → prédit 37u mais non commandé |
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 12 | Stock prédit: 12.6u (24j restants) → prédit 12u mais non commandé |
-| [RIT05] RITCHIE Cola - verre 275ml | 25 | Stock prédit: 18.1u (21j restants) → prédit 25u mais non commandé |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 13 | Stock prédit: 12.6u (24j restants) → prédit 13u mais non commandé |
+| [RIT05] RITCHIE Cola - verre 275ml | 23 | Stock prédit: 18.1u (21j restants) → prédit 23u mais non commandé |
 | [RIT06] RITCHIE Cola ZERO - verre 275ml | 5 | Stock prédit: 0.7u (2j restants) → prédit 5u mais non commandé |
-| [RIT07] RITCHIE Orange - canette 330ml | 6 | Stock prédit: 1.1u (3j restants) → prédit 6u mais non commandé |
-| [RIT08] RITCHIE Citron - canette 330ml | 5 | Stock prédit: 0.8u (2j restants) → prédit 5u mais non commandé |
-| [RIT02] RITCHIE Citron - verre 275ml | 25 | Stock prédit: 15.8u (15j restants) → prédit 25u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 50 | Stock prédit: 10.8u (7j restants) → prédit 50u mais non commandé |
+| [RIT07] RITCHIE Orange - canette 330ml | 5 | Stock prédit: 1.1u (3j restants) → prédit 5u mais non commandé |
+| [RIT08] RITCHIE Citron - canette 330ml | 8 | Stock prédit: 0.8u (2j restants) → prédit 8u mais non commandé |
+| [RIT02] RITCHIE Citron - verre 275ml | 20 | Stock prédit: 15.8u (15j restants) → prédit 20u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 36 | Stock prédit: 10.8u (7j restants) → prédit 36u mais non commandé |
 | [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 740 | Stock prédit: 283.2u (8j restants) → prédit 740u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 22 | Stock prédit: 9.6u (16j restants) → prédit 22u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 25 | Stock prédit: 7.1u (9j restants) → prédit 25u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 25 | Stock prédit: 7.7u (11j restants) → prédit 25u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 24 | Stock prédit: 13.8u (22j restants) → prédit 24u mais non commandé |
-| [RISH05] RISH kombucha BIO - rose 750ml | 8 | Stock prédit: 6.2u (29j restants) → prédit 8u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 20 | Stock prédit: 9.6u (16j restants) → prédit 20u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 20 | Stock prédit: 7.1u (9j restants) → prédit 20u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 20 | Stock prédit: 7.7u (11j restants) → prédit 20u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 25 | Stock prédit: 13.8u (22j restants) → prédit 25u mais non commandé |
+| [RISH05] RISH kombucha BIO - rose 750ml | 10 | Stock prédit: 6.2u (29j restants) → prédit 10u mais non commandé |
 | [PF0094] FILOU MOUTARDE 700 GR | 2 | Stock prédit: 1.1u (22j restants) → prédit 2u mais non commandé |
 | [PF0093] FILOU MOUTARDE 300GR | 2 | Stock prédit: -0.8u (-5j restants) → prédit 2u mais non commandé |
 | [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 4 | Stock prédit: 0.8u (6j restants) → prédit 4u mais non commandé |
@@ -440,7 +301,7 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 | [PF1828] JF SAUCE BEARNAISE 470ML WECK | 110 | Stock prédit: 66.5u (29j restants) → prédit 110u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 56 | Stock prédit: -51.3u (-9j restants) → prédit 56u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 56 | Stock prédit: 19.3u (10j restants) → prédit 56u mais non commandé |
-| [RIT01] RITCHIE Orange - verre 275ml | 20 | Stock prédit: 5.8u (10j restants) → prédit 20u mais non commandé |
+| [RIT01] RITCHIE Orange - verre 275ml | 15 | Stock prédit: 5.8u (10j restants) → prédit 15u mais non commandé |
 | [RIT09] RITCHIE Cola - canette 330ml | 5 | Stock prédit: 1.5u (10j restants) → prédit 5u mais non commandé |
 | [PF3329] LV SDP SAUCE BEARNAISE 125G | 2100 | Stock prédit: 988.2u (24j restants) → prédit 2100u mais non commandé |
 | [PF1776] TARTINAPERO BIO CAROTTE 200ML | 392 | Stock prédit: -207.1u (-10j restants) → prédit 392u mais non commandé |
@@ -455,7 +316,7 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 | [PF1460] LV MAYONNAISE BIO 200ML | 370 | Stock prédit: -85.4u (-5j restants) → prédit 370u mais non commandé |
 | [PF1471] JF MAYONNAIS WASABI 250ML WECK | 200 | Stock prédit: 66.7u (15j restants) → prédit 200u mais non commandé |
 | [PF1527] JF SAUCE BEARNAISE 250ML WECK | 200 | Stock prédit: -66.7u (-8j restants) → prédit 200u mais non commandé |
-| [PF1475] JF MOUTARDE MIEL 250ML WECK | 200 | Stock prédit: 91.0u (26j restants) → prédit 200u mais non commandé |
+| [PF1475] JF MOUTARDE MIEL 250ML WECK | 167 | Stock prédit: 91.0u (26j restants) → prédit 167u mais non commandé |
 | [PF1639] JF BURGER SQUEEZE 300ML | 150 | Stock prédit: 37.8u (10j restants) → prédit 150u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 135 | Stock prédit: 26.7u (14j restants) → prédit 135u mais non commandé |
 | [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 8 | Stock prédit: 0.4u (1j restants) → prédit 8u mais non commandé |
@@ -463,39 +324,39 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 | [WIG01] WIGNAC cidre naturel bio 330ml | 15 | Stock prédit: 0.8u (1j restants) → prédit 15u mais non commandé |
 | [WIG03] WIGNAC cidre naturel bio 750ml | 16 | Stock prédit: -5.5u (-9j restants) → prédit 16u mais non commandé |
 | [WIG04] WIGNAC cidre rosé bio 750ml | 13 | Stock prédit: -6.0u (-12j restants) → prédit 13u mais non commandé |
-| [PF0084] FILOU CARBONNADES 800 GR | 3 | Stock prédit: -1.6u (-5j restants) → prédit 3u mais non commandé |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 35 | Stock prédit: -3.2u (-2j restants) → prédit 35u mais non commandé |
+| [PF0084] FILOU CARBONNADES 800 GR | 6 | Stock prédit: -1.6u (-5j restants) → prédit 6u mais non commandé |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 33 | Stock prédit: -3.2u (-2j restants) → prédit 33u mais non commandé |
 | [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 30 | Stock prédit: 10.6u (13j restants) → prédit 30u mais non commandé |
 | [PF3237] LV MAYONNAISE POIVRE 250ML WECK  | 300 | Stock prédit: -214.5u (-19j restants) → prédit 300u mais non commandé |
 | [PF1775] TARTINAPERO BIO PAPRIKA 200ML | 434 | Stock prédit: 17.0u (1j restants) → prédit 434u mais non commandé |
 | [PF1855] LV TARTINAPERO BIO TRIPACK | 768 | Stock prédit: 218.8u (7j restants) → prédit 768u mais non commandé |
-| [PF2978] TARTINAPERO BIO AIL OURS 200ML | 434 | Stock prédit: -19.8u (-1j restants) → prédit 434u mais non commandé |
-| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 1400 | Stock prédit: 726.9u (26j restants) → prédit 1400u mais non commandé |
+| [PF2978] TARTINAPERO BIO AIL OURS 200ML | 406 | Stock prédit: -19.8u (-1j restants) → prédit 406u mais non commandé |
+| [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 1750 | Stock prédit: 726.9u (26j restants) → prédit 1750u mais non commandé |
 | [PF1786] TARTI ALNATUR BIO MANGUE 200ML | 450 | Stock prédit: -357.7u (-20j restants) → prédit 450u mais non commandé |
 | [PF1789] TARTI ALNATUR BIO PAPRIKA 200M | 450 | Stock prédit: -357.7u (-20j restants) → prédit 450u mais non commandé |
-| [PF1469] JF MAYONNAI TRUFFES 250ML WECK | 300 | Stock prédit: 135.3u (19j restants) → prédit 300u mais non commandé |
+| [PF1469] JF MAYONNAI TRUFFES 250ML WECK | 400 | Stock prédit: 135.3u (19j restants) → prédit 400u mais non commandé |
 | [PF1526] JF SAUCE TARTARE 250ML WECK | 300 | Stock prédit: 162.5u (26j restants) → prédit 300u mais non commandé |
 | [PF1967] JF SAUCE AIOLI 250ML WECK | 200 | Stock prédit: 63.1u (17j restants) → prédit 200u mais non commandé |
 | [PF1849] JF KETCHUP SQUEEZE 300ML | 60 | Stock prédit: -28.8u (-12j restants) → prédit 60u mais non commandé |
 | [PF3370] JF MAYONNAISE CITRON 250ML WECK | 200 | Stock prédit: 41.7u (9j restants) → prédit 200u mais non commandé |
-| [PF1557] LV TARTINADE BIO AUBERGINE 200 | 1600 | Stock prédit: 900.9u (29j restants) → prédit 1600u mais non commandé |
+| [PF1557] LV TARTINADE BIO AUBERGINE 200 | 2327 | Stock prédit: 900.9u (29j restants) → prédit 2327u mais non commandé |
 | [PF2980] LV TARTINADE BIO AIL OURS200ML | 816 | Stock prédit: -543.1u (-17j restants) → prédit 816u mais non commandé |
 | [PF3307] LV DE BROTAUFSTRICH BIO DATTE CHILI 180G | 740 | Stock prédit: 170.2u (11j restants) → prédit 740u mais non commandé |
 | [PF3366] LV BE TARTINADE BIO ASPERGE 190G | 350 | Stock prédit: -159.6u (-52j restants) → prédit 350u mais non commandé |
 | [PI3072] PI TARTI POIS CHICHES CONS 250G BIO | 4260 | Stock prédit: 1408.6u (18j restants) → prédit 4260u mais non commandé |
 | [PI3073] PI TARTI TOMATE CONS 250 | 7500 | Stock prédit: 2573.0u (19j restants) → prédit 7500u mais non commandé |
 | [PI3346] PI TARTINADE BETTERAVE CONS 250G | 5700 | Stock prédit: 659.5u (6j restants) → prédit 5700u mais non commandé |
-| [PF1721] LV VIN CAESAR PET 250 BIO | 260 | Stock prédit: 61.0u (15j restants) → prédit 260u mais non commandé |
-| [PF1629] LV TARTINADE BIO TOMATE 200ML | 1650 | Stock prédit: 749.9u (22j restants) → prédit 1650u mais non commandé |
+| [PF1721] LV VIN CAESAR PET 250 BIO | 130 | Stock prédit: 61.0u (15j restants) → prédit 130u mais non commandé |
+| [PF1629] LV TARTINADE BIO TOMATE 200ML | 2500 | Stock prédit: 749.9u (22j restants) → prédit 2500u mais non commandé |
 | [PF2990] LD TARTINADE BIO SALICORN 135G | 75 | Stock prédit: 0.9u (1j restants) → prédit 75u mais non commandé |
 | [PAO01] PAOLA cola verre 250ml - le cola des Belges | 13 | Stock prédit: 2.5u (11j restants) → prédit 13u mais non commandé |
-| [JOY02] JOY! Confiture bio à la fraise 370g | 202 | Stock prédit: -22.9u (-5j restants) → prédit 202u mais non commandé |
+| [JOY02] JOY! Confiture bio à la fraise 370g | 200 | Stock prédit: -22.9u (-5j restants) → prédit 200u mais non commandé |
 | [JOY03] JOY! Confiture bio à l'abricot 370g | 199 | Stock prédit: 35.4u (11j restants) → prédit 199u mais non commandé |
 | [JOY04] JOY! Confiture bio aux 4 fruits 370g | 200 | Stock prédit: -48.1u (-10j restants) → prédit 200u mais non commandé |
 | [RIT10] RITCHIE Cola ZERO - canette 330ml | 5 | Stock prédit: -1.1u (-9j restants) → prédit 5u mais non commandé |
 | [PI3200] PI TARTI AUBERGINE CONS 250 | 1356 | Stock prédit: -313.9u (-12j restants) → prédit 1356u mais non commandé |
 | [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 2 | Stock prédit: -1.0u (-32j restants) → prédit 2u mais non commandé |
-| [BUD02] BUDDY bio functional & energy drink citorn & gingembre - 250ml | 60 | Stock prédit: -53.2u (-58j restants) → prédit 60u mais non commandé |
+| [BUD02] BUDDY bio functional & energy drink citorn & gingembre - 250ml | 20 | Stock prédit: -53.2u (-58j restants) → prédit 20u mais non commandé |
 | [BUD03] BUDDY bio functional & energy drink mangue passion - 250ml | 60 | Stock prédit: -34.1u (-29j restants) → prédit 60u mais non commandé |
 | [BUD04] BUDDY bio functional & energy drink grenade hibiscus - 250ml | 60 | Stock prédit: -34.1u (-29j restants) → prédit 60u mais non commandé |
 | [PF3331] LV SDP SAUCE POIVRE 125G | 1050 | Stock prédit: 452.9u (21j restants) → prédit 1050u mais non commandé |
@@ -503,8 +364,8 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 | [PF1484] JF VINAIGRETTE FH WECK 200ML | 150 | Stock prédit: -130.4u (-44j restants) → prédit 150u mais non commandé |
 | [PF3226] JF SAUCE LAPIN 380GX6 | 150 | Stock prédit: -60.8u (-27j restants) → prédit 150u mais non commandé |
 | [PF1534] JF SAUCE COCKTAIL 250ML WECK | 200 | Stock prédit: -59.6u (-22j restants) → prédit 200u mais non commandé |
-| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 200 | Stock prédit: -348.1u (-60j restants) → prédit 200u mais non commandé |
-| [PF1540] JF SAUCE SAMOURAI 250ML WECK | 200 | Stock prédit: -122.1u (-36j restants) → prédit 200u mais non commandé |
+| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 190 | Stock prédit: -348.1u (-60j restants) → prédit 190u mais non commandé |
+| [PF1540] JF SAUCE SAMOURAI 250ML WECK | 195 | Stock prédit: -122.1u (-36j restants) → prédit 195u mais non commandé |
 | [PF3371] JF MAYONNAISE MIEL MOUTARDE 250ML WECK | 200 | Stock prédit: 9.9u (5j restants) → prédit 200u mais non commandé |
 | [PF3372] JF SAUCE CHIPOTLE 250ML WECK | 200 | Stock prédit: 9.9u (5j restants) → prédit 200u mais non commandé |
 | [REB05] ReBEL chips premium & bio - sel de mer 35g | 64 | Stock prédit: -97.9u (-58j restants) → prédit 64u mais non commandé |
@@ -516,9 +377,9 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 | [fsv17] Mélange de noix bio vrac 2,75kg | 8 | Stock prédit: -6.1u (-53j restants) → prédit 8u mais non commandé |
 | [KOKO02] KOKO Kombucha citron gingembre 330ml | 68 | Stock prédit: -27.1u (-30j restants) → prédit 68u mais non commandé |
 | [KOKO03] KOKO Kombucha framboise hibiscus 330ml | 80 | Stock prédit: -22.5u (-21j restants) → prédit 80u mais non commandé |
-| [PI3203] PI TARTI MANGUE CONS 250 | 1560 | Stock prédit: 220.2u (17j restants) → prédit 1560u mais non commandé |
-| [PF1461] LV TARTARE BIO 200ML | 350 | Stock prédit: -74.6u (-19j restants) → prédit 350u mais non commandé |
-| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 130 | Stock prédit: -270.0u (-77j restants) → prédit 130u mais non commandé |
+| [PI3203] PI TARTI MANGUE CONS 250 | 780 | Stock prédit: 220.2u (17j restants) → prédit 780u mais non commandé |
+| [PF1461] LV TARTARE BIO 200ML | 271 | Stock prédit: -74.6u (-19j restants) → prédit 271u mais non commandé |
+| [PF1640] JF MITRAILLETTE SQUEEZE 300ML | 129 | Stock prédit: -270.0u (-77j restants) → prédit 129u mais non commandé |
 | [LEA09] LEAMO cola bio 330ml | 8 | Stock prédit: -2.3u (-22j restants) → prédit 8u mais non commandé |
 
 
@@ -550,4 +411,4 @@ Quantités variant entre 400-600u. Les 600u d'août représentent le pic (probab
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:10.890Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:07.206Z*

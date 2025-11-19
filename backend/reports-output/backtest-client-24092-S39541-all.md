@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 6
+- **Tokens**: 9,154 input + 1,190 output = 10,344 total
+- **Coût**: $0.0453 (~4.53¢)
+- **Coût par produit LLM**: $0.0076
+
 
 ---
 
@@ -140,7 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une activité faible mais régulière (1-3u par commande, 4 transactions). Recommandation conservatrice basée uniquement sur la tendance récente observée avec une médiane de 2u.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -207,4 +241,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:00.019Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:13.793Z*

@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 23
+- **Tokens**: 35,618 input + 4,751 output = 40,369 total
+- **Coût**: $0.1781 (~17.81¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.80 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 33.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 0.60 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 23.3% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,11 +147,134 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 5 | 3 | 2.0 | 66.7% | ✅ partial | 📊 Médiane |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 5 | 3 | 2.0 | 66.7% | ✅ partial | 🤖 LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (5 produits)
+
+
+<details>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM: 5u vs Médiane: undefinedu (Réel: 3u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 5u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 3u
+- 📉 **Erreur LLM**: 2u (66.7%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc pas de baseline historique. La tendance actuelle montre des commandes régulières de 5-6u sur les 3 derniers mois (médiane=5u). Recommandation basée uniquement sur l'historique récent avec confiance faible par manque de référentiel annuel.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM: 3u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 3u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. La tendance des 3 derniers mois montre une demande faible et sporadique (1-6u par commande, médiane ~3u). Recommandation conservatrice basée uniquement sur l'historique récent avec confiance faible due à l'absence de référentiel annuel.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. La tendance actuelle (3 derniers mois) montre des commandes faibles et irrégulières (1-4u). Recommandation conservatrice de 2u basée uniquement sur la médiane des données récentes (2u), avec confiance faible due à l'absence de référence annuelle.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1, impossible d'établir une baseline historique. Les 3 derniers mois montrent une demande sporadique faible (1-3u) avec médiane à 1u. Recommandation conservatrice de 2u basée uniquement sur la tendance récente.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Baseline N-1 de 3u (pas d'outliers détectés). Tendance actuelle montre une baisse significative (-67%) avec seulement 1u sur les 3 derniers mois. Confiance faible due au nombre très limité de points de données (1 seule transaction par période), rendant difficile l'identification d'une tendance robuste.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -172,20 +302,20 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.9u (-5j restants) → prédit 2u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -1.1u (-7j restants) → prédit 2u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 3 | Stock prédit: 0.9u (9j restants) → prédit 3u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 3 | Stock prédit: -1.1u (-7j restants) → prédit 3u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: 0.9u (9j restants) → prédit 2u mais non commandé |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock prédit: 0.6u (8j restants) → prédit 2u mais non commandé |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 3 | Stock prédit: -1.5u (-14j restants) → prédit 3u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: -0.5u (-4j restants) → prédit 3u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.5u (-4j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock prédit: 0.5u (7j restants) → prédit 2u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: -0.6u (-4j restants) → prédit 3u mais non commandé |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock prédit: 0.1u (1j restants) → prédit 2u mais non commandé |
 | [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.5u (27j restants) → prédit 2u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.1u (-31j restants) → prédit 2u mais non commandé |
 | [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-23j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -1.0u (-45j restants) → prédit 1u mais non commandé |
@@ -213,4 +343,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:24.349Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:54.046Z*

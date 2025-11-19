@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 2
+- **Tokens**: 3,136 input + 431 output = 3,567 total
+- **Coût**: $0.0159 (~1.59¢)
+- **Coût par produit LLM**: $0.0079
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 32.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 20.0% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,7 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [PF0078] FILOU CHASSEUR 5 L | 128 | 160 | 32.0 | 20.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 128u vs Médiane: undefinedu (Réel: 160u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 128u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 160u
+- 📉 **Erreur LLM**: 32u (20.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, impossible d'établir une baseline historique. La recommandation se base uniquement sur la médiane des 3 derniers mois (128u: médiane entre 80, 80, 160, 160, 160). Confiance faible due à l'absence de référentiel annuel et à la visibilité limitée sur la saisonnalité.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -167,7 +201,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: -3.2u (-11j restants) → prédit 6u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 7 | Stock prédit: -3.2u (-11j restants) → prédit 7u mais non commandé |
 
 
 ---
@@ -191,4 +225,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:32.769Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:01.182Z*

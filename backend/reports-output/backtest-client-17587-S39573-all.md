@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 30
+- **Tokens**: 45,994 input + 6,104 output = 52,098 total
+- **Coût**: $0.2295 (~22.95¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.45 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 27.3% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAE** | 0.55 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 36.4% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 5 | Égalité parfaite |
+| Partial Match (>0u) | 6 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,17 +147,212 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [LV159] LV Tartinade aux Truffes  135g  | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV131] LV Tartinade Potiron 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
+| [LV160] LV Tartinade Aubergine 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [LV159] LV Tartinade aux Truffes  135g  | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [LV131] LV Tartinade Potiron 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
 | [LV139] LV Tartinade Paprika Chili 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
 | [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 3 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 | [LV137] LV Tartinade Lentilles Curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
+
+
+### 🤖 Détails des Prédictions LLM (8 produits)
+
+
+<details>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline fiable. Les 3 derniers mois montrent seulement 2 commandes (1u et 2u), suggérant une demande très faible et sporadique. Par prudence et conservatisme B2B, je recommande 2 unités basé uniquement sur l'observation récente la plus élevée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM: 1u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. Les 3 derniers mois montrent une consommation régulière de 1 unité/mois, suggérant une demande très faible mais constante. Recommandation conservatrice de 1 unité compte tenu du manque de données historiques et du pattern récent stable.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline solide. Les 3 derniers mois montrent seulement 2 commandes de 2u (août et septembre), suggérant une demande très faible et irrégulière. Recommandation minimale de 2u par prudence, avec confiance faible en raison du manque d'historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. Les 3 derniers mois montrent une demande très faible et stable (1-2u par commande, ~6u total). Recommandation basée uniquement sur la tendance récente observée, d'où une confiance faible.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline. Les 3 derniers mois montrent seulement 2 commandes très faibles (1u et 2u), suggérant un produit à rotation très lente ou nouveau. Par précaution, je recommande 2 unités pour couvrir la demande minimale observée récemment.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>6. [LV131] LV Tartinade Potiron 190g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 2u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée de référence N-1 disponible. La tendance actuelle (3 derniers mois) montre 2 commandes unitaires sporadiques (juillet et août). Par prudence et vu l'historique minimal, je recommande 1 unité en stock de sécurité.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>7. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM: 2u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 2u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline fiable. La seule commande récente (2u en août 2025) suggère une demande minimale sporadique. Par prudence, je recommande 2 unités, mais la confiance est faible en raison du manque d'historique robuste.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>8. [LV336] LV BIO Tartinade Tomato Basilico 380g</strong> - LLM: 1u vs Médiane: undefinedu (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Baseline N-1 établi à 3u (1 seule commande, pas d'outliers détectés). La tendance sur 3 derniers mois montre une baisse significative (-67%) avec seulement 1u commandée vs 3u en N-1. Confiance faible due au très faible volume de données (1 commande par période), recommandation de 1u alignée sur la demande récente observée.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -178,22 +380,22 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV135] LV Tartinade Basilico 190g | 1 | Stock prédit: 0.3u (8j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: 0.8u (12j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.9u (18j restants) → prédit 1u mais non commandé |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 1.1u (25j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: 0.8u (12j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | Stock prédit: 0.9u (18j restants) → prédit 2u mais non commandé |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 1.1u (25j restants) → prédit 2u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 1.1u (25j restants) → prédit 2u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | Stock prédit: 0.7u (11j restants) → prédit 2u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 0.5u (7j restants) → prédit 2u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.5u (18j restants) → prédit 1u mais non commandé |
 | [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: 0.6u (25j restants) → prédit 1u mais non commandé |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 2 | Stock prédit: 0.0u (0j restants) → prédit 2u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: -0.3u (-9j restants) → prédit 1u mais non commandé |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: -0.8u (-18j restants) → prédit 1u mais non commandé |
 | [LV187] LV Tartinade Mangue Curry 380g | 1 | Stock prédit: 0.4u (23j restants) → prédit 1u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.1u (-3j restants) → prédit 1u mais non commandé |
-| [CB005] CB Apple juice 1l | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [CB005] CB Apple juice 1l | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.6u (-21j restants) → prédit 1u mais non commandé |
 | [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
@@ -242,4 +444,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:31:07.735Z*
+*Rapport généré automatiquement le 2025-11-19T17:54:32.832Z*

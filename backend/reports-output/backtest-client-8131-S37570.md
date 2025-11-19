@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 6
+- **Tokens**: 9,447 input + 1,252 output = 10,699 total
+- **Coût**: $0.0471 (~4.71¢)
+- **Coût par produit LLM**: $0.0079
+
 
 ---
 
@@ -64,10 +71,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 144.60 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 46.4% | Erreur moyenne en % (complémentaire) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 4 | Avec erreur |
+| **MAE** | 145.20 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 47.5% | Erreur moyenne en % (complémentaire) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 5 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -140,11 +147,134 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 800 | 640.0 | 80.0% | ✅ partial | 📊 Médiane |
-| [PF0077] FILOU PROVENCALE 5 L | 24 | 50 | 26.0 | 52.0% | ✅ partial | 📊 Médiane |
-| [PF0088] FILOU VOL AU VENT 800 GR | 5 | 10 | 5.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 52 | 104 | 52.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | 52 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [PF0078] FILOU CHASSEUR 5 L | 160 | 800 | 640.0 | 80.0% | ✅ partial | 🤖 LLM |
+| [PF0077] FILOU PROVENCALE 5 L | 30 | 50 | 20.0 | 40.0% | ✅ partial | 🤖 LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 5 | 10 | 5.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 52 | 104 | 52.0 | 50.0% | ✅ partial | 🤖 LLM |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 43 | 52 | 9.0 | 17.3% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (5 produits)
+
+
+<details>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 160u vs Médiane: undefinedu (Réel: 800u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 160u (confidence: medium)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 800u
+- 📉 **Erreur LLM**: 640u (80.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline établie sur médiane des 3 derniers mois (160u). Une commande de 240u détectée comme outlier (>2×160). Tendance stable avec commandes régulières de 160u, donc recommandation conservatrice à 160u.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM: 30u vs Médiane: undefinedu (Réel: 50u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 30u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 50u
+- 📉 **Erreur LLM**: 20u (40.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Absence totale de données N-1 empêche l'établissement d'une baseline historique fiable. Les 3 derniers mois montrent une demande récente variable (20-80u, médiane ~24u). Recommandation conservatrice de 30u basée uniquement sur la tendance actuelle, avec faible confiance en raison du manque d'historique de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM: 5u vs Médiane: undefinedu (Réel: 10u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 5u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 10u
+- 📉 **Erreur LLM**: 5u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible, donc baseline estimée sur les 3 derniers mois (médiane = 5u après exclusion du outlier de 60u détecté le 2025-04-11). La demande récente montre une stabilité autour de 3-5 unités. Confiance faible due à l'absence d'historique N-1 pour validation saisonnière.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>4. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM: 52u vs Médiane: undefinedu (Réel: 104u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 52u (confidence: medium)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 104u
+- 📉 **Erreur LLM**: 52u (50.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible. La tendance actuelle montre une consommation parfaitement stable à 52 unités sur 5 commandes régulières (mars à juin 2025). En l'absence de référence historique mais avec une récurrence constante, la recommandation s'appuie sur le pattern observé de 52u.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
+
+
+<details>
+<summary><strong>5. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM: 43u vs Médiane: undefinedu (Réel: 52u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 43u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 52u
+- 📉 **Erreur LLM**: 9u (17.3%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée N-1 disponible pour établir une baseline historique. La recommandation se base uniquement sur la médiane des 3 derniers mois (52u) avec un ajustement conservateur à la baisse (-17%) compte tenu de l'absence d'historique et de la variabilité observée (26u à 52u). Confiance faible en raison du manque de données de référence.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -171,7 +301,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0097] FILOU MOUTARDE 5 KG | 20 | Stock prédit: -13.9u (-16j restants) → prédit 20u mais non commandé |
+| [PF0097] FILOU MOUTARDE 5 KG | 23 | Stock prédit: -13.9u (-16j restants) → prédit 23u mais non commandé |
 | [PF0089] FILOU VOL AU VENT 400 GR | 20 | Stock prédit: 6.1u (14j restants) → prédit 20u mais non commandé |
 | [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 15 | Stock prédit: -2.6u (-22j restants) → prédit 15u mais non commandé |
 
@@ -197,4 +327,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:17.947Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:25.223Z*

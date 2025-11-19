@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 3
+- **Tokens**: 4,642 input + 609 output = 5,251 total
+- **Coût**: $0.0231 (~2.31¢)
+- **Coût par produit LLM**: $0.0077
+
 
 ---
 
@@ -64,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 4.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 12.5% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 5.50 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 17.2% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -141,7 +148,34 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
 | [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 32 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 24 | 32 | 8.0 | 25.0% | ✅ partial | 📊 Médiane |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 21 | 32 | 11.0 | 34.4% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - LLM: 21u vs Médiane: undefinedu (Réel: 32u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 21u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 32u
+- 📉 **Erreur LLM**: 11u (34.4%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline. La recommandation se base uniquement sur la tendance récente des 3 derniers mois (médiane: 16u, tendance croissante visible avec 32u en septembre). Quantité prudente de 21u proposée en extrapolant la dynamique actuelle, mais confiance faible sans référence historique.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -168,8 +202,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | Stock prédit: -5.0u (-2j restants) → prédit 32u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 64 | Stock prédit: -8.2u (-6j restants) → prédit 64u mais non commandé |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 36 | Stock prédit: -5.0u (-2j restants) → prédit 36u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 16 | Stock prédit: -8.2u (-6j restants) → prédit 16u mais non commandé |
 
 
 ---
@@ -193,4 +227,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:57.867Z*
+*Rapport généré automatiquement le 2025-11-19T17:53:51.591Z*

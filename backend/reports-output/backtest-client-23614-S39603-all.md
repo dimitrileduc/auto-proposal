@@ -9,6 +9,13 @@
 - **Jours d'avance** : 0j
 
 
+### 💰 Usage LLM
+
+- **Appels**: 5
+- **Tokens**: 7,716 input + 986 output = 8,702 total
+- **Coût**: $0.0379 (~3.79¢)
+- **Coût par produit LLM**: $0.0076
+
 
 ---
 
@@ -140,9 +147,36 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
 | [LV105] LV Tomate Basil Aufstr 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
 | [LV106] LV Oliven Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [LV102] LV Karot. Ingwer Aufstrich 180g DE</strong> - LLM: 300u vs Médiane: undefinedu (Réel: 300u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 300u (confidence: low)
+- 📊 **Médiane**: undefinedu
+- ✅ **Réel commandé**: 300u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: NaNu (NaN%)
+
+**🧠 Raisonnement:**
+Aucune donnée historique N-1 disponible pour établir une baseline fiable. La seule référence est une commande de 300u en août 2025. Par prudence, je recommande de réapprovisionner 300u en attendant de constituer un historique plus robuste.
+
+**📅 Analyse Temporelle:**
+undefined
+
+**📊 Analyse Quantité:**
+undefined
+
+**📈 Tendance détectée:** ❌ Non
+
+</details>
 
 
 
@@ -204,4 +238,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:30:25.151Z*
+*Rapport généré automatiquement le 2025-11-19T17:52:45.380Z*

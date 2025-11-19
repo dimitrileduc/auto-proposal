@@ -12,9 +12,9 @@
 ### 💰 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 4,726 input + 3,672 output = 8,398 total
-- **Coût**: $0.0693 (~6.93¢)
-- **Coût par produit LLM**: $0.0231
+- **Tokens**: 4,711 input + 615 output = 5,326 total
+- **Coût**: $0.0234 (~2.34¢)
+- **Coût par produit LLM**: $0.0078
 
 
 ---
@@ -71,8 +71,8 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 101.00 unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | 86.6% | Erreur moyenne en % (complémentaire) |
+| **MAE** | 128.00 unités | Erreur moyenne absolue (métrique principale) |
+| **MAPE** | 112.5% | Erreur moyenne en % (complémentaire) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 2 | Avec erreur |
 
@@ -147,151 +147,57 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
 |---------|--------|------|-----------|----------|------|--------|
-| [PF2036] ITM BOULETTES TOMATE 800 GR | 64 | 128 | 64.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [PF2996] ITM BO VIN CIBOULET PET 450 | 250 | 112 | 138.0 | 123.2% | ✅ partial | 🤖 LLM |
+| [PF2036] ITM BOULETTES TOMATE 800 GR | 96 | 128 | 32.0 | 25.0% | ✅ partial | 🤖 LLM |
+| [PF2996] ITM BO VIN CIBOULET PET 450 | 336 | 112 | 224.0 | 200.0% | ✅ partial | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
 
 
 <details>
-<summary><strong>1. [PF2036] ITM BOULETTES TOMATE 800 GR</strong> - LLM: 64u vs Médiane: undefinedu (Réel: 128u)</summary>
+<summary><strong>1. [PF2036] ITM BOULETTES TOMATE 800 GR</strong> - LLM: 96u vs Médiane: undefinedu (Réel: 128u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 64u (confidence: high)
+- 🤖 **LLM prédit**: 96u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 128u
-- 📉 **Erreur LLM**: 64u (50.0%)
+- 📉 **Erreur LLM**: 32u (25.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-ÉTAPE 1 - DE-EVENTING (Nettoyage des outliers):
-Les commandes montrent deux niveaux distincts : 64u et 128u.
-- Commandes à 64u : 6 occurrences (2025-10-09, 2025-08-12, 2025-08-05, 2025-07-17, 2025-07-11, 2025-06-24)
-- Commandes à 128u : 2 occurrences (2025-09-16, 2025-08-04)
-
-Les commandes de 128u représentent exactement le double de la quantité standard. Analyse:
-- La commande du 2025-09-16 (128u) arrive après une période de 35 jours sans commande → probable rattrapage/consolidation
-- La commande du 2025-08-04 (128u) est suivie le lendemain (2025-08-05) d'une commande standard de 64u → anomalie possible (erreur, promotion, ou besoin exceptionnel)
-
-Demande de fond identifiée : 64u (quantité récurrente et stable)
-
-ÉTAPE 2 - SAISONNALITÉ:
-Période d'observation : Juin à Octobre 2025
-Fréquence des commandes par mois:
-- Juin : 1 commande (64u)
-- Juillet : 2 commandes (64u chacune) = 128u total
-- Août : 3 commandes (dont 1x128u + 2x64u) = 256u total - PÉRIODE HAUTE
-- Septembre : 1 commande (128u)
-- Octobre : 1 commande (64u) au 09/10
-
-Les boulettes tomate montrent une activité accrue en JUILLET-AOÛT (période estivale). Nous sommes actuellement mi-octobre, donc en sortie de période haute. La demande revient à un niveau standard/modéré typique de l'automne.
-
-ÉTAPE 3 - TENDANCE RÉCENTE:
-Analyse des 4 dernières commandes vs les 4 précédentes:
-- Dernières 4 : 64u (09/10), 128u (16/09), 64u (12/08), 64u (05/08) = 320u sur ~2 mois
-- Précédentes 4 : 128u (04/08), 64u (17/07), 64u (11/07), 64u (24/06) = 320u sur ~1.5 mois
-
-Volume total similaire mais fréquence en léger ralentissement. La dernière commande (64u le 09/10) confirme un retour à la normale post-saison estivale. Intervalles entre commandes:
-- Récent : 5j entre 09/10 et date actuelle (14/10), 23j avant, 35j avant
-- Historique : 7j, 6j, 17j
-
-Tendance : STABLE à LÉGÈREMENT DÉCROISSANTE (normalisation post-été)
-
-ÉTAPE 4 - RECOMMANDATION FINALE:
-- Base demande de fond : 64u
-- Ajustement saisonnier : 0% (mi-octobre = période normale, pas de pic)
-- Ajustement tendance : 0% à -10% (stabilisation après été, mais restons sur la valeur standard)
-- Facteur sécurité : Conservateur
-
-La dernière commande date du 09/10 (5 jours seulement), ce qui est très récent. Le cycle moyen entre commandes est de 15-20 jours environ. Il n'y a pas d'urgence immédiate.
-
-RECOMMANDATION : 64u
-Justification : Quantité standard observée, période normale (hors pic estival), stock récent suffisant, approche conservatrice privilégiée.
-
+Aucune donnée N-1 disponible pour établir un baseline fiable. Je me base uniquement sur les 3 derniers mois (médiane = 64u, moyenne = 89.6u). Tendance haussière visible (+50% avec commandes de 128u récentes), mais confiance faible sans historique N-1. Recommandation prudente à 96u.
 
 **📅 Analyse Temporelle:**
-
-Intervalle moyen entre commandes : ~17 jours
-Dernière commande : il y a 5 jours (2025-10-09)
-Cycle actuel : Début de cycle, pas d'urgence de réapprovisionnement immédiat
-Régularité : Modérée avec variations liées à la saisonnalité estivale (juillet-août plus dense)
-
+undefined
 
 **📊 Analyse Quantité:**
+undefined
 
-Distribution des quantités : 
-- 64u : 75% des commandes (6/8) - QUANTITÉ STANDARD
-- 128u : 25% des commandes (2/8) - Commandes exceptionnelles (consolidation/rattrapage)
-Moyenne brute : 80u | Médiane : 64u
-Demande de fond identifiée : 64u (après exclusion des pics)
-Variation observée : Normale pour le B2B (facteur 2x lié aux cycles d'achat groupé)
-
-
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
 
 <details>
-<summary><strong>2. [PF2996] ITM BO VIN CIBOULET PET 450</strong> - LLM: 250u vs Médiane: undefinedu (Réel: 112u)</summary>
+<summary><strong>2. [PF2996] ITM BO VIN CIBOULET PET 450</strong> - LLM: 336u vs Médiane: undefinedu (Réel: 112u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 250u (confidence: medium)
+- 🤖 **LLM prédit**: 336u (confidence: low)
 - 📊 **Médiane**: undefinedu
 - ✅ **Réel commandé**: 112u
-- 📉 **Erreur LLM**: 138u (123.2%)
+- 📉 **Erreur LLM**: 224u (200.0%)
 - 📉 **Erreur Médiane**: NaNu (NaN%)
 
 **🧠 Raisonnement:**
-
-**ÉTAPE 1 - DE-EVENTING (Nettoyage des outliers):**
-Analyse des 4 commandes disponibles:
-- 2025-08-05: 448u (OUTLIER PROBABLE - 2x la commande précédente)
-- 2025-08-04: 224u
-- 2025-06-30: 112u
-- 2025-06-24: 224u
-
-La commande de 448u représente exactement le double de celle du jour précédent (224u) et 4x celle du 30/06. Cela ressemble fortement à un événement ponctuel (promotion estivale, stockage préventif, ou correction avant période de fermeture).
-
-**Demande de fond estimée** (hors outlier): Entre 112u et 224u, soit ~168u en moyenne.
-
-**ÉTAPE 2 - SAISONNALITÉ:**
-- Produit: "VIN CIBOULET PET 450" - segment vin en format PET (nomade/picnic)
-- Commandes concentrées en juin-août (période estivale)
-- Pic d'activité visible en août (2 commandes rapprochées dont 1 grosse)
-- **Date actuelle: 14 octobre** = PÉRIODE POST-ESTIVALE (demande attendue en baisse)
-
-Le format PET et la période estivale suggèrent un produit à forte saisonnalité été. En octobre, nous sommes hors saison haute.
-
-**ÉTAPE 3 - TENDANCE RÉCENTE:**
-- Juin: 2 commandes (112u + 224u) sur 6 jours = 336u
-- Août: 2 commandes (224u + 448u outlier) sur 2 jours
-- **Écart temporel critique**: Dernière commande il y a 70 jours (début août → mi-octobre)
-
-Cette absence de commande depuis 2 mois confirme la saisonnalité forte. La tendance post-été est clairement **EN BAISSE**.
-
-**ÉTAPE 4 - RECOMMANDATION FINALE:**
-- **Base de fond**: 168u (moyenne hors outlier 448u)
-- **Ajustement saisonnier**: +50% car malgré la période basse, il faut anticiper une commande de réapprovisionnement après 70 jours sans achat = 168u × 1.5 = 252u
-- **Ajustement tendance**: Pas de réduction supplémentaire car le client commande probablement pour reconstituer un stock minimal hors saison
-- **Principe de prudence**: Arrondi à 250u (format standard proche de 224u habituel)
-
-**JUSTIFICATION**: En période hors saison, le client devrait commander une quantité proche de sa "base normale" (224u), légèrement supérieure pour compenser les 70 jours sans réapprovisionnement. 250u représente un compromis sécurisé sans sur-stocker.
-
+Aucune donnée N-1 disponible, donc baseline impossible à établir. Les 2 commandes récentes (448u et 224u) suggèrent une médiane de 336u. Recommandation basée uniquement sur la tendance actuelle avec confiance faible due au manque d'historique de référence.
 
 **📅 Analyse Temporelle:**
-
-Historique très court (4 commandes sur 4 mois). Fréquence irrégulière: 6 jours entre les 2 premières commandes (juin), puis 35 jours jusqu'à août, puis 2 commandes consécutives en août (1 jour d'écart). Depuis, 70 jours sans commande. Pattern temporel suggère des commandes groupées en période estivale suivies d'une pause prolongée hors saison. La prochaine commande devrait être une reconstitution de stock minimal pour la période automnale/hivernale à faible rotation.
-
+undefined
 
 **📊 Analyse Quantité:**
+undefined
 
-Quantités variables: 112u, 224u (×2), 448u. Le 224u apparaît comme la quantité "standard" (50% des commandes). Le 112u représente probablement une demi-commande, et le 448u un doublement exceptionnel (événement promotionnel ou stockage préventif estival). Ratio min/max de 1:4 témoigne d'une forte variabilité, typique des produits saisonniers en B2B agroalimentaire. La quantité de fond normalisée se situe autour de 168-224u.
-
-
-**📈 Tendance détectée:** ✅ Oui
+**📈 Tendance détectée:** ❌ Non
 
 </details>
 
@@ -320,7 +226,7 @@ Quantités variables: 112u, 224u (×2), 448u. Le 224u apparaît comme la quantit
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF2997] ITM BO VIN YOGORETTE PET 450 | 112 | Stock prédit: 75.7u (8j restants) → prédit 112u mais non commandé |
+| [PF2997] ITM BO VIN YOGORETTE PET 450 | 157 | Stock prédit: 75.7u (8j restants) → prédit 157u mais non commandé |
 
 
 ---
@@ -344,4 +250,4 @@ Quantités variables: 112u, 224u (×2), 448u. Le 224u apparaît comme la quantit
 
 ---
 
-*Rapport généré automatiquement le 2025-11-19T16:29:54.203Z*
+*Rapport généré automatiquement le 2025-11-19T17:51:55.578Z*
