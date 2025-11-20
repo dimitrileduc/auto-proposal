@@ -252,8 +252,13 @@ export async function calculateReplenishmentNeeds(
         confidence: llmResult.prediction.confidence,
         reasoning: llmResult.prediction.reasoning,
         baseline_quantity: llmResult.prediction.baseline_quantity,
-        outliers_detected: llmResult.prediction.outliers_detected,
-        trend_ratio: llmResult.prediction.trend_ratio,
+        // New structured analysis fields
+        analysis: {
+          frequency_pattern: llmResult.prediction.analysis.frequency_pattern,
+          detected_outliers: llmResult.prediction.analysis.detected_outliers,
+          seasonality_impact: llmResult.prediction.analysis.seasonality_impact,
+          trend_direction: llmResult.prediction.analysis.trend_direction,
+        },
       };
 
       // Accumuler l'usage

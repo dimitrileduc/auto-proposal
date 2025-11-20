@@ -187,6 +187,7 @@ export const backtestAggregateTask = task({
                   mae: taskResult.comparison.mae,
                   wmape: taskResult.comparison.wmape,
                   mape: taskResult.comparison.mape,
+                  bias: taskResult.comparison.bias,
                 },
               });
             }
@@ -206,6 +207,7 @@ export const backtestAggregateTask = task({
                   mae: taskResult.comparisonNoLow.mae,
                   wmape: taskResult.comparisonNoLow.wmape,
                   mape: taskResult.comparisonNoLow.mape,
+                  bias: taskResult.comparisonNoLow.bias,
                 },
               });
             }
@@ -225,6 +227,7 @@ export const backtestAggregateTask = task({
                   mae: taskResult.comparisonAll.mae,
                   wmape: taskResult.comparisonAll.wmape,
                   mape: taskResult.comparisonAll.mape,
+                  bias: taskResult.comparisonAll.bias,
                 },
               });
             }

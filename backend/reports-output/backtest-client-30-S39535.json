@@ -1,0 +1,31 @@
+{
+  "clientId": 30,
+  "clientName": "Conserverie Et Moutarderie Belge",
+  "orderName": "S39535",
+  "orderDate": "2025-10-03 08:01:58",
+  "cutoffDate": "2025-10-03 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 2,
+    "fp": 33,
+    "fn": 0,
+    "precision": 0.05714285714285714,
+    "recall": 1,
+    "f1Score": 0.1081081081081081,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 13147,
+    "completionTokens": 3702,
+    "totalTokens": 16849,
+    "costUSD": 0.094971
+  }
+}

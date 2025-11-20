@@ -62,6 +62,7 @@ export interface BacktestClientTaskResult {
     mae: number;
     wmape: number;
     mape: number;
+    bias: number;
   };
   comparisonNoLow?: {  // Métriques pour produits low confidence (1 commande)
     truePositives: number;
@@ -73,6 +74,7 @@ export interface BacktestClientTaskResult {
     mae: number;
     wmape: number;
     mape: number;
+    bias: number;
   };
   comparisonAll?: {  // Métriques pour TOUS les produits (clean + low)
     truePositives: number;
@@ -84,6 +86,7 @@ export interface BacktestClientTaskResult {
     mae: number;
     wmape: number;
     mape: number;
+    bias: number;
   };
   llm_usage?: {  // Usage LLM pour ce client
     calls: number;
@@ -364,6 +367,7 @@ export const backtestClientTask = task({
           mae: comparisonClean.quantityMetrics.mae,
           wmape: comparisonClean.quantityMetrics.wmape,
           mape: comparisonClean.quantityMetrics.mape,
+          bias: comparisonClean.quantityMetrics.bias,
         },
         comparisonNoLow: {
           truePositives: comparisonLow.truePositives.length,
@@ -375,6 +379,7 @@ export const backtestClientTask = task({
           mae: comparisonLow.quantityMetrics.mae,
           wmape: comparisonLow.quantityMetrics.wmape,
           mape: comparisonLow.quantityMetrics.mape,
+          bias: comparisonLow.quantityMetrics.bias,
         },
         comparisonAll: {
           truePositives: comparison.truePositives.length,
@@ -386,6 +391,7 @@ export const backtestClientTask = task({
           mae: comparison.quantityMetrics.mae,
           wmape: comparison.quantityMetrics.wmape,
           mape: comparison.quantityMetrics.mape,
+          bias: comparison.quantityMetrics.bias,
         },
         llm_usage: llmUsage,
         reportPath: reportPathMd,  // Legacy: keep markdown path for backward compatibility

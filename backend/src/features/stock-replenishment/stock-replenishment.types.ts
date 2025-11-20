@@ -19,9 +19,14 @@ export interface LLMPredictionDetails {
   quantity: number;
   confidence: "low" | "medium" | "high";
   reasoning: string;
-  baseline_quantity: number; // Médiane N-1 après de-eventing
-  outliers_detected: number[]; // Outliers détectés (> 2x médiane)
-  trend_ratio: string; // Ex: "+15%", "stable", "-10%"
+  baseline_quantity: number; // Baseline quantity from analysis
+  // Structured analysis object (Chain of Thought)
+  analysis: {
+    frequency_pattern: string; // Pattern temporel identifié (ex: "hebdomadaire", "mensuel")
+    detected_outliers: number[]; // Quantités identifiées comme événements exceptionnels
+    seasonality_impact: "none" | "weak" | "strong"; // Impact saisonnier détecté
+    trend_direction: string; // Direction observée (ex: "croissant +15%", "stable", "décroissant -10%")
+  };
 }
 
 export interface ProductStockStatus {

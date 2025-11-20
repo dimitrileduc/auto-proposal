@@ -1,0 +1,31 @@
+{
+  "clientId": 52570,
+  "clientName": "ASBL L'Accueil - Magasin du Val Dieu",
+  "orderName": "S39361",
+  "orderDate": "2025-09-24 09:45:50",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 27331,
+    "completionTokens": 7437,
+    "totalTokens": 34768,
+    "costUSD": 0.193548
+  }
+}

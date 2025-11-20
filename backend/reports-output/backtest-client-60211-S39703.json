@@ -1,0 +1,31 @@
+{
+  "clientId": 60211,
+  "clientName": "BIOK CORBAIS",
+  "orderName": "S39703",
+  "orderDate": "2025-10-16 06:40:28",
+  "cutoffDate": "2025-10-16 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 10,
+    "fp": 19,
+    "fn": 0,
+    "precision": 0.3448275862068966,
+    "recall": 1,
+    "f1Score": 0.5128205128205129,
+    "mae": 0.4,
+    "wmape": 30.76923076923077,
+    "mape": 30,
+    "bias": 15.384615384615385
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 46528,
+    "completionTokens": 12919,
+    "totalTokens": 59447,
+    "costUSD": 0.3333689999999999
+  }
+}

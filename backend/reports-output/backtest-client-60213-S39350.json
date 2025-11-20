@@ -1,0 +1,31 @@
+{
+  "clientId": 60213,
+  "clientName": "BIOK THOREMBAIS",
+  "orderName": "S39350",
+  "orderDate": "2025-09-24 13:05:32",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 10,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.47619047619047616,
+    "recall": 1,
+    "f1Score": 0.6451612903225806,
+    "mae": 0.7,
+    "wmape": 50,
+    "mape": 60,
+    "bias": 50
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 34539,
+    "completionTokens": 9611,
+    "totalTokens": 44150,
+    "costUSD": 0.24778200000000003
+  }
+}

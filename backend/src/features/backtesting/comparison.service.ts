@@ -80,7 +80,7 @@ export function compareSystemPredictionVsRealOrder(
       // Récupérer les infos LLM si disponibles
       const analyzedProduct = analyzedProducts.get(productId);
       const quantitySource = analyzedProduct?.quantity_source;
-      const medianQty = quantitySource === 'llm' ? analyzedProduct?.calculation_metadata.median : undefined;
+      const medianQty = quantitySource === 'llm' ? analyzedProduct?.calculation_metadata.median_value : undefined;
       const llmPrediction = analyzedProduct?.llm_prediction;
 
       truePositives.push({

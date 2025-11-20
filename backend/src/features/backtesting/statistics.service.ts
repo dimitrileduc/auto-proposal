@@ -15,6 +15,7 @@ export interface IndividualBacktestMetrics {
   mae: number;
   wmape: number;  // Weighted MAPE (métrique robuste)
   mape: number;   // MAPE classique (gardé pour info)
+  bias: number;   // Biais directionnel (>0 = surestime, <0 = sous-estime)
 }
 
 /**
@@ -28,6 +29,7 @@ export interface AggregateMetrics {
     mae: number;
     wmape: number;  // Weighted MAPE (métrique robuste)
     mape: number;   // MAPE classique (gardé pour info)
+    bias: number;   // Biais directionnel moyen
   };
   median: {
     precision: number;
@@ -36,6 +38,7 @@ export interface AggregateMetrics {
     mae: number;
     wmape: number;
     mape: number;
+    bias: number;
   };
   stdDev: {
     precision: number;
@@ -44,12 +47,13 @@ export interface AggregateMetrics {
     mae: number;
     wmape: number;
     mape: number;
+    bias: number;
   };
   percentiles: {
-    p25: { recall: number; wmape: number; mape: number };
-    p50: { recall: number; wmape: number; mape: number };
-    p75: { recall: number; wmape: number; mape: number };
-    p90: { recall: number; wmape: number; mape: number };
+    p25: { recall: number; wmape: number; mape: number; bias: number };
+    p50: { recall: number; wmape: number; mape: number; bias: number };
+    p75: { recall: number; wmape: number; mape: number; bias: number };
+    p90: { recall: number; wmape: number; mape: number; bias: number };
   };
 }
 
@@ -72,16 +76,17 @@ export function calculateAggregateStatistics(
       mae: 0,
       wmape: 0,
       mape: 0,
+      bias: 0,
     };
     return {
       mean: emptyStats,
       median: emptyStats,
       stdDev: emptyStats,
       percentiles: {
-        p25: { recall: 0, wmape: 0, mape: 0 },
-        p50: { recall: 0, wmape: 0, mape: 0 },
-        p75: { recall: 0, wmape: 0, mape: 0 },
-        p90: { recall: 0, wmape: 0, mape: 0 },
+        p25: { recall: 0, wmape: 0, mape: 0, bias: 0 },
+        p50: { recall: 0, wmape: 0, mape: 0, bias: 0 },
+        p75: { recall: 0, wmape: 0, mape: 0, bias: 0 },
+        p90: { recall: 0, wmape: 0, mape: 0, bias: 0 },
       },
     };
   }
@@ -94,6 +99,7 @@ export function calculateAggregateStatistics(
     mae: calculateMean(metrics.map((m) => m.mae)),
     wmape: calculateMean(metrics.map((m) => m.wmape)),
     mape: calculateMean(metrics.map((m) => m.mape)),
+    bias: calculateMean(metrics.map((m) => m.bias)),
   };
 
   // 2. Calculer les médianes
@@ -104,6 +110,7 @@ export function calculateAggregateStatistics(
     mae: calculateMedian(metrics.map((m) => m.mae)),
     wmape: calculateMedian(metrics.map((m) => m.wmape)),
     mape: calculateMedian(metrics.map((m) => m.mape)),
+    bias: calculateMedian(metrics.map((m) => m.bias)),
   };
 
   // 3. Calculer les écarts-types (standard deviation)
@@ -114,33 +121,39 @@ export function calculateAggregateStatistics(
     mae: calculateStdDev(metrics.map((m) => m.mae), mean.mae),
     wmape: calculateStdDev(metrics.map((m) => m.wmape), mean.wmape),
     mape: calculateStdDev(metrics.map((m) => m.mape), mean.mape),
+    bias: calculateStdDev(metrics.map((m) => m.bias), mean.bias),
   };
 
-  // 4. Calculer les percentiles (sur recall, wmape et mape)
+  // 4. Calculer les percentiles (sur recall, wmape, mape et bias)
   const recallValues = metrics.map((m) => m.recall).sort((a, b) => a - b);
   const wmapeValues = metrics.map((m) => m.wmape).sort((a, b) => a - b);
   const mapeValues = metrics.map((m) => m.mape).sort((a, b) => a - b);
+  const biasValues = metrics.map((m) => m.bias).sort((a, b) => a - b);
 
   const percentiles = {
     p25: {
       recall: calculatePercentile(recallValues, 25),
       wmape: calculatePercentile(wmapeValues, 25),
       mape: calculatePercentile(mapeValues, 25),
+      bias: calculatePercentile(biasValues, 25),
     },
     p50: {
       recall: calculatePercentile(recallValues, 50),
       wmape: calculatePercentile(wmapeValues, 50),
       mape: calculatePercentile(mapeValues, 50),
+      bias: calculatePercentile(biasValues, 50),
     },
     p75: {
       recall: calculatePercentile(recallValues, 75),
       wmape: calculatePercentile(wmapeValues, 75),
       mape: calculatePercentile(mapeValues, 75),
+      bias: calculatePercentile(biasValues, 75),
     },
     p90: {
       recall: calculatePercentile(recallValues, 90),
       wmape: calculatePercentile(wmapeValues, 90),
       mape: calculatePercentile(mapeValues, 90),
+      bias: calculatePercentile(biasValues, 90),
     },
   };
 
@@ -280,6 +293,7 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 | **F1-Score** | ${(aggregateMetrics.mean.f1Score * 100).toFixed(1)}% | ${(aggregateMetrics.median.f1Score * 100).toFixed(1)}% | Équilibre détection/précision |
 | **wMAPE** | ${aggregateMetrics.mean.wmape.toFixed(1)}% | ${aggregateMetrics.median.wmape.toFixed(1)}% | ⚖️ Écart pondéré robuste (métrique principale) |
 | **MAPE** | ${aggregateMetrics.mean.mape.toFixed(1)}% | ${aggregateMetrics.median.mape.toFixed(1)}% | Écart moyen (info, biaisé) |
+| **Bias** | ${aggregateMetrics.mean.bias.toFixed(1)}% | ${aggregateMetrics.median.bias.toFixed(1)}% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 
 ${data.llm_usage ? `
 ### Utilisation LLM (Claude Sonnet 4.5)

@@ -47,6 +47,7 @@ export interface BacktestComparisonResult {
     mae: number;           // Mean Absolute Error (unités) - MÉTRIQUE PRINCIPALE
     wmape: number;         // Weighted MAPE (%) - MÉTRIQUE ROBUSTE RECOMMANDÉE
     mape: number;          // Mean Absolute Percentage Error (%) - INFO (biaisé)
+    bias: number;          // Biais directionnel (%) - >0 = surestime, <0 = sous-estime
     distribution: {
       exactMatch: number;   // Erreur = 0 (quantité parfaite)
       partialMatch: number; // Erreur > 0 (avec erreur)
@@ -77,9 +78,13 @@ export interface ProductMatch {
     quantity: number;
     confidence: 'low' | 'medium' | 'high';
     reasoning: string;
-    temporal_analysis: string;
-    quantity_analysis: string;
-    trend_detected: boolean;
+    baseline_quantity: number;
+    analysis: {
+      frequency_pattern: string;
+      detected_outliers: number[];
+      seasonality_impact: 'none' | 'weak' | 'strong';
+      trend_direction: string;
+    };
   };
 }
 

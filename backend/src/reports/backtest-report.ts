@@ -99,12 +99,12 @@ ${llmProducts.map((tp, index) => {
 - 📉 **Erreur LLM**: ${Math.abs(tp.llmPrediction.quantity - tp.realQty)}u (${((Math.abs(tp.llmPrediction.quantity - tp.realQty) / tp.realQty) * 100).toFixed(1)}%)
 - 📉 **Erreur Médiane**: ${medianError}
 
-**📈 Tendance détectée:**
-${tp.llmPrediction.trend_ratio || 'stable'}
-
-**🔍 Outliers détectés:**
-${tp.llmPrediction.outliers_detected && tp.llmPrediction.outliers_detected.length > 0
-  ? tp.llmPrediction.outliers_detected.map((o: number) => `${o}u`).join(', ')
+**🔍 Analyse LLM:**
+- **Pattern temporel**: ${tp.llmPrediction.analysis?.frequency_pattern || 'N/A'}
+- **Saisonnalité**: ${tp.llmPrediction.analysis?.seasonality_impact || 'N/A'}
+- **Tendance**: ${tp.llmPrediction.analysis?.trend_direction || 'N/A'}
+- **Outliers détectés**: ${tp.llmPrediction.analysis?.detected_outliers && tp.llmPrediction.analysis.detected_outliers.length > 0
+  ? tp.llmPrediction.analysis.detected_outliers.map((o: number) => `${o}u`).join(', ')
   : 'Aucun'}
 
 **🧠 Raisonnement LLM:**
@@ -203,6 +203,7 @@ ${comparison.llmUsage ? `
 | **MAE** | ${quantityMetrics.mae.toFixed(2)} unités | Erreur moyenne absolue (symétrique) |
 | **wMAPE** | ${quantityMetrics.wmape.toFixed(1)}% | ⚖️ Erreur pondérée robuste (métrique principale) |
 | **MAPE** | ${quantityMetrics.mape.toFixed(1)}% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | ${quantityMetrics.bias.toFixed(1)}% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | ${quantityMetrics.distribution.exactMatch} | Égalité parfaite |
 | Partial Match (>0u) | ${quantityMetrics.distribution.partialMatch} | Avec erreur |
 
@@ -380,6 +381,7 @@ export function generateBacktestReportJSON(
       mae: comparison.quantityMetrics.mae,
       wmape: comparison.quantityMetrics.wmape,
       mape: comparison.quantityMetrics.mape,
+      bias: comparison.quantityMetrics.bias,
     },
     distribution: {
       exactMatch: comparison.quantityMetrics.distribution.exactMatch,

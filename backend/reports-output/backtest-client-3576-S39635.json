@@ -1,0 +1,31 @@
+{
+  "clientId": 3576,
+  "clientName": "HOUGARDY S.A.",
+  "orderName": "S39635",
+  "orderDate": "2025-10-09 09:00:46",
+  "cutoffDate": "2025-10-09 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 4530,
+    "completionTokens": 1257,
+    "totalTokens": 5787,
+    "costUSD": 0.032445
+  }
+}
