@@ -3,22 +3,22 @@ import { anthropic } from "@ai-sdk/anthropic";
 import { z } from "zod";
 
 /**
- * Schéma de prédiction LLM (approche IRIS structured)
- * JSON strict avec étapes explicites de raisonnement
+ * Schéma de prédiction LLM (approche IRIS - raisonnement expert)
+ * JSON strict avec raisonnement métier guidé
  */
 const predictionSchema = z.object({
   baseline_quantity: z
     .number()
-    .describe("Médiane année N-1 après nettoyage des outliers"),
+    .describe("Demande de fond estimée après analyse des données N-1"),
   outliers_detected: z
     .array(z.number())
-    .describe("Quantités identifiées comme outliers (> 2x médiane)"),
+    .describe("Quantités identifiées comme commandes exceptionnelles"),
   trend_ratio: z
     .string()
-    .describe("Ratio de tendance observé (ex: +15%, stable, -10%)"),
+    .describe("Tendance observée entre période récente et N-1 (ex: +15%, stable, -10%)"),
   recommended_quantity: z.number().int().positive(),
   confidence: z.enum(["low", "medium", "high"]),
-  reasoning: z.string().describe("Résumé court du raisonnement (2-3 phrases)"),
+  reasoning: z.string().describe("Explication du raisonnement métier en 2-3 phrases"),
 });
 
 export type LLMPrediction = z.infer<typeof predictionSchema>;
@@ -44,7 +44,7 @@ interface OrderHistoryItem {
 interface LLMPredictionInput {
   productName: string;
   recentOrders: OrderHistoryItem[]; // Last 3 months (max 5 orders)
-  lastYearOrders: OrderHistoryItem[]; // Same period last year (max 5 orders)
+  lastYearOrders: OrderHistoryItem[]; // Same period last year (all orders, no limit for seasonality)
   currentDate?: string; // Date actuelle (défaut: aujourd'hui)
 }
 
@@ -74,55 +74,76 @@ export async function predictWithLLM(
     ? input.lastYearOrders.map((order) => `${order.date} | ${order.quantity}u`).join("\n")
     : "(Aucune donnée N-1)";
 
-  const prompt = `Tu es un expert Supply Chain Agroalimentaire B2B.
-MISSION: Prédire la quantité optimale de réapprovisionnement.
+  const prompt = `Tu es un expert Supply Chain Agroalimentaire B2B avec 15 ans d'expérience.
 
-PRODUIT: ${input.productName}
+CONTEXTE MÉTIER:
+Le secteur agroalimentaire B2B est caractérisé par:
+- Des variations saisonnières naturelles (saisons, fêtes, rentrée scolaire)
+- Des commandes ponctuelles exceptionnelles (événements, promotions)
+- Des tendances graduelles de croissance ou décroissance
+- Des délais de péremption qui nécessitent une gestion prudente des stocks
+
+MISSION:
+Prédire la quantité optimale de réapprovisionnement pour ${input.productName}.
+L'objectif est d'éviter les ruptures tout en minimisant les surstocks.
+
 DATE ACTUELLE: ${currentDate}
 
-DONNÉES (2 VUES):
+DONNÉES DISPONIBLES:
 
-═══ VUE 1: RÉFÉRENCE (Même période année N-1) ═══
-Utilise ceci pour estimer la "demande de fond normale".
+═══ RÉFÉRENCE HISTORIQUE (Année N-1) ═══
+Période complète de 12 mois de l'année précédente (12-24 mois avant aujourd'hui).
+Utilise ces données pour comprendre la demande de fond et la saisonnalité.
 
 Date       | Quantité
 -----------|----------
 ${lastYearTable}
 
-═══ VUE 2: TENDANCE ACTUELLE (3 derniers mois) ═══
-Utilise ceci pour détecter les changements récents.
+═══ PÉRIODE RÉCENTE (3 derniers mois) ═══
+Commandes récentes pour détecter les évolutions actuelles.
 
 Date       | Quantité
 -----------|----------
 ${recentTable}
 
-ÉTAPES (OBLIGATOIRES):
+APPROCHE RECOMMANDÉE:
 
-1️⃣ DE-EVENTING
-   Identifie les outliers dans VUE 1 en utilisant le critère mathématique:
-   → Outlier = quantité > 2 × médiane(VUE 1)
-   → Calcule la médiane SANS ces outliers = "baseline_quantity"
+1️⃣ ANALYSE DE LA DEMANDE DE FOND
+   - Examine les données N-1 pour identifier la demande récurrente normale
+   - Détecte les commandes exceptionnelles qui ne reflètent pas la demande habituelle
+     (événements, promotions, erreurs de commande, pic saisonnier ponctuel)
+   - Estime une quantité de base représentative après avoir mentalement écarté ces événements
 
-2️⃣ TENDANCE
-   Compare VUE 2 vs VUE 1 (même période):
-   → Si VUE 2 est vide, trend_ratio = "stable"
-   → Sinon, calcule le ratio moyen (ex: +15%, stable, -10%)
+2️⃣ DÉTECTION DES PATTERNS SAISONNIERS
+   - Compare VUE RÉCENTE vs VUE N-1
+   - **SI pattern annuel/mensuel TRÈS marqué** (ex: fêtes, rentrée, saisons) → utilise N-1 comme référence
+   - **SI pas de pattern clair OU tendance forte récente** → privilégie VUE RÉCENTE
+   - Note: En B2B agroalimentaire, des variations de ±30% sont courantes et normales
 
-3️⃣ PROJECTION
-   Applique la formule:
-   → recommended_quantity = baseline_quantity × (1 + trend_ratio)
-   → Ajuste selon saisonnalité actuelle si applicable
-   → Reste CONSERVATEUR (variations ±30% normales en B2B)
+3️⃣ PRÉDICTION RÉALISTE
+   - **Règle principale** : Si aucune saisonnalité claire → utilise MÉDIANE de VUE RÉCENTE
+   - **Seulement si saisonnalité évidente** : ajuste baseline N-1 selon tendance récente
+   - **NE PAS surestimer par précaution** : prédis la quantité la plus probable, pas la plus sûre
+   - Évalue ta confiance selon la richesse et cohérence des données
 
-RÉSULTAT (JSON strict):
+RÉSULTAT ATTENDU (JSON strict):
 {
-  "baseline_quantity": nombre (médiane N-1 après de-eventing),
-  "outliers_detected": [liste des quantités outliers],
-  "trend_ratio": "±X%" ou "stable",
-  "recommended_quantity": nombre entier positif,
-  "confidence": "low" | "medium" | "high",
-  "reasoning": "résumé court 2-3 phrases"
-}`;
+  "baseline_quantity": nombre (demande de fond estimée après nettoyage mental des événements),
+  "outliers_detected": [quantités identifiées comme exceptionnelles],
+  "trend_ratio": "±X%" ou "stable" (tendance observée),
+  "recommended_quantity": nombre entier positif (ta prédiction finale),
+  "confidence": "low" | "medium" | "high" (ton niveau de confiance),
+  "reasoning": "Explique ton raisonnement en 2-3 phrases : quels patterns as-tu vus, pourquoi cette quantité?"
+}
+
+NOTE IMPORTANTE:
+Raisonne comme un expert métier, pas comme un algorithme mathématique.
+Utilise ton jugement pour interpréter les données, pas des formules rigides.
+
+ATTENTION: Ne surestime PAS systématiquement "par sécurité".
+La prédiction doit être la PLUS PROBABLE, pas la plus prudente.
+Si les données récentes montrent clairement une baisse → prédis la baisse.
+L'objectif est la PRÉCISION, pas éviter les ruptures à tout prix.`;
 
   // Log prompt pour debug
   console.log(`\n🔍 LLM Prompt pour ${input.productName}:`);

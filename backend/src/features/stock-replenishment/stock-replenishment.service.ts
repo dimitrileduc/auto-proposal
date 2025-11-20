@@ -181,13 +181,17 @@ export async function calculateReplenishmentNeeds(
         const { product, ordersToUse } = productData;
 
         try {
+          // IMPORTANT: Pour le LLM, on utilise TOUJOURS fullHistory (730j) pour avoir accès à N-1
+          // ordersToUse (120j) est utilisé pour consommation/stock, mais trop court pour N-1
+          const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
+          const ordersForLLM = fullProduct?.orders ?? ordersToUse;
+
           // Split orders into 2 views: recent (3 months) + same period last year
-          // Following IRIS article: max 5 orders per view to avoid LLM confusion
+          // Following IRIS: compare current trend vs historical seasonal baseline
           const { recent, lastYear } = splitOrdersByPeriod(
-            ordersToUse,
+            ordersForLLM, // ← Utiliser fullHistory pour avoir N-1 (12-24 mois avant)
             analysisEndDate,
-            3, // 3 months period
-            5  // max 5 orders per view
+            3 // 3 months period (maxOrdersPerView defaults to 12 for lastYear)
           );
 
           const llmResult = await predictWithLLM({

@@ -1,0 +1,30 @@
+{
+  "clientId": 68258,
+  "clientName": "TERROIRIST, Thomas",
+  "orderName": "S39352",
+  "orderDate": "2025-09-24 12:49:59",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 10,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.5555555555555556,
+    "recall": 1,
+    "f1Score": 0.7142857142857143,
+    "mae": 1.2,
+    "wmape": 30,
+    "mape": 36.666666666666664
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 8
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 28658,
+    "completionTokens": 3565,
+    "totalTokens": 32223,
+    "costUSD": 0.139449
+  }
+}

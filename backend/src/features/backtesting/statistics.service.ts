@@ -13,7 +13,8 @@ export interface IndividualBacktestMetrics {
   recall: number;
   f1Score: number;
   mae: number;
-  mape: number;
+  wmape: number;  // Weighted MAPE (métrique robuste)
+  mape: number;   // MAPE classique (gardé pour info)
 }
 
 /**
@@ -25,13 +26,15 @@ export interface AggregateMetrics {
     recall: number;
     f1Score: number;
     mae: number;
-    mape: number;
+    wmape: number;  // Weighted MAPE (métrique robuste)
+    mape: number;   // MAPE classique (gardé pour info)
   };
   median: {
     precision: number;
     recall: number;
     f1Score: number;
     mae: number;
+    wmape: number;
     mape: number;
   };
   stdDev: {
@@ -39,13 +42,14 @@ export interface AggregateMetrics {
     recall: number;
     f1Score: number;
     mae: number;
+    wmape: number;
     mape: number;
   };
   percentiles: {
-    p25: { recall: number; mape: number };
-    p50: { recall: number; mape: number };
-    p75: { recall: number; mape: number };
-    p90: { recall: number; mape: number };
+    p25: { recall: number; wmape: number; mape: number };
+    p50: { recall: number; wmape: number; mape: number };
+    p75: { recall: number; wmape: number; mape: number };
+    p90: { recall: number; wmape: number; mape: number };
   };
 }
 
@@ -66,6 +70,7 @@ export function calculateAggregateStatistics(
       recall: 0,
       f1Score: 0,
       mae: 0,
+      wmape: 0,
       mape: 0,
     };
     return {
@@ -73,10 +78,10 @@ export function calculateAggregateStatistics(
       median: emptyStats,
       stdDev: emptyStats,
       percentiles: {
-        p25: { recall: 0, mape: 0 },
-        p50: { recall: 0, mape: 0 },
-        p75: { recall: 0, mape: 0 },
-        p90: { recall: 0, mape: 0 },
+        p25: { recall: 0, wmape: 0, mape: 0 },
+        p50: { recall: 0, wmape: 0, mape: 0 },
+        p75: { recall: 0, wmape: 0, mape: 0 },
+        p90: { recall: 0, wmape: 0, mape: 0 },
       },
     };
   }
@@ -87,6 +92,7 @@ export function calculateAggregateStatistics(
     recall: calculateMean(metrics.map((m) => m.recall)),
     f1Score: calculateMean(metrics.map((m) => m.f1Score)),
     mae: calculateMean(metrics.map((m) => m.mae)),
+    wmape: calculateMean(metrics.map((m) => m.wmape)),
     mape: calculateMean(metrics.map((m) => m.mape)),
   };
 
@@ -96,6 +102,7 @@ export function calculateAggregateStatistics(
     recall: calculateMedian(metrics.map((m) => m.recall)),
     f1Score: calculateMedian(metrics.map((m) => m.f1Score)),
     mae: calculateMedian(metrics.map((m) => m.mae)),
+    wmape: calculateMedian(metrics.map((m) => m.wmape)),
     mape: calculateMedian(metrics.map((m) => m.mape)),
   };
 
@@ -105,28 +112,34 @@ export function calculateAggregateStatistics(
     recall: calculateStdDev(metrics.map((m) => m.recall), mean.recall),
     f1Score: calculateStdDev(metrics.map((m) => m.f1Score), mean.f1Score),
     mae: calculateStdDev(metrics.map((m) => m.mae), mean.mae),
+    wmape: calculateStdDev(metrics.map((m) => m.wmape), mean.wmape),
     mape: calculateStdDev(metrics.map((m) => m.mape), mean.mape),
   };
 
-  // 4. Calculer les percentiles (sur recall et mape uniquement)
+  // 4. Calculer les percentiles (sur recall, wmape et mape)
   const recallValues = metrics.map((m) => m.recall).sort((a, b) => a - b);
+  const wmapeValues = metrics.map((m) => m.wmape).sort((a, b) => a - b);
   const mapeValues = metrics.map((m) => m.mape).sort((a, b) => a - b);
 
   const percentiles = {
     p25: {
       recall: calculatePercentile(recallValues, 25),
+      wmape: calculatePercentile(wmapeValues, 25),
       mape: calculatePercentile(mapeValues, 25),
     },
     p50: {
       recall: calculatePercentile(recallValues, 50),
+      wmape: calculatePercentile(wmapeValues, 50),
       mape: calculatePercentile(mapeValues, 50),
     },
     p75: {
       recall: calculatePercentile(recallValues, 75),
+      wmape: calculatePercentile(wmapeValues, 75),
       mape: calculatePercentile(mapeValues, 75),
     },
     p90: {
       recall: calculatePercentile(recallValues, 90),
+      wmape: calculatePercentile(wmapeValues, 90),
       mape: calculatePercentile(mapeValues, 90),
     },
   };
@@ -265,7 +278,8 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 | **Recall** | ${(aggregateMetrics.mean.recall * 100).toFixed(1)}% | ${(aggregateMetrics.median.recall * 100).toFixed(1)}% | % de besoins réels détectés |
 | **Precision** | ${(aggregateMetrics.mean.precision * 100).toFixed(1)}% | ${(aggregateMetrics.median.precision * 100).toFixed(1)}% | % de prédictions correctes (${(100 - aggregateMetrics.median.precision * 100).toFixed(1)}% proposés non commandés) |
 | **F1-Score** | ${(aggregateMetrics.mean.f1Score * 100).toFixed(1)}% | ${(aggregateMetrics.median.f1Score * 100).toFixed(1)}% | Équilibre détection/précision |
-| **MAPE** | ${aggregateMetrics.mean.mape.toFixed(1)}% | ${aggregateMetrics.median.mape.toFixed(1)}% | Écart moyen sur les quantités prédites |
+| **wMAPE** | ${aggregateMetrics.mean.wmape.toFixed(1)}% | ${aggregateMetrics.median.wmape.toFixed(1)}% | ⚖️ Écart pondéré robuste (métrique principale) |
+| **MAPE** | ${aggregateMetrics.mean.mape.toFixed(1)}% | ${aggregateMetrics.median.mape.toFixed(1)}% | Écart moyen (info, biaisé) |
 
 ${data.llm_usage ? `
 ### Utilisation LLM (Claude Sonnet 4.5)
@@ -332,6 +346,37 @@ Moyenne harmonique entre Precision et Recall
 </details>
 
 <details>
+<summary>wMAPE vs MAPE : Quelle différence ? 🆕</summary>
+
+**wMAPE (Weighted MAPE)** - ⚖️ MÉTRIQUE PRINCIPALE RECOMMANDÉE
+
+- **Calcul** : sum(|Prédit - Réel|) / sum(Réel) × 100%
+- **Pondération globale** sur tous les produits détectés
+- **Robuste** aux petites quantités (pas d'explosion d'erreur)
+- **Symétrique** : traite sous/sur-estimation équitablement
+- **Recommandé** par experts supply chain (Blue Yonder, 2024-2025)
+
+**Exemple wMAPE** :
+- Produit A : Prédit 10, Réel 12 → Erreur absolue = 2u
+- Produit B : Prédit 5, Réel 4 → Erreur absolue = 1u
+- wMAPE = (2 + 1) / (12 + 4) × 100% = 18.8%
+
+**MAPE (Mean Absolute Percentage Error)** - ℹ️ POUR INFO (biaisé)
+
+- **Calcul** : Moyenne des (|Prédit - Réel| / Réel × 100%)
+- **Problème 1** : Asymétrique (pénalise 2-3× plus sur-estimation)
+- **Problème 2** : Explose sur petites quantités (prédit 2, réel 1 = 100%!)
+- **Gardé** pour comparaison historique
+
+**Exemple MAPE** (même cas) :
+- Produit A : (2/12) × 100% = 16.7%
+- Produit B : (1/4) × 100% = 25%
+- MAPE = (16.7% + 25%) / 2 = **20.8%** (pénalisé par produit B!)
+
+**✅ Bon score wMAPE** : < 25% (vs MAPE < 30%)
+</details>
+
+<details>
 <summary>Comment est calculé le MAPE ?</summary>
 
 **Nom complet** : Mean Absolute Percentage Error (Erreur Absolue Moyenne en %)
@@ -346,6 +391,8 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 - Produit A : Prédit 10, Réel 12 → Erreur = 16.7%
 - Produit B : Prédit 5, Réel 4 → Erreur = 25%
 - MAPE = (16.7% + 25%) ÷ 2 = 20.8%
+
+**⚠️ Limitations** : Asymétrique, sensible aux petites quantités → Préférer **wMAPE**
 
 **Bon score** : < 30%
 </details>

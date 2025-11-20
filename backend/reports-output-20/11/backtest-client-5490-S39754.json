@@ -1,0 +1,30 @@
+{
+  "clientId": 5490,
+  "clientName": "BIOCOOP SA COOP, BIOCOOP SA COOP, Adresse de facturation",
+  "orderName": "S39754",
+  "orderDate": "2025-10-16 06:33:00",
+  "cutoffDate": "2025-10-16 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 10,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.38461538461538464,
+    "recall": 1,
+    "f1Score": 0.5555555555555556,
+    "mae": 11.8,
+    "wmape": 6.71217292377702,
+    "mape": 13.333333333333332
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 57300,
+    "completionTokens": 6671,
+    "totalTokens": 63971,
+    "costUSD": 0.27196499999999996
+  }
+}

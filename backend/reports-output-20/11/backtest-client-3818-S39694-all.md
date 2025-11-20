@@ -1,0 +1,237 @@
+# Rapport Backtest - Client NATURKOST WEST GMBH
+
+## Contexte
+
+- **Client** : NATURKOST WEST GMBH (ID: 3818)
+- **Commande réelle** : S39694
+- **Date commande** : 2025-10-13 10:17:04
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
+
+
+### 💰 Usage LLM
+
+- **Appels**: 3
+- **Tokens**: 6,499 input + 717 output = 7,216 total
+- **Coût**: $0.0303 (~3.03¢)
+- **Coût par produit LLM**: $0.0101
+
+
+---
+
+## Métriques Globales
+
+### Niveau Produit (Détection)
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
+| **Rappel** | 50.0% | 4 produits réels, 2 détectés |
+| **F1-Score** | 50.0% | Score équilibré global |
+
+<details>
+<summary>Comment est calculée la Précision ?</summary>
+
+**En simple** : Sur 10 produits prédits, combien sont vraiment commandés ?
+
+**Calcul** : Précision = True Positives ÷ (True Positives + False Positives)
+
+**Exemple** : Si le système prédit 10 produits et que 8 sont commandés → Précision = 80%
+
+**Bon score** : > 80% (peu de fausses alertes)
+</details>
+
+<details>
+<summary>Comment est calculé le Rappel ?</summary>
+
+**En simple** : Sur 10 produits commandés, combien ont été détectés ?
+
+**Calcul** : Rappel = True Positives ÷ (True Positives + False Negatives)
+
+**Exemple** : Si le client commande 10 produits et que 7 sont détectés → Rappel = 70%
+
+**Bon score** : > 80% (peu de besoins manqués)
+</details>
+
+<details>
+<summary>Comment est calculé le F1-Score ?</summary>
+
+**En simple** : Moyenne harmonique entre Précision et Rappel (score équilibré)
+
+**Calcul** : F1 = 2 × (Précision × Rappel) ÷ (Précision + Rappel)
+
+**Pourquoi ?** : On peut avoir 100% de précision mais 50% de rappel. Le F1 combine les deux.
+
+**Bon score** : > 80% (système performant globalement)
+</details>
+
+### Niveau Quantité (Précision)
+
+**⚠️ Important**: Ces métriques sont calculées **uniquement sur les True Positives** (produits correctement détectés).
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **MAE** | 8.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 25.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 25.0% | Erreur moyenne en % (biaisé, pour info) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
+
+<details>
+<summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
+
+**Exact Match (🎯)** : Quantité prédite = Quantité réelle (erreur = 0)
+- Exemple : Système prédit 10, Client commande 10 → Exact Match
+
+**Partial Match (✅)** : Quantité prédite ≠ Quantité réelle (erreur > 0)
+- Exemple : Système prédit 10, Client commande 12 → Partial Match (erreur = 2 unités)
+
+**Note** : Seuls les True Positives ont un match type (les produits bien détectés)
+</details>
+
+<details>
+<summary>Comment est calculé le MAE ?</summary>
+
+**Nom complet** : Mean Absolute Error (Erreur Absolue Moyenne)
+
+**En simple** : En moyenne, le système se trompe de combien d'unités ?
+
+**Calcul** : MAE = Moyenne des |Qté Prédite - Qté Réelle|
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 2 unités
+- Produit B : Prédit 5, Réel 4 → Erreur = 1 unité
+- Produit C : Prédit 8, Réel 11 → Erreur = 3 unités
+- MAE = (2 + 1 + 3) ÷ 3 = 2 unités
+
+**Bon score** : < 2 unités (très précis)
+</details>
+
+<details>
+<summary>Comment est calculé le MAPE ?</summary>
+
+**Nom complet** : Mean Absolute Percentage Error (Erreur Absolue Moyenne en %)
+
+**En simple** : En moyenne, le système se trompe de combien en pourcentage ?
+
+**Calcul** : MAPE = Moyenne des (|Qté Prédite - Qté Réelle| ÷ Qté Réelle × 100%)
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 16.7%
+- Produit B : Prédit 5, Réel 4 → Erreur = 25%
+- MAPE = (16.7% + 25%) ÷ 2 = 20.8%
+
+**Bon score** : < 30%
+
+**Note** : Moins fiable que MAE pour petites quantités (prédit 2, réel 1 = 100% mais seulement 1 unité d'écart)
+</details>
+
+---
+
+## True Positives (2)
+
+<details>
+<summary>Qu'est-ce qu'un True Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit ET que le client a vraiment commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client commande ce produit
+- → True Positive (bonne prédiction)
+
+**C'est bon** : Plus il y en a, mieux c'est
+</details>
+
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 32 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 32 | 16.0 | 50.0% | ✅ partial | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - LLM: 16u vs Médiane: N/Au (Réel: 32u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 16u (confidence: medium)
+- 📊 **Baseline N-1**: 16u
+- 📊 **Médiane**: N/Au
+- ✅ **Réel commandé**: 32u
+- 📉 **Erreur LLM**: 16u (50.0%)
+- 📉 **Erreur Médiane**: N/A
+
+**📈 Tendance détectée:**
+stable
+
+**🔍 Outliers détectés:**
+48u, 32u
+
+**🧠 Raisonnement LLM:**
+L'historique N-1 montre une demande de fond très stable autour de 16u (10 commandes sur 12), avec deux pics exceptionnels (48u en mars probablement promotionnel, et 32u en septembre). La période récente confirme ce pattern avec majoritairement des commandes de 16u, et un seul 32u début septembre qui semble être une répétition du comportement N-1. Pas de saisonnalité marquée détectée pour mi-octobre, la quantité la plus probable reste 16u.
+
+</details>
+
+
+
+
+---
+
+## False Positives (2)
+
+<details>
+<summary>Qu'est-ce qu'un False Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit MAIS que le client n'a pas commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client ne commande PAS ce produit
+- → False Positive (fausse alerte)
+
+**Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
+</details>
+
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | Stock prédit: -5.0u (-2j restants) → prédit 32u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 16 | Stock prédit: -8.2u (-6j restants) → prédit 16u mais non commandé |
+
+
+---
+
+## False Negatives (2)
+
+<details>
+<summary>Qu'est-ce qu'un False Negative ?</summary>
+
+**En simple** : Un produit que le système n'a PAS prédit MAIS que le client a commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Pas besoin de commander ce produit"
+- Réalité : Le client commande ce produit
+- → False Negative (besoin manqué)
+
+**Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
+</details>
+
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [VID0009] Consigne casier | 64 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [VID0010] Consigne casier | 384 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+
+
+---
+
+*Rapport généré automatiquement le 2025-11-19T20:02:56.943Z*

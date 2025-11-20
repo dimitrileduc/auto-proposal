@@ -81,30 +81,38 @@ function generateLLMDetailSection(truePositives: any[]): string {
   return `
 ### 🤖 Détails des Prédictions LLM (${llmProducts.length} produits)
 
-${llmProducts.map((tp, index) => `
+${llmProducts.map((tp, index) => {
+  const medianQty = tp.medianQty !== undefined ? tp.medianQty : 'N/A';
+  const medianError = tp.medianQty !== undefined && tp.medianQty !== null
+    ? `${Math.abs(tp.medianQty - tp.realQty)}u (${((Math.abs(tp.medianQty - tp.realQty) / tp.realQty) * 100).toFixed(1)}%)`
+    : 'N/A';
+
+  return `
 <details>
-<summary><strong>${index + 1}. ${tp.productName}</strong> - LLM: ${tp.llmPrediction.quantity}u vs Médiane: ${tp.medianQty}u (Réel: ${tp.realQty}u)</summary>
+<summary><strong>${index + 1}. ${tp.productName}</strong> - LLM: ${tp.llmPrediction.quantity}u vs Médiane: ${medianQty}u (Réel: ${tp.realQty}u)</summary>
 
 **Quantités:**
 - 🤖 **LLM prédit**: ${tp.llmPrediction.quantity}u (confidence: ${tp.llmPrediction.confidence})
-- 📊 **Médiane**: ${tp.medianQty}u
+- 📊 **Baseline N-1**: ${tp.llmPrediction.baseline_quantity !== undefined ? `${tp.llmPrediction.baseline_quantity}u` : 'N/A'}
+- 📊 **Médiane**: ${medianQty}u
 - ✅ **Réel commandé**: ${tp.realQty}u
 - 📉 **Erreur LLM**: ${Math.abs(tp.llmPrediction.quantity - tp.realQty)}u (${((Math.abs(tp.llmPrediction.quantity - tp.realQty) / tp.realQty) * 100).toFixed(1)}%)
-- 📉 **Erreur Médiane**: ${Math.abs(tp.medianQty - tp.realQty)}u (${((Math.abs(tp.medianQty - tp.realQty) / tp.realQty) * 100).toFixed(1)}%)
+- 📉 **Erreur Médiane**: ${medianError}
 
-**🧠 Raisonnement:**
-${tp.llmPrediction.reasoning}
+**📈 Tendance détectée:**
+${tp.llmPrediction.trend_ratio || 'stable'}
 
-**📅 Analyse Temporelle:**
-${tp.llmPrediction.temporal_analysis}
+**🔍 Outliers détectés:**
+${tp.llmPrediction.outliers_detected && tp.llmPrediction.outliers_detected.length > 0
+  ? tp.llmPrediction.outliers_detected.map((o: number) => `${o}u`).join(', ')
+  : 'Aucun'}
 
-**📊 Analyse Quantité:**
-${tp.llmPrediction.quantity_analysis}
-
-**📈 Tendance détectée:** ${tp.llmPrediction.trend_detected ? '✅ Oui' : '❌ Non'}
+**🧠 Raisonnement LLM:**
+${tp.llmPrediction.reasoning || 'Non disponible'}
 
 </details>
-`).join('\n')}
+`;
+}).join('\n')}
 `;
 }
 
@@ -192,8 +200,9 @@ ${comparison.llmUsage ? `
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | ${quantityMetrics.mae.toFixed(2)} unités | Erreur moyenne absolue (métrique principale) |
-| **MAPE** | ${quantityMetrics.mape.toFixed(1)}% | Erreur moyenne en % (complémentaire) |
+| **MAE** | ${quantityMetrics.mae.toFixed(2)} unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | ${quantityMetrics.wmape.toFixed(1)}% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | ${quantityMetrics.mape.toFixed(1)}% | Erreur moyenne en % (biaisé, pour info) |
 | Exact Match (=0u) | ${quantityMetrics.distribution.exactMatch} | Égalité parfaite |
 | Partial Match (>0u) | ${quantityMetrics.distribution.partialMatch} | Avec erreur |
 
@@ -369,6 +378,7 @@ export function generateBacktestReportJSON(
       recall: comparison.productMetrics.recall,
       f1Score: comparison.productMetrics.f1Score,
       mae: comparison.quantityMetrics.mae,
+      wmape: comparison.quantityMetrics.wmape,
       mape: comparison.quantityMetrics.mape,
     },
     distribution: {

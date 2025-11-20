@@ -217,13 +217,15 @@ export function calculateProductMetrics(
  * Calcule les métriques de précision quantité (continue)
  *
  * @param truePositives - Liste des produits correctement prédits avec quantités
- * @returns Métriques: MAE (principale), MAPE (complémentaire), distribution
+ * @returns Métriques: MAE (principale), wMAPE (robuste), MAPE (info), distribution
  */
 export function calculateQuantityMetrics(
   truePositives: ProductMatch[]
 ): {
   mae: number;
+  wmape: number;
   mape: number;
+  bias: number;
   distribution: {
     exactMatch: number;
     partialMatch: number;
@@ -232,7 +234,9 @@ export function calculateQuantityMetrics(
   if (truePositives.length === 0) {
     return {
       mae: 0,
+      wmape: 0,
       mape: 0,
+      bias: 0,
       distribution: { exactMatch: 0, partialMatch: 0 },
     };
   }
@@ -244,12 +248,25 @@ export function calculateQuantityMetrics(
     truePositives.reduce((sum, tp) => sum + tp.absoluteError, 0) /
     truePositives.length;
 
-  // MAPE = Mean Absolute Percentage Error (%) - COMPLÉMENTAIRE
+  // wMAPE = Weighted Mean Absolute Percentage Error (%) - MÉTRIQUE ROBUSTE RECOMMANDÉE
+  // Formule: wMAPE = Σ |Qté_Prédite - Qté_Réelle| / Σ Qté_Réelle × 100%
+  // Avantages: Pas de biais asymétrique, robuste aux petites quantités, recommandé en supply chain
+  const totalAbsoluteError = truePositives.reduce((sum, tp) => sum + tp.absoluteError, 0);
+  const totalActual = truePositives.reduce((sum, tp) => sum + tp.realQty, 0);
+  const wmape = totalActual > 0 ? (totalAbsoluteError / totalActual) * 100 : 0;
+
+  // MAPE = Mean Absolute Percentage Error (%) - INFO (biaisé, gardé pour comparaison historique)
   // Formule: MAPE = (1/N) × Σ |Qté_Prédite - Qté_Réelle| / Qté_Réelle × 100%
-  // Limitations: Asymétrique, sensible aux petites valeurs
+  // Limitations: Asymétrique (pénalise 2-3× plus sur-estimation), explose sur petites quantités
   const mape =
     truePositives.reduce((sum, tp) => sum + tp.errorPercent, 0) /
     truePositives.length;
+
+  // BIAS = Biais directionnel (%) - DIAGNOSTIC SUR/SOUS-ESTIMATION
+  // Formule: Bias = Σ (Qté_Prédite - Qté_Réelle) / Σ Qté_Réelle × 100%
+  // Interprétation: > 0 = surestimation, < 0 = sous-estimation, = 0 = équilibré
+  const totalSignedError = truePositives.reduce((sum, tp) => sum + (tp.predictedQty - tp.realQty), 0);
+  const bias = totalActual > 0 ? (totalSignedError / totalActual) * 100 : 0;
 
   // Distribution: exact (erreur = 0) vs partial (erreur > 0)
   const exactMatch = truePositives.filter((tp) => tp.matchType === "exact")
@@ -259,7 +276,9 @@ export function calculateQuantityMetrics(
 
   return {
     mae,
+    wmape,
     mape,
+    bias,
     distribution: { exactMatch, partialMatch },
   };
 }

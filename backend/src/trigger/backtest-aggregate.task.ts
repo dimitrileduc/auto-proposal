@@ -185,6 +185,7 @@ export const backtestAggregateTask = task({
                   recall: taskResult.comparison.recall,
                   f1Score: taskResult.comparison.f1Score,
                   mae: taskResult.comparison.mae,
+                  wmape: taskResult.comparison.wmape,
                   mape: taskResult.comparison.mape,
                 },
               });
@@ -203,6 +204,7 @@ export const backtestAggregateTask = task({
                   recall: taskResult.comparisonNoLow.recall,
                   f1Score: taskResult.comparisonNoLow.f1Score,
                   mae: taskResult.comparisonNoLow.mae,
+                  wmape: taskResult.comparisonNoLow.wmape,
                   mape: taskResult.comparisonNoLow.mape,
                 },
               });
@@ -221,6 +223,7 @@ export const backtestAggregateTask = task({
                   recall: taskResult.comparisonAll.recall,
                   f1Score: taskResult.comparisonAll.f1Score,
                   mae: taskResult.comparisonAll.mae,
+                  wmape: taskResult.comparisonAll.wmape,
                   mape: taskResult.comparisonAll.mape,
                 },
               });

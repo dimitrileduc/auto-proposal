@@ -45,7 +45,8 @@ export interface BacktestComparisonResult {
   // Métriques niveau quantité (continue)
   quantityMetrics: {
     mae: number;           // Mean Absolute Error (unités) - MÉTRIQUE PRINCIPALE
-    mape: number;          // Mean Absolute Percentage Error (%) - COMPLÉMENTAIRE
+    wmape: number;         // Weighted MAPE (%) - MÉTRIQUE ROBUSTE RECOMMANDÉE
+    mape: number;          // Mean Absolute Percentage Error (%) - INFO (biaisé)
     distribution: {
       exactMatch: number;   // Erreur = 0 (quantité parfaite)
       partialMatch: number; // Erreur > 0 (avec erreur)

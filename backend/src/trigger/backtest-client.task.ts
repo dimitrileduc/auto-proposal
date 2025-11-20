@@ -60,6 +60,7 @@ export interface BacktestClientTaskResult {
     recall: number;
     f1Score: number;
     mae: number;
+    wmape: number;
     mape: number;
   };
   comparisonNoLow?: {  // Métriques pour produits low confidence (1 commande)
@@ -70,6 +71,7 @@ export interface BacktestClientTaskResult {
     recall: number;
     f1Score: number;
     mae: number;
+    wmape: number;
     mape: number;
   };
   comparisonAll?: {  // Métriques pour TOUS les produits (clean + low)
@@ -80,6 +82,7 @@ export interface BacktestClientTaskResult {
     recall: number;
     f1Score: number;
     mae: number;
+    wmape: number;
     mape: number;
   };
   llm_usage?: {  // Usage LLM pour ce client
@@ -359,6 +362,7 @@ export const backtestClientTask = task({
           recall: comparisonClean.productMetrics.recall,
           f1Score: comparisonClean.productMetrics.f1Score,
           mae: comparisonClean.quantityMetrics.mae,
+          wmape: comparisonClean.quantityMetrics.wmape,
           mape: comparisonClean.quantityMetrics.mape,
         },
         comparisonNoLow: {
@@ -369,6 +373,7 @@ export const backtestClientTask = task({
           recall: comparisonLow.productMetrics.recall,
           f1Score: comparisonLow.productMetrics.f1Score,
           mae: comparisonLow.quantityMetrics.mae,
+          wmape: comparisonLow.quantityMetrics.wmape,
           mape: comparisonLow.quantityMetrics.mape,
         },
         comparisonAll: {
@@ -379,6 +384,7 @@ export const backtestClientTask = task({
           recall: comparison.productMetrics.recall,
           f1Score: comparison.productMetrics.f1Score,
           mae: comparison.quantityMetrics.mae,
+          wmape: comparison.quantityMetrics.wmape,
           mape: comparison.quantityMetrics.mape,
         },
         llm_usage: llmUsage,

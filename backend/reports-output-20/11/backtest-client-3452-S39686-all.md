@@ -1,0 +1,253 @@
+# Rapport Backtest - Client DELHAIZE LE LION/DE LEEUW NV
+
+## Contexte
+
+- **Client** : DELHAIZE LE LION/DE LEEUW NV (ID: 3452)
+- **Commande réelle** : S39686
+- **Date commande** : 2025-10-13 07:49:42
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 0j
+
+
+### 💰 Usage LLM
+
+- **Appels**: 4
+- **Tokens**: 8,617 input + 1,015 output = 9,632 total
+- **Coût**: $0.0411 (~4.11¢)
+- **Coût par produit LLM**: $0.0103
+
+
+---
+
+## Métriques Globales
+
+### Niveau Produit (Détection)
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
+| **Rappel** | 100.0% | 2 produits réels, 2 détectés |
+| **F1-Score** | 66.7% | Score équilibré global |
+
+<details>
+<summary>Comment est calculée la Précision ?</summary>
+
+**En simple** : Sur 10 produits prédits, combien sont vraiment commandés ?
+
+**Calcul** : Précision = True Positives ÷ (True Positives + False Positives)
+
+**Exemple** : Si le système prédit 10 produits et que 8 sont commandés → Précision = 80%
+
+**Bon score** : > 80% (peu de fausses alertes)
+</details>
+
+<details>
+<summary>Comment est calculé le Rappel ?</summary>
+
+**En simple** : Sur 10 produits commandés, combien ont été détectés ?
+
+**Calcul** : Rappel = True Positives ÷ (True Positives + False Negatives)
+
+**Exemple** : Si le client commande 10 produits et que 7 sont détectés → Rappel = 70%
+
+**Bon score** : > 80% (peu de besoins manqués)
+</details>
+
+<details>
+<summary>Comment est calculé le F1-Score ?</summary>
+
+**En simple** : Moyenne harmonique entre Précision et Rappel (score équilibré)
+
+**Calcul** : F1 = 2 × (Précision × Rappel) ÷ (Précision + Rappel)
+
+**Pourquoi ?** : On peut avoir 100% de précision mais 50% de rappel. Le F1 combine les deux.
+
+**Bon score** : > 80% (système performant globalement)
+</details>
+
+### Niveau Quantité (Précision)
+
+**⚠️ Important**: Ces métriques sont calculées **uniquement sur les True Positives** (produits correctement détectés).
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **MAE** | 0.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 0.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (biaisé, pour info) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
+
+<details>
+<summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
+
+**Exact Match (🎯)** : Quantité prédite = Quantité réelle (erreur = 0)
+- Exemple : Système prédit 10, Client commande 10 → Exact Match
+
+**Partial Match (✅)** : Quantité prédite ≠ Quantité réelle (erreur > 0)
+- Exemple : Système prédit 10, Client commande 12 → Partial Match (erreur = 2 unités)
+
+**Note** : Seuls les True Positives ont un match type (les produits bien détectés)
+</details>
+
+<details>
+<summary>Comment est calculé le MAE ?</summary>
+
+**Nom complet** : Mean Absolute Error (Erreur Absolue Moyenne)
+
+**En simple** : En moyenne, le système se trompe de combien d'unités ?
+
+**Calcul** : MAE = Moyenne des |Qté Prédite - Qté Réelle|
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 2 unités
+- Produit B : Prédit 5, Réel 4 → Erreur = 1 unité
+- Produit C : Prédit 8, Réel 11 → Erreur = 3 unités
+- MAE = (2 + 1 + 3) ÷ 3 = 2 unités
+
+**Bon score** : < 2 unités (très précis)
+</details>
+
+<details>
+<summary>Comment est calculé le MAPE ?</summary>
+
+**Nom complet** : Mean Absolute Percentage Error (Erreur Absolue Moyenne en %)
+
+**En simple** : En moyenne, le système se trompe de combien en pourcentage ?
+
+**Calcul** : MAPE = Moyenne des (|Qté Prédite - Qté Réelle| ÷ Qté Réelle × 100%)
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 16.7%
+- Produit B : Prédit 5, Réel 4 → Erreur = 25%
+- MAPE = (16.7% + 25%) ÷ 2 = 20.8%
+
+**Bon score** : < 30%
+
+**Note** : Moins fiable que MAE pour petites quantités (prédit 2, réel 1 = 100% mais seulement 1 unité d'écart)
+</details>
+
+---
+
+## True Positives (2)
+
+<details>
+<summary>Qu'est-ce qu'un True Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit ET que le client a vraiment commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client commande ce produit
+- → True Positive (bonne prédiction)
+
+**C'est bon** : Plus il y en a, mieux c'est
+</details>
+
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3301] DLL MAYONNAISE CITRON 300ML | 130 | 130 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML | 98 | 98 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF3301] DLL MAYONNAISE CITRON 300ML</strong> - LLM: 130u vs Médiane: N/Au (Réel: 130u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 130u (confidence: high)
+- 📊 **Baseline N-1**: 130u
+- 📊 **Médiane**: N/Au
+- ✅ **Réel commandé**: 130u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: N/A
+
+**📈 Tendance détectée:**
+stable
+
+**🔍 Outliers détectés:**
+390u
+
+**🧠 Raisonnement LLM:**
+Les données N-1 et récentes montrent une demande de fond très stable à 130u par commande. La quantité de 390u (juillet 2024 et août 2025) apparaît comme une commande exceptionnelle récurrente estivale (possiblement promotion saisonnière ou événement), pas représentative de la demande normale. Pour mi-octobre, période hors pics estivaux, la quantité la plus probable est 130u, cohérente avec les commandes d'octobre N-1 et septembre 2025.
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML</strong> - LLM: 98u vs Médiane: N/Au (Réel: 98u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 98u (confidence: medium)
+- 📊 **Baseline N-1**: 196u
+- 📊 **Médiane**: N/Au
+- ✅ **Réel commandé**: 98u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: N/A
+
+**📈 Tendance détectée:**
+-50%
+
+**🔍 Outliers détectés:**
+392u
+
+**🧠 Raisonnement LLM:**
+En N-1 (période sept-août), la demande de base était autour de 196u par commande, avec une commande exceptionnelle de 392u en juillet (probablement promotion ou événement). La période récente montre une baisse structurelle nette : 5 commandes consécutives dont 4×98u et 1×196u, avec une médiane à 98u. Aucune saisonnalité forte détectée, donc je me base sur la tendance récente qui indique clairement une division par deux de la demande habituelle. Je recommande 98u, la quantité la plus fréquente actuellement.
+
+</details>
+
+
+
+
+---
+
+## False Positives (2)
+
+<details>
+<summary>Qu'est-ce qu'un False Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit MAIS que le client n'a pas commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client ne commande PAS ce produit
+- → False Positive (fausse alerte)
+
+**Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
+</details>
+
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 89.2u (3j restants) → prédit 130u mais non commandé |
+| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 420 | Stock prédit: -854.6u (-27j restants) → prédit 420u mais non commandé |
+
+
+---
+
+## False Negatives (0)
+
+<details>
+<summary>Qu'est-ce qu'un False Negative ?</summary>
+
+**En simple** : Un produit que le système n'a PAS prédit MAIS que le client a commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Pas besoin de commander ce produit"
+- Réalité : Le client commande ce produit
+- → False Negative (besoin manqué)
+
+**Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
+</details>
+
+*Aucun faux négatif (rappel = 100%)*
+
+---
+
+*Rapport généré automatiquement le 2025-11-19T20:00:22.469Z*
