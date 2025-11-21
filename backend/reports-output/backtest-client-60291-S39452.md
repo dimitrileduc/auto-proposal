@@ -5,16 +5,14 @@
 - **Client** : DOMAINE DE RONCHINNE (ID: 60291)
 - **Commande réelle** : S39452
 - **Date commande** : 2025-10-01 07:17:25
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-30 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 21
-- **Tokens**: 42,699 input + 12,111 output = 54,810 total
-- **Coût**: $0.3098 (~30.98¢)
-- **Coût par produit LLM**: $0.0148
+- **Appels**: 23
+- **Tokens**: 33,846 input + 7,312 output = 41,158 total
 
 
 ---
@@ -71,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.90 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 64.3% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 80.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 64.3% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **MAE** | 1.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 71.4% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 90.0% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 71.4% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,18 +145,18 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [RIT05] RITCHIE Cola - verre 275ml | 3 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 3 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [RIT01] RITCHIE Orange - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 4 | 1 | 3.0 | 300.0% | ✅ partial | 🤖 LLM |
-| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 3 | 1 | 2.0 | 200.0% | ✅ partial | 🤖 LLM |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [RIT05] RITCHIE Cola - verre 275ml | 3 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [RIT06] RITCHIE Cola ZERO - verre 275ml | 3 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [RIT01] RITCHIE Orange - verre 275ml | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [fsv17] Mélange de noix bio vrac 2,75kg | 5 | 1 | 4.0 | 400.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
 
 
 ### 🤖 Détails des Prédictions LLM (8 produits)
@@ -176,35 +174,13 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier ~14-18j - Transition vers hebdomadaire mercredi
+- **Pattern temporel**: Hebdomadaire irrégulier - alternance Mardi/Mercredi avec intervalles de 7-15 jours
 - **Saisonnalité**: none
-- **Tendance**: Baisse -50% (4u → 2u sur 10 semaines)
+- **Tendance**: Baisse progressive -50% (de 4u à 2u sur 10 semaines)
 - **Outliers détectés**: 4u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-- 22/07 (mar) → 19/08 (mar) : 28j | 4u → 3u
-- 19/08 (mar) → 02/09 (mar) : 14j | 3u → 2u
-- 02/09 (mar) → 17/09 (mer) : 15j | 2u (stable)
-- 17/09 (mer) → 24/09 (mer) : 7j | 2u (stable)
-→ Pattern évolue vers un rythme hebdomadaire mercredi (2 dernières commandes)
-→ La prédiction tombe un **mercredi 01/10**, soit 7j après la dernière commande du 24/09 (mer)
-
-**FILTRAGE OUTLIERS:**
-- 4u en juillet = anomalie haute (démarrage ou test produit)
-- Tendance baissière claire : 4u → 3u → stabilisation à 2u
-- Les 3 dernières commandes sont constantes à 2u (nouvelle baseline établie)
-
-**TENDANCE:**
-- Baisse de 50% entre juillet-août, puis **stabilisation totale à 2u** depuis début septembre
-- Aucune saisonnalité N-1 disponible
-- Le client semble avoir trouvé son rythme de croisière : 2u chaque semaine (mercredi)
-
-**DÉCISION:**
-- Prédiction au 01/10 (mercredi) = respect du pattern hebdomadaire mercredi
-- 3 commandes consécutives à 2u = signal fort de demande stabilisée
-- Aucun élément ne justifie une déviation de cette baseline
-→ **Recommandation : 2 unités** (précision maximale sur tendance établie)
+Pattern clair sur 10 semaines : commandes régulières passant de 4u (juillet) → 3u (août) → 2u (septembre stable sur 3 commandes consécutives). La quantité s'est stabilisée à 2u depuis début septembre (3 commandes identiques : 02/09, 17/09, 24/09). Prochaine commande attendue mardi 30/09 respecte le rythme ~7 jours. Outlier 4u écarté car ponctuel en juillet. Pas de données N-1 donc pas d'effet saisonnier. Tendance récente très claire et répétitive : 2u est la nouvelle norme établie.
 
 </details>
 
@@ -221,19 +197,13 @@
 - 📉 **Erreur Médiane**: 2u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Variable ~14-28j, majoritairement mardi-mercredi
+- **Pattern temporel**: Commandes environ toutes les 2-4 semaines, principalement les mardis/mercredis (4 mar, 1 mer sur 5 commandes)
 - **Saisonnalité**: none
-- **Tendance**: Baisse légère -30% (de 4-5u vers 2-3u)
+- **Tendance**: Baisse progressive: 5u→4u→3u→4u→2u (moyenne mobile descendante de 4.5u à 3u)
 - **Outliers détectés**: 5u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique**: Le client commande de façon irrégulière tous les 14-28 jours, avec une préférence pour les mardis et mercredis. Les intervalles observés : 28j (22/07→19/08), 14j (19/08→02/09), 15j (02/09→17/09), 7j (17/09→24/09). Le 24/09 a vu une commande de seulement 2u après un intervalle court de 7j, suggérant un cycle de réapprovisionnement qui s'accélère. Depuis le 24/09, 7 jours se sont écoulés au 01/10, ce qui pourrait indiquer un nouveau cycle.
-
-**Détection outliers**: La commande de 5u du 19/08 semble être un pic exceptionnel dans un contexte de volumes habituels de 2-4u. Les autres commandes (2-4u) représentent mieux la demande récurrente.
-
-**Tendance**: On observe une baisse progressive : 4u (juillet) → 5u outlier (août) → 3u → 4u → 2u (septembre). La moyenne des 3 dernières commandes (hors outlier) est de 3u (3+4+2)/3=3u.
-
-**Décision**: Pas de saisonnalité N-1 disponible. La demande de fond stabilisée autour de 3u. Le client a commandé 2u il y a 7 jours (24/09), ce qui suggère un stock résiduel faible au 01/10. Pattern récent pointe vers 3u comme quantité normale de réapprovisionnement après filtrage du pic de 5u.
+Pattern bihebdomadaire/mensuel détecté avec dernière commande le 24/09 (mer). Prédiction pour le 30/09 (mar) soit 6 jours après. La tendance récente montre une demande décroissante: pic de 5u en août (outlier possible), stabilisation à 3-4u, puis chute à 2u la semaine dernière. Le passage de mer à mar respecte le rythme habituel. La moyenne des 3 dernières commandes (excluant le pic de 5u) = (4+3+2)/3 = 3u. Compte tenu du délai court depuis dernière commande (6j) et de la tendance baissière récente, je privilégie une quantité conservatrice alignée sur la demande de fond actuelle plutôt que sur l'historique plus ancien. Recommandation: 3u (ni surestimation face à la baisse, ni sous-estimation risquée)
 
 </details>
 
@@ -243,28 +213,20 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 3u (confidence: medium)
-- 📊 **Baseline N-1**: 2.5u
+- 📊 **Baseline N-1**: 2.8u
 - 📊 **Médiane**: 3u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 1u (50.0%)
 - 📉 **Erreur Médiane**: 1u (50.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Cycle variable 14-28 jours, majoritairement mardi-mercredi, commandes récentes rapprochées (7j)
+- **Pattern temporel**: Cycle mixte ~14-18 jours avec ancrage probable Mardi/Mercredi
 - **Saisonnalité**: none
-- **Tendance**: Stable - oscillation 2-3u (moyenne 2.8u), pic isolé 4u le 17/09
-- **Outliers détectés**: 4u
+- **Tendance**: Stable avec légère volatilité 2-4 unités
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique** : Le client commande de façon irrégulière avec intervalles variables (28j entre 22/07 et 19/08, puis 14j, puis 7j deux fois). Les 3 dernières commandes montrent un rapprochement net du rythme (7j), probablement lié à une rotation plus rapide du stock.
-
-**Jours de commande** : Majoritairement mardi-mercredi (4/5 commandes), la prédiction au 01/10 (mercredi) tombe pile dans ce pattern.
-
-**Filtrage outliers** : Le 4u du 17/09 est suspect (double du volume standard). Toutes les autres commandes oscillent entre 2-3u. Je l'identifie comme probable événement ponctuel (promotion, rattrapage stock).
-
-**Tendance** : Sur les 5 dernières commandes (hors outlier 4u) : 3u, 3u, 2u, 2u = moyenne 2.5u. Pas de tendance haussière/baissière nette, demande de fond stable.
-
-**Décision** : Avec un cycle récent de 7j (dernière commande le 24/09), la prochaine commande au 01/10 suit le rythme. La demande de fond étant 2.5u et le dernier ordre étant 2u (possiblement sous le besoin réel), je vise **3u** comme quantité la plus probable - conforme au volume standard hors outlier et au pattern mardi historique (3u les 19/08 et 22/07).
+Historique court (5 commandes sur 70 jours) mais pattern détectable: rythme bi-hebdomadaire à tri-hebdomadaire avec ancrage Mardi/Mercredi. Dernière commande 2025-09-24 (mer) avec 2u, intervalle moyen 15j suggère prochaine commande imminente. Quantités oscillent 2-4u avec médiane=3u. Absence d'outliers et de saisonnalité N-1. Tendance stable sans rupture nette. La prédiction au 2025-09-30 (6 jours après dernière commande) correspond au rythme observé. Baseline 2.8u arrondie à 3u (valeur modale et médiane) pour maximiser précision. Pas de surgonflage: le client commande régulièrement de petites quantités pour rotation rapide typique produit frais verre.
 
 </details>
 
@@ -281,127 +243,82 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (25-35 jours) sans jour fixe de la semaine
+- **Pattern temporel**: Irrégulier - Intervalle variable (14-15j puis 16j puis 13j). Pas de jour fixe détecté (lun/mar/mer alternés)
 - **Saisonnalité**: none
-- **Tendance**: Stable - Oscillation entre 1-2u sans tendance claire
+- **Tendance**: Stable - Oscillation entre 1-2u, moyenne 1.75u sur période récente
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les commandes montrent un pattern irrégulier avec des intervalles de ~27 jours (14/07→19/08), ~14 jours (19/08→02/09), et ~15 jours (02/09→17/09). Pas de jour fixe identifiable (lun, mar, mar, mer). La prochaine commande au 01/10 représenterait un intervalle de ~14 jours depuis le 17/09, cohérent avec la cadence récente.
-
-**FILTRAGE OUTLIERS**: Aucun pic exceptionnel détecté. Les quantités oscillent naturellement entre 1u et 2u sans événement promotionnel apparent.
-
-**TENDANCE & SAISONNALITÉ**: Absence de données N-1 empêche l'analyse saisonnière. Sur les 3 derniers mois, la demande reste stable (2-1-2-2u). Pas de hausse ni baisse significative.
-
-**DÉCISION**: La dernière commande (17/09) était de 2u, et historiquement 75% des commandes sont à 2u (3/4). Avec un intervalle de 14 jours depuis la dernière commande, le client suit un rythme de réapprovisionnement modéré. La baseline théorique de 1.75u s'arrondit logiquement à 2u, qui représente le mode statistique et la quantité la plus probable pour ce produit à faible rotation.
+Historique court (4 commandes sur 77j) avec rythme irrégulier ~14j en moyenne. Aucun outlier détecté, toutes les quantités sont cohérentes (1-2u). La dernière commande du 2025-09-17 (mer) était de 2u, soit 13j avant la date cible. Pattern observé: alternance 2-1-2-2, suggérant légère préférence pour 2u (75% des cas). Absence de saisonnalité N-1. Tendance stable sans rupture. Le client semble commander par petits lots fréquents. Prédiction 2u basée sur: (1) fréquence majoritaire dans historique, (2) dernière commande=2u confirmant le pattern, (3) intervalle de 13j cohérent avec rythme bimensuel observé. Baseline théorique 1.75u arrondie à 2u pour correspondre au comportement d'achat réel du client (unités entières, préférence 2u).
 
 </details>
 
 
 <details>
-<summary><strong>5. [fsv17] Mélange de noix bio vrac 2,75kg</strong> - LLM: 4u vs Médiane: 5u (Réel: 1u)</summary>
+<summary><strong>5. [fsv17] Mélange de noix bio vrac 2,75kg</strong> - LLM: 5u vs Médiane: 5u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 4u (confidence: low)
+- 🤖 **LLM prédit**: 5u (confidence: low)
 - 📊 **Baseline N-1**: 4.5u
 - 📊 **Médiane**: 5u
 - ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 3u (300.0%)
+- 📉 **Erreur LLM**: 4u (400.0%)
 - 📉 **Erreur Médiane**: 4u (400.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - 2 commandes espacées de 44 jours (04/08→17/09), puis 14 jours jusqu'à date prédiction (17/09→01/10)
+- **Pattern temporel**: Irrégulier - 2 commandes en 3 mois (écart de 44 jours puis 13 jours)
 - **Saisonnalité**: none
-- **Tendance**: Stable - Quantités homogènes (4-5u) mais historique trop court
+- **Tendance**: Données insuffisantes - historique trop court (2 commandes seulement)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**CONTEXTE CRITIQUE**: Historique extrêmement limité (seulement 2 commandes sur 2 mois) sans données N-1 pour référence saisonnière.
-
-**ANALYSE RYTHMIQUE**: 
-- Intervalle 1: 44 jours (04/08→17/09)
-- Intervalle projeté: 14 jours (17/09→01/10) 
-- Pattern NON stabilisé - impossible de confirmer un cycle récurrent
-- La commande du 17/09 (mercredi, 5u) est la plus récente et pertinente
-
-**TENDANCE**: 
-- Quantités observées: 4u puis 5u
-- Variation minime (+25% mais sur base faible)
-- Pas de signal clair de croissance ou décroissance
-- Moyenne simple: 4.5u
-
-**DÉCISION**: 
-Face à l'absence de pattern établi et la proximité temporelle incertaine de la prochaine commande (14 jours depuis dernière vs 44 jours avant), je privilégie la **prudence statistique** avec une légère pondération vers la donnée la plus récente. La baseline théorique de 4.5u me conduit à recommander **4 unités** (arrondi conservateur) plutôt que 5, car:
-1. Le cycle n'est pas confirmé (2 points insuffisants)
-2. La commande peut intervenir plus tard que le 01/10
-3. En B2B bio vrac, la fraîcheur prime sur le surstock
-
-**CONFIANCE BASSE** justifiée par le manque criant de profondeur historique.
+Historique très limité (2 commandes uniquement: 4u le 04/08 et 5u le 17/09). Absence totale de données N-1 pour validation saisonnière. Le rythme est irrégulier (44j puis 13j d'écart), empêchant l'identification d'un pattern fiable. La dernière commande (5u le 17/09) est la plus récente et montre une légère progression vs 4u. La date de prédiction (30/09) intervient 13 jours après la dernière commande, soit un écart similaire au dernier cycle. En l'absence de saisonnalité détectable et avec une micro-tendance haussière, je privilégie la valeur la plus récente (5u) comme prédiction. Baseline théorique à 4.5 (moyenne) mais recommandation à 5u par alignement sur le dernier comportement observé. Confiance faible en raison du manque de profondeur historique.
 
 </details>
 
 
 <details>
-<summary><strong>6. [fsv05] Noix de pecan nature bio vrac 2,2kg </strong> - LLM: 3u vs Médiane: 3u (Réel: 1u)</summary>
+<summary><strong>6. [fsv05] Noix de pecan nature bio vrac 2,2kg </strong> - LLM: 2u vs Médiane: 3u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 3u (confidence: low)
+- 🤖 **LLM prédit**: 2u (confidence: low)
 - 📊 **Baseline N-1**: 2.5u
 - 📊 **Médiane**: 3u
 - ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 2u (200.0%)
+- 📉 **Erreur LLM**: 1u (100.0%)
 - 📉 **Erreur Médiane**: 2u (200.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - 2 commandes en 3 mois (intervalle 44 jours), historique insuffisant
+- **Pattern temporel**: Irrégulier - 2 commandes seulement (44 jours d'écart: 04/08→17/09)
 - **Saisonnalité**: none
-- **Tendance**: Hausse +50% (2u → 3u)
+- **Tendance**: Stable - Quantités faibles constantes (2-3u)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Contexte critique** : Historique extrêmement limité (seulement 2 commandes sur 3 mois), absence totale de données N-1, impossible d'identifier un pattern fiable.
-
-**Analyse rythmique** : Les 2 commandes sont espacées de 44 jours (4 août → 17 septembre), sans pattern hebdomadaire ou mensuel clair. La date de prédiction (1er octobre) se situe 14 jours après la dernière commande, ce qui pourrait correspondre à un cycle bimensuel émergent, mais sans confirmation historique.
-
-**Tendance observée** : Progression de 2u à 3u (+50%), ce qui suggère soit une croissance de la demande client, soit une simple variation de commande ponctuelle.
-
-**Décision** : En l'absence de données structurantes, je privilégie la **dernière valeur observée (3u)** comme meilleur prédicteur, car :
-- Elle représente la demande la plus récente du client
-- L'intervalle de 14 jours depuis la dernière commande reste dans une zone plausible de réapprovisionnement
-- La baseline théorique (moyenne 2,5u) est ajustée à 3u pour refléter la dynamique récente
-
-**Confiance faible** justifiée par le manque criant de données historiques pour valider quelque pattern que ce soit.
+Données très limitées (2 commandes uniquement). Intervalle de 44j entre les 2 commandes suggère une fréquence irrégulière sans pattern clair. Les quantités restent dans la fourchette 2-3u (produit de niche - noix pécan bio). Sans saisonnalité N-1 ni rythme établi, impossible de prédire avec certitude si commande le 30/09 (13j après dernière). Toutefois, si le client commande, les volumes historiques montrent une demande minimale de 2u. La baseline théorique de 2.5u arrondie à 2u (valeur observée la plus fréquente) représente la prédiction la plus prudente et probable pour ce produit à rotation lente.
 
 </details>
 
 
 <details>
-<summary><strong>7. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>7. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM: 2u vs Médiane: 1u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 1u (confidence: medium)
-- 📊 **Baseline N-1**: 1u
+- 🤖 **LLM prédit**: 2u (confidence: medium)
+- 📊 **Baseline N-1**: 1.33u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 1u (100.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - intervalles variables (25-40 jours entre commandes)
+- **Pattern temporel**: Commandes espacées irrégulièrement: 46j puis 14j entre les 3 dernières commandes. Tendance à commander le mardi (2/3 cas récents)
 - **Saisonnalité**: none
-- **Tendance**: Stable - commandes unitaires faibles (1-2u)
-- **Outliers détectés**: 2u
+- **Tendance**: Volume stable 1-2u par commande, légère augmentation sur dernière commande (2u le 02/09)
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: L'historique montre 3 commandes sur 3 mois (14 juillet, 19 août, 2 septembre). Les intervalles sont de ~36 jours puis ~14 jours, suggérant un pattern irrégulier sans cycle hebdomadaire fixe. La dernière commande date du 2 septembre (29 jours avant la prédiction du 1er octobre), ce qui correspond à une fenêtre de réapprovisionnement plausible.
-
-**FILTRAGE OUTLIERS**: La commande de 2u du 2 septembre représente le double du volume habituel (1u). Sans contexte additionnel et avec seulement 3 points de données, je l'identifie comme potentiellement exceptionnelle, mais cela pourrait aussi signaler une légère hausse.
-
-**SAISONNALITÉ**: Aucune donnée N-1 disponible. Impossible d'identifier un pattern saisonnier. Impact: none.
-
-**TENDANCE**: Les volumes restent très faibles (1-2u). Pas de tendance haussière claire - le produit semble être en phase de test ou commande d'appoint occasionnelle.
-
-**DÉCISION**: En l'absence de pattern fort et avec des volumes historiques de 1u majoritairement, je recommande la quantité de base de **1 unité**. La commande de 2u étant isolée, je privilégie la prudence statistique. Confiance moyenne car l'historique est limité (3 points seulement).
+Historique très limité (3 commandes seulement) mais pattern émergeant: dernière commande de 2u le 02/09 (mardi), prédiction pour le 30/09 (mardi, 28j après). Le client semble avoir augmenté légèrement son volume (passage de 1u à 2u). L'intervalle de 28j correspond à un cycle quasi-mensuel. Sans données N-1 et avec volatilité des intervalles (46j puis 14j), je privilégie la donnée la plus récente (2u) comme signal du nouveau niveau de demande baseline plutôt que la moyenne historique de 1.33u. Produit de niche (citron-gingembre) avec adoption progressive.
 
 </details>
 
@@ -411,31 +328,166 @@ Face à l'absence de pattern établi et la proximité temporelle incertaine de l
 
 **Quantités:**
 - 🤖 **LLM prédit**: 1u (confidence: medium)
-- 📊 **Baseline N-1**: 1u
+- 📊 **Baseline N-1**: 1.33u
 - 📊 **Médiane**: 2u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 1u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel irrégulier (~30-45j), commandes systématiques le Mardi
+- **Pattern temporel**: Commande chaque Mardi avec intervalle variable (14j puis 42j puis 40j)
 - **Saisonnalité**: none
-- **Tendance**: Stable avec légère volatilité (1-2u)
-- **Outliers détectés**: 2u
+- **Tendance**: Stable - oscillation entre 1 et 2 unités
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique**: Le client commande exclusivement le MARDI avec un rythme mensuel irrégulier (22/07→19/08 = 28j, 19/08→02/09 = 14j). La prédiction est pour un mercredi (01/10), soit 29 jours après la dernière commande du 02/09.
+Pattern détecté: commandes exclusivement le Mardi, mais intervalles irréguliers (14-42-40 jours). Moyenne historique = 1.33u sur 3 commandes. La dernière commande (02/09) était de 1u il y a ~28 jours. Aucun outlier détecté, volumes très faibles typiques d'un produit niche (Orange Sanguine format spécifique). Sans saisonnalité N-1 et avec oscillation 1-2-1, la baseline théorique de 1.33u suggère un retour à 1 unité. Le rythme irrégulier empêche de prédire un rattrapage. Prédiction conservatrice: 1 unité (quantité modale et dernière observée).
 
-**Pattern détecté**: 
-- 22/07: 1u (mar.)
-- 19/08: 2u (mar.) - OUTLIER probable (double quantité ponctuelle)
-- 02/09: 1u (mar.) - retour à la normale
+</details>
 
-**Filtrage outlier**: La commande de 2u du 19/08 apparaît exceptionnelle car encadrée par des commandes de 1u. Possible commande de rattrapage ou anticipation.
 
-**Tendance**: Demande de fond stable à 1 unité. Pas de saisonnalité N-1 détectable (aucune donnée). Le rythme mensuel + jour fixe (mardi) suggère un réapprovisionnement régulier de faible volume.
 
-**Décision**: Baseline = 1u (quantité modale hors outlier). La date de prédiction (mercredi) ne correspond pas au jour habituel de commande (mardi), mais le délai de 29j depuis la dernière commande justifie une commande imminente. Quantité recommandée: **1 unité** (demande de fond récurrente).
+
+### 📊 Données d'Input LLM (8 produits)
+
+
+<details>
+<summary><strong>1. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-24 06:16:03: 2u
+- 2025-09-17 06:34:27: 2u
+- 2025-09-02 06:42:42: 2u
+- 2025-08-19 11:00:28: 3u
+- 2025-07-22 06:58:35: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 2u (confidence: high)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>2. [RIT05] RITCHIE Cola - verre 275ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-24 06:16:03: 2u
+- 2025-09-17 06:34:27: 4u
+- 2025-09-02 06:42:42: 3u
+- 2025-08-19 11:00:28: 5u
+- 2025-07-22 06:58:35: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 3u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>3. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-24 06:16:03: 2u
+- 2025-09-17 06:34:27: 4u
+- 2025-09-02 06:42:42: 2u
+- 2025-08-19 11:00:28: 3u
+- 2025-07-22 06:58:35: 3u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 3u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>4. [RIT01] RITCHIE Orange - verre 275ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-17 06:34:27: 2u
+- 2025-09-02 06:42:42: 1u
+- 2025-08-19 11:00:28: 2u
+- 2025-07-14 13:52:07: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>5. [fsv17] Mélange de noix bio vrac 2,75kg</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-17 06:33:32: 5u
+- 2025-08-04 13:50:22: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 5u (confidence: low)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>6. [fsv05] Noix de pecan nature bio vrac 2,2kg </strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-17 06:33:32: 3u
+- 2025-08-04 13:50:22: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 2u (confidence: low)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>7. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-02 06:42:42: 2u
+- 2025-08-19 11:00:28: 1u
+- 2025-07-14 13:52:07: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>8. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-02 06:42:42: 1u
+- 2025-08-19 11:00:28: 2u
+- 2025-07-22 06:58:35: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
 
 </details>
 
@@ -464,25 +516,25 @@ Face à l'absence de pattern établi et la proximité temporelle incertaine de l
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: 0.4u (3j restants) → prédit 1u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock prédit: 2.1u (13j restants) → prédit 3u mais non commandé |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 1.4u (13j restants) → prédit 2u mais non commandé |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | Stock prédit: 0.5u (4j restants) → prédit 1u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | Stock prédit: 2.2u (14j restants) → prédit 3u mais non commandé |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | Stock prédit: 1.5u (14j restants) → prédit 2u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 0.5u (5j restants) → prédit 1u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 0.5u (5j restants) → prédit 2u mais non commandé |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | Stock prédit: 0.6u (19j restants) → prédit 2u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: 0.8u (8j restants) → prédit 2u mais non commandé |
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: 0.6u (16j restants) → prédit 1u mais non commandé |
-| [fsv08] Banana chips bio vrac 1,6kg | 2 | Stock prédit: 0.4u (2j restants) → prédit 2u mais non commandé |
-| [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | Stock prédit: 2.9u (18j restants) → prédit 5u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: 0.9u (23j restants) → prédit 2u mais non commandé |
-| [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
-| [RIT07] RITCHIE Orange - canette 330ml | 2 | Stock prédit: -0.8u (-18j restants) → prédit 2u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.6u (-16j restants) → prédit 1u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.5u (5j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | Stock prédit: 0.6u (20j restants) → prédit 2u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | Stock prédit: 0.9u (9j restants) → prédit 2u mais non commandé |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
+| [fsv08] Banana chips bio vrac 1,6kg | 2 | Stock prédit: 0.5u (3j restants) → prédit 2u mais non commandé |
+| [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | Stock prédit: 3.1u (19j restants) → prédit 5u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 2 | Stock prédit: 0.9u (24j restants) → prédit 2u mais non commandé |
+| [RIT09] RITCHIE Cola - canette 330ml | 2 | Stock prédit: -0.8u (-17j restants) → prédit 2u mais non commandé |
+| [RIT10] RITCHIE Cola ZERO - canette 330ml | 2 | Stock prédit: -0.8u (-17j restants) → prédit 2u mais non commandé |
+| [RIT07] RITCHIE Orange - canette 330ml | 2 | Stock prédit: -0.8u (-17j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: -0.6u (-15j restants) → prédit 1u mais non commandé |
 | [OCC05] OCCHIOLINO premium arancello 500ml | 1 | Stock prédit: -0.5u (-17j restants) → prédit 1u mais non commandé |
-| [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [fsv03] Noisette nature bio vrac 2,8kg  | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.5u (28j restants) → prédit 1u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-30j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.0u (-29j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -507,9 +559,9 @@ Face à l'absence de pattern établi et la proximité temporelle incertaine de l
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock suffisant: 0.7u (37j restants > seuil 30j) |
+| [RIT08] RITCHIE Citron - canette 330ml | 1 | Stock suffisant: 0.7u (38j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:24.834Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:42.215Z*

@@ -5,16 +5,14 @@
 - **Client** : BIOK GASTUCHE (ID: 60212)
 - **Commande réelle** : S39575
 - **Date commande** : 2025-10-09 06:38:48
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 20
-- **Tokens**: 40,545 input + 11,440 output = 51,985 total
-- **Coût**: $0.2932 (~29.32¢)
-- **Coût par produit LLM**: $0.0147
+- **Appels**: 22
+- **Tokens**: 32,285 input + 6,646 output = 38,931 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:01:19.444Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:17.342Z*

@@ -5,16 +5,14 @@
 - **Client** : LIDL BELGIE GMBH (ID: 33628)
 - **Commande réelle** : S39662
 - **Date commande** : 2025-10-13 04:38:31
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,732 input + 1,840 output = 8,572 total
-- **Coût**: $0.0478 (~4.78¢)
-- **Coût par produit LLM**: $0.0159
+- **Tokens**: 5,055 input + 1,109 output = 6,164 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:31.798Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:07.532Z*

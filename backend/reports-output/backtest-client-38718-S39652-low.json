@@ -3,8 +3,8 @@
   "clientName": "CENSE DU MAYEUR",
   "orderName": "S39652",
   "orderDate": "2025-10-09 11:32:03",
-  "cutoffDate": "2025-10-09 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 30,
-    "promptTokens": 60784,
-    "completionTokens": 16994,
-    "totalTokens": 77778,
-    "costUSD": 0.43726200000000004
+    "calls": 36,
+    "promptTokens": 52596,
+    "completionTokens": 11275,
+    "totalTokens": 63871
   }
 }

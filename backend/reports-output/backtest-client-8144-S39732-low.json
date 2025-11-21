@@ -3,8 +3,8 @@
   "clientName": "DELISALADES, Jean-Luc Durré",
   "orderName": "S39732",
   "orderDate": "2025-10-15 07:52:35",
-  "cutoffDate": "2025-10-15 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 2,
-    "promptTokens": 4133,
-    "completionTokens": 1157,
-    "totalTokens": 5290,
-    "costUSD": 0.029754
+    "promptTokens": 3003,
+    "completionTokens": 742,
+    "totalTokens": 3745
   }
 }

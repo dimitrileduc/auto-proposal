@@ -5,16 +5,14 @@
 - **Client** : Wandercoop (ID: 60579)
 - **Commande réelle** : S39420
 - **Date commande** : 2025-10-02 06:12:05
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 15
-- **Tokens**: 30,615 input + 8,572 output = 39,187 total
-- **Coût**: $0.2204 (~22.04¢)
-- **Coût par produit LLM**: $0.0147
+- **Tokens**: 22,245 input + 4,735 output = 26,980 total
 
 
 ---
@@ -168,8 +166,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.7u (14j restants) → prédit 1u mais non commandé |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.7u (14j restants) → prédit 1u mais non commandé |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | Stock prédit: 0.7u (15j restants) → prédit 1u mais non commandé |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | Stock prédit: 0.7u (15j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -193,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:06.983Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:14.999Z*

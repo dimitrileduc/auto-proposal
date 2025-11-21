@@ -5,16 +5,14 @@
 - **Client** : DANTESSE GmbH (ID: 3831)
 - **Commande réelle** : S39512
 - **Date commande** : 2025-10-02 08:37:42
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 7
-- **Tokens**: 14,925 input + 4,535 output = 19,460 total
-- **Coût**: $0.1128 (~11.28¢)
-- **Coût par produit LLM**: $0.0161
+- **Appels**: 8
+- **Tokens**: 12,641 input + 2,864 output = 15,505 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:47.944Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:24.099Z*

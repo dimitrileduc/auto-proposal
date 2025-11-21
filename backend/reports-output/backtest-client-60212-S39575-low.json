@@ -3,8 +3,8 @@
   "clientName": "BIOK GASTUCHE",
   "orderName": "S39575",
   "orderDate": "2025-10-09 06:38:48",
-  "cutoffDate": "2025-10-09 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 20,
-    "promptTokens": 40545,
-    "completionTokens": 11440,
-    "totalTokens": 51985,
-    "costUSD": 0.293235
+    "calls": 22,
+    "promptTokens": 32285,
+    "completionTokens": 6646,
+    "totalTokens": 38931
   }
 }

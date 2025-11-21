@@ -79,7 +79,10 @@ export function compareSystemPredictionVsRealOrder(
 
       // Récupérer les infos LLM si disponibles
       const analyzedProduct = analyzedProducts.get(productId);
-      const quantitySource = analyzedProduct?.quantity_source;
+      const quantitySource = analyzedProduct?.quantity_source || 'median';
+      const llm_input_data = analyzedProduct?.llm_input_data;
+      const llmRequired = analyzedProduct?.llm_required ?? false; // Propagé depuis stock-replenishment
+      const llmSuccess = analyzedProduct?.llm_success ?? false; // Propagé depuis stock-replenishment
       const medianQty = quantitySource === 'llm' ? analyzedProduct?.calculation_metadata.median_value : undefined;
       const llmPrediction = analyzedProduct?.llm_prediction;
 
@@ -92,8 +95,11 @@ export function compareSystemPredictionVsRealOrder(
         errorPercent,
         matchType: classifyQuantityMatch(predictedQty, realQty),
         confidence: systemProduct.calculation_metadata.confidence,
+        llm_required: llmRequired,
+        llm_success: llmSuccess,
         quantitySource,
         medianQty,
+        llm_input_data,
         llmPrediction,
       });
     } else {

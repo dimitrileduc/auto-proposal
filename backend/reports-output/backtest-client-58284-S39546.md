@@ -5,16 +5,14 @@
 - **Client** : SPRL GOOD & FOOD (ID: 58284)
 - **Commande réelle** : S39546
 - **Date commande** : 2025-10-03 12:32:05
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 7
-- **Tokens**: 13,932 input + 3,846 output = 17,778 total
-- **Coût**: $0.0995 (~9.95¢)
-- **Coût par produit LLM**: $0.0142
+- **Tokens**: 10,012 input + 1,913 output = 11,925 total
 
 
 ---
@@ -147,11 +145,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 111 | 110 | 1.0 | 0.9% | ✅ partial | 🤖 LLM |
-| [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML | 135 | 124 | 11.0 | 8.9% | ✅ partial | 🤖 LLM |
-| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 126 | 125 | 1.0 | 0.8% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML | 111 | 110 | 1.0 | 0.9% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML | 135 | 124 | 11.0 | 8.9% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML | 126 | 125 | 1.0 | 0.8% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (3 produits)
@@ -169,27 +167,13 @@
 - 📉 **Erreur Médiane**: 106u (96.4%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Donnée unique insuffisante - impossible de déterminer un pattern fiable
+- **Pattern temporel**: Données insuffisantes - Une seule commande observée
 - **Saisonnalité**: none
-- **Tendance**: Indéterminé - historique trop limité (1 seule commande)
+- **Tendance**: Impossible à déterminer - historique trop limité
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**CONTEXTE CRITIQUE** : Historique extrêmement limité avec une seule commande le 2025-08-14 (111 unités), soit ~7 semaines avant la date de prédiction (2025-10-03).
-
-**ANALYSE RYTHMIQUE** : Impossible de détecter un pattern de fréquence avec un seul point de donnée. Aucune indication sur le cycle de réapprovisionnement (hebdomadaire, mensuel, irrégulier).
-
-**SAISONNALITÉ** : Absence totale de données N-1 pour identifier des effets saisonniers. Le produit (Dressing Avocat Ginger Mango) pourrait avoir une saisonnalité estivale, mais aucune preuve historique.
-
-**DÉTECTION OUTLIERS** : La quantité de 111 unités ne peut être qualifiée d'outlier faute de référentiel comparatif.
-
-**LOGIQUE DE DÉCISION** : 
-- En l'absence de pattern établi, la seule référence disponible est la commande précédente
-- Hypothèse de reconduction : le client maintient un niveau de commande stable
-- Intervalle de ~50 jours entre la dernière commande et la prédiction suggère un possible besoin de réapprovisionnement
-- Par défaut méthodologique : utiliser la dernière quantité observée comme baseline
-
-**RISQUE** : Confiance faible car impossibilité de valider la répétabilité. Cette prédiction repose sur l'hypothèse d'une demande stable sans validation historique.
+Avec une seule commande historique (111u le 2025-08-14), il n'existe aucun pattern identifiable. L'intervalle depuis la dernière commande (49 jours au 2025-10-02) ne permet pas de confirmer une fréquence régulière. En l'absence de données N-1, de tendance observable ou de cycle détectable, la seule référence fiable est cette commande unique. Application du principe de persistance : la quantité précédente devient la meilleure estimation par défaut. Confidence faible car impossibilité de valider par recoupement ou pattern.
 
 </details>
 
@@ -206,39 +190,13 @@
 - 📉 **Erreur Médiane**: 226u (182.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Données insuffisantes - Une seule commande observée le 14/08/2025 (jeudi)
+- **Pattern temporel**: Donnée unique insuffisante - impossible de déterminer un cycle fiable
 - **Saisonnalité**: none
-- **Tendance**: Impossible à déterminer - historique insuffisant (1 seul point de données)
+- **Tendance**: Indéterminable - historique trop limité (1 seule commande)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**CONTEXTE CRITIQUE : Historique extrêmement limité**
-
-Avec une seule observation (135u le 14/08/2025), l'analyse est fortement contrainte :
-
-**1. ANALYSE RYTHMIQUE :**
-- Impossible d'identifier un pattern de fréquence (hebdomadaire/mensuel)
-- Délai entre la commande observée (14/08) et la date de prédiction (03/10) : ~50 jours
-- Aucun indice sur le cycle de réapprovisionnement du client
-
-**2. FILTRAGE OUTLIERS :**
-- Pas de référentiel N-1 pour valider si 135u est typique ou exceptionnel
-- Absence de contexte saisonnier (N-1 vide)
-- Impossible de distinguer une demande de fond d'un pic
-
-**3. DÉCISION PAR DÉFAUT :**
-En l'absence totale de pattern :
-- **Baseline = 135u** (seule référence disponible)
-- Aucun ajustement de tendance possible
-- Hypothèse : la commande d'août reflète un niveau de demande "normal" pour ce client/produit
-
-**LIMITES DE CETTE PRÉDICTION :**
-- Confiance LOW justifiée par le manque de données
-- Si le client commande tous les 2 mois → une commande est probable
-- Si le rythme est plus fréquent → risque de sous-estimation
-- Recommandation : collecter urgemment plus d'historique pour améliorer la précision future
-
-La quantité de 135u représente la meilleure estimation par continuité, mais avec un risque d'erreur élevé.
+Contexte extrêmement limité avec UNE SEULE commande historique (135u le 14/08/2025). Sans pattern temporel identifiable, sans saisonnalité N-1, et sans données pour valider un cycle récurrent, la seule approche statistiquement défendable est de reproduire la dernière quantité observée. L'intervalle depuis la dernière commande (49 jours au 02/10) suggère soit un rythme mensuel/bimensuel, soit un produit à rotation lente. En l'absence totale d'éléments pour ajuster à la hausse ou à la baisse, la prédiction conserve la valeur de référence unique disponible: 135 unités. Confiance faible car impossible de valider la récurrence ou détecter une tendance avec un seul point de données.
 
 </details>
 
@@ -255,23 +213,63 @@ La quantité de 135u représente la meilleure estimation par continuité, mais a
 - 📉 **Erreur Médiane**: 37u (29.6%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Données insuffisantes - Une seule commande observée
+- **Pattern temporel**: Donnée insuffisante - Une seule commande observée (2025-08-14)
 - **Saisonnalité**: none
-- **Tendance**: Indéterminé - historique trop limité
+- **Tendance**: Impossible à déterminer - historique trop limité
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**CONTEXTE CRITIQUE**: Historique extrêmement limité avec une seule commande observée le 2025-08-14 (126u), soit ~50 jours avant la date de prédiction (2025-10-03).
+Avec une seule commande historique (126u le 2025-08-14, jeudi), aucun pattern rythmique, saisonnier ou tendanciel ne peut être établi. L'intervalle entre cette commande et la date de prédiction (2025-10-02) est de ~49 jours, suggérant potentiellement un cycle mensuel mais sans confirmation. En l'absence totale de N-1 et avec un seul point de données en N, la stratégie la plus rationnelle est de reproduire la dernière quantité observée (126u) comme baseline. Cette quantité représente la demande réelle connue du client pour ce produit. Confidence 'low' reflète l'incertitude inhérente à un historique minimal, mais 126u reste la prédiction la plus probable face à l'absence d'information contradictoire.
 
-**ANALYSE RYTHMIQUE**: Impossible de détecter un pattern fiable (hebdomadaire, mensuel) avec un seul point de données. Nous ne pouvons pas déterminer si le client commande toutes les semaines, tous les mois, ou de manière irrégulière.
+</details>
 
-**SAISONNALITÉ**: Aucune donnée N-1 disponible pour comparer et identifier des effets saisonniers récurrents sur ce produit spécifique.
 
-**DÉCISION PAR DÉFAUT**: En l'absence totale de pattern établi, la seule référence quantitative disponible est la commande de 126 unités. Il s'agit d'un produit de niche (dressing avocat miel moutarde 240ml) en B2B, suggérant possiblement une demande spécifique d'un client particulier.
 
-**HYPOTHÈSE RETENUE**: Si le client recommande, il est probable qu'il commande une quantité similaire à sa dernière commande, à moins d'informations contraires (changement de menu, nouveaux contrats). L'intervalle de ~50 jours pourrait suggérer une fréquence mensuelle/bimensuelle.
 
-**CONFIANCE FAIBLE** justifiée par le manque de récurrence observable et l'impossibilité de valider tout pattern prédictif.
+### 📊 Données d'Input LLM (3 produits)
+
+
+<details>
+<summary><strong>1. [PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-14 12:47:50: 111u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 111u (confidence: low)
+**📊 Quantité Réelle**: 110u
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF3358] DLL DRESSING AVOCAT ITALIAN 240ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-14 12:47:50: 135u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 135u (confidence: low)
+**📊 Quantité Réelle**: 124u
+
+</details>
+
+
+<details>
+<summary><strong>3. [PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-14 12:47:50: 126u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 126u (confidence: low)
+**📊 Quantité Réelle**: 125u
 
 </details>
 
@@ -300,10 +298,10 @@ La quantité de 135u représente la meilleure estimation par continuité, mais a
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML | 200 | Stock prédit: 208.5u (25j restants) → prédit 200u mais non commandé |
-| [PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML | 401 | Stock prédit: 15.8u (2j restants) → prédit 401u mais non commandé |
-| [PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML | 8 | Stock prédit: -305.1u (-47j restants) → prédit 8u mais non commandé |
-| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 141 | Stock prédit: -271.9u (-32j restants) → prédit 141u mais non commandé |
+| [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML | 200 | Stock prédit: 215.3u (25j restants) → prédit 200u mais non commandé |
+| [PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML | 401 | Stock prédit: 22.2u (2j restants) → prédit 401u mais non commandé |
+| [PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML | 8 | Stock prédit: -299.8u (-46j restants) → prédit 8u mais non commandé |
+| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 141 | Stock prédit: -265.0u (-31j restants) → prédit 141u mais non commandé |
 
 
 ---
@@ -327,4 +325,4 @@ La quantité de 135u représente la meilleure estimation par continuité, mais a
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:03.987Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:37.557Z*

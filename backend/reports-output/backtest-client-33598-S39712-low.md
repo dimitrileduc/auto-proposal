@@ -5,16 +5,14 @@
 - **Client** : COLRUYT FOOD RETAIL NV NEW (ID: 33598)
 - **Commande réelle** : S39712
 - **Date commande** : 2025-10-14 13:24:27
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 23
-- **Tokens**: 47,136 input + 12,646 output = 59,782 total
-- **Coût**: $0.3311 (~33.11¢)
-- **Coût par produit LLM**: $0.0144
+- **Appels**: 26
+- **Tokens**: 38,674 input + 8,145 output = 46,819 total
 
 
 ---
@@ -168,8 +166,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV209] LV Confit de Figues Bio 150g (bocal weck) | 100 | Stock prédit: -75.0u (-6j restants) → prédit 100u mais non commandé |
-| [LV339] LV Tripack apéro | 184 | Stock prédit: -138.0u (-6j restants) → prédit 184u mais non commandé |
+| [LV209] LV Confit de Figues Bio 150g (bocal weck) | 100 | Stock prédit: -62.5u (-5j restants) → prédit 100u mais non commandé |
+| [LV339] LV Tripack apéro | 184 | Stock prédit: -115.0u (-5j restants) → prédit 184u mais non commandé |
 
 
 ---
@@ -193,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:58:02.788Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:12.857Z*

@@ -3,8 +3,8 @@
   "clientName": "SDP Rungis",
   "orderName": "S39727",
   "orderDate": "2025-10-14 13:50:03",
-  "cutoffDate": "2025-10-14 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 17,
-    "promptTokens": 36102,
-    "completionTokens": 9866,
-    "totalTokens": 45968,
-    "costUSD": 0.25629599999999997
+    "calls": 25,
+    "promptTokens": 38567,
+    "completionTokens": 8326,
+    "totalTokens": 46893
   }
 }

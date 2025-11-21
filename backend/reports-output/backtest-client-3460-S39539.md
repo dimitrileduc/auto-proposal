@@ -5,16 +5,14 @@
 - **Client** : UPFRESH - HUPPA (ID: 3460)
 - **Commande réelle** : S39539
 - **Date commande** : 2025-10-03 09:41:57
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,592 input + 1,899 output = 8,491 total
-- **Coût**: $0.0483 (~4.83¢)
-- **Coût par produit LLM**: $0.0161
+- **Tokens**: 4,912 input + 996 output = 5,908 total
 
 
 ---
@@ -147,9 +145,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 80 | 160 | 80.0 | 50.0% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 80 | 160 | 80.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -160,38 +158,55 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 80u (confidence: medium)
-- 📊 **Baseline N-1**: 100u
+- 📊 **Baseline N-1**: 120u
 - 📊 **Médiane**: 160u
 - ✅ **Réel commandé**: 160u
 - 📉 **Erreur LLM**: 80u (50.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec intervalles variables (6-22 jours), sans jour fixe. Concentration fin août/début septembre 2025 avec 4 commandes en 10 jours suggérant un cycle accéléré récent
+- **Pattern temporel**: Irrégulier multi-commandes - Fréquence variable 1-25 jours, souvent plusieurs commandes/mois
 - **Saisonnalité**: weak
-- **Tendance**: Stable avec oscillation 80-160u. Alternance typique observée : après 160u tend à suivre 80u, mais pas systématique
+- **Tendance**: Stable - Volume médian maintenu autour 80-160u, pattern irrégulier persistant
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-- Historique N-1 : commandes espacées irrégulièrement (11-43 jours), quantités oscillant 80-160u
-- 3 derniers mois : rythme intensifié avec 5 commandes entre 07/08 et 17/09 (41 jours)
-- Dernière commande : 17/09 (mer.) à 160u
-- Délai depuis dernière commande : 16 jours au 03/10
+Pattern d'approvisionnement irrégulier confirmé sur N et N-1. Dernière commande 2025-09-17 (mer.) avec 160u il y a 15 jours. Historique montre alternance fréquente 80u/160u sans cycle fixe. Sept-Oct N-1: 80u commandé le 24/09. Rythme récent: multi-commandes mensuelles (août: 3 commandes, septembre: 2 commandes). Écart 15j depuis dernière commande suggère besoin imminent. Volume 80u représente la quantité de réassort standard la plus fréquente (apparaît dans 60% des commandes récentes). Pas d'événement saisonnier fort début octobre. Baseline théorique 120u ajustée à 80u car pattern montre que après commande 160u, le réassort suivant est typiquement 80u (observé août: 160u→80u, puis 160u).
 
-**PATTERN QUANTITÉS:**
-L'historique révèle une alternance fréquente 160u → 80u :
-- 12/08/24: 160u → 30/08: 160u (exception)
-- 30/08/24: 160u → 24/09: 80u ✓
-- 07/08/25: 160u → 08/08: 80u ✓
-- 14/08/25: 160u → 05/09: 80u ✓
-- 17/09/25: 160u → ?
+</details>
 
-**SAISONNALITÉ:**
-Septembre N-1 montre 80u (24/09), mais contexte différent (une seule commande). Impact saisonnier faible, pas de pattern fort à cette date.
 
-**DÉCISION:**
-Baseline théorique 100u (moyenne pondérée 80-160). Cependant, le pattern d'alternance après 160u combiné à un délai de 16 jours (conforme au rythme récent) suggère fortement un retour à 80u. Aucun signal de rupture ou événement exceptionnel détecté.
+
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-17 14:17:46: 160u
+- 2025-09-05 12:22:01: 80u
+- 2025-08-14 08:19:07: 160u
+- 2025-08-08 11:47:43: 80u
+- 2025-08-07 12:26:12: 160u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-24 07:06:54: 80u
+- 2024-08-30 09:47:24: 160u
+- 2024-08-12 09:07:12: 160u
+- 2024-07-19 09:36:52: 80u
+- 2024-06-28 10:23:12: 160u
+- 2024-06-17 07:31:21: 80u
+- 2024-05-31 10:28:10: 80u
+- 2024-05-27 06:49:47: 120u
+- 2024-04-30 06:38:23: 160u
+- 2024-04-05 09:23:24: 80u
+- 2024-03-22 10:12:21: 80u
+- 2024-03-15 10:48:34: 80u
+
+**✅ Quantité LLM**: 80u (confidence: medium)
+**📊 Quantité Réelle**: 160u
 
 </details>
 
@@ -220,7 +235,7 @@ Baseline théorique 100u (moyenne pondérée 80-160). Cependant, le pattern d'al
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: -3.2u (-11j restants) → prédit 6u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: -3.0u (-11j restants) → prédit 6u mais non commandé |
 
 
 ---
@@ -244,4 +259,4 @@ Baseline théorique 100u (moyenne pondérée 80-160). Cependant, le pattern d'al
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:03:55.054Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:25.807Z*

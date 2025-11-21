@@ -3,8 +3,8 @@
   "clientName": "DANTESSE GmbH",
   "orderName": "S39512",
   "orderDate": "2025-10-02 08:37:42",
-  "cutoffDate": "2025-10-02 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 7,
-    "promptTokens": 14925,
-    "completionTokens": 4535,
-    "totalTokens": 19460,
-    "costUSD": 0.1128
+    "calls": 8,
+    "promptTokens": 12641,
+    "completionTokens": 2864,
+    "totalTokens": 15505
   }
 }

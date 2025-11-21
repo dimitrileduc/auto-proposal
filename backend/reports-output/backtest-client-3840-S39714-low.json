@@ -3,8 +3,8 @@
   "clientName": "KORO HANDELS GmbH",
   "orderName": "S39714",
   "orderDate": "2025-10-14 07:59:02",
-  "cutoffDate": "2025-10-14 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 7,
-    "promptTokens": 14643,
-    "completionTokens": 4174,
-    "totalTokens": 18817,
-    "costUSD": 0.106539
+    "promptTokens": 10730,
+    "completionTokens": 2408,
+    "totalTokens": 13138
   }
 }

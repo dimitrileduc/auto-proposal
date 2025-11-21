@@ -3,8 +3,8 @@
   "clientName": "ILIS    SA, FRANCESCO LOZANO",
   "orderName": "S37570",
   "orderDate": "2025-06-20 08:53:32",
-  "cutoffDate": "2025-06-20 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-06-19 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 5,
-    "promptTokens": 10331,
-    "completionTokens": 2944,
-    "totalTokens": 13275,
-    "costUSD": 0.075153
+    "calls": 6,
+    "promptTokens": 9002,
+    "completionTokens": 2080,
+    "totalTokens": 11082
   }
 }

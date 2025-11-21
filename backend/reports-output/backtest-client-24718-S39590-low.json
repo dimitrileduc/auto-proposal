@@ -3,8 +3,8 @@
   "clientName": "Brasserie Artisanale De Namur (Houppe)",
   "orderName": "S39590",
   "orderDate": "2025-10-07 06:10:13",
-  "cutoffDate": "2025-10-07 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-06 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,

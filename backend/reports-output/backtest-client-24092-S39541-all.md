@@ -5,16 +5,14 @@
 - **Client** : CONSERVERIE ET MOUTARDERIE BELGE ECHANTILLON (ID: 24092)
 - **Commande réelle** : S39541
 - **Date commande** : 2025-10-03 10:10:16
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 3
-- **Tokens**: 6,439 input + 2,014 output = 8,453 total
-- **Coût**: $0.0495 (~4.95¢)
-- **Coût par produit LLM**: $0.0165
+- **Appels**: 13
+- **Tokens**: 19,998 input + 4,639 output = 24,637 total
 
 
 ---
@@ -147,9 +145,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -167,24 +165,42 @@
 - 📉 **Erreur Médiane**: 1u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - commandes espacées de ~30-40 jours sans pattern hebdomadaire fixe
+- **Pattern temporel**: Irrégulier - Commandes sporadiques (intervalles de 10j à 39j en 2025, historique N-1 très faible avec commandes nulles)
 - **Saisonnalité**: none
-- **Tendance**: Hausse légère +20% (de ~1.5u à ~2u en moyenne)
+- **Tendance**: Hausse significative - Passage de 0u (N-1 oct-déc 2023) à 2-3u (été 2025), activation récente du produit
 - **Outliers détectés**: 0u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique** : Les commandes récentes montrent un pattern irrégulier (14 juil, 12 août ×2, 22 août). Pas de jour fixe identifiable. Intervalles variables : ~30 jours entre juil-août, puis 10 jours, puis densification. Le 03 octobre serait ~42 jours après la dernière commande (22 août) - légèrement au-dessus du rythme récent mais compatible avec le pattern irrégulier observé.
+ANALYSE: 1) RYTHME: Commandes irrégulières sur 3 derniers mois (14/07, 12/08×2, 22/08) avec intervalles variables. Pas de jour fixe détecté. Dernier achat il y a 41j (22/08→02/10). 2) HISTORIQUE N-1: Produit quasi-inactif en oct 2023 (0u), activation progressive en 2024 (2u mars, 2u sept). 3) TENDANCE RÉCENTE: Demande stabilisée à 2u par commande (hors pic 3u isolé du 22/08), fréquence ~1 commande/mois. 4) SAISONNALITÉ: Aucun pattern saisonnier exploitable. 5) DÉCISION: Baseline à 2u (médiane récente hors outlier 3u). Intervalle de 41j depuis dernière commande suggère besoin de réapprovisionnement. Quantité 2u cohérente avec rythme d'activation modéré du produit chez ce client B2B.
 
-**Filtrage outliers** : Les valeurs à 0u en N-1 (fin 2023) semblent indiquer soit des commandes annulées soit une période d'inactivité - je les exclus. Les commandes réelles oscillent entre 1-3u.
+</details>
 
-**Analyse N-1 (oct 2024)** : Aucune commande en octobre 2023, mais 2u en septembre 2024 - pas de saisonnalité forte détectable pour début octobre.
 
-**Tendance récente (3 mois)** : 
-- Juillet : 2u
-- Août : 3u + (1u+2u) = 6u total mais en 3 transactions
-- Moyenne par transaction : ~2u (7 jours entre le 12 et 22 août avec une commande de 3u suggère un léger pic)
 
-**Décision** : La baseline à 2u correspond à la médiane des commandes récentes hors pic. Le produit étant une mayonnaise en seau de 1L (conditionnement professionnel B2B), les quantités de 2u reflètent probablement un besoin de réapprovisionnement standard. Le vendredi 03/10 est cohérent avec le pattern irrégulier observé. Prédiction : **2 unités**.
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-22 11:46:40: 3u
+- 2025-08-12 11:22:40: 1u
+- 2025-08-12 10:31:34: 2u
+- 2025-07-14 07:51:45: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-05 06:46:55: 2u
+- 2024-03-20 07:37:07: 2u
+- 2024-01-09 08:56:08: 0u
+- 2023-12-12 14:54:31: 0u
+- 2023-12-07 10:58:24: 0u
+- 2023-11-07 08:23:13: 0u
+- 2023-10-17 13:50:06: 0u
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 1u
 
 </details>
 
@@ -213,23 +229,23 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0093] FILOU MOUTARDE 300GR | 1 | Stock prédit: 0.7u (17j restants) → prédit 1u mais non commandé |
-| [PF1798] LD MAYONNAI POIVRE 250ML WECK | 0 | Stock prédit: -0.0u (-27j restants) → prédit 0u mais non commandé |
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
-| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
+| [PF0093] FILOU MOUTARDE 300GR | 1 | Stock prédit: 0.7u (18j restants) → prédit 1u mais non commandé |
+| [PF1798] LD MAYONNAI POIVRE 250ML WECK | 1 | Stock prédit: -0.0u (-25j restants) → prédit 1u mais non commandé |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
+| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
 | [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 2 | Stock prédit: -0.4u (-6j restants) → prédit 2u mais non commandé |
 | [PF1687] JF CURRY KETCHUP SQUEEZE 300ML | 2 | Stock prédit: 0.7u (20j restants) → prédit 2u mais non commandé |
-| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF0094] FILOU MOUTARDE 700 GR | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
+| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF0094] FILOU MOUTARDE 700 GR | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [PF1559] LV TARTINADE BIO PAPRIKA 200ML | 6 | Stock prédit: -1.2u (-50j restants) → prédit 6u mais non commandé |
-| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
-| [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.8u (-22j restants) → prédit 1u mais non commandé |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 2 | Stock prédit: 0.0u (2j restants) → prédit 2u mais non commandé |
-| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 1 | Stock prédit: 0.0u (1j restants) → prédit 1u mais non commandé |
+| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
+| [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF1533] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.7u (-21j restants) → prédit 1u mais non commandé |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 2 | Stock prédit: 0.0u (3j restants) → prédit 2u mais non commandé |
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -253,4 +269,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:52.610Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:09.428Z*

@@ -5,16 +5,14 @@
 - **Client** : UPFRESH - HUPPA (ID: 3460)
 - **Commande réelle** : S39539
 - **Date commande** : 2025-10-03 09:41:57
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,592 input + 1,899 output = 8,491 total
-- **Coût**: $0.0483 (~4.83¢)
-- **Coût par produit LLM**: $0.0161
+- **Tokens**: 4,912 input + 996 output = 5,908 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:03:55.056Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:25.809Z*

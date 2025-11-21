@@ -3,8 +3,8 @@
   "clientName": "DOMAINE DE RONCHINNE",
   "orderName": "S39452",
   "orderDate": "2025-10-01 07:17:25",
-  "cutoffDate": "2025-10-01 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-09-30 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 21,
-    "promptTokens": 42699,
-    "completionTokens": 12111,
-    "totalTokens": 54810,
-    "costUSD": 0.3097620000000001
+    "calls": 23,
+    "promptTokens": 33846,
+    "completionTokens": 7312,
+    "totalTokens": 41158
   }
 }

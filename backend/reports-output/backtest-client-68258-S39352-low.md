@@ -5,16 +5,14 @@
 - **Client** : TERROIRIST, Thomas (ID: 68258)
 - **Commande réelle** : S39352
 - **Date commande** : 2025-09-24 12:49:59
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-23 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 14
-- **Tokens**: 28,633 input + 8,024 output = 36,657 total
-- **Coût**: $0.2063 (~20.63¢)
-- **Coût par produit LLM**: $0.0147
+- **Appels**: 16
+- **Tokens**: 23,893 input + 5,101 output = 28,994 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:38.025Z*
+*Rapport généré automatiquement le 2025-11-20T13:35:10.918Z*

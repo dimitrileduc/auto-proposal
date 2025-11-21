@@ -5,16 +5,14 @@
 - **Client** : ÖKORING HANDELS GMBH (ID: 3812)
 - **Commande réelle** : S39594
 - **Date commande** : 2025-10-08 06:30:49
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 8
-- **Tokens**: 16,503 input + 4,633 output = 21,136 total
-- **Coût**: $0.1190 (~11.90¢)
-- **Coût par produit LLM**: $0.0149
+- **Tokens**: 12,023 input + 2,765 output = 14,788 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:36.598Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:39.092Z*

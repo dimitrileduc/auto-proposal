@@ -5,16 +5,14 @@
 - **Client** : REWE MARKT GMBH - WEST (ID: 3865)
 - **Commande réelle** : S39292
 - **Date commande** : 2025-09-23 06:18:30
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 23
-- **Tokens**: 47,401 input + 13,799 output = 61,200 total
-- **Coût**: $0.3492 (~34.92¢)
-- **Coût par produit LLM**: $0.0152
+- **Tokens**: 34,544 input + 7,524 output = 42,068 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:05.455Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:12.323Z*

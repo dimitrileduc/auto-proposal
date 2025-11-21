@@ -3,8 +3,8 @@
   "clientName": "CONSERVERIE ET MOUTARDERIE BELGE ECHANTILLON",
   "orderName": "S39541",
   "orderDate": "2025-10-03 10:10:16",
-  "cutoffDate": "2025-10-03 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 1,
     "fp": 10,
@@ -22,10 +22,9 @@
     "partialMatch": 1
   },
   "llmUsage": {
-    "calls": 3,
-    "promptTokens": 6439,
-    "completionTokens": 2014,
-    "totalTokens": 8453,
-    "costUSD": 0.049527
+    "calls": 13,
+    "promptTokens": 19998,
+    "completionTokens": 4639,
+    "totalTokens": 24637
   }
 }

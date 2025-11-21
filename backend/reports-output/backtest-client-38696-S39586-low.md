@@ -5,16 +5,14 @@
 - **Client** : AD EYNATTEN DELHAIZE EYNADIS (ID: 38696)
 - **Commande réelle** : S39586
 - **Date commande** : 2025-10-07 06:59:59
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 35
-- **Tokens**: 73,843 input + 21,017 output = 94,860 total
-- **Coût**: $0.5368 (~53.68¢)
-- **Coût par produit LLM**: $0.0153
+- **Appels**: 37
+- **Tokens**: 57,193 input + 12,184 output = 69,377 total
 
 
 ---
@@ -168,7 +166,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: -2.7u (-82j restants) → prédit 1u mais non commandé |
+| [MF0024] MF KETCHUP 250g | 1 | Stock prédit: -2.7u (-81j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -192,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:03:59.206Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:47.388Z*

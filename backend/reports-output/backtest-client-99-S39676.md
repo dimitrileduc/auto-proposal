@@ -5,16 +5,14 @@
 - **Client** : La Fermette Godelaine de Saint-Georges (ID: 99)
 - **Commande réelle** : S39676
 - **Date commande** : 2025-10-13 07:37:52
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 24
-- **Tokens**: 48,689 input + 14,068 output = 62,757 total
-- **Coût**: $0.3571 (~35.71¢)
-- **Coût par produit LLM**: $0.0149
+- **Appels**: 37
+- **Tokens**: 54,149 input + 11,442 output = 65,591 total
 
 
 ---
@@ -71,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.25 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 25.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 25.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 25.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 6 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.13 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 12.5% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 12.5% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 12.5% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 7 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,26 +145,49 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
-| [MF0053] MF Maïs 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [MF0053] MF Maïs 500g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ❌ Non | ❌ Non | 📊 Médiane |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
-### 🤖 Détails des Prédictions LLM (4 produits)
+### 🤖 Détails des Prédictions LLM (7 produits)
 
 
 <details>
-<summary><strong>1. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 1u (confidence: low)
+- 🤖 **LLM prédit**: 1u (confidence: medium)
+- 📊 **Baseline N-1**: 1u
+- 📊 **Médiane**: 1u
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: 0u (0.0%)
+
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Irrégulier - commandes espacées (2-3 mois) sans pattern hebdomadaire fixe
+- **Saisonnalité**: none
+- **Tendance**: Stable - volumes constants à 1u (hors outlier à 2u en 2024-08)
+- **Outliers détectés**: 2u
+
+**🧠 Raisonnement LLM:**
+Produit de niche (Tarti Tomate Ail des ours) avec demande très faible et irrégulière. L'historique montre 6 commandes sur 2 ans, avec 5/6 à 1u et 1 pic à 2u (probable commande groupée/test en août 2024). Période récente (3 derniers mois) confirme le pattern à 1u avec intervalles variables (6j puis 59j puis 3j avant prédiction). Aucun signal saisonnier détectable. La dernière commande datant du 09/10 (il y a 3 jours) et le produit ayant un cycle d'achat long, la probabilité d'une nouvelle commande immédiate existe mais reste sur le volume habituel de 1u. Pas de rattrapage à prévoir vu la commande très récente. Prédiction: 1u (volume modal et médian de l'historique).
+
+</details>
+
+
+<details>
+<summary><strong>2. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: medium)
 - 📊 **Baseline N-1**: 1.5u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
@@ -174,98 +195,65 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - seulement 2 commandes sur 3 mois (intervalle 38 jours puis 4 jours avant prédiction)
+- **Pattern temporel**: Irrégulier - 2 commandes en 3 mois (intervalle de 38 jours puis prochain à J+3)
 - **Saisonnalité**: none
-- **Tendance**: Baisse -50% (de 2u à 1u entre les deux commandes)
+- **Tendance**: Stable - volumes faibles constants (1-2u)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse du contexte:** Historique extrêmement limité avec seulement 2 commandes sur 3 mois. Produit premium/bio niche avec pattern d'achat très irrégulier.
-
-**Analyse rythmique:** Première commande le 01/09 (lun.) = 2u, puis 38 jours sans commande, suivie d'une commande le 09/10 (jeu.) = 1u. Pas de pattern hebdomadaire ou mensuel identifiable. La prédiction tombe 4 jours après la dernière commande (13/10).
-
-**Tendance observée:** Baisse de 50% entre les deux seules commandes (2u → 1u), suggérant soit une réduction de la demande, soit une normalisation après un test initial plus volumineux.
-
-**Décision:** Vu la proximité temporelle avec la dernière commande (seulement 4 jours), il est statistiquement peu probable qu'une nouvelle commande intervienne si tôt. Cependant, si commande il y a, la tendance récente indique 1u comme volume standard actuel. En l'absence totale de saisonnalité N-1 et avec un historique minimal, je privilégie la donnée la plus récente (1u) comme référence.
-
-**Confidence faible** en raison du manque critique de données historiques pour établir un pattern fiable.
+Avec seulement 2 commandes historiques (2u le 01/09, puis 1u le 09/10), le pattern est irrégulier mais révèle une demande très sporadique. L'intervalle de 38 jours entre les 2 commandes suggère un rythme mensuel approximatif. La prédiction pour le 12/10 (soit 3 jours après la dernière commande du 09/10) intervient dans une fenêtre trop rapprochée pour un cycle mensuel. Absence totale de saisonnalité N-1. La tendance montre des volumes unitaires faibles (1-2u). Le baseline de 1.5u reflète la moyenne, mais compte tenu du rythme irrégulier et de la commande très récente du 09/10, la probabilité d'une nouvelle commande immédiate est modérée. Par précision et pour minimiser le MAPE sur ce type de produit à rotation lente, je recommande 1u (volume minimal observé et plus probable qu'un 0 ou un 2 dans ce contexte).
 
 </details>
 
 
 <details>
-<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 1u (confidence: low)
-- 📊 **Baseline N-1**: 1.33u
+- 🤖 **LLM prédit**: 1u (confidence: medium)
+- 📊 **Baseline N-1**: 1.3u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (45j puis 39j puis 4j). Pas de pattern hebdomadaire ou mensuel clair.
+- **Pattern temporel**: Irrégulier - commandes espacées (45j puis 38j puis 3j)
 - **Saisonnalité**: none
-- **Tendance**: Stable - Commandes faibles et sporadiques (1-2u) sans tendance marquée
+- **Tendance**: Stable - quantités oscillent entre 1-2u
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse du contexte :**
-- Historique très limité : seulement 3 commandes sur 3 mois (18 juil, 1 sept, 9 oct)
-- Pas de données N-1 pour référence saisonnière
-- Intervalles très irréguliers : 45 jours, puis 39 jours, puis seulement 4 jours
-
-**Pattern détecté :**
-- Aucun rythme hebdomadaire ou mensuel identifiable
-- Produit premium/bio à faible rotation (total 4u sur 3 mois)
-- La dernière commande (9 oct, jeu.) remonte à 4 jours seulement → très récente
-
-**Décision :**
-Étant donné que :
-1. La dernière commande est du 9 octobre (il y a 4 jours seulement)
-2. Les quantités sont systématiquement faibles (1-2u)
-3. Les intervalles historiques sont longs (39-45j entre commandes normales)
-4. Le court délai depuis la dernière commande suggère qu'il n'y a PAS de besoin immédiat
-
-→ **Prédiction : 1 unité** (quantité minimale observée, correspondant au pattern de demande sporadique et faible de ce produit premium)
-
-La confiance est faible en raison du manque de données historiques et de l'absence de pattern clair.
+Historique très limité (3 commandes sur 3 mois) avec quantités faibles (1-2u). Pas de pattern hebdomadaire identifiable. La dernière commande date du 09/10 (jeudi, il y a 3 jours seulement), ce qui suggère un besoin ponctuel récent déjà satisfait. Le rythme historique montre des espacements longs (45j, 38j) avant cette commande rapprochée. Sans saisonnalité N-1 et vu la proximité temporelle de la dernière livraison, la probabilité d'une nouvelle commande dès le 12/10 est faible mais non nulle pour un réassort minimal. Prédiction conservatrice à 1u (quantité modale du client) car trop tôt pour anticiper un rachat significatif.
 
 </details>
 
 
 <details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM: 2u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 2u (confidence: medium)
+- 🤖 **LLM prédit**: 1u (confidence: medium)
 - 📊 **Baseline N-1**: 1.5u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - intervalles variables (14j, 21j, 18j, 48j)
+- **Pattern temporel**: Irrégulier - commandes espacées (21j, 31j, 27j, 18j) sans jour fixe identifiable
 - **Saisonnalité**: none
-- **Tendance**: Stable autour de 1-2u
+- **Tendance**: Stable - oscillation entre 1u et 2u, moyenne ~1.5u
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: L'historique montre 4 commandes sur 3 mois avec des intervalles très variables (48j entre 18/07 et 05/08, puis 27j, 21j, et 21j). Pas de pattern hebdomadaire fixe détecté. La dernière commande date du 22/09 (lundi), soit 21 jours avant la date de prédiction (13/10, également lundi). Le rythme s'est légèrement accéléré ces derniers temps.
-
-**FILTRAGE OUTLIERS**: Aucun outlier détecté. Les quantités oscillent naturellement entre 1u et 2u, ce qui est cohérent pour un produit premium bio en phase de lancement/distribution progressive.
-
-**TENDANCE**: Les 2 dernières commandes montrent un pattern 2u-1u-2u, avec une moyenne de 1.5u sur les 4 observations. Pas de données N-1 pour confirmer la saisonnalité. Le produit semble en phase de demande stable faible.
-
-**DÉCISION**: Compte tenu du cycle de ~21 jours observé récemment et du fait que la dernière commande était de 2u il y a 21 jours, je privilégie une commande de 2u. Le pattern alternant suggère une légère préférence pour 2u (50% des commandes), et l'intervalle de temps écoulé correspond au rythme récent. En B2B agroalimentaire, ce volume reflète probablement un réassort standard pour ce produit premium à rotation modérée.
+Historique court (4 commandes sur 3 mois) montrant pattern irrégulier avec alternance 1-2 unités. Dernière commande le 2025-09-22 (lun.) avec 2u, soit 20 jours avant date prédiction. Aucun cycle hebdo/mensuel clair détectable. Sans saisonnalité N-1 ni tendance marquée, la baseline théorique est 1.5u. CEPENDANT, en contexte B2B agro avec produit premium bio à rotation modérée, les commandes de 1u (50% des cas) représentent probablement le réassort standard, les 2u étant des rattrapages ponctuels. La prédiction 1u est plus probable qu'un arrondi à 2u car: (1) pas de signal de rattrapage imminent, (2) intervalle actuel cohérent avec rythme observé, (3) principe de précision sur volume modal plutôt que moyenne arithmétique.
 
 </details>
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 2u vs Médiane: 2u (Réel: 1u)</summary>
+<summary><strong>5. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 2u vs Médiane: 2u (Réel: 1u)</summary>
 
 **Quantités:**
 - 🤖 **LLM prédit**: 2u (confidence: medium)
@@ -276,17 +264,181 @@ La confiance est faible en raison du manque de données historiques et de l'abse
 - 📉 **Erreur Médiane**: 1u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec dominance lundie - intervalles variables (21j puis 44j)
+- **Pattern temporel**: Irrégulier - commandes espacées (21j puis 52j), pas de jour fixe (Lun/Ven)
 - **Saisonnalité**: none
-- **Tendance**: Stable - quantité constante à 2u
+- **Tendance**: Stable - quantité constante à 2u sur 3 commandes
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: L'historique montre 3 commandes sur 3 mois avec intervalles irréguliers: 18/07 (ven.) → 01/09 (lun.) = 44 jours, puis 01/09 → 22/09 (lun.) = 21 jours. On observe une préférence pour le lundi (2/3 commandes) mais pas de cycle fixe hebdomadaire/mensuel. La dernière commande date du 22/09, soit 21 jours avant la date de prédiction (13/10 = lundi aussi).
+Historique court (3 commandes sur 3 mois) mais pattern clair: quantité strictement constante à 2u. Intervalles variables (21j/52j) suggèrent commandes au besoin plutôt que calendaire. Absence de saisonnalité N-1. Dernière commande récente (20j) donc probabilité moyenne de commande imminente. Pas d'indicateur de changement de volume. Prédiction conservatrice alignée sur 100% de l'historique observé.
 
-**FILTRAGE OUTLIERS**: Aucun pic détecté - toutes les commandes sont strictement identiques à 2u. Aucune donnée N-1 pour valider une saisonnalité. Pas d'événement exceptionnel identifiable.
+</details>
 
-**SYNTHÈSE**: Demande ultra-stable en volume (100% à 2u), fréquence variable mais possiblement en cours de régularisation (intervalle passé de 44j à 21j). Le 13/10 tombe un lundi (jour privilégié du client) et respecte un intervalle de 21j identique au dernier cycle. La constance parfaite des quantités (2u sur 100% des commandes) indique une demande de fond très prévisible. Pas de raison d'anticiper une variation à la hausse ou à la baisse. **Prédiction: 2u** (quantité historique invariable).
+
+<details>
+<summary><strong>6. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Baseline N-1**: 0u
+- 📊 **Médiane**: 1u
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: 0u (0.0%)
+
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Aucun historique - Nouveau produit ou client inactif
+- **Saisonnalité**: none
+- **Tendance**: Indéterminable - Aucune donnée disponible
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+ABSENCE TOTALE DE DONNÉES: Aucun historique N-1, aucune commande sur les 3 derniers mois. Impossible d'établir un pattern de commande, une fréquence ou une tendance. Dans ce contexte B2B agroalimentaire, trois hypothèses: (1) Nouveau produit non encore distribué, (2) Client inactif sur ce référencement, (3) Fin de vie produit. En l'absence totale de signal de demande historique, la prédiction statistiquement la plus défendable est 0. Cependant, le schéma impose recommended_quantity >= 1. Je fixe donc 1 unité (minimum technique) tout en signalant une confiance 'low'. Recommandation opérationnelle: Vérifier le statut actif du produit et l'intention réelle de commande avant approvisionnement.
+
+</details>
+
+
+<details>
+<summary><strong>7. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Baseline N-1**: 1u
+- 📊 **Médiane**: 1u
+- ✅ **Réel commandé**: 1u
+- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur Médiane**: 0u (0.0%)
+
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Aucun historique - Nouveau produit ou client inactif
+- **Saisonnalité**: none
+- **Tendance**: Indéterminé - Aucune donnée disponible
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+ABSENCE TOTALE DE DONNÉES : Aucun historique N-1, aucune commande sur les 3 derniers mois. Impossible d'identifier un pattern de commande, une saisonnalité ou une tendance. En l'absence de toute information, je recommande la quantité minimale viable (1 unité) pour tester la demande. Cette prédiction est purement conservatrice car prédire 0 serait inapproprié pour un système de commande actif. Recommandation critique : Collecter rapidement des données réelles ou consulter des informations commerciales externes (contrats, prévisions commerciales, données catégorie produit) pour améliorer drastiquement la précision future.
+
+</details>
+
+
+
+
+### 📊 Données d'Input LLM (7 produits)
+
+
+<details>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 06:45:30: 1u
+- 2025-08-11 09:21:12: 1u
+- 2025-08-05 10:30:50: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-08-05 06:33:27: 2u
+- 2024-06-20 06:56:28: 1u
+- 2023-11-07 08:16:41: 1u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>2. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 06:45:30: 1u
+- 2025-09-01 07:18:56: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 06:45:30: 1u
+- 2025-09-01 07:18:56: 2u
+- 2025-07-18 08:34:46: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-22 09:41:05: 2u
+- 2025-09-01 07:18:56: 1u
+- 2025-08-05 10:30:50: 1u
+- 2025-07-18 08:34:46: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>5. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-22 09:41:05: 2u
+- 2025-09-01 07:18:56: 2u
+- 2025-07-18 08:34:46: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>6. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- Aucune commande récente
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 1u (confidence: low)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>7. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- Aucune commande récente
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 1u (confidence: low)
+**📊 Quantité Réelle**: 1u
 
 </details>
 
@@ -317,25 +469,25 @@ La confiance est faible en raison du manque de données historiques et de l'abse
 |---------|-------------|--------|
 | [MF0033] MF Tarti Poivron chilli 250g | 1 | Stock prédit: 0.9u (28j restants) → prédit 1u mais non commandé |
 | [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | Stock prédit: 0.9u (21j restants) → prédit 1u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.9u (25j restants) → prédit 1u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.9u (26j restants) → prédit 1u mais non commandé |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 2 | Stock prédit: 1.8u (21j restants) → prédit 2u mais non commandé |
-| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.8u (11j restants) → prédit 1u mais non commandé |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.8u (13j restants) → prédit 1u mais non commandé |
-| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 1 | Stock prédit: 1.8u (21j restants) → prédit 1u mais non commandé |
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | Stock prédit: 0.9u (14j restants) → prédit 1u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 2 | Stock prédit: 1.8u (22j restants) → prédit 2u mais non commandé |
 | [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: 0.2u (4j restants) → prédit 1u mais non commandé |
-| [KOKO01] KOKO Kombucha original 330ml | 1 | Stock prédit: -0.7u (-8j restants) → prédit 1u mais non commandé |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.5u (18j restants) → prédit 1u mais non commandé |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: -0.0u (0j restants) → prédit 1u mais non commandé |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: -0.8u (-18j restants) → prédit 1u mais non commandé |
-| [LEA10] LEAMO ginger beer bio 330ml | 1 | Stock prédit: 0.3u (14j restants) → prédit 1u mais non commandé |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.8u (-28j restants) → prédit 1u mais non commandé |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.9u (-30j restants) → prédit 1u mais non commandé |
+| [KOKO01] KOKO Kombucha original 330ml | 2 | Stock prédit: -0.7u (-7j restants) → prédit 2u mais non commandé |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.5u (19j restants) → prédit 1u mais non commandé |
+| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: -0.8u (-17j restants) → prédit 1u mais non commandé |
+| [LEA10] LEAMO ginger beer bio 330ml | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: -0.8u (-27j restants) → prédit 1u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.9u (-29j restants) → prédit 1u mais non commandé |
 | [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -1.6u (-37j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
-| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: -0.8u (-28j restants) → prédit 1u mais non commandé |
+| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: -0.8u (-27j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
-| [CB005] CB Apple juice 1l | 1 | Stock prédit: 0.1u (9j restants) → prédit 1u mais non commandé |
-| [LEA04] LEAMO ginger beer bio 750ml | 1 | Stock prédit: -0.7u (-46j restants) → prédit 1u mais non commandé |
+| [CB005] CB Apple juice 1l | 1 | Stock prédit: 0.1u (10j restants) → prédit 1u mais non commandé |
+| [LEA04] LEAMO ginger beer bio 750ml | 1 | Stock prédit: -0.7u (-45j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -360,10 +512,10 @@ La confiance est faible en raison du manque de données historiques et de l'abse
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 0.9u (40j restants > seuil 30j) |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock suffisant: 0.9u (35j restants > seuil 30j) |
+| [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml  | 1 | Stock suffisant: 1.0u (40j restants > seuil 30j) |
+| [MF0027] MF Tarti Aubergine 250g  | 1 | Stock suffisant: 0.9u (36j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:10.194Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:50.124Z*

@@ -5,16 +5,14 @@
 - **Client** : BONNI, ACHAT (ID: 8200)
 - **Commande réelle** : S39480
 - **Date commande** : 2025-10-01 05:53:38
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-30 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 15
-- **Tokens**: 30,415 input + 8,868 output = 39,283 total
-- **Coût**: $0.2243 (~22.43¢)
-- **Coût par produit LLM**: $0.0150
+- **Appels**: 16
+- **Tokens**: 23,486 input + 5,096 output = 28,582 total
 
 
 ---
@@ -168,12 +166,12 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock prédit: -4.4u (-32j restants) → prédit 3u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: -10.0u (-55j restants) → prédit 4u mais non commandé |
-| [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 10 | Stock prédit: -25.0u (-55j restants) → prédit 10u mais non commandé |
-| [FIL23] FIL MAYONNAISE 300ML SQUEEZE  | 12 | Stock prédit: -30.0u (-55j restants) → prédit 12u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -4.4u (-97j restants) → prédit 1u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock prédit: -4.2u (-30j restants) → prédit 3u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: -9.8u (-54j restants) → prédit 4u mais non commandé |
+| [FIL11] FIL MAYONNAISE ŒUFS 1L SEAU  | 10 | Stock prédit: -24.5u (-54j restants) → prédit 10u mais non commandé |
+| [FIL23] FIL MAYONNAISE 300ML SQUEEZE  | 12 | Stock prédit: -29.5u (-54j restants) → prédit 12u mais non commandé |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | Stock prédit: -4.4u (-96j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -197,4 +195,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:12.884Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:40.715Z*

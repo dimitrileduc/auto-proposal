@@ -249,7 +249,6 @@ export interface AggregateReportData {
     promptTokens: number;
     completionTokens: number;
     totalTokens: number;
-    costUSD: number;
   };
 }
 
@@ -296,15 +295,13 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 | **Bias** | ${aggregateMetrics.mean.bias.toFixed(1)}% | ${aggregateMetrics.median.bias.toFixed(1)}% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 
 ${data.llm_usage ? `
-### Utilisation LLM (Claude Sonnet 4.5)
+### 🤖 Utilisation LLM
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **Appels LLM** | ${data.llm_usage.calls} | Nombre de produits prédits par LLM (>2 commandes historiques) |
 | **Tokens Total** | ${data.llm_usage.totalTokens.toLocaleString('fr-FR')} | ${data.llm_usage.promptTokens.toLocaleString('fr-FR')} prompt + ${data.llm_usage.completionTokens.toLocaleString('fr-FR')} completion |
-| **Coût Total** | $${data.llm_usage.costUSD.toFixed(4)} | Claude Sonnet 4.5: $3/$15 per million tokens |
-| **Coût Moyen/Client** | $${(data.llm_usage.costUSD / successfulResults.length).toFixed(4)} | Coût moyen par client analysé |
-| **Coût Moyen/Appel** | $${(data.llm_usage.costUSD / data.llm_usage.calls).toFixed(6)} | Coût moyen par prédiction LLM |
+| **Tokens Moyen/Appel** | ${Math.round(data.llm_usage.totalTokens / data.llm_usage.calls).toLocaleString('fr-FR')} | Tokens moyen par prédiction LLM |
 ` : ''}
 
 <details>

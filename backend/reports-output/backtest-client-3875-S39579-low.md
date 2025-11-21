@@ -5,16 +5,14 @@
 - **Client** : E.L.D. GMBH (ID: 3875)
 - **Commande réelle** : S39579
 - **Date commande** : 2025-10-06 12:04:21
-- **Date cutoff système** : 2025-10-06 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-05 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 8,903 input + 2,544 output = 11,447 total
-- **Coût**: $0.0649 (~6.49¢)
-- **Coût par produit LLM**: $0.0162
+- **Tokens**: 6,667 input + 1,402 output = 8,069 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:35.588Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:29.127Z*

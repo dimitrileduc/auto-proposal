@@ -5,16 +5,14 @@
 - **Client** : FOODPRINT SRL ECHANTILLON (ID: 24784)
 - **Commande réelle** : S39741
 - **Date commande** : 2025-10-15 12:28:37
-- **Date cutoff système** : 2025-10-15 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 18
-- **Tokens**: 36,590 input + 10,537 output = 47,127 total
-- **Coût**: $0.2678 (~26.78¢)
-- **Coût par produit LLM**: $0.0149
+- **Appels**: 26
+- **Tokens**: 37,971 input + 8,082 output = 46,053 total
 
 
 ---
@@ -170,50 +168,50 @@
 |---------|-------------|--------|
 | [MF0031] MF Tarti Olives verte 250g  | 1 | Stock prédit: 0.5u (8j restants) → prédit 1u mais non commandé |
 | [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
-| [LV160] LV Tartinade Aubergine 190g | 1 | Stock prédit: 0.6u (23j restants) → prédit 1u mais non commandé |
-| [LV161] LV Tartinade Mangue curry 190g | 1 | Stock prédit: 0.5u (17j restants) → prédit 1u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.4u (11j restants) → prédit 1u mais non commandé |
-| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock prédit: 0.6u (23j restants) → prédit 1u mais non commandé |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: 0.5u (17j restants) → prédit 1u mais non commandé |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: -0.4u (-6j restants) → prédit 1u mais non commandé |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: -0.4u (-6j restants) → prédit 1u mais non commandé |
-| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [MF0033] MF Tarti Poivron chilli 250g | 2 | Stock prédit: 0.3u (3j restants) → prédit 2u mais non commandé |
-| [MF0047] MF Mayonnaise 250ml | 2 | Stock prédit: 0.3u (3j restants) → prédit 2u mais non commandé |
-| [DIS0001] Display M&F | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
-| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.5u (22j restants) → prédit 1u mais non commandé |
-| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.4u (17j restants) → prédit 1u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
-| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: 0.4u (26j restants) → prédit 1u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
+| [LV160] LV Tartinade Aubergine 190g | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
+| [LV161] LV Tartinade Mangue curry 190g | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 1 | Stock prédit: 0.5u (11j restants) → prédit 1u mais non commandé |
+| [LV162] LV Tartinade Tomato Basilico 190g | 1 | Stock prédit: 0.6u (24j restants) → prédit 1u mais non commandé |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | Stock prédit: 0.6u (17j restants) → prédit 1u mais non commandé |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | Stock prédit: -0.4u (-5j restants) → prédit 1u mais non commandé |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | Stock prédit: -0.4u (-5j restants) → prédit 1u mais non commandé |
+| [MF0012] MF Olives Mix 500g | 1 | Stock prédit: -0.1u (-1j restants) → prédit 1u mais non commandé |
+| [MF0033] MF Tarti Poivron chilli 250g | 2 | Stock prédit: 0.3u (4j restants) → prédit 2u mais non commandé |
+| [MF0047] MF Mayonnaise 250ml | 2 | Stock prédit: 0.3u (4j restants) → prédit 2u mais non commandé |
+| [DIS0001] Display M&F | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
+| [OCC02] OCCHIOLINO premium limoncello 500ml | 1 | Stock prédit: 0.5u (23j restants) → prédit 1u mais non commandé |
+| [TVF015] TVF TARTINADE BIO AUBERGINE 380G | 1 | Stock prédit: 0.4u (18j restants) → prédit 1u mais non commandé |
+| [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: 0.3u (12j restants) → prédit 1u mais non commandé |
+| [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: 0.5u (26j restants) → prédit 1u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 1 | Stock prédit: 0.3u (12j restants) → prédit 1u mais non commandé |
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.2u (6j restants) → prédit 1u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.3u (11j restants) → prédit 1u mais non commandé |
-| [LD013] LD Tuscan Organic Spread 180 g | 4 | Stock prédit: 0.3u (2j restants) → prédit 4u mais non commandé |
-| [LD015] LD Onion Spread 180g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
-| [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
-| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.7u (-22j restants) → prédit 1u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | Stock prédit: 0.2u (7j restants) → prédit 1u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: 0.3u (12j restants) → prédit 1u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 1 | Stock prédit: 0.3u (12j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: 0.3u (12j restants) → prédit 1u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.3u (12j restants) → prédit 1u mais non commandé |
+| [LD013] LD Tuscan Organic Spread 180 g | 4 | Stock prédit: 0.4u (3j restants) → prédit 4u mais non commandé |
+| [LD015] LD Onion Spread 180g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
+| [LD011] LD Organic Kids Spread 180 g | 2 | Stock prédit: 0.2u (3j restants) → prédit 2u mais non commandé |
+| [LV357] LV Tartinade BIO Asperge 190g | 1 | Stock prédit: -0.7u (-21j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 | [LV342] LV Organic Broccoli Spread 190 g | 1 | Stock prédit: -0.2u (-7j restants) → prédit 1u mais non commandé |
-| [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: 0.2u (14j restants) → prédit 1u mais non commandé |
+| [fsv11] Noix de cajou mexicaines bio vrac 2,8kg  | 1 | Stock prédit: -0.2u (-9j restants) → prédit 1u mais non commandé |
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: 0.2u (15j restants) → prédit 1u mais non commandé |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock prédit: -0.1u (-5j restants) → prédit 1u mais non commandé |
 | [JF054] JF LEMON MAYONNAISE 250ml Weck | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [JF056] JF SAUCE CHIPOTLE 250ML WECK | 2 | Stock prédit: -0.5u (-20j restants) → prédit 2u mais non commandé |
 | [REB06] REB chips bio - paprika fumé 35g | 1 | Stock prédit: 0.0u (3j restants) → prédit 1u mais non commandé |
 | [REB05] REB chips bio - sel de mer 35g | 1 | Stock prédit: -0.2u (-13j restants) → prédit 1u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: -1.2u (-54j restants) → prédit 1u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.0u (-2j restants) → prédit 1u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | Stock prédit: -1.2u (-53j restants) → prédit 1u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | Stock prédit: -0.8u (-49j restants) → prédit 1u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.9u (-53j restants) → prédit 1u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | Stock prédit: -0.9u (-52j restants) → prédit 1u mais non commandé |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: -0.5u (-36j restants) → prédit 1u mais non commandé |
 
 
@@ -244,4 +242,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:07.578Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:53.153Z*

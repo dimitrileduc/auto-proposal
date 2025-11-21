@@ -5,16 +5,14 @@
 - **Client** : REWE MARKT GMBH - WEST (ID: 3865)
 - **Commande réelle** : S39292
 - **Date commande** : 2025-09-23 06:18:30
-- **Date cutoff système** : 2025-09-23 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-22 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 23
-- **Tokens**: 47,401 input + 13,799 output = 61,200 total
-- **Coût**: $0.3492 (~34.92¢)
-- **Coût par produit LLM**: $0.0152
+- **Tokens**: 34,544 input + 7,524 output = 42,068 total
 
 
 ---
@@ -147,13 +145,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 5 | 3 | 2.0 | 66.7% | ✅ partial | 🤖 LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 5 | 3 | 2.0 | 66.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (5 produits)
@@ -163,7 +161,7 @@
 <summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM: 5u vs Médiane: 5u (Réel: 3u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 5u (confidence: medium)
+- 🤖 **LLM prédit**: 5u (confidence: high)
 - 📊 **Baseline N-1**: 5u
 - 📊 **Médiane**: 5u
 - ✅ **Réel commandé**: 3u
@@ -171,34 +169,13 @@
 - 📉 **Erreur Médiane**: 2u (66.7%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel ~30j avec concentration sur les mardis
+- **Pattern temporel**: Mensuel ~30j avec concentration forte en Août 2025
 - **Saisonnalité**: weak
-- **Tendance**: Hausse +120%
-- **Outliers détectés**: 1u
+- **Tendance**: Hausse marquée +150% (passage de 2u moyenne N-1 à 5u moyenne récente)
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-L'historique révèle une transformation nette du pattern de commande:
-- N-1 (2024): Commandes sporadiques de 1-3u avec des intervalles longs (juin, août, sept)
-- Période récente (juil-sept 2025): Rythme mensuel régulier avec volumes 5-6u
-
-Intervalles récents: 15/07 → 11/08 (27j) → 19/08 (8j, likely rattrapage) → 02/09 (14j)
-La commande du 02/09/2025 (mardi) remonte à 21 jours, respectant le cycle ~mensuel observé.
-
-**FILTRAGE OUTLIERS:**
-Les quantités de 1u en 2024 (doublons du 04/06) sont des anomalies probables. La quantité de 1u du 11/08/2025 accompagne une commande de 5u le même jour = fractionnement logistique, pas outlier de demande.
-
-**SAISONNALITÉ:**
-Comparaison sept 2024 vs sept 2025: 3u (19/09/2024) → prévision 5u (23/09/2025)
-Impact faible mais hausse structurelle visible: le client a stabilisé sa demande autour de 5u depuis juillet 2025.
-
-**TENDANCE:**
-Passage de 1-3u (N-1) à 5-6u (récent) = hausse de +120% sur la baseline
-Dernières commandes: 6u → 1u+5u → 5u → 5u
-La quantité de 6u (juillet) semble être un léger pic, la normalisation s'établit à 5u.
-
-**CONCLUSION:**
-Avec un rythme mensuel établi, une demande stabilisée à 5u et la date du 23/09 (mardi) respectant le cycle, la prédiction optimale est **5 unités**.
+Pattern mensuel identifié: dernière commande le 02/09 (mar.), prédiction pour le 22/09 (lun.) soit 20 jours d'écart. Historique N-1 montre demande faible et irrégulière (1-3u). Rupture nette en juillet-août 2025 avec stabilisation à 5-6u par commande. Les 3 dernières commandes substantielles montrent convergence vers 5u (après exclusion du +1u isolé du 11/08). Pas de saisonnalité septembre détectée en N-1. Tendance haussière confirmée et stabilisée. Prédiction: 5u alignée sur la nouvelle baseline établie, sans surgonflage car pas de signal de rattrapage imminent (rythme mensuel respecté).
 
 </details>
 
@@ -215,21 +192,13 @@ Avec un rythme mensuel établi, une demande stabilisée à 5u et la date du 23/0
 - 📉 **Erreur Médiane**: 1u (50.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec tendance mensuelle (~30-40j), dernière commande le 2025-09-02, soit 21j avant prédiction
+- **Pattern temporel**: Irrégulier avec espacements variables (22-32 jours). Dernières commandes: 2/09 (mar), 11/08 (lun), 15/07 (mar). Pas de jour fixe identifié.
 - **Saisonnalité**: weak
-- **Tendance**: Hausse +100% (moyenne N-1: 1.7u vs période récente: 3.2u)
+- **Tendance**: Hausse modérée +50% (passage de ~2u moyenne N-1 à ~3u moyenne récente hors outlier)
 - **Outliers détectés**: 6u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Pattern irrégulier avec commandes espacées de 20-40j. Dernière commande le 02/09/2025 (4u), soit 21 jours avant la date de prédiction (23/09). Le client ne suit pas un jour fixe mais un rythme mensuel approximatif.
-
-**FILTRAGE OUTLIERS**: La commande de 6u le 15/07/2025 est identifiée comme outlier (pic estival potentiel ou commande exceptionnelle). Les autres commandes récentes oscillent entre 1-4u.
-
-**COMPARAISON N-1**: En sept 2024, une commande de 2u. Volume faible, cohérent avec l'historique N-1 (moyenne 1.7u). Impact saisonnier faible car le produit (sauce béarnaise) n'a pas de forte saisonnalité septembre.
-
-**TENDANCE RÉCENTE**: Sans le pic de 6u, les commandes récentes montrent: 4u (sept), 5u cumulées (août en 2 commandes), 1u (juin). Moyenne pondérée récente (hors outlier) ≈ 3u.
-
-**DÉCISION**: La demande de fond est estimée à 3.2u. Vu le rythme mensuel et la dernière commande de 4u il y a 21j, le client est dans sa fenêtre de réapprovisionnement. Compte tenu de la tendance haussière modérée et de l'absence de saisonnalité forte, **je prédis 3 unités** (arrondi conservateur de la baseline).
+Pattern irrégulier mais rythme ~3-4 semaines observé. Dernière commande il y a 20 jours (2/09), prochaine probable sous 10j. La quantité de 6u (15/07) est isolée - probable commande anticipée été. Base récente stable: 4u→3u+2u(même jour=5u total)→4u. Tendance haussière confirmée vs N-1 (2u→2u→1u). Baseline 3.2u ajustée à 3u car pas d'événement saisonnier fort en septembre N-1 (2u seulement). Évite surgonflage: 3u correspond au nouveau niveau de demande normalisé post-hausse.
 
 </details>
 
@@ -246,21 +215,13 @@ Avec un rythme mensuel établi, une demande stabilisée à 5u et la date du 23/0
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commandes irrégulières, principalement le mardi (4/8 commandes), intervalle moyen ~3-4 semaines
-- **Saisonnalité**: none
-- **Tendance**: Hausse modérée récente : moyenne 3M = 2.2u vs N-1 = 1.3u (+69%)
+- **Pattern temporel**: Irrégulier avec tendance bimensuelle/mensuelle (intervalles variables: 14-19-8-23-61 jours). Commandes majoritairement le Mardi (5/8), quelques Lundis (3/8).
+- **Saisonnalité**: weak
+- **Tendance**: Hausse récente notable: moyenne 3 mois (2.2u) vs N-1 (1.3u) soit +69%. Dernières commandes montrent accélération: 4u (Août) puis 3u → tendance haussière
 - **Outliers détectés**: 4u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique** : Historique montre commandes espacées de 2-5 semaines, avec préférence pour les mardis. Dernière commande le 02/09/2025 (mardi), soit 3 semaines avant la date de prédiction (23/09, aussi un mardi) - cohérent avec le rythme observé.
-
-**Outliers** : Le pic de 4u du 11/08/2025 (lundi) semble exceptionnel car seule commande un lundi dans l'historique récent et quantité double de la norme. Probablement un rattrapage ou besoin ponctuel.
-
-**Tendance** : En excluant l'outlier de 4u, les 3 derniers mois montrent : 1u, 2u, 3u, 1u = moyenne 1.75u. Légère hausse par rapport à N-1 (1-2u). La commande du 19/08 (3u) et celle du 15/07 (2u) indiquent une demande stabilisée autour de 2-3u.
-
-**Saisonnalité** : Pas de pattern saisonnier fort visible. Les données N-1 de septembre montrent 1u, mais insuffisantes pour établir un cycle annuel.
-
-**Décision** : Baseline théorique à 2.2u. Vu le rythme régulier de ~3 semaines et l'absence de signal de rupture, je recommande **2 unités** - valeur médiane récente, cohérente avec le pattern observé hors outlier, privilégiant la précision sur la prudence.
+Le produit montre un pattern irrégulier avec commandes espacées de 2-4 semaines, principalement le Mardi. L'outlier de 4u (11/08) est probablement un rattrapage après 27 jours sans commande. En excluant ce pic, la moyenne récente stabilise à 1.75u (dernier trimestre hors outlier: 1+3+2+1 / 4). La date de prédiction (Lundi 22/09) arrive 20 jours après la dernière commande (02/09), cohérent avec le rythme bimensuel observé. Aucun signal saisonnier fort en septembre N-1 (1u seulement mi-sept). La baseline théorique de 2.2u intègre la hausse tendancielle, mais en contexte B2B précis et vu le faible volume historique, la prédiction optimale converge vers 2 unités (ni sous-estimation risquée à 1u, ni surestimation à 3u sans signal fort). Confiance moyenne car historique limité mais pattern récent cohérent.
 
 </details>
 
@@ -270,28 +231,20 @@ Avec un rythme mensuel établi, une demande stabilisée à 5u et la date du 23/0
 
 **Quantités:**
 - 🤖 **LLM prédit**: 1u (confidence: medium)
-- 📊 **Baseline N-1**: 1u
+- 📊 **Baseline N-1**: 1.2u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 1u (50.0%)
 - 📉 **Erreur Médiane**: 1u (50.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec concentration sur Mardi/Lundi, intervalle moyen ~20-30 jours
+- **Pattern temporel**: Irrégulier - intervalles variables (8j à 40j), prédominance Mardi/Lundi
 - **Saisonnalité**: none
-- **Tendance**: Hausse récente sur Août (+200% sur 2 commandes de 3u vs baseline 1u)
+- **Tendance**: Stable - majoritairement 1u avec 2 pics récents de 3u (possibles ajustements stock)
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique** : Le client commande de manière irrégulière avec des intervalles variables (8-14-23-21 jours sur les 4 dernières commandes). Légère préférence pour les mardis (4/8 commandes), et la date de prédiction est un mardi (23/09), ce qui correspond au pattern.
-
-**Détection d'outliers** : Les 2 commandes de 3u en Août 2025 (11 et 19 août) représentent une anomalie nette par rapport à l'historique. Sur 8 commandes totales, 6 sont de 1u. Ces pics d'août pourraient être liés à un événement ponctuel (rattrapage de stock, promotion estivale, événement spécifique) plutôt qu'à un changement structurel de la demande.
-
-**Analyse saisonnière N-1** : Les données de septembre 2024 montrent 1u commandée le 19/09, très proche de notre date cible (23/09). Pas d'impact saisonnier fort détectable - les volumes restent faibles et réguliers en N-1.
-
-**Tendance récente** : La dernière commande (02/09) est revenue à 1u, confirmant le retour à la baseline après les pics d'août. L'intervalle depuis la dernière commande (21 jours au 23/09) correspond au rythme observé.
-
-**Décision** : La baseline de 1u représente le comportement structurel du client (75% des commandes). Les 3u d'août sont des outliers isolés non soutenus par la commande suivante. Prédiction : **1 unité**.
+Historique montre demande de fond stable à 1u (6/8 commandes). Les 2 pics de 3u en août 2025 (11/08 et 19/08) espacés de 8j suggèrent un rattrapage ponctuel plutôt qu'un changement structurel. Depuis, retour à 1u le 02/09. Intervalles variables (14-20j typiques) sans pattern hebdomadaire strict. Pas de saisonnalité N-1 exploitable (données trop éparses). La prédiction au 22/09 (20j après dernière commande de 1u) s'aligne sur le rythme mensuel observé et la demande de fond récurrente. Quantité 1u = scénario le plus probable pour minimiser MAPE.
 
 </details>
 
@@ -308,42 +261,120 @@ Avec un rythme mensuel établi, une demande stabilisée à 5u et la date du 23/0
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Très faible fréquence (1-2 commandes par trimestre)
-- **Saisonnalité**: weak
-- **Tendance**: Baisse significative -66% (N-1: moyenne 2u → N: 1u)
+- **Pattern temporel**: Irrégulier - Intervalles variables (31j puis 362j)
+- **Saisonnalité**: none
+- **Tendance**: Stable - Commandes unitaires récurrentes (1u)
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-**Analyse Chain of Thought:**
+Historique très limité (3 commandes sur 15 mois). Pattern détecté: commandes unitaires systématiques (1u) sauf pic isolé de 3u en juillet 2024 (probablement événement ponctuel/promo). Pas de saisonnalité exploitable à cette date. La commande du 23/06/2025 (il y a 3 mois) confirme le retour à la normalité à 1u. Absence de données pour septembre en N-1 empêche comparaison saisonnière. En l'absence de signal fort justifiant une hausse, la prédiction s'aligne sur le comportement de fond observé: 1 unité par commande. Risque: si le client ne commande pas du tout (fréquence imprévisible), mais si commande → quantité unitaire très probable.
 
-**1. ANALYSE RYTHMIQUE:**
-- Historique très limité avec seulement 3 commandes sur 15 mois
-- Intervalles extrêmement irréguliers: juin→juillet 2024 (~1 mois), puis 12 mois de silence jusqu'à juin 2025
-- Aucun pattern hebdomadaire ou mensuel détectable
-- Dernier achat le 23 juin 2025 (lundi) → 3 mois avant la date de prédiction (23 sept, mardi)
-- Produit à rotation très lente, probablement de niche ou en phase de déclin
+</details>
 
-**2. FILTRAGE OUTLIERS:**
-- La commande de 3u (05/07/2024) se démarque nettement vs les 1u
-- Possible pic ponctuel (promotion estivale, événement spécifique) non représentatif de la demande structurelle
-- Les commandes de 1u (juin 2024 et juin 2025) représentent mieux la baseline récente
 
-**3. SAISONNALITÉ:**
-- N-1 montre 2 commandes en été (juin-juillet), N montre 1 commande en juin
-- Possible légère saisonnalité estivale mais données insuffisantes pour confirmer
-- Impact: **weak** car pas de récurrence claire
 
-**4. TENDANCE:**
-- Volume moyen N-1: 2u (moyenne 4u sur 2 commandes) → N: 1u
-- Baisse nette de la demande, confirmant un produit en déclin ou remplacé
-- La commande la plus récente (juin 2025, 1u) indique la nouvelle normalité
 
-**5. DÉCISION:**
-- Avec 3 mois depuis la dernière commande et un rythme trimestriel implicite, septembre serait cohérent pour une nouvelle commande
-- La baseline récente (1u) est la référence la plus fiable
-- Pas d'élément justifiant une hausse ou une baisse vs la dernière commande
+### 📊 Données d'Input LLM (5 produits)
 
-**PRÉDICTION: 1 unité** - Alignée sur la demande récente stabilisée, reflétant un produit à faible rotation avec commandes sporadiques unitaires."
+
+<details>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-02 09:41:32: 5u
+- 2025-08-19 08:35:46: 5u
+- 2025-08-11 13:20:39: 5u
+- 2025-08-11 10:59:30: 1u
+- 2025-07-15 09:34:20: 6u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-19 07:02:21: 3u
+- 2024-08-07 13:24:40: 2u
+- 2024-06-11 07:20:33: 3u
+- 2024-06-04 08:24:14: 1u
+- 2024-06-04 08:21:47: 1u
+
+**✅ Quantité LLM**: 5u (confidence: high)
+**📊 Quantité Réelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-02 09:41:32: 4u
+- 2025-08-11 13:20:39: 3u
+- 2025-08-11 10:59:30: 2u
+- 2025-07-15 09:34:20: 6u
+- 2025-06-23 06:45:41: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-19 07:02:21: 2u
+- 2024-08-07 13:24:40: 2u
+- 2024-07-05 08:39:50: 1u
+
+**✅ Quantité LLM**: 3u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-02 09:41:32: 1u
+- 2025-08-19 08:35:46: 3u
+- 2025-08-11 13:20:39: 4u
+- 2025-07-15 09:34:20: 2u
+- 2025-06-23 12:14:05: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-19 07:02:21: 1u
+- 2024-06-11 07:20:33: 1u
+- 2024-06-04 08:24:14: 2u
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>4. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-02 09:41:32: 1u
+- 2025-08-19 08:35:46: 3u
+- 2025-08-11 13:20:39: 3u
+- 2025-07-15 09:34:20: 1u
+- 2025-06-23 12:14:05: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-19 07:02:21: 1u
+- 2024-08-07 13:24:40: 1u
+- 2024-06-11 07:20:33: 1u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>5. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-06-23 12:14:05: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-07-05 08:39:50: 3u
+- 2024-06-04 08:24:14: 1u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
 
 </details>
 
@@ -372,25 +403,25 @@ Avec un rythme mensuel établi, une demande stabilisée à 5u et la date du 23/0
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.9u (-5j restants) → prédit 2u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -1.1u (-7j restants) → prédit 2u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 3 | Stock prédit: 0.9u (9j restants) → prédit 3u mais non commandé |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.7u (-5j restants) → prédit 2u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -1.0u (-6j restants) → prédit 2u mais non commandé |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 3 | Stock prédit: 1.0u (9j restants) → prédit 3u mais non commandé |
 | [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock prédit: 0.6u (8j restants) → prédit 2u mais non commandé |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: -1.5u (-14j restants) → prédit 2u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: -0.5u (-4j restants) → prédit 3u mais non commandé |
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock prédit: 0.5u (7j restants) → prédit 2u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: -0.6u (-4j restants) → prédit 3u mais non commandé |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock prédit: 0.1u (1j restants) → prédit 2u mais non commandé |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.1u (3j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.5u (27j restants) → prédit 2u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.1u (-31j restants) → prédit 2u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-23j restants) → prédit 1u mais non commandé |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: -1.4u (-13j restants) → prédit 2u mais non commandé |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.4u (-4j restants) → prédit 2u mais non commandé |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 3 | Stock prédit: 0.6u (8j restants) → prédit 3u mais non commandé |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 5 | Stock prédit: -0.5u (-3j restants) → prédit 5u mais non commandé |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.5u (28j restants) → prédit 2u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.0u (-30j restants) → prédit 2u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -0.3u (-22j restants) → prédit 1u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: -1.0u (-45j restants) → prédit 1u mais non commandé |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.2u (29j restants) → prédit 1u mais non commandé |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | Stock prédit: 0.3u (30j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -414,4 +445,4 @@ Avec un rythme mensuel établi, une demande stabilisée à 5u et la date du 23/0
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:05.453Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:12.321Z*

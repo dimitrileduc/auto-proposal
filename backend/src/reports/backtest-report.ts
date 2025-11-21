@@ -69,6 +69,48 @@ export function filterOnlyLowConfidence(
 }
 
 /**
+ * Génère la section des données d'input LLM pour tous les produits qui ont nécessité le LLM
+ */
+function generateLLMInputDataSection(truePositives: any[]): string {
+  const productsWithLLMData = truePositives.filter(tp => tp.llm_input_data);
+
+  if (productsWithLLMData.length === 0) {
+    return '';
+  }
+
+  return `
+### 📊 Données d'Input LLM (${productsWithLLMData.length} produits)
+
+${productsWithLLMData.map((tp, index) => {
+  const recentOrders = tp.llm_input_data.recent_orders;
+  const lastYearOrders = tp.llm_input_data.last_year_orders;
+
+  return `
+<details>
+<summary><strong>${index + 1}. ${tp.productName}</strong> - ${tp.llm_success ? '✅ LLM Réussi' : '❌ LLM Échoué (fallback médiane)'}</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+${recentOrders.length > 0
+  ? recentOrders.map((o: any) => `- ${o.date}: ${o.quantity}u`).join('\n')
+  : '- Aucune commande récente'}
+
+**📅 Commandes N-1 (même période année dernière):**
+${lastYearOrders.length > 0
+  ? lastYearOrders.map((o: any) => `- ${o.date}: ${o.quantity}u`).join('\n')
+  : '- Aucune commande N-1'}
+
+${tp.llm_success
+  ? `**✅ Quantité LLM**: ${tp.llmPrediction.quantity}u (confidence: ${tp.llmPrediction.confidence})`
+  : `**📊 Quantité Médiane (fallback)**: ${tp.predictedQty}u`}
+**📊 Quantité Réelle**: ${tp.realQty}u
+
+</details>
+`;
+}).join('\n')}
+`;
+}
+
+/**
  * Génère la section détaillée des prédictions LLM pour les True Positives
  */
 function generateLLMDetailSection(truePositives: any[]): string {
@@ -138,12 +180,10 @@ export function generateBacktestReport(
 - **Jours d'avance** : ${comparison.daysBeforePrediction}j
 
 ${comparison.llmUsage ? `
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: ${comparison.llmUsage.calls}
 - **Tokens**: ${comparison.llmUsage.promptTokens.toLocaleString()} input + ${comparison.llmUsage.completionTokens.toLocaleString()} output = ${comparison.llmUsage.totalTokens.toLocaleString()} total
-- **Coût**: $${comparison.llmUsage.costUSD.toFixed(4)} (~${(comparison.llmUsage.costUSD * 100).toFixed(2)}¢)
-- **Coût par produit LLM**: $${(comparison.llmUsage.costUSD / comparison.llmUsage.calls).toFixed(4)}
 ` : ''}
 
 ---
@@ -276,13 +316,15 @@ ${comparison.llmUsage ? `
 ${comparison.truePositives.length > 0 ? `
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
 ${comparison.truePositives.map(tp =>
-  `| ${tp.productName} | ${tp.predictedQty} | ${tp.realQty} | ${tp.absoluteError.toFixed(1)} | ${tp.errorPercent.toFixed(1)}% | ${getMatchTypeEmoji(tp.matchType)} ${tp.matchType} | ${tp.quantitySource === 'llm' ? '🤖 LLM' : '📊 Médiane'} |`
+  `| ${tp.productName} | ${tp.predictedQty} | ${tp.realQty} | ${tp.absoluteError.toFixed(1)} | ${tp.errorPercent.toFixed(1)}% | ${getMatchTypeEmoji(tp.matchType)} ${tp.matchType} | ${tp.llm_required ? '✅ Oui' : '❌ Non'} | ${tp.llm_success ? '✅ Oui' : '❌ Non'} | ${tp.quantitySource === 'llm' ? '🤖 LLM' : '📊 Médiane'} |`
 ).join('\n')}
 
 ${generateLLMDetailSection(comparison.truePositives)}
+
+${generateLLMInputDataSection(comparison.truePositives)}
 ` : '*Aucun produit correctement prédit (rappel = 0%)*'}
 
 ---

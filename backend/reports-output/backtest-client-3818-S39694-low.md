@@ -5,16 +5,14 @@
 - **Client** : NATURKOST WEST GMBH (ID: 3818)
 - **Commande réelle** : S39694
 - **Date commande** : 2025-10-13 10:17:04
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,570 input + 1,746 output = 8,316 total
-- **Coût**: $0.0459 (~4.59¢)
-- **Coût par produit LLM**: $0.0153
+- **Tokens**: 4,893 input + 987 output = 5,880 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:09.306Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:56.610Z*

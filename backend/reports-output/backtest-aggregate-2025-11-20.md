@@ -2,14 +2,14 @@
 
 ## Contexte
 
-- **Date d'exécution** : 20/11/2025 10:08:11
-- **Clients analysés** : 48
-- **Clients réussis** : 47
-- **Clients échoués** : 1
+- **Date d'exécution** : 20/11/2025 14:35:44
+- **Clients analysés** : 49
+- **Clients réussis** : 43
+- **Clients échoués** : 6
 
 ### Configuration
 
-- **Jours d'avance** : 0j
+- **Jours d'avance** : 1j
 - **Fenêtre d'analyse** : 120j
 - **Couverture cible** : 25j
 - **Lead time** : 5j
@@ -22,23 +22,21 @@
 
 | Métrique | Moyenne | Médiane | Interprétation |
 |----------|---------|---------|----------------|
-| **Recall** | 94.5% | 100.0% | % de besoins réels détectés |
-| **Precision** | 39.4% | 40.0% | % de prédictions correctes (60.0% proposés non commandés) |
-| **F1-Score** | 52.1% | 55.6% | Équilibre détection/précision |
-| **wMAPE** | 26.1% | 25.0% | ⚖️ Écart pondéré robuste (métrique principale) |
-| **MAPE** | 30.3% | 27.8% | Écart moyen (info, biaisé) |
-| **Bias** | 2.1% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **Recall** | 95.0% | 100.0% | % de besoins réels détectés |
+| **Precision** | 38.3% | 38.5% | % de prédictions correctes (61.5% proposés non commandés) |
+| **F1-Score** | 51.5% | 54.5% | Équilibre détection/précision |
+| **wMAPE** | 25.5% | 20.0% | ⚖️ Écart pondéré robuste (métrique principale) |
+| **MAPE** | 29.7% | 25.0% | Écart moyen (info, biaisé) |
+| **Bias** | -0.9% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 
 
-### Utilisation LLM (Claude Sonnet 4.5)
+### 🤖 Utilisation LLM
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Appels LLM** | 770 | Nombre de produits prédits par LLM (>2 commandes historiques) |
-| **Tokens Total** | 2 050 519 | 1 599 668 prompt + 450 851 completion |
-| **Coût Total** | $11.5618 | Claude Sonnet 4.5: $3/$15 per million tokens |
-| **Coût Moyen/Client** | $0.2460 | Coût moyen par client analysé |
-| **Coût Moyen/Appel** | $0.015015 | Coût moyen par prédiction LLM |
+| **Appels LLM** | 794 | Nombre de produits prédits par LLM (>2 commandes historiques) |
+| **Tokens Total** | 1 454 732 | 1 200 083 prompt + 254 649 completion |
+| **Tokens Moyen/Appel** | 1 832 | Tokens moyen par prédiction LLM |
 
 
 <details>
@@ -149,34 +147,39 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 
 ## Distribution des Performances
 
-**Comment se répartissent les 47 clients ?**
+**Comment se répartissent les 43 clients ?**
 
 ### Détection des besoins (Recall)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥80% | 42 | 89% |
-| 50-80% | 5 | 11% |
+| ≥80% | 39 | 91% |
+| 50-80% | 4 | 9% |
 | <50% | 0 | 0% |
 
 ### Justesse des prédictions (Precision)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥70% | 2 | 4% |
-| 40-70% | 22 | 47% |
-| <40% | 23 | 49% |
+| ≥70% | 1 | 2% |
+| 40-70% | 20 | 47% |
+| <40% | 22 | 51% |
 
 
 ---
 
-## Clients Échoués (1)
+## Clients Échoués (6)
 
 | Client | Commande | Erreur |
 |--------|----------|--------|
+| Unknown | N/A | Unknown error |
+| Unknown | N/A | Unknown error |
+| Unknown | N/A | Unknown error |
+| Unknown | N/A | Unknown error |
+| Unknown | N/A | Unknown error |
 | Unknown | N/A | Unknown error |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:08:11.879Z*
+*Rapport généré automatiquement le 2025-11-20T13:35:44.821Z*

@@ -5,16 +5,14 @@
 - **Client** : SPRL GOOD & FOOD (ID: 58284)
 - **Commande réelle** : S39546
 - **Date commande** : 2025-10-03 12:32:05
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 7
-- **Tokens**: 13,932 input + 3,846 output = 17,778 total
-- **Coût**: $0.0995 (~9.95¢)
-- **Coût par produit LLM**: $0.0142
+- **Tokens**: 10,012 input + 1,913 output = 11,925 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:03.989Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:37.559Z*

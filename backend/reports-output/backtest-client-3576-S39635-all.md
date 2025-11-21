@@ -5,16 +5,14 @@
 - **Client** : HOUGARDY S.A. (ID: 3576)
 - **Commande réelle** : S39635
 - **Date commande** : 2025-10-09 09:00:46
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 2
-- **Tokens**: 4,530 input + 1,257 output = 5,787 total
-- **Coût**: $0.0324 (~3.24¢)
-- **Coût par produit LLM**: $0.0162
+- **Tokens**: 3,414 input + 659 output = 4,073 total
 
 
 ---
@@ -147,9 +145,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -159,27 +157,56 @@
 <summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 160u vs Médiane: 160u (Réel: 160u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 160u (confidence: medium)
-- 📊 **Baseline N-1**: 140u
+- 🤖 **LLM prédit**: 160u (confidence: high)
+- 📊 **Baseline N-1**: 120u
 - 📊 **Médiane**: 160u
 - ✅ **Réel commandé**: 160u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande principalement chaque jeudi, rythme ~14-18 jours (bi-mensuel irrégulier)
+- **Pattern temporel**: Commande quasi-hebdomadaire jeudi (parfois vendredi), intervalle 6-17 jours
 - **Saisonnalité**: weak
-- **Tendance**: Baisse -20% (mix 80-160u stable avec légère préférence pour 160u en N-1, récent montre alternance 80-160u)
+- **Tendance**: Stable avec alternance 80u/160u, dernière commande 80u le 2025-10-02
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique**: Le client commande principalement les jeudis avec un intervalle de 14-18 jours. La date de prédiction est jeudi 09/10/2025, soit 7 jours après la dernière commande du 02/10 (80u). Cependant, avant cela : 25/09 (160u) → 7 jours → 02/10 (80u) → 7 jours → 09/10. Ce rythme hebdomadaire accéléré (vs bi-mensuel habituel) suggère une période de forte demande.
+Pattern détecté: commandes régulières jeudi avec alternance 80u/160u. Dernière commande 80u le jeu 2025-10-02 (il y a 6 jours). Historique montre cycle: 80u→160u→160u→80u→160u. Après 80u du 02/10, le pattern suggère retour à 160u. N-1 (oct 2024) montrait 160u début octobre. Intervalle 6j depuis dernière commande indique commande imminente. La séquence récente (80→160→160→80) suggère fortement 160u comme prochaine quantité pour maintenir l'équilibre stock/rotation. Pas d'outlier ni événement exceptionnel identifié.
 
-**Pattern quantitatif**: Les données N-1 montrent une alternance 80-160u avec une dominante à 160u (8 commandes sur 12 ≥ 160u). En 2025, on observe : 22/08 (160u) → 05/09 (80u) → 11/09 (160u) → 25/09 (160u) → 02/10 (80u). Le pattern récent suggère : après deux 160u consécutifs, un 80u, puis retour probable à 160u.
+</details>
 
-**Saisonnalité N-1**: En octobre 2024, commande du 03/10 = 160u, alignée avec la période. Impact faible mais confirme le niveau 160u.
 
-**Décision**: Vu le rythme accéléré (commandes hebdomadaires), le pattern d'alternance (après 80u → retour à 160u), et la référence N-1 à 160u pour début octobre, je recommande 160u. Le 80u du 02/10 semble être un ajustement ponctuel dans un cycle globalement orienté vers 160u pour cette période.
+
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-02 11:42:51: 80u
+- 2025-09-25 06:26:38: 160u
+- 2025-09-11 08:09:42: 160u
+- 2025-09-05 07:35:32: 80u
+- 2025-08-22 09:59:43: 160u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-03 06:59:28: 160u
+- 2024-09-24 07:02:33: 160u
+- 2024-09-12 09:58:22: 160u
+- 2024-09-05 11:35:13: 80u
+- 2024-08-14 06:06:20: 80u
+- 2024-07-04 07:42:30: 160u
+- 2024-06-27 07:49:07: 80u
+- 2024-06-18 08:13:28: 160u
+- 2024-06-06 12:24:49: 160u
+- 2024-05-08 14:34:51: 160u
+- 2024-04-18 07:28:42: 160u
+- 2024-04-11 07:40:36: 80u
+
+**✅ Quantité LLM**: 160u (confidence: high)
+**📊 Quantité Réelle**: 160u
 
 </details>
 
@@ -208,7 +235,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 40 | Stock prédit: 30.8u (19j restants) → prédit 40u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 40 | Stock prédit: 32.2u (20j restants) → prédit 40u mais non commandé |
 
 
 ---
@@ -232,4 +259,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:02:56.175Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:01.219Z*

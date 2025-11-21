@@ -5,16 +5,14 @@
 - **Client** : KORO HANDELS GmbH (ID: 3840)
 - **Commande réelle** : S39714
 - **Date commande** : 2025-10-14 07:59:02
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 7
-- **Tokens**: 14,643 input + 4,174 output = 18,817 total
-- **Coût**: $0.1065 (~10.65¢)
-- **Coût par produit LLM**: $0.0152
+- **Tokens**: 10,730 input + 2,408 output = 13,138 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:01:17.062Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:13.198Z*

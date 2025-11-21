@@ -71,7 +71,6 @@ export interface BacktestAggregateResult {
     promptTokens: number;
     completionTokens: number;
     totalTokens: number;
-    costUSD: number;
   };
 
   reports: {
@@ -142,7 +141,6 @@ export const backtestAggregateTask = task({
     let totalLLMCalls = 0;
     let totalPromptTokens = 0;
     let totalCompletionTokens = 0;
-    let totalCostUSD = 0;
 
     for (let chunkIdx = 0; chunkIdx < totalChunks; chunkIdx++) {
       const chunkStart = chunkIdx * BATCH_SIZE;
@@ -237,7 +235,6 @@ export const backtestAggregateTask = task({
               totalLLMCalls += taskResult.llm_usage.calls;
               totalPromptTokens += taskResult.llm_usage.promptTokens;
               totalCompletionTokens += taskResult.llm_usage.completionTokens;
-              totalCostUSD += taskResult.llm_usage.costUSD;
             }
 
             console.log(
@@ -305,11 +302,9 @@ export const backtestAggregateTask = task({
 
     // Log LLM usage summary
     if (totalLLMCalls > 0) {
-      console.log(`\n💰 LLM Usage Summary:`);
+      console.log(`\n🤖 LLM Usage Summary:`);
       console.log(`   Total Calls: ${totalLLMCalls}`);
       console.log(`   Total Tokens: ${totalPromptTokens + totalCompletionTokens} (${totalPromptTokens} prompt + ${totalCompletionTokens} completion)`);
-      console.log(`   Total Cost: $${totalCostUSD.toFixed(4)}`);
-      console.log(`   Avg Cost per Client: $${(totalCostUSD / successfulResults.length).toFixed(4)}`);
     }
 
     // ===== ÉTAPE 4: GÉNÉRATION RAPPORTS =====
@@ -336,7 +331,6 @@ export const backtestAggregateTask = task({
         promptTokens: totalPromptTokens,
         completionTokens: totalCompletionTokens,
         totalTokens: totalPromptTokens + totalCompletionTokens,
-        costUSD: totalCostUSD,
       } : undefined,
     };
 
@@ -440,7 +434,6 @@ export const backtestAggregateTask = task({
         promptTokens: totalPromptTokens,
         completionTokens: totalCompletionTokens,
         totalTokens: totalPromptTokens + totalCompletionTokens,
-        costUSD: totalCostUSD,
       } : undefined,
       reports: {
         json: jsonPath,

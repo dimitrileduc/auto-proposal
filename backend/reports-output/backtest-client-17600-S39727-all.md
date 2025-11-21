@@ -5,16 +5,14 @@
 - **Client** : SDP Rungis (ID: 17600)
 - **Commande réelle** : S39727
 - **Date commande** : 2025-10-14 13:50:03
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 17
-- **Tokens**: 36,102 input + 9,866 output = 45,968 total
-- **Coût**: $0.2563 (~25.63¢)
-- **Coût par produit LLM**: $0.0151
+- **Appels**: 25
+- **Tokens**: 38,567 input + 8,326 output = 46,893 total
 
 
 ---
@@ -71,10 +69,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 126.67 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 39.5% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 50.2% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 18.3% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **MAE** | 142.33 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 44.4% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 58.2% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | -23.6% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 4 | Avec erreur |
 
@@ -147,24 +145,24 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 200 | 400 | 200.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | 434 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [LV363] LV BIO Tartin'apero Avocat 180g  | 430 | 434 | 4.0 | 0.9% | ✅ partial | 🤖 LLM |
-| [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 500 | 200 | 300.0 | 150.0% | ✅ partial | 📊 Médiane |
-| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | 200 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV356] LV SET 3 X 135G trisauces  SDP | 512 | 256 | 256.0 | 100.0% | ✅ partial | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 200 | 400 | 200.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | 434 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV363] LV BIO Tartin'apero Avocat 180g  | 434 | 434 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 400 | 200 | 200.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 1 | 200 | 199.0 | 99.5% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV356] LV SET 3 X 135G trisauces  SDP | 1 | 256 | 255.0 | 99.6% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
-### 🤖 Détails des Prédictions LLM (3 produits)
+### 🤖 Détails des Prédictions LLM (6 produits)
 
 
 <details>
 <summary><strong>1. [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP</strong> - LLM: 200u vs Médiane: 198u (Réel: 400u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 200u (confidence: medium)
+- 🤖 **LLM prédit**: 200u (confidence: high)
 - 📊 **Baseline N-1**: 200u
 - 📊 **Médiane**: 198u
 - ✅ **Réel commandé**: 400u
@@ -172,32 +170,13 @@
 - 📉 **Erreur Médiane**: 202u (50.5%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel irrégulier (~22-29 jours entre commandes)
+- **Pattern temporel**: Mensuel irrégulier (~22-27 jours entre commandes)
 - **Saisonnalité**: none
 - **Tendance**: Stable autour de 200u
 - **Outliers détectés**: 4u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-- 20/08→16/09: 27 jours
-- 16/09→08/10: 22 jours
-- 08/10→14/10: 6 jours (date de prédiction)
-
-Le client commande environ tous les 22-29 jours. La dernière commande date du 08/10 (mercredi), soit seulement 6 jours avant la date de prédiction (14/10 mardi). 
-
-**FILTRAGE OUTLIERS:**
-La commande de 4u le 20/08 est clairement une correction/ajustement technique (livrée en même temps que 196u). La demande réelle ce jour était de 200u (196+4).
-
-**PATTERN IDENTIFIÉ:**
-- Toutes les commandes normalisées = 200u exactement
-- Aucune saisonnalité N-1 disponible
-- Tendance: Parfaitement stable sur les 3 derniers mois
-- Pas de jour fixe hebdomadaire, mais cycle mensuel autour de 3-4 semaines
-
-**LOGIQUE DE PRÉDICTION:**
-Étant donné que la dernière commande vient d'avoir lieu il y a 6 jours seulement (08/10), et que le cycle habituel est de 22-29 jours, la probabilité d'une nouvelle commande au 14/10 est **faible mais possible** si le client accélère son rythme. 
-
-Cependant, si commande il y a à cette date, elle suivra le pattern établi de 200u. Le client montre une régularité parfaite dans les quantités (3 commandes consécutives à 200u).
+Pattern clair identifié: commandes régulières tous les ~25 jours (20/08→16/09=27j, 16/09→08/10=22j) avec quantité constante de 200u. La commande de 4u du 20/08 est manifestement une correction/ajustement technique à ignorer. Aucune saisonnalité N-1 disponible. La dernière commande date du 08/10 (mer.), soit 5 jours avant la date de prédiction (13/10). Vu le cycle de ~25j, la prochaine commande devrait intervenir fin octobre/début novembre, PAS le 13/10. Cependant, si commande effective ce jour-là, elle respecterait le standard observé de 200u. Prédiction: 200u (volume de référence systématique du client).
 
 </details>
 
@@ -214,57 +193,234 @@ Cependant, si commande il y a à cette date, elle suivra le pattern établi de 2
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel irrégulier (~30-50j), sans jour fixe identifié
-- **Saisonnalité**: none
-- **Tendance**: Hausse +24% (350u → 434u)
+- **Pattern temporel**: Mensuel irrégulier (16-34 jours) - Aucun jour fixe détecté
+- **Saisonnalité**: weak
+- **Tendance**: Hausse +24% (350u → 434u depuis début 2025)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les 3 dernières commandes montrent un rythme mensuel irrégulier (19/08→04/09: 16j, puis 04/09→08/10: 34j). Pas de pattern hebdomadaire fixe (mar/jeu/mer). Moyenne ~25j entre commandes. Prochaine commande le 14/10 (6 jours après la dernière du 08/10) semble prématurée si on suit le rythme habituel, mais possible si besoin de réapprovisionnement.
-
-**TENDANCE NETTE**: Transition claire de 350u (standard N-1) vers 434u depuis août 2025. Les 3 dernières commandes sont TOUTES à 434u, confirmant un nouveau palier de demande stable (+24% vs N-1). Aucun outlier détecté - les 350u de N-1 et 305u (mai 2024) reflètent simplement l'ancien niveau.
-
-**SAISONNALITÉ**: Aucun impact saisonnier détectable. Octobre N-1 montrait 350u, cohérent avec le reste de l'année précédente. Pas de pic spécifique à cette période.
-
-**DÉCISION**: La récurrence parfaite de 434u sur les 3 dernières commandes (période récente totalement homogène) indique un nouveau standard de demande. En l'absence de saisonnalité et avec une tendance stabilisée à ce niveau, la prédiction optimale est 434u. Confiance élevée car pattern récent très cohérent.
+Pattern mensuel irrégulier confirmé : N-1 montrait des intervalles de 20-49j (moy 32j), N actuel stabilisé à 16-34j (moy 25j). La dernière commande du 08/10 (mer.) date de 5 jours seulement → le cycle mensuel n'est PAS encore complet. CEPENDANT, la date de prédiction 13/10 (lundi, +5j post-commande) est anormalement proche. En analysant les 3 derniers mois 2025 : toutes les commandes sont à 434u exactement (hausse structurelle vs 350u N-1). Aucun outlier détecté en N-1 pour octobre (350u = baseline normale). La saisonnalité faible justifie de suivre la nouvelle norme 2025. Comme le rythme mensuel réel est ~25j et qu'on est à J+5 post-commande, le prochain besoin théorique serait vers début novembre. MAIS si commande anticipée ou ajustement logistique client : la quantité reste 434u (nouvelle référence stable). Prédiction 434u reflète la demande de fond actuelle consolidée sur Q3 2025.
 
 </details>
 
 
 <details>
-<summary><strong>3. [LV363] LV BIO Tartin'apero Avocat 180g </strong> - LLM: 430u vs Médiane: 434u (Réel: 434u)</summary>
+<summary><strong>3. [LV363] LV BIO Tartin'apero Avocat 180g </strong> - LLM: 434u vs Médiane: 434u (Réel: 434u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 430u (confidence: low)
+- 🤖 **LLM prédit**: 434u (confidence: medium)
 - 📊 **Baseline N-1**: 434u
 - 📊 **Médiane**: 434u
 - ✅ **Réel commandé**: 434u
-- 📉 **Erreur LLM**: 4u (0.9%)
+- 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - 2 commandes récentes (~50 jours d'écart), données insuffisantes pour pattern fiable
+- **Pattern temporel**: Irrégulier - 2 commandes identifiées sur 3 mois, espacement non constant (49 jours entre août et octobre)
 - **Saisonnalité**: none
-- **Tendance**: Baisse -50% (864u → 434u entre août et octobre)
+- **Tendance**: Baisse nette -50% (864u → 434u en 49 jours)
 - **Outliers détectés**: 4u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE DÉTAILLÉE:**
+Historique très limité (3 commandes seulement, dont 1 mini-commande de 4u clairement exceptionnelle). Pattern irrégulier détecté avec 49 jours d'écart entre les 2 commandes significatives. La tendance récente montre une baisse de 50% (864u→434u). Sans saisonnalité N-1 et face à un rythme imprévisible, je m'appuie sur la dernière commande réelle (434u du 08/10) comme référence la plus fiable. Aucun élément ne suggère un retour au niveau de 864u (pas de rupture de stock, pas d'événement exceptionnel identifié). La prédiction de 434u reflète le niveau de demande actuel stabilisé, évitant tout surgonflage spéculatif. Confidence moyenne due au manque de profondeur historique.
 
-1. **RYTHMIQUE:** Seulement 3 points de données sur 2 mois (20 août et 8 octobre). Les 2 commandes principales sont espacées de ~49 jours. Le 4u du 20/08 est clairement une correction/erreur (commande complémentaire même jour). Pattern insuffisant pour établir un cycle fiable - impossible de déterminer si hebdomadaire ou mensuel.
+</details>
 
-2. **OUTLIERS:** Le 4u est une anomalie évidente (correction de commande le même jour que 864u). À exclure de l'analyse.
 
-3. **TENDANCE:** Entre les 2 vraies commandes (864u le 20/08 → 434u le 08/10), on observe une baisse de -50%. Cette chute significative peut indiquer:
-   - Ajustement après sur-stockage
-   - Baisse de demande client final
-   - Normalisation après période haute
+<details>
+<summary><strong>4. [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml</strong> - LLM: 400u vs Médiane: 500u (Réel: 200u)</summary>
 
-4. **SAISONNALITÉ:** Aucune donnée N-1 pour valider un pattern saisonnier. Impossible de savoir si octobre est structurellement différent d'août.
+**Quantités:**
+- 🤖 **LLM prédit**: 400u (confidence: medium)
+- 📊 **Baseline N-1**: 400u
+- 📊 **Médiane**: 500u
+- ✅ **Réel commandé**: 200u
+- 📉 **Erreur LLM**: 200u (100.0%)
+- 📉 **Erreur Médiane**: 300u (150.0%)
 
-5. **PRÉDICTION:** La date cible (14/10) est 6 jours après la dernière commande (08/10). Vu l'intervalle de ~50j observé, une nouvelle commande si tôt est peu probable SAUF si le client a changé son rythme. Si commande il y a, la tendance baissière récente (434u) est le meilleur indicateur disponible.
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Irrégulier multi-hebdomadaire (6-26 jours), dominante Mardi-Mercredi-Jeudi
+- **Saisonnalité**: weak
+- **Tendance**: Stable autour 400u (moyenne récente 467u avec pic 600u isolé)
+- **Outliers détectés**: 800u
 
-**CONCLUSION:** Avec données ultra-limitées, je m'appuie sur la dernière observation (434u) comme baseline. Légère réduction à 430u pour refléter la tendance baissière, mais confiance très faible vu le manque de profondeur historique.
+**🧠 Raisonnement LLM:**
+Pattern irrégulier avec intervalles 6j (sep04-sep10) puis 15j (sep10-oct13=33j projeté). Historique N-1 montre commandes 200-400u sauf pic 800u juin24 (outlier probable promo). Les 3 derniers mois affichent 400-400-600u. Le 600u du 19/08 semble ponctuel (pas de récurrence N-1). Baseline naturelle=400u confirmée par médiane historique et fréquence modale. Pas de saisonnalité octobre marquée (oct24=400u). Intervalle actuel 33j suggère commande imminente. Prédiction conservatrice 400u alignée sur rythme structurel, écartant le 600u comme variance non systématique.
+
+</details>
+
+
+<details>
+<summary><strong>5. [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml</strong> - LLM: 1u vs Médiane: 200u (Réel: 200u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Baseline N-1**: 200u
+- 📊 **Médiane**: 200u
+- ✅ **Réel commandé**: 200u
+- 📉 **Erreur LLM**: 199u (99.5%)
+- 📉 **Erreur Médiane**: 0u (0.0%)
+
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Irrégulier - Commandes espacées de 2-8 mois, principalement mardis/mercredis
+- **Saisonnalité**: none
+- **Tendance**: Arrêt total - Aucune commande depuis 16 mois (dernière: juin 2024)
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+SIGNAL D'ALERTE CRITIQUE: Produit en rupture totale d'activité depuis juin 2024 (16 mois). Historique N-1 montre commandes espacées (oct'23, déc'23, avril'24, juin'24) toutes à 200u, mais AUCUNE commande dans les 3 derniers mois = probable arrêt de référencement ou substitution produit. Pattern irrégulier (2-8 mois entre commandes) rend impossible toute prédiction fiable pour octobre 2025. En l'absence totale de signal récent et avec 16 mois de silence commercial, la probabilité d'une commande spontanée le 13/10/2025 est quasi-nulle. Recommandation minimale (1u) par contrainte technique du schéma, mais la prédiction réaliste serait 0u. Ce produit nécessite une investigation commerciale urgente pour confirmer s'il est toujours actif dans le catalogue client.
+
+</details>
+
+
+<details>
+<summary><strong>6. [LV356] LV SET 3 X 135G trisauces  SDP</strong> - LLM: 1u vs Médiane: 512u (Réel: 256u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1u (confidence: low)
+- 📊 **Baseline N-1**: 576u
+- 📊 **Médiane**: 512u
+- ✅ **Réel commandé**: 256u
+- 📉 **Erreur LLM**: 255u (99.6%)
+- 📉 **Erreur Médiane**: 256u (100.0%)
+
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Irrégulier - Seulement 2 commandes historiques espacées de ~2 mois (7-août → 1-oct 2024)
+- **Saisonnalité**: none
+- **Tendance**: Impossible à établir - Données insuffisantes (2 points seulement, aucune commande depuis 12 mois)
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+SITUATION CRITIQUE - Produit quasi-dormant : Seulement 2 commandes en historique (août et octobre 2024), puis AUCUNE commande depuis 12 mois. Pas de pattern détectable, pas de saisonnalité N-1 exploitable pour octobre 2025. Les 2 commandes historiques (640u et 512u, moyenne 576u) sont trop anciennes et isolées pour servir de base fiable. L'absence totale de commandes récentes suggère soit un arrêt de référencement, soit un changement de fournisseur, soit une disparition du besoin client. En contexte B2B agroalimentaire, 12 mois sans commande = signal d'arrêt. Recommandation minimale de 1u pour maintenir techniquement la référence active, mais forte probabilité que le besoin réel soit 0. Action requise : Vérifier statut commercial du produit avant toute commande.
+
+</details>
+
+
+
+
+### 📊 Données d'Input LLM (6 produits)
+
+
+<details>
+<summary><strong>1. [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-08 11:33:10: 200u
+- 2025-09-16 11:31:53: 200u
+- 2025-08-20 10:22:31: 196u
+- 2025-08-20 10:22:31: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 200u (confidence: high)
+**📊 Quantité Réelle**: 400u
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml </strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-08 11:33:10: 434u
+- 2025-09-04 09:10:58: 434u
+- 2025-08-19 07:26:59: 434u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-01 08:46:54: 350u
+- 2024-09-11 07:42:30: 350u
+- 2024-08-08 07:00:55: 350u
+- 2024-08-07 07:54:26: 350u
+- 2024-06-11 08:53:39: 350u
+- 2024-05-23 09:00:22: 305u
+- 2024-04-24 08:56:28: 350u
+- 2024-04-02 13:39:05: 350u
+- 2024-01-30 09:51:19: 350u
+- 2023-12-19 08:25:50: 350u
+- 2023-11-07 14:19:04: 350u
+
+**✅ Quantité LLM**: 434u (confidence: high)
+**📊 Quantité Réelle**: 434u
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV363] LV BIO Tartin'apero Avocat 180g </strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-08 11:33:10: 434u
+- 2025-08-20 10:22:31: 864u
+- 2025-08-20 10:22:31: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 434u (confidence: medium)
+**📊 Quantité Réelle**: 434u
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 09:37:56: 400u
+- 2025-09-04 09:10:58: 400u
+- 2025-08-19 07:26:59: 600u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-10 12:10:09: 400u
+- 2024-09-11 07:42:30: 200u
+- 2024-08-08 07:00:55: 200u
+- 2024-08-07 07:54:26: 400u
+- 2024-06-11 08:46:37: 800u
+- 2024-05-23 09:00:22: 400u
+- 2024-04-24 08:56:28: 400u
+- 2024-04-02 13:39:05: 400u
+- 2024-03-25 14:38:30: 200u
+- 2024-03-13 08:07:55: 400u
+- 2024-01-30 09:51:19: 400u
+- 2023-12-19 08:26:46: 400u
+
+**✅ Quantité LLM**: 400u (confidence: medium)
+**📊 Quantité Réelle**: 200u
+
+</details>
+
+
+<details>
+<summary><strong>5. [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- Aucune commande récente
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-06-11 08:46:37: 200u
+- 2024-04-02 13:39:05: 200u
+- 2023-12-19 08:25:50: 200u
+- 2023-10-18 13:56:51: 200u
+
+**✅ Quantité LLM**: 1u (confidence: low)
+**📊 Quantité Réelle**: 200u
+
+</details>
+
+
+<details>
+<summary><strong>6. [LV356] LV SET 3 X 135G trisauces  SDP</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- Aucune commande récente
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-01 08:31:17: 512u
+- 2024-08-07 07:56:04: 640u
+
+**✅ Quantité LLM**: 1u (confidence: low)
+**📊 Quantité Réelle**: 256u
 
 </details>
 
@@ -293,24 +449,24 @@ Cependant, si commande il y a à cette date, elle suivra le pattern établi de 2
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml | 200 | Stock prédit: 132.8u (9j restants) → prédit 200u mais non commandé |
-| [LV234] LV "CLASSIQUE" WECK Mayonnaise aus œufs 250ml | 400 | Stock prédit: 332.0u (24j restants) → prédit 400u mais non commandé |
-| [LV313] LV "CLASSIQUE" WECK Sauce COCKTAIL 250ml | 200 | Stock prédit: 163.6u (22j restants) → prédit 200u mais non commandé |
-| [LV236] LV "CLASSIQUE" WECK Sauce TARTARE 250ml | 200 | Stock prédit: 151.5u (15j restants) → prédit 200u mais non commandé |
-| [LV303] LV BIO  Tartin'apero Mangue curry SDP 200 ml  | 434 | Stock prédit: 335.2u (16j restants) → prédit 434u mais non commandé |
-| [LV358] LV SDP SAUCE BEARNAISE 125G (copie) | 350 | Stock prédit: 169.1u (25j restants) → prédit 350u mais non commandé |
-| [LV302] LV BIO Tartin'apero Carotte Gingembre SDP 200 ml  | 392 | Stock prédit: -192.8u (-9j restants) → prédit 392u mais non commandé |
-| [LV314] LV "CLASSIQUE" WECK Sauce AIOLI PESTO 250ml | 200 | Stock prédit: -83.6u (-11j restants) → prédit 200u mais non commandé |
-| [LV334] LA VACHE TRAD Sauce au poivre bocal 250ml WECK SDP | 200 | Stock prédit: -102.9u (-13j restants) → prédit 200u mais non commandé |
-| [LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml  | 434 | Stock prédit: -79.9u (-6j restants) → prédit 434u mais non commandé |
-| [LV307] LV BIO Tartin'apero Houmous type SDP 200 ml  | 392 | Stock prédit: 137.1u (18j restants) → prédit 392u mais non commandé |
-| [LV tritart 135] LV BIO SET 3 X 135G TARTIN'APERO SDP | 256 | Stock prédit: -131.7u (-13j restants) → prédit 256u mais non commandé |
-| [LV337] LV BIO Tartin'apero TOMATE AIL DES OURS SDP 200ml | 434 | Stock prédit: -27.2u (-2j restants) → prédit 434u mais non commandé |
+| [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml | 200 | Stock prédit: 145.8u (10j restants) → prédit 200u mais non commandé |
+| [LV234] LV "CLASSIQUE" WECK Mayonnaise aus œufs 250ml | 400 | Stock prédit: 345.1u (25j restants) → prédit 400u mais non commandé |
+| [LV313] LV "CLASSIQUE" WECK Sauce COCKTAIL 250ml | 200 | Stock prédit: 170.4u (23j restants) → prédit 200u mais non commandé |
+| [LV236] LV "CLASSIQUE" WECK Sauce TARTARE 250ml | 200 | Stock prédit: 160.8u (16j restants) → prédit 200u mais non commandé |
+| [LV303] LV BIO  Tartin'apero Mangue curry SDP 200 ml  | 434 | Stock prédit: 354.3u (17j restants) → prédit 434u mais non commandé |
+| [LV358] LV SDP SAUCE BEARNAISE 125G (copie) | 350 | Stock prédit: 175.0u (25j restants) → prédit 350u mais non commandé |
+| [LV302] LV BIO Tartin'apero Carotte Gingembre SDP 200 ml  | 392 | Stock prédit: -186.4u (-9j restants) → prédit 392u mais non commandé |
+| [LV314] LV "CLASSIQUE" WECK Sauce AIOLI PESTO 250ml | 200 | Stock prédit: -81.5u (-10j restants) → prédit 200u mais non commandé |
+| [LV334] LA VACHE TRAD Sauce au poivre bocal 250ml WECK SDP | 200 | Stock prédit: -98.0u (-12j restants) → prédit 200u mais non commandé |
+| [LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml  | 434 | Stock prédit: -70.9u (-5j restants) → prédit 434u mais non commandé |
+| [LV307] LV BIO Tartin'apero Houmous type SDP 200 ml  | 392 | Stock prédit: 141.9u (18j restants) → prédit 392u mais non commandé |
+| [LV tritart 135] LV BIO SET 3 X 135G TARTIN'APERO SDP | 256 | Stock prédit: -125.5u (-12j restants) → prédit 256u mais non commandé |
+| [LV337] LV BIO Tartin'apero TOMATE AIL DES OURS SDP 200ml | 434 | Stock prédit: -19.8u (-1j restants) → prédit 434u mais non commandé |
 | [LV362] LV BIO Tartin'apero Olives Câpres Tomate SDP 200 ml bio (copie) | 217 | Stock prédit: -4.0u (0j restants) → prédit 217u mais non commandé |
 | [LV364] LV SDP SAUCE Cocktail  125ML | 175 | Stock prédit: -4.0u (0j restants) → prédit 175u mais non commandé |
-| [LV306] LV BIO Tartin'apero Olives Vertes SDP200 ml  | 350 | Stock prédit: -23.8u (-3j restants) → prédit 350u mais non commandé |
-| [LV301] LV BIO Tartin'apero Aubergine SDP 200 ml  | 350 | Stock prédit: 24.2u (7j restants) → prédit 350u mais non commandé |
-| [LV327] LV BIO Tartin'apero Toscane SDP 200 ml   | 350 | Stock prédit: 24.2u (7j restants) → prédit 350u mais non commandé |
+| [LV306] LV BIO Tartin'apero Olives Vertes SDP200 ml  | 350 | Stock prédit: -20.6u (-2j restants) → prédit 350u mais non commandé |
+| [LV301] LV BIO Tartin'apero Aubergine SDP 200 ml  | 1 | Stock prédit: 26.9u (8j restants) → prédit 1u mais non commandé |
+| [LV327] LV BIO Tartin'apero Toscane SDP 200 ml   | 350 | Stock prédit: 26.9u (8j restants) → prédit 350u mais non commandé |
 
 
 ---
@@ -335,9 +491,9 @@ Cependant, si commande il y a à cette date, elle suivra le pattern établi de 2
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 418.7u (136j restants > seuil 30j) |
+| [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 421.7u (137j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:02:29.174Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:47.914Z*

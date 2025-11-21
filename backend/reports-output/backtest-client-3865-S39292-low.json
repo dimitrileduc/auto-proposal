@@ -3,8 +3,8 @@
   "clientName": "REWE MARKT GMBH - WEST",
   "orderName": "S39292",
   "orderDate": "2025-09-23 06:18:30",
-  "cutoffDate": "2025-09-23 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-09-22 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 23,
-    "promptTokens": 47401,
-    "completionTokens": 13799,
-    "totalTokens": 61200,
-    "costUSD": 0.349188
+    "promptTokens": 34544,
+    "completionTokens": 7524,
+    "totalTokens": 42068
   }
 }

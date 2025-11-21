@@ -5,16 +5,14 @@
 - **Client** : Alnatura Produktions- und Handels GmbH, Invoice Address (ID: 23614)
 - **Commande réelle** : S39603
 - **Date commande** : 2025-10-08 06:27:53
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 5
-- **Tokens**: 10,908 input + 2,810 output = 13,718 total
-- **Coût**: $0.0749 (~7.49¢)
-- **Coût par produit LLM**: $0.0150
+- **Tokens**: 8,108 input + 1,460 output = 9,568 total
 
 
 ---
@@ -147,11 +145,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [LV105] LV Tomate Basil Aufstr 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV106] LV Oliven Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [LV102] LV Karot. Ingwer Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV105] LV Tomate Basil Aufstr 180g | 300 | 300 | 0.0 | 0.0% | 🎯 exact | ❌ Non | ❌ Non | 📊 Médiane |
+| [LV106] LV Oliven Aufstrich 180g DE | 300 | 300 | 0.0 | 0.0% | 🎯 exact | ❌ Non | ❌ Non | 📊 Médiane |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -169,38 +167,33 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Données insuffisantes - une seule commande observée
+- **Pattern temporel**: Une seule commande observée - Impossible de déterminer la fréquence
 - **Saisonnalité**: none
-- **Tendance**: Impossible à déterminer - historique trop limité
+- **Tendance**: Données insuffisantes - Une seule commande de 300u
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**CONTEXTE CRITIQUE : Historique extrêmement limité**
+Contexte ultra-limité: une seule commande de 300u il y a 42 jours (26 août). Aucune donnée N-1 pour saisonnalité, aucun pattern détectable. La prédiction pour le 7 octobre repose uniquement sur cette commande unique comme référence. Sans historique de fréquence (hebdomadaire? mensuel? trimestriel?), impossible de savoir si le client recommande maintenant ou plus tard. Par principe de précision et faute de signal contraire, je recommande la dernière quantité observée (300u) comme baseline. Confiance faible car probabilité élevée que le client n'ait pas encore besoin de réapprovisionner à cette date précise, mais 300u reste l'estimation la moins arbitraire disponible.
 
-Avec une seule commande dans l'historique (300u le 26/08/2025), la prédiction repose sur des hypothèses fragiles :
+</details>
 
-**1. ANALYSE RYTHMIQUE :**
-- Une seule observation = impossible d'identifier un pattern fiable
-- Intervalle jusqu'à la date de prédiction : 43 jours (26 août → 8 octobre)
-- Ce délai suggère soit un cycle mensuel (~30-45j), soit une irrégularité totale
 
-**2. ABSENCE DE RÉFÉRENCES :**
-- Aucune donnée N-1 pour valider un effet saisonnier automnal
-- Aucune série pour détecter tendance ou outliers
-- Produit spécifique (Carotte-Gingembre 180g DE) = niche potentielle avec demande erratique
 
-**3. LOGIQUE DE DÉCISION :**
-En l'absence totale de pattern, j'applique le principe de **continuité de la demande** :
-- La dernière commande (300u) devient la baseline par défaut
-- Hypothèse : le client maintient un niveau de stock similaire
-- Pas d'élément suggérant une variation (ni promotion, ni rupture visible)
 
-**RISQUES IDENTIFIÉS :**
-- Si commande unique = test produit → prochaine commande peut être 0 ou très différente
-- Si cycle réel > 45j → prédiction prématurée
-- Si client commande en fonction de ventes réelles → haute volatilité possible
+### 📊 Données d'Input LLM (1 produits)
 
-**CONCLUSION :** Je recommande **300 unités** par continuité, mais avec une **confiance faible** nécessitant un ajustement rapide dès nouvelles données disponibles.
+
+<details>
+<summary><strong>1. [LV102] LV Karot. Ingwer Aufstrich 180g DE</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-26 14:36:03: 300u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 300u (confidence: low)
+**📊 Quantité Réelle**: 300u
 
 </details>
 
@@ -229,11 +222,11 @@ En l'absence totale de pattern, j'applique le principe de **continuité de la de
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 300 | Stock prédit: 128.6u (25j restants) → prédit 300u mais non commandé |
-| [LV103] LV Mango Curry Aufstrich 180g | 300 | Stock prédit: -42.9u (-4j restants) → prédit 300u mais non commandé |
-| [LV104] LV Paprika Chili Aufstri 180g DE | 300 | Stock prédit: -128.6u (-10j restants) → prédit 300u mais non commandé |
-| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 300 | Stock prédit: -218.9u (-20j restants) → prédit 300u mais non commandé |
-| [LV341] LV Zwiebel Aufstrich 180g | 300 | Stock prédit: 68.8u (18j restants) → prédit 300u mais non commandé |
+| [LV160] LV Tartinade Aubergine 190g | 300 | Stock prédit: 132.2u (26j restants) → prédit 300u mais non commandé |
+| [LV103] LV Mango Curry Aufstrich 180g | 300 | Stock prédit: -35.6u (-3j restants) → prédit 300u mais non commandé |
+| [LV104] LV Paprika Chili Aufstri 180g DE | 300 | Stock prédit: -119.5u (-9j restants) → prédit 300u mais non commandé |
+| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 300 | Stock prédit: -212.7u (-19j restants) → prédit 300u mais non commandé |
+| [LV341] LV Zwiebel Aufstrich 180g | 300 | Stock prédit: 72.3u (19j restants) → prédit 300u mais non commandé |
 
 
 ---
@@ -264,4 +257,4 @@ En l'absence totale de pattern, j'applique le principe de **continuité de la de
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:02:32.272Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:54.517Z*

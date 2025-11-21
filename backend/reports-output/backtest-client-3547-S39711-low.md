@@ -5,16 +5,14 @@
 - **Client** : K&F DE PAUW (ID: 3547)
 - **Commande réelle** : S39711
 - **Date commande** : 2025-10-14 07:25:09
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 9
-- **Tokens**: 19,723 input + 5,680 output = 25,403 total
-- **Coût**: $0.1444 (~14.44¢)
-- **Coût par produit LLM**: $0.0160
+- **Appels**: 10
+- **Tokens**: 16,270 input + 3,580 output = 19,850 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:03:26.333Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:23.775Z*

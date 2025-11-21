@@ -5,16 +5,14 @@
 - **Client** : Epicerie Uhoda Beaufays (ID: 17669)
 - **Commande réelle** : S39600
 - **Date commande** : 2025-10-08 07:26:15
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 35
-- **Tokens**: 72,666 input + 20,756 output = 93,422 total
-- **Coût**: $0.5293 (~52.93¢)
-- **Coût par produit LLM**: $0.0151
+- **Appels**: 36
+- **Tokens**: 54,480 input + 11,538 output = 66,018 total
 
 
 ---
@@ -168,7 +166,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.3u (-19j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.2u (-18j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -192,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:01:54.016Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:33.036Z*

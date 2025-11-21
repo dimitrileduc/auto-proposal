@@ -3,8 +3,8 @@
   "clientName": "Oufticoop SC",
   "orderName": "S39719",
   "orderDate": "2025-10-14 10:33:03",
-  "cutoffDate": "2025-10-14 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 17,
-    "promptTokens": 34422,
-    "completionTokens": 9260,
-    "totalTokens": 43682,
-    "costUSD": 0.24216600000000002
+    "calls": 20,
+    "promptTokens": 29176,
+    "completionTokens": 5944,
+    "totalTokens": 35120
   }
 }

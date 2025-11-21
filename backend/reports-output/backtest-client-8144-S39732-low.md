@@ -5,16 +5,14 @@
 - **Client** : DELISALADES, Jean-Luc Durré (ID: 8144)
 - **Commande réelle** : S39732
 - **Date commande** : 2025-10-15 07:52:35
-- **Date cutoff système** : 2025-10-15 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 2
-- **Tokens**: 4,133 input + 1,157 output = 5,290 total
-- **Coût**: $0.0298 (~2.98¢)
-- **Coût par produit LLM**: $0.0149
+- **Tokens**: 3,003 input + 742 output = 3,745 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:33.587Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:55.946Z*

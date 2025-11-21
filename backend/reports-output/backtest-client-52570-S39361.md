@@ -5,16 +5,14 @@
 - **Client** : ASBL L'Accueil - Magasin du Val Dieu (ID: 52570)
 - **Commande réelle** : S39361
 - **Date commande** : 2025-09-24 09:45:50
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-23 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 13
-- **Tokens**: 27,331 input + 7,437 output = 34,768 total
-- **Coût**: $0.1935 (~19.35¢)
-- **Coût par produit LLM**: $0.0149
+- **Tokens**: 20,051 input + 4,145 output = 24,196 total
 
 
 ---
@@ -74,7 +72,7 @@
 | **MAE** | 0.75 unités | Erreur moyenne absolue (symétrique) |
 | **wMAPE** | 35.3% | ⚖️ Erreur pondérée robuste (métrique principale) |
 | **MAPE** | 41.7% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 35.3% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **Bias** | 23.5% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 6 | Avec erreur |
 
@@ -147,64 +145,40 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 📊 Médiane |
-| [LV161] LV Tartinade Mangue curry 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [LV160] LV Tartinade Aubergine 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
+| [LV161] LV Tartinade Mangue curry 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 4 | 3 | 1.0 | 33.3% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ❌ Non | ❌ Non | 📊 Médiane |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | 1 | 1.0 | 100.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
 
 
 ### 🤖 Détails des Prédictions LLM (4 produits)
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM: 4u vs Médiane: 4u (Réel: 3u)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM: 2u vs Médiane: 4u (Réel: 3u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 4u (confidence: medium)
-- 📊 **Baseline N-1**: 3.5u
+- 🤖 **LLM prédit**: 2u (confidence: medium)
+- 📊 **Baseline N-1**: 3.2u
 - 📊 **Médiane**: 4u
 - ✅ **Réel commandé**: 3u
 - 📉 **Erreur LLM**: 1u (33.3%)
 - 📉 **Erreur Médiane**: 1u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel irrégulier (~22-30j), commandes principalement en semaine (lun-jeu)
+- **Pattern temporel**: Irrégulier - Intervalles variables (22-25-27 jours récemment, mais historique montre gaps de 3-4 semaines)
 - **Saisonnalité**: weak
-- **Tendance**: Baisse significative -60% sur période récente
-- **Outliers détectés**: 5u, 1u
+- **Tendance**: Baisse significative -75% (de 4u moyenne N-1 à 1u dernière commande)
+- **Outliers détectés**: 5u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: 
-- Intervalles récents: 22j (10 juil→4 août), 22j (4 août→26 août), puis 29j jusqu'au 24 sept
-- Pattern mensuel irrégulier mais respecté (~3-4 semaines)
-- Le 24/09 (mercredi) suit le rythme attendu
-
-**FILTRAGE OUTLIERS**:
-- Le 5u du 27/06/24 semble exceptionnel (seule occurrence)
-- Le 1u du 26/08/25 est anormal (probable rupture stock ou commande partielle)
-- Volume normal historique N-1: 3-4u (médiane = 4u)
-
-**ANALYSE DE TENDANCE**:
-- N-1 (août-sept 2024): 4u régulièrement
-- Période récente montre volatilité: 4u → 4u → **1u** (anomalie claire)
-- Si on exclut l'anomalie à 1u: tendance stable autour de 4u
-
-**SAISONNALITÉ**:
-- Septembre N-1: 2 commandes de 4u (début et fin de mois)
-- Impact saisonnier faible mais présence d'une demande régulière en septembre
-
-**DÉCISION**:
-- Baseline théorique: 3.5u (moyenne hors outliers)
-- Le rythme mensuel suggère une commande imminente
-- Alignement avec historique septembre N-1 et volume récent "normal" de 4u
-- La commande à 1u étant aberrante, on revient au standard observé de 4u
-- **Prédiction: 4 unités** (volume modal et cohérent avec pattern mensuel)
+Historique N-1 montre une demande stable de 3-4u (moyenne 3.78u) sur période sept-oct 2024. CEPENDANT, tendance récente 3 mois révèle changement structurel : 4u→4u→1u avec dernière commande 26/08 (28 jours avant date prédiction). Le passage brutal à 1u le 26/08 signale soit un changement de stratégie d'achat (commandes plus fréquentes/petites), soit une baisse réelle de la demande. L'intervalle de 28 jours depuis dernière commande reste dans la norme observée. En l'absence de saisonnalité forte (weak impact sept N-1 vs N) et face à cette rupture de tendance nette, je privilégie un compromis entre le nouveau pattern (1u) et la baseline historique (3-4u). La quantité 2u représente un ajustement conservateur reflétant la nouvelle dynamique tout en évitant de sous-estimer si la commande de 1u était exceptionnellement basse. Pas de rattrapage attendu car rythme respecté.
 
 </details>
 
@@ -221,34 +195,13 @@
 - 📉 **Erreur Médiane**: 1u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel irrégulier ~20-30j entre commandes
+- **Pattern temporel**: Mensuel irrégulier ~25-30j (derniers intervalles: 22j, 27j, 25j)
 - **Saisonnalité**: weak
-- **Tendance**: Stable autour de 4u
+- **Tendance**: Stable autour de 4u (8/11 commandes = 4u)
 - **Outliers détectés**: 5u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les 3 dernières commandes montrent un pattern régulier:
-- 10/07/2025 → 04/08/2025 (25 jours)
-- 04/08/2025 → 26/08/2025 (22 jours)
-- 26/08/2025 → 24/09/2025 (29 jours prévu)
-
-Le rythme mensuel est respecté (~20-30j), pas de rupture anormale.
-
-**FILTRAGE OUTLIERS:**
-Sur N-1, une commande à 5u (27/06/2024) se distingue légèrement, mais reste proche de la norme. Les 3 derniers mois montrent une parfaite stabilité à 4u (100% des commandes).
-
-**SAISONNALITÉ:**
-Comparaison N-1 vs actuel pour la période août-septembre:
-- 2024: 4u (05/08), 4u (02/09), 4u (20/09) 
-- 2025: 4u (04/08), 4u (26/08)
-→ Impact saisonnier faible, volumes identiques année après année.
-
-**TENDANCE:**
-Aucune évolution à la hausse ou à la baisse. La demande est remarquablement stable à 4u par commande depuis 10 mois (8 des 11 commandes = 4u).
-
-**CONCLUSION:**
-Produit à demande prévisible avec pattern mensuel stable. La prochaine commande fin septembre devrait suivre le volume standard de 4 unités, cohérent avec l'historique récent et la saisonnalité N-1.
+Pattern mensuel stable détecté avec 73% des commandes à 4u. Dernier cycle: 26/08→23/09 = 28j conforme au rythme habituel. La commande du 27/06/24 (5u) est isolée, possiblement liée à un événement ponctuel (pas de récurrence saisonnière). Tendance N-1 vs Récent identique (4u dominant). Aucun signal de rattrapage ni de saisonnalité forte en septembre. Baseline = 4u confirmée par la régularité récente.
 
 </details>
 
@@ -265,28 +218,13 @@ Produit à demande prévisible avec pattern mensuel stable. La prochaine command
 - 📉 **Erreur Médiane**: 1u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel irrégulier ~22-30j entre commandes
+- **Pattern temporel**: Mensuel irrégulier ~22-30j, pas de jour fixe (lun/mar/jeu/ven observés)
 - **Saisonnalité**: weak
-- **Tendance**: Stable à 4u depuis 3 mois
+- **Tendance**: Stable autour de 4u (3 derniers mois identiques à 4u)
 - **Outliers détectés**: 5u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les 3 derniers mois montrent un pattern mensuel avec intervalles de 22j (10/07→04/08), puis 22j (04/08→26/08). Nous sommes au 24/09, soit 29 jours après la dernière commande du 26/08 - dans la fenêtre attendue pour une nouvelle commande.
-
-**TENDANCE RÉCENTE:**
-Les 3 dernières commandes sont parfaitement stables à 4u (juil, août×2 2025). Cette régularité sur 3 mois consécutifs établit un baseline clair.
-
-**COMPARAISON N-1:**
-En sept 2024, deux commandes: 4u (02/09) et 4u (20/09). Le 24/09/2025 se situe entre ces deux dates. Les quantités de 5u observées en juin-août 2024 semblent être des variations ponctuelles, d'où leur classification en outliers.
-
-**SAISONNALITÉ:**
-Impact faible - pas de pattern saisonnier fort détecté pour cette tartinade. Les volumes oscillent entre 3-5u sur l'année sans pic marqué.
-
-**DÉCISION:**
-Le client a standardisé sa demande à 4u sur les 3 derniers mois avec une régularité parfaite. Le délai depuis la dernière commande (29j) correspond au pattern attendu. Aucun élément ne justifie une déviation de cette baseline stable.
-
-**Prédiction: 4 unités**
+Pattern mensuel irrégulier avec intervalle moyen 25j. Dernière commande le 26/08 (mar), prédiction pour le 23/09 soit 28j après → cohérent avec rythme observé. Les 3 dernières commandes sont strictement identiques à 4u (juil/août/août 2025). En N-1 même période sept: 4u commandé le 20/09. Aucun pic saisonnier détecté sur cette période. Les quantités de 5u (N-1) sont sporadiques et antérieures à juin 2024, la demande s'est stabilisée à 4u depuis juillet 2024. Pas de rupture de tendance, pas d'effet rattrapage attendu (rythme mensuel respecté). Recommandation: 4u avec haute confiance basée sur stabilité récente et cohérence N-1.
 
 </details>
 
@@ -296,28 +234,120 @@ Le client a standardisé sa demande à 4u sur les 3 derniers mois avec une régu
 
 **Quantités:**
 - 🤖 **LLM prédit**: 2u (confidence: medium)
-- 📊 **Baseline N-1**: 1.67u
+- 📊 **Baseline N-1**: 1.7u
 - 📊 **Médiane**: 2u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier, environ 20-30 jours entre commandes (22j puis 27j récemment)
+- **Pattern temporel**: Irrégulier - intervalle variable 22-47j, pas de jour fixe (lun/mar/jeu)
 - **Saisonnalité**: none
-- **Tendance**: Stable avec légère hausse (moyenne 1.57u en N-1 vs 1.67u récent)
+- **Tendance**: Stable - oscillation 1-2u, moyenne ~1.7u sur 12 mois
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique** : Les commandes sont irrégulières mais suivent un cycle approximatif de 20-30 jours. Dernières commandes : 10/07→04/08 (25j), 04/08→26/08 (22j), 26/08→24/09 (29j prévu). Le rythme mensuel est respecté.
+Historique montre demande de fond stable 1-2u sans saisonnalité marquée. Les 3u (avr/fév 2024) sont outliers isolés non récurrents. Cycle récent: 22j puis 23j puis 28j → rythme mensuel environ 24-28j. Dernière commande 26/08 (2u), prédiction pour 23/09 = 28j écart → cohérent avec pattern. Tendance récente favorise 2u (2 des 3 dernières), baseline 1.7u arrondi à 2u pour coller au comportement modal actuel. Pas de signal de rattrapage ni de pic saisonnier N-1 à cette date.
 
-**Analyse des quantités** : N-1 montre une moyenne de 1.57u (1,2,2,1,3,1,3) avec des pics à 3u considérés comme outliers (2 occurrences sur 7). Les 3 derniers mois montrent 2u, 1u, 2u (moyenne 1.67u). Le pattern récent alterne entre 1u et 2u.
+</details>
 
-**Saisonnalité** : Aucun pattern saisonnier détectable. Septembre N-1 montrait 1u, mais avec un seul point de donnée, pas de conclusion forte.
 
-**Tendance** : Très légère hausse de volume (+6% N vs N-1) mais globalement stable. La dernière commande du 26/08 était de 2u, et avant cela alternance 1u-2u.
 
-**Décision** : Compte tenu du pattern récent (2u le plus fréquent dans les 3 derniers mois : 2 occurrences sur 3), de l'intervalle respecté (~29j), et de l'absence de signal exceptionnel, je recommande **2 unités** comme quantité la plus probable.
+
+### 📊 Données d'Input LLM (4 produits)
+
+
+<details>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-26 07:12:09: 1u
+- 2025-08-04 11:51:02: 4u
+- 2025-07-10 11:10:19: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-20 12:13:39: 4u
+- 2024-09-02 13:29:56: 4u
+- 2024-08-05 08:15:52: 4u
+- 2024-06-27 05:39:39: 5u
+- 2024-06-05 12:11:39: 3u
+- 2024-05-08 09:59:31: 3u
+- 2024-04-16 12:46:58: 3u
+- 2024-03-25 10:03:13: 4u
+- 2024-02-20 11:06:01: 4u
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-26 07:12:09: 4u
+- 2025-08-04 11:51:02: 4u
+- 2025-07-10 11:10:19: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-20 12:13:39: 4u
+- 2024-09-02 13:29:56: 4u
+- 2024-08-05 08:15:52: 4u
+- 2024-06-27 05:39:39: 5u
+- 2024-06-05 12:11:39: 3u
+- 2024-05-08 09:59:31: 3u
+- 2024-04-16 12:46:58: 3u
+- 2024-03-25 10:03:13: 4u
+
+**✅ Quantité LLM**: 4u (confidence: high)
+**📊 Quantité Réelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-26 07:12:09: 4u
+- 2025-08-04 11:51:02: 4u
+- 2025-07-10 11:10:19: 4u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-20 12:13:39: 4u
+- 2024-09-02 13:29:56: 4u
+- 2024-08-05 08:15:52: 5u
+- 2024-06-27 05:39:39: 5u
+- 2024-06-05 12:11:39: 2u
+- 2024-05-08 09:59:31: 3u
+- 2024-04-16 12:46:58: 3u
+
+**✅ Quantité LLM**: 4u (confidence: high)
+**📊 Quantité Réelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-26 07:12:09: 2u
+- 2025-08-04 11:51:02: 1u
+- 2025-07-10 11:10:19: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-02 13:29:56: 1u
+- 2024-08-05 08:15:52: 2u
+- 2024-06-27 05:39:39: 2u
+- 2024-05-08 09:59:31: 1u
+- 2024-04-16 12:46:58: 3u
+- 2024-03-25 10:03:13: 1u
+- 2024-02-20 11:06:01: 3u
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 2u
 
 </details>
 
@@ -346,11 +376,11 @@ Le client a standardisé sa demande à 4u sur les 3 derniers mois avec une régu
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [WIG01] WIGNAC cidre naturel bio 330ml | 4 | Stock prédit: 2.3u (16j restants) → prédit 4u mais non commandé |
-| [WIG02] WIGNAC cidre rosé bio 330ml | 3 | Stock prédit: 1.4u (10j restants) → prédit 3u mais non commandé |
-| [WIG03] WIGNAC cidre naturel bio 750ml | 4 | Stock prédit: 1.7u (9j restants) → prédit 4u mais non commandé |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 4 | Stock prédit: 1.7u (9j restants) → prédit 4u mais non commandé |
-| [LV136] LV Tartinade Betterave 190g | 4 | Stock prédit: 0.0u (0j restants) → prédit 4u mais non commandé |
+| [WIG01] WIGNAC cidre naturel bio 330ml | 4 | Stock prédit: 2.4u (16j restants) → prédit 4u mais non commandé |
+| [WIG02] WIGNAC cidre rosé bio 330ml | 3 | Stock prédit: 1.5u (11j restants) → prédit 3u mais non commandé |
+| [WIG03] WIGNAC cidre naturel bio 750ml | 4 | Stock prédit: 1.9u (9j restants) → prédit 4u mais non commandé |
+| [WIG04] WIGNAC cidre rosé bio 750ml | 4 | Stock prédit: 1.9u (9j restants) → prédit 4u mais non commandé |
+| [LV136] LV Tartinade Betterave 190g | 4 | Stock prédit: 0.1u (0j restants) → prédit 4u mais non commandé |
 | [LV132] LV Tartinade Houmous type 190g | 3 | Stock prédit: -0.6u (-10j restants) → prédit 3u mais non commandé |
 
 
@@ -375,4 +405,4 @@ Le client a standardisé sa demande à 4u sur les 3 derniers mois avec une régu
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:07:27.975Z*
+*Rapport généré automatiquement le 2025-11-20T13:29:32.355Z*

@@ -5,16 +5,14 @@
 - **Client** : AU RAYON BIO (ID: 17809)
 - **Commande réelle** : S39577
 - **Date commande** : 2025-10-09 06:15:56
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 13
-- **Tokens**: 29,170 input + 7,896 output = 37,066 total
-- **Coût**: $0.2059 (~20.59¢)
-- **Coût par produit LLM**: $0.0158
+- **Appels**: 14
+- **Tokens**: 23,326 input + 4,912 output = 28,238 total
 
 
 ---
@@ -147,9 +145,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [LV345] LV Spread KIDS 200ml Organic | 3 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [LV345] LV Spread KIDS 200ml Organic | 3 | 2 | 1.0 | 50.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
+
+
 
 
 
@@ -194,4 +194,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:54.264Z*
+*Rapport généré automatiquement le 2025-11-20T13:28:59.974Z*

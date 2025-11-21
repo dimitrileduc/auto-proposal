@@ -5,16 +5,14 @@
 - **Client** : HOUGARDY S.A. (ID: 3576)
 - **Commande réelle** : S39635
 - **Date commande** : 2025-10-09 09:00:46
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 2
-- **Tokens**: 4,530 input + 1,257 output = 5,787 total
-- **Coût**: $0.0324 (~3.24¢)
-- **Coût par produit LLM**: $0.0162
+- **Tokens**: 3,414 input + 659 output = 4,073 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:02:56.174Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:01.218Z*

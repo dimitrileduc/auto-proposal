@@ -5,16 +5,14 @@
 - **Client** : DELHAIZE LE LION/DE LEEUW NV (ID: 3452)
 - **Commande réelle** : S39686
 - **Date commande** : 2025-10-13 07:49:42
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 8,712 input + 2,649 output = 11,361 total
-- **Coût**: $0.0659 (~6.59¢)
-- **Coût par produit LLM**: $0.0165
+- **Tokens**: 6,476 input + 1,364 output = 7,840 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:08.179Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:55.178Z*

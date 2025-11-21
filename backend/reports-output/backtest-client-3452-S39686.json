@@ -3,8 +3,8 @@
   "clientName": "DELHAIZE LE LION/DE LEEUW NV",
   "orderName": "S39686",
   "orderDate": "2025-10-13 07:49:42",
-  "cutoffDate": "2025-10-13 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 2,
     "fp": 2,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 4,
-    "promptTokens": 8712,
-    "completionTokens": 2649,
-    "totalTokens": 11361,
-    "costUSD": 0.065871
+    "promptTokens": 6476,
+    "completionTokens": 1364,
+    "totalTokens": 7840
   }
 }

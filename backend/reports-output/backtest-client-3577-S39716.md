@@ -5,16 +5,14 @@
 - **Client** : ITM ALIMENTAIRE BELGIUM (ID: 3577)
 - **Commande réelle** : S39716
 - **Date commande** : 2025-10-14 08:27:27
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,734 input + 1,892 output = 8,626 total
-- **Coût**: $0.0486 (~4.86¢)
-- **Coût par produit LLM**: $0.0162
+- **Tokens**: 5,057 input + 1,188 output = 6,245 total
 
 
 ---
@@ -71,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 56.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 46.7% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 46.7% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 88.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 73.3% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 75.0% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 20.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,61 +145,34 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF2036] ITM BOULETTES TOMATE 800 GR | 128 | 128 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF2996] ITM BO VIN CIBOULET PET 450 | 224 | 112 | 112.0 | 100.0% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF2036] ITM BOULETTES TOMATE 800 GR | 64 | 128 | 64.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF2996] ITM BO VIN CIBOULET PET 450 | 224 | 112 | 112.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
 
 
 <details>
-<summary><strong>1. [PF2036] ITM BOULETTES TOMATE 800 GR</strong> - LLM: 128u vs Médiane: 64u (Réel: 128u)</summary>
+<summary><strong>1. [PF2036] ITM BOULETTES TOMATE 800 GR</strong> - LLM: 64u vs Médiane: 64u (Réel: 128u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 128u (confidence: medium)
-- 📊 **Baseline N-1**: 96u
+- 🤖 **LLM prédit**: 64u (confidence: medium)
+- 📊 **Baseline N-1**: 85u
 - 📊 **Médiane**: 64u
 - ✅ **Réel commandé**: 128u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 64u (50.0%)
 - 📉 **Erreur Médiane**: 64u (50.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande principalement le Mardi, rythme irrégulier variant de 3 à 35 jours
+- **Pattern temporel**: Mensuel irrégulier (21-35j) - majoritairement Mardi
 - **Saisonnalité**: weak
-- **Tendance**: Stable autour de 64-128u, avec légère préférence pour 64u récemment
+- **Tendance**: Stable autour de 64-128u, moyenne ~96u
 - **Outliers détectés**: 192u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-- Pattern dominant: commandes le MARDI (9 occurrences sur 15)
-- La date de prédiction est un MARDI (2025-10-14), aligné avec le pattern habituel
-- Dernière commande: 2025-10-09 (jeudi), soit 5 jours avant → intervalle court suggérant un retour au rythme normal
-- Intervalles récents: 23j (16/09→09/10), puis 5j → client revient à une fréquence plus régulière
-
-**FILTRAGE OUTLIERS:**
-- 192u apparaît 2 fois (juin 2024, novembre 2023) → événements promotionnels ponctuels, à exclure
-- Novembre 2023 (192u) suit un pattern de fin de trimestre
-- Baseline sans outliers: majorité entre 64u et 128u
-
-**ANALYSE SAISONNALITÉ N-1:**
-- Sept 2024 (même période N-1): 64u le 03/09
-- Octobre N-1: pas de données directes, mais pattern stable 64-128u
-- Impact saisonnier FAIBLE: pas de pic marqué en octobre historiquement
-
-**TENDANCE RÉCENTE (3 mois):**
-- Août: 128u (lun) + 64u + 64u = oscillation 64-128u
-- Sept: 128u (mar)
-- Oct: 64u (jeu) mais commande exceptionnelle en milieu de semaine
-- **Point clé**: Le 16/09 (mardi) = 128u, c'est la référence la plus pertinente pour un mardi
-
-**DÉCISION:**
-- Prédiction pour un MARDI (jour de prédilection du client)
-- Dernière commande mardi: 128u (16/09)
-- Le 09/10 (64u jeudi) semble être un réassort court d'appoint
-- Baseline théorique: ~96u (moyenne pondérée)
-- **Recommandation: 128u** → quantité standard pour les commandes du mardi, cohérente avec le pattern récent et le retour au rythme normal
+Pattern: commandes espacées de 3-5 semaines, principalement le mardi (8/10 commandes). Les 192u (juin 2024 et nov 2023) sont des outliers promotionnels isolés. Tendance récente stable: 64u-128u avec alternance. Dernière commande le 09/10 (jeu) = 64u, soit 4 jours avant la date cible (13/10 lundi). Intervalle très court suggère que la commande du 09/10 était un réapprovisionnement partiel. Cependant, le pattern montre généralement 3-4 semaines entre commandes substantielles. Le rythme mensuel moyen (23j) n'est pas encore atteint depuis le 16/09 (128u). La date cible tombe un lundi (atypique vs pattern mardi). Analyse quantité: sur 3 derniers mois hors outliers, médiane=64u. La commande récente du 09/10 étant déjà à 64u avec seulement 4j d'écart, la probabilité d'une nouvelle commande immédiate est faible, MAIS si elle survient, elle suivra le pattern de base 64u (quantité la plus fréquente: 6/15 occurrences). Prédiction: 64u (demande de fond standard).
 
 </details>
 
@@ -211,33 +182,80 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 224u (confidence: medium)
-- 📊 **Baseline N-1**: 112u
+- 📊 **Baseline N-1**: 168u
 - 📊 **Médiane**: 224u
 - ✅ **Réel commandé**: 112u
 - 📉 **Erreur LLM**: 112u (100.0%)
 - 📉 **Erreur Médiane**: 112u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec concentration sur les mardis, intervalle variable de 1 à 70+ jours entre commandes
+- **Pattern temporel**: Irrégulier avec concentration sur Mardi/Lundi - Rythme variable (7j à 6 mois)
 - **Saisonnalité**: weak
-- **Tendance**: Hausse forte +200% (passage de 112u baseline N-1 à 224-448u en N)
+- **Tendance**: Hausse forte récente +200% (112u→224-448u) mais pic 448u suspect
 - **Outliers détectés**: 448u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: 
-L'historique N-1 montre des commandes principalement le mardi avec une baseline stable à 112u (10/12 commandes). En N, rupture de rythme : seulement 2 commandes récentes (04 et 05 août 2025), avec 224u + 448u sur 2 jours consécutifs, suggérant un rattrapage après ~70 jours sans commande.
+ANALYSE RYTHMIQUE: Historique N-1 montre commandes espacées (1-6 mois) de 112u base avec quelques 224u. Période récente montre rupture nette: 2 commandes en 2 jours (04/08 lun 224u + 05/08 mar 448u) = rattrapage évident après 6 mois de rupture depuis 08/07/24. FILTRAGE: Le 448u est clairement exceptionnel (doublement brutal jamais vu en N-1), probablement un rattrapage de stock. BASE NORMALE: N-1 oscille 112-224u avec moyenne ~130u. Tendance récente montre normalisation vers 224u (excluant le pic 448u). DÉCISION: Prochaine commande 13/10 = 70j après le rattrapage. Client revient à rythme normal. Quantité historique stable=112u mais dernière commande normale=224u. La tendance sous-jacente montre doublement du volume de base (112→224). Prédiction: 224u (niveau normalisé post-rattrapage, cohérent avec commande 04/08 hors pic exceptionnel 05/08).
 
-**FILTRAGE OUTLIERS**: 
-Le 448u du 05/08 est clairement exceptionnel (4x la baseline N-1, 2x la nouvelle norme N). La commande de 224u du 04/08 semble représenter le nouveau niveau de demande standard.
+</details>
 
-**TENDANCE**: 
-Doublement net de la demande de fond (112u → 224u), confirmé par la période récente. Le 448u est isolé et ne doit pas influencer la prédiction.
 
-**SAISONNALITÉ**: 
-Octobre 2024 ne montre aucune donnée, donc pas de référence saisonnière forte. Impact faible.
 
-**DÉCISION**: 
-La prédiction du 14/10/2025 (mardi, jour privilégié) doit refléter la nouvelle baseline à 224u, en écartant le pic de 448u comme événement ponctuel (probable promotion ou rattrapage). Intervalle depuis dernière commande (~70j) justifie une commande de reconstitution au niveau standard.
+
+### 📊 Données d'Input LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF2036] ITM BOULETTES TOMATE 800 GR</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 08:37:17: 64u
+- 2025-09-16 09:22:58: 128u
+- 2025-08-12 09:46:11: 64u
+- 2025-08-05 11:52:23: 64u
+- 2025-08-04 08:50:19: 128u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-03 12:49:47: 64u
+- 2024-06-11 06:48:14: 192u
+- 2024-05-21 13:18:20: 128u
+- 2024-04-23 07:54:51: 64u
+- 2024-04-09 09:07:56: 64u
+- 2024-03-19 08:47:39: 64u
+- 2024-02-13 10:12:54: 128u
+- 2024-01-16 13:29:59: 128u
+- 2023-11-29 10:59:25: 192u
+- 2023-11-07 14:55:48: 128u
+
+**✅ Quantité LLM**: 64u (confidence: medium)
+**📊 Quantité Réelle**: 128u
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF2996] ITM BO VIN CIBOULET PET 450</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-05 11:52:23: 448u
+- 2025-08-04 08:50:19: 224u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-07-08 06:47:45: 112u
+- 2024-06-11 06:48:14: 224u
+- 2024-05-21 13:18:20: 224u
+- 2024-05-16 11:00:25: 112u
+- 2024-04-23 07:54:51: 112u
+- 2024-04-09 09:07:56: 224u
+- 2024-03-19 08:47:39: 112u
+- 2024-03-12 11:47:36: 112u
+- 2024-02-13 10:12:54: 112u
+- 2024-01-16 13:29:59: 112u
+- 2023-12-27 07:11:21: 112u
+- 2023-11-07 14:55:48: 112u
+
+**✅ Quantité LLM**: 224u (confidence: medium)
+**📊 Quantité Réelle**: 112u
 
 </details>
 
@@ -266,7 +284,7 @@ La prédiction du 14/10/2025 (mardi, jour privilégié) doit refléter la nouvel
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF2997] ITM BO VIN YOGORETTE PET 450 | 112 | Stock prédit: 75.7u (8j restants) → prédit 112u mais non commandé |
+| [PF2997] ITM BO VIN YOGORETTE PET 450 | 112 | Stock prédit: 84.5u (9j restants) → prédit 112u mais non commandé |
 
 
 ---
@@ -290,4 +308,4 @@ La prédiction du 14/10/2025 (mardi, jour privilégié) doit refléter la nouvel
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:15.129Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:39.307Z*

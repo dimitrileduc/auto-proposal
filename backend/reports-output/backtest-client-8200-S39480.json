@@ -3,15 +3,15 @@
   "clientName": "BONNI, ACHAT",
   "orderName": "S39480",
   "orderDate": "2025-10-01 05:53:38",
-  "cutoffDate": "2025-10-01 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-09-30 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 2,
-    "fp": 19,
+    "fp": 18,
     "fn": 0,
-    "precision": 0.09523809523809523,
+    "precision": 0.1,
     "recall": 1,
-    "f1Score": 0.17391304347826084,
+    "f1Score": 0.18181818181818182,
     "mae": 5,
     "wmape": 25,
     "mape": 25,
@@ -22,10 +22,9 @@
     "partialMatch": 2
   },
   "llmUsage": {
-    "calls": 15,
-    "promptTokens": 30415,
-    "completionTokens": 8868,
-    "totalTokens": 39283,
-    "costUSD": 0.224265
+    "calls": 16,
+    "promptTokens": 23486,
+    "completionTokens": 5096,
+    "totalTokens": 28582
   }
 }

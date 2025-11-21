@@ -5,16 +5,14 @@
 - **Client** : DEPOT VRAC ATH (ID: 60286)
 - **Commande réelle** : S38709
 - **Date commande** : 2025-08-26 07:26:18
-- **Date cutoff système** : 2025-08-26 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-08-25 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 51
-- **Tokens**: 103,657 input + 28,831 output = 132,488 total
-- **Coût**: $0.7434 (~74.34¢)
-- **Coût par produit LLM**: $0.0146
+- **Appels**: 55
+- **Tokens**: 80,963 input + 16,181 output = 97,144 total
 
 
 ---
@@ -168,15 +166,15 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
-| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: -1.9u (-31j restants) → prédit 1u mais non commandé |
-| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: -2.9u (-47j restants) → prédit 1u mais non commandé |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -7.4u (-59j restants) → prédit 2u mais non commandé |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | Stock prédit: -1.9u (-30j restants) → prédit 1u mais non commandé |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | Stock prédit: -1.9u (-30j restants) → prédit 1u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -1.9u (-30j restants) → prédit 1u mais non commandé |
+| [RISH01] RISH kombucha BIO - original 330ml | 1 | Stock prédit: -1.9u (-30j restants) → prédit 1u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: -2.9u (-46j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: -2.9u (-46j restants) → prédit 1u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | Stock prédit: -2.9u (-46j restants) → prédit 1u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: -2.9u (-46j restants) → prédit 1u mais non commandé |
+| [LV342] LV Organic Broccoli Spread 190 g | 2 | Stock prédit: -7.3u (-58j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -200,4 +198,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:07:22.947Z*
+*Rapport généré automatiquement le 2025-11-20T13:35:43.376Z*

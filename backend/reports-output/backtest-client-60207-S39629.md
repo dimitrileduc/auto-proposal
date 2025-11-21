@@ -5,16 +5,14 @@
 - **Client** : BIOFRESH BELGIUM NV-SA (ID: 60207)
 - **Commande réelle** : S39629
 - **Date commande** : 2025-10-08 13:49:43
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 8
-- **Tokens**: 16,097 input + 4,469 output = 20,566 total
-- **Coût**: $0.1153 (~11.53¢)
-- **Coût par produit LLM**: $0.0144
+- **Appels**: 11
+- **Tokens**: 15,871 input + 3,201 output = 19,072 total
 
 
 ---
@@ -147,9 +145,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 120 | 120 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 120 | 120 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -160,28 +158,43 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 120u (confidence: medium)
-- 📊 **Baseline N-1**: 120u
+- 📊 **Baseline N-1**: 105u
 - 📊 **Médiane**: 120u
 - ✅ **Réel commandé**: 120u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - intervalles variables (14-21-27 jours) avec concentration sur mardi-mercredi
+- **Pattern temporel**: Irrégulier avec concentration sur mardis/mercredis - Intervalles variables: 14j, 13j, 34j, 21j
 - **Saisonnalité**: none
-- **Tendance**: Stable autour de 120u avec un seul creux à 60u
+- **Tendance**: Stable avec légère volatilité - Alternance 60-120u, dernière commande 120u
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique**: Les commandes montrent des intervalles variables (14j, 21j, 27j) sans pattern hebdomadaire ou mensuel strict. Cependant, on observe une préférence pour mardi-mercredi. Depuis le 16/09, 22 jours se sont écoulés, ce qui correspond à la fourchette habituelle du client.
+Pattern récent montre 4 commandes en 3 mois (Jul-Sep) avec moyenne de 105u. Analyse des intervalles: 21j→13j→34j→21j depuis dernier achat (2025-09-16). La prédiction tombe exactement 21j après la dernière commande (même intervalle que Jul23→Août26), ce qui correspond au rythme observé. Les quantités alternent 60-120-120-120u, montrant stabilisation à 120u sur les 3 dernières commandes. Pas d'outliers détectés, pas de saisonnalité N-1. Le mardi est jour privilégié (3/4 commandes). La tendance récente favorise 120u plutôt que retour à 60u. Commande de 120u alignée avec le pattern actuel et le jour de semaine habituel.
 
-**Analyse quantitative**: Sur 4 commandes récentes, 3 sont à 120u et 1 seule à 60u (26/08). La commande à 60u semble être un ajustement ponctuel (peut-être stock résiduel ou test), pas un outlier promotionnel. La tendance dominante est clairement 120u.
+</details>
 
-**Saisonnalité**: Pas de données N-1 pour valider un effet saisonnier. Le produit (thé glacé pétillant) pourrait être saisonnier (été), mais nous sommes début octobre, encore dans une période potentiellement favorable.
 
-**Décision**: La date de prédiction (08/10, mercredi) correspond au jour de semaine habituel. L'intervalle depuis la dernière commande (22 jours) justifie une nouvelle commande. La quantité modale récente est 120u (75% des cas). Aucun élément ne justifie de dévier de ce baseline.
 
-**Quantité recommandée: 120 unités**
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-16 06:05:48: 120u
+- 2025-08-26 08:04:32: 60u
+- 2025-07-23 09:53:39: 120u
+- 2025-07-09 06:47:03: 120u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 120u (confidence: medium)
+**📊 Quantité Réelle**: 120u
 
 </details>
 
@@ -210,20 +223,20 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 48 | Stock prédit: 31.1u (22j restants) → prédit 48u mais non commandé |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 14 | Stock prédit: 4.6u (10j restants) → prédit 14u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 14 | Stock prédit: -4.9u (-5j restants) → prédit 14u mais non commandé |
-| [ORG08] ORGANICA crunchy fruit framboise 12g | 18 | Stock prédit: 7.6u (15j restants) → prédit 18u mais non commandé |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 60 | Stock prédit: 13.8u (12j restants) → prédit 60u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 20 | Stock prédit: 4.6u (12j restants) → prédit 20u mais non commandé |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 60 | Stock prédit: 13.8u (12j restants) → prédit 60u mais non commandé |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 35 | Stock prédit: -43.8u (-68j restants) → prédit 35u mais non commandé |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 21 | Stock prédit: -20.7u (-53j restants) → prédit 21u mais non commandé |
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 9 | Stock prédit: -9.0u (-45j restants) → prédit 9u mais non commandé |
-| [ORG10] ORGANICA crunchy fruit mangue 18g | 18 | Stock prédit: -14.4u (-40j restants) → prédit 18u mais non commandé |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 56 | Stock prédit: -72.2u (-61j restants) → prédit 56u mais non commandé |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 28 | Stock prédit: -20.8u (-46j restants) → prédit 28u mais non commandé |
-| [ORG09] ORGANICA crunchy fruit cerise 20g | 18 | Stock prédit: -16.9u (-52j restants) → prédit 18u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 70 | Stock prédit: 32.2u (23j restants) → prédit 70u mais non commandé |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 14 | Stock prédit: 5.0u (11j restants) → prédit 14u mais non commandé |
+| [JOY05] Organic Cherry Jam 370g | 14 | Stock prédit: -4.1u (-4j restants) → prédit 14u mais non commandé |
+| [ORG08] ORGANICA crunchy fruit framboise 12g | 18 | Stock prédit: 8.0u (16j restants) → prédit 18u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 60 | Stock prédit: 14.4u (12j restants) → prédit 60u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 20 | Stock prédit: 4.8u (13j restants) → prédit 20u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 60 | Stock prédit: 14.4u (12j restants) → prédit 60u mais non commandé |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 35 | Stock prédit: -43.7u (-67j restants) → prédit 35u mais non commandé |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 21 | Stock prédit: -20.6u (-53j restants) → prédit 21u mais non commandé |
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 9 | Stock prédit: -8.9u (-44j restants) → prédit 9u mais non commandé |
+| [ORG10] ORGANICA crunchy fruit mangue 18g | 18 | Stock prédit: -14.2u (-39j restants) → prédit 18u mais non commandé |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: -71.5u (-60j restants) → prédit 1u mais non commandé |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 1 | Stock prédit: -20.6u (-45j restants) → prédit 1u mais non commandé |
+| [ORG09] ORGANICA crunchy fruit cerise 20g | 1 | Stock prédit: -16.7u (-52j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -247,4 +260,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:49.933Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:06.864Z*

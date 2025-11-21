@@ -5,16 +5,14 @@
 - **Client** : HYGIENA SA (ID: 17452)
 - **Commande réelle** : S39690
 - **Date commande** : 2025-10-13 08:23:06
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 18
-- **Tokens**: 38,405 input + 11,205 output = 49,610 total
-- **Coût**: $0.2833 (~28.33¢)
-- **Coût par produit LLM**: $0.0157
+- **Appels**: 22
+- **Tokens**: 34,359 input + 7,230 output = 41,589 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:58:09.321Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:15.350Z*

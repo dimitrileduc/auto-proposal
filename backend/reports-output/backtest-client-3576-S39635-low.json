@@ -3,8 +3,8 @@
   "clientName": "HOUGARDY S.A.",
   "orderName": "S39635",
   "orderDate": "2025-10-09 09:00:46",
-  "cutoffDate": "2025-10-09 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 2,
-    "promptTokens": 4530,
-    "completionTokens": 1257,
-    "totalTokens": 5787,
-    "costUSD": 0.032445
+    "promptTokens": 3414,
+    "completionTokens": 659,
+    "totalTokens": 4073
   }
 }

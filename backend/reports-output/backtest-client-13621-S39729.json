@@ -3,15 +3,15 @@
   "clientName": "FOODPRINT SRL",
   "orderName": "S39729",
   "orderDate": "2025-10-14 14:05:41",
-  "cutoffDate": "2025-10-14 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 4,
-    "fp": 129,
+    "fp": 128,
     "fn": 2,
-    "precision": 0.03007518796992481,
+    "precision": 0.030303030303030304,
     "recall": 0.6666666666666666,
-    "f1Score": 0.05755395683453238,
+    "f1Score": 0.057971014492753624,
     "mae": 154.25,
     "wmape": 42.0299727520436,
     "mape": 50,
@@ -22,10 +22,9 @@
     "partialMatch": 3
   },
   "llmUsage": {
-    "calls": 106,
-    "promptTokens": 217459,
-    "completionTokens": 62459,
-    "totalTokens": 279918,
-    "costUSD": 1.5892620000000004
+    "calls": 122,
+    "promptTokens": 182010,
+    "completionTokens": 39775,
+    "totalTokens": 221785
   }
 }

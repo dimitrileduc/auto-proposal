@@ -5,16 +5,14 @@
 - **Client** : BIOFRESH BELGIUM NV-SA (ID: 60207)
 - **Commande réelle** : S39629
 - **Date commande** : 2025-10-08 13:49:43
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 8
-- **Tokens**: 16,097 input + 4,469 output = 20,566 total
-- **Coût**: $0.1153 (~11.53¢)
-- **Coût par produit LLM**: $0.0144
+- **Appels**: 11
+- **Tokens**: 15,871 input + 3,201 output = 19,072 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:49.937Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:06.866Z*

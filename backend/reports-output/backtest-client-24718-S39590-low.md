@@ -5,8 +5,8 @@
 - **Client** : Brasserie Artisanale De Namur (Houppe) (ID: 24718)
 - **Commande réelle** : S39590
 - **Date commande** : 2025-10-07 06:10:13
-- **Date cutoff système** : 2025-10-07 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-06 00:00:00
+- **Jours d'avance** : 1j
 
 
 
@@ -179,4 +179,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:07:13.272Z*
+*Rapport généré automatiquement le 2025-11-20T13:29:06.713Z*

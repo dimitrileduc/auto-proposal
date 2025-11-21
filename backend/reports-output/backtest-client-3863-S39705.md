@@ -5,16 +5,14 @@
 - **Client** : C.F. GRELL NACHF. NATURKOST (ID: 3863)
 - **Commande réelle** : S39705
 - **Date commande** : 2025-10-13 14:04:36
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 8,949 input + 2,646 output = 11,595 total
-- **Coût**: $0.0665 (~6.65¢)
-- **Coût par produit LLM**: $0.0166
+- **Tokens**: 6,713 input + 1,398 output = 8,111 total
 
 
 ---
@@ -71,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 0.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 4.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 16.7% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 8.3% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | -16.7% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,12 +145,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 48 | 48 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 16 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [MF0062] ​MF Tarti Betterave rouge | 16 | 16 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 16 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 48 | 16.0 | 33.3% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 16 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [MF0062] ​MF Tarti Betterave rouge | 16 | 16 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (4 produits)
@@ -163,91 +161,43 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 16u (confidence: medium)
-- 📊 **Baseline N-1**: 16u
+- 📊 **Baseline N-1**: 18.7u
 - 📊 **Médiane**: 32u
 - ✅ **Réel commandé**: 16u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 16u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec espacement croissant - 14j entre sept, 58j entre juil-sept
+- **Pattern temporel**: Irrégulier avec tendance vers cycles ~14-21j (mer. dominant en 2025)
 - **Saisonnalité**: weak
-- **Tendance**: Baisse -67% (64u→48u→32u→16u sur dernières commandes)
+- **Tendance**: Baisse nette -66% (64u→48u→32u→16u sur T+3 mois)
 - **Outliers détectés**: 64u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les commandes récentes montrent:
-- 14 juil (lun): 64u
-- 10 sept (mer): 48u (58j plus tard)
-- 24 sept (mer): 32u (14j plus tard)  
-- 8 oct (mer): 16u (14j plus tard)
-→ Pattern irrégulier avec stabilisation récente sur rythme bi-mensuel (mercredi)
-
-**TENDANCE NETTE À LA BAISSE:**
-Séquence claire: 64→48→32→16 = baisse constante de -25% à chaque commande
-Cette décroissance systématique sur 3 mois suggère:
-- Soit perte de parts de marché
-- Soit rotation plus rapide du stock
-- Soit ajustement à la demande réelle du client final
-
-**SAISONNALITÉ N-1 FAIBLE:**
-Oct 2024: 32u (4 oct)
-La date de prédiction (13 oct 2025) est 5 jours après la dernière commande (8 oct: 16u)
-→ Trop tôt pour une nouvelle commande selon le rythme récent de ~14j
-
-**FILTRAGE OUTLIERS:**
-64u (juillet) identifié comme pic - période estivale possible. Les 48u et 32u de N-1 sont cohérents avec la tendance actuelle.
-
-**DÉCISION:**
-Vu que la dernière commande date de 5 jours seulement, et que le rythme s'est stabilisé à ~14j, la probabilité d'une commande le 13 oct est FAIBLE. Si commande, elle suivrait la tendance baissière → 16u (continuation du pattern 64→48→32→16).
-
-La prédiction prudente mais réaliste est 16u, alignée sur la demande la plus récente et la trajectoire observée.
+Pattern 2025: commandes mercredi espacées de 14-28j (10-sept→24-sept=14j, 24-sept→08-oct=14j). Dernière commande 08-oct=16u, date prédiction 12-oct (+4j seulement). TENDANCE BAISSIÈRE FORTE confirmée sur 4 commandes récentes (64→48→32→16, division par 4 sur 3 mois). N-1 oct-2024 montrait 32u (04-oct), mais contexte 2025 radicalement différent. Aucun indicateur de rattrapage immédiat vu le faible délai depuis dernière commande. La demande de fond actuelle s'établit autour 16-20u. Baseline=(16×3+32×2+48×1)/6=18.7u. Prédiction=16u (maintien du niveau actuel stable post-baisse). Pas de surgonflage: le client a réduit sa demande structurellement.
 
 </details>
 
 
 <details>
-<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM: 48u vs Médiane: 32u (Réel: 48u)</summary>
+<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM: 32u vs Médiane: 32u (Réel: 48u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 48u (confidence: medium)
+- 🤖 **LLM prédit**: 32u (confidence: medium)
 - 📊 **Baseline N-1**: 32u
 - 📊 **Médiane**: 32u
 - ✅ **Réel commandé**: 48u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 16u (33.3%)
 - 📉 **Erreur Médiane**: 16u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Bimensuel irrégulier (~14-28j), migration vers mercredi en 2025
+- **Pattern temporel**: Commande ~14-28j avec accélération récente (3 commandes mercredi en 3 mois)
 - **Saisonnalité**: weak
-- **Tendance**: Stable avec volumes 32-48u, légère hausse fréquence
+- **Tendance**: Stabilisation à 32u baseline avec pics 48u ponctuels
 - **Outliers détectés**: 48u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les 3 derniers mois montrent un pattern clair:
-- 2025-07-14 (lun.) → 2025-09-10 (mer.): 58 jours [32u]
-- 2025-09-10 (mer.) → 2025-09-24 (mer.): 14 jours [32u]
-- 2025-09-24 (mer.) → 2025-10-08 (mer.): 14 jours [48u]
-- 2025-10-08 (mer.) → 2025-10-13 (lun.): **5 jours seulement**
-
-Le client a établi un rythme bimensuel en septembre (14j) avec commandes le mercredi. La dernière commande date du 08/10 (mer.), soit il y a 5 jours seulement. Ceci est TRÈS court par rapport au pattern établi.
-
-**FILTRAGE OUTLIERS:**
-Les quantités de 48u apparaissent 3 fois (août 2024, juillet 2025, octobre 2025) mais ne sont pas des outliers - elles correspondent à des commandes de restockage plus importantes dans un cycle normal. La baseline est 32u (majorité des commandes N-1).
-
-**ANALYSE SAISONNALITÉ N-1:**
-Octobre 2024 montrait: 04/10 avec 32u (commande unique ce mois). Impact saisonnier faible - pas de pattern fort identifiable.
-
-**DÉCISION:**
-Le délai de 5 jours depuis la dernière commande (08/10) est ANORMAL par rapport au rythme récent (14j). DEUX scénarios:
-1. **Erreur de date prédiction** ou commande anticipée exceptionnelle → improbable
-2. **Commande de rattrapage/complément** après une vente forte
-
-La progression récente montre une accélération: 32u → 32u → 48u. La dernière commande à 48u + cycle très court suggère une demande soutenue. Cependant, commander 5 jours après suggère soit un besoin urgent, soit un volume plus important.
-
-**PRÉDICTION:** 48u - volume correspondant au niveau récent atteint (08/10), cohérent avec une commande de complément rapide dans un contexte de demande accrue.
+Pattern récent: 48u (14/07), 32u (10/09), 32u (24/09), 48u (08/10). Intervalle 08/10→12/10 = 4j seulement. Le client vient de commander il y a 4 jours (mercredi dernier 48u), ce qui est extrêmement court vs son rythme habituel 14-28j. Les 48u sont des pics ponctuels (probablement demande spécifique), la baseline stable est 32u (confirmé par N-1 et majorité des commandes récentes). Prédiction dimanche 12/10: trop tôt pour nouvelle commande pleine, mais si commande exceptionnelle survient, elle suivrait la baseline 32u plutôt qu'un pic 48u. Historique N-1 octobre: 32u (04/10). Recommandation conservatrice alignée sur pattern dominant 32u.
 
 </details>
 
@@ -264,23 +214,13 @@ La progression récente montre une accélération: 32u → 32u → 48u. La derni
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec tendance vers cycle ~14-28j. Récemment : 14j (10/09→24/09→08/10). Historique N-1 : intervalles variables (11-35j)
+- **Pattern temporel**: Mensuel irrégulier ~14-30j avec concentration récente sur Mercredis
 - **Saisonnalité**: none
-- **Tendance**: Stable - Quantité constante de 16u maintenue sur 3 derniers mois et alignée avec historique N-1 (hors pics 32u)
+- **Tendance**: Stable à 16u
 - **Outliers détectés**: 32u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les 3 dernières commandes montrent un cycle régulier de ~14 jours (10/09→24/09→08/10). La prédiction pour le 13/10 intervient 5 jours après la dernière commande (08/10), ce qui est TROP TÔT pour un réapprovisionnement immédiat si on suit le cycle de 14j. CEPENDANT, le pattern historique N-1 montre une variabilité d'intervalle, et la date du 13/10 pourrait correspondre à une commande de réassort anticipé.
-
-**FILTRAGE OUTLIERS**: Les commandes de 32u (14/06/2024 et 26/01/2024) sont clairement exceptionnelles - elles représentent un doublement ponctuel (promotion ou stock de sécurité). Toutes les autres commandes sur 20 mois = 16u strictement.
-
-**SYNTHÈSE**: 
-- Baseline ultra-stable : 16u (100% des commandes récentes)
-- Pas de saisonnalité détectable (volumes identiques oct 2024 vs oct 2025)
-- Tendance : STABLE (aucune dérive)
-- Date de prédiction (lundi 13/10) = 5j après dernier ordre → Si commande à cette date, c'est pour maintenir le stock régulier à 16u
-
-**DÉCISION**: La quantité la plus PROBABLE = 16u (pattern dominant absolu). Aucun signal ne justifie un doublement ou une variation.
+Pattern récent très clair: 3 commandes consécutives les 10/09, 24/09 et 08/10 (mer.) à 16u avec intervalles de 14j puis 14j. Rythme bimensuel établi sur mercredis. Prochaine commande attendue ~14j après le 08/10 soit vers le 22/10. MAIS la date de prédiction (12/10) est seulement 4j après la dernière commande du 08/10 - trop tôt pour le cycle naturel. Historique N-1 confirme baseline stable à 16u (outliers 32u=promotions ponctuelles en 01/2024 et 06/2024). Aucun événement saisonnier identifié en octobre N-1. Probabilité faible de commande le 12/10 car hors cycle, mais SI commande intervient, quantité sera 16u (cohérence totale historique). Prédiction: 16u avec haute confiance sur quantum mais réserve temporelle sur timing exact.
 
 </details>
 
@@ -297,35 +237,122 @@ La progression récente montre une accélération: 32u → 32u → 48u. La derni
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Commandes espacées: 14 jours puis 72 jours (rupture longue). Pattern hebdomadaire mercredi récent (2x consécutives)
+- **Pattern temporel**: Irrégulier avec écart significatif - 14j puis 45j puis 86j entre commandes
 - **Saisonnalité**: none
-- **Tendance**: Baisse -75% (64u → 16u stabilisé)
+- **Tendance**: Baisse forte -75% (64u→16u) puis Stable 16u
 - **Outliers détectés**: 64u
 
 **🧠 Raisonnement LLM:**
-**Analyse pas à pas:**
+Le produit MF Tarti Betterave rouge montre un historique court avec 3 commandes: 64u le 14/07, puis stabilisation à 16u les 24/09 et 08/10. La commande de 64u (86j avant) apparaît comme un événement exceptionnel (potentiel lancement, stockage initial ou promotion). Les 2 dernières commandes à 16u espacées de 14j établissent la nouvelle baseline. Depuis le 08/10, 4 jours se sont écoulés pour une prédiction au 12/10 (dimanche). Le pattern récent suggère un rythme ~bi-hebdomadaire avec quantité stable de 16u. Pas de saisonnalité N-1 disponible. La demande de fond étant établie à 16u sur les 2 derniers points, et aucun élément n'indiquant un retour au volume exceptionnel de 64u, la prédiction optimale est 16u. Confiance medium car historique limité mais tendance récente claire.
 
-1. **RYTHMIQUE DÉTECTÉE**: 
-   - Commande 64u le 14/07 (lundi) puis rupture de 72 jours
-   - Reprise le 24/09 (mercredi) avec 16u
-   - Nouvelle commande le 08/10 (mercredi) avec 16u (intervalle 14j)
-   - Pattern émergent: rythme bimensuel le mercredi depuis septembre
+</details>
 
-2. **OUTLIERS & TENDANCE**:
-   - 64u du 14/07 est clairement un outlier (4x supérieur aux commandes récentes)
-   - Possible commande de rattrapage post-rupture estivale ou changement de besoin client
-   - Depuis septembre: stabilisation à 16u/commande avec pattern régulier
 
-3. **ABSENCE DE SAISONNALITÉ**:
-   - Pas de données N-1 pour valider un cycle annuel
-   - La période analysée (juillet-octobre) ne montre pas de pattern saisonnier identifiable
 
-4. **DÉCISION**:
-   - La prédiction porte sur le 13/10 (lundi), soit 5 jours après la dernière commande du 08/10
-   - Le pattern récent montre un rythme ~14j entre commandes
-   - Trop tôt pour une nouvelle commande selon le rythme bimensuel observé
-   - Cependant, si commande intervient, volume attendu = baseline stabilisé à 16u
-   - **Prédiction: 16u** (niveau de demande structurelle actuelle)
+
+### 📊 Données d'Input LLM (4 produits)
+
+
+<details>
+<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-08 06:38:27: 16u
+- 2025-09-24 07:27:49: 32u
+- 2025-09-10 06:05:27: 48u
+- 2025-07-14 07:23:44: 64u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-04 09:15:32: 32u
+- 2024-09-23 07:03:10: 48u
+- 2024-08-23 06:50:23: 48u
+- 2024-08-07 07:50:22: 16u
+- 2024-07-19 07:16:19: 64u
+- 2024-07-01 04:50:52: 32u
+- 2024-06-14 08:44:06: 32u
+- 2024-05-24 09:36:53: 64u
+- 2024-05-13 07:07:14: 48u
+- 2024-04-19 09:15:16: 64u
+- 2024-03-22 09:26:53: 32u
+- 2024-03-15 08:05:43: 32u
+
+**✅ Quantité LLM**: 16u (confidence: medium)
+**📊 Quantité Réelle**: 16u
+
+</details>
+
+
+<details>
+<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-08 06:38:27: 48u
+- 2025-09-24 07:27:49: 32u
+- 2025-09-10 06:05:27: 32u
+- 2025-07-14 07:23:44: 48u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-04 09:15:32: 32u
+- 2024-09-23 07:03:10: 16u
+- 2024-08-23 06:50:23: 32u
+- 2024-08-07 07:50:22: 48u
+- 2024-07-19 07:16:19: 16u
+- 2024-07-01 04:50:52: 32u
+- 2024-06-14 08:44:06: 32u
+- 2024-05-13 07:07:14: 32u
+- 2024-04-19 09:15:16: 32u
+- 2024-03-22 09:26:53: 32u
+- 2024-03-15 08:05:43: 32u
+- 2024-02-23 08:44:27: 32u
+
+**✅ Quantité LLM**: 32u (confidence: medium)
+**📊 Quantité Réelle**: 48u
+
+</details>
+
+
+<details>
+<summary><strong>3. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-08 06:38:27: 16u
+- 2025-09-24 07:27:49: 16u
+- 2025-09-10 06:05:27: 16u
+- 2025-07-14 07:23:44: 16u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-04 09:15:32: 16u
+- 2024-09-23 07:03:10: 16u
+- 2024-08-23 06:50:23: 16u
+- 2024-08-07 07:50:22: 16u
+- 2024-07-19 07:16:19: 16u
+- 2024-06-14 08:44:06: 32u
+- 2024-05-13 07:07:14: 16u
+- 2024-03-22 09:26:53: 16u
+- 2024-03-15 08:05:43: 16u
+- 2024-02-23 08:44:27: 16u
+- 2024-02-19 09:05:29: 16u
+- 2024-01-26 13:59:24: 32u
+
+**✅ Quantité LLM**: 16u (confidence: high)
+**📊 Quantité Réelle**: 16u
+
+</details>
+
+
+<details>
+<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-08 06:38:27: 16u
+- 2025-09-24 07:27:49: 16u
+- 2025-07-14 07:23:44: 64u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 16u (confidence: medium)
+**📊 Quantité Réelle**: 16u
 
 </details>
 
@@ -372,4 +399,4 @@ La progression récente montre une accélération: 32u → 32u → 48u. La derni
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:17.789Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:38.173Z*

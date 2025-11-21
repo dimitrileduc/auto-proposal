@@ -5,16 +5,14 @@
 - **Client** : BONNI, ACHAT (ID: 8200)
 - **Commande réelle** : S39480
 - **Date commande** : 2025-10-01 05:53:38
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-30 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 15
-- **Tokens**: 30,415 input + 8,868 output = 39,283 total
-- **Coût**: $0.2243 (~22.43¢)
-- **Coût par produit LLM**: $0.0150
+- **Appels**: 16
+- **Tokens**: 23,486 input + 5,096 output = 28,582 total
 
 
 ---
@@ -25,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 9.5% | 21 produits prédits, 2 corrects |
+| **Précision** | 10.0% | 20 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 17.4% | Score équilibré global |
+| **F1-Score** | 18.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -147,10 +145,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 6 | 8 | 2.0 | 25.0% | ✅ partial | 🤖 LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 24 | 32 | 8.0 | 25.0% | ✅ partial | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 6 | 8 | 2.0 | 25.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 24 | 32 | 8.0 | 25.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -161,30 +159,43 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 6u (confidence: medium)
-- 📊 **Baseline N-1**: 6u
+- 📊 **Baseline N-1**: 6.5u
 - 📊 **Médiane**: 6u
 - ✅ **Réel commandé**: 8u
 - 📉 **Erreur LLM**: 2u (25.0%)
 - 📉 **Erreur Médiane**: 2u (25.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec tendance hebdomadaire/mensuelle (intervalles 6-42 jours, concentration sur mercredis)
+- **Pattern temporel**: Mensuel irrégulier ~20-40j, principalement Mercredi/Jeudi
 - **Saisonnalité**: weak
-- **Tendance**: Baisse -40% (10u→6u sur mercredis récents)
-- **Outliers détectés**: 16u, 1u
+- **Tendance**: Baisse nette -40% (10→6u sur derniers mois)
+- **Outliers détectés**: 16u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les 3 derniers mois montrent un pattern irrégulier avec 4 commandes. Intervalles observés: 6j (30 juil→7 août), 6j (7→13 août), 42j (13 août→24 sept). Concentration forte sur les mercredis (3/4 commandes). La prédiction du 2025-10-01 tombe un mercredi, aligné avec le pattern dominant.
+Pattern mensuel détecté avec forte prédominance Mercredi (3/4 commandes récentes). Les 16u de N-1 semblent exceptionnels (2.6x la moyenne récente). Tendance récente montre stabilisation à 6u (2 commandes identiques en Août/Sept). Dernière commande il y a 6 jours suggère rythme mensuel en cours. La prédiction tombe un Mardi (décalage 1j du pattern Mercredi) mais reste dans la fenêtre temporelle attendue. Baseline 6.5u arrondie à 6u par cohérence avec stabilisation observée et nature du produit conditionné.
 
-**FILTRAGE OUTLIERS**: 
-- 16u (sept 2024 N-1): Quantité exceptionnelle, possiblement liée à un événement ponctuel ou une promotion. Non représentative de la demande structurelle.
-- 1u (7 août 2025): Commande anormalement basse, probablement un complément ou erreur. À ignorer.
+</details>
 
-**TENDANCE RÉCENTE**: En se concentrant sur les mercredis normaux: 30 juil (10u) → 13 août (6u après outlier 1u) → 24 sept (6u). La demande s'est stabilisée à 6u sur les 2 derniers mercredis "normaux", avec un recul par rapport aux 10u de juillet.
 
-**SAISONNALITÉ N-1**: Impact faible. Le 16u de sept 2024 semble exceptionnel et non un pattern saisonnier récurrent vu la stabilité récente à 6u.
 
-**DÉCISION**: Baseline à 6u basée sur les 2 derniers mercredis consécutifs identiques. Aucun élément n'indique un rattrapage ou une variation saisonnière forte. La prédiction suit la demande stabilisée actuelle.
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-24 10:24:19: 6u
+- 2025-08-13 08:37:02: 6u
+- 2025-08-07 14:20:17: 1u
+- 2025-07-30 13:32:27: 10u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-05 07:20:41: 16u
+
+**✅ Quantité LLM**: 6u (confidence: medium)
+**📊 Quantité Réelle**: 8u
 
 </details>
 
@@ -193,7 +204,7 @@
 
 ---
 
-## False Positives (19)
+## False Positives (18)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -213,24 +224,23 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 44 | Stock prédit: 36.4u (28j restants) → prédit 44u mais non commandé |
-| [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 5 | Stock prédit: 5.0u (30j restants) → prédit 5u mais non commandé |
-| [PF3270] JF TRUFFLE MAYONNAISE 925ML | 6 | Stock prédit: 4.9u (26j restants) → prédit 6u mais non commandé |
-| [PF3274] JF BURGER SAUCE 925ML | 3 | Stock prédit: 0.4u (4j restants) → prédit 3u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 3 | Stock prédit: 1.2u (14j restants) → prédit 3u mais non commandé |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | Stock prédit: 1.9u (7j restants) → prédit 7u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 7 | Stock prédit: 1.4u (5j restants) → prédit 7u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.2u (4j restants) → prédit 2u mais non commandé |
-| [PF0093] FILOU MOUTARDE 300GR | 4 | Stock prédit: -0.5u (-5j restants) → prédit 4u mais non commandé |
-| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.3u (-3j restants) → prédit 15u mais non commandé |
-| [PF0094] FILOU MOUTARDE 700 GR | 3 | Stock prédit: -0.2u (-3j restants) → prédit 3u mais non commandé |
-| [PF0078] FILOU CHASSEUR 5 L | 44 | Stock prédit: -16.0u (-37j restants) → prédit 44u mais non commandé |
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 48 | Stock prédit: 37.6u (29j restants) → prédit 48u mais non commandé |
+| [PF3270] JF TRUFFLE MAYONNAISE 925ML | 6 | Stock prédit: 5.1u (27j restants) → prédit 6u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 3 | Stock prédit: 0.5u (5j restants) → prédit 3u mais non commandé |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 3 | Stock prédit: 1.3u (15j restants) → prédit 3u mais non commandé |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | Stock prédit: 2.1u (8j restants) → prédit 7u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 8 | Stock prédit: 1.6u (5j restants) → prédit 8u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 2 | Stock prédit: 0.2u (5j restants) → prédit 2u mais non commandé |
+| [PF0093] FILOU MOUTARDE 300GR | 3 | Stock prédit: -0.5u (-4j restants) → prédit 3u mais non commandé |
+| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.2u (-3j restants) → prédit 15u mais non commandé |
+| [PF0094] FILOU MOUTARDE 700 GR | 3 | Stock prédit: -0.1u (-2j restants) → prédit 3u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 44 | Stock prédit: -15.7u (-36j restants) → prédit 44u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 0.4u (14j restants) → prédit 2u mais non commandé |
-| [PF0096] FILOU MOUTARDE 3 KG | 24 | Stock prédit: -20.0u (-32j restants) → prédit 24u mais non commandé |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.7u (17j restants) → prédit 4u mais non commandé |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock prédit: -0.1u (-3j restants) → prédit 2u mais non commandé |
+| [PF0096] FILOU MOUTARDE 3 KG | 24 | Stock prédit: -20.0u (-31j restants) → prédit 24u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.8u (18j restants) → prédit 4u mais non commandé |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 2 | Stock prédit: -0.1u (-2j restants) → prédit 2u mais non commandé |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock prédit: 0.3u (14j restants) → prédit 2u mais non commandé |
-| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.5u (-41j restants) → prédit 2u mais non commandé |
+| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 2 | Stock prédit: -1.5u (-40j restants) → prédit 2u mais non commandé |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.8u (-31j restants) → prédit 2u mais non commandé |
 
 
@@ -255,4 +265,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:12.882Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:40.713Z*

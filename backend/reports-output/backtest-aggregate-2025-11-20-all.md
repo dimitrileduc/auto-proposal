@@ -2,14 +2,14 @@
 
 ## Contexte
 
-- **Date d'exécution** : 20/11/2025 10:08:11
-- **Clients analysés** : 49
-- **Clients réussis** : 49
+- **Date d'exécution** : 20/11/2025 14:35:44
+- **Clients analysés** : 44
+- **Clients réussis** : 44
 - **Clients échoués** : 0
 
 ### Configuration
 
-- **Jours d'avance** : 0j
+- **Jours d'avance** : 1j
 - **Fenêtre d'analyse** : 120j
 - **Couverture cible** : 25j
 - **Lead time** : 5j
@@ -22,12 +22,12 @@
 
 | Métrique | Moyenne | Médiane | Interprétation |
 |----------|---------|---------|----------------|
-| **Recall** | 84.2% | 100.0% | % de besoins réels détectés |
-| **Precision** | 37.2% | 38.5% | % de prédictions correctes (61.5% proposés non commandés) |
-| **F1-Score** | 47.8% | 50.0% | Équilibre détection/précision |
-| **wMAPE** | 25.0% | 23.3% | ⚖️ Écart pondéré robuste (métrique principale) |
-| **MAPE** | 29.6% | 27.8% | Écart moyen (info, biaisé) |
-| **Bias** | 2.1% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **Recall** | 86.4% | 100.0% | % de besoins réels détectés |
+| **Precision** | 37.0% | 38.0% | % de prédictions correctes (62.0% proposés non commandés) |
+| **F1-Score** | 48.2% | 50.0% | Équilibre détection/précision |
+| **wMAPE** | 25.0% | 19.9% | ⚖️ Écart pondéré robuste (métrique principale) |
+| **MAPE** | 29.6% | 25.0% | Écart moyen (info, biaisé) |
+| **Bias** | -0.8% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 
 
 
@@ -139,26 +139,26 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 
 ## Distribution des Performances
 
-**Comment se répartissent les 49 clients ?**
+**Comment se répartissent les 44 clients ?**
 
 ### Détection des besoins (Recall)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥80% | 34 | 69% |
-| 50-80% | 12 | 24% |
-| <50% | 3 | 6% |
+| ≥80% | 32 | 73% |
+| 50-80% | 10 | 23% |
+| <50% | 2 | 5% |
 
 ### Justesse des prédictions (Precision)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥70% | 2 | 4% |
-| 40-70% | 22 | 45% |
-| <40% | 25 | 51% |
+| ≥70% | 1 | 2% |
+| 40-70% | 20 | 45% |
+| <40% | 23 | 52% |
 
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:08:11.882Z*
+*Rapport généré automatiquement le 2025-11-20T13:35:44.824Z*

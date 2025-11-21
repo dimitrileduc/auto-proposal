@@ -3,8 +3,8 @@
   "clientName": "UPFRESH - HUPPA",
   "orderName": "S39539",
   "orderDate": "2025-10-03 09:41:57",
-  "cutoffDate": "2025-10-03 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 3,
-    "promptTokens": 6592,
-    "completionTokens": 1899,
-    "totalTokens": 8491,
-    "costUSD": 0.048261
+    "promptTokens": 4912,
+    "completionTokens": 996,
+    "totalTokens": 5908
   }
 }

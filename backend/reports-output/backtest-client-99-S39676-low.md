@@ -5,16 +5,14 @@
 - **Client** : La Fermette Godelaine de Saint-Georges (ID: 99)
 - **Commande réelle** : S39676
 - **Date commande** : 2025-10-13 07:37:52
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 24
-- **Tokens**: 48,689 input + 14,068 output = 62,757 total
-- **Coût**: $0.3571 (~35.71¢)
-- **Coût par produit LLM**: $0.0149
+- **Appels**: 37
+- **Tokens**: 54,149 input + 11,442 output = 65,591 total
 
 
 ---
@@ -147,10 +145,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ❌ Non | ❌ Non | 📊 Médiane |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ❌ Non | ❌ Non | 📊 Médiane |
+
+
 
 
 
@@ -177,8 +177,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: -1.1u (-21j restants) → prédit 1u mais non commandé |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: -3.8u (-76j restants) → prédit 1u mais non commandé |
+| [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: -1.0u (-20j restants) → prédit 1u mais non commandé |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 1 | Stock prédit: -3.8u (-75j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -202,4 +202,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:10.196Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:50.126Z*

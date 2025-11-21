@@ -3,8 +3,8 @@
   "clientName": "Ferme A l'arbre",
   "orderName": "S39576",
   "orderDate": "2025-10-06 09:27:30",
-  "cutoffDate": "2025-10-06 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-05 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 1,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 28,
-    "promptTokens": 58193,
-    "completionTokens": 16011,
-    "totalTokens": 74204,
-    "costUSD": 0.4147439999999999
+    "calls": 30,
+    "promptTokens": 45381,
+    "completionTokens": 9627,
+    "totalTokens": 55008
   }
 }

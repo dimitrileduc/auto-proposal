@@ -5,16 +5,14 @@
 - **Client** : C.F. GRELL NACHF. NATURKOST (ID: 3863)
 - **Commande réelle** : S39705
 - **Date commande** : 2025-10-13 14:04:36
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 8,949 input + 2,646 output = 11,595 total
-- **Coût**: $0.0665 (~6.65¢)
-- **Coût par produit LLM**: $0.0166
+- **Tokens**: 6,713 input + 1,398 output = 8,111 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:17.791Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:38.175Z*

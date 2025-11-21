@@ -3,8 +3,8 @@
   "clientName": "DOMAINE DE RONCHINNE",
   "orderName": "S39452",
   "orderDate": "2025-10-01 07:17:25",
-  "cutoffDate": "2025-10-01 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-09-30 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 10,
     "fp": 19,
@@ -12,20 +12,19 @@
     "precision": 0.3448275862068966,
     "recall": 0.9090909090909091,
     "f1Score": 0.5000000000000001,
-    "mae": 0.9,
-    "wmape": 64.28571428571429,
-    "mape": 80,
-    "bias": 64.28571428571429
+    "mae": 1,
+    "wmape": 71.42857142857143,
+    "mape": 90,
+    "bias": 71.42857142857143
   },
   "distribution": {
-    "exactMatch": 4,
-    "partialMatch": 6
+    "exactMatch": 3,
+    "partialMatch": 7
   },
   "llmUsage": {
-    "calls": 21,
-    "promptTokens": 42699,
-    "completionTokens": 12111,
-    "totalTokens": 54810,
-    "costUSD": 0.3097620000000001
+    "calls": 23,
+    "promptTokens": 33846,
+    "completionTokens": 7312,
+    "totalTokens": 41158
   }
 }

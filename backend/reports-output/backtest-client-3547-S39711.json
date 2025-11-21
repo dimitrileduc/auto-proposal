@@ -3,8 +3,8 @@
   "clientName": "K&F DE PAUW",
   "orderName": "S39711",
   "orderDate": "2025-10-14 07:25:09",
-  "cutoffDate": "2025-10-14 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 1,
     "fp": 10,
@@ -22,10 +22,9 @@
     "partialMatch": 1
   },
   "llmUsage": {
-    "calls": 9,
-    "promptTokens": 19723,
-    "completionTokens": 5680,
-    "totalTokens": 25403,
-    "costUSD": 0.144369
+    "calls": 10,
+    "promptTokens": 16270,
+    "completionTokens": 3580,
+    "totalTokens": 19850
   }
 }

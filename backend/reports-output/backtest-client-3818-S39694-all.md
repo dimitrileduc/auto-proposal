@@ -5,16 +5,14 @@
 - **Client** : NATURKOST WEST GMBH (ID: 3818)
 - **Commande réelle** : S39694
 - **Date commande** : 2025-10-13 10:17:04
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,570 input + 1,746 output = 8,316 total
-- **Coût**: $0.0459 (~4.59¢)
-- **Coût par produit LLM**: $0.0153
+- **Tokens**: 4,893 input + 987 output = 5,880 total
 
 
 ---
@@ -147,10 +145,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 32 | 0.0 | 0.0% | 🎯 exact | 📊 Médiane |
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 32 | 16.0 | 50.0% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 32 | 32 | 0.0 | 0.0% | 🎯 exact | ❌ Non | ❌ Non | 📊 Médiane |
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 16 | 32 | 16.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -161,34 +159,53 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 16u (confidence: medium)
-- 📊 **Baseline N-1**: 16u
+- 📊 **Baseline N-1**: 18.5u
 - 📊 **Médiane**: 24u
 - ✅ **Réel commandé**: 32u
 - 📉 **Erreur LLM**: 16u (50.0%)
 - 📉 **Erreur Médiane**: 8u (25.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec espacement ~21-28 jours, concentration récente sur mercredis
+- **Pattern temporel**: Mensuel irrégulier ~21-28j, majoritairement en semaine (mer./jeu.)
 - **Saisonnalité**: weak
-- **Tendance**: Stable autour de 16u, avec quelques pics à 32u
-- **Outliers détectés**: 48u, 32u
+- **Tendance**: Stable avec léger pic récent (32u le 2025-09-10)
+- **Outliers détectés**: 48u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les 3 derniers mois montrent un pattern avec commandes espacées de ~21-28 jours, toutes tombant le mercredi (10/09, 20/08, 13/08). La prédiction est pour le lundi 13/10/2025, soit 33 jours après la dernière commande du 10/09 - un écart inhabituellement long suggérant qu'une commande est probablement imminente.
+Pattern mensuel identifié avec 21-28j entre commandes. Historique N-1 montre demande stable à 16u (hors outlier 48u mars 2024). Dernières commandes: 16u (13 août), 16u (20 août), 32u (10 sept). Le 32u du 10/09 représente 31j après la commande précédente, suggérant un rattrapage après intervalle prolongé. Prochaine commande attendue ~21-28j après le 10/09 = début octobre, cohérent avec la date de prédiction (12/10). Le pattern montre retour systématique à 16u après pics. Baseline théorique 18.5u (moyenne pondérée excluant outliers), mais la régularité historique des commandes à 16u et le fait que le 32u soit un rattrapage ponctuel justifient une prédiction à 16u - la quantité modale et la plus probable pour une commande standard.
 
-**FILTRAGE OUTLIERS:**
-- 48u (mars 2024) : pic exceptionnel isolé, probablement promotion/stock - à exclure
-- 32u : apparaît 2 fois (sept 2024 et sept 2025), mais reste minoritaire
-- La quantité modale sur N-1 et période récente est clairement 16u (9 occurrences sur 12 en N-1, 2 sur 3 récemment)
+</details>
 
-**SAISONNALITÉ:**
-Pas de pattern saisonnier fort identifié. Les volumes restent stables entre les saisons. Impact faible.
 
-**DÉCISION:**
-Avec un délai de 33 jours depuis la dernière commande et un pattern habituel de 21-28 jours, le client est en retard sur son cycle. La quantité de base reste 16u (quantité modale dominante). Les 32u de septembre 2025 semblent liés à un besoin ponctuel car non répété depuis. 
 
-Prédiction: **16 unités** - la quantité de référence la plus probable pour ce produit.
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 06:32:45: 32u
+- 2025-08-20 12:43:59: 16u
+- 2025-08-13 10:37:06: 16u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 12:35:42: 16u
+- 2024-09-05 07:56:09: 32u
+- 2024-08-27 12:23:03: 16u
+- 2024-08-16 09:58:48: 16u
+- 2024-06-27 07:43:54: 16u
+- 2024-06-13 06:56:18: 16u
+- 2024-05-16 08:11:07: 16u
+- 2024-05-14 08:23:32: 16u
+- 2024-04-18 08:58:20: 16u
+- 2024-03-14 08:27:15: 48u
+- 2024-02-22 13:59:46: 16u
+- 2024-02-09 09:02:46: 16u
+
+**✅ Quantité LLM**: 16u (confidence: medium)
+**📊 Quantité Réelle**: 32u
 
 </details>
 
@@ -217,8 +234,8 @@ Prédiction: **16 unités** - la quantité de référence la plus probable pour 
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | Stock prédit: -5.0u (-2j restants) → prédit 32u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 16 | Stock prédit: -8.2u (-6j restants) → prédit 16u mais non commandé |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 32 | Stock prédit: -3.3u (-1j restants) → prédit 32u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 16 | Stock prédit: -6.9u (-5j restants) → prédit 16u mais non commandé |
 
 
 ---
@@ -249,4 +266,4 @@ Prédiction: **16 unités** - la quantité de référence la plus probable pour 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:09.307Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:56.611Z*

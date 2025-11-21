@@ -5,16 +5,14 @@
 - **Client** : KORO HANDELS GmbH (ID: 3840)
 - **Commande réelle** : S39714
 - **Date commande** : 2025-10-14 07:59:02
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 7
-- **Tokens**: 14,643 input + 4,174 output = 18,817 total
-- **Coût**: $0.1065 (~10.65¢)
-- **Coût par produit LLM**: $0.0152
+- **Tokens**: 10,730 input + 2,408 output = 13,138 total
 
 
 ---
@@ -71,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 5.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 0.6% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 0.3% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 0.6% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 16.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 2.1% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 25.9% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 2.1% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,40 +145,34 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G | 43 | 43 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1510 | 1500 | 10.0 | 0.7% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G | 65 | 43 | 22.0 | 51.2% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G | 1510 | 1500 | 10.0 | 0.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
 
 
 <details>
-<summary><strong>1. [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G</strong> - LLM: 43u vs Médiane: 70u (Réel: 43u)</summary>
+<summary><strong>1. [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G</strong> - LLM: 65u vs Médiane: 70u (Réel: 43u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 43u (confidence: medium)
-- 📊 **Baseline N-1**: 43u
+- 🤖 **LLM prédit**: 65u (confidence: medium)
+- 📊 **Baseline N-1**: 85u
 - 📊 **Médiane**: 70u
 - ✅ **Réel commandé**: 43u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 22u (51.2%)
 - 📉 **Erreur Médiane**: 27u (62.8%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - intervalles variables (7-12-17 jours), pas de pattern hebdomadaire clair
+- **Pattern temporel**: Irrégulier - intervalles variables (19j, 12j, 4j entre commandes récentes)
 - **Saisonnalité**: none
-- **Tendance**: Baisse forte -70% (hors outlier 500u)
+- **Tendance**: Baisse significative -70% (hors outlier 500u) - commandes récentes stabilisées ~43-96u vs 155-165u en N-1
 - **Outliers détectés**: 500u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les commandes récentes montrent une irrégularité: 10/09 (mer), 22/09 (lun), puis double commande 09/10 (jeu). Intervalles de 12j puis 17j. Depuis la dernière commande (09/10), seulement 5 jours se sont écoulés pour la prédiction du 14/10 (mar) - ce qui est en-deçà du rythme habituel récent.
-
-**FILTRAGE OUTLIERS**: La commande de 500u du 22/09 est clairement exceptionnelle (5x la moyenne). En l'excluant, le niveau normal récent s'établit à: 96u (10/09), puis 43u×2 (09/10) = stabilisation autour de 43u. Les 165u et 155u de N-1 ne sont pas pertinents (produit différent contexte/saisonnalité absente).
-
-**TENDANCE**: Baisse nette de 96u → 43u (-55%) sur les commandes normales hors pic. La double commande de 43u le 09/10 suggère un nouveau niveau de demande stabilisé.
-
-**DÉCISION**: Étant donné que seulement 5 jours séparent la dernière commande (09/10) de la date de prédiction (14/10), et que le rythme habituel est de 12-17 jours, la probabilité d'une commande le 14/10 existe mais elle serait au niveau actuel stabilisé de 43u. La baseline récente post-outlier est clairement 43u.
+Pattern irrégulier avec forte volatilité. Exclusion du pic 500u (09/09) identifié comme événement exceptionnel (probable promotion/reconstitution stock). Baseline établie sur commandes régulières : moyenne N-1 (155+165)/2=160u montre niveau historique, mais tendance récente nettement inférieure avec 96u (10/09) puis stabilisation 43u×2 (09/10). Intervalles courts récents (4j entre dernières commandes) suggèrent rythme accéléré mais volumes réduits. La prédiction au 13/10 (4j après dernière commande) dans contexte de demande affaiblie justifie quantité intermédiaire 65u : compromis entre baseline historique dégradée (85u) et réalité récente (43-96u), évitant surgonflage tout en anticipant léger rebond post-double commande rapprochée.
 
 </details>
 
@@ -197,26 +189,59 @@
 - 📉 **Erreur Médiane**: 18u (1.2%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel ~30j (29-35 jours entre commandes)
-- **Saisonnalité**: weak
-- **Tendance**: Hausse forte +97% (passage de ~758u en 2024 à ~1510u en 2025)
-- **Outliers détectés**: 244u, 334u
+- **Pattern temporel**: Mensuel ~30j (dernières commandes: 9 oct, 10 sept, 14 août = intervalle 29-35j)
+- **Saisonnalité**: none
+- **Tendance**: Hausse forte +97% (758u N-1 → 1510u moyenne récente)
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Le client suit un pattern mensuel très régulier : 14/08 → 10/09 (27j) → 09/10 (29j). La prochaine commande le 14/10 (+5j) est cohérente avec ce cycle de ~30j.
+Pattern mensuel régulier confirmé (3 dernières commandes espacées de ~30j). Aucun outlier détecté - les 1500u reflètent une vraie croissance structurelle du compte (+97% vs N-1). Pas de saisonnalité produit exotique détectable sur période limitée. La prédiction au 13 oct (4j après dernière commande du 9 oct) respecte le cycle ~30j observé. Baseline = moyenne pondérée des 3 derniers mois (1500+1494+1536)/3 = 1510u, cohérente avec demande de fond actuelle. Quantité recommandée: 1510u (arrondi naturel de la moyenne exacte pour refléter le niveau stabilisé post-croissance).
 
-**ANALYSE TENDANCE**: Comparaison N-1 vs 2025 montre une hausse structurelle massive :
-- 2024 (mai-sept) : 594u → 758u → 758u (moyenne ~703u)
-- 2025 (août-oct) : 1536u → 1494u → 1500u (moyenne ~1510u)
-- Coefficient multiplicateur : x2.15 (+115%)
+</details>
 
-Les petites commandes de début 2024 (244u, 334u) sont des outliers liés à une montée en puissance initiale du produit.
 
-**STABILITÉ RÉCENTE**: Les 3 derniers mois montrent une demande ultra-stable autour de 1510u (±20u de variation, soit <2%). Cette stabilité forte indique que le niveau de demande s'est cristallisé.
 
-**SAISONNALITÉ**: Aucun pattern saisonnier détectable sur ce produit bio (tartinade mangue). L'effet N-1 est faible car le produit était en phase de croissance.
 
-**CONCLUSION**: Vu la stabilité parfaite des 3 derniers mois (1536 → 1494 → 1500) et le respect du cycle mensuel, la demande de fond actuelle est de 1510u. Aucun élément ne justifie d'ajustement à la hausse ou à la baisse.
+### 📊 Données d'Input LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 08:05:44: 43u
+- 2025-10-09 08:02:15: 43u
+- 2025-09-22 05:23:57: 500u
+- 2025-09-10 06:26:25: 96u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-08-19 14:23:19: 155u
+- 2024-06-12 13:16:37: 165u
+
+**✅ Quantité LLM**: 65u (confidence: medium)
+**📊 Quantité Réelle**: 43u
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 08:02:15: 1500u
+- 2025-09-10 14:18:40: 1494u
+- 2025-08-14 06:52:41: 1536u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-05 07:27:40: 758u
+- 2024-07-22 13:15:52: 758u
+- 2024-05-02 07:07:22: 594u
+- 2024-04-17 08:00:24: 244u
+- 2024-01-19 12:40:26: 484u
+- 2024-01-02 14:39:56: 334u
+
+**✅ Quantité LLM**: 1510u (confidence: high)
+**📊 Quantité Réelle**: 1500u
 
 </details>
 
@@ -245,9 +270,9 @@ Les petites commandes de début 2024 (244u, 334u) sont des outliers liés à une
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1826 | Stock prédit: 119.5u (1j restants) → prédit 1826u mais non commandé |
-| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4416 | Stock prédit: 854.1u (5j restants) → prédit 4416u mais non commandé |
-| [PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G | 166 | Stock prédit: -45.3u (-4j restants) → prédit 166u mais non commandé |
+| [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1826 | Stock prédit: 183.4u (2j restants) → prédit 1826u mais non commandé |
+| [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4250 | Stock prédit: 966.7u (6j restants) → prédit 4250u mais non commandé |
+| [PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G | 166 | Stock prédit: -41.5u (-4j restants) → prédit 166u mais non commandé |
 
 
 ---
@@ -272,10 +297,10 @@ Les petites commandes de début 2024 (244u, 334u) sont des outliers liés à une
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [PF3363] DE_AUFSTR_041_T6 KORO TARTINADE BIO BETTERAVE 380G  | 172 | Stock suffisant: 156.2u (39j restants > seuil 30j) |
-| [PF3364] DE_OLIVE_013_T6 KORO TARTINADE BIO OLIVE 380G | 86 | Stock suffisant: 77.6u (37j restants > seuil 30j) |
+| [PF3363] DE_AUFSTR_041_T6 KORO TARTINADE BIO BETTERAVE 380G  | 172 | Stock suffisant: 160.1u (40j restants > seuil 30j) |
+| [PF3364] DE_OLIVE_013_T6 KORO TARTINADE BIO OLIVE 380G | 86 | Stock suffisant: 79.7u (38j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:01:17.063Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:13.199Z*

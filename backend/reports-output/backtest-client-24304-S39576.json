@@ -3,8 +3,8 @@
   "clientName": "Ferme A l'arbre",
   "orderName": "S39576",
   "orderDate": "2025-10-06 09:27:30",
-  "cutoffDate": "2025-10-06 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-05 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 18,
     "fp": 14,
@@ -12,20 +12,19 @@
     "precision": 0.5625,
     "recall": 1,
     "f1Score": 0.72,
-    "mae": 0.3333333333333333,
-    "wmape": 22.22222222222222,
-    "mape": 27.77777777777778,
-    "bias": 22.22222222222222
+    "mae": 0.2777777777777778,
+    "wmape": 18.51851851851852,
+    "mape": 22.22222222222222,
+    "bias": 18.51851851851852
   },
   "distribution": {
     "exactMatch": 13,
     "partialMatch": 5
   },
   "llmUsage": {
-    "calls": 28,
-    "promptTokens": 58193,
-    "completionTokens": 16011,
-    "totalTokens": 74204,
-    "costUSD": 0.4147439999999999
+    "calls": 30,
+    "promptTokens": 45381,
+    "completionTokens": 9627,
+    "totalTokens": 55008
   }
 }

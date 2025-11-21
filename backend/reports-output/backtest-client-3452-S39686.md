@@ -5,16 +5,14 @@
 - **Client** : DELHAIZE LE LION/DE LEEUW NV (ID: 3452)
 - **Commande réelle** : S39686
 - **Date commande** : 2025-10-13 07:49:42
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 8,712 input + 2,649 output = 11,361 total
-- **Coût**: $0.0659 (~6.59¢)
-- **Coût par produit LLM**: $0.0165
+- **Tokens**: 6,476 input + 1,364 output = 7,840 total
 
 
 ---
@@ -147,10 +145,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF3301] DLL MAYONNAISE CITRON 300ML | 130 | 130 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML | 98 | 98 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF3301] DLL MAYONNAISE CITRON 300ML | 130 | 130 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML | 98 | 98 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
@@ -168,34 +166,13 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec tendance ~7-14 jours, principalement lundis
-- **Saisonnalité**: none
-- **Tendance**: Stable autour de 130u (hors outlier 390u)
+- **Pattern temporel**: Hebdomadaire irrégulier, principalement lundis avec intervalles 3-11 jours
+- **Saisonnalité**: weak
+- **Tendance**: Stable autour de 130u (baseline) avec pics 390u ponctuels
 - **Outliers détectés**: 390u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les commandes récentes (3 derniers mois) montrent:
-- 2025-08-11 (lun.) 130u
-- 2025-08-14 (jeu.) 130u → 3j après
-- 2025-08-22 (ven.) 390u → 8j après (OUTLIER)
-- 2025-09-01 (lun.) 130u → 10j après
-- 2025-09-08 (lun.) 130u → 7j après
-- Prédiction: 2025-10-13 (lun.) → 35j après la dernière commande
-
-Pattern identifié: Commandes principalement le lundi, avec fréquence variable (7-14 jours), mais un grand gap de 35 jours suggère qu'une commande aurait dû intervenir plus tôt. Le client a probablement commandé entre-temps (données manquantes) OU il y a eu une pause inhabituelle.
-
-**FILTRAGE OUTLIERS:**
-La quantité 390u (22/08/2025) est clairement exceptionnelle - exactement 3× la quantité standard de 130u. En N-1, nous avons aussi un 390u le 11/07/2024, confirmant que ce sont des commandes promotionnelles/événementielles ponctuelles, non récurrentes à date fixe.
-
-**TENDANCE:**
-En excluant le 390u, toutes les commandes récentes sont strictement à 130u. Aucune dérive à la hausse ou à la baisse. La demande de fond est stable.
-
-**SAISONNALITÉ:**
-N-1 octobre = 130u, identique à la baseline actuelle. Pas d'effet saisonnier détectable.
-
-**DÉCISION:**
-Malgré le gap de 35 jours (inhabituel), la régularité absolue des quantités de 130u sur toutes les commandes standards indique une demande de fond très stable. Le 2025-10-13 étant un lundi (jour privilégié), la quantité standard de 130u est la plus probable.
+Pattern clair identifié: commandes régulières de 130u (85% des cas sur 3 derniers mois) avec pics exceptionnels de 390u (3x baseline, probablement promotions/événements). Dernières commandes: 01/09 et 08/09 = 130u chacune, confirmant le niveau de demande de fond. Le pic du 22/08 (390u) est isolé et suit le pattern des outliers historiques (juillet 2024: 390u également). Date de prédiction 12/10 = dimanche, mais historique montre livraisons possibles tous jours. Pas de saisonnalité forte détectée entre août-octobre N-1. Intervalle depuis dernière commande (08/09) = 34 jours suggère commande imminente, mais volume attendu reste au niveau baseline standard de 130u. Aucun élément ne justifie un pic exceptionnel pour cette date spécifique.
 
 </details>
 
@@ -212,31 +189,62 @@ Malgré le gap de 35 jours (inhabituel), la régularité absolue des quantités 
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Hebdomadaire (principalement Lundi), intervalle ~7 jours
+- **Pattern temporel**: Hebdomadaire ~7j avec légère irrégularité - Dominance Lundi (4/5 commandes récentes)
 - **Saisonnalité**: weak
-- **Tendance**: Stable à 98u depuis août 2025
+- **Tendance**: Stable autour de 98u (depuis 5 commandes) après baisse depuis N-1
 - **Outliers détectés**: 392u
 
 **🧠 Raisonnement LLM:**
-**Analyse Rythmique**: Le client commande de manière très régulière chaque semaine, principalement le Lundi (5 commandes sur les 3 derniers mois). La date de prédiction est un lundi 2025-10-13, ce qui correspond parfaitement au pattern identifié.
+Pattern hebdomadaire clair avec commandes tous les ~7j, majoritairement le lundi. Les 5 dernières commandes montrent une stabilité parfaite à 98u (sauf une à 196u mi-août, probablement double commande ponctuelle). Le pic de 392u en juillet 2024 est un outlier isolé. Depuis fin août 2025, rythme régulier : 25/08, 01/09, 08/09 (tous lundis à 98u). La prochaine commande suit logiquement ce pattern établi. Pas de saisonnalité forte détectée pour octobre. La baseline de 98u correspond exactement à la demande de fond observée sur les 3 derniers mois sans rattrapage à prévoir (dernière commande il y a ~34j indique un cycle mensuel possible, mais les 3 commandes avant étaient hebdomadaires). Quantité recommandée : 98u avec forte confiance.
 
-**Intervalles observés**: 
-- 01/09 → 08/09 = 7 jours (lun. → lun.)
-- 25/08 → 01/09 = 7 jours (lun. → lun.)
-- 19/08 → 25/08 = 6 jours (mar. → lun.)
-- 14/08 → 19/08 = 5 jours (jeu. → mar.)
+</details>
 
-Le pattern hebdomadaire s'est stabilisé depuis fin août avec des commandes systématiques le lundi.
 
-**Analyse des quantités**:
-- Dernières 5 commandes (3 mois): 98u, 98u, 98u, 98u, 196u
-- La commande de 196u du 14/08 représente exactement 2× la quantité standard → possible rattrapage ou commande double
-- Les 4 dernières commandes sont strictement identiques: 98u
-- N-1 (sept 2024): 2 commandes de 196u mais un seul pic de 392u en juillet (outlier clair - promotion/événement)
 
-**Saisonnalité**: Impact faible. Les données N-1 montrent des quantités plus élevées (196u en septembre 2024) mais la tendance récente est clairement stabilisée à 98u depuis fin août 2025. Pas d'événement saisonnier spécifique identifié mi-octobre.
 
-**Décision**: La demande de fond est de 98u avec une régularité parfaite sur les 4 dernières semaines. Le jour de prédiction (lundi) correspond au jour habituel de commande. Aucun élément ne justifie une variation. Prédiction: 98u.
+### 📊 Données d'Input LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF3301] DLL MAYONNAISE CITRON 300ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-08 10:16:06: 130u
+- 2025-09-01 08:56:14: 130u
+- 2025-08-22 08:51:08: 390u
+- 2025-08-14 13:30:24: 130u
+- 2025-08-11 07:01:13: 130u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-01 06:38:15: 130u
+- 2024-09-09 11:24:26: 130u
+- 2024-08-06 10:01:31: 130u
+- 2024-07-11 10:01:48: 390u
+
+**✅ Quantité LLM**: 130u (confidence: high)
+**📊 Quantité Réelle**: 130u
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-08 10:16:06: 98u
+- 2025-09-01 08:56:14: 98u
+- 2025-08-25 08:08:15: 98u
+- 2025-08-19 09:02:08: 98u
+- 2025-08-14 13:30:24: 196u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-24 07:05:31: 196u
+- 2024-09-23 11:56:39: 196u
+- 2024-08-06 10:01:31: 98u
+- 2024-07-11 10:01:48: 392u
+
+**✅ Quantité LLM**: 98u (confidence: high)
+**📊 Quantité Réelle**: 98u
 
 </details>
 
@@ -265,8 +273,8 @@ Le pattern hebdomadaire s'est stabilisé depuis fin août avec des commandes sys
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 89.2u (3j restants) → prédit 130u mais non commandé |
-| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 294 | Stock prédit: -854.6u (-27j restants) → prédit 294u mais non commandé |
+| [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 110.0u (4j restants) → prédit 130u mais non commandé |
+| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 196 | Stock prédit: -833.0u (-26j restants) → prédit 196u mais non commandé |
 
 
 ---
@@ -290,4 +298,4 @@ Le pattern hebdomadaire s'est stabilisé depuis fin août avec des commandes sys
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:08.178Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:55.176Z*

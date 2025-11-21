@@ -4,7 +4,7 @@ import { predictStockStatus } from "./utils/prediction.utils";
 import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
 import { getTodayAsDateString } from "../../utils/date.utils";
-import { predictWithLLM, type LLMPredictionResult } from "../../services/llm-prediction.service";
+import { predictWithLLM, type LLMPredictionResult } from "../../services/llm-openrouter.service";
 import { splitOrdersByPeriod } from "../../utils/date-period.utils";
 import pLimit from "p-limit";
 import type {
@@ -61,7 +61,6 @@ export async function calculateReplenishmentNeeds(
   let totalLLMCalls = 0;
   let totalPromptTokens = 0;
   let totalCompletionTokens = 0;
-  let totalCostUSD = 0;
 
   // Utiliser les valeurs de config ou les valeurs par défaut
   const targetCoverage = config?.targetCoverage ?? autoProposalConfig.targetCoverage;
@@ -167,6 +166,12 @@ export async function calculateReplenishmentNeeds(
   // PHASE 2: Exécuter toutes les prédictions LLM en parallèle
   // ====================================================================
   const llmResults = new Map<number, LLMPredictionResult>();
+  const llmInputData = new Map<number, {
+    required: boolean;
+    success: boolean;
+    recent_orders: Array<{ date: string; quantity: number }>;
+    last_year_orders: Array<{ date: string; quantity: number }>;
+  }>();
   const productsNeedingLLM = productsToProcess.filter(p => p.needsLLM);
 
   if (productsNeedingLLM.length > 0) {
@@ -180,41 +185,54 @@ export async function calculateReplenishmentNeeds(
       limit(async () => {
         const { product, ordersToUse } = productData;
 
+        // IMPORTANT: Pour le LLM, on utilise TOUJOURS fullHistory (730j) pour avoir accès à N-1
+        // ordersToUse (120j) est utilisé pour consommation/stock, mais trop court pour N-1
+        const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
+        const ordersForLLM = fullProduct?.orders ?? ordersToUse;
+
+        // Split orders into 2 views: recent (3 months) + same period last year
+        // Following IRIS: compare current trend vs historical seasonal baseline
+        const { recent, lastYear } = splitOrdersByPeriod(
+          ordersForLLM, // ← Utiliser fullHistory pour avoir N-1 (12-24 mois avant)
+          analysisEndDate,
+          3 // 3 months period (maxOrdersPerView defaults to 12 for lastYear)
+        );
+
+        const recentOrders = recent.map(o => ({ date: o.date_order, quantity: o.quantity }));
+        const lastYearOrders = lastYear.map(o => ({ date: o.date_order, quantity: o.quantity }));
+
         try {
-          // IMPORTANT: Pour le LLM, on utilise TOUJOURS fullHistory (730j) pour avoir accès à N-1
-          // ordersToUse (120j) est utilisé pour consommation/stock, mais trop court pour N-1
-          const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
-          const ordersForLLM = fullProduct?.orders ?? ordersToUse;
-
-          // Split orders into 2 views: recent (3 months) + same period last year
-          // Following IRIS: compare current trend vs historical seasonal baseline
-          const { recent, lastYear } = splitOrdersByPeriod(
-            ordersForLLM, // ← Utiliser fullHistory pour avoir N-1 (12-24 mois avant)
-            analysisEndDate,
-            3 // 3 months period (maxOrdersPerView defaults to 12 for lastYear)
-          );
-
           const llmResult = await predictWithLLM({
             productName: product.product_name,
-            recentOrders: recent.map(o => ({
-              date: o.date_order,
-              quantity: o.quantity,
-            })),
-            lastYearOrders: lastYear.map(o => ({
-              date: o.date_order,
-              quantity: o.quantity,
-            })),
+            recentOrders,
+            lastYearOrders,
             currentDate: analysisEndDate,
           });
 
           llmResults.set(product.product_id, llmResult);
 
+          // Stocker les input data pour le rapport (SUCCESS)
+          llmInputData.set(product.product_id, {
+            required: true,
+            success: true,
+            recent_orders: recentOrders,
+            last_year_orders: lastYearOrders,
+          });
+
           console.log(
-            `     ✅ LLM [${product.product_id}]: ${llmResult.prediction.recommended_quantity}u (${llmResult.prediction.confidence}) | $${llmResult.usage.costUSD.toFixed(4)}`
+            `     ✅ LLM [${product.product_id}]: ${llmResult.prediction.recommended_quantity}u (${llmResult.prediction.confidence}) | tokens: ${llmResult.usage.totalTokens}`
           );
 
           return { success: true, productId: product.product_id };
         } catch (error) {
+          // Stocker quand même les input data pour le rapport (FAILED)
+          llmInputData.set(product.product_id, {
+            required: true,
+            success: false,
+            recent_orders: recentOrders,
+            last_year_orders: lastYearOrders,
+          });
+
           console.log(
             `     ⚠️ LLM [${product.product_id}] failed, fallback to median: ${error instanceof Error ? error.message : "Unknown error"}`
           );
@@ -259,13 +277,18 @@ export async function calculateReplenishmentNeeds(
           seasonality_impact: llmResult.prediction.analysis.seasonality_impact,
           trend_direction: llmResult.prediction.analysis.trend_direction,
         },
+        // Token usage for this specific product
+        usage: {
+          promptTokens: llmResult.usage.promptTokens,
+          completionTokens: llmResult.usage.completionTokens,
+          totalTokens: llmResult.usage.totalTokens,
+        },
       };
 
       // Accumuler l'usage
       totalLLMCalls++;
       totalPromptTokens += llmResult.usage.promptTokens;
       totalCompletionTokens += llmResult.usage.completionTokens;
-      totalCostUSD += llmResult.usage.costUSD;
 
       const llmDiff = llmResult.prediction.recommended_quantity - calculation.quantity!;
       const llmDiffPct = (llmDiff / calculation.quantity!) * 100;
@@ -275,6 +298,9 @@ export async function calculateReplenishmentNeeds(
     }
 
     console.log(`     ✅ Quantité finale: ${finalQuantity}u (source: ${quantitySource})`);
+
+    // Récupérer les input data LLM (si disponibles)
+    const inputData = llmInputData.get(product.product_id);
 
     // Créer l'objet produit analysé (avec toutes ses infos)
     const productStatus: ProductStockStatus = {
@@ -306,6 +332,16 @@ export async function calculateReplenishmentNeeds(
       // 4. LLM prediction (si utilisé)
       llm_prediction: llmPrediction,
       quantity_source: quantitySource,
+
+      // 5. LLM tracking
+      llm_required: productData.needsLLM, // Propagé depuis PHASE 1
+      llm_success: quantitySource === 'llm' && !!llmPrediction,
+
+      // 6. LLM input data (pour debug/audit dans rapports)
+      llm_input_data: inputData ? {
+        recent_orders: inputData.recent_orders,
+        last_year_orders: inputData.last_year_orders,
+      } : undefined,
     };
 
     // Ajouter TOUS les produits analysés (pour backtest)
@@ -328,10 +364,9 @@ export async function calculateReplenishmentNeeds(
 
   // Log LLM usage
   if (totalLLMCalls > 0) {
-    console.log(`\n💰 LLM Usage:`);
+    console.log(`\n🤖 LLM Usage:`);
     console.log(`   Calls: ${totalLLMCalls}`);
     console.log(`   Tokens: ${totalPromptTokens} input + ${totalCompletionTokens} output = ${totalPromptTokens + totalCompletionTokens} total`);
-    console.log(`   Cost: $${totalCostUSD.toFixed(4)} (~${(totalCostUSD * 100).toFixed(2)} cents)`);
   }
 
   console.log();
@@ -346,7 +381,6 @@ export async function calculateReplenishmentNeeds(
       promptTokens: totalPromptTokens,
       completionTokens: totalCompletionTokens,
       totalTokens: totalPromptTokens + totalCompletionTokens,
-      costUSD: totalCostUSD,
     } : undefined,
   };
 }

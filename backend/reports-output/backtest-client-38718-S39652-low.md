@@ -5,16 +5,14 @@
 - **Client** : CENSE DU MAYEUR (ID: 38718)
 - **Commande réelle** : S39652
 - **Date commande** : 2025-10-09 11:32:03
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 30
-- **Tokens**: 60,784 input + 16,994 output = 77,778 total
-- **Coût**: $0.4373 (~43.73¢)
-- **Coût par produit LLM**: $0.0146
+- **Appels**: 36
+- **Tokens**: 52,596 input + 11,275 output = 63,871 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:07:12.185Z*
+*Rapport généré automatiquement le 2025-11-20T13:35:42.464Z*

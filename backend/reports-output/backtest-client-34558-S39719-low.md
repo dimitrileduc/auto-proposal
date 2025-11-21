@@ -5,16 +5,14 @@
 - **Client** : Oufticoop SC (ID: 34558)
 - **Commande réelle** : S39719
 - **Date commande** : 2025-10-14 10:33:03
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 17
-- **Tokens**: 34,422 input + 9,260 output = 43,682 total
-- **Coût**: $0.2422 (~24.22¢)
-- **Coût par produit LLM**: $0.0142
+- **Appels**: 20
+- **Tokens**: 29,176 input + 5,944 output = 35,120 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:49.033Z*
+*Rapport généré automatiquement le 2025-11-20T13:29:01.521Z*

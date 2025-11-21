@@ -5,16 +5,14 @@
 - **Client** : BIOK CORBAIS (ID: 60211)
 - **Commande réelle** : S39703
 - **Date commande** : 2025-10-16 06:40:28
-- **Date cutoff système** : 2025-10-16 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-15 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 23
-- **Tokens**: 46,528 input + 12,919 output = 59,447 total
-- **Coût**: $0.3334 (~33.34¢)
-- **Coût par produit LLM**: $0.0145
+- **Appels**: 25
+- **Tokens**: 36,640 input + 7,981 output = 44,621 total
 
 
 ---
@@ -168,8 +166,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: -0.2u (-1j restants) → prédit 2u mais non commandé |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -0.7u (-13j restants) → prédit 1u mais non commandé |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: -0.1u (0j restants) → prédit 2u mais non commandé |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock prédit: -0.6u (-13j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -193,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:02:42.373Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:06.827Z*

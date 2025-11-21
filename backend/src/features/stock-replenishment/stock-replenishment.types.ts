@@ -27,6 +27,12 @@ export interface LLMPredictionDetails {
     seasonality_impact: "none" | "weak" | "strong"; // Impact saisonnier détecté
     trend_direction: string; // Direction observée (ex: "croissant +15%", "stable", "décroissant -10%")
   };
+  // Token usage for this specific product
+  usage: {
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+  };
 }
 
 export interface ProductStockStatus {
@@ -47,6 +53,16 @@ export interface ProductStockStatus {
   // 4. LLM prediction (si utilisé pour >2 commandes)
   llm_prediction?: LLMPredictionDetails;
   quantity_source?: "median" | "llm"; // Source de la quantité finale
+
+  // 5. LLM tracking (pour rapports)
+  llm_required: boolean; // Le produit devait-il utiliser le LLM ? (>2 commandes)
+  llm_success: boolean;  // A-t-on réussi à obtenir une prédiction LLM ?
+
+  // 6. LLM input data (pour debug/audit dans les rapports)
+  llm_input_data?: {
+    recent_orders: Array<{ date: string; quantity: number }>;
+    last_year_orders: Array<{ date: string; quantity: number }>;
+  };
 }
 
 export interface LLMUsageSummary {
@@ -54,7 +70,6 @@ export interface LLMUsageSummary {
   promptTokens: number;
   completionTokens: number;
   totalTokens: number;
-  costUSD: number;
 }
 
 export interface StockReplenishmentResult {

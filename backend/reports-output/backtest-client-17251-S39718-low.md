@@ -5,16 +5,14 @@
 - **Client** : CARREFOUR BELGIUM SA, CD Carrefour Kontich (ID: 17251)
 - **Commande réelle** : S39718
 - **Date commande** : 2025-10-14 08:41:27
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 12
-- **Tokens**: 26,160 input + 7,095 output = 33,255 total
-- **Coût**: $0.1849 (~18.49¢)
-- **Coût par produit LLM**: $0.0154
+- **Tokens**: 19,452 input + 3,688 output = 23,140 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:58:46.089Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:34.811Z*

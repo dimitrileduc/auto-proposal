@@ -5,16 +5,14 @@
 - **Client** : CARREFOUR BELGIUM SA, CD Carrefour Kontich (ID: 17251)
 - **Commande réelle** : S39718
 - **Date commande** : 2025-10-14 08:41:27
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 12
-- **Tokens**: 26,160 input + 7,095 output = 33,255 total
-- **Coût**: $0.1849 (~18.49¢)
-- **Coût par produit LLM**: $0.0154
+- **Tokens**: 19,452 input + 3,688 output = 23,140 total
 
 
 ---
@@ -147,16 +145,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF01012] CARREFOUR VOL AU VENT 400 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8 | 108 | 108 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF3339] CARRE MAYONNAISE ANCIENNE 500ML | 96 | 96 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF3343] SIMPL CARRE VOL AU VENT 800 GR | 192 | 96 | 96.0 | 100.0% | ✅ partial | 🤖 LLM |
-| [PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8 | 108 | 108 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF1952] CARRE VIN CIBOULET PET 450 | 98 | 98 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF3341] CARRE MAYONNAISE BIO 500ML | 110 | 110 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF01012] CARREFOUR VOL AU VENT 400 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8 | 108 | 108 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3339] CARRE MAYONNAISE ANCIENNE 500ML | 96 | 96 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3343] SIMPL CARRE VOL AU VENT 800 GR | 192 | 96 | 96.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8 | 108 | 108 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF1952] CARRE VIN CIBOULET PET 450 | 98 | 98 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3341] CARRE MAYONNAISE BIO 500ML | 110 | 110 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (8 produits)
@@ -167,47 +165,20 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 192u (confidence: medium)
-- 📊 **Baseline N-1**: 144u
+- 📊 **Baseline N-1**: 192u
 - 📊 **Médiane**: 192u
 - ✅ **Réel commandé**: 192u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande hebdomadaire le mardi (avec exceptions ponctuelles le jeudi)
+- **Pattern temporel**: Hebdomadaire ~Mardi (parfois jeudi en rattrapage)
 - **Saisonnalité**: weak
-- **Tendance**: Stabilité autour de 96-192u (baseline), avec pics ponctuels exclus
+- **Tendance**: Stable avec légère volatilité 96-288u
 - **Outliers détectés**: 480u, 384u, 384u
 
 **🧠 Raisonnement LLM:**
-**Analyse détaillée:**
-
-**1. PATTERN RYTHMIQUE:**
-- Forte régularité des commandes le **mardi** (N-1 et période récente)
-- La date de prédiction (2025-10-14) est un **mardi** → cohérent avec le pattern
-- Dernière commande: 2025-10-09 (jeu.) = il y a 5 jours → rythme hebdomadaire confirmé
-- Avant cela: 2025-10-07 (mar.) → double commande sur la même semaine (mar.+jeu.) suggère un rattrapage ou ajustement
-
-**2. FILTRAGE OUTLIERS:**
-- **480u** (sep. 2024): outlier majeur, possiblement promotion/événement
-- **384u** (2×): juin 2024 (3 commandes le même jour = erreur/consolidation) + sep. 2025
-- Baseline récurrente N-1: **96-288u** avec prédominance de **96-192u**
-
-**3. COMPARAISON SAISONNIÈRE N vs N-1:**
-- Octobre 2024: 96u (08/10) et 288u (01/10)
-- La semaine comparable (mi-octobre) montre **96u en N-1**
-- Septembre 2025 récent: forte variabilité (96u, 96u, 384u), puis normalisation avec 192u (07/10) + 288u (09/10)
-
-**4. TENDANCE RÉCENTE (3 derniers mois):**
-- Hors outlier 384u, la tendance se stabilise autour de **96-192u** 
-- La double commande récente (192u mar. + 288u jeu.) totalise 480u sur 1 semaine = volume exceptionnel
-- Probable retour à la normale après ce pic
-
-**5. DÉCISION:**
-- Baseline théorique: (96+192+96+96) / 4 ≈ **120u** (hors outliers)
-- Mais pattern mardi montre souvent **192u** en N-1 (août 2024: 192u×2, sep.: 192u)
-- Le 07/10 (mardi dernier) = 192u → signal fort
-- **Prédiction: 192u** = quantité récurrente cohérente pour un mardi standard, en tenant compte du retour à la normale post-pic
+Pattern hebdomadaire identifié: commandes majoritairement le mardi. Dernière commande le 09/10 (jeu.) avec 288u après 192u le 07/10 (mar.) suggère un cycle perturbé. En N-1 même période: 96-288-96-480 (forte volatilité avec pic 480u outlier probable). Exclusion des outliers (480u en sept-24, 384u récurrents): baseline naturelle se situe autour de 96-192-288u. Les 5 dernières commandes hors outliers: 288,192,96,96,192 → médiane=192u. Prochaine commande attendue mardi 14/10 (demain) ou lundi 13/10 selon rythme client. La séquence jeudi 09/10 (288u) après mardi 07/10 (192u) indique un cycle perturbé mais pas de rattrapage massif nécessaire. Volume le plus probable: 192u (quantité récurrente stable, équilibre entre les 96u bas et 288u hauts).
 
 </details>
 
@@ -224,32 +195,13 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande quasi-hebdomadaire chaque Mardi (parfois Jeudi en complément)
+- **Pattern temporel**: Mardi dominant (4/5 commandes récentes), rythme hebdomadaire avec dernière commande jeudi 09/10
 - **Saisonnalité**: weak
-- **Tendance**: Stable autour de 192u (moyenne récente ~192u)
-- **Outliers détectés**: 576u, 480u, 384u
+- **Tendance**: Stable autour de 192u (moyenne récente 192u, médiane 192u)
+- **Outliers détectés**: 576u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les 3 derniers mois montrent un pattern très régulier de commandes le Mardi (07/10, 30/09, 23/09, 16/09), avec une exception le 09/10 (jeudi) probablement en complément. Le 14/10/2025 étant un Mardi, il s'inscrit parfaitement dans ce cycle hebdomadaire.
-
-**FILTRAGE OUTLIERS:**
-Les valeurs exceptionnelles de juillet 2024 (576u, 480u, 384u) correspondent à une période de forte activité estivale avec plusieurs commandes groupées. Ces volumes ne reflètent pas la demande de fond habituelle. Les multiples commandes du 25/06/2024 (4×192u) suggèrent aussi un événement ponctuel.
-
-**RÉFÉRENCE N-1 (Octobre 2024):**
-- 08/10/2024 (Mardi): 192u
-- 01/10/2024 (Mardi): 96u
-La moyenne d'octobre N-1 = 144u, mais avec forte variabilité.
-
-**TENDANCE RÉCENTE (Septembre-Octobre 2025):**
-- 16/09: 192u
-- 23/09: 192u  
-- 30/09: 288u (possible rattrapage ou commande double)
-- 07/10: 96u (commande réduite, compensée par 192u le 09/10)
-→ Moyenne lissée = ~192u par cycle hebdomadaire
-
-**DÉCISION:**
-La quantité de 192u représente la demande de fond stabilisée observée sur les 2 derniers mois. Le 07/10 (96u) + 09/10 (192u) = 288u sur la semaine dernière, ce qui suggère un rythme normalisé. Le 30/09 (288u) était probablement une double commande. La prédiction de 192u pour ce Mardi 14/10 s'aligne avec le pattern dominant et la saisonnalité faible d'octobre.
+Pattern clair: commandes quasi-hebdomadaires le mardi à 192u (16/09, 23/09, 30/09 avec 288u=rattrapage, 07/10 à 96u=demi-commande). Le 576u de juillet 2024 est un outlier isolé (probable promo/stock). La commande du 09/10 (jeudi, 192u) casse légèrement le rythme mardi mais confirme le quantum de 192u. Prochaine date logique: mardi 14/10, mais la prédiction est pour lundi 13/10. Deux scénarios: (1) commande anticipée d'1 jour à 192u (comportement stable), (2) pas de commande lundi car attente du mardi habituel. Vu la régularité forte du pattern mardi et l'absence d'urgence détectée, je privilégie la quantité standard observée de 192u si commande passée, car c'est le quantum de référence constant sur 3 mois.
 
 </details>
 
@@ -266,21 +218,13 @@ La quantité de 192u représente la demande de fond stabilisée observée sur le
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande chaque Mardi, rythme hebdomadaire strict (intervalle 7 jours)
-- **Saisonnalité**: none
-- **Tendance**: Stable à 108u depuis 5 mois
+- **Pattern temporel**: Commande chaque Mardi (hebdomadaire strict)
+- **Saisonnalité**: weak
+- **Tendance**: Stable à 108u
 - **Outliers détectés**: 324u, 216u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Le pattern est très clair - commandes systématiques chaque MARDI avec un intervalle de 7 jours. Les 5 dernières commandes de 2025 (26/08, 09/09, 23/09, 30/09, 07/10) confirment ce cycle hebdomadaire strict, toutes à 108u. La prochaine commande prévue le 14/10 (mardi) s'inscrit parfaitement dans ce rythme.
-
-**FILTRAGE DES OUTLIERS**: Les quantités de 324u (02/07/2024) et 216u (17/09/2024, 25/06/2024) sont clairement exceptionnelles. Ces pics ponctuels ne se reproduisent pas dans la période récente et ne correspondent à aucune saisonnalité à la date du 14/10.
-
-**SAISONNALITÉ N-1**: En octobre 2024, les commandes étaient à 108u (01/10, 08/10), identiques à 2025. Aucun effet saisonnier particulier détecté pour mi-octobre.
-
-**TENDANCE**: Stabilité absolue à 108u depuis août 2025 (5 commandes consécutives). Pas de rupture de tendance, pas de rattrapage à prévoir puisque le rythme hebdomadaire est respecté (dernière commande le 07/10, soit 7 jours avant la prédiction).
-
-**CONCLUSION**: La demande de fond stable à 108u, associée au respect strict du cycle hebdomadaire, conduit à une prédiction de 108 unités avec une confiance élevée.
+Pattern hebdomadaire parfaitement stable: commandes TOUS les mardis depuis 3 mois à 108u exactement (07/10, 30/09, 23/09, 09/09, 26/08). Les outliers identifiés (324u en 07/2024 et 216u ponctuels) sont des événements isolés sans récurrence saisonnière à cette date. N-1 (oct 2024) montre aussi 108u réguliers. Aucune rupture de rythme (dernière commande 07/10, prochaine attendue 14/10 proche du 13/10). Tendance plate confirmée sur 5 dernières commandes identiques. Prédiction: 108u avec forte confiance.
 
 </details>
 
@@ -297,19 +241,13 @@ La quantité de 192u représente la demande de fond stabilisée observée sur le
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande hebdomadaire chaque Mardi (7 jours)
+- **Pattern temporel**: Commande chaque Mardi avec cycle hebdomadaire strict
 - **Saisonnalité**: none
-- **Tendance**: Stable à 96u après correction d'une anomalie en juillet
+- **Tendance**: Stable à 96u depuis 3 mois (après normalisation post-outlier du 29/07)
 - **Outliers détectés**: 192u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Le client présente un pattern hebdomadaire extrêmement régulier avec commandes chaque mardi à intervalle de 7 jours (09/09, 16/09, 30/09, 07/10). La prochaine commande prévue le 14/10 (mardi) suit ce cycle exact.
-
-**FILTRAGE OUTLIERS**: La commande du 29/07 (192u) est clairement exceptionnelle - elle représente exactement le double de la norme. Cela suggère soit un rattrapage après rupture, soit une commande promotionnelle ponctuelle. Depuis septembre, le rythme est revenu à une parfaite stabilité à 96u.
-
-**TENDANCE**: Les 4 dernières commandes montrent une stabilité absolue (96u × 4), indiquant que la demande hebdomadaire de fond est solidement ancrée à ce niveau. Aucune saisonnalité N-1 disponible, mais la régularité récente compense.
-
-**DÉCISION**: Aucun élément ne justifie de dévier de 96u. Le pattern est clair, la fréquence respectée, et la date de prédiction (mardi 14/10) correspond exactement au jour de commande habituel, 7 jours après la dernière commande. Prédiction: 96 unités.
+Pattern hebdomadaire très stable détecté: commandes systématiques le mardi. Les 4 dernières commandes (sept-oct) montrent une constance parfaite à 96u. L'événement du 29/07 (192u) est un outlier isolé (double quantité, possiblement rattrapage ou promotion). Aucune saisonnalité N-1 disponible. La prédiction pour le mardi 13/10 suit logiquement le rythme hebdomadaire établi avec la quantité standardisée de 96u observée sur les 6 dernières semaines consécutives.
 
 </details>
 
@@ -326,21 +264,13 @@ La quantité de 192u représente la demande de fond stabilisée observée sur le
 - 📉 **Erreur Médiane**: 96u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande chaque Mardi hebdomadaire
+- **Pattern temporel**: Hebdomadaire strict - Chaque Mardi (intervalle 7j parfait)
 - **Saisonnalité**: none
-- **Tendance**: Hausse récente +100% puis stabilisation à 192u
-- **Outliers détectés**: 96u
+- **Tendance**: Stable à 192u après transition depuis 96u début septembre
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique:** Le client présente un pattern hebdomadaire très régulier avec des commandes systématiquement le mardi (2/09, 9/09, 23/09, 30/09, 7/10). La prédiction pour le 14/10 (mardi) s'inscrit parfaitement dans ce cycle.
-
-**Analyse de tendance:** On observe une rupture nette début septembre : passage de 96u (2/09) à 192u (9/09), soit un doublement. Cette nouvelle quantité de 192u se maintient ensuite de manière stable sur 4 commandes consécutives (9/09, 23/09, 30/09, 7/10), confirmant qu'il s'agit d'un nouveau niveau de demande structurelle et non d'un pic ponctuel.
-
-**Outliers:** Le 96u du 2/09 apparaît comme une anomalie basse (possible transition ou sous-commande) par rapport au nouveau standard établi.
-
-**Saisonnalité:** Absence de données N-1, donc pas de pattern saisonnier identifiable.
-
-**Décision:** La régularité du rythme hebdomadaire (chaque mardi) et la stabilité parfaite de 192u sur les 4 dernières semaines indiquent une demande prévisible. Aucun élément ne suggère de variation pour la prochaine commande du 14/10.
+Pattern hebdomadaire ultra-régulier détecté: 5 commandes consécutives les mardis (09/02, 09/09, 23/09, 30/09, 07/10). Le client a stabilisé sa demande à 192u depuis mi-septembre après une commande de transition à 96u. La prochaine date de prédiction (13/10) tombe un lundi, donc HORS du cycle habituel du mardi. Cependant, si l'on suppose un décalage d'1 jour ou une anticipation, la quantité attendue reste 192u car: (1) Aucun outlier identifié, (2) Tendance parfaitement stable sur 4 semaines à 192u, (3) Pas de saisonnalité N-1 disponible, (4) Le doublement de 96u→192u semble être un ajustement structurel du besoin, désormais consolidé. Prédiction: 192u avec haute confiance.
 
 </details>
 
@@ -357,23 +287,13 @@ La quantité de 192u représente la demande de fond stabilisée observée sur le
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande chaque Mardi, cycle régulier de 14 jours
+- **Pattern temporel**: Commande chaque Mardi avec cycle de ~14 jours (bi-hebdomadaire)
 - **Saisonnalité**: none
-- **Tendance**: Stable à 108u avec un pic récent exceptionnel
+- **Tendance**: Stable à 108u avec exception récente 216u (+100%)
 - **Outliers détectés**: 216u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique** : Pattern très clair avec commandes exclusivement le MARDI, intervalle stable de 14 jours (bi-mensuel). Historique sur 3 mois montre 5 commandes, toutes un mardi.
-
-**Analyse des quantités** : 
-- 4 commandes sur 5 = 108u (12/08, 26/08, 09/09, 23/09)
-- 1 commande = 216u (30/09) → exactement le DOUBLE de la baseline
-
-**Filtrage du outlier** : La commande de 216u du 30/09 est clairement exceptionnelle. Deux hypothèses : (1) rattrapage d'un manque de stock, (2) commande anticipée pour événement ponctuel. Le retour attendu à la normale après un pic isolé est cohérent en B2B.
-
-**Tendance** : Aucune saisonnalité N-1 disponible. Sur période récente, la demande de fond est STABLE à 108u. Le pic de 216u n'a duré qu'une seule occurrence et ne constitue pas une nouvelle tendance.
-
-**Décision** : Le 14/10/2025 étant un mardi (conforme au pattern), et respectant l'intervalle de ~14 jours depuis le 30/09, la quantité la plus probable est le retour à la baseline de 108u. Le doublement était exceptionnel et non structurel.
+Pattern bi-hebdomadaire strict détecté: 12/08(mar), 26/08(mar), 09/09(mar), 23/09(mar), 30/09(mar). Les 4 premières commandes montrent une stabilité parfaite à 108u. Le 30/09 montre 216u (exactement 2×108) après seulement 7 jours, suggérant un rattrapage/avance ou erreur de saisie plutôt qu'un changement structurel. Le 13/10 (lundi) casse le pattern mardi habituel, mais en appliquant le cycle 14j depuis le 30/09, on arrive au 14/10. Avec une demande de fond stable à 108u sur 4 commandes consécutives et un outlier isolé non représentatif d'une tendance, la quantité la plus probable reste 108u. Aucune saisonnalité N-1 disponible pour ajuster. Prédiction: 108u.
 
 </details>
 
@@ -390,21 +310,13 @@ La quantité de 192u représente la demande de fond stabilisée observée sur le
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande principalement chaque Mardi, rythme bi-mensuel (~14 jours entre commandes)
-- **Saisonnalité**: none
-- **Tendance**: Stable à 98u (hors événements exceptionnels)
-- **Outliers détectés**: 392u, 196u
+- **Pattern temporel**: Commande bi-hebdomadaire/mensuelle, prédominance Mardi
+- **Saisonnalité**: weak
+- **Tendance**: Stable à 98u (hors anomalie juillet 2025)
+- **Outliers détectés**: 392u, 196u, 196u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE** : Le produit montre un pattern très clair de commandes le mardi, avec une fréquence bi-mensuelle stable (14-21 jours entre commandes). La dernière commande date du 2025-09-23 (mardi), soit 21 jours avant la date de prédiction 2025-10-14 (mardi) - ce qui correspond parfaitement au cycle observé.
-
-**FILTRAGE OUTLIERS** : Les quantités de 392u et 196u du 2025-07-29 sont clairement exceptionnelles (multiples de 98u commandés le même jour, probablement un événement ponctuel, stock de sécurité ou promotion). Sur les 3 derniers mois, hors cet événement, toutes les commandes sont de 98u. Sur N-1, la tendance était également de 98u (août-octobre 2024), avec un événement exceptionnel en juin 2024 (588u cumulés en une journée).
-
-**SAISONNALITÉ** : Aucun impact saisonnier détecté. Les volumes d'octobre 2024 (98u) sont identiques aux commandes récentes normalisées de 2025.
-
-**TENDANCE** : Stable. La demande de fond reste constante à 98u par commande depuis plus d'un an, hors événements ponctuels.
-
-**DÉCISION** : Le 2025-10-14 étant un mardi respectant le cycle bi-mensuel, avec aucun indicateur de rupture ou d'événement spécial, la quantité la plus probable est la baseline standard de **98 unités**.
+Pattern clair: client commande 98u de manière récurrente tous les ~14-21 jours, massivement le mardi. N-1 (oct 2024) montre 98u. Les 3 derniers mois confirment 98u comme norme (sept x2, août x1), à l'exception d'une anomalie isolée fin juillet 2025 (588u total = probable rattrapage stock ou erreur système vu les 2 commandes simultanées). Pas de saisonnalité forte détectée. Dernière commande: 2025-09-23 (mar.) = 20 jours avant prédiction (2025-10-13 lun.). Le cycle bi-hebdomadaire/mensuel suggère une commande imminente. La prédiction tombe un lundi (inhabituel) mais reste dans la fenêtre temporelle attendue. Quantité recommandée: 98u (demande de fond stable, aucun indicateur de changement structurel).
 
 </details>
 
@@ -421,26 +333,213 @@ La quantité de 192u représente la demande de fond stabilisée observée sur le
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Commande hebdomadaire chaque Mardi (intervalle ~7j, sauf période 22 juillet - 23 septembre avec écart de 56j)
+- **Pattern temporel**: Commande chaque Mardi, pattern hebdomadaire strict
 - **Saisonnalité**: none
-- **Tendance**: Stable à 110u
+- **Tendance**: Stable - Quantité fixe 110u par commande
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les données montrent un pattern clair: toutes les commandes sont passées un mardi (22/07, 29/07, 23/09). Entre le 22 et 29 juillet, intervalle de 7 jours = rythme hebdomadaire. Puis rupture de 56 jours (probablement congés d'été), suivie d'une reprise le 23/09. La date de prédiction (14/10) est également un mardi, soit 21 jours après la dernière commande (3 semaines).
+Pattern très stable identifié: 4 commandes consécutives de 110u, toutes des mardis (22/07, 29/07 doublé, 23/09). Cycle hebdomadaire strict avec quantité fixe. La date de prédiction (13/10) est un lundi, donc hors cycle habituel du mardi. Cependant, l'intervalle depuis dernière commande (23/09) est de 20 jours, ce qui suggère qu'une commande est imminente. Le pattern montre une consommation régulière de 110u par cycle. Sans saisonnalité N-1, sans outliers, et avec une stabilité parfaite sur 3 mois, la prédiction optimale reste 110u - la quantité standard observée à chaque réapprovisionnement.
 
-**FILTRAGE OUTLIERS:**
-Toutes les quantités sont identiques à 110u. Aucune variation détectée. Pas d'événements exceptionnels. La stabilité est totale sur les 4 commandes disponibles.
+</details>
 
-**SYNTHÈSE:**
-- Pattern: Mardi fixe avec fréquence hebdomadaire ou bi-hebdomadaire
-- Absence de données N-1: pas d'effet saisonnier observable
-- Tendance récente: parfaitement stable à 110u (100% des commandes)
-- Le 14/10 correspond au pattern temporel (mardi) et à un intervalle cohérent post-reprise
 
-**DÉCISION:**
-Sans aucune variation historique et avec un pattern jour/quantité extrêmement régulier, la prédiction la plus précise est 110u. C'est la demande de fond établie avec une confiance élevée (4/4 commandes identiques).
+
+
+### 📊 Données d'Input LLM (8 produits)
+
+
+<details>
+<summary><strong>1. [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 10:12:05: 288u
+- 2025-10-07 09:21:19: 192u
+- 2025-09-30 10:39:35: 384u
+- 2025-09-23 14:07:32: 96u
+- 2025-09-16 12:31:33: 96u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-08 08:55:53: 96u
+- 2024-10-01 09:34:05: 288u
+- 2024-09-24 07:15:22: 96u
+- 2024-09-17 15:18:07: 480u
+- 2024-09-12 12:47:26: 192u
+- 2024-09-05 07:15:19: 288u
+- 2024-08-27 09:32:47: 192u
+- 2024-08-20 08:57:46: 192u
+- 2024-08-13 08:17:17: 96u
+- 2024-06-25 12:51:56: 288u
+- 2024-06-25 12:51:20: 288u
+- 2024-06-25 12:50:51: 384u
+
+**✅ Quantité LLM**: 192u (confidence: medium)
+**📊 Quantité Réelle**: 192u
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF01012] CARREFOUR VOL AU VENT 400 GR</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-09 10:12:05: 192u
+- 2025-10-07 09:21:19: 96u
+- 2025-09-30 10:39:35: 288u
+- 2025-09-23 14:07:32: 192u
+- 2025-09-16 12:31:33: 192u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-08 08:55:53: 192u
+- 2024-10-01 09:34:05: 96u
+- 2024-08-20 08:57:46: 192u
+- 2024-07-15 10:04:22: 576u
+- 2024-07-03 11:51:49: 96u
+- 2024-07-03 08:54:55: 480u
+- 2024-07-02 08:34:10: 384u
+- 2024-06-27 12:35:53: 96u
+- 2024-06-25 12:51:56: 192u
+- 2024-06-25 12:51:20: 192u
+- 2024-06-25 12:50:51: 192u
+- 2024-06-25 08:49:38: 192u
+
+**✅ Quantité LLM**: 192u (confidence: high)
+**📊 Quantité Réelle**: 192u
+
+</details>
+
+
+<details>
+<summary><strong>3. [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-07 09:21:19: 108u
+- 2025-09-30 10:39:35: 108u
+- 2025-09-23 14:07:32: 108u
+- 2025-09-09 13:17:20: 108u
+- 2025-08-26 13:19:30: 108u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-08 08:55:53: 108u
+- 2024-10-01 09:34:05: 108u
+- 2024-09-24 07:15:22: 108u
+- 2024-09-17 15:18:07: 216u
+- 2024-09-12 12:47:26: 108u
+- 2024-07-03 11:51:49: 108u
+- 2024-07-02 08:34:10: 324u
+- 2024-06-27 12:35:53: 108u
+- 2024-06-25 12:51:56: 108u
+- 2024-06-25 12:51:20: 108u
+- 2024-06-25 12:50:51: 216u
+- 2024-06-25 08:49:38: 108u
+
+**✅ Quantité LLM**: 108u (confidence: high)
+**📊 Quantité Réelle**: 108u
+
+</details>
+
+
+<details>
+<summary><strong>4. [PF3339] CARRE MAYONNAISE ANCIENNE 500ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-07 09:21:19: 96u
+- 2025-09-30 10:39:35: 96u
+- 2025-09-16 12:31:33: 96u
+- 2025-09-09 13:17:20: 96u
+- 2025-07-29 04:52:34: 192u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 96u (confidence: high)
+**📊 Quantité Réelle**: 96u
+
+</details>
+
+
+<details>
+<summary><strong>5. [PF3343] SIMPL CARRE VOL AU VENT 800 GR</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-10-07 09:21:19: 192u
+- 2025-09-30 10:39:35: 192u
+- 2025-09-23 14:07:32: 192u
+- 2025-09-09 13:17:20: 192u
+- 2025-09-02 11:55:00: 96u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 192u (confidence: high)
+**📊 Quantité Réelle**: 96u
+
+</details>
+
+
+<details>
+<summary><strong>6. [PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-30 10:39:35: 216u
+- 2025-09-23 14:07:32: 108u
+- 2025-09-09 13:17:20: 108u
+- 2025-08-26 13:19:30: 108u
+- 2025-08-12 09:34:57: 108u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 108u (confidence: high)
+**📊 Quantité Réelle**: 108u
+
+</details>
+
+
+<details>
+<summary><strong>7. [PF1952] CARRE VIN CIBOULET PET 450</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-23 14:07:32: 98u
+- 2025-09-09 13:17:20: 98u
+- 2025-08-12 10:12:59: 98u
+- 2025-07-29 04:52:34: 392u
+- 2025-07-29 04:52:06: 196u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-08 08:55:53: 98u
+- 2024-09-24 07:15:22: 98u
+- 2024-09-12 12:47:26: 98u
+- 2024-09-05 07:15:19: 98u
+- 2024-08-27 09:32:47: 98u
+- 2024-08-20 08:57:46: 98u
+- 2024-08-13 08:17:17: 98u
+- 2024-08-06 14:39:19: 98u
+- 2024-06-25 12:51:56: 196u
+- 2024-06-25 12:51:20: 98u
+- 2024-06-25 12:50:51: 98u
+- 2024-06-25 08:49:38: 196u
+
+**✅ Quantité LLM**: 98u (confidence: high)
+**📊 Quantité Réelle**: 98u
+
+</details>
+
+
+<details>
+<summary><strong>8. [PF3341] CARRE MAYONNAISE BIO 500ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-23 14:07:32: 110u
+- 2025-07-29 04:52:34: 110u
+- 2025-07-29 04:52:06: 110u
+- 2025-07-22 14:39:10: 110u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 110u (confidence: high)
+**📊 Quantité Réelle**: 110u
 
 </details>
 
@@ -469,11 +568,11 @@ Sans aucune variation historique et avec un pattern jour/quantité extrêmement 
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3340] CARRE MAYONNAISE BELGE 720ML | 80 | Stock prédit: 6.5u (0j restants) → prédit 80u mais non commandé |
-| [PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8 | 96 | Stock prédit: 57.2u (8j restants) → prédit 96u mais non commandé |
-| [PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML | 112 | Stock prédit: -14.0u (-3j restants) → prédit 112u mais non commandé |
-| [PF2933] CARRE VIN MIEL MOU PET 450 BIO | 98 | Stock prédit: -322.3u (-52j restants) → prédit 98u mais non commandé |
-| [PF2932] CARRE VIN CIBOULET PET 450 BIO | 98 | Stock prédit: -438.8u (-62j restants) → prédit 98u mais non commandé |
+| [PF3340] CARRE MAYONNAISE BELGE 720ML | 80 | Stock prédit: 18.2u (1j restants) → prédit 80u mais non commandé |
+| [PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8 | 96 | Stock prédit: 63.4u (9j restants) → prédit 96u mais non commandé |
+| [PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML | 112 | Stock prédit: -11.9u (-2j restants) → prédit 112u mais non commandé |
+| [PF2933] CARRE VIN MIEL MOU PET 450 BIO | 98 | Stock prédit: -319.8u (-51j restants) → prédit 98u mais non commandé |
+| [PF2932] CARRE VIN CIBOULET PET 450 BIO | 98 | Stock prédit: -436.5u (-61j restants) → prédit 98u mais non commandé |
 
 
 ---
@@ -497,4 +596,4 @@ Sans aucune variation historique et avec un pattern jour/quantité extrêmement 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:58:46.090Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:34.812Z*

@@ -5,16 +5,14 @@
 - **Client** : AU RAYON BIO (ID: 17809)
 - **Commande réelle** : S39577
 - **Date commande** : 2025-10-09 06:15:56
-- **Date cutoff système** : 2025-10-09 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-08 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 13
-- **Tokens**: 29,170 input + 7,896 output = 37,066 total
-- **Coût**: $0.2059 (~20.59¢)
-- **Coût par produit LLM**: $0.0158
+- **Appels**: 14
+- **Tokens**: 23,326 input + 4,912 output = 28,238 total
 
 
 ---
@@ -71,9 +69,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 1.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 52.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 60.3% | Erreur moyenne en % (biaisé, pour info) |
+| **MAE** | 1.15 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 60.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 70.5% | Erreur moyenne en % (biaisé, pour info) |
 | **Bias** | -4.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
 | Partial Match (>0u) | 11 | Avec erreur |
@@ -147,21 +145,21 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 3 | 1 | 2.0 | 200.0% | ✅ partial | 🤖 LLM |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [LV131] LV Tartinade Potiron 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | 🤖 LLM |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [LV135] LV Tartinade Basilico 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | 🤖 LLM |
-| [LV136] LV Tartinade Betterave 190g | 1 | 3 | 2.0 | 66.7% | ✅ partial | 🤖 LLM |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 🤖 LLM |
-| [LV345] LV Spread KIDS 200ml Organic | 3 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [LV137] LV Tartinade Lentilles Curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | 📊 Médiane |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [LV160] LV Tartinade Aubergine 190g | 3 | 1 | 2.0 | 200.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 3 | 1.0 | 33.3% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV131] LV Tartinade Potiron 190g | 3 | 1 | 2.0 | 200.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV135] LV Tartinade Basilico 190g | 1 | 3 | 2.0 | 66.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV136] LV Tartinade Betterave 190g | 1 | 3 | 2.0 | 66.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV345] LV Spread KIDS 200ml Organic | 3 | 2 | 1.0 | 50.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
+| [LV330] LV BIO Tartinade Toscana 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV137] LV Tartinade Lentilles Curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | ❌ Non | ❌ Non | 📊 Médiane |
 
 
 ### 🤖 Détails des Prédictions LLM (11 produits)
@@ -179,21 +177,13 @@
 - 📉 **Erreur Médiane**: 2u (200.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (48j entre Jul17-Sep10, ~30-40j en N-1)
+- **Pattern temporel**: Irrégulier - intervalle variable 7-48 jours, pas de jour fixe (lun/mar/ven/jeu/mer observés)
 - **Saisonnalité**: none
-- **Tendance**: Hausse progressive +50% (2u→3u)
-- **Outliers détectés**: 3u
+- **Tendance**: Stable avec légère hausse récente - moyenne historique ~2u, 3 derniers mois: 2.67u (+33%)
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique**: Le produit montre un pattern de commande irrégulier avec des intervalles de 20-40 jours. Dernière commande le 2025-09-10 (mer.), soit 29 jours avant la date de prédiction (2025-10-09 jeudi). Le rythme récent suggère une commande possible dans cette fenêtre.
-
-**Filtrage outliers**: En N-1, la demande était stable à 2u (avec une seule exception à 1u en mars 2024). En 2025, on observe 2 commandes à 3u (Jul17 et Sep10) contre 1 seule à 2u (Jul24), indiquant un nouveau palier de demande plutôt qu'un outlier.
-
-**Tendance récente**: Nette progression de la quantité commandée. N-1 moyen = 2u, récent 2025 = 2.67u moyenne. La quantité 3u devient le nouveau standard (2 des 3 dernières commandes).
-
-**Saisonnalité**: Aucun pattern saisonnier détecté. En octobre N-1, commande de 2u. Avec la tendance haussière observée (+50%), l'équivalent actuel serait 3u.
-
-**Décision**: Compte tenu du nouveau palier de demande établi (3u devient la norme en 2025) et de l'absence de saisonnalité forte, la prédiction optimale est **3 unités**.
+Analyse rythmique: Historique N-1 montre commandes espacées 18-31j avec quantité stable à 2u (11/12 commandes). Période récente (3 derniers mois) révèle 2 commandes de 3u sur 3, signalant hausse structurelle +33%. Pas de saisonnalité détectable (aucun pic récurrent en oct N-1). Dernière commande 28j avant prédiction (10 sept), cohérent avec rythme habituel. La convergence vers 3u ces derniers mois (au lieu de 2u historiques) indique ajustement pérenne de la demande client. Baseline 2.5u ajustée à 3u pour refléter nouveau palier. Pas de rattrapage à prévoir (rythme respecté). Confiance medium car seulement 3 points récents mais signal clair.
 
 </details>
 
@@ -210,26 +200,13 @@
 - 📉 **Erreur Médiane**: 1u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier ~30-60j (historique N-1 mensuel, N actuel très espacé)
+- **Pattern temporel**: Irrégulier ~40-50 jours entre commandes, aucun jour fixe détecté
 - **Saisonnalité**: none
-- **Tendance**: Stable avec légère variabilité (2-3u)
+- **Tendance**: Stable à 2u (pic 3u juillet exceptionnel)
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-L'historique N-1 montre un pattern irrégulier avec des commandes espacées de 11 à 50 jours, sans jour de semaine fixe (lun./mar./ven. variés). En N actuel, seulement 3 commandes depuis janvier : 17/07 (1u), 24/07 (3u), 10/09 (2u). L'intervalle entre la dernière commande (10/09) et la date de prédiction (09/10) est de 29 jours, cohérent avec le rythme mensuel observé.
-
-**FILTRAGE OUTLIERS:**
-La quantité de 3u apparaît 2 fois (oct 2024 et juil 2025) mais reste marginale. La très grande majorité des commandes (11/15) sont de 2u. Le 1u de juillet 2025 semble être une micro-commande ponctuelle.
-
-**SAISONNALITÉ:**
-Aucun pattern saisonnier détecté. Le produit (tartinade) est commandé toute l'année sans pic notable en octobre N-1 (3u n'est pas significatif statistiquement).
-
-**TENDANCE:**
-La demande est stable autour de 2u par commande. Pas de tendance haussière ou baissière claire. La dernière commande récente (10/09) confirme le retour à 2u après le 3u exceptionnel.
-
-**DÉCISION:**
-Baseline théorique = 2u (mode statistique). Pas de rattrapage à prévoir car le rythme de 29j est respecté. Pas d'effet saisonnier en octobre. Prédiction : **2 unités**.
+Historique N-1 montre une demande constante de 2u sur 12 commandes (sauf 1u décembre 2023). Période récente: 2u le 10/09/25 (il y a 28j), puis 3u+1u début juillet (probable ajustement ponctuel car cassure du pattern habituel). Intervalle moyen 40-50j entre commandes → prochaine commande attendue fin octobre cohérent avec prédiction 08/10. Aucune saisonnalité octobre détectée en N-1. Le pic à 3u juillet est isolé et suivi d'1u (=compensation), donc exclu du calcul. Baseline stable à 2u validée par 11/12 commandes N-1 et dernière commande septembre 2025. Pas de tendance haussière structurelle justifiant 3u. Prédiction: 2u (quantité modale et médiane du dataset nettoyé).
 
 </details>
 
@@ -239,84 +216,43 @@ Baseline théorique = 2u (mode statistique). Pas de rattrapage à prévoir car l
 
 **Quantités:**
 - 🤖 **LLM prédit**: 3u (confidence: medium)
-- 📊 **Baseline N-1**: 3u
+- 📊 **Baseline N-1**: 2.8u
 - 📊 **Médiane**: 3u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 1u (50.0%)
 - 📉 **Erreur Médiane**: 1u (50.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec intervalles variables (7-58 jours entre commandes récentes)
+- **Pattern temporel**: Irrégulier avec intervalles variables (7j à 48j), pas de jour fixe détecté
 - **Saisonnalité**: weak
-- **Tendance**: Stable autour de 3u
-- **Outliers détectés**: 4u, 1u
+- **Tendance**: Stable autour de 3u (moyenne récente 2.3u après exclusion outlier)
+- **Outliers détectés**: 4u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les commandes récentes montrent un pattern irrégulier:
-- 2025-07-17 (jeu.) → 2025-07-24 (jeu.): 7 jours | 1u puis 3u
-- 2025-07-24 (jeu.) → 2025-09-10 (mer.): 48 jours | 3u
-- 2025-09-10 (mer.) → 2025-10-09 (jeu.): 29 jours
-
-Pas de jour de semaine fixe évident, mais commandes espacées de ~1 mois en moyenne sur période récente.
-
-**FILTRAGE OUTLIERS:**
-- 4u (2024-09-09): Pic isolé, jamais répété = outlier promotionnel probable
-- 1u (2025-07-17): Commande exceptionnellement basse, suivie 7 jours après par retour à 3u = possiblement erreur ou ajustement de stock
-
-**COMPARAISON N-1:**
-À début octobre 2024 (2024-10-08), commande de 3u. Impact saisonnier faible car produit tartinade paprika-chili (épicé) sans forte variation saisonnière observée.
-
-**TENDANCE:**
-Sur les 12 derniers mois N-1: médiane = 3u (mode dominant)
-Sur 3 derniers mois 2025: 3u, 3u, 1u → hors outlier 1u, stabilité à 3u
-Pas de tendance haussière ou baissière significative.
-
-**DÉCISION:**
-Baseline théorique = 3u (quantité récurrente dominante)
-La prochaine commande devrait suivre le pattern de base à 3u, confirmé par:
-- Référence N-1 à date similaire: 3u
-- Dernière commande normale (2025-09-10): 3u
-- Intervalle de 29 jours cohérent avec rythme mensuel
+Pattern d'achat irrégulier sans ancrage hebdomadaire fixe. N-1 montre une commande de 4u début sept (outlier probable), suivie de commandes stables 3u. Les 3 derniers mois confirment une demande de fond à 3u (2 fois) avec 1 mini-commande probable de dépannage le 17/07. Intervalles récents: 7j puis 48j, suggérant un cycle de réapprovisionnement flexible. La prédiction au 08/10 (28j après dernière commande du 10/09) correspond à un cycle normal de réassort. Baseline calculée: moyenne pondérée excluant le pic de 4u et la mini-commande de 1u = 2.8u, arrondi à 3u car correspond au quantum d'achat standard observé sur 80% des commandes récentes. Pas d'effet saisonnier fort détecté pour octobre vs historique N-1.
 
 </details>
 
 
 <details>
-<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - LLM: 2u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - LLM: 3u vs Médiane: 1u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 2u (confidence: medium)
-- 📊 **Baseline N-1**: 1.5u
+- 🤖 **LLM prédit**: 3u (confidence: medium)
+- 📊 **Baseline N-1**: 2.5u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur LLM**: 2u (200.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - intervalle variable (17-67j en N-1), dernière commande il y a 29 jours
+- **Pattern temporel**: Irrégulier longue période - Dernière commande il y a 28 jours (2025-09-10), historique N-1 montre intervalles variables 18-67 jours
 - **Saisonnalité**: weak
-- **Tendance**: Hausse progressive +50% (1-2u en N-1 → 3u récent)
-- **Outliers détectés**: 3u
+- **Tendance**: Hausse significative +200% - Passage de 1-2u (N-1) à 3u (dernière commande septembre 2025)
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-L'historique N-1 montre des commandes irrégulières avec intervalles variables (17-67 jours), sans pattern hebdomadaire ou mensuel fixe. Volumes N-1: majoritairement 1-2u. La dernière commande date du 10/09/2025 (29 jours avant la prédiction du 09/10).
-
-**SAISONNALITÉ:**
-En octobre N-1 (2024-10-30), quantité = 1u. Impact saisonnier faible car le produit "Tartinade Potiron" montre une distribution régulière toute l'année sans pic spécifique en octobre malgré le caractère "automnal" du potiron.
-
-**TENDANCE RÉCENTE:**
-La commande du 10/09/2025 à 3u marque une augmentation notable (+50% vs moyenne N-1 de 1.5u). Cela suggère soit une croissance de la demande client final, soit un rattrapage après 29 jours sans commande.
-
-**DÉCISION:**
-- Baseline théorique N-1 en octobre: 1u
-- Coefficient tendance récente: x2 (passage de 1.5u → 3u)
-- MAIS: Le 3u peut être un rattrapage lié à l'intervalle de 29j
-- Pour une prédiction à 29j post-commande, la demande de fond ajustée se situe entre 2-3u
-- Choix conservateur-précis: **2u** (évite sur-stockage tout en captant la croissance tendancielle)
-
-Confiance moyenne car pattern irrégulier rend difficile la prédiction exacte du timing et volume.
+Pattern irrégulier avec dernière commande 3u le 2025-09-10 (mer.) il y a 28 jours. Historique N-1 octobre montre 1u commandée le 2023-10-30. Cependant, tendance récente forte: passage de 1-2u en N-1 à 3u en septembre 2025 (+200%). La tartinade potiron étant un produit d'automne, octobre représente un pic saisonnier naturel. La dernière commande à 3u établit un nouveau niveau de demande. Avec 28 jours écoulés depuis dernière commande et cycle moyen observé ~30-40j, le timing de réapprovisionnement est cohérent. Recommandation: 3u pour maintenir le niveau de la dernière commande récente qui reflète mieux la demande actuelle que l'historique N-1 obsolète. Produit de saison automne justifie ce volume.
 
 </details>
 
@@ -333,28 +269,13 @@ Confiance moyenne car pattern irrégulier rend difficile la prédiction exacte d
 - 📉 **Erreur Médiane**: 1u (100.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (7j à 48j), pas de jour fixe identifiable
-- **Saisonnalité**: none
-- **Tendance**: Hausse récente +50% (passage de 2u à 3u en Sept 2025)
+- **Pattern temporel**: Irrégulier - intervalles variables (7j, 48j, 28j entre les 3 dernières commandes). Pas de jour fixe détectable.
+- **Saisonnalité**: weak
+- **Tendance**: Stable avec légère hausse récente - historique majoritairement à 2u (10/12 commandes), dernière commande à 3u (sept 2025)
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les commandes N-1 montrent un pattern irrégulier avec intervalles variant de ~10j à 38j, sans jour de semaine privilégié. En 2025, trois commandes récentes: 17/07 (jeu.), 24/07 (jeu.), 10/09 (mer.) - donc intervalles de 7j puis 48j.
-
-**FILTRAGE OUTLIERS:**
-La commande du 10/09/2025 à 3u (vs historique constant à 2u depuis Oct 2023) constitue une anomalie potentielle. Cependant, comme c'est la donnée la plus récente, elle peut signaler soit: (1) un rattrapage après 48j sans commande, (2) une hausse structurelle de demande.
-
-**SAISONNALITÉ:**
-Octobre N-1 (30/10/2023) = 2u. Pas de pattern saisonnier fort détecté. Le produit (tartinade) a potentiellement une légère saisonnalité estivale, mais les données ne montrent pas d'impact significatif.
-
-**DÉCISION:**
-- Baseline historique stable = 2u (94% des commandes)
-- Le 3u récent semble être un rattrapage ponctuel après 48j d'écart (vs 7j précédemment)
-- Date de prédiction: 09/10/2025, soit 29j après la dernière commande → retour au rythme normal attendu
-- La tartinade basilic-tomate suit probablement une demande régulière B2B sans forte variabilité
-
-**CONCLUSION:** Retour à la baseline de 2u, le pic à 3u étant interprété comme effet rattrapage ponctuel.
+Historique très stable à 2u (83% des commandes). La commande à 3u du 10/09/2025 est isolée et peut être un outlier (besoin ponctuel). Intervalle depuis dernière commande: 28 jours, cohérent avec la fréquence mensuelle observée (~30-40j typique). Pas de saisonnalité forte détectée pour début octobre N-1 (2u commandé fin octobre 2023). La tendance de fond reste à 2u. Le passage à 3u n'est pas confirmé par une série - principe de parcimonie appliqué. Prédiction: 2u (demande de base la plus probable).
 
 </details>
 
@@ -364,91 +285,43 @@ Octobre N-1 (30/10/2023) = 2u. Pas de pattern saisonnier fort détecté. Le prod
 
 **Quantités:**
 - 🤖 **LLM prédit**: 1u (confidence: medium)
-- 📊 **Baseline N-1**: 1u
+- 📊 **Baseline N-1**: 1.2u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 1u (50.0%)
 - 📉 **Erreur Médiane**: 1u (50.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier ~45-60 jours, sans jour fixe de semaine
+- **Pattern temporel**: Irrégulier - intervalles variables (7j puis 48j puis ~60j). Historique N-1 montre rythme 18-51 jours, pas de jour fixe. Produit BIO tartinade = rotation lente niche
 - **Saisonnalité**: none
-- **Tendance**: Baisse progressive -50% (2u → 1u)
+- **Tendance**: Baisse -50% - passage de 2u (norme N-1) à 1-2u en 2025 avec majorité 1u (2 des 3 dernières commandes)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les intervalles récents sont très irréguliers:
-- 2025-07-17 → 2025-07-24: 7 jours
-- 2025-07-24 → 2025-09-10: 48 jours
-- 2025-09-10 → 2025-10-09 (prédiction): 29 jours
-
-Pas de pattern hebdomadaire fixe. Le rythme semble être de ~1-2 mois entre commandes, avec des variations importantes.
-
-**TENDANCE RÉCENTE:**
-On observe une baisse nette des quantités:
-- N-1 (2023-2024): Principalement 2u par commande (8/10 commandes)
-- Période récente (3 derniers mois 2025): 2u → 1u → 1u
-- Les 2 dernières commandes sont de 1u uniquement
-
-**SAISONNALITÉ:**
-En octobre N-1 (2024-10-08): 2u commandées
-Mais la tendance récente montre clairement une diminution structurelle de la demande, passant de 2u à 1u.
-
-**DÉCISION:**
-- Baseline théorique: 1u (nouvelle norme établie sur les 2 dernières commandes)
-- Pas d'outliers détectés
-- La dernière commande date du 2025-09-10 (29 jours), ce qui reste dans le rythme observé
-- L'effet saisonnalité N-1 (2u en octobre) est écrasé par la tendance baissière récente
-
-**PRÉDICTION: 1 unité** - cohérent avec le nouveau niveau de demande stabilisé depuis juillet 2025.
+Produit BIO niche à rotation lente. ANALYSE RYTHMIQUE: Dernière commande 2025-09-10 (mer.) il y a 28j → intervalle cohérent avec historique récent (7-60j). TENDANCE NETTE: N-1 commandait systématiquement 2u (8/9 commandes), 2025 montre downsizing à 1u dominant (09-10:1u, 07-24:1u vs 07-17:2u unique). SAISONNALITÉ: Aucun pattern octobre spécifique en N-1 (dernière Oct-24 absente, Oct-23=2u mais contexte différent). DÉCISION: Baseline 1.2u par moyenne pondérée récente (poids fort sur 1u récurrent) → arrondi à 1u. Pas de rattrapage attendu (intervalle 28j normal pour ce produit). Confiance medium car historique court période récente mais tendance baissière claire
 
 </details>
 
 
 <details>
-<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM: 2u vs Médiane: 2u (Réel: 3u)</summary>
+<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM: 1u vs Médiane: 2u (Réel: 3u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 2u (confidence: medium)
+- 🤖 **LLM prédit**: 1u (confidence: medium)
 - 📊 **Baseline N-1**: 1.5u
 - 📊 **Médiane**: 2u
 - ✅ **Réel commandé**: 3u
-- 📉 **Erreur LLM**: 1u (33.3%)
+- 📉 **Erreur LLM**: 2u (66.7%)
 - 📉 **Erreur Médiane**: 1u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier, ~30-45j entre commandes, pas de jour fixe identifié
+- **Pattern temporel**: Irrégulier - intervalles variables (21j à 55j récents), pas de jour fixe identifié
 - **Saisonnalité**: none
-- **Tendance**: Baisse -50% (volumes passés de 2-3u à 1-2u)
+- **Tendance**: Baisse significative -50% (moyenne N-1: 2.3u → 3 derniers mois: 1.7u → dernière commande: 1u)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les intervalles récents montrent: 
-- 17 juillet → 24 juillet: 7j
-- 24 juillet → 10 septembre: 48j
-- 10 septembre → 9 octobre (prédiction): 29j
-
-Pattern mensuel irrégulier (~30-45j), pas de jour de semaine récurrent. La dernière commande remonte à 29j, ce qui correspond au rythme habituel observé.
-
-**TENDANCE:**
-- N-1 (2024): Commandes majoritairement de 2-3u (moyenne ~2.3u)
-- Récent (2025): 1u, 2u, 2u → Moyenne 1.67u
-- Baisse de volume nette d'environ 30-40% par rapport à N-1
-
-**SAISONNALITÉ:**
-Octobre N-1 (08/10/2024): 3u
-Cependant, cette donnée unique n'établit pas de pattern saisonnier fort. L'historique global montre des commandes réparties tout au long de l'année sans pic saisonnier marqué.
-
-**DÉCISION:**
-Pas d'outliers détectés. La tendance récente montre une stabilisation autour de 1-2u avec une préférence pour 2u (2 des 3 dernières commandes). Le rythme mensuel est respecté (29j depuis dernière commande).
-
-Baseline théorique: 1.5u
-Arrondi à 2u car:
-- Majoritairement 2u dans les commandes récentes (2/3)
-- Évite la sous-estimation en B2B agroalimentaire
-- Volume cohérent avec le nouveau niveau de demande stabilisé
+Pattern irrégulier avec tendance baissière marquée. N-1 montrait moyenne 2.3u, mais les 3 derniers mois confirment descente progressive (2u→2u→1u). Dernière commande il y a 28j (10/09) à 1u établit nouveau palier bas. Pas de saisonnalité octobre détectable. Intervalles récents (7j puis 55j) suggèrent demande sporadique faible. Client semble ajuster à la baisse ses besoins structurels. Baseline théorique 1.5u mais momentum récent fort vers 1u. Prédiction 1u alignée sur dernier comportement observé, minimise risque surestimation dans contexte baissier confirmé.
 
 </details>
 
@@ -465,21 +338,13 @@ Arrondi à 2u car:
 - 📉 **Erreur Médiane**: 1u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (24-88 jours), pas de pattern fixe détectable
+- **Pattern temporel**: Irrégulier - intervalle variable (7j à 58j entre commandes récentes)
 - **Saisonnalité**: none
-- **Tendance**: Baisse -50% sur période récente (moyenne N-1: 1.73u vs 3M récents: 2.0u → mais dernière: 1u)
+- **Tendance**: Stable - quantités 1-2u majoritaires (3u = outlier juillet)
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les intervalles entre commandes sont très irréguliers (54j entre 2025-07-17 et 2025-09-10, puis 58j entre 2025-07-24 et 2025-09-10). Pas de pattern hebdomadaire ou mensuel clair. La date de prédiction (2025-10-09) se situe 29 jours après la dernière commande du 2025-09-10, ce qui est dans la fourchette basse des intervalles observés.
-
-**FILTRAGE OUTLIERS**: La commande de 3u du 2025-07-17 apparaît comme un pic exceptionnel (150% au-dessus de la moyenne). L'historique N-1 montre principalement des quantités de 1-2u, avec une prédominance de 2u (8/11 commandes).
-
-**SAISONNALITÉ**: Aucune saisonnalité forte détectable. La date comparable N-1 (2024-10-08) montrait 2u, mais cette référence est faible car le comportement récent a évolué.
-
-**TENDANCE RÉCENTE**: Les 3 derniers mois montrent 3u, 2u, puis 1u - une décélération nette. La dernière commande (la plus récente et la plus pertinente) est de 1u seulement, signal fort d'une demande réduite.
-
-**DÉCISION**: Baseline théorique à 1.5u (moyenne des commandes récentes hors outlier de 3u). Cependant, la dernière commande à 1u et l'absence de pattern suggérant un rattrapage imminent conduisent à privilégier la prédiction conservatrice de **1 unité** - la valeur la plus probable reflétant le niveau actuel de demande.
+Historique montre 11 commandes sur 24 mois avec dominance 1-2u (90% des cas). Le 3u du 2025-07-17 apparaît exceptionnel (unique occurrence). Pattern temporel irrégulier sans ancrage hebdomadaire fixe. Dernière commande 2025-09-10 (1u) il y a 28j confirme rythme mensuel approximatif. Aucune saisonnalité N-1 détectable en octobre (1 seul point 2023-10-30=2u, non significatif). Tendance récente stable autour 1-2u après filtrage outlier. Pour date 2025-10-08, le cycle mensuel suggère faible probabilité de commande imminente (dernier achat récent). Si commande advient, volume baseline 1u le plus probable selon mode historique et dernière occurrence. Pas de signal justifiant 2u.
 
 </details>
 
@@ -488,7 +353,7 @@ Arrondi à 2u car:
 <summary><strong>9. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 1u (confidence: medium)
+- 🤖 **LLM prédit**: 1u (confidence: high)
 - 📊 **Baseline N-1**: 1u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
@@ -496,26 +361,13 @@ Arrondi à 2u car:
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier, intervalles variables (18-48 jours). Rythme ralenti en 2025 avec espacement moyen de ~40-50 jours contre ~20-30 jours en 2024
-- **Saisonnalité**: weak
-- **Tendance**: Baisse -50% (passage de 2u à 1u par commande depuis mi-2025)
+- **Pattern temporel**: Irrégulier - intervalles variables (7j à 48j) sans jour de semaine fixe
+- **Saisonnalité**: none
+- **Tendance**: Baisse -50% (passage de 2u systématique N-1 à 1u systématique période récente)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique**: Le produit montre un pattern irrégulier sans ancrage hebdomadaire fixe. En 2024, commandes de 2u espacées de 18-48 jours. En 2025, changement net: quantité divisée par 2 (1u au lieu de 2u) et espacement accru.
-
-**Dernières commandes 2025**: 
-- 17/07 (jeu.) → 1u
-- 24/07 (jeu.) → 1u (7 jours après)
-- 10/09 (mer.) → 1u (48 jours après)
-
-**Timing**: Depuis le 10/09, nous sommes le 09/10 soit 29 jours plus tard. L'intervalle moyen récent étant de 27-48 jours, nous sommes dans la fenêtre de commande probable.
-
-**Saisonnalité**: En septembre 2024 (même période N-1), une commande de 2u avait eu lieu. Cependant, la tendance 2025 montre une baisse structurelle à 1u/commande, probablement liée à une réduction de la demande client ou ajustement des stocks.
-
-**Aucun outlier détecté**: Toutes les commandes sont cohérentes (1-2u), produit de niche (Tartinade Ail des Ours).
-
-**Décision**: La baseline actuelle est clairement établie à 1u depuis mi-2025. Pas d'indicateur de retour aux 2u. Prédiction = **1 unité**.
+Analyse rythmique: Historique N-1 montre commandes régulières de 2u espacées de 18-38j. Depuis juillet 2025, rupture nette avec 3 commandes consécutives de 1u (17/07, 24/07, 10/09). Dernière commande il y a 28j, cohérent avec rythme mensuel observé. Filtrage outliers: Aucun pic exceptionnel détecté, volumes très stables par période (2u en N-1, puis 1u en 2025). Tendance confirmée: Division par 2 de la demande de fond depuis début 2025, probablement réajustement client ou changement d'usage. Décision: La donnée récente (3×1u consécutifs) est statistiquement significative et reflète le nouveau niveau de demande. Pas d'effet saisonnier octobre détecté en N-1. Prédiction 1u = demande de fond actuelle confirmée.
 
 </details>
 
@@ -525,28 +377,20 @@ Arrondi à 2u car:
 
 **Quantités:**
 - 🤖 **LLM prédit**: 1u (confidence: medium)
-- 📊 **Baseline N-1**: 1.5u
+- 📊 **Baseline N-1**: 1.3u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 1u (50.0%)
 - 📉 **Erreur Médiane**: 1u (50.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (7j à 54j). Historique sparse avec ~1-2 mois entre commandes
-- **Saisonnalité**: weak
-- **Tendance**: Stable - Oscillation entre 1-2u sans tendance claire
+- **Pattern temporel**: Irrégulier - intervalles variables (7j, 48j, 58j). Pas de jour fixe identifiable. Commandes espacées (moyenne ~45-60j entre 2 commandes)
+- **Saisonnalité**: none
+- **Tendance**: Stable - oscillation entre 1-2u sans tendance claire. Volume faible constant sur 2 ans.
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les commandes sont irrégulières sans pattern hebdomadaire fixe. Historique N-1 montre 11 commandes sur 12 mois (moyenne ~1 commande/mois). Période récente (3 derniers mois) confirme ce rythme avec 3 commandes espacées de 7j puis 54j.
-
-**ANALYSE SAISONNIÈRE**: La date du 09/10/2025 (jeudi) est proche du 08/10/2024 (mardi, 2u). Cependant, l'impact saisonnier reste faible car pas de pattern récurrent fort à cette période sur plusieurs années.
-
-**TENDANCE RÉCENTE**: Les 3 dernières commandes montrent 1u-2u-1u. La dernière commande remonte au 10/09/2025 (1u), soit exactement 29 jours avant la date de prédiction. Le client semble commander environ 1 fois par mois.
-
-**SYNTHÈSE**: Avec un intervalle moyen de ~30j et la dernière commande datant du 10/09, une commande début octobre est plausible. Les quantités oscillent entre 1-2u avec une légère préférence pour 1u en période récente (2 fois sur 3 dernières). Pas d'outlier détecté, demande de fond stable.
-
-**DÉCISION**: Baseline théorique 1.5u → Arrondi à 1u (quantité la plus fréquente récente et minimisation du risque de surestimation).
+Produit de niche à rotation lente (tartinade spécialisée 190g). Historique montre demande stable 1-2u sans saisonnalité détectable. Dernière commande 2025-09-10 (mer.) = 1u, soit il y a 28j. Pattern indique nouvelle commande probable dans fenêtre 30-60j. Aucun pic en oct. N-1 (dernière commande 2023-10-30=2u). Tendance récente Jul-Sep: 2u→1u→1u suggère normalisation vers 1u. Baseline théorique 1.3u arrondi à 1u car: (1) pas d'événement saisonnier identifié, (2) rythme actuel penche vers commandes unitaires, (3) sur-stockage risqué pour produit frais à faible rotation. Prédiction conservatrice mais cohérente avec comportement récent client.
 
 </details>
 
@@ -563,21 +407,316 @@ Arrondi à 2u car:
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (18-79j en N-1, 7j entre les 2 dernières commandes en juillet 2025)
+- **Pattern temporel**: Irrégulier - Intervalles variables (18-38 jours en N-1, récent: 7 jours entre deux commandes en juillet 2025)
 - **Saisonnalité**: none
-- **Tendance**: Stable avec léger pic récent
+- **Tendance**: Stable autour de 2u - Exception récente à 3u (24/07) possiblement ponctuelle
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique**: Le produit montre un pattern irrégulier sans jour fixe de commande. En N-1 (2024), les commandes s'espacent entre 11 et 79 jours avec une quantité stable de 2u (sauf 1u en mai 2024). En période récente (juillet 2025), on observe 2 commandes rapprochées (7j d'intervalle) avec 2u et 3u.
+ANALYSE: Historique N-1 montre demande stable à 2u (10/12 commandes), avec une seule exception à 1u. Fréquence irrégulière (18-38j) sans pattern hebdomadaire détectable. Récent (juil 2025): commande 3u le 24/07 (jeu.) après 2u le 17/07 (jeu.) - rythme accéléré inhabituel (7j vs moyenne ~30j). DÉCISION: La commande de 3u apparaît comme un événement ponctuel (réassort exceptionnel ou promotion). Le pattern de fond reste 2u. Pas de saisonnalité identifiée pour octobre. La prédiction pour le 08/10 (mercredi) revient à la baseline historique de 2u, cohérente avec 83% des commandes passées. Confiance medium car données récentes limitées et intervalles irréguliers complexifient la prévision précise du timing.
 
-**Filtrage outliers**: La commande de 3u du 2025-07-17 apparaît comme un léger pic (possiblement un rattrapage ou ajustement ponctuel), mais pas assez marqué pour être un événement promotionnel majeur.
+</details>
 
-**Saisonnalité**: Aucun pattern saisonnier détectable. La date de prédiction (9 oct 2025) vs historique N-1 (8 oct 2024: 2u) ne révèle pas de saisonnalité forte. Les volumes restent homogènes tout au long de l'année.
 
-**Tendance**: Sur les 12 commandes N-1, 11 fois 2u et 1 fois 1u = moyenne 1,92u. La période récente confirme ce socle de 2u comme demande structurelle. Le pic à 3u est isolé et ne constitue pas une nouvelle tendance.
 
-**Décision**: La demande de fond est clairement 2u. Bien que nous soyons à 77 jours de la dernière commande (24 juillet), cela correspond au pattern irrégulier observé. Pour la date du 9 octobre, la quantité la plus probable est **2 unités**, conforme à l'historique stable et au comparatif N-1.
+
+### 📊 Données d'Input LLM (11 produits)
+
+
+<details>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 3u
+- 2025-07-24 14:00:56: 2u
+- 2025-07-17 06:58:21: 3u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 2u
+- 2024-08-02 06:18:07: 2u
+- 2024-07-15 06:44:53: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 2u
+- 2024-04-15 06:28:42: 2u
+- 2024-03-15 08:50:31: 1u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2024-01-22 12:29:19: 2u
+- 2023-12-15 07:53:16: 2u
+
+**✅ Quantité LLM**: 3u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 2u
+- 2025-07-24 14:00:56: 3u
+- 2025-07-17 06:58:21: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 2u
+- 2024-08-02 06:18:07: 2u
+- 2024-07-15 06:44:53: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 2u
+- 2024-04-15 06:28:42: 2u
+- 2024-03-15 08:50:31: 2u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2024-01-22 12:29:19: 2u
+- 2023-12-15 07:53:16: 1u
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 3u
+- 2025-07-24 14:00:56: 3u
+- 2025-07-17 06:58:21: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 4u
+- 2024-08-02 06:18:07: 3u
+- 2024-07-15 06:44:53: 3u
+- 2024-06-21 06:37:19: 3u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 3u
+- 2024-04-15 06:28:42: 2u
+- 2024-03-15 08:50:31: 3u
+- 2024-02-20 11:03:42: 3u
+- 2024-02-02 09:19:36: 3u
+- 2024-01-22 12:29:19: 1u
+- 2023-12-15 07:53:16: 1u
+
+**✅ Quantité LLM**: 3u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 3u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 1u
+- 2024-08-02 06:18:07: 1u
+- 2024-07-15 06:44:53: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 1u
+- 2024-05-21 08:51:32: 1u
+- 2024-03-15 08:50:31: 2u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2023-12-15 07:53:16: 1u
+- 2023-11-28 08:55:15: 2u
+- 2023-10-30 07:15:45: 1u
+
+**✅ Quantité LLM**: 3u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 3u
+- 2025-07-24 14:00:56: 2u
+- 2025-07-17 06:58:21: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 2u
+- 2024-08-02 06:18:07: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 2u
+- 2024-04-15 06:28:42: 2u
+- 2024-03-15 08:50:31: 1u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2024-01-22 12:29:19: 2u
+- 2023-11-28 08:55:15: 2u
+- 2023-10-30 07:15:45: 2u
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>6. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 1u
+- 2025-07-24 14:00:56: 1u
+- 2025-07-17 06:58:21: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-08-02 06:18:07: 1u
+- 2024-07-15 06:44:53: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-04-15 06:28:42: 2u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2024-01-22 12:29:19: 2u
+- 2023-12-15 07:53:16: 1u
+- 2023-10-30 07:15:45: 2u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 1u
+- 2025-07-24 14:00:56: 2u
+- 2025-07-17 06:58:21: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 2u
+- 2024-08-02 06:18:07: 3u
+- 2024-07-15 06:44:53: 3u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 3u
+- 2024-04-15 06:28:42: 1u
+- 2024-03-15 08:50:31: 3u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2024-01-22 12:29:19: 2u
+- 2023-11-28 08:55:15: 3u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>8. [LV136] LV Tartinade Betterave 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 1u
+- 2025-07-24 14:00:56: 2u
+- 2025-07-17 06:58:21: 3u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 1u
+- 2024-08-02 06:18:07: 2u
+- 2024-07-15 06:44:53: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 1u
+- 2024-03-15 08:50:31: 2u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 1u
+- 2023-10-30 07:15:45: 2u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>9. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 1u
+- 2025-07-24 14:00:56: 1u
+- 2025-07-17 06:58:21: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 2u
+- 2024-08-02 06:18:07: 2u
+- 2024-07-15 06:44:53: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 2u
+- 2024-04-15 06:28:42: 2u
+- 2024-03-15 08:50:31: 2u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2023-12-15 07:53:16: 2u
+- 2023-11-28 08:55:15: 1u
+
+**✅ Quantité LLM**: 1u (confidence: high)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>10. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-10 13:23:04: 1u
+- 2025-07-24 14:00:56: 2u
+- 2025-07-17 06:58:21: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-08-02 06:18:07: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-04-15 06:28:42: 1u
+- 2024-03-15 08:50:31: 2u
+- 2024-02-02 09:19:36: 2u
+- 2024-01-22 12:29:19: 2u
+- 2023-12-15 07:53:16: 1u
+- 2023-11-28 08:55:15: 1u
+- 2023-10-30 07:15:45: 2u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>11. [LV330] LV BIO Tartinade Toscana 190g</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-07-24 14:00:56: 2u
+- 2025-07-17 06:58:21: 3u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-09 13:39:44: 2u
+- 2024-08-02 06:18:07: 2u
+- 2024-07-15 06:44:53: 2u
+- 2024-06-21 06:37:19: 2u
+- 2024-06-11 07:33:02: 2u
+- 2024-05-21 08:51:32: 1u
+- 2024-04-15 06:28:42: 2u
+- 2024-03-15 08:50:31: 2u
+- 2024-02-20 11:03:42: 2u
+- 2024-02-02 09:19:36: 2u
+- 2024-01-22 12:29:19: 2u
+- 2023-12-15 07:53:16: 1u
+
+**✅ Quantité LLM**: 2u (confidence: medium)
+**📊 Quantité Réelle**: 2u
 
 </details>
 
@@ -607,8 +746,8 @@ Arrondi à 2u car:
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [LV153] LV Vinaigrette Ciboulette 250 ml bio | 1 | Stock prédit: 0.5u (27j restants) → prédit 1u mais non commandé |
-| [LV155] LV Vinaigrette Caesar 250 ml | 2 | Stock prédit: 0.2u (8j restants) → prédit 2u mais non commandé |
-| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: -0.3u (-25j restants) → prédit 1u mais non commandé |
+| [LV155] LV Vinaigrette Caesar 250 ml | 2 | Stock prédit: 0.3u (9j restants) → prédit 2u mais non commandé |
+| [LV040] LV Caprons apéritifs 240g | 1 | Stock prédit: -0.3u (-24j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -636,10 +775,10 @@ Arrondi à 2u car:
 | [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 | [LV157] LV Ketchup aux tomates 263 ml bio | 1 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
 | [LV161] LV Tartinade Mangue curry 190g | 1 | Stock suffisant: 2.5u (45j restants > seuil 30j) |
-| [LV132] LV Tartinade Houmous type 190g | 1 | Stock suffisant: 2.7u (60j restants > seuil 30j) |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: 1.7u (38j restants > seuil 30j) |
+| [LV132] LV Tartinade Houmous type 190g | 1 | Stock suffisant: 2.8u (60j restants > seuil 30j) |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | Stock suffisant: 1.8u (38j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:54.265Z*
+*Rapport généré automatiquement le 2025-11-20T13:28:59.975Z*

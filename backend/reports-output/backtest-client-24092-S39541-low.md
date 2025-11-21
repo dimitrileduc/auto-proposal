@@ -5,16 +5,14 @@
 - **Client** : CONSERVERIE ET MOUTARDERIE BELGE ECHANTILLON (ID: 24092)
 - **Commande réelle** : S39541
 - **Date commande** : 2025-10-03 10:10:16
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 3
-- **Tokens**: 6,439 input + 2,014 output = 8,453 total
-- **Coût**: $0.0495 (~4.95¢)
-- **Coût par produit LLM**: $0.0165
+- **Appels**: 13
+- **Tokens**: 19,998 input + 4,639 output = 24,637 total
 
 
 ---
@@ -168,13 +166,13 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
-| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.3u (13j restants) → prédit 1u mais non commandé |
-| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
-| [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: -0.2u (-10j restants) → prédit 1u mais non commandé |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
+| [PF1768] LV TARTINADE BIO TRUFFES 135G | 1 | Stock prédit: 0.4u (15j restants) → prédit 1u mais non commandé |
+| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
+| [PF1552] LV KETCHUP BIO 290G | 1 | Stock prédit: -0.2u (-8j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -198,4 +196,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:52.608Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:09.427Z*

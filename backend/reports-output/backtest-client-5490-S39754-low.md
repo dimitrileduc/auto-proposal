@@ -5,16 +5,14 @@
 - **Client** : BIOCOOP SA COOP, BIOCOOP SA COOP, Adresse de facturation (ID: 5490)
 - **Commande réelle** : S39754
 - **Date commande** : 2025-10-16 06:33:00
-- **Date cutoff système** : 2025-10-16 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-15 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 26
-- **Tokens**: 58,163 input + 15,989 output = 74,152 total
-- **Coût**: $0.4143 (~41.43¢)
-- **Coût par produit LLM**: $0.0159
+- **Tokens**: 43,647 input + 8,435 output = 52,082 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:58:09.904Z*
+*Rapport généré automatiquement le 2025-11-20T13:30:33.893Z*

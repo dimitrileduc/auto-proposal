@@ -3,8 +3,8 @@
   "clientName": "SCHMETS  DELICATESSES, ACHAT",
   "orderName": "S39663",
   "orderDate": "2025-10-13 08:25:46",
-  "cutoffDate": "2025-10-13 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 1,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 11,
-    "promptTokens": 22024,
-    "completionTokens": 6361,
-    "totalTokens": 28385,
-    "costUSD": 0.161487
+    "promptTokens": 15875,
+    "completionTokens": 3490,
+    "totalTokens": 19365
   }
 }

@@ -5,16 +5,14 @@
 - **Client** : DANTESSE GmbH (ID: 3831)
 - **Commande réelle** : S39512
 - **Date commande** : 2025-10-02 08:37:42
-- **Date cutoff système** : 2025-10-02 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-01 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 7
-- **Tokens**: 14,925 input + 4,535 output = 19,460 total
-- **Coût**: $0.1128 (~11.28¢)
-- **Coût par produit LLM**: $0.0161
+- **Appels**: 8
+- **Tokens**: 12,641 input + 2,864 output = 15,505 total
 
 
 ---
@@ -147,9 +145,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 250 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 250 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -160,41 +158,53 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 250u (confidence: medium)
-- 📊 **Baseline N-1**: 100u
+- 📊 **Baseline N-1**: 125u
 - 📊 **Médiane**: 250u
 - ✅ **Réel commandé**: 250u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec accélération récente (~19 jours entre les 2 dernières commandes)
+- **Pattern temporel**: Irrégulier avec accélération récente : ~37j entre historiques, puis resserrement à ~19j entre 2025-07-16 et 2025-09-03, puis 19j entre 2025-09-03 et 2025-09-22
 - **Saisonnalité**: weak
-- **Tendance**: Hausse forte +300% (passage de 50-80u à 250u)
+- **Tendance**: Forte hausse récente : passage de 55u (Juil 2025) à 250u (Sept 2025) soit +355%, rupture nette vs historique N-1 (moyenne ~83u)
 - **Outliers détectés**: 250u
 
 **🧠 Raisonnement LLM:**
-**1. ANALYSE RYTHMIQUE**
-- Historique N-1 : commandes espacées de 20-40 jours avec volumes 50-125u (moyenne ~83u)
-- 3 derniers mois montrent rupture nette : 16/07 (55u) → 03/09 (250u, +19j) → 22/09 (250u, +19j)
-- Pattern récent suggère rythme mensuel avec doublement des quantités commandées
+Le produit montre un changement radical de comportement en Sept 2025 : 2 commandes de 250u espacées de 19j (vs historique à 50-125u). La dernière commande date du 2025-09-22, donc au 2025-10-01 (+9j) nous sommes à mi-cycle du rythme récent (~19j). CEPENDANT, en B2B agroalimentaire, 2 commandes successives de 250u suggèrent un nouveau niveau de demande structurel (nouveau contrat client, expansion distribution) plutôt qu'une promotion ponctuelle. La saisonnalité N-1 (125u fin sept 2024) ne peut expliquer un x4. Le client ayant commandé 250u le 22/09, il a probablement un stock pour ~10-12j. Au 01/10, il approche du réapprovisionnement. Baseline ajustée au nouveau régime : 250u. Risque : si les 250u étaient exceptionnels, surdimensionnement. Mais l'absence de retour aux volumes historiques entre les 2 commandes de sept valide la rupture de tendance.
 
-**2. FILTRAGE OUTLIERS**
-- Les 250u apparaissent 2 fois consécutives en sept 2025 (vs max 125u en N-1)
-- Changement structurel plutôt que pic isolé : NON outlier mais nouvelle baseline
-- Septembre N-1 (25/09/24) = 125u ; Septembre N (2 commandes totalisant 500u) = croissance x4
+</details>
 
-**3. ANALYSE SAISONNALITÉ**
-- Septembre-Octobre N-1 : 125u (25/09) puis absence jusqu'à fin année
-- Impact saisonnier faible : truffe = produit premium sans forte saisonnalité
-- Date prédiction (02/10) = 10 jours après dernière commande (22/09)
 
-**4. SYNTHÈSE DÉCISIONNELLE**
-- Rupture tendancielle confirmée : passage de 50-125u à 250u
-- Rythme récent ~19 jours suggère prochaine commande début octobre
-- Volume stabilisé à 250u sur 2 dernières commandes = nouveau standard
-- Baseline théorique N-1 ajustée : 83u × 3 = ~250u (cohérent)
 
-**CONCLUSION** : La quantité 250u représente la nouvelle demande de fond post-repositionnement produit ou nouveau client stratégique. Pas d'élément suggérant retour aux volumes N-1.
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF1792] LD MAYONNAI TRUFFES 250ML WECK</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-22 05:31:37: 250u
+- 2025-09-03 07:49:42: 250u
+- 2025-07-16 13:46:45: 55u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-25 19:46:57: 125u
+- 2024-08-29 12:54:10: 75u
+- 2024-08-23 09:48:48: 50u
+- 2024-07-17 09:21:00: 80u
+- 2024-06-07 10:11:53: 50u
+- 2024-05-28 11:15:02: 125u
+- 2024-04-23 06:22:53: 50u
+- 2024-04-04 06:34:16: 125u
+- 2024-03-12 11:50:55: 50u
+- 2024-02-15 07:27:41: 70u
+- 2024-01-17 14:53:06: 75u
+- 2023-12-13 12:47:04: 125u
+
+**✅ Quantité LLM**: 250u (confidence: medium)
+**📊 Quantité Réelle**: 250u
 
 </details>
 
@@ -223,11 +233,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1807] LD SAUCE ANDALOUSE 250ML WECK | 5 | Stock prédit: 1.8u (4j restants) → prédit 5u mais non commandé |
-| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -0.1u (-9j restants) → prédit 1u mais non commandé |
-| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 40 | Stock prédit: 16.0u (13j restants) → prédit 40u mais non commandé |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 75 | Stock prédit: -4.5u (-2j restants) → prédit 75u mais non commandé |
-| [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-46j restants) → prédit 1u mais non commandé |
+| [PF1807] LD SAUCE ANDALOUSE 250ML WECK | 5 | Stock prédit: 2.0u (5j restants) → prédit 5u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: -0.1u (-8j restants) → prédit 1u mais non commandé |
+| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 38 | Stock prédit: 16.9u (13j restants) → prédit 38u mais non commandé |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 75 | Stock prédit: -3.3u (-1j restants) → prédit 75u mais non commandé |
+| [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.7u (-45j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -251,4 +261,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:47.941Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:24.097Z*

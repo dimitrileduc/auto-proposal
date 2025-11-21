@@ -5,16 +5,14 @@
 - **Client** : BIOK THOREMBAIS (ID: 60213)
 - **Commande réelle** : S39350
 - **Date commande** : 2025-09-24 13:05:32
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-23 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 17
-- **Tokens**: 34,539 input + 9,611 output = 44,150 total
-- **Coût**: $0.2478 (~24.78¢)
-- **Coût par produit LLM**: $0.0146
+- **Appels**: 18
+- **Tokens**: 26,435 input + 5,547 output = 31,982 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:06:17.847Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:56.816Z*

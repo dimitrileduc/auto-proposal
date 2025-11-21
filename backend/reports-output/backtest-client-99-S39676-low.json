@@ -3,8 +3,8 @@
   "clientName": "La Fermette Godelaine de Saint-Georges",
   "orderName": "S39676",
   "orderDate": "2025-10-13 07:37:52",
-  "cutoffDate": "2025-10-13 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 2,
     "fp": 2,
@@ -22,10 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 24,
-    "promptTokens": 48689,
-    "completionTokens": 14068,
-    "totalTokens": 62757,
-    "costUSD": 0.35708700000000004
+    "calls": 37,
+    "promptTokens": 54149,
+    "completionTokens": 11442,
+    "totalTokens": 65591
   }
 }

@@ -5,16 +5,14 @@
 - **Client** : SDP Rungis (ID: 17600)
 - **Commande réelle** : S39727
 - **Date commande** : 2025-10-14 13:50:03
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 17
-- **Tokens**: 36,102 input + 9,866 output = 45,968 total
-- **Coût**: $0.2563 (~25.63¢)
-- **Coût par produit LLM**: $0.0151
+- **Appels**: 25
+- **Tokens**: 38,567 input + 8,326 output = 46,893 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:02:29.173Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:47.913Z*

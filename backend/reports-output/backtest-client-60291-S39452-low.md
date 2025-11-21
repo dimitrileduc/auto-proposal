@@ -5,16 +5,14 @@
 - **Client** : DOMAINE DE RONCHINNE (ID: 60291)
 - **Commande réelle** : S39452
 - **Date commande** : 2025-10-01 07:17:25
-- **Date cutoff système** : 2025-10-01 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-30 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 21
-- **Tokens**: 42,699 input + 12,111 output = 54,810 total
-- **Coût**: $0.3098 (~30.98¢)
-- **Coût par produit LLM**: $0.0148
+- **Appels**: 23
+- **Tokens**: 33,846 input + 7,312 output = 41,158 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:24.837Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:42.217Z*

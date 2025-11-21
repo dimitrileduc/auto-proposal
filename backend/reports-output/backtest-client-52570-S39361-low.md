@@ -5,16 +5,14 @@
 - **Client** : ASBL L'Accueil - Magasin du Val Dieu (ID: 52570)
 - **Commande réelle** : S39361
 - **Date commande** : 2025-09-24 09:45:50
-- **Date cutoff système** : 2025-09-24 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-09-23 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 13
-- **Tokens**: 27,331 input + 7,437 output = 34,768 total
-- **Coût**: $0.1935 (~19.35¢)
-- **Coût par produit LLM**: $0.0149
+- **Tokens**: 20,051 input + 4,145 output = 24,196 total
 
 
 ---
@@ -168,8 +166,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 1.0u (13j restants) → prédit 2u mais non commandé |
+| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 2 | Stock prédit: 1.1u (14j restants) → prédit 2u mais non commandé |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 2 | Stock prédit: 1.1u (14j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -193,4 +191,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:07:27.977Z*
+*Rapport généré automatiquement le 2025-11-20T13:29:32.357Z*

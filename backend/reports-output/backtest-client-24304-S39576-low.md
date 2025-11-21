@@ -5,16 +5,14 @@
 - **Client** : Ferme A l'arbre (ID: 24304)
 - **Commande réelle** : S39576
 - **Date commande** : 2025-10-06 09:27:30
-- **Date cutoff système** : 2025-10-06 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-05 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 28
-- **Tokens**: 58,193 input + 16,011 output = 74,204 total
-- **Coût**: $0.4147 (~41.47¢)
-- **Coût par produit LLM**: $0.0148
+- **Appels**: 30
+- **Tokens**: 45,381 input + 9,627 output = 55,008 total
 
 
 ---
@@ -168,7 +166,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: -2.9u (-41j restants) → prédit 1u mais non commandé |
+| [LEA07] LEAMO orangeade bio 330ml | 1 | Stock prédit: -2.9u (-40j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -192,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:05:11.927Z*
+*Rapport généré automatiquement le 2025-11-20T13:34:21.110Z*

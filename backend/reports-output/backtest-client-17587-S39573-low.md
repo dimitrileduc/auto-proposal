@@ -5,16 +5,14 @@
 - **Client** : Epicerie Uhoda Vennes (ID: 17587)
 - **Commande réelle** : S39573
 - **Date commande** : 2025-10-06 09:26:46
-- **Date cutoff système** : 2025-10-06 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-05 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 28
-- **Tokens**: 57,885 input + 16,084 output = 73,969 total
-- **Coût**: $0.4149 (~41.49¢)
-- **Coût par produit LLM**: $0.0148
+- **Appels**: 33
+- **Tokens**: 49,399 input + 10,252 output = 59,651 total
 
 
 ---
@@ -192,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:08:10.517Z*
+*Rapport généré automatiquement le 2025-11-20T13:29:52.690Z*

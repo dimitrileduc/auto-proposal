@@ -5,16 +5,14 @@
 - **Client** : Conserverie Et Moutarderie Belge (ID: 30)
 - **Commande réelle** : S39535
 - **Date commande** : 2025-10-03 08:01:58
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 6
-- **Tokens**: 13,147 input + 3,702 output = 16,849 total
-- **Coût**: $0.0950 (~9.50¢)
-- **Coût par produit LLM**: $0.0158
+- **Appels**: 7
+- **Tokens**: 11,317 input + 2,307 output = 13,624 total
 
 
 ---
@@ -25,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 5.7% | 35 produits prédits, 2 corrects |
+| **Précision** | 28.6% | 7 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 10.8% | Score équilibré global |
+| **F1-Score** | 44.4% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -147,10 +145,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
@@ -160,29 +158,21 @@
 <summary><strong>1. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
 
 **Quantités:**
-- 🤖 **LLM prédit**: 1u (confidence: high)
-- 📊 **Baseline N-1**: 1u
+- 🤖 **LLM prédit**: 1u (confidence: medium)
+- 📊 **Baseline N-1**: 1.2u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles variables (13-18-33 jours récemment). Pas de jour fixe identifié.
+- **Pattern temporel**: Irrégulier - intervalles variables (13-18-43 jours récemment)
 - **Saisonnalité**: none
-- **Tendance**: Baisse forte - Passage de 2u max en N-1 (hors outlier) à 1u systématique depuis juillet 2025
+- **Tendance**: Stable - commandes unitaires dominantes (1-2u)
 - **Outliers détectés**: 13u
 
 **🧠 Raisonnement LLM:**
-**Analyse rythmique** : Les 3 derniers mois montrent des commandes espacées irrégulièrement (18j entre 24/07 et 26/08, 13j jusqu'au 08/09, 18j jusqu'au 26/09). Pas de pattern hebdomadaire ni mensuel strict. Dernière commande le 26/09 (vendredi), soit 7 jours avant la date de prédiction (03/10, vendredi).
-
-**Filtrage outliers** : La commande de 13u (23/08/2024 et 25/04/2024) est clairement exceptionnelle - probable promotion ou commande groupée. En dehors de ces pics, N-1 montre 1-2u maximum.
-
-**Tendance forte** : Depuis juillet 2025, stabilisation stricte à 1u par commande (4 commandes consécutives à 1u). En N-1 sur la même période (juillet-septembre 2024), on avait 1-2u, donc légère baisse mais surtout standardisation.
-
-**Saisonnalité** : Aucun pattern saisonnier identifiable. Pas de pic à date fixe. Le 03/10 ne correspond à aucun événement récurrent observé.
-
-**Décision** : La régularité absolue des 4 dernières commandes à 1u, l'absence de signal de rattrapage (pas de rupture de rythme inhabituelle), et l'absence de saisonnalité convergent vers une prédiction de 1u. Le produit semble être passé en mode "petite maintenance régulière".
+Historique dominé par commandes unitaires (1u = 75% des cas). Le pic de 13u en août 2024 est isolé et non récurrent (outlier). Les 3 derniers mois montrent pattern stable: 1u (26/09), 1u (08/09), 1u (26/08), 2u (24/07). Intervalles irréguliers (18j puis 13j puis 43j) mais volumes constants. Pas de saisonnalité détectable sur période équivalente N-1 (sept: 1-2u). Baseline théorique 1.2u arrondie à 1u car le client privilégie systématiquement les commandes unitaires sauf exception unique. Pas d'effet rattrapage anticipé vu dernière commande récente (6j avant prédiction). Prédiction conservatrice alignée sur comportement modal du client.
 
 </details>
 
@@ -192,28 +182,73 @@
 
 **Quantités:**
 - 🤖 **LLM prédit**: 1u (confidence: medium)
-- 📊 **Baseline N-1**: 1u
+- 📊 **Baseline N-1**: 1.2u
 - 📊 **Médiane**: 1u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier - Intervalles très variables (de 15 jours à 2+ mois). Commandes sporadiques sans jour fixe identifiable
-- **Saisonnalité**: none
-- **Tendance**: Baisse marquée - Volume passé de 1-4u en N-1 (sept-oct) à 1u uniquement sur période récente
+- **Pattern temporel**: Irrégulier - Intervalles variables (46j entre dernières commandes, historique espacé 3-6 semaines)
+- **Saisonnalité**: weak
+- **Tendance**: Stable - Oscillation 1-2u avec pic isolé à 4u (oct 2024)
 - **Outliers détectés**: 4u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Le produit JF KETCHUP SQUEEZE 300ML montre un comportement de commande très irrégulier. Les intervalles entre commandes varient fortement (15 jours à plus de 2 mois). Aucun pattern hebdomadaire ou mensuel stable n'est détectable. Les jours de commande sont dispersés (lundi, mardi, jeudi, vendredi).
+Historique montre demande de fond stable à 1u (8/10 commandes). Le pic de 4u en oct-2024 est un outlier isolé non répété depuis. Pattern irrégulier sans ancrage hebdomadaire fixe. Dernières commandes (sept/juil 2025) confirment baseline 1u. Aucun signal de rattrapage (dernier achat il y a 24j, dans la norme du produit). Absence de saisonnalité forte en octobre pour ce produit squeeze. Prédiction conservatrice mais précise: 1u correspond à la demande récurrente observée.
 
-**FILTRAGE OUTLIERS**: La quantité de 4u (2024-10-01) est clairement exceptionnelle - c'est 2 à 4 fois supérieure à toutes les autres commandes historiques (principalement 1u, quelques 2u). Ce pic isolé n'est pas représentatif du besoin standard.
+</details>
 
-**ANALYSE SAISONNIÈRE**: Bien que nous soyons début octobre (même période que le pic N-1), l'absence de récurrence sur les années antérieures et le contexte actuel de demande faible indiquent qu'il s'agissait d'un événement ponctuel (promotion, stockage exceptionnel). La période récente (juil-sept 2025) montre uniquement des commandes unitaires.
 
-**TENDANCE RÉCENTE**: Les 3 derniers mois confirment un niveau de demande très faible (1u par commande, espacement important de 45 jours entre juillet et septembre). Le dernier achat date du 8 sept, soit environ 25 jours. Sans pattern fixe, difficile d'anticiper la date exacte mais la quantité attendue reste cohérente à 1u.
 
-**DÉCISION**: Baseline à 1u - quantité modale du produit hors outlier. Pas de rattrapage attendu, pas de saisonnalité exploitable. Confiance moyenne car le pattern irrégulier rend la prédiction temporelle incertaine, mais la quantité unitaire est très cohérente historiquement.
+
+### 📊 Données d'Input LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-26 06:28:44: 1u
+- 2025-09-08 07:52:26: 1u
+- 2025-08-26 09:02:26: 1u
+- 2025-07-24 13:45:03: 2u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-12 10:01:21: 1u
+- 2024-09-05 11:50:34: 2u
+- 2024-08-23 08:20:07: 13u
+- 2024-08-13 10:10:43: 1u
+- 2024-07-05 07:40:56: 1u
+- 2024-04-30 10:09:27: 2u
+- 2024-04-25 14:37:04: 1u
+- 2024-04-25 08:31:46: 13u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>2. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-08 07:52:26: 1u
+- 2025-07-24 13:45:03: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-10-01 06:55:39: 4u
+- 2024-09-26 09:23:08: 2u
+- 2024-09-05 11:50:34: 1u
+- 2024-08-23 08:30:23: 1u
+- 2024-08-13 10:10:43: 1u
+- 2024-05-28 07:49:32: 1u
+- 2024-04-30 10:09:27: 2u
+- 2024-04-25 14:37:04: 1u
+
+**✅ Quantité LLM**: 1u (confidence: medium)
+**📊 Quantité Réelle**: 1u
 
 </details>
 
@@ -222,7 +257,7 @@
 
 ---
 
-## False Positives (33)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -242,39 +277,11 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | Stock prédit: NaNu (NaNj restants) → prédit 8u mais non commandé |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 5 | Stock prédit: NaNu (NaNj restants) → prédit 5u mais non commandé |
-| [JF056] JF SAUCE CHIPOTLE 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 9 | Stock prédit: NaNu (NaNj restants) → prédit 9u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
-| [LV161] LV Tartinade Mangue curry 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
-| [LV160] LV Tartinade Aubergine 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
-| [LV131] LV Tartinade Potiron 190g | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
-| [LV132] LV Tartinade Houmous type 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
-| [LV162] LV Tartinade Tomato Basilico 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 6 | Stock prédit: NaNu (NaNj restants) → prédit 6u mais non commandé |
-| [LV330] LV BIO Tartinade Toscana 190g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: 1.0u (12j restants) → prédit 1u mais non commandé |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
-| [LV136] LV Tartinade Betterave 190g | 2 | Stock prédit: NaNu (NaNj restants) → prédit 2u mais non commandé |
-| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 3 | Stock prédit: NaNu (NaNj restants) → prédit 3u mais non commandé |
-| [LV342] LV Organic Broccoli Spread 190 g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [LV357] LV Tartinade BIO Asperge 190g | 4 | Stock prédit: NaNu (NaNj restants) → prédit 4u mais non commandé |
-| [DIS0003] Display TVF bois | 3 | Stock prédit: 1.0u (29j restants) → prédit 3u mais non commandé |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
-| [LV036] LV Olives Vertes dénoyautées BE 350g | 139 | Stock prédit: -30.8u (-11j restants) → prédit 139u mais non commandé |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 3 | Stock prédit: -12.3u (-97j restants) → prédit 3u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: -3.3u (-27j restants) → prédit 1u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -3.4u (-27j restants) → prédit 1u mais non commandé |
+| [LV036] LV Olives Vertes dénoyautées BE 350g | 139 | Stock prédit: -29.9u (-10j restants) → prédit 139u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: -12.2u (-96j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -298,4 +305,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:46.187Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:13.630Z*

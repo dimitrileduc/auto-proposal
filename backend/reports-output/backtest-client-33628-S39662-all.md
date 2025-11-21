@@ -5,16 +5,14 @@
 - **Client** : LIDL BELGIE GMBH (ID: 33628)
 - **Commande réelle** : S39662
 - **Date commande** : 2025-10-13 04:38:31
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,732 input + 1,840 output = 8,572 total
-- **Coût**: $0.0478 (~4.78¢)
-- **Coût par produit LLM**: $0.0159
+- **Tokens**: 5,055 input + 1,109 output = 6,164 total
 
 
 ---
@@ -147,9 +145,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF3279] KANIA BOULETTES TOMATE 800 GR (7404167) | 256 | 384 | 128.0 | 33.3% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF3279] KANIA BOULETTES TOMATE 800 GR (7404167) | 256 | 384 | 128.0 | 33.3% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -167,21 +165,48 @@
 - 📉 **Erreur Médiane**: 128u (33.3%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec tendance hebdomadaire/bi-hebdomadaire. Intervalles variables: 4j, 12j, 8j, 28j entre les 5 dernières commandes. Pas de jour fixe identifiable.
+- **Pattern temporel**: Irrégulier avec accélération récente - Historique N-1: ~30j entre commandes, Période récente: ~4-6 jours entre commandes
 - **Saisonnalité**: weak
-- **Tendance**: Baisse marquée -60% (de ~512u moyenne N-1 à ~256u récent dominant)
-- **Outliers détectés**: 1024u, 768u
+- **Tendance**: Stable avec pic exceptionnel - Baseline ~256u récurrente, pic isolé 1024u le 2025-08-26
+- **Outliers détectés**: 1024u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE**: Les 5 dernières commandes (07/08 au 05/09) montrent un pattern irrégulier sans jour fixe. Intervalle moyen ~7-8j mais très variable (4j à 28j). Pas de cycle hebdomadaire strict détecté.
+ANALYSE RYTHMIQUE: L'historique N-1 montre des commandes espacées de 2-4 semaines (moyenne 430u). Les 3 derniers mois révèlent une accélération nette du rythme (commandes tous les 4-8 jours) avec stabilisation autour de 256u. OUTLIERS: Le pic de 1024u au 26/08 est clairement exceptionnel (4x la baseline récente) - probablement promotion ou reconstitution stock. PATTERN: 4 des 5 dernières commandes = exactement 256u, établissant une demande de fond claire. SAISONNALITÉ N-1: Septembre 2024 montrait 384-512u, mais la tendance 2025 s'est stabilisée plus bas. DÉCISION: La prédiction pour le 12/10 (7 jours après dernière commande du 05/09) doit refléter la nouvelle baseline de 256u, ignorant le pic exceptionnel. Le rythme récent suggère une commande imminente dans cette fourchette.
 
-**TENDANCE DOMINANTE**: Baisse nette entre N-1 et période récente. N-1 (avril-septembre 2024): moyenne ~491u avec pics à 768u. Période récente (août-sept 2025): 4 commandes sur 5 = 256u, avec 1 outlier à 1024u (26/08, probablement promotion ou rattrapage massif).
+</details>
 
-**SAISONNALITÉ**: Faible impact. La date comparable N-1 (30/09/2024) montre 512u, mais la tendance baissière récente domine. Le pic de 1024u du 26/08 est isolé (4x la baseline récente) → outlier confirmé.
 
-**BASELINE THÉORIQUE**: Les 4 dernières commandes hors outlier = 256u (récurrence forte). Cette quantité représente la nouvelle demande normalisée du client.
 
-**DÉCISION**: La commande du 13/10 (lundi) survient ~38j après la dernière (05/09). Malgré cet intervalle long, le pattern récent montre une stabilisation à 256u. Pas d'indicateur de rattrapage (le 1024u du 26/08 était déjà un rattrapage). Prédiction: **256u** alignée sur la demande de fond actuelle.
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF3279] KANIA BOULETTES TOMATE 800 GR (7404167)</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-05 11:06:08: 256u
+- 2025-09-01 08:52:49: 256u
+- 2025-08-26 15:25:52: 1024u
+- 2025-08-14 13:29:11: 256u
+- 2025-08-08 11:41:05: 256u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-30 13:13:17: 512u
+- 2024-09-11 10:27:42: 384u
+- 2024-08-20 10:37:14: 256u
+- 2024-06-26 10:02:06: 384u
+- 2024-06-13 15:25:35: 768u
+- 2024-06-11 09:08:43: 512u
+- 2024-05-31 06:38:37: 768u
+- 2024-05-15 08:55:53: 384u
+- 2024-05-15 08:55:53: 256u
+- 2024-05-13 08:04:16: 640u
+- 2024-04-11 13:23:35: 640u
+- 2024-04-09 09:15:49: 384u
+
+**✅ Quantité LLM**: 256u (confidence: medium)
+**📊 Quantité Réelle**: 384u
 
 </details>
 
@@ -210,8 +235,8 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 96 | Stock prédit: -406.0u (-4j restants) → prédit 96u mais non commandé |
-| [PF3328] DELUXE MIX SAUCES 250ML WECK | 336 | Stock prédit: -173.2u (-1j restants) → prédit 336u mais non commandé |
+| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 96 | Stock prédit: -313.6u (-3j restants) → prédit 96u mais non commandé |
+| [PF3328] DELUXE MIX SAUCES 250ML WECK | 288 | Stock prédit: -88.3u (0j restants) → prédit 288u mais non commandé |
 
 
 ---
@@ -235,4 +260,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:31.799Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:07.533Z*

@@ -5,16 +5,14 @@
 - **Client** : BVBA DRINK & FOOD (ID: 3755)
 - **Commande réelle** : S39706
 - **Date commande** : 2025-10-14 06:43:12
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 5
-- **Tokens**: 10,966 input + 2,962 output = 13,928 total
-- **Coût**: $0.0773 (~7.73¢)
-- **Coût par produit LLM**: $0.0155
+- **Tokens**: 8,193 input + 1,606 output = 9,799 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:30.159Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:42.581Z*

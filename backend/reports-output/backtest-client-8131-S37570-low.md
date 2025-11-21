@@ -5,16 +5,14 @@
 - **Client** : ILIS    SA, FRANCESCO LOZANO (ID: 8131)
 - **Commande réelle** : S37570
 - **Date commande** : 2025-06-20 08:53:32
-- **Date cutoff système** : 2025-06-20 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-06-19 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 5
-- **Tokens**: 10,331 input + 2,944 output = 13,275 total
-- **Coût**: $0.0752 (~7.52¢)
-- **Coût par produit LLM**: $0.0150
+- **Appels**: 6
+- **Tokens**: 9,002 input + 2,080 output = 11,082 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:01:43.532Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:31.613Z*

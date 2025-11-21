@@ -5,16 +5,14 @@
 - **Client** : MAISON DESPRIET SA (ID: 3590)
 - **Commande réelle** : S39562
 - **Date commande** : 2025-10-06 09:21:48
-- **Date cutoff système** : 2025-10-06 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-05 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 8
-- **Tokens**: 17,625 input + 5,058 output = 22,683 total
-- **Coût**: $0.1287 (~12.87¢)
-- **Coût par produit LLM**: $0.0161
+- **Tokens**: 13,153 input + 2,634 output = 15,787 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:33.203Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:17.608Z*

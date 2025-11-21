@@ -3,8 +3,8 @@
   "clientName": "Wandercoop",
   "orderName": "S39420",
   "orderDate": "2025-10-02 06:12:05",
-  "cutoffDate": "2025-10-02 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 10,
     "fp": 8,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 15,
-    "promptTokens": 30615,
-    "completionTokens": 8572,
-    "totalTokens": 39187,
-    "costUSD": 0.220425
+    "promptTokens": 22245,
+    "completionTokens": 4735,
+    "totalTokens": 26980
   }
 }

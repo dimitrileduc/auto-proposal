@@ -3,8 +3,8 @@
   "clientName": "NATURKOST WEST GMBH",
   "orderName": "S39694",
   "orderDate": "2025-10-13 10:17:04",
-  "cutoffDate": "2025-10-13 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 2,
     "fp": 2,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 3,
-    "promptTokens": 6570,
-    "completionTokens": 1746,
-    "totalTokens": 8316,
-    "costUSD": 0.045899999999999996
+    "promptTokens": 4893,
+    "completionTokens": 987,
+    "totalTokens": 5880
   }
 }

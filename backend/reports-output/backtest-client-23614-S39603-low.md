@@ -5,16 +5,14 @@
 - **Client** : Alnatura Produktions- und Handels GmbH, Invoice Address (ID: 23614)
 - **Commande réelle** : S39603
 - **Date commande** : 2025-10-08 06:27:53
-- **Date cutoff système** : 2025-10-08 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-07 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 5
-- **Tokens**: 10,908 input + 2,810 output = 13,718 total
-- **Coût**: $0.0749 (~7.49¢)
-- **Coût par produit LLM**: $0.0150
+- **Tokens**: 8,108 input + 1,460 output = 9,568 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:02:32.271Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:54.515Z*

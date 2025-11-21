@@ -5,16 +5,14 @@
 - **Client** : SCHMETS  DELICATESSES, ACHAT (ID: 8555)
 - **Commande réelle** : S39663
 - **Date commande** : 2025-10-13 08:25:46
-- **Date cutoff système** : 2025-10-13 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-12 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 11
-- **Tokens**: 22,024 input + 6,361 output = 28,385 total
-- **Coût**: $0.1615 (~16.15¢)
-- **Coût par produit LLM**: $0.0147
+- **Tokens**: 15,875 input + 3,490 output = 19,365 total
 
 
 ---
@@ -168,7 +166,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: -19.1u (-22j restants) → prédit 40u mais non commandé |
+| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: -18.3u (-21j restants) → prédit 40u mais non commandé |
 
 
 ---
@@ -192,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:01:56.078Z*
+*Rapport généré automatiquement le 2025-11-20T13:32:37.694Z*

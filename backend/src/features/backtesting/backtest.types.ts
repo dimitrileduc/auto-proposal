@@ -13,7 +13,6 @@ export interface LLMUsageSummary {
   promptTokens: number;
   completionTokens: number;
   totalTokens: number;
-  costUSD: number;
 }
 
 /**
@@ -71,9 +70,19 @@ export interface ProductMatch {
   matchType: 'exact' | 'partial';  // exact = égalité parfaite, partial = erreur > 0
   confidence: 'low' | 'medium' | 'high';  // Niveau de confiance de la prédiction (basé sur historique)
 
-  // Infos LLM (si utilisé pour prédire la quantité)
-  quantitySource?: 'median' | 'llm';
+  // Infos LLM (tracking détaillé)
+  llm_required: boolean;  // Le produit devait-il utiliser le LLM ? (>2 commandes)
+  llm_success: boolean;   // A-t-on réussi à obtenir une prédiction LLM ?
+  quantitySource: 'median' | 'llm';  // Source finale de la quantité
   medianQty?: number; // Quantité médiane (pour comparaison si LLM utilisé)
+
+  // Données passées au LLM (pour debug/audit)
+  llm_input_data?: {
+    recent_orders: Array<{ date: string; quantity: number }>;
+    last_year_orders: Array<{ date: string; quantity: number }>;
+  };
+
+  // Prédiction LLM (si succès)
   llmPrediction?: {
     quantity: number;
     confidence: 'low' | 'medium' | 'high';
@@ -84,6 +93,11 @@ export interface ProductMatch {
       detected_outliers: number[];
       seasonality_impact: 'none' | 'weak' | 'strong';
       trend_direction: string;
+    };
+    usage: {
+      promptTokens: number;
+      completionTokens: number;
+      totalTokens: number;
     };
   };
 }

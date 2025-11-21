@@ -5,16 +5,14 @@
 - **Client** : DELISALADES, Jean-Luc Durré (ID: 8144)
 - **Commande réelle** : S39732
 - **Date commande** : 2025-10-15 07:52:35
-- **Date cutoff système** : 2025-10-15 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-14 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 2
-- **Tokens**: 4,133 input + 1,157 output = 5,290 total
-- **Coût**: $0.0298 (~2.98¢)
-- **Coût par produit LLM**: $0.0149
+- **Tokens**: 3,003 input + 742 output = 3,745 total
 
 
 ---
@@ -147,9 +145,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF3251] JEFKE CHIVE VINAIGRETTE 5L | 40 | 40 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF3251] JEFKE CHIVE VINAIGRETTE 5L | 40 | 40 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
@@ -167,19 +165,36 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Mensuel irrégulier (~30-40j entre commandes)
+- **Pattern temporel**: Irrégulier avec espacement variable (23-30j entre commandes, dernière commande il y a 22j)
 - **Saisonnalité**: none
-- **Tendance**: Stable autour de 40u (légère hausse récente)
+- **Tendance**: Stable autour de 40u (sauf un point à 30u)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-**Analyse du pattern:** Les 4 commandes disponibles montrent des intervalles variables (33j, 31j, 19j, 68j entre 16/07 et 22/09), suggérant un rythme mensuel approximatif sans jour fixe. La prochaine commande prévue au 15/10 serait 23 jours après la dernière (22/09), cohérent avec ce pattern.
+Pattern irrégulier avec 4 commandes sur 3 mois. Intervalles observés: 19j, 29j, 39j entre commandes. Quantités: 40-40-30-40. Le client semble avoir un besoin de fond à 40u (3/4 commandes), le 30u de septembre étant probablement un ajustement ponctuel. La date cible (14 oct) tombe 22j après la dernière commande du 22 sept, cohérent avec le rythme ~20-30j. Aucune donnée N-1 pour validation saisonnière. Pas d'outlier significatif ni de tendance claire (volumes stables). La quantité la plus probable reste 40u, correspondant à la demande récurrente du client pour ce conditionnement 5L.
 
-**Tendance quantitative:** Sur les 4 dernières commandes, les quantités sont remarquablement stables: 40u (16/07), 40u (14/08), 30u (02/09), 40u (22/09). La commande de 30u du 02/09 semble être un ajustement ponctuel (peut-être stock résiduel), pas un outlier majeur. La moyenne des 4 commandes est 37,5u, mais 75% des commandes sont à 40u.
+</details>
 
-**Absence de données N-1:** Aucune saisonnalité historique détectable. Impossible d'évaluer un effet octobre spécifique.
 
-**Décision:** La demande de fond se situe à 40u, quantité la plus fréquente et la plus récente (22/09). Le timing de 23 jours post-dernière commande est dans la fourchette normale. Aucun signal de rupture ou d'accélération. Je recommande **40 unités** comme quantité la plus probable, en ligne avec le comportement dominant du client.
+
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF3251] JEFKE CHIVE VINAIGRETTE 5L</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-22 10:41:21: 40u
+- 2025-09-02 06:58:03: 30u
+- 2025-08-14 06:19:08: 40u
+- 2025-07-16 07:57:27: 40u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 40u (confidence: medium)
+**📊 Quantité Réelle**: 40u
 
 </details>
 
@@ -208,7 +223,7 @@
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | Stock prédit: 152.9u (21j restants) → prédit 160u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 1 | Stock prédit: 160.0u (22j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -232,4 +247,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:33.588Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:55.947Z*

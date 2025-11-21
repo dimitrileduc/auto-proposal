@@ -5,16 +5,14 @@
 - **Client** : ITM ALIMENTAIRE BELGIUM (ID: 3577)
 - **Commande réelle** : S39716
 - **Date commande** : 2025-10-14 08:27:27
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 6,734 input + 1,892 output = 8,626 total
-- **Coût**: $0.0486 (~4.86¢)
-- **Coût par produit LLM**: $0.0162
+- **Tokens**: 5,057 input + 1,188 output = 6,245 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:00:15.133Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:39.309Z*

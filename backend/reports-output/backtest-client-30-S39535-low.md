@@ -5,16 +5,14 @@
 - **Client** : Conserverie Et Moutarderie Belge (ID: 30)
 - **Commande réelle** : S39535
 - **Date commande** : 2025-10-03 08:01:58
-- **Date cutoff système** : 2025-10-03 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-02 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
-- **Appels**: 6
-- **Tokens**: 13,147 input + 3,702 output = 16,849 total
-- **Coût**: $0.0950 (~9.50¢)
-- **Coût par produit LLM**: $0.0158
+- **Appels**: 7
+- **Tokens**: 11,317 input + 2,307 output = 13,624 total
 
 
 ---
@@ -186,4 +184,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T08:59:46.190Z*
+*Rapport généré automatiquement le 2025-11-20T13:31:13.632Z*

@@ -3,8 +3,8 @@
   "clientName": "SPRL GOOD & FOOD",
   "orderName": "S39546",
   "orderDate": "2025-10-03 12:32:05",
-  "cutoffDate": "2025-10-03 00:00:00",
-  "daysBeforePrediction": 0,
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
     "fp": 0,
@@ -23,9 +23,8 @@
   },
   "llmUsage": {
     "calls": 7,
-    "promptTokens": 13932,
-    "completionTokens": 3846,
-    "totalTokens": 17778,
-    "costUSD": 0.099486
+    "promptTokens": 10012,
+    "completionTokens": 1913,
+    "totalTokens": 11925
   }
 }

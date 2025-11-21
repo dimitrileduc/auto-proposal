@@ -5,16 +5,14 @@
 - **Client** : BVBA DRINK & FOOD (ID: 3755)
 - **Commande réelle** : S39706
 - **Date commande** : 2025-10-14 06:43:12
-- **Date cutoff système** : 2025-10-14 00:00:00
-- **Jours d'avance** : 0j
+- **Date cutoff système** : 2025-10-13 00:00:00
+- **Jours d'avance** : 1j
 
 
-### 💰 Usage LLM
+### 🤖 Usage LLM
 
 - **Appels**: 5
-- **Tokens**: 10,966 input + 2,962 output = 13,928 total
-- **Coût**: $0.0773 (~7.73¢)
-- **Coût par produit LLM**: $0.0155
+- **Tokens**: 8,193 input + 1,606 output = 9,799 total
 
 
 ---
@@ -147,10 +145,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
-|---------|--------|------|-----------|----------|------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact | 🤖 LLM |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 3 | 1 | 2.0 | 200.0% | ✅ partial | 🤖 LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 80 | 80 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 3 | 1 | 2.0 | 200.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
@@ -168,23 +166,13 @@
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier ~15-20j - Pas de jour fixe (lun/mer/jeu alternés)
+- **Pattern temporel**: Irrégulier avec tendance ~2-3 semaines (14-18j en moyenne récente, était plus long en N-1)
 - **Saisonnalité**: weak
-- **Tendance**: Stable 80u depuis 10 mois
+- **Tendance**: Stable à 80u depuis juillet 2025, consolidation après période variable N-1
 - **Outliers détectés**: 160u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-Les 5 dernières commandes montrent un pattern irrégulier (intervalles: 18j, 17j, 25j, 8j, 15j) sans jour fixe de la semaine. Dernière commande: 2025-09-29 (lun.), soit 15 jours avant la date de prédiction 2025-10-14 (mar.) - cohérent avec le rythme habituel.
-
-**FILTRAGE OUTLIERS:**
-Les 160u apparaissent 3 fois dans l'historique N-1 (sept 2024, juin 2024, avril 2024) mais AUCUNE occurrence dans les 10 derniers mois récents. Ces pics semblent exceptionnels (promotions ou commandes groupées). Sur les 5 dernières commandes, stabilité parfaite à 80u.
-
-**SAISONNALITÉ:**
-À mi-octobre N-1, pas de commande enregistrée. La commande N-1 la plus proche est 2024-09-24 (160u outlier). Impact saisonnier faible car le produit montre une demande régulière toute l'année avec des volumes stables.
-
-**DÉCISION:**
-Demande de fond stable à 80u depuis juillet 2024 (10 mois consécutifs). Aucun signal de rupture de tendance, aucun pattern saisonnier fort à cette période. Le rythme de 15 jours depuis la dernière commande justifie une nouvelle commande. **Prédiction: 80u** (quantité la plus probable basée sur 100% des commandes récentes).
+Pattern clair identifié: depuis juillet 2025 (4 dernières commandes), demande stabilisée à 80u systématiquement avec intervalles variables (8-18j). Les 160u de N-1 (juin/sept/avril 2024) étaient des pics isolés non récurrents. Dernière commande le 2025-09-29 (lun.), nous sommes au 2025-10-13 soit 14j d'écart - cohérent avec le rythme récent. Aucun signal saisonnier fort à cette date en N-1 (2024-09-24 était à 160u mais isolé, pas de récurrence annuelle établie). La tendance récente montre une normalisation forte à 80u, confirmée sur 5 commandes consécutives. Prédiction: 80u avec haute confiance.
 
 </details>
 
@@ -194,36 +182,82 @@ Demande de fond stable à 80u depuis juillet 2024 (10 mois consécutifs). Aucun 
 
 **Quantités:**
 - 🤖 **LLM prédit**: 3u (confidence: medium)
-- 📊 **Baseline N-1**: 2.5u
+- 📊 **Baseline N-1**: 2.3u
 - 📊 **Médiane**: 3u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 2u (200.0%)
 - 📉 **Erreur Médiane**: 2u (200.0%)
 
 **🔍 Analyse LLM:**
-- **Pattern temporel**: Irrégulier avec tendance ~3-4 semaines. Commandes majoritairement en début de semaine (lun/mar), quelques mer/jeu/ven
+- **Pattern temporel**: Irrégulier ~25-30j (variable : 22j, 25j, 22j récemment)
 - **Saisonnalité**: weak
-- **Tendance**: Hausse modérée : passage de 1-2u (N-1) à 3u (récent)
-- **Outliers détectés**: 4u
+- **Tendance**: Stable autour de 2-3u (moyenne récente 2.3u)
+- **Outliers détectés**: 6u
 
 **🧠 Raisonnement LLM:**
-**ANALYSE RYTHMIQUE:**
-- Historique N-1 montre commandes espacées irrégulièrement (18-34 jours entre commandes)
-- 3 derniers mois: 16/09, 25/08, 31/07 → intervalles de ~22-25 jours
-- La date de prédiction 14/10 serait ~28 jours après la dernière commande (16/09) → cohérent avec le pattern
-- Tendance à commander en début de semaine (mardi observé plusieurs fois), et la prédiction tombe un mardi
+Le produit montre un rythme irrégulier avec commandes espacées de 22-30 jours. Les 3 derniers mois affichent 3u, 3u, 1u (moyenne 2.3u). Le pic de 6u en oct-2023 N-1 est isolé (outlier événementiel) non répété en 2024, donc non saisonnier. La tendance récente est stable : après la commande du 16/09 (3u), l'intervalle moyen suggère une nouvelle commande fin septembre/début octobre. Nous sommes le 13/10, soit 27j après la dernière commande (3u le 16/09), ce qui correspond au pattern habituel. La quantité récurrente observée hors outlier est 2-3u, avec dominante 3u sur les 2 dernières commandes. Pas de rupture de stock détectée, donc demande régulière. Prédiction : 3u (quantité modale récente, cohérente avec le rythme et la saisonnalité absente).
 
-**FILTRAGE OUTLIERS:**
-- Les quantités 4u (juin 2024) semblent exceptionnelles comparées au reste de l'historique
-- Majoritairement 1-3u, avec une nette tendance récente à 3u (2 des 3 dernières commandes)
-- N-1 à la même période (sept-oct 2024): 2u le 24/09 → baseline de référence faible
+</details>
 
-**SYNTHÈSE:**
-- Tendance récente claire: passage de 1-2u vers 3u stabilisé
-- Saisonnalité faible: pas de pattern fort à cette période N-1
-- La baseline théorique serait ~2.5u (moyenne pondérée favorisant les 3 derniers mois)
-- Étant donné le rythme de ~4 semaines écoulées et la tendance récente à 3u, la commande devrait être de **3 unités**
-- Confiance moyenne car historique limité mais tendance récente cohérente
+
+
+
+### 📊 Données d'Input LLM (2 produits)
+
+
+<details>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-29 15:25:16: 80u
+- 2025-09-11 08:18:04: 80u
+- 2025-08-25 08:11:04: 80u
+- 2025-07-31 05:42:22: 80u
+- 2025-07-23 08:42:42: 80u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-24 07:11:41: 160u
+- 2024-08-21 11:24:26: 80u
+- 2024-08-13 06:35:30: 80u
+- 2024-07-25 06:08:11: 80u
+- 2024-06-12 13:04:35: 160u
+- 2024-06-06 09:56:07: 80u
+- 2024-05-27 08:24:25: 80u
+- 2024-05-03 12:12:17: 80u
+- 2024-04-22 11:43:15: 160u
+- 2024-04-08 12:25:11: 80u
+- 2024-03-20 08:07:07: 80u
+- 2024-02-29 06:52:13: 80u
+
+**✅ Quantité LLM**: 80u (confidence: high)
+**📊 Quantité Réelle**: 80u
+
+</details>
+
+
+<details>
+<summary><strong>2. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-16 05:58:23: 3u
+- 2025-08-25 08:11:04: 3u
+- 2025-07-31 05:42:22: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-24 07:11:41: 2u
+- 2024-08-21 11:24:26: 1u
+- 2024-08-13 06:35:30: 2u
+- 2024-06-25 09:29:04: 4u
+- 2024-06-12 13:04:35: 4u
+- 2024-05-27 08:24:25: 2u
+- 2024-05-03 12:12:17: 1u
+- 2024-04-25 08:06:34: 3u
+- 2024-03-20 08:07:07: 1u
+- 2023-12-12 09:14:02: 2u
+- 2023-10-13 09:09:05: 6u
+
+**✅ Quantité LLM**: 3u (confidence: medium)
+**📊 Quantité Réelle**: 1u
 
 </details>
 
@@ -252,7 +286,7 @@ Demande de fond stable à 80u depuis juillet 2024 (10 mois consécutifs). Aucun 
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0077] FILOU PROVENCALE 5 L | 1 | Stock prédit: -1.4u (-28j restants) → prédit 1u mais non commandé |
+| [PF0077] FILOU PROVENCALE 5 L | 1 | Stock prédit: -1.4u (-27j restants) → prédit 1u mais non commandé |
 | [PF3272] JF PEPPER MAYONNAISE 925ML | 1 | Stock prédit: 0.1u (5j restants) → prédit 1u mais non commandé |
 
 
@@ -277,4 +311,4 @@ Demande de fond stable à 80u depuis juillet 2024 (10 mois consécutifs). Aucun 
 
 ---
 
-*Rapport généré automatiquement le 2025-11-20T09:04:30.160Z*
+*Rapport généré automatiquement le 2025-11-20T13:33:42.582Z*

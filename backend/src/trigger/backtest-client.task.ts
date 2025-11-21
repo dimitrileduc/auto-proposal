@@ -93,7 +93,6 @@ export interface BacktestClientTaskResult {
     promptTokens: number;
     completionTokens: number;
     totalTokens: number;
-    costUSD: number;
   };
   reportPath: string;  // Path au rapport Markdown (legacy)
   reportPaths: {
@@ -345,7 +344,7 @@ export const backtestClientTask = task({
 
       const llmUsage = stockAnalysis?.llm_usage;
       if (llmUsage) {
-        console.log(`   💰 LLM Usage: ${llmUsage.calls} calls, ${llmUsage.totalTokens} tokens, $${llmUsage.costUSD.toFixed(4)}\n`);
+        console.log(`   🤖 LLM Usage: ${llmUsage.calls} calls, ${llmUsage.totalTokens} tokens\n`);
       } else {
         console.log(`   ⚠️ No LLM usage data found\n`);
       }
