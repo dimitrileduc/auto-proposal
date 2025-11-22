@@ -97,7 +97,7 @@ const predictionJsonSchema = {
 };
 
 /**
- * Prédit la quantité à commander via OpenRouter + Claude Sonnet 4.5
+ * Prédit la quantité à commander via OpenRouter + Moonshot AI Kimi K2 Thinking
  * avec Structured Outputs natifs
  */
 export async function predictWithLLM(
@@ -108,8 +108,8 @@ export async function predictWithLLM(
     throw new Error("OPENROUTER_API_KEY not configured");
   }
 
-  // Claude Sonnet 4.5 supporte structured outputs (pas 3.7!)
-  const model = "anthropic/claude-4.5-sonnet-20250929";
+  // Moonshot AI Kimi K2 Thinking supporte structured outputs
+  const model = "moonshotai/kimi-k2-thinking";
   const currentDate = input.currentDate || new Date().toISOString().split("T")[0];
 
   // Helper pour formatter avec jour de la semaine
@@ -180,9 +180,7 @@ Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
         "Authorization": `Bearer ${apiKey}`,
         "Content-Type": "application/json",
         "HTTP-Referer": "https://github.com/dlstudio/auto-proposal",
-        "X-Title": "Auto Proposal Stock Replenishment",
-        // Beta header requis pour structured outputs avec Claude Sonnet 4.5
-        "anthropic-beta": "structured-outputs-2025-11-13"
+        "X-Title": "Auto Proposal Stock Replenishment"
       },
       body: JSON.stringify({
         model,
