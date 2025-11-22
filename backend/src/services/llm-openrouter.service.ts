@@ -11,6 +11,7 @@ export interface LLMPrediction {
     detected_outliers: number[];
     seasonality_impact: "none" | "weak" | "strong";
     trend_direction: string;
+    day_cycle_analysis?: string; // Analyse du jour de commande habituel vs jour demandé
   };
   baseline_quantity: number;
   recommended_quantity: number;
@@ -29,6 +30,8 @@ export interface LLMPredictionResult {
   usage: LLMUsage;
   model: string;
   provider: string;
+  inputPrompt: string;
+  providerReasoning?: string;
 }
 
 interface OrderHistoryItem {
@@ -55,7 +58,7 @@ const predictionJsonSchema = {
       properties: {
         frequency_pattern: {
           type: "string",
-          description: "Pattern temporel identifié (ex: 'Commande chaque Mardi', 'Mensuel ~30j', 'Irrégulier')"
+          description: "Pattern temporel identifié (ex: 'Commande chaque vendredi', 'Cycle 30j dernier vendredi du mois')"
         },
         detected_outliers: {
           type: "array",
@@ -69,27 +72,32 @@ const predictionJsonSchema = {
         },
         trend_direction: {
           type: "string",
-          description: "Direction observée (ex: 'Stable', 'Hausse +15%', 'Baisse -20%')"
+          description: "Direction observée (ex: 'Stable à 5u', 'Hausse +15%', 'Baisse progressive -20%')"
+        },
+        day_cycle_analysis: {
+          type: "string",
+          description: "Analyse du jour de commande habituel vs jour demandé (ex: 'Date demandée: samedi, jour habituel: vendredi')"
         }
       },
       required: ["frequency_pattern", "detected_outliers", "seasonality_impact", "trend_direction"],
-      additionalProperties: false
+      additionalProperties: true
     },
     baseline_quantity: {
       type: "number",
-      description: "Demande de fond théorique avant ajustements"
+      description: "Demande de fond théorique avant ajustements (peut être décimale)"
     },
     recommended_quantity: {
       type: "integer",
-      description: "LA PRÉDICTION FINALE - quantité à commander (doit être >= 1)"
+      description: "LA PRÉDICTION FINALE - quantité à commander (doit être un entier >= 1)"
     },
     confidence: {
       type: "string",
-      enum: ["low", "medium", "high"]
+      enum: ["low", "medium", "high"],
+      description: "Niveau de confiance basé sur la qualité/quantité des données et la régularité des patterns"
     },
     reasoning: {
       type: "string",
-      description: "Synthèse du raisonnement : pourquoi cette quantité spécifique ?"
+      description: "Synthèse du raisonnement qui justifie cette quantité spécifique, y compris gestion jour hors cycle"
     }
   },
   required: ["analysis", "baseline_quantity", "recommended_quantity", "confidence", "reasoning"],
@@ -129,7 +137,7 @@ export async function predictWithLLM(
   const currentDayName = new Date(currentDate).toLocaleDateString('fr-FR', { weekday: 'long' });
 
   const prompt = `Tu es un Expert Supply Chain Senior spécialisé en Agroalimentaire B2B.
-Ton objectif est de prédire la prochaine quantité de commande avec la PLUS GRANDE PRÉCISION possible (minimiser le MAPE).
+Ton objectif est de prédire la prochaine quantité de commande avec la PLUS GRANDE PRÉCISION possible (minimiser le MAPE) pour le ${currentDate} (${currentDayName}).
 
 PRODUIT: ${input.productName}
 DATE DE PRÉDICTION: ${currentDate} (${currentDayName})
@@ -147,28 +155,63 @@ Utile pour détecter la tendance immédiate et le rythme actuel.
 ${recentTable}
 </data_context>
 
+<jour_cycle_guidelines>
+**RÈGLES ESSENTIELLES POUR JOURS HORS CYCLE**:
+1) Les clients B2B commandent généralement les jours ouvrés (lundi-vendredi)
+2) Si la date de prédiction (${currentDayName}) ne correspond PAS à leur jour habituel de commande:
+   - N'utilise JAMAIS 0, même si aucune commande n'est attendue ce jour précis
+   - Prédit plutôt la quantité de la PROCHAINE commande probable (celle qui suivra)
+   - Exemple: Si le client commande chaque vendredi, mais qu'on demande pour un samedi → prédit la quantité pour le VENDREDI qui suit
+3) Surtout, ne confonds pas "prédire 0 parce que jour inhabituel" (INTERDIT) avec "prédire 0 si le client a arrêté ce produit" (autorisé)
+</jour_cycle_guidelines>
+
 <reasoning_guidelines>
 Analyse les données étape par étape AVANT de conclure (Chain of Thought) :
 
-1. **ANALYSE RYTHMIQUE** (Crucial pour détecter rattrapage)
-   - Observe les intervalles entre commandes récentes
-   - Le client commande-t-il à jour fixe (ex: chaque Mardi) ?
-   - Y a-t-il un pattern hebdomadaire (Lun-Ven) ou mensuel (~30j) ?
-   - Si rupture du rythme habituel → possible effet rattrapage à prévoir
+1. **ANALYSE RYTHMIQUE** (Déterminant pour la précision)
+   - Calcule les intervalles précis entre commandes (7j, 14j, 30j?)
+   - Identifie le jour habituel (lundi? mardi? vendredi?)
+   - Distingue pattern hebdomadaire vs mensuel (~30j)
+   - ALERTE: Si la date de prédiction est un autre jour que d'habitude → utilise les règles spéciales
 
 2. **FILTRAGE INTELLIGENT DES OUTLIERS**
-   - Isole mentalement les événements exceptionnels (promotions, erreurs)
-   - Si N-1 montre un pic à cette date précise : fête récurrente ou one-shot ?
-   - Ne confonds pas "hausse de tendance" avec "pic exceptionnel ponctuel"
+   - Les commandes 2-3× supérieures à la moyenne sont souvent des outliers ponctuels
+   - Un "pic" N-1 qui n'est pas répété récemment est probablement un événement exceptionnel
+   - Compare pour isoler: volumes stables vs pics isolés vs augmentations progressives
+   - Plus un point s'écarte de la tendance générale, plus il faut le pondérer faiblement
 
 3. **SYNTHÈSE & DÉCISION**
-   - **SI pattern saisonnier fort** : Baseline N-1 × Coefficient tendance récente
-   - **SI demande stable** : Moyenne pondérée (poids fort sur dernières commandes)
-   - **SI rupture de tendance nette** : Privilégie la donnée la plus récente
+   - **Pour données volumineuses & régulières** (>5 points):
+     → Moyenne pondérée récente (60-70% dernière, 30-40% historique)
+   - **Pour données limitées** (2-3 points):
+     → Privilégie dernière valeur si cohérente avec la tendance
+   - **Avec données N-1 pertinentes**:
+     → Baseline N-1 × coefficient tendance actuelle
+   - **Pour rupture de tendance nette**:
+     → Dernière valeur > moyenne historique
 
-   Règle d'Or : En agro B2B, mieux vaut être PRÉCIS que prudent.
+   Règle d'Or : En agro B2B, privilégie PRÉCISION sur prudence.
    Ne surgonfle pas "au cas où" → vise la quantité la plus PROBABLE.
 </reasoning_guidelines>
+
+<exemples_raisonnement>
+EXEMPLE 1 - Jour hors cycle:
+- Historique: Commandes le vendredi (5u, 5u, 5u)
+- Date de prédiction: Samedi
+- CORRECT: "Le samedi est hors cycle habituel (vendredi). La prochaine commande sera vendredi prochain, probablement 5u comme les 3 dernières."
+- INCORRECT: "La prédiction tombe un samedi, donc 0u car hors cycle."
+
+EXEMPLE 2 - Outlier vs tendance:
+- Historique: [10u, 12u, 40u, 11u, 13u]
+- CORRECT: "Le pic de 40u est isolé entre des valeurs stables (10-13u). C'est un outlier probable (promotion/erreur)."
+- INCORRECT: "Les valeurs oscillent entre 10u et 40u, je prévois donc 25u (moyenne)."
+
+EXEMPLE 3 - Données éparses:
+- Données N-1: [8u en mai 2024]
+- Données récentes: [5u en mai 2025, 5u en juin 2025]
+- CORRECT: "Bien que N-1 montre 8u, les données récentes sont stables à 5u. Je privilégie la tendance récente avec 5u."
+- INCORRECT: "Avec moyenne entre récent et N-1: (8+5+5)/3 = 6u"
+</exemples_raisonnement>
 
 Remplis d'abord l'objet "analysis" pour structurer ton raisonnement.
 Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
@@ -190,6 +233,7 @@ Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
             content: prompt
           }
         ],
+        include_reasoning: true,
         // Structured Outputs natifs OpenRouter
         response_format: {
           type: "json_schema",
@@ -210,12 +254,33 @@ Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
     const data = await response.json();
 
     // Parse la réponse
-    const content = data.choices?.[0]?.message?.content;
+    const choice = data.choices?.[0];
+    const content = choice?.message?.content;
+    const providerReasoning = choice?.message?.reasoning; // Capture reasoning if available
+
     if (!content) {
       throw new Error("No content in OpenRouter response");
     }
 
-    const prediction = JSON.parse(content) as LLMPrediction;
+    let prediction: LLMPrediction;
+    try {
+      // Nettoyage du contenu avant parsing (parfois le modèle ajoute du texte autour du JSON)
+      // On nettoie aussi les caractères de contrôle potentiellement problématiques (sauf \n \r \t)
+      const jsonContent = content
+        .replace(/```json\n?|\n?```/g, '')
+        .trim();
+      
+      prediction = JSON.parse(jsonContent) as LLMPrediction;
+    } catch (parseError) {
+      console.error("❌ JSON Parse Error. Raw content:", content);
+      // Tentative de nettoyage plus agressif si le premier échec
+      try {
+        const sanitized = content.replace(/[\x00-\x1F\x7F-\x9F]/g, "");
+        prediction = JSON.parse(sanitized) as LLMPrediction;
+      } catch (e) {
+        throw new Error(`Failed to parse JSON response: ${parseError instanceof Error ? parseError.message : String(parseError)}`);
+      }
+    }
 
     // Extract usage
     const usage = data.usage || {};
@@ -231,7 +296,9 @@ Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
         totalTokens
       },
       model,
-      provider: "openrouter"
+      provider: "openrouter",
+      inputPrompt: prompt,
+      providerReasoning
     };
   } catch (error) {
     console.error("❌ LLM prediction failed:", error);
