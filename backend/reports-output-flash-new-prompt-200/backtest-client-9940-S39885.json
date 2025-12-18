@@ -1,0 +1,30 @@
+{
+  "clientId": 9940,
+  "clientName": "Un poids c'est tout",
+  "orderName": "S39885",
+  "orderDate": "2025-10-28 07:15:40",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 13,
+    "fn": 1,
+    "precision": 0.35,
+    "recall": 0.875,
+    "f1Score": 0.4999999999999999,
+    "mae": 1.5714285714285714,
+    "wmape": 100,
+    "mape": 139.28571428571428,
+    "bias": 63.63636363636363
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13881,
+    "completionTokens": 4978,
+    "totalTokens": 18859
+  }
+}

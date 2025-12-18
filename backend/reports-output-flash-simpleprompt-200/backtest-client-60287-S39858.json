@@ -1,0 +1,30 @@
+{
+  "clientId": 60287,
+  "clientName": "DEPOT VRAC SILLY SPRL",
+  "orderName": "S39858",
+  "orderDate": "2025-10-22 10:58:25",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8,
+    "recall": 1,
+    "f1Score": 0.888888888888889,
+    "mae": 1,
+    "wmape": 57.14285714285714,
+    "mape": 83.33333333333333,
+    "bias": 28.57142857142857
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 1497,
+    "completionTokens": 493,
+    "totalTokens": 1990
+  }
+}

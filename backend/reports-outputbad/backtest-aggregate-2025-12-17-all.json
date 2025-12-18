@@ -1,0 +1,648 @@
+{
+  "executionDate": "2025-12-17T16:32:28.696Z",
+  "config": {
+    "daysBeforePrediction": 1
+  },
+  "aggregateMetrics": {
+    "mean": {
+      "precision": 0.37026964095294534,
+      "recall": 0.847364990464538,
+      "f1Score": 0.45900931755197416,
+      "mae": 47.27049229051492,
+      "wmape": 41.56088685619113,
+      "mape": 44.8427076142951,
+      "bias": -2.971331006886104
+    },
+    "median": {
+      "precision": 0.3548387096774194,
+      "recall": 1,
+      "f1Score": 0.52,
+      "mae": 2.6666666666666665,
+      "wmape": 36.36363636363637,
+      "mape": 45,
+      "bias": 0
+    },
+    "stdDev": {
+      "precision": 0.270656982857184,
+      "recall": 0.2550204866003625,
+      "f1Score": 0.27563319909737205,
+      "mae": 95.03486423106165,
+      "wmape": 34.69635605591508,
+      "mape": 36.62817879412658,
+      "bias": 50.68834514723493
+    },
+    "percentiles": {
+      "p25": {
+        "recall": 0.7596153846153846,
+        "wmape": 10,
+        "mape": 13.942307692307693,
+        "bias": -29.06199273401871
+      },
+      "p50": {
+        "recall": 1,
+        "wmape": 36.36363636363637,
+        "mape": 45,
+        "bias": 0
+      },
+      "p75": {
+        "recall": 1,
+        "wmape": 66.68768390079865,
+        "mape": 64.58333333333334,
+        "bias": 10.882352941176471
+      },
+      "p90": {
+        "recall": 1,
+        "wmape": 97.33333333333334,
+        "mape": 100.02083333333333,
+        "bias": 73.33333333333343
+      }
+    }
+  },
+  "individualResults": [
+    {
+      "clientId": 13621,
+      "clientName": "FOODPRINT SRL",
+      "orderName": "S40361",
+      "success": true,
+      "metrics": {
+        "precision": 0.005,
+        "recall": 1,
+        "f1Score": 0.009950248756218907,
+        "mae": 29,
+        "wmape": 96.66666666666667,
+        "mape": 96.66666666666667,
+        "bias": -96.66666666666667
+      }
+    },
+    {
+      "clientId": 33598,
+      "clientName": "COLRUYT FOOD RETAIL NV NEW",
+      "orderName": "S40243",
+      "success": true,
+      "metrics": {
+        "precision": 0.12903225806451613,
+        "recall": 1,
+        "f1Score": 0.2285714285714286,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 5490,
+      "clientName": "BIOCOOP SA COOP, BIOCOOP SA COOP, Adresse de facturation",
+      "orderName": "S40296",
+      "success": true,
+      "metrics": {
+        "precision": 0.5384615384615384,
+        "recall": 1,
+        "f1Score": 0.7000000000000001,
+        "mae": 120.21428571428571,
+        "wmape": 36.85939553219448,
+        "mape": 36.19047619047619,
+        "bias": -28.71222076215506
+      }
+    },
+    {
+      "clientId": 17452,
+      "clientName": "HYGIENA SA",
+      "orderName": "S40284",
+      "success": true,
+      "metrics": {
+        "precision": 0.07317073170731707,
+        "recall": 1,
+        "f1Score": 0.13636363636363635,
+        "mae": 4.666666666666667,
+        "wmape": 10,
+        "mape": 16.666666666666668,
+        "bias": 10
+      }
+    },
+    {
+      "clientId": 17251,
+      "clientName": "CARREFOUR BELGIUM SA, CD Carrefour Kontich",
+      "orderName": "S40239",
+      "success": true,
+      "metrics": {
+        "precision": 0.07142857142857142,
+        "recall": 1,
+        "f1Score": 0.13333333333333333,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 24784,
+      "clientName": "FOODPRINT SRL ECHANTILLON",
+      "orderName": "S40301",
+      "success": true,
+      "metrics": {
+        "precision": 0.023255813953488372,
+        "recall": 0.14285714285714285,
+        "f1Score": 0.04,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 3452,
+      "clientName": "DELHAIZE LE LION/DE LEEUW NV",
+      "orderName": "S40188",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 472,
+        "wmape": 80.54607508532423,
+        "mape": 79.16666666666667,
+        "bias": -80.54607508532423
+      }
+    },
+    {
+      "clientId": 71903,
+      "clientName": "FOODPRINT SRL - FP",
+      "orderName": "S36080",
+      "success": true,
+      "metrics": {
+        "precision": 0.11538461538461539,
+        "recall": 1,
+        "f1Score": 0.20689655172413793,
+        "mae": 8.083333333333334,
+        "wmape": 30.312499999999996,
+        "mape": 47.916666666666664,
+        "bias": -20.9375
+      }
+    },
+    {
+      "clientId": 33628,
+      "clientName": "LIDL BELGIE GMBH",
+      "orderName": "S40152",
+      "success": true,
+      "metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 1,
+        "f1Score": 0.8,
+        "mae": 192,
+        "wmape": 50,
+        "mape": 114.28571428571428,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 3590,
+      "clientName": "MAISON DESPRIET SA",
+      "orderName": "S40210",
+      "success": true,
+      "metrics": {
+        "precision": 0.5555555555555556,
+        "recall": 0.8333333333333334,
+        "f1Score": 0.6666666666666667,
+        "mae": 105.8,
+        "wmape": 66.70870113493065,
+        "mape": 49.166666666666664,
+        "bias": -66.70870113493065
+      }
+    },
+    {
+      "clientId": 30,
+      "clientName": "Conserverie Et Moutarderie Belge",
+      "orderName": "S40304",
+      "success": true,
+      "metrics": {
+        "precision": 0.08823529411764706,
+        "recall": 0.42857142857142855,
+        "f1Score": 0.14634146341463417,
+        "mae": 0.6666666666666666,
+        "wmape": 66.66666666666666,
+        "mape": 66.66666666666667,
+        "bias": 66.66666666666666
+      }
+    },
+    {
+      "clientId": 60291,
+      "clientName": "DOMAINE DE RONCHINNE",
+      "orderName": "S40241",
+      "success": true,
+      "metrics": {
+        "precision": 0.6296296296296297,
+        "recall": 0.7083333333333334,
+        "f1Score": 0.6666666666666667,
+        "mae": 0.5882352941176471,
+        "wmape": 35.714285714285715,
+        "mape": 52.94117647058823,
+        "bias": 28.57142857142857
+      }
+    },
+    {
+      "clientId": 8200,
+      "clientName": "BONNI, ACHAT",
+      "orderName": "S40213",
+      "success": true,
+      "metrics": {
+        "precision": 0.21428571428571427,
+        "recall": 0.6,
+        "f1Score": 0.3157894736842105,
+        "mae": 1.8333333333333333,
+        "wmape": 100,
+        "mape": 108.33333333333333,
+        "bias": 100
+      }
+    },
+    {
+      "clientId": 3577,
+      "clientName": "ITM ALIMENTAIRE BELGIUM",
+      "orderName": "S40147",
+      "success": true,
+      "metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 1,
+        "f1Score": 0.8,
+        "mae": 32,
+        "wmape": 36.36363636363637,
+        "mape": 50,
+        "bias": 36.36363636363637
+      }
+    },
+    {
+      "clientId": 8144,
+      "clientName": "DELISALADES, Jean-Luc Durré",
+      "orderName": "S40071",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 160,
+        "wmape": 50,
+        "mape": 50,
+        "bias": -50
+      }
+    },
+    {
+      "clientId": 3840,
+      "clientName": "KORO HANDELS GmbH",
+      "orderName": "S40299",
+      "success": true,
+      "metrics": {
+        "precision": 0,
+        "recall": 0,
+        "f1Score": 0,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 17600,
+      "clientName": "SDP Rungis",
+      "orderName": "S40258",
+      "success": true,
+      "metrics": {
+        "precision": 0.16,
+        "recall": 1,
+        "f1Score": 0.2758620689655173,
+        "mae": 54.25,
+        "wmape": 14.447403462050598,
+        "mape": 12.5,
+        "bias": -14.447403462050598
+      }
+    },
+    {
+      "clientId": 60212,
+      "clientName": "BIOK GASTUCHE",
+      "orderName": "S40067",
+      "success": true,
+      "metrics": {
+        "precision": 0.3225806451612903,
+        "recall": 0.9090909090909091,
+        "f1Score": 0.4761904761904761,
+        "mae": 0.6,
+        "wmape": 50,
+        "mape": 45,
+        "bias": 33.33333333333333
+      }
+    },
+    {
+      "clientId": 24092,
+      "clientName": "CONSERVERIE ET MOUTARDERIE BELGE ECHANTILLON",
+      "orderName": "S39541",
+      "success": true,
+      "metrics": {
+        "precision": 0.05555555555555555,
+        "recall": 1,
+        "f1Score": 0.10526315789473684,
+        "mae": 1,
+        "wmape": 100,
+        "mape": 100,
+        "bias": 100
+      }
+    },
+    {
+      "clientId": 17669,
+      "clientName": "Epicerie Uhoda Beaufays",
+      "orderName": "S39953",
+      "success": true,
+      "metrics": {
+        "precision": 0.35135135135135137,
+        "recall": 1,
+        "f1Score": 0.52,
+        "mae": 0.23076923076923078,
+        "wmape": 17.647058823529413,
+        "mape": 15.384615384615385,
+        "bias": -5.88235294117647
+      }
+    },
+    {
+      "clientId": 8555,
+      "clientName": "SCHMETS  DELICATESSES, ACHAT",
+      "orderName": "S40197",
+      "success": true,
+      "metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.7692307692307693,
+        "f1Score": 0.7142857142857142,
+        "mae": 7.8,
+        "wmape": 27.083333333333332,
+        "mape": 42.97435897435897,
+        "bias": -20.13888888888889
+      }
+    },
+    {
+      "clientId": 38696,
+      "clientName": "AD EYNATTEN DELHAIZE EYNADIS",
+      "orderName": "S40324",
+      "success": true,
+      "metrics": {
+        "precision": 0.0625,
+        "recall": 0.4,
+        "f1Score": 0.10810810810810811,
+        "mae": 12.75,
+        "wmape": 79.6875,
+        "mape": 68.5515873015873,
+        "bias": -79.6875
+      }
+    },
+    {
+      "clientId": 3576,
+      "clientName": "HOUGARDY S.A.",
+      "orderName": "S40331",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 8131,
+      "clientName": "ILIS    SA, FRANCESCO LOZANO",
+      "orderName": "S37570",
+      "success": true,
+      "metrics": {
+        "precision": 0.625,
+        "recall": 1,
+        "f1Score": 0.7692307692307693,
+        "mae": 145.4,
+        "wmape": 71.55511811023622,
+        "mape": 48,
+        "bias": -71.55511811023622
+      }
+    },
+    {
+      "clientId": 60211,
+      "clientName": "BIOK CORBAIS",
+      "orderName": "S39942",
+      "success": true,
+      "metrics": {
+        "precision": 0.3548387096774194,
+        "recall": 1,
+        "f1Score": 0.5238095238095238,
+        "mae": 0.45454545454545453,
+        "wmape": 29.411764705882355,
+        "mape": 15.909090909090908,
+        "bias": -29.411764705882355
+      }
+    },
+    {
+      "clientId": 3865,
+      "clientName": "REWE MARKT GMBH - WEST",
+      "orderName": "S39800",
+      "success": true,
+      "metrics": {
+        "precision": 0.18518518518518517,
+        "recall": 1,
+        "f1Score": 0.3125,
+        "mae": 1.6,
+        "wmape": 50,
+        "mape": 61.666666666666664,
+        "bias": -12.5
+      }
+    },
+    {
+      "clientId": 23614,
+      "clientName": "Alnatura Produktions- und Handels GmbH, Invoice Address",
+      "orderName": "S39976",
+      "success": true,
+      "metrics": {
+        "precision": 0.125,
+        "recall": 1,
+        "f1Score": 0.2222222222222222,
+        "mae": 300,
+        "wmape": 50,
+        "mape": 50,
+        "bias": -50
+      }
+    },
+    {
+      "clientId": 60207,
+      "clientName": "BIOFRESH BELGIUM NV-SA",
+      "orderName": "S40061",
+      "success": true,
+      "metrics": {
+        "precision": 0.06666666666666667,
+        "recall": 1,
+        "f1Score": 0.125,
+        "mae": 69,
+        "wmape": 127.77777777777777,
+        "mape": 127.77777777777777,
+        "bias": 127.77777777777777
+      }
+    },
+    {
+      "clientId": 3547,
+      "clientName": "K&F DE PAUW",
+      "orderName": "S40269",
+      "success": true,
+      "metrics": {
+        "precision": 0.09090909090909091,
+        "recall": 1,
+        "f1Score": 0.16666666666666669,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 24304,
+      "clientName": "Ferme A l'arbre",
+      "orderName": "S40066",
+      "success": true,
+      "metrics": {
+        "precision": 0.39285714285714285,
+        "recall": 0.8461538461538461,
+        "f1Score": 0.5365853658536585,
+        "mae": 0.6363636363636364,
+        "wmape": 38.88888888888889,
+        "mape": 34.848484848484844,
+        "bias": -16.666666666666664
+      }
+    },
+    {
+      "clientId": 99,
+      "clientName": "La Fermette Godelaine de Saint-Georges",
+      "orderName": "S39917",
+      "success": true,
+      "metrics": {
+        "precision": 0.3225806451612903,
+        "recall": 0.5882352941176471,
+        "f1Score": 0.41666666666666663,
+        "mae": 0.1,
+        "wmape": 10,
+        "mape": 10,
+        "bias": 10
+      }
+    },
+    {
+      "clientId": 60579,
+      "clientName": "Wandercoop",
+      "orderName": "S40360",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 0.6666666666666666,
+        "wmape": 35.294117647058826,
+        "mape": 31.48148148148148,
+        "bias": 11.76470588235294
+      }
+    },
+    {
+      "clientId": 68258,
+      "clientName": "TERROIRIST, Thomas",
+      "orderName": "S40359",
+      "success": true,
+      "metrics": {
+        "precision": 0.6153846153846154,
+        "recall": 1,
+        "f1Score": 0.761904761904762,
+        "mae": 2.875,
+        "wmape": 67.64705882352942,
+        "mape": 100.10416666666666,
+        "bias": -38.23529411764706
+      }
+    },
+    {
+      "clientId": 3460,
+      "clientName": "UPFRESH - HUPPA",
+      "orderName": "S40212",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 80,
+        "wmape": 100,
+        "mape": 100,
+        "bias": 100
+      }
+    },
+    {
+      "clientId": 3863,
+      "clientName": "C.F. GRELL NACHF. NATURKOST",
+      "orderName": "S39980",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1Score": 0.5,
+        "mae": 32,
+        "wmape": 66.66666666666666,
+        "mape": 62.5,
+        "bias": -66.66666666666666
+      }
+    },
+    {
+      "clientId": 3755,
+      "clientName": "BVBA DRINK & FOOD",
+      "orderName": "S39981",
+      "success": true,
+      "metrics": {
+        "precision": 0.6,
+        "recall": 1,
+        "f1Score": 0.7499999999999999,
+        "mae": 0.6666666666666666,
+        "wmape": 2.380952380952381,
+        "mape": 33.333333333333336,
+        "bias": -2.380952380952381
+      }
+    },
+    {
+      "clientId": 3875,
+      "clientName": "E.L.D. GMBH",
+      "orderName": "S40277",
+      "success": true,
+      "metrics": {
+        "precision": 1,
+        "recall": 0.5714285714285714,
+        "f1Score": 0.7272727272727273,
+        "mae": 4,
+        "wmape": 5.88235294117647,
+        "mape": 4.166666666666666,
+        "bias": -5.88235294117647
+      }
+    },
+    {
+      "clientId": 3812,
+      "clientName": "ÖKORING HANDELS GMBH",
+      "orderName": "S40248",
+      "success": true,
+      "metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.75,
+        "f1Score": 0.7058823529411765,
+        "mae": 2.6666666666666665,
+        "wmape": 16.666666666666664,
+        "mape": 16.666666666666668,
+        "bias": 16.666666666666664
+      }
+    },
+    {
+      "clientId": 3503,
+      "clientName": "VAN HEES BENELUX GmbH",
+      "orderName": "S40160",
+      "success": true,
+      "metrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    }
+  ]
+}

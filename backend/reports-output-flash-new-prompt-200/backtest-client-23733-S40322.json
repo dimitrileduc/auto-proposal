@@ -1,0 +1,30 @@
+{
+  "clientId": 23733,
+  "clientName": "DELISALADES",
+  "orderName": "S40322",
+  "orderDate": "2025-11-13 12:24:21",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 9,
+    "fn": 1,
+    "precision": 0.4375,
+    "recall": 0.875,
+    "f1Score": 0.5833333333333334,
+    "mae": 2.142857142857143,
+    "wmape": 55.55555555555556,
+    "mape": 57.73809523809524,
+    "bias": 33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 16,
+    "promptTokens": 16949,
+    "completionTokens": 5285,
+    "totalTokens": 22234
+  }
+}

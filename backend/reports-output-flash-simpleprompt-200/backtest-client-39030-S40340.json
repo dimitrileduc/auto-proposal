@@ -1,0 +1,30 @@
+{
+  "clientId": 39030,
+  "clientName": "REWE KARL ESSER Gmbh&CO OHG",
+  "orderName": "S40340",
+  "orderDate": "2025-11-13 12:49:53",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.23076923076923078,
+    "recall": 1,
+    "f1Score": 0.375,
+    "mae": 4.333333333333333,
+    "wmape": 65,
+    "mape": 65.07936507936508,
+    "bias": -65
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 10921,
+    "completionTokens": 3522,
+    "totalTokens": 14443
+  }
+}

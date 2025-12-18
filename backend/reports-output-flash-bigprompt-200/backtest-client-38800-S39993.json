@@ -1,0 +1,30 @@
+{
+  "clientId": 38800,
+  "clientName": "DLL AD FLEMALLE",
+  "orderName": "S39993",
+  "orderDate": "2025-10-29 12:29:32",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 9,
+    "fn": 1,
+    "precision": 0.5909090909090909,
+    "recall": 0.9285714285714286,
+    "f1Score": 0.7222222222222223,
+    "mae": 0.3076923076923077,
+    "wmape": 28.57142857142857,
+    "mape": 26.923076923076923,
+    "bias": 14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 19429,
+    "completionTokens": 3597,
+    "totalTokens": 23026
+  }
+}

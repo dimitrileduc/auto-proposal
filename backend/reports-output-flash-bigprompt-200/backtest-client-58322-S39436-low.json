@@ -1,0 +1,30 @@
+{
+  "clientId": 58322,
+  "clientName": "Lodis bv DLL AD Kessel-lo",
+  "orderName": "S39436",
+  "orderDate": "2025-09-29 06:55:03",
+  "cutoffDate": "2025-09-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1,
+    "wmape": 100,
+    "mape": 100,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 24043,
+    "completionTokens": 4243,
+    "totalTokens": 28286
+  }
+}

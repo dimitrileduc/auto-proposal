@@ -1,0 +1,30 @@
+{
+  "clientId": 38794,
+  "clientName": "DLL AD CHAUDFONTAINE",
+  "orderName": "S40108",
+  "orderDate": "2025-11-04 11:04:51",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.5789473684210527,
+    "recall": 1,
+    "f1Score": 0.7333333333333334,
+    "mae": 0.36363636363636365,
+    "wmape": 33.33333333333333,
+    "mape": 31.818181818181817,
+    "bias": 16.666666666666664
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 17826,
+    "completionTokens": 3281,
+    "totalTokens": 21107
+  }
+}

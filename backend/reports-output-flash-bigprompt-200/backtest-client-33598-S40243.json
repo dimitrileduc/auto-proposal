@@ -1,0 +1,30 @@
+{
+  "clientId": 33598,
+  "clientName": "COLRUYT FOOD RETAIL NV NEW",
+  "orderName": "S40243",
+  "orderDate": "2025-11-12 07:34:47",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 25,
+    "fn": 0,
+    "precision": 0.13793103448275862,
+    "recall": 1,
+    "f1Score": 0.2424242424242424,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 34643,
+    "completionTokens": 6590,
+    "totalTokens": 41233
+  }
+}

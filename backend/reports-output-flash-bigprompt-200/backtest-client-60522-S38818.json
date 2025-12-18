@@ -1,0 +1,30 @@
+{
+  "clientId": 60522,
+  "clientName": "PURE BASTOGNE",
+  "orderName": "S38818",
+  "orderDate": "2025-09-01 06:44:29",
+  "cutoffDate": "2025-08-31 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.2857142857142857,
+    "recall": 1,
+    "f1Score": 0.4444444444444445,
+    "mae": 4,
+    "wmape": 72.72727272727273,
+    "mape": 40,
+    "bias": -72.72727272727273
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 5781,
+    "completionTokens": 1042,
+    "totalTokens": 6823
+  }
+}

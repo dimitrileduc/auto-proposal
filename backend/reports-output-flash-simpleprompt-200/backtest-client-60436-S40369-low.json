@@ -1,0 +1,30 @@
+{
+  "clientId": 60436,
+  "clientName": "LE CELLIER DU BAUDET - épicerie",
+  "orderName": "S40369",
+  "orderDate": "2025-11-14 15:09:27",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.2,
+    "recall": 1,
+    "f1Score": 0.33333333333333337,
+    "mae": 1,
+    "wmape": 50,
+    "mape": 50,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 5968,
+    "completionTokens": 2011,
+    "totalTokens": 7979
+  }
+}

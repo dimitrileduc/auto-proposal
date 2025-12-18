@@ -1,0 +1,30 @@
+{
+  "clientId": 38736,
+  "clientName": "CRF MARKET BEAURAING DEMARS",
+  "orderName": "S40078",
+  "orderDate": "2025-11-04 13:40:54",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 7,
+    "fn": 6,
+    "precision": 0.631578947368421,
+    "recall": 0.6666666666666666,
+    "f1Score": 0.6486486486486486,
+    "mae": 0.6666666666666666,
+    "wmape": 42.10526315789473,
+    "mape": 48.61111111111111,
+    "bias": -31.57894736842105
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 19,
+    "promptTokens": 22762,
+    "completionTokens": 34398,
+    "totalTokens": 57160
+  }
+}

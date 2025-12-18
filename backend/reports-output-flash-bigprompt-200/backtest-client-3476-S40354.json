@@ -1,0 +1,30 @@
+{
+  "clientId": 3476,
+  "clientName": "RETAIL PARTNERS  SA",
+  "orderName": "S40354",
+  "orderDate": "2025-11-13 15:20:17",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.2,
+    "recall": 1,
+    "f1Score": 0.33333333333333337,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1721,
+    "completionTokens": 315,
+    "totalTokens": 2036
+  }
+}

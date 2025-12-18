@@ -187,4 +187,30 @@ export interface OdooClient {
     date_order: string;
     partner_name: string;
   }>;
+
+  /**
+   * Récupère la dernière commande validée d'un client AVANT une date donnée
+   * @param clientId - ID du client
+   * @param referenceDate - Date de référence (format: "YYYY-MM-DD")
+   * @returns Dernière commande avant la date avec { id, name, date_order, partner_name }
+   */
+  getLastClientOrderBeforeDate(clientId: number, referenceDate: string): Promise<{
+    id: number;
+    name: string;
+    date_order: string;
+    partner_name: string;
+  }>;
+
+  /**
+   * Récupère une commande spécifique par son nom
+   * @param orderName - Nom de la commande (ex: "S39729")
+   * @returns Commande avec { id, name, date_order, partner_name, partner_id }
+   */
+  getOrderByName(orderName: string): Promise<{
+    id: number;
+    name: string;
+    date_order: string;
+    partner_name: string;
+    partner_id: number;
+  }>;
 }

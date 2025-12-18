@@ -1,0 +1,30 @@
+{
+  "clientId": 21033,
+  "clientName": "Le Maire Bio",
+  "orderName": "S40348",
+  "orderDate": "2025-11-13 13:20:54",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.14285714285714285,
+    "recall": 1,
+    "f1Score": 0.25,
+    "mae": 1,
+    "wmape": 25,
+    "mape": 25,
+    "bias": 25
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 9443,
+    "completionTokens": 3385,
+    "totalTokens": 12828
+  }
+}

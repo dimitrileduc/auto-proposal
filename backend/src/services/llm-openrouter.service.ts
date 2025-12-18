@@ -5,6 +5,19 @@
  * pour garantir des réponses valides (pas de parsing failures)
  */
 
+// Configuration - facile à changer
+const MODEL = "google/gemini-3-flash-preview";
+// Autres options:
+// - "anthropic/claude-haiku-4.5" ($1/M input, $5/M output)
+// - "anthropic/claude-sonnet-4.5" ($3/M input, $15/M output)
+// - "anthropic/claude-opus-4.5" ($15/M input, $75/M output)
+// - "moonshotai/kimi-k2-thinking" ($0.60/M input, $2.50/M output)
+// - "google/gemini-3-flash-preview" ($0.50/M input, $3.00/M output)
+// - "openai/gpt-4o-mini"
+
+// Type de prompt à utiliser
+const USE_BIG_PROMPT = false;  // true = avec jour_cycle_guidelines et exemples, false = simple
+
 export interface LLMPrediction {
   analysis: {
     frequency_pattern: string;
@@ -88,7 +101,8 @@ const predictionJsonSchema = {
     },
     recommended_quantity: {
       type: "integer",
-      description: "LA PRÉDICTION FINALE - quantité à commander (doit être un entier >= 1)"
+      minimum: 0,
+      description: "LA PRÉDICTION FINALE - quantité à commander (0 si pas de besoin)"
     },
     confidence: {
       type: "string",
@@ -116,8 +130,6 @@ export async function predictWithLLM(
     throw new Error("OPENROUTER_API_KEY not configured");
   }
 
-  // Moonshot AI Kimi K2 Thinking supporte structured outputs
-  const model = "moonshotai/kimi-k2-thinking";
   const currentDate = input.currentDate || new Date().toISOString().split("T")[0];
 
   // Helper pour formatter avec jour de la semaine
@@ -136,11 +148,19 @@ export async function predictWithLLM(
 
   const currentDayName = new Date(currentDate).toLocaleDateString('fr-FR', { weekday: 'long' });
 
-  const prompt = `Tu es un Expert Supply Chain Senior spécialisé en Agroalimentaire B2B.
-Ton objectif est de prédire la prochaine quantité de commande avec la PLUS GRANDE PRÉCISION possible (minimiser le MAPE) pour le ${currentDate} (${currentDayName}).
+  // Sélection du prompt selon la configuration
+  const prompt = USE_BIG_PROMPT
+    ? // PROMPT COMPLET (avec jour_cycle_guidelines et exemples)
+    `Tu es un Expert Supply Chain Senior spécialisé en Agroalimentaire B2B.
+Ton objectif est de prédire SI le client va commander ce produit dans les 30 PROCHAINS JOURS (du ${currentDate} au +30j) ET si oui, quelle quantité pour LA PROCHAINE COMMANDE UNIQUEMENT.
 
 PRODUIT: ${input.productName}
-DATE DE PRÉDICTION: ${currentDate} (${currentDayName})
+DATE ACTUELLE: ${currentDate} (${currentDayName})
+PÉRIODE D'ANALYSE: Les 30 prochains jours à partir d'aujourd'hui
+
+⚠️ RÈGLE CRITIQUE: Tu dois prédire la quantité de LA PROCHAINE COMMANDE SEULEMENT.
+NE JAMAIS cumuler plusieurs commandes même si le cycle suggère 2+ commandes dans les 30j.
+Exemple: Si cycle = 14j et 2 commandes prévues dans 30j → retourne la quantité d'UNE SEULE commande, pas le total des deux !
 
 <data_context>
 Voici l'historique des commandes. Le format est: Date (Jour) | Quantité.
@@ -186,35 +206,199 @@ Analyse les données étape par étape AVANT de conclure (Chain of Thought) :
    - **Pour données limitées** (2-3 points):
      → Privilégie dernière valeur si cohérente avec la tendance
    - **Avec données N-1 pertinentes**:
-     → Baseline N-1 × coefficient tendance actuelle
+     → Volume N-1 × coefficient tendance actuelle
    - **Pour rupture de tendance nette**:
      → Dernière valeur > moyenne historique
 
    Règle d'Or : En agro B2B, privilégie PRÉCISION sur prudence.
    Ne surgonfle pas "au cas où" → vise la quantité la plus PROBABLE.
+
+   IMPORTANT - RETOURNER 0:
+   Tu DOIS retourner recommended_quantity = 0 si tu prédis PAS de commande dans les 30 prochains jours :
+   - Dernière commande très récente (ex: il y a 5j) + cycle habituel > 30j
+   - Pattern montre que prochaine commande sera après 30j (ex: commande mensuelle, on est début de mois)
+   - Stock actuel couvre largement plus de 30j selon la consommation
+   - Produit en déclin/arrêté (pas commandé depuis longtemps)
+
+   RETOURNER 0 = "Pas de commande prévue dans les 30 prochains jours"
+   RETOURNER >0 = "Commande prévue dans les 30j, voici la quantité probable"
 </reasoning_guidelines>
 
 <exemples_raisonnement>
-EXEMPLE 1 - Jour hors cycle:
-- Historique: Commandes le vendredi (5u, 5u, 5u)
-- Date de prédiction: Samedi
-- CORRECT: "Le samedi est hors cycle habituel (vendredi). La prochaine commande sera vendredi prochain, probablement 5u comme les 3 dernières."
-- INCORRECT: "La prédiction tombe un samedi, donc 0u car hors cycle."
+EXEMPLE 1 - Commande récente, cycle > 30j:
+- Historique: Commandes tous les 45j environ (300u, 300u, 300u)
+- Dernière commande: Il y a 10 jours
+- ANALYSE: 10j + 45j cycle = 55j jusqu'à prochaine commande
+- CORRECT: "Prochaine commande prévue dans ~35j (>30j) → retourner 0"
+- INCORRECT: "Le produit est commandé régulièrement → retourner 300u"
 
 EXEMPLE 2 - Outlier vs tendance:
 - Historique: [10u, 12u, 40u, 11u, 13u]
 - CORRECT: "Le pic de 40u est isolé entre des valeurs stables (10-13u). C'est un outlier probable (promotion/erreur)."
 - INCORRECT: "Les valeurs oscillent entre 10u et 40u, je prévois donc 25u (moyenne)."
 
-EXEMPLE 3 - Données éparses:
-- Données N-1: [8u en mai 2024]
-- Données récentes: [5u en mai 2025, 5u en juin 2025]
-- CORRECT: "Bien que N-1 montre 8u, les données récentes sont stables à 5u. Je privilégie la tendance récente avec 5u."
-- INCORRECT: "Avec moyenne entre récent et N-1: (8+5+5)/3 = 6u"
+EXEMPLE 3 - Commande imminente, cycle court:
+- Historique: Commandes tous les 14j (32u, 32u, 32u)
+- Dernière commande: Il y a 10 jours
+- ANALYSE: Cycle 14j suggère 2 commandes dans 30j (jour 4 et jour 18)
+- CORRECT: "Prochaine commande dans ~4j → retourner 32u (UNE SEULE commande)"
+- INCORRECT: "2 commandes dans 30j → retourner 64u" (JAMAIS cumuler !)
 </exemples_raisonnement>
 
+<output_format>
 Remplis d'abord l'objet "analysis" pour structurer ton raisonnement.
-Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
+Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.
+
+Le JSON doit suivre exactement le schéma fourni avec :
+- analysis.frequency_pattern : Pattern temporel identifié
+- analysis.detected_outliers : Liste des quantités exceptionnelles
+- analysis.seasonality_impact : "none", "weak" ou "strong"
+- analysis.trend_direction : Direction observée
+- analysis.day_cycle_analysis : Analyse du jour de commande habituel vs jour demandé
+- baseline_quantity : Demande de fond théorique
+- recommended_quantity : TA PRÉDICTION FINALE (entier ≥ 0)
+- confidence : "low", "medium" ou "high"
+- reasoning : Synthèse de ton raisonnement
+</output_format>`
+    : // PROMPT SIMPLE avec Chain of Thought structuré
+    `Tu es un expert Senior en Supply Chain Agroalimentaire B2B.
+Ton objectif est de prédire SI le client va commander ce produit dans les 30 PROCHAINS JOURS ET si oui, quelle quantité pour LA PROCHAINE COMMANDE UNIQUEMENT.
+
+CONTEXTE PRODUIT:
+- Nom: ${input.productName}
+- Date actuelle: ${currentDate} (${currentDayName})
+- Période d'analyse: Les 30 prochains jours (du ${currentDate} au +30j)
+- Secteur: Agroalimentaire B2B (saisonnalité forte, promotions fréquentes)
+
+⚠️ RÈGLE CRITIQUE: Prédire la quantité de LA PROCHAINE COMMANDE SEULEMENT.
+NE JAMAIS cumuler même si le cycle suggère plusieurs commandes dans les 30j !
+
+<historique_commandes>
+Format: Date (Jour) | Quantité
+Note les jours de la semaine pour repérer les cycles hebdomadaires.
+
+--- ANNÉE PRÉCÉDENTE (N-1) ---
+${lastYearTable}
+
+--- 3 DERNIERS MOIS (Période Récente) ---
+${recentTable}
+</historique_commandes>
+
+<chain_of_thought>
+TA MISSION - Analyse en 4 étapes structurées:
+
+ÉTAPE 1: DE-EVENTING (Nettoyage des outliers)
+Identifie les commandes anormales qui ressemblent à des événements ponctuels:
+- Promotions (quantités > 2x la moyenne)
+- Stockage préventif (gros pic isolé)
+- Corrections de stock
+→ Ignore ces outliers pour estimer la "demande de fond réelle"
+
+ÉTAPE 2: SAISONNALITÉ
+Analyse si le produit montre des variations saisonnières:
+- Y a-t-il des pics récurrents à certaines périodes? (été, hiver, fêtes)
+- Compare avec N-1: pattern similaire à la même période?
+- Sommes-nous actuellement en période haute ou basse?
+→ Ajuste ta prédiction selon la période actuelle
+
+ÉTAPE 3: TENDANCE RÉCENTE
+Compare les 3-4 dernières commandes vs les précédentes:
+- Volume en hausse, stable, ou en baisse?
+- Fréquence de commande en accélération ou ralentissement?
+- Y a-t-il rupture du rythme habituel (rattrapage à prévoir)?
+- Identifie le jour de commande habituel vs date demandée
+→ Applique un coefficient de tendance (+X%, stable, -X%)
+
+ÉTAPE 4: RECOMMANDATION FINALE (Fenêtre 30 jours)
+D'abord, évalue: "Le client va-t-il commander dans les 30 prochains jours ?"
+- Calcule le temps depuis la dernière commande
+- Estime le cycle de commande habituel (médiane des intervalles)
+- Si dernière_commande + cycle_habituel > 30j → Retourne 0 (pas de commande prévue)
+- Si dernière_commande + cycle_habituel ≤ 30j → Retourne la quantité de LA PROCHAINE commande
+
+Quantité finale si commande prévue (UNE SEULE COMMANDE):
+- Base: Demande de fond habituelle par commande
+- NE JAMAIS multiplier par le nombre de commandes possibles dans 30j
+- Exemple: Cycle 14j = 2 commandes dans 30j → retourne quand même 32u, PAS 64u !
+- Résultat: Quantité d'UNE SEULE commande
+
+RÈGLE ABSOLUE:
+- RETOURNER 0 = "Pas de commande prévue dans les 30 prochains jours"
+- RETOURNER >0 = "Quantité de LA PROCHAINE commande (pas le cumul)"
+
+Ne cumule JAMAIS plusieurs commandes même si le cycle court le suggère.
+</chain_of_thought>
+
+<output_format>
+Remplis d'abord l'objet "analysis" en suivant les 4 étapes du Chain of Thought.
+Ensuite seulement, déduis "recommended_quantity" comme conclusion logique.
+
+Le JSON doit suivre exactement le schéma fourni avec:
+- analysis.frequency_pattern: Pattern temporel identifié (ÉTAPE 3)
+- analysis.detected_outliers: Liste des quantités exceptionnelles (ÉTAPE 1)
+- analysis.seasonality_impact: "none", "weak" ou "strong" (ÉTAPE 2)
+- analysis.trend_direction: Direction observée (ÉTAPE 3)
+- baseline_quantity: Demande de fond théorique post-nettoyage (ÉTAPE 1)
+- recommended_quantity: TA PRÉDICTION FINALE (ÉTAPE 4) - entier ≥ 0
+- confidence: "low", "medium" ou "high" selon la qualité des données
+- reasoning: Synthèse complète de ton raisonnement en 4 étapes
+</output_format>`;
+
+  // Configuration selon le modèle
+  const isClaudeModel = MODEL.includes("claude");
+  const requestBody: any = {
+    model: MODEL,
+    messages: isClaudeModel ? [
+      {
+        role: "system",
+        content: "Tu es un expert en supply chain. Tu dois ABSOLUMENT utiliser la fonction predict_stock_quantity pour fournir ta réponse structurée."
+      },
+      {
+        role: "user",
+        content: prompt
+      }
+    ] : [
+      {
+        role: "user",
+        content: prompt
+      }
+    ],
+    // Activer le reasoning pour Gemini (force plus de réflexion)
+    reasoning: {
+      effort: "high"  // 80% des tokens pour le reasoning
+    },
+    include_reasoning: true,
+  };
+
+  // Claude utilise tools/function calling, Kimi utilise response_format
+  if (isClaudeModel) {
+    requestBody.tools = [
+      {
+        type: "function",
+        function: {
+          name: "predict_stock_quantity",
+          description: "Prédire la quantité de stock à commander basée sur l'historique",
+          parameters: predictionJsonSchema
+        }
+      }
+    ];
+    requestBody.tool_choice = {
+      type: "function",
+      function: {
+        name: "predict_stock_quantity"
+      }
+    };
+  } else {
+    // Kimi et autres modèles utilisent response_format
+    requestBody.response_format = {
+      type: "json_schema",
+      json_schema: {
+        name: "stock_prediction",
+        strict: true,
+        schema: predictionJsonSchema
+      }
+    };
+  }
 
   try {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -225,25 +409,7 @@ Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
         "HTTP-Referer": "https://github.com/dlstudio/auto-proposal",
         "X-Title": "Auto Proposal Stock Replenishment"
       },
-      body: JSON.stringify({
-        model,
-        messages: [
-          {
-            role: "user",
-            content: prompt
-          }
-        ],
-        include_reasoning: true,
-        // Structured Outputs natifs OpenRouter
-        response_format: {
-          type: "json_schema",
-          json_schema: {
-            name: "stock_prediction",
-            strict: true,
-            schema: predictionJsonSchema
-          }
-        }
-      })
+      body: JSON.stringify(requestBody)
     });
 
     if (!response.ok) {
@@ -255,30 +421,50 @@ Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
 
     // Parse la réponse
     const choice = data.choices?.[0];
-    const content = choice?.message?.content;
     const providerReasoning = choice?.message?.reasoning; // Capture reasoning if available
 
-    if (!content) {
-      throw new Error("No content in OpenRouter response");
-    }
-
     let prediction: LLMPrediction;
-    try {
-      // Nettoyage du contenu avant parsing (parfois le modèle ajoute du texte autour du JSON)
-      // On nettoie aussi les caractères de contrôle potentiellement problématiques (sauf \n \r \t)
-      const jsonContent = content
-        .replace(/```json\n?|\n?```/g, '')
-        .trim();
-      
-      prediction = JSON.parse(jsonContent) as LLMPrediction;
-    } catch (parseError) {
-      console.error("❌ JSON Parse Error. Raw content:", content);
-      // Tentative de nettoyage plus agressif si le premier échec
+
+    // Claude retourne la réponse dans tool_calls, Kimi dans content
+    if (isClaudeModel && choice?.message?.tool_calls) {
+      // Claude avec function calling
+      const toolCall = choice.message.tool_calls[0];
+      if (!toolCall || toolCall.function.name !== "predict_stock_quantity") {
+        throw new Error("Claude did not call the expected function");
+      }
+
       try {
-        const sanitized = content.replace(/[\x00-\x1F\x7F-\x9F]/g, "");
-        prediction = JSON.parse(sanitized) as LLMPrediction;
-      } catch (e) {
-        throw new Error(`Failed to parse JSON response: ${parseError instanceof Error ? parseError.message : String(parseError)}`);
+        // Les arguments sont déjà en string JSON
+        prediction = JSON.parse(toolCall.function.arguments) as LLMPrediction;
+      } catch (parseError) {
+        console.error("❌ Failed to parse Claude function arguments:", toolCall.function.arguments);
+        throw new Error(`Failed to parse Claude function response: ${parseError instanceof Error ? parseError.message : String(parseError)}`);
+      }
+    } else {
+      // Kimi et autres modèles retournent directement le JSON dans content
+      const content = choice?.message?.content;
+
+      if (!content) {
+        throw new Error("No content in OpenRouter response");
+      }
+
+      try {
+        // Nettoyage du contenu avant parsing (parfois le modèle ajoute du texte autour du JSON)
+        // On nettoie aussi les caractères de contrôle potentiellement problématiques (sauf \n \r \t)
+        const jsonContent = content
+          .replace(/```json\n?|\n?```/g, '')
+          .trim();
+
+        prediction = JSON.parse(jsonContent) as LLMPrediction;
+      } catch (parseError) {
+        console.error("❌ JSON Parse Error. Raw content:", content);
+        // Tentative de nettoyage plus agressif si le premier échec
+        try {
+          const sanitized = content.replace(/[\x00-\x1F\x7F-\x9F]/g, "");
+          prediction = JSON.parse(sanitized) as LLMPrediction;
+        } catch (e) {
+          throw new Error(`Failed to parse JSON response: ${parseError instanceof Error ? parseError.message : String(parseError)}`);
+        }
       }
     }
 
@@ -295,7 +481,7 @@ Ensuite seulement, déduis la "recommended_quantity" comme conclusion logique.`;
         completionTokens,
         totalTokens
       },
-      model,
+      model: MODEL,
       provider: "openrouter",
       inputPrompt: prompt,
       providerReasoning

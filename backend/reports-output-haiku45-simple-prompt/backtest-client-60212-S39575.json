@@ -1,0 +1,30 @@
+{
+  "clientId": 60212,
+  "clientName": "BIOK GASTUCHE",
+  "orderName": "S39575",
+  "orderDate": "2025-10-09 06:38:48",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 15,
+    "fn": 1,
+    "precision": 0.4444444444444444,
+    "recall": 0.9230769230769231,
+    "f1Score": 0.6,
+    "mae": 0.16666666666666666,
+    "wmape": 12.5,
+    "mape": 11.111111111111109,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 10,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 46839,
+    "completionTokens": 18029,
+    "totalTokens": 64868
+  }
+}

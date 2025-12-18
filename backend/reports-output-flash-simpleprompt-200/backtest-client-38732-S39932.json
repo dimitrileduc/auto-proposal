@@ -1,0 +1,30 @@
+{
+  "clientId": 38732,
+  "clientName": "CRF MARKET AUBEL SA AGBA",
+  "orderName": "S39932",
+  "orderDate": "2025-10-27 10:41:25",
+  "cutoffDate": "2025-10-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 22,
+    "fp": 20,
+    "fn": 0,
+    "precision": 0.5238095238095238,
+    "recall": 1,
+    "f1Score": 0.6875000000000001,
+    "mae": 1.2272727272727273,
+    "wmape": 49.09090909090909,
+    "mape": 50.75757575757575,
+    "bias": -23.636363636363637
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 16
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 23083,
+    "completionTokens": 8571,
+    "totalTokens": 31654
+  }
+}

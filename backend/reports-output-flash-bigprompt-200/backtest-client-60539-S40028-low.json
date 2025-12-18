@@ -1,0 +1,30 @@
+{
+  "clientId": 60539,
+  "clientName": "SODEXO SAFRAN BE3723",
+  "orderName": "S40028",
+  "orderDate": "2025-10-30 13:17:36",
+  "cutoffDate": "2025-10-29 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 10142,
+    "completionTokens": 2002,
+    "totalTokens": 12144
+  }
+}

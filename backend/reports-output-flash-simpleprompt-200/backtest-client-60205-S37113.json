@@ -1,0 +1,30 @@
+{
+  "clientId": 60205,
+  "clientName": "BIO VRAC UCCLE",
+  "orderName": "S37113",
+  "orderDate": "2025-05-28 08:11:24",
+  "cutoffDate": "2025-05-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.46153846153846156,
+    "recall": 1,
+    "f1Score": 0.631578947368421,
+    "mae": 1.1666666666666667,
+    "wmape": 10.294117647058822,
+    "mape": 10.297619047619047,
+    "bias": -10.294117647058822
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 8787,
+    "completionTokens": 3196,
+    "totalTokens": 11983
+  }
+}

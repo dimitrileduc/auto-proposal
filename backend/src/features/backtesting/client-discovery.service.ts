@@ -20,6 +20,7 @@ interface ClientOrderCount {
  * @param odooConfig - Configuration Odoo (url, db, username, password)
  * @param count - Nombre de clients à retourner (défaut: 50)
  * @param year - Année pour filtrer les commandes (défaut: 2025)
+ * @param referenceDate - Date de référence pour chercher les commandes (optionnel)
  * @returns Liste des IDs de clients triés par activité
  */
 export async function findTopBacktestClients(
@@ -30,25 +31,38 @@ export async function findTopBacktestClients(
     password: string;
   },
   count: number = 50,
-  year: number = 2025
+  year: number = 2025,
+  referenceDate?: string
 ): Promise<number[]> {
-  console.log(`\n🔍 Auto-discovering top ${count} clients with ${year} orders and history...`);
+  const refDateInfo = referenceDate ? ` (before ${referenceDate})` : "";
+  console.log(`\n🔍 Auto-discovering top ${count} clients with ${year} orders${refDateInfo} and history...`);
 
   // Créer le client Odoo XML-RPC
   const odoo = new XmlRpcOdoo(odooConfig);
 
-  // 1. Rechercher toutes les commandes de l'année
-  console.log(`   Fetching ${year} orders...`);
-  const orders = await odoo.searchRead("sale.order", [
+  // 1. Rechercher toutes les commandes de l'année (ou avant referenceDate si fournie)
+  const filters: any[] = [
     ["date_order", ">=", `${year}-01-01`],
-    ["date_order", "<", `${year + 1}-01-01`],
     ["state", "in", ["sale", "done"]]
-  ], {
+  ];
+
+  if (referenceDate) {
+    // Si referenceDate fournie, chercher commandes AVANT cette date
+    filters.push(["date_order", "<=", referenceDate]);
+    console.log(`   Fetching orders before ${referenceDate}...`);
+  } else {
+    // Sinon, chercher toutes les commandes de l'année
+    filters.push(["date_order", "<", `${year + 1}-01-01`]);
+    console.log(`   Fetching ${year} orders...`);
+  }
+
+  const orders = await odoo.searchRead("sale.order", filters, {
     fields: ["partner_id", "date_order", "name"],
     limit: 10000
   });
 
-  console.log(`   Found ${orders.length} orders in ${year}`);
+  const dateContext = referenceDate ? `before ${referenceDate}` : `in ${year}`;
+  console.log(`   Found ${orders.length} orders ${dateContext}`);
 
   // 2. Grouper par client
   const clientOrderMap = new Map<number, ClientOrderCount>();

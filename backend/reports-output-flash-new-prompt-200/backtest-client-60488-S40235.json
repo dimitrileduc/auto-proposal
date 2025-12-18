@@ -1,0 +1,30 @@
+{
+  "clientId": 60488,
+  "clientName": "MDH FOODSERVICE",
+  "orderName": "S40235",
+  "orderDate": "2025-11-12 09:20:02",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 19.5,
+    "wmape": 78,
+    "mape": 77.5,
+    "bias": -78
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3664,
+    "completionTokens": 1314,
+    "totalTokens": 4978
+  }
+}

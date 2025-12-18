@@ -1,0 +1,30 @@
+{
+  "clientId": 3503,
+  "clientName": "VAN HEES BENELUX GmbH",
+  "orderName": "S40160",
+  "orderDate": "2025-11-06 07:50:01",
+  "cutoffDate": "2025-11-05 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 114,
+    "wmape": 86.36363636363636,
+    "mape": 86.36363636363636,
+    "bias": -86.36363636363636
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1198,
+    "completionTokens": 334,
+    "totalTokens": 1532
+  }
+}

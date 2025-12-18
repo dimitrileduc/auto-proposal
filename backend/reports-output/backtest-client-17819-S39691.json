@@ -1,0 +1,30 @@
+{
+  "clientId": 17819,
+  "clientName": "Tirtiaux Fruits srl",
+  "orderName": "S39691",
+  "orderDate": "2025-10-14 13:40:25",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 22,
+    "fp": 7,
+    "fn": 8,
+    "precision": 0.7586206896551724,
+    "recall": 0.7333333333333333,
+    "f1Score": 0.7457627118644068,
+    "mae": 0.5909090909090909,
+    "wmape": 46.42857142857143,
+    "mape": 50.75757575757575,
+    "bias": -10.714285714285714
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 13
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 34858,
+    "completionTokens": 52940,
+    "totalTokens": 87798
+  }
+}

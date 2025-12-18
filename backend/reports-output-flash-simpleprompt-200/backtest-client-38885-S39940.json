@@ -1,0 +1,30 @@
+{
+  "clientId": 38885,
+  "clientName": "E CENTER ENGELS WIDDERSDORF",
+  "orderName": "S39940",
+  "orderDate": "2025-10-28 07:10:30",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.3125,
+    "recall": 1,
+    "f1Score": 0.47619047619047616,
+    "mae": 1.2,
+    "wmape": 42.857142857142854,
+    "mape": 43.33333333333333,
+    "bias": -28.57142857142857
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 7591,
+    "completionTokens": 2262,
+    "totalTokens": 9853
+  }
+}

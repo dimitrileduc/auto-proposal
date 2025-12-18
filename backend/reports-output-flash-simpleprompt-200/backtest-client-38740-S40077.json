@@ -1,0 +1,30 @@
+{
+  "clientId": 38740,
+  "clientName": "CRF MARKET EMBOURG DESADIS",
+  "orderName": "S40077",
+  "orderDate": "2025-11-04 07:10:58",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 16,
+    "fp": 19,
+    "fn": 0,
+    "precision": 0.45714285714285713,
+    "recall": 1,
+    "f1Score": 0.6274509803921569,
+    "mae": 0.3125,
+    "wmape": 25,
+    "mape": 31.25,
+    "bias": 25
+  },
+  "distribution": {
+    "exactMatch": 11,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 18852,
+    "completionTokens": 5503,
+    "totalTokens": 24355
+  }
+}

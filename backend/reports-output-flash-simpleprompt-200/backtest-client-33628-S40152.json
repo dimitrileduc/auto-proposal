@@ -1,0 +1,30 @@
+{
+  "clientId": 33628,
+  "clientName": "LIDL BELGIE GMBH",
+  "orderName": "S40152",
+  "orderDate": "2025-11-05 14:53:47",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 256,
+    "wmape": 66.66666666666666,
+    "mape": 166.66666666666666,
+    "bias": 8.333333333333332
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 3334,
+    "completionTokens": 1019,
+    "totalTokens": 4353
+  }
+}

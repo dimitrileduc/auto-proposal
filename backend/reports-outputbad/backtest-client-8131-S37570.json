@@ -1,0 +1,30 @@
+{
+  "clientId": 8131,
+  "clientName": "ILIS    SA, FRANCESCO LOZANO",
+  "orderName": "S37570",
+  "orderDate": "2025-06-20 08:53:32",
+  "cutoffDate": "2025-06-19 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1Score": 0.7692307692307693,
+    "mae": 145.4,
+    "wmape": 71.55511811023622,
+    "mape": 48,
+    "bias": -71.55511811023622
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 8845,
+    "completionTokens": 16375,
+    "totalTokens": 25220
+  }
+}

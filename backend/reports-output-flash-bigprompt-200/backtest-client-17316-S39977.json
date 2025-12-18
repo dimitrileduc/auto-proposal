@@ -1,0 +1,30 @@
+{
+  "clientId": 17316,
+  "clientName": "CARREFOUR BELGIUM SA, HYPER TIENEN",
+  "orderName": "S39977",
+  "orderDate": "2025-10-29 07:08:10",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 7,
+    "fn": 2,
+    "precision": 0.2222222222222222,
+    "recall": 0.5,
+    "f1Score": 0.30769230769230765,
+    "mae": 0.5,
+    "wmape": 50,
+    "mape": 50,
+    "bias": 50
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 20228,
+    "completionTokens": 4510,
+    "totalTokens": 24738
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 60508,
+  "clientName": "PAIRI DAIZA stock",
+  "orderName": "S39785",
+  "orderDate": "2025-10-21 07:58:15",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8,
+    "recall": 1,
+    "f1Score": 0.888888888888889,
+    "mae": 7.5,
+    "wmape": 83.33333333333334,
+    "mape": 75,
+    "bias": 33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 859,
+    "completionTokens": 286,
+    "totalTokens": 1145
+  }
+}

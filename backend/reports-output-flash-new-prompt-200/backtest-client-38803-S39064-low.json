@@ -1,0 +1,30 @@
+{
+  "clientId": 38803,
+  "clientName": "DLL AD GERAARDSBERGEN",
+  "orderName": "S39064",
+  "orderDate": "2025-09-08 06:09:55",
+  "cutoffDate": "2025-09-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 2,
+    "wmape": 100,
+    "mape": 100,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 24,
+    "promptTokens": 23031,
+    "completionTokens": 9078,
+    "totalTokens": 32109
+  }
+}

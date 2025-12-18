@@ -1,0 +1,30 @@
+{
+  "clientId": 3577,
+  "clientName": "ITM ALIMENTAIRE BELGIUM",
+  "orderName": "S39716",
+  "orderDate": "2025-10-14 08:27:27",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 100,
+    "wmape": 83.33333333333334,
+    "mape": 87.5,
+    "bias": 56.666666666666664
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 7340,
+    "completionTokens": 3592,
+    "totalTokens": 10932
+  }
+}

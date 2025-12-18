@@ -1,0 +1,30 @@
+{
+  "clientId": 71903,
+  "clientName": "FOODPRINT SRL - FP",
+  "orderName": "S36080",
+  "orderDate": "2025-04-14 08:31:16",
+  "cutoffDate": "2025-04-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 40,
+    "fn": 0,
+    "precision": 0.06976744186046512,
+    "recall": 1,
+    "f1Score": 0.13043478260869565,
+    "mae": 37,
+    "wmape": 49.55357142857143,
+    "mape": 49.404761904761905,
+    "bias": -49.55357142857143
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 9883,
+    "completionTokens": 3394,
+    "totalTokens": 13277
+  }
+}

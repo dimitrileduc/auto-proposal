@@ -242,5 +242,107 @@ export function createJson2Client(): OdooClient {
             );
       }
     },
+
+    async getLastClientOrderBeforeDate(clientId: number, referenceDate: string): Promise<{
+      id: number;
+      name: string;
+      date_order: string;
+      partner_name: string;
+    }> {
+      try {
+        console.log(`\n📊 Fetching last validated order for client ${clientId} before ${referenceDate}...`);
+
+        // Rechercher la dernière commande validée AVANT referenceDate
+        const orders = await odooApiRequest<Array<{
+          id: number;
+          name: string;
+          date_order: string;
+          partner_id: [number, string];
+        }>>(
+          "sale.order/search_read",
+          {
+            domain: [
+              ["partner_id", "=", clientId],
+              ["state", "in", ["sale", "done"]],
+              ["date_order", "<=", referenceDate]  // Ajout de la contrainte de date
+            ],
+            fields: ["name", "date_order", "partner_id"],
+            order: "date_order DESC",
+            limit: 1
+          }
+        );
+
+        if (orders.length === 0) {
+          throw new Error(`No validated order found for client ${clientId} before ${referenceDate}`);
+        }
+
+        const order = orders[0];
+        console.log(`   ✅ Found order: ${order.name} (${order.date_order})`);
+
+        return {
+          id: order.id,
+          name: order.name,
+          date_order: order.date_order,
+          partner_name: order.partner_id[1]
+        };
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(
+              `Erreur lors de la récupération de la dernière commande du client ${clientId} avant ${referenceDate}: ${error}`
+            );
+      }
+    },
+
+    async getOrderByName(orderName: string): Promise<{
+      id: number;
+      name: string;
+      date_order: string;
+      partner_name: string;
+      partner_id: number;
+    }> {
+      try {
+        console.log(`\n📊 Fetching order ${orderName}...`);
+
+        // Rechercher la commande par son nom
+        const orders = await odooApiRequest<Array<{
+          id: number;
+          name: string;
+          date_order: string;
+          partner_id: [number, string];
+        }>>(
+          "sale.order/search_read",
+          {
+            domain: [
+              ["name", "=", orderName],
+              ["state", "in", ["sale", "done"]]
+            ],
+            fields: ["name", "date_order", "partner_id"],
+            limit: 1
+          }
+        );
+
+        if (orders.length === 0) {
+          throw new Error(`Order ${orderName} not found or not validated`);
+        }
+
+        const order = orders[0];
+        console.log(`   ✅ Found order: ${order.name} (${order.date_order}) for ${order.partner_id[1]}`);
+
+        return {
+          id: order.id,
+          name: order.name,
+          date_order: order.date_order,
+          partner_name: order.partner_id[1],
+          partner_id: order.partner_id[0]
+        };
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(
+              `Erreur lors de la récupération de la commande ${orderName}: ${error}`
+            );
+      }
+    },
   };
 }

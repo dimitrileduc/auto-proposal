@@ -1,0 +1,30 @@
+{
+  "clientId": 33821,
+  "clientName": "EMBALDIF SARL",
+  "orderName": "S40114",
+  "orderDate": "2025-11-05 12:03:01",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1,
+    "recall": 0.6666666666666666,
+    "f1Score": 0.8,
+    "mae": 2.5,
+    "wmape": 41.66666666666667,
+    "mape": 105,
+    "bias": 41.66666666666667
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 1994,
+    "completionTokens": 928,
+    "totalTokens": 2922
+  }
+}

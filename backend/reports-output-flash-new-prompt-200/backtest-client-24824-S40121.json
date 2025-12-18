@@ -1,0 +1,30 @@
+{
+  "clientId": 24824,
+  "clientName": "KOCKARTZ Kockado GmbH (Filiale Eynatten)",
+  "orderName": "S40121",
+  "orderDate": "2025-11-04 14:43:19",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.75,
+    "recall": 1,
+    "f1Score": 0.8571428571428571,
+    "mae": 2.3333333333333335,
+    "wmape": 70,
+    "mape": 83.33333333333333,
+    "bias": 70
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 3124,
+    "completionTokens": 1334,
+    "totalTokens": 4458
+  }
+}

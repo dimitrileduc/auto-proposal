@@ -1,0 +1,30 @@
+{
+  "clientId": 8144,
+  "clientName": "DELISALADES, Jean-Luc Durré",
+  "orderName": "S39732",
+  "orderDate": "2025-10-15 07:52:35",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 2,
+    "wmape": 5,
+    "mape": 5,
+    "bias": -5
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 4525,
+    "completionTokens": 1704,
+    "totalTokens": 6229
+  }
+}

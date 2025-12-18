@@ -1,0 +1,30 @@
+{
+  "clientId": 3875,
+  "clientName": "E.L.D. GMBH",
+  "orderName": "S39579",
+  "orderDate": "2025-10-06 12:04:21",
+  "cutoffDate": "2025-10-05 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 112,
+    "wmape": 58.333333333333336,
+    "mape": 58.333333333333336,
+    "bias": -58.333333333333336
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 5813,
+    "completionTokens": 8603,
+    "totalTokens": 14416
+  }
+}

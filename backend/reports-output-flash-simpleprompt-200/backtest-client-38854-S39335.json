@@ -1,0 +1,30 @@
+{
+  "clientId": 38854,
+  "clientName": "DLL PROXY FERRIERES DELCOU",
+  "orderName": "S39335",
+  "orderDate": "2025-11-07 11:18:04",
+  "cutoffDate": "2025-11-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 25,
+    "fn": 2,
+    "precision": 0.13793103448275862,
+    "recall": 0.6666666666666666,
+    "f1Score": 0.2285714285714286,
+    "mae": 6.75,
+    "wmape": 77.14285714285715,
+    "mape": 77.67857142857143,
+    "bias": -77.14285714285715
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 25,
+    "promptTokens": 20092,
+    "completionTokens": 6251,
+    "totalTokens": 26343
+  }
+}

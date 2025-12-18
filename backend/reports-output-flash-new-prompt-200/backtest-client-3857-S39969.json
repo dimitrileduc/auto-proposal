@@ -1,0 +1,30 @@
+{
+  "clientId": 3857,
+  "clientName": "3B TRADING & CONSULTING GmbH",
+  "orderName": "S39969",
+  "orderDate": "2025-10-28 15:08:20",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 21,
+    "wmape": 41.584158415841586,
+    "mape": 44.08119658119658,
+    "bias": -41.584158415841586
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 2180,
+    "completionTokens": 653,
+    "totalTokens": 2833
+  }
+}

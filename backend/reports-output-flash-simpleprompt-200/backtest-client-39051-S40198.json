@@ -1,0 +1,30 @@
+{
+  "clientId": 39051,
+  "clientName": "RIXALIM SA 9881",
+  "orderName": "S40198",
+  "orderDate": "2025-11-07 13:51:16",
+  "cutoffDate": "2025-11-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 6,
+    "fn": 1,
+    "precision": 0.25,
+    "recall": 0.6666666666666666,
+    "f1Score": 0.36363636363636365,
+    "mae": 4.5,
+    "wmape": 64.28571428571429,
+    "mape": 64.28571428571428,
+    "bias": -64.28571428571429
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 8262,
+    "completionTokens": 2794,
+    "totalTokens": 11056
+  }
+}

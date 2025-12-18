@@ -1,0 +1,30 @@
+{
+  "clientId": 60210,
+  "clientName": "BIOK BOIS DE VILLERS",
+  "orderName": "S39948",
+  "orderDate": "2025-10-28 07:20:57",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 18,
+    "fp": 7,
+    "fn": 1,
+    "precision": 0.72,
+    "recall": 0.9473684210526315,
+    "f1Score": 0.8181818181818181,
+    "mae": 0.7222222222222222,
+    "wmape": 37.142857142857146,
+    "mape": 33.98148148148148,
+    "bias": 2.857142857142857
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 9
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 30700,
+    "completionTokens": 6147,
+    "totalTokens": 36847
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38785,
+  "clientName": "DLL AD BATTICE",
+  "orderName": "S40133",
+  "orderDate": "2025-11-05 10:30:05",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 19,
+    "fp": 4,
+    "fn": 1,
+    "precision": 0.8260869565217391,
+    "recall": 0.95,
+    "f1Score": 0.8837209302325583,
+    "mae": 0.7368421052631579,
+    "wmape": 37.83783783783784,
+    "mape": 33.771929824561404,
+    "bias": -21.62162162162162
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 11
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 12032,
+    "completionTokens": 4641,
+    "totalTokens": 16673
+  }
+}

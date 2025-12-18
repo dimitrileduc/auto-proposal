@@ -1,0 +1,30 @@
+{
+  "clientId": 60283,
+  "clientName": "DELITRAITEUR",
+  "orderName": "S39542",
+  "orderDate": "2025-10-03 13:14:16",
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 3,
+    "fn": 1,
+    "precision": 0.7,
+    "recall": 0.875,
+    "f1Score": 0.7777777777777777,
+    "mae": 28.142857142857142,
+    "wmape": 77.25490196078432,
+    "mape": 72.47165532879819,
+    "bias": -59.21568627450981
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 5584,
+    "completionTokens": 1910,
+    "totalTokens": 7494
+  }
+}

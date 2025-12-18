@@ -353,6 +353,12 @@ export async function calculateReplenishmentNeeds(
       continue;
     }
 
+    // Si LLM dit 0 ET confidence high, on fait confiance
+    if (finalQuantity === 0 && quantitySource === 'llm' && llmResult && llmResult.prediction.confidence === 'high') {
+      console.log(`     ❌ SKIP: LLM dit 0 avec high confidence (pas de besoin détecté)`);
+      continue;
+    }
+
     console.log(`     ✅ TRIGGER: Risque de rupture détecté!`);
     console.log(`     ✅ À COMMANDER: ${finalQuantity} unités`);
 

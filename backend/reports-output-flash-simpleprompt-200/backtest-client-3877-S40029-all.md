@@ -1,0 +1,264 @@
+# Rapport Backtest - Client ZELECTED FOODS
+
+## Contexte
+
+- **Client** : ZELECTED FOODS (ID: 3877)
+- **Commande réelle** : S40029
+- **Date commande** : 2025-10-30 13:37:56
+- **Date cutoff système** : 2025-10-29 00:00:00
+- **Jours d'avance** : 1j
+
+
+### 🤖 Usage LLM
+
+- **Appels**: 3
+- **Tokens**: 2,762 input + 859 output = 3,621 total
+
+
+---
+
+## Métriques Globales
+
+### Niveau Produit (Détection)
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **Précision** | 33.3% | 3 produits prédits, 1 corrects |
+| **Rappel** | 33.3% | 3 produits réels, 1 détectés |
+| **F1-Score** | 33.3% | Score équilibré global |
+
+<details>
+<summary>Comment est calculée la Précision ?</summary>
+
+**En simple** : Sur 10 produits prédits, combien sont vraiment commandés ?
+
+**Calcul** : Précision = True Positives ÷ (True Positives + False Positives)
+
+**Exemple** : Si le système prédit 10 produits et que 8 sont commandés → Précision = 80%
+
+**Bon score** : > 80% (peu de fausses alertes)
+</details>
+
+<details>
+<summary>Comment est calculé le Rappel ?</summary>
+
+**En simple** : Sur 10 produits commandés, combien ont été détectés ?
+
+**Calcul** : Rappel = True Positives ÷ (True Positives + False Negatives)
+
+**Exemple** : Si le client commande 10 produits et que 7 sont détectés → Rappel = 70%
+
+**Bon score** : > 80% (peu de besoins manqués)
+</details>
+
+<details>
+<summary>Comment est calculé le F1-Score ?</summary>
+
+**En simple** : Moyenne harmonique entre Précision et Rappel (score équilibré)
+
+**Calcul** : F1 = 2 × (Précision × Rappel) ÷ (Précision + Rappel)
+
+**Pourquoi ?** : On peut avoir 100% de précision mais 50% de rappel. Le F1 combine les deux.
+
+**Bon score** : > 80% (système performant globalement)
+</details>
+
+### Niveau Quantité (Précision)
+
+**⚠️ Important**: Ces métriques sont calculées **uniquement sur les True Positives** (produits correctement détectés).
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **MAE** | 282.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 21.7% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 21.7% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 21.7% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
+
+<details>
+<summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
+
+**Exact Match (🎯)** : Quantité prédite = Quantité réelle (erreur = 0)
+- Exemple : Système prédit 10, Client commande 10 → Exact Match
+
+**Partial Match (✅)** : Quantité prédite ≠ Quantité réelle (erreur > 0)
+- Exemple : Système prédit 10, Client commande 12 → Partial Match (erreur = 2 unités)
+
+**Note** : Seuls les True Positives ont un match type (les produits bien détectés)
+</details>
+
+<details>
+<summary>Comment est calculé le MAE ?</summary>
+
+**Nom complet** : Mean Absolute Error (Erreur Absolue Moyenne)
+
+**En simple** : En moyenne, le système se trompe de combien d'unités ?
+
+**Calcul** : MAE = Moyenne des |Qté Prédite - Qté Réelle|
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 2 unités
+- Produit B : Prédit 5, Réel 4 → Erreur = 1 unité
+- Produit C : Prédit 8, Réel 11 → Erreur = 3 unités
+- MAE = (2 + 1 + 3) ÷ 3 = 2 unités
+
+**Bon score** : < 2 unités (très précis)
+</details>
+
+<details>
+<summary>Comment est calculé le MAPE ?</summary>
+
+**Nom complet** : Mean Absolute Percentage Error (Erreur Absolue Moyenne en %)
+
+**En simple** : En moyenne, le système se trompe de combien en pourcentage ?
+
+**Calcul** : MAPE = Moyenne des (|Qté Prédite - Qté Réelle| ÷ Qté Réelle × 100%)
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 16.7%
+- Produit B : Prédit 5, Réel 4 → Erreur = 25%
+- MAPE = (16.7% + 25%) ÷ 2 = 20.8%
+
+**Bon score** : < 30%
+
+**Note** : Moins fiable que MAE pour petites quantités (prédit 2, réel 1 = 100% mais seulement 1 unité d'écart)
+</details>
+
+---
+
+## True Positives (1)
+
+<details>
+<summary>Qu'est-ce qu'un True Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit ET que le client a vraiment commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client commande ce produit
+- → True Positive (bonne prédiction)
+
+**C'est bon** : Plus il y en a, mieux c'est
+</details>
+
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [PF1937] ZF MAYO TAPAS TRUFFES 180GR | 1584 | 1302 | 282.0 | 21.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF1937] ZF MAYO TAPAS TRUFFES 180GR</strong> - LLM: 1584u vs Médiane: 1302u (Réel: 1302u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 1584u (confidence: low)
+- 📊 **Baseline N-1**: 1320u
+- 📊 **Médiane**: 1302u
+- ✅ **Réel commandé**: 1302u
+- 📉 **Erreur LLM**: 282u (21.7%)
+- 📉 **Erreur Médiane**: 0u (0.0%)
+
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Rythme sporadique étendu (tous les 45 à 60 jours)
+- **Saisonnalité**: none
+- **Tendance**: Hausse structurelle importante (doublée vs N-1)
+- **Outliers détectés**: 2640u
+
+**🧠 Raisonnement LLM:**
+L'historique montre une commande irrégulière avec un gap de plus de 80 jours depuis la dernière saisie du 6 août (2640u). La quantité de août était exceptionnellement haute, probablement un stock de sécurité ou une opération spéciale. En 2024, le volume moyen par commande était d'environ 1100u. En appliquant une hausse de tendance conservatrice de +20% sur la moyenne historique (vs les +100% observés sur le dernier point isolé), on arrive à une prédiction de 1584u pour couvrir la période de fin d'année, tout en filtrant l'outlier excessif de 2640u qui ne semble pas soutenable sur un rythme régulier.
+
+</details>
+
+
+
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [PF1937] ZF MAYO TAPAS TRUFFES 180GR</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-06 11:57:24: 2640u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-08-09 09:03:56: 631u
+- 2024-06-24 09:13:05: 1400u
+- 2024-06-07 11:48:13: 1400u
+- 2024-05-28 08:23:44: 1050u
+- 2024-04-18 10:10:28: 792u
+- 2024-02-08 13:56:05: 805u
+- 2024-02-08 13:48:29: 1791u
+- 2024-01-24 12:15:25: 1750u
+- 2024-01-05 12:43:30: 1400u
+- 2023-11-24 12:57:57: 1050u
+
+**✅ Quantité LLM**: 1584u (confidence: low)
+**📊 Quantité Réelle**: 1302u
+
+</details>
+
+
+
+
+---
+
+## False Positives (2)
+
+<details>
+<summary>Qu'est-ce qu'un False Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit MAIS que le client n'a pas commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client ne commande PAS ce produit
+- → False Positive (fausse alerte)
+
+**Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
+</details>
+
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF3269] ZF MAYO SWEET CHILI SRIRACHA 180GR | 788 | Stock prédit: -22.1u (-1j restants) → prédit 788u mais non commandé |
+| [PF2995] ZF PIZZA DRESSING 250ML | 640 | Stock prédit: -53.7u (-8j restants) → prédit 640u mais non commandé |
+
+
+---
+
+## False Negatives (2)
+
+<details>
+<summary>Qu'est-ce qu'un False Negative ?</summary>
+
+**En simple** : Un produit que le système n'a PAS prédit MAIS que le client a commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Pas besoin de commander ce produit"
+- Réalité : Le client commande ce produit
+- → False Negative (besoin manqué)
+
+**Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
+</details>
+
+
+*Produits commandés mais non prédits*
+
+| Produit | Qté commandée | Raison |
+|---------|---------------|--------|
+| [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR | 1302 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+| [CONS070] PALETTE EURO | 6 | Jamais commandé avant dans les 120j précédents (pas d'historique) |
+
+
+---
+
+*Rapport généré automatiquement le 2025-12-18T11:36:06.636Z*

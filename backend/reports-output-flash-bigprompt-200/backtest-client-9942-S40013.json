@@ -1,0 +1,30 @@
+{
+  "clientId": 9942,
+  "clientName": "La fermette",
+  "orderName": "S40013",
+  "orderDate": "2025-10-30 07:17:13",
+  "cutoffDate": "2025-10-29 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 22,
+    "fn": 0,
+    "precision": 0.37142857142857144,
+    "recall": 1,
+    "f1Score": 0.5416666666666666,
+    "mae": 0.3076923076923077,
+    "wmape": 28.57142857142857,
+    "mape": 26.923076923076923,
+    "bias": 14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 37687,
+    "completionTokens": 6922,
+    "totalTokens": 44609
+  }
+}

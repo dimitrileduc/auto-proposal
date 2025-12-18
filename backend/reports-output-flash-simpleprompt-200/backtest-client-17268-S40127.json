@@ -1,0 +1,30 @@
+{
+  "clientId": 17268,
+  "clientName": "CARREFOUR BELGIUM SA, Market Bascule",
+  "orderName": "S40127",
+  "orderDate": "2025-11-05 07:22:50",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.8666666666666667,
+    "recall": 1,
+    "f1Score": 0.9285714285714286,
+    "mae": 0.46153846153846156,
+    "wmape": 25,
+    "mape": 25.641025641025635,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 2235,
+    "completionTokens": 694,
+    "totalTokens": 2929
+  }
+}

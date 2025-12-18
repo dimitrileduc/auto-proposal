@@ -1,0 +1,30 @@
+{
+  "clientId": 38696,
+  "clientName": "AD EYNATTEN DELHAIZE EYNADIS",
+  "orderName": "S39586",
+  "orderDate": "2025-10-07 06:59:59",
+  "cutoffDate": "2025-10-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 41,
+    "fn": 1,
+    "precision": 0.16326530612244897,
+    "recall": 0.8888888888888888,
+    "f1Score": 0.27586206896551724,
+    "mae": 1,
+    "wmape": 44.44444444444444,
+    "mape": 52.08333333333333,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 37,
+    "promptTokens": 37859,
+    "completionTokens": 53357,
+    "totalTokens": 91216
+  }
+}

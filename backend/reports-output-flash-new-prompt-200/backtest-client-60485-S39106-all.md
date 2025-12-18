@@ -1,0 +1,251 @@
+# Rapport Backtest - Client MARMA
+
+## Contexte
+
+- **Client** : MARMA (ID: 60485)
+- **Commande réelle** : S39106
+- **Date commande** : 2025-09-09 12:33:37
+- **Date cutoff système** : 2025-09-08 00:00:00
+- **Jours d'avance** : 1j
+
+
+### 🤖 Usage LLM
+
+- **Appels**: 1
+- **Tokens**: 894 input + 362 output = 1,256 total
+
+
+---
+
+## Métriques Globales
+
+### Niveau Produit (Détection)
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
+| **Rappel** | 100.0% | 1 produits réels, 1 détectés |
+| **F1-Score** | 33.3% | Score équilibré global |
+
+<details>
+<summary>Comment est calculée la Précision ?</summary>
+
+**En simple** : Sur 10 produits prédits, combien sont vraiment commandés ?
+
+**Calcul** : Précision = True Positives ÷ (True Positives + False Positives)
+
+**Exemple** : Si le système prédit 10 produits et que 8 sont commandés → Précision = 80%
+
+**Bon score** : > 80% (peu de fausses alertes)
+</details>
+
+<details>
+<summary>Comment est calculé le Rappel ?</summary>
+
+**En simple** : Sur 10 produits commandés, combien ont été détectés ?
+
+**Calcul** : Rappel = True Positives ÷ (True Positives + False Negatives)
+
+**Exemple** : Si le client commande 10 produits et que 7 sont détectés → Rappel = 70%
+
+**Bon score** : > 80% (peu de besoins manqués)
+</details>
+
+<details>
+<summary>Comment est calculé le F1-Score ?</summary>
+
+**En simple** : Moyenne harmonique entre Précision et Rappel (score équilibré)
+
+**Calcul** : F1 = 2 × (Précision × Rappel) ÷ (Précision + Rappel)
+
+**Pourquoi ?** : On peut avoir 100% de précision mais 50% de rappel. Le F1 combine les deux.
+
+**Bon score** : > 80% (système performant globalement)
+</details>
+
+### Niveau Quantité (Précision)
+
+**⚠️ Important**: Ces métriques sont calculées **uniquement sur les True Positives** (produits correctement détectés).
+
+| Métrique | Valeur | Interprétation |
+|----------|--------|----------------|
+| **MAE** | 14.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 77.8% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 77.8% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 77.8% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
+
+<details>
+<summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
+
+**Exact Match (🎯)** : Quantité prédite = Quantité réelle (erreur = 0)
+- Exemple : Système prédit 10, Client commande 10 → Exact Match
+
+**Partial Match (✅)** : Quantité prédite ≠ Quantité réelle (erreur > 0)
+- Exemple : Système prédit 10, Client commande 12 → Partial Match (erreur = 2 unités)
+
+**Note** : Seuls les True Positives ont un match type (les produits bien détectés)
+</details>
+
+<details>
+<summary>Comment est calculé le MAE ?</summary>
+
+**Nom complet** : Mean Absolute Error (Erreur Absolue Moyenne)
+
+**En simple** : En moyenne, le système se trompe de combien d'unités ?
+
+**Calcul** : MAE = Moyenne des |Qté Prédite - Qté Réelle|
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 2 unités
+- Produit B : Prédit 5, Réel 4 → Erreur = 1 unité
+- Produit C : Prédit 8, Réel 11 → Erreur = 3 unités
+- MAE = (2 + 1 + 3) ÷ 3 = 2 unités
+
+**Bon score** : < 2 unités (très précis)
+</details>
+
+<details>
+<summary>Comment est calculé le MAPE ?</summary>
+
+**Nom complet** : Mean Absolute Percentage Error (Erreur Absolue Moyenne en %)
+
+**En simple** : En moyenne, le système se trompe de combien en pourcentage ?
+
+**Calcul** : MAPE = Moyenne des (|Qté Prédite - Qté Réelle| ÷ Qté Réelle × 100%)
+
+**Exemple** :
+- Produit A : Prédit 10, Réel 12 → Erreur = 16.7%
+- Produit B : Prédit 5, Réel 4 → Erreur = 25%
+- MAPE = (16.7% + 25%) ÷ 2 = 20.8%
+
+**Bon score** : < 30%
+
+**Note** : Moins fiable que MAE pour petites quantités (prédit 2, réel 1 = 100% mais seulement 1 unité d'écart)
+</details>
+
+---
+
+## True Positives (1)
+
+<details>
+<summary>Qu'est-ce qu'un True Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit ET que le client a vraiment commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client commande ce produit
+- → True Positive (bonne prédiction)
+
+**C'est bon** : Plus il y en a, mieux c'est
+</details>
+
+
+*Produits correctement détectés par le système*
+
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
+|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 32 | 18 | 14.0 | 77.8% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+
+
+### 🤖 Détails des Prédictions LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM: 32u vs Médiane: 36u (Réel: 18u)</summary>
+
+**Quantités:**
+- 🤖 **LLM prédit**: 32u (confidence: low)
+- 📊 **Baseline N-1**: 40.5u
+- 📊 **Médiane**: 36u
+- ✅ **Réel commandé**: 18u
+- 📉 **Erreur LLM**: 14u (77.8%)
+- 📉 **Erreur Médiane**: 18u (100.0%)
+
+**🔍 Analyse LLM:**
+- **Pattern temporel**: Irrégulier (intervalle de 24 jours entre les deux points de données)
+- **Saisonnalité**: none
+- **Tendance**: Baisse progressive -20%
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+L'historique est extrêmement limité avec seulement deux commandes enregistrées en juillet 2025 (45u le 01/07 et 36u le 25/07). ÉTAPE 1: Aucune quantité ne semble être un outlier promotionnel classique. ÉTAPE 2: Absence de données N-1 pour confirmer une saisonnalité estivale forte, bien que le produit (thé glacé) y soit sujet. ÉTAPE 3: La tendance entre les deux points montre une baisse de 20%, et un arrêt des commandes durant le mois d'août. ÉTAPE 4: La recommandation est prudente. En prenant la moyenne des commandes (40.5u) et en appliquant un coefficient de sécurité à la baisse dû à l'absence de commandes récentes en août, on cible environ 32 unités pour couvrir la reprise de septembre sans risque de surstockage majeur sur un produit dont le cycle de rotation n'est pas encore stabilisé.
+
+</details>
+
+
+
+
+### 📊 Données d'Input LLM (1 produits)
+
+
+<details>
+<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-07-25 12:58:11: 36u
+- 2025-07-01 13:13:02: 45u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 32u (confidence: low)
+**📊 Quantité Réelle**: 18u
+
+</details>
+
+
+
+
+---
+
+## False Positives (4)
+
+<details>
+<summary>Qu'est-ce qu'un False Positive ?</summary>
+
+**En simple** : Un produit que le système a prédit MAIS que le client n'a pas commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Ce produit doit être commandé"
+- Réalité : Le client ne commande PAS ce produit
+- → False Positive (fausse alerte)
+
+**Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
+</details>
+
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 32 | Stock prédit: 16.1u (27j restants) → prédit 32u mais non commandé |
+| [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 53 | Stock prédit: -6.1u (-5j restants) → prédit 53u mais non commandé |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 63 | Stock prédit: 5.3u (4j restants) → prédit 63u mais non commandé |
+| [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml | 42 | Stock prédit: -38.5u (-44j restants) → prédit 42u mais non commandé |
+
+
+---
+
+## False Negatives (0)
+
+<details>
+<summary>Qu'est-ce qu'un False Negative ?</summary>
+
+**En simple** : Un produit que le système n'a PAS prédit MAIS que le client a commandé
+
+**Calcul** : Pour chaque produit, on compare :
+- Système dit : "Pas besoin de commander ce produit"
+- Réalité : Le client commande ce produit
+- → False Negative (besoin manqué)
+
+**Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
+</details>
+
+*Aucun faux négatif (rappel = 100%)*
+
+---
+
+*Rapport généré automatiquement le 2025-12-18T12:13:25.054Z*

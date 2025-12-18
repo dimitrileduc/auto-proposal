@@ -103,7 +103,16 @@ export function compareSystemPredictionVsRealOrder(
         llmPrediction,
       });
     } else {
-      // FALSE POSITIVE: Le système a prédit MAIS le client n'a pas commandé
+      // Si on prédit 0, c'est qu'on dit "pas besoin de commander"
+      // Donc si le client ne commande pas, c'est CORRECT (True Negative), pas un False Positive
+      if (systemProduct.quantity_to_order === 0) {
+        // TRUE NEGATIVE: On a prédit 0 (pas de besoin) ET le client n'a pas commandé
+        // Ne PAS compter comme False Positive - c'est une bonne prédiction !
+        // On pourrait tracker les True Negatives si besoin, mais pour l'instant on skip
+        continue;
+      }
+
+      // FALSE POSITIVE: Le système a prédit >0 MAIS le client n'a pas commandé
       const analyzedProduct = analyzedProducts.get(productId);
       let reason = "Prédit mais non commandé";
 
@@ -124,19 +133,35 @@ export function compareSystemPredictionVsRealOrder(
 
   // 4. Parcourir les commandes réelles pour trouver les FN
   for (const [productId, realProduct] of realProducts) {
-    if (!systemProducts.has(productId)) {
-      // FALSE NEGATIVE: Le client a commandé MAIS le système n'avait pas prédit
+    const systemProduct = systemProducts.get(productId);
+
+    // Si on n'a pas du tout prédit ce produit OU si on a prédit 0
+    if (!systemProduct || systemProduct.quantity_to_order === 0) {
+      // FALSE NEGATIVE: Le client a commandé MAIS le système n'avait pas prédit (ou prédit 0)
       let reason = "Raison inconnue";
 
       // Vérifier si le produit était dans stockAnalysis (analysé mais filtré)
       const analyzedProduct = analyzedProducts.get(productId);
 
-      if (analyzedProduct) {
-        // Produit analysé mais filtré → raison = seuil de rupture non atteint
+      if (systemProduct && systemProduct.quantity_to_order === 0) {
+        // On avait prédit 0 (pas de besoin) mais le client a commandé
+        const stock = analyzedProduct?.stock_prediction.estimated_stock_remaining ?? 0;
+        const days = analyzedProduct?.stock_prediction.days_until_stockout ?? 0;
+        reason = `LLM avait prédit 0 (pas de besoin) avec stock: ${stock.toFixed(1)}u (${days}j) mais client a commandé ${realProduct.product_uom_qty}u`;
+      } else if (analyzedProduct) {
+        // Produit analysé mais filtré
         const stock = analyzedProduct.stock_prediction.estimated_stock_remaining;
         const days = analyzedProduct.stock_prediction.days_until_stockout;
         const threshold = analyzedProduct.stock_prediction.replenishment_threshold_days;
-        reason = `Stock suffisant: ${stock.toFixed(1)}u (${days}j restants > seuil ${threshold}j)`;
+
+        // Déterminer la vraie raison du filtrage
+        if (days < 0) {
+          reason = `En rupture (${days}j) mais non prédit - probablement filtré (pas de consommation ou historique insuffisant)`;
+        } else if (days > threshold) {
+          reason = `Stock suffisant: ${stock.toFixed(1)}u (${days}j restants > seuil ${threshold}j)`;
+        } else {
+          reason = `Stock: ${stock.toFixed(1)}u (${days}j restants) - filtré pour autre raison`;
+        }
       } else {
         // Produit PAS dans stockAnalysis → jamais commandé avant dans la fenêtre d'analyse
         const windowDays = orderContext.analysisWindowDays ?? 120;

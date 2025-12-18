@@ -1,0 +1,30 @@
+{
+  "clientId": 60190,
+  "clientName": "EUROPADRINKS",
+  "orderName": "S40285",
+  "orderDate": "2025-11-12 12:38:29",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.3,
+    "recall": 1,
+    "f1Score": 0.4615384615384615,
+    "mae": 6,
+    "wmape": 36,
+    "mape": 46.666666666666664,
+    "bias": 36
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 10820,
+    "completionTokens": 15364,
+    "totalTokens": 26184
+  }
+}

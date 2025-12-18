@@ -1,0 +1,30 @@
+{
+  "clientId": 24840,
+  "clientName": "Al-Terre-Native",
+  "orderName": "S40272",
+  "orderDate": "2025-11-14 10:18:22",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 14965,
+    "completionTokens": 4912,
+    "totalTokens": 19877
+  }
+}

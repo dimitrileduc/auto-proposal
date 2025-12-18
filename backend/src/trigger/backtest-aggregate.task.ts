@@ -45,6 +45,22 @@ export interface BacktestAggregatePayload {
   /** Nombre de jours avant la commande pour calculer le cutoff (défaut: 1 jour) */
   daysBeforePrediction?: number;
 
+  /**
+   * Date de référence pour chercher les commandes (optionnel)
+   * Si non défini: utilise aujourd'hui (comportement actuel)
+   * Si défini: cherche la dernière commande AVANT cette date
+   * Format: "YYYY-MM-DD" ex: "2025-10-15"
+   */
+  referenceDate?: string;
+
+  /**
+   * Commandes spécifiques à tester (optionnel)
+   * Si fourni: teste exactement ces commandes (clientId -> orderName)
+   * Si non fourni: comportement actuel (auto-découverte ou clientIds)
+   * Ex: { "13621": "S39729", "17251": "S39718" }
+   */
+  specificOrders?: Record<string, string>;
+
   /** Configuration propagée à chaque backtest enfant (pour A/B testing) */
   config?: {
     analysisWindowDays?: number;  // Défaut: 120j (depuis autoProposalConfig)
@@ -104,8 +120,15 @@ export const backtestAggregateTask = task({
 
     // ===== ÉTAPE 1: DÉCOUVERTE OU VALIDATION DES CLIENTS =====
     let clientIds: number[];
+    let orderMapping: Record<string, string> | undefined;
 
-    if (!payload.clientIds || payload.clientIds.length === 0) {
+    if (payload.specificOrders) {
+      // Mode commandes spécifiques
+      clientIds = Object.keys(payload.specificOrders).map(id => parseInt(id));
+      orderMapping = payload.specificOrders;
+      console.log(`📊 Mode: Specific orders (${clientIds.length} exact orders to test)`);
+      console.log(`   Testing exact orders from previous run\n`);
+    } else if (!payload.clientIds || payload.clientIds.length === 0) {
       // Mode auto-découverte
       const count = payload.autoDiscoverCount ?? 50;
       console.log(`📊 Mode: Auto-discovery (finding top ${count} clients with 2025 orders)`);
@@ -117,7 +140,7 @@ export const backtestAggregateTask = task({
         password: process.env.ODOO_PASSWORD!,
       };
 
-      clientIds = await findTopBacktestClients(odooConfig, count, 2025);
+      clientIds = await findTopBacktestClients(odooConfig, count, 2025, payload.referenceDate);
       console.log(`   ✅ Discovered ${clientIds.length} clients\n`);
     } else {
       // Mode liste explicite
@@ -155,6 +178,8 @@ export const backtestAggregateTask = task({
           payload: {
             clientId,
             daysBeforePrediction: payload.daysBeforePrediction ?? 1,
+            referenceDate: payload.referenceDate,
+            orderName: orderMapping ? orderMapping[clientId.toString()] : undefined,
             config: payload.config,
           },
         }));

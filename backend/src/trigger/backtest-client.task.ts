@@ -34,6 +34,21 @@ export interface BacktestClientTaskPayload {
   /** Nombre de jours avant la commande pour calculer le cutoff (défaut: 1 jour) */
   daysBeforePrediction?: number;
 
+  /**
+   * Date de référence pour chercher la commande (optionnel)
+   * Si défini: cherche la dernière commande AVANT cette date
+   * Si non défini: cherche la dernière commande (comportement actuel)
+   */
+  referenceDate?: string;
+
+  /**
+   * Nom de commande spécifique à tester (optionnel)
+   * Si fourni: teste cette commande exacte
+   * Si non fourni: comportement actuel (dernière commande)
+   * Ex: "S39729"
+   */
+  orderName?: string;
+
   /** Configuration optionnelle pour A/B testing */
   config?: {
     analysisWindowDays?: number;
@@ -130,9 +145,40 @@ export const backtestClientTask = task({
     console.log(`   Days before prediction: ${daysBeforePrediction}\n`);
 
     try {
-      // 1️⃣ Récupérer la dernière commande réelle
-      console.log("📊 Step 1/6: Fetching last validated order...");
-      const lastOrder = await odooClient.getLastClientOrder(payload.clientId);
+      // 1️⃣ Récupérer la commande à tester
+      console.log("📊 Step 1/6: Fetching order to test...");
+
+      let lastOrder: {
+        id: number;
+        name: string;
+        date_order: string;
+        partner_name: string;
+        partner_id?: number;
+      };
+
+      if (payload.orderName) {
+        // Mode commande spécifique
+        console.log(`   Testing specific order: ${payload.orderName}`);
+        const orderData = await odooClient.getOrderByName(payload.orderName);
+
+        // Vérifier que la commande appartient bien au client
+        if (orderData.partner_id !== payload.clientId) {
+          throw new Error(
+            `Order ${payload.orderName} belongs to client ${orderData.partner_id} (${orderData.partner_name}), ` +
+            `not to requested client ${payload.clientId}`
+          );
+        }
+
+        lastOrder = orderData;
+      } else if (payload.referenceDate) {
+        // Mode date de référence
+        console.log(`   Using reference date: ${payload.referenceDate}`);
+        lastOrder = await odooClient.getLastClientOrderBeforeDate(payload.clientId, payload.referenceDate);
+      } else {
+        // Mode par défaut: dernière commande
+        lastOrder = await odooClient.getLastClientOrder(payload.clientId);
+      }
+
       console.log(`   ✅ Found order: ${lastOrder.name} (${lastOrder.date_order})\n`);
 
       // 2️⃣ Calculer la date de cutoff (time travel)

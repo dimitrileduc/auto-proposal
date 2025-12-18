@@ -1,0 +1,30 @@
+{
+  "clientId": 71334,
+  "clientName": "BIODIS",
+  "orderName": "S39870",
+  "orderDate": "2025-10-22 12:36:11",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.4117647058823529,
+    "recall": 1,
+    "f1Score": 0.5833333333333334,
+    "mae": 25.142857142857142,
+    "wmape": 37.8494623655914,
+    "mape": 38.94009216589861,
+    "bias": 24.516129032258064
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 13054,
+    "completionTokens": 16248,
+    "totalTokens": 29302
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38724,
+  "clientName": "CORA S.A.",
+  "orderName": "S39998",
+  "orderDate": "2025-10-29 13:29:02",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 13,
+    "fn": 0,
+    "precision": 0.1875,
+    "recall": 1,
+    "f1Score": 0.3157894736842105,
+    "mae": 0.6666666666666666,
+    "wmape": 9.090909090909092,
+    "mape": 11.111111111111109,
+    "bias": -9.090909090909092
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 16,
+    "promptTokens": 19106,
+    "completionTokens": 26405,
+    "totalTokens": 45511
+  }
+}

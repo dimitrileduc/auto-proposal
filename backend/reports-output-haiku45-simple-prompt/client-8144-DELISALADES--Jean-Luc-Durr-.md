@@ -1,0 +1,102 @@
+# 📊 Rapport Auto-Proposal - DELISALADES, Jean-Luc Durré
+
+**📅 Date:** 18/12/2025 11:10
+**🆔 Client ID:** 8144
+**📧 Email:** N/A
+**⏱️ Durée d'exécution:** 10.1s
+
+---
+
+## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
+
+
+**Produits à risque détectés: 2**
+- Urgents (rupture ≤ 0j): 0
+- Modérés (0 < rupture ≤ 30j): 2
+
+**Total produits (Phase 1): 2**
+**Quantité totale brute: 198 unités**
+
+### Détails par produit
+
+
+<details>
+<summary>🟡 <strong>[PF0078] FILOU CHASSEUR 5 L</strong> (ID: 8987) - 160 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 7.2072
+- **Stock restant estimé**: 160.00
+- **Jours avant rupture**: **22j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-13 | S39688 | 160 | 8.78€ |
+| 2025-09-23 | S39345 | 160 | 8.78€ |
+| 2025-09-02 | S38919 | 160 | 8.78€ |
+| 2025-08-20 | S38605 | 80 | 8.78€ |
+| 2025-08-05 | S38346 | 80 | 8.78€ |
+| 2025-06-24 | S37640 | 160 | 8.78€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [160, 160, 160, 80, 80]
+- **Nombre commandes**: 6
+- **Valeur médiane**: 160
+
+</details>
+
+<details>
+<summary>🟡 <strong>[PF3251] JEFKE CHIVE VINAIGRETTE 5L</strong> (ID: 14796) - 38 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 1.7431
+- **Stock restant estimé**: 3.39
+- **Jours avant rupture**: **1j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-22 | S39313 | 40 | 44.08€ |
+| 2025-09-02 | S38919 | 30 | 44.08€ |
+| 2025-08-14 | S38508 | 40 | 44.08€ |
+| 2025-07-16 | S38068 | 40 | 44.08€ |
+| 2025-06-26 | S37664 | 40 | 44.08€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [40, 30, 40, 40, 40]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 40
+
+</details>
+
+
+---
+
+## 💰 PHASE 2.5 - PRICING + AJUSTEMENT MOQ
+
+
+### Avant ajustement MOQ
+
+- **Montant initial: 3079.84€**
+- **MOQ requis: 300.00€**
+- ✅ **Déjà au-dessus du MOQ**
+
+### Détails produits avec pricing
+
+
+| Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [PF0078] FILOU CHASSEUR 5 L | 8987 | 160 | 0 | 160 | 8.78€ | 1404.80€ |
+| [PF3251] JEFKE CHIVE VINAIG... | 14796 | 38 | 0 | 38 | 44.08€ | 1675.04€ |
+
+**Total (Phase 2.5): 3079.84€**
+
+---

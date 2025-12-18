@@ -1,0 +1,30 @@
+{
+  "clientId": 60384,
+  "clientName": "L'ARTMONIE",
+  "orderName": "S40319",
+  "orderDate": "2025-11-14 10:35:02",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.6875,
+    "recall": 1,
+    "f1Score": 0.8148148148148148,
+    "mae": 0.5454545454545454,
+    "wmape": 16.216216216216218,
+    "mape": 13.636363636363637,
+    "bias": -10.81081081081081
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 2208,
+    "completionTokens": 735,
+    "totalTokens": 2943
+  }
+}

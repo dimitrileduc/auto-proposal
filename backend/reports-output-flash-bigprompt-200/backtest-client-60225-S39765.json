@@ -1,0 +1,30 @@
+{
+  "clientId": 60225,
+  "clientName": "BONBON CARAMEL",
+  "orderName": "S39765",
+  "orderDate": "2025-10-16 11:39:34",
+  "cutoffDate": "2025-10-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1.2,
+    "wmape": 30,
+    "mape": 30,
+    "bias": -30
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 8697,
+    "completionTokens": 1616,
+    "totalTokens": 10313
+  }
+}

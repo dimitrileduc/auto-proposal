@@ -1,0 +1,30 @@
+{
+  "clientId": 60291,
+  "clientName": "DOMAINE DE RONCHINNE",
+  "orderName": "S39452",
+  "orderDate": "2025-10-01 07:17:25",
+  "cutoffDate": "2025-09-30 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 19,
+    "fn": 1,
+    "precision": 0.3448275862068966,
+    "recall": 0.9090909090909091,
+    "f1Score": 0.5000000000000001,
+    "mae": 1.1,
+    "wmape": 78.57142857142857,
+    "mape": 95,
+    "bias": 78.57142857142857
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 51349,
+    "completionTokens": 17948,
+    "totalTokens": 69297
+  }
+}

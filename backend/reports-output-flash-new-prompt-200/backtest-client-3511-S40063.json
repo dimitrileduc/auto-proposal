@@ -1,0 +1,30 @@
+{
+  "clientId": 3511,
+  "clientName": "CARRY GERON SA",
+  "orderName": "S40063",
+  "orderDate": "2025-11-03 13:20:39",
+  "cutoffDate": "2025-11-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 33.5,
+    "wmape": 46.85314685314685,
+    "mape": 52.55681818181818,
+    "bias": -23.076923076923077
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 4708,
+    "completionTokens": 1557,
+    "totalTokens": 6265
+  }
+}

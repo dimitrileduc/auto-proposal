@@ -91,5 +91,10 @@ export function calculateDailyConsumption(
   // Adapter la période: utiliser l'historique réel si < fenêtre d'analyse
   const actualDays = Math.min(daysOfHistory, daysSinceFirstOrder);
 
+  // Protection contre division par zéro
+  if (actualDays <= 0) {
+    return 0; // Pas de consommation calculable
+  }
+
   return totalQuantity / actualDays;
 }

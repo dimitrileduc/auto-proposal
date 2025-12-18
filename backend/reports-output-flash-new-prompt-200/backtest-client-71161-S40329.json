@@ -1,0 +1,30 @@
+{
+  "clientId": 71161,
+  "clientName": "DLL AD SART TILMAN",
+  "orderName": "S40329",
+  "orderDate": "2025-11-13 12:31:40",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 17,
+    "fn": 0,
+    "precision": 0.15,
+    "recall": 1,
+    "f1Score": 0.2608695652173913,
+    "mae": 3.6666666666666665,
+    "wmape": 55.00000000000001,
+    "mape": 55.55555555555555,
+    "bias": -55.00000000000001
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3470,
+    "completionTokens": 1116,
+    "totalTokens": 4586
+  }
+}

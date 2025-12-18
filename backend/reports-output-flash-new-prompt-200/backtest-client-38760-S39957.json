@@ -1,0 +1,30 @@
+{
+  "clientId": 38760,
+  "clientName": "CRF MARKET REMOUCHAMPS FONVAL",
+  "orderName": "S39957",
+  "orderDate": "2025-10-28 10:53:28",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 32,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.9142857142857143,
+    "recall": 1,
+    "f1Score": 0.955223880597015,
+    "mae": 0.78125,
+    "wmape": 33.78378378378378,
+    "mape": 36.875,
+    "bias": -1.3513513513513513
+  },
+  "distribution": {
+    "exactMatch": 13,
+    "partialMatch": 19
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 18233,
+    "completionTokens": 5891,
+    "totalTokens": 24124
+  }
+}

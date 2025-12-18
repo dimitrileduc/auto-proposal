@@ -1,0 +1,30 @@
+{
+  "clientId": 3452,
+  "clientName": "DELHAIZE LE LION/DE LEEUW NV",
+  "orderName": "S40188",
+  "orderDate": "2025-11-07 11:42:07",
+  "cutoffDate": "2025-11-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 472,
+    "wmape": 80.54607508532423,
+    "mape": 79.16666666666667,
+    "bias": -80.54607508532423
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 6396,
+    "completionTokens": 12208,
+    "totalTokens": 18604
+  }
+}

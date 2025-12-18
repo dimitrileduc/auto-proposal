@@ -1,0 +1,30 @@
+{
+  "clientId": 17809,
+  "clientName": "AU RAYON BIO",
+  "orderName": "S39577",
+  "orderDate": "2025-10-09 06:15:56",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 2,
+    "fn": 4,
+    "precision": 0.8571428571428571,
+    "recall": 0.75,
+    "f1Score": 0.7999999999999999,
+    "mae": 1.0833333333333333,
+    "wmape": 56.52173913043478,
+    "mape": 65.27777777777777,
+    "bias": -13.043478260869565
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 10
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 20148,
+    "completionTokens": 26413,
+    "totalTokens": 46561
+  }
+}

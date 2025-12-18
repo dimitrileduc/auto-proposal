@@ -1,0 +1,30 @@
+{
+  "clientId": 38851,
+  "clientName": "DLL PROXY BEAUFAYS HULEMAS.GT",
+  "orderName": "S40141",
+  "orderDate": "2025-11-05 13:28:13",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 19,
+    "fn": 0,
+    "precision": 0.2692307692307692,
+    "recall": 1,
+    "f1Score": 0.42424242424242425,
+    "mae": 0.42857142857142855,
+    "wmape": 30,
+    "mape": 23.809523809523807,
+    "bias": -10
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 18,
+    "promptTokens": 26680,
+    "completionTokens": 4872,
+    "totalTokens": 31552
+  }
+}

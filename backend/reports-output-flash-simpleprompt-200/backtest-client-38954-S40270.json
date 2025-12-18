@@ -1,0 +1,30 @@
+{
+  "clientId": 38954,
+  "clientName": "ITM NANDRIN ST SEVERIN ECONAN",
+  "orderName": "S40270",
+  "orderDate": "2025-11-12 14:31:04",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 15,
+    "fn": 1,
+    "precision": 0.4230769230769231,
+    "recall": 0.9166666666666666,
+    "f1Score": 0.5789473684210527,
+    "mae": 0.5454545454545454,
+    "wmape": 35.294117647058826,
+    "mape": 40.90909090909091,
+    "bias": 23.52941176470588
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 10590,
+    "completionTokens": 3328,
+    "totalTokens": 13918
+  }
+}

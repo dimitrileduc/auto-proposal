@@ -1,0 +1,30 @@
+{
+  "clientId": 38871,
+  "clientName": "DLL PROXY RIXENSART SHOPFRAIS",
+  "orderName": "S40110",
+  "orderDate": "2025-11-05 14:53:54",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.7,
+    "recall": 1,
+    "f1Score": 0.8235294117647058,
+    "mae": 0.14285714285714285,
+    "wmape": 10,
+    "mape": 7.142857142857143,
+    "bias": -10
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 10500,
+    "completionTokens": 3879,
+    "totalTokens": 14379
+  }
+}

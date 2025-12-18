@@ -1,0 +1,30 @@
+{
+  "clientId": 60579,
+  "clientName": "Wandercoop",
+  "orderName": "S40360",
+  "orderDate": "2025-11-14 12:32:09",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 4,
+    "fn": 2,
+    "precision": 0.6923076923076923,
+    "recall": 0.8181818181818182,
+    "f1Score": 0.7500000000000001,
+    "mae": 0.5555555555555556,
+    "wmape": 29.411764705882355,
+    "mape": 31.48148148148148,
+    "bias": -5.88235294117647
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 16,
+    "promptTokens": 18871,
+    "completionTokens": 23462,
+    "totalTokens": 42333
+  }
+}

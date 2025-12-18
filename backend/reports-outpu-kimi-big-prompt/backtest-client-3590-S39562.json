@@ -1,0 +1,30 @@
+{
+  "clientId": 3590,
+  "clientName": "MAISON DESPRIET SA",
+  "orderName": "S39562",
+  "orderDate": "2025-10-06 09:21:48",
+  "cutoffDate": "2025-10-06 00:00:00",
+  "daysBeforePrediction": 0,
+  "metrics": {
+    "tp": 3,
+    "fp": 5,
+    "fn": 1,
+    "precision": 0.375,
+    "recall": 0.75,
+    "f1Score": 0.5,
+    "mae": 30.666666666666668,
+    "wmape": 35.38461538461539,
+    "mape": 47.22222222222222,
+    "bias": 35.38461538461539
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 12917,
+    "completionTokens": 33062,
+    "totalTokens": 45979
+  }
+}

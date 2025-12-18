@@ -1,0 +1,30 @@
+{
+  "clientId": 12292,
+  "clientName": "Green Peas",
+  "orderName": "S40019",
+  "orderDate": "2025-10-30 09:12:37",
+  "cutoffDate": "2025-10-29 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.55,
+    "recall": 1,
+    "f1Score": 0.7096774193548387,
+    "mae": 0.6363636363636364,
+    "wmape": 30.434782608695656,
+    "mape": 22.727272727272727,
+    "bias": -21.73913043478261
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 14251,
+    "completionTokens": 4902,
+    "totalTokens": 19153
+  }
+}

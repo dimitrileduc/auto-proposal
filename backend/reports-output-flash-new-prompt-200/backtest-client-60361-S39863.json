@@ -1,0 +1,30 @@
+{
+  "clientId": 60361,
+  "clientName": "HOUTOPIA",
+  "orderName": "S39863",
+  "orderDate": "2025-10-22 11:56:52",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 0.875,
+    "wmape": 43.75,
+    "mape": 41.666666666666664,
+    "bias": 43.75
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 6197,
+    "completionTokens": 2984,
+    "totalTokens": 9181
+  }
+}

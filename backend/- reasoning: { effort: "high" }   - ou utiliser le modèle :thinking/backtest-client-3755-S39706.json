@@ -1,0 +1,30 @@
+{
+  "clientId": 3755,
+  "clientName": "BVBA DRINK & FOOD",
+  "orderName": "S39706",
+  "orderDate": "2025-10-14 06:43:12",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 1,
+    "wmape": 2.4691358024691357,
+    "mape": 100,
+    "bias": 2.4691358024691357
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 5698,
+    "completionTokens": 2023,
+    "totalTokens": 7721
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 8200,
+  "clientName": "BONNI, ACHAT",
+  "orderName": "S40213",
+  "orderDate": "2025-11-12 09:20:47",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.6,
+    "recall": 1,
+    "f1Score": 0.7499999999999999,
+    "mae": 1.3333333333333333,
+    "wmape": 100,
+    "mape": 116.66666666666667,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 15543,
+    "completionTokens": 27255,
+    "totalTokens": 42798
+  }
+}
