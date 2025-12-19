@@ -20,13 +20,27 @@ export interface LLMPredictionDetails {
   confidence: "low" | "medium" | "high";
   reasoning: string;
   baseline_quantity: number; // Baseline quantity from analysis
-  // Structured analysis object (Chain of Thought)
+  // Structured analysis object (Double Chain of Thought)
   analysis: {
     frequency_pattern: string; // Pattern temporel identifié (ex: "hebdomadaire", "mensuel")
     detected_outliers: number[]; // Quantités identifiées comme événements exceptionnels
     seasonality_impact: "none" | "weak" | "strong"; // Impact saisonnier détecté
     trend_direction: string; // Direction observée (ex: "croissant +15%", "stable", "décroissant -10%")
+    // Optional Double CoT fields
+    day_cycle_analysis?: string; // Analyse du jour de commande habituel vs jour demandé
+    cycle_days?: number; // Nombre de jours du cycle médian détecté
+    last_order_date?: string; // Date de la dernière commande (YYYY-MM-DD)
+    predicted_next_date?: string; // Date prédite de la prochaine commande
+    days_until_next?: number; // Nombre de jours jusqu'à la prochaine commande
   };
+  // Detailed confidence scores from Double CoT
+  confidence_phase1?: "low" | "medium" | "high"; // Confiance détection risque
+  confidence_phase2?: "low" | "medium" | "high"; // Confiance quantité
+  // Provider reasoning (thinking tokens from Kimi/DeepSeek)
+  provider_reasoning?: string;
+  // Model info
+  model?: string; // Ex: "moonshotai/kimi-k2-thinking"
+  provider?: string; // Ex: "openrouter"
   // Token usage for this specific product
   usage: {
     promptTokens: number;

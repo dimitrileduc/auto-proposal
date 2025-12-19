@@ -133,24 +133,51 @@ ${llmProducts.map((tp, index) => {
 <details>
 <summary><strong>${index + 1}. ${tp.productName}</strong> - LLM: ${tp.llmPrediction.quantity}u vs Médiane: ${medianQty}u (Réel: ${tp.realQty}u)</summary>
 
-**Quantités:**
-- 🤖 **LLM prédit**: ${tp.llmPrediction.quantity}u (confidence: ${tp.llmPrediction.confidence})
-- 📊 **Baseline N-1**: ${tp.llmPrediction.baseline_quantity !== undefined ? `${tp.llmPrediction.baseline_quantity}u` : 'N/A'}
-- 📊 **Médiane**: ${medianQty}u
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: ${tp.llmPrediction.quantity}u
+- 📊 **Baseline calculée**: ${tp.llmPrediction.baseline_quantity}u
+- 📊 **Médiane historique**: ${medianQty}u
 - ✅ **Réel commandé**: ${tp.realQty}u
 - 📉 **Erreur LLM**: ${Math.abs(tp.llmPrediction.quantity - tp.realQty)}u (${((Math.abs(tp.llmPrediction.quantity - tp.realQty) / tp.realQty) * 100).toFixed(1)}%)
 - 📉 **Erreur Médiane**: ${medianError}
 
-**🔍 Analyse LLM:**
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ${tp.llmPrediction.quantity > 0 ? '✅ OUI → Commande nécessaire' : '❌ NON → Pas de commande'}
+- **Quantité décidée**: ${tp.llmPrediction.quantity === 0 ? '0u (pas de risque)' : `${tp.llmPrediction.quantity}u (risque détecté)`}
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: ${tp.llmPrediction.confidence}
+- **Confiance Phase 1 (détection risque)**: ${tp.llmPrediction.confidence_phase1 || 'N/A'}
+- **Confiance Phase 2 (quantité)**: ${tp.llmPrediction.confidence_phase2 || 'N/A'}
+
+**🔍 Analyse LLM Complète:**
 - **Pattern temporel**: ${tp.llmPrediction.analysis?.frequency_pattern || 'N/A'}
+- **Cycle médian (jours)**: ${tp.llmPrediction.analysis?.cycle_days || 'N/A'}
+- **Dernière commande**: ${tp.llmPrediction.analysis?.last_order_date || 'N/A'}
+- **Prochaine prédite**: ${tp.llmPrediction.analysis?.predicted_next_date || 'N/A'} ${tp.llmPrediction.analysis?.days_until_next ? `(dans ${tp.llmPrediction.analysis.days_until_next}j)` : ''}
+- **Dans horizon 30j ?**: ${tp.llmPrediction.analysis?.days_until_next && tp.llmPrediction.analysis.days_until_next <= 30 ? '✅ OUI' : '❌ NON'}
 - **Saisonnalité**: ${tp.llmPrediction.analysis?.seasonality_impact || 'N/A'}
 - **Tendance**: ${tp.llmPrediction.analysis?.trend_direction || 'N/A'}
+- **Analyse jour cycle**: ${tp.llmPrediction.analysis?.day_cycle_analysis || 'N/A'}
 - **Outliers détectés**: ${tp.llmPrediction.analysis?.detected_outliers && tp.llmPrediction.analysis.detected_outliers.length > 0
   ? tp.llmPrediction.analysis.detected_outliers.map((o: number) => `${o}u`).join(', ')
   : 'Aucun'}
 
 **🧠 Raisonnement LLM:**
 ${tp.llmPrediction.reasoning || 'Non disponible'}
+
+${tp.llmPrediction.usage ? `**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: ${tp.llmPrediction.usage.promptTokens.toLocaleString()} tokens
+- **Output**: ${tp.llmPrediction.usage.completionTokens.toLocaleString()} tokens
+- **Total**: ${tp.llmPrediction.usage.totalTokens.toLocaleString()} tokens` : ''}
+
+${tp.llmPrediction.provider_reasoning ? `**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+${tp.llmPrediction.provider_reasoning}
+
+</details>` : ''}
 
 </details>
 `;

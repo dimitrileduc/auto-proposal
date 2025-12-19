@@ -1,0 +1,30 @@
+{
+  "clientId": 3818,
+  "clientName": "NATURKOST WEST GMBH",
+  "orderName": "S40142",
+  "orderDate": "2025-11-05 12:54:20",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1Score": 0.6666666666666666,
+    "mae": 16,
+    "wmape": 50,
+    "mape": 66.66666666666666,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 9090,
+    "completionTokens": 23869,
+    "totalTokens": 32959
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 60207,
+  "clientName": "BIOFRESH BELGIUM NV-SA",
+  "orderName": "S40061",
+  "orderDate": "2025-11-03 08:38:25",
+  "cutoffDate": "2025-11-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.1111111111111111,
+    "recall": 1,
+    "f1Score": 0.19999999999999998,
+    "mae": 6,
+    "wmape": 11.11111111111111,
+    "mape": 11.11111111111111,
+    "bias": 11.11111111111111
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 18,
+    "promptTokens": 8782,
+    "completionTokens": 9137,
+    "totalTokens": 17919
+  }
+}

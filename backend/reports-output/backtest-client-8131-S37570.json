@@ -7,24 +7,24 @@
   "daysBeforePrediction": 1,
   "metrics": {
     "tp": 5,
-    "fp": 3,
+    "fp": 1,
     "fn": 0,
-    "precision": 0.625,
+    "precision": 0.8333333333333334,
     "recall": 1,
-    "f1Score": 0.7692307692307693,
-    "mae": 144.8,
-    "wmape": 71.25984251968504,
-    "mape": 48.4,
-    "bias": -71.25984251968504
+    "f1Score": 0.9090909090909091,
+    "mae": 144.6,
+    "wmape": 71.16141732283464,
+    "mape": 46.4,
+    "bias": -71.16141732283464
   },
   "distribution": {
     "exactMatch": 1,
     "partialMatch": 4
   },
   "llmUsage": {
-    "calls": 6,
-    "promptTokens": 7394,
-    "completionTokens": 13422,
-    "totalTokens": 20816
+    "calls": 8,
+    "promptTokens": 5294,
+    "completionTokens": 14897,
+    "totalTokens": 20191
   }
 }

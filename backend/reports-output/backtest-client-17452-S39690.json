@@ -1,0 +1,30 @@
+{
+  "clientId": 17452,
+  "clientName": "HYGIENA SA",
+  "orderName": "S39690",
+  "orderDate": "2025-10-13 08:23:06",
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 27,
+    "fn": 1,
+    "precision": 0.3076923076923077,
+    "recall": 0.9230769230769231,
+    "f1Score": 0.4615384615384615,
+    "mae": 186.33333333333334,
+    "wmape": 50.51965657478535,
+    "mape": 90.3225806451613,
+    "bias": 42.25033890646181
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 11
+  },
+  "llmUsage": {
+    "calls": 46,
+    "promptTokens": 35915,
+    "completionTokens": 165736,
+    "totalTokens": 201651
+  }
+}

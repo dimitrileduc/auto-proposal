@@ -1,0 +1,30 @@
+{
+  "clientId": 3547,
+  "clientName": "K&F DE PAUW",
+  "orderName": "S40269",
+  "orderDate": "2025-11-12 11:39:39",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 15,
+    "fn": 0,
+    "precision": 0.0625,
+    "recall": 1,
+    "f1Score": 0.11764705882352941,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 44918,
+    "completionTokens": 102989,
+    "totalTokens": 147907
+  }
+}

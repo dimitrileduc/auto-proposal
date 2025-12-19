@@ -1,0 +1,30 @@
+{
+  "clientId": 24304,
+  "clientName": "Ferme A l'arbre",
+  "orderName": "S40066",
+  "orderDate": "2025-11-03 12:14:48",
+  "cutoffDate": "2025-11-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 17,
+    "fn": 0,
+    "precision": 0.39285714285714285,
+    "recall": 1,
+    "f1Score": 0.5641025641025641,
+    "mae": 0.7272727272727273,
+    "wmape": 44.44444444444444,
+    "mape": 50,
+    "bias": 11.11111111111111
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 64411,
+    "completionTokens": 45359,
+    "totalTokens": 109770
+  }
+}

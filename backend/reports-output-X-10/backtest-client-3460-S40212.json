@@ -1,0 +1,30 @@
+{
+  "clientId": 3460,
+  "clientName": "UPFRESH - HUPPA",
+  "orderName": "S40212",
+  "orderDate": "2025-11-07 12:42:09",
+  "cutoffDate": "2025-11-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 80,
+    "wmape": 100,
+    "mape": 100,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 5440,
+    "completionTokens": 5469,
+    "totalTokens": 10909
+  }
+}

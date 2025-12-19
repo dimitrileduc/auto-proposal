@@ -1,0 +1,30 @@
+{
+  "clientId": 3831,
+  "clientName": "DANTESSE GmbH",
+  "orderName": "S39769",
+  "orderDate": "2025-10-16 10:03:47",
+  "cutoffDate": "2025-10-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.14285714285714285,
+    "recall": 1,
+    "f1Score": 0.25,
+    "mae": 125,
+    "wmape": 100,
+    "mape": 100,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 28230,
+    "completionTokens": 39342,
+    "totalTokens": 67572
+  }
+}

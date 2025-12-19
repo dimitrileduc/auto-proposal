@@ -4,7 +4,7 @@ import { predictStockStatus } from "./utils/prediction.utils";
 import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
 import { getTodayAsDateString } from "../../utils/date.utils";
-import { predictWithLLM, type LLMPredictionResult } from "../../services/llm-openrouter.service";
+import { predictWithLLM, type LLMPredictionResult, type LLMPredictionInput } from "../../services/llm-openrouter.service";
 import { splitOrdersByPeriod } from "../../utils/date-period.utils";
 import pLimit from "p-limit";
 import type {
@@ -143,13 +143,9 @@ export async function calculateReplenishmentNeeds(
       continue;
     }
 
-    // Déterminer si LLM est nécessaire (>2 commandes)
-    const needsLLM = ordersToUse.length > 2;
-    if (needsLLM) {
-      console.log(`     🔜 LLM requis (${ordersToUse.length} commandes)`);
-    } else {
-      console.log(`     📊 Médiane utilisée (≤2 commandes, pas de LLM)`);
-    }
+    // NOUVEAU: Toujours utiliser le LLM pour décider du risque ET de la quantité
+    const needsLLM = true; // Tous les produits passent par le LLM maintenant
+    console.log(`     🔜 LLM va décider du risque de rupture et de la quantité`)
 
     productsToProcess.push({
       product,
@@ -183,7 +179,7 @@ export async function calculateReplenishmentNeeds(
 
     const llmPromises = productsNeedingLLM.map((productData) =>
       limit(async () => {
-        const { product, ordersToUse } = productData;
+        const { product, ordersToUse, stockPrediction, consumptionPerDay } = productData;
 
         // IMPORTANT: Pour le LLM, on utilise TOUJOURS fullHistory (730j) pour avoir accès à N-1
         // ordersToUse (120j) est utilisé pour consommation/stock, mais trop court pour N-1
@@ -202,12 +198,16 @@ export async function calculateReplenishmentNeeds(
         const lastYearOrders = lastYear.map(o => ({ date: o.date_order, quantity: o.quantity }));
 
         try {
-          const llmResult = await predictWithLLM({
+          // Le LLM reçoit SEULEMENT l'historique, il déduit lui-même le risque
+          const llmInput: LLMPredictionInput = {
             productName: product.product_name,
             recentOrders,
             lastYearOrders,
             currentDate: analysisEndDate,
-          });
+            // PAS DE STOCK INFO ! Le LLM doit déduire lui-même
+          };
+
+          const llmResult = await predictWithLLM(llmInput);
 
           llmResults.set(product.product_id, llmResult);
 
@@ -220,7 +220,11 @@ export async function calculateReplenishmentNeeds(
           });
 
           console.log(
-            `     ✅ LLM [${product.product_id}]: ${llmResult.prediction.recommended_quantity}u (${llmResult.prediction.confidence}) | tokens: ${llmResult.usage.totalTokens}`
+            `     ✅ LLM [${product.product_id}]: ${
+              llmResult.prediction.recommended_quantity === 0
+                ? "Pas de risque détecté → 0u"
+                : `Risque détecté → ${llmResult.prediction.recommended_quantity}u`
+            } (${llmResult.prediction.confidence}) | tokens: ${llmResult.usage.totalTokens}`
           );
 
           return { success: true, productId: product.product_id };
@@ -270,13 +274,27 @@ export async function calculateReplenishmentNeeds(
         confidence: llmResult.prediction.confidence,
         reasoning: llmResult.prediction.reasoning,
         baseline_quantity: llmResult.prediction.baseline_quantity,
-        // New structured analysis fields
+        // New structured analysis fields - Include ALL fields from LLM
         analysis: {
           frequency_pattern: llmResult.prediction.analysis.frequency_pattern,
           detected_outliers: llmResult.prediction.analysis.detected_outliers,
           seasonality_impact: llmResult.prediction.analysis.seasonality_impact,
           trend_direction: llmResult.prediction.analysis.trend_direction,
+          // Optional Double CoT fields
+          day_cycle_analysis: llmResult.prediction.analysis.day_cycle_analysis,
+          cycle_days: llmResult.prediction.analysis.cycle_days,
+          last_order_date: llmResult.prediction.analysis.last_order_date,
+          predicted_next_date: llmResult.prediction.analysis.predicted_next_date,
+          days_until_next: llmResult.prediction.analysis.days_until_next,
         },
+        // Detailed confidence scores from Double CoT
+        confidence_phase1: llmResult.prediction.confidence_phase1,
+        confidence_phase2: llmResult.prediction.confidence_phase2,
+        // Provider reasoning (thinking tokens from Kimi)
+        provider_reasoning: llmResult.providerReasoning,
+        // Model info
+        model: llmResult.model,
+        provider: llmResult.provider,
         // Token usage for this specific product
         usage: {
           promptTokens: llmResult.usage.promptTokens,
@@ -347,16 +365,23 @@ export async function calculateReplenishmentNeeds(
     // Ajouter TOUS les produits analysés (pour backtest)
     allProducts.push(productStatus);
 
-    // TRIGGER: Skip si stock suffisant (pas de risque de rupture)
-    if (stockPrediction.daysUntilStockout > replenishmentThresholdDays) {
-      console.log(`     ❌ SKIP: Stock OK (${stockPrediction.daysUntilStockout.toFixed(1)}j > ${replenishmentThresholdDays}j)`);
-      continue;
-    }
-
-    // Si LLM dit 0 ET confidence high, on fait confiance
-    if (finalQuantity === 0 && quantitySource === 'llm' && llmResult && llmResult.prediction.confidence === 'high') {
-      console.log(`     ❌ SKIP: LLM dit 0 avec high confidence (pas de besoin détecté)`);
-      continue;
+    // NOUVEAU: Le LLM décide de tout maintenant
+    if (quantitySource === 'llm') {
+      // LLM a répondu
+      if (finalQuantity === 0) {
+        console.log(`     ❌ SKIP: LLM → Pas de risque réel détecté (confidence: ${llmResult?.prediction.confidence})`);
+        continue;
+      }
+    } else {
+      // Fallback si LLM a échoué : utiliser l'ancienne règle mécanique
+      if (stockPrediction.daysUntilStockout > replenishmentThresholdDays) {
+        console.log(`     ❌ SKIP: Stock OK (${stockPrediction.daysUntilStockout.toFixed(1)}j > ${replenishmentThresholdDays}j) [Fallback règle mécanique]`);
+        continue;
+      }
+      if (finalQuantity === 0) {
+        console.log(`     ❌ SKIP: Médiane = 0 (pas d'historique)`);
+        continue;
+      }
     }
 
     console.log(`     ✅ TRIGGER: Risque de rupture détecté!`);

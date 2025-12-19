@@ -1,0 +1,213 @@
+{
+  "executionDate": "2025-12-19T09:37:15.369Z",
+  "config": {
+    "daysBeforePrediction": 1
+  },
+  "aggregateMetrics": {
+    "mean": {
+      "precision": 0.4286666666666667,
+      "recall": 0.8658963585434172,
+      "f1Score": 0.5444013540855426,
+      "mae": 53.93575757575756,
+      "wmape": 47.1302658996387,
+      "mape": 47.975757575757584,
+      "bias": 25.29397652460373
+    },
+    "median": {
+      "precision": 0.5,
+      "recall": 1,
+      "f1Score": 0.6666666666666666,
+      "mae": 2.333333333333333,
+      "wmape": 26.515151515151516,
+      "mape": 29.083333333333336,
+      "bias": 4.545454545454546
+    },
+    "stdDev": {
+      "precision": 0.2166061453934819,
+      "recall": 0.19014152559395378,
+      "f1Score": 0.24440934478314413,
+      "mae": 100.89837457702924,
+      "wmape": 59.547336333833755,
+      "mape": 59.55853360870996,
+      "bias": 71.60560019857498
+    },
+    "percentiles": {
+      "p25": {
+        "recall": 0.7708333333333334,
+        "wmape": 2.272727272727273,
+        "mape": 2.272727272727273,
+        "bias": 0
+      },
+      "p50": {
+        "recall": 1,
+        "wmape": 26.515151515151516,
+        "mape": 29.083333333333336,
+        "bias": 4.545454545454546
+      },
+      "p75": {
+        "recall": 1,
+        "wmape": 56.476249090807364,
+        "mape": 59.375,
+        "bias": 31.439393939393938
+      },
+      "p90": {
+        "recall": 1,
+        "wmape": 109.99999999999996,
+        "mape": 109.99999999999996,
+        "bias": 109.99999999999996
+      }
+    }
+  },
+  "individualResults": [
+    {
+      "clientId": 30,
+      "clientName": "Conserverie Et Moutarderie Belge",
+      "orderName": "S40304",
+      "success": true,
+      "metrics": {
+        "precision": 0.08333333333333333,
+        "recall": 0.42857142857142855,
+        "f1Score": 0.13953488372093023,
+        "mae": 2,
+        "wmape": 200,
+        "mape": 200,
+        "bias": 200
+      }
+    },
+    {
+      "clientId": 99,
+      "clientName": "La Fermette Godelaine de Saint-Georges",
+      "orderName": "S39917",
+      "success": true,
+      "metrics": {
+        "precision": 0.22,
+        "recall": 0.6470588235294118,
+        "f1Score": 0.3283582089552239,
+        "mae": 0.09090909090909091,
+        "wmape": 9.090909090909092,
+        "mape": 9.090909090909092,
+        "bias": 9.090909090909092
+      }
+    },
+    {
+      "clientId": 3452,
+      "clientName": "DELHAIZE LE LION/DE LEEUW NV",
+      "orderName": "S40188",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 342,
+        "wmape": 58.36177474402731,
+        "mape": 62.5,
+        "bias": -58.36177474402731
+      }
+    },
+    {
+      "clientId": 3460,
+      "clientName": "UPFRESH - HUPPA",
+      "orderName": "S40212",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 80,
+        "wmape": 100,
+        "mape": 100,
+        "bias": 100
+      }
+    },
+    {
+      "clientId": 3547,
+      "clientName": "K&F DE PAUW",
+      "orderName": "S40269",
+      "success": true,
+      "metrics": {
+        "precision": 0.05,
+        "recall": 1,
+        "f1Score": 0.09523809523809523,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 3576,
+      "clientName": "HOUGARDY S.A.",
+      "orderName": "S40331",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 3577,
+      "clientName": "ITM ALIMENTAIRE BELGIUM",
+      "orderName": "S40147",
+      "success": true,
+      "metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 1,
+        "f1Score": 0.8,
+        "mae": 32,
+        "wmape": 36.36363636363637,
+        "mape": 50,
+        "bias": 36.36363636363637
+      }
+    },
+    {
+      "clientId": 3590,
+      "clientName": "MAISON DESPRIET SA",
+      "orderName": "S40210",
+      "success": true,
+      "metrics": {
+        "precision": 0.5,
+        "recall": 0.8333333333333334,
+        "f1Score": 0.625,
+        "mae": 80.6,
+        "wmape": 50.81967213114754,
+        "mape": 41.5,
+        "bias": -50.81967213114754
+      }
+    },
+    {
+      "clientId": 3755,
+      "clientName": "BVBA DRINK & FOOD",
+      "orderName": "S39981",
+      "success": true,
+      "metrics": {
+        "precision": 0.6,
+        "recall": 1,
+        "f1Score": 0.7499999999999999,
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0
+      }
+    },
+    {
+      "clientId": 3812,
+      "clientName": "ÖKORING HANDELS GMBH",
+      "orderName": "S40248",
+      "success": true,
+      "metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.75,
+        "f1Score": 0.7058823529411765,
+        "mae": 2.6666666666666665,
+        "wmape": 16.666666666666664,
+        "mape": 16.666666666666668,
+        "bias": 16.666666666666664
+      }
+    }
+  ]
+}

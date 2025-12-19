@@ -1,0 +1,30 @@
+{
+  "clientId": 34558,
+  "clientName": "Oufticoop SC",
+  "orderName": "S40119",
+  "orderDate": "2025-11-04 13:47:12",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 2,
+    "fn": 6,
+    "precision": 0.8181818181818182,
+    "recall": 0.6,
+    "f1Score": 0.6923076923076923,
+    "mae": 1.1111111111111112,
+    "wmape": 52.63157894736842,
+    "mape": 72.22222222222223,
+    "bias": 21.052631578947366
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 8
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 10553,
+    "completionTokens": 9045,
+    "totalTokens": 19598
+  }
+}

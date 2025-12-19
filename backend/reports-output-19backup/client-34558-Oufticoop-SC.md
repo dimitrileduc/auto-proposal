@@ -1,0 +1,352 @@
+# 📊 Rapport Auto-Proposal - Oufticoop SC
+
+**📅 Date:** 18/12/2025 22:32
+**🆔 Client ID:** 34558
+**📧 Email:** N/A
+**⏱️ Durée d'exécution:** 14.5s
+
+---
+
+## 🔍 PHASE 1 - ANALYSE STOCK (RAW)
+
+
+**Produits à risque détectés: 11**
+- Urgents (rupture ≤ 0j): 4
+- Modérés (0 < rupture ≤ 30j): 7
+
+**Total produits (Phase 1): 11**
+**Quantité totale brute: 27 unités**
+
+### Détails par produit
+
+
+<details>
+<summary>🔴 <strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> (ID: 18351) - 2 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.1359
+- **Stock restant estimé**: -0.58
+- **Jours avant rupture**: **-4j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 2 | 17.70€ |
+| 2025-09-10 | S39115 | 4 | 17.70€ |
+| 2025-08-20 | S38576 | 4 | 17.70€ |
+| 2025-07-22 | S38183 | 4 | 17.70€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 4, 4, 4]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 4
+
+</details>
+
+<details>
+<summary>🔴 <strong>[RISH04] RISH kombucha BIO - smash basil 330ml</strong> (ID: 18361) - 2 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0874
+- **Stock restant estimé**: -0.66
+- **Jours avant rupture**: **-7j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 1 | 25.08€ |
+| 2025-09-10 | S39115 | 4 | 25.08€ |
+| 2025-08-20 | S38576 | 2 | 25.08€ |
+| 2025-08-08 | S38421 | 1 | 25.08€ |
+| 2025-07-22 | S38183 | 1 | 25.08€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 4, 2, 1, 1]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 1
+
+</details>
+
+<details>
+<summary>🔴 <strong>[RISH03] RISH kombucha BIO - gingembre 330ml</strong> (ID: 18357) - 1 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0583
+- **Stock restant estimé**: -0.11
+- **Jours avant rupture**: **-1j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 1 | 25.08€ |
+| 2025-09-10 | S39115 | 1 | 25.08€ |
+| 2025-08-20 | S38576 | 1 | 25.08€ |
+| 2025-08-08 | S38421 | 2 | 25.08€ |
+| 2025-07-22 | S38183 | 1 | 25.08€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [1, 1, 1, 2, 1]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 1
+
+</details>
+
+<details>
+<summary>🟡 <strong>[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> (ID: 18322) - 3 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0971
+- **Stock restant estimé**: 1.16
+- **Jours avant rupture**: **11j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 3 | 17.55€ |
+| 2025-09-10 | S39115 | 2 | 17.55€ |
+| 2025-08-08 | S38421 | 3 | 17.55€ |
+| 2025-07-22 | S38183 | 2 | 17.55€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2, 3, 2]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 3
+
+</details>
+
+<details>
+<summary>🟡 <strong>[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> (ID: 18323) - 3 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0930
+- **Stock restant estimé**: 1.23
+- **Jours avant rupture**: **13j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 3 | 17.55€ |
+| 2025-09-10 | S39115 | 2 | 17.55€ |
+| 2025-08-08 | S38421 | 3 | 17.55€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2, 3]
+- **Nombre commandes**: 3
+- **Valeur médiane**: 3
+
+</details>
+
+<details>
+<summary>🟡 <strong>[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> (ID: 18324) - 2 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0874
+- **Stock restant estimé**: 1.34
+- **Jours avant rupture**: **15j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 3 | 17.55€ |
+| 2025-09-10 | S39115 | 2 | 17.55€ |
+| 2025-08-20 | S38576 | 2 | 17.55€ |
+| 2025-07-22 | S38183 | 2 | 17.55€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2, 2, 2]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
+
+</details>
+
+<details>
+<summary>🟡 <strong>[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> (ID: 18325) - 3 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.1165
+- **Stock restant estimé**: 0.79
+- **Jours avant rupture**: **6j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 3 | 17.55€ |
+| 2025-09-10 | S39115 | 3 | 17.55€ |
+| 2025-08-20 | S38576 | 1 | 17.55€ |
+| 2025-08-08 | S38421 | 3 | 17.55€ |
+| 2025-07-22 | S38183 | 2 | 17.55€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [3, 3, 1, 3, 2]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 3
+
+</details>
+
+<details>
+<summary>🟡 <strong>[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> (ID: 18327) - 2 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0971
+- **Stock restant estimé**: 1.16
+- **Jours avant rupture**: **11j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 3 | 16.05€ |
+| 2025-09-10 | S39115 | 2 | 16.05€ |
+| 2025-08-20 | S38576 | 1 | 16.05€ |
+| 2025-08-08 | S38421 | 2 | 16.05€ |
+| 2025-07-22 | S38183 | 2 | 16.05€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: high
+- **Quantités historiques**: [3, 2, 1, 2, 2]
+- **Nombre commandes**: 5
+- **Valeur médiane**: 2
+
+</details>
+
+<details>
+<summary>🟡 <strong>[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> (ID: 18328) - 3 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0874
+- **Stock restant estimé**: 1.34
+- **Jours avant rupture**: **15j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 3 | 16.05€ |
+| 2025-09-10 | S39115 | 2 | 16.05€ |
+| 2025-08-08 | S38421 | 2 | 16.05€ |
+| 2025-07-22 | S38183 | 2 | 16.05€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [3, 2, 2, 2]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
+
+</details>
+
+<details>
+<summary>🟡 <strong>[NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> (ID: 18329) - 2 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0777
+- **Stock restant estimé**: 0.52
+- **Jours avant rupture**: **6j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-10-14 | S39719 | 2 | 16.05€ |
+| 2025-09-10 | S39115 | 2 | 16.05€ |
+| 2025-08-20 | S38576 | 2 | 16.05€ |
+| 2025-07-22 | S38183 | 2 | 16.05€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [2, 2, 2, 2]
+- **Nombre commandes**: 4
+- **Valeur médiane**: 2
+
+</details>
+
+<details>
+<summary>🔴 <strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> (ID: 18353) - 4 unités</summary>
+
+### 📊 Prédiction Stock
+- **Consommation/jour**: 0.0930
+- **Stock restant estimé**: -0.93
+- **Jours avant rupture**: **-9j**
+- **Seuil réappro**: 30j
+
+### 📦 Historique Commandes
+
+| Date | Commande | Qté | Prix unit. |
+| --- | --- | --- | --- |
+| 2025-09-10 | S39115 | 4 | 17.70€ |
+| 2025-08-08 | S38421 | 4 | 17.70€ |
+
+### 🧮 Calcul Quantité
+- **Stratégie**: median_recent_orders
+- **Confiance**: medium
+- **Quantités historiques**: [4, 4]
+- **Nombre commandes**: 2
+- **Valeur médiane**: 4
+
+</details>
+
+
+---
+
+## 💰 PHASE 2.5 - PRICING + AJUSTEMENT MOQ
+
+
+### Avant ajustement MOQ
+
+- **Montant initial: 486.84€**
+- **MOQ requis: 300.00€**
+- ✅ **Déjà au-dessus du MOQ**
+
+### Détails produits avec pricing
+
+
+| Produit | ID | Qté brute | Ajust. MOQ | Qté finale | Prix unit. | Sous-total |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| [REB08] ReBEL chips premium... | 18351 | 2 | 0 | 2 | 17.70€ | 35.40€ |
+| [RISH04] RISH kombucha BIO ... | 18361 | 2 | 0 | 2 | 25.08€ | 50.16€ |
+| [RISH03] RISH kombucha BIO ... | 18357 | 1 | 0 | 1 | 25.08€ | 25.08€ |
+| [NUT08] NUTS & BERRIES Bar ... | 18322 | 3 | 0 | 3 | 17.55€ | 52.65€ |
+| [NUT07] NUTS & BERRIES Bar ... | 18323 | 3 | 0 | 3 | 17.55€ | 52.65€ |
+| [NUT06] NUTS & BERRIES Bar ... | 18324 | 2 | 0 | 2 | 17.55€ | 35.10€ |
+| [NUT05] NUTS & BERRIES Bar ... | 18325 | 3 | 0 | 3 | 17.55€ | 52.65€ |
+| [NUT01] NUTS & BERRIES ener... | 18327 | 2 | 0 | 2 | 16.05€ | 32.10€ |
+| [NUT03] NUTS & BERRIES ener... | 18328 | 3 | 0 | 3 | 16.05€ | 48.15€ |
+| [NUT02] NUTS & BERRIES ener... | 18329 | 2 | 0 | 2 | 16.05€ | 32.10€ |
+| [REB01] ReBEL chips premium... | 18353 | 4 | 0 | 4 | 17.70€ | 70.80€ |
+
+**Total (Phase 2.5): 486.84€**
+
+---

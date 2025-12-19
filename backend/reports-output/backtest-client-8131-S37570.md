@@ -11,8 +11,8 @@
 
 ### 🤖 Usage LLM
 
-- **Appels**: 6
-- **Tokens**: 7,394 input + 13,422 output = 20,816 total
+- **Appels**: 8
+- **Tokens**: 5,294 input + 14,897 output = 20,191 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 62.5% | 8 produits prédits, 5 corrects |
+| **Précision** | 83.3% | 6 produits prédits, 5 corrects |
 | **Rappel** | 100.0% | 5 produits réels, 5 détectés |
-| **F1-Score** | 76.9% | Score équilibré global |
+| **F1-Score** | 90.9% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -69,10 +69,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 144.80 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 71.3% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 48.4% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | -71.3% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **MAE** | 144.60 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 71.2% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 46.4% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | -71.2% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 4 | Avec erreur |
 
@@ -149,7 +149,7 @@
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
 | [PF0078] FILOU CHASSEUR 5 L | 160 | 800 | 640.0 | 80.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0077] FILOU PROVENCALE 5 L | 24 | 50 | 26.0 | 52.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 4 | 10 | 6.0 | 60.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 5 | 10 | 5.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0085] FILOU CURRY KETCHUP  10 KG | 52 | 104 | 52.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | 52 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
@@ -160,22 +160,64 @@
 <details>
 <summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 160u vs Médiane: 160u (Réel: 800u)</summary>
 
-**Quantités:**
-- 🤖 **LLM prédit**: 160u (confidence: high)
-- 📊 **Baseline N-1**: 160u
-- 📊 **Médiane**: 160u
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 160u
+- 📊 **Baseline calculée**: 160u
+- 📊 **Médiane historique**: 160u
 - ✅ **Réel commandé**: 800u
 - 📉 **Erreur LLM**: 640u (80.0%)
 - 📉 **Erreur Médiane**: 640u (80.0%)
 
-**🔍 Analyse LLM:**
-- **Pattern temporel**: Cycle hebdomadaire identifié avec commande récurrente le vendredi
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 160u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: high
+- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 2 (quantité)**: high
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Commande hebdomadaire régulière, principalement le vendredi
+- **Cycle médian (jours)**: 7
+- **Dernière commande**: 2025-06-13
+- **Prochaine prédite**: 2025-06-20 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
-- **Tendance**: Stable à 160u
+- **Tendance**: stable
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: 240u
 
 **🧠 Raisonnement LLM:**
-L'analyse montre une régularité forte avec 4 commandes sur 5 passées le vendredi. La demande de fond (baseline) est clairement établie à 160 unités, niveau observé dans 80% des cas récents. La commande de 240u le 06 juin est considérée comme un outlier (pic ponctuel). Étant donné que la dernière commande date du vendredi 13 juin et que nous sommes le jeudi 19 juin, la prochaine commande interviendra selon toute probabilité demain, vendredi 20 juin. En suivant la règle de non-cumul, nous prédisons uniquement cette prochaine livraison de 160u.
+Le cycle hebdomadaire est très clair avec 4 commandes sur 5 passées un vendredi à 7 jours d'intervalle. La prochaine commande est statistiquement prévue pour demain (2025-06-20). La quantité de 160u est la norme constante (mode et médiane), la commande de 240u étant un événement isolé.
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 703 tokens
+- **Output**: 1,160 tokens
+- **Total**: 1,863 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Tracking Recent Product History**
+
+I'm focused on the production history for [PF0078] FILOU CHASSEUR 5 L. The data shows recent production runs, including 160 units on June 13th, 240 units on June 6th, and another 160 on June 3rd. I'll need to analyze this further to identify patterns or potential issues.
+
+
+**Predicting Future Demand**
+
+I've calculated the median interval between orders, which is 7 days. Considering the last order was on June 13th, I'm expecting the next one on June 20th – tomorrow. Given the current date and the order history, I'm assessing the risk of a stockout and the recommended order quantity, leaning towards 160 units based on the frequency.
+
+
+**Assessing Order Prediction Accuracy**
+
+Based on the order history, I've confirmed a clear weekly pattern, with a slight acceleration in early June. With tomorrow's predicted order date (June 20th), the recommendation remains at 160 units, showing a high confidence in the accuracy of my analysis and recommendations. I'm focusing on the outlying order of 240, it is clearly an outlier.
+
+
+
+
+</details>
 
 </details>
 
@@ -183,45 +225,139 @@ L'analyse montre une régularité forte avec 4 commandes sur 5 passées le vendr
 <details>
 <summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM: 24u vs Médiane: 24u (Réel: 50u)</summary>
 
-**Quantités:**
-- 🤖 **LLM prédit**: 24u (confidence: medium)
-- 📊 **Baseline N-1**: 22.6u
-- 📊 **Médiane**: 24u
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 24u
+- 📊 **Baseline calculée**: 24u
+- 📊 **Médiane historique**: 24u
 - ✅ **Réel commandé**: 50u
 - 📉 **Erreur LLM**: 26u (52.0%)
 - 📉 **Erreur Médiane**: 26u (52.0%)
 
-**🔍 Analyse LLM:**
-- **Pattern temporel**: Cycle hebdomadaire marqué avec une préférence pour le vendredi (intervalles de 7 à 10 jours)
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 24u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 2 (quantité)**: medium
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Cycle hebdomadaire régulier avec une préférence pour le vendredi
+- **Cycle médian (jours)**: 8.5
+- **Dernière commande**: 2025-06-13
+- **Prochaine prédite**: 2025-06-20 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
-- **Tendance**: Stable autour de 20-24u après correction de l'anomalie
+- **Tendance**: stable
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: 80u
 
 **🧠 Raisonnement LLM:**
-L'analyse montre un cycle récurrent le vendredi. L'étape 1 a permis d'isoler la commande de 80u du 03/06 comme un outlier (stockage exceptionnel ou promotion), la consommation de fond se situant entre 20 et 24u. L'absence de données N-1 ne permet pas de confirmer une saisonnalité forte malgré la nature estivale du produit. La tendance récente est stable. Étant donné que la dernière commande remonte au 13/06 (soit 6 jours avant la date actuelle), une commande est prévue dans les 30 prochains jours, probablement dès le vendredi 20/06. On recommande la quantité de fond standard de 24u pour la prochaine livraison.
+Le cycle habituel de ce client est hebdomadaire (intervalles de 7 à 10 jours), souvent le vendredi. La dernière commande datant du 13 juin, la prochaine commande théorique tombe le 20 juin (J+1 par rapport à la date de prédiction). Un risque de rupture à 30 jours est donc confirmé. En excluant l'outlier de 80u, la consommation se stabilise autour de 24u (quantité la plus fréquente et base du cycle).
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 698 tokens
+- **Output**: 1,648 tokens
+- **Total**: 2,346 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Calculating Production Needs**
+
+I've been calculating production needs for FILOU PROVENCALE, specifically focusing on the 5L variant. The target date is June 19th, 2025. I've noted a need for 20 units on June 13th, with a jump to 80 units on June 3rd. Before that, the demand was lower, at 24 units on the 16th and 9th of May.
+
+
+**Predicting Upcoming Demands**
+
+I'm now focusing on projecting upcoming demand, concentrating on the intervals between orders. These vary, but a pattern of roughly 7 to 10 days emerges, leaning towards a week. Given the latest order on June 13th, I anticipate another order imminently, within the next 4 days to meet the June 19th target. The outlier of 80 units warrants further examination, yet the median quantity remains unknown.
+
+
+**Evaluating Order Quantities**
+
+I'm now assessing the order quantities, focusing on the discrepancy in the 80-unit order compared to the others. The median and mode both point towards 24 units, which seems to be the baseline. Considering the regular weekly cycle, the next order is highly likely to be on June 20th. I'm leaning toward recommending 24 units.
+
+
+**Determining Order Recommendations**
+
+I'm now consolidating my findings. The frequency is clearly weekly, with Friday as the typical order day. Given the last order on June 13th, I expect one imminently, most likely June 20th. The data suggests a baseline of 24 units, despite the 80-unit outlier. I am recommending a production of 24 units.
+
+
+
+
+</details>
 
 </details>
 
 
 <details>
-<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM: 4u vs Médiane: 5u (Réel: 10u)</summary>
+<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM: 5u vs Médiane: 5u (Réel: 10u)</summary>
 
-**Quantités:**
-- 🤖 **LLM prédit**: 4u (confidence: medium)
-- 📊 **Baseline N-1**: 4.5u
-- 📊 **Médiane**: 5u
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 5u
+- 📊 **Baseline calculée**: 4.5u
+- 📊 **Médiane historique**: 5u
 - ✅ **Réel commandé**: 10u
-- 📉 **Erreur LLM**: 6u (60.0%)
+- 📉 **Erreur LLM**: 5u (50.0%)
 - 📉 **Erreur Médiane**: 5u (50.0%)
 
-**🔍 Analyse LLM:**
-- **Pattern temporel**: Cycle mensuel avec une prédilection pour le vendredi
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 5u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: high
+- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 2 (quantité)**: high
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Commandes régulières avec une forte prévalence le vendredi, cycle médian de 14 jours.
+- **Cycle médian (jours)**: 14
+- **Dernière commande**: 2025-06-13
+- **Prochaine prédite**: 2025-06-27 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
-- **Tendance**: Baisse progressive du volume (5u à 3u) et ralentissement de la fréquence
+- **Tendance**: stable
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: 60u
 
 **🧠 Raisonnement LLM:**
-Étape 1 : La commande de 60u du 11/04 est exclue car elle représente 12 fois la médiane habituelle, suggérant un événement exceptionnel (stockage ou promotion). Étape 2 : Absence de données N-1 pour confirmer une saisonnalité, impact considéré comme nul. Étape 3 : On observe un allongement des intervalles entre les commandes (7, 10, 18 puis 28 jours) et une légère baisse de volume sur la dernière commande (3u). Étape 4 : Sur la base du dernier cycle de 28 jours, la prochaine commande est attendue aux alentours du 11 juillet, soit à l'intérieur de la fenêtre des 30 jours. La quantité recommandée de 4u est une moyenne pondérée entre le volume historique stable (5u) et le ralentissement récent (3u).
+Le produit présente un cycle de réapprovisionnement régulier (médiane de 14 jours). La prochaine commande est estimée pour le 27 juin, soit dans 8 jours, ce qui justifie une commande préventive. La quantité de 60 unités est identifiée comme un outlier exceptionnel ; le volume récurrent est de 5 unités.
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 696 tokens
+- **Output**: 1,428 tokens
+- **Total**: 2,124 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Tracking Product Timeline**
+
+I'm focused on the production timeline for product PF0088. Recent updates show a consistent pattern. We have 3 units slated for June 13th, following 5 units on May 16th. This gives us a 28-day gap between those orders. I need to understand if this gap is normal, or a concern.
+
+
+**Projecting Demand Needs**
+
+I'm now calculating the next potential order date, based on the past order frequency. With a median cycle of 14 days, and the last order on June 13th, I anticipate another order around June 27th. Given the baseline of 5 units and the latest order of 3, a stockout risk is flagged for the near term.
+
+
+**Confirming Order Predictions**
+
+I'm now cross-referencing my calculations. The frequency analysis points to a 14-day cycle, indicating an order around June 27th. Comparing this with the 60 unit outlier, I'm adjusting for a stable baseline of 5 units. A stockout risk remains given this demand, but is mitigated by the stable demand. I am now finalizing the recommended order quantity of 5 units.
+
+
+**Predicting Next Demand**
+
+I'm now zeroing in on the anticipated next order. The frequency analysis suggests an order around June 27th. The last order was six days ago, triggering a stockout risk due to consistent demand. Based on the median of 5 units and the 3 units from the most recent order, I'm recommending we order 5 units.
+
+
+
+
+</details>
 
 </details>
 
@@ -229,22 +365,69 @@ L'analyse montre un cycle récurrent le vendredi. L'étape 1 a permis d'isoler l
 <details>
 <summary><strong>4. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM: 52u vs Médiane: 52u (Réel: 104u)</summary>
 
-**Quantités:**
-- 🤖 **LLM prédit**: 52u (confidence: high)
-- 📊 **Baseline N-1**: 52u
-- 📊 **Médiane**: 52u
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 52u
+- 📊 **Baseline calculée**: 52u
+- 📊 **Médiane historique**: 52u
 - ✅ **Réel commandé**: 104u
 - 📉 **Erreur LLM**: 52u (50.0%)
 - 📉 **Erreur Médiane**: 52u (50.0%)
 
-**🔍 Analyse LLM:**
-- **Pattern temporel**: Rythme variable entre 11 et 25 jours, avec une moyenne constatée de 18,5 jours.
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 52u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: high
+- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 2 (quantité)**: high
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Cycle régulier oscillant entre 11 et 25 jours, avec une médiane de 19 jours.
+- **Cycle médian (jours)**: 19
+- **Dernière commande**: 2025-06-03
+- **Prochaine prédite**: 2025-06-22 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
-- **Tendance**: Stable à 52u
+- **Tendance**: stable
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-L'historique montre une stabilité parfaite du volume par commande (52 unités systématiques). Le cycle de commande moyen est de 19 jours environ. La dernière commande ayant eu lieu le 3 juin 2025, la prochaine échéance théorique se situe autour du 22 juin 2025, soit dans 3 jours. Ce besoin tombe donc précisément au début de la fenêtre de prédiction des 30 jours. Bien qu'un second cycle puisse techniquement se produire avant le 19 juillet, conformément aux consignes, seule la quantité de la prochaine commande unique (52u) est retenue.
+La demande est extrêmement stable avec une quantité fixe de 52 unités par commande. Le cycle médian calculé sur les 3 derniers mois est de 19 jours. La dernière commande datant du 3 juin, la prochaine commande est estimée aux alentours du 22 juin, soit dans seulement 3 jours par rapport à la date actuelle (19 juin). Le risque de commande imminente est donc très élevé.
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 702 tokens
+- **Output**: 1,380 tokens
+- **Total**: 2,082 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Tracking Recent Product History**
+
+I'm currently focused on the product history for [PF0085] FILOU CURRY KET CHUP 10 KG. Recent data shows a consistent 52u unit usage. The intervals between tracked dates are decreasing - from 25 days to 11. I need to keep an eye on this for any significant deviations.
+
+
+**Forecasting Future Orders**
+
+I've calculated the median interval between orders to be 19 days. Based on this, and the last order on 2025-06-03, I predict the next order will be around 2025-06-22. With today being 2025-06-19, this suggests an order is expected in approximately 3 days. A risk assessment confirms this needs attention. Quantity has been a consistent 52 units.
+
+
+**Evaluating Order Predictions**
+
+I've examined the recent order history, confirming the anticipated 52-unit quantity. The predicted order date, June 22nd, is fast approaching, so I've calculated and confirmed it, with a high confidence. The intervals suggest a stable, regular pattern. My recommendations are clear.
+
+
+**Refining Order Predictions**
+
+I've re-evaluated the order intervals, confirming a median cycle of 19 days. Based on the last order on June 3rd, I've confirmed that the next one is due on June 22nd. This analysis has identified a need for an order in approximately three days. The quantity is stable at 52 units, and the reasoning is sound.
+
+
+
+
+</details>
 
 </details>
 
@@ -252,22 +435,69 @@ L'historique montre une stabilité parfaite du volume par commande (52 unités s
 <details>
 <summary><strong>5. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM: 52u vs Médiane: 52u (Réel: 52u)</summary>
 
-**Quantités:**
-- 🤖 **LLM prédit**: 52u (confidence: medium)
-- 📊 **Baseline N-1**: 52u
-- 📊 **Médiane**: 52u
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 52u
+- 📊 **Baseline calculée**: 52u
+- 📊 **Médiane historique**: 52u
 - ✅ **Réel commandé**: 52u
 - 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
-**🔍 Analyse LLM:**
-- **Pattern temporel**: Cycle d'environ 21 à 25 jours, principalement le vendredi
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 52u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 2 (quantité)**: medium
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Intervalle variable entre 4 et 21 jours, moyenne à 12.5 jours
+- **Cycle médian (jours)**: 13
+- **Dernière commande**: 2025-05-23
+- **Prochaine prédite**: 2025-06-05 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
-- **Tendance**: Stable avec un volume préférentiel de 52u
-- **Outliers détectés**: Aucun
+- **Tendance**: stable
+- **Analyse jour cycle**: N/A
+- **Outliers détectés**: 26u
 
 **🧠 Raisonnement LLM:**
-L'analyse de l'historique montre deux commandes de 52u espacées par une petite commande de réajustement (26u). L'intervalle entre la commande du 02/05 et du 23/05 était de 21 jours. Aujourd'hui, 19 juin, cela fait 27 jours depuis la dernière livraison. Le client est donc en retard sur son cycle habituel. Étant donné que le produit est du ketchup (10kg), le volume de 52u semble correspondre à un standard de livraison (type palette ou couche). Une commande de 52u est attendue dans les prochains jours pour reconstituer le stock.
+La dernière commande date d'il y a 27 jours (2025-05-23), ce qui excède le cycle maximum observé de 21 jours. Le client est donc en rupture probable ou en retard critique par rapport à son rythme habituel. La quantité de 52 unités représente le volume standard majoritaire (mode) sur l'historique récent.
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 646 tokens
+- **Output**: 1,389 tokens
+- **Total**: 2,035 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Examining Product Demand**
+
+My initial review of the tomato ketchup product, PF0959, reveals fluctuating demand. I've noted sales of 52 units on May 23rd, 26 units on May 2nd, and 52 units on April 28th. The data suggests the need to analyze the specific factors driving these variations and consider the lack of data prior to the current timeframe.
+
+
+**Assessing Order Frequency**
+
+I've calculated the intervals between orders, finding a median and average of 12.5 days. Comparing this to the time since the last order, 27 days, and also to the maximum interval (21 days), I've determined that a new order is likely overdue, therefore a supply shortage is possible. I've set a 30-day horizon for analysis.
+
+
+**Determining Supply Action**
+
+I've just refined the analysis of the tomato ketchup product, PF0959, and confirmed a likely overdue order. The customer's order frequency, approximately every 12.5 days on average, suggests a purchase was predicted on June 5th. Since the current date is June 19th, and 27 days have passed since the last order, I am recommending immediate action to secure a full order of 52 units, mitigating the risk of a supply shortage.
+
+
+**Refining Order Predictions**
+
+I've just finished running an in-depth analysis of the product's demand history. Based on the calculated frequency patterns and the fact the customer is overdue for an order, I'm recommending the standard quantity of 52 units. I've classified this as a high-risk situation, given the time elapsed since the last order.
+
+
+
+
+</details>
 
 </details>
 
@@ -328,7 +558,7 @@ L'analyse de l'historique montre deux commandes de 52u espacées par une petite 
 **📅 Commandes N-1 (même période année dernière):**
 - Aucune commande N-1
 
-**✅ Quantité LLM**: 4u (confidence: medium)
+**✅ Quantité LLM**: 5u (confidence: high)
 **📊 Quantité Réelle**: 10u
 
 </details>
@@ -374,7 +604,7 @@ L'analyse de l'historique montre deux commandes de 52u espacées par une petite 
 
 ---
 
-## False Positives (3)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -394,9 +624,7 @@ L'analyse de l'historique montre deux commandes de 52u espacées par une petite 
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0097] FILOU MOUTARDE 5 KG | 25 | Stock prédit: -13.5u (-15j restants) → prédit 25u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 20 | Stock prédit: 6.2u (14j restants) → prédit 20u mais non commandé |
-| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 15 | Stock prédit: -2.5u (-22j restants) → prédit 15u mais non commandé |
+| [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 6 | Stock prédit: -2.5u (-22j restants) → prédit 6u mais non commandé |
 
 
 ---
@@ -420,4 +648,4 @@ L'analyse de l'historique montre deux commandes de 52u espacées par une petite 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-18T19:54:59.644Z*
+*Rapport généré automatiquement le 2025-12-19T11:18:25.517Z*

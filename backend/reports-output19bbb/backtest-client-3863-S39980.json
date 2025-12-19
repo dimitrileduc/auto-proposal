@@ -1,0 +1,30 @@
+{
+  "clientId": 3863,
+  "clientName": "C.F. GRELL NACHF. NATURKOST",
+  "orderName": "S39980",
+  "orderDate": "2025-10-29 07:42:30",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 28,
+    "wmape": 58.333333333333336,
+    "mape": 56.25,
+    "bias": -58.333333333333336
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 9389,
+    "completionTokens": 9615,
+    "totalTokens": 19004
+  }
+}

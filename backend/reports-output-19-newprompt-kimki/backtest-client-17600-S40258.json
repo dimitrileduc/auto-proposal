@@ -1,0 +1,30 @@
+{
+  "clientId": 17600,
+  "clientName": "SDP Rungis",
+  "orderName": "S40258",
+  "orderDate": "2025-11-12 08:36:42",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 17,
+    "fn": 2,
+    "precision": 0.10526315789473684,
+    "recall": 0.5,
+    "f1Score": 0.17391304347826086,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 66868,
+    "completionTokens": 166845,
+    "totalTokens": 233713
+  }
+}
