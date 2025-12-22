@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 36
-- **Tokens**: 22,228 input + 94,571 output = 116,799 total
+- **Tokens**: 29,281 input + 91,551 output = 120,832 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 12.5% | 16 produits prédits, 2 corrects |
+| **Précision** | 10.0% | 20 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 22.2% | Score équilibré global |
+| **F1-Score** | 18.2% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -172,59 +172,69 @@
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle irrégulier avec une alternance de commandes très rapprochées (6-8 jours) et un intervalle long récent de 42 jours.
+- **Pattern temporel**: Cycle court initial (7j) avec une interruption exceptionnelle de 42 jours en août-septembre.
 - **Cycle médian (jours)**: 8
 - **Dernière commande**: 2025-09-24
-- **Prochaine prédite**: 2025-10-02 
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Prochaine prédite**: 2025-10-02 (dans 2j)
+- **Dans horizon 30j ?**: ✅ OUI
+- **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
-- **Outliers détectés**: 1u
+- **Analyse jour cycle**: Les commandes tombent majoritairement le mercredi (75% des cas en 2025), la prochaine est prévue pour mercredi 01/10 ou jeudi 02/10.
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La structure des commandes montre une tendance à commander des quantités de 6u (moyenne et médiane robuste). Bien qu'un long intervalle de 42 jours ait eu lieu récemment, le cycle médian de 8 jours calculé sur l'historique suggère une prochaine échéance très proche (début octobre). Le risque de rupture est identifié car la date prédite est à moins de 40 jours. On privilégie la quantité récurrente de 6u plutôt que le pic exceptionnel de 16u observé en N-1.
+Le cycle médian détecté est de 8 jours malgré une anomalie temporelle en septembre. La dernière commande datant du 24/09, une nouvelle commande est attendue sous 48h. La quantité recommandée de 6 unités correspond à la médiane exacte des commandes récentes et à la répétition stricte observée sur les deux dernières dates (6u chacune). L'historique N-1 (16u) n'est pas retenu car il s'agit d'un point isolé ne confirmant pas une tendance saisonnière structurelle.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 695 tokens
-- **Output**: 2,264 tokens
-- **Total**: 2,959 tokens
+- **Input**: 891 tokens
+- **Output**: 3,213 tokens
+- **Total**: 4,104 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Product Quantities**
+**Reviewing Product History**
 
-I'm currently focused on the sales data for FILOU MAYONNAISE, specifically the 1000ml size. I noted a production of 6 units last Wednesday, September 24th, matching the prior week's output. Further back, I see a small order from early August. I'm keen to understand the recent output of ten units in July.
-
-
-**Calculating Order Intervals**
-
-Now I'm digging deeper into the order cycles. I've calculated the intervals between orders, focusing on the median interval to forecast the next order date. I am predicting the next order will happen very soon, either on October 1st or October 2nd. I'm taking the average into account, and checking the data for the last order to confirm.
+I'm currently reviewing the production history for PF0121. The recent output of Filou Mayonnaise has been volatile. I see six units produced on the 24th, a similar number in August, and smaller batches before that. This variation merits further investigation into the cause.
 
 
-**Projecting Order Quantities**
+**Predicting Production Schedules**
 
-I've examined the order quantities. Considering the recent trend, the median quantity appears to be 6 units. However, I've noted a higher volume of 16 units in September of the previous year. I'm taking the seasonal data and the impact of the outlier "1" into account, with an eye on the baseline order of 6 units.
-
-
-**Refining Prediction Accuracy**
-
-I'm now zeroing in on the recommended order. Considering the erratic nature of the ordering frequency, I'm setting my confidence level as medium. I am leaning towards recommending 6 units based on the recent order history and calculating the next order date for October 2nd. I have accounted for a higher volume in September of the previous year.
+I'm now calculating potential production needs for Filou Mayonnaise. Considering a weekly cycle, the next order is estimated around October 2nd. However, acknowledging the longer gaps observed, particularly the 42-day pause, a November 5th date is also possible. I'm focusing on these divergent scenarios to assess the risk of product shortages within a 30-day timeframe.
 
 
-**Synthesizing Recommendations**
+**Evaluating the Production Cycle**
 
-I'm now integrating all the data to finalize my recommendations. I'm focusing on the irregular ordering pattern, the median cycle of 8 days, and the predicted date of October 2nd. I am choosing a quantity of 6 units for the next order, while keeping the high risk level and medium confidence in mind.
+I'm now zeroing in on the safety stock levels. A baseline of six units seems appropriate, considering the recent consistent demand and a stable trend. There is a potential need for a replenishment order in the first week of October.
 
 
-**Concluding the Analysis**
+**Forecasting Demand Patterns**
 
-I've completed my analysis. The irregular pattern, with an 8-day median cycle, points to an order on October 2nd. The recent orders have been 6 units, and I will recommend that quantity, holding a medium confidence level. The impact of the "16" from last September seems to have passed already.
+I'm now assessing the risk of product rupture within the next 30 days. Considering the irregular ordering cycles and recent consistent demand of six units, a replenishment order around October 8th seems likely, potentially sooner. The 42-day gap observed earlier introduces uncertainty, but the near-term risk appears manageable, warranting a close watch.
+
+
+**Finalizing the Risk Assessment**
+
+I've determined a risk of product rupture within the next 30 days. Evaluating the 6u median quantity and the irregular but recent activity, with a last order on September 24th, the next order is likely between October 2nd and October 15th. Given this, I'm recommending a replenishment order of 6 units.
+
+
+**Determining the Replenishment**
+
+I'm now assessing the next order date and quantity for Filou Mayonnaise, reviewing recent data. The analysis of the product's ordering pattern reveals an erratic cycle. I am leaning toward a replenishment order of 6 units, considering the recent consistent demand. I am confident that there is a high probability of product rupture within 30 days.
+
+
+**Assessing Order Intervals**
+
+I'm now revisiting the order cycle, recognizing the pattern's irregularity. The 42-day gap throws off simple weekly or bi-weekly expectations. Calculating medians shows potential order dates in October, but considering the varying intervals, I'm focusing on the risk assessment within a 30-day window.
+
+
+**Calculating The Replenishment**
+
+I've finalized my analysis and generated the JSON output. The next order date is estimated around October 2nd, with a quantity of 6 units. While uncertainty persists due to a 42-day gap, the last two orders align with this assessment, increasing my confidence in these recommendations, and a high probability of product rupture within 30 days.
 
 
 
@@ -251,11 +261,11 @@ I've completed my analysis. The irregular pattern, with an 8-day median cycle, p
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Inactivité de 48 jours après un court intervalle de 6 jours en août
+- **Pattern temporel**: Activité par grappes (6 jours d'intervalle en août) suivie d'une latence prolongée de 48 jours.
 - **Cycle médian (jours)**: 6
 - **Dernière commande**: 2025-08-13
 - **Prochaine prédite**: 2025-09-30 
@@ -266,55 +276,50 @@ I've completed my analysis. The irregular pattern, with an 8-day median cycle, p
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Bien que le délai depuis la dernière commande (48 jours) dépasse le seuil théorique de 40 jours, la présence d'une commande en septembre l'année précédente (N-1) et le caractère saisonnier du produit (Vol au Vent) à l'approche du T4 justifient une commande de réapprovisionnement. On se base sur la quantité constante de 24 unités observée en août.
+Bien que le délai depuis la dernière commande (48 jours) dépasse le seuil habituel de 45 jours, la présence d'une commande à la même période en N-1 (septembre) et le fait qu'une commande a eu lieu il y a moins de 90 jours indiquent un besoin de réapprovisionnement imminent. La quantité recommandée de 24 unités s'appuie sur la médiane parfaite des commandes récentes en 2025, privilégiant la stabilité actuelle par rapport au volume légèrement plus élevé de l'an dernier (32u).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 635 tokens
-- **Output**: 2,702 tokens
-- **Total**: 3,337 tokens
+- **Input**: 831 tokens
+- **Output**: 2,354 tokens
+- **Total**: 3,185 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating historical data**
+**Forecasting Production Volumes**
 
-I'm currently crunching the data for product [PF0088] FILOU VOL AU VENT 800 GR. I've successfully pulled the recent history, specifically from August 7th and 13th, 2025. Now I'm preparing to calculate the history N-1, though the initial data for that period seems to be missing.
-
-
-**Evaluating Current Risk Level**
-
-I'm now assessing the risk based on the data. It's been 48 days since the last order of [PF0088] FILOU VOL AU VENT 800 GR. The rule's conditions are met, so the client is low-risk. I also note the very small sample for calculating the cycle.
+I'm currently focused on the production volume forecast for the 'FILOU VOL AU VENT' product. Based on the recent history, I have a clear picture of the last two production runs with 24 units each, and further back, the September 2024 run with 32 units. Now I am trying to determine the interval between those two dates.
 
 
-**Assessing Order Patterns**
+**Calculating Order Frequency**
 
-Okay, I'm now analyzing the order frequency and timing for [PF0088]. The recent history reveals orders in August, and the last order was 48 days ago, which triggered a "non-risk" assessment. However, the short cycle observed in August raises concerns. Comparing this to the N-1 order in September, and considering the product's use case, it seems a replenishment might have been expected already.
-
-
-**Calculating Order Probability**
-
-I've been wrestling with the data and risk parameters. The 48-day gap since the last order for [PF0088] is concerning, especially given the short interval observed in August. Comparing this year's activity to last year's September order, the client seems behind schedule. Considering the product's seasonality and the rule-based risk assessment, an order is now probable.
+I've taken a deeper dive into the provided data and I'm focused on the order frequency. There's a clear 6-day cycle in August based on the initial information. However, I've now calculated that 48 days have passed since the last order, and I'm concerned about a potential stockout or a seasonal factor impacting demand. Given that the N-1 date from the previous year is within this time, I am looking at seasonality.
 
 
-**Predicting Next Order Details**
+**Interpreting Ordering Patterns**
 
-I'm now determining the order parameters. Reviewing the data, the last order was August 13th, with a 6-day cycle observed then. However, the 48-day gap and September's arrival compared to the N-1 order from last year increase the risk. Considering the product, "Vol au Vent," and its likely seasonal use, I'll recommend an order. My recommendation is based on the recent median quantity, being 24 units.
-
-
-**Concluding Order Recommendations**
-
-I've finalized my analysis and am ready to make a recommendation. Despite the 48-day gap since the last order and a short August cycle, the September N-1 order and seasonal factors warrant an order. Considering the recent median, the recommended quantity is 24 units.
+After a thorough review, I've pinpointed a key discrepancy: the 48-day gap since the last order, contrasting sharply with the 6-day interval observed in August. Given the N-1 order from last September and the product's typical seasonality, I think a replenishment order is highly probable now or soon.
 
 
-**Confirming Recommendation Parameters**
+**Evaluating Replenishment Timing**
 
-I'm now revisiting the "days_until_next" calculation, aiming for greater precision. Considering the erratic cycle observed and the 48-day gap, I must reconcile the data with the likely seasonal nature of the product. The last order, the August cycle, and the N-1 September order are all informing my final decision.
+I'm now zeroing in on the replenishment timing for the product, considering its sporadic ordering behavior. Despite the 48-day gap since the last order, and following the rule, the recent history of an order in September N-1 indicates a likely seasonal replenishment is due now, and 24 units are likely the correct quantity.
 
 
-**Fine-tuning Recommendations**
+**Reassessing Risk Profiles**
 
-I'm now revisiting the "days_until_next" and "predicted_next_date" values. The recent 48-day gap necessitates careful consideration, especially with the limited data and the N-1 September order. I'm focusing on aligning the prediction with the seasonal context and minimizing risk through precise calculations. The JSON format is also being finalized.
+I'm now refining the decision criteria, particularly the definition of a "regular cycle" for this product. The limited data suggests a pattern of intense activity followed by a pause. Considering N-1 and the current timing, a replenishment is likely and I am leaning towards recommending 24 units, although confidence remains moderate due to the 48-day gap since the last order.
+
+
+**Refining the Recommendation**
+
+I'm now revisiting the decision rules. The initial assumption of a regular cycle based on a 6-day gap is questionable. Given that the 48-day absence falls near an N-1 September order, and considering the product's likely seasonal nature, I recommend a replenishment of 24 units.
+
+
+**Confirming Replenishment Recommendation**
+
+Based on the latest data, the product's ordering pattern is sporadic with a 48-day gap since the last order, but similar to the prior year. While a 6-day cycle was observed, it's not consistent. The seasonal nature combined with the current date suggests replenishment is needed, so I'm sticking with a 24-unit recommendation.
 
 
 
@@ -367,7 +372,7 @@ I'm now revisiting the "days_until_next" and "predicted_next_date" values. The r
 
 ---
 
-## False Positives (14)
+## False Positives (18)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -387,20 +392,24 @@ I'm now revisiting the "days_until_next" and "predicted_next_date" values. The r
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 208 | Stock prédit: 183.8u (37j restants) → prédit 208u mais non commandé |
+| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 201 | Stock prédit: 183.8u (37j restants) → prédit 201u mais non commandé |
 | [PF0077] FILOU PROVENCALE 5 L | 20 | Stock prédit: 26.5u (38j restants) → prédit 20u mais non commandé |
 | [PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML | 5 | Stock prédit: 5.2u (31j restants) → prédit 5u mais non commandé |
-| [PF3270] JF TRUFFLE MAYONNAISE 925ML | 6 | Stock prédit: 5.1u (27j restants) → prédit 6u mais non commandé |
+| [PF3274] JF BURGER SAUCE 925ML | 1 | Stock prédit: 0.5u (5j restants) → prédit 1u mais non commandé |
 | [PF3271] JF WASABI MAYONNAISE 925ML | 4 | Stock prédit: 3.6u (41j restants) → prédit 4u mais non commandé |
 | [PF0959] FILOU TOMATO KETCHUP 10KG | 15 | Stock prédit: 13.9u (65j restants) → prédit 15u mais non commandé |
 | [JF009] JF SAUCE TARTARE 250ML WECK | 3 | Stock prédit: 1.3u (15j restants) → prédit 3u mais non commandé |
 | [JF031] JF SAUCE LIEGEOISE 380GX6 | 6 | Stock prédit: 2.1u (8j restants) → prédit 6u mais non commandé |
-| [JF032] JF SAUCE LAPIN 380GX6 | 6 | Stock prédit: 1.6u (5j restants) → prédit 6u mais non commandé |
+| [JF032] JF SAUCE LAPIN 380GX6 | 7 | Stock prédit: 1.6u (5j restants) → prédit 7u mais non commandé |
 | [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: 0.2u (5j restants) → prédit 1u mais non commandé |
 | [PF0093] FILOU MOUTARDE 300GR | 4 | Stock prédit: -0.5u (-4j restants) → prédit 4u mais non commandé |
 | [PF0165] FILOU COCKTAIL FRENKEN 3 L | 15 | Stock prédit: -1.2u (-3j restants) → prédit 15u mais non commandé |
 | [PF0078] FILOU CHASSEUR 5 L | 7 | Stock prédit: -15.7u (-36j restants) → prédit 7u mais non commandé |
 | [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | Stock prédit: 0.4u (14j restants) → prédit 2u mais non commandé |
+| [PF0096] FILOU MOUTARDE 3 KG | 47 | Stock prédit: -20.0u (-31j restants) → prédit 47u mais non commandé |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | Stock prédit: 0.8u (18j restants) → prédit 4u mais non commandé |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | Stock prédit: 0.3u (14j restants) → prédit 2u mais non commandé |
+| [JF066] FIL MOUTARDE 300G BOCAL | 4 | Stock prédit: 1.2u (31j restants) → prédit 4u mais non commandé |
 
 
 ---
@@ -424,4 +433,4 @@ I'm now revisiting the "days_until_next" and "predicted_next_date" values. The r
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:24:02.927Z*
+*Rapport généré automatiquement le 2025-12-19T14:53:15.459Z*

@@ -2,10 +2,10 @@
 
 ## Contexte
 
-- **Date d'exécution** : 19/12/2025 12:29:07
-- **Clients analysés** : 48
-- **Clients réussis** : 29
-- **Clients échoués** : 19
+- **Date d'exécution** : 19/12/2025 16:03:29
+- **Clients analysés** : 47
+- **Clients réussis** : 47
+- **Clients échoués** : 0
 
 ### Configuration
 
@@ -22,21 +22,21 @@
 
 | Métrique | Moyenne | Médiane | Interprétation |
 |----------|---------|---------|----------------|
-| **Recall** | 86.2% | 100.0% | % de besoins réels détectés |
-| **Precision** | 42.8% | 41.7% | % de prédictions correctes (58.3% proposés non commandés) |
-| **F1-Score** | 53.0% | 50.0% | Équilibre détection/précision |
-| **wMAPE** | 27.0% | 25.0% | ⚖️ Écart pondéré robuste (métrique principale) |
-| **MAPE** | 33.6% | 25.0% | Écart moyen (info, biaisé) |
-| **Bias** | 4.8% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **Recall** | 89.7% | 100.0% | % de besoins réels détectés |
+| **Precision** | 42.6% | 42.9% | % de prédictions correctes (57.1% proposés non commandés) |
+| **F1-Score** | 54.0% | 60.0% | Équilibre détection/précision |
+| **wMAPE** | 32.2% | 30.0% | ⚖️ Écart pondéré robuste (métrique principale) |
+| **MAPE** | 37.4% | 33.3% | Écart moyen (info, biaisé) |
+| **Bias** | 5.7% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 
 
 ### 🤖 Utilisation LLM
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Appels LLM** | 728 | Nombre de produits prédits par LLM (>2 commandes historiques) |
-| **Tokens Total** | 2 485 744 | 513 355 prompt + 1 972 389 completion |
-| **Tokens Moyen/Appel** | 3 414 | Tokens moyen par prédiction LLM |
+| **Appels LLM** | 1252 | Nombre de produits prédits par LLM (>2 commandes historiques) |
+| **Tokens Total** | 4 174 022 | 1 101 350 prompt + 3 072 672 completion |
+| **Tokens Moyen/Appel** | 3 334 | Tokens moyen par prédiction LLM |
 
 
 <details>
@@ -147,52 +147,26 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 
 ## Distribution des Performances
 
-**Comment se répartissent les 29 clients ?**
+**Comment se répartissent les 47 clients ?**
 
 ### Détection des besoins (Recall)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥80% | 21 | 72% |
-| 50-80% | 6 | 21% |
-| <50% | 2 | 7% |
+| ≥80% | 41 | 87% |
+| 50-80% | 4 | 9% |
+| <50% | 2 | 4% |
 
 ### Justesse des prédictions (Precision)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥70% | 4 | 14% |
-| 40-70% | 11 | 38% |
-| <40% | 14 | 48% |
+| ≥70% | 6 | 13% |
+| 40-70% | 20 | 43% |
+| <40% | 21 | 45% |
 
-
----
-
-## Clients Échoués (19)
-
-| Client | Commande | Erreur |
-|--------|----------|--------|
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
-| Unknown | N/A | Unknown error |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:29:07.926Z*
+*Rapport généré automatiquement le 2025-12-19T15:03:29.514Z*

@@ -1,0 +1,30 @@
+{
+  "clientId": 60286,
+  "clientName": "DEPOT VRAC ATH",
+  "orderName": "S38709",
+  "orderDate": "2025-08-26 07:26:18",
+  "cutoffDate": "2025-08-25 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 24,
+    "fp": 16,
+    "fn": 6,
+    "precision": 0.6,
+    "recall": 0.8,
+    "f1Score": 0.6857142857142857,
+    "mae": 0.5,
+    "wmape": 18.75,
+    "mape": 12.847222222222221,
+    "bias": -6.25
+  },
+  "distribution": {
+    "exactMatch": 19,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 71,
+    "promptTokens": 58848,
+    "completionTokens": 236480,
+    "totalTokens": 295328
+  }
+}

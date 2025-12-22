@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 25
-- **Tokens**: 22,948 input + 90,354 output = 113,302 total
+- **Tokens**: 28,110 input + 65,798 output = 93,908 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 41.7% | 24 produits prédits, 10 corrects |
+| **Précision** | 52.6% | 19 produits prédits, 10 corrects |
 | **Rappel** | 100.0% | 10 produits réels, 10 détectés |
-| **F1-Score** | 58.8% | Score équilibré global |
+| **F1-Score** | 69.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 82.50 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 46.9% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAE** | 80.30 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 45.7% | ⚖️ Erreur pondérée robuste (métrique principale) |
 | **MAPE** | 66.7% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 46.9% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 4 | Égalité parfaite |
-| Partial Match (>0u) | 6 | Avec erreur |
+| **Bias** | 45.7% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 3 | Égalité parfaite |
+| Partial Match (>0u) | 7 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -150,11 +150,11 @@
 | [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 100 | 50 | 50.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF1695] LD FR TARTINADE BIO TOMATE 200 | 434 | 434 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF2973] LD FR TARTINADE BIO ANANAS 200 | 155 | 62 | 93.0 | 150.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 186 | 62 | 124.0 | 200.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF2937] LD FR TARTINADE BIO POIS 200 | 124 | 62 | 62.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF3349] LD FR TARTINADE BIO AVOCAT 180G | 186 | 124 | 62.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF1694] LD FR TARTINAD BIO POIVRON 200 | 434 | 434 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 868 | 434 | 434.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | 40 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 80 | 40 | 40.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 155 | 93 | 62.0 | 66.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF1690] LD BBQ BIO 300G | 25 | 25 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
@@ -167,7 +167,7 @@
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 100u
-- 📊 **Baseline calculée**: 100u
+- 📊 **Baseline calculée**: 87.5u
 - 📊 **Médiane historique**: 25u
 - ✅ **Réel commandé**: 50u
 - 📉 **Erreur LLM**: 50u (100.0%)
@@ -183,52 +183,56 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bi-mensuel régulier tous les 14 jours
+- **Pattern temporel**: Commande bi-mensuelle régulière (cycle de 14 jours)
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-02
-- **Prochaine prédite**: 2025-10-16 
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: strong
-- **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Prochaine prédite**: 2025-10-16 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
+- **Saisonnalité**: weak
+- **Tendance**: decreasing
+- **Analyse jour cycle**: Habituellement le jeudi (confirmé par N-1), la prochaine est due jeudi 16 oct.
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit suit un cycle de réapprovisionnement extrêmement précis de 14 jours, identifié à la fois en 2024 et 2025. La dernière commande groupée (100 unités le 01/10-02/10) suggère que la prochaine occurrence doit avoir lieu autour du 16/10/2025. Le volume de fond par cycle est de 100 unités, stable par rapport à fin 2024 (où il oscillait entre 100 et 125 unités).
+Le cycle de 14 jours est extrêmement stable et historiquement ancré (confirmé en 2024). La prochaine commande est prévue pour demain, le 16 octobre. Concernant la quantité, bien que 2025 affiche une baisse par rapport à 2024 (passant de 125u à ~80-100u), le dernier cycle cumulé (01/10 et 02/10) totalise 100u, ce qui correspond exactement au volume observé à la même période en N-1. On retient ce volume de 100u pour le prochain cycle.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,035 tokens
-- **Output**: 1,686 tokens
-- **Total**: 2,721 tokens
+- **Input**: 1,231 tokens
+- **Output**: 2,295 tokens
+- **Total**: 3,526 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Production Data**
+**Examining Production Volumes**
 
-I'm currently reviewing the production data for the PF1692 CB9005 LD FR AIOLI PESTO BIO 200ML. Examining the recent history, I see a steady production pattern. Specifically, on October 1st, I noted 50 units produced, and on October 2nd, the output was 50 units. Prior to that, September 18th showed an output of 75 units. This is helping me form conclusions.
-
-
-**Forecasting Demand Patterns**
-
-\n\n
-
-I've just finalized the demand forecast for the PF1692 product. Analyzing the 2024 and 2025 production runs, a clear bi-weekly cycle has emerged, indicating a strong correlation between production and demand. The last order was on October 2nd, and the next order is predicted for October 16th. Given today's date, there's only a one-day gap, which indicates a high risk of stockout within the next 30 days, especially considering the cycle length.
+I'm focused on the production volumes for PF1692, specifically looking at the recent activity. I've noted a consistent output of around 50 units per day for the last couple of weeks. There appears to be a pattern. It looks like production jumped from a single run to two runs on 10/01.
 
 
-**Evaluating Inventory Needs**
+**Projecting Future Orders**
 
-\n\n
-
-I've just assessed the likely order quantity. Analyzing the recent bi-weekly cycle, and considering the volume differences between this year and the previous, 100 units appears to be the most realistic current baseline. However, the smaller volume trend in 2025 warrants close monitoring. Given the predicted order tomorrow, I am now focused on fine-tuning.
+I'm now forecasting the next order date. Based on the bi-weekly cycle, and the last order on 2025-10-02, I calculate the next order date as 2025-10-16, tomorrow. There's low risk involved, given the lead time.
 
 
-**Finalizing Recommendations**
+**Evaluating Order Patterns**
 
-\n\n
+Okay, I'm digging into the order volumes for PF1692. The recent data shows a clear bi-weekly ordering pattern, which I've calculated the median of. I'm noting the recent output of orders on 2025-10-01 and 2025-10-02, which both occurred in the same bi-weekly cycle, are close. Furthermore, I've noticed a declining trend in volumes compared to the previous year, 2024, despite the consistent cycle.
 
-My analysis has solidified my recommendations. I'm focusing on the product's very consistent bi-weekly order cycle, confirming a high confidence level. Based on the 2025 and 2024 data, a baseline quantity of 100 units should be prepared for tomorrow's predicted order. The slightly decreasing trend is accounted for, ensuring my reasoning is sound.
+
+**Determining Recommended Quantity**
+
+I'm now determining the recommended quantity. I've calculated a baseline of 87.5 units, based on the recent cycle volumes. However, considering the last cycle's 100u and the previous year's figures, I'm leaning toward 100 units to align with the bi-weekly cycle, and also with the prior year's output.
+
+
+**Analyzing Recommended Quantity**
+
+I've finalized the recommended quantity, landing on 100 units. This is based on the most recent cycle data and historical figures, considering the bi-weekly pattern. While there's a downward trend in volumes compared to the previous year, the last observed cycle and N-1 figures support this decision with high confidence. I've noted a stable 14-day cycle.
+
+
+**Refining Quantity Recommendation**
+
+I'm now further refining the quantity recommendation. Calculating a baseline of 87.5 units, I've noted the recent order patterns and also the N-1 data. I am favoring a recommendation of 100 units to match the last cycle's total. This is due to the confidence with this 14-day cycle, and because this aligns with last year's volumes.
 
 
 
@@ -259,51 +263,61 @@ My analysis has solidified my recommendations. I'm focusing on the product's ver
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bi-mensuel régulier, souvent commandé par paires (2x434u) sur deux jours consécutifs.
-- **Cycle médian (jours)**: 13
+- **Pattern temporel**: Cycle de 14 jours avec commandes groupées de 434u sur 1-2 jours consécutifs
+- **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-02
-- **Prochaine prédite**: 2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-15-16-11-2025-10-16-11-2025-10-15-16-11-2025-10-16 
+- **Prochaine prédite**: 2025-10-15 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La demande est extrêmement stable (434u par unité de commande). Le cycle médian entre les sessions de commande est de 13-14 jours. La dernière commande ayant eu lieu le 2 octobre, la prochaine est prévue aux alentours du 15-16 octobre, soit immédiatement. Il y a donc un risque imminent de rupture si on ne réapprovisionne pas.
+Le produit présente une régularité exceptionnelle avec des commandes systématiques de 434 unités. L'analyse des intervalles entre les vagues de commandes (04/09, 18/09, 01/10) montre un cycle précis de 13 à 14 jours. La date du jour (15/10) correspond exactement à l'échéance théorique du prochain cycle (01/10 + 14 jours).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,047 tokens
-- **Output**: 2,465 tokens
-- **Total**: 3,512 tokens
+- **Input**: 1,243 tokens
+- **Output**: 2,745 tokens
+- **Total**: 3,988 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Order Quantities**
+**Observing Production Trends**
 
-I'm currently focused on the LD FR TARTINADE BIO TOMATE 200 product. Assessing the data, I see the current date is October 15, 2025. I need to figure out if we need to reorder, and how much, looking ahead 30 days. I have some sales data from October 1st and 2nd. Next, I'll analyze the trends.
-
-
-**Predicting Reorder Timing**
-
-I've been analyzing the reorder intervals. It seems there's a pattern of ordering roughly every 13-14 days. This implies a need to forecast the next order date. I'm taking into account the cluster orders (868 units) as part of my calculations, and I see a consistent volume per order.
+I've been analyzing the production data for LD FR TARTINADE BIO TOMATE 200 (PF1695). I'm noticing a consistent production quantity of 434 units, particularly in September and October of 2025. The consecutive daily productions on both September 18th and 19th and again on October 1st and 2nd are particularly noteworthy, warranting further investigation into the underlying causes.
 
 
-**Determining Order Quantity**
+**Pinpointing Production Intervals**
 
-I'm now zeroing in on the quantity. Given the consistent orders of 434 units, I'm leaning toward that as the base. However, the frequent double orders complicate things. The prompt specified predicting "one order", implying 434 as the base, and not the pair of orders.
-
-
-**Recommending the Order**
-
-Given the consistent 434-unit orders and the predicted need for a new order tomorrow, my recommendation is clear. The data supports a high confidence level in this prediction. The clusters are still present, but the unit size is the correct factor. The JSON output will be straightforward.
+I'm now calculating the intervals between the "order blocks," which typically consist of two consecutive days of 434-unit production runs. The cycle seems to be about 13-14 days. These periods are consistent, suggesting a predictable demand pattern, or at least a regular replenishment strategy. The last order date was October 2nd.
 
 
-**Validating the Prediction**
+**Projecting Order Volume**
 
-I'm now revisiting the order history for the LD FR TARTINADE BIO TOMATE 200 product. Considering the consistent 434-unit orders and the 13-14 day cycle, my prediction for an order is solid. I've confirmed that today is the 15th, and the last order was on the 2nd. The logic is now firm.
+I'm focusing now on the anticipated order quantity. Given the consistent 434-unit lot size and the established 14-day cycle, I predict the upcoming order will also be for 434 units. The historical data, including the N-1 data, overwhelmingly supports this conclusion, reinforcing the absence of seasonality effects on the order quantity itself, which remains stable at 434 units, irrespective of the time of year.
+
+
+**Calculating the Risk Factor**
+
+I'm now focusing on calculating the risk of a stockout. My analysis, using all available data, confirms an order is due today, October 15th. Given the consistent 434-unit order size and the established 14-day cycle, I confidently recommend ordering 434 units, as the data provides a very high degree of confidence.
+
+
+**Concluding Order Prediction**
+
+I've finalized my analysis. Given today's date, and the consistent 14-day cycle, I recommend ordering 434 units, as the data strongly supports this. This confirms my earlier predictions, solidifying the need for an order today, with 100% confidence in the volume of 434 units.
+
+
+**Reassessing the Calendar**
+
+My calculations have been re-confirmed. The upcoming order is due today, October 15th, aligning perfectly with the established 14-day cycle. Therefore, I confidently stand by my recommendation of 434 units, maintaining a high degree of confidence in the volume prediction, and given the start of the block was on October 1st, 14 days later is indeed October 15th.
+
+
+**Finalizing the Recommendation**
+
+I'm now running the final check. Having re-evaluated the cycle, and the fact that orders are usually grouped over two days, and the predicted next block start date *is* today, October 15th, I'm recommending 434 units. The data consistently supports this. All other details adhere to the constraints.
 
 
 
@@ -334,7 +348,7 @@ I'm now revisiting the order history for the LD FR TARTINADE BIO TOMATE 200 prod
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bi-mensuel régulier identifié (14 jours)
+- **Pattern temporel**: Cycle bi-mensuel strict (14 jours)
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-02
 - **Prochaine prédite**: 2025-10-16 
@@ -345,35 +359,45 @@ I'm now revisiting the order history for the LD FR TARTINADE BIO TOMATE 200 prod
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-L'analyse montre un cycle de commande très précis de 14 jours (confirmé en 2024 et 2025). La dernière session de commande a eu lieu entre le 1er et le 2 octobre pour un total de 155 unités. Étant donné que nous sommes le 15 octobre, la prochaine commande est prévue demain (16 octobre). Le volume de 155 unités correspond au volume de la session identique en N-1 (septembre 2024) et à la dernière session de 2025. Les commandes se font systématiquement par multiples de 31.
+Le produit suit un cycle de renouvellement très régulier de 14 jours, observé tant en 2025 qu'en 2024 (N-1). La dernière commande majeure a eu lieu le 01/10 et 02/10 pour un total cumulé de 155 unités (clusters de commandes simultanées). Avec une date de prédiction au 15/10, nous sommes à J-1 de l'échéance théorique (16/10), ce qui justifie une commande immédiate. La quantité recommandée de 155u correspond au volume du dernier cycle complet, aligné avec les volumes saisonniers identifiés en N-1 (155u-186u).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,031 tokens
-- **Output**: 1,663 tokens
-- **Total**: 2,694 tokens
+- **Input**: 1,227 tokens
+- **Output**: 2,519 tokens
+- **Total**: 3,746 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Considering the Orders' Volumes**
+**Observing Cluster Dynamics**
 
-I've been analyzing the purchase history of PF 2973 (LD FR TARTINADE BIO ANANAS 2 00). It seems there's a clustering pattern in orders, specifically around the beginning of October 2025. The total units ordered on October 2nd and October 1st are significant, which is worth investigating further.
-
-
-**Examining Temporal Order Cycles**
-
-I've just finished analyzing the order intervals, and a clear 14-day cycle has emerged, particularly in 2024. This pattern strongly suggests a bi-monthly ordering behavior. Based on this, and the last order date of Oct 2nd, I predict another order either today, October 15th, or tomorrow, October 16th. There is a high risk of stock rupture.
+I'm focused on the product LD FR TARTINADE BIO ANANAS 20 0 (PF2973). The date is 2025-10-15. Recent data shows a cluster's growth. Specifically, 93 units were present on 2025-10-02, built from 62 and 31 units. Before that, on 2025-10-01, the cluster was at 62 units.
 
 
-**Evaluating Volume Predictions**
+**Predicting Imminent Demand**
 
-I've just finished the calculations. The bi-monthly cycle continues to hold true. Given this, and the history, I estimate the next order to be around 155 units, give or take, with the bulk of orders being multiples of 31 units. The next order date remains either today, the 15th, or tomorrow, the 16th, with a high chance of a stock rupture if an order arrives.
+I've refined the analysis. My focus is now on the high risk of a stockout. The 14-day cycle is evident, and today's analysis is close to the predicted date. The critical date for the next predicted cluster is 2025-10-16, just one day away. I've noted that demand has been increasing. Based on prior dates, I expect to see multiples of 31 units sold, and the immediate need is highly likely.
 
 
-**Synthesizing Findings and Recommendations**
+**Evaluating Historical Volumes**
 
-I've finalized the analysis. Based on the consistent 14-day ordering cycle, the predicted order date remains October 16th. Considering the previous volume of 155 units and the tendency for orders to be multiples of 31, I am recommending an order of 155 units to mitigate the risk of stock rupture.
+I've dived deeper, examining the 2024 data to gauge demand seasonality. Comparing 2024 to 2025, volumes are consistent around the same time of year, with a strong pattern. I've calculated the median volumes and based on the recent cluster sizes and demand trends, I'm recommending a baseline of 155 units, with the next demand cluster predicted for tomorrow.
+
+
+**Calculating Required Inventory**
+
+I've finalized my analysis. I'm highly confident about the recommendation. Based on the 14-day cycle, the upcoming order date is tomorrow. Considering seasonality and recent volume, my baseline quantity is 155 units. I am very confident with my findings.
+
+
+**Synthesizing Recommendations**
+
+I'm solidifying my approach, confirming the 14-day cycle and the 155-unit baseline, and fine-tuning reasoning. I'm satisfied, given strong confidence, but still checking details like the two orders made on the same day on 2025-10-02, which represent a single order. I will recommend 155 units.
+
+
+**Finalizing Quantity Predictions**
+
+I'm now very certain about the 155-unit recommendation. After reviewing all data, the bi-weekly cycle and the recent cluster sizes are clear. I've re-examined the 2025-10-02 orders, confirming they are essentially a single order. The predicted need is tomorrow, making the timing perfect.
 
 
 
@@ -384,71 +408,71 @@ I've finalized the analysis. Based on the consistent 14-day ordering cycle, the 
 
 
 <details>
-<summary><strong>4. [PF2937] LD FR TARTINADE BIO POIS 200</strong> - LLM: 186u vs Médiane: 62u (Réel: 62u)</summary>
+<summary><strong>4. [PF2937] LD FR TARTINADE BIO POIS 200</strong> - LLM: 124u vs Médiane: 62u (Réel: 62u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 186u
-- 📊 **Baseline calculée**: 161.2u
+- 🤖 **Quantité recommandée (finale)**: 124u
+- 📊 **Baseline calculée**: 124u
 - 📊 **Médiane historique**: 62u
 - ✅ **Réel commandé**: 62u
-- 📉 **Erreur LLM**: 124u (200.0%)
+- 📉 **Erreur LLM**: 62u (100.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 186u (risque détecté)
+- **Quantité décidée**: 124u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel (tous les 14 jours) très régulier identifié en N et N-1
+- **Pattern temporel**: Cycle bi-mensuel régulier identifié toutes les 2 semaines
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-02
-- **Prochaine prédite**: 2025-10-16 
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Prochaine prédite**: 2025-10-16 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
+- **Saisonnalité**: strong
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Commandes groupées principalement le jeudi (en N-1 et 2025), la prochaine commande est prévue pour demain, jeudi 16 octobre
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit présente une périodicité très stable de 14 jours (confirmée par les cycles de sept/oct 2024 et 2025). La dernière commande cumulée du 02/10 (217u) couplée à la date cible du 15/10 indique une commande imminente (prévue le 16/10). La quantité recommandée est basée sur la médiane des commandes groupées historiques (multiples de 31), soit 186 unités (6 cartons).
+Le cycle de réapprovisionnement de 14 jours est extrêmement régulier tant en 2024 qu'en 2025. La dernière commande date du 02/10, plaçant la prochaine échéance au 16/10 (demain). Les volumes de septembre-octobre sont historiquement élevés (saisonnalité forte). Bien que le cumul des 1er et 2 octobre 2025 atteigne 217 unités, la quantité unitaire par commande de 124 unités (4 cartons de 31) est la médiane robuste observée à cette période en N-1 et sur la dernière commande la plus récente.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,030 tokens
-- **Output**: 2,290 tokens
-- **Total**: 3,320 tokens
+- **Input**: 1,226 tokens
+- **Output**: 2,276 tokens
+- **Total**: 3,502 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Projected Volumes**
+**Reviewing Recent Data Points**
 
-I'm currently focused on the projected volumes for the LD FR TARTINADE BIO POIS 200 product. Recent data shows significant activity in October 2025, specifically on the 1st and 2nd. I'm noting the unit additions and considering how these orders and any subsequent corrections or reorders will impact the overall total. The close proximity of these events suggests a need for deeper investigation.
-
-
-**Predicting Order Imminence**
-
-I've determined a potential order date of October 16th, based on a 14-day cycle analysis. Considering today is October 15th, there's a risk of a stock rupture. The close proximity of the October 2025 order dates is notable, as is the pattern of clustered orders. I am now evaluating the quantity analysis, looking for trends in the order sizes.
+My focus has shifted to the PF2937 product, specifically the LD FR TARTINADE BIO PO IS 200 variant. Recent data from October 2025 shows a significant order on the 2nd. The order, totaling 124 units, warrants further scrutiny. I'm now cross-referencing this with the client's past purchase history.
 
 
-**Evaluating Quantity Estimates**
+**Projecting Future Demand**
 
-I'm now focusing on a more nuanced approach to quantity prediction for the LD FR TARTINADE BIO POIS 200 product. I am particularly concerned with the 2025 activity. I'm taking the median cluster, 186, as a baseline, and considering the observed upward trend from the September to October orders, to estimate next order volume. I am examining whether the 2025-10-02 order was a refill or adjustment.
-
-
-**Estimating Next Order Volume**
-
-I'm now zeroing in on the quantity forecast. Analyzing the recent 2025 data, the 217-unit order is central. Although a high volume compared to 2024, I'm interpreting it as an upward trajectory for this year. Considering the stable 14-day cycle, I predict the next order will be around the October 16th date, using the 217-unit order as a key component in the quantity calculation.
+I've calculated the median order cycle at 14 days, based on the previous year's data. Considering the last order on October 2nd, the next one should be expected on October 16th. Given today's date, October 15th, there's a high probability of an order tomorrow, which will impact the 30-day risk assessment.
 
 
-**Determining Order Quantity**
+**Assessing Order Grouping**
 
-I'm now calculating the recommended quantity for the upcoming order, using the median of significant recent clusters as my guide. While the recent 217-unit order is notable, I am considering 186 units (6 packs of 31) as the baseline, as it is the median of high-volume clusters. I am also evaluating the impact of the 2025-10-02 order. Risk is high.
+I'm now diving deeper into the order patterns, specifically focusing on the PF2937 variant. The orders on October 1st and 2nd, totaling 217 units, are particularly interesting. I'm grouping them as a single event. Examining the history of these "grouped" orders reveals a 14-day cycle. This supports my prediction of an order on or around October 16th, which necessitates a 30-day risk assessment.
+
+
+**Synthesizing Order Patterns**
+
+I've examined the recent ordering behavior for the PF2937 variant, including data from 2024 and 2025. Based on this, I anticipate a bi-monthly order cycle with a predicted order for around 124 units (4 x 31u) on October 16th. I'll recommend ordering this amount to prepare for the upcoming cycle. The data reflects similar order volumes from October 2024.
+
+
+**Refining the Recommendation**
+
+I've finalized my analysis of the PF2937 variant. I'm confident in the bi-monthly ordering pattern, with the next order predicted for tomorrow, the 16th. Based on recent and historical data, I recommend ordering 124 units (4 x 31u). This recommendation is based on the consistent ordering in October of 2024 and 2025.
 
 
 
@@ -479,7 +503,7 @@ I'm now calculating the recommended quantity for the upcoming order, using the m
 - **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel identifié (tous les 13-14 jours)
+- **Pattern temporel**: Cycle bimensuel de 14 jours
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-02
 - **Prochaine prédite**: 2025-10-16 
@@ -490,40 +514,50 @@ I'm now calculating the recommended quantity for the upcoming order, using the m
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande est très régulier (environ 14 jours). Les quantités sont des multiples de 31 unités. On observe deux événements de commande : le 18 septembre (124u) et les 1er/2 octobre (cumul de 248u). La prochaine commande est prévue autour du 16 octobre, soit demain par rapport à la date de calcul. Vu la tendance à la hausse, on préconise une moyenne pondérée des deux derniers cycles (186u, soit 6 lots de 31).
+Phase 1 : Identification d'un cycle de commande régulier de 14 jours (intervalle entre le 18/09 et le 02/10). Avec une date actuelle au 15/10, la prochaine commande est prévue demain (16/10), ce qui confirme le risque de rupture imminent. Phase 2 : On observe un incrément constant de 31 unités. Les volumes par séquence de réapprovisionnement sont passés de 124u à 248u. En l'absence d'historique long, la moyenne de ces deux cycles (186u) est privilégiée pour stabiliser l'approvisionnement tout en respectant les multiples logistiques de 31.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 705 tokens
-- **Output**: 1,949 tokens
-- **Total**: 2,654 tokens
+- **Input**: 901 tokens
+- **Output**: 2,722 tokens
+- **Total**: 3,623 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Recent Orders**
+**Assessing Order Patterns**
 
-I'm currently focused on the recent order history for "LD FR TARTINADE BIO AVOCAT 180G." It seems there was a significant order on October 2nd, with two separate entries totaling 155 units. Before that, there was a 93-unit order on October 1st. I'm noting this before analyzing the context in which they are placed.
-
-
-**Calculating Event Intervals**
-
-I've determined two key events: September 18th with 124 units, and October 1st/2nd with a total of 248 units. The interval between these events is approximately 13-14 days. This suggests a bi-weekly pattern. Considering today is the 15th, and the projected next order date is the 16th, there's a confirmed risk, and I need to re-examine the individual order details.
+I'm currently analyzing the order history for the avocado tartinade. I've noted a recent order with a split timestamp, which merits further investigation. It seems to be a single event with potentially two deliveries of the same product. This detail might offer clues about consumer behavior or inventory management at the point of sale.
 
 
-**Forecasting Order Numbers**
+**Projecting Future Demand**
 
-I'm now focusing on calculating the potential order quantity. There's a clear bi-weekly trend and an increasing volume. I see a shift in the individual order lines and a possible scale-up by the client. However, since the prompt specifies one order rather than a sum, the last cluster is what I will work with. I'm looking at the median, 93, versus the total cluster of 248. The risk level is high.
-
-
-**Evaluating Recommended Quantities**
-
-I'm now determining the most appropriate order quantity. Considering a bi-weekly cycle and an upward trend, the recommendation is 186 units. This is the average between the two most recent "replenishment cycles." I'm also mindful of the frequency of individual order lines and multiples of the baseline unit of 31.
+The avocado tartinade demand seems to have doubled in the most recent cycle. I've predicted the next order date, which aligns with tomorrow. Given the volume jump in the last two replenishment cycles, I'm classifying this as a high-risk situation, necessitating prompt attention.
 
 
-**Calculating the Recommendation**
+**Evaluating Order Volumes**
 
-I'm now consolidating the data, and using the bi-weekly cycle and a doubling volume trend, I'm comfortable recommending 186 units. This number also aligns well with the average of the two most recent replenishment cycles and is a multiple of 31. The confidence level is medium, given the limited history.
+I've re-examined the order history, identifying a consistent 14-day cycle for the tartinade. Further, the most recent volume doubled to 248 units. I'm noting the presence of multiples of 31 units in individual orders, suggesting a possible packaging or palletization effect. The predicted next order is due tomorrow, which aligns with the trend.
+
+
+**Calculating Optimal Replenishment**
+
+I've been calculating the optimal replenishment volume, initially leaning towards the average of the last two cycles (186 units). I've noted that this product's demand might be increasing. Considering the 31-unit increments in the order quantities and the upward trend, I'm now inclined to suggest an order of around 204 units for tomorrow, which is closer to the previous high.
+
+
+**Refining Replenishment Strategy**
+
+I'm considering a replenishment order of 186 units, aligning with the average demand. Recognizing the potential for growing demand, I've decided to stick to the median value and stay on the conservative side. Given the 14-day cycle and the current date being just one day before the next order, I'm confident in this estimate, albeit with medium confidence due to the limited historical data.
+
+
+**Determining Optimal Order Volume**
+
+I've re-evaluated my approach, focusing on distinct order windows instead of individual timestamps. Considering the client's bi-monthly ordering pattern and recent doubling of volume, I've confirmed an upcoming order is necessary. The median of 186 units, aligning with the packing multiples, seems like the most prudent approach.
+
+
+**Summarizing the Core Findings**
+
+I've finally synthesized the key data points, confirming a bi-monthly order cycle with the next order due tomorrow. After analyzing the trend of increasing volumes, and taking the median of 186 units into account, I'm recommending this value. The confidence on this is medium, due to the limited historical data. The client is following B2B orders with the correct frequency.
 
 
 
@@ -554,66 +588,56 @@ I'm now consolidating the data, and using the bi-weekly cycle and a doubling vol
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bi-hebdomadaire très régulier (14 jours) observé le jeudi
+- **Pattern temporel**: Cycle bi-hebdomadaire (14 jours) extrêmement régulier le jeudi
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-02
-- **Prochaine prédite**: 2025-10-16 (dans 1j)
-- **Dans horizon 30j ?**: ✅ OUI
-- **Saisonnalité**: weak
+- **Prochaine prédite**: 2025-10-16 
+- **Dans horizon 30j ?**: ❌ NON
+- **Saisonnalité**: strong
 - **Tendance**: stable
-- **Analyse jour cycle**: Le client commande systématiquement le jeudi tous les 14 jours depuis plusieurs mois
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de réapprovisionnement de 14 jours est extrêmement stable sur 2024 et 2025. La prochaine commande est prévue pour le 16/10/2025 (demain). Concernant la quantité, bien que des volumes de 868u (2x434) aient été observés en septembre, le passage à 434u le 02/10/2025 concorde avec l'historique N-1 (434u le 03/10/2024), suggérant une réduction saisonnière du volume de commande en octobre.
+Le produit présente une régularité exceptionnelle avec un cycle de 14 jours observé tant en 2024 qu'en 2025. La date de la prochaine commande est prévue pour demain, le 16 octobre 2025. Bien que le client commande parfois plusieurs multiples de 434 sur une même journée, la dernière commande enregistrée le 02/10 ainsi que la commande équivalente de l'an dernier (03/10/2024) sont de 434 unités, ce qui constitue la base la plus fiable pour la prédiction.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,048 tokens
-- **Output**: 3,291 tokens
-- **Total**: 4,339 tokens
+- **Input**: 1,244 tokens
+- **Output**: 2,448 tokens
+- **Total**: 3,692 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Investigating Product History**
+**Reviewing Product Data**
 
-I'm currently focused on the product LD FR TARTINAD BIO POIVRON 20 0 (PF1694). I've been digging into its recent transaction history, specifically from 2025. I noted a potential issue with duplicated entries on 2025-09-18 and 2025-09-04, each seemingly doubled. These close-in-time entries have triggered some alerts and deserve a deeper dive.
-
-
-**Examining the Recurring Pattern**
-
-I've been analyzing the frequency of these transactions. The 434u "events" appear to repeat consistently, almost like clockwork. Specifically, it looks like a 14-day cycle, often occurring on Thursdays. This periodicity, evident in both 2024 and 2025, is quite intriguing. My next step is to use this pattern to forecast future activity.
+I'm currently processing the recent sales data for the LD FR TARTINAD BIO POIVRON product. I've noted a couple of entries from September, specifically the 18th. It looks like there's a potential duplication; I need to verify whether the 868 units represent a combined total or are separate entries. I'll need to confirm the distinct sale times to clarify.
 
 
-**Refining Order Quantity Analysis**
+**Predicting Future Demand**
 
-I'm now focusing on the consistent order quantity of 434 units. While there are sometimes multiple logs on a single day, the volume is *always* 434. It appears the system may occasionally generate duplicate entries, but the actual order size remains constant. This consistency allows for reliable forecasting of demand, and there is a high stockout risk tomorrow.
-
-
-**Projecting Future Volumes**
-
-I'm now forecasting the quantity for tomorrow's expected order, given that the last one was on October 2nd. Based on prior data, the median quantity appears to be 868, though the most recent order was 434. I'm taking the log duplication into account, and considering a potential shift in purchasing behavior.
+The pattern appears clear: orders of LD FR TARTINAD BIO POIVRON 20 0 (PF1694) arrive bi-weekly, specifically every 14 days. Based on the last order on October 2nd, the next order is highly likely tomorrow, the 16th. Therefore, there's a demonstrable risk of stockout within the next 30 days. I'll flag this.
 
 
-**Determining Order Quantity**
+**Examining Order Quantities**
 
-I'm now zeroing in on predicting the volume for tomorrow's predicted order. Considering the recent trend of single 434-unit orders in October, versus September's higher volumes, and the consistent 14-day cycle, I'm leaning toward forecasting a single unit of 434. The data suggests a potential seasonal shift.
-
-
-**Calculating the Baseline Order**
-
-I'm now determining the order quantity for the upcoming order, scheduled for tomorrow. Considering the most recent single order of 434 and the pattern of 14-day cycles, I'm leaning toward predicting another order of 434. The data suggests an expected continuation of the current lower-volume trend, consistent with the start of October.
+I'm now diving deeper into the quantity patterns for LD FR TARTINAD BIO POIVRON 20 0 (PF1694). My focus is on determining the median volume per order. The recent data shows that the base order is 434 units, but there are multiple entries on certain days. Given the instruction to predict *one* order and to use a median resistant to outliers, I calculate a median of 434 units per transaction.
 
 
-**Determining Final Recommendation**
+**Finalizing Quantity Recommendation**
 
-After reviewing all the data and considering the prompt, I'm confident in the prediction. Based on the 14-day cycle and recent single 434-unit orders in October, with a slight seasonal volume drop compared to September. The forecast for tomorrow is for a single order of 434 units.
+I'm now consolidating the findings. The robust median order quantity is 434 units, informed by a strong bi-weekly cycle. The model predicts the next order tomorrow. The high confidence level reflects the very consistent pattern. I'll provide a recommendation of 434 units, ready to feed the system.
 
 
-**Concluding the Prediction**
+**Revisiting Volume Calculations**
 
-I've made my final determination on the upcoming order. Considering the consistent 14-day cycle, the recent 434-unit orders, and the potential for a slight dip in volume as we enter October, I'm predicting a single order of 434 units for tomorrow.
+I'm now back-calculating the volume, focusing on the individual order, not daily totals, and adhering to recent order data. The median order quantity remains 434, aligning with the "one order" instruction. This reinforces the prediction for tomorrow, while also considering N-1 data, which has a similar trend.
+
+
+**Final Quantity Verification**
+
+I've re-examined the daily totals, but the instructions emphasize predicting *one* order, not a cumulative daily total. Therefore, the consistent 434-unit order volume, aligned with the most recent order and N-1 data, is the correct recommendation. The 434 prediction for tomorrow remains.
 
 
 
@@ -644,51 +668,46 @@ I've made my final determination on the upcoming order. Considering the consiste
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bi-mensuel régulier tous les 14 jours, principalement le jeudi
+- **Pattern temporel**: Cycle bimensuel régulier de 14 jours par multiple de 434u
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-02
 - **Prochaine prédite**: 2025-10-16 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: strong
+- **Saisonnalité**: weak
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 1302u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande est extrêmement stable à 14 jours d'intervalle entre 2024 et 2025. La dernière commande datant du 2 octobre, la prochaine est prévue pour le 16 octobre (demain). La quantité recommandée de 868 unités (2 multiples de 434u) correspond à la médiane constatée sur les cycles récents de septembre/octobre 2025 ainsi qu'à la consommation exacte à la même période en N-1.
+Le client suit un cycle de 14 jours très précis observé en 2025 et confirmé par l'historique N-1. La dernière commande date d'il y a 13 jours, rendant une commande imminente pour demain (2025-10-16). La quantité est stable sur un volume de 868u (2 unités logistiques de 434u), correspondant à la médiane des cycles récents et à l'historique N-1 sur la même période.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,054 tokens
-- **Output**: 1,847 tokens
-- **Total**: 2,901 tokens
+- **Input**: 1,250 tokens
+- **Output**: 1,685 tokens
+- **Total**: 2,935 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Forecasting Demand Now**
+**Analyzing Recent Sales Data**
 
-I'm currently working on the product [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G and need to decide if and when to reorder, and at what quantity. The current date is 2025-10-15. I've reviewed the sales data, specifically the starting stock on 2025-10-02, which was 434 units.
-
-
-**Projecting Future Orders**
-
-I'm now projecting the next two order dates, based on the observed 14-day cycle. With tomorrow being a likely candidate, and the next on October 30th. I'll need to assess potential stock levels to inform the optimal quantities for each order, considering the 30-day horizon.
+I'm currently focused on the sales data for the mango tartinade, specifically the recent activity in October 2025. I noticed a potential anomaly with a possible sales doubling between October 1st and 2nd. I'll need to investigate that closely to understand the cause. Previous data from September seems stable.
 
 
-**Quantifying Order Recommendations**
+**Projecting Future Inventory Needs**
 
-I'm recommending an order of 868 units for tomorrow, as per the established 14-day cycle and the median order quantity. I've noted a strong seasonality from mid-August through October. I'll continue to monitor demand over the next 30 days, particularly looking at any outlier events, although it seems unlikely at this point.
-
-
-**Calculating Remaining Risk**
-
-I've just finished the calculations. The customer's pattern is extremely consistent, and the 868-unit order is confirmed. My confidence is high, and I've also verified the date calculations, ensuring accuracy. I'm now documenting the key details and constraints to format the recommendation correctly.
+Following the sales data analysis, I've calculated a likely order for the Mango Tartinade tomorrow, October 16th. Given the recent sales in multiples of 434 units, I'm predicting a potential stockout risk. I'll need to assess the current inventory levels against the likely demand to ensure sufficient supply.
 
 
-**Summarizing Key Metrics**
+**Determining Order Quantity**
 
-After reviewing all the data and analyzing key patterns, I've confirmed that the customer's ordering behavior is highly predictable. The bi-weekly cycle is confirmed, with the next order due tomorrow. Based on the median order quantity and the consistent historical data, I am recommending an order of 868 units, with high confidence in this recommendation.
+I'm now calculating the order quantity for tomorrow. Based on the pattern of sales, and taking the median quantity per cycle, I've determined 868 units is a sensible baseline. Considering the recent sales on October 2nd, the next order is expected tomorrow, reinforcing the need for this order size.
+
+
+**Determining the Order Recommendation**
+
+I've reviewed the sales patterns and determined the optimal order quantity to mitigate risk. Considering the 14-day cycle and the most recent sales data, including the doublet on October 1st and 2nd, the projected replenishment order is 868 units. The timing aligns for tomorrow, reinforcing the 868 unit recommendation.
 
 
 
@@ -699,91 +718,93 @@ After reviewing all the data and analyzing key patterns, I've confirmed that the
 
 
 <details>
-<summary><strong>8. [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML</strong> - LLM: 40u vs Médiane: 40u (Réel: 40u)</summary>
+<summary><strong>8. [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML</strong> - LLM: 80u vs Médiane: 40u (Réel: 40u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 40u
+- 🤖 **Quantité recommandée (finale)**: 80u
 - 📊 **Baseline calculée**: 66.67u
 - 📊 **Médiane historique**: 40u
 - ✅ **Réel commandé**: 40u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 40u (100.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 40u (risque détecté)
+- **Quantité décidée**: 80u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
+- **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel extrêmement régulier (14 jours)
+- **Pattern temporel**: Cycle bi-mensuel régulier observé tous les 13-14 jours
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-10-01
 - **Prochaine prédite**: 2025-10-15 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: strong
+- **Saisonnalité**: weak
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 120u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de réapprovisionnement est parfaitement stable (environ 14 jours entre les cycles). La prochaine commande est prévue précisément pour le 15 octobre (aujourd'hui). Concernant la quantité, bien qu'un pic à 120u ait été observé en septembre (similaire aux pics de volume élevés en N-1 à la même période), la commande la plus récente et la plus fréquente (mode) est de 40u. On privilégie la commande d'une unité de base (40u) pour maintenir le flux.
+Le produit suit un cycle de commande extrêmement régulier de 14 jours, avec une échéance prévue précisément le jour actuel (15/10). On observe un pattern récurrent de hausse de volume en milieu de mois (120u en sept 2025, 160u en sept 2024), ce qui invalide la qualification d'outlier pour les grosses commandes. La moyenne glissante de 66.7u et le conditionnement par 40u orientent vers une préconisation de 80u pour sécuriser le stock sur le prochain cycle.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,036 tokens
-- **Output**: 3,822 tokens
-- **Total**: 4,858 tokens
+- **Input**: 1,232 tokens
+- **Output**: 2,852 tokens
+- **Total**: 4,084 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Analyzing Product Trends**
+**Reviewing Production Volumes**
 
-I'm currently focused on the product PF1699, specifically CB9006 LD FR VINAI CAESAR BIO PET 250ML. My recent analysis of the last three months shows a production pattern of 40u units on specific dates. Now, I’m digging deeper, trying to understand the broader context and any deviations. My goal is to find patterns.
-
-
-**Projecting Future Orders**
-
-The cycle is consistently about 14 days, and the predicted date has now been reached. Given that the last order was placed on 2025-10-01, a new order is imminent. The data shows a pattern of 40u, with occasional larger orders. I'm focusing on the stockout risk for the next 30 days.
+I'm currently reviewing the production volumes for the CB9006 LD FR VINAI CAESAR BIO PET 250ML product. The focus is on understanding the recent history of orders, particularly the split deliveries on September 18th. I'm trying to decipher if those were distinct orders or part of the same batch.
 
 
-**Evaluating Stock Levels Now**
+**Calculating Order Cadence**
 
-I'm deep in the analysis, zeroing in on product PF1699, specifically on its order history and the current date, 2025-10-15. The recent data shows a consistent 14-day cycle, with the last order on October 1st. My calculations reveal the next order is due today. I'm taking into account the average recent volume and standard shipping units to gauge the stockout risk within the next 30 days.
+\n\n
 
-
-**Predicting Next Quantity**
-
-I'm presently analyzing the upcoming order, which is due today, and focused on the product's recent order patterns. Considering that the last order on October 1st was for 40 units, I'm examining the median and average quantities from the past 3-month period, as well as the historical data from N-1. The cycle is 14 days, and the most common shipping unit size is 40.
+I've moved on to calculating the order cadence and predicting the next order date. Based on the 2025 data, there's an approximate 13-14 day cycle. With the last order on October 1st, a new order is highly overdue. Furthermore, I've noticed the client's orders consistently come in multiples of 40 units.
 
 
-**Calculating Order Recommendation**
+**Evaluating Potential Volumes**
 
-I've examined the product's recent and historical order patterns to formulate the optimal quantity for today's order, considering a 14-day cycle. While the average order size is higher due to an outlier, the median, and the most recent order, suggests 40 units. Despite historical spikes, recent trends point toward a stable demand, and the consistent shipping unit is 40. Therefore, I'll recommend 40 units for this order.
+\n\n
 
-
-**Deciding on Final Recommendation**
-
-After a comprehensive review, I've weighed several factors. The product's consistent 14-day cycle and the most recent order of 40 units guide me. While historical data hints at higher volumes, the last order and the overall median suggest sticking with 40 units, since recent patterns show a 40 unit standard. I'll stick to a recommendation of 40.
+Now I'm diving deeper into volume analysis, specifically looking at the mid-month cadence. The recurring pattern suggests that a higher volume is plausible, maybe even mirroring September's 120-unit order. I'm taking a conservative approach and assessing how to proceed. A low amount is more likely, but a higher one is more beneficial.
 
 
-**Concluding Quantity Assessment**
+**Anticipating Order Quantity**
 
-After reviewing all recent data, I've confirmed today's order is due, based on a 14-day cycle from the last one. While the average volume leans towards 66 units, the most frequent recent order size and the median quantity is 40 units. Despite historical higher volumes, I will suggest 40 units for now.
+\n\n
 
-
-**Determining the Order Quantity**
-
-My analysis is converging. The product PF1699's order is due today, following a 14-day cycle. While historical data presents variability, with 120u orders, the last order was 40u. Considering the most recent ordering pattern, I'm leaning towards 40 units, but the historical data indicates the order could be larger.
+Today, October 15th, marks the predicted order date, and my focus is now shifting to determining the optimal order quantity. Considering the recent history, and a cycle of around 14 days, I've noted a fluctuating pattern of 40u and 120u orders. Given the mid-month context and past trends, I'm leaning toward recommending an 80u order.
 
 
-**Revisiting Quantity Recommendation**
+**Refining Order Recommendations**
 
-I've re-examined the data and decided. Although the average is 66, and September historically had higher volumes, the most recent order and median quantity were 40. Given the consistent 14-day cycle and the atomic unit being 40, I'm sticking with a 40-unit recommendation.
+\n\n
+
+Today, I've finalized the order quantity prediction. After meticulous analysis of recent history and cadence, with a cycle time of 14 days, my findings suggest an order is due today. Considering the fluctuating patterns and the fact that orders come in multiples of 40, I'm recommending an 80-unit order. I have high confidence in this prediction.
+
+
+**Revising Quantity Recommendation**
+
+\n\n
+
+Today, I'm reevaluating the recommendation, given that the pattern fluctuates between 40 and 120 units, ordered in 40-unit increments. The recent 120-unit mid-month order, along with past mid-month data, indicates a seasonal tendency for higher volumes. Given this, and following the instructions, I've re-adjusted the projected order quantity to 80 units for the upcoming period.
+
+
+**Refining Quantity Assessment**
+
+\n\n
+
+Today, I've concluded my analysis, and I'm confident in my recommendation. After assessing historical data and considering seasonal tendencies, the predictable bi-monthly cadence, with an average of 14 days, suggests an order is due today. Since orders come in 40-unit increments, and with mid-month peaks previously, I'll recommend 80 units.
 
 
 
@@ -814,7 +835,7 @@ I've re-examined the data and decided. Although the average is 66, and September
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel régulier identifié le jeudi (tous les 14 jours)
+- **Pattern temporel**: Cycle bi-mensuel (tous les 14 jours le jeudi)
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-09-18
 - **Prochaine prédite**: 2025-10-16 
@@ -825,40 +846,45 @@ I've re-examined the data and decided. Although the average is 66, and September
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de 14 jours est extrêmement stable sur 2024 et 2025. La dernière commande date du 18 septembre. Selon le cycle (18/09 + 28 jours), la prochaine commande est attendue autour du 16 octobre, soit demain par rapport à la date actuelle du 15 octobre. Le volume récent en 2025 est de 155 unités par commande (93+62 ou 93+31+31), ce qui constitue notre base de prédiction.
+Le cycle de commande est extrêmement régulier (14 jours, exclusivement le jeudi) constaté en 2024 et 2025. La dernière commande enregistrée date du 18 septembre. En suivant ce cycle, une commande aurait dû avoir lieu le 2 octobre et la prochaine est prévue pour demain, le 16 octobre. Le volume en 2025 est très stable (155 unités par commande). Bien que l'historique N-1 (octobre 2024) montre une augmentation de volume (279 unités), la stabilité sur l'année 2025 à 155 unités prévaut pour la prédiction de la commande immédiate.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,039 tokens
-- **Output**: 2,035 tokens
-- **Total**: 3,074 tokens
+- **Input**: 1,235 tokens
+- **Output**: 2,297 tokens
+- **Total**: 3,532 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Analyzing Production Intervals**
+**Reviewing Product Data**
 
-I'm currently focused on the production interval of the LD FR PESTO BIO AIL DES OURS. Data from September shows a 14-day interval between production runs. I need to understand if this is a consistent pattern or just a small sample size. I'll need to check if we have more data, and whether that is a problem.
-
-
-**Projecting Future Orders**
-
-I'm now projecting future orders for the PF3317, focusing on the LD FR PESTO BIO AIL DES OURS 135G product. Based on historical data, specifically 2024 production intervals, and the most recent 2025 data, a 14-day cycle seems most probable.  The customer is late as of today, October 15th, and this product should have been ordered on or about October 2nd or 16th.
+I'm currently focused on the CB9028 pesto product, examining its sales figures. I've noted the total units sold on September 18th and 4th of 2025. It seems like the total units for those days were identical: 155 units. I'll need to analyze the data for the rest of September to discern any trends.
 
 
-**Assessing Ordering Patterns**
+**Calculating Order Frequency**
 
-Now I'm delving deeper into the specifics of the CB9028 product. Analyzing 2025 and 2024 data, a 14-day cycle is most prevalent. The customer is behind schedule, given the 2025-10-15 target date. With 27 days since the last order, and an impending Oct 2 or 16 cycle, a stockout is a real concern. I'm focusing on the 155 unit baseline.
-
-
-**Predicting Order Requirements**
-
-I'm now zeroing in on the CB9028 product for the PF3317, particularly the LD FR PESTO BIO AIL DES OURS 135G. Historical data, spanning 2024 and 2025, reveals a strong 14-day cycle. With the last order placed 27 days ago, the next order of 155 units is due immediately, potentially triggering a stockout risk. The current cycle should have triggered a new order around Oct 2 or Oct 16.
+I've just finished mapping out the bi-weekly order cycle for the CB9028 pesto product. It's a remarkably consistent 14-day pattern. With today being the 15th, I anticipate the next order to be tomorrow, the 16th. Given the historical data, there's a definite risk of stockout, which I must address promptly.
 
 
-**Refining Quantity Recommendations**
+**Anticipating Volume & Quantity**
 
-Now, I'm analyzing the 155-unit baseline for the CB9028 product, focusing on the LD FR PESTO BIO AIL DES OURS 135G. Historical data confirms a 14-day cycle. With 27 days passed since the last order, a new order is imminent, potentially due on the 16th. My primary focus is to determine the ideal order quantity, despite observing a volume increase in 2024. Considering recent data, 155 units feels correct, pending final confirmation.
+I'm deep in the analysis, comparing 2024 and 2025 data. Despite a stable 155u baseline in September 2025, I'm noting a substantial increase in volume towards October 2024. Therefore, I must account for that seasonality. The decision is to err on the side of caution.
+
+
+**Predicting Order Quantity**
+
+I'm now determining the order quantity for tomorrow's order. Considering the 14-day cycle and a flat 155u baseline in 2025, the 2024 data indicates a potential increase in volume towards October. Therefore, I'm carefully considering whether to order more than the recent baseline. After a careful assessment, I am opting to order 155 units.
+
+
+**Calculating Stock Levels**
+
+I've meticulously assessed the data. There's a rigid 14-day ordering cycle, with a predicted order for tomorrow, the 16th. Examining 2024's October data suggests potential demand increases. However, the current 2025 baseline is consistently at 155 units. Therefore, I've elected to maintain a 155-unit order.
+
+
+**Refining Quantity & Cycle**
+
+I've re-examined the 2024 and 2025 data, as well as the 14-day ordering cycle for the CB9028 pesto. I'm focusing on tomorrow's order, the 16th. Although 2024 saw a rise in volume, the 2025 data points consistently at 155u. Thus, I stand by my initial estimate of ordering 155 units.
 
 
 
@@ -889,51 +915,46 @@ Now, I'm analyzing the 155-unit baseline for the CB9028 product, focusing on the
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel à mensuel (14-28 jours), prédominance du jeudi
+- **Pattern temporel**: Cycle bimensuel à mensuel (14-28 jours), majoritairement le jeudi
 - **Cycle médian (jours)**: 21
 - **Dernière commande**: 2025-09-18
 - **Prochaine prédite**: 2025-10-16 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: none
+- **Saisonnalité**: weak
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle habituel de commande oscille entre 14 et 28 jours (médiane à 21 jours). La dernière commande datant d'il y a 27 jours (18 septembre), la probabilité d'une commande imminente est extrêmement élevée. Les quantités sont stables par multiples de 25u.
+Le produit présente une grande régularité avec des commandes quasi systématiques de 25 unités le jeudi. L'intervalle médian entre les commandes est d'environ 21 jours. La dernière commande datant du 18 septembre 2025 (il y a 27 jours), la prochaine commande est imminente (généralement entre J+14 et J+28). Le volume de 25 unités est la base standard historique.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,025 tokens
-- **Output**: 2,275 tokens
-- **Total**: 3,300 tokens
+- **Input**: 1,221 tokens
+- **Output**: 1,718 tokens
+- **Total**: 2,939 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Production Volumes**
+**Tracking the LD BBQ BIO**
 
-I've been reviewing the recent production data for the PF1690 LD BBQ BIO 30 0G product. Today's date is 2025-10-15. I've noted a steady output in the last few months, with 25 units on several Thursdays. There was also a notable 50-unit day, which looks like a consolidation of two batches.
-
-
-**Forecasting Future Deliveries**
-
-I'm now calculating the projected delivery timeline for the PF1690 product, having analyzed the production intervals. Given the 27 days since the last order on 2025-09-18, the previous median interval calculation of 20 days seems inaccurate. Considering the typical 14-day or 28-day cycle, an updated prediction is in order.
+I'm focused on the LD BBQ BIO 300G. Specifically, I've noted recent production runs. On September 18th, there were 25 units. Before that, September 4th saw 50 units. Prior to that, I see a few other 25 unit runs. I'll need to analyze trends.
 
 
-**Evaluating Order Patterns**
+**Forecasting the Production Run**
 
-I've been drilling down into the historical order volumes, and the 25-unit batch size appears consistent. I'm now analyzing the implications of the 50 and 75-unit orders from previous periods, particularly the potential for aggregated deliveries. The next expected order date is tomorrow, October 16th.
-
-
-**Predicting the Next Order**
-
-I've finalized my analysis, using the provided data, and determined that the next order is highly likely tomorrow. The analysis suggests a 25-unit order, with high confidence, based on the established 14-28 day cycle.
+Now, I'm examining the production cycle for the LD BBQ BIO 300G to predict future runs. Based on the 2024 data, production occurred on Thursdays, bi-weekly. Given today's date of October 15th, and the last run on September 18th, I'm predicting the next run for October 16th.
 
 
-**Confirming the Order Quantity**
+**Assessing the Cycle and Quantity**
 
-The final model has been refined; I've re-evaluated the cycle logic, leaning towards a 28-day cycle. Today, the order is highly probable, as 27 days have passed since the last order. My analysis of the historical data and recent pattern suggests the standard quantity of 25 units is recommended, with high confidence.
+I'm now refining the production run predictions for the LD BBQ BIO 300G. Analyzing the history, I've confirmed a bi-weekly to monthly cycle, often on Thursdays. The median lot size seems to be 25 units, although I also observed a Sept bump to 50u. Considering the 27 days since the last order, I'm leaning toward a predicted run of 25 units, possibly on October 16th.
+
+
+**Calculating the Order Prediction**
+
+I'm now fully immersed in the predictive model for the LD BBQ BIO 300G, leveraging the data. It appears the production cycle oscillates between two and four weeks, centered around Thursdays. The most recent data, along with historical records, leans me toward a prediction of 25 units, with high confidence, with the order due very soon, possibly today, October 16th.
 
 
 
@@ -1062,7 +1083,7 @@ The final model has been refined; I've re-evaluated the cycle logic, leaning tow
 - 2024-09-05 07:11:43: 31u
 - 2024-09-05 07:10:56: 31u
 
-**✅ Quantité LLM**: 186u (confidence: high)
+**✅ Quantité LLM**: 124u (confidence: high)
 **📊 Quantité Réelle**: 62u
 
 </details>
@@ -1171,7 +1192,7 @@ The final model has been refined; I've re-evaluated the cycle logic, leaning tow
 - 2024-08-07 13:00:33: 40u
 - 2024-07-25 07:58:01: 40u
 
-**✅ Quantité LLM**: 40u (confidence: medium)
+**✅ Quantité LLM**: 80u (confidence: high)
 **📊 Quantité Réelle**: 40u
 
 </details>
@@ -1241,7 +1262,7 @@ The final model has been refined; I've re-evaluated the cycle logic, leaning tow
 
 ---
 
-## False Positives (14)
+## False Positives (9)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -1264,17 +1285,12 @@ The final model has been refined; I've re-evaluated the cycle logic, leaning tow
 | [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 62 | Stock prédit: -8.7u (-2j restants) → prédit 62u mais non commandé |
 | [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 434 | Stock prédit: 29.5u (0j restants) → prédit 434u mais non commandé |
 | [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 434 | Stock prédit: 29.5u (0j restants) → prédit 434u mais non commandé |
+| [PF3361] LD FR TARTINADE BIO OIGNON 180G | 62 | Stock prédit: 7.3u (3j restants) → prédit 62u mais non commandé |
 | [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML | 40 | Stock prédit: -15.5u (-3j restants) → prédit 40u mais non commandé |
-| [PF3248] AA0347 - LD FR TARTINAD BIO RAIFORT 135G | 240 | Stock prédit: -782.0u (-16j restants) → prédit 240u mais non commandé |
-| [PF1840] LD TARTINADE BIO TRIPACK | 4925 | Stock prédit: -5125.0u (-17j restants) → prédit 4925u mais non commandé |
-| [PF1892] LD TARTINADE BIO TRUFFES 135G | 638 | Stock prédit: -2150.0u (-17j restants) → prédit 638u mais non commandé |
-| [PF2991] LD TARTINADE BIO CHATAIGNE135G | 400 | Stock prédit: -1385.0u (-17j restants) → prédit 400u mais non commandé |
-| [PF2990] LD TARTINADE BIO SALICORN 135G | 312 | Stock prédit: -1084.0u (-17j restants) → prédit 312u mais non commandé |
-| [PF3310] CB9026 - LD FR PESTO BIO CHAMPIGNONS TRUFFES 135G | 188 | Stock prédit: -611.0u (-17j restants) → prédit 188u mais non commandé |
-| [PF3311] CB9027 - LD FR TARTINADE BIO CEPES 135G | 422 | Stock prédit: -1395.0u (-17j restants) → prédit 422u mais non commandé |
+| [PF1840] LD TARTINADE BIO TRIPACK | 800 | Stock prédit: -5125.0u (-17j restants) → prédit 800u mais non commandé |
 | [PF2972] LD FR TARTINADE BIO OLIVE 200 | 434 | Stock prédit: -4.2u (0j restants) → prédit 434u mais non commandé |
 | [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 496 | Stock prédit: -233.6u (-19j restants) → prédit 496u mais non commandé |
-| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 434 | Stock prédit: -572.1u (-38j restants) → prédit 434u mais non commandé |
+| [PF3382] CB9032 - LD FR PUREE DE RAIFORT BIO 135g | 200 | Stock prédit: -650.0u (-37j restants) → prédit 200u mais non commandé |
 
 
 ---
@@ -1298,4 +1314,4 @@ The final model has been refined; I've re-evaluated the cycle logic, leaning tow
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:22:45.886Z*
+*Rapport généré automatiquement le 2025-12-19T14:52:06.517Z*

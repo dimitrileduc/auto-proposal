@@ -11,8 +11,8 @@
 
 ### 🤖 Usage LLM
 
-- **Appels**: 253
-- **Tokens**: 165,461 input + 557,349 output = 722,810 total
+- **Appels**: 251
+- **Tokens**: 213,396 input + 594,139 output = 807,535 total
 
 
 ---
@@ -23,7 +23,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 40 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 42 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -146,7 +146,7 @@
 
 ---
 
-## False Positives (40)
+## False Positives (42)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -204,6 +204,8 @@
 | [PF2937] LD FR TARTINADE BIO POIS 200 | 100 | Stock prédit: -100.0u (-22j restants) → prédit 100u mais non commandé |
 | [PF3395] LV SDP SAUCE COCKTAIL 125G | 2100 | Stock prédit: -2768.2u (-29j restants) → prédit 2100u mais non commandé |
 | [PF3392] LV FR TARTINAPERO BIO ASPERGE BOCAL 190G | 434 | Stock prédit: -572.1u (-28j restants) → prédit 434u mais non commandé |
+| [OCC05] OCCHIOLINO premium arancello 500ml | 3 | Stock prédit: -4.0u (-29j restants) → prédit 3u mais non commandé |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 10 | Stock prédit: -14.5u (-31j restants) → prédit 10u mais non commandé |
 | [JOY06] JOY! Confiture bio à la rhubarbe 370g | 200 | Stock prédit: -290.9u (-32j restants) → prédit 200u mais non commandé |
 | [JOY08] JOY! Confiture bio à la framboise 370g | 200 | Stock prédit: -290.9u (-32j restants) → prédit 200u mais non commandé |
 
@@ -229,4 +231,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:26:04.741Z*
+*Rapport généré automatiquement le 2025-12-19T14:57:24.525Z*

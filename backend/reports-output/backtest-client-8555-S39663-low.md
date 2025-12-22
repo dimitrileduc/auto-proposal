@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 19
-- **Tokens**: 11,548 input + 43,569 output = 55,117 total
+- **Tokens**: 15,272 input + 27,127 output = 42,399 total
 
 
 ---
@@ -23,7 +23,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 0 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 1 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -146,7 +146,7 @@
 
 ---
 
-## False Positives (0)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -161,7 +161,13 @@
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | Stock prédit: -18.3u (-21j restants) → prédit 40u mais non commandé |
+
 
 ---
 
@@ -184,4 +190,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:19:52.509Z*
+*Rapport généré automatiquement le 2025-12-19T14:47:48.654Z*

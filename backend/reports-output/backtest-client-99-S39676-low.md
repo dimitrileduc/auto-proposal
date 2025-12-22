@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 50
-- **Tokens**: 31,280 input + 209,119 output = 240,399 total
+- **Tokens**: 41,080 input + 145,122 output = 186,202 total
 
 
 ---
@@ -197,4 +197,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:20:55.342Z*
+*Rapport généré automatiquement le 2025-12-19T14:46:54.171Z*

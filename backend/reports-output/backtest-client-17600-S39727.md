@@ -11,8 +11,8 @@
 
 ### 🤖 Usage LLM
 
-- **Appels**: 31
-- **Tokens**: 22,805 input + 100,847 output = 123,652 total
+- **Appels**: 32
+- **Tokens**: 29,758 input + 68,133 output = 97,891 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 22.7% | 22 produits prédits, 5 corrects |
-| **Rappel** | 71.4% | 7 produits réels, 5 détectés |
-| **F1-Score** | 34.5% | Score équilibré global |
+| **Précision** | 19.0% | 21 produits prédits, 4 corrects |
+| **Rappel** | 57.1% | 7 produits réels, 4 détectés |
+| **F1-Score** | 28.6% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -69,11 +69,11 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 131.20 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 44.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 17.2% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 2 | Égalité parfaite |
+| **MAE** | 164.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 50.9% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 62.5% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 19.8% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 1 | Égalité parfaite |
 | Partial Match (>0u) | 3 | Avec erreur |
 
 <details>
@@ -127,7 +127,7 @@
 
 ---
 
-## True Positives (5)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -150,7 +150,6 @@
 | [LV361] LV "CLASSIQUE" WECK Sauce BOURGUIGNONNE 250ml SDP | 200 | 400 | 200.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [LV305] LV BIO Tartin'apero Tomato Basilico SDP 200 ml  | 434 | 434 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [LV235] LV "CLASSIQUE" WECK Sauce BEARNAISE* 250ml | 400 | 200 | 200.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | 200 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ❌ Non | 📊 Médiane |
 | [LV356] LV SET 3 X 135G trisauces  SDP | 512 | 256 | 256.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
@@ -178,10 +177,10 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier d'environ 22 à 27 jours
-- **Cycle médian (jours)**: 24
+- **Pattern temporel**: Mensuel stable (cycle de 22 à 27 jours)
+- **Cycle médian (jours)**: 25
 - **Dernière commande**: 2025-10-08
-- **Prochaine prédite**: 2025-11-01 
+- **Prochaine prédite**: 2025-11-02 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
@@ -189,40 +188,30 @@
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit présente une stabilité parfaite tant en volume (200u systématiques) qu'en fréquence (moyenne de 24 jours). La prochaine commande est prévue sous ~19 jours, ce qui justifie l'anticipation du stock pour l'horizon de 30 jours.
+Le produit présente une régularité parfaite sur les 3 derniers mois avec un volume constant de 200 unités par commande. L'intervalle médian est de 25 jours, plaçant la prochaine commande estimée au 2 novembre. Étant à 20 jours de cette date, une anticipation est nécessaire pour le cycle B2B.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 683 tokens
-- **Output**: 1,595 tokens
-- **Total**: 2,278 tokens
+- **Input**: 879 tokens
+- **Output**: 1,148 tokens
+- **Total**: 2,027 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking LV361 Inventory**
+**Considering Sales Data**
 
-I'm focused on the inventory levels for LV361. The "CLASSIQUE" WECK sauce has seen varied activity. Recent data shows a 200-unit batch on October 8th, following a much smaller order of 20 units on September 16th. August saw a similar 200 unit total. There's no N-1 history to review, which is a key gap.
-
-
-**Forecasting Future Orders**
-
-I'm calculating the estimated next order date for the "CLASSIQUE" WECK sauce, LV361. Based on recent ordering patterns and a 24.5-day cycle, I project a new order around November 1st. Given the 5 days since the last order, I have approximately 19.5 days until the predicted next order. This falls within the 30-day decision horizon. Furthermore, the quantity demand shows stability with a consistent 200-unit baseline.
+I'm currently analyzing the sales data for the LV "CLASSIQUE" WECK sauce. Recent transactions show two sales dates, with 200 units each. I'm focusing on the dates and quantities to determine trends. I'm especially interested in whether these are regular occurrences or one-offs.
 
 
-**Assessing Ordering Consistency**
+**Calculating Future Orders**
 
-I'm now deep-diving into the "CLASSIQUE" WECK sauce, focusing on order frequency and volume. The analysis confirms a strong cyclical pattern of roughly 24 days between orders, the last being on October 8th. The quantity consistently lands on 200 units. My confidence is high.
-
-
-**Evaluating JSON Structure**
-
-I'm now focusing on generating the JSON output. I've confirmed date calculations and refined my reasoning. I'll provide a single JSON object. Also, I've re-read and double-checked the instructions concerning multiple JSON objects.
+I've determined a monthly replenishment cycle of approximately 25 days for the "BOURGUIGNONNE" sauce. Based on the 2025-10-08 order, I predict the next order around 2025-11-02. With today being 2025-10-13, the anticipation window is a comfortable 20 days.
 
 
-**Refining the JSON Object**
+**Assessing Replenishment Needs**
 
-I am now focusing on the final JSON format. The schema requires an object. I've double-checked my calculations, particularly the date offsets. I'm satisfied with the reasoning, and am now formulating the 'reasoning' portion of the JSON to summarize the key findings concisely.
+I've completed the analysis of the "BOURGUIGNONNE" sauce. It reveals a highly predictable monthly order cycle, about 25 days, with orders of 200 units. Based on this, I'm confident a replenishment is likely around November 2nd, about 20 days from today. I'm recommending the standard quantity.
 
 
 
@@ -253,7 +242,7 @@ I am now focusing on the final JSON format. The schema requires an object. I've 
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier avec une accélération notable en fin de saison (moyenne de 25 jours récemment)
+- **Pattern temporel**: Cycle mensuel variable entre 16 et 34 jours
 - **Cycle médian (jours)**: 25
 - **Dernière commande**: 2025-10-08
 - **Prochaine prédite**: 2025-11-02 
@@ -264,45 +253,35 @@ I am now focusing on the final JSON format. The schema requires an object. I've 
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle récent entre les commandes est de 25 jours en moyenne. La dernière commande date du 08/10, ce qui place la prochaine échéance aux alentours du 02/11 (soit dans environ 20 jours). Selon la règle métier (horizon < 40 jours), il existe un risque de rupture. La quantité est extrêmement stable à 434 unités sur les trois dernières commandes de 2025, marquant une progression par rapport au palier de 350 unités observé en 2024.
+Le produit présente une stabilité remarquable sur les trois dernières commandes de 2025 avec exactement 434u, ce qui marque une augmentation par rapport à la base de 350u en 2024. Avec un cycle médian détecté de 25 jours et une dernière commande le 08/10, la prochaine échéance est estimée sous 20 jours, justifiant une action anticipée.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 963 tokens
-- **Output**: 2,498 tokens
-- **Total**: 3,461 tokens
+- **Input**: 1,159 tokens
+- **Output**: 1,570 tokens
+- **Total**: 2,729 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Historical Data**
+**Analyzing Sales Trends**
 
-I'm currently crunching the numbers for the LV BIO Tartin'apero Tomato Basilico SDP 200 ml product. I've got the recent sales figures from October 8th, and am looking at the prior data from September and August. I'm aiming to get a good read on the product's performance.
-
-
-**Projecting Future Orders**
-
-I've analyzed the historical sales data for the LV BIO Tartin'apero Tomato Basilico product, focusing on the intervals between orders to understand the ordering cycle. Based on the 2025 and 2024 data, and recent cycles specifically, I project a 25-day ordering cycle. Therefore, I anticipate the next order around November 2nd, 2025.
+I'm currently focused on the sales figures for the LV BIO Tartin'apero. Looking at the data from October 8th, I see 434 units sold. This seems consistent with the previous months of this year, specifically September and August, which also reported 434 units. I'm now comparing this against the previous year.
 
 
-**Forecasting Order Needs**
+**Predicting Order Frequency**
 
-I've assessed the risk of a stockout within a 30-day window, considering today's date and the most recent order. Given the 25-day cycle, I calculated the next order date. I am predicting a stockout risk, and therefore, I should flag this. Finally, I confirmed the current order size (434u) based on recent sales.
-
-
-**Interpreting Stockout Risk**
-
-I'm wrestling with the definition of "risk" in this context. Although I've identified a stockout risk, it is also only a week after the last order, and, therefore, ordering more immediately may be excessive. The 25-day cycle suggests the next order, of 434 units, is about 20 days away.
+I'm now calculating the typical cycle time between orders for the LV BIO Tartin'apero. Using the dates from the past few months, the median is about 25 days. Given this, and the last order date of October 8th, I'm anticipating the next one around November 2nd. The risk assessment indicates a possible need for action.
 
 
-**Evaluating Recommendation Strategy**
+**Calculating Inventory Needs**
 
-I'm now focusing on the nuances of the "risk" designation. I've re-confirmed the data and the 25-day cycle calculation. Although the next order is about three weeks away, the instructions indicate a "risk" if the order is needed within 40 days, and it is. Therefore, I'm recommending an order of 434 units, consistent with recent purchases.
+My analysis indicates a "RISQUE OUI" due to the predicted order date of November 2nd, which is only 20 days away. Given the consistent sales of 434 units in the last three months, and the previous year's sales of 350, I'm recommending an order of 434 units, maintaining the recent stable quantity.
 
 
-**Formulating the Recommendation**
+**Validating Data Outputs**
 
-I'm now putting together the recommendation in JSON format, as requested. The analysis highlights a 25-day cycle, putting the next order around November 2nd, which is within the 40-day risk horizon. Since the current order quantity is 434 units and demand has been very consistent, I'm recommending an order of 434 units with high confidence. The `days_until_next` is 20.
+I am now verifying the data format and calculations, particularly the JSON output. I'm focusing on ensuring the date patterns are correct, and that the `recommended_quantity` is an integer, alongside other requirements. The date calculations, including the predicted next order date, have been double-checked for accuracy.
 
 
 
@@ -333,59 +312,46 @@ I'm now putting together the recommendation in JSON format, as requested. The an
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle mensuel régulier d'environ 25-30 jours
-- **Cycle médian (jours)**: 26
+- **Pattern temporel**: Cycle mensuel régulier (~30 jours) avec des phases de réapprovisionnement rapprochées occasionnelles.
+- **Cycle médian (jours)**: 30
 - **Dernière commande**: 2025-09-10
-- **Prochaine prédite**: 2025-10-06 
+- **Prochaine prédite**: 2025-10-10 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: weak
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 200u, 600u, 800u
+- **Outliers détectés**: 600u
 
 **🧠 Raisonnement LLM:**
-Le cycle médian entre les commandes est de 26 jours. La dernière commande date du 10 septembre, soit 33 jours avant la date actuelle (13 octobre). Nous avons dépassé la date théorique de réapprovisionnement, d'autant plus que l'historique N-1 confirme une commande identique le 10 octobre 2024. La quantité de 400 unités est la plus stable et la plus fréquente (mode statistique).
+La dernière commande date du 10 septembre, soit il y a 33 jours. L'historique N-1 confirme une commande à la même période (10 octobre 2024). Le cycle médian de 30 jours est dépassé, rendant le risque de rupture imminent. La quantité de 400u est la constante historique (mode) observée à la fois sur 2025 et 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 992 tokens
-- **Output**: 1,982 tokens
-- **Total**: 2,974 tokens
+- **Input**: 1,188 tokens
+- **Output**: 1,521 tokens
+- **Total**: 2,709 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Considering Stock Levels**
+**Reviewing Production Data**
 
-My focus remains on the LV "CLASSIQUE" WECK Bearnaise sauce. Initial stock on September 10th was 400 units. Now, with today being October 13th, I'm working to assess the consumption rate and projected demand to see if a refill order is warranted, and if so, of what quantity. The critical timeframe is a potential stockout within the next 30 days.
-
-
-**Calculating Consumption Rates**
-
-\n\n
-
-I've been analyzing the historical ordering patterns for the LV "CLASSIQUE" Bearnaise sauce to establish a consumption model. The median cycle time calculation, informed by prior data, suggests that ordering every 3-4 weeks is the norm. I'm now weighing this against more recent, shorter intervals in September, to refine the projected refill timing and quantity.
+I'm currently analyzing the production data for LV "CLASSIQUE" WECK Sauce BEARNAISE (LV235). I'm focusing on the recent 2025 data, specifically the intervals between production runs. I see a pattern of decreasing intervals, which suggests an acceleration in production frequency. I'll need to investigate further to confirm if this trend continues.
 
 
-**Refining Refill Projections**
+**Evaluating Order Frequency**
 
-\n\n
-
-Based on the data analysis, the LV "CLASSIQUE" Bearnaise sauce seems to need a refill. The 33 days since the last order exceed the average cycle, making a stockout likely within the next 30 days. Considering past ordering, a quantity of 400 units is the safest bet, aligning with both the median and mode.
+I've examined the production intervals for LV "CLASSIQUE" WECK Sauce BEARNAISE, specifically comparing 2024 and 2025 data. The recent 2025 production runs show accelerating frequency, with decreasing intervals. Comparing to the 2024 order history, the timing suggests an order should have been placed recently. Given this, I assess a "RISK YES" decision is warranted.
 
 
-**Revisiting Order Intervals**
+**Assessing Quantity and Baseline**
 
-\n\n
-
-My current focus is on a deeper dive into the historical data to identify consumption patterns. I'm recalculating the cycle time using the full dataset to improve the accuracy of my predictions. The median calculation is now refined to 26 days. Also, based on the findings, I am leaning toward the hypothesis that we will have a stockout risk in less than 30 days.
+I've examined the recent production history for LV "CLASSIQUE" WECK Sauce BEARNAISE, focusing on order quantities and their frequency. Considering the 2024 and 2025 production runs, I see a baseline of 400u, with an outlier of 600u. I am confident that an order for 400u is justified, given the current timing. My assessment strongly suggests an immediate order is warranted.
 
 
-**Summarizing the Findings**
+**Determining the Order Details**
 
-\n\n
-
-My analysis has concluded. With 33 days since the last order, and an average cycle of 26, the LV "CLASSIQUE" Bearnaise sauce requires a refill. The historical data points to a likely need for an order in mid-October. I'm confident a 400-unit order is the most appropriate, based on consistent past patterns, including a 400u order in October of the prior year, and frequency.
+I have finished the full analysis. Given the 33-day gap since the last order and the historical pattern, an order is definitely overdue. The baseline quantity of 400u, based on the stable trend and recent history, seems appropriate, so my recommendation is for an immediate order of 400u. I am very confident.
 
 
 
@@ -412,60 +378,85 @@ My analysis has concluded. With 33 days since the last order, and an average cyc
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 1 (détection risque)**: medium
 - **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Saisonnier annuel avec récurrence en début d'automne
+- **Pattern temporel**: Saisonnier / Sporadique (cycle N-1 de 55 jours)
 - **Cycle médian (jours)**: 55
 - **Dernière commande**: 2024-10-01
 - **Prochaine prédite**: 2025-10-15 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: strong
-- **Tendance**: stable
+- **Tendance**: decreasing
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Bien qu'il n'y ait aucune commande sur les 3 derniers mois, l'historique N-1 montre une activité spécifique en août et octobre. La date du jour (13 octobre) est très proche de la date de commande de l'an dernier à la même époque (1er octobre). Ce produit de type 'set trisauces' présente un profil saisonnier marqué pour la fin d'année. Le risque de rupture est imminent si l'on suit le pattern de l'an passé. La quantité recommandée correspond au volume exact de la commande d'octobre 2024.
+Le produit présente un comportement saisonnier marqué en N-1 avec d'importants volumes en août et octobre, mais aucune activité sur les 90 derniers jours de 2025. Bien que le cycle de 55 jours soit légèrement inférieur au seuil de sporadicité strict (60j), l'absence totale de commandes récentes combinée à l'historique N-1 indique une commande imminente. La quantité recommandée (512u) se base sur la dernière observation de la période équivalente en N-1, reflétant la tendance légèrement baissière par rapport au volume d'août 2024 (640u) tout en restant conservateur.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 621 tokens
-- **Output**: 2,053 tokens
-- **Total**: 2,674 tokens
+- **Input**: 817 tokens
+- **Output**: 3,597 tokens
+- **Total**: 4,414 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Evaluating Reorder Needs**
+**Evaluating Product LV356**
 
-I'm currently focused on determining whether a reorder is necessary for the LV356 product. The goal is to calculate a reorder quantity, if any, considering the current status. Recent updates show a decrease in units since the 2024-08-07 observation. I need to output either zero or a suggested quantity.
-
-
-**Calculating Potential Quantity**
-
-I've analyzed the historical data, specifically the Aug 7 to Oct 1 interval, which points to a need for potential reordering. There's no activity for this set in the recent past (3 months), but seasonal factors, plus the timing from last year, strongly suggest an imminent order. A 55-day cycle from the previous summer order, if we apply it, suggests the order should have already happened. Given all those points, I'm now trying to output a non-zero quantity, but am held back from doing so.
+I'm currently focused on the LV356 product, specifically the LV SET 3 X 1 35G trisauces SDP. The target date for this is October 13th, 2025. I'm examining its recent history, but there's nothing logged for the last three months. Looking back to 2024, I see an output of 640u recorded on August 7th and then activity on October. My analysis is ongoing.
 
 
-**Determining Order Quantity**
+**Assessing Order Patterns**
 
-I'm now assessing the order quantity, given the seasonal demand pattern. The analysis of past quantities (512, 640) points to an average of 576 units. Considering the timing, I'm leaning toward recommending that quantity. I am also factoring in the absence of recent orders over the past three months, as well as the seasonal window for this item.
-
-
-**Recommending Final Order**
-
-I've determined a reorder is needed, influenced by the 2024 order pattern, but the exact order quantity is still pending. My assessment now includes a deep analysis. I'm focusing on various data points. The final value, 512, is based on the most recent seasonal equivalent. The risk is medium because I need to consider it's a seasonal item.
+The absence of recent orders is now leading me to consider a potential seasonal pattern. Given the October 1st, 2024 order, and the target date of October 13th, 2025, the lack of activity within the last 90 days, or even since July, is concerning. The 55-day cycle observed last year strengthens the argument for a high-risk situation within the next month, potentially.
 
 
-**Concluding the Recommendation**
+**Concluding Order Prediction**
 
-I've finalized my analysis and am ready to output the JSON. The product is likely seasonal, with a strong impact. Based on the 2024 data, a reorder is necessary now. The quantity will be 512, matching the previous year's October order. Risk is medium, since there is no recent order. The predicted date for order is Oct 15.
+I'm now determining the quantity to order, or if no order is needed. The absence of 2025 orders, coupled with the October 1st, 2024 order, suggests a seasonal pattern. I'm focusing on the N-1 data, which shows quantities of 640u and 512u. Given it's mid-October, and considering the observed downward trend, a quantity of approximately 512 units seems appropriate, pending further insights.
 
 
-**Formulating Final Output**
+**Determining the Order Quantity**
 
-I'm now consolidating all the data, confirming the product's seasonality and strong impact. Based on the 2024 order pattern, a reorder is necessary, with a quantity of 512, matching the last year's order for that period. I'll include the other insights, such as the estimated next order date as Oct 15, and the confidence level.
+Now, I'm focusing on the final order quantity. Given the seasonal nature implied by N-1 data, and it being mid-October, the downward trend suggests ordering around 512 units. However, the lack of 2025 orders does raise questions about the product's continued availability. Further, it is past the expected date, which suggests a need for an immediate assessment.
+
+
+**Confirming Order Recommendation**
+
+Considering the limited N-1 data, which only has two data points, the order recommendation requires more data. Even with the "3+ orders" rule, and given the seasonality, I'm sticking with a 512 unit order. I'm operating under the assumption that the lack of 2025 data might just indicate an upcoming, seasonal order. My confidence is medium.
+
+
+**Synthesizing Final Recommendations**
+
+The data has presented challenges. The order quantity of 512 units, or potentially none, is still in consideration. I'm focusing on the sparse, only 2-data-point, N-1 history, and the complete lack of orders in 2025 so far. I am assessing the risks of both under- and over-ordering. I'm considering potential for seasonality. My confidence is only medium given the ambiguity.
+
+
+**Finalizing the Recommendation**
+
+I'm now integrating all data points. The product's sporadic nature, the absence of recent orders, and the N-1 data pointing to an October order are crucial. The 512-unit baseline, derived from the last order, remains my recommendation. I'm noting the limited data as well as the seasonal nature.
+
+
+**Adjusting for Safety**
+
+I'm now implementing the 576 unit baseline quantity, which is the median, but recommending 512. Given the product's sporadic nature, with seasonal orders anticipated, I'm aiming for a cautious, yet responsive, approach. The downward trend in N-1 data supports the slightly lower quantity. I'm keeping a close eye on any incoming changes.
+
+
+**Revisiting Quantity Recommendation**
+
+I am now focusing on the final recommendation. Due to the limited N-1 data, only 2 points, I'm sticking to the baseline of 576 units, the median. The product has shown a downward trend, and the season suggests 512 units. Given the imminence of the order and the potential for a seasonal demand surge, I'm going with 512, with medium confidence.
+
+
+**Re-evaluating Seasonality**
+
+I'm focused on the "Sporadic" designation, and its implications. Although the rule regarding a "sporadic" pattern requires 60 days between orders, and I have 55, I'm still treating it as sporadic. Given the lack of recent orders, but with an N-1 seasonal pattern, a 512-unit order is safest.
+
+
+**Reviewing Final Adjustments**
+
+I'm now consolidating the final decision. Even though N-1 data is limited to two points, I'm maintaining the 512-unit order, as the latest order, for this season, after a recent review of my thought process. The baseline is still 576, but given the trend, 512 seems the best and safest.
 
 
 
@@ -477,7 +468,7 @@ I'm now consolidating all the data, confirming the product's seasonality and str
 
 
 
-### 📊 Données d'Input LLM (5 produits)
+### 📊 Données d'Input LLM (4 produits)
 
 
 <details>
@@ -554,25 +545,7 @@ I'm now consolidating all the data, confirming the product's seasonality and str
 
 
 <details>
-<summary><strong>4. [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml</strong> - ❌ LLM Échoué (fallback médiane)</summary>
-
-**📅 Commandes Récentes (3 derniers mois):**
-- Aucune commande récente
-
-**📅 Commandes N-1 (même période année dernière):**
-- 2024-06-11 08:46:37: 200u
-- 2024-04-02 13:39:05: 200u
-- 2023-12-19 08:25:50: 200u
-- 2023-10-18 13:56:51: 200u
-
-**📊 Quantité Médiane (fallback)**: 200u
-**📊 Quantité Réelle**: 200u
-
-</details>
-
-
-<details>
-<summary><strong>5. [LV356] LV SET 3 X 135G trisauces  SDP</strong> - ✅ LLM Réussi</summary>
+<summary><strong>4. [LV356] LV SET 3 X 135G trisauces  SDP</strong> - ✅ LLM Réussi</summary>
 
 **📅 Commandes Récentes (3 derniers mois):**
 - Aucune commande récente
@@ -613,7 +586,6 @@ I'm now consolidating all the data, confirming the product's seasonality and str
 |---------|-------------|--------|
 | [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml | 200 | Stock prédit: 145.8u (10j restants) → prédit 200u mais non commandé |
 | [LV234] LV "CLASSIQUE" WECK Mayonnaise aus œufs 250ml | 400 | Stock prédit: 345.1u (25j restants) → prédit 400u mais non commandé |
-| [LV236] LV "CLASSIQUE" WECK Sauce TARTARE 250ml | 200 | Stock prédit: 160.8u (16j restants) → prédit 200u mais non commandé |
 | [LV303] LV BIO  Tartin'apero Mangue curry SDP 200 ml  | 434 | Stock prédit: 354.3u (17j restants) → prédit 434u mais non commandé |
 | [LV358] LV SDP SAUCE BEARNAISE 125G (copie) | 350 | Stock prédit: 175.0u (25j restants) → prédit 350u mais non commandé |
 | [LV302] LV BIO Tartin'apero Carotte Gingembre SDP 200 ml  | 350 | Stock prédit: -186.4u (-9j restants) → prédit 350u mais non commandé |
@@ -622,17 +594,18 @@ I'm now consolidating all the data, confirming the product's seasonality and str
 | [LV334] LA VACHE TRAD Sauce au poivre bocal 250ml WECK SDP | 200 | Stock prédit: -98.0u (-12j restants) → prédit 200u mais non commandé |
 | [LV317] LV "CLASSIQUE" WECK Vinaigrette CIBOULETTE 200ml | 150 | Stock prédit: 115.5u (127j restants) → prédit 150u mais non commandé |
 | [LV304] LV BIO Tartin'apero Poivrons Chili SDP 200 ml  | 434 | Stock prédit: -70.9u (-5j restants) → prédit 434u mais non commandé |
-| [LV307] LV BIO Tartin'apero Houmous type SDP 200 ml  | 350 | Stock prédit: 141.9u (18j restants) → prédit 350u mais non commandé |
+| [LV307] LV BIO Tartin'apero Houmous type SDP 200 ml  | 434 | Stock prédit: 141.9u (18j restants) → prédit 434u mais non commandé |
 | [LV tritart 135] LV BIO SET 3 X 135G TARTIN'APERO SDP | 256 | Stock prédit: -125.5u (-12j restants) → prédit 256u mais non commandé |
 | [LV337] LV BIO Tartin'apero TOMATE AIL DES OURS SDP 200ml | 434 | Stock prédit: -19.8u (-1j restants) → prédit 434u mais non commandé |
-| [LV362] LV BIO Tartin'apero Olives Câpres Tomate SDP 200 ml bio (copie) | 434 | Stock prédit: -4.0u (0j restants) → prédit 434u mais non commandé |
+| [LV364] LV SDP SAUCE Cocktail  125ML | 350 | Stock prédit: -4.0u (0j restants) → prédit 350u mais non commandé |
 | [LV306] LV BIO Tartin'apero Olives Vertes SDP200 ml  | 350 | Stock prédit: -20.6u (-2j restants) → prédit 350u mais non commandé |
 | [LV309] LV BIO Tartin'apero Lentilles curry SDP 200ml | 350 | Stock prédit: 168.3u (50j restants) → prédit 350u mais non commandé |
+| [LV333] LV "CLASSIQUE" WECK Mayonnaise au WASABI 250ml SDP  | 200 | Stock prédit: 125.5u (90j restants) → prédit 200u mais non commandé |
 
 
 ---
 
-## False Negatives (2)
+## False Negatives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -652,10 +625,11 @@ I'm now consolidating all the data, confirming the product's seasonality and str
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
+| [LV233] LV "CLASSIQUE" WECK Mayonnaise TOMATE séchées 250ml | 200 | Stock: 31.2u (18j restants) - filtré pour autre raison |
 | [LV311] LV BIO Tartin'apero Basilico SDP 200 ml  | 350 | Stock suffisant: 421.7u (137j restants > seuil 30j) |
 | [LV363] LV BIO Tartin'apero Avocat 180g  | 434 | Stock: 335.7u (13j restants) - filtré pour autre raison |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:29:06.748Z*
+*Rapport généré automatiquement le 2025-12-19T14:52:39.625Z*

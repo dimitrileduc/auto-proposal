@@ -7,11 +7,11 @@
   "daysBeforePrediction": 1,
   "metrics": {
     "tp": 1,
-    "fp": 11,
+    "fp": 10,
     "fn": 0,
-    "precision": 0.08333333333333333,
+    "precision": 0.09090909090909091,
     "recall": 1,
-    "f1Score": 0.15384615384615385,
+    "f1Score": 0.16666666666666669,
     "mae": 0,
     "wmape": 0,
     "mape": 0,
@@ -23,8 +23,8 @@
   },
   "llmUsage": {
     "calls": 15,
-    "promptTokens": 10954,
-    "completionTokens": 37970,
-    "totalTokens": 48924
+    "promptTokens": 13894,
+    "completionTokens": 33813,
+    "totalTokens": 47707
   }
 }

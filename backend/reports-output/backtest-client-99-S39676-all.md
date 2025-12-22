@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 50
-- **Tokens**: 31,280 input + 209,119 output = 240,399 total
+- **Tokens**: 41,080 input + 145,122 output = 186,202 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 17.4% | 23 produits prédits, 4 corrects |
-| **Rappel** | 30.8% | 13 produits réels, 4 détectés |
-| **F1-Score** | 22.2% | Score équilibré global |
+| **Précision** | 12.0% | 25 produits prédits, 3 corrects |
+| **Rappel** | 23.1% | 13 produits réels, 3 détectés |
+| **F1-Score** | 15.8% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 50.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 50.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **MAE** | 0.33 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 33.3% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 33.3% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 33.3% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -127,7 +127,7 @@
 
 ---
 
-## True Positives (4)
+## True Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -148,12 +148,11 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
 | [MF0027] MF Tarti Aubergine 250g  | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
-### 🤖 Détails des Prédictions LLM (4 produits)
+### 🤖 Détails des Prédictions LLM (3 produits)
 
 
 <details>
@@ -173,55 +172,65 @@
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle sporadique identifié à environ 38 jours entre les deux dernières commandes.
+- **Pattern temporel**: Cycle long et régulier identifié entre 38 et 46 jours
 - **Cycle médian (jours)**: 38
 - **Dernière commande**: 2025-10-09
-- **Prochaine prédite**: 2025-11-16 
+- **Prochaine prédite**: 2025-11-16 (dans 35j)
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Commandes sporadiques alternant lundi et jeudi ; la dernière commande vient d'être effectuée
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle récent entre les commandes de septembre et octobre est de 38 jours. Selon la règle métier (cycle ≤ 40 jours), un risque de rupture est identifié. Bien que la dernière commande date d'il y a seulement 3 jours, la faible quantité habituelle (1u) et la régularité récente incitent à commander une unité pour sécuriser le prochain cycle.
+Le cycle récent entre les deux dernières commandes est de 38 jours. La dernière commande ayant eu lieu il y a 3 jours (2025-10-09), la prochaine est estimée pour le 2025-11-16 (soit dans 35 jours). Selon les règles de gestion B2B pour les cycles de 31-45 jours, une anticipation est nécessaire. La quantité est stabilisée à 1 unité sur l'année 2025, remplaçant les fluctuations de 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 688 tokens
-- **Output**: 1,622 tokens
-- **Total**: 2,310 tokens
+- **Input**: 884 tokens
+- **Output**: 2,429 tokens
+- **Total**: 3,313 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Recent Sales Data**
+**Reviewing Product Data**
 
-I've been examining the recent sales data for the MF Tarti Aubergine product. Notably, there was a single unit sold on October 9th and another on September 1st. I'm now comparing these recent sales figures to last year's performance to identify any trends or anomalies.
-
-
-**Calculating Order Intervals**
-
-I've just calculated the interval between the two most recent orders, which is 38 days. Based on that, and other historical data, I'm predicting the next order date to be around November 16th. Right now, it's only been 3 days since the last one.
+I'm currently focused on the sales data for product MF0027, specifically the MF Tarti Aubergine 250g. I've noted the recent sales history, with 1 unit sold on October 9th and another on September 1st. The sales interval seems to be around 3. I'm trying to determine trends.
 
 
-**Evaluating Supply Chain Risk**
+**Assessing Order Risk**
 
-I'm now assessing the risk profile for the MF Tarti Aubergine product. The 38-day order cycle and the predicted next order date of November 16th place it within the 30-40 day window I'm using to trigger risk assessment. Given these intervals, risk is flagged.
-
-
-**Refining Order Quantity**
-
-I'm now determining the recommended order quantity, which I've calculated to be 1 unit, based on the recent sales data. My confidence in this is medium, due to the low order volume, but I'm increasing my confidence in the predicted date because of the cycle analysis. I'm taking the reasoning that "the cycle between the two last orders is 38 days, which places the next probable order in mid-November".
+I'm now calculating the risk of reordering MF Tarti Aubergine 250g. Using the 38-day cycle, I project the next order around November 16th. Given today's date of October 12th, that's 35 days away, which triggers a potential risk flag. The last order was recent, though, so it needs further analysis. I am looking more closely at the last order's date.
 
 
-**Determining Risk Factors**
+**Refining Risk Evaluation**
 
-I'm now assessing the risk profile and have confirmed it's elevated. The 38-day order cycle and predicted November 16th date are the main drivers. Given that, and the time remaining until the next order, the risk is indeed flagged as "yes," and I'm justifying this risk determination.
+I'm wrestling with the conflicting indicators on MF Tarti Aubergine 250g. The 35-day window to the predicted next order (November 16th) triggers a potential risk flag according to the rules, but the recent order (October 9th) contradicts it. I'm focusing on the rule's nuances now.
+
+
+**Reflecting on the Rules**
+
+I am now reviewing the rules again. The 35-day window to the predicted order date still flags a risk, which triggers a recommendation for an order. However, the short interval since the last order (only 3 days) feels counterintuitive. I am confirming if the rules account for this circumstance.
+
+
+**Evaluating System Logic**
+
+I'm now grappling with the rules' nuances, the 35-day window for MF Tarti Aubergine 250g, and the recent order. While the rules flag a risk for anticipation, a recent purchase feels contradictory. I need to clarify the relationship between the 30-day decision horizon and the potential 35-day order date, considering B2B implications. The "Yes" on risk leads to a recommended quantity > 0.
+
+
+**Revisiting Quantity Decisions**
+
+I'm now clarifying the order quantity. Because a "Risk = Yes" flag triggers, the recommended quantity is >0. The historical data and the rules suggest 1 unit. The 38-day cycle, with the last order on October 9th, aligns with the anticipation window, so I'm finalizing the baseline.
+
+
+**Formulating Final Recommendations**
+
+I'm now consolidating all the data. The rules dictate a "Yes" on risk due to the 35-day window, prompting a reorder. However, recent orders and quantity consistency complicate the decision. I've re-examined the cycle, quantity and dates, leading me to confirm a baseline order of 1 unit.
 
 
 
@@ -232,11 +241,11 @@ I'm now assessing the risk profile and have confirmed it's elevated. The 38-day 
 
 
 <details>
-<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 1u
-- 📊 **Baseline calculée**: 1.3u
+- 📊 **Baseline calculée**: 1.5u
 - 📊 **Médiane historique**: 1u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
@@ -247,82 +256,12 @@ I'm now assessing the risk profile and have confirmed it's elevated. The 38-day 
 - **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
+- **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle intermittent long, environ tous les 42 jours
-- **Cycle médian (jours)**: 42
-- **Dernière commande**: 2025-10-09
-- **Prochaine prédite**: 2025-11-20 
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: none
-- **Tendance**: stable
-- **Analyse jour cycle**: N/A
-- **Outliers détectés**: Aucun
-
-**🧠 Raisonnement LLM:**
-Le cycle médian entre les commandes est de 41,5 jours (arrondi à 42). La dernière commande ayant eu lieu il y a seulement 3 jours (2025-10-09), la prochaine date de commande théorique est le 2025-11-20. Selon la règle métier (horizon de 39 jours jusqu'à la prochaine commande, ce qui est ≤ 40), un risque de rupture est identifié. La quantité recommandée suit la médiane des commandes passées (1 unité) pour maintenir le stock.
-
-**📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 645 tokens
-- **Output**: 1,407 tokens
-- **Total**: 2,052 tokens
-
-**🤔 Raisonnement Interne du Modèle (Thinking):**
-<details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
-
-**Examining the Sales Data**
-
-I've been poring over the sales data for the [REB04] ReBEL chips. Interesting to note the recent purchase on the 9th, a single unit. It seems like the sales haven't been consistent these past few months, as can be seen from the history log. I'm keen to understand the fluctuations, and correlate any external factors that may have influenced these sales trends. Further analysis is required.
-
-
-**Predicting Future Demand**
-
-The model predicts the next order for the [REB04] ReBEL chips around November 20th. Given a 41.5-day cycle, and the fact the last purchase was on October 9th, it seems we have a "RISQUE OUI" flag. Though, considering the low volume and recent purchase, it might be an anomaly. I will examine the "pull" and stock levels further to confirm.
-
-
-**Evaluating the Order Timing**
-
-My analysis indicates a potential "RISQUE OUI" flag, as the next order is estimated in 39 days. Despite the recent purchase, the cycle suggests another order around November 20th. I'm taking into account the history and quantity patterns to determine the optimal reorder volume, if necessary, while considering the 40-day risk trigger.
-
-
-**Calculating the Reorder Threshold**
-
-Based on the [REB04] ReBEL chip data, I've confirmed a "RISQUE OUI" signal due to the 39-day window until the estimated next order date, relative to today. The calculations show a cycle of roughly 42 days, confirming the predicted reorder is within the risk threshold. The baseline quantity remains at one unit, given the low-volume pattern.
-
-
-
-
-</details>
-
-</details>
-
-
-<details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM: 2u vs Médiane: 1u (Réel: 1u)</summary>
-
-**📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 2u
-- 📊 **Baseline calculée**: 1.5u
-- 📊 **Médiane historique**: 1u
-- ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 1u (100.0%)
-- 📉 **Erreur Médiane**: 0u (0.0%)
-
-**🚨 Décision LLM Phase 1 (Risque de rupture):**
-- **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 2u (risque détecté)
-
-**🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
-
-**🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier avec une commande toutes les 3 semaines environ
+- **Pattern temporel**: Cycle régulier d'environ 21 jours
 - **Cycle médian (jours)**: 21
 - **Dernière commande**: 2025-09-22
 - **Prochaine prédite**: 2025-10-13 
@@ -333,30 +272,35 @@ Based on the [REB04] ReBEL chip data, I've confirmed a "RISQUE OUI" signal due t
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle médian entre les commandes est de 21 jours. La dernière commande ayant eu lieu le 2025-09-22, la prochaine échéance théorique est le 2025-10-13 (demain par rapport à la date actuelle). Le risque de rupture à 30j est donc avéré. La quantité recommandée de 2 unités s'appuie sur la dernière commande et la moyenne haute du flux historique.
+Le cycle médian détecté est de 21 jours. La dernière commande datant du 22 septembre, la prochaine est prévue pour le 13 octobre (soit demain par rapport à la date du jour). Il y a donc un risque imminent de rupture. Concernant le volume, les quantités oscillent strictement entre 1 et 2 unités. Conformément aux directives pour les petites quantités (1-2u), on retient la valeur basse de l'alternance.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 672 tokens
-- **Output**: 1,091 tokens
-- **Total**: 1,763 tokens
+- **Input**: 868 tokens
+- **Output**: 1,687 tokens
+- **Total**: 2,555 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Forecasting Demand Patterns**
+**Tracking recent sales data**
 
-I'm currently analyzing the sales data for [REB02] ReBEL chips. My immediate focus is on the recent sale of 2 units on 2025-09-22 and the single unit sold on 2025-09-01. The 21-day interval between these two sales is a critical data point I'm trying to factor into the projections. I'm exploring potential demand fluctuations.
-
-
-**Estimating Future Orders**
-
-I've calculated the projected next order date for the [REB02] chips, considering the median interval between past orders. Today's date is 2025-10-12, and the projected date is 2025-10-13, just a day away. Given the 20 days since the last order and the oscillating quantities, I'm recommending an order of 2 units, mirroring the most recent purchase.
+I'm currently focused on the sales history for the ReBEL chips, specifically the paprika fumé flavor. My initial scan confirms only a couple of units moved in September. I'm noting the days of the week to detect potential trends.
 
 
-**Evaluating Order Quantities**
+**Predicting the next sale**
 
-I'm now determining the appropriate order quantity for the [REB02] chips. Considering the past sales, oscillating between 1 and 2 units, I'm leaning toward ordering 2 units. This aligns with the most recent purchase and seems prudent given the projected next order date is tomorrow. My confidence level is medium due to the limited historical data.
+I've calculated the median interval between sales, currently at 21 days. Based on this, and the last sale date of September 22nd, I anticipate the next order to come very soon, potentially tomorrow. I'm also assessing the risk level. The predicted order quantity will be 1 unit, given the sales pattern observed.
+
+
+**Calculating predicted order details**
+
+I'm now calculating the precise quantity for the next order. Given the recent sales history of the ReBEL chips and the patterns I'm observing, I predict a quantity of 1 unit. This conservative estimate is based on the fluctuating 1-2 unit sales.
+
+
+**Confirming the predicted order**
+
+The model confirms a high confidence in the prediction. I've re-evaluated the data and refined the analysis, the cycle and date calculations are fully correct. The anticipated order is for a single unit, and the date is estimated as tomorrow. I'm now cross-referencing this with external factors.
 
 
 
@@ -367,7 +311,7 @@ I'm now determining the appropriate order quantity for the [REB02] chips. Consid
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 2u vs Médiane: 2u (Réel: 1u)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM: 2u vs Médiane: 2u (Réel: 1u)</summary>
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 2u
@@ -383,11 +327,11 @@ I'm now determining the appropriate order quantity for the [REB02] chips. Consid
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 1 (détection risque)**: medium
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier d'environ 3-4 semaines
+- **Pattern temporel**: Cycle irrégulier avec une médiane de 33 jours
 - **Cycle médian (jours)**: 33
 - **Dernière commande**: 2025-09-22
 - **Prochaine prédite**: 2025-10-25 
@@ -398,30 +342,35 @@ I'm now determining the appropriate order quantity for the [REB02] chips. Consid
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit présente une consommation extrêmement stable de 2 unités par commande. Avec un intervalle médian de 33 jours, la prochaine commande théorique est prévue autour du 25 Octobre. Étant à 13 jours de cette date (soit < 40 jours d'horizon), un risque de rupture imminent est identifié conformément aux critères B2B.
+Le produit présente une stabilité parfaite du volume par commande (2 unités). Bien que le cycle entre les commandes soit fluctuant (45 jours puis 21 jours), la médiane de 33 jours place la prochaine commande autour du 25 octobre. Étant à moins de 15 jours de cette date estimée, une commande est nécessaire. La quantité recommandée suit strictement la médiane historique très stable pour ce segment de petit volume.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 645 tokens
-- **Output**: 1,048 tokens
-- **Total**: 1,693 tokens
+- **Input**: 841 tokens
+- **Output**: 1,457 tokens
+- **Total**: 2,298 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Chip Sales Data**
+**Tracking ReBEL Chip Sales**
 
-The initial data points are sparse. I've noted two units sold on both 2025-09-01 and 2025-09-22, both Mondays. The latest entry is 2025-10-12, but the quantity sold isn't specified. I'm focusing on identifying any patterns or trends in these sales figures.
-
-
-**Calculating Delivery Timelines**
-
-I've projected the next order date based on the sales cycle, estimating it to be around October 25th. This leaves a 13-day window before that projected delivery. The product's history reveals a consistent pattern of two units per order. The analysis points to orders occurring every three to four weeks.
+Today, I'm focusing on the sales trajectory of the ReBEL chip product. I've been reviewing the sales history, noting the consistent bi-weekly Monday purchases of two units each. The most recent data point from 2025-10-12 and I see two previous purchases on 2025-09-22, and 2025-09-01, both Mondays. The data is consistent!
 
 
-**Evaluating Future Inventory Needs**
+**Forecasting Future Purchases**
 
-The analysis confirms a consistent pattern of ordering two units every 33 days. I've calculated a predicted next order date of October 25th, which is only 13 days away. Given the low, stable volume, I'm confident in a recommended quantity of two units to mitigate any short-term stock issues.
+I'm now calculating the next potential purchase date, using the median interval between past orders. The intervals are 45 and 21 days, so the median interval is 33 days. Based on the last purchase on 2025-09-22, I predict the next order could be around 2025-10-25. This means there's a risk.
+
+
+**Evaluating Order Timing Risk**
+
+I'm now assessing the risk based on the predicted order date. The interval between orders seems to be shortening, and the calculated next order date is October 25th. Given today's date of October 12th, the estimated 13-day window presents a 'YES' risk, but the exact order date is still variable.
+
+
+**Predicting the Replenishment**
+
+I'm now refining the prediction. Based on the 21-day interval, a purchase on October 13th is expected, creating an even shorter window. However, to stay conservative, the 33-day median of the intervals will be kept. Considering the variability, a constant stock of two units is recommended.
 
 
 
@@ -433,7 +382,7 @@ The analysis confirms a consistent pattern of ordering two units every 33 days. 
 
 
 
-### 📊 Données d'Input LLM (4 produits)
+### 📊 Données d'Input LLM (3 produits)
 
 
 <details>
@@ -455,24 +404,7 @@ The analysis confirms a consistent pattern of ordering two units every 33 days. 
 
 
 <details>
-<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - ✅ LLM Réussi</summary>
-
-**📅 Commandes Récentes (3 derniers mois):**
-- 2025-10-09 06:45:30: 1u
-- 2025-09-01 07:18:56: 2u
-- 2025-07-18 08:34:46: 1u
-
-**📅 Commandes N-1 (même période année dernière):**
-- Aucune commande N-1
-
-**✅ Quantité LLM**: 1u (confidence: medium)
-**📊 Quantité Réelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - ✅ LLM Réussi</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - ✅ LLM Réussi</summary>
 
 **📅 Commandes Récentes (3 derniers mois):**
 - 2025-09-22 09:41:05: 2u
@@ -483,14 +415,14 @@ The analysis confirms a consistent pattern of ordering two units every 33 days. 
 **📅 Commandes N-1 (même période année dernière):**
 - Aucune commande N-1
 
-**✅ Quantité LLM**: 2u (confidence: medium)
+**✅ Quantité LLM**: 1u (confidence: high)
 **📊 Quantité Réelle**: 1u
 
 </details>
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - ✅ LLM Réussi</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - ✅ LLM Réussi</summary>
 
 **📅 Commandes Récentes (3 derniers mois):**
 - 2025-09-22 09:41:05: 2u
@@ -510,7 +442,7 @@ The analysis confirms a consistent pattern of ordering two units every 33 days. 
 
 ---
 
-## False Positives (19)
+## False Positives (22)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -530,6 +462,7 @@ The analysis confirms a consistent pattern of ordering two units every 33 days. 
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [ORG04] ORGANICA crunchy fruit fraise 12g | 2 | Stock prédit: 1.9u (59j restants) → prédit 2u mais non commandé |
 | [JOY02] JOY! Organic Strawberry Jam 370g | 1 | Stock prédit: 0.9u (26j restants) → prédit 1u mais non commandé |
 | [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml | 2 | Stock prédit: 1.8u (21j restants) → prédit 2u mais non commandé |
 | [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml | 1 | Stock prédit: 0.9u (12j restants) → prédit 1u mais non commandé |
@@ -541,19 +474,21 @@ The analysis confirms a consistent pattern of ordering two units every 33 days. 
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 0.5u (19j restants) → prédit 1u mais non commandé |
 | [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 1 | Stock prédit: 0.0u (0j restants) → prédit 1u mais non commandé |
 | [JOY03] JOY! Organic Apricot Jam 370g | 1 | Stock prédit: 0.8u (59j restants) → prédit 1u mais non commandé |
+| [ORG03] ORGANICA crunchy fruit myrtille 16g | 1 | Stock prédit: 0.5u (38j restants) → prédit 1u mais non commandé |
 | [ORG10] ORGANICA crunchy fruit mangue 18g | 1 | Stock prédit: 0.6u (51j restants) → prédit 1u mais non commandé |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | Stock prédit: 0.6u (60j restants) → prédit 1u mais non commandé |
 | [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml | 1 | Stock prédit: -1.0u (-20j restants) → prédit 1u mais non commandé |
 | [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 1 | Stock prédit: -0.8u (-17j restants) → prédit 1u mais non commandé |
 | [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.5u (47j restants) → prédit 1u mais non commandé |
-| [JOY05] Organic Cherry Jam 370g | 1 | Stock prédit: -1.6u (-37j restants) → prédit 1u mais non commandé |
+| [LEA10] LEAMO ginger beer bio 330ml | 1 | Stock prédit: 0.3u (15j restants) → prédit 1u mais non commandé |
 | [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | Stock prédit: -0.1u (-4j restants) → prédit 1u mais non commandé |
 | [MF0030] MF Tarti Mangue Curry 250g  | 1 | Stock prédit: -0.8u (-27j restants) → prédit 1u mais non commandé |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | Stock prédit: 0.3u (45j restants) → prédit 1u mais non commandé |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: 0.0u (2j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (9)
+## False Negatives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -581,9 +516,10 @@ The analysis confirms a consistent pattern of ordering two units every 33 days. 
 | [RF003] REFIELD Maïs 500G  | 1 | En rupture (-37j) mais non prédit - probablement filtré (pas de consommation ou historique insuffisant) |
 | [ORG01] ORGANICA crunchy fruit ananas 16g | 1 | En rupture (-94j) mais non prédit - probablement filtré (pas de consommation ou historique insuffisant) |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | Stock: 0.9u (26j restants) - filtré pour autre raison |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | Stock: 0.9u (20j restants) - filtré pour autre raison |
 | [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | Stock: 0.9u (20j restants) - filtré pour autre raison |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:20:55.343Z*
+*Rapport généré automatiquement le 2025-12-19T14:46:54.172Z*

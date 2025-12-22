@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 9
-- **Tokens**: 6,392 input + 20,301 output = 26,693 total
+- **Tokens**: 8,156 input + 28,587 output = 36,743 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 20.0% | 5 produits prédits, 1 corrects |
+| **Précision** | 25.0% | 4 produits prédits, 1 corrects |
 | **Rappel** | 25.0% | 4 produits réels, 1 détectés |
-| **F1-Score** | 22.2% | Score équilibré global |
+| **F1-Score** | 25.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -158,7 +158,7 @@
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 1500u
-- 📊 **Baseline calculée**: 1510u
+- 📊 **Baseline calculée**: 1500u
 - 📊 **Médiane historique**: 1518u
 - ✅ **Réel commandé**: 1500u
 - 📉 **Erreur LLM**: 0u (0.0%)
@@ -174,41 +174,57 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle mensuel très régulier d'environ 28 jours
-- **Cycle médian (jours)**: 28
+- **Pattern temporel**: Cycle mensuel régulier (env. 29 jours)
+- **Cycle médian (jours)**: 29
 - **Dernière commande**: 2025-10-09
-- **Prochaine prédite**: 2025-11-06 
+- **Prochaine prédite**: 2025-11-07Base quantite 1500u stable sur les 3 derniers mois. Prochaine commande attendue le 2025-11-07, soit dans 25 jours, ce qui est sous le seuil de risque de 30 jours nécessitant une planification B2B. Le volume de commande a doublé par rapport à l'année dernière mais s'est stabilisé autour de 1500 unités lors du dernier trimestre de 2025.",
+  "confidence_phase1": "high",
+  "confidence_phase2": "high"
+}
+
+
+*(Note on dates calculation: Last order 2025-10-09 + 29 days = 2025-11-07. From current date 2025-10-13 to 2025-11-07 is 25 days.)* 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit présente une régularité exceptionnelle avec un cycle médian de 28 jours. La dernière commande date du 09/10, la prochaine est prévue pour le 06/11 (dans 24 jours), ce qui justifie une planification de commande sous l'horizon de 40 jours. Le volume s'est stabilisé autour de 1500 unités sur les trois derniers mois, marquant une forte croissance par rapport à N-1 mais une grande stabilité récente.
+Le produit présente un cycle mensuel extrêmement stable de 29 jours. Bien que la dernière commande ait été passée il y a seulement 4 jours, la prochaine commande prévue tombe dans 25 jours, soit en deçà du seuil de 30 jours défini pour l'identification du risque de rupture imminente. La quantité est stable à ~1500 unités sur les trois derniers mois, marquant un net changement structurel par rapport aux volumes de 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 832 tokens
-- **Output**: 1,251 tokens
-- **Total**: 2,083 tokens
+- **Input**: 1,028 tokens
+- **Output**: 2,054 tokens
+- **Total**: 3,082 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Production Quantities**
+**Observing Production Consistency**
 
-I've been analyzing the production quantities for product [PF3313], specifically looking at the DE_AUFSTR_ 034_T6 KORO TARTINADE BIO MANGUE 380G. I've noted the recent quantities produced: 1500 units on October 9th, 2025. This, along with prior months of data, is shaping my understanding of the production trends.
-
-
-**Predicting Replenishment Cycles**
-
-I've calculated the median production cycle to be approximately 28-29 days. Based on the most recent order on October 9th, I predict the next order will be around November 6th. With today being October 13th, that gives us about 24 days until the next potential replenishment, indicating a potential risk of being out of stock.
+The production figures for the KORO Tartinade Bio Mangue appear remarkably steady over the past few months. I've noted a consistent output of around 1500 units, give or take, with only minor fluctuations. This stability is quite noteworthy, especially given the various factors that can impact production. It looks like the process is very well controlled.
 
 
-**Calculating Quantity Recommendations**
+**Projecting Future Demands**
 
-Based on the consistent 28-day cycle, I've determined a recommended quantity of 1500 units for the next replenishment, informed by the stable recent production volume. The confidence level is high, given the regular cycle and recent production data.
+I've calculated the next potential order date for the product, estimating it to be around November 7th. Given the consistent production cycle of roughly 28-29 days and the most recent order on October 9th, this projection is based on the median of recent intervals. There appears to be a definite risk of stockout, calling for an imminent B2B order.
+
+
+**Confirming Stability & Quantities**
+
+I've just refined the analysis, confirming the production stability at around 1500 units per cycle, or about 29 days. Further investigation points to a stable trend, with no significant outliers. My recommendation is to order 1500 units, as the confidence level is high based on recent data.
+
+
+**Reassessing Order Timing**
+
+I've re-examined the 2025-10-09 order and the production cycle, refining the stockout risk assessment. With 25 days until the next predicted order date, the risk remains high, justifying an immediate order recommendation of 1500 units. Though recent, the prompt guides us to address future demands proactively.
+
+
+**Evaluating Replenishment Cycles**
+
+I've re-evaluated the data, with the decision now being clearly defined as ordering for the next cycle, due in 25 days. The prompt's logic directs us to recommend a quantity, given the impending replenishment date. I maintain that the correct quantity is 1500 units, as the volume is stable.
 
 
 
@@ -249,7 +265,7 @@ Based on the consistent 28-day cycle, I've determined a recommended quantity of 
 
 ---
 
-## False Positives (4)
+## False Positives (3)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -269,7 +285,6 @@ Based on the consistent 28-day cycle, I've determined a recommended quantity of 
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF3362] DE_AUFSTR_037_T6 KORO TARTINADE BIO HOUMOUS 380g | 166 | Stock prédit: 153.9u (38j restants) → prédit 166u mais non commandé |
 | [PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G | 1826 | Stock prédit: 183.4u (2j restants) → prédit 1826u mais non commandé |
 | [PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G | 4224 | Stock prédit: 966.7u (6j restants) → prédit 4224u mais non commandé |
 | [PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G | 166 | Stock prédit: -41.5u (-4j restants) → prédit 166u mais non commandé |
@@ -304,4 +319,4 @@ Based on the consistent 28-day cycle, I've determined a recommended quantity of 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:17:24.006Z*
+*Rapport généré automatiquement le 2025-12-19T14:45:45.974Z*

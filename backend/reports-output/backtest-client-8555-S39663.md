@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 19
-- **Tokens**: 11,548 input + 43,569 output = 55,117 total
+- **Tokens**: 15,272 input + 27,127 output = 42,399 total
 
 
 ---
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 2.38 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 8.4% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 16.9% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 0.4% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 5 | Égalité parfaite |
-| Partial Match (>0u) | 3 | Avec erreur |
+| **MAE** | 3.63 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 12.9% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 23.2% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 4.9% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 4 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -151,7 +151,7 @@
 | [PF0502] FILOU MOUTARDE SQUEEZE 300 ML | 40 | 40 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF1539] FILOU BOULETTE CHASSEUR 800G | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0084] FILOU CARBONNADES 800 GR | 2 | 4 | 2.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [PF0094] FILOU MOUTARDE 700 GR | 20 | 20 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF0094] FILOU MOUTARDE 700 GR | 30 | 20 | 10.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0096] FILOU MOUTARDE 3 KG | 3 | 10 | 7.0 | 70.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 44 | 44 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 75 | 65 | 10.0 | 15.4% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
@@ -181,41 +181,41 @@
 - **Confiance Phase 2 (quantité)**: low
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande isolée, cycle estimé à 30 jours par défaut
+- **Pattern temporel**: Sporadique (une seule commande enregistrée)
 - **Cycle médian (jours)**: 30
 - **Dernière commande**: 2025-09-20
-- **Prochaine prédite**: 2025-10-20 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-10-20 (dans 8j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Dernière commande effectuée un samedi; pas assez de données pour confirmer un jour fixe.
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Une seule commande de 40u constatée le 20/09. Avec un écart de 22 jours par rapport à la date actuelle, et selon la règle de précaution B2B de 40 jours, un risque de rupture est identifié car le renouvellement de stock est attendu prochainement (cycle de réapprovisionnement mensuel classique). La quantité recommandée se base sur l'unique point de donnée disponible.
+Seule une commande de 40 unités est enregistrée le 20 septembre. Avec 22 jours écoulés, un réapprovisionnement est probable d'ici 8 jours si l'on suit un cycle mensuel standard (30j). En l'absence d'historique plus profond, la quantité de la dernière commande est retenue comme référence.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 596 tokens
-- **Output**: 1,003 tokens
-- **Total**: 1,599 tokens
+- **Input**: 792 tokens
+- **Output**: 1,068 tokens
+- **Total**: 1,860 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Order Trends**
+**Evaluating Recent Sales Trends**
 
-I am currently digging into the data on the PF1599 Filou Mayonnaise. My recent analysis shows a solitary order of 40 units on September 20th. There's no prior ordering history to compare against, a key aspect I'm considering. The last recorded order dates back to last month.
-
-
-**Evaluating Data Points**
-
-I've just assessed the recent data, confirming a single order of 40 units placed on September 20th. Given this, and lacking a longer history, I'm now applying a default 30-day cycle to estimate the next potential order date, placing it around October 20th. This falls within my risk assessment horizon.
+I'm currently analyzing the sales data for PF1599, specifically focusing on the recent order from September 2025. It appears that there was only a single order within the last three months, which is a noteworthy point. I am now cross-referencing this information to identify any patterns or possible triggers for this order.
 
 
-**Assessing Order Prediction**
+**Calculating Inventory Risk Assessment**
 
-I'm now calculating the next probable order date, which, based on the limited data, I'm projecting around October 20th. Given the B2B context, I'm applying a default 30-day cycle. There's only one data point, but considering the 22 days since the last order, I'm recommending a preventative replenishment.
+My analysis continues, focusing on risk assessment for PF1599. I've pinpointed a high-risk scenario due to the single order observed in the recent timeframe. Therefore, I will prioritize keeping a safety stock close to the baseline quantity of 40u. The next order is expected imminently, given the product's typical lifecycle.
+
+
+**Forecasting Future Demand**
+
+The assessment is now complete, and the model has outputted its recommendations. It predicts an upcoming order around October 20, just eight days from now, given the estimated 30-day cycle. The advised order quantity remains 40 units, due to the single data point, but my confidence in this prediction is low, as the model is still starved for data.
 
 
 
@@ -242,98 +242,45 @@ I'm now calculating the next probable order date, which, based on the limited da
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle de 46 jours identifié sur les commandes récentes
+- **Pattern temporel**: Cycle régulier d'environ 46 jours détecté
 - **Cycle médian (jours)**: 46
 - **Dernière commande**: 2025-09-20
-- **Prochaine prédite**: 2025-11-05 (dans 24j)
-- **Dans horizon 30j ?**: ✅ OUI
+- **Prochaine prédite**: 2025-11-05 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: Intervalle de 46 jours entre le 05/08 et le 20/09 (mardi au samedi).
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-L'analyse montre un cycle de commande de 46 jours avec une quantité constante de 40 unités. En prolongeant ce cycle à partir de la dernière commande du 20/09, le besoin suivant est estimé au 05/11. Cela place l'échéance à 24 jours de la date actuelle, entrant dans l'horizon de sécurité de 30 jours (et respectant le seuil de risque de <40 jours). La quantité recommandée correspond au volume stable observé historiquement.
+Le cycle de commande est stable (46 jours) sur les deux occurrences récentes avec un volume constant de 40 unités. La prochaine commande est estimée pour le 5 novembre 2025, soit dans 24 jours. Étant donné que cet intervalle est inférieur à 30 jours, un réapprovisionnement de 40 unités est recommandé pour couvrir le besoin imminent.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 621 tokens
-- **Output**: 4,059 tokens
-- **Total**: 4,680 tokens
+- **Input**: 817 tokens
+- **Output**: 1,099 tokens
+- **Total**: 1,916 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Forecasting Order Timing**
+**Analyzing Order Frequency**
 
-I'm currently working on the product [PF0502] FILOU MOUTARDE SQUEEZE 300 ML and analyzing its order history to forecast the next order date. I've noted two recent orders within the last three months, specifically on August 5th and September 20th, with a 46-day interval between them. Considering the current date, I am evaluating the best approach to predict the next order.
-
-
-**Assessing Risk of Stockout**
-
-\n\n
-
-I've refined the stockout risk assessment for [PF0502] FILOU MOUTARDE.  I've confirmed the predicted order date of November 5th, based on the 46-day cycle.  Given the 30-day horizon, I concluded a "RISQUE OUI" because the predicted order date is within the window.  This confirms my initial hypothesis, and I am preparing the next steps.
+I'm currently calculating the time between orders for product PF0502, a 300ml squeeze bottle of FILOU MOUTARDE. Based on the provided data, there's a 46-day gap between the August and September orders. The most recent order was on September 20th, 2025.
 
 
-**Confirming Risk Assessment**
+**Calculating Future Demand**
 
-\n\n
-
-My analysis of [PF0502] FILOU MOUTARDE is complete.  I've thoroughly assessed the order frequency, confirmed the 46-day cycle, and calculated the predicted next order date of November 5th.  With the horizon set to 30 days, I maintain a "RISQUE OUI" stockout risk designation. Furthermore, I have also considered the recommended order quantity and the confidence in the estimation.
+I've predicted the next order date for PF0502 as November 5th, 2025, considering the 46-day cycle. With the current date being October 12th, there are 24 days until the expected order. The consistent 40-unit order volume and the 30-day horizon lead me to recommend immediate replenishment.
 
 
-**Evaluating the Risk Again**
+**Verifying Decision Logic**
 
-\n\n
-
-Re-examining the risk assessment for [PF0502], I'm focusing on the discrepancy between the 46-day cycle and the provided rules. While the cycle is greater than 40 days, the next order is due in 24 days, well within the 30-day window. This suggests a "RISQUE OUI" designation despite the rule's initial implication of "RISQUE NON". I need to reconcile the heuristic with practical supply chain considerations.
-
-
-**Finalizing the Recommendation**
-
-\n\n
-
-Following the prompt's rules precisely, despite the 46-day cycle exceeding the 40-day threshold, my initial evaluation suggested "RISQUE NON" due to the regular cycle and the prompt’s specific logic. Therefore, I will now consider whether the instructions and context are consistent. However, I have concluded that the recommendation should be to recommend an order quantity of zero.
-
-
-**Reflecting on the Rules**
-
-\n\n
-
-My current thinking is focused on applying the prompt's rules while acknowledging potential contradictions.  The 46-day cycle exceeds the 40-day threshold, suggesting a "RISQUE NON" outcome. However, given the order is expected within 30 days, I am still conflicted about the best course of action regarding the instruction.  I will try to work around the logic by making the minimum change.
-
-
-**Reconciling Contradictions**
-
-\n\n
-
-Now I'm focusing on the core issue: the conflicting signals within the prompt's rules. The calculated cycle length of 46 days triggers a "RISQUE NON" outcome based on the specified logic. However, the predicted order date, only 24 days away, creates a high-risk situation, making the "RISQUE OUI" seems more appropriate. I need a more specific rule for this scenario.
-
-
-**Refining Heuristic Application**
-
-\n\n
-
-My current thinking centers on the direct application of the prompt's rules, while acknowledging the inherent conflict.  Despite the 46-day cycle exceeding the threshold, and the cycle being "regular," the 30-day horizon dictates that an order is imminent. This contradiction leads to the conclusion that a zero quantity order might be a misinterpretation. I am struggling with the question.
-
-
-**Revisiting Prompt Application**
-
-\n\n
-
-My current thinking centers on the crucial 30-day horizon. Considering the predicted order date of November 5th, and today being October 12th, the anticipated order is due within 24 days.  This is a critical factor, which takes precedence, in my view, over the 46-day cycle length. My aim is to decide whether I should recommend or not, using both rules.
-
-
-**Evaluating Rule Ambiguity**
-
-\n\n
-
-I'm currently focused on the interpretation of the prompt's 40-day rule. Considering that the product's cycle is 46 days, the direct application of the rule suggests a "RISQUE NON". However, with the order due in 24 days, the "horizon 30j" context conflicts with that straightforward interpretation. I will try to decide between two contradictory rules.
+I'm double-checking the reasoning to ensure alignment with the established 30-day replenishment window. With the predicted order in 24 days, and a stable demand of 40 units, the calculations confirm the necessity for immediate replenishment, as the risk is confirmed within the decision window. I've re-validated the dates and baseline quantities.
 
 
 
@@ -360,11 +307,11 @@ I'm currently focused on the interpretation of the prompt's 40-day rule. Conside
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: low
-- **Confiance Phase 1 (détection risque)**: low
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance Phase 2 (quantité)**: low
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Données insuffisantes (une seule commande), cycle présumé mensuel
+- **Pattern temporel**: Commande unique isolée (cycle supposé mensuel)
 - **Cycle médian (jours)**: 30
 - **Dernière commande**: 2025-09-20
 - **Prochaine prédite**: 2025-10-20 
@@ -375,30 +322,36 @@ I'm currently focused on the interpretation of the prompt's 40-day rule. Conside
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Seule une commande de 2 unités est présente dans l'historique récent (20/09). A 22 jours de cet événement, et en l'absence de cycle établi, on applique le principe de prudence B2B en anticipant un besoin de réapprovisionnement identique à la dernière commande pour couvrir l'horizon des 30 prochains jours.
+Seulement une commande enregistrée il y a 22 jours pour 2 unités. En l'absence de données historiques supplémentaires, on applique le principe de précaution pour un produit sporadique commandé dans les 90 derniers jours. L'échéance de 30 jours (cycle standard estimé) arrive à terme dans 8 jours, ce qui induit un risque de rupture imminent.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 590 tokens
-- **Output**: 1,028 tokens
-- **Total**: 1,618 tokens
+- **Input**: 786 tokens
+- **Output**: 1,118 tokens
+- **Total**: 1,904 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Analyzing Recent Sales Data**
+**Assessing the Order Data**
 
-The product, FILOU BOULETTE CH ASSEUR 800G, shows a single order for two units on 2025-09-20. Due to a lack of previous sales data, a cycle analysis is premature. I am now focusing on determining a trend from this initial data point.
+\n\n
 
-
-**Evaluating Purchase Risk Window**
-
-Considering the 22-day interval since the last order, and an assumed monthly cycle, I calculate the next potential order date around 2025-10-20, roughly eight days from today. Based on the "cycle <= 40 days" rule, a risk of requiring stock in the next 30 days is assessed.
+I'm focusing on the product's ordering history. So far, the only recorded order for FILOU BOULETTE CH ASSEUR 800G was on September 20th, 2025, with two units. There is no prior history to reference, limiting my ability to analyze trends or seasonality at this point.
 
 
-**Formulating a Recommendation**
+**Predicting the Replenishment**
 
-Given the limited data, I am now focusing on the 'days until next' field, which is approximately 8 days. Considering the single prior order and assumed monthly cycle, I'm leaning toward recommending a baseline quantity of 2 units, with low confidence, as we are in the potential purchase window. I am also checking the JSON validity for the output of my thoughts.
+\n\n
+
+My analysis indicates a single order for the FILOU BOULETTE product on September 20th. Given the 22 days elapsed since that order and considering a potential 30-day cycle, a reorder seems plausible, especially considering it's been categorized as a sporadic product. I'm leaning toward recommending a replenishment of the same quantity (2 units) as a safety measure. However, I have yet to incorporate the final logic check.
+
+
+**Confirming the Reorder**
+
+\n\n
+
+My analysis has solidified my reorder recommendation. Considering the single historical order 22 days ago and the 8-day window until the estimated next order date, my risk assessment indicates a potential need. The "Safety B2B" approach, based on the frequency pattern and the 30-day cycle assumption, leads me to confirm the reorder of two units with low confidence.
 
 
 
@@ -413,7 +366,7 @@ Given the limited data, I am now focusing on the 'days until next' field, which 
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 2u
-- 📊 **Baseline calculée**: 2u
+- 📊 **Baseline calculée**: 2.5u
 - 📊 **Médiane historique**: 3u
 - ✅ **Réel commandé**: 4u
 - 📉 **Erreur LLM**: 2u (50.0%)
@@ -424,46 +377,46 @@ Given the limited data, I am now focusing on the 'days until next' field, which 
 - **Quantité décidée**: 2u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: low
+- **Confiance globale**: medium
 - **Confiance Phase 1 (détection risque)**: medium
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle long irrégulier d'environ 46 jours
+- **Pattern temporel**: Commande sporadique (cycle de 46 jours détecté)
 - **Cycle médian (jours)**: 46
 - **Dernière commande**: 2025-09-20
 - **Prochaine prédite**: 2025-11-05 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle moyen observé entre les commandes est de 46 jours. La dernière commande datant du 20 septembre, la prochaine est estimée pour début novembre. Le délai restant de 24 jours entrant dans l'horizon de risque de 40 jours, une commande de réapprovisionnement est conseillée. La quantité de 2 unités est la plus fréquente et correspond à l'historique N-1.
+La consommation actuelle montre un cycle d'environ 46 jours (août à septembre). Avec une dernière commande au 20 septembre, la prochaine est estimée autour du 5 novembre, soit d'ici 24 jours, ce qui entre dans la fenêtre de risque de 30 jours pour l'approvisionnement B2B. Les volumes sont très faibles et stables (2u en 2024, 3u puis 2u en 2025). On privilégie la médiane récente de 2 unités.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 632 tokens
-- **Output**: 1,086 tokens
-- **Total**: 1,718 tokens
+- **Input**: 828 tokens
+- **Output**: 1,258 tokens
+- **Total**: 2,086 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Product Sales Trends**
+**Examining Production Quantities**
 
-I've been analyzing the sales data for [PF0084] FILOU CARBONNADES. It looks like the most recent transaction was on 2025-09-20, with a purchase of 2 units. I'm noting a previous sale of 3 units on 2025-08-05. I'm starting to compare these 2025 figures with the sales data from September 2024.
-
-
-**Projecting Future Inventory Needs**
-
-Based on the latest data, I've calculated a predicted next order date of November 5th for [PF0084]. This is a critical product. My analysis reveals a stable pattern of approximately 46-day cycles, with 2-3 units being the typical order quantity. Given this, I anticipate a need for two units, with a moderate risk profile, due to the imminent order date.
+I've been analyzing the production quantities for [PF0084] FILOU CARBONNADES. It looks like the product saw a two-unit production run on September 20th, 2025, a Saturday. Prior to that, a three-unit production run happened on August 5th, 2025, which fell on a Tuesday. The data is still fresh in my mind.
 
 
-**Calculating Order Quantities**
+**Projecting Replenishment Needs**
 
-I'm now zeroing in on the ideal order quantity. The analysis reveals a recurring pattern of two units being the most frequent order, as seen in both September 2024 and 2025. Given the low frequency and stability, I'm leaning toward recommending two units for the upcoming order, with low confidence due to limited data.
+I've determined a potential replenishment need for [PF0084] FILOU CARBONNADES.  Based on the production cycles, I'm predicting the next order around November 5th, which is within the 30-day window. Considering the small quantities in the historical data, I'm leaning toward a baseline of 2.5 units, potentially adjusting for B2B needs.
+
+
+**Calculating Recommended Order**
+
+I've just finalized the recommended order quantity for [PF0084] FILOU CARBONNADES. Despite the somewhat sporadic production schedule, I've landed on 2 units, considering the recent history of 2 and 3 unit orders and the historical value in the same period. The confidence level is medium-high, given the consistent low quantities. My analysis of the product's cycle and the proximity to the predicted order date helped solidify this number.
 
 
 
@@ -474,27 +427,27 @@ I'm now zeroing in on the ideal order quantity. The analysis reveals a recurring
 
 
 <details>
-<summary><strong>5. [PF0094] FILOU MOUTARDE 700 GR</strong> - LLM: 20u vs Médiane: 30u (Réel: 20u)</summary>
+<summary><strong>5. [PF0094] FILOU MOUTARDE 700 GR</strong> - LLM: 30u vs Médiane: 30u (Réel: 20u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 20u
+- 🤖 **Quantité recommandée (finale)**: 30u
 - 📊 **Baseline calculée**: 30u
 - 📊 **Médiane historique**: 30u
 - ✅ **Réel commandé**: 20u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 10u (50.0%)
 - 📉 **Erreur Médiane**: 10u (50.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 20u (risque détecté)
+- **Quantité décidée**: 30u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: low
-- **Confiance Phase 1 (détection risque)**: medium
-- **Confiance Phase 2 (quantité)**: low
+- **Confiance Phase 1 (détection risque)**: low
+- **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle de commande d'environ 46 jours
+- **Pattern temporel**: Cycle de commande d'environ 46 jours détecté
 - **Cycle médian (jours)**: 46
 - **Dernière commande**: 2025-09-20
 - **Prochaine prédite**: 2025-11-05 
@@ -505,95 +458,35 @@ I'm now zeroing in on the ideal order quantity. The analysis reveals a recurring
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-L'historique montre un cycle de 46 jours (Aug 5 -> Sep 20). La prochaine commande est prévue pour le 05/11/2025. L'écart entre aujourd'hui et la prochaine commande est de 24 jours, ce qui est inférieur au seuil de risque de 40 jours et se situe dans l'horizon d'analyse de 30 jours. Bien que l'historique soit limité à deux points, la tendance est à la baisse (40u puis 20u). En privilégiant la quantité récente pour éviter le surstock, une commande de 20 unités est recommandée.
+La prochaine commande est estimée pour le 05/11/2025, soit dans 24 jours, ce qui entre dans l'horizon critique des 30 jours pour le B2B. L'historique ne contient que deux points : une baisse est visible (40u vers 20u), mais par prudence B2B, la médiane de 30u est préconisée pour la commande à venir. La confiance est faible en raison du manque de profondeur historique (seulement 2 commandes).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 617 tokens
-- **Output**: 5,592 tokens
-- **Total**: 6,209 tokens
+- **Input**: 813 tokens
+- **Output**: 1,443 tokens
+- **Total**: 2,256 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating the Order Volumes**
+**Assessing Product Orders**
 
-I'm currently working on calculating the order volumes for the product [PF0094] FILOU MOUTARDE, specifically looking at its recent history. I have the data for September 20th, with 20 units ordered, and August 5th, with 40 units. I see there is no previous month history. Next, I need to consider other factors.
-
-
-**Evaluating the Stockout Risk**
-
-I've determined the risk of stockout for [PF0094] FILOU MOUTARDE. Based on the 46-day cycle between past orders, the next order is estimated for November 5th. This is within the 30-day horizon from now, so yes, there's a risk. I'm now looking at quantities.
+I'm currently focused on the order history for product [PF0094]. My analysis now includes the order interval, which I've calculated to be roughly one and a half months between the last two orders. This information is key to understanding the product's demand cycle.
 
 
-**Assessing Quantity Recommendations**
+**Calculating Future Needs**
 
-Based on the analysis, I've determined a baseline quantity of 30 units, as a median of the available data. However, given the most recent order of 20 units and a possible decreasing trend, I'm considering adjusting my final recommendation. The data suggests potential stockout risk, and further refinement is needed.
-
-
-**Determining the Recommendation**
-
-I'm now putting together the recommendation. The calculations suggest a baseline of 30 units, yet the trend seems downward, favouring a recent order of 20. Considering the 46-day cycle and the stockout risk, the final recommendation is 20 units. My confidence level, however, remains low due to the limited historical data.
+I've determined the projected next order date for product [PF0094] to be November 5th. Considering today's date, that's just 24 days away, which raises a flag. I'm also now factoring in the quantities, leaning towards 20 units based on the most recent order, while acknowledging the limitations of only having two data points.
 
 
-**Finalizing the Analysis**
+**Evaluating Supply Projections**
 
-I'm now revisiting the risk assessment. Considering the 46-day cycle, the predicted order date is November 5th, which is within the 30-day horizon, even though the cycle is more than 40 days. The recommendation remains 20 units, but my confidence remains low due to limited data, and now also considering the instructions.
-
-
-**Assessing the Order Risk**
-
-I've re-examined the risk based on the given logic. The 46-day cycle seems to suggest no immediate risk according to some instructions, but I'm hesitant. My gut, and the B2B context, suggests potential for stockout. I'm wavering between 0 and 20 units as my final decision, as I reconsider factors.
+I've now analyzed the complete dataset for product [PF0094]. My model recommends ordering 30 units, despite the decreasing trend in quantities, to ensure B2B needs are met. The confidence level is low, as the cycle is based on only one interval. The next order is predicted in 24 days.
 
 
-**Final Decision Review**
+**Confirming Final Projections**
 
-I've re-assessed the criteria, recognizing the 46-day cycle falls outside the 40-day threshold. This, according to the provided decision rules, suggests no immediate risk. However, considering the B2B context and the relatively short timeframe (24 days), I'm now leaning towards a zero quantity recommendation.
-
-
-**Reviewing the Conflicting Logic**
-
-The instructions provide conflicting criteria for order decisions. While the 46-day cycle suggests no immediate risk, the 24-day window before the predicted order date presents a real risk within the 30-day horizon. I'm choosing to go with a small order, as a supply chain expert, to address the risk.
-
-
-**Synthesizing the Decision**
-
-I've re-evaluated the decision-making process to resolve the conflicting instructions. While the 46-day cycle falls outside of the initial risk parameter, the fact that the predicted order date is within the 30-day horizon is concerning. Despite the limited data, I'm recommending a quantity of 20 units based on the recent order, mitigating the risk of potential stockout within the B2B framework.
-
-
-**Final Cycle and Decision Review**
-
-I've re-reviewed the 46-day cycle again, noting the predicted order falls within the 30-day horizon, indicating a potential stockout risk. Though the established cycle suggests no immediate danger, the closeness of the upcoming demand necessitates action. Consequently, my recommendation remains 20 units.
-
-
-**Synthesizing for the Decision**
-
-I've carefully considered the analysis, including conflicting guidelines. Though the cycle exceeds 40 days, the impending order date within 30 days warrants action. Based on recent trends and B2B requirements, I'm recommending a quantity of 20 units to address a potential stockout.
-
-
-**Final Decision Re-evaluation**
-
-I'm now changing my recommendation to zero units. Despite the approaching 24-day window and the potential for stockout, I'm interpreting the provided heuristic about the 46-day cycle and the 30-day horizon as a strict rule. My confidence remains low due to limited data, but I'm adjusting for the given constraints.
-
-
-**Synthesizing for the Decision**
-
-I've carefully considered the analysis, including conflicting guidelines. While the 46-day cycle falls outside of the initial risk parameter, the fact that the predicted order date is within the 30-day horizon is concerning. However, I am now prioritizing the rule that suggests no risk, and recommending 0 units.
-
-
-**Revisiting Quantity Decisions**
-
-I'm now changing my recommendation to zero units. Despite the 46-day cycle exceeding the 40-day threshold, the 24-day window before the predicted order suggests a potential risk. But considering the provided rules, and the limited data, I'm adjusting for the given constraints.
-
-
-**Finalizing Quantity Determination**
-
-I'm now revisiting the decision. The critical factor is whether the upcoming order falls within 30 days. It does. Despite the 46-day cycle exceeding 40, a potential stockout risk exists. Therefore, I will adjust my decision. Based on the 30-day horizon, I'm recommending 20 units.
-
-
-**Final Cycle and Decision Review**
-
-I've re-reviewed the 46-day cycle again, noting the predicted order falls within the 30-day horizon, indicating a potential stockout risk. Though the established cycle suggests no immediate danger, the closeness of the upcoming demand necessitates action. Consequently, my recommendation remains 20 units.
+I've re-examined the data and confirmed the cycle length of 46 days, leading to a predicted order date of November 5th. This is just 24 days away. Despite the decreasing quantity trend (40 to 20 units), I'm sticking with a recommended order of 30 units to meet B2B demands, with low confidence due to limited data.
 
 
 
@@ -619,12 +512,12 @@ I've re-reviewed the 46-day cycle again, noting the predicted order falls within
 - **Quantité décidée**: 3u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: low
-- **Confiance Phase 1 (détection risque)**: low
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: medium
 - **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle unique observé, estimation basée sur une fréquence mensuelle standard
+- **Pattern temporel**: Unique commande récente, cycle présumé mensuel (30j)
 - **Cycle médian (jours)**: 30
 - **Dernière commande**: 2025-09-20
 - **Prochaine prédite**: 2025-10-20 
@@ -635,35 +528,30 @@ I've re-reviewed the 46-day cycle again, noting the predicted order falls within
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Une seule commande de 3 unités a été enregistrée le 20 septembre. Avec un cycle de réapprovisionnement estimé à 30 jours (standard pour ce type de produit), la prochaine date prévue est le 20 octobre. Nous sommes actuellement à 8 jours de cette échéance, ce qui justifie une commande préventive de 3 unités pour éviter une rupture dans l'horizon des 30 jours.
+Une seule commande de 3 unités enregistrée le 20/09. À J+22, nous entrons dans la fenêtre de réapprovisionnement classique pour un cycle mensuel B2B. La recommandation se base sur l'unique volume connu.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 586 tokens
-- **Output**: 1,227 tokens
-- **Total**: 1,813 tokens
+- **Input**: 782 tokens
+- **Output**: 1,015 tokens
+- **Total**: 1,797 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Analyzing Recent Sales Data**
+**Evaluating Order Frequency**
 
-The initial focus is on the mustard product [PF0096]. The latest data shows a single order of 3 units on 2025-09-20. The target date for this product is 2025-10-12. There's no N-1 history to analyze for comparison, which might complicate projections.
-
-
-**Calculating Projected Demand**
-
-I've determined the next order date for PF0096, based on the assumption of a 30-day cycle, as around 2025-10-20. Given the single data point, I'm setting a baseline of 3 units, the order quantity. My recommendation is to order 3 units. The time horizon is approaching, and there is a low risk of stockout.
+I'm currently analyzing the order data for product [PF0096]. The initial scan reveals a single order on September 20, 2025, for three units, with a target date of October 12, 2025. This single data point makes it impossible to determine the order frequency. I'll need more data.
 
 
-**Finalizing the Recommendation**
+**Predicting Next Order**
 
-I'm solidifying the recommendation for PF0096: order 3 units. My confidence is low, given only one data point. However, the predicted next order date is around October 20th. With the current date being October 12th, and the 22 days since the last order aligning with an assumed monthly cycle, I believe the risk of stockout is present.
+I'm now assessing the implications of the single order. Given the product's nature, a monthly cycle seems plausible. This means the next order might be around October 20th, eight days from now. Considering the 22-day gap since the last order, there's a potential need for replenishment within the next month, so I am recommending maintaining the existing order quantity of 3 units.
 
 
-**Evaluating Risk and Quantity**
+**Synthesizing Order Dynamics**
 
-I'm now assessing the risk based on the 22 days since the last order. With an estimated 30-day cycle, I'm confident we're close to the next order date. The recommendation to order 3 units remains, as there's only one data point for quantity. My confidence remains low, but the risk of stockout appears present.
+Now, I've consolidated my analysis into a JSON-ready format, ensuring all values are double-quoted and fit valid enums. The lack of historical data necessitates relying on assumptions, but I've incorporated these within the framework. I'm confident that the single-point data will be accurately represented.
 
 
 
@@ -694,10 +582,10 @@ I'm now assessing the risk based on the 22 days since the last order. With an es
 - **Confiance Phase 2 (quantité)**: low
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande unique détectée, cycle estimé à 30 jours
+- **Pattern temporel**: Commande unique détectée le 20/09, cycle mensuel estimé à 30 jours
 - **Cycle médian (jours)**: 30
 - **Dernière commande**: 2025-09-20
-- **Prochaine prédite**: 2025-10-20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002025-10-20 
+- **Prochaine prédite**: 2025-10-20 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
@@ -705,40 +593,35 @@ I'm now assessing the risk based on the 22 days since the last order. With an es
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Une seule commande de 44 unités est enregistrée le 20/09. En l'absence d'historique long, on suppose un cycle de réapprovisionnement mensuel classique pour ce type de produit de restauration (seau 10L). La prochaine commande théorique se situe autour du 20/10, soit dans l'horizon de 30 jours après la date actuelle (12/10). On recommande donc de commander la quantité habituelle de 44 unités pour éviter la rupture.
+L'historique contient une commande unique de 44 unités le 20 septembre. Avec 22 jours écoulés, on se trouve dans l'horizon critique (30 jours) pour un réapprovisionnement si l'on suppose un cycle mensuel standard B2B. Faute d'autres données, le volume se base exclusivement sur la dernière référence connue.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 593 tokens
-- **Output**: 1,910 tokens
-- **Total**: 2,503 tokens
+- **Input**: 789 tokens
+- **Output**: 1,368 tokens
+- **Total**: 2,157 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Considering Refills for PF0072**
+**Assessing Product Sales**
 
-I'm currently reviewing the demand for FILOU MAYONNAISE. My focus is on determining refill needs for PF0072. Analyzing the sales data, I see that 44 units were sold on 2025-09-20. Given this recent activity, I'm working to predict future needs over the next three months.
-
-
-**Predicting Next Order Time**
-
-I've examined the order gap, which is 22 days since the last order. With only one data point available, a statistical cycle analysis is impossible. Assuming a 30-day cycle, the next order is estimated for around 2025-10-20, about eight days from now. Since the last order was within the 40-day threshold, the risk is deemed "OUI."
+The initial data point is sparse, with just one recent sale recorded on 2025-09-20 of 44 units for the mayonnaise product. The absence of historical data (N-1) makes it difficult to ascertain trends. Further insights are necessary to gauge sales performance.
 
 
-**Calculating Likely Quantity**
+**Estimating Order Volumes**
 
-I'm now focusing on the quantity for the potential refill of PF0072. Given the previous order of 44 units, and the lack of other data points, a straightforward approach is necessary. Considering the monthly cycle, I'll recommend the same quantity as the last order to start, 44 units.
-
-
-**Evaluating Risk of Shortage**
-
-I've determined that the next order is likely needed around October 20th, eight days from now. Since it's within the 30-day forecast and the time since the last order is less than 40 days, I assess the risk as high. This assessment drives my recommendations.
+I've projected the next order based on the 30-day frequency, concluding it's likely within the next week. Given only one data point, I'm setting the replenishment quantity to 44 units, matching the previous order. The frequency pattern is logged as a "Unique order observed, monthly cycle estimated" to indicate the lack of a proper sales history.
 
 
-**Refining the Risk Assessment**
+**Forecasting Next Order Date**
 
-I'm now clarifying the "RISQUE OUI" designation. The time since the last order is 22 days, and given a presumed 30-day cycle, the next order is estimated for around October 20th. This falls within the 30-day horizon from today, thus indicating a high risk of shortage. This drives my next step, which is calculating the order.
+Given the single data point, I've calculated the time elapsed since the last order at 22 days. Based on the 30-day assumption for B2B bulk items, I predict an order around October 20th. I've noted a low confidence level due to the lack of historical data, but medium confidence in the need for an order based on time proximity.
+
+
+**Assessing Replenishment Needs**
+
+I've examined the product's sales and determined the time since the last order is 22 days. Given the B2B context, with no historical data, I am estimating a monthly replenishment cycle. This leads to a likely next order date around October 20th, with a recommendation of 44 units.
 
 
 
@@ -772,43 +655,43 @@ I'm now clarifying the "RISQUE OUI" designation. The time since the last order i
 - **Pattern temporel**: Cycle régulier d'environ 37 jours
 - **Cycle médian (jours)**: 37
 - **Dernière commande**: 2025-09-11
-- **Prochaine prédite**: 2025-10-18 (dans 6j)
-- **Dans horizon 30j ?**: ✅ OUI
+- **Prochaine prédite**: 2025-10-18 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: decreasing
-- **Analyse jour cycle**: Commandes passées en milieu de semaine (mardi et jeudi)
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle observé entre les deux dernières commandes est de 37 jours. La dernière commande datant du 11 septembre, la prochaine est estimée autour du 18 octobre. Étant à 6 jours de cette échéance et le cycle étant inférieur au seuil de risque de 40 jours, une commande est nécessaire. La quantité recommandée de 75 unités correspond à la médiane entre les deux livraisons précédentes (70 et 80).
+Le cycle de commande identifié entre les deux derniers relevés est de 37 jours. La prochaine commande est prévue autour du 18 octobre 2025, soit dans 6 jours par rapport à la date actuelle. Un risque de rupture est donc identifié pour l'horizon des 30 jours. La quantité recommandée (75u) correspond à la moyenne des deux dernières commandes (80u et 70u), le manque de données historiques ne permettant pas encore de confirmer une tendance baissière structurelle.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 623 tokens
-- **Output**: 1,516 tokens
-- **Total**: 2,139 tokens
+- **Input**: 819 tokens
+- **Output**: 1,406 tokens
+- **Total**: 2,225 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Production Quantities**
+**Reviewing Product Performance**
 
-I've been analyzing the production quantities for the FILOU MAYONNAISE product. Focusing on the intervals, I see a 70-unit production on September 11th and 80 units on August 5th. This allows me to calculate the relevant production intervals, and begin to understand the production cycle.
-
-
-**Forecasting Next Order Date**
-
-Okay, I've calculated the cycle time and predicted the next order date. Based on the 37-day cycle, the next order should be around October 18th. Given that the current date is October 12th, the risk of stockout is present, as the client is already 31 days into this cycle and the period is less than 40 days.
+I'm currently focused on the sales data for FILOU MAYONNAISE, specifically the 1000ml size. I noted a drop in units sold, 70 in September compared to 80 in August. It's time to dig deeper, looking for external market factors or internal changes that caused this decline.
 
 
-**Evaluating Replenishment Quantities**
+**Projecting Future Orders**
 
-I've determined the baseline replenishment quantity should be 75 units, representing the median of past orders. Though recent orders show a downward trend, I'm sticking with the neutral midpoint. The cycle time analysis indicates a consistent 37-day cycle. My recommended action is a replenishment order of 75 units.
+I've calculated the predicted next order date for FILOU MAYONNAISE OEUFS SEAU 1000ML, considering the 37-day median cycle. Based on September 11th's order, the model suggests an order around October 18th. With today being October 12th, the forecast horizon is six days. Risk assessment: YES - an order is imminent. The baseline quantity is set to 75.
 
 
-**Refining Replenishment Strategy**
+**Calculating Order Parameters**
 
-I've decided to stick with the replenishment quantity of 75 units, despite the slight downward trend. The analysis confirms a consistent 37-day cycle, with the next order predicted for October 18th. Given that the current date is October 12th and the cycle is less than 40 days, the risk of a stockout is present, hence the need for immediate action.
+I've examined the data for FILOU MAYONNAISE OEUFS SEAU 1000ML more closely. The predicted order date, based on the 37-day cycle, is October 18th. With a six-day horizon, the risk assessment remains YES. Based on a slight downward trend and a baseline of 75 units, I'll recommend 75 units for the upcoming order, with medium confidence.
+
+
+**Confirming Final Recommendation**
+
+I've finalized my analysis of FILOU MAYONNAISE OEUFS SEAU 1000ML. With a predicted order date of October 18th, and today being the 12th, the risk assessment remains positive. The recommended quantity is 75, based on a slight decreasing trend. Overall confidence is medium, primarily due to the limited historical data. The JSON is validated.
 
 
 
@@ -879,7 +762,7 @@ I've decided to stick with the replenishment quantity of 75 units, despite the s
 **📅 Commandes N-1 (même période année dernière):**
 - 2024-09-30 07:22:41: 2u
 
-**✅ Quantité LLM**: 2u (confidence: low)
+**✅ Quantité LLM**: 2u (confidence: medium)
 **📊 Quantité Réelle**: 4u
 
 </details>
@@ -895,7 +778,7 @@ I've decided to stick with the replenishment quantity of 75 units, despite the s
 **📅 Commandes N-1 (même période année dernière):**
 - Aucune commande N-1
 
-**✅ Quantité LLM**: 20u (confidence: low)
+**✅ Quantité LLM**: 30u (confidence: low)
 **📊 Quantité Réelle**: 20u
 
 </details>
@@ -910,7 +793,7 @@ I've decided to stick with the replenishment quantity of 75 units, despite the s
 **📅 Commandes N-1 (même période année dernière):**
 - Aucune commande N-1
 
-**✅ Quantité LLM**: 3u (confidence: low)
+**✅ Quantité LLM**: 3u (confidence: medium)
 **📊 Quantité Réelle**: 10u
 
 </details>
@@ -973,10 +856,10 @@ I've decided to stick with the replenishment quantity of 75 units, despite the s
 |---------|-------------|--------|
 | [PF0085] FILOU CURRY KETCHUP  10 KG | 5 | Stock prédit: 3.6u (21j restants) → prédit 5u mais non commandé |
 | [PF0075] FILOU CHASSEUR  10 L | 10 | Stock prédit: 5.2u (23j restants) → prédit 10u mais non commandé |
-| [PF0078] FILOU CHASSEUR 5 L | 50 | Stock prédit: 1.4u (3j restants) → prédit 50u mais non commandé |
+| [PF0078] FILOU CHASSEUR 5 L | 10 | Stock prédit: 1.4u (3j restants) → prédit 10u mais non commandé |
 | [PF0077] FILOU PROVENCALE 5 L | 10 | Stock prédit: 3.3u (10j restants) → prédit 10u mais non commandé |
-| [PF0088] FILOU VOL AU VENT 800 GR | 64 | Stock prédit: -61.1u (-55j restants) → prédit 64u mais non commandé |
-| [PF0089] FILOU VOL AU VENT 400 GR | 30 | Stock prédit: -15.4u (-17j restants) → prédit 30u mais non commandé |
+| [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 40 | Stock prédit: 0.1u (0j restants) → prédit 40u mais non commandé |
+| [PF1845] FILOU SAMOURAI SQUEEZE 300ML | 40 | Stock prédit: 26.6u (133j restants) → prédit 40u mais non commandé |
 
 
 ---
@@ -1006,4 +889,4 @@ I've decided to stick with the replenishment quantity of 75 units, despite the s
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:19:52.496Z*
+*Rapport généré automatiquement le 2025-12-19T14:47:48.640Z*

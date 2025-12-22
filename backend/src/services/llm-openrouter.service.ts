@@ -6,7 +6,7 @@
  */
 
 // Configuration - facile à changer
-const MODEL = "google/gemini-3-flash-preview";  // Gemini Flash avec thinking - MEILLEUR RAPPORT QUALITÉ/PRIX
+const MODEL = "google/gemini-3-flash-preview";  // Gemini 3 Flash Preview ($0.50/M input, $3.00/M output) - MEILLEUR MODÈLE
 // Autres options:
 // - "anthropic/claude-haiku-4.5" ($1/M input, $5/M output)
 // - "anthropic/claude-sonnet-4.5" ($3/M input, $15/M output)
@@ -200,8 +200,10 @@ ${lastYearTable}
 Raisonne sur:
 - Cycle habituel du client (médiane des intervalles entre commandes)
 - Dernière commande + cycle = prochaine date probable
-- Si ≤40 jours → RISQUE OUI (mieux vaut trop que pas assez en B2B)
-- Si >40 jours ET cycle régulier → RISQUE NON
+- Si ≤30 jours → RISQUE OUI (commande imminente)
+- Si 31-45 jours ET proche du cycle → RISQUE OUI (anticipation B2B nécessaire)
+- Si >45 jours ET cycle régulier → RISQUE NON
+- EXCEPTION: Produits sporadiques (>60j entre commandes) → vérifier si commande dans les 90 derniers jours
 
 ## DÉCISION 2: QUELLE QUANTITÉ ? (si risque = oui)
 
@@ -211,11 +213,19 @@ Principes:
 - Médiane robuste aux outliers
 - Si pattern sur pls commandes évident à même date en N-1 → c'est saisonnier, pas un outlier
 
-Ajustements:
-- Si données variables sans pattern clair → garder la médiane.
-- Si pattern saisonnier tres flagrant N vs N-1 → ajuster en conséquence
-- Sinon → garder la médiane/moyenne pondérée simple
-- prendre en quantite les quantite les plus souvents commandes si tu dois arrondir ajuster.
+Ajustements CRITIQUES (dans l'ordre de priorité):
+1. PETITES QUANTITÉS (1-2u):
+   - Médiane récente TOUJOURS prioritaire
+   - Si toujours 1u → prédire 1u (ignorer N-1)
+   - Si alternance 1-2-1-2 → prédire 1u (valeur basse)
+2. SAISONNALITÉ:
+   - N-1 valide SEULEMENT si 3+ commandes avec +50% volume
+   - Si 2025 montre baisse constante → ignorer N-1
+3. GROSSES QUANTITÉS (>100u):
+   - Exclure outliers évidents (>2x médiane)
+   - Médiane des 3 dernières non-outliers
+4. CHANGEMENT NET: Si 3 dernières montrent tendance claire → suivre
+5. SAFETY B2B: En cas de doute, arrondir LÉGÈREMENT vers le haut (+10% max)
 
 ## OUTPUT JSON:
 
@@ -257,8 +267,7 @@ Ajustements:
         content: prompt
       }
     ],
-    // Activer le reasoning pour Gemini Flash Thinking (force plus de réflexion)
-    // Gemini supporte le reasoning natif pour améliorer la qualité
+    // Activer le reasoning pour Gemini Flash (améliore la qualité)
     reasoning: {
       effort: "high"  // 80% des tokens pour le reasoning
     },

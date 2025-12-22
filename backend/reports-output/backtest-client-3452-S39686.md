@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 3,402 input + 8,197 output = 11,599 total
+- **Tokens**: 4,186 input + 7,972 output = 12,158 total
 
 
 ---
@@ -175,56 +175,51 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Intervalle variable, passant de hebdomadaire en août/septembre à mensuel historiquement
+- **Pattern temporel**: Cycle hebdomadaire court (~8 jours) avec une pause apparente en septembre
 - **Cycle médian (jours)**: 8
 - **Dernière commande**: 2025-09-08
-- **Prochaine prédite**: 2025-09-16 
+- **Prochaine prédite**: 2025-10-14 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: 390u
 
 **🧠 Raisonnement LLM:**
-La dernière commande date du 2025-09-08. Sur la base du cycle récent (médiane de 8 jours), la commande est en retard de 26 jours. Même selon l'historique N-1 (commande le 01/10/2024), nous avons dépassé la date de réapprovisionnement habituelle. La quantité de 130u est extrêmement constante (4 des 5 dernières commandes récentes et 3 des 4 commandes N-1).
+Le cycle habituel de 8 jours est interrompu depuis le 08/09 (34 jours d'inactivité). Cependant, l'historique N-1 montre également une commande début octobre après une période similaire. Le volume de 130u est extrêmement stable sur 2024 et 2025 (médiane parfaite). Une commande est imminente pour reconstituer le stock après cette pause de 4 semaines.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 814 tokens
-- **Output**: 2,231 tokens
-- **Total**: 3,045 tokens
+- **Input**: 1,010 tokens
+- **Output**: 1,811 tokens
+- **Total**: 2,821 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Recent Sales Trends**
+**Calculating Recent Trends**
 
-I'm currently working on analyzing the sales data for product [PF3301]. I've started by examining the last three months of history. It looks like there's a repeating pattern. The sales numbers seem to be fluctuating, with noticeable drops after a 10-day period. Further investigation is needed to determine the exact nature of this pattern.
-
-
-**Refining Order Prediction Analysis**
-
-I've examined the recent sales history for product [PF3301], focusing on the intervals between orders. Calculating the median interval from the past few orders, it comes to approximately 8 days. However, I've noted the wide range in order frequency: 7, 10, 8, and 3 days. I also looked at the historical data, where orders came roughly monthly. Given the current date and the elapsed time since the last order (34 days), I'm assessing the potential risks associated with not ordering soon.
+I'm currently focused on the sales data for product PF3301. The recent history reveals some interesting patterns. Specifically, I'm noting the sales volumes and the intervals between sales dates. Examining the 2025 data, I'm trying to identify potential trends, like the spike on August 22nd.
 
 
-**Forecasting Order Quantity Needs**
+**Assessing Order Frequency**
 
-I've examined the recent sales for the [PF3301] product. Currently, the product is overdue for an order, with 34 days since the last purchase. My analysis points to a stable demand, with 130 units as the most frequent and median order quantity, though I noticed a past outlier (390 units), suggesting the possibility of bulk purchases. Given the elapsed time, I conclude a new order is needed, at the baseline of 130 units.
-
-
-**Confirming Order Recommendation**
-
-I've examined the product's recent sales data for the [PF3301] product. Based on the 34-day elapsed time since the last order, and an 8-day cycle, I've confirmed a high risk of depletion. Given the stable demand for 130 units and the recent bulk order in history, I will recommend the standard order quantity of 130.
+I'm now analyzing the order intervals for product PF3301 to identify a typical cycle. The median interval seems to be around 7.5 days, based on recent 2025 sales data. Considering the last order was on September 8th, I initially predicted the next order around September 16th. However, since it's now October 12th, and 34 days have elapsed, the customer is overdue. I'm leaning toward a possible monthly refill or stockout scenario, as is common in B2B.
 
 
-**Recommending Immediate Action**
+**Calculating Future Orders**
 
-Based on analyzing the product [PF3301]'s data, the 34-day interval since the last order indicates an immediate need. Although recent cycles were shorter, at 8 days, the extended gap, and the historical pattern from 2024, suggest the current situation poses a risk. I recommend ordering 130 units, the baseline quantity.
+I've examined the 2024 order history, which aligns with the 2025 data. The client's order on October 1st, 2024, mirrors our current timeframe. Based on the 7-10 day cycle, I expected an order around September 16th. Given the 34-day gap and a stable "130u" quantity trend, I will recommend 130 units. This suggests the client is due, and a stockout is plausible.
 
 
-**Formulating a Recommendation**
+**Refining Prediction Accuracy**
 
-I've finished the analysis for the [PF3301] product, and the situation warrants immediate action. The 34-day lapse since the last order, far exceeding the typical 8-day cycle, presents a clear risk. The recommended order quantity remains 130 units, with high confidence.
+I'm now refining the prediction date for the next order. Given the 2025-09-08 last order, the usual 8-day cycle is significantly off. Considering the 2024-10-01 order occurred roughly 22 days after the prior, and given today's date (Oct 12), the client is already overdue. The recommendation for 130 units remains solid, and the probability of an imminent order is high.
+
+
+**Determining Order Quantity**
+
+I'm now zeroing in on the quantity to recommend. While the 7-10 day cycle is consistent, the past data reveals a stable baseline order of 130 units. Considering both the history and recent patterns, I'm confident in recommending a quantity of 130, especially given the client's overdue status.
 
 
 
@@ -250,61 +245,56 @@ I've finished the analysis for the [PF3301] product, and the situation warrants 
 - **Quantité décidée**: 98u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
+- **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Hebdomadaire (cycle de 7 jours)
+- **Pattern temporel**: cycle hebdomadaire (7 jours) identifié le lundi
 - **Cycle médian (jours)**: 7
 - **Dernière commande**: 2025-09-08
-- **Prochaine prédite**: 2025-10-12 
+- **Prochaine prédite**: 2025-10-13 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: 196u
 
 **🧠 Raisonnement LLM:**
-Le client a suivi un cycle hebdomadaire strict de 98 unités entre la mi-août et début septembre 2025. Avec une dernière commande enregistrée le 08/09, le délai actuel est de 34 jours, ce qui est inférieur au seuil de risque de 40 jours défini et indique un retard important par rapport au cycle habituel de 7 jours. La quantité recommandée de 98u se base sur la médiane et le mode des commandes récentes, écartant le pic exceptionnel de 196u.
+Le produit présente une régularité parfaite de 98 unités par semaine tous les lundis. Bien qu'aucune commande n'ait été enregistrée depuis le 08/09, le cycle historique de 7 jours et le jour habituel de commande (lundi) suggèrent une reprise imminente pour la date du 13/10 (soit J+1 par rapport à la date de l'analyse). Le volume reste stable à 98u malgré des volumes plus élevés en N-1.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 814 tokens
-- **Output**: 2,090 tokens
-- **Total**: 2,904 tokens
+- **Input**: 1,010 tokens
+- **Output**: 1,763 tokens
+- **Total**: 2,773 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Product Data**
+**Calculating Production Volume Trends**
 
-I'm currently reviewing the recent history of the PF3315 DLL VINAIGRETTE YOGORETTE. The data shows consistent weekly updates of 98u, with the last update on September 8th. I'm focusing on the consistency of the data and any potential anomalies in the update frequency.
-
-
-**Calculating Replenishment Risk**
-
-I've calculated the time elapsed since the last order for the PF3315 product, arriving at 34 days. Given the observed weekly update pattern, this signifies a considerable delay. I'm now focusing on the risk of a potential rupture within the next 30 days due to this overdue replenishment. I am extrapolating the predicted next date based on the consistent, although irregular, intervals observed in recent data.
+I'm currently focused on the [PF3315] DLL VINAIGRETTE  YOGORETTE PET 450ML product and its production history. Analyzing the past three months, specifically the weekly production data from September 2025 back to August, the production volume has remained consistently at 98 units each week. It's Monday's data that needs closer inspection.
 
 
-**Examining Order Trends**
+**Evaluating Order Cycle Discrepancies**
 
-I am now focusing on the historical frequency of orders. I've noted a consistent weekly pattern in August and September. However, this regular cadence has ceased for 34 days, indicating a substantial deviation from the established trend. I'm investigating the potential causes for this disruption, and considering their impact.
-
-
-**Determining Order Recommendations**
-
-I'm now assessing the order quantity. The recent trend strongly favors 98 units per order, and the same pattern was present in the prior year. While there's an outlier of 196 units, its occurrence is rare, suggesting a baseline of 98 units for a stable demand. Given the 34-day delay and expected weekly rhythm, I recommend the same quantity to address immediate needs.
+I've examined the historical data further, and the weekly production pattern seems consistent, *except* for the notable absence of recent orders. My calculations show the client's order cycle is significantly overdue, with a 34-day gap since the last order. This variance raises serious stockout concerns.
 
 
-**Evaluating Product Risk**
+**Projecting Demand and Risk**
 
-I've now focused on the immediate risk associated with the PF3315 product, and noted the 34-day delay since the last order. Despite a history of weekly orders, there's a significant deviation from the anticipated replenishment cycle. As such, I'm now evaluating whether this duration presents a risk, given the established patterns, along with the consistent quantity.
+Given the consistent weekly order pattern, I'm now zeroing in on predicting the next order volume. Analyzing the production quantities, I'm leaning toward a base quantity of 98 units, reflecting the stable trend observed in the past three months. The outlier, a doubled order of 196u, doesn't suggest a significant seasonality. The absence of orders for 34 days, however, significantly increases the stockout risk, so I'm also preparing for a possible replenishment.
 
 
-**Determining Replenishment Strategy**
+**Calculating Expected Replenishment**
 
-I'm now assessing the best course of action. Given the substantial 34-day delay and a history of weekly orders, I'm recommending an immediate order of 98 units, reflecting the consistent baseline demand. I'm focusing on minimizing the risk of a rupture.
+My current focus is on pinpointing the *exact* quantity needed for the upcoming order. Considering the stable production rate of 98 units, and the 34-day delay since the last order, I'm leaning toward requesting 98 units, or the base quantity. Despite the risk of stockout, I'll need to verify that this base order still fits the client's current needs, since this analysis implies the order is overdue.
+
+
+**Predicting the Upcoming Order**
+
+I've re-examined the data and confirmed the 34-day gap since the last order. My analysis now strongly suggests the order is overdue. Although the risk is high, I'm predicting the next order will be for the usual base quantity of 98 units, to resume the prior stable production rate, assuming it resumes.
 
 
 
@@ -357,7 +347,7 @@ I'm now assessing the best course of action. Given the substantial 34-day delay 
 - 2024-08-06 10:01:31: 98u
 - 2024-07-11 10:01:48: 392u
 
-**✅ Quantité LLM**: 98u (confidence: medium)
+**✅ Quantité LLM**: 98u (confidence: high)
 **📊 Quantité Réelle**: 98u
 
 </details>
@@ -388,7 +378,7 @@ I'm now assessing the best course of action. Given the substantial 34-day delay 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [PF3300] DLL MAYONNAISE OEUFS 300ML | 130 | Stock prédit: 110.0u (4j restants) → prédit 130u mais non commandé |
-| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 392 | Stock prédit: -833.0u (-26j restants) → prédit 392u mais non commandé |
+| [PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML | 490 | Stock prédit: -833.0u (-26j restants) → prédit 490u mais non commandé |
 
 
 ---
@@ -412,4 +402,4 @@ I'm now assessing the best course of action. Given the substantial 34-day delay 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:15:28.556Z*
+*Rapport généré automatiquement le 2025-12-19T14:43:08.609Z*

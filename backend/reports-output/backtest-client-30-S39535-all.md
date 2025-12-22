@@ -11,8 +11,8 @@
 
 ### 🤖 Usage LLM
 
-- **Appels**: 9
-- **Tokens**: 7,328 input + 20,511 output = 27,839 total
+- **Appels**: 8
+- **Tokens**: 7,993 input + 15,619 output = 23,612 total
 
 
 ---
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.50 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 50.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 50.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 50.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 0.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -148,7 +148,7 @@
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
 | [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
@@ -175,46 +175,46 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commandes régulières avec un cycle de 13 à 33 jours
+- **Pattern temporel**: Commande toutes les 2 à 3 semaines
 - **Cycle médian (jours)**: 18
 - **Dernière commande**: 2025-09-26
-- **Prochaine prédite**: 2025-10-14 (dans 12j)
-- **Dans horizon 30j ?**: ✅ OUI
+- **Prochaine prédite**: 2025-10-14 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: Habituellement commandé en début ou milieu de semaine, dernière commande un vendredi.
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: 13u
 
 **🧠 Raisonnement LLM:**
-Le cycle médian détecté est de 18 jours. La dernière commande datant du 26 septembre, la prochaine est prévue autour du 14 octobre (sous 12 jours), ce qui justifie un réapprovisionnement immédiat pour couvrir le risque de rupture sous 30 jours. Les quantités récentes sont très stables à 1 unité par commande, les pics à 13 unités observés en N-1 étant traités comme des outliers exceptionnels.
+Le cycle récent montre des commandes régulières avec un intervalle médian de 18 jours. La dernière commande date du 26 septembre, plaçant la prochaine commande estimée autour du 14 octobre (soit dans environ 12 jours). En 2025, le volume est stabilisé à 1 unité par commande, rendant la prédiction de quantité robuste malgré les pics historiques observés en 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 882 tokens
-- **Output**: 1,321 tokens
-- **Total**: 2,203 tokens
+- **Input**: 1,078 tokens
+- **Output**: 1,322 tokens
+- **Total**: 2,400 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Analyzing Order History Data**
+**Analyzing Product Performance**
 
-I'm currently working on analyzing the historical demand data for JF CURRY KETCHUP SQUEE ZE 300ML (JF040). So far, I've identified the order dates and quantities for the product. Now, I'm focusing on calculating the demand trends over time, by month and quarter.
-
-
-**Calculating Lead Time and Risk**
-
-Continuing the analysis, I've calculated the median interval between orders, which is 18 days.  Given the last order was on 2025-09-26, I predicted the next order date to be 2025-10-14. Today's date is 2025-10-02, so there's a 12-day window, indicating a "YES" risk of stockout.
+I'm currently looking at the sales data for JF040, the JF CURRY KETCHUP. Recent orders in the last three months show a very low volume: just one or two units per order. I'm starting to delve into the past year's data to get a clearer picture of demand trends.
 
 
-**Evaluating Risk and Quantity**
+**Projecting Order Frequency**
 
-I've completed my analysis.  I've assessed the risk of a stockout as "YES" given the predicted next order date of October 14th. My recommendation is to order 1 unit, with high confidence, based on the product's regular 18-day cycle and consistent recent demand. The 13-unit orders appear as outliers.
+I've calculated the median interval between recent orders for the JF CURRY KETCHUP, approximately 21 days. Based on this, and the last order date, I've projected the next order should arrive mid-October. However, the current date is already six days past the last order. This suggests a potential risk, as the intervals might be stretching out.
 
 
-**Synthesizing Recommendations Now**
+**Assessing Ordering Behavior**
 
-I've finalized my analysis. The product's demand is stable at 1 unit, with a recent order cycle of 18 days. The predicted next order date is October 14th, but with today being October 2nd, the risk of stockout is present. Therefore, my high-confidence recommendation is to order 1 unit. The "13u" order quantities are treated as outliers.
+I've now analyzed the N-1 data, and it confirms the consistent, low-volume orders of 1-2 units, typical of 2025's behavior, except for some outliers. I'm focusing on the interval between the dates of orders, with the next expected order around mid-October. The baseline quantity is set to 1.
+
+
+**Finalizing the Recommendation**
+
+I've just finalized the recommendation, with a high degree of confidence. The predicted next order date is around October 14th, with a quantity of one unit, and the last order was a week ago. The model is based on recent stable, low-volume orders. I've also integrated the outlier data for added perspective.
 
 
 
@@ -225,76 +225,76 @@ I've finalized my analysis. The product's demand is stable at 1 unit, with a rec
 
 
 <details>
-<summary><strong>2. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM: 2u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>2. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 2u
-- 📊 **Baseline calculée**: 1.5u
+- 🤖 **Quantité recommandée (finale)**: 1u
+- 📊 **Baseline calculée**: 1u
 - 📊 **Médiane historique**: 1u
 - ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 1u (100.0%)
+- 📉 **Erreur LLM**: 0u (0.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 2u (risque détecté)
+- **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle variable, historiquement plus court en automne (10-20j) avec un pic d'activité fin septembre
-- **Cycle médian (jours)**: 25
+- **Pattern temporel**: Intervalle irrégulier, cycle médian d'environ 20 jours
+- **Cycle médian (jours)**: 20
 - **Dernière commande**: 2025-09-08
-- **Prochaine prédite**: 2025-10-03 
+- **Prochaine prédite**: 2025-09-28 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: strong
+- **Saisonnalité**: weak
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: 4u
 
 **🧠 Raisonnement LLM:**
-Le client est entré dans sa fenêtre de commande habituelle (24 jours depuis la dernière commande). L'historique N-1 révèle une forte accélération du volume et de la fréquence à cette période précise (pic de 4u le 01/10/2024). Bien que les commandes de 2025 soient plus faibles (1u), la saisonnalité marquée justifie de commander une quantité de 2u pour prévenir une rupture imminente correspondant au pattern de l'an dernier.
+La commande est théoriquement due car l'intervalle depuis le 8 septembre (24 jours) dépasse le cycle médian de 20 jours. Bien qu'un pic saisonnier ait été observé en octobre 2024 (4u), les données de 2025 montrent une stabilité stricte à 1u. Conformément aux directives pour les petites quantités (1-2u), la priorité est donnée à la médiane récente de 2025.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 824 tokens
-- **Output**: 2,202 tokens
-- **Total**: 3,026 tokens
+- **Input**: 1,020 tokens
+- **Output**: 2,723 tokens
+- **Total**: 3,743 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining the Intervals**
+**Analyzing Product Data Points**
 
-I'm currently focusing on the time intervals between orders. I've noted the 46-day gap in 2025. Now I'm comparing it with the 2024 data, looking for patterns. The 2024 orders seem closer together. I need to understand what's influencing these fluctuations.
-
-
-**Comparing the Order Cycles**
-
-I'm now diving deeper into the order frequencies. The 2024 data shows a tighter cycle, roughly every 10-20 days in the August-October period. This contrasts sharply with the 46-day gap observed in 2025. Considering today's date and the 2024 pattern, I'm assessing if an order is overdue. The median cycle length is proving complex to pinpoint.
+I'm currently focused on the JF038 ketchup product, examining its historical sales data to project future demand. Recent activity shows a couple of units sold in the last few months, and I'm now comparing that to the previous year's figures to identify any trends or anomalies.
 
 
-**Assessing the Implications**
+**Projecting Future Orders**
 
-Now, I'm analyzing the 2024 order data in detail. The 10-15 day cycles of last year are a key indicator, and I'm comparing the last order's date. The current date is 24 days past the last order, and this is outside the usual cycle. I'm also weighing up the quantity differences.
-
-
-**Projecting the Next Order**
-
-I've calculated the next order date for JF Ketchup, which I've predicted for tomorrow. Considering the 24-day gap since the last order and comparing it with last year's pattern, where a peak of 4 units was observed, a secure quantity of 2 units is now recommended. I have taken into account the slower 2025 activity.
+I'm now diving into the sales intervals to predict the next order. The median time between orders in the past year was 17 days, but the most recent orders are spaced 46 days apart. This suggests a potential slowdown. I'm taking a look at the historical data, specifically focusing on the timing of sales, to make a more accurate forecast. The target date for next order is either 2025-09-25 (median) or 2025-10-24 (46 days).
 
 
-**Evaluating the Recommendations**
+**Evaluating Order Quantities**
 
-I've finalized the recommended quantity, setting it to 2 units for tomorrow. The analysis highlights a 24-day gap since the last order, and I've carefully weighed the seasonal peak from last year against the slower 2025 activity. I've also re-confirmed all the outputs are valid.
+I'm now prioritizing the order quantity. Recent history indicates single-unit orders in 2025. N-1 data shows a peak in early October, but my guidelines suggest prioritizing the recent median for small orders. Therefore, I'm leaning toward a single unit, given the stable trend and the guideline's focus.
 
 
-**Calculating the Details**
+**Calculating Order Timing**
 
-I've meticulously reviewed the data, including the precise order dates and quantities. I've noted the 24-day interval since the last order, and am confirming tomorrow as the predicted order date. Considering the past peak, I've increased the recommended quantity to two units.
+I've determined the next order date based on the recent 20-day cycle, indicating it should have already happened. Given today's date, I'm adjusting and setting the predicted next date to today, recommending a quantity of one unit.
+
+
+**Recommending Final Order**
+
+Given the overdue nature of the order, I'm confirming the recommendation. I've concluded the next order is due today and based on the recent consistent volume, I'm recommending one unit. Despite the N-1 peak, the trend indicates a stable demand, aligning with the guidelines.
+
+
+**Concluding Order Recommendation**
+
+I've reviewed all data and confirmed the final recommendation. The analysis shows a 20-day median cycle; with the last order on September 8th, a new order is overdue. The recent trend of single-unit orders in 2025 outweighs the N-1 peak. Therefore, I'm sticking with a quantity of one unit today.
 
 
 
@@ -351,7 +351,7 @@ I've meticulously reviewed the data, including the precise order dates and quant
 - 2024-04-30 10:09:27: 2u
 - 2024-04-25 14:37:04: 1u
 
-**✅ Quantité LLM**: 2u (confidence: medium)
+**✅ Quantité LLM**: 1u (confidence: medium)
 **📊 Quantité Réelle**: 1u
 
 </details>
@@ -409,4 +409,4 @@ I've meticulously reviewed the data, including the precise order dates and quant
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:15:35.521Z*
+*Rapport généré automatiquement le 2025-12-19T14:49:10.916Z*

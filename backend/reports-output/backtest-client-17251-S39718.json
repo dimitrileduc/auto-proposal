@@ -12,19 +12,19 @@
     "precision": 0.6153846153846154,
     "recall": 1,
     "f1Score": 0.761904761904762,
-    "mae": 12,
-    "wmape": 9.6,
-    "mape": 12.5,
-    "bias": 9.6
+    "mae": 24,
+    "wmape": 19.2,
+    "mape": 18.75,
+    "bias": 19.2
   },
   "distribution": {
-    "exactMatch": 7,
-    "partialMatch": 1
+    "exactMatch": 6,
+    "partialMatch": 2
   },
   "llmUsage": {
     "calls": 13,
-    "promptTokens": 10866,
-    "completionTokens": 24745,
-    "totalTokens": 35611
+    "promptTokens": 13414,
+    "completionTokens": 24947,
+    "totalTokens": 38361
   }
 }

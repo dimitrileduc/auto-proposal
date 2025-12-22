@@ -23,8 +23,8 @@
   },
   "llmUsage": {
     "calls": 2,
-    "promptTokens": 1376,
-    "completionTokens": 4950,
-    "totalTokens": 6326
+    "promptTokens": 1768,
+    "completionTokens": 4270,
+    "totalTokens": 6038
   }
 }

@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 10
-- **Tokens**: 8,429 input + 26,147 output = 34,576 total
+- **Tokens**: 10,389 input + 19,726 output = 30,115 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 37.5% | 8 produits prédits, 3 corrects |
-| **Rappel** | 75.0% | 4 produits réels, 3 détectés |
-| **F1-Score** | 50.0% | Score équilibré global |
+| **Précision** | 40.0% | 10 produits prédits, 4 corrects |
+| **Rappel** | 100.0% | 4 produits réels, 4 détectés |
+| **F1-Score** | 57.1% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 14.67 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 17.7% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 16.7% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 17.7% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **MAE** | 13.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 19.9% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 29.2% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 19.9% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | 2 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -127,7 +127,7 @@
 
 ---
 
-## True Positives (3)
+## True Positives (4)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -150,9 +150,10 @@
 | [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0075] FILOU CHASSEUR  10 L | 132 | 88 | 44.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF0084] FILOU CARBONNADES 800 GR | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3266] JF SAUCE BEARNAISE 3L | 20 | 12 | 8.0 | 66.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
-### 🤖 Détails des Prédictions LLM (3 produits)
+### 🤖 Détails des Prédictions LLM (4 produits)
 
 
 <details>
@@ -176,7 +177,7 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle fréquent intermittent, environ tous les 11 jours
+- **Pattern temporel**: Commandes régulières environ tous les 11 jours
 - **Cycle médian (jours)**: 11
 - **Dernière commande**: 2025-09-29
 - **Prochaine prédite**: 2025-10-10 
@@ -187,40 +188,37 @@
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande est très régulier avec une médiane de 11 jours entre chaque commande. La dernière commande date de seulement 6 jours, mais la prochaine est prévue sous peu (environ le 10 octobre). La quantité de 160u est la plus fréquente historiquement (le 'mode' statistique récent), tandis que les pics à 240u vus récemment et en N-1 confirment une activité forte en cette saison.
+Le cycle d'achat médian est de 11 jours, plaçant la prochaine commande autour du 10 Octobre, ce qui présente un risque de rupture imminent. La quantité de base de 160 unités est très stable sur l'historique récent et correspond aux paliers observés en N-1, malgré un pic ponctuel à 240 lors de la dernière commande.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,041 tokens
-- **Output**: 2,134 tokens
-- **Total**: 3,175 tokens
+- **Input**: 1,237 tokens
+- **Output**: 1,813 tokens
+- **Total**: 3,050 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Recent Production Data**
+**Reviewing Production Volumes**
 
-I've been analyzing the production data for product [PF0078] FILOU CHASSEUR, specifically focusing on the last three months. I've noted a production run of 240 units on September 29th and a previous run of 160 units on September 15th. The interval between these runs appears to be 14 days. This warrants further investigation into the consistency of production cycles.
-
-
-**Forecasting Next Production Run**
-
-Based on the recent production history for [PF0078] FILOU CHASSEUR, I've calculated a median interval of approximately 10.5 days between production runs. The last order was on September 29th, and today is October 5th, leaving only four days until the next production run. Risk evaluation has been completed. Decision is "RISK OUI".
+I'm currently focused on the production volumes for product [PF0078] FILOU CHASSEUR 5 L. My analysis highlights a recent peak of 240 units on September 29th, a significant jump from the previous 160 units in mid-September, and earlier in August. The rapid increase requires close attention to understand its drivers.
 
 
-**Refining Order Quantity Analysis**
+**Calculating Inventory Risks**
 
-I've been calculating the production order quantities and I'm seeing a tendency towards repeating 160 units, which is the mode, but a recent order for 240 units, and the N-1 data indicate a possible seasonal demand increase. I will recommend a production run of 240 units to ensure robustness.
-
-
-**Determining Production Quantity**
-
-I'm now focusing on calculating the production quantity for the upcoming run. My analysis of historical data indicates a stable baseline of 160 units, yet I am also taking into account a recent order of 240 and the strong seasonal patterns from September/October of last year. Therefore, a production run of 160 units is recommended.
+I've calculated the median interval between orders, around 10.5 days. With the last order on September 29th, and today being October 5th, I estimate the next order around October 9th or 10th. Given the recent production data, there's a definite risk of stockout within the next 30 days. I'm focusing on the outlier status of 240.
 
 
-**Revisiting Quantity Recommendation**
+**Evaluating Order Patterns**
 
-I am now reviewing the recommended quantity of 160 units, based on the median of recent orders. However, considering the recent order of 240 units and the strong seasonal pattern from the previous year, I am leaning toward a production run of 240 units to accommodate potential increased demand.
+\n\n
+
+I've just finished analyzing the order intervals, calculating the median at approximately 10.5 days. With the latest order on September 29th, I'm projecting the next around October 9th or 10th. I've also compared the recent 2025 data to the N-1 data from 2024, noting the frequent high volume orders in September and a trend of stable production with periodic increases. I'm taking the seasonal impact, the outlier status, and the days left until next order into account.
+
+
+**Summarizing Key Findings**
+
+I'm now consolidating the data, checking the JSON format for accuracy, which is confirmed. My focus is on the cycle length; I'm settling on approximately 11 days. Based on this, I'm predicting the next order will be around October 10th and recommending an order quantity of 160 units, based on the stable historical median. The confidence is very high.
 
 
 
@@ -235,7 +233,7 @@ I am now reviewing the recommended quantity of 160 units, based on the median of
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 132u
-- 📊 **Baseline calculée**: 122.6u
+- 📊 **Baseline calculée**: 132u
 - 📊 **Médiane historique**: 104u
 - ✅ **Réel commandé**: 88u
 - 📉 **Erreur LLM**: 44u (50.0%)
@@ -251,51 +249,46 @@ I am now reviewing the recommended quantity of 160 units, based on the median of
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande régulière environ tous les 16-18 jours
+- **Pattern temporel**: Cycle régulier de commandes tous les 15 à 20 jours
 - **Cycle médian (jours)**: 17
 - **Dernière commande**: 2025-09-29
-- **Prochaine prédite**: 2025-10-16 
+- **Prochaine prédite**: 2025-10-16_date_not_reached_yet_but_imminent_for_prediction_logic_within_the_cycle_window_from_last_recorded_order_at_the_calculation_date_2025-10-05_so_prediction_is_for_october_16_approximately_17_days_after_sept_29_which_means_next_is_due_promptly_relative_to_today_oct_5_expected_in_11_days_from_baseline_date_2025-10-05_with_cycle_of_17_days_from_2025-09-29_resulting_in_predicted_next_date_2025-10-16_and_days_until_next_11_days_from_calculation_date_2025-10-05_which_is_within_the_30_day_horizon_for_ordering_at_next_cycle_point_even_if_it_is_not_today_exactly_since_the_logic_detects_the_forthcoming_need_within_the_period_considered_high_risk_for_supply_chain_planning_to_ensure_avail_for_next_cycle_window_opening_soon_predict_order_now_if_due_within_30_days_so_oct_16_is_definite_risk_yes_next_predicted_date_2025-10-16 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: weak
 - **Tendance**: increasing
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 52u
+- **Outliers détectés**: 52u, 208u
 
 **🧠 Raisonnement LLM:**
-La fréquence est stable avec un cycle médian de 17 jours. La prochaine commande est prévue pour le 16 octobre, soit dans 11 jours (inférieur au seuil de risque de 40j). Les volumes récents montrent une tendance à la hausse, passant de 104u à 132u lors des deux dernières commandes. On préconise de maintenir ce palier de 132u.
+Le cycle médian de 17 jours et la régularité des dernières commandes à 132u indiquent un besoin imminent autour du 16 octobre (soit 11 jours après la date d'analyse). La tendance est passée de 104u à 132u récemment, ce qui est corroboré par les volumes élevés constatés en septembre N-1. Aucun outlier majeur ne perturbe la médiane récente.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,040 tokens
-- **Output**: 1,721 tokens
-- **Total**: 2,761 tokens
+- **Input**: 1,236 tokens
+- **Output**: 2,112 tokens
+- **Total**: 3,348 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Production Cadence**
+**Calculating Production Intervals**
 
-I'm currently looking at the production history for FILOU CHASSEUR, specifically the 10L variant. Recent data points show a substantial gap of 18 days between production runs in September. I need to understand if this is an outlier or a trend, and how it impacts the October 5th target. I'll be analyzing the underlying causes.
-
-
-**Forecasting Potential Issues**
-
-I've crunched the numbers on the production intervals and compared them to the October 5th target. The recent gaps show a median of 17 days. Based on this, the next order is predicted on October 16th. Therefore, there's a risk of a stockout.
+I'm currently focused on the production intervals for the FILOU CHASSEUR product. Observing the data, I see the gaps between production runs. I'm noting the 18-day interval from September 11th to September 29th, and the 16-day interval prior to that. I am beginning to look for potential patterns and influencing factors.
 
 
-**Evaluating Stockout Risk**
+**Refining Interval Calculations**
 
-I'm now calculating the risk of a stockout. Based on the historical data, especially the recent production gaps, I can predict the next order date. Given the horizon check of 40 days, the predicted date indicates a potential issue. The volumes are also increasing, suggesting a need to possibly increase the baseline.
-
-
-**Confirming Risk and Quantity**
-
-I've determined a high risk of a stockout, as the next order is forecast for October 16th, which is within the 40-day horizon check. Furthermore, analyzing the recent production runs, the quantity has increased.  Considering this, the recommendation is to order 132 units.
+I'm now incorporating N-1 data for the FILOU CHASSEUR product to improve interval predictions. I've calculated a median cycle of roughly 17 days recently, but N-1 data suggests a tighter cycle of 10-13 days. Based on the 2025-09-29 order, my next estimated production date is around 2025-10-16. I am also assessing potential supply rupture risk within the 30-day window.
 
 
-**Determining Recommended Action**
+**Evaluating Future Quantities**
 
-I'm now fully confident in the stockout risk due to the predicted order date of October 16th, which falls within the 40-day horizon check relative to the October 5th target. Quantities have also been increasing, and recent orders have stabilized at 132 units. I recommend ordering 132 units to mitigate the risk.
+I'm now analyzing the production quantities for FILOU CHASSEUR. I've noted the recent trend of increasing volume, with a baseline quantity of 132 units. Observing N-1 data, I'm finding consistent seasonal patterns, and I estimate the recommended production quantity at 132. The predicted date for the next production run is October 16th.
+
+
+**Summarizing Production Findings**
+
+I'm now consolidating my analysis for the FILOU CHASSEUR product. The frequency pattern reveals regular cycles of roughly 17 days, with a predicted next production date of October 16th. I've classified seasonality as weak. I've noted a steady upward trend in production volume, with a baseline quantity of 132 units and a high confidence in these findings.
 
 
 
@@ -310,7 +303,7 @@ I'm now fully confident in the stockout risk due to the predicted order date of 
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 1u
-- 📊 **Baseline calculée**: 1.2u
+- 📊 **Baseline calculée**: 1u
 - 📊 **Médiane historique**: 2u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
@@ -326,46 +319,116 @@ I'm now fully confident in the stockout risk due to the predicted order date of 
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande irrégulière, cycle médian calculé à environ 45 jours
+- **Pattern temporel**: Sporadique (intervalles irréguliers de 11 à 100+ jours)
 - **Cycle médian (jours)**: 45
 - **Dernière commande**: 2025-09-11
-- **Prochaine prédite**: 2025-10-26 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-10-26 (dans 21j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Pas de jour de commande fixe identifié
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-L'historique est très clairsemé (une seule commande récente en 2025). Toutefois, les intervalles historiques (45, 105, 11 jours) donnent une médiane de 45 jours. Avec une dernière commande au 11 septembre et un délai actuel de 24 jours, la prochaine commande théorique est prévue dans 21 jours (26 oct), soit dans l'horizon critique de 40 jours propre au B2B. On recommande 1 unité, quantité la plus fréquente statistiquement.
+Le produit est très sporadique avec une seule commande en 2025. En se basant sur la médiane des intervalles historiques (environ 45 jours), la prochaine commande est estimée pour fin octobre (sous 30 jours). La quantité recommandée est fixée à 1 unité, suivant la règle stricte des petites quantités récentes (1u en septembre).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 686 tokens
-- **Output**: 1,456 tokens
-- **Total**: 2,142 tokens
+- **Input**: 882 tokens
+- **Output**: 1,597 tokens
+- **Total**: 2,479 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Product History**
+**Reviewing Historical Sales Data**
 
-I'm currently focused on the sales history for product [PF0084], specifically the FILOU CARBONNADES 800 GR. I've noted a recent sale on 2025-09-11 and am now analyzing the intervals between past sales in 2024 to identify potential patterns. The gaps between sales are of interest.
-
-
-**Evaluating Cycle Predictions**
-
-I've been calculating the median sales cycle for the FILOU CARBONNADES 800 GR, given the irregularity of past sales. It seems there is no meaningful single average that would work, so I've decided to test a window. I am currently checking if the gap since the last order (24 days) poses a risk.
+I'm now digging into the historical sales data for product [PF0084], specifically looking at the 2024 figures to spot trends. The early 2024 data shows a couple of sales spikes, and I'm keen to understand the factors behind the 11-day gap. I will analyze the recent data from September 2025 to see if patterns emerge.
 
 
-**Forecasting Demand Patterns**
+**Predicting Order Imminence**
 
-I'm now calculating the predicted next order date by adding the median cycle to the last order date, pinpointing it to around October 26, 2025. Given that this is only 21 days from today, it warrants a "Risk Yes" assessment for an imminent order. Additionally, I am analyzing historical quantities and seasonality to get more fine-grained data, and to refine estimates.
+I'm now assessing the likelihood of an upcoming order for [PF0084]. My analysis reveals sporadic ordering patterns, with significant gaps. Based on the 45-day median cycle from 2024, the next order is potentially due around October 26th. Given that the last order was 24 days ago and a recent one-unit sale, I'm marking it a potential risk.
 
 
-**Calculating Order Recommendation**
+**Forecasting Demand Parameters**
 
-I've finalized the order recommendation. Based on the analysis, and a median 45-day cycle with last order on September 11, the next order is estimated for October 26. This is just 21 days from today. Given the low-volume, stable trend, and recent order quantity of one, I recommend ordering one unit. Confidence remains medium due to data sparsity.
+I'm now assessing the predictive elements for [PF0084] FILOU CARBONNADES. Despite infrequent sales, I've calculated a 45-day median cycle. With the last order placed 24 days ago, the next is projected around October 26th. Given the low-volume, sporadic ordering, a minor risk of an upcoming order is probable, especially considering that the stew sales will begin to occur.
+
+
+**Determining Order Quantity**
+
+I'm now assessing the order quantity for [PF0084] FILOU CARBONNADES. Despite infrequent sales, I'm sticking with a recommended order of one unit. While the reorder window is approaching, the last order was for a single unit and consistent with the historical sales. I've re-evaluated the risk and am confident in the "one unit" recommendation.
+
+
+
+
+</details>
+
+</details>
+
+
+<details>
+<summary><strong>4. [PF3266] JF SAUCE BEARNAISE 3L</strong> - LLM: 20u vs Médiane: 30u (Réel: 12u)</summary>
+
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 20u
+- 📊 **Baseline calculée**: 20u
+- 📊 **Médiane historique**: 30u
+- ✅ **Réel commandé**: 12u
+- 📉 **Erreur LLM**: 8u (66.7%)
+- 📉 **Erreur Médiane**: 18u (150.0%)
+
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 20u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: high
+- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 2 (quantité)**: high
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Cycle structuré de 44 jours en 2025 versus hebdomadaire en 2024
+- **Cycle médian (jours)**: 44
+- **Dernière commande**: 2025-09-11
+- **Prochaine prédite**: 2025-10-25 (dans 20j)
+- **Dans horizon 30j ?**: ✅ OUI
+- **Saisonnalité**: none
+- **Tendance**: stable
+- **Analyse jour cycle**: Passage d'un mode de commande hebdomadaire (N-1) à un mode mensuel espacé avec volumes doublés
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+Bien que le rythme de commande ait changé par rapport à 2024 (moins fréquent), le client a commandé exactement 20u à chaque fois en 2025. Avec un cycle de 44 jours détecté entre juillet et septembre, la prochaine commande est attendue autour du 25 octobre. Elle entre dans l'horizon de 30 jours, justifiant une commande basée sur le volume récent constant.
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 1,129 tokens
+- **Output**: 1,659 tokens
+- **Total**: 2,788 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Examining the Sales Data**
+
+I'm analyzing the sales history for the JF SAUCE BEARNAISE, specifically the 3L product. I see two sales points in 2025 and one in the previous year. The interval between the two 2025 sales appears to be 44 days. I'll need to dig deeper into the 2024 data to get a clearer picture.
+
+
+**Evaluating Stock Risk**
+
+I've assessed the risk, noting a potential stockout within the next 30 days, specifically around October 25th, given the observed 44-day cycle. The high quantity of 20 units per order in 2025 warrants a closer look at current inventory levels. Comparing 2024 and 2025, it appears that the 2025 order quantities are higher but less frequent.
+
+
+**Predicting Demand Updates**
+
+I'm focused on the frequency pattern and order quantities. Based on the 2025 data, a 44-day cycle is evident. My calculations predict the next order around October 25th, highlighting a potential stockout risk. I recommend a 20-unit order, a quantity observed consistently in the recent past, with high confidence in this prediction.
+
+
+**Determining the Order Quantity**
+
+The primary focus is now on the recommended order, where 20 units is the established baseline for 2025. The confidence level remains high, as the data from the year indicates consistency. I've considered historical data, but have favored the current patterns, considering the shift in client behavior. The structural change in the buying habits appears to be the most relevant factor.
 
 
 
@@ -377,7 +440,7 @@ I've finalized the order recommendation. Based on the analysis, and a median 45-
 
 
 
-### 📊 Données d'Input LLM (3 produits)
+### 📊 Données d'Input LLM (4 produits)
 
 
 <details>
@@ -458,11 +521,38 @@ I've finalized the order recommendation. Based on the analysis, and a median 45-
 </details>
 
 
+<details>
+<summary><strong>4. [PF3266] JF SAUCE BEARNAISE 3L</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-09-11 08:10:53: 20u
+- 2025-07-29 06:11:06: 20u
+
+**📅 Commandes N-1 (même période année dernière):**
+- 2024-09-26 08:50:24: 6u
+- 2024-09-16 11:50:49: 10u
+- 2024-09-09 11:38:48: 8u
+- 2024-08-27 11:40:22: 10u
+- 2024-08-14 07:59:29: 8u
+- 2024-07-24 07:35:24: 6u
+- 2024-07-24 06:06:23: 10u
+- 2024-06-17 07:40:59: 6u
+- 2024-06-06 12:27:23: 8u
+- 2024-05-31 06:50:36: 6u
+- 2024-05-23 06:43:22: 4u
+- 2024-05-06 09:33:16: 6u
+
+**✅ Quantité LLM**: 20u (confidence: high)
+**📊 Quantité Réelle**: 12u
+
+</details>
+
+
 
 
 ---
 
-## False Positives (5)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -482,16 +572,17 @@ I've finalized the order recommendation. Based on the analysis, and a median 45-
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 8 | Stock prédit: 2.3u (6j restants) → prédit 8u mais non commandé |
+| [PF1140] FILOU SAUCE CHASSEUR 850G | 7 | Stock prédit: 2.3u (6j restants) → prédit 7u mais non commandé |
 | [PF3270] JF TRUFFLE MAYONNAISE 925ML | 1 | Stock prédit: 0.7u (38j restants) → prédit 1u mais non commandé |
 | [PF3271] JF WASABI MAYONNAISE 925ML | 1 | Stock prédit: 0.6u (30j restants) → prédit 1u mais non commandé |
 | [PF0524] FILOU SAUCE TOMATE 815 GR | 4 | Stock prédit: 1.7u (13j restants) → prédit 4u mais non commandé |
 | [PF3273] JF MITRAILLETTE SAUCE 925ML | 1 | Stock prédit: -0.6u (-28j restants) → prédit 1u mais non commandé |
+| [PF3290] JF MAYO BARAKI 925ML | 1 | Stock prédit: -0.4u (-19j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (0)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -506,14 +597,8 @@ I've finalized the order recommendation. Based on the analysis, and a median 45-
 **Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
 </details>
 
-
-*Produits commandés mais non prédits*
-
-| Produit | Qté commandée | Raison |
-|---------|---------------|--------|
-| [PF3266] JF SAUCE BEARNAISE 3L | 12 | En rupture (-4j) mais non prédit - probablement filtré (pas de consommation ou historique insuffisant) |
-
+*Aucun faux négatif (rappel = 100%)*
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:16:33.896Z*
+*Rapport généré automatiquement le 2025-12-19T14:43:47.031Z*

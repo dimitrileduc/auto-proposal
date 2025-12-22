@@ -1,0 +1,30 @@
+{
+  "clientId": 17669,
+  "clientName": "Epicerie Uhoda Beaufays",
+  "orderName": "S39600",
+  "orderDate": "2025-10-08 07:26:15",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 19,
+    "fn": 2,
+    "precision": 0.3448275862068966,
+    "recall": 0.8333333333333334,
+    "f1Score": 0.4878048780487806,
+    "mae": 0.2,
+    "wmape": 16.666666666666664,
+    "mape": 15,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 38,
+    "promptTokens": 26313,
+    "completionTokens": 87427,
+    "totalTokens": 113740
+  }
+}

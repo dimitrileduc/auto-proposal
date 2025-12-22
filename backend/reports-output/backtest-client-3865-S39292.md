@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 27
-- **Tokens**: 18,528 input + 48,595 output = 67,123 total
+- **Tokens**: 23,821 input + 72,941 output = 96,762 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 21.1% | 19 produits prédits, 4 corrects |
+| **Précision** | 20.0% | 20 produits prédits, 4 corrects |
 | **Rappel** | 80.0% | 5 produits réels, 4 détectés |
-| **F1-Score** | 33.3% | Score équilibré global |
+| **F1-Score** | 32.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -177,46 +177,46 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel régulier (médiane de 14 jours)
+- **Pattern temporel**: Cycle bi-mensuel régulier identifié (médiane 14 jours)
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-09-02
 - **Prochaine prédite**: 2025-09-16 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: weak
-- **Tendance**: increasing
+- **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande est très régulier avec une médiane de 14 jours. La dernière commande datant du 2 septembre, le client a dépassé son cycle habituel (20 jours écoulés), ce qui indique un besoin immédiat. Le volume est stable sur les derniers mois (5-6 unités) et montre une progression nette par rapport à l'année dernière (2-3 unités).
+Le cycle de commande est très régulier avec une médiane de 14 jours. La commande prévue pour le 16 septembre n'a pas encore été passée au 22 septembre, indiquant un risque de rupture imminent (overdue). Les quantités en 2025 sont stables entre 5 et 6 unités, ce qui est supérieur à l'historique N-1 (3u). On recommande 5 unités basées sur les deux dernières commandes.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 825 tokens
-- **Output**: 1,622 tokens
-- **Total**: 2,447 tokens
+- **Input**: 1,021 tokens
+- **Output**: 1,791 tokens
+- **Total**: 2,812 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Recent Product History**
+**Reviewing Recent Sales Data**
 
-I'm currently focused on the recent sales history of product JF001. Over the last three months, I've noted several sales of 5 units, with a combined 6 units sold on August 11th. I'm keen to understand the cause behind the combined sale.
-
-
-**Analyzing Order Frequency Patterns**
-
-The data reveals a consistent pattern in sales quantities, primarily 5 or 6 units per order of product JF001. I've calculated a median order interval of 14 days, and the last order was 20 days ago. The prediction window of 2025-09-16 has passed. Considering the current date of 2025-09-22, this suggests the customer is overdue and there is a high stockout risk.
+I've been examining the recent sales data for JF001, specifically the JF MAYONNAI TRUFF ES 250ML WECK product. There's been a steady, albeit small, increase in units sold over the past few weeks, with a notable jump on August 11th. I'm focusing on the sales intervals to identify any emerging trends or patterns.
 
 
-**Refining Stock Level Predictions**
+**Assessing Order Prediction Accuracy**
 
-I've examined the recent sales history, noting the consistent bi-monthly cycle and increasing volume compared to last year. Calculating a prediction window of around 2025-09-16, I recognize the customer is overdue and at risk of stockout. Next I'll determine an order quantity and recommend action.
+I've re-evaluated the sales cycle, and the predicted order date of September 16th has passed. This warrants immediate action, considering the product's sales trends and recent volume of 5u-6u. The current delay is unusual, potentially indicating a missed order. The risk level is indeed high; I need to investigate further.
 
 
-**Formulating a Recommendation**
+**Finalizing Order Recommendation**
 
-My analysis indicates the customer is overdue for an order of JF001, based on a median cycle of 14 days and a last order date of September 2nd. Considering consistent demand for 5-6 units and an increasing trend from last year, I suggest ordering 5 units immediately.
+I've incorporated the sales data, the cycle details, and the product characteristics. Based on the analysis, I'm ready to propose an order of 5 units, with a high degree of confidence. The predicted date was missed, so action is now required.
+
+
+**Revising Recommendation Parameters**
+
+I've re-examined the key parameters. The order is overdue, given the product's regular cycle. Considering recent sales patterns, I've confirmed a recommended order quantity of 5 units. I've re-evaluated the reasoning and added that 2025 quantities are superior to 2024.
 
 
 
@@ -247,46 +247,46 @@ My analysis indicates the customer is overdue for an order of JF001, based on a 
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier de 22-27 jours
-- **Cycle médian (jours)**: 25
+- **Pattern temporel**: Commande cyclique régulière tous les 22-27 jours
+- **Cycle médian (jours)**: 22
 - **Dernière commande**: 2025-09-02
-- **Prochaine prédite**: 2025-09-27 
+- **Prochaine prédite**: 2025-09-24 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: weak
-- **Tendance**: stable
+- **Tendance**: decreasing
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 1u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande est très régulier avec une commande environ toutes les 3 à 4 semaines. La dernière commande datant du 2 septembre, la prochaine est prévue autour du 27 septembre (dans 5 jours), ce qui présente un risque de rupture imminent. Les volumes récents (4, 5, 6u) indiquent une demande stable autour d'une médiane de 5 unités, bien que supérieure à n-1.
+Le cycle de commande est extrêmement stable avec une médiane de 22 jours. La dernière commande datant du 2 septembre, la prochaine est prévue autour du 24 septembre (sous 48h). Bien que les volumes 2025 montrent une légère érosion (6u en juillet, 5u en août, 4u en septembre), le niveau de demande reste bien supérieur à celui de l'année N-1. La médiane des commandes récentes (5u) est retenue pour couvrir le besoin imminent.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 769 tokens
-- **Output**: 1,363 tokens
-- **Total**: 2,132 tokens
+- **Input**: 965 tokens
+- **Output**: 1,651 tokens
+- **Total**: 2,616 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Future Needs**
+**Forecasting Production Volumes**
 
-I'm currently focused on predicting the optimal order quantity for the "JF SAUCE BEARNAISE 250ML WECK" product. Initial data suggests demand fluctuates. Historical sales show 4 units ordered on 2025-09-02 and a combined total of 5 units on 2025-08-11. My next step is analyzing this data for patterns.
-
-
-**Evaluating Order Timing**
-
-I've calculated the median interval between orders, placing the next estimated order date around September 27th. Comparing this with today's date, September 22nd, I see a short window to make a decision. A risk assessment shows a high chance of a stock-out. Reviewing past orders reveals an upward trend in quantities, suggesting the need to address this new, possibly significant, order.
+I'm currently working on the JF012 - JF SAUCE BEAR NAISE 250ML WECK product, specifically its supply chain needs. I'm focusing on production forecasts, looking at historical demand, to anticipate requirements for the September 22nd, 2025 order. Initial data suggests a fluctuating demand pattern, with significant volume variations observed in prior periods.
 
 
-**Assessing Demand and Risk**
+**Calculating Order Imminence**
 
-Given the anticipated order date of September 27th, and considering the short lead time, a stock-out is highly probable. Analyzing the data, the product's recent average order volume is 5 units, with a clear and consistent ordering pattern, so I'm recommending an order of 5 units. My confidence is high.
+I've determined a median order interval of 22 days based on historical data for the JF012 product. Given the last order on September 2nd, 2025, the next is predicted for September 24th, 2025. With today being September 22nd, I calculate a two-day window. The risk of supply chain rupture within 30 days is **YES**, due to the predicted order date.
 
 
-**Recommending an Order**
+**Evaluating Quantity Predictions**
 
-Based on a detailed analysis, I've confirmed a high probability of a stock-out within five days. The ordering cycle is highly predictable, and the recent average order quantity is 5 units. Considering this, along with the recent volumes, I recommend ordering 5 units. My confidence level remains high.
+I'm now focusing on calculating the baseline quantity for the upcoming order. Considering the recent volume data, specifically the period from July to September 2025, I've determined a median order volume of 5 units. There's not enough to justify an extra buffer for this order, given the consistency.
+
+
+**Assessing Demand Patterns**
+
+I'm now consolidating the data, reviewing order intervals, and assessing the trend. The cycle appears consistent, around 22 days, with a predicted order for September 24th. Quantities are also stable, 4-6 units, making a baseline of 5 units. The risk remains YES, due to the order's imminence. My confidence is high.
 
 
 
@@ -301,7 +301,7 @@ Based on a detailed analysis, I've confirmed a high probability of a stock-out w
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 2u
-- 📊 **Baseline calculée**: 2.2u
+- 📊 **Baseline calculée**: 2u
 - 📊 **Médiane historique**: 2u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 0u (0.0%)
@@ -312,12 +312,12 @@ Based on a detailed analysis, I've confirmed a high probability of a stock-out w
 - **Quantité décidée**: 2u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
+- **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle irrégulier avec une médiane de 18 jours (intervalle 8-27 jours)
+- **Pattern temporel**: Cycle régulier d'environ 18 jours
 - **Cycle médian (jours)**: 18
 - **Dernière commande**: 2025-09-02
 - **Prochaine prédite**: 2025-09-20 
@@ -328,35 +328,40 @@ Based on a detailed analysis, I've confirmed a high probability of a stock-out w
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle médian de 18 jours est dépassé (dernière commande il y a 20 jours). La demande est en cours ou imminente. Les quantités récentes oscillent entre 1 et 4 unités. La médiane de 2 unités est choisie comme baseline robuste pour couvrir le besoin sans surstocker, étant donné que le pic d'août (4u) semble ponctuel par rapport au reste de l'historique et au N-1.
+Le cycle de commande moyen est de 18 jours, ce qui place la prochaine commande théorique au 20 septembre. Étant donné que nous sommes le 22 septembre, une commande est imminente. La médiane des quantités commandées sur les 3 derniers mois est de 2 unités, ce qui constitue une base fiable malgré la fluctuation entre 1 et 4 unités.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 769 tokens
-- **Output**: 1,470 tokens
-- **Total**: 2,239 tokens
+- **Input**: 965 tokens
+- **Output**: 2,165 tokens
+- **Total**: 3,130 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Product Data**
+**Analyzing Product Sales Data**
 
-I'm currently reviewing the sales data for product JF009, specifically the JF SAUCE TARTARE, 250ML WECK. Recent history shows sales of 1 unit on September 2nd and 3 units on August 19th. The weekly sales appear somewhat inconsistent, and this needs further investigation.
-
-
-**Forecasting Order Timing**
-
-I've calculated the median interval between orders for JF009 as 18 days, using the past 3 months' data.  Based on this, and that the last order was placed on September 2nd, I predicted a next order date of September 20th, which has already passed. This indicates a high stockout risk.
+The initial data point from September 2nd, 2025, shows a unit sale. Prior to that, I see a pattern of unit sales on Tuesdays, with the most recent sales indicating a slight uptick in the past few months. I'm now trying to correlate these sales trends with external factors.
 
 
-**Refining Order Quantity**
+**Projecting Future Demand**
 
-I'm now determining the appropriate order quantity for JF009. Recent sales show varying volumes, with a median of 2 units and an average of 2.2. A look at the prior year's data reveals similar low volumes, suggesting no significant seasonality. Considering the decreasing recent trend, I'm leaning toward ordering 2 units.
+I've calculated the median cycle for the product JF009, based on sales data. The last order date was September 2nd, 2025, and my projection, using an 18-day cycle, suggested a sale around September 20th. Given that it's now September 22nd, I see a high risk of stockout.
 
 
-**Finalizing Recommendations**
+**Calculating Order Quantity**
 
-I've completed the analysis, determining the product's ordering frequency is around 18 days, with the last order 20 days ago, signaling a stockout risk. My recommended order quantity is 2 units, based on the median and the decreasing trend. While there's some fluctuation, I have moderate confidence in these recommendations, and high confidence in the timing.
+I've determined the median quantity to be 2 units, considering recent sales data. Analyzing seasonality, I don't see any significant trends to adjust this number. However, since the last order was for 1 unit, and the same was true in the corresponding period last year, I'm now inclined to suggest an order of 1 unit.
+
+
+**Determining the Order Quantity**
+
+My analysis now focuses on the quantity to order. While the median quantity across recent orders is 2, the last order was for 1 unit, and a similar trend appeared last year. Given these factors, I've re-evaluated and will order 2 units, maintaining stock coverage, as suggested by the product's small volume and the confidence in the established ordering pattern.
+
+
+**Recommending Final Order**
+
+Given the product's small volume, the median quantity of 2 units seems appropriate, especially since the order is overdue based on the calculated cycle. My confidence is high given the regular ordering pattern. Therefore, I'm recommending an order of 2 units to ensure coverage.
 
 
 
@@ -371,7 +376,7 @@ I've completed the analysis, determining the product's ordering frequency is aro
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 1u
-- 📊 **Baseline calculée**: 1.8u
+- 📊 **Baseline calculée**: 1u
 - 📊 **Médiane historique**: 1u
 - ✅ **Réel commandé**: 2u
 - 📉 **Erreur LLM**: 1u (50.0%)
@@ -382,51 +387,51 @@ I've completed the analysis, determining the product's ordering frequency is aro
 - **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
+- **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle irrégulier entre 8 et 27 jours (médiane 18 jours)
+- **Pattern temporel**: Commandes régulières avec un cycle de 8 à 27 jours
 - **Cycle médian (jours)**: 18
 - **Dernière commande**: 2025-09-02
 - **Prochaine prédite**: 2025-09-20 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: none
+- **Saisonnalité**: weak
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 3u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle médian entre les commandes est de 18 jours. La dernière commande datant du 2 septembre, la date théorique de réapprovisionnement (20 septembre) est déjà dépassée au 22 septembre, confirmant un besoin immédiat. Bien qu'un pic à 3 unités ait été observé en août, la commande la plus récente et l'historique N-1 indiquent une consommation de base stable de 1 unité.
+Le cycle médian entre les commandes est de 18 jours. La dernière commande datant du 2 septembre, la prochaine était théoriquement attendue autour du 20 septembre. Nous sommes le 22 septembre, le risque de rupture est donc immédiat. Concernant la quantité, bien qu'un pic à 3 unités ait été observé en août, le volume est revenu à 1 unité en septembre, ce qui correspond à l'historique N-1 et à la médiane globale. Conformément à la règle des petites quantités, on privilégie la médiane de 1 unité.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 771 tokens
-- **Output**: 1,501 tokens
-- **Total**: 2,272 tokens
+- **Input**: 967 tokens
+- **Output**: 1,324 tokens
+- **Total**: 2,291 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Production Volumes**
+**Tracking Quantity Fluctuations**
 
-I've been analyzing the production data for the JF SAUCE AIOLI PEST O. Recent activity shows a fluctuating demand, with a peak of 3 units on August 19th. The intervals between production runs are irregular, suggesting shifts in consumer needs or inventory management strategies. I need more data points to establish a clear pattern.
-
-
-**Projecting Demand Trends**
-
-I'm now calculating the median interval between orders, using the last five data points. This yields 18 days. Based on this cycle, and considering the last order was on September 2nd, the next one was predicted to be on September 20th. Today is September 22nd, so it is overdue. I'll need to flag this to action.
+I'm currently focused on the product [JF019] JF SAUCE AIOLI PEST O 250M WECK. Analyzing recent data, the quantity shifted from 1u on 2025-09-02, to 3u on 2025-08-19, and then another 3u on 2025-08-11. The intervals between these transactions seem important.
 
 
-**Interpreting Order Volumes**
+**Evaluating Replenishment Timing**
 
-I've determined that the spike in August seems to be an outlier. The median order quantity is 1 unit, with the mode also being 1 unit. Analysis suggests a bi-monthly to monthly cycle. The most recent order was flagged as overdue by two days. I'm recommending a 1-unit order and calculating the confidence level.
+I've calculated the median interval between orders, settling on 18 days. Based on this, I predicted a new order around September 20th. Today is September 22nd. Given the last order was on September 2nd, I diagnose this as overdue. Risk is deemed "YES" due to the delay, though within a 30-day window.
 
 
-**Evaluating Order Recommendation**
+**Assessing Order Quantities**
 
-I've determined the recommended order quantity should be 1 unit, with a medium confidence level, given the overdue status of the predicted order date. The analysis indicates a bi-monthly to monthly cycle, influenced by the recent spike in August. However, the September order and N-1 history suggest returning to the 1u baseline.
+I've examined the quantity history for [JF019], including the 2024 data. The median quantity is consistently 1u. While a brief August spike to 3u occurred, September has returned to the 1u baseline. My recommendation is to order 1u, with high confidence in the data.
+
+
+**Synthesizing Risk and Action**
+
+Now, I'm integrating the risk assessment with the quantity decision. Given the overdue replenishment (Sep 20th passed), coupled with a stable 1u baseline, and the overall pattern, I'm recommending an immediate order of 1u. My confidence remains high due to the consistent data.
 
 
 
@@ -500,7 +505,7 @@ I've determined the recommended order quantity should be 1 unit, with a medium c
 - 2024-06-11 07:20:33: 1u
 - 2024-06-04 08:24:14: 2u
 
-**✅ Quantité LLM**: 2u (confidence: medium)
+**✅ Quantité LLM**: 2u (confidence: high)
 **📊 Quantité Réelle**: 2u
 
 </details>
@@ -521,7 +526,7 @@ I've determined the recommended order quantity should be 1 unit, with a medium c
 - 2024-08-07 13:24:40: 1u
 - 2024-06-11 07:20:33: 1u
 
-**✅ Quantité LLM**: 1u (confidence: medium)
+**✅ Quantité LLM**: 1u (confidence: high)
 **📊 Quantité Réelle**: 2u
 
 </details>
@@ -531,7 +536,7 @@ I've determined the recommended order quantity should be 1 unit, with a medium c
 
 ---
 
-## False Positives (15)
+## False Positives (16)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -552,20 +557,21 @@ I've determined the recommended order quantity should be 1 unit, with a medium c
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | Stock prédit: -0.7u (-5j restants) → prédit 2u mais non commandé |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 3 | Stock prédit: -1.0u (-6j restants) → prédit 3u mais non commandé |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | Stock prédit: -1.0u (-6j restants) → prédit 2u mais non commandé |
 | [JF018] JF SAUCE SAMOURAI 250ML WECK | 2 | Stock prédit: 1.0u (9j restants) → prédit 2u mais non commandé |
 | [TVF004] TVF TARTINADE BIO OLIVE 180g | 2 | Stock prédit: 2.1u (42j restants) → prédit 2u mais non commandé |
 | [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | Stock prédit: 1.4u (43j restants) → prédit 2u mais non commandé |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | Stock prédit: 0.6u (8j restants) → prédit 2u mais non commandé |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | Stock prédit: -1.4u (-13j restants) → prédit 2u mais non commandé |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | Stock prédit: 0.6u (8j restants) → prédit 1u mais non commandé |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 4 | Stock prédit: -1.4u (-13j restants) → prédit 4u mais non commandé |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | Stock prédit: -0.4u (-4j restants) → prédit 2u mais non commandé |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 2 | Stock prédit: 0.6u (8j restants) → prédit 2u mais non commandé |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 3 | Stock prédit: -0.5u (-3j restants) → prédit 3u mais non commandé |
 | [TVF006] TVF TARTINADE BIO TOMATE 180g | 2 | Stock prédit: 0.1u (2j restants) → prédit 2u mais non commandé |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 | [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
 | [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | Stock prédit: 0.1u (4j restants) → prédit 1u mais non commandé |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 2 | Stock prédit: -0.0u (-1j restants) → prédit 2u mais non commandé |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
 
 
 ---
@@ -595,4 +601,4 @@ I've determined the recommended order quantity should be 1 unit, with a medium c
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:18:19.594Z*
+*Rapport généré automatiquement le 2025-12-19T14:50:45.211Z*

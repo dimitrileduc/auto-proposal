@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 36
-- **Tokens**: 22,228 input + 94,571 output = 116,799 total
+- **Tokens**: 29,281 input + 91,551 output = 120,832 total
 
 
 ---
@@ -23,7 +23,7 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 0.0% | 3 produits prédits, 0 corrects |
+| **Précision** | 0.0% | 5 produits prédits, 0 corrects |
 | **Rappel** | 0.0% | 0 produits réels, 0 détectés |
 | **F1-Score** | 0.0% | Score équilibré global |
 
@@ -146,7 +146,7 @@
 
 ---
 
-## False Positives (3)
+## False Positives (5)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -167,7 +167,9 @@
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
 | [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | Stock prédit: 0.1u (1j restants) → prédit 1u mais non commandé |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | Stock prédit: -4.2u (-30j restants) → prédit 3u mais non commandé |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: -9.8u (-54j restants) → prédit 4u mais non commandé |
+| [JF074] FIL MAYONNAISE ŒUFS 1L SEAU  | 10 | Stock prédit: -24.5u (-54j restants) → prédit 10u mais non commandé |
 | [FIL23] FIL MAYONNAISE 300ML SQUEEZE  | 12 | Stock prédit: -29.5u (-54j restants) → prédit 12u mais non commandé |
 
 
@@ -192,4 +194,4 @@
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:24:02.929Z*
+*Rapport généré automatiquement le 2025-12-19T14:53:15.472Z*

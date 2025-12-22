@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 3,609 input + 8,067 output = 11,676 total
+- **Tokens**: 4,393 input + 12,798 output = 17,191 total
 
 
 ---
@@ -69,10 +69,10 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 112.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 58.3% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 58.3% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | -58.3% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **MAE** | 80.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 41.7% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 41.7% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | -41.7% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | 0 | Égalité parfaite |
 | Partial Match (>0u) | 1 | Avec erreur |
 
@@ -147,37 +147,37 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 80 | 192 | 112.0 | 58.3% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 112 | 192 | 80.0 | 41.7% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
 
 
 <details>
-<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM: 80u vs Médiane: 128u (Réel: 192u)</summary>
+<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM: 112u vs Médiane: 128u (Réel: 192u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 80u
-- 📊 **Baseline calculée**: 100u
+- 🤖 **Quantité recommandée (finale)**: 112u
+- 📊 **Baseline calculée**: 104u
 - 📊 **Médiane historique**: 128u
 - ✅ **Réel commandé**: 192u
-- 📉 **Erreur LLM**: 112u (58.3%)
+- 📉 **Erreur LLM**: 80u (41.7%)
 - 📉 **Erreur Médiane**: 64u (33.3%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 80u (risque détecté)
+- **Quantité décidée**: 112u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: high
+- **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel régulier (environ 18-21 jours)
-- **Cycle médian (jours)**: 21
+- **Pattern temporel**: Cycle régulier de 18 à 21 jours, principalement commandé le lundi.
+- **Cycle médian (jours)**: 20
 - **Dernière commande**: 2025-09-22
-- **Prochaine prédite**: 2025-10-13 
+- **Prochaine prédite**: 2025-10-12 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: weak
 - **Tendance**: stable
@@ -185,40 +185,70 @@
 - **Outliers détectés**: 192u
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande moyen est de 21 jours. La dernière commande ayant été passée le 22/09, la prochaine commande est prévue autour du 13/10, soit dans 8 jours par rapport à la date de l'analyse (05/10). Le risque de rupture est donc confirmé. En termes de quantité, bien que des pics à 128u aient été observés récemment, le volume de 80u est la constante la plus fréquente pour la période de septembre/octobre sur N et N-1.
+Le cycle habituel de 20 jours indique une commande imminente (prévue autour du 12 octobre, soit dans 7 jours). L'analyse des volumes de 2025 montre une médiane robuste à 104 unités (supérieure aux 80 unités de N-1). La recommandation de 112 unités applique une marge de sécurité B2B légère (+7,7% par rapport à la médiane) tout en restant alignée avec les multiples de conditionnement logistiques observés (base 16).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,011 tokens
-- **Output**: 1,869 tokens
-- **Total**: 2,880 tokens
+- **Input**: 1,207 tokens
+- **Output**: 4,753 tokens
+- **Total**: 5,960 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Forecasting Production Volumes**
+**Analyzing Product Data**
 
-I'm currently focused on the production volume forecasts for the "MF Brotaufstrich Tomate Bärlauch 250g" product. Recent data shows a fluctuating pattern, with a 34-day interval between the 128u and 80u on September 22nd. The prior interval was only 15 days, so I'm investigating the cause.
-
-
-**Calculating Order Timing Risks**
-
-My focus is shifting to risk assessment for the "MF0042" product. Based on an 18-21 day interval, the next order is predicted for October 13th. Since the target date of October 5th is within 40 days of the predicted order, the risk is classified as "Yes," warranting further investigation into the interval variations.
+I've been poring over the sales data for the MF0042 product, specifically the Tomate Bärlauch spread. Looking at the 2025 figures, there's a recent 80-unit sale on September 22nd. I'm noting the intervals between sales, which seem to fluctuate, and compare them with 2024 to pinpoint any patterns.
 
 
-**Assessing Quantity and Seasonality**
+**Projecting Order Timing**
 
-I'm now focusing on projecting the order quantity for "MF0042." Analyzing the historical data, specifically from 2024, reveals a pattern of 80u orders during September and October. The recent median volume from the last four orders is approximately 100, though the most recent order was 80u, aligning with the seasonal norm. Therefore, the baseline for the next order will be 80.
-
-
-**Confirming Risk and Quantity**
-
-I've re-evaluated the risk assessment, and it remains "Yes" because the predicted order date of October 13th is within the 40-day window of the target date, October 5th. Further, I have finalized the order quantity at 80u, aligning with seasonal patterns and the most recent order.
+I've calculated the median order cycle, landing between 18 and 20 days. Given the last order on September 22nd, I anticipate the next around October 10th. With today being October 5th, we're only five days away, well within the safety horizon, though a rupture risk is present.
 
 
-**Fine-Tuning Quantity and Risk**
+**Evaluating Order Quantity**
 
-The risk assessment remains "Yes," as the predicted order date, October 13th, is within the critical 40-day window relative to the October 5th target. I've also solidified the order quantity at 80u, aligning with the seasonal norm observed in September/October of both 2024 and 2025 and reflecting the most recent order.
+The product's recent 80-unit order aligns with historical patterns. I'm focusing on quantity, comparing the current 2025 data to the previous year. I'm noting the recent 128u orders, and the drop to 80u recently. Based on recent activity, the order should probably be 112u, but the last order was 80, so somewhere between 80 and 112.
+
+
+**Predicting Next Actions**
+
+I'm focused on the timing of the next order, using the consistent 18-20 day cycle. Based on the last order on September 22nd and the median interval, I anticipate another order around October 11th. I've re-evaluated quantities, and my analysis points to a recommended order of 104 units, the robust median for 2025.
+
+
+**Forecasting Next Purchase**
+
+I'm focused on the timing of the next order, with the last occurring on September 22nd. Given the consistent 18-20 day cycle, I'm projecting the next order around October 11th. Since today is October 5th, the risk horizon is tight, with a 6-day window. The median for this year's orders is 104, though recent activity suggests 96 or 104 units as the best fit.
+
+
+**Calculating Order Details**
+
+I've re-evaluated order quantities. The 128-unit orders and the consistent 80-unit orders are the points of focus. Taking the median of the last three, I arrive at 128 units, which, while a solid fit, seems to overstate recent buying. I've re-calculated, and the new recommendation is for 112 units.
+
+
+**Finalizing Quantity Recommendation**
+
+I'm now satisfied with the order quantity, settling on 112 units. This decision balances the recent sales data, the historical trends, and the potential need for a slight safety buffer. This recommendation is based on a cycle of 19 days, meaning the next order should be due in 6 days.
+
+
+**Confirming Quantity Recommendation**
+
+I've decided on 112 units, balancing historical trends with the most recent sales and potential need for a buffer. With a 19-day cycle, the next order is due in 6 days. I'm now certain this is the optimal quantity, given the data.
+
+
+**Revising Recommendation Parameters**
+
+I've re-evaluated and confirmed my calculations, maintaining a focus on recent sales trends, the consistent 19-day cycle, and the importance of a safety stock. I've adjusted the order quantity to 112 units, balancing 2025's fluctuating numbers and N-1's consistent 80s, accounting for potential seasonal shifts.
+
+
+**Finalizing Order Recommendation**
+
+I've decided on 112 units, balancing 2025 sales and historical trends with a small safety margin. The next order should be in 7 days, based on the established 20-day cycle. My confidence level is high.
+
+
+**Calculating Final Recommendation**
+
+After a thorough review, I've concluded on a quantity of 112 units. This decision reflects the 20-day cycle, last order date, upcoming date, and recent sales trends, with a small adjustment for B2B practice. The next order is expected in approximately 7 days.
 
 
 
@@ -256,7 +286,7 @@ The risk assessment remains "Yes," as the predicted order date, October 13th, is
 - 2024-03-13 08:20:22: 128u
 - 2024-02-19 10:46:41: 64u
 
-**✅ Quantité LLM**: 80u (confidence: high)
+**✅ Quantité LLM**: 112u (confidence: high)
 **📊 Quantité Réelle**: 192u
 
 </details>
@@ -288,7 +318,7 @@ The risk assessment remains "Yes," as the predicted order date, October 13th, is
 |---------|-------------|--------|
 | [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 64 | Stock prédit: 29.4u (6j restants) → prédit 64u mais non commandé |
 | [MF0048] MF Delikatess Mayonnaise 250ml DE | 48 | Stock prédit: 10.0u (3j restants) → prédit 48u mais non commandé |
-| [MF0062] ​MF Tarti Betterave rouge | 112 | Stock prédit: 108.0u (24j restants) → prédit 112u mais non commandé |
+| [MF0062] ​MF Tarti Betterave rouge | 123 | Stock prédit: 108.0u (24j restants) → prédit 123u mais non commandé |
 
 
 ---
@@ -312,4 +342,4 @@ The risk assessment remains "Yes," as the predicted order date, October 13th, is
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:17:49.252Z*
+*Rapport généré automatiquement le 2025-12-19T14:46:21.339Z*

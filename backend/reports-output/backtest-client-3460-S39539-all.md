@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 2,588 input + 15,814 output = 18,402 total
+- **Tokens**: 3,176 input + 5,395 output = 8,571 total
 
 
 ---
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 0.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 0.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 1 | Égalité parfaite |
-| Partial Match (>0u) | 0 | Avec erreur |
+| **MAE** | 80.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 50.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 50.0% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | -50.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 0 | Égalité parfaite |
+| Partial Match (>0u) | 1 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,34 +147,34 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 160 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF0078] FILOU CHASSEUR 5 L | 80 | 160 | 80.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (1 produits)
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 160u vs Médiane: 160u (Réel: 160u)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM: 80u vs Médiane: 160u (Réel: 160u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 160u
-- 📊 **Baseline calculée**: 128u
+- 🤖 **Quantité recommandée (finale)**: 80u
+- 📊 **Baseline calculée**: 80u
 - 📊 **Médiane historique**: 160u
 - ✅ **Réel commandé**: 160u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 80u (50.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 160u (risque détecté)
+- **Quantité décidée**: 80u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commandes régulières toutes les 2 à 3 semaines avec une alternance entre 80u et 160u.
+- **Pattern temporel**: Bimensuel avec alternance systématique de volume
 - **Cycle médian (jours)**: 18
 - **Dernière commande**: 2025-09-17
 - **Prochaine prédite**: 2025-10-05 
@@ -185,40 +185,35 @@
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle moyen est estimé à environ 18 jours. La dernière commande datant du 17 septembre, l'échéance de la prochaine commande est imminente (début octobre). Les volumes récents oscillent entre 80 et 160 unités, avec une prédominance du format 160u (3 fois sur les 5 dernières commandes). On retient 160u pour couvrir le besoin à l'approche du cycle suivant.
+Le produit présente une fréquence de commande très régulière (environ tous les 15-20 jours). On observe une alternance systématique de quantités entre 80u et 160u (visible en 2025 comme en 2024). La dernière commande du 17/09 étant de 160u, la logique de réapprovisionnement du client indique une prochaine commande de 80u imminente (échéance prévue sous 3 jours).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,033 tokens
-- **Output**: 2,104 tokens
-- **Total**: 3,137 tokens
+- **Input**: 1,229 tokens
+- **Output**: 1,648 tokens
+- **Total**: 2,877 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Production Volumes**
+**Reviewing the Product Data**
 
-I'm currently looking at the production volume data for the FILOU CHASSEUR product. Recent history shows a pattern of 80u and 160u batches, with variable intervals between them. The most recent data point from September 17th indicates a production run of 160 units. I need to understand the underlying logic driving these batch sizes and intervals.
-
-
-**Calculating Optimal Intervals**
-
-I've now crunched the numbers and calculated the median intervals. The overall median interval for orders seems to be around 18-21 days. However, the 2025 data looks a bit different, and the latest order on September 17th is skewing the numbers. I'm exploring the implications of these different intervals for predicting future orders.
+I'm currently focused on the recent history of "FILOU CHASSEUR 5 L (PF0078)". The data shows a production of 160 units on 2025-09-17, and 80 units on 2025-09-05. I'm noting the production increases and timing intervals to assess any patterns.
 
 
-**Projecting Demand and Risk**
+**Analyzing Production Cadence**
 
-Analyzing the order history for FILOU CHASSEUR, I've identified a possible upcoming order around October 5th. Considering the oscillation between 80u and 160u batches, and recent volumes, it looks like a risk for now. My next step is a deep dive into the 2024 vs. 2025 volume comparison and order frequency data.
-
-
-**Evaluating Quantity Recommendations**
-
-Based on the latest data, I'm leaning toward recommending a quantity of 160 units for the upcoming order. This is driven by the recent pattern of higher volumes, specifically the last three orders being 160, 80, and 160. The predicted order date is close, so the analysis is very relevant.
+I'm now examining production intervals to gauge the rhythm of orders for "FILOU CHASSEUR 5 L (PF0078)". The recent data from 2025 reveals some interesting patterns: a median interval of roughly 9 days. Conversely, in 2024, the median was notably higher, around 22 days, indicating a potential shift in demand. I must investigate further.
 
 
-**Refining Order Quantity**
+**Calculating Order Predictions**
 
-I'm now zeroing in on the ideal quantity for the upcoming order. The most recent data, especially the sequence of 160, 80, and 160 units, strongly suggests a 160-unit order. I've also factored in the oscillating volumes. Based on the cycle and historical data, the 160 seems like the most statistically reasonable decision.
+I'm now focusing on estimating the next order. Considering the median cycle of approximately 15-20 days, and that the last order was on September 17th, I calculate the expected timeframe as October 2nd to October 7th. There is a risk of disruption within the next 30 days. The pattern of alternating between 80 and 160 units, points to an expectation of 80 units for the next order.
+
+
+**Projecting Future Requirements**
+
+Now, I've used the data to forecast the upcoming order for "FILOU CHASSEUR 5 L (PF0078)". Given the established 18-day cycle, I project a new order on October 5th. Furthermore, because of the recurring pattern, I'm confident that the order will be for 80 units. I am also validating this data in JSON format, making certain that it's complete.
 
 
 
@@ -257,7 +252,7 @@ I'm now zeroing in on the ideal quantity for the upcoming order. The most recent
 - 2024-03-22 10:12:21: 80u
 - 2024-03-15 10:48:34: 80u
 
-**✅ Quantité LLM**: 160u (confidence: high)
+**✅ Quantité LLM**: 80u (confidence: high)
 **📊 Quantité Réelle**: 160u
 
 </details>
@@ -287,7 +282,7 @@ I'm now zeroing in on the ideal quantity for the upcoming order. The most recent
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 10 | Stock prédit: -3.0u (-11j restants) → prédit 10u mais non commandé |
+| [PF0088] FILOU VOL AU VENT 800 GR | 6 | Stock prédit: -3.0u (-11j restants) → prédit 6u mais non commandé |
 
 
 ---
@@ -311,4 +306,4 @@ I'm now zeroing in on the ideal quantity for the upcoming order. The most recent
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:16:15.355Z*
+*Rapport généré automatiquement le 2025-12-19T14:43:01.466Z*

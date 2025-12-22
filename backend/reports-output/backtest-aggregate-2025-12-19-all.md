@@ -2,9 +2,9 @@
 
 ## Contexte
 
-- **Date d'exécution** : 19/12/2025 12:29:07
-- **Clients analysés** : 29
-- **Clients réussis** : 29
+- **Date d'exécution** : 19/12/2025 16:03:29
+- **Clients analysés** : 48
+- **Clients réussis** : 48
 - **Clients échoués** : 0
 
 ### Configuration
@@ -22,12 +22,12 @@
 
 | Métrique | Moyenne | Médiane | Interprétation |
 |----------|---------|---------|----------------|
-| **Recall** | 75.7% | 83.3% | % de besoins réels détectés |
-| **Precision** | 42.7% | 41.7% | % de prédictions correctes (58.3% proposés non commandés) |
-| **F1-Score** | 50.1% | 50.0% | Équilibre détection/précision |
-| **wMAPE** | 27.1% | 25.0% | ⚖️ Écart pondéré robuste (métrique principale) |
-| **MAPE** | 33.5% | 25.0% | Écart moyen (info, biaisé) |
-| **Bias** | 4.8% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| **Recall** | 80.2% | 89.4% | % de besoins réels détectés |
+| **Precision** | 40.8% | 40.5% | % de prédictions correctes (59.5% proposés non commandés) |
+| **F1-Score** | 50.0% | 52.6% | Équilibre détection/précision |
+| **wMAPE** | 31.5% | 28.6% | ⚖️ Écart pondéré robuste (métrique principale) |
+| **MAPE** | 36.6% | 33.3% | Écart moyen (info, biaisé) |
+| **Bias** | 5.7% | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 
 
 
@@ -139,26 +139,26 @@ En moyenne, le système se trompe de combien en pourcentage sur les quantités p
 
 ## Distribution des Performances
 
-**Comment se répartissent les 29 clients ?**
+**Comment se répartissent les 48 clients ?**
 
 ### Détection des besoins (Recall)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥80% | 15 | 52% |
-| 50-80% | 10 | 34% |
-| <50% | 4 | 14% |
+| ≥80% | 31 | 65% |
+| 50-80% | 12 | 25% |
+| <50% | 5 | 10% |
 
 ### Justesse des prédictions (Precision)
 
 | Score | Clients | % |
 |-------|---------|---|
-| ≥70% | 4 | 14% |
-| 40-70% | 11 | 38% |
-| <40% | 14 | 48% |
+| ≥70% | 6 | 13% |
+| 40-70% | 20 | 42% |
+| <40% | 22 | 46% |
 
 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:29:07.934Z*
+*Rapport généré automatiquement le 2025-12-19T15:03:29.520Z*

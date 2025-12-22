@@ -182,9 +182,12 @@ export const backtestAggregateTask = task({
             orderName: orderMapping ? orderMapping[clientId.toString()] : undefined,
             config: payload.config,
           },
+          options: {
+            ttl: "60m", // TTL de 60 minutes par tâche pour éviter expiration dans la queue
+          }
         }));
 
-        // Batch trigger and wait (pattern orchestrator.task.ts:163)
+        // Batch trigger and wait
         const batchResults = await backtestClientTask.batchTriggerAndWait(batchPayloads);
 
         console.log(`   ✅ Completed ${batchResults.runs.length} backtest tasks for this batch`);

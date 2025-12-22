@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 4
-- **Tokens**: 3,517 input + 10,907 output = 14,424 total
+- **Tokens**: 4,301 input + 7,282 output = 11,583 total
 
 
 ---
@@ -186,40 +186,35 @@
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande est extrêmement régulier avec un intervalle de 14 jours observé récemment et historiquement. La dernière commande date d'il y a 18 jours (24/09), la commande suivante était donc théoriquement attendue autour du 8 octobre. Étant au 12 octobre, il y a un risque imminent de rupture de stock sur le point de vente. La quantité de 32 unités est constante sur les dernières occurrences.
+Le produit présente un cycle de commande bimensuel très régulier de 14 jours, observé tant sur les commandes récentes (septembre 2025) que sur l'historique N-1. La dernière commande datant du 24 septembre, la prochaine était théoriquement prévue pour le 8 octobre. Étant au 12 octobre, la commande est imminente ou en léger retard. La quantité de 32 unités est la norme constante observée sur les flux récents.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 953 tokens
-- **Output**: 1,717 tokens
-- **Total**: 2,670 tokens
+- **Input**: 1,149 tokens
+- **Output**: 1,464 tokens
+- **Total**: 2,613 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Product Data Points**
+**Examining Product Order Cycles**
 
-My focus is on the sales data for MF0044. I've been charting the "32u" metrics for 2025, noting the most recent entry on September 24th. Comparing this with the bi-weekly interval from earlier in September, and then further back to 2024, reveals some interesting patterns to investigate further.
-
-
-**Predicting Future Orders**
-
-I'm now calculating the next anticipated order date. Based on the 14-day cycle and the last order on September 24th, I estimated October 8th. Today is October 12th, placing the product slightly overdue for a new order. I'm starting to assess potential stockout risks, considering a 30-day horizon.
+I've been analyzing the order frequency for the chickpea-cumin spread. Initial data shows a consistent 14-day interval in 2025, with two recent orders. Further investigation is needed to compare against the 2024 orders to get a full picture of the ordering trend.
 
 
-**Calculating Stock Risk**
+**Evaluating Replenishment Imminence**
 
-I'm now determining if there's a stockout risk, given the 30-day window. With the last order 18 days ago, against a 14-day cycle, an order is overdue. The frequency pattern is bi-monthly, and the quantity is typically 32 units, with no seasonality or trend changes.
-
-
-**Finalizing Stockout Assessment**
-
-I've reviewed the reasoning and confirmed the stockout risk. The 18 days since the last order exceed the typical 14-day cycle, indicating an overdue order. Quantities remain stable at 32 units, reinforcing the high confidence in this assessment. Therefore, a new order is definitely warranted.
+I've examined the 2024 order history for the chickpea spread, identifying a wide range of intervals, from 2 to 14 days. The predicted order date, based on the recent 14-day cycle, was October 8th. As today's date is October 12th, the order is likely imminent or slightly delayed.
 
 
-**Finalizing Order Recommendation**
+**Determining Order Quantity**
 
-I've synthesized the recent data to make a final call. The 14-day cycle is rock solid. Since it's October 12th, and the last order was September 24th, a new order is overdue. The quantity remains consistently at 32 units, so I confidently recommend another order of 32 units. The stockout risk is confirmed.
+I've confirmed the consistent 32u baseline. Historical data confirms no significant seasonal impact. My confidence in the recommended order quantity of 32 units is high, given the regular 14-day cycle and stable demand.
+
+
+**Assessing Stockout Risk**
+
+My analysis confirms the predicted order date of October 8th has passed, which is October 12th. Given this, the risk of stockout is confirmed. Furthermore, I am recommending an order of 32 units, based on historical patterns and recent ordering behavior, where the median appears to be every 14 days.
 
 
 
@@ -250,56 +245,120 @@ I've synthesized the recent data to make a final call. The 14-day cycle is rock 
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commandes régulières avec un cycle médian de 14 jours, avec un pic saisonnier identifié début septembre.
-- **Cycle médian (jours)**: 14
+- **Pattern temporel**: Cycle bimensuel à mensuel (14-21 jours)
+- **Cycle médian (jours)**: 21
 - **Dernière commande**: 2025-09-10
-- **Prochaine prédite**: 2025-10-08-01-24-21-28-56-12-08-01-24-21-28-56-11-09-10-2025-10-08-01-24-21-28-56-11-09-10-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-01-10-08-2025-10-01-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-01-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-01-24-21-28-56-11-09-10-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-01-24-21-28-56-11-09-10-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-01-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-01-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08-2025-10-08 
+- **Prochaine prédite**: 2025-10-0112:35:42 (lun.) | 16u
+2024-09-05 07:56:09 (jeu.) | 32u
+2024-08-27 12:23:03 (mar.) | 16u
+2024-08-16 09:58:48 (ven.) | 16u
+2024-06-27 07:43:54 (jeu.) | 16u
+2024-06-13 06:56:18 (jeu.) | 16u
+2024-05-16 08:11:07 (jeu.) | 16u
+2024-05-14 08:23:32 (mar.) | 16u
+2024-04-18 08:58:20 (jeu.) | 16u
+2024-03-14 08:27:15 (jeu.) | 48u
+2024-02-22 13:59:46 (jeu.) | 16u
+2024-02-09 09:02:46 (ven.) | 16u
+
+## DÉCISION 1: Y A-T-IL RISQUE DE RUPTURE ? (horizon 30j)
+
+Raisonne sur:
+- Cycle habituel du client (médiane des intervalles entre commandes)
+- Dernière commande + cycle = prochaine date probable
+- Si ≤30 jours → RISQUE OUI (commande imminente)
+- Si 31-45 jours ET proche du cycle → RISQUE OUI (anticipation B2B nécessaire)
+- Si >45 jours ET cycle régulier → RISQUE NON
+- EXCEPTION: Produits sporadiques (>60j entre commandes) → vérifier si commande dans les 90 derniers jours
+
+## DÉCISION 2: QUELLE QUANTITÉ ? (si risque = oui)
+
+Principes:
+- Prédire UNE commande (la prochaine), pas un cumul
+- Privilégier les quantités récentes (plus de poids)
+- Médiane robuste aux outliers
+- Si pattern sur pls commandes évident à même date en N-1 → c'est saisonnier, pas un outlier
+
+Ajustements CRITIQUES (dans l'ordre de priorité):
+1. PETITES QUANTITÉS (1-2u):
+   - Médiane récente TOUJOURS prioritaire
+   - Si toujours 1u → prédire 1u (ignorer N-1)
+   - Si alternance 1-2-1-2 → prédire 1u (valeur basse)
+2. SAISONNALITÉ:
+   - N-1 valide SEULEMENT si 3+ commandes avec +50% volume
+   - Si 2025 montre baisse constante → ignorer N-1
+3. GROSSES QUANTITÉS (>100u):
+   - Exclure outliers évidents (>2x médiane)
+   - Médiane des 3 dernières non-outliers
+4. CHANGEMENT NET: Si 3 dernières montrent tendance claire → suivre
+5. SAFETY B2B: En cas de doute, arrondir LÉGÈREMENT vers le haut (+10% max)
+
+## OUTPUT JSON:
+
+{
+  "analysis": {
+    "frequency_pattern": "description du cycle",
+    "detected_outliers": [],
+    "seasonality_impact": "none|weak|strong",
+    "trend_direction": "stable|increasing|decreasing",
+    "cycle_days": nombre,
+    "last_order_date": "YYYY-MM-DD",
+    "predicted_next_date": "YYYY-MM-DD",
+    "days_until_next": nombre
+  },
+  "baseline_quantity": nombre décimal,
+  "recommended_quantity": entier final (0 si pas de risque),
+  "confidence": "low|medium|high",
+  "confidence_phase1": "low|medium|high",
+  "confidence_phase2": "low|medium|high" (si quantity > 0),
+  "reasoning": "explication concise"
+} → 2025-10-01-01 is slightly past, expecting order now or soonest possible date after 2025-10-12" , 10-01-01 is invalid format, corrected to 2025-10-01: "2025-10-01", "days_until_next": 0 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 48u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La dernière commande de 32u (le double du volume habituel) a eu lieu il y a 32 jours. Compte tenu du cycle médian de 14 jours, ce stock de 32u aurait dû durer environ 28 jours (épuisement estimé vers le 8 octobre). Le risque de rupture est donc immédiat à la date du 12 octobre. Je préconise une commande standard de 16u pour revenir au cycle de fond.
+La dernière commande remonte au 10 septembre, soit 32 jours auparavant. Le cycle habituel moyen variant entre 14 et 21 jours, une rupture de stock est probable ou imminente. La demande de base stable est de 16u (médiane historique stable en 2024 et 2025).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 973 tokens
-- **Output**: 6,569 tokens
-- **Total**: 7,542 tokens
+- **Input**: 1,169 tokens
+- **Output**: 3,117 tokens
+- **Total**: 4,286 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Recent Data Points**
+**Tracking Product Orders**
 
-I've been meticulously analyzing the sales data for MF Delikatess Mayonnaise. The most recent figures show a clear increase in units sold in September compared to August. I need to investigate the factors behind this growth. What external variables might have influenced the September surge?
-
-
-**Pinpointing Sales Intervals**
-
-I'm now examining the intervals between sales for MF Delikatess Mayonnaise, focusing on the timing of orders. Calculating the intervals between sales dates reveals a variable pattern, and suggests some orders happen in short intervals. I need to determine if seasonality or other factors affect the ordering frequency.
+I'm currently focused on the order history for the MF Delikatess Mayonnaise, specifically the 250ml DE variant. My analysis indicates a consistent demand, with recent orders spaced roughly a week apart early in August, then followed by a longer gap. I'm keen on understanding what influenced the difference.
 
 
-**Evaluating Order Frequency**
+**Predicting Order Imminence**
 
-I've calculated the median interval between orders for MF Delikatess Mayonnaise, finding it to be roughly 14 days. Considering the 32-day gap since the last order on September 10th, I'm assessing the risk of a stockout. My analysis reveals the product replenishment cycle seems to have been disrupted.
-
-
-**Calculating Supply Risk**
-
-I am now assessing the potential for a stockout of MF Delikatess Mayonnaise. The 32-day gap since the last order on September 10th raises concerns. While a 32-unit order occurred in September, the history indicates a median order frequency of approximately 14 days, with some fluctuation. The 16 unit pattern is the most frequent.
+I've just crunched the numbers, and the 32-day gap since the last order of the MF Delikatess Mayonnaise 250ml DE variant is significant. Based on a 21-day average cycle, it appears a new order is overdue. Considering historical cycles and the potential for a stock rupture, the current timing warrants immediate attention.
 
 
-**Predicting Next Order Details**
+**Assessing Order Quantities**
 
-Considering the 32-day gap since the last order of MF Delikatess Mayonnaise on September 10th and the median order cycle of 14 days, I estimate that an order is already overdue. The most frequent order size is 16 units, but the last order was for 32. Based on the 32-unit order last month, it is still possible demand is above baseline.
+I've just finished the deep dive into order sizes for the MF Delikatess Mayonnaise, 250ml DE variant. The core appears to be 16 units, but a 32-unit order has surfaced recently.  Given the irregular cadence and the importance of the median, I'm leaning toward recommending a 16-unit replenishment to ensure safety.
 
 
-**Assessing Imminent Replenishment**
+**Forecasting Replenishment Needs**
 
-My assessment indicates an order for MF Delikatess Mayonnaise is overdue, with 32 days since the last order. Based on past behavior and a 32-unit order in September, a 16-unit order appears safe. The fact that the stock from the last order is likely used up now confirms the urgent need.
+I've just refined the replenishment forecast for the MF Delikatess Mayonnaise, 250ml DE variant. The 16-unit baseline seems most appropriate, considering the consistent demand and recent patterns.  The analysis confirms that the predicted order date, as of today, is slightly overdue, further reinforcing the need for immediate action.
+
+
+**Determining Order Action**
+
+I'm now determining the appropriate action, based on all analyzed data. The last order was over a month ago. Considering all historical data, the replenishment is overdue, pointing to an imminent need, and I'm leaning toward a 16-unit order given the consistent baseline and median quantities.
+
+
+**Synthesizing Recommendations**
+
+I'm now coalescing the core findings. Considering the overdue status, the consistent 16-unit baseline, and the low risk tolerance, I'm strongly leaning towards an immediate 16-unit replenishment for the MF Delikatess Mayonnaise, 250ml DE. I will recheck the N-1 data for more information.
 
 
 
@@ -418,4 +477,4 @@ My assessment indicates an order for MF Delikatess Mayonnaise is overdue, with 3
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:17:13.757Z*
+*Rapport généré automatiquement le 2025-12-19T14:44:35.036Z*

@@ -7,7 +7,7 @@
   "daysBeforePrediction": 1,
   "metrics": {
     "tp": 0,
-    "fp": 40,
+    "fp": 42,
     "fn": 0,
     "precision": 0,
     "recall": 0,
@@ -22,9 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 253,
-    "promptTokens": 165461,
-    "completionTokens": 557349,
-    "totalTokens": 722810
+    "calls": 251,
+    "promptTokens": 213396,
+    "completionTokens": 594139,
+    "totalTokens": 807535
   }
 }

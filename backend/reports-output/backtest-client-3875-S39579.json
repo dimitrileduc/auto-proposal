@@ -12,10 +12,10 @@
     "precision": 0.25,
     "recall": 1,
     "f1Score": 0.4,
-    "mae": 112,
-    "wmape": 58.333333333333336,
-    "mape": 58.333333333333336,
-    "bias": -58.333333333333336
+    "mae": 80,
+    "wmape": 41.66666666666667,
+    "mape": 41.66666666666667,
+    "bias": -41.66666666666667
   },
   "distribution": {
     "exactMatch": 0,
@@ -23,8 +23,8 @@
   },
   "llmUsage": {
     "calls": 4,
-    "promptTokens": 3609,
-    "completionTokens": 8067,
-    "totalTokens": 11676
+    "promptTokens": 4393,
+    "completionTokens": 12798,
+    "totalTokens": 17191
   }
 }

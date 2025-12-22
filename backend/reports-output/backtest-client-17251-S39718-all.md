@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 13
-- **Tokens**: 10,866 input + 24,745 output = 35,611 total
+- **Tokens**: 13,414 input + 24,947 output = 38,361 total
 
 
 ---
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 12.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 9.6% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 12.5% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 9.6% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 7 | Égalité parfaite |
-| Partial Match (>0u) | 1 | Avec erreur |
+| **MAE** | 24.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 19.2% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 18.8% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 19.2% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 6 | Égalité parfaite |
+| Partial Match (>0u) | 2 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,7 +147,7 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR | 288 | 192 | 96.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF01012] CARREFOUR VOL AU VENT 400 GR | 192 | 192 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8 | 108 | 108 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [PF3339] CARRE MAYONNAISE ANCIENNE 500ML | 96 | 96 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
@@ -161,19 +161,19 @@
 
 
 <details>
-<summary><strong>1. [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR</strong> - LLM: 192u vs Médiane: 192u (Réel: 192u)</summary>
+<summary><strong>1. [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR</strong> - LLM: 288u vs Médiane: 192u (Réel: 192u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 192u
-- 📊 **Baseline calculée**: 211.2u
+- 🤖 **Quantité recommandée (finale)**: 288u
+- 📊 **Baseline calculée**: 288u
 - 📊 **Médiane historique**: 192u
 - ✅ **Réel commandé**: 192u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 96u (50.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 192u (risque détecté)
+- **Quantité décidée**: 288u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: high
@@ -181,66 +181,46 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande hebdomadaire, cyclique le mardi, avec une commande de réajustement supplémentaire constatée le jeudi.
+- **Pattern temporel**: Cycle hebdomadaire majoritairement le mardi avec des commandes de réajustement le jeudi
 - **Cycle médian (jours)**: 7
 - **Dernière commande**: 2025-10-09
-- **Prochaine prédite**: 2025-10-16 (dans 3j)
-- **Dans horizon 30j ?**: ✅ OUI
+- **Prochaine prédite**: 2025-10-16 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: strong
 - **Tendance**: increasing
-- **Analyse jour cycle**: Le client commande habituellement le mardi, mais la dernière commande a eu lieu un jeudi (09/10), suggérant une accélération du besoin.
-- **Outliers détectés**: 384u, 480u
+- **Analyse jour cycle**: N/A
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-On observe une augmentation significative des volumes en octobre (passage de 96u à des pics à 288u/384u), ce qui correspond à la saisonnalité habituelle des produits traiteurs de fin d'année. Bien que le cycle médian soit de 7 jours, le rapprochement des deux dernières commandes (2 jours d'écart) confirme une tension sur les stocks. La quantité de 192u est recommandée car elle correspond à la médiane robuste des commandes récentes et préserve le multiple logistique habituel.
+Le produit présente une accélération nette du volume à l'approche de la saison automnale (saisonnalité N-1 confirmée). Les deux dernières commandes (192u et 288u) montrent une montée en puissance par rapport à septembre (96u). La médiane des trois dernières commandes (288, 192, 384) s'établit à 288u, ce qui reflète la demande actuelle sans sur-interpréter les pics exceptionnels de 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,042 tokens
-- **Output**: 3,293 tokens
-- **Total**: 4,335 tokens
+- **Input**: 1,238 tokens
+- **Output**: 1,653 tokens
+- **Total**: 2,891 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Product Volume Trends**
+**Examining Recent Trends**
 
-I'm currently tracking the sales volume for the CARREFOUR VOL AU VENT product. Observing the data, the volume spiked at 384 units on September 30th. Before and after this, the numbers are lower, with 288 units on October 9th. There's a clear fluctuation here, and further analysis is needed to identify the causes of these variations.
-
-
-**Predicting Stockout Risk**
-
-I've examined the product's recent sales history and calculated a 7-day median interval between orders. Based on the last order date of October 9th and the median interval, I predict the next order around October 16th. Since today is October 13th, with only 3 days until the predicted order, I've flagged a stockout risk. I've also noted a median of 192 units based on recent quantities.
+I'm currently focused on the sales data for the "CARREFOUR VOL AU VENT BOCAL 800 GR" product. It appears there's been a noticeable fluctuation in units sold recently. The intervals between sales data points are also varying, which adds another layer of complexity to the analysis. I'm keen to understand the underlying drivers of these changes.
 
 
-**Assessing Order Quantity Recommendations**
+**Projecting Future Demand**
 
-Based on recent sales, including 288 units and a high of 384, I've revised my recommendation. Considering the recent trend and upcoming seasonality for "Vol au vent," I'm now suggesting an order of either 192 or 288 units to mitigate the stockout risk. I'll re-evaluate the N-1 data for further refinement.
-
-
-**Finalizing Order Quantity Decision**
-
-I've re-evaluated the order quantity, considering all aspects. The recent trend shows increasing volume. Looking at weekly volumes, the pattern is clearly upward. While the median is 192, and seems to be a solid baseline quantity, the most recent order was 288. Given this and the anticipated seasonality, I recommend ordering 192 units to stay conservative, or 288 for a slight increase in anticipation of higher demand.
+The analysis continues, with a focus on predicting future sales. Based on the data, the next predicted sale date is October 16th. A comparison with the previous year’s data suggests that current sales are higher. The trend appears to be upward, especially since late September, although there is the presence of an outlier. The risk of product rupture is present.
 
 
-**Refining Order Recommendations**
+**Evaluating Historical Data**
 
-I'm now zeroing in on the ideal order quantity. Reviewing sales, especially the orders made in the past week, I see orders for 192 and 288 units, totaling 480 units. Considering a potential seasonality increase and the customer's ordering frequency, I maintain 192 as a baseline, but acknowledge the possibility of a greater need for more volume.
-
-
-**Summarizing Recent Activity**
-
-I'm now zeroing in on the ideal order quantity. Based on the past week, with orders for 192 and 288 units, totaling 480, I see a clear seasonal surge. The pattern clearly indicates an increase in weekly sales. I'm sticking to 192 as the baseline, recognizing the need to cover potential increased demand.
+My current focus is on analyzing the sales history for "CARREFOUR VOL AU VENT BOCAL 800 GR." The product shows an increasing demand since late September. Comparing 2024 and 2025 data, a distinct weekly cycle emerges, with Tuesday as the primary ordering day and Thursday as an adjustment day. Therefore, a higher baseline is necessary.
 
 
-**Evaluating Recent Order Patterns**
+**Refining Prediction Accuracy**
 
-I'm now analyzing the order frequency, especially the back-to-back orders on October 7th and 9th. The pattern highlights the need for quick stocking. There is an unmistakable surge in demand. Based on the data, the baseline remains at 192 units. However, I am now considering incorporating 288 for future needs.
-
-
-**Confirming Order Recommendation**
-
-I'm now revisiting the order recommendation. The recent surge, with 480 units ordered in the past week (192 on Oct 7, 288 on Oct 9), necessitates a closer look. I see 192 as the baseline, but the actual need seems higher, prompting further analysis to refine the quantity.
+I'm now zeroing in on the "CARREFOUR VOL AU VENT BOCAL 800 GR" product. The analysis of sales intervals reveals a consistent 7-day cycle, with the most recent order on October 9th. My projection for the next order is October 16th. A baseline quantity of 288 units seems appropriate, considering the seasonal boost.
 
 
 
@@ -271,52 +251,46 @@ I'm now revisiting the order recommendation. The recent surge, with 480 units or
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle hebdomadaire marqué le mardi
+- **Pattern temporel**: Cycle hebdomadaire régulier le mardi, avec accélération ponctuelle le jeudi
 - **Cycle médian (jours)**: 7
 - **Dernière commande**: 2025-10-09
-- **Prochaine prédite**: 2025-10-14 
+- **Prochaine prédite**: 2025-10-16_or_2025-10-14SincetodayisMondaythe13th_nextorderlikelytomorroworThursday_riskdetectedwithin7days_defaultingto7daycycleforcalculation_predicted_next_date_is_2025-10-16_last_order_plus_7_is_wrong_given_Tuesday_pattern_let_us_use_2025-10-14_as_predicted_date_based_on_tuesday_habit_and_current_date_of_2025-10-13_days_until_next_is_1_2025-10-14_is_the_logical_next_date_given_the_Tuesday_dominance_in_history_though_last_was_Thursday_the_gap_remains_short_cycle_days_7_last_order_date_2025-10-09_predicted_next_date_2025-10-14_days_until_next_1_as_today_is_Oct_13th_the_risk_is_imminent 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 288u, 96u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le client présente un cycle de commande hebdomadaire très régulier, principalement le mardi. Bien qu'une commande ponctuelle ait eu lieu le jeudi 09/10, la structure historique (N et N-1) suggère qu'une nouvelle commande est imminente pour demain (mardi 14/10). La quantité de 192 unités est la valeur la plus constante dans l'historique récent et passé.
+Le cycle de commande est très stable sur une base hebdomadaire (médiane de 7 jours), se produisant principalement le mardi. Une commande supplémentaire a été effectuée le jeudi 09/10, ce qui réduit le délai pour la prochaine commande prévue idéalement le mardi 14/10 ou jeudi 16/10. Le volume est constant à 192u (médiane identique sur l'historique récent et N-1 à la même période). Pas d'impact saisonnier significatif détecté en octobre par rapport à 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,042 tokens
-- **Output**: 1,373 tokens
-- **Total**: 2,415 tokens
+- **Input**: 1,238 tokens
+- **Output**: 1,558 tokens
+- **Total**: 2,796 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Recent Sales Data**
+**Calculating Recent Sales Trends**
 
-I'm currently looking at the sales data for the "CARREFOUR VOL AU VENT 400 GR" product. The most recent figures show 192 units sold on October 9th and 96 units on October 7th. I need to analyze this further to understand the sales trends over the past few months.
-
-
-**Calculating Expected Orders**
-
-\n\n
-
-I'm now calculating the projected order date and volume for the "CARREFOUR VOL AU VENT 400 GR" product. Considering the historical data, especially the frequent Tuesday orders and the recent peak, I'm leaning toward a date of either October 14th or 16th. The median recent volume is 192 units, which is also the average.
+I'm currently analyzing the recent sales data for the CARREFOUR VOL AU VENT product. My focus is on the unit sales figures over the past few weeks. I've noted a fluctuating pattern. The past month shows several peaks, including sales of 288 units on September 30th. I'm looking at potential factors driving these changes.
 
 
-**Confirming Order Details**
+**Projecting Future Demand**
 
-\n\n
-
-I've finalized the order prediction for the "CARREFOUR VOL AU VENT 400 GR" product. Considering the Tuesday pattern, I anticipate an order for 192 units on October 14th – that's tomorrow! The historical data, including last year's figures, supports this with high confidence. The analysis highlights a stable trend.
+The sales data for the CARREFOUR VOL AU VENT product is under scrutiny. I've calculated a 7-day median cycle. Based on this, I anticipate the next order within the next one to four days. My analysis shows a potential risk, warranting further investigation into the 288-unit peak and the 96-unit trough. I am correlating this to the same period in the previous year.
 
 
-**Forecasting Next Order Details**
+**Confirming Sales Cycle & Quantity**
 
-\n\n
+I've refined the analysis for the CARREFOUR VOL AU VENT. My focus is now on confirming the stable, weekly sales cycle, typically occurring on Tuesdays, with a recent Thursday occurrence. The median quantity is holding steady at 192 units. There are no significant outliers or seasonal effects in October. I am confident in the pattern's reliability.
 
-My current thinking focuses on the "CARREFOUR VOL AU VENT 400 GR" order. I am confident we'll see an order for 192 units tomorrow, October 14th, in line with the usual Tuesday pattern. The average and median volumes align at 192 units. The data consistently points toward this quantity.
+
+**Assessing Ordering Cadence**
+
+I am now focusing on the product's ordering intervals. Analyzing the recent sales history of the CARREFOUR VOL AU VENT 400 GR product, I've confirmed a reliable 7-day sales cycle. The median quantity is holding at 192 units. The last order was on the 9th, a Thursday. Based on this, I anticipate the next order to fall between the 13th and the 16th.
 
 
 
@@ -347,7 +321,7 @@ My current thinking focuses on the "CARREFOUR VOL AU VENT 400 GR" order. I am co
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Hebdomadaire le mardi
+- **Pattern temporel**: Commande hebdomadaire régulière le mardi
 - **Cycle médian (jours)**: 7
 - **Dernière commande**: 2025-10-07
 - **Prochaine prédite**: 2025-10-14 
@@ -358,40 +332,30 @@ My current thinking focuses on the "CARREFOUR VOL AU VENT 400 GR" order. I am co
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le rythme de commande est extrêmement stable et prévisible : 108 unités commandées chaque mardi (ou toutes les deux semaines en août/début septembre). La dernière commande datant du mardi 07/10, la prochaine est prévue pour le 14/10, soit demain par rapport à la date du jour du 13/10. La quantité de 108u est constante sur tout l'historique récent.
+Le client suit un cycle hebdomadaire extrêmement stable le mardi avec une quantité constante de 108 unités (conforme à l'historique récent et N-1). La prochaine commande est prévue demain (2025-10-14).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,048 tokens
-- **Output**: 1,679 tokens
-- **Total**: 2,727 tokens
+- **Input**: 1,244 tokens
+- **Output**: 1,247 tokens
+- **Total**: 2,491 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Carbonnades Sales**
+**Tracking Product Sales Data**
 
-I'm currently tracking the CARREFOUR CARBONNADES [PF3225] sales data, focusing on the past few weeks. The units sold appear consistent, with 108 units recorded on September 9th, 23rd, and 30th, all Tuesdays. The most recent data from October 7th also shows 108 units sold. I'm noting the consistency for further analysis.
-
-
-**Calculating Future Orders**
-
-I've projected the next CARREFOUR CARBONNADES [PF3225] order date, based on the established 7-day cycle. The most recent order was on October 7th, therefore I predict an order on October 14th, next Tuesday. I'll need to monitor to confirm. Also, I'm examining the N-1 data for the same period.
+I'm currently focused on the sales history for product PF3225, specifically the CARREFOUR CARBONNADES. The data from September and early October of 2025 shows a consistent sales volume of 108 units on Tuesdays. Today's date is Monday the 13th, so I will be looking to see if the recent trends continue tomorrow, or if there is a shift in activity.
 
 
-**Confirming Order Predictions**
+**Projecting Future Inventory Needs**
 
-I've rigorously analyzed the [PF3225] CARREFOUR CARBONNADES data. The analysis shows a clear weekly order cadence, primarily on Tuesdays, with occasional bi-weekly intervals. Based on the past data, the next order is predicted for tomorrow, October 14th. There is one outlier from the year prior, but the frequency is a constant 108u.
-
-
-**Forecasting Quantity and Timing**
-
-I've re-examined the data and confirmed the high confidence in the 108-unit order. Considering it's October 13th, I realize I need to advise *now* to avoid a stockout, as the next order is scheduled for tomorrow. This confirms my prior order frequency analysis.
+Based on the consistent Tuesday sales of 108 units for PF3225, particularly the CARREFOUR CARBONNADES, I've calculated a high probability of another order tomorrow, October 14th. The 7-day cycle observed in recent data strongly suggests this. Furthermore, comparing this data to the same period in 2024 reinforces this projection. Given these points, I am anticipating a stable demand.
 
 
-**Determining Final Recommendations**
+**Calculating Order Recommendations**
 
-The analysis is complete. The [PF3225] CARREFOUR CARBONNADES sales data indicates a highly predictable pattern of 108 units ordered weekly, primarily on Tuesdays. Tomorrow, October 14th, is the predicted order date, so I'm recommending an immediate order of 108 units to prevent stockouts, confirming my initial projections.
+I've just finished the analysis, and am confident in the projections. Based on the consistent 108-unit Tuesday orders for PF3225, with no detected outliers or significant seasonality impacts, I'm recommending an order of 108 units for tomorrow. The confidence level is high due to the perfect stability of the demand and the regularity of the weekly cycle. The model's baseline matches historical volumes.
 
 
 
@@ -422,41 +386,45 @@ The analysis is complete. The [PF3225] CARREFOUR CARBONNADES sales data indicate
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande hebdomadaire ou bimensuelle le mardi
+- **Pattern temporel**: Cycle hebdomadaire à bimensuel le mardi
 - **Cycle médian (jours)**: 7
 - **Dernière commande**: 2025-10-07
-- **Prochaine prédite**: 2025-10-14 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-10-14 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Commandes systématiques le mardi, date prévue demain
 - **Outliers détectés**: 192u
 
 **🧠 Raisonnement LLM:**
-Le rythme de commande est très précis : le client commande systématiquement le mardi. Les quatre dernières commandes sont identiques (96u), ce qui définit une demande de fond stable. La prochaine commande est prévue pour demain le 14 octobre, d'où un risque immédiat.
+Le cycle de commande est extrêmement régulier sur le jour de la semaine (mardi). La médiane des dernières commandes est de 96 unités, avec une stabilité parfaite sur les 4 dernières occurrences. La date de prédiction (demain le 14/10) justifie une commande immédiate de la quantité habituelle.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 706 tokens
-- **Output**: 1,082 tokens
-- **Total**: 1,788 tokens
+- **Input**: 902 tokens
+- **Output**: 1,192 tokens
+- **Total**: 2,094 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Considering the Data Points**
+**Reviewing Recent Data Points**
 
-I'm currently focused on the sales data for the "CARRE MAYONNAISE ANCIENNE 500ML" product. Looking at the unit sales, I see consistent figures of 96 units in September and early October. I need to extrapolate these recent trends to inform future projections and assess potential changes.
-
-
-**Forecasting Future Needs**
-
-I'm now assessing potential stockout risks, given the predicted order timing. The analysis strongly suggests a weekly or bi-weekly Tuesday order pattern, pointing to a high probability of an order tomorrow. This presents a potential stockout risk within the next 30 days due to this upcoming demand. Therefore, I will recommend that the client order 96 units, the baseline quantity.
+My focus is on the sales data for PF3339 CARRE MAYONNAISE ANCIENNE 500ML. I've noted the recent sales figures. On October 7th, 96 units were sold. Before that, on September 30th, another 96 units were sold. I am reviewing the data to identify any trends or patterns.
 
 
-**Finalizing the Recommendation**
+**Calculating Inventory Projections**
 
-I've validated the data, confirming the Tuesday order pattern and stable 96-unit demand. The model's outputs are clean JSON, no comments, correct enums, and properly formatted numbers. The client's next order is expected tomorrow, reinforcing the need for the recommended 96 units to mitigate potential stockouts. I'm now certain of my analysis.
+\n\n
+
+I've analyzed the sales frequency and volume for PF3339. The pattern appears consistently every 7 days, or every 14, with sales of 96 units, with one outlier of 192 units. The next expected order date is tomorrow, 2025-10-14. Stockout risk appears present based on a lead time of one day. I am now estimating the quantity needed for the next order.
+
+
+**Formulating the Recommendation**
+
+\n\n
+
+I've now synthesized my analysis. Based on the consistent Tuesday ordering pattern and the stable 96-unit demand, I'm highly confident. The model supports recommending an order of 96 units for PF3339, which should arrive tomorrow, mitigating any stockout risk. My confidence in this recommendation is high due to the predictable nature of the sales.
 
 
 
@@ -487,41 +455,41 @@ I've validated the data, confirming the Tuesday order pattern and stable 96-unit
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande hebdomadaire tous les mardis
+- **Pattern temporel**: Commande hebdomadaire régulière tous les mardis
 - **Cycle médian (jours)**: 7
 - **Dernière commande**: 2025-10-07
-- **Prochaine prédite**: 2025-10-14 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-10-14 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Le client commande systématiquement le mardi matin/après-midi.
 - **Outliers détectés**: 96u
 
 **🧠 Raisonnement LLM:**
-Le cycle observé est extrêmement régulier avec une commande chaque mardi. La quantité s'est stabilisée à 192 unités sur les quatre dernières occurrences (soit le double du premier point de données à 96). La prochaine commande est statistiquement attendue pour demain, le 14/10/2025.
+Le produit présente une régularité exceptionnelle avec un cycle hebdomadaire de 7 jours. La dernière commande datant du 07/10/2025, la prochaine commande attendue est pour demain le 14/10/2025. Le volume s'est stabilisé à 192 unités sur les 4 dernières commandes, rendant la prédiction très fiable.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 706 tokens
-- **Output**: 1,171 tokens
-- **Total**: 1,877 tokens
+- **Input**: 902 tokens
+- **Output**: 1,265 tokens
+- **Total**: 2,167 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Product History**
+**Examining the Data Points**
 
-I'm currently focused on the sales history for the SIMPL CARRE VOL AU VENT product. So far, I've noted consistent sales of 192 units on several Tuesdays throughout September and October. I'm now cross-referencing this with market trends to predict future demand.
-
-
-**Predicting Next Order**
-
-I've analyzed the sales data for the SIMPL CARRE VOL AU VENT, product code PF3343. My calculations indicate a high probability of another order tomorrow, October 14th, based on the consistent Tuesday sales pattern. I've also identified a 7-day median cycle. There's a potential stockout risk in the next 30 days due to the tight order cycle. The recent trend shows a stable demand of 192 units, with an outlier of 96 units on September 2nd.
+I've been meticulously reviewing the sales data for SIMPL CARRE VOL AU VENT. The trend is clear: consistent sales of 192 units on Tuesdays, going back to early September. Now I'm focusing on the product's history to identify potential anomalies or shifts in consumer behavior.
 
 
-**Reassessing Order Timing**
+**Assessing Sales Predictions**
 
-I've re-examined the data and confirmed the SIMPL CARRE VOL AU VENT product consistently orders 192 units on Tuesdays, with a 7-day cycle. Tomorrow, October 14th, is Tuesday, aligning with my prediction. I've now calculated a high confidence in ordering 192 units.
+The analysis confirms a consistent Tuesday sales pattern. Looking ahead, my calculations predict a next order on October 14th. Given the one-day lead time to that date and the established volume of 192 units, I've assessed this as a low-risk situation.
+
+
+**Finalizing Recommendations Now**
+
+I've just finalized the assessment. The product, SIMPL CARRE VOL AU VENT, has a clear weekly pattern with orders every Tuesday, the next order is tomorrow. My quantity recommendation remains 192 units, with high confidence in the prediction due to the stable trend.
 
 
 
@@ -552,46 +520,71 @@ I've re-examined the data and confirmed the SIMPL CARRE VOL AU VENT product cons
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimensuel régulier (14 jours) le mardi
+- **Pattern temporel**: Cycle bimensuel (14 jours) très régulier, principalement le mardi
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-09-30
-- **Prochaine prédite**: 2025-10-14 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-10-14 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Le client commande systématiquement le mardi ; la prochaine commande est prévue demain
 - **Outliers détectés**: 216u
 
 **🧠 Raisonnement LLM:**
-Le client suit un cycle de réapprovisionnement très précis de 14 jours (les mardis). La dernière commande du 30/09 (13 jours auparavant) suggère une prochaine échéance au 14/10. Compte tenu de la régularité du volume de 108u sur 4 des 5 dernières commandes, cette quantité est retenue comme le standard habituel malgré le pic à 216u de la semaine précédente.
+Le produit présente un cycle de commande bimensuel stable. La quantité récurrente est de 108 unités. La dernière commande du 30/09 (216u) est considérée comme un outlier (2x la médiane) ayant eu lieu seulement 7 jours après la précédente, probablement pour anticiper un besoin ou un groupage. En suivant la méthode du cycle médian (14j), la prochaine commande est prévue pour le 14/10/2025. Un retour à la quantité de base de 108 unités est recommandé.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 711 tokens
-- **Output**: 1,400 tokens
-- **Total**: 2,111 tokens
+- **Input**: 907 tokens
+- **Output**: 3,599 tokens
+- **Total**: 4,506 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Sales History**
+**Reviewing Recent Sales Data**
 
-I'm currently focused on the sales data for the "CARRE BOULETTES TOMATE" product. I've noted a consistent pattern of sales on Tuesdays, and I'm cross-referencing this with the provided dates and quantities. I'm especially interested in the recent spike observed on September 30th.
-
-
-**Calculating Replenishment Risk**
-
-I've just calculated the predicted next order date as October 14th, which is tomorrow. Since the current date is October 13th, and only 13 days have passed since the last order, I'm flagging a risk. The analysis suggests the need for immediate replenishment planning due to the short timeframe and the potential for a stockout if demand remains.
+I'm analyzing the sales history for the CARRE BOULETTES TOMATE product. So far, the data reveals a fluctuating trend. Production numbers show 216 units on September 30th, with prior weeks at 108 units. Further investigation is needed to determine the causes behind the increased sales volume at the end of September.
 
 
-**Evaluating The Recommendation**
+**Predicting Future Orders**
 
-I've just finished the analysis, and I'm confident in the recommendation of 108 units for the upcoming order of "CARRE BOULETTES TOMATE." The data strongly supports a bi-weekly ordering cycle on Tuesdays. The recent spike of 216 units appears to be an outlier. My assessment puts the next order date at tomorrow, October 14th, as predicted.
+I've calculated the median cycle for the CARRE BOULETTES TOMATE product, arriving at 14 days, with the most recent order falling outside that pattern at a 7-day interval. This points to a potential doubling of the order quantity. The outlier detection process flags the 216 units as potentially inflated compared to the standard 108 units. Given the current date, I'm predicting the next order will be tomorrow, presenting a significant risk to the production schedule.
 
 
-**Synthesizing The Findings**
+**Refining Quantity Calculations**
 
-I've just finalized the analysis of the "CARRE BOULETTES TOMATE" product. I've re-evaluated and confirmed a high degree of confidence. The recommended order is 108 units, aligning with the consistent bi-weekly Tuesday pattern. The previous 216 unit order on September 30th is likely an outlier. I've documented all findings in a parseable JSON format. The risk is high.
+I'm focusing on the potential for a doubled order, considering the 216-unit outlier. The analysis now centers on the median of non-outliers, leading me to 108 units. Given the 7-day interval between the 216-unit order and the previous one, and the predicted date of tomorrow, the final recommendation is to order 108 units.
+
+
+**Determining Final Recommendations**
+
+The analysis is now converging on the final order quantity. I've re-evaluated the impact of the outlier, using the specified rule to exclude it and determine the median of the remaining values, which confirms a base of 108 units. Given the bi-weekly cycle and the current date of October 13th, the next order is predicted for tomorrow, October 14th, at a quantity of 108 units. I'm ready to make the final recommendation.
+
+
+**Formulating the Recommendation**
+
+I'm now fully confident in the recommendation. Analyzing the bi-weekly cycle, the identified outlier, and the upcoming order date of tomorrow, I've confirmed a baseline order of 108 units. Risk is present due to the tight deadline. Therefore, I will formally recommend an order of 108 units for the CARRE BOULETTES TOMATE product.
+
+
+**Confirming the Forecast**
+
+I'm now fully confident in the recommended order of 108 units. The bi-weekly cycle, confirmed by historical data, points to an order due tomorrow, with the 216-unit order identified as an outlier, and a standard quantity of 108 units. The final reasoning and JSON format have been validated.
+
+
+**Confirming Final Checks**
+
+I'm performing a final review of the predicted order, double-checking the reasoning. With the upcoming order due tomorrow, the standard quantity of 108 units is recommended. The bi-weekly cycle is confirmed, and the outlier has been accounted for. The risk is high; I'm satisfied.
+
+
+**Concluding Order Prediction**
+
+I've re-evaluated the impact of the 216-unit order, considering it might cover a longer period. However, the imminent order date (tomorrow) and the rule regarding risk require that I stick to the 108 units as a cautious approach. I'm now certain about my final recommendation.
+
+
+**Synthesizing the Reasoning**
+
+I've re-examined the 216-unit order, considering its impact on the cycle. I'm prioritizing the rule to exclude the outlier and calculate a baseline. Given the 14-day cycle and the impending order tomorrow, I'm ready to follow the instructions and finalize the 108-unit recommendation, as the data dictates.
 
 
 
@@ -622,56 +615,57 @@ I've just finalized the analysis of the "CARRE BOULETTES TOMATE" product. I've r
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande bimensuelle (14 jours) ou hebdomadaire
+- **Pattern temporel**: Cycle bimensuel stable (14 jours), principalement commandé le mardi.
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-09-23
-- **Prochaine prédite**: 2025-10-07 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-10-14 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Les commandes surviennent majoritairement le mardi (mar.). La date actuelle est un lundi, la commande est attendue demain.
 - **Outliers détectés**: 588u
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande récent montre une régularité de 14 jours (contre 7 à 9 jours en 2024). La dernière commande datant du 23 septembre, la suivante était statistiquement attendue autour du 7 octobre. Avec une date actuelle au 13 octobre, le client est techniquement hors cycle et risque une rupture imminente. La quantité unitaire de 98u est extrêmement constante à travers tout l'historique (hors pics de stockage annuels de 588u).
+Le produit présente une régularité exceptionnelle de 98 unités par commande, tant en 2025 qu'en N-1. L'intervalle prédominant est de 14 jours. La dernière commande datant d'il y a 20 jours (23/09), le cycle de 14 jours est dépassé, rendant une commande imminente (probablement le mardi 14/10 conformément aux habitudes du client). Le pic de juillet 2025 (588u) est traité comme un outlier car non reproduit en N-1.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,033 tokens
-- **Output**: 2,202 tokens
-- **Total**: 3,235 tokens
+- **Input**: 1,229 tokens
+- **Output**: 2,432 tokens
+- **Total**: 3,661 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing the Inventory**
+**Revising Time Intervals**
 
-I'm currently reviewing the inventory data for the [PF1952] product. Recent history shows a stock level of 98 units held since September, prior to that, since August. Previously, in late July, the quantity was 588 units, reflecting a combined increase on a single day.
-
-
-**Predicting Future Orders**
-
-I'm projecting future order dates for [PF1952] CARRE VIN CIBOU LET PET 450. Based on a consistent 14-day cycle, the next order is predicted for October 7th. Interestingly, the previous year displayed a shorter, weekly ordering pattern during August and September, which seems to have changed.
+I'm recalculating the intervals between the updates for product PF1952. Initial observations suggest a 14-day cycle from 2025-09-09 to 2025-09-23. I'm reviewing the older data points to identify any patterns or deviations from this interval.
 
 
-**Calculating the Delays**
+**Refining Cycle Predictions**
 
-I've calculated the delay: the customer is already late by six days based on the projected October 7th order. Analyzing the historical cycles, particularly those from last year, indicates a high risk. This suggests a potential issue, such as a paused order or a change in demand. The base quantity of 98 units remains consistent.
-
-
-**Evaluating the Delays**
-
-I'm now deep-diving into the discrepancies. The October 7th prediction is confirmed, meaning the customer is late. The 14-day cycle is evident in 2025, but the 2024 data reveals a more rapid, weekly pattern. I've noted the consistent quantity of 98 units, and the rare 588 spikes, likely seasonal. My analysis points towards a standard replenishment of 98, given the current overdue status.
+The analysis of PF1952 has been expanded to encompass the entire period from August 2024 through September 2025. It reveals that while a 14-day cycle is the norm, the frequency has exhibited more fluctuations in the past. There seems to be a seasonality aspect. The median cycle length remains at 14 days, and the predicted next date for an order was October 7th; there's a 20-day gap to the present, October 13th.
 
 
-**Revisiting the Calendar**
+**Predicting Order Imminence**
 
-My focus has shifted to the 'days_until_next' metric. The analysis now centers on how far the current date is from the predicted order date, which is -6 days. The last order was on September 23rd, the next order was due on October 7th, and today is October 13th, the customer is overdue. I'm verifying the 14-day cycle, as well as the baseline quantity.
+I'm focusing on the next expected order for PF1952, considering the 14-day cycle and the current date, October 13th. The predicted date of October 7th has passed, which signals an imminent order. A quantity of 98u is recommended, consistent with the historical data. The cycle is generally bi-weekly, occurring on Tuesdays.
 
 
-**Reassessing the Findings**
+**Assessing Imminent Demand**
 
-I'm now checking the data structure, ensuring correct formatting and validity of the JSON output. I've re-evaluated the `days_until_next` metric; it will reflect the delay, being -6 days. The 14-day cycle remains the central factor. Re-supply of 98 units is recommended, with a high confidence.
+I've examined the recent ordering history of PF1952. The 14-day cycle is confirmed, and the predicted order date of October 7th has passed. Given today's date, October 13th, the order is overdue. I'm now recommending an order for 98u, as the historical data supports. The order is highly likely tomorrow, Tuesday the 14th.
+
+
+**Revising Date Predictions**
+
+Based on the 14-day cycle, the order was due on October 7th, but it's now October 13th. Therefore, I predict an order on or before October 14th. The quantity recommendation remains 98 units, reflecting the recurring historical demand.
+
+
+**Confirming Imminent Replenishment**
+
+My assessment now confirms that the order for PF1952 is overdue, with the last order on September 23rd, and a typical 14-day cycle. I'm predicting an order tomorrow, October 14th, as a safe estimation, aligning with the pattern of Tuesday orders. The recommended quantity remains 98u.
+
 
 
 
@@ -696,61 +690,61 @@ I'm now checking the data structure, ensuring correct formatting and validity of
 - **Quantité décidée**: 110u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: low
-- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commandes systématiques de 110 unités avec un intervalle très variable (7 à 56 jours).
-- **Cycle médian (jours)**: 32
+- **Pattern temporel**: Commandes sporadiques mais volume constant (multiples de 110u), généralement le mardi
+- **Cycle médian (jours)**: 31
 - **Dernière commande**: 2025-09-23
-- **Prochaine prédite**: 2025-10-25 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-10-21 (dans 8j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Le client commande exclusivement le mardi. La prédiction s'aligne sur le prochain mardi suivant le cycle médian.
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le client commande systématiquement par lots de 110 unités. Bien que l'historique soit court et les intervalles irréguliers, le cycle médian de 32 jours positionne la prochaine commande autour du 25 octobre. À 12 jours de cette échéance (et 20 jours depuis la dernière commande), le seuil de risque de rupture à horizon 30-40 jours est atteint, justifiant le réapprovisionnement d'une unité logistique standard.
+Le produit présente une stabilité parfaite en termes de quantité (110u par commande). Bien que les intervalles varient (7j à 56j), le cycle médian de 31 jours suggère un besoin imminent vers le 21 ou 24 octobre (tous les historiques sont des mardis). Étant donné l'horizon de 30 jours en B2B, une commande de 110 unités est recommandée pour couvrir le prochain cycle.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 678 tokens
-- **Output**: 2,209 tokens
-- **Total**: 2,887 tokens
+- **Input**: 874 tokens
+- **Output**: 2,367 tokens
+- **Total**: 3,241 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Forecasting Demand Parameters**
+**Reviewing Order History**
 
-I'm currently focused on the demand history for PF3341 (CARRE MAYONNAISE BIO 500ML). Initial data suggests orders in September and July of 2025. There are discrepancies in the July data, possibly indicating order splits or duplicates, which I'm investigating further. The goal is to accurately forecast the 2025-10-01 demand.
-
-
-**Evaluating Order Cycles**
-
-I've been analyzing the order intervals for PF3341, particularly focusing on the July and September 2025 orders. The time elapsed between the last order (2025-09-23) and today (2025-10-13) is 20 days. Given the observed cycle, the next order is estimated for mid-November. The "RISQUE OUI" rule is relevant here, given the timing of our order.
+I've been poring over the sales data for [PF3341], specifically the CARRE MAYONNAISE BIO 500ML. I've noted a consistent order size of 110 units on several dates. I'm especially focused on the duplicated order entry on 2025-07-29, which requires further investigation to determine if it was a genuine split order or an error.
 
 
-**Interpreting Risk Parameters**
+**Forecasting Demand Patterns**
 
-I'm now clarifying the "RISQUE OUI" rule. The timeframe for risk assessment appears to be related to the *predicted* next order date. Given the inconsistent order frequency for PF3341, I'm calculating the median cycle. Using a median of approximately 31 days suggests the next order around October 24th, which falls within the 40-day risk window. The next step is interpreting the implications of "RISQUE OUI".
-
-
-**Determining Order Characteristics**
-
-I'm now zeroing in on the specifics of the orders. The quantity consistently appears to be 110 units, suggesting a standard order size. The median cycle length is roughly 32 days, and given the last order date, the next order is estimated around October 25th. This means that, based on my calculations, there is a clear "RISQUE OUI".
+I'm now assessing the frequency of the orders and trying to establish a potential cycle. There's a notable variance in intervals, with one at seven days and another at fifty-six. Given the last order was twenty days ago, I'm examining the risk of a stockout within the next month, considering the customer's consistent 110-unit orders.
 
 
-**Refining Prediction Confidence**
+**Assessing Order Frequency**
 
-I'm now determining the overall confidence in the forecast. Although the quantity is consistent, the order frequency is irregular. The recommended quantity is 110 units, with the next order predicted around October 25th. The confidence in the prediction is low due to the short history, but the proximity to the 40-day risk window boosts the confidence.
+I've calculated the median cycle duration to be roughly 31.5 days. Considering the 20-day interval since the last order and the potential for a repeat of the initial 7-day interval, I'm predicting the next order may arrive between late October and early November. This analysis reinforces the possibility of a stockout within the next month, considering the customer's typical 110-unit orders.
 
 
-**Evaluating Overall Risk**
+**Evaluating Order Anomalies**
 
-I've now finalized the risk assessment based on the predicted order date, which is October 25th, approximately 12 days from now. Given the 32-day cycle and the proximity of the predicted order to the 40-day risk window, I am confident in triggering a "RISQUE OUI". The standard quantity is confirmed, and while the history is short, the consistency in order size bolsters my certainty.
+I'm now zeroing in on the duplicate order on July 29th, which at face value appears to be a data entry error. The timings are nearly identical. That throws a wrench in the cycle analysis. I'm reassessing the frequency calculations with the understanding that the 220 units might have been a single event.
+
+
+**Predicting Order Timeline**
+
+The analysis confirms a variable cycle, but the median interval points to a late-October order. Considering it has been 20 days since the last order, and with the consistent 110-unit volume, I still believe a replenishment order should be expected by the end of this month, around October 24th, or in the next 11 days. I will maintain the recommended quantity of 110 units.
+
+
+**Refining Prediction Accuracy**
+
+I've re-evaluated the order intervals, focusing on the potential impact of the duplicate entry. Accounting for the median cycle duration of ~31 days, and the 20-day interval since the last order, I now predict the next order should arrive around October 24th, or potentially on October 21st, which is 8 days from now. Maintaining the consistent quantity of 110 units is advised, but confidence remains medium due to the limited dataset.
 
 
 
@@ -789,7 +783,7 @@ I've now finalized the risk assessment based on the predicted order date, which 
 - 2024-06-25 12:51:20: 288u
 - 2024-06-25 12:50:51: 384u
 
-**✅ Quantité LLM**: 192u (confidence: high)
+**✅ Quantité LLM**: 288u (confidence: high)
 **📊 Quantité Réelle**: 192u
 
 </details>
@@ -954,7 +948,7 @@ I've now finalized the risk assessment based on the predicted order date, which 
 **📅 Commandes N-1 (même période année dernière):**
 - Aucune commande N-1
 
-**✅ Quantité LLM**: 110u (confidence: low)
+**✅ Quantité LLM**: 110u (confidence: medium)
 **📊 Quantité Réelle**: 110u
 
 </details>
@@ -1012,4 +1006,4 @@ I've now finalized the risk assessment based on the predicted order date, which 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:20:34.521Z*
+*Rapport généré automatiquement le 2025-12-19T14:49:43.701Z*

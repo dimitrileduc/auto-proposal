@@ -6,25 +6,25 @@
   "cutoffDate": "2025-10-08 00:00:00",
   "daysBeforePrediction": 1,
   "metrics": {
-    "tp": 15,
-    "fp": 1,
-    "fn": 0,
-    "precision": 0.9375,
-    "recall": 1,
-    "f1Score": 0.967741935483871,
-    "mae": 0.7333333333333333,
-    "wmape": 42.30769230769231,
-    "mape": 53.333333333333336,
-    "bias": 11.538461538461538
+    "tp": 13,
+    "fp": 0,
+    "fn": 2,
+    "precision": 1,
+    "recall": 0.8666666666666667,
+    "f1Score": 0.9285714285714286,
+    "mae": 1,
+    "wmape": 59.09090909090909,
+    "mape": 73.07692307692308,
+    "bias": 13.636363636363635
   },
   "distribution": {
-    "exactMatch": 4,
-    "partialMatch": 11
+    "exactMatch": 1,
+    "partialMatch": 12
   },
   "llmUsage": {
     "calls": 20,
-    "promptTokens": 16890,
-    "completionTokens": 51481,
-    "totalTokens": 68371
+    "promptTokens": 20810,
+    "completionTokens": 122060,
+    "totalTokens": 142870
   }
 }

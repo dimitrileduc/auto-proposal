@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 48
-- **Tokens**: 31,617 input + 130,989 output = 162,606 total
+- **Tokens**: 41,026 input + 113,555 output = 154,581 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 44.8% | 29 produits prédits, 13 corrects |
-| **Rappel** | 92.9% | 14 produits réels, 13 détectés |
-| **F1-Score** | 60.5% | Score équilibré global |
+| **Précision** | 35.3% | 34 produits prédits, 12 corrects |
+| **Rappel** | 85.7% | 14 produits réels, 12 détectés |
+| **F1-Score** | 50.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 0.38 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 25.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 34.6% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 15.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 8 | Égalité parfaite |
-| Partial Match (>0u) | 5 | Avec erreur |
+| **MAE** | 0.67 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 42.1% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 45.8% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | -10.5% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 4 | Égalité parfaite |
+| Partial Match (>0u) | 8 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -127,7 +127,7 @@
 
 ---
 
-## True Positives (13)
+## True Positives (12)
 
 <details>
 <summary>Qu'est-ce qu'un True Positive ?</summary>
@@ -151,18 +151,17 @@
 | [LV159] LV Tartinade aux Truffes  135g  | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [RISH03] RISH kombucha BIO - gingembre 330ml | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [LV131] LV Tartinade Potiron 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [LV131] LV Tartinade Potiron 190g | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [LV139] LV Tartinade Paprika Chili 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 1 | 2 | 1.0 | 50.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | 1 | 1.0 | 100.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
 | [LV336] LV BIO Tartinade Tomato Basilico 380g | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | 2 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
-### 🤖 Détails des Prédictions LLM (13 produits)
+### 🤖 Détails des Prédictions LLM (12 produits)
 
 
 <details>
@@ -182,56 +181,50 @@
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle irrégulier avec une médiane de 41 jours
+- **Pattern temporel**: Cycle irrégulier oscillant entre 30 et 60 jours
 - **Cycle médian (jours)**: 41
 - **Dernière commande**: 2025-09-15
-- **Prochaine prédite**: 2025-10-26 (dans 21j)
-- **Dans horizon 30j ?**: ✅ OUI
-- **Saisonnalité**: weak
+- **Prochaine prédite**: 2025-10-26 
+- **Dans horizon 30j ?**: ❌ NON
+- **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: Habituellement commandé en début ou milieu de semaine ; la dernière commande était un lundi.
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle médian entre les commandes est d'environ 41 jours. La dernière commande date du 15 septembre, ce qui place la prochaine commande théorique autour du 26 octobre. Comme cet horizon est inférieur à 30 jours (21 jours restants), il existe un risque de rupture imminent. Les quantités sont historiquement stables, oscillant majoritairement entre 2 et 3 unités.
+Le cycle médian entre les commandes est de 41 jours. Avec une dernière commande au 15 septembre, le réapprovisionnement est attendu pour la fin octobre (environ 21 jours à compter d'aujourd'hui), justifiant l'anticipation de commande. Les quantités historiques sont très stables, centrées sur une médiane de 2 unités.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 849 tokens
-- **Output**: 1,503 tokens
-- **Total**: 2,352 tokens
+- **Input**: 1,045 tokens
+- **Output**: 1,485 tokens
+- **Total**: 2,530 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Purchase Patterns**
+**Examining Aubergine Orders**
 
-I'm currently analyzing the purchase history for the LV Tartinade Aubergine. I've noted the recent purchases in 2025, which included two units on September 15th and one unit in July. I'm now comparing these with the prior year's data to establish the purchase intervals and quantity trends, specifically looking at the 2024 purchases.
-
-
-**Projecting Future Demand**
-
-\n\n
-
-I've just finalized the interval calculations and median analysis for the LV Tartinade Aubergine. Based on historical data from 2024 and 2023, the median purchase interval is 41 days. Applying this to the last order on September 15th, I've projected the next purchase around October 26th. The risk assessment indicates a potential event within the next 21 days, so I am flagging a high chance.
+I'm currently focused on the ordering patterns of the LV Tartinade Aubergine. Recent data shows a purchase of 2 units on September 15th, 2025. This follows a previous order of 1 unit about two months prior. Looking back further, I'm noting the earlier sales history, including an order of 3 units in September 2024. I am comparing the data.
 
 
-**Evaluating Stock Levels**
+**Calculating Purchase Cycles**
 
-\n\n
-
-I've just finished the comprehensive analysis for the LV Tartinade Aubergine. My calculations suggest ordering two units to match the predicted demand. Although there's a strong median purchasing interval and confidence in the quantity, I'm taking the seasonal purchase into account as I flag this for the next order. I'm focusing on the low, yet consistent, purchase levels of 2 units. I'm predicting the order should be placed to fulfill demand.
+Now, I'm analyzing the intervals between orders. I've calculated a median cycle of roughly 41 days. Using this, I predict the next order should be around October 26th, 2025. I am factoring in historical data to establish purchase timing patterns.
 
 
-**Determining Recommended Order**
+**Calculating Quantity Needs**
 
-\n\n
+I've completed my analysis. The cycle remains irregular, between 30 and 60 days. The predicted date is approaching on October 26th, but the current date is October 5th, leaving only 21 days until the next potential order. Based on the historical demand, a quantity of 2 units is recommended.
 
-I've just finalized the comprehensive analysis for the LV Tartinade Aubergine. My calculations suggest an order for 2 units, considering the median purchase interval of 41 days. With the next purchase predicted around October 26th, and the risk assessed at 'yes', I'm placing the order. I'm taking the seasonal pattern into consideration. The recommendation is 2 units. The JSON logic has been updated.
+
+**Finalizing Order Recommendation**
+
+I've just finalized the analysis. The product's purchase cycle is irregular, but I've identified a median cycle. The next order is predicted for October 26th, but we're only 21 days from that date. Based on historical data, the recommended quantity remains at 2 units. I'm assigning a medium confidence level.
 
 
 
@@ -257,51 +250,46 @@ I've just finalized the comprehensive analysis for the LV Tartinade Aubergine. M
 - **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
+- **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commandes irrégulières entre 20 et 40 jours
+- **Pattern temporel**: Commande environ tous les 30 jours
 - **Cycle médian (jours)**: 30
 - **Dernière commande**: 2025-09-15
 - **Prochaine prédite**: 2025-10-15 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle médian entre les commandes est de 30 jours. Avec une dernière commande au 15 septembre, la prochaine est prévue pour le 15 octobre soit dans 10 jours. Il existe donc un risque de rupture imminent. Bien que l'historique N-1 affiche des commandes de 2 unités en période de fin d'année, les trois dernières commandes en 2025 sont stabilisées à 1 unité. On privilégie donc ce volume récent tout en sécurisant le stock.
+Le cycle médian entre les commandes récentes est de 30 jours. Avec une dernière commande au 15 septembre, la prochaine occurrence est prévue autour du 15 octobre, soit dans 10 jours (horizon < 30j). Bien que l'historique N-1 montre des commandes de 2u, les trois dernières commandes de 2025 sont systématiquement de 1u. Conformément à la règle des petites quantités, la médiane récente de 1u est priorisée.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 742 tokens
-- **Output**: 1,385 tokens
-- **Total**: 2,127 tokens
+- **Input**: 938 tokens
+- **Output**: 1,187 tokens
+- **Total**: 2,125 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Reviewing Recent Sales Data**
+**Examining Product History**
 
-I'm analyzing the recent sales data for the LV Tartinade aux Truffes. Within the last three months, only two units have been sold, one on September 15th and another on August 7th. This sparse data will be tricky to interpret.
+I'm currently focused on the sales history for LV Tartinade aux Truffes. Right now, I am crunching the numbers from 2025. It looks like sales are sporadic, with a few units sold in September and August. I need to figure out what drove the purchases and see if I can spot any patterns.
 
 
 **Projecting Future Demand**
 
-I've calculated the median interval between recent orders, settling on 30 days. Based on this, and the last order date of September 15th, I predict the next order around October 15th. With today being October 5th, that's just 10 days away, triggering a risk assessment. I'm also considering the historical context, including the October order from last year.
+The model predicts the next order for the truffle spread around October 15th, just ten days away. Quantities in 2025 have consistently been one unit per order, so that’s the recommended baseline. Based on the rules and analysis, I am going to prioritize the most recent data.
 
 
-**Evaluating Product Quantity Baseline**
+**Finalizing Quantity Recommendation**
 
-I'm now assessing the baseline quantity, considering both recent and historical data. While the three most recent orders were consistently for one unit, and the trend direction appears stable, I'm also factoring in the potential for a seasonal uplift, given the historical context and the upcoming Q4. The baseline quantity remains at 1 unit, but I'm cautiously monitoring for changes.
-
-
-**Calculating Recommended Order**
-
-I've determined a predicted order date of October 15th, just 10 days away, and the risk trigger is active. Despite the weak seasonality impact, favoring recent trends, and keeping the baseline quantity to 1 unit seems appropriate. I'm noting the upcoming order date for stock risk.
+I'm now fully confident in the 1-unit recommendation. The recent sales, intervals, and a complete lack of seasonal spikes back it up. I've re-examined the rules, specifically "PETITES QUANTITÉS", and determined that the recent consistent 1u orders trump any slight variations from last year. I will now issue the final order recommendation.
 
 
 
@@ -332,10 +320,10 @@ I've determined a predicted order date of October 15th, just 10 days away, and t
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier d'environ 40 jours
-- **Cycle médian (jours)**: 40
+- **Pattern temporel**: Cycle régulier d'environ 39 jours
+- **Cycle médian (jours)**: 39
 - **Dernière commande**: 2025-09-15
-- **Prochaine prédite**: 2025-10-25 
+- **Prochaine prédite**: 2025-10-24 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
@@ -343,35 +331,35 @@ I've determined a predicted order date of October 15th, just 10 days away, and t
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit présente une stabilité remarquable avec des commandes quasi systématiques de 2 unités. L'intervalle médian entre les commandes est de 40 jours. Avec une dernière commande au 15 septembre, la prochaine est prévue pour le 25 octobre. Étant à 20 jours de cette date prévisionnelle, le risque de rupture sur un horizon de 30 jours est avéré, justifiant le maintien de la commande habituelle.
+Le produit présente une régularité exceptionnelle avec un cycle médian de 39 jours et une quantité quasi-systématique de 2 unités. La prochaine commande est prévue autour du 24 octobre, soit dans 19 jours, ce qui justifie une commande pour couvrir l'horizon B2B.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 877 tokens
-- **Output**: 1,642 tokens
-- **Total**: 2,519 tokens
+- **Input**: 1,073 tokens
+- **Output**: 1,339 tokens
+- **Total**: 2,412 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining the Sales Data**
+**Tracking Product Performance**
 
-I've been poring over the LV BIO Tartinade Paprika Chili sales figures. My initial assessment reveals a consistent pattern of 2 units sold per interval. Looking back at 2025, I've noted sales on September 15th and August 7th. The intervals seem to be approximately 39 days.
-
-
-**Forecasting Future Purchases**
-
-I'm now calculating the next potential order date, focusing on the 2023-2024 interval data. The median interval is approximately 40 days, which aligns with the 2025 observation of 39 days. Based on the most recent purchase on September 15th, I'm projecting a possible next order window.
+I'm currently focused on the sales data for LV130. The latest update shows two units sold on 2025-09-15. Before that, two units were sold on 2025-08-07, providing an interval of 39 days. This trend requires further investigation.
 
 
-**Evaluating Stockout Risk**
+**Projecting Future Sales**
 
-I'm now calculating the stockout risk based on the anticipated next order. Considering the 40-day interval, the next order is projected for October 25th. Given the current date of October 5th, and a 30-day horizon, this indicates a stockout risk, as it's within the timeframe.
+I've calculated the median sales interval for LV130, landing at 39 days. Based on the last sale on 2025-09-15, I've projected the next sale for 2025-10-24. There are currently 19 days until the predicted sale, and the risk assessment indicates "RISQUE OUI".
 
 
 **Calculating Recommended Order Size**
 
-I'm now assessing the ideal order quantity, drawing on historical data and demand patterns. Based on a consistent sale of 2 units per order over time, and analysis results confirming a stable trend, I'm confidently recommending an order of 2 units.
+I'm now assessing the order quantity. The median quantity sold is consistently 2 units, and there are no seasonal variations to consider. My recommendation, therefore, is to order 2 units for the next cycle. My confidence is high, given the robust historical consistency.
+
+
+**Evaluating The Sales Intervals**
+
+I'm now diving into the historical sales intervals for LV130, focusing on both current and previous years. I've calculated a median interval of 39 days, and the risk assessment is "RISQUE OUI" given the approaching prediction. I've also re-confirmed the recommended order quantity of 2 units.
 
 
 
@@ -397,15 +385,15 @@ I'm now assessing the ideal order quantity, drawing on historical data and deman
 - **Quantité décidée**: 2u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: high
-- **Confiance Phase 1 (détection risque)**: high
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: medium
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: cycle régulier d'environ 40 jours avec volume constant
-- **Cycle médian (jours)**: 40
+- **Pattern temporel**: Cycle régulier avec une médiane de 41 jours
+- **Cycle médian (jours)**: 41
 - **Dernière commande**: 2025-09-15
-- **Prochaine prédite**: 2025-10-25 
+- **Prochaine prédite**: 2025-10-26 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
@@ -413,35 +401,35 @@ I'm now assessing the ideal order quantity, drawing on historical data and deman
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit présente une stabilité exceptionnelle avec une quantité systématique de 2 unités par commande. L'intervalle médian entre les commandes est de 40 jours. La dernière commande ayant eu lieu le 15 septembre, la prochaine échéance théorique se situe autour du 25 octobre. Comme cette date tombe dans les 30 prochains jours, une commande de réapprovisionnement est nécessaire.
+L'historique est extrêmement stable avec des commandes systématiques de 2 unités. Bien qu'une interruption de données soit visible entre fin 2024 et septembre 2025, la reprise en septembre 2025 confirme le volume historique de 2u. Avec un cycle médian détecté de 41 jours, la prochaine commande est attendue autour du 26 octobre, soit dans environ 21 jours, ce qui justifie une commande dans l'horizon B2B de 30 jours.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 823 tokens
-- **Output**: 1,538 tokens
-- **Total**: 2,361 tokens
+- **Input**: 1,019 tokens
+- **Output**: 1,816 tokens
+- **Total**: 2,835 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Analyzing Product Sales Data**
+**Examining Product History**
 
-I'm currently focused on the sales history for LV Tartinade Carotte Gingembre. I've noted a recent order of 2 units on 2025-09-15. I'm cross-referencing this with the historical data from the previous year, specifically the 2 units sold on 2024-09-24, to get a handle on trends.
+I'm currently reviewing the historical order data for LV129 LV Tartinade Carotte Gingembre. The most recent order was on September 15th, 2025, for two units. Before that, there were two orders in 2024, in August and September. I'll need to analyze the order frequency and volume over time.
 
 
-**Calculating Sales Cycle Time**
+**Calculating Order Frequency Gaps**
 
-I'm now calculating the sales cycle time for LV Tartinade Carotte Gingembre based on the historical data. The median sales cycle, approximately 40.5 days, is derived from the intervals between sales in the previous year. Projecting the next order, I'm estimating around October 25th, 2025.
+I've calculated the approximate wait times between orders for LV129 LV Tartinade Carotte Gingembre. Notable gaps include a significant one-year interval before the most recent order. Excluding that outlier, I'm now determining the median cycle time to assess typical order frequency. I'll need to examine if the data is consistent to provide accurate results.
 
 
 **Projecting Future Orders**
 
-I'm now integrating the historical data, including seasonality and trend patterns, into the model. Using a 40-day cycle, the predicted date for the next order of LV Tartinade Carotte Gingembre is October 25th, 2025. Given the constant order quantity of 2 units, I'm assessing the risk of stock rupture within the next 30 days.
+I've calculated the median order cycle at 40.5 days, and based on this, predicted a next order date of October 25th, 2025. Given today's date of October 5th, there's a 20-day window until then, indicating a potential risk to supply. Despite the uncertainty, I'm confident in my analysis.
 
 
-**Finalizing Stock Assessment**
+**Refining Order Cycle Calculation**
 
-I've just finalized the assessment. The analysis confirms a highly predictable 40-day cycle for LV Tartinade Carotte Gingembre, with a consistent order quantity of two units. My projection of the next order on October 25th aligns with the 30-day risk window, indicating a need for stock within the next month. Confidence in this prediction is high.
+I've re-examined the order intervals for LV129 LV Tartinade Carotte Gingembre, recalculating the median order cycle at 40.5 days. This aligns with a predicted next order date of October 25th or 26th, 2025. Given today's date, there's a 20-21 day window, indicating a definite risk to supply.
 
 
 
@@ -452,66 +440,71 @@ I've just finalized the assessment. The analysis confirms a highly predictable 4
 
 
 <details>
-<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM: 2u vs Médiane: 2u (Réel: 2u)</summary>
+<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM: 1u vs Médiane: 2u (Réel: 2u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 2u
+- 🤖 **Quantité recommandée (finale)**: 1u
 - 📊 **Baseline calculée**: 1.5u
 - 📊 **Médiane historique**: 2u
 - ✅ **Réel commandé**: 2u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 1u (50.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 2u (risque détecté)
+- **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: high
+- **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier d'environ 21 jours détecté sur les derniers mois
+- **Pattern temporel**: Cycle régulier de 21 jours environ
 - **Cycle médian (jours)**: 21
 - **Dernière commande**: 2025-09-15
-- **Prochaine prédite**: 2025-10-06 
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Prochaine prédite**: 2025-10-06 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
+- **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Commandes fréquentes le lundi; la date prédite tombe un lundi (06/10)
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle de commande est très stable sur les 3 derniers mois avec un intervalle médian de 21 jours. La prochaine commande est prévue pour le 6 octobre (soit demain par rapport à la date actuelle du 5 octobre). La quantité recommandée de 2 unités correspond au mode le plus fréquent et s'aligne sur les quantités historiques N-1 à la même période.
+Le cycle de commande est très stable avec une médiane de 21 jours. La dernière commande date d'il y a 20 jours, plaçant la prochaine commande pour demain (lundi 6 octobre). Concernant la quantité, nous observons une alternance entre 1 et 2 unités sur les quatre dernières commandes. Selon la règle applicable aux petites quantités (1-2u) en cas d'alternance, la valeur basse (1u) est privilégiée, d'autant que le volume en 2025 est inférieur à celui de 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 876 tokens
-- **Output**: 1,426 tokens
-- **Total**: 2,302 tokens
+- **Input**: 1,072 tokens
+- **Output**: 2,054 tokens
+- **Total**: 3,126 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Product Sales Patterns**
+**Calculating Product Trends**
 
-I'm analyzing the sales data for LV162, the LV Tartinade Tomato Basilico. I've noted a couple of recent sales in 2025. There were two units sold on September 15th, and a single unit on August 25th, indicating a 21-day interval between these two sales events. Now I'll drill deeper to identify trends.
-
-
-**Projecting Future Order Dates**
-
-I've calculated the median and mean sales cycle from recent data on LV162, settling on roughly 20 days. Given the last sale on September 15th and today being October 5th, I've projected the next order for tomorrow. This represents a "RISQUE OUI" scenario. I'm also examining the quantities from recent sales.
+I've been calculating the sales interval for the LV Tartinade Tomato Basilico 190g. I've noted a recent sale of 2 units on September 15th, and a previous sale of 1 unit on August 25th. This gives me a 21-day sales interval. I'm now looking at historical data to determine any patterns.
 
 
-**Assessing Quantity and Baseline**
+**Projecting Order Volume**
 
-I've examined the recent ordering quantities. The median is 1.5, with a mode of 1 or 2 units per order. I compared these findings with last year's September/October orders, which ranged from 2 to 3 units. Based on these insights, I've decided to recommend a standard order of 2 units.
+I'm focusing on the LV Tartinade Tomato Basilico 190g and its sales. Based on a 21-day median cycle and the last order on September 15th, I projected the next order for October 6th. The current date is October 5th, so I've flagged an imminent order risk. I've also analyzed recent sales, noting alternating quantities and considering a prediction of 1 unit.
 
 
-**Finalizing the Recommendation**
+**Determining Optimal Quantity**
 
-I've solidified my recommendation for an order of 2 units, considering the data and insights. The predicted order date is tomorrow, October 6th, based on a consistently recurring cycle. I'm confident in this projection.
+I'm now assessing the most suitable order quantity for the LV Tartinade Tomato Basilico 190g. Given the alternating recent sales of 1 and 2 units, and the established frequency pattern, I'm leaning toward recommending a single unit, despite a slightly higher volume in the previous year's data.
+
+
+**Concluding Order Analysis**
+
+I've finalized my analysis for the LV Tartinade Tomato Basilico 190g. Based on the 2025 data, a one-unit order is recommended due to the recent alternating sales pattern and consistent 21-day cycle, which indicates an imminent order. While past data showed slightly higher volumes, the current trend is stable. I'm now structuring the findings within the required JSON format.
+
+
+**Formulating the JSON Output**
+
+I'm now fully immersed in constructing the JSON output. I've meticulously reviewed all required fields, including frequency pattern, outliers (none), and seasonality (weak). Also, I ensured that the `day_cycle_analysis` (mostly Mondays) is included, and confirmed the one-day window to the next anticipated order. Everything is ready to be formalized.
 
 
 
@@ -522,7 +515,7 @@ I've solidified my recommendation for an order of 2 units, considering the data 
 
 
 <details>
-<summary><strong>6. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM: 2u vs Médiane: 2u (Réel: 1u)</summary>
+<summary><strong>6. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM: 2u vs Médiane: 2u (Réel: 1u)</summary>
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 2u
@@ -542,7 +535,7 @@ I've solidified my recommendation for an order of 2 units, considering the data 
 - **Confiance Phase 2 (quantité)**: low
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle bimestriel identifié sur deux commandes
+- **Pattern temporel**: Cycle sporadique de 60 jours
 - **Cycle médian (jours)**: 60
 - **Dernière commande**: 2025-09-15
 - **Prochaine prédite**: 2025-11-14 
@@ -553,45 +546,40 @@ I've solidified my recommendation for an order of 2 units, considering the data 
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Un cycle de 60 jours est observé entre les deux seules commandes historiques. La date de commande prédite est le 14 novembre 2025. Au 5 octobre, nous sommes à exactement 40 jours de cette date, ce qui déclenche le signal de risque de rupture selon la règle des ≤40 jours. On recommande 2 unités pour suivre la tendance de la dernière commande effectuée.
+Historique très limité avec seulement deux points. L'intervalle observé est de 60 jours. La prochaine commande est prévue dans 40 jours, ce qui correspond à la fenêtre d'anticipation B2B (31-45 jours). La quantité recommandée s'aligne sur le dernier volume observé (2u) par mesure de précaution.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 615 tokens
-- **Output**: 2,109 tokens
-- **Total**: 2,724 tokens
+- **Input**: 812 tokens
+- **Output**: 1,649 tokens
+- **Total**: 2,461 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Assessing the Data**
+**Examining Product History**
 
-I'm currently reviewing the provided product data for the RISH kombucha BIO - hibiscus. My focus is on understanding its sales history. So far, the data reveals two recorded sales: two units on September 15th, 2025 and one unit on July 17th, 2025. I've noted a lack of N-1 data for further analysis.
-
-
-**Calculating the Risks**
-
-I've just finished the calculations. The product's predicted next order date is November 14th, 2025. Today, October 5th, leaves 40 days until the next predicted order, which triggers a "YES" risk according to the decision rule. I'm now cross-checking this result.
+I'm currently analyzing the order history for the RISH03 kombucha product. I've noted past order quantities and dates. My focus now is on calculating the intervals between orders to understand purchase frequency. I'm especially interested in the time between the last two orders, and the last order's details.
 
 
-**Interpreting the Findings**
+**Calculating Order Risks**
 
-My next step is to interpret the data. Reviewing the product's sales, trend analysis shows an increase in demand. The risk assessment aligns, due to the 40-day window. Considering the frequency and recent sales, I plan to order 2 units, based on the recent sales volume. I'm focusing on balancing supply and avoiding potential stockouts.
-
-
-**Confirming the Timeline**
-
-I'm now revisiting the cycle calculation to ensure accuracy. I've re-confirmed a 60-day cycle based on the available data. The current date falls 20 days after the last order, with 40 days remaining until the next predicted order date. Despite the extended cycle length, the "YES" risk signal persists, prompting a reevaluation.
+I've just finished the calculations for the RISH03 product. I determined the interval between the two most recent orders, which is 60 days. This led me to predict a next order date of November 14th. Given the 40 days until that date, and the product's sporadic nature, I'm assessing the risk of a stockout. My analysis considers the need for B2B anticipation, since it is between 31 and 45 days. The situation seems fairly safe currently.
 
 
-**Summarizing the Reasoning**
+**Calculating New Risks**
 
-I'm now consolidating my findings. The 60-day cycle and the 40-day window till the predicted order date trigger a "YES" risk. Despite the limited data, I'm leaning towards recommending two units, the most recent order quantity, for proactive inventory management and to mitigate potential stockouts in this B2B setting.
+I've just finished the calculations for the RISH kombucha product. The order interval is 60 days, and the predicted next order is November 14th, 40 days away. Because the product is sporadic, and because the last order was very recent, I'm now leaning towards a slight risk of a stockout. The increasing trend in order quantity is noted, which should be considered in further decisions.
 
 
-**Synthesizing the Conclusion**
+**Assessing Stockout Probability**
 
-I'm now putting it all together. Considering the 60-day cycle, the recent sales trend, and the 40-day window, the risk evaluation signals a "YES." Despite the limited data, and to align with the prompt, I'll order 2 units, mirroring the latest order, to prevent potential stockouts.
+I've just finished the analysis, and I'm now calculating the risk of a stockout. The product, RISH03, has a 60-day ordering cycle, with the next order predicted for November 14th, which is 40 days away. Because this fits the B2B anticipation window, I recommend ordering 2 units. While the history is limited to two orders, the trend suggests an increase in demand.
+
+
+**Assessing the Recommendation**
+
+I'm now revisiting the recommendation for RISH03. The 60-day cycle predicts a November 14th order, 40 days away. With the B2B window active, a risk of stockout is present, although the data set is small, and demand is trending up. The recommendation remains for 2 units based on the latest order.
 
 
 
@@ -602,169 +590,19 @@ I'm now putting it all together. Considering the 60-day cycle, the recent sales 
 
 
 <details>
-<summary><strong>7. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM: 2u vs Médiane: 2u (Réel: 1u)</summary>
+<summary><strong>7. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM: 1u vs Médiane: 2u (Réel: 2u)</summary>
 
 **📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 2u
+- 🤖 **Quantité recommandée (finale)**: 1u
 - 📊 **Baseline calculée**: 1.5u
 - 📊 **Médiane historique**: 2u
-- ✅ **Réel commandé**: 1u
-- 📉 **Erreur LLM**: 1u (100.0%)
-- 📉 **Erreur Médiane**: 1u (100.0%)
-
-**🚨 Décision LLM Phase 1 (Risque de rupture):**
-- **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 2u (risque détecté)
-
-**🎯 Niveaux de Confiance:**
-- **Confiance globale**: low
-- **Confiance Phase 1 (détection risque)**: medium
-- **Confiance Phase 2 (quantité)**: low
-
-**🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle long identifié d'environ 60 jours
-- **Cycle médian (jours)**: 60
-- **Dernière commande**: 2025-09-15
-- **Prochaine prédite**: 2025-11-14 (dans 40j)
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: none
-- **Tendance**: increasing
-- **Analyse jour cycle**: Commandes passées en milieu de semaine (jeu.) puis début de semaine (lun.)
-- **Outliers détectés**: Aucun
-
-**🧠 Raisonnement LLM:**
-L'analyse montre un cycle de 60 jours entre les deux uniques commandes (1u puis 2u). La prochaine commande est prévue pour le 14 novembre 2025. Nous sommes à J-40 de cette date, atteignant le seuil critique de risque défini pour le B2B. Compte tenu de la légère tendance à la hausse et de la faible volumétrie, une commande de 2 unités est préconisée pour couvrir le besoin à venir.
-
-**📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 616 tokens
-- **Output**: 1,729 tokens
-- **Total**: 2,345 tokens
-
-**🤔 Raisonnement Interne du Modèle (Thinking):**
-<details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
-
-**Examining Production Patterns**
-
-I've been looking closely at the production history for RISH kombucha BIO, specifically the gingembre variant. I've noted a couple of recent instances: two units on September 15th, and a single unit back in July. This seems rather sporadic, and I'm starting to wonder what's driving these fluctuations.
-
-
-**Forecasting Demand Patterns**
-
-The gingembre variant's production cycle continues to fascinate. Based on the 60-day interval between orders, I'm projecting the next one around November 14th, though we are already 20 days removed from the last run. The last order, a recent one on September 15th, seems a trend from a singular unit to two, which has some significance to explore. Given it's within the 40-day threshold, I'll need to watch this carefully.
-
-
-**Evaluating Quantity and Timing**
-
-Given the 40-day window until the projected November 14th order, and the B2B nature of RISH kombucha, I'm leaning towards recommending a quantity of 2 units. The median suggests 1.5, but the recent trend and the risk threshold justify erring on the side of caution. My confidence is still medium due to the limited data.
-
-
-**Revisiting Order Recommendations**
-
-I've re-examined the data and confirmed the 60-day cycle, putting the next order around November 14th. With the 40-day risk window in play, and the slight uptick from 1 to 2 units, I'm sticking with the recommendation of 2 units. The B2B nature reinforces the need to avoid stockouts.
-
-
-**Refining Final Recommendations**
-
-The 60-day cycle remains clear, with a next order expected around November 14th. Today is October 5th, leaving a 40-day window, triggering the B2B risk threshold. The trend indicates a slight increase from 1 to 2 units, which I am taking into account. Thus, I stand by my previous quantity recommendation of 2 units. I'm focusing on the JSON schema next.
-
-
-
-
-</details>
-
-</details>
-
-
-<details>
-<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM: 2u vs Médiane: 2u (Réel: 2u)</summary>
-
-**📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 2u
-- 📊 **Baseline calculée**: 1.9u
-- 📊 **Médiane historique**: 2u
 - ✅ **Réel commandé**: 2u
-- 📉 **Erreur LLM**: 0u (0.0%)
+- 📉 **Erreur LLM**: 1u (50.0%)
 - 📉 **Erreur Médiane**: 0u (0.0%)
 
 **🚨 Décision LLM Phase 1 (Risque de rupture):**
 - **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 2u (risque détecté)
-
-**🎯 Niveaux de Confiance:**
-- **Confiance globale**: high
-- **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: high
-
-**🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier d'environ 37 jours
-- **Cycle médian (jours)**: 37
-- **Dernière commande**: 2025-08-25
-- **Prochaine prédite**: 2025-10-01 
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: none
-- **Tendance**: stable
-- **Analyse jour cycle**: N/A
-- **Outliers détectés**: Aucun
-
-**🧠 Raisonnement LLM:**
-La dernière commande a eu lieu il y a 41 jours (2025-08-25) alors que le cycle médian habituel est de 37 jours. La commande est donc théoriquement en retard par rapport au rythme habituel. Le besoin est immédiat. La quantité de 2 unités est la plus fréquente dans l'historique (mode statistique) et correspond à la demande stable observée à cette période l'année précédente.
-
-**📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 822 tokens
-- **Output**: 1,752 tokens
-- **Total**: 2,574 tokens
-
-**🤔 Raisonnement Interne du Modèle (Thinking):**
-<details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
-
-**Examining Sales Trends**
-
-I'm currently focused on the sales data for the LV Tartinade Mangue curry. Initial analysis reveals a recent purchase history, with single units in August. Looking back further, I observed sales of 2 units in early August, and I've noted the 18-day interval between these purchases. My next step will be to compare these recent trends with the previous year's sales figures.
-
-
-**Calculating Projected Replenishment**
-
-I've calculated the median interval between past orders at 36.5 days, using data from 2024 and 2023. Based on that, I predicted a next order date of September 30th. However, since the last order was on August 25th, and today is October 5th, 41 days have passed, which is beyond the median cycle. Therefore, a replenishment is likely needed.
-
-
-**Determining Order Quantity**
-
-I've analyzed the order quantities. The median and most frequent quantity is 2 units, with an average of 1.5 units recently. There is no significant seasonality or trend. Based on these observations, I'm recommending a replenishment order of 2 units. The confidence in this recommendation is high.
-
-
-**Finalizing Replenishment Strategy**
-
-I've determined a strong case for immediate replenishment. The predicted next order date of around October 1st has already passed, and the 41-day interval since the last order exceeds the median cycle length. I've re-calculated to refine the `days_until_next` value, now set to -4. The recommended quantity remains at 2 units, based on historical demand.
-
-
-**Evaluating Current Demand Risk**
-
-I'm now deep-diving into the risk assessment. Considering the overdue cycle and a slightly weighted average, I've confirmed that the risk is OUI, and I've updated `days_until_next` to -4. The baseline quantity is stable at 2 units. I'm focusing on JSON generation for output.
-
-
-
-
-</details>
-
-</details>
-
-
-<details>
-<summary><strong>9. [LV131] LV Tartinade Potiron 190g</strong> - LLM: 2u vs Médiane: 1u (Réel: 2u)</summary>
-
-**📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 2u
-- 📊 **Baseline calculée**: 1.5u
-- 📊 **Médiane historique**: 1u
-- ✅ **Réel commandé**: 2u
-- 📉 **Erreur LLM**: 0u (0.0%)
-- 📉 **Erreur Médiane**: 1u (50.0%)
-
-**🚨 Décision LLM Phase 1 (Risque de rupture):**
-- **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 2u (risque détecté)
+- **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: medium
@@ -772,52 +610,61 @@ I'm now deep-diving into the risk assessment. Considering the overdue cycle and 
 - **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle irrégulier entre 40 et 60 jours, s'accélérant en période automnale
-- **Cycle médian (jours)**: 45
+- **Pattern temporel**: Intervalle régulier moyen de 37 jours, consommation stable à bas volume.
+- **Cycle médian (jours)**: 37
 - **Dernière commande**: 2025-08-25
-- **Prochaine prédite**: 2025-10-09 
+- **Prochaine prédite**: 2025-10-01 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: strong
-- **Tendance**: stable
+- **Saisonnalité**: none
+- **Tendance**: decreasing
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Nous sommes à 41 jours de la dernière commande avec un cycle médian historique tournant autour de 45 jours. Étant donné qu'il s'agit d'une tartinade de potiron et que nous sommes début octobre, l'impact saisonnier est fort. L'historique N-1 montre des commandes de 2 unités en octobre et septembre, contre 1 unité en période creuse.
+Le cycle médian entre les commandes est de 37 jours. La dernière commande date d'il y a 41 jours (25 août), ce qui place le client en zone de réapprovisionnement imminent. Concernant la quantité, l'historique montre une alternance entre 1u et 2u, avec une tendance récente à la baisse (2u puis 1u). Conformément aux principes de gestion des petites quantités (1-2u), la priorité est donnée à la valeur basse de la médiane récente.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 767 tokens
-- **Output**: 1,465 tokens
-- **Total**: 2,232 tokens
+- **Input**: 1,018 tokens
+- **Output**: 2,558 tokens
+- **Total**: 3,576 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Assessing Product Lifecycle**
+**Reviewing Product Data**
 
-I'm currently focused on the LV131 pumpkin spread. It's a seasonal item, and I've noted the recent sales history. Specifically, the last recorded sale was on August 25th, and it was a single unit. The item's context is a "seasonal" (pumpkin/pot iron) context. I need to dig deeper into the historical sales data to assess its performance.
-
-
-**Evaluating Sales Intervals**
-
-\n\n
-
-I've calculated the median cycle for LV131 sales, arriving at roughly 50-60 days. Based on the last sale on August 25th, the predicted next sale is around October 9th. However, the current date is October 5th, putting the product at risk as the next sale is imminent. I'm now analyzing the seasonality data.
+I'm currently focused on the sales data for the LV Tartinade Mangue Curry. Recent history shows a jump from 1 unit to 2 units in August. Looking back, I can see a previous instance of 3 units sold in August 2024. I'm noting the intervals between sales to identify potential trends.
 
 
-**Revising Quantity Predictions**
+**Forecasting Demand Patterns**
 
-\n\n
-
-My analysis of the LV131 has concluded. I've considered the product's pumpkin context, its seasonality, and the historical sales quantities. Based on the "Potiron" context and peak October timing, I'm recommending a purchase of 2 units. This aligns with the seasonal demand and observed trends. I've incorporated insights on sales frequency, noting a pattern of approximately every 45-60 days, to strengthen my assessment.
+The LV Tartinade Mangue Curry sales data reveals a median interval of 36.5 days. With 41 days passed since the last order, we're slightly over that cycle. While the current timing suggests a potential restocking opportunity, I'm taking into account the history, specifically a 76-day gap in the past to refine the prediction model.
 
 
-**Determining Order Quantity**
+**Estimating Restock Quantity**
 
-\n\n
+Now, I'm analyzing the order quantity trends for LV Tartinade Mangue Curry. Based on the 1-2-1-2 pattern observed, I'm leaning towards recommending 1 unit for the next order. The history indicates a preference for '2' units, yet the recent 2025 sequence of '2' then '1' suggests a conservative 1-unit order to align with the oscillating pattern.
 
-My analysis has factored in the recent and historical sales patterns, seasonality, and the current date. Given it's early October, the pumpkin spread's peak season, and drawing upon N-1 data, I've revised the baseline. I am now recommending two units, with medium confidence due to the small, consistent sales volumes. The 45-day cycle estimate supports this, alongside the strong seasonality influence.
+
+**Predicting Refill Requirements**
+
+I've just finished the analysis, and the data suggests the customer is overdue for a restock. The product's cycle is approximately 37 days, and 41 have passed since the last order. Despite the recent decrease, with a sales history that trends between 1 and 2 units, I'll recommend ordering 1 unit, aligning with the observed pattern.
+
+
+**Evaluating Quantity Recommendation**
+
+I'm now finalizing the quantity recommendation for LV Tartinade Mangue Curry, based on all of the recent analysis. Despite a historical preference for ordering two units, and even three units in August 2024, I'm recommending one unit. This decision is driven by the recent alternating pattern and the specific guidelines provided.
+
+
+**Refining Recommendation Details**
+
+I'm now putting the final touches on the recommendation. The customer is overdue based on an approximate 37-day cycle. My recent analysis of the pattern of 2 then 1 unit orders guides the decision. While the historical data favors 2 units, given the recent trend and specific guidelines for small quantities, I'm sticking with a 1-unit recommendation.
+
+
+**Synthesizing Final Recommendation**
+
+After a comprehensive review, I've confirmed my earlier analysis. The customer is overdue for a restock, with 41 days past the typical 37-day cycle. Given the recent history of 2 then 1 unit orders, and adhering to the guidelines for small quantities, I'm confidently recommending a 1-unit order.
 
 
 
@@ -828,11 +675,81 @@ My analysis has factored in the recent and historical sales patterns, seasonalit
 
 
 <details>
-<summary><strong>10. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+<summary><strong>8. [LV131] LV Tartinade Potiron 190g</strong> - LLM: 1u vs Médiane: 1u (Réel: 2u)</summary>
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 1u
-- 📊 **Baseline calculée**: 1.28u
+- 📊 **Baseline calculée**: 1u
+- 📊 **Médiane historique**: 1u
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: 1u (50.0%)
+
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 1u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: high
+- **Confiance Phase 2 (quantité)**: high
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Sporadique avec intervalles irréguliers (médiane ~50j)
+- **Cycle médian (jours)**: 50
+- **Dernière commande**: 2025-08-25
+- **Prochaine prédite**: 2025-10-14 
+- **Dans horizon 30j ?**: ❌ NON
+- **Saisonnalité**: weak
+- **Tendance**: decreasing
+- **Analyse jour cycle**: N/A
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+La tartinade a un comportement sporadique. L'intervalle médian entre les commandes est d'environ 50 jours. La dernière commande datant du 2025-08-25, la prochaine commande est attendue mi-octobre, ce qui entre dans la fenêtre d'anticipation B2B. Bien que les volumes N-1 étaient de 2u à cette période, les commandes de 2025 sont stabilisées à 1u, d'où une recommandation prudente de 1u.
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 963 tokens
+- **Output**: 1,622 tokens
+- **Total**: 2,585 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Tracking Consumption Trends**
+
+I'm focused on the consumption data for the LV Tartinade Potiron 190g product. I've noted the intervals between purchases. The recent purchase was on 2025-08-25, and I've also observed the earlier consumption patterns from the previous year, specifically how many units were bought and when.
+
+
+**Evaluating Purchase Timing**
+
+I've analyzed the purchase intervals and their variance, noting a median of roughly 63 days overall, but a recent interval of just 39 days. Since today is October 5th, and considering the 39-day interval, the product order was due around October 3rd. With a low ordering frequency, this is a product that may be currently overdue.
+
+
+**Synthesizing Ordering Recommendations**
+
+I've finalized my analysis. The product's purchase cycle is roughly 63 days, though recent intervals are shorter. Based on the median and the current date of October 5th, the order was due around October 3rd. Also, considering the most recent consumption, the recommended order quantity is 1 unit. I'm projecting a next order date of October 14th.
+
+
+**Calculating Prediction Confidence**
+
+I've evaluated the confidence levels for the quantity and timing predictions. The timing is high confidence, given the product's ordering window. The volume prediction also has high confidence, since recent purchases have consistently been for one unit. Based on the analysis, I have a clear recommendation.
+
+
+
+
+</details>
+
+</details>
+
+
+<details>
+<summary><strong>9. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM: 1u vs Médiane: 1u (Réel: 1u)</summary>
+
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 1u
+- 📊 **Baseline calculée**: 1u
 - 📊 **Médiane historique**: 1u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
@@ -843,12 +760,12 @@ My analysis has factored in the recent and historical sales patterns, seasonalit
 - **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance globale**: high
+- **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle irrégulier oscillant entre 32 et 81 jours, médiane de 39 jours.
+- **Pattern temporel**: Cycle régulier tournant autour de 39 jours
 - **Cycle médian (jours)**: 39
 - **Dernière commande**: 2025-08-25
 - **Prochaine prédite**: 2025-10-03 
@@ -859,35 +776,110 @@ My analysis has factored in the recent and historical sales patterns, seasonalit
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le cycle médian entre les commandes est de 39 jours. La dernière commande date d'il y a 41 jours (2025-08-25), ce qui suggère que la prochaine commande est imminente ou théoriquement déjà due. Bien que le produit soit à faible rotation, le risque de rupture est présent sur l'horizon de 30 jours car nous dépassons l'intervalle habituel.
+Le produit présente une consommation régulière avec un cycle médian de 39 jours. La prochaine commande était statistiquement attendue autour du 3 octobre 2025. Nous sommes le 5 octobre, la commande est donc imminente. Les quantités historiques sont ultra-stables (majoritairement 1u), on maintient donc cette valeur.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 741 tokens
-- **Output**: 1,395 tokens
-- **Total**: 2,136 tokens
+- **Input**: 937 tokens
+- **Output**: 1,373 tokens
+- **Total**: 2,310 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Product History**
+**Assessing Recent Sales Data**
 
-I'm currently focused on the sales history for the LV Tartinade Paprika Chili. I've noted a purchase of one unit on August 25th, 2025, and another on July 17th, 2025. This gives a 39-day interval. Looking back to 2024, there was a purchase on August 5th, with a considerable 81-day gap before that.
-
-
-**Calculating Reorder Timings**
-
-I've just calculated the median interval as 39 days and noted the last order was August 25th. This allows me to predict the next order should have been around October 3rd. With today being October 5th, the product is two days past its predicted reorder date, indicating a potential risk to stock levels.
+I'm analyzing the sales data for LV Tartinade Paprika Chili, specifically the 380g variant. I've noted two recent sales events, one 39 days ago and another 39 days prior to that. This initial look suggests a potential pattern, and I intend to dig deeper. I'm looking for a clearer understanding of the sales frequency.
 
 
-**Evaluating the Inventory Risk**
+**Calculating Ordering Predictions**
 
-I'm now assessing the stockout risk. Using the 39-day median cycle and a recent purchase on August 25th, I've calculated a predicted reorder date of October 3rd. Since it's October 5th, this item is at high risk because we're two days beyond the predicted reorder time. I am now looking deeper into the quantity and seasonality, but so far the risk level remains "YES".
+I've moved from just observing sales to calculating a reorder date. Using the 2024 and 2025 sales, I determined the median interval between orders is 39 days. Based on that, and considering the most recent sale, I predicted the next order date and compared it to today's date. The order is overdue.
 
 
-**Calculating Final Recommendations**
+**Finalizing Order Recommendation**
 
-The analysis confirms a high stockout risk due to the overdue reorder date. I have confirmed there is a -2-day deviation. The baseline quantity is roughly 1, with the median and recent orders at 1. Overall, I recommend ordering 1 unit of LV Tartinade Paprika Chili to mitigate the risk.
+I've rigorously analyzed the product's sales history, incorporating both recent data and the previous year's figures. The calculations confirm a 39-day median order cycle, with the predicted order date already passed. Considering the consistent small quantities, my final recommendation is for a single unit, with high confidence in the assessment.
+
+
+**Calculating a Recommendation Again**
+
+I've re-examined the data to fine-tune the recommendation for LV Tartinade Paprika Chili 380g. I've re-evaluated the risk, assessed recent quantities, and confirmed my earlier findings. I've considered all factors including seasonality, outliers, and trends, and the recommendation remains a single unit, with a high degree of certainty. The next predicted date is October 3rd, and the date has passed.
+
+
+
+
+</details>
+
+</details>
+
+
+<details>
+<summary><strong>10. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM: 1u vs Médiane: 3u (Réel: 2u)</summary>
+
+**📊 Quantités & Prédictions:**
+- 🤖 **Quantité recommandée (finale)**: 1u
+- 📊 **Baseline calculée**: 1u
+- 📊 **Médiane historique**: 3u
+- ✅ **Réel commandé**: 2u
+- 📉 **Erreur LLM**: 1u (50.0%)
+- 📉 **Erreur Médiane**: 1u (50.0%)
+
+**🚨 Décision LLM Phase 1 (Risque de rupture):**
+- **Risque détecté**: ✅ OUI → Commande nécessaire
+- **Quantité décidée**: 1u (risque détecté)
+
+**🎯 Niveaux de Confiance:**
+- **Confiance globale**: low
+- **Confiance Phase 1 (détection risque)**: low
+- **Confiance Phase 2 (quantité)**: high
+
+**🔍 Analyse LLM Complète:**
+- **Pattern temporel**: Commande unique détectée (sporadique)
+- **Cycle médian (jours)**: 45
+- **Dernière commande**: 2025-08-25
+- **Prochaine prédite**: 2025-10-09 
+- **Dans horizon 30j ?**: ❌ NON
+- **Saisonnalité**: none
+- **Tendance**: stable
+- **Analyse jour cycle**: N/A
+- **Outliers détectés**: Aucun
+
+**🧠 Raisonnement LLM:**
+Une seule commande de 1 unité enregistrée il y a 41 jours. En l'absence d'historique plus riche, on traite le produit comme sporadique. L'intervalle de 41 jours place la commande probable dans la fenêtre d'anticipation B2B (31-45 jours). Application de la règle des petites quantités (médiane à 1u).
+
+**📊 Tokens utilisés pour cette prédiction:**
+- **Input**: 794 tokens
+- **Output**: 1,488 tokens
+- **Total**: 2,282 tokens
+
+**🤔 Raisonnement Interne du Modèle (Thinking):**
+<details>
+<summary>Voir le reasoning interne de Kimi K2</summary>
+
+**Examining Sales Trends**
+
+I am currently examining the sales data for MATE02, specifically its single order from August. The lack of a "N-1" history is concerning, as it makes trend analysis impossible. This sparse data makes any projection or meaningful insight extremely difficult. My next step will be to search for additional sales records.
+
+
+**Interpreting Sparse Data**
+
+My analysis of the MATE02 product continues. I've noted the single August order and calculated the 41 days since that event. The sporadic nature, with only one unit sold, is pushing me to consider it a slow-moving item. Given the "sporadic products" rule, with the 41-day lag, it seems low-risk. I am now pondering the implications of this one-off sale.
+
+
+**Evaluating Unit Demand**
+
+My focus has shifted to projecting demand based on the limited data. The single order of MATE02, 41 days ago, is the sole indicator. With a slow-moving item like this, the "sporadic products" rule applies. Given the 1 unit volume and the 41-day lag, the risk of rupture is low. Therefore, a prediction of 1 unit is made, aligning with historical patterns and small quantity guidelines.
+
+
+**Predicting Future Demand**
+
+The single data point for MATE02 continues to be the focus.  The model now incorporates a baseline of 1 unit, reflecting the past order.  With a 41-day lag, and considering it a slow-moving item, the prediction leans toward an order within the next few days. I'm assigning a low confidence level to the prediction. I will consider the 45-day threshold.
+
+
+**Refining Prediction Accuracy**
+
+I'm now refining the prediction logic for MATE02. Given the single order 41 days ago, I'm considering the potential for a 45-day cycle.  This puts the next predicted order around October 9th. The low confidence remains, but the understanding of the sporadic pattern is solidified.
 
 
 
@@ -913,12 +905,12 @@ The analysis confirms a high stockout risk due to the overdue reorder date. I ha
 - **Quantité décidée**: 2u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
-- **Confiance Phase 1 (détection risque)**: medium
+- **Confiance globale**: high
+- **Confiance Phase 1 (détection risque)**: high
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Intervalle irrégulier avec une médiane de 44 jours (min 40j, max 74j)
+- **Pattern temporel**: Commande environ tous les 44 à 60 jours
 - **Cycle médian (jours)**: 44
 - **Dernière commande**: 2025-08-07
 - **Prochaine prédite**: 2025-09-20 
@@ -929,35 +921,40 @@ The analysis confirms a high stockout risk due to the overdue reorder date. I ha
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La dernière commande date de 59 jours. Bien que l'intervalle médian soit de 44 jours, l'historique montre des écarts allant jusqu'à 74 jours. Cependant, avec 59 jours écoulés au 2025-10-05, nous sommes déjà au-delà de l'échéance médiane, rendant une commande imminente hautement probable (Risque de rupture B2B). La quantité de 2 unités est la plus fréquente et correspond à la dernière commande.
+Le cycle médian calculé sur l'historique est d'environ 44 jours (avec une plage allant jusqu'à 74 jours). La dernière commande datant du 2025-08-07, le délai actuel de 59 jours dépasse le cycle médian. Une commande est donc attendue de façon imminente. Les quantités historiques sont faibles et constantes (médiane de 2), sans aucune tendance à la hausse ou à la baisse.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 742 tokens
-- **Output**: 1,321 tokens
-- **Total**: 2,063 tokens
+- **Input**: 939 tokens
+- **Output**: 1,882 tokens
+- **Total**: 2,821 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Product History**
+**Assessing Product Trends**
 
-I'm currently focused on the historical sales data for the LV Tartinade Olive Caper Tomato. The most recent order was back in August. Now I'm digging into the 2024 and 2023 figures to identify any trends or patterns to help estimate future demand. Specifically, I'm checking the volume of orders in August 2024 to see if it corresponds to the latest orders.
-
-
-**Predicting Future Demand**
-
-The median inter-order interval of 44 days points to a next order date of September 20th. However, today is October 5th, 15 days past that estimate. The current 59-day gap is within the historical range. Considering the uncertainty, and potential B2B implications, I'm flagging a "yes" on stockout risk within the next 30 days, despite the order potentially being "late."
+I'm currently reviewing the LV332 data, specifically the LV Tartinade. Recent figures show a slight bump in August, hitting 2 units. I'm digging into past sales, from 2023 and 2024 to understand the long-term patterns, seasonality, and overall performance.
 
 
-**Calculating Stock Levels Again**
+**Calculating Order Frequency**
 
-I've re-examined the data and confirmed the median inter-order interval. Since we're now significantly past the median expected date, the next order is highly likely to be imminent, or, in fact, potentially already overdue. I've re-assessed the stockout risk, and stand firm in my earlier assessment that it's likely. I've also re-confirmed the ideal order quantity. My confidence is still medium due to irregular order frequency, but the consistent order quantity reinforces my prediction.
+I've analyzed the historical order data for LV Tartinade, looking at the intervals between purchases. The median cycle is about 44 days, but the spread is significant, ranging from 40 to 74 days. Based on the predicted order date of September 20th and the current date being October 5th, I've determined that an order is likely overdue and there's a definite risk of stockout if we don't act now.
 
 
-**Assessing Order Imminence**
+**Refining Quantity Estimates**
 
-I'm now focusing on the data, with the current date 15 days past the estimated order date. Considering the 59-day gap since the last order, and the variance in historical order intervals, the next order is considered imminent. I'm taking the variance into account and assessing a likely high stockout risk. The product's consistent order quantity bolsters my confidence in predicting the order's need, despite the irregular frequency.
+I'm now zeroing in on the ideal order quantity for the LV Tartinade. My calculations show a recent median of 2 units, mirroring the last order. Historical averages hover around 1.83 units. There's no distinct seasonality or clear trend. With all factors considered, I'm leaning toward recommending 2 units for the next order to be safe.
+
+
+**Evaluating Order Timing**
+
+I've examined the latest data on the LV Tartinade, noting the 44-day purchase cycle. Given the date, the next order is overdue with -15 days, which I'll represent as 0. I'm focusing on the risk of stockout due to this. There are no noticeable outliers or seasonal variations, and the trend remains stable.
+
+
+**Revising Order Strategy**
+
+I've re-examined the LV Tartinade data. The median cycle is still 44 days, and with 59 days since the last order, we're definitely behind schedule. Quantities remain steady, with a median of 2. I'm focused on mitigating the stockout risk due to the missed cycle, and the baseline quantity will remain at 2.
 
 
 
@@ -972,7 +969,7 @@ I'm now focusing on the data, with the current date 15 days past the estimated o
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 1u
-- 📊 **Baseline calculée**: 1.6u
+- 📊 **Baseline calculée**: 1u
 - 📊 **Médiane historique**: 1u
 - ✅ **Réel commandé**: 1u
 - 📉 **Erreur LLM**: 0u (0.0%)
@@ -985,159 +982,54 @@ I'm now focusing on the data, with the current date 15 days past the estimated o
 **🎯 Niveaux de Confiance:**
 - **Confiance globale**: low
 - **Confiance Phase 1 (détection risque)**: medium
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Demande sporadique avec une activité plus dense entre mai et septembre
+- **Pattern temporel**: Produit sporadique avec des cycles longs et irréguliers (médiane ~90-130j)
 - **Cycle médian (jours)**: 90
 - **Dernière commande**: 2025-07-17
 - **Prochaine prédite**: 2025-10-15 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: 3u
 
 **🧠 Raisonnement LLM:**
-Le produit présente une fréquence de commande irrégulière mais montre une activité saisonnière en fin d'été/début d'automne (pic de 3u en septembre N-1). En se basant sur le cycle médian observé en période d'activité (90 jours) et sur la proximité de la date anniversaire de la commande de l'an dernier, une commande est prévue sous 10 jours. Le risque de rupture à horizon 30j est donc avéré. La quantité recommandée est de 1u, correspondant à la médiane et à la commande la plus fréquente.
+Le produit est sporadique avec des intervalles de commande dépassant souvent 60 jours. La dernière commande date d'il y a 80 jours (inférieur au seuil de 90 jours pour l'analyse des produits sporadiques). Une commande semble imminente pour maintenir le stock de ce produit à faible rotation. La quantité est fixée à 1 unité conformément à l'historique récent et à la règle des petites quantités, ignorant l'unique commande de 3u de 2024.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 688 tokens
-- **Output**: 3,830 tokens
-- **Total**: 4,518 tokens
+- **Input**: 884 tokens
+- **Output**: 1,664 tokens
+- **Total**: 2,548 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Recent Sales Trends**
+**Reviewing Recent Sales Data**
 
-My focus is on analyzing the sales data for [LV336]. I've pinpointed recent sales, with one unit sold on 2025-07-17. Delving into the historical data, I see a few key data points for the product, with purchases going back to September 2024. Next, I'm working to compare this sales data to historical trends.
-
-
-**Evaluating Order Cycle Intervals**
-
-My analysis now extends to cycle times, calculating the periods between orders. Intervals vary significantly, with a median around 133 days. Given the last order on 2025-07-17, and the current date (2025-10-05), I'm assessing the risk of a stockout based on these irregular patterns. I'm focusing on historical seasonal purchasing patterns.
+I've been examining the recent sales data for the LV BIO Tartinade Tomato Basil product. Specifically, I'm focusing on the last three months, noting a single unit sold on 2025-07-17. The older data from 2024-09-24, with three units sold, has also been considered. Now I'll start formulating conclusions.
 
 
-**Refining Risk Assessment Logic**
+**Evaluating Purchase Frequency**
 
-I'm now zeroing in on a "Risk of Stockout" calculation for LV336. The median order cycle is about 133 days, suggesting a potential order around late November. However, the last order was in July, and September 2024 saw an order. Given that it's now early October and the September window passed, I'm increasing the risk assessment, even though the 53-day remaining metric from the median cycle isn't triggered. Irregular patterns makes this tricky.
-
-
-**Refining Risk of Stockout**
-
-Now, I'm focusing on the "Risk" calculation. I've re-examined the order history and seasonal patterns. Given the last order, and an irregular cycle, coupled with an order last September, I'm leaning toward a higher risk of stockout. The fact we are past a comparable date from last year, combined with an order in July, suggests we should consider ordering. I'm taking a 10-day window from my predicted order date, and considering a "RISQUE OUI".
+I'm now delving into the product's purchase cycle. The intervals between orders are notably inconsistent, hinting at its sporadic nature. I'm focusing on the 2024 order pattern, considering the last order was roughly 80 days ago. The product is approaching a year since a previous order, suggesting a potential near-term demand. The median interval also confirms this.
 
 
-**Predicting Next Order Placement**
+**Projecting Future Demand**
 
-I've re-evaluated the data and confirmed a prediction near mid-October, considering the 2024 September order. Currently, we're 80 days past the last order. This year's Sept window has passed. Now, the 90-day cycle from the last order suggests mid-October. Given the low-frequency sales, I'm leaning toward advising a single unit order.
-
-
-**Calculating the Recommendation**
-
-I've finalized my analysis and determined a recommended order. Given the 10-day window to a predicted order, I'm suggesting ordering one unit. This decision is supported by the median historical quantity and the fact that we've missed the comparable date window from the previous year. I'm noting the irregular pattern.
+I'm now forecasting the product's next order. Considering the irregular purchase pattern, with an 80-day gap since the last 1u order and a roughly 90-day cycle, I expect a need soon. The recent history, primarily showing 1u sales except for one instance of 3u, suggests a baseline quantity of 1u.
 
 
-**Synthesizing Ordering Recommendations**
+**Forecasting the Restock**
 
-I've re-reviewed the sales data, focusing on the historical patterns. Considering the median order cycle and the timing of last year's orders, I'm now certain about the predicted order date. Given a 10-day window, I will provide a clear ordering recommendation, based on the historical data. The data suggests a need for a single unit.
-
-
-**Concluding Final Recommendations**
-
-The data analysis is now complete. The product shows low, irregular frequency, with a slight seasonal uptick in September. Based on recent and past order dates, I am confidently suggesting ordering a single unit, given that we are approaching a historical order window, and days remaining are 10 days.
+I've been calculating the precise timing for the next order. Considering the sporadic nature of this product, and the 80-day gap since the last replenishment, a new order seems imminent. I'm leaning toward a 1u quantity, considering the history of similar orders. The predicted date is roughly October 15th, making it due soon.
 
 
-**Refining the Predictive Metrics**
+**Concluding Replenishment Strategy**
 
-I've re-evaluated the sales data, focusing on the historical patterns. Considering the median order cycle and the timing of last year's orders, I'm now certain about the predicted order date. Given a 10-day window, I will provide a clear ordering recommendation, based on the historical data. I am using the 90 day approach, the product history is not regular.
-
-
-**Summarizing the Analysis**
-
-I've completed my analysis, focusing on a precise order quantity. Given the irregular sales, I chose to consider the most frequent order quantities in the past. After reviewing my calculations and comparing recent cycles, I'm now providing a single-unit ordering recommendation.
-
-
-
-
-</details>
-
-</details>
-
-
-<details>
-<summary><strong>13. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM: 2u vs Médiane: 1u (Réel: 2u)</summary>
-
-**📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: 2u
-- 📊 **Baseline calculée**: 1.5u
-- 📊 **Médiane historique**: 1u
-- ✅ **Réel commandé**: 2u
-- 📉 **Erreur LLM**: 0u (0.0%)
-- 📉 **Erreur Médiane**: 1u (50.0%)
-
-**🚨 Décision LLM Phase 1 (Risque de rupture):**
-- **Risque détecté**: ✅ OUI → Commande nécessaire
-- **Quantité décidée**: 2u (risque détecté)
-
-**🎯 Niveaux de Confiance:**
-- **Confiance globale**: low
-- **Confiance Phase 1 (détection risque)**: medium
-- **Confiance Phase 2 (quantité)**: medium
-
-**🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commandes sporadiques avec un intervalle médian de 116 jours et une possible récurrence automnale.
-- **Cycle médian (jours)**: 116
-- **Dernière commande**: 2024-08-05
-- **Prochaine prédite**: 2025-10-19 
-- **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
-- **Tendance**: stable
-- **Analyse jour cycle**: N/A
-- **Outliers détectés**: Aucun
-
-**🧠 Raisonnement LLM:**
-Bien que la dernière commande enregistrée remonte à plus d'un an (août 2024), l'historique 2023 montre une activité spécifique en octobre et novembre. En se basant sur la date du 19 octobre 2023, on prédit une commande probable dans les 14 prochains jours. La quantité recommandée de 2 unités correspond au volume maximal habituel pour ce type d'événement.
-
-**📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 667 tokens
-- **Output**: 2,266 tokens
-- **Total**: 2,933 tokens
-
-**🤔 Raisonnement Interne du Modèle (Thinking):**
-<details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
-
-**Considering Sales Data**
-
-I'm currently looking at the sales data for LV Tartinade Lentilles Curry. There's a clear lack of recent activity in the last three months. Digging further, I only see two previous sales recorded, both from last year. I need to figure out why sales are so low.
-
-
-**Analyzing Order Patterns**
-
-Okay, I'm digging into the order intervals and spotting some irregularities. The time between orders is all over the place. I'm also comparing the current date to past order dates to see if there's any correlation. Considering the lack of recent sales, a key question is if the product might be nearing a stock-out situation.
-
-
-**Evaluating Current Risk Level**
-
-I'm assessing the risk of product rupture. Considering the last order was in August 2024, and it's now early October 2025, the time elapsed is significant. However, a potential seasonal spike in October/November, as seen in 2023, is worth noting. Using a median cycle analysis yields an inaccurate date. Therefore, I will check if an order comes in on or around October 19th. Based on the data, the appropriate recommended quantity is 2.
-
-
-**Determining Next Actions**
-
-I've just assessed the risk of product rupture and the most likely date to trigger an order. Given the lack of recent orders, I'm leaning toward a date around October 19th. The calculated recommended quantity is 2, factoring in the historical sales data and the sporadic nature of demand. I'll need to monitor the situation closely in the next two weeks.
-
-
-**Calculating Risk & Quantity**
-
-I've just refined the assessment, focusing on the potential for a seasonal spike in October, mirroring activity from 2023. This is crucial given the product's sporadic sales. I've calculated the risk as "yes" due to the upcoming potential need. The recommended quantity remains at 2 units, considering historical data.
-
-
-**Refining Final Calculations**
-
-I'm now revisiting the seasonality aspect, adjusting my assessment to account for the limited 2023 data. My confidence remains low given the lack of consistent ordering, even though the order history from 2023 suggests a possible October window. The recommended quantity will stay at 2.
+I've determined a replenishment is likely needed soon, given the 80-day interval since the last order of one unit. While the purchase cycle is irregular, a 1u quantity seems appropriate, based on recent sales and the product's sporadic nature. The predicted date for this order falls around October 15th.
 
 
 
@@ -1149,7 +1041,7 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 
 
 
-### 📊 Données d'Input LLM (13 produits)
+### 📊 Données d'Input LLM (12 produits)
 
 
 <details>
@@ -1190,7 +1082,7 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 - 2024-02-05 13:12:52: 2u
 - 2023-10-19 07:02:37: 2u
 
-**✅ Quantité LLM**: 1u (confidence: medium)
+**✅ Quantité LLM**: 1u (confidence: high)
 **📊 Quantité Réelle**: 2u
 
 </details>
@@ -1238,7 +1130,7 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 - 2023-11-21 07:34:13: 2u
 - 2023-10-19 07:02:37: 2u
 
-**✅ Quantité LLM**: 2u (confidence: high)
+**✅ Quantité LLM**: 2u (confidence: medium)
 **📊 Quantité Réelle**: 2u
 
 </details>
@@ -1263,14 +1155,14 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 - 2023-11-21 07:34:13: 2u
 - 2023-10-19 07:02:37: 2u
 
-**✅ Quantité LLM**: 2u (confidence: high)
+**✅ Quantité LLM**: 1u (confidence: high)
 **📊 Quantité Réelle**: 2u
 
 </details>
 
 
 <details>
-<summary><strong>6. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - ✅ LLM Réussi</summary>
+<summary><strong>6. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - ✅ LLM Réussi</summary>
 
 **📅 Commandes Récentes (3 derniers mois):**
 - 2025-09-15 06:21:36: 2u
@@ -1286,23 +1178,7 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 
 
 <details>
-<summary><strong>7. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - ✅ LLM Réussi</summary>
-
-**📅 Commandes Récentes (3 derniers mois):**
-- 2025-09-15 06:21:36: 2u
-- 2025-07-17 09:56:09: 1u
-
-**📅 Commandes N-1 (même période année dernière):**
-- Aucune commande N-1
-
-**✅ Quantité LLM**: 2u (confidence: low)
-**📊 Quantité Réelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - ✅ LLM Réussi</summary>
+<summary><strong>7. [LV161] LV Tartinade Mangue curry 190g</strong> - ✅ LLM Réussi</summary>
 
 **📅 Commandes Récentes (3 derniers mois):**
 - 2025-08-25 06:29:58: 1u
@@ -1318,14 +1194,14 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 - 2023-11-21 07:34:13: 2u
 - 2023-10-19 07:02:37: 2u
 
-**✅ Quantité LLM**: 2u (confidence: high)
+**✅ Quantité LLM**: 1u (confidence: medium)
 **📊 Quantité Réelle**: 2u
 
 </details>
 
 
 <details>
-<summary><strong>9. [LV131] LV Tartinade Potiron 190g</strong> - ✅ LLM Réussi</summary>
+<summary><strong>8. [LV131] LV Tartinade Potiron 190g</strong> - ✅ LLM Réussi</summary>
 
 **📅 Commandes Récentes (3 derniers mois):**
 - 2025-08-25 06:29:58: 1u
@@ -1339,14 +1215,14 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 - 2023-11-21 07:34:13: 1u
 - 2023-10-19 07:02:37: 2u
 
-**✅ Quantité LLM**: 2u (confidence: medium)
+**✅ Quantité LLM**: 1u (confidence: medium)
 **📊 Quantité Réelle**: 2u
 
 </details>
 
 
 <details>
-<summary><strong>10. [LV139] LV Tartinade Paprika Chili 380g</strong> - ✅ LLM Réussi</summary>
+<summary><strong>9. [LV139] LV Tartinade Paprika Chili 380g</strong> - ✅ LLM Réussi</summary>
 
 **📅 Commandes Récentes (3 derniers mois):**
 - 2025-08-25 06:29:58: 1u
@@ -1359,8 +1235,23 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 - 2024-02-05 13:12:52: 1u
 - 2024-01-04 15:45:16: 2u
 
-**✅ Quantité LLM**: 1u (confidence: medium)
+**✅ Quantité LLM**: 1u (confidence: high)
 **📊 Quantité Réelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>10. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - ✅ LLM Réussi</summary>
+
+**📅 Commandes Récentes (3 derniers mois):**
+- 2025-08-25 06:29:58: 1u
+
+**📅 Commandes N-1 (même période année dernière):**
+- Aucune commande N-1
+
+**✅ Quantité LLM**: 1u (confidence: low)
+**📊 Quantité Réelle**: 2u
 
 </details>
 
@@ -1379,7 +1270,7 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 - 2024-01-04 15:45:16: 1u
 - 2023-11-21 07:34:13: 2u
 
-**✅ Quantité LLM**: 2u (confidence: medium)
+**✅ Quantité LLM**: 2u (confidence: high)
 **📊 Quantité Réelle**: 1u
 
 </details>
@@ -1403,29 +1294,11 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 </details>
 
 
-<details>
-<summary><strong>13. [LV137] LV Tartinade Lentilles Curry 190g</strong> - ✅ LLM Réussi</summary>
-
-**📅 Commandes Récentes (3 derniers mois):**
-- Aucune commande récente
-
-**📅 Commandes N-1 (même période année dernière):**
-- 2024-08-05 06:26:02: 1u
-- 2024-04-11 06:31:38: 2u
-- 2023-11-21 07:34:13: 1u
-- 2023-10-19 07:02:37: 2u
-
-**✅ Quantité LLM**: 2u (confidence: low)
-**📊 Quantité Réelle**: 2u
-
-</details>
-
-
 
 
 ---
 
-## False Positives (16)
+## False Positives (22)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -1445,9 +1318,9 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [LV136] LV Tartinade Betterave 190g | 2 | Stock prédit: 1.3u (37j restants) → prédit 2u mais non commandé |
+| [LV136] LV Tartinade Betterave 190g | 1 | Stock prédit: 1.3u (37j restants) → prédit 1u mais non commandé |
 | [LV135] LV Tartinade Basilico 190g | 2 | Stock prédit: 0.3u (9j restants) → prédit 2u mais non commandé |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | Stock prédit: 0.8u (13j restants) → prédit 2u mais non commandé |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | Stock prédit: 0.8u (13j restants) → prédit 1u mais non commandé |
 | [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | Stock prédit: 1.0u (18j restants) → prédit 1u mais non commandé |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | Stock prédit: 1.2u (26j restants) → prédit 2u mais non commandé |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 2 | Stock prédit: 1.2u (26j restants) → prédit 2u mais non commandé |
@@ -1459,13 +1332,19 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 | [LV132] LV Tartinade Houmous type 190g | 1 | Stock prédit: -0.3u (-8j restants) → prédit 1u mais non commandé |
 | [LV330] LV BIO Tartinade Toscana 190g | 1 | Stock prédit: -0.8u (-17j restants) → prédit 1u mais non commandé |
 | [LV187] LV Tartinade Mangue Curry 380g | 1 | Stock prédit: 0.4u (23j restants) → prédit 1u mais non commandé |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
 | [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | Stock prédit: -0.1u (-2j restants) → prédit 1u mais non commandé |
-| [LV189] LV Tartinade Houmous Type 380g | 1 | Stock prédit: 0.4u (61j restants) → prédit 1u mais non commandé |
+| [CB005] CB Apple juice 1l | 2 | Stock prédit: -0.1u (-1j restants) → prédit 2u mais non commandé |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | Stock prédit: -0.0u (-1j restants) → prédit 1u mais non commandé |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 1 | Stock prédit: -0.2u (-11j restants) → prédit 1u mais non commandé |
+| [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g | 1 | Stock prédit: -0.5u (-20j restants) → prédit 1u mais non commandé |
 
 
 ---
 
-## False Negatives (1)
+## False Negatives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Negative ?</summary>
@@ -1485,9 +1364,10 @@ I'm now revisiting the seasonality aspect, adjusting my assessment to account fo
 
 | Produit | Qté commandée | Raison |
 |---------|---------------|--------|
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | En rupture (-17j) mais non prédit - probablement filtré (pas de consommation ou historique insuffisant) |
+| [LV137] LV Tartinade Lentilles Curry 190g | 2 | En rupture (-37j) mais non prédit - probablement filtré (pas de consommation ou historique insuffisant) |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | Stock suffisant: 1.3u (33j restants > seuil 30j) |
 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:24:05.029Z*
+*Rapport généré automatiquement le 2025-12-19T14:54:09.639Z*

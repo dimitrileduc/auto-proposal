@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 15
-- **Tokens**: 10,954 input + 37,970 output = 48,924 total
+- **Tokens**: 13,894 input + 33,813 output = 47,707 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 8.3% | 12 produits prédits, 1 corrects |
+| **Précision** | 9.1% | 11 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 15.4% | Score équilibré global |
+| **F1-Score** | 16.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -174,46 +174,46 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier accéléré à environ 19 jours sur les deux dernières commandes
-- **Cycle médian (jours)**: 19
+- **Pattern temporel**: Accélération du cycle et hausse du volume sur les deux dernières commandes (environ 20 jours)
+- **Cycle médian (jours)**: 21
 - **Dernière commande**: 2025-09-22
-- **Prochaine prédite**: 2025-10-11 
+- **Prochaine prédite**: 2025-10-13_00:00:00.000Z 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: weak
 - **Tendance**: increasing
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 55u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La consommation a fortement augmenté par rapport à l'année précédente (passage de ~100u à 250u par commande). Le rythme s'est stabilisé sur un cycle de 19 jours. La prochaine commande est attendue aux alentours du 11 octobre, ce qui se situe bien dans l'horizon de risque de 30 jours. On recommande de commander la quantité stabilisée la plus récente.
+On observe une rupture nette avec l'historique de 2024 tant en volume qu'en fréquence. Les deux dernières commandes de septembre 2025 atteignent 250 unités avec un intervalle de 19 jours, contre une médiane historique de 125 unités. Étant donné la date du jour (01/10) et la dernière commande effectuée le 22/09, le cycle prévisionnel indique une commande imminente d'ici le 13/10 (soit dans 12 jours), présentant un risque de rupture sur l'horizon 30 jours. La quantité est basée sur les deux dernières occurrences identiques et stables.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 982 tokens
-- **Output**: 1,421 tokens
-- **Total**: 2,403 tokens
+- **Input**: 1,178 tokens
+- **Output**: 1,588 tokens
+- **Total**: 2,766 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Order Intervals**
+**Examining Product Trajectory**
 
-I'm currently focused on the order intervals for the "LD MAYONNAISE TRUFFE" product. I've been examining the recent order history, specifically the time elapsed between each purchase. This includes looking at the 19-day and 49-day gaps. The goal is to develop a reliable purchasing pattern.
-
-
-**Refining Interval Predictions**
-
-I'm now calculating the next order date for "LD MAYONNAISE TRUFFE 250ML WECK ( PF1792)". The median cycle indicates a 19-day interval. Given the last order on 2025-09-22, the next order is predicted on 2025-10-11. As of today, 2025-10-01, that is in 10 days, and the risk assessment is YES, considering a 40-day threshold.
+I'm analyzing the sales data for LD MAYONNAI TRUFFES, specifically the 250ml WECK jar (PF1792). Right now, I'm focusing on the intervals between orders. The most recent data point shows a 19-day gap, which I'm comparing to the previous intervals, which appear to vary. It's time to dig deeper!
 
 
-**Evaluating Quantity and Trends**
+**Projecting Future Orders**
 
-I am now focusing on the quantity and trends of "LD MAYONNAISE TRUFFE 250ML WECK ( PF1792)". The increase to 250u from the previous order pattern is noticeable. I have analyzed the seasonal impact; while weak, it aligns with a rising trend in recent orders. The baseline quantity of 250u, with a high confidence level, is currently the recommendation.
+Considering the 19-day interval and recent dates, I've calculated the predicted next order window as mid-October. Given the date today, I'm already within the estimated cycle time for the next order. Coupled with the rising volume trends, the situation is classified as "Risqué Oui." I'm now cross-referencing this against any known demand fluctuations.
 
 
-**Synthesizing Order Recommendations**
+**Evaluating Volume and Timing**
 
-I am now consolidating all information for the "LD MAYONNAISE TRUFFE 250ML WECK ( PF1792)" product to make final recommendations. I've re-examined the 19-day cycle and the increased quantity of 250u. I am confident in the next order date of 2025-10-11. The current risk level is "YES". I see no need to adjust the baseline quantity, so I'll recommend 250 units with high confidence.
+I'm now assessing the frequency pattern, which reveals an accelerating cycle around 20 days. Also, I've confirmed no outliers and noted a weak seasonality, which aligns with autumn. The trend is clearly increasing, with the latest predicted order date of October 13th, based on a 21-day cycle and a baseline of 250 units.
+
+
+**Refining Cycle and Demand**
+
+I've re-examined the cycle length, now settling on a 21-day period, yielding a predicted order date of October 13th, less than two weeks away. This confirms the "Risqué Oui" assessment. I'm focusing on the baseline quantity of 250 units, given the observed trend. I'm confident in these findings.
 
 
 
@@ -260,7 +260,7 @@ I am now consolidating all information for the "LD MAYONNAISE TRUFFE 250ML WECK 
 
 ---
 
-## False Positives (11)
+## False Positives (10)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -283,14 +283,13 @@ I am now consolidating all information for the "LD MAYONNAISE TRUFFE 250ML WECK 
 | [PF1807] LD SAUCE ANDALOUSE 250ML WECK | 5 | Stock prédit: 2.0u (5j restants) → prédit 5u mais non commandé |
 | [PF3270] JF TRUFFLE MAYONNAISE 925ML | 1 | Stock prédit: 0.9u (47j restants) → prédit 1u mais non commandé |
 | [PF1802] LD MOUTARDE MIEL 250ML WECK | 5 | Stock prédit: 4.4u (53j restants) → prédit 5u mais non commandé |
-| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 43 | Stock prédit: 16.9u (13j restants) → prédit 43u mais non commandé |
+| [PF1799] LD MAYONNAISE OEUFS 250ML WECK | 45 | Stock prédit: 16.9u (13j restants) → prédit 45u mais non commandé |
 | [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 50 | Stock prédit: -3.3u (-1j restants) → prédit 50u mais non commandé |
 | [PF1795] LD MAYONNAI WASABI 250ML WECK | 25 | Stock prédit: 50.2u (76j restants) → prédit 25u mais non commandé |
 | [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 50 | Stock prédit: 28.4u (99j restants) → prédit 50u mais non commandé |
 | [PF1694] LD FR TARTINAD BIO POIVRON 200 | 75 | Stock prédit: 25.7u (39j restants) → prédit 75u mais non commandé |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 50 | Stock prédit: 20.6u (53j restants) → prédit 50u mais non commandé |
 | [PF2937] LD FR TARTINADE BIO POIS 200 | 25 | Stock prédit: 28.7u (69j restants) → prédit 25u mais non commandé |
-| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 25 | Stock prédit: 46.6u (77j restants) → prédit 25u mais non commandé |
-| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 10 | Stock prédit: 21.5u (52j restants) → prédit 10u mais non commandé |
 
 
 ---
@@ -314,4 +313,4 @@ I am now consolidating all information for the "LD MAYONNAISE TRUFFE 250ML WECK 
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:17:26.122Z*
+*Rapport généré automatiquement le 2025-12-19T14:45:35.807Z*

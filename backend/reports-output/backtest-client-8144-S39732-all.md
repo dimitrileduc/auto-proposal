@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 2
-- **Tokens**: 1,376 input + 4,950 output = 6,326 total
+- **Tokens**: 1,768 input + 4,270 output = 6,038 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 100.0% | 1 produits prédits, 1 corrects |
+| **Précision** | 50.0% | 2 produits prédits, 1 corrects |
 | **Rappel** | 100.0% | 1 produits réels, 1 détectés |
-| **F1-Score** | 100.0% | Score équilibré global |
+| **F1-Score** | 66.7% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -174,10 +174,10 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier variant de 19 à 29 jours avec une médiane de 20 jours.
+- **Pattern temporel**: Cycle régulier d'environ 20-23 jours
 - **Cycle médian (jours)**: 20
 - **Dernière commande**: 2025-09-22
-- **Prochaine prédite**: 2025-10-12 
+- **Prochaine prédite**: 2025-10-14_2025-10-15_2025-10-16_2025-10-17_2025-10-18_2025-10-19_2025-10-20_2025-10-21_2025-10-22_2025-10-23_2025-10-24_2025-10-25_2025-10-26_2025-10-27_2025-10-28_2025-10-29_2025-10-30_2025-10-31_2025-11-01_2025-11-02_2025-11-03_2025-11-04_2025-11-05_2025-11-06_2025-11-07_2025-11-08_2025-11-09_2025-11-10_2025-11-11_2025-11-12_2025-11-13_2025-10-14_2025-10-14_2025-10-14_2025-10-14_2025-10-14_2025-10-14_2025-10-14_2025-10-14_2025-10-14_2025-10-12 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
@@ -185,30 +185,30 @@
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La consommation est stable et régulière. Sur la base du cycle médian de 20 jours, la prochaine commande était attendue aux alentours du 12 octobre. Étant donné que nous sommes le 14 octobre, le risque de rupture est imminent ou le stock est déjà épuisé. La quantité recommandée de 40 unités correspond au volume le plus fréquent (75% des cas) et le plus récent.
+Le cycle moyen entre les commandes est de 23 jours et le cycle médian est de 20 jours. La dernière commande datant du 22 septembre, nous sommes exactement à 22 jours d'intervalle à la date du jour (14 octobre). Une commande est donc imminente. Les volumes sont très stables avec une prédominance de 40 unités.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 675 tokens
-- **Output**: 1,166 tokens
-- **Total**: 1,841 tokens
+- **Input**: 871 tokens
+- **Output**: 1,629 tokens
+- **Total**: 2,500 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Production Needs**
+**Reviewing Product History**
 
-I'm currently focused on the production needs for the JEFKE CHIVE V INAIGRETTE, specifically the 5L product [PF3251]. Right now, I am crunching the numbers to determine the optimal production quantities leading up to the target date of October 14, 2025. I've noted recent production history from September and August and am now using those to calculate how the July data fits in.
-
-
-**Projecting Demand and Risk**
-
-I've just finished calculating the production interval and am now assessing the risk. Based on the median interval and the current date, I see that demand is overdue. Also, I've reviewed the historical data and assessed potential production quantities. I'm noting a stable trend with a baseline of 40 units, but with a slight dip recently.
+I'm currently reviewing the historical data for product PF3251, JEFKE CHIVE V INAIGRETTE 5L, and its production volume (u) across several dates. I've noted a consistent 40u in July and August, then a drop to 30u in early September, and back up to 40u in late September. The target date for this product is in mid-October. I'm taking a closer look at this fluctuation.
 
 
-**Evaluating Production Recommendations**
+**Calculating Order Prediction**
 
-I've completed the analysis and am ready to make a recommendation. The median cycle is 20 days, and the predicted order date was October 12th. Today's date, October 14th, signals that demand is already overdue. Based on the consistent production history, I'm confident in recommending a quantity of 40 units.
+I've just finished the calculations. The product's reorder cycle is roughly 20 days, based on the recent history. The last order was on September 22nd. Given the target date of October 14th, the prediction for the next order date is spot on. My analysis suggests an order is indeed imminent, and the recommended quantity is 40.
+
+
+**Finalizing the Recommendation**
+
+I've just finalized the analysis. The product's reorder cycle is consistently around 20 days. The predicted order date aligns perfectly with today. Based on a stable history, the recommended order quantity is 40 units. I am very confident with my findings. Now I'm checking the JSON format and double-checking everything.
 
 
 
@@ -245,7 +245,7 @@ I've completed the analysis and am ready to make a recommendation. The median cy
 
 ---
 
-## False Positives (0)
+## False Positives (1)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -260,7 +260,13 @@ I've completed the analysis and am ready to make a recommendation. The median cy
 **Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
 </details>
 
-*Aucun faux positif (précision = 100%)*
+
+*Produits prédits mais non commandés*
+
+| Produit | Qté prédite | Raison |
+|---------|-------------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 160 | Stock prédit: 160.0u (22j restants) → prédit 160u mais non commandé |
+
 
 ---
 
@@ -283,4 +289,4 @@ I've completed the analysis and am ready to make a recommendation. The median cy
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:18:48.611Z*
+*Rapport généré automatiquement le 2025-12-19T14:47:11.765Z*

@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 8
-- **Tokens**: 5,294 input + 14,897 output = 20,191 total
+- **Tokens**: 6,862 input + 15,719 output = 22,581 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 83.3% | 6 produits prédits, 5 corrects |
+| **Précision** | 71.4% | 7 produits prédits, 5 corrects |
 | **Rappel** | 100.0% | 5 produits réels, 5 détectés |
-| **F1-Score** | 90.9% | Score équilibré global |
+| **F1-Score** | 83.3% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -178,41 +178,46 @@
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commande hebdomadaire régulière, principalement le vendredi
+- **Pattern temporel**: Cycle hebdomadaire principalement marqué le vendredi
 - **Cycle médian (jours)**: 7
 - **Dernière commande**: 2025-06-13
-- **Prochaine prédite**: 2025-06-20 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-06-20 (dans 1j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Habituellement le vendredi, la date d'analyse (jeudi) précède l'échéance d'un jour
 - **Outliers détectés**: 240u
 
 **🧠 Raisonnement LLM:**
-Le cycle hebdomadaire est très clair avec 4 commandes sur 5 passées un vendredi à 7 jours d'intervalle. La prochaine commande est statistiquement prévue pour demain (2025-06-20). La quantité de 160u est la norme constante (mode et médiane), la commande de 240u étant un événement isolé.
+Le produit suit un cycle très régulier avec une médiane de 7 jours entre les commandes. La dernière commande date du 13 juin, ce qui place la prochaine échéance prévisible au 20 juin (demain). La quantité de 160 unités est la norme sur 4 des 5 dernières transactions, l'unique commande de 240u étant traitée comme une fluctuation temporaire.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 703 tokens
-- **Output**: 1,160 tokens
-- **Total**: 1,863 tokens
+- **Input**: 899 tokens
+- **Output**: 1,683 tokens
+- **Total**: 2,582 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Recent Product History**
+**Analyzing Production Volumes**
 
-I'm focused on the production history for [PF0078] FILOU CHASSEUR 5 L. The data shows recent production runs, including 160 units on June 13th, 240 units on June 6th, and another 160 on June 3rd. I'll need to analyze this further to identify patterns or potential issues.
-
-
-**Predicting Future Demand**
-
-I've calculated the median interval between orders, which is 7 days. Considering the last order was on June 13th, I'm expecting the next one on June 20th – tomorrow. Given the current date and the order history, I'm assessing the risk of a stockout and the recommended order quantity, leaning towards 160 units based on the frequency.
+I'm currently focused on the production volumes for the FILOU CHASSEUR product. Observing the recent history, I'm identifying a pattern across the last three months. There seem to be specific dates where we see production runs of either 160 or 240 units. I need to understand what's driving these fluctuations.
 
 
-**Assessing Order Prediction Accuracy**
+**Projecting Production Needs**
 
-Based on the order history, I've confirmed a clear weekly pattern, with a slight acceleration in early June. With tomorrow's predicted order date (June 20th), the recommendation remains at 160 units, showing a high confidence in the accuracy of my analysis and recommendations. I'm focusing on the outlying order of 240, it is clearly an outlier.
+I've just finished analyzing the order intervals and quantities for the FILOU CHASSEUR 5 L. The median production cycle is 7 days, and the predicted next production date is tomorrow, June 20th. Given the target date of June 19th, I've flagged a risk of rupture. My current estimate for the baseline quantity is 160 units, based on recent order history, with no adjustments needed.
+
+
+**Calculating Cycle and Volumes**
+
+I'm now zeroing in on the FILOU CHASSEUR 5 L, confirming the pattern is a regular weekly cycle, with an outlier of 240 units. The upcoming target date is June 19th and the predicted production date is June 20th, indicating an imminent risk. The baseline quantity is still 160. My confidence level for this analysis is high.
+
+
+**Evaluating Quantity and Timing**
+
+I'm now consolidating the data, with a focus on delivering a concise, JSON-friendly analysis. The predicted next order date is tomorrow, June 20th, with a target of June 19th, confirming the risk of rupture. The quantity recommendation remains 160 units, based on a stable trend and consistent weekly cycles. I've re-evaluated the outlier, considering the overall pattern. My reasoning is now focused on succinct presentation.
 
 
 
@@ -238,15 +243,15 @@ Based on the order history, I've confirmed a clear weekly pattern, with a slight
 - **Quantité décidée**: 24u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: medium
+- **Confiance globale**: high
 - **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: medium
+- **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle hebdomadaire régulier avec une préférence pour le vendredi
-- **Cycle médian (jours)**: 8.5
+- **Pattern temporel**: Cycle hebdomadaire irrégulier (7 à 10 jours)
+- **Cycle médian (jours)**: 9
 - **Dernière commande**: 2025-06-13
-- **Prochaine prédite**: 2025-06-20 
+- **Prochaine prédite**: 2025-06-22 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
@@ -254,35 +259,35 @@ Based on the order history, I've confirmed a clear weekly pattern, with a slight
 - **Outliers détectés**: 80u
 
 **🧠 Raisonnement LLM:**
-Le cycle habituel de ce client est hebdomadaire (intervalles de 7 à 10 jours), souvent le vendredi. La dernière commande datant du 13 juin, la prochaine commande théorique tombe le 20 juin (J+1 par rapport à la date de prédiction). Un risque de rupture à 30 jours est donc confirmé. En excluant l'outlier de 80u, la consommation se stabilise autour de 24u (quantité la plus fréquente et base du cycle).
+Le produit suit un cycle de commande fréquent (médiane de 8-9 jours). La commande de 80 unités le 03/06 est un outlier massif (>3x la consommation courante). En l'excluant, les quantités sont très stables autour de 20-24 unités. Une nouvelle commande est attendue pour environ le 22/06, soit dans 3 jours, justifiant un réapprovisionnement de la quantité habituelle.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 698 tokens
-- **Output**: 1,648 tokens
-- **Total**: 2,346 tokens
+- **Input**: 894 tokens
+- **Output**: 1,518 tokens
+- **Total**: 2,412 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Calculating Production Needs**
+**Reviewing Production Data**
 
-I've been calculating production needs for FILOU PROVENCALE, specifically focusing on the 5L variant. The target date is June 19th, 2025. I've noted a need for 20 units on June 13th, with a jump to 80 units on June 3rd. Before that, the demand was lower, at 24 units on the 16th and 9th of May.
-
-
-**Predicting Upcoming Demands**
-
-I'm now focusing on projecting upcoming demand, concentrating on the intervals between orders. These vary, but a pattern of roughly 7 to 10 days emerges, leaning towards a week. Given the latest order on June 13th, I anticipate another order imminently, within the next 4 days to meet the June 19th target. The outlier of 80 units warrants further examination, yet the median quantity remains unknown.
+I'm currently looking at the production data for the FILOU PROVENCALE product. It looks like the most recent production run was on June 13th, with 20 units. There's been some fluctuation in the past three months, with a peak of 80 units on June 3rd. I'll need to analyze these variations for the expert.
 
 
-**Evaluating Order Quantities**
+**Calculating Cycle Times**
 
-I'm now assessing the order quantities, focusing on the discrepancy in the 80-unit order compared to the others. The median and mode both point towards 24 units, which seems to be the baseline. Considering the regular weekly cycle, the next order is highly likely to be on June 20th. I'm leaning toward recommending 24 units.
+I've calculated the median cycle time to be 8.5 days. The most recent order was on June 13th, so I've predicted the next order to be between June 21st and 23rd. Considering today is June 19th, there is a clear risk of rupture, given the short timeframe. I've also identified the 80-unit order as an outlier.
 
 
-**Determining Order Recommendations**
+**Predicting Next Order Date**
 
-I'm now consolidating my findings. The frequency is clearly weekly, with Friday as the typical order day. Given the last order on June 13th, I expect one imminently, most likely June 20th. The data suggests a baseline of 24 units, despite the 80-unit outlier. I am recommending a production of 24 units.
+I've examined the order frequency and see a pattern of approximately weekly or bi-weekly orders, with a median cycle time of 8.5 days. Based on this, and given the last order date of June 13th, I'm predicting the next order to be around June 22nd. This suggests a potential risk of rupture, considering today is June 19th. The 80-unit order is confirmed as an outlier.
+
+
+**Evaluating Data and Patterns**
+
+I've now analyzed the recent history, specifically the inter-order intervals, and determined a median cycle time of 8.5 days, or, roughly weekly/bi-weekly. This confirms the previously noted risk of rupture, given the short timeframe and the upcoming order. The 80-unit order is confirmed as an outlier, with a recommended quantity of 24.
 
 
 
@@ -297,7 +302,7 @@ I'm now consolidating my findings. The frequency is clearly weekly, with Friday 
 
 **📊 Quantités & Prédictions:**
 - 🤖 **Quantité recommandée (finale)**: 5u
-- 📊 **Baseline calculée**: 4.5u
+- 📊 **Baseline calculée**: 5u
 - 📊 **Médiane historique**: 5u
 - ✅ **Réel commandé**: 10u
 - 📉 **Erreur LLM**: 5u (50.0%)
@@ -313,46 +318,51 @@ I'm now consolidating my findings. The frequency is clearly weekly, with Friday 
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Commandes régulières avec une forte prévalence le vendredi, cycle médian de 14 jours.
+- **Pattern temporel**: Cycle régulier principalement hebdomadaire à bimensuel, majoritairement le vendredi
 - **Cycle médian (jours)**: 14
 - **Dernière commande**: 2025-06-13
-- **Prochaine prédite**: 2025-06-27 
-- **Dans horizon 30j ?**: ❌ NON
+- **Prochaine prédite**: 2025-06-27 (dans 8j)
+- **Dans horizon 30j ?**: ✅ OUI
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: N/A
+- **Analyse jour cycle**: Les commandes sont passées quasi exclusivement le vendredi (4 occurrences sur 5)
 - **Outliers détectés**: 60u
 
 **🧠 Raisonnement LLM:**
-Le produit présente un cycle de réapprovisionnement régulier (médiane de 14 jours). La prochaine commande est estimée pour le 27 juin, soit dans 8 jours, ce qui justifie une commande préventive. La quantité de 60 unités est identifiée comme un outlier exceptionnel ; le volume récurrent est de 5 unités.
+Le cycle de commande médian est de 14 jours avec une forte récurrence le vendredi. La date de prochaine commande estimée est le 27 juin 2025, soit dans 8 jours, créant un risque de rupture imminent. En excluant l'outlier de 60 unités (probablement une commande exceptionnelle ou promotionnelle en début d'historique), la demande de fond est très stable à 5 unités (médiane des commandes récentes).
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 696 tokens
-- **Output**: 1,428 tokens
-- **Total**: 2,124 tokens
+- **Input**: 892 tokens
+- **Output**: 2,198 tokens
+- **Total**: 3,090 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Product Timeline**
+**Reviewing Recent Sales Data**
 
-I'm focused on the production timeline for product PF0088. Recent updates show a consistent pattern. We have 3 units slated for June 13th, following 5 units on May 16th. This gives us a 28-day gap between those orders. I need to understand if this gap is normal, or a concern.
-
-
-**Projecting Demand Needs**
-
-I'm now calculating the next potential order date, based on the past order frequency. With a median cycle of 14 days, and the last order on June 13th, I anticipate another order around June 27th. Given the baseline of 5 units and the latest order of 3, a stockout risk is flagged for the near term.
+I've been examining the recent sales data for the FILOU VOL AU VENT product. It looks like we've sold 3 units on June 13th. Before that, 5 units were sold on May 16th, which is about 28 days prior. I am taking a look at this and the patterns emerging from this data.
 
 
-**Confirming Order Predictions**
+**Calculating The Next Date**
 
-I'm now cross-referencing my calculations. The frequency analysis points to a 14-day cycle, indicating an order around June 27th. Comparing this with the 60 unit outlier, I'm adjusting for a stable baseline of 5 units. A stockout risk remains given this demand, but is mitigated by the stable demand. I am now finalizing the recommended order quantity of 5 units.
+I'm zeroing in on predicting the next order date for FILOU VOL AU VENT. Using the median interval, which I calculated to be 14 days, from the order history, I've projected the next order to be around June 27th. Given today's date, this puts us approximately 8 days away from that projected order, hence, I assess some level of risk.
 
 
-**Predicting Next Demand**
+**Predicting Order Quantities**
 
-I'm now zeroing in on the anticipated next order. The frequency analysis suggests an order around June 27th. The last order was six days ago, triggering a stockout risk due to consistent demand. Based on the median of 5 units and the 3 units from the most recent order, I'm recommending we order 5 units.
+I'm now focusing on the quantity prediction for the next order. I've identified an outlier in the past order history. After excluding the outlier, the median order quantity comes out at 5 units. The recent trend shows a slight dip, but I'm cautiously recommending an order for 5 units, given the consistent baseline and lack of seasonal influences.
+
+
+**Synthesizing Findings and Recommendations**
+
+I'm now consolidating the entire analysis for FILOU VOL AU VENT. My confidence remains high regarding the predicted order date of June 27th and the recommended order quantity of 5 units. I'm finalizing the rationale, emphasizing the consistent 14-day cycle and the stable demand, which is currently less than 10 days away.
+
+
+**Concluding and Refining Analysis**
+
+I'm now putting the final touches on the JSON output, and also looking at the day cycle analysis. It turns out orders tend to fall on Fridays, which provides added context. I am also checking the JSON format, to assure all the expected parameters are included and valid. It also seems the baseline quantity is correct.
 
 
 
@@ -383,7 +393,7 @@ I'm now zeroing in on the anticipated next order. The frequency analysis suggest
 - **Confiance Phase 2 (quantité)**: high
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier oscillant entre 11 et 25 jours, avec une médiane de 19 jours.
+- **Pattern temporel**: Cycle bi-mensuel régulier avec des intervalles de 11 à 25 jours (médiane 19j)
 - **Cycle médian (jours)**: 19
 - **Dernière commande**: 2025-06-03
 - **Prochaine prédite**: 2025-06-22 
@@ -394,35 +404,30 @@ I'm now zeroing in on the anticipated next order. The frequency analysis suggest
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La demande est extrêmement stable avec une quantité fixe de 52 unités par commande. Le cycle médian calculé sur les 3 derniers mois est de 19 jours. La dernière commande datant du 3 juin, la prochaine commande est estimée aux alentours du 22 juin, soit dans seulement 3 jours par rapport à la date actuelle (19 juin). Le risque de commande imminente est donc très élevé.
+Le comportement client est extrêmement stable avec une quantité fixe de 52 unités par commande sur les 3 derniers mois. Le cycle médian suggère une nouvelle commande autour du 22 juin. Étant donné la date actuelle du 19 juin, la commande est imminente sous 3 jours, justifiant une recommandation de réapprovisionnement de 52 unités.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 702 tokens
-- **Output**: 1,380 tokens
-- **Total**: 2,082 tokens
+- **Input**: 898 tokens
+- **Output**: 1,145 tokens
+- **Total**: 2,043 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Tracking Recent Product History**
+**Tracking Product History Updates**
 
-I'm currently focused on the product history for [PF0085] FILOU CURRY KET CHUP 10 KG. Recent data shows a consistent 52u unit usage. The intervals between tracked dates are decreasing - from 25 days to 11. I need to keep an eye on this for any significant deviations.
-
-
-**Forecasting Future Orders**
-
-I've calculated the median interval between orders to be 19 days. Based on this, and the last order on 2025-06-03, I predict the next order will be around 2025-06-22. With today being 2025-06-19, this suggests an order is expected in approximately 3 days. A risk assessment confirms this needs attention. Quantity has been a consistent 52 units.
+I'm focused on the product's update frequency. It looks like the interval between the last two updates is 11 days. Currently, another update is logged, dating back to today, the 19th of June. I am now noting the timing of these updates.
 
 
-**Evaluating Order Predictions**
+**Assessing Order Prediction**
 
-I've examined the recent order history, confirming the anticipated 52-unit quantity. The predicted order date, June 22nd, is fast approaching, so I've calculated and confirmed it, with a high confidence. The intervals suggest a stable, regular pattern. My recommendations are clear.
+I'm calculating the median interval, which is 19 days, between orders for PF0085. Given this, I anticipate the next order around June 22nd. Since today is June 19th, the next order is due in 3 days. There may be a stockout risk within the next 30 days.
 
 
-**Refining Order Predictions**
+**Predicting Order Replenishment**
 
-I've re-evaluated the order intervals, confirming a median cycle of 19 days. Based on the last order on June 3rd, I've confirmed that the next one is due on June 22nd. This analysis has identified a need for an order in approximately three days. The quantity is stable at 52 units, and the reasoning is sound.
+I'm revisiting the order for PF0085. The median interval is precisely 19 days, with the last order on June 3rd. Adding 19 days predicts a new order on June 22nd.  It's now June 19th; thus, the next order is due in 3 days. A stable demand pattern is observed, with each order being exactly 52 units, and the risk detection is high.
 
 
 
@@ -453,46 +458,51 @@ I've re-evaluated the order intervals, confirming a median cycle of 19 days. Bas
 - **Confiance Phase 2 (quantité)**: medium
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Intervalle variable entre 4 et 21 jours, moyenne à 12.5 jours
-- **Cycle médian (jours)**: 13
+- **Pattern temporel**: Cycle irrégulier observé entre 4 et 21 jours, moyenne de 12,5 jours
+- **Cycle médian (jours)**: 21
 - **Dernière commande**: 2025-05-23
-- **Prochaine prédite**: 2025-06-05 
+- **Prochaine prédite**: 2025-06-13 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 26u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La dernière commande date d'il y a 27 jours (2025-05-23), ce qui excède le cycle maximum observé de 21 jours. Le client est donc en rupture probable ou en retard critique par rapport à son rythme habituel. La quantité de 52 unités représente le volume standard majoritaire (mode) sur l'historique récent.
+La dernière commande remonte au 23 mai (soit 27 jours). Étant donné les intervalles précédents (4 et 21 jours), le client est en retard de commande. La quantité de 52 unités est la plus récurrente et représente le volume standard observé.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 646 tokens
-- **Output**: 1,389 tokens
-- **Total**: 2,035 tokens
+- **Input**: 842 tokens
+- **Output**: 1,679 tokens
+- **Total**: 2,521 tokens
 
 **🤔 Raisonnement Interne du Modèle (Thinking):**
 <details>
 <summary>Voir le reasoning interne de Kimi K2</summary>
 
-**Examining Product Demand**
+**Examining Recent Trends**
 
-My initial review of the tomato ketchup product, PF0959, reveals fluctuating demand. I've noted sales of 52 units on May 23rd, 26 units on May 2nd, and 52 units on April 28th. The data suggests the need to analyze the specific factors driving these variations and consider the lack of data prior to the current timeframe.
-
-
-**Assessing Order Frequency**
-
-I've calculated the intervals between orders, finding a median and average of 12.5 days. Comparing this to the time since the last order, 27 days, and also to the maximum interval (21 days), I've determined that a new order is likely overdue, therefore a supply shortage is possible. I've set a 30-day horizon for analysis.
+I'm currently reviewing the recent history of the FILOU TOMATO KET CHUP product, specifically looking at sales volume over the past three months. The data from May reveals two distinct sales events. I'm focusing on identifying any patterns or significant fluctuations in demand to inform the next steps.
 
 
-**Determining Supply Action**
+**Calculating Order Predictions**
 
-I've just refined the analysis of the tomato ketchup product, PF0959, and confirmed a likely overdue order. The customer's order frequency, approximately every 12.5 days on average, suggests a purchase was predicted on June 5th. Since the current date is June 19th, and 27 days have passed since the last order, I am recommending immediate action to secure a full order of 52 units, mitigating the risk of a supply shortage.
+I've moved on to predicting the next order date for PF0959. Considering the 4- and 21-day intervals between orders, the analysis indicates we're overdue. Using the last interval of 21 days leads to a predicted date of 2025-06-13, which has passed. I'll need to re-evaluate the model.
 
 
 **Refining Order Predictions**
 
-I've just finished running an in-depth analysis of the product's demand history. Based on the calculated frequency patterns and the fact the customer is overdue for an order, I'm recommending the standard quantity of 52 units. I've classified this as a high-risk situation, given the time elapsed since the last order.
+I'm now recalculating the predicted order date for PF0959. Considering it's overdue, I'm analyzing the 21-day cycle, alongside a 4-day gap, to assess potential reasons for the delay. The quantity is stable at 52 units, with no immediate adjustment needed.
+
+
+**Evaluating Time-Based Data**
+
+I'm now zeroing in on the PF0959 product, specifically the FILOU TOMATO KET CHUP 10KG. Analyzing the dates, I've confirmed an overdue order, 27 days since the last. Using the last cycle of 21 days suggests a due date of 2025-06-13. Given the pattern and the immediate risk, I'll recommend 52 units.
+
+
+**Recommending Action and Volume**
+
+I've completed the analysis, determining the order for PF0959 is significantly overdue, with 27 days passed since the last order. Considering the typical 21-day cycle, a recommendation of 52 units is warranted immediately to mitigate any risk of disruption, with the high likelihood of an imminent order.
 
 
 
@@ -539,7 +549,7 @@ I've just finished running an in-depth analysis of the product's demand history.
 **📅 Commandes N-1 (même période année dernière):**
 - Aucune commande N-1
 
-**✅ Quantité LLM**: 24u (confidence: medium)
+**✅ Quantité LLM**: 24u (confidence: high)
 **📊 Quantité Réelle**: 50u
 
 </details>
@@ -604,7 +614,7 @@ I've just finished running an in-depth analysis of the product's demand history.
 
 ---
 
-## False Positives (1)
+## False Positives (2)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -624,6 +634,7 @@ I've just finished running an in-depth analysis of the product's demand history.
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
+| [PF0089] FILOU VOL AU VENT 400 GR | 20 | Stock prédit: 6.2u (14j restants) → prédit 20u mais non commandé |
 | [PF0520] YVALLI PET BOUL TOMATE 2,5 KG | 6 | Stock prédit: -2.5u (-22j restants) → prédit 6u mais non commandé |
 
 
@@ -648,4 +659,4 @@ I've just finished running an in-depth analysis of the product's demand history.
 
 ---
 
-*Rapport généré automatiquement le 2025-12-19T11:18:25.517Z*
+*Rapport généré automatiquement le 2025-12-19T14:46:49.911Z*
