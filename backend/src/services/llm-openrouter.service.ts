@@ -3,10 +3,81 @@
  *
  * Utilise l'API OpenRouter directement avec response_format JSON Schema
  * pour garantir des réponses valides (pas de parsing failures)
+ *
+ * + Injection de demos few-shot optimisés par ax-llm
  */
 
+import { readFileSync, existsSync } from "fs";
+import { join } from "path";
+
 // Configuration - facile à changer
-const MODEL = "google/gemini-3-flash-preview";  // Gemini 3 Flash Preview ($0.50/M input, $3.00/M output) - MEILLEUR MODÈLE
+const MODEL = "google/gemini-3-flash-preview";
+const DEMOS_FILE = join(process.cwd(), "optimization-results/stock-predictor-optimized.json");
+
+// Cache des demos chargés
+let cachedDemos: Array<{
+  productName: string;
+  recentOrders: string;
+  lastYearOrders: string;
+  currentDate: string;
+  quantity: number;
+  reasoning: string;
+}> | null = null;
+
+/**
+ * Charge les demos optimisés par ax
+ */
+function loadOptimizedDemos(): typeof cachedDemos {
+  if (cachedDemos !== null) return cachedDemos;
+
+  try {
+    if (!existsSync(DEMOS_FILE)) {
+      console.warn("⚠️ Fichier demos non trouvé, utilisation sans few-shot");
+      cachedDemos = [];
+      return cachedDemos;
+    }
+
+    const data = JSON.parse(readFileSync(DEMOS_FILE, "utf-8"));
+    const traces = data.demos?.[0]?.traces || [];
+
+    // Prendre max 5 demos diversifiés (mix de quantity=0 et quantity>0)
+    const demosWithQty = traces.filter((t: any) => t.quantity > 0).slice(0, 3);
+    const demosWithoutQty = traces.filter((t: any) => t.quantity === 0).slice(0, 2);
+
+    cachedDemos = [...demosWithQty, ...demosWithoutQty];
+    console.log(`✅ ${cachedDemos.length} demos few-shot chargés`);
+    return cachedDemos;
+  } catch (error) {
+    console.warn("⚠️ Erreur chargement demos:", error);
+    cachedDemos = [];
+    return cachedDemos;
+  }
+}
+
+/**
+ * Formate les demos en section few-shot pour le prompt
+ */
+function formatDemosSection(): string {
+  const demos = loadOptimizedDemos();
+  if (!demos || demos.length === 0) return "";
+
+  let section = "\n## EXEMPLES DE RAISONNEMENT (few-shot)\n\n";
+
+  for (let i = 0; i < demos.length; i++) {
+    const d = demos[i];
+    section += `### Exemple ${i + 1}:\n`;
+    section += `Produit: ${d.productName}\n`;
+    section += `Historique récent:\n${d.recentOrders}\n`;
+    section += `Historique N-1: ${d.lastYearOrders}\n`;
+    section += `Date: ${d.currentDate}\n`;
+    section += `→ Quantité: ${d.quantity}\n`;
+    section += `→ Raisonnement: ${d.reasoning}\n\n`;
+  }
+
+  return section;
+}
+
+// Gemini 3 Flash Preview ($0.50/M input, $3.00/M output) - MEILLEUR MODÈLE
 // Autres options:
 // - "anthropic/claude-haiku-4.5" ($1/M input, $5/M output)
 // - "anthropic/claude-sonnet-4.5" ($3/M input, $15/M output)

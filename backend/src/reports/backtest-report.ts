@@ -494,10 +494,10 @@ function calculateRMSE(truePositives: ProductMatch[]): number {
   return Math.sqrt(sumSquaredErrors / truePositives.length);
 }
 
-function calculateDaysAgo(dateString: string): number {
+function calculateDaysAgo(dateString: string, referenceDate?: string): number {
   const date = new Date(dateString);
-  const now = new Date();
-  return Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+  const ref = referenceDate ? new Date(referenceDate) : new Date();
+  return Math.floor((ref.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
 }
 
 function detectTrend(quantities: number[]): 'increasing' | 'stable' | 'decreasing' {
@@ -654,7 +654,7 @@ function calculateHistoryStatistics(quantities: number[], orders: HistoricalOrde
  * Helpers de features
  */
 
-function calculateProductFeatures(orders: HistoricalOrder[], statistics: HistoryStatistics): ProductFeatures {
+function calculateProductFeatures(orders: HistoricalOrder[], statistics: HistoryStatistics, cutoffDate?: string): ProductFeatures {
   if (orders.length === 0) {
     return {
       quantityType: 'variable',
@@ -677,7 +677,8 @@ function calculateProductFeatures(orders: HistoricalOrder[], statistics: History
     ? (dates[dates.length - 1].getTime() - dates[0].getTime()) / (1000 * 60 * 60 * 24) / (dates.length - 1)
     : 0;
 
-  const lastOrderDaysAgo = (new Date().getTime() - dates[dates.length - 1].getTime()) / (1000 * 60 * 60 * 24);
+  const referenceDate = cutoffDate ? new Date(cutoffDate) : new Date();
+  const lastOrderDaysAgo = (referenceDate.getTime() - dates[dates.length - 1].getTime()) / (1000 * 60 * 60 * 24);
   const isSeasonalProduct = detectSeasonality(dates);
   const hasRecentActivity = lastOrderDaysAgo <= 30;
 
@@ -686,7 +687,8 @@ function calculateProductFeatures(orders: HistoricalOrder[], statistics: History
 
 function enrichProductWithFeatures(
   product: ProductMatch,
-  analyzedProduct?: ProductStockStatus
+  analyzedProduct?: ProductStockStatus,
+  cutoffDate?: string
 ): {
   orderCount: number;
   orders: Array<{ orderId: number; orderName: string; date: string; quantity: number; priceUnit: number }>;
@@ -696,7 +698,7 @@ function enrichProductWithFeatures(
   const orders = analyzedProduct?.order_history || [];
   const quantities = orders.map(o => o.quantity);
   const statistics = calculateHistoryStatistics(quantities, orders);
-  const features = calculateProductFeatures(orders, statistics);
+  const features = calculateProductFeatures(orders, statistics, cutoffDate);
 
   return {
     orderCount: orders.length,
@@ -839,7 +841,7 @@ export function generateBacktestReportJSONv2(
     );
 
     // History + statistics + features
-    const history = enrichProductWithFeatures(tp, analyzedProduct);
+    const history = enrichProductWithFeatures(tp, analyzedProduct, comparison.cutoffDate);
 
     // LLM data
     const llm: EnrichedProductMatch["llm"] = tp.llm_required
@@ -958,7 +960,7 @@ export function generateBacktestReportJSONv2(
     if (analyzedProduct?.order_history) {
       const orderCount = analyzedProduct.order_history.length;
       const lastOrderDaysAgo = orderCount > 0
-        ? calculateDaysAgo(analyzedProduct.order_history[orderCount - 1].date_order)
+        ? calculateDaysAgo(analyzedProduct.order_history[0].date_order, comparison.cutoffDate)
         : undefined;
 
       context.history = {
@@ -1045,7 +1047,7 @@ export function generateBacktestReportJSONv2(
     if (analyzedProduct?.order_history) {
       const orderCount = analyzedProduct.order_history.length;
       const lastOrderDaysAgo = orderCount > 0
-        ? calculateDaysAgo(analyzedProduct.order_history[orderCount - 1].date_order)
+        ? calculateDaysAgo(analyzedProduct.order_history[0].date_order, comparison.cutoffDate)
         : undefined;
 
       context.history = {

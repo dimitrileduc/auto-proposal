@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@ai-sdk/anthropic": "^2.0.45",
+    "@ax-llm/ax": "^15.1.1",
+    "@ax-llm/ax-ai-sdk-provider": "^15.1.1",
     "@hono/node-server": "^1.19.4",
     "@openrouter/ai-sdk-provider": "^1.2.3",
     "@trigger.dev/sdk": "4.3.0",

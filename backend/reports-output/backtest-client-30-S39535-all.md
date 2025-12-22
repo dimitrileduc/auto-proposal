@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 9
-- **Tokens**: 9,956 input + 20,233 output = 30,189 total
+- **Tokens**: 0 input + 0 output = 0 total
 
 
 ---
@@ -23,9 +23,9 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **Précision** | 50.0% | 4 produits prédits, 2 corrects |
+| **Précision** | 25.0% | 8 produits prédits, 2 corrects |
 | **Rappel** | 100.0% | 2 produits réels, 2 détectés |
-| **F1-Score** | 66.7% | Score équilibré global |
+| **F1-Score** | 40.0% | Score équilibré global |
 
 <details>
 <summary>Comment est calculée la Précision ?</summary>
@@ -69,12 +69,12 @@
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
-| **MAE** | 3.00 unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | 300.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
-| **MAPE** | 300.0% | Erreur moyenne en % (biaisé, pour info) |
-| **Bias** | 300.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
-| Exact Match (=0u) | 0 | Égalité parfaite |
-| Partial Match (>0u) | 2 | Avec erreur |
+| **MAE** | 0.00 unités | Erreur moyenne absolue (symétrique) |
+| **wMAPE** | 0.0% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **MAPE** | 0.0% | Erreur moyenne en % (biaisé, pour info) |
+| **Bias** | 0.0% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Exact Match (=0u) | 2 | Égalité parfaite |
+| Partial Match (>0u) | 0 | Avec erreur |
 
 <details>
 <summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
@@ -147,8 +147,8 @@
 
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 4 | 1 | 3.0 | 300.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 4 | 1 | 3.0 | 300.0% | ✅ partial | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | 🎯 exact | ✅ Oui | ✅ Oui | 🤖 LLM |
 
 
 ### 🤖 Détails des Prédictions LLM (2 produits)
@@ -170,56 +170,30 @@
 - **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: high
-- **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: high
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: N/A
+- **Confiance Phase 2 (quantité)**: N/A
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier de 2 à 3 semaines
-- **Cycle médian (jours)**: 18
-- **Dernière commande**: 2025-09-26
-- **Prochaine prédite**: 2025-10-14 
+- **Pattern temporel**: Analysé par ax
+- **Cycle médian (jours)**: N/A
+- **Dernière commande**: N/A
+- **Prochaine prédite**: N/A 
 - **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
-- **Outliers détectés**: 13u
+- **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit présente une consommation très stable sur 2025 avec une quantité de 1u par commande. L'intervalle médian entre les commandes est de 18 jours. Avec une dernière commande au 26/09, le réapprovisionnement est attendu aux alentours du 14 octobre, soit dans 12 jours, ce qui justifie une commande préventive sur l'horizon de 30 jours.
+1) Risque de rupture modéré car le produit s'écoule régulièrement par petites unités. 2) Le cycle actuel montre une commande environ toutes les 2 à 3 semaines (dernière le 26/09). Une commande est donc probable d'ici fin octobre. 3) La médiane des commandes récentes est de 1u. Bien que l'historique N-1 montre des pics isolés à 13u, la tendance actuelle est stable à 1u par commande, d'où une estimation conservatrice de 1u.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,174 tokens
-- **Output**: 1,484 tokens
-- **Total**: 2,658 tokens
-
-**🤔 Raisonnement Interne du Modèle (Thinking):**
-<details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
-
-**Assessing Sales Patterns**
-
-My analysis of the JF040 product's sales data reveals a somewhat erratic pattern. The most recent purchase occurred six days ago, but the frequency of sales appears inconsistent. There are gaps of varying lengths between transactions, indicating an unpredictable demand. Further investigation is needed to identify the underlying causes.
+- **Input**: 0 tokens
+- **Output**: 0 tokens
+- **Total**: 0 tokens
 
 
-**Projecting Demand and Risk**
-
-The median interval between recent sales is 18 days, pointing to an estimated next order around October 14th. Given today's date of October 2nd, that's just 12 days away. Considering that this is within the 30-day window, a new order is definitely needed.
-
-
-**Calculating Recommended Order Size**
-
-Based on the sales data, I'm confident about my recommendation. The product's recent pattern strongly suggests a 1-unit order. I've considered the consistent small quantities of recent orders, the lack of seasonality, and the stable demand trend. My analysis of the JF040 product points to the need for a single unit.
-
-
-**Finalizing the Recommendation**
-
-My final analysis confirms my initial assessment. The product's consistent 1-unit orders and predictable 18-day cycle strongly support ordering a single unit. The recent purchase and upcoming date necessitate prompt action. My reasoning is firm, and the data is clear.
-
-
-
-
-</details>
 
 </details>
 
@@ -240,56 +214,30 @@ My final analysis confirms my initial assessment. The product's consistent 1-uni
 - **Quantité décidée**: 1u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: high
-- **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: high
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: N/A
+- **Confiance Phase 2 (quantité)**: N/A
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle irrégulier entre 13 et 46 jours avec une activité accrue historiquement en septembre-octobre
-- **Cycle médian (jours)**: 21
-- **Dernière commande**: 2025-09-08
-- **Prochaine prédite**: 2025-09-29 
+- **Pattern temporel**: Analysé par ax
+- **Cycle médian (jours)**: N/A
+- **Dernière commande**: N/A
+- **Prochaine prédite**: N/A 
 - **Dans horizon 30j ?**: ❌ NON
-- **Saisonnalité**: weak
+- **Saisonnalité**: none
 - **Tendance**: stable
 - **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-La dernière commande remonte à 24 jours (08/09/2025). Bien que le cycle récent de 2025 soit de 46 jours, l'historique N-1 montre une accélération forte fin septembre avec des commandes rapprochées. La médiane globale de 21 jours suggère qu'une commande est déjà attendue. En suivant la règle des petites quantités (1-2u), on se base sur la médiane récente de 2025 qui est de 1u, ignorant les pics de volume de 4u constatés en 2024.
+1) Risque de rupture modéré car la dernière commande remonte à près d'un mois et le produit est régulièrement consommé en automne. 2) Le cycle est irrégulier mais une commande survient généralement toutes les 3 à 5 semaines ; la période actuelle correspond au pic d'activité de l'an dernier (octobre). 3) Quantité estimée à 1u car les commandes récentes sont de 1u et la médiane historique, malgré un pic ponctuel à 4u l'an passé, reste de 1u.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,116 tokens
-- **Output**: 1,747 tokens
-- **Total**: 2,863 tokens
-
-**🤔 Raisonnement Interne du Modèle (Thinking):**
-<details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
-
-**Examining Product Demand Trends**
-
-I've been analyzing the product's sales data, specifically the JF038 ketchup. I've noted the recent sales history, observing a couple of purchases in 2025. I am currently focusing on the intervals between orders, trying to identify patterns. I'm also comparing this year's performance to the previous year, examining the total units sold in 2024.
+- **Input**: 0 tokens
+- **Output**: 0 tokens
+- **Total**: 0 tokens
 
 
-**Investigating Order Intervals**
-
-I'm now calculating the median order intervals for the JF038 ketchup, comparing 2024 and 2025. The 2024 median interval is 13 days, contrasting with the 46-day interval observed in 2025 so far. Considering the last order was on September 8th, the 17-day median predicts an order by September 25th. Since it's now October 2nd, I'm noting the potential delay.
-
-
-**Evaluating Seasonality and Risk**
-
-Given the JF038 ketchup's order history, I'm now focusing on seasonality. The fact the median interval is 17 days (or 46 days recently) and the last order was 24 days ago suggests potential delays. However, last year's September-October peak needs consideration, leading me to assess the risks associated with potential needs within the next 30 days.
-
-
-**Determining the Order Quantity**
-
-The focus has shifted towards determining the ideal order quantity. Reviewing both 2025 and 2024 data, and analyzing order frequency and recent purchasing trends, I am leaning towards a single unit, especially given the consistent 1u orders in 2025. This aligns with the "always prioritize recent trends" principle and the small order size in general.
-
-
-
-
-</details>
 
 </details>
 
@@ -318,7 +266,7 @@ The focus has shifted towards determining the ideal order quantity. Reviewing bo
 - 2024-04-25 14:37:04: 1u
 - 2024-04-25 08:31:46: 13u
 
-**✅ Quantité LLM**: 1u (confidence: high)
+**✅ Quantité LLM**: 1u (confidence: medium)
 **📊 Quantité Réelle**: 1u
 
 </details>
@@ -341,7 +289,7 @@ The focus has shifted towards determining the ideal order quantity. Reviewing bo
 - 2024-04-30 10:09:27: 2u
 - 2024-04-25 14:37:04: 1u
 
-**✅ Quantité LLM**: 1u (confidence: high)
+**✅ Quantité LLM**: 1u (confidence: medium)
 **📊 Quantité Réelle**: 1u
 
 </details>
@@ -351,7 +299,7 @@ The focus has shifted towards determining the ideal order quantity. Reviewing bo
 
 ---
 
-## False Positives (2)
+## False Positives (6)
 
 <details>
 <summary>Qu'est-ce qu'un False Positive ?</summary>
@@ -371,8 +319,12 @@ The focus has shifted towards determining the ideal order quantity. Reviewing bo
 
 | Produit | Qté prédite | Raison |
 |---------|-------------|--------|
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 4 | Stock prédit: 0.3u (16j restants) → prédit 4u mais non commandé |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 4 | Stock prédit: 0.5u (33j restants) → prédit 4u mais non commandé |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | Stock prédit: 0.3u (16j restants) → prédit 1u mais non commandé |
+| [JF035] JF BURGER SQUEEZE 300ML | 1 | Stock prédit: -3.3u (-27j restants) → prédit 1u mais non commandé |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | Stock prédit: -3.4u (-27j restants) → prédit 1u mais non commandé |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | Stock prédit: 0.5u (33j restants) → prédit 1u mais non commandé |
+| [LV036] LV Olives Vertes dénoyautées BE 350g | 161 | Stock prédit: -29.9u (-10j restants) → prédit 161u mais non commandé |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 2 | Stock prédit: -12.2u (-96j restants) → prédit 2u mais non commandé |
 
 
 ---
@@ -396,4 +348,4 @@ The focus has shifted towards determining the ideal order quantity. Reviewing bo
 
 ---
 
-*Rapport généré automatiquement le 2025-12-22T13:55:03.395Z*
+*Rapport généré automatiquement le 2025-12-22T17:02:55.320Z*

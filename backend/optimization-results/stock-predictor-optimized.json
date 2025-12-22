@@ -1,0 +1,531 @@
+{
+  "version": "1.0",
+  "optimizedAt": "2025-12-22T16:27:33.670Z",
+  "model": "google/gemini-3-flash-preview",
+  "config": {
+    "maxExamples": 1000,
+    "numTrials": 100
+  },
+  "baseline": {
+    "averageScore": 0.5375,
+    "precision": 0.5,
+    "recall": 1,
+    "f1": 0.6666666666666666,
+    "avgQuantityError": 1.25,
+    "wmape": 3.937007874015748
+  },
+  "bestScore": 0.425531914893617,
+  "stats": {
+    "totalCalls": 141,
+    "successfulDemos": 60,
+    "estimatedTokenUsage": 0,
+    "earlyStopped": false,
+    "resourceUsage": {
+      "totalTokens": 0,
+      "totalTime": 0,
+      "avgLatencyPerEval": 0,
+      "costByModel": {}
+    },
+    "convergenceInfo": {
+      "converged": false,
+      "finalImprovement": 0,
+      "stagnationRounds": 0,
+      "convergenceThreshold": 0.01
+    },
+    "bestScore": 0,
+    "bestConfiguration": {}
+  },
+  "demos": [
+    {
+      "traces": [
+        {
+          "productName": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
+          "recentOrders": "2025-10-01 (mer.): 1u\n2025-08-27 (mer.): 1u\n2025-07-22 (mar.): 1u\n2025-07-08 (mar.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-07",
+          "quantity": 1,
+          "reasoning": "Le produit suit un cycle de commande régulier d'environ une unité par mois (dernières commandes le 01/10, 27/08, 22/07). Une commande est donc probable d'ici fin octobre ou début novembre."
+        },
+        {
+          "productName": "[MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-12",
+          "quantity": 0,
+          "reasoning": "Aucune commande récente ou historique (N-1) n'est enregistrée pour ce produit, aucune prédiction de commande n'est possible."
+        },
+        {
+          "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+          "recentOrders": "2025-09-12 (ven.): 4u\n2025-09-09 (mar.): 4u\n2025-08-19 (mar.): 1u\n2025-07-23 (mer.): 4u\n2025-07-07 (lun.): 3u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-09-23",
+          "quantity": 4,
+          "reasoning": "Le produit présente une fréquence de commande élevée (environ toutes les deux semaines) avec un volume constant de 4 unités lors des sessions les plus récentes. Une commande est attendue sous 30 jours."
+        },
+        {
+          "productName": "[LV139] LV Tartinade Paprika Chili 380g",
+          "recentOrders": "2025-08-25 (lun.): 1u\n2025-07-17 (jeu.): 1u",
+          "lastYearOrders": "2024-08-05 (lun.): 1u\n2024-05-16 (jeu.): 1u\n2024-04-11 (jeu.): 2u\n2024-02-05 (lun.): 1u\n2024-01-04 (jeu.): 2u",
+          "currentDate": "2025-10-05",
+          "quantity": 1,
+          "reasoning": "Historique de commandes régulier d'environ une unité tous les deux mois. La dernière commande remontant au 25 août, une nouvelle commande est probable dans les 30 jours à venir."
+        },
+        {
+          "productName": "[JF021] JF PICKLES 350 ML",
+          "recentOrders": "2025-08-05 (mar.): 3u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-08",
+          "quantity": 0,
+          "reasoning": "Une seule commande enregistrée il y a plus de deux mois avec un faible volume. Pas de récurrence établie ni d'historique N-1 pour justifier une commande imminente."
+        },
+        {
+          "productName": "[MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g",
+          "recentOrders": "2025-09-29 (lun.): 16u\n2025-08-19 (mar.): 16u\n2025-08-11 (lun.): 16u\n2025-08-07 (jeu.): 16u\n2025-07-14 (lun.): 16u",
+          "lastYearOrders": "2024-08-28 (mer.): 32u\n2024-01-09 (mar.): 48u",
+          "currentDate": "2025-10-07",
+          "quantity": 16,
+          "reasoning": "Le produit présente une fréquence de commande régulière d'environ 16 unités par mois sur les 3 derniers mois. La dernière commande datant du 29 septembre, une nouvelle commande de 16 unités est prévue pour la fin du mois d'octobre."
+        },
+        {
+          "productName": "[PF0084] FILOU CARBONNADES 800 GR",
+          "recentOrders": "2025-09-20 (sam.): 2u\n2025-08-05 (mar.): 3u",
+          "lastYearOrders": "2024-09-30 (lun.): 2u",
+          "currentDate": "2025-10-12",
+          "quantity": 2,
+          "reasoning": "Le produit présente un cycle de commande régulier environ tous les 45 jours. La dernière commande datant du 20 septembre, une nouvelle commande est attendue fin octobre, alignée sur l'historique de l'année précédente (30 sept)."
+        },
+        {
+          "productName": "[PF1809] LD SAUCE BEARNAISE 250ML WECK",
+          "recentOrders": "2025-09-23 (mar.): 0u\n2025-08-29 (ven.): 200u\n2025-08-07 (jeu.): 200u",
+          "lastYearOrders": "2024-09-30 (lun.): 200u\n2024-09-09 (lun.): 150u\n2024-08-14 (mer.): 75u\n2024-06-26 (mer.): 1u\n2024-06-12 (mer.): 300u\n2024-05-27 (lun.): 75u\n2024-05-03 (ven.): 75u\n2024-04-17 (mer.): 100u\n2024-03-28 (jeu.): 75u\n2024-03-18 (lun.): 100u\n2024-02-23 (ven.): 50u\n2024-02-02 (ven.): 50u",
+          "currentDate": "2025-10-13",
+          "quantity": 200,
+          "reasoning": "Le produit présente un cycle de commande régulier environ tous les 30 jours. Une commande de 200u est attendue pour compenser l'absence de volume en septembre (0u) et s'aligner sur l'historique N-1 (200u le 30/09/2024)."
+        },
+        {
+          "productName": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
+          "recentOrders": "2025-09-17 (mer.): 2u\n2025-08-19 (mar.): 3u\n2025-08-05 (mar.): 2u",
+          "lastYearOrders": "2024-07-15 (lun.): 4u\n2024-07-01 (lun.): 3u",
+          "currentDate": "2025-10-08",
+          "quantity": 2,
+          "reasoning": "Le produit suit un cycle de commande régulier environ toutes les 3 à 4 semaines. La dernière commande datant du 17 septembre, une nouvelle commande de 2 unités est prévue pour la mi-octobre."
+        },
+        {
+          "productName": "[LV159] LV Tartinade aux Truffes  135g ",
+          "recentOrders": "2025-09-15 (lun.): 1u\n2025-08-07 (jeu.): 1u\n2025-07-17 (jeu.): 1u",
+          "lastYearOrders": "2024-08-05 (lun.): 1u\n2024-04-11 (jeu.): 2u\n2024-02-05 (lun.): 2u\n2023-10-19 (jeu.): 2u",
+          "currentDate": "2025-10-05",
+          "quantity": 1,
+          "reasoning": "Le produit présente une fréquence de commande régulière d'environ une unité tous les 30 à 45 jours. La dernière commande datant du 15 septembre, une nouvelle commande est prévue pour la mi-octobre."
+        },
+        {
+          "productName": "[LV134] LV BIO Tartinade Olives Vertes 190g",
+          "recentOrders": "2025-09-10 (mer.): 1u\n2025-07-24 (jeu.): 1u\n2025-07-17 (jeu.): 2u",
+          "lastYearOrders": "2024-08-02 (ven.): 1u\n2024-07-15 (lun.): 2u\n2024-06-11 (mar.): 2u\n2024-04-15 (lun.): 2u\n2024-02-20 (mar.): 2u\n2024-02-02 (ven.): 2u\n2024-01-22 (lun.): 2u\n2023-12-15 (ven.): 1u\n2023-10-30 (lun.): 2u",
+          "currentDate": "2025-10-08",
+          "quantity": 1,
+          "reasoning": "Le produit est commandé régulièrement tous les 1 à 2 mois. La dernière commande datant du 10 septembre, une nouvelle commande d'une unité est prévue avant la fin du mois d'octobre pour maintenir le stock."
+        },
+        {
+          "productName": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
+          "recentOrders": "2025-09-22 (lun.): 1u\n2025-08-27 (mer.): 1u\n2025-08-20 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-08",
+          "quantity": 1,
+          "reasoning": "Commande régulière d'une unité toutes les 3-4 semaines environ ; la dernière remontant au 22 septembre, un réapprovisionnement est probable d'ici fin octobre."
+        },
+        {
+          "productName": "[PF1690] LD BBQ BIO 300G",
+          "recentOrders": "2025-09-18 (jeu.): 25u\n2025-09-04 (jeu.): 25u\n2025-09-04 (jeu.): 25u\n2025-08-07 (jeu.): 25u\n2025-07-18 (ven.): 25u",
+          "lastYearOrders": "2024-10-03 (jeu.): 25u\n2024-09-19 (jeu.): 25u\n2024-09-19 (jeu.): 25u\n2024-09-19 (jeu.): 25u\n2024-09-05 (jeu.): 25u\n2024-08-09 (ven.): 25u\n2024-08-08 (jeu.): 25u\n2024-08-07 (mer.): 25u\n2024-07-01 (lun.): 25u\n2024-07-01 (lun.): 25u\n2024-07-01 (lun.): 25u\n2024-06-28 (ven.): 25u",
+          "currentDate": "2025-10-15",
+          "quantity": 25,
+          "reasoning": "Le produit présente un historique de commandes régulières de 25 unités, y compris à la même période l'année dernière (octobre). Une commande est prévue pour maintenir le stock suite aux rotations observées."
+        },
+        {
+          "productName": "[TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g",
+          "recentOrders": "2025-08-11 (lun.): 1u",
+          "lastYearOrders": "2024-07-29 (lun.): 2u\n2024-07-10 (mer.): 3u",
+          "currentDate": "2025-09-22",
+          "quantity": 0,
+          "reasoning": "Produit à rotation très faible. Une seule commande de 1u il y a plus de 40 jours et aucune commande sur la même période l'année dernière. Aucune commande prévue à court terme."
+        },
+        {
+          "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+          "recentOrders": "2025-09-22 (lun.): 2u\n2025-09-10 (mer.): 3u\n2025-08-27 (mer.): 1u\n2025-08-04 (lun.): 3u\n2025-07-16 (mer.): 3u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-08",
+          "quantity": 2,
+          "reasoning": "Le produit présente une fréquence de commande régulière (environ toutes les 2 à 3 semaines). La dernière commande datant du 22 septembre, une nouvelle commande est attendue en octobre. La quantité moyenne observée est de 2 unités."
+        },
+        {
+          "productName": "[LV139] LV Tartinade Paprika Chili 380g",
+          "recentOrders": "2025-08-26 (mar.): 192u",
+          "lastYearOrders": "2024-09-09 (lun.): 192u\n2024-06-14 (ven.): 240u\n2024-05-06 (lun.): 80u\n2024-03-27 (mer.): 144u\n2024-03-05 (mar.): 192u\n2023-12-19 (mar.): 192u\n2023-10-18 (mer.): 192u",
+          "currentDate": "2025-10-12",
+          "quantity": 192,
+          "reasoning": "Historique stable avec une commande de 192u enregistrée à la même période l'année dernière (septembre/octobre)."
+        },
+        {
+          "productName": "[PF1627] LV TARTINADE BIO POTIRON 200ML",
+          "recentOrders": "2025-09-16 (mar.): 700u\n2025-07-18 (ven.): 0u",
+          "lastYearOrders": "2024-09-16 (lun.): 700u\n2024-08-08 (jeu.): 647u\n2024-05-07 (mar.): 329u\n2024-03-13 (mer.): 334u\n2024-01-10 (mer.): 335u\n2023-11-27 (lun.): 300u",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Commande importante de 700u effectuée il y a moins d'un mois, couvrant les besoins habituels constatés l'année dernière à la même période."
+        },
+        {
+          "productName": "[PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML",
+          "recentOrders": "2025-09-11 (jeu.): 70u\n2025-08-05 (mar.): 80u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-12",
+          "quantity": 70,
+          "reasoning": "Le produit présente un cycle de commande mensuel régulier (début août, mi-septembre). Une nouvelle commande est attendue dans les 30 jours, avec une quantité estimée basée sur les volumes récents."
+        },
+        {
+          "productName": "[PF0085] FILOU CURRY KETCHUP  10 KG",
+          "recentOrders": "2025-06-03 (mar.): 52u\n2025-05-23 (ven.): 52u\n2025-04-28 (lun.): 52u\n2025-04-04 (ven.): 52u\n2025-03-21 (ven.): 52u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-06-19",
+          "quantity": 52,
+          "reasoning": "Le produit présente une fréquence de commande régulière d'environ toutes les 3 à 4 semaines avec un volume constant de 52 unités. La dernière commande datant du 3 juin, la prochaine est prévue d'ici début juillet."
+        },
+        {
+          "productName": "[LV302] LV BIO Tartin'apero Carotte Gingembre SDP 200 ml ",
+          "recentOrders": "2025-09-16 (mar.): 350u\n2025-09-04 (jeu.): 434u",
+          "lastYearOrders": "2024-09-11 (mer.): 350u\n2024-06-11 (mar.): 350u\n2023-12-19 (mar.): 350u",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Les commandes sont espacées d'environ 3 à 6 mois. La dernière commande datant du 16 septembre, le stock est suffisant pour couvrir les 30 prochains jours."
+        },
+        {
+          "productName": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+          "recentOrders": "2025-09-25 (jeu.): 360u\n2025-09-03 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Une commande massive de 360u a été effectuée récemment (25/09), ce qui couvre largement les besoins pour les 30 prochains jours par rapport au rythme habituel."
+        },
+        {
+          "productName": "[WIG07] WIGNAC cidre naturel bio sans alcool 750ml",
+          "recentOrders": "2025-09-11 (jeu.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-09-23",
+          "quantity": 0,
+          "reasoning": "Une seule commande isolée enregistrée récemment (12 jours avant l'analyse). Sans historique récurrent ni saisonnalité N-1, il n'y a pas de base pour prévoir une nouvelle commande sous 30 jours."
+        },
+        {
+          "productName": "[PF0088] FILOU VOL AU VENT 800 GR",
+          "recentOrders": "2025-06-13 (ven.): 3u\n2025-05-16 (ven.): 5u\n2025-04-28 (lun.): 5u\n2025-04-18 (ven.): 5u\n2025-04-11 (ven.): 60u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-06-19",
+          "quantity": 5,
+          "reasoning": "Le produit présente une fréquence de commande régulière (environ toutes les 3-4 semaines) avec un volume stable de 5 unités, après une commande initiale de stock plus importante en avril. Une nouvelle commande est attendue fin juin."
+        },
+        {
+          "productName": "[LV161] LV Tartinade Mangue curry 190g",
+          "recentOrders": "2025-08-26 (mar.): 4u\n2025-08-04 (lun.): 4u\n2025-07-10 (jeu.): 4u",
+          "lastYearOrders": "2024-09-20 (ven.): 4u\n2024-09-02 (lun.): 4u\n2024-08-05 (lun.): 4u\n2024-06-27 (jeu.): 5u\n2024-06-05 (mer.): 3u\n2024-05-08 (mer.): 3u\n2024-04-16 (mar.): 3u\n2024-03-25 (lun.): 4u",
+          "currentDate": "2025-09-23",
+          "quantity": 4,
+          "reasoning": "Le produit présente une fréquence de commande régulière d'environ une fois par mois. La dernière commande date d'il y a 28 jours et l'historique N-1 confirme une demande constante de 4 unités en septembre."
+        },
+        {
+          "productName": "[MF0024] MF KETCHUP 250g",
+          "recentOrders": "2025-09-25 (jeu.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Une seule commande enregistrée il y a moins de 20 jours. Sans historique N-1 ni fréquence établie, aucun réapprovisionnement n'est prévu sous 30 jours."
+        },
+        {
+          "productName": "[PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML",
+          "recentOrders": "2025-10-02 (jeu.): 50u\n2025-10-01 (mer.): 25u\n2025-10-01 (mer.): 25u\n2025-09-18 (jeu.): 25u\n2025-09-18 (jeu.): 50u",
+          "lastYearOrders": "2024-10-03 (jeu.): 25u\n2024-10-03 (jeu.): 25u\n2024-10-03 (jeu.): 25u\n2024-10-03 (jeu.): 25u\n2024-09-19 (jeu.): 25u\n2024-09-19 (jeu.): 25u\n2024-09-19 (jeu.): 25u\n2024-09-19 (jeu.): 50u\n2024-09-05 (jeu.): 25u\n2024-09-05 (jeu.): 50u\n2024-09-05 (jeu.): 25u\n2024-09-05 (jeu.): 25u",
+          "currentDate": "2025-10-15",
+          "quantity": 50,
+          "reasoning": "Les commandes sont régulières toutes les deux semaines environ (début et mi-septembre, puis début octobre). Suite aux dernières livraisons du 01/10 et 02/10, une nouvelle commande est attendue d'ici la fin du mois d'octobre, correspondant au volume historique de la période N-1 (environ 100u par mois)."
+        },
+        {
+          "productName": "[ORG04] ORGANICA crunchy fruit fraise 12g",
+          "recentOrders": "2025-09-25 (jeu.): 90u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Une commande importante de 90u a été passée récemment (25 septembre). Aucune commande n'est prévue dans les 30 prochains jours car le stock devrait être suffisant compte tenu de l'historique."
+        },
+        {
+          "productName": "[fsv05] Noix de pecan nature bio vrac 2,2kg ",
+          "recentOrders": "2025-09-17 (mer.): 3u\n2025-08-04 (lun.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-09-30",
+          "quantity": 1,
+          "reasoning": "Le produit est commandé environ toutes les 6 semaines (44 jours entre les deux dernières commandes). La prochaine commande est attendue mi-octobre."
+        },
+        {
+          "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+          "recentOrders": "2025-09-22 (lun.): 3u\n2025-09-08 (lun.): 5u\n2025-08-25 (lun.): 6u\n2025-08-11 (lun.): 3u\n2025-07-14 (lun.): 8u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-05",
+          "quantity": 4,
+          "reasoning": "Commande régulière tous les 14 jours environ le lundi. La dernière commande date du 22 septembre, la prochaine est prévue autour du 6 octobre pour une quantité moyenne de 4 unités."
+        },
+        {
+          "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+          "recentOrders": "2025-09-10 (mer.): 3u\n2025-07-24 (jeu.): 3u\n2025-07-17 (jeu.): 1u",
+          "lastYearOrders": "2024-09-09 (lun.): 4u\n2024-08-02 (ven.): 3u\n2024-07-15 (lun.): 3u\n2024-06-21 (ven.): 3u\n2024-06-11 (mar.): 2u\n2024-05-21 (mar.): 3u\n2024-04-15 (lun.): 2u\n2024-03-15 (ven.): 3u\n2024-02-20 (mar.): 3u\n2024-02-02 (ven.): 3u\n2024-01-22 (lun.): 1u\n2023-12-15 (ven.): 1u",
+          "currentDate": "2025-10-08",
+          "quantity": 3,
+          "reasoning": "Historique de consommation régulier avec une commande environ tous les 30 jours. La dernière commande datant du 10 septembre, une nouvelle commande de 3 unités est attendue début octobre."
+        },
+        {
+          "productName": "[PF1840] LD TARTINADE BIO TRIPACK",
+          "recentOrders": "2025-09-24 (mer.): 605u\n2025-09-24 (mer.): 1745u\n2025-09-24 (mer.): 2655u\n2025-09-24 (mer.): 725u",
+          "lastYearOrders": "2024-09-05 (jeu.): 1290u\n2024-07-19 (ven.): 630u\n2024-07-18 (jeu.): 1395u\n2024-07-18 (jeu.): 545u\n2024-07-18 (jeu.): 95u\n2024-07-18 (jeu.): 2260u",
+          "currentDate": "2025-10-15",
+          "quantity": 0,
+          "reasoning": "Une commande massive de 5730 unités a été passée le 24 septembre 2025. Au vu de l'historique N-1, aucun réapprovisionnement n'est nécessaire dans les 30 jours."
+        },
+        {
+          "productName": "[TVF003] TVF TARTINADE BIO CAROTTE 180g",
+          "recentOrders": "2025-09-02 (mar.): 2u",
+          "lastYearOrders": "2024-07-29 (lun.): 2u\n2024-07-10 (mer.): 2u\n2024-06-11 (mar.): 2u",
+          "currentDate": "2025-09-22",
+          "quantity": 0,
+          "reasoning": "Produit à rotation très faible. La dernière commande de 2u date du 2025-09-02 et la fréquence historique ne justifie pas un réapprovisionnement sous 30 jours."
+        },
+        {
+          "productName": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+          "recentOrders": "2025-08-26 (mar.): 2u\n2025-08-04 (lun.): 1u\n2025-07-10 (jeu.): 2u",
+          "lastYearOrders": "2024-09-02 (lun.): 1u\n2024-08-05 (lun.): 2u\n2024-06-27 (jeu.): 2u\n2024-05-08 (mer.): 1u\n2024-04-16 (mar.): 3u\n2024-03-25 (lun.): 1u\n2024-02-20 (mar.): 3u",
+          "currentDate": "2025-09-23",
+          "quantity": 1,
+          "reasoning": "Le produit est commandé régulièrement tous les 20 à 30 jours. La dernière commande date d'il y a 28 jours, une nouvelle commande d'une unité est prévue prochainement pour maintenir le stock."
+        },
+        {
+          "productName": "[PF3363] DE_AUFSTR_041_T6 KORO TARTINADE BIO BETTERAVE 380G ",
+          "recentOrders": "2025-10-09 (jeu.): 172u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Commande très récente (il y a 4 jours) d'un volume important (172u). Aucun historique N-1 pour justifier une fréquence élevée. Pas de nouvelle commande prévue sous 30 jours."
+        },
+        {
+          "productName": "[JF039] JF MAYO BARAKI SQUEEZE 300ML",
+          "recentOrders": "2025-09-25 (jeu.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Une seule commande isolée enregistrée récemment, sans historique de récurrence permettant de prévoir un réapprovisionnement automatique sous 30 jours."
+        },
+        {
+          "productName": "[LV136] LV Tartinade Betterave 190g",
+          "recentOrders": "2025-09-09 (mar.): 100u\n2025-08-13 (mer.): 100u",
+          "lastYearOrders": "2024-10-01 (mar.): 100u",
+          "currentDate": "2025-10-13",
+          "quantity": 100,
+          "reasoning": "Le produit présente un cycle de commande mensuel régulier de 100 unités. La dernière commande datant d'il y a un mois et l'historique N-1 confirmant un besoin à cette période, une commande est prévue sous 30 jours."
+        },
+        {
+          "productName": "[PF1693] LD FR TARTINAD BIO CAROTTE 200",
+          "recentOrders": "2025-09-05 (ven.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-02",
+          "quantity": 0,
+          "reasoning": "Une seule commande isolée de 1u enregistrée le 05/09. Sans historique N-1 ni fréquence établie, aucune commande n'est prévue dans les 30 prochains jours."
+        },
+        {
+          "productName": "[PF2980] LV TARTINADE BIO AIL OURS200ML",
+          "recentOrders": "2025-08-27 (mer.): 932u\n2025-08-22 (ven.): 700u",
+          "lastYearOrders": "2024-09-16 (lun.): 416u\n2024-07-03 (mer.): 694u\n2024-05-07 (mar.): 700u\n2024-03-13 (mer.): 700u\n2024-01-09 (mar.): 679u\n2023-11-27 (lun.): 700u\n2023-11-02 (jeu.): 700u",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Les volumes récents (1632u en août) couvrent largement les besoins actuels basés sur l'historique N-1 (416u en septembre), aucune commande n'est nécessaire dans les 30 jours."
+        },
+        {
+          "productName": "[MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-12",
+          "quantity": 0,
+          "reasoning": "Aucune commande récente ou historique (N-1) n'est enregistrée pour ce produit à cette période, aucune tendance ne justifie donc une commande dans les 30 jours."
+        },
+        {
+          "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+          "recentOrders": "2025-09-03 (mer.): 1u\n2025-08-27 (mer.): 1u\n2025-07-08 (mar.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-07",
+          "quantity": 1,
+          "reasoning": "Le produit est commandé de manière régulière environ toutes les 4 à 6 semaines. La dernière commande datant du 3 septembre, un réapprovisionnement est prévu en octobre."
+        },
+        {
+          "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+          "recentOrders": "2025-07-09 (mer.): 14u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-07",
+          "quantity": 0,
+          "reasoning": "Une seule commande enregistrée il y a 3 mois (Juillet), sans historique N-1 ni commandes récentes en Août ou Septembre permettant de justifier un réapprovisionnement imminent."
+        },
+        {
+          "productName": "[LV002] LV Pizza Croccantina au romarin 150 g bio",
+          "recentOrders": "2025-07-10 (jeu.): 1u",
+          "lastYearOrders": "2024-09-02 (lun.): 1u\n2024-08-05 (lun.): 2u\n2024-06-05 (mer.): 2u\n2024-03-25 (lun.): 1u\n2024-02-20 (mar.): 5u",
+          "currentDate": "2025-09-23",
+          "quantity": 1,
+          "reasoning": "Produit avec une demande saisonnière stable à cette période l'année dernière (septembre). La dernière commande remonte à plus de deux mois, une commande de réapprovisionnement est probable dans les 30 jours."
+        },
+        {
+          "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+          "recentOrders": "2025-08-06 (mer.): 2u\n2025-07-09 (mer.): 1u\n2025-06-30 (lun.): 2u\n2025-06-23 (lun.): 2u\n2025-06-11 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-08-25",
+          "quantity": 2,
+          "reasoning": "Le produit présente une fréquence de commande régulière (environ toutes les 2 à 3 semaines). La dernière commande datant du 06/08, une nouvelle commande de 2 unités est prévue d'ici fin septembre."
+        },
+        {
+          "productName": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
+          "recentOrders": "2025-09-08 (lun.): 1u\n2025-08-11 (lun.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-05",
+          "quantity": 1,
+          "reasoning": "Le produit présente un cycle de commande régulier d'une unité par mois (début août et début septembre). Une commande est donc prévue pour début octobre."
+        },
+        {
+          "productName": "[PF1627] LV TARTINADE BIO POTIRON 200ML",
+          "recentOrders": "2025-09-16 (mar.): 700u\n2025-07-18 (ven.): 0u",
+          "lastYearOrders": "2024-09-16 (lun.): 700u\n2024-08-08 (jeu.): 647u\n2024-05-07 (mar.): 329u\n2024-03-13 (mer.): 334u\n2024-01-10 (mer.): 335u\n2023-11-27 (lun.): 300u",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "La dernière commande de 700u date d'il y a moins d'un mois (16 septembre), ce qui correspond au volume annuel à cette période. Aucune nouvelle commande n'est prévue sous 30 jours."
+        },
+        {
+          "productName": "[LV160] LV Tartinade Aubergine 190g",
+          "recentOrders": "2025-08-06 (mer.): 2u\n2025-07-09 (mer.): 1u\n2025-06-30 (lun.): 2u\n2025-06-23 (lun.): 2u\n2025-06-11 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-08-25",
+          "quantity": 2,
+          "reasoning": "Le produit présente une fréquence de commande régulière (environ toutes les 2 à 3 semaines) avec une quantité constante de 2 unités. La dernière commande date d'il y a 19 jours, une nouvelle commande est donc attendue prochainement."
+        },
+        {
+          "productName": "[JF039] JF MAYO BARAKI SQUEEZE 300ML",
+          "recentOrders": "2025-09-25 (jeu.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Une seule commande isolée enregistrée récemment (25 septembre). Sans historique récurrent ni données N-1, il n'y a pas de base pour prévoir une nouvelle commande sous 30 jours."
+        },
+        {
+          "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+          "recentOrders": "2025-09-09 (mar.): 270u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Commande volumineuse de 270u passée il y a environ 30 jours ; pas de récurrence établie suggérant un besoin immédiat dans les 30 prochains jours."
+        },
+        {
+          "productName": "[LV129] LV Tartinade Carotte Gingembre 190g",
+          "recentOrders": "2025-09-10 (mer.): 2u\n2025-07-24 (jeu.): 3u\n2025-07-17 (jeu.): 1u",
+          "lastYearOrders": "2024-09-09 (lun.): 2u\n2024-08-02 (ven.): 2u\n2024-07-15 (lun.): 2u\n2024-06-21 (ven.): 2u\n2024-06-11 (mar.): 2u\n2024-05-21 (mar.): 2u\n2024-04-15 (lun.): 2u\n2024-03-15 (ven.): 2u\n2024-02-20 (mar.): 2u\n2024-02-02 (ven.): 2u\n2024-01-22 (lun.): 2u\n2023-12-15 (ven.): 1u",
+          "currentDate": "2025-10-08",
+          "quantity": 2,
+          "reasoning": "Le produit présente une fréquence de commande régulière d'environ une fois par mois. La dernière commande datant du 10 septembre, une nouvelle commande est attendue en octobre, pour un volume habituel de 2 unités."
+        },
+        {
+          "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+          "recentOrders": "2025-08-06 (mer.): 6u\n2025-06-23 (lun.): 4u\n2025-06-11 (mer.): 10u\n2025-05-26 (lun.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-08-25",
+          "quantity": 6,
+          "reasoning": "Basé sur l'historique récent avec une commande environ toutes les 3-4 semaines, la prochaine commande est attendue fin août ou début septembre avec une quantité moyenne de 6 unités."
+        },
+        {
+          "productName": "[RIT09] RITCHIE Cola - canette 330ml",
+          "recentOrders": "2025-08-20 (mer.): 1u\n2025-07-23 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-09-30",
+          "quantity": 0,
+          "reasoning": "Les commandes sont espacées d'environ un mois avec de faibles volumes (1-2u). La dernière commande datant du 20 août, une nouvelle commande n'est pas imminente pour les 30 prochains jours."
+        },
+        {
+          "productName": "[PF3295] LV TARTINADES BELGIQUE BIO TRIPACK",
+          "recentOrders": "2025-09-30 (mar.): 920u",
+          "lastYearOrders": "2024-07-15 (lun.): 960u",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Une commande importante de 920u a été passée il y a moins de 15 jours. Le volume commandé l'année dernière (960u) suggère un approvisionnement ponctuel pour une période prolongée plutôt qu'un besoin mensuel récurrent. Aucune nouvelle commande n'est prévue sous 30 jours."
+        },
+        {
+          "productName": "[PF0959] FILOU TOMATO KETCHUP 10KG",
+          "recentOrders": "2025-05-23 (ven.): 52u\n2025-05-02 (ven.): 26u\n2025-04-28 (lun.): 52u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-06-19",
+          "quantity": 52,
+          "reasoning": "Le produit présente un cycle de commande régulier d'environ 52 unités par mois (commandes fin avril et fin mai). Une nouvelle commande est attendue fin juin pour maintenir ce stock."
+        },
+        {
+          "productName": "[MF0042] MF Brotaufstrich Tomate Bärlauch 250g",
+          "recentOrders": "2025-09-29 (lun.): 16u\n2025-08-19 (mar.): 32u\n2025-08-11 (lun.): 16u\n2025-08-07 (jeu.): 16u\n2025-07-14 (lun.): 32u",
+          "lastYearOrders": "2024-08-28 (mer.): 48u",
+          "currentDate": "2025-10-07",
+          "quantity": 16,
+          "reasoning": "Historique de commandes régulières toutes les 2 à 4 semaines. La dernière commande datant du 2025-09-29, un réapprovisionnement de 16u est prévu d'ici fin octobre."
+        },
+        {
+          "productName": "[PF3392] LV FR TARTINAPERO BIO ASPERGE BOCAL 190G",
+          "recentOrders": "2025-08-22 (ven.): 434u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-13",
+          "quantity": 0,
+          "reasoning": "Une commande importante de 434 unités a été passée le 22 août. Sans historique N-1 pour justifier une fréquence élevée, aucune nouvelle commande n'est prévue dans les 30 jours."
+        },
+        {
+          "productName": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+          "recentOrders": "2025-08-11 (lun.): 2u",
+          "lastYearOrders": "2024-07-29 (lun.): 2u\n2024-07-10 (mer.): 1u\n2024-06-04 (mar.): 2u",
+          "currentDate": "2025-09-22",
+          "quantity": 0,
+          "reasoning": "Le produit présente une fréquence de commande très faible et irrégulière. La dernière commande remonte à plus de 40 jours et l'historique N-1 ne montre aucune activité en septembre ou octobre."
+        },
+        {
+          "productName": "[LV160] LV Tartinade Aubergine 190g",
+          "recentOrders": "2025-09-12 (ven.): 50u\n2025-09-01 (lun.): 5u\n2025-07-04 (ven.): 25u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-02",
+          "quantity": 50,
+          "reasoning": "Le produit présente une tendance de croissance significative sur les 3 derniers mois (25u, puis 5u, puis 50u). Une commande est probable dans les 30 jours pour maintenir le stock face à cette demande croissante."
+        },
+        {
+          "productName": "[PF0078] FILOU CHASSEUR 5 L",
+          "recentOrders": "2025-09-17 (mer.): 160u\n2025-09-05 (ven.): 80u\n2025-08-14 (jeu.): 160u\n2025-08-08 (ven.): 80u\n2025-08-07 (jeu.): 160u",
+          "lastYearOrders": "2024-09-24 (mar.): 80u\n2024-08-30 (ven.): 160u\n2024-08-12 (lun.): 160u\n2024-07-19 (ven.): 80u\n2024-06-28 (ven.): 160u\n2024-06-17 (lun.): 80u\n2024-05-31 (ven.): 80u\n2024-05-27 (lun.): 120u\n2024-04-30 (mar.): 160u\n2024-04-05 (ven.): 80u\n2024-03-22 (ven.): 80u\n2024-03-15 (ven.): 80u",
+          "currentDate": "2025-10-02",
+          "quantity": 160,
+          "reasoning": "Le produit présente un cycle de commande régulier environ toutes les 2 à 3 semaines avec des volumes de 80u ou 160u. La dernière commande remontant au 17 septembre, une nouvelle commande de 160u est attendue début octobre pour maintenir le stock."
+        },
+        {
+          "productName": "[LV135] LV Tartinade Basilico 190g",
+          "recentOrders": "2025-08-06 (mer.): 2u\n2025-07-09 (mer.): 2u\n2025-06-30 (lun.): 2u\n2025-06-23 (lun.): 2u\n2025-06-18 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-08-25",
+          "quantity": 2,
+          "reasoning": "Le produit présente une fréquence de commande élevée (environ toutes les 1 à 2 semaines) avec une quantité constante de 2 unités. La dernière commande remontant au 6 août, un réapprovisionnement est attendu sous 30 jours."
+        },
+        {
+          "productName": "[MF0029] MF Tarti Datte chili 250g",
+          "recentOrders": "2025-08-26 (mar.): 48u\n2025-08-19 (mar.): 16u\n2025-08-11 (lun.): 16u\n2025-08-07 (jeu.): 16u\n2025-07-14 (lun.): 16u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-07",
+          "quantity": 16,
+          "reasoning": "Le produit présente une fréquence de commande régulière (environ toutes les 1 à 2 semaines) en août. Bien qu'aucune commande n'ait été passée en septembre, une commande de réapprovisionnement de 16 unités est probable sous 30 jours pour maintenir le stock."
+        }
+      ],
+      "programId": "247cb1a0"
+    }
+  ],
+  "finalConfiguration": {
+    "maxRounds": 100,
+    "maxDemos": 15,
+    "batchSize": 1,
+    "successRate": 0.425531914893617
+  }
+}

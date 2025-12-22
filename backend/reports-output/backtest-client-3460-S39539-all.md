@@ -12,7 +12,7 @@
 ### 🤖 Usage LLM
 
 - **Appels**: 3
-- **Tokens**: 3,464 input + 5,927 output = 9,391 total
+- **Tokens**: 0 input + 0 output = 0 total
 
 
 ---
@@ -169,61 +169,30 @@
 - **Quantité décidée**: 160u (risque détecté)
 
 **🎯 Niveaux de Confiance:**
-- **Confiance globale**: high
-- **Confiance Phase 1 (détection risque)**: high
-- **Confiance Phase 2 (quantité)**: high
+- **Confiance globale**: medium
+- **Confiance Phase 1 (détection risque)**: N/A
+- **Confiance Phase 2 (quantité)**: N/A
 
 **🔍 Analyse LLM Complète:**
-- **Pattern temporel**: Cycle régulier alternant entre 6 et 15 jours, souvent groupé en multiples de 80u
-- **Cycle médian (jours)**: 12
-- **Dernière commande**: 2025-09-17
-- **Prochaine prédite**: 2025-09-29 (dans -3j)
-- **Dans horizon 30j ?**: ✅ OUI
+- **Pattern temporel**: Analysé par ax
+- **Cycle médian (jours)**: N/A
+- **Dernière commande**: N/A
+- **Prochaine prédite**: N/A 
+- **Dans horizon 30j ?**: ❌ NON
 - **Saisonnalité**: none
 - **Tendance**: stable
-- **Analyse jour cycle**: Les commandes surviennent principalement en milieu et fin de semaine, la dernière commande date d'il y a 15 jours sur un cycle moyen de 12 jours.
+- **Analyse jour cycle**: N/A
 - **Outliers détectés**: Aucun
 
 **🧠 Raisonnement LLM:**
-Le produit suit un cycle de réapprovisionnement très régulier d'environ 12 jours. La dernière commande remontant au 17 septembre, le client est déjà en phase de réapprovisionnement (15 jours écoulés). Les quantités sont standardisées par multiples de 80u, avec une médiane récente à 160u.
+1) Risque de rupture modéré car la dernière commande remonte à 15 jours et le cycle moyen est de 10 à 15 jours. 2) Le cycle est régulier avec environ deux à trois commandes par mois ; la dernière livraison date du 17 septembre. 3) Quantité estimée à 160u car c'est la valeur médiane haute observée fréquemment dans l'historique récent et N-1 pour ce produit.
 
 **📊 Tokens utilisés pour cette prédiction:**
-- **Input**: 1,325 tokens
-- **Output**: 1,820 tokens
-- **Total**: 3,145 tokens
-
-**🤔 Raisonnement Interne du Modèle (Thinking):**
-<details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
-
-**Assessing Recent Order Trends**
-
-The recent order history for PF0078, the FILOU CHASSEUR 5 L product, reveals a pattern. There's a repeating order cycle: 160 units, then 80 units. I'm noting the intervals between these orders to predict future demands. The most recent order was 15 days ago, and I am currently considering the implications of this cycle.
+- **Input**: 0 tokens
+- **Output**: 0 tokens
+- **Total**: 0 tokens
 
 
-**Refining Demand Projections**
-
-I'm now zeroing in on the implications of the cycle. I've calculated a median interval of 9 days between orders, and even considering a slightly wider range, we're at day 15 since the last order. This suggests a high likelihood of a new order imminently, indicating a possible rupture risk if we're not prepared. I'm focusing on the predicted date now.
-
-
-**Projecting Order Quantity & Risk**
-
-I'm now focusing on the quantity. Given the oscillating pattern of 80 and 160 units, and that 160 units was the most recent order, I'm estimating the next order quantity will be 80 units, considering the historical pattern. Further, I am assessing the monthly volumes, which show a consistent demand. With a high probability of a new order, I will confirm a rupture risk exists.
-
-
-**Concluding Forecasting & Action**
-
-I'm now fully confident in the prediction. Based on the consistent 80/160 unit cycle, and monthly volume trend increases, I'm recommending we plan for an immediate order. The last order was 15 days ago, and a repeat of 160 units is most probable, which aligns with historical trends.
-
-
-**Synthesizing Findings & Action**
-
-I've finalized my analysis and reached a conclusive recommendation. Based on the consistent 80/160 unit cycle and a rising monthly demand trend, I'm recommending action. Specifically, I'm adjusting for the previous quantity patterns and considering the 2024 and 2025 volumes. I am confident we need to plan for a replenishment order of 160 units immediately, given that the cycle is now -3 days overdue.
-
-
-
-
-</details>
 
 </details>
 
@@ -257,7 +226,7 @@ I've finalized my analysis and reached a conclusive recommendation. Based on the
 - 2024-03-22 10:12:21: 80u
 - 2024-03-15 10:48:34: 80u
 
-**✅ Quantité LLM**: 160u (confidence: high)
+**✅ Quantité LLM**: 160u (confidence: medium)
 **📊 Quantité Réelle**: 160u
 
 </details>
@@ -311,4 +280,4 @@ I've finalized my analysis and reached a conclusive recommendation. Based on the
 
 ---
 
-*Rapport généré automatiquement le 2025-12-22T13:54:48.526Z*
+*Rapport généré automatiquement le 2025-12-22T17:02:49.379Z*

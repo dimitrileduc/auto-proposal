@@ -4,7 +4,8 @@ import { predictStockStatus } from "./utils/prediction.utils";
 import { calculateQuantityFromHistory } from "./utils/quantity.utils";
 import { autoProposalConfig } from "../../config/auto-proposal";
 import { getTodayAsDateString } from "../../utils/date.utils";
-import { predictWithLLM, type LLMPredictionResult, type LLMPredictionInput } from "../../services/llm-openrouter.service";
+// Service ax optimisé avec demos few-shot
+import { predictWithLLM, type LLMPredictionResult, type LLMPredictionInput } from "../../services/llm-ax-optimized.service";
 import { splitOrdersByPeriod } from "../../utils/date-period.utils";
 import pLimit from "p-limit";
 import type {
