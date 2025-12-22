@@ -5,8 +5,19 @@
  * et génère un rapport détaillé avec métriques et analyses
  */
 
-import type { BacktestComparisonResult } from "../features/backtesting/backtest.types";
+import type {
+  BacktestComparisonResult,
+  BacktestReportJSONv2,
+  MetricsByConfidence,
+  HistoryStatistics,
+  ProductFeatures,
+  EnrichedProductMatch,
+  EnrichedProductMismatch,
+  ProductMatch,
+} from "../features/backtesting/backtest.types";
+import type { ProductStockStatus, StockReplenishmentResult } from "../features/stock-replenishment/stock-replenishment.types";
 import { calculateProductMetrics, calculateQuantityMetrics } from "../features/backtesting/comparison.service";
+import { calculateMedian } from "../features/stock-replenishment/utils/median.utils";
 
 /**
  * Filtre les produits avec low confidence (1 seule commande) et recalcule les métriques
@@ -422,6 +433,870 @@ function getMatchTypeEmoji(matchType: 'exact' | 'partial'): string {
     case 'exact': return '🎯';
     case 'partial': return '✅';
   }
+}
+
+// ============================================================================
+// HELPERS POUR FORMAT JSON V2
+// ============================================================================
+
+/**
+ * Helpers mathématiques
+ */
+
+function calculateRMSE(truePositives: ProductMatch[]): number {
+  if (truePositives.length === 0) return 0;
+  const sumSquaredErrors = truePositives.reduce((sum, tp) => sum + Math.pow(tp.absoluteError, 2), 0);
+  return Math.sqrt(sumSquaredErrors / truePositives.length);
+}
+
+function calculateDaysAgo(dateString: string): number {
+  const date = new Date(dateString);
+  const now = new Date();
+  return Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+}
+
+function detectTrend(quantities: number[]): 'increasing' | 'stable' | 'decreasing' {
+  if (quantities.length < 3) return 'stable';
+
+  const n = quantities.length;
+  const x = Array.from({ length: n }, (_, i) => i);
+  const sumX = x.reduce((a, b) => a + b, 0);
+  const sumY = quantities.reduce((a, b) => a + b, 0);
+  const sumXY = x.reduce((sum, xi, i) => sum + xi * quantities[i], 0);
+  const sumX2 = x.reduce((sum, xi) => sum + xi * xi, 0);
+
+  const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+  const avgY = sumY / n;
+  const relativeSlope = avgY > 0 ? slope / avgY : 0;
+
+  if (relativeSlope > 0.05) return 'increasing';
+  if (relativeSlope < -0.05) return 'decreasing';
+  return 'stable';
+}
+
+function detectSeasonality(dates: Date[]): boolean {
+  if (dates.length < 4) return false;
+
+  const monthCounts = new Map<number, number>();
+  dates.forEach(date => {
+    const month = date.getMonth();
+    monthCounts.set(month, (monthCounts.get(month) || 0) + 1);
+  });
+
+  const recurringMonths = Array.from(monthCounts.values()).filter(count => count >= 2);
+  return recurringMonths.length >= 2;
+}
+
+function calculateRegularityScore(orders: any[], cv: number): number {
+  if (orders.length < 2) return 0;
+
+  const cvScore = Math.max(0, 1 - cv);
+
+  const dates = orders.map(o => new Date(o.date_order)).sort((a, b) => a.getTime() - b.getTime());
+  const intervals: number[] = [];
+
+  for (let i = 1; i < dates.length; i++) {
+    const daysDiff = (dates[i].getTime() - dates[i - 1].getTime()) / (1000 * 60 * 60 * 24);
+    intervals.push(daysDiff);
+  }
+
+  if (intervals.length === 0) return cvScore;
+
+  const meanInterval = intervals.reduce((a, b) => a + b, 0) / intervals.length;
+  const intervalVariance = intervals.reduce((sum, i) => sum + Math.pow(i - meanInterval, 2), 0) / intervals.length;
+  const intervalStdDev = Math.sqrt(intervalVariance);
+  const intervalCV = meanInterval > 0 ? intervalStdDev / meanInterval : 0;
+  const intervalScore = Math.max(0, 1 - intervalCV);
+
+  return 0.6 * cvScore + 0.4 * intervalScore;
+}
+
+/**
+ * Helpers de classification
+ */
+
+function classifyError(
+  predictedQty: number,
+  realQty: number,
+  absoluteError: number,
+  errorPercent: number
+): {
+  direction: 'over' | 'under' | 'exact';
+  severity: 'none' | 'low' | 'medium' | 'high' | 'critical';
+  matchType: 'exact' | 'partial';
+} {
+  const direction = predictedQty > realQty ? 'over' : predictedQty < realQty ? 'under' : 'exact';
+  const matchType: 'exact' | 'partial' = absoluteError === 0 ? 'exact' : 'partial';
+
+  let severity: 'none' | 'low' | 'medium' | 'high' | 'critical';
+  if (absoluteError === 0) severity = 'none';
+  else if (errorPercent <= 10 || absoluteError <= 2) severity = 'low';
+  else if (errorPercent <= 25 || absoluteError <= 5) severity = 'medium';
+  else if (errorPercent <= 50 || absoluteError <= 10) severity = 'high';
+  else severity = 'critical';
+
+  return { direction, severity, matchType };
+}
+
+function classifyMismatch(
+  mismatchType: 'false_positive' | 'false_negative',
+  reason: string,
+  quantity: number
+): {
+  category: 'stock_sufficient' | 'no_history' | 'llm_error' | 'threshold_filtered' | 'other';
+  severity: 'low' | 'medium' | 'high';
+} {
+  let category: 'stock_sufficient' | 'no_history' | 'llm_error' | 'threshold_filtered' | 'other';
+
+  if (reason.includes('Stock suffisant') || reason.includes('stock:')) category = 'stock_sufficient';
+  else if (reason.includes('Jamais commandé') || reason.includes("pas d'historique")) category = 'no_history';
+  else if (reason.includes('LLM') || reason.includes('llm')) category = 'llm_error';
+  else if (reason.includes('filtré') || reason.includes('seuil')) category = 'threshold_filtered';
+  else category = 'other';
+
+  let severity: 'low' | 'medium' | 'high';
+  if (mismatchType === 'false_positive') {
+    severity = quantity <= 5 ? 'low' : quantity <= 15 ? 'medium' : 'high';
+  } else {
+    severity = quantity <= 3 ? 'low' : quantity <= 10 ? 'medium' : 'high';
+  }
+
+  return { category, severity };
+}
+
+/**
+ * Helpers de statistiques
+ */
+
+function calculateHistoryStatistics(quantities: number[], orders: any[]): HistoryStatistics {
+  if (quantities.length === 0) {
+    return {
+      mean: 0,
+      median: 0,
+      stdDev: 0,
+      min: 0,
+      max: 0,
+      cv: 0,
+      trend: 'stable',
+      outliers: [],
+      regularityScore: 0,
+    };
+  }
+
+  const mean = quantities.reduce((a, b) => a + b, 0) / quantities.length;
+  const median = calculateMedian(quantities);
+
+  const variance = quantities.reduce((sum, q) => sum + Math.pow(q - mean, 2), 0) / quantities.length;
+  const stdDev = Math.sqrt(variance);
+  const cv = mean > 0 ? stdDev / mean : 0;
+  const min = Math.min(...quantities);
+  const max = Math.max(...quantities);
+
+  // Outliers (IQR method)
+  const sorted = [...quantities].sort((a, b) => a - b);
+  const q1 = sorted[Math.floor(sorted.length * 0.25)];
+  const q3 = sorted[Math.floor(sorted.length * 0.75)];
+  const iqr = q3 - q1;
+  const outliers = quantities.filter(q => q < q1 - 1.5 * iqr || q > q3 + 1.5 * iqr);
+
+  const trend = detectTrend(quantities);
+  const regularityScore = calculateRegularityScore(orders, cv);
+
+  return { mean, median, stdDev, min, max, cv, trend, outliers, regularityScore };
+}
+
+/**
+ * Helpers de features
+ */
+
+function calculateProductFeatures(orders: any[], statistics: HistoryStatistics): ProductFeatures {
+  if (orders.length === 0) {
+    return {
+      quantityType: 'variable',
+      orderingPattern: 'irregular',
+      avgDaysBetweenOrders: 0,
+      lastOrderDaysAgo: 0,
+      isSeasonalProduct: false,
+      hasRecentActivity: false,
+    };
+  }
+
+  const quantityType: 'fixed' | 'variable' | 'highly_variable' =
+    statistics.cv < 0.15 ? 'fixed' : statistics.cv < 0.5 ? 'variable' : 'highly_variable';
+
+  const orderingPattern: 'regular' | 'irregular' | 'seasonal' =
+    statistics.regularityScore > 0.7 ? 'regular' : statistics.regularityScore > 0.4 ? 'seasonal' : 'irregular';
+
+  const dates = orders.map(o => new Date(o.date_order)).sort((a, b) => a.getTime() - b.getTime());
+  const avgDaysBetweenOrders = dates.length >= 2
+    ? (dates[dates.length - 1].getTime() - dates[0].getTime()) / (1000 * 60 * 60 * 24) / (dates.length - 1)
+    : 0;
+
+  const lastOrderDaysAgo = (new Date().getTime() - dates[dates.length - 1].getTime()) / (1000 * 60 * 60 * 24);
+  const isSeasonalProduct = detectSeasonality(dates);
+  const hasRecentActivity = lastOrderDaysAgo <= 30;
+
+  return { quantityType, orderingPattern, avgDaysBetweenOrders, lastOrderDaysAgo, isSeasonalProduct, hasRecentActivity };
+}
+
+function enrichProductWithFeatures(
+  product: ProductMatch,
+  analyzedProduct?: ProductStockStatus
+): {
+  orderCount: number;
+  orders: Array<{ orderId: number; orderName: string; date: string; quantity: number; priceUnit: number }>;
+  statistics: HistoryStatistics;
+  features: ProductFeatures;
+} {
+  const orders = analyzedProduct?.order_history || [];
+  const quantities = orders.map(o => o.quantity);
+  const statistics = calculateHistoryStatistics(quantities, orders);
+  const features = calculateProductFeatures(orders, statistics);
+
+  return {
+    orderCount: orders.length,
+    orders: orders.map(o => ({
+      orderId: o.order_id,
+      orderName: o.order_name,
+      date: o.date_order,
+      quantity: o.quantity,
+      priceUnit: o.price_unit,
+    })),
+    statistics,
+    features,
+  };
+}
+
+/**
+ * Helpers de métriques par confidence
+ */
+
+function calculateMetricsForConfidenceLevel(
+  comparison: BacktestComparisonResult,
+  confidenceLevel: 'low' | 'medium' | 'high'
+): MetricsByConfidence {
+  const filteredTP = comparison.truePositives.filter(tp => tp.confidence === confidenceLevel);
+  const filteredFP = comparison.falsePositives.filter(fp => fp.confidence === confidenceLevel);
+  const filteredFN = comparison.falseNegatives.filter(fn => fn.confidence === confidenceLevel);
+
+  const productMetrics = calculateProductMetrics(
+    filteredTP.length,
+    filteredFP.length,
+    filteredFN.length
+  );
+  const quantityMetrics = {
+    ...calculateQuantityMetrics(filteredTP),
+    rmse: calculateRMSE(filteredTP),
+  };
+
+  return {
+    counts: {
+      truePositives: filteredTP.length,
+      falsePositives: filteredFP.length,
+      falseNegatives: filteredFN.length,
+      total: filteredTP.length + filteredFP.length + filteredFN.length,
+    },
+    productMetrics,
+    quantityMetrics,
+  };
+}
+
+function calculateMetricsByConfidence(comparison: BacktestComparisonResult): {
+  all: MetricsByConfidence;
+  byConfidence: {
+    low: MetricsByConfidence;
+    medium: MetricsByConfidence;
+    high: MetricsByConfidence;
+  };
+} {
+  // Métriques globales
+  const all: MetricsByConfidence = {
+    counts: {
+      truePositives: comparison.truePositives.length,
+      falsePositives: comparison.falsePositives.length,
+      falseNegatives: comparison.falseNegatives.length,
+      total: comparison.truePositives.length + comparison.falsePositives.length + comparison.falseNegatives.length,
+    },
+    productMetrics: comparison.productMetrics,
+    quantityMetrics: {
+      ...comparison.quantityMetrics,
+      rmse: calculateRMSE(comparison.truePositives),
+    },
+  };
+
+  // Métriques par confidence
+  const byConfidence = {
+    low: calculateMetricsForConfidenceLevel(comparison, 'low'),
+    medium: calculateMetricsForConfidenceLevel(comparison, 'medium'),
+    high: calculateMetricsForConfidenceLevel(comparison, 'high'),
+  };
+
+  return { all, byConfidence };
+}
+
+// ============================================================================
+// FIN HELPERS V2
+// ============================================================================
+
+/**
+ * Génère un rapport JSON v2 enrichi pour analyse statistique avancée
+ *
+ * Format complet avec détails produits, historique, features, LLM data
+ *
+ * @param comparison - Résultat complet de la comparaison système vs réalité
+ * @param stockAnalysis - Résultat de l'analyse de stock (contient historique produits)
+ * @returns Rapport JSON v2 enrichi avec métriques segmentées et détails produits
+ */
+export function generateBacktestReportJSONv2(
+  comparison: BacktestComparisonResult,
+  stockAnalysis: StockReplenishmentResult
+): BacktestReportJSONv2 {
+  // === META ===
+  const meta = {
+    version: "2.0.0" as const,
+    generatedAt: new Date().toISOString(),
+    config: {
+      daysBeforePrediction: comparison.daysBeforePrediction,
+      analysisWindowDays: 365, // Par défaut 1 an
+      cutoffDate: comparison.cutoffDate,
+    },
+  };
+
+  // === CLIENT ===
+  const client = {
+    id: comparison.clientId,
+    name: comparison.clientName,
+    order: {
+      name: comparison.orderName,
+      date: comparison.orderDate,
+    },
+  };
+
+  // === METRICS (globales + par confidence) ===
+  const metrics = calculateMetricsByConfidence(comparison);
+
+  // === MAP des produits analysés (pour enrichissement) ===
+  const allProducts = stockAnalysis.all_products ?? stockAnalysis.products;
+  const analyzedProductsMap = new Map(
+    allProducts.map((p) => [p.product_id, p])
+  );
+
+  // === ENRICH TRUE POSITIVES ===
+  const enrichedTP: EnrichedProductMatch[] = comparison.truePositives.map((tp) => {
+    const analyzedProduct = analyzedProductsMap.get(tp.productId);
+
+    // Error classification
+    const errorClassification = classifyError(
+      tp.predictedQty,
+      tp.realQty,
+      tp.absoluteError,
+      tp.errorPercent
+    );
+
+    // History + statistics + features
+    const history = enrichProductWithFeatures(tp, analyzedProduct);
+
+    // LLM data
+    const llm: EnrichedProductMatch["llm"] = tp.llm_required
+      ? {
+          required: true,
+          success: tp.llm_success,
+          input: {
+            recentOrders: tp.llm_input_data?.recent_orders || [],
+            lastYearOrders: tp.llm_input_data?.last_year_orders || [],
+          },
+        }
+      : undefined;
+
+    // Si LLM a réussi, ajouter la prédiction + comparaison
+    if (llm && tp.llmPrediction) {
+      const pred = tp.llmPrediction;
+      llm.prediction = {
+        quantity: pred.quantity,
+        baselineQuantity: pred.baseline_quantity,
+        confidence: pred.confidence,
+        confidencePhase1: pred.confidence_phase1,
+        confidencePhase2: pred.confidence_phase2,
+        reasoning: pred.reasoning,
+        providerReasoning: pred.provider_reasoning,
+        analysis: {
+          frequencyPattern: pred.analysis.frequency_pattern,
+          seasonalityImpact: pred.analysis.seasonality_impact,
+          trendDirection: pred.analysis.trend_direction,
+          detectedOutliers: pred.analysis.detected_outliers,
+          cycleDays: pred.analysis.cycle_days,
+          lastOrderDate: pred.analysis.last_order_date,
+          predictedNextDate: pred.analysis.predicted_next_date,
+          daysUntilNext: pred.analysis.days_until_next,
+          dayCycleAnalysis: pred.analysis.day_cycle_analysis,
+        },
+        model: pred.model,
+        provider: pred.provider,
+        usage: pred.usage,
+      };
+
+      // Comparaison médiane vs LLM
+      if (tp.medianQty !== undefined) {
+        const medianError = Math.abs(tp.medianQty - tp.realQty);
+        const llmError = Math.abs(pred.quantity - tp.realQty);
+        const llmImprovement =
+          medianError > 0 ? ((medianError - llmError) / medianError) * 100 : 0;
+
+        llm.comparison = {
+          medianQuantity: tp.medianQty,
+          llmQuantity: pred.quantity,
+          realQuantity: tp.realQty,
+          medianError,
+          llmError,
+          llmImprovement,
+        };
+      }
+    }
+
+    // Stock data (si disponible)
+    const stock: EnrichedProductMatch["stock"] = analyzedProduct
+      ? {
+          estimatedRemaining: analyzedProduct.stock_prediction?.estimated_stock_remaining || 0,
+          daysUntilStockout: analyzedProduct.stock_prediction?.days_until_stockout || 0,
+          replenishmentThreshold:
+            analyzedProduct.calculation_metadata?.minimum_qty_threshold || 0,
+          consumptionPerDay:
+            analyzedProduct.stock_prediction?.consumption_per_day || 0,
+        }
+      : undefined;
+
+    return {
+      productId: tp.productId,
+      productName: tp.productName,
+      productUom: Array.isArray(analyzedProduct?.product_uom)
+        ? analyzedProduct.product_uom[1]
+        : analyzedProduct?.product_uom || "",
+
+      prediction: {
+        quantity: tp.predictedQty,
+        source: tp.quantitySource,
+        confidence: tp.confidence,
+      },
+
+      reality: {
+        quantity: tp.realQty,
+      },
+
+      error: {
+        absolute: tp.absoluteError,
+        percent: tp.errorPercent,
+        direction: errorClassification.direction,
+        severity: errorClassification.severity,
+        matchType: errorClassification.matchType,
+      },
+
+      history,
+      llm,
+      stock,
+    };
+  });
+
+  // === ENRICH FALSE POSITIVES ===
+  const enrichedFP: EnrichedProductMismatch[] = comparison.falsePositives.map((fp) => {
+    const analyzedProduct = analyzedProductsMap.get(fp.productId);
+    const classification = classifyMismatch("false_positive", fp.reason, fp.qty);
+
+    const context: EnrichedProductMismatch["context"] = {};
+
+    if (analyzedProduct?.stock_prediction) {
+      context.stock = {
+        estimatedRemaining: analyzedProduct.stock_prediction.estimated_stock_remaining || 0,
+        daysUntilStockout: analyzedProduct.stock_prediction.days_until_stockout || 0,
+      };
+    }
+
+    if (analyzedProduct?.order_history) {
+      const orderCount = analyzedProduct.order_history.length;
+      const lastOrderDaysAgo = orderCount > 0
+        ? calculateDaysAgo(analyzedProduct.order_history[orderCount - 1].date_order)
+        : undefined;
+
+      context.history = {
+        orderCount,
+        lastOrderDaysAgo,
+      };
+    }
+
+    // LLM data (enrichissement)
+    const llm: EnrichedProductMismatch["llm"] = analyzedProduct?.llm_required
+      ? {
+          required: true,
+          success: analyzedProduct.llm_success,
+          input: analyzedProduct.llm_input_data
+            ? {
+                recentOrders: analyzedProduct.llm_input_data.recent_orders || [],
+                lastYearOrders: analyzedProduct.llm_input_data.last_year_orders || [],
+              }
+            : undefined,
+        }
+      : undefined;
+
+    // Si LLM a réussi, ajouter la prédiction
+    if (llm && analyzedProduct?.llm_prediction) {
+      const pred = analyzedProduct.llm_prediction;
+      llm.prediction = {
+        quantity: pred.quantity,
+        baselineQuantity: pred.baseline_quantity,
+        confidence: pred.confidence,
+        confidencePhase1: pred.confidence_phase1,
+        confidencePhase2: pred.confidence_phase2,
+        reasoning: pred.reasoning,
+        providerReasoning: pred.provider_reasoning,
+        analysis: {
+          frequencyPattern: pred.analysis.frequency_pattern,
+          seasonalityImpact: pred.analysis.seasonality_impact,
+          trendDirection: pred.analysis.trend_direction,
+          detectedOutliers: pred.analysis.detected_outliers,
+          cycleDays: pred.analysis.cycle_days,
+          lastOrderDate: pred.analysis.last_order_date,
+          predictedNextDate: pred.analysis.predicted_next_date,
+          daysUntilNext: pred.analysis.days_until_next,
+          dayCycleAnalysis: pred.analysis.day_cycle_analysis,
+        },
+        model: pred.model,
+        provider: pred.provider,
+        usage: pred.usage,
+      };
+    }
+
+    return {
+      productId: fp.productId,
+      productName: fp.productName,
+      mismatchType: "false_positive" as const,
+      quantity: fp.qty,
+      reason: fp.reason,
+      classification,
+      context: Object.keys(context).length > 0 ? context : undefined,
+      llm,
+    };
+  });
+
+  // === ENRICH FALSE NEGATIVES ===
+  const enrichedFN: EnrichedProductMismatch[] = comparison.falseNegatives.map((fn) => {
+    const analyzedProduct = analyzedProductsMap.get(fn.productId);
+    const classification = classifyMismatch("false_negative", fn.reason, fn.qty);
+
+    const context: EnrichedProductMismatch["context"] = {};
+
+    if (analyzedProduct?.stock_prediction) {
+      context.stock = {
+        estimatedRemaining: analyzedProduct.stock_prediction.estimated_stock_remaining || 0,
+        daysUntilStockout: analyzedProduct.stock_prediction.days_until_stockout || 0,
+      };
+    }
+
+    if (analyzedProduct?.order_history) {
+      const orderCount = analyzedProduct.order_history.length;
+      const lastOrderDaysAgo = orderCount > 0
+        ? calculateDaysAgo(analyzedProduct.order_history[orderCount - 1].date_order)
+        : undefined;
+
+      context.history = {
+        orderCount,
+        lastOrderDaysAgo,
+      };
+    }
+
+    // LLM data (enrichissement)
+    const llm: EnrichedProductMismatch["llm"] = analyzedProduct?.llm_required
+      ? {
+          required: true,
+          success: analyzedProduct.llm_success,
+          input: analyzedProduct.llm_input_data
+            ? {
+                recentOrders: analyzedProduct.llm_input_data.recent_orders || [],
+                lastYearOrders: analyzedProduct.llm_input_data.last_year_orders || [],
+              }
+            : undefined,
+        }
+      : undefined;
+
+    // Si LLM a réussi, ajouter la prédiction
+    if (llm && analyzedProduct?.llm_prediction) {
+      const pred = analyzedProduct.llm_prediction;
+      llm.prediction = {
+        quantity: pred.quantity,
+        baselineQuantity: pred.baseline_quantity,
+        confidence: pred.confidence,
+        confidencePhase1: pred.confidence_phase1,
+        confidencePhase2: pred.confidence_phase2,
+        reasoning: pred.reasoning,
+        providerReasoning: pred.provider_reasoning,
+        analysis: {
+          frequencyPattern: pred.analysis.frequency_pattern,
+          seasonalityImpact: pred.analysis.seasonality_impact,
+          trendDirection: pred.analysis.trend_direction,
+          detectedOutliers: pred.analysis.detected_outliers,
+          cycleDays: pred.analysis.cycle_days,
+          lastOrderDate: pred.analysis.last_order_date,
+          predictedNextDate: pred.analysis.predicted_next_date,
+          daysUntilNext: pred.analysis.days_until_next,
+          dayCycleAnalysis: pred.analysis.day_cycle_analysis,
+        },
+        model: pred.model,
+        provider: pred.provider,
+        usage: pred.usage,
+      };
+    }
+
+    return {
+      productId: fn.productId,
+      productName: fn.productName,
+      mismatchType: "false_negative" as const,
+      quantity: fn.qty,
+      reason: fn.reason,
+      classification,
+      context: Object.keys(context).length > 0 ? context : undefined,
+      llm,
+    };
+  });
+
+  // === LLM USAGE (global aggregation) ===
+  const llmUsage = comparison.llmUsage
+    ? {
+        calls: comparison.llmUsage.calls,
+        promptTokens: comparison.llmUsage.promptTokens,
+        completionTokens: comparison.llmUsage.completionTokens,
+        totalTokens: comparison.llmUsage.totalTokens,
+      }
+    : undefined;
+
+  // === RETURN COMPLETE V2 REPORT ===
+  return {
+    meta,
+    client,
+    metrics,
+    llmUsage,
+    products: {
+      truePositives: enrichedTP,
+      falsePositives: enrichedFP,
+      falseNegatives: enrichedFN,
+    },
+  };
+}
+
+/**
+ * Agrège les rapports v2 individuels pour une vue globale
+ *
+ * @param reportsV2 - Liste des rapports v2 à agréger
+ * @returns Rapport agrégé v2 avec métriques consolidées
+ */
+export function generateAggregatedReportV2(
+  reportsV2: BacktestReportJSONv2[]
+): {
+  meta: any;
+  globalMetrics: any;
+  metricsByConfidence: any;
+  llmUsage: any;
+} {
+  if (reportsV2.length === 0) {
+    throw new Error("Aucun rapport v2 à agréger");
+  }
+
+  // Agréger les counts
+  let totalTP = 0,
+    totalFP = 0,
+    totalFN = 0;
+  let totalPromptTokens = 0,
+    totalCompletionTokens = 0,
+    totalCalls = 0;
+
+  reportsV2.forEach((report) => {
+    totalTP += report.metrics.all.counts.truePositives;
+    totalFP += report.metrics.all.counts.falsePositives;
+    totalFN += report.metrics.all.counts.falseNegatives;
+
+    if (report.llmUsage) {
+      totalCalls += report.llmUsage.calls;
+      totalPromptTokens += report.llmUsage.promptTokens;
+      totalCompletionTokens += report.llmUsage.completionTokens;
+    }
+  });
+
+  // Calculer métriques globales
+  const totalPredicted = totalTP + totalFP;
+  const totalReal = totalTP + totalFN;
+  const precision = totalPredicted > 0 ? totalTP / totalPredicted : 0;
+  const recall = totalReal > 0 ? totalTP / totalReal : 0;
+  const f1Score =
+    precision + recall > 0
+      ? (2 * (precision * recall)) / (precision + recall)
+      : 0;
+
+  // Quantité metrics - moyenne pondérée des TP
+  let totalMAE = 0,
+    totalWMAPE = 0,
+    totalMAPE = 0,
+    totalBias = 0,
+    totalRMSE = 0,
+    exactMatchCount = 0,
+    partialMatchCount = 0;
+
+  reportsV2.forEach((report) => {
+    const tpCount = report.metrics.all.counts.truePositives;
+    if (tpCount > 0) {
+      totalMAE += report.metrics.all.quantityMetrics.mae * tpCount;
+      totalWMAPE += report.metrics.all.quantityMetrics.wmape;
+      totalMAPE += report.metrics.all.quantityMetrics.mape;
+      totalBias += report.metrics.all.quantityMetrics.bias;
+      totalRMSE += report.metrics.all.quantityMetrics.rmse;
+      exactMatchCount +=
+        report.metrics.all.quantityMetrics.distribution.exactMatch;
+      partialMatchCount +=
+        report.metrics.all.quantityMetrics.distribution.partialMatch;
+    }
+  });
+
+  const avgMAE = totalTP > 0 ? totalMAE / totalTP : 0;
+  const avgWMAPE = reportsV2.length > 0 ? totalWMAPE / reportsV2.length : 0;
+  const avgMAPE = reportsV2.length > 0 ? totalMAPE / reportsV2.length : 0;
+  const avgBias = reportsV2.length > 0 ? totalBias / reportsV2.length : 0;
+  const avgRMSE = reportsV2.length > 0 ? totalRMSE / reportsV2.length : 0;
+
+  // Agréger par confidence
+  const byConfidence: Record<
+    "low" | "medium" | "high",
+    {
+      counts: { truePositives: number; falsePositives: number; falseNegatives: number; total: number };
+      productMetrics: { precision: number; recall: number; f1Score: number };
+      quantityMetrics: { mae: number; wmape: number; mape: number; bias: number; rmse: number };
+    }
+  > = {
+    low: {
+      counts: { truePositives: 0, falsePositives: 0, falseNegatives: 0, total: 0 },
+      productMetrics: { precision: 0, recall: 0, f1Score: 0 },
+      quantityMetrics: { mae: 0, wmape: 0, mape: 0, bias: 0, rmse: 0 },
+    },
+    medium: {
+      counts: { truePositives: 0, falsePositives: 0, falseNegatives: 0, total: 0 },
+      productMetrics: { precision: 0, recall: 0, f1Score: 0 },
+      quantityMetrics: { mae: 0, wmape: 0, mape: 0, bias: 0, rmse: 0 },
+    },
+    high: {
+      counts: { truePositives: 0, falsePositives: 0, falseNegatives: 0, total: 0 },
+      productMetrics: { precision: 0, recall: 0, f1Score: 0 },
+      quantityMetrics: { mae: 0, wmape: 0, mape: 0, bias: 0, rmse: 0 },
+    },
+  };
+
+  // Accumulateurs pour métriques par confiance
+  const confAccumulators: Record<
+    "low" | "medium" | "high",
+    { tp: number; fp: number; fn: number; mae: number; wmape: number; mape: number; bias: number; rmse: number }
+  > = {
+    low: { tp: 0, fp: 0, fn: 0, mae: 0, wmape: 0, mape: 0, bias: 0, rmse: 0 },
+    medium: { tp: 0, fp: 0, fn: 0, mae: 0, wmape: 0, mape: 0, bias: 0, rmse: 0 },
+    high: { tp: 0, fp: 0, fn: 0, mae: 0, wmape: 0, mape: 0, bias: 0, rmse: 0 },
+  };
+
+  reportsV2.forEach((report) => {
+    (["low", "medium", "high"] as const).forEach((conf) => {
+      const confMetrics = report.metrics.byConfidence[conf];
+      const confTP = confMetrics.counts.truePositives;
+
+      confAccumulators[conf].tp += confTP;
+      confAccumulators[conf].fp += confMetrics.counts.falsePositives;
+      confAccumulators[conf].fn += confMetrics.counts.falseNegatives;
+
+      if (confTP > 0) {
+        confAccumulators[conf].mae += confMetrics.quantityMetrics.mae * confTP;
+        confAccumulators[conf].wmape += confMetrics.quantityMetrics.wmape;
+        confAccumulators[conf].mape += confMetrics.quantityMetrics.mape;
+        confAccumulators[conf].bias += confMetrics.quantityMetrics.bias;
+        confAccumulators[conf].rmse += confMetrics.quantityMetrics.rmse;
+      }
+    });
+  });
+
+  (["low", "medium", "high"] as const).forEach((conf) => {
+    const acc = confAccumulators[conf];
+    byConfidence[conf].counts = {
+      truePositives: acc.tp,
+      falsePositives: acc.fp,
+      falseNegatives: acc.fn,
+      total: acc.tp + acc.fp + acc.fn,
+    };
+
+    const confTotalPredicted = acc.tp + acc.fp;
+    const confTotalReal = acc.tp + acc.fn;
+    const confPrecision = confTotalPredicted > 0 ? acc.tp / confTotalPredicted : 0;
+    const confRecall = confTotalReal > 0 ? acc.tp / confTotalReal : 0;
+    const confF1 =
+      confPrecision + confRecall > 0
+        ? (2 * (confPrecision * confRecall)) / (confPrecision + confRecall)
+        : 0;
+
+    byConfidence[conf].productMetrics = {
+      precision: Math.round(confPrecision * 10000) / 10000,
+      recall: Math.round(confRecall * 10000) / 10000,
+      f1Score: Math.round(confF1 * 10000) / 10000,
+    };
+
+    const avgMAE = acc.tp > 0 ? acc.mae / acc.tp : 0;
+    const avgWMAPE = reportsV2.length > 0 ? acc.wmape / reportsV2.length : 0;
+    const avgMAPE = reportsV2.length > 0 ? acc.mape / reportsV2.length : 0;
+    const avgBias = reportsV2.length > 0 ? acc.bias / reportsV2.length : 0;
+    const avgRMSE = reportsV2.length > 0 ? acc.rmse / reportsV2.length : 0;
+
+    byConfidence[conf].quantityMetrics = {
+      mae: Math.round(avgMAE * 10000) / 10000,
+      wmape: Math.round(avgWMAPE * 100) / 100,
+      mape: Math.round(avgMAPE * 100) / 100,
+      bias: Math.round(avgBias * 100) / 100,
+      rmse: Math.round(avgRMSE * 10000) / 10000,
+    };
+  });
+
+  return {
+    meta: {
+      version: "2.0.0",
+      type: "aggregated-backtest-v2",
+      generatedAt: new Date().toISOString(),
+      casesIncluded: reportsV2.length,
+      cases: reportsV2.map((r) => ({
+        clientId: r.client.id,
+        orderName: r.client.order.name,
+      })),
+    },
+    globalMetrics: {
+      counts: {
+        truePositives: totalTP,
+        falsePositives: totalFP,
+        falseNegatives: totalFN,
+        total: totalTP + totalFP + totalFN,
+      },
+      productMetrics: {
+        precision: Math.round(precision * 10000) / 10000,
+        recall: Math.round(recall * 10000) / 10000,
+        f1Score: Math.round(f1Score * 10000) / 10000,
+        totalPredicted,
+        totalReal,
+      },
+      quantityMetrics: {
+        mae: Math.round(avgMAE * 10000) / 10000,
+        wmape: Math.round(avgWMAPE * 100) / 100,
+        mape: Math.round(avgMAPE * 100) / 100,
+        bias: Math.round(avgBias * 100) / 100,
+        rmse: Math.round(avgRMSE * 10000) / 10000,
+        distribution: {
+          exactMatch: exactMatchCount,
+          partialMatch: partialMatchCount,
+        },
+      },
+    },
+    metricsByConfidence: byConfidence,
+    llmUsage: {
+      totalCalls,
+      totalPromptTokens,
+      totalCompletionTokens,
+      totalTokens: totalPromptTokens + totalCompletionTokens,
+    },
+  };
 }
 
 /**
