@@ -44,7 +44,8 @@ scripts/
 # Exception: keep test-data directory
 !test-data/
 
-# Exception: keep backtest reports
-!*backtest*
+# Ignore backtest report outputs (generated files)
+reports-output/
+reports-output-*/
 
 .trigger

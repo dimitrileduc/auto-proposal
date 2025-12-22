@@ -22,6 +22,7 @@ import {
   type AggregateMetrics,
   type AggregateReportData,
 } from "../features/backtesting/statistics.service";
+import { generateAggregatedReportV2 } from "../reports/backtest-report";
 import { findTopBacktestClients } from "../features/backtesting/client-discovery.service";
 import * as fs from "fs/promises";
 import * as path from "path";
@@ -439,6 +440,34 @@ export const backtestAggregateTask = task({
       console.log(`   ✅ Markdown ALL report saved: backtest-aggregate-${timestamp}-all.md`);
 
       console.log(`   📊 ALL (tous produits): ${successfulResultsAll.length} clients analyzed`);
+    }
+
+    // ===== ÉTAPE 4B: GÉNÉRATION RAPPORT V2 AGRÉGÉ =====
+    console.log(`\n📊 Generating aggregated V2 report...`);
+    try {
+      const v2Files = await fs.readdir(reportsOutputDir);
+      const v2Reports = [];
+
+      for (const file of v2Files) {
+        if (file.endsWith('-v2.json') && file.startsWith('backtest-client-')) {
+          const filePath = path.join(reportsOutputDir, file);
+          const content = await fs.readFile(filePath, 'utf-8');
+          v2Reports.push(JSON.parse(content));
+        }
+      }
+
+      if (v2Reports.length > 0) {
+        const aggregatedV2 = generateAggregatedReportV2(v2Reports);
+        const aggregatedV2FileName = `backtest-aggregate-${timestamp}-v2.json`;
+        const aggregatedV2Path = path.join(reportsOutputDir, aggregatedV2FileName);
+        await fs.writeFile(aggregatedV2Path, JSON.stringify(aggregatedV2, null, 2), 'utf-8');
+        console.log(`   ✅ Aggregated V2 report saved: ${aggregatedV2FileName}`);
+        console.log(`      Aggregated ${v2Reports.length} client V2 reports`);
+      } else {
+        console.log(`   ⚠️  No V2 reports found to aggregate`);
+      }
+    } catch (aggregateError) {
+      console.warn(`   ⚠️  Failed to generate aggregated V2 report:`, aggregateError instanceof Error ? aggregateError.message : String(aggregateError));
     }
 
     // ===== ÉTAPE 5: RÉSULTAT FINAL =====

@@ -16,7 +16,7 @@ import { task } from "@trigger.dev/sdk";
 import { clientProposalTask } from "./client-proposal.task";
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { compareSystemPredictionVsRealOrder } from "../features/backtesting/comparison.service";
-import { generateBacktestReport, generateBacktestReportJSON } from "../reports/backtest-report";
+import { generateBacktestReport, generateBacktestReportJSON, generateBacktestReportJSONv2 } from "../reports/backtest-report";
 import { calculateDateBefore } from "../utils/date.utils";
 import { autoProposalConfig } from "../config/auto-proposal";
 import * as fs from "fs/promises";
@@ -374,6 +374,17 @@ export const backtestClientTask = task({
       const reportPathMdAll = path.join(reportsOutputDir, reportFileNameMdAll);
       await fs.writeFile(reportPathMdAll, reportMarkdownAll, "utf-8");
       console.log(`   ✅ Markdown ALL report saved: ${reportFileNameMdAll}`);
+
+      // === NOUVEAU: Génération du rapport JSON v2 enrichi ===
+      console.log("📝 Step 7/7: Generating backtest report JSON v2...");
+      const reportJSONv2 = generateBacktestReportJSONv2(
+        comparison,  // Tous les produits (pas de filtre low/clean)
+        systemResult.result.phases.stockAnalysis
+      );
+      const reportFileNameJsonV2 = `backtest-client-${payload.clientId}-${lastOrder.name}-v2.json`;
+      const reportPathJsonV2 = path.join(reportsOutputDir, reportFileNameJsonV2);
+      await fs.writeFile(reportPathJsonV2, JSON.stringify(reportJSONv2, null, 2), "utf-8");
+      console.log(`   ✅ JSON v2 report saved: ${reportFileNameJsonV2}`);
 
       const executionTime = Date.now() - startTime;
       console.log(`✅ BACKTEST COMPLETED in ${(executionTime / 1000).toFixed(1)}s\n`);
