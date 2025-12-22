@@ -22,9 +22,9 @@
     "partialMatch": 0
   },
   "llmUsage": {
-    "calls": 8,
-    "promptTokens": 7993,
-    "completionTokens": 15619,
-    "totalTokens": 23612
+    "calls": 9,
+    "promptTokens": 9094,
+    "completionTokens": 21131,
+    "totalTokens": 30225
   }
 }

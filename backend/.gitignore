@@ -41,8 +41,9 @@ scripts/
 *Test*
 *TEST*
 
-# Exception: keep test-data directory
+# Exceptions: keep backtesting and test-data
 !test-data/
+!src/features/backtesting/
 
 # Ignore backtest report outputs (generated files)
 reports-output/

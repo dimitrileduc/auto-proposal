@@ -110,4 +110,272 @@ export interface ProductMismatch {
   productName: string;
   qty: number;
   reason: string;  // Justification (ex: "Stock suffisant", "Pas d'historique")
+  confidence?: 'low' | 'medium' | 'high';  // Niveau de confiance basé sur historique (pour filtrage par confidence)
+}
+
+// ============================================================================
+// TYPES POUR FORMAT JSON V2 ENRICHI
+// ============================================================================
+
+/**
+ * Statistiques calculées sur l'historique des commandes d'un produit
+ */
+export interface HistoryStatistics {
+  mean: number;
+  median: number;
+  stdDev: number;
+  min: number;
+  max: number;
+  cv: number;  // Coefficient de variation (stdDev / mean)
+  trend: "increasing" | "stable" | "decreasing";
+  outliers: number[];
+  regularityScore: number;  // Score 0-1 de régularité des commandes
+}
+
+/**
+ * Features calculées automatiquement pour classifier un produit
+ */
+export interface ProductFeatures {
+  quantityType: "fixed" | "variable" | "highly_variable";
+  orderingPattern: "regular" | "irregular" | "seasonal";
+  avgDaysBetweenOrders: number;
+  lastOrderDaysAgo: number;
+  isSeasonalProduct: boolean;
+  hasRecentActivity: boolean;
+}
+
+/**
+ * Métriques de performance segmentées (globales ou par niveau de confidence)
+ */
+export interface MetricsByConfidence {
+  counts: {
+    truePositives: number;
+    falsePositives: number;
+    falseNegatives: number;
+    total: number;
+  };
+
+  productMetrics: {
+    precision: number;
+    recall: number;
+    f1Score: number;
+    totalPredicted: number;
+    totalReal: number;
+  };
+
+  quantityMetrics: {
+    mae: number;
+    wmape: number;
+    mape: number;
+    bias: number;
+    rmse: number;
+    distribution: {
+      exactMatch: number;
+      partialMatch: number;
+    };
+  };
+}
+
+/**
+ * Produit True Positive enrichi avec historique complet, features, et LLM
+ */
+export interface EnrichedProductMatch {
+  productId: number;
+  productName: string;
+  productUom: string;
+
+  prediction: {
+    quantity: number;
+    source: "median" | "llm";
+    confidence: "low" | "medium" | "high";
+  };
+
+  reality: {
+    quantity: number;
+  };
+
+  error: {
+    absolute: number;
+    percent: number;
+    direction: "over" | "under" | "exact";
+    severity: "none" | "low" | "medium" | "high" | "critical";
+    matchType: "exact" | "partial";
+  };
+
+  history: {
+    orderCount: number;
+    orders: Array<{
+      orderId: number;
+      orderName: string;
+      date: string;
+      quantity: number;
+      priceUnit: number;
+    }>;
+    statistics: HistoryStatistics;
+    features: ProductFeatures;
+  };
+
+  llm?: {
+    required: boolean;
+    success: boolean;
+    input: {
+      recentOrders: Array<{ date: string; quantity: number }>;
+      lastYearOrders: Array<{ date: string; quantity: number }>;
+    };
+    prediction?: {
+      quantity: number;
+      baselineQuantity: number;
+      confidence: "low" | "medium" | "high";
+      confidencePhase1?: "low" | "medium" | "high";
+      confidencePhase2?: "low" | "medium" | "high";
+      reasoning: string;
+      providerReasoning?: string;
+      analysis: {
+        frequencyPattern: string;
+        seasonalityImpact: "none" | "weak" | "strong";
+        trendDirection: string;
+        detectedOutliers: number[];
+        cycleDays?: number;
+        lastOrderDate?: string;
+        predictedNextDate?: string;
+        daysUntilNext?: number;
+        dayCycleAnalysis?: string;
+      };
+      model?: string;
+      provider?: string;
+      usage: {
+        promptTokens: number;
+        completionTokens: number;
+        totalTokens: number;
+      };
+    };
+    comparison?: {
+      medianQuantity: number;
+      llmQuantity: number;
+      realQuantity: number;
+      medianError: number;
+      llmError: number;
+      llmImprovement: number;
+    };
+  };
+
+  stock?: {
+    estimatedRemaining: number;
+    daysUntilStockout: number;
+    replenishmentThreshold: number;
+    consumptionPerDay: number;
+  };
+}
+
+/**
+ * Produit False Positive ou False Negative enrichi avec contexte
+ */
+export interface EnrichedProductMismatch {
+  productId: number;
+  productName: string;
+  mismatchType: "false_positive" | "false_negative";
+  quantity: number;
+  reason: string;
+  classification: {
+    category: "stock_sufficient" | "no_history" | "llm_error" | "threshold_filtered" | "other";
+    severity: "low" | "medium" | "high";
+  };
+  context?: {
+    stock?: {
+      estimatedRemaining: number;
+      daysUntilStockout: number;
+    };
+    history?: {
+      orderCount: number;
+      lastOrderDaysAgo?: number;
+    };
+  };
+  // LLM data (enrichissement pour cohérence avec TP)
+  llm?: {
+    required: boolean;
+    success: boolean;
+    input?: {
+      recentOrders: Array<{ date: string; quantity: number }>;
+      lastYearOrders: Array<{ date: string; quantity: number }>;
+    };
+    prediction?: {
+      quantity: number;
+      baselineQuantity: number;
+      confidence: "low" | "medium" | "high";
+      confidencePhase1?: "low" | "medium" | "high";
+      confidencePhase2?: "low" | "medium" | "high";
+      reasoning: string;
+      providerReasoning?: string;
+      analysis: {
+        frequencyPattern: string;
+        seasonalityImpact: "none" | "weak" | "strong";
+        trendDirection: string;
+        detectedOutliers: number[];
+        cycleDays?: number;
+        lastOrderDate?: string;
+        predictedNextDate?: string;
+        daysUntilNext?: number;
+        dayCycleAnalysis?: string;
+      };
+      model?: string;
+      provider?: string;
+      usage: {
+        promptTokens: number;
+        completionTokens: number;
+        totalTokens: number;
+      };
+    };
+  };
+}
+
+/**
+ * Format JSON v2 complet pour rapport de backtest enrichi
+ *
+ * Différences avec v1:
+ * - Un seul fichier par client (pas de séparation low/clean)
+ * - Détails complets par produit (historique, features, LLM)
+ * - Métriques segmentées par confidence
+ * - Classification des erreurs et mismatches
+ */
+export interface BacktestReportJSONv2 {
+  meta: {
+    version: "2.0.0";
+    generatedAt: string;  // ISO 8601 timestamp
+    config: {
+      daysBeforePrediction: number;
+      analysisWindowDays: number;
+      cutoffDate: string;
+    };
+  };
+
+  client: {
+    id: number;
+    name: string;
+    order: {
+      name: string;
+      date: string;
+    };
+  };
+
+  metrics: {
+    all: MetricsByConfidence;
+    byConfidence: {
+      low: MetricsByConfidence;
+      medium: MetricsByConfidence;
+      high: MetricsByConfidence;
+    };
+  };
+
+  llmUsage?: {
+    calls: number;
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+  };
+
+  products: {
+    truePositives: EnrichedProductMatch[];
+    falsePositives: EnrichedProductMismatch[];
+    falseNegatives: EnrichedProductMismatch[];
+  };
 }

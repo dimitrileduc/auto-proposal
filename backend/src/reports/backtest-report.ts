@@ -1092,6 +1092,7 @@ export function generateAggregatedReportV2(
   meta: any;
   globalMetrics: any;
   metricsByConfidence: any;
+  byClient: any;
   llmUsage: any;
 } {
   if (reportsV2.length === 0) {
@@ -1252,6 +1253,47 @@ export function generateAggregatedReportV2(
     };
   });
 
+  // Collecter les métriques par client pour statistiques
+  const clientMetrics = reportsV2.map((report) => ({
+    clientId: report.client.id,
+    clientName: report.client.name,
+    precision: report.metrics.all.productMetrics.precision,
+    recall: report.metrics.all.productMetrics.recall,
+    f1Score: report.metrics.all.productMetrics.f1Score,
+    mae: report.metrics.all.quantityMetrics.mae,
+    wmape: report.metrics.all.quantityMetrics.wmape,
+    mape: report.metrics.all.quantityMetrics.mape,
+  }));
+
+  // Calculer statistiques (mean, median, stdDev)
+  const calculateStats = (values: number[]) => {
+    if (values.length === 0) return { mean: 0, median: 0, stdDev: 0, min: 0, max: 0 };
+    const sorted = [...values].sort((a, b) => a - b);
+    const mean = values.reduce((a, b) => a + b, 0) / values.length;
+    const median = sorted.length % 2 === 0
+      ? (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2
+      : sorted[Math.floor(sorted.length / 2)];
+    const variance = values.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / values.length;
+    const stdDev = Math.sqrt(variance);
+    return {
+      mean: Math.round(mean * 10000) / 10000,
+      median: Math.round(median * 10000) / 10000,
+      stdDev: Math.round(stdDev * 10000) / 10000,
+      min: Math.round(Math.min(...values) * 10000) / 10000,
+      max: Math.round(Math.max(...values) * 10000) / 10000,
+    };
+  };
+
+  const byClient = {
+    precision: calculateStats(clientMetrics.map((m) => m.precision)),
+    recall: calculateStats(clientMetrics.map((m) => m.recall)),
+    f1Score: calculateStats(clientMetrics.map((m) => m.f1Score)),
+    mae: calculateStats(clientMetrics.map((m) => m.mae)),
+    wmape: calculateStats(clientMetrics.map((m) => m.wmape)),
+    mape: calculateStats(clientMetrics.map((m) => m.mape)),
+    clients: clientMetrics,
+  };
+
   return {
     meta: {
       version: "2.0.0",
@@ -1290,6 +1332,7 @@ export function generateAggregatedReportV2(
       },
     },
     metricsByConfidence: byConfidence,
+    byClient,
     llmUsage: {
       totalCalls,
       totalPromptTokens,

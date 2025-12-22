@@ -24,7 +24,7 @@
   "llmUsage": {
     "calls": 4,
     "promptTokens": 4186,
-    "completionTokens": 7972,
-    "totalTokens": 12158
+    "completionTokens": 10553,
+    "totalTokens": 14739
   }
 }

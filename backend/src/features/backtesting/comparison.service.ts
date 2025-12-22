@@ -122,11 +122,17 @@ export function compareSystemPredictionVsRealOrder(
         reason = `Stock prédit: ${stock.toFixed(1)}u (${days}j restants) → prédit ${systemProduct.quantity_to_order}u mais non commandé`;
       }
 
+      // Déterminer la confidence basée sur l'historique
+      const orderCount = analyzedProduct?.order_history?.length ?? 0;
+      const confidence: 'low' | 'medium' | 'high' =
+        orderCount >= 5 ? 'high' : orderCount >= 2 ? 'medium' : 'low';
+
       falsePositives.push({
         productId,
         productName: systemProduct.product_name,
         qty: systemProduct.quantity_to_order,
         reason,
+        confidence,
       });
     }
   }
@@ -168,11 +174,17 @@ export function compareSystemPredictionVsRealOrder(
         reason = `Jamais commandé avant dans les ${windowDays}j précédents (pas d'historique)`;
       }
 
+      // Déterminer la confidence basée sur l'historique
+      const orderCount = analyzedProduct?.order_history?.length ?? 0;
+      const confidence: 'low' | 'medium' | 'high' =
+        orderCount >= 5 ? 'high' : orderCount >= 2 ? 'medium' : 'low';
+
       falseNegatives.push({
         productId,
         productName: realProduct.product_id[1],
         qty: realProduct.product_uom_qty,
         reason,
+        confidence,
       });
     }
   }
