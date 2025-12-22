@@ -195,6 +195,8 @@ ${recentTable}
 HISTORIQUE N-1 (si pertinent):
 ${lastYearTable}
 
+
+
 ## DÉCISION 1: Y A-T-IL RISQUE DE RUPTURE ? (horizon 30j)
 
 Raisonne sur:

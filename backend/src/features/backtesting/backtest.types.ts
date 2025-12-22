@@ -111,6 +111,37 @@ export interface ProductMismatch {
   qty: number;
   reason: string;  // Justification (ex: "Stock suffisant", "Pas d'historique")
   confidence?: 'low' | 'medium' | 'high';  // Niveau de confiance basé sur historique (pour filtrage par confidence)
+
+  // Infos LLM (cohérence avec TP)
+  llm_required?: boolean;
+  llm_success?: boolean;
+  quantitySource?: 'median' | 'llm' | 'unknown';
+  medianQty?: number;
+
+  // Données passées au LLM (pour debug/audit)
+  llm_input_data?: {
+    recent_orders: Array<{ date: string; quantity: number }>;
+    last_year_orders: Array<{ date: string; quantity: number }>;
+  };
+
+  // Prédiction LLM
+  llmPrediction?: {
+    quantity: number;
+    confidence: 'low' | 'medium' | 'high';
+    reasoning: string;
+    baseline_quantity: number;
+    analysis: {
+      frequency_pattern: string;
+      detected_outliers: number[];
+      seasonality_impact: 'none' | 'weak' | 'strong';
+      trend_direction: string;
+    };
+    usage: {
+      promptTokens: number;
+      completionTokens: number;
+      totalTokens: number;
+    };
+  };
 }
 
 // ============================================================================
@@ -288,6 +319,13 @@ export interface EnrichedProductMismatch {
     history?: {
       orderCount: number;
       lastOrderDaysAgo?: number;
+      orders: Array<{
+        orderId: number;
+        orderName: string;
+        date: string;
+        quantity: number;
+        priceUnit: number;
+      }>;
     };
   };
   // LLM data (enrichissement pour cohérence avec TP)

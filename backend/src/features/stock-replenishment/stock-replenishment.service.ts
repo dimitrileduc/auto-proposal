@@ -320,14 +320,18 @@ export async function calculateReplenishmentNeeds(
     // Récupérer les input data LLM (si disponibles)
     const inputData = llmInputData.get(product.product_id);
 
+    // Récupérer les 730j complets pour le rapport (BRUT)
+    const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
+    const ordersForReport = fullProduct?.orders ?? ordersToUse;
+
     // Créer l'objet produit analysé (avec toutes ses infos)
     const productStatus: ProductStockStatus = {
       product_id: product.product_id,
       product_name: product.product_name,
       product_uom: product.product_uom,
 
-      // 1. Historique des commandes (base)
-      order_history: ordersToUse.map((order) => ({
+      // 1. Historique des commandes (base) - COMPLET 730j pour rapports
+      order_history: ordersForReport.map((order) => ({
         order_id: order.order_id,
         order_name: order.order_name,
         date_order: order.date_order,

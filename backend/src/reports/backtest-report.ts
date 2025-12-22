@@ -20,6 +20,51 @@ import { calculateProductMetrics, calculateQuantityMetrics } from "../features/b
 import { calculateMedian } from "../features/stock-replenishment/utils/median.utils";
 
 /**
+ * Type interne pour les commandes historiques
+ */
+interface HistoricalOrder {
+  order_id?: number;
+  order_name?: string;
+  date_order: string;
+  product_qty: number;
+  price_unit?: number;
+}
+
+/**
+ * Type pour le rapport agrégé v2
+ */
+interface AggregatedReportV2 {
+  meta: {
+    version: string;
+    type: string;
+    generatedAt: string;
+    casesIncluded: number;
+    cases: Array<{ clientId: number; orderName: string }>;
+  };
+  globalMetrics: MetricsByConfidence;
+  metricsByConfidence: {
+    low: MetricsByConfidence;
+    medium: MetricsByConfidence;
+    high: MetricsByConfidence;
+  };
+  byClient: {
+    precision: { mean: number; median: number; stdDev: number; min: number; max: number };
+    recall: { mean: number; median: number; stdDev: number; min: number; max: number };
+    f1Score: { mean: number; median: number; stdDev: number; min: number; max: number };
+    mae: { mean: number; median: number; stdDev: number; min: number; max: number };
+    wmape: { mean: number; median: number; stdDev: number; min: number; max: number };
+    mape: { mean: number; median: number; stdDev: number; min: number; max: number };
+    clients: Array<{ clientId: number; metrics: Record<string, number> }>;
+  };
+  llmUsage: {
+    calls: number;
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+  };
+}
+
+/**
  * Filtre les produits avec low confidence (1 seule commande) et recalcule les métriques
  *
  * @param comparison - Résultat complet de la comparaison système vs réalité
@@ -82,7 +127,7 @@ export function filterOnlyLowConfidence(
 /**
  * Génère la section des données d'input LLM pour tous les produits qui ont nécessité le LLM
  */
-function generateLLMInputDataSection(truePositives: any[]): string {
+function generateLLMInputDataSection(truePositives: ProductMatch[]): string {
   const productsWithLLMData = truePositives.filter(tp => tp.llm_input_data);
 
   if (productsWithLLMData.length === 0) {
@@ -93,8 +138,8 @@ function generateLLMInputDataSection(truePositives: any[]): string {
 ### 📊 Données d'Input LLM (${productsWithLLMData.length} produits)
 
 ${productsWithLLMData.map((tp, index) => {
-  const recentOrders = tp.llm_input_data.recent_orders;
-  const lastYearOrders = tp.llm_input_data.last_year_orders;
+  const recentOrders = tp.llm_input_data?.recent_orders || [];
+  const lastYearOrders = tp.llm_input_data?.last_year_orders || [];
 
   return `
 <details>
@@ -102,12 +147,12 @@ ${productsWithLLMData.map((tp, index) => {
 
 **📅 Commandes Récentes (3 derniers mois):**
 ${recentOrders.length > 0
-  ? recentOrders.map((o: any) => `- ${o.date}: ${o.quantity}u`).join('\n')
+  ? recentOrders.map((o: { date: string; quantity: number }) => `- ${o.date}: ${o.quantity}u`).join('\n')
   : '- Aucune commande récente'}
 
 **📅 Commandes N-1 (même période année dernière):**
 ${lastYearOrders.length > 0
-  ? lastYearOrders.map((o: any) => `- ${o.date}: ${o.quantity}u`).join('\n')
+  ? lastYearOrders.map((o: { date: string; quantity: number }) => `- ${o.date}: ${o.quantity}u`).join('\n')
   : '- Aucune commande N-1'}
 
 ${tp.llm_success
@@ -124,7 +169,7 @@ ${tp.llm_success
 /**
  * Génère la section détaillée des prédictions LLM pour les True Positives
  */
-function generateLLMDetailSection(truePositives: any[]): string {
+function generateLLMDetailSection(truePositives: ProductMatch[]): string {
   const llmProducts = truePositives.filter(tp => tp.quantitySource === 'llm' && tp.llmPrediction);
 
   if (llmProducts.length === 0) {
@@ -487,7 +532,7 @@ function detectSeasonality(dates: Date[]): boolean {
   return recurringMonths.length >= 2;
 }
 
-function calculateRegularityScore(orders: any[], cv: number): number {
+function calculateRegularityScore(orders: HistoricalOrder[], cv: number): number {
   if (orders.length < 2) return 0;
 
   const cvScore = Math.max(0, 1 - cv);
@@ -568,7 +613,7 @@ function classifyMismatch(
  * Helpers de statistiques
  */
 
-function calculateHistoryStatistics(quantities: number[], orders: any[]): HistoryStatistics {
+function calculateHistoryStatistics(quantities: number[], orders: HistoricalOrder[]): HistoryStatistics {
   if (quantities.length === 0) {
     return {
       mean: 0,
@@ -609,7 +654,7 @@ function calculateHistoryStatistics(quantities: number[], orders: any[]): Histor
  * Helpers de features
  */
 
-function calculateProductFeatures(orders: any[], statistics: HistoryStatistics): ProductFeatures {
+function calculateProductFeatures(orders: HistoricalOrder[], statistics: HistoryStatistics): ProductFeatures {
   if (orders.length === 0) {
     return {
       quantityType: 'variable',
@@ -919,6 +964,13 @@ export function generateBacktestReportJSONv2(
       context.history = {
         orderCount,
         lastOrderDaysAgo,
+        orders: analyzedProduct.order_history.map(order => ({
+          orderId: order.order_id || 0,
+          orderName: order.order_name || '',
+          date: order.date_order,
+          quantity: order.quantity,
+          priceUnit: order.price_unit || 0,
+        })),
       };
     }
 
@@ -999,6 +1051,13 @@ export function generateBacktestReportJSONv2(
       context.history = {
         orderCount,
         lastOrderDaysAgo,
+        orders: analyzedProduct.order_history.map(order => ({
+          orderId: order.order_id || 0,
+          orderName: order.order_name || '',
+          date: order.date_order,
+          quantity: order.quantity,
+          priceUnit: order.price_unit || 0,
+        })),
       };
     }
 
@@ -1088,13 +1147,7 @@ export function generateBacktestReportJSONv2(
  */
 export function generateAggregatedReportV2(
   reportsV2: BacktestReportJSONv2[]
-): {
-  meta: any;
-  globalMetrics: any;
-  metricsByConfidence: any;
-  byClient: any;
-  llmUsage: any;
-} {
+): AggregatedReportV2 {
   if (reportsV2.length === 0) {
     throw new Error("Aucun rapport v2 à agréger");
   }

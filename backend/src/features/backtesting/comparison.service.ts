@@ -127,12 +127,26 @@ export function compareSystemPredictionVsRealOrder(
       const confidence: 'low' | 'medium' | 'high' =
         orderCount >= 5 ? 'high' : orderCount >= 2 ? 'medium' : 'low';
 
+      // Récupérer les infos LLM (même structure que TP)
+      const fpQuantitySource = analyzedProduct?.quantity_source || 'median';
+      const fpLlmInputData = analyzedProduct?.llm_input_data;
+      const fpLlmRequired = analyzedProduct?.llm_required ?? false;
+      const fpLlmSuccess = analyzedProduct?.llm_success ?? false;
+      const fpMedianQty = fpQuantitySource === 'llm' ? analyzedProduct?.calculation_metadata.median_value : undefined;
+      const fpLlmPrediction = analyzedProduct?.llm_prediction;
+
       falsePositives.push({
         productId,
         productName: systemProduct.product_name,
         qty: systemProduct.quantity_to_order,
         reason,
         confidence,
+        llm_required: fpLlmRequired,
+        llm_success: fpLlmSuccess,
+        quantitySource: fpQuantitySource,
+        medianQty: fpMedianQty,
+        llm_input_data: fpLlmInputData,
+        llmPrediction: fpLlmPrediction,
       });
     }
   }
@@ -179,12 +193,26 @@ export function compareSystemPredictionVsRealOrder(
       const confidence: 'low' | 'medium' | 'high' =
         orderCount >= 5 ? 'high' : orderCount >= 2 ? 'medium' : 'low';
 
+      // Récupérer les infos LLM (même structure que TP)
+      const fnQuantitySource = analyzedProduct?.quantity_source || 'unknown';
+      const fnLlmInputData = analyzedProduct?.llm_input_data;
+      const fnLlmRequired = analyzedProduct?.llm_required ?? false;
+      const fnLlmSuccess = analyzedProduct?.llm_success ?? false;
+      const fnMedianQty = analyzedProduct?.calculation_metadata?.median_value;
+      const fnLlmPrediction = analyzedProduct?.llm_prediction;
+
       falseNegatives.push({
         productId,
         productName: realProduct.product_id[1],
         qty: realProduct.product_uom_qty,
         reason,
         confidence,
+        llm_required: fnLlmRequired,
+        llm_success: fnLlmSuccess,
+        quantitySource: fnQuantitySource,
+        medianQty: fnMedianQty,
+        llm_input_data: fnLlmInputData,
+        llmPrediction: fnLlmPrediction,
       });
     }
   }
