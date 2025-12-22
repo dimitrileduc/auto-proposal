@@ -19,9 +19,9 @@ import { extractExamples, saveExamplesToFile } from "./extract-examples.js";
 import { stockMetric, calculateAggregateMetrics } from "./metric.js";
 
 // Configuration
-const MAX_EXAMPLES = parseInt(process.env.MAX_EXAMPLES || "300");
-const NUM_TRIALS = parseInt(process.env.NUM_TRIALS || "10");
-const NUM_CANDIDATES = parseInt(process.env.NUM_CANDIDATES || "5");
+const MAX_EXAMPLES = parseInt(process.env.MAX_EXAMPLES || "1000");
+const NUM_TRIALS = parseInt(process.env.NUM_TRIALS || "150");
+const NUM_CANDIDATES = parseInt(process.env.NUM_CANDIDATES || "10");
 const DRY_RUN = process.env.DRY_RUN === "true";
 
 const JSON_PATH = "./analysis-folder/predictions-v2-all-clients.json";
@@ -150,7 +150,7 @@ async function main() {
     examples: axExamples,
     options: {
       maxRounds: NUM_TRIALS,
-      maxDemos: 15,  // Augmenté de 5 à 15 pour plus de contexte
+      maxDemos: 25,  // Max demos pour meilleur contexte
       verboseMode: true,
     },
   });
