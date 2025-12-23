@@ -1,0 +1,78 @@
+{
+  "version": "2.0",
+  "optimizerType": "mipro",
+  "optimizedAt": "2025-12-23T09:20:23.022Z",
+  "model": "google/gemini-3-flash-preview",
+  "config": {
+    "maxExamples": 1000,
+    "numTrials": 50,
+    "maxBootstrappedDemos": 25
+  },
+  "baseline": {
+    "averageScore": 0.45499999999999996,
+    "precision": 0.5294117647058824,
+    "recall": 1,
+    "f1": 0.6923076923076924,
+    "avgQuantityError": 2.2222222222222223,
+    "wmape": 52.63157894736842
+  },
+  "bestScore": 0.9156052986731745,
+  "instruction": "Please analyze the provided dataset and perform the requested task by breaking your thought process down into logical, sequential steps. Before providing your final answer, clearly outline your reasoning for each stage of the problem to ensure accuracy and transparency.",
+  "demos": [
+    {
+      "traces": [
+        {
+          "productName": "[RIT02] RITCHIE Citron - Framboise - verre 275ml",
+          "recentOrders": "2025-09-15 (lun.): 1u\n2025-08-25 (lun.): 1u\n2025-08-05 (mar.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-19",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture faible, produit à rotation régulière mais lente. 2) Le cycle semble être d'environ 20 à 30 jours, la dernière commande datant d'il y a 34 jours. 3) Quantité estimée à 1u car les commandes récentes oscillent entre 1 et 2u, la médiane étant de 1u."
+        },
+        {
+          "productName": "[ORG04] ORGANICA crunchy fruit fraise 12g",
+          "recentOrders": "2025-09-17 (mer.): 1u\n2025-08-20 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-28",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture faible mais demande régulière. 2) Cycle de commande mensuel observé (environ toutes les 4 semaines). La dernière commande date d'il y a 41 jours. 3) Quantité estimée à 1u car c'est la quantité constante des commandes précédentes, le besoin est stable mais minimal."
+        },
+        {
+          "productName": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+          "recentOrders": "2025-08-04 (lun.): 2u",
+          "lastYearOrders": "2024-09-20 (ven.): 1u\n2024-06-28 (ven.): 1u\n2024-05-13 (lun.): 1u\n2024-04-09 (mar.): 1u",
+          "currentDate": "2025-10-16",
+          "quantity": 1,
+          "reasoning": "1) Risque rupture faible au vu de la fréquence. 2) Cycle de commande espacé (tous les 3-4 mois), la dernière commande date d'août. L'historique N-1 montre une commande en septembre/octobre. 3) Quantité estimée à 1u, correspondant à la médiane des commandes passées et à la tendance conservatrice pour les petits volumes."
+        }
+      ],
+      "programId": "4cb32a84"
+    }
+  ],
+  "stats": {
+    "totalCalls": 200,
+    "successfulDemos": 92,
+    "estimatedTokenUsage": 0,
+    "earlyStopped": false,
+    "resourceUsage": {
+      "totalTokens": 0,
+      "totalTime": 0,
+      "avgLatencyPerEval": 0,
+      "costByModel": {}
+    },
+    "convergenceInfo": {
+      "converged": false,
+      "finalImprovement": 0,
+      "stagnationRounds": 0,
+      "convergenceThreshold": 0.01
+    },
+    "bestScore": 0.9156052986731745,
+    "bestConfiguration": {}
+  },
+  "finalConfiguration": {
+    "temperature": 1.6074676064360427,
+    "bootstrappedDemos": 3,
+    "instruction": "Please analyze the provided dataset and perform the requested task by breaking your thought process down into logical, sequential steps. Before providing your final answer, clearly outline your reasoning for each stage of the problem to ensure accuracy and transparency.",
+    "labeledExamples": 2
+  }
+}

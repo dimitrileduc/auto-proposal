@@ -1,8 +1,9 @@
 /**
  * Service LLM via ax-llm avec prompt optimisé
  *
- * Utilise les 22 demos sélectionnés par BootstrapFewShot
- * pour améliorer les prédictions via few-shot learning
+ * Charge les optimisations dans cet ordre:
+ * 1. MiPRO (instruction + demos) si disponible
+ * 2. BootstrapFewShot (demos uniquement) en fallback
  */
 
 import { ax, AxAIOpenRouter } from "@ax-llm/ax";
@@ -14,7 +15,9 @@ import type { LLMPrediction, LLMPredictionInput, LLMPredictionResult, LLMUsage }
 
 // Configuration
 const MODEL = "google/gemini-3-flash-preview";
-const OPTIMIZED_FILE = join(process.cwd(), "optimization-results/stock-predictor-optimized.json");
+// Essaie d'abord le fichier MiPRO, sinon BootstrapFewShot
+const MIPRO_FILE = join(process.cwd(), "optimization-results/stock-predictor-mipro.json");
+const BOOTSTRAP_FILE = join(process.cwd(), "optimization-results/stock-predictor-optimized.json");
 
 // Signature ax pour la prédiction - QUANTITÉ DE LA PROCHAINE COMMANDE
 // Séparation : exemples pour détection, règles souples pour quantité
@@ -31,14 +34,14 @@ reasoning:string "1) Risque rupture? 2) Cycle et dernière commande? 3) Quantit�
 `;
 
 // Instance LLM (créée une seule fois)
-let llmInstance: AxAIOpenRouter | null = null;
+let llmInstance: AxAIOpenRouter<string> | null = null;
 let predictorInstance: ReturnType<typeof ax> | null = null;
 let demosLoaded = false;
 
 /**
  * Initialise le predictor ax avec les demos optimisés
  */
-function initPredictor(): { llm: AxAIOpenRouter; predictor: ReturnType<typeof ax> } {
+function initPredictor(): { llm: AxAIOpenRouter<string>; predictor: ReturnType<typeof ax> } {
   if (llmInstance && predictorInstance && demosLoaded) {
     return { llm: llmInstance, predictor: predictorInstance };
   }
@@ -57,16 +60,37 @@ function initPredictor(): { llm: AxAIOpenRouter; predictor: ReturnType<typeof ax
   // Créer le predictor
   predictorInstance = ax(stockPredictorSignature);
 
-  // Charger les demos optimisés
+  // Charger les optimisations (MiPRO prioritaire, sinon BootstrapFewShot)
   try {
-    const optimizedData = JSON.parse(readFileSync(OPTIMIZED_FILE, "utf-8"));
+    let optimizedData: any = null;
+    let source = "";
+
+    // Essayer MiPRO d'abord
+    try {
+      optimizedData = JSON.parse(readFileSync(MIPRO_FILE, "utf-8"));
+      source = "MiPRO";
+    } catch {
+      // Fallback sur BootstrapFewShot
+      optimizedData = JSON.parse(readFileSync(BOOTSTRAP_FILE, "utf-8"));
+      source = "BootstrapFewShot";
+    }
+
+    // Charger l'instruction optimisée (MiPRO uniquement)
+    if (optimizedData.instruction) {
+      predictorInstance.setInstruction(optimizedData.instruction);
+      console.log(`✅ ax: instruction optimisée chargée (${optimizedData.instruction.length} chars)`);
+    }
+
+    // Charger les demos
     if (optimizedData.demos && optimizedData.demos.length > 0) {
       predictorInstance.setDemos(optimizedData.demos);
-      demosLoaded = true;
-      console.log(`✅ ax: ${optimizedData.demos[0]?.traces?.length || 0} demos chargés`);
+      const demoCount = optimizedData.demos[0]?.traces?.length || optimizedData.demos.length;
+      console.log(`✅ ax: ${demoCount} demos chargés (${source})`);
     }
+
+    demosLoaded = true;
   } catch (error) {
-    console.warn("⚠️ Fichier optimisé non trouvé, utilisation sans demos:", error);
+    console.warn("⚠️ Aucun fichier optimisé trouvé, utilisation sans demos:", error);
   }
 
   return { llm: llmInstance, predictor: predictorInstance };
