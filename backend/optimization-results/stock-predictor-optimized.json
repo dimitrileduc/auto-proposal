@@ -1,22 +1,22 @@
 {
   "version": "1.0",
-  "optimizedAt": "2025-12-22T17:26:34.002Z",
+  "optimizedAt": "2025-12-23T08:17:25.296Z",
   "model": "google/gemini-3-flash-preview",
   "config": {
     "maxExamples": 1000,
     "numTrials": 150
   },
   "baseline": {
-    "averageScore": 0.5,
-    "precision": 0.4375,
-    "recall": 1,
-    "f1": 0.6086956521739131,
-    "avgQuantityError": 0.14285714285714285,
-    "wmape": 0.4608294930875576
+    "averageScore": 0.4083333333333333,
+    "precision": 0.631578947368421,
+    "recall": 0.9230769230769231,
+    "f1": 0.7499999999999999,
+    "avgQuantityError": 1.0833333333333333,
+    "wmape": 11.926605504587156
   },
-  "bestScore": 0.5873015873015873,
+  "bestScore": 0.6032608695652174,
   "stats": {
-    "totalCalls": 189,
+    "totalCalls": 184,
     "successfulDemos": 111,
     "estimatedTokenUsage": 0,
     "earlyStopped": false,
@@ -39,892 +39,892 @@
     {
       "traces": [
         {
-          "productName": "[PF1639] JF BURGER SQUEEZE 300ML",
-          "recentOrders": "2025-09-11 (jeu.): 150u",
-          "lastYearOrders": "2024-09-16 (lun.): 150u\n2024-07-08 (lun.): 150u\n2024-05-16 (jeu.): 25u\n2024-03-13 (mer.): 150u\n2024-02-29 (jeu.): 1000u",
-          "currentDate": "2025-10-13",
+          "productName": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+          "recentOrders": "2025-08-08 (ven.): 1u",
+          "lastYearOrders": "2024-07-17 (mer.): 1u\n2024-04-25 (jeu.): 1u",
+          "currentDate": "2025-10-28",
           "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car la dernière commande est récente (environ 1 mois). 2) Le cycle de commande historique suggère un intervalle de 2 à 3 mois entre les commandes de volume standard (150u). 3) Pas de commande estimée dans les 30 prochains jours car le stock de 150u (septembre) devrait couvrir la demande actuelle."
+          "reasoning": "1) Risque de rupture faible au vu de la faible fréquence de rotation. 2) Le cycle de commande est très espacé, avec une dernière commande enregistrée il y a plus de 2 mois et demi (août). 3) Aucune commande n'est prévue dans les 30 prochains jours car le rythme historique suggère un besoin ponctuel et non mensuel."
+        },
+        {
+          "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+          "recentOrders": "2025-09-15 (lun.): 1u\n2025-08-05 (mar.): 1u",
+          "lastYearOrders": "2024-06-24 (lun.): 2u\n2024-04-23 (mar.): 3u\n2024-01-03 (mer.): 4u",
+          "currentDate": "2025-10-19",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré, le produit circule régulièrement par petites unités. 2) Cycle mensuel observé récemment (août, septembre), la dernière commande date d'il y a plus de 30 jours (15 septembre). 3) Quantité estimée à 1u car c'est la quantité constante des commandes récentes, en accord avec une approche conservatrice pour ce volume."
+        },
+        {
+          "productName": "[LD014] LD Organic Avocado Spread 180 g",
+          "recentOrders": "2025-09-12 (ven.): 2u\n2025-08-21 (jeu.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-26",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Cycle régulier observé avec une commande par mois (août et septembre). 3) Quantité estimée à 2u car c'est la valeur constante des commandes récentes."
+        },
+        {
+          "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+          "recentOrders": "2025-09-22 (lun.): 3u\n2025-08-11 (lun.): 3u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-02",
+          "quantity": 3,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Cycle régulier observé d'environ 40 jours entre les commandes de 3 unités (août et septembre). 3) Quantité estimée à 3 unités car c'est la quantité constante commandée lors des deux dernières occurrences."
         },
         {
           "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
-          "recentOrders": "2025-09-09 (mar.): 2u\n2025-08-19 (mar.): 2u\n2025-07-23 (mer.): 4u\n2025-07-07 (lun.): 6u\n2025-06-23 (lun.): 4u",
+          "recentOrders": "2025-09-24 (mer.): 1u",
           "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-09-23",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré au vu de la consommation régulière sur les 3 derniers mois. 2) Le cycle de commande est d'environ 15 à 20 jours, la dernière commande remontant au 09-09. 3) Quantité estimée à 2u, ce qui correspond à la médiane des commandes récentes (2u) pour maintenir un stock de sécurité sans surstocker."
-        },
-        {
-          "productName": "[PF0085] FILOU CURRY KETCHUP  10 KG",
-          "recentOrders": "2025-06-03 (mar.): 52u\n2025-05-23 (ven.): 52u\n2025-04-28 (lun.): 52u\n2025-04-04 (ven.): 52u\n2025-03-21 (ven.): 52u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-06-19",
-          "quantity": 52,
-          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à 16 jours et le cycle semble être d'environ 15 à 20 jours. 2) Le rythme de commande est extrêmement régulier (toutes les 2 à 3 semaines). 3) Quantité estimée à 52u car c'est la quantité fixe commandée systématiquement lors de chaque occurrence récente."
-        },
-        {
-          "productName": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
-          "recentOrders": "2025-09-17 (mer.): 2u\n2025-08-19 (mar.): 3u\n2025-08-05 (mar.): 2u",
-          "lastYearOrders": "2024-07-15 (lun.): 4u\n2024-07-01 (lun.): 3u",
-          "currentDate": "2025-10-08",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture faible, produit avec des rotations régulières en petites quantités. 2) Le cycle de commande semble être mensuel (août et septembre). La dernière commande date d'il y a 21 jours, une nouvelle commande est probable dans les 30 prochains jours. 3) Quantité estimée à 2 unités, ce qui correspond à la médiane des commandes récentes (2u) et reste cohérent avec l'historique N-1."
-        },
-        {
-          "productName": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
-          "recentOrders": "2025-09-03 (mer.): 3u\n2025-08-12 (mar.): 1u\n2025-07-23 (mer.): 4u\n2025-07-08 (mar.): 1u\n2025-06-24 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-09-23",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré, la dernière commande date de 20 jours avec un cycle moyen de 2-3 semaines. 2) Le produit suit un cycle régulier depuis juin sans historique N-1. 3) Quantité estimée à 2u car c'est la médiane des commandes récentes (1, 1, 2, 3, 4), ce qui permet de rester conservateur sur ce petit volume."
-        },
-        {
-          "productName": "[JF019] JF SAUCE AIOLI PESTO 250M WECK",
-          "recentOrders": "2025-09-02 (mar.): 1u\n2025-08-19 (mar.): 3u\n2025-08-11 (lun.): 3u\n2025-07-15 (mar.): 1u\n2025-06-23 (lun.): 1u",
-          "lastYearOrders": "2024-09-19 (jeu.): 1u\n2024-08-07 (mer.): 1u\n2024-06-11 (mar.): 1u",
-          "currentDate": "2025-09-22",
+          "currentDate": "2025-10-28",
           "quantity": 1,
-          "reasoning": "1) Risque de rupture modéré au vu du cycle régulier. 2) La dernière commande date d'il y a 20 jours (02/09), s'inscrivant dans un cycle mensuel. 3) Quantité estimée à 1u car les volumes récents sont faibles (1-3u) et la médiane historique se situe à 1u."
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus d'un mois. 2) Cycle de commande sporadique avec une seule commande récente enregistrée. 3) Quantité estimée à 1u pour maintenir le stock sans sur-stocker, en restant cohérent avec le volume de la commande précédente."
         },
         {
-          "productName": "[ORG04] ORGANICA crunchy fruit fraise 12g",
-          "recentOrders": "2025-09-25 (jeu.): 90u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car une commande importante de 90u a été passée très récemment. 2) La dernière commande date du 25 septembre, soit moins de 20 jours avant la date d'analyse. 3) Quantité estimée à 0 car le stock constitué fin septembre devrait couvrir les besoins pour les 30 prochains jours, aucun cycle de commande récurrent n'étant encore établi pour ce nouveau produit."
-        },
-        {
-          "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
-          "recentOrders": "2025-09-22 (lun.): 3u\n2025-09-08 (lun.): 2u\n2025-08-25 (lun.): 5u\n2025-08-11 (lun.): 3u\n2025-07-14 (lun.): 3u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-05",
-          "quantity": 3,
-          "reasoning": "1) Risque rupture? Faible, le produit suit un cycle de commande régulier toutes les deux semaines environ. 2) Cycle et dernière commande? Dernière commande le 22/09, la prochaine est attendue début octobre. 3) Quantité estimée et pourquoi? 3u, car c'est la médiane des commandes récentes (3u, 2u, 5u, 3u, 3u), ce qui reflète une demande stable."
-        },
-        {
-          "productName": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
-          "recentOrders": "2025-09-25 (jeu.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car la dernière commande est très récente (18 jours). 2) Le cycle de commande semble irrégulier ou très espacé pour ce produit. 3) Pas de commande estimée dans les 30 prochains jours car le stock d'une unité devrait couvrir la demande immédiate pour ce type de produit à rotation lente."
-        },
-        {
-          "productName": "[LV105] LV Tomate Basil Aufstr 180g",
-          "recentOrders": "2025-08-07 (jeu.): 300u",
-          "lastYearOrders": "2024-09-18 (mer.): 300u\n2024-08-07 (mer.): 300u\n2024-05-29 (mer.): 300u\n2024-05-02 (jeu.): 100u\n2024-05-02 (jeu.): 200u\n2024-04-16 (mar.): 300u\n2024-03-12 (mar.): 300u\n2024-01-31 (mer.): 300u\n2024-01-03 (mer.): 300u\n2023-11-21 (mar.): 300u\n2023-10-17 (mar.): 300u",
-          "currentDate": "2025-10-07",
-          "quantity": 300,
-          "reasoning": "1) Risque de rupture modéré car la dernière commande remonte à deux mois. 2) Le cycle historique montre une commande quasi systématique tous les 1 à 2 mois sur la période N-1 (septembre/octobre). 3) Quantité estimée à 300u, correspondant à la médiane et au volume constant observé sur la majorité des commandes passées."
-        },
-        {
-          "productName": "[LV133] LV Tartinade Ananas Coco 190g",
-          "recentOrders": "2025-08-06 (mer.): 2u\n2025-07-09 (mer.): 2u\n2025-06-23 (lun.): 2u\n2025-06-11 (mer.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-08-25",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture faible, produit avec des ventes régulières. 2) Le cycle de commande est d'environ toutes les 2 à 3 semaines ; la dernière commande date du 06/08, une nouvelle commande est attendue fin août ou début septembre. 3) Quantité estimée à 2 unités car c'est la quantité constante commandée lors de chaque occurrence récente."
-        },
-        {
-          "productName": "[TVF003] TVF TARTINADE BIO CAROTTE 180g",
-          "recentOrders": "2025-08-11 (lun.): 3u",
-          "lastYearOrders": "2024-07-11 (jeu.): 1u\n2024-05-31 (ven.): 3u\n2024-04-30 (mar.): 6u",
-          "currentDate": "2025-10-06",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car le produit présente une rotation lente et sporadique. 2) La dernière commande date d'il y a environ 2 mois (11 août) et le cycle de commande semble être de 2 à 3 mois selon l'historique N-1. 3) Pas de commande estimée dans les 30 prochains jours car le délai depuis la dernière livraison est encore court par rapport à la fréquence habituelle."
-        },
-        {
-          "productName": "[PF1805] LD SAUCE COCKTAIL 250ML WECK",
-          "recentOrders": "2025-08-07 (jeu.): 200u",
-          "lastYearOrders": "2024-09-09 (lun.): 25u\n2024-08-14 (mer.): 25u\n2024-06-12 (mer.): 25u\n2024-05-27 (lun.): 50u\n2024-04-17 (mer.): 25u\n2024-03-18 (lun.): 25u\n2023-12-28 (jeu.): 25u\n2023-11-28 (mar.): 25u\n2023-10-16 (lun.): 25u",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car une commande importante de 200u a été passée récemment. 2) La dernière commande date du 07/08/2025 (il y a environ 2 mois) ; historiquement, le produit se commande par petites quantités (25u) tous les 1 à 2 mois. 3) Quantité estimée à 0 car le stock de la commande exceptionnelle d'août (8 fois le volume habituel) devrait couvrir les besoins actuels."
-        },
-        {
-          "productName": "[PF3392] LV FR TARTINAPERO BIO ASPERGE BOCAL 190G",
-          "recentOrders": "2025-08-22 (ven.): 434u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture? Faible, le volume de la dernière commande était important. 2) Cycle et dernière commande? Produit récent avec une commande unique de 434u le 22 août. Il n'y a pas encore de cycle établi ni de commandes en N-1. 3) Quantité estimée et pourquoi? 0u, car le stock constitué en août semble suffisant pour couvrir la période actuelle en l'absence de récurrence démontrée."
+          "productName": "[JF002] JF MAYONNAI BASILIC 250ML WECK",
+          "recentOrders": "2025-07-17 (jeu.): 2u",
+          "lastYearOrders": "2024-06-20 (jeu.): 1u\n2024-06-04 (mar.): 1u\n2024-04-08 (lun.): 0u",
+          "currentDate": "2025-09-07",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de juillet. 2) Le cycle semble être d'environ 2 à 3 mois selon l'historique N-1. 3) Quantité de 1u estimée, correspondant à la médiane des commandes passées et à la nature conservatrice des petits volumes."
         },
         {
           "productName": "[UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml",
-          "recentOrders": "2025-09-15 (lun.): 10u",
+          "recentOrders": "2025-09-24 (mer.): 1u",
           "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
+          "currentDate": "2025-11-04",
           "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, produit à rotation lente ou test récent. 2) La seule et unique commande date d'il y a 28 jours. 3) Pas de commande estimée car le cycle de réapprovisionnement semble supérieur à 30 jours pour ce volume (10u), conformément aux exemples de la gamme Upigny."
-        },
-        {
-          "productName": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
-          "recentOrders": "2025-10-01 (mer.): 1u\n2025-08-27 (mer.): 1u\n2025-07-22 (mar.): 1u\n2025-07-08 (mar.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-07",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible, produit à rotation régulière mais très faible volume. 2) Cycle de commande mensuel observé (juillet, août, octobre). La dernière commande date d'il y a 6 jours. 3) Quantité estimée à 1u car c'est la quantité constante commandée lors de chaque occurrence récente."
-        },
-        {
-          "productName": "[LV105] LV Tomate Basil Aufstr 180g",
-          "recentOrders": "2025-08-07 (jeu.): 300u",
-          "lastYearOrders": "2024-09-18 (mer.): 300u\n2024-08-07 (mer.): 300u\n2024-05-29 (mer.): 300u\n2024-05-02 (jeu.): 100u\n2024-05-02 (jeu.): 200u\n2024-04-16 (mar.): 300u\n2024-03-12 (mar.): 300u\n2024-01-31 (mer.): 300u\n2024-01-03 (mer.): 300u\n2023-11-21 (mar.): 300u\n2023-10-17 (mar.): 300u",
-          "currentDate": "2025-10-07",
-          "quantity": 300,
-          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à deux mois. 2) Le cycle de commande historique montre une fréquence régulière environ tous les 1 à 2 mois, particulièrement active durant la période automnale l'an dernier. 3) Quantité estimée à 300u, correspondant à la médiane stricte et au volume standard observé sur la quasi-totalité des commandes passées."
-        },
-        {
-          "productName": "[PF3259] EVD MOUTARDE FORTE 350 GR",
-          "recentOrders": "2025-08-13 (mer.): 3900u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible au vu de la quantité massive commandée récemment (3900u). 2) Une seule commande enregistrée le 13 août 2025, soit il y a exactement deux mois. Aucun historique N-1 n'est disponible pour établir un cycle récurrent. 3) Quantité estimée à 0 car le stock actuel devrait couvrir les besoins à court terme et le rythme de commande semble être de gros volumes espacés."
-        },
-        {
-          "productName": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
-          "recentOrders": "2025-09-10 (mer.): 1u\n2025-07-24 (jeu.): 1u\n2025-07-17 (jeu.): 1u",
-          "lastYearOrders": "2024-09-09 (lun.): 2u\n2024-08-02 (ven.): 2u\n2024-07-15 (lun.): 2u\n2024-06-21 (ven.): 2u\n2024-06-11 (mar.): 2u\n2024-05-21 (mar.): 2u\n2024-04-15 (lun.): 2u\n2024-03-15 (ven.): 2u\n2024-02-20 (mar.): 2u\n2024-02-02 (ven.): 2u\n2023-12-15 (ven.): 2u\n2023-11-28 (mar.): 1u",
-          "currentDate": "2025-10-08",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture modéré au vu de la régularité historique des commandes. 2) Le cycle de commande est d'environ une fois par mois ; la dernière commande remontant au 10 septembre, une nouvelle commande est attendue en octobre. 3) Quantité estimée à 1u car les commandes récentes sont de 1u, bien que la médiane historique soit de 2u, afin de rester conservateur sur ce format."
-        },
-        {
-          "productName": "[LV155] LV Vinaigrette Caesar 250 ml",
-          "recentOrders": "2025-09-25 (jeu.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car la rotation est très lente. 2) La seule commande enregistrée date d'il y a moins de 20 jours. 3) Quantité estimée à 0 car le produit semble être un nouvel ajout avec un volume de vente très faible (1u) et une fréquence qui ne justifie pas une commande mensuelle systématique."
-        },
-        {
-          "productName": "[RIT02] RITCHIE Citron - Framboise - verre 275ml",
-          "recentOrders": "2025-09-17 (mer.): 1u\n2025-08-05 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible, produit avec un faible volume de rotation. 2) Dernière commande il y a 21 jours, le cycle semble être mensuel. 3) Quantité estimée à 1u car les volumes récents sont très faibles (1-2u) et la tendance est à la baisse."
-        },
-        {
-          "productName": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
-          "recentOrders": "2025-09-25 (jeu.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture? Faible, le produit a été commandé récemment. 2) Cycle et dernière commande? Une seule commande isolée le 25 septembre (1u). Il n'y a pas encore de récurrence établie sur ce produit. 3) Quantité estimée et pourquoi? 0u car la commande est trop récente par rapport au volume habituel et au manque d'historique (N-1 inexistant)."
-        },
-        {
-          "productName": "[MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml",
-          "recentOrders": "2025-09-25 (jeu.): 240u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible car une commande importante de 240u a été passée il y a moins de 20 jours. 2) Le produit semble fonctionner par commandes volumineuses et espacées (nouveau produit ou commande de stock). 3) Quantité estimée à 0 car le stock actuel devrait couvrir les besoins pour les 30 prochains jours."
-        },
-        {
-          "productName": "[LV159] LV Tartinade aux Truffes  135g ",
-          "recentOrders": "2025-09-15 (lun.): 1u\n2025-08-07 (jeu.): 1u\n2025-07-17 (jeu.): 1u",
-          "lastYearOrders": "2024-08-05 (lun.): 1u\n2024-04-11 (jeu.): 2u\n2024-02-05 (lun.): 2u\n2023-10-19 (jeu.): 2u",
-          "currentDate": "2025-10-05",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) Le cycle de commande semble être mensuel (environ tous les 30 jours). La dernière commande date d'il y a 20 jours. 3) Quantité estimée à 1 unité car c'est la quantité constante commandée lors des trois derniers mois, ce qui correspond à la tendance actuelle."
-        },
-        {
-          "productName": "[PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML",
-          "recentOrders": "2025-08-14 (jeu.): 111u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-02",
-          "quantity": 111,
-          "reasoning": "1) Risque de rupture modéré suite à l'absence de commande depuis août. 2) Une seule commande enregistrée il y a 49 jours, cycle encore peu défini mais stock probablement bas. 3) Quantité estimée à 111u pour s'aligner sur l'unique volume de commande historique connu pour ce client."
-        },
-        {
-          "productName": "[JF022] JF MOUTARDE MIEL 250ML WECK",
-          "recentOrders": "2025-09-25 (jeu.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible, produit à rotation très lente. 2) Dernière commande il y a seulement 18 jours pour un produit dont le cycle de réapprovisionnement semble long (pas de commandes l'an dernier). 3) Quantité estimée à 0 car le stock actuel devrait couvrir les besoins des 30 prochains jours."
-        },
-        {
-          "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
-          "recentOrders": "2025-10-02 (jeu.): 1u\n2025-08-27 (mer.): 1u\n2025-07-16 (mer.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible, produit à rotation lente mais régulière. 2) Le cycle semble être mensuel (juillet, août, octobre). La dernière commande date d'il y a seulement 6 jours. 3) Une commande est probable d'ici 30 jours pour maintenir le stock linéaire de 1u observé lors des trois derniers mois."
-        },
-        {
-          "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
-          "recentOrders": "2025-09-29 (lun.): 4u\n2025-09-09 (mar.): 10u\n2025-08-22 (ven.): 3u\n2025-07-22 (mar.): 6u",
-          "lastYearOrders": "2024-09-25 (mer.): 4u\n2024-09-16 (lun.): 6u\n2024-08-26 (lun.): 3u\n2024-08-19 (lun.): 4u\n2024-07-31 (mer.): 5u\n2024-07-11 (jeu.): 1u\n2024-06-26 (mer.): 6u\n2024-06-19 (mer.): 5u\n2024-05-31 (ven.): 5u\n2024-05-16 (jeu.): 7u\n2024-04-29 (lun.): 10u\n2024-03-21 (jeu.): 4u",
-          "currentDate": "2025-10-06",
-          "quantity": 4,
-          "reasoning": "1) Risque de rupture modéré car la dernière commande date d'il y a une semaine (29/09). 2) Le produit suit un cycle de commande régulier d'environ 2 à 3 semaines. En 2024, une commande avait eu lieu fin septembre suivie d'une accalmie relative, mais le flux actuel reste soutenu. 3) Quantité estimée à 4u, correspondant à la médiane des commandes récentes et à la quantité commandée à la même période l'an dernier."
-        },
-        {
-          "productName": "[LV160] LV Tartinade Aubergine 190g",
-          "recentOrders": "2025-08-26 (mar.): 868u",
-          "lastYearOrders": "2024-09-09 (lun.): 1050u\n2024-06-14 (ven.): 1050u\n2024-05-06 (lun.): 1050u\n2024-02-20 (mar.): 1400u\n2024-01-23 (mar.): 350u\n2023-12-19 (mar.): 1400u\n2023-10-18 (mer.): 700u\n2023-10-18 (mer.): 1050u",
-          "currentDate": "2025-10-12",
-          "quantity": 1050,
-          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à fin août pour un produit à forte rotation. 2) Le cycle de commande est historiquement régulier (tous les 2-3 mois) avec une présence marquée sur la période octobre-novembre l'année précédente. 3) La quantité estimée de 1050u correspond à la médiane des commandes passées, volume cohérent avec les besoins saisonniers observés l'an dernier."
-        },
-        {
-          "productName": "[LV139] LV Tartinade Paprika Chili 380g",
-          "recentOrders": "2025-08-26 (mar.): 192u",
-          "lastYearOrders": "2024-09-09 (lun.): 192u\n2024-06-14 (ven.): 240u\n2024-05-06 (lun.): 80u\n2024-03-27 (mer.): 144u\n2024-03-05 (mar.): 192u\n2023-12-19 (mar.): 192u\n2023-10-18 (mer.): 192u",
-          "currentDate": "2025-10-12",
-          "quantity": 192,
-          "reasoning": "1) Pas de risque de rupture immédiat, mais le produit suit un cycle de réapprovisionnement régulier. 2) La dernière commande date du 26 août (il y a environ 45 jours), ce qui correspond à la fréquence de commande observée l'année dernière à la même période (septembre/octobre). 3) Quantité estimée à 192 unités, correspondant à la médiane des commandes passées et à la commande exacte de l'année précédente à cette saison."
-        },
-        {
-          "productName": "[RIT07] RITCHIE Orange - canette 330ml",
-          "recentOrders": "2025-09-29 (lun.): 5u\n2025-08-19 (mar.): 5u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible au vu du rythme de commande. 2) Cycle de commande d'environ 40 jours, la dernière commande datant du 29 septembre. 3) Pas de commande prévue dans les 30 jours car le stock devrait couvrir les besoins jusqu'à début novembre."
-        },
-        {
-          "productName": "[PF1469] JF MAYONNAI TRUFFES 250ML WECK",
-          "recentOrders": "2025-09-05 (ven.): 400u",
-          "lastYearOrders": "2024-10-01 (mar.): 400u\n2024-08-08 (jeu.): 400u\n2024-06-19 (mer.): 315u\n2024-04-15 (lun.): 400u\n2024-02-29 (jeu.): 1000u\n2023-12-13 (mer.): 12u",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car la dernière commande de 400u est récente (septembre). 2) Le cycle de commande semble être trimestriel (août, octobre l'année précédente). La dernière commande date d'il y a environ 38 jours. 3) Pas de commande estimée dans les 30 prochains jours car le stock actuel devrait couvrir la période, suivant le rythme de l'année passée."
-        },
-        {
-          "productName": "[OCC02] OCCHIOLINO premium limoncello 500ml",
-          "recentOrders": "2025-10-06 (lun.): 4u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible car une commande récente a été effectuée. 2) Le produit a été commandé il y a seulement 7 jours (6 octobre), ce qui est trop récent pour un nouveau réapprovisionnement sous 30 jours au vu de l'absence d'historique de rotation rapide. 3) Quantité estimée à 0 car le cycle de commande pour ce type de spiritueux premium semble être ponctuel ou lent."
-        },
-        {
-          "productName": "[PF3384] JF VINAIGRETTE FINES HERBES 240ML ",
-          "recentOrders": "2025-09-05 (ven.): 200u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Aucun risque de rupture imminent, le stock de la commande de septembre (200u) devrait couvrir les besoins actuels. 2) Le produit a été commandé une seule fois récemment (il y a 38 jours) et n'a pas d'historique de cycle régulier. 3) Quantité estimée à 0 car il n'y a pas de signal de réapprovisionnement nécessaire dans les 30 prochains jours selon les exemples de produits similaires lancés récemment."
-        },
-        {
-          "productName": "[JOY05] Organic Cherry Jam 370g",
-          "recentOrders": "2025-09-08 (lun.): 1u\n2025-08-25 (lun.): 1u\n2025-08-11 (lun.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-05",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible car les volumes sont très petits mais réguliers. 2) Le cycle de commande semble être toutes les deux semaines environ ; la dernière commande datant du 8 septembre, une nouvelle commande est attendue. 3) Quantité estimée à 1u car c'est la médiane des commandes récentes (1u, 1u, 2u) et le profil reste très conservateur."
-        },
-        {
-          "productName": "[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g",
-          "recentOrders": "2025-10-01 (mer.): 24u\n2025-09-09 (mar.): 50u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car le stock semble avoir été reconstitué récemment. 2) La dernière commande date du 01/10 (24u), soit moins de 15 jours avant la date d'analyse. 3) Pas de commande estimée dans les 30 jours car le cycle de réapprovisionnement observé est mensuel et les volumes récents (moyenne ~37u) suggèrent une couverture suffisante pour le mois en cours."
-        },
-        {
-          "productName": "[RIT05] RITCHIE Cola - verre 275ml",
-          "recentOrders": "2025-09-17 (mer.): 3u\n2025-08-05 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
-          "quantity": 3,
-          "reasoning": "1) Risque rupture faible au vu des faibles volumes, mais le produit semble s'installer dans un cycle mensuel. 2) Dernière commande il y a 21 jours, une nouvelle commande est probable dans les 30 prochains jours pour maintenir le stock. 3) Quantité estimée à 3 unités, correspondant à la commande la plus récente et légèrement supérieure à la médiane (2.5u) pour couvrir la demande croissante."
-        },
-        {
-          "productName": "[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml",
-          "recentOrders": "2025-09-22 (lun.): 1u\n2025-08-25 (lun.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-05",
-          "quantity": 1,
-          "reasoning": "1) Risque rupture faible au vu des petits volumes. 2) Cycle de commande mensuel observé (fin août, fin septembre). La dernière commande date d'il y a 13 jours. 3) Quantité estimée à 1u car les commandes récentes sont constantes à cette unité et le produit semble suivre un rythme de réassort régulier."
-        },
-        {
-          "productName": "[MF0029] MF Tarti Datte chili 250g",
-          "recentOrders": "2025-08-26 (mar.): 48u\n2025-08-19 (mar.): 16u\n2025-08-11 (lun.): 16u\n2025-08-07 (jeu.): 16u\n2025-07-14 (lun.): 16u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-07",
-          "quantity": 16,
-          "reasoning": "1) Risque de rupture modéré car la dernière commande remonte à plus de 40 jours alors que le cycle est habituellement hebdomadaire. 2) Le produit montre un rythme de réapprovisionnement régulier en août, mais aucune activité en septembre. 3) Quantité estimée à 16u, correspondant à la médiane des commandes récentes (hors outlier de 48u), ce qui permet une reprise prudente du stock."
-        },
-        {
-          "productName": "[ORG04] ORGANICA crunchy fruit fraise 12g",
-          "recentOrders": "2025-09-25 (jeu.): 90u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car une commande importante de 90u a été passée très récemment. 2) La dernière commande date du 25 septembre, soit il y a moins de 20 jours pour un produit sans historique N-1. 3) Quantité estimée à 0 car le stock actuel devrait couvrir les besoins des 30 prochains jours au vu de la récence du dernier approvisionnement."
-        },
-        {
-          "productName": "[TVF009] TVF TARTINADE BIO POIS CHICHES 180g",
-          "recentOrders": "2025-08-11 (lun.): 1u",
-          "lastYearOrders": "2024-07-29 (lun.): 2u\n2024-07-10 (mer.): 2u",
-          "currentDate": "2025-09-22",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible compte tenu de la faible rotation. 2) La dernière commande date d'il y a plus de 40 jours et l'historique montre des commandes très sporadiques (une seule cet été). 3) Pas de commande estimée dans les 30 prochains jours car le cycle de réapprovisionnement semble long et irrégulier pour ce produit."
+          "reasoning": "1) Risque de rupture faible compte tenu du volume de vente très bas. 2) Une seule commande enregistrée il y a plus de 40 jours (24 septembre). 3) Pas de récurrence établie ni d'historique N-1 permettant de justifier une commande imminente."
         },
         {
           "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
-          "recentOrders": "2025-09-25 (jeu.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car la consommation est très épisodique et faible (1u). 2) La dernière commande date de moins de 30 jours (25 septembre) et il n'y a pas de cycle de réapprovisionnement établi. 3) Quantité estimée à 0 car le produit semble être un achat ponctuel ou très lent au vu de l'historique récent et de l'absence de commandes l'année passée."
-        },
-        {
-          "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
-          "recentOrders": "2025-09-15 (lun.): 2u\n2025-08-07 (jeu.): 2u",
-          "lastYearOrders": "2024-09-24 (mar.): 2u\n2024-08-05 (lun.): 2u\n2024-06-26 (mer.): 2u\n2024-05-16 (jeu.): 2u\n2024-04-11 (jeu.): 2u\n2024-03-18 (lun.): 2u\n2024-02-05 (lun.): 2u\n2024-01-04 (jeu.): 2u\n2023-11-21 (mar.): 1u\n2023-10-19 (jeu.): 2u",
-          "currentDate": "2025-10-05",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture faible, produit à rotation régulière. 2) Le cycle de commande est mensuel (dernières commandes le 07/08 et 15/09). Une commande est attendue vers la mi-octobre pour respecter ce rythme. 3) Quantité estimée à 2 unités, correspondant à la médiane historique constante sur les deux dernières années."
-        },
-        {
-          "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
-          "recentOrders": "2025-09-09 (mar.): 4u\n2025-08-19 (mar.): 6u\n2025-07-23 (mer.): 2u\n2025-07-07 (lun.): 4u\n2025-06-23 (lun.): 6u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-09-23",
-          "quantity": 4,
-          "reasoning": "1) Risque de rupture modéré au vu de la fréquence bimensuelle. 2) Le cycle de commande est d'environ 15 à 20 jours ; la dernière commande datant du 09/09, une nouvelle commande est attendue fin septembre. 3) Quantité estimée à 4u car c'est la médiane des commandes récentes (2, 4, 4, 6, 6)."
-        },
-        {
-          "productName": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
-          "recentOrders": "2025-09-10 (mer.): 2u\n2025-08-08 (ven.): 3u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 3,
-          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus d'un mois. 2) Le cycle semble être mensuel (août puis septembre). 3) Quantité estimée à 3u, correspondant à la médiane des commandes précédentes pour maintenir un stock de sécurité constant."
-        },
-        {
-          "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
-          "recentOrders": "2025-10-02 (jeu.): 1u\n2025-08-27 (mer.): 1u\n2025-07-16 (mer.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible, produit à rotation lente mais régulière. 2) Cycle de commande mensuel observé sur les derniers mois (juillet, août, octobre). La dernière commande date d'il y a 6 jours. 3) Quantité estimée à 1 unité car c'est la quantité constante commandée lors des dernières sessions, ce qui correspond à la médiane et au mode du produit."
-        },
-        {
-          "productName": "[RIT05] RITCHIE Cola - verre 275ml",
-          "recentOrders": "2025-09-29 (lun.): 30u\n2025-09-17 (mer.): 15u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture? Faible, le stock semble avoir été récemment complété. 2) Cycle et dernière commande? Le produit a été commandé deux fois en septembre avec un intervalle de 12 jours, mais la dernière commande de 30u date d'il y a seulement 14 jours. 3) Quantité estimée et pourquoi? 0 car le volume de 30u est significatif par rapport à l'historique récent et devrait couvrir les besoins pour les 30 prochains jours."
-        },
-        {
-          "productName": "[JF029] JF VOL AU VENT BOCAL 400G",
-          "recentOrders": "2025-09-25 (jeu.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible. 2) La dernière commande date de moins de 20 jours (25 sept.) et il n'y a qu'une seule occurrence dans l'historique récent. 3) Quantité estimée à 0 car le cycle de vente sur ce format bocal semble très lent ou ponctuel (1u), ne justifiant pas une nouvelle commande dans les 30 jours."
-        },
-        {
-          "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
-          "recentOrders": "2025-09-10 (mer.): 2u\n2025-08-20 (mer.): 1u\n2025-08-08 (ven.): 2u\n2025-07-22 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
+          "recentOrders": "2025-09-08 (lun.): 2u\n2025-08-05 (mar.): 2u",
+          "lastYearOrders": "2024-09-30 (lun.): 3u\n2024-08-05 (lun.): 3u\n2024-06-24 (lun.): 2u\n2024-05-31 (ven.): 1u\n2024-04-29 (lun.): 2u\n2024-04-02 (mar.): 3u\n2024-02-29 (jeu.): 2u\n2024-02-02 (ven.): 1u\n2024-01-09 (mar.): 2u\n2023-12-05 (mar.): 1u\n2023-11-07 (mar.): 2u",
           "currentDate": "2025-10-13",
           "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré au vu de la fréquence mensuelle régulière. 2) Le cycle de commande est d'environ 15 à 30 jours, la dernière commande datant d'un mois (10 septembre). 3) Quantité estimée à 2 unités car c'est la médiane des commandes récentes (1, 2, 2, 2) et le volume reste stable."
+          "reasoning": "1) Risque de rupture modéré, le stock arrive probablement à échéance d'un cycle de deux mois. 2) Le cycle actuel montre une commande tous les 30 à 35 jours environ (août puis septembre), la dernière commande datant d'il y a 35 jours. 3) Quantité estimée de 2u car c'est la quantité constante sur les commandes récentes et la médiane sur l'historique complet."
         },
         {
-          "productName": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
-          "recentOrders": "2025-07-09 (mer.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-08-25",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, produit à rotation très lente. 2) Une seule commande isolée il y a plus de 45 jours (09/07). 3) Pas de commande prévue car le cycle de réapprovisionnement n'est pas encore atteint pour ce volume unitaire."
-        },
-        {
-          "productName": "[ING0271] SIROP D'AGAVE BIO",
-          "recentOrders": "2025-09-05 (ven.): 25u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-02",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, produit avec une seule commande récente. 2) Dernière commande le 05/09 pour 25u, soit il y a moins de 30 jours. 3) Pas d'historique N-1 ou de cycle récurrent établi permettant de justifier une nouvelle commande dans les 30 prochains jours."
-        },
-        {
-          "productName": "[JF036] JF MITRAILLETTE SQUEEZE 300ML",
-          "recentOrders": "2025-07-15 (mar.): 6u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-09-30",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car le produit ne présente pas de flux régulier. 2) La seule commande enregistrée date de mi-juillet (il y a plus de 75 jours) et il n'y a aucun historique sur l'année précédente pour justifier un cycle de réapprovisionnement imminent. 3) Quantité estimée à 0 car aucune tendance de consommation n'est établie sur les 30 derniers jours."
-        },
-        {
-          "productName": "[JF032] JF SAUCE LAPIN 380GX6",
-          "recentOrders": "2025-08-05 (mar.): 2u",
-          "lastYearOrders": "2024-08-26 (lun.): 1u\n2024-06-19 (mer.): 3u\n2024-03-21 (jeu.): 2u",
-          "currentDate": "2025-10-06",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture modéré car la dernière commande date de deux mois. 2) Le cycle de commande semble être trimestriel ou lié à des besoins ponctuels, avec une commande enregistrée en août l'année dernière. 3) Quantité estimée à 1u pour rester conservateur suite à la commande de 2u en août, correspondant à la médiane des volumes historiques."
-        },
-        {
-          "productName": "[PF0088] FILOU VOL AU VENT 800 GR",
-          "recentOrders": "2025-06-13 (ven.): 3u\n2025-05-16 (ven.): 5u\n2025-04-28 (lun.): 5u\n2025-04-18 (ven.): 5u\n2025-04-11 (ven.): 60u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-06-19",
-          "quantity": 5,
-          "reasoning": "1) Risque de rupture modéré suite à la consommation régulière du stock important d'avril. 2) Cycle de commande hebdomadaire à bimensuel observé en mai/juin, dernière commande il y a 6 jours. 3) Quantité estimée à 5 unités, correspondant à la médiane des commandes récentes (hors commande exceptionnelle de 60u)."
-        },
-        {
-          "productName": "[TVF004] TVF TARTINADE BIO OLIVE 180g",
-          "recentOrders": "2025-09-02 (mar.): 3u",
-          "lastYearOrders": "2024-07-29 (lun.): 2u\n2024-07-10 (mer.): 2u\n2024-06-11 (mar.): 1u\n2024-06-04 (mar.): 3u",
-          "currentDate": "2025-09-22",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, le stock semble suffisant suite à la commande de début septembre. 2) Le cycle de commande est espacé (environ tous les 1 à 2 mois l'année dernière). La dernière commande date d'il y a seulement 20 jours. 3) Quantité estimée à 0 car le produit ne présente pas une rotation assez rapide pour justifier une nouvelle commande dans les 30 prochains jours selon l'historique."
-        },
-        {
-          "productName": "[JF032] JF SAUCE LAPIN 380GX6",
-          "recentOrders": "2025-09-25 (jeu.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) Dernière commande le 25 septembre (il y a 18 jours) pour une seule unité. 3) Pas d'historique N-1 disponible et volume récent très faible (1u) ; il est trop tôt pour déclencher une nouvelle commande de réapprovisionnement sous 30 jours."
-        },
-        {
-          "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
-          "recentOrders": "2025-10-01 (mer.): 48u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture nul, commande importante de 48u effectuée il y a moins de deux semaines. 2) Produit récent sans historique N-1, le stock actuel devrait couvrir les besoins pour les 30 prochains jours. 3) Quantité estimée à 0 car le cycle de réapprovisionnement pour ce volume n'est pas encore atteint."
-        },
-        {
-          "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
-          "recentOrders": "2025-09-12 (ven.): 4u\n2025-09-09 (mar.): 4u\n2025-08-19 (mar.): 1u\n2025-07-23 (mer.): 4u\n2025-07-07 (lun.): 3u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-09-23",
-          "quantity": 4,
-          "reasoning": "1) Risque de rupture modéré avec une fréquence de commande élevée (environ tous les 15 jours). 2) Le cycle est régulier et la dernière commande date d'il y a 11 jours; une nouvelle commande est probable d'ici fin septembre. 3) Quantité estimée à 4u car c'est la quantité la plus fréquente (mode et médiane) observée récemment."
-        },
-        {
-          "productName": "[MF0054] MF Noix de cajou - Fleur de sel 133g",
-          "recentOrders": "2025-08-04 (lun.): 2u",
-          "lastYearOrders": "2024-06-27 (jeu.): 1u\n2024-04-16 (mar.): 3u\n2024-03-25 (lun.): 3u\n2024-02-20 (mar.): 2u",
-          "currentDate": "2025-09-23",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible compte tenu de la faible rotation. 2) La dernière commande date d'il y a plus de 50 jours (04/08) et le cycle de commande semble très espacé (plusieurs mois entre chaque unité). 3) Pas de commande estimée dans les 30 prochains jours car le produit présente une demande sporadique et lente sans récurrence mensuelle établie."
-        },
-        {
-          "productName": "[REB11] ReBEL chips premium & bio - truffes 125g",
-          "recentOrders": "2025-09-17 (mer.): 2u\n2025-08-05 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
+          "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+          "recentOrders": "2025-08-22 (ven.): 5u",
+          "lastYearOrders": "2024-10-22 (mar.): 2u\n2024-09-26 (jeu.): 2u\n2024-08-21 (mer.): 2u\n2024-08-01 (jeu.): 1u\n2024-07-19 (ven.): 0u\n2024-07-05 (ven.): 4u\n2024-06-04 (mar.): 2u\n2024-05-16 (jeu.): 1u\n2024-04-16 (mar.): 3u\n2024-03-22 (ven.): 2u",
+          "currentDate": "2025-10-27",
           "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré au vu de la fréquence mensuelle. 2) La dernière commande date du 17/09, le cycle semble être d'environ 40 jours. 3) Quantité estimée à 2 unités car c'est la quantité constante commandée lors des deux dernières occurrences."
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 2 mois. 2) Le cycle historique montre une commande régulière environ toutes les 4 à 6 semaines; la dernière commande était de 5u en août. 3) Quantité estimée à 2u basés sur la médiane des commandes de l'année passée (2u) pour couvrir le besoin du mois à venir."
         },
         {
-          "productName": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
-          "recentOrders": "2025-09-10 (mer.): 2u\n2025-08-08 (ven.): 2u\n2025-07-22 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré, la dernière commande date d'il y a plus de 30 jours. 2) Cycle de commande régulier environ toutes les 3 à 4 semaines. 3) Quantité estimée à 2u car c'est la quantité constante observée sur toutes les commandes récentes."
-        },
-        {
-          "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
-          "recentOrders": "2025-09-10 (mer.): 6u\n2025-08-27 (mer.): 2u\n2025-08-12 (mar.): 1u\n2025-07-16 (mer.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-15",
+          "productName": "[LV135] LV Tartinade Basilico 190g",
+          "recentOrders": "2025-10-01 (mer.): 1u\n2025-08-27 (mer.): 1u",
+          "lastYearOrders": "2024-10-07 (lun.): 2u\n2024-07-15 (lun.): 3u\n2024-06-13 (jeu.): 1u\n2024-04-29 (lun.): 3u\n2024-03-21 (jeu.): 2u\n2024-02-05 (lun.): 3u\n2023-12-07 (jeu.): 1u\n2023-11-21 (mar.): 1u",
+          "currentDate": "2025-10-27",
           "quantity": 1,
-          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant d'un mois. 2) Cycle de commande régulier toutes les 2 à 4 semaines environ. 3) Quantité estimée à 1u pour rester conservateur suite à la tendance récente (1-2u), la commande de 6u semblant être un surplus ponctuel."
-        },
-        {
-          "productName": "[JOY03] JOY! Organic Apricot Jam 370g",
-          "recentOrders": "2025-09-12 (ven.): 2u\n2025-09-09 (mar.): 5u\n2025-08-19 (mar.): 1u\n2025-07-07 (lun.): 2u\n2025-06-23 (lun.): 4u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-09-23",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré avec une consommation régulière sur les 3 derniers mois. 2) Le cycle de commande est d'environ 15 à 20 jours, la dernière commande datant du 12 septembre, une commande est probable fin septembre. 3) Quantité estimée à 2u, correspondant à la médiane des commandes récentes (1, 2, 2, 4, 5) pour rester conservateur sur ce petit format."
-        },
-        {
-          "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
-          "recentOrders": "2025-09-17 (mer.): 2u\n2025-08-05 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré au vu du cycle régulier. 2) Le produit semble suivre un cycle mensuel (commandes début août et mi-septembre). La dernière commande remonte à 21 jours. 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes récentes pour maintenir le stock."
-        },
-        {
-          "productName": "[MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g",
-          "recentOrders": "2025-09-24 (mer.): 32u\n2025-09-10 (mer.): 32u",
-          "lastYearOrders": "2024-09-09 (lun.): 32u\n2024-09-05 (jeu.): 32u\n2024-08-27 (mar.): 16u\n2024-08-16 (ven.): 16u\n2024-06-27 (jeu.): 16u\n2024-06-13 (jeu.): 32u\n2024-05-16 (jeu.): 32u\n2024-05-14 (mar.): 16u\n2024-03-14 (jeu.): 32u\n2024-03-08 (ven.): 32u\n2024-02-22 (jeu.): 32u\n2024-02-09 (ven.): 32u",
-          "currentDate": "2025-10-12",
-          "quantity": 32,
-          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à 18 jours et le cycle moyen est de 14 à 20 jours. 2) Le produit suit un cycle bimensuel régulier observé tant cette année que l'année dernière à la même période. 3) Quantité estimée à 32 unités, ce qui correspond à la médiane des commandes récentes et du volume historique pour ce produit."
-        },
-        {
-          "productName": "[PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML",
-          "recentOrders": "2025-09-08 (lun.): 98u\n2025-09-01 (lun.): 98u\n2025-08-25 (lun.): 98u\n2025-08-19 (mar.): 98u\n2025-08-14 (jeu.): 196u",
-          "lastYearOrders": "2024-09-24 (mar.): 196u\n2024-09-23 (lun.): 196u\n2024-08-06 (mar.): 98u\n2024-07-11 (jeu.): 392u",
-          "currentDate": "2025-10-12",
-          "quantity": 98,
-          "reasoning": "1) Risque de rupture modéré car la dernière commande remonte à plus d'un mois (08/09) alors que le cycle était hebdomadaire en août. 2) Cycle régulier identifié le lundi; la pause actuelle suggère un besoin imminent pour maintenir le stock rayon. 3) Quantité estimée à 98u, correspondant à la médiane des commandes récentes et au volume standard par livraison observé."
-        },
-        {
-          "productName": "[PF0072] FILOU MAYONNAISE OEUFS SEAU 10L",
-          "recentOrders": "2025-09-20 (sam.): 44u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-12",
-          "quantity": 44,
-          "reasoning": "1) Le risque de rupture est modéré car il s'agit d'un format de 10L à rotation spécifique. 2) La dernière commande date d'il y a environ 3 semaines. 3) Quantité estimée à 44u pour maintenir le stock opérationnel basé sur le volume unique observé récemment."
-        },
-        {
-          "productName": "[JF029] JF VOL AU VENT BOCAL 400G",
-          "recentOrders": "2025-08-22 (ven.): 1u",
-          "lastYearOrders": "2024-06-19 (mer.): 3u",
-          "currentDate": "2025-10-06",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible compte tenu de la faible rotation historique. 2) La dernière commande date d'il y a plus de 45 jours (22 août) et le cycle de commande semble très irrégulier et espacé. 3) Aucune commande estimée dans les 30 prochains jours car le produit présente une demande sporadique sans récurrence mensuelle établie."
-        },
-        {
-          "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
-          "recentOrders": "2025-10-09 (jeu.): 1u\n2025-09-10 (mer.): 6u\n2025-08-27 (mer.): 1u\n2025-08-12 (mar.): 1u\n2025-07-16 (mer.): 5u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-15",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible, produit à rotation régulière mais faibles volumes. 2) La dernière commande date du 09/10 (il y a 6 jours), le cycle moyen est d'environ 15 à 20 jours. 3) Quantité estimée à 1u car les commandes récentes oscillent entre 1u et 6u, avec une médiane basse sur les dernières occurrences (1u). On reste conservateur conformément aux exemples de petites quantités."
-        },
-        {
-          "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
-          "recentOrders": "2025-08-26 (mar.): 868u",
-          "lastYearOrders": "2024-10-11 (ven.): 1050u\n2024-09-09 (lun.): 1750u\n2024-08-07 (mer.): 700u\n2024-05-06 (lun.): 1400u\n2024-03-05 (mar.): 700u\n2024-02-09 (ven.): 1400u\n2024-01-23 (mar.): 1050u\n2023-12-19 (mar.): 1400u\n2023-12-19 (mar.): 150u\n2023-10-18 (mer.): 2100u",
-          "currentDate": "2025-10-12",
-          "quantity": 1050,
-          "reasoning": "1) Le produit est un best-seller avec des volumes importants, le risque de rupture est élevé si on ne réapprovisionne pas face à la demande automnale. 2) La dernière commande date d'environ 45 jours (26 août) ; l'historique N-1 montre une commande systématique en octobre (le 11/10). 3) Quantité estimée à 1050u, correspondant à la médiane des volumes de l'année précédente et à la commande exacte de la même période l'an dernier."
-        },
-        {
-          "productName": "[ING0271] SIROP D'AGAVE BIO",
-          "recentOrders": "2025-09-05 (ven.): 25u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-02",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, produit avec une seule commande enregistrée récemment. 2) La dernière commande date de moins d'un mois (2025-09-05). Aucun historique N-1 n'indique un cycle de réapprovisionnement mensuel court. 3) Quantité estimée à 0 car le stock de 25u semble suffisant pour couvrir la période de 30 jours à venir au vu de la fréquence actuelle."
-        },
-        {
-          "productName": "[PI3333] PI VINAIGRETTE MIEL MOUTARDE G&F",
-          "recentOrders": "2025-08-14 (jeu.): 95u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-02",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car une seule commande isolée a été enregistrée. 2) La dernière commande date d'il y a plus de 45 jours (14 août 2025) et aucun cycle régulier n'est établi. 3) Quantité estimée à 0 car le produit ne semble pas suivre une rotation mensuelle classique et aucune commande n'a été passée en septembre."
-        },
-        {
-          "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
-          "recentOrders": "2025-09-03 (mer.): 2u\n2025-08-08 (ven.): 2u\n2025-07-18 (ven.): 2u\n2025-07-16 (mer.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-01",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré au vu de la régularité des commandes. 2) Cycle de commande d'environ 3 à 4 semaines, la dernière commande datant du 2025-09-03. 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes récentes (1, 2, 2, 2)."
-        },
-        {
-          "productName": "[LV363] LV BIO Tartin'apero Avocat 180g ",
-          "recentOrders": "2025-10-08 (mer.): 434u\n2025-08-20 (mer.): 864u\n2025-08-20 (mer.): 4u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible car une commande importante de 434u vient d'être passée il y a 5 jours. 2) Le cycle semble être mensuel ou bimensuel pour les gros volumes. 3) Quantité estimée à 0 car le stock actuel devrait couvrir les besoins des 30 prochains jours suite à la réception récente."
-        },
-        {
-          "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
-          "recentOrders": "2025-09-17 (mer.): 2u\n2025-08-05 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré au vu de la fréquence mensuelle. 2) La dernière commande date d'environ 20 jours, un réapprovisionnement est probable dans les 30 jours pour maintenir le stock. 3) Quantité estimée à 2 unités, correspondant à la médiane et au volume constant des commandes précédentes."
-        },
-        {
-          "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
-          "recentOrders": "2025-09-10 (mer.): 2u\n2025-08-20 (mer.): 1u\n2025-08-08 (ven.): 2u\n2025-07-22 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus d'un mois. 2) Le cycle de commande semble être de 2 à 3 semaines, une commande est donc attendue prochainement. 3) Quantité estimée à 2u, correspondant à la médiane et au volume fréquent des commandes récentes."
-        },
-        {
-          "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
-          "recentOrders": "2025-09-10 (mer.): 6u\n2025-08-27 (mer.): 2u\n2025-08-12 (mar.): 1u\n2025-07-16 (mer.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-15",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant d'il y a plus de 30 jours. 2) Cycle de commande mensuel observé entre juillet et septembre. 3) Quantité estimée à 1u car les volumes récents sont faibles et la tendance est à la baisse après le pic de septembre."
-        },
-        {
-          "productName": "[RIT05] RITCHIE Cola - verre 275ml",
-          "recentOrders": "2025-09-29 (lun.): 30u\n2025-09-17 (mer.): 15u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car les volumes récents (45u en 15 jours) couvrent probablement la demande immédiate. 2) La dernière commande date d'il y a seulement 14 jours, et le cycle de réapprovisionnement semble s'espacer par rapport à la fréquence de septembre. 3) Quantité estimée à 0 car le stock actuel permet d'attendre la prochaine analyse sans risque critique avant 30j."
-        },
-        {
-          "productName": "[JOY05] Organic Cherry Jam 370g",
-          "recentOrders": "2025-09-08 (lun.): 1u\n2025-08-25 (lun.): 1u\n2025-08-11 (lun.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-05",
-          "quantity": 1,
-          "reasoning": "1) Risque rupture faible au vu des faibles volumes, mais le cycle de commande est très régulier (tous les 14 jours environ). 2) La dernière commande date du 08/09, une commande est donc attendue prochainement pour maintenir le rythme bimensuel. 3) Quantité estimée à 1u car les volumes récents sont très petits (médiane de 1u) et il convient de rester conservateur sur ces références."
-        },
-        {
-          "productName": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
-          "recentOrders": "2025-10-02 (jeu.): 434u\n2025-10-01 (mer.): 434u\n2025-09-18 (jeu.): 434u\n2025-09-04 (jeu.): 434u\n2025-09-04 (jeu.): 868u",
-          "lastYearOrders": "2024-10-03 (jeu.): 434u\n2024-10-03 (jeu.): 434u\n2024-09-19 (jeu.): 434u\n2024-09-19 (jeu.): 434u\n2024-09-05 (jeu.): 434u\n2024-09-05 (jeu.): 434u\n2024-09-05 (jeu.): 434u\n2024-08-09 (ven.): 434u\n2024-08-09 (ven.): 434u\n2024-08-08 (jeu.): 868u\n2024-08-07 (mer.): 868u\n2024-08-07 (mer.): 434u",
-          "currentDate": "2025-10-15",
-          "quantity": 434,
-          "reasoning": "1) Risque de rupture faible car le stock semble piloté par des commandes régulières de gros volumes. 2) Le cycle est très soutenu avec des commandes hebdomadaires ou bi-mensuelles (dernière le 02/10). 3) Quantité estimée à 434u, correspondant à la médiane des commandes récentes et du flux historique N-1 sur la même période."
-        },
-        {
-          "productName": "[PF1558] LV TARTINADE BIO CAROTTE 200ML",
-          "recentOrders": "2025-09-16 (mar.): 700u\n2025-08-27 (mer.): 1398u",
-          "lastYearOrders": "2024-09-16 (lun.): 1200u\n2024-08-08 (jeu.): 1134u\n2024-07-03 (mer.): 691u\n2024-05-07 (mar.): 700u\n2024-04-15 (lun.): 659u\n2024-03-13 (mer.): 1321u\n2024-01-10 (mer.): 1200u\n2023-11-27 (lun.): 336u\n2023-11-02 (jeu.): 350u\n2023-10-19 (jeu.): 374u",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible : le stock semble suffisant suite aux commandes massives d'août et septembre. 2) Cycle : la dernière commande remonte à moins de 30 jours (16 septembre) et l'historique montre généralement un espacement de 4 à 8 semaines entre les gros volumes. 3) Quantité estimée à 0 car le produit vient d'être réapprovisionné et la période équivalente l'an dernier n'a pas généré de commande en octobre après celle de septembre."
-        },
-        {
-          "productName": "[UPI02] Jus de pomme-fraise bio d'UPIGNY 250ml",
-          "recentOrders": "2025-09-15 (lun.): 10u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, le produit a un historique de vente très récent et ponctuel. 2) Une seule commande enregistrée il y a environ 30 jours (15 septembre). 3) Quantité estimée à 0 car le cycle de réapprovisionnement pour ce type de boisson format 250ml semble être espacé de plus d'un mois selon les produits similaires de la gamme Upigny (voir UPI01 et UPI05). Aucun signal de commande imminente sous 30 jours."
-        },
-        {
-          "productName": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
-          "recentOrders": "2025-09-22 (lun.): 1u\n2025-08-25 (lun.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-05",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible sur ce volume. 2) Le cycle de commande semble être mensuel (août, septembre). La dernière commande date d'il y a 13 jours. 3) Quantité estimée à 1u pour maintenir le rythme régulier observé récemment."
-        },
-        {
-          "productName": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
-          "recentOrders": "2025-08-26 (mar.): 60u\n2025-07-09 (mer.): 30u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-07",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car le produit ne semble pas avoir un cycle de commande mensuel régulier sur cette période. 2) Dernière commande effectuée le 26 août (il y a environ 42 jours). 3) Pas de commande estimée dans les 30 prochains jours car l'historique récent montre des volumes qui couvrent généralement plusieurs mois pour ce type de boisson."
-        },
-        {
-          "productName": "[RISH03] RISH kombucha BIO - gingembre 330ml",
-          "recentOrders": "2025-09-10 (mer.): 1u\n2025-08-20 (mer.): 1u\n2025-08-08 (ven.): 2u\n2025-07-22 (mar.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture modéré au vu de la consommation régulière sur les 3 derniers mois. 2) Le cycle de commande est d'environ 15 à 20 jours, la dernière commande remontant au 10 septembre, une nouvelle commande est attendue. 3) Quantité estimée à 1 unité, correspondant à la médiane des commandes récentes (1u) pour rester conservateur sur ce petit volume."
-        },
-        {
-          "productName": "[ORG01] ORGANICA crunchy fruit ananas 16g",
-          "recentOrders": "2025-09-25 (jeu.): 36u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, le produit a été approvisionné récemment. 2) Une commande importante de 36u a été passée le 25 septembre, soit il y a moins de 20 jours. 3) Pas de commande estimée dans les 30 jours car le volume récent (36u) couvre largement les besoins habituels pour ce type de produit de snacking sur un cycle mensuel."
-        },
-        {
-          "productName": "[RISH04] RISH kombucha BIO - smash basil 330ml",
-          "recentOrders": "2025-09-25 (jeu.): 25u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, le produit a été approvisionné récemment. 2) La dernière commande date du 25 septembre (25 unités), ce qui est assez récent pour un produit de type boisson avec ce volume. 3) Pas de commande prévue dans les 30 jours car le stock actuel devrait couvrir les besoins immédiats, aucun cycle de récurrence n'étant encore établi."
-        },
-        {
-          "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
-          "recentOrders": "2025-09-10 (mer.): 2u\n2025-08-20 (mer.): 2u\n2025-07-22 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré avec une consommation régulière. 2) Le cycle de commande est d'environ un mois, la dernière commande datant du 10 septembre, une nouvelle commande est attendue. 3) Quantité estimée à 2 unités basées sur la stabilité parfaite des commandes récentes (médiane de 2u)."
-        },
-        {
-          "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
-          "recentOrders": "2025-08-05 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible, produit à rotation lente. 2) Dernière commande il y a plus de 60 jours (05/08), cycle de réapprovisionnement non établi. 3) Pas de commande prévue dans les 30 jours car l'historique montre une demande très ponctuelle (une seule unité de 2u) sans récurrence rapprochée."
-        },
-        {
-          "productName": "[JOY05] Organic Cherry Jam 370g",
-          "recentOrders": "2025-09-08 (lun.): 1u\n2025-08-25 (lun.): 1u\n2025-08-11 (lun.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-05",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible car les volumes sont très petits. 2) Le produit suit un cycle de commande régulier environ toutes les deux semaines (08/09, 25/08, 11/08). La dernière commande date d'il y a 27 jours, une nouvelle commande est donc attendue. 3) Quantité estimée à 1 unité, correspondant à la médiane des commandes récentes (1u, 1u, 2u) pour maintenir un stock minimal."
-        },
-        {
-          "productName": "[PF1599] FILOU MAYONNAISE OEUFS SQUEEZE 300ML",
-          "recentOrders": "2025-09-20 (sam.): 40u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-12",
-          "quantity": 40,
-          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à plus de 20 jours. 2) Le cycle semble mensuel d'après l'unique commande récente, bien qu'il n'y ait pas d'historique N-1. 3) Quantité estimée à 40u pour maintenir le stock basé sur le volume de la commande précédente."
-        },
-        {
-          "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
-          "recentOrders": "2025-09-16 (mar.): 1u\n2025-08-27 (mer.): 1u\n2025-07-08 (mar.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-07",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture modéré au vu de la régularité des commandes. 2) Cycle de commande mensuel identifié (juillet, août, septembre). La dernière commande date d'il y a 21 jours, une nouvelle commande est attendue sous peu. 3) Quantité estimée à 1u car c'est la quantité constante commandée lors des trois dernières occurrences."
-        },
-        {
-          "productName": "[MF0054] MF Noix de cajou - Fleur de sel 133g",
-          "recentOrders": "2025-08-04 (lun.): 2u",
-          "lastYearOrders": "2024-06-27 (jeu.): 1u\n2024-04-16 (mar.): 3u\n2024-03-25 (lun.): 3u\n2024-02-20 (mar.): 2u",
-          "currentDate": "2025-09-23",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible compte tenu de la faible rotation. 2) La dernière commande date d'il y a environ 50 jours (04/08), et le cycle historique montre des intervalles de 2 à 3 mois entre les commandes. 3) Aucune commande estimée dans les 30 prochains jours car le produit présente une rotation lente et irrégulière."
-        },
-        {
-          "productName": "[PF1811] LV SAUCE AIOLI PESTO 250M WECK",
-          "recentOrders": "2025-09-05 (ven.): 200u",
-          "lastYearOrders": "2024-06-11 (mar.): 200u\n2024-04-03 (mer.): 200u\n2024-02-22 (jeu.): 200u",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car le volume de la dernière commande est important pour ce produit. 2) Le cycle de commande semble très espacé (plusieurs mois entre chaque commande) et la dernière commande ne date que de 5 semaines. 3) Quantité estimée à 0 car le délai entre les commandes historiques (2 à 3 mois) suggère que le stock actuel est suffisant pour les 30 prochains jours."
-        },
-        {
-          "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
-          "recentOrders": "2025-08-06 (mer.): 6u\n2025-06-23 (lun.): 4u\n2025-06-11 (mer.): 10u\n2025-05-26 (lun.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-08-25",
-          "quantity": 6,
-          "reasoning": "1) Risque de rupture modéré au vu de la cadence régulière. 2) Cycle de commande d'environ 2 à 3 semaines ; la dernière commande date du 06/08, une nouvelle commande est attendue fin août. 3) Quantité estimée à 6u, correspondant à la médiane des commandes récentes (2, 4, 6, 10)."
-        },
-        {
-          "productName": "[PF1892] LD TARTINADE BIO TRUFFES 135G",
-          "recentOrders": "2025-08-07 (jeu.): 200u",
-          "lastYearOrders": "2024-09-30 (lun.): 75u\n2024-09-09 (lun.): 50u\n2024-08-14 (mer.): 25u\n2024-06-12 (mer.): 75u\n2024-05-27 (lun.): 50u\n2024-05-03 (ven.): 25u\n2024-03-28 (jeu.): 25u\n2024-02-02 (ven.): 25u\n2024-01-23 (mar.): 25u\n2023-12-07 (jeu.): 50u\n2023-12-04 (lun.): 25u\n2023-11-13 (lun.): 50u",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car une commande importante a été passée récemment. 2) La dernière commande date du 07/08 pour 200u, ce qui couvre largement les besoins basés sur l'historique N-1 (volume total de sept-oct 2024 était de 125u). 3) Pas de commande estimée dans les 30 jours car le stock actuel semble suffisant pour absorber la demande saisonnière habituelle."
-        },
-        {
-          "productName": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
-          "recentOrders": "2025-08-26 (mar.): 60u\n2025-07-09 (mer.): 30u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-07",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car le produit ne semble pas avoir un cycle de commande mensuel régulier sur cette période. 2) Dernière commande effectuée il y a environ 42 jours (26 août), ce qui dépasse le délai de 30 jours, mais le volume (60u) suggère un stock encore suffisant. 3) Quantité estimée à 0 car aucune commande n'a été passée en septembre malgré l'historique récent, indiquant un ralentissement de la demande ou un stock résiduel important."
-        },
-        {
-          "productName": "[PF2937] LD FR TARTINADE BIO POIS 200",
-          "recentOrders": "2025-08-29 (ven.): 100u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque rupture faible car la dernière commande est relativement récente (fin août). 2) Le produit ne semble pas suivre un cycle de commande mensuel régulier sur cette période. 3) Pas de commande estimée pour les 30 prochains jours car l'historique montre une commande unique isolée sans répétition immédiate."
-        },
-        {
-          "productName": "[TVF004] TVF TARTINADE BIO OLIVE 180g",
-          "recentOrders": "2025-09-02 (mar.): 3u",
-          "lastYearOrders": "2024-07-29 (lun.): 2u\n2024-07-10 (mer.): 2u\n2024-06-11 (mar.): 1u\n2024-06-04 (mar.): 3u",
-          "currentDate": "2025-09-22",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car le cycle de commande est espacé. 2) Dernière commande effectuée il y a seulement 20 jours (02/09) pour 3 unités. 3) Selon l'historique N-1 et la fréquence actuelle, le stock devrait couvrir les besoins pour les 30 prochains jours. Pas de commande prévue avant octobre."
+          "reasoning": "1) Risque de rupture modéré, le produit circule régulièrement avec un historique stable. 2) Cycle d'environ 1 à 2 mois ; la dernière commande date d'il y a 26 jours (01/10). Historiquement, une commande survient souvent fin octobre ou courant novembre. 3) Quantité estimée à 1u pour rester conservateur face aux commandes récentes de 1u, bien que la médiane historique soit plus élevée."
         },
         {
           "productName": "[JF004] JF MAYONNAIS POIVRE 250ML WECK",
-          "recentOrders": "2025-09-17 (mer.): 2u\n2025-08-05 (mar.): 2u",
-          "lastYearOrders": "2024-08-21 (mer.): 2u\n2024-04-15 (lun.): 3u\n2024-03-12 (mar.): 2u",
-          "currentDate": "2025-10-08",
+          "recentOrders": "2025-10-03 (ven.): 1u",
+          "lastYearOrders": "2024-10-02 (mer.): 1u\n2024-08-08 (jeu.): 1u\n2024-04-30 (mar.): 1u",
+          "currentDate": "2025-11-04",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant d'un mois. 2) Le cycle semble être d'environ une commande par mois selon l'historique N-1 (octobre) et la commande récente d'octobre. 3) Quantité estimée à 1u, correspondant à la médiane stricte des commandes passées et au volume habituel pour ce produit."
+        },
+        {
+          "productName": "[LD014] LD Organic Avocado Spread 180 g",
+          "recentOrders": "2025-08-07 (jeu.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-15",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) Dernière commande il y a plus de 2 mois (07/08), pas de cycle régulier établi. 3) Quantité 0 car l'historique très limité (une seule commande de 2u) ne permet pas de prédire un réapprovisionnement imminent dans les 30 prochains jours."
+        },
+        {
+          "productName": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+          "recentOrders": "2025-09-01 (lun.): 2u\n2025-08-04 (lun.): 1u",
+          "lastYearOrders": "2024-09-03 (mar.): 2u\n2024-07-18 (jeu.): 3u\n2024-07-02 (mar.): 0u\n2024-05-23 (jeu.): 4u\n2024-03-28 (jeu.): 3u",
+          "currentDate": "2025-10-20",
           "quantity": 2,
-          "reasoning": "1) Risque de rupture faible, produit à rotation lente mais régulière. 2) Le cycle semble être d'environ 45 jours; la dernière commande date du 17 septembre, une commande est donc probable d'ici fin octobre. 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes récentes et de l'historique N-1."
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 45 jours. 2) Le cycle de commande semble être mensuel à bimensuel selon l'historique N-1. La dernière commande enregistrée date du 2025-09-01. 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes passées et au volume habituel pour cette période."
+        },
+        {
+          "productName": "[TVF004] TVF TARTINADE BIO OLIVE 180g",
+          "recentOrders": "2025-10-02 (jeu.): 1u",
+          "lastYearOrders": "2024-08-01 (jeu.): 1u\n2024-06-28 (ven.): 1u\n2024-05-16 (jeu.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture très faible au vu de la faible rotation. 2) Le cycle est irrégulier avec une seule commande récente il y a plus de 40 jours (02/10). 3) Pas de commande prévue dans les 30 prochains jours car le produit semble se vendre par unité isolée sur de longs intervalles."
+        },
+        {
+          "productName": "[LV136] LV Tartinade Betterave 190g",
+          "recentOrders": "2025-10-09 (jeu.): 3u\n2025-09-10 (mer.): 1u",
+          "lastYearOrders": "2024-10-31 (jeu.): 3u\n2024-10-08 (mar.): 2u\n2024-09-09 (lun.): 1u\n2024-08-02 (ven.): 2u\n2024-07-15 (lun.): 2u\n2024-06-21 (ven.): 2u\n2024-06-11 (mar.): 2u\n2024-05-21 (mar.): 1u\n2024-03-15 (ven.): 2u\n2024-02-20 (mar.): 2u\n2024-02-02 (ven.): 1u",
+          "currentDate": "2025-11-04",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré, le stock actuel s'épuise probablement suite à la dernière commande d'il y a 26 jours. 2) Cycle mensuel régulier observé tant cette année (sept., oct.) que l'année dernière sur la même période. 3) Quantité estimée à 2u, ce qui correspond à la médiane des commandes passées et reste cohérent avec les volumes habituels pour ce produit."
+        },
+        {
+          "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+          "recentOrders": "2025-09-17 (mer.): 1u",
+          "lastYearOrders": "2024-10-23 (mer.): 2u\n2024-09-03 (mar.): 1u\n2024-07-17 (mer.): 2u\n2024-06-11 (mar.): 1u\n2024-04-22 (lun.): 1u",
+          "currentDate": "2025-10-28",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Le cycle historique montre des commandes régulières environ tous les 1.5 à 2 mois. 3) Quantité estimée à 1u pour rester conservateur au vu de la dernière commande et de la médiane des commandes passées."
+        },
+        {
+          "productName": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+          "recentOrders": "2025-09-16 (mar.): 2u",
+          "lastYearOrders": "2024-07-15 (lun.): 1u",
+          "currentDate": "2025-11-04",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) La dernière commande remonte à plus de 45 jours (16 septembre) et aucune commande n'a été enregistrée en octobre ou début novembre malgré l'historique N-1. 3) Cycle de réapprovisionnement irrégulier, pas de signal de commande imminent pour les 30 prochains jours."
+        },
+        {
+          "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+          "recentOrders": "2025-08-11 (lun.): 3u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-03",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car le produit présente une rotation très lente. 2) La dernière commande remonte à près de 3 mois (août) et il n'y a pas d'historique de commandes régulières ou saisonnières pour cette période. 3) Aucune commande n'est prévue dans les 30 prochains jours compte tenu du cycle de réapprovisionnement observé."
+        },
+        {
+          "productName": "[MF0055] MF Noix de cajou - Curry 133g",
+          "recentOrders": "2025-11-03 (lun.): 1u\n2025-09-17 (mer.): 1u",
+          "lastYearOrders": "2024-08-29 (jeu.): 1u\n2024-06-19 (mer.): 3u\n2024-05-16 (jeu.): 2u\n2024-04-09 (mar.): 1u\n2023-12-04 (lun.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car la dernière commande est très récente (moins de 10 jours). 2) Le cycle de commande est irrégulier (environ tous les 1.5 à 2 mois) et le produit a été réapprovisionné le 3 novembre. 3) Quantité estimée à 0 car il n'y a pas de besoin immédiat de réassort dans les 30 prochains jours au vu de l'historique récent et de la faible vélocité (1u)."
+        },
+        {
+          "productName": "[RISH03] RISH kombucha BIO - gingembre 330ml",
+          "recentOrders": "2025-10-06 (lun.): 1u\n2025-09-15 (lun.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-11",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 30 jours. 2) Cycle mensuel observé (mi-septembre, début octobre). La dernière commande de 1u était le 2025-10-06. 3) Quantité estimée à 2u basés sur la médiane des commandes récentes (1u et 2u) pour couvrir les besoins du mois à venir."
+        },
+        {
+          "productName": "[RF003] REFIELD Maïs 500G ",
+          "recentOrders": "2025-05-06 (mar.): 40u\n2025-04-01 (mar.): 32u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-06-23",
+          "quantity": 40,
+          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à environ 7 semaines. 2) Le cycle observé est mensuel (avril puis mai), mais aucune commande n'a été passée début juin. 3) Quantité estimée à 40u, correspondant au volume de la commande la plus récente pour reconstituer le stock après une période d'absence."
+        },
+        {
+          "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+          "recentOrders": "2025-08-04 (lun.): 2u",
+          "lastYearOrders": "2024-10-14 (lun.): 2u\n2024-08-12 (lun.): 1u\n2024-05-28 (mar.): 3u\n2024-04-23 (mar.): 3u",
+          "currentDate": "2025-10-21",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la période automnale semble propice aux commandes selon l'historique N-1. 2) Le cycle est irrégulier mais une commande a été passée à la même date l'an dernier (14 octobre). La dernière commande remonte à plus de 2 mois (août). 3) Quantité estimée à 2u, ce qui correspond à la médiane des commandes passées sur cette période et à la dernière commande enregistrée."
+        },
+        {
+          "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+          "recentOrders": "2025-09-17 (mer.): 4u",
+          "lastYearOrders": "2024-10-22 (mar.): 2u\n2024-09-26 (jeu.): 3u\n2024-08-21 (mer.): 3u\n2024-08-01 (jeu.): 2u\n2024-07-19 (ven.): 0u\n2024-07-05 (ven.): 4u\n2024-06-04 (mar.): 2u\n2024-05-16 (jeu.): 2u\n2024-04-16 (mar.): 4u",
+          "currentDate": "2025-10-27",
+          "quantity": 3,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Le cycle historique montre une commande quasi mensuelle à cette période (septembre/octobre). 3) Quantité estimée à 3u, correspondant à la médiane des commandes de l'année précédente sur la même période."
+        },
+        {
+          "productName": "[JF036] JF MITRAILLETTE SQUEEZE 300ML",
+          "recentOrders": "2025-10-03 (ven.): 1u",
+          "lastYearOrders": "2024-11-05 (mar.): 6u\n2024-10-01 (mar.): 3u\n2024-08-06 (mar.): 1u\n2024-07-10 (mer.): 1u\n2024-06-06 (jeu.): 1u\n2024-04-18 (jeu.): 1u\n2024-03-27 (mer.): 2u",
+          "currentDate": "2025-11-11",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré au vu de l'historique N-1. 2) Cycle irrégulier, mais une commande importante (6u) a eu lieu à la même période l'an dernier. La dernière commande remonte à plus d'un mois (03/10). 3) Quantité estimée à 1u car les commandes récentes sont très faibles (1u) malgré un historique N-1 plus élevé, on reste donc conservateur."
+        },
+        {
+          "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+          "recentOrders": "2025-09-10 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-13",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car le produit présente une rotation très lente. 2) La dernière commande date de plus de deux mois (2025-09-10) pour une seule unité, sans historique N-1 pour soutenir une saisonnalité. 3) Quantité estimée à 0 car le cycle de vente actuel ne justifie pas un réapprovisionnement dans les 30 prochains jours."
+        },
+        {
+          "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+          "recentOrders": "2025-09-11 (jeu.): 1u\n2025-08-11 (lun.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-16",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré, le produit semble avoir un cycle de vente régulier. 2) Commande mensuelle observée en août et septembre (environ tous les 30 jours). La dernière commande remonte à 35 jours. 3) Quantité de 1u estimée car les volumes récents sont très faibles (1-2u) et la tendance est à la baisse (2u puis 1u), on reste donc conservateur sur la prochaine unité."
+        },
+        {
+          "productName": "[PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G",
+          "recentOrders": "2025-09-04 (jeu.): 62u\n2025-08-07 (jeu.): 62u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-21",
+          "quantity": 62,
+          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à plus de 45 jours. 2) Le cycle semble mensuel avec une commande début août et début septembre, mais aucune en octobre à la date d'analyse. 3) La quantité estimée est de 62 unités, correspondant à la médiane et au volume constant des commandes précédentes pour ce produit."
+        },
+        {
+          "productName": "[LV161] LV Tartinade Mangue curry 190g",
+          "recentOrders": "2025-10-06 (lun.): 2u\n2025-08-25 (lun.): 1u",
+          "lastYearOrders": "2024-08-05 (lun.): 3u\n2024-06-26 (mer.): 2u\n2024-04-11 (jeu.): 1u\n2024-03-18 (lun.): 2u\n2024-02-05 (lun.): 2u\n2024-01-04 (jeu.): 2u\n2023-11-21 (mar.): 2u",
+          "currentDate": "2025-11-11",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré, le produit est commandé régulièrement tous les 1.5 à 2 mois. 2) La dernière commande date du 06/10 (il y a environ 35 jours), un nouveau besoin devrait apparaître sous peu selon le cycle historique. 3) Quantité estimée à 2u, correspondant à la médiane des commandes passées et au volume de la dernière commande."
+        },
+        {
+          "productName": "[JF011] JF SAUCE TARTARE 470ML WECK",
+          "recentOrders": "2025-10-02 (jeu.): 1u",
+          "lastYearOrders": "2024-08-01 (jeu.): 1u\n2024-06-28 (ven.): 0u\n2024-05-16 (jeu.): 1u\n2024-03-19 (mar.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, le produit a une rotation lente. 2) La dernière commande date d'environ 40 jours (02/10) et le cycle historique suggère un réapprovisionnement tous les 2 à 3 mois. 3) Pas de commande prévue dans les 30 prochains jours car le délai depuis la dernière unité est encore court par rapport à la fréquence habituelle."
+        },
+        {
+          "productName": "[LD013] LD Tuscan Organic Spread 180 g",
+          "recentOrders": "2025-10-02 (jeu.): 2u\n2025-08-12 (mar.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-12",
+          "quantity": 4,
+          "reasoning": "1) Risque de rupture modéré, le stock actuel devrait couvrir les besoins immédiats mais le cycle de commande approche. 2) Cycle d'environ 50-60 jours ; dernière commande il y a 41 jours (02/10). 3) Quantité estimée à 4u car, bien que les commandes précédentes soient de 2u, l'historique suggère une régularité qui justifie un léger réapprovisionnement pour les 30 prochains jours selon les tendances de la gamme."
+        },
+        {
+          "productName": "[PF0075] FILOU CHASSEUR  10 L",
+          "recentOrders": "2025-10-10 (ven.): 44u\n2025-08-29 (ven.): 55u\n2025-08-22 (ven.): 52u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-06",
+          "quantity": 44,
+          "reasoning": "1) Le produit présente un cycle de réapprovisionnement d'environ 1,5 mois, la dernière commande datant du 10 octobre. 2) Avec une analyse à 30 jours (jusqu'au 6 décembre), une commande est probable fin novembre ou début décembre. 3) La quantité estimée est de 44u, correspondant à la dernière commande et se situant dans la fourchette basse des volumes récents (44-55u) pour rester conservateur."
         },
         {
           "productName": "[LV160] LV Tartinade Aubergine 190g",
-          "recentOrders": "2025-08-06 (mer.): 2u\n2025-07-09 (mer.): 1u\n2025-06-30 (lun.): 2u\n2025-06-23 (lun.): 2u\n2025-06-11 (mer.): 2u",
+          "recentOrders": "2025-10-08 (mer.): 3u\n2025-09-10 (mer.): 3u",
+          "lastYearOrders": "2024-10-21 (lun.): 4u\n2024-08-27 (mar.): 3u\n2024-06-24 (lun.): 4u\n2024-05-06 (lun.): 3u\n2024-03-15 (ven.): 3u\n2024-01-11 (jeu.): 3u\n2023-12-05 (mar.): 3u",
+          "currentDate": "2025-11-13",
+          "quantity": 3,
+          "reasoning": "1) Risque de rupture modéré, le produit présente une demande constante. 2) Cycle mensuel régulier observé tant sur l'historique récent (septembre/octobre) que l'année dernière à la même période. La dernière commande date d'il y a 5 semaines. 3) Quantité estimée à 3u, correspondant à la médiane des commandes passées et au volume habituel pour ce produit."
+        },
+        {
+          "productName": "[JF025] JF VINAIGRETTE FH WECK 200ML",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "2024-10-11 (ven.): 1u\n2024-09-09 (lun.): 1u\n2024-07-16 (mar.): 1u\n2024-06-27 (jeu.): 1u\n2024-05-22 (mer.): 1u\n2024-04-23 (mar.): 1u\n2024-03-18 (lun.): 1u",
+          "currentDate": "2025-10-26",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car aucune commande récente, mais l'historique montre un besoin régulier. 2) Le cycle de commande l'année dernière était mensuel avec une dernière commande à cette période (11 octobre). 3) Quantité de 1u estimée car c'est la quantité constante commandée historiquement."
+        },
+        {
+          "productName": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+          "recentOrders": "2025-10-08 (mer.): 1u",
+          "lastYearOrders": "2024-10-21 (lun.): 2u\n2024-08-22 (jeu.): 1u\n2024-06-10 (lun.): 1u\n2024-06-05 (mer.): 2u\n2024-04-15 (lun.): 2u\n2024-03-14 (jeu.): 2u",
+          "currentDate": "2025-11-03",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré au vu de la rotation régulière l'an dernier. 2) Le cycle est d'environ une commande par mois ou tous les deux mois; la dernière commande date d'il y a 26 jours. 3) Quantité estimée à 1u pour suivre la tendance la plus récente et rester conservateur face aux historiques de 1-2u."
+        },
+        {
+          "productName": "[UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml",
+          "recentOrders": "2025-09-24 (mer.): 1u",
           "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-08-25",
+          "currentDate": "2025-11-04",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture très faible au vu de la faible rotation. 2) Une seule commande isolée de 1u il y a plus de 40 jours (24 septembre). Aucun historique N-1 pour confirmer un besoin saisonnier. 3) Pas de commande prévue dans les 30 prochains jours car le cycle de vente semble très lent ou occasionnel."
+        },
+        {
+          "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+          "recentOrders": "2025-10-14 (mar.): 3u\n2025-09-10 (mer.): 2u\n2025-08-20 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-03",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une consommation régulière. 2) Cycle mensuel stable (août, septembre, octobre). Dernière commande le 14/10, la prochaine est attendue mi-novembre. 3) Quantité estimée à 1u car les volumes récents sont faibles (2-3u) et on reste conservateur sur ce type de produit."
+        },
+        {
+          "productName": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+          "recentOrders": "2025-11-06 (jeu.): 2u\n2025-10-02 (jeu.): 3u\n2025-08-27 (mer.): 4u",
+          "lastYearOrders": "2024-11-04 (lun.): 5u\n2024-10-22 (mar.): 3u\n2024-09-27 (ven.): 4u\n2024-09-03 (mar.): 4u\n2024-08-01 (jeu.): 3u\n2024-06-17 (lun.): 5u\n2024-05-16 (jeu.): 2u\n2024-04-16 (mar.): 3u\n2024-03-28 (jeu.): 2u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car une commande de 2u a été passée il y a seulement 6 jours. 2) Le cycle de commande est d'environ 1 mois (octobre, novembre) ; la dernière commande date du 2025-11-06. 3) Pas de nouvelle commande estimée dans les 30 prochains jours car le stock vient d'être réapprovisionné."
+        },
+        {
+          "productName": "[LV139] LV Tartinade Paprika Chili 380g",
+          "recentOrders": "2025-10-06 (lun.): 1u\n2025-08-25 (lun.): 1u",
+          "lastYearOrders": "2024-08-05 (lun.): 1u\n2024-05-16 (jeu.): 1u\n2024-04-11 (jeu.): 2u\n2024-02-05 (lun.): 1u\n2024-01-04 (jeu.): 2u",
+          "currentDate": "2025-11-11",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant de plus d'un mois. 2) Le cycle de commande est irrégulier mais présent sur le long terme (N-1). La dernière commande a eu lieu le 06/10. 3) Quantité estimée à 1u, correspondant à la médiane des commandes récentes et historiques pour ce format de 380g."
+        },
+        {
+          "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+          "recentOrders": "2025-10-01 (mer.): 1u\n2025-09-16 (mar.): 2u\n2025-08-27 (mer.): 2u",
+          "lastYearOrders": "2024-09-26 (jeu.): 4u\n2024-07-30 (mar.): 4u\n2024-07-01 (lun.): 4u\n2024-05-13 (lun.): 3u\n2024-03-27 (mer.): 3u\n2024-02-06 (mar.): 3u\n2023-12-08 (ven.): 4u",
+          "currentDate": "2025-10-27",
           "quantity": 2,
-          "reasoning": "1) Risque de rupture faible, le produit est commandé régulièrement toutes les 2 à 3 semaines environ. 2) La dernière commande date du 6 août (il y a 19 jours), un nouvel approvisionnement est attendu d'ici 10 jours pour maintenir le cycle. 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes récentes (stable entre 1u et 2u)."
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant de 26 jours. 2) Le cycle de commande est régulier (environ toutes les 2-3 semaines historiquement) et la demande est stable. 3) Quantité estimée à 2u, correspondant à la médiane des commandes récentes (1u, 2u, 2u) pour maintenir le stock sans sur-stocker par rapport au ralentissement léger observé par rapport à l'an dernier."
         },
         {
-          "productName": "[PF3330] LV SDP SAUCE TARTARE 125G",
-          "recentOrders": "2025-07-25 (ven.): 2100u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
+          "productName": "[JF032] JF SAUCE LAPIN 380GX6",
+          "recentOrders": "2025-09-09 (mar.): 4u\n2025-08-07 (jeu.): 3u",
+          "lastYearOrders": "2024-10-03 (jeu.): 5u\n2024-08-14 (mer.): 4u\n2024-05-30 (jeu.): 4u\n2024-04-23 (mar.): 4u\n2024-03-19 (mar.): 5u",
+          "currentDate": "2025-10-15",
+          "quantity": 5,
+          "reasoning": "1) Risque de rupture modéré, le stock arrive probablement à épuisement. 2) Cycle régulier d'environ 1 à 2 mois ; la dernière commande date du 09/09 (il y a 36 jours). 3) Quantité estimée à 5u car c'est la quantité commandée l'an dernier à la même période (octobre) et la médiane haute des commandes passées."
+        },
+        {
+          "productName": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "2024-10-17 (jeu.): 2u",
+          "currentDate": "2025-11-04",
           "quantity": 0,
-          "reasoning": "1) Risque rupture faible car la dernière commande était massive. 2) La dernière commande remonte à plus de deux mois et demi (25 juillet). 3) Au vu de l'historique récent et de l'absence de commandes en N-1, aucun cycle de réapprovisionnement ne justifie une commande dans les 30 prochains jours."
+          "reasoning": "1) Risque de rupture faible car aucune commande récente n'a été enregistrée. 2) Le produit semble avoir un cycle très lent ou saisonnier, avec une seule commande isolée l'année dernière à la même période. 3) Pas de commande prévue dans les 30 prochains jours en l'absence de signal de consommation actuel."
         },
         {
-          "productName": "[RIT01] RITCHIE Orange - verre 275ml",
-          "recentOrders": "2025-09-17 (mer.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
+          "productName": "[JF002] JF MAYONNAI BASILIC 250ML WECK",
+          "recentOrders": "2025-07-17 (jeu.): 2u",
+          "lastYearOrders": "2024-06-20 (jeu.): 1u\n2024-06-04 (mar.): 1u\n2024-04-08 (lun.): 0u",
+          "currentDate": "2025-09-07",
           "quantity": 1,
-          "reasoning": "1) Risque de rupture faible car les volumes sont très petits. 2) Le produit semble être une nouveauté testée récemment (première commande le 17/09). 3) Quantité estimée à 1u pour maintenir la présence en rayon tout en restant conservateur face à l'historique récent très limité (une seule commande de 2u)."
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 50 jours. 2) Le cycle semble être trimestriel avec une activité observée en juin l'année dernière et juillet cette année. 3) Quantité estimée à 1u, correspondant à la médiane des commandes historiques (1u en 2024, 2u récemment), en restant conservateur sur ce format bocal."
         },
         {
-          "productName": "[fsv03] Noisette nature bio vrac 2,8kg ",
-          "recentOrders": "2025-09-11 (jeu.): 10u",
+          "productName": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+          "recentOrders": "2025-10-14 (mar.): 3u\n2025-09-10 (mer.): 2u\n2025-08-08 (ven.): 2u",
           "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible, le produit a été commandé récemment en volume correct. 2) Pas de cycle établi (une seule commande enregistrée il y a 32 jours). 3) Quantité estimée à 0 car le délai depuis la dernière commande est court pour un format vrac de 2,8kg et aucun historique N-1 ne suggère un besoin immédiat."
-        },
-        {
-          "productName": "[LV342] LV Organic Broccoli Spread 190 g",
-          "recentOrders": "2025-07-22 (mar.): 1u\n2025-07-15 (mar.): 1u\n2025-07-08 (mar.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-07",
-          "quantity": 0,
-          "reasoning": "1) Risque de rupture faible car aucune commande n'a été passée depuis plus de 2 mois. 2) Le produit a montré un cycle de commande hebdomadaire en juillet, mais l'activité s'est interrompue après le 22/07/2025. 3) Sans commande récente (août/septembre) et sans historique N-1 pour comparer la saisonnalité, il n'y a pas de signal de réapprovisionnement imminent dans les 30 jours."
-        },
-        {
-          "productName": "[RIT11] RITCHIE Orange Sanguine - verre 275ml",
-          "recentOrders": "2025-09-02 (mar.): 1u\n2025-08-19 (mar.): 2u\n2025-07-22 (mar.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-09-30",
-          "quantity": 1,
-          "reasoning": "1) Risque de rupture faible compte tenu des petits volumes. 2) Cycle de commande régulier environ toutes les 3-4 semaines le mardi (dernière commande il y a 28 jours). 3) Quantité estimée à 1u car les volumes récents sont très faibles (1-2u) et la médiane se situe à 1u."
-        },
-        {
-          "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
-          "recentOrders": "2025-09-03 (mer.): 2u\n2025-08-08 (ven.): 2u\n2025-07-18 (ven.): 2u\n2025-07-16 (mer.): 1u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-01",
+          "currentDate": "2025-11-03",
           "quantity": 2,
-          "reasoning": "1) Risque de rupture modéré au vu de la régularité des commandes. 2) Cycle de commande mensuel (début de mois), la dernière commande date d'il y a 28 jours (03/09). 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes récentes (1, 2, 2, 2)."
+          "reasoning": "1) Risque de rupture modéré, le produit tourne régulièrement tous les mois. 2) Cycle mensuel identifié (août, septembre, octobre), dernière commande il y a environ 20 jours. 3) Quantité estimée à 2u car c'est la médiane des commandes récentes (2u, 2u, 3u), ce qui permet de maintenir le stock sans surstockage sur un petit volume."
         },
         {
-          "productName": "[NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g",
-          "recentOrders": "2025-10-01 (mer.): 24u",
+          "productName": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
+          "recentOrders": "2025-09-25 (jeu.): 5u\n2025-08-20 (mer.): 5u",
           "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-13",
+          "currentDate": "2025-10-20",
+          "quantity": 6,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date d'environ un mois. 2) Le cycle observé est mensuel (août, septembre) avec des quantités stables. 3) Quantité estimée à 6u pour suivre la tendance de consommation régulière tout en restant légèrement au-dessus de la médiane de 5u."
+        },
+        {
+          "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+          "recentOrders": "2025-09-26 (ven.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-11",
           "quantity": 0,
-          "reasoning": "1) Risque rupture? Faible, le produit semble être un lancement récent sans historique de rupture. 2) Cycle et dernière commande? Une seule commande enregistrée il y a 12 jours. Pour ce type de barres protéinées vendues à l'unité ou en petit lot (24u), le stock est généralement suffisant pour couvrir le premier mois. 3) Quantité estimée et pourquoi? 0, car le délai depuis la commande initiale est trop court pour justifier un réapprovisionnement immédiat avant 30 jours, suivant la tendance conservatrice des lancements récents (ex: NUT07, NUT08)."
+          "reasoning": "1) Risque de rupture faible compte tenu du volume de vente. 2) Une seule commande isolée il y a plus de 6 semaines (26 septembre). 3) Pas de cycle régulier établi ni d'historique N-1 pour justifier une commande imminente sous 30 jours."
         },
         {
-          "productName": "[RIT01] RITCHIE Orange - verre 275ml",
-          "recentOrders": "2025-09-17 (mer.): 2u",
-          "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
+          "productName": "[JF035] JF BURGER SQUEEZE 300ML",
+          "recentOrders": "2025-05-20 (mar.): 1u\n2025-05-07 (mer.): 1u",
+          "lastYearOrders": "2024-06-04 (mar.): 1u",
+          "currentDate": "2025-06-10",
           "quantity": 1,
-          "reasoning": "1) Risque de rupture faible sur ce volume. 2) Produit récent avec une commande isolée il y a 3 semaines. 3) Quantité estimée à 1u pour maintenir le stock suite à la vente récente, en restant conservateur sur ce format verre."
+          "reasoning": "1) Risque de rupture modéré avec une consommation régulière de petites unités. 2) Cycle mensuel observé; la dernière commande remonte au 20 mai, soit 21 jours. 3) Quantité estimée de 1u car c'est la quantité constante commandée tant récemment que l'année dernière à la même période."
         },
         {
-          "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+          "productName": "[TVF001] TVF TARTINADE BIO MANGUE 180g",
+          "recentOrders": "2025-09-17 (mer.): 4u\n2025-08-08 (ven.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-28",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré, le produit semble avoir un cycle de vente lent mais régulier. 2) La dernière commande date du 17 septembre (il y a environ 40 jours), ce qui suggère qu'un réapprovisionnement est probable dans les 30 prochains jours. 3) Quantité estimée à 1u pour rester conservateur face à l'historique récent (médiane entre 1u et 4u, avec une tendance prudente sur les petits volumes)."
+        },
+        {
+          "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+          "recentOrders": "2025-10-01 (mer.): 1u\n2025-09-16 (mar.): 1u\n2025-08-27 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-27",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une consommation régulière. 2) Cycle de commande mensuel observé (tous les 15-20 jours environ), dernière commande il y a 26 jours. 3) Quantité estimée à 1u car le client commande systématiquement cette quantité unitaire lors de chaque passage."
+        },
+        {
+          "productName": "[LV155] LV Vinaigrette Caesar 250 ml",
+          "recentOrders": "2025-10-06 (lun.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-11",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible compte tenu du volume de vente très bas. 2) Une seule commande enregistrée il y a environ 5 semaines. 3) Aucune commande prévue dans les 30 jours car le rythme de rotation est trop lent pour justifier un réapprovisionnement immédiat."
+        },
+        {
+          "productName": "[PF0070] FILOU/LD SAUCE ANDALOUSE  10 L",
+          "recentOrders": "2025-09-22 (lun.): 44u\n2025-08-19 (mar.): 39u",
+          "lastYearOrders": "2024-10-02 (mer.): 39u\n2024-08-20 (mar.): 39u\n2024-06-18 (mar.): 52u\n2024-05-13 (lun.): 40u\n2024-05-06 (lun.): 39u\n2024-04-02 (mar.): 26u\n2024-01-31 (mer.): 39u\n2023-11-30 (jeu.): 32u",
+          "currentDate": "2025-10-27",
+          "quantity": 39,
+          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à un peu plus d'un mois (35 jours). 2) Le cycle historique montre une commande environ tous les 1 à 2 mois, avec une présence systématique en octobre/novembre l'année dernière. 3) La quantité estimée est de 39u, ce qui correspond à la médiane et au mode très marqué de l'historique (6 occurrences sur 10)."
+        },
+        {
+          "productName": "[JF028] JF VINAIGRET CAESAR WECK 200ML",
           "recentOrders": "(Aucune commande)",
           "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-12",
+          "currentDate": "2025-09-28",
           "quantity": 0,
-          "reasoning": "1) Aucun risque de rupture immédiat car aucune commande n'a été enregistrée sur les périodes analysées. 2) Absence totale d'historique de commande (Recent Orders et Last Year Orders vides). 3) Quantité estimée à 0 car il n'y a aucun signal de demande ou de cycle de réapprovisionnement établi pour ce produit à la date actuelle."
+          "reasoning": "1) Aucun risque de rupture immédiat identifié en l'absence d'historique récent. 2) Aucune commande enregistrée sur les 3 derniers mois ni sur la même période l'année précédente. 3) Sans données de cycle ou de volume, la probabilité d'une commande spontanée sous 30 jours est nulle."
         },
         {
-          "productName": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
-          "recentOrders": "2025-09-10 (mer.): 1u\n2025-08-27 (mer.): 1u\n2025-07-16 (mer.): 1u",
+          "productName": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+          "recentOrders": "2025-10-01 (mer.): 1u\n2025-09-08 (lun.): 2u",
           "lastYearOrders": "(Aucune commande)",
-          "currentDate": "2025-10-08",
+          "currentDate": "2025-10-20",
           "quantity": 1,
-          "reasoning": "1) Risque de rupture faible mais demande constante. 2) Le produit suit un cycle de commande mensuel très régulier (juillet, août, septembre). 3) Quantité de 1u estimée car les commandes récentes sont systématiquement de 1u, ce qui correspond à la médiane de consommation sur ce point de vente."
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de 19 jours pour un produit de snacking. 2) Le cycle semble mensuel (08/09 puis 01/10). 3) Quantité estimée à 1u car les volumes sont faibles et la médiane des commandes récentes est proche de 1u."
+        },
+        {
+          "productName": "[PF1878] JEFKE MOUTARDE PET 2,1 L",
+          "recentOrders": "2025-06-30 (lun.): 42u",
+          "lastYearOrders": "2024-07-05 (ven.): 84u\n2024-06-12 (mer.): 126u\n2024-05-07 (mar.): 42u\n2024-05-07 (mar.): 84u\n2024-03-13 (mer.): 126u\n2023-11-24 (ven.): 126u\n2023-10-05 (jeu.): 168u",
+          "currentDate": "2025-08-19",
+          "quantity": 84,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande remonte à plus de 50 jours. 2) Le cycle historique montre une activité régulière entre juin et août les années précédentes (84u en juillet 2024). 3) Quantité estimée à 84u, correspondant à la médiane des commandes passées et au volume observé à la même période l'an dernier."
+        },
+        {
+          "productName": "[JF035] JF BURGER SQUEEZE 300ML",
+          "recentOrders": "2025-08-22 (ven.): 2u",
+          "lastYearOrders": "2024-10-22 (mar.): 1u\n2024-09-26 (jeu.): 1u\n2024-08-21 (mer.): 1u\n2024-08-01 (jeu.): 0u\n2024-07-19 (ven.): 1u\n2024-07-05 (ven.): 1u\n2024-06-04 (mar.): 0u\n2024-05-16 (jeu.): 2u\n2024-04-16 (mar.): 1u",
+          "currentDate": "2025-10-27",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant de fin août. 2) Le cycle historique montre des commandes régulières environ tous les mois ou deux mois, et une commande est apparue à la même période l'année dernière (22 octobre). 3) Quantité estimée à 1u car c'est la médiane des commandes passées et la quantité la plus fréquente observée dans l'historique N-1."
+        },
+        {
+          "productName": "[JF018] JF SAUCE SAMOURAI 250ML WECK",
+          "recentOrders": "2025-10-02 (jeu.): 2u\n2025-10-02 (jeu.): 2u",
+          "lastYearOrders": "2024-11-05 (mar.): 2u\n2024-10-24 (jeu.): 1u\n2024-10-11 (ven.): 3u\n2024-09-30 (lun.): 4u\n2024-09-24 (mar.): 1u\n2024-09-12 (jeu.): 2u\n2024-08-23 (ven.): 1u\n2024-08-19 (lun.): 1u\n2024-08-07 (mer.): 1u\n2024-08-05 (lun.): 2u\n2024-07-12 (ven.): 2u\n2024-07-04 (jeu.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, le produit a été commandé récemment en double exemplaire. 2) Cycle de commande irrégulier mais avec une dernière commande datant du 02/10 (il y a environ 40 jours). 3) Pas de commande estimée dans les 30 prochains jours car le stock semble suffisant au vu de la fréquence historique et de l'absence de commande en novembre N-1 après le 05/11."
+        },
+        {
+          "productName": "[JF056] JF SAUCE CHIPOTLE 250ML WECK",
+          "recentOrders": "2025-05-20 (mar.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-06-10",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation très lente. 2) Dernière commande le 20 mai (il y a 21 jours), pas d'historique N-1 pour justifier une récurrence mensuelle. 3) Quantité estimée à 0 car le cycle de vente semble supérieur à 30 jours pour ce type de référence spécifique."
+        },
+        {
+          "productName": "[PF2972] LD FR TARTINADE BIO OLIVE 200",
+          "recentOrders": "2025-10-01 (mer.): 31u\n2025-08-07 (jeu.): 62u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-21",
+          "quantity": 31,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de 20 jours. 2) Le cycle semble être mensuel avec une commande début août (62u) et une début octobre (31u). 3) Quantité estimée à 31u pour maintenir le stock, correspondant au volume de la commande la plus récente."
+        },
+        {
+          "productName": "[PAO01] PAOLA cola verre 250ml - le cola des Belges",
+          "recentOrders": "2025-09-08 (lun.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-29",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible compte tenu du volume de vente très bas. 2) Une seule commande isolée de 1u enregistrée il y a plus de 50 jours (08/09). 3) Pas de commande prévue dans les 30 prochains jours car le produit ne présente pas de cycle de récurrence établi."
+        },
+        {
+          "productName": "[PF0075] FILOU CHASSEUR  10 L",
+          "recentOrders": "2025-10-10 (ven.): 44u\n2025-08-29 (ven.): 55u\n2025-08-22 (ven.): 52u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-06",
+          "quantity": 44,
+          "reasoning": "1) Le produit présente une rotation régulière sans risque de rupture immédiat mais nécessite un réapprovisionnement mensuel. 2) La dernière commande date du 10 octobre, soit il y a environ 4 semaines, ce qui correspond au cycle observé. 3) Quantité estimée à 44u, correspondant à la dernière commande et proche de la médiane des volumes récents (52u)."
+        },
+        {
+          "productName": "[LV134] LV BIO Tartinade Olives Vertes 190g",
+          "recentOrders": "2025-10-23 (jeu.): 1u",
+          "lastYearOrders": "2024-08-05 (lun.): 2u\n2024-05-16 (jeu.): 2u\n2024-02-05 (lun.): 1u\n2023-11-21 (mar.): 1u",
+          "currentDate": "2025-11-11",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de 3 semaines. 2) Historique N-1 montre une commande régulière autour du mois de novembre (2023-11-21). 3) Quantité estimée à 1u car c'est la quantité de la commande la plus récente et la médiane des petites commandes historiques."
+        },
+        {
+          "productName": "[JF026] JF VINAIGRET TRUFFES WECK 200M",
+          "recentOrders": "2025-07-17 (jeu.): 1u\n2025-06-30 (lun.): 1u",
+          "lastYearOrders": "2024-08-02 (ven.): 2u\n2024-06-20 (jeu.): 0u\n2024-06-04 (mar.): 1u\n2024-04-08 (lun.): 0u",
+          "currentDate": "2025-09-07",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant de mi-juillet. 2) Le cycle de commande semble être d'environ 1,5 à 2 mois selon l'historique récent et N-1. 3) Quantité estimée à 1u, correspondant à la médiane des commandes récentes (1u) et à l'historique stable pour ce produit."
+        },
+        {
+          "productName": "[JF055] JF HONEY MUSTARD MAYO 250ML WECK",
+          "recentOrders": "2025-08-22 (ven.): 3u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-27",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car les volumes sont très réduits. 2) La seule commande enregistrée date de plus de deux mois (22 août). Aucun cycle régulier n'est établi. 3) Quantité estimée à 0 car il n'y a pas de signal de réapprovisionnement imminent dans les 30 jours au vu de l'historique sporadique."
+        },
+        {
+          "productName": "[NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g",
+          "recentOrders": "2025-10-01 (mer.): 5u\n2025-08-04 (lun.): 6u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-29",
+          "quantity": 5,
+          "reasoning": "1) Risque de rupture modéré, le stock semble s'épuiser environ tous les deux mois. 2) Le cycle actuel montre une commande tous les 60 jours environ (début août puis début octobre). La dernière commande date d'il y a 28 jours. 3) Quantité estimée à 5u, ce qui correspond à la médiane des commandes récentes (5-6u), afin de maintenir le stock sans surcharger."
+        },
+        {
+          "productName": "[JF009] JF SAUCE TARTARE 250ML WECK",
+          "recentOrders": "2025-10-03 (ven.): 2u\n2025-08-27 (mer.): 1u",
+          "lastYearOrders": "2024-10-02 (mer.): 3u\n2024-08-08 (jeu.): 3u\n2024-07-15 (lun.): 1u\n2024-05-30 (jeu.): 2u\n2024-04-30 (mar.): 2u\n2024-03-27 (mer.): 1u",
+          "currentDate": "2025-11-04",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant d'un mois. 2) Le cycle historique montre des commandes régulières tous les 1 à 2 mois environ (octobre, août en 2025 ; octobre, août, juillet en 2024). 3) Quantité estimée à 2u, correspondant à la médiane des commandes récentes et passées (1u, 2u, 3u)."
+        },
+        {
+          "productName": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+          "recentOrders": "2025-07-03 (jeu.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-01",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation très lente. 2) Une seule commande isolée il y a 3 mois (juillet), aucun historique N-1 pour confirmer une saisonnalité. 3) Pas de commande prévue dans les 30 jours au vu du manque de récurrence."
+        },
+        {
+          "productName": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "2024-09-24 (mar.): 1u\n2024-07-18 (jeu.): 3u\n2024-07-02 (mar.): 0u\n2024-05-23 (jeu.): 1u\n2024-03-28 (jeu.): 0u",
+          "currentDate": "2025-10-20",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car aucune commande n'a été passée récemment. 2) Le cycle de commande semble irrégulier et s'est arrêté en septembre l'année dernière. 3) Quantité estimée à 0 car il n'y a pas de signal de reprise de la demande sur ce produit dans les 30 prochains jours par rapport à l'historique récent."
+        },
+        {
+          "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+          "recentOrders": "2025-08-28 (jeu.): 2u",
+          "lastYearOrders": "2024-09-27 (ven.): 3u\n2024-08-19 (lun.): 3u\n2024-07-11 (jeu.): 1u\n2024-06-25 (mar.): 2u\n2024-05-31 (ven.): 1u\n2024-04-19 (ven.): 4u\n2024-03-22 (ven.): 1u",
+          "currentDate": "2025-10-13",
+          "quantity": 3,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 45 jours. 2) Le cycle historique montre des commandes régulières environ tous les mois ou mois et demi (août, septembre l'an dernier). 3) Quantité estimée à 3u, correspondant à la médiane des commandes de la même période l'an passé (septembre/octobre)."
+        },
+        {
+          "productName": "[ORG03] ORGANICA crunchy fruit myrtille 16g",
+          "recentOrders": "2025-09-05 (ven.): 1u\n2025-08-20 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-15",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car le stock semble s'épuiser tous les mois. 2) Cycle mensuel observé entre août et septembre (environ 15 jours d'intervalle), mais aucune commande depuis 40 jours. 3) Quantité estimée à 1u pour suivre l'historique constant des commandes précédentes."
+        },
+        {
+          "productName": "[LV331] LV Tartinade Lentils Balsamico 190g",
+          "recentOrders": "2025-09-10 (mer.): 1u",
+          "lastYearOrders": "2024-10-15 (mar.): 2u\n2024-07-29 (lun.): 2u\n2024-06-17 (lun.): 2u\n2024-04-18 (jeu.): 2u\n2024-02-29 (jeu.): 1u\n2023-11-09 (jeu.): 4u",
+          "currentDate": "2025-10-20",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Le cycle historique montre une commande régulière environ tous les 2 à 3 mois, avec une présence marquée sur la période octobre/novembre l'année dernière. 3) Quantité estimée à 2u, correspondant à la médiane des commandes de l'année précédente."
+        },
+        {
+          "productName": "[PF0097] FILOU MOUTARDE 5 KG",
+          "recentOrders": "2025-09-23 (mar.): 60u\n2025-08-05 (mar.): 20u",
+          "lastYearOrders": "2024-07-15 (lun.): 20u\n2024-06-28 (ven.): 30u\n2024-06-24 (lun.): 5u\n2024-06-10 (lun.): 20u\n2024-05-27 (lun.): 20u\n2024-05-17 (ven.): 20u\n2024-04-25 (jeu.): 20u\n2024-03-12 (mar.): 20u\n2023-12-01 (ven.): 20u\n2023-11-16 (jeu.): 10u",
+          "currentDate": "2025-11-05",
+          "quantity": 20,
+          "reasoning": "1) Le risque de rupture est modéré car la dernière commande remonte à plus de 40 jours. 2) Le cycle historique suggère une commande environ tous les 1.5 à 2 mois en période automne/hiver (cf. nov/déc 2023). 3) Quantité estimée à 20u, correspondant à la médiane des commandes habituelles et au volume de base observé sur l'historique long terme."
+        },
+        {
+          "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+          "recentOrders": "2025-09-22 (lun.): 2u\n2025-08-11 (lun.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-02",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Le cycle semble être d'environ 40-45 jours (11 août au 22 sept). Une commande est donc attendue début novembre. 3) Quantité estimée à 2u car c'est la quantité constante observée lors des dernières livraisons."
+        },
+        {
+          "productName": "[LV002] LV Pizza Croccantina au romarin 150 g bio",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-13",
+          "quantity": 0,
+          "reasoning": "1) Aucun risque de rupture immédiat identifié car aucune demande historique n'est enregistrée. 2) Absence totale d'historique de commandes sur les 3 derniers mois et sur la même période l'année dernière. 3) Quantité estimée à 0 car il n'y a aucun signal de rotation permettant de justifier une commande dans les 30 prochains jours."
+        },
+        {
+          "productName": "[TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g",
+          "recentOrders": "2025-10-08 (mer.): 1u\n2025-08-27 (mer.): 1u",
+          "lastYearOrders": "2024-04-03 (mer.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, le produit tourne lentement avec de petites quantités. 2) La dernière commande date d'il y a plus d'un mois (8 octobre) et le cycle de réapprovisionnement semble être d'environ deux mois selon l'historique récent (août puis octobre). 3) Aucune commande n'est prévue dans les 30 prochains jours car le stock actuel devrait suffire à couvrir la demande résiduelle."
+        },
+        {
+          "productName": "[TVF004] TVF TARTINADE BIO OLIVE 180g",
+          "recentOrders": "2025-10-02 (jeu.): 1u",
+          "lastYearOrders": "2024-08-01 (jeu.): 1u\n2024-06-28 (ven.): 1u\n2024-05-16 (jeu.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible compte tenu de la faible rotation historique. 2) Le cycle de commande est très irrégulier et espacé ; la dernière commande date de plus de 40 jours (02/10). 3) Pas de commande prévue dans les 30 prochains jours car le produit semble être un achat ponctuel à faible volume sans récurrence mensuelle établie."
+        },
+        {
+          "productName": "[JF002] JF MAYONNAI BASILIC 250ML WECK",
+          "recentOrders": "2025-09-17 (mer.): 1u\n2025-08-22 (ven.): 1u",
+          "lastYearOrders": "2024-10-22 (mar.): 1u\n2024-08-21 (mer.): 1u\n2024-08-01 (jeu.): 0u\n2024-07-19 (ven.): 0u\n2024-07-05 (ven.): 2u\n2024-06-04 (mar.): 1u\n2024-05-16 (jeu.): 0u\n2024-04-16 (mar.): 3u",
+          "currentDate": "2025-10-27",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Le cycle historique montre des commandes régulières autour de cette période (octobre l'an dernier). 3) Quantité estimée à 1u, correspondant à la médiane des commandes récentes et du volume habituel pour ce produit."
+        },
+        {
+          "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+          "recentOrders": "2025-09-26 (ven.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-11",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) Dernière commande il y a 46 jours (2025-09-26), pas de commande en octobre malgré un historique récent de 1u. 3) Pas de commande prévue dans les 30 prochains jours car le cycle semble trop espacé pour justifier un réapprovisionnement immédiat."
+        },
+        {
+          "productName": "[LV139] LV Tartinade Paprika Chili 380g",
+          "recentOrders": "2025-10-06 (lun.): 1u\n2025-08-25 (lun.): 1u",
+          "lastYearOrders": "2024-08-05 (lun.): 1u\n2024-05-16 (jeu.): 1u\n2024-04-11 (jeu.): 2u\n2024-02-05 (lun.): 1u\n2024-01-04 (jeu.): 2u",
+          "currentDate": "2025-11-11",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré, le produit tourne régulièrement mais lentement. 2) Le cycle semble être d'environ 45 à 60 jours ; la dernière commande date du 06/10, soit il y a 36 jours. Une commande est probable d'ici fin novembre. 3) Quantité de 1u estimée car c'est la quantité constante des commandes récentes et la médiane historique."
+        },
+        {
+          "productName": "[JF011] JF SAUCE TARTARE 470ML WECK",
+          "recentOrders": "2025-08-22 (ven.): 1u",
+          "lastYearOrders": "2024-09-26 (jeu.): 1u\n2024-08-01 (jeu.): 0u\n2024-07-19 (ven.): 0u\n2024-07-05 (ven.): 2u\n2024-06-04 (mar.): 0u\n2024-05-16 (jeu.): 2u\n2024-04-16 (mar.): 1u",
+          "currentDate": "2025-10-27",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de deux mois. 2) Le cycle historique montre des commandes régulières entre avril et septembre; la dernière commande a eu lieu fin août. 3) Quantité estimée à 1u, correspondant à la médiane des commandes passées et à la dernière commande enregistrée."
+        },
+        {
+          "productName": "[FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-28",
+          "quantity": 0,
+          "reasoning": "1) Aucun risque de rupture immédiat identifié en l'absence d'historique. 2) Aucun cycle de commande n'est établi car il n'y a aucune commande récente ou N-1 enregistrée. 3) Quantité estimée à 0 car sans preuve de rotation passée ou de demande saisonnière, une commande dans les 30 prochains jours est peu probable."
+        },
+        {
+          "productName": "[LV330] LV BIO Tartinade Toscana 190g",
+          "recentOrders": "2025-10-09 (jeu.): 2u",
+          "lastYearOrders": "2024-10-08 (mar.): 2u\n2024-09-09 (lun.): 2u\n2024-08-02 (ven.): 2u\n2024-07-15 (lun.): 2u\n2024-06-21 (ven.): 2u\n2024-06-11 (mar.): 2u\n2024-05-21 (mar.): 1u\n2024-04-15 (lun.): 2u\n2024-03-15 (ven.): 2u\n2024-02-20 (mar.): 2u\n2024-02-02 (ven.): 2u\n2024-01-22 (lun.): 2u",
+          "currentDate": "2025-11-04",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date d'il y a un mois. 2) Le cycle historique N-1 montre une commande mensuelle très régulière (presque chaque mois en 2024). La dernière commande a eu lieu le 09/10. 3) Quantité estimée à 2u, correspondant à la médiane et au volume habituel des commandes passées."
+        },
+        {
+          "productName": "[JF035] JF BURGER SQUEEZE 300ML",
+          "recentOrders": "2025-08-22 (ven.): 2u",
+          "lastYearOrders": "2024-10-22 (mar.): 1u\n2024-09-26 (jeu.): 1u\n2024-08-21 (mer.): 1u\n2024-08-01 (jeu.): 0u\n2024-07-19 (ven.): 1u\n2024-07-05 (ven.): 1u\n2024-06-04 (mar.): 0u\n2024-05-16 (jeu.): 2u\n2024-04-16 (mar.): 1u",
+          "currentDate": "2025-10-27",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant de plus de deux mois. 2) Le cycle historique montre des commandes régulières autour de cette période (octobre/novembre l'année dernière). 3) Quantité estimée à 1u, correspondant à la médiane des commandes passées et à l'historique N-1."
+        },
+        {
+          "productName": "[TVF004] TVF TARTINADE BIO OLIVE 180g",
+          "recentOrders": "2025-10-02 (jeu.): 1u",
+          "lastYearOrders": "2024-08-01 (jeu.): 1u\n2024-06-28 (ven.): 1u\n2024-05-16 (jeu.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible compte tenu de la faible rotation historique. 2) Le cycle semble être de 1 à 2 mois, mais la dernière commande date du 2 octobre (environ 40 jours). 3) Pas de commande prévue dans les 30 prochains jours car le rythme actuel est très espacé et les quantités unitaires (1u) suggèrent un écoulement lent du stock."
+        },
+        {
+          "productName": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+          "recentOrders": "2025-10-08 (mer.): 1u",
+          "lastYearOrders": "2024-08-13 (mar.): 1u\n2024-06-11 (mar.): 1u\n2024-04-03 (mer.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car la consommation est très lente et sporadique. 2) La dernière commande date d'il y a plus d'un mois (08/10) et le cycle historique montre des intervalles de 2 à 3 mois entre les achats. 3) Aucune commande n'est prévue dans les 30 prochains jours au vu de la faible fréquence de rotation."
+        },
+        {
+          "productName": "[LD013] LD Tuscan Organic Spread 180 g",
+          "recentOrders": "2025-10-02 (jeu.): 2u\n2025-08-12 (mar.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-12",
+          "quantity": 4,
+          "reasoning": "1) Risque de rupture modéré, le stock diminue progressivement. 2) Cycle d'environ 50-60 jours, dernière commande il y a 41 jours. 3) Quantité estimée à 4u car, bien que les commandes individuelles soient de 2u, l'historique montre une tendance à doubler le volume pour anticiper la période de fin d'année (selon les exemples similaires du catalogue LD)."
+        },
+        {
+          "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+          "recentOrders": "2025-09-10 (mer.): 2u",
+          "lastYearOrders": "2024-10-15 (mar.): 4u\n2024-09-17 (mar.): 2u\n2024-07-29 (lun.): 3u\n2024-06-17 (lun.): 4u\n2024-04-18 (jeu.): 2u\n2024-02-29 (jeu.): 4u\n2023-11-09 (jeu.): 6u",
+          "currentDate": "2025-10-20",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré, le stock arrive probablement à échéance. 2) Cycle régulier observé l'an dernier (environ toutes les 4-6 semaines) et dernière commande il y a 40 jours. 3) Quantité estimée à 2u, correspondant à la dernière commande et à la médiane basse de l'historique pour rester conservateur."
+        },
+        {
+          "productName": "[JF027] JF VINAIGRET MIEL MOU WECK 200",
+          "recentOrders": "2025-10-27 (lun.): 1u\n2025-09-01 (lun.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-28",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car une commande vient d'être passée. 2) Le cycle observé entre les deux dernières commandes est d'environ 8 semaines (2 mois). La dernière commande date d'hier (27 octobre). 3) Pas de nouvelle commande estimée dans les 30 prochains jours compte tenu de la récence de la dernière livraison et du rythme bimestriel."
+        },
+        {
+          "productName": "[FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-28",
+          "quantity": 0,
+          "reasoning": "1) Aucun risque de rupture immédiat car il n'y a pas d'historique de consommation récent. 2) Absence totale de commandes dans l'historique récent (3 mois) et sur la même période l'année dernière. 3) Quantité estimée à 0 car aucun signal de réapprovisionnement n'est détecté pour les 30 prochains jours."
+        },
+        {
+          "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+          "recentOrders": "2025-09-22 (lun.): 2u\n2025-08-11 (lun.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-02",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de 40 jours. 2) Le cycle observé est d'environ 40-45 jours (11 août au 22 septembre). En suivant ce rythme, une commande est attendue début novembre. 3) Quantité estimée à 2u car c'est la quantité constante commandée lors des occurrences précédentes."
+        },
+        {
+          "productName": "[TVF009] TVF TARTINADE BIO POIS CHICHES 180g",
+          "recentOrders": "2025-08-04 (lun.): 1u",
+          "lastYearOrders": "2024-09-30 (lun.): 1u",
+          "currentDate": "2025-10-21",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car les volumes sont très marginaux (1u). 2) La dernière commande date de plus de 2 mois (04/08) et l'historique N-1 montre une commande unique fin septembre. 3) Aucune commande n'est attendue dans les 30 prochains jours au vu du cycle très espacé et de la faible rotation du produit."
+        },
+        {
+          "productName": "[MF0027] MF Tarti Aubergine 250g ",
+          "recentOrders": "2025-09-17 (mer.): 2u\n2025-08-25 (lun.): 1u",
+          "lastYearOrders": "2024-10-30 (mer.): 2u\n2024-09-27 (ven.): 2u\n2024-06-17 (lun.): 3u\n2024-04-05 (ven.): 2u\n2024-02-13 (mar.): 2u\n2023-11-28 (mar.): 1u",
+          "currentDate": "2025-11-13",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré, le produit est commandé régulièrement mais par petites unités. 2) Le cycle semble être d'environ 1 à 2 mois ; la dernière commande date de mi-septembre, une commande est donc probable sous 30 jours. 3) Quantité estimée à 1u pour rester conservateur au vu de l'historique récent et de la médiane des commandes passées."
+        },
+        {
+          "productName": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+          "recentOrders": "2025-10-09 (jeu.): 3u\n2025-08-27 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, le produit a été commandé il y a un peu plus d'un mois. 2) Le cycle semble être d'environ deux mois (août puis octobre). La dernière commande date du 09/10. 3) Aucune commande n'est attendue dans les 30 prochains jours car le délai depuis la dernière livraison est encore court par rapport à la fréquence observée."
+        },
+        {
+          "productName": "[PF0078] FILOU CHASSEUR 5 L",
+          "recentOrders": "2025-10-01 (mer.): 160u\n2025-08-27 (mer.): 160u",
+          "lastYearOrders": "2024-09-24 (mar.): 240u\n2024-07-19 (ven.): 160u\n2024-06-06 (jeu.): 160u\n2024-05-16 (jeu.): 160u\n2024-02-21 (mer.): 320u\n2024-01-11 (jeu.): 160u\n2023-11-23 (jeu.): 160u",
+          "currentDate": "2025-10-28",
+          "quantity": 160,
+          "reasoning": "1) Risque de rupture modéré car le cycle de commande est régulier. 2) Le produit suit un cycle d'environ 30 à 45 jours, avec une dernière commande le 2025-10-01. 3) La quantité de 160u est la plus fréquente (médiane) dans l'historique récent et N-1, correspondant au besoin standard par commande."
+        },
+        {
+          "productName": "[WIG03] WIGNAC cidre naturel bio 750ml",
+          "recentOrders": "2025-09-11 (jeu.): 4u\n2025-08-26 (mar.): 4u\n2025-07-22 (mar.): 5u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-15",
+          "quantity": 4,
+          "reasoning": "1) Risque de rupture modéré, le stock s'écoule régulièrement. 2) Cycle mensuel identifié (juillet, août, septembre) avec une dernière commande il y a environ 34 jours. 3) Quantité estimée à 4u car c'est la médiane et la quantité la plus fréquente observée récemment."
+        },
+        {
+          "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+          "recentOrders": "2025-08-22 (ven.): 5u",
+          "lastYearOrders": "2024-10-22 (mar.): 2u\n2024-09-26 (jeu.): 2u\n2024-08-21 (mer.): 2u\n2024-08-01 (jeu.): 1u\n2024-07-19 (ven.): 0u\n2024-07-05 (ven.): 4u\n2024-06-04 (mar.): 2u\n2024-05-16 (jeu.): 1u\n2024-04-16 (mar.): 3u\n2024-03-22 (ven.): 2u",
+          "currentDate": "2025-10-27",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de plus de deux mois. 2) Historique N-1 montre une commande régulière fin octobre (22/10). Cycle moyen d'environ 4-6 semaines. 3) Quantité estimée à 2u, correspondant à la médiane des commandes de l'année précédente sur cette période."
+        },
+        {
+          "productName": "[JF032] JF SAUCE LAPIN 380GX6",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "2024-09-26 (jeu.): 3u\n2024-08-01 (jeu.): 0u\n2024-07-19 (ven.): 0u\n2024-07-05 (ven.): 4u\n2024-06-04 (mar.): 0u\n2024-05-16 (jeu.): 0u\n2024-04-16 (mar.): 3u\n2024-03-22 (ven.): 1u",
+          "currentDate": "2025-10-27",
+          "quantity": 3,
+          "reasoning": "1) Risque de rupture modéré car aucune commande récente n'a été enregistrée sur les 3 derniers mois. 2) Le cycle historique montre des commandes espacées, avec une dernière activité significative à la même période l'année dernière (septembre). 3) Quantité estimée à 3u, correspondant à la médiane des commandes non nulles de l'historique N-1 (1, 3, 3, 4)."
+        },
+        {
+          "productName": "[MF0055] MF Noix de cajou - Curry 133g",
+          "recentOrders": "2025-08-19 (mar.): 1u",
+          "lastYearOrders": "2024-10-28 (lun.): 2u\n2024-09-02 (lun.): 2u\n2024-06-04 (mar.): 2u\n2024-04-25 (jeu.): 1u\n2024-03-14 (jeu.): 2u\n2024-01-23 (mar.): 2u\n2023-12-14 (jeu.): 1u",
+          "currentDate": "2025-11-11",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande remonte à août. 2) Le cycle de commande est irrégulier mais présent historiquement en fin d'année (novembre/décembre). 3) Quantité estimée à 1u pour rester conservateur suite à la baisse des volumes récents par rapport à l'année dernière."
+        },
+        {
+          "productName": "[MF0030] MF Tarti Mangue Curry 250g ",
+          "recentOrders": "2025-08-28 (jeu.): 1u\n2025-08-07 (jeu.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-20",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une dernière commande datant de près de deux mois. 2) Le cycle semble être mensuel (août), mais aucune commande n'a été enregistrée en septembre ou octobre jusqu'à présent. 3) Quantité estimée à 1u pour rester conservateur face à l'historique récent de petites quantités (1-2u) et l'absence de données N-1."
+        },
+        {
+          "productName": "[JF073] FIL BOULLETTES SAUCE TOMATE 800G BOCAL ",
+          "recentOrders": "2025-10-16 (jeu.): 8u\n2025-09-08 (lun.): 8u\n2025-09-03 (mer.): 8u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-28",
+          "quantity": 8,
+          "reasoning": "1) Risque de rupture modéré, le produit semble avoir un cycle de rotation régulier. 2) Le cycle observé est d'environ un mois, avec la dernière commande passée il y a 12 jours (16 octobre). 3) Quantité estimée à 8 unités car c'est la quantité constante commandée lors des trois dernières occurrences."
+        },
+        {
+          "productName": "[PF2973] LD FR TARTINADE BIO ANANAS 200",
+          "recentOrders": "2025-10-01 (mer.): 31u\n2025-09-04 (jeu.): 31u\n2025-08-07 (jeu.): 31u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-21",
+          "quantity": 31,
+          "reasoning": "1) Le risque de rupture est modéré car le stock actuel couvre probablement la période, mais le cycle est très régulier. 2) Le produit suit un cycle mensuel précis (tous les 27-28 jours environ) avec une dernière commande le 01/10. 3) Quantité estimée à 31 unités, correspondant au volume constant des trois dernières commandes."
+        },
+        {
+          "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+          "recentOrders": "2025-09-03 (mer.): 2u\n2025-08-06 (mer.): 1u",
+          "lastYearOrders": "2024-09-26 (jeu.): 1u\n2024-08-14 (mer.): 1u\n2024-05-28 (mar.): 2u",
+          "currentDate": "2025-11-03",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, le produit a une rotation lente sur ce point de vente. 2) La dernière commande date d'il y a deux mois (03/09) et le cycle habituel semble être de 4 à 8 semaines, mais aucune commande n'a été passée en octobre. 3) Quantité estimée à 0 car le délai depuis la dernière commande dépasse 60 jours sans nouvel achat, suggérant un stock encore suffisant pour les 30 prochains jours."
+        },
+        {
+          "productName": "[JF032] JF SAUCE LAPIN 380GX6",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "2024-09-26 (jeu.): 3u\n2024-08-01 (jeu.): 0u\n2024-07-19 (ven.): 0u\n2024-07-05 (ven.): 4u\n2024-06-04 (mar.): 0u\n2024-05-16 (jeu.): 0u\n2024-04-16 (mar.): 3u\n2024-03-22 (ven.): 1u",
+          "currentDate": "2025-10-27",
+          "quantity": 3,
+          "reasoning": "1) Risque de rupture modéré car aucune commande récente n'a été enregistrée sur les 3 derniers mois. 2) Le cycle de l'année dernière montre des commandes espacées mais significatives en fin d'année (3u en septembre). 3) Quantité estimée à 3u, correspondant à la médiane des commandes positives de l'historique N-1, pour reconstituer un stock de base en prévision de la saisonnalité."
+        },
+        {
+          "productName": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+          "recentOrders": "2025-09-12 (ven.): 2u\n2025-08-21 (jeu.): 2u",
+          "lastYearOrders": "2024-10-11 (ven.): 1u\n2024-08-09 (ven.): 1u\n2024-07-16 (mar.): 1u\n2024-05-22 (mer.): 2u\n2024-03-18 (lun.): 2u",
+          "currentDate": "2025-10-26",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré, le stock actuel devrait couvrir les besoins jusqu'à la prochaine commande. 2) Cycle de commande régulier environ tous les 2 mois; la dernière commande date du 12 septembre, soit il y a environ 45 jours. 3) Quantité estimée à 2u, correspondant à la médiane des commandes récentes (2u) et à l'historique N-1 sur cette période."
+        },
+        {
+          "productName": "[JF004] JF MAYONNAIS POIVRE 250ML WECK",
+          "recentOrders": "2025-09-24 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-04",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) Dernière commande il y a plus de 40 jours (24 septembre), pas de cycle régulier établi sur les 3 derniers mois. 3) Quantité estimée à 0 car l'historique récent est trop sporadique pour justifier une commande dans les 30 prochains jours."
+        },
+        {
+          "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+          "recentOrders": "2025-10-08 (mer.): 2u\n2025-09-10 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-13",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré, le cycle habituel semble être mensuel. 2) Dernière commande le 08/10, soit il y a environ 5 semaines. Un réapprovisionnement est attendu sous peu. 3) Quantité estimée à 2u car c'est la quantité constante observée lors des deux dernières commandes."
+        },
+        {
+          "productName": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+          "recentOrders": "2025-09-03 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-21",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) Dernière commande le 03/09, soit il y a plus de 45 jours. Aucun cycle régulier n'est établi sur les 3 derniers mois. 3) Quantité estimée à 0 car le délai depuis la dernière commande unique suggère un stock suffisant pour les 30 prochains jours."
+        },
+        {
+          "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+          "recentOrders": "2025-09-03 (mer.): 1u\n2025-08-06 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-27",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré car la dernière commande date de près de deux mois. 2) Cycle mensuel observé (début août, début septembre), il y a un retard sur le cycle habituel. 3) Quantité estimée à 1u pour maintenir la cohérence avec les commandes récentes de petites quantités."
+        },
+        {
+          "productName": "[JF027] JF VINAIGRET MIEL MOU WECK 200",
+          "recentOrders": "2025-11-03 (lun.): 1u\n2025-09-24 (mer.): 1u",
+          "lastYearOrders": "2024-11-04 (lun.): 1u\n2024-10-14 (lun.): 1u\n2024-09-18 (mer.): 1u\n2024-09-03 (mar.): 1u\n2024-06-28 (ven.): 1u",
+          "currentDate": "2025-11-12",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible car la dernière commande est très récente. 2) Le cycle de commande semble être d'environ un mois ou plus (dernière commande le 03/11). 3) Pas de nouvelle commande estimée dans les 30 prochains jours étant donné la proximité de la commande du 3 novembre."
+        },
+        {
+          "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+          "recentOrders": "2025-10-14 (mar.): 3u\n2025-09-10 (mer.): 2u\n2025-08-20 (mer.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-03",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec un cycle de vente régulier. 2) Le produit suit un cycle mensuel stable (août, septembre, octobre) avec une dernière commande il y a environ 20 jours. 3) Quantité estimée à 1u pour rester conservateur sur ce petit format, la médiane se situant entre 2u et 3u."
+        },
+        {
+          "productName": "[TVF001] TVF TARTINADE BIO MANGUE 180g",
+          "recentOrders": "2025-09-22 (lun.): 1u",
+          "lastYearOrders": "2024-09-30 (lun.): 1u\n2024-08-23 (ven.): 1u",
+          "currentDate": "2025-10-21",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré avec une seule commande récente il y a un mois. 2) Cycle de commande mensuel observé l'année dernière sur la même période (août/septembre). La dernière commande date du 22 septembre. 3) Quantité de 1u estimée car c'est la quantité constante sur tout l'historique récent et N-1."
+        },
+        {
+          "productName": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
+          "recentOrders": "2025-08-28 (jeu.): 6u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-29",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible, produit à rotation lente. 2) Une seule commande enregistrée il y a deux mois (août), sans récurrence établie depuis. 3) Quantité estimée à 0 car le cycle de vente actuel ne justifie pas une commande dans les 30 prochains jours."
+        },
+        {
+          "productName": "[PF1937] ZF MAYO TAPAS TRUFFES 180GR",
+          "recentOrders": "2025-08-06 (mer.): 2640u",
+          "lastYearOrders": "2024-08-09 (ven.): 631u\n2024-06-24 (lun.): 1400u\n2024-06-07 (ven.): 1400u\n2024-05-28 (mar.): 1050u\n2024-04-18 (jeu.): 792u\n2024-02-08 (jeu.): 805u\n2024-02-08 (jeu.): 1791u\n2024-01-24 (mer.): 1750u\n2024-01-05 (ven.): 1400u\n2023-11-24 (ven.): 1050u",
+          "currentDate": "2025-10-29",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture faible : le stock de la commande massive d'août (2640u) devrait couvrir les besoins actuels. 2) La dernière commande remonte à près de 3 mois (06/08), et le rythme historique montre des commandes espacées lors de gros volumes. 3) Quantité estimée à 0 car aucun signal de réapprovisionnement n'est attendu dans les 30 prochains jours au vu du dernier volume reçu."
         }
       ],
       "programId": "4cb32a84"
@@ -934,6 +934,6 @@
     "maxRounds": 150,
     "maxDemos": 25,
     "batchSize": 1,
-    "successRate": 0.5873015873015873
+    "successRate": 0.6032608695652174
   }
 }
