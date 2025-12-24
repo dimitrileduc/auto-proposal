@@ -15,15 +15,33 @@ import type { LLMPrediction, LLMPredictionInput, LLMPredictionResult, LLMUsage }
 
 // Configuration
 const MODEL = "google/gemini-3-flash-preview";
-// Essaie d'abord le fichier MiPRO, sinon BootstrapFewShot
+// Fallback chain: GEPA → MiPRO → BootstrapFewShot
+const GEPA_FILE = join(process.cwd(), "optimization-results/stock-predictor-gepa.json");
 const MIPRO_FILE = join(process.cwd(), "optimization-results/stock-predictor-mipro.json");
 const BOOTSTRAP_FILE = join(process.cwd(), "optimization-results/stock-predictor-optimized.json");
 
-// Signature ax - Mix instruction MiPRO + contexte métier
+// Signature ax - Prompt optimisé Recall + Précision quantité
 const stockPredictorSignature = `
-"Analyse les données fournies et génère une réponse qui respecte les contraintes et directives du prompt. Assure-toi que la sortie est précise, maintient un ton cohérent, et suit les exigences de formatage en exploitant les connaissances du modèle. Inspire-toi des exemples fournis pour le raisonnement et le format de réponse.
+"Expert Supply Chain B2B - Prédiction réapprovisionnement
 
-Contexte métier: Expert Supply Chain B2B, prédiction de réapprovisionnement. Analyser le cycle de commande du client, évaluer le risque de rupture horizon 30 jours, estimer la quantité de la PROCHAINE commande (pas un cumul). L'historique récent a plus de poids, la médiane est robuste aux outliers, l'historique N-1 informe sur la saisonnalité."
+MÉTHODE (Chain of Thought):
+
+ÉTAPE 1 - DÉTECTION DU BESOIN (Recall):
+- Analyser cycle de commande et dernière date
+- Évaluer risque rupture horizon 30 jours
+- Règle: Si DOUTE sur cycle ou rotation → Prévoir commande (principe précaution B2B)
+- Mieux détecter un besoin incertain qu'une rupture manquée
+
+ÉTAPE 2 - ESTIMATION QUANTITÉ (Précision):
+- Utiliser la MÉDIANE des quantités historique récent
+- NE PAS ajuster pour saisonnalité SAUF si pattern N-1 vraiment flagrant et répété
+- Ne pas surestimer pour stock de sécurité
+- Ne pas prendre le maximum, prendre la valeur typique
+
+DONNÉES:
+- Historique récent: source principale (5 derniers mois)
+- Historique N-1: uniquement si saisonnalité évidente
+- Médiane: robuste aux outliers, préférée à la moyenne"
 
 productName:string "Nom du produit",
 recentOrders:string "Historique récent (5 mois)",
@@ -61,26 +79,39 @@ function initPredictor(): { llm: AxAIOpenRouter<string>; predictor: ReturnType<t
   // Créer le predictor
   predictorInstance = ax(stockPredictorSignature);
 
-  // Charger les optimisations (MiPRO prioritaire, sinon BootstrapFewShot)
+  // Charger les optimisations (GEPA prioritaire, puis MiPRO, puis BootstrapFewShot)
   try {
     let optimizedData: any = null;
     let source = "";
 
-    // Essayer MiPRO d'abord
+    // 🆕 Essayer GEPA d'abord
     try {
-      optimizedData = JSON.parse(readFileSync(MIPRO_FILE, "utf-8"));
-      source = "MiPRO";
+      optimizedData = JSON.parse(readFileSync(GEPA_FILE, "utf-8"));
+      source = "GEPA";
     } catch {
-      // Fallback sur BootstrapFewShot
-      optimizedData = JSON.parse(readFileSync(BOOTSTRAP_FILE, "utf-8"));
-      source = "BootstrapFewShot";
+      // Fallback MiPRO
+      try {
+        optimizedData = JSON.parse(readFileSync(MIPRO_FILE, "utf-8"));
+        source = "MiPRO";
+      } catch {
+        // Fallback BootstrapFewShot
+        optimizedData = JSON.parse(readFileSync(BOOTSTRAP_FILE, "utf-8"));
+        source = "BootstrapFewShot";
+      }
     }
 
-    // NE PAS charger l'instruction MiPRO (on utilise notre signature mixée)
-    // Notre signature combine MiPRO + contexte métier, c'est mieux que l'instruction MiPRO seule
+    // 🆕 Charger instruction (GEPA/MiPRO)
+    if (optimizedData.instruction) {
+      predictorInstance.setInstruction(optimizedData.instruction);
+      console.log(`✅ ax: instruction chargée (${source})`);
+    }
 
-    // Charger les demos
-    if (optimizedData.demos && optimizedData.demos.length > 0) {
+    // 🆕 Charger optimizedProgram si disponible (GEPA v2.0)
+    if (optimizedData.optimizedProgram) {
+      predictorInstance.applyOptimization(optimizedData.optimizedProgram);
+      console.log(`✅ ax: optimizedProgram appliqué (${source})`);
+    } else if (optimizedData.demos && optimizedData.demos.length > 0) {
+      // Fallback demos uniquement
       predictorInstance.setDemos(optimizedData.demos);
       const demoCount = optimizedData.demos[0]?.traces?.length || optimizedData.demos.length;
       console.log(`✅ ax: ${demoCount} demos chargés (${source})`);
