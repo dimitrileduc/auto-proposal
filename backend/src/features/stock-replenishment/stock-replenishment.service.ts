@@ -187,12 +187,12 @@ export async function calculateReplenishmentNeeds(
         const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
         const ordersForLLM = fullProduct?.orders ?? ordersToUse;
 
-        // Split orders into 2 views: recent (3 months) + same period last year
+        // Split orders into 2 views: recent (5 months) + same period last year
         // Following IRIS: compare current trend vs historical seasonal baseline
         const { recent, lastYear } = splitOrdersByPeriod(
           ordersForLLM, // ← Utiliser fullHistory pour avoir N-1 (12-24 mois avant)
           analysisEndDate,
-          3 // 3 months period (maxOrdersPerView defaults to 12 for lastYear)
+          5 // 5 months period (~150j) pour avoir 2+ commandes sur 76% des produits
         );
 
         const recentOrders = recent.map(o => ({ date: o.date_order, quantity: o.quantity }));

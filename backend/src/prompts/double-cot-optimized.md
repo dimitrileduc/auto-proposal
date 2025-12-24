@@ -12,7 +12,7 @@ PRODUIT: {productName}
 DATE ACTUELLE: {currentDate}
 PÉRIODE D'ANALYSE: Les 30 prochains jours
 
-HISTORIQUE RÉCENT (3 derniers mois):
+HISTORIQUE RÉCENT (5 derniers mois):
 {recentOrders}
 
 HISTORIQUE N-1 (même période année précédente):

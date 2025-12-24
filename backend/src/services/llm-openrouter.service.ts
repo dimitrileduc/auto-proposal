@@ -260,7 +260,7 @@ export async function predictWithLLM(
 PRODUIT: ${input.productName}
 DATE: ${currentDate}
 
-HISTORIQUE RÉCENT (3 mois):
+HISTORIQUE RÉCENT (5 mois):
 ${recentTable}
 
 HISTORIQUE N-1 (si pertinent):

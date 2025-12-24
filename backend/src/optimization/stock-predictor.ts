@@ -16,7 +16,7 @@
 export const stockPredictorSignature = `"Pour déterminer s'il y aura commande dans 30j, fais confiance aux exemples fournis. Pour la QUANTITÉ: 1) Prédire UNE seule commande (pas un cumul). 2) Privilégier la médiane sur la moyenne (plus robuste aux outliers). 3) Si petites quantités (1-2u) récemment → rester conservateur."
 
 productName:string "Nom du produit",
-recentOrders:string "Historique des commandes des 3 derniers mois",
+recentOrders:string "Historique des commandes des 5 derniers mois",
 lastYearOrders:string "Historique N-1 même période",
 currentDate:string "Date d'analyse YYYY-MM-DD"
 ->

@@ -19,17 +19,18 @@ const MODEL = "google/gemini-3-flash-preview";
 const MIPRO_FILE = join(process.cwd(), "optimization-results/stock-predictor-mipro.json");
 const BOOTSTRAP_FILE = join(process.cwd(), "optimization-results/stock-predictor-optimized.json");
 
-// Signature ax pour la prédiction - QUANTITÉ DE LA PROCHAINE COMMANDE
-// Séparation : exemples pour détection, règles souples pour quantité
+// Signature ax - Mix instruction MiPRO + contexte métier
 const stockPredictorSignature = `
-"Pour déterminer s'il y aura commande dans 30j, fais confiance aux exemples fournis. Pour la QUANTITÉ: 1) Prédire UNE seule commande (pas un cumul). 2) Privilégier la médiane sur la moyenne (plus robuste aux outliers). 3) Si petites quantités (1-2u) récemment → rester conservateur."
+"Analyse les données fournies et génère une réponse qui respecte les contraintes et directives du prompt. Assure-toi que la sortie est précise, maintient un ton cohérent, et suit les exigences de formatage en exploitant les connaissances du modèle. Inspire-toi des exemples fournis pour le raisonnement et le format de réponse.
+
+Contexte métier: Expert Supply Chain B2B, prédiction de réapprovisionnement. Analyser le cycle de commande du client, évaluer le risque de rupture horizon 30 jours, estimer la quantité de la PROCHAINE commande (pas un cumul). L'historique récent a plus de poids, la médiane est robuste aux outliers, l'historique N-1 informe sur la saisonnalité."
 
 productName:string "Nom du produit",
-recentOrders:string "Historique des commandes des 3 derniers mois",
-lastYearOrders:string "Historique N-1 même période",
-currentDate:string "Date d'analyse YYYY-MM-DD"
+recentOrders:string "Historique récent (5 mois)",
+lastYearOrders:string "Historique N-1 (saisonnalité)",
+currentDate:string "Date d'analyse"
 ->
-quantity:number "Quantité de la PROCHAINE commande (0 si pas de commande dans 30j)",
+quantity:number "Quantité prochaine commande (0 si non probable)",
 reasoning:string "1) Risque rupture? 2) Cycle et dernière commande? 3) Quantité estimée et pourquoi?"
 `;
 
@@ -75,11 +76,8 @@ function initPredictor(): { llm: AxAIOpenRouter<string>; predictor: ReturnType<t
       source = "BootstrapFewShot";
     }
 
-    // Charger l'instruction optimisée (MiPRO uniquement)
-    if (optimizedData.instruction) {
-      predictorInstance.setInstruction(optimizedData.instruction);
-      console.log(`✅ ax: instruction optimisée chargée (${optimizedData.instruction.length} chars)`);
-    }
+    // NE PAS charger l'instruction MiPRO (on utilise notre signature mixée)
+    // Notre signature combine MiPRO + contexte métier, c'est mieux que l'instruction MiPRO seule
 
     // Charger les demos
     if (optimizedData.demos && optimizedData.demos.length > 0) {

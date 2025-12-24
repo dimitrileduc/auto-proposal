@@ -15,7 +15,7 @@ export const autoProposalConfig = {
   // Stock replenishment parameters
   targetCoverage: 25,
   leadTime: 5,
-  analysisWindowDays: 120,
+  analysisWindowDays: 180, // Augmenté de 120 à 180 pour supporter fenêtre LLM de 5 mois (150j)
 
   // Quantity calculation strategy
   quantityStrategy: {

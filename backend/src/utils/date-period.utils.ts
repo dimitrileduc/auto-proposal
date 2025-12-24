@@ -85,7 +85,7 @@ export function splitOrdersByPeriod<T extends OrderWithDate>(
   const recent = orders
     .filter(order => isWithinLastNMonths(order.date_order, currentDate, months))
     .sort((a, b) => new Date(b.date_order).getTime() - new Date(a.date_order).getTime())
-    .slice(0, 5);
+    .slice(0, 8); // Augmenté de 5 à 8 car fenêtre de 5 mois
 
   // Last year: 12-24 months before currentDate (limited to 12 orders max to prevent LLM confusion)
   const lastYear = orders

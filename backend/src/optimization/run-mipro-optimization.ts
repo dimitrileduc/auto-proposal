@@ -23,9 +23,9 @@ import { stockPredictorSignature, type StockTrainingExample } from "./stock-pred
 import { extractExamples, saveExamplesToFile } from "./extract-examples.js";
 import { stockMetric, calculateAggregateMetrics } from "./metric.js";
 
-// Configuration
-const MAX_EXAMPLES = parseInt(process.env.MAX_EXAMPLES || "1000");
-const NUM_TRIALS = parseInt(process.env.NUM_TRIALS || "50");
+// Configuration - MAX pour avoir le plus de données d'entraînement
+const MAX_EXAMPLES = parseInt(process.env.MAX_EXAMPLES || "5000");
+const NUM_TRIALS = parseInt(process.env.NUM_TRIALS || "100");
 const DRY_RUN = process.env.DRY_RUN === "true";
 
 const JSON_PATH = "./analysis-folder/predictions-v2-all-clients.json";
@@ -144,12 +144,14 @@ async function main() {
 
   const optimizer = new AxMiPRO({
     studentAI: studentLLM,
-    teacherAI: studentLLM,  // Même modèle pour student & teacher (Gemini)
-    optimizerEndpoint: "http://localhost:8000",  // Python optimizer service
+    teacherAI: studentLLM,
+    optimizerEndpoint: "http://localhost:8000",
+
+    // Config simple qui marche (pas de sampleCount qui casse le parsing)
     options: {
       numTrials: NUM_TRIALS,
       numCandidates: 10,
-      maxBootstrappedDemos: 25,
+      maxBootstrappedDemos: 50,
       maxLabeledDemos: 10,
       programAwareProposer: true,
       dataAwareProposer: true,
@@ -158,7 +160,6 @@ async function main() {
       verbose: true,
       earlyStoppingTrials: 10,
       minImprovementThreshold: 0.01,
-      bayesianOptimization: true,  // Activer Bayesian optimization avec Optuna
     },
   });
 
@@ -188,7 +189,7 @@ async function main() {
       config: {
         maxExamples: MAX_EXAMPLES,
         numTrials: NUM_TRIALS,
-        maxBootstrappedDemos: 25,
+        maxBootstrappedDemos: 50,
       },
       baseline: baselineMetrics,
       bestScore: result.bestScore,
