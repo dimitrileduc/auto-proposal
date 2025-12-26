@@ -223,6 +223,7 @@ export function createXmlRpcClient(): OdooClient {
       product_id: number;
       product_uom_qty: number;
       price_unit: number;
+      name?: string;
     }): Promise<number> {
       try {
         return await odoo.create("sale.order.line", data);
@@ -230,6 +231,23 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(`Erreur lors de la création de la sale.order.line: ${error}`);
+      }
+    },
+
+    async createSaleOrderOption(data: {
+      order_id: number;
+      product_id: number;
+      quantity: number;
+      uom_id: number;
+      price_unit: number;
+      name?: string;
+    }): Promise<number> {
+      try {
+        return await odoo.create("sale.order.option", data);
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(`Erreur lors de la création de la sale.order.option: ${error}`);
       }
     },
 
@@ -274,6 +292,7 @@ export function createXmlRpcClient(): OdooClient {
               "price_subtotal",
               "price_total",
               "tax_id",
+              "name", // Description de la ligne (reasoning)
             ],
           }
         );

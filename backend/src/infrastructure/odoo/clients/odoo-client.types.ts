@@ -73,6 +73,7 @@ export interface OdooSaleOrderLine {
   price_subtotal: number;          // HT
   price_total: number;             // TTC
   tax_id: number[];                // IDs des taxes
+  name?: string;                   // Description de la ligne (reasoning)
 }
 
 /**
@@ -147,6 +148,20 @@ export interface OdooClient {
     product_id: number;
     product_uom_qty: number;
     price_unit: number;
+    name?: string; // Description personnalisée (optionnel)
+  }): Promise<number>;
+
+  /**
+   * Crée une sale.order.option (produit optionnel)
+   * Le client pourra l'ajouter à sa commande en cliquant sur le panier
+   */
+  createSaleOrderOption(data: {
+    order_id: number;
+    product_id: number;
+    quantity: number;
+    uom_id: number;
+    price_unit: number;
+    name?: string; // Description personnalisée (optionnel)
   }): Promise<number>;
 
   /**

@@ -106,6 +106,7 @@ export interface LLMPrediction {
   confidence_phase1?: "low" | "medium" | "high";  // Confiance détection risque
   confidence_phase2?: "low" | "medium" | "high";  // Confiance quantité
   reasoning: string;
+  summary?: string; // Justification courte (max 60 chars) pour Odoo
 }
 
 export interface LLMUsage {

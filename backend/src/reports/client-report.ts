@@ -14,7 +14,6 @@ import {
   formatAmount,
   formatDate,
   formatDuration,
-  badge,
   statsBlock,
   blockquote,
 } from "./formatters";
@@ -26,7 +25,7 @@ export function generateClientReport(data: ClientReportData): string {
   const sections: string[] = [];
 
   // En-tête
-  sections.push(title(`📊 Rapport Auto-Proposal - ${data.client.name}`, 1));
+  sections.push(title(`Rapport Auto-Proposal - ${data.client.name}`, 1));
   sections.push(generateMetadataSection(data));
   sections.push(separator());
 
@@ -61,11 +60,11 @@ export function generateQuoteReport(data: ClientReportData): string | undefined 
   const sections: string[] = [];
 
   // En-tête simplifié pour le devis seul
-  sections.push(title(`📄 Devis Odoo - ${data.client.name}`, 1));
+  sections.push(title(`Devis Odoo - ${data.client.name}`, 1));
   sections.push(statsBlock({
-    "📅 Date": formatDate(data.executionDate),
-    "🆔 Client ID": data.client.id,
-    "📧 Email": data.client.email || "N/A",
+    "Date": formatDate(data.executionDate),
+    "Client ID": data.client.id,
+    "Email": data.client.email || "N/A",
   }));
   sections.push(separator());
 
@@ -80,10 +79,10 @@ export function generateQuoteReport(data: ClientReportData): string | undefined 
  */
 function generateMetadataSection(data: ClientReportData): string {
   return statsBlock({
-    "📅 Date": formatDate(data.executionDate),
-    "🆔 Client ID": data.client.id,
-    "📧 Email": data.client.email || "N/A",
-    "⏱️ Durée d'exécution": formatDuration(data.executionTime),
+    "Date": formatDate(data.executionDate),
+    "Client ID": data.client.id,
+    "Email": data.client.email || "N/A",
+    "Duree": formatDuration(data.executionTime),
   });
 }
 
@@ -94,38 +93,14 @@ function generatePhase1Section(data: ClientReportData): string {
   const phase1 = data.phases.stockAnalysis;
   const sections: string[] = [];
 
-  sections.push(title("🔍 PHASE 1 - ANALYSE STOCK (RAW)", 2));
+  sections.push(title("PHASE 1 - ANALYSE STOCK", 2));
   sections.push("");
 
-  // Résumé
-  const urgentCount = phase1.products.filter(
-    (p) => p.stock_prediction.days_until_stockout <= 0
-  ).length;
-  const moderateCount = phase1.products.filter(
-    (p) =>
-      p.stock_prediction.days_until_stockout > 0 &&
-      p.stock_prediction.days_until_stockout <=
-        data.config.replenishmentThreshold
-  ).length;
-
-  sections.push(
-    `**Produits à risque détectés: ${phase1.products.length}**`
-  );
-  sections.push(`- Urgents (rupture ≤ 0j): ${urgentCount}`);
-  sections.push(`- Modérés (0 < rupture ≤ ${data.config.replenishmentThreshold}j): ${moderateCount}`);
-  sections.push("");
-
-  // Totaux
-  const totalQty = phase1.products.reduce(
-    (sum, p) => sum + p.quantity_to_order,
-    0
-  );
-  sections.push(`**Total produits (Phase 1): ${phase1.products.length}**`);
-  sections.push(`**Quantité totale brute: ${totalQty} unités**`);
+  sections.push(`**Produits a risque: ${phase1.products.length}**`);
   sections.push("");
 
   // Détails par produit en dropdowns
-  sections.push(title("Détails par produit", 3));
+  sections.push(title("Details par produit", 3));
   sections.push("");
 
   phase1.products.forEach((product) => {
@@ -138,32 +113,19 @@ function generatePhase1Section(data: ClientReportData): string {
 
 /**
  * Génère un dropdown détaillé pour un produit
+ * Garde uniquement l'historique des commandes
  */
 function generateProductDropdown(product: any): string {
   const sections: string[] = [];
 
-  // En-tête dropdown
-  const urgency = product.stock_prediction?.days_until_stockout <= 0 ? "🔴" : "🟡";
+  // En-tête dropdown (sans badge urgency)
   sections.push(`<details>`);
-  sections.push(`<summary>${urgency} <strong>${product.product_name}</strong> (ID: ${product.product_id}) - ${product.quantity_to_order} unités</summary>`);
+  sections.push(`<summary><strong>${product.product_name}</strong> (ID: ${product.product_id}) - ${product.quantity_to_order}u</summary>`);
   sections.push("");
 
-  // Stock Prediction
-  if (product.stock_prediction) {
-    sections.push("### 📊 Prédiction Stock");
-    sections.push(`- **Consommation/jour**: ${(product.stock_prediction.consumption_per_day || 0).toFixed(4)}`);
-    sections.push(`- **Stock restant estimé**: ${(product.stock_prediction.estimated_stock_remaining || 0).toFixed(2)}`);
-    sections.push(`- **Jours avant rupture**: **${product.stock_prediction.days_until_stockout || 0}j**`);
-    sections.push(`- **Seuil réappro**: ${product.stock_prediction.replenishment_threshold_days || 0}j`);
-    sections.push("");
-  }
-
-  // Order History
+  // Order History uniquement
   if (product.order_history && product.order_history.length > 0) {
-    sections.push("### 📦 Historique Commandes");
-    sections.push("");
-
-    const headers = ["Date", "Commande", "Qté", "Prix unit."];
+    const headers = ["Date", "Commande", "Qte", "Prix"];
     const rows = product.order_history.map((order: any) => [
       order.date_order.split(" ")[0],
       order.order_name,
@@ -172,17 +134,6 @@ function generateProductDropdown(product: any): string {
     ]);
 
     sections.push(table(headers, rows));
-    sections.push("");
-  }
-
-  // Calculation Metadata
-  if (product.calculation_metadata) {
-    sections.push("### 🧮 Calcul Quantité");
-    sections.push(`- **Stratégie**: ${product.calculation_metadata.strategy}`);
-    sections.push(`- **Confiance**: ${product.calculation_metadata.confidence}`);
-    sections.push(`- **Quantités historiques**: [${product.calculation_metadata.historical_quantities.join(", ")}]`);
-    sections.push(`- **Nombre commandes**: ${product.calculation_metadata.order_count}`);
-    sections.push(`- **Valeur médiane**: ${product.calculation_metadata.median_value}`);
     sections.push("");
   }
 
@@ -198,108 +149,95 @@ function generatePhase2Section(data: ClientReportData): string {
   const phase2 = data.phases.proposalFinal;
   const sections: string[] = [];
 
-  sections.push(title("💰 PHASE 2.5 - PRICING + AJUSTEMENT MOQ", 2));
+  sections.push(title("PHASE 2.5 - PRICING + MOQ", 2));
   sections.push("");
 
-  // Avant ajustement MOQ
-  sections.push(title("Avant ajustement MOQ", 3));
-  sections.push(`- **Montant initial: ${formatAmount(data.summary.initialAmount)}**`);
-  sections.push(`- **MOQ requis: ${formatAmount(data.config.moqMinimum)}**`);
+  sections.push(`Montant initial: ${formatAmount(data.summary.initialAmount)}`);
+  sections.push(`MOQ requis: ${formatAmount(data.config.moqMinimum)}`);
 
   if (data.summary.moqAdjusted) {
-    const gap = data.config.moqMinimum - data.summary.initialAmount;
-    sections.push(`- ${badge("warning", `Gap à combler: ${formatAmount(gap)}`)}`);
-    sections.push("");
-
-    // Après ajustement
-    sections.push(title("Après ajustement MOQ", 3));
-    sections.push(`- **Produits ajustés: ${phase2.adjustment_details?.products_adjusted || 0}/${data.summary.productsCount}**`);
-    sections.push(`- **Montant ajouté: +${formatAmount(data.summary.moqGap || 0)}**`);
-    sections.push(`- **Montant final: ${formatAmount(data.summary.finalAmount)}**`);
-    sections.push("");
+    sections.push(`Statut: Ajustement applique (+${formatAmount(data.summary.moqGap || 0)})`);
   } else {
-    sections.push(`- ${badge("success", "Déjà au-dessus du MOQ")}`);
-    sections.push("");
+    sections.push(`Statut: OK`);
   }
+  sections.push("");
 
   // Tableau détaillé des produits avec pricing
-  sections.push(title("Détails produits avec pricing", 3));
+  const headers = ["Produit", "Qte", "Prix", "Sous-total"];
+
+  const rows = phase2.products.map((p) => [
+    p.product_name.length > 40
+      ? p.product_name.slice(0, 37) + "..."
+      : p.product_name,
+    p.quantity_to_order,
+    formatAmount(p.current_price_unit),
+    formatAmount(p.subtotal),
+  ]);
+
+  sections.push(table(headers, rows, ["left", "right", "right", "right"]));
   sections.push("");
-
-  const headers = [
-    "Produit",
-    "ID",
-    "Qté brute",
-    "Ajust. MOQ",
-    "Qté finale",
-    "Prix unit.",
-    "Sous-total",
-  ];
-
-  const rows = phase2.products.map((p) => {
-    const originalQty = p.quantity_to_order - p.moq_adjustment;
-    return [
-      p.product_name.length > 30
-        ? p.product_name.slice(0, 27) + "..."
-        : p.product_name,
-      p.product_id,
-      originalQty,
-      p.moq_adjustment > 0 ? `+${p.moq_adjustment}` : "0",
-      p.quantity_to_order,
-      formatAmount(p.current_price_unit),
-      formatAmount(p.subtotal),
-    ];
-  });
-
-  sections.push(table(headers, rows, ["left", "right", "right", "right", "right", "right", "right"]));
-  sections.push("");
-  sections.push(`**Total (Phase 2.5): ${formatAmount(phase2.total_amount)}**`);
+  sections.push(`**Total: ${formatAmount(phase2.total_amount)}**`);
 
   return sections.join("\n");
 }
 
 /**
  * Section: Phase 3 - Devis Odoo (QUOTE)
+ * Sépare les produits de base et optionnels
  */
 function generatePhase3Section(data: ClientReportData): string {
   const quote = data.phases.quote!;
   const sections: string[] = [];
 
-  sections.push(title("📄 PHASE 3 - DEVIS ODOO CRÉÉ", 2));
+  sections.push(title("PHASE 3 - DEVIS ODOO", 2));
   sections.push("");
 
   // Info devis
-  sections.push(statsBlock({
-    "Devis ID": quote.quote_id,
-    "Nom": quote.quote_name,
-    "État": quote.quote_state || "draft",
-    "Date création": formatDate(quote.created_at),
-  }));
+  sections.push(`Devis: ${quote.quote_name} (ID: ${quote.quote_id})`);
+  sections.push(`Etat: ${quote.quote_state || "draft"}`);
   sections.push("");
 
-  // Montants avec ristournes/pricelists
-  sections.push(title("Montants calculés par Odoo (avec ristournes/pricelists)", 3));
+  // Produits de Base
+  sections.push(title(`Produits de Base (${quote.order_lines.length})`, 3));
   sections.push("");
 
-  const headers = ["Produit", "ID", "Qté", "Prix unit. Odoo", "HT", "TVA", "TTC"];
-  const rows = quote.order_lines.map((line) => [
-    line.product_name.length > 30
-      ? line.product_name.slice(0, 27) + "..."
+  const baseHeaders = ["Produit", "Qte", "Prix", "Description"];
+  const baseRows = quote.order_lines.map((line) => [
+    line.product_name.length > 35
+      ? line.product_name.slice(0, 32) + "..."
       : line.product_name,
-    line.product_id,
     line.quantity_ordered,
     formatAmount(line.price_unit),
-    formatAmount(line.subtotal_ht),
-    formatAmount(line.tax_amount),
-    formatAmount(line.subtotal_ttc),
+    (line.description || "").length > 80
+      ? (line.description || "").slice(0, 77) + "..."
+      : (line.description || "-"),
   ]);
 
-  sections.push(table(headers, rows, ["left", "right", "right", "right", "right", "right", "right"]));
+  sections.push(table(baseHeaders, baseRows, ["left", "right", "right", "left"]));
   sections.push("");
 
+  // Produits Optionnels (si présents)
+  if (quote.optional_products && quote.optional_products.length > 0) {
+    sections.push(title(`Produits Optionnels (${quote.optional_products.length})`, 3));
+    sections.push("");
+
+    const optRows = quote.optional_products.map((line) => [
+      line.product_name.length > 35
+        ? line.product_name.slice(0, 32) + "..."
+        : line.product_name,
+      line.quantity_ordered,
+      formatAmount(line.price_unit),
+      (line.description || "").length > 80
+        ? (line.description || "").slice(0, 77) + "..."
+        : (line.description || "-"),
+    ]);
+
+    sections.push(table(baseHeaders, optRows, ["left", "right", "right", "left"]));
+    sections.push("");
+  }
+
   // Totaux Odoo
-  sections.push(`**Total HT (Odoo): ${formatAmount(quote.amount_total_ht)}**`);
-  sections.push(`**Total TVA: ${formatAmount(quote.tax_total)}**`);
+  sections.push(`**Total HT: ${formatAmount(quote.amount_total_ht)}**`);
   sections.push(`**Total TTC: ${formatAmount(quote.amount_total_ttc)}**`);
 
   return sections.join("\n");
@@ -316,13 +254,12 @@ function generateComparisonSection(data: ClientReportData): string {
 
   const sections: string[] = [];
 
-  sections.push(title("📊 Comparaison Phase 2.5 vs Phase 3", 2));
+  sections.push(title("Comparaison Phase 2.5 vs Phase 3", 2));
   sections.push("");
 
-  const headers = ["Métrique", "Phase 2.5 (Prix historiques)", "Phase 3 (Prix Odoo réels)", "Écart"];
+  const headers = ["Phase 2.5", "Phase 3", "Ecart"];
   const rows = [
     [
-      "Montant HT",
       formatAmount(phase2Amount),
       formatAmount(phase3Amount),
       `${diff >= 0 ? "+" : ""}${formatAmount(diff)} (${diffPercent}%)`,
@@ -335,7 +272,7 @@ function generateComparisonSection(data: ClientReportData): string {
   // Note explicative
   sections.push(
     blockquote(
-      "⚠️ **Note**: Les prix Odoo peuvent différer des prix historiques en raison des pricelists, promotions, et ristournes actives."
+      "Note: Les prix Odoo peuvent differer des prix historiques."
     )
   );
 

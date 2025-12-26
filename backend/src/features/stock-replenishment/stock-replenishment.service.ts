@@ -274,6 +274,7 @@ export async function calculateReplenishmentNeeds(
         quantity: llmResult.prediction.recommended_quantity,
         confidence: llmResult.prediction.confidence,
         reasoning: llmResult.prediction.reasoning,
+        summary: llmResult.prediction.summary, // Justification courte pour Odoo
         baseline_quantity: llmResult.prediction.baseline_quantity,
         // New structured analysis fields - Include ALL fields from LLM
         analysis: {

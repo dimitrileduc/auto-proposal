@@ -17,12 +17,10 @@ import { task } from "@trigger.dev/sdk";
 import { backtestClientTask } from "./backtest-client.task";
 import {
   calculateAggregateStatistics,
-  generateAggregateMarkdownReport,
   type BacktestIndividualResult,
   type AggregateMetrics,
-  type AggregateReportData,
 } from "../features/backtesting/statistics.service";
-import { generateAggregatedReportV2 } from "../reports/backtest-report";
+import { generateAggregatedReportV2, generateSummaryMarkdown } from "../reports/backtest-report";
 import { findTopBacktestClients } from "../features/backtesting/client-discovery.service";
 import * as fs from "fs/promises";
 import * as path from "path";
@@ -344,105 +342,11 @@ export const backtestAggregateTask = task({
 
     const timestamp = new Date().toISOString().split("T")[0];
 
-    // SWAP: Rapport PRINCIPAL = CLEAN (2+ commandes, données propres)
-    const reportData: AggregateReportData = {
-      executionDate: new Date().toISOString(),
-      config: {
-        daysBeforePrediction: payload.daysBeforePrediction ?? 1,
-        analysisWindowDays: payload.config?.analysisWindowDays,
-        targetCoverage: payload.config?.targetCoverage,
-        leadTime: payload.config?.leadTime,
-      },
-      aggregateMetrics,
-      individualResults: allResults,
-      llm_usage: totalLLMCalls > 0 ? {
-        calls: totalLLMCalls,
-        promptTokens: totalPromptTokens,
-        completionTokens: totalCompletionTokens,
-        totalTokens: totalPromptTokens + totalCompletionTokens,
-      } : undefined,
-    };
+    // Variables pour les paths (utilisées dans le return)
+    let jsonPath = "";
+    let mdPath = "";
 
-    // JSON CLEAN (pour analyse programmatique)
-    const jsonPath = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}.json`);
-    await fs.writeFile(jsonPath, JSON.stringify(reportData, null, 2), "utf-8");
-    console.log(`   ✅ JSON CLEAN report saved: backtest-aggregate-${timestamp}.json`);
-
-    // Markdown CLEAN (pour lecture humaine)
-    const markdownReport = generateAggregateMarkdownReport(reportData);
-    const mdPath = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}.md`);
-    await fs.writeFile(mdPath, markdownReport, "utf-8");
-    console.log(`   ✅ Markdown CLEAN report saved: backtest-aggregate-${timestamp}.md`);
-
-    // SWAP: Rapport SECONDAIRE = LOW (1 commande, sparse data isolé)
-    if (allResultsNoLow.length > 0) {
-      const successfulResultsNoLow = allResultsNoLow.filter((r) => r.success && r.metrics);
-
-      const aggregateMetricsNoLow = calculateAggregateStatistics(
-        successfulResultsNoLow.map((r) => r.metrics!)
-      );
-
-      const reportDataNoLow: AggregateReportData = {
-        executionDate: new Date().toISOString(),
-        config: {
-          daysBeforePrediction: payload.daysBeforePrediction ?? 1,
-          analysisWindowDays: payload.config?.analysisWindowDays,
-          targetCoverage: payload.config?.targetCoverage,
-          leadTime: payload.config?.leadTime,
-        },
-        aggregateMetrics: aggregateMetricsNoLow,
-        individualResults: allResultsNoLow,
-      };
-
-      // JSON LOW (sparse data)
-      const jsonPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-low.json`);
-      await fs.writeFile(jsonPathNoLow, JSON.stringify(reportDataNoLow, null, 2), "utf-8");
-      console.log(`   ✅ JSON LOW report saved: backtest-aggregate-${timestamp}-low.json`);
-
-      // Markdown LOW (sparse data)
-      const markdownReportNoLow = generateAggregateMarkdownReport(reportDataNoLow);
-      const mdPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-low.md`);
-      await fs.writeFile(mdPathNoLow, markdownReportNoLow, "utf-8");
-      console.log(`   ✅ Markdown LOW report saved: backtest-aggregate-${timestamp}-low.md`);
-
-      console.log(`   📊 LOW (sparse data): ${successfulResultsNoLow.length} clients analyzed`);
-    }
-
-    // Rapport ALL (tous les produits: clean + low)
-    if (allResultsAll.length > 0) {
-      const successfulResultsAll = allResultsAll.filter((r) => r.success && r.metrics);
-
-      const aggregateMetricsAll = calculateAggregateStatistics(
-        successfulResultsAll.map((r) => r.metrics!)
-      );
-
-      const reportDataAll: AggregateReportData = {
-        executionDate: new Date().toISOString(),
-        config: {
-          daysBeforePrediction: payload.daysBeforePrediction ?? 1,
-          analysisWindowDays: payload.config?.analysisWindowDays,
-          targetCoverage: payload.config?.targetCoverage,
-          leadTime: payload.config?.leadTime,
-        },
-        aggregateMetrics: aggregateMetricsAll,
-        individualResults: allResultsAll,
-      };
-
-      // JSON ALL
-      const jsonPathAll = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-all.json`);
-      await fs.writeFile(jsonPathAll, JSON.stringify(reportDataAll, null, 2), "utf-8");
-      console.log(`   ✅ JSON ALL report saved: backtest-aggregate-${timestamp}-all.json`);
-
-      // Markdown ALL
-      const markdownReportAll = generateAggregateMarkdownReport(reportDataAll);
-      const mdPathAll = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-all.md`);
-      await fs.writeFile(mdPathAll, markdownReportAll, "utf-8");
-      console.log(`   ✅ Markdown ALL report saved: backtest-aggregate-${timestamp}-all.md`);
-
-      console.log(`   📊 ALL (tous produits): ${successfulResultsAll.length} clients analyzed`);
-    }
-
-    // ===== ÉTAPE 4B: GÉNÉRATION RAPPORT V2 AGRÉGÉ =====
+    // ===== GÉNÉRATION RAPPORT V2 AGRÉGÉ =====
     console.log(`\n📊 Generating aggregated V2 report...`);
     try {
       const v2Files = await fs.readdir(reportsOutputDir);
@@ -457,17 +361,26 @@ export const backtestAggregateTask = task({
       }
 
       if (v2Reports.length > 0) {
+        // Générer V2 JSON agrégé
         const aggregatedV2 = generateAggregatedReportV2(v2Reports);
         const aggregatedV2FileName = `backtest-aggregate-${timestamp}-v2.json`;
-        const aggregatedV2Path = path.join(reportsOutputDir, aggregatedV2FileName);
-        await fs.writeFile(aggregatedV2Path, JSON.stringify(aggregatedV2, null, 2), 'utf-8');
-        console.log(`   ✅ Aggregated V2 report saved: ${aggregatedV2FileName}`);
-        console.log(`      Aggregated ${v2Reports.length} client V2 reports`);
+        jsonPath = path.join(reportsOutputDir, aggregatedV2FileName);
+        await fs.writeFile(jsonPath, JSON.stringify(aggregatedV2, null, 2), 'utf-8');
+        console.log(`   ✅ V2 JSON report saved: ${aggregatedV2FileName}`);
+
+        // Générer Summary Markdown
+        const summaryMarkdown = generateSummaryMarkdown(v2Reports);
+        const summaryFileName = `backtest-aggregate-${timestamp}-summary.md`;
+        mdPath = path.join(reportsOutputDir, summaryFileName);
+        await fs.writeFile(mdPath, summaryMarkdown, 'utf-8');
+        console.log(`   ✅ Summary MD report saved: ${summaryFileName}`);
+
+        console.log(`      Aggregated ${v2Reports.length} client reports`);
       } else {
         console.log(`   ⚠️  No V2 reports found to aggregate`);
       }
     } catch (aggregateError) {
-      console.warn(`   ⚠️  Failed to generate aggregated V2 report:`, aggregateError instanceof Error ? aggregateError.message : String(aggregateError));
+      console.warn(`   ⚠️  Failed to generate reports:`, aggregateError instanceof Error ? aggregateError.message : String(aggregateError));
     }
 
     // ===== ÉTAPE 5: RÉSULTAT FINAL =====
