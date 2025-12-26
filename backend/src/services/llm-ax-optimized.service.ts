@@ -49,7 +49,8 @@ lastYearOrders:string "Historique N-1 (saisonnalité)",
 currentDate:string "Date d'analyse"
 ->
 quantity:number "Quantité prochaine commande (0 si non probable)",
-reasoning:string "1) Risque rupture? 2) Cycle et dernière commande? 3) Quantité estimée et pourquoi?"
+reasoning:string "1) Risque rupture? 2) Cycle et dernière commande? 3) Quantité estimée et pourquoi?",
+summary:string "Max 40 chars! Justifie le risque rupture. Ex: 'Cycle 2 mois depasse, stock bas'"
 `;
 
 // Instance LLM (créée une seule fois)
@@ -179,6 +180,7 @@ export async function predictWithAxOptimized(
       recommended_quantity: quantity,
       confidence: "medium",
       reasoning: result.reasoning || "",
+      summary: result.summary || "",
     };
 
     // Récupérer l'usage

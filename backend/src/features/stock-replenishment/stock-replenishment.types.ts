@@ -19,6 +19,7 @@ export interface LLMPredictionDetails {
   quantity: number;
   confidence: "low" | "medium" | "high";
   reasoning: string;
+  summary?: string; // Justification courte (max 60 chars) pour Odoo
   baseline_quantity: number; // Baseline quantity from analysis
   // Structured analysis object (Double Chain of Thought)
   analysis: {

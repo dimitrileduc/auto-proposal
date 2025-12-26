@@ -41,7 +41,6 @@ interface AggregatedReportV2 {
     casesIncluded: number;
     cases: Array<{ clientId: number; orderName: string }>;
   };
-  globalMetrics: MetricsByConfidence;
   metricsByConfidence: {
     low: MetricsByConfidence;
     medium: MetricsByConfidence;
@@ -1360,32 +1359,6 @@ export function generateAggregatedReportV2(
         orderName: r.client.order.name,
       })),
     },
-    globalMetrics: {
-      counts: {
-        truePositives: totalTP,
-        falsePositives: totalFP,
-        falseNegatives: totalFN,
-        total: totalTP + totalFP + totalFN,
-      },
-      productMetrics: {
-        precision: Math.round(precision * 10000) / 10000,
-        recall: Math.round(recall * 10000) / 10000,
-        f1Score: Math.round(f1Score * 10000) / 10000,
-        totalPredicted,
-        totalReal,
-      },
-      quantityMetrics: {
-        mae: Math.round(avgMAE * 10000) / 10000,
-        wmape: Math.round(avgWMAPE * 100) / 100,
-        mape: Math.round(avgMAPE * 100) / 100,
-        bias: Math.round(avgBias * 100) / 100,
-        rmse: Math.round(avgRMSE * 10000) / 10000,
-        distribution: {
-          exactMatch: exactMatchCount,
-          partialMatch: partialMatchCount,
-        },
-      },
-    },
     metricsByConfidence: byConfidence,
     byClient,
     llmUsage: {
@@ -1431,4 +1404,152 @@ export function generateBacktestReportJSON(
     },
     llmUsage: comparison.llmUsage,
   };
+}
+
+/**
+ * Génère un rapport summary Markdown à partir des rapports v2 individuels
+ *
+ * Segmentation:
+ * - Produits de Base: >= 2 commandes historiques (confidence medium + high)
+ * - Produits Optionnels: 1 commande historique (confidence low)
+ *
+ * Métriques: Médianes par client pour Base, Moyennes pour Optionnel
+ */
+export function generateSummaryMarkdown(reportsV2: BacktestReportJSONv2[]): string {
+  if (reportsV2.length === 0) {
+    return "# Aucun rapport à analyser";
+  }
+
+  // Helpers
+  const calcMedian = (values: number[]): number => {
+    if (values.length === 0) return 0;
+    const sorted = [...values].sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 !== 0
+      ? sorted[mid]
+      : (sorted[mid - 1] + sorted[mid]) / 2;
+  };
+
+  const calcMean = (values: number[]): number => {
+    if (values.length === 0) return 0;
+    return values.reduce((a, b) => a + b, 0) / values.length;
+  };
+
+  const formatPercent = (value: number): string => `${(value * 100).toFixed(1)}%`;
+
+  // Collecter métriques par client
+  interface ClientMetrics {
+    base: { recall: number; precision: number };
+    optional: { recall: number; precision: number };
+  }
+
+  const clientMetrics: ClientMetrics[] = [];
+  const allClientWmape: number[] = [];
+  let totalBaseProducts = 0;
+  let totalOptionalProducts = 0;
+
+  for (const report of reportsV2) {
+    const low = report.metrics.byConfidence.low;
+    const medium = report.metrics.byConfidence.medium;
+    const high = report.metrics.byConfidence.high;
+
+    // Produits de Base = medium + high
+    const baseTP = medium.counts.truePositives + high.counts.truePositives;
+    const baseFP = medium.counts.falsePositives + high.counts.falsePositives;
+    const baseFN = medium.counts.falseNegatives + high.counts.falseNegatives;
+    const basePrecision = baseTP + baseFP > 0 ? baseTP / (baseTP + baseFP) : 0;
+    const baseRecall = baseTP + baseFN > 0 ? baseTP / (baseTP + baseFN) : 0;
+
+    // Produits Optionnels = low
+    const optTP = low.counts.truePositives;
+    const optFP = low.counts.falsePositives;
+    const optFN = low.counts.falseNegatives;
+    const optPrecision = optTP + optFP > 0 ? optTP / (optTP + optFP) : 0;
+    const optRecall = optTP + optFN > 0 ? optTP / (optTP + optFN) : 0;
+
+    // Totaux pour volume
+    totalBaseProducts += baseTP + baseFP + baseFN;
+    totalOptionalProducts += optTP + optFP + optFN;
+
+    // Collecter WMAPE par client
+    allClientWmape.push(report.metrics.all.quantityMetrics.wmape);
+
+    clientMetrics.push({
+      base: { recall: baseRecall, precision: basePrecision },
+      optional: { recall: optRecall, precision: optPrecision },
+    });
+  }
+
+  // Filtrer clients avec données
+  const clientsWithBase = clientMetrics.filter(c => c.base.recall > 0 || c.base.precision > 0);
+  const clientsWithOptional = clientMetrics.filter(c => c.optional.recall > 0 || c.optional.precision > 0);
+
+  // WMAPE: médiane par client
+  const globalMedianWmape = calcMedian(allClientWmape);
+
+  // Médianes pour Base
+  const baseMedianRecall = calcMedian(clientsWithBase.map(c => c.base.recall));
+  const baseMedianPrecision = calcMedian(clientsWithBase.map(c => c.base.precision));
+
+  // Moyennes pour Optionnel (médiane souvent 0)
+  const optMeanRecall = calcMean(clientsWithOptional.map(c => c.optional.recall));
+  const optMeanPrecision = calcMean(clientsWithOptional.map(c => c.optional.precision));
+
+  // Volume en pourcentage
+  const totalProducts = totalBaseProducts + totalOptionalProducts;
+  const baseVolumePct = totalProducts > 0 ? (totalBaseProducts / totalProducts * 100).toFixed(0) : "0";
+  const optVolumePct = totalProducts > 0 ? (totalOptionalProducts / totalProducts * 100).toFixed(0) : "0";
+
+  const timestamp = new Date().toISOString().split("T")[0];
+
+  return `# Rapport de Performance - Systeme de Prediction de Reapprovisionnement
+
+## Contexte de l'Analyse
+
+- Clients analyses: ${reportsV2.length} clients
+- Methode: Backtest sur commandes reelles (prediction J-1)
+- Periode d'analyse: 120 jours d'historique
+
+## Segmentation des Produits
+
+Le systeme segmente les produits en deux categories selon leur historique de commandes:
+
+### Produits de Base
+
+Produits commandes au moins 2 fois dans les 120 derniers jours.
+Ces produits disposent de suffisamment de donnees pour une prediction fiable.
+
+### Produits Optionnels
+
+Produits commandes une seule fois dans les 120 derniers jours.
+Donnees limitees - prediction exploratoire necessitant validation.
+
+## 1. Detection du Risque de Rupture
+
+| Segment | Volume | Recall | Precision |
+|---------|--------|--------|-----------|
+| Produits de Base | ${baseVolumePct}% | ${formatPercent(baseMedianRecall)} | ${formatPercent(baseMedianPrecision)} |
+| Produits Optionnels | ${optVolumePct}% | ${formatPercent(optMeanRecall)} | ${formatPercent(optMeanPrecision)} |
+
+**Recall**: Pourcentage des besoins reels detectes par le systeme.
+**Precision**: Pourcentage des suggestions correspondant a un achat reel.
+
+## 2. Precision des Quantites
+
+| Metrique | Valeur |
+|----------|--------|
+| WMAPE (mediane) | ${globalMedianWmape.toFixed(1)}% |
+
+**WMAPE**: Ecart moyen pondere entre quantites predites et quantites commandees.
+Plus la valeur est basse, plus les predictions sont precises.
+
+## Recommandation d'Utilisation
+
+- **Produits de Base**: Activation en mode automatique
+- **Produits Optionnels**: Affichage en mode suggestion (validation manuelle recommandee)
+
+---
+
+*Rapport genere le ${timestamp}*
+`;
 }

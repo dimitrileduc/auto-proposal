@@ -13,6 +13,7 @@ export interface QuoteLineDetails {
   // Infos produit
   product_name: string;
   product_uom: [number, string]; // Ex: [27, "TU6"]
+  description?: string; // Description/reasoning de la prédiction
 
   // Quantités
   quantity_ordered: number;
@@ -44,9 +45,13 @@ export interface QuoteCreationResult {
   amount_total_ttc: number; // amount_total
   tax_total: number; // amount_tax
 
-  // Lignes détaillées
+  // Lignes détaillées (produits de base)
   order_lines: QuoteLineDetails[];
   lines_count: number;
+
+  // Produits optionnels (sale.order.option)
+  optional_products: QuoteLineDetails[];
+  optional_products_count: number;
 
   // Metadata
   tag_id: number; // ID du tag appliqué
