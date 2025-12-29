@@ -39,49 +39,11 @@ export function calculateClientReorderWindow(products) {
     return calculateMedian(allIntervals);
 }
 /**
- * Calcule la consommation journalière via l'algorithme SBA (Syntetos-Boylan Approximation)
- *
- * SBA sépare la demande en deux composantes :
- * - Taille typique des commandes (z_hat)
- * - Intervalle typique entre commandes (p_hat)
- *
- * Puis applique une correction de biais : (1 - α/2)
- *
- * Référence : Section 3.2 du rapport expert sur demande intermittente
- *
- * @param orders Liste des commandes d'un produit (triées par date décroissante)
- * @param alpha Coefficient de lissage SBA (défaut: 0.1)
- * @returns Consommation moyenne par jour avec correction biais SBA
- */
-function calculateDailyConsumptionSBA(orders, alpha = 0.1) {
-    if (orders.length < 2) {
-        throw new Error("SBA requires at least 2 orders");
-    }
-    // Trier par date décroissante (plus récent d'abord)
-    const sorted = [...orders].sort((a, b) => new Date(b.date_order).getTime() - new Date(a.date_order).getTime());
-    // 1. Calculer z_hat : taille typique des commandes (médiane pour robustesse)
-    const quantities = sorted.map(o => o.quantity);
-    const z_hat = calculateMedian(quantities);
-    // 2. Calculer p_hat : intervalle typique entre commandes (médiane)
-    const intervals = [];
-    for (let i = 0; i < sorted.length - 1; i++) {
-        const currentDate = new Date(sorted[i].date_order);
-        const nextDate = new Date(sorted[i + 1].date_order);
-        const daysBetween = (currentDate.getTime() - nextDate.getTime()) / (1000 * 60 * 60 * 24);
-        intervals.push(daysBetween);
-    }
-    const p_hat = calculateMedian(intervals);
-    // 3. Correction du biais SBA : (1 - α/2)
-    // Cette correction réduit le biais positif de la méthode de Croston
-    const sbaCorrection = 1 - alpha / 2;
-    // 4. Consommation journalière = (taille / intervalle) × correction
-    return (z_hat / p_hat) * sbaCorrection;
-}
-/**
  * Calcule la consommation moyenne par jour basée sur l'historique des commandes
  *
- * Utilise l'algorithme SBA pour les produits avec 2+ commandes (demande intermittente)
- * Fallback sur fenêtre client pour les produits avec 1 seule commande
+ * Adapte automatiquement la période de calcul pour les produits récents :
+ * - Produit commandé depuis 60j → calcul sur 60j (pas 365j)
+ * - Évite de sous-estimer la consommation des nouveaux produits
  *
  * @param orders Liste des commandes d'un produit (triées par date décroissante)
  * @param daysOfHistory Période totale d'analyse en jours (ex: 365)
@@ -92,27 +54,21 @@ export function calculateDailyConsumption(orders, daysOfHistory, currentDate = n
     if (orders.length === 0) {
         return 0;
     }
-    // ========================================
-    // NOUVELLE APPROCHE : Algorithme SBA
-    // ========================================
-    // Pour produits avec 2+ commandes, utiliser SBA (demande intermittente B2B)
-    if (orders.length >= 2) {
-        return calculateDailyConsumptionSBA(orders, 0.1);
-    }
-    // ========================================
-    // FALLBACK : 1 seule commande
-    // ========================================
     const totalQuantity = orders.reduce((sum, order) => sum + order.quantity, 0);
     // Trouver la première commande de ce produit
     const firstOrderDate = new Date(Math.min(...orders.map((o) => new Date(o.date_order).getTime())));
     // Jours depuis la première commande du produit
     const daysSinceFirstOrder = Math.floor((currentDate.getTime() - firstOrderDate.getTime()) / (1000 * 60 * 60 * 24));
     // Pour produits avec 1 commande, utiliser la fenêtre client si disponible
-    if (clientReorderWindow) {
+    if (orders.length === 1 && clientReorderWindow) {
         console.log(`     ℹ️  Utilise fenêtre client (${clientReorderWindow.toFixed(1)}j) au lieu de ${daysSinceFirstOrder}j`);
         return totalQuantity / clientReorderWindow;
     }
-    // Sinon, utiliser l'historique réel
+    // Adapter la période: utiliser l'historique réel si < fenêtre d'analyse
     const actualDays = Math.min(daysOfHistory, daysSinceFirstOrder);
+    // Protection contre division par zéro
+    if (actualDays <= 0) {
+        return 0; // Pas de consommation calculable
+    }
     return totalQuantity / actualDays;
 }

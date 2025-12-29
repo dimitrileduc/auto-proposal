@@ -154,6 +154,16 @@ export function createXmlRpcClient() {
                     : new Error(`Erreur lors de la création de la sale.order.line: ${error}`);
             }
         },
+        async createSaleOrderOption(data) {
+            try {
+                return await odoo.create("sale.order.option", data);
+            }
+            catch (error) {
+                throw error instanceof Error
+                    ? error
+                    : new Error(`Erreur lors de la création de la sale.order.option: ${error}`);
+            }
+        },
         async getSaleOrderDetails(quoteId) {
             try {
                 // Récupérer le devis
@@ -186,6 +196,7 @@ export function createXmlRpcClient() {
                         "price_subtotal",
                         "price_total",
                         "tax_id",
+                        "name", // Description de la ligne (reasoning)
                     ],
                 });
                 return {
@@ -308,6 +319,67 @@ export function createXmlRpcClient() {
                 throw error instanceof Error
                     ? error
                     : new Error(`Erreur lors de la récupération de la dernière commande du client ${clientId}: ${error}`);
+            }
+        },
+        async getLastClientOrderBeforeDate(clientId, referenceDate) {
+            try {
+                console.log(`\n📊 Fetching last validated order for client ${clientId} before ${referenceDate}...`);
+                // Rechercher la dernière commande validée AVANT referenceDate
+                const orders = await odoo.searchRead("sale.order", [
+                    ["partner_id", "=", clientId],
+                    ["state", "in", ["sale", "done"]],
+                    ["date_order", "<=", referenceDate] // Ajout de la contrainte de date
+                ], {
+                    fields: ["name", "date_order", "partner_id"],
+                    order: "date_order DESC",
+                    limit: 1
+                });
+                if (orders.length === 0) {
+                    throw new Error(`No validated order found for client ${clientId} before ${referenceDate}`);
+                }
+                const order = orders[0];
+                console.log(`   ✅ Found order: ${order.name} (${order.date_order})`);
+                return {
+                    id: order.id,
+                    name: order.name,
+                    date_order: order.date_order,
+                    partner_name: order.partner_id[1]
+                };
+            }
+            catch (error) {
+                throw error instanceof Error
+                    ? error
+                    : new Error(`Erreur lors de la récupération de la dernière commande du client ${clientId} avant ${referenceDate}: ${error}`);
+            }
+        },
+        async getOrderByName(orderName) {
+            try {
+                console.log(`\n📊 Fetching order ${orderName}...`);
+                // Rechercher la commande par son nom
+                const orders = await odoo.searchRead("sale.order", [
+                    ["name", "=", orderName],
+                    ["state", "in", ["sale", "done"]]
+                ], {
+                    fields: ["name", "date_order", "partner_id"],
+                    limit: 1
+                });
+                if (orders.length === 0) {
+                    throw new Error(`Order ${orderName} not found or not validated`);
+                }
+                const order = orders[0];
+                console.log(`   ✅ Found order: ${order.name} (${order.date_order}) for ${order.partner_id[1]}`);
+                return {
+                    id: order.id,
+                    name: order.name,
+                    date_order: order.date_order,
+                    partner_name: order.partner_id[1],
+                    partner_id: order.partner_id[0]
+                };
+            }
+            catch (error) {
+                throw error instanceof Error
+                    ? error
+                    : new Error(`Erreur lors de la récupération de la commande ${orderName}: ${error}`);
             }
         },
     };

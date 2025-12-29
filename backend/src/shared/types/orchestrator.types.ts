@@ -20,11 +20,8 @@ export interface OrchestratorConfig {
   /** Nombre de jours d'historique à analyser (ex: 180 = 6 mois) */
   analysisWindowDays: number;
 
-  /** Jours de couverture souhaités (ex: 14 jours) */
-  targetCoverage: number;
-
-  /** Délai d'approvisionnement en jours (ex: 5 jours) */
-  leadTime: number;
+  /** Seuil de réapprovisionnement en jours (couverture + lead time) */
+  replenishmentThreshold: number;
 
   /** Montant minimum de commande en euros (MOQ) */
   moqMinimum: number;

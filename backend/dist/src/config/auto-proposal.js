@@ -11,16 +11,8 @@ export const autoProposalConfig = {
         excludedPartnerTagId: 195, // Tag "exclude-auto-proposal" - Les clients avec ce tag sont définitivement exclus de l'analyse
     },
     // Stock replenishment parameters
-    targetCoverage: 25,
-    leadTime: 5,
-    analysisWindowDays: 120,
-    // Quantity calculation strategy
-    quantityStrategy: {
-        maxRecentOrderLines: 5, // Limiter l'analyse aux 5 lignes de commande les plus récentes
-        minOrdersForMediumConfidence: 2, // Seuil pour confiance Medium
-        minOrdersForHighConfidence: 5, // Seuil pour confiance High
-        lowMaxThresholdDays: 190, // Filtre conservatif pour produits LOW: skip si dernière commande > 190j (one-time purchase)
-    },
+    replenishmentThreshold: 30, // 25j couverture + 5j lead time
+    analysisWindowDays: 180, // Augmenté de 120 à 180 pour supporter fenêtre LLM de 5 mois (150j)
     // Pricing & MOQ configuration
     pricing: {
         minimumOrderAmount: 300, // MOQ global en euros

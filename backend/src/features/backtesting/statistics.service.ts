@@ -239,8 +239,7 @@ export interface AggregateReportData {
   config: {
     daysBeforePrediction?: number;
     analysisWindowDays?: number;
-    targetCoverage?: number;
-    leadTime?: number;
+    replenishmentThreshold?: number;
   };
   aggregateMetrics: AggregateMetrics;
   individualResults: BacktestIndividualResult[];
@@ -276,8 +275,7 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 
 - **Jours d'avance** : ${data.config.daysBeforePrediction ?? 1}j
 - **Fenêtre d'analyse** : ${data.config.analysisWindowDays ?? 120}j
-- **Couverture cible** : ${data.config.targetCoverage ?? 25}j
-- **Lead time** : ${data.config.leadTime ?? 5}j
+- **Seuil réappro** : ${data.config.replenishmentThreshold ?? 30}j
 
 ---
 

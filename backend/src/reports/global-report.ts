@@ -20,7 +20,6 @@ export interface GlobalReportData {
   statistics: GlobalWorkflowStatistics;
   config: {
     replenishmentThreshold: number;
-    targetCoverageDays: number;
     analysisWindowDays: number;
     moqMinimum: number;
   };
@@ -45,7 +44,6 @@ export function generateGlobalReport(data: GlobalReportData): string {
   sections.push(`**⏱️ Durée totale:** ${durationStr}`);
   sections.push(`**💰 MOQ configuré:** ${data.config.moqMinimum.toFixed(2)}€`);
   sections.push(`**📊 Seuil réappro:** ${data.config.replenishmentThreshold}j`);
-  sections.push(`**🎯 Couverture cible:** ${data.config.targetCoverageDays}j`);
   sections.push("");
   sections.push(separator());
 

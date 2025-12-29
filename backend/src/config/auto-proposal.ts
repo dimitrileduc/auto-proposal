@@ -13,8 +13,7 @@ export const autoProposalConfig = {
   },
 
   // Stock replenishment parameters
-  targetCoverage: 25,
-  leadTime: 5,
+  replenishmentThreshold: 30, // 25j couverture + 5j lead time
   analysisWindowDays: 180, // Augmenté de 120 à 180 pour supporter fenêtre LLM de 5 mois (150j)
 
   // Pricing & MOQ configuration

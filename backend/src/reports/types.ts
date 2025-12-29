@@ -42,8 +42,7 @@ export interface WorkflowOptions {
   // Paramètres d'analyse
   inactivityDays?: number; // Seuil d'inactivité en jours
   analysisWindowDays?: number; // Fenêtre d'analyse historique en jours
-  targetCoverage?: number; // Couverture cible en jours
-  leadTime?: number; // Délai d'approvisionnement en jours
+  replenishmentThreshold?: number; // Seuil de réapprovisionnement en jours
   moqMinimum?: number; // Montant minimum de commande (MOQ)
 
   // Paramètres de workflow
@@ -60,9 +59,7 @@ export interface WorkflowConfig {
   // Depuis auto-proposal.ts config
   inactivityDays: number;
   analysisWindowDays: number;
-  targetCoverage: number;
-  leadTime: number;
-  replenishmentThreshold: number; // targetCoverage + leadTime
+  replenishmentThreshold: number; // Seuil de réapprovisionnement (couverture + lead time)
   moqMinimum: number;
   // Runtime overrides
   maxClientsToAnalyze: number | "all";

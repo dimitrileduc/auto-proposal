@@ -23,8 +23,7 @@ const clientTask = new Hono();
  *   "config": {  // Optionnel, overrides des paramètres
  *     "analysisWindowDays": 120,
  *     "analysisEndDate": "2025-10-26 23:59:59",  // Date de référence pour l'analyse d'historique (format: "YYYY-MM-DD HH:MM:SS"). Default: aujourd'hui
- *     "targetCoverage": 25,
- *     "leadTime": 5,
+ *     "replenishmentThreshold": 30,    // Seuil réappro (couverture + lead time)
  *     "moqMinimum": 300,
  *     "skipOdooQuoteGeneration": false,  // Si false, crée les devis Odoo (défaut: true = skip)
  *     "shouldGenerateReport": true  // Si true, génère les rapports markdown pour les clients avec risk. Default: true
@@ -50,8 +49,7 @@ clientTask.post("/", async (c) => {
       config: {
         analysisWindowDays: config.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
         analysisEndDate: config.analysisEndDate,
-        targetCoverage: config.targetCoverage ?? autoProposalConfig.targetCoverage,
-        leadTime: config.leadTime ?? autoProposalConfig.leadTime,
+        replenishmentThreshold: config.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
         moqMinimum: config.moqMinimum ?? autoProposalConfig.pricing.minimumOrderAmount,
         skipOdooQuoteGeneration: config.skipOdooQuoteGeneration ?? true,
         shouldGenerateReport: config.shouldGenerateReport,

@@ -76,13 +76,9 @@ export const clientProposalTask = task({
         ? parseUserDateInput(payload.config.analysisEndDate)
         : getTodayAsDateString(),
 
-      targetCoverage:
-        payload.config.targetCoverage ??
-        autoProposalConfig.targetCoverage,
-
-      leadTime:
-        payload.config.leadTime ??
-        autoProposalConfig.leadTime,
+      replenishmentThreshold:
+        payload.config.replenishmentThreshold ??
+        autoProposalConfig.replenishmentThreshold,
 
       moqMinimum:
         payload.config.moqMinimum ??
@@ -111,8 +107,7 @@ export const clientProposalTask = task({
       const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
         analysisWindowDays: config.analysisWindowDays,
         analysisEndDate: config.analysisEndDate,
-        targetCoverage: config.targetCoverage,
-        leadTime: config.leadTime,
+        replenishmentThreshold: config.replenishmentThreshold,
       });
 
       result.phases.stockAnalysis = stockAnalysis;
@@ -122,8 +117,8 @@ export const clientProposalTask = task({
       result.hasRisk = hasProducts;
       result.productsCount = hasProducts ? stockAnalysis.products.length : 0;
 
-      // Définir le seuil de réapprovisionnement
-      const replenishmentThreshold = config.targetCoverage + config.leadTime;
+      // Seuil de réapprovisionnement (couverture + lead time)
+      const replenishmentThreshold = config.replenishmentThreshold;
 
       if (hasProducts) {
         // Compter les produits urgents (daysUntilStockout <= 0)

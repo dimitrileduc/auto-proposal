@@ -23,8 +23,7 @@ const orchestratorTaskRoute = new Hono();
  *
  *     // Analyse stock
  *     "analysisWindowDays": 120,              // Jours d'historique avant dateMax. Default: config (120)
- *     "targetCoverage": 25,                   // Jours de couverture. Default: config (25)
- *     "leadTime": 5,                          // Délai livraison. Default: config (5)
+ *     "replenishmentThreshold": 30,           // Seuil réappro (couverture + lead time). Default: config (30)
  *     "moqMinimum": 300,                      // MOQ en euros. Default: config (300)
  *
  *     // Workflow

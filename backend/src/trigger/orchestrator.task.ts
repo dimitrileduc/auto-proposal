@@ -69,10 +69,8 @@ export const orchestratorTask = task({
         : autoProposalConfig.inactivityDetection.dateMax ?? getTodayAsDateString(),
       analysisWindowDays:
         payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
-      targetCoverage:
-        payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage,
-      leadTime:
-        payload.config?.leadTime ?? autoProposalConfig.leadTime,
+      replenishmentThreshold:
+        payload.config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
       moqMinimum:
         payload.config?.moqMinimum ?? autoProposalConfig.pricing.minimumOrderAmount,
       skipOdooQuoteGeneration:
@@ -149,8 +147,7 @@ export const orchestratorTask = task({
                 config: {
                   analysisWindowDays: config.analysisWindowDays,
                   analysisEndDate: config.dateMax,
-                  targetCoverage: config.targetCoverage,
-                  leadTime: config.leadTime,
+                  replenishmentThreshold: config.replenishmentThreshold,
                   moqMinimum: config.moqMinimum,
                   skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
                   shouldGenerateReport: config.generateReports,
@@ -254,9 +251,7 @@ export const orchestratorTask = task({
       const clientReportData = prepareAllClientReportData(clientResults, {
         inactivityDays: inactivityDaysForReport,
         analysisWindowDays: config.analysisWindowDays,
-        targetCoverage: config.targetCoverage,
-        leadTime: config.leadTime,
-        replenishmentThreshold: config.targetCoverage + config.leadTime,
+        replenishmentThreshold: config.replenishmentThreshold,
         moqMinimum: config.moqMinimum,
         maxClientsToAnalyze: config.maxClientsToAnalyze,
         generateReports: config.generateReports,
@@ -277,8 +272,7 @@ export const orchestratorTask = task({
         clients: clientReportData,
         statistics,
         config: {
-          replenishmentThreshold: config.targetCoverage + config.leadTime,
-          targetCoverageDays: config.targetCoverage,
+          replenishmentThreshold: config.replenishmentThreshold,
           analysisWindowDays: config.analysisWindowDays,
           moqMinimum: config.moqMinimum,
         },

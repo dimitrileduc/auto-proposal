@@ -1,8 +1,8 @@
 import { task } from "@trigger.dev/sdk/v3";
 import { getInactiveClients } from "../features/client-inactivity/inactivity.service";
 import { autoProposalConfig } from "../config/auto-proposal";
-import { calculateGlobalWorkflowStatistics } from "../workflow/workflow.stats";
-import { prepareAllClientReportData } from "../workflow/workflow.client-stats";
+import { calculateGlobalWorkflowStatistics } from "../reports/statistics";
+import { prepareAllClientReportData } from "../reports/data-preparation";
 import { generateGlobalReport } from "../reports/global-report";
 import { getTodayAsDateString, getDateDaysAgo, parseUserDateInput } from "../utils/date.utils";
 import { clientProposalTask } from "./client-proposal.task";
@@ -39,10 +39,9 @@ export const orchestratorTask = task({
                 ? parseUserDateInput(payload.config.dateMax)
                 : autoProposalConfig.inactivityDetection.dateMax ?? getTodayAsDateString(),
             analysisWindowDays: payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
-            targetCoverage: payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage,
-            leadTime: payload.config?.leadTime ?? autoProposalConfig.leadTime,
+            replenishmentThreshold: payload.config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
             moqMinimum: payload.config?.moqMinimum ?? autoProposalConfig.pricing.minimumOrderAmount,
-            skipOdooQuoteGeneration: payload.config?.skipOdooQuoteGeneration ?? false,
+            skipOdooQuoteGeneration: payload.config?.skipOdooQuoteGeneration ?? true,
             maxClientsToAnalyze: payload.config?.maxClientsToAnalyze ?? "all",
             forceReanalysis: payload.config?.forceReanalysis ??
                 autoProposalConfig.workflow.forceReanalysis,
@@ -95,8 +94,7 @@ export const orchestratorTask = task({
                                 config: {
                                     analysisWindowDays: config.analysisWindowDays,
                                     analysisEndDate: config.dateMax,
-                                    targetCoverage: config.targetCoverage,
-                                    leadTime: config.leadTime,
+                                    replenishmentThreshold: config.replenishmentThreshold,
                                     moqMinimum: config.moqMinimum,
                                     skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
                                     shouldGenerateReport: config.generateReports,
@@ -181,9 +179,7 @@ export const orchestratorTask = task({
             const clientReportData = prepareAllClientReportData(clientResults, {
                 inactivityDays: inactivityDaysForReport,
                 analysisWindowDays: config.analysisWindowDays,
-                targetCoverage: config.targetCoverage,
-                leadTime: config.leadTime,
-                replenishmentThreshold: config.targetCoverage + config.leadTime,
+                replenishmentThreshold: config.replenishmentThreshold,
                 moqMinimum: config.moqMinimum,
                 maxClientsToAnalyze: config.maxClientsToAnalyze,
                 generateReports: config.generateReports,
@@ -201,8 +197,7 @@ export const orchestratorTask = task({
                 clients: clientReportData,
                 statistics,
                 config: {
-                    replenishmentThreshold: config.targetCoverage + config.leadTime,
-                    targetCoverageDays: config.targetCoverage,
+                    replenishmentThreshold: config.replenishmentThreshold,
                     analysisWindowDays: config.analysisWindowDays,
                     moqMinimum: config.moqMinimum,
                 },

@@ -17,11 +17,11 @@ import type {
  * Calcule les besoins de réapprovisionnement d'un client
  *
  *
- * 1. Trigger: Risque de rupture < seuil (couverture + lead time)
+ * 1. Trigger: Risque de rupture < seuil de réapprovisionnement
  * 2. Quantité: Médiane de l'historique réel (pas consommation × jours)
  *
  * @param clientId ID du client Odoo
- * @param config Configuration optionnelle (analysisWindowDays, analysisEndDate, targetCoverage, leadTime)
+ * @param config Configuration optionnelle (analysisWindowDays, analysisEndDate, replenishmentThreshold)
  * @returns Produits à commander avec quantités recommandées
  */
 export async function calculateReplenishmentNeeds(
@@ -29,8 +29,7 @@ export async function calculateReplenishmentNeeds(
   config?: {
     analysisWindowDays?: number;
     analysisEndDate?: string;
-    targetCoverage?: number;
-    leadTime?: number;
+    replenishmentThreshold?: number;
   }
 ): Promise<StockReplenishmentResult> {
   // Utiliser les valeurs de config ou les valeurs par défaut
@@ -63,10 +62,8 @@ export async function calculateReplenishmentNeeds(
   let totalPromptTokens = 0;
   let totalCompletionTokens = 0;
 
-  // Utiliser les valeurs de config ou les valeurs par défaut
-  const targetCoverage = config?.targetCoverage ?? autoProposalConfig.targetCoverage;
-  const leadTime = config?.leadTime ?? autoProposalConfig.leadTime;
-  const replenishmentThresholdDays = targetCoverage + leadTime;
+  // Utiliser le seuil de réapprovisionnement
+  const replenishmentThresholdDays = config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold;
 
   // ====================================================================
   // PHASE 1: Préparer tous les produits et identifier ceux qui ont besoin du LLM
@@ -132,7 +129,7 @@ export async function calculateReplenishmentNeeds(
     );
     console.log(`     Stock restant estimé: ${stockPrediction.estimatedStock.toFixed(2)}`);
     console.log(`     Jours avant rupture: ${stockPrediction.daysUntilStockout.toFixed(1)}j`);
-    console.log(`     Seuil réappro: ${replenishmentThresholdDays}j (couverture ${targetCoverage}j + lead time ${leadTime}j)`);
+    console.log(`     Seuil réappro: ${replenishmentThresholdDays}j`);
 
     // QUANTITÉ: Calculer selon médiane de l'historique (baseline)
     const calculation = calculateQuantityFromHistory(ordersToUse);
@@ -379,13 +376,9 @@ export async function calculateReplenishmentNeeds(
         continue;
       }
     } else {
-      // Fallback si LLM a échoué : utiliser l'ancienne règle mécanique
-      if (stockPrediction.daysUntilStockout > replenishmentThresholdDays) {
-        console.log(`     ❌ SKIP: Stock OK (${stockPrediction.daysUntilStockout.toFixed(1)}j > ${replenishmentThresholdDays}j) [Fallback règle mécanique]`);
-        continue;
-      }
+      // Pas d'utilisation du LLM : skip (le LLM doit être disponible)
       if (finalQuantity === 0) {
-        console.log(`     ❌ SKIP: Médiane = 0 (pas d'historique)`);
+        console.log(`     ❌ SKIP: Pas d'historique`);
         continue;
       }
     }

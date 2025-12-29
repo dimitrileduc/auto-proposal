@@ -14,7 +14,8 @@
  */
 import { task } from "@trigger.dev/sdk";
 import { backtestClientTask } from "./backtest-client.task";
-import { calculateAggregateStatistics, generateAggregateMarkdownReport, } from "../features/backtesting/statistics.service";
+import { calculateAggregateStatistics, } from "../features/backtesting/statistics.service";
+import { generateAggregatedReportV2, generateSummaryMarkdown } from "../reports/backtest-report";
 import { findTopBacktestClients } from "../features/backtesting/client-discovery.service";
 import * as fs from "fs/promises";
 import * as path from "path";
@@ -39,7 +40,15 @@ export const backtestAggregateTask = task({
         console.log(`   Days before prediction: ${payload.daysBeforePrediction ?? 1}\n`);
         // ===== ÉTAPE 1: DÉCOUVERTE OU VALIDATION DES CLIENTS =====
         let clientIds;
-        if (!payload.clientIds || payload.clientIds.length === 0) {
+        let orderMapping;
+        if (payload.specificOrders) {
+            // Mode commandes spécifiques
+            clientIds = Object.keys(payload.specificOrders).map(id => parseInt(id));
+            orderMapping = payload.specificOrders;
+            console.log(`📊 Mode: Specific orders (${clientIds.length} exact orders to test)`);
+            console.log(`   Testing exact orders from previous run\n`);
+        }
+        else if (!payload.clientIds || payload.clientIds.length === 0) {
             // Mode auto-découverte
             const count = payload.autoDiscoverCount ?? 50;
             console.log(`📊 Mode: Auto-discovery (finding top ${count} clients with 2025 orders)`);
@@ -49,7 +58,7 @@ export const backtestAggregateTask = task({
                 username: process.env.ODOO_USERNAME,
                 password: process.env.ODOO_PASSWORD,
             };
-            clientIds = await findTopBacktestClients(odooConfig, count, 2025);
+            clientIds = await findTopBacktestClients(odooConfig, count, 2025, payload.referenceDate);
             console.log(`   ✅ Discovered ${clientIds.length} clients\n`);
         }
         else {
@@ -64,8 +73,10 @@ export const backtestAggregateTask = task({
         const totalClients = clientIds.length;
         const totalChunks = Math.ceil(totalClients / BATCH_SIZE);
         const allResults = [];
-        const allResultsNoLow = [];
-        const allResultsAll = [];
+        // Track LLM usage across all clients
+        let totalLLMCalls = 0;
+        let totalPromptTokens = 0;
+        let totalCompletionTokens = 0;
         for (let chunkIdx = 0; chunkIdx < totalChunks; chunkIdx++) {
             const chunkStart = chunkIdx * BATCH_SIZE;
             const chunkEnd = Math.min(chunkStart + BATCH_SIZE, totalClients);
@@ -77,10 +88,15 @@ export const backtestAggregateTask = task({
                     payload: {
                         clientId,
                         daysBeforePrediction: payload.daysBeforePrediction ?? 1,
+                        referenceDate: payload.referenceDate,
+                        orderName: orderMapping ? orderMapping[clientId.toString()] : undefined,
                         config: payload.config,
                     },
+                    options: {
+                        ttl: "60m", // TTL de 60 minutes par tâche pour éviter expiration dans la queue
+                    }
                 }));
-                // Batch trigger and wait (pattern orchestrator.task.ts:163)
+                // Batch trigger and wait
                 const batchResults = await backtestClientTask.batchTriggerAndWait(batchPayloads);
                 console.log(`   ✅ Completed ${batchResults.runs.length} backtest tasks for this batch`);
                 // Collecter résultats
@@ -101,43 +117,17 @@ export const backtestAggregateTask = task({
                                     recall: taskResult.comparison.recall,
                                     f1Score: taskResult.comparison.f1Score,
                                     mae: taskResult.comparison.mae,
+                                    wmape: taskResult.comparison.wmape,
                                     mape: taskResult.comparison.mape,
+                                    bias: taskResult.comparison.bias,
                                 },
                             });
                         }
-                        // Filtrer LOW: inclure seulement si client a commandé des produits LOW (TP+FN > 0)
-                        if (taskResult.comparisonNoLow &&
-                            taskResult.comparisonNoLow.truePositives + taskResult.comparisonNoLow.falseNegatives > 0) {
-                            allResultsNoLow.push({
-                                clientId: taskResult.clientId,
-                                clientName: taskResult.clientName,
-                                orderName: taskResult.orderName,
-                                success: true,
-                                metrics: {
-                                    precision: taskResult.comparisonNoLow.precision,
-                                    recall: taskResult.comparisonNoLow.recall,
-                                    f1Score: taskResult.comparisonNoLow.f1Score,
-                                    mae: taskResult.comparisonNoLow.mae,
-                                    mape: taskResult.comparisonNoLow.mape,
-                                },
-                            });
-                        }
-                        // Filtrer ALL: inclure seulement si client a commandé des produits (TP+FN > 0)
-                        if (taskResult.comparisonAll &&
-                            taskResult.comparisonAll.truePositives + taskResult.comparisonAll.falseNegatives > 0) {
-                            allResultsAll.push({
-                                clientId: taskResult.clientId,
-                                clientName: taskResult.clientName,
-                                orderName: taskResult.orderName,
-                                success: true,
-                                metrics: {
-                                    precision: taskResult.comparisonAll.precision,
-                                    recall: taskResult.comparisonAll.recall,
-                                    f1Score: taskResult.comparisonAll.f1Score,
-                                    mae: taskResult.comparisonAll.mae,
-                                    mape: taskResult.comparisonAll.mape,
-                                },
-                            });
+                        // Aggregate LLM usage
+                        if (taskResult.llm_usage) {
+                            totalLLMCalls += taskResult.llm_usage.calls;
+                            totalPromptTokens += taskResult.llm_usage.promptTokens;
+                            totalCompletionTokens += taskResult.llm_usage.completionTokens;
                         }
                         console.log(`   ✅ ${taskResult.clientName}: Recall ${(taskResult.comparison.recall * 100).toFixed(1)}%, ` +
                             `MAPE ${taskResult.comparison.mape.toFixed(1)}%`);
@@ -190,83 +180,53 @@ export const backtestAggregateTask = task({
         console.log(`   Median Recall: ${(aggregateMetrics.median.recall * 100).toFixed(1)}%`);
         console.log(`   Mean MAPE: ${aggregateMetrics.mean.mape.toFixed(1)}%`);
         console.log(`   Median MAPE: ${aggregateMetrics.median.mape.toFixed(1)}%`);
+        // Log LLM usage summary
+        if (totalLLMCalls > 0) {
+            console.log(`\n🤖 LLM Usage Summary:`);
+            console.log(`   Total Calls: ${totalLLMCalls}`);
+            console.log(`   Total Tokens: ${totalPromptTokens + totalCompletionTokens} (${totalPromptTokens} prompt + ${totalCompletionTokens} completion)`);
+        }
         // ===== ÉTAPE 4: GÉNÉRATION RAPPORTS =====
         console.log(`\n📝 Generating reports...`);
         const reportsOutputDir = path.join(process.cwd(), "reports-output");
         await fs.mkdir(reportsOutputDir, { recursive: true });
         const timestamp = new Date().toISOString().split("T")[0];
-        // SWAP: Rapport PRINCIPAL = CLEAN (2+ commandes, données propres)
-        const reportData = {
-            executionDate: new Date().toISOString(),
-            config: {
-                daysBeforePrediction: payload.daysBeforePrediction ?? 1,
-                analysisWindowDays: payload.config?.analysisWindowDays,
-                targetCoverage: payload.config?.targetCoverage,
-                leadTime: payload.config?.leadTime,
-            },
-            aggregateMetrics,
-            individualResults: allResults,
-        };
-        // JSON CLEAN (pour analyse programmatique)
-        const jsonPath = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}.json`);
-        await fs.writeFile(jsonPath, JSON.stringify(reportData, null, 2), "utf-8");
-        console.log(`   ✅ JSON CLEAN report saved: backtest-aggregate-${timestamp}.json`);
-        // Markdown CLEAN (pour lecture humaine)
-        const markdownReport = generateAggregateMarkdownReport(reportData);
-        const mdPath = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}.md`);
-        await fs.writeFile(mdPath, markdownReport, "utf-8");
-        console.log(`   ✅ Markdown CLEAN report saved: backtest-aggregate-${timestamp}.md`);
-        // SWAP: Rapport SECONDAIRE = LOW (1 commande, sparse data isolé)
-        if (allResultsNoLow.length > 0) {
-            const successfulResultsNoLow = allResultsNoLow.filter((r) => r.success && r.metrics);
-            const aggregateMetricsNoLow = calculateAggregateStatistics(successfulResultsNoLow.map((r) => r.metrics));
-            const reportDataNoLow = {
-                executionDate: new Date().toISOString(),
-                config: {
-                    daysBeforePrediction: payload.daysBeforePrediction ?? 1,
-                    analysisWindowDays: payload.config?.analysisWindowDays,
-                    targetCoverage: payload.config?.targetCoverage,
-                    leadTime: payload.config?.leadTime,
-                },
-                aggregateMetrics: aggregateMetricsNoLow,
-                individualResults: allResultsNoLow,
-            };
-            // JSON LOW (sparse data)
-            const jsonPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-low.json`);
-            await fs.writeFile(jsonPathNoLow, JSON.stringify(reportDataNoLow, null, 2), "utf-8");
-            console.log(`   ✅ JSON LOW report saved: backtest-aggregate-${timestamp}-low.json`);
-            // Markdown LOW (sparse data)
-            const markdownReportNoLow = generateAggregateMarkdownReport(reportDataNoLow);
-            const mdPathNoLow = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-low.md`);
-            await fs.writeFile(mdPathNoLow, markdownReportNoLow, "utf-8");
-            console.log(`   ✅ Markdown LOW report saved: backtest-aggregate-${timestamp}-low.md`);
-            console.log(`   📊 LOW (sparse data): ${successfulResultsNoLow.length} clients analyzed`);
+        // Variables pour les paths (utilisées dans le return)
+        let jsonPath = "";
+        let mdPath = "";
+        // ===== GÉNÉRATION RAPPORT V2 AGRÉGÉ =====
+        console.log(`\n📊 Generating aggregated V2 report...`);
+        try {
+            const v2Files = await fs.readdir(reportsOutputDir);
+            const v2Reports = [];
+            for (const file of v2Files) {
+                if (file.endsWith('-v2.json') && file.startsWith('backtest-client-')) {
+                    const filePath = path.join(reportsOutputDir, file);
+                    const content = await fs.readFile(filePath, 'utf-8');
+                    v2Reports.push(JSON.parse(content));
+                }
+            }
+            if (v2Reports.length > 0) {
+                // Générer V2 JSON agrégé
+                const aggregatedV2 = generateAggregatedReportV2(v2Reports);
+                const aggregatedV2FileName = `backtest-aggregate-${timestamp}-v2.json`;
+                jsonPath = path.join(reportsOutputDir, aggregatedV2FileName);
+                await fs.writeFile(jsonPath, JSON.stringify(aggregatedV2, null, 2), 'utf-8');
+                console.log(`   ✅ V2 JSON report saved: ${aggregatedV2FileName}`);
+                // Générer Summary Markdown
+                const summaryMarkdown = generateSummaryMarkdown(v2Reports);
+                const summaryFileName = `backtest-aggregate-${timestamp}-summary.md`;
+                mdPath = path.join(reportsOutputDir, summaryFileName);
+                await fs.writeFile(mdPath, summaryMarkdown, 'utf-8');
+                console.log(`   ✅ Summary MD report saved: ${summaryFileName}`);
+                console.log(`      Aggregated ${v2Reports.length} client reports`);
+            }
+            else {
+                console.log(`   ⚠️  No V2 reports found to aggregate`);
+            }
         }
-        // Rapport ALL (tous les produits: clean + low)
-        if (allResultsAll.length > 0) {
-            const successfulResultsAll = allResultsAll.filter((r) => r.success && r.metrics);
-            const aggregateMetricsAll = calculateAggregateStatistics(successfulResultsAll.map((r) => r.metrics));
-            const reportDataAll = {
-                executionDate: new Date().toISOString(),
-                config: {
-                    daysBeforePrediction: payload.daysBeforePrediction ?? 1,
-                    analysisWindowDays: payload.config?.analysisWindowDays,
-                    targetCoverage: payload.config?.targetCoverage,
-                    leadTime: payload.config?.leadTime,
-                },
-                aggregateMetrics: aggregateMetricsAll,
-                individualResults: allResultsAll,
-            };
-            // JSON ALL
-            const jsonPathAll = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-all.json`);
-            await fs.writeFile(jsonPathAll, JSON.stringify(reportDataAll, null, 2), "utf-8");
-            console.log(`   ✅ JSON ALL report saved: backtest-aggregate-${timestamp}-all.json`);
-            // Markdown ALL
-            const markdownReportAll = generateAggregateMarkdownReport(reportDataAll);
-            const mdPathAll = path.join(reportsOutputDir, `backtest-aggregate-${timestamp}-all.md`);
-            await fs.writeFile(mdPathAll, markdownReportAll, "utf-8");
-            console.log(`   ✅ Markdown ALL report saved: backtest-aggregate-${timestamp}-all.md`);
-            console.log(`   📊 ALL (tous produits): ${successfulResultsAll.length} clients analyzed`);
+        catch (aggregateError) {
+            console.warn(`   ⚠️  Failed to generate reports:`, aggregateError instanceof Error ? aggregateError.message : String(aggregateError));
         }
         // ===== ÉTAPE 5: RÉSULTAT FINAL =====
         const executionTime = Date.now() - startTime;
@@ -282,6 +242,12 @@ export const backtestAggregateTask = task({
             clientsFailed: allResults.length - successfulResults.length,
             aggregateMetrics,
             individualResults: allResults,
+            llm_usage: totalLLMCalls > 0 ? {
+                calls: totalLLMCalls,
+                promptTokens: totalPromptTokens,
+                completionTokens: totalCompletionTokens,
+                totalTokens: totalPromptTokens + totalCompletionTokens,
+            } : undefined,
             reports: {
                 json: jsonPath,
                 markdown: mdPath,

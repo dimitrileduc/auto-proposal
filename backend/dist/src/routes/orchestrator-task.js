@@ -19,14 +19,13 @@ const orchestratorTaskRoute = new Hono();
  *
  *     // Analyse stock
  *     "analysisWindowDays": 120,              // Jours d'historique avant dateMax. Default: config (120)
- *     "targetCoverage": 25,                   // Jours de couverture. Default: config (25)
- *     "leadTime": 5,                          // Délai livraison. Default: config (5)
+ *     "replenishmentThreshold": 30,           // Seuil réappro (couverture + lead time). Default: config (30)
  *     "moqMinimum": 300,                      // MOQ en euros. Default: config (300)
  *
  *     // Workflow
  *     "maxClientsToAnalyze": "all",           // "all" ou nombre (debug). Default: "all"
  *     "generateReports": true,                // Génère rapports markdown. Default: config (true)
- *     "skipOdooQuoteGeneration": false,       // Mode TEST (pas de devis). Default: false
+ *     "skipOdooQuoteGeneration": false,       // Mode TEST (pas de devis). Default: true
  *     "forceReanalysis": false                // Réanalyse clients avec tag 82. Default: config (false)
  *   }
  * }
@@ -37,18 +36,7 @@ orchestratorTaskRoute.post("/", async (c) => {
         const { config = {} } = body;
         // Préparer le payload pour la task
         const payload = {
-            config: {
-                dateMin: config.dateMin,
-                dateMax: config.dateMax,
-                analysisWindowDays: config.analysisWindowDays,
-                targetCoverage: config.targetCoverage,
-                leadTime: config.leadTime,
-                moqMinimum: config.moqMinimum,
-                maxClientsToAnalyze: config.maxClientsToAnalyze,
-                generateReports: config.generateReports,
-                skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
-                forceReanalysis: config.forceReanalysis,
-            },
+            config,
         };
         console.log(`🚀 Triggering auto-proposal-orchestrator task`);
         if (config.dateMin && config.dateMax) {

@@ -5,7 +5,7 @@ import { generateQuote } from "../features/proposal-generation/proposal-generati
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
 import { getTodayAsDateString, parseUserDateInput } from "../utils/date.utils";
-import { prepareClientReportData } from "../workflow/workflow.client-stats";
+import { prepareClientReportData } from "../reports/data-preparation";
 import { generateClientReport, generateQuoteReport } from "../reports/client-report";
 import * as fs from "fs/promises";
 import * as path from "path";
@@ -32,11 +32,6 @@ export const clientProposalTask = task({
     },
     run: async (payload) => {
         const startTime = Date.now();
-        const phaseTimings = {
-            stockAnalysis: 0,
-            proposalPreparation: 0,
-            quoteGeneration: 0,
-        };
         console.log(`📊 Processing client: ${payload.client.name} (ID: ${payload.client.id})`);
         // Utilise autoProposalConfig comme configuration par défaut avec overrides depuis le payload
         const config = {
@@ -45,14 +40,12 @@ export const clientProposalTask = task({
             analysisEndDate: payload.config.analysisEndDate
                 ? parseUserDateInput(payload.config.analysisEndDate)
                 : getTodayAsDateString(),
-            targetCoverage: payload.config.targetCoverage ??
-                autoProposalConfig.targetCoverage,
-            leadTime: payload.config.leadTime ??
-                autoProposalConfig.leadTime,
+            replenishmentThreshold: payload.config.replenishmentThreshold ??
+                autoProposalConfig.replenishmentThreshold,
             moqMinimum: payload.config.moqMinimum ??
                 autoProposalConfig.pricing.minimumOrderAmount,
             skipOdooQuoteGeneration: payload.config.skipOdooQuoteGeneration ??
-                false,
+                true,
             shouldGenerateReport: payload.config.shouldGenerateReport ??
                 true,
         };
@@ -66,21 +59,18 @@ export const clientProposalTask = task({
         };
         try {
             // Phase 1 & 2: Stock Analysis + Quantity Calculation
-            const stockStart = Date.now();
             const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
                 analysisWindowDays: config.analysisWindowDays,
                 analysisEndDate: config.analysisEndDate,
-                targetCoverage: config.targetCoverage,
-                leadTime: config.leadTime,
+                replenishmentThreshold: config.replenishmentThreshold,
             });
-            phaseTimings.stockAnalysis = Date.now() - stockStart;
             result.phases.stockAnalysis = stockAnalysis;
             // Vérifier si le client a des produits à commander
             const hasProducts = stockAnalysis.products.length > 0;
             result.hasRisk = hasProducts;
             result.productsCount = hasProducts ? stockAnalysis.products.length : 0;
-            // Définir le seuil de réapprovisionnement
-            const replenishmentThreshold = config.targetCoverage + config.leadTime;
+            // Seuil de réapprovisionnement (couverture + lead time)
+            const replenishmentThreshold = config.replenishmentThreshold;
             if (hasProducts) {
                 // Compter les produits urgents (daysUntilStockout <= 0)
                 result.urgentProductsCount = stockAnalysis.products.filter((p) => p.stock_prediction.days_until_stockout <= 0).length;
@@ -105,7 +95,6 @@ export const clientProposalTask = task({
                     currency: "EUR",
                     moq_adjustment_applied: false,
                 };
-            phaseTimings.proposalPreparation = Date.now() - proposalStart;
             result.phases.proposalFinal = proposalFinal;
             result.finalAmount = proposalFinal.total_amount;
             result.moqAdjustmentApplied = proposalFinal.moq_adjustment_applied;
@@ -119,9 +108,7 @@ export const clientProposalTask = task({
             }
             // Phase 3: Quote Generation (si pas en mode skip ET si produits à commander)
             if (!config.skipOdooQuoteGeneration && hasProducts) {
-                const quoteStart = Date.now();
                 const quote = await generateQuote(proposalFinal, odooClient);
-                phaseTimings.quoteGeneration = Date.now() - quoteStart;
                 result.phases.quote = quote;
                 result.quoteName = quote.quote_name;
                 result.quoteId = quote.quote_id;
@@ -131,14 +118,12 @@ export const clientProposalTask = task({
             // Générer le rapport client si shouldGenerateReport (même si hasRisk = false pour debug backtest)
             let reportMarkdown;
             let quoteMarkdown;
-            let reportPath;
             if (config.shouldGenerateReport) {
                 try {
                     const reportData = prepareClientReportData(result, {
                         ...config,
                         replenishmentThreshold,
                         // Add the missing fields from WorkflowConfig that prepareClientReportData expects
-                        inactivityDays: autoProposalConfig.inactivityDaysThreshold,
                         generateReports: autoProposalConfig.workflow.generateReports,
                         maxClientsToAnalyze: "all",
                         forceReanalysis: autoProposalConfig.workflow.forceReanalysis,
@@ -152,7 +137,7 @@ export const clientProposalTask = task({
                         const reportsOutputDir = path.join(process.cwd(), "reports-output");
                         await fs.mkdir(reportsOutputDir, { recursive: true });
                         const reportFileName = `client-${payload.client.id}-${payload.client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
-                        reportPath = path.join(reportsOutputDir, reportFileName);
+                        const reportPath = path.join(reportsOutputDir, reportFileName);
                         await fs.writeFile(reportPath, reportMarkdown, "utf-8");
                         console.log(`📝 Report generated: ${reportFileName}`);
                     }

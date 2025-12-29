@@ -15,7 +15,7 @@ import { task } from "@trigger.dev/sdk";
 import { clientProposalTask } from "./client-proposal.task";
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { compareSystemPredictionVsRealOrder } from "../features/backtesting/comparison.service";
-import { generateBacktestReport, generateBacktestReportJSON } from "../reports/backtest-report";
+import { generateBacktestReport, generateBacktestReportJSON, generateBacktestReportJSONv2 } from "../reports/backtest-report";
 import { calculateDateBefore } from "../utils/date.utils";
 import { autoProposalConfig } from "../config/auto-proposal";
 import * as fs from "fs/promises";
@@ -45,9 +45,29 @@ export const backtestClientTask = task({
         console.log(`\n🧪 BACKTEST STARTED - Client ${payload.clientId}`);
         console.log(`   Days before prediction: ${daysBeforePrediction}\n`);
         try {
-            // 1️⃣ Récupérer la dernière commande réelle
-            console.log("📊 Step 1/6: Fetching last validated order...");
-            const lastOrder = await odooClient.getLastClientOrder(payload.clientId);
+            // 1️⃣ Récupérer la commande à tester
+            console.log("📊 Step 1/6: Fetching order to test...");
+            let lastOrder;
+            if (payload.orderName) {
+                // Mode commande spécifique
+                console.log(`   Testing specific order: ${payload.orderName}`);
+                const orderData = await odooClient.getOrderByName(payload.orderName);
+                // Vérifier que la commande appartient bien au client
+                if (orderData.partner_id !== payload.clientId) {
+                    throw new Error(`Order ${payload.orderName} belongs to client ${orderData.partner_id} (${orderData.partner_name}), ` +
+                        `not to requested client ${payload.clientId}`);
+                }
+                lastOrder = orderData;
+            }
+            else if (payload.referenceDate) {
+                // Mode date de référence
+                console.log(`   Using reference date: ${payload.referenceDate}`);
+                lastOrder = await odooClient.getLastClientOrderBeforeDate(payload.clientId, payload.referenceDate);
+            }
+            else {
+                // Mode par défaut: dernière commande
+                lastOrder = await odooClient.getLastClientOrder(payload.clientId);
+            }
             console.log(`   ✅ Found order: ${lastOrder.name} (${lastOrder.date_order})\n`);
             // 2️⃣ Calculer la date de cutoff (time travel)
             console.log("📅 Step 2/6: Calculating cutoff date...");
@@ -68,8 +88,7 @@ export const backtestClientTask = task({
                     skipOdooQuoteGeneration: true,
                     shouldGenerateReport: true, // Générer le rapport client pour debug
                     analysisWindowDays: payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
-                    targetCoverage: payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage,
-                    leadTime: payload.config?.leadTime ?? autoProposalConfig.leadTime,
+                    replenishmentThreshold: payload.config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
                     moqMinimum: autoProposalConfig.pricing.minimumOrderAmount,
                 },
             });
@@ -196,8 +215,33 @@ export const backtestClientTask = task({
             const reportPathMdAll = path.join(reportsOutputDir, reportFileNameMdAll);
             await fs.writeFile(reportPathMdAll, reportMarkdownAll, "utf-8");
             console.log(`   ✅ Markdown ALL report saved: ${reportFileNameMdAll}`);
+            // === NOUVEAU: Génération du rapport JSON v2 enrichi ===
+            console.log("📝 Step 7/7: Generating backtest report JSON v2...");
+            const reportJSONv2 = generateBacktestReportJSONv2(comparison, // Tous les produits (pas de filtre low/clean)
+            systemResult.result.phases.stockAnalysis);
+            const reportFileNameJsonV2 = `backtest-client-${payload.clientId}-${lastOrder.name}-v2.json`;
+            const reportPathJsonV2 = path.join(reportsOutputDir, reportFileNameJsonV2);
+            await fs.writeFile(reportPathJsonV2, JSON.stringify(reportJSONv2, null, 2), "utf-8");
+            console.log(`   ✅ JSON v2 report saved: ${reportFileNameJsonV2}`);
             const executionTime = Date.now() - startTime;
             console.log(`✅ BACKTEST COMPLETED in ${(executionTime / 1000).toFixed(1)}s\n`);
+            // Extract LLM usage from stockAnalysis (if present)
+            console.log("🔍 DEBUG: Checking for LLM usage data...");
+            const stockAnalysis = systemResult.result.phases.stockAnalysis;
+            if (stockAnalysis) {
+                console.log("   stockAnalysis keys:", Object.keys(stockAnalysis));
+                console.log("   llm_usage value:", stockAnalysis.llm_usage);
+            }
+            else {
+                console.log("   ⚠️ stockAnalysis is undefined");
+            }
+            const llmUsage = stockAnalysis?.llm_usage;
+            if (llmUsage) {
+                console.log(`   🤖 LLM Usage: ${llmUsage.calls} calls, ${llmUsage.totalTokens} tokens\n`);
+            }
+            else {
+                console.log(`   ⚠️ No LLM usage data found\n`);
+            }
             return {
                 success: true,
                 clientId: payload.clientId,
@@ -213,7 +257,9 @@ export const backtestClientTask = task({
                     recall: comparisonClean.productMetrics.recall,
                     f1Score: comparisonClean.productMetrics.f1Score,
                     mae: comparisonClean.quantityMetrics.mae,
+                    wmape: comparisonClean.quantityMetrics.wmape,
                     mape: comparisonClean.quantityMetrics.mape,
+                    bias: comparisonClean.quantityMetrics.bias,
                 },
                 comparisonNoLow: {
                     truePositives: comparisonLow.truePositives.length,
@@ -223,7 +269,9 @@ export const backtestClientTask = task({
                     recall: comparisonLow.productMetrics.recall,
                     f1Score: comparisonLow.productMetrics.f1Score,
                     mae: comparisonLow.quantityMetrics.mae,
+                    wmape: comparisonLow.quantityMetrics.wmape,
                     mape: comparisonLow.quantityMetrics.mape,
+                    bias: comparisonLow.quantityMetrics.bias,
                 },
                 comparisonAll: {
                     truePositives: comparison.truePositives.length,
@@ -233,8 +281,11 @@ export const backtestClientTask = task({
                     recall: comparison.productMetrics.recall,
                     f1Score: comparison.productMetrics.f1Score,
                     mae: comparison.quantityMetrics.mae,
+                    wmape: comparison.quantityMetrics.wmape,
                     mape: comparison.quantityMetrics.mape,
+                    bias: comparison.quantityMetrics.bias,
                 },
+                llm_usage: llmUsage,
                 reportPath: reportPathMd, // Legacy: keep markdown path for backward compatibility
                 reportPaths: {
                     markdown: reportPathMd,

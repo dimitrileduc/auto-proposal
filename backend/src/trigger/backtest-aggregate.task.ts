@@ -63,8 +63,7 @@ export interface BacktestAggregatePayload {
   /** Configuration propagée à chaque backtest enfant (pour A/B testing) */
   config?: {
     analysisWindowDays?: number;  // Défaut: 120j (depuis autoProposalConfig)
-    targetCoverage?: number;      // Défaut: 25j (depuis autoProposalConfig)
-    leadTime?: number;            // Défaut: 5j (depuis autoProposalConfig)
+    replenishmentThreshold?: number;  // Défaut: 30j (depuis autoProposalConfig)
   };
 }
 

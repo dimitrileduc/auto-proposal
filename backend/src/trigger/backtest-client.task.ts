@@ -52,8 +52,7 @@ export interface BacktestClientTaskPayload {
   /** Configuration optionnelle pour A/B testing */
   config?: {
     analysisWindowDays?: number;
-    targetCoverage?: number;
-    leadTime?: number;
+    replenishmentThreshold?: number;
   };
 }
 
@@ -205,8 +204,7 @@ export const backtestClientTask = task({
           skipOdooQuoteGeneration: true,
           shouldGenerateReport: true, // Générer le rapport client pour debug
           analysisWindowDays: payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
-          targetCoverage: payload.config?.targetCoverage ?? autoProposalConfig.targetCoverage,
-          leadTime: payload.config?.leadTime ?? autoProposalConfig.leadTime,
+          replenishmentThreshold: payload.config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
           moqMinimum: autoProposalConfig.pricing.minimumOrderAmount,
         },
       });

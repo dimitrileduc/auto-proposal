@@ -17,11 +17,8 @@ export interface ClientProcessingConfig {
   /** Date de référence pour l'analyse d'historique (format: "YYYY-MM-DD HH:MM:SS"). Si non fournie, utilise aujourd'hui. */
   analysisEndDate?: string;
 
-  /** Jours de couverture souhaités (ex: 14 jours) */
-  targetCoverage: number;
-
-  /** Délai d'approvisionnement en jours (ex: 5 jours) */
-  leadTime: number;
+  /** Seuil de réapprovisionnement en jours (couverture + lead time) */
+  replenishmentThreshold: number;
 
   /** Montant minimum de commande en euros (MOQ) */
   moqMinimum: number;

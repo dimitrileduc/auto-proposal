@@ -16,7 +16,6 @@ export function generateGlobalReport(data) {
     sections.push(`**⏱️ Durée totale:** ${durationStr}`);
     sections.push(`**💰 MOQ configuré:** ${data.config.moqMinimum.toFixed(2)}€`);
     sections.push(`**📊 Seuil réappro:** ${data.config.replenishmentThreshold}j`);
-    sections.push(`**🎯 Couverture cible:** ${data.config.targetCoverageDays}j`);
     sections.push("");
     sections.push(separator());
     // Statistiques globales

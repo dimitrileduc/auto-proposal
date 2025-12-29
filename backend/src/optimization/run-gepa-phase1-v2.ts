@@ -57,9 +57,19 @@ interface MetricInput {
  *
  * Cette pondération force GEPA à prioriser le recall
  */
+let metricCallCount = 0;
 function recallPriorityMetric({ prediction, example }: MetricInput): number {
+  metricCallCount++;
+
+  // DEBUG: log les 5 premiers appels
+  if (metricCallCount <= 5) {
+    console.log(`[METRIC ${metricCallCount}] prediction:`, JSON.stringify(prediction));
+    console.log(`[METRIC ${metricCallCount}] example keys:`, Object.keys(example || {}));
+  }
+
   // Sécurité: si pas de prédiction valide
   if (prediction?.willOrder === undefined || prediction?.willOrder === null) {
+    if (metricCallCount <= 5) console.log(`[METRIC ${metricCallCount}] → willOrder undefined, score=0`);
     return 0;
   }
 

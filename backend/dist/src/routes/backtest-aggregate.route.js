@@ -22,8 +22,7 @@ const backtestAggregateRoute = new Hono();
  *   "daysBeforePrediction": 1,        // Optionnel, défaut: 1
  *   "config": {                       // Optionnel
  *     "analysisWindowDays": 120,
- *     "targetCoverage": 25,
- *     "leadTime": 5
+ *     "replenishmentThreshold": 30
  *   }
  * }
  *
