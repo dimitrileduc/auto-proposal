@@ -1,8 +1,11 @@
 /**
- * Générateur de rapport markdown pour les résultats de backtesting
+ * Generates detailed markdown and JSON reports for backtest comparison results
  *
- * Compare les prédictions du système auto-proposal avec les commandes réelles
- * et génère un rapport détaillé avec métriques et analyses
+ * Compares auto-proposal system predictions against actual historical orders
+ * and produces comprehensive reports with metrics analysis, LLM data enrichment,
+ * and confidence-based segmentation.
+ *
+ * @module reports/backtest-report
  */
 
 import type {
@@ -20,69 +23,103 @@ import { calculateProductMetrics, calculateQuantityMetrics } from "../features/b
 import { calculateMedian } from "../features/stock-replenishment/utils/median.utils";
 
 /**
- * Type interne pour les commandes historiques
+ * Historical order record from Odoo system
+ *
+ * Represents an individual order for a product with quantity and pricing information.
  */
 interface HistoricalOrder {
+  /** Order ID in Odoo system */
   order_id?: number;
+  /** Order name/reference in Odoo */
   order_name?: string;
+  /** ISO 8601 date string of order */
   date_order: string;
+  /** Quantity ordered */
   product_qty: number;
+  /** Unit price at time of order */
   price_unit?: number;
 }
 
 /**
- * Type pour le rapport agrégé v2
+ * Aggregated backtest report across multiple clients and orders
+ *
+ * Consolidates metrics from individual backtest reports to provide
+ * system-wide performance statistics segmented by confidence levels.
  */
 interface AggregatedReportV2 {
+  /** Report metadata and versioning */
   meta: {
+    /** Version number of report format */
     version: string;
+    /** Report type identifier */
     type: string;
+    /** ISO 8601 timestamp of generation */
     generatedAt: string;
+    /** Number of cases included */
     casesIncluded: number;
+    /** List of included client cases */
     cases: Array<{ clientId: number; orderName: string }>;
   };
+  /** Metrics segmented by prediction confidence level */
   metricsByConfidence: {
+    /** Metrics for low-confidence predictions (1 historical order) */
     low: MetricsByConfidence;
+    /** Metrics for medium-confidence predictions (2-5 historical orders) */
     medium: MetricsByConfidence;
+    /** Metrics for high-confidence predictions (5+ historical orders) */
     high: MetricsByConfidence;
   };
+  /** Per-client statistical aggregates across all metrics */
   byClient: {
+    /** Precision statistics: mean, median, stdDev, min, max across clients */
     precision: { mean: number; median: number; stdDev: number; min: number; max: number };
+    /** Recall statistics across clients */
     recall: { mean: number; median: number; stdDev: number; min: number; max: number };
+    /** F1-Score statistics across clients */
     f1Score: { mean: number; median: number; stdDev: number; min: number; max: number };
+    /** MAE (Mean Absolute Error) statistics across clients */
     mae: { mean: number; median: number; stdDev: number; min: number; max: number };
+    /** Weighted MAPE statistics across clients */
     wmape: { mean: number; median: number; stdDev: number; min: number; max: number };
+    /** MAPE statistics across clients */
     mape: { mean: number; median: number; stdDev: number; min: number; max: number };
+    /** Individual client metric details */
     clients: Array<{ clientId: number; metrics: Record<string, number> }>;
   };
+  /** Aggregated LLM API usage across all clients */
   llmUsage: {
+    /** Total number of LLM API calls */
     calls: number;
+    /** Total prompt tokens consumed */
     promptTokens: number;
+    /** Total completion tokens generated */
     completionTokens: number;
+    /** Total tokens (prompt + completion) */
     totalTokens: number;
   };
 }
 
 /**
- * Filtre les produits avec low confidence (1 seule commande) et recalcule les métriques
+ * Filters out low-confidence products and recalculates metrics
  *
- * @param comparison - Résultat complet de la comparaison système vs réalité
- * @returns Nouvelle comparaison sans les produits low confidence
+ * Removes products with only single historical order (low confidence),
+ * then recalculates all product-level and quantity-level metrics with
+ * the filtered dataset.
+ *
+ * @param comparison - Complete comparison result from system vs reality
+ * @returns New comparison result excluding low-confidence products
  */
 export function filterLowConfidence(
   comparison: BacktestComparisonResult
 ): BacktestComparisonResult {
-  // Filtrer les True Positives (garder seulement medium et high)
   const filteredTP = comparison.truePositives.filter(tp => tp.confidence !== 'low');
 
-  // Recalculer métriques produit
   const productMetrics = calculateProductMetrics(
     filteredTP.length,
     comparison.falsePositives.length,
     comparison.falseNegatives.length
   );
 
-  // Recalculer métriques quantité
   const quantityMetrics = calculateQuantityMetrics(filteredTP);
 
   return {
@@ -94,25 +131,26 @@ export function filterLowConfidence(
 }
 
 /**
- * Filtre pour garder UNIQUEMENT les produits avec low confidence (1 seule commande)
+ * Filters to keep only low-confidence products and recalculates metrics
  *
- * @param comparison - Résultat complet de la comparaison système vs réalité
- * @returns Nouvelle comparaison avec seulement les produits low confidence
+ * Retains only products with single historical order (low confidence),
+ * removing all medium and high confidence products, then recalculates
+ * all metrics with the filtered dataset.
+ *
+ * @param comparison - Complete comparison result from system vs reality
+ * @returns New comparison result containing only low-confidence products
  */
 export function filterOnlyLowConfidence(
   comparison: BacktestComparisonResult
 ): BacktestComparisonResult {
-  // Filtrer les True Positives (garder seulement low)
   const filteredTP = comparison.truePositives.filter(tp => tp.confidence === 'low');
 
-  // Recalculer métriques produit
   const productMetrics = calculateProductMetrics(
     filteredTP.length,
     comparison.falsePositives.length,
     comparison.falseNegatives.length
   );
 
-  // Recalculer métriques quantité
   const quantityMetrics = calculateQuantityMetrics(filteredTP);
 
   return {
@@ -124,7 +162,13 @@ export function filterOnlyLowConfidence(
 }
 
 /**
- * Génère la section des données d'input LLM pour tous les produits qui ont nécessité le LLM
+ * Generates markdown section with LLM input data for all products requiring LLM
+ *
+ * Creates collapsible details showing recent and year-ago order history
+ * for products that required LLM-based quantity prediction.
+ *
+ * @param truePositives - Array of correctly predicted products
+ * @returns Formatted markdown section, or empty string if no LLM data
  */
 function generateLLMInputDataSection(truePositives: ProductMatch[]): string {
   const productsWithLLMData = truePositives.filter(tp => tp.llm_input_data);
@@ -166,7 +210,14 @@ ${tp.llm_success
 }
 
 /**
- * Génère la section détaillée des prédictions LLM pour les True Positives
+ * Generates detailed markdown section with LLM prediction analysis
+ *
+ * Creates collapsible details for each LLM prediction including:
+ * quantity comparisons, confidence levels, LLM reasoning, temporal analysis,
+ * seasonality detection, and token usage statistics.
+ *
+ * @param truePositives - Array of correctly predicted products
+ * @returns Formatted markdown section, or empty string if no LLM predictions
  */
 function generateLLMDetailSection(truePositives: ProductMatch[]): string {
   const llmProducts = truePositives.filter(tp => tp.quantitySource === 'llm' && tp.llmPrediction);
@@ -241,10 +292,17 @@ ${tp.llmPrediction.provider_reasoning}
 }
 
 /**
- * Génère un rapport markdown détaillé du backtest
+ * Generates comprehensive markdown report of backtest results
  *
- * @param comparison - Résultat complet de la comparaison système vs réalité
- * @returns Rapport markdown formaté
+ * Creates detailed comparison report including:
+ * - Context: client, order, cutoff date, days before prediction
+ * - Global metrics: precision, recall, F1-score for product detection
+ * - Quantity metrics: MAE, MAPE, weighted MAPE for quantity accuracy
+ * - Product-level breakdown: true positives, false positives, false negatives
+ * - LLM analysis sections with confidence levels and reasoning
+ *
+ * @param comparison - Complete comparison result from system vs reality
+ * @returns Formatted markdown report string
  */
 export function generateBacktestReport(
   comparison: BacktestComparisonResult
@@ -470,7 +528,10 @@ ${comparison.falseNegatives.map(fn =>
 }
 
 /**
- * Emoji selon le type de match quantité
+ * Returns emoji representation for quantity match type
+ *
+ * @param matchType - Match type: 'exact' (zero error) or 'partial' (non-zero error)
+ * @returns Emoji character: '🎯' for exact, '✅' for partial
  */
 function getMatchTypeEmoji(matchType: 'exact' | 'partial'): string {
   switch (matchType) {
@@ -480,25 +541,40 @@ function getMatchTypeEmoji(matchType: 'exact' | 'partial'): string {
 }
 
 // ============================================================================
-// HELPERS POUR FORMAT JSON V2
+// HELPERS FOR JSON V2 FORMAT GENERATION
 // ============================================================================
 
 /**
- * Helpers mathématiques
+ * Calculates Root Mean Square Error for quantity predictions
+ *
+ * @param truePositives - Array of correctly predicted products
+ * @returns RMSE value (0 if no true positives)
  */
-
 function calculateRMSE(truePositives: ProductMatch[]): number {
   if (truePositives.length === 0) return 0;
   const sumSquaredErrors = truePositives.reduce((sum, tp) => sum + Math.pow(tp.absoluteError, 2), 0);
   return Math.sqrt(sumSquaredErrors / truePositives.length);
 }
 
+/**
+ * Calculates number of days between a date and reference date
+ *
+ * @param dateString - ISO 8601 date string
+ * @param referenceDate - Optional reference date (defaults to current date)
+ * @returns Number of days elapsed
+ */
 function calculateDaysAgo(dateString: string, referenceDate?: string): number {
   const date = new Date(dateString);
   const ref = referenceDate ? new Date(referenceDate) : new Date();
   return Math.floor((ref.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
 }
 
+/**
+ * Detects trend direction in quantity sequence using linear regression
+ *
+ * @param quantities - Array of quantity values
+ * @returns Trend direction: 'increasing', 'stable', or 'decreasing'
+ */
 function detectTrend(quantities: number[]): 'increasing' | 'stable' | 'decreasing' {
   if (quantities.length < 3) return 'stable';
 
@@ -518,6 +594,14 @@ function detectTrend(quantities: number[]): 'increasing' | 'stable' | 'decreasin
   return 'stable';
 }
 
+/**
+ * Detects seasonal patterns in order dates
+ *
+ * Identifies if orders recur in specific months, indicating seasonal demand.
+ *
+ * @param dates - Array of order dates
+ * @returns True if seasonality detected (2+ months with 2+ orders each)
+ */
 function detectSeasonality(dates: Date[]): boolean {
   if (dates.length < 4) return false;
 
@@ -531,6 +615,16 @@ function detectSeasonality(dates: Date[]): boolean {
   return recurringMonths.length >= 2;
 }
 
+/**
+ * Calculates order regularity score based on quantity and interval consistency
+ *
+ * Combines coefficient of variation (quantity consistency) with
+ * interval consistency (time between orders) to produce 0-1 score.
+ *
+ * @param orders - Array of historical orders
+ * @param cv - Coefficient of variation for quantities
+ * @returns Regularity score from 0 (irregular) to 1 (highly regular)
+ */
 function calculateRegularityScore(orders: HistoricalOrder[], cv: number): number {
   if (orders.length < 2) return 0;
 
@@ -556,9 +650,17 @@ function calculateRegularityScore(orders: HistoricalOrder[], cv: number): number
 }
 
 /**
- * Helpers de classification
+ * Classifies prediction error by direction, severity, and match type
+ *
+ * Categorizes quantity prediction errors to enable error analysis
+ * by over-prediction vs under-prediction and severity levels.
+ *
+ * @param predictedQty - Predicted quantity
+ * @param realQty - Actual quantity ordered
+ * @param absoluteError - Absolute difference |predicted - actual|
+ * @param errorPercent - Percentage error relative to actual
+ * @returns Classification with direction, severity, and match type
  */
-
 function classifyError(
   predictedQty: number,
   realQty: number,
@@ -582,6 +684,17 @@ function classifyError(
   return { direction, severity, matchType };
 }
 
+/**
+ * Classifies prediction mismatches (false positives/negatives) by category and severity
+ *
+ * Categorizes why predictions didn't match reality to enable root cause analysis
+ * and system improvement recommendations.
+ *
+ * @param mismatchType - Type of mismatch: false positive or false negative
+ * @param reason - String explanation of mismatch reason
+ * @param quantity - Quantity involved in mismatch
+ * @returns Classification with category and severity level
+ */
 function classifyMismatch(
   mismatchType: 'false_positive' | 'false_negative',
   reason: string,
@@ -609,9 +722,15 @@ function classifyMismatch(
 }
 
 /**
- * Helpers de statistiques
+ * Calculates comprehensive statistics for historical order quantities
+ *
+ * Computes mean, median, standard deviation, outliers, trend, and
+ * regularity score to characterize product ordering patterns.
+ *
+ * @param quantities - Array of historical order quantities
+ * @param orders - Array of historical orders (for timing analysis)
+ * @returns Statistics object with all computed metrics
  */
-
 function calculateHistoryStatistics(quantities: number[], orders: HistoricalOrder[]): HistoryStatistics {
   if (quantities.length === 0) {
     return {
@@ -650,9 +769,16 @@ function calculateHistoryStatistics(quantities: number[], orders: HistoricalOrde
 }
 
 /**
- * Helpers de features
+ * Calculates behavioral features of product ordering patterns
+ *
+ * Classifies products by quantity type (fixed/variable/highly_variable),
+ * ordering pattern (regular/irregular/seasonal), and recent activity.
+ *
+ * @param orders - Array of historical orders
+ * @param statistics - Pre-calculated statistics for quantities
+ * @param cutoffDate - Optional reference date for recency calculation
+ * @returns Features object characterizing product ordering behavior
  */
-
 function calculateProductFeatures(orders: HistoricalOrder[], statistics: HistoryStatistics, cutoffDate?: string): ProductFeatures {
   if (orders.length === 0) {
     return {
@@ -684,6 +810,17 @@ function calculateProductFeatures(orders: HistoricalOrder[], statistics: History
   return { quantityType, orderingPattern, avgDaysBetweenOrders, lastOrderDaysAgo, isSeasonalProduct, hasRecentActivity };
 }
 
+/**
+ * Enriches product match data with historical analysis and feature classification
+ *
+ * Calculates order history, statistics, and behavioral features for a product
+ * to provide comprehensive enrichment for JSON report generation.
+ *
+ * @param product - Product prediction match
+ * @param analyzedProduct - Analyzed product with order history (optional)
+ * @param cutoffDate - Optional reference date for analysis
+ * @returns Enriched product data with history, statistics, and features
+ */
 function enrichProductWithFeatures(
   product: ProductMatch,
   analyzedProduct?: ProductStockStatus,
@@ -714,9 +851,15 @@ function enrichProductWithFeatures(
 }
 
 /**
- * Helpers de métriques par confidence
+ * Calculates metrics for products at a specific confidence level
+ *
+ * Filters comparison results by confidence and computes product-level
+ * and quantity-level metrics for that subset.
+ *
+ * @param comparison - Complete comparison result
+ * @param confidenceLevel - Confidence level to filter: 'low', 'medium', or 'high'
+ * @returns Metrics object for the confidence level subset
  */
-
 function calculateMetricsForConfidenceLevel(
   comparison: BacktestComparisonResult,
   confidenceLevel: 'low' | 'medium' | 'high'
@@ -747,6 +890,15 @@ function calculateMetricsForConfidenceLevel(
   };
 }
 
+/**
+ * Calculates segmented metrics broken down by all confidence levels
+ *
+ * Computes overall metrics and metrics for each confidence level
+ * (low, medium, high) to enable granular performance analysis.
+ *
+ * @param comparison - Complete comparison result
+ * @returns Metrics object with global and per-confidence segmentation
+ */
 function calculateMetricsByConfidence(comparison: BacktestComparisonResult): {
   all: MetricsByConfidence;
   byConfidence: {
@@ -781,17 +933,22 @@ function calculateMetricsByConfidence(comparison: BacktestComparisonResult): {
 }
 
 // ============================================================================
-// FIN HELPERS V2
+// MAIN EXPORTED JSON V2 REPORT GENERATORS
 // ============================================================================
 
 /**
- * Génère un rapport JSON v2 enrichi pour analyse statistique avancée
+ * Generates comprehensive JSON v2 report with enriched product details
  *
- * Format complet avec détails produits, historique, features, LLM data
+ * Creates detailed structured report including:
+ * - Metadata: version, generation timestamp, configuration
+ * - Client and order information
+ * - Segmented metrics by confidence level (low/medium/high)
+ * - Enriched product details: history, statistics, features, LLM data
+ * - LLM usage aggregation
  *
- * @param comparison - Résultat complet de la comparaison système vs réalité
- * @param stockAnalysis - Résultat de l'analyse de stock (contient historique produits)
- * @returns Rapport JSON v2 enrichi avec métriques segmentées et détails produits
+ * @param comparison - Complete comparison result from system vs reality
+ * @param stockAnalysis - Stock analysis result containing product history
+ * @returns JSON v2 report with full enrichment and metric segmentation
  */
 export function generateBacktestReportJSONv2(
   comparison: BacktestComparisonResult,
@@ -1114,10 +1271,17 @@ export function generateBacktestReportJSONv2(
 }
 
 /**
- * Agrège les rapports v2 individuels pour une vue globale
+ * Aggregates multiple individual JSON v2 reports into consolidated summary
  *
- * @param reportsV2 - Liste des rapports v2 à agréger
- * @returns Rapport agrégé v2 avec métriques consolidées
+ * Consolidates client-level backtest reports to compute system-wide metrics:
+ * - Total true/false positives/negatives across all clients
+ * - Per-confidence level metric aggregation
+ * - Per-client statistical summaries (mean, median, stdDev, min, max)
+ * - Aggregated LLM API usage
+ *
+ * @param reportsV2 - Array of individual backtest JSON v2 reports to aggregate
+ * @returns Aggregated report with system-wide metrics and client statistics
+ * @throws Error if array is empty
  */
 export function generateAggregatedReportV2(
   reportsV2: BacktestReportJSONv2[]
@@ -1344,10 +1508,13 @@ export function generateAggregatedReportV2(
 }
 
 /**
- * Génère un rapport JSON compact du backtest pour analyse statistique
+ * Generates compact JSON report with essential backtest metrics
  *
- * @param comparison - Résultat complet de la comparaison système vs réalité
- * @returns Objet JSON avec métriques clés uniquement
+ * Produces lightweight JSON format suitable for statistical analysis,
+ * containing only key performance metrics without product enrichment.
+ *
+ * @param comparison - Complete comparison result from system vs reality
+ * @returns Compact JSON object with client info and core metrics
  */
 export function generateBacktestReportJSON(
   comparison: BacktestComparisonResult
@@ -1380,13 +1547,17 @@ export function generateBacktestReportJSON(
 }
 
 /**
- * Génère un rapport summary Markdown à partir des rapports v2 individuels
+ * Generates executive summary markdown from aggregated backtest reports
  *
- * Segmentation:
- * - Produits de Base: >= 2 commandes historiques (confidence medium + high)
- * - Produits Optionnels: 1 commande historique (confidence low)
+ * Creates high-level summary segmenting products by confidence levels:
+ * - Base Products: 2+ historical orders (medium/high confidence)
+ * - Optional Products: 1 historical order (low confidence)
  *
- * Métriques: Médianes par client pour Base, Moyennes pour Optionnel
+ * Metrics reported: median recall/precision for base, mean for optional,
+ * with product volume percentages and WMAPE accuracy.
+ *
+ * @param reportsV2 - Array of individual backtest JSON v2 reports
+ * @returns Formatted markdown summary with performance analysis and recommendations
  */
 export function generateSummaryMarkdown(reportsV2: BacktestReportJSONv2[]): string {
   if (reportsV2.length === 0) {

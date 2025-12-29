@@ -1,129 +1,177 @@
+/**
+ * Report types for global workflow and client proposal results
+ *
+ * @module reports/types
+ */
+
 import type { StockReplenishmentResult } from "../features/stock-replenishment/stock-replenishment.types";
 import type { ProposalPreparationResult } from "../features/proposal-preparation/proposal-preparation.types";
 import type { QuoteCreationResult } from "../features/proposal-generation/proposal-generation.types";
 
 /**
- * Statistiques calculées pour le workflow global
+ * Global workflow statistics aggregated across all processed clients
  */
 export interface GlobalWorkflowStatistics {
-  // Phase 0: Clients inactifs
+  /** Phase 0: Total inactive clients identified */
   totalInactiveClients: number;
-  clientsAnalyzed: number; // Nombre de clients pour lesquels Phase 1 a été effectuée
+  /** Clients analyzed in Phase 1 */
+  clientsAnalyzed: number;
 
-  // Phase 1: Analyse historique (calculé à partir des clientResults)
+  /** Phase 1: Clients with order history */
   clientsWithOrderHistory: number;
+  /** Clients without order history */
   clientsWithoutOrderHistory: number;
+  /** Percentage of clients with order history */
   percentWithHistory: number;
 
-  // Phase 2: Risque de rupture (calculé à partir des clientResults)
+  /** Phase 2: Clients with replenishment risk */
   clientsWithRisk: number;
-  clientsWithoutRisk: number; // Ont historique mais stock OK
-  percentWithRisk: number; // Sur ceux qui ont historique
+  /** Clients with history but no stock risk */
+  clientsWithoutRisk: number;
+  /** Percentage with risk among clients with history */
+  percentWithRisk: number;
 
-  // Produits
+  /** Total products across all clients with risk */
   totalProducts: number;
-  averageProductsPerClient: number; // Pour clients avec risque
+  /** Average products per client with risk */
+  averageProductsPerClient: number;
 
-  // Valeur
+  /** Total proposal value across all clients */
   totalValue: number;
 
-  // Devis (Phase 3)
+  /** Phase 3: Quotes generated in Odoo */
   quotesGenerated: number;
 
-  // Erreurs
+  /** Number of clients that failed processing */
   clientsFailed: number;
 }
 
 /**
- * Options runtime pour le workflow (override config)
- * Tous les paramètres peuvent être overridés depuis le payload (e.g. Trigger.dev)
+ * Runtime options for workflow execution
+ *
+ * All parameters override the default config from auto-proposal.ts.
+ * Can be set via Trigger.dev payload.
  */
 export interface WorkflowOptions {
-  // Paramètres d'analyse
-  inactivityDays?: number; // Seuil d'inactivité en jours
-  analysisWindowDays?: number; // Fenêtre d'analyse historique en jours
-  replenishmentThreshold?: number; // Seuil de réapprovisionnement en jours
-  moqMinimum?: number; // Montant minimum de commande (MOQ)
+  /** Inactivity threshold in days */
+  inactivityDays?: number;
+  /** Replenishment threshold in days */
+  replenishmentThreshold?: number;
+  /** Minimum order amount (MOQ) */
+  moqMinimum?: number;
 
-  // Paramètres de workflow
-  maxClientsToAnalyze?: number | "all"; // Debug: limite le nombre total de clients à analyser (Phase 1)
-  generateReports?: boolean; // Si true, génère les rapports markdown pour tous les clients avec risk
-  skipOdooQuoteGeneration?: boolean; // Si true, ne crée pas les devis dans Odoo (mode test)
-  forceReanalysis?: boolean; // Si true, force la réanalyse de tous les clients inactifs, même ceux ayant déjà des devis auto-proposal
+  /** Max number of clients to analyze (for debugging) or "all" */
+  maxClientsToAnalyze?: number | "all";
+  /** Generate markdown reports for all clients with risk */
+  generateReports?: boolean;
+  /** Skip Odoo quote generation (test mode) */
+  skipOdooQuoteGeneration?: boolean;
+  /** Force reanalysis of all inactive clients */
+  forceReanalysis?: boolean;
 }
 
 /**
- * Configuration complète du workflow (depuis config + options runtime)
+ * Complete workflow configuration
+ *
+ * Combines default config with runtime overrides.
  */
 export interface WorkflowConfig {
-  // Depuis auto-proposal.ts config
+  /** Inactivity threshold in days */
   inactivityDays: number;
-  analysisWindowDays: number;
-  replenishmentThreshold: number; // Seuil de réapprovisionnement (couverture + lead time)
+  /** Replenishment threshold (coverage + lead time) in days */
+  replenishmentThreshold: number;
+  /** Minimum order amount */
   moqMinimum: number;
-  // Runtime overrides
+  /** Max clients to analyze or "all" */
   maxClientsToAnalyze: number | "all";
+  /** Generate reports for clients */
   generateReports: boolean;
+  /** Skip Odoo quote generation */
   skipOdooQuoteGeneration: boolean;
+  /** Force reanalysis of inactive clients */
   forceReanalysis: boolean;
 }
 
 /**
- * Résultat du workflow global (tous les clients)
+ * Complete workflow result across all clients
  */
 export interface WorkflowResult {
+  /** Execution success status */
   success: boolean;
+  /** Workflow configuration used */
   config: WorkflowConfig;
 
-  // Statistiques calculées
+  /** Aggregated statistics */
   statistics: GlobalWorkflowStatistics;
 
-  // Données brutes
+  /** Individual results for each client */
   clientResults: ClientProposalResult[];
+  /** List of all inactive clients identified */
   allInactiveClients: Array<{ id: number; name: string; email: string | null }>;
 
-  // Données préparées pour rapports clients
+  /** Prepared data for generating client reports */
   clientReportData: ClientReportData[];
 
+  /** Path to generated global report */
   reportPath: string;
-  executionTime: number; // ms
+  /** Execution time in milliseconds */
+  executionTime: number;
 }
 
 /**
- * Résultat du traitement d'un client
+ * Result of processing a single client
  */
 export interface ClientProposalResult {
+  /** Client ID */
   clientId: number;
+  /** Client name */
   clientName: string;
+  /** Client email */
   clientEmail?: string;
+  /** Processing success status */
   success: boolean;
-  hasRisk: boolean; // true si des produits nécessitent réappro
+  /** Whether client has stock replenishment risk */
+  hasRisk: boolean;
+  /** Processing phases and results */
   phases: {
     stockAnalysis?: StockReplenishmentResult;
     proposalInitial?: ProposalPreparationResult;
     proposalFinal?: ProposalPreparationResult;
     quote?: QuoteCreationResult;
   };
-  // Stats pour le tableau global
+  /** Number of products with replenishment risk */
   productsCount?: number;
-  initialAmount?: number; // Avant MOQ
-  finalAmount?: number; // Après MOQ
+  /** Proposal value before MOQ adjustment */
+  initialAmount?: number;
+  /** Proposal value after MOQ adjustment */
+  finalAmount?: number;
+  /** Whether MOQ adjustment was applied */
   moqAdjustmentApplied?: boolean;
+  /** Amount filled to meet MOQ */
   moqGapFilled?: number;
+  /** Generated quote name in Odoo */
   quoteName?: string;
+  /** Generated quote ID in Odoo */
   quoteId?: number;
+  /** Path to generated report */
   reportPath?: string;
-  reportMarkdown?: string; // Contenu markdown du rapport complet
-  quoteMarkdown?: string; // Contenu markdown du devis seul
+  /** Full markdown report content */
+  reportMarkdown?: string;
+  /** Quote markdown content */
+  quoteMarkdown?: string;
+  /** Error message if processing failed */
   error?: string;
-  executionTime?: number; // ms
+  /** Execution time in milliseconds */
+  executionTime?: number;
 }
 
 /**
- * Données pour la génération du rapport global
+ * Data for generating global workflow report
  */
 export interface GlobalReportData {
+  /** Workflow configuration */
   config: WorkflowConfig;
+  /** Aggregated statistics */
   stats: {
     executionDate: string;
     totalInactiveClients: number;
@@ -136,55 +184,78 @@ export interface GlobalReportData {
     totalValue: number;
     executionTime: number;
   };
+  /** Client summary rows for report table */
   clients: ClientTableRow[];
+  /** Processing errors by client */
   errors: ClientError[];
 }
 
 /**
- * Ligne du tableau clients dans le rapport global
+ * Client row in global report table
  */
 export interface ClientTableRow {
+  /** Client name */
   clientName: string;
+  /** Client ID */
   clientId: number;
+  /** Number of products with risk */
   productsCount: number;
+  /** Risk level classification */
   riskLevel: "urgent" | "moderate" | "ok";
+  /** Proposal value before MOQ adjustment */
   initialAmount: number;
+  /** Proposal value after MOQ adjustment */
   finalAmount: number;
+  /** Whether MOQ adjustment was applied */
   moqAdjusted: boolean;
+  /** Amount to fill MOQ gap */
   moqGap?: number;
+  /** Quote name in Odoo */
   quoteName?: string;
+  /** Processing status */
   status: "success" | "error";
+  /** Path to client report */
   reportPath: string;
 }
 
 /**
- * Erreur client pour le rapport global
+ * Client processing error in global report
  */
 export interface ClientError {
+  /** Client ID */
   clientId: number;
+  /** Client name */
   clientName: string;
+  /** Phase where error occurred */
   phase: "stock-analysis" | "proposal-preparation" | "quote-generation";
+  /** Error message */
   error: string;
 }
 
 /**
- * Données pour la génération du rapport client
+ * Data for generating individual client report
  */
 export interface ClientReportData {
+  /** Client information */
   client: {
     id: number;
     name: string;
     email?: string;
   };
+  /** Workflow configuration */
   config: WorkflowConfig;
+  /** Report generation date */
   executionDate: string;
+  /** Total execution time in milliseconds */
   executionTime: number;
+  /** Processing phases and results */
   phases: {
     stockAnalysis: StockReplenishmentResult;
     proposalInitial: ProposalPreparationResult;
     proposalFinal: ProposalPreparationResult;
     quote?: QuoteCreationResult;
   };
+  /** Summary statistics */
   summary: {
     productsCount: number;
     initialAmount: number;
@@ -195,12 +266,14 @@ export interface ClientReportData {
     quoteId?: number;
     quoteState?: string;
   };
+  /** Client's recent order history */
   orderHistory?: {
     date: string;
     orderName: string;
     productsCount: number;
     amountHT: number;
   }[];
+  /** Timing for each processing phase */
   phaseTiming: {
     stockAnalysis: number;
     proposalPreparation: number;

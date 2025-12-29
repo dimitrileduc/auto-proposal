@@ -1,45 +1,42 @@
+/**
+ * Client processing types for the proposal workflow
+ * @module shared/types/client
+ */
 import type { InactiveClient } from "../../features/client-inactivity/inactivity.types";
 
 /**
- * Configuration pour traiter UN client
+ * Configuration for processing a single client
  *
- * Utilisé par:
- * - client-proposal.workflow.ts
- * - client-proposal.task.ts
- *
- * Cette config contient uniquement les paramètres nécessaires
- * pour traiter un client individuel (phases 1, 2.5, 3).
+ * Used by client-proposal workflow and task.
+ * Contains parameters for individual client processing (phases 1, 2.5, 3).
  */
 export interface ClientProcessingConfig {
-  /** Nombre de jours d'historique à analyser (ex: 180 = 6 mois) */
-  analysisWindowDays: number;
-
-  /** Date de référence pour l'analyse d'historique (format: "YYYY-MM-DD HH:MM:SS"). Si non fournie, utilise aujourd'hui. */
+  /** Reference date for history analysis (format: "YYYY-MM-DD HH:MM:SS", defaults to today) */
   analysisEndDate?: string;
 
-  /** Seuil de réapprovisionnement en jours (couverture + lead time) */
+  /** Replenishment threshold in days (coverage + lead time) */
   replenishmentThreshold: number;
 
-  /** Montant minimum de commande en euros (MOQ) */
+  /** Minimum order amount in euros (MOQ) */
   moqMinimum: number;
 
-  /** Si true, skip la création du devis Odoo (Phase 3) */
+  /** Skip Odoo quote creation (Phase 3) */
   skipOdooQuoteGeneration: boolean;
 
-  /** Si true, génère les rapports markdown pour les clients avec risk. Default: true */
+  /** Generate markdown reports for at-risk clients (default: true) */
   shouldGenerateReport?: boolean;
 }
 
 /**
- * Payload pour la task Trigger.dev "client-proposal"
+ * Payload for the "client-proposal" Trigger.dev task
  *
- * Cette task traite un client individuel et exécute
- * le workflow complet (ou partiel si skipOdooQuoteGeneration=true)
+ * Processes a single client through the complete workflow
+ * (or partial if skipOdooQuoteGeneration=true)
  */
 export interface ClientTaskPayload {
-  /** Client à traiter */
+  /** Client to process */
   client: InactiveClient;
 
-  /** Configuration de traitement */
+  /** Processing configuration */
   config: ClientProcessingConfig;
 }

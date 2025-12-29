@@ -1,12 +1,27 @@
+/**
+ * Calculates global workflow statistics
+ *
+ * Aggregates results across all clients to compute summary statistics including
+ * client counts by phase, product counts, and proposal values.
+ *
+ * @module reports/statistics
+ */
+
 import type { ClientProposalResult, GlobalWorkflowStatistics } from "./types";
 import type { InactiveClient } from "../features/client-inactivity/inactivity.types";
 
 /**
- * Calcule les statistiques globales du workflow
+ * Calculates aggregated global workflow statistics
  *
- * @param allInactiveClients - Tous les clients inactifs (Phase 0)
- * @param clientResults - Résultats du traitement par client
- * @returns Statistiques calculées
+ * Processes all client results to compute phase-by-phase metrics:
+ * - Phase 0: Total inactive clients identified
+ * - Phase 1: Clients analyzed with order history
+ * - Phase 2: Clients with stock replenishment risk
+ * - Phase 3: Successful quote generation
+ *
+ * @param allInactiveClients - All inactive clients identified in Phase 0
+ * @param clientResults - Workflow processing results for each client
+ * @returns Calculated global workflow statistics
  */
 export function calculateGlobalWorkflowStatistics(
   allInactiveClients: InactiveClient[],
@@ -14,22 +29,15 @@ export function calculateGlobalWorkflowStatistics(
 ): GlobalWorkflowStatistics {
   const totalInactiveClients = allInactiveClients.length;
 
-  // Nombre de clients analysés (Phase 1 effectuée)
   const clientsAnalyzed = clientResults.length;
 
-  // Séparer les clients selon leur statut
   const clientsWithRisk = clientResults.filter(r => r.success && r.hasRisk);
   const clientsFailed = clientResults.filter(r => !r.success);
 
-  // Un client a un historique de commande SI:
-  // - phases.stockAnalysis.total_products_in_history > 0
-  // Cela indique qu'il a commandé des produits dans les x derniers jours
   const clientsWithOrderHistory = clientResults.filter(
     r => r.success && r.phases.stockAnalysis && r.phases.stockAnalysis.total_products_in_history > 0
   ).length;
 
-  // Clients avec historique MAIS sans risque de rupture
-  // = ceux qui ont un historique MAIS hasRisk === false
   const clientsWithoutRisk = clientResults.filter(
     r => r.success && r.phases.stockAnalysis && r.phases.stockAnalysis.total_products_in_history > 0 && !r.hasRisk
   ).length;
@@ -44,7 +52,6 @@ export function calculateGlobalWorkflowStatistics(
     ? (clientsWithRisk.length / clientsWithOrderHistory) * 100
     : 0;
 
-  // Calculer produits et valeur
   const totalProducts = clientsWithRisk.reduce((sum, r) => sum + (r.productsCount ?? 0), 0);
   const totalValue = clientsWithRisk.reduce((sum, r) => sum + (r.finalAmount ?? 0), 0);
 

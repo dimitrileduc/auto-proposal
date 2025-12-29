@@ -1,5 +1,10 @@
 /**
- * Transformation des résultats client en données pour les rapports
+ * Transforms client proposal results into report data structures
+ *
+ * Prepares raw workflow results (ClientProposalResult) into structured report data
+ * (ClientReportData) for markdown and JSON report generation.
+ *
+ * @module reports/data-preparation
  */
 import type {
   ClientProposalResult,
@@ -8,26 +13,25 @@ import type {
 } from "./types";
 
 /**
- * Prépare les données pour le rapport d'un client
+ * Prepares client report data from workflow result
  *
- * Transforme ClientProposalResult (données brutes du workflow)
- * en ClientReportData (données structurées pour le rapport)
+ * Transforms raw workflow results (ClientProposalResult) into structured report data
+ * (ClientReportData) for report generation.
  *
- * @param clientResult - Résultat du workflow pour un client
- * @param config - Configuration du workflow
- * @returns Données formatées pour le rapport client
+ * Only generates report data if processing succeeded and required phases are present.
+ *
+ * @param clientResult - Workflow result for the client
+ * @param config - Workflow configuration
+ * @returns Formatted report data, or null if insufficient data
  */
 export function prepareClientReportData(
   clientResult: ClientProposalResult,
   config: WorkflowConfig
 ): ClientReportData | null {
-  // Ne générer un rapport que si le traitement a réussi
-  // (hasRisk n'est plus une condition - utile pour le backtest où on veut voir pourquoi hasRisk=false)
   if (!clientResult.success) {
     return null;
   }
 
-  // Vérifier que les phases requises sont présentes
   if (!clientResult.phases.stockAnalysis || !clientResult.phases.proposalFinal) {
     return null;
   }
@@ -43,7 +47,7 @@ export function prepareClientReportData(
     executionTime: clientResult.executionTime ?? 0,
     phases: {
       stockAnalysis: clientResult.phases.stockAnalysis,
-      proposalInitial: clientResult.phases.proposalFinal, // Pas de proposalInitial dans le workflow actuel
+      proposalInitial: clientResult.phases.proposalFinal,
       proposalFinal: clientResult.phases.proposalFinal,
       quote: clientResult.phases.quote,
     },
@@ -57,10 +61,9 @@ export function prepareClientReportData(
       quoteId: clientResult.quoteId,
       quoteState: clientResult.phases.quote?.quote_state,
     },
-    // TODO: Ajouter orderHistory si nécessaire
     orderHistory: [],
     phaseTiming: {
-      stockAnalysis: 0, // TODO: Ajouter timing dans ClientProposalResult
+      stockAnalysis: 0,
       proposalPreparation: 0,
       quoteGeneration: 0,
     },
@@ -68,11 +71,14 @@ export function prepareClientReportData(
 }
 
 /**
- * Prépare les données pour les rapports de tous les clients avec risque
+ * Prepares report data for all clients from workflow results
  *
- * @param clientResults - Tous les résultats du workflow
- * @param config - Configuration du workflow
- * @returns Liste des données de rapport pour chaque client avec risque
+ * Transforms all ClientProposalResult entries into ClientReportData structures,
+ * filtering out any entries with insufficient data.
+ *
+ * @param clientResults - All workflow results for clients
+ * @param config - Workflow configuration
+ * @returns Array of formatted report data for all clients with sufficient data
  */
 export function prepareAllClientReportData(
   clientResults: ClientProposalResult[],

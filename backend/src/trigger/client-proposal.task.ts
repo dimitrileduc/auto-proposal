@@ -5,8 +5,8 @@ import { generateQuote } from "../features/proposal-generation/proposal-generati
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
 import { getTodayAsDateString, parseUserDateInput } from "../utils/date.utils";
-import { prepareClientReportData } from "../reports/data-preparation";
-import { generateClientReport, generateQuoteReport } from "../reports/client-report";
+import { generateClientReportJSON } from "../reports/client-report-json";
+import { generateClientReportMarkdown } from "../reports/client-report-md";
 import * as fs from "fs/promises";
 import * as path from "path";
 import type { ClientTaskPayload, ClientProcessingConfig } from "../shared/types";
@@ -15,7 +15,7 @@ import type { ClientProposalResult } from "../reports/types";
 const odooClient = createOdooClient(autoProposalConfig.odooApiType);
 
 /**
- * Résultat complet de la tâche client-proposal
+ * Complete result of the client-proposal task
  */
 export interface ClientProposalTaskResult {
   client: {
@@ -33,43 +33,42 @@ export interface ClientProposalTaskResult {
     quoteId?: number;
   };
   report: {
-    complete?: string;  // Le rapport markdown complet
-    quote?: string;  // Le rapport markdown du devis seul
+    /** Business markdown report */
+    markdown?: string;
+    /** Structured JSON report */
+    json?: string;
   };
   executionTime: number;
 }
 
 /**
- * Tâche Trigger.dev pour traiter la proposition automatique d'un client individuel
+ * Trigger.dev task for processing automatic proposals for individual clients
  *
- * Cette tâche exécute le workflow complet pour un client:
+ * Executes the complete workflow for a single client:
  * - Phase 1 & 2: Stock Analysis + Quantity Calculation
  * - Phase 2.5: Proposal Preparation (Pricing + MOQ)
- * - Phase 3: Quote Generation (si !skipQuoteGeneration)
- * - Génération du rapport markdown automatique si hasRisk
+ * - Phase 3: Quote Generation (if !skipQuoteGeneration)
+ * - Report generation when hasRisk=true
  *
- * La configuration utilise autoProposalConfig comme fallback pour tous les paramètres
+ * Uses autoProposalConfig as fallback for all parameters.
+ *
+ * @module trigger/client-proposal
  */
 export const clientProposalTask = task({
   id: "client-proposal",
   retry: {
-    maxAttempts: 3,        // Maximum 3 tentatives (1 + 2 retry)
-    factor: 2,             // Délai double entre chaque retry
-    minTimeoutInMs: 1000,  // Attendre minimum 1 seconde
-    maxTimeoutInMs: 30000, // Maximum 30 secondes d'attente
-    randomize: true,       // Ajoute ±25% d'aléatoire au délai
+    maxAttempts: 3,
+    factor: 2,
+    minTimeoutInMs: 1000,
+    maxTimeoutInMs: 30000,
+    randomize: true,
   },
   run: async (payload: ClientTaskPayload): Promise<ClientProposalTaskResult> => {
     const startTime = Date.now();
 
-    console.log(`📊 Processing client: ${payload.client.name} (ID: ${payload.client.id})`);
+    console.log(`Processing client: ${payload.client.name} (ID: ${payload.client.id})`);
 
-    // Utilise autoProposalConfig comme configuration par défaut avec overrides depuis le payload
     const config: ClientProcessingConfig = {
-      analysisWindowDays:
-        payload.config.analysisWindowDays ??
-        autoProposalConfig.analysisWindowDays,
-
       analysisEndDate: payload.config.analysisEndDate
         ? parseUserDateInput(payload.config.analysisEndDate)
         : getTodayAsDateString(),
@@ -101,29 +100,17 @@ export const clientProposalTask = task({
     };
 
     try {
-      // Phase 1 & 2: Stock Analysis + Quantity Calculation
       const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
-        analysisWindowDays: config.analysisWindowDays,
         analysisEndDate: config.analysisEndDate,
         replenishmentThreshold: config.replenishmentThreshold,
       });
 
       result.phases.stockAnalysis = stockAnalysis;
 
-      // Vérifier si le client a des produits à commander
       const hasProducts = stockAnalysis.products.length > 0;
       result.hasRisk = hasProducts;
       result.productsCount = hasProducts ? stockAnalysis.products.length : 0;
 
-      if (hasProducts) {
-        console.log(`📊 Client ${payload.client.name}: ${result.productsCount} products at risk`);
-      } else {
-        console.log(`✅ Client ${payload.client.name}: No replenishment needed`);
-      }
-
-      // Phase 2.5: Proposal Preparation (Pricing + MOQ)
-      // Créer un proposalFinal même si products.length === 0 pour la génération de rapport
-      const proposalStart = Date.now();
       const proposalFinal = hasProducts
         ? prepareProposal(
             stockAnalysis,
@@ -150,7 +137,6 @@ export const clientProposalTask = task({
         result.moqGapFilled = 0;
       }
 
-      // Phase 3: Quote Generation (si pas en mode skip ET si produits à commander)
       if (!config.skipOdooQuoteGeneration && hasProducts) {
         const quote = await generateQuote(proposalFinal, odooClient);
 
@@ -162,53 +148,43 @@ export const clientProposalTask = task({
       result.success = true;
       result.executionTime = Date.now() - startTime;
 
-      // Générer le rapport client si shouldGenerateReport (même si hasRisk = false pour debug backtest)
       let reportMarkdown: string | undefined;
-      let quoteMarkdown: string | undefined;
+      let reportJSON: string | undefined;
 
       if (config.shouldGenerateReport) {
         try {
-          const reportData = prepareClientReportData(result, {
-            ...config,
-            // Add the missing fields from WorkflowConfig that prepareClientReportData expects
-            generateReports: autoProposalConfig.workflow.generateReports,
-            maxClientsToAnalyze: "all",
-            forceReanalysis: autoProposalConfig.workflow.forceReanalysis,
+          const jsonData = generateClientReportJSON(result, {
+            analysisEndDate: config.analysisEndDate,
+            replenishmentThreshold: config.replenishmentThreshold,
+            moqMinimum: config.moqMinimum,
+            skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
           });
 
-          if (reportData) {
-            // Générer le rapport complet
-            reportMarkdown = generateClientReport(reportData);
+          reportMarkdown = generateClientReportMarkdown(jsonData);
+          reportJSON = JSON.stringify(jsonData, null, 2);
 
-            // Générer le rapport devis seul (si quote existe)
-            quoteMarkdown = generateQuoteReport(reportData);
+          const reportsOutputDir = path.join(process.cwd(), "reports-output");
+          await fs.mkdir(reportsOutputDir, { recursive: true });
 
-            // Sauvegarder le rapport complet sur disque
-            const reportsOutputDir = path.join(process.cwd(), "reports-output");
-            await fs.mkdir(reportsOutputDir, { recursive: true });
+          const clientSlug = payload.client.name.replace(/[^a-zA-Z0-9-]/g, "-");
+          const mdFileName = `client-${payload.client.id}-${clientSlug}.md`;
+          const jsonFileName = `client-${payload.client.id}-${clientSlug}.json`;
 
-            const reportFileName = `client-${payload.client.id}-${payload.client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
-            const reportPath = path.join(reportsOutputDir, reportFileName);
-            await fs.writeFile(reportPath, reportMarkdown, "utf-8");
-
-            console.log(`📝 Report generated: ${reportFileName}`);
-          }
+          await fs.writeFile(
+            path.join(reportsOutputDir, mdFileName),
+            reportMarkdown,
+            "utf-8"
+          );
+          await fs.writeFile(
+            path.join(reportsOutputDir, jsonFileName),
+            reportJSON,
+            "utf-8"
+          );
         } catch (error) {
           console.error(`Failed to generate report for client ${payload.client.id}:`, error);
-          // Ne pas faire échouer le workflow pour une erreur de rapport
         }
       }
 
-      if (result.hasRisk) {
-        console.log(
-          `✅ Client ${payload.client.name}: ${result.productsCount} products at risk, ` +
-          `${result.finalAmount?.toFixed(2)}€ HT${result.quoteName ? ` → Quote ${result.quoteName}` : ""}`
-        );
-      } else {
-        console.log(`✅ Client ${payload.client.name}: Complete - No replenishment needed`);
-      }
-
-      // Retourne un objet complet avec toutes les informations utiles
       return {
         client: {
           id: payload.client.id,
@@ -225,13 +201,13 @@ export const clientProposalTask = task({
           quoteId: result.quoteId,
         },
         report: {
-          complete: reportMarkdown,
-          quote: quoteMarkdown,
+          markdown: reportMarkdown,
+          json: reportJSON,
         },
         executionTime: Date.now() - startTime,
       };
     } catch (error) {
-      console.error(`❌ Failed to process client ${payload.client.name}:`, error);
+      console.error(`Failed to process client ${payload.client.name}:`, error);
       result.error = error instanceof Error ? error.message : String(error);
       result.success = false;
       result.executionTime = Date.now() - startTime;

@@ -1,5 +1,9 @@
 /**
- * Client Odoo utilisant l'API XML-RPC (Odoo < v19)
+ * Odoo XML-RPC client for Odoo versions < v19
+ *
+ * Implements the OdooClient interface using XML-RPC API.
+ *
+ * @module infrastructure/odoo/clients/xmlrpc-client
  */
 
 import { OdooClient as XmlRpcOdoo } from "odoo-xmlrpc-ts";
@@ -29,11 +33,14 @@ const ODOO_CONFIG = {
 };
 
 /**
- * Crée un client XML-RPC pour Odoo < v19
+ * Creates and configures an XML-RPC client for Odoo < v19
+ *
+ * @returns Configured OdooClient instance
+ * @throws Error if ODOO_USERNAME or ODOO_PASSWORD environment variables are missing
  */
 export function createXmlRpcClient(): OdooClient {
   if (!ODOO_CONFIG.username || !ODOO_CONFIG.password) {
-    throw new Error("ODOO_USERNAME et ODOO_PASSWORD requis pour XML-RPC");
+    throw new Error("ODOO_USERNAME and ODOO_PASSWORD environment variables are required");
   }
 
   const odoo = new XmlRpcOdoo({
@@ -51,7 +58,6 @@ export function createXmlRpcClient(): OdooClient {
       excludedPartnerTagId?: number | null
     ): Promise<OdooPartner[]> {
       try {
-        // RPC 1: Récupérer les commandes récentes dans la période [dateMin, dateMax]
         const recentOrders = await odoo.searchRead<OdooOrder>("sale.order",
           buildRecentOrdersDomain(dateMin, dateMax, excludeOrderTagId),
           {
@@ -59,12 +65,10 @@ export function createXmlRpcClient(): OdooClient {
           }
         );
 
-        // Déduplication des partner_ids actifs
         const activePartnerIds = [
           ...new Set(recentOrders.map((order) => order.partner_id[0])),
         ];
 
-        // RPC 2: Récupérer les partenaires inactifs
         const inactivePartners = await odoo.searchRead<OdooPartner>("res.partner",
           buildInactivePartnersDomain(activePartnerIds, excludedPartnerTagId),
           {
@@ -77,7 +81,7 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération des partenaires inactifs: ${error}`
+              `Failed to fetch inactive partners: ${error}`
             );
       }
     },
@@ -90,7 +94,7 @@ export function createXmlRpcClient(): OdooClient {
       excludedCategoryIds?: number[]
     ): Promise<OrderHistory> {
       if (windowDays <= 0) {
-        throw new Error("Le nombre de jours doit être positif");
+        throw new Error("Window days must be positive");
       }
 
       const dateStart = calculateDateBefore(referenceDate, windowDays);
@@ -100,7 +104,6 @@ export function createXmlRpcClient(): OdooClient {
         : ["sale", "done"];
 
       try {
-        // RPC 1: Récupérer les commandes du partenaire depuis dateStart jusqu'à referenceDate
         const orders = await odoo.searchRead<OdooOrder>("sale.order",
           buildPartnerOrdersDomain(partnerId, dateStart, states, referenceDate),
           {
@@ -112,7 +115,6 @@ export function createXmlRpcClient(): OdooClient {
           return { orders: [], orderLines: [] };
         }
 
-        // Extraire tous les IDs de order_line
         const orderLineIds = orders.flatMap((order) => order.order_line || []);
 
         if (orderLineIds.length === 0) {
@@ -129,10 +131,8 @@ export function createXmlRpcClient(): OdooClient {
           };
         }
 
-        // RPC 2: Récupérer les détails des order_lines avec filtrage produits non-food
         const domain: any[] = [["id", "in", orderLineIds]];
 
-        // Filtrer les produits de catégories exclues (consignes, palettes, emballages, etc.)
         if (excludedCategoryIds && excludedCategoryIds.length > 0) {
           domain.push(["product_id.categ_id", "not in", excludedCategoryIds]);
         }
@@ -176,7 +176,7 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération de l'historique du partenaire ${partnerId}: ${error}`
+              `Failed to fetch order history for partner ${partnerId}: ${error}`
             );
       }
     },
@@ -198,7 +198,7 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération des infos du partenaire ${partnerId}: ${error}`
+              `Failed to fetch partner info for partner ${partnerId}: ${error}`
             );
       }
     },
@@ -214,7 +214,7 @@ export function createXmlRpcClient(): OdooClient {
       } catch (error) {
         throw error instanceof Error
           ? error
-          : new Error(`Erreur lors de la création du sale.order: ${error}`);
+          : new Error(`Failed to create sale order: ${error}`);
       }
     },
 
@@ -230,7 +230,7 @@ export function createXmlRpcClient(): OdooClient {
       } catch (error) {
         throw error instanceof Error
           ? error
-          : new Error(`Erreur lors de la création de la sale.order.line: ${error}`);
+          : new Error(`Failed to create sale order line: ${error}`);
       }
     },
 
@@ -247,13 +247,12 @@ export function createXmlRpcClient(): OdooClient {
       } catch (error) {
         throw error instanceof Error
           ? error
-          : new Error(`Erreur lors de la création de la sale.order.option: ${error}`);
+          : new Error(`Failed to create sale order option: ${error}`);
       }
     },
 
     async getSaleOrderDetails(quoteId: number) {
       try {
-        // Récupérer le devis
         const orders = await odoo.searchRead<OdooSaleOrder>(
           "sale.order",
           [["id", "=", quoteId]],
@@ -277,7 +276,6 @@ export function createXmlRpcClient(): OdooClient {
           throw new Error(`Sale order ${quoteId} not found`);
         }
 
-        // Récupérer les lignes
         const lines = await odoo.searchRead<OdooSaleOrderLine>(
           "sale.order.line",
           [["order_id", "=", quoteId]],
@@ -292,7 +290,7 @@ export function createXmlRpcClient(): OdooClient {
               "price_subtotal",
               "price_total",
               "tax_id",
-              "name", // Description de la ligne (reasoning)
+              "name",
             ],
           }
         );
@@ -305,7 +303,7 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération des détails du devis ${quoteId}: ${error}`
+              `Failed to fetch sale order details for quote ${quoteId}: ${error}`
             );
       }
     },
@@ -318,15 +316,11 @@ export function createXmlRpcClient(): OdooClient {
       testEmail: string
     ): Promise<EmailSendResult> {
       try {
-        console.log(`\n📧 Odoo XML-RPC: Sending quote ${quoteName} (ID: ${quoteId})`);
-        console.log(`   Mode: ${testMode ? 'TEST' : 'PRODUCTION'}`);
-
-        // Récupérer le template ID pour les devis
         const templates = await odoo.searchRead<{ id: number; name: string }>(
           "mail.template",
           [
             ["model", "=", "sale.order"],
-            ["name", "ilike", "Sales Order"]  // Cherche le template standard
+            ["name", "ilike", "Sales Order"]
           ],
           { fields: ["id", "name"], limit: 1 }
         );
@@ -336,53 +330,35 @@ export function createXmlRpcClient(): OdooClient {
         }
 
         const templateId = templates[0].id;
-        console.log(`   Using template: ${templates[0].name} (ID: ${templateId})`);
 
         const emailsSentTo: string[] = [];
         const emailsBlockedFor: string[] = [];
 
         if (testMode) {
-          // MODE TEST: Email uniquement à testEmail
-          console.log(`   🔒 TEST MODE: Overriding recipient`);
-          console.log(`   ✅ Email will go ONLY to: ${testEmail}`);
-          console.log(`   🚫 Client email ${clientEmail} is BLOCKED`);
-
           emailsSentTo.push(testEmail);
           emailsBlockedFor.push(clientEmail);
         } else {
-          // MODE PRODUCTION: Email normal au client
-          console.log(`   ⚠️  PRODUCTION MODE:`);
-          console.log(`      TO: ${clientEmail} (client)`);
           emailsSentTo.push(clientEmail);
         }
-
-        // Utiliser mail.template.send_mail pour envoyer
-        console.log(`   Sending email via template...`);
 
         try {
           let emailValues = {};
 
           if (testMode) {
-            // En mode TEST, forcer l'email à aller à testEmail
             emailValues = {
               email_to: testEmail,
-              partner_ids: [],  // Clear les partners
-              email_cc: '',     // Clear le CC
+              partner_ids: [],
+              email_cc: '',
             };
-            console.log(`   Forcing email_to: ${testEmail}`);
           }
 
-          // send_mail avec tous les paramètres positionnels
-          // Signature: send_mail(res_id, force_send=False, raise_exception=False, email_values=None)
           const mailIds = await odoo.execute("mail.template", "send_mail", [
-            templateId,           // Template ID (self)
-            quoteId,             // res_id (sale.order)
-            true,                // force_send
-            false,               // raise_exception
-            emailValues          // email_values dict
+            templateId,
+            quoteId,
+            true,
+            false,
+            emailValues
           ]);
-
-          console.log(`   ✅ Email sent successfully! Mail ID(s): ${mailIds}`);
         } catch (sendError) {
           throw new Error(`Failed to send email: ${sendError}`);
         }
@@ -420,9 +396,6 @@ export function createXmlRpcClient(): OdooClient {
       partner_name: string;
     }> {
       try {
-        console.log(`\n📊 Fetching last validated order for client ${clientId}...`);
-
-        // Rechercher la dernière commande validée (state: 'sale' ou 'done')
         const orders = await odoo.searchRead<{
           id: number;
           name: string;
@@ -446,7 +419,6 @@ export function createXmlRpcClient(): OdooClient {
         }
 
         const order = orders[0];
-        console.log(`   ✅ Found order: ${order.name} (${order.date_order})`);
 
         return {
           id: order.id,
@@ -458,7 +430,7 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération de la dernière commande du client ${clientId}: ${error}`
+              `Failed to fetch last order for client ${clientId}: ${error}`
             );
       }
     },
@@ -470,9 +442,6 @@ export function createXmlRpcClient(): OdooClient {
       partner_name: string;
     }> {
       try {
-        console.log(`\n📊 Fetching last validated order for client ${clientId} before ${referenceDate}...`);
-
-        // Rechercher la dernière commande validée AVANT referenceDate
         const orders = await odoo.searchRead<{
           id: number;
           name: string;
@@ -483,7 +452,7 @@ export function createXmlRpcClient(): OdooClient {
           [
             ["partner_id", "=", clientId],
             ["state", "in", ["sale", "done"]],
-            ["date_order", "<=", referenceDate]  // Ajout de la contrainte de date
+            ["date_order", "<=", referenceDate]
           ],
           {
             fields: ["name", "date_order", "partner_id"],
@@ -497,7 +466,6 @@ export function createXmlRpcClient(): OdooClient {
         }
 
         const order = orders[0];
-        console.log(`   ✅ Found order: ${order.name} (${order.date_order})`);
 
         return {
           id: order.id,
@@ -509,7 +477,7 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération de la dernière commande du client ${clientId} avant ${referenceDate}: ${error}`
+              `Failed to fetch order for client ${clientId} before ${referenceDate}: ${error}`
             );
       }
     },
@@ -522,9 +490,6 @@ export function createXmlRpcClient(): OdooClient {
       partner_id: number;
     }> {
       try {
-        console.log(`\n📊 Fetching order ${orderName}...`);
-
-        // Rechercher la commande par son nom
         const orders = await odoo.searchRead<{
           id: number;
           name: string;
@@ -547,7 +512,6 @@ export function createXmlRpcClient(): OdooClient {
         }
 
         const order = orders[0];
-        console.log(`   ✅ Found order: ${order.name} (${order.date_order}) for ${order.partner_id[1]}`);
 
         return {
           id: order.id,
@@ -560,7 +524,7 @@ export function createXmlRpcClient(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération de la commande ${orderName}: ${error}`
+              `Failed to fetch order ${orderName}: ${error}`
             );
       }
     },

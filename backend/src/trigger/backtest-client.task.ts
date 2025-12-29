@@ -1,15 +1,17 @@
 /**
- * Task Trigger.dev pour backtester un client spécifique
+ * Trigger.dev task for backtesting a specific client
  *
- * Compare la prédiction du système avec la commande réelle d'un client
- * en utilisant le "time travel" (analysisEndDate) pour simuler l'état du monde X jours avant la commande.
+ * Compares system prediction with actual client order using "time travel"
+ * (analysisEndDate) to simulate world state X days before the order.
  *
- * Flow:
- * 1. Récupère la dernière commande réelle du client
- * 2. Calcule la date de cutoff (X jours avant commande)
- * 3. Lance la prédiction système avec analysisEndDate = cutoff
- * 4. Compare système vs réalité
- * 5. Génère rapport markdown détaillé
+ * Workflow:
+ * 1. Fetch actual order to test
+ * 2. Calculate cutoff date (X days before order)
+ * 3. Run system prediction with analysisEndDate = cutoff
+ * 4. Compare system vs reality
+ * 5. Generate detailed markdown/JSON reports
+ *
+ * @module trigger/backtest-client
  */
 
 import { task } from "@trigger.dev/sdk";
@@ -25,39 +27,38 @@ import * as path from "path";
 const odooClient = createOdooClient(autoProposalConfig.odooApiType);
 
 /**
- * Payload de la task backtest-client
+ * Payload for the backtest-client task
  */
 export interface BacktestClientTaskPayload {
-  /** ID du client à backtester */
+  /** Client ID to backtest */
   clientId: number;
 
-  /** Nombre de jours avant la commande pour calculer le cutoff (défaut: 1 jour) */
+  /** Days before order date to calculate cutoff (default: 1) */
   daysBeforePrediction?: number;
 
   /**
-   * Date de référence pour chercher la commande (optionnel)
-   * Si défini: cherche la dernière commande AVANT cette date
-   * Si non défini: cherche la dernière commande (comportement actuel)
+   * Reference date to search for orders (optional)
+   * If set: finds the last order BEFORE this date
+   * If not set: finds the most recent order
    */
   referenceDate?: string;
 
   /**
-   * Nom de commande spécifique à tester (optionnel)
-   * Si fourni: teste cette commande exacte
-   * Si non fourni: comportement actuel (dernière commande)
-   * Ex: "S39729"
+   * Specific order name to test (optional)
+   * If provided: tests this exact order
+   * If not: uses last order (default behavior)
+   * Example: "S39729"
    */
   orderName?: string;
 
-  /** Configuration optionnelle pour A/B testing */
+  /** Optional configuration for A/B testing */
   config?: {
-    analysisWindowDays?: number;
     replenishmentThreshold?: number;
   };
 }
 
 /**
- * Résultat de la task backtest-client
+ * Result of the backtest-client task
  */
 export interface BacktestClientTaskResult {
   success: boolean;
@@ -66,6 +67,7 @@ export interface BacktestClientTaskResult {
   orderName: string;
   orderDate: string;
   cutoffDate: string;
+  /** Main comparison metrics (clean: 2+ orders) */
   comparison: {
     truePositives: number;
     falsePositives: number;
@@ -78,7 +80,8 @@ export interface BacktestClientTaskResult {
     mape: number;
     bias: number;
   };
-  comparisonNoLow?: {  // Métriques pour produits low confidence (1 commande)
+  /** Metrics for low confidence products (1 order only) */
+  comparisonNoLow?: {
     truePositives: number;
     falsePositives: number;
     falseNegatives: number;
@@ -90,7 +93,8 @@ export interface BacktestClientTaskResult {
     mape: number;
     bias: number;
   };
-  comparisonAll?: {  // Métriques pour TOUS les produits (clean + low)
+  /** Metrics for ALL products (clean + low combined) */
+  comparisonAll?: {
     truePositives: number;
     falsePositives: number;
     falseNegatives: number;
@@ -102,32 +106,36 @@ export interface BacktestClientTaskResult {
     mape: number;
     bias: number;
   };
-  llm_usage?: {  // Usage LLM pour ce client
+  /** LLM usage for this client */
+  llm_usage?: {
     calls: number;
     promptTokens: number;
     completionTokens: number;
     totalTokens: number;
   };
-  reportPath: string;  // Path au rapport Markdown (legacy)
+  /** Path to markdown report (legacy) */
+  reportPath: string;
   reportPaths: {
     markdown: string;
     json: string;
-    markdownNoLow?: string;  // Rapport low confidence
-    jsonNoLow?: string;      // Rapport JSON low confidence
+    /** Low confidence markdown report */
+    markdownNoLow?: string;
+    /** Low confidence JSON report */
+    jsonNoLow?: string;
   };
   executionTime: number;
 }
 
 /**
- * Task Trigger.dev pour backtester un client spécifique
+ * Trigger.dev task for backtesting a specific client
  *
- * Évalue la qualité des prédictions en comparant avec une commande réelle historique.
- * Utilise le "time travel" via analysisEndDate pour simuler l'état du monde X jours avant la commande.
+ * Evaluates prediction quality by comparing against actual historical orders.
+ * Uses "time travel" via analysisEndDate to simulate world state X days before the order.
  */
 export const backtestClientTask = task({
   id: "backtest-client",
   queue: {
-    concurrencyLimit: 5, // Limite à 5 backtests simultanés pour laisser des workers aux client-proposal enfants
+    concurrencyLimit: 5,
   },
   retry: {
     maxAttempts: 3,
@@ -140,13 +148,10 @@ export const backtestClientTask = task({
     const startTime = Date.now();
     const daysBeforePrediction = payload.daysBeforePrediction ?? 1;
 
-    console.log(`\n🧪 BACKTEST STARTED - Client ${payload.clientId}`);
-    console.log(`   Days before prediction: ${daysBeforePrediction}\n`);
+    console.log(`\nBACKTEST STARTED - Client ${payload.clientId}`);
+    console.log(`Days before prediction: ${daysBeforePrediction}\n`);
 
     try {
-      // 1️⃣ Récupérer la commande à tester
-      console.log("📊 Step 1/6: Fetching order to test...");
-
       let lastOrder: {
         id: number;
         name: string;
@@ -156,11 +161,8 @@ export const backtestClientTask = task({
       };
 
       if (payload.orderName) {
-        // Mode commande spécifique
-        console.log(`   Testing specific order: ${payload.orderName}`);
         const orderData = await odooClient.getOrderByName(payload.orderName);
 
-        // Vérifier que la commande appartient bien au client
         if (orderData.partner_id !== payload.clientId) {
           throw new Error(
             `Order ${payload.orderName} belongs to client ${orderData.partner_id} (${orderData.partner_name}), ` +
@@ -170,28 +172,15 @@ export const backtestClientTask = task({
 
         lastOrder = orderData;
       } else if (payload.referenceDate) {
-        // Mode date de référence
-        console.log(`   Using reference date: ${payload.referenceDate}`);
         lastOrder = await odooClient.getLastClientOrderBeforeDate(payload.clientId, payload.referenceDate);
       } else {
-        // Mode par défaut: dernière commande
         lastOrder = await odooClient.getLastClientOrder(payload.clientId);
       }
 
-      console.log(`   ✅ Found order: ${lastOrder.name} (${lastOrder.date_order})\n`);
-
-      // 2️⃣ Calculer la date de cutoff (time travel)
-      console.log("📅 Step 2/6: Calculating cutoff date...");
       const cutoffDate = calculateDateBefore(
         lastOrder.date_order,
         daysBeforePrediction
       );
-      console.log(`   ✅ Cutoff date: ${cutoffDate}`);
-      console.log(`   🕐 Simulating system state ${daysBeforePrediction} days before order\n`);
-
-      // 3️⃣ Lancer la prédiction système avec time travel
-      console.log("🤖 Step 3/6: Running system prediction with time travel...");
-      console.log(`   analysisEndDate = ${cutoffDate}`);
 
       const systemPrediction = await clientProposalTask.triggerAndWait({
         client: {
@@ -203,7 +192,6 @@ export const backtestClientTask = task({
           analysisEndDate: cutoffDate,
           skipOdooQuoteGeneration: true,
           shouldGenerateReport: true, // Générer le rapport client pour debug
-          analysisWindowDays: payload.config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
           replenishmentThreshold: payload.config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
           moqMinimum: autoProposalConfig.pricing.minimumOrderAmount,
         },
@@ -214,17 +202,9 @@ export const backtestClientTask = task({
       }
 
       const systemResult = systemPrediction.output;
-      console.log(`   ✅ System predicted ${systemResult.summary.productsCount} products\n`);
 
-      // 4️⃣ Récupérer les détails de la commande réelle
-      console.log("📦 Step 4/6: Fetching real order details...");
       const realOrderDetails = await odooClient.getSaleOrderDetails(lastOrder.id);
-      console.log(`   ✅ Real order has ${realOrderDetails.lines.length} products\n`);
 
-      // 5️⃣ Comparaison Système vs Réalité
-      console.log("🔍 Step 5/6: Comparing system prediction vs real order...");
-
-      // Gérer le cas où il n'y a pas de proposalFinal (0 produits à commander)
       const systemProposal = systemResult.result.phases.proposalFinal || {
         products: [],
         totalAmount: 0,
@@ -243,21 +223,9 @@ export const backtestClientTask = task({
           orderDate: lastOrder.date_order,
           cutoffDate,
           daysBeforePrediction,
-          analysisWindowDays: payload.config?.analysisWindowDays,
         }
       );
 
-      console.log(`   ✅ Comparison ALL complete:`);
-      console.log(`      TP: ${comparison.truePositives.length}`);
-      console.log(`      FP: ${comparison.falsePositives.length}`);
-      console.log(`      FN: ${comparison.falseNegatives.length}`);
-      console.log(`      Precision: ${(comparison.productMetrics.precision * 100).toFixed(1)}%`);
-      console.log(`      Recall: ${(comparison.productMetrics.recall * 100).toFixed(1)}%`);
-      console.log(`      F1-Score: ${(comparison.productMetrics.f1Score * 100).toFixed(1)}%`);
-      console.log(`      MAE: ${comparison.quantityMetrics.mae.toFixed(2)} unités`);
-      console.log(`      MAPE: ${comparison.quantityMetrics.mape.toFixed(1)}%`);
-
-      // SWAP: Rapport principal = sans low confidence (données propres 2+ commandes)
       const systemProposalClean = {
         ...systemProposal,
         products: systemProposal.products.filter((p) =>
@@ -265,15 +233,12 @@ export const backtestClientTask = task({
         )
       } as typeof systemProposal;
 
-      // Filtrer realOrderLines pour CLEAN: garder seulement les produits qui ont confidence !== 'low'
-      // EXCLURE les produits avec 0 historique (pas dans allProducts) ET les produits low (1 commande)
       const allProducts = systemResult.result.phases.stockAnalysis.all_products ?? systemResult.result.phases.stockAnalysis.products;
       const realOrderLinesClean = realOrderDetails.lines.filter((line) => {
         const analyzedProduct = allProducts.find(p => p.product_id === line.product_id[0]);
         return analyzedProduct && analyzedProduct.calculation_metadata?.confidence !== 'low';
       });
 
-      // Comparaison CLEAN (rapport principal)
       const comparisonClean = compareSystemPredictionVsRealOrder(
         systemProposalClean,
         realOrderLinesClean,
@@ -285,18 +250,9 @@ export const backtestClientTask = task({
           orderDate: lastOrder.date_order,
           cutoffDate,
           daysBeforePrediction,
-          analysisWindowDays: payload.config?.analysisWindowDays,
         }
       );
 
-      console.log(`   ✅ Comparison CLEAN (2+ commandes) complete:`);
-      console.log(`      TP: ${comparisonClean.truePositives.length}`);
-      console.log(`      FP: ${comparisonClean.falsePositives.length}`);
-      console.log(`      FN: ${comparisonClean.falseNegatives.length}`);
-      console.log(`      Precision: ${(comparisonClean.productMetrics.precision * 100).toFixed(1)}%`);
-      console.log(`      Recall: ${(comparisonClean.productMetrics.recall * 100).toFixed(1)}%`);
-
-      // SWAP: Rapport secondaire = only low confidence (sparse data 1 commande)
       const systemProposalLow = {
         ...systemProposal,
         products: systemProposal.products.filter((p) =>
@@ -304,13 +260,11 @@ export const backtestClientTask = task({
         )
       } as typeof systemProposal;
 
-      // Filtrer realOrderLines pour LOW: garder seulement les produits qui ont confidence === 'low'
       const realOrderLinesLow = realOrderDetails.lines.filter((line) => {
         const analyzedProduct = allProducts.find(p => p.product_id === line.product_id[0]);
         return analyzedProduct?.calculation_metadata?.confidence === 'low';
       });
 
-      // Comparaison LOW (rapport secondaire)
       const comparisonLow = compareSystemPredictionVsRealOrder(
         systemProposalLow,
         realOrderLinesLow,
@@ -322,87 +276,51 @@ export const backtestClientTask = task({
           orderDate: lastOrder.date_order,
           cutoffDate,
           daysBeforePrediction,
-          analysisWindowDays: payload.config?.analysisWindowDays,
         }
       );
-
-      console.log(`   ✅ Comparison LOW (1 commande) complete:`);
-      console.log(`      TP: ${comparisonLow.truePositives.length}`);
-      console.log(`      FP: ${comparisonLow.falsePositives.length}`);
-      console.log(`      FN: ${comparisonLow.falseNegatives.length}`);
-      console.log(`      Precision: ${(comparisonLow.productMetrics.precision * 100).toFixed(1)}%`);
-      console.log(`      Recall: ${(comparisonLow.productMetrics.recall * 100).toFixed(1)}%\n`);
-
-      // 6️⃣ Génération des rapports markdown + JSON
-      console.log("📝 Step 6/6: Generating backtest reports...");
 
       const reportsOutputDir = path.join(process.cwd(), "reports-output");
       await fs.mkdir(reportsOutputDir, { recursive: true });
 
-      // SWAP: Rapport PRINCIPAL = CLEAN (2+ commandes, données propres pour ML)
       const reportMarkdown = generateBacktestReport(comparisonClean);
       const reportFileNameMd = `backtest-client-${payload.clientId}-${lastOrder.name}.md`;
       const reportPathMd = path.join(reportsOutputDir, reportFileNameMd);
       await fs.writeFile(reportPathMd, reportMarkdown, "utf-8");
-      console.log(`   ✅ Markdown CLEAN report saved: ${reportFileNameMd}`);
 
-      // Rapport JSON CLEAN
       const reportJSON = generateBacktestReportJSON(comparisonClean);
       const reportFileNameJson = `backtest-client-${payload.clientId}-${lastOrder.name}.json`;
       const reportPathJson = path.join(reportsOutputDir, reportFileNameJson);
       await fs.writeFile(reportPathJson, JSON.stringify(reportJSON, null, 2), "utf-8");
-      console.log(`   ✅ JSON CLEAN report saved: ${reportFileNameJson}`);
 
-      // SWAP: Rapport SECONDAIRE = LOW (1 commande, sparse data isolé)
       const reportMarkdownLow = generateBacktestReport(comparisonLow);
       const reportFileNameMdLow = `backtest-client-${payload.clientId}-${lastOrder.name}-low.md`;
       const reportPathMdLow = path.join(reportsOutputDir, reportFileNameMdLow);
       await fs.writeFile(reportPathMdLow, reportMarkdownLow, "utf-8");
-      console.log(`   ✅ Markdown LOW report saved: ${reportFileNameMdLow}`);
 
       const reportJSONLow = generateBacktestReportJSON(comparisonLow);
       const reportFileNameJsonLow = `backtest-client-${payload.clientId}-${lastOrder.name}-low.json`;
       const reportPathJsonLow = path.join(reportsOutputDir, reportFileNameJsonLow);
       await fs.writeFile(reportPathJsonLow, JSON.stringify(reportJSONLow, null, 2), "utf-8");
-      console.log(`   ✅ JSON LOW report saved: ${reportFileNameJsonLow}`);
 
-      // Générer aussi le rapport ALL (legacy, pour comparaison)
       const reportMarkdownAll = generateBacktestReport(comparison);
       const reportFileNameMdAll = `backtest-client-${payload.clientId}-${lastOrder.name}-all.md`;
       const reportPathMdAll = path.join(reportsOutputDir, reportFileNameMdAll);
       await fs.writeFile(reportPathMdAll, reportMarkdownAll, "utf-8");
-      console.log(`   ✅ Markdown ALL report saved: ${reportFileNameMdAll}`);
 
-      // === NOUVEAU: Génération du rapport JSON v2 enrichi ===
-      console.log("📝 Step 7/7: Generating backtest report JSON v2...");
       const reportJSONv2 = generateBacktestReportJSONv2(
-        comparison,  // Tous les produits (pas de filtre low/clean)
+        comparison,
         systemResult.result.phases.stockAnalysis
       );
       const reportFileNameJsonV2 = `backtest-client-${payload.clientId}-${lastOrder.name}-v2.json`;
       const reportPathJsonV2 = path.join(reportsOutputDir, reportFileNameJsonV2);
       await fs.writeFile(reportPathJsonV2, JSON.stringify(reportJSONv2, null, 2), "utf-8");
-      console.log(`   ✅ JSON v2 report saved: ${reportFileNameJsonV2}`);
 
       const executionTime = Date.now() - startTime;
-      console.log(`✅ BACKTEST COMPLETED in ${(executionTime / 1000).toFixed(1)}s\n`);
+      console.log(`BACKTEST COMPLETED in ${(executionTime / 1000).toFixed(1)}s\n`);
 
       // Extract LLM usage from stockAnalysis (if present)
-      console.log("🔍 DEBUG: Checking for LLM usage data...");
       const stockAnalysis = systemResult.result.phases.stockAnalysis;
-      if (stockAnalysis) {
-        console.log("   stockAnalysis keys:", Object.keys(stockAnalysis));
-        console.log("   llm_usage value:", stockAnalysis.llm_usage);
-      } else {
-        console.log("   ⚠️ stockAnalysis is undefined");
-      }
-
       const llmUsage = stockAnalysis?.llm_usage;
-      if (llmUsage) {
-        console.log(`   🤖 LLM Usage: ${llmUsage.calls} calls, ${llmUsage.totalTokens} tokens\n`);
-      } else {
-        console.log(`   ⚠️ No LLM usage data found\n`);
-      }
 
       return {
         success: true,
@@ -459,7 +377,7 @@ export const backtestClientTask = task({
       };
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : String(error);
-      console.error(`\n❌ BACKTEST FAILED: ${errorMessage}\n`);
+      console.error(`\nBACKTEST FAILED: ${errorMessage}\n`);
       throw error;
     }
   },

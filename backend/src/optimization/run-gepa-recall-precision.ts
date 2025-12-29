@@ -38,24 +38,17 @@ willOrder:boolean "true si commande probable dans 30 jours",
 reasoning:string "Explication courte"
 `;
 
-// Métrique MULTI-OBJECTIF conforme à la doc
-function multiMetric({ prediction, example }: any): { recall: number; precision: number } {
+// Métrique POINTS - comme l'ancien script qui marchait
+// Donne des scores plus différenciés pour que GEPA puisse détecter les améliorations
+function pointsMetric({ prediction, example }: any): number {
   const predicted = prediction?.willOrder === true;
   const actual = example?.willOrder === true || example?.quantity > 0;
 
-  // Per-example recall: Si vraie commande, l'a-t-on détectée?
-  let recall = 1.0;
-  if (actual) {
-    recall = predicted ? 1.0 : 0.0; // TP=1, FN=0
-  }
-
-  // Per-example precision: Si on prédit, est-ce correct?
-  let precision = 1.0;
-  if (predicted) {
-    precision = actual ? 1.0 : 0.0; // TP=1, FP=0
-  }
-
-  return { recall, precision };
+  // Système de POINTS (ancien script qui marchait)
+  if (actual && !predicted) return -5;  // FN = CATASTROPHE (rupture stock)
+  if (!actual && predicted) return +2;  // FP = acceptable (surstock)
+  if (actual && predicted) return +4;   // TP = bon
+  return +3;                            // TN = bon
 }
 
 // Feedback function pour guider GEPA
@@ -86,7 +79,7 @@ async function main() {
   console.log(`\nTeacher: ${TEACHER_MODEL}`);
   console.log(`Student: ${MODEL}`);
   console.log(`Trials: ${NUM_TRIALS}`);
-  console.log(`Métrique: {recall, precision} + paretoScalarize(0.8 recall)\n`);
+  console.log(`Métrique: POINTS (FN=-5, FP=+2, TP=+4, TN=+3)\n`);
 
   mkdirSync(OUTPUT_DIR, { recursive: true });
 
@@ -144,9 +137,11 @@ async function main() {
   const optimizer = new AxGEPA({
     teacherAI: teacherLLM,
     studentAI: studentLLM,
+    config: {
+      temperature: 0.7, // Permet exploration (défaut trop déterministe)
+    },
     numTrials: NUM_TRIALS,
-    minibatch: true,
-    minibatchSize: 20,
+    minibatch: false, // ⚠️ FALSE = scores stables, GEPA peut détecter améliorations
     verbose: true,
     seed: 42,
   });
@@ -156,14 +151,13 @@ async function main() {
   const result = await optimizer.compile(
     classifier,
     axTrainExamples,
-    multiMetric as any,
+    pointsMetric as any,  // Métrique SCALAIRE (points), pas multi-objectif
     {
       validationExamples: axValExamples,
       feedbackExamples: axValExamples.slice(0, 20),
       feedbackFn: feedbackFn as any,
       maxMetricCalls: NUM_TRIALS * TRAIN_SIZE * 2,
-      // Prioriser RECALL (80%) vs Precision (20%)
-      paretoScalarize: (s: any) => 0.8 * (s.recall ?? 0) + 0.2 * (s.precision ?? 0),
+      // Pas de paretoScalarize - métrique déjà scalaire
     }
   );
 
@@ -172,15 +166,8 @@ async function main() {
   console.log(`Pareto front: ${result.paretoFrontSize || 1} points`);
   console.log(`Hypervolume: ${result.hypervolume?.toFixed(3) || "N/A"}`);
 
-  // Afficher Pareto front
-  if (result.paretoFront) {
-    console.log("\n📊 Pareto Front:");
-    for (const [i, p] of [...result.paretoFront].entries()) {
-      if (i >= 5) break;
-      const scores = p.scores as any;
-      console.log(`  #${i + 1}: recall=${scores.recall?.toFixed(3)}, precision=${scores.precision?.toFixed(3)}`);
-    }
-  }
+  // Afficher best score
+  console.log(`\n📝 Best score: ${result.optimizedProgram?.bestScore || "N/A"}`);
 
   // Validation finale
   if (result.optimizedProgram) {

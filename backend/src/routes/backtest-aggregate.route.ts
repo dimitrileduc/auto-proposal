@@ -1,8 +1,11 @@
 /**
- * Route HTTP pour déclencher la task Trigger.dev "backtest-aggregate"
+ * HTTP route to trigger the Trigger.dev "backtest-aggregate" task
  *
- * POST /backtest/aggregate - Déclencher le backtest agrégé pour plusieurs clients
+ * Provides endpoint to run batch backtest across multiple clients with statistical aggregation.
+ *
+ * @module routes/backtest-aggregate
  */
+
 import { Hono } from "hono";
 import { tasks } from "@trigger.dev/sdk/v3";
 import type { BacktestAggregatePayload, backtestAggregateTask } from "../trigger/backtest-aggregate.task";
@@ -10,28 +13,25 @@ import type { BacktestAggregatePayload, backtestAggregateTask } from "../trigger
 const backtestAggregateRoute = new Hono();
 
 /**
+ * Triggers batch backtest task with aggregation
+ *
  * POST /backtest/aggregate
- * Déclenche la task Trigger.dev pour backtester plusieurs clients en batch
  *
- * Body:
- * {
- *   // MODE 1: Liste explicite de clients
- *   "clientIds": [12292, 99, 17819],  // Optionnel (si non fourni, mode auto-découverte)
+ * Runs backtest across multiple clients and aggregates results with statistics.
  *
- *   // MODE 2: Auto-découverte (utilisé si clientIds non fourni)
- *   "autoDiscoverCount": 50,          // Optionnel, défaut: 50 (top N clients actifs en 2025)
+ * Two operational modes:
+ * - **Explicit mode**: Provide clientIds array to test specific clients
+ * - **Auto-discovery mode**: Auto-discover top N active clients (default: 50)
  *
- *   // Paramètres communs
- *   "daysBeforePrediction": 1,        // Optionnel, défaut: 1
- *   "config": {                       // Optionnel
- *     "analysisWindowDays": 120,
- *     "replenishmentThreshold": 30
- *   }
- * }
+ * @param clientIds Optional array of client IDs to backtest explicitly
+ * @param autoDiscoverCount Number of clients to auto-discover (default: 50)
+ * @param daysBeforePrediction Days before order date for cutoff (default: 1)
+ * @param config Optional configuration for A/B testing
+ * @returns Task ID, mode, and client count
  *
- * Exemples avec curl:
+ * Examples:
  * ```bash
- * # MODE 1: Liste explicite
+ * # Explicit mode: test 3 specific clients
  * curl -X POST http://localhost:3000/backtest/aggregate \
  *   -H "Content-Type: application/json" \
  *   -d '{
@@ -39,35 +39,29 @@ const backtestAggregateRoute = new Hono();
  *     "daysBeforePrediction": 1
  *   }'
  *
- * # MODE 2: Auto-découverte (50 clients par défaut)
+ * # Auto-discovery mode: top 50 clients (default)
  * curl -X POST http://localhost:3000/backtest/aggregate \
  *   -H "Content-Type: application/json" \
- *   -d '{
- *     "daysBeforePrediction": 1
- *   }'
+ *   -d '{"daysBeforePrediction": 1}'
  *
- * # MODE 2: Auto-découverte (nombre personnalisé)
+ * # Auto-discovery mode: top 100 clients
  * curl -X POST http://localhost:3000/backtest/aggregate \
  *   -H "Content-Type: application/json" \
  *   -d '{
  *     "autoDiscoverCount": 100,
  *     "daysBeforePrediction": 1
  *   }'
- * ```
  *
- * Cas d'usage A/B Testing:
- * ```bash
- * # Test Config A (120j) - Auto-découverte 50 clients
+ * # A/B testing: compare configurations
+ * # Config A
  * curl -X POST http://localhost:3000/backtest/aggregate \
  *   -H "Content-Type: application/json" \
  *   -d '{"config": {"analysisWindowDays": 120}}'
  *
- * # Test Config B (180j) - Auto-découverte 50 clients
+ * # Config B
  * curl -X POST http://localhost:3000/backtest/aggregate \
  *   -H "Content-Type: application/json" \
  *   -d '{"config": {"analysisWindowDays": 180}}'
- *
- * # Comparer les 2 JSON résultants pour voir quelle config performe mieux
  * ```
  */
 backtestAggregateRoute.post("/", async (c) => {
@@ -75,7 +69,6 @@ backtestAggregateRoute.post("/", async (c) => {
     const body = await c.req.json();
     const { clientIds, autoDiscoverCount, daysBeforePrediction, config } = body;
 
-    // Validation
     if (clientIds && (!Array.isArray(clientIds) || clientIds.length === 0)) {
       return c.json({ error: "clientIds must be a non-empty array if provided" }, 400);
     }
@@ -84,7 +77,6 @@ backtestAggregateRoute.post("/", async (c) => {
       return c.json({ error: "All clientIds must be numbers" }, 400);
     }
 
-    // Préparer le payload pour la task
     const payload: BacktestAggregatePayload = {
       clientIds: clientIds ?? undefined,
       autoDiscoverCount: autoDiscoverCount ?? 50,
@@ -97,15 +89,10 @@ backtestAggregateRoute.post("/", async (c) => {
       ? `${payload.clientIds.length} clients (explicit)`
       : `${payload.autoDiscoverCount} clients (auto-discovery)`;
 
-    console.log(`🚀 Triggering backtest-aggregate task: ${clientCountInfo}`);
-
-    // Déclencher la task Trigger.dev
     const handle = await tasks.trigger<typeof backtestAggregateTask>(
       "backtest-aggregate",
       payload
     );
-
-    console.log(`✅ Backtest aggregate task triggered successfully: ${handle.id}`);
 
     return c.json({
       success: true,
@@ -117,7 +104,7 @@ backtestAggregateRoute.post("/", async (c) => {
       note: "Check Trigger.dev dashboard for task progress and results",
     });
   } catch (error: any) {
-    console.error("❌ Failed to trigger backtest-aggregate task:", error);
+    console.error("Failed to trigger backtest-aggregate task:", error);
     return c.json(
       {
         error: "Failed to trigger backtest aggregate task",

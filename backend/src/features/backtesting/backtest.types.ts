@@ -1,12 +1,14 @@
 /**
- * Types pour le système de backtesting
+ * Backtesting system types
  *
- * Compare les prédictions du système auto-proposal avec les commandes réelles
- * pour évaluer la qualité des prédictions (métriques TP/FP/FN, MAE, MAPE)
+ * Compares auto-proposal system predictions with actual orders
+ * to evaluate prediction quality (TP/FP/FN metrics, MAE, MAPE)
+ *
+ * @module features/backtesting/types
  */
 
 /**
- * Résumé d'usage LLM
+ * LLM usage summary
  */
 export interface LLMUsageSummary {
   calls: number;
@@ -16,10 +18,10 @@ export interface LLMUsageSummary {
 }
 
 /**
- * Résultat complet de la comparaison Système vs Réel
+ * Complete comparison result: System vs Reality
  */
 export interface BacktestComparisonResult {
-  // Contexte
+  // Context
   clientId: number;
   clientName: string;
   orderName: string;
@@ -27,62 +29,82 @@ export interface BacktestComparisonResult {
   cutoffDate: string;
   daysBeforePrediction: number;
 
-  // Produits par catégorie
-  truePositives: ProductMatch[];      // Système prédit + Client commande
-  falsePositives: ProductMismatch[];  // Système prédit mais PAS commandé
-  falseNegatives: ProductMismatch[];  // Client commande mais PAS prédit
+  // Products by category
+  /** System predicted + Client ordered */
+  truePositives: ProductMatch[];
+  /** System predicted but NOT ordered */
+  falsePositives: ProductMismatch[];
+  /** Client ordered but NOT predicted */
+  falseNegatives: ProductMismatch[];
 
-  // Métriques niveau produit (binaire)
+  // Product-level metrics (binary)
   productMetrics: {
-    precision: number;     // TP / (TP + FP)
-    recall: number;        // TP / (TP + FN)
-    f1Score: number;       // 2 * P*R / (P+R)
+    /** TP / (TP + FP) */
+    precision: number;
+    /** TP / (TP + FN) */
+    recall: number;
+    /** 2 * P*R / (P+R) */
+    f1Score: number;
     totalPredicted: number;
     totalReal: number;
   };
 
-  // Métriques niveau quantité (continue)
+  // Quantity-level metrics (continuous)
   quantityMetrics: {
-    mae: number;           // Mean Absolute Error (unités) - MÉTRIQUE PRINCIPALE
-    wmape: number;         // Weighted MAPE (%) - MÉTRIQUE ROBUSTE RECOMMANDÉE
-    mape: number;          // Mean Absolute Percentage Error (%) - INFO (biaisé)
-    bias: number;          // Biais directionnel (%) - >0 = surestime, <0 = sous-estime
+    /** Mean Absolute Error (units) - PRIMARY METRIC */
+    mae: number;
+    /** Weighted MAPE (%) - ROBUST RECOMMENDED METRIC */
+    wmape: number;
+    /** Mean Absolute Percentage Error (%) - INFO (biased) */
+    mape: number;
+    /** Directional bias (%) - >0 = overestimate, <0 = underestimate */
+    bias: number;
     distribution: {
-      exactMatch: number;   // Erreur = 0 (quantité parfaite)
-      partialMatch: number; // Erreur > 0 (avec erreur)
+      /** Error = 0 (perfect quantity) */
+      exactMatch: number;
+      /** Error > 0 (with error) */
+      partialMatch: number;
     };
   };
 
-  // Usage LLM (si utilisé)
+  // LLM usage (if used)
   llmUsage?: LLMUsageSummary;
 }
 
 /**
- * Produit correctement prédit (TP) avec analyse quantité
+ * Correctly predicted product (TP) with quantity analysis
  */
 export interface ProductMatch {
   productId: number;
   productName: string;
   predictedQty: number;
   realQty: number;
-  absoluteError: number;        // |predicted - real| en unités
-  errorPercent: number;         // Erreur en pourcentage (pour MAPE)
-  matchType: 'exact' | 'partial';  // exact = égalité parfaite, partial = erreur > 0
-  confidence: 'low' | 'medium' | 'high';  // Niveau de confiance de la prédiction (basé sur historique)
+  /** |predicted - real| in units */
+  absoluteError: number;
+  /** Error percentage (for MAPE) */
+  errorPercent: number;
+  /** exact = perfect equality, partial = error > 0 */
+  matchType: 'exact' | 'partial';
+  /** Prediction confidence level (based on history) */
+  confidence: 'low' | 'medium' | 'high';
 
-  // Infos LLM (tracking détaillé)
-  llm_required: boolean;  // Le produit devait-il utiliser le LLM ? (>2 commandes)
-  llm_success: boolean;   // A-t-on réussi à obtenir une prédiction LLM ?
-  quantitySource: 'median' | 'llm';  // Source finale de la quantité
-  medianQty?: number; // Quantité médiane (pour comparaison si LLM utilisé)
+  // LLM info (detailed tracking)
+  /** Should the product use LLM? (>2 orders) */
+  llm_required: boolean;
+  /** Did we successfully get an LLM prediction? */
+  llm_success: boolean;
+  /** Final quantity source */
+  quantitySource: 'median' | 'llm';
+  /** Median quantity (for comparison if LLM used) */
+  medianQty?: number;
 
-  // Données passées au LLM (pour debug/audit)
+  // Data passed to LLM (for debug/audit)
   llm_input_data?: {
     recent_orders: Array<{ date: string; quantity: number }>;
     last_year_orders: Array<{ date: string; quantity: number }>;
   };
 
-  // Prédiction LLM (si succès)
+  // LLM prediction (if success)
   llmPrediction?: {
     quantity: number;
     confidence: 'low' | 'medium' | 'high';
@@ -103,28 +125,30 @@ export interface ProductMatch {
 }
 
 /**
- * Produit mal prédit (FP ou FN)
+ * Incorrectly predicted product (FP or FN)
  */
 export interface ProductMismatch {
   productId: number;
   productName: string;
   qty: number;
-  reason: string;  // Justification (ex: "Stock suffisant", "Pas d'historique")
-  confidence?: 'low' | 'medium' | 'high';  // Niveau de confiance basé sur historique (pour filtrage par confidence)
+  /** Justification (e.g., "Stock sufficient", "No history") */
+  reason: string;
+  /** Confidence level based on history (for filtering by confidence) */
+  confidence?: 'low' | 'medium' | 'high';
 
-  // Infos LLM (cohérence avec TP)
+  // LLM info (consistency with TP)
   llm_required?: boolean;
   llm_success?: boolean;
   quantitySource?: 'median' | 'llm' | 'unknown';
   medianQty?: number;
 
-  // Données passées au LLM (pour debug/audit)
+  // Data passed to LLM (for debug/audit)
   llm_input_data?: {
     recent_orders: Array<{ date: string; quantity: number }>;
     last_year_orders: Array<{ date: string; quantity: number }>;
   };
 
-  // Prédiction LLM
+  // LLM prediction
   llmPrediction?: {
     quantity: number;
     confidence: 'low' | 'medium' | 'high';
@@ -145,11 +169,11 @@ export interface ProductMismatch {
 }
 
 // ============================================================================
-// TYPES POUR FORMAT JSON V2 ENRICHI
+// TYPES FOR ENRICHED JSON V2 FORMAT
 // ============================================================================
 
 /**
- * Statistiques calculées sur l'historique des commandes d'un produit
+ * Statistics calculated on product order history
  */
 export interface HistoryStatistics {
   mean: number;
@@ -157,14 +181,16 @@ export interface HistoryStatistics {
   stdDev: number;
   min: number;
   max: number;
-  cv: number;  // Coefficient de variation (stdDev / mean)
+  /** Coefficient of variation (stdDev / mean) */
+  cv: number;
   trend: "increasing" | "stable" | "decreasing";
   outliers: number[];
-  regularityScore: number;  // Score 0-1 de régularité des commandes
+  /** Order regularity score 0-1 */
+  regularityScore: number;
 }
 
 /**
- * Features calculées automatiquement pour classifier un produit
+ * Automatically calculated features for product classification
  */
 export interface ProductFeatures {
   quantityType: "fixed" | "variable" | "highly_variable";
@@ -176,7 +202,7 @@ export interface ProductFeatures {
 }
 
 /**
- * Métriques de performance segmentées (globales ou par niveau de confidence)
+ * Segmented performance metrics (global or by confidence level)
  */
 export interface MetricsByConfidence {
   counts: {
@@ -208,7 +234,7 @@ export interface MetricsByConfidence {
 }
 
 /**
- * Produit True Positive enrichi avec historique complet, features, et LLM
+ * Enriched True Positive product with complete history, features, and LLM
  */
 export interface EnrichedProductMatch {
   productId: number;
@@ -299,7 +325,7 @@ export interface EnrichedProductMatch {
 }
 
 /**
- * Produit False Positive ou False Negative enrichi avec contexte
+ * Enriched False Positive or False Negative product with context
  */
 export interface EnrichedProductMismatch {
   productId: number;
@@ -328,7 +354,7 @@ export interface EnrichedProductMismatch {
       }>;
     };
   };
-  // LLM data (enrichissement pour cohérence avec TP)
+  // LLM data (enrichment for consistency with TP)
   llm?: {
     required: boolean;
     success: boolean;
@@ -367,21 +393,21 @@ export interface EnrichedProductMismatch {
 }
 
 /**
- * Format JSON v2 complet pour rapport de backtest enrichi
+ * Complete JSON v2 format for enriched backtest report
  *
- * Différences avec v1:
- * - Un seul fichier par client (pas de séparation low/clean)
- * - Détails complets par produit (historique, features, LLM)
- * - Métriques segmentées par confidence
- * - Classification des erreurs et mismatches
+ * Differences from v1:
+ * - Single file per client (no low/clean separation)
+ * - Complete per-product details (history, features, LLM)
+ * - Metrics segmented by confidence
+ * - Error and mismatch classification
  */
 export interface BacktestReportJSONv2 {
   meta: {
     version: "2.0.0";
-    generatedAt: string;  // ISO 8601 timestamp
+    /** ISO 8601 timestamp */
+    generatedAt: string;
     config: {
       daysBeforePrediction: number;
-      analysisWindowDays: number;
       cutoffDate: string;
     };
   };

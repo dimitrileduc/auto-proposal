@@ -1,50 +1,50 @@
+/**
+ * MOQ adjustment strategy utilities
+ * @module features/proposal-preparation/moq/strategy
+ */
 import type { ProductWithCurrentPrice } from "../proposal-preparation.types";
 
 /**
- * Trie les produits par fréquence de commande puis confiance
+ * Sorts products by order frequency then confidence
  *
- * Critères de tri (par ordre de priorité):
- * 1. Fréquence de commande (order_count DESC) - Les plus commandés en premier
- * 2. Confiance (high > medium > low) - En cas d'égalité
+ * Sorting criteria (by priority):
+ * 1. Order frequency (order_count DESC) - Most ordered first
+ * 2. Confidence (high > medium > low) - Tiebreaker
  *
- * Utilisé pour l'ajustement MOQ: investir le gap sur les produits
- * que le client achète le plus souvent
+ * Used for MOQ adjustment: invest the gap in products
+ * the client orders most frequently
+ *
+ * @param products - Products with current prices
+ * @returns Products sorted by adjustment priority
  *
  * @example
  * ```
- * Avant tri:
- * ┌────┬─────────────────────────┬───────────┬────────────┐
- * │ ID │ Produit                 │ Commandes │ Confiance  │
- * ├────┼─────────────────────────┼───────────┼────────────┤
- * │ A  │ Tartinade Mangue        │ 1         │ low        │
- * │ B  │ Tartinade Paprika       │ 3         │ medium     │
- * │ C  │ Tartinade Houmous       │ 1         │ low        │
- * │ D  │ Tartinade Tomato        │ 3         │ high       │
- * │ E  │ Tartinade Olives        │ 2         │ medium     │
- * │ F  │ Tartinade Basilico      │ 3         │ medium     │
- * └────┴─────────────────────────┴───────────┴────────────┘
+ * Before sorting:
+ * | ID | Product          | Orders | Confidence |
+ * |----|------------------|--------|------------|
+ * | A  | Spread Mango     | 1      | low        |
+ * | B  | Spread Paprika   | 3      | medium     |
+ * | C  | Spread Hummus    | 1      | low        |
+ * | D  | Spread Tomato    | 3      | high       |
+ * | E  | Spread Olives    | 2      | medium     |
+ * | F  | Spread Basilico  | 3      | medium     |
  *
- * Après tri:
- * ┌──────┬─────────────────────────┬───────────┬────────────┐
- * │ Rang │ Produit                 │ Commandes │ Confiance  │
- * ├──────┼─────────────────────────┼───────────┼────────────┤
- * │ 1er  │ D - Tomato              │ 3         │ high       │ ← Plus commandé + high conf
- * │ 2e   │ B - Paprika             │ 3         │ medium     │ ← 3 commandes
- * │ 3e   │ F - Basilico            │ 3         │ medium     │ ← 3 commandes
- * │ 4e   │ E - Olives              │ 2         │ medium     │
- * │ 5e   │ A - Mangue              │ 1         │ low        │
- * │ 6e   │ C - Houmous             │ 1         │ low        │
- * └──────┴─────────────────────────┴───────────┴────────────┘
+ * After sorting:
+ * | Rank | Product          | Orders | Confidence |
+ * |------|------------------|--------|------------|
+ * | 1st  | D - Tomato       | 3      | high       | <- Most ordered + high conf
+ * | 2nd  | B - Paprika      | 3      | medium     | <- 3 orders
+ * | 3rd  | F - Basilico     | 3      | medium     | <- 3 orders
+ * | 4th  | E - Olives       | 2      | medium     |
+ * | 5th  | A - Mango        | 1      | low        |
+ * | 6th  | C - Hummus       | 1      | low        |
  * ```
- *
- * @param products - Produits avec prix actuels
- * @returns Produits triés par priorité d'ajustement
  */
 export function sortByOrderFrequencyAndConfidence(
   products: ProductWithCurrentPrice[]
 ): ProductWithCurrentPrice[] {
   return [...products].sort((a, b) => {
-    // Critère 1: Fréquence de commande (DESC)
+    // Criterion 1: Order frequency (DESC)
     const orderCountDiff =
       b.calculation_metadata.order_count - a.calculation_metadata.order_count;
 
@@ -52,7 +52,7 @@ export function sortByOrderFrequencyAndConfidence(
       return orderCountDiff;
     }
 
-    // Critère 2: Confiance (DESC) - en cas d'égalité
+    // Criterion 2: Confidence (DESC) - tiebreaker
     const confidenceOrder: Record<string, number> = {
       high: 3,
       medium: 2,

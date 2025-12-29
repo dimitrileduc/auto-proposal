@@ -1,45 +1,47 @@
 /**
- * Configuration pour l'orchestrateur auto-proposal
+ * Orchestrator types for batch client processing
+ * @module shared/types/orchestrator
+ */
+
+/**
+ * Configuration for the auto-proposal orchestrator
  */
 export interface OrchestratorConfig {
-  /** Date minimum pour la détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS") */
+  /** Start date for inactivity detection (format: "YYYY-MM-DD HH:MM:SS") */
   dateMin: string;
 
-  /** Date maximum pour la détection d'inactivité (format: "YYYY-MM-DD HH:MM:SS") */
+  /** End date for inactivity detection (format: "YYYY-MM-DD HH:MM:SS") */
   dateMax: string;
 
-  /** Limite le nombre de clients à analyser (debug), "all" = tous */
+  /** Limit number of clients to analyze (debug), "all" = no limit */
   maxClientsToAnalyze: number | "all";
 
-  /** Si true, force la réanalyse de tous les clients inactifs, même ceux ayant déjà des devis auto-proposal (tag 82) */
+  /** Force reanalysis of clients with existing auto-proposals (tag 82) */
   forceReanalysis: boolean;
 
-  /** Si true, génère les rapports markdown pour tous les clients avec risk */
+  /** Generate markdown reports for at-risk clients */
   generateReports: boolean;
 
-  /** Nombre de jours d'historique à analyser (ex: 180 = 6 mois) */
-  analysisWindowDays: number;
-
-  /** Seuil de réapprovisionnement en jours (couverture + lead time) */
+  /** Replenishment threshold in days (coverage + lead time) */
   replenishmentThreshold: number;
 
-  /** Montant minimum de commande en euros (MOQ) */
+  /** Minimum order amount in euros (MOQ) */
   moqMinimum: number;
 
-  /** Si true, skip la création du devis Odoo (Phase 3) */
+  /** Skip Odoo quote creation (Phase 3) */
   skipOdooQuoteGeneration: boolean;
 
-  /** Tag partner à exclure définitivement de l'analyse (ex: 195 = "exclude-auto-proposal"). Si null, pas de filtrage. */
+  /** Partner tag ID to exclude from analysis (null = no filtering) */
   excludedPartnerTagId?: number | null;
 }
 
 /**
- * Payload pour la task Trigger.dev "auto-proposal-orchestrator"
+ * Payload for the "auto-proposal-orchestrator" Trigger.dev task
  *
- * Cette task orchestre le traitement batch de tous les clients inactifs
- * en déclenchant des tasks "client-proposal" en parallèle.
+ * Orchestrates batch processing of inactive clients
+ * by triggering parallel "client-proposal" tasks.
  */
 export interface OrchestratorTaskPayload {
-  /** Configuration d'orchestration (override partiel de autoProposalConfig) */
+  /** Orchestration config (partial override of autoProposalConfig) */
   config?: Partial<OrchestratorConfig>;
 }

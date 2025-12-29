@@ -1,8 +1,11 @@
 /**
- * Route HTTP pour déclencher la task Trigger.dev "auto-proposal-orchestrator"
+ * HTTP route to trigger the Trigger.dev "auto-proposal-orchestrator" task
  *
- * POST /orchestrator-task - Déclencher l'orchestrateur pour tous les clients inactifs
+ * Provides endpoint to orchestrate batch processing of all inactive clients.
+ *
+ * @module routes/orchestrator-task
  */
+
 import { Hono } from "hono";
 import { tasks } from "@trigger.dev/sdk/v3";
 import type { OrchestratorTaskPayload } from "../shared/types";
@@ -11,57 +14,39 @@ import type { orchestratorTask } from "../trigger/orchestrator.task";
 const orchestratorTaskRoute = new Hono();
 
 /**
+ * Triggers auto-proposal orchestrator task
+ *
  * POST /orchestrator-task
- * Déclenche la task Trigger.dev orchestrator pour traiter tous les clients inactifs
  *
- * Body (tous optionnels):
- * {
- *   "config": {
- *     // Période d'inactivité
- *     "dateMin": "010925",                    // Date min inactivité. Formats: "JJMMAA", "JJ/MM/AA", "JJ/MM/AAAA", "AAAA-MM-JJ". Default: config ou aujourd'hui - 30j
- *     "dateMax": "011025",                    // Date max inactivité (= référence analyse stock). Default: config ou aujourd'hui
+ * Triggers the orchestrator to process all inactive clients for proposal generation.
  *
- *     // Analyse stock
- *     "analysisWindowDays": 120,              // Jours d'historique avant dateMax. Default: config (120)
- *     "replenishmentThreshold": 30,           // Seuil réappro (couverture + lead time). Default: config (30)
- *     "moqMinimum": 300,                      // MOQ en euros. Default: config (300)
+ * Configuration options (all optional):
+ * - dateMin: Minimum inactivity date (formats: "DDMMYY", "DD/MM/YY", "DD/MM/YYYY", "YYYY-MM-DD")
+ * - dateMax: Maximum inactivity date (default: today)
+ * - replenishmentThreshold: Days threshold for replenishment (default: 30)
+ * - moqMinimum: Minimum order amount in currency (default: 300)
+ * - maxClientsToAnalyze: Max clients to process or "all" for all
+ * - generateReports: Generate markdown reports (default: true)
+ * - skipOdooQuoteGeneration: Skip Odoo quote creation - test mode (default: true)
+ * - forceReanalysis: Reanalyze clients with auto-proposal tag (default: false)
  *
- *     // Workflow
- *     "maxClientsToAnalyze": "all",           // "all" ou nombre (debug). Default: "all"
- *     "generateReports": true,                // Génère rapports markdown. Default: config (true)
- *     "skipOdooQuoteGeneration": false,       // Mode TEST (pas de devis). Default: true
- *     "forceReanalysis": false                // Réanalyse clients avec tag 82. Default: config (false)
- *   }
- * }
+ * @returns Task ID and configuration
  */
 orchestratorTaskRoute.post("/", async (c) => {
   try {
     const body = await c.req.json().catch(() => ({}));
     const { config = {} } = body;
 
-    // Préparer le payload pour la task
     const payload: OrchestratorTaskPayload = {
       config,
     };
 
-    console.log(`🚀 Triggering auto-proposal-orchestrator task`);
-    if (config.dateMin && config.dateMax) {
-      console.log(`   Inactivity period: ${config.dateMin} to ${config.dateMax}`);
-    }
-    if (config.maxClientsToAnalyze) {
-      console.log(`   Max clients to analyze: ${config.maxClientsToAnalyze}`);
-    }
-    if (config.skipOdooQuoteGeneration) {
-      console.log(`   Mode: TEST (skipOdooQuoteGeneration=true)`);
-    }
-
-    // Déclencher la task Trigger.dev
     const handle = await tasks.trigger<typeof orchestratorTask>(
       "auto-proposal-orchestrator",
       payload
     );
 
-    console.log(`✅ Task triggered successfully: ${handle.id}`);
+    console.log(`Task triggered successfully: ${handle.id}`);
 
     return c.json({
       success: true,
@@ -70,7 +55,7 @@ orchestratorTaskRoute.post("/", async (c) => {
       message: "Auto-proposal orchestrator task triggered",
     });
   } catch (error: any) {
-    console.error("❌ Failed to trigger auto-proposal-orchestrator task:", error);
+    console.error("Failed to trigger auto-proposal-orchestrator task:", error);
     return c.json(
       {
         error: "Failed to trigger task",

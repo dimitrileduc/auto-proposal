@@ -1,3 +1,10 @@
+/**
+ * Odoo quote generation service
+ *
+ * Creates draft quotes in Odoo from prepared proposals.
+ *
+ * @module features/proposal-generation/service
+ */
 import type { OdooClient } from "../../infrastructure/odoo/clients/odoo-client.types";
 import type { ProposalPreparationResult, ProductWithCurrentPrice } from "../proposal-preparation/proposal-preparation.types";
 import type {
@@ -7,66 +14,66 @@ import type {
 import { autoProposalConfig } from "../../config/auto-proposal";
 
 /**
- * Génère une description de la prédiction pour un produit
- * Utilise le summary LLM si disponible, sinon description factuelle
+ * Generates prediction description for a product
+ * Uses LLM summary if available, otherwise factual description
  */
 function generatePredictionDescription(product: ProductWithCurrentPrice): string {
-  // Si on a le summary LLM (court), l'utiliser
+  // If we have LLM summary (short), use it
   if (product.llm_prediction?.summary) {
     return product.llm_prediction.summary;
   }
 
-  // Sinon, description factuelle basique
+  // Otherwise, basic factual description
   const orderCount = product.calculation_metadata.order_count;
   const qty = product.quantity_to_order;
 
   if (orderCount === 1) {
-    return `Suggestion: ${qty}u (1 seule commande historique)`;
+    return `Suggestion: ${qty}u (single historical order)`;
   } else if (orderCount > 1) {
-    return `Recommande: ${qty}u (mediane sur ${orderCount} commandes)`;
+    return `Recommended: ${qty}u (median over ${orderCount} orders)`;
   }
 
-  return `Quantite: ${qty}u`;
+  return `Quantity: ${qty}u`;
 }
 
 /**
- * Génère un devis Odoo (draft) à partir d'une proposition préparée
+ * Generates an Odoo draft quote from a prepared proposal
  *
- * Segmentation des produits:
- * - Produits de Base (confidence medium/high, ≥2 cmd) → sale.order.line
- * - Produits Optionnels (confidence low, 1 cmd) → sale.order.option
+ * Product segmentation:
+ * - Base Products (confidence medium/high, 2+ orders) -> sale.order.line
+ * - Optional Products (confidence low, 1 order) -> sale.order.option
  *
- * Étapes:
- * 1. Récupérer company_id du client (requis pour multi-company Odoo)
- * 2. Créer le sale.order avec tag "Auto-proposal"
- * 3. Séparer produits base vs optionnels
- * 4. Créer les sale.order.line pour produits de base
- * 5. Créer les sale.order.option pour produits optionnels
- * 6. Récupérer le devis complet avec lignes + taxes calculées
- * 7. Retourner les détails complets
+ * Steps:
+ * 1. Get client company_id (required for Odoo multi-company)
+ * 2. Create sale.order with "Auto-proposal" tag
+ * 3. Separate base vs optional products
+ * 4. Create sale.order.line for base products
+ * 5. Create sale.order.option for optional products
+ * 6. Retrieve complete quote with lines + calculated taxes
+ * 7. Return complete details
  *
- * @param proposal - Résultat de la préparation de proposition (pricing + MOQ)
- * @param odooClient - Client Odoo (XML-RPC ou JSON-2)
- * @returns Détails complets du devis créé
+ * @param proposal - Proposal preparation result (pricing + MOQ)
+ * @param odooClient - Odoo client (XML-RPC or JSON-2)
+ * @returns Complete created quote details
  */
 export async function generateQuote(
   proposal: ProposalPreparationResult,
   odooClient: OdooClient
 ): Promise<QuoteCreationResult> {
-  // 1. Récupérer company_id du client (requis pour multi-company Odoo)
+  // 1. Get client company_id (required for Odoo multi-company)
   const partnerInfo = await odooClient.getPartnerCompanyInfo(
     proposal.client_id
   );
 
-  // Si le partner n'a pas de company_id (false), utiliser company 1 par défaut
+  // If partner has no company_id (false), use default company 1
   let companyId: number;
   let companyName: string;
 
   if (!partnerInfo.company_id || partnerInfo.company_id === false) {
-    // Utiliser company_id 1 par défaut (première company Odoo)
+    // Use company_id 1 by default (first Odoo company)
     companyId = 1;
     companyName = "Default Company";
-    console.warn(`⚠️  Client ${proposal.client_id} sans company_id, utilisation company 1 par défaut`);
+    console.warn(`WARNING: Client ${proposal.client_id} has no company_id, using company 1 as default`);
   } else {
     companyId = partnerInfo.company_id[0];
     companyName = partnerInfo.company_id[1];
@@ -74,27 +81,27 @@ export async function generateQuote(
 
   const clientName = partnerInfo.name;
 
-  // 2. Créer le devis (sale.order) avec tag
+  // 2. Create quote (sale.order) with tag
   const quoteId = await odooClient.createSaleOrder({
     partner_id: proposal.client_id,
     company_id: companyId,
-    // Format Odoo many2many: [command, _, ids]
-    // Command 6 = Replace (remplace tous les tags par cette liste)
-    // [6, 0, [82]] = "Assigner uniquement le tag 82"
+    // Odoo many2many format: [command, _, ids]
+    // Command 6 = Replace (replace all tags with this list)
+    // [6, 0, [82]] = "Assign only tag 82"
     tag_ids: [
       [6, 0, [autoProposalConfig.quoteGeneration.autoProposalTagId]],
     ],
     note: autoProposalConfig.quoteGeneration.noteTemplate,
   });
 
-  // 3. Séparer produits base (≥2 cmd, confidence medium/high) vs optionnels (1 cmd, confidence low)
+  // 3. Separate base products (2+ orders, confidence medium/high) vs optional (1 order, confidence low)
   const baseProducts: ProductWithCurrentPrice[] = [];
   const optionalProducts: ProductWithCurrentPrice[] = [];
 
   for (const product of proposal.products) {
     const confidence = product.calculation_metadata.confidence;
-    // LOW = 1 commande historique → optionnel
-    // MEDIUM/HIGH = ≥2 commandes → base
+    // LOW = 1 historical order -> optional
+    // MEDIUM/HIGH = 2+ orders -> base
     if (confidence === 'low') {
       optionalProducts.push(product);
     } else {
@@ -102,9 +109,9 @@ export async function generateQuote(
     }
   }
 
-  console.log(`📦 Devis ${quoteId}: ${baseProducts.length} produits base, ${optionalProducts.length} produits optionnels`);
+  console.log(`Quote ${quoteId}: ${baseProducts.length} base products, ${optionalProducts.length} optional products`);
 
-  // 4. Créer les lignes de commande pour produits de BASE
+  // 4. Create order lines for BASE products
   for (const product of baseProducts) {
     const description = generatePredictionDescription(product);
     await odooClient.createSaleOrderLine({
@@ -116,29 +123,29 @@ export async function generateQuote(
     });
   }
 
-  // 5. Créer les OPTIONS pour produits OPTIONNELS (1 seule commande historique)
+  // 5. Create OPTIONS for OPTIONAL products (single historical order)
   for (const product of optionalProducts) {
     const description = generatePredictionDescription(product);
     await odooClient.createSaleOrderOption({
       order_id: quoteId,
       product_id: product.product_id,
       quantity: product.quantity_to_order,
-      uom_id: product.product_uom[0], // ID de l'unité de mesure
+      uom_id: product.product_uom[0], // Unit of measure ID
       price_unit: product.current_price_unit,
       name: description,
     });
   }
 
-  // 6. Récupérer le devis complet avec lignes + taxes
+  // 6. Retrieve complete quote with lines + taxes
   const { order, lines } = await odooClient.getSaleOrderDetails(quoteId);
 
-  // 7. Construire le résultat détaillé
+  // 7. Build detailed result
   const orderLines: QuoteLineDetails[] = lines.map((line) => ({
     line_id: line.id,
     product_id: line.product_id[0],
     product_name: line.product_id[1],
     product_uom: line.product_uom,
-    description: line.name, // Description/reasoning de la prédiction
+    description: line.name, // Prediction description/reasoning
     quantity_ordered: line.product_uom_qty,
     price_unit: line.price_unit,
     subtotal_ht: line.price_subtotal,
@@ -146,9 +153,9 @@ export async function generateQuote(
     tax_amount: line.price_total - line.price_subtotal,
   }));
 
-  // Construire les produits optionnels (sale.order.option ne sont pas dans lines)
+  // Build optional products (sale.order.option are not in lines)
   const optionalProductsDetails: QuoteLineDetails[] = optionalProducts.map((product) => ({
-    line_id: 0, // Les options n'ont pas de line_id
+    line_id: 0, // Options don't have line_id
     product_id: product.product_id,
     product_name: product.product_name,
     product_uom: product.product_uom,
@@ -156,8 +163,8 @@ export async function generateQuote(
     quantity_ordered: product.quantity_to_order,
     price_unit: product.current_price_unit,
     subtotal_ht: product.subtotal,
-    subtotal_ttc: product.subtotal, // Approximation (pas de calcul TVA pour options)
-    tax_amount: 0, // Pas calculé pour les options
+    subtotal_ttc: product.subtotal, // Approximation (no tax calculation for options)
+    tax_amount: 0, // Not calculated for options
   }));
 
   return {

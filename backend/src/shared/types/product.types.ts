@@ -1,8 +1,10 @@
 /**
- * Types partagés pour les produits
+ * Shared product types
  *
- * Barrel export: réexporte les types depuis stock-replenishment
- * pour éviter les dépendances croisées entre features
+ * Barrel export: re-exports types from stock-replenishment
+ * to avoid cross-dependencies between features
+ *
+ * @module shared/types/product
  */
 
 export type {

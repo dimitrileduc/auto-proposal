@@ -1,7 +1,9 @@
 /**
- * Export centralisé de toutes les tâches Trigger.dev
+ * Centralized exports for all Trigger.dev tasks
  *
- * Chaque tâche est définie dans son propre fichier pour une meilleure organisation
+ * Each task is defined in its own file for better organization.
+ *
+ * @module trigger
  */
 
 export { clientProposalTask } from "./client-proposal.task";
@@ -15,5 +17,3 @@ export type { BacktestClientTaskResult } from "./backtest-client.task";
 
 export { backtestAggregateTask } from "./backtest-aggregate.task";
 export type { BacktestAggregateResult } from "./backtest-aggregate.task";
-
-// Future: export { autoProposalCron } from "./auto-proposal-cron.task";

@@ -1,47 +1,51 @@
+/**
+ * Pricing service
+ *
+ * Enriches products with pricing information from order history.
+ *
+ * @module features/proposal-preparation/pricing/service
+ */
 import type { ProductStockStatus } from "../../../shared/types/product.types";
 import type { ProductWithCurrentPrice } from "../proposal-preparation.types";
 
 /**
- * Enrichit les produits avec les prix historiques du client
+ * Enriches products with historical client prices
  *
- * ## Contexte et limitations actuelles
+ * ## Context and current limitations
  *
- * **Pourquoi utiliser les prix historiques ?**
+ * **Why use historical prices?**
  *
- * L'instance Odoo utilise un modèle de tarification 100% basé sur pricelists :
- * - Les produits n'ont pas de `list_price` utilisable (volontairement mis à 99999.99€)
- * - Tous les prix réels sont gérés via `product.pricelist` avec règles personnalisées par client
- * - Le `price_unit` dans l'historique de commandes (`sale.order.line`) contient le prix
- *   calculé par le pricelist du client au moment de la commande
+ * The Odoo instance uses a 100% pricelist-based pricing model:
+ * - Products don't have usable `list_price` (intentionally set to 99999.99 EUR)
+ * - All actual prices are managed via `product.pricelist` with custom rules per client
+ * - The `price_unit` in order history (`sale.order.line`) contains the price
+ *   calculated by the client's pricelist at order time
  *
- * **Limitation de l'API Odoo v17** :
+ * **Odoo v17 API limitation:**
  *
- * Depuis Odoo v16+, les méthodes publiques pour calculer les prix via pricelist ont été supprimées.
- * Il n'est donc **pas possible d'obtenir le prix actuel avec pricelist via l'API externe**
- * sans module custom Odoo.
+ * Since Odoo v16+, public methods for calculating prices via pricelist have been removed.
+ * It's therefore **not possible to get current price with pricelist via external API**
+ * without a custom Odoo module.
  *
- * **Ce que contient le prix historique** :
- * - Pricelist du client (règles tarifaires négociées)
- * - Prix au moment de la dernière commande validée
- * -  Promotions relative a la dernière commande
+ * **What the historical price contains:**
+ * - Client's pricelist (negotiated pricing rules)
+ * - Price at time of last validated order
+ * - Promotions relative to the last order
  *
- * -
+ * **Future solutions for getting current prices:**
  *
- * **Solutions futures pour obtenir les prix actuels** :
+ * 1. **Custom Odoo module** (recommended) - Public wrapper for `_get_products_price()`
+ * 2. **Create temporary sale.order.line** - Odoo auto-calculates price, then read and delete
  *
- * 1. **Module custom Odoo** (recommandé) - Wrapper public pour `_get_products_price()`
- * 2. **Créer une sale.order.line temporaire** - Odoo calcule automatiquement le prix, puis lire et supprimer
- *
- *
- * @param products - Produits avec historique de commandes (order_history)
- * @returns Produits enrichis avec prix historiques et subtotaux calculés
+ * @param products - Products with order history (order_history)
+ * @returns Products enriched with historical prices and calculated subtotals
  */
 export function enrichWithHistoryPrices(
   products: ProductStockStatus[]
 ): ProductWithCurrentPrice[] {
   return products.map((product) => {
-    // Prendre le price_unit de la commande la plus récente
-    // Note: order_history est trié par date décroissante dans stock-analysis
+    // Take price_unit from most recent order
+    // Note: order_history is sorted by date descending in stock-analysis
     const historicalPrice = product.order_history[0]?.price_unit || 0;
 
     return {

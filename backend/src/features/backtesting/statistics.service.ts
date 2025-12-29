@@ -1,36 +1,43 @@
 /**
- * Service d'analyse statistique pour les backtests agrégés
+ * Statistical analysis service for aggregated backtests
  *
- * Calcule des statistiques descriptives (mean, median, stdDev, percentiles)
- * sur les métriques de backtest collectées pour plusieurs clients
+ * Computes descriptive statistics (mean, median, stdDev, percentiles)
+ * on backtest metrics collected across multiple clients.
+ *
+ * @module features/backtesting/statistics
  */
 
 /**
- * Métriques d'un backtest individuel (simplifié)
+ * Individual backtest metrics (simplified)
  */
 export interface IndividualBacktestMetrics {
   precision: number;
   recall: number;
   f1Score: number;
   mae: number;
-  wmape: number;  // Weighted MAPE (métrique robuste)
-  mape: number;   // MAPE classique (gardé pour info)
-  bias: number;   // Biais directionnel (>0 = surestime, <0 = sous-estime)
+  /** Weighted MAPE (robust metric) */
+  wmape: number;
+  /** Classic MAPE (kept for reference) */
+  mape: number;
+  /** Directional bias: >0 = overestimate, <0 = underestimate */
+  bias: number;
 }
 
 /**
- * Statistiques agrégées calculées sur N clients
+ * Aggregate statistics computed across N clients
  */
 export interface AggregateMetrics {
+  /** Arithmetic mean of all metrics */
   mean: {
     precision: number;
     recall: number;
     f1Score: number;
     mae: number;
-    wmape: number;  // Weighted MAPE (métrique robuste)
-    mape: number;   // MAPE classique (gardé pour info)
-    bias: number;   // Biais directionnel moyen
+    wmape: number;
+    mape: number;
+    bias: number;
   };
+  /** Median values (robust to outliers) */
   median: {
     precision: number;
     recall: number;
@@ -40,6 +47,7 @@ export interface AggregateMetrics {
     mape: number;
     bias: number;
   };
+  /** Standard deviation (variability measure) */
   stdDev: {
     precision: number;
     recall: number;
@@ -49,6 +57,7 @@ export interface AggregateMetrics {
     mape: number;
     bias: number;
   };
+  /** Percentile distribution for key metrics */
   percentiles: {
     p25: { recall: number; wmape: number; mape: number; bias: number };
     p50: { recall: number; wmape: number; mape: number; bias: number };
@@ -58,17 +67,16 @@ export interface AggregateMetrics {
 }
 
 /**
- * Calcule les statistiques agrégées (mean, median, stdDev, percentiles)
- * sur un ensemble de métriques de backtest
+ * Computes aggregate statistics (mean, median, stdDev, percentiles)
+ * over a collection of individual backtest metrics
  *
- * @param metrics - Liste des métriques de backtest individuels
- * @returns Statistiques agrégées calculées
+ * @param metrics - Array of individual backtest metrics
+ * @returns Computed aggregate statistics
  */
 export function calculateAggregateStatistics(
   metrics: IndividualBacktestMetrics[]
 ): AggregateMetrics {
   if (metrics.length === 0) {
-    // Retourner des valeurs par défaut si pas de données
     const emptyStats = {
       precision: 0,
       recall: 0,
@@ -91,7 +99,6 @@ export function calculateAggregateStatistics(
     };
   }
 
-  // 1. Calculer les moyennes (mean)
   const mean = {
     precision: calculateMean(metrics.map((m) => m.precision)),
     recall: calculateMean(metrics.map((m) => m.recall)),
@@ -102,7 +109,6 @@ export function calculateAggregateStatistics(
     bias: calculateMean(metrics.map((m) => m.bias)),
   };
 
-  // 2. Calculer les médianes
   const median = {
     precision: calculateMedian(metrics.map((m) => m.precision)),
     recall: calculateMedian(metrics.map((m) => m.recall)),
@@ -113,7 +119,6 @@ export function calculateAggregateStatistics(
     bias: calculateMedian(metrics.map((m) => m.bias)),
   };
 
-  // 3. Calculer les écarts-types (standard deviation)
   const stdDev = {
     precision: calculateStdDev(metrics.map((m) => m.precision), mean.precision),
     recall: calculateStdDev(metrics.map((m) => m.recall), mean.recall),
@@ -124,7 +129,6 @@ export function calculateAggregateStatistics(
     bias: calculateStdDev(metrics.map((m) => m.bias), mean.bias),
   };
 
-  // 4. Calculer les percentiles (sur recall, wmape, mape et bias)
   const recallValues = metrics.map((m) => m.recall).sort((a, b) => a - b);
   const wmapeValues = metrics.map((m) => m.wmape).sort((a, b) => a - b);
   const mapeValues = metrics.map((m) => m.mape).sort((a, b) => a - b);
@@ -161,7 +165,10 @@ export function calculateAggregateStatistics(
 }
 
 /**
- * Calcule la moyenne d'un tableau de nombres
+ * Calculates the arithmetic mean of a number array
+ *
+ * @param values - Array of numeric values
+ * @returns Arithmetic mean, or 0 if array is empty
  */
 function calculateMean(values: number[]): number {
   if (values.length === 0) return 0;
@@ -170,7 +177,10 @@ function calculateMean(values: number[]): number {
 }
 
 /**
- * Calcule la médiane d'un tableau de nombres
+ * Calculates the median of a number array
+ *
+ * @param values - Array of numeric values
+ * @returns Median value, or 0 if array is empty
  */
 function calculateMedian(values: number[]): number {
   if (values.length === 0) return 0;
@@ -179,16 +189,18 @@ function calculateMedian(values: number[]): number {
   const mid = Math.floor(sorted.length / 2);
 
   if (sorted.length % 2 === 0) {
-    // Pair: moyenne des 2 valeurs centrales
     return (sorted[mid - 1] + sorted[mid]) / 2;
   } else {
-    // Impair: valeur centrale
     return sorted[mid];
   }
 }
 
 /**
- * Calcule l'écart-type (standard deviation) d'un tableau de nombres
+ * Calculates the standard deviation of a number array
+ *
+ * @param values - Array of numeric values
+ * @param mean - Pre-computed mean of the values
+ * @returns Standard deviation, or 0 if array is empty
  */
 function calculateStdDev(values: number[], mean: number): number {
   if (values.length === 0) return 0;
@@ -199,9 +211,14 @@ function calculateStdDev(values: number[], mean: number): number {
 }
 
 /**
- * Calcule le percentile P d'un tableau trié de nombres
- * @param sortedValues - Tableau trié en ordre croissant
- * @param percentile - Percentile à calculer (0-100)
+ * Calculates the Pth percentile of a sorted number array
+ *
+ * Uses linear interpolation between adjacent values when
+ * the percentile falls between two data points.
+ *
+ * @param sortedValues - Array sorted in ascending order
+ * @param percentile - Percentile to compute (0-100)
+ * @returns Interpolated percentile value, or 0 if array is empty
  */
 function calculatePercentile(sortedValues: number[], percentile: number): number {
   if (sortedValues.length === 0) return 0;
@@ -215,12 +232,11 @@ function calculatePercentile(sortedValues: number[], percentile: number): number
     return sortedValues[lower];
   }
 
-  // Interpolation linéaire entre lower et upper
   return sortedValues[lower] * (1 - weight) + sortedValues[upper] * weight;
 }
 
 /**
- * Résultat d'un backtest individuel pour l'agrégation
+ * Individual backtest result for aggregation
  */
 export interface BacktestIndividualResult {
   clientId: number;
@@ -232,13 +248,12 @@ export interface BacktestIndividualResult {
 }
 
 /**
- * Données pour générer le rapport agrégé
+ * Input data for generating the aggregate report
  */
 export interface AggregateReportData {
   executionDate: string;
   config: {
     daysBeforePrediction?: number;
-    analysisWindowDays?: number;
     replenishmentThreshold?: number;
   };
   aggregateMetrics: AggregateMetrics;
@@ -252,10 +267,10 @@ export interface AggregateReportData {
 }
 
 /**
- * Génère un rapport markdown avec tableau comparatif des backtests agrégés
+ * Generates a markdown report with comparative tables for aggregated backtests
  *
- * @param data - Données du backtest agrégé
- * @returns Rapport markdown formaté
+ * @param data - Aggregated backtest data
+ * @returns Formatted markdown report
  */
 export function generateAggregateMarkdownReport(data: AggregateReportData): string {
   const { aggregateMetrics, individualResults } = data;
@@ -274,7 +289,7 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 ### Configuration
 
 - **Jours d'avance** : ${data.config.daysBeforePrediction ?? 1}j
-- **Fenêtre d'analyse** : ${data.config.analysisWindowDays ?? 120}j
+- **Fenêtre d'analyse** : 120j (hardcodé)
 - **Seuil réappro** : ${data.config.replenishmentThreshold ?? 30}j
 
 ---

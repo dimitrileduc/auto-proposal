@@ -1,11 +1,15 @@
+/**
+ * Client inactivity transformation utilities
+ * @module features/client-inactivity/transform
+ */
 import type { OdooPartner } from "../../infrastructure/odoo/odoo.service";
 import type { InactiveClient } from "./inactivity.types";
 
 /**
- * Transforme les partenaires Odoo en clients inactifs
+ * Transforms Odoo partners into inactive clients
  *
- * @param partners Partenaires Odoo bruts
- * @returns Clients inactifs avec email normalisé
+ * @param partners - Raw Odoo partners
+ * @returns Inactive clients with normalized email
  */
 export function transformInactiveClients(
   partners: OdooPartner[]
