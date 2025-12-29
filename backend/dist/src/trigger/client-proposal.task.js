@@ -69,19 +69,10 @@ export const clientProposalTask = task({
             const hasProducts = stockAnalysis.products.length > 0;
             result.hasRisk = hasProducts;
             result.productsCount = hasProducts ? stockAnalysis.products.length : 0;
-            // Seuil de réapprovisionnement (couverture + lead time)
-            const replenishmentThreshold = config.replenishmentThreshold;
             if (hasProducts) {
-                // Compter les produits urgents (daysUntilStockout <= 0)
-                result.urgentProductsCount = stockAnalysis.products.filter((p) => p.stock_prediction.days_until_stockout <= 0).length;
-                // Compter les produits modérés (0 < days <= threshold)
-                result.moderateProductsCount = stockAnalysis.products.filter((p) => p.stock_prediction.days_until_stockout > 0 &&
-                    p.stock_prediction.days_until_stockout <= replenishmentThreshold).length;
                 console.log(`📊 Client ${payload.client.name}: ${result.productsCount} products at risk`);
             }
             else {
-                result.urgentProductsCount = 0;
-                result.moderateProductsCount = 0;
                 console.log(`✅ Client ${payload.client.name}: No replenishment needed`);
             }
             // Phase 2.5: Proposal Preparation (Pricing + MOQ)
@@ -166,8 +157,6 @@ export const clientProposalTask = task({
                 summary: {
                     hasRisk: result.hasRisk,
                     productsCount: result.productsCount ?? 0,
-                    urgentProductsCount: result.urgentProductsCount ?? 0,
-                    moderateProductsCount: result.moderateProductsCount ?? 0,
                     finalAmount: result.finalAmount ?? 0,
                     quoteName: result.quoteName,
                     quoteId: result.quoteId,

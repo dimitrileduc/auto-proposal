@@ -106,8 +106,6 @@ export interface ClientProposalResult {
   };
   // Stats pour le tableau global
   productsCount?: number;
-  urgentProductsCount?: number;
-  moderateProductsCount?: number;
   initialAmount?: number; // Avant MOQ
   finalAmount?: number; // Après MOQ
   moqAdjustmentApplied?: boolean;
@@ -150,8 +148,6 @@ export interface ClientTableRow {
   clientId: number;
   productsCount: number;
   riskLevel: "urgent" | "moderate" | "ok";
-  urgentCount?: number;
-  moderateCount?: number;
   initialAmount: number;
   finalAmount: number;
   moqAdjusted: boolean;
@@ -191,8 +187,6 @@ export interface ClientReportData {
   };
   summary: {
     productsCount: number;
-    urgentCount: number;
-    moderateCount: number;
     initialAmount: number;
     finalAmount: number;
     moqAdjusted: boolean;

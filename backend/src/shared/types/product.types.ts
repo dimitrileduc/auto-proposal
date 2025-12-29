@@ -7,7 +7,6 @@
 
 export type {
   OrderHistoryDetail,
-  StockPredictionDetails,
   ProductStockStatus,
   StockReplenishmentResult,
 } from "../../features/stock-replenishment/stock-replenishment.types";

@@ -3,9 +3,56 @@
  */
 
 import { ax, AxAIOpenRouter } from "@ax-llm/ax";
-// Re-export des types depuis l'ancien service
-export type { LLMPrediction, LLMPredictionInput, LLMPredictionResult, LLMUsage } from "./llm-openrouter.service.js";
-import type { LLMPrediction, LLMPredictionInput, LLMPredictionResult, LLMUsage } from "./llm-openrouter.service.js";
+
+// Types déplacés depuis llm-openrouter.service.ts
+interface OrderHistoryItem {
+  date: string;
+  quantity: number;
+}
+
+export interface LLMPredictionInput {
+  productName: string;
+  recentOrders: OrderHistoryItem[];
+  lastYearOrders: OrderHistoryItem[];
+  currentDate?: string;
+  replenishmentThresholdDays: number;
+}
+
+export interface LLMPrediction {
+  analysis: {
+    frequency_pattern: string;
+    detected_outliers: number[];
+    seasonality_impact: "none" | "weak" | "strong";
+    trend_direction: string;
+    day_cycle_analysis?: string;
+    cycle_days?: number;
+    last_order_date?: string;
+    predicted_next_date?: string;
+    days_until_next?: number;
+  };
+  baseline_quantity: number;
+  recommended_quantity: number;
+  confidence: "low" | "medium" | "high";
+  confidence_phase1?: "low" | "medium" | "high";
+  confidence_phase2?: "low" | "medium" | "high";
+  reasoning: string;
+  summary?: string;
+}
+
+export interface LLMUsage {
+  promptTokens: number;
+  completionTokens: number;
+  totalTokens: number;
+}
+
+export interface LLMPredictionResult {
+  prediction: LLMPrediction;
+  usage: LLMUsage;
+  model: string;
+  provider: string;
+  inputPrompt: string;
+  providerReasoning?: string;
+}
 
 // Configuration
 const MODEL = "google/gemini-3-flash-preview";
@@ -19,6 +66,7 @@ const stockPredictorSignature = `
 - **recentOrders** : Historique des commandes récentes (2025) avec dates et quantités
 - **lastYearOrders** : Historique des commandes de l'année précédente (2024 et avant)
 - **currentDate** : Date actuelle pour la prévision
+- **replenishmentThresholdDays** : Seuil de risque en jours. Si la prochaine commande naturelle est attendue dans moins de X jours → RISQUE, commander maintenant. Si > X jours → PAS DE RISQUE, quantity = 0
 - **quantity** : La quantité réelle commandée (pour validation)
 
 ## Stratégie de prévision :
@@ -68,13 +116,24 @@ La règle la plus importante est de **vérifier le dernier cycle de commande**. 
 ❌ Extrapoler des tendances saisonnières sans données solides
 ❌ Moyenner aveuglément sans considérer les valeurs aberrantes
 
+## CRITIQUE : Appliquer le seuil de réapprovisionnement
+1. Estimer quand la prochaine commande naturelle aura lieu (basé sur la fréquence historique)
+2. Calculer le nombre de jours avant cette prochaine commande
+3. **SI jours < replenishmentThresholdDays** → RISQUE DE RUPTURE → Recommander la quantité habituelle
+4. **SI jours ≥ replenishmentThresholdDays** → PAS DE RISQUE → quantity = 0
+
+Exemple: Si le produit est commandé tous les 30 jours, dernière commande il y a 25 jours, et replenishmentThresholdDays = 30:
+- Prochaine commande dans environ 5 jours (30 - 25)
+- 5 < 30 → RISQUE → Commander maintenant
+
 ## Objectif :
 Minimiser l'écart entre la prévision et la quantité réelle en privilégiant la précision sur l'optimisme. En cas de doute entre deux quantités, choisir la plus conservatrice (la plus basse)."
 
 productName:string,
 recentOrders:string,
 lastYearOrders:string,
-currentDate:string
+currentDate:string,
+replenishmentThresholdDays:number
 ->
 quantity:number,
 reasoning:string
@@ -146,6 +205,7 @@ export async function predictWithAxOptimized(
     recentOrders: formatOrders(input.recentOrders),
     lastYearOrders: formatOrders(input.lastYearOrders),
     currentDate,
+    replenishmentThresholdDays: input.replenishmentThresholdDays,
   };
 
   try {

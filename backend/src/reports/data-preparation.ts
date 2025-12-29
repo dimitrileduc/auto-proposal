@@ -49,8 +49,6 @@ export function prepareClientReportData(
     },
     summary: {
       productsCount: clientResult.productsCount ?? 0,
-      urgentCount: clientResult.urgentProductsCount ?? 0,
-      moderateCount: clientResult.moderateProductsCount ?? 0,
       initialAmount: clientResult.initialAmount ?? 0,
       finalAmount: clientResult.finalAmount ?? 0,
       moqAdjusted: clientResult.moqAdjustmentApplied ?? false,

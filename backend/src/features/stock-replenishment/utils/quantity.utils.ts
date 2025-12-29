@@ -1,5 +1,4 @@
 import { calculateMedian } from "./median.utils";
-import { autoProposalConfig } from "../../../config/auto-proposal";
 import type { OrderLineDetail } from "../order-history/order-history.types";
 
 /**
@@ -31,7 +30,6 @@ export interface QuantityCalculationResult {
 export function calculateQuantityFromHistory(
   orderLines: OrderLineDetail[]
 ): QuantityCalculationResult {
-  const config = autoProposalConfig.quantityStrategy;
   const orderCount = orderLines.length;
 
   // Niveau 0 : Aucune ligne de commande → Skip
@@ -71,7 +69,7 @@ export function calculateQuantityFromHistory(
   }
 
   // Niveau 2 : 2-4 lignes de commande → Médiane de toutes
-  if (orderCount < config.minOrdersForHighConfidence) {
+  if (orderCount < 5) {
     const median = calculateMedian(quantities);
     return {
       quantity: median,
@@ -85,8 +83,8 @@ export function calculateQuantityFromHistory(
     };
   }
 
-  // Niveau 3 : 5+ lignes de commande → Médiane des N dernières
-  const recentQuantities = quantities.slice(0, config.maxRecentOrderLines);
+  // Niveau 3 : 5+ lignes de commande → Médiane des 10 dernières
+  const recentQuantities = quantities.slice(0, 10);
   const median = calculateMedian(recentQuantities);
 
   return {

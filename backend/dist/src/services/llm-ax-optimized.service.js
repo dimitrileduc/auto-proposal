@@ -13,6 +13,7 @@ const stockPredictorSignature = `
 - **recentOrders** : Historique des commandes récentes (2025) avec dates et quantités
 - **lastYearOrders** : Historique des commandes de l'année précédente (2024 et avant)
 - **currentDate** : Date actuelle pour la prévision
+- **replenishmentThresholdDays** : Seuil de risque en jours. Si la prochaine commande naturelle est attendue dans moins de X jours → RISQUE, commander maintenant. Si > X jours → PAS DE RISQUE, quantity = 0
 - **quantity** : La quantité réelle commandée (pour validation)
 
 ## Stratégie de prévision :
@@ -62,13 +63,24 @@ La règle la plus importante est de **vérifier le dernier cycle de commande**. 
 ❌ Extrapoler des tendances saisonnières sans données solides
 ❌ Moyenner aveuglément sans considérer les valeurs aberrantes
 
+## CRITIQUE : Appliquer le seuil de réapprovisionnement
+1. Estimer quand la prochaine commande naturelle aura lieu (basé sur la fréquence historique)
+2. Calculer le nombre de jours avant cette prochaine commande
+3. **SI jours < replenishmentThresholdDays** → RISQUE DE RUPTURE → Recommander la quantité habituelle
+4. **SI jours ≥ replenishmentThresholdDays** → PAS DE RISQUE → quantity = 0
+
+Exemple: Si le produit est commandé tous les 30 jours, dernière commande il y a 25 jours, et replenishmentThresholdDays = 30:
+- Prochaine commande dans environ 5 jours (30 - 25)
+- 5 < 30 → RISQUE → Commander maintenant
+
 ## Objectif :
 Minimiser l'écart entre la prévision et la quantité réelle en privilégiant la précision sur l'optimisme. En cas de doute entre deux quantités, choisir la plus conservatrice (la plus basse)."
 
 productName:string,
 recentOrders:string,
 lastYearOrders:string,
-currentDate:string
+currentDate:string,
+replenishmentThresholdDays:number
 ->
 quantity:number,
 reasoning:string
@@ -126,6 +138,7 @@ export async function predictWithAxOptimized(input) {
         recentOrders: formatOrders(input.recentOrders),
         lastYearOrders: formatOrders(input.lastYearOrders),
         currentDate,
+        replenishmentThresholdDays: input.replenishmentThresholdDays,
     };
     try {
         // Appeler ax

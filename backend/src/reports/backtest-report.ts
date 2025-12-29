@@ -899,18 +899,6 @@ export function generateBacktestReportJSONv2(
       }
     }
 
-    // Stock data (si disponible)
-    const stock: EnrichedProductMatch["stock"] = analyzedProduct
-      ? {
-          estimatedRemaining: analyzedProduct.stock_prediction?.estimated_stock_remaining || 0,
-          daysUntilStockout: analyzedProduct.stock_prediction?.days_until_stockout || 0,
-          replenishmentThreshold:
-            analyzedProduct.calculation_metadata?.minimum_qty_threshold || 0,
-          consumptionPerDay:
-            analyzedProduct.stock_prediction?.consumption_per_day || 0,
-        }
-      : undefined;
-
     return {
       productId: tp.productId,
       productName: tp.productName,
@@ -938,7 +926,6 @@ export function generateBacktestReportJSONv2(
 
       history,
       llm,
-      stock,
     };
   });
 
@@ -948,13 +935,6 @@ export function generateBacktestReportJSONv2(
     const classification = classifyMismatch("false_positive", fp.reason, fp.qty);
 
     const context: EnrichedProductMismatch["context"] = {};
-
-    if (analyzedProduct?.stock_prediction) {
-      context.stock = {
-        estimatedRemaining: analyzedProduct.stock_prediction.estimated_stock_remaining || 0,
-        daysUntilStockout: analyzedProduct.stock_prediction.days_until_stockout || 0,
-      };
-    }
 
     if (analyzedProduct?.order_history) {
       const orderCount = analyzedProduct.order_history.length;
@@ -1035,13 +1015,6 @@ export function generateBacktestReportJSONv2(
     const classification = classifyMismatch("false_negative", fn.reason, fn.qty);
 
     const context: EnrichedProductMismatch["context"] = {};
-
-    if (analyzedProduct?.stock_prediction) {
-      context.stock = {
-        estimatedRemaining: analyzedProduct.stock_prediction.estimated_stock_remaining || 0,
-        daysUntilStockout: analyzedProduct.stock_prediction.days_until_stockout || 0,
-      };
-    }
 
     if (analyzedProduct?.order_history) {
       const orderCount = analyzedProduct.order_history.length;

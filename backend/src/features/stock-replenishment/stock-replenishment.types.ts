@@ -8,13 +8,6 @@ export interface OrderHistoryDetail {
   price_unit: number;
 }
 
-export interface StockPredictionDetails {
-  consumption_per_day: number;
-  estimated_stock_remaining: number;
-  days_until_stockout: number;
-  replenishment_threshold_days: number;
-}
-
 export interface LLMPredictionDetails {
   quantity: number;
   confidence: "low" | "medium" | "high";
@@ -55,25 +48,20 @@ export interface ProductStockStatus {
   product_name: string;
   product_uom: [number, string];
 
-  // 1. Historique des commandes (base)
+  // 1. Historique des commandes
   order_history: OrderHistoryDetail[];
 
-  // 2. Stock prediction (Phase 1: TRIGGER)
-  stock_prediction: StockPredictionDetails;
-
-  // 3. Quantity calculation (Phase 2: QUANTITÉ)
+  // 2. Quantité finale
   quantity_to_order: number;
+  quantity_source: "llm" | "median-fallback"; // Source de la quantité finale
+
+  // 3. Métadonnées de calcul historique (indépendant du LLM)
   calculation_metadata: QuantityCalculationMetadata;
 
-  // 4. LLM prediction (si utilisé pour >2 commandes)
+  // 4. LLM prediction (si disponible)
   llm_prediction?: LLMPredictionDetails;
-  quantity_source?: "median" | "llm"; // Source de la quantité finale
 
-  // 5. LLM tracking (pour rapports)
-  llm_required: boolean; // Le produit devait-il utiliser le LLM ? (>2 commandes)
-  llm_success: boolean;  // A-t-on réussi à obtenir une prédiction LLM ?
-
-  // 6. LLM input data (pour debug/audit dans les rapports)
+  // 4. LLM input data (pour debug/audit dans les rapports)
   llm_input_data?: {
     recent_orders: Array<{ date: string; quantity: number }>;
     last_year_orders: Array<{ date: string; quantity: number }>;

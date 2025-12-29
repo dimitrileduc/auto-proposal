@@ -114,13 +114,9 @@ export function compareSystemPredictionVsRealOrder(
 
       // FALSE POSITIVE: Le système a prédit >0 MAIS le client n'a pas commandé
       const analyzedProduct = analyzedProducts.get(productId);
-      let reason = "Prédit mais non commandé";
-
-      if (analyzedProduct) {
-        const stock = analyzedProduct.stock_prediction.estimated_stock_remaining;
-        const days = analyzedProduct.stock_prediction.days_until_stockout;
-        reason = `Stock prédit: ${stock.toFixed(1)}u (${days}j restants) → prédit ${systemProduct.quantity_to_order}u mais non commandé`;
-      }
+      let reason = analyzedProduct
+        ? `Prédit ${systemProduct.quantity_to_order}u mais non commandé`
+        : "Prédit mais non commandé";
 
       // Déterminer la confidence basée sur l'historique
       const orderCount = analyzedProduct?.order_history?.length ?? 0;
@@ -164,24 +160,11 @@ export function compareSystemPredictionVsRealOrder(
       const analyzedProduct = analyzedProducts.get(productId);
 
       if (systemProduct && systemProduct.quantity_to_order === 0) {
-        // On avait prédit 0 (pas de besoin) mais le client a commandé
-        const stock = analyzedProduct?.stock_prediction.estimated_stock_remaining ?? 0;
-        const days = analyzedProduct?.stock_prediction.days_until_stockout ?? 0;
-        reason = `LLM avait prédit 0 (pas de besoin) avec stock: ${stock.toFixed(1)}u (${days}j) mais client a commandé ${realProduct.product_uom_qty}u`;
+        // On avait prédit 0 (pas de risque) mais le client a commandé
+        reason = `LLM avait prédit 0 (pas de risque) mais client a commandé ${realProduct.product_uom_qty}u`;
       } else if (analyzedProduct) {
-        // Produit analysé mais filtré
-        const stock = analyzedProduct.stock_prediction.estimated_stock_remaining;
-        const days = analyzedProduct.stock_prediction.days_until_stockout;
-        const threshold = analyzedProduct.stock_prediction.replenishment_threshold_days;
-
-        // Déterminer la vraie raison du filtrage
-        if (days < 0) {
-          reason = `En rupture (${days}j) mais non prédit - probablement filtré (pas de consommation ou historique insuffisant)`;
-        } else if (days > threshold) {
-          reason = `Stock suffisant: ${stock.toFixed(1)}u (${days}j restants > seuil ${threshold}j)`;
-        } else {
-          reason = `Stock: ${stock.toFixed(1)}u (${days}j restants) - filtré pour autre raison`;
-        }
+        // Produit analysé mais non prédit (LLM → 0)
+        reason = `Produit analysé mais LLM → 0 - client a commandé ${realProduct.product_uom_qty}u`;
       } else {
         // Produit PAS dans stockAnalysis → jamais commandé avant dans la fenêtre d'analyse
         const windowDays = orderContext.analysisWindowDays ?? 120;

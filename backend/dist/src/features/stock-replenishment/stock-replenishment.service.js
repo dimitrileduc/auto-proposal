@@ -1,7 +1,5 @@
 import { getProductOrderHistory } from "./order-history/order-history.service";
-import { calculateDailyConsumption, calculateClientReorderWindow } from "./utils/consumption.utils";
-import { predictStockStatus } from "./utils/prediction.utils";
-import { calculateQuantityFromHistory } from "./utils/quantity.utils";
+import { calculateQuantityFromHistory } from "./utils/quantity.utils"; // Gardé pour fallback uniquement
 import { autoProposalConfig } from "../../config/auto-proposal";
 import { getTodayAsDateString } from "../../utils/date.utils";
 // Service ax optimisé avec demos few-shot
@@ -25,16 +23,8 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
     const analysisEndDate = config?.analysisEndDate ?? getTodayAsDateString();
     // 1. Récupération de l'historique récent (180j)
     const recentHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
-    // 2. Récupération de l'historique complet (730j) pour fenêtre adaptative
+    // 2. Récupération de l'historique complet (730j) - utilisé par le LLM
     const fullHistory = await getProductOrderHistory(clientId, 730, analysisEndDate);
-    // 3. Calculer la fenêtre moyenne de recommande du client
-    const clientReorderWindow = calculateClientReorderWindow(recentHistory.products);
-    if (clientReorderWindow) {
-        console.log(`\n📏 Fenêtre moyenne de recommande client: ${clientReorderWindow.toFixed(1)}j`);
-    }
-    else {
-        console.log(`\n📏 Fenêtre client: N/A (pas assez de produits réguliers)`);
-    }
     console.log(`\n🔍 Analyse de ${recentHistory.products.length} produits pour client ${clientId}...`);
     const analyzedProducts = []; // Produits à commander uniquement
     const allProducts = []; // TOUS les produits analysés (pour backtest)
@@ -52,50 +42,16 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
             console.log(`     ❌ SKIP: Produit de type service`);
             continue;
         }
-        // Fenêtre adaptative : Si 1 commande dans 180j, check historique 730j
-        let ordersToUse = product.orders;
-        let windowDays = daysOfHistory;
-        if (product.orders.length === 1) {
-            // Lookup dans fullHistory
-            const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
-            if (fullProduct && fullProduct.orders.length > 1) {
-                ordersToUse = fullProduct.orders;
-                windowDays = 730;
-                console.log(`     ℹ️ 1 commande dans 180j, élargissement → ${fullProduct.orders.length} commandes sur 730j`);
-            }
-        }
-        // Calcul consommation moyenne
-        const consumptionPerDay = calculateDailyConsumption(ordersToUse, windowDays, new Date(analysisEndDate), clientReorderWindow ?? undefined);
-        console.log(`     Consommation/jour: ${consumptionPerDay.toFixed(4)}`);
-        // Skip si pas de consommation
-        if (consumptionPerDay <= 0) {
-            console.log(`     ❌ SKIP: Pas de consommation`);
-            continue;
-        }
-        // Prédiction du stock
-        const stockPrediction = predictStockStatus(product, consumptionPerDay, new Date(analysisEndDate));
-        console.log(`     Stock restant estimé: ${stockPrediction.estimatedStock.toFixed(2)}`);
-        console.log(`     Jours avant rupture: ${stockPrediction.daysUntilStockout.toFixed(1)}j`);
-        console.log(`     Seuil réappro: ${replenishmentThresholdDays}j`);
-        // QUANTITÉ: Calculer selon médiane de l'historique (baseline)
-        const calculation = calculateQuantityFromHistory(ordersToUse);
-        console.log(`     Quantité médiane: ${calculation.quantity} (${calculation.metadata.strategy}, ${calculation.metadata.confidence})`);
-        // Skip si pas d'historique récent pour calculer la quantité
+        // FALLBACK ONLY: Médiane calculée uniquement comme fallback d'urgence si LLM échoue
+        const calculation = calculateQuantityFromHistory(product.orders);
         if (calculation.quantity === null) {
-            console.log(`     ❌ SKIP: Pas d'historique pour calculer quantité`);
+            console.log(`     ❌ SKIP: Pas d'historique pour calculer fallback`);
             continue;
         }
-        // NOUVEAU: Toujours utiliser le LLM pour décider du risque ET de la quantité
-        const needsLLM = true; // Tous les produits passent par le LLM maintenant
-        console.log(`     🔜 LLM va décider du risque de rupture et de la quantité`);
+        // Tous les produits passent par le LLM
         productsToProcess.push({
             product,
-            ordersToUse,
-            windowDays,
-            consumptionPerDay,
-            stockPrediction,
-            calculation,
-            needsLLM,
+            calculation, // Gardé uniquement pour fallback
         });
     }
     // ====================================================================
@@ -103,18 +59,16 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
     // ====================================================================
     const llmResults = new Map();
     const llmInputData = new Map();
-    const productsNeedingLLM = productsToProcess.filter(p => p.needsLLM);
-    if (productsNeedingLLM.length > 0) {
-        console.log(`\n🤖 Lancement de ${productsNeedingLLM.length} prédictions LLM en parallèle (max 10 simultanées)...`);
+    if (productsToProcess.length > 0) {
+        console.log(`\n🤖 Lancement de ${productsToProcess.length} prédictions LLM en parallèle (max 10 simultanées)...`);
         // Limite de concurrence: 10 requêtes LLM simultanées max
         // (Anthropic Haiku tier: 50 req/min, on reste safe à 10 parallèles)
         const limit = pLimit(10);
-        const llmPromises = productsNeedingLLM.map((productData) => limit(async () => {
-            const { product, ordersToUse, stockPrediction, consumptionPerDay } = productData;
-            // IMPORTANT: Pour le LLM, on utilise TOUJOURS fullHistory (730j) pour avoir accès à N-1
-            // ordersToUse (120j) est utilisé pour consommation/stock, mais trop court pour N-1
+        const llmPromises = productsToProcess.map((productData) => limit(async () => {
+            const { product } = productData;
+            // Le LLM reçoit TOUJOURS fullHistory (730j) pour avoir accès à N-1
             const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
-            const ordersForLLM = fullProduct?.orders ?? ordersToUse;
+            const ordersForLLM = fullProduct?.orders ?? product.orders;
             // Split orders into 2 views: recent (5 months) + same period last year
             // Following IRIS: compare current trend vs historical seasonal baseline
             const { recent, lastYear } = splitOrdersByPeriod(ordersForLLM, // ← Utiliser fullHistory pour avoir N-1 (12-24 mois avant)
@@ -123,13 +77,13 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
             const recentOrders = recent.map(o => ({ date: o.date_order, quantity: o.quantity }));
             const lastYearOrders = lastYear.map(o => ({ date: o.date_order, quantity: o.quantity }));
             try {
-                // Le LLM reçoit SEULEMENT l'historique, il déduit lui-même le risque
+                // Le LLM reçoit l'historique + le seuil de réapprovisionnement
                 const llmInput = {
                     productName: product.product_name,
                     recentOrders,
                     lastYearOrders,
                     currentDate: analysisEndDate,
-                    // PAS DE STOCK INFO ! Le LLM doit déduire lui-même
+                    replenishmentThresholdDays, // Seuil de risque business
                 };
                 const llmResult = await predictWithLLM(llmInput);
                 llmResults.set(product.product_id, llmResult);
@@ -165,15 +119,14 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
     // PHASE 3: Finaliser les produits avec les résultats LLM
     // ====================================================================
     for (const productData of productsToProcess) {
-        const { product, ordersToUse, consumptionPerDay, stockPrediction, calculation } = productData;
+        const { product, calculation } = productData;
         console.log(`\n  📦 Finalisation: ${product.product_name} (ID: ${product.product_id})`);
-        // STRATÉGIE: Si >2 commandes → LLM, sinon → médiane
-        let finalQuantity = calculation.quantity;
-        let llmPrediction = undefined;
-        let quantitySource = "median";
         const llmResult = llmResults.get(product.product_id);
+        let finalQuantity;
+        let llmPrediction = undefined;
+        let quantitySource;
         if (llmResult) {
-            // REMPLACER la médiane par LLM
+            // ✅ LLM a réussi - utiliser sa décision
             finalQuantity = llmResult.prediction.recommended_quantity;
             quantitySource = "llm";
             llmPrediction = {
@@ -218,18 +171,36 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
             const llmDiffPct = (llmDiff / calculation.quantity) * 100;
             console.log(`     ✅ LLM: ${llmResult.prediction.recommended_quantity}u (${llmResult.prediction.confidence}) | vs médiane: ${llmDiff > 0 ? "+" : ""}${llmDiff}u (${llmDiffPct > 0 ? "+" : ""}${llmDiffPct.toFixed(1)}%)`);
         }
-        console.log(`     ✅ Quantité finale: ${finalQuantity}u (source: ${quantitySource})`);
+        else {
+            // ⚠️ FALLBACK D'URGENCE: LLM a échoué
+            finalQuantity = calculation.quantity;
+            quantitySource = "median-fallback";
+            console.log(`     ⚠️ WARNING: LLM prediction failed!`);
+            console.log(`     ⚠️ FALLBACK: Utilisation médiane historique = ${finalQuantity}u`);
+            console.log(`     ⚠️ Ce produit nécessite une validation manuelle!`);
+        }
+        // Si quantité = 0, skip (que ce soit LLM ou fallback)
+        if (finalQuantity === 0) {
+            if (quantitySource === "llm") {
+                console.log(`     ❌ SKIP: LLM → Pas de risque détecté`);
+            }
+            else {
+                console.log(`     ❌ SKIP: Fallback → Pas d'historique`);
+            }
+            continue;
+        }
+        console.log(`     ✅ À COMMANDER: ${finalQuantity}u (source: ${quantitySource})`);
         // Récupérer les input data LLM (si disponibles)
         const inputData = llmInputData.get(product.product_id);
         // Récupérer les 730j complets pour le rapport (BRUT)
         const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
-        const ordersForReport = fullProduct?.orders ?? ordersToUse;
+        const ordersForReport = fullProduct?.orders ?? product.orders;
         // Créer l'objet produit analysé (avec toutes ses infos)
         const productStatus = {
             product_id: product.product_id,
             product_name: product.product_name,
             product_uom: product.product_uom,
-            // 1. Historique des commandes (base) - COMPLET 730j pour rapports
+            // 1. Historique des commandes
             order_history: ordersForReport.map((order) => ({
                 order_id: order.order_id,
                 order_name: order.order_name,
@@ -237,23 +208,14 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
                 quantity: order.quantity,
                 price_unit: order.price_unit,
             })),
-            // 2. Stock prediction (Phase 1: TRIGGER)
-            stock_prediction: {
-                consumption_per_day: consumptionPerDay,
-                estimated_stock_remaining: stockPrediction.estimatedStock,
-                days_until_stockout: stockPrediction.daysUntilStockout,
-                replenishment_threshold_days: replenishmentThresholdDays,
-            },
-            // 3. Quantity calculation (Phase 2: QUANTITÉ)
-            quantity_to_order: finalQuantity, // LLM si >2 commandes, sinon médiane
+            // 2. Quantité finale
+            quantity_to_order: finalQuantity,
+            quantity_source: quantitySource, // "llm" ou "median-fallback"
+            // 3. Métadonnées de calcul historique (indépendant du LLM)
             calculation_metadata: calculation.metadata,
             // 4. LLM prediction (si utilisé)
             llm_prediction: llmPrediction,
-            quantity_source: quantitySource,
-            // 5. LLM tracking
-            llm_required: productData.needsLLM, // Propagé depuis PHASE 1
-            llm_success: quantitySource === 'llm' && !!llmPrediction,
-            // 6. LLM input data (pour debug/audit dans rapports)
+            // 5. LLM input data (pour debug/audit dans rapports)
             llm_input_data: inputData ? {
                 recent_orders: inputData.recent_orders,
                 last_year_orders: inputData.last_year_orders,
@@ -261,21 +223,6 @@ export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.
         };
         // Ajouter TOUS les produits analysés (pour backtest)
         allProducts.push(productStatus);
-        // NOUVEAU: Le LLM décide de tout maintenant
-        if (quantitySource === 'llm') {
-            // LLM a répondu
-            if (finalQuantity === 0) {
-                console.log(`     ❌ SKIP: LLM → Pas de risque réel détecté (confidence: ${llmResult?.prediction.confidence})`);
-                continue;
-            }
-        }
-        else {
-            // Pas d'utilisation du LLM : skip (le LLM doit être disponible)
-            if (finalQuantity === 0) {
-                console.log(`     ❌ SKIP: Pas d'historique`);
-                continue;
-            }
-        }
         console.log(`     ✅ TRIGGER: Risque de rupture détecté!`);
         console.log(`     ✅ À COMMANDER: ${finalQuantity} unités`);
         // Ajouter dans les produits à commander (pour prod)
