@@ -63,11 +63,6 @@ export const clientProposalTask = task({
   },
   run: async (payload: ClientTaskPayload): Promise<ClientProposalTaskResult> => {
     const startTime = Date.now();
-    const phaseTimings = {
-      stockAnalysis: 0,
-      proposalPreparation: 0,
-      quoteGeneration: 0,
-    };
 
     console.log(`📊 Processing client: ${payload.client.name} (ID: ${payload.client.id})`);
 
@@ -113,14 +108,12 @@ export const clientProposalTask = task({
 
     try {
       // Phase 1 & 2: Stock Analysis + Quantity Calculation
-      const stockStart = Date.now();
       const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
         analysisWindowDays: config.analysisWindowDays,
         analysisEndDate: config.analysisEndDate,
         targetCoverage: config.targetCoverage,
         leadTime: config.leadTime,
       });
-      phaseTimings.stockAnalysis = Date.now() - stockStart;
 
       result.phases.stockAnalysis = stockAnalysis;
 
@@ -168,7 +161,6 @@ export const clientProposalTask = task({
             currency: "EUR",
             moq_adjustment_applied: false,
           };
-      phaseTimings.proposalPreparation = Date.now() - proposalStart;
 
       result.phases.proposalFinal = proposalFinal;
       result.finalAmount = proposalFinal.total_amount;
@@ -184,9 +176,7 @@ export const clientProposalTask = task({
 
       // Phase 3: Quote Generation (si pas en mode skip ET si produits à commander)
       if (!config.skipOdooQuoteGeneration && hasProducts) {
-        const quoteStart = Date.now();
         const quote = await generateQuote(proposalFinal, odooClient);
-        phaseTimings.quoteGeneration = Date.now() - quoteStart;
 
         result.phases.quote = quote;
         result.quoteName = quote.quote_name;
@@ -199,7 +189,6 @@ export const clientProposalTask = task({
       // Générer le rapport client si shouldGenerateReport (même si hasRisk = false pour debug backtest)
       let reportMarkdown: string | undefined;
       let quoteMarkdown: string | undefined;
-      let reportPath: string | undefined;
 
       if (config.shouldGenerateReport) {
         try {
@@ -207,7 +196,6 @@ export const clientProposalTask = task({
             ...config,
             replenishmentThreshold,
             // Add the missing fields from WorkflowConfig that prepareClientReportData expects
-            inactivityDays: autoProposalConfig.inactivityDaysThreshold,
             generateReports: autoProposalConfig.workflow.generateReports,
             maxClientsToAnalyze: "all",
             forceReanalysis: autoProposalConfig.workflow.forceReanalysis,
@@ -225,7 +213,7 @@ export const clientProposalTask = task({
             await fs.mkdir(reportsOutputDir, { recursive: true });
 
             const reportFileName = `client-${payload.client.id}-${payload.client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
-            reportPath = path.join(reportsOutputDir, reportFileName);
+            const reportPath = path.join(reportsOutputDir, reportFileName);
             await fs.writeFile(reportPath, reportMarkdown, "utf-8");
 
             console.log(`📝 Report generated: ${reportFileName}`);

@@ -17,14 +17,6 @@ export const autoProposalConfig = {
   leadTime: 5,
   analysisWindowDays: 180, // Augmenté de 120 à 180 pour supporter fenêtre LLM de 5 mois (150j)
 
-  // Quantity calculation strategy
-  quantityStrategy: {
-    maxRecentOrderLines: 5, // Limiter l'analyse aux 5 lignes de commande les plus récentes
-    minOrdersForMediumConfidence: 2, // Seuil pour confiance Medium
-    minOrdersForHighConfidence: 5, // Seuil pour confiance High
-    lowMaxThresholdDays: 190, // Filtre conservatif pour produits LOW: skip si dernière commande > 190j (one-time purchase)
-  },
-
   // Pricing & MOQ configuration
   pricing: {
     minimumOrderAmount: 300, // MOQ global en euros

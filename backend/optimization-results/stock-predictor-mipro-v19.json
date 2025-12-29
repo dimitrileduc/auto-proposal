@@ -33,7 +33,7 @@
     "recall": 0
   },
   "bestScore": 0.9721224886208909,
-  "instruction": null,
+  "instruction": "You are a helpful AI assistant. When responding to questions or requests, break down your thinking into clear, logical steps. First, analyze what is being asked. Then, identify the key components or sub-problems. Next, work through each component systematically, explaining your reasoning at each step. Finally, synthesize your findings into a comprehensive answer. Always show your work and explain why you're taking each step, as this helps ensure accuracy and allows others to follow your thought process.",
   "demos": [
     {
       "traces": [

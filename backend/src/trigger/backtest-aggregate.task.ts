@@ -156,8 +156,6 @@ export const backtestAggregateTask = task({
     const totalChunks = Math.ceil(totalClients / BATCH_SIZE);
 
     const allResults: BacktestIndividualResult[] = [];
-    const allResultsNoLow: BacktestIndividualResult[] = [];
-    const allResultsAll: BacktestIndividualResult[] = [];
 
     // Track LLM usage across all clients
     let totalLLMCalls = 0;
@@ -217,45 +215,6 @@ export const backtestAggregateTask = task({
               });
             }
 
-            // Filtrer LOW: inclure seulement si client a commandé des produits LOW (TP+FN > 0)
-            if (taskResult.comparisonNoLow &&
-                taskResult.comparisonNoLow.truePositives + taskResult.comparisonNoLow.falseNegatives > 0) {
-              allResultsNoLow.push({
-                clientId: taskResult.clientId,
-                clientName: taskResult.clientName,
-                orderName: taskResult.orderName,
-                success: true,
-                metrics: {
-                  precision: taskResult.comparisonNoLow.precision,
-                  recall: taskResult.comparisonNoLow.recall,
-                  f1Score: taskResult.comparisonNoLow.f1Score,
-                  mae: taskResult.comparisonNoLow.mae,
-                  wmape: taskResult.comparisonNoLow.wmape,
-                  mape: taskResult.comparisonNoLow.mape,
-                  bias: taskResult.comparisonNoLow.bias,
-                },
-              });
-            }
-
-            // Filtrer ALL: inclure seulement si client a commandé des produits (TP+FN > 0)
-            if (taskResult.comparisonAll &&
-                taskResult.comparisonAll.truePositives + taskResult.comparisonAll.falseNegatives > 0) {
-              allResultsAll.push({
-                clientId: taskResult.clientId,
-                clientName: taskResult.clientName,
-                orderName: taskResult.orderName,
-                success: true,
-                metrics: {
-                  precision: taskResult.comparisonAll.precision,
-                  recall: taskResult.comparisonAll.recall,
-                  f1Score: taskResult.comparisonAll.f1Score,
-                  mae: taskResult.comparisonAll.mae,
-                  wmape: taskResult.comparisonAll.wmape,
-                  mape: taskResult.comparisonAll.mape,
-                  bias: taskResult.comparisonAll.bias,
-                },
-              });
-            }
 
             // Aggregate LLM usage
             if (taskResult.llm_usage) {

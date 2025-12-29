@@ -1,68 +1,95 @@
 /**
- * Service LLM via ax-llm avec prompt optimisé
- *
- * Charge les optimisations dans cet ordre:
- * 1. MiPRO (instruction + demos) si disponible
- * 2. BootstrapFewShot (demos uniquement) en fallback
+ * Service LLM via ax-llm - Version simplifiée sans demos
  */
 
 import { ax, AxAIOpenRouter } from "@ax-llm/ax";
-import { readFileSync } from "fs";
-import { join } from "path";
 // Re-export des types depuis l'ancien service
 export type { LLMPrediction, LLMPredictionInput, LLMPredictionResult, LLMUsage } from "./llm-openrouter.service.js";
 import type { LLMPrediction, LLMPredictionInput, LLMPredictionResult, LLMUsage } from "./llm-openrouter.service.js";
 
 // Configuration
 const MODEL = "google/gemini-3-flash-preview";
-// Fallback chain: GEPA → MiPRO → BootstrapFewShot
-const GEPA_FILE = join(process.cwd(), "optimization-results/stock-predictor-gepa.json");
-const MIPRO_FILE = join(process.cwd(), "optimization-results/stock-predictor-mipro.json");
-const BOOTSTRAP_FILE = join(process.cwd(), "optimization-results/stock-predictor-optimized.json");
 
-// Signature ax - Prompt optimisé Recall + Précision quantité
+// Signature ax - Prompt EXACT généré par Claude Sonnet 4.5 via GEPA
 const stockPredictorSignature = `
-"Expert Supply Chain B2B - Prédiction réapprovisionnement
+"Tu es un assistant spécialisé dans la prévision de commandes de produits alimentaires pour un commerce de détail. Ta tâche est de prédire la quantité exacte de la prochaine commande pour un produit donné.
 
-MÉTHODE (Chain of Thought):
+## Données fournies :
+- **productName** : Nom et code du produit
+- **recentOrders** : Historique des commandes récentes (2025) avec dates et quantités
+- **lastYearOrders** : Historique des commandes de l'année précédente (2024 et avant)
+- **currentDate** : Date actuelle pour la prévision
+- **quantity** : La quantité réelle commandée (pour validation)
 
-ÉTAPE 1 - DÉTECTION DU BESOIN (Recall):
-- Analyser cycle de commande et dernière date
-- Évaluer risque rupture horizon 30 jours
-- Règle: Si DOUTE sur cycle ou rotation → Prévoir commande (principe précaution B2B)
-- Mieux détecter un besoin incertain qu'une rupture manquée
+## Stratégie de prévision :
 
-ÉTAPE 2 - ESTIMATION QUANTITÉ (Précision):
-- Utiliser la MÉDIANE des quantités historique récent
-- NE PAS ajuster pour saisonnalité SAUF si pattern N-1 vraiment flagrant et répété
-- Ne pas surestimer pour stock de sécurité
-- Ne pas prendre le maximum, prendre la valeur typique
+### RÈGLE PRINCIPALE : Privilégier la dernière commande
+La règle la plus importante est de **vérifier le dernier cycle de commande**. La dernière quantité commandée est souvent le meilleur indicateur, surtout pour les produits à rotation stable.
 
-DONNÉES:
-- Historique récent: source principale (5 derniers mois)
-- Historique N-1: uniquement si saisonnalité évidente
-- Médiane: robuste aux outliers, préférée à la moyenne"
+### Utiliser la MÉDIANE, pas le maximum
+- Ne pas surestimer en prenant les valeurs maximales de l'historique
+- Calculer la médiane ou la valeur typique des commandes récentes
+- Les pics exceptionnels (comme 42u, 48u dans l'historique) ne doivent PAS être utilisés pour la prévision courante
+- Les valeurs extrêmes sont souvent des événements ponctuels (promotions, événements spéciaux)
 
-productName:string "Nom du produit",
-recentOrders:string "Historique récent (5 mois)",
-lastYearOrders:string "Historique N-1 (saisonnalité)",
-currentDate:string "Date d'analyse"
+### Analyse de la fréquence et des cycles
+1. Identifier l'intervalle typique entre commandes (hebdomadaire, mensuel, bimensuel, etc.)
+2. Vérifier si suffisamment de temps s'est écoulé depuis la dernière commande
+3. Pour les produits avec historique stable, maintenir la quantité habituelle
+
+### Saisonnalité
+- Comparer avec la même période de l'année précédente si disponible
+- Ne pas extrapoler des tendances saisonnières sans données solides
+- La prudence est de mise pour les périodes sans historique comparable
+
+### Cas particuliers :
+
+**Produits à rotation très faible (1 unité par commande)**
+- Si l'historique montre systématiquement 1u, prévoir 1u
+- Ne pas augmenter sans raison valable
+
+**Produits sans historique récent**
+- Se baser sur lastYearOrders pour la même période si disponible
+- Pour les nouveaux produits sans aucun historique, commencer avec 1u (pas 12u ou plus)
+- Éviter les quantités spéculatives
+
+**Produits à rotation régulière**
+- Si les 3-5 dernières commandes sont identiques (ex: toujours 16u), maintenir cette quantité
+- La stabilité historique est un fort indicateur
+
+**Gestion des tendances**
+- Une augmentation récente (1u → 2u → 3u) suggère de suivre la tendance, mais avec prudence
+- Une diminution récente doit être respectée (ne pas revenir aux anciennes quantités plus élevées)
+
+## Erreurs à éviter :
+❌ Surestimer en prenant le maximum de l'historique
+❌ Ignorer la dernière commande récente
+❌ Prévoir 12u ou plus pour un nouveau produit sans historique
+❌ Extrapoler des tendances saisonnières sans données solides
+❌ Moyenner aveuglément sans considérer les valeurs aberrantes
+
+## Objectif :
+Minimiser l'écart entre la prévision et la quantité réelle en privilégiant la précision sur l'optimisme. En cas de doute entre deux quantités, choisir la plus conservatrice (la plus basse)."
+
+productName:string,
+recentOrders:string,
+lastYearOrders:string,
+currentDate:string
 ->
-quantity:number "Quantité prochaine commande (0 si non probable)",
-reasoning:string "1) Risque rupture? 2) Cycle et dernière commande? 3) Quantité estimée et pourquoi?",
-summary:string "Max 40 chars! Justifie le risque rupture. Ex: 'Cycle 2 mois depasse, stock bas'"
+quantity:number,
+reasoning:string
 `;
 
 // Instance LLM (créée une seule fois)
 let llmInstance: AxAIOpenRouter<string> | null = null;
 let predictorInstance: ReturnType<typeof ax> | null = null;
-let demosLoaded = false;
+let initialized = false;
 
 /**
- * Initialise le predictor ax avec les demos optimisés
+ * Initialise le predictor ax
  */
 function initPredictor(): { llm: AxAIOpenRouter<string>; predictor: ReturnType<typeof ax> } {
-  if (llmInstance && predictorInstance && demosLoaded) {
+  if (llmInstance && predictorInstance && initialized) {
     return { llm: llmInstance, predictor: predictorInstance };
   }
 
@@ -79,49 +106,9 @@ function initPredictor(): { llm: AxAIOpenRouter<string>; predictor: ReturnType<t
 
   // Créer le predictor
   predictorInstance = ax(stockPredictorSignature);
+  initialized = true;
 
-  // Charger les optimisations (GEPA prioritaire, puis MiPRO, puis BootstrapFewShot)
-  try {
-    let optimizedData: any = null;
-    let source = "";
-
-    // 🆕 Essayer GEPA d'abord
-    try {
-      optimizedData = JSON.parse(readFileSync(GEPA_FILE, "utf-8"));
-      source = "GEPA";
-    } catch {
-      // Fallback MiPRO
-      try {
-        optimizedData = JSON.parse(readFileSync(MIPRO_FILE, "utf-8"));
-        source = "MiPRO";
-      } catch {
-        // Fallback BootstrapFewShot
-        optimizedData = JSON.parse(readFileSync(BOOTSTRAP_FILE, "utf-8"));
-        source = "BootstrapFewShot";
-      }
-    }
-
-    // 🆕 Charger instruction (GEPA/MiPRO)
-    if (optimizedData.instruction) {
-      predictorInstance.setInstruction(optimizedData.instruction);
-      console.log(`✅ ax: instruction chargée (${source})`);
-    }
-
-    // 🆕 Charger optimizedProgram si disponible (GEPA v2.0)
-    if (optimizedData.optimizedProgram) {
-      predictorInstance.applyOptimization(optimizedData.optimizedProgram);
-      console.log(`✅ ax: optimizedProgram appliqué (${source})`);
-    } else if (optimizedData.demos && optimizedData.demos.length > 0) {
-      // Fallback demos uniquement
-      predictorInstance.setDemos(optimizedData.demos);
-      const demoCount = optimizedData.demos[0]?.traces?.length || optimizedData.demos.length;
-      console.log(`✅ ax: ${demoCount} demos chargés (${source})`);
-    }
-
-    demosLoaded = true;
-  } catch (error) {
-    console.warn("⚠️ Aucun fichier optimisé trouvé, utilisation sans demos:", error);
-  }
+  console.log(`✅ ax: Predictor initialisé (${MODEL}, sans demos)`);
 
   return { llm: llmInstance, predictor: predictorInstance };
 }
@@ -144,7 +131,7 @@ function formatOrders(orders: { date: string; quantity: number }[]): string {
 }
 
 /**
- * Prédit la quantité à commander via ax optimisé
+ * Prédit la quantité à commander via ax
  */
 export async function predictWithAxOptimized(
   input: LLMPredictionInput
@@ -198,7 +185,7 @@ export async function predictWithAxOptimized(
       usage: llmUsage,
       model: MODEL,
       provider: "ax-openrouter",
-      inputPrompt: `[ax optimized] ${input.productName}`,
+      inputPrompt: `[ax] ${input.productName}`,
     };
   } catch (error) {
     console.error("❌ ax prediction failed:", error);
