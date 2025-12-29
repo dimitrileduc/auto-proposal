@@ -5,7 +5,7 @@ import type {
   ClientProposalResult,
   ClientReportData,
   WorkflowConfig,
-} from "./workflow.types";
+} from "./types";
 
 /**
  * Prépare les données pour le rapport d'un client

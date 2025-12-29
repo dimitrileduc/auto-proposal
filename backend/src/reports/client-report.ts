@@ -6,7 +6,7 @@
  * 2. Phase 2.5 - Pricing + Ajustement MOQ (ADJUSTED)
  * 3. Phase 3 - Devis Odoo (QUOTE avec prix réels)
  */
-import type { ClientReportData } from "../workflow/workflow.types";
+import type { ClientReportData } from "./types";
 import {
   title,
   separator,

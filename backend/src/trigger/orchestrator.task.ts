@@ -1,14 +1,14 @@
 import { task } from "@trigger.dev/sdk/v3";
 import { getInactiveClients } from "../features/client-inactivity/inactivity.service";
 import { autoProposalConfig } from "../config/auto-proposal";
-import { calculateGlobalWorkflowStatistics } from "../workflow/workflow.stats";
-import { prepareAllClientReportData } from "../workflow/workflow.client-stats";
+import { calculateGlobalWorkflowStatistics } from "../reports/statistics";
+import { prepareAllClientReportData } from "../reports/data-preparation";
 import { generateGlobalReport } from "../reports/global-report";
 import { getTodayAsDateString, getDateDaysAgo, parseUserDateInput } from "../utils/date.utils";
 import type { OrchestratorTaskPayload, OrchestratorConfig } from "../shared/types";
 import { clientProposalTask } from "./client-proposal.task";
 import type { GlobalReportData } from "../reports/global-report";
-import type { ClientProposalResult } from "../workflow/workflow.types";
+import type { ClientProposalResult } from "../reports/types";
 import * as fs from "fs/promises";
 import * as path from "path";
 

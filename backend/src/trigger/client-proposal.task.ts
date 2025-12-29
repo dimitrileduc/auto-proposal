@@ -5,12 +5,12 @@ import { generateQuote } from "../features/proposal-generation/proposal-generati
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
 import { getTodayAsDateString, parseUserDateInput } from "../utils/date.utils";
-import { prepareClientReportData } from "../workflow/workflow.client-stats";
+import { prepareClientReportData } from "../reports/data-preparation";
 import { generateClientReport, generateQuoteReport } from "../reports/client-report";
 import * as fs from "fs/promises";
 import * as path from "path";
 import type { ClientTaskPayload, ClientProcessingConfig } from "../shared/types";
-import type { ClientProposalResult } from "../workflow/workflow.types";
+import type { ClientProposalResult } from "../reports/types";
 
 const odooClient = createOdooClient(autoProposalConfig.odooApiType);
 

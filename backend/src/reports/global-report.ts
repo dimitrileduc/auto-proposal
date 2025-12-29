@@ -6,8 +6,7 @@
  * - Liste des exemples détaillés avec liens
  * - Tableau simple de tous les clients
  */
-import type { ClientReportData } from "../workflow/workflow.types";
-import type { GlobalWorkflowStatistics } from "../workflow/workflow.types";
+import type { ClientReportData, GlobalWorkflowStatistics } from "./types";
 import {
   title,
   separator,

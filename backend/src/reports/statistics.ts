@@ -1,37 +1,5 @@
-import type { ClientProposalResult } from "./workflow.types";
+import type { ClientProposalResult, GlobalWorkflowStatistics } from "./types";
 import type { InactiveClient } from "../features/client-inactivity/inactivity.types";
-
-/**
- * Statistiques calculées pour le workflow global
- */
-export interface GlobalWorkflowStatistics {
-  // Phase 0: Clients inactifs
-  totalInactiveClients: number;
-  clientsAnalyzed: number; // Nombre de clients pour lesquels Phase 1 a été effectuée
-
-  // Phase 1: Analyse historique (calculé à partir des clientResults)
-  clientsWithOrderHistory: number;
-  clientsWithoutOrderHistory: number;
-  percentWithHistory: number;
-
-  // Phase 2: Risque de rupture (calculé à partir des clientResults)
-  clientsWithRisk: number;
-  clientsWithoutRisk: number; // Ont historique mais stock OK
-  percentWithRisk: number; // Sur ceux qui ont historique
-
-  // Produits
-  totalProducts: number;
-  averageProductsPerClient: number; // Pour clients avec risque
-
-  // Valeur
-  totalValue: number;
-
-  // Devis (Phase 3)
-  quotesGenerated: number;
-
-  // Erreurs
-  clientsFailed: number;
-}
 
 /**
  * Calcule les statistiques globales du workflow
