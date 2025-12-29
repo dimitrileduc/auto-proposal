@@ -76,7 +76,7 @@ export const orchestratorTask = task({
       moqMinimum:
         payload.config?.moqMinimum ?? autoProposalConfig.pricing.minimumOrderAmount,
       skipOdooQuoteGeneration:
-        payload.config?.skipOdooQuoteGeneration ?? false,
+        payload.config?.skipOdooQuoteGeneration ?? true,
       maxClientsToAnalyze:
         payload.config?.maxClientsToAnalyze ?? "all",
       forceReanalysis:

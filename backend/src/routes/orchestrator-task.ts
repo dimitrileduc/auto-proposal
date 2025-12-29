@@ -30,7 +30,7 @@ const orchestratorTaskRoute = new Hono();
  *     // Workflow
  *     "maxClientsToAnalyze": "all",           // "all" ou nombre (debug). Default: "all"
  *     "generateReports": true,                // Génère rapports markdown. Default: config (true)
- *     "skipOdooQuoteGeneration": false,       // Mode TEST (pas de devis). Default: false
+ *     "skipOdooQuoteGeneration": false,       // Mode TEST (pas de devis). Default: true
  *     "forceReanalysis": false                // Réanalyse clients avec tag 82. Default: config (false)
  *   }
  * }
@@ -42,18 +42,7 @@ orchestratorTaskRoute.post("/", async (c) => {
 
     // Préparer le payload pour la task
     const payload: OrchestratorTaskPayload = {
-      config: {
-        dateMin: config.dateMin,
-        dateMax: config.dateMax,
-        analysisWindowDays: config.analysisWindowDays,
-        targetCoverage: config.targetCoverage,
-        leadTime: config.leadTime,
-        moqMinimum: config.moqMinimum,
-        maxClientsToAnalyze: config.maxClientsToAnalyze,
-        generateReports: config.generateReports,
-        skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
-        forceReanalysis: config.forceReanalysis,
-      },
+      config,
     };
 
     console.log(`🚀 Triggering auto-proposal-orchestrator task`);

@@ -5,6 +5,7 @@
  */
 import { Hono } from "hono";
 import { tasks } from "@trigger.dev/sdk/v3";
+import { autoProposalConfig } from "../config/auto-proposal";
 import type { ClientTaskPayload } from "../shared/types";
 import type { clientProposalTask } from "../trigger/client-proposal.task";
 
@@ -25,7 +26,7 @@ const clientTask = new Hono();
  *     "targetCoverage": 25,
  *     "leadTime": 5,
  *     "moqMinimum": 300,
- *     "skipOdooQuoteGeneration": true,  // Si true, skip création devis Odoo
+ *     "skipOdooQuoteGeneration": false,  // Si false, crée les devis Odoo (défaut: true = skip)
  *     "shouldGenerateReport": true  // Si true, génère les rapports markdown pour les clients avec risk. Default: true
  *   }
  * }
@@ -47,12 +48,12 @@ clientTask.post("/", async (c) => {
         email: clientEmail || null,
       },
       config: {
-        analysisWindowDays: config.analysisWindowDays,
+        analysisWindowDays: config.analysisWindowDays ?? autoProposalConfig.analysisWindowDays,
         analysisEndDate: config.analysisEndDate,
-        targetCoverage: config.targetCoverage,
-        leadTime: config.leadTime,
-        moqMinimum: config.moqMinimum,
-        skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
+        targetCoverage: config.targetCoverage ?? autoProposalConfig.targetCoverage,
+        leadTime: config.leadTime ?? autoProposalConfig.leadTime,
+        moqMinimum: config.moqMinimum ?? autoProposalConfig.pricing.minimumOrderAmount,
+        skipOdooQuoteGeneration: config.skipOdooQuoteGeneration ?? true,
         shouldGenerateReport: config.shouldGenerateReport,
       },
     };

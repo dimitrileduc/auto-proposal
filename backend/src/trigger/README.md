@@ -1,343 +1,151 @@
-# Trigger.dev Orchestration
+# Trigger.dev Tasks
 
-## 🎯 Rôle
+Orchestration du système Auto-Proposal via Trigger.dev, permettant le traitement parallèle de 500 clients simultanément pour générer automatiquement des propositions de commande.
 
-Orchestration du système Auto-Proposal via Trigger.dev v3, permettant le traitement parallèle de jusqu'à 500 clients simultanément par batch pour générer automatiquement des propositions de commande.
+## Production Tasks
 
-## 📦 Inventaire des Composants
+### orchestrator.task
 
-### Fichier: `orchestrator.task.ts`
+Tâche principale qui récupère tous les clients inactifs et lance des tasks client-proposal en batch parallèle (chunks de 500).
 
-**Description:** Task principale qui coordonne l'analyse de tous les clients inactifs en déclenchant des tasks client-proposal en batch parallèle.
-
-<details><summary>Voir l'implémentation</summary>
-
-```typescript
-export const orchestratorTask = task({
-  id: "auto-proposal-orchestrator",
-  retry: {
-    maxAttempts: 3,
-    factor: 2,
-    minTimeoutInMs: 1000,
-    maxTimeoutInMs: 30000,
-    randomize: true,
-  },
-  run: async (payload: OrchestratorTaskPayload): Promise<OrchestratorTaskResult> => {
-    // 1. Récupérer tous les clients inactifs
-    const allInactiveClients = await getInactiveClients(
-      config.dateMin,
-      config.dateMax,
-      config.forceReanalysis ? autoProposalConfig.quoteGeneration.autoProposalTagId : undefined
-    );
-
-    // 2. Limiter les clients à analyser (debug)
-    const maxToAnalyze = config.maxClientsToAnalyze === "all"
-      ? allInactiveClients.length
-      : config.maxClientsToAnalyze;
-    const clientsToProcess = allInactiveClients.slice(0, maxToAnalyze);
-
-    // 3. Batch trigger en chunks de 500
-    const BATCH_SIZE = 500;
-    const totalChunks = Math.ceil(clientsToProcess.length / BATCH_SIZE);
-
-    for (let chunkIndex = 0; chunkIndex < totalChunks; chunkIndex++) {
-      const chunkClients = clientsToProcess.slice(chunkStart, chunkEnd);
-      const batchPayloads = chunkClients.map((client) => ({ payload: { ... } }));
-
-      // Batch trigger and wait pour ce chunk
-      const batchResults = await clientProposalTask.batchTriggerAndWait(batchPayloads);
-
-      // Collecter les résultats
-      for (const run of batchResults.runs) {
-        if (run.ok) {
-          clientResults.push(run.output.result);
-        } else {
-          // Gérer l'erreur individuelle
-        }
-      }
-    }
-
-    // 4. Générer le rapport global
-    const globalMarkdownReport = generateGlobalReport(globalReportData);
-    await fs.writeFile(reportPath, globalMarkdownReport);
-
-    return { success: true, statistics, globalReport, executionTime };
-  },
-});
+**Payload:**
+```
+OrchestratorTaskPayload:
+  config (optional):
+    dateMin: string (ex: "2025-01-01")
+    dateMax: string (ex: "2025-12-29")
+    analysisWindowDays: number (ex: 270)
+    targetCoverage: number (ex: 30)
+    leadTime: number (ex: 14)
+    moqMinimum: number (ex: 100)
+    maxClientsToAnalyze: number | "all"
+    generateReports: boolean
+    skipOdooQuoteGeneration: boolean
+    forceReanalysis: boolean
 ```
 
-**Points clés:**
-- **BATCH_SIZE = 500**: Limite Trigger.dev pour batchTriggerAndWait
-- **Retry policy**: 3 tentatives max avec backoff exponentiel (x2) et aléatoire
-- **Error handling**: Chaque batch échoué marque tous ses clients comme failed et continue avec le suivant
-- **Config merging**: payload.config override autoProposalConfig (lines 63-88)
-- **Date handling**: dateMin/dateMax utilisés pour définir la période d'inactivité (pas de nombre de jours fixe)
+**Flow:**
+1. Récupère clients inactifs entre dateMin et dateMax
+2. Lance clientProposalTask par chunks de 500 clients
+3. Collecte résultats, calcule statistiques globales
+4. Génère rapport markdown global + rapports clients individuels
 
-</details>
+**Output:**
+- success: boolean
+- statistics: clientsWithRisk, totalProducts, totalValue, quotesGenerated, etc
+- globalReport: markdown complet + chemin fichier
+- executionTime: ms
 
 ---
 
-### Fichier: `client-proposal.task.ts`
+### client-proposal.task
 
-**Description:** Task individuelle pour traiter un client, exécutant le workflow complet en 3 phases (Stock Analysis, Proposal Preparation, Quote Generation).
+Tâche individuelle traitant un client en 3 phases séquentielles.
 
-<details><summary>Voir l'implémentation</summary>
-
-```typescript
-export const clientProposalTask = task({
-  id: "client-proposal",
-  retry: {
-    maxAttempts: 3,        // Maximum 3 tentatives (1 + 2 retry)
-    factor: 2,             // Délai double entre chaque retry
-    minTimeoutInMs: 1000,  // Attendre minimum 1 seconde
-    maxTimeoutInMs: 30000, // Maximum 30 secondes d'attente
-    randomize: true,       // Ajoute ±25% d'aléatoire au délai
-  },
-  run: async (payload: ClientTaskPayload): Promise<ClientProposalTaskResult> => {
-    // Phase 1 & 2: Stock Analysis + Quantity Calculation
-    const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
-      analysisWindowDays: config.analysisWindowDays,
-      analysisEndDate: config.analysisEndDate,
-      targetCoverage: config.targetCoverage,
-      leadTime: config.leadTime,
-    });
-
-    if (stockAnalysis.products.length === 0) {
-      return { /* no risk */ };
-    }
-
-    // Phase 2.5: Proposal Preparation (Pricing + MOQ)
-    const proposalFinal = prepareProposal(
-      stockAnalysis,
-      undefined,
-      "historyPriceForClient",
-      config.moqMinimum
-    );
-
-    // Phase 3: Quote Generation (si pas en mode skip)
-    if (!config.skipOdooQuoteGeneration) {
-      const quote = await generateQuote(proposalFinal, odooClient);
-      result.phases.quote = quote;
-    }
-
-    // Générer le rapport client si hasRisk ET shouldGenerateReport
-    if (result.hasRisk && config.shouldGenerateReport) {
-      reportMarkdown = generateClientReport(reportData);
-      await fs.writeFile(reportPath, reportMarkdown);
-    }
-
-    return { client, config, result, summary, report, executionTime };
-  },
-});
+**Payload:**
+```
+ClientTaskPayload:
+  client:
+    id: number
+    name: string
+    email: string
+  config:
+    analysisWindowDays: number
+    analysisEndDate: string
+    targetCoverage: number
+    leadTime: number
+    moqMinimum: number
+    skipOdooQuoteGeneration: boolean
+    shouldGenerateReport: boolean
 ```
 
-**Points clés:**
-- **3 phases séquentielles**: Stock → Proposal → Quote
-- **Early exit**: Si aucun produit à risque, termine immédiatement
-- **Config-driven**: skipOdooQuoteGeneration et shouldGenerateReport contrôlent les phases 3 & 4
-- **Return type**: Result object avec `ok` et `output` properties (voir backend/src/trigger/client-proposal.task.ts:165-170)
+**Phases:**
+1. Stock Analysis: Analyse historique client, calcule jours avant rupture, identifie produits urgents/modérés
+2. Proposal Preparation: Appelle les prix historiques, applique MOQ si besoin
+3. Quote Generation: Crée devis Odoo (si skipOdooQuoteGeneration = false et hasRisk = true)
 
-</details>
+**Output:**
+- client: id, name, email
+- result: ClientProposalResult avec phases, productsCount, finalAmount, hasRisk, success
+- summary: hasRisk, productsCount, urgentProductsCount, moderateProductsCount, finalAmount, quoteName
+- report: markdown complet + markdown devis seul
+- executionTime: ms
 
 ---
 
-### Fichier: `index.ts`
+## Testing Tasks
 
-**Description:** Point d'export centralisé des tasks Trigger.dev
+### backtest-client.task
 
-<details><summary>Voir l'implémentation</summary>
+Tâche de validation: teste la prédiction du système contre une commande réelle du passé (time travel).
 
-```typescript
-export { clientProposalTask } from "./client-proposal.task";
-export type { ClientProposalTaskResult } from "./client-proposal.task";
-
-export { orchestratorTask } from "./orchestrator.task";
-export type { OrchestratorTaskResult } from "./orchestrator.task";
-
-// Future: export { autoProposalCron } from "./auto-proposal-cron.task";
+**Payload:**
+```
+BacktestClientTaskPayload:
+  clientId: number
+  daysBeforePrediction: number (optional, default 1)
+  referenceDate: string (optional)
+  orderName: string (optional, ex: "S39729")
 ```
 
-</details>
+**Flow:**
+1. Récupère la dernière commande réelle du client
+2. Calcule cutoff date (X jours avant la commande)
+3. Lance clientProposalTask avec analysisEndDate = cutoff (simule l'état du monde à cette date)
+4. Compare: prédiction système vs commande réelle
+5. Génère rapport comparison (precision, recall, F1)
 
-## 🔧 Guides Pratiques
+**Output:**
+- Rapport markdown détaillé avec comparaison système vs réalité
 
-<details><summary>Comment ajouter une nouvelle task Trigger.dev ?</summary>
+---
 
-1. **Créer le fichier de task**: `backend/src/trigger/my-task.task.ts`
-   ```typescript
-   import { task } from "@trigger.dev/sdk/v3";
+### backtest-aggregate.task
 
-   export const myTask = task({
-     id: "my-task-id",
-     retry: { maxAttempts: 3, factor: 2 },
-     run: async (payload: MyPayload) => {
-       // Logic here
-       return { success: true };
-     },
-   });
-   ```
+Tâche d'agrégation: combine N résultats de backtests pour calculer métriques globales de qualité.
 
-2. **Exporter dans `index.ts`**:
-   ```typescript
-   export { myTask } from "./my-task.task";
-   export type { MyTaskResult } from "./my-task.task";
-   ```
-
-3. **Utiliser la task**:
-   ```typescript
-   // Trigger simple
-   const handle = await myTask.trigger({ data: "value" });
-
-   // Trigger and wait (retourne Result object)
-   const result = await myTask.triggerAndWait({ data: "value" });
-   if (result.ok) {
-     console.log(result.output); // Accès à l'output de la task
-   } else {
-     console.error(result.error); // Gérer l'erreur
-   }
-   ```
-
-</details>
-
-<details><summary>Comment modifier la taille des batchs (BATCH_SIZE) ?</summary>
-
-**Fichier**: `backend/src/trigger/orchestrator.task.ts:118`
-
-```typescript
-const BATCH_SIZE = 500; // ← Modifier ici
+**Payload:**
+```
+BacktestAggregateTaskPayload:
+  clientIds: number[]
+  daysBeforePrediction: number (optional)
 ```
 
-**Points de vigilance:**
-- Trigger.dev limite à **500 tasks max** par batchTriggerAndWait
-- Si vous augmentez au-delà de 500, le code lèvera une erreur
-- Si vous réduisez (ex: 100), plus de chunks seront créés, ralentissant l'exécution globale
-- Temps moyen par chunk de 500: ~2-5 minutes
+**Output:**
+- Statistiques globales: accuracy, precision, recall, F1
+- Rapports JSON + markdown avec résultats agrégés
 
-**Recommandation**: Garder 500 sauf contraintes spécifiques (quotas API Odoo, mémoire, etc.)
+---
 
-</details>
+## Configuration et Déploiement
 
-<details><summary>Comment configurer les retries ?</summary>
+**Retry policy (toutes les tasks):**
+- maxAttempts: 3 (tentative 1 + 2 retries)
+- factor: 2 (backoff exponentiel)
+- minTimeoutInMs: 1000
+- maxTimeoutInMs: 30000
+- randomize: true (±25% aléatoire)
 
-**Niveau orchestrator** (`orchestrator.task.ts:52-58`):
-```typescript
-retry: {
-  maxAttempts: 3,         // ← Nombre total de tentatives
-  factor: 2,              // ← Backoff exponentiel (x2 chaque fois)
-  minTimeoutInMs: 1000,   // ← Délai minimum entre retries
-  maxTimeoutInMs: 30000,  // ← Délai maximum (cap)
-  randomize: true,        // ← ±25% aléatoire pour éviter thundering herd
-}
-```
+**Batch size limit:**
+- Maximum 500 tasks par batchTriggerAndWait
+- orchestrator.task découpe automatiquement en chunks de 500
 
-**Niveau client-proposal** (`client-proposal.task.ts:57-63`):
-```typescript
-retry: {
-  maxAttempts: 3,
-  factor: 2,
-  minTimeoutInMs: 1000,
-  maxTimeoutInMs: 30000,
-  randomize: true,
-}
-```
+**Dépendances:**
+- `/features/client-inactivity/` - détection clients inactifs
+- `/features/stock-replenishment/` - analyse stock et jours avant rupture
+- `/features/proposal-preparation/` - pricing + MOQ
+- `/features/proposal-generation/` - création devis Odoo
+- `/features/backtesting/` - validation et comparaison (pour backtest tasks)
+- `/reports/` - génération rapports markdown
 
-**Exemple de délais avec factor=2:**
-- Tentative 1: Immédiat
-- Tentative 2: 1000ms + random(±25%) = 750-1250ms
-- Tentative 3: 2000ms + random(±25%) = 1500-2500ms
+**Utilisé par:**
+- `/routes/orchestrator.ts` - endpoint HTTP pour trigger manuel
+- Trigger.dev dashboard - triggers directs
 
-**Pour désactiver les retries:**
-```typescript
-retry: { maxAttempts: 1 }
-```
+## Points importants
 
-</details>
-
-<details><summary>Comment gérer les erreurs batch ?</summary>
-
-**Stratégie actuelle** (`orchestrator.task.ts:212-233`):
-
-```typescript
-try {
-  const batchResults = await clientProposalTask.batchTriggerAndWait(batchPayloads);
-
-  for (const run of batchResults.runs) {
-    if (run.ok) {
-      clientResults.push(run.output.result);
-    } else {
-      // Erreur individuelle: créer un résultat d'erreur mais continuer
-      clientResults.push({
-        clientId: client.id,
-        success: false,
-        error: run.error.message,
-      });
-    }
-  }
-} catch (batchError) {
-  // Si le batch entier échoue (timeout réseau, etc.)
-  // Marquer TOUS les clients du batch comme échoués
-  for (const client of chunkClients) {
-    clientResults.push({ clientId: client.id, success: false, error: "Batch failure" });
-  }
-  // Continuer avec le prochain batch (pas de throw)
-  continue;
-}
-```
-
-**3 types d'erreurs:**
-1. **Erreur individuelle task** (`run.ok === false`): Marquer ce client comme failed, continuer
-2. **Erreur batch entier** (catch block): Marquer tous les clients du batch comme failed, continuer avec batch suivant
-3. **Erreur orchestrator globale** (catch ligne 321): Tout échoue, throw l'erreur
-
-</details>
-
-<details><summary>Points de vigilance / Dépendances</summary>
-
-### Dépendances Trigger.dev
-
-- **Package**: `@trigger.dev/sdk@^3.0.0` (JAMAIS v2 - pas de `client.defineJob`)
-- **Commandes**:
-  - Dev mode: `pnpm trigger:dev` (démarre le worker local)
-  - Deploy: `pnpm trigger:deploy` (deploy sur Trigger.dev cloud)
-
-### Limites importantes
-
-1. **Batch size limit**: 500 tasks max par `batchTriggerAndWait`
-2. **Result object**: `triggerAndWait` retourne `Result<T>` avec `ok`, `output`, `error` - PAS l'output direct
-3. **Never wrap in Promise.all**: Ne JAMAIS utiliser `Promise.all` avec `triggerAndWait` (non supporté par Trigger.dev)
-4. **Config merging**: Payload override config (orchestrator.task.ts:63-88)
-
-### Variables d'environnement requises
-
-```bash
-# .env
-TRIGGER_SECRET_KEY=trigger_dev_xxxxx  # Depuis dashboard Trigger.dev
-ODOO_URL=https://your-odoo.com
-ODOO_DB=your-database
-ODOO_USERNAME=your-username
-ODOO_PASSWORD=your-password
-```
-
-### Relation avec autres modules
-
-- **Dépend de**:
-  - `/features/client-inactivity/` (getInactiveClients)
-  - `/features/stock-replenishment/` (calculateReplenishmentNeeds)
-  - `/features/proposal-preparation/` (prepareProposal)
-  - `/features/proposal-generation/` (generateQuote)
-  - `/reports/` (generateGlobalReport, generateClientReport)
-  - `/config/` (autoProposalConfig)
-
-- **Utilisé par**:
-  - `/routes/orchestrator-task.ts` (endpoint HTTP pour trigger manuel)
-  - Future: CRON task (auto-proposal-cron.task.ts)
-
-</details>
-
-## 🔗 Références
-
-- [Trigger.dev v3 Documentation](https://trigger.dev/docs)
-- [Batch Processing Guide](https://trigger.dev/docs/guides/batch-processing)
-- Configuration: [`/backend/src/config/auto-proposal.ts`](../config/auto-proposal.ts)
-- Types: [`/backend/src/shared/types/orchestrator.types.ts`](../shared/types/orchestrator.types.ts)
-- Claude Code Trigger.dev Reference: `/backend/CLAUDE.md` (sections TRIGGER.DEV basic & advanced-tasks)
+1. Config merging: payload.config override autoProposalConfig
+2. Result object: triggerAndWait retourne { ok, output, error } - PAS l'output direct
+3. Never Promise.all: Ne jamais wrapper triggerAndWait dans Promise.all
+4. Erreur batch: Si batch échoue entièrement, marque tous ses clients comme failed et continue
+5. Erreur individuelle: Si une task échoue, crée un résultat d'erreur mais continue

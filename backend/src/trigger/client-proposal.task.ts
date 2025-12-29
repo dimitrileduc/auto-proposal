@@ -90,7 +90,7 @@ export const clientProposalTask = task({
 
       skipOdooQuoteGeneration:
         payload.config.skipOdooQuoteGeneration ??
-        false,
+        true,
 
       shouldGenerateReport:
         payload.config.shouldGenerateReport ??
