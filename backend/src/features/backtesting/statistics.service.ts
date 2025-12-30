@@ -1,11 +1,13 @@
 /**
  * Statistical analysis service for aggregated backtests
  *
- * Computes descriptive statistics (mean, median, stdDev, percentiles)
+ * Computes descriptive statistics (median, stdDev, percentiles)
  * on backtest metrics collected across multiple clients.
  *
  * @module features/backtesting/statistics
  */
+
+import type { BacktestReportJSONv2 } from "./backtest.types";
 
 /**
  * Individual backtest metrics (simplified)
@@ -24,19 +26,38 @@ export interface IndividualBacktestMetrics {
 }
 
 /**
+ * Summary metrics matching the executive summary markdown
+ * Segmented by product confidence level (base = medium+high, optional = low)
+ */
+export interface SummaryMetrics {
+  /** Base products: ordered 2+ times (medium/high confidence) */
+  baseProducts: {
+    /** Percentage of total products volume */
+    volumePercent: number;
+    /** Median recall across clients */
+    medianRecall: number;
+    /** Median precision across clients */
+    medianPrecision: number;
+  };
+  /** Optional products: ordered once (low confidence) */
+  optionalProducts: {
+    /** Percentage of total products volume */
+    volumePercent: number;
+    /** Mean recall across clients (median often 0) */
+    meanRecall: number;
+    /** Mean precision across clients */
+    meanPrecision: number;
+  };
+  /** Global median WMAPE across all clients */
+  medianWmape: number;
+}
+
+/**
  * Aggregate statistics computed across N clients
  */
 export interface AggregateMetrics {
-  /** Arithmetic mean of all metrics */
-  mean: {
-    precision: number;
-    recall: number;
-    f1Score: number;
-    mae: number;
-    wmape: number;
-    mape: number;
-    bias: number;
-  };
+  /** Executive summary metrics (same as summary markdown) */
+  summary: SummaryMetrics;
   /** Median values (robust to outliers) */
   median: {
     precision: number;
@@ -67,27 +88,132 @@ export interface AggregateMetrics {
 }
 
 /**
- * Computes aggregate statistics (mean, median, stdDev, percentiles)
+ * Calculates summary metrics from v2 reports (same as executive summary markdown)
+ *
+ * Segments products by confidence level:
+ * - Base Products: medium + high confidence (2+ historical orders)
+ * - Optional Products: low confidence (1 historical order)
+ *
+ * @param v2Reports - Array of individual backtest JSON v2 reports
+ * @returns Summary metrics with base/optional segmentation and global WMAPE
+ */
+export function calculateSummaryMetrics(v2Reports: BacktestReportJSONv2[]): SummaryMetrics {
+  if (v2Reports.length === 0) {
+    return {
+      baseProducts: { volumePercent: 0, medianRecall: 0, medianPrecision: 0 },
+      optionalProducts: { volumePercent: 0, meanRecall: 0, meanPrecision: 0 },
+      medianWmape: 0,
+    };
+  }
+
+  interface ClientMetrics {
+    base: { recall: number; precision: number };
+    optional: { recall: number; precision: number };
+  }
+
+  const clientMetrics: ClientMetrics[] = [];
+  const allClientWmape: number[] = [];
+  let totalBaseProducts = 0;
+  let totalOptionalProducts = 0;
+
+  for (const report of v2Reports) {
+    const low = report.metrics.byConfidence.low;
+    const medium = report.metrics.byConfidence.medium;
+    const high = report.metrics.byConfidence.high;
+
+    // Base Products = medium + high
+    const baseTP = medium.counts.truePositives + high.counts.truePositives;
+    const baseFP = medium.counts.falsePositives + high.counts.falsePositives;
+    const baseFN = medium.counts.falseNegatives + high.counts.falseNegatives;
+    const basePrecision = baseTP + baseFP > 0 ? baseTP / (baseTP + baseFP) : 0;
+    const baseRecall = baseTP + baseFN > 0 ? baseTP / (baseTP + baseFN) : 0;
+
+    // Optional Products = low
+    const optTP = low.counts.truePositives;
+    const optFP = low.counts.falsePositives;
+    const optFN = low.counts.falseNegatives;
+    const optPrecision = optTP + optFP > 0 ? optTP / (optTP + optFP) : 0;
+    const optRecall = optTP + optFN > 0 ? optTP / (optTP + optFN) : 0;
+
+    // Volume totals
+    totalBaseProducts += baseTP + baseFP + baseFN;
+    totalOptionalProducts += optTP + optFP + optFN;
+
+    // WMAPE per client
+    allClientWmape.push(report.metrics.all.quantityMetrics.wmape);
+
+    clientMetrics.push({
+      base: { recall: baseRecall, precision: basePrecision },
+      optional: { recall: optRecall, precision: optPrecision },
+    });
+  }
+
+  // Filter clients with data
+  const clientsWithBase = clientMetrics.filter(c => c.base.recall > 0 || c.base.precision > 0);
+  const clientsWithOptional = clientMetrics.filter(c => c.optional.recall > 0 || c.optional.precision > 0);
+
+  // Global median WMAPE
+  const globalMedianWmape = calculateMedian(allClientWmape);
+
+  // Median for Base products
+  const baseMedianRecall = calculateMedian(clientsWithBase.map(c => c.base.recall));
+  const baseMedianPrecision = calculateMedian(clientsWithBase.map(c => c.base.precision));
+
+  // Mean for Optional products (median often 0)
+  const optMeanRecall = calculateMean(clientsWithOptional.map(c => c.optional.recall));
+  const optMeanPrecision = calculateMean(clientsWithOptional.map(c => c.optional.precision));
+
+  // Volume percentages
+  const totalProducts = totalBaseProducts + totalOptionalProducts;
+  const baseVolumePct = totalProducts > 0 ? Math.round((totalBaseProducts / totalProducts) * 100) : 0;
+  const optVolumePct = totalProducts > 0 ? Math.round((totalOptionalProducts / totalProducts) * 100) : 0;
+
+  return {
+    baseProducts: {
+      volumePercent: baseVolumePct,
+      medianRecall: Math.round(baseMedianRecall * 10000) / 10000,
+      medianPrecision: Math.round(baseMedianPrecision * 10000) / 10000,
+    },
+    optionalProducts: {
+      volumePercent: optVolumePct,
+      meanRecall: Math.round(optMeanRecall * 10000) / 10000,
+      meanPrecision: Math.round(optMeanPrecision * 10000) / 10000,
+    },
+    medianWmape: Math.round(globalMedianWmape * 100) / 100,
+  };
+}
+
+/**
+ * Computes aggregate statistics (median, stdDev, percentiles)
  * over a collection of individual backtest metrics
  *
  * @param metrics - Array of individual backtest metrics
+ * @param v2Reports - Optional v2 reports for summary calculation
  * @returns Computed aggregate statistics
  */
 export function calculateAggregateStatistics(
-  metrics: IndividualBacktestMetrics[]
+  metrics: IndividualBacktestMetrics[],
+  v2Reports?: BacktestReportJSONv2[]
 ): AggregateMetrics {
+  const emptyStats = {
+    precision: 0,
+    recall: 0,
+    f1Score: 0,
+    mae: 0,
+    wmape: 0,
+    mape: 0,
+    bias: 0,
+  };
+
+  const emptySummary: SummaryMetrics = {
+    baseProducts: { volumePercent: 0, medianRecall: 0, medianPrecision: 0 },
+    optionalProducts: { volumePercent: 0, meanRecall: 0, meanPrecision: 0 },
+    medianWmape: 0,
+  };
+
   if (metrics.length === 0) {
-    const emptyStats = {
-      precision: 0,
-      recall: 0,
-      f1Score: 0,
-      mae: 0,
-      wmape: 0,
-      mape: 0,
-      bias: 0,
-    };
     return {
-      mean: emptyStats,
+      summary: emptySummary,
       median: emptyStats,
       stdDev: emptyStats,
       percentiles: {
@@ -99,7 +225,13 @@ export function calculateAggregateStatistics(
     };
   }
 
-  const mean = {
+  // Calculate summary from v2Reports if provided
+  const summary = v2Reports && v2Reports.length > 0
+    ? calculateSummaryMetrics(v2Reports)
+    : emptySummary;
+
+  // Calculate mean internally for stdDev calculation (not exported)
+  const meanValues = {
     precision: calculateMean(metrics.map((m) => m.precision)),
     recall: calculateMean(metrics.map((m) => m.recall)),
     f1Score: calculateMean(metrics.map((m) => m.f1Score)),
@@ -120,13 +252,13 @@ export function calculateAggregateStatistics(
   };
 
   const stdDev = {
-    precision: calculateStdDev(metrics.map((m) => m.precision), mean.precision),
-    recall: calculateStdDev(metrics.map((m) => m.recall), mean.recall),
-    f1Score: calculateStdDev(metrics.map((m) => m.f1Score), mean.f1Score),
-    mae: calculateStdDev(metrics.map((m) => m.mae), mean.mae),
-    wmape: calculateStdDev(metrics.map((m) => m.wmape), mean.wmape),
-    mape: calculateStdDev(metrics.map((m) => m.mape), mean.mape),
-    bias: calculateStdDev(metrics.map((m) => m.bias), mean.bias),
+    precision: calculateStdDev(metrics.map((m) => m.precision), meanValues.precision),
+    recall: calculateStdDev(metrics.map((m) => m.recall), meanValues.recall),
+    f1Score: calculateStdDev(metrics.map((m) => m.f1Score), meanValues.f1Score),
+    mae: calculateStdDev(metrics.map((m) => m.mae), meanValues.mae),
+    wmape: calculateStdDev(metrics.map((m) => m.wmape), meanValues.wmape),
+    mape: calculateStdDev(metrics.map((m) => m.mape), meanValues.mape),
+    bias: calculateStdDev(metrics.map((m) => m.bias), meanValues.bias),
   };
 
   const recallValues = metrics.map((m) => m.recall).sort((a, b) => a - b);
@@ -161,7 +293,7 @@ export function calculateAggregateStatistics(
     },
   };
 
-  return { mean, median, stdDev, percentiles };
+  return { summary, median, stdDev, percentiles };
 }
 
 /**
@@ -298,14 +430,14 @@ export function generateAggregateMarkdownReport(data: AggregateReportData): stri
 
 ### Métriques Principales
 
-| Métrique | Moyenne | Médiane | Interprétation |
-|----------|---------|---------|----------------|
-| **Recall** | ${(aggregateMetrics.mean.recall * 100).toFixed(1)}% | ${(aggregateMetrics.median.recall * 100).toFixed(1)}% | % de besoins réels détectés |
-| **Precision** | ${(aggregateMetrics.mean.precision * 100).toFixed(1)}% | ${(aggregateMetrics.median.precision * 100).toFixed(1)}% | % de prédictions correctes (${(100 - aggregateMetrics.median.precision * 100).toFixed(1)}% proposés non commandés) |
-| **F1-Score** | ${(aggregateMetrics.mean.f1Score * 100).toFixed(1)}% | ${(aggregateMetrics.median.f1Score * 100).toFixed(1)}% | Équilibre détection/précision |
-| **wMAPE** | ${aggregateMetrics.mean.wmape.toFixed(1)}% | ${aggregateMetrics.median.wmape.toFixed(1)}% | ⚖️ Écart pondéré robuste (métrique principale) |
-| **MAPE** | ${aggregateMetrics.mean.mape.toFixed(1)}% | ${aggregateMetrics.median.mape.toFixed(1)}% | Écart moyen (info, biaisé) |
-| **Bias** | ${aggregateMetrics.mean.bias.toFixed(1)}% | ${aggregateMetrics.median.bias.toFixed(1)}% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
+| Métrique | Médiane | Interprétation |
+|----------|---------|----------------|
+| **Recall** | ${(aggregateMetrics.median.recall * 100).toFixed(1)}% | % de besoins réels détectés |
+| **Precision** | ${(aggregateMetrics.median.precision * 100).toFixed(1)}% | % de prédictions correctes (${(100 - aggregateMetrics.median.precision * 100).toFixed(1)}% proposés non commandés) |
+| **F1-Score** | ${(aggregateMetrics.median.f1Score * 100).toFixed(1)}% | Équilibre détection/précision |
+| **wMAPE** | ${aggregateMetrics.median.wmape.toFixed(1)}% | Écart pondéré robuste (métrique principale) |
+| **MAPE** | ${aggregateMetrics.median.mape.toFixed(1)}% | Écart moyen (info, biaisé) |
+| **Bias** | ${aggregateMetrics.median.bias.toFixed(1)}% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 
 ${data.llm_usage ? `
 ### 🤖 Utilisation LLM
@@ -318,19 +450,15 @@ ${data.llm_usage ? `
 ` : ''}
 
 <details>
-<summary>Qu'est-ce que la Moyenne vs Médiane ?</summary>
-
-**Moyenne** : Somme de tous les scores ÷ nombre de clients
-- Sensible aux valeurs extrêmes (un très mauvais client tire la moyenne vers le bas)
+<summary>Pourquoi la Médiane ?</summary>
 
 **Médiane** : Valeur du milieu quand on trie tous les scores
 - Robuste aux valeurs extrêmes (meilleure représentation du client "typique")
 
 **Exemple** : 5 clients avec Recall [20%, 80%, 90%, 95%, 100%]
-- Moyenne = 77% (tirée vers le bas par les 20%)
-- Médiane = 90% (valeur centrale, plus représentative)
+- Médiane = 90% (valeur centrale, représentative)
 
-**Bon système** : Moyenne et médiane élevées pour Recall/Precision/F1, faibles pour MAE/MAPE
+**Bon système** : Médiane élevée pour Recall/Precision/F1, faible pour WMAPE/MAPE
 </details>
 
 <details>

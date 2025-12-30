@@ -124,7 +124,8 @@ reasoning:string "1) Risque rupture? 2) Cycle et derni√®re commande? 3) Quantit√
       temperature: 0.7,  // OBLIGATOIRE
     },
     numTrials: NUM_TRIALS,
-    minibatch: false,  // OBLIGATOIRE
+    minibatch: true,   // TRUE = plus rapide
+    minibatchSize: 20,
     verbose: true,
   });
 

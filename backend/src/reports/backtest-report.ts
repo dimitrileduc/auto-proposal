@@ -17,6 +17,7 @@ import type {
   EnrichedProductMatch,
   EnrichedProductMismatch,
   ProductMatch,
+  ProductMismatch,
 } from "../features/backtesting/backtest.types";
 import type { ProductStockStatus, StockReplenishmentResult } from "../features/stock-replenishment/stock-replenishment.types";
 import { calculateProductMetrics, calculateQuantityMetrics } from "../features/backtesting/comparison.service";
@@ -178,7 +179,7 @@ function generateLLMInputDataSection(truePositives: ProductMatch[]): string {
   }
 
   return `
-### 📊 Données d'Input LLM (${productsWithLLMData.length} produits)
+### Donnees d'Input LLM (${productsWithLLMData.length} produits)
 
 ${productsWithLLMData.map((tp, index) => {
   const recentOrders = tp.llm_input_data?.recent_orders || [];
@@ -186,22 +187,22 @@ ${productsWithLLMData.map((tp, index) => {
 
   return `
 <details>
-<summary><strong>${index + 1}. ${tp.productName}</strong> - ${tp.llm_success ? '✅ LLM Réussi' : '❌ LLM Échoué (fallback médiane)'}</summary>
+<summary><strong>${index + 1}. ${tp.productName}</strong> - ${tp.llm_success ? 'LLM Reussi' : 'LLM Echoue (fallback mediane)'}</summary>
 
-**📅 Commandes Récentes (3 derniers mois):**
+**Commandes Recentes (3 derniers mois):**
 ${recentOrders.length > 0
   ? recentOrders.map((o: { date: string; quantity: number }) => `- ${o.date}: ${o.quantity}u`).join('\n')
   : '- Aucune commande récente'}
 
-**📅 Commandes N-1 (même période année dernière):**
+**Commandes N-1 (meme periode annee derniere):**
 ${lastYearOrders.length > 0
   ? lastYearOrders.map((o: { date: string; quantity: number }) => `- ${o.date}: ${o.quantity}u`).join('\n')
   : '- Aucune commande N-1'}
 
 ${tp.llm_success
-  ? `**✅ Quantité LLM**: ${tp.llmPrediction.quantity}u (confidence: ${tp.llmPrediction.confidence})`
-  : `**📊 Quantité Médiane (fallback)**: ${tp.predictedQty}u`}
-**📊 Quantité Réelle**: ${tp.realQty}u
+  ? `**Quantite LLM**: ${tp.llmPrediction.quantity}u (confidence: ${tp.llmPrediction.confidence})`
+  : `**Quantite Mediane (fallback)**: ${tp.predictedQty}u`}
+**Quantite Reelle**: ${tp.realQty}u
 
 </details>
 `;
@@ -227,7 +228,7 @@ function generateLLMDetailSection(truePositives: ProductMatch[]): string {
   }
 
   return `
-### 🤖 Détails des Prédictions LLM (${llmProducts.length} produits)
+### Details des Predictions LLM (${llmProducts.length} produits)
 
 ${llmProducts.map((tp, index) => {
   const medianQty = tp.medianQty !== undefined ? tp.medianQty : 'N/A';
@@ -239,51 +240,72 @@ ${llmProducts.map((tp, index) => {
 <details>
 <summary><strong>${index + 1}. ${tp.productName}</strong> - LLM: ${tp.llmPrediction.quantity}u vs Médiane: ${medianQty}u (Réel: ${tp.realQty}u)</summary>
 
-**📊 Quantités & Prédictions:**
-- 🤖 **Quantité recommandée (finale)**: ${tp.llmPrediction.quantity}u
-- 📊 **Baseline calculée**: ${tp.llmPrediction.baseline_quantity}u
-- 📊 **Médiane historique**: ${medianQty}u
-- ✅ **Réel commandé**: ${tp.realQty}u
-- 📉 **Erreur LLM**: ${Math.abs(tp.llmPrediction.quantity - tp.realQty)}u (${((Math.abs(tp.llmPrediction.quantity - tp.realQty) / tp.realQty) * 100).toFixed(1)}%)
-- 📉 **Erreur Médiane**: ${medianError}
+**Quantites & Predictions:**
+- **Quantite recommandee (finale)**: ${tp.llmPrediction.quantity}u
+- **Baseline calculee**: ${tp.llmPrediction.baseline_quantity}u
+- **Mediane historique**: ${medianQty}u
+- **Reel commande**: ${tp.realQty}u
+- **Erreur LLM**: ${Math.abs(tp.llmPrediction.quantity - tp.realQty)}u (${((Math.abs(tp.llmPrediction.quantity - tp.realQty) / tp.realQty) * 100).toFixed(1)}%)
+- **Erreur Mediane**: ${medianError}
 
-**🚨 Décision LLM Phase 1 (Risque de rupture):**
-- **Risque détecté**: ${tp.llmPrediction.quantity > 0 ? '✅ OUI → Commande nécessaire' : '❌ NON → Pas de commande'}
-- **Quantité décidée**: ${tp.llmPrediction.quantity === 0 ? '0u (pas de risque)' : `${tp.llmPrediction.quantity}u (risque détecté)`}
+**Decision LLM Phase 1 (Risque de rupture):**
+- **Risque detecte**: ${tp.llmPrediction.quantity > 0 ? 'OUI - Commande necessaire' : 'NON - Pas de commande'}
+- **Quantite decidee**: ${tp.llmPrediction.quantity === 0 ? '0u (pas de risque)' : `${tp.llmPrediction.quantity}u (risque detecte)`}
 
-**🎯 Niveaux de Confiance:**
-- **Confiance globale**: ${tp.llmPrediction.confidence}
-- **Confiance Phase 1 (détection risque)**: ${tp.llmPrediction.confidence_phase1 || 'N/A'}
-- **Confiance Phase 2 (quantité)**: ${tp.llmPrediction.confidence_phase2 || 'N/A'}
-
-**🔍 Analyse LLM Complète:**
-- **Pattern temporel**: ${tp.llmPrediction.analysis?.frequency_pattern || 'N/A'}
-- **Cycle médian (jours)**: ${tp.llmPrediction.analysis?.cycle_days || 'N/A'}
-- **Dernière commande**: ${tp.llmPrediction.analysis?.last_order_date || 'N/A'}
-- **Prochaine prédite**: ${tp.llmPrediction.analysis?.predicted_next_date || 'N/A'} ${tp.llmPrediction.analysis?.days_until_next ? `(dans ${tp.llmPrediction.analysis.days_until_next}j)` : ''}
-- **Dans horizon 30j ?**: ${tp.llmPrediction.analysis?.days_until_next && tp.llmPrediction.analysis.days_until_next <= 30 ? '✅ OUI' : '❌ NON'}
-- **Saisonnalité**: ${tp.llmPrediction.analysis?.seasonality_impact || 'N/A'}
-- **Tendance**: ${tp.llmPrediction.analysis?.trend_direction || 'N/A'}
-- **Analyse jour cycle**: ${tp.llmPrediction.analysis?.day_cycle_analysis || 'N/A'}
-- **Outliers détectés**: ${tp.llmPrediction.analysis?.detected_outliers && tp.llmPrediction.analysis.detected_outliers.length > 0
-  ? tp.llmPrediction.analysis.detected_outliers.map((o: number) => `${o}u`).join(', ')
-  : 'Aucun'}
-
-**🧠 Raisonnement LLM:**
+**Raisonnement LLM:**
 ${tp.llmPrediction.reasoning || 'Non disponible'}
 
-${tp.llmPrediction.usage ? `**📊 Tokens utilisés pour cette prédiction:**
+${tp.llmPrediction.usage ? `**Tokens utilises pour cette prediction:**
 - **Input**: ${tp.llmPrediction.usage.promptTokens.toLocaleString()} tokens
 - **Output**: ${tp.llmPrediction.usage.completionTokens.toLocaleString()} tokens
 - **Total**: ${tp.llmPrediction.usage.totalTokens.toLocaleString()} tokens` : ''}
 
-${tp.llmPrediction.provider_reasoning ? `**🤔 Raisonnement Interne du Modèle (Thinking):**
+${tp.llmPrediction.provider_reasoning ? `**Raisonnement Interne du Modele (Thinking):**
 <details>
-<summary>Voir le reasoning interne de Kimi K2</summary>
+<summary>Voir le reasoning interne</summary>
 
 ${tp.llmPrediction.provider_reasoning}
 
 </details>` : ''}
+
+</details>
+`;
+}).join('\n')}
+`;
+}
+
+/**
+ * Generates markdown section with LLM prediction analysis for False Negatives
+ *
+ * Shows why LLM predicted no stockout risk for products that were actually ordered.
+ * Helps understand missed predictions.
+ *
+ * @param falseNegatives - Array of missed products (ordered but not predicted)
+ * @returns Formatted markdown section, or empty string if no LLM data
+ */
+function generateFNLLMDetailSection(falseNegatives: ProductMismatch[]): string {
+  const fnWithLLMData = falseNegatives.filter(fn => fn.llmPrediction);
+
+  if (fnWithLLMData.length === 0) {
+    return '';
+  }
+
+  return `
+### Details des Predictions LLM pour FN (${fnWithLLMData.length} produits)
+
+*Pourquoi le systeme n'a pas predit ces produits?*
+
+${fnWithLLMData.map((fn, index) => {
+  return `
+<details>
+<summary><strong>${index + 1}. ${fn.productName}</strong> - LLM predit: ${fn.llmPrediction!.quantity}u | Reel commande: ${fn.qty}u</summary>
+
+**Decision LLM Phase 1 (Risque de rupture):**
+- **Risque detecte**: ${fn.llmPrediction!.quantity > 0 ? 'OUI - Commande necessaire' : 'NON - Pas de commande'}
+- **Quantite decidee**: ${fn.llmPrediction!.quantity === 0 ? '0u (pas de risque detecte)' : `${fn.llmPrediction!.quantity}u`}
+
+**Raisonnement LLM (pourquoi pas de rupture predite):**
+${fn.llmPrediction!.reasoning || 'Non disponible'}
 
 </details>
 `;
@@ -320,7 +342,7 @@ export function generateBacktestReport(
 - **Jours d'avance** : ${comparison.daysBeforePrediction}j
 
 ${comparison.llmUsage ? `
-### 🤖 Usage LLM
+### Usage LLM
 
 - **Appels**: ${comparison.llmUsage.calls}
 - **Tokens**: ${comparison.llmUsage.promptTokens.toLocaleString()} input + ${comparison.llmUsage.completionTokens.toLocaleString()} output = ${comparison.llmUsage.totalTokens.toLocaleString()} total
@@ -336,122 +358,24 @@ ${comparison.llmUsage ? `
 |----------|--------|----------------|
 | **Précision** | ${(productMetrics.precision * 100).toFixed(1)}% | ${productMetrics.totalPredicted} produits prédits, ${comparison.truePositives.length} corrects |
 | **Rappel** | ${(productMetrics.recall * 100).toFixed(1)}% | ${productMetrics.totalReal} produits réels, ${comparison.truePositives.length} détectés |
-| **F1-Score** | ${(productMetrics.f1Score * 100).toFixed(1)}% | Score équilibré global |
+| **F1-Score** | ${(productMetrics.f1Score * 100).toFixed(1)}% | Score equilibre global |
 
-<details>
-<summary>Comment est calculée la Précision ?</summary>
+### Niveau Quantite (Precision)
 
-**En simple** : Sur 10 produits prédits, combien sont vraiment commandés ?
-
-**Calcul** : Précision = True Positives ÷ (True Positives + False Positives)
-
-**Exemple** : Si le système prédit 10 produits et que 8 sont commandés → Précision = 80%
-
-**Bon score** : > 80% (peu de fausses alertes)
-</details>
-
-<details>
-<summary>Comment est calculé le Rappel ?</summary>
-
-**En simple** : Sur 10 produits commandés, combien ont été détectés ?
-
-**Calcul** : Rappel = True Positives ÷ (True Positives + False Negatives)
-
-**Exemple** : Si le client commande 10 produits et que 7 sont détectés → Rappel = 70%
-
-**Bon score** : > 80% (peu de besoins manqués)
-</details>
-
-<details>
-<summary>Comment est calculé le F1-Score ?</summary>
-
-**En simple** : Moyenne harmonique entre Précision et Rappel (score équilibré)
-
-**Calcul** : F1 = 2 × (Précision × Rappel) ÷ (Précision + Rappel)
-
-**Pourquoi ?** : On peut avoir 100% de précision mais 50% de rappel. Le F1 combine les deux.
-
-**Bon score** : > 80% (système performant globalement)
-</details>
-
-### Niveau Quantité (Précision)
-
-**⚠️ Important**: Ces métriques sont calculées **uniquement sur les True Positives** (produits correctement détectés).
+**Important**: Ces metriques sont calculees **uniquement sur les True Positives** (produits correctement detectes).
 
 | Métrique | Valeur | Interprétation |
 |----------|--------|----------------|
 | **MAE** | ${quantityMetrics.mae.toFixed(2)} unités | Erreur moyenne absolue (symétrique) |
-| **wMAPE** | ${quantityMetrics.wmape.toFixed(1)}% | ⚖️ Erreur pondérée robuste (métrique principale) |
+| **wMAPE** | ${quantityMetrics.wmape.toFixed(1)}% | Erreur ponderee robuste (metrique principale) |
 | **MAPE** | ${quantityMetrics.mape.toFixed(1)}% | Erreur moyenne en % (biaisé, pour info) |
 | **Bias** | ${quantityMetrics.bias.toFixed(1)}% | Biais directionnel (>0 = surestime, <0 = sous-estime) |
 | Exact Match (=0u) | ${quantityMetrics.distribution.exactMatch} | Égalité parfaite |
 | Partial Match (>0u) | ${quantityMetrics.distribution.partialMatch} | Avec erreur |
 
-<details>
-<summary>Qu'est-ce qu'un Exact Match vs Partial Match ?</summary>
-
-**Exact Match (🎯)** : Quantité prédite = Quantité réelle (erreur = 0)
-- Exemple : Système prédit 10, Client commande 10 → Exact Match
-
-**Partial Match (✅)** : Quantité prédite ≠ Quantité réelle (erreur > 0)
-- Exemple : Système prédit 10, Client commande 12 → Partial Match (erreur = 2 unités)
-
-**Note** : Seuls les True Positives ont un match type (les produits bien détectés)
-</details>
-
-<details>
-<summary>Comment est calculé le MAE ?</summary>
-
-**Nom complet** : Mean Absolute Error (Erreur Absolue Moyenne)
-
-**En simple** : En moyenne, le système se trompe de combien d'unités ?
-
-**Calcul** : MAE = Moyenne des |Qté Prédite - Qté Réelle|
-
-**Exemple** :
-- Produit A : Prédit 10, Réel 12 → Erreur = 2 unités
-- Produit B : Prédit 5, Réel 4 → Erreur = 1 unité
-- Produit C : Prédit 8, Réel 11 → Erreur = 3 unités
-- MAE = (2 + 1 + 3) ÷ 3 = 2 unités
-
-**Bon score** : < 2 unités (très précis)
-</details>
-
-<details>
-<summary>Comment est calculé le MAPE ?</summary>
-
-**Nom complet** : Mean Absolute Percentage Error (Erreur Absolue Moyenne en %)
-
-**En simple** : En moyenne, le système se trompe de combien en pourcentage ?
-
-**Calcul** : MAPE = Moyenne des (|Qté Prédite - Qté Réelle| ÷ Qté Réelle × 100%)
-
-**Exemple** :
-- Produit A : Prédit 10, Réel 12 → Erreur = 16.7%
-- Produit B : Prédit 5, Réel 4 → Erreur = 25%
-- MAPE = (16.7% + 25%) ÷ 2 = 20.8%
-
-**Bon score** : < 30%
-
-**Note** : Moins fiable que MAE pour petites quantités (prédit 2, réel 1 = 100% mais seulement 1 unité d'écart)
-</details>
-
 ---
 
 ## True Positives (${comparison.truePositives.length})
-
-<details>
-<summary>Qu'est-ce qu'un True Positive ?</summary>
-
-**En simple** : Un produit que le système a prédit ET que le client a vraiment commandé
-
-**Calcul** : Pour chaque produit, on compare :
-- Système dit : "Ce produit doit être commandé"
-- Réalité : Le client commande ce produit
-- → True Positive (bonne prédiction)
-
-**C'est bon** : Plus il y en a, mieux c'est
-</details>
 
 ${comparison.truePositives.length > 0 ? `
 *Produits correctement détectés par le système*
@@ -459,7 +383,7 @@ ${comparison.truePositives.length > 0 ? `
 | Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
 |---------|--------|------|-----------|----------|------|------------|------------|--------|
 ${comparison.truePositives.map(tp =>
-  `| ${tp.productName} | ${tp.predictedQty} | ${tp.realQty} | ${tp.absoluteError.toFixed(1)} | ${tp.errorPercent.toFixed(1)}% | ${getMatchTypeEmoji(tp.matchType)} ${tp.matchType} | ${tp.llm_required ? '✅ Oui' : '❌ Non'} | ${tp.llm_success ? '✅ Oui' : '❌ Non'} | ${tp.quantitySource === 'llm' ? '🤖 LLM' : '📊 Médiane'} |`
+  `| ${tp.productName} | ${tp.predictedQty} | ${tp.realQty} | ${tp.absoluteError.toFixed(1)} | ${tp.errorPercent.toFixed(1)}% | ${tp.matchType} | ${tp.llm_required ? 'Oui' : 'Non'} | ${tp.llm_success ? 'Oui' : 'Non'} | ${tp.quantitySource === 'llm' ? 'LLM' : 'Mediane'} |`
 ).join('\n')}
 
 ${generateLLMDetailSection(comparison.truePositives)}
@@ -470,19 +394,6 @@ ${generateLLMInputDataSection(comparison.truePositives)}
 ---
 
 ## False Positives (${comparison.falsePositives.length})
-
-<details>
-<summary>Qu'est-ce qu'un False Positive ?</summary>
-
-**En simple** : Un produit que le système a prédit MAIS que le client n'a pas commandé
-
-**Calcul** : Pour chaque produit, on compare :
-- Système dit : "Ce produit doit être commandé"
-- Réalité : Le client ne commande PAS ce produit
-- → False Positive (fausse alerte)
-
-**Problème** : Trop de False Positives = beaucoup de propositions inutiles (baisse la Précision)
-</details>
 
 ${comparison.falsePositives.length > 0 ? `
 *Produits prédits mais non commandés*
@@ -498,28 +409,17 @@ ${comparison.falsePositives.map(fp =>
 
 ## False Negatives (${comparison.falseNegatives.length})
 
-<details>
-<summary>Qu'est-ce qu'un False Negative ?</summary>
-
-**En simple** : Un produit que le système n'a PAS prédit MAIS que le client a commandé
-
-**Calcul** : Pour chaque produit, on compare :
-- Système dit : "Pas besoin de commander ce produit"
-- Réalité : Le client commande ce produit
-- → False Negative (besoin manqué)
-
-**Problème** : Trop de False Negatives = beaucoup de besoins ratés (baisse le Rappel)
-</details>
-
 ${comparison.falseNegatives.length > 0 ? `
-*Produits commandés mais non prédits*
+*Produits commandes mais non predits*
 
-| Produit | Qté commandée | Raison |
+| Produit | Qte commandee | Raison |
 |---------|---------------|--------|
 ${comparison.falseNegatives.map(fn =>
   `| ${fn.productName} | ${fn.qty} | ${fn.reason} |`
 ).join('\n')}
-` : '*Aucun faux négatif (rappel = 100%)*'}
+
+${generateFNLLMDetailSection(comparison.falseNegatives)}
+` : '*Aucun faux negatif (rappel = 100%)*'}
 
 ---
 
@@ -527,18 +427,7 @@ ${comparison.falseNegatives.map(fn =>
 `;
 }
 
-/**
- * Returns emoji representation for quantity match type
- *
- * @param matchType - Match type: 'exact' (zero error) or 'partial' (non-zero error)
- * @returns Emoji character: '🎯' for exact, '✅' for partial
- */
-function getMatchTypeEmoji(matchType: 'exact' | 'partial'): string {
-  switch (matchType) {
-    case 'exact': return '🎯';
-    case 'partial': return '✅';
-  }
-}
+// getMatchTypeEmoji function removed - no longer using emojis
 
 // ============================================================================
 // HELPERS FOR JSON V2 FORMAT GENERATION

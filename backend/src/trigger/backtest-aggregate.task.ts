@@ -149,6 +149,7 @@ export const backtestAggregateTask = task({
     let totalLLMCalls = 0;
     let totalPromptTokens = 0;
     let totalCompletionTokens = 0;
+    const v2Reports: any[] = [];
 
     for (let chunkIdx = 0; chunkIdx < totalChunks; chunkIdx++) {
       const chunkStart = chunkIdx * BATCH_SIZE;
@@ -198,6 +199,11 @@ export const backtestAggregateTask = task({
               totalPromptTokens += taskResult.llm_usage.promptTokens;
               totalCompletionTokens += taskResult.llm_usage.completionTokens;
             }
+
+            // Collect v2 report data directly from output (files not accessible cross-worker in prod)
+            if (taskResult.reportV2) {
+              v2Reports.push(taskResult.reportV2);
+            }
           } else {
             const runIndex = batchResults.runs.indexOf(run);
             const clientId = chunkClientIds[runIndex];
@@ -234,10 +240,6 @@ export const backtestAggregateTask = task({
 
     const successfulResults = allResults.filter((r) => r.success && r.metrics);
 
-    const aggregateMetrics = calculateAggregateStatistics(
-      successfulResults.map((r) => r.metrics!)
-    );
-
     const reportsOutputDir = path.join(process.cwd(), "reports-output");
     await fs.mkdir(reportsOutputDir, { recursive: true });
 
@@ -246,18 +248,8 @@ export const backtestAggregateTask = task({
     let jsonPath = "";
     let mdPath = "";
 
+    // v2Reports collected directly from task outputs (not file-based)
     try {
-      const v2Files = await fs.readdir(reportsOutputDir);
-      const v2Reports = [];
-
-      for (const file of v2Files) {
-        if (file.endsWith('-v2.json') && file.startsWith('backtest-client-')) {
-          const filePath = path.join(reportsOutputDir, file);
-          const content = await fs.readFile(filePath, 'utf-8');
-          v2Reports.push(JSON.parse(content));
-        }
-      }
-
       if (v2Reports.length > 0) {
         const aggregatedV2 = generateAggregatedReportV2(v2Reports);
         const aggregatedV2FileName = `backtest-aggregate-${timestamp}-v2.json`;
@@ -272,6 +264,12 @@ export const backtestAggregateTask = task({
     } catch (aggregateError) {
       console.warn(`Failed to generate reports:`, aggregateError instanceof Error ? aggregateError.message : String(aggregateError));
     }
+
+    // Calculate aggregate metrics with v2Reports for summary
+    const aggregateMetrics = calculateAggregateStatistics(
+      successfulResults.map((r) => r.metrics!),
+      v2Reports.length > 0 ? v2Reports : undefined
+    );
 
     const executionTime = Date.now() - startTime;
 

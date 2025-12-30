@@ -366,6 +366,7 @@ export const backtestClientTask = task({
           bias: comparison.quantityMetrics.bias,
         },
         llm_usage: llmUsage,
+        reportV2: reportJSONv2,  // Include v2 data for aggregate (files not accessible cross-worker)
         reportPath: reportPathMd,  // Legacy: keep markdown path for backward compatibility
         reportPaths: {
           markdown: reportPathMd,
