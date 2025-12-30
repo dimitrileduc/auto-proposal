@@ -80,24 +80,52 @@ export interface LLMPredictionResult {
 // Configuration
 const MODEL = "google/gemini-3-flash-preview";
 
-// Ax signature - LLM prompt for stock prediction (Chain of Thought)
+// Ax signature - LLM prompt for stock prediction (Prompt E: Hybrid B-detection + C-quantity)
 const stockPredictorSignature = `
 "Expert Supply Chain B2B - Prédiction réapprovisionnement
 
-MÉTHODE (Chain of Thought):
+MÉTHODE EN 2 ÉTAPES DISTINCTES:
 
-ÉTAPE 1 - DÉTECTION DU BESOIN (Recall):
-- Analyser le cycle de commande à partir de recentOrders
-- Calculer les jours écoulés depuis la dernière commande (vs currentDate)
-- Évaluer si prochaine commande tombe dans l'horizon replenishmentThresholdDays
-- Règle: Si DOUTE sur cycle ou rotation → Prévoir commande (principe précaution B2B)
-- Mieux détecter un besoin incertain qu'une rupture manquée
+═══════════════════════════════════════════════════════════
+ÉTAPE 1 - DÉTECTION DU BESOIN
+═══════════════════════════════════════════════════════════
 
-ÉTAPE 2 - ESTIMATION QUANTITÉ (Précision):
-- Privilegier la MÉDIANE des quantités de recentOrders
-- NE PAS ajuster pour saisonnalité SAUF si pattern lastYearOrders vraiment flagrant
+RÈGLE PRINCIPALE: Si DOUTE sur cycle ou rotation → Prévoir commande (principe précaution B2B)
+BIAIS: Mieux détecter un besoin incertain qu'une rupture manquée
+
+CRITÈRES:
+- Analyser cycle de commande et jours depuis dernière commande
+- Évaluer risque rupture horizon replenishmentThresholdDays jours
+- Si jours depuis dernière commande ≥ 70% du cycle moyen → RISQUE → prévoir
+- Si cycle irrégulier ou difficile à déterminer → PRÉVOIR (précaution)
+
+═══════════════════════════════════════════════════════════
+ÉTAPE 2 - ESTIMATION QUANTITÉ
+═══════════════════════════════════════════════════════════
+
+RÈGLE PRINCIPALE: Privilégier la MÉDIANE des quantités historique récent
+
+RÈGLES IMPORTANTES:
+- Les pics exceptionnels (promotions, événements) ne doivent pas influencer la prévision
+- Les valeurs extrêmes sont souvent des événements ponctuels
+- En cas de doute entre deux quantités → choisir la plus basse
 - Ne pas surestimer pour stock de sécurité
-- Ne pas prendre le maximum, prendre la valeur typique"
+
+CAS PARTICULIERS:
+- Rotation très faible (1-2u): Maintenir 1-2u, ne pas augmenter sans raison
+- Sans historique récent: Se baser sur N-1 même période si disponible
+- Rotation régulière (3-5 dernières identiques): Maintenir cette quantité
+- Tendance à la baisse: Respecter la baisse
+
+═══════════════════════════════════════════════════════════
+DÉCISION FINALE
+═══════════════════════════════════════════════════════════
+
+1. Risque rupture dans les replenishmentThresholdDays prochains jours?
+   - OUI ou DOUTE → passer à étape 2
+   - NON clairement → quantity = 0
+
+2. Quantité = Médiane des commandes récentes, en cas de doute → plus bas"
 
 productName:string,
 recentOrders:string,
