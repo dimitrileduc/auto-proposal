@@ -44,7 +44,6 @@ export async function calculateReplenishmentNeeds(
   // Fetch ONLY full history (730d) to have Y-1
   const fullHistory = await getProductOrderHistory(clientId, FULL_HISTORY_DAYS, analysisEndDate);
 
-  // Filter locally products ordered in last 120 days
   const cutoffDate = new Date(analysisEndDate);
   cutoffDate.setDate(cutoffDate.getDate() - ANALYSIS_WINDOW_DAYS);
 
@@ -209,11 +208,6 @@ export async function calculateReplenishmentNeeds(
       quantitySource = "median-fallback";
     }
 
-    // If quantity = 0, skip (whether LLM or fallback)
-    if (finalQuantity === 0) {
-      continue;
-    }
-
     // Get LLM input data (if available)
     const inputData = llmInputData.get(product.product_id);
 
@@ -247,8 +241,13 @@ export async function calculateReplenishmentNeeds(
       } : undefined,
     };
 
-    // Add ALL analyzed products (for backtest)
+    // Add ALL analyzed products (for backtest) - BEFORE checking qty=0
     allProducts.push(productStatus);
+
+    // If quantity = 0, skip from production order list
+    if (finalQuantity === 0) {
+      continue;
+    }
 
     // Add to products to order (for prod)
     analyzedProducts.push(productStatus);

@@ -80,77 +80,24 @@ export interface LLMPredictionResult {
 // Configuration
 const MODEL = "google/gemini-3-flash-preview";
 
-// Ax signature - LLM prompt for stock prediction
+// Ax signature - LLM prompt for stock prediction (Chain of Thought)
 const stockPredictorSignature = `
-"Tu es un assistant spécialisé dans la prévision de commandes de produits alimentaires pour un commerce de détail. Ta tâche est de prédire la quantité exacte de la prochaine commande pour un produit donné.
+"Expert Supply Chain B2B - Prédiction réapprovisionnement
 
-## Données fournies :
-- **productName** : Nom et code du produit
-- **recentOrders** : Historique des commandes récentes (2025) avec dates et quantités
-- **lastYearOrders** : Historique des commandes de l'année précédente (2024 et avant)
-- **currentDate** : Date actuelle pour la prévision
-- **replenishmentThresholdDays** : Seuil de risque en jours. Si la prochaine commande naturelle est attendue dans moins de X jours → RISQUE, commander maintenant. Si > X jours → PAS DE RISQUE, quantity = 0
-- **quantity** : La quantité réelle commandée (pour validation)
+MÉTHODE (Chain of Thought):
 
-## Stratégie de prévision :
+ÉTAPE 1 - DÉTECTION DU BESOIN (Recall):
+- Analyser le cycle de commande à partir de recentOrders
+- Calculer les jours écoulés depuis la dernière commande (vs currentDate)
+- Évaluer si prochaine commande tombe dans l'horizon replenishmentThresholdDays
+- Règle: Si DOUTE sur cycle ou rotation → Prévoir commande (principe précaution B2B)
+- Mieux détecter un besoin incertain qu'une rupture manquée
 
-### RÈGLE PRINCIPALE : Privilégier la dernière commande
-La règle la plus importante est de **vérifier le dernier cycle de commande**. La dernière quantité commandée est souvent le meilleur indicateur, surtout pour les produits à rotation stable.
-
-### Utiliser la MÉDIANE, pas le maximum
-- Ne pas surestimer en prenant les valeurs maximales de l'historique
-- Calculer la médiane ou la valeur typique des commandes récentes
-- Les pics exceptionnels (comme 42u, 48u dans l'historique) ne doivent PAS être utilisés pour la prévision courante
-- Les valeurs extrêmes sont souvent des événements ponctuels (promotions, événements spéciaux)
-
-### Analyse de la fréquence et des cycles
-1. Identifier l'intervalle typique entre commandes (hebdomadaire, mensuel, bimensuel, etc.)
-2. Vérifier si suffisamment de temps s'est écoulé depuis la dernière commande
-3. Pour les produits avec historique stable, maintenir la quantité habituelle
-
-### Saisonnalité
-- Comparer avec la même période de l'année précédente si disponible
-- Ne pas extrapoler des tendances saisonnières sans données solides
-- La prudence est de mise pour les périodes sans historique comparable
-
-### Cas particuliers :
-
-**Produits à rotation très faible (1 unité par commande)**
-- Si l'historique montre systématiquement 1u, prévoir 1u
-- Ne pas augmenter sans raison valable
-
-**Produits sans historique récent**
-- Se baser sur lastYearOrders pour la même période si disponible
-- Pour les nouveaux produits sans aucun historique, commencer avec 1u (pas 12u ou plus)
-- Éviter les quantités spéculatives
-
-**Produits à rotation régulière**
-- Si les 3-5 dernières commandes sont identiques (ex: toujours 16u), maintenir cette quantité
-- La stabilité historique est un fort indicateur
-
-**Gestion des tendances**
-- Une augmentation récente (1u → 2u → 3u) suggère de suivre la tendance, mais avec prudence
-- Une diminution récente doit être respectée (ne pas revenir aux anciennes quantités plus élevées)
-
-## Erreurs à éviter :
-❌ Surestimer en prenant le maximum de l'historique
-❌ Ignorer la dernière commande récente
-❌ Prévoir 12u ou plus pour un nouveau produit sans historique
-❌ Extrapoler des tendances saisonnières sans données solides
-❌ Moyenner aveuglément sans considérer les valeurs aberrantes
-
-## CRITIQUE : Appliquer le seuil de réapprovisionnement
-1. Estimer quand la prochaine commande naturelle aura lieu (basé sur la fréquence historique)
-2. Calculer le nombre de jours avant cette prochaine commande
-3. **SI jours < replenishmentThresholdDays** → RISQUE DE RUPTURE → Recommander la quantité habituelle
-4. **SI jours ≥ replenishmentThresholdDays** → PAS DE RISQUE → quantity = 0
-
-Exemple: Si le produit est commandé tous les 30 jours, dernière commande il y a 25 jours, et replenishmentThresholdDays = 30:
-- Prochaine commande dans environ 5 jours (30 - 25)
-- 5 < 30 → RISQUE → Commander maintenant
-
-## Objectif :
-Minimiser l'écart entre la prévision et la quantité réelle en privilégiant la précision sur l'optimisme. En cas de doute entre deux quantités, choisir la plus conservatrice (la plus basse)."
+ÉTAPE 2 - ESTIMATION QUANTITÉ (Précision):
+- Privilegier la MÉDIANE des quantités de recentOrders
+- NE PAS ajuster pour saisonnalité SAUF si pattern lastYearOrders vraiment flagrant
+- Ne pas surestimer pour stock de sécurité
+- Ne pas prendre le maximum, prendre la valeur typique"
 
 productName:string,
 recentOrders:string,
@@ -187,7 +134,8 @@ function initPredictor(): { llm: AxAIOpenRouter<string>; predictor: ReturnType<t
 
   llmInstance = new AxAIOpenRouter({
     apiKey,
-    config: { model: MODEL },
+    config: { model: MODEL, stream: false },
+    options: { streamingUsage: true },
   });
 
   predictorInstance = ax(stockPredictorSignature);
@@ -255,13 +203,14 @@ export async function predictWithAxOptimized(
       summary: result.summary || "",
     };
 
-    const usage = predictor.getUsage();
-    const lastUsage = usage[usage.length - 1] || {};
+    // Get token usage from the LLM instance (stored after each chat call)
+    // Note: stream: false is required for OpenRouter to return token usage
+    const aiModelUsage = (llm as any).modelUsage;
 
     const llmUsage: LLMUsage = {
-      promptTokens: (lastUsage as any).tokens?.promptTokens || 0,
-      completionTokens: (lastUsage as any).tokens?.completionTokens || 0,
-      totalTokens: (lastUsage as any).tokens?.totalTokens || 0,
+      promptTokens: aiModelUsage?.tokens?.promptTokens || 0,
+      completionTokens: aiModelUsage?.tokens?.completionTokens || 0,
+      totalTokens: aiModelUsage?.tokens?.totalTokens || 0,
     };
 
     return {
