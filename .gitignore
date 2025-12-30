@@ -4,6 +4,10 @@
 .DS_Store
 *.log
 
+# Reports output (generated backtesting reports)
+backend/reports-output-*/
+backend/reports-output/
+
 # # Reports output
 # backend/reports-output/*.md
 
