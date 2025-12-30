@@ -7,6 +7,35 @@ Always use this projectRef when triggering tasks!
 
 <!-- PROJECT CONFIG END -->
 
+<!-- PROJECT DOCS START -->
+# PROJECT DOCUMENTATION
+
+Quick Links to All Documentation:
+
+## Getting Started
+- [README](../README.md) - Project overview & quick-start
+- [Getting Started Guide](../docs/GETTING-STARTED.md) - Setup & first test
+- [Architecture](../docs/ARCHITECTURE.md) - System design & stack
+
+## Features (Core Modules)
+- [Stock Replenishment](../docs/features/stock-replenishment.md) - LLM-powered order quantities
+- [Client Inactivity](../docs/features/client-inactivity.md) - Identify inactive clients
+- [Proposal Preparation](../docs/features/proposal-preparation.md) - Prepare quote data
+- [Proposal Generation](../docs/features/proposal-generation.md) - Generate proposals
+- [Backtesting](../docs/features/backtesting.md) - Validate predictions vs reality
+
+## Tasks (Trigger.dev Workflows)
+- [Orchestrator Task](../docs/tasks/orchestrator.md) - Main workflow entry point
+- [Client Proposal Task](../docs/tasks/client-proposal.md) - Single client processing
+- [Backtest Client Task](../docs/tasks/backtest-client.md) - Validate single client
+- [Backtest Aggregate Task](../docs/tasks/backtest-aggregate.md) - Aggregate statistics
+
+## Infrastructure
+- [LLM Integration](../docs/infrastructure/llm.md) - Google Gemini + Ax framework
+- [Odoo Integration](../docs/infrastructure/odoo.md) - ERP API setup & usage
+
+<!-- PROJECT DOCS END -->
+
 <!-- TRIGGER.DEV basic START -->
 # Trigger.dev Basic Tasks (v4)
 
