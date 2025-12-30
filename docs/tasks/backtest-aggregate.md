@@ -90,7 +90,7 @@ Lancer le backtest de N clients en parallèle, puis calculer statistiques global
 ### 1. Auto-discover 50 clients
 
 ```bash
-curl -X POST http://localhost:3000/routes/backtest-aggregate \
+curl -X POST http://localhost:3000/backtest/aggregate \
   -H "Content-Type: application/json" \
   -d '{
     "autoDiscoverCount": 50,
@@ -116,7 +116,7 @@ curl -X POST http://localhost:3000/routes/backtest-aggregate \
 ### 2. Spécifier clients
 
 ```bash
-curl -X POST http://localhost:3000/routes/backtest-aggregate \
+curl -X POST http://localhost:3000/backtest/aggregate \
   -H "Content-Type: application/json" \
   -d '{
     "clientIds": [123, 456, 789],
@@ -127,7 +127,7 @@ curl -X POST http://localhost:3000/routes/backtest-aggregate \
 ### 3. Ordeers spécifiques
 
 ```bash
-curl -X POST http://localhost:3000/routes/backtest-aggregate \
+curl -X POST http://localhost:3000/backtest/aggregate \
   -H "Content-Type: application/json" \
   -d '{
     "specificOrders": {
@@ -186,7 +186,7 @@ Deux formats:
 ## Intégration
 
 Utilisé par:
-- Direct HTTP endpoint `/routes/backtest-aggregate`
+- Direct HTTP endpoint `POST /backtest/aggregate`
 - Testing & evaluation workflows
 - Performance validation
 

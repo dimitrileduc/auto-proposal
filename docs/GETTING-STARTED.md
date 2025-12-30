@@ -8,7 +8,7 @@ Guide rapide pour démarrer avec auto-proposal.
 - **pnpm** 10.8+ (installer: `npm install -g pnpm`)
 - **Odoo** instance accessible (URL, credentials)
 - **Trigger.dev** compte + project ID (gratuit sur [trigger.dev](https://trigger.dev))
-- **Anthropic API key** (Claude access)
+- **OpenRouter API key** (accès Google Gemini)
 
 ## Installation
 
@@ -25,7 +25,7 @@ cp .env.example .env  # (si existe)
 # ODOO_DB=...
 # ODOO_USERNAME=...
 # ODOO_PASSWORD=...
-# ANTHROPIC_API_KEY=...
+# OPENROUTER_API_KEY=sk-or-v1-your-key-here
 # TRIGGER_API_KEY=...
 ```
 

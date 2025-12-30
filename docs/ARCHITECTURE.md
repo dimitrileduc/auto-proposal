@@ -8,7 +8,7 @@ Vue d'ensemble technique du système auto-proposal.
 - **Web**: Hono (HTTP server sur port 3000)
 - **Tasks**: Trigger.dev v4.3.0 (async, scalable)
 - **ERP**: Odoo (XML-RPC ou JSON-2)
-- **IA**: Claude (Anthropic SDK) + Ax optimization framework
+- **IA**: Google Gemini 3 Flash Preview (via OpenRouter) + Ax optimization framework
 - **Package Manager**: pnpm
 
 ## Diagramme d'architecture
@@ -19,7 +19,7 @@ graph TB
     HTTP -->|triggers| Tasks["Trigger.dev Tasks"]
     Tasks -->|calls| Features["Features Services"]
     Features -->|reads/writes| Odoo["Odoo ERP<br/>(XML-RPC)"]
-    Features -->|generates| LLM["Claude AI<br/>(Anthropic)"]
+    Features -->|generates| LLM["Google Gemini 3<br/>(OpenRouter)"]
     Features -->|optimizes| Ax["Ax Framework<br/>(Prompt tuning)"]
     Tasks -->|generates| Reports["Reports & Output"]
 ```
