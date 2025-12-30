@@ -14,9 +14,10 @@ Communiquer avec Odoo en lecture/écriture pour:
 Factory pattern pour créer clients:
 
 ```typescript
-import { odooService } from './infrastructure/odoo';
+import { createOdooClient } from './infrastructure/odoo';
+import { OdooApiType } from '../../types';
 
-const client = odooService.createClient(config);
+const client = createOdooClient(OdooApiType.XMLRPC);
 ```
 
 ### Types de clients
