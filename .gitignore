@@ -8,6 +8,7 @@
 backend/reports-output-*/
 backend/reports-output/
 backend/reports-output-backup/
+backend/reports-output-baselinee/
 
 # # Reports output
 # backend/reports-output/*.md
