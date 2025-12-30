@@ -26,13 +26,13 @@ Utiliser Gemini LLM pour:
 
 Ax signature (Chain of Thought):
 
-**ÉTAPE 1 - DÉTECTION DU BESOIN (Recall):**
+**ÉTAPE 1 - DÉTECTION DU BESOIN - RISQUE RUPTURE (Recall / precisions):**
 - Analyser cycle de commande depuis recentOrders
 - Calculer jours écoulés vs currentDate
 - Évaluer si prochaine commande dans horizon replenishmentThresholdDays
 - Règle: SI DOUTE → Prévoir commande (principe précaution B2B)
 
-**ÉTAPE 2 - ESTIMATION QUANTITÉ (Précision):**
+**ÉTAPE 2 - ESTIMATION QUANTITÉ (MAPE = precision quantité):**
 - Privilégier MÉDIANE des quantités
 - NE PAS ajuster pour saisonnalité SAUF pattern vraiment flagrant
 - Pas de stock de sécurité excessif
