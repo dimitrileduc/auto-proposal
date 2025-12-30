@@ -1,6 +1,6 @@
 # auto-proposal - Documentation
 
-**auto-proposal** est un système automatisé de génération de devis pour Odoo ERP. Il identifie les clients inactifs, utilise l'IA (Claude) pour prédire leurs besoins de réapprovisionnement, prépare des propositions avec tarification et MOQ (Minimum Order Quantity), puis génère des devis draft dans Odoo.
+**auto-proposal** est un système automatisé de génération de devis pour Odoo ERP. Il identifie les clients inactifs, utilise l'IA (Google Gemini) pour prédire leurs besoins de réapprovisionnement, prépare des propositions avec tarification et MOQ (Minimum Order Quantity), puis génère des devis draft dans Odoo.
 
 ## Flux principal
 
@@ -40,9 +40,9 @@ Orchestration par Trigger.dev:
 
 ### Infrastructure
 - **[Odoo Integration](./infrastructure/odoo.md)** - Intégration ERP
-- **[LLM Services](./infrastructure/llm.md)** - Claude + optimisation
+- **[LLM Services](./infrastructure/llm.md)** - Gemini + Ax framework
 
 ---
 
 **Version**: 1.0
-**Stack**: Node.js + TypeScript + Trigger.dev + Odoo + Claude
+**Stack**: Node.js + TypeScript + Trigger.dev + Odoo + Google Gemini
