@@ -4,18 +4,20 @@ Calcule les quantités à commander pour chaque produit, basées sur l'historiqu
 
 ## Objectif
 
-Analyser l'historique d'achat (2 ans) et utiliser Claude pour prédire les quantités à commander. Fallback sur la médiane si LLM échoue.
+Analyser l'historique d'achat (2 ans) et utiliser Google Gemini via Ax pour prédire les quantités à commander. Fallback sur la médiane historique si LLM échoue.
 
 ## Flux
 
 ```mermaid
 flowchart LR
-    A["Client +<br/>Products"] --> B["Historique<br/>2 ans"]
-    B --> C{\"2+ orders?\"}
-    C -->|Oui| D["LLM Prediction<br/>(Claude)"]
-    C -->|Non| E["Median<br/>Fallback"]
-    D --> F["Quantity +<br/>Metadata"]
-    E --> F
+    A["Client +<br/>Products"] --> B["Historique<br/>730 jours"]
+    B --> C["Filter<br/>(180j window)"]
+    C --> D["LLM Prediction<br/>(Gemini)"]
+    D --> E{\"Success?\"}
+    E -->|Oui| F["Use LLM<br/>Quantity"]
+    E -->|Non| G["Fallback:<br/>Median"]
+    F --> H["Quantity +<br/>Metadata"]
+    G --> H
 ```
 
 ## Entrée / Sortie
@@ -170,11 +172,15 @@ const withMedian = needs.filter(p => p.source === 'median');
 
 ## LLM vs Fallback
 
-| Condition | Stratégie | Raison |
-|-----------|-----------|--------|
-| **2+ orders** | Claude LLM | Assez de contexte pour prédiction |
-| **1 order** | Médiane historique | Manque de données, fallback sûr |
-| **0 orders** | Exclu | Pas de prédiction possible |
+**Tous les produits** (avec ≥1 commande dans 180j) vont au LLM d'abord.
+
+Le fallback n'est utilisé QUE si le LLM échoue (erreur, timeout):
+
+| Cas | Stratégie | Source |
+|-----|-----------|--------|
+| **LLM succeeds** | Utiliser qty LLM | Google Gemini |
+| **LLM fails** | Médiane historique (4 niveaux) | Fallback d'urgence |
+| **0 orders** | Exclu | Pas assez de données |
 
 ## Intégration
 
@@ -184,7 +190,7 @@ Utilisé par:
 - **[Backtesting](./backtesting.md)** - Comparaison vs réalité
 
 Voir aussi:
-- **[LLM Services](../infrastructure/llm.md)** - Détails Claude
+- **[LLM Services](../infrastructure/llm.md)** - Détails Gemini & Ax framework
 - **[Proposal Preparation](./proposal-preparation.md)** - Étape suivante
 
 ---
