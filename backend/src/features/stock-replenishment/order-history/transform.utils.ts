@@ -1,15 +1,19 @@
+/**
+ * Order history transformation utilities
+ * @module features/stock-replenishment/order-history/transform
+ */
 import type { OrderHistory } from "../../../infrastructure/odoo/odoo.service";
 import type { ClientOrderHistory, ProductOrderHistory } from "./order-history.types";
 
 /**
- * Transforme l'historique brut Odoo en structure groupée par produit
+ * Transforms raw Odoo order history into product-grouped structure
  *
- * Note: Le filtrage des produits non-food (consignes, palettes, emballages, etc.)
- * est fait côté Odoo dans la requête pour optimiser les performances.
+ * Note: Non-food product filtering (deposits, pallets, packaging, etc.)
+ * is done on the Odoo side in the query for performance optimization.
  *
- * @param rawHistory Données brutes d'Odoo (orders + orderLines déjà filtrées)
- * @param partnerId ID du partenaire
- * @returns Historique structuré par produit avec commandes triées par date décroissante
+ * @param rawHistory - Raw Odoo data (orders + orderLines already filtered)
+ * @param partnerId - Partner ID
+ * @returns Order history structured by product with orders sorted by date descending
  */
 export function transformOrderHistory(
   rawHistory: OrderHistory,

@@ -1,51 +1,55 @@
+/**
+ * Proposal preparation types
+ * @module features/proposal-preparation/types
+ */
 import type { ProductStockStatus } from "../../shared/types/product.types";
 
 /**
- * Produit enrichi avec prix actuel et calculs financiers
+ * Product enriched with current price and financial calculations
  */
 export interface ProductWithCurrentPrice extends ProductStockStatus {
-  /** Prix unitaire historique (dernier price_unit de order_history) */
+  /** Historical unit price (last price_unit from order_history) */
   current_price_unit: number;
 
-  /** Sous-total: quantity_to_order × current_price_unit */
+  /** Subtotal: quantity_to_order x current_price_unit */
   subtotal: number;
 
-  /** Nombre d'unités ajoutées pour atteindre le MOQ global (0 si pas d'ajustement) */
+  /** Units added to reach global MOQ (0 if no adjustment) */
   moq_adjustment: number;
 }
 
 /**
- * Résultat de la préparation de la proposition
+ * Proposal preparation result
  * (Phase 2.5: Pricing + MOQ adjustment)
  */
 export interface ProposalPreparationResult {
-  /** ID du client Odoo */
+  /** Odoo client ID */
   client_id: number;
 
-  /** ID du pricelist utilisé (optionnel, uniquement avec mode currentPriceForClient) */
+  /** Pricelist ID used (optional, only with currentPriceForClient mode) */
   pricelist_id?: number;
 
-  /** Produits avec prix historiques et quantités ajustées */
+  /** Products with historical prices and adjusted quantities */
   products: ProductWithCurrentPrice[];
 
-  /** Montant total de la proposition (après ajustement MOQ éventuel) */
+  /** Total proposal amount (after MOQ adjustment if applied) */
   total_amount: number;
 
-  /** Indique si un ajustement MOQ a été appliqué */
+  /** Indicates if MOQ adjustment was applied */
   moq_adjustment_applied: boolean;
 
-  /** Détails de l'ajustement MOQ (si appliqué) */
+  /** MOQ adjustment details (if applied) */
   adjustment_details?: {
-    /** Total avant ajustement MOQ */
+    /** Total before MOQ adjustment */
     original_total: number;
 
-    /** MOQ minimum requis (ex: 300€) */
+    /** Minimum required MOQ (e.g., 300 EUR) */
     minimum_required: number;
 
-    /** Montant ajouté pour combler le gap */
+    /** Amount added to fill the gap */
     gap_filled: number;
 
-    /** Nombre de produits dont la quantité a été augmentée */
+    /** Number of products with increased quantity */
     products_adjusted: number;
   };
 }

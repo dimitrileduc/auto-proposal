@@ -1,5 +1,6 @@
 /**
- * Types globaux de l'application
+ * Global application types
+ * @module types
  */
 
 export enum OdooApiType {

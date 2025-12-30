@@ -1,76 +1,88 @@
 /**
- * Génération de rapport global pour tous les clients traités
+ * Generates global workflow report for all processed clients
  *
- * Format inspiré de test-data/GLOBAL-REPORT.md :
- * - Stats globales (clients inactifs, avec historique, avec risque, etc.)
- * - Liste des exemples détaillés avec liens
- * - Tableau simple de tous les clients
+ * Report Structure:
+ * - Global statistics (inactive clients, with history, with risk, etc.)
+ * - Detailed examples list with report links
+ * - Summary table of all at-risk clients
+ *
+ * @module reports/global-report
  */
-import type { ClientReportData } from "../workflow/workflow.types";
-import type { GlobalWorkflowStatistics } from "../workflow/workflow.types";
+
+import type { ClientReportData, GlobalWorkflowStatistics } from "./types";
 import {
   title,
   separator,
   table,
 } from "./formatters";
 
+/** Data for generating global workflow report */
 export interface GlobalReportData {
+  /** Report generation timestamp */
   executionDate: string;
+  /** Total workflow execution time in milliseconds */
   totalExecutionTime: number;
+  /** Client report data for all clients with risk */
   clients: ClientReportData[];
+  /** Aggregated workflow statistics */
   statistics: GlobalWorkflowStatistics;
+  /** Workflow configuration */
   config: {
+    /** Replenishment threshold in days */
     replenishmentThreshold: number;
-    targetCoverageDays: number;
-    analysisWindowDays: number;
+    /** Minimum order quantity in currency */
     moqMinimum: number;
   };
 }
 
 /**
- * Génère le rapport markdown global pour tous les clients
+ * Generates markdown global report for all clients
+ *
+ * Creates executive summary with statistics, detailed client list, and
+ * comparison table of all processed clients.
+ *
+ * @param data - Report data combining statistics and client results
+ * @returns Formatted markdown report
  */
 export function generateGlobalReport(data: GlobalReportData): string {
   const sections: string[] = [];
 
-  // En-tête avec configs
-  sections.push(title("📊 Rapport Global Auto-Proposal", 1));
+  sections.push(title("📊 Auto-Proposal Global Report", 1));
   sections.push("");
   const date = new Date(data.executionDate);
   const durationMinutes = Math.floor(data.totalExecutionTime / 60000);
   const durationSeconds = Math.floor((data.totalExecutionTime % 60000) / 1000);
   const durationStr = durationMinutes > 0 ? `${durationMinutes}m ${durationSeconds}s` : `${durationSeconds}s`;
 
-  sections.push(`**📅 Date d'exécution:** ${date.toLocaleDateString("fr-FR")} ${date.toLocaleTimeString("fr-FR", { hour: '2-digit', minute: '2-digit' })}`);
-  sections.push(`**👥 Clients traités:** ${data.clients.length}`);
-  sections.push(`**⏱️ Durée totale:** ${durationStr}`);
-  sections.push(`**💰 MOQ configuré:** ${data.config.moqMinimum.toFixed(2)}€`);
-  sections.push(`**📊 Seuil réappro:** ${data.config.replenishmentThreshold}j`);
-  sections.push(`**🎯 Couverture cible:** ${data.config.targetCoverageDays}j`);
+  sections.push(`**📅 Execution Date:** ${date.toLocaleDateString("en-US")} ${date.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit' })}`);
+  sections.push(`**👥 Clients Processed:** ${data.clients.length}`);
+  sections.push(`**⏱️ Total Duration:** ${durationStr}`);
+  sections.push(`**💰 MOQ Configured:** ${data.config.moqMinimum.toFixed(2)}€`);
+  sections.push(`**📊 Replenishment Threshold:** ${data.config.replenishmentThreshold} days`);
   sections.push("");
   sections.push(separator());
 
-  // Statistiques globales
   sections.push(generateGlobalStatsTable(data));
   sections.push(separator());
 
-  // Liste des exemples détaillés
   sections.push(generateDetailedExamplesList(data));
   sections.push(separator());
 
-  // Tableau de tous les clients avec comparaison phases + lien rapport
   sections.push(generateAllClientsTable(data));
 
   return sections.join("\n");
 }
 
 /**
- * Statistiques globales sous forme de tableau
+ * Generates global statistics in table format
+ *
+ * @param data - Report data with statistics
+ * @returns Formatted statistics table
  */
 function generateGlobalStatsTable(data: GlobalReportData): string {
   const sections: string[] = [];
 
-  sections.push(title("📈 Statistiques Globales", 2));
+  sections.push(title("📈 Global Statistics", 2));
   sections.push("");
 
   const stats = data.statistics;
@@ -78,15 +90,15 @@ function generateGlobalStatsTable(data: GlobalReportData): string {
   const percentWithRisk = ((stats.clientsWithRisk / stats.clientsWithOrderHistory) * 100).toFixed(1);
   const avgProductsPerClient = (stats.totalProducts / stats.clientsWithRisk).toFixed(1);
 
-  const headers = ["Métrique", "Valeur"];
+  const headers = ["Metric", "Value"];
   const rows = [
-    ["👥 **Clients inactifs** (30j+)", `**${stats.totalInactiveClients}**`],
-    ["🔍 **Échantillon analysé**", `**${stats.clientsAnalyzed}** clients`],
-    ["📋 **Clients avec historique de commande** (180j)", `**${stats.clientsWithOrderHistory}** / ${stats.totalInactiveClients} (${percentWithHistory}%)`],
-    ["✅ **Clients avec stock OK**", `**${stats.clientsWithoutRisk}** (pas de risque)`],
-    ["⚠️ **Clients avec risque de rupture**", `**${stats.clientsWithRisk}** / ${stats.clientsWithOrderHistory} (${percentWithRisk}%)`],
-    ["📦 **Total produits à commander**", `**${stats.totalProducts}**`],
-    ["📊 **Moyenne produits/client avec risque**", `**${avgProductsPerClient}**`],
+    ["👥 **Inactive Clients** (30+ days)", `**${stats.totalInactiveClients}**`],
+    ["🔍 **Sample Analyzed**", `**${stats.clientsAnalyzed}** clients`],
+    ["📋 **Clients with Order History** (270 days)", `**${stats.clientsWithOrderHistory}** / ${stats.totalInactiveClients} (${percentWithHistory}%)`],
+    ["✅ **Clients with Stock OK**", `**${stats.clientsWithoutRisk}** (no risk)`],
+    ["⚠️ **Clients with Replenishment Risk**", `**${stats.clientsWithRisk}** / ${stats.clientsWithOrderHistory} (${percentWithRisk}%)`],
+    ["📦 **Total Products to Order**", `**${stats.totalProducts}**`],
+    ["📊 **Average Products/At-Risk Client**", `**${avgProductsPerClient}**`],
   ];
 
   sections.push(table(headers, rows));
@@ -95,14 +107,17 @@ function generateGlobalStatsTable(data: GlobalReportData): string {
 }
 
 /**
- * Liste des exemples détaillés avec liens vers rapports clients
+ * Generates detailed examples list with report links
+ *
+ * @param data - Report data with client list
+ * @returns Formatted client examples list
  */
 function generateDetailedExamplesList(data: GlobalReportData): string {
   const sections: string[] = [];
 
-  sections.push(title(`📋 Liste des ${data.clients.length} Exemples Détaillés`, 2));
+  sections.push(title(`📋 List of ${data.clients.length} Detailed Examples`, 2));
   sections.push("");
-  sections.push(`Les rapports détaillés ci-dessous sont les ${data.clients.length} clients traités avec workflow complet.`);
+  sections.push(`The detailed reports below are the ${data.clients.length} clients processed with complete workflow.`);
   sections.push("");
 
   data.clients.forEach((client, index) => {
@@ -110,9 +125,9 @@ function generateDetailedExamplesList(data: GlobalReportData): string {
     sections.push("");
     sections.push(`- **ID:** ${client.client.id}`);
     sections.push(`- **Email:** ${client.client.email || "N/A"}`);
-    sections.push(`- **Produits à commander:** ${client.summary.productsCount}`);
+    sections.push(`- **Products to Order:** ${client.summary.productsCount}`);
     const fileName = `client-${client.client.id}-${client.client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
-    sections.push(`- **📄 Rapport détaillé:** [${fileName}](./${fileName})`);
+    sections.push(`- **📄 Detailed Report:** [${fileName}](./${fileName})`);
     sections.push("");
   });
 
@@ -120,15 +135,20 @@ function generateDetailedExamplesList(data: GlobalReportData): string {
 }
 
 /**
- * Tableau comparatif RAW → AJUSTÉ → ODOO pour tous les clients avec lien rapport
+ * Generates comparison table of all at-risk clients
+ *
+ * Shows progression: RAW → ADJUSTED → ODOO with report links
+ *
+ * @param data - Report data with client details
+ * @returns Formatted clients comparison table
  */
 function generateAllClientsTable(data: GlobalReportData): string {
   const sections: string[] = [];
 
-  sections.push(title("📊 Tous les Clients avec Risque de Rupture", 2));
+  sections.push(title("📊 All Clients with Replenishment Risk", 2));
   sections.push("");
 
-  const headers = ["Client", "ID", "Produits", "RAW (€)", "AJUSTÉ (€)", "ODOO HT (€)", "Rapport"];
+  const headers = ["Client", "ID", "Products", "RAW (€)", "ADJUSTED (€)", "ODOO excl. tax (€)", "Report"];
 
   const rows = data.clients.map(client => {
     const rawAmount = client.summary.initialAmount.toFixed(2) + "€";

@@ -1,3 +1,12 @@
+<!-- PROJECT CONFIG START -->
+# PROJECT CONFIGURATION
+
+**TRIGGER.DEV PROJECT REF: proj_yebxbxzoixxmavgyyjlk**
+
+Always use this projectRef when triggering tasks!
+
+<!-- PROJECT CONFIG END -->
+
 <!-- TRIGGER.DEV basic START -->
 # Trigger.dev Basic Tasks (v4)
 

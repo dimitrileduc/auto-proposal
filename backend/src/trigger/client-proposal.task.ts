@@ -4,17 +4,18 @@ import { prepareProposal } from "../features/proposal-preparation/proposal-prepa
 import { generateQuote } from "../features/proposal-generation/proposal-generation.service";
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
-import { prepareClientReportData } from "../workflow/workflow.client-stats";
-import { generateClientReport, generateQuoteReport } from "../reports/client-report";
+import { getTodayAsDateString, parseUserDateInput } from "../utils/date.utils";
+import { generateClientReportJSON } from "../reports/client-report-json";
+import { generateClientReportMarkdown } from "../reports/client-report-md";
 import * as fs from "fs/promises";
 import * as path from "path";
 import type { ClientTaskPayload, ClientProcessingConfig } from "../shared/types";
-import type { ClientProposalResult } from "../workflow/workflow.types";
+import type { ClientProposalResult } from "../reports/types";
 
 const odooClient = createOdooClient(autoProposalConfig.odooApiType);
 
 /**
- * Résultat complet de la tâche client-proposal
+ * Complete result of the client-proposal task
  */
 export interface ClientProposalTaskResult {
   client: {
@@ -27,70 +28,66 @@ export interface ClientProposalTaskResult {
   summary: {
     hasRisk: boolean;
     productsCount: number;
-    urgentProductsCount: number;
-    moderateProductsCount: number;
     finalAmount: number;
     quoteName?: string;
     quoteId?: number;
   };
   report: {
-    complete?: string;  // Le rapport markdown complet
-    quote?: string;  // Le rapport markdown du devis seul
+    /** Business markdown report */
+    markdown?: string;
+    /** Structured JSON report */
+    json?: string;
   };
   executionTime: number;
 }
 
 /**
- * Tâche Trigger.dev pour traiter la proposition automatique d'un client individuel
+ * Trigger.dev task for processing automatic proposals for individual clients
  *
- * Cette tâche exécute le workflow complet pour un client:
+ * Executes the complete workflow for a single client:
  * - Phase 1 & 2: Stock Analysis + Quantity Calculation
  * - Phase 2.5: Proposal Preparation (Pricing + MOQ)
- * - Phase 3: Quote Generation (si !skipQuoteGeneration)
- * - Génération du rapport markdown automatique si hasRisk
+ * - Phase 3: Quote Generation (if !skipQuoteGeneration)
+ * - Report generation when hasRisk=true
  *
- * La configuration utilise autoProposalConfig comme fallback pour tous les paramètres
+ * Uses autoProposalConfig as fallback for all parameters.
+ *
+ * @module trigger/client-proposal
  */
 export const clientProposalTask = task({
   id: "client-proposal",
   retry: {
-    maxAttempts: 3,        // Maximum 3 tentatives (1 + 2 retry)
-    factor: 2,             // Délai double entre chaque retry
-    minTimeoutInMs: 1000,  // Attendre minimum 1 seconde
-    maxTimeoutInMs: 30000, // Maximum 30 secondes d'attente
-    randomize: true,       // Ajoute ±25% d'aléatoire au délai
+    maxAttempts: 3,
+    factor: 2,
+    minTimeoutInMs: 1000,
+    maxTimeoutInMs: 30000,
+    randomize: true,
   },
   run: async (payload: ClientTaskPayload): Promise<ClientProposalTaskResult> => {
     const startTime = Date.now();
-    const phaseTimings = {
-      stockAnalysis: 0,
-      proposalPreparation: 0,
-      quoteGeneration: 0,
-    };
 
-    console.log(`📊 Processing client: ${payload.client.name} (ID: ${payload.client.id})`);
+    console.log(`Processing client: ${payload.client.name} (ID: ${payload.client.id})`);
 
-    // Utilise autoProposalConfig comme configuration par défaut avec overrides depuis le payload
     const config: ClientProcessingConfig = {
-      analysisWindowDays:
-        payload.config.analysisWindowDays ??
-        autoProposalConfig.analysisWindowDays,
+      analysisEndDate: payload.config.analysisEndDate
+        ? parseUserDateInput(payload.config.analysisEndDate)
+        : getTodayAsDateString(),
 
-      targetCoverage:
-        payload.config.targetCoverage ??
-        autoProposalConfig.targetCoverage,
-
-      leadTime:
-        payload.config.leadTime ??
-        autoProposalConfig.leadTime,
+      replenishmentThreshold:
+        payload.config.replenishmentThreshold ??
+        autoProposalConfig.replenishmentThreshold,
 
       moqMinimum:
         payload.config.moqMinimum ??
         autoProposalConfig.pricing.minimumOrderAmount,
 
-      skipQuoteGeneration:
-        payload.config.skipQuoteGeneration ??
-        false,
+      skipOdooQuoteGeneration:
+        payload.config.skipOdooQuoteGeneration ??
+        true,
+
+      shouldGenerateReport:
+        payload.config.shouldGenerateReport ??
+        true,
     };
 
     const result: ClientProposalResult = {
@@ -103,71 +100,30 @@ export const clientProposalTask = task({
     };
 
     try {
-      // Phase 1 & 2: Stock Analysis + Quantity Calculation
-      const stockStart = Date.now();
       const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
-        analysisWindowDays: config.analysisWindowDays,
-        targetCoverage: config.targetCoverage,
-        leadTime: config.leadTime,
+        analysisEndDate: config.analysisEndDate,
+        replenishmentThreshold: config.replenishmentThreshold,
       });
-      phaseTimings.stockAnalysis = Date.now() - stockStart;
 
       result.phases.stockAnalysis = stockAnalysis;
 
-      // Vérifier si le client a des produits à commander
-      if (stockAnalysis.products.length === 0) {
-        result.hasRisk = false;
-        result.success = true;
-        result.executionTime = Date.now() - startTime;
-        result.productsCount = 0;
+      const hasProducts = stockAnalysis.products.length > 0;
+      result.hasRisk = hasProducts;
+      result.productsCount = hasProducts ? stockAnalysis.products.length : 0;
 
-        console.log(`✅ Client ${payload.client.name}: No replenishment needed`);
-
-        return {
-          client: {
-            id: payload.client.id,
-            name: payload.client.name,
-            email: payload.client.email ?? undefined,
-          },
-          config,
-          result,
-          summary: {
-            hasRisk: false,
-            productsCount: 0,
-            urgentProductsCount: 0,
-            moderateProductsCount: 0,
-            finalAmount: 0,
-          },
-          report: {},
-          executionTime: Date.now() - startTime,
-        };
-      }
-
-      result.hasRisk = true;
-      result.productsCount = stockAnalysis.products.length;
-
-      // Compter les produits urgents (daysUntilStockout <= 0)
-      result.urgentProductsCount = stockAnalysis.products.filter(
-        (p) => p.stock_prediction.days_until_stockout <= 0
-      ).length;
-
-      // Compter les produits modérés (0 < days <= threshold)
-      const replenishmentThreshold = config.targetCoverage + config.leadTime;
-      result.moderateProductsCount = stockAnalysis.products.filter(
-        (p) =>
-          p.stock_prediction.days_until_stockout > 0 &&
-          p.stock_prediction.days_until_stockout <= replenishmentThreshold
-      ).length;
-
-      // Phase 2.5: Proposal Preparation (Pricing + MOQ)
-      const proposalStart = Date.now();
-      const proposalFinal = prepareProposal(
-        stockAnalysis,
-        undefined,
-        "historyPriceForClient",
-        config.moqMinimum
-      );
-      phaseTimings.proposalPreparation = Date.now() - proposalStart;
+      const proposalFinal = hasProducts
+        ? prepareProposal(
+            stockAnalysis,
+            undefined,
+            "historyPriceForClient",
+            config.moqMinimum
+          )
+        : {
+            products: [],
+            total_amount: 0,
+            currency: "EUR",
+            moq_adjustment_applied: false,
+          };
 
       result.phases.proposalFinal = proposalFinal;
       result.finalAmount = proposalFinal.total_amount;
@@ -181,11 +137,8 @@ export const clientProposalTask = task({
         result.moqGapFilled = 0;
       }
 
-      // Phase 3: Quote Generation (si pas en mode skip)
-      if (!config.skipQuoteGeneration) {
-        const quoteStart = Date.now();
+      if (!config.skipOdooQuoteGeneration && hasProducts) {
         const quote = await generateQuote(proposalFinal, odooClient);
-        phaseTimings.quoteGeneration = Date.now() - quoteStart;
 
         result.phases.quote = quote;
         result.quoteName = quote.quote_name;
@@ -195,52 +148,43 @@ export const clientProposalTask = task({
       result.success = true;
       result.executionTime = Date.now() - startTime;
 
-      // Générer le rapport client si hasRisk
       let reportMarkdown: string | undefined;
-      let quoteMarkdown: string | undefined;
-      let reportPath: string | undefined;
+      let reportJSON: string | undefined;
 
-      if (result.hasRisk) {
+      if (config.shouldGenerateReport) {
         try {
-          const reportData = prepareClientReportData(result, {
-            ...config,
-            replenishmentThreshold,
-            // Add the missing fields from WorkflowConfig that prepareClientReportData expects
-            inactivityDays: autoProposalConfig.inactivityDaysThreshold,
-            maxClientsForProposalGeneration: autoProposalConfig.workflow.maxClientsForProposalGeneration,
-            maxClientsToAnalyze: "all",
-            excludeAutoProposalQuotes: autoProposalConfig.workflow.excludeAutoProposalQuotes,
+          const jsonData = generateClientReportJSON(result, {
+            analysisEndDate: config.analysisEndDate,
+            replenishmentThreshold: config.replenishmentThreshold,
+            moqMinimum: config.moqMinimum,
+            skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
           });
 
-          if (reportData) {
-            // Générer le rapport complet
-            reportMarkdown = generateClientReport(reportData);
+          reportMarkdown = generateClientReportMarkdown(jsonData);
+          reportJSON = JSON.stringify(jsonData, null, 2);
 
-            // Générer le rapport devis seul (si quote existe)
-            quoteMarkdown = generateQuoteReport(reportData);
+          const reportsOutputDir = path.join(process.cwd(), "reports-output");
+          await fs.mkdir(reportsOutputDir, { recursive: true });
 
-            // Sauvegarder le rapport complet sur disque
-            const reportsOutputDir = path.join(process.cwd(), "reports-output");
-            await fs.mkdir(reportsOutputDir, { recursive: true });
+          const clientSlug = payload.client.name.replace(/[^a-zA-Z0-9-]/g, "-");
+          const mdFileName = `client-${payload.client.id}-${clientSlug}.md`;
+          const jsonFileName = `client-${payload.client.id}-${clientSlug}.json`;
 
-            const reportFileName = `client-${payload.client.id}-${payload.client.name.replace(/[^a-zA-Z0-9-]/g, "-")}.md`;
-            reportPath = path.join(reportsOutputDir, reportFileName);
-            await fs.writeFile(reportPath, reportMarkdown, "utf-8");
-
-            console.log(`📝 Report generated: ${reportFileName}`);
-          }
+          await fs.writeFile(
+            path.join(reportsOutputDir, mdFileName),
+            reportMarkdown,
+            "utf-8"
+          );
+          await fs.writeFile(
+            path.join(reportsOutputDir, jsonFileName),
+            reportJSON,
+            "utf-8"
+          );
         } catch (error) {
           console.error(`Failed to generate report for client ${payload.client.id}:`, error);
-          // Ne pas faire échouer le workflow pour une erreur de rapport
         }
       }
 
-      console.log(
-        `✅ Client ${payload.client.name}: ${result.productsCount} products at risk, ` +
-        `${result.finalAmount?.toFixed(2)}€ HT${result.quoteName ? ` → Quote ${result.quoteName}` : ""}`
-      );
-
-      // Retourne un objet complet avec toutes les informations utiles
       return {
         client: {
           id: payload.client.id,
@@ -252,20 +196,18 @@ export const clientProposalTask = task({
         summary: {
           hasRisk: result.hasRisk,
           productsCount: result.productsCount ?? 0,
-          urgentProductsCount: result.urgentProductsCount ?? 0,
-          moderateProductsCount: result.moderateProductsCount ?? 0,
           finalAmount: result.finalAmount ?? 0,
           quoteName: result.quoteName,
           quoteId: result.quoteId,
         },
         report: {
-          complete: reportMarkdown,
-          quote: quoteMarkdown,
+          markdown: reportMarkdown,
+          json: reportJSON,
         },
         executionTime: Date.now() - startTime,
       };
     } catch (error) {
-      console.error(`❌ Failed to process client ${payload.client.name}:`, error);
+      console.error(`Failed to process client ${payload.client.name}:`, error);
       result.error = error instanceof Error ? error.message : String(error);
       result.success = false;
       result.executionTime = Date.now() - startTime;

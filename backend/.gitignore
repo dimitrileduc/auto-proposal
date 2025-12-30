@@ -41,7 +41,17 @@ scripts/
 *Test*
 *TEST*
 
-# Exception: keep test-data directory
+# Exceptions: keep backtesting and test-data
 !test-data/
+!src/features/backtesting/
+
+# Ignore backtest report outputs (generated files)
+reports-output/
+reports-output-*/
+
+# Exceptions: examples of reports to keep
+!reports-output-v19-400/backtest-aggregate-2025-12-26-summary-v3.md
+!reports-output-v19-400/backtest-aggregate-2025-12-26-v2.json
+!reports-output-v19-400/backtest-client-17587-S40247-all.md
 
 .trigger

@@ -1,0 +1,26 @@
+{
+  "version": "4.0",
+  "phase": "gepa-final-classification",
+  "optimizedAt": "2025-12-29T17:46:50.459Z",
+  "model": "google/gemini-2.0-flash-001",
+  "config": {
+    "numTrials": 20,
+    "trainSize": 200,
+    "valSize": 100,
+    "outputType": "classification"
+  },
+  "results": {
+    "tp": 45,
+    "fp": 37,
+    "fn": 5,
+    "tn": 13,
+    "recall": 0.9,
+    "precision": 0.5487804878048781,
+    "f1": 0.6818181818181819
+  },
+  "paretoFrontSize": 1,
+  "hypervolume": 0.8333333333333334,
+  "instruction": "Expert Supply Chain B2B - Stock replenishment prediction.\n\nOBJECTIVE: MAXIMIZE RECALL (≥85%) - Avoid stockouts at all costs.\nPRIORITY: Better to overstock (false positive) than miss an order (false negative).\nRULE: When in doubt → predict YES.\n\nAnalyze: order cycle patterns, seasonality from last year (N-1), stockout risk within 30 days.",
+  "demos": [],
+  "bestScore": 0.9666666666666668
+}

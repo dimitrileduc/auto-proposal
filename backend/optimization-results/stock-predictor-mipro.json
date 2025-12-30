@@ -1,0 +1,235 @@
+{
+  "version": "2.1",
+  "optimizerType": "mipro-v19-fixed",
+  "optimizedAt": "2025-12-27T20:17:53.833Z",
+  "model": "google/gemini-3-flash-preview",
+  "config": {
+    "maxExamples": 500,
+    "numTrials": 40,
+    "useTeacher": true,
+    "trainSize": 400,
+    "valSize": 100
+  },
+  "baselineOnUnseen": {
+    "recall": 0.9833333333333333,
+    "precision": 0.6145833333333334,
+    "f1": 0.7564102564102564,
+    "tp": 59,
+    "fp": 37,
+    "fn": 1,
+    "tn": 3
+  },
+  "miproOnUnseen": {
+    "recall": 0.9833333333333333,
+    "precision": 0.6344086021505376,
+    "f1": 0.7712418300653595,
+    "tp": 59,
+    "fp": 34,
+    "fn": 1,
+    "tn": 6
+  },
+  "improvement": {
+    "precision": 2,
+    "recall": 0
+  },
+  "bestScore": 0.9721224886208909,
+  "instruction": null,
+  "demos": [
+    {
+      "traces": [
+        {
+          "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+          "recentOrders": "2025-08-19 (mar.): 4u\n2025-08-11 (lun.): 3u\n2025-07-15 (mar.): 2u\n2025-06-23 (lun.): 1u\n2025-06-17 (mar.): 3u\n2025-05-19 (lun.): 1u",
+          "lastYearOrders": "2024-09-24 (mar.): 1u\n2024-09-19 (jeu.): 1u\n2024-06-11 (mar.): 1u\n2024-06-04 (mar.): 2u",
+          "currentDate": "2025-10-19",
+          "quantity": 3,
+          "reasoning": "1) Risque de rupture modéré à élevé. Le produit suit un cycle de commande régulier d'environ 1 à 2 mois. 2) La dernière commande date du 19 août, soit il y a deux mois. L'historique N-1 montre une activité en septembre, ce qui suggère un besoin imminent pour maintenir le stock. 3) Quantité estimée à 3 unités, correspondant à la médiane des commandes de l'historique récent (1, 1, 2, 3, 3, 4)."
+        },
+        {
+          "productName": "[JOY05] Organic Cherry Jam 370g",
+          "recentOrders": "(Aucune commande)",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-10-19",
+          "quantity": 0,
+          "reasoning": "1) Risque de rupture nul car aucune activité n'est enregistrée sur ce produit. 2) Aucune commande récente ni historique N-1 disponible pour établir un cycle. 3) Quantité estimée à 0 car il n'y a aucune preuve de rotation permettant de justifier un réapprovisionnement à cette date."
+        },
+        {
+          "productName": "[fsv01] Cerneaux de noix nature bio vrac 1,8kg",
+          "recentOrders": "2025-09-10 (mer.): 3u\n2025-06-19 (jeu.): 2u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-04",
+          "quantity": 2,
+          "reasoning": "1) Risque de rupture modéré, le produit circule avec un intervalle de 3 mois environ. 2) Dernière commande le 10 septembre (il y a 55 jours), le cycle habituel suggère un réapprovisionnement imminent pour couvrir les 30 prochains jours. 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes récentes (médiane entre 2 et 3), pour maintenir le stock sans surstockage."
+        },
+        {
+          "productName": "[JF056] JF SAUCE CHIPOTLE 250ML WECK",
+          "recentOrders": "2025-08-13 (mer.): 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-11-04",
+          "quantity": 1,
+          "reasoning": "1) Risque de rupture modéré; le produit n'a pas été commandé depuis près de 3 mois (août). 2) Cycle de commande peu fréquent (une seule commande récente), mais le délai écoulé depuis la dernière livraison justifie un réapprovisionnement par précaution pour maintenir la disponibilité en rayon. 3) Quantité estimée à 1 unité, correspondant à la médiane historique du volume de commande habituel pour ce type de référence."
+        }
+      ],
+      "programId": "30bf3b97"
+    }
+  ],
+  "optimizedProgram": {
+    "bestScore": 0.9721224886208909,
+    "stats": {
+      "totalCalls": 725,
+      "successfulDemos": 441,
+      "estimatedTokenUsage": 0,
+      "earlyStopped": false,
+      "resourceUsage": {
+        "totalTokens": 0,
+        "totalTime": 0,
+        "avgLatencyPerEval": 0,
+        "costByModel": {}
+      },
+      "convergenceInfo": {
+        "converged": false,
+        "finalImprovement": 0,
+        "stagnationRounds": 0,
+        "convergenceThreshold": 0.01
+      },
+      "bestScore": 0.9721224886208909,
+      "bestConfiguration": {}
+    },
+    "instruction": "You are a helpful AI assistant. When responding to questions or requests, break down your thinking into clear, logical steps. First, analyze what is being asked. Then, identify the key components or sub-problems. Next, work through each component systematically, explaining your reasoning at each step. Finally, synthesize your findings into a comprehensive answer. Always show your work and explain why you're taking each step, as this helps ensure accuracy and allows others to follow your thought process.",
+    "demos": [
+      {
+        "traces": [
+          {
+            "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+            "recentOrders": "2025-08-19 (mar.): 4u\n2025-08-11 (lun.): 3u\n2025-07-15 (mar.): 2u\n2025-06-23 (lun.): 1u\n2025-06-17 (mar.): 3u\n2025-05-19 (lun.): 1u",
+            "lastYearOrders": "2024-09-24 (mar.): 1u\n2024-09-19 (jeu.): 1u\n2024-06-11 (mar.): 1u\n2024-06-04 (mar.): 2u",
+            "currentDate": "2025-10-19",
+            "quantity": 3,
+            "reasoning": "1) Risque de rupture modéré à élevé. Le produit suit un cycle de commande régulier d'environ 1 à 2 mois. 2) La dernière commande date du 19 août, soit il y a deux mois. L'historique N-1 montre une activité en septembre, ce qui suggère un besoin imminent pour maintenir le stock. 3) Quantité estimée à 3 unités, correspondant à la médiane des commandes de l'historique récent (1, 1, 2, 3, 3, 4)."
+          },
+          {
+            "productName": "[JOY05] Organic Cherry Jam 370g",
+            "recentOrders": "(Aucune commande)",
+            "lastYearOrders": "(Aucune commande)",
+            "currentDate": "2025-10-19",
+            "quantity": 0,
+            "reasoning": "1) Risque de rupture nul car aucune activité n'est enregistrée sur ce produit. 2) Aucune commande récente ni historique N-1 disponible pour établir un cycle. 3) Quantité estimée à 0 car il n'y a aucune preuve de rotation permettant de justifier un réapprovisionnement à cette date."
+          },
+          {
+            "productName": "[fsv01] Cerneaux de noix nature bio vrac 1,8kg",
+            "recentOrders": "2025-09-10 (mer.): 3u\n2025-06-19 (jeu.): 2u",
+            "lastYearOrders": "(Aucune commande)",
+            "currentDate": "2025-11-04",
+            "quantity": 2,
+            "reasoning": "1) Risque de rupture modéré, le produit circule avec un intervalle de 3 mois environ. 2) Dernière commande le 10 septembre (il y a 55 jours), le cycle habituel suggère un réapprovisionnement imminent pour couvrir les 30 prochains jours. 3) Quantité estimée à 2 unités, correspondant à la médiane des commandes récentes (médiane entre 2 et 3), pour maintenir le stock sans surstockage."
+          },
+          {
+            "productName": "[JF056] JF SAUCE CHIPOTLE 250ML WECK",
+            "recentOrders": "2025-08-13 (mer.): 1u",
+            "lastYearOrders": "(Aucune commande)",
+            "currentDate": "2025-11-04",
+            "quantity": 1,
+            "reasoning": "1) Risque de rupture modéré; le produit n'a pas été commandé depuis près de 3 mois (août). 2) Cycle de commande peu fréquent (une seule commande récente), mais le délai écoulé depuis la dernière livraison justifie un réapprovisionnement par précaution pour maintenir la disponibilité en rayon. 3) Quantité estimée à 1 unité, correspondant à la médiane historique du volume de commande habituel pour ce type de référence."
+          }
+        ],
+        "programId": "30bf3b97"
+      }
+    ],
+    "examples": [],
+    "modelConfig": {
+      "temperature": 0.6149709943241384
+    },
+    "optimizerType": "MiPRO (Python)",
+    "optimizationTime": 1222822,
+    "totalRounds": 30,
+    "converged": false,
+    "scoreHistory": [
+      0.752,
+      0.6640000000000001,
+      0.6560000000000001,
+      0.764,
+      0.6920000000000002,
+      0.6560000000000001,
+      0.6960000000000001,
+      0.6520000000000001,
+      0.804,
+      0.7210000000000021,
+      0.632,
+      0.7759999999999999,
+      0.764,
+      0.6920000000000002
+    ],
+    "configurationHistory": [
+      {
+        "temperature": 0.5731964082366596,
+        "bootstrappedDemos": 0,
+        "trialNumber": 1
+      },
+      {
+        "temperature": 0.3857479264477879,
+        "bootstrappedDemos": 0,
+        "trialNumber": 31
+      },
+      {
+        "temperature": 0.517017383758926,
+        "bootstrappedDemos": 0,
+        "trialNumber": 32
+      },
+      {
+        "temperature": 0.765717925539725,
+        "bootstrappedDemos": 1,
+        "trialNumber": 33
+      },
+      {
+        "temperature": 0.4257925248300366,
+        "bootstrappedDemos": 0,
+        "trialNumber": 34
+      },
+      {
+        "temperature": 0.28885460477470276,
+        "bootstrappedDemos": 0,
+        "trialNumber": 35
+      },
+      {
+        "temperature": 0.7323576561275689,
+        "bootstrappedDemos": 1,
+        "trialNumber": 36
+      },
+      {
+        "temperature": 0.5040562517580366,
+        "bootstrappedDemos": 2,
+        "trialNumber": 37
+      },
+      {
+        "temperature": 0.19814883072624168,
+        "bootstrappedDemos": 0,
+        "trialNumber": 38
+      },
+      {
+        "temperature": 1.0438479990516956,
+        "bootstrappedDemos": 1,
+        "trialNumber": 39
+      },
+      {
+        "temperature": 0.3438977894469536,
+        "bootstrappedDemos": 2,
+        "trialNumber": 40
+      },
+      {
+        "temperature": 0.6079163555535284,
+        "bootstrappedDemos": 2,
+        "trialNumber": 41
+      },
+      {
+        "temperature": 0.5472130223484333,
+        "bootstrappedDemos": 2,
+        "trialNumber": 42
+      },
+      {
+        "temperature": 0.7290693723833275,
+        "bootstrappedDemos": 3,
+        "trialNumber": 43
+      }
+    ]
+  }
+}

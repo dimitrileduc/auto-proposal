@@ -1,36 +1,45 @@
 /**
- * Types pour la génération de devis Odoo
+ * Odoo quote generation types
+ * @module features/proposal-generation/types
  */
 
 /**
- * Détails d'une ligne de commande dans le devis
+ * Quote line details for an order item
  */
 export interface QuoteLineDetails {
   // IDs
   line_id: number;
   product_id: number;
 
-  // Infos produit
+  // Product info
   product_name: string;
-  product_uom: [number, string]; // Ex: [27, "TU6"]
+  /** Unit of measure tuple, e.g., [27, "TU6"] */
+  product_uom: [number, string];
+  /** Prediction description/reasoning */
+  description?: string;
 
-  // Quantités
+  // Quantities
   quantity_ordered: number;
 
-  // Prix & totaux
-  price_unit: number; // Prix unitaire HT
-  subtotal_ht: number; // price_subtotal
-  subtotal_ttc: number; // price_total
-  tax_amount: number; // subtotal_ttc - subtotal_ht
+  // Pricing and totals
+  /** Unit price excluding tax */
+  price_unit: number;
+  /** Subtotal excluding tax (price_subtotal) */
+  subtotal_ht: number;
+  /** Subtotal including tax (price_total) */
+  subtotal_ttc: number;
+  /** Tax amount (subtotal_ttc - subtotal_ht) */
+  tax_amount: number;
 }
 
 /**
- * Résultat de la génération d'un devis Odoo
+ * Result of Odoo quote generation
  */
 export interface QuoteCreationResult {
-  // Devis Odoo
+  // Odoo quote
   quote_id: number;
-  quote_name: string; // Ex: "S39591"
+  /** Quote reference, e.g., "S39591" */
+  quote_name: string;
   state: "draft";
 
   // Client
@@ -39,16 +48,25 @@ export interface QuoteCreationResult {
   company_id: number;
   company_name: string;
 
-  // Totaux (calculés par Odoo)
-  amount_total_ht: number; // amount_untaxed
-  amount_total_ttc: number; // amount_total
-  tax_total: number; // amount_tax
+  // Totals (calculated by Odoo)
+  /** Total excluding tax (amount_untaxed) */
+  amount_total_ht: number;
+  /** Total including tax (amount_total) */
+  amount_total_ttc: number;
+  /** Total tax amount (amount_tax) */
+  tax_total: number;
 
-  // Lignes détaillées
+  // Detailed lines (base products)
   order_lines: QuoteLineDetails[];
   lines_count: number;
 
+  // Optional products (sale.order.option)
+  optional_products: QuoteLineDetails[];
+  optional_products_count: number;
+
   // Metadata
-  tag_id: number; // ID du tag appliqué
-  created_at: string; // date_order (ISO)
+  /** Applied tag ID */
+  tag_id: number;
+  /** Order creation date (date_order, ISO format) */
+  created_at: string;
 }

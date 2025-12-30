@@ -1,6 +1,9 @@
 /**
- * Interface commune pour les clients Odoo (XML-RPC et JSON-2)
- * Permet de switcher entre les implémentations selon la version d'Odoo
+ * Common interface for Odoo clients (XML-RPC and JSON-2)
+ *
+ * Allows switching between implementations based on Odoo version.
+ *
+ * @module infrastructure/odoo/clients/types
  */
 
 export interface OdooOrder {
@@ -23,10 +26,12 @@ export interface OdooOrderLine {
   product_id: [number, string] | false;
   product_uom_qty: number;
   product_uom: [number, string];
-  product_type: string;  // "product" | "service" | "consu"
+  /** Product type: "product" | "service" | "consu" */
+  product_type: string;
   price_unit: number;
   order_id: [number, string];
-  categ_id?: [number, string];  // Catégorie produit (pour filtrage non-food)
+  /** Product category (for non-food filtering) */
+  categ_id?: [number, string];
 }
 
 export interface OrderHistory {
@@ -35,7 +40,7 @@ export interface OrderHistory {
 }
 
 /**
- * Informations partner avec company
+ * Partner information with company details
  */
 export interface PartnerCompanyInfo {
   name: string;
@@ -43,45 +48,64 @@ export interface PartnerCompanyInfo {
 }
 
 /**
- * Sale Order complet avec totaux et taxes
+ * Complete sale order with totals and taxes
  */
 export interface OdooSaleOrder {
   id: number;
-  name: string;                    // Ex: "S39591"
-  partner_id: [number, string];    // [24199, "AUX DELICES D'EMBOURG"]
-  company_id: [number, string];    // [3, "FOODPRINT SRL"]
-  state: string;                   // "draft" | "sent" | "sale" | "cancel"
-  amount_untaxed: number;          // Total HT
-  amount_tax: number;              // Total taxes
-  amount_total: number;            // Total TTC
-  order_line: number[];            // IDs des lignes
-  tag_ids: number[];               // IDs des tags
-  date_order: string;              // Date création
+  /** Order reference, e.g., "S39591" */
+  name: string;
+  /** Partner tuple [id, name] */
+  partner_id: [number, string];
+  /** Company tuple [id, name] */
+  company_id: [number, string];
+  /** Order state: "draft" | "sent" | "sale" | "cancel" */
+  state: string;
+  /** Total excluding tax (HT) */
+  amount_untaxed: number;
+  /** Total tax amount */
+  amount_tax: number;
+  /** Total including tax (TTC) */
+  amount_total: number;
+  /** IDs of order lines */
+  order_line: number[];
+  /** IDs of tags */
+  tag_ids: number[];
+  /** Order creation date */
+  date_order: string;
 }
 
 /**
- * Sale Order Line détaillée avec prix et taxes
+ * Detailed sale order line with pricing and taxes
  */
 export interface OdooSaleOrderLine {
   id: number;
   order_id: [number, string];
   product_id: [number, string];
-  product_uom: [number, string];   // Ex: [27, "TU6"]
+  /** Unit of measure tuple, e.g., [27, "TU6"] */
+  product_uom: [number, string];
   product_uom_qty: number;
+  /** Product type: "product" | "service" | "consu" */
+  product_type: string;
   price_unit: number;
-  price_subtotal: number;          // HT
-  price_total: number;             // TTC
-  tax_id: number[];                // IDs des taxes
+  /** Subtotal excluding tax (HT) */
+  price_subtotal: number;
+  /** Subtotal including tax (TTC) */
+  price_total: number;
+  /** IDs of applied taxes */
+  tax_id: number[];
+  /** Line description (prediction reasoning) */
+  name?: string;
 }
 
 /**
- * Résultat de l'envoi d'email de devis
+ * Result of quote email sending operation
  */
 export interface EmailSendResult {
   success: boolean;
   template_id: number;
   email_sent_to: string[];
-  email_blocked_for: string[];  // Emails bloqués (client réel en mode test)
+  /** Emails blocked (real client in test mode) */
+  email_blocked_for: string[];
   quote_id: number;
   quote_name: string;
   mode: 'test' | 'production';
@@ -89,38 +113,58 @@ export interface EmailSendResult {
 }
 
 /**
- * Interface du client Odoo
- * Implémentée par XML-RPC et JSON-2
+ * Odoo client interface
+ *
+ * Implemented by XML-RPC and JSON-2 clients.
  */
 export interface OdooClient {
   /**
-   * Récupère les partenaires company inactifs
-   * @param days Nombre de jours d'inactivité
-   * @param excludeTagId Optionnel: Tag ID à exclure des commandes récentes (ex: tag auto-proposal 82)
+   * Fetches inactive company partners
+   *
+   * @param dateMin Minimum date for inactivity period (format: "YYYY-MM-DD HH:MM:SS")
+   * @param dateMax Maximum date for inactivity period (format: "YYYY-MM-DD HH:MM:SS")
+   * @param excludeOrderTagId Optional: Tag ID to exclude from recent orders (e.g., auto-proposal tag 82)
+   * @param excludedPartnerTagId Optional: Partner tag to exclude from results (e.g., "exclude-auto-proposal")
+   * @returns Array of inactive partners
    */
-  getInactiveCompanyPartners(days: number, excludeTagId?: number): Promise<OdooPartner[]>;
+  getInactiveCompanyPartners(
+    dateMin: string,
+    dateMax: string,
+    excludeOrderTagId?: number,
+    excludedPartnerTagId?: number | null
+  ): Promise<OdooPartner[]>;
 
   /**
-   * Récupère l'historique des commandes d'un partenaire
-   * @param partnerId ID du partenaire
-   * @param days Nombre de jours d'historique
-   * @param includeDraftOrders Inclure les commandes draft
-   * @param excludedCategoryIds IDs de catégories à exclure (consignes, palettes, emballages, etc.)
+   * Fetches order history for a partner
+   *
+   * @param partnerId - Partner ID
+   * @param windowDays - Number of days of history to fetch
+   * @param referenceDate - Reference date for calculation (format: "YYYY-MM-DD HH:MM:SS")
+   * @param includeDraftOrders - Include draft orders
+   * @param excludedCategoryIds - IDs of categories to exclude (deposits, pallets, packaging, etc.)
+   * @returns Order history (orders and lines)
    */
   getOrderHistoryByPartner(
     partnerId: number,
-    days: number,
+    windowDays: number,
+    referenceDate: string,
     includeDraftOrders: boolean,
     excludedCategoryIds?: number[]
   ): Promise<OrderHistory>;
 
   /**
-   * Récupère les infos partner avec company (requis pour multi-company)
+   * Fetches partner info with company details (required for multi-company)
+   *
+   * @param partnerId - Partner ID
+   * @returns Partner information including company
    */
   getPartnerCompanyInfo(partnerId: number): Promise<PartnerCompanyInfo>;
 
   /**
-   * Crée un sale.order (devis)
+   * Creates a sale order (quote)
+   *
+   * @param data - Sale order creation data
+   * @returns Created order ID
    */
   createSaleOrder(data: {
     partner_id: number;
@@ -130,17 +174,43 @@ export interface OdooClient {
   }): Promise<number>;
 
   /**
-   * Crée une sale.order.line
+   * Creates a sale order line
+   *
+   * @param data - Order line creation data
+   * @returns Created line ID
    */
   createSaleOrderLine(data: {
     order_id: number;
     product_id: number;
     product_uom_qty: number;
     price_unit: number;
+    /** Custom description (optional) */
+    name?: string;
   }): Promise<number>;
 
   /**
-   * Récupère les détails complets d'un devis avec lignes et taxes
+   * Creates a sale order option (optional product)
+   *
+   * Client can add it to their order by clicking the cart button.
+   *
+   * @param data - Order option creation data
+   * @returns Created option ID
+   */
+  createSaleOrderOption(data: {
+    order_id: number;
+    product_id: number;
+    quantity: number;
+    uom_id: number;
+    price_unit: number;
+    /** Custom description (optional) */
+    name?: string;
+  }): Promise<number>;
+
+  /**
+   * Fetches complete quote details with lines and taxes
+   *
+   * @param quoteId - Quote ID
+   * @returns Quote object and order lines
    */
   getSaleOrderDetails(quoteId: number): Promise<{
     order: OdooSaleOrder;
@@ -148,15 +218,17 @@ export interface OdooClient {
   }>;
 
   /**
-   * Envoie un devis par email (Mode TEST ou PRODUCTION)
-   * En mode TEST: email uniquement à testEmail (client bloqué)
-   * En mode PRODUCTION: email au client + CC à testEmail
+   * Sends a quote by email (TEST or PRODUCTION mode)
    *
-   * @param quoteId - ID du devis
-   * @param quoteName - Nom du devis (ex: "S39712")
-   * @param clientEmail - Email du client (pour logs/blocage)
-   * @param testMode - Si true, bloque l'envoi au client
-   * @param testEmail - Email de test/monitoring
+   * In TEST mode: email only to testEmail (client blocked).
+   * In PRODUCTION mode: email to client + CC to testEmail.
+   *
+   * @param quoteId - Quote ID
+   * @param quoteName - Quote reference, e.g., "S39712"
+   * @param clientEmail - Client email (for logs/blocking)
+   * @param testMode - If true, blocks sending to client
+   * @param testEmail - Test/monitoring email
+   * @returns Email sending result
    */
   sendQuoteByEmail(
     quoteId: number,
@@ -165,4 +237,45 @@ export interface OdooClient {
     testMode: boolean,
     testEmail: string
   ): Promise<EmailSendResult>;
+
+  /**
+   * Fetches the last validated order for a client (for backtesting)
+   *
+   * @param clientId - Client ID
+   * @returns Last order with { id, name, date_order, partner_name }
+   */
+  getLastClientOrder(clientId: number): Promise<{
+    id: number;
+    name: string;
+    date_order: string;
+    partner_name: string;
+  }>;
+
+  /**
+   * Fetches the last validated order for a client BEFORE a given date
+   *
+   * @param clientId - Client ID
+   * @param referenceDate - Reference date (format: "YYYY-MM-DD")
+   * @returns Last order before date with { id, name, date_order, partner_name }
+   */
+  getLastClientOrderBeforeDate(clientId: number, referenceDate: string): Promise<{
+    id: number;
+    name: string;
+    date_order: string;
+    partner_name: string;
+  }>;
+
+  /**
+   * Fetches a specific order by name
+   *
+   * @param orderName - Order name, e.g., "S39729"
+   * @returns Order with { id, name, date_order, partner_name, partner_id }
+   */
+  getOrderByName(orderName: string): Promise<{
+    id: number;
+    name: string;
+    date_order: string;
+    partner_name: string;
+    partner_id: number;
+  }>;
 }

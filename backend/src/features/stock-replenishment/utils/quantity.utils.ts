@@ -1,9 +1,12 @@
+/**
+ * Quantity calculation utilities
+ * @module features/stock-replenishment/utils/quantity
+ */
 import { calculateMedian } from "./median.utils";
-import { autoProposalConfig } from "../../../config/auto-proposal";
 import type { OrderLineDetail } from "../order-history/order-history.types";
 
 /**
- * Métadonnées de calcul
+ * Quantity calculation metadata
  */
 export interface QuantityCalculationMetadata {
   strategy: "skip" | "single_recent_order" | "median_recent_orders";
@@ -14,7 +17,7 @@ export interface QuantityCalculationMetadata {
 }
 
 /**
- * Résultat du calcul de quantité
+ * Quantity calculation result
  */
 export interface QuantityCalculationResult {
   quantity: number | null;
@@ -22,19 +25,23 @@ export interface QuantityCalculationResult {
 }
 
 /**
- * Calcule la quantité à commander basée sur l'historique réel du produit
- * Utilise une stratégie à 4 niveaux selon le nombre de lignes de commande
+ * Calculates order quantity based on product order history
+ * Uses a 4-level strategy based on order line count
  *
- * @param orderLines Lignes de commande du produit
- * @returns Quantité recommandée et métadonnées
+ * - Level 0: No orders -> Skip
+ * - Level 1: Single order -> Repeat quantity (low confidence)
+ * - Level 2: 2-4 orders -> Median of all (medium confidence)
+ * - Level 3: 5+ orders -> Median of last 10 (high confidence)
+ *
+ * @param orderLines - Product order lines
+ * @returns Recommended quantity and metadata
  */
 export function calculateQuantityFromHistory(
   orderLines: OrderLineDetail[]
 ): QuantityCalculationResult {
-  const config = autoProposalConfig.quantityStrategy;
   const orderCount = orderLines.length;
 
-  // Niveau 0 : Aucune ligne de commande → Skip
+  // Level 0: No order lines -> Skip
   if (orderCount === 0) {
     return {
       quantity: null,
@@ -48,7 +55,7 @@ export function calculateQuantityFromHistory(
     };
   }
 
-  // Trier par date DESC
+  // Sort by date DESC
   const sortedOrders = [...orderLines].sort(
     (a, b) =>
       new Date(b.date_order).getTime() - new Date(a.date_order).getTime()
@@ -56,7 +63,7 @@ export function calculateQuantityFromHistory(
 
   const quantities = sortedOrders.map((line) => line.quantity);
 
-  // Niveau 1 : Une seule ligne de commande → Répéter
+  // Level 1: Single order -> Repeat
   if (orderCount === 1) {
     return {
       quantity: quantities[0],
@@ -70,8 +77,8 @@ export function calculateQuantityFromHistory(
     };
   }
 
-  // Niveau 2 : 2-4 lignes de commande → Médiane de toutes
-  if (orderCount < config.minOrdersForHighConfidence) {
+  // Level 2: 2-4 orders -> Median of all
+  if (orderCount < 5) {
     const median = calculateMedian(quantities);
     return {
       quantity: median,
@@ -85,8 +92,8 @@ export function calculateQuantityFromHistory(
     };
   }
 
-  // Niveau 3 : 5+ lignes de commande → Médiane des N dernières
-  const recentQuantities = quantities.slice(0, config.maxRecentOrderLines);
+  // Level 3: 5+ orders -> Median of last 10
+  const recentQuantities = quantities.slice(0, 10);
   const median = calculateMedian(recentQuantities);
 
   return {
@@ -100,13 +107,3 @@ export function calculateQuantityFromHistory(
     },
   };
 }
-
-/**
- * TODO : Ajuste la quantité selon les contraintes (MOQ, multiples)
- *
- * @param quantity Quantité brute calculée
- * @param multiple Multiple d'UoM (ex: vendu par 12)
- * @param moq Quantité minimum de commande
- * @returns Quantité ajustée
- */
-//export function adjustQuantityForConstraints(): number {}

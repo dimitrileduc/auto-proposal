@@ -1,3 +1,10 @@
+/**
+ * Proposal preparation service
+ *
+ * Prepares order proposals with pricing and MOQ adjustments.
+ *
+ * @module features/proposal-preparation/service
+ */
 import { enrichWithHistoryPrices } from "./pricing/pricing.service";
 import { adjustForMinimumOrder } from "./moq/moq-adjustment.service";
 import { autoProposalConfig } from "../../config/auto-proposal";
@@ -6,31 +13,31 @@ import type { ProposalPreparationResult } from "./proposal-preparation.types";
 import type { OdooClient } from "../../infrastructure/odoo/clients/odoo-client.types";
 
 /**
- * Prépare une proposition de commande avec prix et ajustement MOQ
+ * Prepares an order proposal with pricing and MOQ adjustment
  *
- * **Input:** Résultat Phase 2 (stock-replenishment) avec quantity_to_order calculée
+ * **Input:** Phase 2 result (stock-replenishment) with calculated quantity_to_order
  *
- * **Étapes:**
- * 1. Enrichir avec prix (historiques ou actuels selon le mode)
- * 2. Calculer le total de la commande
- * 3. Si total < 300€ → ajuster quantités en round-robin pour atteindre MOQ
+ * **Steps:**
+ * 1. Enrich with prices (historical or current depending on mode)
+ * 2. Calculate order total
+ * 3. If total < 300 EUR -> adjust quantities round-robin to reach MOQ
  *
- * **Output:** Proposition enrichie avec prix + ajustements MOQ appliqués
+ * **Output:** Enriched proposal with prices + MOQ adjustments applied
  *
- * **Modes de pricing disponibles** :
- * - `historyPriceForClient` : Utilise le price_unit de la dernière commande validée
- * - `currentPriceForClient` : Récupère le prix actuel via pricelist Odoo (non implémenté, voir limitations)
+ * **Available pricing modes:**
+ * - `historyPriceForClient`: Uses price_unit from last validated order
+ * - `currentPriceForClient`: Retrieves current price via Odoo pricelist (not implemented, see limitations)
+ *
+ * @param stockReplenishment - Stock replenishment analysis result (Phase 2)
+ * @param odooClient - Odoo client (required for currentPriceForClient mode, currently unused)
+ * @param mode - Pricing mode (default: historyPriceForClient)
+ * @param minimumOrderAmount - Global MOQ in euros (default: from config)
+ * @returns Enriched proposal with prices and MOQ adjustments
  *
  * @example
  * ```typescript
  * const proposal = prepareProposal(stockReplenishment, undefined, "historyPriceForClient");
  * ```
- *
- * @param stockReplenishment - Résultat de l'analyse de réapprovisionnement (Phase 2)
- * @param odooClient - Client Odoo (requis pour mode currentPriceForClient, non utilisé actuellement)
- * @param mode - Mode de pricing (défaut: historyPriceForClient)
- * @param minimumOrderAmount - MOQ global en euros (défaut: depuis config)
- * @returns Proposition enrichie avec prix et ajustements MOQ
  */
 export function prepareProposal(
   stockReplenishment: StockReplenishmentResult,
@@ -40,29 +47,26 @@ export function prepareProposal(
 ): ProposalPreparationResult {
   const { client_id, products } = stockReplenishment;
 
-  // Étape 1: Enrichir avec prix
+  // Step 1: Enrich with prices
   let productsWithPrices;
 
   switch (mode) {
     case "historyPriceForClient":
-      // Utilise le prix historique (price_unit de la dernière commande)
+      // Use historical price (price_unit from last order)
       productsWithPrices = enrichWithHistoryPrices(products);
       break;
 
     case "currentPriceForClient":
-      // ⚠️ NON IMPLÉMENTÉ - Limitation API Odoo v17
-      //
-      // Pour obtenir les prix actuels avec pricelist, il faudrait :
-      // 1. Module custom Odoo exposant une méthode publique wrappant _get_products_price()
-      // 2. Créer une sale.order.line temporaire et lire le prix calculé
-      // 3. Répliquer la logique pricelist côté backend (non recommandé)
-      //
-      // Voir pricing.service.ts pour détails complets sur les limitations.
-      //
-      // Pour l'instant, fallback sur prix historiques :
+      // WARNING: NOT IMPLEMENTED - Odoo v17 API limitation
+      // To get current prices with pricelist, would need:
+      // 1. Custom Odoo module exposing public method wrapping _get_products_price()
+      // 2. Create temporary sale.order.line and read calculated price
+      // 3. Replicate pricelist logic backend-side (not recommended)
+      // See pricing.service.ts for full limitation details.
+      // For now, fallback to historical prices:
       productsWithPrices = enrichWithHistoryPrices(products);
       console.warn(
-        `Mode 'currentPriceForClient' non implémenté, utilisation de 'historyPriceForClient' en fallback`
+        `Mode 'currentPriceForClient' not implemented, using 'historyPriceForClient' as fallback`
       );
       break;
 
@@ -70,13 +74,13 @@ export function prepareProposal(
       productsWithPrices = enrichWithHistoryPrices(products);
   }
 
-  // Étape 2: Calculer le total initial
+  // Step 2: Calculate initial total
   const originalTotal = productsWithPrices.reduce(
     (sum, p) => sum + p.subtotal,
     0
   );
 
-  // Étape 3: Ajuster si total < MOQ
+  // Step 3: Adjust if total < MOQ
   let moqAdjustmentApplied = false;
   let adjustmentDetails;
 

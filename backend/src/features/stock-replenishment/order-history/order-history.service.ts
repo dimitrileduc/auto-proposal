@@ -1,3 +1,11 @@
+/**
+ * Order history service
+ *
+ * Retrieves and transforms client order history from Odoo
+ * for stock replenishment analysis.
+ *
+ * @module features/stock-replenishment/order-history/service
+ */
 import { createOdooClient } from "../../../infrastructure/odoo/odoo.service";
 import { transformOrderHistory } from "./transform.utils";
 import { autoProposalConfig } from "../../../config/auto-proposal";
@@ -6,26 +14,29 @@ import type { ClientOrderHistory } from "./order-history.types";
 const odooClient = createOdooClient(autoProposalConfig.odooApiType);
 
 /**
- * Récupère et transforme l'historique des commandes d'un client groupé par produit
+ * Retrieves and transforms client order history grouped by product
  *
- * @param partnerId ID du partenaire Odoo (défaut: 3 = Arthur Schwaiger pour tests)
- * @param days Nombre de jours d'historique (défaut: 180 = 6 mois)
- * @returns Historique structuré par produit
- * @throws {Error} En cas d'erreur
+ * @param partnerId - Odoo partner ID (default: test client)
+ * @param windowDays - History window in days (default: 730 = 2 years, includes Y-1 for seasonality)
+ * @param referenceDate - Reference date for history calculation (format: "YYYY-MM-DD HH:MM:SS")
+ * @returns Order history structured by product
+ * @throws Error on Odoo API failure
  *
  * @example
  * ```typescript
- * const history = await getProductOrderHistory(3, 180)
- * console.log(`${history.products.length} produits commandés`)
+ * const history = await getProductOrderHistory(3, 730, "2025-10-26 00:00:00")
+ * console.log(`${history.products.length} products ordered`)
  * ```
  */
 export async function getProductOrderHistory(
   partnerId: number = autoProposalConfig.testing.defaultClientId,
-  days: number = autoProposalConfig.analysisWindowDays
+  windowDays: number = 730,
+  referenceDate: string
 ): Promise<ClientOrderHistory> {
   const rawHistory = await odooClient.getOrderHistoryByPartner(
     partnerId,
-    days,
+    windowDays,
+    referenceDate,
     autoProposalConfig.testing.includeDraftOrders,
     autoProposalConfig.productFiltering.excludedCategoryIds
   );

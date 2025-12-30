@@ -1,0 +1,251 @@
+import { getProductOrderHistory } from "./order-history/order-history.service";
+import { calculateQuantityFromHistory } from "./utils/quantity.utils"; // Gardé pour fallback uniquement
+import { autoProposalConfig } from "../../config/auto-proposal";
+import { getTodayAsDateString } from "../../utils/date.utils";
+// Service ax optimisé avec demos few-shot
+import { predictWithLLM } from "../../services/llm-ax-optimized.service";
+import { splitOrdersByPeriod } from "../../utils/date-period.utils";
+import pLimit from "p-limit";
+/**
+ * Calcule les besoins de réapprovisionnement d'un client
+ *
+ *
+ * 1. Trigger: Risque de rupture < seuil de réapprovisionnement
+ * 2. Quantité: Médiane de l'historique réel (pas consommation × jours)
+ *
+ * @param clientId ID du client Odoo
+ * @param config Configuration optionnelle (analysisWindowDays, analysisEndDate, replenishmentThreshold)
+ * @returns Produits à commander avec quantités recommandées
+ */
+export async function calculateReplenishmentNeeds(clientId = autoProposalConfig.testing.defaultClientId, config) {
+    // Utiliser les valeurs de config ou les valeurs par défaut
+    const daysOfHistory = config?.analysisWindowDays ?? autoProposalConfig.analysisWindowDays;
+    const analysisEndDate = config?.analysisEndDate ?? getTodayAsDateString();
+    // 1. Récupération de l'historique récent (180j)
+    const recentHistory = await getProductOrderHistory(clientId, daysOfHistory, analysisEndDate);
+    // 2. Récupération de l'historique complet (730j) - utilisé par le LLM
+    const fullHistory = await getProductOrderHistory(clientId, 730, analysisEndDate);
+    console.log(`\n🔍 Analyse de ${recentHistory.products.length} produits pour client ${clientId}...`);
+    const analyzedProducts = []; // Produits à commander uniquement
+    const allProducts = []; // TOUS les produits analysés (pour backtest)
+    // Tracking LLM usage
+    let totalLLMCalls = 0;
+    let totalPromptTokens = 0;
+    let totalCompletionTokens = 0;
+    // Utiliser le seuil de réapprovisionnement
+    const replenishmentThresholdDays = config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold;
+    const productsToProcess = [];
+    for (const product of recentHistory.products) {
+        console.log(`\n  📦 Produit: ${product.product_name} (ID: ${product.product_id})`);
+        // Skip produits de type "service" (transport, frais, etc.)
+        if (product.product_type === "service") {
+            console.log(`     ❌ SKIP: Produit de type service`);
+            continue;
+        }
+        // FALLBACK ONLY: Médiane calculée uniquement comme fallback d'urgence si LLM échoue
+        const calculation = calculateQuantityFromHistory(product.orders);
+        if (calculation.quantity === null) {
+            console.log(`     ❌ SKIP: Pas d'historique pour calculer fallback`);
+            continue;
+        }
+        // Tous les produits passent par le LLM
+        productsToProcess.push({
+            product,
+            calculation, // Gardé uniquement pour fallback
+        });
+    }
+    // ====================================================================
+    // PHASE 2: Exécuter toutes les prédictions LLM en parallèle
+    // ====================================================================
+    const llmResults = new Map();
+    const llmInputData = new Map();
+    if (productsToProcess.length > 0) {
+        console.log(`\n🤖 Lancement de ${productsToProcess.length} prédictions LLM en parallèle (max 10 simultanées)...`);
+        // Limite de concurrence: 10 requêtes LLM simultanées max
+        // (Anthropic Haiku tier: 50 req/min, on reste safe à 10 parallèles)
+        const limit = pLimit(10);
+        const llmPromises = productsToProcess.map((productData) => limit(async () => {
+            const { product } = productData;
+            // Le LLM reçoit TOUJOURS fullHistory (730j) pour avoir accès à N-1
+            const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
+            const ordersForLLM = fullProduct?.orders ?? product.orders;
+            // Split orders into 2 views: recent (5 months) + same period last year
+            // Following IRIS: compare current trend vs historical seasonal baseline
+            const { recent, lastYear } = splitOrdersByPeriod(ordersForLLM, // ← Utiliser fullHistory pour avoir N-1 (12-24 mois avant)
+            analysisEndDate, 5 // 5 months period (~150j) pour avoir 2+ commandes sur 76% des produits
+            );
+            const recentOrders = recent.map(o => ({ date: o.date_order, quantity: o.quantity }));
+            const lastYearOrders = lastYear.map(o => ({ date: o.date_order, quantity: o.quantity }));
+            try {
+                // Le LLM reçoit l'historique + le seuil de réapprovisionnement
+                const llmInput = {
+                    productName: product.product_name,
+                    recentOrders,
+                    lastYearOrders,
+                    currentDate: analysisEndDate,
+                    replenishmentThresholdDays, // Seuil de risque business
+                };
+                const llmResult = await predictWithLLM(llmInput);
+                llmResults.set(product.product_id, llmResult);
+                // Stocker les input data pour le rapport (SUCCESS)
+                llmInputData.set(product.product_id, {
+                    required: true,
+                    success: true,
+                    recent_orders: recentOrders,
+                    last_year_orders: lastYearOrders,
+                });
+                console.log(`     ✅ LLM [${product.product_id}]: ${llmResult.prediction.recommended_quantity === 0
+                    ? "Pas de risque détecté → 0u"
+                    : `Risque détecté → ${llmResult.prediction.recommended_quantity}u`} (${llmResult.prediction.confidence}) | tokens: ${llmResult.usage.totalTokens}`);
+                return { success: true, productId: product.product_id };
+            }
+            catch (error) {
+                // Stocker quand même les input data pour le rapport (FAILED)
+                llmInputData.set(product.product_id, {
+                    required: true,
+                    success: false,
+                    recent_orders: recentOrders,
+                    last_year_orders: lastYearOrders,
+                });
+                console.log(`     ⚠️ LLM [${product.product_id}] failed, fallback to median: ${error instanceof Error ? error.message : "Unknown error"}`);
+                return { success: false, productId: product.product_id };
+            }
+        }));
+        // Attendre toutes les prédictions LLM
+        await Promise.all(llmPromises);
+        console.log(`\n✅ ${llmResults.size}/${productsNeedingLLM.length} prédictions LLM réussies`);
+    }
+    // ====================================================================
+    // PHASE 3: Finaliser les produits avec les résultats LLM
+    // ====================================================================
+    for (const productData of productsToProcess) {
+        const { product, calculation } = productData;
+        console.log(`\n  📦 Finalisation: ${product.product_name} (ID: ${product.product_id})`);
+        const llmResult = llmResults.get(product.product_id);
+        let finalQuantity;
+        let llmPrediction = undefined;
+        let quantitySource;
+        if (llmResult) {
+            // ✅ LLM a réussi - utiliser sa décision
+            finalQuantity = llmResult.prediction.recommended_quantity;
+            quantitySource = "llm";
+            llmPrediction = {
+                quantity: llmResult.prediction.recommended_quantity,
+                confidence: llmResult.prediction.confidence,
+                reasoning: llmResult.prediction.reasoning,
+                summary: llmResult.prediction.summary, // Justification courte pour Odoo
+                baseline_quantity: llmResult.prediction.baseline_quantity,
+                // New structured analysis fields - Include ALL fields from LLM
+                analysis: {
+                    frequency_pattern: llmResult.prediction.analysis.frequency_pattern,
+                    detected_outliers: llmResult.prediction.analysis.detected_outliers,
+                    seasonality_impact: llmResult.prediction.analysis.seasonality_impact,
+                    trend_direction: llmResult.prediction.analysis.trend_direction,
+                    // Optional Double CoT fields
+                    day_cycle_analysis: llmResult.prediction.analysis.day_cycle_analysis,
+                    cycle_days: llmResult.prediction.analysis.cycle_days,
+                    last_order_date: llmResult.prediction.analysis.last_order_date,
+                    predicted_next_date: llmResult.prediction.analysis.predicted_next_date,
+                    days_until_next: llmResult.prediction.analysis.days_until_next,
+                },
+                // Detailed confidence scores from Double CoT
+                confidence_phase1: llmResult.prediction.confidence_phase1,
+                confidence_phase2: llmResult.prediction.confidence_phase2,
+                // Provider reasoning (thinking tokens from Kimi)
+                provider_reasoning: llmResult.providerReasoning,
+                // Model info
+                model: llmResult.model,
+                provider: llmResult.provider,
+                // Token usage for this specific product
+                usage: {
+                    promptTokens: llmResult.usage.promptTokens,
+                    completionTokens: llmResult.usage.completionTokens,
+                    totalTokens: llmResult.usage.totalTokens,
+                },
+            };
+            // Accumuler l'usage
+            totalLLMCalls++;
+            totalPromptTokens += llmResult.usage.promptTokens;
+            totalCompletionTokens += llmResult.usage.completionTokens;
+            const llmDiff = llmResult.prediction.recommended_quantity - calculation.quantity;
+            const llmDiffPct = (llmDiff / calculation.quantity) * 100;
+            console.log(`     ✅ LLM: ${llmResult.prediction.recommended_quantity}u (${llmResult.prediction.confidence}) | vs médiane: ${llmDiff > 0 ? "+" : ""}${llmDiff}u (${llmDiffPct > 0 ? "+" : ""}${llmDiffPct.toFixed(1)}%)`);
+        }
+        else {
+            // ⚠️ FALLBACK D'URGENCE: LLM a échoué
+            finalQuantity = calculation.quantity;
+            quantitySource = "median-fallback";
+            console.log(`     ⚠️ WARNING: LLM prediction failed!`);
+            console.log(`     ⚠️ FALLBACK: Utilisation médiane historique = ${finalQuantity}u`);
+            console.log(`     ⚠️ Ce produit nécessite une validation manuelle!`);
+        }
+        // Si quantité = 0, skip (que ce soit LLM ou fallback)
+        if (finalQuantity === 0) {
+            if (quantitySource === "llm") {
+                console.log(`     ❌ SKIP: LLM → Pas de risque détecté`);
+            }
+            else {
+                console.log(`     ❌ SKIP: Fallback → Pas d'historique`);
+            }
+            continue;
+        }
+        console.log(`     ✅ À COMMANDER: ${finalQuantity}u (source: ${quantitySource})`);
+        // Récupérer les input data LLM (si disponibles)
+        const inputData = llmInputData.get(product.product_id);
+        // Récupérer les 730j complets pour le rapport (BRUT)
+        const fullProduct = fullHistory.products.find((p) => p.product_id === product.product_id);
+        const ordersForReport = fullProduct?.orders ?? product.orders;
+        // Créer l'objet produit analysé (avec toutes ses infos)
+        const productStatus = {
+            product_id: product.product_id,
+            product_name: product.product_name,
+            product_uom: product.product_uom,
+            // 1. Historique des commandes
+            order_history: ordersForReport.map((order) => ({
+                order_id: order.order_id,
+                order_name: order.order_name,
+                date_order: order.date_order,
+                quantity: order.quantity,
+                price_unit: order.price_unit,
+            })),
+            // 2. Quantité finale
+            quantity_to_order: finalQuantity,
+            quantity_source: quantitySource, // "llm" ou "median-fallback"
+            // 3. Métadonnées de calcul historique (indépendant du LLM)
+            calculation_metadata: calculation.metadata,
+            // 4. LLM prediction (si utilisé)
+            llm_prediction: llmPrediction,
+            // 5. LLM input data (pour debug/audit dans rapports)
+            llm_input_data: inputData ? {
+                recent_orders: inputData.recent_orders,
+                last_year_orders: inputData.last_year_orders,
+            } : undefined,
+        };
+        // Ajouter TOUS les produits analysés (pour backtest)
+        allProducts.push(productStatus);
+        console.log(`     ✅ TRIGGER: Risque de rupture détecté!`);
+        console.log(`     ✅ À COMMANDER: ${finalQuantity} unités`);
+        // Ajouter dans les produits à commander (pour prod)
+        analyzedProducts.push(productStatus);
+    }
+    console.log(`\n✅ Analyse terminée: ${analyzedProducts.length} produits à commander`);
+    // Log LLM usage
+    if (totalLLMCalls > 0) {
+        console.log(`\n🤖 LLM Usage:`);
+        console.log(`   Calls: ${totalLLMCalls}`);
+        console.log(`   Tokens: ${totalPromptTokens} input + ${totalCompletionTokens} output = ${totalPromptTokens + totalCompletionTokens} total`);
+    }
+    console.log();
+    return {
+        client_id: clientId,
+        products: analyzedProducts,
+        total_products_in_history: recentHistory.products.length, // Nombre total avant filtrage
+        all_products: allProducts, // TOUS les produits analysés (pour backtest)
+        llm_usage: totalLLMCalls > 0 ? {
+            calls: totalLLMCalls,
+            promptTokens: totalPromptTokens,
+            completionTokens: totalCompletionTokens,
+            totalTokens: totalPromptTokens + totalCompletionTokens,
+        } : undefined,
+    };
+}

@@ -1,8 +1,12 @@
 /**
- * Client Odoo utilisant l'API JSON-2 (Odoo v19+)
+ * Odoo JSON-2 client for Odoo versions v19+
+ *
+ * Implements the OdooClient interface using JSON-2 REST API.
+ *
+ * @module infrastructure/odoo/clients/json2-client
  */
 
-import { getDateDaysAgo } from "../../../utils/date.utils";
+import { calculateDateBefore } from "../../../utils/date.utils";
 import type {
   OdooClient,
   OdooPartner,
@@ -24,12 +28,15 @@ const ODOO_CONFIG = {
 };
 
 /**
- * Génère les headers HTTP pour l'API JSON-2 d'Odoo
+ * Generates HTTP headers for Odoo JSON-2 API requests
+ *
+ * @returns HTTP headers object with authorization
+ * @throws Error if ODOO_API_KEY environment variable is missing
  */
 function getJsonApiHeaders(): Record<string, string> {
   if (!ODOO_CONFIG.apiKey) {
     throw new Error(
-      "ODOO_API_KEY manquante dans les variables d'environnement"
+      "ODOO_API_KEY environment variable is required"
     );
   }
 
@@ -41,7 +48,12 @@ function getJsonApiHeaders(): Record<string, string> {
 }
 
 /**
- * Requête JSON-2
+ * Executes a JSON-2 API request to Odoo
+ *
+ * @param endpoint API endpoint path
+ * @param body Request body
+ * @returns Response data
+ * @throws Error if API request fails
  */
 async function odooApiRequest<T = any>(
   endpoint: string,
@@ -54,19 +66,19 @@ async function odooApiRequest<T = any>(
       method: "POST",
       headers: getJsonApiHeaders(),
       body: JSON.stringify(body),
-      signal: AbortSignal.timeout(10000), // 10s timeout
+      signal: AbortSignal.timeout(10000),
     });
 
     if (!response.ok) {
       throw new Error(
-        `Erreur API Odoo (${response.status}): ${response.statusText}`
+        `Odoo API error (${response.status}): ${response.statusText}`
       );
     }
 
     const data = await response.json();
 
     if (data?.name && data?.message) {
-      throw new Error(`Erreur Odoo: ${data.message}`);
+      throw new Error(`Odoo error: ${data.message}`);
     }
 
     return data;
@@ -74,38 +86,31 @@ async function odooApiRequest<T = any>(
     if (error instanceof Error) {
       throw error;
     }
-    throw new Error(`Erreur de connexion à Odoo: ${error}`);
+    throw new Error(`Connection error to Odoo: ${error}`);
   }
 }
 
 /**
- * Crée un client JSON-2 pour Odoo v19+
+ * Creates and configures a JSON-2 client for Odoo v19+
+ *
+ * @returns Configured OdooClient instance
  */
 export function createJson2Client(): OdooClient {
   return {
-    async getInactiveCompanyPartners(days: number, excludeTagId?: number): Promise<OdooPartner[]> {
-      if (days <= 0) {
-        throw new Error("Le nombre de jours doit être positif");
-      }
-
-      const dateLimitStr = getDateDaysAgo(days);
-
+    async getInactiveCompanyPartners(dateMin: string, dateMax: string, excludeTagId?: number): Promise<OdooPartner[]> {
       try {
-        // RPC 1: Récupérer les commandes récentes et leurs partner_ids
         const recentOrders = await odooApiRequest<OdooOrder[]>(
           "sale.order/search_read",
           {
-            domain: buildRecentOrdersDomain(dateLimitStr, excludeTagId),
+            domain: buildRecentOrdersDomain(dateMin, dateMax, excludeTagId),
             fields: ["partner_id"],
           }
         );
 
-        // Déduplication des partner_ids actifs
         const activePartnerIds = [
           ...new Set(recentOrders.map((order) => order.partner_id[0])),
         ];
 
-        // RPC 2: Récupérer les partenaires inactifs via logique d'exclusion
         const inactivePartners = await odooApiRequest<OdooPartner[]>(
           "res.partner/search_read",
           {
@@ -119,33 +124,33 @@ export function createJson2Client(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération des partenaires inactifs: ${error}`
+              `Failed to fetch inactive partners: ${error}`
             );
       }
     },
 
     async getOrderHistoryByPartner(
       partnerId: number,
-      days: number,
-      includeDraftOrders: boolean = false,
+      windowDays: number,
+      referenceDate: string,
+      includeDraftOrders: boolean,
       excludedCategoryIds?: number[]
     ): Promise<OrderHistory> {
-      if (days <= 0) {
-        throw new Error("Le nombre de jours doit être positif");
+      if (windowDays <= 0) {
+        throw new Error("Window days must be positive");
       }
 
-      const dateLimitStr = getDateDaysAgo(days);
+      const dateStart = calculateDateBefore(referenceDate, windowDays);
 
       const states = includeDraftOrders
         ? ["draft", "sent", "sale", "done"]
         : ["sale", "done"];
 
       try {
-        // RPC 1: Récupérer les commandes du partenaire avec leurs dates
         const orders = await odooApiRequest<OdooOrder[]>(
           "sale.order/search_read",
           {
-            domain: buildPartnerOrdersDomain(partnerId, dateLimitStr, states),
+            domain: buildPartnerOrdersDomain(partnerId, dateStart, states, referenceDate),
             fields: [
               "id",
               "name",
@@ -157,17 +162,14 @@ export function createJson2Client(): OdooClient {
           }
         );
 
-        // Extraire tous les IDs de order_line
         const orderLineIds = orders.flatMap((order) => order.order_line || []);
 
         if (orderLineIds.length === 0) {
           return { orders: [], orderLines: [] };
         }
 
-        // RPC 2: Récupérer les détails des order_lines avec filtrage produits non-food
         const domain: any[] = [["id", "in", orderLineIds]];
 
-        // Filtrer les produits de catégories exclues (consignes, palettes, emballages, etc.)
         if (excludedCategoryIds && excludedCategoryIds.length > 0) {
           domain.push(["product_id.categ_id", "not in", excludedCategoryIds]);
         }
@@ -193,7 +195,147 @@ export function createJson2Client(): OdooClient {
         throw error instanceof Error
           ? error
           : new Error(
-              `Erreur lors de la récupération de l'historique du partenaire ${partnerId}: ${error}`
+              `Failed to fetch order history for partner ${partnerId}: ${error}`
+            );
+      }
+    },
+
+    async getLastClientOrder(clientId: number): Promise<{
+      id: number;
+      name: string;
+      date_order: string;
+      partner_name: string;
+    }> {
+      try {
+        const orders = await odooApiRequest<Array<{
+          id: number;
+          name: string;
+          date_order: string;
+          partner_id: [number, string];
+        }>>(
+          "sale.order/search_read",
+          {
+            domain: [
+              ["partner_id", "=", clientId],
+              ["state", "in", ["sale", "done"]]
+            ],
+            fields: ["name", "date_order", "partner_id"],
+            order: "date_order DESC",
+            limit: 1
+          }
+        );
+
+        if (orders.length === 0) {
+          throw new Error(`No validated order found for client ${clientId}`);
+        }
+
+        const order = orders[0];
+
+        return {
+          id: order.id,
+          name: order.name,
+          date_order: order.date_order,
+          partner_name: order.partner_id[1]
+        };
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(
+              `Failed to fetch last order for client ${clientId}: ${error}`
+            );
+      }
+    },
+
+    async getLastClientOrderBeforeDate(clientId: number, referenceDate: string): Promise<{
+      id: number;
+      name: string;
+      date_order: string;
+      partner_name: string;
+    }> {
+      try {
+        const orders = await odooApiRequest<Array<{
+          id: number;
+          name: string;
+          date_order: string;
+          partner_id: [number, string];
+        }>>(
+          "sale.order/search_read",
+          {
+            domain: [
+              ["partner_id", "=", clientId],
+              ["state", "in", ["sale", "done"]],
+              ["date_order", "<=", referenceDate]
+            ],
+            fields: ["name", "date_order", "partner_id"],
+            order: "date_order DESC",
+            limit: 1
+          }
+        );
+
+        if (orders.length === 0) {
+          throw new Error(`No validated order found for client ${clientId} before ${referenceDate}`);
+        }
+
+        const order = orders[0];
+
+        return {
+          id: order.id,
+          name: order.name,
+          date_order: order.date_order,
+          partner_name: order.partner_id[1]
+        };
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(
+              `Failed to fetch order for client ${clientId} before ${referenceDate}: ${error}`
+            );
+      }
+    },
+
+    async getOrderByName(orderName: string): Promise<{
+      id: number;
+      name: string;
+      date_order: string;
+      partner_name: string;
+      partner_id: number;
+    }> {
+      try {
+        const orders = await odooApiRequest<Array<{
+          id: number;
+          name: string;
+          date_order: string;
+          partner_id: [number, string];
+        }>>(
+          "sale.order/search_read",
+          {
+            domain: [
+              ["name", "=", orderName],
+              ["state", "in", ["sale", "done"]]
+            ],
+            fields: ["name", "date_order", "partner_id"],
+            limit: 1
+          }
+        );
+
+        if (orders.length === 0) {
+          throw new Error(`Order ${orderName} not found or not validated`);
+        }
+
+        const order = orders[0];
+
+        return {
+          id: order.id,
+          name: order.name,
+          date_order: order.date_order,
+          partner_name: order.partner_id[1],
+          partner_id: order.partner_id[0]
+        };
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(
+              `Failed to fetch order ${orderName}: ${error}`
             );
       }
     },
