@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF0164] FILOU MOUTARDE  10 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0164] FILOU MOUTARDE  10 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 09:33:19: 132u

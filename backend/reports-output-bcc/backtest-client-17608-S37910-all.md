@@ -350,7 +350,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 10:03:04: 1u
@@ -366,7 +366,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 10:03:04: 2u
@@ -387,7 +387,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 10:03:04: 1u
@@ -403,7 +403,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>4. [LV149] LV Sauce Aioli Pesto 200ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV149] LV Sauce Aioli Pesto 200ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:21:44: 1u
@@ -420,7 +420,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>5. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:21:44: 1u
@@ -437,7 +437,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>6. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:21:44: 3u
@@ -456,7 +456,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>7. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:21:44: 1u
@@ -473,7 +473,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>8. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:21:44: 2u
@@ -491,7 +491,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>9. [LV040] LV Caprons apéritifs 240g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV040] LV Caprons apéritifs 240g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:21:44: 1u
@@ -507,7 +507,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>10. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:21:44: 1u

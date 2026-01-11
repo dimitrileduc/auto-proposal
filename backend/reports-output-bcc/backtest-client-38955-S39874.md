@@ -147,7 +147,7 @@
 
 
 <details>
-<summary><strong>1. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:07:37: 2u
@@ -163,7 +163,7 @@
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:07:37: 1u
@@ -179,7 +179,7 @@
 
 
 <details>
-<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 12:12:24: 2u

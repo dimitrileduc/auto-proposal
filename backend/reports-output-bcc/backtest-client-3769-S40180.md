@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF0649] PROMELIOR MOUTARDE DOUCE 2,1KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0649] PROMELIOR MOUTARDE DOUCE 2,1KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-30 07:29:38: 72u

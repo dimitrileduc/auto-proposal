@@ -408,7 +408,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>1. [MF0060] MF Passata</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0060] MF Passata</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 4u
@@ -424,7 +424,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>2. [MF0061] MF Compote</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0061] MF Compote</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 5u
@@ -440,7 +440,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>3. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 3u
@@ -456,7 +456,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>4. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -472,7 +472,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>5. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -488,7 +488,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>6. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -504,7 +504,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>7. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -520,7 +520,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>8. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -536,7 +536,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>9. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -552,7 +552,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>10. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -568,7 +568,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>11. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -584,7 +584,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>12. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u

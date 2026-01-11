@@ -234,7 +234,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 58 jours (moyenne
 
 
 <details>
-<summary><strong>1. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:11:18: 5u
@@ -251,7 +251,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 58 jours (moyenne
 
 
 <details>
-<summary><strong>2. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:11:18: 5u
@@ -268,7 +268,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 58 jours (moyenne
 
 
 <details>
-<summary><strong>3. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:11:18: 5u
@@ -284,24 +284,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 58 jours (moyenne
 
 
 <details>
-<summary><strong>4. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-10-01 14:11:18: 5u
-- 2025-08-04 11:44:37: 6u
-- 2025-07-03 06:37:05: 10u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 5u
-**Quantite Reelle**: 7u
-
-</details>
-
-
-<details>
-<summary><strong>5. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:11:18: 5u
@@ -318,7 +301,24 @@ L'analyse du cycle de commande montre des intervalles de 31 et 58 jours (moyenne
 
 
 <details>
-<summary><strong>6. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-10-01 14:11:18: 5u
+- 2025-08-04 11:44:37: 6u
+- 2025-07-03 06:37:05: 10u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 5u
+**Quantite Reelle**: 7u
+
+</details>
+
+
+<details>
+<summary><strong>6. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:11:18: 5u

@@ -756,7 +756,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 25u
@@ -779,7 +779,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>2. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 25u
@@ -802,7 +802,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 30u
@@ -827,7 +827,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 5u
@@ -852,7 +852,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 5u
@@ -877,7 +877,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>6. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 10u
@@ -900,7 +900,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>7. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 2u
@@ -918,7 +918,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>8. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 3u
@@ -936,7 +936,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>9. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 10u
@@ -959,7 +959,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>10. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 3u
@@ -979,7 +979,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>11. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 2u
@@ -1003,7 +1003,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>12. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 4u
@@ -1024,7 +1024,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>13. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 2u
@@ -1046,7 +1046,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>14. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 5u
@@ -1069,7 +1069,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>15. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:18:29: 2u
@@ -1086,7 +1086,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>16. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 11:14:43: 2u
@@ -1107,7 +1107,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>17. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 11:14:43: 5u
@@ -1126,7 +1126,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>18. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 11:14:43: 3u
@@ -1149,7 +1149,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>19. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 11:14:43: 5u
@@ -1166,7 +1166,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>20. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 11:14:43: 10u
@@ -1185,7 +1185,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>21. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 07:32:23: 50u
@@ -1203,7 +1203,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>22. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 07:32:23: 25u
@@ -1223,7 +1223,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>23. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>23. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 07:32:23: 25u
@@ -1244,7 +1244,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>24. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>24. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 07:32:23: 2u

@@ -292,7 +292,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 2u
@@ -307,7 +307,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 2u
@@ -322,7 +322,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 2u
@@ -337,7 +337,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 2u
@@ -352,7 +352,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>5. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 2u
@@ -367,7 +367,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>6. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 2u
@@ -382,7 +382,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>7. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 4u
@@ -397,7 +397,7 @@ La dernière commande remonte au 24 juillet 2025, soit 45 jours avant la date ac
 
 
 <details>
-<summary><strong>8. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 14:01:46: 2u

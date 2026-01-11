@@ -118,7 +118,7 @@ L'analyse de l'historique montre un cycle de commande espacé d'environ 2 à 3 m
 
 
 <details>
-<summary><strong>1. [PF0549] YVALLI SAUCE PIZZA 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0549] YVALLI SAUCE PIZZA 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-31 05:37:14: 7u
@@ -137,7 +137,7 @@ L'analyse de l'historique montre un cycle de commande espacé d'environ 2 à 3 m
 
 
 <details>
-<summary><strong>2. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-31 05:37:14: 10u

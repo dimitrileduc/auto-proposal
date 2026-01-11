@@ -379,7 +379,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:35:27: 1u
@@ -398,7 +398,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>2. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:35:27: 1u
@@ -423,7 +423,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:35:27: 1u
@@ -448,7 +448,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>4. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:35:27: 2u
@@ -469,7 +469,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>5. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:35:27: 3u
@@ -496,7 +496,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>6. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:35:27: 3u
@@ -518,7 +518,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>7. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:35:27: 2u
@@ -546,7 +546,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>8. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:58:40: 1u
@@ -563,7 +563,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>9. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:58:40: 1u
@@ -590,7 +590,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>10. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:58:40: 1u
@@ -614,7 +614,7 @@ La dernière commande remonte à 121 jours (30 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>11. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:50:52: 1u

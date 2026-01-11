@@ -582,7 +582,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>1. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 3u
@@ -600,7 +600,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 2u
@@ -618,7 +618,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 2u
@@ -634,7 +634,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>4. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 2u
@@ -652,7 +652,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 1u
@@ -670,7 +670,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>6. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 1u
@@ -688,7 +688,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>7. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 1u
@@ -707,7 +707,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>8. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:18:26: 2u
@@ -728,7 +728,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>9. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 12:13:28: 1u
@@ -744,7 +744,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>10. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 12:13:28: 1u
@@ -760,7 +760,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>11. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 12:13:28: 1u
@@ -776,7 +776,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>12. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 12:13:28: 2u
@@ -792,7 +792,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>13. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 12:13:28: 1u
@@ -813,7 +813,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>14. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:41:32: 1u
@@ -832,7 +832,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>15. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:41:32: 1u
@@ -848,7 +848,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>16. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:41:32: 1u
@@ -864,7 +864,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>17. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -880,7 +880,7 @@ Le produit présente une rotation très faible et irrégulière basée sur l'his
 
 
 <details>
-<summary><strong>18. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

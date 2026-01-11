@@ -437,7 +437,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>1. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -453,7 +453,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>2. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -469,7 +469,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 2u
@@ -485,7 +485,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>4. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 2u
@@ -501,7 +501,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>5. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -517,7 +517,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>6. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 2u
@@ -533,7 +533,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>7. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 2u
@@ -549,7 +549,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>8. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 2u
@@ -565,7 +565,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>9. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 3u
@@ -581,7 +581,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>10. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -596,7 +596,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>11. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -611,7 +611,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>12. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -626,7 +626,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>13. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u

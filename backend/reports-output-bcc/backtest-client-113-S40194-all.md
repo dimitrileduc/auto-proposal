@@ -524,7 +524,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 1u
@@ -548,7 +548,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>2. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 1u
@@ -571,7 +571,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 2u
@@ -594,7 +594,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>4. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 2u
@@ -617,7 +617,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>5. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 1u
@@ -633,7 +633,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>6. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 1u
@@ -650,7 +650,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>7. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 1u
@@ -667,7 +667,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>8. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 10:15:32: 1u
@@ -684,7 +684,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>9. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 2u
@@ -707,7 +707,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>10. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 1u
@@ -729,7 +729,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>11. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 1u
@@ -749,7 +749,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>12. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 1u
@@ -769,7 +769,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>13. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 1u
@@ -789,7 +789,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>14. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 2u
@@ -812,7 +812,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>15. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 1u
@@ -828,7 +828,7 @@ L'analyse de l'historique montre une rotation lente mais persistante. La derniè
 
 
 <details>
-<summary><strong>16. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:14:45: 1u

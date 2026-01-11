@@ -176,7 +176,7 @@ L'historique récent (Recent Orders) est vide, mais l'analyse de l'historique N-
 
 
 <details>
-<summary><strong>1. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 07:49:17: 60u
@@ -203,7 +203,7 @@ L'historique récent (Recent Orders) est vide, mais l'analyse de l'historique N-
 
 
 <details>
-<summary><strong>2. [PF1844] FILOU ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1844] FILOU ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -219,7 +219,7 @@ L'historique récent (Recent Orders) est vide, mais l'analyse de l'historique N-
 
 
 <details>
-<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -244,7 +244,7 @@ L'historique récent (Recent Orders) est vide, mais l'analyse de l'historique N-
 
 
 <details>
-<summary><strong>4. [PF0089] FILOU VOL AU VENT 400 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF0089] FILOU VOL AU VENT 400 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

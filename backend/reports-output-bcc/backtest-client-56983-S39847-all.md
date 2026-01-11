@@ -234,7 +234,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:45:23: 1u
@@ -249,7 +249,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:45:23: 1u
@@ -265,7 +265,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:45:23: 1u
@@ -282,7 +282,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>4. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:45:23: 1u
@@ -298,7 +298,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>5. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:45:23: 1u
@@ -314,7 +314,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>6. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:45:23: 1u

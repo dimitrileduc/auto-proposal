@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 12:09:35: 1u
@@ -133,7 +133,7 @@
 
 
 <details>
-<summary><strong>2. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 12:09:35: 1u

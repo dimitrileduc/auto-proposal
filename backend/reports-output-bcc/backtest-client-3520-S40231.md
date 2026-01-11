@@ -89,7 +89,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 30 
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:20:19: 240u

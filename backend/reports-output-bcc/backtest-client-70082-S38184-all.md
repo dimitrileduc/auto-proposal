@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF3360] DLL MAYONNAISE AVOCAT 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3360] DLL MAYONNAISE AVOCAT 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-18 08:34:06: 350u

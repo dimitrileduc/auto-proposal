@@ -292,7 +292,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>1. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 2u
@@ -307,7 +307,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>2. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 3u
@@ -322,7 +322,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 1u
@@ -337,7 +337,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 1u
@@ -352,7 +352,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>5. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 1u
@@ -367,7 +367,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>6. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 1u
@@ -382,7 +382,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>7. [WIG02] WIGNAC cidre rosé bio 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [WIG02] WIGNAC cidre rosé bio 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 1u
@@ -397,7 +397,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>8. [WIG01] WIGNAC cidre naturel bio 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [WIG01] WIGNAC cidre naturel bio 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:24:04: 1u

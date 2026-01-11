@@ -321,7 +321,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -336,7 +336,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -351,7 +351,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -366,7 +366,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>4. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -381,7 +381,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>5. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -396,7 +396,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>6. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -411,7 +411,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>7. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -426,7 +426,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>8. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 07:45:44: 1u
@@ -441,7 +441,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>9. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

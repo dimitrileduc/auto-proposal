@@ -234,7 +234,7 @@ L'analyse du cycle de commande récent montre une fréquence d'approvisionnement
 
 
 <details>
-<summary><strong>1. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-28 10:24:58: 16u
@@ -256,7 +256,7 @@ L'analyse du cycle de commande récent montre une fréquence d'approvisionnement
 
 
 <details>
-<summary><strong>2. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-28 10:24:58: 16u
@@ -278,7 +278,7 @@ L'analyse du cycle de commande récent montre une fréquence d'approvisionnement
 
 
 <details>
-<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-28 10:24:58: 16u
@@ -300,7 +300,7 @@ L'analyse du cycle de commande récent montre une fréquence d'approvisionnement
 
 
 <details>
-<summary><strong>4. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-28 10:24:58: 16u
@@ -319,7 +319,7 @@ L'analyse du cycle de commande récent montre une fréquence d'approvisionnement
 
 
 <details>
-<summary><strong>5. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-21 12:09:16: 16u
@@ -349,7 +349,7 @@ L'analyse du cycle de commande récent montre une fréquence d'approvisionnement
 
 
 <details>
-<summary><strong>6. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-21 12:09:16: 16u

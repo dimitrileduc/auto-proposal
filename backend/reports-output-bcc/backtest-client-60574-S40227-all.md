@@ -321,7 +321,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u
@@ -337,7 +337,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>2. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u
@@ -353,7 +353,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>3. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u
@@ -369,7 +369,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 2u
@@ -385,7 +385,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 2u
@@ -401,7 +401,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u
@@ -417,7 +417,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u
@@ -433,7 +433,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u
@@ -449,7 +449,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>9. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u

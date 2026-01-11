@@ -147,7 +147,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 120 jours sans activi
 
 
 <details>
-<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 06:34:24: 2u
@@ -165,7 +165,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 120 jours sans activi
 
 
 <details>
-<summary><strong>2. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 06:34:24: 3u
@@ -181,7 +181,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 120 jours sans activi
 
 
 <details>
-<summary><strong>3. [LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 06:34:24: 3u

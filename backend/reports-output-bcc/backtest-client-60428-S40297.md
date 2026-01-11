@@ -147,7 +147,7 @@ L'analyse montre un cycle de commande long et irrégulier (environ 79 jours entr
 
 
 <details>
-<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 06:18:36: 3u
@@ -163,7 +163,7 @@ L'analyse montre un cycle de commande long et irrégulier (environ 79 jours entr
 
 
 <details>
-<summary><strong>2. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:18:45: 4u
@@ -178,7 +178,7 @@ L'analyse montre un cycle de commande long et irrégulier (environ 79 jours entr
 
 
 <details>
-<summary><strong>3. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:18:45: 4u

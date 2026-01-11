@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:32:55: 1u
@@ -133,7 +133,7 @@
 
 
 <details>
-<summary><strong>2. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:18:49: 1u

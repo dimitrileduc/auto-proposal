@@ -176,7 +176,7 @@ La dernière commande remonte au 06/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 07:48:02: 9u
@@ -193,7 +193,7 @@ La dernière commande remonte au 06/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>2. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 07:48:02: 4u
@@ -209,7 +209,7 @@ La dernière commande remonte au 06/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:59:26: 5u
@@ -226,7 +226,7 @@ La dernière commande remonte au 06/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:59:26: 3u

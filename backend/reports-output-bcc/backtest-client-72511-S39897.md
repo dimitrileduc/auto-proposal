@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre un intervalle de 41 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [JF068] FIL VOL AU VENT 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF068] FIL VOL AU VENT 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 08:40:16: 1u
@@ -192,7 +192,7 @@ L'analyse du cycle de commande montre un intervalle de 41 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 08:40:16: 3u
@@ -208,7 +208,7 @@ L'analyse du cycle de commande montre un intervalle de 41 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 08:40:16: 5u
@@ -224,7 +224,7 @@ L'analyse du cycle de commande montre un intervalle de 41 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 08:40:16: 5u

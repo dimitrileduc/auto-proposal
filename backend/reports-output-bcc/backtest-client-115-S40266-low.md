@@ -89,7 +89,7 @@ La dernière commande remonte au 05/09/2025, soit 67 jours d'inactivité. Bien q
 
 
 <details>
-<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 1u

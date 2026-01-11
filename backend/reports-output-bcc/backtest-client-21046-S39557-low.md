@@ -89,7 +89,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>1. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 2u

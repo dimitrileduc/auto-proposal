@@ -292,7 +292,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>1. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:52:16: 3u
@@ -309,7 +309,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>2. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:52:16: 4u
@@ -326,7 +326,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>3. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:13:07: 1u
@@ -342,7 +342,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>4. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:30:52: 1u
@@ -358,7 +358,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:30:52: 2u
@@ -379,7 +379,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>6. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:30:52: 1u
@@ -397,7 +397,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>7. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:30:52: 2u
@@ -420,7 +420,7 @@ La dernière commande remonte au 07/08/2025, soit 97 jours sans activité pour c
 
 
 <details>
-<summary><strong>8. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 10:56:12: 2u

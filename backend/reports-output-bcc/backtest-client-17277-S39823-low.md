@@ -89,7 +89,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 12:04:41: 1u

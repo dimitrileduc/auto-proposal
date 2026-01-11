@@ -379,7 +379,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:47:10: 1u
@@ -402,7 +402,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>2. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:47:10: 1u
@@ -419,7 +419,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:47:10: 1u
@@ -441,7 +441,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:47:10: 1u
@@ -460,7 +460,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:47:10: 1u
@@ -478,7 +478,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>6. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:47:10: 1u
@@ -499,7 +499,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>7. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:25:08: 1u
@@ -516,7 +516,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>8. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:25:08: 1u
@@ -534,7 +534,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>9. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:18:53: 1u
@@ -549,7 +549,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>10. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:18:53: 1u
@@ -566,7 +566,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement env
 
 
 <details>
-<summary><strong>11. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

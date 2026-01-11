@@ -350,7 +350,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>1. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:04:12: 2u
@@ -366,7 +366,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>2. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:04:12: 1u
@@ -381,7 +381,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>3. [LV215] LV Biscuits apéro Fromage Parmesan 100g bio </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV215] LV Biscuits apéro Fromage Parmesan 100g bio </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:04:12: 1u
@@ -397,7 +397,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:04:12: 1u
@@ -414,7 +414,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>5. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:04:12: 1u
@@ -431,7 +431,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>6. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 11:05:56: 3u
@@ -447,7 +447,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 11:05:56: 2u
@@ -462,7 +462,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 11:05:56: 1u
@@ -477,7 +477,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>9. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:26:12: 2u
@@ -492,7 +492,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>10. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:26:12: 2u

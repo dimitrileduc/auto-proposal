@@ -611,7 +611,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>1. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -629,7 +629,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>2. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -646,7 +646,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -665,7 +665,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -681,7 +681,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 2u
@@ -700,7 +700,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -719,7 +719,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>7. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -736,7 +736,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>8. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -754,7 +754,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>9. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -773,7 +773,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>10. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -792,7 +792,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -807,7 +807,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -823,7 +823,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>13. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -839,7 +839,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>14. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -855,7 +855,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>15. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -871,7 +871,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>16. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -887,7 +887,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>17. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:00: 1u
@@ -903,7 +903,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>18. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-13 13:28:18: 1u
@@ -918,7 +918,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un int
 
 
 <details>
-<summary><strong>19. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-13 13:28:18: 1u

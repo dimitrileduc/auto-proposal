@@ -205,7 +205,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>1. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 08:43:50: 1u
@@ -222,7 +222,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 08:43:50: 2u
@@ -239,7 +239,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>3. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 08:43:50: 1u
@@ -254,7 +254,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>4. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 08:43:50: 1u
@@ -271,7 +271,7 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 
 
 <details>
-<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

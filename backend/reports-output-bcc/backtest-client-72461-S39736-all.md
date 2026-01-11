@@ -350,7 +350,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -365,7 +365,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -381,7 +381,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>3. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -397,7 +397,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -413,7 +413,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -429,7 +429,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>6. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -445,7 +445,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>7. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -460,23 +460,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>8. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-08-06 06:44:32: 1u
-- 2025-06-19 13:59:01: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>9. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:44:32: 1u
@@ -492,7 +476,23 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>10. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-08-06 06:44:32: 1u
+- 2025-06-19 13:59:01: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>10. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 13:59:01: 1u

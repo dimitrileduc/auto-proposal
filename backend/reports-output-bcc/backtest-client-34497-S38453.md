@@ -321,7 +321,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>1. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -337,7 +337,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -353,7 +353,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>3. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 3u
@@ -369,7 +369,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>4. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -385,7 +385,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>5. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -400,7 +400,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>6. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -415,7 +415,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>7. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -430,7 +430,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>8. [MANA01] MANA natural energy drink - citron & gingembre 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MANA01] MANA natural energy drink - citron & gingembre 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u
@@ -445,7 +445,7 @@ La dernière commande remonte au 28 mai 2025, soit 74 jours avant la date actuel
 
 
 <details>
-<summary><strong>9. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u

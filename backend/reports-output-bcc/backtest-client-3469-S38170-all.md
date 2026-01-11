@@ -176,7 +176,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 jours (
 
 
 <details>
-<summary><strong>1. [PF0093] FILOU MOUTARDE 300GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0093] FILOU MOUTARDE 300GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 12:21:31: 24u
@@ -197,7 +197,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 jours (
 
 
 <details>
-<summary><strong>2. [PF0094] FILOU MOUTARDE 700 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0094] FILOU MOUTARDE 700 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 12:21:31: 32u
@@ -220,7 +220,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 jours (
 
 
 <details>
-<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 12:21:31: 24u
@@ -242,7 +242,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 jours (
 
 
 <details>
-<summary><strong>4. [PF0089] FILOU VOL AU VENT 400 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF0089] FILOU VOL AU VENT 400 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 12:21:31: 16u

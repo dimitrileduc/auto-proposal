@@ -176,7 +176,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours. Bien que l'
 
 
 <details>
-<summary><strong>1. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 2u
@@ -191,7 +191,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours. Bien que l'
 
 
 <details>
-<summary><strong>2. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 2u
@@ -206,7 +206,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours. Bien que l'
 
 
 <details>
-<summary><strong>3. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours. Bien que l'
 
 
 <details>
-<summary><strong>4. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 10:23:47: 1u

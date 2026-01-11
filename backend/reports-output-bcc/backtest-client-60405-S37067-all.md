@@ -118,7 +118,7 @@ La dernière commande date du 16 avril, soit il y a 39 jours. Bien que l'histori
 
 
 <details>
-<summary><strong>1. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-16 08:46:43: 1u
@@ -133,7 +133,7 @@ La dernière commande date du 16 avril, soit il y a 39 jours. Bien que l'histori
 
 
 <details>
-<summary><strong>2. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-16 08:46:43: 1u

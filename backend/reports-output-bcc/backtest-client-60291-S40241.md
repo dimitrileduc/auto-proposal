@@ -727,7 +727,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>1. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:37:34: 1u
@@ -743,7 +743,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>2. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:37:34: 1u
@@ -765,7 +765,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>3. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:37:34: 1u
@@ -787,7 +787,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>4. [fsv17] Mélange de noix bio vrac 2,75kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [fsv17] Mélange de noix bio vrac 2,75kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 5u
@@ -806,7 +806,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>5. [fsv02] Noix de cajou nature bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [fsv02] Noix de cajou nature bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 2u
@@ -824,7 +824,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>6. [fsv06] Noix du Brésil nature bio vrac 3kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [fsv06] Noix du Brésil nature bio vrac 3kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 5u
@@ -841,7 +841,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>7. [fsv05] Noix de pecan nature bio vrac 2,2kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [fsv05] Noix de pecan nature bio vrac 2,2kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 1u
@@ -860,7 +860,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>8. [fsv04] Amande nature bio vrac 2,8 kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [fsv04] Amande nature bio vrac 2,8 kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 5u
@@ -878,7 +878,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>9. [fsv03] Noisette nature bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [fsv03] Noisette nature bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 2u
@@ -895,7 +895,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>10. [fsv18] Mendiant bio vrac 2,8kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [fsv18] Mendiant bio vrac 2,8kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 2u
@@ -913,7 +913,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>11. [fsv08] Banana chips bio vrac 1,6kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [fsv08] Banana chips bio vrac 1,6kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 13:35:39: 5u
@@ -932,7 +932,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>12. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 07:14:16: 2u
@@ -951,7 +951,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>13. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 07:14:16: 2u
@@ -969,7 +969,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>14. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 07:14:16: 1u
@@ -988,7 +988,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>15. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 07:14:16: 2u
@@ -1008,7 +1008,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>16. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:17:25: 2u
@@ -1030,7 +1030,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>17. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:17:25: 1u
@@ -1046,7 +1046,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>18. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 06:16:03: 1u
@@ -1064,7 +1064,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>19. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:34:27: 1u
@@ -1080,7 +1080,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>20. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 06:42:42: 2u
@@ -1096,7 +1096,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>21. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 09:46:10: 1u
@@ -1112,7 +1112,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>22. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 09:46:10: 1u
@@ -1128,7 +1128,7 @@ L'analyse de l'historique récent montre un cycle de commande hebdomadaire très
 
 
 <details>
-<summary><strong>23. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>23. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 09:46:10: 1u

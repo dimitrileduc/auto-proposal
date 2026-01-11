@@ -147,7 +147,7 @@
 
 
 <details>
-<summary><strong>1. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 1u
@@ -162,7 +162,7 @@
 
 
 <details>
-<summary><strong>2. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 1u
@@ -177,7 +177,7 @@
 
 
 <details>
-<summary><strong>3. [CB001] CB Apple juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [CB001] CB Apple juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 10:28:07: 1u

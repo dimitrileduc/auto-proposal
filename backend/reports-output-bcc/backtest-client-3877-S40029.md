@@ -118,7 +118,7 @@ L'analyse du cycle de commande montre une fréquence irrégulière avec une dern
 
 
 <details>
-<summary><strong>1. [PF1937] ZF MAYO TAPAS TRUFFES 180GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1937] ZF MAYO TAPAS TRUFFES 180GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 11:57:24: 2640u
@@ -143,7 +143,7 @@ L'analyse du cycle de commande montre une fréquence irrégulière avec une dern
 
 
 <details>
-<summary><strong>2. [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-17 12:12:45: 1302u

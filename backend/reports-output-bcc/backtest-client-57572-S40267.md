@@ -89,7 +89,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 60 jours entre les
 
 
 <details>
-<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:23:03: 132u

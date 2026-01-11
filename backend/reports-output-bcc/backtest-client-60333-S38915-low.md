@@ -118,7 +118,7 @@ La dernière commande remonte au 05/06/2025, soit 87 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>1. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 12:26:38: 4u
@@ -133,7 +133,7 @@ La dernière commande remonte au 05/06/2025, soit 87 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>2. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 12:26:38: 4u

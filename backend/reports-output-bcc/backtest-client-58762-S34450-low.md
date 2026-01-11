@@ -89,7 +89,7 @@ La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date 
 
 
 <details>
-<summary><strong>1. [PF1802] LD MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1802] LD MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-13 11:36:57: 1u

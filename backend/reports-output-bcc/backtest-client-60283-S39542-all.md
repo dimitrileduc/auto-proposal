@@ -292,7 +292,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>1. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-29 09:22:29: 17u
@@ -311,7 +311,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-12 09:19:50: 50u
@@ -329,7 +329,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:22:40: 5u
@@ -346,7 +346,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:22:40: 10u
@@ -364,7 +364,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>5. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:22:40: 10u
@@ -383,7 +383,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>6. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:22:40: 10u
@@ -401,7 +401,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>7. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:22:40: 18u
@@ -418,7 +418,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>8. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-04 11:09:53: 25u

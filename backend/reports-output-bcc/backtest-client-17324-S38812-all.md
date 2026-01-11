@@ -118,7 +118,7 @@ La dernière commande remonte à 83 jours (23 juin 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>1. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:43:49: 1u
@@ -133,7 +133,7 @@ La dernière commande remonte à 83 jours (23 juin 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-14 06:49:41: 12u

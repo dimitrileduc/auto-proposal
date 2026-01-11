@@ -263,7 +263,7 @@ La dernière commande remonte au 07/08/2025, soit 98 jours sans activité pour c
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 07:40:29: 2u
@@ -279,7 +279,7 @@ La dernière commande remonte au 07/08/2025, soit 98 jours sans activité pour c
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 07:40:29: 2u
@@ -295,7 +295,7 @@ La dernière commande remonte au 07/08/2025, soit 98 jours sans activité pour c
 
 
 <details>
-<summary><strong>3. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 07:40:29: 3u
@@ -310,7 +310,7 @@ La dernière commande remonte au 07/08/2025, soit 98 jours sans activité pour c
 
 
 <details>
-<summary><strong>4. [LV040] LV Caprons apéritifs 240g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV040] LV Caprons apéritifs 240g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 07:40:29: 1u
@@ -325,7 +325,7 @@ La dernière commande remonte au 07/08/2025, soit 98 jours sans activité pour c
 
 
 <details>
-<summary><strong>5. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 07:40:29: 1u
@@ -340,7 +340,7 @@ La dernière commande remonte au 07/08/2025, soit 98 jours sans activité pour c
 
 
 <details>
-<summary><strong>6. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 07:40:29: 2u
@@ -355,7 +355,7 @@ La dernière commande remonte au 07/08/2025, soit 98 jours sans activité pour c
 
 
 <details>
-<summary><strong>7. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

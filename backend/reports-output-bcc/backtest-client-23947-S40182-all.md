@@ -234,7 +234,7 @@ La dernière commande remonte au 30 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>1. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:42:25: 4u
@@ -251,7 +251,7 @@ La dernière commande remonte au 30 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:42:25: 4u
@@ -268,7 +268,7 @@ La dernière commande remonte au 30 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:42:25: 3u
@@ -285,7 +285,7 @@ La dernière commande remonte au 30 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:42:25: 3u
@@ -302,7 +302,7 @@ La dernière commande remonte au 30 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:42:25: 4u
@@ -319,7 +319,7 @@ La dernière commande remonte au 30 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>6. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:42:25: 3u

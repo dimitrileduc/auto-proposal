@@ -205,7 +205,7 @@ La dernière commande remonte au 09/07/2025, soit 50 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 14:04:32: 3u
@@ -220,7 +220,7 @@ La dernière commande remonte au 09/07/2025, soit 50 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 14:04:32: 2u
@@ -235,7 +235,7 @@ La dernière commande remonte au 09/07/2025, soit 50 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 14:04:32: 2u
@@ -250,7 +250,7 @@ La dernière commande remonte au 09/07/2025, soit 50 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 14:04:32: 2u
@@ -265,7 +265,7 @@ La dernière commande remonte au 09/07/2025, soit 50 jours avant la date actuell
 
 
 <details>
-<summary><strong>5. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 14:04:32: 3u

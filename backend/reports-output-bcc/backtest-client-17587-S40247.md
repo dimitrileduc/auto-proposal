@@ -901,7 +901,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 11:48:15: 1u
@@ -925,7 +925,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>2. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 11:48:15: 1u
@@ -944,7 +944,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>3. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 11:48:15: 1u
@@ -967,7 +967,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 11:48:15: 2u
@@ -987,7 +987,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 11:48:15: 1u
@@ -1005,7 +1005,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>6. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 11:48:15: 1u
@@ -1023,7 +1023,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>7. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 11:48:15: 1u
@@ -1040,7 +1040,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>8. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1060,7 +1060,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>9. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1084,7 +1084,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>10. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 1u
@@ -1110,7 +1110,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>11. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1135,7 +1135,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>12. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1162,7 +1162,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>13. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1185,7 +1185,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>14. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1212,7 +1212,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>15. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 1u
@@ -1229,7 +1229,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>16. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1248,7 +1248,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>17. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 1u
@@ -1271,7 +1271,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>18. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 1u
@@ -1292,7 +1292,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>19. [LV336] LV BIO Tartinade Tomato Basilico 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [LV336] LV BIO Tartinade Tomato Basilico 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 1u
@@ -1311,7 +1311,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>20. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 2u
@@ -1328,7 +1328,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>21. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 1u
@@ -1345,7 +1345,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>22. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:26:46: 1u
@@ -1362,7 +1362,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>23. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>23. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:21:36: 2u
@@ -1380,7 +1380,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>24. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>24. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:21:36: 2u
@@ -1399,7 +1399,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>25. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>25. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:21:36: 2u
@@ -1417,7 +1417,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>26. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>26. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:21:36: 2u
@@ -1435,7 +1435,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>27. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>27. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:21:36: 1u
@@ -1450,7 +1450,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>28. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>28. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:21:36: 1u
@@ -1467,7 +1467,7 @@ L'analyse du cycle de commande montre des intervalles de 21 jours puis 39 jours 
 
 
 <details>
-<summary><strong>29. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>29. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:29:58: 1u

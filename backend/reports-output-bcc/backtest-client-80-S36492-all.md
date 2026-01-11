@@ -176,7 +176,7 @@ La dernière commande remonte au 27 janvier 2025, soit plus de 100 jours. Bien q
 
 
 <details>
-<summary><strong>1. [LB004] LB Blonde (6,5%) 33CL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LB004] LB Blonde (6,5%) 33CL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-17 12:46:35: 2u
@@ -193,7 +193,7 @@ La dernière commande remonte au 27 janvier 2025, soit plus de 100 jours. Bien q
 
 
 <details>
-<summary><strong>2. [LB005] LB Amber (5,2%) 33CL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LB005] LB Amber (5,2%) 33CL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-17 12:46:35: 1u
@@ -209,7 +209,7 @@ La dernière commande remonte au 27 janvier 2025, soit plus de 100 jours. Bien q
 
 
 <details>
-<summary><strong>3. [LB002] LB Blonde 75 CL (6,5%)</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LB002] LB Blonde 75 CL (6,5%)</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-17 12:46:35: 2u
@@ -226,7 +226,7 @@ La dernière commande remonte au 27 janvier 2025, soit plus de 100 jours. Bien q
 
 
 <details>
-<summary><strong>4. [LB006] LB Brown (7,0%)  33CL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LB006] LB Brown (7,0%)  33CL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-27 07:53:00: 1u

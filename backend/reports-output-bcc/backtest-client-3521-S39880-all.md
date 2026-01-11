@@ -89,7 +89,7 @@ L'analyse du cycle de commande r√©cent montre un intervalle moyen d'environ 20 √
 
 
 <details>
-<summary><strong>1. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 14:19:11: 44u

@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 08:23:57: 100u
@@ -199,7 +199,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 08:23:57: 100u
@@ -221,7 +221,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>3. [LV147] LV Sauce Cocktail 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV147] LV Sauce Cocktail 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:45:22: 50u
@@ -238,7 +238,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 09:13:36: 100u

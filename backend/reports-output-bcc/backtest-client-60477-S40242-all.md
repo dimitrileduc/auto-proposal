@@ -205,7 +205,7 @@ La dernière commande remonte au 04/08/2025, soit plus de 100 jours sans activit
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:41:48: 3u
@@ -220,7 +220,7 @@ La dernière commande remonte au 04/08/2025, soit plus de 100 jours sans activit
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:41:48: 3u
@@ -235,7 +235,7 @@ La dernière commande remonte au 04/08/2025, soit plus de 100 jours sans activit
 
 
 <details>
-<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:41:48: 3u
@@ -250,7 +250,7 @@ La dernière commande remonte au 04/08/2025, soit plus de 100 jours sans activit
 
 
 <details>
-<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:41:48: 3u
@@ -265,7 +265,7 @@ La dernière commande remonte au 04/08/2025, soit plus de 100 jours sans activit
 
 
 <details>
-<summary><strong>5. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:41:48: 4u

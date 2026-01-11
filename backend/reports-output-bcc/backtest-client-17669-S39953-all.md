@@ -437,7 +437,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:26:15: 2u
@@ -459,7 +459,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:26:15: 1u
@@ -485,7 +485,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:34:37: 1u
@@ -513,7 +513,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:34:37: 1u
@@ -537,7 +537,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>5. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:34:37: 1u
@@ -557,7 +557,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>6. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:34:37: 1u
@@ -577,7 +577,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>7. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:34:37: 1u
@@ -599,7 +599,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 10:15:06: 1u
@@ -626,7 +626,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>9. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 10:15:06: 2u
@@ -646,7 +646,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>10. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:40:21: 1u
@@ -668,7 +668,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>11. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:40:21: 1u
@@ -692,7 +692,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:40:21: 1u
@@ -711,7 +711,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>13. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:19:11: 1u

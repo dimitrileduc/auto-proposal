@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF1878] JEFKE MOUTARDE PET 2,1 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1878] JEFKE MOUTARDE PET 2,1 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:49:56: 42u

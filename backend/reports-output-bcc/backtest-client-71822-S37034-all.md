@@ -234,7 +234,7 @@ La dernière commande remonte à 55 jours. Bien que l'historique soit limité à
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:40:51: 2u
@@ -249,7 +249,7 @@ La dernière commande remonte à 55 jours. Bien que l'historique soit limité à
 
 
 <details>
-<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:40:51: 2u
@@ -264,7 +264,7 @@ La dernière commande remonte à 55 jours. Bien que l'historique soit limité à
 
 
 <details>
-<summary><strong>3. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:40:51: 1u
@@ -279,7 +279,7 @@ La dernière commande remonte à 55 jours. Bien que l'historique soit limité à
 
 
 <details>
-<summary><strong>4. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:40:51: 2u
@@ -294,7 +294,7 @@ La dernière commande remonte à 55 jours. Bien que l'historique soit limité à
 
 
 <details>
-<summary><strong>5. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:40:51: 2u
@@ -309,7 +309,7 @@ La dernière commande remonte à 55 jours. Bien que l'historique soit limité à
 
 
 <details>
-<summary><strong>6. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:40:51: 2u

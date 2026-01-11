@@ -89,7 +89,7 @@ L'analyse du cycle de commande récent montre une fréquence de réapprovisionne
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-29 15:22:37: 80u

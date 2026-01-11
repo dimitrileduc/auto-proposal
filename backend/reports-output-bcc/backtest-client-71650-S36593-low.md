@@ -234,7 +234,7 @@ La dernière commande remonte au 10 avril, soit 27 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:26:10: 1u
@@ -249,7 +249,7 @@ La dernière commande remonte au 10 avril, soit 27 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>2. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:26:10: 1u
@@ -264,7 +264,7 @@ La dernière commande remonte au 10 avril, soit 27 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:26:10: 3u
@@ -279,7 +279,7 @@ La dernière commande remonte au 10 avril, soit 27 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>4. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:26:10: 1u
@@ -294,7 +294,7 @@ La dernière commande remonte au 10 avril, soit 27 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>5. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:26:10: 1u
@@ -309,7 +309,7 @@ La dernière commande remonte au 10 avril, soit 27 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>6. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-18 09:43:41: 1u

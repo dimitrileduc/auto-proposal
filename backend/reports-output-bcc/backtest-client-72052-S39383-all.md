@@ -292,7 +292,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 2u
@@ -308,7 +308,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 2u
@@ -323,7 +323,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 1u
@@ -338,7 +338,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>4. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 2u
@@ -354,7 +354,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>5. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 2u
@@ -369,7 +369,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>6. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 4u
@@ -384,7 +384,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>7. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:19:39: 2u
@@ -399,7 +399,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 110 jours sans activit
 
 
 <details>
-<summary><strong>8. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:19:39: 1u

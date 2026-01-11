@@ -147,7 +147,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 90 jours sans activi
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:38:28: 1u
@@ -164,7 +164,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 90 jours sans activi
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:38:28: 1u
@@ -180,7 +180,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 90 jours sans activi
 
 
 <details>
-<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:38:28: 1u

@@ -437,7 +437,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -453,7 +453,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 2u
@@ -469,7 +469,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -485,7 +485,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -501,7 +501,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -517,7 +517,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>6. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -532,7 +532,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>7. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -548,7 +548,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>8. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -564,7 +564,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>9. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -579,7 +579,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>10. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 2u
@@ -596,7 +596,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>11. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -611,7 +611,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>12. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u
@@ -627,7 +627,7 @@ La dernière commande remonte au 26 septembre 2025, soit 46 jours avant la date 
 
 
 <details>
-<summary><strong>13. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 10:57:31: 1u

@@ -408,7 +408,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>1. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 13:23:09: 1u
@@ -424,7 +424,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 13:23:09: 1u
@@ -439,23 +439,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-09-08 13:23:09: 1u
-- 2025-06-16 08:20:35: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 13:23:09: 1u
@@ -471,7 +455,23 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>5. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-09-08 13:23:09: 1u
+- 2025-06-16 08:20:35: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>5. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:43:25: 1u
@@ -486,7 +486,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>6. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:43:25: 1u
@@ -501,7 +501,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>7. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:43:25: 1u
@@ -516,7 +516,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>8. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:43:25: 1u
@@ -531,7 +531,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>9. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:43:25: 1u
@@ -546,7 +546,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>10. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 08:20:35: 1u
@@ -561,7 +561,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>11. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -576,7 +576,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>12. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

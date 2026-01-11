@@ -379,7 +379,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:43:17: 2u
@@ -398,7 +398,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>2. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:43:17: 2u
@@ -416,7 +416,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:43:17: 1u
@@ -435,7 +435,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>4. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:43:17: 1u
@@ -453,7 +453,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:43:17: 2u
@@ -472,7 +472,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>6. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:43:17: 1u
@@ -489,7 +489,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-19 08:11:54: 1u
@@ -506,7 +506,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>8. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-19 08:11:54: 1u
@@ -522,7 +522,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-19 08:11:54: 1u
@@ -540,7 +540,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>10. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-19 08:11:54: 2u
@@ -555,7 +555,7 @@ La dernière commande remonte au 19 mai 2025, soit plus de 140 jours sans activi
 
 
 <details>
-<summary><strong>11. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

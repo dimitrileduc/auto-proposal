@@ -176,7 +176,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>1. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>2. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>3. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte à 146 jours (29/01/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>4. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-29 14:12:49: 1u

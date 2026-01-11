@@ -147,7 +147,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>1. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -162,7 +162,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -177,7 +177,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

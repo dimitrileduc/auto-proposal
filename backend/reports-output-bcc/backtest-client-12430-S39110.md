@@ -89,7 +89,7 @@ L'analyse montre une rotation très faible et irrégulière (dernière commande 
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-15 12:14:41: 1u

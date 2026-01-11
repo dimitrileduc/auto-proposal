@@ -234,7 +234,7 @@ La dernière commande remonte au 08/05/2025, soit 45 jours d'inactivité. Avec u
 
 
 <details>
-<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:09:48: 1u
@@ -249,7 +249,7 @@ La dernière commande remonte au 08/05/2025, soit 45 jours d'inactivité. Avec u
 
 
 <details>
-<summary><strong>2. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:09:48: 1u
@@ -264,7 +264,7 @@ La dernière commande remonte au 08/05/2025, soit 45 jours d'inactivité. Avec u
 
 
 <details>
-<summary><strong>3. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-18 07:56:06: 1u
@@ -279,7 +279,7 @@ La dernière commande remonte au 08/05/2025, soit 45 jours d'inactivité. Avec u
 
 
 <details>
-<summary><strong>4. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-18 07:56:06: 1u
@@ -294,7 +294,7 @@ La dernière commande remonte au 08/05/2025, soit 45 jours d'inactivité. Avec u
 
 
 <details>
-<summary><strong>5. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-18 07:56:06: 1u
@@ -309,7 +309,7 @@ La dernière commande remonte au 08/05/2025, soit 45 jours d'inactivité. Avec u
 
 
 <details>
-<summary><strong>6. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-18 07:56:06: 1u

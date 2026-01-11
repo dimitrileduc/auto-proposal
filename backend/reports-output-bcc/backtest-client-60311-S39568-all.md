@@ -321,7 +321,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:07: 2u
@@ -337,7 +337,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:07: 2u
@@ -353,7 +353,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:07: 1u
@@ -369,7 +369,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:07: 1u
@@ -385,7 +385,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>5. [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:07: 2u
@@ -400,7 +400,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>6. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-08 12:45:46: 2u
@@ -416,7 +416,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-08 12:45:46: 2u
@@ -431,7 +431,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>8. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-08 12:45:46: 1u
@@ -447,7 +447,7 @@ L'analyse du cycle de commande montre un intervalle de 64 jours entre les deux d
 
 
 <details>
-<summary><strong>9. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-12 12:07:55: 2u

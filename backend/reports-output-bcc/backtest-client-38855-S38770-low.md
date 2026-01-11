@@ -147,7 +147,7 @@ La dernière commande remonte à 92 jours (26 mai). Bien que l'historique soit l
 
 
 <details>
-<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:24:59: 1u
@@ -162,7 +162,7 @@ La dernière commande remonte à 92 jours (26 mai). Bien que l'historique soit l
 
 
 <details>
-<summary><strong>2. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:24:59: 1u
@@ -177,7 +177,7 @@ La dernière commande remonte à 92 jours (26 mai). Bien que l'historique soit l
 
 
 <details>
-<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:24:59: 1u

@@ -205,7 +205,7 @@ La dernière commande remonte au 24 octobre 2024, soit 83 jours avant la date ac
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-24 06:51:41: 2u
@@ -220,7 +220,7 @@ La dernière commande remonte au 24 octobre 2024, soit 83 jours avant la date ac
 
 
 <details>
-<summary><strong>2. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-24 06:51:41: 2u
@@ -235,7 +235,7 @@ La dernière commande remonte au 24 octobre 2024, soit 83 jours avant la date ac
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-24 06:51:41: 2u
@@ -250,7 +250,7 @@ La dernière commande remonte au 24 octobre 2024, soit 83 jours avant la date ac
 
 
 <details>
-<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-24 06:51:41: 2u
@@ -265,7 +265,7 @@ La dernière commande remonte au 24 octobre 2024, soit 83 jours avant la date ac
 
 
 <details>
-<summary><strong>5. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-24 06:51:41: 2u

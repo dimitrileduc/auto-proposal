@@ -669,7 +669,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -685,7 +685,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -702,7 +702,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>3. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -718,7 +718,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>4. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -734,7 +734,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>5. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -750,7 +750,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>6. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -766,7 +766,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>7. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -782,7 +782,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>8. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -798,7 +798,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>9. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -814,7 +814,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>10. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -830,7 +830,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>11. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -846,7 +846,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>12. [fsv04] Amande nature bio vrac 2,8 kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [fsv04] Amande nature bio vrac 2,8 kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -863,7 +863,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>13. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:57:45: 1u
@@ -880,7 +880,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>14. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:56:22: 1u
@@ -895,7 +895,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>15. [fsv03] Noisette nature bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [fsv03] Noisette nature bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:56:22: 1u
@@ -911,7 +911,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>16. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:15:14: 1u
@@ -926,7 +926,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>17. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:15:14: 1u
@@ -941,7 +941,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>18. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:15:14: 1u
@@ -956,7 +956,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>19. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:15:14: 1u
@@ -971,7 +971,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>20. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:15:14: 1u
@@ -986,7 +986,7 @@ La dernière commande remonte à 146 jours (28 mai 2025). Bien que la rotation s
 
 
 <details>
-<summary><strong>21. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:15:14: 1u

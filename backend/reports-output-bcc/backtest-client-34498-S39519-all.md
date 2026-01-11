@@ -466,7 +466,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 6u
@@ -483,7 +483,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>2. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u
@@ -500,7 +500,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 3u
@@ -517,7 +517,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 7u
@@ -534,7 +534,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 7u
@@ -551,7 +551,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 3u
@@ -568,7 +568,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>7. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u
@@ -585,7 +585,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>8. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u
@@ -602,7 +602,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>9. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u
@@ -619,7 +619,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>10. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u
@@ -636,7 +636,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>11. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u
@@ -653,7 +653,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>12. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u
@@ -670,7 +670,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>13. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 6u
@@ -687,7 +687,7 @@ L'analyse du cycle de commande montre des intervalles de 36 et 54 jours (moyenne
 
 
 <details>
-<summary><strong>14. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:11:26: 4u

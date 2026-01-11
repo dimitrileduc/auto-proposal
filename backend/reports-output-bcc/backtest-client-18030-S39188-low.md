@@ -118,7 +118,7 @@ La dernière commande remonte au 13 mai 2025, soit plus de 120 jours sans activi
 
 
 <details>
-<summary><strong>1. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:29:36: 2u
@@ -133,7 +133,7 @@ La dernière commande remonte au 13 mai 2025, soit plus de 120 jours sans activi
 
 
 <details>
-<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:29:36: 2u

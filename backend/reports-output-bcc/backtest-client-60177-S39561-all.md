@@ -379,7 +379,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 09:43:19: 11u
@@ -396,7 +396,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 09:43:19: 1u
@@ -412,7 +412,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>3. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 09:43:19: 1u
@@ -428,7 +428,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 2u
@@ -444,7 +444,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 2u
@@ -460,7 +460,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 1u
@@ -476,7 +476,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 2u
@@ -492,7 +492,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 2u
@@ -508,7 +508,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>9. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 2u
@@ -524,7 +524,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>10. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 1u
@@ -539,7 +539,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 47 jours. Dep
 
 
 <details>
-<summary><strong>11. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:09:15: 1u

@@ -263,7 +263,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 70 j
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:24:49: 1u
@@ -282,7 +282,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 70 j
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:24:49: 3u
@@ -301,7 +301,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 70 j
 
 
 <details>
-<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:24:49: 3u
@@ -318,7 +318,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 70 j
 
 
 <details>
-<summary><strong>4. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:24:49: 1u
@@ -335,7 +335,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 70 j
 
 
 <details>
-<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:24:49: 3u
@@ -355,7 +355,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 70 j
 
 
 <details>
-<summary><strong>6. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:28:40: 3u
@@ -370,7 +370,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 70 j
 
 
 <details>
-<summary><strong>7. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:28:40: 3u

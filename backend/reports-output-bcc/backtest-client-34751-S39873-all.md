@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre des intervalles de 49 et 21 jours (moyenne
 
 
 <details>
-<summary><strong>1. [WIG06] WIGNAC cidre naturel bio sans alcool 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [WIG06] WIGNAC cidre naturel bio sans alcool 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 06:35:10: 3u
@@ -193,7 +193,7 @@ L'analyse du cycle de commande montre des intervalles de 49 et 21 jours (moyenne
 
 
 <details>
-<summary><strong>2. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 06:35:10: 3u
@@ -210,7 +210,7 @@ L'analyse du cycle de commande montre des intervalles de 49 et 21 jours (moyenne
 
 
 <details>
-<summary><strong>3. [WIG01] WIGNAC cidre naturel bio 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [WIG01] WIGNAC cidre naturel bio 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 06:35:10: 3u
@@ -227,7 +227,7 @@ L'analyse du cycle de commande montre des intervalles de 49 et 21 jours (moyenne
 
 
 <details>
-<summary><strong>4. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 06:35:10: 3u

@@ -205,7 +205,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 130 jours. Bien que l
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 08:34:41: 1u
@@ -220,7 +220,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 130 jours. Bien que l
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 08:34:41: 2u
@@ -235,7 +235,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 130 jours. Bien que l
 
 
 <details>
-<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 08:34:41: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 130 jours. Bien que l
 
 
 <details>
-<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 08:34:41: 1u
@@ -265,7 +265,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 130 jours. Bien que l
 
 
 <details>
-<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 08:34:41: 2u

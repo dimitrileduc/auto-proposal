@@ -89,7 +89,7 @@ L'historique récent montre une commande de 3 unités le 12 novembre 2024. Depui
 
 
 <details>
-<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-12 08:08:05: 2u

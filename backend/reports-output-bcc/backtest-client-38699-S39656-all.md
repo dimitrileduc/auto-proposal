@@ -350,7 +350,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 1u
@@ -367,7 +367,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>2. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 1u
@@ -385,7 +385,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 1u
@@ -401,7 +401,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 1u
@@ -418,7 +418,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 1u
@@ -436,7 +436,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>6. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 1u
@@ -456,7 +456,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>7. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 2u
@@ -475,7 +475,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>8. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 06:31:32: 2u
@@ -495,7 +495,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>9. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 13:57:06: 1u
@@ -510,7 +510,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>10. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 13:57:06: 1u

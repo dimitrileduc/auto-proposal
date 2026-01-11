@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF3298] COLONA MOUTARDE SUCREE 5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3298] COLONA MOUTARDE SUCREE 5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 14:41:01: 216u

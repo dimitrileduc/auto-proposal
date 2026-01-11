@@ -553,7 +553,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>1. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 2u
@@ -572,7 +572,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 2u
@@ -590,7 +590,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>3. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -609,7 +609,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 2u
@@ -628,7 +628,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>5. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 2u
@@ -645,7 +645,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>6. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -661,7 +661,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>7. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -677,7 +677,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>8. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -692,7 +692,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>9. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -708,7 +708,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>10. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -723,7 +723,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>11. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -738,7 +738,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>12. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:10:01: 1u
@@ -754,7 +754,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>13. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:09:15: 2u
@@ -771,7 +771,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>14. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:09:15: 2u
@@ -787,7 +787,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>15. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:09:15: 3u
@@ -804,7 +804,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>16. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:09:15: 2u
@@ -820,7 +820,7 @@ L'analyse de l'historique montre un cycle de commande long et irrégulier (envir
 
 
 <details>
-<summary><strong>17. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

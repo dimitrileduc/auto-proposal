@@ -118,7 +118,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-25 12:59:50: 5u
@@ -138,7 +138,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à
 
 
 <details>
-<summary><strong>2. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-25 12:59:50: 5u

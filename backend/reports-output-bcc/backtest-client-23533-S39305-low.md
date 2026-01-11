@@ -205,7 +205,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 140 jours sans activit
 
 
 <details>
-<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-02 07:31:42: 2u
@@ -220,7 +220,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 140 jours sans activit
 
 
 <details>
-<summary><strong>2. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-02 07:31:42: 1u
@@ -235,7 +235,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 140 jours sans activit
 
 
 <details>
-<summary><strong>3. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:46:37: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 140 jours sans activit
 
 
 <details>
-<summary><strong>4. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:46:37: 1u
@@ -265,7 +265,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 140 jours sans activit
 
 
 <details>
-<summary><strong>5. [ORG01] ORGANICA crunchy fruit ananas 16g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [ORG01] ORGANICA crunchy fruit ananas 16g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:46:37: 1u

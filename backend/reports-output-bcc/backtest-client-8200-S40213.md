@@ -176,7 +176,7 @@ La dernière commande remonte au 11 juin 2025, soit 153 jours sans activité pou
 
 
 <details>
-<summary><strong>1. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 14:23:24: 7u
@@ -193,7 +193,7 @@ La dernière commande remonte au 11 juin 2025, soit 153 jours sans activité pou
 
 
 <details>
-<summary><strong>2. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 14:23:24: 7u
@@ -209,7 +209,7 @@ La dernière commande remonte au 11 juin 2025, soit 153 jours sans activité pou
 
 
 <details>
-<summary><strong>3. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-15 13:12:56: 2u
@@ -225,7 +225,7 @@ La dernière commande remonte au 11 juin 2025, soit 153 jours sans activité pou
 
 
 <details>
-<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 11:47:30: 2u

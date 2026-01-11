@@ -205,7 +205,7 @@ L'analyse montre une rotation très faible avec une seule commande enregistrée 
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -220,7 +220,7 @@ L'analyse montre une rotation très faible avec une seule commande enregistrée 
 
 
 <details>
-<summary><strong>2. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -235,7 +235,7 @@ L'analyse montre une rotation très faible avec une seule commande enregistrée 
 
 
 <details>
-<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -250,7 +250,7 @@ L'analyse montre une rotation très faible avec une seule commande enregistrée 
 
 
 <details>
-<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -265,7 +265,7 @@ L'analyse montre une rotation très faible avec une seule commande enregistrée 
 
 
 <details>
-<summary><strong>5. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u

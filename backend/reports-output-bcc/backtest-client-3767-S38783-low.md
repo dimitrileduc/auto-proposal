@@ -89,7 +89,7 @@ La dernière commande remonte au 23 mai 2025, soit environ 95 jours sans activit
 
 
 <details>
-<summary><strong>1. [PF0096] FILOU MOUTARDE 3 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0096] FILOU MOUTARDE 3 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 11:29:06: 3u

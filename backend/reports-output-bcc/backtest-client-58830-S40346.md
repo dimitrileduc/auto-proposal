@@ -118,7 +118,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 84 jours entre les
 
 
 <details>
-<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 07:15:51: 5u
@@ -134,7 +134,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 84 jours entre les
 
 
 <details>
-<summary><strong>2. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 07:15:51: 4u

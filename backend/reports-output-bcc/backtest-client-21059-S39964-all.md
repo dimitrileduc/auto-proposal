@@ -524,7 +524,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>1. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -542,7 +542,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>2. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -564,7 +564,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 2u
@@ -586,7 +586,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -605,7 +605,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -626,7 +626,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>6. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -642,7 +642,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -668,7 +668,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -695,7 +695,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>9. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -723,7 +723,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>10. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -751,7 +751,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>11. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -776,7 +776,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>12. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:30:26: 1u
@@ -803,7 +803,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>13. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 10:07:30: 1u
@@ -820,7 +820,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>14. [RISH06] RISH kombucha BIO - tagette 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [RISH06] RISH kombucha BIO - tagette 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 10:07:30: 1u
@@ -836,7 +836,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>15. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 10:07:30: 1u
@@ -854,7 +854,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 20 et 50 jou
 
 
 <details>
-<summary><strong>16. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 10:07:30: 1u

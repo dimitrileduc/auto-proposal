@@ -118,7 +118,7 @@ La dernière commande remonte au 24 juin 2025, soit 50 jours avant la date actue
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-24 08:39:22: 2u
@@ -134,7 +134,7 @@ La dernière commande remonte au 24 juin 2025, soit 50 jours avant la date actue
 
 
 <details>
-<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-24 08:39:22: 2u

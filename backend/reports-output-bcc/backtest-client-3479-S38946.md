@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF0539] JF VOL AU VENT 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0539] JF VOL AU VENT 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:36:48: 24u

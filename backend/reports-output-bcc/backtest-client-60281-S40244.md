@@ -176,7 +176,7 @@ La dernière commande remonte au 17 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>1. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:43:02: 4u
@@ -191,7 +191,7 @@ La dernière commande remonte au 17 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>2. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:43:02: 3u
@@ -206,7 +206,7 @@ La dernière commande remonte au 17 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>3. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:43:02: 2u
@@ -221,7 +221,7 @@ La dernière commande remonte au 17 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>4. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:43:02: 2u

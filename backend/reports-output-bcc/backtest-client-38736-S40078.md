@@ -553,7 +553,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>1. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:09:40: 1u
@@ -569,7 +569,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>2. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:09:40: 1u
@@ -586,7 +586,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>3. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:09:40: 1u
@@ -607,7 +607,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:09:40: 1u
@@ -629,7 +629,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>5. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:09:40: 1u
@@ -647,7 +647,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>6. [LD010] LD Organic Truffle Spread 135 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LD010] LD Organic Truffle Spread 135 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:09:40: 1u
@@ -663,7 +663,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:48:36: 2u
@@ -683,7 +683,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>8. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:48:36: 1u
@@ -700,7 +700,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>9. [LD012] LD Organic Samphire Spread 135 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LD012] LD Organic Samphire Spread 135 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:48:36: 3u
@@ -715,7 +715,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>10. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 10:48:36: 1u
@@ -730,7 +730,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>11. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 13:29:06: 2u
@@ -745,7 +745,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>12. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 13:29:06: 2u
@@ -760,7 +760,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>13. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 13:29:06: 1u
@@ -775,7 +775,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>14. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 13:29:06: 1u
@@ -790,7 +790,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>15. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 09:19:56: 2u
@@ -805,7 +805,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>16. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 09:19:56: 2u
@@ -823,7 +823,7 @@ Absence de commandes récentes mais historique N-1 présent. Bien que la derniè
 
 
 <details>
-<summary><strong>17. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

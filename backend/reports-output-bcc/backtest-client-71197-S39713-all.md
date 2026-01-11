@@ -234,7 +234,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>1. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 3u
@@ -249,7 +249,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>2. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 3u
@@ -265,7 +265,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>3. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 3u
@@ -280,7 +280,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>4. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 2u
@@ -295,7 +295,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>5. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 2u
@@ -311,7 +311,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>6. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 2u

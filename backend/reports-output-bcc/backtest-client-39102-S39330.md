@@ -292,7 +292,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 06:41:21: 2u
@@ -309,7 +309,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 06:41:21: 1u
@@ -324,7 +324,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 06:41:21: 1u
@@ -341,7 +341,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 06:41:21: 1u
@@ -358,7 +358,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 06:41:21: 1u
@@ -375,7 +375,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 06:41:21: 1u
@@ -391,7 +391,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:11:22: 1u
@@ -406,7 +406,7 @@ La dernière commande remonte au 09/07/2025, soit environ 116 jours. Bien que la
 
 
 <details>
-<summary><strong>8. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 13:52:58: 1u

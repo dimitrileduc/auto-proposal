@@ -524,7 +524,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 6u
@@ -539,7 +539,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 4u
@@ -558,7 +558,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 4u
@@ -578,7 +578,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 1u
@@ -598,7 +598,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>5. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 1u
@@ -618,7 +618,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 4u
@@ -638,7 +638,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>7. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 2u
@@ -656,7 +656,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>8. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 2u
@@ -676,7 +676,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>9. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 2u
@@ -691,7 +691,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>10. [LV147] LV Sauce Cocktail 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV147] LV Sauce Cocktail 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 1u
@@ -709,7 +709,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>11. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 1u
@@ -724,7 +724,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>12. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 1u
@@ -739,7 +739,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>13. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:26:16: 4u
@@ -755,7 +755,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>14. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:26:03: 3u
@@ -770,7 +770,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>15. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:26:03: 4u
@@ -785,7 +785,7 @@ La dernière commande remonte au 23 juin 2025, soit 79 jours avant la date actue
 
 
 <details>
-<summary><strong>16. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:26:03: 3u

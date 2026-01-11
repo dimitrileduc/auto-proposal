@@ -147,7 +147,7 @@ L'analyse du cycle récent montre une commande environ tous les 22 jours (entre 
 
 
 <details>
-<summary><strong>1. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-07 13:14:24: 10u
@@ -170,7 +170,7 @@ L'analyse du cycle récent montre une commande environ tous les 22 jours (entre 
 
 
 <details>
-<summary><strong>2. [PF0539] JF VOL AU VENT 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0539] JF VOL AU VENT 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-07 13:14:24: 4u
@@ -186,7 +186,7 @@ L'analyse du cycle récent montre une commande environ tous les 22 jours (entre 
 
 
 <details>
-<summary><strong>3. [PF0609] YVALLI SAUCE TOMATE 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0609] YVALLI SAUCE TOMATE 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 07:00:20: 6u

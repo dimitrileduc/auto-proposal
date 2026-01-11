@@ -89,7 +89,7 @@ La dernière commande remonte au 31 mars 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>1. [PF0204] KDIS MAYONNAISE KOSHER 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0204] KDIS MAYONNAISE KOSHER 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 12:06:10: 960u

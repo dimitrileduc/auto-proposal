@@ -89,7 +89,7 @@ La dernière commande remonte au 22 septembre 2025, soit 23 jours avant la date 
 
 
 <details>
-<summary><strong>1. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 09:39:24: 1u

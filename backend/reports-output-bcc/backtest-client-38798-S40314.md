@@ -147,7 +147,7 @@ La dernière commande remonte à plus de 140 jours (20 juin). Bien que la rotati
 
 
 <details>
-<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:12:54: 1u
@@ -164,7 +164,7 @@ La dernière commande remonte à plus de 140 jours (20 juin). Bien que la rotati
 
 
 <details>
-<summary><strong>2. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:12:54: 1u
@@ -181,7 +181,7 @@ La dernière commande remonte à plus de 140 jours (20 juin). Bien que la rotati
 
 
 <details>
-<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 10:15:27: 2u

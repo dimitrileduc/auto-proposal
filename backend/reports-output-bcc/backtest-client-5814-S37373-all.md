@@ -89,7 +89,7 @@ L'analyse du cycle montre un intervalle de 50 jours entre les deux dernières co
 
 
 <details>
-<summary><strong>1. [PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 11:47:01: 360u

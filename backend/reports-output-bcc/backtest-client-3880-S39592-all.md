@@ -118,7 +118,7 @@ La dernière commande remonte au 22 août 2025, soit 45 jours avant la date actu
 
 
 <details>
-<summary><strong>1. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:22:11: 72u
@@ -139,7 +139,7 @@ La dernière commande remonte au 22 août 2025, soit 45 jours avant la date actu
 
 
 <details>
-<summary><strong>2. [PF0609] YVALLI SAUCE TOMATE 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0609] YVALLI SAUCE TOMATE 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:22:11: 18u

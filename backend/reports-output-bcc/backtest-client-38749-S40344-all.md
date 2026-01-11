@@ -611,7 +611,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>1. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:39:08: 4u
@@ -629,7 +629,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>2. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:39:08: 1u
@@ -645,7 +645,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>3. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:39:08: 1u
@@ -660,7 +660,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>4. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:39:08: 1u
@@ -677,7 +677,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>5. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:39:08: 1u
@@ -693,7 +693,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:39:08: 1u
@@ -709,7 +709,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>7. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:39:08: 2u
@@ -728,7 +728,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>8. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -744,7 +744,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>9. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -760,7 +760,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>10. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -776,7 +776,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>11. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -793,7 +793,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>12. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -808,7 +808,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>13. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -824,7 +824,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>14. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 2u
@@ -842,7 +842,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>15. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -858,7 +858,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>16. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:55:28: 1u
@@ -875,7 +875,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>17. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -892,7 +892,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>18. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -909,7 +909,7 @@ Il n'y a aucune commande récente pour ce produit, mais l'historique de l'année
 
 
 <details>
-<summary><strong>19. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

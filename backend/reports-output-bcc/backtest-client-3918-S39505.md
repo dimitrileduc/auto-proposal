@@ -205,7 +205,7 @@ La dernière commande remonte au 11 septembre 2025 (soit 20 jours). Avec un seui
 
 
 <details>
-<summary><strong>1. [PF0097] FILOU MOUTARDE 5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0097] FILOU MOUTARDE 5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 08:08:49: 2u
@@ -221,7 +221,7 @@ La dernière commande remonte au 11 septembre 2025 (soit 20 jours). Avec un seui
 
 
 <details>
-<summary><strong>2. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 08:08:49: 64u
@@ -238,7 +238,7 @@ La dernière commande remonte au 11 septembre 2025 (soit 20 jours). Avec un seui
 
 
 <details>
-<summary><strong>3. [PF0084] FILOU CARBONNADES 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0084] FILOU CARBONNADES 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 08:08:49: 1u
@@ -254,7 +254,7 @@ La dernière commande remonte au 11 septembre 2025 (soit 20 jours). Avec un seui
 
 
 <details>
-<summary><strong>4. [PF1224] FILOU BOULETTES TOMATE 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF1224] FILOU BOULETTES TOMATE 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 08:08:49: 2u
@@ -270,7 +270,7 @@ La dernière commande remonte au 11 septembre 2025 (soit 20 jours). Avec un seui
 
 
 <details>
-<summary><strong>5. [PF1844] FILOU ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF1844] FILOU ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 08:08:49: 1u

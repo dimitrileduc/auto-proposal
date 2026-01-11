@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

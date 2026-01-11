@@ -350,7 +350,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>1. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 2u
@@ -368,7 +368,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>2. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 1u
@@ -386,7 +386,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>3. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 1u
@@ -402,7 +402,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>4. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 1u
@@ -419,7 +419,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>5. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 2u
@@ -437,7 +437,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 1u
@@ -454,7 +454,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 1u
@@ -471,7 +471,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>8. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:30:48: 1u
@@ -488,7 +488,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>9. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 09:16:54: 1u
@@ -505,7 +505,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>10. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 09:16:54: 1u

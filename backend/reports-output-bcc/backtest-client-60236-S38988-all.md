@@ -147,7 +147,7 @@ La dernière commande remonte au 18 juin 2025, soit 78 jours avant la date actue
 
 
 <details>
-<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:55:56: 15u
@@ -162,7 +162,7 @@ La dernière commande remonte au 18 juin 2025, soit 78 jours avant la date actue
 
 
 <details>
-<summary><strong>2. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:55:56: 30u
@@ -177,7 +177,7 @@ La dernière commande remonte au 18 juin 2025, soit 78 jours avant la date actue
 
 
 <details>
-<summary><strong>3. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:55:56: 5u

@@ -379,7 +379,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>1. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -394,7 +394,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -409,7 +409,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -424,7 +424,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>4. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -439,7 +439,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>5. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -454,7 +454,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>6. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -469,7 +469,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>7. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -484,7 +484,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>8. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -499,7 +499,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>9. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -514,7 +514,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>10. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u
@@ -529,7 +529,7 @@ La dernière commande remonte au 23 mai 2025, soit 60 jours avant la date actuel
 
 
 <details>
-<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 07:29:43: 1u

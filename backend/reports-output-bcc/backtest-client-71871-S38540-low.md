@@ -350,7 +350,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -365,7 +365,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -380,7 +380,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -395,7 +395,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -410,7 +410,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>5. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -425,7 +425,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>6. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -440,7 +440,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>7. [LV214] LV Biscuits ap√©ro tomate basilic 100g bio </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV214] LV Biscuits ap√©ro tomate basilic 100g bio </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -455,7 +455,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>8. [LV215] LV Biscuits ap√©ro Fromage Parmesan 100g bio </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV215] LV Biscuits ap√©ro Fromage Parmesan 100g bio </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -470,7 +470,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>9. [LV216] LV Biscuits ap√©ro Fromage & Oignon 100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV216] LV Biscuits ap√©ro Fromage & Oignon 100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u
@@ -485,7 +485,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>10. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 07:54:02: 1u

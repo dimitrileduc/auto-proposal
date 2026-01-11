@@ -234,7 +234,7 @@ La dernière commande remonte au 13 mars 2025, soit environ 89 jours. Bien que l
 
 
 <details>
-<summary><strong>1. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 12:51:48: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte au 13 mars 2025, soit environ 89 jours. Bien que l
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 12:51:48: 3u
@@ -265,7 +265,7 @@ La dernière commande remonte au 13 mars 2025, soit environ 89 jours. Bien que l
 
 
 <details>
-<summary><strong>3. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 12:51:48: 2u
@@ -281,7 +281,7 @@ La dernière commande remonte au 13 mars 2025, soit environ 89 jours. Bien que l
 
 
 <details>
-<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 12:51:48: 1u
@@ -297,7 +297,7 @@ La dernière commande remonte au 13 mars 2025, soit environ 89 jours. Bien que l
 
 
 <details>
-<summary><strong>5. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 12:51:48: 1u
@@ -312,7 +312,7 @@ La dernière commande remonte au 13 mars 2025, soit environ 89 jours. Bien que l
 
 
 <details>
-<summary><strong>6. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 12:51:48: 2u

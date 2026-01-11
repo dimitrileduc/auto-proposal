@@ -147,7 +147,7 @@ La dernière commande remonte au 20 juin 2025, soit 87 jours avant la date actue
 
 
 <details>
-<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 06:48:58: 1u
@@ -162,7 +162,7 @@ La dernière commande remonte au 20 juin 2025, soit 87 jours avant la date actue
 
 
 <details>
-<summary><strong>2. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 06:48:58: 1u
@@ -177,7 +177,7 @@ La dernière commande remonte au 20 juin 2025, soit 87 jours avant la date actue
 
 
 <details>
-<summary><strong>3. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 06:48:58: 1u

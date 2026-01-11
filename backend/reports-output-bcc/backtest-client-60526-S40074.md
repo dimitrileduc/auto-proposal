@@ -553,7 +553,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>1. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 2u
@@ -570,7 +570,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 3u
@@ -587,7 +587,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 3u
@@ -604,7 +604,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 3u
@@ -620,7 +620,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 2u
@@ -636,7 +636,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>6. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 4u
@@ -652,7 +652,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>7. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 10u
@@ -668,7 +668,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>8. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 10u
@@ -684,7 +684,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>9. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 6u
@@ -700,7 +700,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>10. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 6u
@@ -716,7 +716,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>11. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 10u
@@ -732,7 +732,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>12. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 2u
@@ -748,7 +748,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>13. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 1u
@@ -764,7 +764,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>14. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 07:01:50: 6u
@@ -781,7 +781,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>15. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 10:26:33: 2u
@@ -797,7 +797,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>16. [LEA06] LEAMO maté 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LEA06] LEAMO maté 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 10:26:33: 1u
@@ -812,7 +812,7 @@ La dernière commande remonte au 22 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>17. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 07:37:51: 4u

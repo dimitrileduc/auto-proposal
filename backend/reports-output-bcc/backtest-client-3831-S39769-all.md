@@ -147,7 +147,7 @@ La dernière commande enregistrée remonte au 15 mai 2025, soit 153 jours sans r
 
 
 <details>
-<summary><strong>1. [PF1792] LD MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1792] LD MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 08:37:42: 250u
@@ -177,7 +177,7 @@ La dernière commande enregistrée remonte au 15 mai 2025, soit 153 jours sans r
 
 
 <details>
-<summary><strong>2. [PF1809] LD SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1809] LD SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:53:48: 67u
@@ -201,7 +201,7 @@ La dernière commande enregistrée remonte au 15 mai 2025, soit 153 jours sans r
 
 
 <details>
-<summary><strong>3. [PF1803] LD SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1803] LD SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 14:34:06: 50u

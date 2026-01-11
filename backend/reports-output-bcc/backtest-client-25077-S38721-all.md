@@ -553,7 +553,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 2u
@@ -572,7 +572,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 5u
@@ -594,7 +594,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 2u
@@ -616,7 +616,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 5u
@@ -639,7 +639,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 5u
@@ -662,7 +662,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 5u
@@ -683,7 +683,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>7. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 2u
@@ -699,7 +699,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>8. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 4u
@@ -717,7 +717,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>9. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 1u
@@ -733,7 +733,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>10. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 7u
@@ -755,7 +755,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>11. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 5u
@@ -778,7 +778,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>12. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 2u
@@ -799,7 +799,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>13. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 14:31:11: 2u
@@ -819,7 +819,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>14. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:19:03: 4u
@@ -837,7 +837,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>15. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:32:32: 1u
@@ -852,7 +852,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>16. [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:32:32: 1u
@@ -867,7 +867,7 @@ La dernière commande remonte au 05/05/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>17. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:32:32: 1u

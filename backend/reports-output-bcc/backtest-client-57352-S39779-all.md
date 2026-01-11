@@ -611,7 +611,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -629,7 +629,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -648,7 +648,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>3. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 2u
@@ -666,7 +666,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -682,7 +682,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>5. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 2u
@@ -698,7 +698,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -716,7 +716,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -733,7 +733,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>8. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -750,7 +750,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>9. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 2u
@@ -765,7 +765,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>10. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -782,7 +782,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>11. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -798,7 +798,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>12. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 1u
@@ -814,7 +814,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>13. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 12:23:44: 1u
@@ -830,7 +830,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>14. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 12:23:44: 1u
@@ -848,7 +848,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>15. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-08 06:20:35: 1u
@@ -863,7 +863,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>16. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 09:02:01: 2u
@@ -879,7 +879,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>17. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 09:02:01: 1u
@@ -895,7 +895,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>18. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 09:02:01: 2u
@@ -910,7 +910,7 @@ La dernière commande remonte au 16 juin 2025, soit 122 jours sans activité. L'
 
 
 <details>
-<summary><strong>19. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 09:02:01: 2u

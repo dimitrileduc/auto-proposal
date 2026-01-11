@@ -176,7 +176,7 @@ Le cycle de commande observé est d'environ 68 jours (entre juillet et septembre
 
 
 <details>
-<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u
@@ -192,7 +192,7 @@ Le cycle de commande observé est d'environ 68 jours (entre juillet et septembre
 
 
 <details>
-<summary><strong>2. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u
@@ -208,7 +208,7 @@ Le cycle de commande observé est d'environ 68 jours (entre juillet et septembre
 
 
 <details>
-<summary><strong>3. [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u
@@ -224,7 +224,7 @@ Le cycle de commande observé est d'environ 68 jours (entre juillet et septembre
 
 
 <details>
-<summary><strong>4. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u

@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre des intervalles de 35, 49 et 42 jours (moy
 
 
 <details>
-<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 15:17:41: 80u
@@ -209,7 +209,7 @@ L'analyse du cycle de commande montre des intervalles de 35, 49 et 42 jours (moy
 
 
 <details>
-<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 15:17:41: 80u
@@ -241,7 +241,7 @@ L'analyse du cycle de commande montre des intervalles de 35, 49 et 42 jours (moy
 
 
 <details>
-<summary><strong>3. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 15:17:41: 48u
@@ -271,7 +271,7 @@ L'analyse du cycle de commande montre des intervalles de 35, 49 et 42 jours (moy
 
 
 <details>
-<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 15:17:41: 48u

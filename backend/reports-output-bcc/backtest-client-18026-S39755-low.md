@@ -292,7 +292,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:07:53: 1u
@@ -307,7 +307,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:07:53: 1u
@@ -322,7 +322,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:07:53: 1u
@@ -337,7 +337,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:07:53: 1u
@@ -352,7 +352,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>5. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:07:53: 1u
@@ -367,7 +367,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>6. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:07:53: 1u
@@ -382,7 +382,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>7. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:07:53: 1u
@@ -397,7 +397,7 @@ La dernière commande remonte au 02/10/2025, soit 40 jours avant la date actuell
 
 
 <details>
-<summary><strong>8. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:38:37: 1u

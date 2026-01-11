@@ -118,7 +118,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 3u
@@ -133,7 +133,7 @@ La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionn
 
 
 <details>
-<summary><strong>2. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 2u

@@ -408,7 +408,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 1u
@@ -424,7 +424,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 1u
@@ -440,7 +440,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>3. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 1u
@@ -455,7 +455,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 1u
@@ -472,7 +472,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>5. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 3u
@@ -488,7 +488,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>6. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 3u
@@ -506,7 +506,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>7. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 1u
@@ -521,7 +521,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>8. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 10:53:00: 1u
@@ -538,7 +538,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>9. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -554,7 +554,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>10. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -570,7 +570,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>11. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -585,7 +585,7 @@ L'analyse de l'historique N-1 montre une commande de 1 unité le 17 octobre 2024
 
 
 <details>
-<summary><strong>12. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

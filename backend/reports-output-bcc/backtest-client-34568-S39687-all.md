@@ -292,7 +292,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>1. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:51:09: 1u
@@ -307,7 +307,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:51:09: 1u
@@ -323,7 +323,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>3. [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 06:51:09: 1u
@@ -340,7 +340,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>4. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 06:19:06: 1u
@@ -355,7 +355,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>5. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 06:19:06: 1u
@@ -371,7 +371,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>6. [CB005] CB Apple juice 1l</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [CB005] CB Apple juice 1l</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 06:19:06: 1u
@@ -386,7 +386,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>7. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 06:19:06: 1u
@@ -401,7 +401,7 @@ La dernière commande remonte au 07/07/2025, soit plus de 90 jours sans activit�
 
 
 <details>
-<summary><strong>8. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 06:35:07: 1u

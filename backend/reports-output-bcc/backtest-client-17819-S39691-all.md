@@ -843,7 +843,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 09:32:05: 1u
@@ -865,7 +865,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>2. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 09:32:05: 1u
@@ -885,7 +885,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 09:32:05: 2u
@@ -913,7 +913,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>4. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 09:32:05: 1u
@@ -934,7 +934,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>5. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 09:32:05: 1u
@@ -954,7 +954,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 09:32:05: 1u
@@ -972,7 +972,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>7. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 1u
@@ -988,7 +988,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>8. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 1u
@@ -1005,7 +1005,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>9. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 1u
@@ -1021,7 +1021,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>10. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 1u
@@ -1037,7 +1037,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>11. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 2u
@@ -1061,7 +1061,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>12. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 1u
@@ -1088,7 +1088,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>13. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 2u
@@ -1109,7 +1109,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>14. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 1u
@@ -1130,7 +1130,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>15. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 2u
@@ -1155,7 +1155,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>16. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 1u
@@ -1172,7 +1172,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>17. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 07:24:21: 2u
@@ -1189,7 +1189,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>18. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:19:24: 1u
@@ -1209,7 +1209,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>19. [LV143] LV Mayonnaise (huile 70%) 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [LV143] LV Mayonnaise (huile 70%) 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:19:24: 1u
@@ -1226,7 +1226,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>20. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:19:24: 3u
@@ -1249,7 +1249,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>21. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:19:24: 1u
@@ -1267,7 +1267,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>22. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:19:24: 3u
@@ -1291,7 +1291,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>23. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>23. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:19:24: 1u
@@ -1307,7 +1307,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>24. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>24. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:19:24: 1u
@@ -1323,7 +1323,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>25. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>25. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 07:01:09: 1u
@@ -1338,7 +1338,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>26. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>26. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 09:13:07: 1u
@@ -1355,7 +1355,7 @@ La dernière commande remonte à 124 jours (11 juin 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>27. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>27. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

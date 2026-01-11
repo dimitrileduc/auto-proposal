@@ -176,7 +176,7 @@
 
 
 <details>
-<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:21:16: 2u
@@ -191,7 +191,7 @@
 
 
 <details>
-<summary><strong>2. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 07:29:08: 2u
@@ -206,7 +206,7 @@
 
 
 <details>
-<summary><strong>3. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -221,7 +221,7 @@
 
 
 <details>
-<summary><strong>4. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

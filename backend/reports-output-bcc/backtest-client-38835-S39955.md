@@ -524,7 +524,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 2u
@@ -542,7 +542,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 2u
@@ -558,7 +558,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 2u
@@ -575,7 +575,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>4. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 1u
@@ -591,7 +591,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 1u
@@ -608,7 +608,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>6. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 1u
@@ -624,7 +624,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>7. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 1u
@@ -641,7 +641,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>8. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 1u
@@ -657,7 +657,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>9. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:09:00: 1u
@@ -673,7 +673,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>10. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:25:47: 1u
@@ -689,7 +689,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>11. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:25:47: 1u
@@ -705,7 +705,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>12. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:25:47: 2u
@@ -721,7 +721,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>13. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:25:47: 2u
@@ -738,7 +738,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>14. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:25:47: 2u
@@ -753,7 +753,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>15. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:25:47: 1u
@@ -769,7 +769,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>16. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:25:47: 1u

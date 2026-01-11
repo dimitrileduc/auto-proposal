@@ -234,7 +234,7 @@ La dernière commande remonte au 08/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>1. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:28:00: 12u
@@ -251,7 +251,7 @@ La dernière commande remonte au 08/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>2. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:28:00: 1u
@@ -268,7 +268,7 @@ La dernière commande remonte au 08/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>3. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:28:00: 10u
@@ -284,7 +284,7 @@ La dernière commande remonte au 08/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>4. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:28:00: 1u
@@ -300,7 +300,7 @@ La dernière commande remonte au 08/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>5. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 12:56:12: 10u
@@ -315,7 +315,7 @@ La dernière commande remonte au 08/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>6. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-08 06:23:16: 15u

@@ -147,7 +147,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 35 à 40 
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 11:39:53: 3u
@@ -177,7 +177,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 35 à 40 
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 11:39:53: 1u
@@ -203,7 +203,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 35 à 40 
 
 
 <details>
-<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 11:39:53: 3u

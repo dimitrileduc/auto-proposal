@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:11:12: 2u
@@ -133,7 +133,7 @@
 
 
 <details>
-<summary><strong>2. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 09:11:12: 2u

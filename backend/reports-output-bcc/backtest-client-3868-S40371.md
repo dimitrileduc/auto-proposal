@@ -437,7 +437,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0048] MF Delikatess Mayonnaise 250ml DE</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-17 12:58:29: 32u
@@ -465,7 +465,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-17 12:58:29: 48u
@@ -493,7 +493,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-17 12:58:29: 64u
@@ -521,7 +521,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-17 12:58:29: 32u
@@ -538,7 +538,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>5. [LV348] LV Tartinade Dattes-Chili 180g BE bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV348] LV Tartinade Dattes-Chili 180g BE bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 09:47:05: 25u
@@ -556,7 +556,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>6. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 09:47:05: 25u
@@ -572,7 +572,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>7. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 09:47:05: 25u
@@ -588,7 +588,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>8. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 09:47:05: 25u
@@ -605,7 +605,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>9. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 09:47:05: 25u
@@ -621,7 +621,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>10. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 09:47:05: 25u
@@ -638,7 +638,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>11. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 09:47:05: 25u
@@ -654,7 +654,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>12. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 14:14:00: 25u
@@ -670,7 +670,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>13. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 14:14:00: 25u

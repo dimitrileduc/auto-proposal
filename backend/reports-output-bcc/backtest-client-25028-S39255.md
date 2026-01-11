@@ -408,7 +408,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 6u
@@ -429,7 +429,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>2. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 2u
@@ -448,7 +448,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>3. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 2u
@@ -466,7 +466,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>4. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 4u
@@ -485,7 +485,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>5. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 2u
@@ -502,7 +502,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>6. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 2u
@@ -521,7 +521,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 1u
@@ -537,7 +537,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>8. [MF0024] MF KETCHUP 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MF0024] MF KETCHUP 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 2u
@@ -556,7 +556,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>9. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 3u
@@ -576,7 +576,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>10. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 1u
@@ -595,7 +595,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>11. [MF0051] MF Kidney Beans 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0051] MF Kidney Beans 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:37:49: 1u
@@ -611,7 +611,7 @@ L'analyse de l'historique montre une rotation très faible mais régulière (env
 
 
 <details>
-<summary><strong>12. [MF0059] MF Confi Fraise- Ardbei</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [MF0059] MF Confi Fraise- Ardbei</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 13:36:17: 2u

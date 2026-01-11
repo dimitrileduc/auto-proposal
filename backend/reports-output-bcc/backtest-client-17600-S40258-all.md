@@ -176,7 +176,7 @@
 
 
 <details>
-<summary><strong>1. [LV311] LV BIO Tartin'apero Basilico SDP 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV311] LV BIO Tartin'apero Basilico SDP 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 11:51:44: 434u
@@ -196,7 +196,7 @@
 
 
 <details>
-<summary><strong>2. [LV363] LV BIO Tartin'apero Avocat 180g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV363] LV BIO Tartin'apero Avocat 180g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:56:31: 434u
@@ -215,7 +215,7 @@
 
 
 <details>
-<summary><strong>3. [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV312] LV "CLASSIQUE" WECK Mayonnaise à la TRUFFE 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 11:33:10: 200u
@@ -244,7 +244,7 @@
 
 
 <details>
-<summary><strong>4. [LV362] LV BIO Tartin'apero Olives Câpres Tomate SDP 200 ml bio (copie)</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV362] LV BIO Tartin'apero Olives Câpres Tomate SDP 200 ml bio (copie)</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 10:22:31: 430u

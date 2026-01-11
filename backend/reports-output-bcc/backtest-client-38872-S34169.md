@@ -176,7 +176,7 @@ La dernière commande remonte à 117 jours (septembre 2024). Bien que la rotatio
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 2u
@@ -191,7 +191,7 @@ La dernière commande remonte à 117 jours (septembre 2024). Bien que la rotatio
 
 
 <details>
-<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte à 117 jours (septembre 2024). Bien que la rotatio
 
 
 <details>
-<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 3u
@@ -221,7 +221,7 @@ La dernière commande remonte à 117 jours (septembre 2024). Bien que la rotatio
 
 
 <details>
-<summary><strong>4. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 1u

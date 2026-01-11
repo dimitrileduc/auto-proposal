@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF1501] BONI VINAI CIBOULETTE 450ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1501] BONI VINAI CIBOULETTE 450ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-25 14:48:43: 126u

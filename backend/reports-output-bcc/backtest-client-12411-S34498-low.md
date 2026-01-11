@@ -147,7 +147,7 @@
 
 
 <details>
-<summary><strong>1. [PF2938] LD FR TARTINAD BIO AUBERGI 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF2938] LD FR TARTINAD BIO AUBERGI 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-14 12:31:38: 64u
@@ -162,7 +162,7 @@
 
 
 <details>
-<summary><strong>2. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-14 12:31:38: 30u
@@ -177,7 +177,7 @@
 
 
 <details>
-<summary><strong>3. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-14 12:31:38: 40u

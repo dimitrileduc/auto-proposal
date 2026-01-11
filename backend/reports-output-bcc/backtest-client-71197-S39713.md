@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre un intervalle de 97 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 3u
@@ -191,7 +191,7 @@ L'analyse du cycle de commande montre un intervalle de 97 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 3u
@@ -207,7 +207,7 @@ L'analyse du cycle de commande montre un intervalle de 97 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 2u
@@ -223,7 +223,7 @@ L'analyse du cycle de commande montre un intervalle de 97 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 07:27:55: 2u

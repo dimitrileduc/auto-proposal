@@ -147,7 +147,7 @@ La dernière commande remonte au 31 janvier, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>1. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-31 09:10:42: 1u
@@ -162,7 +162,7 @@ La dernière commande remonte au 31 janvier, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>2. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-31 09:10:42: 1u
@@ -177,7 +177,7 @@ La dernière commande remonte au 31 janvier, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>3. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-31 09:10:42: 1u

@@ -234,7 +234,7 @@ La dernière commande remonte à plus de 140 jours, ce qui dépasse largement to
 
 
 <details>
-<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-23 13:26:54: 6u
@@ -249,7 +249,7 @@ La dernière commande remonte à plus de 140 jours, ce qui dépasse largement to
 
 
 <details>
-<summary><strong>2. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-23 13:26:54: 4u
@@ -264,7 +264,7 @@ La dernière commande remonte à plus de 140 jours, ce qui dépasse largement to
 
 
 <details>
-<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-23 13:26:54: 4u
@@ -279,7 +279,7 @@ La dernière commande remonte à plus de 140 jours, ce qui dépasse largement to
 
 
 <details>
-<summary><strong>4. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-23 13:26:54: 4u
@@ -294,7 +294,7 @@ La dernière commande remonte à plus de 140 jours, ce qui dépasse largement to
 
 
 <details>
-<summary><strong>5. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-23 13:26:54: 6u
@@ -309,7 +309,7 @@ La dernière commande remonte à plus de 140 jours, ce qui dépasse largement to
 
 
 <details>
-<summary><strong>6. [RF003] REFIELD Maïs 500G </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RF003] REFIELD Maïs 500G </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-23 13:26:54: 5u

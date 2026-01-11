@@ -89,7 +89,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 60 à 90 
 
 
 <details>
-<summary><strong>1. [PF1654] ECONOM COLRUYT MOUTARDE 2,1 Kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1654] ECONOM COLRUYT MOUTARDE 2,1 Kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 14:03:08: 336u

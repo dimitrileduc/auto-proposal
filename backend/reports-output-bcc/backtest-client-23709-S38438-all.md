@@ -205,7 +205,7 @@ La dernière commande remonte au 16 mai 2025, soit 86 jours avant la date actuel
 
 
 <details>
-<summary><strong>1. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-16 14:15:25: 2u
@@ -221,7 +221,7 @@ La dernière commande remonte au 16 mai 2025, soit 86 jours avant la date actuel
 
 
 <details>
-<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-16 14:15:25: 1u
@@ -236,7 +236,7 @@ La dernière commande remonte au 16 mai 2025, soit 86 jours avant la date actuel
 
 
 <details>
-<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-16 14:15:25: 1u
@@ -251,7 +251,7 @@ La dernière commande remonte au 16 mai 2025, soit 86 jours avant la date actuel
 
 
 <details>
-<summary><strong>4. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-16 14:15:25: 1u
@@ -266,7 +266,7 @@ La dernière commande remonte au 16 mai 2025, soit 86 jours avant la date actuel
 
 
 <details>
-<summary><strong>5. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-16 14:15:25: 1u

@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-17 08:15:40: 1u

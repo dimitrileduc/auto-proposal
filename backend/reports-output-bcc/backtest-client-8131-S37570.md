@@ -205,7 +205,7 @@ L'analyse du cycle de commande montre des intervalles variant de 4 à 25 jours s
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-13 13:02:52: 160u
@@ -227,7 +227,7 @@ L'analyse du cycle de commande montre des intervalles variant de 4 à 25 jours s
 
 
 <details>
-<summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-13 13:02:52: 20u
@@ -249,7 +249,7 @@ L'analyse du cycle de commande montre des intervalles variant de 4 à 25 jours s
 
 
 <details>
-<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-13 13:02:52: 3u
@@ -271,7 +271,7 @@ L'analyse du cycle de commande montre des intervalles variant de 4 à 25 jours s
 
 
 <details>
-<summary><strong>4. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 14:09:59: 52u
@@ -292,7 +292,7 @@ L'analyse du cycle de commande montre des intervalles variant de 4 à 25 jours s
 
 
 <details>
-<summary><strong>5. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 11:37:51: 52u

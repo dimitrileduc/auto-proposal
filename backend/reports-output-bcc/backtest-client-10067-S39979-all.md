@@ -234,7 +234,7 @@ La dernière commande remonte à plus de 4 mois (134 jours), ce qui dépasse lar
 
 
 <details>
-<summary><strong>1. [MF0014] MF Olives noires 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0014] MF Olives noires 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:48:22: 1u
@@ -251,7 +251,7 @@ La dernière commande remonte à plus de 4 mois (134 jours), ce qui dépasse lar
 
 
 <details>
-<summary><strong>2. [MF0012] MF Olives Mix 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0012] MF Olives Mix 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:48:22: 3u
@@ -268,7 +268,7 @@ La dernière commande remonte à plus de 4 mois (134 jours), ce qui dépasse lar
 
 
 <details>
-<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:48:22: 2u
@@ -283,7 +283,7 @@ La dernière commande remonte à plus de 4 mois (134 jours), ce qui dépasse lar
 
 
 <details>
-<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:48:22: 2u
@@ -298,7 +298,7 @@ La dernière commande remonte à plus de 4 mois (134 jours), ce qui dépasse lar
 
 
 <details>
-<summary><strong>5. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:48:22: 1u
@@ -313,7 +313,7 @@ La dernière commande remonte à plus de 4 mois (134 jours), ce qui dépasse lar
 
 
 <details>
-<summary><strong>6. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:48:22: 1u

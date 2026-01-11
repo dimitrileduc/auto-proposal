@@ -147,7 +147,7 @@ La dernière commande remonte au 09/05/2025, soit 65 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:31:48: 2u
@@ -162,7 +162,7 @@ La dernière commande remonte au 09/05/2025, soit 65 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:31:48: 1u
@@ -179,7 +179,7 @@ La dernière commande remonte au 09/05/2025, soit 65 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:31:48: 2u

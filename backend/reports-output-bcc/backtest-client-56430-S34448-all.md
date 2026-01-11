@@ -205,7 +205,7 @@ L'analyse du cycle de commande montre un intervalle de 26 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-15 06:26:47: 3u
@@ -221,7 +221,7 @@ L'analyse du cycle de commande montre un intervalle de 26 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-15 06:26:47: 3u
@@ -237,7 +237,7 @@ L'analyse du cycle de commande montre un intervalle de 26 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-19 08:31:09: 1u
@@ -252,7 +252,7 @@ L'analyse du cycle de commande montre un intervalle de 26 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-19 08:31:09: 1u
@@ -267,7 +267,7 @@ L'analyse du cycle de commande montre un intervalle de 26 jours entre les deux d
 
 
 <details>
-<summary><strong>5. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

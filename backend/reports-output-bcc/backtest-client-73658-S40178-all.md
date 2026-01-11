@@ -147,7 +147,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>1. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 07:23:23: 2u
@@ -163,7 +163,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>2. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 07:23:23: 1u
@@ -179,7 +179,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>3. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 12:01:07: 1u

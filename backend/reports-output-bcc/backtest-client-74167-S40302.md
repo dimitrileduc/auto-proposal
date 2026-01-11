@@ -263,7 +263,7 @@ Le cycle de commande observé est de 22 jours (entre le 14/10 et le 05/11). Huit
 
 
 <details>
-<summary><strong>1. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -279,7 +279,7 @@ Le cycle de commande observé est de 22 jours (entre le 14/10 et le 05/11). Huit
 
 
 <details>
-<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -295,7 +295,7 @@ Le cycle de commande observé est de 22 jours (entre le 14/10 et le 05/11). Huit
 
 
 <details>
-<summary><strong>3. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -311,7 +311,7 @@ Le cycle de commande observé est de 22 jours (entre le 14/10 et le 05/11). Huit
 
 
 <details>
-<summary><strong>4. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -327,7 +327,7 @@ Le cycle de commande observé est de 22 jours (entre le 14/10 et le 05/11). Huit
 
 
 <details>
-<summary><strong>5. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -343,7 +343,7 @@ Le cycle de commande observé est de 22 jours (entre le 14/10 et le 05/11). Huit
 
 
 <details>
-<summary><strong>6. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -359,7 +359,7 @@ Le cycle de commande observé est de 22 jours (entre le 14/10 et le 05/11). Huit
 
 
 <details>
-<summary><strong>7. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u

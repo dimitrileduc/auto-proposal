@@ -292,7 +292,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:23:29: 2u
@@ -307,7 +307,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:23:29: 10u
@@ -326,7 +326,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>3. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:23:29: 3u
@@ -344,7 +344,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>4. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:23:29: 9u
@@ -367,7 +367,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>5. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:23:29: 9u
@@ -390,7 +390,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>6. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:23:29: 9u
@@ -413,7 +413,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>7. [MF0012] MF Olives Mix 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0012] MF Olives Mix 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:23:29: 5u
@@ -435,7 +435,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>8. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-06 11:16:16: 1u

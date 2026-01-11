@@ -234,7 +234,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 3u
@@ -250,7 +250,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 4u
@@ -266,7 +266,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u
@@ -281,7 +281,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u
@@ -296,7 +296,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 3u
@@ -312,7 +312,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 2u

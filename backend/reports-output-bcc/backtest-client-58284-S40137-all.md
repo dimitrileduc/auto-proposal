@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [PF3354] DLL DRESSING AVOCAT BALSAMICO 240ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3354] DLL DRESSING AVOCAT BALSAMICO 240ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-14 12:47:50: 20u
@@ -133,7 +133,7 @@
 
 
 <details>
-<summary><strong>2. [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-14 12:47:50: 118u

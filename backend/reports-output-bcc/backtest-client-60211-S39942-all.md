@@ -379,7 +379,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>1. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 06:40:28: 1u
@@ -400,7 +400,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>2. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 06:40:28: 1u
@@ -419,7 +419,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 06:40:28: 1u
@@ -439,7 +439,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 06:40:28: 2u
@@ -461,7 +461,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 06:40:28: 2u
@@ -483,7 +483,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>6. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 06:40:28: 2u
@@ -505,7 +505,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>7. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 06:40:28: 1u
@@ -525,7 +525,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>8. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:22:48: 1u
@@ -546,7 +546,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>9. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:22:48: 1u
@@ -565,7 +565,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>10. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 11:23:24: 1u
@@ -582,7 +582,7 @@ L'analyse du cycle de commande montre une fréquence de réapprovisionnement ré
 
 
 <details>
-<summary><strong>11. [JOY05] Organic Cherry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JOY05] Organic Cherry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 11:23:24: 1u

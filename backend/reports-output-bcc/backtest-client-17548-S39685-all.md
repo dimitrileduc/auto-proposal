@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [fsv17] Mélange de noix bio vrac 2,75kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [fsv17] Mélange de noix bio vrac 2,75kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:48:23: 1u

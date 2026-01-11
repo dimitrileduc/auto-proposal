@@ -118,7 +118,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 23
 
 
 <details>
-<summary><strong>1. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-24 08:53:00: 2u
@@ -136,7 +136,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 23
 
 
 <details>
-<summary><strong>2. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 10:05:19: 1u

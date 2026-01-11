@@ -205,7 +205,7 @@ La dernière commande remonte à 150 jours, ce qui dépasse largement tout cycle
 
 
 <details>
-<summary><strong>1. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-07 14:29:25: 2u
@@ -220,7 +220,7 @@ La dernière commande remonte à 150 jours, ce qui dépasse largement tout cycle
 
 
 <details>
-<summary><strong>2. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-07 14:29:25: 1u
@@ -235,7 +235,7 @@ La dernière commande remonte à 150 jours, ce qui dépasse largement tout cycle
 
 
 <details>
-<summary><strong>3. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-07 14:29:25: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte à 150 jours, ce qui dépasse largement tout cycle
 
 
 <details>
-<summary><strong>4. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-07 14:29:25: 1u
@@ -265,7 +265,7 @@ La dernière commande remonte à 150 jours, ce qui dépasse largement tout cycle
 
 
 <details>
-<summary><strong>5. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-07 14:29:25: 2u

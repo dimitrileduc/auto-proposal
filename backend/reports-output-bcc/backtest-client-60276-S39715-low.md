@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-22 06:29:23: 6u

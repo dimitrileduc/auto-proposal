@@ -176,7 +176,7 @@ La dernière commande remonte au 19 août, soit 75 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>1. [JF068] FIL VOL AU VENT 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF068] FIL VOL AU VENT 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 09:03:49: 40u
@@ -191,7 +191,7 @@ La dernière commande remonte au 19 août, soit 75 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>2. [FIL19] FIL VOL AU VENT 400G BOCAL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [FIL19] FIL VOL AU VENT 400G BOCAL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 09:03:49: 20u
@@ -206,7 +206,7 @@ La dernière commande remonte au 19 août, soit 75 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>3. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 09:03:49: 2u
@@ -221,7 +221,7 @@ La dernière commande remonte au 19 août, soit 75 jours avant la date actuelle.
 
 
 <details>
-<summary><strong>4. [JF072] FIL BOULETTES SAUCE CHASSEUR 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF072] FIL BOULETTES SAUCE CHASSEUR 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 09:03:49: 2u

@@ -321,7 +321,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 10u
@@ -338,7 +338,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>2. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 4u
@@ -355,7 +355,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>3. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 6u
@@ -371,7 +371,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>4. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 4u
@@ -387,7 +387,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>5. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 4u
@@ -404,7 +404,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>6. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 2u
@@ -420,7 +420,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>7. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 1u
@@ -435,7 +435,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>8. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 14:47:11: 6u
@@ -451,7 +451,7 @@ Le produit présente une rotation très faible et irrégulière (1 unité par co
 
 
 <details>
-<summary><strong>9. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-17 13:42:07: 1u

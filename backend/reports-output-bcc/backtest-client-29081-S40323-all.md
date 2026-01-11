@@ -234,7 +234,7 @@ La dernière commande remonte à 121 jours (14 juillet). Bien que la rotation so
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 07:28:04: 1u
@@ -257,7 +257,7 @@ La dernière commande remonte à 121 jours (14 juillet). Bien que la rotation so
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 07:28:04: 1u
@@ -277,7 +277,7 @@ La dernière commande remonte à 121 jours (14 juillet). Bien que la rotation so
 
 
 <details>
-<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 07:28:04: 1u
@@ -294,7 +294,7 @@ La dernière commande remonte à 121 jours (14 juillet). Bien que la rotation so
 
 
 <details>
-<summary><strong>4. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-17 06:37:14: 1u
@@ -310,7 +310,7 @@ La dernière commande remonte à 121 jours (14 juillet). Bien que la rotation so
 
 
 <details>
-<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 13:46:55: 1u
@@ -329,7 +329,7 @@ La dernière commande remonte à 121 jours (14 juillet). Bien que la rotation so
 
 
 <details>
-<summary><strong>6. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:23:56: 1u

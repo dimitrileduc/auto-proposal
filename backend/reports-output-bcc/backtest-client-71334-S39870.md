@@ -263,7 +263,7 @@ L'analyse de l'historique récent montre un cycle de commande très régulier d'
 
 
 <details>
-<summary><strong>1. [PF1693] LD FR TARTINAD BIO CAROTTE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1693] LD FR TARTINAD BIO CAROTTE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 11:19:31: 93u
@@ -283,7 +283,7 @@ L'analyse de l'historique récent montre un cycle de commande très régulier d'
 
 
 <details>
-<summary><strong>2. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 11:19:31: 217u
@@ -303,7 +303,7 @@ L'analyse de l'historique récent montre un cycle de commande très régulier d'
 
 
 <details>
-<summary><strong>3. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 11:19:31: 93u
@@ -323,7 +323,7 @@ L'analyse de l'historique récent montre un cycle de commande très régulier d'
 
 
 <details>
-<summary><strong>4. [PF2972] LD FR TARTINADE BIO OLIVE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF2972] LD FR TARTINADE BIO OLIVE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 11:19:31: 31u
@@ -342,7 +342,7 @@ L'analyse de l'historique récent montre un cycle de commande très régulier d'
 
 
 <details>
-<summary><strong>5. [PF2973] LD FR TARTINADE BIO ANANAS 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF2973] LD FR TARTINADE BIO ANANAS 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 11:19:31: 31u
@@ -360,7 +360,7 @@ L'analyse de l'historique récent montre un cycle de commande très régulier d'
 
 
 <details>
-<summary><strong>6. [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-04 13:24:31: 62u
@@ -379,7 +379,7 @@ L'analyse de l'historique récent montre un cycle de commande très régulier d'
 
 
 <details>
-<summary><strong>7. [PF3200] LD FR TARTINADE BIO ASPERGE 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [PF3200] LD FR TARTINADE BIO ASPERGE 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 10:25:37: 31u

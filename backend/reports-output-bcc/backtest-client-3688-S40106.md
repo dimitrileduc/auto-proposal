@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-04 07:46:34: 2u

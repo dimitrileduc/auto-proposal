@@ -118,7 +118,7 @@ La dernière commande remonte au 09/07/2025, soit 95 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:12:47: 1u
@@ -133,7 +133,7 @@ La dernière commande remonte au 09/07/2025, soit 95 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>2. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:12:47: 1u

@@ -89,7 +89,7 @@ La dernière commande remonte au 02/10/2025, soit 25 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 12:35:34: 192u

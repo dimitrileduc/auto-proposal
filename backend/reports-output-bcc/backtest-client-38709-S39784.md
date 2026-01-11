@@ -466,7 +466,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 2u
@@ -483,7 +483,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>2. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 2u
@@ -502,7 +502,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>3. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 2u
@@ -523,7 +523,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 6u
@@ -547,7 +547,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>5. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 1u
@@ -568,7 +568,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>6. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 2u
@@ -591,7 +591,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>7. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 2u
@@ -613,7 +613,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>8. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 08:36:35: 2u
@@ -634,7 +634,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>9. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:47:09: 2u
@@ -653,7 +653,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>10. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:47:09: 2u
@@ -673,7 +673,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>11. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:47:09: 1u
@@ -691,7 +691,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>12. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:59:10: 2u
@@ -709,7 +709,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>13. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:59:10: 1u
@@ -728,7 +728,7 @@ La dernière commande remonte au 11 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>14. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 07:06:03: 2u

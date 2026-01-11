@@ -147,7 +147,7 @@ L'analyse du cycle de commande montre une fréquence irrégulière (allant de 5 
 
 
 <details>
-<summary><strong>1. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 07:19:03: 1u
@@ -166,7 +166,7 @@ L'analyse du cycle de commande montre une fréquence irrégulière (allant de 5 
 
 
 <details>
-<summary><strong>2. [JF073] FIL BOULLETTES SAUCE TOMATE 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF073] FIL BOULLETTES SAUCE TOMATE 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 07:19:03: 8u
@@ -184,7 +184,7 @@ L'analyse du cycle de commande montre une fréquence irrégulière (allant de 5 
 
 
 <details>
-<summary><strong>3. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 07:10:00: 8u

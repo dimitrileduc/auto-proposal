@@ -147,7 +147,7 @@ La dernière commande remonte au 11 septembre 2025, soit 35 jours avant la date 
 
 
 <details>
-<summary><strong>1. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:16:42: 2u
@@ -162,7 +162,7 @@ La dernière commande remonte au 11 septembre 2025, soit 35 jours avant la date 
 
 
 <details>
-<summary><strong>2. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 09:02:01: 2u
@@ -177,7 +177,7 @@ La dernière commande remonte au 11 septembre 2025, soit 35 jours avant la date 
 
 
 <details>
-<summary><strong>3. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 09:02:01: 2u

@@ -89,7 +89,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>1. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

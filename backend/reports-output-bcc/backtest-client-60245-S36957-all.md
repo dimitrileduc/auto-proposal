@@ -263,7 +263,7 @@ La dernière commande remonte au 26 février 2025, soit 83 jours sans activité 
 
 
 <details>
-<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-26 10:44:43: 1u
@@ -278,7 +278,7 @@ La dernière commande remonte au 26 février 2025, soit 83 jours sans activité 
 
 
 <details>
-<summary><strong>2. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-26 10:44:43: 1u
@@ -293,7 +293,7 @@ La dernière commande remonte au 26 février 2025, soit 83 jours sans activité 
 
 
 <details>
-<summary><strong>3. [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-26 10:44:43: 3u
@@ -308,7 +308,7 @@ La dernière commande remonte au 26 février 2025, soit 83 jours sans activité 
 
 
 <details>
-<summary><strong>4. [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-26 10:44:43: 3u
@@ -323,7 +323,7 @@ La dernière commande remonte au 26 février 2025, soit 83 jours sans activité 
 
 
 <details>
-<summary><strong>5. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-26 10:44:43: 3u
@@ -338,7 +338,7 @@ La dernière commande remonte au 26 février 2025, soit 83 jours sans activité 
 
 
 <details>
-<summary><strong>6. [LEA10] LEAMO ginger beer bio 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LEA10] LEAMO ginger beer bio 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-26 10:44:43: 2u
@@ -353,7 +353,7 @@ La dernière commande remonte au 26 février 2025, soit 83 jours sans activité 
 
 
 <details>
-<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-26 10:44:43: 1u

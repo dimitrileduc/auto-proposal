@@ -350,7 +350,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:32:55: 2u
@@ -367,7 +367,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>2. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:32:55: 1u
@@ -383,7 +383,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:32:55: 1u
@@ -400,7 +400,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>4. [LV336] LV BIO Tartinade Tomato Basilico 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV336] LV BIO Tartinade Tomato Basilico 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:32:55: 1u
@@ -417,7 +417,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>5. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:32:55: 1u
@@ -433,7 +433,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>6. [LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV165] LV Vol-au-vent (avec viande de volaille) 400 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:18:49: 1u
@@ -449,7 +449,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:18:49: 2u
@@ -468,7 +468,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>8. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:18:49: 2u
@@ -487,7 +487,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>9. [MF0024] MF KETCHUP 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0024] MF KETCHUP 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:18:49: 1u
@@ -504,7 +504,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 53 jours (entre 
 
 
 <details>
-<summary><strong>10. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:18:49: 2u

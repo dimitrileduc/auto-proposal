@@ -466,7 +466,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:01:26: 2u
@@ -484,7 +484,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:01:26: 2u
@@ -502,7 +502,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:01:26: 2u
@@ -520,7 +520,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:01:26: 1u
@@ -537,7 +537,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>5. [ORG08] ORGANICA crunchy fruit framboise 12g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [ORG08] ORGANICA crunchy fruit framboise 12g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:01:26: 1u
@@ -554,7 +554,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>6. [ORG03] ORGANICA crunchy fruit myrtille 16g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [ORG03] ORGANICA crunchy fruit myrtille 16g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:01:26: 1u
@@ -571,7 +571,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:31:36: 2u
@@ -588,7 +588,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>8. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:31:36: 1u
@@ -604,7 +604,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>9. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:31:36: 2u
@@ -620,7 +620,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>10. [LEA10] LEAMO ginger beer bio 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LEA10] LEAMO ginger beer bio 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:31:36: 2u
@@ -637,7 +637,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>11. [ORG10] ORGANICA crunchy fruit mangue 18g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [ORG10] ORGANICA crunchy fruit mangue 18g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-16 09:26:46: 1u
@@ -652,7 +652,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>12. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-16 09:26:46: 1u
@@ -667,7 +667,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>13. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-16 09:26:46: 1u
@@ -682,7 +682,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>14. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 07:07:39: 1u

@@ -379,7 +379,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 13:48:16: 1u
@@ -395,7 +395,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>2. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 13:48:16: 1u
@@ -413,7 +413,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>3. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 13:48:16: 1u
@@ -429,7 +429,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>4. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 13:48:16: 1u
@@ -446,7 +446,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>5. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 09:24:18: 1u
@@ -461,7 +461,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>6. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 11:30:29: 1u
@@ -476,7 +476,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>7. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 11:30:29: 1u
@@ -492,7 +492,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>8. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 11:30:29: 1u
@@ -508,7 +508,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>9. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 11:30:29: 1u
@@ -523,7 +523,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>10. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 11:30:29: 1u
@@ -540,7 +540,7 @@ La dernière commande remonte au 14 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>11. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 11:30:29: 1u

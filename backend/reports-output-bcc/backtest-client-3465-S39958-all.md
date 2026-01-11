@@ -89,7 +89,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 25 à 30 j
 
 
 <details>
-<summary><strong>1. [PF0162] MOUTARDE JAUNE VRAC</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0162] MOUTARDE JAUNE VRAC</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:12:08: 1800u

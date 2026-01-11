@@ -205,7 +205,7 @@
 
 
 <details>
-<summary><strong>1. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-06 14:56:30: 2u
@@ -221,7 +221,7 @@
 
 
 <details>
-<summary><strong>2. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-06 14:56:30: 1u
@@ -237,7 +237,7 @@
 
 
 <details>
-<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-06 14:56:30: 1u
@@ -253,7 +253,7 @@
 
 
 <details>
-<summary><strong>4. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-06 14:56:30: 2u
@@ -268,7 +268,7 @@
 
 
 <details>
-<summary><strong>5. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-06 14:56:30: 1u

@@ -350,7 +350,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>1. [LV188] LV Tartinade Aubergine  380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV188] LV Tartinade Aubergine  380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:38:08: 2u
@@ -366,7 +366,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>2. [LV138] LV Tartinade Carotte gingembre  380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV138] LV Tartinade Carotte gingembre  380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:38:08: 2u
@@ -381,7 +381,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>3. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:38:08: 4u
@@ -397,7 +397,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>4. [JOY05] Organic Cherry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JOY05] Organic Cherry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 10:58:02: 3u
@@ -412,7 +412,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 10:58:02: 3u
@@ -428,7 +428,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>6. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 10:58:02: 2u
@@ -445,7 +445,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 12:34:42: 5u
@@ -460,7 +460,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>8. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 12:34:42: 5u
@@ -475,7 +475,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>9. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-17 08:19:39: 3u
@@ -491,7 +491,7 @@ L'historique récent montre une consommation régulière de 3 unités avec un in
 
 
 <details>
-<summary><strong>10. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-17 08:19:39: 3u

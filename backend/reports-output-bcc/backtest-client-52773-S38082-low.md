@@ -89,7 +89,7 @@ La dernière commande remonte au 25 mars 2025, soit plus de 110 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-25 07:32:49: 1u

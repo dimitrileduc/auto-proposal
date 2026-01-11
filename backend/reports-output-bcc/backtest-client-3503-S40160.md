@@ -89,7 +89,7 @@ L'analyse du cycle de commande récent montre une fréquence élevée avec des i
 
 
 <details>
-<summary><strong>1. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 08:18:54: 132u

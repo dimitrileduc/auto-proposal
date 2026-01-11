@@ -350,7 +350,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 1u
@@ -368,7 +368,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 2u
@@ -386,7 +386,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 2u
@@ -403,7 +403,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 2u
@@ -421,7 +421,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>5. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 2u
@@ -437,7 +437,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>6. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 1u
@@ -452,7 +452,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>7. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 1u
@@ -467,7 +467,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>8. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 2u
@@ -482,7 +482,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>9. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 2u
@@ -497,7 +497,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours. Bien que 
 
 
 <details>
-<summary><strong>10. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 07:19:54: 2u

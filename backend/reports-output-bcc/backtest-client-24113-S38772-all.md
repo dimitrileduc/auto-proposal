@@ -205,7 +205,7 @@ La dernière commande remonte au 28 mai 2025, soit environ 90 jours sans activit
 
 
 <details>
-<summary><strong>1. [CB005] CB Apple juice 1l</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [CB005] CB Apple juice 1l</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 06:16:13: 3u
@@ -222,7 +222,7 @@ La dernière commande remonte au 28 mai 2025, soit environ 90 jours sans activit
 
 
 <details>
-<summary><strong>2. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 06:16:13: 2u
@@ -237,7 +237,7 @@ La dernière commande remonte au 28 mai 2025, soit environ 90 jours sans activit
 
 
 <details>
-<summary><strong>3. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 06:16:13: 2u
@@ -252,7 +252,7 @@ La dernière commande remonte au 28 mai 2025, soit environ 90 jours sans activit
 
 
 <details>
-<summary><strong>4. [CB006] CB Blackcurrant Apple juice 1l</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [CB006] CB Blackcurrant Apple juice 1l</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:17:25: 4u
@@ -268,7 +268,7 @@ La dernière commande remonte au 28 mai 2025, soit environ 90 jours sans activit
 
 
 <details>
-<summary><strong>5. [MF0059] MF Confi Fraise- Ardbei</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0059] MF Confi Fraise- Ardbei</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:17:25: 2u

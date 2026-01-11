@@ -437,7 +437,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>1. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -454,7 +454,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -471,7 +471,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>3. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 5u
@@ -489,7 +489,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>4. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -507,7 +507,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>5. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -524,7 +524,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 4u
@@ -542,7 +542,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>7. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -560,7 +560,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>8. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -577,7 +577,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>9. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -595,7 +595,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>10. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 12:14:35: 3u
@@ -610,7 +610,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>11. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -627,7 +627,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>12. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -645,7 +645,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>13. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

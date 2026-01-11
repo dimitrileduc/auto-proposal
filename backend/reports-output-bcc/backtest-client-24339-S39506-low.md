@@ -147,7 +147,7 @@ La dernière commande remonte au 03/07/2025, soit environ 90 jours. Bien que la 
 
 
 <details>
-<summary><strong>1. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:07:44: 1u
@@ -162,7 +162,7 @@ La dernière commande remonte au 03/07/2025, soit environ 90 jours. Bien que la 
 
 
 <details>
-<summary><strong>2. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:07:44: 1u
@@ -177,7 +177,7 @@ La dernière commande remonte au 03/07/2025, soit environ 90 jours. Bien que la 
 
 
 <details>
-<summary><strong>3. [LV157] LV Ketchup aux tomates 263 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV157] LV Ketchup aux tomates 263 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-21 06:30:22: 1u

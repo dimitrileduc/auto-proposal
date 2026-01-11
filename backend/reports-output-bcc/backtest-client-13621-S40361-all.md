@@ -89,7 +89,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier (environ
 
 
 <details>
-<summary><strong>1. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-12 14:06:16: 1u

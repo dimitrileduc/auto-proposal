@@ -118,7 +118,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>1. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 12:22:52: 2u
@@ -133,7 +133,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 12:22:52: 1u

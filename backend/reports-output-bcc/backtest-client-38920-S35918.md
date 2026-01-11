@@ -263,7 +263,7 @@ La dernière commande remonte au 03/02/2025, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>1. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-03 09:49:11: 1u
@@ -278,7 +278,7 @@ La dernière commande remonte au 03/02/2025, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>2. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-03 09:49:11: 1u
@@ -293,7 +293,7 @@ La dernière commande remonte au 03/02/2025, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>3. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-03 09:49:11: 1u
@@ -308,7 +308,7 @@ La dernière commande remonte au 03/02/2025, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>4. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-03 09:49:11: 1u
@@ -323,7 +323,7 @@ La dernière commande remonte au 03/02/2025, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-03 09:49:11: 1u
@@ -338,7 +338,7 @@ La dernière commande remonte au 03/02/2025, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>6. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-03 09:49:11: 3u
@@ -353,7 +353,7 @@ La dernière commande remonte au 03/02/2025, soit plus de 60 jours. Bien que l'h
 
 
 <details>
-<summary><strong>7. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-03 09:49:11: 1u

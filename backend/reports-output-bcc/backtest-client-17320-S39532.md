@@ -292,7 +292,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:26:19: 1u
@@ -308,7 +308,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:26:19: 2u
@@ -323,7 +323,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:26:19: 1u
@@ -340,7 +340,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:26:19: 1u
@@ -356,7 +356,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:26:19: 2u
@@ -373,7 +373,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 09:47:34: 1u
@@ -388,7 +388,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 09:47:34: 2u
@@ -404,7 +404,7 @@ La dernière commande remonte au 08/05/2025, soit environ 147 jours. Bien que la
 
 
 <details>
-<summary><strong>8. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 09:47:34: 3u

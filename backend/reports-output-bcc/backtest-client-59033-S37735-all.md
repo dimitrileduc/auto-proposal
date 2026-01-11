@@ -350,7 +350,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -366,7 +366,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -382,7 +382,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -398,7 +398,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>4. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -415,7 +415,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>5. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -432,7 +432,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>6. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -448,7 +448,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>7. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -465,7 +465,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>8. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u
@@ -482,7 +482,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>9. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 2u
@@ -499,7 +499,7 @@ Le cycle de commande moyen est d'environ 70 jours. La dernière commande date du
 
 
 <details>
-<summary><strong>10. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 12:10:47: 1u

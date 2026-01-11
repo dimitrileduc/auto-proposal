@@ -466,7 +466,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 3u
@@ -494,7 +494,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 3u
@@ -520,7 +520,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 3u
@@ -546,7 +546,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>4. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 3u
@@ -561,7 +561,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>5. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 2u
@@ -587,7 +587,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>6. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 1u
@@ -608,7 +608,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>7. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 1u
@@ -629,7 +629,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>8. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 09:45:50: 1u
@@ -650,7 +650,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>9. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 07:04:59: 4u
@@ -669,7 +669,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>10. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 07:04:59: 4u
@@ -688,7 +688,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>11. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:51:02: 2u
@@ -706,7 +706,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>12. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:51:02: 2u
@@ -724,7 +724,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>13. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:51:02: 2u
@@ -742,7 +742,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 45 à 60 j
 
 
 <details>
-<summary><strong>14. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 07:46:41: 3u

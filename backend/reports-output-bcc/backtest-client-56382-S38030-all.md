@@ -582,7 +582,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>1. [LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -598,7 +598,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>2. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -614,7 +614,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>3. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -629,7 +629,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>4. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -644,7 +644,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>5. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -659,7 +659,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>6. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -675,7 +675,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>7. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -691,7 +691,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -707,7 +707,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -723,7 +723,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>10. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -739,7 +739,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>11. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -754,7 +754,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>12. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -769,7 +769,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>13. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -785,7 +785,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>14. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -800,7 +800,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>15. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:36:42: 1u
@@ -816,7 +816,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>16. [LV040] LV Caprons apéritifs 240g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV040] LV Caprons apéritifs 240g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:03:52: 1u
@@ -831,7 +831,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>17. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:03:52: 1u
@@ -846,7 +846,7 @@ La dernière commande remonte à 123 jours (13 mars 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>18. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-13 08:03:52: 1u

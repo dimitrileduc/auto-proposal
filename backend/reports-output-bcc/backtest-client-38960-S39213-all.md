@@ -321,7 +321,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>1. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:55:44: 1u
@@ -337,7 +337,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:55:44: 1u
@@ -353,7 +353,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>3. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:55:44: 1u
@@ -370,7 +370,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>4. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:03:36: 1u
@@ -385,7 +385,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>5. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:03:36: 1u
@@ -400,7 +400,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>6. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:03:36: 1u
@@ -416,7 +416,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>7. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -431,7 +431,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>8. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -446,7 +446,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 60 jou
 
 
 <details>
-<summary><strong>9. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

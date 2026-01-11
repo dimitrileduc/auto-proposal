@@ -321,7 +321,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-15 04:58:48: 1u
@@ -338,7 +338,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-15 04:58:48: 2u
@@ -355,7 +355,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>3. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:35:06: 1u
@@ -371,7 +371,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>4. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:35:06: 2u
@@ -392,7 +392,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>5. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:35:06: 2u
@@ -414,7 +414,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>6. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:35:06: 1u
@@ -434,7 +434,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>7. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:27:39: 1u
@@ -449,7 +449,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>8. [LV336] LV BIO Tartinade Tomato Basilico 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV336] LV BIO Tartinade Tomato Basilico 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:27:39: 1u
@@ -465,7 +465,7 @@ L'analyse de l'historique montre une rotation lente mais régulière avec un cyc
 
 
 <details>
-<summary><strong>9. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-08 06:24:57: 2u

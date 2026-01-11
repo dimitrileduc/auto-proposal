@@ -176,7 +176,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 26
 
 
 <details>
-<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:15:18: 10u
@@ -195,7 +195,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 26
 
 
 <details>
-<summary><strong>2. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:15:18: 10u
@@ -213,7 +213,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 26
 
 
 <details>
-<summary><strong>3. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:15:18: 12u
@@ -232,7 +232,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 26
 
 
 <details>
-<summary><strong>4. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:40:57: 8u

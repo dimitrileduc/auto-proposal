@@ -524,7 +524,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 1u
@@ -543,7 +543,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 1u
@@ -560,7 +560,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 2u
@@ -580,7 +580,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 2u
@@ -596,7 +596,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 2u
@@ -615,7 +615,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>6. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 1u
@@ -632,7 +632,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>7. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 1u
@@ -650,7 +650,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 1u
@@ -669,7 +669,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>9. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 3u
@@ -685,7 +685,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>10. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 3u
@@ -702,7 +702,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>11. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:17:36: 12u
@@ -718,7 +718,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>12. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:27:28: 2u
@@ -736,7 +736,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>13. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 07:27:28: 2u
@@ -754,7 +754,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>14. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 07:38:11: 2u
@@ -770,7 +770,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>15. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 07:38:11: 4u
@@ -785,7 +785,7 @@ L'analyse montre une rotation très faible et irrégulière avec une dernière c
 
 
 <details>
-<summary><strong>16. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 07:38:11: 2u

@@ -118,7 +118,7 @@ L'analyse montre une rotation très faible et irrégulière, avec une dernière 
 
 
 <details>
-<summary><strong>1. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 10:39:02: 4u
@@ -133,7 +133,7 @@ L'analyse montre une rotation très faible et irrégulière, avec une dernière 
 
 
 <details>
-<summary><strong>2. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 10:39:02: 2u

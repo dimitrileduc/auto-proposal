@@ -234,7 +234,7 @@ Absence de commandes récentes sur ce produit à rotation très faible. L'histor
 
 
 <details>
-<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:57:31: 4u
@@ -251,7 +251,7 @@ Absence de commandes récentes sur ce produit à rotation très faible. L'histor
 
 
 <details>
-<summary><strong>2. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:57:31: 3u
@@ -267,7 +267,7 @@ Absence de commandes récentes sur ce produit à rotation très faible. L'histor
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:57:31: 1u
@@ -284,7 +284,7 @@ Absence de commandes récentes sur ce produit à rotation très faible. L'histor
 
 
 <details>
-<summary><strong>4. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-11 08:59:01: 3u
@@ -300,7 +300,7 @@ Absence de commandes récentes sur ce produit à rotation très faible. L'histor
 
 
 <details>
-<summary><strong>5. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-11 08:59:01: 2u
@@ -316,7 +316,7 @@ Absence de commandes récentes sur ce produit à rotation très faible. L'histor
 
 
 <details>
-<summary><strong>6. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

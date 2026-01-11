@@ -292,7 +292,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>1. [LV140] LV Moutarde à l'ancienne  200ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV140] LV Moutarde à l'ancienne  200ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 09:44:15: 3u
@@ -316,7 +316,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 09:44:15: 4u
@@ -347,7 +347,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-23 09:44:15: 12u
@@ -377,7 +377,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>4. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-03 08:03:20: 2u
@@ -395,7 +395,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>5. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-03 08:03:20: 2u
@@ -412,7 +412,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>6. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-03 08:03:20: 6u
@@ -432,7 +432,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>7. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-03 08:03:20: 4u
@@ -461,7 +461,7 @@ La dernière commande remonte au 23 juillet 2025, soit plus de 110 jours. Bien q
 
 
 <details>
-<summary><strong>8. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-23 10:06:55: 4u

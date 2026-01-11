@@ -408,7 +408,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 1u
@@ -429,7 +429,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [KOKO01] KOKO Kombucha original 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [KOKO01] KOKO Kombucha original 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 2u
@@ -449,7 +449,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 2u
@@ -470,7 +470,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 3u
@@ -491,7 +491,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 2u
@@ -512,7 +512,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 2u
@@ -532,7 +532,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 1u
@@ -552,7 +552,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:39: 1u
@@ -573,7 +573,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>9. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 13:05:32: 1u
@@ -590,7 +590,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>10. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:56:39: 1u
@@ -606,7 +606,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>11. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:56:39: 1u
@@ -622,7 +622,7 @@ L'analyse du cycle de commande montre un intervalle de 71 jours entre les deux d
 
 
 <details>
-<summary><strong>12. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-12 12:02:43: 1u

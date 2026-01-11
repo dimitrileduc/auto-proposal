@@ -89,7 +89,7 @@ La dernière commande remonte à 61 jours (21 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 1u

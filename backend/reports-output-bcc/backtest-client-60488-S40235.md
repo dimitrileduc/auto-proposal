@@ -118,7 +118,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 28 jours 
 
 
 <details>
-<summary><strong>1. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-29 14:49:41: 5u
@@ -138,7 +138,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 28 jours 
 
 
 <details>
-<summary><strong>2. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-29 14:49:41: 5u

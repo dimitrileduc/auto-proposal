@@ -118,7 +118,7 @@ La dernière commande remonte au 07/10/2025, soit 28 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-07 09:01:45: 96u
@@ -146,7 +146,7 @@ La dernière commande remonte au 07/10/2025, soit 28 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [PF3328] DELUXE MIX SAUCES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF3328] DELUXE MIX SAUCES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-07 09:01:45: 288u

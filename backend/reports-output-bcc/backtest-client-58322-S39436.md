@@ -263,7 +263,7 @@ Le produit présente une rotation très faible et irrégulière avec un interval
 
 
 <details>
-<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:57:42: 2u
@@ -280,7 +280,7 @@ Le produit présente une rotation très faible et irrégulière avec un interval
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:57:42: 2u
@@ -297,7 +297,7 @@ Le produit présente une rotation très faible et irrégulière avec un interval
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:57:42: 2u
@@ -313,7 +313,7 @@ Le produit présente une rotation très faible et irrégulière avec un interval
 
 
 <details>
-<summary><strong>4. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:57:42: 1u
@@ -328,7 +328,7 @@ Le produit présente une rotation très faible et irrégulière avec un interval
 
 
 <details>
-<summary><strong>5. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 07:11:45: 1u
@@ -343,7 +343,7 @@ Le produit présente une rotation très faible et irrégulière avec un interval
 
 
 <details>
-<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 07:11:45: 1u
@@ -359,7 +359,7 @@ Le produit présente une rotation très faible et irrégulière avec un interval
 
 
 <details>
-<summary><strong>7. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 09:49:02: 1u

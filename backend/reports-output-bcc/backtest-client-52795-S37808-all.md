@@ -176,7 +176,7 @@ La dernière commande remonte à plus de 100 jours (25 mars), ce qui dépasse la
 
 
 <details>
-<summary><strong>1. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-25 14:48:41: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte à plus de 100 jours (25 mars), ce qui dépasse la
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-25 14:48:41: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte à plus de 100 jours (25 mars), ce qui dépasse la
 
 
 <details>
-<summary><strong>3. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-25 14:48:41: 1u
@@ -222,7 +222,7 @@ La dernière commande remonte à plus de 100 jours (25 mars), ce qui dépasse la
 
 
 <details>
-<summary><strong>4. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-25 14:48:41: 1u

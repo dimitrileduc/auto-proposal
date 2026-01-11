@@ -147,7 +147,7 @@
 
 
 <details>
-<summary><strong>1. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -162,7 +162,7 @@
 
 
 <details>
-<summary><strong>2. [FIL19] FIL VOL AU VENT 400G BOCAL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [FIL19] FIL VOL AU VENT 400G BOCAL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -177,7 +177,7 @@
 
 
 <details>
-<summary><strong>3. [JF066] FIL MOUTARDE 300G BOCAL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF066] FIL MOUTARDE 300G BOCAL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u

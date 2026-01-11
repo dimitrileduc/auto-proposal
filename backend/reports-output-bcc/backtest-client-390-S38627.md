@@ -205,7 +205,7 @@ La dernière commande remonte au 22 mai 2025, soit environ 89 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 06:27:25: 2u
@@ -221,7 +221,7 @@ La dernière commande remonte au 22 mai 2025, soit environ 89 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-22 06:33:51: 1u
@@ -236,7 +236,7 @@ La dernière commande remonte au 22 mai 2025, soit environ 89 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-22 06:33:51: 1u
@@ -251,7 +251,7 @@ La dernière commande remonte au 22 mai 2025, soit environ 89 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-22 06:33:51: 1u
@@ -266,7 +266,7 @@ La dernière commande remonte au 22 mai 2025, soit environ 89 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-22 06:33:51: 1u

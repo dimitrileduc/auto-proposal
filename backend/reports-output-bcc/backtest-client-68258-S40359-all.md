@@ -292,7 +292,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>1. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-12 11:57:26: 1u
@@ -314,7 +314,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>2. [JOY05] Organic Cherry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JOY05] Organic Cherry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-12 11:57:26: 1u
@@ -335,7 +335,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>3. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-12 11:57:26: 1u
@@ -354,7 +354,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>4. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-12 11:57:26: 4u
@@ -374,7 +374,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-12 11:57:26: 4u
@@ -396,7 +396,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>6. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-17 10:21:30: 2u
@@ -417,7 +417,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>7. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 12:49:59: 2u
@@ -435,7 +435,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>8. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-12 12:57:02: 5u

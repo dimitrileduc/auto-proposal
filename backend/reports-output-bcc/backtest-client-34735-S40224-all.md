@@ -408,7 +408,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -423,7 +423,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [RF003] REFIELD Maïs 500G </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RF003] REFIELD Maïs 500G </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -438,7 +438,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -453,7 +453,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -468,7 +468,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -483,7 +483,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -499,7 +499,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>7. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -515,7 +515,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>8. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -531,7 +531,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>9. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -547,7 +547,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>10. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -562,7 +562,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>11. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -577,7 +577,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>12. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u

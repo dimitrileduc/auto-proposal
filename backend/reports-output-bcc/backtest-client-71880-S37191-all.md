@@ -147,7 +147,7 @@ La dernière commande remonte au 08/04/2025, soit 55 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 12:54:24: 4u
@@ -162,7 +162,7 @@ La dernière commande remonte au 08/04/2025, soit 55 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 12:54:24: 4u
@@ -177,7 +177,7 @@ La dernière commande remonte au 08/04/2025, soit 55 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 12:54:24: 4u

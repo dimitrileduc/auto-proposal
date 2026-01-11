@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 07:11:31: 1u

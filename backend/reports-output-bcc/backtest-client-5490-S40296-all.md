@@ -466,7 +466,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>1. [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 434u
@@ -499,7 +499,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>2. [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 31u
@@ -532,7 +532,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>3. [PF1690] LD BBQ BIO 300G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1690] LD BBQ BIO 300G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 25u
@@ -565,7 +565,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>4. [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 50u
@@ -598,7 +598,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>5. [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 40u
@@ -631,7 +631,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>6. [PF1693] LD FR TARTINAD BIO CAROTTE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [PF1693] LD FR TARTINAD BIO CAROTTE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 434u
@@ -664,7 +664,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>7. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 434u
@@ -697,7 +697,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>8. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 434u
@@ -730,7 +730,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>9. [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 868u
@@ -763,7 +763,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>10. [PF2973] LD FR TARTINADE BIO ANANAS 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [PF2973] LD FR TARTINADE BIO ANANAS 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 93u
@@ -796,7 +796,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>11. [PF2937] LD FR TARTINADE BIO POIS 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [PF2937] LD FR TARTINADE BIO POIS 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 93u
@@ -829,7 +829,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>12. [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 31u
@@ -862,7 +862,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>13. [PF3361] LD FR TARTINADE BIO OIGNON 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [PF3361] LD FR TARTINADE BIO OIGNON 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:44:50: 93u
@@ -884,7 +884,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier environ 
 
 
 <details>
-<summary><strong>14. [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-07 12:37:21: 40u

@@ -176,7 +176,7 @@ La dernière commande remonte au 20 juin 2025, soit plus de 70 jours sans réapp
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 07:48:54: 1u
@@ -193,7 +193,7 @@ La dernière commande remonte au 20 juin 2025, soit plus de 70 jours sans réapp
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 07:48:54: 1u
@@ -209,7 +209,7 @@ La dernière commande remonte au 20 juin 2025, soit plus de 70 jours sans réapp
 
 
 <details>
-<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 07:48:54: 1u
@@ -225,7 +225,7 @@ La dernière commande remonte au 20 juin 2025, soit plus de 70 jours sans réapp
 
 
 <details>
-<summary><strong>4. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 07:48:54: 1u

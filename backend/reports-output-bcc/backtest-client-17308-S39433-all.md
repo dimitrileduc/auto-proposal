@@ -321,7 +321,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:16:22: 6u
@@ -338,7 +338,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:16:22: 1u
@@ -354,7 +354,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>3. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:16:22: 1u
@@ -370,24 +370,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>4. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-07-09 11:16:22: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- 2024-08-13 06:23:03: 1u
-- 2024-06-13 07:08:47: 1u
-- 2024-03-19 12:20:40: 1u
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:16:22: 1u
@@ -404,7 +387,24 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-07-09 11:16:22: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- 2024-08-13 06:23:03: 1u
+- 2024-06-13 07:08:47: 1u
+- 2024-03-19 12:20:40: 1u
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:16:22: 1u
@@ -420,7 +420,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>7. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -437,7 +437,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>8. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -453,7 +453,7 @@ Aucune commande récente n'est enregistrée, mais l'historique de l'année préc
 
 
 <details>
-<summary><strong>9. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

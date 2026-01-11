@@ -205,7 +205,7 @@ La dernière commande remonte au 12 août 2025, soit 71 jours avant la date actu
 
 
 <details>
-<summary><strong>1. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-12 09:56:21: 5u
@@ -220,7 +220,7 @@ La dernière commande remonte au 12 août 2025, soit 71 jours avant la date actu
 
 
 <details>
-<summary><strong>2. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-12 09:56:21: 5u
@@ -235,7 +235,7 @@ La dernière commande remonte au 12 août 2025, soit 71 jours avant la date actu
 
 
 <details>
-<summary><strong>3. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-12 09:56:21: 3u
@@ -250,7 +250,7 @@ La dernière commande remonte au 12 août 2025, soit 71 jours avant la date actu
 
 
 <details>
-<summary><strong>4. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-12 09:56:21: 5u
@@ -265,7 +265,7 @@ La dernière commande remonte au 12 août 2025, soit 71 jours avant la date actu
 
 
 <details>
-<summary><strong>5. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-12 09:56:21: 4u

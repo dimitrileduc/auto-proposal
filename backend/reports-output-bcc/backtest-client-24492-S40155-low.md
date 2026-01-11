@@ -89,7 +89,7 @@ La dernière commande remonte au 01/10/2025, soit il y a 35 jours. Avec un seuil
 
 
 <details>
-<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:20:22: 2u

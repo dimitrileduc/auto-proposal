@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-28 08:22:31: 1u

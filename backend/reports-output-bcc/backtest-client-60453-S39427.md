@@ -292,7 +292,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:07:25: 2u
@@ -310,7 +310,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:07:25: 1u
@@ -329,7 +329,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:07:25: 1u
@@ -347,7 +347,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 07:38:48: 2u
@@ -363,7 +363,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>5. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 07:38:48: 1u
@@ -380,7 +380,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>6. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-10 07:08:38: 1u
@@ -396,7 +396,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>7. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-10 07:08:38: 2u
@@ -412,7 +412,7 @@ L'analyse du cycle de commande montre un intervalle de 58 jours entre les deux d
 
 
 <details>
-<summary><strong>8. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-10 07:08:38: 2u

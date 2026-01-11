@@ -89,7 +89,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>1. [LV189] LV Tartinade Houmous Type 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV189] LV Tartinade Houmous Type 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 10:11:33: 75u

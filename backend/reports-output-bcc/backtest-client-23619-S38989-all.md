@@ -408,7 +408,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:40:00: 3u
@@ -425,7 +425,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>2. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:40:00: 1u
@@ -442,7 +442,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:40:00: 2u
@@ -461,7 +461,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:40:00: 2u
@@ -479,7 +479,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:40:00: 3u
@@ -496,7 +496,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>6. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 08:40:00: 1u
@@ -512,7 +512,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>7. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:33:24: 1u
@@ -527,7 +527,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>8. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:33:24: 1u
@@ -542,7 +542,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:33:24: 2u
@@ -559,7 +559,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>10. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:33:24: 1u
@@ -576,7 +576,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>11. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:33:24: 2u
@@ -593,7 +593,7 @@ L'analyse de l'historique montre une rotation lente et irrégulière avec un cyc
 
 
 <details>
-<summary><strong>12. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:33:24: 4u

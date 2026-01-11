@@ -466,7 +466,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 1u
@@ -482,7 +482,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 1u
@@ -498,7 +498,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 1u
@@ -518,7 +518,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>4. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 1u
@@ -533,7 +533,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>5. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 1u
@@ -548,7 +548,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>6. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 2u
@@ -563,23 +563,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>7. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-06-20 11:17:52: 2u
-- 2025-05-06 10:28:07: 2u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 2u
-**Quantite Reelle**: 3u
-
-</details>
-
-
-<details>
-<summary><strong>8. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 2u
@@ -595,7 +579,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>9. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 11:17:52: 2u
@@ -611,7 +595,23 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>10. [CB001] CB Apple juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-06-20 11:17:52: 2u
+- 2025-05-06 10:28:07: 2u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 2u
+**Quantite Reelle**: 3u
+
+</details>
+
+
+<details>
+<summary><strong>10. [CB001] CB Apple juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 10:28:07: 1u
@@ -626,7 +626,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>11. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 10:28:07: 2u
@@ -645,7 +645,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>12. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 10:28:07: 1u
@@ -663,7 +663,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>13. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 10:28:07: 2u
@@ -681,7 +681,7 @@ La dernière commande remonte à plus de 120 jours (06/05/2025), ce qui dépasse
 
 
 <details>
-<summary><strong>14. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 10:28:07: 1u

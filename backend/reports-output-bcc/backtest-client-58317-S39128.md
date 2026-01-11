@@ -147,7 +147,7 @@ La dernière commande remonte au 12 juin 2025, soit 91 jours sans activité pour
 
 
 <details>
-<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-12 12:24:26: 1u
@@ -162,7 +162,7 @@ La dernière commande remonte au 12 juin 2025, soit 91 jours sans activité pour
 
 
 <details>
-<summary><strong>2. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-12 12:24:26: 1u
@@ -177,7 +177,7 @@ La dernière commande remonte au 12 juin 2025, soit 91 jours sans activité pour
 
 
 <details>
-<summary><strong>3. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-12 12:24:26: 1u

@@ -147,7 +147,7 @@ L'analyse du cycle de commande récent montre une fréquence d'environ 60 à 70 
 
 
 <details>
-<summary><strong>1. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:21:21: 56u
@@ -168,7 +168,7 @@ L'analyse du cycle de commande récent montre une fréquence d'environ 60 à 70 
 
 
 <details>
-<summary><strong>2. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:21:21: 56u
@@ -189,7 +189,7 @@ L'analyse du cycle de commande récent montre une fréquence d'environ 60 à 70 
 
 
 <details>
-<summary><strong>3. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 14:21:21: 56u

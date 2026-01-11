@@ -263,7 +263,7 @@ La dernière commande remonte au 05/08/2025, soit 91 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>1. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:27:58: 4u
@@ -279,7 +279,7 @@ La dernière commande remonte au 05/08/2025, soit 91 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:27:58: 1u
@@ -295,7 +295,7 @@ La dernière commande remonte au 05/08/2025, soit 91 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>3. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:27:58: 1u
@@ -311,7 +311,7 @@ La dernière commande remonte au 05/08/2025, soit 91 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>4. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:27:58: 1u
@@ -327,7 +327,7 @@ La dernière commande remonte au 05/08/2025, soit 91 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>5. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:27:58: 1u
@@ -343,7 +343,7 @@ La dernière commande remonte au 05/08/2025, soit 91 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>6. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:27:58: 1u
@@ -358,7 +358,7 @@ La dernière commande remonte au 05/08/2025, soit 91 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-07 09:20:33: 2u

@@ -147,7 +147,7 @@ La dernière commande remonte au 02/10/2025, soit plus de 40 jours. Bien que l'h
 
 
 <details>
-<summary><strong>1. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:11:26: 3u
@@ -163,7 +163,7 @@ La dernière commande remonte au 02/10/2025, soit plus de 40 jours. Bien que l'h
 
 
 <details>
-<summary><strong>2. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:11:26: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte au 02/10/2025, soit plus de 40 jours. Bien que l'h
 
 
 <details>
-<summary><strong>3. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:11:26: 1u

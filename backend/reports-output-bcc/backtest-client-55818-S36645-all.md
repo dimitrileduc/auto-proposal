@@ -379,7 +379,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>1. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 2u
@@ -395,7 +395,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>2. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 1u
@@ -412,7 +412,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 2u
@@ -427,7 +427,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 1u
@@ -443,7 +443,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>5. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 2u
@@ -458,7 +458,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 2u
@@ -474,7 +474,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>7. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 1u
@@ -489,7 +489,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>8. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 1u
@@ -504,7 +504,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 11:25:25: 2u
@@ -520,7 +520,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>10. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-16 13:39:37: 1u
@@ -535,7 +535,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>11. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-16 13:39:37: 2u

@@ -118,7 +118,7 @@ L'analyse de l'historique montre un besoin critique à cette période de l'anné
 
 
 <details>
-<summary><strong>1. [PF1049] FILOU/LD SAUCE CHEESY 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1049] FILOU/LD SAUCE CHEESY 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-07 07:12:45: 360u
@@ -140,7 +140,7 @@ L'analyse de l'historique montre un besoin critique à cette période de l'anné
 
 
 <details>
-<summary><strong>2. [PF1122] FILOU/ LD SAUCE BBQ 3 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1122] FILOU/ LD SAUCE BBQ 3 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-07 07:12:45: 480u

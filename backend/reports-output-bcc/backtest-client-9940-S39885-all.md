@@ -379,7 +379,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:26:24: 2u
@@ -396,7 +396,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:26:24: 1u
@@ -413,7 +413,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>3. [MF0012] MF Olives Mix 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0012] MF Olives Mix 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:26:24: 1u
@@ -431,7 +431,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>4. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:26:24: 1u
@@ -450,7 +450,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:26:24: 1u
@@ -469,7 +469,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>6. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:26:24: 1u
@@ -484,7 +484,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>7. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 08:32:36: 2u
@@ -503,7 +503,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>8. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 08:32:36: 0u
@@ -518,7 +518,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>9. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-17 06:40:09: 1u
@@ -534,7 +534,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>10. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-17 06:40:09: 1u
@@ -549,7 +549,7 @@ La dernière commande remonte au 17 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>11. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

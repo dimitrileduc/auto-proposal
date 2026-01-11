@@ -205,7 +205,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>1. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 12:00:13: 3u
@@ -221,7 +221,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>2. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 12:00:13: 3u
@@ -237,7 +237,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>3. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 12:00:13: 2u
@@ -253,7 +253,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>4. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 11:59:43: 2u
@@ -268,7 +268,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande ef
 
 
 <details>
-<summary><strong>5. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-08 09:40:39: 4u

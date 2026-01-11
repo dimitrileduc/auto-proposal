@@ -292,7 +292,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 12:21:02: 2u
@@ -309,7 +309,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 12:21:02: 1u
@@ -328,7 +328,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>3. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 12:21:02: 4u
@@ -345,7 +345,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>4. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 12:21:02: 4u
@@ -362,7 +362,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>5. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:44:29: 1u
@@ -380,7 +380,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>6. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:44:29: 1u
@@ -396,7 +396,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>7. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:44:29: 2u
@@ -414,7 +414,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:44:29: 2u

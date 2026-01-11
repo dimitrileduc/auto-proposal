@@ -495,7 +495,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 2u
@@ -510,7 +510,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>2. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 2u
@@ -525,7 +525,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>3. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 2u
@@ -540,7 +540,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>4. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -555,7 +555,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -570,7 +570,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>6. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 2u
@@ -585,7 +585,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -600,7 +600,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>8. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -615,7 +615,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>9. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -630,7 +630,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>10. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -645,7 +645,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -660,7 +660,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -675,7 +675,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>13. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -690,7 +690,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>14. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u
@@ -705,7 +705,7 @@ La dernière commande remonte à plus de 130 jours (10 avril), ce qui dépasse l
 
 
 <details>
-<summary><strong>15. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-10 07:01:06: 1u

@@ -89,7 +89,7 @@ La dernière commande remonte au 19 novembre 2024, soit 48 jours. Bien que l'his
 
 
 <details>
-<summary><strong>1. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-19 08:04:06: 1u

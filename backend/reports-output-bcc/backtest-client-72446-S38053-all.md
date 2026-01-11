@@ -205,7 +205,7 @@ La dernière commande remonte au 08/05/2025, soit 66 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [LEA10] LEAMO ginger beer bio 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LEA10] LEAMO ginger beer bio 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:27:20: 1u
@@ -220,7 +220,7 @@ La dernière commande remonte au 08/05/2025, soit 66 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:27:20: 3u
@@ -235,7 +235,7 @@ La dernière commande remonte au 08/05/2025, soit 66 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:27:20: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte au 08/05/2025, soit 66 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:27:20: 1u
@@ -265,7 +265,7 @@ La dernière commande remonte au 08/05/2025, soit 66 jours avant la date actuell
 
 
 <details>
-<summary><strong>5. [WIG06] WIGNAC cidre naturel bio sans alcool 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [WIG06] WIGNAC cidre naturel bio sans alcool 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:27:20: 5u

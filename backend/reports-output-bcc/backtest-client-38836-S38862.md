@@ -437,7 +437,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 12:09:03: 1u
@@ -453,7 +453,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 12:09:03: 1u
@@ -468,23 +468,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-07-03 12:09:03: 1u
-- 2025-05-08 06:50:48: 2u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>4. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 12:09:03: 1u
@@ -500,7 +484,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 12:09:03: 1u
@@ -516,7 +500,23 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-07-03 12:09:03: 1u
+- 2025-05-08 06:50:48: 2u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>6. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 12:09:03: 1u
@@ -532,7 +532,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>7. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:50:48: 1u
@@ -547,7 +547,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>8. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:50:48: 2u
@@ -562,7 +562,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>9. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:50:48: 2u
@@ -577,7 +577,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>10. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:50:48: 2u
@@ -592,7 +592,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>11. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:50:48: 1u
@@ -607,7 +607,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>12. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:50:48: 2u
@@ -622,7 +622,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>13. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:50:48: 3u

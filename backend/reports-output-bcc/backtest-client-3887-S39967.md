@@ -89,7 +89,7 @@ La dernière commande remonte au 03/09/2025, soit 54 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0516] YVALLI PROVENCALE 2,5 KG BOC</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 09:41:02: 12u

@@ -234,7 +234,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 34 jours ent
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 07:20:23: 12u
@@ -251,7 +251,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 34 jours ent
 
 
 <details>
-<summary><strong>2. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 07:20:23: 12u
@@ -268,7 +268,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 34 jours ent
 
 
 <details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 07:20:23: 12u
@@ -285,7 +285,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 34 jours ent
 
 
 <details>
-<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 07:20:23: 4u
@@ -302,7 +302,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 34 jours ent
 
 
 <details>
-<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 07:20:23: 4u
@@ -319,7 +319,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 34 jours ent
 
 
 <details>
-<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 07:20:23: 4u

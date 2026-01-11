@@ -176,7 +176,7 @@ La dernière commande remonte au 05/05/2025, soit 62 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:21:59: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte au 05/05/2025, soit 62 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:21:59: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte au 05/05/2025, soit 62 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [LV040] LV Caprons apéritifs 240g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV040] LV Caprons apéritifs 240g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:21:59: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte au 05/05/2025, soit 62 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-03 09:43:30: 1u

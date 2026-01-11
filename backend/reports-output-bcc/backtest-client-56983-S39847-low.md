@@ -89,7 +89,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:45:23: 1u

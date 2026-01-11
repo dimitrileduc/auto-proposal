@@ -147,7 +147,7 @@ L'analyse du cycle de commande montre des intervalles réguliers d'environ 30 à
 
 
 <details>
-<summary><strong>1. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 12:25:13: 30u
@@ -164,7 +164,7 @@ L'analyse du cycle de commande montre des intervalles réguliers d'environ 30 à
 
 
 <details>
-<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 12:25:13: 20u
@@ -183,7 +183,7 @@ L'analyse du cycle de commande montre des intervalles réguliers d'environ 30 à
 
 
 <details>
-<summary><strong>3. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 08:44:07: 20u

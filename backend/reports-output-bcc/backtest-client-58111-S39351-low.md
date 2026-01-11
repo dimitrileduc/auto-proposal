@@ -147,7 +147,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>1. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -162,7 +162,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>2. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 2u
@@ -177,7 +177,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>3. [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u

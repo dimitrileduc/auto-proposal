@@ -263,7 +263,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 j
 
 
 <details>
-<summary><strong>1. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 07:16:30: 1u
@@ -278,7 +278,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 j
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 06:18:58: 1u
@@ -295,7 +295,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 j
 
 
 <details>
-<summary><strong>3. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 06:18:58: 1u
@@ -310,7 +310,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 j
 
 
 <details>
-<summary><strong>4. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-26 06:18:58: 1u
@@ -325,7 +325,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 j
 
 
 <details>
-<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:08:16: 1u
@@ -341,7 +341,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 j
 
 
 <details>
-<summary><strong>6. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 10:08:16: 1u
@@ -358,7 +358,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 j
 
 
 <details>
-<summary><strong>7. [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 13:24:23: 1u

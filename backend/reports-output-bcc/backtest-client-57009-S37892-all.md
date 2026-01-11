@@ -234,7 +234,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>1. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -249,7 +249,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -264,7 +264,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>3. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -279,7 +279,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>4. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF071] FIL CARBONNADES 800G BOCAL </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -294,7 +294,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>5. [FIL19] FIL VOL AU VENT 400G BOCAL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [FIL19] FIL VOL AU VENT 400G BOCAL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -309,7 +309,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>6. [JF066] FIL MOUTARDE 300G BOCAL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF066] FIL MOUTARDE 300G BOCAL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u

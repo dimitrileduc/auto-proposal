@@ -234,7 +234,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 20 jours
 
 
 <details>
-<summary><strong>1. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-29 07:03:47: 2u
@@ -251,7 +251,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 20 jours
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-29 07:03:47: 1u
@@ -267,7 +267,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 20 jours
 
 
 <details>
-<summary><strong>3. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-29 07:03:47: 1u
@@ -283,7 +283,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 20 jours
 
 
 <details>
-<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:15:22: 2u
@@ -299,7 +299,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 20 jours
 
 
 <details>
-<summary><strong>5. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:15:22: 2u
@@ -315,7 +315,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 20 jours
 
 
 <details>
-<summary><strong>6. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:15:22: 2u

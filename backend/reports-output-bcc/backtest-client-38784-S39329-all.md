@@ -147,7 +147,7 @@ La dernière commande remonte au 15 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:52:54: 1u
@@ -168,7 +168,7 @@ La dernière commande remonte au 15 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-15 08:39:14: 2u
@@ -188,7 +188,7 @@ La dernière commande remonte au 15 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>3. [JF048] JF DISPLAY SAUCES 250ML </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF048] JF DISPLAY SAUCES 250ML </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:55:44: 1u

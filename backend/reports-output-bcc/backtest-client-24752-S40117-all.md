@@ -176,7 +176,7 @@ La dernière commande remonte au 22 août 2025, soit 73 jours avant la date actu
 
 
 <details>
-<summary><strong>1. [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:51:37: 10u
@@ -193,7 +193,7 @@ La dernière commande remonte au 22 août 2025, soit 73 jours avant la date actu
 
 
 <details>
-<summary><strong>2. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:51:37: 10u
@@ -215,7 +215,7 @@ La dernière commande remonte au 22 août 2025, soit 73 jours avant la date actu
 
 
 <details>
-<summary><strong>3. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:51:37: 10u
@@ -235,7 +235,7 @@ La dernière commande remonte au 22 août 2025, soit 73 jours avant la date actu
 
 
 <details>
-<summary><strong>4. [PF3200] LD FR TARTINADE BIO ASPERGE 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF3200] LD FR TARTINADE BIO ASPERGE 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:51:37: 10u

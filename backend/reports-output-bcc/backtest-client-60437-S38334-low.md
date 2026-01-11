@@ -118,7 +118,7 @@ La dernière commande remonte au 28 avril 2025, soit environ 98 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [MF0014] MF Olives noires 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0014] MF Olives noires 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-28 08:28:02: 1u
@@ -133,7 +133,7 @@ La dernière commande remonte au 28 avril 2025, soit environ 98 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

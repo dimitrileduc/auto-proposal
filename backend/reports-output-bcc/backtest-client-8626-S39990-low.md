@@ -176,7 +176,7 @@ La dernière commande remonte à 119 jours (01/07/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>1. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 12:05:24: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte à 119 jours (01/07/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>2. [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [UPI03] Jus de pomme-poire bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 12:05:24: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte à 119 jours (01/07/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>3. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-01 12:05:24: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte à 119 jours (01/07/2025). Bien que la rotation so
 
 
 <details>
-<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

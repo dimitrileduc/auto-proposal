@@ -205,7 +205,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 35 à
 
 
 <details>
-<summary><strong>1. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-06 12:41:19: 1u
@@ -221,7 +221,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 35 à
 
 
 <details>
-<summary><strong>2. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-06 12:41:19: 2u
@@ -240,7 +240,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 35 à
 
 
 <details>
-<summary><strong>3. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:25:55: 3u
@@ -257,7 +257,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 35 à
 
 
 <details>
-<summary><strong>4. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:25:55: 3u
@@ -274,7 +274,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 35 à
 
 
 <details>
-<summary><strong>5. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:25:55: 1u

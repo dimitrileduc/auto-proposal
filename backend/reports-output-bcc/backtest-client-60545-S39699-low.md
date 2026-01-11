@@ -89,7 +89,7 @@ La dernière commande remonte au 16 juillet 2025, soit il y a environ 91 jours. 
 
 
 <details>
-<summary><strong>1. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-16 09:26:46: 1u

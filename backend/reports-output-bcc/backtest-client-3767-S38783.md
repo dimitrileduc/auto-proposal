@@ -118,7 +118,7 @@ La dernière commande remonte au 23 mai 2025, soit plus de 90 jours sans activit
 
 
 <details>
-<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 11:29:06: 10u
@@ -134,7 +134,7 @@ La dernière commande remonte au 23 mai 2025, soit plus de 90 jours sans activit
 
 
 <details>
-<summary><strong>2. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 11:29:06: 5u

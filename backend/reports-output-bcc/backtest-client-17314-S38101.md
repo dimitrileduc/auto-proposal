@@ -118,7 +118,7 @@ La dernière commande remonte au 19 juin, soit il y a 26 jours. Bien que le cycl
 
 
 <details>
-<summary><strong>1. [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 06:40:50: 192u
@@ -135,7 +135,7 @@ La dernière commande remonte au 19 juin, soit il y a 26 jours. Bien que le cycl
 
 
 <details>
-<summary><strong>2. [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF3225] CARREFOUR CARBONNADES 680 GR PAR 8</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 06:40:50: 108u

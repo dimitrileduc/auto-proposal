@@ -176,7 +176,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte au 05/09/2025, soit 69 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 11:54:33: 1u

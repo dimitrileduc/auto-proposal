@@ -147,7 +147,7 @@ La dernière commande remonte au 07/08/2025, soit 96 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>1. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 14:23:24: 1u
@@ -162,7 +162,7 @@ La dernière commande remonte au 07/08/2025, soit 96 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 09:06:40: 3u
@@ -177,7 +177,7 @@ La dernière commande remonte au 07/08/2025, soit 96 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>3. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-15 13:12:56: 4u

@@ -408,7 +408,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -428,7 +428,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -448,7 +448,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -467,7 +467,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -487,7 +487,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>5. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -507,7 +507,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -527,7 +527,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>7. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -547,7 +547,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>8. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 2u
@@ -565,7 +565,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>9. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 1u
@@ -580,7 +580,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>10. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 1u
@@ -595,7 +595,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:40:40: 1u
@@ -610,7 +610,7 @@ La dernière commande remonte au 15 mai 2025, soit plus de 100 jours sans activi
 
 
 <details>
-<summary><strong>12. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

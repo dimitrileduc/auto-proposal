@@ -205,7 +205,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 66 jours (entre 
 
 
 <details>
-<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:53:00: 1u
@@ -221,7 +221,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 66 jours (entre 
 
 
 <details>
-<summary><strong>2. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:53:00: 1u
@@ -237,7 +237,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 66 jours (entre 
 
 
 <details>
-<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:53:00: 1u
@@ -253,7 +253,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 66 jours (entre 
 
 
 <details>
-<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:53:00: 1u
@@ -269,7 +269,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 66 jours (entre 
 
 
 <details>
-<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:53:00: 1u

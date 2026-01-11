@@ -89,7 +89,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>1. [LV348] LV Tartinade Dattes-Chili 180g BE bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV348] LV Tartinade Dattes-Chili 180g BE bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 10:05:10: 1u

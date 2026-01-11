@@ -263,7 +263,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>1. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -278,7 +278,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -293,7 +293,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>3. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -308,7 +308,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>4. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -323,7 +323,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>5. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -338,7 +338,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>6. [TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -353,7 +353,7 @@ Absence totale d'historique de commandes (récent et N-1). En application du pri
 
 
 <details>
-<summary><strong>7. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

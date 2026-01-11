@@ -205,7 +205,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 30 
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 05:01:57: 160u
@@ -226,7 +226,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 30 
 
 
 <details>
-<summary><strong>2. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-10 09:26:10: 44u
@@ -244,7 +244,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 30 
 
 
 <details>
-<summary><strong>3. [PF1140] FILOU SAUCE CHASSEUR 850G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1140] FILOU SAUCE CHASSEUR 850G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-10 09:26:10: 2u
@@ -262,7 +262,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 30 
 
 
 <details>
-<summary><strong>4. [PF0524] FILOU SAUCE TOMATE 815 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF0524] FILOU SAUCE TOMATE 815 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-10 09:26:10: 2u
@@ -281,7 +281,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 30 
 
 
 <details>
-<summary><strong>5. [PF0096] FILOU MOUTARDE 3 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF0096] FILOU MOUTARDE 3 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-10 09:26:10: 8u

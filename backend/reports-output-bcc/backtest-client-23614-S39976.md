@@ -89,7 +89,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>1. [LV104] LV Paprika Chili Aufstri 180g DE</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV104] LV Paprika Chili Aufstri 180g DE</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 08:18:02: 300u

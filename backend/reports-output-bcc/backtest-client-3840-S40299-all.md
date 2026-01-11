@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

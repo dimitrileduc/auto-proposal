@@ -350,7 +350,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>1. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 2u
@@ -367,7 +367,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>2. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 1u
@@ -384,7 +384,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 2u
@@ -400,7 +400,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>4. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 2u
@@ -416,7 +416,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>5. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 2u
@@ -432,7 +432,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>6. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 3u
@@ -449,7 +449,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>7. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 2u
@@ -466,7 +466,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>8. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-08 11:45:15: 2u
@@ -482,7 +482,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:19:53: 2u
@@ -498,7 +498,7 @@ L'analyse montre un cycle de commande irrégulier avec une dernière commande da
 
 
 <details>
-<summary><strong>10. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:19:53: 3u

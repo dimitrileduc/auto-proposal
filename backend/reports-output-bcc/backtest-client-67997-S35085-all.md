@@ -466,7 +466,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u
@@ -481,7 +481,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u
@@ -496,7 +496,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u
@@ -511,7 +511,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 2u
@@ -526,7 +526,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>5. [JOY05] Organic Cherry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JOY05] Organic Cherry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 2u
@@ -541,7 +541,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>6. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 2u
@@ -556,7 +556,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>7. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 2u
@@ -571,7 +571,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>8. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 2u
@@ -586,7 +586,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>9. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 2u
@@ -601,7 +601,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>10. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u
@@ -616,7 +616,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>11. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u
@@ -631,7 +631,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>12. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u
@@ -646,7 +646,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>13. [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u
@@ -661,7 +661,7 @@ La dernière commande remonte au 23 janvier, soit 33 jours avant la date actuell
 
 
 <details>
-<summary><strong>14. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-23 07:46:09: 1u

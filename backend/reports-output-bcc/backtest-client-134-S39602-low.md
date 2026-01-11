@@ -205,7 +205,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:25:40: 2u
@@ -220,7 +220,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -235,7 +235,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>3. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>4. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -265,7 +265,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>5. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

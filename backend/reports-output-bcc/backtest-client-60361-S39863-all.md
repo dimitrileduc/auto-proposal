@@ -292,7 +292,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>1. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 4u
@@ -309,7 +309,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>2. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 4u
@@ -327,7 +327,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>3. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 3u
@@ -343,7 +343,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>4. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 3u
@@ -360,7 +360,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>5. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 1u
@@ -377,7 +377,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>6. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 1u
@@ -394,7 +394,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>7. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 2u
@@ -411,7 +411,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 43
 
 
 <details>
-<summary><strong>8. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 06:32:29: 1u

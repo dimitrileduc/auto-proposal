@@ -321,7 +321,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 09:20:07: 2u
@@ -337,7 +337,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 09:20:07: 1u
@@ -352,7 +352,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 09:20:07: 1u
@@ -368,7 +368,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:39:20: 1u
@@ -384,7 +384,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:39:20: 1u
@@ -399,7 +399,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:39:20: 1u
@@ -416,7 +416,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>7. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:39:20: 1u
@@ -432,7 +432,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:39:20: 1u
@@ -447,7 +447,7 @@ La dernière commande remonte au 08/05/2025, soit plus de 130 jours. Bien que la
 
 
 <details>
-<summary><strong>9. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 13:39:20: 2u

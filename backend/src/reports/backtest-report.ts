@@ -187,7 +187,7 @@ ${productsWithLLMData.map((tp, index) => {
 
   return `
 <details>
-<summary><strong>${index + 1}. ${tp.productName}</strong> - ${tp.llm_success ? 'LLM Reussi' : 'LLM Echoue (fallback mediane)'}</summary>
+<summary><strong>${index + 1}. ${tp.productName}</strong> - ${tp.quantitySource === 'llm' ? 'LLM Reussi' : 'LLM Echoue (fallback mediane)'}</summary>
 
 **Commandes Recentes (3 derniers mois):**
 ${recentOrders.length > 0
@@ -199,7 +199,7 @@ ${lastYearOrders.length > 0
   ? lastYearOrders.map((o: { date: string; quantity: number }) => `- ${o.date}: ${o.quantity}u`).join('\n')
   : '- Aucune commande N-1'}
 
-${tp.llm_success
+${tp.quantitySource === 'llm' && tp.llmPrediction
   ? `**Quantite LLM**: ${tp.llmPrediction.quantity}u (confidence: ${tp.llmPrediction.confidence})`
   : `**Quantite Mediane (fallback)**: ${tp.predictedQty}u`}
 **Quantite Reelle**: ${tp.realQty}u

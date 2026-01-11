@@ -234,7 +234,7 @@ La dernière commande remonte à 110 jours (9 juillet). Bien que l'historique so
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:48: 1u
@@ -249,7 +249,7 @@ La dernière commande remonte à 110 jours (9 juillet). Bien que l'historique so
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:48: 1u
@@ -264,7 +264,7 @@ La dernière commande remonte à 110 jours (9 juillet). Bien que l'historique so
 
 
 <details>
-<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:48: 1u
@@ -279,7 +279,7 @@ La dernière commande remonte à 110 jours (9 juillet). Bien que l'historique so
 
 
 <details>
-<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:48: 1u
@@ -294,7 +294,7 @@ La dernière commande remonte à 110 jours (9 juillet). Bien que l'historique so
 
 
 <details>
-<summary><strong>5. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:48: 1u
@@ -309,7 +309,7 @@ La dernière commande remonte à 110 jours (9 juillet). Bien que l'historique so
 
 
 <details>
-<summary><strong>6. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:48: 1u

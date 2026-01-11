@@ -89,7 +89,7 @@ La dernière commande remonte au 15 octobre, soit il y a 29 jours. Avec un seuil
 
 
 <details>
-<summary><strong>1. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-15 04:58:48: 1u

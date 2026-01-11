@@ -118,7 +118,7 @@ La dernière commande remonte à 149 jours (juin 2025). Bien que la rotation soi
 
 
 <details>
-<summary><strong>1. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 07:44:22: 1u
@@ -133,7 +133,7 @@ La dernière commande remonte à 149 jours (juin 2025). Bien que la rotation soi
 
 
 <details>
-<summary><strong>2. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-16 08:48:52: 2u

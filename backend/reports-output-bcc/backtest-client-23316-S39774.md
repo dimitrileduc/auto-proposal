@@ -814,7 +814,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>1. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 1u
@@ -830,7 +830,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 3u
@@ -854,7 +854,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>3. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -876,7 +876,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -898,7 +898,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -921,7 +921,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>6. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -944,7 +944,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>7. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -966,7 +966,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>8. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -988,7 +988,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>9. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1010,7 +1010,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>10. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1033,7 +1033,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>11. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1054,7 +1054,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>12. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1077,7 +1077,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>13. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 1u
@@ -1098,7 +1098,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>14. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1119,7 +1119,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>15. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1140,7 +1140,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>16. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 1u
@@ -1162,7 +1162,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>17. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1183,7 +1183,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>18. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1199,24 +1199,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>19. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-09-10 06:21:45: 2u
-- 2025-07-08 06:22:17: 1u
-- 2025-06-03 06:13:53: 2u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 2u
-**Quantite Reelle**: 2u
-
-</details>
-
-
-<details>
-<summary><strong>20. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1233,7 +1216,24 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>21. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-09-10 06:21:45: 2u
+- 2025-07-08 06:22:17: 1u
+- 2025-06-03 06:13:53: 2u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 2u
+**Quantite Reelle**: 2u
+
+</details>
+
+
+<details>
+<summary><strong>21. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:21:45: 2u
@@ -1256,7 +1256,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>22. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 12:33:57: 8u
@@ -1279,7 +1279,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>23. [UPI08] Jus de pomme-citron bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>23. [UPI08] Jus de pomme-citron bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 12:33:57: 2u
@@ -1295,7 +1295,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>24. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>24. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 12:33:57: 2u
@@ -1310,7 +1310,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>25. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>25. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 12:33:57: 1u
@@ -1325,7 +1325,7 @@ La dernière commande remonte au 04/08/2025, soit 77 jours sans activité. Bien 
 
 
 <details>
-<summary><strong>26. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>26. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 12:33:57: 1u

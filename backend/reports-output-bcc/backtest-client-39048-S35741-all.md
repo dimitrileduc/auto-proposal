@@ -437,7 +437,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 2u
@@ -452,7 +452,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 2u
@@ -467,7 +467,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 2u
@@ -482,7 +482,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>4. [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 1u
@@ -497,7 +497,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>5. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 2u
@@ -512,7 +512,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>6. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 2u
@@ -527,7 +527,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>7. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 2u
@@ -542,7 +542,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>8. [TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 1u
@@ -557,7 +557,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 1u
@@ -572,7 +572,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>10. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 2u
@@ -587,22 +587,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>11. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-01-24 07:12:53: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 4u
-
-</details>
-
-
-<details>
-<summary><strong>12. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 1u
@@ -617,7 +602,22 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>13. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-01-24 07:12:53: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 4u
+
+</details>
+
+
+<details>
+<summary><strong>13. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

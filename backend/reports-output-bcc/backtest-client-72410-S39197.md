@@ -321,7 +321,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 2u
@@ -337,7 +337,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>2. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 1u
@@ -353,7 +353,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>3. [LV157] LV Ketchup aux tomates 263 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV157] LV Ketchup aux tomates 263 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 2u
@@ -369,7 +369,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>4. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 1u
@@ -385,7 +385,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 1u
@@ -401,7 +401,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 1u
@@ -417,7 +417,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 1u
@@ -433,7 +433,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>8. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 1u
@@ -449,7 +449,7 @@ Le cycle de commande observé est d'environ 27 jours (entre mai et juin). La der
 
 
 <details>
-<summary><strong>9. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 13:22:27: 2u

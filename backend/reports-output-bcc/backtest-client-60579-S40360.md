@@ -321,7 +321,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>1. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:52:11: 1u
@@ -340,7 +340,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>2. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:52:11: 1u
@@ -359,7 +359,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:52:11: 3u
@@ -381,7 +381,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:52:11: 3u
@@ -403,7 +403,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:52:11: 3u
@@ -425,7 +425,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>6. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:52:11: 1u
@@ -446,7 +446,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>7. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:52:11: 2u
@@ -466,7 +466,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>8. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:12:05: 1u
@@ -486,7 +486,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>9. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:12:05: 4u

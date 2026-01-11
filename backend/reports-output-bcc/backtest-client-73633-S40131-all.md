@@ -350,7 +350,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u
@@ -366,7 +366,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>2. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u
@@ -382,7 +382,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>3. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u
@@ -397,23 +397,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>4. [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-09-17 06:39:33: 1u
-- 2025-07-11 06:37:46: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>5. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 1u
@@ -429,7 +413,23 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-09-17 06:39:33: 1u
+- 2025-07-11 06:37:46: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>6. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:39:33: 2u
@@ -444,7 +444,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>7. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-11 06:37:46: 1u
@@ -459,7 +459,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>8. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-11 06:37:46: 1u
@@ -474,7 +474,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>9. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-11 06:37:46: 1u
@@ -489,7 +489,7 @@ La dernière commande remonte au 11 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>10. [UPI08] Jus de pomme-citron bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [UPI08] Jus de pomme-citron bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-11 06:37:46: 1u

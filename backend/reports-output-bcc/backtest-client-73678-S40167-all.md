@@ -321,7 +321,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-17 12:53:14: 1u
@@ -337,7 +337,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:54:59: 1u
@@ -354,7 +354,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:54:59: 2u
@@ -371,7 +371,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:54:59: 2u
@@ -388,7 +388,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>5. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:54:59: 1u
@@ -405,7 +405,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:54:59: 2u
@@ -422,7 +422,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:54:59: 1u
@@ -439,7 +439,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>8. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV139] LV Tartinade Paprika Chili 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 12:22:52: 2u
@@ -454,7 +454,7 @@ La dernière commande remonte à 92 jours (11 août). Bien que l'historique soit
 
 
 <details>
-<summary><strong>9. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 12:22:52: 1u

@@ -234,7 +234,7 @@ La dernière commande remonte au 22 juillet 2025, soit environ 97 jours. Bien qu
 
 
 <details>
-<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:13:40: 2u
@@ -249,7 +249,7 @@ La dernière commande remonte au 22 juillet 2025, soit environ 97 jours. Bien qu
 
 
 <details>
-<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:13:40: 2u
@@ -264,7 +264,7 @@ La dernière commande remonte au 22 juillet 2025, soit environ 97 jours. Bien qu
 
 
 <details>
-<summary><strong>3. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:13:40: 2u
@@ -279,7 +279,7 @@ La dernière commande remonte au 22 juillet 2025, soit environ 97 jours. Bien qu
 
 
 <details>
-<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:13:40: 2u
@@ -294,7 +294,7 @@ La dernière commande remonte au 22 juillet 2025, soit environ 97 jours. Bien qu
 
 
 <details>
-<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:13:40: 2u
@@ -309,7 +309,7 @@ La dernière commande remonte au 22 juillet 2025, soit environ 97 jours. Bien qu
 
 
 <details>
-<summary><strong>6. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:13:40: 1u

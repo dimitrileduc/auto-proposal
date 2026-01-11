@@ -118,7 +118,7 @@ La dernière commande remonte à 84 jours (9 juillet). Bien que l'historique soi
 
 
 <details>
-<summary><strong>1. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:12: 2u
@@ -133,7 +133,7 @@ La dernière commande remonte à 84 jours (9 juillet). Bien que l'historique soi
 
 
 <details>
-<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:08:12: 2u

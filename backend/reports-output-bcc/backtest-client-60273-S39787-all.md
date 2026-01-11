@@ -263,7 +263,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>1. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:34:46: 1u
@@ -278,7 +278,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:34:46: 1u
@@ -294,7 +294,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>3. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:34:46: 1u
@@ -310,7 +310,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>4. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:34:46: 5u
@@ -327,7 +327,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>5. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:34:46: 2u
@@ -344,7 +344,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>6. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:34:46: 1u
@@ -361,7 +361,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 40
 
 
 <details>
-<summary><strong>7. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:34:46: 1u

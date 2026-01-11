@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [PF0608] FILOU/LD SAUCE SAMOURAI  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0608] FILOU/LD SAUCE SAMOURAI  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 06:48:43: 52u
@@ -136,7 +136,7 @@
 
 
 <details>
-<summary><strong>2. [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 06:48:43: 52u

@@ -89,7 +89,7 @@ La dernière commande remonte à plus de 4 mois (135 jours). Bien que le cycle s
 
 
 <details>
-<summary><strong>1. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:28:24: 2u

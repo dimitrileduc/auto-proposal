@@ -379,7 +379,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>1. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 1u
@@ -398,7 +398,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>2. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 1u
@@ -420,7 +420,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 2u
@@ -442,7 +442,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 1u
@@ -464,7 +464,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 2u
@@ -486,7 +486,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>6. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 1u
@@ -508,7 +508,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>7. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 1u
@@ -527,7 +527,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>8. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 1u
@@ -554,7 +554,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>9. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 1u
@@ -585,7 +585,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>10. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-20 11:35:01: 3u
@@ -616,7 +616,7 @@ L'analyse montre une absence de commande depuis le 11 août 2025 (soit plus de 8
 
 
 <details>
-<summary><strong>11. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 06:51:13: 1u

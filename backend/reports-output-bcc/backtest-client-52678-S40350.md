@@ -147,7 +147,7 @@ La dernière commande remonte au 13 octobre 2025, soit il y a 30 jours. Le cycle
 
 
 <details>
-<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 07:44:22: 1u
@@ -166,7 +166,7 @@ La dernière commande remonte au 13 octobre 2025, soit il y a 30 jours. Le cycle
 
 
 <details>
-<summary><strong>2. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 07:44:22: 1u
@@ -182,7 +182,7 @@ La dernière commande remonte au 13 octobre 2025, soit il y a 30 jours. Le cycle
 
 
 <details>
-<summary><strong>3. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 09:18:36: 1u

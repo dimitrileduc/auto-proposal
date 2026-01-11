@@ -292,7 +292,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 3u
@@ -309,7 +309,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>2. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 2u
@@ -326,7 +326,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 2u
@@ -346,7 +346,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 1u
@@ -366,7 +366,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 2u
@@ -385,7 +385,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 1u
@@ -405,7 +405,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>7. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 6u
@@ -425,7 +425,7 @@ La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans ac
 
 
 <details>
-<summary><strong>8. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 08:33:34: 2u

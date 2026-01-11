@@ -205,7 +205,7 @@ La derni√®re commande remonte au 02/06/2025, soit plus de 75 jours sans activit√
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:20:28: 2u
@@ -220,7 +220,7 @@ La derni√®re commande remonte au 02/06/2025, soit plus de 75 jours sans activit√
 
 
 <details>
-<summary><strong>2. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:20:28: 2u
@@ -235,7 +235,7 @@ La derni√®re commande remonte au 02/06/2025, soit plus de 75 jours sans activit√
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:20:28: 1u
@@ -251,7 +251,7 @@ La derni√®re commande remonte au 02/06/2025, soit plus de 75 jours sans activit√
 
 
 <details>
-<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:20:28: 1u
@@ -266,7 +266,7 @@ La derni√®re commande remonte au 02/06/2025, soit plus de 75 jours sans activit√
 
 
 <details>
-<summary><strong>5. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande r√©cente

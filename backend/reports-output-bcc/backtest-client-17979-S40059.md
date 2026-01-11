@@ -292,7 +292,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 13:01:05: 2u
@@ -308,7 +308,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 13:01:05: 2u
@@ -324,7 +324,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>3. [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 13:01:05: 1u
@@ -339,7 +339,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 13:01:05: 2u
@@ -355,7 +355,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>5. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-16 06:25:49: 1u
@@ -371,7 +371,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:23:09: 2u
@@ -386,7 +386,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>7. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:23:09: 2u
@@ -401,7 +401,7 @@ La dernière commande remonte au 24 septembre, soit 41 jours avant la date actue
 
 
 <details>
-<summary><strong>8. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 13:23:09: 2u

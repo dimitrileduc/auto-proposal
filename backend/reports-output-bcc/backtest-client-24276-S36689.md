@@ -118,7 +118,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 56 jours (entre 
 
 
 <details>
-<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-04 06:38:52: 1u
@@ -134,7 +134,7 @@ L'analyse de l'historique montre un cycle de commande d'environ 56 jours (entre 
 
 
 <details>
-<summary><strong>2. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-04 06:38:52: 1u

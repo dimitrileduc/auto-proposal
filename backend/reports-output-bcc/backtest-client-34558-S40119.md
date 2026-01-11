@@ -495,7 +495,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>1. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 1u
@@ -516,7 +516,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>2. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 1u
@@ -537,7 +537,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>3. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 3u
@@ -557,7 +557,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>4. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 3u
@@ -576,7 +576,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>5. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 3u
@@ -595,7 +595,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>6. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 3u
@@ -616,7 +616,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>7. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 3u
@@ -633,7 +633,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>8. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 3u
@@ -653,7 +653,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>9. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 2u
@@ -673,7 +673,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>10. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 2u
@@ -690,7 +690,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>11. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 10:33:03: 2u
@@ -707,7 +707,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:57: 6u
@@ -723,7 +723,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>13. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:57: 3u
@@ -742,7 +742,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>14. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:57: 4u
@@ -760,7 +760,7 @@ L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (
 
 
 <details>
-<summary><strong>15. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:25:33: 2u

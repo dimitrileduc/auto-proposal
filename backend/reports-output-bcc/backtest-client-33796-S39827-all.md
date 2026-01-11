@@ -234,7 +234,7 @@ La dernière commande remonte au 14 juillet 2025, soit plus de 90 jours sans act
 
 
 <details>
-<summary><strong>1. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:25:06: 1u
@@ -253,7 +253,7 @@ La dernière commande remonte au 14 juillet 2025, soit plus de 90 jours sans act
 
 
 <details>
-<summary><strong>2. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:25:06: 5u
@@ -272,7 +272,7 @@ La dernière commande remonte au 14 juillet 2025, soit plus de 90 jours sans act
 
 
 <details>
-<summary><strong>3. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:25:06: 1u
@@ -291,7 +291,7 @@ La dernière commande remonte au 14 juillet 2025, soit plus de 90 jours sans act
 
 
 <details>
-<summary><strong>4. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:25:06: 2u
@@ -310,7 +310,7 @@ La dernière commande remonte au 14 juillet 2025, soit plus de 90 jours sans act
 
 
 <details>
-<summary><strong>5. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:25:06: 1u
@@ -328,7 +328,7 @@ La dernière commande remonte au 14 juillet 2025, soit plus de 90 jours sans act
 
 
 <details>
-<summary><strong>6. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:25:06: 4u

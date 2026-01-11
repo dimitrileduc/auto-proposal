@@ -350,7 +350,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>1. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:51:51: 20u
@@ -365,7 +365,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>2. [RIT02] RITCHIE Citron - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT02] RITCHIE Citron - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:51:51: 20u
@@ -380,7 +380,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>3. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:51:51: 5u
@@ -395,7 +395,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>4. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:51:51: 15u
@@ -410,7 +410,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>5. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:51:51: 5u
@@ -425,7 +425,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>6. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:51:51: 5u
@@ -440,7 +440,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>7. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:51:51: 5u
@@ -455,7 +455,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>8. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:32:35: 112u
@@ -476,7 +476,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>9. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:32:35: 112u
@@ -497,7 +497,7 @@ La dernière commande date d'hier (12 avril) pour 15 unités. Bien que le stock 
 
 
 <details>
-<summary><strong>10. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-12 10:31:43: 56u

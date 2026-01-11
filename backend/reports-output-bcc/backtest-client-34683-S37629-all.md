@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF1187] LINEA KEBAB DELICATA 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1187] LINEA KEBAB DELICATA 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-27 13:26:34: 170u

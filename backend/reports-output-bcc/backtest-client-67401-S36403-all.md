@@ -147,7 +147,7 @@ La dernière commande remonte au 03/01/2025, soit 114 jours sans activité. En l
 
 
 <details>
-<summary><strong>1. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-03 14:02:01: 56u
@@ -162,7 +162,7 @@ La dernière commande remonte au 03/01/2025, soit 114 jours sans activité. En l
 
 
 <details>
-<summary><strong>2. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF040] JF CURRY KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-03 14:02:01: 56u
@@ -177,7 +177,7 @@ La dernière commande remonte au 03/01/2025, soit 114 jours sans activité. En l
 
 
 <details>
-<summary><strong>3. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-03 14:02:01: 56u

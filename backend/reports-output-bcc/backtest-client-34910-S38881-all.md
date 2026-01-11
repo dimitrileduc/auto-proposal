@@ -292,7 +292,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 3u
@@ -309,7 +309,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 3u
@@ -326,7 +326,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 5u
@@ -343,7 +343,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 3u
@@ -360,7 +360,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u
@@ -375,7 +375,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [fsv02] Noix de cajou nature bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [fsv02] Noix de cajou nature bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u
@@ -390,7 +390,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>7. [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u
@@ -405,7 +405,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>8. [fsv09] Noix de cajou grillées salées bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [fsv09] Noix de cajou grillées salées bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u

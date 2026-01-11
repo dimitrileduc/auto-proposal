@@ -89,7 +89,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 60 à 70 jours (
 
 
 <details>
-<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-29 09:21:59: 1u

@@ -524,7 +524,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 15:03:31: 1u
@@ -539,7 +539,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 15:03:31: 1u
@@ -558,7 +558,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 15:03:31: 1u
@@ -578,7 +578,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 15:03:31: 1u
@@ -595,7 +595,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 2u
@@ -617,7 +617,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>6. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 2u
@@ -637,7 +637,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 3u
@@ -658,7 +658,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>8. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF057] JF EGG MAYONNAISE 720ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 6u
@@ -676,7 +676,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>9. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 2u
@@ -693,7 +693,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>10. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 1u
@@ -708,7 +708,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>11. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 2u
@@ -725,7 +725,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>12. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 11:32:03: 1u
@@ -742,7 +742,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>13. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:26:26: 1u
@@ -759,7 +759,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>14. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 12:02:03: 3u
@@ -774,7 +774,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>15. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:36:11: 1u
@@ -790,7 +790,7 @@ La dernière commande remonte au 25 juin 2025, soit plus de 130 jours. Bien que 
 
 
 <details>
-<summary><strong>16. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 06:46:21: 2u

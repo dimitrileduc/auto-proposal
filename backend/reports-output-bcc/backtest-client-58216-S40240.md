@@ -118,7 +118,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -133,7 +133,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>2. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u

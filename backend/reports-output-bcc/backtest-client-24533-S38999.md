@@ -234,7 +234,7 @@ La dernière commande remonte à plus de 4 mois (127 jours), ce qui indique une 
 
 
 <details>
-<summary><strong>1. [MF0013] MF Olives Vertes 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0013] MF Olives Vertes 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-30 13:07:58: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte à plus de 4 mois (127 jours), ce qui indique une 
 
 
 <details>
-<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-30 13:07:58: 3u
@@ -266,7 +266,7 @@ La dernière commande remonte à plus de 4 mois (127 jours), ce qui indique une 
 
 
 <details>
-<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-30 13:07:58: 4u
@@ -282,7 +282,7 @@ La dernière commande remonte à plus de 4 mois (127 jours), ce qui indique une 
 
 
 <details>
-<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-30 13:07:58: 1u
@@ -298,7 +298,7 @@ La dernière commande remonte à plus de 4 mois (127 jours), ce qui indique une 
 
 
 <details>
-<summary><strong>5. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-30 13:07:58: 1u
@@ -314,7 +314,7 @@ La dernière commande remonte à plus de 4 mois (127 jours), ce qui indique une 
 
 
 <details>
-<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-30 13:07:58: 1u

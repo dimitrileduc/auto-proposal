@@ -263,7 +263,7 @@ La dernière commande remonte à 150 jours (janvier 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-16 10:04:25: 2u
@@ -278,7 +278,7 @@ La dernière commande remonte à 150 jours (janvier 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-16 10:04:25: 1u
@@ -294,7 +294,7 @@ La dernière commande remonte à 150 jours (janvier 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>3. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-16 10:04:25: 1u
@@ -309,7 +309,7 @@ La dernière commande remonte à 150 jours (janvier 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>4. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-16 10:04:25: 1u
@@ -324,7 +324,7 @@ La dernière commande remonte à 150 jours (janvier 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>5. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-06 10:33:34: 1u
@@ -339,7 +339,7 @@ La dernière commande remonte à 150 jours (janvier 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>6. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-06 10:33:34: 1u
@@ -354,7 +354,7 @@ La dernière commande remonte à 150 jours (janvier 2025). Bien que la rotation 
 
 
 <details>
-<summary><strong>7. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-06 10:33:34: 1u

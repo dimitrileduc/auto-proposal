@@ -437,7 +437,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-24 11:20:40: 30u
@@ -456,7 +456,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>2. [PF0502] FILOU MOUTARDE SQUEEZE 300 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0502] FILOU MOUTARDE SQUEEZE 300 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 40u
@@ -473,7 +473,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>3. [PF1539] FILOU BOULETTE CHASSEUR 800G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1539] FILOU BOULETTE CHASSEUR 800G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 2u
@@ -490,7 +490,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>4. [PF1224] FILOU BOULETTES TOMATE 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF1224] FILOU BOULETTES TOMATE 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 4u
@@ -507,7 +507,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>5. [PF0084] FILOU CARBONNADES 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF0084] FILOU CARBONNADES 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 4u
@@ -524,7 +524,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>6. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 65u
@@ -543,7 +543,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>7. [PF0094] FILOU MOUTARDE 700 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [PF0094] FILOU MOUTARDE 700 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 20u
@@ -561,7 +561,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>8. [PF0096] FILOU MOUTARDE 3 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [PF0096] FILOU MOUTARDE 3 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 10u
@@ -578,7 +578,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>9. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 08:25:46: 44u
@@ -595,7 +595,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>10. [PF0093] FILOU MOUTARDE 300GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [PF0093] FILOU MOUTARDE 300GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:06:02: 30u
@@ -612,7 +612,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>11. [PF1689] FILOU CURRY KETCH SQUEEZE 300</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [PF1689] FILOU CURRY KETCH SQUEEZE 300</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 09:12:07: 40u
@@ -627,7 +627,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>12. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 12:42:43: 60u
@@ -642,7 +642,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>13. [PF0089] FILOU VOL AU VENT 400 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [PF0089] FILOU VOL AU VENT 400 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 12:42:43: 80u

@@ -437,7 +437,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>1. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 1u
@@ -453,7 +453,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>2. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 2u
@@ -470,7 +470,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>3. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 2u
@@ -490,7 +490,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>4. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 2u
@@ -508,7 +508,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>5. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 1u
@@ -527,7 +527,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>6. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 1u
@@ -548,7 +548,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 1u
@@ -568,7 +568,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>8. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 1u
@@ -585,7 +585,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>9. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:51:50: 1u
@@ -602,7 +602,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>10. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:36:37: 1u
@@ -618,7 +618,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>11. [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:36:37: 3u
@@ -633,7 +633,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>12. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-19 08:10:02: 1u
@@ -651,7 +651,7 @@ La dernière commande remonte au 19 mai 2025, soit environ 150 jours sans activi
 
 
 <details>
-<summary><strong>13. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-19 08:10:02: 1u

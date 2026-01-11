@@ -205,7 +205,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 06:18:45: 1u
@@ -221,7 +221,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-07 06:18:45: 3u
@@ -242,7 +242,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 13:03:22: 2u
@@ -262,7 +262,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>4. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 13:03:22: 2u
@@ -281,7 +281,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>5. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 13:03:22: 2u

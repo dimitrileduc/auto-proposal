@@ -321,7 +321,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>1. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 1u
@@ -337,7 +337,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>2. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 3u
@@ -354,7 +354,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 3u
@@ -371,7 +371,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>4. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 2u
@@ -388,7 +388,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 2u
@@ -404,7 +404,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>6. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 2u
@@ -420,7 +420,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>7. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 2u
@@ -437,7 +437,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>8. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 09:16:43: 1u
@@ -453,7 +453,7 @@ Le produit présente une rotation lente mais régulière avec un cycle moyen con
 
 
 <details>
-<summary><strong>9. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:16:51: 2u

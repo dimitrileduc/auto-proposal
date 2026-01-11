@@ -205,7 +205,7 @@ Le cycle de commande observé est d'environ 35 jours (entre avril et mai). La de
 
 
 <details>
-<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 06:19:52: 2u
@@ -221,7 +221,7 @@ Le cycle de commande observé est d'environ 35 jours (entre avril et mai). La de
 
 
 <details>
-<summary><strong>2. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 06:19:52: 2u
@@ -237,7 +237,7 @@ Le cycle de commande observé est d'environ 35 jours (entre avril et mai). La de
 
 
 <details>
-<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 06:19:52: 1u
@@ -253,7 +253,7 @@ Le cycle de commande observé est d'environ 35 jours (entre avril et mai). La de
 
 
 <details>
-<summary><strong>4. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 06:19:52: 1u
@@ -269,7 +269,7 @@ Le cycle de commande observé est d'environ 35 jours (entre avril et mai). La de
 
 
 <details>
-<summary><strong>5. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-23 06:19:52: 1u

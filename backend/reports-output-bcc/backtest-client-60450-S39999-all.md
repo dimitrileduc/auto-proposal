@@ -176,7 +176,7 @@ La dernière commande remonte au 26 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:08:37: 8u
@@ -191,7 +191,7 @@ La dernière commande remonte au 26 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:08:37: 8u
@@ -206,7 +206,7 @@ La dernière commande remonte au 26 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>3. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:08:37: 6u
@@ -222,7 +222,7 @@ La dernière commande remonte au 26 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>4. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 08:32:42: 10u

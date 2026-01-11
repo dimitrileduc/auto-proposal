@@ -118,7 +118,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 33 jours ent
 
 
 <details>
-<summary><strong>1. [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 10:43:24: 44u
@@ -143,7 +143,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 33 jours ent
 
 
 <details>
-<summary><strong>2. [PF0608] FILOU/LD SAUCE SAMOURAI  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0608] FILOU/LD SAUCE SAMOURAI  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 10:43:24: 44u

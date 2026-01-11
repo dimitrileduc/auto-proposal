@@ -118,7 +118,7 @@ L'analyse du cycle montre une dernière commande effectuée il y a 90 jours (26 
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 2u
@@ -134,7 +134,7 @@ L'analyse du cycle montre une dernière commande effectuée il y a 90 jours (26 
 
 
 <details>
-<summary><strong>2. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 12:08:05: 2u

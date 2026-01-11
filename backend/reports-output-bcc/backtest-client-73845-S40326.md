@@ -263,7 +263,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 24 jours
 
 
 <details>
-<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:09:35: 1u
@@ -279,7 +279,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 24 jours
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:09:35: 3u
@@ -295,7 +295,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 24 jours
 
 
 <details>
-<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:09:35: 3u
@@ -311,7 +311,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 24 jours
 
 
 <details>
-<summary><strong>4. [LV214] LV Biscuits apéro tomate basilic 100g bio </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV214] LV Biscuits apéro tomate basilic 100g bio </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:09:35: 1u
@@ -327,7 +327,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 24 jours
 
 
 <details>
-<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:09:35: 3u
@@ -343,7 +343,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 24 jours
 
 
 <details>
-<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:09:35: 2u
@@ -359,7 +359,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 24 jours
 
 
 <details>
-<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 14:09:35: 1u

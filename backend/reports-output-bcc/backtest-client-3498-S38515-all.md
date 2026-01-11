@@ -89,7 +89,7 @@ L'historique montre une rotation lente mais régulière avec des commandes espac
 
 
 <details>
-<summary><strong>1. [PF0501] YVALLI VINAIGRETTE 5 KG JERRY</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0501] YVALLI VINAIGRETTE 5 KG JERRY</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-28 11:50:08: 18u

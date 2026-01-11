@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [JF048] JF DISPLAY SAUCES 250ML </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF048] JF DISPLAY SAUCES 250ML </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-11 11:24:42: 1u

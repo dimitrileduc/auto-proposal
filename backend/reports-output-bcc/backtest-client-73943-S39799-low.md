@@ -263,7 +263,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>1. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:15: 2u
@@ -278,7 +278,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>2. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:15: 1u
@@ -293,7 +293,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:15: 2u
@@ -308,7 +308,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:15: 1u
@@ -323,7 +323,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:15: 1u
@@ -338,7 +338,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:15: 1u
@@ -353,7 +353,7 @@ La dernière commande remonte au 10 septembre 2025, soit 48 jours avant la date 
 
 
 <details>
-<summary><strong>7. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 06:04:15: 1u

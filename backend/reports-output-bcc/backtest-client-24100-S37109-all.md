@@ -930,7 +930,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>1. [MF0060] MF Passata</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0060] MF Passata</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 4u
@@ -946,7 +946,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>2. [MF0061] MF Compote</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0061] MF Compote</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 5u
@@ -962,7 +962,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>3. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JOY03] JOY! Organic Apricot Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -977,7 +977,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>4. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JOY04] JOY! Organic Four-Fruit Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -992,7 +992,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>5. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JOY08] JOY! Organic Raspberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -1007,7 +1007,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>6. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JOY02] JOY! Organic Strawberry Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -1022,7 +1022,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>7. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 3u
@@ -1038,7 +1038,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>8. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -1053,38 +1053,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>9. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-04-08 06:22:56: 1u
-- 2025-02-11 14:53:24: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>10. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-04-08 06:22:56: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>11. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -1100,7 +1069,22 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>12. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-04-08 06:22:56: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>11. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-08 06:22:56: 1u
@@ -1116,7 +1100,23 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>13. [MF0024] MF KETCHUP 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-04-08 06:22:56: 1u
+- 2025-02-11 14:53:24: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>13. [MF0024] MF KETCHUP 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1131,7 +1131,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>14. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1147,7 +1147,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>15. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1163,7 +1163,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>16. [LV158] LV Moutarde 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV158] LV Moutarde 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1178,7 +1178,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>17. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1193,7 +1193,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>18. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1208,7 +1208,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>19. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1223,7 +1223,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>20. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1238,7 +1238,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>21. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1253,7 +1253,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>22. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1268,7 +1268,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>23. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>23. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1283,7 +1283,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>24. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>24. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1298,7 +1298,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>25. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>25. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1313,7 +1313,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>26. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>26. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1328,7 +1328,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>27. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>27. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1344,7 +1344,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>28. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>28. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1360,7 +1360,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>29. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>29. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u
@@ -1376,7 +1376,7 @@ La dernière commande remonte au 11 février 2025, soit plus de 100 jours. Bien 
 
 
 <details>
-<summary><strong>30. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>30. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-11 14:53:24: 1u

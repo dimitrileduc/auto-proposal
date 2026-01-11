@@ -263,7 +263,7 @@ La dernière commande remonte au 13 septembre 2024, soit environ 117 jours. Bien
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 2u
@@ -278,7 +278,7 @@ La dernière commande remonte au 13 septembre 2024, soit environ 117 jours. Bien
 
 
 <details>
-<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 1u
@@ -293,7 +293,7 @@ La dernière commande remonte au 13 septembre 2024, soit environ 117 jours. Bien
 
 
 <details>
-<summary><strong>3. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 1u
@@ -308,7 +308,7 @@ La dernière commande remonte au 13 septembre 2024, soit environ 117 jours. Bien
 
 
 <details>
-<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 3u
@@ -323,7 +323,7 @@ La dernière commande remonte au 13 septembre 2024, soit environ 117 jours. Bien
 
 
 <details>
-<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 1u
@@ -338,7 +338,7 @@ La dernière commande remonte au 13 septembre 2024, soit environ 117 jours. Bien
 
 
 <details>
-<summary><strong>6. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 1u
@@ -353,7 +353,7 @@ La dernière commande remonte au 13 septembre 2024, soit environ 117 jours. Bien
 
 
 <details>
-<summary><strong>7. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-09-13 06:06:46: 1u

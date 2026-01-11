@@ -350,7 +350,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:43: 1u
@@ -370,7 +370,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:43: 1u
@@ -391,7 +391,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>3. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:43: 1u
@@ -410,7 +410,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>4. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT02] RITCHIE Citron - Framboise - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:25:43: 1u
@@ -430,7 +430,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>5. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV129] LV Tartinade Carotte Gingembre 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:31:24: 1u
@@ -447,7 +447,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>6. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 13:48:36: 1u
@@ -465,7 +465,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>7. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-15 09:13:50: 1u
@@ -481,7 +481,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>8. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 06:42:52: 2u
@@ -498,7 +498,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>9. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV345] LV Spread KIDS 200ml Organic</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 06:42:52: 1u
@@ -513,7 +513,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 
 <details>
-<summary><strong>10. [LV157] LV Ketchup aux tomates 263 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV157] LV Ketchup aux tomates 263 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

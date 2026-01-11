@@ -698,7 +698,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>1. [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -713,7 +713,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>2. [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -728,7 +728,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>3. [FO001] FO CITRONNADE BIO 33cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [FO001] FO CITRONNADE BIO 33cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -743,7 +743,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>4. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -758,23 +758,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>5. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-06-30 12:08:28: 1u
-- 2025-05-28 06:20:16: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>6. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -790,7 +774,23 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>7. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-06-30 12:08:28: 1u
+- 2025-05-28 06:20:16: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>7. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 3u
@@ -806,7 +806,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>8. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -822,7 +822,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>9. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -837,7 +837,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>10. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -852,7 +852,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>11. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -867,7 +867,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>12. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-30 12:08:28: 1u
@@ -882,7 +882,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>13. [LB003] LB Festive (4,5%) 33CL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LB003] LB Festive (4,5%) 33CL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u
@@ -897,7 +897,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>14. [LB004] LB Blonde (6,5%) 33CL</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LB004] LB Blonde (6,5%) 33CL</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u
@@ -912,7 +912,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>15. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u
@@ -927,7 +927,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>16. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 2u
@@ -942,7 +942,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>17. [MANA01] MANA natural energy drink - citron & gingembre 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [MANA01] MANA natural energy drink - citron & gingembre 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u
@@ -957,7 +957,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>18. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [MANA02] MANA natural energy drink - tropical passion 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u
@@ -972,7 +972,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>19. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 2u
@@ -987,7 +987,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>20. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 06:20:16: 1u
@@ -1002,7 +1002,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>21. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -1017,7 +1017,7 @@ Absence totale d'historique de commandes (récentes et N-1). En application du p
 
 
 <details>
-<summary><strong>22. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

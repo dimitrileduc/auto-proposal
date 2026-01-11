@@ -89,7 +89,7 @@ L'analyse du cycle de commande montre une fréquence trimestrielle (juin, septem
 
 
 <details>
-<summary><strong>1. [PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 13:41:54: 400u

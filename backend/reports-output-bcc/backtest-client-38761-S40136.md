@@ -640,7 +640,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -655,7 +655,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>2. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -670,7 +670,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -687,7 +687,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -706,7 +706,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -723,7 +723,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>6. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -738,7 +738,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -753,7 +753,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>8. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 2u
@@ -772,7 +772,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>9. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -790,7 +790,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>10. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF011] JF SAUCE TARTARE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -808,7 +808,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>11. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -830,7 +830,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>12. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -846,7 +846,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>13. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -863,7 +863,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>14. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -880,7 +880,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>15. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-13 11:57:04: 1u
@@ -898,7 +898,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>16. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:11:55: 1u
@@ -913,7 +913,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>17. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:11:55: 1u
@@ -928,7 +928,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>18. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:11:55: 1u
@@ -943,7 +943,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>19. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:11:55: 3u
@@ -959,7 +959,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>20. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

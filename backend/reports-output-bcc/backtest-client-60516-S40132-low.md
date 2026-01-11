@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 12:02:40: 1u

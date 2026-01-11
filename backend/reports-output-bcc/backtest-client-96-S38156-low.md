@@ -263,7 +263,7 @@ La dernière commande remonte au 06/03/2025, soit environ 150 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 06:20:18: 1u
@@ -278,7 +278,7 @@ La dernière commande remonte au 06/03/2025, soit environ 150 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 09:15:02: 1u
@@ -293,7 +293,7 @@ La dernière commande remonte au 06/03/2025, soit environ 150 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT03] RITCHIE Citron-Gingembre - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-06 07:32:33: 1u
@@ -308,7 +308,7 @@ La dernière commande remonte au 06/03/2025, soit environ 150 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-06 07:32:33: 1u
@@ -323,7 +323,7 @@ La dernière commande remonte au 06/03/2025, soit environ 150 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-06 07:32:33: 1u
@@ -338,7 +338,7 @@ La dernière commande remonte au 06/03/2025, soit environ 150 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-06 07:32:33: 1u
@@ -353,7 +353,7 @@ La dernière commande remonte au 06/03/2025, soit environ 150 jours. Bien que la
 
 
 <details>
-<summary><strong>7. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-06 07:32:33: 1u

@@ -321,7 +321,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 10:11:17: 2u
@@ -336,7 +336,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 10:47:35: 1u
@@ -351,7 +351,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 10:47:35: 1u
@@ -366,7 +366,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 10:47:35: 1u
@@ -381,7 +381,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 10:47:35: 1u
@@ -396,7 +396,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>6. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 10:47:35: 1u
@@ -411,7 +411,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>7. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 10:47:35: 1u
@@ -426,7 +426,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>8. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-18 10:47:35: 1u
@@ -441,7 +441,7 @@ La dernière commande remonte à 115 jours (3 juillet 2025). Bien que l'historiq
 
 
 <details>
-<summary><strong>9. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-03 12:14:13: 1u

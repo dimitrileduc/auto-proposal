@@ -147,7 +147,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>1. [PI2911] PI SAUCE BURGER BA PO</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PI2911] PI SAUCE BURGER BA PO</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-18 10:12:09: 12600u
@@ -172,7 +172,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>2. [PI2910] PI SAUCE ALGERIENNE BA PO</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PI2910] PI SAUCE ALGERIENNE BA PO</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-18 10:12:09: 9000u
@@ -200,7 +200,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>3. [PI0095] PI SAUCE CHEESY EASY 70% PO </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PI0095] PI SAUCE CHEESY EASY 70% PO </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:41:51: 900u

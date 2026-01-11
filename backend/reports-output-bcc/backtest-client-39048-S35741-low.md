@@ -89,7 +89,7 @@ La dernière commande remonte au 24 janvier 2025, soit plus de 60 jours. Bien qu
 
 
 <details>
-<summary><strong>1. [TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF009] TVF TARTINADE BIO POIS CHICHES 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-24 07:12:53: 1u

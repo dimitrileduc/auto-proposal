@@ -292,7 +292,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -307,7 +307,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -322,7 +322,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>3. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -337,7 +337,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>4. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -352,7 +352,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>5. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -367,7 +367,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>6. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 2u
@@ -382,7 +382,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>7. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 2u
@@ -397,7 +397,7 @@ La dernière commande remonte à 91 jours (23 juin). Bien que l'historique soit 
 
 
 <details>
-<summary><strong>8. [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NOC02] NOCCIOLATA Pâte noisette sans lait bio 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u

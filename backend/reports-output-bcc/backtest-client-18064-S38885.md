@@ -89,7 +89,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>1. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:23:39: 3u

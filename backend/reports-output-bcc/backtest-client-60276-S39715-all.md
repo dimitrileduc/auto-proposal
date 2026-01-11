@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre un intervalle de 110 jours entre les deux 
 
 
 <details>
-<summary><strong>1. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:46:44: 6u
@@ -192,7 +192,7 @@ L'analyse du cycle de commande montre un intervalle de 110 jours entre les deux 
 
 
 <details>
-<summary><strong>2. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:46:44: 6u
@@ -208,7 +208,7 @@ L'analyse du cycle de commande montre un intervalle de 110 jours entre les deux 
 
 
 <details>
-<summary><strong>3. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:46:44: 8u
@@ -224,7 +224,7 @@ L'analyse du cycle de commande montre un intervalle de 110 jours entre les deux 
 
 
 <details>
-<summary><strong>4. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-22 06:29:23: 6u

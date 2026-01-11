@@ -118,7 +118,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>1. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 09:54:21: 52u
@@ -143,7 +143,7 @@ La derni√®re commande remonte au 04/06/2025, soit plus de 90 jours sans activit√
 
 
 <details>
-<summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-04 09:54:21: 15u

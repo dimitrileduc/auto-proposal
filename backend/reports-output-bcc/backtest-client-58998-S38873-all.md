@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1694] LD FR TARTINAD BIO POIVRON 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-14 12:24:53: 25u
@@ -135,7 +135,7 @@
 
 
 <details>
-<summary><strong>2. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1695] LD FR TARTINADE BIO TOMATE 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-14 12:24:53: 25u

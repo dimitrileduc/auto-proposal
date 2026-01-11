@@ -89,7 +89,7 @@ Aucune donnée historique de commande n'est disponible pour ce produit (Recent O
 
 
 <details>
-<summary><strong>1. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

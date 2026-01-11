@@ -234,7 +234,7 @@ La dernière commande remonte au 29 août 2025, soit 68 jours avant la date actu
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-24 11:20:59: 80u
@@ -266,7 +266,7 @@ La dernière commande remonte au 29 août 2025, soit 68 jours avant la date actu
 
 
 <details>
-<summary><strong>2. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-24 11:20:59: 2u
@@ -291,7 +291,7 @@ La dernière commande remonte au 29 août 2025, soit 68 jours avant la date actu
 
 
 <details>
-<summary><strong>3. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-24 11:20:59: 40u
@@ -322,7 +322,7 @@ La dernière commande remonte au 29 août 2025, soit 68 jours avant la date actu
 
 
 <details>
-<summary><strong>4. [PF0097] FILOU MOUTARDE 5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF0097] FILOU MOUTARDE 5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-23 13:54:09: 60u
@@ -347,7 +347,7 @@ La dernière commande remonte au 29 août 2025, soit 68 jours avant la date actu
 
 
 <details>
-<summary><strong>5. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-29 11:50:51: 104u
@@ -374,7 +374,7 @@ La dernière commande remonte au 29 août 2025, soit 68 jours avant la date actu
 
 
 <details>
-<summary><strong>6. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-29 11:50:51: 52u

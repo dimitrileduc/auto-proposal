@@ -350,7 +350,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>1. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -365,7 +365,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>2. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -380,7 +380,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>3. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -395,7 +395,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -410,7 +410,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>5. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -425,7 +425,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>6. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -440,7 +440,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -455,7 +455,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>8. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -470,7 +470,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>9. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [DAF002] DAF Lime and Ginger with Jasmine flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u
@@ -485,7 +485,7 @@ La dernière commande remonte au 3 juin 2025, soit 48 jours avant la date actuel
 
 
 <details>
-<summary><strong>10. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 12:04:20: 1u

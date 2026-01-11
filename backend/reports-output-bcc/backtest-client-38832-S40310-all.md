@@ -205,7 +205,7 @@ Le cycle de commande observé est d'environ 90 jours (3 mois). La dernière comm
 
 
 <details>
-<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:41:58: 2u
@@ -223,7 +223,7 @@ Le cycle de commande observé est d'environ 90 jours (3 mois). La dernière comm
 
 
 <details>
-<summary><strong>2. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:41:58: 1u
@@ -240,7 +240,7 @@ Le cycle de commande observé est d'environ 90 jours (3 mois). La dernière comm
 
 
 <details>
-<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:41:58: 2u
@@ -258,7 +258,7 @@ Le cycle de commande observé est d'environ 90 jours (3 mois). La dernière comm
 
 
 <details>
-<summary><strong>4. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:41:58: 1u
@@ -274,7 +274,7 @@ Le cycle de commande observé est d'environ 90 jours (3 mois). La dernière comm
 
 
 <details>
-<summary><strong>5. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-24 11:00:28: 2u

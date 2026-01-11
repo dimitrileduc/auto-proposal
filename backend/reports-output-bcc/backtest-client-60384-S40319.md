@@ -379,7 +379,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>1. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 5u
@@ -395,7 +395,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>2. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 5u
@@ -411,7 +411,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>3. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 3u
@@ -427,7 +427,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>4. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 3u
@@ -443,7 +443,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>5. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 2u
@@ -459,7 +459,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>6. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 2u
@@ -475,7 +475,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 2u
@@ -491,7 +491,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>8. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 2u
@@ -507,7 +507,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>9. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 2u
@@ -522,7 +522,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>10. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [UPI01] Jus de pomme bio d'UPIGNY 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 4u
@@ -538,7 +538,7 @@ L'analyse du cycle de commande montre un intervalle précédent de 42 jours. Dep
 
 
 <details>
-<summary><strong>11. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:14:33: 3u

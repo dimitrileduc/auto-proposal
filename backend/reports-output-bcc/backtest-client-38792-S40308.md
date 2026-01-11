@@ -147,7 +147,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:29:46: 1u
@@ -163,7 +163,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:29:46: 2u
@@ -179,7 +179,7 @@ L'analyse du cycle de commande montre un intervalle de 51 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 13:29:46: 2u

@@ -321,7 +321,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>1. [LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV153] LV Vinaigrette Ciboulette 250 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 2u
@@ -337,7 +337,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>2. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 1u
@@ -353,7 +353,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>3. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 3u
@@ -369,7 +369,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 3u
@@ -384,7 +384,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 3u
@@ -399,7 +399,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 3u
@@ -414,7 +414,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 3u
@@ -429,7 +429,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:14:55: 1u
@@ -444,7 +444,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>9. [LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV154] LV Vinaigrette Miel et moutarde 250 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 10:58:22: 2u

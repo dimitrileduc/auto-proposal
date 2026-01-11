@@ -118,7 +118,7 @@ La dernière commande remonte au 21 août 2025, soit 38 jours avant la date actu
 
 
 <details>
-<summary><strong>1. [LV189] LV Tartinade Houmous Type 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV189] LV Tartinade Houmous Type 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:18:28: 32u
@@ -141,7 +141,7 @@ La dernière commande remonte au 21 août 2025, soit 38 jours avant la date actu
 
 
 <details>
-<summary><strong>2. [LV217] LV Tartinade Basilic 380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV217] LV Tartinade Basilic 380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:18:28: 64u

@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [DAM05] Dr. Antonio Martins organic & fairtrade coconut water 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-01 07:18:56: 1u
@@ -133,7 +133,7 @@
 
 
 <details>
-<summary><strong>2. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JOY07] JOY! Organic Fig Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

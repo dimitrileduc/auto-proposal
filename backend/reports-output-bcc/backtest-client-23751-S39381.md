@@ -321,7 +321,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>1. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:47:48: 1u
@@ -337,7 +337,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>2. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:47:48: 1u
@@ -352,7 +352,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:47:48: 1u
@@ -371,7 +371,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>4. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-04 11:47:48: 1u
@@ -386,7 +386,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>5. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:22:13: 1u
@@ -404,7 +404,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>6. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:22:13: 1u
@@ -421,7 +421,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>7. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:22:13: 1u
@@ -436,7 +436,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>8. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:22:13: 3u
@@ -454,7 +454,7 @@ Le produit présente une rotation très faible et irrégulière. La dernière co
 
 
 <details>
-<summary><strong>9. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:22:13: 1u

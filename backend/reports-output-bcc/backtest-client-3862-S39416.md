@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF0165] FILOU COCKTAIL FRENKEN 3 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0165] FILOU COCKTAIL FRENKEN 3 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-30 08:23:27: 162u

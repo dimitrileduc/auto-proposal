@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0959] FILOU TOMATO KETCHUP 10KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-12 08:08:05: 1u

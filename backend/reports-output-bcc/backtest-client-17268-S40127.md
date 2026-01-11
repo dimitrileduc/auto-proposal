@@ -466,7 +466,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>1. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF018] JF SAUCE SAMOURAI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 1u
@@ -484,7 +484,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 2u
@@ -504,7 +504,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>3. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 2u
@@ -522,7 +522,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 4u
@@ -542,7 +542,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 1u
@@ -561,7 +561,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>6. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 2u
@@ -580,7 +580,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 1u
@@ -599,7 +599,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>8. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 2u
@@ -616,7 +616,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 1u
@@ -631,7 +631,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>10. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF032] JF SAUCE LAPIN 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 1u
@@ -648,7 +648,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>11. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:07:17: 2u
@@ -665,7 +665,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>12. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:19:18: 1u
@@ -681,7 +681,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>13. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:19:18: 2u
@@ -696,7 +696,7 @@ L'analyse du cycle de commande montre des intervalles variant entre 34 et 69 jou
 
 
 <details>
-<summary><strong>14. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 06:50:35: 2u

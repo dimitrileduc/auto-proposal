@@ -89,7 +89,7 @@ La dernière commande remonte au 13 juin 2025, soit plus de 100 jours sans activ
 
 
 <details>
-<summary><strong>1. [PF0549] YVALLI SAUCE PIZZA 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0549] YVALLI SAUCE PIZZA 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-13 13:03:57: 72u

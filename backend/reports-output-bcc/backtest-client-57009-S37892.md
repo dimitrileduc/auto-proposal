@@ -147,7 +147,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>1. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF034] JF SAMOURAI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -162,7 +162,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u
@@ -177,7 +177,7 @@ L'historique montre une rotation extrêmement faible et irrégulière (une comma
 
 
 <details>
-<summary><strong>3. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-02-18 15:28:50: 1u

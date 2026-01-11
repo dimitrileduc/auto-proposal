@@ -89,7 +89,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 
 <details>
-<summary><strong>1. [PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-31 15:01:19: 112u

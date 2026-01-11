@@ -524,7 +524,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>1. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [KOKO02] KOKO Kombucha Lemon Ginger 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 1u
@@ -540,7 +540,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 2u
@@ -557,7 +557,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 2u
@@ -574,7 +574,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 2u
@@ -591,7 +591,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>5. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 2u
@@ -608,7 +608,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 2u
@@ -624,7 +624,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>7. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RISH01] RISH kombucha BIO - original 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 3u
@@ -640,7 +640,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>8. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:46:09: 3u
@@ -655,7 +655,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>9. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 07:11:31: 2u
@@ -671,7 +671,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>10. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 07:11:31: 1u
@@ -686,7 +686,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>11. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 07:11:31: 1u
@@ -701,7 +701,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>12. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 07:11:31: 1u
@@ -717,7 +717,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>13. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:30:27: 2u
@@ -732,7 +732,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>14. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:30:27: 2u
@@ -747,7 +747,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>15. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 06:30:27: 1u
@@ -762,7 +762,7 @@ La dernière commande remonte au 22 juillet 2025, soit plus de 110 jours sans ac
 
 
 <details>
-<summary><strong>16. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

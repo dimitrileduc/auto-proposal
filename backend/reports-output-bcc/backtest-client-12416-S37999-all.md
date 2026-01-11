@@ -118,7 +118,7 @@ L'analyse du cycle de commande récent montre un intervalle moyen d'environ 31 j
 
 
 <details>
-<summary><strong>1. [PF1795] LD MAYONNAI WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1795] LD MAYONNAI WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-24 14:14:40: 30u
@@ -144,7 +144,7 @@ L'analyse du cycle de commande récent montre un intervalle moyen d'environ 31 j
 
 
 <details>
-<summary><strong>2. [PF1803] LD SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1803] LD SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-24 14:14:40: 30u

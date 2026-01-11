@@ -89,7 +89,7 @@ L'analyse de l'historique montre un cycle de commande très espacé et irréguli
 
 
 <details>
-<summary><strong>1. [PF0302] FILOU/LD ANDALOUSE EXTRA  10 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0302] FILOU/LD ANDALOUSE EXTRA  10 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-01-08 07:47:23: 192u

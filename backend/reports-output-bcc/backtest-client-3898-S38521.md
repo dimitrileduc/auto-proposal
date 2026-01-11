@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [PF0509] YVALLI GR BOUL TOMATE 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0509] YVALLI GR BOUL TOMATE 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-04 06:22:13: 36u

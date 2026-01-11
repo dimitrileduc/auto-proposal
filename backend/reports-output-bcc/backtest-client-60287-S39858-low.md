@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 11:59:43: 2u

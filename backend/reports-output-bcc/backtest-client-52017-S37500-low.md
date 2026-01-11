@@ -118,7 +118,7 @@
 
 
 <details>
-<summary><strong>1. [LV156] LV Sauce barbecue 263 ml bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV156] LV Sauce barbecue 263 ml bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 09:44:36: 3u
@@ -133,7 +133,7 @@
 
 
 <details>
-<summary><strong>2. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-13 09:44:36: 6u

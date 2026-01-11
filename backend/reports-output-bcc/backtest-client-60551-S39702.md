@@ -234,7 +234,7 @@ L'analyse du cycle de commande montre un intervalle de 63 jours entre les deux d
 
 
 <details>
-<summary><strong>1. [LV188] LV Tartinade Aubergine  380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV188] LV Tartinade Aubergine  380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:29:55: 12u
@@ -250,7 +250,7 @@ L'analyse du cycle de commande montre un intervalle de 63 jours entre les deux d
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:29:55: 2u
@@ -266,7 +266,7 @@ L'analyse du cycle de commande montre un intervalle de 63 jours entre les deux d
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:29:55: 2u
@@ -282,7 +282,7 @@ L'analyse du cycle de commande montre un intervalle de 63 jours entre les deux d
 
 
 <details>
-<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:29:55: 2u
@@ -298,7 +298,7 @@ L'analyse du cycle de commande montre un intervalle de 63 jours entre les deux d
 
 
 <details>
-<summary><strong>5. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-20 11:29:55: 2u
@@ -313,7 +313,7 @@ L'analyse du cycle de commande montre un intervalle de 63 jours entre les deux d
 
 
 <details>
-<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 13:17:07: 2u

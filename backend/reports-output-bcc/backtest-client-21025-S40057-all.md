@@ -321,7 +321,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV145] LV Sauce Tartare 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:22:43: 1u
@@ -337,7 +337,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>2. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:22:43: 2u
@@ -355,7 +355,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:22:43: 2u
@@ -373,7 +373,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>4. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:22:43: 3u
@@ -391,7 +391,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>5. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:22:43: 1u
@@ -410,7 +410,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:22:43: 1u
@@ -429,7 +429,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-15 06:22:43: 1u
@@ -445,7 +445,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>8. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 06:55:56: 3u
@@ -463,7 +463,7 @@ L'historique montre une rotation très faible et irrégulière (1 à 3 unités p
 
 
 <details>
-<summary><strong>9. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 06:55:56: 1u

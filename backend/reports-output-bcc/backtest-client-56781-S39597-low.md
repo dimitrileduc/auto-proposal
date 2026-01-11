@@ -118,7 +118,7 @@ La dernière commande remonte à 90 jours (14 juillet). Bien que la rotation soi
 
 
 <details>
-<summary><strong>1. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 09:18:20: 1u
@@ -133,7 +133,7 @@ La dernière commande remonte à 90 jours (14 juillet). Bien que la rotation soi
 
 
 <details>
-<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 08:12:52: 1u

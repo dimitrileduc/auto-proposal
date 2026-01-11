@@ -118,7 +118,7 @@ La dernière commande remonte au 09/05/2025, soit plus de 120 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-18 06:19:53: 2u
@@ -133,7 +133,7 @@ La dernière commande remonte au 09/05/2025, soit plus de 120 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF004] TVF TARTINADE BIO OLIVE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-09 12:28:41: 2u

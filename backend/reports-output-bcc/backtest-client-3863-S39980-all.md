@@ -118,7 +118,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier (environ
 
 
 <details>
-<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 14:04:36: 16u
@@ -151,7 +151,7 @@ L'analyse de l'historique récent montre un cycle de commande régulier (environ
 
 
 <details>
-<summary><strong>2. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-13 14:04:36: 16u

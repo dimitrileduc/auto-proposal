@@ -176,7 +176,7 @@ Le cycle observé entre les deux dernières commandes est d'environ 87 jours. De
 
 
 <details>
-<summary><strong>1. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 10:12:30: 16u
@@ -192,7 +192,7 @@ Le cycle observé entre les deux dernières commandes est d'environ 87 jours. De
 
 
 <details>
-<summary><strong>2. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0042] MF Brotaufstrich Tomate Bärlauch 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 10:12:30: 16u
@@ -208,7 +208,7 @@ Le cycle observé entre les deux dernières commandes est d'environ 87 jours. De
 
 
 <details>
-<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 10:12:30: 16u
@@ -224,7 +224,7 @@ Le cycle observé entre les deux dernières commandes est d'environ 87 jours. De
 
 
 <details>
-<summary><strong>4. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 10:12:30: 16u

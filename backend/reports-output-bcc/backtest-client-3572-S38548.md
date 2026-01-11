@@ -147,7 +147,7 @@
 
 
 <details>
-<summary><strong>1. [PF0232] BOLOGNAISE POULET TADAL 670 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0232] BOLOGNAISE POULET TADAL 670 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 14:15:54: 360u
@@ -166,7 +166,7 @@
 
 
 <details>
-<summary><strong>2. [PF0092] BOLOGNAISE BOEUF TADAL 670 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0092] BOLOGNAISE BOEUF TADAL 670 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 14:15:54: 288u
@@ -185,7 +185,7 @@
 
 
 <details>
-<summary><strong>3. [PF1168] TADAL VOL AU VENT HALAL 800G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1168] TADAL VOL AU VENT HALAL 800G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 14:15:54: 256u

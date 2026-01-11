@@ -466,7 +466,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:26:45: 1u
@@ -485,7 +485,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:26:45: 1u
@@ -504,7 +504,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>3. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:26:45: 1u
@@ -521,7 +521,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>4. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 06:26:45: 1u
@@ -537,7 +537,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>5. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:53:29: 1u
@@ -553,7 +553,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>6. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:53:29: 1u
@@ -570,7 +570,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>7. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-08 06:53:29: 1u
@@ -585,7 +585,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>8. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-04 09:09:35: 1u
@@ -601,7 +601,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>9. [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-04 09:09:35: 1u
@@ -617,7 +617,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>10. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-04 09:09:35: 1u
@@ -633,7 +633,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>11. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-04 09:09:35: 1u
@@ -651,7 +651,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>12. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-04 09:09:35: 1u
@@ -670,7 +670,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>13. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-04 09:09:35: 1u
@@ -688,7 +688,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 120 jours. L'histori
 
 
 <details>
-<summary><strong>14. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:35:13: 1u

@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>1. [PF1689] FILOU CURRY KETCH SQUEEZE 300</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1689] FILOU CURRY KETCH SQUEEZE 300</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-12 12:13:43: 1u
@@ -194,7 +194,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>2. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-12 12:13:43: 5u
@@ -225,7 +225,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>3. [PF1539] FILOU BOULETTE CHASSEUR 800G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1539] FILOU BOULETTE CHASSEUR 800G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-07 08:47:27: 2u
@@ -254,7 +254,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>4. [PF1224] FILOU BOULETTES TOMATE 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF1224] FILOU BOULETTES TOMATE 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-07 11:40:00: 2u

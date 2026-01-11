@@ -89,7 +89,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 21
 
 
 <details>
-<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:38:04: 54u

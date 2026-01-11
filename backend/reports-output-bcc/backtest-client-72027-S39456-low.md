@@ -89,7 +89,7 @@ La dernière commande remonte au 28 mai 2025, soit plus de 120 jours sans activi
 
 
 <details>
-<summary><strong>1. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-28 08:59:39: 2u

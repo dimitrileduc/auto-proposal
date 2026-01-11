@@ -147,7 +147,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:39:31: 26u
@@ -166,7 +166,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>2. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:39:31: 1u
@@ -183,7 +183,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>3. [PF0097] FILOU MOUTARDE 5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0097] FILOU MOUTARDE 5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:39:31: 6u

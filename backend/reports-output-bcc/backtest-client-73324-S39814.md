@@ -321,7 +321,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:28:51: 1u
@@ -339,7 +339,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:28:51: 1u
@@ -358,7 +358,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:28:51: 2u
@@ -376,7 +376,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>4. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-01 07:28:51: 1u
@@ -393,7 +393,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>5. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:05:05: 2u
@@ -410,7 +410,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>6. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:05:05: 1u
@@ -426,7 +426,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>7. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:05:05: 3u
@@ -443,7 +443,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:05:05: 2u
@@ -460,7 +460,7 @@ L'analyse du cycle de commande montre des intervalles de 20 jours puis 59 jours.
 
 
 <details>
-<summary><strong>9. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:35:15: 1u

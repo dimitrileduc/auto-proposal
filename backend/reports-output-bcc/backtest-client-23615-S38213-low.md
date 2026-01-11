@@ -234,7 +234,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [LV040] LV Caprons apéritifs 240g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV040] LV Caprons apéritifs 240g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u
@@ -249,7 +249,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u
@@ -264,7 +264,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u
@@ -279,7 +279,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u
@@ -294,7 +294,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u
@@ -309,7 +309,7 @@ La dernière commande remonte au 02/04/2025, soit plus de 110 jours. Bien que la
 
 
 <details>
-<summary><strong>6. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-02 11:01:41: 1u

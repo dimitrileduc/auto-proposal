@@ -234,7 +234,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>1. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:42:59: 1u
@@ -249,7 +249,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>2. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:42:59: 1u
@@ -265,7 +265,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>3. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 06:42:59: 1u
@@ -282,7 +282,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 11:29:01: 1u
@@ -298,7 +298,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>5. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-22 11:29:01: 1u
@@ -314,7 +314,7 @@ L'analyse du cycle de commande montre des intervalles d'environ 30 à 35 jours (
 
 
 <details>
-<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:29:54: 1u

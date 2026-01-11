@@ -379,7 +379,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [MF0013] MF Olives Vertes 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0013] MF Olives Vertes 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 2u
@@ -399,7 +399,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [MF0012] MF Olives Mix 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0012] MF Olives Mix 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 2u
@@ -419,7 +419,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 2u
@@ -439,7 +439,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 1u
@@ -454,7 +454,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>5. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 2u
@@ -474,7 +474,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>6. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 1u
@@ -490,7 +490,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>7. [MF0051] MF Kidney Beans 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0051] MF Kidney Beans 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 1u
@@ -505,7 +505,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>8. [LV158] LV Moutarde 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV158] LV Moutarde 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 2u
@@ -522,7 +522,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>9. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 13:50:27: 1u
@@ -541,7 +541,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>10. [LV143] LV Mayonnaise (huile 70%) 200 ml </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV143] LV Mayonnaise (huile 70%) 200 ml </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 12:03:35: 2u
@@ -559,7 +559,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 140 jours. Bien que 
 
 
 <details>
-<summary><strong>11. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 12:03:35: 1u

@@ -379,7 +379,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>1. [CB006] CB Blackcurrant Apple juice 1l</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [CB006] CB Blackcurrant Apple juice 1l</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 1u
@@ -395,7 +395,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>2. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0055] MF Noix de cajou - Curry 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 1u
@@ -412,7 +412,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>3. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 1u
@@ -428,7 +428,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>4. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 2u
@@ -449,7 +449,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 3u
@@ -467,7 +467,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 4u
@@ -489,7 +489,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>7. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 2u
@@ -510,7 +510,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>8. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 2u
@@ -529,7 +529,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>9. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-09 10:22:05: 2u
@@ -548,7 +548,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>10. [MF0014] MF Olives noires 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0014] MF Olives noires 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-04 06:23:14: 1u
@@ -564,7 +564,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une derni
 
 
 <details>
-<summary><strong>11. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-04 06:23:14: 2u

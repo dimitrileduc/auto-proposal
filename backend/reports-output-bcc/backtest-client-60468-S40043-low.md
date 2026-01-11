@@ -89,7 +89,7 @@
 
 
 <details>
-<summary><strong>1. [LV138] LV Tartinade Carotte gingembre  380g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV138] LV Tartinade Carotte gingembre  380g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 06:38:08: 2u

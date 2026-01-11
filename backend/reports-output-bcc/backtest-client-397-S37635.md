@@ -176,7 +176,7 @@ La dernière commande remonte au 31 mars 2025, soit environ 85 jours. L'historiq
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:36:03: 2u
@@ -191,7 +191,7 @@ La dernière commande remonte au 31 mars 2025, soit environ 85 jours. L'historiq
 
 
 <details>
-<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:36:03: 2u
@@ -206,7 +206,7 @@ La dernière commande remonte au 31 mars 2025, soit environ 85 jours. L'historiq
 
 
 <details>
-<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:36:03: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte au 31 mars 2025, soit environ 85 jours. L'historiq
 
 
 <details>
-<summary><strong>4. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:36:03: 2u

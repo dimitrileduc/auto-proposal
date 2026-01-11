@@ -89,7 +89,7 @@ L'analyse montre une absence de commandes récentes depuis le 02/10/2025 (soit 3
 
 
 <details>
-<summary><strong>1. [PF01012] CARREFOUR VOL AU VENT 400 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF01012] CARREFOUR VOL AU VENT 400 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 11:47:01: 104u

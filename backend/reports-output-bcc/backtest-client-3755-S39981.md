@@ -147,7 +147,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 30 à 45 
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:43:12: 80u
@@ -180,7 +180,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 30 à 45 
 
 
 <details>
-<summary><strong>2. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0085] FILOU CURRY KETCHUP  10 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 06:43:12: 1u
@@ -209,7 +209,7 @@ L'analyse du cycle de commande montre une fréquence moyenne d'environ 30 à 45 
 
 
 <details>
-<summary><strong>3. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 08:11:04: 1u

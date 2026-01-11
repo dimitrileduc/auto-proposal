@@ -205,7 +205,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:15:41: 2u
@@ -223,7 +223,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>2. [LD015] LD Onion Spread 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD015] LD Onion Spread 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-02 06:15:41: 1u
@@ -240,7 +240,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:13:18: 2u
@@ -257,7 +257,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>4. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 11:45:36: 2u
@@ -273,7 +273,7 @@ Le produit présente une rotation très faible et irrégulière avec une derniè
 
 
 <details>
-<summary><strong>5. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LD007] LD Organic Pineapple Coconut Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 11:45:36: 1u

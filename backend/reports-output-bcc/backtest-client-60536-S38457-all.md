@@ -147,7 +147,7 @@ La dernière commande remonte au 07/04/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>1. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-07 09:14:27: 3u
@@ -162,7 +162,7 @@ La dernière commande remonte au 07/04/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>2. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-07 09:14:27: 3u
@@ -177,7 +177,7 @@ La dernière commande remonte au 07/04/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>3. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RISH05] RISH kombucha BIO - rose 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-07 09:14:27: 1u

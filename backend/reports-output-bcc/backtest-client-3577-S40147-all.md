@@ -118,7 +118,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier mais fréquent
 
 
 <details>
-<summary><strong>1. [PF2036] ITM BOULETTES TOMATE 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF2036] ITM BOULETTES TOMATE 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 08:27:27: 128u
@@ -149,7 +149,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier mais fréquent
 
 
 <details>
-<summary><strong>2. [PF2996] ITM BO VIN CIBOULET PET 450</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF2996] ITM BO VIN CIBOULET PET 450</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 08:27:27: 112u

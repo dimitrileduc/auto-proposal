@@ -176,7 +176,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 90 jours. Bien que la 
 
 
 <details>
-<summary><strong>1. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:23:39: 3u
@@ -194,7 +194,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 90 jours. Bien que la 
 
 
 <details>
-<summary><strong>2. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [ORG04] ORGANICA crunchy fruit fraise 12g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:23:39: 1u
@@ -209,7 +209,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 90 jours. Bien que la 
 
 
 <details>
-<summary><strong>3. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PAO01] PAOLA cola verre 250ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:23:39: 1u
@@ -224,7 +224,7 @@ La dernière commande remonte au 02/06/2025, soit plus de 90 jours. Bien que la 
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-02 12:23:39: 1u

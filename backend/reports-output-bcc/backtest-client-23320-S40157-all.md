@@ -524,7 +524,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF038] JF KETCHUP SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 1u
@@ -541,7 +541,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 8u
@@ -558,7 +558,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>3. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 6u
@@ -575,7 +575,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 4u
@@ -592,7 +592,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 2u
@@ -609,7 +609,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>6. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 2u
@@ -624,7 +624,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 3u
@@ -642,7 +642,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>8. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 2u
@@ -660,7 +660,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>9. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-17 11:18:55: 3u
@@ -678,7 +678,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>10. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:28:24: 2u
@@ -693,7 +693,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>11. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:28:24: 4u
@@ -708,7 +708,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>12. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:28:24: 3u
@@ -724,7 +724,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>13. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:28:24: 2u
@@ -740,7 +740,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>14. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 06:28:24: 2u
@@ -757,7 +757,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>15. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -774,7 +774,7 @@ La dernière commande remonte au 23 juin 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>16. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

@@ -379,7 +379,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:25:40: 2u
@@ -395,7 +395,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>2. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:25:40: 2u
@@ -410,7 +410,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:25:40: 2u
@@ -426,7 +426,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>4. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:25:40: 2u
@@ -441,7 +441,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>5. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-19 06:25:40: 1u
@@ -457,7 +457,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>6. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -472,7 +472,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>7. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -487,7 +487,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>8. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -502,7 +502,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>9. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -517,7 +517,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>10. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [NUT02] NUTS & BERRIES energy bar Superfood bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 06:40:58: 1u
@@ -532,7 +532,7 @@ La dernière commande remonte au 10 juin 2025, soit environ 119 jours. Bien que 
 
 
 <details>
-<summary><strong>11. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

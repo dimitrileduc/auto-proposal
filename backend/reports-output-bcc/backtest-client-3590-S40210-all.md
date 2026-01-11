@@ -234,7 +234,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 25 à 30 jou
 
 
 <details>
-<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 08:38:17: 240u
@@ -267,7 +267,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 25 à 30 jou
 
 
 <details>
-<summary><strong>2. [PF1140] FILOU SAUCE CHASSEUR 850G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1140] FILOU SAUCE CHASSEUR 850G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 08:38:17: 5u
@@ -300,7 +300,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 25 à 30 jou
 
 
 <details>
-<summary><strong>3. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF0075] FILOU CHASSEUR  10 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 06:58:44: 132u
@@ -333,7 +333,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 25 à 30 jou
 
 
 <details>
-<summary><strong>4. [PF3266] JF SAUCE BEARNAISE 3L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [PF3266] JF SAUCE BEARNAISE 3L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:21:48: 12u
@@ -364,7 +364,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 25 à 30 jou
 
 
 <details>
-<summary><strong>5. [PF0084] FILOU CARBONNADES 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [PF0084] FILOU CARBONNADES 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-06 09:21:48: 1u
@@ -383,7 +383,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 25 à 30 jou
 
 
 <details>
-<summary><strong>6. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [PF0088] FILOU VOL AU VENT 800 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

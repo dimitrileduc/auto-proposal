@@ -611,7 +611,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>1. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV159] LV Tartinade aux Truffes  135g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 2u
@@ -632,7 +632,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>2. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV155] LV Vinaigrette Caesar 250 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 1u
@@ -648,7 +648,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 2u
@@ -670,7 +670,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LV131] LV Tartinade Potiron 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 1u
@@ -685,7 +685,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 3u
@@ -708,7 +708,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>6. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 2u
@@ -727,7 +727,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>7. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 1u
@@ -749,7 +749,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>8. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV055] LV Mini grissini à l'huile d'olive  100g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 2u
@@ -770,7 +770,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>9. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:54:41: 1u
@@ -787,7 +787,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>10. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV137] LV Tartinade Lentilles Curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 07:03:26: 2u
@@ -806,7 +806,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>11. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV126] LV Tartinade Tomate Ail des Ours 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 07:03:26: 2u
@@ -829,7 +829,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>12. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 07:03:26: 2u
@@ -845,7 +845,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>13. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 07:03:26: 2u
@@ -869,7 +869,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>14. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 07:03:26: 1u
@@ -890,7 +890,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>15. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 07:03:26: 1u
@@ -909,7 +909,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>16. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV133] LV Tartinade Ananas Coco 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:39:17: 2u
@@ -927,7 +927,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>17. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:39:17: 2u
@@ -946,7 +946,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>18. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:39:17: 2u
@@ -961,7 +961,7 @@ L'analyse de l'historique montre un cycle de commande irrégulier avec une absen
 
 
 <details>
-<summary><strong>19. [MF0061] MF Compote</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [MF0061] MF Compote</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-15 06:39:17: 2u

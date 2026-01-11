@@ -118,7 +118,7 @@ La dernière commande remonte au 14 octobre 2024, soit plus de 100 jours. Bien q
 
 
 <details>
-<summary><strong>1. [PF2937] LD FR TARTINADE BIO POIS 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF2937] LD FR TARTINADE BIO POIS 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-14 12:31:38: 15u
@@ -135,7 +135,7 @@ La dernière commande remonte au 14 octobre 2024, soit plus de 100 jours. Bien q
 
 
 <details>
-<summary><strong>2. [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-10-14 12:31:38: 20u

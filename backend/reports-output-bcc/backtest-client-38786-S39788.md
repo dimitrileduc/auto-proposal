@@ -263,7 +263,7 @@ La dernière commande remonte au 17 juillet 2025, soit plus de 90 jours. Bien qu
 
 
 <details>
-<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:59:41: 2u
@@ -279,7 +279,7 @@ La dernière commande remonte au 17 juillet 2025, soit plus de 90 jours. Bien qu
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:59:41: 1u
@@ -294,7 +294,7 @@ La dernière commande remonte au 17 juillet 2025, soit plus de 90 jours. Bien qu
 
 
 <details>
-<summary><strong>3. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:59:41: 1u
@@ -310,7 +310,7 @@ La dernière commande remonte au 17 juillet 2025, soit plus de 90 jours. Bien qu
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-17 06:59:41: 2u
@@ -326,7 +326,7 @@ La dernière commande remonte au 17 juillet 2025, soit plus de 90 jours. Bien qu
 
 
 <details>
-<summary><strong>5. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -341,7 +341,7 @@ La dernière commande remonte au 17 juillet 2025, soit plus de 90 jours. Bien qu
 
 
 <details>
-<summary><strong>6. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -356,7 +356,7 @@ La dernière commande remonte au 17 juillet 2025, soit plus de 90 jours. Bien qu
 
 
 <details>
-<summary><strong>7. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

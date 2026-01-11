@@ -205,7 +205,7 @@ La dernière commande remonte au 14 mars 2025, soit plus de 100 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-14 07:49:40: 1u
@@ -220,7 +220,7 @@ La dernière commande remonte au 14 mars 2025, soit plus de 100 jours sans activ
 
 
 <details>
-<summary><strong>2. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-14 07:49:40: 1u
@@ -235,7 +235,7 @@ La dernière commande remonte au 14 mars 2025, soit plus de 100 jours sans activ
 
 
 <details>
-<summary><strong>3. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-14 07:49:40: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte au 14 mars 2025, soit plus de 100 jours sans activ
 
 
 <details>
-<summary><strong>4. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF029] JF VOL AU VENT BOCAL 400G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-14 07:49:40: 2u
@@ -265,7 +265,7 @@ La dernière commande remonte au 14 mars 2025, soit plus de 100 jours sans activ
 
 
 <details>
-<summary><strong>5. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

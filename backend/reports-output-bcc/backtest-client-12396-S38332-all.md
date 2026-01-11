@@ -234,7 +234,7 @@ L'analyse montre une rotation extrêmement faible et irrégulière (une commande
 
 
 <details>
-<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:32:04: 2u
@@ -250,7 +250,7 @@ L'analyse montre une rotation extrêmement faible et irrégulière (une commande
 
 
 <details>
-<summary><strong>2. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:32:04: 1u
@@ -265,7 +265,7 @@ L'analyse montre une rotation extrêmement faible et irrégulière (une commande
 
 
 <details>
-<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:32:04: 1u
@@ -280,7 +280,7 @@ L'analyse montre une rotation extrêmement faible et irrégulière (une commande
 
 
 <details>
-<summary><strong>4. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:32:04: 1u
@@ -295,7 +295,7 @@ L'analyse montre une rotation extrêmement faible et irrégulière (une commande
 
 
 <details>
-<summary><strong>5. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:32:04: 1u
@@ -310,7 +310,7 @@ L'analyse montre une rotation extrêmement faible et irrégulière (une commande
 
 
 <details>
-<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-31 06:32:04: 1u

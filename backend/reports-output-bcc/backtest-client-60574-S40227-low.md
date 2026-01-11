@@ -89,7 +89,7 @@ La dernière commande remonte au 25 août 2025, soit 80 jours avant la date actu
 
 
 <details>
-<summary><strong>1. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0056] MF Noix de cajou - Herbes de Provence 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:30:29: 1u

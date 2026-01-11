@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre une irrégularité marquée avec une derni
 
 
 <details>
-<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:33:38: 10u
@@ -193,7 +193,7 @@ L'analyse du cycle de commande montre une irrégularité marquée avec une derni
 
 
 <details>
-<summary><strong>2. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:33:38: 7u
@@ -210,7 +210,7 @@ L'analyse du cycle de commande montre une irrégularité marquée avec une derni
 
 
 <details>
-<summary><strong>3. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-11 08:33:38: 5u
@@ -227,7 +227,7 @@ L'analyse du cycle de commande montre une irrégularité marquée avec une derni
 
 
 <details>
-<summary><strong>4. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [AQUA01] AQUAPAX - natural mineral water 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-05 06:38:25: 30u

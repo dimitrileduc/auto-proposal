@@ -524,7 +524,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 1u
@@ -542,7 +542,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 2u
@@ -560,7 +560,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>3. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF002] JF MAYONNAI BASILIC 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 1u
@@ -575,7 +575,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>4. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 2u
@@ -592,7 +592,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 3u
@@ -610,7 +610,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>6. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 1u
@@ -627,7 +627,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 1u
@@ -645,7 +645,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>8. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 1u
@@ -661,7 +661,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>9. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 2u
@@ -677,7 +677,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>10. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-14 08:38:54: 1u
@@ -695,7 +695,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>11. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 09:56:54: 2u
@@ -711,7 +711,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>12. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF025] JF VINAIGRETTE FH WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 09:56:54: 1u
@@ -728,7 +728,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>13. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 09:56:54: 2u
@@ -743,7 +743,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>14. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 09:56:54: 1u
@@ -758,7 +758,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>15. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-06 09:56:54: 3u
@@ -775,7 +775,7 @@ La dernière commande remonte au 16 avril 2025, soit plus de 140 jours sans acti
 
 
 <details>
-<summary><strong>16. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-16 08:07:34: 1u

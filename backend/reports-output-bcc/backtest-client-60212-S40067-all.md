@@ -350,7 +350,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:10: 1u
@@ -371,7 +371,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:10: 3u
@@ -393,7 +393,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:10: 3u
@@ -415,7 +415,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:10: 4u
@@ -437,7 +437,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>5. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:10: 1u
@@ -458,7 +458,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>6. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-22 13:43:10: 1u
@@ -477,7 +477,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>7. [ORG03] ORGANICA crunchy fruit myrtille 16g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [ORG03] ORGANICA crunchy fruit myrtille 16g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:38:48: 1u
@@ -494,7 +494,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>8. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-09 06:38:48: 1u
@@ -514,7 +514,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>9. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 13:32:58: 1u
@@ -530,7 +530,7 @@ L'analyse du cycle de commande montre une fréquence régulière d'environ 60 jo
 
 
 <details>
-<summary><strong>10. [ORG08] ORGANICA crunchy fruit framboise 12g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [ORG08] ORGANICA crunchy fruit framboise 12g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-27 07:04:23: 1u

@@ -147,7 +147,7 @@ L'analyse du cycle de commande montre une fréquence d'approvisionnement d'envir
 
 
 <details>
-<summary><strong>1. [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 12:11:54: 150u
@@ -174,7 +174,7 @@ L'analyse du cycle de commande montre une fréquence d'approvisionnement d'envir
 
 
 <details>
-<summary><strong>2. [PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-16 09:30:15: 150u
@@ -199,7 +199,7 @@ L'analyse du cycle de commande montre une fréquence d'approvisionnement d'envir
 
 
 <details>
-<summary><strong>3. [PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-04 13:27:14: 30u

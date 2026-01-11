@@ -350,7 +350,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:22:59: 1u
@@ -371,7 +371,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>2. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 10:22:59: 1u
@@ -391,7 +391,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>3. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-24 13:29:07: 2u
@@ -408,7 +408,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-24 13:29:07: 2u
@@ -424,7 +424,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>5. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-24 13:29:07: 2u
@@ -442,7 +442,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>6. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-24 13:29:07: 1u
@@ -460,7 +460,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>7. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF024] JF VINAIGRET CIBOULE WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-24 13:29:07: 1u
@@ -477,7 +477,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>8. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF026] JF VINAIGRET TRUFFES WECK 200M</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-24 13:29:07: 1u
@@ -494,7 +494,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>9. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-24 13:29:07: 1u
@@ -510,7 +510,7 @@ L'analyse montre une rotation lente mais régulière. La dernière commande remo
 
 
 <details>
-<summary><strong>10. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-10 13:23:46: 2u

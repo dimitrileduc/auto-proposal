@@ -176,7 +176,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [fsv02] Noix de cajou nature bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [fsv02] Noix de cajou nature bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte au 26 mai 2025, soit environ 97 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [fsv09] Noix de cajou grillées salées bio vrac 2,8kg </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [fsv09] Noix de cajou grillées salées bio vrac 2,8kg </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-26 11:12:18: 1u

@@ -843,7 +843,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>1. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -859,7 +859,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -875,7 +875,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>3. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -891,7 +891,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>4. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT05] RITCHIE Cola - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -907,7 +907,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>5. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -923,7 +923,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>6. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -939,7 +939,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>7. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -955,7 +955,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>8. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [RIT11] RITCHIE Orange Sanguine - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-05 14:55:23: 1u
@@ -970,7 +970,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>9. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 3u
@@ -985,7 +985,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>10. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 2u
@@ -1000,7 +1000,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>11. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1015,7 +1015,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>12. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1030,7 +1030,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>13. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JOY01] JOY! Organic Sweet Orange Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1045,7 +1045,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>14. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [JOY06] JOY! Organic Rhubarb Jam 370g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1060,7 +1060,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>15. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 2u
@@ -1075,7 +1075,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>16. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 2u
@@ -1090,7 +1090,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>17. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 2u
@@ -1105,7 +1105,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>18. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 2u
@@ -1120,7 +1120,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>19. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [REB05] REB chips bio - sel de mer 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1135,7 +1135,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>20. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [REB06] REB chips bio - paprika fumé 35g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1150,7 +1150,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>21. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>21. [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1165,7 +1165,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>22. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>22. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 2u
@@ -1180,7 +1180,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>23. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>23. [RIT01] RITCHIE Orange - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1195,7 +1195,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>24. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>24. [RIT04] RITCHIE Pamplemousse - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1210,7 +1210,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>25. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>25. [RIT06] RITCHIE Cola ZERO - verre 275ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1225,7 +1225,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>26. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>26. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u
@@ -1240,7 +1240,7 @@ La dernière commande remonte au 14 octobre, soit il y a 30 jours. Avec un seuil
 
 
 <details>
-<summary><strong>27. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>27. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-14 13:35:55: 1u

@@ -466,7 +466,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>1. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [WIG03] WIGNAC cidre naturel bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -481,7 +481,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>2. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [WIG04] WIGNAC cidre rosé bio 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -496,7 +496,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>3. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -511,7 +511,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>4. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 2u
@@ -527,7 +527,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>5. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 2u
@@ -543,7 +543,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>6. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -558,7 +558,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>7. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -573,7 +573,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>8. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -588,7 +588,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>9. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [DAF001] DAF Elderflower with Pomegrenade juice 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -604,7 +604,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>10. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [DAF004] DAF Peach and Lemon with Honeybush flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -620,7 +620,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>11. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [DAF003] DAF Passionfruit with Hibiscus flower 25cl</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 13:23:28: 1u
@@ -636,7 +636,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>12. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:32:14: 1u
@@ -651,7 +651,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>13. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:32:14: 1u
@@ -666,7 +666,7 @@ La dernière commande remonte au 10 juin 2025, soit 82 jours sans activité. Bie
 
 
 <details>
-<summary><strong>14. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 08:32:14: 1u

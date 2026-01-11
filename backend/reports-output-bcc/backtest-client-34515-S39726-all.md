@@ -466,7 +466,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>1. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0032] MF Tarti Pois chiches 250 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 1u
@@ -483,7 +483,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>2. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 1u
@@ -500,7 +500,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 4u
@@ -518,7 +518,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 4u
@@ -536,7 +536,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>5. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 1u
@@ -552,7 +552,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 2u
@@ -570,7 +570,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 1u
@@ -587,7 +587,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>8. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [REB11] ReBEL chips premium & bio - truffes 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-16 06:38:03: 1u
@@ -603,7 +603,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>9. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [MF0028] ​MF Tarti Carotte Gingembre 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:13:56: 1u
@@ -619,7 +619,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>10. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:13:56: 1u
@@ -636,7 +636,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>11. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:13:56: 1u
@@ -653,7 +653,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>12. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:13:56: 1u
@@ -670,7 +670,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>13. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:13:56: 1u
@@ -687,7 +687,7 @@ L'analyse du cycle de commande montre des intervalles de 31 et 21 jours. La dern
 
 
 <details>
-<summary><strong>14. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-28 06:13:56: 1u

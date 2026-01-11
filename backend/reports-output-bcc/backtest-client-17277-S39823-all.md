@@ -263,7 +263,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 12:04:41: 1u
@@ -278,7 +278,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 12:04:41: 1u
@@ -296,7 +296,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>3. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF023] JF MOUTARDE DOUCE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-05 12:04:41: 1u
@@ -313,7 +313,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>4. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-02 07:33:16: 1u
@@ -328,7 +328,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>5. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF014] JF SAUCE BEARNAISE 470ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-02 07:33:16: 1u
@@ -343,7 +343,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>6. [JF021] JF PICKLES 350 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF021] JF PICKLES 350 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-02 07:33:16: 2u
@@ -358,7 +358,7 @@ La dernière commande remonte au 05/09/2025, soit 45 jours avant la date actuell
 
 
 <details>
-<summary><strong>7. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF007] JF SAUCE MAYO TOMAT 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

@@ -118,7 +118,7 @@ L'analyse du cycle de commande montre une fréquence régulière (souvent hebdom
 
 
 <details>
-<summary><strong>1. [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:40:31: 98u
@@ -143,7 +143,7 @@ L'analyse du cycle de commande montre une fréquence régulière (souvent hebdom
 
 
 <details>
-<summary><strong>2. [PF3300] DLL MAYONNAISE OEUFS 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF3300] DLL MAYONNAISE OEUFS 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-03 07:40:31: 780u

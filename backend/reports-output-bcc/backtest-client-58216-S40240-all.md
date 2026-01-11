@@ -263,7 +263,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -278,7 +278,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -293,7 +293,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -308,7 +308,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>4. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -323,7 +323,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -338,7 +338,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>6. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u
@@ -353,7 +353,7 @@ La dernière commande remonte au 21 août 2025, soit 82 jours sans réapprovisio
 
 
 <details>
-<summary><strong>7. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV134] LV BIO Tartinade Olives Vertes 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-21 14:00:52: 2u

@@ -147,7 +147,7 @@ La dernière commande remonte au 09/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>1. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:14:05: 3u
@@ -162,7 +162,7 @@ La dernière commande remonte au 09/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>2. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:14:05: 1u
@@ -177,7 +177,7 @@ La dernière commande remonte au 09/07/2025, soit plus de 120 jours sans activit
 
 
 <details>
-<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-09 11:14:05: 4u

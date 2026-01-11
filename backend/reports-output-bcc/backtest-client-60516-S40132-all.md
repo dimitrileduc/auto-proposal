@@ -234,7 +234,7 @@ La dernière commande remonte au 10 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 13:29:37: 2u
@@ -250,7 +250,7 @@ La dernière commande remonte au 10 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>2. [fsv01] Cerneaux de noix nature bio vrac 1,8kg</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [fsv01] Cerneaux de noix nature bio vrac 1,8kg</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 13:29:37: 3u
@@ -266,7 +266,7 @@ La dernière commande remonte au 10 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>3. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 13:29:37: 1u
@@ -282,7 +282,7 @@ La dernière commande remonte au 10 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>4. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RISH04] RISH kombucha BIO - smash basil 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 13:29:37: 1u
@@ -297,7 +297,7 @@ La dernière commande remonte au 10 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>5. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RISH02] RISH kombucha BIO - hibiscus 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-10 13:29:37: 1u
@@ -312,7 +312,7 @@ La dernière commande remonte au 10 septembre 2025, soit 55 jours avant la date 
 
 
 <details>
-<summary><strong>6. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [WIG07] WIGNAC cidre naturel bio sans alcool 750ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 12:02:40: 1u

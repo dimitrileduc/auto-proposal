@@ -350,7 +350,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF006] TVF TARTINADE BIO TOMATE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 08:53:54: 1u
@@ -368,7 +368,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>2. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 08:53:54: 1u
@@ -386,7 +386,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 08:53:54: 2u
@@ -403,7 +403,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 08:53:54: 1u
@@ -419,7 +419,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>5. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-02 08:53:54: 1u
@@ -436,7 +436,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>6. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-10 09:27:00: 1u
@@ -451,7 +451,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>7. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-10 09:27:00: 1u
@@ -466,7 +466,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>8. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-07-10 09:27:00: 1u
@@ -482,7 +482,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>9. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-27 10:08:00: 1u
@@ -497,7 +497,7 @@ L'analyse montre une rotation faible mais régulière (1 unité par commande). L
 
 
 <details>
-<summary><strong>10. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-27 10:08:00: 1u

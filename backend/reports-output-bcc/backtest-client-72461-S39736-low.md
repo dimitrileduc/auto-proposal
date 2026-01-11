@@ -89,7 +89,7 @@ La dernière commande remonte au 19 juin 2025, soit plus de 120 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-19 13:59:01: 1u

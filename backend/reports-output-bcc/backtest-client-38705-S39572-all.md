@@ -205,7 +205,7 @@ La dernière commande remonte à 126 jours (juin 2025). Bien que la rotation soi
 
 
 <details>
-<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV342] LV Organic Broccoli Spread 190 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 11:53:05: 1u
@@ -220,7 +220,7 @@ La dernière commande remonte à 126 jours (juin 2025). Bien que la rotation soi
 
 
 <details>
-<summary><strong>2. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV357] LV Tartinade BIO Asperge 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 11:53:05: 1u
@@ -235,7 +235,7 @@ La dernière commande remonte à 126 jours (juin 2025). Bien que la rotation soi
 
 
 <details>
-<summary><strong>3. [LV215] LV Biscuits apéro Fromage Parmesan 100g bio </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV215] LV Biscuits apéro Fromage Parmesan 100g bio </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 11:53:05: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte à 126 jours (juin 2025). Bien que la rotation soi
 
 
 <details>
-<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF008] JF MAYONNA DU CHEF 470 ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 11:53:05: 2u
@@ -265,7 +265,7 @@ La dernière commande remonte à 126 jours (juin 2025). Bien que la rotation soi
 
 
 <details>
-<summary><strong>5. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-03 11:53:05: 1u

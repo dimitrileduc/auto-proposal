@@ -176,7 +176,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>1. [LV149] LV Sauce Aioli Pesto 200ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV149] LV Sauce Aioli Pesto 200ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -191,7 +191,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>2. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>3. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 2u

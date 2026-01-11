@@ -89,7 +89,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 70 jours ent
 
 
 <details>
-<summary><strong>1. [PF1194] GF VIN FINES HERBES WECK 330ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1194] GF VIN FINES HERBES WECK 330ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 08:28:00: 160u

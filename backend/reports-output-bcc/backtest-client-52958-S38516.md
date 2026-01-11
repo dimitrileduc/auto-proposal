@@ -89,7 +89,7 @@ La dernière commande remonte au 10 juin 2025, soit plus de 60 jours. Bien que l
 
 
 <details>
-<summary><strong>1. [PF1854] JACKY MAYONNAISE OEUFS SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1854] JACKY MAYONNAISE OEUFS SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-10 08:59:05: 80u

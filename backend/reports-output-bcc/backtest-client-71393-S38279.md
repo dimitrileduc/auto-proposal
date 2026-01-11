@@ -147,7 +147,7 @@ La dernière commande remonte au 05/05/2025, soit environ 90 jours. Bien qu'il n
 
 
 <details>
-<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV160] LV Tartinade Aubergine 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:58:59: 3u
@@ -162,7 +162,7 @@ La dernière commande remonte au 05/05/2025, soit environ 90 jours. Bien qu'il n
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:58:59: 5u
@@ -177,7 +177,7 @@ La dernière commande remonte au 05/05/2025, soit environ 90 jours. Bien qu'il n
 
 
 <details>
-<summary><strong>3. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-05 08:58:59: 4u

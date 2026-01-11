@@ -89,7 +89,7 @@ La dernière commande remonte au 16 décembre 2024, soit 16 jours avant la date 
 
 
 <details>
-<summary><strong>1. [LC001] LC Coffret Exploration </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LC001] LC Coffret Exploration </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-16 08:42:36: 43u

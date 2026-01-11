@@ -147,7 +147,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 90 jours sans activit
 
 
 <details>
-<summary><strong>1. [PF1392] SC MOUTARDE SALICORNES 220 ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF1392] SC MOUTARDE SALICORNES 220 ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 14:19:20: 375u
@@ -163,7 +163,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 90 jours sans activit
 
 
 <details>
-<summary><strong>2. [PF1441] SC BEARNAISE SALICORNES 220ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF1441] SC BEARNAISE SALICORNES 220ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 14:19:20: 250u
@@ -178,7 +178,7 @@ La dernière commande remonte au 20 mai 2025, soit plus de 90 jours sans activit
 
 
 <details>
-<summary><strong>3. [PF1500] SC VINAIGRETTE SALICORNES 500</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [PF1500] SC VINAIGRETTE SALICORNES 500</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-20 14:19:20: 500u

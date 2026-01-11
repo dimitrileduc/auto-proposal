@@ -147,7 +147,7 @@ La dernière commande remonte au 25 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 06:39:34: 4u
@@ -162,7 +162,7 @@ La dernière commande remonte au 25 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 06:39:34: 2u
@@ -177,7 +177,7 @@ La dernière commande remonte au 25 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [REB08] ReBEL chips premium & bio - piment citron 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-25 06:39:34: 2u

@@ -263,7 +263,7 @@ La dernière commande remonte au 05/11/2024, soit 76 jours sans activité pour c
 
 
 <details>
-<summary><strong>1. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF036] JF MITRAILLETTE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-05 09:01:08: 1u
@@ -278,7 +278,7 @@ La dernière commande remonte au 05/11/2024, soit 76 jours sans activité pour c
 
 
 <details>
-<summary><strong>2. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF033] JF ANDALOUSE SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-05 09:01:08: 1u
@@ -293,7 +293,7 @@ La dernière commande remonte au 05/11/2024, soit 76 jours sans activité pour c
 
 
 <details>
-<summary><strong>3. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF022] JF MOUTARDE MIEL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-12-05 09:01:08: 1u
@@ -308,7 +308,7 @@ La dernière commande remonte au 05/11/2024, soit 76 jours sans activité pour c
 
 
 <details>
-<summary><strong>4. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF039] JF MAYO BARAKI SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-05 07:46:55: 1u
@@ -323,7 +323,7 @@ La dernière commande remonte au 05/11/2024, soit 76 jours sans activité pour c
 
 
 <details>
-<summary><strong>5. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF037] JF BBQ SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-05 07:46:55: 1u
@@ -338,7 +338,7 @@ La dernière commande remonte au 05/11/2024, soit 76 jours sans activité pour c
 
 
 <details>
-<summary><strong>6. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF035] JF BURGER SQUEEZE 300ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-05 07:46:55: 1u
@@ -353,7 +353,7 @@ La dernière commande remonte au 05/11/2024, soit 76 jours sans activité pour c
 
 
 <details>
-<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2024-11-05 07:46:55: 1u

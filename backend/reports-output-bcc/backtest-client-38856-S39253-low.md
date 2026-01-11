@@ -176,7 +176,7 @@ La dernière commande remonte au 05/06/2025, soit 103 jours sans activité. Bien
 
 
 <details>
-<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF054] JF LEMON MAYONNAISE 250ml Weck</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 12:28:59: 2u
@@ -191,7 +191,7 @@ La dernière commande remonte au 05/06/2025, soit 103 jours sans activité. Bien
 
 
 <details>
-<summary><strong>2. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF055] JF HONEY MUSTARD MAYO 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 12:28:59: 1u
@@ -206,7 +206,7 @@ La dernière commande remonte au 05/06/2025, soit 103 jours sans activité. Bien
 
 
 <details>
-<summary><strong>3. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF056] JF SAUCE CHIPOTLE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-05 12:28:59: 1u
@@ -221,7 +221,7 @@ La dernière commande remonte au 05/06/2025, soit 103 jours sans activité. Bien
 
 
 <details>
-<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

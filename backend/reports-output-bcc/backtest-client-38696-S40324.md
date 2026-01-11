@@ -234,7 +234,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 40 jou
 
 
 <details>
-<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 15:08:08: 2u
@@ -250,7 +250,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 40 jou
 
 
 <details>
-<summary><strong>2. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LD011] LD Organic Kids Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-27 15:08:08: 2u
@@ -265,7 +265,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 40 jou
 
 
 <details>
-<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:08:52: 1u
@@ -291,7 +291,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 40 jou
 
 
 <details>
-<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-23 06:05:27: 10u
@@ -320,7 +320,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 40 jou
 
 
 <details>
-<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-09 06:35:00: 5u
@@ -347,7 +347,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 30 à 40 jou
 
 
 <details>
-<summary><strong>6. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 06:53:50: 2u

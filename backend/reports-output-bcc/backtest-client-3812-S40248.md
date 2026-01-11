@@ -234,7 +234,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 45 à 50
 
 
 <details>
-<summary><strong>1. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 10:16:05: 16u
@@ -256,7 +256,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 45 à 50
 
 
 <details>
-<summary><strong>2. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 10:16:05: 16u
@@ -278,7 +278,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 45 à 50
 
 
 <details>
-<summary><strong>3. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-11-04 10:16:05: 16u
@@ -295,7 +295,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 45 à 50
 
 
 <details>
-<summary><strong>4. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 10:27:16: 16u
@@ -318,7 +318,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 45 à 50
 
 
 <details>
-<summary><strong>5. [MF0043] MF Brotaufstrich Apfel Meerrettich 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0043] MF Brotaufstrich Apfel Meerrettich 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-08 06:30:49: 16u
@@ -337,7 +337,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 45 à 50
 
 
 <details>
-<summary><strong>6. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-29 10:19:21: 16u

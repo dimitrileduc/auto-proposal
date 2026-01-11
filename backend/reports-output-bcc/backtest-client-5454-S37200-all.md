@@ -118,7 +118,7 @@ La dernière commande remonte au 14 mai 2025 (soit 18 jours). Avec un seuil de r
 
 
 <details>
-<summary><strong>1. [PF0524] FILOU SAUCE TOMATE 815 GR</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0524] FILOU SAUCE TOMATE 815 GR</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 12:12:59: 8u
@@ -133,7 +133,7 @@ La dernière commande remonte au 14 mai 2025 (soit 18 jours). Avec un seuil de r
 
 
 <details>
-<summary><strong>2. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0078] FILOU CHASSEUR 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-14 12:12:59: 160u

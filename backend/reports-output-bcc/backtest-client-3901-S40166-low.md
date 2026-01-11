@@ -89,7 +89,7 @@ La dernière commande remonte à 63 jours (03/09/2025). Bien qu'il n'y ait qu'un
 
 
 <details>
-<summary><strong>1. [PF3397] BS1833 COSCO - BORNIBUS BEARNAISE KOSHER BOCAL 800G</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF3397] BS1833 COSCO - BORNIBUS BEARNAISE KOSHER BOCAL 800G</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 12:54:04: 600u

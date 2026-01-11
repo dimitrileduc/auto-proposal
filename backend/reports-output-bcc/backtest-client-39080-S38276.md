@@ -321,7 +321,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:48:45: 2u
@@ -338,7 +338,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:48:45: 2u
@@ -355,7 +355,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [JF015] JF SAUCE ANDALOUSE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:48:45: 1u
@@ -372,7 +372,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>4. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-08 06:48:45: 1u
@@ -389,7 +389,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF017] JF SAUCE COCKTAIL 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-20 08:10:33: 1u
@@ -405,7 +405,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>6. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-20 08:10:33: 1u
@@ -421,7 +421,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>7. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [JF020] JF SAUCE AIOLI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-20 08:10:33: 1u
@@ -437,7 +437,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>8. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [JF027] JF VINAIGRET MIEL MOU WECK 200</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-20 08:10:33: 1u
@@ -453,7 +453,7 @@ La dernière commande remonte au 20 mars 2025, soit plus de 130 jours sans activ
 
 
 <details>
-<summary><strong>9. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [JF028] JF VINAIGRET CAESAR WECK 200ML</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-03-20 08:10:33: 1u

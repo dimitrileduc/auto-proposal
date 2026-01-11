@@ -205,7 +205,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 69 jours entre les
 
 
 <details>
-<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [JF009] JF SAUCE TARTARE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:35:43: 2u
@@ -222,7 +222,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 69 jours entre les
 
 
 <details>
-<summary><strong>2. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [JF031] JF SAUCE LIEGEOISE 380GX6</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:35:43: 1u
@@ -237,7 +237,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 69 jours entre les
 
 
 <details>
-<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LD014] LD Organic Avocado Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:35:43: 2u
@@ -253,7 +253,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 69 jours entre les
 
 
 <details>
-<summary><strong>4. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [LD013] LD Tuscan Organic Spread 180 g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-03 14:35:43: 2u
@@ -269,7 +269,7 @@ L'analyse du cycle de commande montre un intervalle d'environ 69 jours entre les
 
 
 <details>
-<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-26 13:23:30: 2u

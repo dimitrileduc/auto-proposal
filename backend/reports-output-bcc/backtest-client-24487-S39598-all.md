@@ -640,7 +640,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0054] MF Noix de cajou - Fleur de sel 133g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -658,7 +658,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 3u
@@ -678,7 +678,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 2u
@@ -699,7 +699,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 4u
@@ -720,7 +720,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>5. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -740,7 +740,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 3u
@@ -759,7 +759,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>7. [LV149] LV Sauce Aioli Pesto 200ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [LV149] LV Sauce Aioli Pesto 200ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -774,7 +774,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [LV161] LV Tartinade Mangue curry 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -792,7 +792,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [LV130] LV BIO Tartinade Paprika Chili 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 2u
@@ -809,7 +809,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>10. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 2u
@@ -825,7 +825,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>11. [LV135] LV Tartinade Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [LV135] LV Tartinade Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -840,7 +840,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>12. [LV136] LV Tartinade Betterave 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [LV136] LV Tartinade Betterave 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 2u
@@ -857,7 +857,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>13. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [LV330] LV BIO Tartinade Toscana 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -875,7 +875,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>14. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 2u
@@ -893,7 +893,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>15. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -910,7 +910,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>16. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -926,7 +926,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>17. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [JF004] JF MAYONNAIS POIVRE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -941,7 +941,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>18. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [JF001] JF MAYONNAI TRUFFES 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u
@@ -956,7 +956,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>19. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 2u
@@ -971,7 +971,7 @@ La dernière commande remonte à 118 jours (11 juin 2025). Bien que l'historique
 
 
 <details>
-<summary><strong>20. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [JF019] JF SAUCE AIOLI PESTO 250M WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-11 12:34:33: 1u

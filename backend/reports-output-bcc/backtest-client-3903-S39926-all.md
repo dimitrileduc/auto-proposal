@@ -118,7 +118,7 @@ La dernière commande remonte au 04/09/2025, soit 52 jours. L'historique montre 
 
 
 <details>
-<summary><strong>1. [PF0509] YVALLI GR BOUL TOMATE 2,5 KG</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PF0509] YVALLI GR BOUL TOMATE 2,5 KG</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-04 08:31:02: 24u
@@ -134,7 +134,7 @@ La dernière commande remonte au 04/09/2025, soit 52 jours. L'historique montre 
 
 
 <details>
-<summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [PF0077] FILOU PROVENCALE 5 L</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-04 08:31:02: 30u

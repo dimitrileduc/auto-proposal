@@ -292,7 +292,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>1. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0034] MF Tarti Pomme Raifort 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:40:12: 3u
@@ -309,7 +309,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:40:12: 8u
@@ -326,7 +326,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0030] MF Tarti Mangue Curry 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:40:12: 5u
@@ -342,7 +342,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:40:12: 4u
@@ -359,7 +359,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>5. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [MF0031] MF Tarti Olives verte 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:40:12: 1u
@@ -376,7 +376,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:40:12: 4u
@@ -393,7 +393,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>7. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0062] ​MF Tarti Betterave rouge</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-25 06:40:12: 2u
@@ -408,7 +408,7 @@ Absence de commandes récentes mais présence d'un historique à la même pério
 
 
 <details>
-<summary><strong>8. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

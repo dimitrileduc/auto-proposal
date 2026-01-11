@@ -118,7 +118,7 @@ La dernière commande remonte au 20 juin 2025, soit 67 jours avant la date actue
 
 
 <details>
-<summary><strong>1. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV331] LV Tartinade Lentils Balsamico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 07:48:15: 2u
@@ -133,7 +133,7 @@ La dernière commande remonte au 20 juin 2025, soit 67 jours avant la date actue
 
 
 <details>
-<summary><strong>2. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV146] LV Sauce Aïoli 200 ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-20 07:48:15: 2u

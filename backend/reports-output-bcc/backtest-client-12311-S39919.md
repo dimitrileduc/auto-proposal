@@ -263,7 +263,7 @@
 
 
 <details>
-<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0033] MF Tarti Poivron chilli 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -284,7 +284,7 @@
 
 
 <details>
-<summary><strong>2. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0027] MF Tarti Aubergine 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -305,7 +305,7 @@
 
 
 <details>
-<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [MF0029] MF Tarti Datte chili 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -324,7 +324,7 @@
 
 
 <details>
-<summary><strong>4. [MF0051] MF Kidney Beans 500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0051] MF Kidney Beans 500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -343,7 +343,7 @@
 
 
 <details>
-<summary><strong>5. [RF003] REFIELD Maïs 500G </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RF003] REFIELD Maïs 500G </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -362,7 +362,7 @@
 
 
 <details>
-<summary><strong>6. [MF0052] MF Pois chiches  500g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [MF0052] MF Pois chiches  500g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -378,7 +378,7 @@
 
 
 <details>
-<summary><strong>7. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [MF0035] MF Tarti Tomate Ail des ours 250g </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

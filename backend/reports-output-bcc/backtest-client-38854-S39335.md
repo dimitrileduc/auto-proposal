@@ -234,7 +234,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 34
 
 
 <details>
-<summary><strong>1. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [TVF003] TVF TARTINADE BIO CAROTTE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 10:51:44: 1u
@@ -254,7 +254,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 34
 
 
 <details>
-<summary><strong>2. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [TVF001] TVF TARTINADE BIO MANGUE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 10:51:44: 2u
@@ -274,7 +274,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 34
 
 
 <details>
-<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [TVF005] TVF TARTINADE BIO AUBERGINE 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 10:51:44: 2u
@@ -292,7 +292,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 34
 
 
 <details>
-<summary><strong>4. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [TVF002] TVF TARTINADE BIO PAPRIKA 180g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 10:51:44: 2u
@@ -310,7 +310,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 34
 
 
 <details>
-<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [JF012] JF SAUCE BEARNAISE 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-28 10:51:44: 2u
@@ -329,7 +329,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 34
 
 
 <details>
-<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [JF005] JF MAYONNAISE OEUFS 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-22 12:21:34: 3u

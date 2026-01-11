@@ -640,7 +640,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 3u
@@ -657,7 +657,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>2. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [RIT07] RITCHIE Orange - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -674,25 +674,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>3. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
-
-**Commandes Recentes (3 derniers mois):**
-- 2025-10-21 07:53:37: 1u
-- 2025-08-26 07:26:18: 1u
-- 2025-07-09 11:07:27: 1u
-- 2025-06-18 07:07:27: 1u
-
-**Commandes N-1 (meme periode annee derniere):**
-- Aucune commande N-1
-
-**Quantite Mediane (fallback)**: 1u
-**Quantite Reelle**: 1u
-
-</details>
-
-
-<details>
-<summary><strong>4. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RIT08] RITCHIE Citron - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -710,7 +692,25 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>5. [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [RIT09] RITCHIE Cola - canette 330ml</strong> - LLM Reussi</summary>
+
+**Commandes Recentes (3 derniers mois):**
+- 2025-10-21 07:53:37: 1u
+- 2025-08-26 07:26:18: 1u
+- 2025-07-09 11:07:27: 1u
+- 2025-06-18 07:07:27: 1u
+
+**Commandes N-1 (meme periode annee derniere):**
+- Aucune commande N-1
+
+**Quantite Mediane (fallback)**: 1u
+**Quantite Reelle**: 1u
+
+</details>
+
+
+<details>
+<summary><strong>5. [ALO30] ORGANIC CRUNCH aloe vera drink original 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -728,7 +728,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>6. [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>6. [ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -747,7 +747,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>7. [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>7. [ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -765,7 +765,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>8. [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>8. [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -783,7 +783,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>9. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>9. [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -802,7 +802,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>10. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>10. [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -821,7 +821,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>11. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>11. [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -840,7 +840,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>12. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>12. [REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 2u
@@ -858,7 +858,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>13. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>13. [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -874,7 +874,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>14. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>14. [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -891,7 +891,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>15. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>15. [NOD04] NODA limonade bio faible en calories - mangue passion 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-10-21 07:53:37: 1u
@@ -907,7 +907,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>16. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>16. [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 07:26:18: 1u
@@ -925,7 +925,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>17. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>17. [RIT10] RITCHIE Cola ZERO - canette 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-08-26 07:26:18: 1u
@@ -942,7 +942,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>18. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>18. [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -957,7 +957,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>19. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>19. [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente
@@ -972,7 +972,7 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 35
 
 
 <details>
-<summary><strong>20. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>20. [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - Aucune commande récente

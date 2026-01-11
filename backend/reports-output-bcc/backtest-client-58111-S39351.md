@@ -205,7 +205,7 @@ La dernière commande remonte au 23 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [LV132] LV Tartinade Houmous type 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -220,7 +220,7 @@ La dernière commande remonte au 23 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [LV162] LV Tartinade Tomato Basilico 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -235,7 +235,7 @@ La dernière commande remonte au 23 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>3. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [LV332] LV Tartinade Olive Caper Tomato 190g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -250,7 +250,7 @@ La dernière commande remonte au 23 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>4. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [JF003] JF MAYONNAIS WASABI 250ML WECK</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 1u
@@ -265,7 +265,7 @@ La dernière commande remonte au 23 juin 2025, soit il y a 91 jours. Bien que la
 
 
 <details>
-<summary><strong>5. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>5. [RISH03] RISH kombucha BIO - gingembre 330ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-06-23 09:12:47: 2u

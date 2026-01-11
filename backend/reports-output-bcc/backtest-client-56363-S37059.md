@@ -176,7 +176,7 @@ L'analyse du cycle de commande montre des intervalles variant de 14 à 35 jours.
 
 
 <details>
-<summary><strong>1. [MF0024] MF KETCHUP 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0024] MF KETCHUP 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 09:19:13: 32u
@@ -195,7 +195,7 @@ L'analyse du cycle de commande montre des intervalles variant de 14 à 35 jours.
 
 
 <details>
-<summary><strong>2. [MF0047] MF Mayonnaise 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>2. [MF0047] MF Mayonnaise 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 09:19:13: 16u
@@ -214,7 +214,7 @@ L'analyse du cycle de commande montre des intervalles variant de 14 à 35 jours.
 
 
 <details>
-<summary><strong>3. [RF003] REFIELD Maïs 500G </strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>3. [RF003] REFIELD Maïs 500G </strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-05-06 09:19:13: 40u
@@ -233,7 +233,7 @@ L'analyse du cycle de commande montre des intervalles variant de 14 à 35 jours.
 
 
 <details>
-<summary><strong>4. [MF0021] MF Sauce BBQ 250ml</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>4. [MF0021] MF Sauce BBQ 250ml</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-04-01 07:53:14: 16u

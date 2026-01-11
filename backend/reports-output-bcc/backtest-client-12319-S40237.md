@@ -89,7 +89,7 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 50 à 70 jou
 
 
 <details>
-<summary><strong>1. [MF0043] MF Brotaufstrich Apfel Meerrettich 250g</strong> - LLM Echoue (fallback mediane)</summary>
+<summary><strong>1. [MF0043] MF Brotaufstrich Apfel Meerrettich 250g</strong> - LLM Reussi</summary>
 
 **Commandes Recentes (3 derniers mois):**
 - 2025-09-22 08:25:35: 50u
