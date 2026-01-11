@@ -134,7 +134,8 @@ currentDate:string,
 replenishmentThresholdDays:number
 ->
 quantity:number,
-reasoning:string
+reasoning:string,
+summary:string "Résumé court (max 50 chars) justifiant la prédiction pour affichage Odoo"
 `;
 
 // Singleton LLM instances for reuse

@@ -35,6 +35,9 @@ export interface BusinessProduct {
   /** Total amount for ordered quantity (quantity_recommended * price_unit) */
   subtotal: number;
 
+  /** Units added to reach global MOQ (0 if no adjustment) */
+  moq_adjustment?: number;
+
   /** Prediction confidence level based on order history */
   confidence: "low" | "medium" | "high";
   /** Number of historical orders (for confidence classification) */
@@ -269,6 +272,7 @@ export function generateClientReportJSON(
       quantity_source: proposalProduct.quantity_source,
       price_unit: proposalProduct.current_price_unit,
       subtotal: proposalProduct.subtotal,
+      moq_adjustment: proposalProduct.moq_adjustment,
       confidence,
       order_count: orderCount,
       llm_prediction: stockProduct.llm_prediction

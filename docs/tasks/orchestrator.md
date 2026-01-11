@@ -37,7 +37,7 @@ flowchart LR
 
 **Defaults:**
 - `skipOdooQuoteGeneration: true` ← TEST mode par défaut (pas de création Odoo)
-- `forceReanalysis: false` ← Skip clients avec tag 82
+- `forceReanalysis: false` ← Ignore les commandes avec tag 82 dans le calcul d'activité (évite de réanalyser les clients déjà proposés)
 - `generateReports: true` ← Générer markdown/JSON
 
 ## Résultat
@@ -119,7 +119,7 @@ curl -X POST http://localhost:3000/routes/orchestrator-task \
 
 ### 3. Force reanalysis
 
-Inclure clients déjà taggés (forcer réanalyse):
+Réanalyse les clients même s'ils ont déjà des devis auto-générés (tag 82) :
 
 ```bash
 curl -X POST http://localhost:3000/routes/orchestrator-task \
