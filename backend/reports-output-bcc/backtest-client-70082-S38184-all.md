@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 64 | 350 | 286.0 | 81.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3360] DLL MAYONNAISE AVOCAT 200ML | 64 | 350 | 286.0 | 81.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

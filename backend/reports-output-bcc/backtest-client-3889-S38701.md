@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1392] SC MOUTARDE SALICORNES 220 ML | 375 | 250 | 125.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1441] SC BEARNAISE SALICORNES 220ML | 250 | 250 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1500] SC VINAIGRETTE SALICORNES 500 | 440 | 500 | 60.0 | 12.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1392] SC MOUTARDE SALICORNES 220 ML | 375 | 250 | 125.0 | 50.0% | partial | LLM |
+| [PF1441] SC BEARNAISE SALICORNES 220ML | 250 | 250 | 0.0 | 0.0% | exact | LLM |
+| [PF1500] SC VINAIGRETTE SALICORNES 500 | 440 | 500 | 60.0 | 12.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

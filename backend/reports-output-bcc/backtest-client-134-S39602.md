@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0033] MF Tarti Poivron chilli 250g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0052] MF Pois chiches  500g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0033] MF Tarti Poivron chilli 250g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0052] MF Pois chiches  500g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 1 | 5 | 4.0 | 80.0% | partial | LLM |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 | 5 | 4.0 | 80.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

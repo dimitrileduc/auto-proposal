@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 93 | 93 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 217 | 93 | 124.0 | 133.3% | partial | Non | Non | LLM |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 93 | 93 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 31 | 62 | 31.0 | 50.0% | partial | Non | Non | LLM |
-| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 31 | 31 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 62 | 62 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 31 | 31 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 93 | 93 | 0.0 | 0.0% | exact | LLM |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 217 | 93 | 124.0 | 133.3% | partial | LLM |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 93 | 93 | 0.0 | 0.0% | exact | LLM |
+| [PF2972] LD FR TARTINADE BIO OLIVE 200 | 31 | 62 | 31.0 | 50.0% | partial | LLM |
+| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 31 | 31 | 0.0 | 0.0% | exact | LLM |
+| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 62 | 62 | 0.0 | 0.0% | exact | LLM |
+| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 31 | 31 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

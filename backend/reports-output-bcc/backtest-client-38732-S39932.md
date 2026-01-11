@@ -47,30 +47,30 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LD010] LD Organic Truffle Spread 135 g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [LD013] LD Tuscan Organic Spread 180 g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LD010] LD Organic Truffle Spread 135 g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LD014] LD Organic Avocado Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [LD013] LD Tuscan Organic Spread 180 g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF032] JF SAUCE LAPIN 380GX6 | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (22 produits)

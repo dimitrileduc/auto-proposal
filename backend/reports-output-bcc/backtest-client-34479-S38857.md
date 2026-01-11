@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

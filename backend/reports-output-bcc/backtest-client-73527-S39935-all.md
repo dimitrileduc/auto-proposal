@@ -47,19 +47,19 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV135] LV Tartinade Basilico 190g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV132] LV Tartinade Houmous type 190g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB05] REB chips bio - sel de mer 35g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV135] LV Tartinade Basilico 190g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV342] LV Organic Broccoli Spread 190 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV132] LV Tartinade Houmous type 190g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB05] REB chips bio - sel de mer 35g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (11 produits)

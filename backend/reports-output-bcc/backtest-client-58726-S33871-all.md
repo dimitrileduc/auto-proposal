@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LC001] LC Coffret Exploration  | 43 | 1 | 42.0 | 4200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LC001] LC Coffret Exploration  | 43 | 1 | 42.0 | 4200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

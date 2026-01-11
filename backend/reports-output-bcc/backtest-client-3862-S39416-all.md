@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 120 | 120 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0165] FILOU COCKTAIL FRENKEN 3 L | 120 | 120 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

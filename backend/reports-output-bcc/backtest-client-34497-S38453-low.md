@@ -47,21 +47,21 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [FO001] FO CITRONNADE BIO 33cl | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LB003] LB Festive (4,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LB004] LB Blonde (6,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV357] LV Tartinade BIO Asperge 190g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [AQUA01] AQUAPAX - natural mineral water 500ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [FO001] FO CITRONNADE BIO 33cl | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LB003] LB Festive (4,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LB004] LB Blonde (6,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV357] LV Tartinade BIO Asperge 190g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [AQUA01] AQUAPAX - natural mineral water 500ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (13 produits)

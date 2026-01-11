@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 2 | 1 | 1.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

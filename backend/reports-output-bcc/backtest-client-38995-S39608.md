@@ -47,32 +47,32 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 30 | 15 | 15.0 | 100.0% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 15 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 10 | 5 | 5.0 | 100.0% | partial | Non | Non | LLM |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 10 | 20 | 10.0 | 50.0% | partial | Non | Non | LLM |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF003] JF MAYONNAIS WASABI 250ML WECK | 3 | 5 | 2.0 | 40.0% | partial | Non | Non | LLM |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 10 | 10 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [JF035] JF BURGER SQUEEZE 300ML | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [JF037] JF BBQ SQUEEZE 300ML | 5 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [JF029] JF VOL AU VENT BOCAL 400G | 5 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 10 | 4 | 6.0 | 150.0% | partial | Non | Non | LLM |
-| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [JF032] JF SAUCE LAPIN 380GX6 | 10 | 10 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 5 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 50 | 25 | 25.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 30 | 15 | 15.0 | 100.0% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 15 | 10 | 5.0 | 50.0% | partial | LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 10 | 5 | 5.0 | 100.0% | partial | LLM |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 10 | 20 | 10.0 | 50.0% | partial | LLM |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 3 | 5 | 2.0 | 40.0% | partial | LLM |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 10 | 10 | 0.0 | 0.0% | exact | LLM |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [JF035] JF BURGER SQUEEZE 300ML | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [JF037] JF BBQ SQUEEZE 300ML | 5 | 3 | 2.0 | 66.7% | partial | LLM |
+| [JF029] JF VOL AU VENT BOCAL 400G | 5 | 10 | 5.0 | 50.0% | partial | LLM |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 10 | 4 | 6.0 | 150.0% | partial | LLM |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [JF032] JF SAUCE LAPIN 380GX6 | 10 | 10 | 0.0 | 0.0% | exact | LLM |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 5 | 10 | 5.0 | 50.0% | partial | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 50 | 25 | 25.0 | 100.0% | partial | LLM |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [JF026] JF VINAIGRET TRUFFES WECK 200M | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (24 produits)

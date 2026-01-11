@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 480 | 320.0 | 66.7% | partial | Non | Non | LLM |
-| [PF0075] FILOU CHASSEUR  10 L | 52 | 44 | 8.0 | 18.2% | partial | Non | Non | LLM |
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF0524] FILOU SAUCE TOMATE 815 GR | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF0096] FILOU MOUTARDE 3 KG | 7 | 6 | 1.0 | 16.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 160 | 480 | 320.0 | 66.7% | partial | LLM |
+| [PF0075] FILOU CHASSEUR  10 L | 52 | 44 | 8.0 | 18.2% | partial | LLM |
+| [PF1140] FILOU SAUCE CHASSEUR 850G | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [PF0524] FILOU SAUCE TOMATE 815 GR | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [PF0096] FILOU MOUTARDE 3 KG | 7 | 6 | 1.0 | 16.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

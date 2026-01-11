@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

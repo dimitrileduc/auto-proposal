@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LEA10] LEAMO ginger beer bio 330ml | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LEA10] LEAMO ginger beer bio 330ml | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 6 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 6 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

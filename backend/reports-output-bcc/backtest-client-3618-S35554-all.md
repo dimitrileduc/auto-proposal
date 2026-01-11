@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

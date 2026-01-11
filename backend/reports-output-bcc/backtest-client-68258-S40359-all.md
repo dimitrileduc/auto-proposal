@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 4 | 8 | 4.0 | 50.0% | partial | Non | Non | LLM |
-| [JOY05] Organic Cherry Jam 370g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JOY07] JOY! Organic Fig Jam 370g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 4 | 10 | 6.0 | 60.0% | partial | Non | Non | LLM |
-| [JOY03] JOY! Organic Apricot Jam 370g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 4 | 8 | 4.0 | 50.0% | partial | LLM |
+| [JOY05] Organic Cherry Jam 370g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JOY07] JOY! Organic Fig Jam 370g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 4 | 10 | 6.0 | 60.0% | partial | LLM |
+| [JOY03] JOY! Organic Apricot Jam 370g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

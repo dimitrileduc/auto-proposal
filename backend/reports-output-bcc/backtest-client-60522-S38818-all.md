@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 2 | 10 | 8.0 | 80.0% | partial | Non | Non | LLM |
-| [JOY03] JOY! Organic Apricot Jam 370g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 2 | 10 | 8.0 | 80.0% | partial | LLM |
+| [JOY03] JOY! Organic Apricot Jam 370g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

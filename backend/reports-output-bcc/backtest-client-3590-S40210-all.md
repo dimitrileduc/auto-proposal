@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 480 | 320.0 | 66.7% | partial | Non | Non | LLM |
-| [PF1140] FILOU SAUCE CHASSEUR 850G | 4 | 8 | 4.0 | 50.0% | partial | Non | Non | LLM |
-| [PF0075] FILOU CHASSEUR  10 L | 104 | 264 | 160.0 | 60.6% | partial | Non | Non | LLM |
-| [PF3266] JF SAUCE BEARNAISE 3L | 20 | 40 | 20.0 | 50.0% | partial | Non | Non | LLM |
-| [PF0084] FILOU CARBONNADES 800 GR | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 160 | 480 | 320.0 | 66.7% | partial | LLM |
+| [PF1140] FILOU SAUCE CHASSEUR 850G | 4 | 8 | 4.0 | 50.0% | partial | LLM |
+| [PF0075] FILOU CHASSEUR  10 L | 104 | 264 | 160.0 | 60.6% | partial | LLM |
+| [PF3266] JF SAUCE BEARNAISE 3L | 20 | 40 | 20.0 | 50.0% | partial | LLM |
+| [PF0084] FILOU CARBONNADES 800 GR | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

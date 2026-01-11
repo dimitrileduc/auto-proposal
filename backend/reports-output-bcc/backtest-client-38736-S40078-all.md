@@ -47,25 +47,25 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD013] LD Tuscan Organic Spread 180 g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LD010] LD Organic Truffle Spread 135 g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LD012] LD Organic Samphire Spread 135 g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LD011] LD Organic Kids Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD015] LD Onion Spread 180g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LD013] LD Tuscan Organic Spread 180 g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LD010] LD Organic Truffle Spread 135 g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LD012] LD Organic Samphire Spread 135 g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LD011] LD Organic Kids Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LD014] LD Organic Avocado Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF018] JF SAUCE SAMOURAI 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LD015] LD Onion Spread 180g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (17 produits)

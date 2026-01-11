@@ -47,24 +47,24 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0047] MF Mayonnaise 250ml | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0055] MF Noix de cajou - Curry 133g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0032] MF Tarti Pois chiches 250 g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0030] MF Tarti Mangue Curry 250g  | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0047] MF Mayonnaise 250ml | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0055] MF Noix de cajou - Curry 133g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0032] MF Tarti Pois chiches 250 g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0030] MF Tarti Mangue Curry 250g  | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (16 produits)

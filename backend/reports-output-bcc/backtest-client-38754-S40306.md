@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LD013] LD Tuscan Organic Spread 180 g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [LD014] LD Organic Avocado Spread 180 g | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [LD015] LD Onion Spread 180g | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LD013] LD Tuscan Organic Spread 180 g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [LD014] LD Organic Avocado Spread 180 g | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [LD015] LD Onion Spread 180g | 1 | 4 | 3.0 | 75.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

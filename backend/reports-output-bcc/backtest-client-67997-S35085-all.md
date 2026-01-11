@@ -47,22 +47,22 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JOY05] Organic Cherry Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JOY07] JOY! Organic Fig Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JOY05] Organic Cherry Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JOY07] JOY! Organic Fig Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (14 produits)

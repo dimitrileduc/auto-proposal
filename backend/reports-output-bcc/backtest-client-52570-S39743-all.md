@@ -47,22 +47,22 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV133] LV Tartinade Ananas Coco 190g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [WIG03] WIGNAC cidre naturel bio 750ml | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [WIG04] WIGNAC cidre rosé bio 750ml | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0055] MF Noix de cajou - Curry 133g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV132] LV Tartinade Houmous type 190g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV160] LV Tartinade Aubergine 190g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [LV133] LV Tartinade Ananas Coco 190g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [WIG03] WIGNAC cidre naturel bio 750ml | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [WIG04] WIGNAC cidre rosé bio 750ml | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0055] MF Noix de cajou - Curry 133g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV132] LV Tartinade Houmous type 190g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (14 produits)

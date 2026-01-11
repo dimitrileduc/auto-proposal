@@ -47,19 +47,19 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 16 | 15 | 1.0 | 6.7% | partial | Non | Non | LLM |
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | 31 | 30.0 | 96.8% | partial | Non | Non | LLM |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 1 | 16 | 15.0 | 93.8% | partial | Non | Non | LLM |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 1 | 15 | 14.0 | 93.3% | partial | Non | Non | LLM |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 1 | 16 | 15.0 | 93.8% | partial | Non | Non | LLM |
-| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 13 | 5 | 8.0 | 160.0% | partial | Non | Non | LLM |
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
-| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
-| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | Non | Non | LLM |
-| [PF1805] LD SAUCE COCKTAIL 250ML WECK | 1 | 0 | 1.0 | 0.0% | partial | Non | Non | LLM |
-| [PF1802] LD MOUTARDE MIEL 250ML WECK | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 16 | 15 | 1.0 | 6.7% | partial | LLM |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 1 | 31 | 30.0 | 96.8% | partial | LLM |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 1 | 16 | 15.0 | 93.8% | partial | LLM |
+| [PF2937] LD FR TARTINADE BIO POIS 200 | 1 | 15 | 14.0 | 93.3% | partial | LLM |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 1 | 16 | 15.0 | 93.8% | partial | LLM |
+| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 13 | 5 | 8.0 | 160.0% | partial | LLM |
+| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 1 | 5 | 4.0 | 80.0% | partial | LLM |
+| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 1 | 5 | 4.0 | 80.0% | partial | LLM |
+| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | LLM |
+| [PF1805] LD SAUCE COCKTAIL 250ML WECK | 1 | 0 | 1.0 | 0.0% | partial | LLM |
+| [PF1802] LD MOUTARDE MIEL 250ML WECK | 1 | 5 | 4.0 | 80.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (11 produits)

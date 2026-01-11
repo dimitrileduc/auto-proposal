@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | 7 | 5.0 | 71.4% | partial | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 7 | 5.0 | 71.4% | partial | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 10 | 8.0 | 80.0% | partial | Non | Non | LLM |
-| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 2 | 7 | 5.0 | 71.4% | partial | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 7 | 5.0 | 71.4% | partial | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 10 | 8.0 | 80.0% | partial | LLM |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

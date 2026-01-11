@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 4 | 2 | 2.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

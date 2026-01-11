@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 80 | 65 | 15.0 | 23.1% | partial | Non | Non | LLM |
-| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | 19 | 21.0 | 110.5% | partial | Non | Non | LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 32 | 80 | 48.0 | 60.0% | partial | Non | Non | LLM |
-| [PF0089] FILOU VOL AU VENT 400 GR | 48 | 80 | 32.0 | 40.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 80 | 65 | 15.0 | 23.1% | partial | LLM |
+| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 40 | 19 | 21.0 | 110.5% | partial | LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 32 | 80 | 48.0 | 60.0% | partial | LLM |
+| [PF0089] FILOU VOL AU VENT 400 GR | 48 | 80 | 32.0 | 40.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

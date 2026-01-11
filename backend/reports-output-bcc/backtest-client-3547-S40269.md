@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1194] GF VIN FINES HERBES WECK 330ML | 153 | 160 | 7.0 | 4.4% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1194] GF VIN FINES HERBES WECK 330ML | 153 | 160 | 7.0 | 4.4% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

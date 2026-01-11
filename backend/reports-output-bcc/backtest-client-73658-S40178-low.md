@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 26 | 24.0 | 92.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 26 | 24.0 | 92.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

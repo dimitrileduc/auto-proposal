@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 64 | 48.0 | 75.0% | partial | Non | Non | LLM |
-| [MF0062] ​MF Tarti Betterave rouge | 16 | 32 | 16.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 64 | 48.0 | 75.0% | partial | LLM |
+| [MF0062] ​MF Tarti Betterave rouge | 16 | 32 | 16.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

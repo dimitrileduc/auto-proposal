@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [REB05] REB chips bio - sel de mer 35g | 4 | 6 | 2.0 | 33.3% | partial | Non | Non | LLM |
-| [REB06] REB chips bio - paprika fumé 35g | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [REB05] REB chips bio - sel de mer 35g | 4 | 6 | 2.0 | 33.3% | partial | LLM |
+| [REB06] REB chips bio - paprika fumé 35g | 4 | 5 | 1.0 | 20.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

@@ -47,21 +47,21 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 10 | 30 | 20.0 | 66.7% | partial | Non | Non | LLM |
-| [PF0502] FILOU MOUTARDE SQUEEZE 300 ML | 40 | 40 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1539] FILOU BOULETTE CHASSEUR 800G | 2 | 10 | 8.0 | 80.0% | partial | Non | Non | LLM |
-| [PF1224] FILOU BOULETTES TOMATE 800 GR | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [PF0084] FILOU CARBONNADES 800 GR | 3 | 5 | 2.0 | 40.0% | partial | Non | Non | LLM |
-| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 70 | 65 | 5.0 | 7.7% | partial | Non | Non | LLM |
-| [PF0094] FILOU MOUTARDE 700 GR | 20 | 30 | 10.0 | 33.3% | partial | Non | Non | LLM |
-| [PF0096] FILOU MOUTARDE 3 KG | 10 | 3 | 7.0 | 233.3% | partial | Non | Non | LLM |
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 44 | 40 | 4.0 | 10.0% | partial | Non | Non | LLM |
-| [PF0093] FILOU MOUTARDE 300GR | 30 | 50 | 20.0 | 40.0% | partial | Non | Non | LLM |
-| [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 40 | 40 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 60 | 50 | 10.0 | 20.0% | partial | Non | Non | LLM |
-| [PF0089] FILOU VOL AU VENT 400 GR | 80 | 20 | 60.0 | 300.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 10 | 30 | 20.0 | 66.7% | partial | LLM |
+| [PF0502] FILOU MOUTARDE SQUEEZE 300 ML | 40 | 40 | 0.0 | 0.0% | exact | LLM |
+| [PF1539] FILOU BOULETTE CHASSEUR 800G | 2 | 10 | 8.0 | 80.0% | partial | LLM |
+| [PF1224] FILOU BOULETTES TOMATE 800 GR | 4 | 5 | 1.0 | 20.0% | partial | LLM |
+| [PF0084] FILOU CARBONNADES 800 GR | 3 | 5 | 2.0 | 40.0% | partial | LLM |
+| [PF0121] FILOU MAYONNAISE OEUFS SEAU 1000ML | 70 | 65 | 5.0 | 7.7% | partial | LLM |
+| [PF0094] FILOU MOUTARDE 700 GR | 20 | 30 | 10.0 | 33.3% | partial | LLM |
+| [PF0096] FILOU MOUTARDE 3 KG | 10 | 3 | 7.0 | 233.3% | partial | LLM |
+| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 44 | 40 | 4.0 | 10.0% | partial | LLM |
+| [PF0093] FILOU MOUTARDE 300GR | 30 | 50 | 20.0 | 40.0% | partial | LLM |
+| [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 40 | 40 | 0.0 | 0.0% | exact | LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 60 | 50 | 10.0 | 20.0% | partial | LLM |
+| [PF0089] FILOU VOL AU VENT 400 GR | 80 | 20 | 60.0 | 300.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (13 produits)

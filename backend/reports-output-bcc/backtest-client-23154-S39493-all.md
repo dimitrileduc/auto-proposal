@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV136] LV Tartinade Betterave 190g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [LV159] LV Tartinade aux Truffes  135g  | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV131] LV Tartinade Potiron 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV188] LV Tartinade Aubergine  380g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV136] LV Tartinade Betterave 190g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [LV159] LV Tartinade aux Truffes  135g  | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [LV131] LV Tartinade Potiron 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV188] LV Tartinade Aubergine  380g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

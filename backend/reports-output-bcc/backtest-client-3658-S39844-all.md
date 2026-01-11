@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 10 | 7 | 3.0 | 42.9% | partial | Non | Non | LLM |
-| [PF0089] FILOU VOL AU VENT 400 GR | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 10 | 7 | 3.0 | 42.9% | partial | LLM |
+| [PF0089] FILOU VOL AU VENT 400 GR | 3 | 3 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

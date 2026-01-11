@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0162] MOUTARDE JAUNE VRAC | 2700 | 2700 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0162] MOUTARDE JAUNE VRAC | 2700 | 2700 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

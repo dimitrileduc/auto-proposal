@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 52 | 44 | 8.0 | 18.2% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 52 | 44 | 8.0 | 18.2% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

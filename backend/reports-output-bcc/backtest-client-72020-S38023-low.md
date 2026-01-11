@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [KOKO01] KOKO Kombucha original 330ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV136] LV Tartinade Betterave 190g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [KOKO01] KOKO Kombucha original 330ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV136] LV Tartinade Betterave 190g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

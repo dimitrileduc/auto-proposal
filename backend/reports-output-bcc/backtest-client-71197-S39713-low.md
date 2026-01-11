@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 2 | 4 | 2.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

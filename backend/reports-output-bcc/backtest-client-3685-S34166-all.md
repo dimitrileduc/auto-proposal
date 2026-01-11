@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 5 | 5 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1539] FILOU BOULETTE CHASSEUR 800G | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1224] FILOU BOULETTES TOMATE 800 GR | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1689] FILOU CURRY KETCH SQUEEZE 300 | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 5 | 5 | 0.0 | 0.0% | exact | LLM |
+| [PF1539] FILOU BOULETTE CHASSEUR 800G | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [PF1224] FILOU BOULETTES TOMATE 800 GR | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

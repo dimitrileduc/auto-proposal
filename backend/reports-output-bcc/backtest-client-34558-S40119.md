@@ -47,23 +47,23 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 6 | 4.0 | 66.7% | partial | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 6 | 4.0 | 66.7% | partial | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 2 | 1 | 1.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (15 produits)

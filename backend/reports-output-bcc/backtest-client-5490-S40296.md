@@ -47,22 +47,22 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 434 | 434 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 31 | 31 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1690] LD BBQ BIO 300G | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 25 | 50 | 25.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | 80 | 40.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 434 | 868 | 434.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 434 | 868 | 434.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 434 | 868 | 434.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 434 | 868 | 434.0 | 50.0% | partial | Non | Non | LLM |
-| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 62 | 155 | 93.0 | 60.0% | partial | Non | Non | LLM |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 93 | 124 | 31.0 | 25.0% | partial | Non | Non | LLM |
-| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 62 | 93 | 31.0 | 33.3% | partial | Non | Non | LLM |
-| [PF3361] LD FR TARTINADE BIO OIGNON 180G | 31 | 62 | 31.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML | 40 | 40 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 434 | 434 | 0.0 | 0.0% | exact | LLM |
+| [PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G | 31 | 31 | 0.0 | 0.0% | exact | LLM |
+| [PF1690] LD BBQ BIO 300G | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML | 25 | 50 | 25.0 | 50.0% | partial | LLM |
+| [PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML | 40 | 80 | 40.0 | 50.0% | partial | LLM |
+| [PF1693] LD FR TARTINAD BIO CAROTTE 200 | 434 | 868 | 434.0 | 50.0% | partial | LLM |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 434 | 868 | 434.0 | 50.0% | partial | LLM |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 434 | 868 | 434.0 | 50.0% | partial | LLM |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 434 | 868 | 434.0 | 50.0% | partial | LLM |
+| [PF2973] LD FR TARTINADE BIO ANANAS 200 | 62 | 155 | 93.0 | 60.0% | partial | LLM |
+| [PF2937] LD FR TARTINADE BIO POIS 200 | 93 | 124 | 31.0 | 25.0% | partial | LLM |
+| [PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G | 62 | 93 | 31.0 | 33.3% | partial | LLM |
+| [PF3361] LD FR TARTINADE BIO OIGNON 180G | 31 | 62 | 31.0 | 50.0% | partial | LLM |
+| [PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML | 40 | 40 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (14 produits)

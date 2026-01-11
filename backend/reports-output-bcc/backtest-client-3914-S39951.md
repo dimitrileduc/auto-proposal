@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0088] FILOU VOL AU VENT 800 GR | 64 | 128 | 64.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0088] FILOU VOL AU VENT 800 GR | 64 | 128 | 64.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

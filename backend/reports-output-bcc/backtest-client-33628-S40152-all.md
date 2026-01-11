@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 480 | 672 | 192.0 | 28.6% | partial | Non | Non | LLM |
-| [PF3328] DELUXE MIX SAUCES 250ML WECK | 480 | 96 | 384.0 | 400.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3327] DELUXE MAYONNAISE OEUFS 720ML WECK | 480 | 672 | 192.0 | 28.6% | partial | LLM |
+| [PF3328] DELUXE MIX SAUCES 250ML WECK | 480 | 96 | 384.0 | 400.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

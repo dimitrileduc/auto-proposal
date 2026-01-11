@@ -47,22 +47,22 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 6 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 5 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 6 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 8 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 5 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 10 | 2 | 8.0 | 400.0% | partial | Non | Non | LLM |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 10 | 4 | 6.0 | 150.0% | partial | Non | Non | LLM |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 6 | 1 | 5.0 | 500.0% | partial | Non | Non | LLM |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 6 | 4 | 2.0 | 50.0% | partial | LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 5 | 4 | 1.0 | 25.0% | partial | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 6 | 5 | 1.0 | 20.0% | partial | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 8 | 5 | 3.0 | 60.0% | partial | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 5 | 4 | 1.0 | 25.0% | partial | LLM |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 10 | 2 | 8.0 | 400.0% | partial | LLM |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 10 | 4 | 6.0 | 150.0% | partial | LLM |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 6 | 1 | 5.0 | 500.0% | partial | LLM |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (14 produits)

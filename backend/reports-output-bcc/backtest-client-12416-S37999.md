@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1795] LD MAYONNAI WASABI 250ML WECK | 30 | 30 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | 50 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1795] LD MAYONNAI WASABI 250ML WECK | 30 | 30 | 0.0 | 0.0% | exact | LLM |
+| [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | 50 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 15 | 40 | 25.0 | 62.5% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 15 | 40 | 25.0 | 62.5% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

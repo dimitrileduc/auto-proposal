@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV156] LV Sauce barbecue 263 ml bio | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV342] LV Organic Broccoli Spread 190 g | 6 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV156] LV Sauce barbecue 263 ml bio | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV342] LV Organic Broccoli Spread 190 g | 6 | 5 | 1.0 | 20.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [UPI09] Jus de pomme-orange bio d'UPIGNY 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [UPI07] Jus de pomme-framboise bio d'UPIGNY 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

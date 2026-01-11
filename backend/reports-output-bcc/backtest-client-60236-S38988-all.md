@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 15 | 15 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 30 | 20 | 10.0 | 50.0% | partial | Non | Non | LLM |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 5 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 15 | 15 | 0.0 | 0.0% | exact | LLM |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 30 | 20 | 10.0 | 50.0% | partial | LLM |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 5 | 10 | 5.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

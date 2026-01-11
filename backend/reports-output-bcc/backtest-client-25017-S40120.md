@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 7 | 2 | 5.0 | 250.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 7 | 2 | 5.0 | 250.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

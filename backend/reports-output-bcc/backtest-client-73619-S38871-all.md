@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [MF0033] MF Tarti Poivron chilli 250g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [MF0033] MF Tarti Poivron chilli 250g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

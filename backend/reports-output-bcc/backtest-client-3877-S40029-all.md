@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1937] ZF MAYO TAPAS TRUFFES 180GR | 1302 | 1302 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR | 1176 | 1302 | 126.0 | 9.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1937] ZF MAYO TAPAS TRUFFES 180GR | 1302 | 1302 | 0.0 | 0.0% | exact | LLM |
+| [PF1922] ZF MAYO SAMOURA CHIPOTLE 180GR | 1176 | 1302 | 126.0 | 9.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [CB005] CB Apple juice 1l | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [CB006] CB Blackcurrant Apple juice 1l | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [MF0059] MF Confi Fraise- Ardbei | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [CB005] CB Apple juice 1l | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [CB006] CB Blackcurrant Apple juice 1l | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [MF0059] MF Confi Fraise- Ardbei | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

@@ -47,17 +47,17 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV153] LV Vinaigrette Ciboulette 250 ml bio | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV154] LV Vinaigrette Miel et moutarde 250 ml bio | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (9 produits)

@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | 8 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 8 | 8 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 6 | 8 | 2.0 | 25.0% | partial | Non | Non | LLM |
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 10 | 8 | 2.0 | 25.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 | 8 | 0.0 | 0.0% | exact | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 8 | 8 | 0.0 | 0.0% | exact | LLM |
+| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 6 | 8 | 2.0 | 25.0% | partial | LLM |
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 10 | 8 | 2.0 | 25.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

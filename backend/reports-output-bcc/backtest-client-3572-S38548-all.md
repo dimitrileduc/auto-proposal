@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0232] BOLOGNAISE POULET TADAL 670 GR | 320 | 128 | 192.0 | 150.0% | partial | Non | Non | LLM |
-| [PF0092] BOLOGNAISE BOEUF TADAL 670 GR | 272 | 256 | 16.0 | 6.3% | partial | Non | Non | LLM |
-| [PF1168] TADAL VOL AU VENT HALAL 800G | 192 | 64 | 128.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0232] BOLOGNAISE POULET TADAL 670 GR | 320 | 128 | 192.0 | 150.0% | partial | LLM |
+| [PF0092] BOLOGNAISE BOEUF TADAL 670 GR | 272 | 256 | 16.0 | 6.3% | partial | LLM |
+| [PF1168] TADAL VOL AU VENT HALAL 800G | 192 | 64 | 128.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

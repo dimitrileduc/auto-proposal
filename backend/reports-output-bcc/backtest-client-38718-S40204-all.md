@@ -47,24 +47,24 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 6 | 2 | 4.0 | 200.0% | partial | Non | Non | LLM |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT01] RITCHIE Orange - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT07] RITCHIE Orange - canette 330ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JOY07] JOY! Organic Fig Jam 370g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF057] JF EGG MAYONNAISE 720ML WECK | 6 | 2 | 4.0 | 200.0% | partial | LLM |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [OCC01] OCCHIOLINO huile d'olive extra vierge 500ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT01] RITCHIE Orange - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT07] RITCHIE Orange - canette 330ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JOY07] JOY! Organic Fig Jam 370g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JOY01] JOY! Organic Sweet Orange Jam 370g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (16 produits)

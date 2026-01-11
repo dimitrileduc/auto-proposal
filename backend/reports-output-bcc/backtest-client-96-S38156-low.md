@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT05] RITCHIE Cola - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT06] RITCHIE Cola ZERO - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT05] RITCHIE Cola - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF068] FIL VOL AU VENT 800G BOCAL  | 1 | 7 | 6.0 | 85.7% | partial | Non | Non | LLM |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF033] JF ANDALOUSE SQUEEZE 300ML | 5 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [JF035] JF BURGER SQUEEZE 300ML | 3 | 5 | 2.0 | 40.0% | partial | Non | Non | LLM |
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 8 | 4 | 4.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF068] FIL VOL AU VENT 800G BOCAL  | 1 | 7 | 6.0 | 85.7% | partial | LLM |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 5 | 4 | 1.0 | 25.0% | partial | LLM |
+| [JF035] JF BURGER SQUEEZE 300ML | 3 | 5 | 2.0 | 40.0% | partial | LLM |
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 8 | 4 | 4.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

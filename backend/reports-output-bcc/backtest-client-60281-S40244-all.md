@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [DAF001] DAF Elderflower with Pomegrenade juice 25cl | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [DAF003] DAF Passionfruit with Hibiscus flower 25cl | 2 | 4 | 2.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

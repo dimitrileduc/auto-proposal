@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 100 | 100 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 100 | 100 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV147] LV Sauce Cocktail 200 ml | 50 | 50 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV132] LV Tartinade Houmous type 190g | 100 | 100 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV160] LV Tartinade Aubergine 190g | 100 | 100 | 0.0 | 0.0% | exact | LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 100 | 100 | 0.0 | 0.0% | exact | LLM |
+| [LV147] LV Sauce Cocktail 200 ml | 50 | 50 | 0.0 | 0.0% | exact | LLM |
+| [LV132] LV Tartinade Houmous type 190g | 100 | 100 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

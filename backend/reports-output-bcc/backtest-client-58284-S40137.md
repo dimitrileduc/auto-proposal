@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3354] DLL DRESSING AVOCAT BALSAMICO 240ML | 20 | 273 | 253.0 | 92.7% | partial | Non | Non | LLM |
-| [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML | 118 | 242 | 124.0 | 51.2% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3354] DLL DRESSING AVOCAT BALSAMICO 240ML | 20 | 273 | 253.0 | 92.7% | partial | LLM |
+| [PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML | 118 | 242 | 124.0 | 51.2% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

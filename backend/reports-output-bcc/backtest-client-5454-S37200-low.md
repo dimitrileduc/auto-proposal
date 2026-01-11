@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0524] FILOU SAUCE TOMATE 815 GR | 8 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 80 | 80.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0524] FILOU SAUCE TOMATE 815 GR | 8 | 5 | 3.0 | 60.0% | partial | LLM |
+| [PF0078] FILOU CHASSEUR 5 L | 160 | 80 | 80.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0062] ​MF Tarti Betterave rouge | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0062] ​MF Tarti Betterave rouge | 1 | 3 | 2.0 | 66.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

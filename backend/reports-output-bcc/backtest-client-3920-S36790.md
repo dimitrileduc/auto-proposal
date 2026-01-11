@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0302] FILOU/LD ANDALOUSE EXTRA  10 KG | 128 | 104 | 24.0 | 23.1% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0302] FILOU/LD ANDALOUSE EXTRA  10 KG | 128 | 104 | 24.0 | 23.1% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

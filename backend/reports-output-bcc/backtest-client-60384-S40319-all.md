@@ -47,19 +47,19 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [RIT05] RITCHIE Cola - verre 275ml | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [KOKO02] KOKO Kombucha Lemon Ginger 330ml | 4 | 5 | 1.0 | 20.0% | partial | LLM |
+| [KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml | 4 | 5 | 1.0 | 20.0% | partial | LLM |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 4 | 5 | 1.0 | 20.0% | partial | LLM |
+| [RIT05] RITCHIE Cola - verre 275ml | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (11 produits)

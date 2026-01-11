@@ -47,22 +47,22 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV146] LV Sauce Aïoli 200 ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 2 | 6 | 4.0 | 66.7% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV145] LV Sauce Tartare 200 ml  | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV131] LV Tartinade Potiron 190g | 6 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [LV132] LV Tartinade Houmous type 190g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [LV135] LV Tartinade Basilico 190g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV136] LV Tartinade Betterave 190g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 6 | 2 | 4.0 | 200.0% | partial | Non | Non | LLM |
-| [LV330] LV BIO Tartinade Toscana 190g | 7 | 2 | 5.0 | 250.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV146] LV Sauce Aïoli 200 ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 2 | 6 | 4.0 | 66.7% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV145] LV Sauce Tartare 200 ml  | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV131] LV Tartinade Potiron 190g | 6 | 4 | 2.0 | 50.0% | partial | LLM |
+| [LV132] LV Tartinade Houmous type 190g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [LV135] LV Tartinade Basilico 190g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV136] LV Tartinade Betterave 190g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 6 | 2 | 4.0 | 200.0% | partial | LLM |
+| [LV330] LV BIO Tartinade Toscana 190g | 7 | 2 | 5.0 | 250.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (14 produits)

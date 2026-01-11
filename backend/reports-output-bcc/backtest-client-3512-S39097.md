@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0075] FILOU CHASSEUR  10 L | 52 | 50 | 2.0 | 4.0% | partial | Non | Non | LLM |
-| [PF0077] FILOU PROVENCALE 5 L | 15 | 20 | 5.0 | 25.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0075] FILOU CHASSEUR  10 L | 52 | 50 | 2.0 | 4.0% | partial | LLM |
+| [PF0077] FILOU PROVENCALE 5 L | 15 | 20 | 5.0 | 25.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

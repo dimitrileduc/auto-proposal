@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 125 | 125.0 | 100.0% | partial | Non | Non | LLM |
-| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 12 | 50 | 38.0 | 76.0% | partial | Non | Non | LLM |
-| [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | 50 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1792] LD MAYONNAI TRUFFES 250ML WECK | 250 | 125 | 125.0 | 100.0% | partial | LLM |
+| [PF1809] LD SAUCE BEARNAISE 250ML WECK | 12 | 50 | 38.0 | 76.0% | partial | LLM |
+| [PF1803] LD SAUCE TARTARE 250ML WECK | 50 | 50 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

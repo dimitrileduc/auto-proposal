@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 56 | 30 | 26.0 | 86.7% | partial | Non | Non | LLM |
-| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 56 | 27 | 29.0 | 107.4% | partial | Non | Non | LLM |
-| [JF035] JF BURGER SQUEEZE 300ML | 56 | 43 | 13.0 | 30.2% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 56 | 30 | 26.0 | 86.7% | partial | LLM |
+| [JF040] JF CURRY KETCHUP SQUEEZE 300ML | 56 | 27 | 29.0 | 107.4% | partial | LLM |
+| [JF035] JF BURGER SQUEEZE 300ML | 56 | 43 | 13.0 | 30.2% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

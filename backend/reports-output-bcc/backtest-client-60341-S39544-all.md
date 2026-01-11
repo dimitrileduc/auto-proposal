@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 63 | 63 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 63 | 63 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

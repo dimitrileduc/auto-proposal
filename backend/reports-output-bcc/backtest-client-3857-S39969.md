@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 39 | 65 | 26.0 | 40.0% | partial | Non | Non | LLM |
-| [PF0608] FILOU/LD SAUCE SAMOURAI  10 L | 26 | 36 | 10.0 | 27.8% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0070] FILOU/LD SAUCE ANDALOUSE  10 L | 39 | 65 | 26.0 | 40.0% | partial | LLM |
+| [PF0608] FILOU/LD SAUCE SAMOURAI  10 L | 26 | 36 | 10.0 | 27.8% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 6 | 6 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 6 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 5 | 5 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 6 | 6 | 0.0 | 0.0% | exact | LLM |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 6 | 5 | 1.0 | 20.0% | partial | LLM |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 5 | 5 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF071] FIL CARBONNADES 800G BOCAL  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [FIL19] FIL VOL AU VENT 400G BOCAL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF066] FIL MOUTARDE 300G BOCAL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF071] FIL CARBONNADES 800G BOCAL  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [FIL19] FIL VOL AU VENT 400G BOCAL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF066] FIL MOUTARDE 300G BOCAL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

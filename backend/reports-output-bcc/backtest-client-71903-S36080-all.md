@@ -47,18 +47,18 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [RIT01] RITCHIE Orange - verre 275ml | 20 | 10 | 10.0 | 100.0% | partial | Non | Non | LLM |
-| [RIT02] RITCHIE Citron - verre 275ml | 20 | 20 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 5 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
-| [RIT05] RITCHIE Cola - verre 275ml | 15 | 20 | 5.0 | 25.0% | partial | Non | Non | LLM |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 5 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [RIT07] RITCHIE Orange - canette 330ml | 5 | 15 | 10.0 | 66.7% | partial | Non | Non | LLM |
-| [RIT08] RITCHIE Citron - canette 330ml | 5 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 56 | 112 | 56.0 | 50.0% | partial | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 56 | 56 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 56 | 56 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [RIT01] RITCHIE Orange - verre 275ml | 20 | 10 | 10.0 | 100.0% | partial | LLM |
+| [RIT02] RITCHIE Citron - verre 275ml | 20 | 20 | 0.0 | 0.0% | exact | LLM |
+| [RIT03] RITCHIE Citron-Gingembre - verre 275ml | 5 | 10 | 5.0 | 50.0% | partial | LLM |
+| [RIT05] RITCHIE Cola - verre 275ml | 15 | 20 | 5.0 | 25.0% | partial | LLM |
+| [RIT06] RITCHIE Cola ZERO - verre 275ml | 5 | 3 | 2.0 | 66.7% | partial | LLM |
+| [RIT07] RITCHIE Orange - canette 330ml | 5 | 15 | 10.0 | 66.7% | partial | LLM |
+| [RIT08] RITCHIE Citron - canette 330ml | 5 | 10 | 5.0 | 50.0% | partial | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 56 | 112 | 56.0 | 50.0% | partial | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 56 | 56 | 0.0 | 0.0% | exact | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 56 | 56 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (10 produits)

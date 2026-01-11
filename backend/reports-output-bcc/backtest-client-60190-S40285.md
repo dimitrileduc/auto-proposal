@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [REB05] REB chips bio - sel de mer 35g | 25 | 20 | 5.0 | 25.0% | partial | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 20 | 20 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 15 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [REB05] REB chips bio - sel de mer 35g | 25 | 20 | 5.0 | 25.0% | partial | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 20 | 20 | 0.0 | 0.0% | exact | LLM |
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 15 | 10 | 5.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

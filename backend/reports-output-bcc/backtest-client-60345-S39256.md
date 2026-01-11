@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

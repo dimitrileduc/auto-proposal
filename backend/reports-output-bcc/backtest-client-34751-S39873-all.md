@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [WIG01] WIGNAC cidre naturel bio 330ml | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [WIG03] WIGNAC cidre naturel bio 750ml | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [WIG01] WIGNAC cidre naturel bio 330ml | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [WIG03] WIGNAC cidre naturel bio 750ml | 3 | 3 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

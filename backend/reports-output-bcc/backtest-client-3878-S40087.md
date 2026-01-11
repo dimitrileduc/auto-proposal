@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | 150 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO | 150 | 150 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO | 30 | 40 | 10.0 | 25.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO | 150 | 150 | 0.0 | 0.0% | exact | LLM |
+| [PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO | 150 | 150 | 0.0 | 0.0% | exact | LLM |
+| [PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO | 30 | 40 | 10.0 | 25.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

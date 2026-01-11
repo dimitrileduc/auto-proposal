@@ -47,22 +47,22 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0048] MF Delikatess Mayonnaise 250ml DE | 32 | 48 | 16.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 48 | 48 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 64 | 80 | 16.0 | 20.0% | partial | Non | Non | LLM |
-| [MF0062] ​MF Tarti Betterave rouge | 32 | 80 | 48.0 | 60.0% | partial | Non | Non | LLM |
-| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 25 | 50 | 25.0 | 50.0% | partial | Non | Non | LLM |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 25 | 50 | 25.0 | 50.0% | partial | Non | Non | LLM |
-| [LV136] LV Tartinade Betterave 190g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV330] LV BIO Tartinade Toscana 190g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV159] LV Tartinade aux Truffes  135g  | 25 | 53 | 28.0 | 52.8% | partial | Non | Non | LLM |
-| [LV345] LV Spread KIDS 200ml Organic | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV342] LV Organic Broccoli Spread 190 g | 25 | 53 | 28.0 | 52.8% | partial | Non | Non | LLM |
-| [LV133] LV Tartinade Ananas Coco 190g | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV189] LV Tartinade Houmous Type 380g | 75 | 25 | 50.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0048] MF Delikatess Mayonnaise 250ml DE | 32 | 48 | 16.0 | 33.3% | partial | LLM |
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 48 | 48 | 0.0 | 0.0% | exact | LLM |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 64 | 80 | 16.0 | 20.0% | partial | LLM |
+| [MF0062] ​MF Tarti Betterave rouge | 32 | 80 | 48.0 | 60.0% | partial | LLM |
+| [LV348] LV Tartinade Dattes-Chili 180g BE bio | 25 | 50 | 25.0 | 50.0% | partial | LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 25 | 50 | 25.0 | 50.0% | partial | LLM |
+| [LV136] LV Tartinade Betterave 190g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [LV330] LV BIO Tartinade Toscana 190g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [LV159] LV Tartinade aux Truffes  135g  | 25 | 53 | 28.0 | 52.8% | partial | LLM |
+| [LV345] LV Spread KIDS 200ml Organic | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [LV342] LV Organic Broccoli Spread 190 g | 25 | 53 | 28.0 | 52.8% | partial | LLM |
+| [LV133] LV Tartinade Ananas Coco 190g | 25 | 25 | 0.0 | 0.0% | exact | LLM |
+| [LV189] LV Tartinade Houmous Type 380g | 75 | 25 | 50.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (14 produits)

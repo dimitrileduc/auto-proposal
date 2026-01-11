@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0097] FILOU MOUTARDE 5 KG | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 64 | 100 | 36.0 | 36.0% | partial | Non | Non | LLM |
-| [PF0084] FILOU CARBONNADES 800 GR | 1 | 0 | 1.0 | 0.0% | partial | Non | Non | LLM |
-| [PF1224] FILOU BOULETTES TOMATE 800 GR | 2 | 0 | 2.0 | 0.0% | partial | Non | Non | LLM |
-| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 1 | 0 | 1.0 | 0.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0097] FILOU MOUTARDE 5 KG | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 64 | 100 | 36.0 | 36.0% | partial | LLM |
+| [PF0084] FILOU CARBONNADES 800 GR | 1 | 0 | 1.0 | 0.0% | partial | LLM |
+| [PF1224] FILOU BOULETTES TOMATE 800 GR | 2 | 0 | 2.0 | 0.0% | partial | LLM |
+| [PF1844] FILOU ANDALOUSE SQUEEZE 300ML | 1 | 0 | 1.0 | 0.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

@@ -47,17 +47,17 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 4 | 8 | 4.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF035] JF BURGER SQUEEZE 300ML | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 4 | 8 | 4.0 | 50.0% | partial | LLM |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF035] JF BURGER SQUEEZE 300ML | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [JF036] JF MITRAILLETTE SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (9 produits)

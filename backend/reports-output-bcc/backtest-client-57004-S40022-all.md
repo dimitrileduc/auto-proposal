@@ -47,34 +47,34 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LD011] LD Organic Kids Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD015] LD Onion Spread 180g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD010] LD Organic Truffle Spread 135 g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [LD009] LD Organic Asparagus Spread 180 g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LD013] LD Tuscan Organic Spread 180 g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF029] JF VOL AU VENT BOCAL 400G | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LD011] LD Organic Kids Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LD015] LD Onion Spread 180g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LD007] LD Organic Pineapple Coconut Spread 180 g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LD010] LD Organic Truffle Spread 135 g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [LD009] LD Organic Asparagus Spread 180 g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LD013] LD Tuscan Organic Spread 180 g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [LD014] LD Organic Avocado Spread 180 g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF029] JF VOL AU VENT BOCAL 400G | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF057] JF EGG MAYONNAISE 720ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF002] JF MAYONNAI BASILIC 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF007] JF SAUCE MAYO TOMAT 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (26 produits)

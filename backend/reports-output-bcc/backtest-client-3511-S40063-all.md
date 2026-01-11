@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0075] FILOU CHASSEUR  10 L | 52 | 44 | 8.0 | 18.2% | partial | Non | Non | LLM |
-| [PF0078] FILOU CHASSEUR 5 L | 100 | 160 | 60.0 | 37.5% | partial | Non | Non | LLM |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 24 | 22 | 2.0 | 9.1% | partial | Non | Non | LLM |
-| [PF0097] FILOU MOUTARDE 5 KG | 30 | 60 | 30.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0075] FILOU CHASSEUR  10 L | 52 | 44 | 8.0 | 18.2% | partial | LLM |
+| [PF0078] FILOU CHASSEUR 5 L | 100 | 160 | 60.0 | 37.5% | partial | LLM |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 24 | 22 | 2.0 | 9.1% | partial | LLM |
+| [PF0097] FILOU MOUTARDE 5 KG | 30 | 60 | 30.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

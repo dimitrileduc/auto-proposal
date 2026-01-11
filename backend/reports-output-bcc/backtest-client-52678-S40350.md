@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV161] LV Tartinade Mangue curry 190g | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [LV136] LV Tartinade Betterave 190g | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [LV330] LV BIO Tartinade Toscana 190g | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV161] LV Tartinade Mangue curry 190g | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [LV136] LV Tartinade Betterave 190g | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [LV330] LV BIO Tartinade Toscana 190g | 1 | 4 | 3.0 | 75.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

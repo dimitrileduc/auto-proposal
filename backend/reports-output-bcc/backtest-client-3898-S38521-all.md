@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 24 | 36 | 12.0 | 33.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 24 | 36 | 12.0 | 33.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

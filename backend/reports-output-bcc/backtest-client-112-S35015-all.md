@@ -47,19 +47,19 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [CB006] CB Blackcurrant Apple juice 1l | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0033] MF Tarti Poivron chilli 250g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0030] MF Tarti Mangue Curry 250g  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0014] MF Olives noires 500g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0032] MF Tarti Pois chiches 250 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [CB006] CB Blackcurrant Apple juice 1l | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [MF0033] MF Tarti Poivron chilli 250g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [MF0030] MF Tarti Mangue Curry 250g  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0014] MF Olives noires 500g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0032] MF Tarti Pois chiches 250 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (11 produits)

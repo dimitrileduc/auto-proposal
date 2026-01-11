@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 7 | 6 | 1.0 | 16.7% | partial | Non | Non | LLM |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 7 | 9 | 2.0 | 22.2% | partial | Non | Non | LLM |
-| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 5 | 9 | 4.0 | 44.4% | partial | Non | Non | LLM |
-| [AQUA01] AQUAPAX - natural mineral water 500ml | 30 | 12 | 18.0 | 150.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 7 | 6 | 1.0 | 16.7% | partial | LLM |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 7 | 9 | 2.0 | 22.2% | partial | LLM |
+| [TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml | 5 | 9 | 4.0 | 44.4% | partial | LLM |
+| [AQUA01] AQUAPAX - natural mineral water 500ml | 30 | 12 | 18.0 | 150.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

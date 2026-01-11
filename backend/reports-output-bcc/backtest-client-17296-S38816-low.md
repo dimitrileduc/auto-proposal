@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [JF021] JF PICKLES 350 ML | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [JF021] JF PICKLES 350 ML | 4 | 3 | 1.0 | 33.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

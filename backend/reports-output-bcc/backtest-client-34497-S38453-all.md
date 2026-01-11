@@ -47,30 +47,30 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [FO001] FO CITRONNADE BIO 33cl | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 4 | 3.0 | 75.0% | partial | Non | Non | LLM |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LB003] LB Festive (4,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LB004] LB Blonde (6,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV357] LV Tartinade BIO Asperge 190g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MANA01] MANA natural energy drink - citron & gingembre 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [AQUA01] AQUAPAX - natural mineral water 500ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [FO001] FO CITRONNADE BIO 33cl | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 4 | 3.0 | 75.0% | partial | LLM |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LB003] LB Festive (4,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LB004] LB Blonde (6,5%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV155] LV Vinaigrette Caesar 250 ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV357] LV Tartinade BIO Asperge 190g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MANA01] MANA natural energy drink - citron & gingembre 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MANA02] MANA natural energy drink - tropical passion 250ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [AQUA01] AQUAPAX - natural mineral water 500ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (22 produits)

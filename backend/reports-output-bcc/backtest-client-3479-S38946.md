@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0539] JF VOL AU VENT 2,5 KG | 24 | 18 | 6.0 | 33.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0539] JF VOL AU VENT 2,5 KG | 24 | 18 | 6.0 | 33.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

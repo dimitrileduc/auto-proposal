@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0033] MF Tarti Poivron chilli 250g | 6 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0051] MF Kidney Beans 500g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [RF003] REFIELD Maïs 500G  | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0052] MF Pois chiches  500g | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0033] MF Tarti Poivron chilli 250g | 6 | 5 | 1.0 | 20.0% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0051] MF Kidney Beans 500g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [RF003] REFIELD Maïs 500G  | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [MF0052] MF Pois chiches  500g | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 3 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

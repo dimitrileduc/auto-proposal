@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 208 | 240 | 32.0 | 13.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 208 | 240 | 32.0 | 13.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

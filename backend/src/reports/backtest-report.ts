@@ -380,10 +380,10 @@ ${comparison.llmUsage ? `
 ${comparison.truePositives.length > 0 ? `
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
 ${comparison.truePositives.map(tp =>
-  `| ${tp.productName} | ${tp.predictedQty} | ${tp.realQty} | ${tp.absoluteError.toFixed(1)} | ${tp.errorPercent.toFixed(1)}% | ${tp.matchType} | ${tp.llm_required ? 'Oui' : 'Non'} | ${tp.llm_success ? 'Oui' : 'Non'} | ${tp.quantitySource === 'llm' ? 'LLM' : 'Mediane'} |`
+  `| ${tp.productName} | ${tp.predictedQty} | ${tp.realQty} | ${tp.absoluteError.toFixed(1)} | ${tp.errorPercent.toFixed(1)}% | ${tp.matchType} | ${tp.quantitySource === 'llm' ? 'LLM' : 'Mediane'} |`
 ).join('\n')}
 
 ${generateLLMDetailSection(comparison.truePositives)}
@@ -892,7 +892,7 @@ export function generateBacktestReportJSONv2(
     const llm: EnrichedProductMatch["llm"] = tp.llm_required
       ? {
           required: true,
-          success: tp.llm_success,
+          success: tp.quantitySource === 'llm',
           input: {
             recentOrders: tp.llm_input_data?.recent_orders || [],
             lastYearOrders: tp.llm_input_data?.last_year_orders || [],
@@ -1005,7 +1005,7 @@ export function generateBacktestReportJSONv2(
     const llm: EnrichedProductMismatch["llm"] = analyzedProduct?.llm_required
       ? {
           required: true,
-          success: analyzedProduct.llm_success,
+          success: analyzedProduct?.quantity_source === 'llm',
           input: analyzedProduct.llm_input_data
             ? {
                 recentOrders: analyzedProduct.llm_input_data.recent_orders || [],
@@ -1085,7 +1085,7 @@ export function generateBacktestReportJSONv2(
     const llm: EnrichedProductMismatch["llm"] = analyzedProduct?.llm_required
       ? {
           required: true,
-          success: analyzedProduct.llm_success,
+          success: analyzedProduct?.quantity_source === 'llm',
           input: analyzedProduct.llm_input_data
             ? {
                 recentOrders: analyzedProduct.llm_input_data.recent_orders || [],

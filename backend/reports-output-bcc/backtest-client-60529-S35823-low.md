@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | 3 | 2.0 | 66.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

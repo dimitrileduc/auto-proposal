@@ -47,21 +47,21 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [LV131] LV Tartinade Potiron 190g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [LV132] LV Tartinade Houmous type 190g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LV214] LV Biscuits apéro tomate basilic 100g bio  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV216] LV Biscuits apéro Fromage & Oignon 100g bio | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [LV131] LV Tartinade Potiron 190g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [LV132] LV Tartinade Houmous type 190g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [LV215] LV Biscuits apéro Fromage Parmesan 100g bio  | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LV214] LV Biscuits apéro tomate basilic 100g bio  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV216] LV Biscuits apéro Fromage & Oignon 100g bio | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV331] LV Tartinade Lentils Balsamico 190g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (13 produits)

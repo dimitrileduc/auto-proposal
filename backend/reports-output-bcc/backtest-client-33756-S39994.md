@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 6 | 4.0 | 66.7% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 8 | 2 | 6.0 | 300.0% | partial | Non | Non | LLM |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 6 | 8 | 2.0 | 25.0% | partial | Non | Non | LLM |
-| [MF0055] MF Noix de cajou - Curry 133g | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0012] MF Olives Mix 500g | 6 | 8 | 2.0 | 25.0% | partial | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 6 | 2 | 4.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 2 | 6 | 4.0 | 66.7% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 8 | 2 | 6.0 | 300.0% | partial | LLM |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 6 | 8 | 2.0 | 25.0% | partial | LLM |
+| [MF0055] MF Noix de cajou - Curry 133g | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0012] MF Olives Mix 500g | 6 | 8 | 2.0 | 25.0% | partial | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 6 | 2 | 4.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

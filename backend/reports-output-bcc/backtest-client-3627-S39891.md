@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0075] FILOU CHASSEUR  10 L | 8 | 7 | 1.0 | 14.3% | partial | Non | Non | LLM |
-| [PF0077] FILOU PROVENCALE 5 L | 8 | 6 | 2.0 | 33.3% | partial | Non | Non | LLM |
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 15 | 16 | 1.0 | 6.3% | partial | Non | Non | LLM |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 10 | 7 | 3.0 | 42.9% | partial | Non | Non | LLM |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 5 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0075] FILOU CHASSEUR  10 L | 8 | 7 | 1.0 | 14.3% | partial | LLM |
+| [PF0077] FILOU PROVENCALE 5 L | 8 | 6 | 2.0 | 33.3% | partial | LLM |
+| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 15 | 16 | 1.0 | 6.3% | partial | LLM |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 10 | 7 | 3.0 | 42.9% | partial | LLM |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 5 | 4 | 1.0 | 25.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

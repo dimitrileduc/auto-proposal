@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0549] YVALLI SAUCE PIZZA 2,5 KG | 7 | 9 | 2.0 | 22.2% | partial | Non | Non | LLM |
-| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 10 | 9 | 1.0 | 11.1% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0549] YVALLI SAUCE PIZZA 2,5 KG | 7 | 9 | 2.0 | 22.2% | partial | LLM |
+| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 10 | 9 | 1.0 | 11.1% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

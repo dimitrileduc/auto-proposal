@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 6 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 4 | 5 | 1.0 | 20.0% | partial | LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 6 | 5 | 1.0 | 20.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

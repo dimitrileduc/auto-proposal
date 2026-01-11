@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 10 | 24 | 14.0 | 58.3% | partial | Non | Non | LLM |
-| [PF0077] FILOU PROVENCALE 5 L | 30 | 30 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0509] YVALLI GR BOUL TOMATE 2,5 KG | 10 | 24 | 14.0 | 58.3% | partial | LLM |
+| [PF0077] FILOU PROVENCALE 5 L | 30 | 30 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

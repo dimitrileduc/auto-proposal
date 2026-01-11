@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JOY03] JOY! Organic Apricot Jam 370g | 10 | 20 | 10.0 | 50.0% | partial | Non | Non | LLM |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 15 | 30 | 15.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JOY03] JOY! Organic Apricot Jam 370g | 10 | 20 | 10.0 | 50.0% | partial | LLM |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 15 | 30 | 15.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

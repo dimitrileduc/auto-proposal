@@ -47,31 +47,31 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT05] RITCHIE Cola - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [RIT06] RITCHIE Cola ZERO - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [fsv17] Mélange de noix bio vrac 2,75kg | 5 | 5 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | 5 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [fsv04] Amande nature bio vrac 2,8 kg | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [fsv03] Noisette nature bio vrac 2,8kg  | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [fsv18] Mendiant bio vrac 2,8kg | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [fsv08] Banana chips bio vrac 1,6kg | 5 | 5 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [RIT08] RITCHIE Citron - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH01] RISH kombucha BIO - original 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT09] RITCHIE Cola - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT07] RITCHIE Orange - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT05] RITCHIE Cola - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [RIT06] RITCHIE Cola ZERO - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [fsv17] Mélange de noix bio vrac 2,75kg | 5 | 5 | 0.0 | 0.0% | exact | LLM |
+| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [fsv06] Noix du Brésil nature bio vrac 3kg | 5 | 5 | 0.0 | 0.0% | exact | LLM |
+| [fsv05] Noix de pecan nature bio vrac 2,2kg  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [fsv04] Amande nature bio vrac 2,8 kg | 4 | 5 | 1.0 | 20.0% | partial | LLM |
+| [fsv03] Noisette nature bio vrac 2,8kg  | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [fsv18] Mendiant bio vrac 2,8kg | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [fsv08] Banana chips bio vrac 1,6kg | 5 | 5 | 0.0 | 0.0% | exact | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [RIT11] RITCHIE Orange Sanguine - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [RIT08] RITCHIE Citron - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RISH01] RISH kombucha BIO - original 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT09] RITCHIE Cola - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT10] RITCHIE Cola ZERO - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT07] RITCHIE Orange - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (23 produits)

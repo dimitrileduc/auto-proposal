@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV160] LV Tartinade Aubergine 190g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV345] LV Spread KIDS 200ml Organic | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [LV040] LV Caprons apéritifs 240g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [RIT01] RITCHIE Orange - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV160] LV Tartinade Aubergine 190g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV345] LV Spread KIDS 200ml Organic | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [LV040] LV Caprons apéritifs 240g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [RIT01] RITCHIE Orange - verre 275ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

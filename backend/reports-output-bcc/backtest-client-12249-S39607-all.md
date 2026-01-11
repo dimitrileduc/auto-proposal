@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0055] MF Noix de cajou - Curry 133g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0055] MF Noix de cajou - Curry 133g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0056] MF Noix de cajou - Herbes de Provence 133g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

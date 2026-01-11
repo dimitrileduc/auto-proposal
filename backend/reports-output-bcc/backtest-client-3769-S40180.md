@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0649] PROMELIOR MOUTARDE DOUCE 2,1KG | 72 | 84 | 12.0 | 14.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0649] PROMELIOR MOUTARDE DOUCE 2,1KG | 72 | 84 | 12.0 | 14.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

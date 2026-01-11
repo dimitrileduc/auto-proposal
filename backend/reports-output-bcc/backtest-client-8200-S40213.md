@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | 3 | 4.0 | 133.3% | partial | Non | Non | LLM |
-| [JF032] JF SAUCE LAPIN 380GX6 | 6 | 3 | 3.0 | 100.0% | partial | Non | Non | LLM |
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 7 | 3 | 4.0 | 133.3% | partial | LLM |
+| [JF032] JF SAUCE LAPIN 380GX6 | 6 | 3 | 3.0 | 100.0% | partial | LLM |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

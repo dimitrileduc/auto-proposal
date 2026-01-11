@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | 8 | 4.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | 8 | 4.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

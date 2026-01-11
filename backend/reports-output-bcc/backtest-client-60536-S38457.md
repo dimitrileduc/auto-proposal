@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [RISH05] RISH kombucha BIO - rose 750ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [RISH05] RISH kombucha BIO - rose 750ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

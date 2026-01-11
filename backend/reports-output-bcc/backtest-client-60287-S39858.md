@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [RIT08] RITCHIE Citron - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT09] RITCHIE Cola - canette 330ml | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RIT07] RITCHIE Orange - canette 330ml | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [RIT08] RITCHIE Citron - canette 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RIT09] RITCHIE Cola - canette 330ml | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [RIT07] RITCHIE Orange - canette 330ml | 4 | 1 | 3.0 | 300.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

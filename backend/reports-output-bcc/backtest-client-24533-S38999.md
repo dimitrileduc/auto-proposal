@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0013] MF Olives Vertes 500g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [MF0030] MF Tarti Mangue Curry 250g  | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0013] MF Olives Vertes 500g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [MF0030] MF Tarti Mangue Curry 250g  | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

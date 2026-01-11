@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LEA10] LEAMO ginger beer bio 330ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 3 | 0 | 3.0 | 0.0% | partial | Non | Non | LLM |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 5 | 2 | 3.0 | 150.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LEA10] LEAMO ginger beer bio 330ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 3 | 0 | 3.0 | 0.0% | partial | LLM |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [WIG06] WIGNAC cidre naturel bio sans alcool 330ml | 5 | 2 | 3.0 | 150.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

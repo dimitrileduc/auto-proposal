@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF068] FIL VOL AU VENT 800G BOCAL  | 40 | 30 | 10.0 | 33.3% | partial | Non | Non | LLM |
-| [FIL19] FIL VOL AU VENT 400G BOCAL | 20 | 8 | 12.0 | 150.0% | partial | Non | Non | LLM |
-| [JF071] FIL CARBONNADES 800G BOCAL  | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF072] FIL BOULETTES SAUCE CHASSEUR 800G BOCAL  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF068] FIL VOL AU VENT 800G BOCAL  | 40 | 30 | 10.0 | 33.3% | partial | LLM |
+| [FIL19] FIL VOL AU VENT 400G BOCAL | 20 | 8 | 12.0 | 150.0% | partial | LLM |
+| [JF071] FIL CARBONNADES 800G BOCAL  | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF072] FIL BOULETTES SAUCE CHASSEUR 800G BOCAL  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

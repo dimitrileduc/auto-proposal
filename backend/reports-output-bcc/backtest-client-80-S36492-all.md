@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LB004] LB Blonde (6,5%) 33CL | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LB005] LB Amber (5,2%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LB002] LB Blonde 75 CL (6,5%) | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LB006] LB Brown (7,0%)  33CL | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LB004] LB Blonde (6,5%) 33CL | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LB005] LB Amber (5,2%) 33CL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LB002] LB Blonde 75 CL (6,5%) | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LB006] LB Brown (7,0%)  33CL | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

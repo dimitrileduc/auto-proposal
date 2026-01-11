@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0051] MF Kidney Beans 500g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0033] MF Tarti Poivron chilli 250g | 3 | 6 | 3.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0051] MF Kidney Beans 500g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [MF0034] MF Tarti Pomme Raifort 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0033] MF Tarti Poivron chilli 250g | 3 | 6 | 3.0 | 50.0% | partial | LLM |
+| [MF0028] ​MF Tarti Carotte Gingembre 250g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

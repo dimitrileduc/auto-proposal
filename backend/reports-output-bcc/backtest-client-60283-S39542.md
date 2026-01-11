@@ -47,16 +47,16 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 18 | 60 | 42.0 | 70.0% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 25 | 50 | 25.0 | 50.0% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 5 | 25 | 20.0 | 80.0% | partial | Non | Non | LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 25 | 7 | 18.0 | 257.1% | partial | Non | Non | LLM |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 10 | 40 | 30.0 | 75.0% | partial | Non | Non | LLM |
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 10 | 60 | 50.0 | 83.3% | partial | Non | Non | LLM |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 18 | 45 | 27.0 | 60.0% | partial | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 25 | 18 | 7.0 | 38.9% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 18 | 60 | 42.0 | 70.0% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 25 | 50 | 25.0 | 50.0% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 5 | 25 | 20.0 | 80.0% | partial | LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 25 | 7 | 18.0 | 257.1% | partial | LLM |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 10 | 40 | 30.0 | 75.0% | partial | LLM |
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 10 | 60 | 50.0 | 83.3% | partial | LLM |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 18 | 45 | 27.0 | 60.0% | partial | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 25 | 18 | 7.0 | 38.9% | partial | LLM |
 
 
 ### Details des Predictions LLM (8 produits)

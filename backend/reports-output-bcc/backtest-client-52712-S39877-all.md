@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0030] MF Tarti Mangue Curry 250g  | 6 | 3 | 3.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 5 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 5 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0030] MF Tarti Mangue Curry 250g  | 6 | 3 | 3.0 | 100.0% | partial | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 5 | 3 | 2.0 | 66.7% | partial | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 5 | 3 | 2.0 | 66.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

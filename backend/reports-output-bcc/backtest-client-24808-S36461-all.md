@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | 1 | 5.0 | 500.0% | partial | Non | Non | LLM |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 6 | 1 | 5.0 | 500.0% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 6 | 1 | 5.0 | 500.0% | partial | Non | Non | LLM |
-| [LV132] LV Tartinade Houmous type 190g | 6 | 1 | 5.0 | 500.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | 1 | 5.0 | 500.0% | partial | LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 6 | 1 | 5.0 | 500.0% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 6 | 1 | 5.0 | 500.0% | partial | LLM |
+| [LV132] LV Tartinade Houmous type 190g | 6 | 1 | 5.0 | 500.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

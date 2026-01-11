@@ -47,19 +47,19 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0013] MF Olives Vertes 500g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0012] MF Olives Mix 500g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0052] MF Pois chiches  500g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0051] MF Kidney Beans 500g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [LV158] LV Moutarde 200 ml | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV146] LV Sauce Aïoli 200 ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0013] MF Olives Vertes 500g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0012] MF Olives Mix 500g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [MF0033] MF Tarti Poivron chilli 250g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0052] MF Pois chiches  500g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0051] MF Kidney Beans 500g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [LV158] LV Moutarde 200 ml | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV143] LV Mayonnaise (huile 70%) 200 ml  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV146] LV Sauce Aïoli 200 ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (11 produits)

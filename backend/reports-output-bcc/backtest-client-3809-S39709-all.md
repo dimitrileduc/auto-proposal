@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG | 400 | 480 | 80.0 | 16.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG | 400 | 480 | 80.0 | 16.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

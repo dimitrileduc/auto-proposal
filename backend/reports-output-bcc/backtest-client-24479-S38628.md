@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1878] JEFKE MOUTARDE PET 2,1 L | 42 | 126 | 84.0 | 66.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1878] JEFKE MOUTARDE PET 2,1 L | 42 | 126 | 84.0 | 66.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

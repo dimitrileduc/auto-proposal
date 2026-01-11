@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 5 | 12 | 7.0 | 58.3% | partial | Non | Non | LLM |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 5 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 5 | 12 | 7.0 | 58.3% | partial | LLM |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 5 | 10 | 5.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

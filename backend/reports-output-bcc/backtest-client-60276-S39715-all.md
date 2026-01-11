@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 6 | 10 | 4.0 | 40.0% | partial | Non | Non | LLM |
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 6 | 10 | 4.0 | 40.0% | partial | Non | Non | LLM |
-| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 6 | 10 | 4.0 | 40.0% | partial | Non | Non | LLM |
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 6 | 10 | 4.0 | 40.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml | 6 | 10 | 4.0 | 40.0% | partial | LLM |
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 6 | 10 | 4.0 | 40.0% | partial | LLM |
+| [NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml | 6 | 10 | 4.0 | 40.0% | partial | LLM |
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 6 | 10 | 4.0 | 40.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

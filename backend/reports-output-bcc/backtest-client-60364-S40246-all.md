@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 12 | 12 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | 12 | 11.0 | 91.7% | partial | Non | Non | LLM |
-| [REB05] REB chips bio - sel de mer 35g | 6 | 12 | 6.0 | 50.0% | partial | Non | Non | LLM |
-| [REB06] REB chips bio - paprika fumé 35g | 1 | 12 | 11.0 | 91.7% | partial | Non | Non | LLM |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 10 | 10 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 15 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g | 12 | 12 | 0.0 | 0.0% | exact | LLM |
+| [NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g | 1 | 12 | 11.0 | 91.7% | partial | LLM |
+| [REB05] REB chips bio - sel de mer 35g | 6 | 12 | 6.0 | 50.0% | partial | LLM |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | 12 | 11.0 | 91.7% | partial | LLM |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 10 | 10 | 0.0 | 0.0% | exact | LLM |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 15 | 10 | 5.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

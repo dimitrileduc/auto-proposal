@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 6 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0030] MF Tarti Mangue Curry 250g  | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 4 | 5 | 1.0 | 20.0% | partial | Non | Non | LLM |
-| [MF0052] MF Pois chiches  500g | 6 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [RF003] REFIELD Maïs 500G  | 5 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 6 | 4 | 2.0 | 50.0% | partial | LLM |
+| [MF0030] MF Tarti Mangue Curry 250g  | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 4 | 5 | 1.0 | 20.0% | partial | LLM |
+| [MF0052] MF Pois chiches  500g | 6 | 4 | 2.0 | 50.0% | partial | LLM |
+| [RF003] REFIELD Maïs 500G  | 5 | 4 | 1.0 | 25.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

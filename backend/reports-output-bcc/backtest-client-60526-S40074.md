@@ -47,25 +47,25 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 6 | 3.0 | 50.0% | partial | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH01] RISH kombucha BIO - original 330ml | 10 | 10 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 10 | 10 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 6 | 15 | 9.0 | 60.0% | partial | Non | Non | LLM |
-| [RISH05] RISH kombucha BIO - rose 750ml | 6 | 6 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 10 | 10 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [LEA06] LEAMO maté 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MATE02] MATE MATE thé glacé bio pétillant au yerba maté canette 250ml | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 6 | 3.0 | 50.0% | partial | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [RISH01] RISH kombucha BIO - original 330ml | 10 | 10 | 0.0 | 0.0% | exact | LLM |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 10 | 10 | 0.0 | 0.0% | exact | LLM |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 6 | 15 | 9.0 | 60.0% | partial | LLM |
+| [RISH05] RISH kombucha BIO - rose 750ml | 6 | 6 | 0.0 | 0.0% | exact | LLM |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 10 | 10 | 0.0 | 0.0% | exact | LLM |
+| [PAO01] PAOLA cola verre 250ml - le cola des Belges | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [PAO02] PAOLA cola ZERO verre 250ml - le cola des Belges  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [LEA06] LEAMO maté 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml | 4 | 2 | 2.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (17 produits)

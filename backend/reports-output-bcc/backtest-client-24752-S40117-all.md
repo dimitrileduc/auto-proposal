@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 10 | 157 | 147.0 | 93.6% | partial | Non | Non | LLM |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 10 | 400 | 390.0 | 97.5% | partial | Non | Non | LLM |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 10 | 123 | 113.0 | 91.9% | partial | Non | Non | LLM |
-| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 10 | 61 | 51.0 | 83.6% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G | 10 | 157 | 147.0 | 93.6% | partial | LLM |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 10 | 400 | 390.0 | 97.5% | partial | LLM |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 10 | 123 | 113.0 | 91.9% | partial | LLM |
+| [PF3200] LD FR TARTINADE BIO ASPERGE 180G | 10 | 61 | 51.0 | 83.6% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

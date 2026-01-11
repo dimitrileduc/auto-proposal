@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 6 | 10 | 4.0 | 40.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NOD04] NODA limonade bio faible en calories - mangue passion 330ml | 6 | 10 | 4.0 | 40.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

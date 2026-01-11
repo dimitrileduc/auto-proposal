@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | 70 | 66.0 | 94.3% | partial | Non | Non | LLM |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | 70 | 68.0 | 97.1% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | 70 | 66.0 | 94.3% | partial | LLM |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 2 | 70 | 68.0 | 97.1% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

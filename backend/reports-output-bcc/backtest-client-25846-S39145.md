@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 24 | 48 | 24.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 24 | 48 | 24.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

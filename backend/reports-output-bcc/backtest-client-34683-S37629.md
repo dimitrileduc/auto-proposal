@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1187] LINEA KEBAB DELICATA 5 L | 170 | 120 | 50.0 | 41.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1187] LINEA KEBAB DELICATA 5 L | 170 | 120 | 50.0 | 41.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

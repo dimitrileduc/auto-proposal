@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF037] JF BBQ SQUEEZE 300ML | 2 | 6 | 4.0 | 66.7% | partial | Non | Non | LLM |
-| [JF073] FIL BOULLETTES SAUCE TOMATE 800G BOCAL  | 8 | 8 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF071] FIL CARBONNADES 800G BOCAL  | 8 | 8 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF037] JF BBQ SQUEEZE 300ML | 2 | 6 | 4.0 | 66.7% | partial | LLM |
+| [JF073] FIL BOULLETTES SAUCE TOMATE 800G BOCAL  | 8 | 8 | 0.0 | 0.0% | exact | LLM |
+| [JF071] FIL CARBONNADES 800G BOCAL  | 8 | 8 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

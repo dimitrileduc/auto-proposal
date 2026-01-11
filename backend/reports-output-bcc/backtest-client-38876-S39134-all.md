@@ -47,29 +47,29 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF029] JF VOL AU VENT BOCAL 400G | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [JF032] JF SAUCE LAPIN 380GX6 | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 10 | 8.0 | 80.0% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 6 | 3.0 | 50.0% | partial | Non | Non | LLM |
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 4 | 6 | 2.0 | 33.3% | partial | Non | Non | LLM |
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 6 | 6 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 10 | 2 | 8.0 | 400.0% | partial | Non | Non | LLM |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 10 | 10 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD009] LD Organic Asparagus Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD012] LD Organic Samphire Spread 135 g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LD013] LD Tuscan Organic Spread 180 g | 6 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
-| [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF027] JF VINAIGRET MIEL MOU WECK 200 | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF029] JF VOL AU VENT BOCAL 400G | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 1 | 3 | 2.0 | 66.7% | partial | LLM |
+| [JF032] JF SAUCE LAPIN 380GX6 | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 10 | 8.0 | 80.0% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 3 | 6 | 3.0 | 50.0% | partial | LLM |
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 4 | 6 | 2.0 | 33.3% | partial | LLM |
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 6 | 6 | 0.0 | 0.0% | exact | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 10 | 2 | 8.0 | 400.0% | partial | LLM |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 10 | 10 | 0.0 | 0.0% | exact | LLM |
+| [LD009] LD Organic Asparagus Spread 180 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LD012] LD Organic Samphire Spread 135 g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [LD013] LD Tuscan Organic Spread 180 g | 6 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (21 produits)

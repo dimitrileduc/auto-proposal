@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 7 | 6.0 | 85.7% | partial | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 7 | 5.0 | 71.4% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 8 | 7.0 | 87.5% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | 10 | 7.0 | 70.0% | partial | Non | Non | LLM |
-| [JF048] JF DISPLAY SAUCES 250ML  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TVF003] TVF TARTINADE BIO CAROTTE 180g | 1 | 7 | 6.0 | 85.7% | partial | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 2 | 7 | 5.0 | 71.4% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 1 | 8 | 7.0 | 87.5% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 1 | 10 | 9.0 | 90.0% | partial | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 3 | 10 | 7.0 | 70.0% | partial | LLM |
+| [JF048] JF DISPLAY SAUCES 250ML  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

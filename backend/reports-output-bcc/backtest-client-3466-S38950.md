@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3298] COLONA MOUTARDE SUCREE 5 KG | 216 | 320 | 104.0 | 32.5% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3298] COLONA MOUTARDE SUCREE 5 KG | 216 | 320 | 104.0 | 32.5% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

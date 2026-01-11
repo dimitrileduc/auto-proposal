@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0164] FILOU MOUTARDE  10 KG | 55 | 88 | 33.0 | 37.5% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0164] FILOU MOUTARDE  10 KG | 55 | 88 | 33.0 | 37.5% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

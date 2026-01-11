@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [RIT01] RITCHIE Orange - verre 275ml | 5 | 8 | 3.0 | 37.5% | partial | Non | Non | LLM |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [RIT04] RITCHIE Pamplemousse - verre 275ml | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [RIT01] RITCHIE Orange - verre 275ml | 5 | 8 | 3.0 | 37.5% | partial | LLM |
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [RIT04] RITCHIE Pamplemousse - verre 275ml | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 1 | 3 | 2.0 | 66.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

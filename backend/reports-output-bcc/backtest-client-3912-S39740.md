@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PI2911] PI SAUCE BURGER BA PO | 12600 | 18114 | 5514.0 | 30.4% | partial | Non | Non | LLM |
-| [PI2910] PI SAUCE ALGERIENNE BA PO | 8100 | 3664 | 4436.0 | 121.1% | partial | Non | Non | LLM |
-| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 900 | 0 | 900.0 | 0.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PI2911] PI SAUCE BURGER BA PO | 12600 | 18114 | 5514.0 | 30.4% | partial | LLM |
+| [PI2910] PI SAUCE ALGERIENNE BA PO | 8100 | 3664 | 4436.0 | 121.1% | partial | LLM |
+| [PI0095] PI SAUCE CHEESY EASY 70% PO  | 900 | 0 | 900.0 | 0.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

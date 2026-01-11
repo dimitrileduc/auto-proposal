@@ -47,39 +47,39 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV145] LV Sauce Tartare 200 ml  | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV157] LV Ketchup aux tomates 263 ml bio | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV131] LV Tartinade Potiron 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV132] LV Tartinade Houmous type 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV133] LV Tartinade Ananas Coco 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV135] LV Tartinade Basilico 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV136] LV Tartinade Betterave 190g | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [LV137] LV Tartinade Lentilles Curry 190g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV330] LV BIO Tartinade Toscana 190g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV188] LV Tartinade Aubergine  380g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LV138] LV Tartinade Carotte gingembre  380g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LV187] LV Tartinade Mangue Curry 380g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [RF003] REFIELD Maïs 500G  | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0052] MF Pois chiches  500g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [fsv08] Banana chips bio vrac 1,6kg | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [fsv18] Mendiant bio vrac 2,8kg | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV342] LV Organic Broccoli Spread 190 g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV357] LV Tartinade BIO Asperge 190g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0051] MF Kidney Beans 500g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LV217] LV Tartinade Basilic 380g | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV142] LV Mayonnaise en bocal weck (huile 70%) 470 ml  | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV145] LV Sauce Tartare 200 ml  | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV157] LV Ketchup aux tomates 263 ml bio | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [LV131] LV Tartinade Potiron 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV132] LV Tartinade Houmous type 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [LV133] LV Tartinade Ananas Coco 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV135] LV Tartinade Basilico 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV136] LV Tartinade Betterave 190g | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [LV137] LV Tartinade Lentilles Curry 190g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV126] LV Tartinade Tomate Ail des Ours 190g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [LV330] LV BIO Tartinade Toscana 190g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [LV332] LV Tartinade Olive Caper Tomato 190g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV188] LV Tartinade Aubergine  380g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LV138] LV Tartinade Carotte gingembre  380g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LV187] LV Tartinade Mangue Curry 380g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [RF003] REFIELD Maïs 500G  | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0052] MF Pois chiches  500g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [fsv08] Banana chips bio vrac 1,6kg | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [fsv18] Mendiant bio vrac 2,8kg | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV342] LV Organic Broccoli Spread 190 g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV357] LV Tartinade BIO Asperge 190g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0051] MF Kidney Beans 500g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LV217] LV Tartinade Basilic 380g | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (31 produits)

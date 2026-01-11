@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV104] LV Paprika Chili Aufstri 180g DE | 300 | 600 | 300.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV104] LV Paprika Chili Aufstri 180g DE | 300 | 600 | 300.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 2 | 5 | 3.0 | 60.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

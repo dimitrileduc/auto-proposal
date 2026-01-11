@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 64 | 60 | 4.0 | 6.7% | partial | Non | Non | LLM |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 30 | 25 | 5.0 | 20.0% | partial | Non | Non | LLM |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 40 | 30 | 10.0 | 33.3% | partial | Non | Non | LLM |
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 15 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 1 | 45 | 44.0 | 97.8% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 64 | 60 | 4.0 | 6.7% | partial | LLM |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 30 | 25 | 5.0 | 20.0% | partial | LLM |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 40 | 30 | 10.0 | 33.3% | partial | LLM |
+| [PF2937] LD FR TARTINADE BIO POIS 200 | 15 | 10 | 5.0 | 50.0% | partial | LLM |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 1 | 45 | 44.0 | 97.8% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF2937] LD FR TARTINADE BIO POIS 200 | 15 | 10 | 5.0 | 50.0% | partial | Non | Non | LLM |
-| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 1 | 45 | 44.0 | 97.8% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF2937] LD FR TARTINADE BIO POIS 200 | 15 | 10 | 5.0 | 50.0% | partial | LLM |
+| [PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G | 1 | 45 | 44.0 | 97.8% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

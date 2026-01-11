@@ -47,18 +47,18 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV188] LV Tartinade Aubergine  380g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV138] LV Tartinade Carotte gingembre  380g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JOY05] Organic Cherry Jam 370g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JOY03] JOY! Organic Apricot Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 5 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [LV129] LV Tartinade Carotte Gingembre 190g | 5 | 2 | 3.0 | 150.0% | partial | Non | Non | LLM |
-| [JOY08] JOY! Organic Raspberry Jam 370g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JOY06] JOY! Organic Rhubarb Jam 370g | 3 | 1 | 2.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV188] LV Tartinade Aubergine  380g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [LV138] LV Tartinade Carotte gingembre  380g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JOY04] JOY! Organic Four-Fruit Jam 370g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JOY05] Organic Cherry Jam 370g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JOY02] JOY! Organic Strawberry Jam 370g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [JOY03] JOY! Organic Apricot Jam 370g | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 5 | 4 | 1.0 | 25.0% | partial | LLM |
+| [LV129] LV Tartinade Carotte Gingembre 190g | 5 | 2 | 3.0 | 150.0% | partial | LLM |
+| [JOY08] JOY! Organic Raspberry Jam 370g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JOY06] JOY! Organic Rhubarb Jam 370g | 3 | 1 | 2.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (10 produits)

@@ -47,15 +47,15 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TVF004] TVF TARTINADE BIO OLIVE 180g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [TVF001] TVF TARTINADE BIO MANGUE 180g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [TVF006] TVF TARTINADE BIO TOMATE 180g | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TVF004] TVF TARTINADE BIO OLIVE 180g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [TVF002] TVF TARTINADE BIO PAPRIKA 180g | 4 | 3 | 1.0 | 33.3% | partial | LLM |
+| [TVF001] TVF TARTINADE BIO MANGUE 180g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [TVF005] TVF TARTINADE BIO AUBERGINE 180g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [TVF009] TVF TARTINADE BIO POIS CHICHES 180g | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [TVF006] TVF TARTINADE BIO TOMATE 180g | 4 | 3 | 1.0 | 33.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (7 produits)

@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1049] FILOU/LD SAUCE CHEESY 5 L | 360 | 360 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF1122] FILOU/ LD SAUCE BBQ 3 KG | 480 | 280 | 200.0 | 71.4% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1049] FILOU/LD SAUCE CHEESY 5 L | 360 | 360 | 0.0 | 0.0% | exact | LLM |
+| [PF1122] FILOU/ LD SAUCE BBQ 3 KG | 480 | 280 | 200.0 | 71.4% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

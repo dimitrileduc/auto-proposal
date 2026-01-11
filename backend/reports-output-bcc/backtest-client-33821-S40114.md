@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 11 | 10 | 1.0 | 10.0% | partial | Non | Non | LLM |
-| [PF0539] JF VOL AU VENT 2,5 KG | 4 | 6 | 2.0 | 33.3% | partial | Non | Non | LLM |
-| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 6 | 2 | 4.0 | 200.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0516] YVALLI PROVENCALE 2,5 KG BOC | 11 | 10 | 1.0 | 10.0% | partial | LLM |
+| [PF0539] JF VOL AU VENT 2,5 KG | 4 | 6 | 2.0 | 33.3% | partial | LLM |
+| [PF0609] YVALLI SAUCE TOMATE 2,5 KG | 6 | 2 | 4.0 | 200.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

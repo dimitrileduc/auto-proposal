@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 5 | 5 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 5 | 5 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 5 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 4 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g | 5 | 5 | 0.0 | 0.0% | exact | LLM |
+| [NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g | 5 | 5 | 0.0 | 0.0% | exact | LLM |
+| [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 5 | 3 | 2.0 | 66.7% | partial | LLM |
+| [NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g | 4 | 3 | 1.0 | 33.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

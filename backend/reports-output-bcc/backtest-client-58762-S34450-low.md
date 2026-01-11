@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1802] LD MOUTARDE MIEL 250ML WECK | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1802] LD MOUTARDE MIEL 250ML WECK | 1 | 5 | 4.0 | 80.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

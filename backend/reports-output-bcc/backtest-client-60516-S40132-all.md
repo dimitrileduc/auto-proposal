@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [fsv01] Cerneaux de noix nature bio vrac 1,8kg | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [RISH03] RISH kombucha BIO - gingembre 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [RISH04] RISH kombucha BIO - smash basil 330ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [RISH02] RISH kombucha BIO - hibiscus 330ml | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [WIG07] WIGNAC cidre naturel bio sans alcool 750ml | 1 | 2 | 1.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

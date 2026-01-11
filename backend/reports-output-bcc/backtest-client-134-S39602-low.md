@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0047] MF Mayonnaise 250ml | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
-| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
-| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
-| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | 5 | 4.0 | 80.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0047] MF Mayonnaise 250ml | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g | 1 | 5 | 4.0 | 80.0% | partial | LLM |
+| [NUT03] NUTS & BERRIES energy bar Mediterran bio 40g | 1 | 5 | 4.0 | 80.0% | partial | LLM |
+| [NUT02] NUTS & BERRIES energy bar Superfood bio 40g | 1 | 5 | 4.0 | 80.0% | partial | LLM |
+| [NUT01] NUTS & BERRIES energy bar Deluxe bio 40g | 1 | 5 | 4.0 | 80.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 16 | 16 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 32 | 16.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0027] MF Tarti Aubergine 250g  | 16 | 32 | 16.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0029] MF Tarti Datte chili 250g | 16 | 32 | 16.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g | 16 | 16 | 0.0 | 0.0% | exact | LLM |
+| [MF0042] MF Brotaufstrich Tomate Bärlauch 250g | 16 | 32 | 16.0 | 50.0% | partial | LLM |
+| [MF0027] MF Tarti Aubergine 250g  | 16 | 32 | 16.0 | 50.0% | partial | LLM |
+| [MF0029] MF Tarti Datte chili 250g | 16 | 32 | 16.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

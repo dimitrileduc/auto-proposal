@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 2 | 6 | 4.0 | 66.7% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 2 | 6 | 4.0 | 66.7% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

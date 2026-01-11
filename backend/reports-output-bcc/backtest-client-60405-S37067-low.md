@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 10 | 9.0 | 90.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [NOD02] NODA limonade bio faible en calories - citron de sicile 330ml | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 10 | 9.0 | 90.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

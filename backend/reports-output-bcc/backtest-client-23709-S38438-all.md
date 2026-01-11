@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 5 | 2.0 | 40.0% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 2 | 5 | 3.0 | 60.0% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 3 | 5 | 2.0 | 40.0% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 2 | 5 | 3.0 | 60.0% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | 3 | 1.0 | 33.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LD013] LD Tuscan Organic Spread 180 g | 1 | 8 | 7.0 | 87.5% | partial | Non | Non | LLM |
-| [LD011] LD Organic Kids Spread 180 g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 21 | 19.0 | 90.5% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 5 | 21 | 16.0 | 76.2% | partial | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 4 | 18 | 14.0 | 77.8% | partial | Non | Non | LLM |
-| [LD014] LD Organic Avocado Spread 180 g | 2 | 4 | 2.0 | 50.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LD013] LD Tuscan Organic Spread 180 g | 1 | 8 | 7.0 | 87.5% | partial | LLM |
+| [LD011] LD Organic Kids Spread 180 g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 2 | 21 | 19.0 | 90.5% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 5 | 21 | 16.0 | 76.2% | partial | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 4 | 18 | 14.0 | 77.8% | partial | LLM |
+| [LD014] LD Organic Avocado Spread 180 g | 2 | 4 | 2.0 | 50.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

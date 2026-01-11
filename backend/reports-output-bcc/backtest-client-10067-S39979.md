@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0014] MF Olives noires 500g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0012] MF Olives Mix 500g | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [MF0030] MF Tarti Mangue Curry 250g  | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0062] ​MF Tarti Betterave rouge | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0014] MF Olives noires 500g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [MF0012] MF Olives Mix 500g | 3 | 3 | 0.0 | 0.0% | exact | LLM |
+| [MF0030] MF Tarti Mangue Curry 250g  | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0062] ​MF Tarti Betterave rouge | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0031] MF Tarti Olives verte 250g  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

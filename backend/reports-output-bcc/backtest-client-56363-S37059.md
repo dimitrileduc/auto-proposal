@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0024] MF KETCHUP 250g | 20 | 32 | 12.0 | 37.5% | partial | Non | Non | LLM |
-| [MF0047] MF Mayonnaise 250ml | 20 | 16 | 4.0 | 25.0% | partial | Non | Non | LLM |
-| [RF003] REFIELD Maïs 500G  | 32 | 48 | 16.0 | 33.3% | partial | Non | Non | LLM |
-| [MF0021] MF Sauce BBQ 250ml | 16 | 16 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0024] MF KETCHUP 250g | 20 | 32 | 12.0 | 37.5% | partial | LLM |
+| [MF0047] MF Mayonnaise 250ml | 20 | 16 | 4.0 | 25.0% | partial | LLM |
+| [RF003] REFIELD Maïs 500G  | 32 | 48 | 16.0 | 33.3% | partial | LLM |
+| [MF0021] MF Sauce BBQ 250ml | 16 | 16 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

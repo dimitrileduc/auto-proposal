@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 6 | 5.0 | 83.3% | partial | Non | Non | LLM |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | 6 | 5.0 | 83.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [DAF002] DAF Lime and Ginger with Jasmine flower 25cl | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [DAF004] DAF Peach and Lemon with Honeybush flower 25cl | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 1 | 6 | 5.0 | 83.3% | partial | LLM |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 1 | 6 | 5.0 | 83.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

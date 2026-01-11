@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G | 166 | 86 | 80.0 | 93.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G | 166 | 86 | 80.0 | 93.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

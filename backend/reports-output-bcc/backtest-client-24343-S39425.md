@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [LV189] LV Tartinade Houmous Type 380g | 32 | 80 | 48.0 | 60.0% | partial | Non | Non | LLM |
-| [LV217] LV Tartinade Basilic 380g | 64 | 21 | 43.0 | 204.8% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [LV189] LV Tartinade Houmous Type 380g | 32 | 80 | 48.0 | 60.0% | partial | LLM |
+| [LV217] LV Tartinade Basilic 380g | 64 | 21 | 43.0 | 204.8% | partial | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

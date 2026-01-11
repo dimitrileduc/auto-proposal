@@ -47,13 +47,13 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [CB005] CB Apple juice 1l | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 2 | 6 | 4.0 | 66.7% | partial | Non | Non | LLM |
-| [CB006] CB Blackcurrant Apple juice 1l | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [MF0059] MF Confi Fraise- Ardbei | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [CB005] CB Apple juice 1l | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 2 | 6 | 4.0 | 66.7% | partial | LLM |
+| [CB006] CB Blackcurrant Apple juice 1l | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [MF0059] MF Confi Fraise- Ardbei | 2 | 2 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (5 produits)

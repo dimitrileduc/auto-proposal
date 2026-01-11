@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | 3 | 1.0 | 33.3% | partial | Non | Non | LLM |
-| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 4 | 2 | 2.0 | 100.0% | partial | Non | Non | LLM |
-| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml | 2 | 3 | 1.0 | 33.3% | partial | LLM |
+| [RIT02] RITCHIE Citron - Framboise - verre 275ml | 4 | 2 | 2.0 | 100.0% | partial | LLM |
+| [UPI01] Jus de pomme bio d'UPIGNY 250ml | 4 | 4 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

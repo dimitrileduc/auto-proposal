@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 18 | 17 | 1.0 | 5.9% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0501] YVALLI VINAIGRETTE 5 KG JERRY | 18 | 17 | 1.0 | 5.9% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

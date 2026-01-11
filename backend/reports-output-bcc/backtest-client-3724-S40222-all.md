@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 20 | 29 | 9.0 | 31.0% | partial | Non | Non | LLM |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [PF0097] FILOU MOUTARDE 5 KG | 6 | 7 | 1.0 | 14.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0072] FILOU MAYONNAISE OEUFS SEAU 10L | 20 | 29 | 9.0 | 31.0% | partial | LLM |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [PF0097] FILOU MOUTARDE 5 KG | 6 | 7 | 1.0 | 14.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

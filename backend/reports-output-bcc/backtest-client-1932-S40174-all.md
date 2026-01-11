@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 8 | 7.0 | 87.5% | partial | Non | Non | LLM |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 3 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [MF0035] MF Tarti Tomate Ail des ours 250g  | 5 | 3 | 2.0 | 66.7% | partial | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 3 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [MF0054] MF Noix de cajou - Fleur de sel 133g | 1 | 8 | 7.0 | 87.5% | partial | LLM |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 3 | 2 | 1.0 | 50.0% | partial | LLM |
+| [MF0035] MF Tarti Tomate Ail des ours 250g  | 5 | 3 | 2.0 | 66.7% | partial | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 3 | 3 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

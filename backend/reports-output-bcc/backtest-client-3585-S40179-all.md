@@ -47,14 +47,14 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0078] FILOU CHASSEUR 5 L | 160 | 400 | 240.0 | 60.0% | partial | Non | Non | LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 2 | 10 | 8.0 | 80.0% | partial | Non | Non | LLM |
-| [PF0077] FILOU PROVENCALE 5 L | 50 | 80 | 30.0 | 37.5% | partial | Non | Non | LLM |
-| [PF0097] FILOU MOUTARDE 5 KG | 20 | 40 | 20.0 | 50.0% | partial | Non | Non | LLM |
-| [PF0085] FILOU CURRY KETCHUP  10 KG | 104 | 88 | 16.0 | 18.2% | partial | Non | Non | LLM |
-| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | 44 | 8.0 | 18.2% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0078] FILOU CHASSEUR 5 L | 160 | 400 | 240.0 | 60.0% | partial | LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 2 | 10 | 8.0 | 80.0% | partial | LLM |
+| [PF0077] FILOU PROVENCALE 5 L | 50 | 80 | 30.0 | 37.5% | partial | LLM |
+| [PF0097] FILOU MOUTARDE 5 KG | 20 | 40 | 20.0 | 50.0% | partial | LLM |
+| [PF0085] FILOU CURRY KETCHUP  10 KG | 104 | 88 | 16.0 | 18.2% | partial | LLM |
+| [PF0959] FILOU TOMATO KETCHUP 10KG | 52 | 44 | 8.0 | 18.2% | partial | LLM |
 
 
 ### Details des Predictions LLM (6 produits)

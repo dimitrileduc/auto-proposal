@@ -47,10 +47,10 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 25 | 75 | 50.0 | 66.7% | partial | Non | Non | LLM |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 25 | 25 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 25 | 75 | 50.0 | 66.7% | partial | LLM |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 25 | 25 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (2 produits)

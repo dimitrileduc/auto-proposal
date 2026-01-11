@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 1 | 1 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [fsv02] Noix de cajou nature bio vrac 2,8kg  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
+| [fsv10] Noix de cajou oignon/crème bio vrac 2,8kg  | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [fsv09] Noix de cajou grillées salées bio vrac 2,8kg  | 1 | 1 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

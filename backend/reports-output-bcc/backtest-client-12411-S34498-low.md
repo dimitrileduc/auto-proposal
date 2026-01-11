@@ -47,11 +47,11 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 64 | 60 | 4.0 | 6.7% | partial | Non | Non | LLM |
-| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 30 | 25 | 5.0 | 20.0% | partial | Non | Non | LLM |
-| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 40 | 30 | 10.0 | 33.3% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF2938] LD FR TARTINAD BIO AUBERGI 200 | 64 | 60 | 4.0 | 6.7% | partial | LLM |
+| [PF1694] LD FR TARTINAD BIO POIVRON 200 | 30 | 25 | 5.0 | 20.0% | partial | LLM |
+| [PF1695] LD FR TARTINADE BIO TOMATE 200 | 40 | 30 | 10.0 | 33.3% | partial | LLM |
 
 
 ### Details des Predictions LLM (3 produits)

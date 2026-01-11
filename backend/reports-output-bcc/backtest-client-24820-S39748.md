@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF022] JF MOUTARDE MIEL 250ML WECK | 16 | 1 | 15.0 | 1500.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 16 | 1 | 15.0 | 1500.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

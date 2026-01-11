@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF034] JF SAMOURAI SQUEEZE 300ML | 8 | 4 | 4.0 | 100.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF034] JF SAMOURAI SQUEEZE 300ML | 8 | 4 | 4.0 | 100.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)

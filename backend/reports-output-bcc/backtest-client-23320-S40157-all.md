@@ -47,24 +47,24 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | partial | Non | Non | LLM |
-| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 8 | 8 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 6 | 6 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | 4 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [JF012] JF SAUCE BEARNAISE 250ML WECK | 8 | 3 | 5.0 | 166.7% | partial | Non | Non | LLM |
-| [LV135] LV Tartinade Basilico 190g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [LV160] LV Tartinade Aubergine 190g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [LV159] LV Tartinade aux Truffes  135g  | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [LV161] LV Tartinade Mangue curry 190g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | Non | Non | LLM |
-| [JF023] JF MOUTARDE DOUCE 250ML WECK | 4 | 1 | 3.0 | 300.0% | partial | Non | Non | LLM |
-| [LV134] LV BIO Tartinade Olives Vertes 190g | 3 | 4 | 1.0 | 25.0% | partial | Non | Non | LLM |
-| [LV330] LV BIO Tartinade Toscana 190g | 2 | 8 | 6.0 | 75.0% | partial | Non | Non | LLM |
-| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | 8 | 2.0 | 25.0% | partial | Non | Non | LLM |
-| [LV162] LV Tartinade Tomato Basilico 190g | 8 | 8 | 0.0 | 0.0% | exact | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 2 | 1.0 | 50.0% | partial | LLM |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 8 | 8 | 0.0 | 0.0% | exact | LLM |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 6 | 6 | 0.0 | 0.0% | exact | LLM |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 4 | 4 | 0.0 | 0.0% | exact | LLM |
+| [JF012] JF SAUCE BEARNAISE 250ML WECK | 8 | 3 | 5.0 | 166.7% | partial | LLM |
+| [LV135] LV Tartinade Basilico 190g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [LV160] LV Tartinade Aubergine 190g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [LV159] LV Tartinade aux Truffes  135g  | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [LV161] LV Tartinade Mangue curry 190g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 2 | 1 | 1.0 | 100.0% | partial | LLM |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 4 | 1 | 3.0 | 300.0% | partial | LLM |
+| [LV134] LV BIO Tartinade Olives Vertes 190g | 3 | 4 | 1.0 | 25.0% | partial | LLM |
+| [LV330] LV BIO Tartinade Toscana 190g | 2 | 8 | 6.0 | 75.0% | partial | LLM |
+| [LV055] LV Mini grissini à l'huile d'olive  100g bio | 2 | 2 | 0.0 | 0.0% | exact | LLM |
+| [LV130] LV BIO Tartinade Paprika Chili 190g | 6 | 8 | 2.0 | 25.0% | partial | LLM |
+| [LV162] LV Tartinade Tomato Basilico 190g | 8 | 8 | 0.0 | 0.0% | exact | LLM |
 
 
 ### Details des Predictions LLM (16 produits)

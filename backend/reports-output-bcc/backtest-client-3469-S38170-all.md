@@ -47,12 +47,12 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0093] FILOU MOUTARDE 300GR | 24 | 24 | 0.0 | 0.0% | exact | Non | Non | LLM |
-| [PF0094] FILOU MOUTARDE 700 GR | 31 | 24 | 7.0 | 29.2% | partial | Non | Non | LLM |
-| [PF0088] FILOU VOL AU VENT 800 GR | 24 | 32 | 8.0 | 25.0% | partial | Non | Non | LLM |
-| [PF0089] FILOU VOL AU VENT 400 GR | 20 | 32 | 12.0 | 37.5% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0093] FILOU MOUTARDE 300GR | 24 | 24 | 0.0 | 0.0% | exact | LLM |
+| [PF0094] FILOU MOUTARDE 700 GR | 31 | 24 | 7.0 | 29.2% | partial | LLM |
+| [PF0088] FILOU VOL AU VENT 800 GR | 24 | 32 | 8.0 | 25.0% | partial | LLM |
+| [PF0089] FILOU VOL AU VENT 400 GR | 20 | 32 | 12.0 | 37.5% | partial | LLM |
 
 
 ### Details des Predictions LLM (4 produits)

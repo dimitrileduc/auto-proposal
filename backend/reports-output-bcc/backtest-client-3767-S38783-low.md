@@ -47,9 +47,9 @@
 
 *Produits correctement détectés par le système*
 
-| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | LLM Requis | LLM Succès | Source |
-|---------|--------|------|-----------|----------|------|------------|------------|--------|
-| [PF0096] FILOU MOUTARDE 3 KG | 3 | 5 | 2.0 | 40.0% | partial | Non | Non | LLM |
+| Produit | Prédit | Réel | Erreur Abs | Erreur % | Type | Source |
+|---------|--------|------|-----------|----------|------|--------|
+| [PF0096] FILOU MOUTARDE 3 KG | 3 | 5 | 2.0 | 40.0% | partial | LLM |
 
 
 ### Details des Predictions LLM (1 produits)
