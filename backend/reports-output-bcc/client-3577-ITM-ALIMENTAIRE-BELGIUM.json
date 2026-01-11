@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:04:12.346Z"
+  },
+  "client": {
+    "id": 3577,
+    "name": "ITM ALIMENTAIRE BELGIUM"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-04 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 3,
+      "llm_usage": {
+        "calls": 3,
+        "promptTokens": 3522,
+        "completionTokens": 594,
+        "totalTokens": 4116
+      }
+    },
+    "proposalFinal": {
+      "products_count": 3,
+      "total_amount": 6935.039999999999,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 14125,
+        "product_name": "[PF2036] ITM BOULETTES TOMATE 800 GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 128,
+        "quantity_source": "llm",
+        "price_unit": 32.76,
+        "subtotal": 4193.28,
+        "confidence": "high",
+        "order_count": 37,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 14 octobre 2025, soit 21 jours avant la date actuelle. Le cycle moyen observé est d'environ 20 à 25 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous dépassons le délai habituel entre deux commandes. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une alternance entre 64u et 128u. La médiane des commandes récentes (64, 64, 64, 64, 64, 128, 128, 128) se situe à 64u, mais l'historique N-1 sur la même période (novembre) montre des volumes plus importants (128u et 192u). Par principe de précaution B2B et pour couvrir le cycle complet, la quantité de 128u est retenue.",
+          "summary": "",
+          "baseline_quantity": 128,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-19 08:47:39",
+            "quantity": 64,
+            "price_unit": 32.76
+          },
+          {
+            "date": "2024-02-13 10:12:54",
+            "quantity": 128,
+            "price_unit": 32.76
+          },
+          {
+            "date": "2024-01-16 13:29:59",
+            "quantity": 128,
+            "price_unit": 32.76
+          },
+          {
+            "date": "2023-11-29 10:59:25",
+            "quantity": 192,
+            "price_unit": 32.76
+          },
+          {
+            "date": "2023-11-07 14:55:48",
+            "quantity": 128,
+            "price_unit": 32.76
+          }
+        ]
+      },
+      {
+        "product_id": 11042,
+        "product_name": "[PF2996] ITM BO VIN CIBOULET PET 450",
+        "product_uom": "TU12",
+        "quantity_recommended": 112,
+        "quantity_source": "llm",
+        "price_unit": 12.12,
+        "subtotal": 1357.4399999999998,
+        "confidence": "high",
+        "order_count": 31,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande irrégulier mais fréquent, avec une dernière commande enregistrée le 14 octobre 2025. Au 4 novembre, 21 jours se sont écoulés, ce qui représente un risque de rupture imminent dans l'horizon des 30 jours (seuil de réapprovisionnement). En application du principe de précaution B2B, un besoin est détecté. La quantité retenue est de 112 unités, correspondant à la médiane des commandes récentes et à la valeur la plus fréquente observée historiquement, écartant le pic exceptionnel de 448 unités.",
+          "summary": "",
+          "baseline_quantity": 112,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-12 11:47:36",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2024-02-13 10:12:54",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2024-01-16 13:29:59",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2023-12-27 07:11:21",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2023-11-07 14:55:48",
+            "quantity": 112,
+            "price_unit": 13.68
+          }
+        ]
+      },
+      {
+        "product_id": 11043,
+        "product_name": "[PF2997] ITM BO VIN YOGORETTE PET 450",
+        "product_uom": "TU12",
+        "quantity_recommended": 112,
+        "quantity_source": "llm",
+        "price_unit": 12.36,
+        "subtotal": 1384.32,
+        "confidence": "high",
+        "order_count": 21,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 20 à 30 jours entre chaque réapprovisionnement. La dernière commande remontant au 09/10/2025 (soit 26 jours avant la date actuelle), le seuil de réapprovisionnement de 30 jours est atteint, créant un risque imminent de rupture. En appliquant la règle de la médiane sur l'historique récent (112u, 224u, 112u, 224u, 112u, 112u, 112u, 112u), la valeur médiane est de 112u. Conformément au principe de précaution B2B et à la règle de privilégier la quantité la plus basse en cas de doute, une commande de 112 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 112,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-04 09:43:45",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2024-05-16 11:00:25",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2024-04-23 07:54:51",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2024-03-12 11:47:36",
+            "quantity": 112,
+            "price_unit": 13.68
+          },
+          {
+            "date": "2024-01-16 13:29:59",
+            "quantity": 112,
+            "price_unit": 13.68
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 3,
+    "optional_products_count": 0,
+    "base_amount": 6935.039999999999,
+    "optional_amount": 0,
+    "total_amount": 6935.039999999999,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2761
+}

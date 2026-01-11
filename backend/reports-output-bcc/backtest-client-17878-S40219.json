@@ -1,0 +1,30 @@
+{
+  "clientId": 17878,
+  "clientName": "Epicerie Flocon d'Avoine",
+  "orderName": "S40219",
+  "orderDate": "2025-11-14 12:44:14",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 19,
+    "fn": 0,
+    "precision": 0.40625,
+    "recall": 1,
+    "f1Score": 0.5777777777777777,
+    "mae": 0.07692307692307693,
+    "wmape": 6.25,
+    "mape": 3.8461538461538463,
+    "bias": 6.25
+  },
+  "distribution": {
+    "exactMatch": 12,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 34,
+    "promptTokens": 32303,
+    "completionTokens": 5213,
+    "totalTokens": 37516
+  }
+}

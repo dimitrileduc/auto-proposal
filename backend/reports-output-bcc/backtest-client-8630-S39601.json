@@ -1,0 +1,30 @@
+{
+  "clientId": 8630,
+  "clientName": "Dorfladen An Ennen",
+  "orderName": "S39601",
+  "orderDate": "2025-10-17 06:18:09",
+  "cutoffDate": "2025-10-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.5909090909090909,
+    "recall": 1,
+    "f1Score": 0.7428571428571429,
+    "mae": 0.38461538461538464,
+    "wmape": 33.33333333333333,
+    "mape": 34.61538461538461,
+    "bias": 20
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 24,
+    "promptTokens": 22095,
+    "completionTokens": 3989,
+    "totalTokens": 26084
+  }
+}

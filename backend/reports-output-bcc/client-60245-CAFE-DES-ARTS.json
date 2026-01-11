@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:25:53.927Z"
+  },
+  "client": {
+    "id": 60245,
+    "name": "CAFE DES ARTS"
+  },
+  "config": {
+    "analysisEndDate": "2025-05-20 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 10,
+      "llm_usage": {
+        "calls": 10,
+        "promptTokens": 8763,
+        "completionTokens": 1528,
+        "totalTokens": 10291
+      }
+    },
+    "proposalFinal": {
+      "products_count": 10,
+      "total_amount": 416.12,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 18377,
+        "product_name": "[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 33,
+        "subtotal": 33,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 26 février 2025, soit 83 jours sans activité. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter la rupture) et conformément à la règle sur les rotations faibles, une commande de 1 unité est préconisée pour reconstituer le stock minimal, en se basant sur la quantité de la dernière commande connue.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 1,
+            "price_unit": 33
+          }
+        ]
+      },
+      {
+        "product_id": 18380,
+        "product_name": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 33,
+        "subtotal": 33,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 26 février, soit 83 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle standard de réapprovisionnement. En application du principe de précaution B2B (doute sur le cycle = prévoir commande), un risque de rupture est identifié pour les 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité (médiane historique) pour éviter le surstockage tout en assurant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 1,
+            "price_unit": 33
+          }
+        ]
+      },
+      {
+        "product_id": 18379,
+        "product_name": "[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 33,
+        "subtotal": 33,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 26 février 2025, soit 83 jours sans activité. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter une rupture), un besoin est identifié. ÉTAPE 2 : L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour couvrir le besoin sans créer de surstock inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 1,
+            "price_unit": 33
+          }
+        ]
+      },
+      {
+        "product_id": 18278,
+        "product_name": "[UPI09] Jus de pomme-orange bio d'UPIGNY 250ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17.88,
+        "subtotal": 53.64,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 26 février 2025, soit 83 jours sans activité pour ce produit. Bien que le cycle de rotation soit difficile à établir avec une seule commande récente, le principe de précaution B2B s'applique ici : le délai écoulé dépasse largement les cycles standards de réapprovisionnement, créant une incertitude sur l'état du stock. Dans le doute, une commande est préconisée pour éviter une rupture prolongée. La quantité retenue est de 3 unités, correspondant strictement au volume de la dernière commande connue (médiane historique).",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 3,
+            "price_unit": 17.88
+          }
+        ]
+      },
+      {
+        "product_id": 18279,
+        "product_name": "[UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17.88,
+        "subtotal": 53.64,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 26 février, soit 83 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande récente, le principe de précaution B2B s'applique face à une absence prolongée de réapprovisionnement. Le risque de rupture est considéré comme présent par défaut d'historique régulier. ÉTAPE 2 : En l'absence d'autres données, la quantité se base sur la dernière commande connue (3 unités), ce qui correspond à la médiane de l'historique récent pour maintenir le stock sans surévaluer.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 3,
+            "price_unit": 17.88
+          }
+        ]
+      },
+      {
+        "product_id": 18280,
+        "product_name": "[UPI08] Jus de pomme-citron bio d'UPIGNY 250ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17.88,
+        "subtotal": 53.64,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION) : La dernière commande remonte au 26 février 2025, soit 83 jours sans activité. Bien que l'historique soit limité à une seule commande, l'absence de données sur un cycle complet crée une incertitude sur la rotation. En application du principe de précaution B2B (mieux vaut détecter un besoin incertain qu'une rupture), une commande est préconisée pour reconstituer le stock. ÉTAPE 2 (QUANTITÉ) : En l'absence de médiane sur plusieurs points, on se base sur la quantité de la commande la plus récente (3 unités) pour maintenir le niveau de stock initial sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 3,
+            "price_unit": 17.88
+          }
+        ]
+      },
+      {
+        "product_id": 18277,
+        "product_name": "[UPI01] Jus de pomme bio d'UPIGNY 250ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 16.2,
+        "subtotal": 48.599999999999994,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 26 février 2025, soit 83 jours sans activité pour ce produit. Bien que le cycle de rotation soit difficile à établir avec une seule commande récente, le principe de précaution B2B s'applique ici : le délai écoulé dépasse largement les seuils de réapprovisionnement standards (83 jours > 30 jours de seuil). Un risque de rupture ou un besoin de renouvellement de stock est probable. Conformément à la règle de la médiane sur l'historique récent, la quantité de 3 unités est maintenue pour couvrir le besoin sans créer de surstock inutile.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 3,
+            "price_unit": 16.2
+          }
+        ]
+      },
+      {
+        "product_id": 18291,
+        "product_name": "[LEA10] LEAMO ginger beer bio 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 35,
+        "subtotal": 70,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION DU BESOIN) : La dernière commande remonte au 26 février 2025, soit 83 jours avant la date actuelle. Bien que la rotation soit très faible, l'absence de commande sur une période aussi longue par rapport au seuil de réapprovisionnement de 30 jours crée un doute sur le cycle de consommation. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), un réapprovisionnement est nécessaire. ÉTAPE 2 (ESTIMATION QUANTITÉ) : L'historique récent montre une commande unique de 2 unités. Conformément à la règle sur les rotations faibles (1-2u), on maintient la quantité historique sans l'augmenter. La médiane et la valeur la plus basse de l'historique récent convergent vers 2 unités.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 2,
+            "price_unit": 35
+          }
+        ]
+      },
+      {
+        "product_id": 18355,
+        "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.8,
+        "subtotal": 18.8,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 26 février 2025, soit 83 jours avant la date actuelle. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution et pour éviter une rupture prolongée sur un horizon de 30 jours, un besoin est identifié. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour couvrir le besoin sans risquer un surstockage inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 1,
+            "price_unit": 18.8
+          }
+        ]
+      },
+      {
+        "product_id": 18351,
+        "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.8,
+        "subtotal": 18.8,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 26 février 2025, soit 83 jours sans activité. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter une rupture), une commande est nécessaire. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour éviter le surstockage tout en assurant la présence du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-26 10:44:43",
+            "quantity": 1,
+            "price_unit": 18.8
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 10,
+    "base_amount": 0,
+    "optional_amount": 416.12,
+    "total_amount": 416.12,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 5659
+}

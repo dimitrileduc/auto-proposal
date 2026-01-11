@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:15:08.056Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-08-10 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60536,
+    "name": "SMALA LIEGE",
+    "order": {
+      "name": "S38457",
+      "date": "2025-08-11 10:58:38"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 3,
+        "falseNegatives": 2,
+        "total": 8
+      },
+      "productMetrics": {
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1Score": 0.5454545454545454,
+        "totalPredicted": 6,
+        "totalReal": 5
+      },
+      "quantityMetrics": {
+        "mae": 0.3333333333333333,
+        "wmape": 14.285714285714285,
+        "mape": 11.111111111111109,
+        "bias": 14.285714285714285,
+        "distribution": {
+          "exactMatch": 2,
+          "partialMatch": 1
+        },
+        "rmse": 0.5773502691896257
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 3,
+          "falseNegatives": 2,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 3,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 3,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 0.3333333333333333,
+          "wmape": 14.285714285714285,
+          "mape": 11.111111111111109,
+          "bias": 14.285714285714285,
+          "distribution": {
+            "exactMatch": 2,
+            "partialMatch": 1
+          },
+          "rmse": 0.5773502691896257
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5239,
+    "completionTokens": 769,
+    "totalTokens": 6008
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18357,
+        "productName": "[RISH03] RISH kombucha BIO - gingembre 330ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 87632,
+              "orderName": "S35755",
+              "date": "2025-04-07 09:14:27",
+              "quantity": 3,
+              "priceUnit": 25.08
+            },
+            {
+              "orderId": 86191,
+              "orderName": "S34314",
+              "date": "2025-01-21 10:29:28",
+              "quantity": 3,
+              "priceUnit": 25.8
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 75.90623842592592,
+            "lastOrderDaysAgo": 124.61496527777778,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18361,
+        "productName": "[RISH04] RISH kombucha BIO - smash basil 330ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 87632,
+              "orderName": "S35755",
+              "date": "2025-04-07 09:14:27",
+              "quantity": 3,
+              "priceUnit": 25.08
+            },
+            {
+              "orderId": 86363,
+              "orderName": "S34486",
+              "date": "2025-01-29 13:54:49",
+              "quantity": 1,
+              "priceUnit": 25.8
+            },
+            {
+              "orderId": 86191,
+              "orderName": "S34314",
+              "date": "2025-01-21 10:29:28",
+              "quantity": 3,
+              "priceUnit": 25.8
+            }
+          ],
+          "statistics": {
+            "mean": 2.3333333333333335,
+            "median": 3,
+            "stdDev": 0.9428090415820634,
+            "min": 1,
+            "max": 3,
+            "cv": 0.40406101782088427,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.443380885582037
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 37.95311921296296,
+            "lastOrderDaysAgo": 124.61496527777778,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18360,
+        "productName": "[RISH05] RISH kombucha BIO - rose 750ml",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 87632,
+              "orderName": "S35755",
+              "date": "2025-04-07 09:14:27",
+              "quantity": 1,
+              "priceUnit": 57
+            },
+            {
+              "orderId": 86363,
+              "orderName": "S34486",
+              "date": "2025-01-29 13:54:49",
+              "quantity": 1,
+              "priceUnit": 58.8
+            },
+            {
+              "orderId": 86191,
+              "orderName": "S34314",
+              "date": "2025-01-21 10:29:28",
+              "quantity": 1,
+              "priceUnit": 58.8
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6858174962745676
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 37.95311921296296,
+            "lastOrderDaysAgo": 124.61496527777778,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 17728,
+        "productName": "[DAF002] DAF Lime and Ginger with Jasmine flower 25cl",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 124,
+            "orders": [
+              {
+                "orderId": 87632,
+                "orderName": "S35755",
+                "date": "2025-04-07 09:14:27",
+                "quantity": 1,
+                "priceUnit": 15.12
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18310,
+        "productName": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 124,
+            "orders": [
+              {
+                "orderId": 87632,
+                "orderName": "S35755",
+                "date": "2025-04-07 09:14:27",
+                "quantity": 1,
+                "priceUnit": 32.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14948,
+        "productName": "[CB010] CB Jus de Pomme cubis 3l",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 124,
+            "orders": [
+              {
+                "orderId": 87632,
+                "orderName": "S35755",
+                "date": "2025-04-07 09:14:27",
+                "quantity": 3,
+                "priceUnit": 7.8
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18291,
+        "productName": "[LEA10] LEAMO ginger beer bio 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18300,
+        "productName": "[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

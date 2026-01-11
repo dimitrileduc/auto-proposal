@@ -1,0 +1,30 @@
+{
+  "clientId": 57004,
+  "clientName": "DLL AD BERTRIX",
+  "orderName": "S40022",
+  "orderDate": "2025-11-04 13:52:45",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 26,
+    "fp": 21,
+    "fn": 0,
+    "precision": 0.5531914893617021,
+    "recall": 1,
+    "f1Score": 0.7123287671232876,
+    "mae": 0.7307692307692307,
+    "wmape": 41.30434782608695,
+    "mape": 42.30769230769231,
+    "bias": -6.521739130434782
+  },
+  "distribution": {
+    "exactMatch": 12,
+    "partialMatch": 14
+  },
+  "llmUsage": {
+    "calls": 49,
+    "promptTokens": 44447,
+    "completionTokens": 7762,
+    "totalTokens": 52209
+  }
+}

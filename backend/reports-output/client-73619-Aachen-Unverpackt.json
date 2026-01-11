@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2026-01-11T10:13:55.188Z"
+  },
+  "client": {
+    "id": 73619,
+    "name": "Aachen-Unverpackt",
+    "email": "guido@aachen-unverpackt.de"
+  },
+  "config": {
+    "analysisEndDate": "2026-01-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": false
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 5,
+      "llm_usage": {
+        "calls": 5,
+        "promptTokens": 4547,
+        "completionTokens": 755,
+        "totalTokens": 5302
+      }
+    },
+    "proposalFinal": {
+      "products_count": 5,
+      "total_amount": 303.66,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 72.30000000000001,
+        "minimum_required": 300,
+        "gap_filled": 231.36,
+        "products_adjusted": 5
+      }
+    },
+    "quote": {
+      "quote_id": 92303,
+      "quote_name": "S40424",
+      "quote_state": "draft",
+      "amount_total_ht": 303.66,
+      "amount_total_ttc": 303.66,
+      "tax_total": 0,
+      "created_at": "2026-01-11 10:13:35",
+      "lines_count": 5,
+      "optional_products_count": 0,
+      "order_lines": [
+        {
+          "product_id": 575,
+          "product_name": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+          "quantity": 5,
+          "price_unit": 14.46,
+          "subtotal_ht": 72.3
+        },
+        {
+          "product_id": 573,
+          "product_name": "[MF0033] MF Tarti Poivron chilli 250g",
+          "quantity": 4,
+          "price_unit": 14.46,
+          "subtotal_ht": 57.84
+        },
+        {
+          "product_id": 569,
+          "product_name": "[MF0029] MF Tarti Datte chili 250g",
+          "quantity": 4,
+          "price_unit": 14.46,
+          "subtotal_ht": 57.84
+        },
+        {
+          "product_id": 567,
+          "product_name": "[MF0027] MF Tarti Aubergine 250g ",
+          "quantity": 4,
+          "price_unit": 14.46,
+          "subtotal_ht": 57.84
+        },
+        {
+          "product_id": 568,
+          "product_name": "[MF0028] ​MF Tarti Carotte Gingembre 250g",
+          "quantity": 4,
+          "price_unit": 14.46,
+          "subtotal_ht": 57.84
+        }
+      ],
+      "optional_products": []
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 575,
+        "product_name": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 72.30000000000001,
+        "moq_adjustment": 4,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 29 août 2025, soit plus de 130 jours. Bien que la rotation soit très faible, le principe de précaution B2B s'applique car le cycle est irrégulier et difficile à déterminer. Un risque de rupture est considéré par défaut pour maintenir une présence en rayon. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), on maintient la quantité de 1 unité sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-29 12:14:49",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-07-09 14:04:32",
+            "quantity": 3,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 573,
+        "product_name": "[MF0033] MF Tarti Poivron chilli 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 57.84,
+        "moq_adjustment": 3,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 29/08/2025, soit plus de 130 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (incertitude sur le cycle = prévoir commande), un risque de rupture est identifié pour couvrir les 30 prochains jours. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1u. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité minimale de 1u sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-29 12:14:49",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-07-09 14:04:32",
+            "quantity": 2,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 569,
+        "product_name": "[MF0029] MF Tarti Datte chili 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 57.84,
+        "moq_adjustment": 3,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 29/08/2025, soit plus de 4 mois. Bien que la rotation soit très faible, le principe de précaution B2B s'applique car le cycle est irrégulier et difficile à déterminer. Un risque de rupture est considéré par défaut pour maintenir le produit en rayon. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), on maintient la quantité minimale de 1 unité sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-29 12:14:49",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-07-09 14:04:32",
+            "quantity": 3,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 567,
+        "product_name": "[MF0027] MF Tarti Aubergine 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 57.84,
+        "moq_adjustment": 3,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a 135 jours. Bien que le cycle soit irrégulier et dépasse largement le seuil de réapprovisionnement de 30 jours, le principe de précaution B2B impose de prévoir une unité pour éviter une rupture de stock prolongée sur une référence active. Conformément aux règles de gestion des faibles rotations (1-2u), la quantité est maintenue au minimum historique (médiane de 1u).",
+          "summary": "Réapprovisionnement de précaution (faible rotation)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-29 12:14:49",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-07-09 14:04:32",
+            "quantity": 2,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 568,
+        "product_name": "[MF0028] ​MF Tarti Carotte Gingembre 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 57.84,
+        "moq_adjustment": 3,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a plus de 4 mois (août 2025). Bien que le cycle soit difficile à établir, le principe de précaution B2B et l'absence d'historique sur l'année précédente imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée. Conformément aux règles pour les rotations faibles (1-2u), la quantité retenue est de 1 unité, correspondant à la médiane du seul historique disponible.",
+          "summary": "Réappro de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-29 12:14:49",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-07-09 14:04:32",
+            "quantity": 2,
+            "price_unit": 14.46
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 5,
+    "optional_products_count": 0,
+    "base_amount": 303.66,
+    "optional_amount": 0,
+    "total_amount": 303.66,
+    "moq_adjusted": true,
+    "moq_gap": 231.36,
+    "quote_name": "S40424",
+    "quote_id": 92303
+  },
+  "execution_time_ms": 46114
+}

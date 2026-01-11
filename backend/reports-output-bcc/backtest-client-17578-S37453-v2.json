@@ -1,0 +1,2894 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:12:34.647Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-06-15 00:00:00"
+    }
+  },
+  "client": {
+    "id": 17578,
+    "name": "l'épicerie d'Augustin",
+    "order": {
+      "name": "S37453",
+      "date": "2025-06-16 08:45:06"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 14,
+        "falsePositives": 26,
+        "falseNegatives": 0,
+        "total": 40
+      },
+      "productMetrics": {
+        "precision": 0.35,
+        "recall": 1,
+        "f1Score": 0.5185185185185185,
+        "totalPredicted": 40,
+        "totalReal": 14
+      },
+      "quantityMetrics": {
+        "mae": 0.2857142857142857,
+        "wmape": 28.57142857142857,
+        "mape": 28.571428571428573,
+        "bias": 28.57142857142857,
+        "distribution": {
+          "exactMatch": 10,
+          "partialMatch": 4
+        },
+        "rmse": 0.5345224838248488
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 9,
+          "falseNegatives": 0,
+          "total": 11
+        },
+        "productMetrics": {
+          "precision": 0.18181818181818182,
+          "recall": 1,
+          "f1Score": 0.3076923076923077,
+          "totalPredicted": 11,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 2,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 7,
+          "falseNegatives": 0,
+          "total": 8
+        },
+        "productMetrics": {
+          "precision": 0.125,
+          "recall": 1,
+          "f1Score": 0.2222222222222222,
+          "totalPredicted": 8,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 11,
+          "falsePositives": 10,
+          "falseNegatives": 0,
+          "total": 21
+        },
+        "productMetrics": {
+          "precision": 0.5238095238095238,
+          "recall": 1,
+          "f1Score": 0.6875000000000001,
+          "totalPredicted": 21,
+          "totalReal": 11
+        },
+        "quantityMetrics": {
+          "mae": 0.36363636363636365,
+          "wmape": 36.36363636363637,
+          "mape": 36.36363636363637,
+          "bias": 36.36363636363637,
+          "distribution": {
+            "exactMatch": 7,
+            "partialMatch": 4
+          },
+          "rmse": 0.6030226891555273
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 40,
+    "promptTokens": 37210,
+    "completionTokens": 5994,
+    "totalTokens": 43204
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 13058,
+        "productName": "[LV160] LV Tartinade Aubergine 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 15,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 12.79
+            },
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 12.79
+            },
+            {
+              "orderId": 86963,
+              "orderName": "S35086",
+              "date": "2025-02-27 07:12:44",
+              "quantity": 2,
+              "priceUnit": 12.79
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 1,
+              "priceUnit": 12.79
+            },
+            {
+              "orderId": 85684,
+              "orderName": "S33807",
+              "date": "2024-12-11 13:37:28",
+              "quantity": 2,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 1,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 84497,
+              "orderName": "S32620",
+              "date": "2024-10-07 11:45:33",
+              "quantity": 2,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 1,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 81643,
+              "orderName": "S29766",
+              "date": "2024-04-15 12:01:43",
+              "quantity": 1,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 81249,
+              "orderName": "S29372",
+              "date": "2024-03-19 11:45:01",
+              "quantity": 2,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 80741,
+              "orderName": "S28864",
+              "date": "2024-02-08 09:03:41",
+              "quantity": 3,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 1,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 4,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 2,
+              "priceUnit": 12.42
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 2,
+              "priceUnit": 12.42
+            }
+          ],
+          "statistics": {
+            "mean": 1.7333333333333334,
+            "median": 2,
+            "stdDev": 0.8537498983243799,
+            "min": 1,
+            "max": 4,
+            "cv": 0.4925480182640653,
+            "trend": "increasing",
+            "outliers": [
+              4
+            ],
+            "regularityScore": 0.5059355043961418
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 43.2774644510582,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13060,
+        "productName": "[LV161] LV Tartinade Mangue curry 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 13,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 85684,
+              "orderName": "S33807",
+              "date": "2024-12-11 13:37:28",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 84497,
+              "orderName": "S32620",
+              "date": "2024-10-07 11:45:33",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 83673,
+              "orderName": "S31796",
+              "date": "2024-08-23 06:38:20",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 82213,
+              "orderName": "S30336",
+              "date": "2024-05-17 06:54:55",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 81643,
+              "orderName": "S29766",
+              "date": "2024-04-15 12:01:43",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 80741,
+              "orderName": "S28864",
+              "date": "2024-02-08 09:03:41",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 2,
+              "priceUnit": 12.72
+            }
+          ],
+          "statistics": {
+            "mean": 1.5384615384615385,
+            "median": 2,
+            "stdDev": 0.498518515262143,
+            "min": 1,
+            "max": 2,
+            "cv": 0.32403703492039293,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6803035385570493
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 50.49037519290123,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13061,
+        "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 2,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 85684,
+              "orderName": "S33807",
+              "date": "2024-12-11 13:37:28",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 84497,
+              "orderName": "S32620",
+              "date": "2024-10-07 11:45:33",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 82213,
+              "orderName": "S30336",
+              "date": "2024-05-17 06:54:55",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 81249,
+              "orderName": "S29372",
+              "date": "2024-03-19 11:45:01",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 1,
+              "priceUnit": 12.72
+            }
+          ],
+          "statistics": {
+            "mean": 1.3636363636363635,
+            "median": 1,
+            "stdDev": 0.4810456929208347,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3527668414752788,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.604024146152744
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 56.698114583333336,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 12,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 2,
+              "priceUnit": 12.67
+            },
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 12.67
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 2,
+              "priceUnit": 12.67
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 2,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 84497,
+              "orderName": "S32620",
+              "date": "2024-10-07 11:45:33",
+              "quantity": 1,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 2,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 81643,
+              "orderName": "S29766",
+              "date": "2024-04-15 12:01:43",
+              "quantity": 1,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 81249,
+              "orderName": "S29372",
+              "date": "2024-03-19 11:45:01",
+              "quantity": 2,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 80741,
+              "orderName": "S28864",
+              "date": "2024-02-08 09:03:41",
+              "quantity": 2,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 2,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 1,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 2,
+              "priceUnit": 12.3
+            }
+          ],
+          "statistics": {
+            "mean": 1.6666666666666667,
+            "median": 2,
+            "stdDev": 0.47140452079103173,
+            "min": 1,
+            "max": 2,
+            "cv": 0.282842712474619,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6531827354235624
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 51.54374053030303,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13068,
+        "productName": "[LV136] LV Tartinade Betterave 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 86963,
+              "orderName": "S35086",
+              "date": "2025-02-27 07:12:44",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 85684,
+              "orderName": "S33807",
+              "date": "2024-12-11 13:37:28",
+              "quantity": 3,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 84497,
+              "orderName": "S32620",
+              "date": "2024-10-07 11:45:33",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 83673,
+              "orderName": "S31796",
+              "date": "2024-08-23 06:38:20",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 80741,
+              "orderName": "S28864",
+              "date": "2024-02-08 09:03:41",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 2,
+              "priceUnit": 12.72
+            }
+          ],
+          "statistics": {
+            "mean": 1.5454545454545454,
+            "median": 1,
+            "stdDev": 0.6555547773570889,
+            "min": 1,
+            "max": 3,
+            "cv": 0.42418250299576343,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.5140449368428102
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 60.588450231481474,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13070,
+        "productName": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 14,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 2,
+              "priceUnit": 13.53
+            },
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 13.53
+            },
+            {
+              "orderId": 86963,
+              "orderName": "S35086",
+              "date": "2025-02-27 07:12:44",
+              "quantity": 2,
+              "priceUnit": 13.53
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 1,
+              "priceUnit": 13.53
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 1,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 84497,
+              "orderName": "S32620",
+              "date": "2024-10-07 11:45:33",
+              "quantity": 1,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 2,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 81643,
+              "orderName": "S29766",
+              "date": "2024-04-15 12:01:43",
+              "quantity": 2,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 81249,
+              "orderName": "S29372",
+              "date": "2024-03-19 11:45:01",
+              "quantity": 2,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 80741,
+              "orderName": "S28864",
+              "date": "2024-02-08 09:03:41",
+              "quantity": 1,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 1,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 2,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 2,
+              "priceUnit": 13.14
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 1,
+              "priceUnit": 13.14
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6064827292433329
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 46.606500178062674,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 14452,
+        "productName": "[LV332] LV Tartinade Olive Caper Tomato 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 13,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 14.52
+            },
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 2,
+              "priceUnit": 14.52
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 2,
+              "priceUnit": 14.52
+            },
+            {
+              "orderId": 85684,
+              "orderName": "S33807",
+              "date": "2024-12-11 13:37:28",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 84497,
+              "orderName": "S32620",
+              "date": "2024-10-07 11:45:33",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 83673,
+              "orderName": "S31796",
+              "date": "2024-08-23 06:38:20",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 81643,
+              "orderName": "S29766",
+              "date": "2024-04-15 12:01:43",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 81249,
+              "orderName": "S29372",
+              "date": "2024-03-19 11:45:01",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 80741,
+              "orderName": "S28864",
+              "date": "2024-02-08 09:03:41",
+              "quantity": 2,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 2,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 2,
+              "priceUnit": 14.1
+            }
+          ],
+          "statistics": {
+            "mean": 1.3846153846153846,
+            "median": 1,
+            "stdDev": 0.48650425541051995,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3513641844631533,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6476570116498073
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 50.49037519290123,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 19272,
+        "productName": "[LV357] LV Tartinade BIO Asperge 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 18.6
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 14999,
+        "productName": "[LV342] LV Organic Broccoli Spread 190 g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 13.53
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13094,
+        "productName": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "productUom": "TU16",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 10,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 23.92
+            },
+            {
+              "orderId": 86963,
+              "orderName": "S35086",
+              "date": "2025-02-27 07:12:44",
+              "quantity": 1,
+              "priceUnit": 23.92
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 2,
+              "priceUnit": 23.68
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 1,
+              "priceUnit": 23.68
+            },
+            {
+              "orderId": 82213,
+              "orderName": "S30336",
+              "date": "2024-05-17 06:54:55",
+              "quantity": 1,
+              "priceUnit": 23.68
+            },
+            {
+              "orderId": 81643,
+              "orderName": "S29766",
+              "date": "2024-04-15 12:01:43",
+              "quantity": 1,
+              "priceUnit": 23.68
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 1,
+              "priceUnit": 23.68
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 1,
+              "priceUnit": 23.68
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 1,
+              "priceUnit": 23.68
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 1,
+              "priceUnit": 23.68
+            }
+          ],
+          "statistics": {
+            "mean": 1.1,
+            "median": 1,
+            "stdDev": 0.3,
+            "min": 1,
+            "max": 2,
+            "cv": 0.2727272727272727,
+            "trend": "stable",
+            "outliers": [
+              2
+            ],
+            "regularityScore": 0.5918160744367913
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 67.32050025720164,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 88250,
+              "orderName": "S36373",
+              "date": "2025-04-25 06:22:35",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86963,
+              "orderName": "S35086",
+              "date": "2025-02-27 07:12:44",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.922657172118773
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 28.461753472222224,
+            "lastOrderDaysAgo": 50.73431712962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13062,
+        "productName": "[LV131] LV Tartinade Potiron 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 7,
+          "orders": [
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 85684,
+              "orderName": "S33807",
+              "date": "2024-12-11 13:37:28",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 83673,
+              "orderName": "S31796",
+              "date": "2024-08-23 06:38:20",
+              "quantity": 2,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 82213,
+              "orderName": "S30336",
+              "date": "2024-05-17 06:54:55",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 1,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 1,
+              "priceUnit": 12.72
+            }
+          ],
+          "statistics": {
+            "mean": 1.2857142857142858,
+            "median": 1,
+            "stdDev": 0.45175395145262565,
+            "min": 1,
+            "max": 2,
+            "cv": 0.35136418446315326,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6084177164849696
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 90.67044560185185,
+            "lastOrderDaysAgo": 73.69278935185186,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13066,
+        "productName": "[LV134] LV BIO Tartinade Olives Vertes 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 10,
+          "orders": [
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 14.15
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 1,
+              "priceUnit": 14.15
+            },
+            {
+              "orderId": 85266,
+              "orderName": "S33389",
+              "date": "2024-11-21 11:07:50",
+              "quantity": 1,
+              "priceUnit": 13.74
+            },
+            {
+              "orderId": 83673,
+              "orderName": "S31796",
+              "date": "2024-08-23 06:38:20",
+              "quantity": 1,
+              "priceUnit": 13.74
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 1,
+              "priceUnit": 13.74
+            },
+            {
+              "orderId": 81643,
+              "orderName": "S29766",
+              "date": "2024-04-15 12:01:43",
+              "quantity": 1,
+              "priceUnit": 13.74
+            },
+            {
+              "orderId": 81249,
+              "orderName": "S29372",
+              "date": "2024-03-19 11:45:01",
+              "quantity": 1,
+              "priceUnit": 13.74
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 1,
+              "priceUnit": 13.74
+            },
+            {
+              "orderId": 79422,
+              "orderName": "S27545",
+              "date": "2023-11-14 09:11:30",
+              "quantity": 2,
+              "priceUnit": 13.74
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 1,
+              "priceUnit": 13.74
+            }
+          ],
+          "statistics": {
+            "mean": 1.1,
+            "median": 1,
+            "stdDev": 0.3,
+            "min": 1,
+            "max": 2,
+            "cv": 0.2727272727272727,
+            "trend": "stable",
+            "outliers": [
+              2
+            ],
+            "regularityScore": 0.6944319334802869
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 64.76955889917696,
+            "lastOrderDaysAgo": 73.69278935185186,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 14450,
+        "productName": "[LV330] LV BIO Tartinade Toscana 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 87638,
+              "orderName": "S35761",
+              "date": "2025-04-02 07:22:23",
+              "quantity": 1,
+              "priceUnit": 14.52
+            },
+            {
+              "orderId": 86963,
+              "orderName": "S35086",
+              "date": "2025-02-27 07:12:44",
+              "quantity": 1,
+              "priceUnit": 14.52
+            },
+            {
+              "orderId": 86433,
+              "orderName": "S34556",
+              "date": "2025-02-03 10:54:23",
+              "quantity": 1,
+              "priceUnit": 14.52
+            },
+            {
+              "orderId": 85684,
+              "orderName": "S33807",
+              "date": "2024-12-11 13:37:28",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 83673,
+              "orderName": "S31796",
+              "date": "2024-08-23 06:38:20",
+              "quantity": 2,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 82892,
+              "orderName": "S31015",
+              "date": "2024-06-28 11:34:39",
+              "quantity": 2,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 81249,
+              "orderName": "S29372",
+              "date": "2024-03-19 11:45:01",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 80741,
+              "orderName": "S28864",
+              "date": "2024-02-08 09:03:41",
+              "quantity": 2,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 79967,
+              "orderName": "S28090",
+              "date": "2023-12-14 07:15:51",
+              "quantity": 1,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 56560,
+              "orderName": "S56551",
+              "date": "2023-10-06 06:49:44",
+              "quantity": 2,
+              "priceUnit": 14.1
+            },
+            {
+              "orderId": 4037,
+              "orderName": "S04031",
+              "date": "2023-08-28 09:08:54",
+              "quantity": 2,
+              "priceUnit": 14.1
+            }
+          ],
+          "statistics": {
+            "mean": 1.4545454545454546,
+            "median": 1,
+            "stdDev": 0.49792959773196915,
+            "min": 1,
+            "max": 2,
+            "cv": 0.34232659844072877,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.6110001841608881
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 58.29260300925925,
+            "lastOrderDaysAgo": 73.69278935185186,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 13059,
+        "productName": "[LV129] LV Tartinade Carotte Gingembre 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 11,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 13.04
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 13.04
+              },
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 2,
+                "priceUnit": 13.04
+              },
+              {
+                "orderId": 85266,
+                "orderName": "S33389",
+                "date": "2024-11-21 11:07:50",
+                "quantity": 1,
+                "priceUnit": 12.66
+              },
+              {
+                "orderId": 84497,
+                "orderName": "S32620",
+                "date": "2024-10-07 11:45:33",
+                "quantity": 1,
+                "priceUnit": 12.66
+              },
+              {
+                "orderId": 82892,
+                "orderName": "S31015",
+                "date": "2024-06-28 11:34:39",
+                "quantity": 2,
+                "priceUnit": 12.66
+              },
+              {
+                "orderId": 82213,
+                "orderName": "S30336",
+                "date": "2024-05-17 06:54:55",
+                "quantity": 1,
+                "priceUnit": 12.66
+              },
+              {
+                "orderId": 81643,
+                "orderName": "S29766",
+                "date": "2024-04-15 12:01:43",
+                "quantity": 1,
+                "priceUnit": 12.66
+              },
+              {
+                "orderId": 81249,
+                "orderName": "S29372",
+                "date": "2024-03-19 11:45:01",
+                "quantity": 1,
+                "priceUnit": 12.66
+              },
+              {
+                "orderId": 79422,
+                "orderName": "S27545",
+                "date": "2023-11-14 09:11:30",
+                "quantity": 2,
+                "priceUnit": 12.66
+              },
+              {
+                "orderId": 56560,
+                "orderName": "S56551",
+                "date": "2023-10-06 06:49:44",
+                "quantity": 2,
+                "priceUnit": 12.66
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13063,
+        "productName": "[LV132] LV Tartinade Houmous type 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 13.29
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 13.29
+              },
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 13.29
+              },
+              {
+                "orderId": 84497,
+                "orderName": "S32620",
+                "date": "2024-10-07 11:45:33",
+                "quantity": 1,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 81643,
+                "orderName": "S29766",
+                "date": "2024-04-15 12:01:43",
+                "quantity": 1,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 79967,
+                "orderName": "S28090",
+                "date": "2023-12-14 07:15:51",
+                "quantity": 2,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 79422,
+                "orderName": "S27545",
+                "date": "2023-11-14 09:11:30",
+                "quantity": 1,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 4037,
+                "orderName": "S04031",
+                "date": "2023-08-28 09:08:54",
+                "quantity": 1,
+                "priceUnit": 12.9
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13067,
+        "productName": "[LV135] LV Tartinade Basilico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 13.53
+              },
+              {
+                "orderId": 85266,
+                "orderName": "S33389",
+                "date": "2024-11-21 11:07:50",
+                "quantity": 1,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 82892,
+                "orderName": "S31015",
+                "date": "2024-06-28 11:34:39",
+                "quantity": 1,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 82213,
+                "orderName": "S30336",
+                "date": "2024-05-17 06:54:55",
+                "quantity": 1,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 80741,
+                "orderName": "S28864",
+                "date": "2024-02-08 09:03:41",
+                "quantity": 1,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 79967,
+                "orderName": "S28090",
+                "date": "2023-12-14 07:15:51",
+                "quantity": 1,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 79422,
+                "orderName": "S27545",
+                "date": "2023-11-14 09:11:30",
+                "quantity": 1,
+                "priceUnit": 13.14
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13069,
+        "productName": "[LV137] LV Tartinade Lentilles Curry 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 13.72
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 13.72
+              },
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 13.72
+              },
+              {
+                "orderId": 84497,
+                "orderName": "S32620",
+                "date": "2024-10-07 11:45:33",
+                "quantity": 1,
+                "priceUnit": 13.32
+              },
+              {
+                "orderId": 83673,
+                "orderName": "S31796",
+                "date": "2024-08-23 06:38:20",
+                "quantity": 1,
+                "priceUnit": 13.32
+              },
+              {
+                "orderId": 82892,
+                "orderName": "S31015",
+                "date": "2024-06-28 11:34:39",
+                "quantity": 1,
+                "priceUnit": 13.32
+              },
+              {
+                "orderId": 79967,
+                "orderName": "S28090",
+                "date": "2023-12-14 07:15:51",
+                "quantity": 2,
+                "priceUnit": 13.32
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14451,
+        "productName": "[LV331] LV Tartinade Lentils Balsamico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 11,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 14.52
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 14.52
+              },
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 14.52
+              },
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 14.52
+              },
+              {
+                "orderId": 85266,
+                "orderName": "S33389",
+                "date": "2024-11-21 11:07:50",
+                "quantity": 1,
+                "priceUnit": 14.1
+              },
+              {
+                "orderId": 83673,
+                "orderName": "S31796",
+                "date": "2024-08-23 06:38:20",
+                "quantity": 1,
+                "priceUnit": 14.1
+              },
+              {
+                "orderId": 82213,
+                "orderName": "S30336",
+                "date": "2024-05-17 06:54:55",
+                "quantity": 2,
+                "priceUnit": 14.1
+              },
+              {
+                "orderId": 81643,
+                "orderName": "S29766",
+                "date": "2024-04-15 12:01:43",
+                "quantity": 1,
+                "priceUnit": 14.1
+              },
+              {
+                "orderId": 81249,
+                "orderName": "S29372",
+                "date": "2024-03-19 11:45:01",
+                "quantity": 2,
+                "priceUnit": 14.1
+              },
+              {
+                "orderId": 56560,
+                "orderName": "S56551",
+                "date": "2023-10-06 06:49:44",
+                "quantity": 2,
+                "priceUnit": 14.1
+              },
+              {
+                "orderId": 4037,
+                "orderName": "S04031",
+                "date": "2023-08-28 09:08:54",
+                "quantity": 1,
+                "priceUnit": 14.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13101,
+        "productName": "[LV036] LV Olives Vertes dénoyautées BE 350g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 9.6
+              },
+              {
+                "orderId": 85266,
+                "orderName": "S33389",
+                "date": "2024-11-21 11:07:50",
+                "quantity": 1,
+                "priceUnit": 9.6
+              },
+              {
+                "orderId": 83673,
+                "orderName": "S31796",
+                "date": "2024-08-23 06:38:20",
+                "quantity": 2,
+                "priceUnit": 9.6
+              },
+              {
+                "orderId": 82213,
+                "orderName": "S30336",
+                "date": "2024-05-17 06:54:55",
+                "quantity": 1,
+                "priceUnit": 9.6
+              },
+              {
+                "orderId": 81643,
+                "orderName": "S29766",
+                "date": "2024-04-15 12:01:43",
+                "quantity": 1,
+                "priceUnit": 9.6
+              },
+              {
+                "orderId": 80741,
+                "orderName": "S28864",
+                "date": "2024-02-08 09:03:41",
+                "quantity": 1,
+                "priceUnit": 9.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 2,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 2,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18351,
+        "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 50,
+            "orders": [
+              {
+                "orderId": 88250,
+                "orderName": "S36373",
+                "date": "2025-04-25 06:22:35",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13644,
+        "productName": "[LB004] LB Blonde (6,5%) 33CL",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 73,
+            "orders": [
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 42.08
+              },
+              {
+                "orderId": 85684,
+                "orderName": "S33807",
+                "date": "2024-12-11 13:37:28",
+                "quantity": 1,
+                "priceUnit": 42.08
+              },
+              {
+                "orderId": 82213,
+                "orderName": "S30336",
+                "date": "2024-05-17 06:54:55",
+                "quantity": 1,
+                "priceUnit": 42.08
+              },
+              {
+                "orderId": 81643,
+                "orderName": "S29766",
+                "date": "2024-04-15 12:01:43",
+                "quantity": 1,
+                "priceUnit": 42.08
+              },
+              {
+                "orderId": 80348,
+                "orderName": "S28471",
+                "date": "2024-01-11 08:41:24",
+                "quantity": 2,
+                "priceUnit": 42.08
+              },
+              {
+                "orderId": 79422,
+                "orderName": "S27545",
+                "date": "2023-11-14 09:11:30",
+                "quantity": 1,
+                "priceUnit": 42.08
+              },
+              {
+                "orderId": 56657,
+                "orderName": "S04780",
+                "date": "2023-10-12 09:08:41",
+                "quantity": 2,
+                "priceUnit": 42
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13043,
+        "productName": "[LV145] LV Sauce Tartare 200 ml ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 73,
+            "orders": [
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 14.5
+              },
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 14.5
+              },
+              {
+                "orderId": 85266,
+                "orderName": "S33389",
+                "date": "2024-11-21 11:07:50",
+                "quantity": 1,
+                "priceUnit": 14.22
+              },
+              {
+                "orderId": 81643,
+                "orderName": "S29766",
+                "date": "2024-04-15 12:01:43",
+                "quantity": 1,
+                "priceUnit": 14.22
+              },
+              {
+                "orderId": 81249,
+                "orderName": "S29372",
+                "date": "2024-03-19 11:45:01",
+                "quantity": 1,
+                "priceUnit": 14.22
+              },
+              {
+                "orderId": 80348,
+                "orderName": "S28471",
+                "date": "2024-01-11 08:41:24",
+                "quantity": 1,
+                "priceUnit": 14.22
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13044,
+        "productName": "[LV146] LV Sauce Aïoli 200 ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 73,
+            "orders": [
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 14.5
+              },
+              {
+                "orderId": 82892,
+                "orderName": "S31015",
+                "date": "2024-06-28 11:34:39",
+                "quantity": 1,
+                "priceUnit": 14.22
+              },
+              {
+                "orderId": 81249,
+                "orderName": "S29372",
+                "date": "2024-03-19 11:45:01",
+                "quantity": 1,
+                "priceUnit": 14.22
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13045,
+        "productName": "[LV147] LV Sauce Cocktail 200 ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 73,
+            "orders": [
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18324,
+        "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 73,
+            "orders": [
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 17.55
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18328,
+        "productName": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 73,
+            "orders": [
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 16.05
+              },
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 16.05
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18345,
+        "productName": "[PAO01] PAOLA cola verre 250ml - le cola des Belges",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 73,
+            "orders": [
+              {
+                "orderId": 87638,
+                "orderName": "S35761",
+                "date": "2025-04-02 07:22:23",
+                "quantity": 1,
+                "priceUnit": 25.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18265,
+        "productName": "[BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 14.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18264,
+        "productName": "[BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 14.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13041,
+        "productName": "[LV143] LV Mayonnaise (huile 70%) 200 ml ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 13.76
+              },
+              {
+                "orderId": 83673,
+                "orderName": "S31796",
+                "date": "2024-08-23 06:38:20",
+                "quantity": 2,
+                "priceUnit": 13.62
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13065,
+        "productName": "[LV133] LV Tartinade Ananas Coco 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 13.72
+              },
+              {
+                "orderId": 85684,
+                "orderName": "S33807",
+                "date": "2024-12-11 13:37:28",
+                "quantity": 1,
+                "priceUnit": 13.32
+              },
+              {
+                "orderId": 82892,
+                "orderName": "S31015",
+                "date": "2024-06-28 11:34:39",
+                "quantity": 1,
+                "priceUnit": 13.32
+              },
+              {
+                "orderId": 79967,
+                "orderName": "S28090",
+                "date": "2023-12-14 07:15:51",
+                "quantity": 2,
+                "priceUnit": 13.32
+              },
+              {
+                "orderId": 4037,
+                "orderName": "S04031",
+                "date": "2023-08-28 09:08:54",
+                "quantity": 1,
+                "priceUnit": 13.32
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18326,
+        "productName": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 16.05
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18323,
+        "productName": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 86963,
+                "orderName": "S35086",
+                "date": "2025-02-27 07:12:44",
+                "quantity": 1,
+                "priceUnit": 17.55
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18302,
+        "productName": "[fsv18] Mendiant bio vrac 2,8kg",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 131,
+            "orders": [
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 37.68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18333,
+        "productName": "[OCC03] OCCHIOLINO SUCO - citron, miel & gingembre - 500ml ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 131,
+            "orders": [
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 59.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13642,
+        "productName": "[LB002] LB Blonde 75 CL (6,5%)",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 131,
+            "orders": [
+              {
+                "orderId": 86433,
+                "orderName": "S34556",
+                "date": "2025-02-03 10:54:23",
+                "quantity": 1,
+                "priceUnit": 47.81
+              },
+              {
+                "orderId": 82213,
+                "orderName": "S30336",
+                "date": "2024-05-17 06:54:55",
+                "quantity": 1,
+                "priceUnit": 47.81
+              },
+              {
+                "orderId": 80348,
+                "orderName": "S28471",
+                "date": "2024-01-11 08:41:24",
+                "quantity": 1,
+                "priceUnit": 47.81
+              },
+              {
+                "orderId": 79422,
+                "orderName": "S27545",
+                "date": "2023-11-14 09:11:30",
+                "quantity": 1,
+                "priceUnit": 47.81
+              },
+              {
+                "orderId": 56657,
+                "orderName": "S04780",
+                "date": "2023-10-12 09:08:41",
+                "quantity": 2,
+                "priceUnit": 47.76
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

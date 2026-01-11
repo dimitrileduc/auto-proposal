@@ -1,0 +1,718 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:16:19.295Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-11 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60364,
+    "name": "ILLICO VENDING",
+    "order": {
+      "name": "S40246",
+      "date": "2025-11-12 09:21:18"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 6,
+        "falsePositives": 3,
+        "falseNegatives": 0,
+        "total": 9
+      },
+      "productMetrics": {
+        "precision": 0.6666666666666666,
+        "recall": 1,
+        "f1Score": 0.8,
+        "totalPredicted": 9,
+        "totalReal": 6
+      },
+      "quantityMetrics": {
+        "mae": 5.5,
+        "wmape": 48.529411764705884,
+        "mape": 47.22222222222222,
+        "bias": -33.82352941176471,
+        "distribution": {
+          "exactMatch": 2,
+          "partialMatch": 4
+        },
+        "rmse": 7.106335201775948
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1Score": 0.8,
+          "totalPredicted": 3,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 2.5,
+          "wmape": 25,
+          "mape": 25,
+          "bias": 25,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 1
+          },
+          "rmse": 3.5355339059327378
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 4,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 0.8,
+          "recall": 1,
+          "f1Score": 0.888888888888889,
+          "totalPredicted": 5,
+          "totalReal": 4
+        },
+        "quantityMetrics": {
+          "mae": 7,
+          "wmape": 58.333333333333336,
+          "mape": 58.33333333333333,
+          "bias": -58.333333333333336,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 3
+          },
+          "rmse": 8.336666000266533
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8846,
+    "completionTokens": 1439,
+    "totalTokens": 10285
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18321,
+        "productName": "[NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 12,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 12
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 91092,
+              "orderName": "S39215",
+              "date": "2025-09-16 08:28:00",
+              "quantity": 12,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 90142,
+              "orderName": "S38265",
+              "date": "2025-08-06 12:56:12",
+              "quantity": 0,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 89818,
+              "orderName": "S37941",
+              "date": "2025-07-08 06:23:16",
+              "quantity": 12,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 88616,
+              "orderName": "S36739",
+              "date": "2025-05-13 11:50:09",
+              "quantity": 10,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 87168,
+              "orderName": "S35291",
+              "date": "2025-03-19 09:22:55",
+              "quantity": 4,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 86637,
+              "orderName": "S34760",
+              "date": "2025-02-07 11:17:01",
+              "quantity": 8,
+              "priceUnit": 15.75
+            }
+          ],
+          "statistics": {
+            "mean": 7.666666666666667,
+            "median": 9,
+            "stdDev": 4.384315479321969,
+            "min": 0,
+            "max": 12,
+            "cv": 0.5718672364333003,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5659120091461534
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 44.16819212962963,
+            "lastOrderDaysAgo": 55.68888888888889,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18319,
+        "productName": "[NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 12
+        },
+        "error": {
+          "absolute": 11,
+          "percent": 91.66666666666666,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 7,
+          "orders": [
+            {
+              "orderId": 91092,
+              "orderName": "S39215",
+              "date": "2025-09-16 08:28:00",
+              "quantity": 1,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 90142,
+              "orderName": "S38265",
+              "date": "2025-08-06 12:56:12",
+              "quantity": 0,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 89818,
+              "orderName": "S37941",
+              "date": "2025-07-08 06:23:16",
+              "quantity": 12,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 88616,
+              "orderName": "S36739",
+              "date": "2025-05-13 11:50:09",
+              "quantity": 10,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 87695,
+              "orderName": "S35818",
+              "date": "2025-04-04 08:06:48",
+              "quantity": 4,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 87168,
+              "orderName": "S35291",
+              "date": "2025-03-19 09:22:55",
+              "quantity": 4,
+              "priceUnit": 15.75
+            },
+            {
+              "orderId": 86637,
+              "orderName": "S34760",
+              "date": "2025-02-07 11:17:01",
+              "quantity": 8,
+              "priceUnit": 15.75
+            }
+          ],
+          "statistics": {
+            "mean": 5.571428571428571,
+            "median": 4,
+            "stdDev": 4.203982562732046,
+            "min": 0,
+            "max": 12,
+            "cv": 0.7545609727980596,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.41530664152775687
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 36.80682677469136,
+            "lastOrderDaysAgo": 55.68888888888889,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18416,
+        "productName": "[REB05] REB chips bio - sel de mer 35g",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 6,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 12
+        },
+        "error": {
+          "absolute": 6,
+          "percent": 50,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 91092,
+              "orderName": "S39215",
+              "date": "2025-09-16 08:28:00",
+              "quantity": 10,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 90142,
+              "orderName": "S38265",
+              "date": "2025-08-06 12:56:12",
+              "quantity": 6,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 89129,
+              "orderName": "S37252",
+              "date": "2025-06-04 12:12:32",
+              "quantity": 8,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 87695,
+              "orderName": "S35818",
+              "date": "2025-04-04 08:06:48",
+              "quantity": 8,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 86637,
+              "orderName": "S34760",
+              "date": "2025-02-07 11:17:01",
+              "quantity": 8,
+              "priceUnit": 17.4
+            }
+          ],
+          "statistics": {
+            "mean": 8,
+            "median": 8,
+            "stdDev": 1.2649110640673518,
+            "min": 6,
+            "max": 10,
+            "cv": 0.15811388300841897,
+            "trend": "stable",
+            "outliers": [
+              10,
+              6
+            ],
+            "regularityScore": 0.841937854607965
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 55.21024016203704,
+            "lastOrderDaysAgo": 55.68888888888889,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18415,
+        "productName": "[REB06] REB chips bio - paprika fumé 35g",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 12
+        },
+        "error": {
+          "absolute": 11,
+          "percent": 91.66666666666666,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 91092,
+              "orderName": "S39215",
+              "date": "2025-09-16 08:28:00",
+              "quantity": 1,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 90142,
+              "orderName": "S38265",
+              "date": "2025-08-06 12:56:12",
+              "quantity": 6,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 89129,
+              "orderName": "S37252",
+              "date": "2025-06-04 12:12:32",
+              "quantity": 8,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 87695,
+              "orderName": "S35818",
+              "date": "2025-04-04 08:06:48",
+              "quantity": 8,
+              "priceUnit": 17.4
+            },
+            {
+              "orderId": 86637,
+              "orderName": "S34760",
+              "date": "2025-02-07 11:17:01",
+              "quantity": 8,
+              "priceUnit": 17.4
+            }
+          ],
+          "statistics": {
+            "mean": 6.2,
+            "median": 8,
+            "stdDev": 2.7129319932501077,
+            "min": 1,
+            "max": 8,
+            "cv": 0.4375696763306625,
+            "trend": "increasing",
+            "outliers": [
+              1
+            ],
+            "regularityScore": 0.674264378614619
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 55.21024016203704,
+            "lastOrderDaysAgo": 55.68888888888889,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18327,
+        "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 10,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90142,
+              "orderName": "S38265",
+              "date": "2025-08-06 12:56:12",
+              "quantity": 10,
+              "priceUnit": 14.4
+            },
+            {
+              "orderId": 86637,
+              "orderName": "S34760",
+              "date": "2025-02-07 11:17:01",
+              "quantity": 8,
+              "priceUnit": 14.4
+            }
+          ],
+          "statistics": {
+            "mean": 9,
+            "median": 9,
+            "stdDev": 1,
+            "min": 8,
+            "max": 10,
+            "cv": 0.1111111111111111,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9333333333333333
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 180.02721064814816,
+            "lastOrderDaysAgo": 96.5026388888889,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18329,
+        "productName": "[NUT02] NUTS & BERRIES energy bar Superfood bio 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 15,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 50,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89818,
+              "orderName": "S37941",
+              "date": "2025-07-08 06:23:16",
+              "quantity": 15,
+              "priceUnit": 14.4
+            },
+            {
+              "orderId": 88616,
+              "orderName": "S36739",
+              "date": "2025-05-13 11:50:09",
+              "quantity": 10,
+              "priceUnit": 14.4
+            },
+            {
+              "orderId": 86637,
+              "orderName": "S34760",
+              "date": "2025-02-07 11:17:01",
+              "quantity": 8,
+              "priceUnit": 14.4
+            }
+          ],
+          "statistics": {
+            "mean": 11,
+            "median": 10,
+            "stdDev": 2.943920288775949,
+            "min": 8,
+            "max": 15,
+            "cv": 0.2676291171614499,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.7353901155513048
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 75.37717013888889,
+            "lastOrderDaysAgo": 125.77550925925927,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18318,
+        "productName": "[NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g",
+        "mismatchType": "false_positive",
+        "quantity": 7,
+        "reason": "Predicted 7u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 96,
+            "orders": [
+              {
+                "orderId": 90142,
+                "orderName": "S38265",
+                "date": "2025-08-06 12:56:12",
+                "quantity": 7,
+                "priceUnit": 15.75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18335,
+        "productName": "[ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 30,
+        "reason": "Predicted 30u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 125,
+            "orders": [
+              {
+                "orderId": 89818,
+                "orderName": "S37941",
+                "date": "2025-07-08 06:23:16",
+                "quantity": 30,
+                "priceUnit": 12
+              },
+              {
+                "orderId": 88616,
+                "orderName": "S36739",
+                "date": "2025-05-13 11:50:09",
+                "quantity": 25,
+                "priceUnit": 12
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18334,
+        "productName": "[ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 30,
+        "reason": "Predicted 30u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 125,
+            "orders": [
+              {
+                "orderId": 89818,
+                "orderName": "S37941",
+                "date": "2025-07-08 06:23:16",
+                "quantity": 30,
+                "priceUnit": 12
+              },
+              {
+                "orderId": 89129,
+                "orderName": "S37252",
+                "date": "2025-06-04 12:12:32",
+                "quantity": 20,
+                "priceUnit": 12
+              },
+              {
+                "orderId": 88616,
+                "orderName": "S36739",
+                "date": "2025-05-13 11:50:09",
+                "quantity": 25,
+                "priceUnit": 12
+              },
+              {
+                "orderId": 87168,
+                "orderName": "S35291",
+                "date": "2025-03-19 09:22:55",
+                "quantity": 20,
+                "priceUnit": 12
+              },
+              {
+                "orderId": 85917,
+                "orderName": "S34040",
+                "date": "2025-01-03 08:02:03",
+                "quantity": 30,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

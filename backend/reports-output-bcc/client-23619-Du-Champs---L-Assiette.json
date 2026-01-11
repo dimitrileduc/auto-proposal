@@ -1,0 +1,1117 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:14:18.375Z"
+  },
+  "client": {
+    "id": 23619,
+    "name": "Du Champs À L'Assiette"
+  },
+  "config": {
+    "analysisEndDate": "2025-09-04 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 28,
+      "llm_usage": {
+        "calls": 28,
+        "promptTokens": 25248,
+        "completionTokens": 4341,
+        "totalTokens": 29589
+      }
+    },
+    "proposalFinal": {
+      "products_count": 28,
+      "total_amount": 665.13,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16743,
+        "product_name": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 25.8,
+        "subtotal": 51.6,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 30 juin 2025, soit plus de 60 jours. Bien que le cycle historique soit irrégulier, le délai écoulé dépasse largement la fréquence habituelle, créant un risque de rupture imminent dans l'horizon des 30 jours (principe de précaution B2B). Pour la quantité, la médiane des commandes récentes (2u et 3u) est de 2,5u. Conformément à la règle de privilégier la valeur la plus basse en cas de doute pour éviter le surstockage sur une rotation faible, la quantité retenue est de 2 unités.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 2,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2025-01-17 14:05:20",
+            "quantity": 2,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 6,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2024-03-21 13:42:44",
+            "quantity": 3,
+            "price_unit": 25.8
+          }
+        ]
+      },
+      {
+        "product_id": 16771,
+        "product_name": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 30 juin 2025, soit plus de 60 jours. Bien que la rotation soit très faible (1 unité par commande), le délai écoulé dépasse largement le cycle habituel observé entre mai et juin. En application du principe de précaution B2B et pour couvrir le risque de rupture sur l'horizon des 30 prochains jours, un réapprovisionnement est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane stricte de l'historique récent et passé.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-01-17 14:05:20",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-03-21 13:42:44",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16766,
+        "product_name": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 39,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande d'environ 52 jours. La dernière commande remontant au 30 juin 2025 (soit 66 jours avant la date actuelle), le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Bien que la rotation soit faible, le principe de précaution B2B impose de prévoir une commande pour éviter une rupture prolongée. La quantité retenue est de 2 unités, correspondant à la médiane et à la constante observée lors des commandes précédentes.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 08:40:00",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16780,
+        "product_name": "[JF009] JF SAUCE TARTARE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 30 juin, soit 66 jours. Bien que le cycle soit irrégulier, le délai écoulé dépasse largement les intervalles précédents. En application du principe de précaution B2B (risque de rupture ou besoin incertain), une commande est nécessaire pour couvrir l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre des volumes très faibles (1u et 2u) et l'historique N-1 confirme une rotation à l'unité. La médiane des commandes récentes est de 1,5u. Conformément à la règle de prudence sur les faibles rotations, la valeur la plus basse (1u) est retenue pour éviter le surstock.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 08:40:00",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16738,
+        "product_name": "[JF039] JF MAYO BARAKI SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 30,
+        "subtotal": 30,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 30 juin 2025, soit 66 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (cycle incertain = prévoir commande), un risque de rupture est identifié. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles et le maintien des quantités historiques, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 08:40:00",
+            "quantity": 1,
+            "price_unit": 30
+          },
+          {
+            "date": "2024-11-19 08:00:40",
+            "quantity": 1,
+            "price_unit": 30
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 30
+          }
+        ]
+      },
+      {
+        "product_id": 13064,
+        "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 12.67,
+        "subtotal": 25.34,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle moyen d'environ 60 jours entre les dernières commandes (mai à juin). Depuis la dernière commande du 30 juin 2025, 66 jours se sont écoulés, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe donc un risque de rupture imminent. Pour la quantité, bien qu'un pic à 6u ait été observé en mai, la commande la plus récente est de 2u. En suivant la règle de la médiane et le principe de prudence (choisir la valeur la plus basse en cas de doute sur une rotation faible), une commande de 2 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 6,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 2,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-03-21 13:42:44",
+            "quantity": 3,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 6,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 8,
+            "price_unit": 12.3
+          }
+        ]
+      },
+      {
+        "product_id": 14450,
+        "product_name": "[LV330] LV BIO Tartinade Toscana 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.52,
+        "subtotal": 29.04,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 30 juin 2025, soit 66 jours. L'historique montre un cycle irrégulier (environ 50 à 120 jours). Selon le principe de précaution B2B, le délai depuis la dernière commande est suffisamment long pour induire un risque de rupture imminent ou un besoin de réassort dans l'horizon des 30 jours (Replenishment Threshold Days). ÉTAPE 2 : Estimation de la quantité. Les commandes récentes sont de 2u et 3u. La médiane est de 2.5u. En application de la règle de prudence (choisir la valeur la plus basse en cas de doute ou de rotation faible), la quantité retenue est de 2u.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-19 08:00:40",
+            "quantity": 1,
+            "price_unit": 14.1
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 6,
+            "price_unit": 14.1
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 4,
+            "price_unit": 14.1
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 6,
+            "price_unit": 14.1
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 3,
+            "price_unit": 14.1
+          }
+        ]
+      },
+      {
+        "product_id": 13060,
+        "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 13.1,
+        "subtotal": 39.3,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 52 jours (entre mai et juin 2025). Au 4 septembre, la dernière commande remonte à 66 jours, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe donc un risque de rupture imminent ou une commande déjà en retard. Concernant la quantité, les deux dernières commandes sont identiques (3u) et la médiane historique confirme ce volume. En application du principe de précaution B2B et de la stabilité de la rotation récente, une commande de 3 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-01-17 14:05:20",
+            "quantity": 2,
+            "price_unit": 13.1
+          },
+          {
+            "date": "2024-11-19 08:00:40",
+            "quantity": 1,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 1,
+            "price_unit": 12.72
+          }
+        ]
+      },
+      {
+        "product_id": 14999,
+        "product_name": "[LV342] LV Organic Broccoli Spread 190 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.53,
+        "subtotal": 13.53,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "Le cycle de commande observé est d'environ 52 jours. La dernière commande remonte au 30 juin 2025, soit 66 jours avant la date actuelle. Le délai écoulé dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, ce qui indique un risque de rupture ou un besoin imminent. En suivant le principe de précaution B2B et la règle de la médiane sur l'historique récent (1u, 1u), une commande de 1 unité est préconisée pour maintenir le stock sans surstocker ce produit à faible rotation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 08:40:00",
+            "quantity": 1,
+            "price_unit": 13.53
+          },
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 13.53
+          }
+        ]
+      },
+      {
+        "product_id": 13063,
+        "product_name": "[LV132] LV Tartinade Houmous type 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.29,
+        "subtotal": 13.29,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 52 jours (entre mai et juin). Depuis la dernière commande du 30 juin 2025, 66 jours se sont écoulés, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Bien que la rotation soit très faible, le principe de précaution B2B impose de prévoir une commande pour éviter une rupture prolongée. La quantité retenue est de 1 unité, correspondant à la médiane stricte des commandes précédentes.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 08:40:00",
+            "quantity": 1,
+            "price_unit": 13.29
+          },
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 13.29
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 12.9
+          }
+        ]
+      },
+      {
+        "product_id": 13070,
+        "product_name": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.53,
+        "subtotal": 13.53,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une rotation lente mais régulière. La dernière commande remonte au 30 juin 2025, soit plus de 60 jours. Bien que le cycle soit irrégulier, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement le seuil de réapprovisionnement de 30 jours, créant un risque de rupture. En suivant la règle de la médiane des commandes récentes (1u et 2u) et en privilégiant la valeur la plus basse en cas de doute sur une rotation faible, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 2,
+            "price_unit": 13.53
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 2,
+            "price_unit": 13.14
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 13.14
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 1,
+            "price_unit": 13.14
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 2,
+            "price_unit": 13.14
+          }
+        ]
+      },
+      {
+        "product_id": 13052,
+        "product_name": "[LV155] LV Vinaigrette Caesar 250 ml",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 20.38,
+        "subtotal": 20.38,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Le cycle de commande observé est d'environ 52 jours (entre mai et juin). La dernière commande remonte au 30 juin, soit 66 jours avant la date actuelle. Le délai dépasse largement le cycle habituel et l'horizon de 30 jours du seuil de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : Estimation quantité. L'historique récent montre une consommation constante et faible de 1 unité par commande. La médiane est de 1. Conformément à la règle sur les rotations faibles, on maintient la quantité de 1 unité sans l'augmenter.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 08:40:00",
+            "quantity": 1,
+            "price_unit": 20.38
+          },
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 20.38
+          },
+          {
+            "date": "2025-01-17 14:05:20",
+            "quantity": 1,
+            "price_unit": 20.38
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 19.98
+          }
+        ]
+      },
+      {
+        "product_id": 16754,
+        "product_name": "[JF023] JF MOUTARDE DOUCE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION DU BESOIN) : La dernière commande remonte au 09/05/2025, soit environ 118 jours. Bien que la rotation soit très faible, l'historique N-1 montre une commande en mai et une en mars. Le délai écoulé depuis la dernière commande est largement supérieur au cycle habituel suggéré par l'historique. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), un réapprovisionnement est nécessaire. ÉTAPE 2 (ESTIMATION QUANTITÉ) : L'historique est constant avec des commandes unitaires (1u). Conformément à la règle sur les rotations très faibles, la quantité maintenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-01-17 14:05:20",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-11-19 08:00:40",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-03-21 13:42:44",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16755,
+        "product_name": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 09/05/2025, soit environ 118 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit en stock. En application du principe de précaution B2B (doute sur le cycle = prévoir commande), un risque de rupture est identifié pour couvrir les 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour éviter le surstock tout en assurant la présence du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16763,
+        "product_name": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 39,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 09/05/2025, soit environ 118 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter une rupture prolongée), une commande est préconisée. La quantité retenue correspond à la dernière commande connue (2 unités), respectant la règle de maintien des faibles rotations sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16761,
+        "product_name": "[JF020] JF SAUCE AIOLI 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à 118 jours (9 mai 2025). Bien que la rotation soit très faible et irrégulière, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement un cycle de réapprovisionnement standard. En l'absence d'historique récurrent, on retient la quantité minimale observée (1 unité) pour couvrir un besoin potentiel sans risquer de surstockage inutile sur un produit à faible rotation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-11-19 08:00:40",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16745,
+        "product_name": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 23.4,
+        "subtotal": 46.8,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 09/05/2025, soit environ 118 jours. Bien que la rotation soit très faible, l'historique N-1 montre une commande à la mi-mai. En application du principe de précaution B2B et face à l'irrégularité du cycle, un risque de rupture est identifié pour couvrir la période à venir. ÉTAPE 2 : Estimation de la quantité. L'historique récent est de 1u, mais la commande correspondante de l'année précédente (N-1) était de 2u. Pour assurer une disponibilité minimale sur ce produit à faible rotation sans créer de surstock massif, la quantité de 2u est retenue pour s'aligner sur le volume historique de la période.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 2,
+            "price_unit": 23.4
+          }
+        ]
+      },
+      {
+        "product_id": 13094,
+        "product_name": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "product_uom": "TU16",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 23.92,
+        "subtotal": 23.92,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre une rotation très faible et irrégulière (environ une commande tous les 4 à 5 mois). La dernière commande remonte au 09/05/2025, soit il y a environ 118 jours. Bien que le cycle soit difficile à déterminer précisément, l'historique N-1 montre une commande en septembre (19/09/2023). En application du principe de précaution B2B pour éviter une rupture sur un produit à faible rotation mais présent au catalogue, un réapprovisionnement est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane de l'historique long terme et à la règle de prudence pour les rotations faibles (1-2u).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-01-17 14:05:20",
+            "quantity": 3,
+            "price_unit": 23.92
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 2,
+            "price_unit": 23.68
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 23.68
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 1,
+            "price_unit": 23.68
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 1,
+            "price_unit": 23.68
+          }
+        ]
+      },
+      {
+        "product_id": 13061,
+        "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 13.1,
+        "subtotal": 26.2,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre une rotation très faible mais régulière (2 unités par commande). La dernière commande enregistrée remonte à mai 2025. En comparant avec l'historique N-1, une commande avait été passée en septembre (2023-09-19). Étant donné que nous sommes le 04 septembre et que le seuil de réapprovisionnement est de 30 jours, il existe un risque de rupture pour couvrir le cycle annuel de rentrée. Par mesure de précaution B2B et conformément à la règle de maintien des faibles rotations, une commande de 2 unités (médiane historique) est préconisée.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-19 08:00:40",
+            "quantity": 1,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 2,
+            "price_unit": 12.72
+          }
+        ]
+      },
+      {
+        "product_id": 13066,
+        "product_name": "[LV134] LV BIO Tartinade Olives Vertes 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.15,
+        "subtotal": 14.15,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre une rotation très faible mais régulière (environ tous les 4 mois). La dernière commande remonte au 09/05/2025, soit environ 118 jours. En comparant avec l'historique N-1 (commande le 19/09/2023), nous entrons dans la fenêtre critique de réapprovisionnement pour couvrir les 30 prochains jours. Conformément aux règles de gestion des faibles rotations (1-2u), la quantité retenue est la médiane historique, soit 1 unité, pour éviter une rupture tout en limitant le surstock.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 14.15
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 13.74
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 13.74
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 1,
+            "price_unit": 13.74
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 1,
+            "price_unit": 13.74
+          }
+        ]
+      },
+      {
+        "product_id": 13059,
+        "product_name": "[LV129] LV Tartinade Carotte Gingembre 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.04,
+        "subtotal": 13.04,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 09/05/2025, soit environ 118 jours. L'historique montre une rotation très faible et irrégulière (intervalles de 4 à 8 mois). Bien que le cycle soit difficile à définir précisément, le principe de précaution B2B s'applique car nous entrons dans une période où une commande a été passée l'année précédente (septembre). Un risque de rupture est possible sur l'horizon de 30 jours. ÉTAPE 2 : Estimation quantité. L'historique est constant à 1 unité par commande. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité de 1 unité sans l'augmenter.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 13.04
+          },
+          {
+            "date": "2025-01-17 14:05:20",
+            "quantity": 2,
+            "price_unit": 13.04
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 1,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 1,
+            "price_unit": 12.66
+          }
+        ]
+      },
+      {
+        "product_id": 13057,
+        "product_name": "[LV159] LV Tartinade aux Truffes  135g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 09/05/2025, soit environ 118 jours. L'historique N-1 montre une commande le 19/09/2023, ce qui indique un besoin récurrent à l'approche de l'automne. Le cycle étant irrégulier, le principe de précaution B2B s'applique pour éviter une rupture à l'approche de la saison. ÉTAPE 2 : Estimation de la quantité. L'historique récent et N-1 montre des volumes faibles (1u, 2u, 3u). La médiane des commandes historiques est de 1u. Conformément aux règles de rotation faible et de prudence, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-19 08:00:40",
+            "quantity": 1,
+            "price_unit": 18.06
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 2,
+            "price_unit": 18.06
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 1,
+            "price_unit": 18.06
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 3,
+            "price_unit": 18.06
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 1,
+            "price_unit": 18.06
+          }
+        ]
+      },
+      {
+        "product_id": 13058,
+        "product_name": "[LV160] LV Tartinade Aubergine 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 12.79,
+        "subtotal": 25.58,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre une rotation lente et irrégulière avec un cycle moyen d'environ 100 à 120 jours. La dernière commande remonte au 09/05/2025, soit il y a 118 jours. Le cycle habituel est largement dépassé, ce qui indique un besoin imminent de réapprovisionnement pour couvrir les 30 prochains jours. En suivant la règle de la médiane historique (valeurs : 1, 2, 2, 3, 4), la quantité recommandée est de 2 unités. On privilégie cette valeur médiane basse pour éviter le surstockage sur un produit à faible rotation.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-05-16 12:05:39",
+            "quantity": 2,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-03-21 13:42:44",
+            "quantity": 1,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2023-09-19 06:41:52",
+            "quantity": 2,
+            "price_unit": 12.42
+          }
+        ]
+      },
+      {
+        "product_id": 13067,
+        "product_name": "[LV135] LV Tartinade Basilico 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.53,
+        "subtotal": 13.53,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 09/05/2025, soit environ 118 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (incertitude sur le cycle = prévoir commande), un risque de rupture est identifié pour couvrir les 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1u. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1u pour éviter le surstockage tout en assurant la présence du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 13.53
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 13.14
+          }
+        ]
+      },
+      {
+        "product_id": 13055,
+        "product_name": "[LV158] LV Moutarde 200 ml",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.2,
+        "subtotal": 14.2,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 09/05/2025, soit environ 118 jours. L'historique montre des cycles longs et irréguliers (environ 60 à 120 jours). En application du principe de précaution B2B et face à un cycle incertain dépassant les 70% de l'intervalle moyen constaté, un risque de rupture est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique (récent et N-1) est extrêmement stable avec des commandes unitaires systématiques (1u). La médiane et la constante étant de 1, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 14.2
+          },
+          {
+            "date": "2024-09-05 06:54:33",
+            "quantity": 1,
+            "price_unit": 13.92
+          },
+          {
+            "date": "2024-03-21 13:42:44",
+            "quantity": 1,
+            "price_unit": 13.92
+          },
+          {
+            "date": "2024-01-22 12:51:36",
+            "quantity": 1,
+            "price_unit": 13.92
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 19355,
+        "product_name": "[JF055] JF HONEY MUSTARD MAYO 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 30 juin 2025, soit 66 jours avant la date actuelle. Bien que le cycle soit difficile à déterminer avec une seule commande récente, le délai écoulé est important. En application du principe de précaution B2B (si doute sur le cycle → prévoir commande), un besoin est identifié pour éviter une rupture prolongée sur les 30 prochains jours. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles (1-2u), on maintient la quantité de 1 unité sans l'augmenter.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 08:40:00",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 19354,
+        "product_name": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 09/05/2025, soit environ 118 jours. Bien que la rotation soit très faible, le délai écoulé depuis la dernière unité vendue dépasse largement un cycle de réapprovisionnement standard. En application du principe de précaution B2B (incertitude sur le cycle = prévoir), un risque de rupture est identifié pour couvrir les 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1u. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité à 1u sans augmenter pour éviter le surstock.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 19272,
+        "product_name": "[LV357] LV Tartinade BIO Asperge 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a environ 118 jours. Bien que le cycle soit difficile à établir avec un seul point de donnée, le principe de précaution B2B et l'absence d'historique sur l'année précédente imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée. Conformément aux règles de gestion des rotations faibles (1-2u), la quantité retenue est de 1 unité, correspondant à la dernière commande connue.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:33:24",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 25,
+    "optional_products_count": 3,
+    "base_amount": 607.53,
+    "optional_amount": 57.6,
+    "total_amount": 665.13,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 6548
+}

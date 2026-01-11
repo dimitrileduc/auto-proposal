@@ -1,0 +1,30 @@
+{
+  "clientId": 60516,
+  "clientName": "PIERRO epicerie",
+  "orderName": "S40132",
+  "orderDate": "2025-11-05 14:49:30",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1Score": 0.7692307692307693,
+    "mae": 0.8,
+    "wmape": 40,
+    "mape": 30,
+    "bias": -40
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8834,
+    "completionTokens": 1556,
+    "totalTokens": 10390
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:29:28.684Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-15 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60276,
+    "name": "Cru's Delicatessen",
+    "order": {
+      "name": "S39715",
+      "date": "2025-10-16 08:20:31"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 4
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 4,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 4,
+        "wmape": 40,
+        "mape": 40,
+        "bias": -40,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 4
+        },
+        "rmse": 4
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 4,
+          "wmape": 40,
+          "mape": 40,
+          "bias": -40,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 4
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 3,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 4,
+          "wmape": 40,
+          "mape": 40,
+          "bias": -40,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 4
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3559,
+    "completionTokens": 619,
+    "totalTokens": 4178
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18308,
+        "productName": "[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 6,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 40,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90960,
+              "orderName": "S39083",
+              "date": "2025-09-09 06:46:44",
+              "quantity": 6,
+              "priceUnit": 25.44
+            },
+            {
+              "orderId": 88833,
+              "orderName": "S36956",
+              "date": "2025-05-22 06:29:23",
+              "quantity": 6,
+              "priceUnit": 25.44
+            }
+          ],
+          "statistics": {
+            "mean": 6,
+            "median": 6,
+            "stdDev": 0,
+            "min": 6,
+            "max": 6,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 110.01204861111111,
+            "lastOrderDaysAgo": 35.7175462962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18307,
+        "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 6,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 40,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90960,
+              "orderName": "S39083",
+              "date": "2025-09-09 06:46:44",
+              "quantity": 6,
+              "priceUnit": 25.44
+            },
+            {
+              "orderId": 88833,
+              "orderName": "S36956",
+              "date": "2025-05-22 06:29:23",
+              "quantity": 6,
+              "priceUnit": 25.44
+            }
+          ],
+          "statistics": {
+            "mean": 6,
+            "median": 6,
+            "stdDev": 0,
+            "min": 6,
+            "max": 6,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 110.01204861111111,
+            "lastOrderDaysAgo": 35.7175462962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18310,
+        "productName": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 6,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 40,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90960,
+              "orderName": "S39083",
+              "date": "2025-09-09 06:46:44",
+              "quantity": 8,
+              "priceUnit": 25.44
+            },
+            {
+              "orderId": 88833,
+              "orderName": "S36956",
+              "date": "2025-05-22 06:29:23",
+              "quantity": 6,
+              "priceUnit": 25.44
+            }
+          ],
+          "statistics": {
+            "mean": 7,
+            "median": 7,
+            "stdDev": 1,
+            "min": 6,
+            "max": 8,
+            "cv": 0.14285714285714285,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9142857142857144
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 110.01204861111111,
+            "lastOrderDaysAgo": 35.7175462962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18309,
+        "productName": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 6,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 40,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88833,
+              "orderName": "S36956",
+              "date": "2025-05-22 06:29:23",
+              "quantity": 6,
+              "priceUnit": 25.44
+            }
+          ],
+          "statistics": {
+            "mean": 6,
+            "median": 6,
+            "stdDev": 0,
+            "min": 6,
+            "max": 6,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 145.7295949074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

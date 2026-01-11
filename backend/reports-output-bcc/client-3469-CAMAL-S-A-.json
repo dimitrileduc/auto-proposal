@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:12:32.688Z"
+  },
+  "client": {
+    "id": 3469,
+    "name": "CAMAL S.A."
+  },
+  "config": {
+    "analysisEndDate": "2025-07-21 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3997,
+        "completionTokens": 677,
+        "totalTokens": 4674
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 1850.238,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8995,
+        "product_name": "[PF0093] FILOU MOUTARDE 300GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 24,
+        "quantity_source": "llm",
+        "price_unit": 10.881,
+        "subtotal": 261.144,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 60 jours (20/03 au 20/05). Au 21/07, 62 jours se sont écoulés depuis la dernière commande, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe un risque de rupture imminent. La quantité est fixée à 24 unités, correspondant à la médiane exacte des commandes récentes et à la quantité la plus fréquente observée sur l'historique long terme (N-1).",
+          "summary": "",
+          "baseline_quantity": 24,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-03 06:18:56",
+            "quantity": 24,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2024-01-30 13:16:48",
+            "quantity": 24,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2023-12-19 12:42:47",
+            "quantity": 24,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2023-10-31 13:19:20",
+            "quantity": 16,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2023-09-12 13:27:32",
+            "quantity": 16,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 8996,
+        "product_name": "[PF0094] FILOU MOUTARDE 700 GR",
+        "product_uom": "TU6",
+        "quantity_recommended": 31,
+        "quantity_source": "llm",
+        "price_unit": 7.254,
+        "subtotal": 224.874,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. L'historique récent montre un cycle de commande d'environ 60 jours (mars à mai). La dernière commande date du 20 mai 2025, soit 62 jours avant la date actuelle (21 juillet). Le cycle moyen est dépassé et le risque de rupture est imminent dans l'horizon des 30 jours. ÉTAPE 2 : Estimation quantité. Les commandes récentes sont de 30u et 32u. La médiane de cette période est de 31u. L'historique N-1 à la même période (juin) montrait un volume légèrement supérieur (36u), mais conformément à la règle de prudence et de priorité à la médiane récente, la quantité de 31u est retenue.",
+          "summary": "",
+          "baseline_quantity": 31,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-01-30 13:16:48",
+            "quantity": 16,
+            "price_unit": 7.2
+          },
+          {
+            "date": "2023-12-19 12:42:47",
+            "quantity": 24,
+            "price_unit": 7.2
+          },
+          {
+            "date": "2023-10-31 13:19:20",
+            "quantity": 16,
+            "price_unit": 7.2
+          },
+          {
+            "date": "2023-10-03 09:59:18",
+            "quantity": 16,
+            "price_unit": 7.2
+          },
+          {
+            "date": "2023-09-12 13:27:32",
+            "quantity": 16,
+            "price_unit": 7.2
+          }
+        ]
+      },
+      {
+        "product_id": 8991,
+        "product_name": "[PF0088] FILOU VOL AU VENT 800 GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 24,
+        "quantity_source": "llm",
+        "price_unit": 36.855,
+        "subtotal": 884.52,
+        "confidence": "high",
+        "order_count": 14,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 60 jours (63 jours entre les deux dernières commandes). La dernière commande datant du 20 mai 2025, soit il y a 62 jours, nous avons dépassé le cycle habituel. Le risque de rupture est imminent dans l'horizon des 30 jours (seuil de réapprovisionnement). En application du principe de précaution B2B et de la détection de besoin, une commande est nécessaire. La quantité retenue est de 24 unités, correspondant à la médiane et à la constante des commandes récentes, les volumes plus élevés de l'année précédente étant traités comme des pics exceptionnels.",
+          "summary": "",
+          "baseline_quantity": 24,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-01-30 13:16:48",
+            "quantity": 24,
+            "price_unit": 36
+          },
+          {
+            "date": "2023-12-19 12:42:47",
+            "quantity": 24,
+            "price_unit": 36
+          },
+          {
+            "date": "2023-10-31 13:19:20",
+            "quantity": 16,
+            "price_unit": 36
+          },
+          {
+            "date": "2023-10-03 09:59:18",
+            "quantity": 16,
+            "price_unit": 36
+          },
+          {
+            "date": "2023-09-12 13:27:32",
+            "quantity": 16,
+            "price_unit": 36
+          }
+        ]
+      },
+      {
+        "product_id": 8992,
+        "product_name": "[PF0089] FILOU VOL AU VENT 400 GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 23.985,
+        "subtotal": 479.7,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 20 mai 2025, soit il y a 62 jours. L'historique montre un cycle moyen d'environ 60 jours (mars à mai). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent ou déjà présent. Le principe de précaution B2B impose de prévoir une commande. ÉTAPE 2 : Estimation quantité. Les commandes récentes oscillent entre 16u et 24u. La médiane de l'historique global (8, 16, 16, 24, 24, 24) se situe à 20u. En suivant la règle de la médiane pour éviter de surstocker tout en couvrant le besoin, la quantité retenue est de 20 unités.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-27 11:23:06",
+            "quantity": 24,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-05-06 10:47:48",
+            "quantity": 24,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-04-03 06:18:56",
+            "quantity": 24,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-01-30 13:16:48",
+            "quantity": 8,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2023-12-19 12:42:47",
+            "quantity": 16,
+            "price_unit": 23.4
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 4,
+    "optional_products_count": 0,
+    "base_amount": 1850.238,
+    "optional_amount": 0,
+    "total_amount": 1850.238,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2952
+}

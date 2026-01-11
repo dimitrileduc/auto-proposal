@@ -1,0 +1,30 @@
+{
+  "clientId": 34479,
+  "clientName": "Boucherie Vanderbyse",
+  "orderName": "S38857",
+  "orderDate": "2025-09-01 07:21:53",
+  "cutoffDate": "2025-08-31 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.7777777777777778,
+    "recall": 1,
+    "f1Score": 0.8750000000000001,
+    "mae": 0.14285714285714285,
+    "wmape": 12.5,
+    "mape": 7.142857142857143,
+    "bias": -12.5
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 18490,
+    "completionTokens": 3126,
+    "totalTokens": 21616
+  }
+}

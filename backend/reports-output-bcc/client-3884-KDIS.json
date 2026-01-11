@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:27:47.027Z"
+  },
+  "client": {
+    "id": 3884,
+    "name": "KDIS"
+  },
+  "config": {
+    "analysisEndDate": "2025-08-06 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 911,
+        "completionTokens": 179,
+        "totalTokens": 1090
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 11950,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9014,
+        "product_name": "[PF0204] KDIS MAYONNAISE KOSHER 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 1000,
+        "quantity_source": "llm",
+        "price_unit": 11.95,
+        "subtotal": 11950,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 31 mars 2025, soit plus de 120 jours sans activité. Bien que le cycle soit irrégulier, l'historique montre des commandes volumineuses (environ 1000u) espacées de plusieurs mois (septembre 2023, mars 2024, mars 2025). En application du principe de précaution B2B et face à l'incertitude du cycle de rotation, un besoin de réapprovisionnement est détecté pour couvrir l'horizon des 30 prochains jours. La quantité retenue correspond à la médiane de l'historique (1000u), excluant le pic de 1015u et la valeur basse de 960u.",
+          "summary": "",
+          "baseline_quantity": 1000,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-31 12:06:10",
+            "quantity": 960,
+            "price_unit": 11.95
+          },
+          {
+            "date": "2024-08-19 06:47:05",
+            "quantity": 1300,
+            "price_unit": 11.55
+          },
+          {
+            "date": "2024-03-12 13:14:32",
+            "quantity": 1015,
+            "price_unit": 11.55
+          },
+          {
+            "date": "2023-09-07 12:20:13",
+            "quantity": 1000,
+            "price_unit": 11.55
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 11950,
+    "optional_amount": 0,
+    "total_amount": 11950,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3829
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38830,
+  "clientName": "DLL AD SOUMAGNE MARVAN",
+  "orderName": "S40104",
+  "orderDate": "2025-11-04 11:03:09",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 24,
+    "fp": 17,
+    "fn": 0,
+    "precision": 0.5853658536585366,
+    "recall": 1,
+    "f1Score": 0.7384615384615384,
+    "mae": 0.4583333333333333,
+    "wmape": 29.72972972972973,
+    "mape": 26.388888888888886,
+    "bias": -2.7027027027027026
+  },
+  "distribution": {
+    "exactMatch": 15,
+    "partialMatch": 9
+  },
+  "llmUsage": {
+    "calls": 41,
+    "promptTokens": 37742,
+    "completionTokens": 6600,
+    "totalTokens": 44342
+  }
+}

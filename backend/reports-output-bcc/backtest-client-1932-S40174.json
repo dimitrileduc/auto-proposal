@@ -1,0 +1,30 @@
+{
+  "clientId": 1932,
+  "clientName": "Stadtmarketing Eupen",
+  "orderName": "S40174",
+  "orderDate": "2025-11-12 09:06:00",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 3.3333333333333335,
+    "wmape": 76.92307692307693,
+    "mape": 68.05555555555556,
+    "bias": -30.76923076923077
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 11600,
+    "completionTokens": 2113,
+    "totalTokens": 13713
+  }
+}

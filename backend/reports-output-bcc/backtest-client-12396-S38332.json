@@ -1,0 +1,30 @@
+{
+  "clientId": 12396,
+  "clientName": "Krings Krams",
+  "orderName": "S38332",
+  "orderDate": "2025-08-05 13:44:59",
+  "cutoffDate": "2025-08-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 0.5,
+    "wmape": 37.5,
+    "mape": 50,
+    "bias": 37.5
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 7948,
+    "completionTokens": 1245,
+    "totalTokens": 9193
+  }
+}

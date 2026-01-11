@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:20:04.459Z"
+  },
+  "client": {
+    "id": 39002,
+    "name": "MOHR FRISCHCENTER KG"
+  },
+  "config": {
+    "analysisEndDate": "2025-08-31 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 1738,
+        "completionTokens": 290,
+        "totalTokens": 2028
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 733,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 17396,
+        "product_name": "[JF048] JF DISPLAY SAUCES 250ML ",
+        "product_uom": "TU1",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 390,
+        "subtotal": 390,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à plus de 130 jours (15 avril), ce qui dépasse largement un cycle de réapprovisionnement standard pour un produit en stock. Bien que la rotation soit très faible (1 unité), l'absence de commande récente combinée au principe de précaution B2B suggère un risque de rupture ou un besoin de renouvellement du display pour la période à venir. Conformément aux règles de gestion des rotations faibles, la quantité est maintenue à la valeur historique de 1 unité (médiane du récent).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-15 13:00:11",
+            "quantity": 1,
+            "price_unit": 390
+          }
+        ]
+      },
+      {
+        "product_id": 17494,
+        "product_name": "[JF049] JF DISPLAY SAUCES Squeeze",
+        "product_uom": "TU1",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 343,
+        "subtotal": 343,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 15 avril 2025, soit plus de 130 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B et face à l'incertitude du cycle, un risque de rupture est identifié. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles, la quantité est maintenue à 1 unité (médiane de l'historique disponible) pour éviter le surstockage tout en assurant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-15 13:00:11",
+            "quantity": 1,
+            "price_unit": 343
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 2,
+    "base_amount": 0,
+    "optional_amount": 733,
+    "total_amount": 733,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2942
+}

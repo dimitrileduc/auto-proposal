@@ -1,0 +1,510 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:24:11.218Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-29 00:00:00"
+    }
+  },
+  "client": {
+    "id": 24738,
+    "name": "Geuchterhof",
+    "order": {
+      "name": "S40016",
+      "date": "2025-10-30 07:25:42"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 6,
+        "falsePositives": 0,
+        "falseNegatives": 2,
+        "total": 8
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 0.75,
+        "f1Score": 0.8571428571428571,
+        "totalPredicted": 6,
+        "totalReal": 8
+      },
+      "quantityMetrics": {
+        "mae": 1.3333333333333333,
+        "wmape": 42.10526315789473,
+        "mape": 63.333333333333336,
+        "bias": 10.526315789473683,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 6
+        },
+        "rmse": 1.4142135623730951
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 2,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 0.3333333333333333,
+          "f1Score": 0.5,
+          "totalPredicted": 1,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 2,
+          "wmape": 40,
+          "mape": 40,
+          "bias": -40,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 2
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 5,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 5,
+          "totalReal": 5
+        },
+        "quantityMetrics": {
+          "mae": 1.2,
+          "wmape": 42.857142857142854,
+          "mape": 68,
+          "bias": 28.57142857142857,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 5
+          },
+          "rmse": 1.2649110640673518
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5322,
+    "completionTokens": 938,
+    "totalTokens": 6260
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 13095,
+        "productName": "[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89010,
+              "orderName": "S37133",
+              "date": "2025-06-17 07:56:52",
+              "quantity": 2,
+              "priceUnit": 26.76
+            },
+            {
+              "orderId": 81818,
+              "orderName": "S29941",
+              "date": "2024-04-25 14:47:34",
+              "quantity": 1,
+              "priceUnit": 26.76
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 417.71479166666666,
+            "lastOrderDaysAgo": 133.71050925925925,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13097,
+        "productName": "[LV003] LV Pizza Croccantina tomate origan 150 g bio",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89010,
+              "orderName": "S37133",
+              "date": "2025-06-17 07:56:52",
+              "quantity": 2,
+              "priceUnit": 29.16
+            },
+            {
+              "orderId": 81818,
+              "orderName": "S29941",
+              "date": "2024-04-25 14:47:34",
+              "quantity": 1,
+              "priceUnit": 29.16
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 417.71479166666666,
+            "lastOrderDaysAgo": 133.71050925925925,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13060,
+        "productName": "[LV161] LV Tartinade Mangue curry 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89010,
+              "orderName": "S37133",
+              "date": "2025-06-17 07:56:52",
+              "quantity": 4,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 81818,
+              "orderName": "S29941",
+              "date": "2024-04-25 14:47:34",
+              "quantity": 4,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 79317,
+              "orderName": "S27440",
+              "date": "2023-11-14 09:04:21",
+              "quantity": 5,
+              "priceUnit": 12.72
+            }
+          ],
+          "statistics": {
+            "mean": 4.333333333333333,
+            "median": 4,
+            "stdDev": 0.4714045207910317,
+            "min": 4,
+            "max": 5,
+            "cv": 0.10878565864408424,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.7594742835542402
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 290.4557349537037,
+            "lastOrderDaysAgo": 133.71050925925925,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13061,
+        "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 20,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89010,
+              "orderName": "S37133",
+              "date": "2025-06-17 07:56:52",
+              "quantity": 4,
+              "priceUnit": 12.72
+            },
+            {
+              "orderId": 81818,
+              "orderName": "S29941",
+              "date": "2024-04-25 14:47:34",
+              "quantity": 4,
+              "priceUnit": 12.72
+            }
+          ],
+          "statistics": {
+            "mean": 4,
+            "median": 4,
+            "stdDev": 0,
+            "min": 4,
+            "max": 4,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 417.71479166666666,
+            "lastOrderDaysAgo": 133.71050925925925,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 6,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 20,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89010,
+              "orderName": "S37133",
+              "date": "2025-06-17 07:56:52",
+              "quantity": 6,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 81818,
+              "orderName": "S29941",
+              "date": "2024-04-25 14:47:34",
+              "quantity": 4,
+              "priceUnit": 12.3
+            }
+          ],
+          "statistics": {
+            "mean": 5,
+            "median": 5,
+            "stdDev": 1,
+            "min": 4,
+            "max": 6,
+            "cv": 0.2,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.88
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 417.71479166666666,
+            "lastOrderDaysAgo": 133.71050925925925,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 14450,
+        "productName": "[LV330] LV BIO Tartinade Toscana 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 40,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89010,
+              "orderName": "S37133",
+              "date": "2025-06-17 07:56:52",
+              "quantity": 3,
+              "priceUnit": 14.1
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 133.71050925925925,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": [
+      {
+        "productId": 13094,
+        "productName": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 13057,
+        "productName": "[LV159] LV Tartinade aux Truffes  135g ",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

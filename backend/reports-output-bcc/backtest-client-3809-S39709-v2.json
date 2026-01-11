@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:10:45.877Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-13 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3809,
+    "name": "MEX - AL  EL SOMBRERO IMPORT/E",
+    "order": {
+      "name": "S39709",
+      "date": "2025-10-14 07:06:30"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 80,
+        "wmape": 16.666666666666664,
+        "mape": 16.666666666666664,
+        "bias": -16.666666666666664,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 80
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 80,
+          "wmape": 16.666666666666664,
+          "mape": 16.666666666666664,
+          "bias": -16.666666666666664,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 80
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1061,
+    "completionTokens": 172,
+    "totalTokens": 1233
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9001,
+        "productName": "[PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG",
+        "productUom": "TU4",
+        "prediction": {
+          "quantity": 400,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 480
+        },
+        "error": {
+          "absolute": 80,
+          "percent": 16.666666666666664,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 14,
+          "orders": [
+            {
+              "orderId": 91113,
+              "orderName": "S39236",
+              "date": "2025-09-16 13:41:54",
+              "quantity": 400,
+              "priceUnit": 34.6
+            },
+            {
+              "orderId": 89436,
+              "orderName": "S37559",
+              "date": "2025-06-19 12:48:16",
+              "quantity": 400,
+              "priceUnit": 34.6
+            },
+            {
+              "orderId": 87833,
+              "orderName": "S35956",
+              "date": "2025-04-10 07:13:23",
+              "quantity": 200,
+              "priceUnit": 34.6
+            },
+            {
+              "orderId": 85792,
+              "orderName": "S33915",
+              "date": "2024-12-16 09:16:09",
+              "quantity": 760,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 85792,
+              "orderName": "S33915",
+              "date": "2024-12-16 09:16:09",
+              "quantity": 0,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 83995,
+              "orderName": "S32118",
+              "date": "2024-09-05 11:56:20",
+              "quantity": 320,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 82575,
+              "orderName": "S30698",
+              "date": "2024-06-10 09:23:55",
+              "quantity": 177,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 82218,
+              "orderName": "S30341",
+              "date": "2024-05-16 15:16:28",
+              "quantity": 1000,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 81694,
+              "orderName": "S29817",
+              "date": "2024-04-17 06:54:17",
+              "quantity": 433,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 81306,
+              "orderName": "S29429",
+              "date": "2024-03-20 12:28:53",
+              "quantity": 600,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 80860,
+              "orderName": "S28983",
+              "date": "2024-02-19 08:09:46",
+              "quantity": 480,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 80513,
+              "orderName": "S28636",
+              "date": "2024-01-23 10:14:03",
+              "quantity": 423,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 80513,
+              "orderName": "S28636",
+              "date": "2024-01-23 10:14:03",
+              "quantity": 0,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 79167,
+              "orderName": "S27290",
+              "date": "2023-10-26 07:29:49",
+              "quantity": 480,
+              "priceUnit": 33.6
+            }
+          ],
+          "statistics": {
+            "mean": 405.2142857142857,
+            "median": 412,
+            "stdDev": 261.8296006870086,
+            "min": 0,
+            "max": 1000,
+            "cv": 0.6461509623864129,
+            "trend": "stable",
+            "outliers": [
+              1000
+            ],
+            "regularityScore": 0.32394219083692516
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 53.1737224002849,
+            "lastOrderDaysAgo": 26.429236111111113,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

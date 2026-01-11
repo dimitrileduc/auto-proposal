@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:12:26.771Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-07 00:00:00"
+    }
+  },
+  "client": {
+    "id": 56954,
+    "name": "SAS CSF, ENTREPÔT EPAUX BEZU",
+    "order": {
+      "name": "S39609",
+      "date": "2025-10-08 14:28:39"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 999,
+    "completionTokens": 215,
+    "totalTokens": 1214
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 8999,
+        "productName": "[PF01012] CARREFOUR VOL AU VENT 400 GR",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 96,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 96
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 22,
+          "orders": [
+            {
+              "orderId": 91168,
+              "orderName": "S39291",
+              "date": "2025-09-29 15:35:34",
+              "quantity": 96,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 88420,
+              "orderName": "S36543",
+              "date": "2025-05-06 09:24:05",
+              "quantity": 96,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 86389,
+              "orderName": "S34512",
+              "date": "2025-01-30 07:56:59",
+              "quantity": 192,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 86244,
+              "orderName": "S34367",
+              "date": "2025-01-28 07:22:29",
+              "quantity": 192,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 85535,
+              "orderName": "S33658",
+              "date": "2024-12-11 11:01:35",
+              "quantity": 67,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 85434,
+              "orderName": "S33557",
+              "date": "2024-12-02 08:04:44",
+              "quantity": 120,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 85310,
+              "orderName": "S33433",
+              "date": "2024-11-27 08:02:08",
+              "quantity": 53,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 85265,
+              "orderName": "S33388",
+              "date": "2024-11-25 08:41:52",
+              "quantity": 48,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 85167,
+              "orderName": "S33290",
+              "date": "2024-11-20 09:16:55",
+              "quantity": 228,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 84909,
+              "orderName": "S33032",
+              "date": "2024-11-06 10:39:02",
+              "quantity": 40,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 84836,
+              "orderName": "S32959",
+              "date": "2024-10-30 07:40:46",
+              "quantity": 190,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 84793,
+              "orderName": "S32916",
+              "date": "2024-10-30 07:37:58",
+              "quantity": 62,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 84663,
+              "orderName": "S32786",
+              "date": "2024-10-21 06:10:32",
+              "quantity": 156,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 84667,
+              "orderName": "S32790",
+              "date": "2024-10-18 11:57:52",
+              "quantity": 10,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 84579,
+              "orderName": "S32702",
+              "date": "2024-10-16 07:45:06",
+              "quantity": 22,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 83388,
+              "orderName": "S31511",
+              "date": "2024-08-07 06:21:32",
+              "quantity": 276,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 83195,
+              "orderName": "S31318",
+              "date": "2024-07-24 06:00:58",
+              "quantity": 27,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 83270,
+              "orderName": "S31393",
+              "date": "2024-07-24 05:55:43",
+              "quantity": 113,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 83153,
+              "orderName": "S31276",
+              "date": "2024-07-17 12:55:24",
+              "quantity": 45,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 83016,
+              "orderName": "S31139",
+              "date": "2024-07-10 11:34:05",
+              "quantity": 112,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 82975,
+              "orderName": "S31098",
+              "date": "2024-07-08 09:32:26",
+              "quantity": 24,
+              "priceUnit": 21.12
+            },
+            {
+              "orderId": 82918,
+              "orderName": "S31041",
+              "date": "2024-07-03 06:18:23",
+              "quantity": 40,
+              "priceUnit": 21.12
+            }
+          ],
+          "statistics": {
+            "mean": 100.4090909090909,
+            "median": 82,
+            "stdDev": 73.61611674509938,
+            "min": 10,
+            "max": 276,
+            "cv": 0.7331618688964175,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.16010287866214948
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 21.589853946208112,
+            "lastOrderDaysAgo": 7.350300925925926,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

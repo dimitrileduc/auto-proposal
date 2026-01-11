@@ -1,0 +1,30 @@
+{
+  "clientId": 58762,
+  "clientName": "OH GOURMAND SAS",
+  "orderName": "S34450",
+  "orderDate": "2025-01-22 08:35:51",
+  "cutoffDate": "2025-01-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 4,
+    "wmape": 80,
+    "mape": 80,
+    "bias": -80
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12500,
+    "completionTokens": 2271,
+    "totalTokens": 14771
+  }
+}

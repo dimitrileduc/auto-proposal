@@ -1,0 +1,549 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:17:23.024Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-13 00:00:00"
+    }
+  },
+  "client": {
+    "id": 71197,
+    "name": "Le Cortil asbl, Amandine Duhaut",
+    "order": {
+      "name": "S39713",
+      "date": "2025-10-14 10:02:46"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 6,
+        "falsePositives": 1,
+        "falseNegatives": 0,
+        "total": 7
+      },
+      "productMetrics": {
+        "precision": 0.8571428571428571,
+        "recall": 1,
+        "f1Score": 0.923076923076923,
+        "totalPredicted": 7,
+        "totalReal": 6
+      },
+      "quantityMetrics": {
+        "mae": 2.5,
+        "wmape": 53.57142857142857,
+        "mape": 48.611111111111114,
+        "bias": -53.57142857142857,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 6
+        },
+        "rmse": 3.082207001484488
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1Score": 0.8,
+          "totalPredicted": 3,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 1.5,
+          "wmape": 37.5,
+          "mape": 37.5,
+          "bias": -37.5,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 1.5811388300841898
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 4,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 4,
+          "totalReal": 4
+        },
+        "quantityMetrics": {
+          "mae": 3,
+          "wmape": 60,
+          "mape": 54.16666666666667,
+          "bias": -60,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 4
+          },
+          "rmse": 3.605551275463989
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 6185,
+    "completionTokens": 1054,
+    "totalTokens": 7239
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 17728,
+        "productName": "[DAF002] DAF Lime and Ginger with Jasmine flower 25cl",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 25,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 91176,
+              "orderName": "S39299",
+              "date": "2025-09-24 07:27:55",
+              "quantity": 3,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 88462,
+              "orderName": "S36585",
+              "date": "2025-05-08 06:34:51",
+              "quantity": 3,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 88036,
+              "orderName": "S36159",
+              "date": "2025-04-15 07:20:47",
+              "quantity": 3,
+              "priceUnit": 15.12
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.7134192570128886
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 81.00247685185185,
+            "lastOrderDaysAgo": 18.68894675925926,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 17730,
+        "productName": "[DAF004] DAF Peach and Lemon with Honeybush flower 25cl",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 25,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 91176,
+              "orderName": "S39299",
+              "date": "2025-09-24 07:27:55",
+              "quantity": 3,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 89416,
+              "orderName": "S37539",
+              "date": "2025-06-19 10:38:10",
+              "quantity": 10,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 88462,
+              "orderName": "S36585",
+              "date": "2025-05-08 06:34:51",
+              "quantity": 3,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 88036,
+              "orderName": "S36159",
+              "date": "2025-04-15 07:20:47",
+              "quantity": 3,
+              "priceUnit": 15.12
+            }
+          ],
+          "statistics": {
+            "mean": 4.75,
+            "median": 3,
+            "stdDev": 3.031088913245535,
+            "min": 3,
+            "max": 10,
+            "cv": 0.6381239817359021,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.38522022369606224
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 54.0016512345679,
+            "lastOrderDaysAgo": 18.68894675925926,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18266,
+        "productName": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 25,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 91176,
+              "orderName": "S39299",
+              "date": "2025-09-24 07:27:55",
+              "quantity": 3,
+              "priceUnit": 14.88
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 18.68894675925926,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18298,
+        "productName": "[MANA02] MANA natural energy drink - tropical passion 250ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 91176,
+              "orderName": "S39299",
+              "date": "2025-09-24 07:27:55",
+              "quantity": 2,
+              "priceUnit": 32.8
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 18.68894675925926,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18344,
+        "productName": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 83.33333333333334,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 91176,
+              "orderName": "S39299",
+              "date": "2025-09-24 07:27:55",
+              "quantity": 2,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 89416,
+              "orderName": "S37539",
+              "date": "2025-06-19 10:38:10",
+              "quantity": 1,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 88036,
+              "orderName": "S36159",
+              "date": "2025-04-15 07:20:47",
+              "quantity": 2,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86321,
+              "orderName": "S34444",
+              "date": "2025-01-22 09:31:03",
+              "quantity": 3,
+              "priceUnit": 27.6
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.7071067811865476,
+            "min": 1,
+            "max": 3,
+            "cv": 0.3535533905932738,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.7242405154945355
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 81.62427469135802,
+            "lastOrderDaysAgo": 18.68894675925926,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18346,
+        "productName": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 83.33333333333334,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 91176,
+              "orderName": "S39299",
+              "date": "2025-09-24 07:27:55",
+              "quantity": 2,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 89416,
+              "orderName": "S37539",
+              "date": "2025-06-19 10:38:10",
+              "quantity": 1,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 88036,
+              "orderName": "S36159",
+              "date": "2025-04-15 07:20:47",
+              "quantity": 2,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86321,
+              "orderName": "S34444",
+              "date": "2025-01-22 09:31:03",
+              "quantity": 3,
+              "priceUnit": 27.6
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.7071067811865476,
+            "min": 1,
+            "max": 3,
+            "cv": 0.3535533905932738,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.7242405154945355
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 81.62427469135802,
+            "lastOrderDaysAgo": 18.68894675925926,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 17727,
+        "productName": "[DAF001] DAF Elderflower with Pomegrenade juice 25cl",
+        "mismatchType": "false_positive",
+        "quantity": 6,
+        "reason": "Predicted 6u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 115,
+            "orders": [
+              {
+                "orderId": 89416,
+                "orderName": "S37539",
+                "date": "2025-06-19 10:38:10",
+                "quantity": 6,
+                "priceUnit": 15.12
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

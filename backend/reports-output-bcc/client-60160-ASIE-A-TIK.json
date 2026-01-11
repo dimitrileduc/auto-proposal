@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:07:05.522Z"
+  },
+  "client": {
+    "id": 60160,
+    "name": "ASIE A TIK"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-26 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 8,
+      "llm_usage": {
+        "calls": 8,
+        "promptTokens": 7313,
+        "completionTokens": 1522,
+        "totalTokens": 8835
+      }
+    },
+    "proposalFinal": {
+      "products_count": 8,
+      "total_amount": 1523.1159999999998,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18380,
+        "product_name": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 30.02,
+        "subtotal": 300.2,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. L'analyse de l'historique récent montre un cycle de commande moyen d'environ 33 jours. La dernière commande date du 01/10/2025, soit il y a 25 jours. Ce délai représente 75% du cycle moyen, ce qui dépasse le seuil de risque de 70%. Un risque de rupture est identifié dans l'horizon des 30 jours (Replenishment Threshold Days). ÉTAPE 2 : ESTIMATION QUANTITÉ. Les quantités récentes sont : 10, 8, 10, 6, 20. La valeur de 20u est un pic exceptionnel à écarter. La médiane des commandes récentes (6, 8, 10, 10) se situe à 9u. En suivant la règle de précaution B2B et la récurrence du chiffre 10 dans l'historique, la quantité de 10u est retenue pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 07:16:03",
+            "quantity": 20,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-04-22 06:30:05",
+            "quantity": 10,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 25,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-02-13 07:39:48",
+            "quantity": 20,
+            "price_unit": 99999.99
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 8,
+            "price_unit": 31.6
+          }
+        ]
+      },
+      {
+        "product_id": 18379,
+        "product_name": "[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 30.02,
+        "subtotal": 300.2,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION) : L'analyse de l'historique récent montre un cycle de commande moyen d'environ 42 jours (intervalle de 42 jours entre les deux dernières commandes). La dernière commande date du 01/10/2025, soit il y a 25 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous atteindrons le cycle moyen dans les 17 prochains jours. ÉTAPE 2 (QUANTITÉ) : Les quantités récentes sont 10, 10, 1, 6. La médiane de ces commandes est de 8u, mais la tendance récente sur les deux dernières commandes majeures est de 10u. En suivant la règle de précaution B2B et la stabilité des volumes récents les plus significatifs, la quantité de 10u est retenue pour couvrir la période à venir.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 07:16:03",
+            "quantity": 6,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-04-22 06:30:05",
+            "quantity": 5,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 6,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-02-13 07:39:48",
+            "quantity": 5,
+            "price_unit": 99999.99
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 6,
+            "price_unit": 31.6
+          }
+        ]
+      },
+      {
+        "product_id": 18377,
+        "product_name": "[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 30.02,
+        "subtotal": 300.2,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 01/10/2025, soit 25 jours avant la date actuelle. Le cycle moyen constaté entre les commandes précédentes est d'environ 35 jours (42j, 13j, 31j, 34j). Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture (25 jours écoulés ≥ 70% du cycle moyen). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : Estimation quantité. L'historique récent montre les quantités suivantes : 12, 8, 15, 10. La médiane de ces commandes est de 11. En suivant la règle de privilégier la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 10 unités (correspondant également à la commande de juin).",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 07:16:03",
+            "quantity": 10,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-04-22 06:30:05",
+            "quantity": 10,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 10,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-02-13 07:39:48",
+            "quantity": 8,
+            "price_unit": 99999.99
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 14,
+            "price_unit": 31.6
+          }
+        ]
+      },
+      {
+        "product_id": 18378,
+        "product_name": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 8,
+        "quantity_source": "llm",
+        "price_unit": 30.02,
+        "subtotal": 240.16,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande moyen d'environ 26 jours (intervalles de 34, 31 et 13 jours). La dernière commande remonte au 20 août 2025, soit 67 jours avant la date actuelle. Ce délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture critique ou un besoin imminent. En suivant le principe de précaution B2B, une commande est nécessaire. La quantité est fixée à 8 unités, ce qui correspond à la médiane et à la valeur la plus fréquente des commandes récentes (8, 6, 8, 8).",
+          "summary": "",
+          "baseline_quantity": 8,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 07:16:03",
+            "quantity": 8,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-04-22 06:30:05",
+            "quantity": 5,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 10,
+            "price_unit": 30.02
+          },
+          {
+            "date": "2025-02-13 07:39:48",
+            "quantity": 5,
+            "price_unit": 99999.99
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 6,
+            "price_unit": 31.6
+          }
+        ]
+      },
+      {
+        "product_id": 18336,
+        "product_name": "[ALO30] ORGANIC CRUNCH aloe vera drink original 500ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 8,
+        "quantity_source": "llm",
+        "price_unit": 14.706,
+        "subtotal": 117.648,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 07/07/2025, soit 111 jours. Le cycle précédent était de 34 jours. Le délai actuel dépasse largement le cycle moyen et l'horizon de 30 jours (Replenishment Threshold Days). En application du principe de précaution B2B face à un cycle irrégulier ou une absence de commande récente, un besoin est détecté pour éviter la rupture. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre des commandes de 10u et 8u. Conformément à la règle de privilégier la médiane et de choisir la valeur la plus basse en cas de doute pour ne pas surestimer le stock, la quantité retenue est de 8u.",
+          "summary": "",
+          "baseline_quantity": 8,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 07:16:03",
+            "quantity": 8,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-04-03 14:18:53",
+            "quantity": 10,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 10,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-02-13 07:39:48",
+            "quantity": 5,
+            "price_unit": 99999.99
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 1,
+            "price_unit": 15.48
+          }
+        ]
+      },
+      {
+        "product_id": 18334,
+        "product_name": "[ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 14.706,
+        "subtotal": 73.53,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 07/07/2025, soit plus de 110 jours. Le cycle précédent était de 34 jours. Le délai depuis la dernière commande dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain), un réapprovisionnement est nécessaire. ÉTAPE 2 : L'historique récent présente deux valeurs (10u et 5u). Conformément à la règle de privilégier la valeur la plus basse en cas de doute ou de rotation irrégulière pour éviter le surstock, la quantité retenue est de 5 unités.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-22 06:30:05",
+            "quantity": 5,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-04-03 14:18:53",
+            "quantity": 15,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 10,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-02-13 07:39:48",
+            "quantity": 5,
+            "price_unit": 99999.99
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 6,
+            "price_unit": 15.48
+          }
+        ]
+      },
+      {
+        "product_id": 18337,
+        "product_name": "[ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 14.706,
+        "subtotal": 73.53,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 07/07/2025, soit plus de 110 jours. Le cycle précédent était de 34 jours. Bien que la rotation soit lente, le délai écoulé dépasse largement le cycle habituel et l'horizon de 30 jours (Replenishment Threshold Days). En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), un réapprovisionnement est nécessaire. ÉTAPE 2 : L'historique récent présente deux valeurs (10u et 5u). Conformément à la règle de privilégier la médiane et, en cas de doute entre deux quantités, de choisir la plus basse pour éviter le surstockage sur une rotation faible, la quantité retenue est de 5 unités.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 07:16:03",
+            "quantity": 5,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-04-22 06:30:05",
+            "quantity": 5,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-04-03 14:18:53",
+            "quantity": 2,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 10,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 6,
+            "price_unit": 15.48
+          }
+        ]
+      },
+      {
+        "product_id": 18335,
+        "product_name": "[ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 8,
+        "quantity_source": "llm",
+        "price_unit": 14.706,
+        "subtotal": 117.648,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 03/06/2025, soit plus de 140 jours. Bien que la rotation soit très faible (une seule commande enregistrée), l'absence de données sur un cycle régulier impose l'application du principe de précaution B2B. Le risque de rupture est considéré comme présent par défaut de visibilité. ÉTAPE 2 : Estimation quantité. En l'absence d'historique multiple, la quantité de la dernière commande (8 unités) est retenue comme référence pour maintenir le stock sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 8,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-22 06:30:05",
+            "quantity": 15,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-04-03 14:18:53",
+            "quantity": 1,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-03-18 08:20:58",
+            "quantity": 10,
+            "price_unit": 14.706
+          },
+          {
+            "date": "2025-02-13 07:39:48",
+            "quantity": 5,
+            "price_unit": 99999.99
+          },
+          {
+            "date": "2025-01-27 09:36:20",
+            "quantity": 6,
+            "price_unit": 15.48
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 8,
+    "optional_products_count": 0,
+    "base_amount": 1523.1159999999998,
+    "optional_amount": 0,
+    "total_amount": 1523.1159999999998,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3152
+}

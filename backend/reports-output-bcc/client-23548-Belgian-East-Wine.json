@@ -1,0 +1,453 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:26:07.326Z"
+  },
+  "client": {
+    "id": 23548,
+    "name": "Belgian East Wine"
+  },
+  "config": {
+    "analysisEndDate": "2025-05-14 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 10,
+      "llm_usage": {
+        "calls": 10,
+        "promptTokens": 8874,
+        "completionTokens": 1534,
+        "totalTokens": 10408
+      }
+    },
+    "proposalFinal": {
+      "products_count": 10,
+      "total_amount": 311.93999999999994,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 261.78,
+        "minimum_required": 300,
+        "gap_filled": 50.15999999999997,
+        "products_adjusted": 4
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 13057,
+        "product_name": "[LV159] LV Tartinade aux Truffes  135g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.06,
+        "subtotal": 18.06,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Absence totale d'historique de commandes (récent et N-1). En application du principe de précaution B2B et de la règle de détection du besoin en cas de doute ou de cycle indéterminé, un besoin est identifié pour éviter une absence de stock sur cette référence. ÉTAPE 2 : Conformément à la règle sur les rotations très faibles ou l'absence d'historique, la quantité minimale de 1 unité est préconisée pour initialiser le stock sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-09 10:12:53",
+            "quantity": 2,
+            "price_unit": 18.06
+          },
+          {
+            "date": "2024-10-31 09:35:21",
+            "quantity": 1,
+            "price_unit": 18.06
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 2,
+            "price_unit": 18.06
+          }
+        ]
+      },
+      {
+        "product_id": 13058,
+        "product_name": "[LV160] LV Tartinade Aubergine 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 12.42,
+        "subtotal": 49.68,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Il n'y a aucune commande enregistrée pour l'année en cours (2024-2025), ce qui indique une absence de stock ou une rupture prolongée pour ce produit. Selon le principe de précaution B2B, en l'absence d'historique récent mais avec une activité constatée l'année précédente à des périodes variées, un besoin est détecté pour relancer la référence. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique N-1 montre des commandes de 3u et 4u. En appliquant la règle de la médiane et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage sur un produit à faible rotation, la quantité retenue est de 3 unités.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-31 09:35:21",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 4,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2023-12-18 07:48:15",
+            "quantity": 4,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2023-11-16 07:18:20",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2023-09-01 12:02:21",
+            "quantity": 3,
+            "price_unit": 12.42
+          }
+        ]
+      },
+      {
+        "product_id": 13061,
+        "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 12.72,
+        "subtotal": 25.44,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Bien qu'il n'y ait pas de commandes récentes en 2024/2025, l'historique N-1 montre une rotation régulière de type \"fond de rayon\" avec un cycle moyen d'environ 60 jours. La dernière commande enregistrée remontant à plus de 12 mois, le stock est théoriquement épuisé. En application du principe de précaution B2B (mieux vaut prévoir un besoin incertain qu'une rupture), une commande est nécessaire pour reconstituer le stock de présentation. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique N-1 est extrêmement stable avec des commandes constantes de 2 unités. La médiane et la valeur constante étant de 2, cette quantité est retenue pour maintenir le produit sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-09 10:12:53",
+            "quantity": 4,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-12-18 07:48:15",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-11-16 07:18:20",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-09-01 12:02:21",
+            "quantity": 2,
+            "price_unit": 12.72
+          }
+        ]
+      },
+      {
+        "product_id": 13066,
+        "product_name": "[LV134] LV BIO Tartinade Olives Vertes 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.74,
+        "subtotal": 13.74,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "Absence totale d'historique de commandes (récent et N-1). En application du principe de précaution B2B et de la règle de détection du besoin en cas de doute ou d'absence de cycle identifiable, une commande est préconisée pour constituer un stock initial ou éviter une rupture indéterminée. La quantité est fixée à l'unité minimale (1) conformément à la règle de rotation faible/incertaine afin de ne pas surestimer le besoin sans données historiques.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-09 10:12:53",
+            "quantity": 2,
+            "price_unit": 13.74
+          },
+          {
+            "date": "2024-10-31 09:35:21",
+            "quantity": 1,
+            "price_unit": 13.74
+          }
+        ]
+      },
+      {
+        "product_id": 13064,
+        "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 12.3,
+        "subtotal": 61.5,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Il n'y a aucune commande enregistrée pour l'année en cours (Recent Orders vide), ce qui indique une absence de stock ou une rupture prolongée depuis la dernière commande de décembre 2023. Selon le principe de précaution B2B et la règle du doute sur le cycle, un réapprovisionnement est nécessaire pour relancer la rotation du produit. ÉTAPE 2 : ESTIMATION QUANTITÉ. En l'absence d'historique récent, l'analyse se base sur les données N-1. Les commandes historiques montrent des volumes de 3u, 4u et 4u. La médiane de ces valeurs est de 4u. Cette quantité est retenue pour reconstituer un stock minimal sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-31 09:35:21",
+            "quantity": 3,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 4,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2023-12-18 07:48:15",
+            "quantity": 3,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2023-11-16 07:18:20",
+            "quantity": 4,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2023-09-01 12:02:21",
+            "quantity": 4,
+            "price_unit": 12.3
+          }
+        ]
+      },
+      {
+        "product_id": 13068,
+        "product_name": "[LV136] LV Tartinade Betterave 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 12.72,
+        "subtotal": 38.160000000000004,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Bien qu'il n'y ait pas de commandes récentes en 2024/2025, l'historique N-1 montre une rotation régulière de 2 unités tous les 2 à 3 mois. La dernière commande enregistrée remonte à plus de 17 mois. En application du principe de précaution B2B et face à l'absence de données récentes (doute sur le cycle), il est nécessaire de prévoir un réapprovisionnement pour éviter une rupture de stock prolongée si la demande saisonnière ou ponctuelle se manifeste. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique complet est d'une stabilité parfaite avec des commandes systématiques de 2 unités. La médiane et la valeur constante étant de 2, cette quantité est retenue pour maintenir le stock sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-31 09:35:21",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-12-18 07:48:15",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-11-16 07:18:20",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-09-01 12:02:21",
+            "quantity": 2,
+            "price_unit": 12.72
+          }
+        ]
+      },
+      {
+        "product_id": 14450,
+        "product_name": "[LV330] LV BIO Tartinade Toscana 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.1,
+        "subtotal": 14.1,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Le produit ne présente aucun historique de commande récent ou sur l'année précédente (N-1). En l'absence totale de données permettant de définir un cycle de rotation, la règle de précaution B2B s'applique : en cas de doute ou de cycle indéterminé, il faut prévoir une commande pour éviter une rupture potentielle dès le lancement ou la mise en stock. ÉTAPE 2 : ESTIMATION QUANTITÉ. Pour un produit à rotation inconnue ou très faible, la règle stipule de maintenir une quantité minimale (1-2 unités) sans augmenter sans raison. La quantité de 1 unité est choisie comme stock de sécurité initial minimal.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-09 10:12:53",
+            "quantity": 2,
+            "price_unit": 14.1
+          },
+          {
+            "date": "2024-10-31 09:35:21",
+            "quantity": 3,
+            "price_unit": 14.1
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 1,
+            "price_unit": 14.1
+          }
+        ]
+      },
+      {
+        "product_id": 14452,
+        "product_name": "[LV332] LV Tartinade Olive Caper Tomato 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.1,
+        "subtotal": 14.1,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Absence totale d'historique de commandes (récentes et N-1). En application du principe de précaution B2B, tout doute sur le cycle ou l'absence de données doit conduire à prévoir une commande pour éviter une rupture potentielle ou un défaut de référencement. ÉTAPE 2 : En l'absence de médiane historique, la quantité minimale de 1 unité est préconisée pour initier le stock sans risque de surstockage, conformément à la règle de choisir la valeur la plus basse en cas d'incertitude.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-09 10:12:53",
+            "quantity": 2,
+            "price_unit": 14.1
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 1,
+            "price_unit": 14.1
+          }
+        ]
+      },
+      {
+        "product_id": 13067,
+        "product_name": "[LV135] LV Tartinade Basilico 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 13.14,
+        "subtotal": 26.28,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une rotation régulière de 2 unités environ tous les deux mois. La dernière commande enregistrée datant de décembre, le cycle de réapprovisionnement est largement dépassé, créant un risque de rupture certain. En application du principe de précaution B2B et en se basant sur la médiane constante de l'année précédente (2u), une commande de 2 unités est nécessaire pour reconstituer le stock.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-09 10:12:53",
+            "quantity": 2,
+            "price_unit": 13.14
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 3,
+            "price_unit": 13.14
+          },
+          {
+            "date": "2023-12-18 07:48:15",
+            "quantity": 2,
+            "price_unit": 13.14
+          },
+          {
+            "date": "2023-11-16 07:18:20",
+            "quantity": 2,
+            "price_unit": 13.14
+          },
+          {
+            "date": "2023-09-01 12:02:21",
+            "quantity": 2,
+            "price_unit": 13.14
+          }
+        ]
+      },
+      {
+        "product_id": 13060,
+        "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 12.72,
+        "subtotal": 50.88,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "Aucun historique de commande récent n'est disponible pour l'année 2024 ou 2025. En l'absence de données récentes, l'analyse se base sur l'historique N-1. Bien que les dernières commandes enregistrées datent de fin 2023, le principe de précaution B2B impose de prévoir un réapprovisionnement pour éviter une rupture prolongée sur un produit dont le cycle est indéterminé. La quantité retenue correspond à la médiane des commandes de l'année précédente (3u), afin de maintenir un stock minimal sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-31 09:35:21",
+            "quantity": 1,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-05-21 13:00:46",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-12-18 07:48:15",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-11-16 07:18:20",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-09-01 12:02:21",
+            "quantity": 3,
+            "price_unit": 12.72
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 10,
+    "optional_products_count": 0,
+    "base_amount": 311.93999999999994,
+    "optional_amount": 0,
+    "total_amount": 311.93999999999994,
+    "moq_adjusted": true,
+    "moq_gap": 50.15999999999997
+  },
+  "execution_time_ms": 3419
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 52678,
+  "clientName": "VivArdent SRL",
+  "orderName": "S40350",
+  "orderDate": "2025-11-13 13:31:32",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 2.5,
+    "wmape": 62.5,
+    "mape": 62.5,
+    "bias": -62.5
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 19201,
+    "completionTokens": 3595,
+    "totalTokens": 22796
+  }
+}

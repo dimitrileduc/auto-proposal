@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:17:21.958Z"
+  },
+  "client": {
+    "id": 71197,
+    "name": "Le Cortil asbl, Amandine Duhaut"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-13 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 7,
+      "llm_usage": {
+        "calls": 7,
+        "promptTokens": 6185,
+        "completionTokens": 1054,
+        "totalTokens": 7239
+      }
+    },
+    "proposalFinal": {
+      "products_count": 7,
+      "total_amount": 342.08,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 17728,
+        "product_name": "[DAF002] DAF Lime and Ginger with Jasmine flower 25cl",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 15.12,
+        "subtotal": 45.36,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande date du 24 septembre, soit il y a 19 jours. Avec un seuil de réapprovisionnement de 30 jours et un historique très récent unique, il existe une incertitude sur le cycle de rotation. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : L'historique récent présente une commande unique de 3 unités. En l'absence d'autres données ou de saisonnalité N-1, la quantité est maintenue à 3 unités, correspondant à la dernière observation stable.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 07:27:55",
+            "quantity": 3,
+            "price_unit": 15.12
+          },
+          {
+            "date": "2025-05-08 06:34:51",
+            "quantity": 3,
+            "price_unit": 15.12
+          },
+          {
+            "date": "2025-04-15 07:20:47",
+            "quantity": 3,
+            "price_unit": 15.12
+          }
+        ]
+      },
+      {
+        "product_id": 17730,
+        "product_name": "[DAF004] DAF Peach and Lemon with Honeybush flower 25cl",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 15.12,
+        "subtotal": 45.36,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle de 97 jours entre les deux dernières commandes. La dernière commande datant du 24 septembre (il y a 19 jours), nous entrons dans la zone de risque au cours des 30 prochains jours (seuil de réapprovisionnement), car le délai cumulé atteindra 49 jours. Bien que le cycle soit irrégulier, le principe de précaution B2B impose de prévoir un besoin pour éviter une rupture. Pour la quantité, la valeur la plus basse et la plus récente (3u) est privilégiée par rapport au pic de 10u, conformément à la règle de ne pas surestimer le stock de sécurité sur des rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 07:27:55",
+            "quantity": 3,
+            "price_unit": 15.12
+          },
+          {
+            "date": "2025-06-19 10:38:10",
+            "quantity": 10,
+            "price_unit": 15.12
+          },
+          {
+            "date": "2025-05-08 06:34:51",
+            "quantity": 3,
+            "price_unit": 15.12
+          },
+          {
+            "date": "2025-04-15 07:20:47",
+            "quantity": 3,
+            "price_unit": 15.12
+          }
+        ]
+      },
+      {
+        "product_id": 18344,
+        "product_name": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "product_uom": "TU24",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 25.2,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 24 septembre, soit il y a 19 jours. Bien que l'historique soit limité, l'intervalle entre les deux commandes précédentes était d'environ 97 jours. Cependant, avec un seuil de réapprovisionnement de 30 jours et une rotation irrégulière, le principe de précaution B2B s'applique pour éviter une rupture potentielle sur un produit à faible rotation. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre des commandes de 1u et 2u. Conformément à la règle de privilégier la valeur la plus basse en cas de doute sur une faible rotation (1-2u), la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 07:27:55",
+            "quantity": 2,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-06-19 10:38:10",
+            "quantity": 1,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-04-15 07:20:47",
+            "quantity": 2,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-01-22 09:31:03",
+            "quantity": 3,
+            "price_unit": 27.6
+          }
+        ]
+      },
+      {
+        "product_id": 18346,
+        "product_name": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
+        "product_uom": "TU24",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 25.2,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Le cycle entre les deux dernières commandes est de 97 jours. Nous sommes actuellement à 19 jours depuis la dernière commande (24/09). Bien que le délai soit court par rapport au cycle précédent, la rotation est très faible et irrégulière. En application du principe de précaution B2B (si doute sur le cycle → prévoir), un risque de rupture est considéré pour l'horizon des 30 prochains jours. ÉTAPE 2 : L'historique récent montre des quantités de 1u et 2u. Conformément à la règle sur les rotations très faibles et le choix de la valeur la plus basse en cas de doute, la quantité retenue est la médiane basse, soit 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 07:27:55",
+            "quantity": 2,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-06-19 10:38:10",
+            "quantity": 1,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-04-15 07:20:47",
+            "quantity": 2,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-01-22 09:31:03",
+            "quantity": 3,
+            "price_unit": 27.6
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 18266,
+        "product_name": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 14.88,
+        "subtotal": 44.64,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 24 septembre, soit il y a 19 jours. Avec un seuil de réapprovisionnement de 30 jours et un historique très limité (une seule commande), le cycle de rotation est incertain. En application du principe de précaution B2B (incertitude sur le cycle = risque), un besoin est détecté pour éviter toute rupture. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 3 unités. Conformément à la règle de maintien des quantités pour les rotations régulières ou faibles, la médiane de 3 unités est retenue.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 07:27:55",
+            "quantity": 3,
+            "price_unit": 14.88
+          }
+        ]
+      },
+      {
+        "product_id": 18298,
+        "product_name": "[MANA02] MANA natural energy drink - tropical passion 250ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 32.8,
+        "subtotal": 65.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date de 19 jours (24/09). Avec un seuil de réapprovisionnement de 30 jours et un historique très limité (une seule commande récente), il existe une incertitude sur le cycle de rotation. En application du principe de précaution B2B (Étape 1), un besoin est détecté pour éviter toute rupture. Pour la quantité (Étape 2), on se base sur la seule valeur connue de l'historique récent, soit 2 unités, afin de maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 07:27:55",
+            "quantity": 2,
+            "price_unit": 32.8
+          }
+        ]
+      },
+      {
+        "product_id": 17727,
+        "product_name": "[DAF001] DAF Elderflower with Pomegrenade juice 25cl",
+        "product_uom": "TU12",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 15.12,
+        "subtotal": 90.72,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à 116 jours (19 juin 2025). Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de rotation standard en B2B. En application du principe de précaution (Étape 1), un risque de rupture est identifié car le stock initial est probablement épuisé. Pour la quantité (Étape 2), on se base sur l'unique point de donnée disponible (6 unités) pour maintenir le niveau de stock habituel sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-19 10:38:10",
+            "quantity": 6,
+            "price_unit": 15.12
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 4,
+    "optional_products_count": 3,
+    "base_amount": 141.12,
+    "optional_amount": 200.95999999999998,
+    "total_amount": 342.08,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2852
+}

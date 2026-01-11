@@ -1,0 +1,622 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:14:30.581Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-06 00:00:00"
+    }
+  },
+  "client": {
+    "id": 34575,
+    "name": "Au Comptoir local",
+    "order": {
+      "name": "S40215",
+      "date": "2025-11-07 14:06:03"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 0,
+        "falsePositives": 11,
+        "falseNegatives": 7,
+        "total": 18
+      },
+      "productMetrics": {
+        "precision": 0,
+        "recall": 0,
+        "f1Score": 0,
+        "totalPredicted": 11,
+        "totalReal": 7
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 3,
+          "falseNegatives": 7,
+          "total": 10
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 3,
+          "totalReal": 7
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 8,
+          "falseNegatives": 0,
+          "total": 8
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 8,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 9698,
+    "completionTokens": 1731,
+    "totalTokens": 11429
+  },
+  "products": {
+    "truePositives": [],
+    "falsePositives": [
+      {
+        "productId": 18371,
+        "productName": "[RIT01] RITCHIE Orange - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 40,
+            "orders": [
+              {
+                "orderId": 91296,
+                "orderName": "S39419",
+                "date": "2025-09-26 10:58:22",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 1,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 86859,
+                "orderName": "S34982",
+                "date": "2025-02-26 08:24:12",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 85795,
+                "orderName": "S33918",
+                "date": "2024-12-17 09:15:04",
+                "quantity": 1,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18372,
+        "productName": "[RIT04] RITCHIE Pamplemousse - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 40,
+            "orders": [
+              {
+                "orderId": 91296,
+                "orderName": "S39419",
+                "date": "2025-09-26 10:58:22",
+                "quantity": 2,
+                "priceUnit": 32.16
+              },
+              {
+                "orderId": 86859,
+                "orderName": "S34982",
+                "date": "2025-02-26 08:24:12",
+                "quantity": 2,
+                "priceUnit": 32.16
+              },
+              {
+                "orderId": 85795,
+                "orderName": "S33918",
+                "date": "2024-12-17 09:15:04",
+                "quantity": 1,
+                "priceUnit": 32.16
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18367,
+        "productName": "[RIT05] RITCHIE Cola - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 40,
+            "orders": [
+              {
+                "orderId": 91296,
+                "orderName": "S39419",
+                "date": "2025-09-26 10:58:22",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 86859,
+                "orderName": "S34982",
+                "date": "2025-02-26 08:24:12",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 85795,
+                "orderName": "S33918",
+                "date": "2024-12-17 09:15:04",
+                "quantity": 1,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18369,
+        "productName": "[RIT06] RITCHIE Cola ZERO - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 40,
+            "orders": [
+              {
+                "orderId": 91296,
+                "orderName": "S39419",
+                "date": "2025-09-26 10:58:22",
+                "quantity": 1,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 85795,
+                "orderName": "S33918",
+                "date": "2024-12-17 09:15:04",
+                "quantity": 1,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 19370,
+        "productName": "[RIT11] RITCHIE Orange Sanguine - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 40,
+            "orders": [
+              {
+                "orderId": 91296,
+                "orderName": "S39419",
+                "date": "2025-09-26 10:58:22",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 2,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18364,
+        "productName": "[RIT02] RITCHIE Citron - Framboise - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 40,
+            "orders": [
+              {
+                "orderId": 91296,
+                "orderName": "S39419",
+                "date": "2025-09-26 10:58:22",
+                "quantity": 1,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 86859,
+                "orderName": "S34982",
+                "date": "2025-02-26 08:24:12",
+                "quantity": 2,
+                "priceUnit": 30.96
+              },
+              {
+                "orderId": 85795,
+                "orderName": "S33918",
+                "date": "2024-12-17 09:15:04",
+                "quantity": 1,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13646,
+        "productName": "[LB003] LB Festive (4,5%) 33CL",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 40,
+            "orders": [
+              {
+                "orderId": 91296,
+                "orderName": "S39419",
+                "date": "2025-09-26 10:58:22",
+                "quantity": 1,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 85795,
+                "orderName": "S33918",
+                "date": "2024-12-17 09:15:04",
+                "quantity": 2,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 81208,
+                "orderName": "S29331",
+                "date": "2024-03-15 08:54:39",
+                "quantity": 2,
+                "priceUnit": 40.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18365,
+        "productName": "[RIT03] RITCHIE Citron-Gingembre - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 152,
+            "orders": [
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 2,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18344,
+        "productName": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 152,
+            "orders": [
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 1,
+                "priceUnit": 25.2
+              },
+              {
+                "orderId": 86859,
+                "orderName": "S34982",
+                "date": "2025-02-26 08:24:12",
+                "quantity": 3,
+                "priceUnit": 25.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18269,
+        "productName": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 152,
+            "orders": [
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 1,
+                "priceUnit": 27.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18272,
+        "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 152,
+            "orders": [
+              {
+                "orderId": 89004,
+                "orderName": "S37127",
+                "date": "2025-06-06 13:02:13",
+                "quantity": 1,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 19976,
+        "productName": "[DIS0011] Display Foodprint Karton LV",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 14450,
+        "productName": "[LV330] LV BIO Tartinade Toscana 190g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 13060,
+        "productName": "[LV161] LV Tartinade Mangue curry 190g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 17339,
+        "productName": "[LV348] LV Tartinade Dattes-Chili 180g BE bio",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 14999,
+        "productName": "[LV342] LV Organic Broccoli Spread 190 g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 13068,
+        "productName": "[LV136] LV Tartinade Betterave 190g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 13062,
+        "productName": "[LV131] LV Tartinade Potiron 190g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

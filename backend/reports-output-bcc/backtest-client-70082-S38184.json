@@ -1,0 +1,30 @@
+{
+  "clientId": 70082,
+  "clientName": "SPRL GOOD & FOOD, Good & Food",
+  "orderName": "S38184",
+  "orderDate": "2025-07-22 11:15:28",
+  "cutoffDate": "2025-07-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 286,
+    "wmape": 81.71428571428572,
+    "mape": 81.71428571428572,
+    "bias": -81.71428571428572
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 7091,
+    "completionTokens": 1299,
+    "totalTokens": 8390
+  }
+}

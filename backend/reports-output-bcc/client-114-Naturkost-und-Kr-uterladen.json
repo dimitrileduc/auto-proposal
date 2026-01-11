@@ -1,0 +1,581 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:12:24.743Z"
+  },
+  "client": {
+    "id": 114,
+    "name": "Naturkost-und Kräuterladen"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-01 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 12,
+      "llm_usage": {
+        "calls": 12,
+        "promptTokens": 11353,
+        "completionTokens": 2038,
+        "totalTokens": 13391
+      }
+    },
+    "proposalFinal": {
+      "products_count": 12,
+      "total_amount": 391.95000000000005,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 569,
+        "product_name": "[MF0029] MF Tarti Datte chili 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 28.92,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande long et irrégulier (environ 4 mois entre les deux dernières commandes). La dernière commande date du 11 septembre, soit 20 jours avant la date actuelle. Bien que le cycle moyen soit supérieur au seuil de 30 jours, l'historique N-1 montre une commande fin août suivie d'une période d'activité en fin d'année. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est préconisée. La quantité retenue est de 2 unités, correspondant à la médiane constante des commandes récentes et historiques.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-07 07:31:55",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-01-22 13:41:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 573,
+        "product_name": "[MF0033] MF Tarti Poivron chilli 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 28.92,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 11 septembre 2025, soit 20 jours avant la date actuelle. Bien que le cycle de commande soit irrégulier (intervalle récent de 4 mois), le principe de précaution B2B s'applique car nous entrons dans la fenêtre de risque des 30 jours (Replenishment Threshold Days). Un besoin est identifié pour éviter une rupture potentielle sur un produit à rotation lente mais constante. ÉTAPE 2 : Estimation de la quantité. L'historique récent et N-1 montre une stabilité forte autour de 2 unités (médiane des commandes). Conformément aux règles, nous maintenons cette quantité habituelle de 2 unités sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-07 07:31:55",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-01-22 13:41:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2023-11-02 07:22:09",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 570,
+        "product_name": "[MF0030] MF Tarti Mangue Curry 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 28.92,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 11 septembre 2025, soit il y a 20 jours. Bien que le cycle soit irrégulier en 2025, l'historique N-1 montre une commande systématique entre fin août et octobre. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est considéré comme présent par principe de précaution B2B face à l'incertitude du cycle actuel. ÉTAPE 2 : Estimation de la quantité. L'historique récent et N-1 montre une stabilité parfaite à 2 unités par commande (médiane = 2). On maintient donc cette quantité habituelle sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-01-22 13:41:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2023-12-05 07:39:04",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2023-11-02 07:22:09",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 575,
+        "product_name": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 28.92,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre une rotation à faible intensité mais régulière, avec une quantité constante de 2 unités par commande. La dernière commande remonte au 11 septembre 2025 (soit 20 jours). Bien que le cycle soit espacé, l'historique N-1 montre une commande fin août suivie d'une période d'activité en fin d'année. Compte tenu du seuil de réapprovisionnement de 30 jours et du principe de précaution B2B en cas de cycle irrégulier, un risque de rupture est identifié pour le mois d'octobre. La quantité retenue est de 2 unités, correspondant à la médiane stricte et constante de l'historique récent et passé.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-01-22 13:41:52",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2023-12-05 07:39:04",
+            "quantity": 2,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 572,
+        "product_name": "[MF0032] MF Tarti Pois chiches 250 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 14.46,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 11 septembre 2025 (il y a 20 jours). Bien que l'historique soit à faible rotation, le délai de réapprovisionnement de 30 jours nous place dans une fenêtre de risque de rupture si l'on suit le rythme de l'année précédente (commande fin août/septembre). En B2B, le principe de précaution s'applique pour maintenir la présence en rayon. ÉTAPE 2 : Estimation de la quantité. L'historique récent et N-1 montre une constance absolue à 1 unité par commande. La médiane est de 1. Conformément aux règles sur les rotations très faibles (1-2u), on maintient la quantité de 1 unité sans augmenter.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-11 07:05:48",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-02-03 08:08:06",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2023-12-05 07:39:04",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 568,
+        "product_name": "[MF0028] ​MF Tarti Carotte Gingembre 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 28.92,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 11 septembre, soit 20 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture, d'autant plus que l'historique montre une rotation irrégulière et espacée (cycle difficile à déterminer). En application du principe de précaution B2B (Étape 1), un besoin est détecté. Pour la quantité (Étape 2), on se base sur la commande la plus récente (2u) tout en restant prudent face aux faibles volumes historiques (1u en N-1). La médiane récente étant de 2u, cette quantité est retenue pour couvrir la période à venir.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-03 08:08:06",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-11-07 07:31:55",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2023-12-05 07:39:04",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 18323,
+        "product_name": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 52.650000000000006,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 11 septembre, soit 20 jours avant la date actuelle. Bien que l'historique soit irrégulier, le délai de réapprovisionnement de 30 jours place l'horizon de rupture potentielle à fin octobre. En application du principe de précaution B2B (cycle incertain = prévoir), un besoin est identifié. ÉTAPE 2 : Estimation quantité. L'historique récent montre des commandes de 1u et une commande plus récente de 3u. La médiane des commandes distinctes ou la valeur la plus représentative pour éviter la rupture sans surstockage est de 3u (dernière commande observée). On maintient ce volume pour couvrir la période de 30 jours.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-11 07:05:48",
+            "quantity": 3,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-05-16 09:10:10",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-05-16 09:10:10",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-03-27 14:46:07",
+            "quantity": 1,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 16978,
+        "product_name": "[MF0054] MF Noix de cajou - Fleur de sel 133g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 20.62,
+        "subtotal": 41.24,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 11 septembre 2025, soit 20 jours avant la date actuelle. Bien que le cycle historique soit irrégulier, le délai de 20 jours combiné au seuil de réapprovisionnement de 30 jours crée un risque de rupture imminent selon le principe de précaution B2B (incertitude sur le cycle = prévoir). ÉTAPE 2 : Estimation quantité. L'historique récent montre une stabilité à 2 unités (mai et septembre 2025). La médiane des commandes récentes est de 2. En respectant la règle de maintien des quantités pour les rotations faibles, la quantité retenue est de 2 unités.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-07 07:31:55",
+            "quantity": 3,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 1,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 3,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-01-22 13:41:52",
+            "quantity": 1,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2023-12-05 07:39:04",
+            "quantity": 1,
+            "price_unit": 20.62
+          }
+        ]
+      },
+      {
+        "product_id": 16979,
+        "product_name": "[MF0055] MF Noix de cajou - Curry 133g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 20.62,
+        "subtotal": 41.24,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 11 septembre 2025, soit 20 jours avant la date actuelle. Bien que le cycle de rotation soit lent et irrégulier, le délai de 30 jours (Replenishment Threshold Days) impose une vigilance. En application du principe de précaution B2B (incertitude sur le cycle = prévoir commande), un risque de rupture est identifié pour le mois à venir. ÉTAPE 2 : Estimation quantité. L'historique récent montre une stabilité à 2 unités (mai et septembre 2025). La médiane des commandes récentes est de 2. Conformément à la règle sur les rotations faibles, on maintient ce volume sans augmentation.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 1,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 3,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-01-22 13:41:52",
+            "quantity": 1,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2023-12-05 07:39:04",
+            "quantity": 1,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2023-11-02 07:22:09",
+            "quantity": 2,
+            "price_unit": 20.62
+          }
+        ]
+      },
+      {
+        "product_id": 16980,
+        "product_name": "[MF0056] MF Noix de cajou - Herbes de Provence 133g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 20.62,
+        "subtotal": 41.24,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 11 septembre 2025 (il y a 20 jours). Bien que le cycle historique soit long et irrégulier, l'historique N-1 montre une commande fin août suivie d'une période d'activité. Avec un seuil de réapprovisionnement de 30 jours et une incertitude sur la rotation actuelle, le principe de précaution B2B s'applique pour éviter une rupture. ÉTAPE 2 : Estimation de la quantité. L'historique récent et la majorité des commandes passées (médiane) indiquent un volume constant de 2 unités. On maintient cette quantité stable sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 2,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 3,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 2,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-01-22 13:41:52",
+            "quantity": 1,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2023-12-05 07:39:04",
+            "quantity": 1,
+            "price_unit": 20.62
+          }
+        ]
+      },
+      {
+        "product_id": 554,
+        "product_name": "[MF0014] MF Olives noires 500g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.6,
+        "subtotal": 27.6,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande date du 11 septembre 2025, soit 20 jours avant la date actuelle. L'historique montre un cycle de commande irrégulier mais espacé (environ tous les 4 à 6 mois). Cependant, avec un seuil de réapprovisionnement de 30 jours et une dernière commande remontant à près de 3 semaines, il existe un doute sur le cycle de rotation actuel. En application du principe de précaution B2B (mieux vaut prévenir une rupture incertaine), un besoin est détecté. ÉTAPE 2 : L'historique complet (récent et N-1) est extrêmement stable avec des commandes systématiques de 1 unité. La médiane et la constante étant de 1, la quantité préconisée est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-11 07:05:48",
+            "quantity": 1,
+            "price_unit": 27.6
+          },
+          {
+            "date": "2025-02-03 08:08:06",
+            "quantity": 1,
+            "price_unit": 27.6
+          },
+          {
+            "date": "2024-08-29 14:00:58",
+            "quantity": 1,
+            "price_unit": 27.6
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 1,
+            "price_unit": 27.6
+          },
+          {
+            "date": "2023-11-02 07:22:09",
+            "quantity": 1,
+            "price_unit": 23.16
+          }
+        ]
+      },
+      {
+        "product_id": 571,
+        "product_name": "[MF0031] MF Tarti Olives verte 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 28.92,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 16 mai 2025, soit plus de 130 jours. Bien que la rotation soit très faible, l'absence de commande sur une période aussi longue par rapport à l'historique N-1 (commandes en mars et mai) indique un besoin de réapprovisionnement pour éviter une rupture de stock prolongée, surtout dans un contexte B2B où le cycle est irrégulier. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande de 2u et l'historique N-1 montre des unités simples (1u). En suivant la règle de la médiane et du maintien des volumes pour les faibles rotations, une quantité de 2u est préconisée pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-27 14:46:07",
+            "quantity": 2,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-02-03 08:08:06",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-11-07 07:31:55",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-05-23 13:52:52",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2024-03-22 09:47:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 12,
+    "optional_products_count": 0,
+    "base_amount": 391.95000000000005,
+    "optional_amount": 0,
+    "total_amount": 391.95000000000005,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 5396
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:29:18.711Z"
+  },
+  "client": {
+    "id": 60156,
+    "name": "ARSENE - TRAVIE"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-15 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 3,
+      "llm_usage": {
+        "calls": 3,
+        "promptTokens": 2628,
+        "completionTokens": 468,
+        "totalTokens": 3096
+      }
+    },
+    "proposalFinal": {
+      "products_count": 3,
+      "total_amount": 1008.8999999999999,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 18355,
+        "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 17,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 300.9,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 18 juin 2025, soit environ 119 jours. Bien qu'il n'y ait qu'une seule commande récente, le délai écoulé dépasse largement les cycles de réapprovisionnement standards en B2B pour ce type de produit. En application du principe de précaution et face à l'incertitude du cycle, un besoin est détecté pour éviter une rupture prolongée. ÉTAPE 2 : Estimation quantité. En l'absence d'historique multiple, la quantité de la dernière commande (17u) est utilisée comme référence médiane pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 17,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-18 13:18:08",
+            "quantity": 17,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18351,
+        "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 283.2,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 18 juin 2025, soit environ 119 jours. Bien qu'il n'y ait qu'une seule commande récente, le délai écoulé dépasse largement le cycle de rotation standard pour un produit de type chips bio. En application du principe de précaution B2B (doute sur le cycle = prévoir commande), un risque de rupture est identifié pour les 30 prochains jours. ÉTAPE 2 : Estimation quantité. En l'absence d'historique multiple, la quantité de la dernière commande (16u) est utilisée comme référence médiane pour maintenir le stock initialement testé.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-18 13:18:08",
+            "quantity": 16,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 24,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 424.79999999999995,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 18 juin 2025, soit 119 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente, le délai écoulé dépasse largement tout cycle de rotation standard pour un produit de type chips. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), un réapprovisionnement est nécessaire. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique multiple, la quantité de la dernière commande (24u) est utilisée comme référence pour maintenir le stock initialement mis en place.",
+          "summary": "",
+          "baseline_quantity": 24,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-18 13:18:08",
+            "quantity": 24,
+            "price_unit": 17.7
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 3,
+    "base_amount": 0,
+    "optional_amount": 1008.8999999999999,
+    "total_amount": 1008.8999999999999,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3937
+}

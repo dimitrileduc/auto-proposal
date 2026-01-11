@@ -1,0 +1,30 @@
+{
+  "clientId": 52792,
+  "clientName": "SA RG FOOD",
+  "orderName": "S37361",
+  "orderDate": "2025-06-11 08:21:19",
+  "cutoffDate": "2025-06-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.5714285714285714,
+    "recall": 1,
+    "f1Score": 0.7272727272727273,
+    "mae": 0.75,
+    "wmape": 42.857142857142854,
+    "mape": 50,
+    "bias": -14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 18,
+    "promptTokens": 15809,
+    "completionTokens": 2675,
+    "totalTokens": 18484
+  }
+}

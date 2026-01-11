@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:26:52.041Z"
+  },
+  "client": {
+    "id": 58726,
+    "name": "SRL AXYLIUM"
+  },
+  "config": {
+    "analysisEndDate": "2025-01-01 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 866,
+        "completionTokens": 134,
+        "totalTokens": 1000
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 1954.3500000000001,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 17818,
+        "product_name": "[LC001] LC Coffret Exploration ",
+        "product_uom": "TU1",
+        "quantity_recommended": 43,
+        "quantity_source": "llm",
+        "price_unit": 45.45,
+        "subtotal": 1954.3500000000001,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 16 décembre 2024, soit 16 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture si le cycle de rotation est mensuel. En l'absence d'historique plus large pour établir une moyenne précise, le principe de précaution B2B s'applique : un besoin est détecté. La quantité retenue correspond à la dernière commande connue (43u), celle-ci faisant office de référence unique pour maintenir le niveau de stock actuel.",
+          "summary": "",
+          "baseline_quantity": 43,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-16 08:42:36",
+            "quantity": 43,
+            "price_unit": 45.45
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 1,
+    "base_amount": 0,
+    "optional_amount": 1954.3500000000001,
+    "total_amount": 1954.3500000000001,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2819
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38881,
+  "clientName": "DRINK SERVICES",
+  "orderName": "S40260",
+  "orderDate": "2025-11-14 10:25:27",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 2.3333333333333335,
+    "wmape": 46.666666666666664,
+    "mape": 47.22222222222222,
+    "bias": -46.666666666666664
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8822,
+    "completionTokens": 1620,
+    "totalTokens": 10442
+  }
+}

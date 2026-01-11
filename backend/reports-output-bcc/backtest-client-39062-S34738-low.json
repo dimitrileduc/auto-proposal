@@ -1,0 +1,30 @@
+{
+  "clientId": 39062,
+  "clientName": "SONALIM / ITM SOIGNIES",
+  "orderName": "S34738",
+  "orderDate": "2025-02-07 08:06:04",
+  "cutoffDate": "2025-02-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 12,
+    "fn": 0,
+    "precision": 0.3684210526315789,
+    "recall": 1,
+    "f1Score": 0.5384615384615384,
+    "mae": 0.14285714285714285,
+    "wmape": 11.11111111111111,
+    "mape": 7.142857142857143,
+    "bias": -11.11111111111111
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 26318,
+    "completionTokens": 4383,
+    "totalTokens": 30701
+  }
+}

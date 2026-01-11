@@ -1,0 +1,30 @@
+{
+  "clientId": 38876,
+  "clientName": "DLL PROXY TROIS-PONTS",
+  "orderName": "S39134",
+  "orderDate": "2025-09-11 11:05:17",
+  "cutoffDate": "2025-09-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 21,
+    "fp": 24,
+    "fn": 0,
+    "precision": 0.4666666666666667,
+    "recall": 1,
+    "f1Score": 0.6363636363636364,
+    "mae": 1.5238095238095237,
+    "wmape": 45.07042253521127,
+    "mape": 55.396825396825406,
+    "bias": -5.633802816901409
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 12
+  },
+  "llmUsage": {
+    "calls": 48,
+    "promptTokens": 43855,
+    "completionTokens": 7836,
+    "totalTokens": 51691
+  }
+}

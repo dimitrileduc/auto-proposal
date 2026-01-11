@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:19:47.956Z"
+  },
+  "client": {
+    "id": 25846,
+    "name": "BOUCHERIE THERY"
+  },
+  "config": {
+    "analysisEndDate": "2025-09-09 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 908,
+        "completionTokens": 206,
+        "totalTokens": 1114
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 1082.8799999999999,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9029,
+        "product_name": "[PF0516] YVALLI PROVENCALE 2,5 KG BOC",
+        "product_uom": "TU6",
+        "quantity_recommended": 24,
+        "quantity_source": "llm",
+        "price_unit": 45.12,
+        "subtotal": 1082.8799999999999,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 11 juin 2025, soit 90 jours avant la date actuelle. Bien que l'historique soit irrégulier, le délai écoulé dépasse largement les cycles observés précédemment (environ 75 jours entre les commandes de 2024). En application du principe de précaution B2B et face à l'incertitude du cycle, un risque de rupture est identifié pour les 30 prochains jours. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande de 24u. Les commandes passées oscillent entre 24u et 48u. Conformément à la règle de privilégier la médiane et de choisir la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité de 24u est retenue.",
+          "summary": "",
+          "baseline_quantity": 24,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-11 13:28:11",
+            "quantity": 24,
+            "price_unit": 45.12
+          },
+          {
+            "date": "2025-03-31 09:06:47",
+            "quantity": 24,
+            "price_unit": 45.12
+          },
+          {
+            "date": "2024-10-07 12:58:40",
+            "quantity": 48,
+            "price_unit": 42
+          },
+          {
+            "date": "2024-04-03 08:50:43",
+            "quantity": 48,
+            "price_unit": 42
+          },
+          {
+            "date": "2024-01-18 12:51:32",
+            "quantity": 24,
+            "price_unit": 43.8
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 1082.8799999999999,
+    "optional_amount": 0,
+    "total_amount": 1082.8799999999999,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2614
+}

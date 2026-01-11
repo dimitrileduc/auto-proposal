@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:25:36.280Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-07-21 00:00:00"
+    }
+  },
+  "client": {
+    "id": 71271,
+    "name": "SA DOMAINE W",
+    "order": {
+      "name": "S38175",
+      "date": "2025-07-22 12:18:12"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 1,
+        "falseNegatives": 0,
+        "total": 4
+      },
+      "productMetrics": {
+        "precision": 0.75,
+        "recall": 1,
+        "f1Score": 0.8571428571428571,
+        "totalPredicted": 4,
+        "totalReal": 3
+      },
+      "quantityMetrics": {
+        "mae": 1,
+        "wmape": 16.666666666666664,
+        "mape": 16.666666666666664,
+        "bias": -16.666666666666664,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 3
+        },
+        "rmse": 1
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0.75,
+          "recall": 1,
+          "f1Score": 0.8571428571428571,
+          "totalPredicted": 4,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 1,
+          "wmape": 16.666666666666664,
+          "mape": 16.666666666666664,
+          "bias": -16.666666666666664,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 1
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3509,
+    "completionTokens": 620,
+    "totalTokens": 4129
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 16.666666666666664,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89388,
+              "orderName": "S37511",
+              "date": "2025-06-19 08:53:22",
+              "quantity": 5,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 5,
+            "median": 5,
+            "stdDev": 0,
+            "min": 5,
+            "max": 5,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 31.62960648148148,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 16.666666666666664,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89388,
+              "orderName": "S37511",
+              "date": "2025-06-19 08:53:22",
+              "quantity": 5,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 5,
+            "median": 5,
+            "stdDev": 0,
+            "min": 5,
+            "max": 5,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 31.62960648148148,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 16.666666666666664,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89388,
+              "orderName": "S37511",
+              "date": "2025-06-19 08:53:22",
+              "quantity": 5,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 5,
+            "median": 5,
+            "stdDev": 0,
+            "min": 5,
+            "max": 5,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 31.62960648148148,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18365,
+        "productName": "[RIT03] RITCHIE Citron-Gingembre - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 31,
+            "orders": [
+              {
+                "orderId": 89388,
+                "orderName": "S37511",
+                "date": "2025-06-19 08:53:22",
+                "quantity": 1,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

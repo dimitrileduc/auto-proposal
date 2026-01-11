@@ -1,0 +1,30 @@
+{
+  "clientId": 52795,
+  "clientName": "DISTRIFRESH SPRL",
+  "orderName": "S37808",
+  "orderDate": "2025-07-07 11:52:34",
+  "cutoffDate": "2025-07-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.4444444444444444,
+    "recall": 1,
+    "f1Score": 0.6153846153846153,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 9733,
+    "completionTokens": 1674,
+    "totalTokens": 11407
+  }
+}

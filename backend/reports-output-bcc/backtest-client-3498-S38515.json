@@ -1,0 +1,30 @@
+{
+  "clientId": 3498,
+  "clientName": "RAFINA",
+  "orderName": "S38515",
+  "orderDate": "2025-08-14 06:42:06",
+  "cutoffDate": "2025-08-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1,
+    "wmape": 5.88235294117647,
+    "mape": 5.88235294117647,
+    "bias": 5.88235294117647
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 926,
+    "completionTokens": 163,
+    "totalTokens": 1089
+  }
+}

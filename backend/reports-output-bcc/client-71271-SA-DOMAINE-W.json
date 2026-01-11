@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:25:35.116Z"
+  },
+  "client": {
+    "id": 71271,
+    "name": "SA DOMAINE W"
+  },
+  "config": {
+    "analysisEndDate": "2025-07-21 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3509,
+        "completionTokens": 620,
+        "totalTokens": 4129
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 327.42,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 296.46000000000004,
+        "minimum_required": 300,
+        "gap_filled": 30.95999999999998,
+        "products_adjusted": 1
+      }
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 18365,
+        "product_name": "[RIT03] RITCHIE Citron-Gingembre - verre 275ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 30.96,
+        "subtotal": 61.92,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande date du 19 juin, soit il y a 32 jours. Avec un seuil de réapprovisionnement de 30 jours et une rotation très faible (produit de niche), le risque de rupture est considéré comme présent par principe de précaution B2B, le cycle de réapprovisionnement étant potentiellement dépassé. ÉTAPE 2 : L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité minimale historique pour éviter le surstock tout en assurant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-19 08:53:22",
+            "quantity": 1,
+            "price_unit": 30.96
+          }
+        ]
+      },
+      {
+        "product_id": 18353,
+        "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 88.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 19 juin, soit 32 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent ou déjà avéré, d'autant plus qu'il n'y a qu'une seule commande historique pour définir le cycle. En application du principe de précaution B2B, une commande est nécessaire. ÉTAPE 2 : Estimation de la quantité. L'historique récent présente une commande unique de 5 unités. En l'absence d'autres données ou de pics exceptionnels, la médiane se base sur cette valeur de référence pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-19 08:53:22",
+            "quantity": 5,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 88.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande date du 19 juin, soit il y a 32 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique de renouvellement du stock pour éviter une rupture, d'autant plus que le cycle de rotation sur ce type de produit bio est généralement mensuel. Le principe de précaution B2B s'applique ici. ÉTAPE 2 : L'historique récent montre une commande unique de 5 unités. En l'absence d'autres données ou de saisonnalité N-1, la médiane s'établit à 5 unités. On maintient cette quantité pour couvrir le prochain cycle sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-19 08:53:22",
+            "quantity": 5,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18352,
+        "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 88.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 19 juin, soit 32 jours écoulés. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique de risque de rupture. En l'absence d'historique long pour définir un cycle précis, le principe de précaution B2B s'applique : le besoin est détecté. ÉTAPE 2 : Estimation quantité. L'historique récent présente une commande unique de 5 unités. Conformément à la règle de maintien des quantités pour les rotations régulières ou uniques sans tendance inverse, la médiane (5u) est retenue pour couvrir la période à venir.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-19 08:53:22",
+            "quantity": 5,
+            "price_unit": 17.7
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 4,
+    "base_amount": 0,
+    "optional_amount": 327.42,
+    "total_amount": 327.42,
+    "moq_adjusted": true,
+    "moq_gap": 30.95999999999998
+  },
+  "execution_time_ms": 3732
+}

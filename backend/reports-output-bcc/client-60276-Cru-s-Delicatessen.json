@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:29:27.866Z"
+  },
+  "client": {
+    "id": 60276,
+    "name": "Cru's Delicatessen"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-15 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3559,
+        "completionTokens": 619,
+        "totalTokens": 4178
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 610.5600000000001,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18308,
+        "product_name": "[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 152.64000000000001,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse montre un cycle de commande d'environ 110 jours entre les deux dernières occurrences. La dernière commande datant du 09/09/2025 (il y a 36 jours), nous entrons dans la zone de risque de rupture pour les 30 prochains jours selon le principe de précaution B2B, car le cycle est irrégulier et difficile à déterminer avec précision. Pour la quantité, la médiane des commandes récentes est de 6 unités. Conformément aux règles de gestion des rotations faibles, nous maintenons ce volume historique constant sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-09 06:46:44",
+            "quantity": 6,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-05-22 06:29:23",
+            "quantity": 6,
+            "price_unit": 25.44
+          }
+        ]
+      },
+      {
+        "product_id": 18307,
+        "product_name": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 152.64000000000001,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle de 110 jours entre les deux dernières commandes. Au 15 octobre 2025, 36 jours se sont écoulés depuis la dernière commande (09/09/2025). Bien que nous ne soyons pas encore au terme du cycle théorique, l'historique est trop limité pour garantir une régularité stricte. En application du principe de précaution B2B (incertitude sur le cycle = risque), une commande est préconisée pour couvrir l'horizon des 30 prochains jours. La quantité retenue est de 6 unités, correspondant à la médiane et à la constante observée sur les commandes précédentes.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-09 06:46:44",
+            "quantity": 6,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-05-22 06:29:23",
+            "quantity": 6,
+            "price_unit": 25.44
+          }
+        ]
+      },
+      {
+        "product_id": 18310,
+        "product_name": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 152.64000000000001,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 09/09/2025, soit 36 jours avant la date actuelle. L'intervalle précédent était de 110 jours, mais le seuil de réapprovisionnement de 30 jours est désormais atteint. En application du principe de précaution B2B (cycle irrégulier), un risque de rupture est identifié. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre des commandes de 6u et 8u. Conformément à la règle de privilégier la valeur la plus basse en cas de doute sur une faible rotation, la quantité retenue est de 6 unités.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-09 06:46:44",
+            "quantity": 8,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-05-22 06:29:23",
+            "quantity": 6,
+            "price_unit": 25.44
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 18309,
+        "product_name": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 152.64000000000001,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 22 mai 2025, soit 146 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande, le principe de précaution B2B s'applique face à une absence prolongée de stock ou de mouvement. Le risque de rupture est considéré comme présent par défaut d'information sur la rotation réelle. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique multiple, la règle de maintien de la quantité de la rotation régulière est appliquée. La médiane et la valeur unique disponible étant de 6 unités, cette quantité est retenue pour reconstituer un stock minimal sans risque de surstockage majeur.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-22 06:29:23",
+            "quantity": 6,
+            "price_unit": 25.44
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 3,
+    "optional_products_count": 1,
+    "base_amount": 457.9200000000001,
+    "optional_amount": 152.64000000000001,
+    "total_amount": 610.5600000000001,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3055
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38822,
+  "clientName": "DLL AD METTET MANOLIA",
+  "orderName": "S34127",
+  "orderDate": "2025-01-07 07:26:17",
+  "cutoffDate": "2025-01-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 18,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.782608695652174,
+    "recall": 1,
+    "f1Score": 0.878048780487805,
+    "mae": 0.2777777777777778,
+    "wmape": 27.77777777777778,
+    "mape": 27.77777777777778,
+    "bias": 27.77777777777778
+  },
+  "distribution": {
+    "exactMatch": 13,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 25538,
+    "completionTokens": 3951,
+    "totalTokens": 29489
+  }
+}

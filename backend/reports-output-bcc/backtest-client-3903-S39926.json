@@ -1,0 +1,30 @@
+{
+  "clientId": 3903,
+  "clientName": "LECONTE ETS",
+  "orderName": "S39926",
+  "orderDate": "2025-10-27 08:10:05",
+  "cutoffDate": "2025-10-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 7,
+    "wmape": 25.925925925925924,
+    "mape": 29.166666666666668,
+    "bias": -25.925925925925924
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 1889,
+    "completionTokens": 367,
+    "totalTokens": 2256
+  }
+}

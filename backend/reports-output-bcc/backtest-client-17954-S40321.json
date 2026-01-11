@@ -1,0 +1,30 @@
+{
+  "clientId": 17954,
+  "clientName": "Bavaria Shop",
+  "orderName": "S40321",
+  "orderDate": "2025-11-14 10:26:38",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.4166666666666667,
+    "recall": 1,
+    "f1Score": 0.5882352941176471,
+    "mae": 1,
+    "wmape": 33.33333333333333,
+    "mape": 37.5,
+    "bias": -6.666666666666667
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13567,
+    "completionTokens": 2191,
+    "totalTokens": 15758
+  }
+}

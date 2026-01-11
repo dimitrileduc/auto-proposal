@@ -1,0 +1,1100 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:15:54.089Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-06 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3452,
+    "name": "DELHAIZE LE LION/DE LEEUW NV",
+    "order": {
+      "name": "S40188",
+      "date": "2025-11-07 11:42:07"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 1,
+        "falseNegatives": 0,
+        "total": 3
+      },
+      "productMetrics": {
+        "precision": 0.6666666666666666,
+        "recall": 1,
+        "f1Score": 0.8,
+        "totalPredicted": 3,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 472,
+        "wmape": 80.54607508532423,
+        "mape": 79.16666666666667,
+        "bias": -80.54607508532423,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 2
+        },
+        "rmse": 504.4482133975697
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1Score": 0.8,
+          "totalPredicted": 3,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 472,
+          "wmape": 80.54607508532423,
+          "mape": 79.16666666666667,
+          "bias": -80.54607508532423,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 504.4482133975697
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 4449,
+    "completionTokens": 816,
+    "totalTokens": 5265
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 17479,
+        "productName": "[PF3315] DLL VINAIGRETTE YOGORETTE PET 450ML",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 98,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 392
+        },
+        "error": {
+          "absolute": 294,
+          "percent": 75,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 38,
+          "orders": [
+            {
+              "orderId": 91934,
+              "orderName": "S40055",
+              "date": "2025-11-03 07:40:31",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 91803,
+              "orderName": "S39924",
+              "date": "2025-10-27 07:02:27",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 91565,
+              "orderName": "S39686",
+              "date": "2025-10-13 07:49:42",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90947,
+              "orderName": "S39070",
+              "date": "2025-09-08 10:16:06",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90777,
+              "orderName": "S38900",
+              "date": "2025-09-01 08:56:14",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90575,
+              "orderName": "S38698",
+              "date": "2025-08-25 08:08:15",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90434,
+              "orderName": "S38557",
+              "date": "2025-08-19 09:02:08",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90399,
+              "orderName": "S38522",
+              "date": "2025-08-14 13:30:24",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90323,
+              "orderName": "S38446",
+              "date": "2025-08-11 07:01:13",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90202,
+              "orderName": "S38325",
+              "date": "2025-08-05 09:06:38",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 90018,
+              "orderName": "S38141",
+              "date": "2025-07-18 07:56:53",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 89632,
+              "orderName": "S37755",
+              "date": "2025-06-30 10:36:07",
+              "quantity": 294,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 89597,
+              "orderName": "S37720",
+              "date": "2025-06-27 12:30:34",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 89334,
+              "orderName": "S37457",
+              "date": "2025-06-16 06:13:41",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 89217,
+              "orderName": "S37340",
+              "date": "2025-06-10 10:57:15",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 89171,
+              "orderName": "S37294",
+              "date": "2025-06-06 12:52:19",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 89050,
+              "orderName": "S37173",
+              "date": "2025-06-03 14:18:44",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 88867,
+              "orderName": "S36990",
+              "date": "2025-05-22 10:09:18",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 88761,
+              "orderName": "S36884",
+              "date": "2025-05-19 08:40:34",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 88690,
+              "orderName": "S36813",
+              "date": "2025-05-15 08:44:18",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 88567,
+              "orderName": "S36690",
+              "date": "2025-05-12 07:45:30",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 88533,
+              "orderName": "S36656",
+              "date": "2025-05-09 06:42:02",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 88161,
+              "orderName": "S36284",
+              "date": "2025-04-18 09:04:11",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 88061,
+              "orderName": "S36184",
+              "date": "2025-04-15 07:02:13",
+              "quantity": 392,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 87650,
+              "orderName": "S35773",
+              "date": "2025-04-03 10:00:36",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 87455,
+              "orderName": "S35578",
+              "date": "2025-03-24 10:46:15",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 87303,
+              "orderName": "S35426",
+              "date": "2025-03-17 07:24:01",
+              "quantity": 292,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 86858,
+              "orderName": "S34981",
+              "date": "2025-02-20 10:10:47",
+              "quantity": 294,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 86685,
+              "orderName": "S34808",
+              "date": "2025-02-10 11:39:33",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 86286,
+              "orderName": "S34409",
+              "date": "2025-01-21 20:51:48",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 85868,
+              "orderName": "S33991",
+              "date": "2024-12-24 10:40:46",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 85828,
+              "orderName": "S33951",
+              "date": "2024-12-18 13:19:58",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 85500,
+              "orderName": "S33623",
+              "date": "2024-12-02 13:53:31",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 85069,
+              "orderName": "S33192",
+              "date": "2024-11-08 10:42:30",
+              "quantity": 294,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 84250,
+              "orderName": "S32373",
+              "date": "2024-09-24 07:05:31",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 84240,
+              "orderName": "S32363",
+              "date": "2024-09-23 11:56:39",
+              "quantity": 196,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 83408,
+              "orderName": "S31531",
+              "date": "2024-08-06 10:01:31",
+              "quantity": 98,
+              "priceUnit": 14.34
+            },
+            {
+              "orderId": 83144,
+              "orderName": "S31267",
+              "date": "2024-07-11 10:01:48",
+              "quantity": 392,
+              "priceUnit": 14.34
+            }
+          ],
+          "statistics": {
+            "mean": 157.26315789473685,
+            "median": 98,
+            "stdDev": 85.64482477698422,
+            "min": 98,
+            "max": 392,
+            "cv": 0.5445956060116132,
+            "trend": "stable",
+            "outliers": [
+              392,
+              392
+            ],
+            "regularityScore": 0.31394237494712834
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 12.971447384884886,
+            "lastOrderDaysAgo": 2.680196759259259,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 17368,
+        "productName": "[PF3300] DLL MAYONNAISE OEUFS 300ML",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 130,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 780
+        },
+        "error": {
+          "absolute": 650,
+          "percent": 83.33333333333334,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 40,
+          "orders": [
+            {
+              "orderId": 91934,
+              "orderName": "S40055",
+              "date": "2025-11-03 07:40:31",
+              "quantity": 780,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 91685,
+              "orderName": "S39806",
+              "date": "2025-10-20 08:14:48",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 91321,
+              "orderName": "S39444",
+              "date": "2025-09-29 15:27:45",
+              "quantity": 390,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 91195,
+              "orderName": "S39318",
+              "date": "2025-09-22 10:46:37",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 90947,
+              "orderName": "S39070",
+              "date": "2025-09-08 10:16:06",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 90777,
+              "orderName": "S38900",
+              "date": "2025-09-01 08:56:14",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 90575,
+              "orderName": "S38698",
+              "date": "2025-08-25 08:08:15",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 90434,
+              "orderName": "S38557",
+              "date": "2025-08-19 09:02:08",
+              "quantity": 260,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 90323,
+              "orderName": "S38446",
+              "date": "2025-08-11 07:01:13",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 90202,
+              "orderName": "S38325",
+              "date": "2025-08-05 09:06:38",
+              "quantity": 390,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 90125,
+              "orderName": "S38248",
+              "date": "2025-07-29 06:12:23",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 89632,
+              "orderName": "S37755",
+              "date": "2025-06-30 10:36:07",
+              "quantity": 390,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 89597,
+              "orderName": "S37720",
+              "date": "2025-06-27 12:30:34",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 89480,
+              "orderName": "S37603",
+              "date": "2025-06-23 12:43:40",
+              "quantity": 260,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 89334,
+              "orderName": "S37457",
+              "date": "2025-06-16 06:13:41",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 89217,
+              "orderName": "S37340",
+              "date": "2025-06-10 10:57:15",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 89171,
+              "orderName": "S37294",
+              "date": "2025-06-06 12:52:19",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 89050,
+              "orderName": "S37173",
+              "date": "2025-06-03 14:18:44",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 88867,
+              "orderName": "S36990",
+              "date": "2025-05-22 10:09:18",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 88761,
+              "orderName": "S36884",
+              "date": "2025-05-19 08:40:34",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 88690,
+              "orderName": "S36813",
+              "date": "2025-05-15 08:44:18",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 88567,
+              "orderName": "S36690",
+              "date": "2025-05-12 07:45:30",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 88370,
+              "orderName": "S36493",
+              "date": "2025-05-05 08:43:15",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 88161,
+              "orderName": "S36284",
+              "date": "2025-04-18 09:04:11",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 88061,
+              "orderName": "S36184",
+              "date": "2025-04-15 07:02:13",
+              "quantity": 260,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 87583,
+              "orderName": "S35706",
+              "date": "2025-03-31 08:29:16",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 87455,
+              "orderName": "S35578",
+              "date": "2025-03-24 10:46:15",
+              "quantity": 390,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 87303,
+              "orderName": "S35426",
+              "date": "2025-03-17 07:24:01",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 87039,
+              "orderName": "S35162",
+              "date": "2025-03-03 19:09:11",
+              "quantity": 520,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 86911,
+              "orderName": "S35034",
+              "date": "2025-02-24 13:07:48",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 86409,
+              "orderName": "S34532",
+              "date": "2025-01-27 09:45:08",
+              "quantity": 390,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 85793,
+              "orderName": "S33916",
+              "date": "2024-12-17 09:48:12",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 85500,
+              "orderName": "S33623",
+              "date": "2024-12-02 13:53:31",
+              "quantity": 260,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 85069,
+              "orderName": "S33192",
+              "date": "2024-11-08 10:42:30",
+              "quantity": 260,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 84615,
+              "orderName": "S32738",
+              "date": "2024-10-14 11:37:32",
+              "quantity": 390,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 84375,
+              "orderName": "S32498",
+              "date": "2024-10-01 06:38:15",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 84040,
+              "orderName": "S32163",
+              "date": "2024-09-09 11:24:26",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 83952,
+              "orderName": "S32075",
+              "date": "2024-09-05 05:51:58",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 83408,
+              "orderName": "S31531",
+              "date": "2024-08-06 10:01:31",
+              "quantity": 130,
+              "priceUnit": 9.72
+            },
+            {
+              "orderId": 83144,
+              "orderName": "S31267",
+              "date": "2024-07-11 10:01:48",
+              "quantity": 390,
+              "priceUnit": 9.72
+            }
+          ],
+          "statistics": {
+            "mean": 217.75,
+            "median": 130,
+            "stdDev": 143.55290836482556,
+            "min": 130,
+            "max": 780,
+            "cv": 0.6592556067270978,
+            "trend": "stable",
+            "outliers": [
+              780,
+              520
+            ],
+            "regularityScore": 0.2992955545639392
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 12.306244954890788,
+            "lastOrderDaysAgo": 2.680196759259259,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 17480,
+        "productName": "[PF3316] DLL VINAIGRETTE FINES HERBES PET 450ML",
+        "mismatchType": "false_positive",
+        "quantity": 98,
+        "reason": "Predicted 98u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 43,
+            "lastOrderDaysAgo": 2,
+            "orders": [
+              {
+                "orderId": 91934,
+                "orderName": "S40055",
+                "date": "2025-11-03 07:40:31",
+                "quantity": 94,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90947,
+                "orderName": "S39070",
+                "date": "2025-09-08 10:16:06",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90777,
+                "orderName": "S38900",
+                "date": "2025-09-01 08:56:14",
+                "quantity": 686,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90575,
+                "orderName": "S38698",
+                "date": "2025-08-25 08:08:15",
+                "quantity": 490,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90434,
+                "orderName": "S38557",
+                "date": "2025-08-19 09:02:08",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90399,
+                "orderName": "S38522",
+                "date": "2025-08-14 13:30:24",
+                "quantity": 490,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90323,
+                "orderName": "S38446",
+                "date": "2025-08-11 07:01:13",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90125,
+                "orderName": "S38248",
+                "date": "2025-07-29 06:12:23",
+                "quantity": 392,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 90018,
+                "orderName": "S38141",
+                "date": "2025-07-18 07:56:53",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 89795,
+                "orderName": "S37918",
+                "date": "2025-07-07 09:08:10",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 89632,
+                "orderName": "S37755",
+                "date": "2025-06-30 10:36:07",
+                "quantity": 294,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 89597,
+                "orderName": "S37720",
+                "date": "2025-06-27 12:30:34",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 89480,
+                "orderName": "S37603",
+                "date": "2025-06-23 12:43:40",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 89217,
+                "orderName": "S37340",
+                "date": "2025-06-10 10:57:15",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 89050,
+                "orderName": "S37173",
+                "date": "2025-06-03 14:18:44",
+                "quantity": 392,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88867,
+                "orderName": "S36990",
+                "date": "2025-05-22 10:09:18",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88761,
+                "orderName": "S36884",
+                "date": "2025-05-19 08:40:34",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88690,
+                "orderName": "S36813",
+                "date": "2025-05-15 08:44:18",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88567,
+                "orderName": "S36690",
+                "date": "2025-05-12 07:45:30",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88533,
+                "orderName": "S36656",
+                "date": "2025-05-09 06:42:02",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88370,
+                "orderName": "S36493",
+                "date": "2025-05-05 08:43:15",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88161,
+                "orderName": "S36284",
+                "date": "2025-04-18 09:04:11",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 88061,
+                "orderName": "S36184",
+                "date": "2025-04-15 07:02:13",
+                "quantity": 294,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 87583,
+                "orderName": "S35706",
+                "date": "2025-03-31 08:29:16",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 87455,
+                "orderName": "S35578",
+                "date": "2025-03-24 10:46:15",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 87303,
+                "orderName": "S35426",
+                "date": "2025-03-17 07:24:01",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 87039,
+                "orderName": "S35162",
+                "date": "2025-03-03 19:09:11",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 86911,
+                "orderName": "S35034",
+                "date": "2025-02-24 13:07:48",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 86790,
+                "orderName": "S34913",
+                "date": "2025-02-17 10:30:57",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 86685,
+                "orderName": "S34808",
+                "date": "2025-02-10 11:39:33",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 86286,
+                "orderName": "S34409",
+                "date": "2025-01-21 20:51:48",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 85828,
+                "orderName": "S33951",
+                "date": "2024-12-18 13:19:58",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 85558,
+                "orderName": "S33681",
+                "date": "2024-12-05 08:03:49",
+                "quantity": 196,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 85500,
+                "orderName": "S33623",
+                "date": "2024-12-02 13:53:31",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 85069,
+                "orderName": "S33192",
+                "date": "2024-11-08 10:42:30",
+                "quantity": 294,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 84514,
+                "orderName": "S32637",
+                "date": "2024-10-07 14:01:13",
+                "quantity": 294,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 84169,
+                "orderName": "S32292",
+                "date": "2024-09-19 07:57:07",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 83952,
+                "orderName": "S32075",
+                "date": "2024-09-05 05:51:58",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 83802,
+                "orderName": "S31925",
+                "date": "2024-08-26 12:05:29",
+                "quantity": 98,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 83047,
+                "orderName": "S31170",
+                "date": "2024-07-08 09:02:33",
+                "quantity": 294,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 82850,
+                "orderName": "S30973",
+                "date": "2024-06-26 06:37:23",
+                "quantity": 294,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 82411,
+                "orderName": "S30534",
+                "date": "2024-05-30 09:38:18",
+                "quantity": 392,
+                "priceUnit": 14.94
+              },
+              {
+                "orderId": 81749,
+                "orderName": "S29872",
+                "date": "2024-04-18 13:29:26",
+                "quantity": 294,
+                "priceUnit": 14.94
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

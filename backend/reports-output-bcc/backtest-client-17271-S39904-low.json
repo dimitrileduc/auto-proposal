@@ -1,0 +1,30 @@
+{
+  "clientId": 17271,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper Herstal",
+  "orderName": "S39904",
+  "orderDate": "2025-10-29 09:52:37",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 2,
+    "wmape": 100,
+    "mape": 100,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 24228,
+    "completionTokens": 4175,
+    "totalTokens": 28403
+  }
+}

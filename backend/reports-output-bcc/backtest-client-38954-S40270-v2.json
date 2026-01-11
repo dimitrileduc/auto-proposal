@@ -1,0 +1,3052 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:08:19.496Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-11 00:00:00"
+    }
+  },
+  "client": {
+    "id": 38954,
+    "name": "ITM NANDRIN ST SEVERIN ECONAN",
+    "order": {
+      "name": "S40270",
+      "date": "2025-11-12 14:31:04"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 15,
+        "falsePositives": 20,
+        "falseNegatives": 2,
+        "total": 37
+      },
+      "productMetrics": {
+        "precision": 0.42857142857142855,
+        "recall": 0.8823529411764706,
+        "f1Score": 0.5769230769230769,
+        "totalPredicted": 35,
+        "totalReal": 17
+      },
+      "quantityMetrics": {
+        "mae": 0.4,
+        "wmape": 28.57142857142857,
+        "mape": 25.555555555555554,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 9,
+          "partialMatch": 6
+        },
+        "rmse": 0.6324555320336759
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 2,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 4,
+          "falseNegatives": 0,
+          "total": 7
+        },
+        "productMetrics": {
+          "precision": 0.42857142857142855,
+          "recall": 1,
+          "f1Score": 0.6,
+          "totalPredicted": 7,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 3,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 12,
+          "falsePositives": 16,
+          "falseNegatives": 0,
+          "total": 28
+        },
+        "productMetrics": {
+          "precision": 0.42857142857142855,
+          "recall": 1,
+          "f1Score": 0.6,
+          "totalPredicted": 28,
+          "totalReal": 12
+        },
+        "quantityMetrics": {
+          "mae": 0.5,
+          "wmape": 33.33333333333333,
+          "mape": 31.944444444444443,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 6,
+            "partialMatch": 6
+          },
+          "rmse": 0.7071067811865476
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 35,
+    "promptTokens": 32835,
+    "completionTokens": 5467,
+    "totalTokens": 38302
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 16774,
+        "productName": "[JF032] JF SAUCE LAPIN 380GX6",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 13,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 88966,
+              "orderName": "S37089",
+              "date": "2025-05-27 10:36:24",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 3,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 3,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 84906,
+              "orderName": "S33029",
+              "date": "2024-10-29 13:45:18",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 81646,
+              "orderName": "S29769",
+              "date": "2024-04-15 13:07:50",
+              "quantity": 2,
+              "priceUnit": 13.5
+            }
+          ],
+          "statistics": {
+            "mean": 1.6923076923076923,
+            "median": 2,
+            "stdDev": 0.7216024245882199,
+            "min": 1,
+            "max": 3,
+            "cv": 0.42640143271122083,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5799208441781043
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 45.481061921296295,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16776,
+        "productName": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 14,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 88966,
+              "orderName": "S37089",
+              "date": "2025-05-27 10:36:24",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 3,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 3,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 84906,
+              "orderName": "S33029",
+              "date": "2024-10-29 13:45:18",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 3,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 2,
+              "priceUnit": 13.5
+            },
+            {
+              "orderId": 81646,
+              "orderName": "S29769",
+              "date": "2024-04-15 13:07:50",
+              "quantity": 2,
+              "priceUnit": 13.5
+            }
+          ],
+          "statistics": {
+            "mean": 2.0714285714285716,
+            "median": 2,
+            "stdDev": 0.5933302759227196,
+            "min": 1,
+            "max": 3,
+            "cv": 0.2864353056178646,
+            "trend": "stable",
+            "outliers": [
+              1,
+              1,
+              3,
+              3,
+              3
+            ],
+            "regularityScore": 0.6956588912678994
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 41.982518696581195,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16766,
+        "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 2.125,
+            "median": 3,
+            "stdDev": 0.9270248108869579,
+            "min": 1,
+            "max": 3,
+            "cv": 0.43624696982915667,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5250639316294796
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 73.54616236772486,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16761,
+        "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 12,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 84906,
+              "orderName": "S33029",
+              "date": "2024-10-29 13:45:18",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 81646,
+              "orderName": "S29769",
+              "date": "2024-04-15 13:07:50",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1.25,
+            "median": 1,
+            "stdDev": 0.4330127018922193,
+            "min": 1,
+            "max": 2,
+            "cv": 0.34641016151377546,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6223425099139881
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 49.61570391414141,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16755,
+        "productName": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.833032878433259
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 106.475546875,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16745,
+        "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 15,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 3,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 3,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 2,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 2,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 88966,
+              "orderName": "S37089",
+              "date": "2025-05-27 10:36:24",
+              "quantity": 1,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 3,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 1,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 2,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 4,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 84906,
+              "orderName": "S33029",
+              "date": "2024-10-29 13:45:18",
+              "quantity": 1,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 1,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 2,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 4,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 2,
+              "priceUnit": 23.4
+            },
+            {
+              "orderId": 81646,
+              "orderName": "S29769",
+              "date": "2024-04-15 13:07:50",
+              "quantity": 2,
+              "priceUnit": 23.4
+            }
+          ],
+          "statistics": {
+            "mean": 2.2,
+            "median": 2,
+            "stdDev": 0.9797958971132714,
+            "min": 1,
+            "max": 4,
+            "cv": 0.44536177141512334,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6309400524165771
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 38.98376736111111,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16747,
+        "productName": "[JF003] JF MAYONNAIS WASABI 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 7,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 84906,
+              "orderName": "S33029",
+              "date": "2024-10-29 13:45:18",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1.2857142857142858,
+            "median": 1,
+            "stdDev": 0.45175395145262565,
+            "min": 1,
+            "max": 2,
+            "cv": 0.35136418446315326,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.677197723801465
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 76.67943094135802,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16759,
+        "productName": "[JF021] JF PICKLES 350 ML",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 91530,
+              "orderName": "S39653",
+              "date": "2025-10-13 07:40:35",
+              "quantity": 1,
+              "priceUnit": 20.94
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 1,
+              "priceUnit": 20.94
+            },
+            {
+              "orderId": 88966,
+              "orderName": "S37089",
+              "date": "2025-05-27 10:36:24",
+              "quantity": 1,
+              "priceUnit": 20.94
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 1,
+              "priceUnit": 20.94
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 2,
+              "priceUnit": 20.94
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 1,
+              "priceUnit": 20.94
+            }
+          ],
+          "statistics": {
+            "mean": 1.1666666666666667,
+            "median": 1,
+            "stdDev": 0.37267799624996495,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3194382824999699,
+            "trend": "increasing",
+            "outliers": [
+              2
+            ],
+            "regularityScore": 0.5508371061855633
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 92.01531712962962,
+            "lastOrderDaysAgo": 28.72181712962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 16749,
+        "productName": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 12,
+          "orders": [
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 84906,
+              "orderName": "S33029",
+              "date": "2024-10-29 13:45:18",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 81646,
+              "orderName": "S29769",
+              "date": "2024-04-15 13:07:50",
+              "quantity": 2,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1.9166666666666667,
+            "median": 2,
+            "stdDev": 0.7592027982620249,
+            "min": 1,
+            "max": 3,
+            "cv": 0.39610580778888255,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6382279186469675
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 45.975444023569025,
+            "lastOrderDaysAgo": 68.76467592592593,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16780,
+        "productName": "[JF009] JF SAUCE TARTARE 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 14,
+          "orders": [
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 88966,
+              "orderName": "S37089",
+              "date": "2025-05-27 10:36:24",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 85415,
+              "orderName": "S33538",
+              "date": "2024-11-26 10:18:04",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 84906,
+              "orderName": "S33029",
+              "date": "2024-10-29 13:45:18",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 83538,
+              "orderName": "S31661",
+              "date": "2024-08-13 10:01:26",
+              "quantity": 3,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 2,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 81646,
+              "orderName": "S29769",
+              "date": "2024-04-15 13:07:50",
+              "quantity": 2,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.6546536707079771,
+            "min": 1,
+            "max": 3,
+            "cv": 0.32732683535398854,
+            "trend": "stable",
+            "outliers": [
+              3,
+              1,
+              1,
+              3,
+              1,
+              3
+            ],
+            "regularityScore": 0.6977416024118894
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 38.90229878917379,
+            "lastOrderDaysAgo": 68.76467592592593,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16786,
+        "productName": "[JF024] JF VINAIGRET CIBOULE WECK 200M",
+        "productUom": "TU9",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 90806,
+              "orderName": "S38929",
+              "date": "2025-09-03 06:38:52",
+              "quantity": 1,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 1,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 1,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 87112,
+              "orderName": "S35235",
+              "date": "2025-03-06 09:32:02",
+              "quantity": 2,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 2,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 1,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 1,
+              "priceUnit": 27
+            }
+          ],
+          "statistics": {
+            "mean": 1.25,
+            "median": 1,
+            "stdDev": 0.4330127018922193,
+            "min": 1,
+            "max": 2,
+            "cv": 0.34641016151377546,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5613085306806418
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 67.82575396825396,
+            "lastOrderDaysAgo": 68.76467592592593,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16830,
+        "productName": "[TVF002] TVF TARTINADE BIO PAPRIKA 180g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 90083,
+              "orderName": "S38206",
+              "date": "2025-07-23 11:10:09",
+              "quantity": 1,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 1,
+              "priceUnit": 10.8
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.7465061131297794
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 90.46538194444445,
+            "lastOrderDaysAgo": 110.57628472222223,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16788,
+        "productName": "[JF026] JF VINAIGRET TRUFFES WECK 200M",
+        "productUom": "TU9",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 31.5
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 2,
+              "priceUnit": 31.5
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 1,
+              "priceUnit": 31.5
+            }
+          ],
+          "statistics": {
+            "mean": 1.3333333333333333,
+            "median": 1,
+            "stdDev": 0.4714045207910317,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3535533905932738,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5780856118850872
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 172.5438946759259,
+            "lastOrderDaysAgo": 143.7106134259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16785,
+        "productName": "[JF028] JF VINAIGRET CAESAR WECK 200ML",
+        "productUom": "TU9",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89431,
+              "orderName": "S37554",
+              "date": "2025-06-20 07:56:43",
+              "quantity": 1,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 2,
+              "priceUnit": 27
+            },
+            {
+              "orderId": 82177,
+              "orderName": "S30300",
+              "date": "2024-05-16 11:55:16",
+              "quantity": 1,
+              "priceUnit": 27
+            }
+          ],
+          "statistics": {
+            "mean": 1.3333333333333333,
+            "median": 1,
+            "stdDev": 0.4714045207910317,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3535533905932738,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6615788922786688
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 199.91717013888888,
+            "lastOrderDaysAgo": 143.7106134259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16753,
+        "productName": "[JF036] JF MITRAILLETTE SQUEEZE 300ML",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 88966,
+              "orderName": "S37089",
+              "date": "2025-05-27 10:36:24",
+              "quantity": 1,
+              "priceUnit": 26.4
+            },
+            {
+              "orderId": 88196,
+              "orderName": "S36319",
+              "date": "2025-04-23 07:51:12",
+              "quantity": 1,
+              "priceUnit": 26.4
+            },
+            {
+              "orderId": 86370,
+              "orderName": "S34493",
+              "date": "2025-01-23 11:49:51",
+              "quantity": 1,
+              "priceUnit": 26.4
+            },
+            {
+              "orderId": 84355,
+              "orderName": "S32478",
+              "date": "2024-09-30 07:05:31",
+              "quantity": 1,
+              "priceUnit": 26.4
+            },
+            {
+              "orderId": 82797,
+              "orderName": "S30920",
+              "date": "2024-07-10 05:50:18",
+              "quantity": 1,
+              "priceUnit": 26.4
+            },
+            {
+              "orderId": 81646,
+              "orderName": "S29769",
+              "date": "2024-04-15 13:07:50",
+              "quantity": 1,
+              "priceUnit": 26.4
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8705069994947929
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 81.3789675925926,
+            "lastOrderDaysAgo": 167.59972222222223,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 16827,
+        "productName": "[TVF001] TVF TARTINADE BIO MANGUE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16833,
+        "productName": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89431,
+                "orderName": "S37554",
+                "date": "2025-06-20 07:56:43",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 2,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16787,
+        "productName": "[JF027] JF VINAIGRET MIEL MOU WECK 200",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 9,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 1,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 2,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 1,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 2,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 27
+              },
+              {
+                "orderId": 82177,
+                "orderName": "S30300",
+                "date": "2024-05-16 11:55:16",
+                "quantity": 1,
+                "priceUnit": 27
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16778,
+        "productName": "[JF018] JF SAUCE SAMOURAI 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16744,
+        "productName": "[JF002] JF MAYONNAI BASILIC 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 83538,
+                "orderName": "S31661",
+                "date": "2024-08-13 10:01:26",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16769,
+        "productName": "[JF014] JF SAUCE BEARNAISE 470ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 9,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 85415,
+                "orderName": "S33538",
+                "date": "2024-11-26 10:18:04",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 83538,
+                "orderName": "S31661",
+                "date": "2024-08-13 10:01:26",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 82177,
+                "orderName": "S30300",
+                "date": "2024-05-16 11:55:16",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 25.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16743,
+        "productName": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 13,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 3,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 85415,
+                "orderName": "S33538",
+                "date": "2024-11-26 10:18:04",
+                "quantity": 3,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 83538,
+                "orderName": "S31661",
+                "date": "2024-08-13 10:01:26",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 3,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 82177,
+                "orderName": "S30300",
+                "date": "2024-05-16 11:55:16",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 25.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16731,
+        "productName": "[JF035] JF BURGER SQUEEZE 300ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 0,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 26.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16738,
+        "productName": "[JF039] JF MAYO BARAKI SQUEEZE 300ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91530,
+                "orderName": "S39653",
+                "date": "2025-10-13 07:40:35",
+                "quantity": 1,
+                "priceUnit": 30
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 30
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 30
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 1,
+                "priceUnit": 30
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 30
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16729,
+        "productName": "[JF037] JF BBQ SQUEEZE 300ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 89431,
+                "orderName": "S37554",
+                "date": "2025-06-20 07:56:43",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 84906,
+                "orderName": "S33029",
+                "date": "2024-10-29 13:45:18",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 26.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16762,
+        "productName": "[JF019] JF SAUCE AIOLI PESTO 250M WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 2,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 89431,
+                "orderName": "S37554",
+                "date": "2025-06-20 07:56:43",
+                "quantity": 1,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 1,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 82177,
+                "orderName": "S30300",
+                "date": "2024-05-16 11:55:16",
+                "quantity": 1,
+                "priceUnit": 21
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16777,
+        "productName": "[JF007] JF SAUCE MAYO TOMAT 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 84906,
+                "orderName": "S33029",
+                "date": "2024-10-29 13:45:18",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 2,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16763,
+        "productName": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 3,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 89431,
+                "orderName": "S37554",
+                "date": "2025-06-20 07:56:43",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 85415,
+                "orderName": "S33538",
+                "date": "2024-11-26 10:18:04",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 83538,
+                "orderName": "S31661",
+                "date": "2024-08-13 10:01:26",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 2,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16771,
+        "productName": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 89431,
+                "orderName": "S37554",
+                "date": "2025-06-20 07:56:43",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 86370,
+                "orderName": "S34493",
+                "date": "2025-01-23 11:49:51",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 84906,
+                "orderName": "S33029",
+                "date": "2024-10-29 13:45:18",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 3,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 2,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16782,
+        "productName": "[JF011] JF SAUCE TARTARE 470ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 87112,
+                "orderName": "S35235",
+                "date": "2025-03-06 09:32:02",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 85415,
+                "orderName": "S33538",
+                "date": "2024-11-26 10:18:04",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 83538,
+                "orderName": "S31661",
+                "date": "2024-08-13 10:01:26",
+                "quantity": 2,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 25.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 19355,
+        "productName": "[JF055] JF HONEY MUSTARD MAYO 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 90083,
+                "orderName": "S38206",
+                "date": "2025-07-23 11:10:09",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 19354,
+        "productName": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 89431,
+                "orderName": "S37554",
+                "date": "2025-06-20 07:56:43",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16754,
+        "productName": "[JF023] JF MOUTARDE DOUCE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 90806,
+                "orderName": "S38929",
+                "date": "2025-09-03 06:38:52",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 85415,
+                "orderName": "S33538",
+                "date": "2024-11-26 10:18:04",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 15058,
+        "productName": "[JF033] JF ANDALOUSE SQUEEZE 300ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 167,
+            "orders": [
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 85415,
+                "orderName": "S33538",
+                "date": "2024-11-26 10:18:04",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 83538,
+                "orderName": "S31661",
+                "date": "2024-08-13 10:01:26",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 82177,
+                "orderName": "S30300",
+                "date": "2024-05-16 11:55:16",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 26.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16760,
+        "productName": "[JF034] JF SAMOURAI SQUEEZE 300ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 167,
+            "orders": [
+              {
+                "orderId": 88966,
+                "orderName": "S37089",
+                "date": "2025-05-27 10:36:24",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 88196,
+                "orderName": "S36319",
+                "date": "2025-04-23 07:51:12",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 84355,
+                "orderName": "S32478",
+                "date": "2024-09-30 07:05:31",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 82797,
+                "orderName": "S30920",
+                "date": "2024-07-10 05:50:18",
+                "quantity": 1,
+                "priceUnit": 26.4
+              },
+              {
+                "orderId": 81646,
+                "orderName": "S29769",
+                "date": "2024-04-15 13:07:50",
+                "quantity": 1,
+                "priceUnit": 26.4
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 19366,
+        "productName": "[JF057] JF EGG MAYONNAISE 720ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 16790,
+        "productName": "[JF025] JF VINAIGRETTE FH WECK 200ML",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

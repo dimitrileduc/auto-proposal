@@ -1,0 +1,30 @@
+{
+  "clientId": 38797,
+  "clientName": "DLL AD DISTRI INCOURT",
+  "orderName": "S40076",
+  "orderDate": "2025-11-05 14:54:26",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 15,
+    "fn": 0,
+    "precision": 0.34782608695652173,
+    "recall": 1,
+    "f1Score": 0.5161290322580645,
+    "mae": 1,
+    "wmape": 44.44444444444444,
+    "mape": 50,
+    "bias": 11.11111111111111
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 22037,
+    "completionTokens": 3576,
+    "totalTokens": 25613
+  }
+}

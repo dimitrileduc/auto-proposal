@@ -1,0 +1,30 @@
+{
+  "clientId": 58317,
+  "clientName": "SRL BOUCHERIE HESBIGNONNE",
+  "orderName": "S39128",
+  "orderDate": "2025-09-12 06:42:49",
+  "cutoffDate": "2025-09-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 33,
+    "promptTokens": 28713,
+    "completionTokens": 4711,
+    "totalTokens": 33424
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38831,
+  "clientName": "DLL AD SPA",
+  "orderName": "S34354",
+  "orderDate": "2025-01-16 13:06:48",
+  "cutoffDate": "2025-01-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.4444444444444444,
+    "recall": 1,
+    "f1Score": 0.6153846153846153,
+    "mae": 0.75,
+    "wmape": 66.66666666666666,
+    "mape": 68.75,
+    "bias": 44.44444444444444
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19351,
+    "completionTokens": 3185,
+    "totalTokens": 22536
+  }
+}

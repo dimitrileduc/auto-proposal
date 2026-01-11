@@ -1,0 +1,30 @@
+{
+  "clientId": 52773,
+  "clientName": "Green Retail SRL",
+  "orderName": "S38082",
+  "orderDate": "2025-07-16 06:21:25",
+  "cutoffDate": "2025-07-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.8666666666666667,
+    "recall": 1,
+    "f1Score": 0.9285714285714286,
+    "mae": 0.23076923076923078,
+    "wmape": 23.076923076923077,
+    "mape": 23.076923076923077,
+    "bias": 23.076923076923077
+  },
+  "distribution": {
+    "exactMatch": 10,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 15148,
+    "completionTokens": 2743,
+    "totalTokens": 17891
+  }
+}

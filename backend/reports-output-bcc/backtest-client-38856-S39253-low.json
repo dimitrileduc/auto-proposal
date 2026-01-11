@@ -1,0 +1,30 @@
+{
+  "clientId": 38856,
+  "clientName": "DLL PROXY FORCHIES FORPRO SRL",
+  "orderName": "S39253",
+  "orderDate": "2025-09-17 11:50:52",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 3,
+    "precision": 1,
+    "recall": 0.5714285714285714,
+    "f1Score": 0.7272727272727273,
+    "mae": 0.5,
+    "wmape": 28.57142857142857,
+    "mape": 25,
+    "bias": -28.57142857142857
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 19964,
+    "completionTokens": 2773,
+    "totalTokens": 22737
+  }
+}

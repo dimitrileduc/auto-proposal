@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:06:33.038Z"
+  },
+  "client": {
+    "id": 3511,
+    "name": "CARRY GERON SA"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-02 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 6,
+      "llm_usage": {
+        "calls": 6,
+        "promptTokens": 6472,
+        "completionTokens": 1160,
+        "totalTokens": 7632
+      }
+    },
+    "proposalFinal": {
+      "products_count": 6,
+      "total_amount": 2718.88,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8985,
+        "product_name": "[PF0075] FILOU CHASSEUR  10 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 52,
+        "quantity_source": "llm",
+        "price_unit": 17,
+        "subtotal": 884,
+        "confidence": "high",
+        "order_count": 23,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande récent montre un intervalle moyen d'environ 30 à 35 jours (ex: 35 jours entre le 01/09 et le 06/10). La dernière commande datant du 06/10, nous sommes à 27 jours d'écart au 02/11, soit environ 80% du cycle habituel. Le risque de rupture est imminent dans l'horizon des 30 jours (Replenishment Threshold Days). Pour la quantité, bien que les deux dernières commandes (88u et 66u) soient plus élevées, l'historique long terme et la médiane des commandes précédentes se stabilisent à 52u. En application de la règle de prudence B2B privilégiant la médiane et la valeur la plus basse en cas de doute sur une hausse de volume, une commande de 52u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 52,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-12 13:12:16",
+            "quantity": 52,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2024-02-12 10:47:57",
+            "quantity": 52,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2024-01-08 10:51:07",
+            "quantity": 52,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2023-12-11 15:03:36",
+            "quantity": 52,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2023-11-20 13:36:57",
+            "quantity": 52,
+            "price_unit": 16.5
+          }
+        ]
+      },
+      {
+        "product_id": 8987,
+        "product_name": "[PF0078] FILOU CHASSEUR 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 100,
+        "quantity_source": "llm",
+        "price_unit": 8.96,
+        "subtotal": 896.0000000000001,
+        "confidence": "high",
+        "order_count": 23,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande récent montre un intervalle moyen d'environ 34 jours (21, 35, 28, 25 jours). La dernière commande datant du 06 octobre (soit 27 jours avant la date actuelle), le risque de rupture est imminent dans l'horizon des 30 jours de seuil de réapprovisionnement. En application du principe de précaution B2B, une commande est nécessaire. Pour la quantité, la médiane des commandes récentes (80, 80, 100, 100, 160) est de 100 unités. Ce volume est cohérent avec l'historique et permet de couvrir le besoin sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 100,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-09 09:36:52",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-02-12 10:48:44",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-02-12 10:47:57",
+            "quantity": 30,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-01-08 10:51:07",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-12-11 15:03:36",
+            "quantity": 80,
+            "price_unit": 8.7
+          }
+        ]
+      },
+      {
+        "product_id": 8997,
+        "product_name": "[PF0096] FILOU MOUTARDE 3 KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 30,
+        "quantity_source": "llm",
+        "price_unit": 5.15,
+        "subtotal": 154.5,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 06/10/2025, soit 27 jours avant la date actuelle. L'historique montre un cycle de commande variant entre 45 et 80 jours. Bien que nous ne soyons pas encore au terme du cycle moyen, le délai actuel (27 jours) additionné au seuil de réapprovisionnement de 30 jours nous place dans une fenêtre de risque de rupture (57 jours cumulés). En application du principe de précaution B2B, un besoin est détecté. Pour la quantité, la médiane des commandes récentes et historiques se situe à 30 unités (valeurs récurrentes : 30, 30, 30, 40, 40, 60). La valeur de 60u étant traitée comme un pic ponctuel, la quantité de 30u est retenue pour éviter le surstockage.",
+          "summary": "",
+          "baseline_quantity": 30,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-07-03 11:28:09",
+            "quantity": 40,
+            "price_unit": 5
+          },
+          {
+            "date": "2024-06-10 08:11:06",
+            "quantity": 40,
+            "price_unit": 5
+          },
+          {
+            "date": "2024-03-12 13:12:16",
+            "quantity": 30,
+            "price_unit": 5
+          },
+          {
+            "date": "2024-01-08 10:51:07",
+            "quantity": 30,
+            "price_unit": 5
+          },
+          {
+            "date": "2023-11-20 13:36:57",
+            "quantity": 30,
+            "price_unit": 5
+          }
+        ]
+      },
+      {
+        "product_id": 8989,
+        "product_name": "[PF0085] FILOU CURRY KETCHUP  10 KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 24,
+        "quantity_source": "llm",
+        "price_unit": 19.57,
+        "subtotal": 469.68,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence d'approvisionnement d'environ 35 à 50 jours. La dernière commande datant du 6 octobre (il y a 27 jours), nous entrons dans la fenêtre de risque de rupture compte tenu du seuil de réapprovisionnement de 30 jours. Bien que l'historique N-1 montre des volumes de 11u, les commandes récentes de 2025 se sont stabilisées sur un palier supérieur. La médiane des commandes récentes (24, 12, 24, 24) est de 24u. En application du principe de précaution B2B et pour maintenir la cohérence avec la rotation actuelle, une commande de 24u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 24,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-14 14:52:20",
+            "quantity": 11,
+            "price_unit": 19
+          },
+          {
+            "date": "2024-03-12 13:12:16",
+            "quantity": 11,
+            "price_unit": 19
+          },
+          {
+            "date": "2024-02-12 10:47:57",
+            "quantity": 11,
+            "price_unit": 19
+          },
+          {
+            "date": "2024-01-08 10:51:07",
+            "quantity": 11,
+            "price_unit": 19
+          },
+          {
+            "date": "2023-11-20 13:36:57",
+            "quantity": 22,
+            "price_unit": 19
+          }
+        ]
+      },
+      {
+        "product_id": 8998,
+        "product_name": "[PF0097] FILOU MOUTARDE 5 KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 30,
+        "quantity_source": "llm",
+        "price_unit": 7.21,
+        "subtotal": 216.3,
+        "confidence": "high",
+        "order_count": 21,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à 40 jours. La dernière commande datant du 1er septembre 2025, le délai depuis la dernière livraison (62 jours) dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture critique. Bien que l'historique N-1 montre des volumes plus importants en fin d'année (40u-60u), les données récentes de 2025 sont stables à 30u. En application de la règle de la médiane des commandes récentes et par mesure de précaution B2B, une commande de 30 unités est nécessaire.",
+          "summary": "",
+          "baseline_quantity": 30,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-12 13:12:16",
+            "quantity": 40,
+            "price_unit": 7
+          },
+          {
+            "date": "2024-02-12 10:47:57",
+            "quantity": 30,
+            "price_unit": 7
+          },
+          {
+            "date": "2024-01-08 10:51:07",
+            "quantity": 40,
+            "price_unit": 7
+          },
+          {
+            "date": "2023-12-11 15:03:36",
+            "quantity": 40,
+            "price_unit": 7
+          },
+          {
+            "date": "2023-11-20 13:36:57",
+            "quantity": 30,
+            "price_unit": 7
+          }
+        ]
+      },
+      {
+        "product_id": 8992,
+        "product_name": "[PF0089] FILOU VOL AU VENT 400 GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 24.6,
+        "subtotal": 98.4,
+        "confidence": "high",
+        "order_count": 16,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 11 août 2025, soit plus de 80 jours sans activité. Bien que le cycle historique moyen soit d'environ 30 à 45 jours, l'absence de commande récente crée une incertitude majeure sur le niveau de stock actuel. En application du principe de précaution B2B (risque de rupture manquée), un besoin est détecté pour couvrir les 30 prochains jours. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre des volumes de 3, 8 et 4 unités. L'historique N-1 sur la période automnale (septembre) était de 5 unités. La médiane des commandes récentes (3, 4, 8) est de 4. Conformément à la règle de ne pas surestimer et de privilégier la médiane pour lisser les pics (comme le 8u de juillet), la quantité retenue est de 4 unités.",
+          "summary": "",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-10 08:11:06",
+            "quantity": 3,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-05-14 14:52:20",
+            "quantity": 4,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-04-09 09:36:52",
+            "quantity": 5,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-02-12 10:47:57",
+            "quantity": 5,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-01-08 10:51:07",
+            "quantity": 5,
+            "price_unit": 23.4
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 6,
+    "optional_products_count": 0,
+    "base_amount": 2718.88,
+    "optional_amount": 0,
+    "total_amount": 2718.88,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3883
+}

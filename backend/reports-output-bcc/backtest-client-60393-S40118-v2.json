@@ -1,0 +1,620 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:17:59.485Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-03 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60393,
+    "name": "L'ORCHESTRE A POTS",
+    "order": {
+      "name": "S40118",
+      "date": "2025-11-04 13:45:56"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 5,
+        "falseNegatives": 3,
+        "total": 12
+      },
+      "productMetrics": {
+        "precision": 0.4444444444444444,
+        "recall": 0.5714285714285714,
+        "f1Score": 0.5,
+        "totalPredicted": 9,
+        "totalReal": 7
+      },
+      "quantityMetrics": {
+        "mae": 1.25,
+        "wmape": 38.46153846153847,
+        "mape": 39.58333333333333,
+        "bias": -38.46153846153847,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 4
+        },
+        "rmse": 1.3228756555322954
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 3,
+          "falseNegatives": 3,
+          "total": 6
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 3,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 4,
+          "falsePositives": 2,
+          "falseNegatives": 0,
+          "total": 6
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1Score": 0.8,
+          "totalPredicted": 6,
+          "totalReal": 4
+        },
+        "quantityMetrics": {
+          "mae": 1.25,
+          "wmape": 38.46153846153847,
+          "mape": 39.58333333333333,
+          "bias": -38.46153846153847,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 4
+          },
+          "rmse": 1.3228756555322954
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 7877,
+    "completionTokens": 1379,
+    "totalTokens": 9256
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89976,
+              "orderName": "S38099",
+              "date": "2025-08-04 11:38:53",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 88167,
+              "orderName": "S36290",
+              "date": "2025-04-22 07:56:30",
+              "quantity": 2,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86791,
+              "orderName": "S34914",
+              "date": "2025-02-17 13:04:00",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86141,
+              "orderName": "S34264",
+              "date": "2025-01-13 13:04:36",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1.25,
+            "median": 1,
+            "stdDev": 0.4330127018922193,
+            "min": 1,
+            "max": 2,
+            "cv": 0.34641016151377546,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.6243900696060825
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 67.63293595679012,
+            "lastOrderDaysAgo": 90.55633101851852,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 25,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89976,
+              "orderName": "S38099",
+              "date": "2025-08-04 11:38:53",
+              "quantity": 3,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 88167,
+              "orderName": "S36290",
+              "date": "2025-04-22 07:56:30",
+              "quantity": 3,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86141,
+              "orderName": "S34264",
+              "date": "2025-01-13 13:04:36",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 2.3333333333333335,
+            "median": 3,
+            "stdDev": 0.9428090415820634,
+            "min": 1,
+            "max": 3,
+            "cv": 0.40406101782088427,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.746897860165816
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 101.44940393518519,
+            "lastOrderDaysAgo": 90.55633101851852,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89976,
+              "orderName": "S38099",
+              "date": "2025-08-04 11:38:53",
+              "quantity": 2,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 88167,
+              "orderName": "S36290",
+              "date": "2025-04-22 07:56:30",
+              "quantity": 2,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86791,
+              "orderName": "S34914",
+              "date": "2025-02-17 13:04:00",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86141,
+              "orderName": "S34264",
+              "date": "2025-01-13 13:04:36",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.6322361665143478
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 67.63293595679012,
+            "lastOrderDaysAgo": 90.55633101851852,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18345,
+        "productName": "[PAO01] PAOLA cola verre 250ml - le cola des Belges",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89976,
+              "orderName": "S38099",
+              "date": "2025-08-04 11:38:53",
+              "quantity": 2,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86791,
+              "orderName": "S34914",
+              "date": "2025-02-17 13:04:00",
+              "quantity": 3,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86141,
+              "orderName": "S34264",
+              "date": "2025-01-13 13:04:36",
+              "quantity": 1,
+              "priceUnit": 25.2
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.816496580927726,
+            "min": 1,
+            "max": 3,
+            "cv": 0.408248290463863,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.4930492079710097
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 101.44940393518519,
+            "lastOrderDaysAgo": 90.55633101851852,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18378,
+        "productName": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 89976,
+                "orderName": "S38099",
+                "date": "2025-08-04 11:38:53",
+                "quantity": 1,
+                "priceUnit": 31.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18380,
+        "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 89976,
+                "orderName": "S38099",
+                "date": "2025-08-04 11:38:53",
+                "quantity": 1,
+                "priceUnit": 31.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18375,
+        "productName": "[SOWA03] SOWA ginger beer ardent 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 89976,
+                "orderName": "S38099",
+                "date": "2025-08-04 11:38:53",
+                "quantity": 2,
+                "priceUnit": 26.6
+              },
+              {
+                "orderId": 88167,
+                "orderName": "S36290",
+                "date": "2025-04-22 07:56:30",
+                "quantity": 4,
+                "priceUnit": 26.6
+              },
+              {
+                "orderId": 86791,
+                "orderName": "S34914",
+                "date": "2025-02-17 13:04:00",
+                "quantity": 4,
+                "priceUnit": 26.6
+              },
+              {
+                "orderId": 86141,
+                "orderName": "S34264",
+                "date": "2025-01-13 13:04:36",
+                "quantity": 2,
+                "priceUnit": 26.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18374,
+        "productName": "[SOWA01] SOWA citron menthe 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 89976,
+                "orderName": "S38099",
+                "date": "2025-08-04 11:38:53",
+                "quantity": 2,
+                "priceUnit": 23.8
+              },
+              {
+                "orderId": 88167,
+                "orderName": "S36290",
+                "date": "2025-04-22 07:56:30",
+                "quantity": 1,
+                "priceUnit": 23.8
+              },
+              {
+                "orderId": 86791,
+                "orderName": "S34914",
+                "date": "2025-02-17 13:04:00",
+                "quantity": 3,
+                "priceUnit": 23.8
+              },
+              {
+                "orderId": 86141,
+                "orderName": "S34264",
+                "date": "2025-01-13 13:04:36",
+                "quantity": 1,
+                "priceUnit": 23.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18377,
+        "productName": "[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 89976,
+                "orderName": "S38099",
+                "date": "2025-08-04 11:38:53",
+                "quantity": 1,
+                "priceUnit": 31.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18351,
+        "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18356,
+        "productName": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

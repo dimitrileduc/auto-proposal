@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:14:01.288Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-08-24 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60366,
+    "name": "INTERBIO",
+    "order": {
+      "name": "S38713",
+      "date": "2025-08-25 11:43:44"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 8,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 8
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 8,
+        "totalReal": 8
+      },
+      "quantityMetrics": {
+        "mae": 7,
+        "wmape": 28.57142857142857,
+        "mape": 29.166666666666664,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 4,
+          "partialMatch": 4
+        },
+        "rmse": 9.899494936611665
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 8,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 8
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 8,
+          "totalReal": 8
+        },
+        "quantityMetrics": {
+          "mae": 7,
+          "wmape": 28.57142857142857,
+          "mape": 29.166666666666664,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 4,
+            "partialMatch": 4
+          },
+          "rmse": 9.899494936611665
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 7055,
+    "completionTokens": 1263,
+    "totalTokens": 8318
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18269,
+        "productName": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 14,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 14
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89912,
+              "orderName": "S38035",
+              "date": "2025-07-14 07:19:31",
+              "quantity": 14,
+              "priceUnit": 22
+            },
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 28,
+              "priceUnit": 22
+            },
+            {
+              "orderId": 87433,
+              "orderName": "S35556",
+              "date": "2025-03-21 11:16:09",
+              "quantity": 14,
+              "priceUnit": 22
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 14,
+              "priceUnit": 22
+            }
+          ],
+          "statistics": {
+            "mean": 17.5,
+            "median": 14,
+            "stdDev": 6.06217782649107,
+            "min": 14,
+            "max": 28,
+            "cv": 0.34641016151377546,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.7235849604738067
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 54.642862654320986,
+            "lastOrderDaysAgo": 40.694780092592595,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18275,
+        "productName": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 14,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 28
+        },
+        "error": {
+          "absolute": 14,
+          "percent": 50,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89912,
+              "orderName": "S38035",
+              "date": "2025-07-14 07:19:31",
+              "quantity": 14,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 28,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 87433,
+              "orderName": "S35556",
+              "date": "2025-03-21 11:16:09",
+              "quantity": 28,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 42,
+              "priceUnit": 23.6
+            }
+          ],
+          "statistics": {
+            "mean": 28,
+            "median": 28,
+            "stdDev": 9.899494936611665,
+            "min": 14,
+            "max": 42,
+            "cv": 0.3535533905932738,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.7192990230261077
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 54.642862654320986,
+            "lastOrderDaysAgo": 40.694780092592595,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18276,
+        "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 28,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 28
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89912,
+              "orderName": "S38035",
+              "date": "2025-07-14 07:19:31",
+              "quantity": 42,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 28,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 87433,
+              "orderName": "S35556",
+              "date": "2025-03-21 11:16:09",
+              "quantity": 42,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 42,
+              "priceUnit": 23.6
+            }
+          ],
+          "statistics": {
+            "mean": 38.5,
+            "median": 42,
+            "stdDev": 6.06217782649107,
+            "min": 28,
+            "max": 42,
+            "cv": 0.15745916432444337,
+            "trend": "stable",
+            "outliers": [
+              28
+            ],
+            "regularityScore": 0.8369555587874058
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 54.642862654320986,
+            "lastOrderDaysAgo": 40.694780092592595,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18270,
+        "productName": "[JOY05] Organic Cherry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 14,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 28
+        },
+        "error": {
+          "absolute": 14,
+          "percent": 50,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89912,
+              "orderName": "S38035",
+              "date": "2025-07-14 07:19:31",
+              "quantity": 14,
+              "priceUnit": 27.2
+            },
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 14,
+              "priceUnit": 27.2
+            },
+            {
+              "orderId": 87433,
+              "orderName": "S35556",
+              "date": "2025-03-21 11:16:09",
+              "quantity": 14,
+              "priceUnit": 27.2
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 14,
+              "priceUnit": 27.2
+            }
+          ],
+          "statistics": {
+            "mean": 14,
+            "median": 14,
+            "stdDev": 0,
+            "min": 14,
+            "max": 14,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9314310573820719
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 54.642862654320986,
+            "lastOrderDaysAgo": 40.694780092592595,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18274,
+        "productName": "[JOY06] JOY! Organic Rhubarb Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 14,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 14
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89912,
+              "orderName": "S38035",
+              "date": "2025-07-14 07:19:31",
+              "quantity": 14,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 14,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 87433,
+              "orderName": "S35556",
+              "date": "2025-03-21 11:16:09",
+              "quantity": 14,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 28,
+              "priceUnit": 23.6
+            }
+          ],
+          "statistics": {
+            "mean": 17.5,
+            "median": 14,
+            "stdDev": 6.06217782649107,
+            "min": 14,
+            "max": 28,
+            "cv": 0.34641016151377546,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.7235849604738067
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 54.642862654320986,
+            "lastOrderDaysAgo": 40.694780092592595,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18271,
+        "productName": "[JOY07] JOY! Organic Fig Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 28,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 14
+        },
+        "error": {
+          "absolute": 14,
+          "percent": 100,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 28,
+              "priceUnit": 22.8
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 14,
+              "priceUnit": 22.8
+            }
+          ],
+          "statistics": {
+            "mean": 21,
+            "median": 21,
+            "stdDev": 7,
+            "min": 14,
+            "max": 28,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 96.09820601851852,
+            "lastOrderDaysAgo": 108.52516203703703,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18272,
+        "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 56,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 42
+        },
+        "error": {
+          "absolute": 14,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 56,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 87433,
+              "orderName": "S35556",
+              "date": "2025-03-21 11:16:09",
+              "quantity": 70,
+              "priceUnit": 23.6
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 42,
+              "priceUnit": 23.6
+            }
+          ],
+          "statistics": {
+            "mean": 56,
+            "median": 56,
+            "stdDev": 11.430952132988164,
+            "min": 42,
+            "max": 70,
+            "cv": 0.2041241452319315,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.8684890875701139
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 48.04910300925926,
+            "lastOrderDaysAgo": 108.52516203703703,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18273,
+        "productName": "[JOY08] JOY! Organic Raspberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 28,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 28
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 88457,
+              "orderName": "S36580",
+              "date": "2025-05-07 11:23:46",
+              "quantity": 28,
+              "priceUnit": 27.2
+            },
+            {
+              "orderId": 86492,
+              "orderName": "S34615",
+              "date": "2025-01-31 08:02:21",
+              "quantity": 28,
+              "priceUnit": 27.2
+            }
+          ],
+          "statistics": {
+            "mean": 28,
+            "median": 28,
+            "stdDev": 0,
+            "min": 28,
+            "max": 28,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 96.09820601851852,
+            "lastOrderDaysAgo": 108.52516203703703,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

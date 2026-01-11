@@ -1,0 +1,30 @@
+{
+  "clientId": 72446,
+  "clientName": "LA CASE BOIS CHERI",
+  "orderName": "S38053",
+  "orderDate": "2025-07-14 13:16:54",
+  "cutoffDate": "2025-07-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1.6,
+    "wmape": 114.28571428571428,
+    "mape": 50,
+    "bias": 57.14285714285714
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4386,
+    "completionTokens": 767,
+    "totalTokens": 5153
+  }
+}

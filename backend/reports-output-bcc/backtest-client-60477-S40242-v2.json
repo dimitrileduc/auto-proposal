@@ -1,0 +1,441 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:22:53.837Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-13 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60477,
+    "name": "MAISON DES VINS FINS",
+    "order": {
+      "name": "S40242",
+      "date": "2025-11-14 10:22:45"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 5,
+        "falsePositives": 0,
+        "falseNegatives": 1,
+        "total": 6
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 0.8333333333333334,
+        "f1Score": 0.9090909090909091,
+        "totalPredicted": 5,
+        "totalReal": 6
+      },
+      "quantityMetrics": {
+        "mae": 1.8,
+        "wmape": 39.130434782608695,
+        "mape": 21.21212121212121,
+        "bias": -30.434782608695656,
+        "distribution": {
+          "exactMatch": 3,
+          "partialMatch": 2
+        },
+        "rmse": 3.605551275463989
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 1,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 5,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 5,
+          "totalReal": 5
+        },
+        "quantityMetrics": {
+          "mae": 1.8,
+          "wmape": 39.130434782608695,
+          "mape": 21.21212121212121,
+          "bias": -30.434782608695656,
+          "distribution": {
+            "exactMatch": 3,
+            "partialMatch": 2
+          },
+          "rmse": 3.605551275463989
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4375,
+    "completionTokens": 772,
+    "totalTokens": 5147
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90111,
+              "orderName": "S38234",
+              "date": "2025-08-04 11:41:48",
+              "quantity": 3,
+              "priceUnit": 18.8
+            },
+            {
+              "orderId": 86996,
+              "orderName": "S35119",
+              "date": "2025-02-28 09:00:50",
+              "quantity": 2,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 2.5,
+            "median": 3,
+            "stdDev": 0.5,
+            "min": 2,
+            "max": 3,
+            "cv": 0.2,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.88
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 157.07011574074073,
+            "lastOrderDaysAgo": 100.55430555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90111,
+              "orderName": "S38234",
+              "date": "2025-08-04 11:41:48",
+              "quantity": 3,
+              "priceUnit": 18.8
+            },
+            {
+              "orderId": 86996,
+              "orderName": "S35119",
+              "date": "2025-02-28 09:00:50",
+              "quantity": 2,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 2.5,
+            "median": 3,
+            "stdDev": 0.5,
+            "min": 2,
+            "max": 3,
+            "cv": 0.2,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.88
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 157.07011574074073,
+            "lastOrderDaysAgo": 100.55430555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90111,
+              "orderName": "S38234",
+              "date": "2025-08-04 11:41:48",
+              "quantity": 3,
+              "priceUnit": 18.8
+            },
+            {
+              "orderId": 86996,
+              "orderName": "S35119",
+              "date": "2025-02-28 09:00:50",
+              "quantity": 2,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 2.5,
+            "median": 3,
+            "stdDev": 0.5,
+            "min": 2,
+            "max": 3,
+            "cv": 0.2,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.88
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 157.07011574074073,
+            "lastOrderDaysAgo": 100.55430555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 11
+        },
+        "error": {
+          "absolute": 8,
+          "percent": 72.72727272727273,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90111,
+              "orderName": "S38234",
+              "date": "2025-08-04 11:41:48",
+              "quantity": 3,
+              "priceUnit": 18.8
+            },
+            {
+              "orderId": 86996,
+              "orderName": "S35119",
+              "date": "2025-02-28 09:00:50",
+              "quantity": 2,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 2.5,
+            "median": 3,
+            "stdDev": 0.5,
+            "min": 2,
+            "max": 3,
+            "cv": 0.2,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.88
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 157.07011574074073,
+            "lastOrderDaysAgo": 100.55430555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18351,
+        "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90111,
+              "orderName": "S38234",
+              "date": "2025-08-04 11:41:48",
+              "quantity": 4,
+              "priceUnit": 18.8
+            },
+            {
+              "orderId": 86996,
+              "orderName": "S35119",
+              "date": "2025-02-28 09:00:50",
+              "quantity": 2,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 1,
+            "min": 2,
+            "max": 4,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 157.07011574074073,
+            "lastOrderDaysAgo": 100.55430555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": [
+      {
+        "productId": 18356,
+        "productName": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

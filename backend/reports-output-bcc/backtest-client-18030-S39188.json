@@ -1,0 +1,30 @@
+{
+  "clientId": 18030,
+  "clientName": "La Taniere Des Ourses",
+  "orderName": "S39188",
+  "orderDate": "2025-09-17 06:28:35",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 16,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.7619047619047619,
+    "recall": 1,
+    "f1Score": 0.8648648648648648,
+    "mae": 0.3125,
+    "wmape": 17.24137931034483,
+    "mape": 17.708333333333332,
+    "bias": -10.344827586206897
+  },
+  "distribution": {
+    "exactMatch": 11,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 28711,
+    "completionTokens": 5007,
+    "totalTokens": 33718
+  }
+}

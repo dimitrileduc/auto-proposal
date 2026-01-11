@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:27:09.197Z"
+  },
+  "client": {
+    "id": 3529,
+    "name": "DELISALADES"
+  },
+  "config": {
+    "analysisEndDate": "2025-02-10 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 2188,
+        "completionTokens": 342,
+        "totalTokens": 2530
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 2408,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8987,
+        "product_name": "[PF0078] FILOU CHASSEUR 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 80,
+        "quantity_source": "llm",
+        "price_unit": 8.7,
+        "subtotal": 696,
+        "confidence": "high",
+        "order_count": 40,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande très régulier (environ tous les 14 jours) avec une quantité stable de 80 unités. Bien qu'il n'y ait pas de commandes enregistrées sur la fin d'année 2024, les données N-1 (janvier/février 2024) confirment un besoin actif sur cette période avec des commandes de 80u et 160u. La dernière commande connue remontant à plus de 4 mois, le risque de rupture est critique face au seuil de 30 jours. En application du principe de précaution B2B et de la règle de la médiane historique, une commande de 80 unités est nécessaire pour reconstituer le stock.",
+          "summary": "",
+          "baseline_quantity": 80,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-04-12 12:42:22",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-04-04 08:44:59",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-03-21 09:10:53",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-03-17 09:29:46",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-03-06 10:08:31",
+            "quantity": 80,
+            "price_unit": 8.7
+          }
+        ]
+      },
+      {
+        "product_id": 14796,
+        "product_name": "[PF3251] JEFKE CHIVE VINAIGRETTE 5L",
+        "product_uom": "TU4",
+        "quantity_recommended": 40,
+        "quantity_source": "llm",
+        "price_unit": 42.8,
+        "subtotal": 1712,
+        "confidence": "high",
+        "order_count": 23,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 30 à 45 jours. La dernière commande enregistrée remonte au 26 septembre 2024, soit plus de 130 jours sans activité, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain), une commande est nécessaire pour reconstituer le stock. La quantité retenue est de 40 unités, correspondant à la médiane et à la valeur la plus fréquente observée dans l'historique récent et passé, tout en évitant les pics exceptionnels de 45 ou 48 unités.",
+          "summary": "",
+          "baseline_quantity": 40,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-06-14 11:03:04",
+            "quantity": 48,
+            "price_unit": 42.8
+          },
+          {
+            "date": "2023-06-08 06:55:20",
+            "quantity": 40,
+            "price_unit": 42.8
+          },
+          {
+            "date": "2023-05-15 09:51:18",
+            "quantity": 40,
+            "price_unit": 42.8
+          },
+          {
+            "date": "2023-04-24 13:04:02",
+            "quantity": 40,
+            "price_unit": 42.8
+          },
+          {
+            "date": "2023-04-12 11:03:09",
+            "quantity": 45,
+            "price_unit": 10.7
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 2,
+    "optional_products_count": 0,
+    "base_amount": 2408,
+    "optional_amount": 0,
+    "total_amount": 2408,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3059
+}

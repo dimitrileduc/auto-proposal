@@ -1,0 +1,396 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:06:26.426Z"
+  },
+  "client": {
+    "id": 60488,
+    "name": "MDH FOODSERVICE"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 8,
+      "llm_usage": {
+        "calls": 8,
+        "promptTokens": 7388,
+        "completionTokens": 1435,
+        "totalTokens": 8823
+      }
+    },
+    "proposalFinal": {
+      "products_count": 8,
+      "total_amount": 1254,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18353,
+        "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 17,
+        "subtotal": 85,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 29/10/2025 (il y a 13 jours). Le cycle moyen entre les commandes précédentes est d'environ 45 jours. Avec un seuil de réapprovisionnement de 30 jours, l'horizon de risque s'étend jusqu'au 11/12/2025, soit 43 jours après la dernière commande. Le risque de rupture est donc imminent dans cette fenêtre. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre des quantités de 10, 2, 5 et 4 unités. La médiane de ces commandes est de 4,5. En suivant la règle de précaution B2B et en privilégiant la médiane tout en évitant de surstocker sur des produits à rotation modérée, on retient la valeur pivot de 5 unités pour maintenir le stock sans intégrer le pic exceptionnel de 10u.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-22 09:26:25",
+            "quantity": 2,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-07-14 07:06:04",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-06-13 11:44:43",
+            "quantity": 4,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-05-05 14:04:28",
+            "quantity": 2,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-02-07 10:55:33",
+            "quantity": 5,
+            "price_unit": 17
+          }
+        ]
+      },
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17,
+        "subtotal": 51,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION) : La dernière commande date du 29 octobre (il y a 13 jours). Le cycle moyen entre les commandes précédentes est d'environ 35 à 40 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture d'ici la fin de la période (13 + 30 = 43 jours, ce qui dépasse le cycle moyen). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 (QUANTITÉ) : L'historique récent montre des commandes de 2u, 3u et 5u. La médiane de ces quantités est de 3u. Conformément à la règle de ne pas surestimer et de privilégier la médiane pour éviter les stocks de sécurité excessifs, la quantité retenue est de 3.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-05 10:04:04",
+            "quantity": 2,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-04-07 12:19:09",
+            "quantity": 1,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-03-24 11:32:39",
+            "quantity": 1,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-02-07 10:55:33",
+            "quantity": 3,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-01-10 09:04:07",
+            "quantity": 3,
+            "price_unit": 17
+          }
+        ]
+      },
+      {
+        "product_id": 18352,
+        "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 17,
+        "subtotal": 170,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 29 octobre (il y a 13 jours). Bien que l'historique soit limité, le délai de réapprovisionnement de 30 jours impose une vigilance sur ce produit. En application du principe de précaution B2B (Étape 1), un risque de rupture est identifié car le cycle de rotation n'est pas encore stabilisé. Pour la quantité (Étape 2), la commande la plus récente de 10 unités est retenue comme référence de volume actuel, la commande isolée de 1 unité en juin étant considérée comme non représentative de la demande actuelle.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-29 14:49:41",
+            "quantity": 10,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-06-13 11:44:43",
+            "quantity": 1,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-05-05 14:04:28",
+            "quantity": 1,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-03-24 11:32:39",
+            "quantity": 1,
+            "price_unit": 17
+          }
+        ]
+      },
+      {
+        "product_id": 18355,
+        "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 17,
+        "subtotal": 68,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une accélération récente (dernière commande il y a 13 jours, cycle précédent de ~60 jours). Avec un seuil de réapprovisionnement de 30 jours et une irrégularité marquée dans les volumes (1u, 4u, 10u), le principe de précaution B2B s'applique pour éviter une rupture sur ce produit bio. La quantité retenue est la médiane de l'historique récent (4u), excluant le pic exceptionnel de 10u pour éviter le surstockage tout en assurant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-13 11:44:43",
+            "quantity": 4,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-05-05 14:04:28",
+            "quantity": 2,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-05-05 10:04:04",
+            "quantity": 2,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-03-24 11:32:39",
+            "quantity": 1,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-01-10 09:04:07",
+            "quantity": 5,
+            "price_unit": 17
+          }
+        ]
+      },
+      {
+        "product_id": 18351,
+        "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17,
+        "subtotal": 51,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 29 octobre, soit il y a 13 jours. Bien que le cycle historique soit long (environ 100 jours), l'absence d'historique N-1 et l'irrégularité des intervalles imposent l'application du principe de précaution B2B. Avec un seuil de réapprovisionnement de 30 jours, il existe un risque de rupture si la demande se manifeste plus tôt que prévu. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre des commandes de 2u, 3u et 3u. La médiane est de 3u. Conformément aux règles, on maintient cette quantité stable pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-13 11:44:43",
+            "quantity": 2,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-05-05 14:04:28",
+            "quantity": 2,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-05-05 10:04:04",
+            "quantity": 1,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-04-07 12:19:09",
+            "quantity": 1,
+            "price_unit": 17
+          },
+          {
+            "date": "2025-02-07 10:55:33",
+            "quantity": 2,
+            "price_unit": 17
+          }
+        ]
+      },
+      {
+        "product_id": 18356,
+        "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 25.3,
+        "subtotal": 253,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 29/10, soit 13 jours avant la date actuelle. Le cycle moyen entre les commandes précédentes est d'environ 60 jours, mais l'intervalle le plus récent était de 37 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture (13 jours écoulés + 30 jours de seuil = 43 jours, dépassant le cycle court observé). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : Estimation quantité. L'historique récent montre des commandes de 10u, 3u et 10u. La médiane de ces commandes est de 10u. Conformément à la règle de maintien de la quantité pour une rotation régulière sans surstockage inutile, la quantité retenue est de 10u.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-29 14:49:41",
+            "quantity": 10,
+            "price_unit": 25.3
+          },
+          {
+            "date": "2025-09-22 09:26:25",
+            "quantity": 3,
+            "price_unit": 25.3
+          },
+          {
+            "date": "2025-06-13 11:44:43",
+            "quantity": 10,
+            "price_unit": 25.3
+          },
+          {
+            "date": "2025-02-07 10:55:33",
+            "quantity": 12,
+            "price_unit": 25.3
+          }
+        ]
+      },
+      {
+        "product_id": 18275,
+        "product_name": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 23.04,
+        "subtotal": 230.39999999999998,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 28 jours entre chaque réapprovisionnement. La dernière commande datant du 29 octobre (il y a 13 jours), le prochain besoin est estimé sous 15 jours, ce qui entre dans l'horizon de 30 jours du seuil de réapprovisionnement. Bien que la dernière commande ait été de 5u, l'historique récent montre une stabilité forte à 10u (médiane et mode). En application du principe de précaution B2B et de la règle de la médiane, une quantité de 10u est préconisée pour couvrir le cycle habituel sans risque de rupture.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-05 14:04:28",
+            "quantity": 20,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-05-05 10:04:04",
+            "quantity": 5,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-04-07 12:19:09",
+            "quantity": 8,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-02-07 10:55:33",
+            "quantity": 8,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-01-10 09:04:07",
+            "quantity": 10,
+            "price_unit": 17.28
+          }
+        ]
+      },
+      {
+        "product_id": 18276,
+        "product_name": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 15,
+        "quantity_source": "llm",
+        "price_unit": 23.04,
+        "subtotal": 345.59999999999997,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 28 jours entre les réapprovisionnements. La dernière commande datant du 29 octobre (il y a 13 jours), le prochain besoin est estimé dans environ 15 jours, ce qui entre dans l'horizon de risque des 30 jours (Replenishment Threshold Days). En application du principe de précaution B2B, une commande est nécessaire. Pour la quantité, l'historique récent présente des variations (5u, 20u, 20u, 10u, 10u, 30u). La médiane de ces commandes est de 15 unités. Conformément aux règles de gestion, nous retenons cette valeur médiane pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 15,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-05 10:04:04",
+            "quantity": 20,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-04-07 12:19:09",
+            "quantity": 8,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-03-24 11:32:39",
+            "quantity": 16,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-02-07 10:55:33",
+            "quantity": 8,
+            "price_unit": 17.28
+          },
+          {
+            "date": "2025-01-10 09:04:07",
+            "quantity": 20,
+            "price_unit": 17.28
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 8,
+    "optional_products_count": 0,
+    "base_amount": 1254,
+    "optional_amount": 0,
+    "total_amount": 1254,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3502
+}

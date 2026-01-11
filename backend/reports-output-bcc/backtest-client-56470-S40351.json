@@ -1,0 +1,30 @@
+{
+  "clientId": 56470,
+  "clientName": "Saccone, Cédric - La ferme au moulin",
+  "orderName": "S40351",
+  "orderDate": "2025-11-13 13:55:48",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 29,
+    "fn": 0,
+    "precision": 0.12121212121212122,
+    "recall": 1,
+    "f1Score": 0.21621621621621626,
+    "mae": 2,
+    "wmape": 100,
+    "mape": 37.5,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 51,
+    "promptTokens": 44990,
+    "completionTokens": 7167,
+    "totalTokens": 52157
+  }
+}

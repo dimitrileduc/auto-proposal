@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:28:21.742Z"
+  },
+  "client": {
+    "id": 58330,
+    "name": "CARREFOUR BELGIUM SA, CARREFOUR MARKET AALTER"
+  },
+  "config": {
+    "analysisEndDate": "2025-04-06 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 17,
+        "promptTokens": 14628,
+        "completionTokens": 1439,
+        "totalTokens": 16067
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 324,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 27,
+        "minimum_required": 300,
+        "gap_filled": 297,
+        "products_adjusted": 1
+      }
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 16790,
+        "product_name": "[JF025] JF VINAIGRETTE FH WECK 200ML",
+        "product_uom": "TU9",
+        "quantity_recommended": 12,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 324,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Absence totale d'historique de commandes (récent et N-1). En application du principe de précaution B2B et de la règle de détection du besoin en cas de doute ou d'absence de cycle déterminé, une commande est nécessaire pour constituer un stock initial ou tester la rotation. La quantité minimale de 1 unité est retenue conformément à la règle de privilégier la valeur la plus basse en cas d'incertitude majeure.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-30 14:42:54",
+            "quantity": 1,
+            "price_unit": 27
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 1,
+    "base_amount": 0,
+    "optional_amount": 324,
+    "total_amount": 324,
+    "moq_adjusted": true,
+    "moq_gap": 297
+  },
+  "execution_time_ms": 4340
+}

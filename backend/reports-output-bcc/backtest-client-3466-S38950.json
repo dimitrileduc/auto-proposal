@@ -1,0 +1,30 @@
+{
+  "clientId": 3466,
+  "clientName": "COLONA",
+  "orderName": "S38950",
+  "orderDate": "2025-09-03 09:04:36",
+  "cutoffDate": "2025-09-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 104,
+    "wmape": 32.5,
+    "mape": 32.5,
+    "bias": -32.5
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 1823,
+    "completionTokens": 398,
+    "totalTokens": 2221
+  }
+}

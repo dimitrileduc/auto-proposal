@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:23:54.991Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-11 00:00:00"
+    }
+  },
+  "client": {
+    "id": 23924,
+    "name": "Sweet Little Belgium",
+    "order": {
+      "name": "S40233",
+      "date": "2025-11-12 08:41:22"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 1,
+        "falseNegatives": 3,
+        "total": 6
+      },
+      "productMetrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "f1Score": 0.5,
+        "totalPredicted": 3,
+        "totalReal": 5
+      },
+      "quantityMetrics": {
+        "mae": 0.5,
+        "wmape": 4.761904761904762,
+        "mape": 50,
+        "bias": 4.761904761904762,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 1
+        },
+        "rmse": 0.7071067811865476
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 3,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 1,
+          "wmape": 100,
+          "mape": 100,
+          "bias": 100,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 1
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 2707,
+    "completionTokens": 494,
+    "totalTokens": 3201
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 13061,
+        "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89315,
+              "orderName": "S37438",
+              "date": "2025-06-19 06:21:49",
+              "quantity": 2,
+              "priceUnit": 13.1
+            },
+            {
+              "orderId": 85796,
+              "orderName": "S33919",
+              "date": "2024-12-16 13:25:24",
+              "quantity": 1,
+              "priceUnit": 12.72
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 184.66417824074074,
+            "lastOrderDaysAgo": 144.7765162037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 20,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 20
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 89315,
+              "orderName": "S37438",
+              "date": "2025-06-19 06:21:49",
+              "quantity": 20,
+              "priceUnit": 12.67
+            },
+            {
+              "orderId": 85796,
+              "orderName": "S33919",
+              "date": "2024-12-16 13:25:24",
+              "quantity": 20,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 85410,
+              "orderName": "S33533",
+              "date": "2024-11-26 10:00:09",
+              "quantity": 12,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 84363,
+              "orderName": "S32486",
+              "date": "2024-09-30 11:57:02",
+              "quantity": 10,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 83077,
+              "orderName": "S31200",
+              "date": "2024-07-10 11:52:50",
+              "quantity": 25,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 80062,
+              "orderName": "S28185",
+              "date": "2023-12-14 07:23:41",
+              "quantity": 35,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 79732,
+              "orderName": "S27855",
+              "date": "2023-11-28 08:49:46",
+              "quantity": 180,
+              "priceUnit": 12.3
+            },
+            {
+              "orderId": 79449,
+              "orderName": "S27572",
+              "date": "2023-11-17 07:37:03",
+              "quantity": 50,
+              "priceUnit": 12.3
+            }
+          ],
+          "statistics": {
+            "mean": 44,
+            "median": 23,
+            "stdDev": 52.803882433018124,
+            "min": 10,
+            "max": 180,
+            "cv": 1.2000882371140482,
+            "trend": "increasing",
+            "outliers": [
+              180
+            ],
+            "regularityScore": 0.03250027972032101
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 82.84372685185186,
+            "lastOrderDaysAgo": 144.7765162037037,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18383,
+        "productName": "[WIG06] WIGNAC cidre naturel bio sans alcool 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 144,
+            "orders": [
+              {
+                "orderId": 89315,
+                "orderName": "S37438",
+                "date": "2025-06-19 06:21:49",
+                "quantity": 1,
+                "priceUnit": 22.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18266,
+        "productName": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18264,
+        "productName": "[BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18307,
+        "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,934 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:14:45.330Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-12 00:00:00"
+    }
+  },
+  "client": {
+    "id": 38775,
+    "name": "DB DRINK BOULANGER SRL",
+    "order": {
+      "name": "S40316",
+      "date": "2025-11-13 12:25:41"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 0,
+        "falsePositives": 21,
+        "falseNegatives": 6,
+        "total": 27
+      },
+      "productMetrics": {
+        "precision": 0,
+        "recall": 0,
+        "f1Score": 0,
+        "totalPredicted": 21,
+        "totalReal": 6
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 6,
+          "falseNegatives": 6,
+          "total": 12
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 6,
+          "totalReal": 6
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 15,
+          "falseNegatives": 0,
+          "total": 15
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 15,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 18661,
+    "completionTokens": 3323,
+    "totalTokens": 21984
+  },
+  "products": {
+    "truePositives": [],
+    "falsePositives": [
+      {
+        "productId": 13058,
+        "productName": "[LV160] LV Tartinade Aubergine 190g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 12.79
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 12.79
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 12.79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13060,
+        "productName": "[LV161] LV Tartinade Mangue curry 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14450,
+        "productName": "[LV330] LV BIO Tartinade Toscana 190g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 14.52
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 14.52
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 14.52
+              },
+              {
+                "orderId": 83366,
+                "orderName": "S31489",
+                "date": "2024-08-01 06:11:24",
+                "quantity": 2,
+                "priceUnit": 14.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13070,
+        "productName": "[LV126] LV Tartinade Tomate Ail des Ours 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 13.53
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 13.53
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 13.53
+              },
+              {
+                "orderId": 83366,
+                "orderName": "S31489",
+                "date": "2024-08-01 06:11:24",
+                "quantity": 1,
+                "priceUnit": 13.14
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13067,
+        "productName": "[LV135] LV Tartinade Basilico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 13.53
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 13.53
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 13.53
+              },
+              {
+                "orderId": 83366,
+                "orderName": "S31489",
+                "date": "2024-08-01 06:11:24",
+                "quantity": 1,
+                "priceUnit": 13.14
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13061,
+        "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13062,
+        "productName": "[LV131] LV Tartinade Potiron 190g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 2,
+                "priceUnit": 12.67
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 12.67
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 12.67
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13097,
+        "productName": "[LV003] LV Pizza Croccantina tomate origan 150 g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 1,
+                "priceUnit": 29.45
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 29.45
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13095,
+        "productName": "[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 1,
+                "priceUnit": 27.03
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 27.03
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13096,
+        "productName": "[LV002] LV Pizza Croccantina au romarin 150 g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 1,
+                "priceUnit": 27.03
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 27.03
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18359,
+        "productName": "[RISH01] RISH kombucha BIO - original 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 29,
+            "orders": [
+              {
+                "orderId": 91542,
+                "orderName": "S39665",
+                "date": "2025-10-13 07:34:13",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17066,
+        "productName": "[LV345] LV Spread KIDS 200ml Organic",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 112,
+            "orders": [
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 14.22
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13101,
+        "productName": "[LV036] LV Olives Vertes dénoyautées BE 350g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 112,
+            "orders": [
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 2,
+                "priceUnit": 9.6
+              },
+              {
+                "orderId": 87852,
+                "orderName": "S35975",
+                "date": "2025-04-11 07:13:19",
+                "quantity": 1,
+                "priceUnit": 9.6
+              },
+              {
+                "orderId": 83366,
+                "orderName": "S31489",
+                "date": "2024-08-01 06:11:24",
+                "quantity": 1,
+                "priceUnit": 9.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18310,
+        "productName": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 112,
+            "orders": [
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 32.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18307,
+        "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 112,
+            "orders": [
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 32.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18308,
+        "productName": "[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 112,
+            "orders": [
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 32.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18309,
+        "productName": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 112,
+            "orders": [
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 32.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18358,
+        "productName": "[RISH02] RISH kombucha BIO - hibiscus 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 112,
+            "orders": [
+              {
+                "orderId": 89974,
+                "orderName": "S38097",
+                "date": "2025-07-22 08:03:49",
+                "quantity": 1,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 19977,
+        "productName": "[DIS0012] Display Foodprint Karton LD",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 19398,
+        "productName": "[LD013] LD Tuscan Organic Spread 180 g",
+        "mismatchType": "false_negative",
+        "quantity": 8,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 19434,
+        "productName": "[LD014] LD Organic Avocado Spread 180 g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 19435,
+        "productName": "[LD015] LD Onion Spread 180g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 19392,
+        "productName": "[LD007] LD Organic Pineapple Coconut Spread 180 g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 19396,
+        "productName": "[LD011] LD Organic Kids Spread 180 g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

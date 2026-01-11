@@ -1,0 +1,30 @@
+{
+  "clientId": 48813,
+  "clientName": "E CENTER ENGELS WIDDERSDORF, E CENTER ENGELS MARSDORF GMBH",
+  "orderName": "S38562",
+  "orderDate": "2025-08-19 07:04:43",
+  "cutoffDate": "2025-08-18 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.42857142857142855,
+    "recall": 1,
+    "f1Score": 0.6,
+    "mae": 0.6666666666666666,
+    "wmape": 33.33333333333333,
+    "mape": 33.333333333333336,
+    "bias": -33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13238,
+    "completionTokens": 2262,
+    "totalTokens": 15500
+  }
+}

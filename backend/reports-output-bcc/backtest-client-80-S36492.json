@@ -1,0 +1,30 @@
+{
+  "clientId": 80,
+  "clientName": "L'Epicerie du Nord-Produits en vrac",
+  "orderName": "S36492",
+  "orderDate": "2025-05-12 07:01:21",
+  "cutoffDate": "2025-05-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8,
+    "recall": 1,
+    "f1Score": 0.888888888888889,
+    "mae": 0.25,
+    "wmape": 14.285714285714285,
+    "mape": 8.333333333333332,
+    "bias": -14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4558,
+    "completionTokens": 788,
+    "totalTokens": 5346
+  }
+}

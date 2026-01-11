@@ -1,0 +1,1496 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:19:14.615Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-06-29 00:00:00"
+    }
+  },
+  "client": {
+    "id": 59033,
+    "name": "Sandrine Sauvage - La main dans le vrac, Sandrine",
+    "order": {
+      "name": "S37735",
+      "date": "2025-06-30 12:52:40"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 10,
+        "falsePositives": 24,
+        "falseNegatives": 1,
+        "total": 35
+      },
+      "productMetrics": {
+        "precision": 0.29411764705882354,
+        "recall": 0.9090909090909091,
+        "f1Score": 0.4444444444444445,
+        "totalPredicted": 34,
+        "totalReal": 11
+      },
+      "quantityMetrics": {
+        "mae": 0.5,
+        "wmape": 33.33333333333333,
+        "mape": 25,
+        "bias": -33.33333333333333,
+        "distribution": {
+          "exactMatch": 5,
+          "partialMatch": 5
+        },
+        "rmse": 0.7071067811865476
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 13,
+          "falseNegatives": 1,
+          "total": 14
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 13,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 10,
+          "falsePositives": 11,
+          "falseNegatives": 0,
+          "total": 21
+        },
+        "productMetrics": {
+          "precision": 0.47619047619047616,
+          "recall": 1,
+          "f1Score": 0.6451612903225806,
+          "totalPredicted": 21,
+          "totalReal": 10
+        },
+        "quantityMetrics": {
+          "mae": 0.5,
+          "wmape": 33.33333333333333,
+          "mape": 25,
+          "bias": -33.33333333333333,
+          "distribution": {
+            "exactMatch": 5,
+            "partialMatch": 5
+          },
+          "rmse": 0.7071067811865476
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 34,
+    "promptTokens": 30174,
+    "completionTokens": 5039,
+    "totalTokens": 35213
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 13058,
+        "productName": "[LV160] LV Tartinade Aubergine 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 12.79
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 12.79
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.22408564814815,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 13063,
+        "productName": "[LV132] LV Tartinade Houmous type 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 13.29
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 13.29
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.22408564814815,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 12.67
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 12.67
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.22408564814815,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18371,
+        "productName": "[RIT01] RITCHIE Orange - verre 275ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 30.96
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 30.96
+            },
+            {
+              "orderId": 86481,
+              "orderName": "S34604",
+              "date": "2025-01-30 13:09:10",
+              "quantity": 1,
+              "priceUnit": 30.96
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.998647781374159
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.45889467592593,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18364,
+        "productName": "[RIT02] RITCHIE Citron - Framboise - verre 275ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 30.96
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 30.96
+            },
+            {
+              "orderId": 86481,
+              "orderName": "S34604",
+              "date": "2025-01-30 13:09:10",
+              "quantity": 2,
+              "priceUnit": 30.96
+            }
+          ],
+          "statistics": {
+            "mean": 1.3333333333333333,
+            "median": 1,
+            "stdDev": 0.4714045207910317,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3535533905932738,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.7865157470181948
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.45889467592593,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18365,
+        "productName": "[RIT03] RITCHIE Citron-Gingembre - verre 275ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 30.96
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 30.96
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.22408564814815,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18372,
+        "productName": "[RIT04] RITCHIE Pamplemousse - verre 275ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 32.16
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 32.16
+            },
+            {
+              "orderId": 86481,
+              "orderName": "S34604",
+              "date": "2025-01-30 13:09:10",
+              "quantity": 1,
+              "priceUnit": 32.16
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.998647781374159
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.45889467592593,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18367,
+        "productName": "[RIT05] RITCHIE Cola - verre 275ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 30.96
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 30.96
+            },
+            {
+              "orderId": 86481,
+              "orderName": "S34604",
+              "date": "2025-01-30 13:09:10",
+              "quantity": 1,
+              "priceUnit": 30.96
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.998647781374159
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.45889467592593,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 2,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86481,
+              "orderName": "S34604",
+              "date": "2025-01-30 13:09:10",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1.3333333333333333,
+            "median": 1,
+            "stdDev": 0.4714045207910317,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3535533905932738,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.7865157470181948
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.45889467592593,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89284,
+              "orderName": "S37407",
+              "date": "2025-06-18 12:10:47",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 87780,
+              "orderName": "S35903",
+              "date": "2025-04-10 06:48:06",
+              "quantity": 1,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86481,
+              "orderName": "S34604",
+              "date": "2025-01-30 13:09:10",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.998647781374159
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.45889467592593,
+            "lastOrderDaysAgo": 10.492511574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 19370,
+        "productName": "[RIT11] RITCHIE Orange Sanguine - verre 275ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 30.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14850,
+        "productName": "[MF0047] MF Mayonnaise 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 16.5
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 16.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16936,
+        "productName": "[MF0050] MF Cornichons aigre doux (belge) 500g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 23.04
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 23.04
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17769,
+        "productName": "[MF0061] MF Compote",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 12.37
+              },
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 1,
+                "priceUnit": 12.37
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13054,
+        "productName": "[LV157] LV Ketchup aux tomates 263 ml bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 24.15
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13060,
+        "productName": "[LV161] LV Tartinade Mangue curry 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13068,
+        "productName": "[LV136] LV Tartinade Betterave 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14450,
+        "productName": "[LV330] LV BIO Tartinade Toscana 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 14.52
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14451,
+        "productName": "[LV331] LV Tartinade Lentils Balsamico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 14.52
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17066,
+        "productName": "[LV345] LV Spread KIDS 200ml Organic",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 14.22
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18351,
+        "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18317,
+        "productName": "[fsv06] Noix du Brésil nature bio vrac 3kg",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 60.95
+              },
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 60.95
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18312,
+        "productName": "[fsv09] Noix de cajou grillées salées bio vrac 2,8kg ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 58.82
+              },
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 2,
+                "priceUnit": 58.82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18269,
+        "productName": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 27.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18272,
+        "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 27.92
+              },
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 1,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18275,
+        "productName": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18270,
+        "productName": "[JOY05] Organic Cherry Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 10,
+            "orders": [
+              {
+                "orderId": 89284,
+                "orderName": "S37407",
+                "date": "2025-06-18 12:10:47",
+                "quantity": 1,
+                "priceUnit": 31.84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13061,
+        "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 79,
+            "orders": [
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16763,
+        "productName": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 79,
+            "orders": [
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18315,
+        "productName": "[fsv10] Noix de cajou oignon/crème bio vrac 2,8kg ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 79,
+            "orders": [
+              {
+                "orderId": 87780,
+                "orderName": "S35903",
+                "date": "2025-04-10 06:48:06",
+                "quantity": 1,
+                "priceUnit": 59.72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13646,
+        "productName": "[LB003] LB Festive (4,5%) 33CL",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 149,
+            "orders": [
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 1,
+                "priceUnit": 40.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13647,
+        "productName": "[LB006] LB Brown (7,0%)  33CL",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 149,
+            "orders": [
+              {
+                "orderId": 86481,
+                "orderName": "S34604",
+                "date": "2025-01-30 13:09:10",
+                "quantity": 1,
+                "priceUnit": 42.08
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18276,
+        "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

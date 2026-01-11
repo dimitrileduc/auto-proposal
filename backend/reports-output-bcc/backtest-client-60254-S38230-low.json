@@ -1,0 +1,30 @@
+{
+  "clientId": 60254,
+  "clientName": "CHATEAU DE RIXENSART",
+  "orderName": "S38230",
+  "orderDate": "2025-07-25 06:44:24",
+  "cutoffDate": "2025-07-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 6.5,
+    "wmape": 76.47058823529412,
+    "mape": 77.08333333333333,
+    "bias": 76.47058823529412
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 1746,
+    "completionTokens": 358,
+    "totalTokens": 2104
+  }
+}

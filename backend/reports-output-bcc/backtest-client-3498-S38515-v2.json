@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:19:32.394Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-08-13 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3498,
+    "name": "RAFINA",
+    "order": {
+      "name": "S38515",
+      "date": "2025-08-14 06:42:06"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 1,
+        "wmape": 5.88235294117647,
+        "mape": 5.88235294117647,
+        "bias": 5.88235294117647,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 1
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 1,
+          "wmape": 5.88235294117647,
+          "mape": 5.88235294117647,
+          "bias": 5.88235294117647,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 1
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 926,
+    "completionTokens": 163,
+    "totalTokens": 1089
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9026,
+        "productName": "[PF0501] YVALLI VINAIGRETTE 5 KG JERRY",
+        "productUom": "TU4",
+        "prediction": {
+          "quantity": 18,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 17
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 5.88235294117647,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 88290,
+              "orderName": "S36413",
+              "date": "2025-04-28 11:50:08",
+              "quantity": 18,
+              "priceUnit": 44.08
+            },
+            {
+              "orderId": 86546,
+              "orderName": "S34669",
+              "date": "2025-02-04 13:28:33",
+              "quantity": 16,
+              "priceUnit": 44.08
+            },
+            {
+              "orderId": 83548,
+              "orderName": "S31671",
+              "date": "2024-08-13 12:46:07",
+              "quantity": 20,
+              "priceUnit": 40
+            },
+            {
+              "orderId": 82155,
+              "orderName": "S30278",
+              "date": "2024-05-14 14:23:30",
+              "quantity": 20,
+              "priceUnit": 40
+            },
+            {
+              "orderId": 80145,
+              "orderName": "S28268",
+              "date": "2023-12-19 12:05:24",
+              "quantity": 18,
+              "priceUnit": 40
+            },
+            {
+              "orderId": 4005,
+              "orderName": "S03999",
+              "date": "2023-08-22 11:24:21",
+              "quantity": 20,
+              "priceUnit": 40
+            }
+          ],
+          "statistics": {
+            "mean": 18.666666666666668,
+            "median": 19,
+            "stdDev": 1.49071198499986,
+            "min": 16,
+            "max": 20,
+            "cv": 0.07985957062499249,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8399739797333087
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 123.00358101851853,
+            "lastOrderDaysAgo": 106.50685185185185,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

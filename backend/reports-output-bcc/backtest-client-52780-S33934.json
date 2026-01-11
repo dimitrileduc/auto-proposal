@@ -1,0 +1,30 @@
+{
+  "clientId": 52780,
+  "clientName": "Carrefour Express Guillemins",
+  "orderName": "S33934",
+  "orderDate": "2025-01-07 07:02:38",
+  "cutoffDate": "2025-01-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1.7142857142857142,
+    "wmape": 75,
+    "mape": 80.95238095238095,
+    "bias": 75
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 6044,
+    "completionTokens": 970,
+    "totalTokens": 7014
+  }
+}

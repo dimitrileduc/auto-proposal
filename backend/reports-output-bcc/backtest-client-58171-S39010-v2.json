@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:17:52.483Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-04 00:00:00"
+    }
+  },
+  "client": {
+    "id": 58171,
+    "name": "SRL ALL SNACKS PRODUCTION",
+    "order": {
+      "name": "S39010",
+      "date": "2025-09-05 12:13:03"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 33,
+        "wmape": 37.5,
+        "mape": 37.5,
+        "bias": -37.5,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 33
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 33,
+          "wmape": 37.5,
+          "mape": 37.5,
+          "bias": -37.5,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 33
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 890,
+    "completionTokens": 198,
+    "totalTokens": 1088
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9005,
+        "productName": "[PF0164] FILOU MOUTARDE  10 KG",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 55,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 88
+        },
+        "error": {
+          "absolute": 33,
+          "percent": 37.5,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 89944,
+              "orderName": "S38067",
+              "date": "2025-07-15 08:53:30",
+              "quantity": 55,
+              "priceUnit": 9
+            },
+            {
+              "orderId": 88287,
+              "orderName": "S36410",
+              "date": "2025-04-28 11:11:11",
+              "quantity": 78,
+              "priceUnit": 9
+            },
+            {
+              "orderId": 86850,
+              "orderName": "S34973",
+              "date": "2025-02-20 09:58:31",
+              "quantity": 52,
+              "priceUnit": 9
+            },
+            {
+              "orderId": 86167,
+              "orderName": "S34290",
+              "date": "2025-01-13 14:36:34",
+              "quantity": 52,
+              "priceUnit": 9
+            },
+            {
+              "orderId": 85278,
+              "orderName": "S33401",
+              "date": "2024-11-20 09:28:22",
+              "quantity": 52,
+              "priceUnit": 9
+            },
+            {
+              "orderId": 84484,
+              "orderName": "S32607",
+              "date": "2024-10-04 09:03:52",
+              "quantity": 52,
+              "priceUnit": 9
+            }
+          ],
+          "statistics": {
+            "mean": 56.833333333333336,
+            "median": 52,
+            "stdDev": 9.529194905948536,
+            "min": 52,
+            "max": 78,
+            "cv": 0.16766911857973962,
+            "trend": "stable",
+            "outliers": [
+              78
+            ],
+            "regularityScore": 0.7992110442252192
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 56.79856018518518,
+            "lastOrderDaysAgo": 50.62951388888889,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 17979,
+  "clientName": "Press Line SA",
+  "orderName": "S40059",
+  "orderDate": "2025-11-05 14:51:35",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 17,
+    "fn": 0,
+    "precision": 0.32,
+    "recall": 1,
+    "f1Score": 0.48484848484848486,
+    "mae": 0.5,
+    "wmape": 30.76923076923077,
+    "mape": 37.5,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 26528,
+    "completionTokens": 4748,
+    "totalTokens": 31276
+  }
+}

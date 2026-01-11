@@ -1,0 +1,30 @@
+{
+  "clientId": 60333,
+  "clientName": "FORESTIA SA – Forestia",
+  "orderName": "S38915",
+  "orderDate": "2025-09-01 13:32:57",
+  "cutoffDate": "2025-08-31 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.25,
+    "recall": 1,
+    "f1Score": 0.4,
+    "mae": 1.5,
+    "wmape": 27.27272727272727,
+    "mape": 26.666666666666664,
+    "bias": -27.27272727272727
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12323,
+    "completionTokens": 1960,
+    "totalTokens": 14283
+  }
+}

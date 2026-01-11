@@ -1,0 +1,30 @@
+{
+  "clientId": 38845,
+  "clientName": "DLL AD WEZEMAAL WEDIS",
+  "orderName": "S39846",
+  "orderDate": "2025-10-21 12:06:38",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 19,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.6551724137931034,
+    "recall": 1,
+    "f1Score": 0.7916666666666666,
+    "mae": 0.7894736842105263,
+    "wmape": 42.857142857142854,
+    "mape": 39.473684210526315,
+    "bias": -42.857142857142854
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 15
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 29158,
+    "completionTokens": 4698,
+    "totalTokens": 33856
+  }
+}

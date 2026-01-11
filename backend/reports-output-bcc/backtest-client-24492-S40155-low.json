@@ -1,0 +1,30 @@
+{
+  "clientId": 24492,
+  "clientName": "Brasserie Bertinchamps",
+  "orderName": "S40155",
+  "orderDate": "2025-11-06 12:37:37",
+  "cutoffDate": "2025-11-05 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1,
+    "wmape": 100,
+    "mape": 100,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13696,
+    "completionTokens": 2531,
+    "totalTokens": 16227
+  }
+}

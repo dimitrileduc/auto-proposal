@@ -1,0 +1,30 @@
+{
+  "clientId": 60477,
+  "clientName": "MAISON DES VINS FINS",
+  "orderName": "S40242",
+  "orderDate": "2025-11-14 10:22:45",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1.8,
+    "wmape": 39.130434782608695,
+    "mape": 21.21212121212121,
+    "bias": -30.434782608695656
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4375,
+    "completionTokens": 772,
+    "totalTokens": 5147
+  }
+}

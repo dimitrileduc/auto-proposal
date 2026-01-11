@@ -1,0 +1,30 @@
+{
+  "clientId": 72027,
+  "clientName": "EDEKA Rhein Ruhr Stiftung & Co. KG, Verbrauchermarkt Endt-Kosubek",
+  "orderName": "S39456",
+  "orderDate": "2025-09-30 06:20:15",
+  "cutoffDate": "2025-09-29 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.1,
+    "recall": 1,
+    "f1Score": 0.18181818181818182,
+    "mae": 1,
+    "wmape": 100,
+    "mape": 100,
+    "bias": 100
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 19,
+    "promptTokens": 16751,
+    "completionTokens": 2691,
+    "totalTokens": 19442
+  }
+}

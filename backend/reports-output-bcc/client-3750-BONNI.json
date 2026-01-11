@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:08:42.233Z"
+  },
+  "client": {
+    "id": 3750,
+    "name": "BONNI"
+  },
+  "config": {
+    "analysisEndDate": "2025-07-30 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3524,
+        "completionTokens": 375,
+        "totalTokens": 3899
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 306.59999999999985,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 87.6,
+        "minimum_required": 300,
+        "gap_filled": 218.99999999999986,
+        "products_adjusted": 1
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9006,
+        "product_name": "[PF0165] FILOU COCKTAIL FRENKEN 3 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 35,
+        "quantity_source": "llm",
+        "price_unit": 8.76,
+        "subtotal": 306.59999999999985,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 04/06/2025, soit 56 jours. Bien que l'historique récent soit limité à une seule commande de 10u, le délai écoulé dépasse largement le cycle de réapprovisionnement suggéré par les données N-1 (intervalles de 9 à 70 jours). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est élevé. En application du principe de précaution B2B et de la règle de maintien des quantités régulières, une commande de 10 unités (médiane du volume récent le plus bas) est préconisée.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-04 07:42:19",
+            "quantity": 10,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-02-15 15:07:28",
+            "quantity": 10,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2023-11-28 13:03:47",
+            "quantity": 30,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2023-08-31 06:51:02",
+            "quantity": 20,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2023-08-22 13:24:24",
+            "quantity": 20,
+            "price_unit": 8.5
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 306.59999999999985,
+    "optional_amount": 0,
+    "total_amount": 306.59999999999985,
+    "moq_adjusted": true,
+    "moq_gap": 218.99999999999986
+  },
+  "execution_time_ms": 2701
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 56979,
+  "clientName": "DLL AD LOKEREN",
+  "orderName": "S39879",
+  "orderDate": "2025-10-22 13:48:05",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 18,
+    "promptTokens": 15946,
+    "completionTokens": 2904,
+    "totalTokens": 18850
+  }
+}

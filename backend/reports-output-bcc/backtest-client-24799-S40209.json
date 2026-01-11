@@ -1,0 +1,30 @@
+{
+  "clientId": 24799,
+  "clientName": "Marme - Hof & Laden",
+  "orderName": "S40209",
+  "orderDate": "2025-11-12 10:38:10",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 1,
+    "wmape": 42.857142857142854,
+    "mape": 77.77777777777777,
+    "bias": 14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19125,
+    "completionTokens": 2370,
+    "totalTokens": 21495
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 56861,
+  "clientName": "ITM LIÈGE COINTE",
+  "orderName": "S40315",
+  "orderDate": "2025-11-13 10:33:59",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.23076923076923078,
+    "recall": 1,
+    "f1Score": 0.375,
+    "mae": 3.3333333333333335,
+    "wmape": 62.5,
+    "mape": 58.333333333333336,
+    "bias": -62.5
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 26988,
+    "completionTokens": 4648,
+    "totalTokens": 31636
+  }
+}

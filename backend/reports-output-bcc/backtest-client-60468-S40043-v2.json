@@ -1,0 +1,1264 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:08:36.124Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-03 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60468,
+    "name": "LES SORBIERS",
+    "order": {
+      "name": "S40043",
+      "date": "2025-11-04 13:42:21"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 10,
+        "falsePositives": 15,
+        "falseNegatives": 0,
+        "total": 25
+      },
+      "productMetrics": {
+        "precision": 0.4,
+        "recall": 1,
+        "f1Score": 0.5714285714285715,
+        "totalPredicted": 25,
+        "totalReal": 10
+      },
+      "quantityMetrics": {
+        "mae": 1,
+        "wmape": 62.5,
+        "mape": 67.5,
+        "bias": 62.5,
+        "distribution": {
+          "exactMatch": 3,
+          "partialMatch": 7
+        },
+        "rmse": 1.3416407864998738
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 4,
+          "falseNegatives": 0,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 0.2,
+          "recall": 1,
+          "f1Score": 0.33333333333333337,
+          "totalPredicted": 5,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 1,
+          "wmape": 100,
+          "mape": 100,
+          "bias": 100,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 1
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 9,
+          "falsePositives": 11,
+          "falseNegatives": 0,
+          "total": 20
+        },
+        "productMetrics": {
+          "precision": 0.45,
+          "recall": 1,
+          "f1Score": 0.6206896551724138,
+          "totalPredicted": 20,
+          "totalReal": 9
+        },
+        "quantityMetrics": {
+          "mae": 1,
+          "wmape": 60,
+          "mape": 63.888888888888886,
+          "bias": 60,
+          "distribution": {
+            "exactMatch": 3,
+            "partialMatch": 6
+          },
+          "rmse": 1.3743685418725535
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 23719,
+    "completionTokens": 4051,
+    "totalTokens": 27770
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 13071,
+        "productName": "[LV188] LV Tartinade Aubergine  380g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90980,
+              "orderName": "S39103",
+              "date": "2025-09-17 06:38:08",
+              "quantity": 2,
+              "priceUnit": 23.48
+            },
+            {
+              "orderId": 89303,
+              "orderName": "S37426",
+              "date": "2025-06-17 08:19:39",
+              "quantity": 1,
+              "priceUnit": 23.48
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 91.92950231481481,
+            "lastOrderDaysAgo": 46.76518518518518,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13072,
+        "productName": "[LV138] LV Tartinade Carotte gingembre  380g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 90980,
+              "orderName": "S39103",
+              "date": "2025-09-17 06:38:08",
+              "quantity": 2,
+              "priceUnit": 23.67
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 46.76518518518518,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18276,
+        "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 90980,
+              "orderName": "S39103",
+              "date": "2025-09-17 06:38:08",
+              "quantity": 4,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 89196,
+              "orderName": "S37319",
+              "date": "2025-06-11 07:01:55",
+              "quantity": 1,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 88169,
+              "orderName": "S36292",
+              "date": "2025-04-22 07:21:32",
+              "quantity": 4,
+              "priceUnit": 28.8
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 4,
+            "stdDev": 1.4142135623730951,
+            "min": 1,
+            "max": 4,
+            "cv": 0.47140452079103173,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5874089560176822
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 73.98493055555555,
+            "lastOrderDaysAgo": 46.76518518518518,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18270,
+        "productName": "[JOY05] Organic Cherry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90335,
+              "orderName": "S38458",
+              "date": "2025-08-11 10:58:02",
+              "quantity": 3,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 88169,
+              "orderName": "S36292",
+              "date": "2025-04-22 07:21:32",
+              "quantity": 4,
+              "priceUnit": 33.6
+            }
+          ],
+          "statistics": {
+            "mean": 3.5,
+            "median": 4,
+            "stdDev": 0.5,
+            "min": 3,
+            "max": 4,
+            "cv": 0.14285714285714285,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9142857142857144
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 111.15034722222222,
+            "lastOrderDaysAgo": 83.58469907407408,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18272,
+        "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 90335,
+              "orderName": "S38458",
+              "date": "2025-08-11 10:58:02",
+              "quantity": 3,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 89196,
+              "orderName": "S37319",
+              "date": "2025-06-11 07:01:55",
+              "quantity": 1,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 88169,
+              "orderName": "S36292",
+              "date": "2025-04-22 07:21:32",
+              "quantity": 4,
+              "priceUnit": 28.8
+            }
+          ],
+          "statistics": {
+            "mean": 2.6666666666666665,
+            "median": 3,
+            "stdDev": 1.247219128924647,
+            "min": 1,
+            "max": 4,
+            "cv": 0.46770717334674267,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.6791505671572409
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 55.57517361111111,
+            "lastOrderDaysAgo": 83.58469907407408,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18275,
+        "productName": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 90335,
+              "orderName": "S38458",
+              "date": "2025-08-11 10:58:02",
+              "quantity": 2,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 89303,
+              "orderName": "S37426",
+              "date": "2025-06-17 08:19:39",
+              "quantity": 2,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 89196,
+              "orderName": "S37319",
+              "date": "2025-06-11 07:01:55",
+              "quantity": 3,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 88169,
+              "orderName": "S36292",
+              "date": "2025-04-22 07:21:32",
+              "quantity": 1,
+              "priceUnit": 28.8
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.7071067811865476,
+            "min": 1,
+            "max": 3,
+            "cv": 0.3535533905932738,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.5501665595580967
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 37.05011574074074,
+            "lastOrderDaysAgo": 83.58469907407408,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13058,
+        "productName": "[LV160] LV Tartinade Aubergine 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 25,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90160,
+              "orderName": "S38283",
+              "date": "2025-08-04 12:34:42",
+              "quantity": 5,
+              "priceUnit": 12.79
+            },
+            {
+              "orderId": 88919,
+              "orderName": "S37042",
+              "date": "2025-05-27 06:24:15",
+              "quantity": 1,
+              "priceUnit": 12.79
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 2,
+            "min": 1,
+            "max": 5,
+            "cv": 0.6666666666666666,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6000000000000001
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 69.25725694444445,
+            "lastOrderDaysAgo": 90.51756944444445,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13059,
+        "productName": "[LV129] LV Tartinade Carotte Gingembre 190g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 3,
+          "percent": 150,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 90160,
+              "orderName": "S38283",
+              "date": "2025-08-04 12:34:42",
+              "quantity": 5,
+              "priceUnit": 13.04
+            },
+            {
+              "orderId": 88919,
+              "orderName": "S37042",
+              "date": "2025-05-27 06:24:15",
+              "quantity": 1,
+              "priceUnit": 13.04
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 2,
+            "min": 1,
+            "max": 5,
+            "cv": 0.6666666666666666,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6000000000000001
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 69.25725694444445,
+            "lastOrderDaysAgo": 90.51756944444445,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18273,
+        "productName": "[JOY08] JOY! Organic Raspberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89303,
+              "orderName": "S37426",
+              "date": "2025-06-17 08:19:39",
+              "quantity": 3,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 89196,
+              "orderName": "S37319",
+              "date": "2025-06-11 07:01:55",
+              "quantity": 3,
+              "priceUnit": 33.6
+            },
+            {
+              "orderId": 88169,
+              "orderName": "S36292",
+              "date": "2025-04-22 07:21:32",
+              "quantity": 2,
+              "priceUnit": 33.6
+            }
+          ],
+          "statistics": {
+            "mean": 2.6666666666666665,
+            "median": 3,
+            "stdDev": 0.4714045207910317,
+            "min": 2,
+            "max": 3,
+            "cv": 0.1767766952966369,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.5803571480053441
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 28.020179398148148,
+            "lastOrderDaysAgo": 138.6946875,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18274,
+        "productName": "[JOY06] JOY! Organic Rhubarb Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 200,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89303,
+              "orderName": "S37426",
+              "date": "2025-06-17 08:19:39",
+              "quantity": 3,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 89196,
+              "orderName": "S37319",
+              "date": "2025-06-11 07:01:55",
+              "quantity": 3,
+              "priceUnit": 28.8
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 6.053981481481482,
+            "lastOrderDaysAgo": 138.6946875,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 13075,
+        "productName": "[LV189] LV Tartinade Houmous Type 380g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 46,
+            "orders": [
+              {
+                "orderId": 90980,
+                "orderName": "S39103",
+                "date": "2025-09-17 06:38:08",
+                "quantity": 1,
+                "priceUnit": 25.15
+              },
+              {
+                "orderId": 89303,
+                "orderName": "S37426",
+                "date": "2025-06-17 08:19:39",
+                "quantity": 1,
+                "priceUnit": 25.15
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13077,
+        "productName": "[LV217] LV Tartinade Basilic 380g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 46,
+            "orders": [
+              {
+                "orderId": 90980,
+                "orderName": "S39103",
+                "date": "2025-09-17 06:38:08",
+                "quantity": 2,
+                "priceUnit": 25.09
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18269,
+        "productName": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 83,
+            "orders": [
+              {
+                "orderId": 90335,
+                "orderName": "S38458",
+                "date": "2025-08-11 10:58:02",
+                "quantity": 2,
+                "priceUnit": 28.8
+              },
+              {
+                "orderId": 89303,
+                "orderName": "S37426",
+                "date": "2025-06-17 08:19:39",
+                "quantity": 2,
+                "priceUnit": 28.8
+              },
+              {
+                "orderId": 89196,
+                "orderName": "S37319",
+                "date": "2025-06-11 07:01:55",
+                "quantity": 3,
+                "priceUnit": 28.8
+              },
+              {
+                "orderId": 88169,
+                "orderName": "S36292",
+                "date": "2025-04-22 07:21:32",
+                "quantity": 2,
+                "priceUnit": 28.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 3,
+                "priceUnit": 18.8
+              },
+              {
+                "orderId": 88919,
+                "orderName": "S37042",
+                "date": "2025-05-27 06:24:15",
+                "quantity": 2,
+                "priceUnit": 18.8
+              },
+              {
+                "orderId": 88169,
+                "orderName": "S36292",
+                "date": "2025-04-22 07:21:32",
+                "quantity": 2,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18416,
+        "productName": "[REB05] REB chips bio - sel de mer 35g",
+        "mismatchType": "false_positive",
+        "quantity": 4,
+        "reason": "Predicted 4u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 4,
+                "priceUnit": 18.2
+              },
+              {
+                "orderId": 88919,
+                "orderName": "S37042",
+                "date": "2025-05-27 06:24:15",
+                "quantity": 3,
+                "priceUnit": 18.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 3,
+                "priceUnit": 18.8
+              },
+              {
+                "orderId": 88919,
+                "orderName": "S37042",
+                "date": "2025-05-27 06:24:15",
+                "quantity": 3,
+                "priceUnit": 18.8
+              },
+              {
+                "orderId": 88169,
+                "orderName": "S36292",
+                "date": "2025-04-22 07:21:32",
+                "quantity": 2,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18415,
+        "productName": "[REB06] REB chips bio - paprika fumé 35g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 3,
+                "priceUnit": 18.2
+              },
+              {
+                "orderId": 88919,
+                "orderName": "S37042",
+                "date": "2025-05-27 06:24:15",
+                "quantity": 2,
+                "priceUnit": 18.2
+              },
+              {
+                "orderId": 88169,
+                "orderName": "S36292",
+                "date": "2025-04-22 07:21:32",
+                "quantity": 1,
+                "priceUnit": 18.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 2,
+                "priceUnit": 18.8
+              },
+              {
+                "orderId": 88169,
+                "orderName": "S36292",
+                "date": "2025-04-22 07:21:32",
+                "quantity": 2,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 3,
+                "priceUnit": 18.8
+              },
+              {
+                "orderId": 88169,
+                "orderName": "S36292",
+                "date": "2025-04-22 07:21:32",
+                "quantity": 2,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18315,
+        "productName": "[fsv10] Noix de cajou oignon/crème bio vrac 2,8kg ",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 3,
+                "priceUnit": 59.72
+              },
+              {
+                "orderId": 88919,
+                "orderName": "S37042",
+                "date": "2025-05-27 06:24:15",
+                "quantity": 3,
+                "priceUnit": 59.72
+              },
+              {
+                "orderId": 86316,
+                "orderName": "S34439",
+                "date": "2025-01-21 13:29:57",
+                "quantity": 3,
+                "priceUnit": 59.72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18311,
+        "productName": "[fsv03] Noisette nature bio vrac 2,8kg ",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 3,
+                "priceUnit": 40.74
+              },
+              {
+                "orderId": 88919,
+                "orderName": "S37042",
+                "date": "2025-05-27 06:24:15",
+                "quantity": 3,
+                "priceUnit": 40.74
+              },
+              {
+                "orderId": 86316,
+                "orderName": "S34439",
+                "date": "2025-01-21 13:29:57",
+                "quantity": 3,
+                "priceUnit": 40.74
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18260,
+        "productName": "[fsv04] Amande nature bio vrac 2,8 kg",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90160,
+                "orderName": "S38283",
+                "date": "2025-08-04 12:34:42",
+                "quantity": 3,
+                "priceUnit": 40.74
+              },
+              {
+                "orderId": 86316,
+                "orderName": "S34439",
+                "date": "2025-01-21 13:29:57",
+                "quantity": 3,
+                "priceUnit": 40.74
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14453,
+        "productName": "[LV336] LV BIO Tartinade Tomato Basilico 380g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 138,
+            "orders": [
+              {
+                "orderId": 89303,
+                "orderName": "S37426",
+                "date": "2025-06-17 08:19:39",
+                "quantity": 1,
+                "priceUnit": 25.09
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13094,
+        "productName": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 144,
+            "orders": [
+              {
+                "orderId": 89196,
+                "orderName": "S37319",
+                "date": "2025-06-11 07:01:55",
+                "quantity": 3,
+                "priceUnit": 23.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13063,
+        "productName": "[LV132] LV Tartinade Houmous type 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 159,
+            "orders": [
+              {
+                "orderId": 88919,
+                "orderName": "S37042",
+                "date": "2025-05-27 06:24:15",
+                "quantity": 1,
+                "priceUnit": 13.29
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

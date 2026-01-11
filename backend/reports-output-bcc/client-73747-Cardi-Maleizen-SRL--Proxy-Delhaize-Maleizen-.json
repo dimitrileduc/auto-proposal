@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:15:00.195Z"
+  },
+  "client": {
+    "id": 73747,
+    "name": "Cardi Maleizen SRL (Proxy Delhaize Maleizen)"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-21 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 21,
+      "llm_usage": {
+        "calls": 21,
+        "promptTokens": 18662,
+        "completionTokens": 3327,
+        "totalTokens": 21989
+      }
+    },
+    "proposalFinal": {
+      "products_count": 21,
+      "total_amount": 470.94,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16746,
+        "product_name": "[JF004] JF MAYONNAIS POIVRE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 29 septembre, soit 22 jours. Le cycle entre les deux dernières commandes était de 52 jours. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons 52 jours d'intervalle dans seulement 8 jours. Il existe donc un risque de rupture imminent durant la période de couverture. ÉTAPE 2 : L'historique récent montre des quantités très faibles (1u et 2u). Conformément à la règle sur les rotations faibles et le principe de prudence (choisir la valeur la plus basse en cas de doute), la quantité retenue est de 1 unité pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16747,
+        "product_name": "[JF003] JF MAYONNAIS WASABI 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. L'historique montre des commandes environ tous les 20 à 30 jours (08/08, 28/08, 29/09). La dernière commande date de 22 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous atteignons 70% du cycle moyen constaté. ÉTAPE 2 : Estimation de la quantité. Les commandes récentes oscillent entre 1u et 2u. Conformément à la règle de précaution sur les faibles rotations et au choix de la valeur la plus basse en cas de doute, la quantité retenue est de 1 unité (médiane/minimum historique).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16780,
+        "product_name": "[JF009] JF SAUCE TARTARE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 29/09/2025, soit 22 jours avant la date actuelle. Le cycle précédent était de 52 jours. Avec un seuil de réapprovisionnement de 30 jours, l'horizon de risque s'étend jusqu'au 20/11/2025 (soit 52 jours après la dernière commande). Le risque de rupture est donc imminent durant cette période. Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une rotation très faible et constante de 1 unité par commande. La médiane est de 1. Conformément aux règles pour les rotations faibles (1-2u), la quantité de 1 unité est maintenue.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16743,
+        "product_name": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.8,
+        "subtotal": 25.8,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Le cycle observé entre les deux dernières commandes est de 52 jours. La dernière commande date du 29 septembre, soit il y a 22 jours. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons 52 jours d'écart dans seulement 8 jours (22 + 8 = 30). Le risque de rupture est donc imminent durant la période de couverture. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une consommation constante et très faible de 1 unité par commande. Conformément à la règle sur les rotations faibles, la médiane de 1 unité est maintenue pour éviter le surstock tout en assurant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 25.8
+          }
+        ]
+      },
+      {
+        "product_id": 16771,
+        "product_name": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 29 septembre, soit 22 jours avant la date actuelle. Le cycle précédent était de 52 jours. Avec un seuil de réapprovisionnement de 30 jours, nous couvrons l'horizon jusqu'au 20 novembre (soit 52 jours après la dernière commande). Le risque de rupture est imminent durant cette période. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une rotation très faible et constante de 1 unité par commande. Conformément à la règle sur les rotations faibles (1-2u), la médiane de 1 unité est maintenue pour éviter le surstockage tout en assurant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16762,
+        "product_name": "[JF019] JF SAUCE AIOLI PESTO 250M WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 21,
+        "subtotal": 21,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle de 52 jours entre les deux dernières commandes (08/08 au 29/09). Au 21/10, 22 jours se sont écoulés depuis la dernière commande. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons un total de 52 jours d'ici la fin de la période de surveillance, ce qui correspond exactement au cycle précédent. Il existe donc un risque de rupture imminent. Conformément à la règle de précaution B2B et à la gestion des faibles rotations (1-2u), la quantité retenue est de 1 unité, correspondant à la médiane et à la constante des commandes récentes.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 21
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 21
+          }
+        ]
+      },
+      {
+        "product_id": 16761,
+        "product_name": "[JF020] JF SAUCE AIOLI 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Le cycle observé entre les deux dernières commandes est de 52 jours. La dernière commande date du 29 septembre, soit il y a 22 jours. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons 52 jours d'écart dans seulement 8 jours, ce qui entre dans la fenêtre de vigilance. Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : Estimation quantité. L'historique récent montre une consommation constante et faible de 1 unité par commande. La médiane est de 1. Conformément aux règles de rotation faible, on maintient la quantité habituelle sans augmentation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16759,
+        "product_name": "[JF021] JF PICKLES 350 ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 20.94,
+        "subtotal": 20.94,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Le cycle moyen observé est d'environ 52 jours. La dernière commande date du 29 septembre, soit 22 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons 52 jours d'écart dans l'horizon de prévision (22 + 30 = 52). Le risque de rupture est donc confirmé selon le principe de précaution B2B. ÉTAPE 2 : L'historique récent montre une consommation constante et faible de 1 unité par commande. La médiane est de 1. Conformément aux règles de rotation faible, on maintient la quantité habituelle sans augmentation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 20.94
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 20.94
+          }
+        ]
+      },
+      {
+        "product_id": 16788,
+        "product_name": "[JF026] JF VINAIGRET TRUFFES WECK 200M",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 31.5,
+        "subtotal": 31.5,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier d'environ 20 à 30 jours (intervalles de 20 et 32 jours). La dernière commande datant du 29 septembre (soit 22 jours avant la date actuelle), nous atteignons 73% du cycle moyen, ce qui présente un risque de rupture imminent dans l'horizon des 30 jours du seuil de réapprovisionnement. Conformément au principe de précaution B2B et à la règle de la médiane sur une rotation faible et stable, une commande de 1 unité est préconisée pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 31.5
+          },
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 1,
+            "price_unit": 31.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 31.5
+          }
+        ]
+      },
+      {
+        "product_id": 16787,
+        "product_name": "[JF027] JF VINAIGRET MIEL MOU WECK 200",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 27,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 20 et 32 jours (moyenne de 26 jours). Depuis la dernière commande du 29 septembre, 22 jours se sont écoulés. Le risque de rupture est imminent dans l'horizon des 30 jours (seuil de réapprovisionnement). En application du principe de précaution B2B et face à une rotation très faible mais régulière, la quantité retenue correspond à la médiane historique, soit 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 27
+          },
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 1,
+            "price_unit": 27
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 27
+          }
+        ]
+      },
+      {
+        "product_id": 16786,
+        "product_name": "[JF024] JF VINAIGRET CIBOULE WECK 200M",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 27,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle d'environ 52 jours entre les deux dernières commandes. Au 21 octobre, 22 jours se sont écoulés depuis la dernière commande (29 septembre). Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons l'échéance théorique du cycle (52 jours) dans l'horizon de prévision. Par principe de précaution B2B et pour éviter une rupture sur ce produit à faible rotation, une commande est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane stricte et constante de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 27
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 27
+          }
+        ]
+      },
+      {
+        "product_id": 16745,
+        "product_name": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 23.4,
+        "subtotal": 23.4,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 28/08/2025, soit 54 jours avant la date actuelle. Le cycle observé entre les deux dernières commandes était de 20 jours. Le délai depuis la dernière commande dépasse largement le cycle habituel et l'horizon de 30 jours (Replenishment Threshold Days). Par principe de précaution B2B, un besoin de réapprovisionnement est détecté. ÉTAPE 2 : Estimation quantité. L'historique récent montre des commandes de 1u et 2u. La médiane est de 1,5u. En application de la règle privilégiant la valeur la plus basse en cas de doute sur une faible rotation, la quantité retenue est de 1u.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 2,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 23.4
+          }
+        ]
+      },
+      {
+        "product_id": 16749,
+        "product_name": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 39,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 28/08/2025, soit 54 jours avant la date actuelle. Bien que le cycle historique soit irrégulier (20 jours entre les deux premières commandes), le délai actuel dépasse largement la fréquence observée. En application du principe de précaution B2B (doute sur le cycle = prévoir commande) et compte tenu du seuil de réapprovisionnement de 30 jours, un risque de rupture est identifié. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent présente des commandes de 1u et 3u. La médiane de ces valeurs est de 2u. Conformément aux règles de gestion des rotations faibles et de prudence, la quantité retenue est la médiane pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 3,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 19354,
+        "product_name": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 28 août, soit 54 jours. Le cycle observé entre les deux commandes précédentes était de 20 jours. Bien que la rotation soit très faible et irrégulière, le délai depuis la dernière commande dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, créant un risque de rupture ou un besoin latent. En application du principe de précaution B2B et de la règle sur les rotations faibles (1-2u), une commande de 1 unité (valeur basse de la médiane historique) est préconisée pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16766,
+        "product_name": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 20 jours. La dernière commande remontant au 28 août (soit plus de 50 jours), le délai de réapprovisionnement est largement dépassé, ce qui indique un risque de rupture imminent ou un besoin de restockage immédiat selon le principe de précaution B2B. En suivant la règle de la médiane des quantités récentes (1u et 2u) et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage sur une faible rotation, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16763,
+        "product_name": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 28/08/2025, soit 54 jours avant la date actuelle. Le cycle observé entre les deux commandes précédentes était de 20 jours. Le délai depuis la dernière commande dépasse largement le cycle moyen et l'horizon de réapprovisionnement de 30 jours. Par principe de précaution B2B et pour éviter une rupture prolongée sur ce produit à faible rotation, un besoin est détecté. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre des commandes de 1u et 2u. Conformément à la règle de privilégier la valeur la plus basse en cas de doute sur une faible rotation (1-2u), la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-28 06:15:22",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 16778,
+        "product_name": "[JF018] JF SAUCE SAMOURAI 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 29 septembre, soit il y a 22 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture, d'autant plus que le cycle de rotation sur ce produit semble lent ou irrégulier. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane et à la dernière commande enregistrée, afin de maintenir le stock sans risque de surstockage sur une rotation faible.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-29 07:03:47",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16782,
+        "product_name": "[JF011] JF SAUCE TARTARE 470ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.8,
+        "subtotal": 25.8,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 08/08/2025, soit 74 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En l'absence d'un cycle régulier établi, le principe de précaution B2B s'applique pour éviter une rupture prolongée. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), la quantité est maintenue à 1 unité (médiane de l'historique disponible) sans augmentation injustifiée.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 25.8
+          }
+        ]
+      },
+      {
+        "product_id": 16790,
+        "product_name": "[JF025] JF VINAIGRETTE FH WECK 200ML",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 27,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 08/08/2025, soit 74 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution et face à l'incertitude du cycle de rotation, un risque de rupture est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles et le maintien des quantités historiques, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 27
+          }
+        ]
+      },
+      {
+        "product_id": 16785,
+        "product_name": "[JF028] JF VINAIGRET CAESAR WECK 200ML",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 27,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée le 08/08/2025. Bien que le cycle soit difficile à déterminer en raison du manque d'historique, le délai depuis la dernière commande (74 jours) dépasse largement le seuil de précaution. En application du principe de détection du besoin en cas de doute sur le cycle, une commande est déclenchée. La quantité retenue est de 1 unité, correspondant à la médiane de l'historique récent, afin de maintenir le stock sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 27
+          }
+        ]
+      },
+      {
+        "product_id": 17252,
+        "product_name": "[DIS0004] Display JF bois",
+        "product_uom": "TU1",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 08/08/2025, soit 74 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter la rupture) et compte tenu du seuil de 30 jours, une commande est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane (et unique valeur) de l'historique récent, conformément à la règle de maintien des rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-08 08:18:26",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 16,
+    "optional_products_count": 5,
+    "base_amount": 371.64,
+    "optional_amount": 99.3,
+    "total_amount": 470.94,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 6102
+}

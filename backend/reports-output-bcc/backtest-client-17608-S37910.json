@@ -1,0 +1,30 @@
+{
+  "clientId": 17608,
+  "clientName": "li ptit en k",
+  "orderName": "S37910",
+  "orderDate": "2025-07-08 10:06:23",
+  "cutoffDate": "2025-07-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.36,
+    "recall": 1,
+    "f1Score": 0.5294117647058824,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 33,
+    "promptTokens": 30112,
+    "completionTokens": 5219,
+    "totalTokens": 35331
+  }
+}

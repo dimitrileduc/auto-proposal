@@ -1,0 +1,30 @@
+{
+  "clientId": 58308,
+  "clientName": "CARREFOUR BELGIUM SA, CARREFOUR MARKET SHOPPING WOLUWE",
+  "orderName": "S38595",
+  "orderDate": "2025-08-25 06:42:38",
+  "cutoffDate": "2025-08-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 1,
+    "wmape": 43.75,
+    "mape": 35.71428571428571,
+    "bias": -43.75
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12354,
+    "completionTokens": 2048,
+    "totalTokens": 14402
+  }
+}

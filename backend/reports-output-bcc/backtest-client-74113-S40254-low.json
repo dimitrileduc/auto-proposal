@@ -1,0 +1,30 @@
+{
+  "clientId": 74113,
+  "clientName": "BOUCHERIE GOUDER DE BEAUREGARD SRL",
+  "orderName": "S40254",
+  "orderDate": "2025-11-12 10:40:03",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.4,
+    "recall": 1,
+    "f1Score": 0.5714285714285715,
+    "mae": 0.75,
+    "wmape": 42.857142857142854,
+    "mape": 45.83333333333333,
+    "bias": -14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8737,
+    "completionTokens": 1482,
+    "totalTokens": 10219
+  }
+}

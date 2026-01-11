@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:12:31.515Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-06 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3880,
+    "name": "LA BOVIDA",
+    "order": {
+      "name": "S39592",
+      "date": "2025-10-07 07:00:07"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 1,
+        "falseNegatives": 2,
+        "total": 5
+      },
+      "productMetrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1Score": 0.5714285714285715,
+        "totalPredicted": 3,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 15,
+        "wmape": 41.66666666666667,
+        "mape": 37.5,
+        "bias": 25,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 2
+        },
+        "rmse": 17.4928556845359
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 2,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1Score": 0.8,
+          "totalPredicted": 3,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 15,
+          "wmape": 41.66666666666667,
+          "mape": 37.5,
+          "bias": 25,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 17.4928556845359
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 2995,
+    "completionTokens": 470,
+    "totalTokens": 3465
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9029,
+        "productName": "[PF0516] YVALLI PROVENCALE 2,5 KG BOC",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 72,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 48
+        },
+        "error": {
+          "absolute": 24,
+          "percent": 50,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 12,
+          "orders": [
+            {
+              "orderId": 90553,
+              "orderName": "S38676",
+              "date": "2025-08-22 10:22:11",
+              "quantity": 72,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 89268,
+              "orderName": "S37391",
+              "date": "2025-06-11 13:50:44",
+              "quantity": 72,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 87600,
+              "orderName": "S35723",
+              "date": "2025-03-31 12:12:39",
+              "quantity": 48,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 86800,
+              "orderName": "S34923",
+              "date": "2025-02-17 13:28:19",
+              "quantity": 48,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 85632,
+              "orderName": "S33755",
+              "date": "2024-12-09 14:23:10",
+              "quantity": 72,
+              "priceUnit": 46.5
+            },
+            {
+              "orderId": 85155,
+              "orderName": "S33278",
+              "date": "2024-11-14 10:45:23",
+              "quantity": 72,
+              "priceUnit": 46.5
+            },
+            {
+              "orderId": 84262,
+              "orderName": "S32385",
+              "date": "2024-09-24 07:14:10",
+              "quantity": 72,
+              "priceUnit": 46.5
+            },
+            {
+              "orderId": 83040,
+              "orderName": "S31163",
+              "date": "2024-07-08 06:37:55",
+              "quantity": 72,
+              "priceUnit": 46.5
+            },
+            {
+              "orderId": 81549,
+              "orderName": "S29672",
+              "date": "2024-04-08 09:23:39",
+              "quantity": 72,
+              "priceUnit": 46.5
+            },
+            {
+              "orderId": 80351,
+              "orderName": "S28474",
+              "date": "2024-01-10 07:48:51",
+              "quantity": 120,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 80066,
+              "orderName": "S28189",
+              "date": "2023-12-13 10:47:18",
+              "quantity": 62,
+              "priceUnit": 43.8
+            },
+            {
+              "orderId": 79459,
+              "orderName": "S27582",
+              "date": "2023-11-13 14:33:21",
+              "quantity": 24,
+              "priceUnit": 43.8
+            }
+          ],
+          "statistics": {
+            "mean": 67.16666666666667,
+            "median": 72,
+            "stdDev": 21.563214561428964,
+            "min": 24,
+            "max": 120,
+            "cv": 0.3210404153066347,
+            "trend": "stable",
+            "outliers": [
+              120,
+              24
+            ],
+            "regularityScore": 0.6480285744793739
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 58.889446548821546,
+            "lastOrderDaysAgo": 44.56792824074074,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9348,
+        "productName": "[PF0609] YVALLI SAUCE TOMATE 2,5 KG",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 18,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 24
+        },
+        "error": {
+          "absolute": 6,
+          "percent": 25,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 90553,
+              "orderName": "S38676",
+              "date": "2025-08-22 10:22:11",
+              "quantity": 18,
+              "priceUnit": 38.34
+            },
+            {
+              "orderId": 86800,
+              "orderName": "S34923",
+              "date": "2025-02-17 13:28:19",
+              "quantity": 48,
+              "priceUnit": 38.34
+            },
+            {
+              "orderId": 85155,
+              "orderName": "S33278",
+              "date": "2024-11-14 10:45:23",
+              "quantity": 18,
+              "priceUnit": 37.2
+            },
+            {
+              "orderId": 84262,
+              "orderName": "S32385",
+              "date": "2024-09-24 07:14:10",
+              "quantity": 36,
+              "priceUnit": 37.2
+            },
+            {
+              "orderId": 83040,
+              "orderName": "S31163",
+              "date": "2024-07-08 06:37:55",
+              "quantity": 30,
+              "priceUnit": 39.3
+            },
+            {
+              "orderId": 81549,
+              "orderName": "S29672",
+              "date": "2024-04-08 09:23:39",
+              "quantity": 18,
+              "priceUnit": 39.3
+            },
+            {
+              "orderId": 80723,
+              "orderName": "S28846",
+              "date": "2024-02-06 14:12:37",
+              "quantity": 18,
+              "priceUnit": 34.8
+            },
+            {
+              "orderId": 80723,
+              "orderName": "S28846",
+              "date": "2024-02-06 14:12:37",
+              "quantity": 14,
+              "priceUnit": 34.8
+            },
+            {
+              "orderId": 80351,
+              "orderName": "S28474",
+              "date": "2024-01-10 07:48:51",
+              "quantity": 30,
+              "priceUnit": 34.8
+            },
+            {
+              "orderId": 80066,
+              "orderName": "S28189",
+              "date": "2023-12-13 10:47:18",
+              "quantity": 24,
+              "priceUnit": 34.8
+            },
+            {
+              "orderId": 79459,
+              "orderName": "S27582",
+              "date": "2023-11-13 14:33:21",
+              "quantity": 8,
+              "priceUnit": 34.8
+            }
+          ],
+          "statistics": {
+            "mean": 23.818181818181817,
+            "median": 18,
+            "stdDev": 10.836119582364612,
+            "min": 8,
+            "max": 48,
+            "cv": 0.45495158551912496,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.4194598982760377
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 64.7783912037037,
+            "lastOrderDaysAgo": 44.56792824074074,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 9310,
+        "productName": "[PF0509] YVALLI GR BOUL TOMATE 2,5 KG",
+        "mismatchType": "false_positive",
+        "quantity": 24,
+        "reason": "Predicted 24u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 10,
+            "lastOrderDaysAgo": 116,
+            "orders": [
+              {
+                "orderId": 89268,
+                "orderName": "S37391",
+                "date": "2025-06-11 13:50:44",
+                "quantity": 24,
+                "priceUnit": 54.06
+              },
+              {
+                "orderId": 89268,
+                "orderName": "S37391",
+                "date": "2025-06-11 13:50:44",
+                "quantity": 24,
+                "priceUnit": 54.06
+              },
+              {
+                "orderId": 87600,
+                "orderName": "S35723",
+                "date": "2025-03-31 12:12:39",
+                "quantity": 24,
+                "priceUnit": 54.06
+              },
+              {
+                "orderId": 85632,
+                "orderName": "S33755",
+                "date": "2024-12-09 14:23:10",
+                "quantity": 18,
+                "priceUnit": 54.9
+              },
+              {
+                "orderId": 85155,
+                "orderName": "S33278",
+                "date": "2024-11-14 10:45:23",
+                "quantity": 12,
+                "priceUnit": 54.9
+              },
+              {
+                "orderId": 84262,
+                "orderName": "S32385",
+                "date": "2024-09-24 07:14:10",
+                "quantity": 36,
+                "priceUnit": 54.9
+              },
+              {
+                "orderId": 83040,
+                "orderName": "S31163",
+                "date": "2024-07-08 06:37:55",
+                "quantity": 13,
+                "priceUnit": 54.9
+              },
+              {
+                "orderId": 81549,
+                "orderName": "S29672",
+                "date": "2024-04-08 09:23:39",
+                "quantity": 36,
+                "priceUnit": 54.9
+              },
+              {
+                "orderId": 80723,
+                "orderName": "S28846",
+                "date": "2024-02-06 14:12:37",
+                "quantity": 24,
+                "priceUnit": 50.4
+              },
+              {
+                "orderId": 79459,
+                "orderName": "S27582",
+                "date": "2023-11-13 14:33:21",
+                "quantity": 24,
+                "priceUnit": 50.4
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 9035,
+        "productName": "[PF0549] YVALLI SAUCE PIZZA 2,5 KG",
+        "mismatchType": "false_negative",
+        "quantity": 12,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      },
+      {
+        "productId": 9034,
+        "productName": "[PF0539] JF VOL AU VENT 2,5 KG",
+        "mismatchType": "false_negative",
+        "quantity": 6,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

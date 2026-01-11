@@ -1,0 +1,30 @@
+{
+  "clientId": 73628,
+  "clientName": "L'Epicerie d'Augustin",
+  "orderName": "S40068",
+  "orderDate": "2025-11-04 07:17:24",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 14,
+    "fn": 0,
+    "precision": 0.06666666666666667,
+    "recall": 1,
+    "f1Score": 0.125,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 27482,
+    "completionTokens": 4514,
+    "totalTokens": 31996
+  }
+}

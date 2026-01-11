@@ -1,0 +1,30 @@
+{
+  "clientId": 60393,
+  "clientName": "L'ORCHESTRE A POTS",
+  "orderName": "S40118",
+  "orderDate": "2025-11-04 13:45:56",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 7877,
+    "completionTokens": 1379,
+    "totalTokens": 9256
+  }
+}

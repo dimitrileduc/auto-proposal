@@ -1,0 +1,30 @@
+{
+  "clientId": 17282,
+  "clientName": "Hyper St Agathe Berchem",
+  "orderName": "S39825",
+  "orderDate": "2025-10-21 06:11:48",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.6363636363636364,
+    "recall": 1,
+    "f1Score": 0.7777777777777778,
+    "mae": 0.6428571428571429,
+    "wmape": 36,
+    "mape": 51.19047619047619,
+    "bias": 12
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 8
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19865,
+    "completionTokens": 3498,
+    "totalTokens": 23363
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:24:11.755Z"
+  },
+  "client": {
+    "id": 3767,
+    "name": "PIRONT LAURENT"
+  },
+  "config": {
+    "analysisEndDate": "2025-08-26 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 5,
+      "llm_usage": {
+        "calls": 5,
+        "promptTokens": 4407,
+        "completionTokens": 770,
+        "totalTokens": 5177
+      }
+    },
+    "proposalFinal": {
+      "products_count": 5,
+      "total_amount": 336.25,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8984,
+        "product_name": "[PF0072] FILOU MAYONNAISE OEUFS SEAU 10L",
+        "product_uom": "TU1",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 23.18,
+        "subtotal": 231.8,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 23 mai 2025, soit plus de 90 jours sans activité. Bien que le cycle soit irrégulier, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours et les intervalles historiques observés l'année précédente (environ 5 mois). En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. La commande la plus récente est de 10u. L'historique N-1 montre des volumes de 15u, mais conformément à la règle de privilégier la quantité la plus basse en cas de doute ou de tendance incertaine, la médiane récente de 10u est retenue.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-23 11:29:06",
+            "quantity": 10,
+            "price_unit": 23.18
+          },
+          {
+            "date": "2024-12-03 08:41:23",
+            "quantity": 10,
+            "price_unit": 22.5
+          },
+          {
+            "date": "2024-06-27 09:17:03",
+            "quantity": 15,
+            "price_unit": 22.5
+          },
+          {
+            "date": "2024-01-25 09:47:19",
+            "quantity": 15,
+            "price_unit": 22.5
+          }
+        ]
+      },
+      {
+        "product_id": 17752,
+        "product_name": "[PF0959] FILOU TOMATO KETCHUP 10KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 17.8,
+        "subtotal": 89,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 23 mai 2025, soit plus de 90 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande récente, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement les seuils de rotation standards. En l'absence d'historique complexe ou de saisonnalité N-1, la quantité est basée sur le dernier volume observé (5u) pour assurer le réapprovisionnement sans risque de surstockage inutile.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-23 11:29:06",
+            "quantity": 5,
+            "price_unit": 17.8
+          },
+          {
+            "date": "2024-12-03 08:41:23",
+            "quantity": 5,
+            "price_unit": 17.25
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 8997,
+        "product_name": "[PF0096] FILOU MOUTARDE 3 KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 5.15,
+        "subtotal": 15.450000000000001,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 23 mai 2025, soit environ 95 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande récente, le principe de précaution B2B s'applique ici car le délai depuis la dernière commande dépasse largement le seuil de réapprovisionnement de 30 jours. En l'absence d'historique N-1, la quantité est basée sur la dernière commande connue (3u) pour couvrir un besoin potentiel et éviter une rupture prolongée sur cette référence.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-23 11:29:06",
+            "quantity": 3,
+            "price_unit": 5.15
+          }
+        ]
+      },
+      {
+        "product_id": 9070,
+        "product_name": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 23 mai 2025, soit 95 jours sans activité. Bien que la rotation soit très faible, le délai écoulé dépasse largement les cycles standards de réapprovisionnement. En application du principe de précaution B2B (doute sur le cycle), un besoin est identifié pour éviter une rupture prolongée. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité (médiane de l'historique) pour couvrir le besoin sans créer de surstock inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-23 11:29:06",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9184,
+        "product_name": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 23 mai 2025, soit 95 jours sans activité. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour éviter le surstockage tout en assurant la présence du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-23 11:29:06",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 2,
+    "optional_products_count": 3,
+    "base_amount": 320.8,
+    "optional_amount": 15.450000000000001,
+    "total_amount": 336.25,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3836
+}

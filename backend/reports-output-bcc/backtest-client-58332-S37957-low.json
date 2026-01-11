@@ -1,0 +1,30 @@
+{
+  "clientId": 58332,
+  "clientName": "CARREFOUR BELGIUM SA, Carrefour Market 512 Braine l'alleud",
+  "orderName": "S37957",
+  "orderDate": "2025-07-08 12:24:05",
+  "cutoffDate": "2025-07-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.7142857142857143,
+    "recall": 1,
+    "f1Score": 0.8333333333333333,
+    "mae": 0.4,
+    "wmape": 40,
+    "mape": 40,
+    "bias": 40
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19275,
+    "completionTokens": 3044,
+    "totalTokens": 22319
+  }
+}

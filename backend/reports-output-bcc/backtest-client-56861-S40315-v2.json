@@ -1,0 +1,1344 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:12:10.503Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-12 00:00:00"
+    }
+  },
+  "client": {
+    "id": 56861,
+    "name": "ITM LIÈGE COINTE",
+    "order": {
+      "name": "S40315",
+      "date": "2025-11-13 10:33:59"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 27,
+        "falseNegatives": 3,
+        "total": 33
+      },
+      "productMetrics": {
+        "precision": 0.1,
+        "recall": 0.5,
+        "f1Score": 0.16666666666666669,
+        "totalPredicted": 30,
+        "totalReal": 6
+      },
+      "quantityMetrics": {
+        "mae": 3.3333333333333335,
+        "wmape": 62.5,
+        "mape": 58.333333333333336,
+        "bias": -62.5,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 3
+        },
+        "rmse": 3.8297084310253524
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 10,
+          "falseNegatives": 3,
+          "total": 16
+        },
+        "productMetrics": {
+          "precision": 0.23076923076923078,
+          "recall": 0.5,
+          "f1Score": 0.3157894736842105,
+          "totalPredicted": 13,
+          "totalReal": 6
+        },
+        "quantityMetrics": {
+          "mae": 3.3333333333333335,
+          "wmape": 62.5,
+          "mape": 58.333333333333336,
+          "bias": -62.5,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 3.8297084310253524
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 12,
+          "falseNegatives": 0,
+          "total": 12
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 12,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 5,
+          "falseNegatives": 0,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 5,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 26988,
+    "completionTokens": 4648,
+    "totalTokens": 31636
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 19398,
+        "productName": "[LD013] LD Tuscan Organic Spread 180 g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 8
+        },
+        "error": {
+          "absolute": 6,
+          "percent": 75,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 91526,
+              "orderName": "S39649",
+              "date": "2025-10-09 11:26:33",
+              "quantity": 2,
+              "priceUnit": 14.5
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 33.56489583333333,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 19434,
+        "productName": "[LD014] LD Organic Avocado Spread 180 g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 91526,
+              "orderName": "S39649",
+              "date": "2025-10-09 11:26:33",
+              "quantity": 2,
+              "priceUnit": 14.5
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 33.56489583333333,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 19435,
+        "productName": "[LD015] LD Onion Spread 180g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 91526,
+              "orderName": "S39649",
+              "date": "2025-10-09 11:26:33",
+              "quantity": 2,
+              "priceUnit": 14.5
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 33.56489583333333,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18359,
+        "productName": "[RISH01] RISH kombucha BIO - original 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18358,
+        "productName": "[RISH02] RISH kombucha BIO - hibiscus 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18357,
+        "productName": "[RISH03] RISH kombucha BIO - gingembre 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18361,
+        "productName": "[RISH04] RISH kombucha BIO - smash basil 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 25.08
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18289,
+        "productName": "[KOKO01] KOKO Kombucha original 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 23.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18288,
+        "productName": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 23.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18294,
+        "productName": "[LEA06] LEAMO maté 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 33.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16743,
+        "productName": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 25.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16827,
+        "productName": "[TVF001] TVF TARTINADE BIO MANGUE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16830,
+        "productName": "[TVF002] TVF TARTINADE BIO PAPRIKA 180g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16826,
+        "productName": "[TVF003] TVF TARTINADE BIO CAROTTE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 2,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16824,
+        "productName": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16833,
+        "productName": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 2,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 19393,
+        "productName": "[LD008] LD Tartinade Pois chiches bio 180g  ",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 2,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16745,
+        "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 2,
+                "priceUnit": 23.4
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 23.4
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 2,
+                "priceUnit": 23.4
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 23.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16766,
+        "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 33,
+            "orders": [
+              {
+                "orderId": 91526,
+                "orderName": "S39649",
+                "date": "2025-10-09 11:26:33",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 2,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18287,
+        "productName": "[KOKO02] KOKO Kombucha Lemon Ginger 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 64,
+            "orders": [
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 23.88
+              },
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 23.88
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 23.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18379,
+        "productName": "[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 64,
+            "orders": [
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 1,
+                "priceUnit": 31.6
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 31.6
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 31.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18380,
+        "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 64,
+            "orders": [
+              {
+                "orderId": 90946,
+                "orderName": "S39069",
+                "date": "2025-09-08 10:15:43",
+                "quantity": 2,
+                "priceUnit": 31.6
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 31.6
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 31.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16832,
+        "productName": "[TVF009] TVF TARTINADE BIO POIS CHICHES 180g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 1,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 2,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 2,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 90379,
+                "orderName": "S38502",
+                "date": "2025-08-13 11:39:35",
+                "quantity": 2,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 2,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 120,
+            "orders": [
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 2,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 89294,
+                "orderName": "S37417",
+                "date": "2025-06-16 08:39:19",
+                "quantity": 2,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18375,
+        "productName": "[SOWA03] SOWA ginger beer ardent 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 120,
+            "orders": [
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 26.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18376,
+        "productName": "[SOWA04] SOWA thé glacé pêche 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 120,
+            "orders": [
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 26.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18300,
+        "productName": "[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 120,
+            "orders": [
+              {
+                "orderId": 89917,
+                "orderName": "S38040",
+                "date": "2025-07-14 09:25:56",
+                "quantity": 1,
+                "priceUnit": 35.76
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 19977,
+        "productName": "[DIS0012] Display Foodprint Karton LD",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 19392,
+        "productName": "[LD007] LD Organic Pineapple Coconut Spread 180 g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 19396,
+        "productName": "[LD011] LD Organic Kids Spread 180 g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 73845,
+  "clientName": "Le Fresnoy SPRL",
+  "orderName": "S40326",
+  "orderDate": "2025-11-14 12:43:17",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 12,
+    "fn": 0,
+    "precision": 0.14285714285714285,
+    "recall": 1,
+    "f1Score": 0.25,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19346,
+    "completionTokens": 3315,
+    "totalTokens": 22661
+  }
+}

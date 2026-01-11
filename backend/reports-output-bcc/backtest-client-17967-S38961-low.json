@@ -1,0 +1,30 @@
+{
+  "clientId": 17967,
+  "clientName": "En fait c'est simple - L'Épicerie",
+  "orderName": "S38961",
+  "orderDate": "2025-09-03 14:42:01",
+  "cutoffDate": "2025-09-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 20053,
+    "completionTokens": 3435,
+    "totalTokens": 23488
+  }
+}

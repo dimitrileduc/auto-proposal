@@ -1,0 +1,30 @@
+{
+  "clientId": 24134,
+  "clientName": "Terre de fromages S.A",
+  "orderName": "S40202",
+  "orderDate": "2025-11-14 10:30:22",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 15,
+    "fn": 0,
+    "precision": 0.4827586206896552,
+    "recall": 1,
+    "f1Score": 0.6511627906976745,
+    "mae": 1.7857142857142858,
+    "wmape": 58.139534883720934,
+    "mape": 66.66666666666666,
+    "bias": 6.976744186046512
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 11
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 27358,
+    "completionTokens": 4943,
+    "totalTokens": 32301
+  }
+}

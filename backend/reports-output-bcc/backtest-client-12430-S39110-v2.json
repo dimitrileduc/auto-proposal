@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:21:39.921Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-08 00:00:00"
+    }
+  },
+  "client": {
+    "id": 12430,
+    "name": "CLIENTS VENTES AU COMPTANT",
+    "order": {
+      "name": "S39110",
+      "date": "2025-09-09 13:24:30"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 4,
+        "falseNegatives": 0,
+        "total": 5
+      },
+      "productMetrics": {
+        "precision": 0.2,
+        "recall": 1,
+        "f1Score": 0.33333333333333337,
+        "totalPredicted": 5,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 2,
+        "wmape": 200,
+        "mape": 200,
+        "bias": 200,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 2
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 3,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 3,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1Score": 0.6666666666666666,
+          "totalPredicted": 2,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 2,
+          "wmape": 200,
+          "mape": 200,
+          "bias": 200,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 2
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4442,
+    "completionTokens": 708,
+    "totalTokens": 5150
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 16749,
+        "productName": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 200,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 88089,
+              "orderName": "S36212",
+              "date": "2025-04-15 12:14:41",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 82444,
+              "orderName": "S30567",
+              "date": "2024-05-31 10:08:39",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 81276,
+              "orderName": "S29399",
+              "date": "2024-03-19 09:03:23",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 79995,
+              "orderName": "S28118",
+              "date": "2023-12-13 14:38:16",
+              "quantity": 12,
+              "priceUnit": 1.5
+            }
+          ],
+          "statistics": {
+            "mean": 3.75,
+            "median": 1,
+            "stdDev": 4.763139720814412,
+            "min": 1,
+            "max": 12,
+            "cv": 1.2701705922171767,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.1279476016945532
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 162.95287422839507,
+            "lastOrderDaysAgo": 145.48980324074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 19247,
+        "productName": "[JF068] FIL VOL AU VENT 800G BOCAL ",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 76,
+            "orders": [
+              {
+                "orderId": 89455,
+                "orderName": "S37578",
+                "date": "2025-06-23 11:58:09",
+                "quantity": 1,
+                "priceUnit": 44.89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 19248,
+        "productName": "[FIL19] FIL VOL AU VENT 400G BOCAL",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 76,
+            "orders": [
+              {
+                "orderId": 89455,
+                "orderName": "S37578",
+                "date": "2025-06-23 11:58:09",
+                "quantity": 1,
+                "priceUnit": 29.21
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16792,
+        "productName": "[JF029] JF VOL AU VENT BOCAL 400G",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 76,
+            "orders": [
+              {
+                "orderId": 89455,
+                "orderName": "S37578",
+                "date": "2025-06-23 11:58:09",
+                "quantity": 1,
+                "priceUnit": 15
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16766,
+        "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 145,
+            "orders": [
+              {
+                "orderId": 88089,
+                "orderName": "S36212",
+                "date": "2025-04-15 12:14:41",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 82444,
+                "orderName": "S30567",
+                "date": "2024-05-31 10:08:39",
+                "quantity": 1,
+                "priceUnit": 19.5
+              },
+              {
+                "orderId": 79995,
+                "orderName": "S28118",
+                "date": "2023-12-13 14:38:16",
+                "quantity": 12,
+                "priceUnit": 1.5
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

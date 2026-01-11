@@ -1,0 +1,30 @@
+{
+  "clientId": 17320,
+  "clientName": "CARREFOUR BELGIUM SA, MARKET TONGEREN VELINX",
+  "orderName": "S39532",
+  "orderDate": "2025-10-03 06:23:42",
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 12,
+    "fn": 0,
+    "precision": 0.4,
+    "recall": 1,
+    "f1Score": 0.5714285714285715,
+    "mae": 1,
+    "wmape": 53.333333333333336,
+    "mape": 62.5,
+    "bias": -13.333333333333334
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 18055,
+    "completionTokens": 3244,
+    "totalTokens": 21299
+  }
+}

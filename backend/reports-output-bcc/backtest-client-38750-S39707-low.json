@@ -1,0 +1,30 @@
+{
+  "clientId": 38750,
+  "clientName": "CRF MARKET LA CALAMINE GEKEL",
+  "orderName": "S39707",
+  "orderDate": "2025-10-14 12:44:54",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 36,
+    "promptTokens": 33584,
+    "completionTokens": 5710,
+    "totalTokens": 39294
+  }
+}

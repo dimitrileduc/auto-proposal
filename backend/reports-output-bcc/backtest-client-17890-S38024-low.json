@@ -1,0 +1,30 @@
+{
+  "clientId": 17890,
+  "clientName": "Domaine des charmilles SRL",
+  "orderName": "S38024",
+  "orderDate": "2025-07-14 09:13:56",
+  "cutoffDate": "2025-07-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.1111111111111111,
+    "recall": 1,
+    "f1Score": 0.19999999999999998,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 24791,
+    "completionTokens": 4294,
+    "totalTokens": 29085
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 23901,
+  "clientName": "Le comptoir des Frangines",
+  "orderName": "S40081",
+  "orderDate": "2025-11-05 07:32:50",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 52,
+    "promptTokens": 46571,
+    "completionTokens": 7532,
+    "totalTokens": 54103
+  }
+}

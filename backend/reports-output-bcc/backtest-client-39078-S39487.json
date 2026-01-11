@@ -1,0 +1,30 @@
+{
+  "clientId": 39078,
+  "clientName": "SPAR PITHODIS LE ROEULX",
+  "orderName": "S39487",
+  "orderDate": "2025-10-02 06:28:49",
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.5714285714285714,
+    "recall": 1,
+    "f1Score": 0.7272727272727273,
+    "mae": 1.875,
+    "wmape": 75,
+    "mape": 111.45833333333333,
+    "bias": 5
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 16,
+    "promptTokens": 14210,
+    "completionTokens": 2505,
+    "totalTokens": 16715
+  }
+}

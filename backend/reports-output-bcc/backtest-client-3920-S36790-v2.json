@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:23:57.386Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-05-13 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3920,
+    "name": "ZILVER HORECA",
+    "order": {
+      "name": "S36790",
+      "date": "2025-05-14 12:10:49"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 24,
+        "wmape": 23.076923076923077,
+        "mape": 23.076923076923077,
+        "bias": 23.076923076923077,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 24
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 24,
+          "wmape": 23.076923076923077,
+          "mape": 23.076923076923077,
+          "bias": 23.076923076923077,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 24
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 946,
+    "completionTokens": 174,
+    "totalTokens": 1120
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9018,
+        "productName": "[PF0302] FILOU/LD ANDALOUSE EXTRA  10 KG",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 128,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 104
+        },
+        "error": {
+          "absolute": 24,
+          "percent": 23.076923076923077,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 86044,
+              "orderName": "S34167",
+              "date": "2025-01-08 07:47:23",
+              "quantity": 192,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 85041,
+              "orderName": "S33164",
+              "date": "2024-11-07 08:30:30",
+              "quantity": 156,
+              "priceUnit": 24
+            },
+            {
+              "orderId": 83796,
+              "orderName": "S31919",
+              "date": "2024-08-26 08:40:40",
+              "quantity": 173,
+              "priceUnit": 24
+            },
+            {
+              "orderId": 82889,
+              "orderName": "S31012",
+              "date": "2024-06-27 13:05:29",
+              "quantity": 165,
+              "priceUnit": 24
+            },
+            {
+              "orderId": 82533,
+              "orderName": "S30656",
+              "date": "2024-06-06 08:29:30",
+              "quantity": 200,
+              "priceUnit": 24
+            },
+            {
+              "orderId": 81593,
+              "orderName": "S29716",
+              "date": "2024-04-10 06:58:29",
+              "quantity": 128,
+              "priceUnit": 24
+            },
+            {
+              "orderId": 80236,
+              "orderName": "S28359",
+              "date": "2024-01-03 13:43:30",
+              "quantity": 128,
+              "priceUnit": 24
+            },
+            {
+              "orderId": 3675,
+              "orderName": "S03669",
+              "date": "2023-07-31 12:26:17",
+              "quantity": 156,
+              "priceUnit": 24
+            },
+            {
+              "orderId": 2615,
+              "orderName": "S02611",
+              "date": "2023-05-25 06:37:57",
+              "quantity": 77,
+              "priceUnit": 24
+            }
+          ],
+          "statistics": {
+            "mean": 152.77777777777777,
+            "median": 156,
+            "stdDev": 35.461333489302206,
+            "min": 77,
+            "max": 200,
+            "cv": 0.23211054647543264,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.6631205158415686
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 74.26123553240741,
+            "lastOrderDaysAgo": 124.63376157407407,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

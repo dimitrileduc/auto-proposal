@@ -1,0 +1,30 @@
+{
+  "clientId": 23144,
+  "clientName": "Ferme de Gérard Sart",
+  "orderName": "S39138",
+  "orderDate": "2025-09-11 11:06:03",
+  "cutoffDate": "2025-09-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.6190476190476191,
+    "recall": 1,
+    "f1Score": 0.7647058823529412,
+    "mae": 0.7692307692307693,
+    "wmape": 30.303030303030305,
+    "mape": 37.179487179487175,
+    "bias": -18.181818181818183
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 9
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 19266,
+    "completionTokens": 3401,
+    "totalTokens": 22667
+  }
+}

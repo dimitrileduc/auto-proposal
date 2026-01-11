@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:10:44.237Z"
+  },
+  "client": {
+    "id": 3809,
+    "name": "MEX - AL  EL SOMBRERO IMPORT/E"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-13 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 1061,
+        "completionTokens": 172,
+        "totalTokens": 1233
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 13840,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9001,
+        "product_name": "[PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG",
+        "product_uom": "TU4",
+        "quantity_recommended": 400,
+        "quantity_source": "llm",
+        "price_unit": 34.6,
+        "subtotal": 13840,
+        "confidence": "high",
+        "order_count": 14,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence trimestrielle (juin, septembre). La dernière commande date du 16 septembre 2025, soit il y a 27 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique où le risque de rupture est imminent pour couvrir le prochain cycle. Bien que l'historique N-1 montre une activité plus dense, les données récentes de 2025 sont stables à 400 unités par commande. En suivant la règle de la médiane des commandes récentes et le principe de précaution B2B, une quantité de 400 unités est préconisée pour maintenir le stock sans surévaluer par rapport aux derniers volumes observés.",
+          "summary": "",
+          "baseline_quantity": 400,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-20 12:28:53",
+            "quantity": 600,
+            "price_unit": 33.6
+          },
+          {
+            "date": "2024-02-19 08:09:46",
+            "quantity": 480,
+            "price_unit": 33.6
+          },
+          {
+            "date": "2024-01-23 10:14:03",
+            "quantity": 423,
+            "price_unit": 33.6
+          },
+          {
+            "date": "2024-01-23 10:14:03",
+            "quantity": 0,
+            "price_unit": 33.6
+          },
+          {
+            "date": "2023-10-26 07:29:49",
+            "quantity": 480,
+            "price_unit": 33.6
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 13840,
+    "optional_amount": 0,
+    "total_amount": 13840,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2992
+}

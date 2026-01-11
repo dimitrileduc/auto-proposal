@@ -1,0 +1,30 @@
+{
+  "clientId": 38927,
+  "clientName": "FERNEL-DIS SRL",
+  "orderName": "S39605",
+  "orderDate": "2025-10-21 07:47:50",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 15,
+    "fp": 13,
+    "fn": 0,
+    "precision": 0.5357142857142857,
+    "recall": 1,
+    "f1Score": 0.6976744186046512,
+    "mae": 1.5333333333333334,
+    "wmape": 114.99999999999999,
+    "mape": 130,
+    "bias": 105
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 14
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 26443,
+    "completionTokens": 4513,
+    "totalTokens": 30956
+  }
+}

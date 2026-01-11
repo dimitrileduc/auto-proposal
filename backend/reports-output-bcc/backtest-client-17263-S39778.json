@@ -1,0 +1,30 @@
+{
+  "clientId": 17263,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper St Denijs Westrem",
+  "orderName": "S39778",
+  "orderDate": "2025-10-17 12:11:36",
+  "cutoffDate": "2025-10-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 22,
+    "fn": 0,
+    "precision": 0.2413793103448276,
+    "recall": 1,
+    "f1Score": 0.3888888888888889,
+    "mae": 1,
+    "wmape": 43.75,
+    "mape": 32.857142857142854,
+    "bias": -31.25
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 26779,
+    "completionTokens": 4455,
+    "totalTokens": 31234
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 60203,
+  "clientName": "BIO SHANTI",
+  "orderName": "S39894",
+  "orderDate": "2025-10-29 13:48:50",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 0.25,
+    "wmape": 25,
+    "mape": 25,
+    "bias": 25
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 18645,
+    "completionTokens": 3115,
+    "totalTokens": 21760
+  }
+}

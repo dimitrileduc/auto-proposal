@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:05:50.721Z"
+  },
+  "client": {
+    "id": 3482,
+    "name": "VDS  FOOD"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-05 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 6,
+      "llm_usage": {
+        "calls": 7,
+        "promptTokens": 6872,
+        "completionTokens": 1160,
+        "totalTokens": 8032
+      }
+    },
+    "proposalFinal": {
+      "products_count": 6,
+      "total_amount": 1453.3000000000002,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8986,
+        "product_name": "[PF0077] FILOU PROVENCALE 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 18,
+        "quantity_source": "llm",
+        "price_unit": 9.37,
+        "subtotal": 168.66,
+        "confidence": "high",
+        "order_count": 22,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 20 à 25 jours. La dernière commande datant du 22 octobre (soit 14 jours avant la date actuelle), le risque de rupture est élevé dans l'horizon des 30 jours (Replenishment Threshold Days). Bien que la dernière commande de 80u semble être un pic exceptionnel (hors norme par rapport à l'historique), la médiane des commandes récentes (8, 10, 15, 20, 25, 80) se situe autour de 17.5u. En suivant la règle de prudence B2B et en privilégiant la médiane tout en ignorant le pic de 80u, une quantité de 18u est préconisée pour couvrir le besoin sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 18,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-04 09:26:50",
+            "quantity": 10,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2024-05-16 15:20:35",
+            "quantity": 10,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2024-04-30 07:21:58",
+            "quantity": 20,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2024-02-06 09:49:52",
+            "quantity": 10,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2023-12-27 07:03:15",
+            "quantity": 10,
+            "price_unit": 9.1
+          }
+        ]
+      },
+      {
+        "product_id": 8987,
+        "product_name": "[PF0078] FILOU CHASSEUR 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 80,
+        "quantity_source": "llm",
+        "price_unit": 8.96,
+        "subtotal": 716.8000000000001,
+        "confidence": "high",
+        "order_count": 34,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier d'environ 14 à 25 jours. La dernière commande datant du 08/10/2025 (soit 28 jours avant la date actuelle), le seuil de réapprovisionnement de 30 jours est atteint, présentant un risque de rupture imminent. L'historique N-1 confirme également une activité soutenue sur cette période (octobre/novembre). La quantité de 80 unités est systématique et constante sur toutes les dernières commandes, correspondant à la médiane et au volume de rotation habituel du produit.",
+          "summary": "",
+          "baseline_quantity": 80,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-01-30 14:52:32",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-12-27 07:03:15",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-12-14 14:43:18",
+            "quantity": 12,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-11-30 13:06:24",
+            "quantity": 12,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-11-10 13:39:29",
+            "quantity": 80,
+            "price_unit": 8.7
+          }
+        ]
+      },
+      {
+        "product_id": 9161,
+        "product_name": "[PF1640] JF MITRAILLETTE SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 7,
+        "quantity_source": "llm",
+        "price_unit": 21.84,
+        "subtotal": 152.88,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Aucune commande récente n'est enregistrée pour 2025, mais l'historique N-1 montre une activité significative en novembre et décembre (7u le 30/11/2023 et 7u le 14/12/2023). Avec un seuil de réapprovisionnement de 30 jours et la date actuelle au 05/11, nous entrons dans la période de consommation historique. Par principe de précaution B2B et pour éviter une rupture sur un cycle saisonnier identifié, le besoin est confirmé. ÉTAPE 2 : ESTIMATION QUANTITÉ. La médiane des commandes sur la période de fin d'année précédente est de 7 unités. Les commandes plus faibles de l'été (2u, 6u) sont écartées car elles ne correspondent pas à la saisonnalité actuelle. La quantité de 7 est retenue pour couvrir le pic de fin d'année.",
+          "summary": "",
+          "baseline_quantity": 7,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-15 12:48:39",
+            "quantity": 3,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-08-28 09:35:54",
+            "quantity": 2,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-07-10 10:54:03",
+            "quantity": 6,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-12-14 14:43:18",
+            "quantity": 7,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-11-30 13:06:24",
+            "quantity": 7,
+            "price_unit": 21.24
+          }
+        ]
+      },
+      {
+        "product_id": 9144,
+        "product_name": "[PF1598] JF ANDALOUSE SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 21.84,
+        "subtotal": 131.04,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une activité régulière à cette période de l'année (novembre/décembre). En l'absence de données récentes et face à un cycle irrégulier, le principe de précaution B2B s'applique pour éviter une rupture potentielle dans l'horizon des 30 jours. ÉTAPE 2 : Estimation de la quantité. En se basant sur l'historique disponible (N-1), les quantités varient entre 3u et 9u. La médiane des commandes passées est de 6u. Conformément aux règles, on maintient cette valeur médiane pour couvrir le besoin sans surestimer.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-15 12:48:39",
+            "quantity": 2,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-08-28 09:35:54",
+            "quantity": 3,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-07-10 10:54:03",
+            "quantity": 9,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-12-14 14:43:18",
+            "quantity": 6,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-11-30 13:06:24",
+            "quantity": 6,
+            "price_unit": 21.24
+          }
+        ]
+      },
+      {
+        "product_id": 9146,
+        "product_name": "[PF1601] JF SAMOURAI SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 21.84,
+        "subtotal": 109.2,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une activité sur la période de novembre/décembre (8u le 30/11/2023). En l'absence de données récentes et face à l'approche de la période de consommation historique, le principe de précaution B2B s'applique pour éviter une rupture. ÉTAPE 2 : Estimation de la quantité. La médiane des commandes historiques (4, 5, 8, 8) est de 6,5. En suivant la règle de choisir la valeur la plus basse en cas de doute ou de rotation irrégulière, on retient la quantité de 5u (correspondant à la commande de juillet) pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-15 12:48:39",
+            "quantity": 3,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-08-28 09:35:54",
+            "quantity": 4,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-07-10 10:54:03",
+            "quantity": 5,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-12-14 14:43:18",
+            "quantity": 8,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-11-30 13:06:24",
+            "quantity": 8,
+            "price_unit": 21.24
+          }
+        ]
+      },
+      {
+        "product_id": 9160,
+        "product_name": "[PF1639] JF BURGER SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 8,
+        "quantity_source": "llm",
+        "price_unit": 21.84,
+        "subtotal": 174.72,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. L'historique N-1 montre une activité spécifique en fin d'année (novembre/décembre) avec des commandes de 8 unités. Bien qu'il n'y ait pas de commandes récentes, nous entrons dans la période de saisonnalité identifiée l'an dernier (30 novembre). En application du principe de précaution B2B et pour éviter une rupture sur un cycle annuel probable, un besoin est détecté. ÉTAPE 2 : ESTIMATION QUANTITÉ. La médiane des commandes sur la période de fin d'année précédente (novembre/décembre) est de 8 unités. Nous maintenons ce volume historique pour couvrir la période de forte rotation identifiée.",
+          "summary": "",
+          "baseline_quantity": 8,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-15 12:48:39",
+            "quantity": 2,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-08-28 09:35:54",
+            "quantity": 4,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2024-07-10 10:54:03",
+            "quantity": 3,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-12-14 14:43:18",
+            "quantity": 8,
+            "price_unit": 21.24
+          },
+          {
+            "date": "2023-11-30 13:06:24",
+            "quantity": 8,
+            "price_unit": 21.24
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 6,
+    "optional_products_count": 0,
+    "base_amount": 1453.3000000000002,
+    "optional_amount": 0,
+    "total_amount": 1453.3000000000002,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3270
+}

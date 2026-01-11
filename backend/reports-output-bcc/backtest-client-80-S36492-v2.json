@@ -1,0 +1,548 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:19:41.216Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-05-11 00:00:00"
+    }
+  },
+  "client": {
+    "id": 80,
+    "name": "L'Epicerie du Nord-Produits en vrac",
+    "order": {
+      "name": "S36492",
+      "date": "2025-05-12 07:01:21"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 1,
+        "falseNegatives": 0,
+        "total": 5
+      },
+      "productMetrics": {
+        "precision": 0.8,
+        "recall": 1,
+        "f1Score": 0.888888888888889,
+        "totalPredicted": 5,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 0.25,
+        "wmape": 14.285714285714285,
+        "mape": 8.333333333333332,
+        "bias": -14.285714285714285,
+        "distribution": {
+          "exactMatch": 3,
+          "partialMatch": 1
+        },
+        "rmse": 0.5
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0.75,
+          "recall": 1,
+          "f1Score": 0.8571428571428571,
+          "totalPredicted": 4,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 0.3333333333333333,
+          "wmape": 16.666666666666664,
+          "mape": 11.111111111111109,
+          "bias": -16.666666666666664,
+          "distribution": {
+            "exactMatch": 2,
+            "partialMatch": 1
+          },
+          "rmse": 0.5773502691896257
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4558,
+    "completionTokens": 788,
+    "totalTokens": 5346
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 13644,
+        "productName": "[LB004] LB Blonde (6,5%) 33CL",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 7,
+          "orders": [
+            {
+              "orderId": 86795,
+              "orderName": "S34918",
+              "date": "2025-02-17 12:46:35",
+              "quantity": 2,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 86398,
+              "orderName": "S34521",
+              "date": "2025-01-27 07:53:00",
+              "quantity": 2,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 84072,
+              "orderName": "S32195",
+              "date": "2024-09-11 08:47:16",
+              "quantity": 3,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 83446,
+              "orderName": "S31569",
+              "date": "2024-08-08 06:26:30",
+              "quantity": 2,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 82117,
+              "orderName": "S30240",
+              "date": "2024-05-13 12:00:38",
+              "quantity": 2,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 81131,
+              "orderName": "S29254",
+              "date": "2024-03-22 14:05:42",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 79871,
+              "orderName": "S27994",
+              "date": "2023-12-05 08:12:25",
+              "quantity": 2,
+              "priceUnit": 42.08
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.5345224838248488,
+            "min": 1,
+            "max": 3,
+            "cv": 0.2672612419124244,
+            "trend": "decreasing",
+            "outliers": [
+              3,
+              1
+            ],
+            "regularityScore": 0.6137539553582085
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 73.36506558641976,
+            "lastOrderDaysAgo": 82.4259837962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13643,
+        "productName": "[LB005] LB Amber (5,2%) 33CL",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 86795,
+              "orderName": "S34918",
+              "date": "2025-02-17 12:46:35",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 86398,
+              "orderName": "S34521",
+              "date": "2025-01-27 07:53:00",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 84072,
+              "orderName": "S32195",
+              "date": "2024-09-11 08:47:16",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 82117,
+              "orderName": "S30240",
+              "date": "2024-05-13 12:00:38",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 79871,
+              "orderName": "S27994",
+              "date": "2023-12-05 08:12:25",
+              "quantity": 1,
+              "priceUnit": 42.08
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8068191217837972
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 110.04759837962963,
+            "lastOrderDaysAgo": 82.4259837962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13642,
+        "productName": "[LB002] LB Blonde 75 CL (6,5%)",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 7,
+          "orders": [
+            {
+              "orderId": 86795,
+              "orderName": "S34918",
+              "date": "2025-02-17 12:46:35",
+              "quantity": 2,
+              "priceUnit": 47.81
+            },
+            {
+              "orderId": 86398,
+              "orderName": "S34521",
+              "date": "2025-01-27 07:53:00",
+              "quantity": 2,
+              "priceUnit": 47.81
+            },
+            {
+              "orderId": 84072,
+              "orderName": "S32195",
+              "date": "2024-09-11 08:47:16",
+              "quantity": 1,
+              "priceUnit": 47.81
+            },
+            {
+              "orderId": 83446,
+              "orderName": "S31569",
+              "date": "2024-08-08 06:26:30",
+              "quantity": 1,
+              "priceUnit": 47.81
+            },
+            {
+              "orderId": 82117,
+              "orderName": "S30240",
+              "date": "2024-05-13 12:00:38",
+              "quantity": 3,
+              "priceUnit": 47.81
+            },
+            {
+              "orderId": 81131,
+              "orderName": "S29254",
+              "date": "2024-03-22 14:05:42",
+              "quantity": 2,
+              "priceUnit": 47.81
+            },
+            {
+              "orderId": 79871,
+              "orderName": "S27994",
+              "date": "2023-12-05 08:12:25",
+              "quantity": 2,
+              "priceUnit": 47.81
+            }
+          ],
+          "statistics": {
+            "mean": 1.8571428571428572,
+            "median": 2,
+            "stdDev": 0.6388765649999398,
+            "min": 1,
+            "max": 3,
+            "cv": 0.3440104580768907,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5677044256595288
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 73.36506558641976,
+            "lastOrderDaysAgo": 82.4259837962963,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13647,
+        "productName": "[LB006] LB Brown (7,0%)  33CL",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 86398,
+              "orderName": "S34521",
+              "date": "2025-01-27 07:53:00",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 83446,
+              "orderName": "S31569",
+              "date": "2024-08-08 06:26:30",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 81131,
+              "orderName": "S29254",
+              "date": "2024-03-22 14:05:42",
+              "quantity": 1,
+              "priceUnit": 42.08
+            },
+            {
+              "orderId": 79871,
+              "orderName": "S27994",
+              "date": "2023-12-05 08:12:25",
+              "quantity": 1,
+              "priceUnit": 42.08
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9253074910480988
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 139.66217206790125,
+            "lastOrderDaysAgo": 103.62986111111111,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 13646,
+        "productName": "[LB003] LB Festive (4,5%) 33CL",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 82,
+            "orders": [
+              {
+                "orderId": 86795,
+                "orderName": "S34918",
+                "date": "2025-02-17 12:46:35",
+                "quantity": 2,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 86398,
+                "orderName": "S34521",
+                "date": "2025-01-27 07:53:00",
+                "quantity": 2,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 84072,
+                "orderName": "S32195",
+                "date": "2024-09-11 08:47:16",
+                "quantity": 1,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 83446,
+                "orderName": "S31569",
+                "date": "2024-08-08 06:26:30",
+                "quantity": 1,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 82117,
+                "orderName": "S30240",
+                "date": "2024-05-13 12:00:38",
+                "quantity": 2,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 81131,
+                "orderName": "S29254",
+                "date": "2024-03-22 14:05:42",
+                "quantity": 2,
+                "priceUnit": 40.08
+              },
+              {
+                "orderId": 79871,
+                "orderName": "S27994",
+                "date": "2023-12-05 08:12:25",
+                "quantity": 1,
+                "priceUnit": 40.08
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38776,
+  "clientName": "DE SPIEGELEER BVBA",
+  "orderName": "S39210",
+  "orderDate": "2025-09-17 11:56:10",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.125,
+    "recall": 1,
+    "f1Score": 0.2222222222222222,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 23995,
+    "completionTokens": 4313,
+    "totalTokens": 28308
+  }
+}

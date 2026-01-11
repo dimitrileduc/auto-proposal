@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:23:55.975Z"
+  },
+  "client": {
+    "id": 3920,
+    "name": "ZILVER HORECA"
+  },
+  "config": {
+    "analysisEndDate": "2025-05-13 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 946,
+        "completionTokens": 174,
+        "totalTokens": 1120
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 3225.6,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9018,
+        "product_name": "[PF0302] FILOU/LD ANDALOUSE EXTRA  10 KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 128,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 3225.6,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande très espacé et irrégulier (environ 4 à 5 mois). La dernière commande enregistrée remonte au 08/01/2025, soit plus de 120 jours. Bien que le cycle soit difficile à définir précisément, le principe de précaution B2B s'applique car nous entrons dans une période où une commande a été passée l'année précédente (mai 2024). En raison de l'irrégularité, un besoin est détecté. Pour la quantité, on écarte le pic exceptionnel de 192u et on se base sur la médiane historique stable de 128u observée sur les commandes de 2024.",
+          "summary": "",
+          "baseline_quantity": 128,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-06 08:29:30",
+            "quantity": 200,
+            "price_unit": 24
+          },
+          {
+            "date": "2024-04-10 06:58:29",
+            "quantity": 128,
+            "price_unit": 24
+          },
+          {
+            "date": "2024-01-03 13:43:30",
+            "quantity": 128,
+            "price_unit": 24
+          },
+          {
+            "date": "2023-07-31 12:26:17",
+            "quantity": 156,
+            "price_unit": 24
+          },
+          {
+            "date": "2023-05-25 06:37:57",
+            "quantity": 77,
+            "price_unit": 24
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 3225.6,
+    "optional_amount": 0,
+    "total_amount": 3225.6,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2519
+}

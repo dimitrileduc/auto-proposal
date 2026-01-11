@@ -1,0 +1,30 @@
+{
+  "clientId": 34692,
+  "clientName": "CARREFOUR BELGIUM SA, CARREFOUR MARKET DIEPENBEEK",
+  "orderName": "S39458",
+  "orderDate": "2025-09-30 06:05:53",
+  "cutoffDate": "2025-09-29 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.4074074074074074,
+    "recall": 1,
+    "f1Score": 0.5789473684210525,
+    "mae": 0.45454545454545453,
+    "wmape": 27.77777777777778,
+    "mape": 25.757575757575754,
+    "bias": -16.666666666666664
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 24714,
+    "completionTokens": 4381,
+    "totalTokens": 29095
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:16:30.926Z"
+  },
+  "client": {
+    "id": 3903,
+    "name": "LECONTE ETS"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-26 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 1889,
+        "completionTokens": 367,
+        "totalTokens": 2256
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 821.7,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9310,
+        "product_name": "[PF0509] YVALLI GR BOUL TOMATE 2,5 KG",
+        "product_uom": "TU6",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 54.06,
+        "subtotal": 540.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION DU BESOIN) : La dernière commande remonte au 04/09/2025, soit 52 jours. Bien que l'historique soit limité, l'intervalle entre les deux premières commandes était de 27 jours. Nous avons largement dépassé ce cycle, et avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est élevé ou le cycle est irrégulier. En application du principe de précaution B2B, une commande est nécessaire. ÉTAPE 2 (ESTIMATION QUANTITÉ) : Les commandes précédentes étaient de 10u et 24u. En suivant la règle de la médiane et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage sur un produit à rotation incertaine, la quantité retenue est de 10u.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-04 08:31:02",
+            "quantity": 24,
+            "price_unit": 54.06
+          },
+          {
+            "date": "2025-08-08 11:46:34",
+            "quantity": 10,
+            "price_unit": 54.06
+          }
+        ]
+      },
+      {
+        "product_id": 8986,
+        "product_name": "[PF0077] FILOU PROVENCALE 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 30,
+        "quantity_source": "llm",
+        "price_unit": 9.37,
+        "subtotal": 281.09999999999997,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 04/09/2025, soit 52 jours. L'historique montre des cycles de commande variant entre 15 et 85 jours, avec une récurrence marquée en octobre/novembre l'année précédente (21/10/2024). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est réel car nous entrons dans la fenêtre habituelle de commande. En suivant la règle de la médiane des commandes récentes (30, 40, 30), la quantité retenue est de 30 unités, ce qui correspond également au volume le plus fréquent et le plus prudent pour éviter le surstock.",
+          "summary": "",
+          "baseline_quantity": 30,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-21 07:29:18",
+            "quantity": 30,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2024-08-21 11:29:03",
+            "quantity": 30,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2024-05-24 11:40:05",
+            "quantity": 40,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2024-03-13 22:00:38",
+            "quantity": 40,
+            "price_unit": 9.1
+          },
+          {
+            "date": "2023-11-24 12:57:12",
+            "quantity": 40,
+            "price_unit": 9.1
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 2,
+    "optional_products_count": 0,
+    "base_amount": 821.7,
+    "optional_amount": 0,
+    "total_amount": 821.7,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2638
+}

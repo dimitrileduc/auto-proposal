@@ -1,0 +1,30 @@
+{
+  "clientId": 52017,
+  "clientName": "Jardin d'Antan,  QUALITE",
+  "orderName": "S37500",
+  "orderDate": "2025-06-17 08:09:18",
+  "cutoffDate": "2025-06-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 17,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.6296296296296297,
+    "recall": 1,
+    "f1Score": 0.7727272727272727,
+    "mae": 1.1764705882352942,
+    "wmape": 33.33333333333333,
+    "mape": 56.666666666666664,
+    "bias": 6.666666666666667
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 16
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 27405,
+    "completionTokens": 5223,
+    "totalTokens": 32628
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 33756,
+  "clientName": "BELICIOUS",
+  "orderName": "S39994",
+  "orderDate": "2025-10-29 13:48:17",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 20,
+    "fn": 0,
+    "precision": 0.2857142857142857,
+    "recall": 1,
+    "f1Score": 0.4444444444444445,
+    "mae": 2.625,
+    "wmape": 60,
+    "mape": 89.58333333333331,
+    "bias": 14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 8
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 27771,
+    "completionTokens": 4993,
+    "totalTokens": 32764
+  }
+}

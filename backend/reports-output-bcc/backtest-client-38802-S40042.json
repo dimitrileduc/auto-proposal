@@ -1,0 +1,30 @@
+{
+  "clientId": 38802,
+  "clientName": "DLL AD FRERE SA VERLAINE",
+  "orderName": "S40042",
+  "orderDate": "2025-11-03 07:49:48",
+  "cutoffDate": "2025-11-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0.8,
+    "wmape": 50,
+    "mape": 43.33333333333333,
+    "bias": -25
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 19450,
+    "completionTokens": 3466,
+    "totalTokens": 22916
+  }
+}

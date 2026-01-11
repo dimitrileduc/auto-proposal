@@ -1,0 +1,30 @@
+{
+  "clientId": 56781,
+  "clientName": "SA INTERANS",
+  "orderName": "S39597",
+  "orderDate": "2025-10-13 07:41:43",
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 17,
+    "fp": 21,
+    "fn": 2,
+    "precision": 0.4473684210526316,
+    "recall": 0.8947368421052632,
+    "f1Score": 0.5964912280701755,
+    "mae": 0.5294117647058824,
+    "wmape": 32.142857142857146,
+    "mape": 20.58823529411765,
+    "bias": -32.142857142857146
+  },
+  "distribution": {
+    "exactMatch": 11,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 46,
+    "promptTokens": 40497,
+    "completionTokens": 6597,
+    "totalTokens": 47094
+  }
+}

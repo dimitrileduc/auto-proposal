@@ -1,0 +1,576 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:16:02.331Z"
+  },
+  "client": {
+    "id": 60190,
+    "name": "EUROPADRINKS"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 12,
+      "llm_usage": {
+        "calls": 12,
+        "promptTokens": 11066,
+        "completionTokens": 2027,
+        "totalTokens": 13093
+      }
+    },
+    "proposalFinal": {
+      "products_count": 12,
+      "total_amount": 2737.2000000000003,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18415,
+        "product_name": "[REB06] REB chips bio - paprika fumé 35g",
+        "product_uom": "TU20",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 320,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "Le cycle de commande récent montre une accélération avec des commandes hebdomadaires (7 jours d'intervalle entre les deux dernières). Depuis la dernière commande du 03/11, 8 jours se sont écoulés, ce qui dépasse le cycle observé. Un risque de rupture est identifié dans l'horizon des 30 jours (Replenishment Threshold Days). La quantité retenue est de 20 unités, correspondant à la médiane et à la valeur stable des commandes les plus récentes, conformément à la règle de maintien de la rotation régulière.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-25 06:30:28",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-15 13:40:47",
+            "quantity": 35,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-03-17 13:44:06",
+            "quantity": 15,
+            "price_unit": 17.6
+          },
+          {
+            "date": "2025-01-27 15:17:51",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-01-09 12:41:40",
+            "quantity": 10,
+            "price_unit": 17.6
+          }
+        ]
+      },
+      {
+        "product_id": 18353,
+        "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 320,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "Le cycle de commande récent montre une accélération avec des commandes hebdomadaires (27 oct et 03 nov). Depuis la dernière commande, 8 jours se sont écoulés. Étant donné que le seuil de réapprovisionnement est de 30 jours et que le cycle actuel semble être de 7 jours, le risque de rupture est imminent. En application du principe de précaution B2B, une commande est nécessaire. La quantité retenue est de 20 unités, correspondant à la médiane et à la valeur constante des deux dernières commandes les plus récentes.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-15 13:40:47",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-03 07:05:25",
+            "quantity": 12,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-10 09:08:47",
+            "quantity": 12,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-27 15:17:51",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-01-16 11:02:33",
+            "quantity": 5,
+            "price_unit": 16
+          }
+        ]
+      },
+      {
+        "product_id": 18416,
+        "product_name": "[REB05] REB chips bio - sel de mer 35g",
+        "product_uom": "TU20",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 400,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "Le cycle de commande récent montre une fréquence hebdomadaire (7 jours entre le 27/10 et le 03/11). Depuis la dernière commande du 03/11, 8 jours se sont écoulés, ce qui dépasse 70% du cycle moyen constaté. Il existe donc un risque de rupture imminent dans l'horizon des 30 jours. Pour la quantité, on écarte le pic exceptionnel de juin (64u) pour se concentrer sur la médiane des commandes récentes (25u et 30u). En application du principe de précaution B2B et de la règle de choisir la valeur la plus basse en cas de doute sur la médiane, une commande de 25 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-17 13:44:06",
+            "quantity": 56,
+            "price_unit": 17.6
+          },
+          {
+            "date": "2025-02-10 09:08:47",
+            "quantity": 35,
+            "price_unit": 17.6
+          },
+          {
+            "date": "2025-01-27 15:17:51",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-01-16 11:02:33",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-01-09 12:41:40",
+            "quantity": 15,
+            "price_unit": 17.6
+          }
+        ]
+      },
+      {
+        "product_id": 18355,
+        "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 320,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une accélération récente avec des commandes hebdomadaires (27 oct, 03 nov). Depuis la dernière commande, 8 jours se sont écoulés. Sur un cycle moyen estimé à environ 25-30 jours historiquement mais réduit à 7 jours récemment, le risque de rupture est élevé dans l'horizon des 30 jours (seuil de réapprovisionnement). En application du principe de précaution B2B et de la règle de la médiane des commandes récentes (20, 20, 10, 15, 10), la quantité retenue est de 20 unités pour maintenir le stock face à la demande actuelle.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-29 11:55:47",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-03 07:05:25",
+            "quantity": 15,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-27 13:12:43",
+            "quantity": 10,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-10 09:08:47",
+            "quantity": 8,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-16 11:02:33",
+            "quantity": 10,
+            "price_unit": 16
+          }
+        ]
+      },
+      {
+        "product_id": 18307,
+        "product_name": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 101.76,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 03/11/2025, soit il y a 8 jours. Bien que le cycle moyen soit d'environ 45 jours, l'historique montre une accélération récente (intervalle de 13 jours entre août et septembre). Avec un seuil de réapprovisionnement de 30 jours et par principe de précaution B2B pour éviter une rupture sur un produit à rotation régulière, un besoin est identifié. ÉTAPE 2 : Estimation de la quantité. Les quantités récentes sont 4, 5, 6 et 4. La médiane de ces commandes est de 4,5. Conformément à la règle de privilégier la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 4 unités.",
+          "summary": "",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-19 07:03:29",
+            "quantity": 4,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-05-28 08:09:37",
+            "quantity": 6,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-04-03 07:05:25",
+            "quantity": 8,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-03-17 13:44:06",
+            "quantity": 5,
+            "price_unit": 32.4
+          },
+          {
+            "date": "2025-02-27 13:12:43",
+            "quantity": 2,
+            "price_unit": 32.4
+          }
+        ]
+      },
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 160,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 27/10/2025, soit il y a 15 jours. Le cycle moyen constaté entre les dernières commandes est d'environ 25 à 30 jours (ex: 32 jours entre sept et oct, 24 jours entre début et fin sept). Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la zone de risque de rupture (15 jours écoulés + 30 jours de seuil > cycle habituel). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre des quantités de 5, 10, 10, 10 et 20. La médiane de ces commandes est de 10u. La commande de 20u est traitée comme un pic exceptionnel. Conformément aux règles, nous privilégions la médiane et la valeur la plus basse en cas de doute pour éviter le surstock. La quantité retenue est donc de 10u.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-03 07:05:25",
+            "quantity": 12,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-27 13:12:43",
+            "quantity": 10,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-10 09:08:47",
+            "quantity": 8,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-27 15:17:51",
+            "quantity": 5,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-01-16 11:02:33",
+            "quantity": 5,
+            "price_unit": 16
+          }
+        ]
+      },
+      {
+        "product_id": 18351,
+        "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 15,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 240,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 61 et 69 jours. Depuis la dernière commande du 27 octobre (il y a 15 jours), nous entrons dans la fenêtre de risque de rupture pour les 30 prochains jours (seuil de réapprovisionnement), car le cycle moyen est d'environ 65 jours. Bien qu'une commande de 56u ait eu lieu en juin, elle semble exceptionnelle par rapport aux volumes plus récents de 15u et 20u. En appliquant la règle de la médiane sur l'historique récent et en privilégiant la prudence (choix de la valeur la plus basse en cas de doute sur la tendance), la quantité retenue est de 15 unités.",
+          "summary": "",
+          "baseline_quantity": 15,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-15 13:40:47",
+            "quantity": 30,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-03 07:05:25",
+            "quantity": 15,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-27 13:12:43",
+            "quantity": 6,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-10 09:08:47",
+            "quantity": 10,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-16 11:02:33",
+            "quantity": 5,
+            "price_unit": 16
+          }
+        ]
+      },
+      {
+        "product_id": 18352,
+        "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 160,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 13 jours puis 56 jours, indiquant une irrégularité. La dernière commande date du 27 octobre, soit il y a 15 jours. Avec un seuil de réapprovisionnement de 30 jours, nous couvrons l'horizon jusqu'au 11 décembre. Par principe de précaution B2B face à un cycle instable, un besoin est détecté. La quantité est fixée à 10 unités, correspondant à la commande la plus récente et à la valeur basse de l'historique (médiane entre 10 et 15 privilégiant la prudence) pour éviter le surstockage sur un produit à rotation modérée.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 08:57:48",
+            "quantity": 15,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-29 11:55:47",
+            "quantity": 15,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-03 07:05:25",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-27 13:12:43",
+            "quantity": 7,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-10 09:08:47",
+            "quantity": 10,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18300,
+        "product_name": "[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 15,
+        "quantity_source": "llm",
+        "price_unit": 29.04,
+        "subtotal": 435.59999999999997,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles réguliers d'environ 30 à 35 jours (32 jours entre les deux dernières commandes). La dernière commande datant du 27 octobre (il y a 15 jours), le prochain besoin interviendra dans environ 15 à 20 jours, ce qui entre dans la fenêtre de réapprovisionnement de 30 jours. En suivant la règle de la médiane sur l'historique récent (15, 20, 15, 20), et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 15 unités.",
+          "summary": "",
+          "baseline_quantity": 15,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-29 11:55:47",
+            "quantity": 15,
+            "price_unit": 29.04
+          },
+          {
+            "date": "2025-04-15 13:40:47",
+            "quantity": 10,
+            "price_unit": 29.04
+          },
+          {
+            "date": "2025-03-17 13:44:06",
+            "quantity": 15,
+            "price_unit": 35.76
+          },
+          {
+            "date": "2025-02-10 09:08:47",
+            "quantity": 10,
+            "price_unit": 35.76
+          },
+          {
+            "date": "2025-01-09 12:41:40",
+            "quantity": 10,
+            "price_unit": 35.76
+          }
+        ]
+      },
+      {
+        "product_id": 18308,
+        "product_name": "[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 101.76,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 61 jours puis 69 jours. Depuis la dernière commande du 27 octobre 2025, 15 jours se sont écoulés. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons un horizon de 45 jours, ce qui représente environ 70% du cycle moyen constaté (65 jours). Par principe de précaution B2B et pour éviter une rupture sur ce produit à rotation régulière mais espacée, une commande est nécessaire. La quantité retenue est de 4 unités, correspondant à la médiane des commandes récentes et à la quantité la plus basse observée, afin de ne pas surstocker tout en maintenant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-28 08:09:37",
+            "quantity": 6,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-04-03 07:05:25",
+            "quantity": 5,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-03-17 13:44:06",
+            "quantity": 3,
+            "price_unit": 32.4
+          },
+          {
+            "date": "2025-02-27 13:12:43",
+            "quantity": 2,
+            "price_unit": 32.4
+          },
+          {
+            "date": "2025-01-16 11:02:33",
+            "quantity": 2,
+            "price_unit": 25.44
+          }
+        ]
+      },
+      {
+        "product_id": 18309,
+        "product_name": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 50.88,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 - DÉTECTION DU BESOIN : La dernière commande date du 27/10/2025, soit il y a 15 jours. Avec un seuil de réapprovisionnement de 30 jours et un historique très récent (une seule commande), le cycle de rotation n'est pas encore établi. En application du principe de précaution B2B (si doute sur le cycle → prévoir), un risque de rupture est identifié pour couvrir l'horizon des 30 prochains jours. ÉTAPE 2 - ESTIMATION QUANTITÉ : L'historique récent présente une commande unique de 2 unités. Conformément à la règle de maintien des quantités pour les rotations faibles (1-2u) et l'utilisation de la médiane historique, la quantité préconisée est de 2 unités.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-27 08:44:07",
+            "quantity": 2,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-05-28 08:09:37",
+            "quantity": 2,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-01-16 11:02:33",
+            "quantity": 2,
+            "price_unit": 25.44
+          }
+        ]
+      },
+      {
+        "product_id": 18310,
+        "product_name": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
+        "product_uom": "TU24",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 25.44,
+        "subtotal": 127.2,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande moyen d'environ 32 jours (intervalles de 12, 24 et 61 jours). La dernière commande datant du 25 septembre (soit 47 jours avant la date actuelle), le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe un risque de rupture imminent. Pour la quantité, la médiane des commandes récentes (4, 5, 5, 6) est de 5 unités. Conformément aux règles de gestion, nous privilégions cette valeur médiane pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 08:57:48",
+            "quantity": 6,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-06-19 07:03:29",
+            "quantity": 4,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-05-28 08:09:37",
+            "quantity": 4,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2025-03-17 13:44:06",
+            "quantity": 5,
+            "price_unit": 32.4
+          },
+          {
+            "date": "2025-02-27 13:12:43",
+            "quantity": 2,
+            "price_unit": 32.4
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 12,
+    "optional_products_count": 0,
+    "base_amount": 2737.2000000000003,
+    "optional_amount": 0,
+    "total_amount": 2737.2000000000003,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 4786
+}

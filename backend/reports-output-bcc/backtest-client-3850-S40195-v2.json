@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:18:42.000Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-06 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3850,
+    "name": "MYGASTRO",
+    "order": {
+      "name": "S40195",
+      "date": "2025-11-07 12:49:55"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 2
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 2,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 17,
+        "wmape": 48.57142857142857,
+        "mape": 59.09090909090909,
+        "bias": 48.57142857142857,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 2
+        },
+        "rmse": 19.235384061671343
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 2,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 17,
+          "wmape": 48.57142857142857,
+          "mape": 59.09090909090909,
+          "bias": 48.57142857142857,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 19.235384061671343
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 1888,
+    "completionTokens": 388,
+    "totalTokens": 2276
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 8978,
+        "productName": "[PF0608] FILOU/LD SAUCE SAMOURAI  10 L",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 52,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 44
+        },
+        "error": {
+          "absolute": 8,
+          "percent": 18.181818181818183,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 89449,
+              "orderName": "S37572",
+              "date": "2025-06-20 06:48:43",
+              "quantity": 52,
+              "priceUnit": 25.75
+            },
+            {
+              "orderId": 89291,
+              "orderName": "S37414",
+              "date": "2025-06-12 10:12:45",
+              "quantity": 52,
+              "priceUnit": 25.75
+            },
+            {
+              "orderId": 86408,
+              "orderName": "S34531",
+              "date": "2025-01-27 09:19:41",
+              "quantity": 52,
+              "priceUnit": 25.75
+            },
+            {
+              "orderId": 83661,
+              "orderName": "S31784",
+              "date": "2024-08-22 10:06:34",
+              "quantity": 52,
+              "priceUnit": 25
+            },
+            {
+              "orderId": 80815,
+              "orderName": "S28938",
+              "date": "2024-02-13 14:14:05",
+              "quantity": 52,
+              "priceUnit": 25
+            },
+            {
+              "orderId": 79439,
+              "orderName": "S27562",
+              "date": "2023-11-10 13:17:36",
+              "quantity": 52,
+              "priceUnit": 25
+            }
+          ],
+          "statistics": {
+            "mean": 52,
+            "median": 52,
+            "stdDev": 0,
+            "min": 52,
+            "max": 52,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.7854130313453901
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 117.53765509259259,
+            "lastOrderDaysAgo": 138.75783564814816,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 8983,
+        "productName": "[PF0070] FILOU/LD SAUCE ANDALOUSE  10 L",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 52,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 26
+        },
+        "error": {
+          "absolute": 26,
+          "percent": 100,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 89449,
+              "orderName": "S37572",
+              "date": "2025-06-20 06:48:43",
+              "quantity": 52,
+              "priceUnit": 25.75
+            },
+            {
+              "orderId": 89291,
+              "orderName": "S37414",
+              "date": "2025-06-12 10:12:45",
+              "quantity": 26,
+              "priceUnit": 25.75
+            },
+            {
+              "orderId": 86408,
+              "orderName": "S34531",
+              "date": "2025-01-27 09:19:41",
+              "quantity": 39,
+              "priceUnit": 25.75
+            },
+            {
+              "orderId": 83661,
+              "orderName": "S31784",
+              "date": "2024-08-22 10:06:34",
+              "quantity": 52,
+              "priceUnit": 25
+            },
+            {
+              "orderId": 80815,
+              "orderName": "S28938",
+              "date": "2024-02-13 14:14:05",
+              "quantity": 52,
+              "priceUnit": 25
+            },
+            {
+              "orderId": 79439,
+              "orderName": "S27562",
+              "date": "2023-11-10 13:17:36",
+              "quantity": 26,
+              "priceUnit": 25
+            }
+          ],
+          "statistics": {
+            "mean": 41.166666666666664,
+            "median": 46,
+            "stdDev": 11.667857082124758,
+            "min": 26,
+            "max": 52,
+            "cv": 0.2834297266912897,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6153551953306162
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 117.53765509259259,
+            "lastOrderDaysAgo": 138.75783564814816,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

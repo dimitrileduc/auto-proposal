@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:04:58.646Z"
+  },
+  "client": {
+    "id": 3875,
+    "name": "E.L.D. GMBH"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 4513,
+        "completionTokens": 808,
+        "totalTokens": 5321
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 3261.28,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 13381,
+        "product_name": "[MF0042] MF Brotaufstrich Tomate Bärlauch 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 80,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 985.6,
+        "confidence": "high",
+        "order_count": 36,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande très régulier toutes les 2 semaines (14 jours). La dernière commande date du 03/11/2025, soit il y a 8 jours. Avec un seuil de réapprovisionnement de 30 jours, la prochaine échéance théorique (autour du 17/11) tombe largement dans la fenêtre de risque. Concernant la quantité, bien que des pics à 128u ou 192u soient visibles, la quantité la plus fréquente et la médiane des commandes récentes est de 80u. Conformément aux règles de gestion B2B privilégiant la médiane et la prudence face aux valeurs extrêmes, une commande de 80u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 80,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-13 08:20:22",
+            "quantity": 128,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-19 10:46:41",
+            "quantity": 64,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-01-29 09:49:34",
+            "quantity": 64,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-01-08 10:35:42",
+            "quantity": 64,
+            "price_unit": 12
+          },
+          {
+            "date": "2023-11-28 07:38:16",
+            "quantity": 160,
+            "price_unit": 12
+          }
+        ]
+      },
+      {
+        "product_id": 13383,
+        "product_name": "[MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 80,
+        "quantity_source": "llm",
+        "price_unit": 12.08,
+        "subtotal": 966.4,
+        "confidence": "high",
+        "order_count": 37,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande récent montre une fréquence d'approvisionnement toutes les 2 à 4 semaines (dernières commandes les 03/11, 20/10 et 22/09). Avec une dernière commande effectuée il y a 8 jours et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent selon le principe de précaution B2B (70% du cycle moyen atteint ou dépassé d'ici l'horizon cible). Concernant la quantité, les trois dernières commandes sont stables à 80 unités. La valeur de 192 unités en juin est traitée comme un pic exceptionnel et exclue. La médiane des commandes récentes (80, 80, 80, 64, 64, 64) se situe entre 64 et 80 ; conformément à la tendance haussière stabilisée sur les trois derniers mois, la quantité de 80 unités est retenue.",
+          "summary": "",
+          "baseline_quantity": 80,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-13 08:20:22",
+            "quantity": 48,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2024-02-19 10:46:41",
+            "quantity": 64,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2024-01-29 09:49:34",
+            "quantity": 64,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2024-01-08 10:35:42",
+            "quantity": 64,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2023-11-28 07:38:16",
+            "quantity": 48,
+            "price_unit": 11.76
+          }
+        ]
+      },
+      {
+        "product_id": 14851,
+        "product_name": "[MF0048] MF Delikatess Mayonnaise 250ml DE",
+        "product_uom": "TU6",
+        "quantity_recommended": 48,
+        "quantity_source": "llm",
+        "price_unit": 10.85,
+        "subtotal": 520.8,
+        "confidence": "high",
+        "order_count": 30,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 35 à 45 jours. La dernière commande date du 3 novembre (il y a 8 jours). Avec un seuil de réapprovisionnement de 30 jours, le prochain besoin théorique se situe autour de la mi-décembre, ce qui entre dans l'horizon de vigilance. Bien que la commande soit récente, le principe de précaution B2B s'applique pour éviter toute rupture sur un produit à rotation régulière. Pour la quantité, la médiane des commandes récentes (48, 48, 128, 64, 64) est de 64, mais les deux dernières commandes se sont stabilisées à 48 unités. Conformément à la règle de choisir la valeur la plus basse en cas de doute ou de stabilisation, une quantité de 48 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 48,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-06 12:20:45",
+            "quantity": 64,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2024-04-16 06:52:33",
+            "quantity": 32,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2024-01-29 09:49:34",
+            "quantity": 48,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2024-01-08 10:35:42",
+            "quantity": 64,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2023-11-28 07:38:16",
+            "quantity": 48,
+            "price_unit": 10.56
+          }
+        ]
+      },
+      {
+        "product_id": 18421,
+        "product_name": "[MF0062] ​MF Tarti Betterave rouge",
+        "product_uom": "TU6",
+        "quantity_recommended": 64,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 788.48,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 35, 49 et 42 jours (moyenne de 42 jours). La dernière commande datant du 03/11 (il y a 8 jours), le prochain besoin est estimé sous 34 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la zone de risque (8 + 30 = 38 jours, soit > 70% du cycle moyen). En application du principe de précaution B2B, une commande est nécessaire. Pour la quantité, les volumes sont irréguliers (48u à 192u) ; la médiane historique se situe à 112u, mais la règle de prudence impose de choisir la valeur basse la plus cohérente avec les rotations récentes (64u) pour éviter le surstockage sur un produit à rotation variable.",
+          "summary": "",
+          "baseline_quantity": 64,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-07 12:17:38",
+            "quantity": 80,
+            "price_unit": 12.32
+          },
+          {
+            "date": "2025-03-18 09:56:50",
+            "quantity": 192,
+            "price_unit": 12.32
+          },
+          {
+            "date": "2025-02-24 12:22:11",
+            "quantity": 128,
+            "price_unit": 12.32
+          },
+          {
+            "date": "2025-01-27 10:05:44",
+            "quantity": 64,
+            "price_unit": 12.32
+          },
+          {
+            "date": "2025-01-13 14:06:38",
+            "quantity": 64,
+            "price_unit": 12.32
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 4,
+    "optional_products_count": 0,
+    "base_amount": 3261.28,
+    "optional_amount": 0,
+    "total_amount": 3261.28,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3711
+}

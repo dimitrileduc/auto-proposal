@@ -1,0 +1,30 @@
+{
+  "clientId": 29139,
+  "clientName": "DLL AD EUPEN EUSCO",
+  "orderName": "S40328",
+  "orderDate": "2025-11-13 12:30:22",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 76,
+    "fn": 0,
+    "precision": 0.0379746835443038,
+    "recall": 1,
+    "f1Score": 0.07317073170731708,
+    "mae": 4.666666666666667,
+    "wmape": 70,
+    "mape": 69.84126984126983,
+    "bias": -70
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 83,
+    "promptTokens": 81499,
+    "completionTokens": 14348,
+    "totalTokens": 95847
+  }
+}

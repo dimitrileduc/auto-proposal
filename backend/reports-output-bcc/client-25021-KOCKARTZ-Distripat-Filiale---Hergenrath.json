@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:19:22.726Z"
+  },
+  "client": {
+    "id": 25021,
+    "name": "KOCKARTZ Distripat Filiale : Hergenrath"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-15 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 874,
+        "completionTokens": 137,
+        "totalTokens": 1011
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 312,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 39,
+        "minimum_required": 300,
+        "gap_filled": 273,
+        "products_adjusted": 1
+      }
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 16755,
+        "product_name": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 312,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 22 septembre, soit 23 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique de réassort. Bien que l'historique soit limité à une seule commande récente, le principe de précaution B2B impose de prévoir un besoin pour éviter une rupture de stock sur ce produit. La quantité retenue est de 2 unités, correspondant à la valeur de la dernière commande connue (médiane par défaut), respectant ainsi la règle de ne pas surestimer les volumes sur une rotation faible.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-22 09:38:35",
+            "quantity": 2,
+            "price_unit": 19.5
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 1,
+    "base_amount": 0,
+    "optional_amount": 312,
+    "total_amount": 312,
+    "moq_adjusted": true,
+    "moq_gap": 273
+  },
+  "execution_time_ms": 2439
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 71894,
+  "clientName": "La Fagnarde",
+  "orderName": "S39725",
+  "orderDate": "2025-10-15 05:07:04",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 23011,
+    "completionTokens": 3737,
+    "totalTokens": 26748
+  }
+}

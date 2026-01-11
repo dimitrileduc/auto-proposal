@@ -1,0 +1,986 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:14:20.799Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-11 00:00:00"
+    }
+  },
+  "client": {
+    "id": 34800,
+    "name": "Gut unverpackt",
+    "order": {
+      "name": "S40274",
+      "date": "2025-11-12 14:27:18"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 8,
+        "falsePositives": 0,
+        "falseNegatives": 4,
+        "total": 12
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 0.6666666666666666,
+        "f1Score": 0.8,
+        "totalPredicted": 8,
+        "totalReal": 12
+      },
+      "quantityMetrics": {
+        "mae": 0.625,
+        "wmape": 26.31578947368421,
+        "mape": 33.33333333333333,
+        "bias": 26.31578947368421,
+        "distribution": {
+          "exactMatch": 4,
+          "partialMatch": 4
+        },
+        "rmse": 0.9354143466934853
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 3,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 1,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 8,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 8
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 8,
+          "totalReal": 8
+        },
+        "quantityMetrics": {
+          "mae": 0.625,
+          "wmape": 26.31578947368421,
+          "mape": 33.33333333333333,
+          "bias": 26.31578947368421,
+          "distribution": {
+            "exactMatch": 4,
+            "partialMatch": 4
+          },
+          "rmse": 0.9354143466934853
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 9136,
+    "completionTokens": 1593,
+    "totalTokens": 10729
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 575,
+        "productName": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 91137,
+              "orderName": "S39260",
+              "date": "2025-09-17 13:06:10",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 88754,
+              "orderName": "S36877",
+              "date": "2025-05-19 08:13:35",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 83414,
+              "orderName": "S31537",
+              "date": "2024-08-06 06:09:11",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 82622,
+              "orderName": "S30745",
+              "date": "2024-06-12 12:25:12",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81075,
+              "orderName": "S29198",
+              "date": "2024-03-12 07:32:16",
+              "quantity": 5,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 3.3333333333333335,
+            "median": 4,
+            "stdDev": 1.1055415967851334,
+            "min": 2,
+            "max": 5,
+            "cv": 0.33166247903554,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.6517871427213663
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 110.83804166666667,
+            "lastOrderDaysAgo": 54.49571759259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 572,
+        "productName": "[MF0032] MF Tarti Pois chiches 250 g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 91137,
+              "orderName": "S39260",
+              "date": "2025-09-17 13:06:10",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85687,
+              "orderName": "S33810",
+              "date": "2024-12-11 12:01:49",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 83414,
+              "orderName": "S31537",
+              "date": "2024-08-06 06:09:11",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81892,
+              "orderName": "S30015",
+              "date": "2024-04-30 10:03:53",
+              "quantity": 3,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.8944271909999159,
+            "min": 1,
+            "max": 3,
+            "cv": 0.4472135954999579,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4322867024463609
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 126.28164641203703,
+            "lastOrderDaysAgo": 54.49571759259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 570,
+        "productName": "[MF0030] MF Tarti Mangue Curry 250g ",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 91137,
+              "orderName": "S39260",
+              "date": "2025-09-17 13:06:10",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 88754,
+              "orderName": "S36877",
+              "date": "2025-05-19 08:13:35",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 87378,
+              "orderName": "S35501",
+              "date": "2025-03-24 12:07:00",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 84381,
+              "orderName": "S32504",
+              "date": "2024-10-01 07:28:55",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 83414,
+              "orderName": "S31537",
+              "date": "2024-08-06 06:09:11",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 82622,
+              "orderName": "S30745",
+              "date": "2024-06-12 12:25:12",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81892,
+              "orderName": "S30015",
+              "date": "2024-04-30 10:03:53",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81075,
+              "orderName": "S29198",
+              "date": "2024-03-12 07:32:16",
+              "quantity": 4,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 2.2222222222222223,
+            "median": 2,
+            "stdDev": 1.227262335243029,
+            "min": 1,
+            "max": 4,
+            "cv": 0.552268050859363,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.487366399484348
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 69.27377604166666,
+            "lastOrderDaysAgo": 54.49571759259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 573,
+        "productName": "[MF0033] MF Tarti Poivron chilli 250g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 91137,
+              "orderName": "S39260",
+              "date": "2025-09-17 13:06:10",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 88754,
+              "orderName": "S36877",
+              "date": "2025-05-19 08:13:35",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 87378,
+              "orderName": "S35501",
+              "date": "2025-03-24 12:07:00",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85687,
+              "orderName": "S33810",
+              "date": "2024-12-11 12:01:49",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 83414,
+              "orderName": "S31537",
+              "date": "2024-08-06 06:09:11",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81892,
+              "orderName": "S30015",
+              "date": "2024-04-30 10:03:53",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81075,
+              "orderName": "S29198",
+              "date": "2024-03-12 07:32:16",
+              "quantity": 3,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 2.75,
+            "median": 3,
+            "stdDev": 1.1989578808281798,
+            "min": 1,
+            "max": 4,
+            "cv": 0.43598468393751993,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.566907173856352
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 79.17002976190476,
+            "lastOrderDaysAgo": 54.49571759259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 567,
+        "productName": "[MF0027] MF Tarti Aubergine 250g ",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 10,
+          "orders": [
+            {
+              "orderId": 91137,
+              "orderName": "S39260",
+              "date": "2025-09-17 13:06:10",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 88754,
+              "orderName": "S36877",
+              "date": "2025-05-19 08:13:35",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 87378,
+              "orderName": "S35501",
+              "date": "2025-03-24 12:07:00",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85687,
+              "orderName": "S33810",
+              "date": "2024-12-11 12:01:49",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 84381,
+              "orderName": "S32504",
+              "date": "2024-10-01 07:28:55",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 83414,
+              "orderName": "S31537",
+              "date": "2024-08-06 06:09:11",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 82622,
+              "orderName": "S30745",
+              "date": "2024-06-12 12:25:12",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81892,
+              "orderName": "S30015",
+              "date": "2024-04-30 10:03:53",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81075,
+              "orderName": "S29198",
+              "date": "2024-03-12 07:32:16",
+              "quantity": 5,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 2.4,
+            "median": 2,
+            "stdDev": 1.3564659966250538,
+            "min": 1,
+            "max": 5,
+            "cv": 0.5651941652604391,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.47221303907222434
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 61.57668981481481,
+            "lastOrderDaysAgo": 54.49571759259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 571,
+        "productName": "[MF0031] MF Tarti Olives verte 250g ",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 91137,
+              "orderName": "S39260",
+              "date": "2025-09-17 13:06:10",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 88754,
+              "orderName": "S36877",
+              "date": "2025-05-19 08:13:35",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 87378,
+              "orderName": "S35501",
+              "date": "2025-03-24 12:07:00",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85687,
+              "orderName": "S33810",
+              "date": "2024-12-11 12:01:49",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 83414,
+              "orderName": "S31537",
+              "date": "2024-08-06 06:09:11",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 82622,
+              "orderName": "S30745",
+              "date": "2024-06-12 12:25:12",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81892,
+              "orderName": "S30015",
+              "date": "2024-04-30 10:03:53",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81075,
+              "orderName": "S29198",
+              "date": "2024-03-12 07:32:16",
+              "quantity": 3,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 2.888888888888889,
+            "median": 3,
+            "stdDev": 0.8748897637790901,
+            "min": 1,
+            "max": 4,
+            "cv": 0.30284645669276195,
+            "trend": "decreasing",
+            "outliers": [
+              4,
+              4,
+              2,
+              1
+            ],
+            "regularityScore": 0.6264387535467526
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 69.27377604166666,
+            "lastOrderDaysAgo": 54.49571759259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 569,
+        "productName": "[MF0029] MF Tarti Datte chili 250g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 91137,
+              "orderName": "S39260",
+              "date": "2025-09-17 13:06:10",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 88754,
+              "orderName": "S36877",
+              "date": "2025-05-19 08:13:35",
+              "quantity": 7,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85687,
+              "orderName": "S33810",
+              "date": "2024-12-11 12:01:49",
+              "quantity": 6,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 4,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 84381,
+              "orderName": "S32504",
+              "date": "2024-10-01 07:28:55",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 82622,
+              "orderName": "S30745",
+              "date": "2024-06-12 12:25:12",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81892,
+              "orderName": "S30015",
+              "date": "2024-04-30 10:03:53",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81075,
+              "orderName": "S29198",
+              "date": "2024-03-12 07:32:16",
+              "quantity": 2,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 3.5,
+            "median": 3,
+            "stdDev": 2,
+            "min": 1,
+            "max": 7,
+            "cv": 0.5714285714285714,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.41960014331349904
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 79.17002976190476,
+            "lastOrderDaysAgo": 54.49571759259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 568,
+        "productName": "[MF0028] ​MF Tarti Carotte Gingembre 250g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 88754,
+              "orderName": "S36877",
+              "date": "2025-05-19 08:13:35",
+              "quantity": 3,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 87378,
+              "orderName": "S35501",
+              "date": "2025-03-24 12:07:00",
+              "quantity": 1,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 85218,
+              "orderName": "S33341",
+              "date": "2024-11-19 09:01:08",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 82622,
+              "orderName": "S30745",
+              "date": "2024-06-12 12:25:12",
+              "quantity": 2,
+              "priceUnit": 14.46
+            },
+            {
+              "orderId": 81892,
+              "orderName": "S30015",
+              "date": "2024-04-30 10:03:53",
+              "quantity": 2,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.6324555320336759,
+            "min": 1,
+            "max": 3,
+            "cv": 0.31622776601683794,
+            "trend": "stable",
+            "outliers": [
+              3,
+              1
+            ],
+            "regularityScore": 0.6088104462206974
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 95.98085069444444,
+            "lastOrderDaysAgo": 175.69890046296297,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": [
+      {
+        "productId": 18421,
+        "productName": "[MF0062] ​MF Tarti Betterave rouge",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 2u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 175,
+            "orders": [
+              {
+                "orderId": 88754,
+                "orderName": "S36877",
+                "date": "2025-05-19 08:13:35",
+                "quantity": 4,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 87378,
+                "orderName": "S35501",
+                "date": "2025-03-24 12:07:00",
+                "quantity": 2,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14850,
+        "productName": "[MF0047] MF Mayonnaise 250ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 14925,
+        "productName": "[VID0010] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 132,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      },
+      {
+        "productId": 14924,
+        "productName": "[VID0009] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 22,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:15:23.483Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-08-17 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3572,
+    "name": "TADAL  SA",
+    "order": {
+      "name": "S38548",
+      "date": "2025-08-18 05:57:23"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 1,
+        "falseNegatives": 1,
+        "total": 5
+      },
+      "productMetrics": {
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1Score": 0.75,
+        "totalPredicted": 4,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 112,
+        "wmape": 75,
+        "mape": 118.75,
+        "bias": 75,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 3
+        },
+        "rmse": 133.54649627252175
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 1,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0.75,
+          "recall": 1,
+          "f1Score": 0.8571428571428571,
+          "totalPredicted": 4,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 112,
+          "wmape": 75,
+          "mape": 118.75,
+          "bias": 75,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 133.54649627252175
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3830,
+    "completionTokens": 892,
+    "totalTokens": 4722
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9017,
+        "productName": "[PF0232] BOLOGNAISE POULET TADAL 670 GR",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 320,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 128
+        },
+        "error": {
+          "absolute": 192,
+          "percent": 150,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 89013,
+              "orderName": "S37136",
+              "date": "2025-05-28 14:15:54",
+              "quantity": 360,
+              "priceUnit": 24.24
+            },
+            {
+              "orderId": 87055,
+              "orderName": "S35178",
+              "date": "2025-03-04 09:45:30",
+              "quantity": 256,
+              "priceUnit": 24.24
+            },
+            {
+              "orderId": 84726,
+              "orderName": "S32849",
+              "date": "2024-10-18 06:55:15",
+              "quantity": 241,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 83318,
+              "orderName": "S31441",
+              "date": "2024-07-25 09:41:31",
+              "quantity": 268,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 81793,
+              "orderName": "S29916",
+              "date": "2024-04-23 07:41:10",
+              "quantity": 320,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 81228,
+              "orderName": "S29351",
+              "date": "2024-03-15 10:36:20",
+              "quantity": 192,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 79844,
+              "orderName": "S27967",
+              "date": "2023-12-01 10:52:29",
+              "quantity": 248,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 4206,
+              "orderName": "S04196",
+              "date": "2023-08-31 07:26:40",
+              "quantity": 272,
+              "priceUnit": 22.2
+            }
+          ],
+          "statistics": {
+            "mean": 269.625,
+            "median": 262,
+            "stdDev": 47.712518011523976,
+            "min": 192,
+            "max": 360,
+            "cv": 0.17695880579146583,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.7747566990483767
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 90.8977414021164,
+            "lastOrderDaysAgo": 80.405625,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 8994,
+        "productName": "[PF0092] BOLOGNAISE BOEUF TADAL 670 GR",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 272,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 256
+        },
+        "error": {
+          "absolute": 16,
+          "percent": 6.25,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 89013,
+              "orderName": "S37136",
+              "date": "2025-05-28 14:15:54",
+              "quantity": 288,
+              "priceUnit": 24.24
+            },
+            {
+              "orderId": 87055,
+              "orderName": "S35178",
+              "date": "2025-03-04 09:45:30",
+              "quantity": 320,
+              "priceUnit": 24.24
+            },
+            {
+              "orderId": 84726,
+              "orderName": "S32849",
+              "date": "2024-10-18 06:55:15",
+              "quantity": 196,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 83318,
+              "orderName": "S31441",
+              "date": "2024-07-25 09:41:31",
+              "quantity": 268,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 81793,
+              "orderName": "S29916",
+              "date": "2024-04-23 07:41:10",
+              "quantity": 320,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 81228,
+              "orderName": "S29351",
+              "date": "2024-03-15 10:36:20",
+              "quantity": 192,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 79844,
+              "orderName": "S27967",
+              "date": "2023-12-01 10:52:29",
+              "quantity": 245,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 4206,
+              "orderName": "S04196",
+              "date": "2023-08-31 07:26:40",
+              "quantity": 272,
+              "priceUnit": 22.2
+            }
+          ],
+          "statistics": {
+            "mean": 262.625,
+            "median": 270,
+            "stdDev": 46.20859633228432,
+            "min": 192,
+            "max": 320,
+            "cv": 0.17594896271217259,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.7753626048959525
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 90.8977414021164,
+            "lastOrderDaysAgo": 80.405625,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9067,
+        "productName": "[PF1168] TADAL VOL AU VENT HALAL 800G",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 192,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 64
+        },
+        "error": {
+          "absolute": 128,
+          "percent": 200,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 89013,
+              "orderName": "S37136",
+              "date": "2025-05-28 14:15:54",
+              "quantity": 256,
+              "priceUnit": 38.7
+            },
+            {
+              "orderId": 87055,
+              "orderName": "S35178",
+              "date": "2025-03-04 09:45:30",
+              "quantity": 192,
+              "priceUnit": 38.7
+            },
+            {
+              "orderId": 84726,
+              "orderName": "S32849",
+              "date": "2024-10-18 06:55:15",
+              "quantity": 99,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 83318,
+              "orderName": "S31441",
+              "date": "2024-07-25 09:41:31",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 81793,
+              "orderName": "S29916",
+              "date": "2024-04-23 07:41:10",
+              "quantity": 256,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 81228,
+              "orderName": "S29351",
+              "date": "2024-03-15 10:36:20",
+              "quantity": 192,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 79844,
+              "orderName": "S27967",
+              "date": "2023-12-01 10:52:29",
+              "quantity": 175,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 4206,
+              "orderName": "S04196",
+              "date": "2023-08-31 07:26:40",
+              "quantity": 128,
+              "priceUnit": 36
+            }
+          ],
+          "statistics": {
+            "mean": 170.25,
+            "median": 184,
+            "stdDev": 65.02451460795382,
+            "min": 64,
+            "max": 256,
+            "cv": 0.3819354749365863,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6517706975613045
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 90.8977414021164,
+            "lastOrderDaysAgo": 80.405625,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 8391,
+        "productName": "[PF1615] BOULETTES TOMATE TADAL 800G",
+        "mismatchType": "false_positive",
+        "quantity": 128,
+        "reason": "Predicted 128u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 80,
+            "orders": [
+              {
+                "orderId": 89013,
+                "orderName": "S37136",
+                "date": "2025-05-28 14:15:54",
+                "quantity": 192,
+                "priceUnit": 34.2
+              },
+              {
+                "orderId": 87055,
+                "orderName": "S35178",
+                "date": "2025-03-04 09:45:30",
+                "quantity": 192,
+                "priceUnit": 34.2
+              },
+              {
+                "orderId": 84726,
+                "orderName": "S32849",
+                "date": "2024-10-18 06:55:15",
+                "quantity": 0,
+                "priceUnit": 31.8
+              },
+              {
+                "orderId": 81793,
+                "orderName": "S29916",
+                "date": "2024-04-23 07:41:10",
+                "quantity": 256,
+                "priceUnit": 31.8
+              },
+              {
+                "orderId": 81228,
+                "orderName": "S29351",
+                "date": "2024-03-15 10:36:20",
+                "quantity": 128,
+                "priceUnit": 31.8
+              },
+              {
+                "orderId": 4206,
+                "orderName": "S04196",
+                "date": "2023-08-31 07:26:40",
+                "quantity": 128,
+                "priceUnit": 31.8
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 14137,
+        "productName": "[CONS070] PALETTE EURO",
+        "mismatchType": "false_negative",
+        "quantity": 7,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

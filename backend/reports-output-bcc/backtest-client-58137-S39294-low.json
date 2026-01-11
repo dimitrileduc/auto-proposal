@@ -1,0 +1,30 @@
+{
+  "clientId": 58137,
+  "clientName": "SRL DOMAINE DE CHERCQ",
+  "orderName": "S39294",
+  "orderDate": "2025-11-14 12:48:37",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 25,
+    "promptTokens": 21994,
+    "completionTokens": 3791,
+    "totalTokens": 25785
+  }
+}

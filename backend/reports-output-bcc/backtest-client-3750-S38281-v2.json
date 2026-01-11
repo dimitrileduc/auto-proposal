@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:08:43.399Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-07-30 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3750,
+    "name": "BONNI",
+    "order": {
+      "name": "S38281",
+      "date": "2025-07-31 09:55:09"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 0,
+        "falsePositives": 1,
+        "falseNegatives": 2,
+        "total": 3
+      },
+      "productMetrics": {
+        "precision": 0,
+        "recall": 0,
+        "f1Score": 0,
+        "totalPredicted": 1,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 2,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3524,
+    "completionTokens": 375,
+    "totalTokens": 3899
+  },
+  "products": {
+    "truePositives": [],
+    "falsePositives": [
+      {
+        "productId": 9006,
+        "productName": "[PF0165] FILOU COCKTAIL FRENKEN 3 L",
+        "mismatchType": "false_positive",
+        "quantity": 35,
+        "reason": "Predicted 35u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 55,
+            "orders": [
+              {
+                "orderId": 89120,
+                "orderName": "S37243",
+                "date": "2025-06-04 07:42:19",
+                "quantity": 10,
+                "priceUnit": 8.76
+              },
+              {
+                "orderId": 80841,
+                "orderName": "S28964",
+                "date": "2024-02-15 15:07:28",
+                "quantity": 10,
+                "priceUnit": 8.5
+              },
+              {
+                "orderId": 79775,
+                "orderName": "S27898",
+                "date": "2023-11-28 13:03:47",
+                "quantity": 30,
+                "priceUnit": 8.5
+              },
+              {
+                "orderId": 4203,
+                "orderName": "S04193",
+                "date": "2023-08-31 06:51:02",
+                "quantity": 20,
+                "priceUnit": 8.5
+              },
+              {
+                "orderId": 4015,
+                "orderName": "S04009",
+                "date": "2023-08-22 13:24:24",
+                "quantity": 20,
+                "priceUnit": 8.5
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 8996,
+        "productName": "[PF0094] FILOU MOUTARDE 700 GR",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 8995,
+        "productName": "[PF0093] FILOU MOUTARDE 300GR",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

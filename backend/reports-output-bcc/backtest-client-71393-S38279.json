@@ -1,0 +1,30 @@
+{
+  "clientId": 71393,
+  "clientName": "Hoornaert, Sébastien - Les Jardins de Steinbach",
+  "orderName": "S38279",
+  "orderDate": "2025-08-04 11:44:03",
+  "cutoffDate": "2025-08-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.6,
+    "recall": 1,
+    "f1Score": 0.7499999999999999,
+    "mae": 1,
+    "wmape": 23.076923076923077,
+    "mape": 20.634920634920633,
+    "bias": -7.6923076923076925
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 18,
+    "promptTokens": 15598,
+    "completionTokens": 2094,
+    "totalTokens": 17692
+  }
+}

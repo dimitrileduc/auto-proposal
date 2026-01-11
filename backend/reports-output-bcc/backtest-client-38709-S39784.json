@@ -1,0 +1,30 @@
+{
+  "clientId": 38709,
+  "clientName": "BEES COOP",
+  "orderName": "S39784",
+  "orderDate": "2025-10-17 12:52:44",
+  "cutoffDate": "2025-10-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.7,
+    "recall": 1,
+    "f1Score": 0.8235294117647058,
+    "mae": 0.6428571428571429,
+    "wmape": 37.5,
+    "mape": 39.285714285714285,
+    "bias": -4.166666666666666
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 20116,
+    "completionTokens": 3543,
+    "totalTokens": 23659
+  }
+}

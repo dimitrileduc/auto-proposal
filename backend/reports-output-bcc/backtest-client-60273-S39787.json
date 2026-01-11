@@ -1,0 +1,30 @@
+{
+  "clientId": 60273,
+  "clientName": "CORNU magasin",
+  "orderName": "S39787",
+  "orderDate": "2025-10-21 07:07:54",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.4375,
+    "recall": 1,
+    "f1Score": 0.6086956521739131,
+    "mae": 0.2857142857142857,
+    "wmape": 16.666666666666664,
+    "mape": 16.666666666666664,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 24543,
+    "completionTokens": 3793,
+    "totalTokens": 28336
+  }
+}

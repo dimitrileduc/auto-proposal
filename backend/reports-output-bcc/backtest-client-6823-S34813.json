@@ -1,0 +1,30 @@
+{
+  "clientId": 6823,
+  "clientName": "ÖKORING HANDELS GMBH, Delivery Address",
+  "orderName": "S34813",
+  "orderDate": "2025-02-11 07:34:37",
+  "cutoffDate": "2025-02-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 9339,
+    "completionTokens": 1322,
+    "totalTokens": 10661
+  }
+}

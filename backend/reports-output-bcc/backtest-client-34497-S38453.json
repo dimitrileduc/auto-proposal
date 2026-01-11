@@ -1,0 +1,30 @@
+{
+  "clientId": 34497,
+  "clientName": "Comptoir De Sophie SRL",
+  "orderName": "S38453",
+  "orderDate": "2025-08-11 11:32:51",
+  "cutoffDate": "2025-08-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.75,
+    "recall": 1,
+    "f1Score": 0.8571428571428571,
+    "mae": 0.3333333333333333,
+    "wmape": 25,
+    "mape": 8.333333333333334,
+    "bias": -25
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 48,
+    "promptTokens": 41932,
+    "completionTokens": 6445,
+    "totalTokens": 48377
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 24286,
+  "clientName": "La Baraque à Vrac",
+  "orderName": "S39791",
+  "orderDate": "2025-10-21 07:57:36",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.8333333333333334,
+    "recall": 1,
+    "f1Score": 0.9090909090909091,
+    "mae": 0.2,
+    "wmape": 10.526315789473683,
+    "mape": 10,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 11675,
+    "completionTokens": 2143,
+    "totalTokens": 13818
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 52836,
+  "clientName": "DELHAIZE OTTIGNIES",
+  "orderName": "S39781",
+  "orderDate": "2025-10-22 13:41:36",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 19,
+    "fn": 0,
+    "precision": 0.40625,
+    "recall": 1,
+    "f1Score": 0.5777777777777777,
+    "mae": 1.4615384615384615,
+    "wmape": 50,
+    "mape": 41.15384615384615,
+    "bias": -39.473684210526315
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 35,
+    "promptTokens": 33101,
+    "completionTokens": 5950,
+    "totalTokens": 39051
+  }
+}

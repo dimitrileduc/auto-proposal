@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:13:52.545Z"
+  },
+  "client": {
+    "id": 60255,
+    "name": "CHATEAU DE VIGNEE - HÔTEL"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-20 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 1746,
+        "completionTokens": 352,
+        "totalTokens": 2098
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 364,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18416,
+        "product_name": "[REB05] REB chips bio - sel de mer 35g",
+        "product_uom": "TU20",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 18.2,
+        "subtotal": 182,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 04/08/2025, soit 77 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente pour établir un cycle précis, le délai écoulé est important. En application du principe de précaution B2B (cycle irrégulier ou difficile à déterminer), un besoin de réapprovisionnement est identifié pour éviter une rupture prolongée. ÉTAPE 2 : ESTIMATION QUANTITÉ. En l'absence d'historique N-1 et avec une seule commande de référence, la quantité est maintenue à 10 unités, correspondant à la dernière commande connue (médiane sur échantillon unique).",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-04 12:36:17",
+            "quantity": 10,
+            "price_unit": 18.2
+          },
+          {
+            "date": "2025-05-05 08:31:39",
+            "quantity": 10,
+            "price_unit": 18.2
+          },
+          {
+            "date": "2025-04-10 11:16:31",
+            "quantity": 10,
+            "price_unit": 18.2
+          },
+          {
+            "date": "2025-01-10 07:54:11",
+            "quantity": 10,
+            "price_unit": 17.6
+          }
+        ]
+      },
+      {
+        "product_id": 18415,
+        "product_name": "[REB06] REB chips bio - paprika fumé 35g",
+        "product_uom": "TU20",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 18.2,
+        "subtotal": 182,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 04/08/2025, soit 77 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente pour établir un cycle précis, le délai écoulé est significatif pour un produit de type snacking (chips). En application du principe de précaution B2B (incertitude sur la rotation = prévoir commande) et pour couvrir le risque de rupture sur l'horizon des 30 prochains jours, un réapprovisionnement est nécessaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. En l'absence d'historique multiple, la quantité de la dernière commande (10u) est utilisée comme référence pour maintenir le stock initialement mis en place.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-04 12:36:17",
+            "quantity": 10,
+            "price_unit": 18.2
+          },
+          {
+            "date": "2025-05-05 08:31:39",
+            "quantity": 10,
+            "price_unit": 18.2
+          },
+          {
+            "date": "2025-04-10 11:16:31",
+            "quantity": 10,
+            "price_unit": 18.2
+          },
+          {
+            "date": "2025-01-10 07:54:11",
+            "quantity": 10,
+            "price_unit": 17.6
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 2,
+    "optional_products_count": 0,
+    "base_amount": 364,
+    "optional_amount": 0,
+    "total_amount": 364,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2988
+}

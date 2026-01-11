@@ -1,0 +1,30 @@
+{
+  "clientId": 33724,
+  "clientName": "Tipi - Boutique zéro déchet",
+  "orderName": "S39895",
+  "orderDate": "2025-10-23 13:23:18",
+  "cutoffDate": "2025-10-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 23568,
+    "completionTokens": 4090,
+    "totalTokens": 27658
+  }
+}

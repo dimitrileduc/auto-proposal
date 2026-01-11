@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:17:05.853Z"
+  },
+  "client": {
+    "id": 52741,
+    "name": "Hit Handelsgruppe GmbH&Co.KG, Hit 126 Aachen Tivoli, HIT Tivoli Verbraucherm. GmbH&Co."
+  },
+  "config": {
+    "analysisEndDate": "2025-10-20 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 3,
+      "llm_usage": {
+        "calls": 3,
+        "promptTokens": 2713,
+        "completionTokens": 523,
+        "totalTokens": 3236
+      }
+    },
+    "proposalFinal": {
+      "products_count": 3,
+      "total_amount": 315.9,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 253.5,
+        "minimum_required": 300,
+        "gap_filled": 62.39999999999998,
+        "products_adjusted": 3
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16749,
+        "product_name": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 78,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse montre un cycle de commande d'environ 75 jours entre les deux dernières livraisons. La dernière commande datant du 11 août 2025 (il y a 70 jours), nous atteignons le seuil de 70% du cycle moyen, ce qui indique un risque imminent de rupture de stock dans l'horizon des 30 jours (Replenishment Threshold Days). Conformément au principe de précaution B2B, un réapprovisionnement est nécessaire. Pour la quantité, la médiane des commandes récentes (3u et 5u) est de 4u, mais en suivant la règle de privilégier la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 3u.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-08 12:00:14",
+            "quantity": 5,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-03-14 07:44:38",
+            "quantity": 4,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-01-30 07:32:25",
+            "quantity": 5,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-10-28 13:30:11",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-04-30 06:24:57",
+            "quantity": 2,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16766,
+        "product_name": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 97.5,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 11 août 2025, soit 70 jours avant la date actuelle. L'intervalle précédent était de 77 jours. Nous atteignons 90% du cycle moyen constaté, ce qui indique un risque de rupture imminent dans l'horizon des 30 jours (Replenishment Threshold). Par principe de précaution B2B, le besoin est validé. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre des commandes de 3u et 5u. La médiane de ces deux valeurs est de 4u. Conformément aux règles, on privilégie la médiane pour stabiliser le stock sans surévaluer.",
+          "summary": "",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-14 07:44:38",
+            "quantity": 4,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-01-30 07:32:25",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-12-05 08:15:40",
+            "quantity": 4,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-10-28 13:30:11",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-04-30 06:24:57",
+            "quantity": 2,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 16745,
+        "product_name": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 23.4,
+        "subtotal": 140.4,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. L'historique montre un cycle de commande long et irrégulier (environ 77 jours entre les deux dernières commandes). La dernière commande remonte au 11 août, soit 70 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous atteignons 90% du cycle moyen observé. Le principe de précaution B2B impose de prévoir une commande. ÉTAPE 2 : Estimation quantité. Les commandes récentes sont de 5u et 9u. En suivant la règle de la médiane et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage sur un produit à rotation lente, la quantité retenue est de 5u.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-08 12:00:14",
+            "quantity": 5,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2025-03-14 07:44:38",
+            "quantity": 5,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-12-05 08:15:40",
+            "quantity": 5,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-10-28 13:30:11",
+            "quantity": 11,
+            "price_unit": 23.4
+          },
+          {
+            "date": "2024-04-30 06:24:57",
+            "quantity": 8,
+            "price_unit": 23.4
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 3,
+    "optional_products_count": 0,
+    "base_amount": 315.9,
+    "optional_amount": 0,
+    "total_amount": 315.9,
+    "moq_adjusted": true,
+    "moq_gap": 62.39999999999998
+  },
+  "execution_time_ms": 2747
+}

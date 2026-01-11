@@ -1,0 +1,30 @@
+{
+  "clientId": 56953,
+  "clientName": "SAS CSF, ENTREPÔT CHOLET",
+  "orderName": "S40027",
+  "orderDate": "2025-10-30 12:57:08",
+  "cutoffDate": "2025-10-29 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1055,
+    "completionTokens": 131,
+    "totalTokens": 1186
+  }
+}

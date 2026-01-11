@@ -1,0 +1,549 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:13:04.199Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-07-15 00:00:00"
+    }
+  },
+  "client": {
+    "id": 17314,
+    "name": "CARREFOUR BELGIUM SA, CD Carrefour Cargovil",
+    "order": {
+      "name": "S38101",
+      "date": "2025-07-16 12:37:03"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 4,
+        "falseNegatives": 0,
+        "total": 6
+      },
+      "productMetrics": {
+        "precision": 0.3333333333333333,
+        "recall": 1,
+        "f1Score": 0.5,
+        "totalPredicted": 6,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 2,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 2,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1Score": 0.6666666666666666,
+          "totalPredicted": 4,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 2,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5618,
+    "completionTokens": 1047,
+    "totalTokens": 6665
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 14415,
+        "productName": "[PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 192,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 192
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 89414,
+              "orderName": "S37537",
+              "date": "2025-06-19 06:40:50",
+              "quantity": 192,
+              "priceUnit": 23.36
+            },
+            {
+              "orderId": 88043,
+              "orderName": "S36166",
+              "date": "2025-04-15 06:48:18",
+              "quantity": 288,
+              "priceUnit": 23.36
+            },
+            {
+              "orderId": 85435,
+              "orderName": "S33558",
+              "date": "2024-11-27 07:44:25",
+              "quantity": 192,
+              "priceUnit": 23.36
+            },
+            {
+              "orderId": 84542,
+              "orderName": "S32665",
+              "date": "2024-10-09 12:36:01",
+              "quantity": 288,
+              "priceUnit": 23.36
+            },
+            {
+              "orderId": 80020,
+              "orderName": "S28143",
+              "date": "2023-12-12 09:07:26",
+              "quantity": 288,
+              "priceUnit": 23.36
+            },
+            {
+              "orderId": 79700,
+              "orderName": "S27823",
+              "date": "2023-11-24 10:51:23",
+              "quantity": 288,
+              "priceUnit": 24.56
+            }
+          ],
+          "statistics": {
+            "mean": 256,
+            "median": 288,
+            "stdDev": 45.254833995939045,
+            "min": 192,
+            "max": 288,
+            "cv": 0.1767766952966369,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.5382601522188581
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 114.55686805555555,
+            "lastOrderDaysAgo": 25.72164351851852,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 14410,
+        "productName": "[PF3225] CARREFOUR CARBONNADES 680 GR PAR 8",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 108,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 108
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 89414,
+              "orderName": "S37537",
+              "date": "2025-06-19 06:40:50",
+              "quantity": 108,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 88043,
+              "orderName": "S36166",
+              "date": "2025-04-15 06:48:18",
+              "quantity": 108,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 85435,
+              "orderName": "S33558",
+              "date": "2024-11-27 07:44:25",
+              "quantity": 108,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 84542,
+              "orderName": "S32665",
+              "date": "2024-10-09 12:36:01",
+              "quantity": 216,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 82483,
+              "orderName": "S30606",
+              "date": "2024-06-04 08:58:03",
+              "quantity": 108,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 80816,
+              "orderName": "S28939",
+              "date": "2024-02-14 07:40:46",
+              "quantity": 216,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 80625,
+              "orderName": "S28748",
+              "date": "2024-01-31 07:24:12",
+              "quantity": 216,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 80020,
+              "orderName": "S28143",
+              "date": "2023-12-12 09:07:26",
+              "quantity": 108,
+              "priceUnit": 26.8
+            },
+            {
+              "orderId": 79700,
+              "orderName": "S27823",
+              "date": "2023-11-24 10:51:23",
+              "quantity": 108,
+              "priceUnit": 26.4
+            }
+          ],
+          "statistics": {
+            "mean": 144,
+            "median": 108,
+            "stdDev": 50.91168824543142,
+            "min": 108,
+            "max": 216,
+            "cv": 0.35355339059327373,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5349200962107759
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 71.59804253472223,
+            "lastOrderDaysAgo": 25.72164351851852,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 8999,
+        "productName": "[PF01012] CARREFOUR VOL AU VENT 400 GR",
+        "mismatchType": "false_positive",
+        "quantity": 96,
+        "reason": "Predicted 96u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 10,
+            "lastOrderDaysAgo": 25,
+            "orders": [
+              {
+                "orderId": 89414,
+                "orderName": "S37537",
+                "date": "2025-06-19 06:40:50",
+                "quantity": 96,
+                "priceUnit": 20.83
+              },
+              {
+                "orderId": 88043,
+                "orderName": "S36166",
+                "date": "2025-04-15 06:48:18",
+                "quantity": 163,
+                "priceUnit": 20.83
+              },
+              {
+                "orderId": 85435,
+                "orderName": "S33558",
+                "date": "2024-11-27 07:44:25",
+                "quantity": 192,
+                "priceUnit": 20.83
+              },
+              {
+                "orderId": 84542,
+                "orderName": "S32665",
+                "date": "2024-10-09 12:36:01",
+                "quantity": 192,
+                "priceUnit": 20.83
+              },
+              {
+                "orderId": 82483,
+                "orderName": "S30606",
+                "date": "2024-06-04 08:58:03",
+                "quantity": 96,
+                "priceUnit": 20.83
+              },
+              {
+                "orderId": 80979,
+                "orderName": "S29102",
+                "date": "2024-02-27 12:35:53",
+                "quantity": 192,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 80816,
+                "orderName": "S28939",
+                "date": "2024-02-14 07:40:46",
+                "quantity": 288,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 80625,
+                "orderName": "S28748",
+                "date": "2024-01-31 07:24:12",
+                "quantity": 192,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 80020,
+                "orderName": "S28143",
+                "date": "2023-12-12 09:07:26",
+                "quantity": 288,
+                "priceUnit": 21
+              },
+              {
+                "orderId": 79700,
+                "orderName": "S27823",
+                "date": "2023-11-24 10:51:23",
+                "quantity": 96,
+                "priceUnit": 21.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17868,
+        "productName": "[PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8",
+        "mismatchType": "false_positive",
+        "quantity": 108,
+        "reason": "Predicted 108u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 25,
+            "orders": [
+              {
+                "orderId": 89414,
+                "orderName": "S37537",
+                "date": "2025-06-19 06:40:50",
+                "quantity": 108,
+                "priceUnit": 17.6
+              },
+              {
+                "orderId": 88086,
+                "orderName": "S36209",
+                "date": "2025-04-15 12:01:06",
+                "quantity": 108,
+                "priceUnit": 17.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9370,
+        "productName": "[PF1952] CARRE VIN CIBOULET PET 450",
+        "mismatchType": "false_positive",
+        "quantity": 98,
+        "reason": "Predicted 98u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 54,
+            "orders": [
+              {
+                "orderId": 88838,
+                "orderName": "S36961",
+                "date": "2025-05-21 14:29:34",
+                "quantity": 98,
+                "priceUnit": 12.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14608,
+        "productName": "[PF3249] CARRE BOULETTES TOMATE 800 GR PAR 8",
+        "mismatchType": "false_positive",
+        "quantity": 192,
+        "reason": "Predicted 192u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 88043,
+                "orderName": "S36166",
+                "date": "2025-04-15 06:48:18",
+                "quantity": 0,
+                "priceUnit": 21.84
+              },
+              {
+                "orderId": 85435,
+                "orderName": "S33558",
+                "date": "2024-11-27 07:44:25",
+                "quantity": 96,
+                "priceUnit": 21.84
+              },
+              {
+                "orderId": 84542,
+                "orderName": "S32665",
+                "date": "2024-10-09 12:36:01",
+                "quantity": 96,
+                "priceUnit": 21.84
+              },
+              {
+                "orderId": 83194,
+                "orderName": "S31317",
+                "date": "2024-07-16 13:04:32",
+                "quantity": 96,
+                "priceUnit": 21.84
+              },
+              {
+                "orderId": 80816,
+                "orderName": "S28939",
+                "date": "2024-02-14 07:40:46",
+                "quantity": 192,
+                "priceUnit": 21.84
+              },
+              {
+                "orderId": 80020,
+                "orderName": "S28143",
+                "date": "2023-12-12 09:07:26",
+                "quantity": 192,
+                "priceUnit": 21.84
+              },
+              {
+                "orderId": 79700,
+                "orderName": "S27823",
+                "date": "2023-11-24 10:51:23",
+                "quantity": 96,
+                "priceUnit": 21.84
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 34568,
+  "clientName": "Vervicoop",
+  "orderName": "S39687",
+  "orderDate": "2025-10-13 07:33:10",
+  "cutoffDate": "2025-10-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.4444444444444444,
+    "recall": 1,
+    "f1Score": 0.6153846153846153,
+    "mae": 0.375,
+    "wmape": 27.27272727272727,
+    "mape": 18.75,
+    "bias": -27.27272727272727
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 17609,
+    "completionTokens": 2934,
+    "totalTokens": 20543
+  }
+}

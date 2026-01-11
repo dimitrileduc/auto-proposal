@@ -1,0 +1,30 @@
+{
+  "clientId": 38707,
+  "clientName": "AXEL SCHÄFER KG",
+  "orderName": "S35649",
+  "orderDate": "2025-03-27 12:03:07",
+  "cutoffDate": "2025-03-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8888888888888888,
+    "recall": 1,
+    "f1Score": 0.9411764705882353,
+    "mae": 0.25,
+    "wmape": 11.76470588235294,
+    "mape": 10.416666666666666,
+    "bias": -11.76470588235294
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 7949,
+    "completionTokens": 1447,
+    "totalTokens": 9396
+  }
+}

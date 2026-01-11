@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:08:47.233Z"
+  },
+  "client": {
+    "id": 3872,
+    "name": "SB FRISCHMARKT"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 1042,
+        "completionTokens": 192,
+        "totalTokens": 1234
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 2014.8,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9006,
+        "product_name": "[PF0165] FILOU COCKTAIL FRENKEN 3 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 230,
+        "quantity_source": "llm",
+        "price_unit": 8.76,
+        "subtotal": 2014.8,
+        "confidence": "high",
+        "order_count": 14,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 07/10/2025, soit 35 jours avant la date actuelle (11/11/2025). L'historique montre un cycle moyen d'environ 45 à 60 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous entrons dans la fenêtre habituelle de commande. ÉTAPE 2 : Estimation quantité. Les commandes récentes sont de 191u, 300u et 230u. La médiane de ces trois valeurs est 230u. Conformément à la règle de privilégier la médiane et d'éviter les pics (300u), la quantité retenue est de 230u.",
+          "summary": "",
+          "baseline_quantity": 230,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-07-03 06:47:13",
+            "quantity": 300,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2024-04-24 08:28:30",
+            "quantity": 300,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2024-03-21 12:41:39",
+            "quantity": 200,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2024-01-31 09:49:36",
+            "quantity": 300,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2023-11-29 10:44:12",
+            "quantity": 300,
+            "price_unit": 8.5
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 2014.8,
+    "optional_amount": 0,
+    "total_amount": 2014.8,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3017
+}

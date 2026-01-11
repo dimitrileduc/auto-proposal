@@ -1,0 +1,471 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:25:15.979Z"
+  },
+  "client": {
+    "id": 16878,
+    "name": "REWE MARKT GMBH - WEST, REWE THOMAS OKON"
+  },
+  "config": {
+    "analysisEndDate": "2025-09-17 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 17,
+      "llm_usage": {
+        "calls": 17,
+        "promptTokens": 14837,
+        "completionTokens": 2426,
+        "totalTokens": 17263
+      }
+    },
+    "proposalFinal": {
+      "products_count": 17,
+      "total_amount": 347.84999999999997,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 16745,
+        "product_name": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 22.26,
+        "subtotal": 22.26,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande récente de 1 unité le 05/09. Bien que le cycle soit difficile à établir avec un seul point de donnée, le principe de précaution B2B s'applique car nous sommes à 12 jours de la dernière commande sur un horizon de réapprovisionnement de 30 jours. En l'absence d'historique N-1 et pour éviter une rupture sur un produit à faible rotation, une commande de 1 unité (médiane du flux récent) est préconisée.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 22.26
+          }
+        ]
+      },
+      {
+        "product_id": 16749,
+        "product_name": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 05/09, soit 12 jours écoulés. Bien que le cycle soit difficile à déterminer avec une seule commande récente, le seuil de réapprovisionnement est de 30 jours. En application du principe de précaution B2B (doute sur le cycle = prévoir), un risque de rupture est identifié pour couvrir l'horizon de 30 jours. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles, la quantité est maintenue à 1 unité (médiane de l'historique disponible).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 16743,
+        "product_name": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 24.6,
+        "subtotal": 24.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 05/09, soit il y a 12 jours. Bien que l'historique soit limité à une seule commande récente, le délai de réapprovisionnement de 30 jours impose une analyse de précaution. En l'absence de cycle établi (cycle inconnu), la règle de détection du besoin préconise de prévoir une commande pour éviter toute rupture. La quantité retenue correspond à la médiane de l'historique récent (1u), conformément aux consignes de maintien des volumes pour les rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 24.6
+          }
+        ]
+      },
+      {
+        "product_id": 19354,
+        "product_name": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 05/09/2025, soit il y a 12 jours. Bien que l'historique soit limité à une seule commande récente, le délai de réapprovisionnement de 30 jours impose une vigilance accrue (principe de précaution B2B). En l'absence de cycle établi, le risque de rupture à l'horizon de 30 jours est considéré comme présent. La quantité retenue correspond à la médiane de l'historique récent (1u), conformément à la règle de maintien des rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 19366,
+        "product_name": "[JF057] JF EGG MAYONNAISE 720ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 26.49,
+        "subtotal": 26.49,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 05/09/2025, soit 12 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours et un historique très limité (une seule commande récente), il existe une incertitude majeure sur le cycle de rotation. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles et le maintien des quantités historiques en cas de doute, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 26.49
+          }
+        ]
+      },
+      {
+        "product_id": 16763,
+        "product_name": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 05/09, soit 12 jours écoulés. Bien que l'historique soit limité à une seule commande, le cycle de rotation est inconnu. En application du principe de précaution B2B (si doute sur le cycle → prévoir commande) et compte tenu du seuil de réapprovisionnement de 30 jours, un risque de rupture ne peut être exclu. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles (1-2u), on maintient la quantité de 1 unité sans l'augmenter.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 16780,
+        "product_name": "[JF009] JF SAUCE TARTARE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande récente de 1 unité le 05/09/2025. Bien que le cycle de commande ne soit pas encore établi, 12 jours se sont écoulés depuis la dernière commande. En application du principe de précaution B2B et face à l'incertitude du cycle, un risque de rupture est identifié pour l'horizon des 30 prochains jours. Conformément aux règles de gestion des rotations faibles (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane du seul historique disponible.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 16766,
+        "product_name": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 05/09, soit il y a 12 jours. Bien que l'historique soit limité à une seule commande, le délai de réapprovisionnement (Replenishment Threshold Days) est de 30 jours. En l'absence de cycle établi, le principe de précaution B2B s'applique pour éviter une rupture potentielle sur un produit à rotation lente. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u) et l'absence d'historique N-1, la quantité est maintenue à 1 unité (médiane de l'historique disponible) pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 16761,
+        "product_name": "[JF020] JF SAUCE AIOLI 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date de 12 jours. Bien que l'historique soit limité à une seule commande récente (1u), le cycle de rotation n'est pas encore établi. En application du principe de précaution B2B et de la règle de détection du besoin en cas de cycle incertain, une commande est déclenchée pour couvrir le risque de rupture dans l'horizon des 30 jours. La quantité retenue correspond à la médiane de l'historique récent (1u).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 15058,
+        "product_name": "[JF033] JF ANDALOUSE SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 25.2,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande date de 12 jours (2025-09-05). Avec un seuil de réapprovisionnement de 30 jours et un historique très limité (une seule commande), il existe un doute sur le cycle de rotation. En application du principe de précaution B2B, un besoin est détecté pour éviter toute rupture. ÉTAPE 2 : L'historique récent montre une commande unique de 1u. Conformément à la règle sur les rotations faibles, la quantité est maintenue à 1u (médiane de l'historique disponible).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 25.2
+          }
+        ]
+      },
+      {
+        "product_id": 16760,
+        "product_name": "[JF034] JF SAMOURAI SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 25.2,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 05/09/2025, soit il y a 12 jours. Bien que l'historique soit limité à une seule commande récente, le principe de précaution B2B s'applique face à l'absence de cycle établi. Avec un seuil de réapprovisionnement de 30 jours et une rotation inconnue, il existe un doute sur le besoin imminent. En suivant la règle de maintien des faibles rotations (1-2u) et en se basant sur la médiane de l'unique commande disponible, une quantité de 1 unité est préconisée pour éviter une rupture potentielle tout en restant sur la valeur la plus basse.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 25.2
+          }
+        ]
+      },
+      {
+        "product_id": 16731,
+        "product_name": "[JF035] JF BURGER SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 25.2,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date de 12 jours. Bien que l'historique soit limité à une seule commande récente, le principe de précaution B2B s'applique face à l'incertitude du cycle de rotation. Avec un seuil de réapprovisionnement de 30 jours et une absence d'historique N-1, il existe un risque de rupture si le produit est un nouvel ajout ou une vente ponctuelle régulière. En suivant la règle de la médiane sur l'unique donnée disponible (1u) et en privilégiant la quantité la plus basse pour éviter le surstockage, une commande de 1 unité est préconisée.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 25.2
+          }
+        ]
+      },
+      {
+        "product_id": 16729,
+        "product_name": "[JF037] JF BBQ SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 25.2,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 05/09/2025, soit il y a 12 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture, d'autant plus que le cycle de rotation sur ce nouveau produit n'est pas encore établi (principe de précaution B2B). En l'absence d'historique long, la quantité est basée sur la médiane de la commande la plus récente, soit 1 unité, pour maintenir le stock sans surstockage inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 25.2
+          }
+        ]
+      },
+      {
+        "product_id": 19395,
+        "product_name": "[LD010] LD Organic Truffle Spread 135 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date de 12 jours (2025-09-05). Bien que l'historique soit limité à une seule commande récente, le délai de réapprovisionnement de 30 jours impose une vigilance accrue (principe de précaution B2B). En l'absence de cycle établi, le risque de rupture est considéré comme présent. La quantité retenue correspond à la commande unique observée (1u), respectant la règle de maintien des faibles rotations sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 19398,
+        "product_name": "[LD013] LD Tuscan Organic Spread 180 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 05/09/2025, soit il y a 12 jours. Bien que l'historique soit limité à une seule commande récente, le délai de réapprovisionnement de 30 jours impose une vigilance accrue. En l'absence de cycle établi, le principe de précaution B2B s'applique pour éviter une rupture potentielle sur un produit dont la rotation est encore incertaine. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément aux règles de rotation faible et de maintien des quantités constatées, la médiane de 1 unité est retenue pour couvrir le besoin sans risquer un surstockage inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      },
+      {
+        "product_id": 19434,
+        "product_name": "[LD014] LD Organic Avocado Spread 180 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 05/09/2025, soit il y a 12 jours. Avec un seuil de réapprovisionnement de 30 jours et un historique très limité (une seule commande récente), le cycle de rotation n'est pas encore établi. En application du principe de précaution B2B (incertitude sur le cycle = risque), une commande est nécessaire pour éviter une rupture potentielle. La quantité retenue est de 1 unité, correspondant à la médiane (et unique valeur) de l'historique récent, respectant la règle de maintien pour les faibles rotations.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      },
+      {
+        "product_id": 19435,
+        "product_name": "[LD015] LD Onion Spread 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date de 12 jours (05/09). Bien que l'historique soit limité à une seule commande récente, le cycle de rotation est encore indéterminé. En application du principe de précaution B2B (Étape 1), un doute sur le cycle de réapprovisionnement impose de prévoir une commande pour éviter toute rupture potentielle dans l'horizon des 30 jours. Pour la quantité (Étape 2), la valeur unique de 1u est retenue comme référence de base.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 11:38:20",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 17,
+    "base_amount": 0,
+    "optional_amount": 347.84999999999997,
+    "total_amount": 347.84999999999997,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 5750
+}

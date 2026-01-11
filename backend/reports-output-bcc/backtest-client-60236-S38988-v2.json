@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:23:23.325Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-04 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60236,
+    "name": "BRASSERIE MAZIERS (GRAND ENCLOS)",
+    "order": {
+      "name": "S38988",
+      "date": "2025-09-05 14:11:59"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 0,
+        "falseNegatives": 1,
+        "total": 4
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 0.75,
+        "f1Score": 0.8571428571428571,
+        "totalPredicted": 3,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 5,
+        "wmape": 33.33333333333333,
+        "mape": 33.333333333333336,
+        "bias": 11.11111111111111,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 2
+        },
+        "rmse": 6.454972243679028
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 1,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 3,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 5,
+          "wmape": 33.33333333333333,
+          "mape": 33.333333333333336,
+          "bias": 11.11111111111111,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 2
+          },
+          "rmse": 6.454972243679028
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 2639,
+    "completionTokens": 443,
+    "totalTokens": 3082
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18377,
+        "productName": "[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 15,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 15
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89399,
+              "orderName": "S37522",
+              "date": "2025-06-18 06:55:56",
+              "quantity": 15,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 87607,
+              "orderName": "S35730",
+              "date": "2025-04-01 06:52:41",
+              "quantity": 10,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 12.5,
+            "median": 13,
+            "stdDev": 2.5,
+            "min": 10,
+            "max": 15,
+            "cv": 0.2,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.88
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 78.00225694444444,
+            "lastOrderDaysAgo": 77.71115740740741,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18380,
+        "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 30,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 20
+        },
+        "error": {
+          "absolute": 10,
+          "percent": 50,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89399,
+              "orderName": "S37522",
+              "date": "2025-06-18 06:55:56",
+              "quantity": 30,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 87607,
+              "orderName": "S35730",
+              "date": "2025-04-01 06:52:41",
+              "quantity": 20,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 25,
+            "median": 25,
+            "stdDev": 5,
+            "min": 20,
+            "max": 30,
+            "cv": 0.2,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.88
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 78.00225694444444,
+            "lastOrderDaysAgo": 77.71115740740741,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18378,
+        "productName": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 50,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89399,
+              "orderName": "S37522",
+              "date": "2025-06-18 06:55:56",
+              "quantity": 5,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 87607,
+              "orderName": "S35730",
+              "date": "2025-04-01 06:52:41",
+              "quantity": 10,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 7.5,
+            "median": 8,
+            "stdDev": 2.5,
+            "min": 5,
+            "max": 10,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 78.00225694444444,
+            "lastOrderDaysAgo": 77.71115740740741,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": [
+      {
+        "productId": 18379,
+        "productName": "[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 5,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

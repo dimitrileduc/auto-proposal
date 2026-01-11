@@ -1,0 +1,30 @@
+{
+  "clientId": 17297,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper Turnhout",
+  "orderName": "S39063",
+  "orderDate": "2025-09-08 06:49:29",
+  "cutoffDate": "2025-09-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 16,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.5925925925925926,
+    "recall": 1,
+    "f1Score": 0.7441860465116279,
+    "mae": 0.375,
+    "wmape": 26.08695652173913,
+    "mape": 27.083333333333332,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 10,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 25376,
+    "completionTokens": 4383,
+    "totalTokens": 29759
+  }
+}

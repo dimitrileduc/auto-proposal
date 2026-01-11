@@ -1,0 +1,30 @@
+{
+  "clientId": 3912,
+  "clientName": "LEGEND FOOD",
+  "orderName": "S39740",
+  "orderDate": "2025-10-15 11:44:02",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 3616.6666666666665,
+    "wmape": 49.820920194691894,
+    "mape": 50.50347074062234,
+    "bias": -0.8173385985857287
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4884,
+    "completionTokens": 885,
+    "totalTokens": 5769
+  }
+}

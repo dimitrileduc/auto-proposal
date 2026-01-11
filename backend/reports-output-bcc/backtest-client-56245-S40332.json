@@ -1,0 +1,30 @@
+{
+  "clientId": 56245,
+  "clientName": "ASMARKET",
+  "orderName": "S40332",
+  "orderDate": "2025-11-13 12:34:03",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 19,
+    "fn": 0,
+    "precision": 0.13636363636363635,
+    "recall": 1,
+    "f1Score": 0.24000000000000002,
+    "mae": 5,
+    "wmape": 75,
+    "mape": 74.6031746031746,
+    "bias": -75
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 25,
+    "promptTokens": 22323,
+    "completionTokens": 3883,
+    "totalTokens": 26206
+  }
+}

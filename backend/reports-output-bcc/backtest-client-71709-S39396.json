@@ -1,0 +1,30 @@
+{
+  "clientId": 71709,
+  "clientName": "DLL AD Kraainem Delkra B. SRL",
+  "orderName": "S39396",
+  "orderDate": "2025-09-26 09:42:29",
+  "cutoffDate": "2025-09-25 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.6,
+    "recall": 1,
+    "f1Score": 0.7499999999999999,
+    "mae": 0.3333333333333333,
+    "wmape": 21.428571428571427,
+    "mape": 27.77777777777778,
+    "bias": 7.142857142857142
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13265,
+    "completionTokens": 2164,
+    "totalTokens": 15429
+  }
+}

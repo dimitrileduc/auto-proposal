@@ -1,0 +1,30 @@
+{
+  "clientId": 17587,
+  "clientName": "Epicerie Uhoda Vennes",
+  "orderName": "S40247",
+  "orderDate": "2025-11-12 10:37:22",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 29,
+    "fp": 22,
+    "fn": 0,
+    "precision": 0.5686274509803921,
+    "recall": 1,
+    "f1Score": 0.725,
+    "mae": 0.5862068965517241,
+    "wmape": 35.41666666666667,
+    "mape": 34.48275862068966,
+    "bias": -22.916666666666664
+  },
+  "distribution": {
+    "exactMatch": 12,
+    "partialMatch": 17
+  },
+  "llmUsage": {
+    "calls": 52,
+    "promptTokens": 48720,
+    "completionTokens": 8184,
+    "totalTokens": 56904
+  }
+}

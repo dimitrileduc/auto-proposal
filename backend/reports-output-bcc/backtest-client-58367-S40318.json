@@ -1,0 +1,30 @@
+{
+  "clientId": 58367,
+  "clientName": "CARREFOUR BELGIUM SA, CARREFOUR MARKET WATERLOO",
+  "orderName": "S40318",
+  "orderDate": "2025-11-14 12:34:38",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 8,
+    "fn": 2,
+    "precision": 0.5294117647058824,
+    "recall": 0.8181818181818182,
+    "f1Score": 0.6428571428571428,
+    "mae": 0.1111111111111111,
+    "wmape": 10,
+    "mape": 11.11111111111111,
+    "bias": 10
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 17749,
+    "completionTokens": 2962,
+    "totalTokens": 20711
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 3574,
+  "clientName": "BEFOOD NV",
+  "orderName": "S39353",
+  "orderDate": "2025-09-23 12:33:26",
+  "cutoffDate": "2025-09-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 72,
+    "wmape": 40.909090909090914,
+    "mape": 40.909090909090914,
+    "bias": -40.909090909090914
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1040,
+    "completionTokens": 257,
+    "totalTokens": 1297
+  }
+}

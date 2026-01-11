@@ -1,0 +1,1221 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:04:23.325Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-12 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3840,
+    "name": "KORO HANDELS GmbH",
+    "order": {
+      "name": "S40299",
+      "date": "2025-11-13 07:44:27"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 11,
+        "falseNegatives": 0,
+        "total": 12
+      },
+      "productMetrics": {
+        "precision": 0.08333333333333333,
+        "recall": 1,
+        "f1Score": 0.15384615384615385,
+        "totalPredicted": 12,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 80,
+        "wmape": 93.02325581395348,
+        "mape": 93.02325581395348,
+        "bias": 93.02325581395348,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 80
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 10,
+          "falseNegatives": 0,
+          "total": 11
+        },
+        "productMetrics": {
+          "precision": 0.09090909090909091,
+          "recall": 1,
+          "f1Score": 0.16666666666666669,
+          "totalPredicted": 11,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 80,
+          "wmape": 93.02325581395348,
+          "mape": 93.02325581395348,
+          "bias": 93.02325581395348,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 80
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 11622,
+    "completionTokens": 2057,
+    "totalTokens": 13679
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 14813,
+        "productName": "[PF3252] DK_AUFSTR_040 KORO TARTINADE BIO AUBERGI 180G",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 166,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 86
+        },
+        "error": {
+          "absolute": 80,
+          "percent": 93.02325581395348,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 89182,
+              "orderName": "S37305",
+              "date": "2025-06-06 12:55:51",
+              "quantity": 166,
+              "priceUnit": 8.04
+            },
+            {
+              "orderId": 86193,
+              "orderName": "S34316",
+              "date": "2025-01-14 14:07:48",
+              "quantity": 0,
+              "priceUnit": 8.04
+            },
+            {
+              "orderId": 85827,
+              "orderName": "S33950",
+              "date": "2024-12-18 10:18:40",
+              "quantity": 166,
+              "priceUnit": 8.04
+            },
+            {
+              "orderId": 85096,
+              "orderName": "S33219",
+              "date": "2024-11-12 09:21:50",
+              "quantity": 164,
+              "priceUnit": 8.04
+            },
+            {
+              "orderId": 83089,
+              "orderName": "S31212",
+              "date": "2024-07-10 08:52:11",
+              "quantity": 166,
+              "priceUnit": 8.04
+            },
+            {
+              "orderId": 82288,
+              "orderName": "S30411",
+              "date": "2024-05-23 08:12:27",
+              "quantity": 166,
+              "priceUnit": 8.04
+            }
+          ],
+          "statistics": {
+            "mean": 138,
+            "median": 166,
+            "stdDev": 61.719796932048745,
+            "min": 0,
+            "max": 166,
+            "cv": 0.44724490530470107,
+            "trend": "increasing",
+            "outliers": [
+              0
+            ],
+            "regularityScore": 0.4770789955773227
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 75.83936111111112,
+            "lastOrderDaysAgo": 158.50288194444445,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18952,
+        "productName": "[PF3362] DE_AUFSTR_037_T6 KORO TARTINADE BIO HOUMOUS 380g",
+        "mismatchType": "false_positive",
+        "quantity": 166,
+        "reason": "Predicted 166u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 12,
+            "orders": [
+              {
+                "orderId": 91905,
+                "orderName": "S40026",
+                "date": "2025-10-30 12:09:01",
+                "quantity": 166,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 91287,
+                "orderName": "S39410",
+                "date": "2025-10-09 07:53:13",
+                "quantity": 166,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 88873,
+                "orderName": "S36996",
+                "date": "2025-05-22 09:21:35",
+                "quantity": 192,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 88236,
+                "orderName": "S36359",
+                "date": "2025-04-23 13:24:18",
+                "quantity": 166,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 87556,
+                "orderName": "S35679",
+                "date": "2025-03-28 09:20:30",
+                "quantity": 300,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 85977,
+                "orderName": "S34100",
+                "date": "2025-01-06 08:49:37",
+                "quantity": 166,
+                "priceUnit": 12.9
+              },
+              {
+                "orderId": 85866,
+                "orderName": "S33989",
+                "date": "2024-12-24 06:21:48",
+                "quantity": 192,
+                "priceUnit": 12.9
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14814,
+        "productName": "[PF3253] DK_AUFSTR_039 KORO TARTINADE BIO TOMATE 180G",
+        "mismatchType": "false_positive",
+        "quantity": 166,
+        "reason": "Predicted 166u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 10,
+            "lastOrderDaysAgo": 12,
+            "orders": [
+              {
+                "orderId": 91905,
+                "orderName": "S40026",
+                "date": "2025-10-30 12:09:01",
+                "quantity": 166,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 91184,
+                "orderName": "S39307",
+                "date": "2025-09-22 05:23:57",
+                "quantity": 166,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 90829,
+                "orderName": "S38952",
+                "date": "2025-09-10 06:26:25",
+                "quantity": 166,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 89076,
+                "orderName": "S37199",
+                "date": "2025-06-02 14:53:03",
+                "quantity": 166,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 86533,
+                "orderName": "S34656",
+                "date": "2025-02-04 09:24:55",
+                "quantity": 166,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 85827,
+                "orderName": "S33950",
+                "date": "2024-12-18 10:18:40",
+                "quantity": 166,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 85096,
+                "orderName": "S33219",
+                "date": "2024-11-12 09:21:50",
+                "quantity": 165,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 84907,
+                "orderName": "S33030",
+                "date": "2024-10-29 13:09:14",
+                "quantity": 166,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 82735,
+                "orderName": "S30858",
+                "date": "2024-06-19 05:47:30",
+                "quantity": 165,
+                "priceUnit": 8.04
+              },
+              {
+                "orderId": 81754,
+                "orderName": "S29877",
+                "date": "2024-04-19 06:24:39",
+                "quantity": 166,
+                "priceUnit": 8.04
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17449,
+        "productName": "[PF3312] DE_AUFSTR_036_T6 KORO TARTINADE BIO AUBERGINE 380G",
+        "mismatchType": "false_positive",
+        "quantity": 1826,
+        "reason": "Predicted 1826u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 21,
+            "lastOrderDaysAgo": 21,
+            "orders": [
+              {
+                "orderId": 91714,
+                "orderName": "S39835",
+                "date": "2025-10-21 08:46:05",
+                "quantity": 1833,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 91184,
+                "orderName": "S39307",
+                "date": "2025-09-22 05:23:57",
+                "quantity": 1826,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 91026,
+                "orderName": "S39149",
+                "date": "2025-09-10 14:18:40",
+                "quantity": 1826,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 90829,
+                "orderName": "S38952",
+                "date": "2025-09-10 06:26:25",
+                "quantity": 996,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 90394,
+                "orderName": "S38517",
+                "date": "2025-08-14 06:52:41",
+                "quantity": 1344,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 90026,
+                "orderName": "S38149",
+                "date": "2025-07-18 13:18:09",
+                "quantity": 1728,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 89878,
+                "orderName": "S38001",
+                "date": "2025-07-10 11:27:37",
+                "quantity": 0,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 88873,
+                "orderName": "S36996",
+                "date": "2025-05-22 09:21:35",
+                "quantity": 2000,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 87797,
+                "orderName": "S35920",
+                "date": "2025-04-09 12:06:09",
+                "quantity": 1434,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 87556,
+                "orderName": "S35679",
+                "date": "2025-03-28 09:20:30",
+                "quantity": 2324,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 87066,
+                "orderName": "S35189",
+                "date": "2025-03-04 15:00:41",
+                "quantity": 2324,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 85866,
+                "orderName": "S33989",
+                "date": "2024-12-24 06:21:48",
+                "quantity": 1500,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 85425,
+                "orderName": "S33548",
+                "date": "2024-11-26 13:29:52",
+                "quantity": 1350,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 85096,
+                "orderName": "S33219",
+                "date": "2024-11-12 09:21:50",
+                "quantity": 1344,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 84985,
+                "orderName": "S33108",
+                "date": "2024-11-04 14:40:37",
+                "quantity": 945,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 84043,
+                "orderName": "S32166",
+                "date": "2024-09-09 11:31:05",
+                "quantity": 830,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 82288,
+                "orderName": "S30411",
+                "date": "2024-05-23 08:12:27",
+                "quantity": 2115,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 81915,
+                "orderName": "S30038",
+                "date": "2024-05-02 07:07:22",
+                "quantity": 2090,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 81754,
+                "orderName": "S29877",
+                "date": "2024-04-19 06:24:39",
+                "quantity": 425,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 81697,
+                "orderName": "S29820",
+                "date": "2024-04-17 08:00:24",
+                "quantity": 166,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 81535,
+                "orderName": "S29658",
+                "date": "2024-04-05 10:28:16",
+                "quantity": 166,
+                "priceUnit": 11.94
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17451,
+        "productName": "[PF3314] DE_AUFSTR_038_T6 KORO TARTINADE BIO TOMATE 380G",
+        "mismatchType": "false_positive",
+        "quantity": 4224,
+        "reason": "Predicted 4224u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 21,
+            "lastOrderDaysAgo": 21,
+            "orders": [
+              {
+                "orderId": 91714,
+                "orderName": "S39835",
+                "date": "2025-10-21 08:46:05",
+                "quantity": 9600,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 91184,
+                "orderName": "S39307",
+                "date": "2025-09-22 05:23:57",
+                "quantity": 3936,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 90829,
+                "orderName": "S38952",
+                "date": "2025-09-10 06:26:25",
+                "quantity": 4608,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 90026,
+                "orderName": "S38149",
+                "date": "2025-07-18 13:18:09",
+                "quantity": 4224,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 89182,
+                "orderName": "S37305",
+                "date": "2025-06-06 12:55:51",
+                "quantity": 4608,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 88873,
+                "orderName": "S36996",
+                "date": "2025-05-22 09:21:35",
+                "quantity": 4416,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 88518,
+                "orderName": "S36641",
+                "date": "2025-05-08 15:05:26",
+                "quantity": 3788,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 88137,
+                "orderName": "S36260",
+                "date": "2025-04-16 14:27:53",
+                "quantity": 3466,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 87556,
+                "orderName": "S35679",
+                "date": "2025-03-28 09:20:30",
+                "quantity": 4250,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 87066,
+                "orderName": "S35189",
+                "date": "2025-03-04 15:00:41",
+                "quantity": 3722,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 86193,
+                "orderName": "S34316",
+                "date": "2025-01-14 14:07:48",
+                "quantity": 3100,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 85865,
+                "orderName": "S33988",
+                "date": "2024-12-24 06:19:15",
+                "quantity": 3084,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 85827,
+                "orderName": "S33950",
+                "date": "2024-12-18 10:18:40",
+                "quantity": 3834,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 85096,
+                "orderName": "S33219",
+                "date": "2024-11-12 09:21:50",
+                "quantity": 4008,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 84985,
+                "orderName": "S33108",
+                "date": "2024-11-04 14:40:37",
+                "quantity": 2308,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 84409,
+                "orderName": "S32532",
+                "date": "2024-10-01 12:00:40",
+                "quantity": 4608,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 83606,
+                "orderName": "S31729",
+                "date": "2024-08-19 14:23:19",
+                "quantity": 1538,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 82288,
+                "orderName": "S30411",
+                "date": "2024-05-23 08:12:27",
+                "quantity": 4153,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 82104,
+                "orderName": "S30227",
+                "date": "2024-05-08 14:46:31",
+                "quantity": 3333,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 81332,
+                "orderName": "S29455",
+                "date": "2024-03-21 12:28:06",
+                "quantity": 3644,
+                "priceUnit": 12.18
+              },
+              {
+                "orderId": 80620,
+                "orderName": "S28743",
+                "date": "2024-01-30 13:39:34",
+                "quantity": 1334,
+                "priceUnit": 12.18
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17450,
+        "productName": "[PF3313] DE_AUFSTR_034_T6 KORO TARTINADE BIO MANGUE 380G",
+        "mismatchType": "false_positive",
+        "quantity": 1500,
+        "reason": "Predicted 1500u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 19,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91593,
+                "orderName": "S39714",
+                "date": "2025-10-14 07:59:02",
+                "quantity": 1500,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 91375,
+                "orderName": "S39498",
+                "date": "2025-10-09 08:02:15",
+                "quantity": 1500,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 91026,
+                "orderName": "S39149",
+                "date": "2025-09-10 14:18:40",
+                "quantity": 1494,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 90394,
+                "orderName": "S38517",
+                "date": "2025-08-14 06:52:41",
+                "quantity": 1536,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 89878,
+                "orderName": "S38001",
+                "date": "2025-07-10 11:27:37",
+                "quantity": 1728,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 88873,
+                "orderName": "S36996",
+                "date": "2025-05-22 09:21:35",
+                "quantity": 1728,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 88236,
+                "orderName": "S36359",
+                "date": "2025-04-23 13:24:18",
+                "quantity": 1494,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 88137,
+                "orderName": "S36260",
+                "date": "2025-04-16 14:27:53",
+                "quantity": 1494,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 87556,
+                "orderName": "S35679",
+                "date": "2025-03-28 09:20:30",
+                "quantity": 1328,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 87066,
+                "orderName": "S35189",
+                "date": "2025-03-04 15:00:41",
+                "quantity": 2304,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 86193,
+                "orderName": "S34316",
+                "date": "2025-01-14 14:07:48",
+                "quantity": 1328,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 85425,
+                "orderName": "S33548",
+                "date": "2024-11-26 13:29:52",
+                "quantity": 768,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 85216,
+                "orderName": "S33339",
+                "date": "2024-11-18 14:14:43",
+                "quantity": 2244,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 83936,
+                "orderName": "S32059",
+                "date": "2024-09-05 07:27:40",
+                "quantity": 758,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 83297,
+                "orderName": "S31420",
+                "date": "2024-07-22 13:15:52",
+                "quantity": 758,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 81915,
+                "orderName": "S30038",
+                "date": "2024-05-02 07:07:22",
+                "quantity": 594,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 81697,
+                "orderName": "S29820",
+                "date": "2024-04-17 08:00:24",
+                "quantity": 244,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 80481,
+                "orderName": "S28604",
+                "date": "2024-01-19 12:40:26",
+                "quantity": 484,
+                "priceUnit": 13.14
+              },
+              {
+                "orderId": 80214,
+                "orderName": "S28337",
+                "date": "2024-01-02 14:39:56",
+                "quantity": 334,
+                "priceUnit": 13.14
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18953,
+        "productName": "[PF3363] DE_AUFSTR_041_T6 KORO TARTINADE BIO BETTERAVE 380G ",
+        "mismatchType": "false_positive",
+        "quantity": 172,
+        "reason": "Predicted 172u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91593,
+                "orderName": "S39714",
+                "date": "2025-10-14 07:59:02",
+                "quantity": 172,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 91375,
+                "orderName": "S39498",
+                "date": "2025-10-09 08:02:15",
+                "quantity": 172,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 88873,
+                "orderName": "S36996",
+                "date": "2025-05-22 09:21:35",
+                "quantity": 192,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 86193,
+                "orderName": "S34316",
+                "date": "2025-01-14 14:07:48",
+                "quantity": 330,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 85865,
+                "orderName": "S33988",
+                "date": "2024-12-24 06:19:15",
+                "quantity": 330,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 84985,
+                "orderName": "S33108",
+                "date": "2024-11-04 14:40:37",
+                "quantity": 330,
+                "priceUnit": 11.94
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17556,
+        "productName": "[PF3320] DE_AUFSTR_043 KORO TARTINADE BIO MOUTARDE AGAVE 380G",
+        "mismatchType": "false_positive",
+        "quantity": 43,
+        "reason": "Predicted 43u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 9,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91593,
+                "orderName": "S39714",
+                "date": "2025-10-14 07:59:02",
+                "quantity": 43,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 91514,
+                "orderName": "S39637",
+                "date": "2025-10-09 08:05:44",
+                "quantity": 0,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 91375,
+                "orderName": "S39498",
+                "date": "2025-10-09 08:02:15",
+                "quantity": 43,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 91184,
+                "orderName": "S39307",
+                "date": "2025-09-22 05:23:57",
+                "quantity": 0,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 90829,
+                "orderName": "S38952",
+                "date": "2025-09-10 06:26:25",
+                "quantity": 0,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 85425,
+                "orderName": "S33548",
+                "date": "2024-11-26 13:29:52",
+                "quantity": 101,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 84985,
+                "orderName": "S33108",
+                "date": "2024-11-04 14:40:37",
+                "quantity": 165,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 83606,
+                "orderName": "S31729",
+                "date": "2024-08-19 14:23:19",
+                "quantity": 155,
+                "priceUnit": 25.8
+              },
+              {
+                "orderId": 82636,
+                "orderName": "S30759",
+                "date": "2024-06-12 13:16:37",
+                "quantity": 165,
+                "priceUnit": 25.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18954,
+        "productName": "[PF3364] DE_OLIVE_013_T6 KORO TARTINADE BIO OLIVE 380G",
+        "mismatchType": "false_positive",
+        "quantity": 86,
+        "reason": "Predicted 86u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 28,
+            "orders": [
+              {
+                "orderId": 91593,
+                "orderName": "S39714",
+                "date": "2025-10-14 07:59:02",
+                "quantity": 86,
+                "priceUnit": 12.96
+              },
+              {
+                "orderId": 91375,
+                "orderName": "S39498",
+                "date": "2025-10-09 08:02:15",
+                "quantity": 86,
+                "priceUnit": 12.96
+              },
+              {
+                "orderId": 89182,
+                "orderName": "S37305",
+                "date": "2025-06-06 12:55:51",
+                "quantity": 173,
+                "priceUnit": 12.96
+              },
+              {
+                "orderId": 88518,
+                "orderName": "S36641",
+                "date": "2025-05-08 15:05:26",
+                "quantity": 248,
+                "priceUnit": 12.96
+              },
+              {
+                "orderId": 85425,
+                "orderName": "S33548",
+                "date": "2024-11-26 13:29:52",
+                "quantity": 164,
+                "priceUnit": 12.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14868,
+        "productName": "[PF3258] NL_AUFSTR_038 KORO TARTINADE BIO TOMATE 380G",
+        "mismatchType": "false_positive",
+        "quantity": 43,
+        "reason": "Predicted 43u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 123,
+            "orders": [
+              {
+                "orderId": 89879,
+                "orderName": "S38002",
+                "date": "2025-07-11 09:27:04",
+                "quantity": 43,
+                "priceUnit": 24.36
+              },
+              {
+                "orderId": 83089,
+                "orderName": "S31212",
+                "date": "2024-07-10 08:52:11",
+                "quantity": 43,
+                "priceUnit": 24.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9415,
+        "productName": "[PF2008] KORO TARTINADE BIO OLIVE 390",
+        "mismatchType": "false_positive",
+        "quantity": 82,
+        "reason": "Predicted 82u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 89182,
+                "orderName": "S37305",
+                "date": "2025-06-06 12:55:51",
+                "quantity": 0,
+                "priceUnit": 25.92
+              },
+              {
+                "orderId": 88518,
+                "orderName": "S36641",
+                "date": "2025-05-08 15:05:26",
+                "quantity": 0,
+                "priceUnit": 25.92
+              },
+              {
+                "orderId": 87066,
+                "orderName": "S35189",
+                "date": "2025-03-04 15:00:41",
+                "quantity": 164,
+                "priceUnit": 25.92
+              },
+              {
+                "orderId": 85425,
+                "orderName": "S33548",
+                "date": "2024-11-26 13:29:52",
+                "quantity": 0,
+                "priceUnit": 25.92
+              },
+              {
+                "orderId": 83936,
+                "orderName": "S32059",
+                "date": "2024-09-05 07:27:40",
+                "quantity": 82,
+                "priceUnit": 26.52
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17800,
+        "productName": "[PF3342] DE_AUFSTR_042_T6 KORO TARTINADE BIO PAPRIKA CHILI 380G",
+        "mismatchType": "false_positive",
+        "quantity": 1980,
+        "reason": "Predicted 1980u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 162,
+            "orders": [
+              {
+                "orderId": 89076,
+                "orderName": "S37199",
+                "date": "2025-06-02 14:53:03",
+                "quantity": 3000,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 88873,
+                "orderName": "S36996",
+                "date": "2025-05-22 09:21:35",
+                "quantity": 6000,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 88518,
+                "orderName": "S36641",
+                "date": "2025-05-08 15:05:26",
+                "quantity": 1728,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 86193,
+                "orderName": "S34316",
+                "date": "2025-01-14 14:07:48",
+                "quantity": 1218,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 85866,
+                "orderName": "S33989",
+                "date": "2024-12-24 06:21:48",
+                "quantity": 1167,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 85096,
+                "orderName": "S33219",
+                "date": "2024-11-12 09:21:50",
+                "quantity": 2310,
+                "priceUnit": 11.94
+              },
+              {
+                "orderId": 84907,
+                "orderName": "S33030",
+                "date": "2024-10-29 13:09:14",
+                "quantity": 1980,
+                "priceUnit": 11.94
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

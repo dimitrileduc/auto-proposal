@@ -1,0 +1,30 @@
+{
+  "clientId": 60411,
+  "clientName": "LA FERME DU BUEAU",
+  "orderName": "S39677",
+  "orderDate": "2025-10-14 06:47:17",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 23,
+    "fn": 1,
+    "precision": 0.30303030303030304,
+    "recall": 0.9090909090909091,
+    "f1Score": 0.45454545454545453,
+    "mae": 0.5,
+    "wmape": 31.25,
+    "mape": 18.333333333333332,
+    "bias": -31.25
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 48,
+    "promptTokens": 42440,
+    "completionTokens": 6960,
+    "totalTokens": 49400
+  }
+}

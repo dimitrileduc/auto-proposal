@@ -1,0 +1,30 @@
+{
+  "clientId": 58726,
+  "clientName": "SRL AXYLIUM",
+  "orderName": "S33871",
+  "orderDate": "2025-01-02 09:51:43",
+  "cutoffDate": "2025-01-01 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 42,
+    "wmape": 4200,
+    "mape": 4200,
+    "bias": 4200
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 866,
+    "completionTokens": 134,
+    "totalTokens": 1000
+  }
+}

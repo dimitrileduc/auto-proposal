@@ -1,0 +1,30 @@
+{
+  "clientId": 71617,
+  "clientName": "FLORIAL CENTRE SRL",
+  "orderName": "S39933",
+  "orderDate": "2025-10-28 15:03:07",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.5882352941176471,
+    "recall": 1,
+    "f1Score": 0.7407407407407407,
+    "mae": 0.7,
+    "wmape": 38.88888888888889,
+    "mape": 36,
+    "bias": -5.555555555555555
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 17729,
+    "completionTokens": 2975,
+    "totalTokens": 20704
+  }
+}

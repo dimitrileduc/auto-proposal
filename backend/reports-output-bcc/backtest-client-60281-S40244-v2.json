@@ -1,0 +1,599 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:14:53.097Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-11 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60281,
+    "name": "DAO - Hotel SELYS",
+    "order": {
+      "name": "S40244",
+      "date": "2025-11-12 08:53:31"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 5,
+        "falseNegatives": 1,
+        "total": 10
+      },
+      "productMetrics": {
+        "precision": 0.4444444444444444,
+        "recall": 0.8,
+        "f1Score": 0.5714285714285714,
+        "totalPredicted": 9,
+        "totalReal": 5
+      },
+      "quantityMetrics": {
+        "mae": 1.5,
+        "wmape": 54.54545454545454,
+        "mape": 58.33333333333333,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 4
+        },
+        "rmse": 1.5811388300841898
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 4,
+          "falsePositives": 5,
+          "falseNegatives": 1,
+          "total": 10
+        },
+        "productMetrics": {
+          "precision": 0.4444444444444444,
+          "recall": 0.8,
+          "f1Score": 0.5714285714285714,
+          "totalPredicted": 9,
+          "totalReal": 5
+        },
+        "quantityMetrics": {
+          "mae": 1.5,
+          "wmape": 54.54545454545454,
+          "mape": 58.33333333333333,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 4
+          },
+          "rmse": 1.5811388300841898
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8706,
+    "completionTokens": 1438,
+    "totalTokens": 10144
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 17728,
+        "productName": "[DAF002] DAF Lime and Ginger with Jasmine flower 25cl",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 91127,
+              "orderName": "S39250",
+              "date": "2025-09-17 11:43:02",
+              "quantity": 4,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 88782,
+              "orderName": "S36905",
+              "date": "2025-05-19 13:50:26",
+              "quantity": 3,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 86283,
+              "orderName": "S34406",
+              "date": "2025-01-20 09:18:34",
+              "quantity": 2,
+              "priceUnit": 15.12
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0.816496580927726,
+            "min": 2,
+            "max": 4,
+            "cv": 0.2721655269759087,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.8337607387740162
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 120.0293287037037,
+            "lastOrderDaysAgo": 54.553449074074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 17727,
+        "productName": "[DAF001] DAF Elderflower with Pomegrenade juice 25cl",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 91127,
+              "orderName": "S39250",
+              "date": "2025-09-17 11:43:02",
+              "quantity": 3,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 86283,
+              "orderName": "S34406",
+              "date": "2025-01-20 09:18:34",
+              "quantity": 1,
+              "priceUnit": 15.12
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 1,
+            "min": 1,
+            "max": 3,
+            "cv": 0.5,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.7
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 240.0586574074074,
+            "lastOrderDaysAgo": 54.553449074074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 17730,
+        "productName": "[DAF004] DAF Peach and Lemon with Honeybush flower 25cl",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 91127,
+              "orderName": "S39250",
+              "date": "2025-09-17 11:43:02",
+              "quantity": 2,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 88782,
+              "orderName": "S36905",
+              "date": "2025-05-19 13:50:26",
+              "quantity": 2,
+              "priceUnit": 15.12
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 120.91152777777778,
+            "lastOrderDaysAgo": 54.553449074074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 17729,
+        "productName": "[DAF003] DAF Passionfruit with Hibiscus flower 25cl",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 91127,
+              "orderName": "S39250",
+              "date": "2025-09-17 11:43:02",
+              "quantity": 2,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 88782,
+              "orderName": "S36905",
+              "date": "2025-05-19 13:50:26",
+              "quantity": 2,
+              "priceUnit": 15.12
+            },
+            {
+              "orderId": 86283,
+              "orderName": "S34406",
+              "date": "2025-01-20 09:18:34",
+              "quantity": 2,
+              "priceUnit": 15.12
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9970600549595614
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 120.0293287037037,
+            "lastOrderDaysAgo": 54.553449074074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18416,
+        "productName": "[REB05] REB chips bio - sel de mer 35g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 54,
+            "orders": [
+              {
+                "orderId": 91127,
+                "orderName": "S39250",
+                "date": "2025-09-17 11:43:02",
+                "quantity": 1,
+                "priceUnit": 18.2
+              },
+              {
+                "orderId": 88782,
+                "orderName": "S36905",
+                "date": "2025-05-19 13:50:26",
+                "quantity": 1,
+                "priceUnit": 18.2
+              },
+              {
+                "orderId": 86283,
+                "orderName": "S34406",
+                "date": "2025-01-20 09:18:34",
+                "quantity": 2,
+                "priceUnit": 17.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18415,
+        "productName": "[REB06] REB chips bio - paprika fumé 35g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 54,
+            "orders": [
+              {
+                "orderId": 91127,
+                "orderName": "S39250",
+                "date": "2025-09-17 11:43:02",
+                "quantity": 2,
+                "priceUnit": 18.2
+              },
+              {
+                "orderId": 88782,
+                "orderName": "S36905",
+                "date": "2025-05-19 13:50:26",
+                "quantity": 1,
+                "priceUnit": 18.2
+              },
+              {
+                "orderId": 86283,
+                "orderName": "S34406",
+                "date": "2025-01-20 09:18:34",
+                "quantity": 2,
+                "priceUnit": 17.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17732,
+        "productName": "[FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 54,
+            "orders": [
+              {
+                "orderId": 91127,
+                "orderName": "S39250",
+                "date": "2025-09-17 11:43:02",
+                "quantity": 2,
+                "priceUnit": 17.2
+              },
+              {
+                "orderId": 86283,
+                "orderName": "S34406",
+                "date": "2025-01-20 09:18:34",
+                "quantity": 2,
+                "priceUnit": 17.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17733,
+        "productName": "[FO003] FO ORGANIC FRUITY PEACH INFUSION 33cl",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 54,
+            "orders": [
+              {
+                "orderId": 91127,
+                "orderName": "S39250",
+                "date": "2025-09-17 11:43:02",
+                "quantity": 2,
+                "priceUnit": 17.2
+              },
+              {
+                "orderId": 86283,
+                "orderName": "S34406",
+                "date": "2025-01-20 09:18:34",
+                "quantity": 2,
+                "priceUnit": 17.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17731,
+        "productName": "[FO001] FO CITRONNADE BIO 33cl",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 175,
+            "orders": [
+              {
+                "orderId": 88782,
+                "orderName": "S36905",
+                "date": "2025-05-19 13:50:26",
+                "quantity": 3,
+                "priceUnit": 17.2
+              },
+              {
+                "orderId": 86283,
+                "orderName": "S34406",
+                "date": "2025-01-20 09:18:34",
+                "quantity": 2,
+                "priceUnit": 17.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18262,
+        "productName": "[AQUA01] AQUAPAX - natural mineral water 500ml",
+        "mismatchType": "false_negative",
+        "quantity": 10,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 10u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "medium"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 175,
+            "orders": [
+              {
+                "orderId": 88782,
+                "orderName": "S36905",
+                "date": "2025-05-19 13:50:26",
+                "quantity": 10,
+                "priceUnit": 11.76
+              },
+              {
+                "orderId": 86283,
+                "orderName": "S34406",
+                "date": "2025-01-20 09:18:34",
+                "quantity": 5,
+                "priceUnit": 11.04
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

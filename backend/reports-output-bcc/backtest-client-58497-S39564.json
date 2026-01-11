@@ -1,0 +1,30 @@
+{
+  "clientId": 58497,
+  "clientName": "MARKTKAUF MEHR",
+  "orderName": "S39564",
+  "orderDate": "2025-10-06 07:18:15",
+  "cutoffDate": "2025-10-05 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.5,
+    "recall": 0.3333333333333333,
+    "f1Score": 0.4,
+    "mae": 2,
+    "wmape": 50,
+    "mape": 50,
+    "bias": 50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 7753,
+    "completionTokens": 825,
+    "totalTokens": 8578
+  }
+}

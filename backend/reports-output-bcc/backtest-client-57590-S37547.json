@@ -1,0 +1,30 @@
+{
+  "clientId": 57590,
+  "clientName": "Comarché Ath",
+  "orderName": "S37547",
+  "orderDate": "2025-06-20 07:56:01",
+  "cutoffDate": "2025-06-19 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.5882352941176471,
+    "recall": 1,
+    "f1Score": 0.7407407407407407,
+    "mae": 0.3,
+    "wmape": 23.076923076923077,
+    "mape": 20,
+    "bias": -7.6923076923076925
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 14837,
+    "completionTokens": 2415,
+    "totalTokens": 17252
+  }
+}

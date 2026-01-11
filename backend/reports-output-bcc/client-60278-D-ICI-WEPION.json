@@ -1,0 +1,641 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:21:52.957Z"
+  },
+  "client": {
+    "id": 60278,
+    "name": "D'ICI WEPION"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-20 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 14,
+      "llm_usage": {
+        "calls": 14,
+        "promptTokens": 12914,
+        "completionTokens": 2325,
+        "totalTokens": 15239
+      }
+    },
+    "proposalFinal": {
+      "products_count": 14,
+      "total_amount": 589.4499999999998,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 88.5,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 30 à 35 jours entre chaque réapprovisionnement. La dernière commande datant du 01/10/2025 (il y a 19 jours), le risque de rupture se situe dans l'horizon des 30 jours du seuil de réapprovisionnement (Replenishment Threshold Days). En application du principe de précaution B2B, une commande est nécessaire. La quantité retenue est de 5 unités, correspondant à la médiane et à la valeur la plus fréquente observée dans l'historique récent (4 commandes sur 5 à 5u).",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-07-08 06:24:26",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-04-15 09:11:27",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-03-11 07:47:48",
+            "quantity": 3,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18351,
+        "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 53.099999999999994,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 23, 26 et 36 jours (moyenne ~28 jours). Depuis la dernière commande du 01/10/2025, 19 jours se sont écoulés, ce qui représente environ 68% du cycle moyen. Un risque de rupture est identifié dans l'horizon des 30 jours (Replenishment Threshold Days). En suivant la règle de la médiane des commandes récentes (3, 3, 2, 1, 6), la quantité retenue est de 3 unités pour maintenir le stock sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-07-08 06:24:26",
+            "quantity": 1,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 6,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-04-15 09:11:27",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-03-11 07:47:48",
+            "quantity": 3,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18352,
+        "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 53.099999999999994,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 28 jours entre les dernières commandes (23 jours entre les deux dernières). Avec 19 jours écoulés depuis la dernière commande du 01/10 et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent (70% du cycle atteint). Le volume de commande est en légère croissance mais reste modéré. En appliquant la règle de la médiane sur l'historique récent (2, 2, 3, 3, 5), la valeur centrale est de 3 unités. Conformément au principe de précaution B2B et à la méthode de la médiane, une commande de 3 unités est préconisée pour couvrir les besoins du prochain cycle sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-08 10:27:39",
+            "quantity": 3,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 3,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-07-08 06:24:26",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-25 10:10:02",
+            "quantity": 4,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18353,
+        "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 88.5,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande très régulier d'environ 25 à 30 jours (08/07, 13/08, 08/09, 01/10). La dernière commande datant du 01/10 (soit 19 jours écoulés), le risque de rupture est imminent dans l'horizon des 30 jours de seuil de réapprovisionnement. La quantité est fixée à 5 unités, correspondant à la médiane stricte et à la valeur constante observée sur la majorité des commandes récentes, conformément à la règle de maintien des rotations régulières.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-04-15 09:11:27",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-03-11 07:47:48",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-25 10:10:02",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 5,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18355,
+        "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 53.099999999999994,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière d'environ 25 à 30 jours (dernières commandes le 08/09 et le 01/10). Avec une dernière commande datant de 19 jours et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent dans l'horizon défini. En suivant la règle de la médiane des commandes récentes (3, 3, 5, 6, 5), la valeur médiane est de 5, mais compte tenu de la tendance récente à la baisse (3u sur les deux dernières commandes) et de la consigne de choisir la valeur la plus basse en cas de doute pour éviter le surstock, une quantité de 3 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 5,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-04-15 09:11:27",
+            "quantity": 4,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-03-11 07:47:48",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-25 10:10:02",
+            "quantity": 6,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 5,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18324,
+        "product_name": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 17.55,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 01/10/2025, soit il y a 19 jours. Bien que le cycle historique soit long (environ 45-80 jours), le délai de réapprovisionnement de 30 jours nous place dans une fenêtre de risque. En application du principe de précaution B2B (si doute sur le cycle → prévoir), un besoin est identifié pour éviter toute rupture. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre des commandes de 1u, 1u et un pic à 3u. Conformément aux règles, les pics exceptionnels sont écartés et la médiane est privilégiée. La médiane des commandes récentes est de 1u. En cas de doute entre 1 et 3, la valeur la plus basse est choisie pour ne pas surestimer le stock de sécurité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-08 06:24:26",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-03-11 07:47:48",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-02-25 10:10:02",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 18322,
+        "product_name": "[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 35.1,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "Le cycle moyen entre les dernières commandes est d'environ 25 jours. La dernière commande datant du 01/10 (soit 19 jours), le risque de rupture est imminent dans l'horizon des 30 jours (seuil de réapprovisionnement). En suivant le principe de précaution B2B et la règle des 70% du cycle, une commande est nécessaire. La quantité retenue est de 2 unités, correspondant à la médiane et au volume des commandes les plus récentes pour maintenir la rotation actuelle.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-01 13:30:34",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-09-08 10:27:39",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 18326,
+        "product_name": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 16.05,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Le cycle moyen entre les deux dernières commandes est de 23 jours. La dernière commande date du 01/10/2025, soit il y a 19 jours. Le seuil de réapprovisionnement étant de 30 jours, le risque de rupture est imminent (19 jours écoulés représentent plus de 80% du cycle récent). ÉTAPE 2 : L'historique récent montre des quantités très faibles (1u et 2u). La médiane des commandes récentes est de 1u. Conformément à la règle sur les rotations faibles, on maintient la quantité minimale pour éviter le surstock tout en couvrant le besoin.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-01 13:30:34",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-09-08 10:27:39",
+            "quantity": 2,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 16.05
+          }
+        ]
+      },
+      {
+        "product_id": 18327,
+        "product_name": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 16.05,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. L'historique montre un cycle de commande irrégulier (environ 49 jours entre mai et août, puis 49 jours entre août et octobre). La dernière commande date du 01/10/2025, soit 19 jours écoulés. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons 49 jours d'ici la fin de la période de vigilance. En application du principe de précaution B2B (doute sur le cycle = prévoir), un risque de rupture est identifié. ÉTAPE 2 : Estimation quantité. La médiane et le mode des commandes récentes sont strictement de 1 unité. Conformément à la règle sur les rotations faibles, la quantité de 1u est maintenue.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-01 13:30:34",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-02-25 10:10:02",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 16.05
+          }
+        ]
+      },
+      {
+        "product_id": 18356,
+        "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 25.3,
+        "subtotal": 101.2,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Le cycle moyen entre les commandes est d'environ 35 jours. La dernière commande date du 01/10/2025, soit il y a 19 jours. Avec un seuil de réapprovisionnement de 30 jours, l'horizon d'analyse s'étend jusqu'au 19/11/2025. À cette date, 49 jours se seront écoulés depuis la dernière commande, ce qui dépasse largement le cycle habituel (140% du cycle). Le risque de rupture est avéré. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre les quantités suivantes : 6, 2, 3, 4, 5. La médiane de ces commandes est de 4 unités. Conformément à la règle de privilégier la médiane pour lisser les variations, la quantité retenue est de 4.",
+          "summary": "",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-08 06:24:26",
+            "quantity": 4,
+            "price_unit": 25.3
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 5,
+            "price_unit": 25.3
+          },
+          {
+            "date": "2025-04-15 09:11:27",
+            "quantity": 3,
+            "price_unit": 25.3
+          },
+          {
+            "date": "2025-03-11 07:47:48",
+            "quantity": 5,
+            "price_unit": 25.3
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 25.3
+          }
+        ]
+      },
+      {
+        "product_id": 18325,
+        "product_name": "[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 17.55,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 08/09/2025, soit 42 jours avant la date actuelle. Bien que le cycle historique soit irrégulier (111 jours entre les deux premières commandes), le délai actuel dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B face à un cycle incertain, un risque de rupture est identifié. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre des volumes très faibles (1u et 2u). Conformément aux règles de rotation faible et de choix de la valeur la plus basse en cas de doute, la quantité retenue est de 1 unité pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-08 10:27:39",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 18323,
+        "product_name": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 17.55,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles irréguliers (26 jours, puis 85 jours). La dernière commande remonte au 08/09/2025, soit 42 jours avant la date actuelle. Ce délai dépasse largement le seuil de réapprovisionnement de 30 jours et représente un risque de rupture imminent selon le principe de précaution B2B. Concernant la quantité, l'historique récent affiche des volumes très faibles (1u, 1u, 2u). Conformément aux règles de gestion des rotations faibles, la médiane de 1 unité est retenue pour éviter un surstockage inutile tout en maintenant la disponibilité du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-08 10:27:39",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 18328,
+        "product_name": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 16.05,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles irréguliers (26 jours, puis 85 jours), ce qui impose l'application du principe de précaution B2B. La dernière commande datant du 08/09/2025 (soit 42 jours avant la date actuelle), le risque de rupture est jugé probable dans l'horizon des 30 jours de réapprovisionnement. Conformément à la règle de la médiane sur l'historique récent (1u, 1u, 2u), la quantité retenue est de 1 unité, privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage sur une rotation faible.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-08 10:27:39",
+            "quantity": 2,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 1,
+            "price_unit": 16.05
+          }
+        ]
+      },
+      {
+        "product_id": 18329,
+        "product_name": "[NUT02] NUTS & BERRIES energy bar Superfood bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 16.05,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 13 août 2025, soit 68 jours. L'intervalle précédent était de 85 jours. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons 98 jours sans commande à l'horizon du seuil, ce qui dépasse le cycle moyen observé. Par principe de précaution B2B, un risque de rupture est identifié. ÉTAPE 2 : Estimation quantité. L'historique récent montre une stabilité parfaite avec des commandes unitaires (1u). La médiane des commandes récentes est de 1. On maintient cette quantité sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-13 06:26:39",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-05-20 10:52:20",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-01-30 14:23:40",
+            "quantity": 2,
+            "price_unit": 16.05
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 14,
+    "optional_products_count": 0,
+    "base_amount": 589.4499999999998,
+    "optional_amount": 0,
+    "total_amount": 589.4499999999998,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 4825
+}

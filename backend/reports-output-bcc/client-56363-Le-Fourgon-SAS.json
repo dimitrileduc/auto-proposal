@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:20:46.027Z"
+  },
+  "client": {
+    "id": 56363,
+    "name": "Le Fourgon SAS"
+  },
+  "config": {
+    "analysisEndDate": "2025-06-23 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3768,
+        "completionTokens": 769,
+        "totalTokens": 4537
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 1152,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 564,
+        "product_name": "[MF0024] MF KETCHUP 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 13.8,
+        "subtotal": 276,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 35 jours entre chaque réapprovisionnement. La dernière commande datant du 6 mai 2025 (soit 48 jours avant la date actuelle), le délai habituel est largement dépassé, ce qui confirme un besoin immédiat pour couvrir les 30 prochains jours. Pour la quantité, bien que la dernière commande ait été de 32u, l'historique récent montre des volumes variés (10u, 16u, 20u, 25u). En appliquant la règle de la médiane sur les commandes récentes (20u) et en privilégiant la prudence pour éviter le surstockage sur un format 250g, une quantité de 20 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-20 07:55:19",
+            "quantity": 17,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-11-22 09:04:48",
+            "quantity": 18,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-09-09 09:12:33",
+            "quantity": 40,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-06-27 08:18:55",
+            "quantity": 35,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-06-04 14:36:38",
+            "quantity": 20,
+            "price_unit": 13.8
+          }
+        ]
+      },
+      {
+        "product_id": 14850,
+        "product_name": "[MF0047] MF Mayonnaise 250ml",
+        "product_uom": "TU6",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 13.8,
+        "subtotal": 276,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 23 jours (intervalles de 14, 15, 26 et 35 jours). La dernière commande datant du 06 mai 2025 (soit 48 jours avant la date actuelle), le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent. Pour la quantité, l'historique récent présente des variations (10u à 35u). En appliquant la règle de la médiane sur les commandes récentes (10, 16, 20, 32, 35), la valeur centrale est 20u. Ce volume correspond également à la commande passée à la même période l'année dernière (juin 2024), validant une cohérence saisonnière.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-20 07:55:19",
+            "quantity": 24,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-11-22 09:04:48",
+            "quantity": 22,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-09-09 09:12:33",
+            "quantity": 35,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-06-27 08:18:55",
+            "quantity": 35,
+            "price_unit": 13.8
+          },
+          {
+            "date": "2024-06-04 14:36:38",
+            "quantity": 20,
+            "price_unit": 13.8
+          }
+        ]
+      },
+      {
+        "product_id": 16951,
+        "product_name": "[RF003] REFIELD Maïs 500G ",
+        "product_uom": "TU6",
+        "quantity_recommended": 32,
+        "quantity_source": "llm",
+        "price_unit": 10.2,
+        "subtotal": 326.4,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles variant de 14 à 35 jours. Depuis la dernière commande du 06/05/2025, 48 jours se sont écoulés, ce qui dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours. Il existe un risque de rupture imminent. Pour la quantité, l'historique récent présente des variations (16u à 65u). En excluant le pic exceptionnel de 65u et en appliquant la règle de la médiane sur les commandes récentes (16, 20, 32, 40), la valeur pivot se situe entre 20 et 32. Conformément au principe de précaution B2B et à la sélection de la médiane représentative, une quantité de 32 unités est préconisée pour couvrir les besoins sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 32,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-01 07:53:14",
+            "quantity": 32,
+            "price_unit": 10.2
+          },
+          {
+            "date": "2025-03-06 13:21:30",
+            "quantity": 65,
+            "price_unit": 10.2
+          },
+          {
+            "date": "2025-02-19 13:07:30",
+            "quantity": 20,
+            "price_unit": 10.2
+          },
+          {
+            "date": "2025-02-05 08:23:52",
+            "quantity": 16,
+            "price_unit": 10.2
+          },
+          {
+            "date": "2025-01-17 10:44:03",
+            "quantity": 49,
+            "price_unit": 10.2
+          }
+        ]
+      },
+      {
+        "product_id": 561,
+        "product_name": "[MF0021] MF Sauce BBQ 250ml",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 17.1,
+        "subtotal": 273.6,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION) : La dernière commande remonte au 01/04/2025, soit 83 jours. Le cycle moyen observé est d'environ 30 jours (février à mars, mars à avril). Le délai depuis la dernière commande dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Le risque de rupture est critique. ÉTAPE 2 (QUANTITÉ) : L'historique récent montre des commandes de 16u, 10u et 16u. La médiane des quantités est de 16u. Conformément aux règles de précaution B2B, une commande de 16u est préconisée pour reconstituer le stock.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-01 07:53:14",
+            "quantity": 16,
+            "price_unit": 17.1
+          },
+          {
+            "date": "2025-03-06 13:21:30",
+            "quantity": 10,
+            "price_unit": 17.1
+          },
+          {
+            "date": "2025-02-05 08:23:52",
+            "quantity": 16,
+            "price_unit": 17.1
+          },
+          {
+            "date": "2025-01-17 10:44:03",
+            "quantity": 40,
+            "price_unit": 17.1
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 4,
+    "optional_products_count": 0,
+    "base_amount": 1152,
+    "optional_amount": 0,
+    "total_amount": 1152,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3971
+}

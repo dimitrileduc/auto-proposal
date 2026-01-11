@@ -1,0 +1,30 @@
+{
+  "clientId": 38734,
+  "clientName": "CRF MARKET BARCHON",
+  "orderName": "S39735",
+  "orderDate": "2025-10-16 11:40:19",
+  "cutoffDate": "2025-10-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 26236,
+    "completionTokens": 4644,
+    "totalTokens": 30880
+  }
+}
