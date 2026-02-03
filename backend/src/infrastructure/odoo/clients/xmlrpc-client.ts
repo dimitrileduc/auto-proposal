@@ -21,7 +21,6 @@ import type {
 } from "./odoo-client.types";
 import {
   buildRecentOrdersDomain,
-  buildInactivePartnersDomain,
   buildPartnerOrdersDomain,
 } from "./odoo-domains";
 
@@ -55,25 +54,65 @@ export function createXmlRpcClient(): OdooClient {
       dateMin: string,
       dateMax: string,
       excludeOrderTagId?: number,
-      excludedPartnerTagId?: number | null
+      excludedPartnerTagId?: number | null,
+      companyId?: number
     ): Promise<OdooPartner[]> {
       try {
-        const recentOrders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildRecentOrdersDomain(dateMin, dateMax, excludeOrderTagId),
-          {
-            fields: ["partner_id"],
-          }
+        // Step 1: Get ALL partners who have EVER ordered from this company
+        const historicalOrdersDomain: any[] = [
+          ["state", "in", ["sale", "done"]],
+        ];
+        if (companyId !== undefined) {
+          historicalOrdersDomain.push(["company_id", "=", companyId]);
+        }
+
+        const allHistoricalOrders = await odoo.searchRead<OdooOrder>("sale.order",
+          historicalOrdersDomain,
+          { fields: ["partner_id"] }
         );
 
-        const activePartnerIds = [
-          ...new Set(recentOrders.map((order) => order.partner_id[0])),
+        const allHistoricalPartnerIds = [
+          ...new Set(allHistoricalOrders.map((order) => order.partner_id[0])),
         ];
 
+        // If no historical orders for this company, return empty
+        if (allHistoricalPartnerIds.length === 0) {
+          return [];
+        }
+
+        // Step 2: Get partners who ordered RECENTLY from this company
+        const recentOrders = await odoo.searchRead<OdooOrder>("sale.order",
+          buildRecentOrdersDomain(dateMin, dateMax, excludeOrderTagId, companyId),
+          { fields: ["partner_id"] }
+        );
+
+        const recentPartnerIds = new Set(
+          recentOrders.map((order) => order.partner_id[0])
+        );
+
+        // Step 3: Inactive = historical partners - recent partners
+        const inactivePartnerIds = allHistoricalPartnerIds.filter(
+          (id) => !recentPartnerIds.has(id)
+        );
+
+        if (inactivePartnerIds.length === 0) {
+          return [];
+        }
+
+        // Step 4: Get partner details with exclusion filter
+        const partnerDomain: any[] = [
+          ["id", "in", inactivePartnerIds],
+          ["is_company", "=", true],
+          ["active", "=", true],
+        ];
+
+        if (excludedPartnerTagId != null && excludedPartnerTagId > 0) {
+          partnerDomain.push(["category_id", "not in", [excludedPartnerTagId]]);
+        }
+
         const inactivePartners = await odoo.searchRead<OdooPartner>("res.partner",
-          buildInactivePartnersDomain(activePartnerIds, excludedPartnerTagId),
-          {
-            fields: ["name", "email", "id"],
-          }
+          partnerDomain,
+          { fields: ["name", "email", "id"] }
         );
 
         return inactivePartners;
@@ -91,7 +130,8 @@ export function createXmlRpcClient(): OdooClient {
       windowDays: number,
       referenceDate: string,
       includeDraftOrders: boolean,
-      excludedCategoryIds?: number[]
+      excludedCategoryIds?: number[],
+      companyId?: number
     ): Promise<OrderHistory> {
       if (windowDays <= 0) {
         throw new Error("Window days must be positive");
@@ -105,7 +145,7 @@ export function createXmlRpcClient(): OdooClient {
 
       try {
         const orders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildPartnerOrdersDomain(partnerId, dateStart, states, referenceDate),
+          buildPartnerOrdersDomain(partnerId, dateStart, states, referenceDate, companyId),
           {
             fields: ["id", "name", "date_order", "partner_id", "state", "order_line"],
           }
@@ -526,6 +566,36 @@ export function createXmlRpcClient(): OdooClient {
           : new Error(
               `Failed to fetch order ${orderName}: ${error}`
             );
+      }
+    },
+
+    async searchPartnersByName(name: string): Promise<Array<{
+      id: number;
+      name: string;
+      email: string | null;
+    }>> {
+      try {
+        const partners = await odoo.searchRead<OdooPartner>(
+          "res.partner",
+          [
+            ["name", "ilike", name],
+            ["is_company", "=", true],
+            ["active", "=", true]
+          ],
+          {
+            fields: ["id", "name", "email"],
+          }
+        );
+
+        return partners.map(p => ({
+          id: p.id,
+          name: p.name,
+          email: p.email || null
+        }));
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(`Failed to search partners by name "${name}": ${error}`);
       }
     },
   };

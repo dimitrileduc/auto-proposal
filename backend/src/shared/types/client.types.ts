@@ -25,6 +25,9 @@ export interface ClientProcessingConfig {
 
   /** Generate markdown reports for at-risk clients (default: true) */
   shouldGenerateReport?: boolean;
+
+  /** Odoo company ID to filter orders (e.g., 3 for FOODPRINT SRL) */
+  companyId?: number;
 }
 
 /**

@@ -125,13 +125,15 @@ export interface OdooClient {
    * @param dateMax Maximum date for inactivity period (format: "YYYY-MM-DD HH:MM:SS")
    * @param excludeOrderTagId Optional: Tag ID to exclude from recent orders (e.g., auto-proposal tag 82)
    * @param excludedPartnerTagId Optional: Partner tag to exclude from results (e.g., "exclude-auto-proposal")
+   * @param companyId Optional: Filter orders by selling company ID
    * @returns Array of inactive partners
    */
   getInactiveCompanyPartners(
     dateMin: string,
     dateMax: string,
     excludeOrderTagId?: number,
-    excludedPartnerTagId?: number | null
+    excludedPartnerTagId?: number | null,
+    companyId?: number
   ): Promise<OdooPartner[]>;
 
   /**
@@ -142,6 +144,7 @@ export interface OdooClient {
    * @param referenceDate - Reference date for calculation (format: "YYYY-MM-DD HH:MM:SS")
    * @param includeDraftOrders - Include draft orders
    * @param excludedCategoryIds - IDs of categories to exclude (deposits, pallets, packaging, etc.)
+   * @param companyId - Optional: Filter orders by selling company ID
    * @returns Order history (orders and lines)
    */
   getOrderHistoryByPartner(
@@ -149,7 +152,8 @@ export interface OdooClient {
     windowDays: number,
     referenceDate: string,
     includeDraftOrders: boolean,
-    excludedCategoryIds?: number[]
+    excludedCategoryIds?: number[],
+    companyId?: number
   ): Promise<OrderHistory>;
 
   /**
@@ -278,4 +282,16 @@ export interface OdooClient {
     partner_name: string;
     partner_id: number;
   }>;
+
+  /**
+   * Search partners (companies) by name
+   *
+   * @param name - Name to search for (case-insensitive, partial match)
+   * @returns Array of matching partners with { id, name, email }
+   */
+  searchPartnersByName(name: string): Promise<Array<{
+    id: number;
+    name: string;
+    email: string | null;
+  }>>;
 }

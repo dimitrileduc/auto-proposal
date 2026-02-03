@@ -33,6 +33,9 @@ export interface OrchestratorConfig {
 
   /** Partner tag ID to exclude from analysis (null = no filtering) */
   excludedPartnerTagId?: number | null;
+
+  /** Odoo company ID to filter orders (default: from config = FOODPRINT SRL) */
+  companyId?: number;
 }
 
 /**
