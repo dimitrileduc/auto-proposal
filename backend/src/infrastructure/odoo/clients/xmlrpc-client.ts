@@ -429,13 +429,22 @@ export function createXmlRpcClient(): OdooClient {
       }
     },
 
-    async getLastClientOrder(clientId: number): Promise<{
+    async getLastClientOrder(clientId: number, companyId?: number): Promise<{
       id: number;
       name: string;
       date_order: string;
       partner_name: string;
     }> {
       try {
+        const domain: any[] = [
+          ["partner_id", "=", clientId],
+          ["state", "in", ["sale", "done"]]
+        ];
+
+        if (companyId !== undefined) {
+          domain.push(["company_id", "=", companyId]);
+        }
+
         const orders = await odoo.searchRead<{
           id: number;
           name: string;
@@ -443,10 +452,7 @@ export function createXmlRpcClient(): OdooClient {
           partner_id: [number, string];
         }>(
           "sale.order",
-          [
-            ["partner_id", "=", clientId],
-            ["state", "in", ["sale", "done"]]
-          ],
+          domain,
           {
             fields: ["name", "date_order", "partner_id"],
             order: "date_order DESC",
@@ -475,13 +481,23 @@ export function createXmlRpcClient(): OdooClient {
       }
     },
 
-    async getLastClientOrderBeforeDate(clientId: number, referenceDate: string): Promise<{
+    async getLastClientOrderBeforeDate(clientId: number, referenceDate: string, companyId?: number): Promise<{
       id: number;
       name: string;
       date_order: string;
       partner_name: string;
     }> {
       try {
+        const domain: any[] = [
+          ["partner_id", "=", clientId],
+          ["state", "in", ["sale", "done"]],
+          ["date_order", "<=", referenceDate]
+        ];
+
+        if (companyId !== undefined) {
+          domain.push(["company_id", "=", companyId]);
+        }
+
         const orders = await odoo.searchRead<{
           id: number;
           name: string;
@@ -489,11 +505,7 @@ export function createXmlRpcClient(): OdooClient {
           partner_id: [number, string];
         }>(
           "sale.order",
-          [
-            ["partner_id", "=", clientId],
-            ["state", "in", ["sale", "done"]],
-            ["date_order", "<=", referenceDate]
-          ],
+          domain,
           {
             fields: ["name", "date_order", "partner_id"],
             order: "date_order DESC",

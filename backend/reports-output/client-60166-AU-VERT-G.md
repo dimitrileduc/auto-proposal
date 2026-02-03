@@ -2,76 +2,39 @@
 
 **Client:** AU VERT G (ID: 60166)
 **Email:** contact@vertg.be
-**Analysis Date:** 1/11/2026, 11:14:01 AM
+**Analysis Date:** 2/3/2026, 6:07:58 PM
 **Replenishment Threshold:** 30 days
 
 ## Summary
 
-- **Core Products:** 8 (519.46€ excl. tax)
-- **Optional Products:** 1 (16.05€ excl. tax)
-- **Total:** 535.51€ excl. tax
-- **Odoo Quote:** S40419 (ID: 92298)
+- **Core Products:** 8 (481.46€ excl. tax)
+- **Optional Products:** 4 (99.56€ excl. tax)
+- **Total:** 581.02€ excl. tax
 
 ---
 
 ## PHASE 2.5 - PRICING + MOQ
 
-**Initial Amount:** 535.51€
+**Initial Amount:** 581.02€
 **Required MOQ:** 300.00€
 **Status:** OK
 
 | Product | Qty | Price | Subtotal | Summary |
 |---------|----:|------:|---------:|---------|
-| [PAO03] PAOLA cola canette 330ml - le... | 5 | 25.20€ | 126.00€ | Cycle dépassé (82j), réappro de précaution. |
-| [PAO04] PAOLA cola ZERO canette 330ml... | 5 | 25.20€ | 126.00€ | Rupture probable, commande de 5u (médiane). |
-| [BUD03] BUDDY biologische energiedran... | 2 | 14.88€ | 29.76€ | Réapprovisionnement de précaution (faible rotation) |
-| [REB01] ReBEL chips premium & bio - s... | 3 | 17.70€ | 53.10€ | Réapprovisionnement de précaution (rotation lente) |
-| [REB02] ReBEL chips premium & bio - p... | 4 | 17.70€ | 70.80€ | Réapprovisionnement de précaution (longue inactivité) |
-| [REB04] ReBEL chips premium & bio - t... | 4 | 17.70€ | 70.80€ | Réappro de précaution (cycle irrégulier) |
-| [REB11] ReBEL chips premium & bio - t... | 1 | 25.30€ | 25.30€ | Réapprovisionnement de précaution (rotation faible) |
-| [REB08] ReBEL chips premium & bio - p... | 1 | 17.70€ | 17.70€ | Réapprovisionnement de précaution (rotation faible) |
+| [PAO03] PAOLA cola canette 330ml - le... | 6 | 25.20€ | 151.20€ | Risque rupture (60j sans commande). Médiane: 6u. |
+| [PAO04] PAOLA cola ZERO canette 330ml... | 5 | 25.20€ | 126.00€ | Risque rupture (60j sans commande). Médiane 5u. |
+| [BUD03] BUDDY biologische energiedran... | 2 | 14.88€ | 29.76€ | Réapprovisionnement de précaution (rotation faible) |
+| [REB01] ReBEL chips premium & bio - s... | 1 | 17.70€ | 17.70€ | Réapprovisionnement de précaution (cycle annuel). |
+| [REB02] ReBEL chips premium & bio - p... | 3 | 17.70€ | 53.10€ | Réapprovisionnement basé sur historique N-1. |
+| [REB04] ReBEL chips premium & bio - t... | 1 | 17.70€ | 17.70€ | Réappro de précaution (historique N-1) |
+| [REB11] ReBEL chips premium & bio - t... | 2 | 25.30€ | 50.60€ | Réapprovisionnement basé sur historique N-1. |
+| [REB08] ReBEL chips premium & bio - p... | 2 | 17.70€ | 35.40€ | Réappro de précaution basé sur historique N-1. |
+| [LV001] LV Pizza Croccantina à l'huil... | 1 | 27.03€ | 27.03€ | Réapprovisionnement de précaution (cycle incertain) |
+| [LV002] LV Pizza Croccantina au romar... | 1 | 27.03€ | 27.03€ | Réapprovisionnement de précaution (60j sans commande) |
+| [LV003] LV Pizza Croccantina tomate o... | 1 | 29.45€ | 29.45€ | Réapprovisionnement de précaution (60j sans commande) |
 | [NUT04] NUTS & BERRIES energy bar Ama... | 1 | 16.05€ | 16.05€ | Réapprovisionnement de précaution (rotation faible) |
 
-**Total: 535.51€**
-
----
-
-## PHASE 3 - ODOO QUOTE
-
-**Quote:** S40419 (ID: 92298)
-**Status:** draft
-**Created:** 1/11/2026, 10:13:29 AM
-
-### Core Products (8)
-
-| Product | Qty | Price | Subtotal | Summary |
-|---------|----:|------:|---------:|---------|
-| [PAO03] PAOLA cola canette 330ml - le... | 5 | 25.20€ | 126.00€ | Cycle dépassé (82j), réappro de précaution. |
-| [PAO04] PAOLA cola ZERO canette 330ml... | 5 | 25.20€ | 126.00€ | Rupture probable, commande de 5u (médiane). |
-| [BUD03] BUDDY biologische energiedran... | 2 | 14.88€ | 29.76€ | Réapprovisionnement de précaution (faible rotation) |
-| [REB01] ReBEL chips premium & bio - s... | 3 | 17.70€ | 53.10€ | Réapprovisionnement de précaution (rotation lente) |
-| [REB02] ReBEL chips premium & bio - p... | 4 | 17.70€ | 70.80€ | Réapprovisionnement de précaution (longue inactivité) |
-| [REB04] ReBEL chips premium & bio - t... | 4 | 17.70€ | 70.80€ | Réappro de précaution (cycle irrégulier) |
-| [REB11] ReBEL chips premium & bio - t... | 1 | 25.30€ | 25.30€ | Réapprovisionnement de précaution (rotation faible) |
-| [REB08] ReBEL chips premium & bio - p... | 1 | 17.70€ | 17.70€ | Réapprovisionnement de précaution (rotation faible) |
-
-### Optional Products (1)
-
-| Product | Qty | Price | Subtotal | Summary |
-|---------|----:|------:|---------:|---------|
-| [NUT04] NUTS & BERRIES energy bar Ama... | 1 | 16.05€ | 16.05€ | Réapprovisionnement de précaution (rotation faible) |
-
-**Total HT:** 519.46€
-**Taxes:** 31.18€
-**Total TTC:** 550.64€
-
-### Phase 2.5 vs Odoo Comparison
-
-| | Phase 2.5 | Odoo | Difference |
-|---------|----------:|-----:|-----------:|
-| **Core** | 519.46€ | 519.46€ | +0.00€ |
-| **Optional** | 16.05€ | 16.05€ | +0.00€ |
-| **TOTAL** | 535.51€ | 535.51€ | +0.00€ (0.0%) |
+**Total: 581.02€**
 
 ---
 
@@ -81,34 +44,34 @@
 
 | Product | Qty | Unit Price | Subtotal | Confidence |
 |---------|-----|------------|----------|------------|
-| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 5 TU24 | 25.20€ | 126.00€ | 🟢 High |
+| [PAO03] PAOLA cola canette 330ml - le cola des Belges | 6 TU24 | 25.20€ | 151.20€ | 🟢 High |
 | [PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges  | 5 TU24 | 25.20€ | 126.00€ | 🟢 High |
 | [BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml | 2 TU12 | 14.88€ | 29.76€ | 🟡 Medium |
-| [REB01] ReBEL chips premium & bio - sel de mer 125g | 3 TU10 | 17.70€ | 53.10€ | 🟢 High |
-| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 4 TU10 | 17.70€ | 70.80€ | 🟢 High |
-| [REB04] ReBEL chips premium & bio - thym/romarin125g | 4 TU10 | 17.70€ | 70.80€ | 🟢 High |
-| [REB11] ReBEL chips premium & bio - truffes 125g | 1 TU10 | 25.30€ | 25.30€ | 🟢 High |
-| [REB08] ReBEL chips premium & bio - piment citron 125g | 1 TU10 | 17.70€ | 17.70€ | 🟢 High |
+| [REB01] ReBEL chips premium & bio - sel de mer 125g | 1 TU10 | 17.70€ | 17.70€ | 🟢 High |
+| [REB02] ReBEL chips premium & bio - paprika fumé 125g | 3 TU10 | 17.70€ | 53.10€ | 🟢 High |
+| [REB04] ReBEL chips premium & bio - thym/romarin125g | 1 TU10 | 17.70€ | 17.70€ | 🟢 High |
+| [REB11] ReBEL chips premium & bio - truffes 125g | 2 TU10 | 25.30€ | 50.60€ | 🟢 High |
+| [REB08] ReBEL chips premium & bio - piment citron 125g | 2 TU10 | 17.70€ | 35.40€ | 🟢 High |
 
 <details>
-<summary><strong>[PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - 5 TU24 (126.00€)</summary>
+<summary><strong>[PAO03] PAOLA cola canette 330ml - le cola des Belges</strong> - 6 TU24 (151.20€)</summary>
 
-**Recommended Quantity:** 5 TU24
+**Recommended Quantity:** 6 TU24
 **Source:** LLM
 **Unit Price:** 25.20€
-**Subtotal:** 126.00€
+**Subtotal:** 151.20€
 
-**Confidence:** 🟢 High (10 historical order(s))
+**Confidence:** 🟢 High (11 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Cycle dépassé (82j), réappro de précaution.
+**Summary:** Risque rupture (60j sans commande). Médiane: 6u.
 
 **Reasoning:**
 
-L'analyse du cycle de commande montre un intervalle moyen d'environ 31 jours entre les commandes précédentes (août à octobre). Depuis la dernière commande du 21 octobre 2025, 82 jours se sont écoulés, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Bien que la rotation soit lente, le principe de précaution B2B impose de prévoir une commande pour éviter une rupture prolongée. La quantité est fixée à 5 unités, correspondant à la médiane et à la valeur la plus basse observée dans l'historique récent, afin d'éviter le surstockage.
+L'analyse du cycle de commande montre des intervalles de 26 jours puis 45 jours (moyenne ~35 jours). La dernière commande remonte au 05/12/2025, soit 60 jours avant la date actuelle. Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande déjà due. En suivant la règle de la médiane sur les commandes récentes (5, 6, 7), la valeur centrale est de 6 unités. Ce volume est cohérent avec la consommation régulière observée sans intégrer de pics exceptionnels.
 
-**Baseline Quantity:** 5
+**Baseline Quantity:** 6
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (5 recent orders)
@@ -131,15 +94,15 @@ L'analyse du cycle de commande montre un intervalle moyen d'environ 31 jours ent
 **Unit Price:** 25.20€
 **Subtotal:** 126.00€
 
-**Confidence:** 🟢 High (10 historical order(s))
+**Confidence:** 🟢 High (11 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Rupture probable, commande de 5u (médiane).
+**Summary:** Risque rupture (60j sans commande). Médiane 5u.
 
 **Reasoning:**
 
-L'analyse de l'historique récent montre un cycle de commande régulier d'environ 30 à 35 jours (août, septembre, octobre). La dernière commande datant du 21 octobre 2025, le délai écoulé (82 jours) dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, indiquant un besoin urgent pour éviter la rupture. En suivant la règle de la médiane des quantités récentes (5, 5, 6), la valeur retenue est 5 unités, privilégiant la prudence face à la légère hausse de la dernière commande.
+ÉTAPE 1 (Détection): La dernière commande date du 05/12/2025, soit 60 jours écoulés. L'historique montre des cycles de 30 à 45 jours entre les commandes précédentes. Le délai actuel dépasse largement le cycle habituel, créant un risque de rupture imminent sous 30 jours. ÉTAPE 2 (Quantité): Les commandes récentes sont de 2u, 6u et 5u. La médiane de ces valeurs est de 5u. Bien que la dernière commande fût de 2u, le volume historique suggère un besoin plus proche de la médiane pour couvrir la période à venir sans surstocker.
 
 **Baseline Quantity:** 5
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -168,11 +131,11 @@ L'analyse de l'historique récent montre un cycle de commande régulier d'enviro
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (faible rotation)
+**Summary:** Réapprovisionnement de précaution (rotation faible)
 
 **Reasoning:**
 
-Le produit présente une rotation très faible avec une seule commande enregistrée il y a 108 jours (2 unités). Bien que le cycle soit difficile à établir en raison du manque d'historique, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement un cycle de réapprovisionnement standard. En cas de doute sur la rotation, une commande est préconisée pour éviter la rupture. La quantité retenue est de 2 unités, correspondant à la seule valeur historique connue (médiane), respectant la règle de maintien pour les faibles rotations.
+La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien que la rotation soit très faible (une seule commande de 2 unités), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et face à l'absence d'historique N-1, il est nécessaire de prévoir un réapprovisionnement. La quantité retenue correspond à la seule valeur historique connue (2 unités), respectant la règle de maintien des faibles rotations sans surestimation.
 
 **Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -188,24 +151,24 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 </details>
 
 <details>
-<summary><strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - 3 TU10 (53.10€)</summary>
+<summary><strong>[REB01] ReBEL chips premium & bio - sel de mer 125g</strong> - 1 TU10 (17.70€)</summary>
 
-**Recommended Quantity:** 3 TU10
+**Recommended Quantity:** 1 TU10
 **Source:** LLM
 **Unit Price:** 17.70€
-**Subtotal:** 53.10€
+**Subtotal:** 17.70€
 
 **Confidence:** 🟢 High (5 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (rotation lente)
+**Summary:** Réapprovisionnement de précaution (cycle annuel).
 
 **Reasoning:**
 
-ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 20 août 2025, soit plus de 140 jours. Bien que le cycle soit difficile à établir avec une seule commande, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement tout cycle standard de rotation de stock. Le risque de rupture est considéré comme avéré pour maintenir une présence en rayon. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique multiple, on se base sur la dernière commande connue (3 unités). Conformément aux règles, on maintient cette quantité sans l'augmenter pour éviter le surstockage sur un produit à rotation lente.
+ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B (si doute sur le cycle ou rotation irrégulière), un risque de rupture est identifié pour couvrir les besoins actuels. ÉTAPE 2 : Estimation de la quantité. L'historique disponible (N-1) indique une rotation très faible de 1 unité. Conformément aux règles sur les rotations faibles, on maintient la quantité historique sans l'augmenter.
 
-**Baseline Quantity:** 3
+**Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (5 recent orders)
@@ -221,24 +184,24 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 </details>
 
 <details>
-<summary><strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - 4 TU10 (70.80€)</summary>
+<summary><strong>[REB02] ReBEL chips premium & bio - paprika fumé 125g</strong> - 3 TU10 (53.10€)</summary>
 
-**Recommended Quantity:** 4 TU10
+**Recommended Quantity:** 3 TU10
 **Source:** LLM
 **Unit Price:** 17.70€
-**Subtotal:** 70.80€
+**Subtotal:** 53.10€
 
 **Confidence:** 🟢 High (5 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (longue inactivité)
+**Summary:** Réapprovisionnement basé sur historique N-1.
 
 **Reasoning:**
 
-La dernière commande remonte au 20 août 2025, soit plus de 140 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande historique, le principe de précaution B2B s'applique ici car le délai depuis la dernière commande dépasse largement tout cycle standard de rotation de stock. En l'absence d'historique récurrent ou de données N-1, la quantité est basée sur la dernière commande connue (4 unités) pour assurer une remise en stock minimale sans risque de surstockage majeur.
+ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B et face à l'absence de données récentes pour infirmer le besoin, un risque de rupture est identifié. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la prévision se base sur la commande de l'année précédente à la même période, soit 3 unités. Cette quantité est maintenue pour couvrir le besoin sans surstocker.
 
-**Baseline Quantity:** 4
+**Baseline Quantity:** 3
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (5 recent orders)
@@ -254,24 +217,24 @@ La dernière commande remonte au 20 août 2025, soit plus de 140 jours sans acti
 </details>
 
 <details>
-<summary><strong>[REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - 4 TU10 (70.80€)</summary>
+<summary><strong>[REB04] ReBEL chips premium & bio - thym/romarin125g</strong> - 1 TU10 (17.70€)</summary>
 
-**Recommended Quantity:** 4 TU10
+**Recommended Quantity:** 1 TU10
 **Source:** LLM
 **Unit Price:** 17.70€
-**Subtotal:** 70.80€
+**Subtotal:** 17.70€
 
 **Confidence:** 🟢 High (5 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Réappro de précaution (cycle irrégulier)
+**Summary:** Réappro de précaution (historique N-1)
 
 **Reasoning:**
 
-Le produit présente une rotation très faible avec une seule commande enregistrée il y a plus de 140 jours (4 unités le 20/08/2025). Bien que le cycle soit difficile à établir, le principe de précaution B2B impose de prévoir un réapprovisionnement pour éviter une rupture prolongée sur une référence active. En l'absence d'historique récurrent, la quantité retenue est basée sur la dernière commande connue (4 unités), ce qui correspond à la médiane de l'historique disponible tout en restant prudent.
+ÉTAPE 1 : DÉTECTION DU BESOIN. Il n'y a aucune commande récente, mais une commande historique a été passée à la même période l'année dernière (janvier). Le délai depuis cette commande annuelle est de 382 jours. En l'absence de cycle régulier et selon le principe de précaution B2B, un besoin est identifié pour couvrir la période anniversaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique disponible (N-1) montre une commande unique de 1 unité. Conformément aux règles sur les rotations très faibles et l'absence d'historique récent, la quantité est maintenue à 1 unité pour éviter le surstock tout en assurant la présence du produit.
 
-**Baseline Quantity:** 4
+**Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (5 recent orders)
@@ -287,24 +250,24 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 </details>
 
 <details>
-<summary><strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> - 1 TU10 (25.30€)</summary>
+<summary><strong>[REB11] ReBEL chips premium & bio - truffes 125g</strong> - 2 TU10 (50.60€)</summary>
 
-**Recommended Quantity:** 1 TU10
+**Recommended Quantity:** 2 TU10
 **Source:** LLM
 **Unit Price:** 25.30€
-**Subtotal:** 25.30€
+**Subtotal:** 50.60€
 
 **Confidence:** 🟢 High (5 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (rotation faible)
+**Summary:** Réapprovisionnement basé sur historique N-1.
 
 **Reasoning:**
 
-ÉTAPE 1 : La dernière commande remonte au 20 août 2025, soit plus de 140 jours. Bien que la rotation soit extrêmement faible, le principe de précaution B2B et l'absence d'historique complet imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée si un cycle de vente lent est en cours. ÉTAPE 2 : L'historique récent ne montre qu'une seule commande de 1 unité. Conformément à la règle des rotations très faibles (1-2u), on maintient la quantité à 1 unité sans l'augmenter.
+ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 indique une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B (doute sur le cycle = prévoir commande), un risque de rupture est identifié pour couvrir la période actuelle. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la prévision se base sur la commande de l'année précédente à la même période. La quantité de 2 unités est retenue pour maintenir le stock sans surstockage, conformément à la règle des rotations faibles.
 
-**Baseline Quantity:** 1
+**Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (5 recent orders)
@@ -320,24 +283,24 @@ Le produit présente une rotation très faible avec une seule commande enregistr
 </details>
 
 <details>
-<summary><strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> - 1 TU10 (17.70€)</summary>
+<summary><strong>[REB08] ReBEL chips premium & bio - piment citron 125g</strong> - 2 TU10 (35.40€)</summary>
 
-**Recommended Quantity:** 1 TU10
+**Recommended Quantity:** 2 TU10
 **Source:** LLM
 **Unit Price:** 17.70€
-**Subtotal:** 17.70€
+**Subtotal:** 35.40€
 
 **Confidence:** 🟢 High (5 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (rotation faible)
+**Summary:** Réappro de précaution basé sur historique N-1.
 
 **Reasoning:**
 
-Le produit présente une rotation extrêmement faible avec une seule commande enregistrée il y a environ 144 jours. Bien que le cycle soit difficile à établir en raison du manque d'historique, le principe de précaution B2B et la règle sur les cycles irréguliers imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée. Conformément aux règles pour les rotations très faibles (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane de l'historique récent.
+ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais une commande a eu lieu à la même période l'année dernière (janvier). Le délai depuis cette dernière référence historique dépasse largement le cycle annuel, créant une incertitude sur le stock actuel. En application du principe de précaution B2B (si doute sur le cycle -> prévoir), un besoin est identifié pour couvrir l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. L'historique N-1 indique une commande de 2 unités. En l'absence d'autres données, on maintient cette quantité historique pour éviter la rupture sans risquer le surstock.
 
-**Baseline Quantity:** 1
+**Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (5 recent orders)
@@ -357,11 +320,101 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 > **⚠️ Warning:** These products have low confidence (1 order history only).
 > They will be proposed as **options** in the Odoo quote, not included in the core total.
 
-**1 products** to propose as options:
+**4 products** to propose as options:
 
 | Product | Qty | Unit Price | Subtotal |
 |---------|-----|------------|----------|
+| [LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio | 1 TU12 | 27.03€ | 27.03€ |
+| [LV002] LV Pizza Croccantina au romarin 150 g bio | 1 TU12 | 27.03€ | 27.03€ |
+| [LV003] LV Pizza Croccantina tomate origan 150 g bio | 1 TU12 | 29.45€ | 29.45€ |
 | [NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g | 1 TU15 | 16.05€ | 16.05€ |
+
+<details>
+<summary><strong>[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio</strong> - 1 TU12 (27.03€)</summary>
+
+**Recommended Quantity:** 1 TU12
+**Source:** LLM
+**Unit Price:** 27.03€
+**Subtotal:** 27.03€
+
+**Confidence:** 🔴 Low (1 historical order(s))
+
+### LLM Prediction
+
+**Summary:** Réapprovisionnement de précaution (cycle incertain)
+
+**Reasoning:**
+
+La dernière commande remonte au 05/12/2025, soit environ 60 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).
+
+**Baseline Quantity:** 1
+**Model:** google/gemini-3-flash-preview (ax-openrouter)
+
+### Order History (1 recent orders)
+
+| Date | Quantity | Unit Price |
+|------|----------|------------|
+| 12/5/2025 | 1 | 27.03€ |
+
+</details>
+
+<details>
+<summary><strong>[LV002] LV Pizza Croccantina au romarin 150 g bio</strong> - 1 TU12 (27.03€)</summary>
+
+**Recommended Quantity:** 1 TU12
+**Source:** LLM
+**Unit Price:** 27.03€
+**Subtotal:** 27.03€
+
+**Confidence:** 🔴 Low (1 historical order(s))
+
+### LLM Prediction
+
+**Summary:** Réapprovisionnement de précaution (60j sans commande)
+
+**Reasoning:**
+
+La dernière commande remonte au 05/12/2025, soit 60 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).
+
+**Baseline Quantity:** 1
+**Model:** google/gemini-3-flash-preview (ax-openrouter)
+
+### Order History (1 recent orders)
+
+| Date | Quantity | Unit Price |
+|------|----------|------------|
+| 12/5/2025 | 1 | 27.03€ |
+
+</details>
+
+<details>
+<summary><strong>[LV003] LV Pizza Croccantina tomate origan 150 g bio</strong> - 1 TU12 (29.45€)</summary>
+
+**Recommended Quantity:** 1 TU12
+**Source:** LLM
+**Unit Price:** 29.45€
+**Subtotal:** 29.45€
+
+**Confidence:** 🔴 Low (1 historical order(s))
+
+### LLM Prediction
+
+**Summary:** Réapprovisionnement de précaution (60j sans commande)
+
+**Reasoning:**
+
+La dernière commande remonte au 05/12/2025, soit 60 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande historique, le principe de précaution B2B s'applique car nous dépassons largement un cycle mensuel standard. Le risque de rupture est considéré comme présent par manque de visibilité. En suivant la règle de la médiane sur l'historique récent (1u), la quantité préconisée est de 1 unité pour reconstituer un stock minimal sans risque de surstockage.
+
+**Baseline Quantity:** 1
+**Model:** google/gemini-3-flash-preview (ax-openrouter)
+
+### Order History (1 recent orders)
+
+| Date | Quantity | Unit Price |
+|------|----------|------------|
+| 12/5/2025 | 1 | 29.45€ |
+
+</details>
 
 <details>
 <summary><strong>[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g</strong> - 1 TU15 (16.05€)</summary>
@@ -379,7 +432,7 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 **Reasoning:**
 
-ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 25 septembre 2025, soit 108 jours sans activité. Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (si doute sur le cycle -> prévoir commande), un risque de rupture de stock chez le client est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité minimale historique sans l'augmenter.
+La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et conformément à la règle des rotations faibles, il est nécessaire de prévoir une commande de 1 unité pour reconstituer le stock.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -397,28 +450,27 @@ Le produit présente une rotation extrêmement faible avec une seule commande en
 
 ### Configuration
 
-- **Reference Date:** 2026-01-11 00:00:00
+- **Reference Date:** 2026-02-03 00:00:00
 - **Replenishment Threshold:** 30 days
 - **MOQ Minimum:** 300€
-- **Mode:** PRODUCTION
+- **Mode:** TEST (skip Odoo)
 
 ### Processing Phases
 
-- **Stock Analysis:** 9 at-risk products detected
-- **Proposal Final:** 9 products after pricing
-- **Quote Generation:** Quote S40419 created
+- **Stock Analysis:** 12 at-risk products detected
+- **Proposal Final:** 12 products after pricing
 
 ### LLM Usage
 
 - **Calls:** 12
-- **Tokens:** 12693
+- **Tokens:** 12940
 
 ### Performance
 
-- **Execution Time:** 54.9s
+- **Execution Time:** 16.4s
 
 </details>
 
 ---
 
-*Report auto-generated on 1/11/2026, 11:14:01 AM*
+*Report auto-generated on 2/3/2026, 6:07:58 PM*

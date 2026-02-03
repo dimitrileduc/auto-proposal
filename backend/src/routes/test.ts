@@ -55,7 +55,7 @@ test.get('/clients/inactive', async (c) => {
       dateMin,
       dateMax,
       excludeTagId,
-      undefined, // excludedPartnerTagId
+      autoProposalConfig.inactivityDetection.excludedPartnerTagId,
       companyId
     )
 

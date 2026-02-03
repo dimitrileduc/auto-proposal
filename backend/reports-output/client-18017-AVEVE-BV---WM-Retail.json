@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-01-11T10:13:47.983Z"
+    "generatedAt": "2026-02-03T17:07:55.922Z"
   },
   "client": {
     "id": 18017,
@@ -9,113 +9,32 @@
     "email": "servicedesk.retail@aveve.be"
   },
   "config": {
-    "analysisEndDate": "2026-01-11 00:00:00",
+    "analysisEndDate": "2026-02-03 00:00:00",
     "replenishmentThreshold": 30,
     "moqMinimum": 300,
-    "skipOdooQuoteGeneration": false
+    "skipOdooQuoteGeneration": true
   },
   "phases": {
     "stockAnalysis": {
       "products_count": 3,
       "llm_usage": {
         "calls": 3,
-        "promptTokens": 3099,
-        "completionTokens": 568,
-        "totalTokens": 3667
+        "promptTokens": 3104,
+        "completionTokens": 566,
+        "totalTokens": 3670
       }
     },
     "proposalFinal": {
       "products_count": 3,
       "total_amount": 4582.5,
       "moq_adjustment_applied": false
-    },
-    "quote": {
-      "quote_id": 92301,
-      "quote_name": "S40422",
-      "quote_state": "draft",
-      "amount_total_ht": 4582.5,
-      "amount_total_ttc": 4857.45,
-      "tax_total": 274.95,
-      "created_at": "2026-01-11 10:13:31",
-      "lines_count": 3,
-      "optional_products_count": 0,
-      "order_lines": [
-        {
-          "product_id": 13061,
-          "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
-          "quantity": 125,
-          "price_unit": 12.36,
-          "subtotal_ht": 1545
-        },
-        {
-          "product_id": 13064,
-          "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
-          "quantity": 125,
-          "price_unit": 11.94,
-          "subtotal_ht": 1492.5
-        },
-        {
-          "product_id": 13060,
-          "product_name": "[LV161] LV Tartinade Mangue curry 190g",
-          "quantity": 125,
-          "price_unit": 12.36,
-          "subtotal_ht": 1545
-        }
-      ],
-      "optional_products": []
     }
   },
   "products": {
     "base": [
       {
-        "product_id": 13061,
-        "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
-        "product_uom": "TU6",
-        "quantity_recommended": 125,
-        "quantity_source": "llm",
-        "price_unit": 12.36,
-        "subtotal": 1545,
-        "moq_adjustment": 0,
-        "confidence": "high",
-        "order_count": 9,
-        "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 14 octobre 2025, soit environ 90 jours. L'historique montre une commande importante de 750u en décembre 2024, mais le cycle habituel de rotation se situe plutôt autour de 125u (médiane des commandes régulières). Étant donné le délai écoulé et le seuil de réapprovisionnement de 30 jours, il existe un risque de rupture imminent. Par principe de précaution B2B et pour éviter le surstockage lié aux pics exceptionnels, la quantité retenue est la médiane stable de 125u.",
-          "summary": "Réapprovisionnement de précaution (médiane 125u).",
-          "baseline_quantity": 125,
-          "model": "google/gemini-3-flash-preview",
-          "provider": "ax-openrouter"
-        },
-        "recent_orders": [
-          {
-            "date": "2024-12-09 13:44:04",
-            "quantity": 750,
-            "price_unit": 2.06
-          },
-          {
-            "date": "2024-07-30 11:11:55",
-            "quantity": 125,
-            "price_unit": 12.36
-          },
-          {
-            "date": "2024-06-03 13:00:35",
-            "quantity": 125,
-            "price_unit": 12.36
-          },
-          {
-            "date": "2024-04-16 06:29:03",
-            "quantity": 750,
-            "price_unit": 2.06
-          },
-          {
-            "date": "2024-01-22 10:58:00",
-            "quantity": 125,
-            "price_unit": 12.36
-          }
-        ]
-      },
-      {
         "product_id": 13064,
-        "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "product_name": "[LV162] LV Tartinade Tomato Basilico 180g bio",
         "product_uom": "TU6",
         "quantity_recommended": 125,
         "quantity_source": "llm",
@@ -125,13 +44,18 @@
         "confidence": "high",
         "order_count": 13,
         "llm_prediction": {
-          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 60 à 90 jours. La dernière commande enregistrée date du 14 octobre 2025, soit il y a environ 89 jours. Compte tenu du seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent. Bien que l'année précédente ait montré des pics à 750u ou 1500u, les commandes les plus récentes (août et octobre 2025) sont stabilisées à 125u. En application de la règle de la médiane sur l'historique récent et du principe de prudence pour éviter le surstockage, la quantité retenue est de 125u.",
-          "summary": "Cycle dépassé (89j), réapprovisionnement de 125u.",
+          "reasoning": "La dernière commande remonte au 08/12/2025, soit il y a 57 jours. L'historique montre un cycle de commande variant entre 55 et 65 jours pour les petits volumes (octobre à décembre). Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique où le stock risque de s'épuiser. Bien que l'année précédente ait connu des pics à 750u ou 1500u, les commandes récentes sont stabilisées à 125u. En suivant la règle de la médiane sur l'historique récent et le principe de précaution B2B, une commande de 125u est nécessaire pour couvrir les 30 prochains jours sans risque de surstockage.",
+          "summary": "Réapprovisionnement nécessaire (cycle 57j atteint)",
           "baseline_quantity": 125,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
         "recent_orders": [
+          {
+            "date": "2024-12-09 13:44:04",
+            "quantity": 750,
+            "price_unit": 1.99
+          },
           {
             "date": "2024-10-07 11:45:01",
             "quantity": 750,
@@ -151,17 +75,12 @@
             "date": "2024-02-26 13:37:14",
             "quantity": 1500,
             "price_unit": 1.99
-          },
-          {
-            "date": "2024-01-22 10:58:00",
-            "quantity": 125,
-            "price_unit": 11.94
           }
         ]
       },
       {
-        "product_id": 13060,
-        "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+        "product_id": 13061,
+        "product_name": "[LV130] LV Tartinade Paprika Chili 180g bio",
         "product_uom": "TU6",
         "quantity_recommended": 125,
         "quantity_source": "llm",
@@ -169,10 +88,56 @@
         "subtotal": 1545,
         "moq_adjustment": 0,
         "confidence": "high",
-        "order_count": 11,
+        "order_count": 9,
         "llm_prediction": {
-          "reasoning": "L'analyse de l'historique montre un cycle de commande d'environ 60 jours en 2025. La dernière commande remonte au 14 octobre 2025, soit 89 jours avant la date actuelle (11 janvier 2026). Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande déjà en retard. Bien que les volumes de 2024 fussent plus élevés (750u), la tendance récente en 2025 s'est stabilisée à 125u. Conformément aux règles de gestion, la médiane des commandes récentes (125u) est retenue pour éviter le surstockage tout en couvrant le besoin.",
-          "summary": "Cycle dépassé (89j), réapprovisionnement de 125u.",
+          "reasoning": "L'analyse de l'historique montre un cycle de commande d'environ 2 mois (55-60 jours). La dernière commande datant du 08/12/2025, nous sommes à 57 jours d'intervalle au 03/02/2026. Le seuil de réapprovisionnement de 30 jours est largement atteint, créant un risque de rupture imminent. Concernant la quantité, bien que des pics à 750u apparaissent dans l'historique lointain, les trois dernières commandes sont constantes à 125u. En application de la règle de la médiane et de la stabilité du flux récent, la quantité de 125u est retenue.",
+          "summary": "Cycle de 60j atteint, risque rupture imminent.",
+          "baseline_quantity": 125,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-01-20 12:42:48",
+            "quantity": 125,
+            "price_unit": 12.36
+          },
+          {
+            "date": "2024-12-09 13:44:04",
+            "quantity": 750,
+            "price_unit": 2.06
+          },
+          {
+            "date": "2024-07-30 11:11:55",
+            "quantity": 125,
+            "price_unit": 12.36
+          },
+          {
+            "date": "2024-06-03 13:00:35",
+            "quantity": 125,
+            "price_unit": 12.36
+          },
+          {
+            "date": "2024-04-16 06:29:03",
+            "quantity": 750,
+            "price_unit": 2.06
+          }
+        ]
+      },
+      {
+        "product_id": 13060,
+        "product_name": "[LV161] LV Tartinade Mangue curry 180g bio ",
+        "product_uom": "TU6",
+        "quantity_recommended": 125,
+        "quantity_source": "llm",
+        "price_unit": 12.36,
+        "subtotal": 1545,
+        "moq_adjustment": 0,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 55 jours (entre octobre et décembre 2025). La dernière commande datant du 08/12/2025, soit il y a 57 jours, le seuil de réapprovisionnement est largement dépassé. Bien que les volumes de l'année précédente fussent plus élevés (750u), la tendance récente s'est stabilisée à 125u. En application de la règle de la médiane sur l'historique récent et du principe de précaution face à un cycle dépassé, une commande de 125u est nécessaire pour couvrir les besoins immédiats.",
+          "summary": "Cycle dépassé (57j), maintien du volume à 125u.",
           "baseline_quantity": 125,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -214,9 +179,7 @@
     "base_amount": 4582.5,
     "optional_amount": 0,
     "total_amount": 4582.5,
-    "moq_adjusted": false,
-    "quote_name": "S40422",
-    "quote_id": 92301
+    "moq_adjusted": false
   },
-  "execution_time_ms": 40202
+  "execution_time_ms": 11848
 }

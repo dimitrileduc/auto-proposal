@@ -92,7 +92,7 @@ export const orchestratorTask = task({
 
     console.log("\nAUTO-PROPOSAL ORCHESTRATOR STARTED");
     console.log(`Mode: ${config.skipOdooQuoteGeneration ? "TEST (skip Odoo quotes)" : "PRODUCTION"}`);
-    console.log(`Company ID: ${config.companyId} (FOODPRINT SRL = 3)`);
+    console.log(`Company ID: ${config.companyId}`);
     console.log(`Inactivity period: ${config.dateMin} to ${config.dateMax}`);
     console.log(`Force reanalysis: ${config.forceReanalysis ? "YES (include clients with tag 82)" : "NO (skip tag 82)"}\n`);
 

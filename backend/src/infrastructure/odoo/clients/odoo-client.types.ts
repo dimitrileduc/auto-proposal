@@ -246,9 +246,10 @@ export interface OdooClient {
    * Fetches the last validated order for a client (for backtesting)
    *
    * @param clientId - Client ID
+   * @param companyId - Optional: Filter orders by selling company ID
    * @returns Last order with { id, name, date_order, partner_name }
    */
-  getLastClientOrder(clientId: number): Promise<{
+  getLastClientOrder(clientId: number, companyId?: number): Promise<{
     id: number;
     name: string;
     date_order: string;
@@ -260,9 +261,10 @@ export interface OdooClient {
    *
    * @param clientId - Client ID
    * @param referenceDate - Reference date (format: "YYYY-MM-DD")
+   * @param companyId - Optional: Filter orders by selling company ID
    * @returns Last order before date with { id, name, date_order, partner_name }
    */
-  getLastClientOrderBeforeDate(clientId: number, referenceDate: string): Promise<{
+  getLastClientOrderBeforeDate(clientId: number, referenceDate: string, companyId?: number): Promise<{
     id: number;
     name: string;
     date_order: string;

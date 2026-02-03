@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-01-11T10:14:01.387Z"
+    "generatedAt": "2026-02-03T17:07:58.429Z"
   },
   "client": {
     "id": 60166,
@@ -9,103 +9,25 @@
     "email": "contact@vertg.be"
   },
   "config": {
-    "analysisEndDate": "2026-01-11 00:00:00",
+    "analysisEndDate": "2026-02-03 00:00:00",
     "replenishmentThreshold": 30,
     "moqMinimum": 300,
-    "skipOdooQuoteGeneration": false
+    "skipOdooQuoteGeneration": true
   },
   "phases": {
     "stockAnalysis": {
-      "products_count": 9,
+      "products_count": 12,
       "llm_usage": {
         "calls": 12,
-        "promptTokens": 10975,
-        "completionTokens": 1718,
-        "totalTokens": 12693
+        "promptTokens": 11045,
+        "completionTokens": 1895,
+        "totalTokens": 12940
       }
     },
     "proposalFinal": {
-      "products_count": 9,
-      "total_amount": 535.51,
+      "products_count": 12,
+      "total_amount": 581.0199999999999,
       "moq_adjustment_applied": false
-    },
-    "quote": {
-      "quote_id": 92298,
-      "quote_name": "S40419",
-      "quote_state": "draft",
-      "amount_total_ht": 519.46,
-      "amount_total_ttc": 550.64,
-      "tax_total": 31.18,
-      "created_at": "2026-01-11 10:13:29",
-      "lines_count": 8,
-      "optional_products_count": 1,
-      "order_lines": [
-        {
-          "product_id": 18344,
-          "product_name": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
-          "quantity": 5,
-          "price_unit": 25.2,
-          "subtotal_ht": 126
-        },
-        {
-          "product_id": 18346,
-          "product_name": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
-          "quantity": 5,
-          "price_unit": 25.2,
-          "subtotal_ht": 126
-        },
-        {
-          "product_id": 18266,
-          "product_name": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
-          "quantity": 2,
-          "price_unit": 14.88,
-          "subtotal_ht": 29.76
-        },
-        {
-          "product_id": 18353,
-          "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
-          "quantity": 3,
-          "price_unit": 17.7,
-          "subtotal_ht": 53.1
-        },
-        {
-          "product_id": 18349,
-          "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
-          "quantity": 4,
-          "price_unit": 17.7,
-          "subtotal_ht": 70.8
-        },
-        {
-          "product_id": 18355,
-          "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
-          "quantity": 4,
-          "price_unit": 17.7,
-          "subtotal_ht": 70.8
-        },
-        {
-          "product_id": 18356,
-          "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
-          "quantity": 1,
-          "price_unit": 25.3,
-          "subtotal_ht": 25.3
-        },
-        {
-          "product_id": 18351,
-          "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
-          "quantity": 1,
-          "price_unit": 17.7,
-          "subtotal_ht": 17.7
-        }
-      ],
-      "optional_products": [
-        {
-          "product_id": 18326,
-          "product_name": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
-          "quantity": 1,
-          "price_unit": 16.05,
-          "subtotal_ht": 16.05
-        }
-      ]
     }
   },
   "products": {
@@ -114,17 +36,17 @@
         "product_id": 18344,
         "product_name": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
         "product_uom": "TU24",
-        "quantity_recommended": 5,
+        "quantity_recommended": 6,
         "quantity_source": "llm",
         "price_unit": 25.2,
-        "subtotal": 126,
+        "subtotal": 151.2,
         "moq_adjustment": 0,
         "confidence": "high",
-        "order_count": 10,
+        "order_count": 11,
         "llm_prediction": {
-          "reasoning": "L'analyse du cycle de commande montre un intervalle moyen d'environ 31 jours entre les commandes précédentes (août à octobre). Depuis la dernière commande du 21 octobre 2025, 82 jours se sont écoulés, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Bien que la rotation soit lente, le principe de précaution B2B impose de prévoir une commande pour éviter une rupture prolongée. La quantité est fixée à 5 unités, correspondant à la médiane et à la valeur la plus basse observée dans l'historique récent, afin d'éviter le surstockage.",
-          "summary": "Cycle dépassé (82j), réappro de précaution.",
-          "baseline_quantity": 5,
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 26 jours puis 45 jours (moyenne ~35 jours). La dernière commande remonte au 05/12/2025, soit 60 jours avant la date actuelle. Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande déjà due. En suivant la règle de la médiane sur les commandes récentes (5, 6, 7), la valeur centrale est de 6 unités. Ce volume est cohérent avec la consommation régulière observée sans intégrer de pics exceptionnels.",
+          "summary": "Risque rupture (60j sans commande). Médiane: 6u.",
+          "baseline_quantity": 6,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -166,10 +88,10 @@
         "subtotal": 126,
         "moq_adjustment": 0,
         "confidence": "high",
-        "order_count": 10,
+        "order_count": 11,
         "llm_prediction": {
-          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier d'environ 30 à 35 jours (août, septembre, octobre). La dernière commande datant du 21 octobre 2025, le délai écoulé (82 jours) dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, indiquant un besoin urgent pour éviter la rupture. En suivant la règle de la médiane des quantités récentes (5, 5, 6), la valeur retenue est 5 unités, privilégiant la prudence face à la légère hausse de la dernière commande.",
-          "summary": "Rupture probable, commande de 5u (médiane).",
+          "reasoning": "ÉTAPE 1 (Détection): La dernière commande date du 05/12/2025, soit 60 jours écoulés. L'historique montre des cycles de 30 à 45 jours entre les commandes précédentes. Le délai actuel dépasse largement le cycle habituel, créant un risque de rupture imminent sous 30 jours. ÉTAPE 2 (Quantité): Les commandes récentes sont de 2u, 6u et 5u. La médiane de ces valeurs est de 5u. Bien que la dernière commande fût de 2u, le volume historique suggère un besoin plus proche de la médiane pour couvrir la période à venir sans surstocker.",
+          "summary": "Risque rupture (60j sans commande). Médiane 5u.",
           "baseline_quantity": 5,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -214,8 +136,8 @@
         "confidence": "medium",
         "order_count": 3,
         "llm_prediction": {
-          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a 108 jours (2 unités). Bien que le cycle soit difficile à établir en raison du manque d'historique, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement un cycle de réapprovisionnement standard. En cas de doute sur la rotation, une commande est préconisée pour éviter la rupture. La quantité retenue est de 2 unités, correspondant à la seule valeur historique connue (médiane), respectant la règle de maintien pour les faibles rotations.",
-          "summary": "Réapprovisionnement de précaution (faible rotation)",
+          "reasoning": "La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien que la rotation soit très faible (une seule commande de 2 unités), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et face à l'absence d'historique N-1, il est nécessaire de prévoir un réapprovisionnement. La quantité retenue correspond à la seule valeur historique connue (2 unités), respectant la règle de maintien des faibles rotations sans surestimation.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
           "baseline_quantity": 2,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -242,17 +164,17 @@
         "product_id": 18353,
         "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
         "product_uom": "TU10",
-        "quantity_recommended": 3,
+        "quantity_recommended": 1,
         "quantity_source": "llm",
         "price_unit": 17.7,
-        "subtotal": 53.099999999999994,
+        "subtotal": 17.7,
         "moq_adjustment": 0,
         "confidence": "high",
         "order_count": 5,
         "llm_prediction": {
-          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 20 août 2025, soit plus de 140 jours. Bien que le cycle soit difficile à établir avec une seule commande, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement tout cycle standard de rotation de stock. Le risque de rupture est considéré comme avéré pour maintenir une présence en rayon. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique multiple, on se base sur la dernière commande connue (3 unités). Conformément aux règles, on maintient cette quantité sans l'augmenter pour éviter le surstockage sur un produit à rotation lente.",
-          "summary": "Réapprovisionnement de précaution (rotation lente)",
-          "baseline_quantity": 3,
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B (si doute sur le cycle ou rotation irrégulière), un risque de rupture est identifié pour couvrir les besoins actuels. ÉTAPE 2 : Estimation de la quantité. L'historique disponible (N-1) indique une rotation très faible de 1 unité. Conformément aux règles sur les rotations faibles, on maintient la quantité historique sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (cycle annuel).",
+          "baseline_quantity": 1,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -288,17 +210,17 @@
         "product_id": 18349,
         "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
         "product_uom": "TU10",
-        "quantity_recommended": 4,
+        "quantity_recommended": 3,
         "quantity_source": "llm",
         "price_unit": 17.7,
-        "subtotal": 70.8,
+        "subtotal": 53.099999999999994,
         "moq_adjustment": 0,
         "confidence": "high",
         "order_count": 5,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 20 août 2025, soit plus de 140 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande historique, le principe de précaution B2B s'applique ici car le délai depuis la dernière commande dépasse largement tout cycle standard de rotation de stock. En l'absence d'historique récurrent ou de données N-1, la quantité est basée sur la dernière commande connue (4 unités) pour assurer une remise en stock minimale sans risque de surstockage majeur.",
-          "summary": "Réapprovisionnement de précaution (longue inactivité)",
-          "baseline_quantity": 4,
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B et face à l'absence de données récentes pour infirmer le besoin, un risque de rupture est identifié. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la prévision se base sur la commande de l'année précédente à la même période, soit 3 unités. Cette quantité est maintenue pour couvrir le besoin sans surstocker.",
+          "summary": "Réapprovisionnement basé sur historique N-1.",
+          "baseline_quantity": 3,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -334,17 +256,17 @@
         "product_id": 18355,
         "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
         "product_uom": "TU10",
-        "quantity_recommended": 4,
+        "quantity_recommended": 1,
         "quantity_source": "llm",
         "price_unit": 17.7,
-        "subtotal": 70.8,
+        "subtotal": 17.7,
         "moq_adjustment": 0,
         "confidence": "high",
         "order_count": 5,
         "llm_prediction": {
-          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a plus de 140 jours (4 unités le 20/08/2025). Bien que le cycle soit difficile à établir, le principe de précaution B2B impose de prévoir un réapprovisionnement pour éviter une rupture prolongée sur une référence active. En l'absence d'historique récurrent, la quantité retenue est basée sur la dernière commande connue (4 unités), ce qui correspond à la médiane de l'historique disponible tout en restant prudent.",
-          "summary": "Réappro de précaution (cycle irrégulier)",
-          "baseline_quantity": 4,
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Il n'y a aucune commande récente, mais une commande historique a été passée à la même période l'année dernière (janvier). Le délai depuis cette commande annuelle est de 382 jours. En l'absence de cycle régulier et selon le principe de précaution B2B, un besoin est identifié pour couvrir la période anniversaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique disponible (N-1) montre une commande unique de 1 unité. Conformément aux règles sur les rotations très faibles et l'absence d'historique récent, la quantité est maintenue à 1 unité pour éviter le surstock tout en assurant la présence du produit.",
+          "summary": "Réappro de précaution (historique N-1)",
+          "baseline_quantity": 1,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -380,17 +302,17 @@
         "product_id": 18356,
         "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
         "product_uom": "TU10",
-        "quantity_recommended": 1,
+        "quantity_recommended": 2,
         "quantity_source": "llm",
         "price_unit": 25.3,
-        "subtotal": 25.3,
+        "subtotal": 50.6,
         "moq_adjustment": 0,
         "confidence": "high",
         "order_count": 5,
         "llm_prediction": {
-          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 20 août 2025, soit plus de 140 jours. Bien que la rotation soit extrêmement faible, le principe de précaution B2B et l'absence d'historique complet imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée si un cycle de vente lent est en cours. ÉTAPE 2 : L'historique récent ne montre qu'une seule commande de 1 unité. Conformément à la règle des rotations très faibles (1-2u), on maintient la quantité à 1 unité sans l'augmenter.",
-          "summary": "Réapprovisionnement de précaution (rotation faible)",
-          "baseline_quantity": 1,
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 indique une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B (doute sur le cycle = prévoir commande), un risque de rupture est identifié pour couvrir la période actuelle. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la prévision se base sur la commande de l'année précédente à la même période. La quantité de 2 unités est retenue pour maintenir le stock sans surstockage, conformément à la règle des rotations faibles.",
+          "summary": "Réapprovisionnement basé sur historique N-1.",
+          "baseline_quantity": 2,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -426,17 +348,17 @@
         "product_id": 18351,
         "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
         "product_uom": "TU10",
-        "quantity_recommended": 1,
+        "quantity_recommended": 2,
         "quantity_source": "llm",
         "price_unit": 17.7,
-        "subtotal": 17.7,
+        "subtotal": 35.4,
         "moq_adjustment": 0,
         "confidence": "high",
         "order_count": 5,
         "llm_prediction": {
-          "reasoning": "Le produit présente une rotation extrêmement faible avec une seule commande enregistrée il y a environ 144 jours. Bien que le cycle soit difficile à établir en raison du manque d'historique, le principe de précaution B2B et la règle sur les cycles irréguliers imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée. Conformément aux règles pour les rotations très faibles (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane de l'historique récent.",
-          "summary": "Réapprovisionnement de précaution (rotation faible)",
-          "baseline_quantity": 1,
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais une commande a eu lieu à la même période l'année dernière (janvier). Le délai depuis cette dernière référence historique dépasse largement le cycle annuel, créant une incertitude sur le stock actuel. En application du principe de précaution B2B (si doute sur le cycle -> prévoir), un besoin est identifié pour couvrir l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. L'historique N-1 indique une commande de 2 unités. En l'absence d'autres données, on maintient cette quantité historique pour éviter la rupture sans risquer le surstock.",
+          "summary": "Réappro de précaution basé sur historique N-1.",
+          "baseline_quantity": 2,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -471,6 +393,84 @@
     ],
     "optional": [
       {
+        "product_id": 13095,
+        "product_name": "[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.03,
+        "subtotal": 27.03,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 05/12/2025, soit environ 60 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).",
+          "summary": "Réapprovisionnement de précaution (cycle incertain)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-12-05 08:14:38",
+            "quantity": 1,
+            "price_unit": 27.03
+          }
+        ]
+      },
+      {
+        "product_id": 13096,
+        "product_name": "[LV002] LV Pizza Croccantina au romarin 150 g bio",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.03,
+        "subtotal": 27.03,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 05/12/2025, soit 60 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).",
+          "summary": "Réapprovisionnement de précaution (60j sans commande)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-12-05 08:14:38",
+            "quantity": 1,
+            "price_unit": 27.03
+          }
+        ]
+      },
+      {
+        "product_id": 13097,
+        "product_name": "[LV003] LV Pizza Croccantina tomate origan 150 g bio",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 29.45,
+        "subtotal": 29.45,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 05/12/2025, soit 60 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande historique, le principe de précaution B2B s'applique car nous dépassons largement un cycle mensuel standard. Le risque de rupture est considéré comme présent par manque de visibilité. En suivant la règle de la médiane sur l'historique récent (1u), la quantité préconisée est de 1 unité pour reconstituer un stock minimal sans risque de surstockage.",
+          "summary": "Réapprovisionnement de précaution (60j sans commande)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-12-05 08:14:38",
+            "quantity": 1,
+            "price_unit": 29.45
+          }
+        ]
+      },
+      {
         "product_id": 18326,
         "product_name": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
         "product_uom": "TU15",
@@ -482,7 +482,7 @@
         "confidence": "low",
         "order_count": 1,
         "llm_prediction": {
-          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 25 septembre 2025, soit 108 jours sans activité. Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (si doute sur le cycle -> prévoir commande), un risque de rupture de stock chez le client est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité minimale historique sans l'augmenter.",
+          "reasoning": "La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et conformément à la règle des rotations faibles, il est nécessaire de prévoir une commande de 1 unité pour reconstituer le stock.",
           "summary": "Réapprovisionnement de précaution (rotation faible)",
           "baseline_quantity": 1,
           "model": "google/gemini-3-flash-preview",
@@ -500,13 +500,11 @@
   },
   "summary": {
     "base_products_count": 8,
-    "optional_products_count": 1,
-    "base_amount": 519.46,
-    "optional_amount": 16.05,
-    "total_amount": 535.51,
-    "moq_adjusted": false,
-    "quote_name": "S40419",
-    "quote_id": 92298
+    "optional_products_count": 4,
+    "base_amount": 481.46,
+    "optional_amount": 99.56,
+    "total_amount": 581.0199999999999,
+    "moq_adjusted": false
   },
-  "execution_time_ms": 54901
+  "execution_time_ms": 16436
 }

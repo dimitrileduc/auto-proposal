@@ -8,6 +8,7 @@
 
 import { schedules } from "@trigger.dev/sdk/v3";
 import { orchestratorTask } from "./orchestrator.task";
+import { autoProposalConfig } from "../config/auto-proposal";
 
 /**
  * Daily scheduled orchestrator
@@ -39,6 +40,7 @@ export const dailyOrchestratorSchedule = schedules.task({
         maxClientsToAnalyze: "all",
         generateReports: true,
         forceReanalysis: false, // Don't re-propose to already processed clients
+        companyId: autoProposalConfig.defaultCompanyId,
       },
     });
 
