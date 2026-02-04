@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-02-03T17:07:55.922Z"
+    "generatedAt": "2026-02-04T06:34:49.244Z"
   },
   "client": {
     "id": 18017,
@@ -9,7 +9,7 @@
     "email": "servicedesk.retail@aveve.be"
   },
   "config": {
-    "analysisEndDate": "2026-02-03 00:00:00",
+    "analysisEndDate": "2026-02-04 00:00:00",
     "replenishmentThreshold": 30,
     "moqMinimum": 300,
     "skipOdooQuoteGeneration": true
@@ -20,8 +20,8 @@
       "llm_usage": {
         "calls": 3,
         "promptTokens": 3104,
-        "completionTokens": 566,
-        "totalTokens": 3670
+        "completionTokens": 598,
+        "totalTokens": 3702
       }
     },
     "proposalFinal": {
@@ -44,8 +44,8 @@
         "confidence": "high",
         "order_count": 13,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 08/12/2025, soit il y a 57 jours. L'historique montre un cycle de commande variant entre 55 et 65 jours pour les petits volumes (octobre à décembre). Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique où le stock risque de s'épuiser. Bien que l'année précédente ait connu des pics à 750u ou 1500u, les commandes récentes sont stabilisées à 125u. En suivant la règle de la médiane sur l'historique récent et le principe de précaution B2B, une commande de 125u est nécessaire pour couvrir les 30 prochains jours sans risque de surstockage.",
-          "summary": "Réapprovisionnement nécessaire (cycle 57j atteint)",
+          "reasoning": "L'analyse du cycle de commande montre un intervalle moyen d'environ 55 à 60 jours entre les réapprovisionnements récents. La dernière commande remontant au 08/12/2025 (soit 58 jours avant la date actuelle), le seuil de 70% du cycle est largement dépassé, indiquant un risque de rupture imminent sous 30 jours. Bien que l'historique lointain (2024) montre des pics à 750u ou 1500u, les commandes les plus récentes sont stabilisées à 125u. En suivant la règle de la médiane sur l'historique récent et le principe de prudence (choisir la valeur la plus basse en cas de doute sur la tendance), une quantité de 125u est préconisée.",
+          "summary": "Cycle dépassé (58j), réapprovisionnement de 125u.",
           "baseline_quantity": 125,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -90,8 +90,8 @@
         "confidence": "high",
         "order_count": 9,
         "llm_prediction": {
-          "reasoning": "L'analyse de l'historique montre un cycle de commande d'environ 2 mois (55-60 jours). La dernière commande datant du 08/12/2025, nous sommes à 57 jours d'intervalle au 03/02/2026. Le seuil de réapprovisionnement de 30 jours est largement atteint, créant un risque de rupture imminent. Concernant la quantité, bien que des pics à 750u apparaissent dans l'historique lointain, les trois dernières commandes sont constantes à 125u. En application de la règle de la médiane et de la stabilité du flux récent, la quantité de 125u est retenue.",
-          "summary": "Cycle de 60j atteint, risque rupture imminent.",
+          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 60 jours. La dernière commande remonte au 08/12/2025, soit 58 jours avant la date actuelle. Le seuil de 70% du cycle est largement dépassé, indiquant un risque de rupture imminent dans l'horizon des 30 jours. Bien que des pics à 750u apparaissent dans l'historique lointain, les commandes récentes et la majorité des occurrences se stabilisent à 125u. En application de la règle de la médiane et de précaution sur les volumes, la quantité retenue est de 125u.",
+          "summary": "Cycle dépassé (58j), réapprovisionnement de 125u.",
           "baseline_quantity": 125,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -136,8 +136,8 @@
         "confidence": "high",
         "order_count": 12,
         "llm_prediction": {
-          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 55 jours (entre octobre et décembre 2025). La dernière commande datant du 08/12/2025, soit il y a 57 jours, le seuil de réapprovisionnement est largement dépassé. Bien que les volumes de l'année précédente fussent plus élevés (750u), la tendance récente s'est stabilisée à 125u. En application de la règle de la médiane sur l'historique récent et du principe de précaution face à un cycle dépassé, une commande de 125u est nécessaire pour couvrir les besoins immédiats.",
-          "summary": "Cycle dépassé (57j), maintien du volume à 125u.",
+          "reasoning": "L'analyse du cycle de commande montre une fréquence d'environ 55 à 60 jours entre les dernières commandes (octobre à décembre). Depuis la dernière commande du 08/12/2025, 58 jours se sont écoulés, ce qui dépasse le seuil de 70% du cycle moyen. Un risque de rupture est identifié pour l'horizon des 30 prochains jours. Concernant la quantité, bien que l'historique N-1 montre des volumes de 750u, les commandes les plus récentes (octobre et décembre 2025) se sont stabilisées à 125u. Conformément à la règle de privilégier la médiane récente et de respecter les tendances à la baisse, la quantité retenue est de 125u.",
+          "summary": "Cycle atteint (58j), maintien du volume à 125u.",
           "baseline_quantity": 125,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -181,5 +181,5 @@
     "total_amount": 4582.5,
     "moq_adjusted": false
   },
-  "execution_time_ms": 11848
+  "execution_time_ms": 6152
 }

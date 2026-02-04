@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-02-03T17:07:51.578Z"
+    "generatedAt": "2026-02-04T06:34:43.569Z"
   },
   "client": {
     "id": 81,
@@ -9,7 +9,7 @@
     "email": "hello@100lg.be"
   },
   "config": {
-    "analysisEndDate": "2026-02-03 00:00:00",
+    "analysisEndDate": "2026-02-04 00:00:00",
     "replenishmentThreshold": 30,
     "moqMinimum": 300,
     "skipOdooQuoteGeneration": true
@@ -19,14 +19,14 @@
       "products_count": 8,
       "llm_usage": {
         "calls": 8,
-        "promptTokens": 7463,
-        "completionTokens": 1367,
-        "totalTokens": 8830
+        "promptTokens": 7465,
+        "completionTokens": 1387,
+        "totalTokens": 8852
       }
     },
     "proposalFinal": {
       "products_count": 8,
-      "total_amount": 1350,
+      "total_amount": 892.3000000000001,
       "moq_adjustment_applied": false
     }
   },
@@ -44,8 +44,8 @@
         "confidence": "high",
         "order_count": 8,
         "llm_prediction": {
-          "reasoning": "L'analyse de l'historique récent montre un cycle de commande moyen d'environ 24 jours (entre fin octobre et mi-décembre). La dernière commande datant du 15 décembre 2025, soit il y a 50 jours, le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe un risque de rupture imminent ou une consommation déjà effectuée. En appliquant la règle de la médiane sur les quantités récentes (8, 2, 8), la valeur centrale est 8. Bien que le doute entre 2 et 8 pourrait suggérer la valeur basse, le volume de 8u est récurrent dans l'historique, justifiant ce choix pour couvrir le besoin B2B.",
-          "summary": "Risque rupture (50j sans commande). Médiane: 8u.",
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 35 et 13 jours, avec une dernière commande effectuée il y a 51 jours (15/12/2025). Ce délai dépasse largement le cycle moyen constaté, indiquant un risque de rupture imminent ou déjà avéré dans l'horizon des 30 jours. En application du principe de précaution B2B, un réapprovisionnement est nécessaire. La quantité est basée sur la médiane des commandes significatives (8u), excluant la commande isolée de 2u pour maintenir le niveau de stock habituel.",
+          "summary": "Risque de rupture (51j sans commande). Médiane 8u.",
           "baseline_quantity": 8,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -82,17 +82,17 @@
         "product_id": 18352,
         "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
         "product_uom": "TU10",
-        "quantity_recommended": 8,
+        "quantity_recommended": 7,
         "quantity_source": "llm",
         "price_unit": 17.7,
-        "subtotal": 141.6,
+        "subtotal": 123.89999999999999,
         "moq_adjustment": 0,
         "confidence": "high",
         "order_count": 6,
         "llm_prediction": {
-          "reasoning": "ÉTAPE 1 : Le cycle moyen entre les deux dernières commandes est de 48 jours. La dernière commande date du 15 décembre 2025, soit 50 jours avant la date actuelle. Le seuil de réapprovisionnement est de 30 jours. Le délai depuis la dernière commande dépasse déjà le cycle habituel, le risque de rupture est donc imminent. ÉTAPE 2 : L'historique récent présente deux valeurs (10u et 7u). La médiane se situe à 8,5u. En application de la règle de prudence B2B privilégiant la valeur la plus basse en cas de doute, la quantité retenue est de 8 unités.",
-          "summary": "Cycle dépassé (50j), risque de rupture imminent.",
-          "baseline_quantity": 8,
+          "reasoning": "La dernière commande remonte au 15 décembre 2025, soit 51 jours. L'intervalle entre les deux commandes précédentes était de 48 jours. Nous avons donc dépassé 100% du cycle moyen, ce qui indique un risque de rupture imminent ou une rupture déjà effective. En application du principe de précaution B2B, un réapprovisionnement est nécessaire. Pour la quantité, la médiane entre 10u et 7u est de 8.5u, mais selon la règle de choisir la valeur la plus basse en cas de doute pour éviter le surstockage, nous retenons 7u.",
+          "summary": "Cycle dépassé (51j), réappro de précaution.",
+          "baseline_quantity": 7,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -136,8 +136,8 @@
         "confidence": "high",
         "order_count": 8,
         "llm_prediction": {
-          "reasoning": "L'analyse du cycle de commande montre des intervalles de 35 et 13 jours, soit une moyenne de 24 jours. La dernière commande remonte au 15 décembre, soit 50 jours avant la date actuelle (03 février). Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande déjà due. En suivant la règle de précaution B2B, un besoin est détecté. Pour la quantité, l'historique récent présente les valeurs 1, 6 et 8. La médiane de ces commandes est de 6 unités.",
-          "summary": "Risque rupture (50j sans commande). Médiane: 6u.",
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 35 et 13 jours, avec une dernière commande effectuée il y a 51 jours (15/12/2025). Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande due. En appliquant la règle de la médiane sur les quantités récentes (1, 6, 8), la valeur centrale est de 6 unités. Bien qu'il y ait eu une commande isolée de 1u, le volume habituel se situe entre 6 et 8u. Conformément au principe de précaution B2B et à la sélection de la médiane, une commande de 6 unités est préconisée.",
+          "summary": "Risque rupture (51j sans commande). Médiane 6u.",
           "baseline_quantity": 6,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -182,8 +182,8 @@
         "confidence": "high",
         "order_count": 7,
         "llm_prediction": {
-          "reasoning": "L'analyse du cycle de commande montre un intervalle de 48 jours entre les deux dernières commandes. La dernière commande datant du 15 décembre 2025 (il y a 50 jours), nous avons dépassé le cycle moyen, ce qui indique un risque de rupture imminent selon le principe de précaution B2B (seuil de 70% du cycle largement atteint). Pour la quantité, bien qu'une commande de 30u ait été enregistrée, la commande la plus récente est de 10u. En suivant la règle de la médiane et de la prudence en cas de doute entre deux valeurs, la quantité de 10u est retenue pour éviter le surstockage tout en couvrant le besoin.",
-          "summary": "Risque de rupture (cycle > 50j), réappro de 10u.",
+          "reasoning": "La dernière commande remonte au 15 décembre 2025, soit 51 jours. L'intervalle entre les deux commandes précédentes était de 48 jours. Nous avons donc dépassé le cycle moyen de rotation, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement dans l'horizon des 30 jours (Replenishment Threshold Days). En suivant la règle de la médiane des quantités récentes (10u et 30u) et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 10 unités.",
+          "summary": "Cycle de 48j dépassé, réapprovisionnement de 10u.",
           "baseline_quantity": 10,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -220,17 +220,17 @@
         "product_id": 18415,
         "product_name": "[REB06] REB chips bio - paprika fumé 35g",
         "product_uom": "TU20",
-        "quantity_recommended": 26,
+        "quantity_recommended": 1,
         "quantity_source": "llm",
         "price_unit": 17.6,
-        "subtotal": 457.6,
+        "subtotal": 17.6,
         "moq_adjustment": 0,
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 02/12/2025, soit 63 jours avant la date actuelle. Bien que le cycle soit irrégulier (une commande de 26u suivie d'une unité isolée), le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et pour éviter une rupture sur un cycle incertain, une commande est nécessaire. La quantité retenue se base sur le volume significatif historique (26u) plutôt que sur l'unité isolée qui semble être un ajustement marginal.",
-          "summary": "Réapprovisionnement de précaution (cycle > 60j)",
-          "baseline_quantity": 26,
+          "reasoning": "L'analyse du cycle de commande montre une dernière commande le 02/12/2025, soit il y a 64 jours. Bien que la rotation soit irrégulière (une commande de 26u suivie d'une commande de 1u), le délai écoulé dépasse largement les cycles habituels de réapprovisionnement en B2B. En application du principe de précaution (Étape 1), un risque de rupture est identifié. Pour le calcul de la quantité (Étape 2), la médiane entre 26 et 1 est de 13.5, mais les règles stipulent de privilégier la valeur la plus basse en cas de doute ou de tendance incertaine pour éviter le surstockage. La dernière commande étant de 1u, nous maintenons ce volume minimal pour couvrir le besoin immédiat sans risque d'invendus.",
+          "summary": "Réapprovisionnement de précaution (64j d'écart).",
+          "baseline_quantity": 1,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
         },
@@ -259,8 +259,8 @@
         "confidence": "high",
         "order_count": 8,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 02/12/2025, soit 63 jours avant la date actuelle. Le cycle moyen entre les commandes précédentes était d'environ 35 jours. Le délai actuel dépasse largement ce cycle, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement immédiat selon le principe de précaution B2B. Pour la quantité, l'historique récent montre des volumes de 10, 15 et 40 unités. La médiane de ces commandes est de 15 unités. Conformément aux règles, nous retenons la médiane pour stabiliser le stock sans surévaluer.",
-          "summary": "Risque de rupture (63j sans commande). Médiane 15u.",
+          "reasoning": "La dernière commande remonte au 02/12/2025, soit 64 jours avant la date actuelle. L'historique montre un cycle moyen d'environ 35 jours entre les commandes précédentes. Le délai actuel dépasse largement ce cycle et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent. En appliquant la règle de la médiane sur les quantités récentes (10, 15, 40), la valeur centrale est 15. Conformément au principe de précaution B2B et à la règle de choisir la quantité la plus basse en cas de doute sur une rotation irrégulière, une commande de 15 unités est préconisée.",
+          "summary": "Risque rupture (64j sans commande). Médiane: 15u.",
           "baseline_quantity": 15,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -305,8 +305,8 @@
         "confidence": "high",
         "order_count": 6,
         "llm_prediction": {
-          "reasoning": "L'analyse du cycle de commande montre une dernière commande le 02/12/2025, soit il y a 63 jours. Bien que l'historique soit limité, le délai écoulé dépasse largement le cycle précédent (35 jours). En application du principe de précaution B2B (risque de rupture imminent ou cycle irrégulier), un réapprovisionnement est nécessaire. Pour la quantité, on observe une forte baisse entre la première commande (8u) et la plus récente (1u). Conformément à la règle de prudence sur les tendances à la baisse et le choix de la valeur la plus basse en cas de doute sur une faible rotation, la quantité retenue est de 1 unité.",
-          "summary": "Réapprovisionnement de précaution (1u) car cycle irrégulier.",
+          "reasoning": "L'analyse de l'historique montre deux commandes espacées de 35 jours (28/10 au 02/12). Depuis la dernière commande du 02/12/2025, 64 jours se sont écoulés, ce qui dépasse largement le cycle précédent et l'horizon de réapprovisionnement de 30 jours. Bien qu'une commande de 8 unités ait eu lieu, la commande la plus récente n'était que de 1 unité. En application du principe de précaution B2B (risque de rupture) combiné à la règle de la médiane/valeur basse en cas de doute sur la rotation, une commande de 1 unité est préconisée pour couvrir le besoin sans surstocker un produit à faible rotation.",
+          "summary": "Rupture probable, réappro de précaution (1u).",
           "baseline_quantity": 1,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -353,8 +353,8 @@
         "confidence": "low",
         "order_count": 1,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 02/12/2025, soit il y a 63 jours. Bien que l'historique soit limité à une seule commande de 2 unités, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la seule valeur historique disponible (2 unités), conformément à la règle de maintien pour les faibles rotations.",
-          "summary": "Réapprovisionnement de précaution (63j sans commande)",
+          "reasoning": "La dernière commande remonte au 02/12/2025, soit 64 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité est basée sur la médiane de l'historique récent (2 unités).",
+          "summary": "Réapprovisionnement de précaution (64j sans commande)",
           "baseline_quantity": 2,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -372,10 +372,10 @@
   "summary": {
     "base_products_count": 7,
     "optional_products_count": 1,
-    "base_amount": 1314.8,
+    "base_amount": 857.1,
     "optional_amount": 35.2,
-    "total_amount": 1350,
+    "total_amount": 892.3000000000001,
     "moq_adjusted": false
   },
-  "execution_time_ms": 7899
+  "execution_time_ms": 3729
 }

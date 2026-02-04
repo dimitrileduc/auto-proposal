@@ -92,11 +92,20 @@ Voir [`backend/src/config/auto-proposal.ts`](../backend/src/config/auto-proposal
 ```typescript
 {
   odooApiType: 'xml-rpc' | 'json-2',
+  defaultCompanyId: 3,             // FOODPRINT SRL (multi-company)
   replenishmentThreshold: 30,      // days
   moqMinimum: 300,                 // EUR
   productCategoryExclusions: [...], // 70+ categories
+  quoteGeneration: {
+    autoProposalTagId: 84,         // Tag for auto-generated quotes
+  },
+  inactivityDetection: {
+    excludedPartnerTagId: 196,     // Exclude partners with this tag
+  },
 }
 ```
+
+> **Multi-company**: Le système filtre par `company_id` sur les commandes pour ne traiter que les clients de la société configurée.
 
 ## Variables d'environnement
 

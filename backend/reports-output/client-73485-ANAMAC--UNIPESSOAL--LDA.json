@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-02-03T17:07:51.218Z"
+    "generatedAt": "2026-02-04T06:36:31.229Z"
   },
   "client": {
     "id": 73485,
@@ -9,7 +9,7 @@
     "email": "info@anamac.com"
   },
   "config": {
-    "analysisEndDate": "2026-02-03 00:00:00",
+    "analysisEndDate": "2026-02-04 00:00:00",
     "replenishmentThreshold": 30,
     "moqMinimum": 300,
     "skipOdooQuoteGeneration": true
@@ -19,9 +19,9 @@
       "products_count": 8,
       "llm_usage": {
         "calls": 8,
-        "promptTokens": 7289,
-        "completionTokens": 1218,
-        "totalTokens": 8507
+        "promptTokens": 7283,
+        "completionTokens": 1208,
+        "totalTokens": 8491
       }
     },
     "proposalFinal": {
@@ -44,8 +44,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande de 8 unités, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (incertitude sur le cycle = risque de rupture), un besoin est détecté. La quantité est fixée à 8 unités, correspondant à la seule valeur historique connue (médiane par défaut).",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'incertitude du cycle, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité est fixée à 8 unités, correspondant à la seule valeur historique connue (médiane par défaut), afin de reconstituer le stock initialement observé.",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 8,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -75,8 +75,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente de 12 unités, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En l'absence d'historique plus complet pour définir un cycle précis, le principe de précaution s'applique pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (12 unités), ce qui représente le volume de rotation observé pour ce produit.",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de type mayonnaise. En application du principe de précaution B2B (incertitude sur le cycle = risque de rupture), un besoin est détecté. La quantité est basée sur l'unique point de donnée historique disponible (12 unités), ce qui constitue la médiane de référence.",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 12,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -106,8 +106,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente (8 unités), le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (Étape 1), un risque de rupture est identifié car le besoin de renouvellement est imminent ou déjà dépassé. Pour la quantité (Étape 2), on se base sur l'unique point de donnée historique disponible (8 unités) pour maintenir le niveau de stock habituel du client.",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'absence de cycle établi, un risque de rupture est identifié. La quantité retenue correspond à la seule valeur historique disponible (8u), conformément à la règle de maintien des volumes pour les rotations régulières ou uniques.",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 8,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -137,8 +137,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la seule valeur historique disponible (12 unités), ce qui constitue la base de référence la plus fiable en l'absence d'autres données.",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la dernière commande connue (12 unités), conformément à la règle de maintien des volumes sur rotation régulière ou historique faible.",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 12,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -168,8 +168,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et compte tenu du seuil de 30 jours, un réapprovisionnement est nécessaire. La quantité retenue correspond à la seule valeur historique disponible (8 unités), conformément à la règle de maintien des volumes en cas de rotation régulière ou unique.",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente enregistrée (8 unités), le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (Étape 1), l'absence de visibilité sur la rotation régulière impose de prévoir une commande pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (8 unités), conformément à la règle de maintien des volumes sur rotation faible ou irrégulière.",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 8,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -199,8 +199,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente de 10 unités, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type en B2B. En l'absence d'historique plus complet pour définir un cycle précis, le principe de précaution s'applique afin d'éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (10 unités), ce qui représente le volume de rotation observé pour ce client.",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'absence de données sur la rotation longue, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité retenue correspond à la dernière commande connue (10u), conformément à la règle de maintien des volumes en cas de rotation régulière ou unique.",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 10,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -230,8 +230,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande récente, le délai écoulé dépasse largement les cycles de réapprovisionnement standards en B2B. En application du principe de précaution (Étape 1), un risque de rupture est identifié. Pour la quantité (Étape 2), la valeur de la dernière commande connue (12 unités) est reconduite comme base de référence, n'ayant pas d'autres données pour établir une médiane différente.",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande récente, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (12 unités).",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 12,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -263,8 +263,8 @@
         "confidence": "low",
         "order_count": 1,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 77 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la dernière commande observée (6 unités), ce qui constitue la base de référence la plus fiable en l'absence d'autres données.",
-          "summary": "Réapprovisionnement de précaution (77j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente de 6 unités, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (Étape 1), un risque de rupture est identifié car le stock initial est probablement épuisé ou critique à l'horizon de 30 jours. Pour la quantité (Étape 2), on se base sur l'unique référence historique disponible de 6 unités pour maintenir le niveau de stock habituel.",
+          "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 6,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -287,5 +287,5 @@
     "total_amount": 1183.1999999999998,
     "moq_adjusted": false
   },
-  "execution_time_ms": 11001
+  "execution_time_ms": 19535
 }

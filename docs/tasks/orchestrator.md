@@ -30,15 +30,17 @@ flowchart LR
     maxClientsToAnalyze?: number | "all";
     forceReanalysis?: boolean;     // Default: false
     generateReports?: boolean;     // Default: true
-    excludedPartnerTagId?: number;
+    excludedPartnerTagId?: number; // Default: from config (196)
+    companyId?: number;            // Default: from config (3 = FOODPRINT SRL)
   };
 }
 ```
 
 **Defaults:**
 - `skipOdooQuoteGeneration: true` ← TEST mode par défaut (pas de création Odoo)
-- `forceReanalysis: false` ← Ignore les commandes avec tag 82 dans le calcul d'activité (évite de réanalyser les clients déjà proposés)
+- `forceReanalysis: false` ← Ignore les commandes avec tag auto-proposal dans le calcul d'activité
 - `generateReports: true` ← Générer markdown/JSON
+- `companyId: 3` ← Filtre les commandes par société (multi-company support)
 
 ## Résultat
 
@@ -119,7 +121,7 @@ curl -X POST http://localhost:3000/routes/orchestrator-task \
 
 ### 3. Force reanalysis
 
-Réanalyse les clients même s'ils ont déjà des devis auto-générés (tag 82) :
+Réanalyse les clients même s'ils ont déjà des devis auto-générés:
 
 ```bash
 curl -X POST http://localhost:3000/routes/orchestrator-task \

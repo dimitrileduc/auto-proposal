@@ -1,5 +1,5 @@
 /**
- * Scheduled orchestrator task - runs daily at 7:00 AM Paris time
+ * Scheduled orchestrator task - runs daily at 8:00 AM Paris time
  *
  * Triggers the main orchestrator workflow on a daily schedule.
  *
@@ -13,15 +13,15 @@ import { autoProposalConfig } from "../config/auto-proposal";
 /**
  * Daily scheduled orchestrator
  *
- * Runs every day at 7:00 AM Europe/Paris timezone.
- * Processes all inactive clients and generates proposals.
+ * Runs every day at 8:00 AM Europe/Paris timezone.
+ * Processes up to 5 inactive clients and generates proposals.
  *
  * During initial testing phase, uncomment clientIds to limit to specific clients.
  */
 export const dailyOrchestratorSchedule = schedules.task({
-  id: "orchestrator-daily-7am",
+  id: "orchestrator-daily-8am",
   cron: {
-    pattern: "0 7 * * *",
+    pattern: "0 8 * * *",
     timezone: "Europe/Paris",
   },
   run: async (payload) => {
@@ -37,7 +37,7 @@ export const dailyOrchestratorSchedule = schedules.task({
         // clientIds: [FOOTPRINT_ID],
 
         skipOdooQuoteGeneration: false, // PROD = create quotes in Odoo
-        maxClientsToAnalyze: "all",
+        maxClientsToAnalyze: 5,
         generateReports: true,
         forceReanalysis: false, // Don't re-propose to already processed clients
         companyId: autoProposalConfig.defaultCompanyId,

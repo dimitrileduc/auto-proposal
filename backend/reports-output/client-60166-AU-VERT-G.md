@@ -2,7 +2,7 @@
 
 **Client:** AU VERT G (ID: 60166)
 **Email:** contact@vertg.be
-**Analysis Date:** 2/3/2026, 6:07:58 PM
+**Analysis Date:** 2/4/2026, 7:39:19 AM
 **Replenishment Threshold:** 30 days
 
 ## Summary
@@ -21,17 +21,17 @@
 
 | Product | Qty | Price | Subtotal | Summary |
 |---------|----:|------:|---------:|---------|
-| [PAO03] PAOLA cola canette 330ml - le... | 6 | 25.20€ | 151.20€ | Risque rupture (60j sans commande). Médiane: 6u. |
-| [PAO04] PAOLA cola ZERO canette 330ml... | 5 | 25.20€ | 126.00€ | Risque rupture (60j sans commande). Médiane 5u. |
+| [PAO03] PAOLA cola canette 330ml - le... | 6 | 25.20€ | 151.20€ | Risque rupture (61j sans commande). Médiane: 6u. |
+| [PAO04] PAOLA cola ZERO canette 330ml... | 5 | 25.20€ | 126.00€ | Réapprovisionnement nécessaire (61j sans commande) |
 | [BUD03] BUDDY biologische energiedran... | 2 | 14.88€ | 29.76€ | Réapprovisionnement de précaution (rotation faible) |
-| [REB01] ReBEL chips premium & bio - s... | 1 | 17.70€ | 17.70€ | Réapprovisionnement de précaution (cycle annuel). |
-| [REB02] ReBEL chips premium & bio - p... | 3 | 17.70€ | 53.10€ | Réapprovisionnement basé sur historique N-1. |
-| [REB04] ReBEL chips premium & bio - t... | 1 | 17.70€ | 17.70€ | Réappro de précaution (historique N-1) |
+| [REB01] ReBEL chips premium & bio - s... | 1 | 17.70€ | 17.70€ | Réapprovisionnement de précaution (historique N-1) |
+| [REB02] ReBEL chips premium & bio - p... | 3 | 17.70€ | 53.10€ | Réappro précaution basé sur historique N-1. |
+| [REB04] ReBEL chips premium & bio - t... | 1 | 17.70€ | 17.70€ | Réappro de précaution basé sur historique N-1. |
 | [REB11] ReBEL chips premium & bio - t... | 2 | 25.30€ | 50.60€ | Réapprovisionnement basé sur historique N-1. |
-| [REB08] ReBEL chips premium & bio - p... | 2 | 17.70€ | 35.40€ | Réappro de précaution basé sur historique N-1. |
-| [LV001] LV Pizza Croccantina à l'huil... | 1 | 27.03€ | 27.03€ | Réapprovisionnement de précaution (cycle incertain) |
-| [LV002] LV Pizza Croccantina au romar... | 1 | 27.03€ | 27.03€ | Réapprovisionnement de précaution (60j sans commande) |
-| [LV003] LV Pizza Croccantina tomate o... | 1 | 29.45€ | 29.45€ | Réapprovisionnement de précaution (60j sans commande) |
+| [REB08] ReBEL chips premium & bio - p... | 2 | 17.70€ | 35.40€ | Réapprovisionnement de précaution (historique N-1) |
+| [LV001] LV Pizza Croccantina à l'huil... | 1 | 27.03€ | 27.03€ | Réapprovisionnement de précaution (rotation faible) |
+| [LV002] LV Pizza Croccantina au romar... | 1 | 27.03€ | 27.03€ | Réapprovisionnement de précaution (rotation faible) |
+| [LV003] LV Pizza Croccantina tomate o... | 1 | 29.45€ | 29.45€ | Réapprovisionnement de précaution (rotation faible) |
 | [NUT04] NUTS & BERRIES energy bar Ama... | 1 | 16.05€ | 16.05€ | Réapprovisionnement de précaution (rotation faible) |
 
 **Total: 581.02€**
@@ -65,11 +65,11 @@
 
 ### LLM Prediction
 
-**Summary:** Risque rupture (60j sans commande). Médiane: 6u.
+**Summary:** Risque rupture (61j sans commande). Médiane: 6u.
 
 **Reasoning:**
 
-L'analyse du cycle de commande montre des intervalles de 26 jours puis 45 jours (moyenne ~35 jours). La dernière commande remonte au 05/12/2025, soit 60 jours avant la date actuelle. Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande déjà due. En suivant la règle de la médiane sur les commandes récentes (5, 6, 7), la valeur centrale est de 6 unités. Ce volume est cohérent avec la consommation régulière observée sans intégrer de pics exceptionnels.
+ÉTAPE 1 (Détection) : La dernière commande remonte au 05/12/2025, soit 61 jours. L'intervalle moyen entre les commandes récentes est d'environ 40 jours. Le délai actuel dépasse largement cet intervalle et le seuil de 30 jours est atteint, indiquant un risque de rupture imminent. ÉTAPE 2 (Quantité) : Les quantités récentes sont 5, 6 et 7 unités. La médiane de cet historique récent est de 6 unités. Conformément aux règles de précaution B2B et de stabilité, nous retenons cette valeur médiane.
 
 **Baseline Quantity:** 6
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -98,11 +98,11 @@ L'analyse du cycle de commande montre des intervalles de 26 jours puis 45 jours 
 
 ### LLM Prediction
 
-**Summary:** Risque rupture (60j sans commande). Médiane 5u.
+**Summary:** Réapprovisionnement nécessaire (61j sans commande)
 
 **Reasoning:**
 
-ÉTAPE 1 (Détection): La dernière commande date du 05/12/2025, soit 60 jours écoulés. L'historique montre des cycles de 30 à 45 jours entre les commandes précédentes. Le délai actuel dépasse largement le cycle habituel, créant un risque de rupture imminent sous 30 jours. ÉTAPE 2 (Quantité): Les commandes récentes sont de 2u, 6u et 5u. La médiane de ces valeurs est de 5u. Bien que la dernière commande fût de 2u, le volume historique suggère un besoin plus proche de la médiane pour couvrir la période à venir sans surstocker.
+L'analyse du cycle de commande montre des intervalles de 26 et 45 jours. La dernière commande remonte au 05/12/2025, soit 61 jours avant la date actuelle (04/02/2026). Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un besoin immédiat par précaution. La médiane des commandes récentes (2, 5, 6) est de 5 unités. Bien que la dernière commande fût de 2 unités, le volume historique suggère une rotation plus proche de 5 unités pour éviter une rupture sur ce produit à faible volume.
 
 **Baseline Quantity:** 5
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -135,7 +135,7 @@ L'analyse du cycle de commande montre des intervalles de 26 jours puis 45 jours 
 
 **Reasoning:**
 
-La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien que la rotation soit très faible (une seule commande de 2 unités), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et face à l'absence d'historique N-1, il est nécessaire de prévoir un réapprovisionnement. La quantité retenue correspond à la seule valeur historique connue (2 unités), respectant la règle de maintien des faibles rotations sans surestimation.
+Le produit présente une rotation très faible avec une seule commande enregistrée il y a plus de 4 mois (132 jours). Bien que le cycle soit difficile à établir, le principe de précaution B2B s'applique pour éviter une rupture prolongée sur une référence active. En l'absence d'historique complexe ou de saisonnalité N-1, la quantité est basée sur la médiane de la dernière commande (2 unités). Conformément aux règles de rotation faible, on maintient ce volume minimal sans augmentation.
 
 **Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -162,11 +162,11 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (cycle annuel).
+**Summary:** Réapprovisionnement de précaution (historique N-1)
 
 **Reasoning:**
 
-ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B (si doute sur le cycle ou rotation irrégulière), un risque de rupture est identifié pour couvrir les besoins actuels. ÉTAPE 2 : Estimation de la quantité. L'historique disponible (N-1) indique une rotation très faible de 1 unité. Conformément aux règles sur les rotations faibles, on maintient la quantité historique sans l'augmenter.
+Le produit présente une rotation très faible avec une seule commande enregistrée l'année dernière à la même période (janvier). Bien qu'il n'y ait pas de commandes récentes, le principe de précaution B2B et la saisonnalité historique (N-1) suggèrent un besoin potentiel. Conformément aux règles pour les rotations faibles (1-2u) et l'absence d'historique récent, la quantité est fixée à 1 unité (médiane historique) pour couvrir le risque de rupture sans surstocker.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -195,11 +195,11 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement basé sur historique N-1.
+**Summary:** Réappro précaution basé sur historique N-1.
 
 **Reasoning:**
 
-ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B et face à l'absence de données récentes pour infirmer le besoin, un risque de rupture est identifié. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la prévision se base sur la commande de l'année précédente à la même période, soit 3 unités. Cette quantité est maintenue pour couvrir le besoin sans surstocker.
+ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais une commande de 3 unités a eu lieu à la même période l'année dernière (janvier). Le délai depuis la dernière commande connue dépasse largement un cycle annuel standard. En application du principe de précaution B2B et pour éviter une rupture sur un produit à rotation lente, un besoin est identifié. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la base N-1 est utilisée. La quantité de 3 unités est retenue pour maintenir le stock sans risque de surstockage.
 
 **Baseline Quantity:** 3
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -228,11 +228,11 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 
 ### LLM Prediction
 
-**Summary:** Réappro de précaution (historique N-1)
+**Summary:** Réappro de précaution basé sur historique N-1.
 
 **Reasoning:**
 
-ÉTAPE 1 : DÉTECTION DU BESOIN. Il n'y a aucune commande récente, mais une commande historique a été passée à la même période l'année dernière (janvier). Le délai depuis cette commande annuelle est de 382 jours. En l'absence de cycle régulier et selon le principe de précaution B2B, un besoin est identifié pour couvrir la période anniversaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique disponible (N-1) montre une commande unique de 1 unité. Conformément aux règles sur les rotations très faibles et l'absence d'historique récent, la quantité est maintenue à 1 unité pour éviter le surstock tout en assurant la présence du produit.
+Le produit présente une rotation très faible avec une seule commande enregistrée l'année dernière à la même période (janvier). Bien qu'il n'y ait pas de commandes récentes, le principe de précaution B2B et l'analyse de l'historique N-1 suggèrent un besoin potentiel pour maintenir le stock. Conformément aux règles pour les rotations très faibles (1-2u), la quantité est fixée à 1 unité (médiane de l'historique disponible) pour couvrir le risque de rupture sur l'horizon de 30 jours.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -265,7 +265,7 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 
 **Reasoning:**
 
-ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 indique une commande le 17 janvier. Nous sommes actuellement le 3 février, ce qui signifie que le cycle annuel est dépassé. En application du principe de précaution B2B (doute sur le cycle = prévoir commande), un risque de rupture est identifié pour couvrir la période actuelle. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la prévision se base sur la commande de l'année précédente à la même période. La quantité de 2 unités est retenue pour maintenir le stock sans surstockage, conformément à la règle des rotations faibles.
+ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 4 février, soit au-delà de la date anniversaire de la dernière commande connue. En l'absence de données récentes pour infirmer le besoin, le principe de précaution B2B s'applique pour éviter une rupture prolongée. ÉTAPE 2 : Estimation de la quantité. En l'absence de cycle récent, la prévision se base sur l'historique N-1 de la même période, soit 2 unités.
 
 **Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -294,11 +294,11 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 
 ### LLM Prediction
 
-**Summary:** Réappro de précaution basé sur historique N-1.
+**Summary:** Réapprovisionnement de précaution (historique N-1)
 
 **Reasoning:**
 
-ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais une commande a eu lieu à la même période l'année dernière (janvier). Le délai depuis cette dernière référence historique dépasse largement le cycle annuel, créant une incertitude sur le stock actuel. En application du principe de précaution B2B (si doute sur le cycle -> prévoir), un besoin est identifié pour couvrir l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. L'historique N-1 indique une commande de 2 unités. En l'absence d'autres données, on maintient cette quantité historique pour éviter la rupture sans risquer le surstock.
+ÉTAPE 1 : Détection du besoin. Aucune commande récente n'est enregistrée, mais l'historique N-1 montre une commande le 17 janvier. Nous sommes actuellement le 4 février, soit au-delà de la date anniversaire de la dernière commande connue. En l'absence de données récentes pour infirmer la rotation, le principe de précaution B2B s'applique pour éviter une rupture prolongée. ÉTAPE 2 : Estimation de la quantité. L'historique disponible (N-1) indique une commande de 2 unités. Conformément aux règles de rotation faible et de maintien des volumes historiques en l'absence de tendance inverse, la quantité retenue est la médiane historique, soit 2 unités.
 
 **Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -341,11 +341,11 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (cycle incertain)
+**Summary:** Réapprovisionnement de précaution (rotation faible)
 
 **Reasoning:**
 
-La dernière commande remonte au 05/12/2025, soit environ 60 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).
+La dernière commande remonte au 05/12/2025, soit 61 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande (rotation très faible), le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et de la règle sur les rotations faibles (1-2u), il est nécessaire de prévoir une unité pour éviter une rupture prolongée, la médiane des commandes récentes étant de 1.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -370,11 +370,11 @@ La dernière commande remonte au 05/12/2025, soit environ 60 jours. Bien que l'h
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (60j sans commande)
+**Summary:** Réapprovisionnement de précaution (rotation faible)
 
 **Reasoning:**
 
-La dernière commande remonte au 05/12/2025, soit 60 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).
+La dernière commande remonte au 05/12/2025, soit 61 jours. Bien que l'historique soit limité à une seule commande (rotation très faible), le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et de la règle sur les rotations faibles (1-2u), il est nécessaire de prévoir une unité pour éviter une rupture prolongée sur ce produit bio. La quantité est basée sur la médiane de l'historique récent (1u).
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -399,11 +399,11 @@ La dernière commande remonte au 05/12/2025, soit 60 jours avant la date actuell
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (60j sans commande)
+**Summary:** Réapprovisionnement de précaution (rotation faible)
 
 **Reasoning:**
 
-La dernière commande remonte au 05/12/2025, soit 60 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande historique, le principe de précaution B2B s'applique car nous dépassons largement un cycle mensuel standard. Le risque de rupture est considéré comme présent par manque de visibilité. En suivant la règle de la médiane sur l'historique récent (1u), la quantité préconisée est de 1 unité pour reconstituer un stock minimal sans risque de surstockage.
+La dernière commande remonte au 05/12/2025, soit 61 jours. Bien que l'historique soit limité à une seule commande (rotation très faible), le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et de la règle sur les rotations faibles (1-2u), il est nécessaire de prévoir une unité pour éviter une rupture de stock prolongée sur cette référence. La quantité est basée sur l'unique historique récent disponible.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -432,7 +432,7 @@ La dernière commande remonte au 05/12/2025, soit 60 jours sans activité. Bien 
 
 **Reasoning:**
 
-La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et conformément à la règle des rotations faibles, il est nécessaire de prévoir une commande de 1 unité pour reconstituer le stock.
+La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et conformément à la règle des rotations faibles (maintenir 1-2u), une commande de 1 unité est préconisée pour reconstituer le stock.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -450,7 +450,7 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 
 ### Configuration
 
-- **Reference Date:** 2026-02-03 00:00:00
+- **Reference Date:** 2026-02-04 00:00:00
 - **Replenishment Threshold:** 30 days
 - **MOQ Minimum:** 300€
 - **Mode:** TEST (skip Odoo)
@@ -463,14 +463,14 @@ La dernière commande remonte au 25 septembre 2025, soit plus de 130 jours. Bien
 ### LLM Usage
 
 - **Calls:** 12
-- **Tokens:** 12940
+- **Tokens:** 12814
 
 ### Performance
 
-- **Execution Time:** 16.4s
+- **Execution Time:** 14.0s
 
 </details>
 
 ---
 
-*Report auto-generated on 2/3/2026, 6:07:58 PM*
+*Report auto-generated on 2/4/2026, 7:39:19 AM*

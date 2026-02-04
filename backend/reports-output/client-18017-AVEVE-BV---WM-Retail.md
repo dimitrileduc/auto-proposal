@@ -2,7 +2,7 @@
 
 **Client:** AVEVE BV - WM Retail (ID: 18017)
 **Email:** servicedesk.retail@aveve.be
-**Analysis Date:** 2/3/2026, 6:07:55 PM
+**Analysis Date:** 2/4/2026, 7:34:49 AM
 **Replenishment Threshold:** 30 days
 
 ## Summary
@@ -21,9 +21,9 @@
 
 | Product | Qty | Price | Subtotal | Summary |
 |---------|----:|------:|---------:|---------|
-| [LV162] LV Tartinade Tomato Basilico ... | 125 | 11.94€ | 1492.50€ | Réapprovisionnement nécessaire (cycle 57j atteint) |
-| [LV130] LV Tartinade Paprika Chili 18... | 125 | 12.36€ | 1545.00€ | Cycle de 60j atteint, risque rupture imminent. |
-| [LV161] LV Tartinade Mangue curry 180... | 125 | 12.36€ | 1545.00€ | Cycle dépassé (57j), maintien du volume à 125u. |
+| [LV162] LV Tartinade Tomato Basilico ... | 125 | 11.94€ | 1492.50€ | Cycle dépassé (58j), réapprovisionnement de 125u. |
+| [LV130] LV Tartinade Paprika Chili 18... | 125 | 12.36€ | 1545.00€ | Cycle dépassé (58j), réapprovisionnement de 125u. |
+| [LV161] LV Tartinade Mangue curry 180... | 125 | 12.36€ | 1545.00€ | Cycle atteint (58j), maintien du volume à 125u. |
 
 **Total: 4582.50€**
 
@@ -51,11 +51,11 @@
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement nécessaire (cycle 57j atteint)
+**Summary:** Cycle dépassé (58j), réapprovisionnement de 125u.
 
 **Reasoning:**
 
-La dernière commande remonte au 08/12/2025, soit il y a 57 jours. L'historique montre un cycle de commande variant entre 55 et 65 jours pour les petits volumes (octobre à décembre). Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique où le stock risque de s'épuiser. Bien que l'année précédente ait connu des pics à 750u ou 1500u, les commandes récentes sont stabilisées à 125u. En suivant la règle de la médiane sur l'historique récent et le principe de précaution B2B, une commande de 125u est nécessaire pour couvrir les 30 prochains jours sans risque de surstockage.
+L'analyse du cycle de commande montre un intervalle moyen d'environ 55 à 60 jours entre les réapprovisionnements récents. La dernière commande remontant au 08/12/2025 (soit 58 jours avant la date actuelle), le seuil de 70% du cycle est largement dépassé, indiquant un risque de rupture imminent sous 30 jours. Bien que l'historique lointain (2024) montre des pics à 750u ou 1500u, les commandes les plus récentes sont stabilisées à 125u. En suivant la règle de la médiane sur l'historique récent et le principe de prudence (choisir la valeur la plus basse en cas de doute sur la tendance), une quantité de 125u est préconisée.
 
 **Baseline Quantity:** 125
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -84,11 +84,11 @@ La dernière commande remonte au 08/12/2025, soit il y a 57 jours. L'historique 
 
 ### LLM Prediction
 
-**Summary:** Cycle de 60j atteint, risque rupture imminent.
+**Summary:** Cycle dépassé (58j), réapprovisionnement de 125u.
 
 **Reasoning:**
 
-L'analyse de l'historique montre un cycle de commande d'environ 2 mois (55-60 jours). La dernière commande datant du 08/12/2025, nous sommes à 57 jours d'intervalle au 03/02/2026. Le seuil de réapprovisionnement de 30 jours est largement atteint, créant un risque de rupture imminent. Concernant la quantité, bien que des pics à 750u apparaissent dans l'historique lointain, les trois dernières commandes sont constantes à 125u. En application de la règle de la médiane et de la stabilité du flux récent, la quantité de 125u est retenue.
+L'analyse de l'historique montre un cycle de commande moyen d'environ 60 jours. La dernière commande remonte au 08/12/2025, soit 58 jours avant la date actuelle. Le seuil de 70% du cycle est largement dépassé, indiquant un risque de rupture imminent dans l'horizon des 30 jours. Bien que des pics à 750u apparaissent dans l'historique lointain, les commandes récentes et la majorité des occurrences se stabilisent à 125u. En application de la règle de la médiane et de précaution sur les volumes, la quantité retenue est de 125u.
 
 **Baseline Quantity:** 125
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -117,11 +117,11 @@ L'analyse de l'historique montre un cycle de commande d'environ 2 mois (55-60 jo
 
 ### LLM Prediction
 
-**Summary:** Cycle dépassé (57j), maintien du volume à 125u.
+**Summary:** Cycle atteint (58j), maintien du volume à 125u.
 
 **Reasoning:**
 
-L'analyse de l'historique récent montre un cycle de commande d'environ 55 jours (entre octobre et décembre 2025). La dernière commande datant du 08/12/2025, soit il y a 57 jours, le seuil de réapprovisionnement est largement dépassé. Bien que les volumes de l'année précédente fussent plus élevés (750u), la tendance récente s'est stabilisée à 125u. En application de la règle de la médiane sur l'historique récent et du principe de précaution face à un cycle dépassé, une commande de 125u est nécessaire pour couvrir les besoins immédiats.
+L'analyse du cycle de commande montre une fréquence d'environ 55 à 60 jours entre les dernières commandes (octobre à décembre). Depuis la dernière commande du 08/12/2025, 58 jours se sont écoulés, ce qui dépasse le seuil de 70% du cycle moyen. Un risque de rupture est identifié pour l'horizon des 30 prochains jours. Concernant la quantité, bien que l'historique N-1 montre des volumes de 750u, les commandes les plus récentes (octobre et décembre 2025) se sont stabilisées à 125u. Conformément à la règle de privilégier la médiane récente et de respecter les tendances à la baisse, la quantité retenue est de 125u.
 
 **Baseline Quantity:** 125
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -143,7 +143,7 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 55 jours
 
 ### Configuration
 
-- **Reference Date:** 2026-02-03 00:00:00
+- **Reference Date:** 2026-02-04 00:00:00
 - **Replenishment Threshold:** 30 days
 - **MOQ Minimum:** 300€
 - **Mode:** TEST (skip Odoo)
@@ -156,14 +156,14 @@ L'analyse de l'historique récent montre un cycle de commande d'environ 55 jours
 ### LLM Usage
 
 - **Calls:** 3
-- **Tokens:** 3670
+- **Tokens:** 3702
 
 ### Performance
 
-- **Execution Time:** 11.8s
+- **Execution Time:** 6.2s
 
 </details>
 
 ---
 
-*Report auto-generated on 2/3/2026, 6:07:55 PM*
+*Report auto-generated on 2/4/2026, 7:34:49 AM*

@@ -2,35 +2,35 @@
 
 **Client:** 100% Liégeois (ID: 81)
 **Email:** hello@100lg.be
-**Analysis Date:** 2/3/2026, 6:07:51 PM
+**Analysis Date:** 2/4/2026, 7:34:43 AM
 **Replenishment Threshold:** 30 days
 
 ## Summary
 
-- **Core Products:** 7 (1314.80€ excl. tax)
+- **Core Products:** 7 (857.10€ excl. tax)
 - **Optional Products:** 1 (35.20€ excl. tax)
-- **Total:** 1350.00€ excl. tax
+- **Total:** 892.30€ excl. tax
 
 ---
 
 ## PHASE 2.5 - PRICING + MOQ
 
-**Initial Amount:** 1350.00€
+**Initial Amount:** 892.30€
 **Required MOQ:** 300.00€
 **Status:** OK
 
 | Product | Qty | Price | Subtotal | Summary |
 |---------|----:|------:|---------:|---------|
-| [REB02] ReBEL chips premium & bio - p... | 8 | 17.70€ | 141.60€ | Risque rupture (50j sans commande). Médiane: 8u. |
-| [REB03] ReBEL chips premium & bio - p... | 8 | 17.70€ | 141.60€ | Cycle dépassé (50j), risque de rupture imminent. |
-| [REB08] ReBEL chips premium & bio - p... | 6 | 17.70€ | 106.20€ | Risque rupture (50j sans commande). Médiane: 6u. |
-| [REB01] ReBEL chips premium & bio - s... | 10 | 17.70€ | 177.00€ | Risque de rupture (cycle > 50j), réappro de 10u. |
-| [REB06] REB chips bio - paprika fumé 35g | 26 | 17.60€ | 457.60€ | Réapprovisionnement de précaution (cycle > 60j) |
-| [REB04] ReBEL chips premium & bio - t... | 15 | 17.70€ | 265.50€ | Risque de rupture (63j sans commande). Médiane 15u. |
-| [REB11] ReBEL chips premium & bio - t... | 1 | 25.30€ | 25.30€ | Réapprovisionnement de précaution (1u) car cycle irrégulier. |
-| [REB05] REB chips bio - sel de mer 35g | 2 | 17.60€ | 35.20€ | Réapprovisionnement de précaution (63j sans commande) |
+| [REB02] ReBEL chips premium & bio - p... | 8 | 17.70€ | 141.60€ | Risque de rupture (51j sans commande). Médiane 8u. |
+| [REB03] ReBEL chips premium & bio - p... | 7 | 17.70€ | 123.90€ | Cycle dépassé (51j), réappro de précaution. |
+| [REB08] ReBEL chips premium & bio - p... | 6 | 17.70€ | 106.20€ | Risque rupture (51j sans commande). Médiane 6u. |
+| [REB01] ReBEL chips premium & bio - s... | 10 | 17.70€ | 177.00€ | Cycle de 48j dépassé, réapprovisionnement de 10u. |
+| [REB06] REB chips bio - paprika fumé 35g | 1 | 17.60€ | 17.60€ | Réapprovisionnement de précaution (64j d'écart). |
+| [REB04] ReBEL chips premium & bio - t... | 15 | 17.70€ | 265.50€ | Risque rupture (64j sans commande). Médiane: 15u. |
+| [REB11] ReBEL chips premium & bio - t... | 1 | 25.30€ | 25.30€ | Rupture probable, réappro de précaution (1u). |
+| [REB05] REB chips bio - sel de mer 35g | 2 | 17.60€ | 35.20€ | Réapprovisionnement de précaution (64j sans commande) |
 
-**Total: 1350.00€**
+**Total: 892.30€**
 
 ---
 
@@ -41,10 +41,10 @@
 | Product | Qty | Unit Price | Subtotal | Confidence |
 |---------|-----|------------|----------|------------|
 | [REB02] ReBEL chips premium & bio - paprika fumé 125g | 8 TU10 | 17.70€ | 141.60€ | 🟢 High |
-| [REB03] ReBEL chips premium & bio - poivre noir 125g | 8 TU10 | 17.70€ | 141.60€ | 🟢 High |
+| [REB03] ReBEL chips premium & bio - poivre noir 125g | 7 TU10 | 17.70€ | 123.90€ | 🟢 High |
 | [REB08] ReBEL chips premium & bio - piment citron 125g | 6 TU10 | 17.70€ | 106.20€ | 🟢 High |
 | [REB01] ReBEL chips premium & bio - sel de mer 125g | 10 TU10 | 17.70€ | 177.00€ | 🟢 High |
-| [REB06] REB chips bio - paprika fumé 35g | 26 TU20 | 17.60€ | 457.60€ | 🟡 Medium |
+| [REB06] REB chips bio - paprika fumé 35g | 1 TU20 | 17.60€ | 17.60€ | 🟡 Medium |
 | [REB04] ReBEL chips premium & bio - thym/romarin125g | 15 TU10 | 17.70€ | 265.50€ | 🟢 High |
 | [REB11] ReBEL chips premium & bio - truffes 125g | 1 TU10 | 25.30€ | 25.30€ | 🟢 High |
 
@@ -60,11 +60,11 @@
 
 ### LLM Prediction
 
-**Summary:** Risque rupture (50j sans commande). Médiane: 8u.
+**Summary:** Risque de rupture (51j sans commande). Médiane 8u.
 
 **Reasoning:**
 
-L'analyse de l'historique récent montre un cycle de commande moyen d'environ 24 jours (entre fin octobre et mi-décembre). La dernière commande datant du 15 décembre 2025, soit il y a 50 jours, le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe un risque de rupture imminent ou une consommation déjà effectuée. En appliquant la règle de la médiane sur les quantités récentes (8, 2, 8), la valeur centrale est 8. Bien que le doute entre 2 et 8 pourrait suggérer la valeur basse, le volume de 8u est récurrent dans l'historique, justifiant ce choix pour couvrir le besoin B2B.
+L'analyse du cycle de commande montre des intervalles de 35 et 13 jours, avec une dernière commande effectuée il y a 51 jours (15/12/2025). Ce délai dépasse largement le cycle moyen constaté, indiquant un risque de rupture imminent ou déjà avéré dans l'horizon des 30 jours. En application du principe de précaution B2B, un réapprovisionnement est nécessaire. La quantité est basée sur la médiane des commandes significatives (8u), excluant la commande isolée de 2u pour maintenir le niveau de stock habituel.
 
 **Baseline Quantity:** 8
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -82,24 +82,24 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 24
 </details>
 
 <details>
-<summary><strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - 8 TU10 (141.60€)</summary>
+<summary><strong>[REB03] ReBEL chips premium & bio - poivre noir 125g</strong> - 7 TU10 (123.90€)</summary>
 
-**Recommended Quantity:** 8 TU10
+**Recommended Quantity:** 7 TU10
 **Source:** LLM
 **Unit Price:** 17.70€
-**Subtotal:** 141.60€
+**Subtotal:** 123.90€
 
 **Confidence:** 🟢 High (6 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Cycle dépassé (50j), risque de rupture imminent.
+**Summary:** Cycle dépassé (51j), réappro de précaution.
 
 **Reasoning:**
 
-ÉTAPE 1 : Le cycle moyen entre les deux dernières commandes est de 48 jours. La dernière commande date du 15 décembre 2025, soit 50 jours avant la date actuelle. Le seuil de réapprovisionnement est de 30 jours. Le délai depuis la dernière commande dépasse déjà le cycle habituel, le risque de rupture est donc imminent. ÉTAPE 2 : L'historique récent présente deux valeurs (10u et 7u). La médiane se situe à 8,5u. En application de la règle de prudence B2B privilégiant la valeur la plus basse en cas de doute, la quantité retenue est de 8 unités.
+La dernière commande remonte au 15 décembre 2025, soit 51 jours. L'intervalle entre les deux commandes précédentes était de 48 jours. Nous avons donc dépassé 100% du cycle moyen, ce qui indique un risque de rupture imminent ou une rupture déjà effective. En application du principe de précaution B2B, un réapprovisionnement est nécessaire. Pour la quantité, la médiane entre 10u et 7u est de 8.5u, mais selon la règle de choisir la valeur la plus basse en cas de doute pour éviter le surstockage, nous retenons 7u.
 
-**Baseline Quantity:** 8
+**Baseline Quantity:** 7
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (5 recent orders)
@@ -126,11 +126,11 @@ L'analyse de l'historique récent montre un cycle de commande moyen d'environ 24
 
 ### LLM Prediction
 
-**Summary:** Risque rupture (50j sans commande). Médiane: 6u.
+**Summary:** Risque rupture (51j sans commande). Médiane 6u.
 
 **Reasoning:**
 
-L'analyse du cycle de commande montre des intervalles de 35 et 13 jours, soit une moyenne de 24 jours. La dernière commande remonte au 15 décembre, soit 50 jours avant la date actuelle (03 février). Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande déjà due. En suivant la règle de précaution B2B, un besoin est détecté. Pour la quantité, l'historique récent présente les valeurs 1, 6 et 8. La médiane de ces commandes est de 6 unités.
+L'analyse du cycle de commande montre des intervalles de 35 et 13 jours, avec une dernière commande effectuée il y a 51 jours (15/12/2025). Ce délai dépasse largement le cycle moyen et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent ou une commande due. En appliquant la règle de la médiane sur les quantités récentes (1, 6, 8), la valeur centrale est de 6 unités. Bien qu'il y ait eu une commande isolée de 1u, le volume habituel se situe entre 6 et 8u. Conformément au principe de précaution B2B et à la sélection de la médiane, une commande de 6 unités est préconisée.
 
 **Baseline Quantity:** 6
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -159,11 +159,11 @@ L'analyse du cycle de commande montre des intervalles de 35 et 13 jours, soit un
 
 ### LLM Prediction
 
-**Summary:** Risque de rupture (cycle > 50j), réappro de 10u.
+**Summary:** Cycle de 48j dépassé, réapprovisionnement de 10u.
 
 **Reasoning:**
 
-L'analyse du cycle de commande montre un intervalle de 48 jours entre les deux dernières commandes. La dernière commande datant du 15 décembre 2025 (il y a 50 jours), nous avons dépassé le cycle moyen, ce qui indique un risque de rupture imminent selon le principe de précaution B2B (seuil de 70% du cycle largement atteint). Pour la quantité, bien qu'une commande de 30u ait été enregistrée, la commande la plus récente est de 10u. En suivant la règle de la médiane et de la prudence en cas de doute entre deux valeurs, la quantité de 10u est retenue pour éviter le surstockage tout en couvrant le besoin.
+La dernière commande remonte au 15 décembre 2025, soit 51 jours. L'intervalle entre les deux commandes précédentes était de 48 jours. Nous avons donc dépassé le cycle moyen de rotation, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement dans l'horizon des 30 jours (Replenishment Threshold Days). En suivant la règle de la médiane des quantités récentes (10u et 30u) et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 10 unités.
 
 **Baseline Quantity:** 10
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -181,24 +181,24 @@ L'analyse du cycle de commande montre un intervalle de 48 jours entre les deux d
 </details>
 
 <details>
-<summary><strong>[REB06] REB chips bio - paprika fumé 35g</strong> - 26 TU20 (457.60€)</summary>
+<summary><strong>[REB06] REB chips bio - paprika fumé 35g</strong> - 1 TU20 (17.60€)</summary>
 
-**Recommended Quantity:** 26 TU20
+**Recommended Quantity:** 1 TU20
 **Source:** LLM
 **Unit Price:** 17.60€
-**Subtotal:** 457.60€
+**Subtotal:** 17.60€
 
 **Confidence:** 🟡 Medium (2 historical order(s))
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (cycle > 60j)
+**Summary:** Réapprovisionnement de précaution (64j d'écart).
 
 **Reasoning:**
 
-La dernière commande remonte au 02/12/2025, soit 63 jours avant la date actuelle. Bien que le cycle soit irrégulier (une commande de 26u suivie d'une unité isolée), le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et pour éviter une rupture sur un cycle incertain, une commande est nécessaire. La quantité retenue se base sur le volume significatif historique (26u) plutôt que sur l'unité isolée qui semble être un ajustement marginal.
+L'analyse du cycle de commande montre une dernière commande le 02/12/2025, soit il y a 64 jours. Bien que la rotation soit irrégulière (une commande de 26u suivie d'une commande de 1u), le délai écoulé dépasse largement les cycles habituels de réapprovisionnement en B2B. En application du principe de précaution (Étape 1), un risque de rupture est identifié. Pour le calcul de la quantité (Étape 2), la médiane entre 26 et 1 est de 13.5, mais les règles stipulent de privilégier la valeur la plus basse en cas de doute ou de tendance incertaine pour éviter le surstockage. La dernière commande étant de 1u, nous maintenons ce volume minimal pour couvrir le besoin immédiat sans risque d'invendus.
 
-**Baseline Quantity:** 26
+**Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
 
 ### Order History (2 recent orders)
@@ -222,11 +222,11 @@ La dernière commande remonte au 02/12/2025, soit 63 jours avant la date actuell
 
 ### LLM Prediction
 
-**Summary:** Risque de rupture (63j sans commande). Médiane 15u.
+**Summary:** Risque rupture (64j sans commande). Médiane: 15u.
 
 **Reasoning:**
 
-La dernière commande remonte au 02/12/2025, soit 63 jours avant la date actuelle. Le cycle moyen entre les commandes précédentes était d'environ 35 jours. Le délai actuel dépasse largement ce cycle, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement immédiat selon le principe de précaution B2B. Pour la quantité, l'historique récent montre des volumes de 10, 15 et 40 unités. La médiane de ces commandes est de 15 unités. Conformément aux règles, nous retenons la médiane pour stabiliser le stock sans surévaluer.
+La dernière commande remonte au 02/12/2025, soit 64 jours avant la date actuelle. L'historique montre un cycle moyen d'environ 35 jours entre les commandes précédentes. Le délai actuel dépasse largement ce cycle et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent. En appliquant la règle de la médiane sur les quantités récentes (10, 15, 40), la valeur centrale est 15. Conformément au principe de précaution B2B et à la règle de choisir la quantité la plus basse en cas de doute sur une rotation irrégulière, une commande de 15 unités est préconisée.
 
 **Baseline Quantity:** 15
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -255,11 +255,11 @@ La dernière commande remonte au 02/12/2025, soit 63 jours avant la date actuell
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (1u) car cycle irrégulier.
+**Summary:** Rupture probable, réappro de précaution (1u).
 
 **Reasoning:**
 
-L'analyse du cycle de commande montre une dernière commande le 02/12/2025, soit il y a 63 jours. Bien que l'historique soit limité, le délai écoulé dépasse largement le cycle précédent (35 jours). En application du principe de précaution B2B (risque de rupture imminent ou cycle irrégulier), un réapprovisionnement est nécessaire. Pour la quantité, on observe une forte baisse entre la première commande (8u) et la plus récente (1u). Conformément à la règle de prudence sur les tendances à la baisse et le choix de la valeur la plus basse en cas de doute sur une faible rotation, la quantité retenue est de 1 unité.
+L'analyse de l'historique montre deux commandes espacées de 35 jours (28/10 au 02/12). Depuis la dernière commande du 02/12/2025, 64 jours se sont écoulés, ce qui dépasse largement le cycle précédent et l'horizon de réapprovisionnement de 30 jours. Bien qu'une commande de 8 unités ait eu lieu, la commande la plus récente n'était que de 1 unité. En application du principe de précaution B2B (risque de rupture) combiné à la règle de la médiane/valeur basse en cas de doute sur la rotation, une commande de 1 unité est préconisée pour couvrir le besoin sans surstocker un produit à faible rotation.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -299,11 +299,11 @@ L'analyse du cycle de commande montre une dernière commande le 02/12/2025, soit
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (63j sans commande)
+**Summary:** Réapprovisionnement de précaution (64j sans commande)
 
 **Reasoning:**
 
-La dernière commande remonte au 02/12/2025, soit il y a 63 jours. Bien que l'historique soit limité à une seule commande de 2 unités, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la seule valeur historique disponible (2 unités), conformément à la règle de maintien pour les faibles rotations.
+La dernière commande remonte au 02/12/2025, soit 64 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité est basée sur la médiane de l'historique récent (2 unités).
 
 **Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -321,7 +321,7 @@ La dernière commande remonte au 02/12/2025, soit il y a 63 jours. Bien que l'hi
 
 ### Configuration
 
-- **Reference Date:** 2026-02-03 00:00:00
+- **Reference Date:** 2026-02-04 00:00:00
 - **Replenishment Threshold:** 30 days
 - **MOQ Minimum:** 300€
 - **Mode:** TEST (skip Odoo)
@@ -334,14 +334,14 @@ La dernière commande remonte au 02/12/2025, soit il y a 63 jours. Bien que l'hi
 ### LLM Usage
 
 - **Calls:** 8
-- **Tokens:** 8830
+- **Tokens:** 8852
 
 ### Performance
 
-- **Execution Time:** 7.9s
+- **Execution Time:** 3.7s
 
 </details>
 
 ---
 
-*Report auto-generated on 2/3/2026, 6:07:51 PM*
+*Report auto-generated on 2/4/2026, 7:34:43 AM*
