@@ -2,7 +2,7 @@
 
 **Client:** ANAMAC, UNIPESSOAL, LDA (ID: 73485)
 **Email:** info@anamac.com
-**Analysis Date:** 2/4/2026, 7:36:31 AM
+**Analysis Date:** 2/4/2026, 8:35:30 AM
 **Replenishment Threshold:** 30 days
 
 ## Summary
@@ -10,6 +10,7 @@
 - **Core Products:** 7 (1091.76€ excl. tax)
 - **Optional Products:** 1 (91.44€ excl. tax)
 - **Total:** 1183.20€ excl. tax
+- **Odoo Quote:** S41723 (ID: 93602)
 
 ---
 
@@ -23,7 +24,7 @@
 |---------|----:|------:|---------:|---------|
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | 18.36€ | 146.88€ | Réapprovisionnement de précaution (78j sans commande) |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 12 | 15.24€ | 182.88€ | Réapprovisionnement de précaution (78j sans commande) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 8 | 15.24€ | 121.92€ | Réapprovisionnement de précaution (78j sans commande) |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 8 | 15.24€ | 121.92€ | Réapprovisionnement de précaution (8u) après 78j. |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 12 | 15.24€ | 182.88€ | Réapprovisionnement de précaution (78j sans commande) |
 | [JF020] JF SAUCE AIOLI 250ML WECK | 8 | 15.24€ | 121.92€ | Réapprovisionnement de précaution (78j sans commande) |
 | [JF022] JF MOUTARDE MIEL 250ML WECK | 10 | 15.24€ | 152.40€ | Réapprovisionnement de précaution (78j sans commande) |
@@ -31,6 +32,44 @@
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 6 | 15.24€ | 91.44€ | Réapprovisionnement de précaution (78j sans commande) |
 
 **Total: 1183.20€**
+
+---
+
+## PHASE 3 - ODOO QUOTE
+
+**Quote:** S41723 (ID: 93602)
+**Status:** draft
+**Created:** 2/4/2026, 7:35:28 AM
+
+### Core Products (7)
+
+| Product | Qty | Price | Subtotal | Summary |
+|---------|----:|------:|---------:|---------|
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 8 | 18.36€ | 146.88€ | Réapprovisionnement de précaution (78j sans commande) |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 12 | 15.24€ | 182.88€ | Réapprovisionnement de précaution (78j sans commande) |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 8 | 15.24€ | 121.92€ | Réapprovisionnement de précaution (8u) après 78j. |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 12 | 15.24€ | 182.88€ | Réapprovisionnement de précaution (78j sans commande) |
+| [JF020] JF SAUCE AIOLI 250ML WECK | 8 | 15.24€ | 121.92€ | Réapprovisionnement de précaution (78j sans commande) |
+| [JF022] JF MOUTARDE MIEL 250ML WECK | 10 | 15.24€ | 152.40€ | Réapprovisionnement de précaution (78j sans commande) |
+| [JF023] JF MOUTARDE DOUCE 250ML WECK | 12 | 15.24€ | 182.88€ | Réapprovisionnement de précaution (78j sans commande) |
+
+### Optional Products (1)
+
+| Product | Qty | Price | Subtotal | Summary |
+|---------|----:|------:|---------:|---------|
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 6 | 15.24€ | 91.44€ | Réapprovisionnement de précaution (78j sans commande) |
+
+**Total HT:** 1091.76€
+**Taxes:** 0.00€
+**Total TTC:** 1091.76€
+
+### Phase 2.5 vs Odoo Comparison
+
+| | Phase 2.5 | Odoo | Difference |
+|---------|----------:|-----:|-----------:|
+| **Core** | 1091.76€ | 1091.76€ | +0.00€ |
+| **Optional** | 91.44€ | 91.44€ | +0.00€ |
+| **TOTAL** | 1183.20€ | 1183.20€ | +0.00€ (0.0%) |
 
 ---
 
@@ -64,7 +103,7 @@
 
 **Reasoning:**
 
-La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'incertitude du cycle, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité est fixée à 8 unités, correspondant à la seule valeur historique connue (médiane par défaut), afin de reconstituer le stock initialement observé.
+La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande récente de 8 unités, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (Étape 1), un risque de rupture est identifié car le besoin de renouvellement est imminent ou déjà présent. Conformément à l'Étape 2, la quantité est fixée à 8 unités, correspondant à la valeur de la dernière commande connue (médiane sur échantillon unique), afin de maintenir le stock sans surévaluer.
 
 **Baseline Quantity:** 8
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -120,11 +159,11 @@ La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date a
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (78j sans commande)
+**Summary:** Réapprovisionnement de précaution (8u) après 78j.
 
 **Reasoning:**
 
-La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'absence de cycle établi, un risque de rupture est identifié. La quantité retenue correspond à la seule valeur historique disponible (8u), conformément à la règle de maintien des volumes pour les rotations régulières ou uniques.
+La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente (8 unités), le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (Étape 1), un risque de rupture est identifié car le stock initial est probablement épuisé ou proche de l'être. Pour la quantité (Étape 2), on se base sur l'unique point de donnée disponible qui représente la consommation réelle constatée, soit 8 unités.
 
 **Baseline Quantity:** 8
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -184,7 +223,7 @@ La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date a
 
 **Reasoning:**
 
-La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente enregistrée (8 unités), le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (Étape 1), l'absence de visibilité sur la rotation régulière impose de prévoir une commande pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (8 unités), conformément à la règle de maintien des volumes sur rotation faible ou irrégulière.
+La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la dernière commande connue (8 unités), n'ayant pas d'autre historique pour calculer une médiane.
 
 **Baseline Quantity:** 8
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -214,7 +253,7 @@ La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date a
 
 **Reasoning:**
 
-La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'absence de données sur la rotation longue, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité retenue correspond à la dernière commande connue (10u), conformément à la règle de maintien des volumes en cas de rotation régulière ou unique.
+La dernière commande remonte au 18 novembre 2025, soit il y a 78 jours. Bien qu'il n'y ait qu'une seule commande récente de 10 unités, le délai écoulé dépasse largement les cycles de réapprovisionnement standards en B2B. En l'absence d'historique plus complet pour établir une fréquence précise, le principe de précaution s'applique pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (10u), conformément à la règle de maintien des volumes sur rotation faible ou irrégulière.
 
 **Baseline Quantity:** 10
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -306,24 +345,25 @@ La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date a
 - **Reference Date:** 2026-02-04 00:00:00
 - **Replenishment Threshold:** 30 days
 - **MOQ Minimum:** 300€
-- **Mode:** TEST (skip Odoo)
+- **Mode:** PRODUCTION
 
 ### Processing Phases
 
 - **Stock Analysis:** 8 at-risk products detected
 - **Proposal Final:** 8 products after pricing
+- **Quote Generation:** Quote S41723 created
 
 ### LLM Usage
 
 - **Calls:** 8
-- **Tokens:** 8491
+- **Tokens:** 8504
 
 ### Performance
 
-- **Execution Time:** 19.5s
+- **Execution Time:** 18.6s
 
 </details>
 
 ---
 
-*Report auto-generated on 2/4/2026, 7:36:31 AM*
+*Report auto-generated on 2/4/2026, 8:35:30 AM*

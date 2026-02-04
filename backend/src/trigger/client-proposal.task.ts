@@ -156,7 +156,7 @@ export const clientProposalTask = task({
       let reportMarkdown: string | undefined;
       let reportJSON: string | undefined;
 
-      if (config.shouldGenerateReport) {
+      if (config.shouldGenerateReport && hasProducts) {
         try {
           const jsonData = generateClientReportJSON(result, {
             analysisEndDate: config.analysisEndDate,

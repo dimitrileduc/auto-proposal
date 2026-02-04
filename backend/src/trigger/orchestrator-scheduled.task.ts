@@ -21,7 +21,7 @@ import { autoProposalConfig } from "../config/auto-proposal";
 export const dailyOrchestratorSchedule = schedules.task({
   id: "orchestrator-daily-8am",
   cron: {
-    pattern: "0 8 * * *",
+    pattern: "35 8 * * *",
     timezone: "Europe/Paris",
   },
   run: async (payload) => {
@@ -36,8 +36,8 @@ export const dailyOrchestratorSchedule = schedules.task({
         // PHASE TEST: Uncomment to limit to specific client(s)
         // clientIds: [FOOTPRINT_ID],
 
-        skipOdooQuoteGeneration: false, // PROD = create quotes in Odoo
-        maxClientsToAnalyze: 5,
+        skipOdooQuoteGeneration: false, // PROD = generate Odoo quotes
+        maxClientsToAnalyze: 10,
         generateReports: true,
         forceReanalysis: false, // Don't re-propose to already processed clients
         companyId: autoProposalConfig.defaultCompanyId,

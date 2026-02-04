@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-02-04T06:36:31.229Z"
+    "generatedAt": "2026-02-04T07:35:30.382Z"
   },
   "client": {
     "id": 73485,
@@ -12,22 +12,93 @@
     "analysisEndDate": "2026-02-04 00:00:00",
     "replenishmentThreshold": 30,
     "moqMinimum": 300,
-    "skipOdooQuoteGeneration": true
+    "skipOdooQuoteGeneration": false
   },
   "phases": {
     "stockAnalysis": {
       "products_count": 8,
       "llm_usage": {
         "calls": 8,
-        "promptTokens": 7283,
-        "completionTokens": 1208,
-        "totalTokens": 8491
+        "promptTokens": 7291,
+        "completionTokens": 1213,
+        "totalTokens": 8504
       }
     },
     "proposalFinal": {
       "products_count": 8,
       "total_amount": 1183.1999999999998,
       "moq_adjustment_applied": false
+    },
+    "quote": {
+      "quote_id": 93602,
+      "quote_name": "S41723",
+      "quote_state": "draft",
+      "amount_total_ht": 1091.76,
+      "amount_total_ttc": 1091.76,
+      "tax_total": 0,
+      "created_at": "2026-02-04 07:35:28",
+      "lines_count": 7,
+      "optional_products_count": 1,
+      "order_lines": [
+        {
+          "product_id": 16745,
+          "product_name": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+          "quantity": 8,
+          "price_unit": 18.36,
+          "subtotal_ht": 146.88
+        },
+        {
+          "product_id": 16749,
+          "product_name": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+          "quantity": 12,
+          "price_unit": 15.24,
+          "subtotal_ht": 182.88
+        },
+        {
+          "product_id": 16780,
+          "product_name": "[JF009] JF SAUCE TARTARE 250ML WECK",
+          "quantity": 8,
+          "price_unit": 15.24,
+          "subtotal_ht": 121.92
+        },
+        {
+          "product_id": 16771,
+          "product_name": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+          "quantity": 12,
+          "price_unit": 15.24,
+          "subtotal_ht": 182.88
+        },
+        {
+          "product_id": 16761,
+          "product_name": "[JF020] JF SAUCE AIOLI 250ML WECK",
+          "quantity": 8,
+          "price_unit": 15.24,
+          "subtotal_ht": 121.92
+        },
+        {
+          "product_id": 16755,
+          "product_name": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+          "quantity": 10,
+          "price_unit": 15.24,
+          "subtotal_ht": 152.4
+        },
+        {
+          "product_id": 16754,
+          "product_name": "[JF023] JF MOUTARDE DOUCE 250ML WECK",
+          "quantity": 12,
+          "price_unit": 15.24,
+          "subtotal_ht": 182.88
+        }
+      ],
+      "optional_products": [
+        {
+          "product_id": 16747,
+          "product_name": "[JF003] JF MAYONNAIS WASABI 250ML WECK",
+          "quantity": 6,
+          "price_unit": 15.24,
+          "subtotal_ht": 91.44
+        }
+      ]
     }
   },
   "products": {
@@ -44,7 +115,7 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'incertitude du cycle, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité est fixée à 8 unités, correspondant à la seule valeur historique connue (médiane par défaut), afin de reconstituer le stock initialement observé.",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande récente de 8 unités, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (Étape 1), un risque de rupture est identifié car le besoin de renouvellement est imminent ou déjà présent. Conformément à l'Étape 2, la quantité est fixée à 8 unités, correspondant à la valeur de la dernière commande connue (médiane sur échantillon unique), afin de maintenir le stock sans surévaluer.",
           "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 8,
           "model": "google/gemini-3-flash-preview",
@@ -106,8 +177,8 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'absence de cycle établi, un risque de rupture est identifié. La quantité retenue correspond à la seule valeur historique disponible (8u), conformément à la règle de maintien des volumes pour les rotations régulières ou uniques.",
-          "summary": "Réapprovisionnement de précaution (78j sans commande)",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente (8 unités), le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (Étape 1), un risque de rupture est identifié car le stock initial est probablement épuisé ou proche de l'être. Pour la quantité (Étape 2), on se base sur l'unique point de donnée disponible qui représente la consommation réelle constatée, soit 8 unités.",
+          "summary": "Réapprovisionnement de précaution (8u) après 78j.",
           "baseline_quantity": 8,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -168,7 +239,7 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente enregistrée (8 unités), le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (Étape 1), l'absence de visibilité sur la rotation régulière impose de prévoir une commande pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (8 unités), conformément à la règle de maintien des volumes sur rotation faible ou irrégulière.",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la dernière commande connue (8 unités), n'ayant pas d'autre historique pour calculer une médiane.",
           "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 8,
           "model": "google/gemini-3-flash-preview",
@@ -199,7 +270,7 @@
         "confidence": "medium",
         "order_count": 2,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit 78 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (Étape 1) et face à l'absence de données sur la rotation longue, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité retenue correspond à la dernière commande connue (10u), conformément à la règle de maintien des volumes en cas de rotation régulière ou unique.",
+          "reasoning": "La dernière commande remonte au 18 novembre 2025, soit il y a 78 jours. Bien qu'il n'y ait qu'une seule commande récente de 10 unités, le délai écoulé dépasse largement les cycles de réapprovisionnement standards en B2B. En l'absence d'historique plus complet pour établir une fréquence précise, le principe de précaution s'applique pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (10u), conformément à la règle de maintien des volumes sur rotation faible ou irrégulière.",
           "summary": "Réapprovisionnement de précaution (78j sans commande)",
           "baseline_quantity": 10,
           "model": "google/gemini-3-flash-preview",
@@ -285,7 +356,9 @@
     "base_amount": 1091.7599999999998,
     "optional_amount": 91.44,
     "total_amount": 1183.1999999999998,
-    "moq_adjusted": false
+    "moq_adjusted": false,
+    "quote_name": "S41723",
+    "quote_id": 93602
   },
-  "execution_time_ms": 19535
+  "execution_time_ms": 18640
 }

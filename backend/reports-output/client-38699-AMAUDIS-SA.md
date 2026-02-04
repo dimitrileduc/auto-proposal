@@ -2,7 +2,7 @@
 
 **Client:** AMAUDIS SA (ID: 38699)
 **Email:** proxyfleron@iba-invest.be
-**Analysis Date:** 2/4/2026, 7:35:00 AM
+**Analysis Date:** 2/4/2026, 8:35:45 AM
 **Replenishment Threshold:** 30 days
 
 ## Summary
@@ -10,6 +10,7 @@
 - **Core Products:** 22 (544.50€ excl. tax)
 - **Optional Products:** 2 (52.20€ excl. tax)
 - **Total:** 596.70€ excl. tax
+- **Odoo Quote:** S41724 (ID: 93603)
 
 ---
 
@@ -25,28 +26,82 @@
 | [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 19.50€ | 19.50€ | Cycle de 60j dépassé, réappro de précaution (1u). |
 | [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 21.00€ | 21.00€ | Réapprovisionnement de précaution (rotation faible) |
 | [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle atteint) |
-| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (62j écoulés). |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 19.50€ | 19.50€ | Cycle atteint (62j), réapprovisionnement de 1u. |
 | [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (62j sans commande) |
 | [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle atteint) |
 | [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 23.40€ | 23.40€ | Réapprovisionnement de précaution (cycle atteint) |
 | [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 25.80€ | 51.60€ | Cycle dépassé (62j), réapprovisionnement de 2u. |
 | [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 25.80€ | 25.80€ | Réapprovisionnement de précaution (rotation lente) |
-| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle incertain) |
+| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 19.50€ | 19.50€ | Réappro de précaution (62j depuis dernier achat) |
 | [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle incertain) |
 | [JF032] JF SAUCE LAPIN 380GX6 | 2 | 13.50€ | 27.00€ | Cycle dépassé (62j), réapprovisionnement de 2u. |
-| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 13.50€ | 27.00€ | Cycle dépassé (62j), risque de rupture imminent. |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 13.50€ | 27.00€ | Cycle atteint (62j), réappro de précaution. |
 | [JF029] JF VOL AU VENT BOCAL 400G | 2 | 15.00€ | 30.00€ | Cycle dépassé (62j), risque de rupture détecté. |
 | [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | 30.00€ | 30.00€ | Réapprovisionnement de précaution (rotation faible) |
 | [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (1u) rotation lente. |
 | [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle dépassé) |
-| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | 19.50€ | 19.50€ | Réappro précaution : cycle dépassé, maintien 1u. |
-| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 27.00€ | 27.00€ | Réapprovisionnement de précaution (rotation lente) |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle dépassé) |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 27.00€ | 27.00€ | Réapprovisionnement de précaution (rotation faible) |
 | [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 27.00€ | 27.00€ | Réapprovisionnement de précaution (cycle long). |
 | [JF037] JF BBQ SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (rotation lente) |
 | [JF041] JF MAYONNAISE SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (62j d'inactivité) |
 | [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 25.80€ | 25.80€ | Réappro de précaution (longue période sans achat) |
 
 **Total: 596.70€**
+
+---
+
+## PHASE 3 - ODOO QUOTE
+
+**Quote:** S41724 (ID: 93603)
+**Status:** draft
+**Created:** 2/4/2026, 7:35:30 AM
+
+### Core Products (22)
+
+| Product | Qty | Price | Subtotal | Summary |
+|---------|----:|------:|---------:|---------|
+| [JF020] JF SAUCE AIOLI 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (médiane 1u). |
+| [JF015] JF SAUCE ANDALOUSE 250ML WECK | 1 | 19.50€ | 19.50€ | Cycle de 60j dépassé, réappro de précaution (1u). |
+| [JF019] JF SAUCE AIOLI PESTO 250M WECK | 1 | 21.00€ | 21.00€ | Réapprovisionnement de précaution (rotation faible) |
+| [JF017] JF SAUCE COCKTAIL 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle atteint) |
+| [JF009] JF SAUCE TARTARE 250ML WECK | 1 | 19.50€ | 19.50€ | Cycle atteint (62j), réapprovisionnement de 1u. |
+| [JF038] JF KETCHUP SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (62j sans commande) |
+| [JF005] JF MAYONNAISE OEUFS 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle atteint) |
+| [JF001] JF MAYONNAI TRUFFES 250ML WECK | 1 | 23.40€ | 23.40€ | Réapprovisionnement de précaution (cycle atteint) |
+| [JF008] JF MAYONNA DU CHEF 470 ML WECK | 2 | 25.80€ | 51.60€ | Cycle dépassé (62j), réapprovisionnement de 2u. |
+| [JF014] JF SAUCE BEARNAISE 470ML WECK | 1 | 25.80€ | 25.80€ | Réapprovisionnement de précaution (rotation lente) |
+| [JF054] JF LEMON MAYONNAISE 250ml Weck | 1 | 19.50€ | 19.50€ | Réappro de précaution (62j depuis dernier achat) |
+| [JF055] JF HONEY MUSTARD MAYO 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle incertain) |
+| [JF032] JF SAUCE LAPIN 380GX6 | 2 | 13.50€ | 27.00€ | Cycle dépassé (62j), réapprovisionnement de 2u. |
+| [JF031] JF SAUCE LIEGEOISE 380GX6 | 2 | 13.50€ | 27.00€ | Cycle atteint (62j), réappro de précaution. |
+| [JF029] JF VOL AU VENT BOCAL 400G | 2 | 15.00€ | 30.00€ | Cycle dépassé (62j), risque de rupture détecté. |
+| [JF039] JF MAYO BARAKI SQUEEZE 300ML | 1 | 30.00€ | 30.00€ | Réapprovisionnement de précaution (rotation faible) |
+| [JF033] JF ANDALOUSE SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (1u) rotation lente. |
+| [JF003] JF MAYONNAIS WASABI 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle dépassé) |
+| [JF004] JF MAYONNAIS POIVRE 250ML WECK | 1 | 19.50€ | 19.50€ | Réapprovisionnement de précaution (cycle dépassé) |
+| [JF024] JF VINAIGRET CIBOULE WECK 200M | 1 | 27.00€ | 27.00€ | Réapprovisionnement de précaution (rotation faible) |
+| [JF025] JF VINAIGRETTE FH WECK 200ML | 1 | 27.00€ | 27.00€ | Réapprovisionnement de précaution (cycle long). |
+| [JF037] JF BBQ SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (rotation lente) |
+
+### Optional Products (2)
+
+| Product | Qty | Price | Subtotal | Summary |
+|---------|----:|------:|---------:|---------|
+| [JF041] JF MAYONNAISE SQUEEZE 300ML | 1 | 26.40€ | 26.40€ | Réapprovisionnement de précaution (62j d'inactivité) |
+| [JF011] JF SAUCE TARTARE 470ML WECK | 1 | 25.80€ | 25.80€ | Réappro de précaution (longue période sans achat) |
+
+**Total HT:** 544.50€
+**Taxes:** 32.66€
+**Total TTC:** 577.16€
+
+### Phase 2.5 vs Odoo Comparison
+
+| | Phase 2.5 | Odoo | Difference |
+|---------|----------:|-----:|-----------:|
+| **Core** | 544.50€ | 544.50€ | +0.00€ |
+| **Optional** | 52.20€ | 52.20€ | +0.00€ |
+| **TOTAL** | 596.70€ | 596.70€ | +0.00€ (0.0%) |
 
 ---
 
@@ -221,11 +276,11 @@ La dernière commande remonte au 04/12/2025, soit 62 jours. Bien que la rotation
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (62j écoulés).
+**Summary:** Cycle atteint (62j), réapprovisionnement de 1u.
 
 **Reasoning:**
 
-La dernière commande remonte au 04/12/2025, soit 62 jours avant la date actuelle. Bien que le cycle historique soit irrégulier, le délai écoulé dépasse largement la fréquence habituelle de réapprovisionnement observée (environ tous les 50-60 jours). En application du principe de précaution B2B et pour éviter une rupture de stock prolongée, un besoin est détecté. La quantité est fixée à 1 unité, correspondant à la médiane stricte des commandes récentes et à la tendance de consommation stable sur ce produit à faible rotation.
+La dernière commande remonte au 04/12/2025, soit 62 jours avant la date actuelle. L'historique montre un cycle de commande moyen d'environ 50 à 60 jours (ex: entre oct et déc 2025, ou oct et nov 2024). Le délai actuel dépasse le cycle habituel, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement selon le principe de précaution B2B. La quantité est basée sur la médiane constante des commandes récentes (1u).
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -415,11 +470,11 @@ La dernière commande remonte au 04/12/2025, soit 62 jours. Bien que l'historiqu
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (cycle incertain)
+**Summary:** Réappro de précaution (62j depuis dernier achat)
 
 **Reasoning:**
 
-La dernière commande remonte au 04/12/2025, soit il y a 62 jours. Bien que l'historique soit limité à une seule commande récente de 1 unité, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1 unité), conformément à la règle de maintien pour les rotations faibles.
+La dernière commande remonte au 04/12/2025, soit il y a 62 jours. Bien que l'historique soit limité à une seule unité, le délai écoulé dépasse largement un cycle standard de réapprovisionnement mensuel en B2B. En application du principe de précaution (Étape 1) et face à l'incertitude du cycle, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité retenue correspond à la médiane de l'historique récent (1u), conformément à la règle de maintien des rotations faibles.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -480,7 +535,7 @@ La dernière commande remonte au 04/12/2025, soit il y a 62 jours. Bien que l'hi
 
 **Reasoning:**
 
-La dernière commande remonte au 04/12/2025, soit il y a 62 jours. L'historique montre un cycle de commande moyen d'environ 50 à 60 jours (ex: oct-déc 2025, oct-nov 2024). Nous avons dépassé l'intervalle habituel, ce qui indique un risque de rupture imminent dans l'horizon des 30 jours (Replenishment Threshold). En suivant le principe de précaution B2B, une commande est nécessaire. Pour la quantité, la médiane des commandes récentes et historiques oscille entre 1u et 2u. Conformément à la règle de maintien des volumes sur rotation régulière, la quantité de 2u est retenue.
+L'analyse de l'historique montre un cycle de commande moyen d'environ 50 à 60 jours. La dernière commande remonte au 04/12/2025, soit 62 jours avant la date actuelle (04/02/2026). Ce délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, indiquant un besoin immédiat pour éviter une rupture. Bien que le volume annuel soit faible, les commandes récentes se sont stabilisées à 2 unités. En suivant la règle de la médiane des commandes récentes (2u et 2u), la quantité préconisée est de 2 unités.
 
 **Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -509,11 +564,11 @@ La dernière commande remonte au 04/12/2025, soit il y a 62 jours. L'historique 
 
 ### LLM Prediction
 
-**Summary:** Cycle dépassé (62j), risque de rupture imminent.
+**Summary:** Cycle atteint (62j), réappro de précaution.
 
 **Reasoning:**
 
-La dernière commande remonte au 04/12/2025, soit il y a 62 jours. L'historique montre un cycle de commande moyen d'environ 50 à 60 jours (ex: oct-déc 2025, oct-nov 2024). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous avons dépassé la périodicité habituelle. La quantité historique est très stable, centrée sur une médiane de 2 unités. Conformément aux règles de précaution B2B et de stabilité des stocks, une commande de 2 unités est nécessaire.
+La dernière commande remonte au 04/12/2025, soit 62 jours. L'historique montre un cycle de commande moyen d'environ 50 à 70 jours (ex: oct-déc 2025 ou oct-nov 2024). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous dépassons le cycle habituel. La quantité est basée sur la médiane constante des commandes récentes (2 unités), excluant les variations mineures de l'année précédente.
 
 **Baseline Quantity:** 2
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -669,11 +724,11 @@ La dernière commande remonte au 13 octobre 2025, soit il y a plus de 110 jours.
 
 ### LLM Prediction
 
-**Summary:** Réappro précaution : cycle dépassé, maintien 1u.
+**Summary:** Réapprovisionnement de précaution (cycle dépassé)
 
 **Reasoning:**
 
-La dernière commande remonte à octobre 2025, soit environ 114 jours. Bien que le cycle historique soit irrégulier et de faible rotation (environ tous les 3 à 4 mois), le délai écoulé dépasse largement les intervalles habituels. En application du principe de précaution B2B et pour éviter une rupture prolongée sur un produit à faible rotation constante, un réapprovisionnement est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane stricte et constante de l'historique (toutes les commandes passées sont de 1u).
+Le produit présente une rotation très faible et irrégulière (environ une unité tous les 3 à 4 mois). La dernière commande enregistrée date du 13 octobre 2025, soit il y a plus de 110 jours. Bien que le cycle soit imprévisible, le délai écoulé dépasse largement les intervalles historiques constatés (environ 90-100 jours entre les commandes de 2024). En application du principe de précaution B2B pour éviter une rupture prolongée sur un produit à faible rotation, un réapprovisionnement est nécessaire. La quantité est fixée à 1 unité, correspondant à la médiane stricte et constante de l'historique.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -702,11 +757,11 @@ La dernière commande remonte à octobre 2025, soit environ 114 jours. Bien que 
 
 ### LLM Prediction
 
-**Summary:** Réapprovisionnement de précaution (rotation lente)
+**Summary:** Réapprovisionnement de précaution (rotation faible)
 
 **Reasoning:**
 
-La dernière commande remonte à octobre 2025, soit plus de 110 jours. Bien que la rotation soit très faible (1 unité par commande), le délai écoulé dépasse largement les cycles habituels observés. En application du principe de précaution B2B et pour éviter une rupture sur un produit à rotation lente mais constante, un réapprovisionnement est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane stricte de l'historique récent et N-1.
+ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 13 octobre 2025, soit plus de 110 jours. Bien que la rotation soit extrêmement faible (1 unité par an environ), le principe de précaution B2B s'applique car le cycle est irrégulier et le délai depuis la dernière commande est très long. ÉTAPE 2 : Estimation de la quantité. L'historique récent et N-1 montre une constante de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), on maintient la quantité de 1 unité sans augmenter.
 
 **Baseline Quantity:** 1
 **Model:** google/gemini-3-flash-preview (ax-openrouter)
@@ -864,24 +919,25 @@ La dernière commande remonte au 13 octobre 2025, soit plus de 110 jours. Bien q
 - **Reference Date:** 2026-02-04 00:00:00
 - **Replenishment Threshold:** 30 days
 - **MOQ Minimum:** 300€
-- **Mode:** TEST (skip Odoo)
+- **Mode:** PRODUCTION
 
 ### Processing Phases
 
 - **Stock Analysis:** 24 at-risk products detected
 - **Proposal Final:** 24 products after pricing
+- **Quote Generation:** Quote S41724 created
 
 ### LLM Usage
 
 - **Calls:** 24
-- **Tokens:** 26687
+- **Tokens:** 26699
 
 ### Performance
 
-- **Execution Time:** 18.6s
+- **Execution Time:** 36.2s
 
 </details>
 
 ---
 
-*Report auto-generated on 2/4/2026, 7:35:00 AM*
+*Report auto-generated on 2/4/2026, 8:35:45 AM*

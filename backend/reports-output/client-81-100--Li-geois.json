@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-02-04T06:34:43.569Z"
+    "generatedAt": "2026-02-04T07:35:25.689Z"
   },
   "client": {
     "id": 81,
@@ -12,22 +12,93 @@
     "analysisEndDate": "2026-02-04 00:00:00",
     "replenishmentThreshold": 30,
     "moqMinimum": 300,
-    "skipOdooQuoteGeneration": true
+    "skipOdooQuoteGeneration": false
   },
   "phases": {
     "stockAnalysis": {
       "products_count": 8,
       "llm_usage": {
         "calls": 8,
-        "promptTokens": 7465,
-        "completionTokens": 1387,
-        "totalTokens": 8852
+        "promptTokens": 7463,
+        "completionTokens": 1413,
+        "totalTokens": 8876
       }
     },
     "proposalFinal": {
       "products_count": 8,
       "total_amount": 892.3000000000001,
       "moq_adjustment_applied": false
+    },
+    "quote": {
+      "quote_id": 93601,
+      "quote_name": "S41722",
+      "quote_state": "draft",
+      "amount_total_ht": 857.1,
+      "amount_total_ttc": 908.53,
+      "tax_total": 51.43,
+      "created_at": "2026-02-04 07:35:23",
+      "lines_count": 7,
+      "optional_products_count": 1,
+      "order_lines": [
+        {
+          "product_id": 18349,
+          "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+          "quantity": 8,
+          "price_unit": 17.7,
+          "subtotal_ht": 141.6
+        },
+        {
+          "product_id": 18352,
+          "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+          "quantity": 7,
+          "price_unit": 17.7,
+          "subtotal_ht": 123.9
+        },
+        {
+          "product_id": 18351,
+          "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+          "quantity": 6,
+          "price_unit": 17.7,
+          "subtotal_ht": 106.2
+        },
+        {
+          "product_id": 18353,
+          "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+          "quantity": 10,
+          "price_unit": 17.7,
+          "subtotal_ht": 177
+        },
+        {
+          "product_id": 18415,
+          "product_name": "[REB06] REB chips bio - paprika fumé 35g",
+          "quantity": 1,
+          "price_unit": 17.6,
+          "subtotal_ht": 17.6
+        },
+        {
+          "product_id": 18355,
+          "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+          "quantity": 15,
+          "price_unit": 17.7,
+          "subtotal_ht": 265.5
+        },
+        {
+          "product_id": 18356,
+          "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+          "quantity": 1,
+          "price_unit": 25.3,
+          "subtotal_ht": 25.3
+        }
+      ],
+      "optional_products": [
+        {
+          "product_id": 18416,
+          "product_name": "[REB05] REB chips bio - sel de mer 35g",
+          "quantity": 2,
+          "price_unit": 17.6,
+          "subtotal_ht": 35.2
+        }
+      ]
     }
   },
   "products": {
@@ -182,8 +253,8 @@
         "confidence": "high",
         "order_count": 7,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 15 décembre 2025, soit 51 jours. L'intervalle entre les deux commandes précédentes était de 48 jours. Nous avons donc dépassé le cycle moyen de rotation, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement dans l'horizon des 30 jours (Replenishment Threshold Days). En suivant la règle de la médiane des quantités récentes (10u et 30u) et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 10 unités.",
-          "summary": "Cycle de 48j dépassé, réapprovisionnement de 10u.",
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 15/12/2025, soit 51 jours. L'intervalle précédent était de 48 jours. Le cycle moyen est d'environ 49 jours. 51 jours étant supérieur à 70% du cycle (34 jours) et le seuil de réapprovisionnement étant de 30 jours, le risque de rupture est imminent. ÉTAPE 2 : Estimation quantité. Les commandes récentes sont de 30u et 10u. En suivant la règle de la médiane et la consigne de choisir la valeur la plus basse en cas de doute ou de tendance incertaine pour éviter le surstock, la quantité retenue est de 10u.",
+          "summary": "Cycle de 50j atteint, réappro de précaution.",
           "baseline_quantity": 10,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -259,8 +330,8 @@
         "confidence": "high",
         "order_count": 8,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 02/12/2025, soit 64 jours avant la date actuelle. L'historique montre un cycle moyen d'environ 35 jours entre les commandes précédentes. Le délai actuel dépasse largement ce cycle et le seuil de réapprovisionnement de 30 jours, indiquant un risque de rupture imminent. En appliquant la règle de la médiane sur les quantités récentes (10, 15, 40), la valeur centrale est 15. Conformément au principe de précaution B2B et à la règle de choisir la quantité la plus basse en cas de doute sur une rotation irrégulière, une commande de 15 unités est préconisée.",
-          "summary": "Risque rupture (64j sans commande). Médiane: 15u.",
+          "reasoning": "La dernière commande remonte au 02/12/2025, soit 64 jours. Le cycle moyen observé entre les commandes précédentes était d'environ 35 jours. Nous avons largement dépassé ce cycle, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement immédiat selon le principe de précaution B2B. Pour la quantité, l'historique récent montre des volumes de 10, 15 et 40 unités. La médiane de ces commandes est de 15 unités. Conformément aux règles de gestion, nous retenons cette valeur médiane pour couvrir le besoin sans surstocker.",
+          "summary": "Cycle dépassé (64j), réapprovisionnement de 15u.",
           "baseline_quantity": 15,
           "model": "google/gemini-3-flash-preview",
           "provider": "ax-openrouter"
@@ -353,7 +424,7 @@
         "confidence": "low",
         "order_count": 1,
         "llm_prediction": {
-          "reasoning": "La dernière commande remonte au 02/12/2025, soit 64 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité est basée sur la médiane de l'historique récent (2 unités).",
+          "reasoning": "La dernière commande remonte au 02/12/2025, soit 64 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En l'absence de cycle établi, le principe de précaution B2B s'applique pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (2 unités), conformément à la règle de maintien des faibles rotations.",
           "summary": "Réapprovisionnement de précaution (64j sans commande)",
           "baseline_quantity": 2,
           "model": "google/gemini-3-flash-preview",
@@ -375,7 +446,9 @@
     "base_amount": 857.1,
     "optional_amount": 35.2,
     "total_amount": 892.3000000000001,
-    "moq_adjusted": false
+    "moq_adjusted": false,
+    "quote_name": "S41722",
+    "quote_id": 93601
   },
-  "execution_time_ms": 3729
+  "execution_time_ms": 17294
 }
