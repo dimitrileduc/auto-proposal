@@ -296,4 +296,25 @@ export interface OdooClient {
     name: string;
     email: string | null;
   }>>;
+
+  /**
+   * Posts an internal note to a record's chatter
+   *
+   * Uses Odoo's message_post with subtype 'mail.mt_note' for internal notes
+   * that won't be visible on customer PDFs.
+   *
+   * @param model - Odoo model name, e.g., 'sale.order'
+   * @param recordId - Record ID to post the note on
+   * @param body - HTML body content
+   * @returns Created message ID (mail.message)
+   */
+  postInternalNote(model: string, recordId: number, body: string): Promise<number>;
+
+  /**
+   * Fetches a message by ID (for verification)
+   *
+   * @param messageId - Message ID (mail.message)
+   * @returns Message with id, body, and date, or null if not found
+   */
+  getMessageById(messageId: number): Promise<{ id: number; body: string; date: string } | null>;
 }

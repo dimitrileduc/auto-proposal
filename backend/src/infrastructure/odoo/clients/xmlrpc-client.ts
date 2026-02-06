@@ -610,5 +610,36 @@ export function createXmlRpcClient(): OdooClient {
           : new Error(`Failed to search partners by name "${name}": ${error}`);
       }
     },
+
+    async postInternalNote(model: string, recordId: number, body: string): Promise<number> {
+      try {
+        const messageId = await odoo.execute<number>(model, "message_post", [recordId], {
+          body: body,
+          body_is_html: true,
+          message_type: "comment",
+          subtype_xmlid: "mail.mt_note",
+        });
+        return messageId;
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(`Failed to post internal note on ${model}/${recordId}: ${error}`);
+      }
+    },
+
+    async getMessageById(messageId: number): Promise<{ id: number; body: string; date: string } | null> {
+      try {
+        const messages = await odoo.searchRead<{ id: number; body: string; date: string }>(
+          "mail.message",
+          [["id", "=", messageId]],
+          { fields: ["id", "body", "date"] }
+        );
+        return messages?.[0] ?? null;
+      } catch (error) {
+        throw error instanceof Error
+          ? error
+          : new Error(`Failed to get message ${messageId}: ${error}`);
+      }
+    },
   };
 }
