@@ -1,5 +1,5 @@
 /**
- * Scheduled orchestrator task - runs daily at 2:00 PM Paris time
+ * Scheduled orchestrator task - runs daily at 7:00 AM Paris time
  *
  * Triggers the main orchestrator workflow on a daily schedule.
  *
@@ -11,36 +11,30 @@ import { orchestratorTask } from "./orchestrator.task";
 import { autoProposalConfig } from "../config/auto-proposal";
 
 /**
- * Daily scheduled orchestrator
+ * Daily scheduled orchestrator - PRODUCTION
  *
- * Runs every day at 2:00 PM Europe/Paris timezone.
- * Processes ALL inactive clients and generates Odoo quotes.
- *
- * During initial testing phase, uncomment clientIds to limit to specific clients.
+ * Runs every day at 7:00 AM Europe/Paris timezone.
+ * Processes inactive clients and generates Odoo quotes.
  */
 export const dailyOrchestratorSchedule = schedules.task({
-  id: "orchestrator-daily-2pm",
-  // PAUSED - Uncomment to reactivate daily schedule
-  // cron: {
-  //   pattern: "0 14 * * *",
-  //   timezone: "Europe/Paris",
-  // },
+  id: "orchestrator-daily-7am",
+  cron: {
+    pattern: "0 7 * * *",
+    timezone: "Europe/Paris",
+  },
   run: async (payload) => {
     console.log(`\n========================================`);
-    console.log(`SCHEDULED ORCHESTRATOR RUN`);
+    console.log(`SCHEDULED ORCHESTRATOR RUN - PRODUCTION`);
     console.log(`Time: ${payload.timestamp}`);
     console.log(`Last run: ${payload.lastTimestamp || "First run"}`);
     console.log(`========================================\n`);
 
     const result = await orchestratorTask.triggerAndWait({
       config: {
-        // PHASE TEST: Uncomment to limit to specific client(s)
-        // clientIds: [FOOTPRINT_ID],
-
-        skipOdooQuoteGeneration: false, // PROD = generate Odoo quotes
-        maxClientsToAnalyze: 5,
+        // PRODUCTION: All inactive clients
+        skipOdooQuoteGeneration: false,
         generateReports: true,
-        forceReanalysis: false, // Don't re-propose to already processed clients
+        forceReanalysis: false,
         companyId: autoProposalConfig.defaultCompanyId,
       },
     });
