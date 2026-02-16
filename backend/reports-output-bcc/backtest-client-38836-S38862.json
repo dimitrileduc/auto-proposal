@@ -1,0 +1,30 @@
+{
+  "clientId": 38836,
+  "clientName": "DLL AD TIELT-WINGE GHS",
+  "orderName": "S38862",
+  "orderDate": "2025-09-17 11:20:12",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 18,
+    "fn": 0,
+    "precision": 0.41935483870967744,
+    "recall": 1,
+    "f1Score": 0.5909090909090909,
+    "mae": 0.46153846153846156,
+    "wmape": 46.15384615384615,
+    "mape": 46.15384615384615,
+    "bias": 46.15384615384615
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 33,
+    "promptTokens": 29035,
+    "completionTokens": 4996,
+    "totalTokens": 34031
+  }
+}

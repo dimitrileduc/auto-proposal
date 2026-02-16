@@ -1,0 +1,30 @@
+{
+  "clientId": 24339,
+  "clientName": "Maison Duysens",
+  "orderName": "S39506",
+  "orderDate": "2025-10-02 06:10:18",
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 42,
+    "fp": 25,
+    "fn": 0,
+    "precision": 0.6268656716417911,
+    "recall": 1,
+    "f1Score": 0.7706422018348624,
+    "mae": 0.30952380952380953,
+    "wmape": 16.666666666666664,
+    "mape": 11.507936507936506,
+    "bias": -8.974358974358974
+  },
+  "distribution": {
+    "exactMatch": 31,
+    "partialMatch": 11
+  },
+  "llmUsage": {
+    "calls": 77,
+    "promptTokens": 69426,
+    "completionTokens": 11988,
+    "totalTokens": 81414
+  }
+}

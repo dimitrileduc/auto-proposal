@@ -1,0 +1,334 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:22:53.464Z"
+  },
+  "client": {
+    "id": 73658,
+    "name": "Maison du Tourisme Hautes Fagnes - Cantons de l'Est"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-05 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 10,
+      "llm_usage": {
+        "calls": 10,
+        "promptTokens": 8870,
+        "completionTokens": 1529,
+        "totalTokens": 10399
+      }
+    },
+    "proposalFinal": {
+      "products_count": 10,
+      "total_amount": 307.04,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 142.72,
+        "minimum_required": 300,
+        "gap_filled": 164.32000000000002,
+        "products_adjusted": 10
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16827,
+        "product_name": "[TVF001] TVF TARTINADE BIO MANGUE 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 32.400000000000006,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation faible et irrégulière. La dernière commande remonte à 30 jours (06/10/2025). Bien que le cycle moyen soit difficile à établir avec seulement deux points de données, le délai actuel atteint le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est préconisée. La quantité retenue est de 1 unité, correspondant à la valeur basse de l'historique récent, afin de maintenir le stock sans risque de surstockage sur une référence à faible rotation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 2,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 16830,
+        "product_name": "[TVF002] TVF TARTINADE BIO PAPRIKA 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 43.2,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 06/10/2025, soit 30 jours avant la date actuelle. L'intervalle précédent était d'environ 80 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture (30 jours écoulés + 30 jours de seuil = 60 jours, proche du cycle constaté). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : L'historique récent montre des commandes de 1u et 2u. La médiane se situe à 1.5u. En suivant la règle de privilégier la quantité la plus basse en cas de doute mais en assurant la rotation, la quantité de 2u est retenue pour couvrir la période de 30 jours à venir, correspondant au volume de la commande la plus récente.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 2,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 16829,
+        "product_name": "[TVF004] TVF TARTINADE BIO OLIVE 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 32.400000000000006,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 06/10/2025, soit 30 jours avant la date actuelle. L'intervalle précédent était de 80 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre de risque de rupture si le cycle se raccourcit ou se stabilise. Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une régularité absolue avec des commandes unitaires (1u). La médiane et la règle de rotation faible (1-2u) imposent de maintenir cette quantité de 1 unité sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 1,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 16824,
+        "product_name": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 43.2,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande d'environ 80 jours (entre juillet et octobre). Depuis la dernière commande du 06/10/2025, 30 jours se sont écoulés. Bien que le cycle théorique ne soit pas encore atteint, le seuil de réapprovisionnement de 30 jours place l'horizon de décision à 60 jours post-achat, créant une incertitude sur la disponibilité. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est préconisée. La quantité retenue est de 2 unités, correspondant à la valeur la plus récente et à la médiane haute pour garantir un stock minimal sur ce produit à faible rotation.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 2,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 16833,
+        "product_name": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 21.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à 30 jours (06/10/2025). Avec un intervalle précédent d'environ 80 jours entre juillet et octobre, le cycle est irrégulier et lent. Cependant, selon le principe de précaution B2B et le seuil de réapprovisionnement de 30 jours, un risque de rupture ne peut être exclu. En suivant la règle de la médiane sur l'historique récent (1u et 2u) et la consigne de choisir la valeur la plus basse en cas de doute pour les faibles rotations, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 2,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 16825,
+        "product_name": "[TVF008] TVF TARTINADE BIO BETTERAVE RAIFORT 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 21.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Le cycle entre les deux dernières commandes est d'environ 80 jours. La dernière commande date du 06/10/2025, soit 30 jours écoulés. Avec un seuil de réapprovisionnement de 30 jours, nous atteignons l'horizon de risque de rupture (30 jours écoulés + 30 jours de seuil = 60 jours, proche du cycle constaté). En application du principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : La rotation est très faible et constante (1u). La médiane des commandes récentes est de 1u. On maintient cette quantité minimale sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 1,
+            "price_unit": 10.8
+          },
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 16826,
+        "product_name": "[TVF003] TVF TARTINADE BIO CAROTTE 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 21.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 06/10/2025, soit il y a 30 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est immédiat selon le principe de précaution B2B, malgré un historique limité à une seule commande. En l'absence de cycle établi, la règle de détection du besoin impose de prévoir une commande. La quantité retenue correspond à la médiane de l'historique récent (1u), conformément à la règle de maintien des rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 16828,
+        "product_name": "[TVF007] TVF TARTINADE BIO MOUTARDE AGAVE 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 21.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 06/10/2025, soit 30 jours écoulés. Avec un seuil de réapprovisionnement de 30 jours, nous atteignons la limite du cycle de rotation. En l'absence d'historique long, le principe de précaution B2B s'applique pour éviter une rupture de stock. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles (1-2u), la quantité est maintenue à 1 unité pour couvrir le besoin sans créer de surstock inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-06 07:23:23",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 13094,
+        "product_name": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "product_uom": "TU16",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 23.92,
+        "subtotal": 47.84,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans activité. Bien que la rotation soit très faible, le principe de précaution B2B et l'absence de cycle défini imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée. Conformément à la règle des rotations faibles (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 23.92
+          }
+        ]
+      },
+      {
+        "product_id": 16832,
+        "product_name": "[TVF009] TVF TARTINADE BIO POIS CHICHES 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 21.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a 110 jours (18 juillet). Bien que le cycle soit difficile à établir avec un seul point de donnée, le principe de précaution B2B et l'absence d'historique sur l'année précédente imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée si la demande est sporadique. Conformément à la règle des rotations faibles (1-2u), la quantité retenue est de 1 unité, correspondant à la médiane (et unique valeur) de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-18 12:01:07",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 6,
+    "optional_products_count": 4,
+    "base_amount": 194.4,
+    "optional_amount": 112.64000000000001,
+    "total_amount": 307.04,
+    "moq_adjusted": true,
+    "moq_gap": 164.32000000000002
+  },
+  "execution_time_ms": 3333
+}

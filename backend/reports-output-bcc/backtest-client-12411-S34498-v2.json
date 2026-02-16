@@ -1,0 +1,536 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:28:06.027Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-01-22 00:00:00"
+    }
+  },
+  "client": {
+    "id": 12411,
+    "name": "JSC GOURMET LIFE",
+    "order": {
+      "name": "S34498",
+      "date": "2025-01-23 13:10:21"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 5,
+        "falsePositives": 1,
+        "falseNegatives": 3,
+        "total": 9
+      },
+      "productMetrics": {
+        "precision": 0.8333333333333334,
+        "recall": 0.625,
+        "f1Score": 0.7142857142857143,
+        "totalPredicted": 6,
+        "totalReal": 8
+      },
+      "quantityMetrics": {
+        "mae": 13.6,
+        "wmape": 40,
+        "mape": 41.55555555555556,
+        "bias": -11.76470588235294,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 5
+        },
+        "rmse": 20.503658210182884
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 0,
+          "falseNegatives": 2,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 0.6,
+          "f1Score": 0.7499999999999999,
+          "totalPredicted": 3,
+          "totalReal": 5
+        },
+        "quantityMetrics": {
+          "mae": 6.333333333333333,
+          "wmape": 16.52173913043478,
+          "mape": 20,
+          "bias": 16.52173913043478,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 6.855654600401044
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 1,
+          "falseNegatives": 1,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1Score": 0.5,
+          "totalPredicted": 2,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 44,
+          "wmape": 97.77777777777777,
+          "mape": 97.77777777777777,
+          "bias": -97.77777777777777,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 44
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 5,
+          "wmape": 50,
+          "mape": 50,
+          "bias": 50,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 5
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 6252,
+    "completionTokens": 1126,
+    "totalTokens": 7378
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9427,
+        "productName": "[PF2938] LD FR TARTINAD BIO AUBERGI 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 64,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 60
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 6.666666666666667,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 84619,
+              "orderName": "S32742",
+              "date": "2024-10-14 12:31:38",
+              "quantity": 64,
+              "priceUnit": 9.3
+            }
+          ],
+          "statistics": {
+            "mean": 64,
+            "median": 64,
+            "stdDev": 0,
+            "min": 64,
+            "max": 64,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 99.51969907407407,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9182,
+        "productName": "[PF1694] LD FR TARTINAD BIO POIVRON 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 30,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 25
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 20,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 84619,
+              "orderName": "S32742",
+              "date": "2024-10-14 12:31:38",
+              "quantity": 30,
+              "priceUnit": 9.3
+            }
+          ],
+          "statistics": {
+            "mean": 30,
+            "median": 30,
+            "stdDev": 0,
+            "min": 30,
+            "max": 30,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 99.51969907407407,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9070,
+        "productName": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 40,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 30
+        },
+        "error": {
+          "absolute": 10,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 84619,
+              "orderName": "S32742",
+              "date": "2024-10-14 12:31:38",
+              "quantity": 40,
+              "priceUnit": 9.3
+            }
+          ],
+          "statistics": {
+            "mean": 40,
+            "median": 40,
+            "stdDev": 0,
+            "min": 40,
+            "max": 40,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 99.51969907407407,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9426,
+        "productName": "[PF2937] LD FR TARTINADE BIO POIS 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 15,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 50,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 84619,
+              "orderName": "S32742",
+              "date": "2024-10-14 12:31:38",
+              "quantity": 15,
+              "priceUnit": 9.3
+            },
+            {
+              "orderId": 82564,
+              "orderName": "S30687",
+              "date": "2024-06-11 07:53:22",
+              "quantity": 15,
+              "priceUnit": 9.3
+            },
+            {
+              "orderId": 79267,
+              "orderName": "S27390",
+              "date": "2023-10-31 18:42:18",
+              "quantity": 0,
+              "priceUnit": 0
+            },
+            {
+              "orderId": 79236,
+              "orderName": "S27359",
+              "date": "2023-10-31 18:24:23",
+              "quantity": 40,
+              "priceUnit": 9.3
+            },
+            {
+              "orderId": 3726,
+              "orderName": "S03720",
+              "date": "2023-08-01 13:14:47",
+              "quantity": 20,
+              "priceUnit": 9.3
+            }
+          ],
+          "statistics": {
+            "mean": 18,
+            "median": 15,
+            "stdDev": 12.884098726725126,
+            "min": 0,
+            "max": 40,
+            "cv": 0.7157832625958404,
+            "trend": "increasing",
+            "outliers": [
+              0,
+              40
+            ],
+            "regularityScore": 0.2798091566952151
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 109.99250868055556,
+            "lastOrderDaysAgo": 99.51969907407407,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9184,
+        "productName": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 45
+        },
+        "error": {
+          "absolute": 44,
+          "percent": 97.77777777777777,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 84619,
+              "orderName": "S32742",
+              "date": "2024-10-14 12:31:38",
+              "quantity": 20,
+              "priceUnit": 9.3
+            },
+            {
+              "orderId": 84619,
+              "orderName": "S32742",
+              "date": "2024-10-14 12:31:38",
+              "quantity": 1,
+              "priceUnit": 9.3
+            }
+          ],
+          "statistics": {
+            "mean": 10.5,
+            "median": 11,
+            "stdDev": 9.5,
+            "min": 1,
+            "max": 20,
+            "cv": 0.9047619047619048,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4571428571428572
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 99.51969907407407,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 9387,
+        "productName": "[PF1969] LD BE TARTINADE BIO OLIVE 200",
+        "mismatchType": "false_positive",
+        "quantity": 108,
+        "reason": "Predicted 108u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 99,
+            "orders": [
+              {
+                "orderId": 84619,
+                "orderName": "S32742",
+                "date": "2024-10-14 12:31:38",
+                "quantity": 108,
+                "priceUnit": 9.3
+              },
+              {
+                "orderId": 82564,
+                "orderName": "S30687",
+                "date": "2024-06-11 07:53:22",
+                "quantity": 50,
+                "priceUnit": 9.3
+              },
+              {
+                "orderId": 79267,
+                "orderName": "S27390",
+                "date": "2023-10-31 18:42:18",
+                "quantity": 20,
+                "priceUnit": 9.3
+              },
+              {
+                "orderId": 79236,
+                "orderName": "S27359",
+                "date": "2023-10-31 18:24:23",
+                "quantity": 0,
+                "priceUnit": 0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 9430,
+        "productName": "[PF2972] LD FR TARTINADE BIO OLIVE 200",
+        "mismatchType": "false_negative",
+        "quantity": 45,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      },
+      {
+        "productId": 17340,
+        "productName": "[PF3200] LD FR TARTINADE BIO ASPERGE 180G",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 1u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 99,
+            "orders": [
+              {
+                "orderId": 84619,
+                "orderName": "S32742",
+                "date": "2024-10-14 12:31:38",
+                "quantity": 30,
+                "priceUnit": 11.1
+              },
+              {
+                "orderId": 84619,
+                "orderName": "S32742",
+                "date": "2024-10-14 12:31:38",
+                "quantity": 1,
+                "priceUnit": 11.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17025,
+        "productName": "[PF3292] TVF MISS BEAUTY AUBERGINE 380G",
+        "mismatchType": "false_negative",
+        "quantity": 8,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

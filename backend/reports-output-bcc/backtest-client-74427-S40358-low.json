@@ -1,0 +1,30 @@
+{
+  "clientId": 74427,
+  "clientName": "Belgian Cousin Company",
+  "orderName": "S40358",
+  "orderDate": "2025-11-14 10:19:02",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.9285714285714286,
+    "recall": 1,
+    "f1Score": 0.962962962962963,
+    "mae": 0.7692307692307693,
+    "wmape": 43.47826086956522,
+    "mape": 30.76923076923076,
+    "bias": -34.78260869565217
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12241,
+    "completionTokens": 2337,
+    "totalTokens": 14578
+  }
+}

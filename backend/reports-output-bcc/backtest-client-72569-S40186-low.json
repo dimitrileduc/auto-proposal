@@ -1,0 +1,30 @@
+{
+  "clientId": 72569,
+  "clientName": "CARREFOUR BELGIUM SA, MARKET KORTRIJK NOORD",
+  "orderName": "S40186",
+  "orderDate": "2025-11-12 07:35:02",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.4166666666666667,
+    "recall": 1,
+    "f1Score": 0.5882352941176471,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 22815,
+    "completionTokens": 3959,
+    "totalTokens": 26774
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 72020,
+  "clientName": "O'Bio",
+  "orderName": "S38023",
+  "orderDate": "2025-07-14 09:03:41",
+  "cutoffDate": "2025-07-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.5555555555555556,
+    "recall": 1,
+    "f1Score": 0.7142857142857143,
+    "mae": 1.2,
+    "wmape": 54.54545454545454,
+    "mape": 55,
+    "bias": -36.36363636363637
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 23750,
+    "completionTokens": 4187,
+    "totalTokens": 27937
+  }
+}

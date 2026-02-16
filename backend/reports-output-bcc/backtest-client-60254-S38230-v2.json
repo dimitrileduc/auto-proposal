@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:25:31.815Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-07-24 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60254,
+    "name": "CHATEAU DE RIXENSART",
+    "order": {
+      "name": "S38230",
+      "date": "2025-07-25 06:44:24"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 2
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 2,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 6.5,
+        "wmape": 76.47058823529412,
+        "mape": 77.08333333333333,
+        "bias": 76.47058823529412,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 2
+        },
+        "rmse": 6.519202405202649
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 2,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 6.5,
+          "wmape": 76.47058823529412,
+          "mape": 77.08333333333333,
+          "bias": 76.47058823529412,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 6.519202405202649
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 2,
+    "promptTokens": 1746,
+    "completionTokens": 358,
+    "totalTokens": 2104
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18415,
+        "productName": "[REB06] REB chips bio - paprika fumé 35g",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 15,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 8
+        },
+        "error": {
+          "absolute": 7,
+          "percent": 87.5,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89699,
+              "orderName": "S37822",
+              "date": "2025-07-02 12:37:01",
+              "quantity": 15,
+              "priceUnit": 18.2
+            }
+          ],
+          "statistics": {
+            "mean": 15,
+            "median": 15,
+            "stdDev": 0,
+            "min": 15,
+            "max": 15,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 21.47429398148148,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18416,
+        "productName": "[REB05] REB chips bio - sel de mer 35g",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 15,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 9
+        },
+        "error": {
+          "absolute": 6,
+          "percent": 66.66666666666666,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89699,
+              "orderName": "S37822",
+              "date": "2025-07-02 12:37:01",
+              "quantity": 15,
+              "priceUnit": 18.2
+            }
+          ],
+          "statistics": {
+            "mean": 15,
+            "median": 15,
+            "stdDev": 0,
+            "min": 15,
+            "max": 15,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 21.47429398148148,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

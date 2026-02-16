@@ -1,0 +1,532 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2026-01-11T10:14:20.580Z"
+  },
+  "client": {
+    "id": 60145,
+    "name": "AD DELHAIZE ANDENNE",
+    "email": "proxystema@gmail.com"
+  },
+  "config": {
+    "analysisEndDate": "2026-01-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": false
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 14,
+      "llm_usage": {
+        "calls": 14,
+        "promptTokens": 12725,
+        "completionTokens": 2196,
+        "totalTokens": 14921
+      }
+    },
+    "proposalFinal": {
+      "products_count": 14,
+      "total_amount": 312.20000000000005,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 286.4,
+        "minimum_required": 300,
+        "gap_filled": 25.800000000000068,
+        "products_adjusted": 1
+      }
+    },
+    "quote": {
+      "quote_id": 92307,
+      "quote_name": "S40428",
+      "quote_state": "draft",
+      "amount_total_ht": 0,
+      "amount_total_ttc": 0,
+      "tax_total": 0,
+      "created_at": "2026-01-11 10:13:49",
+      "lines_count": 0,
+      "optional_products_count": 14,
+      "order_lines": [],
+      "optional_products": [
+        {
+          "product_id": 16743,
+          "product_name": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+          "quantity": 3,
+          "price_unit": 25.8,
+          "subtotal_ht": 77.4
+        },
+        {
+          "product_id": 16788,
+          "product_name": "[JF026] JF VINAIGRET TRUFFES WECK 200M",
+          "quantity": 1,
+          "price_unit": 31.5,
+          "subtotal_ht": 31.5
+        },
+        {
+          "product_id": 16753,
+          "product_name": "[JF036] JF MITRAILLETTE SQUEEZE 300ML",
+          "quantity": 1,
+          "price_unit": 26.4,
+          "subtotal_ht": 26.4
+        },
+        {
+          "product_id": 16776,
+          "product_name": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+          "quantity": 2,
+          "price_unit": 13.5,
+          "subtotal_ht": 27
+        },
+        {
+          "product_id": 19392,
+          "product_name": "[LD007] LD Organic Pineapple Coconut Spread 180 g",
+          "quantity": 1,
+          "price_unit": 14.5,
+          "subtotal_ht": 14.5
+        },
+        {
+          "product_id": 19394,
+          "product_name": "[LD009] LD Organic Asparagus Spread 180 g",
+          "quantity": 1,
+          "price_unit": 18.6,
+          "subtotal_ht": 18.6
+        },
+        {
+          "product_id": 19395,
+          "product_name": "[LD010] LD Organic Truffle Spread 135 g",
+          "quantity": 1,
+          "price_unit": 18.6,
+          "subtotal_ht": 18.6
+        },
+        {
+          "product_id": 19396,
+          "product_name": "[LD011] LD Organic Kids Spread 180 g",
+          "quantity": 1,
+          "price_unit": 14.5,
+          "subtotal_ht": 14.5
+        },
+        {
+          "product_id": 19397,
+          "product_name": "[LD012] LD Organic Samphire Spread 135 g",
+          "quantity": 1,
+          "price_unit": 18.6,
+          "subtotal_ht": 18.6
+        },
+        {
+          "product_id": 19398,
+          "product_name": "[LD013] LD Tuscan Organic Spread 180 g",
+          "quantity": 1,
+          "price_unit": 14.5,
+          "subtotal_ht": 14.5
+        },
+        {
+          "product_id": 19434,
+          "product_name": "[LD014] LD Organic Avocado Spread 180 g",
+          "quantity": 1,
+          "price_unit": 14.5,
+          "subtotal_ht": 14.5
+        },
+        {
+          "product_id": 19435,
+          "product_name": "[LD015] LD Onion Spread 180g",
+          "quantity": 1,
+          "price_unit": 14.5,
+          "subtotal_ht": 14.5
+        },
+        {
+          "product_id": 19393,
+          "product_name": "[LD008] LD Tartinade Pois chiches bio 180g  ",
+          "quantity": 1,
+          "price_unit": 10.8,
+          "subtotal_ht": 10.8
+        },
+        {
+          "product_id": 16833,
+          "product_name": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+          "quantity": 1,
+          "price_unit": 10.8,
+          "subtotal_ht": 10.8
+        }
+      ]
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 16743,
+        "product_name": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 25.8,
+        "subtotal": 77.4,
+        "moq_adjustment": 1,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 17 septembre 2025, soit 116 jours sans activité. Bien que le cycle soit difficile à déterminer en l'absence d'historique récurrent, le principe de précaution B2B s'applique ici : en cas de doute sur la rotation ou de cycle irrégulier, il est nécessaire de prévoir un réapprovisionnement pour éviter une rupture prolongée. La quantité retenue est de 2 unités, correspondant à la médiane (et unique valeur) de la commande la plus récente, respectant ainsi la règle de ne pas augmenter les volumes sur les faibles rotations.",
+          "summary": "Réapprovisionnement de précaution (cycle inconnu)",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 2,
+            "price_unit": 25.8
+          }
+        ]
+      },
+      {
+        "product_id": 16788,
+        "product_name": "[JF026] JF VINAIGRET TRUFFES WECK 200M",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 31.5,
+        "subtotal": 31.5,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 17 septembre 2025, soit 116 jours avant la date actuelle (11 janvier 2026). Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle de réapprovisionnement standard. En application du principe de précaution B2B et face à l'incertitude du cycle, un risque de rupture est identifié. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité historique sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 31.5
+          }
+        ]
+      },
+      {
+        "product_id": 16753,
+        "product_name": "[JF036] JF MITRAILLETTE SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 26.4,
+        "subtotal": 26.4,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 17 septembre 2025, soit 116 jours écoulés. Bien que la rotation soit très faible, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement un cycle de réapprovisionnement standard. Un risque de rupture est identifié pour maintenir le stock minimum. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), on maintient la quantité de 1 unité sans augmenter pour éviter le surstock.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 26.4
+          }
+        ]
+      },
+      {
+        "product_id": 16776,
+        "product_name": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 13.5,
+        "subtotal": 27,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a 116 jours (2 unités). Bien que le cycle soit difficile à établir en l'absence d'historique récurrent, le principe de précaution B2B s'applique face à l'incertitude du délai écoulé. Conformément aux règles de gestion des rotations faibles (1-2u), on maintient la quantité de la dernière commande pour éviter une rupture potentielle sans surstocker.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 2,
+            "price_unit": 13.5
+          }
+        ]
+      },
+      {
+        "product_id": 19392,
+        "product_name": "[LD007] LD Organic Pineapple Coconut Spread 180 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 17 septembre 2025, soit 116 jours sans activité. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et face à l'absence d'historique N-1, une commande de maintien est nécessaire. La quantité est fixée à 1 unité, correspondant à la médiane et à la dernière commande connue, conformément à la règle sur les rotations faibles.",
+          "summary": "Réappro de précaution (116j sans commande).",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      },
+      {
+        "product_id": 19394,
+        "product_name": "[LD009] LD Organic Asparagus Spread 180 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 17 septembre 2025, soit plus de 115 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle de réapprovisionnement standard. En application du principe de précaution B2B et de la règle sur les rotations faibles (1-2u), une commande de 1 unité est nécessaire pour reconstituer le stock et éviter une rupture prolongée sur cette référence.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 19395,
+        "product_name": "[LD010] LD Organic Truffle Spread 135 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 17 septembre 2025, soit 116 jours avant la date actuelle (11 janvier 2026). Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution et de la règle sur les cycles irréguliers/difficiles à déterminer, un besoin est identifié pour éviter une rupture de stock prolongée. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane de l'historique disponible sans surestimation.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 19396,
+        "product_name": "[LD011] LD Organic Kids Spread 180 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 17 septembre 2025, soit 116 jours. Bien que la rotation soit très faible, l'absence de données historiques complémentaires et le principe de précaution B2B imposent de prévoir un réapprovisionnement pour éviter une rupture prolongée si un cycle de vente se manifeste. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), on maintient la quantité à 1 unité sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      },
+      {
+        "product_id": 19397,
+        "product_name": "[LD012] LD Organic Samphire Spread 135 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a 116 jours (17/09/2025). Bien que le cycle soit difficile à établir, le principe de précaution B2B s'applique car le délai depuis la dernière commande dépasse largement un cycle trimestriel standard. En l'absence d'historique multiple, la règle des cas particuliers pour rotation faible (1-2u) impose de maintenir la quantité minimale de 1 unité pour couvrir un besoin potentiel sans risquer de surstockage.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 19398,
+        "product_name": "[LD013] LD Tuscan Organic Spread 180 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 17 septembre 2025, soit 116 jours. Bien que la rotation soit très faible, l'absence de commande sur une période aussi longue pour un produit de type tartinade bio suggère un risque de rupture imminent ou un besoin de renouvellement de stock de présentation. En application du principe de précaution B2B (détection d'un besoin incertain), une commande est préconisée. ÉTAPE 2 : L'historique récent montre une commande unique de 1u. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1u pour éviter le surstockage tout en assurant la présence du produit.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      },
+      {
+        "product_id": 19434,
+        "product_name": "[LD014] LD Organic Avocado Spread 180 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible avec une seule commande enregistrée il y a environ 116 jours. Bien que le cycle soit irrégulier et difficile à définir, le principe de précaution B2B impose de prévoir un réapprovisionnement pour éviter une rupture prolongée sur un horizon de 30 jours. Conformément aux règles pour les rotations très faibles (1-2u), la quantité recommandée est maintenue à 1 unité, correspondant à la médiane historique.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      },
+      {
+        "product_id": 19435,
+        "product_name": "[LD015] LD Onion Spread 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.5,
+        "subtotal": 14.5,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (Détection) : La dernière commande remonte au 17 septembre 2025, soit 116 jours sans activité. Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (mieux vaut détecter un besoin incertain qu'une rupture), un risque de rupture est identifié pour couvrir les 30 prochains jours. ÉTAPE 2 (Quantité) : L'historique récent montre une commande unique de 1u. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1u pour éviter le surstockage tout en assurant la disponibilité.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 14.5
+          }
+        ]
+      },
+      {
+        "product_id": 19393,
+        "product_name": "[LD008] LD Tartinade Pois chiches bio 180g  ",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 10.8,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 17 septembre 2025, soit 116 jours sans activité. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement en B2B. En application du principe de précaution (Étape 1) et face à l'incertitude d'un cycle irrégulier, un besoin est détecté pour éviter une rupture prolongée. Conformément à l'Étape 2 pour les rotations très faibles, la quantité est maintenue à la valeur historique de 1 unité (médiane).",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      },
+      {
+        "product_id": 16833,
+        "product_name": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 10.8,
+        "subtotal": 10.8,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 - DÉTECTION DU BESOIN : La dernière commande remonte au 17 septembre 2025, soit 116 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle raisonnable de réapprovisionnement. En application du principe de précaution B2B (si doute sur le cycle ou rotation irrégulière), un besoin est détecté pour éviter une rupture de stock prolongée. ÉTAPE 2 - ESTIMATION QUANTITÉ : L'historique récent montre une commande unique de 1 unité. Conformément à la règle des rotations très faibles (1-2u), on maintient la quantité de 1 unité sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-17 06:29:16",
+            "quantity": 1,
+            "price_unit": 10.8
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 14,
+    "base_amount": 0,
+    "optional_amount": 312.20000000000005,
+    "total_amount": 312.20000000000005,
+    "moq_adjusted": true,
+    "moq_gap": 25.800000000000068,
+    "quote_name": "S40428",
+    "quote_id": 92307
+  },
+  "execution_time_ms": 56601
+}

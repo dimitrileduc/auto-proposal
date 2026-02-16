@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:06:52.434Z"
+  },
+  "client": {
+    "id": 3520,
+    "name": "ROCH EPICES"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 1171,
+        "completionTokens": 192,
+        "totalTokens": 1363
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 1863.6800000000003,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8987,
+        "product_name": "[PF0078] FILOU CHASSEUR 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 208,
+        "quantity_source": "llm",
+        "price_unit": 8.96,
+        "subtotal": 1863.6800000000003,
+        "confidence": "high",
+        "order_count": 25,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 25 à 30 jours entre les réapprovisionnements récents (13/10, 29/09, 04/09). Depuis la dernière commande du 13 octobre 2025, 29 jours se sont écoulés, ce qui dépasse le seuil de 70% du cycle habituel. Avec un horizon de réapprovisionnement de 30 jours, le risque de rupture est imminent. Conformément à la règle de la médiane sur l'historique récent (240, 160, 208, 320, 133), la valeur centrale est de 208 unités. Cette quantité est cohérente avec les volumes historiques et permet de couvrir le besoin sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 208,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-25 07:32:57",
+            "quantity": 160,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-02-06 10:16:40",
+            "quantity": 240,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-02-02 11:34:32",
+            "quantity": 160,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-01-16 11:25:54",
+            "quantity": 320,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-11-14 07:58:53",
+            "quantity": 320,
+            "price_unit": 8.7
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 1863.6800000000003,
+    "optional_amount": 0,
+    "total_amount": 1863.6800000000003,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2634
+}

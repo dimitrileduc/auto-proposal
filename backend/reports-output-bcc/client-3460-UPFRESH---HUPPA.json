@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:04:47.943Z"
+  },
+  "client": {
+    "id": 3460,
+    "name": "UPFRESH - HUPPA"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-06 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 3,
+      "llm_usage": {
+        "calls": 3,
+        "promptTokens": 3258,
+        "completionTokens": 616,
+        "totalTokens": 3874
+      }
+    },
+    "proposalFinal": {
+      "products_count": 3,
+      "total_amount": 1524.48,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8987,
+        "product_name": "[PF0078] FILOU CHASSEUR 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 120,
+        "quantity_source": "llm",
+        "price_unit": 8.96,
+        "subtotal": 1075.2,
+        "confidence": "high",
+        "order_count": 49,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence de réapprovisionnement régulière (environ toutes les 2 à 3 semaines). La dernière commande datant du 03/10/2025, soit il y a 34 jours, le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, signalant un risque de rupture imminent. Pour la quantité, l'historique récent présente des volumes oscillant entre 80u et 160u. Conformément à la règle de la médiane sur les commandes récentes (80, 80, 120, 160, 160, 160, 160), la valeur centrale se situe à 160u, mais compte tenu de l'historique N-1 à la même période (80u, 120u, 160u) et de la consigne de prudence privilégiant la valeur la plus basse en cas de doute pour éviter le surstock, une quantité de 120u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 120,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-01-19 10:24:12",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-12-11 07:37:46",
+            "quantity": 160,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-12-08 13:13:22",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-11-17 13:00:30",
+            "quantity": 80,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-11-10 13:14:29",
+            "quantity": 80,
+            "price_unit": 8.7
+          }
+        ]
+      },
+      {
+        "product_id": 8991,
+        "product_name": "[PF0088] FILOU VOL AU VENT 800 GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 37.8,
+        "subtotal": 226.79999999999998,
+        "confidence": "high",
+        "order_count": 17,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une irrégularité marquée avec une dernière commande remontant au 05/09/2025, soit plus de 60 jours avant la date actuelle. Bien que la rotation soit faible récemment, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours, créant un doute sur le niveau de stock actuel. En application du principe de précaution B2B (Étape 1), une commande est nécessaire pour éviter une rupture. Pour la quantité (Étape 2), la médiane des commandes récentes (4, 6, 12) est de 6 unités. Ce volume est cohérent avec l'historique N-1 à la même période (15u en novembre, 10u en décembre) tout en respectant la tendance à la baisse observée sur les derniers mois.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-02-02 10:12:05",
+            "quantity": 10,
+            "price_unit": 36
+          },
+          {
+            "date": "2024-01-19 10:24:12",
+            "quantity": 24,
+            "price_unit": 36
+          },
+          {
+            "date": "2023-12-21 14:14:16",
+            "quantity": 20,
+            "price_unit": 36
+          },
+          {
+            "date": "2023-12-08 13:13:22",
+            "quantity": 10,
+            "price_unit": 36
+          },
+          {
+            "date": "2023-11-17 13:00:30",
+            "quantity": 15,
+            "price_unit": 36
+          }
+        ]
+      },
+      {
+        "product_id": 15001,
+        "product_name": "[PF3270] JF TRUFFLE MAYONNAISE 925ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 74.16,
+        "subtotal": 222.48,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 27 juin 2025, soit plus de 130 jours sans activité, ce qui dépasse largement les cycles observés l'année précédente (février/mars/octobre). Selon le principe de précaution B2B, un besoin est détecté car le délai depuis la dernière commande est très supérieur au cycle moyen. Pour la quantité, bien que la dernière commande isolée fût de 12u, l'historique stable de l'année précédente montre une médiane de 3u (valeurs : 1, 3, 3, 5). Conformément aux règles de privilégier la médiane et d'ignorer les pics exceptionnels récents pour éviter le surstockage, une quantité de 3u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-28 11:47:08",
+            "quantity": 6,
+            "price_unit": 74.16
+          },
+          {
+            "date": "2024-10-04 08:58:23",
+            "quantity": 3,
+            "price_unit": 72
+          },
+          {
+            "date": "2024-03-15 10:48:34",
+            "quantity": 3,
+            "price_unit": 72
+          },
+          {
+            "date": "2024-03-01 10:02:40",
+            "quantity": 1,
+            "price_unit": 72
+          },
+          {
+            "date": "2024-02-27 12:19:22",
+            "quantity": 5,
+            "price_unit": 72
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 3,
+    "optional_products_count": 0,
+    "base_amount": 1524.48,
+    "optional_amount": 0,
+    "total_amount": 1524.48,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3058
+}

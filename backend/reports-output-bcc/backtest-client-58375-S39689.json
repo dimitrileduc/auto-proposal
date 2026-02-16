@@ -1,0 +1,30 @@
+{
+  "clientId": 58375,
+  "clientName": "DLL AD MECHELEN",
+  "orderName": "S39689",
+  "orderDate": "2025-10-15 05:00:37",
+  "cutoffDate": "2025-10-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.42105263157894735,
+    "recall": 1,
+    "f1Score": 0.5925925925925926,
+    "mae": 0.625,
+    "wmape": 35.714285714285715,
+    "mape": 31.25,
+    "bias": -35.714285714285715
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 26992,
+    "completionTokens": 4321,
+    "totalTokens": 31313
+  }
+}

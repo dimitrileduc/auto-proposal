@@ -1,0 +1,30 @@
+{
+  "clientId": 38921,
+  "clientName": "ESCAVIR",
+  "orderName": "S39304",
+  "orderDate": "2025-09-24 06:16:54",
+  "cutoffDate": "2025-09-23 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.4,
+    "recall": 1,
+    "f1Score": 0.5714285714285715,
+    "mae": 1,
+    "wmape": 25,
+    "mape": 16.666666666666664,
+    "bias": -25
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4420,
+    "completionTokens": 823,
+    "totalTokens": 5243
+  }
+}

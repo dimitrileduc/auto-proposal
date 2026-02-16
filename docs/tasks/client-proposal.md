@@ -21,7 +21,6 @@ Exécuter le pipeline complet pour un client unique: analyser stock replenishmen
     moqMinimum?: number;                   // EUR
     skipOdooQuoteGeneration?: boolean;
     shouldGenerateReport?: boolean;
-    companyId?: number;                    // Multi-company filter
   };
 }
 ```
@@ -32,7 +31,6 @@ Exécuter le pipeline complet pour un client unique: analyser stock replenishmen
 - `moqMinimum`: 300 EUR
 - `skipOdooQuoteGeneration`: true (TEST mode)
 - `shouldGenerateReport`: true
-- `companyId`: from config (FOODPRINT SRL = 3)
 
 ## Résultat
 
@@ -142,7 +140,6 @@ curl -X POST http://localhost:3000/routes/client-task \
 | `moqMinimum` | 300 | EUR seuil commande |
 | `skipOdooQuoteGeneration` | false | TEST: skip création |
 | `shouldGenerateReport` | true | Générer reports |
-| `companyId` | 3 | Société pour filtrer commandes (multi-company) |
 
 ## Intégration
 

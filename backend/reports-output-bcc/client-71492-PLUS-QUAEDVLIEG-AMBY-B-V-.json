@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:27:42.589Z"
+  },
+  "client": {
+    "id": 71492,
+    "name": "PLUS QUAEDVLIEG AMBY B.V."
+  },
+  "config": {
+    "analysisEndDate": "2025-11-02 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3494,
+        "completionTokens": 621,
+        "totalTokens": 4115
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 2584.12,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 19247,
+        "product_name": "[JF068] FIL VOL AU VENT 800G BOCAL ",
+        "product_uom": "TU12",
+        "quantity_recommended": 40,
+        "quantity_source": "llm",
+        "price_unit": 44.89,
+        "subtotal": 1795.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 19 août 2025, soit 75 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente (40u), l'absence d'historique sur l'année précédente et l'incertitude sur le cycle de rotation imposent l'application du principe de précaution B2B. Le délai depuis la dernière commande est important, ce qui crée un risque de rupture potentiel dans l'horizon des 30 jours (Replenishment Threshold Days). Conformément aux règles, en cas de cycle irrégulier ou difficile à déterminer, il faut prévoir une commande. La quantité retenue est de 40 unités, correspondant à la valeur unique et médiane de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 40,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 09:03:49",
+            "quantity": 40,
+            "price_unit": 44.89
+          },
+          {
+            "date": "2025-02-25 07:29:38",
+            "quantity": 40,
+            "price_unit": 44.89
+          }
+        ]
+      },
+      {
+        "product_id": 19248,
+        "product_name": "[FIL19] FIL VOL AU VENT 400G BOCAL",
+        "product_uom": "TU12",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 29.21,
+        "subtotal": 584.2,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 19 août, soit 75 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution et pour couvrir un risque de rupture sur l'horizon des 30 prochains jours (Replenishment Threshold Days), une commande est nécessaire. La quantité retenue correspond à la valeur de la dernière commande connue (20 unités), faute d'autres points de comparaison pour établir une médiane.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 09:03:49",
+            "quantity": 20,
+            "price_unit": 29.21
+          },
+          {
+            "date": "2025-02-25 07:29:38",
+            "quantity": 20,
+            "price_unit": 29.21
+          }
+        ]
+      },
+      {
+        "product_id": 19249,
+        "product_name": "[JF071] FIL CARBONNADES 800G BOCAL ",
+        "product_uom": "TU12",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 62.6,
+        "subtotal": 125.2,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 19 août 2025, soit 75 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de ce type. En application du principe de précaution B2B (incertitude sur le cycle = risque de rupture), une commande est nécessaire pour couvrir les 30 prochains jours. ÉTAPE 2 : ESTIMATION QUANTITÉ. En l'absence d'historique multiple, la quantité de la dernière commande (2u) est retenue comme référence. Conformément aux règles de rotation faible, on maintient cette quantité sans l'augmenter.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 09:03:49",
+            "quantity": 2,
+            "price_unit": 62.6
+          },
+          {
+            "date": "2025-02-25 07:29:38",
+            "quantity": 5,
+            "price_unit": 62.6
+          }
+        ]
+      },
+      {
+        "product_id": 19250,
+        "product_name": "[JF072] FIL BOULETTES SAUCE CHASSEUR 800G BOCAL ",
+        "product_uom": "TU12",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 39.56,
+        "subtotal": 79.12,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 19 août 2025, soit 75 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution et de détection d'un besoin incertain, un risque de rupture est identifié pour les 30 prochains jours. ÉTAPE 2 : En l'absence d'historique multiple, la quantité de la dernière commande connue (2 unités) est retenue comme référence pour maintenir le stock sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 09:03:49",
+            "quantity": 2,
+            "price_unit": 39.56
+          },
+          {
+            "date": "2025-02-25 07:29:38",
+            "quantity": 2,
+            "price_unit": 39.56
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 4,
+    "optional_products_count": 0,
+    "base_amount": 2584.12,
+    "optional_amount": 0,
+    "total_amount": 2584.12,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 4419
+}

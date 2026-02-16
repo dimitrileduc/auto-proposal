@@ -1,0 +1,30 @@
+{
+  "clientId": 72052,
+  "clientName": "EDEKA Rhein Ruhr Stiftung & Co. KG, Walter Feinkost KG",
+  "orderName": "S39383",
+  "orderDate": "2025-09-25 06:22:29",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.4,
+    "recall": 1,
+    "f1Score": 0.5714285714285715,
+    "mae": 1.1666666666666667,
+    "wmape": 100,
+    "mape": 108.33333333333333,
+    "bias": 71.42857142857143
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 14894,
+    "completionTokens": 2591,
+    "totalTokens": 17485
+  }
+}

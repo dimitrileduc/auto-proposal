@@ -181,10 +181,6 @@ export interface ClientReportJSON {
         /** Line subtotal excl. tax */
         subtotal_ht: number;
       }>;
-      /** Chatter message ID (internal note with LLM reasoning) */
-      chatter_message_id: number | null;
-      /** Preview of chatter message (text, first 200 chars) */
-      chatter_message_preview: string | null;
     };
   };
 
@@ -349,8 +345,6 @@ export function generateClientReportJSON(
               price_unit: opt.price_unit,
               subtotal_ht: opt.subtotal_ht,
             })),
-            chatter_message_id: quote.chatter_message_id,
-            chatter_message_preview: quote.chatter_message_preview,
           }
         : undefined,
     },

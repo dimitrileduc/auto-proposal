@@ -1,0 +1,891 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:27:55.810Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-06-16 00:00:00"
+    }
+  },
+  "client": {
+    "id": 9956,
+    "name": "-B-Local",
+    "order": {
+      "name": "S36393",
+      "date": "2025-06-17 07:18:18"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 20,
+        "falseNegatives": 7,
+        "total": 30
+      },
+      "productMetrics": {
+        "precision": 0.13043478260869565,
+        "recall": 0.3,
+        "f1Score": 0.18181818181818182,
+        "totalPredicted": 23,
+        "totalReal": 10
+      },
+      "quantityMetrics": {
+        "mae": 1.3333333333333333,
+        "wmape": 57.14285714285714,
+        "mape": 41.666666666666664,
+        "bias": -57.14285714285714,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 2
+        },
+        "rmse": 1.8257418583505538
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 20,
+          "falseNegatives": 7,
+          "total": 30
+        },
+        "productMetrics": {
+          "precision": 0.13043478260869565,
+          "recall": 0.3,
+          "f1Score": 0.18181818181818182,
+          "totalPredicted": 23,
+          "totalReal": 10
+        },
+        "quantityMetrics": {
+          "mae": 1.3333333333333333,
+          "wmape": 57.14285714285714,
+          "mape": 41.666666666666664,
+          "bias": -57.14285714285714,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 2
+          },
+          "rmse": 1.8257418583505538
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 20069,
+    "completionTokens": 3522,
+    "totalTokens": 23591
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18272,
+        "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 3,
+          "percent": 75,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86766,
+              "orderName": "S34889",
+              "date": "2025-02-14 13:34:39",
+              "quantity": 1,
+              "priceUnit": 27.92
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 121.39260416666667,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18274,
+        "productName": "[JOY06] JOY! Organic Rhubarb Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86766,
+              "orderName": "S34889",
+              "date": "2025-02-14 13:34:39",
+              "quantity": 1,
+              "priceUnit": 27.92
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 121.39260416666667,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18273,
+        "productName": "[JOY08] JOY! Organic Raspberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86766,
+              "orderName": "S34889",
+              "date": "2025-02-14 13:34:39",
+              "quantity": 1,
+              "priceUnit": 31.84
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 121.39260416666667,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18264,
+        "productName": "[BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 14.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18266,
+        "productName": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 14.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18265,
+        "productName": "[BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 14.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18269,
+        "productName": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 27.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18275,
+        "productName": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18276,
+        "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18270,
+        "productName": "[JOY05] Organic Cherry Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 31.84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18271,
+        "productName": "[JOY07] JOY! Organic Fig Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16745,
+        "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 23.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16746,
+        "productName": "[JF004] JF MAYONNAIS POIVRE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16749,
+        "productName": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16780,
+        "productName": "[JF009] JF SAUCE TARTARE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16766,
+        "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16771,
+        "productName": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16761,
+        "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 12.67
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13061,
+        "productName": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13060,
+        "productName": "[LV161] LV Tartinade Mangue curry 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13058,
+        "productName": "[LV160] LV Tartinade Aubergine 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 12.79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18344,
+        "productName": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 86766,
+                "orderName": "S34889",
+                "date": "2025-02-14 13:34:39",
+                "quantity": 1,
+                "priceUnit": 25.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18327,
+        "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18329,
+        "productName": "[NUT02] NUTS & BERRIES energy bar Superfood bio 40g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18328,
+        "productName": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18326,
+        "productName": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18325,
+        "productName": "[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18324,
+        "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18346,
+        "productName": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

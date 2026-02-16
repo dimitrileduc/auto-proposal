@@ -1,0 +1,30 @@
+{
+  "clientId": 60526,
+  "clientName": "ROB - THE GOURMETS' MARKET",
+  "orderName": "S40074",
+  "orderDate": "2025-11-03 12:12:50",
+  "cutoffDate": "2025-11-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 17,
+    "fp": 15,
+    "fn": 0,
+    "precision": 0.53125,
+    "recall": 1,
+    "f1Score": 0.6938775510204082,
+    "mae": 1.0588235294117647,
+    "wmape": 22.5,
+    "mape": 20.19607843137255,
+    "bias": -12.5
+  },
+  "distribution": {
+    "exactMatch": 11,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 40,
+    "promptTokens": 35345,
+    "completionTokens": 6045,
+    "totalTokens": 41390
+  }
+}

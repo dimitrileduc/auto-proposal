@@ -1,0 +1,30 @@
+{
+  "clientId": 24487,
+  "clientName": "Bei Valerie einkaufen & geniessen",
+  "orderName": "S39598",
+  "orderDate": "2025-10-08 07:30:06",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 16,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.7619047619047619,
+    "recall": 1,
+    "f1Score": 0.8648648648648648,
+    "mae": 0.3125,
+    "wmape": 18.51851851851852,
+    "mape": 15.625,
+    "bias": -11.11111111111111
+  },
+  "distribution": {
+    "exactMatch": 11,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 28099,
+    "completionTokens": 5189,
+    "totalTokens": 33288
+  }
+}

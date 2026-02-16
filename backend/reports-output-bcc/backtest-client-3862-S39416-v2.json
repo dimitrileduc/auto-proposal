@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:21:45.479Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-25 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3862,
+    "name": "VINHOTECA PORTUGAL e.K.",
+    "order": {
+      "name": "S39416",
+      "date": "2025-09-26 07:26:17"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 967,
+    "completionTokens": 209,
+    "totalTokens": 1176
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9006,
+        "productName": "[PF0165] FILOU COCKTAIL FRENKEN 3 L",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 120,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 120
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 89031,
+              "orderName": "S37154",
+              "date": "2025-05-30 08:23:27",
+              "quantity": 162,
+              "priceUnit": 8.76
+            },
+            {
+              "orderId": 86480,
+              "orderName": "S34603",
+              "date": "2025-01-30 10:08:30",
+              "quantity": 100,
+              "priceUnit": 8.76
+            },
+            {
+              "orderId": 85568,
+              "orderName": "S33691",
+              "date": "2024-12-05 09:17:03",
+              "quantity": 100,
+              "priceUnit": 8.5
+            },
+            {
+              "orderId": 84866,
+              "orderName": "S32989",
+              "date": "2024-10-28 06:41:57",
+              "quantity": 100,
+              "priceUnit": 8.5
+            },
+            {
+              "orderId": 83019,
+              "orderName": "S31142",
+              "date": "2024-07-05 06:18:16",
+              "quantity": 100,
+              "priceUnit": 8.5
+            },
+            {
+              "orderId": 82528,
+              "orderName": "S30651",
+              "date": "2024-06-06 05:57:29",
+              "quantity": 120,
+              "priceUnit": 8.5
+            },
+            {
+              "orderId": 81229,
+              "orderName": "S29352",
+              "date": "2024-03-15 10:37:50",
+              "quantity": 120,
+              "priceUnit": 8.5
+            },
+            {
+              "orderId": 80465,
+              "orderName": "S28588",
+              "date": "2024-01-18 13:07:47",
+              "quantity": 120,
+              "priceUnit": 8.5
+            },
+            {
+              "orderId": 79578,
+              "orderName": "S27701",
+              "date": "2023-11-17 13:09:17",
+              "quantity": 78,
+              "priceUnit": 8.5
+            }
+          ],
+          "statistics": {
+            "mean": 111.11111111111111,
+            "median": 100,
+            "stdDev": 22.153226223256183,
+            "min": 78,
+            "max": 162,
+            "cv": 0.19937903600930565,
+            "trend": "stable",
+            "outliers": [
+              162
+            ],
+            "regularityScore": 0.7017604491818338
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 69.96997974537037,
+            "lastOrderDaysAgo": 117.65038194444445,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

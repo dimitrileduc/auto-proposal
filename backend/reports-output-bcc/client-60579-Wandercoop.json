@@ -1,0 +1,902 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:04:49.484Z"
+  },
+  "client": {
+    "id": 60579,
+    "name": "Wandercoop"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-13 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 20,
+      "llm_usage": {
+        "calls": 20,
+        "promptTokens": 18833,
+        "completionTokens": 3268,
+        "totalTokens": 22101
+      }
+    },
+    "proposalFinal": {
+      "products_count": 20,
+      "total_amount": 540.2400000000001,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18272,
+        "product_name": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.92,
+        "subtotal": 27.92,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 05/11/2025 (il y a 8 jours). Bien que le cycle moyen soit d'environ 30-35 jours, l'historique montre des commandes rapprochées en juillet. En application du principe de précaution B2B et pour couvrir le risque de rupture sur l'horizon de 30 jours (Replenishment Threshold Days), un réapprovisionnement est nécessaire. ÉTAPE 2 : Estimation quantité. L'historique récent montre une rotation très faible et stable (majoritairement 1u). La médiane des commandes récentes est de 1u. Conformément à la règle sur les rotations faibles (1-2u), on maintient la quantité de 1u sans augmentation injustifiée.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 2,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 1,
+            "price_unit": 27.92
+          }
+        ]
+      },
+      {
+        "product_id": 18276,
+        "product_name": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.92,
+        "subtotal": 27.92,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre une rotation très faible mais régulière avec un cycle moyen d'environ 35 jours entre chaque commande. La dernière commande date du 5 novembre, soit il y a 8 jours. Étant donné que le seuil de réapprovisionnement est de 30 jours, le prochain besoin interviendra durant cette période de couverture (cycle de ~35 jours vs 8 jours déjà écoulés + 30 jours de visibilité). En application du principe de précaution B2B et de la règle sur les rotations faibles (1-2u), une commande de 1 unité est préconisée pour maintenir le stock sans risque de surstockage, correspondant à la médiane stricte des commandes précédentes.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 1,
+            "price_unit": 27.92
+          }
+        ]
+      },
+      {
+        "product_id": 18273,
+        "product_name": "[JOY08] JOY! Organic Raspberry Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 31.84,
+        "subtotal": 31.84,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 50 jours. La dernière commande date du 05/11/2025, soit il y a seulement 8 jours. Cependant, l'intervalle entre les deux dernières commandes était de 63 jours, et le cycle précédent était de 49 jours. Bien que nous soyons tôt dans le cycle, la règle de précaution B2B s'applique car le produit présente une rotation régulière mais à très faible volume (1 unité systématique). Pour éviter toute rupture sur un horizon de 30 jours et maintenir la disponibilité de cette référence organique, une commande est déclenchée. La quantité retenue est de 1 unité, correspondant à la médiane stricte et constante des commandes précédentes.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-18 13:10:32",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 1,
+            "price_unit": 31.84
+          }
+        ]
+      },
+      {
+        "product_id": 18353,
+        "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 35.4,
+        "confidence": "high",
+        "order_count": 17,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande moyen d'environ 18 jours. La dernière commande datant du 05/11 (il y a 8 jours), le prochain besoin est estimé sous 10 jours, ce qui entre dans la fenêtre de réapprovisionnement de 30 jours (Risque de rupture détecté). Pour la quantité, l'historique présente des volumes compris entre 1u et 4u. La médiane des commandes récentes est de 2u. Conformément aux règles de gestion B2B privilégiant la médiane et la prudence face aux variations, une commande de 2 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 3,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 1,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-13 13:00:30",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 4,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18355,
+        "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 35.4,
+        "confidence": "high",
+        "order_count": 16,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 20 jours entre chaque réapprovisionnement. La dernière commande datant du 05/11 (il y a 8 jours), le prochain besoin théorique se situe autour du 25/11, ce qui entre dans l'horizon des 30 jours du seuil de réapprovisionnement. En application du principe de précaution B2B, un risque de rupture est identifié. Pour la quantité, l'historique récent présente des volumes de 1, 2 et 3 unités. La médiane de ces commandes est de 2 unités. Conformément aux règles de gestion, nous retenons cette valeur médiane pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 3,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 3,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-13 13:00:30",
+            "quantity": 1,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 3,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18351,
+        "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 35.4,
+        "confidence": "high",
+        "order_count": 18,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Analyse du cycle de commande. L'historique montre des commandes régulières environ toutes les 3 à 4 semaines (moyenne ~20 jours). La dernière commande date du 05/11, soit il y a 8 jours. Avec un seuil de réapprovisionnement de 30 jours, le prochain besoin tombera dans la fenêtre de risque (8 + 30 = 38 jours depuis la dernière commande, ce qui dépasse largement le cycle moyen). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : Calcul de la quantité. Les quantités récentes sont : 3, 2, 1, 2, 1, 1, 2, 4. La médiane de ces valeurs est de 2u. On écarte le pic exceptionnel de 4u. La quantité retenue est la médiane pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-13 13:00:30",
+            "quantity": 1,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 2,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 17.7,
+        "subtotal": 35.4,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 20 jours sur les derniers mois. La dernière commande date du 05/11, soit il y a 8 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture survient d'ici 22 jours, ce qui entre dans la fenêtre de vigilance. Le cycle étant légèrement irrégulier (allant de 15 à 40 jours), le principe de précaution B2B s'applique pour éviter une rupture. Pour la quantité, la médiane des commandes récentes (1, 1, 1, 2, 2, 2, 2, 3) est de 2 unités. On retient cette valeur médiane stable, en ignorant le pic ponctuel de 3 unités.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-18 13:10:32",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-06-03 13:54:59",
+            "quantity": 1,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 2,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-04-28 08:31:34",
+            "quantity": 3,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-04-07 08:11:00",
+            "quantity": 3,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18327,
+        "product_name": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 32.1,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande moyen d'environ 28 jours. La dernière commande datant du 05/11 (il y a 8 jours), le prochain besoin est estimé autour du 03/12, ce qui entre dans l'horizon des 30 jours du seuil de réapprovisionnement. Bien que la dernière commande soit de 1u, la médiane des quantités sur les 5 dernières commandes est de 2u. En application du principe de précaution B2B pour éviter une rupture sur un produit à rotation régulière, une commande de 2 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 13:54:59",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 2,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-04-28 08:31:34",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 2,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 1,
+            "price_unit": 16.05
+          }
+        ]
+      },
+      {
+        "product_id": 18326,
+        "product_name": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 16.05,
+        "confidence": "high",
+        "order_count": 15,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier avec un intervalle moyen d'environ 20 à 30 jours. La dernière commande date du 5 novembre (il y a 8 jours). Compte tenu du seuil de réapprovisionnement de 30 jours, le risque de rupture survient d'ici début décembre. En application du principe de précaution B2B et pour couvrir l'horizon de 30 jours, une commande est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane et à la fréquence constante observée sur la majorité des commandes récentes (7 sur 8).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-28 08:31:34",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 1,
+            "price_unit": 16.05
+          }
+        ]
+      },
+      {
+        "product_id": 18322,
+        "product_name": "[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 35.1,
+        "confidence": "high",
+        "order_count": 14,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier d'environ 30 à 35 jours (03/09, 02/10, 05/11). La dernière commande datant du 05/11, nous entrons dans la fenêtre de réapprovisionnement critique pour couvrir les 30 prochains jours (Replenishment Threshold Days). Bien que l'intervalle ne soit pas encore totalement écoulé, le principe de précaution B2B impose de prévoir la commande pour éviter la rupture. La quantité retenue est de 2 unités, correspondant à la médiane des commandes récentes (1, 2, 2, 2, 3, 3), conformément à la règle de ne pas surestimer le stock.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 3,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 3,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-13 13:00:30",
+            "quantity": 4,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 2,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 18328,
+        "product_name": "[NUT03] NUTS & BERRIES energy bar Mediterran bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 16.05,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande moyen d'environ 25 à 30 jours (écarts entre sept/oct et oct/nov). La dernière commande date du 05/11, soit il y a 8 jours. Avec un seuil de réapprovisionnement de 30 jours, le prochain besoin théorique se situe autour du 05/12, ce qui entre dans l'horizon de prévision. Bien qu'une commande de 2 unités ait été enregistrée en novembre, la médiane historique et la récurrence dominante sur les mois précédents est de 1 unité. En application du principe de précaution B2B et de la règle de choisir la valeur la plus basse en cas de doute sur une augmentation, une quantité de 1 est préconisée.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-03 13:54:59",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 1,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 2,
+            "price_unit": 16.05
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 1,
+            "price_unit": 16.05
+          }
+        ]
+      },
+      {
+        "product_id": 18325,
+        "product_name": "[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 17.55,
+        "confidence": "high",
+        "order_count": 14,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 02/10/2025, soit 42 jours. Le cycle moyen observé est d'environ 23 jours. Nous avons largement dépassé ce cycle (182% du cycle moyen), ce qui indique un risque de rupture imminent ou une vente perdue. Le seuil de réapprovisionnement de 30 jours confirme l'urgence de commander. ÉTAPE 2 : Estimation quantité. L'historique récent montre des volumes très faibles et stables (1u ou 2u). La médiane des commandes récentes est de 1u. Conformément à la règle sur les rotations faibles (1-2u) et au principe de choisir la valeur la plus basse en cas de doute pour éviter le surstock, la quantité retenue est de 1u.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-13 13:00:30",
+            "quantity": 1,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 18323,
+        "product_name": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 17.55,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Le cycle moyen entre les commandes est d'environ 28 jours. La dernière commande remonte au 02/10/2025, soit 42 jours avant la date actuelle. Le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, indiquant un besoin immédiat pour éviter la rupture. ÉTAPE 2 : L'historique récent montre des quantités de 4u, 1u, 1u, 1u et 4u. La médiane de ces commandes est de 1u. Conformément à la règle de privilégier la médiane et la valeur la plus basse en cas de doute sur une faible rotation, la quantité retenue est de 1u.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 1,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 4,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 2,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 5,
+            "price_unit": 17.55
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 3,
+            "price_unit": 17.55
+          }
+        ]
+      },
+      {
+        "product_id": 18269,
+        "product_name": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.36,
+        "subtotal": 27.36,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "Le cycle de commande observé est d'environ 68 jours (entre juillet et septembre). Au 13 novembre, 50 jours se sont écoulés depuis la dernière commande, ce qui représente environ 74% du cycle moyen. Selon la règle des 70%, le risque de rupture est identifié dans l'horizon des 30 jours à venir. La quantité est fixée à 1 unité, correspondant à la médiane stricte et constante des commandes récentes pour ce produit à rotation faible.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-18 10:48:56",
+            "quantity": 1,
+            "price_unit": 27.36
+          },
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 1,
+            "price_unit": 27.36
+          },
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 27.36
+          },
+          {
+            "date": "2025-01-27 07:58:19",
+            "quantity": 1,
+            "price_unit": 27.36
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 1,
+            "price_unit": 27.36
+          }
+        ]
+      },
+      {
+        "product_id": 18275,
+        "product_name": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.92,
+        "subtotal": 27.92,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "L'historique récent montre un cycle de commande d'environ 30 à 70 jours (intervalles de 28 et 70 jours). La dernière commande remonte au 24 septembre, soit 50 jours avant la date actuelle. En appliquant le principe de précaution B2B, le délai depuis la dernière commande dépasse 70% du cycle moyen observé, ce qui indique un risque de rupture imminent dans l'horizon des 30 jours (Replenishment Threshold). La quantité est fixée à 1 unité, correspondant à la médiane stricte et constante des commandes précédentes.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 12:59:39",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-07-16 06:25:08",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-06-18 13:10:32",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-05-09 12:30:30",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-01-13 13:00:30",
+            "quantity": 1,
+            "price_unit": 27.92
+          }
+        ]
+      },
+      {
+        "product_id": 18270,
+        "product_name": "[JOY05] Organic Cherry Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 31.84,
+        "subtotal": 31.84,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre une rotation régulière mais à faible fréquence (environ une commande par mois). La dernière commande remonte au 24 septembre 2025, soit 50 jours avant la date actuelle. Ce délai dépasse largement le cycle moyen observé (environ 20 à 30 jours entre les commandes précédentes), ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement non couvert pour la période de 30 jours à venir. En application du principe de précaution B2B et face à une rotation très stable de 1 unité par commande, la quantité retenue est de 1 unité (médiane historique).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-02-28 13:08:41",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-01-13 13:00:30",
+            "quantity": 1,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 1,
+            "price_unit": 31.84
+          }
+        ]
+      },
+      {
+        "product_id": 18271,
+        "product_name": "[JOY07] JOY! Organic Fig Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.92,
+        "subtotal": 27.92,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle d'environ 51 jours entre les deux dernières commandes. La dernière commande datant du 08 août 2025, le délai écoulé (97 jours) dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Bien que la rotation soit très faible, le principe de précaution B2B impose de prévoir une commande pour éviter une rupture prolongée. La quantité est fixée à 1 unité, correspondant à la médiane et à la constante observée dans l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-08 11:54:27",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-06-18 13:10:32",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-04-07 08:08:11",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-02-07 14:40:01",
+            "quantity": 1,
+            "price_unit": 27.92
+          }
+        ]
+      },
+      {
+        "product_id": 18274,
+        "product_name": "[JOY06] JOY! Organic Rhubarb Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27.92,
+        "subtotal": 27.92,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 18 juillet 2025, soit environ 118 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement tout cycle raisonnable pour un produit en catalogue. En application du principe de précaution B2B (si doute sur le cycle → prévoir), un risque de rupture ou un besoin de réassort est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité (médiane de l'historique disponible) pour éviter le surstockage tout en assurant la présence du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-18 10:48:56",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-06-03 13:54:59",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-03-24 07:58:35",
+            "quantity": 1,
+            "price_unit": 27.92
+          },
+          {
+            "date": "2025-01-06 13:19:15",
+            "quantity": 1,
+            "price_unit": 27.92
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 18329,
+        "product_name": "[NUT02] NUTS & BERRIES energy bar Superfood bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 16.05,
+        "subtotal": 16.05,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 24 septembre 2025, soit 50 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande (rotation très faible), le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et pour éviter une rupture sur un produit à rotation lente, une commande est nécessaire. Conformément aux règles de gestion des faibles rotations (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 12:59:39",
+            "quantity": 1,
+            "price_unit": 16.05
+          }
+        ]
+      },
+      {
+        "product_id": 18324,
+        "product_name": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+        "product_uom": "TU15",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 17.55,
+        "subtotal": 17.55,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 24 septembre 2025, soit 50 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent ou déjà avéré pour ce produit à rotation lente. En l'absence d'un cycle régulier établi, le principe de précaution B2B impose de prévoir une commande. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément aux règles de gestion des rotations faibles (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane de l'historique disponible, afin d'éviter un surstockage inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 12:59:39",
+            "quantity": 1,
+            "price_unit": 17.55
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 18,
+    "optional_products_count": 2,
+    "base_amount": 506.64000000000016,
+    "optional_amount": 33.6,
+    "total_amount": 540.2400000000001,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 5268
+}

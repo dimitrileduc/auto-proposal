@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:05:08.037Z"
+  },
+  "client": {
+    "id": 58284,
+    "name": "SPRL GOOD & FOOD"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-04 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 14,
+      "llm_usage": {
+        "calls": 16,
+        "promptTokens": 14063,
+        "completionTokens": 2222,
+        "totalTokens": 16285
+      }
+    },
+    "proposalFinal": {
+      "products_count": 14,
+      "total_amount": 8108.97,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18405,
+        "product_name": "[PF3357] DLL DRESSING AVOCAT GINGER MANGO 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 110,
+        "quantity_source": "llm",
+        "price_unit": 5.61,
+        "subtotal": 617.1,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "Le cycle de commande observé est d'environ 50 jours (entre août et octobre). Depuis la dernière commande du 3 octobre, 32 jours se sont écoulés. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique où le stock risque de s'épuiser avant la prochaine opportunité de commande. En application du principe de précaution B2B, un besoin est détecté. La quantité est fixée à 110 unités, correspondant à la médiane (et valeur basse) des commandes récentes, afin de maintenir la rotation régulière sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 110,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 111,
+            "price_unit": 5.61
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 564,
+            "price_unit": 5.61
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 2,
+            "price_unit": 5.61
+          },
+          {
+            "date": "2025-02-24 14:37:45",
+            "quantity": 216,
+            "price_unit": 5.61
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1128,
+            "price_unit": 5.61
+          }
+        ]
+      },
+      {
+        "product_id": 18401,
+        "product_name": "[PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 125,
+        "quantity_source": "llm",
+        "price_unit": 5.16,
+        "subtotal": 645,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle montre une commande environ tous les 50 jours (50 jours entre le 14/08 et le 03/10). Au 04/11, 32 jours se sont écoulés depuis la dernière commande. Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons l'échéance théorique du cycle (50 jours) durant cette période de couverture. Il existe donc un risque de rupture imminent. La quantité est fixée à 125 unités, correspondant à la médiane des commandes récentes (125 et 126), en privilégiant la valeur la plus basse selon les règles de gestion.",
+          "summary": "",
+          "baseline_quantity": 125,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-27 12:42:41",
+            "quantity": 282,
+            "price_unit": 5.16
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 564,
+            "price_unit": 5.16
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 2,
+            "price_unit": 5.16
+          },
+          {
+            "date": "2025-02-24 14:40:51",
+            "quantity": 162,
+            "price_unit": 5.16
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1128,
+            "price_unit": 5.16
+          }
+        ]
+      },
+      {
+        "product_id": 18406,
+        "product_name": "[PF3358] DLL DRESSING AVOCAT ITALIAN 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 124,
+        "quantity_source": "llm",
+        "price_unit": 4.75,
+        "subtotal": 589,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Le cycle observé entre les deux dernières commandes est de 50 jours (14/08 au 03/10). Depuis la dernière commande du 03/10, 32 jours se sont écoulés. Ce délai dépasse 60% du cycle moyen et nous entrons dans la fenêtre de réapprovisionnement de 30 jours. Le risque de rupture est imminent. ÉTAPE 2 : Estimation quantité. L'historique récent montre deux commandes de 135u et 124u. En appliquant la règle de la médiane et le principe de prudence (choisir la valeur la plus basse en cas de doute), la quantité retenue est de 124u.",
+          "summary": "",
+          "baseline_quantity": 124,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-03 12:32:05",
+            "quantity": 124,
+            "price_unit": 4.75
+          },
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 135,
+            "price_unit": 4.75
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 564,
+            "price_unit": 4.75
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 5,
+            "price_unit": 4.75
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1128,
+            "price_unit": 4.75
+          }
+        ]
+      },
+      {
+        "product_id": 18407,
+        "product_name": "[PF3359] DLL MAYONNAISE AVOCAT CHIPOTLE 200ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 350,
+        "quantity_source": "llm",
+        "price_unit": 5.98,
+        "subtotal": 2093,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 30 septembre 2025, soit 35 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le cycle de commande est déjà engagé et le risque de rupture est imminent. En l'absence d'historique plus large ou de données N-1, la règle de précaution B2B impose de prévoir une commande. La quantité retenue correspond à la dernière commande connue (350u), celle-ci servant de référence unique pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 350,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-30 07:00:43",
+            "quantity": 350,
+            "price_unit": 5.98
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 700,
+            "price_unit": 5.98
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 5,
+            "price_unit": 5.98
+          },
+          {
+            "date": "2025-02-03 10:19:49",
+            "quantity": 4,
+            "price_unit": 5.98
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1400,
+            "price_unit": 5.98
+          }
+        ]
+      },
+      {
+        "product_id": 8797,
+        "product_name": "[ING0271] SIROP D'AGAVE BIO",
+        "product_uom": "kg",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 3.25,
+        "subtotal": 81.25,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 05/09/2025, soit 60 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est élevé car le cycle de consommation est inconnu (une seule commande récente). En application du principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : L'historique récent ne présente qu'une seule valeur de 25 unités. En l'absence d'autres données ou de saisonnalité N-1, la quantité de 25 unités est reconduite pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-05 12:33:28",
+            "quantity": 25,
+            "price_unit": 3.25
+          },
+          {
+            "date": "2025-01-09 09:16:44",
+            "quantity": 0.3,
+            "price_unit": 3.25
+          }
+        ]
+      },
+      {
+        "product_id": 18402,
+        "product_name": "[PF3354] DLL DRESSING AVOCAT BALSAMICO 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 20,
+        "quantity_source": "llm",
+        "price_unit": 5.46,
+        "subtotal": 109.2,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de rotation standard pour ce type de produit. En application du principe de précaution B2B et face à l'incertitude du cycle, un risque de rupture est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. En l'absence de données multiples pour calculer une médiane, la quantité de la commande la plus récente (20u) est reconduite pour maintenir le stock sans surévaluer.",
+          "summary": "",
+          "baseline_quantity": 20,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 20,
+            "price_unit": 5.46
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 564,
+            "price_unit": 5.46
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 5,
+            "price_unit": 5.46
+          },
+          {
+            "date": "2025-02-24 14:37:45",
+            "quantity": 165,
+            "price_unit": 5.46
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1128,
+            "price_unit": 5.46
+          }
+        ]
+      },
+      {
+        "product_id": 18404,
+        "product_name": "[PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 118,
+        "quantity_source": "llm",
+        "price_unit": 5.06,
+        "subtotal": 597.0799999999999,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En l'absence d'historique de cycle, le principe de précaution B2B s'applique pour éviter une rupture de stock prolongée. ÉTAPE 2 : La seule donnée historique disponible est de 118 unités. En l'absence d'autres points de comparaison ou de saisonnalité N-1, cette quantité est retenue comme base de référence pour le réapprovisionnement.",
+          "summary": "",
+          "baseline_quantity": 118,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 118,
+            "price_unit": 5.06
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 564,
+            "price_unit": 5.06
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 5,
+            "price_unit": 5.06
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1128,
+            "price_unit": 5.06
+          }
+        ]
+      },
+      {
+        "product_id": 18403,
+        "product_name": "[PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 401,
+        "quantity_source": "llm",
+        "price_unit": 5.41,
+        "subtotal": 2169.41,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle (4 novembre). Bien que l'historique soit limité à une seule commande, le délai écoulé est significatif. En application du principe de précaution B2B (cycle irrégulier ou difficile à déterminer), un besoin de réapprovisionnement est détecté pour éviter une rupture de stock prolongée. ÉTAPE 2 : ESTIMATION QUANTITÉ. En l'absence d'historique multiple ou de données N-1, la quantité est basée sur la seule référence récente disponible (401u), conformément à la règle de maintien des volumes en cas de rotation régulière ou unique.",
+          "summary": "",
+          "baseline_quantity": 401,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 401,
+            "price_unit": 5.41
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 564,
+            "price_unit": 5.41
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 5,
+            "price_unit": 5.41
+          },
+          {
+            "date": "2025-02-03 10:19:49",
+            "quantity": 1,
+            "price_unit": 5.41
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1128,
+            "price_unit": 5.41
+          }
+        ]
+      },
+      {
+        "product_id": 18387,
+        "product_name": "[PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 8,
+        "quantity_source": "llm",
+        "price_unit": 5.72,
+        "subtotal": 45.76,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente, le délai écoulé est important et dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (cycle difficile à déterminer = prévoir), un risque de rupture est identifié. ÉTAPE 2 : En l'absence d'historique multiple, la quantité de la dernière commande connue (8 unités) est retenue comme référence pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 8,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 8,
+            "price_unit": 5.72
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 564,
+            "price_unit": 5.72
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 5,
+            "price_unit": 5.72
+          },
+          {
+            "date": "2025-02-03 10:19:49",
+            "quantity": 1,
+            "price_unit": 5.72
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1128,
+            "price_unit": 5.72
+          }
+        ]
+      },
+      {
+        "product_id": 18408,
+        "product_name": "[PF3360] DLL MAYONNAISE AVOCAT 200ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 141,
+        "quantity_source": "llm",
+        "price_unit": 6.02,
+        "subtotal": 848.8199999999999,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle. En l'absence d'historique récurrent permettant de définir un cycle précis, le principe de précaution B2B s'applique car le délai écoulé suggère un besoin imminent de réapprovisionnement pour éviter une rupture de stock. Conformément aux règles de gestion, la quantité retenue se base sur l'historique récent disponible, soit 141 unités.",
+          "summary": "",
+          "baseline_quantity": 141,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 141,
+            "price_unit": 6.02
+          },
+          {
+            "date": "2025-05-19 14:33:45",
+            "quantity": 700,
+            "price_unit": 6.02
+          },
+          {
+            "date": "2025-03-13 15:52:05",
+            "quantity": 5,
+            "price_unit": 6.02
+          },
+          {
+            "date": "2025-02-03 10:19:49",
+            "quantity": 4,
+            "price_unit": 6.02
+          },
+          {
+            "date": "2025-01-08 09:53:46",
+            "quantity": 1400,
+            "price_unit": 6.02
+          }
+        ]
+      },
+      {
+        "product_id": 17725,
+        "product_name": "[PI3338] PI VINAIGRETTE CILANTRO LIME G&F",
+        "product_uom": "kg",
+        "quantity_recommended": 80,
+        "quantity_source": "llm",
+        "price_unit": 1.37,
+        "subtotal": 109.60000000000001,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 14 août, soit 82 jours avant la date actuelle. En l'absence d'un historique complet permettant de définir un cycle précis, le principe de précaution B2B s'applique car le délai écoulé suggère un besoin imminent de réapprovisionnement pour éviter une rupture de stock prolongée. La quantité retenue correspond à la dernière commande connue (80u), conformément à la règle de maintien des volumes en cas de rotation régulière ou d'historique restreint.",
+          "summary": "",
+          "baseline_quantity": 80,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 80,
+            "price_unit": 1.37
+          },
+          {
+            "date": "2025-01-09 09:04:12",
+            "quantity": 10,
+            "price_unit": 0.74
+          }
+        ]
+      },
+      {
+        "product_id": 17722,
+        "product_name": "[PI3336] PI VINAIGRETTE ITALIAN G&F",
+        "product_uom": "kg",
+        "quantity_recommended": 85,
+        "quantity_source": "llm",
+        "price_unit": 0.62,
+        "subtotal": 52.7,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente pour établir un cycle, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (incertitude sur la rotation), un besoin est détecté pour éviter une rupture prolongée. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique multiple ou de données N-1, la quantité de la dernière commande connue (85u) est reconduite comme référence de consommation pour ce produit.",
+          "summary": "",
+          "baseline_quantity": 85,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 85,
+            "price_unit": 0.62
+          },
+          {
+            "date": "2025-01-09 09:04:12",
+            "quantity": 10,
+            "price_unit": 0.53
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 17723,
+        "product_name": "[PI3337] PI VINAIGRETTE GRAINES DE PAVOT G&F",
+        "product_uom": "kg",
+        "quantity_recommended": 95,
+        "quantity_source": "llm",
+        "price_unit": 0.83,
+        "subtotal": 78.85,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle. Bien qu'il n'y ait qu'une seule commande récente pour établir un cycle précis, le délai écoulé dépasse largement les seuils de réapprovisionnement standards en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue est de 95 unités, correspondant à la valeur unique de l'historique récent, faute de médiane disponible.",
+          "summary": "",
+          "baseline_quantity": 95,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 95,
+            "price_unit": 0.83
+          }
+        ]
+      },
+      {
+        "product_id": 17717,
+        "product_name": "[PI3333] PI VINAIGRETTE MIEL MOUTARDE G&F",
+        "product_uom": "kg",
+        "quantity_recommended": 95,
+        "quantity_source": "llm",
+        "price_unit": 0.76,
+        "subtotal": 72.2,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 14 août 2025, soit 82 jours avant la date actuelle. En l'absence d'un historique complet pour établir un cycle précis, le délai écoulé est significatif et dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. La quantité retenue correspond à la médiane de la commande récente (95u) afin de maintenir le stock sur ce produit à rotation ponctuelle.",
+          "summary": "",
+          "baseline_quantity": 95,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-14 12:47:50",
+            "quantity": 95,
+            "price_unit": 0.76
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 12,
+    "optional_products_count": 2,
+    "base_amount": 7957.92,
+    "optional_amount": 151.05,
+    "total_amount": 8108.97,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 4317
+}

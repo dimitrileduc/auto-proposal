@@ -1,0 +1,30 @@
+{
+  "clientId": 58216,
+  "clientName": "TIERHOF ALTE KIRCHE",
+  "orderName": "S40240",
+  "orderDate": "2025-11-12 10:45:37",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1.5,
+    "wmape": 42.857142857142854,
+    "mape": 41.666666666666664,
+    "bias": -42.857142857142854
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 17497,
+    "completionTokens": 2914,
+    "totalTokens": 20411
+  }
+}

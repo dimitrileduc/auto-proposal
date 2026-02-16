@@ -1,0 +1,949 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:07:12.655Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-07-03 00:00:00"
+    }
+  },
+  "client": {
+    "id": 17105,
+    "name": "FOODPRINT SRL, FOODPRINT SRL, Adresse de facturation",
+    "order": {
+      "name": "S37902",
+      "date": "2025-07-04 11:57:50"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 0,
+        "falsePositives": 30,
+        "falseNegatives": 2,
+        "total": 32
+      },
+      "productMetrics": {
+        "precision": 0,
+        "recall": 0,
+        "f1Score": 0,
+        "totalPredicted": 30,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 29,
+          "falseNegatives": 2,
+          "total": 31
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 29,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 26325,
+    "completionTokens": 4536,
+    "totalTokens": 30861
+  },
+  "products": {
+    "truePositives": [],
+    "falsePositives": [
+      {
+        "productId": 9097,
+        "productName": "[PF1469] JF MAYONNAI TRUFFES 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 400,
+        "reason": "Predicted 400u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89608,
+                "orderName": "S37731",
+                "date": "2025-06-27 12:20:24",
+                "quantity": 400,
+                "priceUnit": 17.94
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9100,
+        "productName": "[PF1473] JF MAYONNAIS POIVRE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 200,
+        "reason": "Predicted 200u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89608,
+                "orderName": "S37731",
+                "date": "2025-06-27 12:20:24",
+                "quantity": 200,
+                "priceUnit": 14.82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9135,
+        "productName": "[PF1563] LV AIOLI PESTO BIO 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 185,
+        "reason": "Predicted 185u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89608,
+                "orderName": "S37731",
+                "date": "2025-06-27 12:20:24",
+                "quantity": 185,
+                "priceUnit": 9.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14913,
+        "productName": "[PI3267] PI MAYONNAISE BIO CONS 250ML",
+        "mismatchType": "false_positive",
+        "quantity": 680,
+        "reason": "Predicted 680u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89608,
+                "orderName": "S37731",
+                "date": "2025-06-27 12:20:24",
+                "quantity": 680,
+                "priceUnit": 6.33
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9193,
+        "productName": "[PF1706] LV TARTINADE BIO BETTERAVE 200",
+        "mismatchType": "false_positive",
+        "quantity": 990,
+        "reason": "Predicted 990u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 990,
+                "priceUnit": 7.68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9226,
+        "productName": "[PF1768] LV TARTINADE BIO TRUFFES 135G",
+        "mismatchType": "false_positive",
+        "quantity": 500,
+        "reason": "Predicted 500u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 500,
+                "priceUnit": 11.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9241,
+        "productName": "[PF1786] TARTI ALNATUR BIO MANGUE 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 300,
+        "reason": "Predicted 300u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 300,
+                "priceUnit": 7.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9244,
+        "productName": "[PF1789] TARTI ALNATUR BIO PAPRIKA 200M",
+        "mismatchType": "false_positive",
+        "quantity": 300,
+        "reason": "Predicted 300u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 300,
+                "priceUnit": 7.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9273,
+        "productName": "[PF1790] TARTI ALNATUR BIO TOMATE 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 300,
+        "reason": "Predicted 300u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 300,
+                "priceUnit": 7.32
+              },
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 300,
+                "priceUnit": 7.32
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14439,
+        "productName": "[PF3233] LV BE TARTINADE BIO TOSCANE 190G",
+        "mismatchType": "false_positive",
+        "quantity": 1050,
+        "reason": "Predicted 1050u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 1050,
+                "priceUnit": 8.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17401,
+        "productName": "[PF3307] LV DE BROTAUFSTRICH BIO DATTE CHILI 180G",
+        "mismatchType": "false_positive",
+        "quantity": 300,
+        "reason": "Predicted 300u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 300,
+                "priceUnit": 7.74
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9685,
+        "productName": "[PF2002] TVF TARTINADE BIO MANGUE 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 350,
+        "reason": "Predicted 350u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 350,
+                "priceUnit": 7.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9687,
+        "productName": "[PF2003] TVF TARTINADE BIO PAPRIKA200ML",
+        "mismatchType": "false_positive",
+        "quantity": 350,
+        "reason": "Predicted 350u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 350,
+                "priceUnit": 7.86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9688,
+        "productName": "[PF2007] TVF TARTINADE BIO TOMATE 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 350,
+        "reason": "Predicted 350u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 5,
+            "orders": [
+              {
+                "orderId": 89606,
+                "orderName": "S37729",
+                "date": "2025-06-27 12:06:35",
+                "quantity": 350,
+                "priceUnit": 7.56
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9190,
+        "productName": "[PF1703] LV MAYONNAISE BIO 470ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 140,
+        "reason": "Predicted 140u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 140,
+                "priceUnit": 21.991
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9094,
+        "productName": "[PF1462] LV AIOLI BIO 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 370,
+        "reason": "Predicted 370u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 370,
+                "priceUnit": 9.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9132,
+        "productName": "[PF1557] LV TARTINADE BIO AUBERGINE 200",
+        "mismatchType": "false_positive",
+        "quantity": 2000,
+        "reason": "Predicted 2000u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 2000,
+                "priceUnit": 7.68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9369,
+        "productName": "[PF1951] LV TARTINADE BIO BASILIC 400G",
+        "mismatchType": "false_positive",
+        "quantity": 166,
+        "reason": "Predicted 166u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 166,
+                "priceUnit": 14.16
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9194,
+        "productName": "[PF1707] LV TARTINADE BIO LENTILLE 200",
+        "mismatchType": "false_positive",
+        "quantity": 330,
+        "reason": "Predicted 330u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 330,
+                "priceUnit": 7.98
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9156,
+        "productName": "[PF1629] LV TARTINADE BIO TOMATE 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 2310,
+        "reason": "Predicted 2310u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 2310,
+                "priceUnit": 7.56
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14442,
+        "productName": "[PF3235] LV BE TARTINADE BIO TOMATE OLIVE CAPRE 190G",
+        "mismatchType": "false_positive",
+        "quantity": 330,
+        "reason": "Predicted 330u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 330,
+                "priceUnit": 8.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 19304,
+        "productName": "[PF3366] LV BE TARTINADE BIO ASPERGE 190G",
+        "mismatchType": "false_positive",
+        "quantity": 700,
+        "reason": "Predicted 700u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 700,
+                "priceUnit": 11.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9197,
+        "productName": "[PF1719] LV VIN CIBOULET PET 250 BIO",
+        "mismatchType": "false_positive",
+        "quantity": 500,
+        "reason": "Predicted 500u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 8,
+            "orders": [
+              {
+                "orderId": 89530,
+                "orderName": "S37653",
+                "date": "2025-06-24 13:41:51",
+                "quantity": 500,
+                "priceUnit": 11.94
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9385,
+        "productName": "[PF1967] JF SAUCE AIOLI 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 200,
+        "reason": "Predicted 200u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 48,
+            "orders": [
+              {
+                "orderId": 88699,
+                "orderName": "S36822",
+                "date": "2025-05-15 09:26:37",
+                "quantity": 200,
+                "priceUnit": 14.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9160,
+        "productName": "[PF1639] JF BURGER SQUEEZE 300ML",
+        "mismatchType": "false_positive",
+        "quantity": 150,
+        "reason": "Predicted 150u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 48,
+            "orders": [
+              {
+                "orderId": 88699,
+                "orderName": "S36822",
+                "date": "2025-05-15 09:26:37",
+                "quantity": 150,
+                "priceUnit": 15.96
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9112,
+        "productName": "[PF1524] JF VINAIGRET TRUFFES WECK 200M",
+        "mismatchType": "false_positive",
+        "quantity": 130,
+        "reason": "Predicted 130u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 48,
+            "orders": [
+              {
+                "orderId": 88699,
+                "orderName": "S36822",
+                "date": "2025-05-15 09:26:37",
+                "quantity": 130,
+                "priceUnit": 19.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9130,
+        "productName": "[PF1553] JF VINAIGRET MIEL MOU WECK 200",
+        "mismatchType": "false_positive",
+        "quantity": 120,
+        "reason": "Predicted 120u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 48,
+            "orders": [
+              {
+                "orderId": 88699,
+                "orderName": "S36822",
+                "date": "2025-05-15 09:26:37",
+                "quantity": 120,
+                "priceUnit": 16.83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9248,
+        "productName": "[PF1793] LV MAYONNAI TRUFFES 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 200,
+        "reason": "Predicted 200u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 86965,
+                "orderName": "S35088",
+                "date": "2025-02-26 09:11:06",
+                "quantity": 200,
+                "priceUnit": 17.94
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9255,
+        "productName": "[PF1800] LV MAYONNAISE OEUFS 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 200,
+        "reason": "Predicted 200u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 86965,
+                "orderName": "S35088",
+                "date": "2025-02-26 09:11:06",
+                "quantity": 200,
+                "priceUnit": 13.68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9265,
+        "productName": "[PF1810] LV SAUCE BEARNAISE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 200,
+        "reason": "Predicted 200u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 86965,
+                "orderName": "S35088",
+                "date": "2025-02-26 09:11:06",
+                "quantity": 200,
+                "priceUnit": 14.34
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 8991,
+        "productName": "[PF0088] FILOU VOL AU VENT 800 GR",
+        "mismatchType": "false_negative",
+        "quantity": 8,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 9031,
+        "productName": "[PF1224] FILOU BOULETTES TOMATE 800 GR",
+        "mismatchType": "false_negative",
+        "quantity": 8,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

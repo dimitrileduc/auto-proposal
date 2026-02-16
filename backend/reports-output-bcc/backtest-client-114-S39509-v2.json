@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:12:27.371Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-01 00:00:00"
+    }
+  },
+  "client": {
+    "id": 114,
+    "name": "Naturkost-und Kräuterladen",
+    "order": {
+      "name": "S39509",
+      "date": "2025-10-02 07:12:56"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 11,
+        "falseNegatives": 0,
+        "total": 12
+      },
+      "productMetrics": {
+        "precision": 0.08333333333333333,
+        "recall": 1,
+        "f1Score": 0.15384615384615385,
+        "totalPredicted": 12,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 11,
+          "falseNegatives": 0,
+          "total": 11
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 11,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 11353,
+    "completionTokens": 2038,
+    "totalTokens": 13391
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18323,
+        "productName": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 90984,
+              "orderName": "S39107",
+              "date": "2025-09-11 07:05:48",
+              "quantity": 3,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88722,
+              "orderName": "S36845",
+              "date": "2025-05-16 09:10:10",
+              "quantity": 1,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88722,
+              "orderName": "S36845",
+              "date": "2025-05-16 09:10:10",
+              "quantity": 1,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87543,
+              "orderName": "S35666",
+              "date": "2025-03-27 14:46:07",
+              "quantity": 1,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 1,
+            "stdDev": 0.8660254037844386,
+            "min": 1,
+            "max": 3,
+            "cv": 0.5773502691896257,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.30760029442484244
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 55.87955632716049,
+            "lastOrderDaysAgo": 19.704305555555557,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 569,
+        "productName": "[MF0029] MF Tarti Datte chili 250g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 9,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 80496,
+                "orderName": "S28619",
+                "date": "2024-01-22 13:41:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 573,
+        "productName": "[MF0033] MF Tarti Poivron chilli 250g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 9,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 80496,
+                "orderName": "S28619",
+                "date": "2024-01-22 13:41:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 56833,
+                "orderName": "S04956",
+                "date": "2023-11-02 07:22:09",
+                "quantity": 1,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 570,
+        "productName": "[MF0030] MF Tarti Mangue Curry 250g ",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 11,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 80496,
+                "orderName": "S28619",
+                "date": "2024-01-22 13:41:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 79845,
+                "orderName": "S27968",
+                "date": "2023-12-05 07:39:04",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 56833,
+                "orderName": "S04956",
+                "date": "2023-11-02 07:22:09",
+                "quantity": 1,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 575,
+        "productName": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 10,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 80496,
+                "orderName": "S28619",
+                "date": "2024-01-22 13:41:52",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 79845,
+                "orderName": "S27968",
+                "date": "2023-12-05 07:39:04",
+                "quantity": 2,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 572,
+        "productName": "[MF0032] MF Tarti Pois chiches 250 g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 79845,
+                "orderName": "S27968",
+                "date": "2023-12-05 07:39:04",
+                "quantity": 1,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 568,
+        "productName": "[MF0028] ​MF Tarti Carotte Gingembre 250g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 79845,
+                "orderName": "S27968",
+                "date": "2023-12-05 07:39:04",
+                "quantity": 1,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16978,
+        "productName": "[MF0054] MF Noix de cajou - Fleur de sel 133g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 3,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 3,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 80496,
+                "orderName": "S28619",
+                "date": "2024-01-22 13:41:52",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 79845,
+                "orderName": "S27968",
+                "date": "2023-12-05 07:39:04",
+                "quantity": 1,
+                "priceUnit": 20.62
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16979,
+        "productName": "[MF0055] MF Noix de cajou - Curry 133g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 10,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 3,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 3,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 80496,
+                "orderName": "S28619",
+                "date": "2024-01-22 13:41:52",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 79845,
+                "orderName": "S27968",
+                "date": "2023-12-05 07:39:04",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 56833,
+                "orderName": "S04956",
+                "date": "2023-11-02 07:22:09",
+                "quantity": 2,
+                "priceUnit": 20.62
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16980,
+        "productName": "[MF0056] MF Noix de cajou - Herbes de Provence 133g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 10,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 3,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 3,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 2,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 80496,
+                "orderName": "S28619",
+                "date": "2024-01-22 13:41:52",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 79845,
+                "orderName": "S27968",
+                "date": "2023-12-05 07:39:04",
+                "quantity": 1,
+                "priceUnit": 20.62
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 554,
+        "productName": "[MF0014] MF Olives noires 500g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 19,
+            "orders": [
+              {
+                "orderId": 90984,
+                "orderName": "S39107",
+                "date": "2025-09-11 07:05:48",
+                "quantity": 1,
+                "priceUnit": 27.6
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 1,
+                "priceUnit": 27.6
+              },
+              {
+                "orderId": 83871,
+                "orderName": "S31994",
+                "date": "2024-08-29 14:00:58",
+                "quantity": 1,
+                "priceUnit": 27.6
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 1,
+                "priceUnit": 27.6
+              },
+              {
+                "orderId": 56833,
+                "orderName": "S04956",
+                "date": "2023-11-02 07:22:09",
+                "quantity": 1,
+                "priceUnit": 23.16
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 571,
+        "productName": "[MF0031] MF Tarti Olives verte 250g ",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 137,
+            "orders": [
+              {
+                "orderId": 88722,
+                "orderName": "S36845",
+                "date": "2025-05-16 09:10:10",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 87543,
+                "orderName": "S35666",
+                "date": "2025-03-27 14:46:07",
+                "quantity": 2,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 86105,
+                "orderName": "S34228",
+                "date": "2025-02-03 08:08:06",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 85029,
+                "orderName": "S33152",
+                "date": "2024-11-07 07:31:55",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 82301,
+                "orderName": "S30424",
+                "date": "2024-05-23 13:52:52",
+                "quantity": 1,
+                "priceUnit": 14.46
+              },
+              {
+                "orderId": 81032,
+                "orderName": "S29155",
+                "date": "2024-03-22 09:47:35",
+                "quantity": 1,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

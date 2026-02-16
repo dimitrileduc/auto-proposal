@@ -1,0 +1,30 @@
+{
+  "clientId": 34687,
+  "clientName": "Boucherie Halleux srl",
+  "orderName": "S39111",
+  "orderDate": "2025-09-11 07:07:07",
+  "cutoffDate": "2025-09-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1,
+    "wmape": 50,
+    "mape": 50,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 24088,
+    "completionTokens": 4559,
+    "totalTokens": 28647
+  }
+}

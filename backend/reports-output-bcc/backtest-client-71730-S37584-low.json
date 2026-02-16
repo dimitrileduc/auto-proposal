@@ -1,0 +1,30 @@
+{
+  "clientId": 71730,
+  "clientName": "DLL AD 4014 Heverlee",
+  "orderName": "S37584",
+  "orderDate": "2025-06-23 07:34:00",
+  "cutoffDate": "2025-06-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.375,
+    "recall": 1,
+    "f1Score": 0.5454545454545454,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 38,
+    "promptTokens": 33593,
+    "completionTokens": 5747,
+    "totalTokens": 39340
+  }
+}

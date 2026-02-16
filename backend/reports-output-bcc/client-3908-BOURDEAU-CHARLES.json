@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:14:12.115Z"
+  },
+  "client": {
+    "id": 3908,
+    "name": "BOURDEAU CHARLES"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-02 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 1917,
+        "completionTokens": 307,
+        "totalTokens": 2224
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 710.76,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9035,
+        "product_name": "[PF0549] YVALLI SAUCE PIZZA 2,5 KG",
+        "product_uom": "TU6",
+        "quantity_recommended": 7,
+        "quantity_source": "llm",
+        "price_unit": 37.08,
+        "subtotal": 259.56,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande espacé (environ tous les 2 à 3 mois). La dernière commande datant du 31 juillet 2025 (soit 63 jours), nous avons dépassé le délai habituel de réapprovisionnement constaté l'année précédente à la même période (août). Le risque de rupture est imminent dans l'horizon des 30 jours. En suivant la règle de la médiane des commandes historiques (7, 7, 8, 12, 7, 7), la quantité de 7 unités est retenue pour couvrir le besoin sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 7,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-05 13:40:00",
+            "quantity": 7,
+            "price_unit": 38.4
+          },
+          {
+            "date": "2024-05-15 08:55:08",
+            "quantity": 8,
+            "price_unit": 33.9
+          },
+          {
+            "date": "2024-03-15 12:34:37",
+            "quantity": 12,
+            "price_unit": 33.9
+          },
+          {
+            "date": "2023-12-11 07:41:24",
+            "quantity": 7,
+            "price_unit": 33.9
+          },
+          {
+            "date": "2023-10-05 06:41:35",
+            "quantity": 7,
+            "price_unit": 33.9
+          }
+        ]
+      },
+      {
+        "product_id": 9029,
+        "product_name": "[PF0516] YVALLI PROVENCALE 2,5 KG BOC",
+        "product_uom": "TU6",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 45.12,
+        "subtotal": 451.2,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande espacé d'environ 2 à 3 mois. La dernière commande datant du 31 juillet 2025 (il y a 63 jours), nous atteignons le seuil critique de réapprovisionnement pour couvrir les besoins des 30 prochains jours (Replenishment Threshold Days). Bien que l'historique récent soit limité à une seule commande de 10u, les données N-1 confirment une stabilité autour de ce volume (médiane historique de 10u). En application du principe de précaution B2B et pour éviter une rupture imminente, une commande de 10 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-05 13:40:00",
+            "quantity": 10,
+            "price_unit": 46.5
+          },
+          {
+            "date": "2024-05-15 08:55:08",
+            "quantity": 8,
+            "price_unit": 42
+          },
+          {
+            "date": "2024-03-15 12:34:37",
+            "quantity": 7,
+            "price_unit": 42
+          },
+          {
+            "date": "2023-12-11 07:41:24",
+            "quantity": 10,
+            "price_unit": 43.8
+          },
+          {
+            "date": "2023-10-05 06:41:35",
+            "quantity": 14,
+            "price_unit": 43.8
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 2,
+    "optional_products_count": 0,
+    "base_amount": 710.76,
+    "optional_amount": 0,
+    "total_amount": 710.76,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2586
+}

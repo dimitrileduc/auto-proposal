@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:17:51.427Z"
+  },
+  "client": {
+    "id": 58171,
+    "name": "SRL ALL SNACKS PRODUCTION"
+  },
+  "config": {
+    "analysisEndDate": "2025-09-04 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 890,
+        "completionTokens": 198,
+        "totalTokens": 1088
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 495,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9005,
+        "product_name": "[PF0164] FILOU MOUTARDE  10 KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 55,
+        "quantity_source": "llm",
+        "price_unit": 9,
+        "subtotal": 495,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. L'intervalle entre les deux dernières commandes est de 78 jours. La dernière commande date du 15 juillet, soit il y a 51 jours. Le seuil de réapprovisionnement est de 30 jours. 51 jours représentent environ 65% du cycle moyen, mais compte tenu de l'irrégularité et du principe de précaution B2B (risque de rupture à l'horizon de 30 jours), un besoin est détecté. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent présente deux valeurs (55u et 78u). En application de la règle de prudence privilégiant la valeur la plus basse en cas de doute ou de médiane incertaine, la quantité de 55u est retenue pour éviter le surstockage.",
+          "summary": "",
+          "baseline_quantity": 55,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-28 11:11:11",
+            "quantity": 78,
+            "price_unit": 9
+          },
+          {
+            "date": "2025-02-20 09:58:31",
+            "quantity": 52,
+            "price_unit": 9
+          },
+          {
+            "date": "2025-01-13 14:36:34",
+            "quantity": 52,
+            "price_unit": 9
+          },
+          {
+            "date": "2024-11-20 09:28:22",
+            "quantity": 52,
+            "price_unit": 9
+          },
+          {
+            "date": "2024-10-04 09:03:52",
+            "quantity": 52,
+            "price_unit": 9
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 495,
+    "optional_amount": 0,
+    "total_amount": 495,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2839
+}

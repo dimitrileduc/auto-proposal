@@ -1,0 +1,489 @@
+{
+  "version": "1.0",
+  "optimizerType": "ace",
+  "optimizedAt": "2025-12-27T19:58:13.762Z",
+  "model": "google/gemini-3-flash-preview",
+  "config": {
+    "maxExamples": 100,
+    "maxEpochs": 1
+  },
+  "baseline": {
+    "recall": 0.9066666666666666,
+    "precision": 0.7472527472527473,
+    "f1": 0.8192771084337349,
+    "accuracy": 0.7
+  },
+  "aceMetrics": {
+    "recall": 0.13333333333333333,
+    "precision": 0.6666666666666666,
+    "f1": 0.2222222222222222,
+    "accuracy": 0.3
+  },
+  "playbook": {
+    "version": 1,
+    "sections": {
+      "Low-Velocity Product Assessment": [
+        {
+          "id": "low-ve-4c65bbd6",
+          "section": "Low-Velocity Product Assessment",
+          "content": "## Low-Velocity Product Assessment\n- [low-ve-core] CORE PROTOCOL: For low-velocity products: 1. Calculate 'Inactivity Gap' (currentDate minus most recent order date). 2. If no orders in the calendar year of currentDate, gap is 'infini'. 3. If gap > 45 days (or 'infini'), ruptureRisk is 'NON'. 4. If gap ≤ 45 days, ruptureRisk is 'OUI'. 5. Output MUST be a JSON object with exactly two keys: 'ruptureRisk' and 'justification'. 6. Justification MUST follow this exact template: 'Gap: [X]. [X] [math symbol] 45 jours. [audit phrase]'. If [X] is a number, include 'jours' (e.g., '12 jours') in both the 'Gap:' part and the math string. If [X] is 'infini', do not add 'jours' after it. Symbols: '>' for NON, '≤' for OUI. Audit phrases: 'dépasse le seuil de 45 jours' (for NON) or 'est inférieur ou égal au seuil de 45 jours' (for OUI). CRITICAL: No trailing period, no natural language, and no key named 'reasoning'. Example: 'Gap: 20 jours. 20 jours ≤ 45 jours. est inférieur ou égal au seuil de 45 jours'\n- [low-ve-fa1774fc] When calculating the 'Inactivity Gap', always use the calendar day difference between the current date and the date of the most recent order. If no orders exist for the current year, the gap is considered infinite for the purpose of the 45-day rule.\n- [low-ve-724b69f6] [low-ve-strict-logic] CRITICAL: If Inactivity Gap ≤ 45 days, ruptureRisk MUST be 'OUI'. If Gap > 45 days (or 'infini'), ruptureRisk MUST be 'NON'. The justification MUST be a single string with three parts separated by '. ': 1. 'Gap: [X] jours' (or 'Gap: infini'). 2. '[X] jours [≤ or >] 45 jours' (or 'infini > 45 jours'). 3. The exact audit phrase. No trailing period.",
+          "helpfulCount": 84,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:30:01.420Z",
+          "updatedAt": "2025-12-27T19:53:56.488Z"
+        },
+        {
+          "id": "low-ve-fa1774fc",
+          "section": "Low-Velocity Product Assessment",
+          "content": "When calculating the 'Inactivity Gap', always use the calendar day difference between the current date and the date of the most recent order. If no orders exist for the current year, the gap is considered infinite for the purpose of the 45-day rule.",
+          "helpfulCount": 14,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:30:35.278Z",
+          "updatedAt": "2025-12-27T19:45:32.761Z"
+        },
+        {
+          "id": "low-ve-c5f9a1e0",
+          "section": "Low-Velocity Product Assessment",
+          "content": "When concluding a 'NON' risk based on the Inactivity Gap, explicitly state the number of days calculated in the final justification to ensure transparency and auditability of the 45-day rule application.",
+          "helpfulCount": 18,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:30:42.553Z",
+          "updatedAt": "2025-12-27T19:52:22.447Z"
+        },
+        {
+          "id": "low-ve-f27b21e7",
+          "section": "Low-Velocity Product Assessment",
+          "content": "If the Inactivity Gap is 45 days or less, the product should be considered active; if the stock level is insufficient to cover a potential recurring order, the risk of stockout (ruptureRisk) should be 'OUI'.",
+          "helpfulCount": 6,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:30:51.326Z",
+          "updatedAt": "2025-12-27T19:42:01.088Z"
+        },
+        {
+          "id": "low-ve-4b4a327c",
+          "section": "Low-Velocity Product Assessment",
+          "content": "In cases where no orders exist (infinite Inactivity Gap), the justification must explicitly state that the gap exceeds the 45-day threshold to satisfy audit requirements.",
+          "helpfulCount": 5,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:30:59.828Z",
+          "updatedAt": "2025-12-27T19:52:22.447Z"
+        },
+        {
+          "id": "low-ve-0d2c14ea",
+          "section": "Low-Velocity Product Assessment",
+          "content": "When the Inactivity Gap is considered infinite (no orders in the current year), the justification should explicitly use the term 'infini' or 'infinite' alongside the statement that it exceeds the 45-day threshold.",
+          "helpfulCount": 7,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:31:18.543Z",
+          "updatedAt": "2025-12-27T19:52:22.447Z"
+        },
+        {
+          "id": "low-ve-30287f01",
+          "section": "Low-Velocity Product Assessment",
+          "content": "For low-velocity products (e.g., 1 unit per order), calculate the 'Inactivity Gap' as the calendar day difference between the current date and the last order. If no orders exist for the current year, the gap is 'infini/infinite'. 1. If the gap > 45 days, ruptureRisk is 'NON' (unless seasonal peaks are imminent). 2. If the gap ≤ 45 days and stock is insufficient for a recurring order, ruptureRisk is 'OUI'. 3. For auditability, the justification must explicitly state the calculated number of days or the term 'infini/infinite' and confirm it exceeds the 45-day threshold.",
+          "helpfulCount": 3,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:31:55.115Z",
+          "updatedAt": "2025-12-27T19:43:16.765Z"
+        },
+        {
+          "id": "low-ve-0b754b01",
+          "section": "Low-Velocity Product Assessment",
+          "content": "For low-velocity products (e.g., 1 unit per order), calculate the 'Inactivity Gap' as the calendar day difference between the current date and the most recent order. If no orders exist in the current calendar year, the gap is 'infini/infinite'. 1. If the gap > 45 days, ruptureRisk is 'NON' (unless seasonal peaks are imminent). 2. If the gap ≤ 45 days and stock is insufficient for a recurring order, ruptureRisk is 'OUI'. 3. For auditability, the justification must explicitly state the calculated number of days or the term 'infini/infinite' and confirm whether it exceeds or is within the 45-day threshold.",
+          "helpfulCount": 4,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:32:36.040Z",
+          "updatedAt": "2025-12-27T19:36:04.179Z"
+        },
+        {
+          "id": "low-ve-a976394f",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-audit-phrase] To satisfy audit requirements, every low-velocity justification must explicitly confirm the threshold status using the exact words: 'est inférieur ou égal au seuil de 45 jours' for active risks or 'dépasse le seuil de 45 jours' for inactive risks.",
+          "helpfulCount": 18,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:36:04.179Z",
+          "updatedAt": "2025-12-27T19:52:22.447Z"
+        },
+        {
+          "id": "low-ve-acc3ee29",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-block-format] To ensure audit compliance, present the justification components (gap value, math comparison, and audit phrase) as distinct elements. Example: 'Gap: 73 jours. 73 jours > 45 jours. dépasse le seuil de 45 jours.'",
+          "helpfulCount": 11,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:38:05.791Z",
+          "updatedAt": "2025-12-27T19:52:22.447Z"
+        },
+        {
+          "id": "low-ve-724b69f6",
+          "section": "Low-Velocity Product Assessment",
+          "content": "## Low-Velocity Product Assessment\n- [low-ve-core] CORE PROTOCOL: For low-velocity products: 1. Calculate 'Inactivity Gap' (currentDate minus most recent order date). 2. If no orders in the calendar year of currentDate, gap is 'infini'. 3. If gap > 45 days (or 'infini'), ruptureRisk is 'NON'. 4. If gap ≤ 45 days, ruptureRisk is 'OUI'. 5. Output MUST be a JSON object with exactly two keys: 'ruptureRisk' and 'justification'. 6. Justification MUST follow this exact template: 'Gap: [X]. [X] [math symbol] 45 jours. [audit phrase]'. If [X] is a number, include 'jours' (e.g., '12 jours') in both the 'Gap:' part and the math string. If [X] is 'infini', do not add 'jours' after it. Symbols: '>' for NON, '≤' for OUI. Audit phrases: 'dépasse le seuil de 45 jours' (for NON) or 'est inférieur ou égal au seuil de 45 jours' (for OUI). CRITICAL: No trailing period, no natural language, and no key named 'reasoning'. Example: 'Gap: 20 jours. 20 jours ≤ 45 jours. est inférieur ou égal au seuil de 45 jours'",
+          "helpfulCount": 10,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:47:34.485Z",
+          "updatedAt": "2025-12-27T19:54:22.981Z"
+        },
+        {
+          "id": "low-ve-0712fcc9",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-core] CORE PROTOCOL: For low-velocity products: 1. Calculate 'Inactivity Gap' (currentDate minus most recent order date). 2. If no orders in the calendar year of currentDate, gap is 'infini'. 3. If gap > 45 days (or 'infini'), ruptureRisk is 'NON'. 4. If gap ≤ 45 days, ruptureRisk is 'OUI'. 5. Output MUST be a JSON object with exactly two keys: 'ruptureRisk' and 'justification'. 6. Justification MUST follow this exact template: 'Gap: [X]. [X] [math symbol] 45 jours. [audit phrase]'. If [X] is a number, include 'jours' (e.g., '12 jours') in both the 'Gap:' part and the math string. If [X] is 'infini', do not add 'jours' after it. Symbols: '>' for NON, '≤' for OUI. Audit phrases: 'dépasse le seuil de 45 jours' (for NON) or 'est inférieur ou égal au seuil de 45 jours' (for OUI). CRITICAL: No trailing period, no natural language, and no key named 'reasoning'. Example: 'Gap: 20 jours. 20 jours ≤ 45 jours. est inférieur ou égal au seuil de 45 jours'",
+          "helpfulCount": 11,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:47:48.087Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "low-ve-2f9da4e5",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-d3334606] [low-ve-1876f974] [low-ve-ce439f51]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:59.019Z",
+          "updatedAt": "2025-12-27T19:51:59.019Z"
+        },
+        {
+          "id": "low-ve-24ce5d35",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-30287f01] For low-velocity products (e.g., 1 unit per order), calculate the 'Inactivity Gap' as the calendar day difference between the current date and the last order. If no orders exist for the current year, the gap is 'infini/infinite'. 1. If the gap > 45 days, ruptureRisk is 'NON' (unless seasonal peaks are imminent). 2. If the gap ≤ 45 days and stock is insufficient for a recurring order, ruptureRisk is 'OUI'. 3. For auditability, the justification must explicitly state the calculated number of days or the term 'infini/infinite' and confirm it exceeds the 45-day threshold.",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:52:35.866Z",
+          "updatedAt": "2025-12-27T19:52:35.866Z"
+        },
+        {
+          "id": "low-ve-0e6929c1",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-0b754b01] For low-velocity products (e.g., 1 unit per order), calculate the 'Inactivity Gap' as the calendar day difference between the current date and the most recent order. If no orders exist in the current calendar year, the gap is 'infini/infinite'. 1. If the gap > 45 days, ruptureRisk is 'NON' (unless seasonal peaks are imminent). 2. If the gap ≤ 45 days and stock is insufficient for a recurring order, ruptureRisk is 'OUI'. 3. For auditability, the justification must explicitly state the calculated number of days or the term 'infini/infinite' and confirm whether it exceeds or is within the 45-day threshold.",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:52:35.866Z",
+          "updatedAt": "2025-12-27T19:52:35.866Z"
+        },
+        {
+          "id": "low-ve-b5061395",
+          "section": "Low-Velocity Product Assessment",
+          "content": "- [low-ve-fa1774fc] When calculating the 'Inactivity Gap', always use the calendar day difference between the current date and the date of the most recent order. If no orders exist for the current year, the gap is considered infinite for the purpose of the 45-day rule.",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:22.980Z",
+          "updatedAt": "2025-12-27T19:54:22.980Z"
+        },
+        {
+          "id": "low-ve-ab815711",
+          "section": "Low-Velocity Product Assessment",
+          "content": "- [low-ve-724b69f6] [low-ve-strict-logic] CRITICAL: If Inactivity Gap ≤ 45 days, ruptureRisk MUST be 'OUI'. If Gap > 45 days (or 'infini'), ruptureRisk MUST be 'NON'. The justification MUST be a single string with three parts separated by '. ': 1. 'Gap: [X] jours' (or 'Gap: infini'). 2. '[X] jours [≤ or >] 45 jours' (or 'infini > 45 jours'). 3. The exact audit phrase. No trailing period.",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:22.980Z",
+          "updatedAt": "2025-12-27T19:54:22.980Z"
+        },
+        {
+          "id": "low-ve-efa527e3",
+          "section": "Low-Velocity Product Assessment",
+          "content": "- [low-ve-fd0b0cc3] [low-ve-dc04eadb] [low-ve-dfcf6891] [low-ve-67de144d]\n- [low-ve-87c92791] [low-ve-f040636b] [low-ve-94b17d14] [low-ve-bf6cb50c]\n- [low-ve-afca69d7] [low-ve-01816752] [low-ve-f2d9fce5] [low-ve-0c55100d]\n- [low-ve-ee58dba6] [low-ve-62ad672a] [low-ve-546091de] [low-ve-234dc149]\n- [low-ve-5662e636] [low-ve-7905308b] [low-ve-ea5040d7] [low-ve-d5085469]\n- [low-ve-2f9da4e5] [low-ve-d3334606] [low-ve-1876f974] [low-ve-ce439f51]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:22.980Z",
+          "updatedAt": "2025-12-27T19:54:22.980Z"
+        },
+        {
+          "id": "low-ve-4d9e8ef7",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-724b69f6]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "low-ve-65e019cc",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-0712fcc9]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "low-ve-b5a28adb",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-acc3ee29]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "low-ve-414ca571",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-a976394f]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "low-ve-d212e396",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-30287f01]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "low-ve-d54cc9dc",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-0b754b01]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "low-ve-fc69133e",
+          "section": "Low-Velocity Product Assessment",
+          "content": "[low-ve-ab815711]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        }
+      ],
+      "Guidelines": [
+        {
+          "id": "guidel-04fbd5d8",
+          "section": "Guidelines",
+          "content": "When justifying a low-velocity assessment, always include a mathematical comparison string (e.g., 'X days > 45 days' or 'X days ≤ 45 days') to satisfy audit requirements for the Inactivity Gap rule.",
+          "helpfulCount": 19,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:32:57.127Z",
+          "updatedAt": "2025-12-27T19:38:05.791Z"
+        },
+        {
+          "id": "guidel-7864a714",
+          "section": "Guidelines",
+          "content": "## Guidelines\n- [guidel-strict-audit] Low-velocity justifications are treated as structured data. Do not include any natural language, explanations, or connecting words. Use only the template defined in [low-ve-core]. Any deviation, including trailing periods, extra whitespace, or the use of a 'reasoning' key instead of 'justification', invalidates the audit. This rule overrides all general formatting guidelines.\n- [guidel-ccba6427] [guidel-strict-format] Treat low-velocity justifications as code-like strings. Any deviation from the template 'Gap: [X] jours. [X] jours [math symbol] 45 jours. [audit phrase]', including the addition of a final period or trailing whitespace, will result in an audit failure.",
+          "helpfulCount": 50,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:36:39.956Z",
+          "updatedAt": "2025-12-27T19:53:56.488Z"
+        },
+        {
+          "id": "guidel-5d293f49",
+          "section": "Guidelines",
+          "content": "[guidel-audit-verbatim] Justifications for low-velocity products are treated as structured data. Do not include any natural language, explanations, or connecting words. Use only the gap value, math comparison, and the exact audit phrase: 'est inférieur ou égal au seuil de 45 jours' or 'dépasse le seuil de 45 jours'. Any deviation invalidates the audit.",
+          "helpfulCount": 18,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:38:05.791Z",
+          "updatedAt": "2025-12-27T19:52:22.447Z"
+        },
+        {
+          "id": "guidel-ccba6427",
+          "section": "Guidelines",
+          "content": "[guidel-strict-audit] Low-velocity justifications are treated as structured data. Do not include any natural language, explanations, or connecting words. Use only the template defined in [low-ve-core]. Any deviation, including trailing periods, extra whitespace, or the use of a 'reasoning' key instead of 'justification', invalidates the audit. This rule overrides all general formatting guidelines.",
+          "helpfulCount": 25,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:43:30.182Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "guidel-2e8a2027",
+          "section": "Guidelines",
+          "content": "[guidel-42c26b1c] [guidel-7cc08c9d]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-1bf0d237",
+          "section": "Guidelines",
+          "content": "[guidel-66e17612] [guidel-da6d47d5]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-4fddaa65",
+          "section": "Guidelines",
+          "content": "[guidel-5306f48a] [guidel-cfcb5784]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-106856be",
+          "section": "Guidelines",
+          "content": "[guidel-41ef64c2] [guidel-920bf1b0]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-e8bf32fc",
+          "section": "Guidelines",
+          "content": "[guidel-cf644425] [guidel-11276f2a]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-4093eead",
+          "section": "Guidelines",
+          "content": "[guidel-6a813c2f] [guidel-31dba053]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-ec0e197c",
+          "section": "Guidelines",
+          "content": "[guidel-3578ebc4] [guidel-54115f5f]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-7caac208",
+          "section": "Guidelines",
+          "content": "[guidel-c84b6d6d] [guidel-4acdad56]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-e6ce87ea",
+          "section": "Guidelines",
+          "content": "[guidel-a8daa0ce] [guidel-4ae62115]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-64826578",
+          "section": "Guidelines",
+          "content": "[guidel-cf36f429] [guidel-60196c06]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-a008bcfc",
+          "section": "Guidelines",
+          "content": "[guidel-bb437b94] [guidel-861d60d4]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-855ea91c",
+          "section": "Guidelines",
+          "content": "[guidel-d0c18696] [guidel-adf66bfa]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-5872774a",
+          "section": "Guidelines",
+          "content": "[guidel-52860701] [guidel-bbc917ff]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-732bbc43",
+          "section": "Guidelines",
+          "content": "[guidel-462aa44f] [guidel-9ba807cc]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-97901986",
+          "section": "Guidelines",
+          "content": "[guidel-2088bc9e] [guidel-affc79d9]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-1907a677",
+          "section": "Guidelines",
+          "content": "[guidel-587742af] [guidel-9da146aa]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-b5ba728b",
+          "section": "Guidelines",
+          "content": "[guidel-56a81d68] [guidel-d9a29d73]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:51:36.853Z",
+          "updatedAt": "2025-12-27T19:51:36.853Z"
+        },
+        {
+          "id": "guidel-0e05f3a8",
+          "section": "Guidelines",
+          "content": "- [guidel-bc4c61a8] [guidel-05a506a0] [guidel-04fbd5d8]\n- [guidel-8d2780e7] [guidel-a8cb34d0] [guidel-5d293f49]\n- [guidel-2e8a2027] [guidel-42c26b1c] [guidel-7cc08c9d]\n- [guidel-1bf0d237] [guidel-66e17612] [guidel-da6d47d5]\n- [guidel-4fddaa65] [guidel-5306f48a] [guidel-cfcb5784]\n- [guidel-106856be] [guidel-41ef64c2] [guidel-920bf1b0]\n- [guidel-e8bf32fc] [guidel-cf644425] [guidel-11276f2a]\n- [guidel-4093eead] [guidel-6a813c2f] [guidel-31dba053]\n- [guidel-ec0e197c] [guidel-3578ebc4] [guidel-54115f5f]\n- [guidel-7caac208] [guidel-c84b6d6d] [guidel-4acdad56]\n- [guidel-e6ce87ea] [guidel-a8daa0ce] [guidel-4ae62115]\n- [guidel-64826578] [guidel-cf36f429] [guidel-60196c06]\n- [guidel-a008bcfc] [guidel-bb437b94] [guidel-861d60d4]\n- [guidel-855ea91c] [guidel-d0c18696] [guidel-adf66bfa]\n- [guidel-5872774a] [guidel-52860701] [guidel-bbc917ff]\n- [guidel-732bbc43] [guidel-462aa44f] [guidel-9ba807cc]\n- [guidel-97901986] [guidel-2088bc9e] [guidel-affc79d9]\n- [guidel-1907a677] [guidel-587742af] [guidel-9da146aa]\n- [guidel-b5ba728b] [guidel-56a81d68] [guidel-d9a29d73]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:22.980Z",
+          "updatedAt": "2025-12-27T19:54:22.980Z"
+        },
+        {
+          "id": "guidel-715848db",
+          "section": "Guidelines",
+          "content": "[guidel-ccba6427]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "guidel-c302d624",
+          "section": "Guidelines",
+          "content": "[guidel-5d293f49]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        },
+        {
+          "id": "guidel-7165c87e",
+          "section": "Guidelines",
+          "content": "[guidel-04fbd5d8]",
+          "helpfulCount": 0,
+          "harmfulCount": 0,
+          "createdAt": "2025-12-27T19:54:35.927Z",
+          "updatedAt": "2025-12-27T19:54:35.927Z"
+        }
+      ]
+    },
+    "stats": {
+      "bulletCount": 50,
+      "helpfulCount": 303,
+      "harmfulCount": 0,
+      "tokenEstimate": 3078
+    },
+    "updatedAt": "2025-12-27T19:54:35.927Z"
+  },
+  "instruction": null
+}

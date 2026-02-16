@@ -1,0 +1,30 @@
+{
+  "clientId": 23316,
+  "clientName": "Ferme de Warichet",
+  "orderName": "S39774",
+  "orderDate": "2025-10-21 07:45:53",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 26,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.6190476190476191,
+    "recall": 1,
+    "f1Score": 0.7647058823529412,
+    "mae": 0.5,
+    "wmape": 24.528301886792452,
+    "mape": 23.397435897435894,
+    "bias": -9.433962264150944
+  },
+  "distribution": {
+    "exactMatch": 14,
+    "partialMatch": 12
+  },
+  "llmUsage": {
+    "calls": 51,
+    "promptTokens": 47317,
+    "completionTokens": 7979,
+    "totalTokens": 55296
+  }
+}

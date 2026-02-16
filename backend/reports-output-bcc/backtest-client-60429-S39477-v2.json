@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:27:57.929Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-30 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60429,
+    "name": "LA SUITE by JHM",
+    "order": {
+      "name": "S39477",
+      "date": "2025-10-01 07:19:24"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 5,
+        "falsePositives": 7,
+        "falseNegatives": 2,
+        "total": 14
+      },
+      "productMetrics": {
+        "precision": 0.4166666666666667,
+        "recall": 0.7142857142857143,
+        "f1Score": 0.5263157894736842,
+        "totalPredicted": 12,
+        "totalReal": 7
+      },
+      "quantityMetrics": {
+        "mae": 1.2,
+        "wmape": 42.857142857142854,
+        "mape": 39.999999999999986,
+        "bias": -42.857142857142854,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 4
+        },
+        "rmse": 1.4142135623730951
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 5,
+          "falsePositives": 7,
+          "falseNegatives": 2,
+          "total": 14
+        },
+        "productMetrics": {
+          "precision": 0.4166666666666667,
+          "recall": 0.7142857142857143,
+          "f1Score": 0.5263157894736842,
+          "totalPredicted": 12,
+          "totalReal": 7
+        },
+        "quantityMetrics": {
+          "mae": 1.2,
+          "wmape": 42.857142857142854,
+          "mape": 39.999999999999986,
+          "bias": -42.857142857142854,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 4
+          },
+          "rmse": 1.4142135623730951
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 10503,
+    "completionTokens": 1849,
+    "totalTokens": 12352
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88792,
+              "orderName": "S36915",
+              "date": "2025-05-20 08:34:41",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 132.6425810185185,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88792,
+              "orderName": "S36915",
+              "date": "2025-05-20 08:34:41",
+              "quantity": 2,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 132.6425810185185,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 66.66666666666666,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88792,
+              "orderName": "S36915",
+              "date": "2025-05-20 08:34:41",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 132.6425810185185,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 66.66666666666666,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88792,
+              "orderName": "S36915",
+              "date": "2025-05-20 08:34:41",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 132.6425810185185,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18356,
+        "productName": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88792,
+              "orderName": "S36915",
+              "date": "2025-05-20 08:34:41",
+              "quantity": 2,
+              "priceUnit": 25.3
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 132.6425810185185,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18279,
+        "productName": "[UPI04] Jus de pomme-cerise bio d'UPIGNY 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 132,
+            "orders": [
+              {
+                "orderId": 88792,
+                "orderName": "S36915",
+                "date": "2025-05-20 08:34:41",
+                "quantity": 1,
+                "priceUnit": 16.68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18284,
+        "productName": "[UPI03] Jus de pomme-poire bio d'UPIGNY 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 132,
+            "orders": [
+              {
+                "orderId": 88792,
+                "orderName": "S36915",
+                "date": "2025-05-20 08:34:41",
+                "quantity": 1,
+                "priceUnit": 16.68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13094,
+        "productName": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 132,
+            "orders": [
+              {
+                "orderId": 88792,
+                "orderName": "S36915",
+                "date": "2025-05-20 08:34:41",
+                "quantity": 1,
+                "priceUnit": 23.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13096,
+        "productName": "[LV002] LV Pizza Croccantina au romarin 150 g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 132,
+            "orders": [
+              {
+                "orderId": 88792,
+                "orderName": "S36915",
+                "date": "2025-05-20 08:34:41",
+                "quantity": 1,
+                "priceUnit": 27.03
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13097,
+        "productName": "[LV003] LV Pizza Croccantina tomate origan 150 g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 132,
+            "orders": [
+              {
+                "orderId": 88792,
+                "orderName": "S36915",
+                "date": "2025-05-20 08:34:41",
+                "quantity": 1,
+                "priceUnit": 29.45
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13095,
+        "productName": "[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 132,
+            "orders": [
+              {
+                "orderId": 88792,
+                "orderName": "S36915",
+                "date": "2025-05-20 08:34:41",
+                "quantity": 1,
+                "priceUnit": 27.03
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14948,
+        "productName": "[CB010] CB Jus de Pomme cubis 3l",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 132,
+            "orders": [
+              {
+                "orderId": 88792,
+                "orderName": "S36915",
+                "date": "2025-05-20 08:34:41",
+                "quantity": 1,
+                "priceUnit": 7.8
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18280,
+        "productName": "[UPI08] Jus de pomme-citron bio d'UPIGNY 250ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18283,
+        "productName": "[UPI05] Jus de pomme-gingembre bio d'UPIGNY 250ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

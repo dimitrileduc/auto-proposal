@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:16:19.685Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-08 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60485,
+    "name": "MARMA",
+    "order": {
+      "name": "S39106",
+      "date": "2025-09-09 12:33:37"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 4,
+        "falseNegatives": 0,
+        "total": 5
+      },
+      "productMetrics": {
+        "precision": 0.2,
+        "recall": 1,
+        "f1Score": 0.33333333333333337,
+        "totalPredicted": 5,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 18,
+        "wmape": 100,
+        "mape": 100,
+        "bias": 100,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 18
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 2,
+          "falseNegatives": 0,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 2,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 2,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0.3333333333333333,
+          "recall": 1,
+          "f1Score": 0.5,
+          "totalPredicted": 3,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 18,
+          "wmape": 100,
+          "mape": 100,
+          "bias": 100,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 18
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4613,
+    "completionTokens": 889,
+    "totalTokens": 5502
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18300,
+        "productName": "[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 36,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 18
+        },
+        "error": {
+          "absolute": 18,
+          "percent": 100,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 90115,
+              "orderName": "S38238",
+              "date": "2025-07-25 12:58:11",
+              "quantity": 36,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 89672,
+              "orderName": "S37795",
+              "date": "2025-07-01 13:13:02",
+              "quantity": 45,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 88897,
+              "orderName": "S37020",
+              "date": "2025-05-23 10:09:31",
+              "quantity": 19,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 87651,
+              "orderName": "S35774",
+              "date": "2025-04-02 07:43:26",
+              "quantity": 27,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 87125,
+              "orderName": "S35248",
+              "date": "2025-03-06 14:49:12",
+              "quantity": 18,
+              "priceUnit": 35.76
+            }
+          ],
+          "statistics": {
+            "mean": 29,
+            "median": 27,
+            "stdDev": 10.295630140987,
+            "min": 18,
+            "max": 45,
+            "cv": 0.35502172899955176,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.664294132265151
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 35.22030960648148,
+            "lastOrderDaysAgo": 44.45959490740741,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18336,
+        "productName": "[ALO30] ORGANIC CRUNCH aloe vera drink original 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 42,
+        "reason": "Predicted 42u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 44,
+            "orders": [
+              {
+                "orderId": 90115,
+                "orderName": "S38238",
+                "date": "2025-07-25 12:58:11",
+                "quantity": 42,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 88897,
+                "orderName": "S37020",
+                "date": "2025-05-23 10:09:31",
+                "quantity": 21,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 88455,
+                "orderName": "S36578",
+                "date": "2025-05-07 11:20:39",
+                "quantity": 504,
+                "priceUnit": 1.05
+              },
+              {
+                "orderId": 88156,
+                "orderName": "S36279",
+                "date": "2025-04-17 13:58:36",
+                "quantity": 42,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 87126,
+                "orderName": "S35249",
+                "date": "2025-03-10 08:04:32",
+                "quantity": 21,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18337,
+        "productName": "[ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 42,
+        "reason": "Predicted 42u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 44,
+            "orders": [
+              {
+                "orderId": 90115,
+                "orderName": "S38238",
+                "date": "2025-07-25 12:58:11",
+                "quantity": 42,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 89109,
+                "orderName": "S37232",
+                "date": "2025-06-03 12:56:18",
+                "quantity": 63,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 88455,
+                "orderName": "S36578",
+                "date": "2025-05-07 11:20:39",
+                "quantity": 252,
+                "priceUnit": 1.05
+              },
+              {
+                "orderId": 87126,
+                "orderName": "S35249",
+                "date": "2025-03-10 08:04:32",
+                "quantity": 21,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18334,
+        "productName": "[ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 63,
+        "reason": "Predicted 63u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 44,
+            "orders": [
+              {
+                "orderId": 90115,
+                "orderName": "S38238",
+                "date": "2025-07-25 12:58:11",
+                "quantity": 63,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 89109,
+                "orderName": "S37232",
+                "date": "2025-06-03 12:56:18",
+                "quantity": 63,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 88455,
+                "orderName": "S36578",
+                "date": "2025-05-07 11:20:39",
+                "quantity": 252,
+                "priceUnit": 1.05
+              },
+              {
+                "orderId": 88156,
+                "orderName": "S36279",
+                "date": "2025-04-17 13:58:36",
+                "quantity": 42,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 87126,
+                "orderName": "S35249",
+                "date": "2025-03-10 08:04:32",
+                "quantity": 21,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18335,
+        "productName": "[ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 42,
+        "reason": "Predicted 42u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 68,
+            "orders": [
+              {
+                "orderId": 89672,
+                "orderName": "S37795",
+                "date": "2025-07-01 13:13:02",
+                "quantity": 21,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 89109,
+                "orderName": "S37232",
+                "date": "2025-06-03 12:56:18",
+                "quantity": 63,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 88156,
+                "orderName": "S36279",
+                "date": "2025-04-17 13:58:36",
+                "quantity": 42,
+                "priceUnit": 12.6
+              },
+              {
+                "orderId": 87126,
+                "orderName": "S35249",
+                "date": "2025-03-10 08:04:32",
+                "quantity": 21,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

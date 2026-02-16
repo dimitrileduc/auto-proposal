@@ -1,0 +1,30 @@
+{
+  "clientId": 3865,
+  "clientName": "REWE MARKT GMBH - WEST",
+  "orderName": "S39800",
+  "orderDate": "2025-10-20 06:42:38",
+  "cutoffDate": "2025-10-19 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 25,
+    "fn": 0,
+    "precision": 0.16666666666666666,
+    "recall": 1,
+    "f1Score": 0.2857142857142857,
+    "mae": 1,
+    "wmape": 31.25,
+    "mape": 40,
+    "bias": -18.75
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 29697,
+    "completionTokens": 5190,
+    "totalTokens": 34887
+  }
+}

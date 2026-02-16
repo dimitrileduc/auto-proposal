@@ -1,0 +1,763 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:25:48.591Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-06-19 00:00:00"
+    }
+  },
+  "client": {
+    "id": 72051,
+    "name": "EDEKA Rhein Ruhr Stiftung & Co. KG, Geldermann Norbert",
+    "order": {
+      "name": "S37580",
+      "date": "2025-06-20 10:16:40"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 9,
+        "falsePositives": 5,
+        "falseNegatives": 3,
+        "total": 17
+      },
+      "productMetrics": {
+        "precision": 0.6428571428571429,
+        "recall": 0.75,
+        "f1Score": 0.6923076923076924,
+        "totalPredicted": 14,
+        "totalReal": 12
+      },
+      "quantityMetrics": {
+        "mae": 0.5555555555555556,
+        "wmape": 29.411764705882355,
+        "mape": 27.77777777777778,
+        "bias": -5.88235294117647,
+        "distribution": {
+          "exactMatch": 4,
+          "partialMatch": 5
+        },
+        "rmse": 0.7453559924999299
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 9,
+          "falsePositives": 5,
+          "falseNegatives": 3,
+          "total": 17
+        },
+        "productMetrics": {
+          "precision": 0.6428571428571429,
+          "recall": 0.75,
+          "f1Score": 0.6923076923076924,
+          "totalPredicted": 14,
+          "totalReal": 12
+        },
+        "quantityMetrics": {
+          "mae": 0.5555555555555556,
+          "wmape": 29.411764705882355,
+          "mape": 27.77777777777778,
+          "bias": -5.88235294117647,
+          "distribution": {
+            "exactMatch": 4,
+            "partialMatch": 5
+          },
+          "rmse": 0.7453559924999299
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12225,
+    "completionTokens": 2114,
+    "totalTokens": 14339
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 16747,
+        "productName": "[JF003] JF MAYONNAIS WASABI 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16749,
+        "productName": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 3,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16780,
+        "productName": "[JF009] JF SAUCE TARTARE 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 2,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16766,
+        "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 3,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16763,
+        "productName": "[JF015] JF SAUCE ANDALOUSE 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 2,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16771,
+        "productName": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16778,
+        "productName": "[JF018] JF SAUCE SAMOURAI 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 2,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16761,
+        "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 50,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16755,
+        "productName": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88606,
+              "orderName": "S36729",
+              "date": "2025-05-13 07:04:00",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 36.705555555555556,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 16745,
+        "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 36,
+            "orders": [
+              {
+                "orderId": 88606,
+                "orderName": "S36729",
+                "date": "2025-05-13 07:04:00",
+                "quantity": 3,
+                "priceUnit": 23.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16743,
+        "productName": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 36,
+            "orders": [
+              {
+                "orderId": 88606,
+                "orderName": "S36729",
+                "date": "2025-05-13 07:04:00",
+                "quantity": 1,
+                "priceUnit": 25.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16762,
+        "productName": "[JF019] JF SAUCE AIOLI PESTO 250M WECK",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 36,
+            "orders": [
+              {
+                "orderId": 88606,
+                "orderName": "S36729",
+                "date": "2025-05-13 07:04:00",
+                "quantity": 2,
+                "priceUnit": 21
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16754,
+        "productName": "[JF023] JF MOUTARDE DOUCE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 36,
+            "orders": [
+              {
+                "orderId": 88606,
+                "orderName": "S36729",
+                "date": "2025-05-13 07:04:00",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17252,
+        "productName": "[DIS0004] Display JF bois",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 36,
+            "orders": [
+              {
+                "orderId": 88606,
+                "orderName": "S36729",
+                "date": "2025-05-13 07:04:00",
+                "quantity": 1,
+                "priceUnit": 0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 19354,
+        "productName": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 19355,
+        "productName": "[JF055] JF HONEY MUSTARD MAYO 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 19356,
+        "productName": "[JF056] JF SAUCE CHIPOTLE 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

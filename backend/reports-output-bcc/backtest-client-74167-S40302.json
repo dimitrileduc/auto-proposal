@@ -1,0 +1,30 @@
+{
+  "clientId": 74167,
+  "clientName": "Comptoir Local LLN SRL",
+  "orderName": "S40302",
+  "orderDate": "2025-11-14 12:32:43",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 106,
+    "promptTokens": 92891,
+    "completionTokens": 14632,
+    "totalTokens": 107523
+  }
+}

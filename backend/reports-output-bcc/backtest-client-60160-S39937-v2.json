@@ -1,0 +1,807 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:07:06.891Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-26 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60160,
+    "name": "ASIE A TIK",
+    "order": {
+      "name": "S39937",
+      "date": "2025-10-27 10:58:28"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 4,
+        "falseNegatives": 0,
+        "total": 8
+      },
+      "productMetrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "totalPredicted": 8,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 5.5,
+        "wmape": 55.00000000000001,
+        "mape": 67.5,
+        "bias": -5,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 4
+        },
+        "rmse": 6.2048368229954285
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 4,
+          "falsePositives": 4,
+          "falseNegatives": 0,
+          "total": 8
+        },
+        "productMetrics": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1Score": 0.6666666666666666,
+          "totalPredicted": 8,
+          "totalReal": 4
+        },
+        "quantityMetrics": {
+          "mae": 5.5,
+          "wmape": 55.00000000000001,
+          "mape": 67.5,
+          "bias": -5,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 4
+          },
+          "rmse": 6.2048368229954285
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 7313,
+    "completionTokens": 1522,
+    "totalTokens": 8835
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18380,
+        "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 10,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 20
+        },
+        "error": {
+          "absolute": 10,
+          "percent": 50,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 91347,
+              "orderName": "S39470",
+              "date": "2025-10-01 07:15:18",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 90486,
+              "orderName": "S38609",
+              "date": "2025-08-20 11:40:57",
+              "quantity": 8,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 90189,
+              "orderName": "S38312",
+              "date": "2025-08-07 09:07:10",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 89805,
+              "orderName": "S37928",
+              "date": "2025-07-07 11:38:49",
+              "quantity": 6,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 89002,
+              "orderName": "S37125",
+              "date": "2025-06-03 07:16:03",
+              "quantity": 20,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 88174,
+              "orderName": "S36297",
+              "date": "2025-04-22 06:30:05",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 87295,
+              "orderName": "S35418",
+              "date": "2025-03-18 08:20:58",
+              "quantity": 25,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 86721,
+              "orderName": "S34844",
+              "date": "2025-02-13 07:39:48",
+              "quantity": 20,
+              "priceUnit": 99999.99
+            },
+            {
+              "orderId": 86386,
+              "orderName": "S34509",
+              "date": "2025-01-27 09:36:20",
+              "quantity": 8,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 13,
+            "median": 10,
+            "stdDev": 6.394442031083626,
+            "min": 6,
+            "max": 25,
+            "cv": 0.491880156237202,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.576360768049368
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 30.857549189814815,
+            "lastOrderDaysAgo": 24.697708333333335,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18379,
+        "productName": "[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 10,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 100,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 91347,
+              "orderName": "S39470",
+              "date": "2025-10-01 07:15:18",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 90486,
+              "orderName": "S38609",
+              "date": "2025-08-20 11:40:57",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 90189,
+              "orderName": "S38312",
+              "date": "2025-08-07 09:07:10",
+              "quantity": 1,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 89002,
+              "orderName": "S37125",
+              "date": "2025-06-03 07:16:03",
+              "quantity": 6,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 88174,
+              "orderName": "S36297",
+              "date": "2025-04-22 06:30:05",
+              "quantity": 5,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 87295,
+              "orderName": "S35418",
+              "date": "2025-03-18 08:20:58",
+              "quantity": 6,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 86721,
+              "orderName": "S34844",
+              "date": "2025-02-13 07:39:48",
+              "quantity": 5,
+              "priceUnit": 99999.99
+            },
+            {
+              "orderId": 86386,
+              "orderName": "S34509",
+              "date": "2025-01-27 09:36:20",
+              "quantity": 6,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 6.125,
+            "median": 6,
+            "stdDev": 2.7128168017763383,
+            "min": 1,
+            "max": 10,
+            "cv": 0.44290886559613685,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.5518576776642979
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 35.2657705026455,
+            "lastOrderDaysAgo": 24.697708333333335,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18377,
+        "productName": "[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 10,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 5,
+          "percent": 100,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 91347,
+              "orderName": "S39470",
+              "date": "2025-10-01 07:15:18",
+              "quantity": 12,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 90486,
+              "orderName": "S38609",
+              "date": "2025-08-20 11:40:57",
+              "quantity": 8,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 90189,
+              "orderName": "S38312",
+              "date": "2025-08-07 09:07:10",
+              "quantity": 0,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 89805,
+              "orderName": "S37928",
+              "date": "2025-07-07 11:38:49",
+              "quantity": 15,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 89002,
+              "orderName": "S37125",
+              "date": "2025-06-03 07:16:03",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 88174,
+              "orderName": "S36297",
+              "date": "2025-04-22 06:30:05",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 87295,
+              "orderName": "S35418",
+              "date": "2025-03-18 08:20:58",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 86721,
+              "orderName": "S34844",
+              "date": "2025-02-13 07:39:48",
+              "quantity": 8,
+              "priceUnit": 99999.99
+            },
+            {
+              "orderId": 86386,
+              "orderName": "S34509",
+              "date": "2025-01-27 09:36:20",
+              "quantity": 14,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 9.666666666666666,
+            "median": 10,
+            "stdDev": 4.109609335312651,
+            "min": 0,
+            "max": 15,
+            "cv": 0.42513200020475705,
+            "trend": "stable",
+            "outliers": [
+              0
+            ],
+            "regularityScore": 0.6164096616688348
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 30.857549189814815,
+            "lastOrderDaysAgo": 24.697708333333335,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18378,
+        "productName": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 8,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 20,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 90486,
+              "orderName": "S38609",
+              "date": "2025-08-20 11:40:57",
+              "quantity": 8,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 90189,
+              "orderName": "S38312",
+              "date": "2025-08-07 09:07:10",
+              "quantity": 6,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 89805,
+              "orderName": "S37928",
+              "date": "2025-07-07 11:38:49",
+              "quantity": 8,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 89002,
+              "orderName": "S37125",
+              "date": "2025-06-03 07:16:03",
+              "quantity": 8,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 88174,
+              "orderName": "S36297",
+              "date": "2025-04-22 06:30:05",
+              "quantity": 5,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 87295,
+              "orderName": "S35418",
+              "date": "2025-03-18 08:20:58",
+              "quantity": 10,
+              "priceUnit": 30.02
+            },
+            {
+              "orderId": 86721,
+              "orderName": "S34844",
+              "date": "2025-02-13 07:39:48",
+              "quantity": 5,
+              "priceUnit": 99999.99
+            },
+            {
+              "orderId": 86386,
+              "orderName": "S34509",
+              "date": "2025-01-27 09:36:20",
+              "quantity": 6,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 7,
+            "median": 7,
+            "stdDev": 1.6583123951777,
+            "min": 5,
+            "max": 10,
+            "cv": 0.23690177073967142,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.726367606254962
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 29.29212466931217,
+            "lastOrderDaysAgo": 66.51322916666666,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18336,
+        "productName": "[ALO30] ORGANIC CRUNCH aloe vera drink original 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 8,
+        "reason": "Predicted 8u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 110,
+            "orders": [
+              {
+                "orderId": 89805,
+                "orderName": "S37928",
+                "date": "2025-07-07 11:38:49",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 89002,
+                "orderName": "S37125",
+                "date": "2025-06-03 07:16:03",
+                "quantity": 8,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87578,
+                "orderName": "S35701",
+                "date": "2025-04-03 14:18:53",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87295,
+                "orderName": "S35418",
+                "date": "2025-03-18 08:20:58",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 86721,
+                "orderName": "S34844",
+                "date": "2025-02-13 07:39:48",
+                "quantity": 5,
+                "priceUnit": 99999.99
+              },
+              {
+                "orderId": 86386,
+                "orderName": "S34509",
+                "date": "2025-01-27 09:36:20",
+                "quantity": 1,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18334,
+        "productName": "[ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 5,
+        "reason": "Predicted 5u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 7,
+            "lastOrderDaysAgo": 110,
+            "orders": [
+              {
+                "orderId": 89805,
+                "orderName": "S37928",
+                "date": "2025-07-07 11:38:49",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 89002,
+                "orderName": "S37125",
+                "date": "2025-06-03 07:16:03",
+                "quantity": 5,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 88174,
+                "orderName": "S36297",
+                "date": "2025-04-22 06:30:05",
+                "quantity": 5,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87578,
+                "orderName": "S35701",
+                "date": "2025-04-03 14:18:53",
+                "quantity": 15,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87295,
+                "orderName": "S35418",
+                "date": "2025-03-18 08:20:58",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 86721,
+                "orderName": "S34844",
+                "date": "2025-02-13 07:39:48",
+                "quantity": 5,
+                "priceUnit": 99999.99
+              },
+              {
+                "orderId": 86386,
+                "orderName": "S34509",
+                "date": "2025-01-27 09:36:20",
+                "quantity": 6,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18337,
+        "productName": "[ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 5,
+        "reason": "Predicted 5u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 110,
+            "orders": [
+              {
+                "orderId": 89805,
+                "orderName": "S37928",
+                "date": "2025-07-07 11:38:49",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 89002,
+                "orderName": "S37125",
+                "date": "2025-06-03 07:16:03",
+                "quantity": 5,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 88174,
+                "orderName": "S36297",
+                "date": "2025-04-22 06:30:05",
+                "quantity": 5,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87578,
+                "orderName": "S35701",
+                "date": "2025-04-03 14:18:53",
+                "quantity": 2,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87295,
+                "orderName": "S35418",
+                "date": "2025-03-18 08:20:58",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 86386,
+                "orderName": "S34509",
+                "date": "2025-01-27 09:36:20",
+                "quantity": 6,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18335,
+        "productName": "[ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 8,
+        "reason": "Predicted 8u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        },
+        "context": {
+          "history": {
+            "orderCount": 6,
+            "lastOrderDaysAgo": 144,
+            "orders": [
+              {
+                "orderId": 89002,
+                "orderName": "S37125",
+                "date": "2025-06-03 07:16:03",
+                "quantity": 8,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 88174,
+                "orderName": "S36297",
+                "date": "2025-04-22 06:30:05",
+                "quantity": 15,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87578,
+                "orderName": "S35701",
+                "date": "2025-04-03 14:18:53",
+                "quantity": 1,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 87295,
+                "orderName": "S35418",
+                "date": "2025-03-18 08:20:58",
+                "quantity": 10,
+                "priceUnit": 14.706
+              },
+              {
+                "orderId": 86721,
+                "orderName": "S34844",
+                "date": "2025-02-13 07:39:48",
+                "quantity": 5,
+                "priceUnit": 99999.99
+              },
+              {
+                "orderId": 86386,
+                "orderName": "S34509",
+                "date": "2025-01-27 09:36:20",
+                "quantity": 6,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

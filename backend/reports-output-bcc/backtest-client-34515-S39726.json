@@ -1,0 +1,30 @@
+{
+  "clientId": 34515,
+  "clientName": "Fermes en Vie SC - Fermes en Vie",
+  "orderName": "S39726",
+  "orderDate": "2025-10-21 07:07:14",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.56,
+    "recall": 1,
+    "f1Score": 0.717948717948718,
+    "mae": 0.6428571428571429,
+    "wmape": 40.909090909090914,
+    "mape": 35.714285714285715,
+    "bias": -22.727272727272727
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 8
+  },
+  "llmUsage": {
+    "calls": 34,
+    "promptTokens": 30438,
+    "completionTokens": 4992,
+    "totalTokens": 35430
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 23309,
+  "clientName": "Vent de Terre Scrl",
+  "orderName": "S39965",
+  "orderDate": "2025-10-28 13:41:14",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 17,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.6071428571428571,
+    "recall": 1,
+    "f1Score": 0.7555555555555554,
+    "mae": 0.5294117647058824,
+    "wmape": 39.130434782608695,
+    "mape": 43.13725490196079,
+    "bias": 21.73913043478261
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 9
+  },
+  "llmUsage": {
+    "calls": 32,
+    "promptTokens": 29251,
+    "completionTokens": 4958,
+    "totalTokens": 34209
+  }
+}

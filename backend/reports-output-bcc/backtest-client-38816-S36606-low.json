@@ -1,0 +1,30 @@
+{
+  "clientId": 38816,
+  "clientName": "DLL AD LOVENJOEL WVB",
+  "orderName": "S36606",
+  "orderDate": "2025-05-08 08:28:48",
+  "cutoffDate": "2025-05-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.4,
+    "recall": 1,
+    "f1Score": 0.5714285714285715,
+    "mae": 0.3333333333333333,
+    "wmape": 33.33333333333333,
+    "mape": 33.333333333333336,
+    "bias": 33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 16,
+    "promptTokens": 13988,
+    "completionTokens": 2419,
+    "totalTokens": 16407
+  }
+}

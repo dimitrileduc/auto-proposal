@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:08:36.866Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-27 00:00:00"
+    }
+  },
+  "client": {
+    "id": 34751,
+    "name": "Les Cabanes de Rensiwez SPRL",
+    "order": {
+      "name": "S39873",
+      "date": "2025-10-28 13:37:18"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 4
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 4,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 0.25,
+        "wmape": 8.333333333333332,
+        "mape": 8.333333333333332,
+        "bias": 8.333333333333332,
+        "distribution": {
+          "exactMatch": 3,
+          "partialMatch": 1
+        },
+        "rmse": 0.5
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 2,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 2,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 2,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0.5,
+          "wmape": 16.666666666666664,
+          "mape": 16.666666666666664,
+          "bias": 16.666666666666664,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 1
+          },
+          "rmse": 0.7071067811865476
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3630,
+    "completionTokens": 682,
+    "totalTokens": 4312
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18383,
+        "productName": "[WIG06] WIGNAC cidre naturel bio sans alcool 330ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 90528,
+              "orderName": "S38651",
+              "date": "2025-08-26 06:35:10",
+              "quantity": 3,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 90118,
+              "orderName": "S38241",
+              "date": "2025-08-05 07:26:53",
+              "quantity": 2,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 89321,
+              "orderName": "S37444",
+              "date": "2025-06-17 06:49:23",
+              "quantity": 2,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 87661,
+              "orderName": "S35784",
+              "date": "2025-04-02 12:57:36",
+              "quantity": 1,
+              "priceUnit": 22.2
+            },
+            {
+              "orderId": 86451,
+              "orderName": "S34574",
+              "date": "2025-01-29 14:19:58",
+              "quantity": 1,
+              "priceUnit": 22.2
+            }
+          ],
+          "statistics": {
+            "mean": 1.8,
+            "median": 2,
+            "stdDev": 0.7483314773547883,
+            "min": 1,
+            "max": 3,
+            "cv": 0.41573970964154905,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.5945837343131147
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 52.15888888888889,
+            "lastOrderDaysAgo": 61.76724537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18384,
+        "productName": "[WIG07] WIGNAC cidre naturel bio sans alcool 750ml",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 90528,
+              "orderName": "S38651",
+              "date": "2025-08-26 06:35:10",
+              "quantity": 3,
+              "priceUnit": 21.3
+            },
+            {
+              "orderId": 90118,
+              "orderName": "S38241",
+              "date": "2025-08-05 07:26:53",
+              "quantity": 1,
+              "priceUnit": 21.3
+            },
+            {
+              "orderId": 89321,
+              "orderName": "S37444",
+              "date": "2025-06-17 06:49:23",
+              "quantity": 2,
+              "priceUnit": 21.3
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0.816496580927726,
+            "min": 1,
+            "max": 3,
+            "cv": 0.408248290463863,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.5946743720699684
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 34.99506365740741,
+            "lastOrderDaysAgo": 61.76724537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18381,
+        "productName": "[WIG01] WIGNAC cidre naturel bio 330ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 90528,
+              "orderName": "S38651",
+              "date": "2025-08-26 06:35:10",
+              "quantity": 3,
+              "priceUnit": 25.8
+            },
+            {
+              "orderId": 90118,
+              "orderName": "S38241",
+              "date": "2025-08-05 07:26:53",
+              "quantity": 1,
+              "priceUnit": 25.8
+            },
+            {
+              "orderId": 89321,
+              "orderName": "S37444",
+              "date": "2025-06-17 06:49:23",
+              "quantity": 2,
+              "priceUnit": 25.8
+            },
+            {
+              "orderId": 87661,
+              "orderName": "S35784",
+              "date": "2025-04-02 12:57:36",
+              "quantity": 1,
+              "priceUnit": 25.8
+            },
+            {
+              "orderId": 86161,
+              "orderName": "S34284",
+              "date": "2025-01-13 13:56:31",
+              "quantity": 1,
+              "priceUnit": 25.8
+            }
+          ],
+          "statistics": {
+            "mean": 1.6,
+            "median": 1,
+            "stdDev": 0.8,
+            "min": 1,
+            "max": 3,
+            "cv": 0.5,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.5333097665714697
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 56.162960069444445,
+            "lastOrderDaysAgo": 61.76724537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18382,
+        "productName": "[WIG03] WIGNAC cidre naturel bio 750ml",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 90528,
+              "orderName": "S38651",
+              "date": "2025-08-26 06:35:10",
+              "quantity": 3,
+              "priceUnit": 25.5
+            },
+            {
+              "orderId": 90118,
+              "orderName": "S38241",
+              "date": "2025-08-05 07:26:53",
+              "quantity": 1,
+              "priceUnit": 25.5
+            },
+            {
+              "orderId": 89321,
+              "orderName": "S37444",
+              "date": "2025-06-17 06:49:23",
+              "quantity": 2,
+              "priceUnit": 25.5
+            },
+            {
+              "orderId": 87661,
+              "orderName": "S35784",
+              "date": "2025-04-02 12:57:36",
+              "quantity": 1,
+              "priceUnit": 25.5
+            }
+          ],
+          "statistics": {
+            "mean": 1.75,
+            "median": 2,
+            "stdDev": 0.82915619758885,
+            "min": 1,
+            "max": 3,
+            "cv": 0.47380354147934284,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.531551344932359
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 48.57814043209876,
+            "lastOrderDaysAgo": 61.76724537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

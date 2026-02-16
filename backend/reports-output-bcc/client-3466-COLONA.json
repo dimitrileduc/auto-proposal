@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:12:55.748Z"
+  },
+  "client": {
+    "id": 3466,
+    "name": "COLONA"
+  },
+  "config": {
+    "analysisEndDate": "2025-09-02 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 1823,
+        "completionTokens": 398,
+        "totalTokens": 2221
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 1780.8,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 17297,
+        "product_name": "[PF3298] COLONA MOUTARDE SUCREE 5 KG",
+        "product_uom": "TU1",
+        "quantity_recommended": 216,
+        "quantity_source": "llm",
+        "price_unit": 4.55,
+        "subtotal": 982.8,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 22 juillet 2025, soit il y a 42 jours. Bien que l'historique récent soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En l'absence d'un cycle régulier clairement défini, le principe de précaution B2B s'applique pour éviter une rupture de stock. ÉTAPE 2 : Estimation de la quantité. L'historique de l'année précédente montre des volumes très importants (1080u), mais la commande la plus récente (216u) indique une baisse significative de la consommation ou un changement de format de commande. Conformément aux règles de privilégier l'historique récent et de choisir la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 216 unités.",
+          "summary": "",
+          "baseline_quantity": 216,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-03 10:12:05",
+            "quantity": 216,
+            "price_unit": 4.55
+          },
+          {
+            "date": "2024-04-11 07:46:07",
+            "quantity": 1080,
+            "price_unit": 4.55
+          },
+          {
+            "date": "2024-04-10 06:44:22",
+            "quantity": 1080,
+            "price_unit": 4.55
+          },
+          {
+            "date": "2024-02-13 13:46:38",
+            "quantity": 1080,
+            "price_unit": 4.55
+          },
+          {
+            "date": "2024-01-23 08:54:35",
+            "quantity": 1080,
+            "price_unit": 4.55
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 17100,
+        "product_name": "[PI3285] PI MOUTARDE SUCREE",
+        "product_uom": "kg",
+        "quantity_recommended": 1050,
+        "quantity_source": "llm",
+        "price_unit": 0.76,
+        "subtotal": 798,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 07/07/2025, soit 57 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, l'absence de commande depuis près de deux mois sur un produit de ce type présente un risque de rupture imminent ou un besoin de restockage immédiat. En l'absence d'historique de cycle complet, le principe de précaution B2B impose de prévoir une commande. ÉTAPE 2 : L'historique récent ne présente qu'une seule commande de 1050 unités. En suivant la règle de maintien de la quantité pour une rotation régulière ou unique sans tendance inverse, la quantité retenue est la médiane de l'historique disponible, soit 1050 unités.",
+          "summary": "",
+          "baseline_quantity": 1050,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-07 09:00:28",
+            "quantity": 1050,
+            "price_unit": 0.76
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 1,
+    "base_amount": 982.8,
+    "optional_amount": 798,
+    "total_amount": 1780.8,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3144
+}

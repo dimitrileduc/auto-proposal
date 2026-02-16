@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:18:50.905Z"
+  },
+  "client": {
+    "id": 56404,
+    "name": "TRENDY FOODS BELGIUM SA"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-29 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 886,
+        "completionTokens": 223,
+        "totalTokens": 1109
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 2419.2,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8991,
+        "product_name": "[PF0088] FILOU VOL AU VENT 800 GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 64,
+        "quantity_source": "llm",
+        "price_unit": 37.8,
+        "subtotal": 2419.2,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 12 août 2025, soit 78 jours avant la date actuelle. Bien que l'historique récent soit limité à une seule commande, l'absence de mouvement depuis plus de deux mois sur un produit de type \"Vol au vent\" suggère un cycle de réapprovisionnement long ou irrégulier. En application du principe de précaution B2B (si doute sur le cycle → prévoir), une commande est nécessaire pour éviter une rupture de stock prolongée, d'autant plus que nous entrons dans une période de fin d'année potentiellement plus active pour ce type de produit. ÉTAPE 2 : Estimation quantité. L'historique (2024 et 2025) montre une stabilité parfaite avec des commandes de 64 unités. En suivant la règle de maintien de la quantité pour une rotation régulière et l'utilisation de la médiane historique, la quantité de 64 unités est retenue.",
+          "summary": "",
+          "baseline_quantity": 64,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-12 09:50:01",
+            "quantity": 64,
+            "price_unit": 37.8
+          },
+          {
+            "date": "2025-01-15 12:59:27",
+            "quantity": 64,
+            "price_unit": 37.8
+          },
+          {
+            "date": "2024-08-07 13:20:09",
+            "quantity": 64,
+            "price_unit": 36
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 2419.2,
+    "optional_amount": 0,
+    "total_amount": 2419.2,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2984
+}

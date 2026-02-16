@@ -1,0 +1,30 @@
+{
+  "clientId": 17309,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper market Burcht",
+  "orderName": "S39531",
+  "orderDate": "2025-10-03 06:25:22",
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 1,
+    "fn": 7,
+    "precision": 0.875,
+    "recall": 0.5,
+    "f1Score": 0.6363636363636364,
+    "mae": 0.42857142857142855,
+    "wmape": 25,
+    "mape": 21.428571428571427,
+    "bias": -25
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 35,
+    "promptTokens": 30384,
+    "completionTokens": 4223,
+    "totalTokens": 34607
+  }
+}

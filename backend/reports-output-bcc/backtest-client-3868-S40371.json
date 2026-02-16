@@ -1,0 +1,30 @@
+{
+  "clientId": 3868,
+  "clientName": "TERRA NATURKOST HANDELS KG",
+  "orderName": "S40371",
+  "orderDate": "2025-11-14 15:19:09",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.9285714285714286,
+    "recall": 1,
+    "f1Score": 0.962962962962963,
+    "mae": 14.307692307692308,
+    "wmape": 31.686541737649065,
+    "mape": 24.537977745524913,
+    "bias": -31.686541737649065
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 16,
+    "promptTokens": 15054,
+    "completionTokens": 2605,
+    "totalTokens": 17659
+  }
+}

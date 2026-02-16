@@ -1,0 +1,30 @@
+{
+  "clientId": 38875,
+  "clientName": "DLL PROXY TARGET STORE MARANSART",
+  "orderName": "S39084",
+  "orderDate": "2025-09-10 13:34:51",
+  "cutoffDate": "2025-09-09 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.375,
+    "recall": 1,
+    "f1Score": 0.5454545454545454,
+    "mae": 0.3333333333333333,
+    "wmape": 20,
+    "mape": 33.333333333333336,
+    "bias": 20
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13199,
+    "completionTokens": 2123,
+    "totalTokens": 15322
+  }
+}

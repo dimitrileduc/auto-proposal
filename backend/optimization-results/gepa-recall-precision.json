@@ -1,0 +1,30 @@
+{
+  "version": "2.0",
+  "phase": "gepa-multiobj-doc-compliant",
+  "optimizedAt": "2025-12-29T13:05:10.535Z",
+  "models": {
+    "teacher": "anthropic/claude-sonnet-4",
+    "student": "google/gemini-3-flash-preview"
+  },
+  "config": {
+    "numTrials": 25,
+    "minibatch": true,
+    "minibatchSize": 20,
+    "paretoScalarize": "0.8*recall + 0.2*precision",
+    "trainSize": 80,
+    "valSize": 40
+  },
+  "results": {
+    "tp": 19,
+    "fp": 13,
+    "fn": 1,
+    "tn": 7,
+    "recall": 0.95,
+    "precision": 0.59375,
+    "f1": 0.7307692307692308
+  },
+  "paretoFrontSize": 1,
+  "instruction": "Expert Supply Chain B2B - Prédiction réapprovisionnement.\n\n🎯 OBJECTIF: RECALL MAXIMAL (90%+)\n⚠️ Mieux vaut commander trop (FP) que créer une rupture (FN).\n📊 Si DOUTE → PRÉVOIR COMMANDE (principe précaution).\n\nAnalyser: cycle commande, risque rupture 30j, saisonnalité N-1.",
+  "demos": [],
+  "bestScore": null
+}

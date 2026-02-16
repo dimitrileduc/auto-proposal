@@ -1,0 +1,30 @@
+{
+  "clientId": 38855,
+  "clientName": "DLL PROXY FEXHE DISVALE SPRL",
+  "orderName": "S38770",
+  "orderDate": "2025-08-27 06:18:37",
+  "cutoffDate": "2025-08-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 11471,
+    "completionTokens": 1953,
+    "totalTokens": 13424
+  }
+}

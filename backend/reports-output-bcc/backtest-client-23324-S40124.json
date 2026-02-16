@@ -1,0 +1,30 @@
+{
+  "clientId": 23324,
+  "clientName": "FERME TILKIN",
+  "orderName": "S40124",
+  "orderDate": "2025-11-05 10:30:47",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 12,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.42857142857142855,
+    "recall": 1,
+    "f1Score": 0.6,
+    "mae": 0.08333333333333333,
+    "wmape": 7.6923076923076925,
+    "mape": 8.333333333333334,
+    "bias": 7.6923076923076925
+  },
+  "distribution": {
+    "exactMatch": 11,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 37,
+    "promptTokens": 33367,
+    "completionTokens": 5841,
+    "totalTokens": 39208
+  }
+}

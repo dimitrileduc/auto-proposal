@@ -1,0 +1,30 @@
+{
+  "clientId": 134,
+  "clientName": "Le bon Wagon Malmedy",
+  "orderName": "S39602",
+  "orderDate": "2025-10-08 07:14:28",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.42857142857142855,
+    "recall": 1,
+    "f1Score": 0.6,
+    "mae": 2.1666666666666665,
+    "wmape": 76.47058823529412,
+    "mape": 79.44444444444444,
+    "bias": -52.94117647058824
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 25,
+    "promptTokens": 21883,
+    "completionTokens": 3425,
+    "totalTokens": 25308
+  }
+}

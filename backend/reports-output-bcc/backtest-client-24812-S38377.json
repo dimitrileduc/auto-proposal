@@ -1,0 +1,30 @@
+{
+  "clientId": 24812,
+  "clientName": "KOCKARTZ Distripat GmbH (Filiale in Eynatten)",
+  "orderName": "S38377",
+  "orderDate": "2025-08-07 06:33:33",
+  "cutoffDate": "2025-08-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 6.666666666666667,
+    "wmape": 666.6666666666667,
+    "mape": 666.6666666666666,
+    "bias": 666.6666666666667
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 2716,
+    "completionTokens": 526,
+    "totalTokens": 3242
+  }
+}

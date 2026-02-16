@@ -1,0 +1,436 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:18:06.295Z"
+  },
+  "client": {
+    "id": 6823,
+    "name": "ÖKORING HANDELS GMBH, Delivery Address"
+  },
+  "config": {
+    "analysisEndDate": "2025-02-10 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 9,
+      "llm_usage": {
+        "calls": 9,
+        "promptTokens": 9339,
+        "completionTokens": 1322,
+        "totalTokens": 10661
+      }
+    },
+    "proposalFinal": {
+      "products_count": 9,
+      "total_amount": 1740.8,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 567,
+        "product_name": "[MF0027] MF Tarti Aubergine 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 197.12,
+        "confidence": "high",
+        "order_count": 18,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier (environ tous les 7 à 14 jours en janvier). La dernière commande datant du 28 janvier (soit 13 jours avant la date actuelle), le seuil de réapprovisionnement de 30 jours est largement atteint, créant un risque de rupture imminent. La quantité commandée est strictement constante à 16 unités sur toutes les dernières occurrences ainsi que sur l'historique N-1. En suivant la règle de la médiane et de la stabilité du cycle, une commande de 16 unités est nécessaire.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-19 12:33:03",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-27 11:50:34",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-20 10:13:00",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-13 09:26:07",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-06 14:18:11",
+            "quantity": 16,
+            "price_unit": 12
+          }
+        ]
+      },
+      {
+        "product_id": 569,
+        "product_name": "[MF0029] MF Tarti Datte chili 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 197.12,
+        "confidence": "high",
+        "order_count": 23,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier avec un intervalle moyen d'environ 10 à 14 jours sur les dernières occurrences. La dernière commande datant du 28 janvier (soit 13 jours avant la date actuelle), nous atteignons le seuil critique de réapprovisionnement pour couvrir les 30 prochains jours. La quantité est extrêmement stable à 16 unités sur toutes les commandes récentes et historiques. En suivant la règle de la médiane et de la rotation régulière, la quantité préconisée est de 16 unités.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-12 09:43:10",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-27 11:50:34",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-20 10:13:00",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-13 09:26:07",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-06 14:18:11",
+            "quantity": 16,
+            "price_unit": 12
+          }
+        ]
+      },
+      {
+        "product_id": 570,
+        "product_name": "[MF0030] MF Tarti Mangue Curry 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 197.12,
+        "confidence": "high",
+        "order_count": 21,
+        "llm_prediction": {
+          "reasoning": "Le produit présente un cycle de commande très régulier avec une quantité constante de 16 unités. La dernière commande date du 28 janvier, soit il y a 13 jours. Le cycle moyen observé récemment est d'environ 7 à 10 jours (entre les deux dernières commandes) ou mensuel historiquement. Étant donné que nous sommes à 13 jours de la dernière commande et que le seuil de réapprovisionnement est de 30 jours, il existe un risque de rupture imminent selon le principe de précaution B2B. La quantité de 16 unités est systématique dans l'historique (médiane parfaite), elle est donc reconduite.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-12 09:43:10",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-27 11:50:34",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-20 10:13:00",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-13 09:26:07",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-06 14:18:11",
+            "quantity": 16,
+            "price_unit": 12
+          }
+        ]
+      },
+      {
+        "product_id": 571,
+        "product_name": "[MF0031] MF Tarti Olives verte 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 197.12,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande très régulier d'environ 21 à 35 jours. La dernière commande date du 28 janvier, soit il y a 13 jours. Avec un seuil de réapprovisionnement de 30 jours, la prochaine commande est attendue aux alentours du 18-25 février, ce qui entre dans l'horizon de prévision. Le risque de rupture est identifié selon le principe de précaution B2B. La quantité est fixée à 16 unités, correspondant à la constante stricte observée sur toutes les commandes récentes et historiques (médiane parfaite).",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-06 08:11:12",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-27 11:50:34",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-20 10:13:00",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-13 09:26:07",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2024-02-06 14:18:11",
+            "quantity": 16,
+            "price_unit": 12
+          }
+        ]
+      },
+      {
+        "product_id": 13383,
+        "product_name": "[MF0044] MF Brotaufstrich Kichererbsen - Kreuzkümmel 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 12.08,
+        "subtotal": 193.28,
+        "confidence": "high",
+        "order_count": 35,
+        "llm_prediction": {
+          "reasoning": "Le cycle de commande récent montre une fréquence hebdomadaire à bimensuelle (dernière commande le 28/01, soit il y a 13 jours). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est élevé car le délai moyen entre les commandes est inférieur à ce seuil. La quantité est calculée selon la règle de la médiane historique récente : les 8 dernières commandes sont strictement identiques à 16 unités, ce qui indique une rotation très stable et régulière.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-11-15 14:57:10",
+            "quantity": 32,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2023-11-07 12:47:29",
+            "quantity": 32,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2023-10-25 07:38:40",
+            "quantity": 16,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2023-10-10 09:11:51",
+            "quantity": 32,
+            "price_unit": 11.76
+          },
+          {
+            "date": "2023-06-13 13:16:06",
+            "quantity": 16,
+            "price_unit": 11.76
+          }
+        ]
+      },
+      {
+        "product_id": 14851,
+        "product_name": "[MF0048] MF Delikatess Mayonnaise 250ml DE",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 10.85,
+        "subtotal": 173.6,
+        "confidence": "high",
+        "order_count": 22,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande récent montre des intervalles de 17 à 40 jours (moyenne ~28 jours). La dernière commande datant du 28 janvier (il y a 13 jours), le prochain besoin est estimé sous 15 jours, ce qui entre dans l'horizon de réapprovisionnement de 30 jours. Historiquement, le produit présente une rotation stable avec une quantité récurrente de 16 unités. En appliquant la règle de la médiane sur l'historique récent et N-1, la quantité de 16 unités est retenue pour couvrir le cycle à venir sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-11-28 11:23:06",
+            "quantity": 16,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2023-11-15 14:57:10",
+            "quantity": 16,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2023-11-07 12:47:29",
+            "quantity": 16,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2023-10-25 07:38:40",
+            "quantity": 16,
+            "price_unit": 10.56
+          },
+          {
+            "date": "2023-10-10 09:11:51",
+            "quantity": 16,
+            "price_unit": 10.56
+          }
+        ]
+      },
+      {
+        "product_id": 13381,
+        "product_name": "[MF0042] MF Brotaufstrich Tomate Bärlauch 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 197.12,
+        "confidence": "high",
+        "order_count": 35,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande récent montre une fréquence d'approvisionnement toutes les 2 à 3 semaines (dernières commandes les 07/01 et 21/01). Avec 20 jours écoulés depuis la dernière commande et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent. Bien que l'historique N-1 affichait des volumes plus importants, la tendance actuelle est stabilisée à une quantité récurrente de 16 unités (médiane des commandes récentes, hors pic exceptionnel de décembre). En application du principe de précaution B2B et du respect de la médiane récente, une commande de 16 unités est nécessaire.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-11-07 12:47:29",
+            "quantity": 32,
+            "price_unit": 12
+          },
+          {
+            "date": "2023-10-25 07:38:40",
+            "quantity": 48,
+            "price_unit": 12
+          },
+          {
+            "date": "2023-10-10 09:11:51",
+            "quantity": 48,
+            "price_unit": 12
+          },
+          {
+            "date": "2023-09-19 12:20:46",
+            "quantity": 16,
+            "price_unit": 12
+          },
+          {
+            "date": "2023-06-13 13:16:06",
+            "quantity": 16,
+            "price_unit": 12
+          }
+        ]
+      },
+      {
+        "product_id": 18421,
+        "product_name": "[MF0062] ​MF Tarti Betterave rouge",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 12.32,
+        "subtotal": 197.12,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION DU BESOIN) : Le cycle de commande observé est de 14 jours (tous les mardis, une semaine sur deux). La dernière commande remonte au 21 janvier, soit 20 jours avant la date actuelle. Le délai depuis la dernière commande dépasse largement le cycle habituel et l'horizon de réapprovisionnement de 30 jours est largement entamé. Il existe un risque de rupture imminent. ÉTAPE 2 (ESTIMATION QUANTITÉ) : L'historique récent montre une stabilité parfaite avec deux commandes de 16 unités. La médiane est de 16. Conformément à la règle de maintien des rotations régulières, la quantité préconisée est de 16 unités.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-01-21 12:09:16",
+            "quantity": 16,
+            "price_unit": 12.32
+          },
+          {
+            "date": "2025-01-07 12:44:00",
+            "quantity": 16,
+            "price_unit": 12.32
+          }
+        ]
+      },
+      {
+        "product_id": 13382,
+        "product_name": "[MF0043] MF Brotaufstrich Apfel Meerrettich 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 11.95,
+        "subtotal": 191.2,
+        "confidence": "high",
+        "order_count": 24,
+        "llm_prediction": {
+          "reasoning": "L'historique récent montre un cycle de commande très régulier d'environ 18 jours (02/12, 19/12, 07/01). La dernière commande datant du 07/01, soit il y a 34 jours, le délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe un risque de rupture immédiat. Concernant la quantité, les trois dernières commandes sont strictement identiques (16u). La médiane et la tendance actuelle confirment donc un besoin de 16 unités pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-11-15 14:57:10",
+            "quantity": 16,
+            "price_unit": 11.64
+          },
+          {
+            "date": "2023-11-07 12:47:29",
+            "quantity": 32,
+            "price_unit": 11.64
+          },
+          {
+            "date": "2023-10-25 07:38:40",
+            "quantity": 16,
+            "price_unit": 11.64
+          },
+          {
+            "date": "2023-09-19 12:20:46",
+            "quantity": 16,
+            "price_unit": 11.64
+          },
+          {
+            "date": "2023-06-13 13:16:06",
+            "quantity": 16,
+            "price_unit": 11.64
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 9,
+    "optional_products_count": 0,
+    "base_amount": 1740.8,
+    "optional_amount": 0,
+    "total_amount": 1740.8,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2898
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 23329,
+  "clientName": "Ferme du Vallon",
+  "orderName": "S39151",
+  "orderDate": "2025-09-17 12:18:11",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 32,
+    "fp": 13,
+    "fn": 0,
+    "precision": 0.7111111111111111,
+    "recall": 1,
+    "f1Score": 0.8311688311688311,
+    "mae": 1.03125,
+    "wmape": 51.5625,
+    "mape": 76.14583333333333,
+    "bias": 20.3125
+  },
+  "distribution": {
+    "exactMatch": 13,
+    "partialMatch": 19
+  },
+  "llmUsage": {
+    "calls": 45,
+    "promptTokens": 41547,
+    "completionTokens": 7579,
+    "totalTokens": 49126
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:21:39.033Z"
+  },
+  "client": {
+    "id": 12430,
+    "name": "CLIENTS VENTES AU COMPTANT"
+  },
+  "config": {
+    "analysisEndDate": "2025-09-08 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 5,
+      "llm_usage": {
+        "calls": 5,
+        "promptTokens": 4442,
+        "completionTokens": 708,
+        "totalTokens": 5150
+      }
+    },
+    "proposalFinal": {
+      "products_count": 5,
+      "total_amount": 340.09000000000003,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 128.1,
+        "minimum_required": 300,
+        "gap_filled": 211.99000000000004,
+        "products_adjusted": 5
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16766,
+        "product_name": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 58.5,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "Le produit présente une rotation très faible et irrégulière. La dernière commande remonte à 146 jours, ce qui dépasse largement tout cycle de réapprovisionnement standard. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter une rupture prolongée) et conformément à la règle des rotations faibles (1-2u), une commande de 1 unité est préconisée. La quantité est basée sur la médiane des commandes récentes et de l'historique N-1 à période comparable, en excluant le pic exceptionnel de décembre 2023.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-15 12:14:41",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-05-31 10:08:39",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2023-12-13 14:38:16",
+            "quantity": 12,
+            "price_unit": 1.5
+          }
+        ]
+      },
+      {
+        "product_id": 16749,
+        "product_name": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 58.5,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "L'analyse montre une rotation très faible et irrégulière (dernière commande il y a 146 jours). Bien que le cycle soit difficile à définir, le principe de précaution B2B impose de prévoir un réapprovisionnement pour éviter une rupture prolongée, d'autant plus que le produit est absent du stock depuis longtemps. La quantité retenue est de 1 unité, correspondant à la médiane des commandes récentes et de l'historique N-1, excluant le pic exceptionnel de 12 unités de fin 2023 conformément aux règles de gestion des valeurs extrêmes.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-15 12:14:41",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-05-31 10:08:39",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-03-19 09:03:23",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2023-12-13 14:38:16",
+            "quantity": 12,
+            "price_unit": 1.5
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 19247,
+        "product_name": "[JF068] FIL VOL AU VENT 800G BOCAL ",
+        "product_uom": "TU12",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 44.89,
+        "subtotal": 134.67000000000002,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 23 juin 2025, soit 77 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément aux règles de gestion des rotations faibles et à l'utilisation de la médiane historique, la quantité préconisée est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-23 11:58:09",
+            "quantity": 1,
+            "price_unit": 44.89
+          }
+        ]
+      },
+      {
+        "product_id": 19248,
+        "product_name": "[FIL19] FIL VOL AU VENT 400G BOCAL",
+        "product_uom": "TU12",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 29.21,
+        "subtotal": 58.42,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 23 juin 2025, soit 77 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé est important. En application du principe de précaution B2B (si doute sur le cycle ou rotation irrégulière), un risque de rupture est identifié pour couvrir l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation quantité. En l'absence d'historique multiple, la quantité de la commande précédente (1u) est utilisée comme référence. Conformément aux règles de rotation faible, on maintient la quantité minimale de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-23 11:58:09",
+            "quantity": 1,
+            "price_unit": 29.21
+          }
+        ]
+      },
+      {
+        "product_id": 16792,
+        "product_name": "[JF029] JF VOL AU VENT BOCAL 400G",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 15,
+        "subtotal": 30,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 23 juin 2025, soit il y a 77 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé suggère un besoin de réapprovisionnement imminent pour éviter une rupture de stock prolongée sur ce produit. En application du principe de précaution B2B et face à un cycle irrégulier, une commande est préconisée. La quantité retenue est de 1 unité, correspondant à la médiane historique et à la règle de maintien pour les produits à très faible rotation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-23 11:58:09",
+            "quantity": 1,
+            "price_unit": 15
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 2,
+    "optional_products_count": 3,
+    "base_amount": 117,
+    "optional_amount": 223.09000000000003,
+    "total_amount": 340.09000000000003,
+    "moq_adjusted": true,
+    "moq_gap": 211.99000000000004
+  },
+  "execution_time_ms": 2841
+}

@@ -1,0 +1,1129 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:26:07.627Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-02-25 00:00:00"
+    }
+  },
+  "client": {
+    "id": 67997,
+    "name": "DEPOT VRAC SILLY SPRL, Sorenza",
+    "order": {
+      "name": "S35085",
+      "date": "2025-02-26 08:11:58"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 14,
+        "falsePositives": 8,
+        "falseNegatives": 6,
+        "total": 28
+      },
+      "productMetrics": {
+        "precision": 0.6363636363636364,
+        "recall": 0.7,
+        "f1Score": 0.6666666666666666,
+        "totalPredicted": 22,
+        "totalReal": 20
+      },
+      "quantityMetrics": {
+        "mae": 0.42857142857142855,
+        "wmape": 42.857142857142854,
+        "mape": 42.857142857142854,
+        "bias": 42.857142857142854,
+        "distribution": {
+          "exactMatch": 8,
+          "partialMatch": 6
+        },
+        "rmse": 0.6546536707079771
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 14,
+          "falsePositives": 8,
+          "falseNegatives": 6,
+          "total": 28
+        },
+        "productMetrics": {
+          "precision": 0.6363636363636364,
+          "recall": 0.7,
+          "f1Score": 0.6666666666666666,
+          "totalPredicted": 22,
+          "totalReal": 20
+        },
+        "quantityMetrics": {
+          "mae": 0.42857142857142855,
+          "wmape": 42.857142857142854,
+          "mape": 42.857142857142854,
+          "bias": 42.857142857142854,
+          "distribution": {
+            "exactMatch": 8,
+            "partialMatch": 6
+          },
+          "rmse": 0.6546536707079771
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19213,
+    "completionTokens": 3124,
+    "totalTokens": 22337
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18266,
+        "productName": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 14.88
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18265,
+        "productName": "[BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 14.88
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18264,
+        "productName": "[BUD02] BUDDY Organic Energy Drink – Lemon & Ginger – 250ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 14.88
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18269,
+        "productName": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 2,
+              "priceUnit": 27.36
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18270,
+        "productName": "[JOY05] Organic Cherry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 2,
+              "priceUnit": 31.84
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18272,
+        "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 2,
+              "priceUnit": 27.92
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18273,
+        "productName": "[JOY08] JOY! Organic Raspberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 2,
+              "priceUnit": 31.84
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18276,
+        "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 2,
+              "priceUnit": 27.92
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18271,
+        "productName": "[JOY07] JOY! Organic Fig Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 2,
+              "priceUnit": 27.92
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18300,
+        "productName": "[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 35.76
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18309,
+        "productName": "[NOD04] NODA limonade bio faible en calories - mangue passion 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 32.4
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18310,
+        "productName": "[NOD01] NODA limonade bio faible en calories - pamplemousse rose 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 32.4
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18334,
+        "productName": "[ALO33] ORGANIC CRUNCH aloe vera drink citron-sureau 500ml",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 15.48
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18344,
+        "productName": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 86357,
+              "orderName": "S34480",
+              "date": "2025-01-23 07:46:09",
+              "quantity": 1,
+              "priceUnit": 25.2
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 32.67628472222222,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18275,
+        "productName": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 2,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18274,
+        "productName": "[JOY06] JOY! Organic Rhubarb Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 2,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18336,
+        "productName": "[ALO30] ORGANIC CRUNCH aloe vera drink original 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 1,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18335,
+        "productName": "[ALO31] ORGANIC CRUNCH aloe vera drink grenade-myrtille 500ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 1,
+                "priceUnit": 15.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18356,
+        "productName": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 1,
+                "priceUnit": 25.3
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18358,
+        "productName": "[RISH02] RISH kombucha BIO - hibiscus 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 1,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18357,
+        "productName": "[RISH03] RISH kombucha BIO - gingembre 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 1,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18359,
+        "productName": "[RISH01] RISH kombucha BIO - original 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 32,
+            "orders": [
+              {
+                "orderId": 86357,
+                "orderName": "S34480",
+                "date": "2025-01-23 07:46:09",
+                "quantity": 1,
+                "priceUnit": 25.08
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18307,
+        "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18308,
+        "productName": "[NOD03] NODA limonade bio faible en calories - gingembre citronelle 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18337,
+        "productName": "[ALO32] ORGANIC CRUNCH aloe vera drink pomme-framboise 500ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18363,
+        "productName": "[RIT08] RITCHIE Citron - canette 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18366,
+        "productName": "[RIT09] RITCHIE Cola - canette 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18370,
+        "productName": "[RIT07] RITCHIE Orange - canette 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38728,
+  "clientName": "CRF CRESCEMA (MAASEIK)",
+  "orderName": "S39247",
+  "orderDate": "2025-09-17 06:54:18",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 23,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.8518518518518519,
+    "recall": 1,
+    "f1Score": 0.92,
+    "mae": 0.34782608695652173,
+    "wmape": 24.242424242424242,
+    "mape": 23.188405797101446,
+    "bias": 12.121212121212121
+  },
+  "distribution": {
+    "exactMatch": 16,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 24647,
+    "completionTokens": 4434,
+    "totalTokens": 29081
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:08:35.428Z"
+  },
+  "client": {
+    "id": 60549,
+    "name": "TERRAGUSTO"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-02 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 6,
+      "llm_usage": {
+        "calls": 6,
+        "promptTokens": 5384,
+        "completionTokens": 996,
+        "totalTokens": 6380
+      }
+    },
+    "proposalFinal": {
+      "products_count": 6,
+      "total_amount": 1189,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 14,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 224,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. L'intervalle entre les deux dernières commandes est de 98 jours. La dernière commande date du 18 septembre, soit il y a 45 jours. Bien que nous soyons à environ 46% du cycle précédent, le cycle est irrégulier (seulement deux points de données). En application du principe de précaution B2B (si doute sur le cycle ou rotation difficile à déterminer), un risque de rupture est identifié à l'horizon des 30 prochains jours. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre des commandes de 20u et 14u. En suivant la règle de la médiane et la consigne de choisir la valeur la plus basse en cas de doute ou de tendance incertaine, la quantité retenue est de 14 unités.",
+          "summary": "",
+          "baseline_quantity": 14,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-18 09:21:44",
+            "quantity": 14,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-06-12 12:42:10",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-05-28 08:01:06",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-25 10:03:48",
+            "quantity": 6,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-07 09:25:49",
+            "quantity": 19,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18351,
+        "product_name": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 13,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 208,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles de 40 et 58 jours. Depuis la dernière commande du 18 septembre, 45 jours se sont écoulés. Le seuil de réapprovisionnement de 30 jours est largement atteint, créant un risque de rupture imminent. En appliquant la règle de la médiane sur l'historique récent (8, 13, 15), la valeur centrale est 13. Conformément au principe de précaution B2B et à la méthode de calcul par la médiane, une commande de 13 unités est préconisée pour couvrir les besoins du prochain cycle.",
+          "summary": "",
+          "baseline_quantity": 13,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-22 10:08:43",
+            "quantity": 15,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-06-12 12:42:10",
+            "quantity": 13,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-05-28 08:01:06",
+            "quantity": 13,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-03-14 11:14:06",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-01-07 09:32:34",
+            "quantity": 25,
+            "price_unit": 16
+          }
+        ]
+      },
+      {
+        "product_id": 18353,
+        "product_name": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 160,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. L'historique récent montre des intervalles de commande de 40 jours (juin-juillet) puis 58 jours (juillet-septembre). La dernière commande date du 18 septembre, soit 45 jours avant la date actuelle (2 novembre). Le cycle moyen étant d'environ 49 jours, nous avons dépassé 70% du cycle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent. ÉTAPE 2 : ESTIMATION QUANTITÉ. Les quantités commandées sont 10u, 8u et 14u. La médiane de ces commandes est de 10u. Conformément à la règle de privilégier la médiane et la prudence en B2B, la quantité retenue est de 10u.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-22 10:08:43",
+            "quantity": 8,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-06-12 12:42:10",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-05-28 08:01:06",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-25 10:03:48",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-07 09:25:49",
+            "quantity": 19,
+            "price_unit": 17.7
+          }
+        ]
+      },
+      {
+        "product_id": 18355,
+        "product_name": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 160,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 18 septembre, soit 45 jours avant la date actuelle. L'intervalle entre les deux commandes précédentes était de 58 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous entrons dans la fenêtre critique du cycle habituel (70% du cycle atteint). En application du principe de précaution B2B et de la règle de la médiane/valeur basse pour éviter le surstockage sur un produit à rotation modérée, une quantité de 10 unités (basée sur la commande la plus récente) est préconisée.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-22 10:08:43",
+            "quantity": 18,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-04-25 10:03:48",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-03-14 11:14:06",
+            "quantity": 10,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-02-07 09:25:49",
+            "quantity": 18,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2025-01-07 09:32:34",
+            "quantity": 8,
+            "price_unit": 16
+          }
+        ]
+      },
+      {
+        "product_id": 18356,
+        "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 10,
+        "quantity_source": "llm",
+        "price_unit": 22.9,
+        "subtotal": 229,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 18 septembre, soit 45 jours. Le cycle entre les deux commandes précédentes était de 58 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent (45 + 30 > 58). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : L'historique récent montre des commandes de 10u et 15u. En suivant la règle de la médiane et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 10u.",
+          "summary": "",
+          "baseline_quantity": 10,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-18 09:21:44",
+            "quantity": 10,
+            "price_unit": 22.9
+          },
+          {
+            "date": "2025-07-22 10:08:43",
+            "quantity": 15,
+            "price_unit": 22.9
+          },
+          {
+            "date": "2025-04-25 10:03:48",
+            "quantity": 10,
+            "price_unit": 22.9
+          },
+          {
+            "date": "2025-03-14 11:14:06",
+            "quantity": 6,
+            "price_unit": 22.9
+          },
+          {
+            "date": "2025-01-07 09:32:34",
+            "quantity": 15,
+            "price_unit": 22.9
+          }
+        ]
+      },
+      {
+        "product_id": 18352,
+        "product_name": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 13,
+        "quantity_source": "llm",
+        "price_unit": 16,
+        "subtotal": 208,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 12 juin 2025, soit plus de 140 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement tout cycle de rotation standard pour un produit de type chips. En application du principe de précaution B2B (cycle irrégulier ou difficile à déterminer), un besoin de réapprovisionnement est identifié pour éviter une rupture prolongée. ÉTAPE 2 : Estimation quantité. En l'absence d'historique multiple, la quantité de la dernière commande (13u) est utilisée comme référence pour maintenir le stock initialement testé.",
+          "summary": "",
+          "baseline_quantity": 13,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-12 12:42:10",
+            "quantity": 13,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-05-28 08:01:06",
+            "quantity": 13,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-03-14 11:14:06",
+            "quantity": 20,
+            "price_unit": 16
+          },
+          {
+            "date": "2025-01-07 09:32:34",
+            "quantity": 8,
+            "price_unit": 16
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 6,
+    "optional_products_count": 0,
+    "base_amount": 1189,
+    "optional_amount": 0,
+    "total_amount": 1189,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3202
+}

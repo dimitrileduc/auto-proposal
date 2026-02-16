@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:07:53.053Z"
+  },
+  "client": {
+    "id": 3857,
+    "name": "3B TRADING & CONSULTING GmbH"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-27 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 2120,
+        "completionTokens": 362,
+        "totalTokens": 2482
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 1673.75,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8983,
+        "product_name": "[PF0070] FILOU/LD SAUCE ANDALOUSE  10 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 39,
+        "quantity_source": "llm",
+        "price_unit": 25.75,
+        "subtotal": 1004.25,
+        "confidence": "high",
+        "order_count": 18,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière d'environ 30 à 34 jours (intervalles récents de 33, 34 et 34 jours). La dernière commande datant du 22 septembre, soit il y a 35 jours, le seuil de réapprovisionnement de 30 jours est dépassé, confirmant un risque de rupture imminent. Pour la quantité, l'historique récent présente des valeurs de 39, 55, 39 et 44. La médiane de ces commandes est de 41.5, mais conformément à la règle de prudence B2B privilégiant la valeur la plus basse en cas de doute et la récurrence historique forte du chiffre 39 (présent 6 fois sur l'ensemble des données), une quantité de 39 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 39,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-13 12:26:04",
+            "quantity": 40,
+            "price_unit": 25
+          },
+          {
+            "date": "2024-05-06 09:47:07",
+            "quantity": 39,
+            "price_unit": 25
+          },
+          {
+            "date": "2024-04-02 06:09:19",
+            "quantity": 26,
+            "price_unit": 25
+          },
+          {
+            "date": "2024-01-31 12:14:02",
+            "quantity": 39,
+            "price_unit": 25
+          },
+          {
+            "date": "2023-11-30 08:24:02",
+            "quantity": 32,
+            "price_unit": 25
+          }
+        ]
+      },
+      {
+        "product_id": 8978,
+        "product_name": "[PF0608] FILOU/LD SAUCE SAMOURAI  10 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 26,
+        "quantity_source": "llm",
+        "price_unit": 25.75,
+        "subtotal": 669.5,
+        "confidence": "high",
+        "order_count": 17,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle moyen d'environ 33 jours entre les commandes récentes. La dernière commande datant du 22 septembre (soit 35 jours avant la date actuelle), le seuil de réapprovisionnement de 30 jours est dépassé, indiquant un risque de rupture imminent. Bien que la dernière commande ait été de 44u (pic exceptionnel), l'historique montre une récurrence stable à 26u (juin et juillet 2025, ainsi qu'avril 2024). En appliquant la règle de la médiane et en ignorant le pic récent pour éviter le surstockage, la quantité préconisée est de 26u.",
+          "summary": "",
+          "baseline_quantity": 26,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-13 12:26:04",
+            "quantity": 12,
+            "price_unit": 25
+          },
+          {
+            "date": "2024-05-06 09:47:07",
+            "quantity": 13,
+            "price_unit": 25
+          },
+          {
+            "date": "2024-04-02 06:09:19",
+            "quantity": 26,
+            "price_unit": 25
+          },
+          {
+            "date": "2024-01-31 12:14:02",
+            "quantity": 13,
+            "price_unit": 25
+          },
+          {
+            "date": "2023-11-30 08:24:02",
+            "quantity": 20,
+            "price_unit": 25
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 2,
+    "optional_products_count": 0,
+    "base_amount": 1673.75,
+    "optional_amount": 0,
+    "total_amount": 1673.75,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2655
+}

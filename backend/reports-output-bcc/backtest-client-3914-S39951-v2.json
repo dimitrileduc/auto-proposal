@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:12:27.571Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-27 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3914,
+    "name": "SLIGRO B.V.",
+    "order": {
+      "name": "S39951",
+      "date": "2025-10-28 07:35:05"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 64,
+        "wmape": 50,
+        "mape": 50,
+        "bias": -50,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 64
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 64,
+          "wmape": 50,
+          "mape": 50,
+          "bias": -50,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 64
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1087,
+    "completionTokens": 184,
+    "totalTokens": 1271
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 8991,
+        "productName": "[PF0088] FILOU VOL AU VENT 800 GR",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 64,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 128
+        },
+        "error": {
+          "absolute": 64,
+          "percent": 50,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 14,
+          "orders": [
+            {
+              "orderId": 91400,
+              "orderName": "S39523",
+              "date": "2025-10-02 12:35:34",
+              "quantity": 192,
+              "priceUnit": 37.8
+            },
+            {
+              "orderId": 91342,
+              "orderName": "S39465",
+              "date": "2025-09-30 07:38:02",
+              "quantity": 64,
+              "priceUnit": 37.8
+            },
+            {
+              "orderId": 91216,
+              "orderName": "S39339",
+              "date": "2025-09-22 14:29:20",
+              "quantity": 64,
+              "priceUnit": 37.8
+            },
+            {
+              "orderId": 89877,
+              "orderName": "S38000",
+              "date": "2025-07-10 11:08:16",
+              "quantity": 64,
+              "priceUnit": 37.8
+            },
+            {
+              "orderId": 85095,
+              "orderName": "S33218",
+              "date": "2024-11-12 09:00:57",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 84517,
+              "orderName": "S32640",
+              "date": "2024-10-07 13:47:08",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 84517,
+              "orderName": "S32640",
+              "date": "2024-10-07 13:47:08",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 84407,
+              "orderName": "S32530",
+              "date": "2024-10-01 11:28:51",
+              "quantity": 192,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 84407,
+              "orderName": "S32530",
+              "date": "2024-10-01 11:28:51",
+              "quantity": 192,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 83808,
+              "orderName": "S31931",
+              "date": "2024-08-26 13:30:37",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 82839,
+              "orderName": "S30962",
+              "date": "2024-06-25 08:43:03",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 81463,
+              "orderName": "S29586",
+              "date": "2024-04-02 08:22:04",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 79676,
+              "orderName": "S27799",
+              "date": "2023-11-23 14:38:14",
+              "quantity": 64,
+              "priceUnit": 36
+            },
+            {
+              "orderId": 79461,
+              "orderName": "S27584",
+              "date": "2023-11-13 14:43:11",
+              "quantity": 64,
+              "priceUnit": 36
+            }
+          ],
+          "statistics": {
+            "mean": 91.42857142857143,
+            "median": 64,
+            "stdDev": 52.52171562549056,
+            "min": 64,
+            "max": 192,
+            "cv": 0.574456264653803,
+            "trend": "stable",
+            "outliers": [
+              192,
+              192,
+              192
+            ],
+            "regularityScore": 0.25532624120771824
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 52.989977742165244,
+            "lastOrderDaysAgo": 24.516967592592593,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 39011,
+  "clientName": "HLC Retail SPAR HELECINE",
+  "orderName": "S39001",
+  "orderDate": "2025-09-05 13:59:08",
+  "cutoffDate": "2025-09-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 4,
+    "fn": 1,
+    "precision": 0.6666666666666666,
+    "recall": 0.8888888888888888,
+    "f1Score": 0.761904761904762,
+    "mae": 0.5,
+    "wmape": 30.76923076923077,
+    "mape": 29.166666666666664,
+    "bias": -15.384615384615385
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13053,
+    "completionTokens": 1980,
+    "totalTokens": 15033
+  }
+}

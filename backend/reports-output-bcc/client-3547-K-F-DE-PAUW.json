@@ -1,0 +1,991 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:20:17.691Z"
+  },
+  "client": {
+    "id": 3547,
+    "name": "K&F DE PAUW"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 21,
+      "llm_usage": {
+        "calls": 22,
+        "promptTokens": 22862,
+        "completionTokens": 3774,
+        "totalTokens": 26636
+      }
+    },
+    "proposalFinal": {
+      "products_count": 21,
+      "total_amount": 32552.179999999997,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9264,
+        "product_name": "[PF1809] LD SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 200,
+        "quantity_source": "llm",
+        "price_unit": 15.24,
+        "subtotal": 3048,
+        "confidence": "high",
+        "order_count": 30,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande moyen d'environ 25 à 30 jours (écarts de 21, 25 et 22 jours entre les dernières commandes effectives). La dernière commande datant du 14 octobre, soit il y a 28 jours, nous avons dépassé 70% du cycle habituel. Un risque de rupture est donc identifié dans l'horizon des 30 jours (Replenishment Threshold Days). Concernant la quantité, l'historique récent est très stable avec une récurrence de 200u sur les trois dernières commandes effectives. La médiane des commandes récentes (excluant le pic exceptionnel de 400u en juin) est de 200u. Conformément aux règles de précaution B2B et de stabilité, une commande de 200u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 200,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-02-02 07:47:31",
+            "quantity": 50,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-01-23 14:10:00",
+            "quantity": 75,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 50,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 50,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 125,
+            "price_unit": 14.64
+          }
+        ]
+      },
+      {
+        "product_id": 9072,
+        "product_name": "[PF1195] GF VIN ANCIENNE WECK 330ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 290,
+        "quantity_source": "llm",
+        "price_unit": 16.68,
+        "subtotal": 4837.2,
+        "confidence": "high",
+        "order_count": 18,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 23 septembre 2025, soit 49 jours avant la date actuelle. L'historique de l'année précédente montre une activité soutenue sur la période octobre-novembre (commandes les 30/09 et 21/10/2024). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est élevé car le cycle moyen constaté est largement entamé. Pour la quantité, bien que la dernière commande soit de 320u, la médiane historique et la récurrence des commandes de l'année précédente se situent à 290u. En application de la règle de prudence (choisir la valeur la plus basse en cas de doute entre deux volumes récents), la quantité de 290u est retenue.",
+          "summary": "",
+          "baseline_quantity": 290,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-18 14:12:55",
+            "quantity": 160,
+            "price_unit": 16.2
+          },
+          {
+            "date": "2024-02-23 12:30:31",
+            "quantity": 160,
+            "price_unit": 16.2
+          },
+          {
+            "date": "2024-02-01 14:41:32",
+            "quantity": 150,
+            "price_unit": 16.2
+          },
+          {
+            "date": "2023-12-07 14:03:11",
+            "quantity": 160,
+            "price_unit": 16.2
+          },
+          {
+            "date": "2023-11-13 14:18:34",
+            "quantity": 160,
+            "price_unit": 16.2
+          }
+        ]
+      },
+      {
+        "product_id": 9254,
+        "product_name": "[PF1799] LD MAYONNAISE OEUFS 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 200,
+        "quantity_source": "llm",
+        "price_unit": 15.24,
+        "subtotal": 3048,
+        "confidence": "high",
+        "order_count": 27,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle récent montre des commandes régulières de 200 unités environ tous les 45 à 50 jours (intervalles de 49 et 47 jours). La dernière commande datant du 23 septembre 2025 (soit 49 jours avant la date actuelle), nous avons atteint 100% du cycle moyen, ce qui indique un risque de rupture imminent sous 30 jours. Bien que l'historique N-1 montre des volumes plus faibles et fragmentés, la tendance actuelle est stabilisée sur une quantité fixe. En appliquant la règle de la médiane sur l'historique récent (200, 200, 200), la quantité préconisée est de 200 unités pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 200,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-02-02 07:47:31",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-01-23 14:10:00",
+            "quantity": 50,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 50,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 100,
+            "price_unit": 14.64
+          }
+        ]
+      },
+      {
+        "product_id": 9256,
+        "product_name": "[PF1801] LD MAYONNA DU CHEF 470 ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 22,
+        "quantity_source": "llm",
+        "price_unit": 20.52,
+        "subtotal": 451.44,
+        "confidence": "high",
+        "order_count": 22,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 23 septembre 2025 (soit 49 jours). Bien que l'historique récent soit limité à une commande volumineuse de 110u, l'historique N-1 montre une activité régulière en octobre et novembre avec un cycle moyen d'environ 21 à 30 jours. Nous avons largement dépassé ce cycle et le seuil de réapprovisionnement de 30 jours est atteint. En application du principe de précaution B2B, un besoin est détecté. Pour la quantité, la commande de 110u est traitée comme un pic exceptionnel. On se base sur la médiane de l'historique N-1 (22u) pour éviter le surstockage tout en couvrant la consommation habituelle.",
+          "summary": "",
+          "baseline_quantity": 22,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-01-23 14:10:00",
+            "quantity": 11,
+            "price_unit": 19.38
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 11,
+            "price_unit": 19.38
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 11,
+            "price_unit": 19.38
+          },
+          {
+            "date": "2023-11-28 14:36:36",
+            "quantity": 11,
+            "price_unit": 19.38
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 11,
+            "price_unit": 19.38
+          }
+        ]
+      },
+      {
+        "product_id": 9258,
+        "product_name": "[PF1803] LD SAUCE TARTARE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 50,
+        "quantity_source": "llm",
+        "price_unit": 15.24,
+        "subtotal": 762,
+        "confidence": "high",
+        "order_count": 25,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle moyen d'environ 45 à 50 jours sur l'historique récent. La dernière commande datant du 23 septembre (soit 49 jours avant la date actuelle), le seuil de réapprovisionnement de 30 jours est largement atteint, présentant un risque de rupture imminent. L'historique N-1 confirme également une activité soutenue en octobre/novembre. Pour la quantité, bien qu'un pic de 200u ait été observé en août, les commandes habituelles se situent à 50u. En appliquant la règle de la médiane des commandes récentes (50, 200, 50) et en privilégiant la prudence pour éviter le surstockage, une quantité de 50u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 50,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-02-23 12:36:35",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-02-02 07:47:31",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 100,
+            "price_unit": 14.64
+          }
+        ]
+      },
+      {
+        "product_id": 9184,
+        "product_name": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 200,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 1980,
+        "confidence": "high",
+        "order_count": 15,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande récent montre une fréquence d'environ 30 à 60 jours (moyenne ~45 jours). La dernière commande datant du 23 septembre, soit il y a 49 jours, nous avons largement dépassé le seuil de 70% du cycle moyen. Le risque de rupture est imminent dans l'horizon des 30 jours (Replenishment Threshold Days). Bien que l'historique N-1 montre des volumes plus faibles (75u), la tendance récente de 2025 est stable et régulière à 200u par commande. En suivant la règle de la médiane des commandes récentes, la quantité préconisée est de 200 unités.",
+          "summary": "",
+          "baseline_quantity": 200,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-12 08:54:35",
+            "quantity": 75,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-10-21 07:08:48",
+            "quantity": 75,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-10-07 08:28:13",
+            "quantity": 75,
+            "price_unit": 9.3
+          },
+          {
+            "date": "2024-09-30 06:28:38",
+            "quantity": 75,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-09-09 07:37:51",
+            "quantity": 38,
+            "price_unit": 8.76
+          }
+        ]
+      },
+      {
+        "product_id": 9427,
+        "product_name": "[PF2938] LD FR TARTINAD BIO AUBERGI 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 200,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 1980,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 47 jours (entre août et septembre). La dernière commande datant du 23 septembre, soit il y a 49 jours, le délai dépasse largement le cycle habituel et l'horizon de 30 jours du seuil de réapprovisionnement. Bien que les volumes de l'année précédente étaient plus faibles et plus fréquents, la tendance actuelle s'est stabilisée sur des lots de 200 unités. En application du principe de précaution B2B et pour éviter une rupture sur un produit dont la rotation semble s'être accélérée par rapport à N-1, une commande est nécessaire. La quantité retenue correspond à la médiane des commandes récentes (200u).",
+          "summary": "",
+          "baseline_quantity": 200,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-12 08:54:35",
+            "quantity": 50,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-10-21 07:08:48",
+            "quantity": 75,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-10-07 08:28:13",
+            "quantity": 25,
+            "price_unit": 9.3
+          },
+          {
+            "date": "2024-09-30 06:28:38",
+            "quantity": 50,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-09-09 07:37:51",
+            "quantity": 92,
+            "price_unit": 8.76
+          }
+        ]
+      },
+      {
+        "product_id": 9182,
+        "product_name": "[PF1694] LD FR TARTINAD BIO POIVRON 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 200,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 1980,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre des intervalles d'environ 45 à 50 jours entre les dernières commandes (juin-août-septembre). La dernière commande datant du 23 septembre, soit il y a 49 jours, le seuil de réapprovisionnement de 30 jours est largement atteint et le risque de rupture est imminent. Bien que l'historique N-1 montre des volumes plus faibles (50-100u), la tendance récente de 2025 s'est stabilisée à 200u sur les deux dernières occurrences. En suivant la règle de la médiane des commandes récentes et le principe de précaution B2B face à un cycle de rotation confirmé, une quantité de 200u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 200,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-14 11:01:37",
+            "quantity": 125,
+            "price_unit": 9.3
+          },
+          {
+            "date": "2024-11-12 08:54:35",
+            "quantity": 100,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-10-21 07:08:48",
+            "quantity": 75,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-10-07 08:28:13",
+            "quantity": 50,
+            "price_unit": 9.3
+          },
+          {
+            "date": "2024-09-30 06:28:38",
+            "quantity": 100,
+            "price_unit": 8.76
+          }
+        ]
+      },
+      {
+        "product_id": 9070,
+        "product_name": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 100,
+        "quantity_source": "llm",
+        "price_unit": 9.6,
+        "subtotal": 960,
+        "confidence": "high",
+        "order_count": 17,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 45 à 50 jours sur l'historique récent. La dernière commande datant du 23 septembre (soit 49 jours avant la date actuelle), le seuil de réapprovisionnement de 30 jours est largement atteint, confirmant un risque de rupture imminent. Concernant la quantité, bien que les deux dernières commandes aient été de 200 unités, l'historique N-1 sur la même période (octobre/novembre) montre des volumes plus modérés (entre 50 et 150 unités). En appliquant le principe de précaution B2B et en privilégiant la médiane pondérée pour éviter le surstockage sur un produit bio, une quantité de 100 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 100,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-21 07:08:48",
+            "quantity": 75,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-10-07 08:28:13",
+            "quantity": 50,
+            "price_unit": 7.5
+          },
+          {
+            "date": "2024-09-30 06:28:38",
+            "quantity": 150,
+            "price_unit": 7.5
+          },
+          {
+            "date": "2024-09-09 07:37:51",
+            "quantity": 100,
+            "price_unit": 7.5
+          },
+          {
+            "date": "2024-08-14 07:53:18",
+            "quantity": 75,
+            "price_unit": 7.5
+          }
+        ]
+      },
+      {
+        "product_id": 9431,
+        "product_name": "[PF2973] LD FR TARTINADE BIO ANANAS 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 10.5,
+        "subtotal": 262.5,
+        "confidence": "high",
+        "order_count": 14,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle historique montre une fréquence de commande régulière environ tous les 21 à 30 jours (cf. septembre/octobre 2024). La dernière commande remonte au 23 septembre 2025, soit 49 jours avant la date actuelle. Ce délai dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours, signalant un risque de rupture imminent. Pour la quantité, bien qu'une commande exceptionnelle de 200u ait eu lieu en septembre, l'historique long terme est extrêmement stable à 25u. Conformément à la règle de la médiane et à l'exclusion des pics exceptionnels, la quantité retenue est de 25u.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-12 06:17:25",
+            "quantity": 25,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-05-03 06:34:29",
+            "quantity": 25,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2024-03-28 07:59:23",
+            "quantity": 25,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 25,
+            "price_unit": 8.76
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 25,
+            "price_unit": 8.76
+          }
+        ]
+      },
+      {
+        "product_id": 9247,
+        "product_name": "[PF1792] LD MAYONNAI TRUFFES 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 200,
+        "quantity_source": "llm",
+        "price_unit": 18.36,
+        "subtotal": 3672,
+        "confidence": "high",
+        "order_count": 27,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande récent montre une fréquence d'environ 45 à 50 jours (juin-août-septembre). La dernière commande datant du 23 septembre 2025, soit il y a 49 jours, nous avons dépassé le cycle habituel. Le risque de rupture est imminent dans l'horizon des 30 jours (Replenishment Threshold Days). Bien que l'historique N-1 montre des volumes plus faibles et fragmentés, la tendance récente est stabilisée sur une quantité fixe et régulière de 200 unités. En application de la règle de la médiane sur l'historique récent et du maintien d'une rotation régulière, la quantité de 200 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 200,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-01-23 14:10:00",
+            "quantity": 25,
+            "price_unit": 17.58
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 25,
+            "price_unit": 17.58
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 50,
+            "price_unit": 17.58
+          },
+          {
+            "date": "2023-11-28 14:36:36",
+            "quantity": 50,
+            "price_unit": 17.58
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 125,
+            "price_unit": 17.58
+          }
+        ]
+      },
+      {
+        "product_id": 9071,
+        "product_name": "[PF1194] GF VIN FINES HERBES WECK 330ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 153,
+        "quantity_source": "llm",
+        "price_unit": 16.98,
+        "subtotal": 2597.94,
+        "confidence": "high",
+        "order_count": 16,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle moyen d'environ 70 jours entre les réapprovisionnements récents (juin à août). Au 11 novembre, 78 jours se sont écoulés depuis la dernière commande du 25 août, ce qui dépasse largement le seuil de 70% du cycle habituel. Le risque de rupture est imminent dans l'horizon des 30 jours. Pour la quantité, la médiane des commandes récentes (145u et 160u) est de 152.5, arrondie à 153u. Ce volume est cohérent avec l'historique N-1 à la même période (145u en septembre) et stabilise le stock sans intégrer les pics exceptionnels constatés par le passé.",
+          "summary": "",
+          "baseline_quantity": 153,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-28 08:01:49",
+            "quantity": 64,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2024-03-18 14:12:55",
+            "quantity": 75,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2024-02-01 14:41:32",
+            "quantity": 75,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2023-12-07 14:03:11",
+            "quantity": 75,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2023-11-13 14:18:34",
+            "quantity": 75,
+            "price_unit": 16.5
+          }
+        ]
+      },
+      {
+        "product_id": 9013,
+        "product_name": "[PF0193] GF VIN ANCIENNE JERRYCAN 5L",
+        "product_uom": "TU4",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 44.48,
+        "subtotal": 1112,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle moyen d'environ 70 à 80 jours. La dernière commande datant du 25 août 2025 (soit 78 jours avant la date actuelle), nous avons dépassé le cycle habituel, ce qui indique un risque de rupture imminent dans l'horizon des 30 jours (Replenishment Threshold Days). En application du principe de précaution B2B, un réapprovisionnement est nécessaire. La quantité est fixée à 25 unités, correspondant à la médiane et à la constante historique observée sur toutes les commandes récentes et de l'année précédente.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-12 08:57:27",
+            "quantity": 25,
+            "price_unit": 43.2
+          },
+          {
+            "date": "2024-08-14 07:56:45",
+            "quantity": 25,
+            "price_unit": 43.2
+          },
+          {
+            "date": "2024-04-17 06:40:51",
+            "quantity": 25,
+            "price_unit": 43.2
+          },
+          {
+            "date": "2024-02-23 12:30:31",
+            "quantity": 25,
+            "price_unit": 43.2
+          },
+          {
+            "date": "2023-12-04 13:08:32",
+            "quantity": 25,
+            "price_unit": 43.2
+          }
+        ]
+      },
+      {
+        "product_id": 16991,
+        "product_name": "[PF3282] LD SAUCE AIOLI 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 15.24,
+        "subtotal": 381,
+        "confidence": "high",
+        "order_count": 17,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 25 août 2025 (soit 78 jours). Bien que l'historique récent montre une commande exceptionnelle de 200u, le cycle historique N-1 révèle une consommation régulière et saisonnière en fin d'année (commandes en septembre, octobre et novembre). Le délai depuis la dernière commande dépasse largement le cycle habituel, créant un risque de rupture imminent pour la période de fin d'année. Conformément à la règle de la médiane et à l'exclusion des pics exceptionnels (le 200u étant un outlier par rapport à l'historique de 25-50u), une quantité de 25u est préconisée pour couvrir le besoin immédiat sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-17 06:38:21",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-03-18 14:18:31",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-02-23 12:36:35",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-01-23 14:10:00",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 25,
+            "price_unit": 14.64
+          }
+        ]
+      },
+      {
+        "product_id": 9181,
+        "product_name": "[PF1693] LD FR TARTINAD BIO CAROTTE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 9.6,
+        "subtotal": 240,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 25 août, soit 78 jours. Le cycle précédent était de 67 jours. Nous avons largement dépassé ce cycle moyen, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement immédiat selon le principe de précaution B2B. ÉTAPE 2 : Estimation quantité. L'historique récent montre deux commandes très disparates (200u et 25u). La commande de 200u présente un caractère exceptionnel (pic de stockage ou promotion). Conformément aux règles de gestion des valeurs extrêmes et au choix de la quantité la plus basse en cas de doute, la médiane basse de 25u est retenue pour éviter un surstockage.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-02 09:03:39",
+            "quantity": 75,
+            "price_unit": 9.6
+          },
+          {
+            "date": "2025-03-05 10:27:49",
+            "quantity": 25,
+            "price_unit": 9.6
+          },
+          {
+            "date": "2025-02-24 13:57:58",
+            "quantity": 50,
+            "price_unit": 9.6
+          },
+          {
+            "date": "2025-01-23 13:42:16",
+            "quantity": 25,
+            "price_unit": 9.6
+          },
+          {
+            "date": "2024-12-02 09:27:19",
+            "quantity": 50,
+            "price_unit": 8.76
+          }
+        ]
+      },
+      {
+        "product_id": 9430,
+        "product_name": "[PF2972] LD FR TARTINADE BIO OLIVE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 100,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 990,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle montre une commande tous les 67 jours environ (juin à août). Depuis la dernière commande du 25 août, 78 jours se sont écoulés, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Il existe un risque de rupture imminent. Conformément à la règle de la médiane sur l'historique récent (100u et 200u) et au principe de prudence consistant à choisir la valeur la plus basse en cas de doute sur une rotation irrégulière, la quantité retenue est de 100u.",
+          "summary": "",
+          "baseline_quantity": 100,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-02 09:03:39",
+            "quantity": 25,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2025-02-24 13:57:58",
+            "quantity": 25,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-12-09 14:28:55",
+            "quantity": 50,
+            "price_unit": 8.88
+          },
+          {
+            "date": "2024-12-02 09:27:19",
+            "quantity": 25,
+            "price_unit": 8.88
+          },
+          {
+            "date": "2024-11-12 08:54:35",
+            "quantity": 50,
+            "price_unit": 8.88
+          }
+        ]
+      },
+      {
+        "product_id": 9250,
+        "product_name": "[PF1795] LD MAYONNAI WASABI 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 15.24,
+        "subtotal": 381,
+        "confidence": "high",
+        "order_count": 16,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre une rotation régulière avec un cycle de commande moyen d'environ 60 à 70 jours. La dernière commande remontant au 07/08/2025 (soit plus de 90 jours), le risque de rupture est imminent dans l'horizon des 30 jours. Bien qu'une commande exceptionnelle de 200u ait été enregistrée en août, l'historique long terme (N-1) et la récurrence habituelle indiquent un besoin standard de 25u. Conformément aux règles de gestion des pics exceptionnels et à l'utilisation de la médiane, la quantité retenue est de 25u.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-27 07:47:39",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-05-03 06:34:29",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-03-28 07:59:23",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-01-23 14:10:00",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 25,
+            "price_unit": 14.64
+          }
+        ]
+      },
+      {
+        "product_id": 9262,
+        "product_name": "[PF1807] LD SAUCE ANDALOUSE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 15.24,
+        "subtotal": 381,
+        "confidence": "high",
+        "order_count": 19,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle historique montre une fréquence de commande régulière environ tous les 20 à 30 jours. La dernière commande enregistrée remonte au 07/08/2025, soit plus de 90 jours sans activité, ce qui indique un risque de rupture imminent ou un besoin de réapprovisionnement immédiat selon le principe de précaution B2B. Pour la quantité, bien qu'un pic exceptionnel de 200u ait été observé en août, la médiane historique et la récurrence des commandes (N-1 et récent) se situent systématiquement à 25u. Conformément aux règles de gestion des valeurs extrêmes, la quantité retenue est la médiane stable de 25u.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-18 14:18:31",
+            "quantity": 17,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-02-02 07:47:31",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 25,
+            "price_unit": 14.64
+          }
+        ]
+      },
+      {
+        "product_id": 9260,
+        "product_name": "[PF1805] LD SAUCE COCKTAIL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 15.24,
+        "subtotal": 381,
+        "confidence": "high",
+        "order_count": 15,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence de réapprovisionnement variant entre 30 et 60 jours en moyenne. La dernière commande enregistrée remonte au 07/08/2025, soit plus de 90 jours avant la date actuelle (11/11/2025). Le risque de rupture est critique car nous avons largement dépassé le cycle habituel et le seuil de réapprovisionnement de 30 jours. Concernant la quantité, la commande exceptionnelle de 200u en août est traitée comme un pic atypique. L'historique long terme (N-1) et la médiane des commandes régulières convergent systématiquement vers 25u. En application du principe de précaution B2B et de la règle de la médiane, une commande de 25u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-27 07:47:39",
+            "quantity": 50,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-04-17 06:38:21",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2024-03-18 14:18:31",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-12-28 15:35:57",
+            "quantity": 25,
+            "price_unit": 14.64
+          },
+          {
+            "date": "2023-11-28 14:36:36",
+            "quantity": 25,
+            "price_unit": 14.64
+          }
+        ]
+      },
+      {
+        "product_id": 9316,
+        "product_name": "[PF1892] LD TARTINADE BIO TRUFFES 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 50,
+        "quantity_source": "llm",
+        "price_unit": 12.9,
+        "subtotal": 645,
+        "confidence": "high",
+        "order_count": 18,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 07/08/2025 (96 jours), ce qui dépasse largement le cycle de rotation habituel observé en 2024 (environ 20-40 jours). Bien que la dernière commande de 200u ait été exceptionnelle, l'historique N-1 montre une activité soutenue en fin d'année (octobre à décembre). En application du principe de précaution B2B et pour couvrir le risque de rupture sous 30 jours, un réapprovisionnement est nécessaire. La quantité est basée sur la médiane des commandes historiques (50u), en écartant le pic atypique de 200u pour éviter le surstockage.",
+          "summary": "",
+          "baseline_quantity": 50,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-02-02 07:47:31",
+            "quantity": 25,
+            "price_unit": 10.44
+          },
+          {
+            "date": "2024-01-23 14:10:00",
+            "quantity": 25,
+            "price_unit": 10.44
+          },
+          {
+            "date": "2023-12-07 13:59:34",
+            "quantity": 50,
+            "price_unit": 10.44
+          },
+          {
+            "date": "2023-12-04 13:05:53",
+            "quantity": 25,
+            "price_unit": 10.44
+          },
+          {
+            "date": "2023-11-13 08:31:26",
+            "quantity": 50,
+            "price_unit": 10.44
+          }
+        ]
+      },
+      {
+        "product_id": 9041,
+        "product_name": "[PF1193] GF VIN TOMATE WECK 330ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 145,
+        "quantity_source": "llm",
+        "price_unit": 16.98,
+        "subtotal": 2462.1,
+        "confidence": "high",
+        "order_count": 11,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 17 juin 2025, soit environ 147 jours. L'historique N-1 montre une commande importante à la mi-novembre (75u) et une activité régulière entre février et septembre. Bien que le cycle soit irrégulier, le délai depuis la dernière commande dépasse largement les cycles habituels observés en 2024. En application du principe de précaution B2B (doute sur le cycle = prévoir), un risque de rupture est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. Les commandes les plus récentes (2024-2025) se sont stabilisées à 145u. La médiane des commandes significatives récentes est de 145u. On maintient ce volume pour couvrir les besoins de fin d'année.",
+          "summary": "",
+          "baseline_quantity": 145,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-27 07:37:32",
+            "quantity": 96,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2024-04-17 06:40:51",
+            "quantity": 64,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2024-03-28 08:01:49",
+            "quantity": 128,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2024-02-01 14:41:32",
+            "quantity": 75,
+            "price_unit": 16.5
+          },
+          {
+            "date": "2023-11-13 14:18:34",
+            "quantity": 75,
+            "price_unit": 16.5
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 21,
+    "optional_products_count": 0,
+    "base_amount": 32552.179999999997,
+    "optional_amount": 0,
+    "total_amount": 32552.179999999997,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 7044
+}

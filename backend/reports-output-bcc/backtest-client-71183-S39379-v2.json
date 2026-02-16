@@ -1,0 +1,526 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:21:12.466Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-24 00:00:00"
+    }
+  },
+  "client": {
+    "id": 71183,
+    "name": "Fromagerie Kaas",
+    "order": {
+      "name": "S39379",
+      "date": "2025-09-25 06:32:11"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 5,
+        "falsePositives": 2,
+        "falseNegatives": 2,
+        "total": 9
+      },
+      "productMetrics": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1Score": 0.7142857142857143,
+        "totalPredicted": 7,
+        "totalReal": 7
+      },
+      "quantityMetrics": {
+        "mae": 0.6,
+        "wmape": 27.27272727272727,
+        "mape": 33.33333333333333,
+        "bias": 9.090909090909092,
+        "distribution": {
+          "exactMatch": 2,
+          "partialMatch": 3
+        },
+        "rmse": 0.7745966692414834
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 1,
+          "falseNegatives": 2,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1Score": 0.5714285714285715,
+          "totalPredicted": 3,
+          "totalReal": 4
+        },
+        "quantityMetrics": {
+          "mae": 0.5,
+          "wmape": 20,
+          "mape": 16.666666666666664,
+          "bias": -20,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 1
+          },
+          "rmse": 0.7071067811865476
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0.75,
+          "recall": 1,
+          "f1Score": 0.8571428571428571,
+          "totalPredicted": 4,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 0.6666666666666666,
+          "wmape": 33.33333333333333,
+          "mape": 44.444444444444436,
+          "bias": 33.33333333333333,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 2
+          },
+          "rmse": 0.816496580927726
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 6130,
+    "completionTokens": 1128,
+    "totalTokens": 7258
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18344,
+        "productName": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89535,
+              "orderName": "S37658",
+              "date": "2025-06-25 06:39:34",
+              "quantity": 2,
+              "priceUnit": 25.2
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 90.72252314814814,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18346,
+        "productName": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 89535,
+              "orderName": "S37658",
+              "date": "2025-06-25 06:39:34",
+              "quantity": 2,
+              "priceUnit": 25.2
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 90.72252314814814,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18380,
+        "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 33.33333333333333,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89535,
+              "orderName": "S37658",
+              "date": "2025-06-25 06:39:34",
+              "quantity": 4,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 87407,
+              "orderName": "S35530",
+              "date": "2025-03-21 07:22:10",
+              "quantity": 4,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 86583,
+              "orderName": "S34706",
+              "date": "2025-02-05 15:02:46",
+              "quantity": 1,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 86149,
+              "orderName": "S34272",
+              "date": "2025-01-13 13:07:30",
+              "quantity": 1,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 2.5,
+            "median": 3,
+            "stdDev": 1.5,
+            "min": 1,
+            "max": 4,
+            "cv": 0.6,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.41383867749045034
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 54.2296450617284,
+            "lastOrderDaysAgo": 90.72252314814814,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18378,
+        "productName": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 89535,
+              "orderName": "S37658",
+              "date": "2025-06-25 06:39:34",
+              "quantity": 2,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 87407,
+              "orderName": "S35530",
+              "date": "2025-03-21 07:22:10",
+              "quantity": 2,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 86583,
+              "orderName": "S34706",
+              "date": "2025-02-05 15:02:46",
+              "quantity": 1,
+              "priceUnit": 31.6
+            },
+            {
+              "orderId": 86149,
+              "orderName": "S34272",
+              "date": "2025-01-13 13:07:30",
+              "quantity": 1,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.5738386774904504
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 54.2296450617284,
+            "lastOrderDaysAgo": 90.72252314814814,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18351,
+        "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "productUom": "TU10",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89535,
+              "orderName": "S37658",
+              "date": "2025-06-25 06:39:34",
+              "quantity": 2,
+              "priceUnit": 17.7
+            },
+            {
+              "orderId": 86149,
+              "orderName": "S34272",
+              "date": "2025-01-13 13:07:30",
+              "quantity": 1,
+              "priceUnit": 17.7
+            }
+          ],
+          "statistics": {
+            "mean": 1.5,
+            "median": 2,
+            "stdDev": 0.5,
+            "min": 1,
+            "max": 2,
+            "cv": 0.3333333333333333,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 162.6889351851852,
+            "lastOrderDaysAgo": 90.72252314814814,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 17731,
+        "productName": "[FO001] FO CITRONNADE BIO 33cl",
+        "mismatchType": "false_positive",
+        "quantity": 5,
+        "reason": "Predicted 5u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 89535,
+                "orderName": "S37658",
+                "date": "2025-06-25 06:39:34",
+                "quantity": 5,
+                "priceUnit": 17.2
+              },
+              {
+                "orderId": 87407,
+                "orderName": "S35530",
+                "date": "2025-03-21 07:22:10",
+                "quantity": 4,
+                "priceUnit": 17.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18415,
+        "productName": "[REB06] REB chips bio - paprika fumé 35g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 90,
+            "orders": [
+              {
+                "orderId": 89535,
+                "orderName": "S37658",
+                "date": "2025-06-25 06:39:34",
+                "quantity": 1,
+                "priceUnit": 17.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18293,
+        "productName": "[LEA05] LEAMO organic lemon lemonade 330 ml",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

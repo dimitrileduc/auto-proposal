@@ -1,0 +1,30 @@
+{
+  "clientId": 71269,
+  "clientName": "Bouyard & Cie",
+  "orderName": "S40128",
+  "orderDate": "2025-11-05 07:33:56",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.2,
+    "recall": 1,
+    "f1Score": 0.33333333333333337,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 18,
+    "promptTokens": 15849,
+    "completionTokens": 2772,
+    "totalTokens": 18621
+  }
+}

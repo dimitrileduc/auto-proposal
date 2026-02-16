@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:09:54.093Z"
+  },
+  "client": {
+    "id": 24824,
+    "name": "KOCKARTZ Kockado GmbH (Filiale Eynatten)"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-03 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3884,
+        "completionTokens": 663,
+        "totalTokens": 4547
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 300.4,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 97.98,
+        "minimum_required": 300,
+        "gap_filled": 202.41999999999996,
+        "products_adjusted": 4
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16755,
+        "product_name": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 4,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 78,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière d'environ 20 à 25 jours (dernières commandes le 22/09 et 16/10). Au 03/11, 18 jours se sont écoulés depuis la dernière commande, ce qui place le prochain besoin critique à l'intérieur de la fenêtre des 30 jours (Replenishment Threshold Days). Conformément au principe de précaution B2B et à la détection d'un risque de rupture imminent, un réapprovisionnement est nécessaire. La quantité est fixée à 1 unité, correspondant à la médiane stricte et constante de l'historique récent et de l'année précédente (N-1), ce produit présentant une rotation très faible mais stable.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-16 12:22:06",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-09-22 09:39:52",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-10-25 11:31:41",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-10-09 13:27:10",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2024-09-25 09:07:05",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 13061,
+        "product_name": "[LV130] LV BIO Tartinade Paprika Chili 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 13.1,
+        "subtotal": 78.6,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 07/08/2025, soit environ 88 jours. Bien que la rotation soit lente, l'historique N-1 montre une activité régulière en fin d'année (décembre). Selon le principe de précaution B2B et le risque de rupture à l'approche de la période de fin d'année, un réapprovisionnement est nécessaire. La quantité retenue est de 2 unités, correspondant à la médiane historique et à la quantité de la dernière commande, afin de maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-08 11:43:35",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-04-05 08:47:31",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-02-02 08:44:55",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-12-20 08:32:55",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-12-12 14:35:06",
+            "quantity": 2,
+            "price_unit": 12.72
+          }
+        ]
+      },
+      {
+        "product_id": 13059,
+        "product_name": "[LV129] LV Tartinade Carotte Gingembre 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 13.04,
+        "subtotal": 65.19999999999999,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 07/08/2025, soit environ 88 jours. Bien que la rotation soit faible, l'historique N-1 montre une activité en fin d'année (décembre) et un besoin régulier tous les 2 à 3 mois. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est présent pour couvrir la période de fin d'année. En suivant le principe de précaution B2B et en se basant sur la médiane des quantités historiques (2u), une commande de 2 unités est préconisée pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-11 06:37:21",
+            "quantity": 1,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2024-04-08 11:43:35",
+            "quantity": 3,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2024-04-05 08:47:31",
+            "quantity": 2,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2024-02-02 08:44:55",
+            "quantity": 1,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2023-12-12 14:35:06",
+            "quantity": 2,
+            "price_unit": 12.66
+          }
+        ]
+      },
+      {
+        "product_id": 13060,
+        "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 13.1,
+        "subtotal": 78.6,
+        "confidence": "high",
+        "order_count": 12,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 07/08/2025, soit environ 88 jours. L'historique N-1 montre une commande le 03/09/2024 suivie d'un creux, mais avec une reprise d'activité régulière en fin d'année (décembre). Compte tenu du délai important depuis la dernière commande et de l'approche de la période de fin d'année (historiquement active en 2023), il existe un risque de rupture ou un besoin de réapprovisionnement imminent sous 30 jours. ÉTAPE 2 : Estimation de la quantité. La médiane des commandes historiques (récentes et N-1) est de 2 unités. Les volumes sont stables (majoritairement 2u). En respectant le principe de précaution sans surstocker, la quantité de 2 unités est retenue.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-08 11:43:35",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-04-05 08:47:31",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-02-02 08:44:55",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-12-20 08:32:55",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2023-12-12 14:35:06",
+            "quantity": 2,
+            "price_unit": 12.72
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 4,
+    "optional_products_count": 0,
+    "base_amount": 300.4,
+    "optional_amount": 0,
+    "total_amount": 300.4,
+    "moq_adjusted": true,
+    "moq_gap": 202.41999999999996
+  },
+  "execution_time_ms": 3162
+}

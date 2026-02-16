@@ -1,0 +1,30 @@
+{
+  "clientId": 71720,
+  "clientName": "Vanzeer, Cas, Cas Vanzeer",
+  "orderName": "S39753",
+  "orderDate": "2025-10-16 08:12:38",
+  "cutoffDate": "2025-10-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 41,
+    "promptTokens": 35904,
+    "completionTokens": 5776,
+    "totalTokens": 41680
+  }
+}

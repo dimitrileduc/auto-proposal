@@ -1,0 +1,30 @@
+{
+  "clientId": 34910,
+  "clientName": "Au coin du pub",
+  "orderName": "S38881",
+  "orderDate": "2025-09-01 07:14:02",
+  "cutoffDate": "2025-08-31 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8,
+    "recall": 1,
+    "f1Score": 0.888888888888889,
+    "mae": 1,
+    "wmape": 30.76923076923077,
+    "mape": 33.33333333333333,
+    "bias": -15.384615384615385
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 15117,
+    "completionTokens": 2606,
+    "totalTokens": 17723
+  }
+}

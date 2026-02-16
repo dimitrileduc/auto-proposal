@@ -1,0 +1,30 @@
+{
+  "clientId": 3914,
+  "clientName": "SLIGRO B.V.",
+  "orderName": "S39951",
+  "orderDate": "2025-10-28 07:35:05",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 64,
+    "wmape": 50,
+    "mape": 50,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1087,
+    "completionTokens": 184,
+    "totalTokens": 1271
+  }
+}

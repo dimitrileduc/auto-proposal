@@ -1,0 +1,30 @@
+{
+  "clientId": 38957,
+  "clientName": "ITM PANA & CO GOSSELIES",
+  "orderName": "S37254",
+  "orderDate": "2025-06-05 09:17:26",
+  "cutoffDate": "2025-06-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0.125,
+    "wmape": 12.5,
+    "mape": 12.5,
+    "bias": 12.5
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 17702,
+    "completionTokens": 3289,
+    "totalTokens": 20991
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38872,
+  "clientName": "DLL PROXY SAINT MICHEL ETTERBE",
+  "orderName": "S34169",
+  "orderDate": "2025-01-09 07:26:31",
+  "cutoffDate": "2025-01-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.42857142857142855,
+    "recall": 1,
+    "f1Score": 0.6,
+    "mae": 0.3333333333333333,
+    "wmape": 25,
+    "mape": 16.666666666666668,
+    "bias": -25
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 10485,
+    "completionTokens": 1736,
+    "totalTokens": 12221
+  }
+}

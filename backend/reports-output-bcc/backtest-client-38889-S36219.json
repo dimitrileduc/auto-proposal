@@ -1,0 +1,24 @@
+{
+  "clientId": 38889,
+  "clientName": "EDEKA AKTIV MÄRKTE DIRK MÜLLN",
+  "orderName": "S36219",
+  "orderDate": "2025-04-15 12:55:53",
+  "cutoffDate": "2025-04-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  }
+}

@@ -69,10 +69,4 @@ export interface QuoteCreationResult {
   tag_id: number;
   /** Order creation date (date_order, ISO format) */
   created_at: string;
-
-  // Chatter (internal note with LLM reasoning)
-  /** Message ID in Odoo chatter (mail.message), null if posting failed */
-  chatter_message_id: number | null;
-  /** Preview of the posted message (text, first 200 chars), null if posting failed */
-  chatter_message_preview: string | null;
 }

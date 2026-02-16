@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:28:35.367Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-01-13 00:00:00"
+    }
+  },
+  "client": {
+    "id": 1,
+    "name": "BRING BACK",
+    "order": {
+      "name": "S34300",
+      "date": "2025-01-14 09:12:47"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 0,
+        "falsePositives": 1,
+        "falseNegatives": 1,
+        "total": 2
+      },
+      "productMetrics": {
+        "precision": 0,
+        "recall": 0,
+        "f1Score": 0,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 1,
+          "falseNegatives": 1,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 865,
+    "completionTokens": 155,
+    "totalTokens": 1020
+  },
+  "products": {
+    "truePositives": [],
+    "falsePositives": [
+      {
+        "productId": 17818,
+        "productName": "[LC001] LC Coffret Exploration ",
+        "mismatchType": "false_positive",
+        "quantity": 10,
+        "reason": "Predicted 10u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 31,
+            "orders": [
+              {
+                "orderId": 85379,
+                "orderName": "S33502",
+                "date": "2024-12-12 10:53:29",
+                "quantity": 4,
+                "priceUnit": 30
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 13462,
+        "productName": "[EMB1698] COUV TO70 BLANC RSB STER",
+        "mismatchType": "false_negative",
+        "quantity": 4520,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      }
+    ]
+  }
+}

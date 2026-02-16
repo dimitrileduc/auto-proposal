@@ -1,0 +1,30 @@
+{
+  "clientId": 17269,
+  "clientName": "CARREFOUR BELGIUM SA, Market Bxl Europe",
+  "orderName": "S38468",
+  "orderDate": "2025-08-12 09:55:30",
+  "cutoffDate": "2025-08-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.6470588235294118,
+    "recall": 1,
+    "f1Score": 0.7857142857142858,
+    "mae": 0.36363636363636365,
+    "wmape": 26.666666666666668,
+    "mape": 25.757575757575754,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 15092,
+    "completionTokens": 2610,
+    "totalTokens": 17702
+  }
+}

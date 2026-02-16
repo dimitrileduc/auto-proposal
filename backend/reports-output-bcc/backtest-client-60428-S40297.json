@@ -1,0 +1,30 @@
+{
+  "clientId": 60428,
+  "clientName": "LA SALLE A MANGER",
+  "orderName": "S40297",
+  "orderDate": "2025-11-14 10:19:38",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.75,
+    "recall": 1,
+    "f1Score": 0.8571428571428571,
+    "mae": 1,
+    "wmape": 33.33333333333333,
+    "mape": 44.444444444444436,
+    "bias": 11.11111111111111
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5288,
+    "completionTokens": 976,
+    "totalTokens": 6264
+  }
+}

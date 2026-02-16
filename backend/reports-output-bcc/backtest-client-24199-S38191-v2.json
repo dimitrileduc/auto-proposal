@@ -1,0 +1,648 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:24:49.608Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-07-22 00:00:00"
+    }
+  },
+  "client": {
+    "id": 24199,
+    "name": "AUX DELICES D'EMBOURG",
+    "order": {
+      "name": "S38191",
+      "date": "2025-07-23 07:43:47"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 7,
+        "falseNegatives": 11,
+        "total": 22
+      },
+      "productMetrics": {
+        "precision": 0.36363636363636365,
+        "recall": 0.26666666666666666,
+        "f1Score": 0.30769230769230765,
+        "totalPredicted": 11,
+        "totalReal": 15
+      },
+      "quantityMetrics": {
+        "mae": 0.25,
+        "wmape": 25,
+        "mape": 25,
+        "bias": 25,
+        "distribution": {
+          "exactMatch": 3,
+          "partialMatch": 1
+        },
+        "rmse": 0.5
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 4,
+          "falsePositives": 7,
+          "falseNegatives": 11,
+          "total": 22
+        },
+        "productMetrics": {
+          "precision": 0.36363636363636365,
+          "recall": 0.26666666666666666,
+          "f1Score": 0.30769230769230765,
+          "totalPredicted": 11,
+          "totalReal": 15
+        },
+        "quantityMetrics": {
+          "mae": 0.25,
+          "wmape": 25,
+          "mape": 25,
+          "bias": 25,
+          "distribution": {
+            "exactMatch": 3,
+            "partialMatch": 1
+          },
+          "rmse": 0.5
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 9621,
+    "completionTokens": 1606,
+    "totalTokens": 11227
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18380,
+        "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 87228,
+              "orderName": "S35351",
+              "date": "2025-03-13 08:02:28",
+              "quantity": 1,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 130.62328703703704,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18379,
+        "productName": "[TEN02] TENSAÏ TEA  thé noir bio au gingembre 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 87228,
+              "orderName": "S35351",
+              "date": "2025-03-13 08:02:28",
+              "quantity": 1,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 130.62328703703704,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18378,
+        "productName": "[TEN04] TENSAÏ TEA  thé matcha bio à la menthe 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 100,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 87228,
+              "orderName": "S35351",
+              "date": "2025-03-13 08:02:28",
+              "quantity": 2,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 2,
+            "median": 2,
+            "stdDev": 0,
+            "min": 2,
+            "max": 2,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 130.62328703703704,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18377,
+        "productName": "[TEN03] TENSAÏ TEA  thé blanc bio à la myrtille 330ml",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 87228,
+              "orderName": "S35351",
+              "date": "2025-03-13 08:02:28",
+              "quantity": 1,
+              "priceUnit": 31.6
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 130.62328703703704,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18311,
+        "productName": "[fsv03] Noisette nature bio vrac 2,8kg ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 130,
+            "orders": [
+              {
+                "orderId": 87228,
+                "orderName": "S35351",
+                "date": "2025-03-13 08:02:28",
+                "quantity": 1,
+                "priceUnit": 40.74
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13058,
+        "productName": "[LV160] LV Tartinade Aubergine 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 130,
+            "orders": [
+              {
+                "orderId": 87228,
+                "orderName": "S35351",
+                "date": "2025-03-13 08:02:28",
+                "quantity": 1,
+                "priceUnit": 12.79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13059,
+        "productName": "[LV129] LV Tartinade Carotte Gingembre 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 130,
+            "orders": [
+              {
+                "orderId": 87228,
+                "orderName": "S35351",
+                "date": "2025-03-13 08:02:28",
+                "quantity": 1,
+                "priceUnit": 13.04
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13063,
+        "productName": "[LV132] LV Tartinade Houmous type 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 130,
+            "orders": [
+              {
+                "orderId": 87228,
+                "orderName": "S35351",
+                "date": "2025-03-13 08:02:28",
+                "quantity": 1,
+                "priceUnit": 13.29
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 130,
+            "orders": [
+              {
+                "orderId": 87228,
+                "orderName": "S35351",
+                "date": "2025-03-13 08:02:28",
+                "quantity": 1,
+                "priceUnit": 12.67
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13071,
+        "productName": "[LV188] LV Tartinade Aubergine  380g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 130,
+            "orders": [
+              {
+                "orderId": 87228,
+                "orderName": "S35351",
+                "date": "2025-03-13 08:02:28",
+                "quantity": 2,
+                "priceUnit": 23.48
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13075,
+        "productName": "[LV189] LV Tartinade Houmous Type 380g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 130,
+            "orders": [
+              {
+                "orderId": 87228,
+                "orderName": "S35351",
+                "date": "2025-03-13 08:02:28",
+                "quantity": 1,
+                "priceUnit": 25.15
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 17769,
+        "productName": "[MF0061] MF Compote",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 575,
+        "productName": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18356,
+        "productName": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18384,
+        "productName": "[WIG07] WIGNAC cidre naturel bio sans alcool 750ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18383,
+        "productName": "[WIG06] WIGNAC cidre naturel bio sans alcool 330ml",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 572,
+        "productName": "[MF0032] MF Tarti Pois chiches 250 g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 573,
+        "productName": "[MF0033] MF Tarti Poivron chilli 250g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 13100,
+        "productName": "[LV040] LV Caprons apéritifs 240g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 14924,
+        "productName": "[VID0009] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 14925,
+        "productName": "[VID0010] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 24,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      }
+    ]
+  }
+}

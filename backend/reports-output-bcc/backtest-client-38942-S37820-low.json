@@ -1,0 +1,24 @@
+{
+  "clientId": 38942,
+  "clientName": "Epicerie HIRONDELLE CAPFUN",
+  "orderName": "S37820",
+  "orderDate": "2025-07-03 12:15:28",
+  "cutoffDate": "2025-07-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  }
+}

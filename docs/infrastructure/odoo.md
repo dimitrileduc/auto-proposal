@@ -82,11 +82,8 @@ const lines = await client.getRecords('sale.order.line', order.order_line);
 ## Créer devis (sale.order)
 
 ```typescript
-import { autoProposalConfig } from '../config/auto-proposal';
-
 const quoteId = await client.create('sale.order', {
   partner_id: clientId,
-  company_id: autoProposalConfig.defaultCompanyId,  // Multi-company support
   order_line: [
     [0, 0, { product_id: 123, product_qty: 10, price_unit: 50 }],
     [0, 0, { product_id: 456, product_qty: 5, price_unit: 100 }]
@@ -94,24 +91,9 @@ const quoteId = await client.create('sale.order', {
   order_option: [
     [0, 0, { product_id: 789, product_qty: 2, price_unit: 200 }]
   ],
-  tag_ids: [[6, 0, [autoProposalConfig.quoteGeneration.autoProposalTagId]]]
+  tag_ids: [[6, 0, [82]]]  // auto-proposal tag
 });
 ```
-
-## Multi-Company Support
-
-Le système supporte les environnements Odoo multi-company:
-
-```typescript
-// Filtrer les commandes par société
-const orders = await client.search('sale.order', [
-  ['partner_id', '=', clientId],
-  ['company_id', '=', autoProposalConfig.defaultCompanyId],  // FOODPRINT SRL = 3
-  ['state', 'in', ['sale', 'done']]
-]);
-```
-
-**Configuration**: `defaultCompanyId` dans `auto-proposal.ts` définit la société par défaut.
 
 ## Modèles Odoo utilisés
 

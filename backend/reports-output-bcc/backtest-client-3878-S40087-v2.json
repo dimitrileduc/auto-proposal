@@ -1,0 +1,1016 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:05:20.126Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-03 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3878,
+    "name": "DELI DRENGENE",
+    "order": {
+      "name": "S40087",
+      "date": "2025-11-04 07:31:42"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 4,
+        "falseNegatives": 0,
+        "total": 7
+      },
+      "productMetrics": {
+        "precision": 0.42857142857142855,
+        "recall": 1,
+        "f1Score": 0.6,
+        "totalPredicted": 7,
+        "totalReal": 3
+      },
+      "quantityMetrics": {
+        "mae": 3.3333333333333335,
+        "wmape": 2.941176470588235,
+        "mape": 8.333333333333334,
+        "bias": -2.941176470588235,
+        "distribution": {
+          "exactMatch": 2,
+          "partialMatch": 1
+        },
+        "rmse": 5.773502691896258
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 4,
+          "falseNegatives": 0,
+          "total": 7
+        },
+        "productMetrics": {
+          "precision": 0.42857142857142855,
+          "recall": 1,
+          "f1Score": 0.6,
+          "totalPredicted": 7,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 3.3333333333333335,
+          "wmape": 2.941176470588235,
+          "mape": 8.333333333333334,
+          "bias": -2.941176470588235,
+          "distribution": {
+            "exactMatch": 2,
+            "partialMatch": 1
+          },
+          "rmse": 5.773502691896258
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 7287,
+    "completionTokens": 1181,
+    "totalTokens": 8468
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 14889,
+        "productName": "[PF3260] 3311 - LD DD MAYO TRUFFES 280ML DTO",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 150,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 150
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 21,
+          "orders": [
+            {
+              "orderId": 91823,
+              "orderName": "S39944",
+              "date": "2025-10-27 12:11:54",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 91277,
+              "orderName": "S39400",
+              "date": "2025-09-25 14:14:25",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 87597,
+              "orderName": "S35720",
+              "date": "2025-03-31 11:59:30",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 86973,
+              "orderName": "S35096",
+              "date": "2025-02-26 14:51:36",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 86512,
+              "orderName": "S34635",
+              "date": "2025-02-03 10:09:49",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 85905,
+              "orderName": "S34028",
+              "date": "2025-01-02 07:36:14",
+              "quantity": 300,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 85209,
+              "orderName": "S33332",
+              "date": "2024-11-18 12:27:40",
+              "quantity": 200,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 84916,
+              "orderName": "S33039",
+              "date": "2024-10-30 06:58:14",
+              "quantity": 200,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 84369,
+              "orderName": "S32492",
+              "date": "2024-09-30 13:03:29",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 83942,
+              "orderName": "S32065",
+              "date": "2024-09-05 06:20:25",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 83512,
+              "orderName": "S31635",
+              "date": "2024-08-12 05:40:53",
+              "quantity": 200,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 83145,
+              "orderName": "S31268",
+              "date": "2024-07-11 09:59:44",
+              "quantity": 200,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 82437,
+              "orderName": "S30560",
+              "date": "2024-05-31 06:44:35",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 82363,
+              "orderName": "S30486",
+              "date": "2024-05-28 07:41:06",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 81111,
+              "orderName": "S29234",
+              "date": "2024-03-08 09:03:51",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 80861,
+              "orderName": "S28984",
+              "date": "2024-02-19 08:27:48",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 80402,
+              "orderName": "S28525",
+              "date": "2024-01-15 10:25:10",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 80186,
+              "orderName": "S28309",
+              "date": "2023-12-28 15:26:26",
+              "quantity": 150,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 79866,
+              "orderName": "S27989",
+              "date": "2023-12-04 13:32:56",
+              "quantity": 300,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 79543,
+              "orderName": "S27666",
+              "date": "2023-11-15 14:56:38",
+              "quantity": 114,
+              "priceUnit": 15.72
+            },
+            {
+              "orderId": 79375,
+              "orderName": "S27498",
+              "date": "2023-11-07 14:38:54",
+              "quantity": 200,
+              "priceUnit": 15.72
+            }
+          ],
+          "statistics": {
+            "mean": 174.47619047619048,
+            "median": 150,
+            "stdDev": 46.91189213390104,
+            "min": 114,
+            "max": 300,
+            "cv": 0.26887274421722757,
+            "trend": "stable",
+            "outliers": [
+              300,
+              300
+            ],
+            "regularityScore": 0.43867635346966344
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 35.99489583333333,
+            "lastOrderDaysAgo": 6.491736111111111,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 14896,
+        "productName": "[PF3264] 3313 - LD DD SAUCE TARTARE 280ML DTO",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 150,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 150
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 15,
+          "orders": [
+            {
+              "orderId": 91642,
+              "orderName": "S39763",
+              "date": "2025-10-16 09:30:15",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 90871,
+              "orderName": "S38994",
+              "date": "2025-09-04 13:27:14",
+              "quantity": 0,
+              "priceUnit": 0
+            },
+            {
+              "orderId": 89609,
+              "orderName": "S37732",
+              "date": "2025-06-27 12:27:32",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 89019,
+              "orderName": "S37142",
+              "date": "2025-05-28 14:44:34",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 88297,
+              "orderName": "S36420",
+              "date": "2025-04-28 14:09:02",
+              "quantity": 200,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 86973,
+              "orderName": "S35096",
+              "date": "2025-02-26 14:51:36",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 84916,
+              "orderName": "S33039",
+              "date": "2024-10-30 06:58:14",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 84369,
+              "orderName": "S32492",
+              "date": "2024-09-30 13:03:29",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 83942,
+              "orderName": "S32065",
+              "date": "2024-09-05 06:20:25",
+              "quantity": 60,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 83145,
+              "orderName": "S31268",
+              "date": "2024-07-11 09:59:44",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 82437,
+              "orderName": "S30560",
+              "date": "2024-05-31 06:44:35",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 82363,
+              "orderName": "S30486",
+              "date": "2024-05-28 07:41:06",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 81111,
+              "orderName": "S29234",
+              "date": "2024-03-08 09:03:51",
+              "quantity": 150,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 80402,
+              "orderName": "S28525",
+              "date": "2024-01-15 10:25:10",
+              "quantity": 100,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 79543,
+              "orderName": "S27666",
+              "date": "2023-11-15 14:56:38",
+              "quantity": 150,
+              "priceUnit": 12.84
+            }
+          ],
+          "statistics": {
+            "mean": 134,
+            "median": 150,
+            "stdDev": 46.01449047129973,
+            "min": 0,
+            "max": 200,
+            "cv": 0.3433917199350726,
+            "trend": "stable",
+            "outliers": [
+              0,
+              200,
+              60,
+              100
+            ],
+            "regularityScore": 0.5742369577504497
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 50.052262731481484,
+            "lastOrderDaysAgo": 17.645659722222224,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 14893,
+        "productName": "[PF3261] 3320 - LD DD MAYONNAISE DU CHEF 280ML DTO",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 30,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 40
+        },
+        "error": {
+          "absolute": 10,
+          "percent": 25,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 14,
+          "orders": [
+            {
+              "orderId": 90871,
+              "orderName": "S38994",
+              "date": "2025-09-04 13:27:14",
+              "quantity": 30,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 90408,
+              "orderName": "S38531",
+              "date": "2025-08-14 13:33:02",
+              "quantity": 30,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 87597,
+              "orderName": "S35720",
+              "date": "2025-03-31 11:59:30",
+              "quantity": 40,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 86512,
+              "orderName": "S34635",
+              "date": "2025-02-03 10:09:49",
+              "quantity": 30,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 85905,
+              "orderName": "S34028",
+              "date": "2025-01-02 07:36:14",
+              "quantity": 30,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 84369,
+              "orderName": "S32492",
+              "date": "2024-09-30 13:03:29",
+              "quantity": 25,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 83942,
+              "orderName": "S32065",
+              "date": "2024-09-05 06:20:25",
+              "quantity": 30,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 83145,
+              "orderName": "S31268",
+              "date": "2024-07-11 09:59:44",
+              "quantity": 25,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 82437,
+              "orderName": "S30560",
+              "date": "2024-05-31 06:44:35",
+              "quantity": 20,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 82363,
+              "orderName": "S30486",
+              "date": "2024-05-28 07:41:06",
+              "quantity": 30,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 81555,
+              "orderName": "S29678",
+              "date": "2024-04-08 12:32:02",
+              "quantity": 20,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 81111,
+              "orderName": "S29234",
+              "date": "2024-03-08 09:03:51",
+              "quantity": 20,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 80402,
+              "orderName": "S28525",
+              "date": "2024-01-15 10:25:10",
+              "quantity": 30,
+              "priceUnit": 12.84
+            },
+            {
+              "orderId": 80186,
+              "orderName": "S28309",
+              "date": "2023-12-28 15:26:26",
+              "quantity": 30,
+              "priceUnit": 12.84
+            }
+          ],
+          "statistics": {
+            "mean": 27.857142857142858,
+            "median": 30,
+            "stdDev": 5.248906591678239,
+            "min": 20,
+            "max": 40,
+            "cv": 0.1884222879063983,
+            "trend": "stable",
+            "outliers": [
+              40
+            ],
+            "regularityScore": 0.6023032118343014
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 47.37504273504274,
+            "lastOrderDaysAgo": 59.48108796296296,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 14901,
+        "productName": "[PF3265] 3314 - LD DD SAUCE CHILI 280ML DTO",
+        "mismatchType": "false_positive",
+        "quantity": 40,
+        "reason": "Predicted 40u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 9,
+            "lastOrderDaysAgo": 6,
+            "orders": [
+              {
+                "orderId": 91823,
+                "orderName": "S39944",
+                "date": "2025-10-27 12:11:54",
+                "quantity": 40,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 91277,
+                "orderName": "S39400",
+                "date": "2025-09-25 14:14:25",
+                "quantity": 0,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 87597,
+                "orderName": "S35720",
+                "date": "2025-03-31 11:59:30",
+                "quantity": 100,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 86512,
+                "orderName": "S34635",
+                "date": "2025-02-03 10:09:49",
+                "quantity": 50,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 85905,
+                "orderName": "S34028",
+                "date": "2025-01-02 07:36:14",
+                "quantity": 50,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 84679,
+                "orderName": "S32802",
+                "date": "2024-10-16 07:36:45",
+                "quantity": 100,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 81111,
+                "orderName": "S29234",
+                "date": "2024-03-08 09:03:51",
+                "quantity": 80,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 80861,
+                "orderName": "S28984",
+                "date": "2024-02-19 08:27:48",
+                "quantity": 60,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 80402,
+                "orderName": "S28525",
+                "date": "2024-01-15 10:25:10",
+                "quantity": 100,
+                "priceUnit": 12.84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9345,
+        "productName": "[PF1925] DD SAUCE TARTARE  1000 ML",
+        "mismatchType": "false_positive",
+        "quantity": 480,
+        "reason": "Predicted 480u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 11,
+            "lastOrderDaysAgo": 6,
+            "orders": [
+              {
+                "orderId": 91823,
+                "orderName": "S39944",
+                "date": "2025-10-27 12:11:54",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 90871,
+                "orderName": "S38994",
+                "date": "2025-09-04 13:27:14",
+                "quantity": 0,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 89609,
+                "orderName": "S37732",
+                "date": "2025-06-27 12:27:32",
+                "quantity": 80,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 86512,
+                "orderName": "S34635",
+                "date": "2025-02-03 10:09:49",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 85810,
+                "orderName": "S33933",
+                "date": "2024-12-17 10:11:04",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 83512,
+                "orderName": "S31635",
+                "date": "2024-08-12 05:40:53",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 83145,
+                "orderName": "S31268",
+                "date": "2024-07-11 09:59:44",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 81603,
+                "orderName": "S29726",
+                "date": "2024-04-10 12:10:10",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 80402,
+                "orderName": "S28525",
+                "date": "2024-01-15 10:25:10",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 79726,
+                "orderName": "S27849",
+                "date": "2023-11-24 12:57:16",
+                "quantity": 480,
+                "priceUnit": 4.4
+              },
+              {
+                "orderId": 79543,
+                "orderName": "S27666",
+                "date": "2023-11-15 14:56:38",
+                "quantity": 0,
+                "priceUnit": 4.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9059,
+        "productName": "[PF1057] DD MAYONNAISE TRUFFES  1000 ML",
+        "mismatchType": "false_positive",
+        "quantity": 480,
+        "reason": "Predicted 480u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 10,
+            "lastOrderDaysAgo": 80,
+            "orders": [
+              {
+                "orderId": 90408,
+                "orderName": "S38531",
+                "date": "2025-08-14 13:33:02",
+                "quantity": 516,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 89320,
+                "orderName": "S37443",
+                "date": "2025-06-13 12:19:48",
+                "quantity": 456,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 88595,
+                "orderName": "S36718",
+                "date": "2025-05-12 12:49:34",
+                "quantity": 480,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 87673,
+                "orderName": "S35796",
+                "date": "2025-04-03 08:47:25",
+                "quantity": 80,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 85810,
+                "orderName": "S33933",
+                "date": "2024-12-17 10:11:04",
+                "quantity": 480,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 84157,
+                "orderName": "S32280",
+                "date": "2024-09-19 21:10:08",
+                "quantity": 480,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 82580,
+                "orderName": "S30703",
+                "date": "2024-06-10 10:56:29",
+                "quantity": 480,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 82364,
+                "orderName": "S30487",
+                "date": "2024-05-28 07:42:45",
+                "quantity": 480,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 80632,
+                "orderName": "S28755",
+                "date": "2024-01-31 10:49:53",
+                "quantity": 480,
+                "priceUnit": 6.4
+              },
+              {
+                "orderId": 79726,
+                "orderName": "S27849",
+                "date": "2023-11-24 12:57:16",
+                "quantity": 480,
+                "priceUnit": 6.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14895,
+        "productName": "[PF3263] 3312 - LD DD MAYONNAISE WASABI 280ML DTO",
+        "mismatchType": "false_positive",
+        "quantity": 60,
+        "reason": "Predicted 60u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 14,
+            "lastOrderDaysAgo": 80,
+            "orders": [
+              {
+                "orderId": 90408,
+                "orderName": "S38531",
+                "date": "2025-08-14 13:33:02",
+                "quantity": 60,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 89019,
+                "orderName": "S37142",
+                "date": "2025-05-28 14:44:34",
+                "quantity": 80,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 88595,
+                "orderName": "S36718",
+                "date": "2025-05-12 12:49:34",
+                "quantity": 50,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 87597,
+                "orderName": "S35720",
+                "date": "2025-03-31 11:59:30",
+                "quantity": 50,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 86973,
+                "orderName": "S35096",
+                "date": "2025-02-26 14:51:36",
+                "quantity": 80,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 84679,
+                "orderName": "S32802",
+                "date": "2024-10-16 07:36:45",
+                "quantity": 100,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 84369,
+                "orderName": "S32492",
+                "date": "2024-09-30 13:03:29",
+                "quantity": 50,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 83942,
+                "orderName": "S32065",
+                "date": "2024-09-05 06:20:25",
+                "quantity": 40,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 83512,
+                "orderName": "S31635",
+                "date": "2024-08-12 05:40:53",
+                "quantity": 40,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 82437,
+                "orderName": "S30560",
+                "date": "2024-05-31 06:44:35",
+                "quantity": 80,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 81111,
+                "orderName": "S29234",
+                "date": "2024-03-08 09:03:51",
+                "quantity": 100,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 80861,
+                "orderName": "S28984",
+                "date": "2024-02-19 08:27:48",
+                "quantity": 60,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 80402,
+                "orderName": "S28525",
+                "date": "2024-01-15 10:25:10",
+                "quantity": 50,
+                "priceUnit": 12.84
+              },
+              {
+                "orderId": 79543,
+                "orderName": "S27666",
+                "date": "2023-11-15 14:56:38",
+                "quantity": 50,
+                "priceUnit": 14.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

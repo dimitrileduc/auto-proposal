@@ -1,0 +1,30 @@
+{
+  "clientId": 38858,
+  "clientName": "DLL PROXY JUPILLE NAMUFOOD",
+  "orderName": "S39861",
+  "orderDate": "2025-10-22 11:58:08",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.5238095238095238,
+    "recall": 1,
+    "f1Score": 0.6875000000000001,
+    "mae": 0.18181818181818182,
+    "wmape": 15.384615384615385,
+    "mape": 9.090909090909092,
+    "bias": 15.384615384615385
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 23300,
+    "completionTokens": 3974,
+    "totalTokens": 27274
+  }
+}

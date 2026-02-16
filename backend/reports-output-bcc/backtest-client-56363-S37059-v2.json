@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:20:47.191Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-06-23 00:00:00"
+    }
+  },
+  "client": {
+    "id": 56363,
+    "name": "Le Fourgon SAS",
+    "order": {
+      "name": "S37059",
+      "date": "2025-06-24 06:16:08"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 4,
+        "falsePositives": 0,
+        "falseNegatives": 2,
+        "total": 6
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 0.6666666666666666,
+        "f1Score": 0.8,
+        "totalPredicted": 4,
+        "totalReal": 6
+      },
+      "quantityMetrics": {
+        "mae": 8,
+        "wmape": 28.57142857142857,
+        "mape": 23.958333333333332,
+        "bias": -21.428571428571427,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 3
+        },
+        "rmse": 10.198039027185569
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 2,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 3,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 10.666666666666666,
+          "wmape": 33.33333333333333,
+          "mape": 31.944444444444443,
+          "bias": -25,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 11.775681155103795
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3768,
+    "completionTokens": 769,
+    "totalTokens": 4537
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 564,
+        "productName": "[MF0024] MF KETCHUP 250g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 20,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 32
+        },
+        "error": {
+          "absolute": 12,
+          "percent": 37.5,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 88418,
+              "orderName": "S36541",
+              "date": "2025-05-06 09:19:13",
+              "quantity": 32,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 87615,
+              "orderName": "S35738",
+              "date": "2025-04-01 07:53:14",
+              "quantity": 16,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 87083,
+              "orderName": "S35206",
+              "date": "2025-03-06 13:21:30",
+              "quantity": 10,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 86843,
+              "orderName": "S34966",
+              "date": "2025-02-19 13:07:30",
+              "quantity": 25,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 86558,
+              "orderName": "S34681",
+              "date": "2025-02-05 08:23:52",
+              "quantity": 20,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 86263,
+              "orderName": "S34386",
+              "date": "2025-01-17 13:22:04",
+              "quantity": 25,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 85844,
+              "orderName": "S33967",
+              "date": "2024-12-20 07:55:19",
+              "quantity": 17,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 85322,
+              "orderName": "S33445",
+              "date": "2024-11-22 09:04:48",
+              "quantity": 18,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 84035,
+              "orderName": "S32158",
+              "date": "2024-09-09 09:12:33",
+              "quantity": 40,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 82879,
+              "orderName": "S31002",
+              "date": "2024-06-27 08:18:55",
+              "quantity": 35,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 82508,
+              "orderName": "S30631",
+              "date": "2024-06-04 14:36:38",
+              "quantity": 20,
+              "priceUnit": 13.8
+            }
+          ],
+          "statistics": {
+            "mean": 23.454545454545453,
+            "median": 20,
+            "stdDev": 8.616724080780207,
+            "min": 10,
+            "max": 40,
+            "cv": 0.36737970887047394,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.528151622626024
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 33.57795717592593,
+            "lastOrderDaysAgo": 47.61165509259259,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 14850,
+        "productName": "[MF0047] MF Mayonnaise 250ml",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 20,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 16
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 25,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 88418,
+              "orderName": "S36541",
+              "date": "2025-05-06 09:19:13",
+              "quantity": 16,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 87615,
+              "orderName": "S35738",
+              "date": "2025-04-01 07:53:14",
+              "quantity": 32,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 87083,
+              "orderName": "S35206",
+              "date": "2025-03-06 13:21:30",
+              "quantity": 10,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 86843,
+              "orderName": "S34966",
+              "date": "2025-02-19 13:07:30",
+              "quantity": 35,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 86558,
+              "orderName": "S34681",
+              "date": "2025-02-05 08:23:52",
+              "quantity": 20,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 86263,
+              "orderName": "S34386",
+              "date": "2025-01-17 13:22:04",
+              "quantity": 20,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 85844,
+              "orderName": "S33967",
+              "date": "2024-12-20 07:55:19",
+              "quantity": 24,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 85322,
+              "orderName": "S33445",
+              "date": "2024-11-22 09:04:48",
+              "quantity": 22,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 84035,
+              "orderName": "S32158",
+              "date": "2024-09-09 09:12:33",
+              "quantity": 35,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 82879,
+              "orderName": "S31002",
+              "date": "2024-06-27 08:18:55",
+              "quantity": 35,
+              "priceUnit": 13.8
+            },
+            {
+              "orderId": 82508,
+              "orderName": "S30631",
+              "date": "2024-06-04 14:36:38",
+              "quantity": 20,
+              "priceUnit": 13.8
+            }
+          ],
+          "statistics": {
+            "mean": 24.454545454545453,
+            "median": 22,
+            "stdDev": 8.183838134492289,
+            "min": 10,
+            "max": 35,
+            "cv": 0.33465509100154345,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.5477863933473823
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 33.57795717592593,
+            "lastOrderDaysAgo": 47.61165509259259,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16951,
+        "productName": "[RF003] REFIELD Maïs 500G ",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 32,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 48
+        },
+        "error": {
+          "absolute": 16,
+          "percent": 33.33333333333333,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 88418,
+              "orderName": "S36541",
+              "date": "2025-05-06 09:19:13",
+              "quantity": 40,
+              "priceUnit": 10.2
+            },
+            {
+              "orderId": 87615,
+              "orderName": "S35738",
+              "date": "2025-04-01 07:53:14",
+              "quantity": 32,
+              "priceUnit": 10.2
+            },
+            {
+              "orderId": 87083,
+              "orderName": "S35206",
+              "date": "2025-03-06 13:21:30",
+              "quantity": 65,
+              "priceUnit": 10.2
+            },
+            {
+              "orderId": 86843,
+              "orderName": "S34966",
+              "date": "2025-02-19 13:07:30",
+              "quantity": 20,
+              "priceUnit": 10.2
+            },
+            {
+              "orderId": 86558,
+              "orderName": "S34681",
+              "date": "2025-02-05 08:23:52",
+              "quantity": 16,
+              "priceUnit": 10.2
+            },
+            {
+              "orderId": 86257,
+              "orderName": "S34380",
+              "date": "2025-01-17 10:44:03",
+              "quantity": 49,
+              "priceUnit": 10.2
+            }
+          ],
+          "statistics": {
+            "mean": 37,
+            "median": 36,
+            "stdDev": 16.792855623746664,
+            "min": 16,
+            "max": 65,
+            "cv": 0.45386096280396393,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.584579367631281
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 21.77988425925926,
+            "lastOrderDaysAgo": 47.61165509259259,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 561,
+        "productName": "[MF0021] MF Sauce BBQ 250ml",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 16,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 16
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 4,
+          "orders": [
+            {
+              "orderId": 87615,
+              "orderName": "S35738",
+              "date": "2025-04-01 07:53:14",
+              "quantity": 16,
+              "priceUnit": 17.1
+            },
+            {
+              "orderId": 87083,
+              "orderName": "S35206",
+              "date": "2025-03-06 13:21:30",
+              "quantity": 10,
+              "priceUnit": 17.1
+            },
+            {
+              "orderId": 86558,
+              "orderName": "S34681",
+              "date": "2025-02-05 08:23:52",
+              "quantity": 16,
+              "priceUnit": 17.1
+            },
+            {
+              "orderId": 86257,
+              "orderName": "S34380",
+              "date": "2025-01-17 10:44:03",
+              "quantity": 40,
+              "priceUnit": 17.1
+            }
+          ],
+          "statistics": {
+            "mean": 20.5,
+            "median": 16,
+            "stdDev": 11.521718621802913,
+            "min": 10,
+            "max": 40,
+            "cv": 0.5620350547220934,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.5932207502420479
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 24.61323688271605,
+            "lastOrderDaysAgo": 82.67136574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": [
+      {
+        "productId": 14924,
+        "productName": "[VID0009] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 64,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      },
+      {
+        "productId": 14925,
+        "productName": "[VID0010] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 384,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      }
+    ]
+  }
+}

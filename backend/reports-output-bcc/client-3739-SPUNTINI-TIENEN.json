@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:08:49.538Z"
+  },
+  "client": {
+    "id": 3739,
+    "name": "SPUNTINI TIENEN"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-28 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 1915,
+        "completionTokens": 263,
+        "totalTokens": 2178
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 1433.6000000000001,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8987,
+        "product_name": "[PF0078] FILOU CHASSEUR 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 160,
+        "quantity_source": "llm",
+        "price_unit": 8.96,
+        "subtotal": 1433.6000000000001,
+        "confidence": "high",
+        "order_count": 15,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande très régulier d'environ 30 à 35 jours (dernières commandes le 27/08 et le 01/10). Au 28/10, 27 jours se sont écoulés depuis la dernière commande, ce qui place le produit dans la fenêtre de réapprovisionnement critique compte tenu du seuil de 30 jours. La quantité est extrêmement stable à 160 unités sur les quatre dernières commandes. Conformément à la règle de la médiane et de la stabilité du cycle récent, une commande de 160 unités est nécessaire pour couvrir les besoins du mois de novembre et éviter une rupture imminente.",
+          "summary": "",
+          "baseline_quantity": 160,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-06 09:35:24",
+            "quantity": 160,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-05-16 15:24:36",
+            "quantity": 160,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-02-21 08:17:54",
+            "quantity": 320,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2024-01-11 10:01:12",
+            "quantity": 160,
+            "price_unit": 8.7
+          },
+          {
+            "date": "2023-11-23 10:31:03",
+            "quantity": 160,
+            "price_unit": 8.7
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 1433.6000000000001,
+    "optional_amount": 0,
+    "total_amount": 1433.6000000000001,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2916
+}

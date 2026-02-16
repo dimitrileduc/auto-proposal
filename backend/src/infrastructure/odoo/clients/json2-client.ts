@@ -339,13 +339,5 @@ export function createJson2Client(): OdooClient {
             );
       }
     },
-
-    async postInternalNote(_model: string, _recordId: number, _body: string): Promise<number> {
-      throw new Error("postInternalNote not implemented for JSON-2 client");
-    },
-
-    async getMessageById(_messageId: number): Promise<{ id: number; body: string; date: string } | null> {
-      throw new Error("getMessageById not implemented for JSON-2 client");
-    },
   };
 }

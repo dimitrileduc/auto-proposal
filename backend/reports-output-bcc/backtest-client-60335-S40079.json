@@ -1,0 +1,30 @@
+{
+  "clientId": 60335,
+  "clientName": "FERME DU CHAMP DE LA BERGE",
+  "orderName": "S40079",
+  "orderDate": "2025-11-04 13:43:51",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.6,
+    "recall": 1,
+    "f1Score": 0.7499999999999999,
+    "mae": 0.1111111111111111,
+    "wmape": 10,
+    "mape": 5.555555555555555,
+    "bias": -10
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 19986,
+    "completionTokens": 2942,
+    "totalTokens": 22928
+  }
+}

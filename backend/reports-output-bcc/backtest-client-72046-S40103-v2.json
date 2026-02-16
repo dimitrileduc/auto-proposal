@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:25:02.547Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-03 00:00:00"
+    }
+  },
+  "client": {
+    "id": 72046,
+    "name": "EDEKA Rhein Ruhr Stiftung & Co. KG, Adebahr Lebensmittel KG",
+    "order": {
+      "name": "S40103",
+      "date": "2025-11-04 09:33:57"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 0,
+        "falsePositives": 0,
+        "falseNegatives": 7,
+        "total": 7
+      },
+      "productMetrics": {
+        "precision": 0,
+        "recall": 0,
+        "f1Score": 0,
+        "totalPredicted": 0,
+        "totalReal": 7
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 7,
+          "total": 7
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 7
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 9,
+    "promptTokens": 7737,
+    "completionTokens": 732,
+    "totalTokens": 8469
+  },
+  "products": {
+    "truePositives": [],
+    "falsePositives": [],
+    "falseNegatives": [
+      {
+        "productId": 16745,
+        "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 3u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 88984,
+                "orderName": "S37107",
+                "date": "2025-05-28 07:00:27",
+                "quantity": 4,
+                "priceUnit": 23.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16749,
+        "productName": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 2u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 88984,
+                "orderName": "S37107",
+                "date": "2025-05-28 07:00:27",
+                "quantity": 3,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16780,
+        "productName": "[JF009] JF SAUCE TARTARE 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 2u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 88984,
+                "orderName": "S37107",
+                "date": "2025-05-28 07:00:27",
+                "quantity": 3,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16766,
+        "productName": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 2u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 88984,
+                "orderName": "S37107",
+                "date": "2025-05-28 07:00:27",
+                "quantity": 3,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16771,
+        "productName": "[JF017] JF SAUCE COCKTAIL 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 3u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 88984,
+                "orderName": "S37107",
+                "date": "2025-05-28 07:00:27",
+                "quantity": 1,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16762,
+        "productName": "[JF019] JF SAUCE AIOLI PESTO 250M WECK",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 2u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 88984,
+                "orderName": "S37107",
+                "date": "2025-05-28 07:00:27",
+                "quantity": 2,
+                "priceUnit": 21
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16761,
+        "productName": "[JF020] JF SAUCE AIOLI 250ML WECK",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 2u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 158,
+            "orders": [
+              {
+                "orderId": 88984,
+                "orderName": "S37107",
+                "date": "2025-05-28 07:00:27",
+                "quantity": 2,
+                "priceUnit": 19.5
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

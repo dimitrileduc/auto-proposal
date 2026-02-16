@@ -1,0 +1,30 @@
+{
+  "clientId": 60166,
+  "clientName": "AU VERT G",
+  "orderName": "S39838",
+  "orderDate": "2025-10-21 09:26:44",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.16666666666666666,
+    "recall": 1,
+    "f1Score": 0.2857142857142857,
+    "mae": 1,
+    "wmape": 16.666666666666664,
+    "mape": 16.666666666666664,
+    "bias": -16.666666666666664
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12618,
+    "completionTokens": 2311,
+    "totalTokens": 14929
+  }
+}

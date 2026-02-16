@@ -1,0 +1,30 @@
+{
+  "clientId": 38796,
+  "clientName": "DLL AD DELFILATURE BRAINE",
+  "orderName": "S39900",
+  "orderDate": "2025-10-29 11:25:39",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.42857142857142855,
+    "recall": 1,
+    "f1Score": 0.6,
+    "mae": 1.3333333333333333,
+    "wmape": 133.33333333333331,
+    "mape": 133.33333333333334,
+    "bias": 133.33333333333331
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 7214,
+    "completionTokens": 1353,
+    "totalTokens": 8567
+  }
+}

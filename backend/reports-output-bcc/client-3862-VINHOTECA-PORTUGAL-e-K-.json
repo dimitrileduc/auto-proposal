@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:21:44.372Z"
+  },
+  "client": {
+    "id": 3862,
+    "name": "VINHOTECA PORTUGAL e.K."
+  },
+  "config": {
+    "analysisEndDate": "2025-09-25 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 967,
+        "completionTokens": 209,
+        "totalTokens": 1176
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 1051.2,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9006,
+        "product_name": "[PF0165] FILOU COCKTAIL FRENKEN 3 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 120,
+        "quantity_source": "llm",
+        "price_unit": 8.76,
+        "subtotal": 1051.2,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 30 mai 2025, soit environ 118 jours. L'historique N-1 montre des commandes régulières tous les 2 à 3 mois (janvier, mars, juin, juillet). Le délai depuis la dernière commande dépasse largement le cycle habituel, indiquant un besoin imminent ou un stock épuisé. Par principe de précaution B2B, le risque de rupture est qualifié. ÉTAPE 2 : Estimation quantité. L'historique récent (2024) montre une récurrence forte sur la quantité de 120u. La commande de 162u en mai 2025 est traitée comme un pic exceptionnel. La médiane des commandes régulières de l'année précédente (120u) est retenue pour éviter le surstockage tout en couvrant le besoin standard.",
+          "summary": "",
+          "baseline_quantity": 120,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-07-05 06:18:16",
+            "quantity": 100,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2024-06-06 05:57:29",
+            "quantity": 120,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2024-03-15 10:37:50",
+            "quantity": 120,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2024-01-18 13:07:47",
+            "quantity": 120,
+            "price_unit": 8.5
+          },
+          {
+            "date": "2023-11-17 13:09:17",
+            "quantity": 78,
+            "price_unit": 8.5
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 1051.2,
+    "optional_amount": 0,
+    "total_amount": 1051.2,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3597
+}

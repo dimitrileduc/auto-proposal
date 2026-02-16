@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:19:49.645Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-09 00:00:00"
+    }
+  },
+  "client": {
+    "id": 25846,
+    "name": "BOUCHERIE THERY",
+    "order": {
+      "name": "S39145",
+      "date": "2025-09-10 13:52:27"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 24,
+        "wmape": 50,
+        "mape": 50,
+        "bias": -50,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 24
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 24,
+          "wmape": 50,
+          "mape": 50,
+          "bias": -50,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 24
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 908,
+    "completionTokens": 206,
+    "totalTokens": 1114
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9029,
+        "productName": "[PF0516] YVALLI PROVENCALE 2,5 KG BOC",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 24,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 48
+        },
+        "error": {
+          "absolute": 24,
+          "percent": 50,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 89263,
+              "orderName": "S37386",
+              "date": "2025-06-11 13:28:11",
+              "quantity": 24,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 87590,
+              "orderName": "S35713",
+              "date": "2025-03-31 09:06:47",
+              "quantity": 24,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 84490,
+              "orderName": "S32613",
+              "date": "2024-10-07 12:58:40",
+              "quantity": 48,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 81494,
+              "orderName": "S29617",
+              "date": "2024-04-03 08:50:43",
+              "quantity": 48,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 80463,
+              "orderName": "S28586",
+              "date": "2024-01-18 12:51:32",
+              "quantity": 24,
+              "priceUnit": 43.8
+            }
+          ],
+          "statistics": {
+            "mean": 33.6,
+            "median": 24,
+            "stdDev": 11.757550765359255,
+            "min": 24,
+            "max": 48,
+            "cv": 0.3499271061118826,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.6215609872547325
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 127.49594618055555,
+            "lastOrderDaysAgo": 89.43876157407408,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

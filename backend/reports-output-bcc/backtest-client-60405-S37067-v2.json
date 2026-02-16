@@ -1,0 +1,551 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:27:11.558Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-05-25 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60405,
+    "name": "LA FERME DE CANTRAINE",
+    "order": {
+      "name": "S37067",
+      "date": "2025-05-26 12:22:53"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 11,
+        "falseNegatives": 2,
+        "total": 15
+      },
+      "productMetrics": {
+        "precision": 0.15384615384615385,
+        "recall": 0.5,
+        "f1Score": 0.23529411764705882,
+        "totalPredicted": 13,
+        "totalReal": 4
+      },
+      "quantityMetrics": {
+        "mae": 7.5,
+        "wmape": 83.33333333333334,
+        "mape": 82.5,
+        "bias": -83.33333333333334,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 2
+        },
+        "rmse": 7.648529270389178
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 11,
+          "falseNegatives": 2,
+          "total": 15
+        },
+        "productMetrics": {
+          "precision": 0.15384615384615385,
+          "recall": 0.5,
+          "f1Score": 0.23529411764705882,
+          "totalPredicted": 13,
+          "totalReal": 4
+        },
+        "quantityMetrics": {
+          "mae": 7.5,
+          "wmape": 83.33333333333334,
+          "mape": 82.5,
+          "bias": -83.33333333333334,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 7.648529270389178
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 11366,
+    "completionTokens": 1889,
+    "totalTokens": 13255
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18307,
+        "productName": "[NOD02] NODA limonade bio faible en calories - citron de sicile 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 8
+        },
+        "error": {
+          "absolute": 6,
+          "percent": 75,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88082,
+              "orderName": "S36205",
+              "date": "2025-04-16 08:46:43",
+              "quantity": 1,
+              "priceUnit": 33.84
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 38.634224537037035,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18344,
+        "productName": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 9,
+          "percent": 90,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88082,
+              "orderName": "S36205",
+              "date": "2025-04-16 08:46:43",
+              "quantity": 1,
+              "priceUnit": 27.6
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 38.634224537037035,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18351,
+        "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18370,
+        "productName": "[RIT07] RITCHIE Orange - canette 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 33.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18363,
+        "productName": "[RIT08] RITCHIE Citron - canette 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 33.36
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17729,
+        "productName": "[DAF003] DAF Passionfruit with Hibiscus flower 25cl",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 15.12
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17730,
+        "productName": "[DAF004] DAF Peach and Lemon with Honeybush flower 25cl",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 15.12
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17732,
+        "productName": "[FO002] FO ORGANIC FRUITY HIBISCUS INFUSION 33cl",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 17.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17731,
+        "productName": "[FO001] FO CITRONNADE BIO 33cl",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 17.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 88082,
+                "orderName": "S36205",
+                "date": "2025-04-16 08:46:43",
+                "quantity": 1,
+                "priceUnit": 18.8
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 13097,
+        "productName": "[LV003] LV Pizza Croccantina tomate origan 150 g bio",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 13096,
+        "productName": "[LV002] LV Pizza Croccantina au romarin 150 g bio",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

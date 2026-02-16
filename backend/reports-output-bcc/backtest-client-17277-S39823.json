@@ -1,0 +1,30 @@
+{
+  "clientId": 17277,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper Bomeree",
+  "orderName": "S39823",
+  "orderDate": "2025-10-21 08:30:28",
+  "cutoffDate": "2025-10-20 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.42857142857142855,
+    "recall": 1,
+    "f1Score": 0.6,
+    "mae": 0.5,
+    "wmape": 30,
+    "mape": 25,
+    "bias": -30
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13549,
+    "completionTokens": 2434,
+    "totalTokens": 15983
+  }
+}

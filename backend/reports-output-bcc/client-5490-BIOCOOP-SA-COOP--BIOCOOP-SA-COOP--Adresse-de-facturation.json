@@ -1,0 +1,1216 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:03:50.015Z"
+  },
+  "client": {
+    "id": 5490,
+    "name": "BIOCOOP SA COOP, BIOCOOP SA COOP, Adresse de facturation"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 26,
+      "llm_usage": {
+        "calls": 26,
+        "promptTokens": 29720,
+        "completionTokens": 4874,
+        "totalTokens": 34594
+      }
+    },
+    "proposalFinal": {
+      "products_count": 26,
+      "total_amount": 65340.56999999999,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 14602,
+        "product_name": "[PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 434,
+        "quantity_source": "llm",
+        "price_unit": 9.81,
+        "subtotal": 4257.54,
+        "confidence": "high",
+        "order_count": 68,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier d'environ 28 jours (04/09, 02/10, 30/10). La dernière commande ayant eu lieu le 07/11, le prochain besoin théorique se situe début décembre, ce qui entre dans l'horizon des 30 jours du seuil de réapprovisionnement (Replenishment Threshold Days). En application du principe de précaution B2B et pour éviter toute rupture sur ce cycle mensuel, une commande est nécessaire. La quantité est fixée à 434 unités, correspondant à la médiane stricte et constante des commandes observées sur l'année 2025.",
+          "summary": "",
+          "baseline_quantity": 434,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-03 12:09:57",
+            "quantity": 62,
+            "price_unit": 9.81
+          },
+          {
+            "date": "2024-04-03 12:09:32",
+            "quantity": 217,
+            "price_unit": 9.81
+          },
+          {
+            "date": "2024-04-03 12:09:02",
+            "quantity": 31,
+            "price_unit": 9.81
+          },
+          {
+            "date": "2024-03-20 13:08:14",
+            "quantity": 93,
+            "price_unit": 9.81
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 93,
+            "price_unit": 9.81
+          }
+        ]
+      },
+      {
+        "product_id": 14603,
+        "product_name": "[PF3247] AA0248 - LD FR TARTINADE BIO KIDS 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 31,
+        "quantity_source": "llm",
+        "price_unit": 9.57,
+        "subtotal": 296.67,
+        "confidence": "high",
+        "order_count": 54,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière d'environ 14 jours (18/09, 02/10, 15/10, 30/10). La dernière commande date du 07/11, soit il y a 4 jours. Avec un seuil de réapprovisionnement de 30 jours, le prochain besoin tombera durant cette période de couverture (cycle moyen de 14 jours < 30 jours). En appliquant le principe de précaution B2B et la règle de la médiane sur l'historique récent, la quantité standard de 31 unités est retenue. Bien qu'un pic à 62u ait été observé le 07/11, la majorité des commandes (7 sur 8) sont de 31u, ce qui constitue la médiane stable à privilégier.",
+          "summary": "",
+          "baseline_quantity": 31,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-17 07:14:47",
+            "quantity": 31,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2024-05-16 15:26:59",
+            "quantity": 31,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2024-05-16 15:22:16",
+            "quantity": 31,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2024-04-18 08:22:07",
+            "quantity": 31,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2024-03-20 13:08:14",
+            "quantity": 31,
+            "price_unit": 9.57
+          }
+        ]
+      },
+      {
+        "product_id": 9178,
+        "product_name": "[PF1690] LD BBQ BIO 300G",
+        "product_uom": "TU8",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 19.36,
+        "subtotal": 484,
+        "confidence": "high",
+        "order_count": 62,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière d'environ 14 jours (dernières commandes significatives les 16/10, 30/10 et 07/11). La dernière commande datant du 07/11 (il y a 4 jours), le prochain besoin est estimé autour du 21/11, ce qui entre dans l'horizon des 30 jours du seuil de réapprovisionnement. Historiquement, le volume est extrêmement stable avec une quantité constante de 25 unités par commande. En appliquant la règle de la médiane sur l'historique récent et N-1, la quantité de 25 unités est retenue pour couvrir le prochain cycle.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-16 15:21:21",
+            "quantity": 25,
+            "price_unit": 19.36
+          },
+          {
+            "date": "2024-04-18 08:22:07",
+            "quantity": 25,
+            "price_unit": 19.36
+          },
+          {
+            "date": "2024-03-20 13:09:14",
+            "quantity": 25,
+            "price_unit": 19.36
+          },
+          {
+            "date": "2024-03-20 13:07:52",
+            "quantity": 25,
+            "price_unit": 19.36
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 25,
+            "price_unit": 19.36
+          }
+        ]
+      },
+      {
+        "product_id": 9180,
+        "product_name": "[PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 9.72,
+        "subtotal": 243.00000000000003,
+        "confidence": "high",
+        "order_count": 139,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière tous les 7 à 14 jours (dernières commandes les 16/10, 30/10 et 07/11). Avec une dernière commande effectuée il y a seulement 4 jours et un seuil de réapprovisionnement de 30 jours, un nouveau besoin est certain d'apparaître dans cet horizon pour maintenir le flux. Bien que le volume du 07/11 soit exceptionnellement élevé (cumul de 225u), l'historique profond (N-1) et les commandes précédentes de 2025 montrent une base constante de 25u par ligne de commande. En application de la règle de la médiane et du choix de la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité retenue est de 25u.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-03 12:10:18",
+            "quantity": 25,
+            "price_unit": 9.72
+          },
+          {
+            "date": "2024-04-03 12:09:32",
+            "quantity": 25,
+            "price_unit": 9.72
+          },
+          {
+            "date": "2024-03-20 13:08:14",
+            "quantity": 75,
+            "price_unit": 9.72
+          },
+          {
+            "date": "2024-03-20 13:07:52",
+            "quantity": 50,
+            "price_unit": 9.72
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 50,
+            "price_unit": 9.72
+          }
+        ]
+      },
+      {
+        "product_id": 9187,
+        "product_name": "[PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 40,
+        "quantity_source": "llm",
+        "price_unit": 12.78,
+        "subtotal": 511.2,
+        "confidence": "high",
+        "order_count": 104,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande très régulier environ tous les 7 à 14 jours (dernières commandes le 01/10, 16/10, 30/10 et 07/11). Avec une dernière commande effectuée il y a 4 jours et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent au regard de la fréquence de rotation élevée. La quantité est fixée à 40 unités, ce qui correspond à la médiane stricte et constante de l'historique récent et de l'année précédente (N-1).",
+          "summary": "",
+          "baseline_quantity": 40,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-03 12:09:57",
+            "quantity": 80,
+            "price_unit": 12.78
+          },
+          {
+            "date": "2024-04-03 12:09:32",
+            "quantity": 40,
+            "price_unit": 12.78
+          },
+          {
+            "date": "2024-03-20 13:08:14",
+            "quantity": 80,
+            "price_unit": 12.78
+          },
+          {
+            "date": "2024-03-20 13:07:52",
+            "quantity": 160,
+            "price_unit": 12.78
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 80,
+            "price_unit": 12.78
+          }
+        ]
+      },
+      {
+        "product_id": 9181,
+        "product_name": "[PF1693] LD FR TARTINAD BIO CAROTTE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 434,
+        "quantity_source": "llm",
+        "price_unit": 9.12,
+        "subtotal": 3958.0799999999995,
+        "confidence": "high",
+        "order_count": 62,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier environ tous les 14 jours (04/09, 18/09, 02/10, 16/10). La dernière commande groupée date du 07/11, soit il y a seulement 4 jours. Cependant, avec un seuil de réapprovisionnement de 30 jours, la prochaine échéance théorique (autour du 21/11) tombe largement dans la fenêtre de vigilance. Bien que le volume du 07/11 soit exceptionnellement élevé (1736u au total), la quantité unitaire récurrente et la médiane historique sont strictement de 434u. En suivant le principe de précaution B2B et la règle de la médiane pour éviter le surstockage après un pic, une commande de 434u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 434,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-18 08:22:33",
+            "quantity": 434,
+            "price_unit": 9.12
+          },
+          {
+            "date": "2024-04-18 08:21:44",
+            "quantity": 434,
+            "price_unit": 9.12
+          },
+          {
+            "date": "2024-04-18 08:21:25",
+            "quantity": 434,
+            "price_unit": 9.12
+          },
+          {
+            "date": "2024-04-03 12:10:18",
+            "quantity": 434,
+            "price_unit": 9.12
+          },
+          {
+            "date": "2024-03-20 13:07:52",
+            "quantity": 434,
+            "price_unit": 9.12
+          }
+        ]
+      },
+      {
+        "product_id": 9182,
+        "product_name": "[PF1694] LD FR TARTINAD BIO POIVRON 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 434,
+        "quantity_source": "llm",
+        "price_unit": 9.42,
+        "subtotal": 4088.2799999999997,
+        "confidence": "high",
+        "order_count": 89,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière environ tous les 7 à 14 jours (dernières commandes les 15/10, 16/10, 30/10 et 07/11). Avec une dernière commande effectuée il y a 4 jours et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent selon le principe de précaution B2B (70% du cycle atteint ou dépassé pour couvrir l'horizon). Concernant la quantité, l'historique récent et N-1 est extrêmement stable avec une unité de base récurrente de 434u. Bien que des commandes multiples soient parfois passées le même jour, la médiane par transaction reste fixée à 434u. En respectant la règle de ne pas surestimer et de privilégier la valeur constante la plus basse en cas de doute, une quantité de 434u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 434,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-03 12:10:18",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-03 12:09:02",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-03-20 13:09:14",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-03-20 13:07:52",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 434,
+            "price_unit": 9.42
+          }
+        ]
+      },
+      {
+        "product_id": 9070,
+        "product_name": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 434,
+        "quantity_source": "llm",
+        "price_unit": 9.06,
+        "subtotal": 3932.0400000000004,
+        "confidence": "high",
+        "order_count": 82,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière environ tous les 14 à 20 jours (dernières commandes groupées le 07/11, 16/10, 02/10). Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent d'ici début décembre. Bien qu'un pic exceptionnel de 1302u ait été observé le 07/11, la quantité standard historique est de 434u (médiane et mode constants sur 2024 et 2025). En application de la règle de la médiane et du principe de précaution B2B, une commande de 434u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 434,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-03 12:09:57",
+            "quantity": 434,
+            "price_unit": 9.06
+          },
+          {
+            "date": "2024-04-03 12:09:02",
+            "quantity": 434,
+            "price_unit": 9.06
+          },
+          {
+            "date": "2024-03-20 13:09:14",
+            "quantity": 434,
+            "price_unit": 9.06
+          },
+          {
+            "date": "2024-03-20 13:08:14",
+            "quantity": 434,
+            "price_unit": 9.06
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 434,
+            "price_unit": 9.06
+          }
+        ]
+      },
+      {
+        "product_id": 9184,
+        "product_name": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 434,
+        "quantity_source": "llm",
+        "price_unit": 9.39,
+        "subtotal": 4075.26,
+        "confidence": "high",
+        "order_count": 98,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande très court et régulier (environ tous les 7 à 14 jours). La dernière commande datant du 7 novembre, le risque de rupture est élevé d'ici les 30 prochains jours (seuil de réapprovisionnement). Bien que des pics à 868u apparaissent récemment, la quantité récurrente et la médiane historique (confirmée par les données N-1) se situent à 434u. En application du principe de précaution B2B et de la règle de la médiane, une commande de 434u est préconisée pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 434,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-03-20 13:07:52",
+            "quantity": 434,
+            "price_unit": 9.39
+          },
+          {
+            "date": "2024-03-14 09:19:20",
+            "quantity": 1302,
+            "price_unit": 9.39
+          },
+          {
+            "date": "2024-03-14 09:19:00",
+            "quantity": 3038,
+            "price_unit": 9.39
+          },
+          {
+            "date": "2024-03-14 09:18:33",
+            "quantity": 2170,
+            "price_unit": 9.39
+          },
+          {
+            "date": "2024-03-14 09:17:13",
+            "quantity": 868,
+            "price_unit": 9.39
+          }
+        ]
+      },
+      {
+        "product_id": 9431,
+        "product_name": "[PF2973] LD FR TARTINADE BIO ANANAS 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 62,
+        "quantity_source": "llm",
+        "price_unit": 9.96,
+        "subtotal": 617.5200000000001,
+        "confidence": "high",
+        "order_count": 137,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. Le cycle de commande observé est d'environ 7 à 14 jours (commandes les 16/10, 30/10 et 07/11). La dernière commande date du 07/11, soit il y a 4 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est élevé avant la prochaine fenêtre de calcul. Le principe de précaution B2B impose de prévoir une commande. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent présente des quantités variées : 31, 31, 31, 62, 62, 93, 93, 186. La médiane des commandes récentes se situe à 62u. Bien qu'un pic à 186u soit visible le 07/11, il est traité comme exceptionnel. Conformément aux règles, on retient la médiane de 62u pour couvrir le besoin sans surstocker.",
+          "summary": "",
+          "baseline_quantity": 62,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-18 08:21:44",
+            "quantity": 62,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2024-04-03 12:09:57",
+            "quantity": 93,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2024-04-03 12:09:32",
+            "quantity": 62,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2024-03-20 13:08:14",
+            "quantity": 62,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 31,
+            "price_unit": 9.96
+          }
+        ]
+      },
+      {
+        "product_id": 9430,
+        "product_name": "[PF2972] LD FR TARTINADE BIO OLIVE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 434,
+        "quantity_source": "llm",
+        "price_unit": 9.42,
+        "subtotal": 4088.2799999999997,
+        "confidence": "high",
+        "order_count": 27,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande très régulier avec une fréquence d'environ une à deux commandes par mois. La dernière commande date du 7 novembre 2025. Compte tenu du seuil de réapprovisionnement de 30 jours et de la récurrence observée (notamment les commandes rapprochées fin octobre/début novembre), il existe un risque de rupture ou un besoin de stock imminent pour couvrir la période à venir. La quantité commandée est extrêmement stable, fixée à 434 unités dans la quasi-totalité des occurrences récentes et passées (N-1). En appliquant la règle de la médiane sur l'historique récent, la quantité de 434 unités est retenue pour ce réapprovisionnement.",
+          "summary": "",
+          "baseline_quantity": 434,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-06-17 07:15:06",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-06-17 07:14:47",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-06-17 07:14:35",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-30 06:24:31",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-03 12:10:18",
+            "quantity": 434,
+            "price_unit": 9.42
+          }
+        ]
+      },
+      {
+        "product_id": 9426,
+        "product_name": "[PF2937] LD FR TARTINADE BIO POIS 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 93,
+        "quantity_source": "llm",
+        "price_unit": 9.42,
+        "subtotal": 876.06,
+        "confidence": "high",
+        "order_count": 142,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence hebdomadaire régulière (commandes les 16/10, 30/10 et 07/11). La dernière commande datant du 07/11, un réapprovisionnement est nécessaire pour couvrir les besoins sous 7 jours, ce qui entre largement dans le seuil de 30 jours (Replenishment Threshold Days). Concernant la quantité, l'historique récent présente des volumes compris entre 62u et 124u. La médiane des commandes récentes est de 93u. Conformément aux règles de gestion B2B privilégiant la médiane et la prudence en cas de doute, la quantité retenue est de 93u.",
+          "summary": "",
+          "baseline_quantity": 93,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-18 08:22:07",
+            "quantity": 62,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-18 08:21:44",
+            "quantity": 62,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-03 12:09:57",
+            "quantity": 93,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-03 12:09:32",
+            "quantity": 31,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-03-20 13:07:30",
+            "quantity": 62,
+            "price_unit": 9.42
+          }
+        ]
+      },
+      {
+        "product_id": 9427,
+        "product_name": "[PF2938] LD FR TARTINAD BIO AUBERGI 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 434,
+        "quantity_source": "llm",
+        "price_unit": 9.42,
+        "subtotal": 4088.2799999999997,
+        "confidence": "high",
+        "order_count": 35,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier avec une fréquence d'environ 7 à 14 jours entre les sessions de commande (dernières commandes les 16/10, 30/10 et 07/11). Depuis la dernière commande du 07/11, 4 jours se sont écoulés. Étant donné le seuil de réapprovisionnement de 30 jours et la régularité des commandes hebdomadaires ou bimensuelles, le risque de rupture est imminent dans l'horizon défini. La quantité est fixée à 434 unités, ce qui correspond à la médiane stricte et constante des commandes récentes.",
+          "summary": "",
+          "baseline_quantity": 434,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-16 15:22:16",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-05-16 15:22:16",
+            "quantity": 400,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-30 06:24:31",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-30 06:23:33",
+            "quantity": 434,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-04-18 08:21:25",
+            "quantity": 434,
+            "price_unit": 9.42
+          }
+        ]
+      },
+      {
+        "product_id": 17340,
+        "product_name": "[PF3200] LD FR TARTINADE BIO ASPERGE 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 248,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 2455.2000000000003,
+        "confidence": "high",
+        "order_count": 82,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier avec une dernière commande effectuée le 07/11/2025. Bien que la dernière commande soit très récente (4 jours), le seuil de réapprovisionnement de 30 jours et la fréquence rapprochée observée entre le 30/10 et le 07/11 indiquent un besoin de maintien de stock. En application du principe de précaution B2B et face à une rotation qui semble s'intensifier par rapport à l'année précédente, une commande est préconisée. La quantité retenue est de 248 unités, correspondant à la médiane exacte et constante de toutes les commandes passées en 2025.",
+          "summary": "",
+          "baseline_quantity": 248,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-30 06:41:31",
+            "quantity": 93,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-03-14 09:16:06",
+            "quantity": 434,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-03-14 09:15:47",
+            "quantity": 434,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-03-14 09:15:26",
+            "quantity": 434,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-03-14 09:12:10",
+            "quantity": 434,
+            "price_unit": 9.9
+          }
+        ]
+      },
+      {
+        "product_id": 17509,
+        "product_name": "[PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 62,
+        "quantity_source": "llm",
+        "price_unit": 12.6,
+        "subtotal": 781.1999999999999,
+        "confidence": "high",
+        "order_count": 73,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière toutes les 1 à 2 semaines (dernières commandes le 07/11, 30/10 et 16/10). Avec une dernière commande effectuée il y a 4 jours et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent selon le principe de précaution B2B. L'historique récent présente des volumes variés (31u, 62u, 93u). Conformément aux règles de gestion, la médiane des quantités récentes (62u) est retenue pour couvrir le besoin sans surstocker, ce qui correspond également aux volumes observés à la même période l'année précédente.",
+          "summary": "",
+          "baseline_quantity": 62,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-09 05:42:26",
+            "quantity": 31,
+            "price_unit": 12.6
+          },
+          {
+            "date": "2024-08-05 13:35:22",
+            "quantity": 434,
+            "price_unit": 12.6
+          },
+          {
+            "date": "2024-08-05 13:35:02",
+            "quantity": 186,
+            "price_unit": 12.6
+          },
+          {
+            "date": "2024-08-05 13:34:45",
+            "quantity": 310,
+            "price_unit": 12.6
+          },
+          {
+            "date": "2024-08-05 13:34:25",
+            "quantity": 217,
+            "price_unit": 12.6
+          }
+        ]
+      },
+      {
+        "product_id": 18409,
+        "product_name": "[PF3361] LD FR TARTINADE BIO OIGNON 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 31,
+        "quantity_source": "llm",
+        "price_unit": 9.57,
+        "subtotal": 296.67,
+        "confidence": "high",
+        "order_count": 31,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier environ tous les 7 à 15 jours (dernières commandes le 07/11, 30/10, 15/10, 01/10). Avec une dernière commande effectuée il y a 4 jours et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent dans l'horizon défini. Concernant la quantité, bien que des pics à 93u apparaissent le 07/11, la valeur récurrente et stable (médiane) est de 31u. Conformément aux règles de gestion B2B privilégiant la médiane et la prudence face aux pics exceptionnels, une quantité de 31u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 31,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-16 13:37:06",
+            "quantity": 62,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2025-03-21 12:37:16",
+            "quantity": 217,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2025-03-21 12:36:28",
+            "quantity": 403,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2025-03-21 12:36:01",
+            "quantity": 403,
+            "price_unit": 9.57
+          },
+          {
+            "date": "2025-03-21 12:35:20",
+            "quantity": 403,
+            "price_unit": 9.57
+          }
+        ]
+      },
+      {
+        "product_id": 9186,
+        "product_name": "[PF1698] CB9007 LD FR VINAI CIBOULE BIO PET 250ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 40,
+        "quantity_source": "llm",
+        "price_unit": 12.3,
+        "subtotal": 492,
+        "confidence": "high",
+        "order_count": 66,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier environ tous les 15 à 20 jours (dernières commandes le 07/11, 16/10, 01/10). Avec une dernière commande effectuée il y a seulement 4 jours, nous sommes au début d'un nouveau cycle, mais compte tenu du seuil de réapprovisionnement de 30 jours, un besoin surviendra avant la fin de cette période. En application du principe de précaution B2B et pour couvrir l'horizon de 30 jours, une commande est nécessaire. La quantité est fixée à 40 unités, ce qui correspond à la médiane stricte et constante de l'historique récent et de l'année précédente.",
+          "summary": "",
+          "baseline_quantity": 40,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-18 08:22:07",
+            "quantity": 40,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-04-03 12:09:57",
+            "quantity": 80,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-04-03 12:09:32",
+            "quantity": 40,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-03-20 13:08:14",
+            "quantity": 40,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-03-20 13:07:52",
+            "quantity": 80,
+            "price_unit": 12.3
+          }
+        ]
+      },
+      {
+        "product_id": 17870,
+        "product_name": "[PF3349] LD FR TARTINADE BIO AVOCAT 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 279,
+        "quantity_source": "llm",
+        "price_unit": 9.96,
+        "subtotal": 2778.84,
+        "confidence": "high",
+        "order_count": 41,
+        "llm_prediction": {
+          "reasoning": "L'analyse montre un cycle de commande hebdomadaire (30/10 et 07/11). Avec une dernière commande effectuée il y a 4 jours et un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent pour le prochain cycle attendu vers le 14/11. En appliquant la règle de la médiane sur l'historique récent (valeurs : 31, 124, 217, 279, 279, 403, 651, 744), la médiane se situe à 279u. Cette quantité permet de maintenir le stock sans surévaluer malgré les pics observés à plus de 600u.",
+          "summary": "",
+          "baseline_quantity": 279,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-16 13:37:06",
+            "quantity": 62,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2025-03-21 12:37:16",
+            "quantity": 403,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2025-03-21 12:36:28",
+            "quantity": 465,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2025-03-21 12:36:01",
+            "quantity": 496,
+            "price_unit": 9.96
+          },
+          {
+            "date": "2025-03-21 12:35:20",
+            "quantity": 403,
+            "price_unit": 9.96
+          }
+        ]
+      },
+      {
+        "product_id": 11038,
+        "product_name": "[PF2991] LD TARTINADE BIO CHATAIGNE135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 304,
+        "quantity_source": "llm",
+        "price_unit": 10.02,
+        "subtotal": 3046.08,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 21 octobre, soit 21 jours avant la date actuelle. Le cycle entre les deux dernières vagues de commandes est d'environ 27 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent (77% du cycle écoulé). ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une forte volatilité le 24 septembre (pics à 496u et 585u). En appliquant la règle de la médiane sur les commandes récentes (180, 220, 304, 496, 585), la valeur centrale est 304. Cette quantité est cohérente avec l'historique N-1 et respecte le principe de précaution sans surestimer les besoins suite aux pics exceptionnels.",
+          "summary": "",
+          "baseline_quantity": 304,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 11:40:59",
+            "quantity": 304,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-19 07:00:03",
+            "quantity": 309,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-18 12:22:34",
+            "quantity": 448,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 211,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-18 12:21:57",
+            "quantity": 552,
+            "price_unit": 10.02
+          }
+        ]
+      },
+      {
+        "product_id": 17443,
+        "product_name": "[PF3311] CB9027 - LD FR TARTINADE BIO CEPES 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 306,
+        "quantity_source": "llm",
+        "price_unit": 9.42,
+        "subtotal": 2882.52,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 21 octobre 2025, soit 21 jours avant la date actuelle (11 novembre). Le cycle moyen observé entre septembre et octobre est d'environ 27 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous atteignons 77% du cycle moyen. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre des volumes variés (220, 237, 306, 537, 552). La médiane de ces commandes récentes est de 306u. Conformément aux règles de prudence B2B et à l'utilisation de la médiane pour lisser les pics exceptionnels, la quantité retenue est de 306u.",
+          "summary": "",
+          "baseline_quantity": 306,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 11:40:59",
+            "quantity": 306,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-07-19 07:00:03",
+            "quantity": 320,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-07-18 12:22:34",
+            "quantity": 545,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 211,
+            "price_unit": 9.42
+          },
+          {
+            "date": "2024-07-18 12:21:57",
+            "quantity": 576,
+            "price_unit": 9.42
+          }
+        ]
+      },
+      {
+        "product_id": 19808,
+        "product_name": "[PF3382] CB9032 - LD FR PUREE DE RAIFORT BIO 135g",
+        "product_uom": "TU6",
+        "quantity_recommended": 25,
+        "quantity_source": "llm",
+        "price_unit": 14.4,
+        "subtotal": 360,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une activité récente en octobre (25u) après une période de forte rotation en août. Depuis la dernière commande du 16 octobre, 26 jours se sont écoulés. Avec un seuil de réapprovisionnement de 30 jours, nous atteignons 86% du cycle mensuel estimé, ce qui déclenche un risque de rupture imminent selon le principe de précaution B2B. Pour la quantité, les volumes exceptionnels d'août (150u-250u) sont écartés car ils représentent des pics ponctuels. La médiane des commandes les plus récentes et stables est de 25u, quantité retenue pour maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 25,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-29 12:50:46",
+            "quantity": 150,
+            "price_unit": 14.4
+          },
+          {
+            "date": "2025-08-29 12:50:01",
+            "quantity": 250,
+            "price_unit": 14.4
+          },
+          {
+            "date": "2025-08-29 12:49:26",
+            "quantity": 200,
+            "price_unit": 14.4
+          },
+          {
+            "date": "2025-08-29 12:49:26",
+            "quantity": 0,
+            "price_unit": 14.4
+          },
+          {
+            "date": "2025-08-29 12:48:48",
+            "quantity": 200,
+            "price_unit": 14.4
+          }
+        ]
+      },
+      {
+        "product_id": 14604,
+        "product_name": "[PF3248] AA0347 - LD FR TARTINAD BIO RAIFORT 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 240,
+        "quantity_source": "llm",
+        "price_unit": 9.48,
+        "subtotal": 2275.2000000000003,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 24 septembre 2025, soit 48 jours avant la date actuelle (11 novembre). Bien que le cycle historique soit irrégulier, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B, un risque de rupture est identifié. ÉTAPE 2 : L'historique récent présente des quantités de 158, 186, 294 et 302 unités. La médiane de ces valeurs se situe à 240 unités. Conformément aux règles de gestion, nous retenons cette médiane pour couvrir les besoins sans surestimer le stock de sécurité.",
+          "summary": "",
+          "baseline_quantity": 240,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 11:40:59",
+            "quantity": 186,
+            "price_unit": 9.48
+          },
+          {
+            "date": "2024-07-19 07:00:03",
+            "quantity": 200,
+            "price_unit": 9.48
+          },
+          {
+            "date": "2024-07-18 12:22:34",
+            "quantity": 298,
+            "price_unit": 9.48
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 169,
+            "price_unit": 9.48
+          },
+          {
+            "date": "2024-07-18 12:21:57",
+            "quantity": 342,
+            "price_unit": 9.48
+          }
+        ]
+      },
+      {
+        "product_id": 9282,
+        "product_name": "[PF1840] LD TARTINADE BIO TRIPACK",
+        "product_uom": "TU1",
+        "quantity_recommended": 1235,
+        "quantity_source": "llm",
+        "price_unit": 3.25,
+        "subtotal": 4013.75,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 24/09/2025, soit 48 jours avant la date actuelle (11/11/2025). Bien que le cycle soit irrégulier, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et face à l'incertitude du cycle, un besoin est détecté pour éviter la rupture. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent du 24/09 présente des volumes disparates (605, 725, 1745, 2655). La médiane des commandes récentes est de 1235u (moyenne entre 725 et 1745). Ce volume est cohérent avec l'historique N-1 (médiane 2024 autour de 960u-1290u). Conformément aux règles, on retient la médiane du récent pour stabiliser le stock sans surévaluer.",
+          "summary": "",
+          "baseline_quantity": 1235,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-07-19 07:00:03",
+            "quantity": 630,
+            "price_unit": 3.25
+          },
+          {
+            "date": "2024-07-18 12:22:34",
+            "quantity": 1395,
+            "price_unit": 3.25
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 545,
+            "price_unit": 3.25
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 95,
+            "price_unit": 3.25
+          },
+          {
+            "date": "2024-07-18 12:21:57",
+            "quantity": 2260,
+            "price_unit": 3.25
+          }
+        ]
+      },
+      {
+        "product_id": 9316,
+        "product_name": "[PF1892] LD TARTINADE BIO TRUFFES 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 639,
+        "quantity_source": "llm",
+        "price_unit": 12.42,
+        "subtotal": 7936.38,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 24 septembre 2025, soit 48 jours avant la date actuelle (11 novembre). Bien que le cycle historique soit irrégulier, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B, un risque de rupture est identifié. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent présente des volumes hétérogènes (348, 484, 793, 873). La médiane de ces commandes récentes est de 638.5. Conformément aux règles de gestion, nous retenons la valeur médiane arrondie à 639 pour couvrir le besoin sans surestimer les stocks.",
+          "summary": "",
+          "baseline_quantity": 639,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 11:40:59",
+            "quantity": 484,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-07-19 07:00:03",
+            "quantity": 503,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-07-18 12:22:34",
+            "quantity": 953,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 349,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-07-18 12:21:57",
+            "quantity": 818,
+            "price_unit": 12.42
+          }
+        ]
+      },
+      {
+        "product_id": 11037,
+        "product_name": "[PF2990] LD TARTINADE BIO SALICORN 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 306,
+        "quantity_source": "llm",
+        "price_unit": 10.02,
+        "subtotal": 3066.12,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 24 septembre 2025, soit 48 jours avant la date actuelle (11 novembre). Avec un seuil de réapprovisionnement de 30 jours, le délai écoulé dépasse largement le cycle habituel suggéré par les commandes groupées de septembre. Le risque de rupture est avéré, une commande est nécessaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre quatre commandes le même jour avec des volumes variés (171, 239, 374, 471). La médiane de ces commandes récentes est de 306,5 unités. Conformément à la règle de prudence privilégiant la valeur la plus basse en cas de doute sur la médiane, la quantité retenue est de 306 unités pour couvrir le besoin sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 306,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 11:40:59",
+            "quantity": 239,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-19 07:00:03",
+            "quantity": 262,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-18 12:22:34",
+            "quantity": 361,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 146,
+            "price_unit": 10.02
+          },
+          {
+            "date": "2024-07-18 12:21:57",
+            "quantity": 466,
+            "price_unit": 10.02
+          }
+        ]
+      },
+      {
+        "product_id": 17435,
+        "product_name": "[PF3310] CB9026 - LD FR PESTO BIO CHAMPIGNONS TRUFFES 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 188,
+        "quantity_source": "llm",
+        "price_unit": 18.3,
+        "subtotal": 3440.4,
+        "confidence": "high",
+        "order_count": 8,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande date du 24 septembre 2025, soit 48 jours avant la date actuelle. Bien que l'historique récent soit concentré sur une seule journée, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et face à l'incertitude du cycle de rotation, un risque de rupture est identifié. ÉTAPE 2 : L'historique récent présente des volumes de 96, 149, 226 et 236 unités. La médiane de ces commandes est de 187.5 unités. Conformément aux règles de gestion, nous retenons la valeur médiane arrondie (188u) pour couvrir le besoin sans surstocker, les volumes de l'année précédente (N-1) confirmant une capacité d'absorption similaire sur cette période.",
+          "summary": "",
+          "baseline_quantity": 188,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 11:40:59",
+            "quantity": 149,
+            "price_unit": 18.3
+          },
+          {
+            "date": "2024-07-19 07:00:03",
+            "quantity": 245,
+            "price_unit": 18.3
+          },
+          {
+            "date": "2024-07-18 12:22:34",
+            "quantity": 347,
+            "price_unit": 18.3
+          },
+          {
+            "date": "2024-07-18 12:22:15",
+            "quantity": 175,
+            "price_unit": 18.3
+          },
+          {
+            "date": "2024-07-18 12:21:57",
+            "quantity": 380,
+            "price_unit": 18.3
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 26,
+    "optional_products_count": 0,
+    "base_amount": 65340.56999999999,
+    "optional_amount": 0,
+    "total_amount": 65340.56999999999,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 8859
+}

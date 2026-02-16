@@ -1,0 +1,30 @@
+{
+  "clientId": 38981,
+  "clientName": "LD food SA (ITM by Mestdagh)",
+  "orderName": "S40278",
+  "orderDate": "2025-11-12 14:29:39",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.38461538461538464,
+    "recall": 1,
+    "f1Score": 0.5555555555555556,
+    "mae": 0.2,
+    "wmape": 15.384615384615385,
+    "mape": 8.333333333333332,
+    "bias": -15.384615384615385
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 26624,
+    "completionTokens": 4719,
+    "totalTokens": 31343
+  }
+}

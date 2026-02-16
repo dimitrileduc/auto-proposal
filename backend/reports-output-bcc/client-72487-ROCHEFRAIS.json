@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:09:32.662Z"
+  },
+  "client": {
+    "id": 72487,
+    "name": "ROCHEFRAIS"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-21 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 3,
+      "llm_usage": {
+        "calls": 5,
+        "promptTokens": 4429,
+        "completionTokens": 621,
+        "totalTokens": 5050
+      }
+    },
+    "proposalFinal": {
+      "products_count": 3,
+      "total_amount": 782.32,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8987,
+        "product_name": "[PF0078] FILOU CHASSEUR 5 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 80,
+        "quantity_source": "llm",
+        "price_unit": 8.96,
+        "subtotal": 716.8000000000001,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence moyenne d'environ 28 jours entre chaque réapprovisionnement. La dernière commande datant du 24 septembre (soit 27 jours avant la date actuelle), le risque de rupture est imminent dans l'horizon des 30 jours du seuil de réapprovisionnement. Concernant la quantité, bien qu'un pic à 160u ait été observé en août, la quantité récurrente et la médiane des commandes récentes est de 80u. En application du principe de précaution et de la règle de la médiane, une commande de 80u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 80,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-31 05:44:02",
+            "quantity": 80,
+            "price_unit": 8.96
+          },
+          {
+            "date": "2025-07-09 08:33:14",
+            "quantity": 80,
+            "price_unit": 8.96
+          },
+          {
+            "date": "2025-06-13 12:25:16",
+            "quantity": 80,
+            "price_unit": 8.96
+          },
+          {
+            "date": "2025-06-04 12:09:25",
+            "quantity": 80,
+            "price_unit": 8.96
+          },
+          {
+            "date": "2025-05-12 13:13:11",
+            "quantity": 80,
+            "price_unit": 8.96
+          }
+        ]
+      },
+      {
+        "product_id": 9065,
+        "product_name": "[PF1140] FILOU SAUCE CHASSEUR 850G",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.92,
+        "subtotal": 25.92,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 24 septembre, soit 27 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique de risque de rupture. Bien que l'historique soit limité à une seule commande, le principe de précaution B2B impose de prévoir un réapprovisionnement pour couvrir le cycle mensuel probable. ÉTAPE 2 : ESTIMATION QUANTITÉ. En l'absence d'historique volumineux, on se base sur la dernière quantité observée (1u). Conformément aux règles de rotation faible et de maintien des quantités récentes, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 08:46:14",
+            "quantity": 1,
+            "price_unit": 25.92
+          },
+          {
+            "date": "2025-05-12 13:13:11",
+            "quantity": 1,
+            "price_unit": 25.92
+          }
+        ]
+      },
+      {
+        "product_id": 15037,
+        "product_name": "[PF3273] JF MITRAILLETTE SAUCE 925ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 39.6,
+        "subtotal": 39.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 24 septembre, soit 27 jours. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la zone de risque de rupture (27 jours >= 70% du cycle estimé pour un produit à faible rotation). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : L'historique récent montre une commande unique de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour éviter le surstock tout en assurant la disponibilité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-09-24 08:46:14",
+            "quantity": 1,
+            "price_unit": 39.6
+          },
+          {
+            "date": "2025-05-12 13:13:11",
+            "quantity": 1,
+            "price_unit": 39.6
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 3,
+    "optional_products_count": 0,
+    "base_amount": 782.32,
+    "optional_amount": 0,
+    "total_amount": 782.32,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2360
+}

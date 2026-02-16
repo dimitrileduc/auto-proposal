@@ -1,0 +1,30 @@
+{
+  "clientId": 18026,
+  "clientName": "AU FOND DES PANS",
+  "orderName": "S39755",
+  "orderDate": "2025-11-12 10:39:26",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 17,
+    "fp": 12,
+    "fn": 0,
+    "precision": 0.5862068965517241,
+    "recall": 1,
+    "f1Score": 0.7391304347826086,
+    "mae": 0.8823529411764706,
+    "wmape": 48.38709677419355,
+    "mape": 45.09803921568627,
+    "bias": -35.483870967741936
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 13
+  },
+  "llmUsage": {
+    "calls": 49,
+    "promptTokens": 43831,
+    "completionTokens": 7200,
+    "totalTokens": 51031
+  }
+}

@@ -1,0 +1,1331 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:21:40.985Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-08-24 00:00:00"
+    }
+  },
+  "client": {
+    "id": 71807,
+    "name": "Dethier, Nicole - La Romance du Lac",
+    "order": {
+      "name": "S38693",
+      "date": "2025-08-25 06:28:32"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 13,
+        "falsePositives": 15,
+        "falseNegatives": 1,
+        "total": 29
+      },
+      "productMetrics": {
+        "precision": 0.4642857142857143,
+        "recall": 0.9285714285714286,
+        "f1Score": 0.6190476190476191,
+        "totalPredicted": 28,
+        "totalReal": 14
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 13,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 10,
+          "falseNegatives": 1,
+          "total": 14
+        },
+        "productMetrics": {
+          "precision": 0.23076923076923078,
+          "recall": 0.75,
+          "f1Score": 0.3529411764705882,
+          "totalPredicted": 13,
+          "totalReal": 4
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 3,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 10,
+          "falsePositives": 5,
+          "falseNegatives": 0,
+          "total": 15
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1Score": 0.8,
+          "totalPredicted": 15,
+          "totalReal": 10
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 10,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 24778,
+    "completionTokens": 4323,
+    "totalTokens": 29101
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18272,
+        "productName": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 27.92
+            },
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 27.92
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 27.92
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9714236631653613
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 35.5059375,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18275,
+        "productName": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 27.92
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 27.92
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 71.011875,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18321,
+        "productName": "[NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9714236631653613
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 35.5059375,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 13094,
+        "productName": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "productUom": "TU16",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 23.92
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 23.92
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 71.011875,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18415,
+        "productName": "[REB06] REB chips bio - paprika fumé 35g",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 17.6
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 17.6
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 71.011875,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18416,
+        "productName": "[REB05] REB chips bio - sel de mer 35g",
+        "productUom": "TU20",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 17.6
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 17.6
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 71.011875,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16749,
+        "productName": "[JF005] JF MAYONNAISE OEUFS 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 19.5
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 19.5
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 71.011875,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 14937,
+        "productName": "[CB001] CB Apple juice 25cl",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89198,
+              "orderName": "S37321",
+              "date": "2025-06-10 06:42:07",
+              "quantity": 1,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 28.8
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 28.8
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.9714236631653613
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 35.5059375,
+            "lastOrderDaysAgo": 74.72075231481482,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 17769,
+        "productName": "[MF0061] MF Compote",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 12.37
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 12.37
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 38.04251157407408,
+            "lastOrderDaysAgo": 107.69011574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18270,
+        "productName": "[JOY05] Organic Cherry Jam 370g",
+        "productUom": "TU8",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 31.84
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 107.69011574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18320,
+        "productName": "[NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 107.69011574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 18318,
+        "productName": "[NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87529,
+              "orderName": "S35652",
+              "date": "2025-03-31 06:25:01",
+              "quantity": 1,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 1
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 38.04251157407408,
+            "lastOrderDaysAgo": 107.69011574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16979,
+        "productName": "[MF0055] MF Noix de cajou - Curry 133g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 1
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88392,
+              "orderName": "S36515",
+              "date": "2025-05-08 07:26:14",
+              "quantity": 1,
+              "priceUnit": 20.62
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 107.69011574074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18276,
+        "productName": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 74,
+            "orders": [
+              {
+                "orderId": 89198,
+                "orderName": "S37321",
+                "date": "2025-06-10 06:42:07",
+                "quantity": 1,
+                "priceUnit": 27.92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16978,
+        "productName": "[MF0054] MF Noix de cajou - Fleur de sel 133g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 74,
+            "orders": [
+              {
+                "orderId": 89198,
+                "orderName": "S37321",
+                "date": "2025-06-10 06:42:07",
+                "quantity": 1,
+                "priceUnit": 20.62
+              },
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 20.62
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16980,
+        "productName": "[MF0056] MF Noix de cajou - Herbes de Provence 133g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 74,
+            "orders": [
+              {
+                "orderId": 89198,
+                "orderName": "S37321",
+                "date": "2025-06-10 06:42:07",
+                "quantity": 1,
+                "priceUnit": 20.62
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13060,
+        "productName": "[LV161] LV Tartinade Mangue curry 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 74,
+            "orders": [
+              {
+                "orderId": 89198,
+                "orderName": "S37321",
+                "date": "2025-06-10 06:42:07",
+                "quantity": 1,
+                "priceUnit": 13.1
+              },
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 13.1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13064,
+        "productName": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 74,
+            "orders": [
+              {
+                "orderId": 89198,
+                "orderName": "S37321",
+                "date": "2025-06-10 06:42:07",
+                "quantity": 1,
+                "priceUnit": 12.67
+              },
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 12.67
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 13095,
+        "productName": "[LV001] LV Pizza Croccantina à l'huile d'olive 150 g bio",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 74,
+            "orders": [
+              {
+                "orderId": 89198,
+                "orderName": "S37321",
+                "date": "2025-06-10 06:42:07",
+                "quantity": 1,
+                "priceUnit": 27.03
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18380,
+        "productName": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 74,
+            "orders": [
+              {
+                "orderId": 89198,
+                "orderName": "S37321",
+                "date": "2025-06-10 06:42:07",
+                "quantity": 1,
+                "priceUnit": 31.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16936,
+        "productName": "[MF0050] MF Cornichons aigre doux (belge) 500g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 88392,
+                "orderName": "S36515",
+                "date": "2025-05-08 07:26:14",
+                "quantity": 1,
+                "priceUnit": 23.04
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18273,
+        "productName": "[JOY08] JOY! Organic Raspberry Jam 370g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 88392,
+                "orderName": "S36515",
+                "date": "2025-05-08 07:26:14",
+                "quantity": 1,
+                "priceUnit": 31.84
+              },
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 31.84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18319,
+        "productName": "[NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 88392,
+                "orderName": "S36515",
+                "date": "2025-05-08 07:26:14",
+                "quantity": 1,
+                "priceUnit": 17.55
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14938,
+        "productName": "[CB002] CB Cherry Apple juice 25cl",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 107,
+            "orders": [
+              {
+                "orderId": 88392,
+                "orderName": "S36515",
+                "date": "2025-05-08 07:26:14",
+                "quantity": 1,
+                "priceUnit": 40.8
+              },
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 40.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14450,
+        "productName": "[LV330] LV BIO Tartinade Toscana 190g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 145,
+            "orders": [
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 14.52
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16786,
+        "productName": "[JF024] JF VINAIGRET CIBOULE WECK 200M",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 145,
+            "orders": [
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 27
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 552,
+        "productName": "[MF0012] MF Olives Mix 500g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 145,
+            "orders": [
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 27.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18303,
+        "productName": "[NOC01] NOCCIOLATA Pâte cacao-noisette bio 250g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 145,
+            "orders": [
+              {
+                "orderId": 87529,
+                "orderName": "S35652",
+                "date": "2025-03-31 06:25:01",
+                "quantity": 1,
+                "priceUnit": 17.94
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18322,
+        "productName": "[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      }
+    ]
+  }
+}

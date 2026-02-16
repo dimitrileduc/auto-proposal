@@ -1,0 +1,30 @@
+{
+  "clientId": 24275,
+  "clientName": "CARREFOUR BELGIUM SA, HYPER SCHOTEN",
+  "orderName": "S39796",
+  "orderDate": "2025-10-20 06:42:57",
+  "cutoffDate": "2025-10-19 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 18,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.8181818181818182,
+    "recall": 1,
+    "f1Score": 0.9,
+    "mae": 0.2777777777777778,
+    "wmape": 27.77777777777778,
+    "mape": 27.77777777777778,
+    "bias": 27.77777777777778
+  },
+  "distribution": {
+    "exactMatch": 13,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 20951,
+    "completionTokens": 3658,
+    "totalTokens": 24609
+  }
+}

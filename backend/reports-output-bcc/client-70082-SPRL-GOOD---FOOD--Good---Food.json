@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:21:35.585Z"
+  },
+  "client": {
+    "id": 70082,
+    "name": "SPRL GOOD & FOOD, Good & Food"
+  },
+  "config": {
+    "analysisEndDate": "2025-07-21 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 8,
+      "llm_usage": {
+        "calls": 8,
+        "promptTokens": 7091,
+        "completionTokens": 1299,
+        "totalTokens": 8390
+      }
+    },
+    "proposalFinal": {
+      "products_count": 8,
+      "total_amount": 6583.25,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18387,
+        "product_name": "[PF3350] DLL MARINADE AVOCAT 8 HERBS 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 90,
+        "quantity_source": "llm",
+        "price_unit": 5.72,
+        "subtotal": 514.8,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande date du 02/07/2025, soit 19 jours avant la date actuelle. Bien que l'historique soit limité à deux points, l'intervalle entre les commandes précédentes était d'environ 4 mois. Cependant, avec un seuil de réapprovisionnement de 30 jours et une rotation irrégulière, le principe de précaution B2B s'applique pour éviter une rupture sur un produit à volume significatif. ÉTAPE 2 : Estimation de la quantité. On observe deux commandes : 90u et 282u. La commande de 282u présente un caractère exceptionnel par rapport au premier volume. En suivant la règle de privilégier la valeur la plus basse en cas de doute ou de pic potentiel, la quantité retenue est de 90u.",
+          "summary": "",
+          "baseline_quantity": 90,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-02 13:51:08",
+            "quantity": 282,
+            "price_unit": 5.72
+          },
+          {
+            "date": "2025-02-28 08:32:04",
+            "quantity": 90,
+            "price_unit": 5.72
+          }
+        ]
+      },
+      {
+        "product_id": 18404,
+        "product_name": "[PF3356] DLL DRESSING AVOCAT CORIANDRE LIME 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 85,
+        "quantity_source": "llm",
+        "price_unit": 5.06,
+        "subtotal": 430.09999999999997,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle montre un intervalle de 49 jours entre les deux dernières commandes. La dernière commande datant du 18 avril (il y a 94 jours), le cycle habituel est largement dépassé, ce qui indique un besoin immédiat ou une rupture de stock probable. En application du principe de précaution B2B, un réapprovisionnement est nécessaire. Pour la quantité, bien que la dernière commande fût de 282u, celle-ci présente un caractère exceptionnel par rapport au volume précédent de 85u. Conformément aux règles de gestion des pics et au choix de la valeur la plus basse en cas de doute, la quantité de 85u est retenue pour éviter un surstockage.",
+          "summary": "",
+          "baseline_quantity": 85,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-18 08:34:06",
+            "quantity": 282,
+            "price_unit": 5.06
+          },
+          {
+            "date": "2025-02-28 08:32:04",
+            "quantity": 85,
+            "price_unit": 5.06
+          }
+        ]
+      },
+      {
+        "product_id": 18408,
+        "product_name": "[PF3360] DLL MAYONNAISE AVOCAT 200ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 64,
+        "quantity_source": "llm",
+        "price_unit": 6.02,
+        "subtotal": 385.28,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 18 avril 2025, soit 94 jours. Bien que le cycle soit irrégulier (50 jours entre les deux premières commandes), le délai actuel dépasse largement la fréquence observée. En application du principe de précaution B2B et face à l'incertitude du cycle, un risque de rupture est identifié pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. L'historique présente deux valeurs : 64u et 350u. La commande de 350u est traitée comme un pic exceptionnel ou un stock de remplissage initial. Conformément à la règle de privilégier la valeur la plus basse en cas de doute et d'éviter la surestimation, la quantité retenue est de 64 unités.",
+          "summary": "",
+          "baseline_quantity": 64,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-18 08:34:06",
+            "quantity": 350,
+            "price_unit": 6.02
+          },
+          {
+            "date": "2025-02-28 08:32:04",
+            "quantity": 64,
+            "price_unit": 6.02
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 18400,
+        "product_name": "[PF3352] DLL MARINADE AVOCAT TOMATES SECHEES 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 282,
+        "quantity_source": "llm",
+        "price_unit": 4.8,
+        "subtotal": 1353.6,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 02/07/2025, soit 19 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours et un historique récent limité à une seule commande massive, le cycle de rotation n'est pas encore établi. En application du principe de précaution B2B (doute sur le cycle = prévoir commande), un risque de rupture est identifié pour l'horizon cible. ÉTAPE 2 : Estimation quantité. L'historique récent présente une commande unique de 282 unités. En l'absence d'autres points de comparaison ou de données N-1, cette valeur est retenue comme référence de volume pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 282,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-02 13:51:08",
+            "quantity": 282,
+            "price_unit": 4.8
+          }
+        ]
+      },
+      {
+        "product_id": 18399,
+        "product_name": "[PF3351] DLL MARINADE AVOCAT BBQ 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 282,
+        "quantity_source": "llm",
+        "price_unit": 6.05,
+        "subtotal": 1706.1,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande date de 19 jours (02/07). Avec un seuil de réapprovisionnement de 30 jours et une seule commande historique récente, le cycle de rotation n'est pas encore établi. En application du principe de précaution B2B (incertitude sur le cycle = risque), un besoin est détecté pour éviter une rupture potentielle. ÉTAPE 2 : En l'absence d'historique multiple pour calculer une médiane, la quantité de la dernière commande (282u) est maintenue pour assurer la continuité du stock sur ce nouveau référencement.",
+          "summary": "",
+          "baseline_quantity": 282,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-02 13:51:08",
+            "quantity": 282,
+            "price_unit": 6.05
+          }
+        ]
+      },
+      {
+        "product_id": 18401,
+        "product_name": "[PF3353] DLL DRESSING AVOCAT MIEL MOUTARDE 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 282,
+        "quantity_source": "llm",
+        "price_unit": 5.16,
+        "subtotal": 1455.1200000000001,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 18 avril 2025, soit 94 jours avant la date actuelle. En l'absence d'historique de cycle récurrent, le principe de précaution B2B s'applique face à un délai aussi long sans réapprovisionnement. Le risque de rupture est jugé élevé pour l'horizon des 30 prochains jours. ÉTAPE 2 : Estimation de la quantité. L'historique récent présente une commande unique de 282 unités. Conformément à la règle de maintien des quantités pour les rotations régulières ou uniques sans tendance inverse, la médiane (ici la valeur unique) de 282 unités est retenue pour couvrir le besoin.",
+          "summary": "",
+          "baseline_quantity": 282,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-18 08:34:06",
+            "quantity": 282,
+            "price_unit": 5.16
+          }
+        ]
+      },
+      {
+        "product_id": 18406,
+        "product_name": "[PF3358] DLL DRESSING AVOCAT ITALIAN 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 70,
+        "quantity_source": "llm",
+        "price_unit": 4.75,
+        "subtotal": 332.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 28 février 2025, soit plus de 140 jours. Bien que le cycle soit difficile à déterminer avec une seule commande récente, le principe de précaution B2B s'applique face à une absence de réapprovisionnement prolongée. Le risque de rupture est considéré comme élevé ou incertain. ÉTAPE 2 : Estimation quantité. En l'absence d'historique multiple, la quantité de la dernière commande connue (70u) est reconduite pour maintenir le stock opérationnel sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 70,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-28 08:32:04",
+            "quantity": 70,
+            "price_unit": 4.75
+          }
+        ]
+      },
+      {
+        "product_id": 18403,
+        "product_name": "[PF3355] DLL DRESSING AVOCAT POPPY SEEDS 240ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 75,
+        "quantity_source": "llm",
+        "price_unit": 5.41,
+        "subtotal": 405.75,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 28 février 2025, soit plus de 140 jours sans activité. En l'absence d'historique récurrent permettant de définir un cycle précis, le principe de précaution B2B s'applique pour éviter une rupture prolongée si le produit est toujours au catalogue. La quantité retenue correspond à la dernière commande connue (75u), faute d'autres points de comparaison pour établir une médiane différente.",
+          "summary": "",
+          "baseline_quantity": 75,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-28 08:32:04",
+            "quantity": 75,
+            "price_unit": 5.41
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 3,
+    "optional_products_count": 5,
+    "base_amount": 1330.1799999999998,
+    "optional_amount": 5253.07,
+    "total_amount": 6583.25,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3746
+}

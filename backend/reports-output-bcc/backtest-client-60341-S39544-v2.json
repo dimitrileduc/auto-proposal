@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:10:41.460Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-02 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60341,
+    "name": "FOODPICKERS",
+    "order": {
+      "name": "S39544",
+      "date": "2025-10-03 11:15:08"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 920,
+    "completionTokens": 155,
+    "totalTokens": 1075
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18300,
+        "productName": "[MATE01] MATE MATE thé glacé bio pétillant au yerba maté verre 330ml",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 63,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 63
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 90851,
+              "orderName": "S38974",
+              "date": "2025-09-04 06:29:42",
+              "quantity": 63,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 89772,
+              "orderName": "S37895",
+              "date": "2025-07-04 08:19:26",
+              "quantity": 63,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 89058,
+              "orderName": "S37181",
+              "date": "2025-06-02 10:57:15",
+              "quantity": 63,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 88277,
+              "orderName": "S36400",
+              "date": "2025-04-28 07:25:47",
+              "quantity": 63,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 87507,
+              "orderName": "S35630",
+              "date": "2025-03-26 09:33:30",
+              "quantity": 63,
+              "priceUnit": 29.04
+            },
+            {
+              "orderId": 86530,
+              "orderName": "S34653",
+              "date": "2025-02-04 08:28:16",
+              "quantity": 63,
+              "priceUnit": 29.04
+            }
+          ],
+          "statistics": {
+            "mean": 63,
+            "median": 63,
+            "stdDev": 0,
+            "min": 63,
+            "max": 63,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8888291961797097
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 42.375199074074075,
+            "lastOrderDaysAgo": 27.729375,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

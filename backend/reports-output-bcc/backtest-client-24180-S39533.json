@@ -1,0 +1,30 @@
+{
+  "clientId": 24180,
+  "clientName": "CARREFOUR BELGIUM SA, CARREFOUR MARKET BOORTMEERBEEK",
+  "orderName": "S39533",
+  "orderDate": "2025-10-03 06:21:45",
+  "cutoffDate": "2025-10-02 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 18,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.9,
+    "recall": 1,
+    "f1Score": 0.9473684210526316,
+    "mae": 1,
+    "wmape": 69.23076923076923,
+    "mape": 69.44444444444444,
+    "bias": 61.53846153846154
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 12
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 18425,
+    "completionTokens": 3462,
+    "totalTokens": 21887
+  }
+}

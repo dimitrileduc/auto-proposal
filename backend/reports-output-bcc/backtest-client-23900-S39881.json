@@ -1,0 +1,30 @@
+{
+  "clientId": 23900,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper Bierges",
+  "orderName": "S39881",
+  "orderDate": "2025-10-23 06:18:52",
+  "cutoffDate": "2025-10-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 14,
+    "fp": 13,
+    "fn": 0,
+    "precision": 0.5185185185185185,
+    "recall": 1,
+    "f1Score": 0.6829268292682926,
+    "mae": 0.7857142857142857,
+    "wmape": 61.111111111111114,
+    "mape": 67.14285714285714,
+    "bias": 38.88888888888889
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 26597,
+    "completionTokens": 4845,
+    "totalTokens": 31442
+  }
+}

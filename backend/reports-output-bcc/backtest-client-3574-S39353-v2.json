@@ -1,0 +1,286 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:16:38.364Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-09-22 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3574,
+    "name": "BEFOOD NV",
+    "order": {
+      "name": "S39353",
+      "date": "2025-09-23 12:33:26"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 72,
+        "wmape": 40.909090909090914,
+        "mape": 40.909090909090914,
+        "bias": -40.909090909090914,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 1
+        },
+        "rmse": 72
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 72,
+          "wmape": 40.909090909090914,
+          "mape": 40.909090909090914,
+          "bias": -40.909090909090914,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 72
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 1040,
+    "completionTokens": 257,
+    "totalTokens": 1297
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9005,
+        "productName": "[PF0164] FILOU MOUTARDE  10 KG",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 104,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 176
+        },
+        "error": {
+          "absolute": 72,
+          "percent": 40.909090909090914,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 14,
+          "orders": [
+            {
+              "orderId": 90826,
+              "orderName": "S38949",
+              "date": "2025-09-03 09:33:19",
+              "quantity": 132,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 90704,
+              "orderName": "S38827",
+              "date": "2025-08-28 12:46:12",
+              "quantity": 53,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 90099,
+              "orderName": "S38222",
+              "date": "2025-07-24 12:12:54",
+              "quantity": 110,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 89020,
+              "orderName": "S37143",
+              "date": "2025-05-28 15:06:58",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 87771,
+              "orderName": "S35894",
+              "date": "2025-04-08 12:49:45",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 86845,
+              "orderName": "S34968",
+              "date": "2025-02-19 13:30:42",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 85162,
+              "orderName": "S33285",
+              "date": "2024-11-14 12:29:44",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 84478,
+              "orderName": "S32601",
+              "date": "2024-10-04 07:25:26",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 83475,
+              "orderName": "S31598",
+              "date": "2024-08-08 06:37:20",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 82729,
+              "orderName": "S30852",
+              "date": "2024-06-18 11:21:03",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 81785,
+              "orderName": "S29908",
+              "date": "2024-04-22 12:26:54",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 80261,
+              "orderName": "S28384",
+              "date": "2024-01-04 10:38:52",
+              "quantity": 104,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 80137,
+              "orderName": "S28260",
+              "date": "2023-12-19 07:59:33",
+              "quantity": 52,
+              "priceUnit": 7
+            },
+            {
+              "orderId": 79395,
+              "orderName": "S27518",
+              "date": "2023-11-08 10:16:16",
+              "quantity": 104,
+              "priceUnit": 7
+            }
+          ],
+          "statistics": {
+            "mean": 99.07142857142857,
+            "median": 104,
+            "stdDev": 20.327547409204815,
+            "min": 52,
+            "max": 132,
+            "cv": 0.20518072366897436,
+            "trend": "stable",
+            "outliers": [
+              132,
+              53,
+              110,
+              52
+            ],
+            "regularityScore": 0.6676018872039684
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 51.14834668803418,
+            "lastOrderDaysAgo": 18.601863425925927,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

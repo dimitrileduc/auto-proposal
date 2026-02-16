@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:28:20.754Z"
+  },
+  "client": {
+    "id": 58762,
+    "name": "OH GOURMAND SAS"
+  },
+  "config": {
+    "analysisEndDate": "2025-01-21 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 14,
+      "llm_usage": {
+        "calls": 14,
+        "promptTokens": 12500,
+        "completionTokens": 2271,
+        "totalTokens": 14771
+      }
+    },
+    "proposalFinal": {
+      "products_count": 14,
+      "total_amount": 412.71000000000004,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9070,
+        "product_name": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 9.6,
+        "subtotal": 153.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 13/12/2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent ou déjà avéré, d'autant plus que le cycle de commande n'est pas encore stabilisé (historique récent uniquement). Le principe de précaution B2B impose de prévoir une commande. ÉTAPE 2 : L'historique récent montre deux volumes (16u et 1u) le même jour. La valeur de 16u représente le besoin réel de mise en stock ou de rotation standard, tandis que 1u semble être un ajustement. En suivant la règle de la médiane et de la stabilité des volumes significatifs, la quantité de 16u est retenue pour couvrir la période à venir.",
+          "summary": "",
+          "baseline_quantity": 16,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 16,
+            "price_unit": 9.6
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9181,
+        "product_name": "[PF1693] LD FR TARTINAD BIO CAROTTE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le délai écoulé dépasse largement le cycle de sécurité. Bien que l'historique soit très limité (une seule unité commandée), le principe de précaution B2B impose de prévoir un réapprovisionnement pour éviter une rupture prolongée. La quantité retenue correspond à la médiane de l'historique récent (1 unité).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 0,
+            "price_unit": 0
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9182,
+        "product_name": "[PF1694] LD FR TARTINAD BIO POIVRON 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 9.9,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 13 décembre 2024, soit il y a 39 jours. Bien que le cycle soit difficile à établir avec seulement deux commandes le même jour, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours, créant un risque de rupture (principe de précaution B2B). Pour la quantité, la commande de 15 unités semble être un pic exceptionnel ou une mise en stock initiale ; la médiane et la règle de prudence pour les rotations incertaines imposent de retenir la quantité la plus basse (1 unité) pour éviter le surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 15,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9426,
+        "product_name": "[PF2937] LD FR TARTINADE BIO POIS 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 9.9,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 13/12/2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le délai écoulé dépasse largement la fréquence habituelle pour ce type de produit en rotation. Par principe de précaution B2B et pour éviter une rupture prolongée, un besoin est détecté. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre deux commandes le même jour (16u et 1u). La commande de 16u présente un caractère exceptionnel ou de mise en place, tandis que la commande de 1u reflète une rotation de base. En application de la règle de la médiane et du choix de la valeur la plus basse en cas de doute sur un produit à faible rotation, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 16,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9184,
+        "product_name": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 9.9,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 13/12/2024, soit 39 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent ou déjà avéré pour ce type de produit bio à rotation spécifique. En l'absence d'un cycle historique clair (commandes groupées sur une seule date), le principe de précaution B2B impose de prévoir une commande. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre deux volumes très disparates le même jour (15u et 1u). La commande de 15u présente un caractère exceptionnel ou de mise en stock initiale. Conformément aux règles de gestion des valeurs extrêmes et de rotation incertaine, on privilégie la quantité la plus basse (médiane basse) pour éviter le surstockage, soit 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 15,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9430,
+        "product_name": "[PF2972] LD FR TARTINADE BIO OLIVE 200",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 9.9,
+        "subtotal": 9.9,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le cycle de commande est largement dépassé, ce qui indique un besoin imminent de restockage par précaution. Concernant la quantité, bien qu'une commande de 16 unités ait été enregistrée, elle apparaît comme un pic exceptionnel face à la commande unitaire simultanée. En application de la règle de la médiane et du choix de la valeur la plus basse en cas de doute pour éviter le surstockage sur un produit bio à rotation incertaine, une quantité de 1 unité est préconisée.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 16,
+            "price_unit": 9.9
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 17509,
+        "product_name": "[PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G",
+        "product_uom": "TU6",
+        "quantity_recommended": 13,
+        "quantity_source": "llm",
+        "price_unit": 13.2,
+        "subtotal": 171.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le cycle de commande est largement dépassé, créant un risque de rupture imminent. Bien qu'il n'y ait que deux commandes récentes le même jour, la quantité de 13 unités représente le volume principal de commande (la commande de 1u étant marginale). En l'absence d'historique N-1, on applique le principe de précaution B2B en prévoyant une commande basée sur la quantité médiane significative observée.",
+          "summary": "",
+          "baseline_quantity": 13,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 13,
+            "price_unit": 13.2
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9180,
+        "product_name": "[PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 10.2,
+        "subtotal": 10.2,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 13/12/2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent ou déjà avéré, d'autant plus que le cycle de rotation est irrégulier (principe de précaution B2B). ÉTAPE 2 : L'historique récent montre deux commandes le même jour (12u et 1u). La commande de 12u présente un caractère exceptionnel ou de stockage initial, tandis que la commande de 1u reflète une rotation unitaire plus probable pour ce type de produit bio spécialisé. En cas de doute et pour éviter le surstock, la quantité la plus basse (médiane basse) de 1 unité est privilégiée.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 12,
+            "price_unit": 10.2
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9269,
+        "product_name": "[PF1815] LD VINAIGRETTE FH WECK 200ML",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 22.41,
+        "subtotal": 22.41,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le cycle de commande est dépassé ou en phase critique de renouvellement. En l'absence d'historique long, le principe de précaution B2B s'applique pour éviter une rupture. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre deux commandes le même jour : une de 15u (pic exceptionnel probable) et une de 1u. Conformément aux règles de gestion des valeurs extrêmes et de privilégier la quantité la plus basse en cas de doute sur une rotation faible, la quantité retenue est de 1u.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 15,
+            "price_unit": 22.41
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9187,
+        "product_name": "[PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 13/12/2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le délai écoulé dépasse largement le cycle de rotation habituel pour ce type de produit. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unitaire (1u). Conformément à la règle sur les rotations faibles, on maintient la quantité historique la plus basse pour éviter le surstock. La médiane des commandes non nulles est de 1.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 0,
+            "price_unit": 0
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9247,
+        "product_name": "[PF1792] LD MAYONNAI TRUFFES 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date actuelle. Bien que l'historique soit limité à une seule unité, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B et pour éviter une rupture de stock sur un produit à rotation lente, une commande est nécessaire. La quantité retenue correspond à la médiane historique (1 unité).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 0,
+            "price_unit": 0
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9264,
+        "product_name": "[PF1809] LD SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 15.3,
+        "subtotal": 15.3,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 13/12/2024, soit 39 jours. Avec un seuil de réapprovisionnement de 30 jours, le cycle est largement dépassé ou incertain. En application du principe de précaution B2B (risque de rupture), une commande est nécessaire. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande de 12u et une de 1u le même jour. La valeur de 12u semble être un pic exceptionnel ou une commande de mise en stock initiale. Conformément à la règle de privilégier la quantité la plus basse en cas de doute et de ne pas surestimer pour les faibles rotations, la quantité retenue est de 1u.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 12,
+            "price_unit": 15.3
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      },
+      {
+        "product_id": 9260,
+        "product_name": "[PF1805] LD SAUCE COCKTAIL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le délai écoulé dépasse largement le cycle de précaution. Bien que l'historique soit très limité (une seule unité commandée), le principe de précaution B2B impose de prévoir une commande pour éviter une rupture prolongée. La quantité retenue correspond à la médiane des commandes historiques (1 unité), conformément à la règle de maintien des rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 13:00:56",
+            "quantity": 0,
+            "price_unit": 0
+          },
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 9257,
+        "product_name": "[PF1802] LD MOUTARDE MIEL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 0,
+        "subtotal": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 13 décembre 2024, soit 39 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent si le cycle de consommation est mensuel. En l'absence d'historique long ou de données N-1, le principe de précaution B2B s'applique pour éviter une rupture de stock. La quantité retenue correspond à la dernière commande connue (1 unité), respectant la règle de la médiane sur rotation faible pour ne pas surstocker inutilement.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-13 11:36:57",
+            "quantity": 1,
+            "price_unit": 0
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 13,
+    "optional_products_count": 1,
+    "base_amount": 412.71000000000004,
+    "optional_amount": 0,
+    "total_amount": 412.71000000000004,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 7621
+}

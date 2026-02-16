@@ -1,0 +1,30 @@
+{
+  "clientId": 60422,
+  "clientName": "LA NATURE A SES DELICES",
+  "orderName": "S39961",
+  "orderDate": "2025-10-28 09:35:48",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.8181818181818182,
+    "recall": 1,
+    "f1Score": 0.9,
+    "mae": 1,
+    "wmape": 75,
+    "mape": 94.44444444444444,
+    "bias": 75
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 11413,
+    "completionTokens": 1871,
+    "totalTokens": 13284
+  }
+}

@@ -172,16 +172,9 @@ export const backtestClientTask = task({
 
         lastOrder = orderData;
       } else if (payload.referenceDate) {
-        lastOrder = await odooClient.getLastClientOrderBeforeDate(
-          payload.clientId,
-          payload.referenceDate,
-          autoProposalConfig.defaultCompanyId
-        );
+        lastOrder = await odooClient.getLastClientOrderBeforeDate(payload.clientId, payload.referenceDate);
       } else {
-        lastOrder = await odooClient.getLastClientOrder(
-          payload.clientId,
-          autoProposalConfig.defaultCompanyId
-        );
+        lastOrder = await odooClient.getLastClientOrder(payload.clientId);
       }
 
       const cutoffDate = calculateDateBefore(

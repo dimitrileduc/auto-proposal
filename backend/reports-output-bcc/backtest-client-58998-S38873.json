@@ -1,0 +1,30 @@
+{
+  "clientId": 58998,
+  "clientName": "VITAFRAIS SAS",
+  "orderName": "S38873",
+  "orderDate": "2025-08-29 11:55:17",
+  "cutoffDate": "2025-08-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 25,
+    "wmape": 50,
+    "mape": 33.33333333333333,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5390,
+    "completionTokens": 1064,
+    "totalTokens": 6454
+  }
+}

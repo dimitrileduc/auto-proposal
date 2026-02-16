@@ -1,0 +1,30 @@
+{
+  "clientId": 17695,
+  "clientName": "Quels sont vos Goûts",
+  "orderName": "S39252",
+  "orderDate": "2025-09-17 11:40:42",
+  "cutoffDate": "2025-09-16 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 2,
+    "precision": 0.6,
+    "recall": 0.6,
+    "f1Score": 0.6,
+    "mae": 0.6666666666666666,
+    "wmape": 40,
+    "mape": 66.66666666666667,
+    "bias": 40
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 39,
+    "promptTokens": 35135,
+    "completionTokens": 5933,
+    "totalTokens": 41068
+  }
+}

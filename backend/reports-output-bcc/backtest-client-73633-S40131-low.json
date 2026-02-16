@@ -1,0 +1,30 @@
+{
+  "clientId": 73633,
+  "clientName": "les jardins d'arquennes",
+  "orderName": "S40131",
+  "orderDate": "2025-11-05 10:27:41",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 22,
+    "fn": 0,
+    "precision": 0.21428571428571427,
+    "recall": 1,
+    "f1Score": 0.35294117647058826,
+    "mae": 0.3333333333333333,
+    "wmape": 28.57142857142857,
+    "mape": 25,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 46,
+    "promptTokens": 40500,
+    "completionTokens": 6699,
+    "totalTokens": 47199
+  }
+}

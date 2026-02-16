@@ -1,0 +1,30 @@
+{
+  "clientId": 38754,
+  "clientName": "CRF MARKET LONTZEN CENTRALMARK",
+  "orderName": "S40306",
+  "orderDate": "2025-11-13 10:10:34",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 38,
+    "fn": 0,
+    "precision": 0.07317073170731707,
+    "recall": 1,
+    "f1Score": 0.13636363636363635,
+    "mae": 4,
+    "wmape": 75,
+    "mape": 75,
+    "bias": -75
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 42,
+    "promptTokens": 39986,
+    "completionTokens": 7068,
+    "totalTokens": 47054
+  }
+}

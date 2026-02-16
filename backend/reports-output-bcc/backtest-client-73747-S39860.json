@@ -1,0 +1,30 @@
+{
+  "clientId": 73747,
+  "clientName": "Cardi Maleizen SRL (Proxy Delhaize Maleizen)",
+  "orderName": "S39860",
+  "orderDate": "2025-10-22 13:10:31",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.375,
+    "recall": 1,
+    "f1Score": 0.5454545454545454,
+    "mae": 0.8333333333333334,
+    "wmape": 45.45454545454545,
+    "mape": 36.11111111111111,
+    "bias": -45.45454545454545
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 18662,
+    "completionTokens": 3327,
+    "totalTokens": 21989
+  }
+}

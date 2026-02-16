@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2026-01-11T10:13:27.983Z"
+  },
+  "client": {
+    "id": 3749,
+    "name": "ALAVI",
+    "email": "lvdp@alavi.be"
+  },
+  "config": {
+    "analysisEndDate": "2026-01-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": false
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 956,
+        "completionTokens": 159,
+        "totalTokens": 1115
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 2409,
+      "moq_adjustment_applied": false
+    },
+    "quote": {
+      "quote_id": 92292,
+      "quote_name": "S40413",
+      "quote_state": "draft",
+      "amount_total_ht": 2409,
+      "amount_total_ttc": 2553.54,
+      "tax_total": 144.54,
+      "created_at": "2026-01-11 10:13:16",
+      "lines_count": 1,
+      "optional_products_count": 0,
+      "order_lines": [
+        {
+          "product_id": 9421,
+          "product_name": "[PF2140] MAYONNAISE BIO  10 L",
+          "quantity": 55,
+          "price_unit": 43.8,
+          "subtotal_ht": 2409
+        }
+      ],
+      "optional_products": []
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9421,
+        "product_name": "[PF2140] MAYONNAISE BIO  10 L",
+        "product_uom": "TU1",
+        "quantity_recommended": 55,
+        "quantity_source": "llm",
+        "price_unit": 43.8,
+        "subtotal": 2409,
+        "moq_adjustment": 0,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 25/08/2025, soit plus de 130 jours. L'historique montre une rotation lente mais régulière (environ tous les 4 à 5 mois). Avec un seuil de réapprovisionnement de 30 jours et une absence de commande depuis août, le risque de rupture est critique. En suivant le principe de précaution B2B et la règle de la médiane des commandes récentes (55u) et historiques (52u, 59u), la quantité de 55u est retenue pour couvrir le prochain cycle.",
+          "summary": "Risque rupture (130j sans commande). Médiane 55u.",
+          "baseline_quantity": 55,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-25 08:33:20",
+            "quantity": 55,
+            "price_unit": 43.8
+          },
+          {
+            "date": "2025-02-04 13:46:15",
+            "quantity": 52,
+            "price_unit": 43.8
+          },
+          {
+            "date": "2024-10-07 12:50:58",
+            "quantity": 52,
+            "price_unit": 42.5
+          },
+          {
+            "date": "2024-05-22 11:13:58",
+            "quantity": 52,
+            "price_unit": 42.5
+          },
+          {
+            "date": "2024-01-18 13:46:15",
+            "quantity": 59,
+            "price_unit": 42.5
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 2409,
+    "optional_amount": 0,
+    "total_amount": 2409,
+    "moq_adjusted": false,
+    "quote_name": "S40413",
+    "quote_id": 92292
+  },
+  "execution_time_ms": 25042
+}

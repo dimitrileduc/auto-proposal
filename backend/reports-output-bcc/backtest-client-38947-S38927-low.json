@@ -1,0 +1,30 @@
+{
+  "clientId": 38947,
+  "clientName": "ITM BURENTRAD SA BURENVILLE",
+  "orderName": "S38927",
+  "orderDate": "2025-09-02 10:14:12",
+  "cutoffDate": "2025-09-01 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 11537,
+    "completionTokens": 2012,
+    "totalTokens": 13549
+  }
+}

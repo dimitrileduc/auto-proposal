@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:24:18.459Z"
+  },
+  "client": {
+    "id": 3891,
+    "name": "NPN DISTRIBUTION"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-26 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 908,
+        "completionTokens": 161,
+        "totalTokens": 1069
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 2594.88,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9310,
+        "product_name": "[PF0509] YVALLI GR BOUL TOMATE 2,5 KG",
+        "product_uom": "TU6",
+        "quantity_recommended": 48,
+        "quantity_source": "llm",
+        "price_unit": 54.06,
+        "subtotal": 2594.88,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 30 juin 2025, soit environ 118 jours. Bien que le cycle historique soit irrégulier et espacé, le principe de précaution B2B s'applique ici car l'absence de commande sur une période aussi longue présente un risque de rupture imminent pour un produit de type boulangerie/tomate. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent et N-1 montre une stabilité parfaite avec des commandes systématiques de 48 unités. La médiane est de 48. Conformément aux règles, on maintient cette quantité habituelle sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 48,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-30 11:33:02",
+            "quantity": 48,
+            "price_unit": 54.06
+          },
+          {
+            "date": "2024-11-08 10:44:57",
+            "quantity": 48,
+            "price_unit": 50.4
+          },
+          {
+            "date": "2024-05-13 08:48:07",
+            "quantity": 48,
+            "price_unit": 50.4
+          },
+          {
+            "date": "2023-11-10 13:37:08",
+            "quantity": 48,
+            "price_unit": 50.4
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 2594.88,
+    "optional_amount": 0,
+    "total_amount": 2594.88,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2659
+}

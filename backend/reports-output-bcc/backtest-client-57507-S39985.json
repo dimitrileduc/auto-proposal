@@ -1,0 +1,30 @@
+{
+  "clientId": 57507,
+  "clientName": "ITM HERSTAL",
+  "orderName": "S39985",
+  "orderDate": "2025-10-29 09:48:55",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.5333333333333333,
+    "recall": 1,
+    "f1Score": 0.6956521739130436,
+    "mae": 0.25,
+    "wmape": 22.22222222222222,
+    "mape": 18.75,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 15306,
+    "completionTokens": 2869,
+    "totalTokens": 18175
+  }
+}

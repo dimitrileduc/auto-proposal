@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:25:54.890Z"
+  },
+  "client": {
+    "id": 60267,
+    "name": "CLEMENCE DE PIERPONT"
+  },
+  "config": {
+    "analysisEndDate": "2025-03-16 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 4,
+      "llm_usage": {
+        "calls": 4,
+        "promptTokens": 3500,
+        "completionTokens": 620,
+        "totalTokens": 4120
+      }
+    },
+    "proposalFinal": {
+      "products_count": 4,
+      "total_amount": 318.9,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 269.7,
+        "minimum_required": 300,
+        "gap_filled": 49.19999999999999,
+        "products_adjusted": 2
+      }
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 18383,
+        "product_name": "[WIG06] WIGNAC cidre naturel bio sans alcool 330ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 7,
+        "quantity_source": "llm",
+        "price_unit": 22.2,
+        "subtotal": 155.39999999999998,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 11 mars, soit il y a seulement 5 jours. Bien que le cycle ne soit pas encore établi (une seule commande récente), le seuil de réapprovisionnement est de 30 jours. En application du principe de précaution B2B (si doute sur le cycle ou historique insuffisant -> prévoir), une commande est générée pour éviter toute rupture sur un produit nouveau ou à rotation irrégulière. ÉTAPE 2 : ESTIMATION QUANTITÉ. En l'absence d'historique long ou de données N-1, la quantité est basée sur la commande la plus récente. La médiane et la valeur unique étant de 6 unités, ce volume est maintenu pour assurer le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-11 08:26:15",
+            "quantity": 6,
+            "price_unit": 22.2
+          }
+        ]
+      },
+      {
+        "product_id": 18386,
+        "product_name": "[WIG04] WIGNAC cidre rosé bio 750ml",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 54,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date du 11 mars, soit il y a seulement 5 jours. Bien que le cycle de commande ne soit pas encore établi avec une seule donnée récente, le principe de précaution B2B et l'absence d'historique N-1 imposent de prévoir un réapprovisionnement pour couvrir l'horizon des 30 jours (Replenishment Threshold Days). En suivant la règle de la médiane sur l'historique récent (1u) et la consigne de choisir la valeur la plus basse en cas de rotation faible, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-11 08:26:15",
+            "quantity": 1,
+            "price_unit": 27
+          }
+        ]
+      },
+      {
+        "product_id": 18382,
+        "product_name": "[WIG03] WIGNAC cidre naturel bio 750ml",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 25.5,
+        "subtotal": 76.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande date du 11 mars, soit il y a seulement 5 jours. Bien que le délai soit court, nous n'avons pas d'historique suffisant pour établir un cycle de rotation précis (une seule commande récente). En application du principe de précaution B2B (si doute sur le cycle → prévoir commande) et compte tenu du seuil de réapprovisionnement de 30 jours, un risque de rupture ne peut être exclu si la rotation s'accélère. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 3 unités. En l'absence d'autres données ou de saisonnalité N-1, la médiane se base sur cette valeur de 3 unités pour maintenir le stock.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-11 08:26:15",
+            "quantity": 3,
+            "price_unit": 25.5
+          }
+        ]
+      },
+      {
+        "product_id": 18380,
+        "product_name": "[TEN01] TENSAÏ TEA  thé vert bio au citron et à la fleur de sureau 330ml",
+        "product_uom": "TU20",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 33,
+        "subtotal": 33,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande date de seulement 5 jours (11 mars), mais s'agissant d'un produit à rotation très faible (1 unité) et sans historique étendu, le principe de précaution B2B s'applique pour éviter toute rupture sur un cycle incertain. Le délai de réapprovisionnement de 30 jours couvre une période large où un nouveau besoin peut survenir. Conformément aux règles de gestion des rotations faibles (1-2u), la quantité est maintenue à 1 unité, correspondant à la médiane du volume historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-11 08:26:15",
+            "quantity": 1,
+            "price_unit": 33
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 4,
+    "base_amount": 0,
+    "optional_amount": 318.9,
+    "total_amount": 318.9,
+    "moq_adjusted": true,
+    "moq_gap": 49.19999999999999
+  },
+  "execution_time_ms": 2953
+}

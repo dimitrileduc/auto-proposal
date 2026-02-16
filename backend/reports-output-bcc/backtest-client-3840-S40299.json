@@ -1,0 +1,30 @@
+{
+  "clientId": 3840,
+  "clientName": "KORO HANDELS GmbH",
+  "orderName": "S40299",
+  "orderDate": "2025-11-13 07:44:27",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.08333333333333333,
+    "recall": 1,
+    "f1Score": 0.15384615384615385,
+    "mae": 80,
+    "wmape": 93.02325581395348,
+    "mape": 93.02325581395348,
+    "bias": 93.02325581395348
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 11622,
+    "completionTokens": 2057,
+    "totalTokens": 13679
+  }
+}

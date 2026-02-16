@@ -1,0 +1,294 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:25:52.009Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-06-01 00:00:00"
+    }
+  },
+  "client": {
+    "id": 5454,
+    "name": "MAISON DESPRIET SA, MAISON DESPRIET SA, Adresse de facturation",
+    "order": {
+      "name": "S37200",
+      "date": "2025-06-02 14:59:03"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 2,
+        "falseNegatives": 0,
+        "total": 4
+      },
+      "productMetrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "totalPredicted": 4,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 41.5,
+        "wmape": 97.6470588235294,
+        "mape": 80,
+        "bias": 97.6470588235294,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 2
+        },
+        "rmse": 56.60830327787612
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 2,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1Score": 0.6666666666666666,
+          "totalPredicted": 4,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 41.5,
+          "wmape": 97.6470588235294,
+          "mape": 80,
+          "bias": 97.6470588235294,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 56.60830327787612
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 4,
+    "promptTokens": 3492,
+    "completionTokens": 574,
+    "totalTokens": 4066
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9038,
+        "productName": "[PF0524] FILOU SAUCE TOMATE 815 GR",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 8,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 3,
+          "percent": 60,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88668,
+              "orderName": "S36791",
+              "date": "2025-05-14 12:12:59",
+              "quantity": 8,
+              "priceUnit": 25.92
+            }
+          ],
+          "statistics": {
+            "mean": 8,
+            "median": 8,
+            "stdDev": 0,
+            "min": 8,
+            "max": 8,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 17.490983796296295,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 8987,
+        "productName": "[PF0078] FILOU CHASSEUR 5 L",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 160,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 80
+        },
+        "error": {
+          "absolute": 80,
+          "percent": 100,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88668,
+              "orderName": "S36791",
+              "date": "2025-05-14 12:12:59",
+              "quantity": 160,
+              "priceUnit": 8.78
+            }
+          ],
+          "statistics": {
+            "mean": 160,
+            "median": 160,
+            "stdDev": 0,
+            "min": 160,
+            "max": 160,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 17.490983796296295,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 15037,
+        "productName": "[PF3273] JF MITRAILLETTE SAUCE 925ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 17,
+            "orders": [
+              {
+                "orderId": 88668,
+                "orderName": "S36791",
+                "date": "2025-05-14 12:12:59",
+                "quantity": 1,
+                "priceUnit": 39.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 17018,
+        "productName": "[PF3290] JF MAYO BARAKI 925ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 17,
+            "orders": [
+              {
+                "orderId": 88668,
+                "orderName": "S36791",
+                "date": "2025-05-14 12:12:59",
+                "quantity": 1,
+                "priceUnit": 46.92
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

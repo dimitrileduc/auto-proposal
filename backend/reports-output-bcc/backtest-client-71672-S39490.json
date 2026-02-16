@@ -1,0 +1,30 @@
+{
+  "clientId": 71672,
+  "clientName": "DLL AD Keerbergen DLK Retail",
+  "orderName": "S39490",
+  "orderDate": "2025-10-02 08:03:46",
+  "cutoffDate": "2025-10-01 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 22,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1,
+    "f1Score": 0.8,
+    "mae": 0.22727272727272727,
+    "wmape": 20,
+    "mape": 15.909090909090908,
+    "bias": -4
+  },
+  "distribution": {
+    "exactMatch": 17,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 36,
+    "promptTokens": 31829,
+    "completionTokens": 5408,
+    "totalTokens": 37237
+  }
+}

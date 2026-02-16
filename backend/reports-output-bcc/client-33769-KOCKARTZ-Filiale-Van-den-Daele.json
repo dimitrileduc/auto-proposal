@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:16:59.587Z"
+  },
+  "client": {
+    "id": 33769,
+    "name": "KOCKARTZ Filiale Van den Daele"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-03 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 891,
+        "completionTokens": 139,
+        "totalTokens": 1030
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 312,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 19.5,
+        "minimum_required": 300,
+        "gap_filled": 292.5,
+        "products_adjusted": 1
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16755,
+        "product_name": "[JF022] JF MOUTARDE MIEL 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 16,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 312,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle de 24 jours entre les deux dernières commandes (22/09 au 16/10). Au 03/11, 18 jours se sont écoulés depuis la dernière commande, soit 75% du cycle moyen. Le seuil de réapprovisionnement étant de 30 jours, le risque de rupture est imminent selon le principe de précaution B2B (seuil > 70% du cycle). La quantité est fixée à 1 unité, correspondant à la médiane stricte et constante de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-16 12:21:02",
+            "quantity": 1,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-09-22 09:37:41",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 312,
+    "optional_amount": 0,
+    "total_amount": 312,
+    "moq_adjusted": true,
+    "moq_gap": 292.5
+  },
+  "execution_time_ms": 2610
+}

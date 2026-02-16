@@ -1,0 +1,30 @@
+{
+  "clientId": 38860,
+  "clientName": "DLL PROXY LILLOIS LILLODIS",
+  "orderName": "S39274",
+  "orderDate": "2025-09-22 06:21:48",
+  "cutoffDate": "2025-09-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.5263157894736842,
+    "recall": 1,
+    "f1Score": 0.6896551724137931,
+    "mae": 0.4,
+    "wmape": 30.76923076923077,
+    "mape": 30,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19444,
+    "completionTokens": 3509,
+    "totalTokens": 22953
+  }
+}

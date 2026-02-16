@@ -1,0 +1,30 @@
+{
+  "clientId": 60580,
+  "clientName": "WATTITUDE sprl",
+  "orderName": "S39773",
+  "orderDate": "2025-10-16 12:54:09",
+  "cutoffDate": "2025-10-15 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1,
+    "recall": 0.8333333333333334,
+    "f1Score": 0.9090909090909091,
+    "mae": 0.4,
+    "wmape": 14.285714285714285,
+    "mape": 16.666666666666664,
+    "bias": 14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5237,
+    "completionTokens": 945,
+    "totalTokens": 6182
+  }
+}

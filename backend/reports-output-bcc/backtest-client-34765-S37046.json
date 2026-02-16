@@ -1,0 +1,30 @@
+{
+  "clientId": 34765,
+  "clientName": "la petite tour / a l'origine SA",
+  "orderName": "S37046",
+  "orderDate": "2025-05-26 06:41:46",
+  "cutoffDate": "2025-05-25 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 4,
+    "precision": 1,
+    "recall": 0.7333333333333333,
+    "f1Score": 0.846153846153846,
+    "mae": 0.2727272727272727,
+    "wmape": 14.285714285714285,
+    "mape": 18.181818181818183,
+    "bias": 14.285714285714285
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13241,
+    "completionTokens": 1977,
+    "totalTokens": 15218
+  }
+}

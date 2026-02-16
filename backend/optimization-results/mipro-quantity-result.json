@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "optimizer": "MiPRO-Quantity",
+  "optimizedAt": "2025-12-30T12:03:21.207Z",
+  "mode": "SEMI-FULL",
+  "model": "google/gemini-3-flash-preview",
+  "teacher": "anthropic/claude-sonnet-4.5",
+  "config": {
+    "numTrials": 20,
+    "trainSize": 100,
+    "valSize": 50,
+    "devMode": false
+  },
+  "results": {
+    "wMAPE": 39.425587467362924,
+    "mae": 3.02,
+    "medianError": 1,
+    "count": 50,
+    "targetMet": false
+  },
+  "bestScore": 0.9956294527035022,
+  "instruction": "Provide accurate and precise responses to user queries. Ensure all information is factually correct and clearly articulated. When answering questions, prioritize precision in language and accuracy in content. If uncertain about any details, acknowledge limitations rather than providing potentially incorrect information.",
+  "demos": [
+    {
+      "traces": [
+        {
+          "productName": "[JF002] JF MAYONNAI BASILIC 250ML WECK",
+          "recentOrders": "2025-05-20: 1u\n2025-04-08: 1u\n2025-03-25: 1u",
+          "lastYearOrders": "2024-06-04: 1u",
+          "currentDate": "2025-06-19",
+          "quantity": 1,
+          "reasoning": "Les commandes récentes en 2025 montrent une consommation très régulière de 1 unité par commande (médiane de 1u). Ce pattern est identique à la commande de l'année précédente à la même période (juin 2024). On maintient donc cette quantité typique pour le réapprovisionnement."
+        },
+        {
+          "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+          "recentOrders": "2025-08-21: 1u\n2025-07-03: 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-09-17",
+          "quantity": 1,
+          "reasoning": "Le produit présente une consommation régulière de 1 unité par commande en 2025 (médiane de 1u). En l'absence d'historique l'année précédente et sans pattern de croissance marqué, la quantité typique de 1 unité est maintenue pour le réapprovisionnement."
+        },
+        {
+          "productName": "[LV135] LV Tartinade Basilico 190g",
+          "recentOrders": "2025-06-12: 1u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-07-18",
+          "quantity": 1,
+          "reasoning": "Le produit présente une commande unique d'une unité en juin 2025. En l'absence d'historique sur l'année précédente pour identifier une tendance de croissance, on se base sur la médiane des commandes récentes, qui est de 1 unité."
+        },
+        {
+          "productName": "[JF001] JF MAYONNAI TRUFFES 250ML WECK",
+          "recentOrders": "2025-02-04: 3u",
+          "lastYearOrders": "2024-05-16: 2u\n2024-03-28: 5u",
+          "currentDate": "2025-03-13",
+          "quantity": 3,
+          "reasoning": "La commande la plus récente est de 3 unités. En regardant l'historique de l'année précédente, les quantités varient entre 2 et 5 unités (médiane de 3.5). La valeur de 3 unités représente donc le volume typique actuel pour ce produit."
+        },
+        {
+          "productName": "[RIT04] RITCHIE Pamplemousse - verre 275ml",
+          "recentOrders": "2025-09-03: 3u\n2025-07-22: 3u",
+          "lastYearOrders": "(Aucune commande)",
+          "currentDate": "2025-09-26",
+          "quantity": 3,
+          "reasoning": "Les commandes récentes en 2025 montrent une consommation stable avec une quantité constante de 3 unités par commande. En l'absence d'historique sur l'année précédente pour identifier une saisonnalité, la médiane des commandes récentes (3u) est retenue comme la valeur typique de réapprovisionnement."
+        }
+      ],
+      "programId": "331cadf5"
+    }
+  ]
+}

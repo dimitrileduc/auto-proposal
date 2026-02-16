@@ -1,0 +1,30 @@
+{
+  "clientId": 72511,
+  "clientName": "VDS FOOD",
+  "orderName": "S39897",
+  "orderDate": "2025-10-23 12:55:33",
+  "cutoffDate": "2025-10-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 2.25,
+    "wmape": 47.368421052631575,
+    "mape": 37.67857142857143,
+    "bias": -36.84210526315789
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4433,
+    "completionTokens": 787,
+    "totalTokens": 5220
+  }
+}

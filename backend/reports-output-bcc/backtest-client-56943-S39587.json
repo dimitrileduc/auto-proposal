@@ -1,0 +1,30 @@
+{
+  "clientId": 56943,
+  "clientName": "Ô P'tit Sterlain",
+  "orderName": "S39587",
+  "orderDate": "2025-10-07 07:02:23",
+  "cutoffDate": "2025-10-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 10,
+    "fn": 0,
+    "precision": 0.47368421052631576,
+    "recall": 1,
+    "f1Score": 0.6428571428571429,
+    "mae": 0.5555555555555556,
+    "wmape": 38.46153846153847,
+    "mape": 38.888888888888886,
+    "bias": 7.6923076923076925
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19891,
+    "completionTokens": 3401,
+    "totalTokens": 23292
+  }
+}

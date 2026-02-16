@@ -1,0 +1,30 @@
+{
+  "clientId": 38767,
+  "clientName": "CARREFOUR BELGIUM SA, CRF MARKET SINT-NIKLAAS MADB",
+  "orderName": "S38815",
+  "orderDate": "2025-08-28 11:46:14",
+  "cutoffDate": "2025-08-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 9613,
+    "completionTokens": 1661,
+    "totalTokens": 11274
+  }
+}

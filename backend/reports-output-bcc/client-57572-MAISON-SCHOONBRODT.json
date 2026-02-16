@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:17:44.965Z"
+  },
+  "client": {
+    "id": 57572,
+    "name": "MAISON SCHOONBRODT"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-12 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 930,
+        "completionTokens": 190,
+        "totalTokens": 1120
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 3337.92,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8984,
+        "product_name": "[PF0072] FILOU MAYONNAISE OEUFS SEAU 10L",
+        "product_uom": "TU1",
+        "quantity_recommended": 144,
+        "quantity_source": "llm",
+        "price_unit": 23.18,
+        "subtotal": 3337.92,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle d'environ 60 jours entre les commandes récentes (juillet à septembre). Depuis la dernière commande du 17 septembre 2025, 56 jours se sont écoulés. Nous atteignons 93% du cycle moyen, ce qui dépasse largement le seuil de précaution de 70%. Un risque de rupture est donc identifié pour les 30 prochains jours. Pour la quantité, la médiane des commandes récentes (132 et 156) est de 144 unités. Ce volume est cohérent avec la consommation globale observée, bien qu'en légère augmentation par rapport à l'année précédente (156u cumulés en sept 2024). Conformément à la règle de la médiane, nous préconisons 144 unités.",
+          "summary": "",
+          "baseline_quantity": 144,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-06-04 09:39:39",
+            "quantity": 156,
+            "price_unit": 23.18
+          },
+          {
+            "date": "2025-03-07 13:44:49",
+            "quantity": 156,
+            "price_unit": 23.18
+          },
+          {
+            "date": "2024-11-12 14:46:12",
+            "quantity": 312,
+            "price_unit": 22.5
+          },
+          {
+            "date": "2024-09-19 10:41:32",
+            "quantity": 104,
+            "price_unit": 22.5
+          },
+          {
+            "date": "2024-09-19 10:40:21",
+            "quantity": 52,
+            "price_unit": 22.5
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 3337.92,
+    "optional_amount": 0,
+    "total_amount": 3337.92,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3184
+}

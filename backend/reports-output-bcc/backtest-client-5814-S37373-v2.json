@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:23:38.894Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-06-10 00:00:00"
+    }
+  },
+  "client": {
+    "id": 5814,
+    "name": "MEX - AL  EL SOMBRERO IMPORT/E, MEX - AL  EL SOMBRERO IMPORT/E, Adresse de facturation",
+    "order": {
+      "name": "S37373",
+      "date": "2025-06-11 09:57:54"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 893,
+    "completionTokens": 166,
+    "totalTokens": 1059
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9001,
+        "productName": "[PF0129] SAUCE BBQ MEXAL TEXAS 4,4 KG",
+        "productUom": "TU4",
+        "prediction": {
+          "quantity": 360,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 360
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 88910,
+              "orderName": "S37033",
+              "date": "2025-05-23 11:47:01",
+              "quantity": 360,
+              "priceUnit": 34.6
+            },
+            {
+              "orderId": 87687,
+              "orderName": "S35810",
+              "date": "2025-04-03 13:52:29",
+              "quantity": 698,
+              "priceUnit": 34.6
+            }
+          ],
+          "statistics": {
+            "mean": 529,
+            "median": 529,
+            "stdDev": 169,
+            "min": 360,
+            "max": 698,
+            "cv": 0.31947069943289225,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.8083175803402647
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 49.91287037037037,
+            "lastOrderDaysAgo": 17.509016203703705,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

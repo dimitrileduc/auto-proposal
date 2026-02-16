@@ -1,0 +1,30 @@
+{
+  "clientId": 72056,
+  "clientName": "EDEKA Rhein Ruhr Stiftung & Co. KG, Eicker Dino e.K.",
+  "orderName": "S39960",
+  "orderDate": "2025-10-28 10:57:51",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1Score": 0.7692307692307693,
+    "mae": 1,
+    "wmape": 50,
+    "mape": 35,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 16,
+    "promptTokens": 13926,
+    "completionTokens": 2217,
+    "totalTokens": 16143
+  }
+}

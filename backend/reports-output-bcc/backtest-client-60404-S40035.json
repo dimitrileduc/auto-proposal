@@ -1,0 +1,30 @@
+{
+  "clientId": 60404,
+  "clientName": "LA FERME D'UPIGNY",
+  "orderName": "S40035",
+  "orderDate": "2025-11-04 13:31:03",
+  "cutoffDate": "2025-11-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 4,
+    "wmape": 56.14035087719298,
+    "mape": 49.86607142857142,
+    "bias": -56.14035087719298
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 6994,
+    "completionTokens": 1264,
+    "totalTokens": 8258
+  }
+}

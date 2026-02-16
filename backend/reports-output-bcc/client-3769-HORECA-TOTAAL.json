@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:14:07.693Z"
+  },
+  "client": {
+    "id": 3769,
+    "name": "HORECA TOTAAL"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-05 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 980,
+        "completionTokens": 184,
+        "totalTokens": 1164
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 1313.28,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9045,
+        "product_name": "[PF0649] PROMELIOR MOUTARDE DOUCE 2,1KG",
+        "product_uom": "TU6",
+        "quantity_recommended": 72,
+        "quantity_source": "llm",
+        "price_unit": 18.24,
+        "subtotal": 1313.28,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 30/09/2025, soit 36 jours. L'historique montre un cycle moyen d'environ 50 à 60 jours. Avec un seuil de réapprovisionnement de 30 jours, nous atteignons l'horizon de risque (36 + 30 = 66 jours), dépassant le cycle habituel. Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : Estimation quantité. Les commandes récentes oscillent entre 72u et 84u. En suivant la règle de la médiane et en privilégiant la valeur la plus basse en cas de doute pour éviter le surstockage, la quantité de 72u est retenue.",
+          "summary": "",
+          "baseline_quantity": 72,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-07-08 06:46:29",
+            "quantity": 84,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2024-06-18 07:57:10",
+            "quantity": 94,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2024-02-27 08:33:03",
+            "quantity": 84,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2024-01-16 15:04:03",
+            "quantity": 84,
+            "price_unit": 17.7
+          },
+          {
+            "date": "2023-11-21 14:50:48",
+            "quantity": 42,
+            "price_unit": 17.7
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 1313.28,
+    "optional_amount": 0,
+    "total_amount": 1313.28,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2961
+}

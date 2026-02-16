@@ -1,0 +1,30 @@
+{
+  "clientId": 59011,
+  "clientName": "Reuländer Backwaren STI'NE",
+  "orderName": "S39588",
+  "orderDate": "2025-10-07 07:01:44",
+  "cutoffDate": "2025-10-06 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 32,
+    "fn": 0,
+    "precision": 0.15789473684210525,
+    "recall": 1,
+    "f1Score": 0.2727272727272727,
+    "mae": 0.3333333333333333,
+    "wmape": 33.33333333333333,
+    "mape": 33.333333333333336,
+    "bias": 33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 53,
+    "promptTokens": 46623,
+    "completionTokens": 8017,
+    "totalTokens": 54640
+  }
+}

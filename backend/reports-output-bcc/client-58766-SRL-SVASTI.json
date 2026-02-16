@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:28:48.356Z"
+  },
+  "client": {
+    "id": 58766,
+    "name": "SRL SVASTI"
+  },
+  "config": {
+    "analysisEndDate": "2025-05-07 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 2,
+      "llm_usage": {
+        "calls": 2,
+        "promptTokens": 1731,
+        "completionTokens": 301,
+        "totalTokens": 2032
+      }
+    },
+    "proposalFinal": {
+      "products_count": 2,
+      "total_amount": 300,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 204,
+        "minimum_required": 300,
+        "gap_filled": 96,
+        "products_adjusted": 2
+      }
+    }
+  },
+  "products": {
+    "base": [],
+    "optional": [
+      {
+        "product_id": 17819,
+        "product_name": "[LC002] LC Coffret Découverte",
+        "product_uom": "TU1",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 18,
+        "subtotal": 90,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à 146 jours (12/12/2024). Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement tout cycle de rotation standard en B2B. En application du principe de précaution (Étape 1), un besoin est détecté car l'absence de commande récente suggère un risque de rupture de stock ou un besoin de réassort imminent. Pour la quantité (Étape 2), on se base sur l'unique point de donnée disponible (3 unités), ce qui constitue la médiane de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-12 10:59:32",
+            "quantity": 3,
+            "price_unit": 18
+          }
+        ]
+      },
+      {
+        "product_id": 17818,
+        "product_name": "[LC001] LC Coffret Exploration ",
+        "product_uom": "TU1",
+        "quantity_recommended": 7,
+        "quantity_source": "llm",
+        "price_unit": 30,
+        "subtotal": 210,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 12 décembre 2024, soit environ 146 jours. Bien que l'historique soit limité à une seule commande, l'absence de réapprovisionnement sur une période aussi longue pour un produit de type \"Coffret\" suggère un risque de rupture ou un besoin de renouvellement de stock pour couvrir les 30 prochains jours. En application du principe de précaution B2B (cycle incertain = prévoir), une commande est déclenchée. ÉTAPE 2 : Estimation quantité. En l'absence de données multiples, on se base sur la seule valeur historique disponible (5u) pour maintenir le niveau de stock initial.",
+          "summary": "",
+          "baseline_quantity": 5,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-12 10:59:32",
+            "quantity": 5,
+            "price_unit": 30
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 0,
+    "optional_products_count": 2,
+    "base_amount": 0,
+    "optional_amount": 300,
+    "total_amount": 300,
+    "moq_adjusted": true,
+    "moq_gap": 96
+  },
+  "execution_time_ms": 3430
+}

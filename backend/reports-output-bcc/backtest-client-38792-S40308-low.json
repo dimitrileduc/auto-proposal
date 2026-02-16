@@ -1,0 +1,30 @@
+{
+  "clientId": 38792,
+  "clientName": "DLL AD BÜLLINGEN DELVITH AG",
+  "orderName": "S40308",
+  "orderDate": "2025-11-13 10:14:42",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.4,
+    "recall": 1,
+    "f1Score": 0.5714285714285715,
+    "mae": 2.5,
+    "wmape": 62.5,
+    "mape": 62.5,
+    "bias": -62.5
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 26841,
+    "completionTokens": 4752,
+    "totalTokens": 31593
+  }
+}

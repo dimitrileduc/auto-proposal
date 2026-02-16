@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:19:39.768Z"
+  },
+  "client": {
+    "id": 80,
+    "name": "L'Epicerie du Nord-Produits en vrac"
+  },
+  "config": {
+    "analysisEndDate": "2025-05-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 5,
+      "llm_usage": {
+        "calls": 5,
+        "promptTokens": 4558,
+        "completionTokens": 788,
+        "totalTokens": 5346
+      }
+    },
+    "proposalFinal": {
+      "products_count": 5,
+      "total_amount": 344.09999999999997,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 13646,
+        "product_name": "[LB003] LB Festive (4,5%) 33CL",
+        "product_uom": "TU24",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 40.08,
+        "subtotal": 80.16,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 17 février 2025, soit 83 jours. Bien que le cycle historique soit irrégulier, le délai écoulé dépasse largement les intervalles observés précédemment. En application du principe de précaution B2B (si doute sur le cycle → prévoir), un besoin de réapprovisionnement est identifié pour couvrir les 30 prochains jours. ÉTAPE 2 : Estimation quantité. L'historique récent montre une stabilité parfaite avec deux commandes successives de 2 unités. La médiane des commandes récentes est de 2. Conformément à la règle de maintien des rotations régulières, la quantité retenue est de 2 unités.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-09-11 08:47:16",
+            "quantity": 1,
+            "price_unit": 40.08
+          },
+          {
+            "date": "2024-08-08 06:26:30",
+            "quantity": 1,
+            "price_unit": 40.08
+          },
+          {
+            "date": "2024-05-13 12:00:38",
+            "quantity": 2,
+            "price_unit": 40.08
+          },
+          {
+            "date": "2024-03-22 14:05:42",
+            "quantity": 2,
+            "price_unit": 40.08
+          },
+          {
+            "date": "2023-12-05 08:12:25",
+            "quantity": 1,
+            "price_unit": 40.08
+          }
+        ]
+      },
+      {
+        "product_id": 13644,
+        "product_name": "[LB004] LB Blonde (6,5%) 33CL",
+        "product_uom": "TU24",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 42.08,
+        "subtotal": 84.16,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 17 février 2025, soit 83 jours avant la date actuelle (11 mai). Le cycle précédent était de 21 jours. Bien que l'historique soit espacé, le délai actuel dépasse largement le cycle habituel et l'historique N-1 montre une activité en mars/mai. Par principe de précaution B2B et pour éviter une rupture prolongée sur un produit à rotation lente mais existante, un réapprovisionnement est nécessaire. ÉTAPE 2 : Estimation de la quantité. La médiane des commandes récentes (2u, 2u) et de l'historique N-1 (2u) est de 2 unités. On maintient ce volume stable conformément à la règle des rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-09-11 08:47:16",
+            "quantity": 3,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2024-08-08 06:26:30",
+            "quantity": 2,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2024-05-13 12:00:38",
+            "quantity": 2,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2024-03-22 14:05:42",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2023-12-05 08:12:25",
+            "quantity": 2,
+            "price_unit": 42.08
+          }
+        ]
+      },
+      {
+        "product_id": 13643,
+        "product_name": "[LB005] LB Amber (5,2%) 33CL",
+        "product_uom": "TU24",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 42.08,
+        "subtotal": 42.08,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Le cycle moyen observé entre les deux dernières commandes est de 21 jours. La dernière commande remonte au 17 février 2025, soit 83 jours avant la date actuelle. Bien que le cycle habituel soit largement dépassé, le principe de précaution B2B impose de prévoir une commande pour couvrir le risque de rupture, d'autant plus que le produit montre une activité récente en 2025. ÉTAPE 2 : L'historique récent (janvier et février 2025) ainsi que l'historique N-1 indiquent une quantité constante de 1 unité. La médiane est de 1. Conformément à la règle sur les rotations faibles, on maintient la quantité de 1 unité sans augmentation.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-17 12:46:35",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2025-01-27 07:53:00",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2024-09-11 08:47:16",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2024-05-13 12:00:38",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2023-12-05 08:12:25",
+            "quantity": 1,
+            "price_unit": 42.08
+          }
+        ]
+      },
+      {
+        "product_id": 13642,
+        "product_name": "[LB002] LB Blonde 75 CL (6,5%)",
+        "product_uom": "TU12",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 47.81,
+        "subtotal": 95.62,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle d'environ 21 jours entre les deux dernières commandes (27/01 au 17/02). Depuis la dernière commande du 17 février, plus de 80 jours se sont écoulés, ce qui dépasse largement le cycle habituel et le seuil de réapprovisionnement de 30 jours. Bien que la rotation soit faible, le principe de précaution B2B impose de prévoir un réapprovisionnement pour éviter une rupture prolongée. La quantité retenue est de 2 unités, correspondant à la médiane constante observée sur l'historique récent et N-1.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-09-11 08:47:16",
+            "quantity": 1,
+            "price_unit": 47.81
+          },
+          {
+            "date": "2024-08-08 06:26:30",
+            "quantity": 1,
+            "price_unit": 47.81
+          },
+          {
+            "date": "2024-05-13 12:00:38",
+            "quantity": 3,
+            "price_unit": 47.81
+          },
+          {
+            "date": "2024-03-22 14:05:42",
+            "quantity": 2,
+            "price_unit": 47.81
+          },
+          {
+            "date": "2023-12-05 08:12:25",
+            "quantity": 2,
+            "price_unit": 47.81
+          }
+        ]
+      },
+      {
+        "product_id": 13647,
+        "product_name": "[LB006] LB Brown (7,0%)  33CL",
+        "product_uom": "TU24",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 42.08,
+        "subtotal": 42.08,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 27 janvier 2025, soit plus de 100 jours. Bien que la rotation soit très faible (1 unité par commande), le délai écoulé dépasse largement les cycles historiques observés (environ 3-4 mois). En application du principe de précaution B2B et pour éviter une rupture sur un produit à rotation lente mais constante, un réapprovisionnement est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane stricte de l'historique récent et passé.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-01-27 07:53:00",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2024-08-08 06:26:30",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2024-03-22 14:05:42",
+            "quantity": 1,
+            "price_unit": 42.08
+          },
+          {
+            "date": "2023-12-05 08:12:25",
+            "quantity": 1,
+            "price_unit": 42.08
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 5,
+    "optional_products_count": 0,
+    "base_amount": 344.09999999999997,
+    "optional_amount": 0,
+    "total_amount": 344.09999999999997,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2968
+}

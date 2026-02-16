@@ -1,0 +1,30 @@
+{
+  "clientId": 39074,
+  "clientName": "SPAR MINI MARKET TELLIN TELLIN",
+  "orderName": "S39657",
+  "orderDate": "2025-10-14 06:44:53",
+  "cutoffDate": "2025-10-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 7,
+    "fn": 1,
+    "precision": 0.5882352941176471,
+    "recall": 0.9090909090909091,
+    "f1Score": 0.7142857142857143,
+    "mae": 0.2,
+    "wmape": 14.285714285714285,
+    "mape": 15,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 19,
+    "promptTokens": 16858,
+    "completionTokens": 2891,
+    "totalTokens": 19749
+  }
+}

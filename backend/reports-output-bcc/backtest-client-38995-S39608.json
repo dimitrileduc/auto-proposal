@@ -1,0 +1,30 @@
+{
+  "clientId": 38995,
+  "clientName": "MASETTI",
+  "orderName": "S39608",
+  "orderDate": "2025-10-08 06:19:58",
+  "cutoffDate": "2025-10-07 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 24,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.7741935483870968,
+    "recall": 1,
+    "f1Score": 0.8727272727272727,
+    "mae": 3.7083333333333335,
+    "wmape": 36.92946058091287,
+    "mape": 63.81944444444445,
+    "bias": 17.842323651452283
+  },
+  "distribution": {
+    "exactMatch": 8,
+    "partialMatch": 16
+  },
+  "llmUsage": {
+    "calls": 31,
+    "promptTokens": 30841,
+    "completionTokens": 5507,
+    "totalTokens": 36348
+  }
+}

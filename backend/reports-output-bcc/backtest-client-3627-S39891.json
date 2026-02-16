@@ -1,0 +1,30 @@
+{
+  "clientId": 3627,
+  "clientName": "LBF FRITERIE CENTRAL",
+  "orderName": "S39891",
+  "orderDate": "2025-10-23 19:14:56",
+  "cutoffDate": "2025-10-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8333333333333334,
+    "recall": 1,
+    "f1Score": 0.9090909090909091,
+    "mae": 1.6,
+    "wmape": 20,
+    "mape": 24.345238095238095,
+    "bias": 15
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5870,
+    "completionTokens": 1027,
+    "totalTokens": 6897
+  }
+}

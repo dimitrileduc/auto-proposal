@@ -1,0 +1,30 @@
+{
+  "clientId": 23709,
+  "clientName": "L'Apero By Antoine",
+  "orderName": "S38438",
+  "orderDate": "2025-08-11 06:52:57",
+  "cutoffDate": "2025-08-10 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8333333333333334,
+    "recall": 1,
+    "f1Score": 0.9090909090909091,
+    "mae": 1.6,
+    "wmape": 47.05882352941176,
+    "mape": 46.666666666666664,
+    "bias": -23.52941176470588
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5341,
+    "completionTokens": 886,
+    "totalTokens": 6227
+  }
+}

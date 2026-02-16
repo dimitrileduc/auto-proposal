@@ -1,0 +1,30 @@
+{
+  "clientId": 73943,
+  "clientName": "Coopérative de la Côte Rouge",
+  "orderName": "S39799",
+  "orderDate": "2025-10-29 11:27:57",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 7,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0.7142857142857143,
+    "wmape": 45.45454545454545,
+    "mape": 47.61904761904761,
+    "bias": -9.090909090909092
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12235,
+    "completionTokens": 2053,
+    "totalTokens": 14288
+  }
+}

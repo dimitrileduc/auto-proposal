@@ -1,0 +1,30 @@
+{
+  "clientId": 3724,
+  "clientName": "BOUCHERIE SCHNEIDER",
+  "orderName": "S40222",
+  "orderDate": "2025-11-10 08:02:33",
+  "cutoffDate": "2025-11-09 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 3.6666666666666665,
+    "wmape": 28.947368421052634,
+    "mape": 31.773399014778324,
+    "bias": -28.947368421052634
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 3,
+    "promptTokens": 2801,
+    "completionTokens": 543,
+    "totalTokens": 3344
+  }
+}

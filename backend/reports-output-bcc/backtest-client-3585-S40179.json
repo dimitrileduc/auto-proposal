@@ -1,0 +1,30 @@
+{
+  "clientId": 3585,
+  "clientName": "ILIS    SA",
+  "orderName": "S40179",
+  "orderDate": "2025-11-06 14:07:11",
+  "cutoffDate": "2025-11-05 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8333333333333334,
+    "recall": 1,
+    "f1Score": 0.9090909090909091,
+    "mae": 62.8,
+    "wmape": 50.80906148867314,
+    "mape": 49.13636363636364,
+    "bias": -45.63106796116505
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 7430,
+    "completionTokens": 1330,
+    "totalTokens": 8760
+  }
+}

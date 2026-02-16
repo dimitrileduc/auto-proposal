@@ -1,0 +1,30 @@
+{
+  "clientId": 17296,
+  "clientName": "CARREFOUR BELGIUM SA, Hyper Zemst",
+  "orderName": "S38816",
+  "orderDate": "2025-08-28 06:12:57",
+  "cutoffDate": "2025-08-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 18,
+    "fn": 0,
+    "precision": 0.21739130434782608,
+    "recall": 1,
+    "f1Score": 0.3571428571428571,
+    "mae": 1.6,
+    "wmape": 66.66666666666666,
+    "mape": 99.99999999999999,
+    "bias": 66.66666666666666
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 20089,
+    "completionTokens": 3460,
+    "totalTokens": 23549
+  }
+}

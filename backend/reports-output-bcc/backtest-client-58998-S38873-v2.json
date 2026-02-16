@@ -1,0 +1,570 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:07:33.381Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-08-28 00:00:00"
+    }
+  },
+  "client": {
+    "id": 58998,
+    "name": "VITAFRAIS SAS",
+    "order": {
+      "name": "S38873",
+      "date": "2025-08-29 11:55:17"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 4,
+        "falseNegatives": 1,
+        "total": 7
+      },
+      "productMetrics": {
+        "precision": 0.3333333333333333,
+        "recall": 0.6666666666666666,
+        "f1Score": 0.4444444444444444,
+        "totalPredicted": 6,
+        "totalReal": 3
+      },
+      "quantityMetrics": {
+        "mae": 25,
+        "wmape": 50,
+        "mape": 33.33333333333333,
+        "bias": -50,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 1
+        },
+        "rmse": 35.35533905932738
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 1,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 3,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 3,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 1,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1Score": 0.8,
+          "totalPredicted": 3,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 25,
+          "wmape": 50,
+          "mape": 33.33333333333333,
+          "bias": -50,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 1
+          },
+          "rmse": 35.35533905932738
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5390,
+    "completionTokens": 1064,
+    "totalTokens": 6454
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9182,
+        "productName": "[PF1694] LD FR TARTINAD BIO POIVRON 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 25,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 75
+        },
+        "error": {
+          "absolute": 50,
+          "percent": 66.66666666666666,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 10,
+          "orders": [
+            {
+              "orderId": 90405,
+              "orderName": "S38528",
+              "date": "2025-08-14 12:24:53",
+              "quantity": 25,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 90281,
+              "orderName": "S38404",
+              "date": "2025-08-07 12:21:11",
+              "quantity": 50,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 88961,
+              "orderName": "S37084",
+              "date": "2025-06-02 12:59:55",
+              "quantity": 25,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 86956,
+              "orderName": "S35079",
+              "date": "2025-02-25 14:44:13",
+              "quantity": 25,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 86566,
+              "orderName": "S34689",
+              "date": "2025-02-05 09:57:44",
+              "quantity": 75,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 86461,
+              "orderName": "S34584",
+              "date": "2025-01-29 13:29:46",
+              "quantity": 50,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 86189,
+              "orderName": "S34312",
+              "date": "2025-01-14 13:16:18",
+              "quantity": 50,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 86165,
+              "orderName": "S34288",
+              "date": "2025-01-13 14:11:48",
+              "quantity": 50,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 86050,
+              "orderName": "S34173",
+              "date": "2025-01-08 10:20:58",
+              "quantity": 25,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 85820,
+              "orderName": "S33943",
+              "date": "2024-12-18 08:22:30",
+              "quantity": 31,
+              "priceUnit": 9.3
+            }
+          ],
+          "statistics": {
+            "mean": 40.6,
+            "median": 41,
+            "stdDev": 16.131955864060625,
+            "min": 25,
+            "max": 75,
+            "cv": 0.39733881438572966,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.36159671136856214
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 26.5696283436214,
+            "lastOrderDaysAgo": 13.482719907407407,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 9070,
+        "productName": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 25,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 25
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 90405,
+              "orderName": "S38528",
+              "date": "2025-08-14 12:24:53",
+              "quantity": 25,
+              "priceUnit": 9.6
+            },
+            {
+              "orderId": 86566,
+              "orderName": "S34689",
+              "date": "2025-02-05 09:57:44",
+              "quantity": 125,
+              "priceUnit": 9.6
+            },
+            {
+              "orderId": 86461,
+              "orderName": "S34584",
+              "date": "2025-01-29 13:29:46",
+              "quantity": 50,
+              "priceUnit": 9.6
+            },
+            {
+              "orderId": 86189,
+              "orderName": "S34312",
+              "date": "2025-01-14 13:16:18",
+              "quantity": 25,
+              "priceUnit": 9.6
+            },
+            {
+              "orderId": 86050,
+              "orderName": "S34173",
+              "date": "2025-01-08 10:20:58",
+              "quantity": 25,
+              "priceUnit": 9.6
+            },
+            {
+              "orderId": 85820,
+              "orderName": "S33943",
+              "date": "2024-12-18 08:22:30",
+              "quantity": 52,
+              "priceUnit": 9.3
+            }
+          ],
+          "statistics": {
+            "mean": 50.333333333333336,
+            "median": 38,
+            "stdDev": 35.36319492856316,
+            "min": 25,
+            "max": 125,
+            "cv": 0.7025800316933077,
+            "trend": "decreasing",
+            "outliers": [
+              125
+            ],
+            "regularityScore": 0.17845198098401535
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 47.82533101851852,
+            "lastOrderDaysAgo": 13.482719907407407,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 9184,
+        "productName": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+        "mismatchType": "false_positive",
+        "quantity": 50,
+        "reason": "Predicted 50u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 9,
+            "lastOrderDaysAgo": 13,
+            "orders": [
+              {
+                "orderId": 90405,
+                "orderName": "S38528",
+                "date": "2025-08-14 12:24:53",
+                "quantity": 100,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 90281,
+                "orderName": "S38404",
+                "date": "2025-08-07 12:21:11",
+                "quantity": 25,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 88961,
+                "orderName": "S37084",
+                "date": "2025-06-02 12:59:55",
+                "quantity": 50,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 86566,
+                "orderName": "S34689",
+                "date": "2025-02-05 09:57:44",
+                "quantity": 100,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 86461,
+                "orderName": "S34584",
+                "date": "2025-01-29 13:29:46",
+                "quantity": 50,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 86189,
+                "orderName": "S34312",
+                "date": "2025-01-14 13:16:18",
+                "quantity": 50,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 86165,
+                "orderName": "S34288",
+                "date": "2025-01-13 14:11:48",
+                "quantity": 100,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 86050,
+                "orderName": "S34173",
+                "date": "2025-01-08 10:20:58",
+                "quantity": 50,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 85820,
+                "orderName": "S33943",
+                "date": "2024-12-18 08:22:30",
+                "quantity": 16,
+                "priceUnit": 9.3
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14602,
+        "productName": "[PF3246] AA0105 - LD FR TARTINADE BIO TOSCANE 180G",
+        "mismatchType": "false_positive",
+        "quantity": 25,
+        "reason": "Predicted 25u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 13,
+            "orders": [
+              {
+                "orderId": 90405,
+                "orderName": "S38528",
+                "date": "2025-08-14 12:24:53",
+                "quantity": 25,
+                "priceUnit": 10.2
+              },
+              {
+                "orderId": 88961,
+                "orderName": "S37084",
+                "date": "2025-06-02 12:59:55",
+                "quantity": 25,
+                "priceUnit": 10.2
+              },
+              {
+                "orderId": 86461,
+                "orderName": "S34584",
+                "date": "2025-01-29 13:29:46",
+                "quantity": 25,
+                "priceUnit": 10.2
+              },
+              {
+                "orderId": 86165,
+                "orderName": "S34288",
+                "date": "2025-01-13 14:11:48",
+                "quantity": 25,
+                "priceUnit": 10.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9180,
+        "productName": "[PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 25,
+        "reason": "Predicted 25u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 20,
+            "orders": [
+              {
+                "orderId": 90281,
+                "orderName": "S38404",
+                "date": "2025-08-07 12:21:11",
+                "quantity": 25,
+                "priceUnit": 10.2
+              },
+              {
+                "orderId": 88961,
+                "orderName": "S37084",
+                "date": "2025-06-02 12:59:55",
+                "quantity": 50,
+                "priceUnit": 10.2
+              },
+              {
+                "orderId": 86165,
+                "orderName": "S34288",
+                "date": "2025-01-13 14:11:48",
+                "quantity": 25,
+                "priceUnit": 10.2
+              },
+              {
+                "orderId": 85820,
+                "orderName": "S33943",
+                "date": "2024-12-18 08:22:30",
+                "quantity": 14,
+                "priceUnit": 9.9
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9187,
+        "productName": "[PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML",
+        "mismatchType": "false_positive",
+        "quantity": 40,
+        "reason": "Predicted 40u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 20,
+            "orders": [
+              {
+                "orderId": 90281,
+                "orderName": "S38404",
+                "date": "2025-08-07 12:21:11",
+                "quantity": 40,
+                "priceUnit": 13.2
+              },
+              {
+                "orderId": 86189,
+                "orderName": "S34312",
+                "date": "2025-01-14 13:16:18",
+                "quantity": 40,
+                "priceUnit": 13.2
+              },
+              {
+                "orderId": 85820,
+                "orderName": "S33943",
+                "date": "2024-12-18 08:22:30",
+                "quantity": 2,
+                "priceUnit": 12.9
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 9181,
+        "productName": "[PF1693] LD FR TARTINAD BIO CAROTTE 200",
+        "mismatchType": "false_negative",
+        "quantity": 75,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      }
+    ]
+  }
+}

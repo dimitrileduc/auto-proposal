@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:11:14.778Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-29 00:00:00"
+    }
+  },
+  "client": {
+    "id": 3886,
+    "name": "LASSELIN  ETS.",
+    "order": {
+      "name": "S40024",
+      "date": "2025-10-30 12:01:24"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 1,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 1
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 1,
+        "totalReal": 1
+      },
+      "quantityMetrics": {
+        "mae": 0,
+        "wmape": 0,
+        "mape": 0,
+        "bias": 0,
+        "distribution": {
+          "exactMatch": 1,
+          "partialMatch": 0
+        },
+        "rmse": 0
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 1,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 1,
+    "promptTokens": 980,
+    "completionTokens": 195,
+    "totalTokens": 1175
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9029,
+        "productName": "[PF0516] YVALLI PROVENCALE 2,5 KG BOC",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 48,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 48
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 91508,
+              "orderName": "S39631",
+              "date": "2025-10-08 16:17:17",
+              "quantity": 48,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 89507,
+              "orderName": "S37630",
+              "date": "2025-06-24 12:58:07",
+              "quantity": 48,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 88044,
+              "orderName": "S36167",
+              "date": "2025-04-14 14:07:32",
+              "quantity": 48,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 87589,
+              "orderName": "S35712",
+              "date": "2025-03-31 08:57:01",
+              "quantity": 48,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 86469,
+              "orderName": "S34592",
+              "date": "2025-01-30 07:45:40",
+              "quantity": 48,
+              "priceUnit": 45.12
+            },
+            {
+              "orderId": 85344,
+              "orderName": "S33467",
+              "date": "2024-11-22 12:48:35",
+              "quantity": 48,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 84146,
+              "orderName": "S32269",
+              "date": "2024-09-16 11:40:06",
+              "quantity": 72,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 82559,
+              "orderName": "S30682",
+              "date": "2024-06-07 09:11:25",
+              "quantity": 48,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 80912,
+              "orderName": "S29035",
+              "date": "2024-02-21 13:34:22",
+              "quantity": 72,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 80522,
+              "orderName": "S28645",
+              "date": "2024-01-23 12:14:03",
+              "quantity": 48,
+              "priceUnit": 42
+            },
+            {
+              "orderId": 80521,
+              "orderName": "S28644",
+              "date": "2024-01-23 12:13:34",
+              "quantity": 10,
+              "priceUnit": 42
+            }
+          ],
+          "statistics": {
+            "mean": 48.90909090909091,
+            "median": 48,
+            "stdDev": 15.335369370152396,
+            "min": 10,
+            "max": 72,
+            "cv": 0.31354844437114565,
+            "trend": "stable",
+            "outliers": [
+              72,
+              72,
+              10
+            ],
+            "regularityScore": 0.5821377471107688
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 62.41275810185185,
+            "lastOrderDaysAgo": 20.362997685185185,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

@@ -1,0 +1,657 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:03:47.545Z"
+  },
+  "client": {
+    "id": 17251,
+    "name": "CARREFOUR BELGIUM SA, CD Carrefour Kontich"
+  },
+  "config": {
+    "analysisEndDate": "2025-11-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 14,
+      "llm_usage": {
+        "calls": 14,
+        "promptTokens": 15154,
+        "completionTokens": 2308,
+        "totalTokens": 17462
+      }
+    },
+    "proposalFinal": {
+      "products_count": 14,
+      "total_amount": 35601.840000000004,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 8999,
+        "product_name": "[PF01012] CARREFOUR VOL AU VENT 400 GR",
+        "product_uom": "TU12",
+        "quantity_recommended": 192,
+        "quantity_source": "llm",
+        "price_unit": 21.88,
+        "subtotal": 4200.96,
+        "confidence": "high",
+        "order_count": 95,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière (environ tous les 3 à 7 jours). La dernière commande datant du 02/11/2025, soit il y a 9 jours, le seuil de réapprovisionnement de 30 jours est largement atteint, créant un risque de rupture imminent. En appliquant la règle de la médiane sur l'historique récent (valeurs : 96, 96, 96, 96, 192, 192, 192, 192), la médiane se situe entre 96 et 192. Conformément au principe de précaution B2B et à la récurrence forte du volume de 192u constatée tant sur la période actuelle que sur l'historique N-1, la quantité de 192u est retenue pour couvrir les besoins du prochain cycle.",
+          "summary": "",
+          "baseline_quantity": 192,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-12-04 12:42:18",
+            "quantity": 384,
+            "price_unit": 21
+          },
+          {
+            "date": "2023-12-04 12:39:56",
+            "quantity": 480,
+            "price_unit": 21
+          },
+          {
+            "date": "2023-11-29 09:59:59",
+            "quantity": 192,
+            "price_unit": 21.36
+          },
+          {
+            "date": "2023-11-24 08:43:43",
+            "quantity": 288,
+            "price_unit": 21.36
+          },
+          {
+            "date": "2023-11-15 12:30:05",
+            "quantity": 96,
+            "price_unit": 21.36
+          }
+        ]
+      },
+      {
+        "product_id": 17773,
+        "product_name": "[PF3339] CARRE MAYONNAISE ANCIENNE 500ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 96,
+        "quantity_source": "llm",
+        "price_unit": 15.72,
+        "subtotal": 1509.1200000000001,
+        "confidence": "high",
+        "order_count": 38,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande hebdomadaire (tous les mardis en octobre), avec une accélération notable fin octobre/début novembre (commandes les 28, 31 et 02). La dernière commande remonte au 02 novembre, soit il y a 9 jours. Étant donné que le cycle habituel est de 7 jours ou moins, nous sommes au-delà de l'intervalle de réapprovisionnement attendu, ce qui confirme un besoin immédiat pour couvrir les 30 prochains jours. La quantité est calculée selon la médiane stricte des commandes récentes, qui est de 96 unités de manière constante.",
+          "summary": "",
+          "baseline_quantity": 96,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-12-09 08:01:27",
+            "quantity": 192,
+            "price_unit": 15.72
+          },
+          {
+            "date": "2024-11-27 07:45:24",
+            "quantity": 96,
+            "price_unit": 15.72
+          },
+          {
+            "date": "2024-11-25 15:06:29",
+            "quantity": 96,
+            "price_unit": 15.72
+          },
+          {
+            "date": "2024-11-19 10:35:18",
+            "quantity": 96,
+            "price_unit": 15.72
+          },
+          {
+            "date": "2024-11-13 11:56:05",
+            "quantity": 96,
+            "price_unit": 15.72
+          }
+        ]
+      },
+      {
+        "product_id": 14410,
+        "product_name": "[PF3225] CARREFOUR CARBONNADES 680 GR PAR 8",
+        "product_uom": "TU8",
+        "quantity_recommended": 108,
+        "quantity_source": "llm",
+        "price_unit": 31.12,
+        "subtotal": 3360.96,
+        "confidence": "high",
+        "order_count": 89,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une activité intense fin octobre avec des fréquences de 2 à 3 jours. La dernière commande date du 02/11, soit il y a 9 jours. Étant donné le seuil de réapprovisionnement de 30 jours et la forte rotation observée (plusieurs commandes de 108u et 216u), le risque de rupture est élevé. Le cycle historique suggère un besoin imminent. La quantité retenue est de 108 unités, correspondant à la médiane des commandes récentes et au volume standard récurrent, conformément au principe de précaution B2B sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 108,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-12-04 12:42:18",
+            "quantity": 324,
+            "price_unit": 26.8
+          },
+          {
+            "date": "2023-12-04 12:39:56",
+            "quantity": 324,
+            "price_unit": 26.8
+          },
+          {
+            "date": "2023-11-29 09:59:59",
+            "quantity": 108,
+            "price_unit": 26.4
+          },
+          {
+            "date": "2023-11-24 08:43:43",
+            "quantity": 216,
+            "price_unit": 26.4
+          },
+          {
+            "date": "2023-11-15 12:30:05",
+            "quantity": 108,
+            "price_unit": 26.4
+          }
+        ]
+      },
+      {
+        "product_id": 17777,
+        "product_name": "[PF3340] CARRE MAYONNAISE BELGE 720ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 80,
+        "quantity_source": "llm",
+        "price_unit": 21.36,
+        "subtotal": 1708.8,
+        "confidence": "high",
+        "order_count": 48,
+        "llm_prediction": {
+          "reasoning": "L'historique récent montre une rotation régulière avec des commandes effectuées environ tous les 7 à 10 jours (21 oct, 28 oct, 31 oct, 02 nov). La dernière commande remontant au 2 novembre (soit 9 jours avant la date actuelle), le cycle moyen est atteint. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent. La quantité de 80 unités correspond à la médiane stricte et à la valeur la plus fréquente des commandes récentes, les pics à 160 unités étant considérés comme exceptionnels.",
+          "summary": "",
+          "baseline_quantity": 80,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-25 15:06:29",
+            "quantity": 80,
+            "price_unit": 21.36
+          },
+          {
+            "date": "2024-11-25 15:05:30",
+            "quantity": 80,
+            "price_unit": 21.36
+          },
+          {
+            "date": "2024-11-25 15:04:32",
+            "quantity": 80,
+            "price_unit": 21.36
+          },
+          {
+            "date": "2024-11-19 10:35:18",
+            "quantity": 80,
+            "price_unit": 21.36
+          },
+          {
+            "date": "2024-11-13 11:56:05",
+            "quantity": 80,
+            "price_unit": 21.36
+          }
+        ]
+      },
+      {
+        "product_id": 17811,
+        "product_name": "[PF3343] SIMPL CARRE VOL AU VENT 800 GR",
+        "product_uom": "TU8",
+        "quantity_recommended": 96,
+        "quantity_source": "llm",
+        "price_unit": 22.72,
+        "subtotal": 2181.12,
+        "confidence": "high",
+        "order_count": 48,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre une fréquence de commande élevée (tous les 2 à 7 jours). La dernière commande datant du 02/11/2025 (soit il y a 9 jours), le risque de rupture est imminent dans l'horizon des 30 jours de seuil de réapprovisionnement. Le cycle moyen est largement dépassé. Concernant la quantité, bien que des pics à 192u soient visibles, la valeur la plus fréquente et la médiane des commandes unitaires est de 96u. En application du principe de précaution B2B et de la règle de la médiane pour éviter le surstockage, une commande de 96u est préconisée.",
+          "summary": "",
+          "baseline_quantity": 96,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-01-14 09:31:55",
+            "quantity": 96,
+            "price_unit": 21.2
+          },
+          {
+            "date": "2024-11-27 07:30:15",
+            "quantity": 288,
+            "price_unit": 21.2
+          },
+          {
+            "date": "2024-11-27 07:29:49",
+            "quantity": 288,
+            "price_unit": 21.2
+          },
+          {
+            "date": "2024-11-27 07:29:18",
+            "quantity": 192,
+            "price_unit": 21.2
+          },
+          {
+            "date": "2024-11-13 11:56:05",
+            "quantity": 288,
+            "price_unit": 21.2
+          }
+        ]
+      },
+      {
+        "product_id": 14415,
+        "product_name": "[PF3229] CARREFOUR VOL AU VENT BOCAL 800 GR",
+        "product_uom": "TU8",
+        "quantity_recommended": 192,
+        "quantity_source": "llm",
+        "price_unit": 24.53,
+        "subtotal": 4709.76,
+        "confidence": "high",
+        "order_count": 98,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une accélération récente avec des commandes fréquentes entre le 28 octobre et le 2 novembre (tous les 2-3 jours). Depuis la dernière commande du 2 novembre, 9 jours se sont écoulés. Bien que le cycle historique soit plus long, la densité des commandes fin octobre indique un besoin imminent pour couvrir les 30 prochains jours (Replenishment Threshold Days). En application du principe de précaution B2B, un risque de rupture est identifié. La quantité retenue est de 192 unités, ce qui correspond à la médiane et à la valeur la plus fréquente des commandes récentes, tout en ignorant les pics exceptionnels de l'année précédente (864u) pour éviter le surstockage.",
+          "summary": "",
+          "baseline_quantity": 192,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2023-12-04 12:42:18",
+            "quantity": 288,
+            "price_unit": 23.36
+          },
+          {
+            "date": "2023-12-04 12:39:56",
+            "quantity": 384,
+            "price_unit": 23.36
+          },
+          {
+            "date": "2023-11-29 09:59:59",
+            "quantity": 96,
+            "price_unit": 24.56
+          },
+          {
+            "date": "2023-11-24 10:56:31",
+            "quantity": 384,
+            "price_unit": 24.56
+          },
+          {
+            "date": "2023-11-24 08:43:43",
+            "quantity": 288,
+            "price_unit": 24.56
+          }
+        ]
+      },
+      {
+        "product_id": 17868,
+        "product_name": "[PF3348] CARRE BOULETTES TOMATE 680 GR PAR 8",
+        "product_uom": "TU8",
+        "quantity_recommended": 108,
+        "quantity_source": "llm",
+        "price_unit": 17.6,
+        "subtotal": 1900.8000000000002,
+        "confidence": "high",
+        "order_count": 26,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière (environ tous les 3 à 14 jours). La dernière commande remonte au 02/11, soit il y a 9 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent car nous dépassons le cycle moyen constaté en octobre. La quantité historique est extrêmement stable à 108 unités (médiane parfaite), le pic de 216 unités étant considéré comme exceptionnel. En application du principe de précaution B2B et de la règle de la médiane, une commande de 108 unités est nécessaire.",
+          "summary": "",
+          "baseline_quantity": 108,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-04 14:47:13",
+            "quantity": 108,
+            "price_unit": 17.6
+          },
+          {
+            "date": "2025-02-18 09:40:50",
+            "quantity": 108,
+            "price_unit": 17.6
+          },
+          {
+            "date": "2025-02-11 12:28:38",
+            "quantity": 108,
+            "price_unit": 17.6
+          },
+          {
+            "date": "2025-02-10 09:50:11",
+            "quantity": 216,
+            "price_unit": 17.6
+          },
+          {
+            "date": "2025-01-28 10:16:17",
+            "quantity": 108,
+            "price_unit": 17.6
+          }
+        ]
+      },
+      {
+        "product_id": 9370,
+        "product_name": "[PF1952] CARRE VIN CIBOULET PET 450",
+        "product_uom": "TU12",
+        "quantity_recommended": 98,
+        "quantity_source": "llm",
+        "price_unit": 12.48,
+        "subtotal": 1223.04,
+        "confidence": "high",
+        "order_count": 78,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre une accélération de la fréquence de commande en octobre et début novembre (tous les 2 à 3 jours sur les dernières occurrences), contre un cycle initial de 14 jours. La dernière commande datant du 02/11 (soit 9 jours avant la date actuelle), le risque de rupture est imminent compte tenu du seuil de réapprovisionnement de 30 jours et de la rotation actuelle. La quantité est fixée à 98 unités, correspondant à la médiane stricte et constante de l'historique récent et de l'année précédente.",
+          "summary": "",
+          "baseline_quantity": 98,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-01-17 09:28:35",
+            "quantity": 98,
+            "price_unit": 14.04
+          },
+          {
+            "date": "2023-12-04 14:40:11",
+            "quantity": 98,
+            "price_unit": 14.04
+          },
+          {
+            "date": "2023-12-04 12:42:18",
+            "quantity": 196,
+            "price_unit": 14.04
+          },
+          {
+            "date": "2023-12-04 12:39:56",
+            "quantity": 98,
+            "price_unit": 14.04
+          },
+          {
+            "date": "2023-11-24 08:43:43",
+            "quantity": 98,
+            "price_unit": 14.04
+          }
+        ]
+      },
+      {
+        "product_id": 17812,
+        "product_name": "[PF3344] SIMPL CARRE CARBONNADES 800 GR PAR 8",
+        "product_uom": "TU8",
+        "quantity_recommended": 96,
+        "quantity_source": "llm",
+        "price_unit": 31.84,
+        "subtotal": 3056.64,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier, principalement le mardi, avec une fréquence moyenne de 14 à 21 jours. La dernière commande remontant au 31 octobre (soit 11 jours avant la date actuelle), le risque de rupture se situe dans l'horizon des 30 jours du seuil de réapprovisionnement. En application du principe de précaution B2B, un besoin est détecté. Concernant la quantité, l'historique est extrêmement stable avec une récurrence quasi systématique de 96 unités (médiane parfaite). Le pic de 192 unités en août est considéré comme exceptionnel. La quantité retenue est donc de 96 unités.",
+          "summary": "",
+          "baseline_quantity": 96,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-01 14:45:33",
+            "quantity": 96,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2024-11-27 07:30:15",
+            "quantity": 288,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2024-11-27 07:29:49",
+            "quantity": 288,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2024-11-27 07:29:18",
+            "quantity": 192,
+            "price_unit": 31.84
+          },
+          {
+            "date": "2024-11-13 11:56:05",
+            "quantity": 288,
+            "price_unit": 31.84
+          }
+        ]
+      },
+      {
+        "product_id": 19772,
+        "product_name": "[PF3381] CARREFOUR SAUCE COCKTAIL BIO SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 112,
+        "quantity_source": "llm",
+        "price_unit": 20.76,
+        "subtotal": 2325.1200000000003,
+        "confidence": "high",
+        "order_count": 5,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande régulier d'environ 10 à 20 jours (26/08, 16/09, 21/10, 31/10). La dernière commande datant du 31 octobre, soit il y a 11 jours, le risque de rupture est élevé dans l'horizon des 30 jours (seuil de réapprovisionnement). Le cycle moyen étant proche de 15-20 jours, une commande est nécessaire par précaution. La quantité de 112 unités est constante sur toutes les commandes effectives (médiane parfaite), elle est donc reconduite pour ce réapprovisionnement.",
+          "summary": "",
+          "baseline_quantity": 112,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-31 15:01:19",
+            "quantity": 112,
+            "price_unit": 20.76
+          },
+          {
+            "date": "2025-10-21 09:39:45",
+            "quantity": 112,
+            "price_unit": 20.76
+          },
+          {
+            "date": "2025-10-16 09:46:52",
+            "quantity": 0,
+            "price_unit": 20.76
+          },
+          {
+            "date": "2025-09-16 12:31:33",
+            "quantity": 112,
+            "price_unit": 20.76
+          },
+          {
+            "date": "2025-08-26 13:19:30",
+            "quantity": 112,
+            "price_unit": 20.76
+          }
+        ]
+      },
+      {
+        "product_id": 17780,
+        "product_name": "[PF3341] CARRE MAYONNAISE BIO 500ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 110,
+        "quantity_source": "llm",
+        "price_unit": 21.48,
+        "subtotal": 2362.8,
+        "confidence": "high",
+        "order_count": 24,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre une fréquence régulière d'environ 15 à 21 jours entre les réapprovisionnements récents (14/10 au 31/10). La dernière commande date du 31 octobre, soit il y a 11 jours. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent d'ici la fin du mois de novembre, conformément au cycle historique. La quantité est fixée à 110 unités, ce qui correspond à la médiane stricte et constante de l'historique récent et de la commande N-1 à la même période.",
+          "summary": "",
+          "baseline_quantity": 110,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-27 07:30:15",
+            "quantity": 110,
+            "price_unit": 21.48
+          },
+          {
+            "date": "2024-11-27 07:29:49",
+            "quantity": 110,
+            "price_unit": 21.48
+          },
+          {
+            "date": "2024-11-27 07:29:18",
+            "quantity": 110,
+            "price_unit": 21.48
+          },
+          {
+            "date": "2024-11-13 11:56:05",
+            "quantity": 110,
+            "price_unit": 21.48
+          },
+          {
+            "date": "2024-10-29 14:09:53",
+            "quantity": 110,
+            "price_unit": 21.48
+          }
+        ]
+      },
+      {
+        "product_id": 9424,
+        "product_name": "[PF2932] CARRE VIN CIBOULET PET 450 BIO",
+        "product_uom": "TU12",
+        "quantity_recommended": 98,
+        "quantity_source": "llm",
+        "price_unit": 23.76,
+        "subtotal": 2328.48,
+        "confidence": "high",
+        "order_count": 26,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande régulier avec une dernière commande effectuée le 31 octobre 2025. Bien que l'intervalle moyen soit d'environ 30 à 45 jours, le principe de précaution B2B s'applique ici car nous entrons dans une période où des commandes ont été enregistrées l'année précédente (novembre/décembre). Le délai depuis la dernière commande (11 jours) combiné au seuil de réapprovisionnement de 30 jours crée une zone d'incertitude sur le stock disponible pour couvrir le mois à venir. La quantité de 98 unités est strictement constante sur l'ensemble de l'historique récent et passé, représentant la médiane parfaite et l'unité logistique habituelle. Une commande de 98 unités est donc préconisée pour éviter toute rupture.",
+          "summary": "",
+          "baseline_quantity": 98,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-05-07 14:02:58",
+            "quantity": 98,
+            "price_unit": 23.76
+          },
+          {
+            "date": "2024-04-02 05:52:56",
+            "quantity": 98,
+            "price_unit": 23.76
+          },
+          {
+            "date": "2024-02-20 10:03:58",
+            "quantity": 98,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2023-12-04 14:40:11",
+            "quantity": 98,
+            "price_unit": 25.44
+          },
+          {
+            "date": "2023-11-13 14:45:33",
+            "quantity": 98,
+            "price_unit": 25.44
+          }
+        ]
+      },
+      {
+        "product_id": 9425,
+        "product_name": "[PF2933] CARRE VIN MIEL MOU PET 450 BIO",
+        "product_uom": "TU12",
+        "quantity_recommended": 98,
+        "quantity_source": "llm",
+        "price_unit": 23.76,
+        "subtotal": 2328.48,
+        "confidence": "high",
+        "order_count": 28,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande très régulier, avec une commande systématique de 98 unités. La dernière commande remonte au 28 octobre 2025, soit il y a 14 jours. Bien que le cycle moyen soit d'environ 20 à 30 jours, l'historique de l'année précédente montre une activité soutenue en fin d'année (novembre/décembre). Compte tenu du seuil de réapprovisionnement de 30 jours et du principe de précaution B2B, un risque de rupture est identifié pour la période à venir. La quantité retenue est de 98 unités, correspondant à la médiane exacte et constante de toutes les commandes passées.",
+          "summary": "",
+          "baseline_quantity": 98,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-23 12:29:42",
+            "quantity": 98,
+            "price_unit": 23.76
+          },
+          {
+            "date": "2024-03-26 10:55:39",
+            "quantity": 98,
+            "price_unit": 23.76
+          },
+          {
+            "date": "2024-02-27 10:17:46",
+            "quantity": 98,
+            "price_unit": 26.1
+          },
+          {
+            "date": "2023-12-04 14:06:11",
+            "quantity": 98,
+            "price_unit": 26.1
+          },
+          {
+            "date": "2023-11-29 09:59:59",
+            "quantity": 98,
+            "price_unit": 26.1
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 19770,
+        "product_name": "[PF3380] CARREFOUR SAUCE TARTARE BIO SQUEEZE 300ML",
+        "product_uom": "TU12",
+        "quantity_recommended": 112,
+        "quantity_source": "llm",
+        "price_unit": 21.48,
+        "subtotal": 2405.76,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 16 octobre, soit 26 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique de risque de rupture. En l'absence d'historique long permettant de définir un cycle précis, le principe de précaution B2B s'applique : le besoin est détecté. ÉTAPE 2 : Estimation quantité. L'historique récent présente une commande unique de 112 unités. Conformément à la règle de maintien des quantités pour les rotations régulières ou uniques sans tendance inverse, la médiane (ici la valeur unique) de 112 unités est retenue pour assurer la disponibilité du stock.",
+          "summary": "",
+          "baseline_quantity": 112,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-16 09:46:52",
+            "quantity": 112,
+            "price_unit": 21.48
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 13,
+    "optional_products_count": 1,
+    "base_amount": 33196.08,
+    "optional_amount": 2405.76,
+    "total_amount": 35601.840000000004,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 5509
+}

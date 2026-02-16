@@ -22,15 +22,13 @@ flowchart LR
 getInactiveClients(
   dateMin: string,                     // "YYYY-MM-DD HH:MM:SS"
   dateMax: string,                     // "YYYY-MM-DD HH:MM:SS"
-  excludeAutoProposalTagId?: number,   // From config (force reanalysis)
-  excludedPartnerTagId?: number | null, // From config (permanent exclude)
-  companyId?: number                   // From config (multi-company filter)
+  excludeAutoProposalTagId?: number,   // Default: 82 (force reanalysis)
+  excludedPartnerTagId?: number | null // Permanent exclude
 ): Promise<InactiveClient[]>
 ```
 
 **Logic:**
-- `excludeAutoProposalTagId`: Exclut les commandes avec ce tag du calcul d'activité
-- `companyId`: Filtre les commandes par société (ex: FOODPRINT SRL = 3)
+- `excludeAutoProposalTagId`: Si 82 → clients avec ONLY tag 82 orders = inactifs
 - Sinon → clients sans order récente = inactifs
 
 **Résultat:**
@@ -61,30 +59,26 @@ const inactive = await getInactiveClients({
 
 ### 2. Force reanalysis
 
-Inclure les clients déjà tagués par auto-proposal:
+Inclure les clients déjà tagués par auto-proposal (tag 82):
 
 ```typescript
-const inactive = await getInactiveClients(
-  "2025-09-26",
-  "2025-10-26",
-  undefined,  // excludeAutoProposalTagId = force reanalysis
-  undefined,
-  autoProposalConfig.defaultCompanyId
-);
+const inactive = await getInactiveClients({
+  dateMin: "2025-09-26",
+  dateMax: "2025-10-26",
+  excludeAutoProposalTagId: undefined  // force reanalysis
+});
 ```
 
 ### 3. Exclure clients permanents
 
-Exclure clients avec tag "exclude-auto-proposal":
+Exclure clients avec tag "do not contact" (e.g., tag 195):
 
 ```typescript
-const inactive = await getInactiveClients(
-  "2025-09-26",
-  "2025-10-26",
-  autoProposalConfig.quoteGeneration.autoProposalTagId,
-  autoProposalConfig.inactivityDetection.excludedPartnerTagId,
-  autoProposalConfig.defaultCompanyId
-);
+const inactive = await getInactiveClients({
+  dateMin: "2025-09-26",
+  dateMax: "2025-10-26",
+  excludedPartnerTagId: 195
+});
 ```
 
 ## Intégration

@@ -1,0 +1,30 @@
+{
+  "clientId": 29303,
+  "clientName": "LA FERME DE BERGIFA",
+  "orderName": "S39921",
+  "orderDate": "2025-10-27 07:19:24",
+  "cutoffDate": "2025-10-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 20,
+    "fp": 20,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0.05,
+    "wmape": 4.761904761904762,
+    "mape": 2.5,
+    "bias": -4.761904761904762
+  },
+  "distribution": {
+    "exactMatch": 19,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 43,
+    "promptTokens": 37967,
+    "completionTokens": 6445,
+    "totalTokens": 44412
+  }
+}

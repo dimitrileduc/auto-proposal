@@ -1,0 +1,940 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:06:42.325Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-29 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60539,
+    "name": "SODEXO SAFRAN BE3723",
+    "order": {
+      "name": "S40028",
+      "date": "2025-10-30 13:17:36"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 6,
+        "falsePositives": 5,
+        "falseNegatives": 0,
+        "total": 11
+      },
+      "productMetrics": {
+        "precision": 0.5454545454545454,
+        "recall": 1,
+        "f1Score": 0.7058823529411764,
+        "totalPredicted": 11,
+        "totalReal": 6
+      },
+      "quantityMetrics": {
+        "mae": 2,
+        "wmape": 28.57142857142857,
+        "mape": 28.571428571428566,
+        "bias": -28.57142857142857,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 6
+        },
+        "rmse": 2
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 3,
+          "falseNegatives": 0,
+          "total": 3
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 3,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 6,
+          "falsePositives": 2,
+          "falseNegatives": 0,
+          "total": 8
+        },
+        "productMetrics": {
+          "precision": 0.75,
+          "recall": 1,
+          "f1Score": 0.8571428571428571,
+          "totalPredicted": 8,
+          "totalReal": 6
+        },
+        "quantityMetrics": {
+          "mae": 2,
+          "wmape": 28.57142857142857,
+          "mape": 28.571428571428566,
+          "bias": -28.57142857142857,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 6
+          },
+          "rmse": 2
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 9902,
+    "completionTokens": 1888,
+    "totalTokens": 11790
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18318,
+        "productName": "[NOM01] NOMADIC barre protéinée au beurre de noix & baies 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 7
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 28.57142857142857,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 5,
+          "orders": [
+            {
+              "orderId": 91373,
+              "orderName": "S39496",
+              "date": "2025-10-01 14:11:18",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 90159,
+              "orderName": "S38282",
+              "date": "2025-08-04 11:44:37",
+              "quantity": 6,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 89692,
+              "orderName": "S37815",
+              "date": "2025-07-03 06:37:05",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88503,
+              "orderName": "S36626",
+              "date": "2025-05-08 12:50:45",
+              "quantity": 3,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87787,
+              "orderName": "S35910",
+              "date": "2025-04-10 06:38:39",
+              "quantity": 5,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 5.8,
+            "median": 5,
+            "stdDev": 2.3151673805580453,
+            "min": 3,
+            "max": 10,
+            "cv": 0.39916678975138714,
+            "trend": "decreasing",
+            "outliers": [
+              10,
+              3
+            ],
+            "regularityScore": 0.637121618798604
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 43.57858506944444,
+            "lastOrderDaysAgo": 27.45048611111111,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18319,
+        "productName": "[NOM04] NOMADIC barre protéinée au beurre de noix & double chocolat 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 7
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 28.57142857142857,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 91373,
+              "orderName": "S39496",
+              "date": "2025-10-01 14:11:18",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 90159,
+              "orderName": "S38282",
+              "date": "2025-08-04 11:44:37",
+              "quantity": 6,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 89692,
+              "orderName": "S37815",
+              "date": "2025-07-03 06:37:05",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88503,
+              "orderName": "S36626",
+              "date": "2025-05-08 12:50:45",
+              "quantity": 3,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87787,
+              "orderName": "S35910",
+              "date": "2025-04-10 06:38:39",
+              "quantity": 3,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87179,
+              "orderName": "S35302",
+              "date": "2025-03-19 11:19:19",
+              "quantity": 4,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 5.166666666666667,
+            "median": 5,
+            "stdDev": 2.4094720491334933,
+            "min": 3,
+            "max": 10,
+            "cv": 0.46634942886454706,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.56866364497909
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 39.21555324074074,
+            "lastOrderDaysAgo": 27.45048611111111,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18320,
+        "productName": "[NOM02] NOMADIC barre protéinée au beurre de noix & miel 35g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 7
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 28.57142857142857,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 91373,
+              "orderName": "S39496",
+              "date": "2025-10-01 14:11:18",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 89692,
+              "orderName": "S37815",
+              "date": "2025-07-03 06:37:05",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88996,
+              "orderName": "S37119",
+              "date": "2025-05-28 09:33:37",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88503,
+              "orderName": "S36626",
+              "date": "2025-05-08 12:50:45",
+              "quantity": 6,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87787,
+              "orderName": "S35910",
+              "date": "2025-04-10 06:38:39",
+              "quantity": 3,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87179,
+              "orderName": "S35302",
+              "date": "2025-03-19 11:19:19",
+              "quantity": 4,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 5.5,
+            "median": 5,
+            "stdDev": 2.217355782608345,
+            "min": 3,
+            "max": 10,
+            "cv": 0.40315559683788094,
+            "trend": "decreasing",
+            "outliers": [
+              10
+            ],
+            "regularityScore": 0.49128287199469023
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 39.21555324074074,
+            "lastOrderDaysAgo": 27.45048611111111,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18321,
+        "productName": "[NOM03] NOMADIC barre protéinée au beurre de noix & noisette 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 7
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 28.57142857142857,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 7,
+          "orders": [
+            {
+              "orderId": 91373,
+              "orderName": "S39496",
+              "date": "2025-10-01 14:11:18",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 90159,
+              "orderName": "S38282",
+              "date": "2025-08-04 11:44:37",
+              "quantity": 6,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 89692,
+              "orderName": "S37815",
+              "date": "2025-07-03 06:37:05",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88996,
+              "orderName": "S37119",
+              "date": "2025-05-28 09:33:37",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88503,
+              "orderName": "S36626",
+              "date": "2025-05-08 12:50:45",
+              "quantity": 6,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87787,
+              "orderName": "S35910",
+              "date": "2025-04-10 06:38:39",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87179,
+              "orderName": "S35302",
+              "date": "2025-03-19 11:19:19",
+              "quantity": 4,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 5.857142857142857,
+            "median": 5,
+            "stdDev": 1.8070158058105024,
+            "min": 4,
+            "max": 10,
+            "cv": 0.3085148936749638,
+            "trend": "decreasing",
+            "outliers": [
+              10
+            ],
+            "regularityScore": 0.6600890447192007
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 32.67962770061728,
+            "lastOrderDaysAgo": 27.45048611111111,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18322,
+        "productName": "[NUT08] NUTS & BERRIES Bar choco noir & noix grillées bio 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 7
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 28.57142857142857,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 91373,
+              "orderName": "S39496",
+              "date": "2025-10-01 14:11:18",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 90159,
+              "orderName": "S38282",
+              "date": "2025-08-04 11:44:37",
+              "quantity": 6,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 89692,
+              "orderName": "S37815",
+              "date": "2025-07-03 06:37:05",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88996,
+              "orderName": "S37119",
+              "date": "2025-05-28 09:33:37",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88503,
+              "orderName": "S36626",
+              "date": "2025-05-08 12:50:45",
+              "quantity": 8,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87787,
+              "orderName": "S35910",
+              "date": "2025-04-10 06:38:39",
+              "quantity": 8,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 86638,
+              "orderName": "S34761",
+              "date": "2025-03-19 11:18:16",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 86249,
+              "orderName": "S34372",
+              "date": "2025-01-17 13:07:37",
+              "quantity": 5,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 7.125,
+            "median": 7,
+            "stdDev": 2.027159342528357,
+            "min": 5,
+            "max": 10,
+            "cv": 0.2845135919338045,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.6623549332016944
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 36.71465112433862,
+            "lastOrderDaysAgo": 27.45048611111111,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18323,
+        "productName": "[NUT07] NUTS & BERRIES Bar choco noir caramel salé bio 40g",
+        "productUom": "TU15",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 7
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 28.57142857142857,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 8,
+          "orders": [
+            {
+              "orderId": 91373,
+              "orderName": "S39496",
+              "date": "2025-10-01 14:11:18",
+              "quantity": 5,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 90641,
+              "orderName": "S38764",
+              "date": "2025-08-28 06:05:44",
+              "quantity": 7,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 89692,
+              "orderName": "S37815",
+              "date": "2025-07-03 06:37:05",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88996,
+              "orderName": "S37119",
+              "date": "2025-05-28 09:33:37",
+              "quantity": 4,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 88503,
+              "orderName": "S36626",
+              "date": "2025-05-08 12:50:45",
+              "quantity": 8,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 87787,
+              "orderName": "S35910",
+              "date": "2025-04-10 06:38:39",
+              "quantity": 8,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 86638,
+              "orderName": "S34761",
+              "date": "2025-03-19 11:18:16",
+              "quantity": 10,
+              "priceUnit": 17.55
+            },
+            {
+              "orderId": 86249,
+              "orderName": "S34372",
+              "date": "2025-01-17 13:07:37",
+              "quantity": 8,
+              "priceUnit": 17.55
+            }
+          ],
+          "statistics": {
+            "mean": 7.5,
+            "median": 8,
+            "stdDev": 2,
+            "min": 4,
+            "max": 10,
+            "cv": 0.26666666666666666,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.6782705889641785
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 36.71465112433862,
+            "lastOrderDaysAgo": 27.45048611111111,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18324,
+        "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 6,
+        "reason": "Predicted 6u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 27,
+            "orders": [
+              {
+                "orderId": 91373,
+                "orderName": "S39496",
+                "date": "2025-10-01 14:11:18",
+                "quantity": 5,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 90641,
+                "orderName": "S38764",
+                "date": "2025-08-28 06:05:44",
+                "quantity": 6,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 89692,
+                "orderName": "S37815",
+                "date": "2025-07-03 06:37:05",
+                "quantity": 7,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 88996,
+                "orderName": "S37119",
+                "date": "2025-05-28 09:33:37",
+                "quantity": 4,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 87787,
+                "orderName": "S35910",
+                "date": "2025-04-10 06:38:39",
+                "quantity": 4,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 86638,
+                "orderName": "S34761",
+                "date": "2025-03-19 11:18:16",
+                "quantity": 6,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 86915,
+                "orderName": "S35038",
+                "date": "2025-02-24 13:06:35",
+                "quantity": 7,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 86249,
+                "orderName": "S34372",
+                "date": "2025-01-17 13:07:37",
+                "quantity": 7,
+                "priceUnit": 17.55
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18325,
+        "productName": "[NUT05] NUTS & BERRIES Bar choco noir gingembre bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 5,
+        "reason": "Predicted 5u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 8,
+            "lastOrderDaysAgo": 27,
+            "orders": [
+              {
+                "orderId": 91373,
+                "orderName": "S39496",
+                "date": "2025-10-01 14:11:18",
+                "quantity": 5,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 90641,
+                "orderName": "S38764",
+                "date": "2025-08-28 06:05:44",
+                "quantity": 6,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 89692,
+                "orderName": "S37815",
+                "date": "2025-07-03 06:37:05",
+                "quantity": 7,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 88503,
+                "orderName": "S36626",
+                "date": "2025-05-08 12:50:45",
+                "quantity": 4,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 87787,
+                "orderName": "S35910",
+                "date": "2025-04-10 06:38:39",
+                "quantity": 4,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 86638,
+                "orderName": "S34761",
+                "date": "2025-03-19 11:18:16",
+                "quantity": 4,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 86915,
+                "orderName": "S35038",
+                "date": "2025-02-24 13:06:35",
+                "quantity": 7,
+                "priceUnit": 17.55
+              },
+              {
+                "orderId": 86249,
+                "orderName": "S34372",
+                "date": "2025-01-17 13:07:37",
+                "quantity": 5,
+                "priceUnit": 17.55
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18326,
+        "productName": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 27,
+            "orders": [
+              {
+                "orderId": 91373,
+                "orderName": "S39496",
+                "date": "2025-10-01 14:11:18",
+                "quantity": 3,
+                "priceUnit": 16.05
+              },
+              {
+                "orderId": 86915,
+                "orderName": "S35038",
+                "date": "2025-02-24 13:06:35",
+                "quantity": 5,
+                "priceUnit": 16.05
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18327,
+        "productName": "[NUT01] NUTS & BERRIES energy bar Deluxe bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 27,
+            "orders": [
+              {
+                "orderId": 91373,
+                "orderName": "S39496",
+                "date": "2025-10-01 14:11:18",
+                "quantity": 3,
+                "priceUnit": 16.05
+              },
+              {
+                "orderId": 86915,
+                "orderName": "S35038",
+                "date": "2025-02-24 13:06:35",
+                "quantity": 5,
+                "priceUnit": 16.05
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18329,
+        "productName": "[NUT02] NUTS & BERRIES energy bar Superfood bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 27,
+            "orders": [
+              {
+                "orderId": 91373,
+                "orderName": "S39496",
+                "date": "2025-10-01 14:11:18",
+                "quantity": 3,
+                "priceUnit": 16.05
+              },
+              {
+                "orderId": 86249,
+                "orderName": "S34372",
+                "date": "2025-01-17 13:07:37",
+                "quantity": 5,
+                "priceUnit": 16.05
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

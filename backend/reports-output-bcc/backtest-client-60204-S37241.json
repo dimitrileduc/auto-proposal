@@ -1,0 +1,30 @@
+{
+  "clientId": 60204,
+  "clientName": "BIO VRAC SCHAERBEEK",
+  "orderName": "S37241",
+  "orderDate": "2025-06-04 07:55:49",
+  "cutoffDate": "2025-06-03 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1,
+    "wmape": 26.08695652173913,
+    "mape": 23.333333333333332,
+    "bias": -8.695652173913043
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 12,
+    "promptTokens": 10911,
+    "completionTokens": 1947,
+    "totalTokens": 12858
+  }
+}

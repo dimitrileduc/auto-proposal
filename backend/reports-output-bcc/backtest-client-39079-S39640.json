@@ -1,0 +1,30 @@
+{
+  "clientId": 39079,
+  "clientName": "SPAR QUEUE DU BOIS HCS DISTRIBUTION",
+  "orderName": "S39640",
+  "orderDate": "2025-10-09 11:25:33",
+  "cutoffDate": "2025-10-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 17,
+    "fn": 0,
+    "precision": 0.34615384615384615,
+    "recall": 1,
+    "f1Score": 0.5142857142857142,
+    "mae": 0.5555555555555556,
+    "wmape": 31.25,
+    "mape": 23.333333333333332,
+    "bias": -18.75
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 25622,
+    "completionTokens": 4579,
+    "totalTokens": 30201
+  }
+}

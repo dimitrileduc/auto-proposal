@@ -1,0 +1,30 @@
+{
+  "clientId": 38738,
+  "clientName": "CRF MARKET BUTGENBACH GROSSMAR",
+  "orderName": "S40307",
+  "orderDate": "2025-11-13 10:12:27",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 56,
+    "promptTokens": 51043,
+    "completionTokens": 8742,
+    "totalTokens": 59785
+  }
+}

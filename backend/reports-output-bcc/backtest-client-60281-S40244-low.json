@@ -1,0 +1,30 @@
+{
+  "clientId": 60281,
+  "clientName": "DAO - Hotel SELYS",
+  "orderName": "S40244",
+  "orderDate": "2025-11-12 08:53:31",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8706,
+    "completionTokens": 1438,
+    "totalTokens": 10144
+  }
+}

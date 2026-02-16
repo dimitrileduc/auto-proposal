@@ -1,0 +1,30 @@
+{
+  "clientId": 59033,
+  "clientName": "Sandrine Sauvage - La main dans le vrac, Sandrine",
+  "orderName": "S37735",
+  "orderDate": "2025-06-30 12:52:40",
+  "cutoffDate": "2025-06-29 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.47619047619047616,
+    "recall": 1,
+    "f1Score": 0.6451612903225806,
+    "mae": 0.5,
+    "wmape": 33.33333333333333,
+    "mape": 25,
+    "bias": -33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 34,
+    "promptTokens": 30174,
+    "completionTokens": 5039,
+    "totalTokens": 35213
+  }
+}

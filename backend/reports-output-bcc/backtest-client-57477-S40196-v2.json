@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:06:24.259Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-06 00:00:00"
+    }
+  },
+  "client": {
+    "id": 57477,
+    "name": "MAISON DESPRIET SA, Nicole",
+    "order": {
+      "name": "S40196",
+      "date": "2025-11-07 12:46:58"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 5,
+        "falsePositives": 0,
+        "falseNegatives": 0,
+        "total": 5
+      },
+      "productMetrics": {
+        "precision": 1,
+        "recall": 1,
+        "f1Score": 1,
+        "totalPredicted": 5,
+        "totalReal": 5
+      },
+      "quantityMetrics": {
+        "mae": 65.8,
+        "wmape": 61.61048689138576,
+        "mape": 20.3030303030303,
+        "bias": -58.239700374531836,
+        "distribution": {
+          "exactMatch": 2,
+          "partialMatch": 3
+        },
+        "rmse": 143.1537634852818
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 5,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 5
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 5,
+          "totalReal": 5
+        },
+        "quantityMetrics": {
+          "mae": 65.8,
+          "wmape": 61.61048689138576,
+          "mape": 20.3030303030303,
+          "bias": -58.239700374531836,
+          "distribution": {
+            "exactMatch": 2,
+            "partialMatch": 3
+          },
+          "rmse": 143.1537634852818
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4716,
+    "completionTokens": 808,
+    "totalTokens": 5524
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 8987,
+        "productName": "[PF0078] FILOU CHASSEUR 5 L",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 160,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 480
+        },
+        "error": {
+          "absolute": 320,
+          "percent": 66.66666666666666,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 11,
+          "orders": [
+            {
+              "orderId": 92004,
+              "orderName": "S40125",
+              "date": "2025-11-05 05:01:57",
+              "quantity": 160,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 91867,
+              "orderName": "S39988",
+              "date": "2025-10-29 12:00:23",
+              "quantity": 160,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 91538,
+              "orderName": "S39661",
+              "date": "2025-10-10 09:26:10",
+              "quantity": 160,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 91220,
+              "orderName": "S39343",
+              "date": "2025-09-23 09:13:34",
+              "quantity": 160,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 90519,
+              "orderName": "S38642",
+              "date": "2025-08-22 08:54:40",
+              "quantity": 160,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 90293,
+              "orderName": "S38416",
+              "date": "2025-08-08 06:49:19",
+              "quantity": 160,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 89679,
+              "orderName": "S37802",
+              "date": "2025-07-02 09:08:06",
+              "quantity": 160,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 86695,
+              "orderName": "S34818",
+              "date": "2025-02-11 09:41:30",
+              "quantity": 320,
+              "priceUnit": 8.78
+            },
+            {
+              "orderId": 86047,
+              "orderName": "S34170",
+              "date": "2025-01-08 12:45:12",
+              "quantity": 160,
+              "priceUnit": 8.96
+            },
+            {
+              "orderId": 85342,
+              "orderName": "S33465",
+              "date": "2024-11-25 09:38:08",
+              "quantity": 240,
+              "priceUnit": 8.526
+            },
+            {
+              "orderId": 84148,
+              "orderName": "S32271",
+              "date": "2024-09-16 11:45:56",
+              "quantity": 480,
+              "priceUnit": 8.7
+            }
+          ],
+          "statistics": {
+            "mean": 210.9090909090909,
+            "median": 160,
+            "stdDev": 98.11445500532395,
+            "min": 160,
+            "max": 480,
+            "cv": 0.4651978470080015,
+            "trend": "increasing",
+            "outliers": [
+              480
+            ],
+            "regularityScore": 0.36087849026971053
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 41.47611226851852,
+            "lastOrderDaysAgo": 0.7903125,
+            "isSeasonalProduct": true,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 8985,
+        "productName": "[PF0075] FILOU CHASSEUR  10 L",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 52,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 44
+        },
+        "error": {
+          "absolute": 8,
+          "percent": 18.181818181818183,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 7,
+          "orders": [
+            {
+              "orderId": 91538,
+              "orderName": "S39661",
+              "date": "2025-10-10 09:26:10",
+              "quantity": 44,
+              "priceUnit": 16.66
+            },
+            {
+              "orderId": 90744,
+              "orderName": "S38867",
+              "date": "2025-08-29 09:33:32",
+              "quantity": 55,
+              "priceUnit": 16.66
+            },
+            {
+              "orderId": 90519,
+              "orderName": "S38642",
+              "date": "2025-08-22 08:54:40",
+              "quantity": 52,
+              "priceUnit": 16.66
+            },
+            {
+              "orderId": 89679,
+              "orderName": "S37802",
+              "date": "2025-07-02 09:08:06",
+              "quantity": 52,
+              "priceUnit": 16.66
+            },
+            {
+              "orderId": 88402,
+              "orderName": "S36525",
+              "date": "2025-05-05 14:01:02",
+              "quantity": 52,
+              "priceUnit": 16.66
+            },
+            {
+              "orderId": 88274,
+              "orderName": "S36397",
+              "date": "2025-04-28 06:12:56",
+              "quantity": 52,
+              "priceUnit": 16.66
+            },
+            {
+              "orderId": 85342,
+              "orderName": "S33465",
+              "date": "2024-11-25 09:38:08",
+              "quantity": 52,
+              "priceUnit": 16.17
+            }
+          ],
+          "statistics": {
+            "mean": 51.285714285714285,
+            "median": 52,
+            "stdDev": 3.1493439550069433,
+            "min": 44,
+            "max": 55,
+            "cv": 0.06140782084971756,
+            "trend": "stable",
+            "outliers": [
+              44,
+              55
+            ],
+            "regularityScore": 0.593097163458144
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 53.15833719135802,
+            "lastOrderDaysAgo": 26.64849537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 9065,
+        "productName": "[PF1140] FILOU SAUCE CHASSEUR 850G",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 10,
+          "orders": [
+            {
+              "orderId": 91538,
+              "orderName": "S39661",
+              "date": "2025-10-10 09:26:10",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 91220,
+              "orderName": "S39343",
+              "date": "2025-09-23 09:13:34",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 90293,
+              "orderName": "S38416",
+              "date": "2025-08-08 06:49:19",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 89679,
+              "orderName": "S37802",
+              "date": "2025-07-02 09:08:06",
+              "quantity": 6,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 88402,
+              "orderName": "S36525",
+              "date": "2025-05-05 14:01:02",
+              "quantity": 6,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 88274,
+              "orderName": "S36397",
+              "date": "2025-04-28 06:12:56",
+              "quantity": 6,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 86695,
+              "orderName": "S34818",
+              "date": "2025-02-11 09:41:30",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 86047,
+              "orderName": "S34170",
+              "date": "2025-01-08 12:45:12",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 85342,
+              "orderName": "S33465",
+              "date": "2024-11-25 09:38:08",
+              "quantity": 4,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 84148,
+              "orderName": "S32271",
+              "date": "2024-09-16 11:45:56",
+              "quantity": 2,
+              "priceUnit": 25.2
+            }
+          ],
+          "statistics": {
+            "mean": 3.4,
+            "median": 2,
+            "stdDev": 1.8000000000000003,
+            "min": 2,
+            "max": 6,
+            "cv": 0.5294117647058825,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4847458378122795
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 43.21143775720165,
+            "lastOrderDaysAgo": 26.64849537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 9038,
+        "productName": "[PF0524] FILOU SAUCE TOMATE 815 GR",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 2,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 2
+        },
+        "error": {
+          "absolute": 0,
+          "percent": 0,
+          "direction": "exact",
+          "severity": "none",
+          "matchType": "exact"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 91538,
+              "orderName": "S39661",
+              "date": "2025-10-10 09:26:10",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 91220,
+              "orderName": "S39343",
+              "date": "2025-09-23 09:13:34",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 90519,
+              "orderName": "S38642",
+              "date": "2025-08-22 08:54:40",
+              "quantity": 1,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 90293,
+              "orderName": "S38416",
+              "date": "2025-08-08 06:49:19",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 89679,
+              "orderName": "S37802",
+              "date": "2025-07-02 09:08:06",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 88402,
+              "orderName": "S36525",
+              "date": "2025-05-05 14:01:02",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 88274,
+              "orderName": "S36397",
+              "date": "2025-04-28 06:12:56",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 86695,
+              "orderName": "S34818",
+              "date": "2025-02-11 09:41:30",
+              "quantity": 2,
+              "priceUnit": 25.92
+            },
+            {
+              "orderId": 86047,
+              "orderName": "S34170",
+              "date": "2025-01-08 12:45:12",
+              "quantity": 2,
+              "priceUnit": 25.92
+            }
+          ],
+          "statistics": {
+            "mean": 1.8888888888888888,
+            "median": 2,
+            "stdDev": 0.3142696805273545,
+            "min": 1,
+            "max": 2,
+            "cv": 0.1663780661615406,
+            "trend": "stable",
+            "outliers": [
+              1
+            ],
+            "regularityScore": 0.6489886505828931
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 34.35251446759259,
+            "lastOrderDaysAgo": 26.64849537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 8997,
+        "productName": "[PF0096] FILOU MOUTARDE 3 KG",
+        "productUom": "TU1",
+        "prediction": {
+          "quantity": 7,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 16.666666666666664,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 6,
+          "orders": [
+            {
+              "orderId": 91538,
+              "orderName": "S39661",
+              "date": "2025-10-10 09:26:10",
+              "quantity": 8,
+              "priceUnit": 5.15
+            },
+            {
+              "orderId": 91220,
+              "orderName": "S39343",
+              "date": "2025-09-23 09:13:34",
+              "quantity": 0,
+              "priceUnit": 5.15
+            },
+            {
+              "orderId": 89679,
+              "orderName": "S37802",
+              "date": "2025-07-02 09:08:06",
+              "quantity": 6,
+              "priceUnit": 5.15
+            },
+            {
+              "orderId": 88402,
+              "orderName": "S36525",
+              "date": "2025-05-05 14:01:02",
+              "quantity": 12,
+              "priceUnit": 5.15
+            },
+            {
+              "orderId": 88274,
+              "orderName": "S36397",
+              "date": "2025-04-28 06:12:56",
+              "quantity": 12,
+              "priceUnit": 5.15
+            },
+            {
+              "orderId": 86695,
+              "orderName": "S34818",
+              "date": "2025-02-11 09:41:30",
+              "quantity": 2,
+              "priceUnit": 5.15
+            }
+          ],
+          "statistics": {
+            "mean": 6.666666666666667,
+            "median": 7,
+            "stdDev": 4.570436400267363,
+            "min": 0,
+            "max": 12,
+            "cv": 0.6855654600401044,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.33391185333253526
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 48.189537037037034,
+            "lastOrderDaysAgo": 26.64849537037037,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [],
+    "falseNegatives": []
+  }
+}

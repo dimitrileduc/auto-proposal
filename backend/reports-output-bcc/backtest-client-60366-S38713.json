@@ -1,0 +1,30 @@
+{
+  "clientId": 60366,
+  "clientName": "INTERBIO",
+  "orderName": "S38713",
+  "orderDate": "2025-08-25 11:43:44",
+  "cutoffDate": "2025-08-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 7,
+    "wmape": 28.57142857142857,
+    "mape": 29.166666666666664,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 7055,
+    "completionTokens": 1263,
+    "totalTokens": 8318
+  }
+}

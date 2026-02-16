@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:14:00.118Z"
+  },
+  "client": {
+    "id": 60366,
+    "name": "INTERBIO"
+  },
+  "config": {
+    "analysisEndDate": "2025-08-24 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 8,
+      "llm_usage": {
+        "calls": 8,
+        "promptTokens": 7055,
+        "completionTokens": 1263,
+        "totalTokens": 8318
+      }
+    },
+    "proposalFinal": {
+      "products_count": 8,
+      "total_amount": 4732.000000000001,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 18269,
+        "product_name": "[JOY01] JOY! Organic Sweet Orange Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 14,
+        "quantity_source": "llm",
+        "price_unit": 22,
+        "subtotal": 308,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Le cycle observé entre les deux dernières commandes est de 68 jours. Depuis la dernière commande (14/07/2025), 41 jours se sont écoulés, soit environ 60% du cycle moyen. Compte tenu du seuil de réapprovisionnement de 30 jours, le risque de rupture survient dans l'horizon de prévision (41 + 30 = 71 jours, dépassant le cycle de 68 jours). Par principe de précaution B2B, un besoin est détecté. ÉTAPE 2 : L'historique récent présente deux valeurs (28u et 14u). En application de la règle de prudence privilégiant la valeur la plus basse en cas de doute ou de tendance incertaine, la quantité retenue est de 14 unités.",
+          "summary": "",
+          "baseline_quantity": 14,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-14 07:19:31",
+            "quantity": 14,
+            "price_unit": 22
+          },
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 28,
+            "price_unit": 22
+          },
+          {
+            "date": "2025-03-21 11:16:09",
+            "quantity": 14,
+            "price_unit": 22
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 14,
+            "price_unit": 22
+          }
+        ]
+      },
+      {
+        "product_id": 18275,
+        "product_name": "[JOY03] JOY! Organic Apricot Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 14,
+        "quantity_source": "llm",
+        "price_unit": 23.6,
+        "subtotal": 330.40000000000003,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle de 68 jours entre les deux dernières commandes. Au 24 août 2025, 41 jours se sont écoulés depuis la dernière commande (14 juillet), soit environ 60% du cycle moyen. Compte tenu du seuil de réapprovisionnement de 30 jours, le risque de rupture à l'horizon de fin septembre est réel (principe de précaution B2B). Pour la quantité, la médiane historique entre 14u et 28u est de 21u, mais conformément à la règle de privilégier la valeur la plus basse en cas de doute ou de rotation irrégulière pour éviter le surstock, la quantité de 14u est retenue.",
+          "summary": "",
+          "baseline_quantity": 14,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-14 07:19:31",
+            "quantity": 14,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 28,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-03-21 11:16:09",
+            "quantity": 28,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 42,
+            "price_unit": 23.6
+          }
+        ]
+      },
+      {
+        "product_id": 18276,
+        "product_name": "[JOY04] JOY! Organic Four-Fruit Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 28,
+        "quantity_source": "llm",
+        "price_unit": 23.6,
+        "subtotal": 660.8000000000001,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "L'analyse du cycle de commande montre un intervalle de 68 jours entre les deux dernières commandes. Au 24 août, 41 jours se sont écoulés depuis la dernière commande (14 juillet). Avec un seuil de réapprovisionnement de 30 jours, nous atteindrons l'horizon de risque à 71 jours (41+30), ce qui dépasse le cycle moyen constaté. Par principe de précaution B2B, un besoin est détecté. Pour la quantité, la médiane entre 42u et 28u est de 35u, mais conformément à la règle de privilégier la valeur la plus basse en cas de doute ou de rotation irrégulière pour éviter le surstock, la quantité de 28u est retenue.",
+          "summary": "",
+          "baseline_quantity": 28,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-14 07:19:31",
+            "quantity": 42,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 28,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-03-21 11:16:09",
+            "quantity": 42,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 42,
+            "price_unit": 23.6
+          }
+        ]
+      },
+      {
+        "product_id": 18270,
+        "product_name": "[JOY05] Organic Cherry Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 14,
+        "quantity_source": "llm",
+        "price_unit": 27.2,
+        "subtotal": 380.8,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique récent montre un cycle de commande d'environ 68 jours (entre mai et juillet). Au 24 août, 41 jours se sont écoulés depuis la dernière commande, ce qui représente environ 60% du cycle estimé. Compte tenu du seuil de réapprovisionnement de 30 jours, le risque de rupture survient durant cette fenêtre. En application du principe de précaution B2B (détection d'un besoin incertain), une commande est nécessaire. La quantité retenue est de 14 unités, correspondant à la médiane et à la constante observée sur les dernières commandes.",
+          "summary": "",
+          "baseline_quantity": 14,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-14 07:19:31",
+            "quantity": 14,
+            "price_unit": 27.2
+          },
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 14,
+            "price_unit": 27.2
+          },
+          {
+            "date": "2025-03-21 11:16:09",
+            "quantity": 14,
+            "price_unit": 27.2
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 14,
+            "price_unit": 27.2
+          }
+        ]
+      },
+      {
+        "product_id": 18274,
+        "product_name": "[JOY06] JOY! Organic Rhubarb Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 14,
+        "quantity_source": "llm",
+        "price_unit": 23.6,
+        "subtotal": 330.40000000000003,
+        "confidence": "medium",
+        "order_count": 4,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. L'historique récent montre un cycle de commande d'environ 68 jours (entre mai et juillet). La dernière commande date du 14 juillet, soit il y a 41 jours. Le prochain besoin est estimé autour du 20 septembre. Étant donné le seuil de réapprovisionnement de 30 jours, le risque de rupture survient dans l'horizon de prévision. Par principe de précaution B2B, le besoin est validé. ÉTAPE 2 : ESTIMATION QUANTITÉ. Les deux dernières commandes sont identiques (14u). Conformément à la règle de rotation régulière, cette quantité est maintenue pour la nouvelle commande.",
+          "summary": "",
+          "baseline_quantity": 14,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-14 07:19:31",
+            "quantity": 14,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 14,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-03-21 11:16:09",
+            "quantity": 14,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 28,
+            "price_unit": 23.6
+          }
+        ]
+      },
+      {
+        "product_id": 18271,
+        "product_name": "[JOY07] JOY! Organic Fig Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 28,
+        "quantity_source": "llm",
+        "price_unit": 22.8,
+        "subtotal": 638.4,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 07/05/2025, soit 109 jours sans activité. En l'absence d'historique récurrent permettant de définir un cycle précis, le principe de précaution B2B s'applique car le délai dépasse largement les seuils de réapprovisionnement usuels. Le risque de rupture est considéré comme élevé par manque de visibilité sur la rotation. Conformément à la règle de l'étape 2, la quantité est basée sur la dernière commande connue (28u), celle-ci constituant la seule référence de volume disponible.",
+          "summary": "",
+          "baseline_quantity": 28,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 28,
+            "price_unit": 22.8
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 14,
+            "price_unit": 22.8
+          }
+        ]
+      },
+      {
+        "product_id": 18272,
+        "product_name": "[JOY02] JOY! Organic Strawberry Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 56,
+        "quantity_source": "llm",
+        "price_unit": 23.6,
+        "subtotal": 1321.6000000000001,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 07/05/2025, soit 109 jours sans activité. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement les cycles standards de rotation B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter une rupture), une commande est nécessaire. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique multiple pour calculer une médiane, la quantité de la dernière commande connue (56u) est reconduite pour maintenir le stock initialement observé.",
+          "summary": "",
+          "baseline_quantity": 56,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 56,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-03-21 11:16:09",
+            "quantity": 70,
+            "price_unit": 23.6
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 42,
+            "price_unit": 23.6
+          }
+        ]
+      },
+      {
+        "product_id": 18273,
+        "product_name": "[JOY08] JOY! Organic Raspberry Jam 370g",
+        "product_uom": "TU8",
+        "quantity_recommended": 28,
+        "quantity_source": "llm",
+        "price_unit": 27.2,
+        "subtotal": 761.6,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 07/05/2025, soit 109 jours sans activité. En l'absence d'historique récurrent permettant de définir un cycle précis, le principe de précaution B2B s'applique pour éviter une rupture prolongée. Le risque de rupture est considéré comme élevé car nous avons largement dépassé les délais de réapprovisionnement standards. La quantité retenue correspond à la dernière commande connue (28u), conformément à la règle de maintien des volumes historiques en cas de rotation isolée.",
+          "summary": "",
+          "baseline_quantity": 28,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-05-07 11:23:46",
+            "quantity": 28,
+            "price_unit": 27.2
+          },
+          {
+            "date": "2025-01-31 08:02:21",
+            "quantity": 28,
+            "price_unit": 27.2
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 8,
+    "optional_products_count": 0,
+    "base_amount": 4732.000000000001,
+    "optional_amount": 0,
+    "total_amount": 4732.000000000001,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2832
+}

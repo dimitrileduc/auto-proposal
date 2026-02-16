@@ -1,0 +1,30 @@
+{
+  "clientId": 57009,
+  "clientName": "Bäckerei Fonk - Spar Express",
+  "orderName": "S37892",
+  "orderDate": "2025-07-10 09:25:40",
+  "cutoffDate": "2025-07-09 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 15,
+    "promptTokens": 13225,
+    "completionTokens": 2330,
+    "totalTokens": 15555
+  }
+}

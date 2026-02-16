@@ -1,0 +1,30 @@
+{
+  "clientId": 12411,
+  "clientName": "JSC GOURMET LIFE",
+  "orderName": "S34498",
+  "orderDate": "2025-01-23 13:10:21",
+  "cutoffDate": "2025-01-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1Score": 0.6666666666666666,
+    "mae": 24.5,
+    "wmape": 89.0909090909091,
+    "mape": 73.88888888888889,
+    "bias": -70.9090909090909
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 6252,
+    "completionTokens": 1126,
+    "totalTokens": 7378
+  }
+}

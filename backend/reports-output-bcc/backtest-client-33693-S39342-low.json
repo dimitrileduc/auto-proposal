@@ -1,0 +1,30 @@
+{
+  "clientId": 33693,
+  "clientName": "CARREFOUR BELGIUM SA, CARREFOUR HYPER KRAAINEM",
+  "orderName": "S39342",
+  "orderDate": "2025-09-23 06:16:05",
+  "cutoffDate": "2025-09-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 11,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0.5454545454545454,
+    "wmape": 37.5,
+    "mape": 37.878787878787875,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 5,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 22,
+    "promptTokens": 19219,
+    "completionTokens": 3245,
+    "totalTokens": 22464
+  }
+}

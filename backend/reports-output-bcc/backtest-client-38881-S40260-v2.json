@@ -1,0 +1,637 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:27:51.273Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-11-13 00:00:00"
+    }
+  },
+  "client": {
+    "id": 38881,
+    "name": "DRINK SERVICES",
+    "order": {
+      "name": "S40260",
+      "date": "2025-11-14 10:25:27"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 7,
+        "falseNegatives": 7,
+        "total": 17
+      },
+      "productMetrics": {
+        "precision": 0.3,
+        "recall": 0.3,
+        "f1Score": 0.3,
+        "totalPredicted": 10,
+        "totalReal": 10
+      },
+      "quantityMetrics": {
+        "mae": 2.3333333333333335,
+        "wmape": 46.666666666666664,
+        "mape": 47.22222222222222,
+        "bias": -46.666666666666664,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 3
+        },
+        "rmse": 2.6457513110645907
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 4,
+          "falseNegatives": 7,
+          "total": 11
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 4,
+          "totalReal": 7
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 3,
+          "falseNegatives": 0,
+          "total": 6
+        },
+        "productMetrics": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1Score": 0.6666666666666666,
+          "totalPredicted": 6,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 2.3333333333333335,
+          "wmape": 46.666666666666664,
+          "mape": 47.22222222222222,
+          "bias": -46.666666666666664,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 2.6457513110645907
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8822,
+    "completionTokens": 1620,
+    "totalTokens": 10442
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 16827,
+        "productName": "[TVF001] TVF TARTINADE BIO MANGUE 180g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 3,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 4
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 25,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89846,
+              "orderName": "S37969",
+              "date": "2025-07-09 11:14:05",
+              "quantity": 3,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 85332,
+              "orderName": "S33455",
+              "date": "2024-11-29 12:39:29",
+              "quantity": 5,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 82946,
+              "orderName": "S31069",
+              "date": "2024-07-02 06:09:03",
+              "quantity": 5,
+              "priceUnit": 10.8
+            }
+          ],
+          "statistics": {
+            "mean": 4.333333333333333,
+            "median": 5,
+            "stdDev": 0.9428090415820634,
+            "min": 3,
+            "max": 5,
+            "cv": 0.21757131728816848,
+            "trend": "increasing",
+            "outliers": [],
+            "regularityScore": 0.7925265789148359
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 186.10591435185185,
+            "lastOrderDaysAgo": 126.57355324074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16826,
+        "productName": "[TVF003] TVF TARTINADE BIO CAROTTE 180g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 66.66666666666666,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89846,
+              "orderName": "S37969",
+              "date": "2025-07-09 11:14:05",
+              "quantity": 1,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 85332,
+              "orderName": "S33455",
+              "date": "2024-11-29 12:39:29",
+              "quantity": 1,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 82946,
+              "orderName": "S31069",
+              "date": "2024-07-02 06:09:03",
+              "quantity": 1,
+              "priceUnit": 10.8
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.923069369287737
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 186.10591435185185,
+            "lastOrderDaysAgo": 126.57355324074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16824,
+        "productName": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 4,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 8
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 50,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 3,
+          "orders": [
+            {
+              "orderId": 89846,
+              "orderName": "S37969",
+              "date": "2025-07-09 11:14:05",
+              "quantity": 4,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 85332,
+              "orderName": "S33455",
+              "date": "2024-11-29 12:39:29",
+              "quantity": 5,
+              "priceUnit": 10.8
+            },
+            {
+              "orderId": 82946,
+              "orderName": "S31069",
+              "date": "2024-07-02 06:09:03",
+              "quantity": 2,
+              "priceUnit": 10.8
+            }
+          ],
+          "statistics": {
+            "mean": 3.6666666666666665,
+            "median": 4,
+            "stdDev": 1.247219128924647,
+            "min": 2,
+            "max": 5,
+            "cv": 0.34015067152490375,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.7189789663727947
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "regular",
+            "avgDaysBetweenOrders": 186.10591435185185,
+            "lastOrderDaysAgo": 126.57355324074074,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 16830,
+        "productName": "[TVF002] TVF TARTINADE BIO PAPRIKA 180g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 89846,
+                "orderName": "S37969",
+                "date": "2025-07-09 11:14:05",
+                "quantity": 3,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 85332,
+                "orderName": "S33455",
+                "date": "2024-11-29 12:39:29",
+                "quantity": 5,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 82946,
+                "orderName": "S31069",
+                "date": "2024-07-02 06:09:03",
+                "quantity": 4,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16829,
+        "productName": "[TVF004] TVF TARTINADE BIO OLIVE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 4,
+        "reason": "Predicted 4u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 89846,
+                "orderName": "S37969",
+                "date": "2025-07-09 11:14:05",
+                "quantity": 4,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 85332,
+                "orderName": "S33455",
+                "date": "2024-11-29 12:39:29",
+                "quantity": 5,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 82946,
+                "orderName": "S31069",
+                "date": "2024-07-02 06:09:03",
+                "quantity": 3,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16833,
+        "productName": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 4,
+        "reason": "Predicted 4u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 89846,
+                "orderName": "S37969",
+                "date": "2025-07-09 11:14:05",
+                "quantity": 4,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 85332,
+                "orderName": "S33455",
+                "date": "2024-11-29 12:39:29",
+                "quantity": 6,
+                "priceUnit": 10.8
+              },
+              {
+                "orderId": 82946,
+                "orderName": "S31069",
+                "date": "2024-07-02 06:09:03",
+                "quantity": 6,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16832,
+        "productName": "[TVF009] TVF TARTINADE BIO POIS CHICHES 180g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 89846,
+                "orderName": "S37969",
+                "date": "2025-07-09 11:14:05",
+                "quantity": 1,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 552,
+        "productName": "[MF0012] MF Olives Mix 500g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 89846,
+                "orderName": "S37969",
+                "date": "2025-07-09 11:14:05",
+                "quantity": 2,
+                "priceUnit": 27.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 554,
+        "productName": "[MF0014] MF Olives noires 500g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 89846,
+                "orderName": "S37969",
+                "date": "2025-07-09 11:14:05",
+                "quantity": 2,
+                "priceUnit": 27.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 553,
+        "productName": "[MF0013] MF Olives Vertes 500g",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 126,
+            "orders": [
+              {
+                "orderId": 89846,
+                "orderName": "S37969",
+                "date": "2025-07-09 11:14:05",
+                "quantity": 2,
+                "priceUnit": 27.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 19389,
+        "productName": "[LD004] LD Tartinade Tomate Basilic bio 180g",
+        "mismatchType": "false_negative",
+        "quantity": 8,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 19395,
+        "productName": "[LD010] LD Organic Truffle Spread 135 g",
+        "mismatchType": "false_negative",
+        "quantity": 2,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 19398,
+        "productName": "[LD013] LD Tuscan Organic Spread 180 g",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 19391,
+        "productName": "[LD006] LD Tartinade Olives bio 180g  ",
+        "mismatchType": "false_negative",
+        "quantity": 4,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      },
+      {
+        "productId": 13094,
+        "productName": "[LV055] LV Mini grissini à l'huile d'olive  100g bio",
+        "mismatchType": "false_negative",
+        "quantity": 5,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "medium"
+        }
+      }
+    ]
+  }
+}

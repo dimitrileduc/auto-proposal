@@ -1,0 +1,30 @@
+{
+  "clientId": 73527,
+  "clientName": "Pepinster Jean",
+  "orderName": "S39935",
+  "orderDate": "2025-10-27 10:40:15",
+  "cutoffDate": "2025-10-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 8,
+    "fn": 0,
+    "precision": 0.2,
+    "recall": 1,
+    "f1Score": 0.33333333333333337,
+    "mae": 1,
+    "wmape": 50,
+    "mape": 50,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 30,
+    "promptTokens": 26470,
+    "completionTokens": 4572,
+    "totalTokens": 31042
+  }
+}

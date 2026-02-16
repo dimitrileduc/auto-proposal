@@ -1,0 +1,30 @@
+{
+  "clientId": 21046,
+  "clientName": "La Ferme Colyn",
+  "orderName": "S39557",
+  "orderDate": "2025-10-27 10:02:31",
+  "cutoffDate": "2025-10-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 7,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1,
+    "wmape": 38.88888888888889,
+    "mape": 71.42857142857142,
+    "bias": 5.555555555555555
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 8,
+    "promptTokens": 7551,
+    "completionTokens": 1238,
+    "totalTokens": 8789
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 34516,
+  "clientName": "Fromagerie du Baîrsou",
+  "orderName": "S40265",
+  "orderDate": "2025-11-12 10:51:16",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 13,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.6842105263157895,
+    "recall": 1,
+    "f1Score": 0.8125000000000001,
+    "mae": 0.07692307692307693,
+    "wmape": 7.6923076923076925,
+    "mape": 7.6923076923076925,
+    "bias": 7.6923076923076925
+  },
+  "distribution": {
+    "exactMatch": 12,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 23837,
+    "completionTokens": 4132,
+    "totalTokens": 27969
+  }
+}

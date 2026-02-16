@@ -1,0 +1,30 @@
+{
+  "clientId": 60264,
+  "clientName": "CINEMA GALERIES",
+  "orderName": "S39893",
+  "orderDate": "2025-10-23 11:47:05",
+  "cutoffDate": "2025-10-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 0.8,
+    "wmape": 22.22222222222222,
+    "mape": 30,
+    "bias": 22.22222222222222
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 5,
+    "promptTokens": 4375,
+    "completionTokens": 711,
+    "totalTokens": 5086
+  }
+}

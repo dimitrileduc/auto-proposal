@@ -1,0 +1,30 @@
+{
+  "clientId": 23533,
+  "clientName": "Epicerie Le Colibri",
+  "orderName": "S39305",
+  "orderDate": "2025-09-24 06:17:45",
+  "cutoffDate": "2025-09-23 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 20,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.6451612903225806,
+    "recall": 1,
+    "f1Score": 0.7843137254901961,
+    "mae": 0.3,
+    "wmape": 18.181818181818183,
+    "mape": 22.5,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 14,
+    "partialMatch": 6
+  },
+  "llmUsage": {
+    "calls": 42,
+    "promptTokens": 37699,
+    "completionTokens": 6244,
+    "totalTokens": 43943
+  }
+}

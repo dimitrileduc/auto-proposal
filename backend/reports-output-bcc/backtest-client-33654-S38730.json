@@ -1,0 +1,30 @@
+{
+  "clientId": 33654,
+  "clientName": "La Fromagerie des Cleugnottes",
+  "orderName": "S38730",
+  "orderDate": "2025-08-27 06:55:27",
+  "cutoffDate": "2025-08-26 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 15,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.8333333333333334,
+    "recall": 1,
+    "f1Score": 0.9090909090909091,
+    "mae": 0.26666666666666666,
+    "wmape": 21.052631578947366,
+    "mape": 20,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 11,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 29,
+    "promptTokens": 25368,
+    "completionTokens": 4578,
+    "totalTokens": 29946
+  }
+}

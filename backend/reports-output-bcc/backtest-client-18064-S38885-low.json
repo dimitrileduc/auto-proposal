@@ -1,0 +1,30 @@
+{
+  "clientId": 18064,
+  "clientName": "Depairon Distribution",
+  "orderName": "S38885",
+  "orderDate": "2025-09-05 10:07:36",
+  "cutoffDate": "2025-09-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 9866,
+    "completionTokens": 1695,
+    "totalTokens": 11561
+  }
+}

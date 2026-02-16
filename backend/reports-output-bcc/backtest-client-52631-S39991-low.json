@@ -1,0 +1,30 @@
+{
+  "clientId": 52631,
+  "clientName": "Mil'pots, Emilie Mestdag",
+  "orderName": "S39991",
+  "orderDate": "2025-10-29 11:26:21",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1Score": 1,
+    "mae": 1,
+    "wmape": 50,
+    "mape": 50,
+    "bias": -50
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 20,
+    "promptTokens": 17775,
+    "completionTokens": 3033,
+    "totalTokens": 20808
+  }
+}

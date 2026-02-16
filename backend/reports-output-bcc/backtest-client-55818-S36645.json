@@ -1,0 +1,30 @@
+{
+  "clientId": 55818,
+  "clientName": "CARREFOUR BELGIUM SA, CRF Market BXL TOMBERG",
+  "orderName": "S36645",
+  "orderDate": "2025-05-09 13:56:57",
+  "cutoffDate": "2025-05-08 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 6,
+    "fn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1Score": 0.7692307692307693,
+    "mae": 0.4,
+    "wmape": 28.57142857142857,
+    "mape": 28.333333333333332,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 4
+  },
+  "llmUsage": {
+    "calls": 17,
+    "promptTokens": 15017,
+    "completionTokens": 2612,
+    "totalTokens": 17629
+  }
+}

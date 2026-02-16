@@ -1,0 +1,30 @@
+{
+  "clientId": 60577,
+  "clientName": "VRAC AUDERGHEM",
+  "orderName": "S40056",
+  "orderDate": "2025-11-05 14:50:44",
+  "cutoffDate": "2025-11-04 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.42857142857142855,
+    "recall": 1,
+    "f1Score": 0.6,
+    "mae": 1,
+    "wmape": 60,
+    "mape": 77.77777777777777,
+    "bias": 20
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 18,
+    "promptTokens": 15886,
+    "completionTokens": 2808,
+    "totalTokens": 18694
+  }
+}

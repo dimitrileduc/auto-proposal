@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:14:59.658Z"
+  },
+  "client": {
+    "id": 60419,
+    "name": "LA MAGIE D'ANTAN"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-20 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 14,
+      "llm_usage": {
+        "calls": 14,
+        "promptTokens": 12225,
+        "completionTokens": 2060,
+        "totalTokens": 14285
+      }
+    },
+    "proposalFinal": {
+      "products_count": 14,
+      "total_amount": 319.58,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 294.38,
+        "minimum_required": 300,
+        "gap_filled": 25.19999999999999,
+        "products_adjusted": 1
+      }
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 574,
+        "product_name": "[MF0034] MF Tarti Pomme Raifort 250g ",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 14.46,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 19 août 2025, soit 62 jours d'écart. Bien que la rotation soit très faible, le délai écoulé dépasse largement le cycle habituel pour un produit de ce type en B2B. En application du principe de précaution (risque de rupture à l'horizon de 30 jours), un besoin est détecté. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour éviter le surstockage tout en assurant la présence du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-01-13 12:19:56",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 569,
+        "product_name": "[MF0029] MF Tarti Datte chili 250g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 14.46,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à 62 jours (19 août). Bien que le cycle soit difficile à déterminer avec une seule commande historique, le délai écoulé est important. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est préconisée. La quantité retenue est de 1 unité, correspondant à la médiane et à l'unique valeur observée dans l'historique récent, respectant la règle de maintien pour les rotations faibles.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          },
+          {
+            "date": "2025-01-13 12:19:56",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 18384,
+        "product_name": "[WIG07] WIGNAC cidre naturel bio sans alcool 750ml",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 21.3,
+        "subtotal": 21.3,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 19 août 2025, soit 62 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande récente, le délai écoulé dépasse largement les cycles de réapprovisionnement standards en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter la rupture) et compte tenu du seuil de réapprovisionnement de 30 jours, une commande est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane de l'historique récent pour ce produit à rotation faible.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 21.3
+          },
+          {
+            "date": "2025-04-10 06:47:31",
+            "quantity": 1,
+            "price_unit": 21.3
+          }
+        ]
+      },
+      {
+        "product_id": 18349,
+        "product_name": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.8,
+        "subtotal": 18.8,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 19 août, soit 62 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle de réapprovisionnement standard pour un produit de snacking. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et compte tenu du seuil de 30 jours, un réapprovisionnement est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 18.8
+          },
+          {
+            "date": "2025-01-13 12:19:56",
+            "quantity": 1,
+            "price_unit": 18.8
+          }
+        ]
+      },
+      {
+        "product_id": 18288,
+        "product_name": "[KOKO03] KOKO Kombucha Raspberry Hibiscus 330ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 25.2,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 19 août, soit 62 jours. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : En l'absence de cycle établi et avec une rotation très faible, la quantité est fixée à 1 unité, correspondant à la médiane de l'historique récent, afin de maintenir le stock sans risque de surstockage.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-04-10 06:47:31",
+            "quantity": 1,
+            "price_unit": 25.2
+          }
+        ]
+      },
+      {
+        "product_id": 18287,
+        "product_name": "[KOKO02] KOKO Kombucha Lemon Ginger 330ml",
+        "product_uom": "TU12",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 25.2,
+        "subtotal": 50.4,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 19 août, soit 62 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture), une commande est nécessaire. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1 unité pour éviter le surstockage tout en assurant la présence du produit.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-04-10 06:47:31",
+            "quantity": 1,
+            "price_unit": 25.2
+          },
+          {
+            "date": "2025-01-13 12:19:56",
+            "quantity": 1,
+            "price_unit": 25.2
+          }
+        ]
+      },
+      {
+        "product_id": 16787,
+        "product_name": "[JF027] JF VINAIGRET MIEL MOU WECK 200",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 27,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 19 août 2025, soit 62 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande (rotation très faible), le délai écoulé dépasse largement un cycle standard de réapprovisionnement mensuel. En application du principe de précaution B2B (incertitude sur le cycle = risque de rupture), un besoin est détecté. La quantité retenue correspond à la valeur unique observée dans l'historique récent (1u), conformément à la règle de maintien des faibles rotations sans historique N-1.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 27
+          },
+          {
+            "date": "2025-01-13 12:19:56",
+            "quantity": 1,
+            "price_unit": 27
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 16759,
+        "product_name": "[JF021] JF PICKLES 350 ML",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 20.94,
+        "subtotal": 20.94,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 19 août, soit 62 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle mensuel standard. En B2B, un silence prolongé sur un produit à faible rotation induit un risque de rupture imminent ou un besoin de réapprovisionnement de précaution. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité minimale historique pour éviter le surstock tout en assurant la disponibilité. La médiane est de 1.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 20.94
+          }
+        ]
+      },
+      {
+        "product_id": 16788,
+        "product_name": "[JF026] JF VINAIGRET TRUFFES WECK 200M",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 31.5,
+        "subtotal": 31.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 19 août 2025, soit 62 jours avant la date actuelle. Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En application du principe de précaution B2B (cycle incertain = prévoir commande), un risque de rupture est identifié. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles et le maintien des quantités historiques en l'absence de tendance inverse, la quantité retenue est de 1 unité.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 31.5
+          }
+        ]
+      },
+      {
+        "product_id": 572,
+        "product_name": "[MF0032] MF Tarti Pois chiches 250 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.46,
+        "subtotal": 14.46,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 19 août 2025, soit 62 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours et une absence d'historique long terme pour définir un cycle précis, le principe de précaution B2B s'applique. Le risque de rupture est considéré comme présent en raison de l'intervalle de temps écoulé. ÉTAPE 2 : Estimation quantité. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations faibles (1-2u), la quantité est maintenue à 1 unité pour couvrir le besoin sans créer de surstock inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 14.46
+          }
+        ]
+      },
+      {
+        "product_id": 18356,
+        "product_name": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "product_uom": "TU10",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 26.5,
+        "subtotal": 26.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 19 août 2025, soit 62 jours d'inactivité. Bien que la rotation soit très faible (1u), le délai écoulé dépasse largement le seuil de réapprovisionnement de 30 jours. En l'absence d'un cycle régulier établi, le principe de précaution B2B s'applique pour éviter une rupture prolongée sur cette référence. ÉTAPE 2 : Estimation de la quantité. L'historique récent montre une commande unique de 1u. Conformément à la règle sur les rotations très faibles (1-2u), la quantité est maintenue à 1u pour couvrir le besoin sans risquer un surstockage inutile.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 26.5
+          }
+        ]
+      },
+      {
+        "product_id": 16978,
+        "product_name": "[MF0054] MF Noix de cajou - Fleur de sel 133g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 20.62,
+        "subtotal": 20.62,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 19 août 2025, soit 62 jours avant la date actuelle. Avec un seuil de réapprovisionnement de 30 jours, le risque de rupture est imminent ou déjà avéré pour ce produit à rotation lente. En l'absence d'un cycle régulier établi, le principe de précaution B2B s'applique : il faut prévoir une commande. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité de 1 unité sans l'augmenter, afin d'éviter un surstockage sur un produit dont la fréquence de vente est faible.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 20.62
+          }
+        ]
+      },
+      {
+        "product_id": 16766,
+        "product_name": "[JF012] JF SAUCE BEARNAISE 250ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 19.5,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à 62 jours (19 août). Bien que l'historique soit limité à une seule unité, l'absence de cycle défini et le délai important depuis le dernier mouvement imposent l'application du principe de précaution B2B. Un risque de rupture est identifié à l'horizon des 30 jours (Replenishment Threshold Days). Conformément aux règles de gestion des rotations faibles et incertaines, la quantité retenue est de 1 unité, correspondant à la médiane de l'historique récent.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 17766,
+        "product_name": "[MF0058] MF Confi Groseilles Bessen",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 14.44,
+        "subtotal": 14.44,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte à 62 jours (19 août). Bien que l'historique soit limité à une seule commande, le délai écoulé dépasse largement un cycle mensuel standard. En application du principe de précaution B2B (détection d'un besoin incertain pour éviter la rupture) et face à l'absence d'historique N-1 pour contredire ce besoin, un réapprovisionnement est nécessaire. La quantité retenue correspond à la médiane de l'historique récent (1u).",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-08-19 12:09:35",
+            "quantity": 1,
+            "price_unit": 14.44
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 7,
+    "optional_products_count": 7,
+    "base_amount": 171.62,
+    "optional_amount": 147.96,
+    "total_amount": 319.58,
+    "moq_adjusted": true,
+    "moq_gap": 25.19999999999999
+  },
+  "execution_time_ms": 4772
+}

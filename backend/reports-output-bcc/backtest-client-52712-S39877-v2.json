@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:25:06.594Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-26 00:00:00"
+    }
+  },
+  "client": {
+    "id": 52712,
+    "name": "Natürlich Unverpackt",
+    "order": {
+      "name": "S39877",
+      "date": "2025-10-27 10:45:16"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 1,
+        "falseNegatives": 7,
+        "total": 11
+      },
+      "productMetrics": {
+        "precision": 0.75,
+        "recall": 0.3,
+        "f1Score": 0.4285714285714285,
+        "totalPredicted": 4,
+        "totalReal": 10
+      },
+      "quantityMetrics": {
+        "mae": 2.3333333333333335,
+        "wmape": 77.77777777777779,
+        "mape": 77.77777777777777,
+        "bias": 77.77777777777779,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 3
+        },
+        "rmse": 2.3804761428476167
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 1,
+          "falseNegatives": 7,
+          "total": 11
+        },
+        "productMetrics": {
+          "precision": 0.75,
+          "recall": 0.3,
+          "f1Score": 0.4285714285714285,
+          "totalPredicted": 4,
+          "totalReal": 10
+        },
+        "quantityMetrics": {
+          "mae": 2.3333333333333335,
+          "wmape": 77.77777777777779,
+          "mape": 77.77777777777777,
+          "bias": 77.77777777777779,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 2.3804761428476167
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 10,
+    "promptTokens": 8591,
+    "completionTokens": 987,
+    "totalTokens": 9578
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 570,
+        "productName": "[MF0030] MF Tarti Mangue Curry 250g ",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 6,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 3,
+          "percent": 100,
+          "direction": "over",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88636,
+              "orderName": "S36759",
+              "date": "2025-05-13 15:07:39",
+              "quantity": 1,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 165.3696875,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 575,
+        "productName": "[MF0035] MF Tarti Tomate Ail des ours 250g ",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 66.66666666666666,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88636,
+              "orderName": "S36759",
+              "date": "2025-05-13 15:07:39",
+              "quantity": 1,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 165.3696875,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 569,
+        "productName": "[MF0029] MF Tarti Datte chili 250g",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 3
+        },
+        "error": {
+          "absolute": 2,
+          "percent": 66.66666666666666,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 88636,
+              "orderName": "S36759",
+              "date": "2025-05-13 15:07:39",
+              "quantity": 3,
+              "priceUnit": 14.46
+            }
+          ],
+          "statistics": {
+            "mean": 3,
+            "median": 3,
+            "stdDev": 0,
+            "min": 3,
+            "max": 3,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 165.3696875,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 567,
+        "productName": "[MF0027] MF Tarti Aubergine 250g ",
+        "mismatchType": "false_positive",
+        "quantity": 5,
+        "reason": "Predicted 5u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 165,
+            "orders": [
+              {
+                "orderId": 88636,
+                "orderName": "S36759",
+                "date": "2025-05-13 15:07:39",
+                "quantity": 3,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": [
+      {
+        "productId": 572,
+        "productName": "[MF0032] MF Tarti Pois chiches 250 g",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 3u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 165,
+            "orders": [
+              {
+                "orderId": 88636,
+                "orderName": "S36759",
+                "date": "2025-05-13 15:07:39",
+                "quantity": 1,
+                "priceUnit": 14.46
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 571,
+        "productName": "[MF0031] MF Tarti Olives verte 250g ",
+        "mismatchType": "false_negative",
+        "quantity": 1,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 16949,
+        "productName": "[MF0051] MF Kidney Beans 500g",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        }
+      },
+      {
+        "productId": 16951,
+        "productName": "[RF003] REFIELD Maïs 500G ",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 3u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 165,
+            "orders": [
+              {
+                "orderId": 88636,
+                "orderName": "S36759",
+                "date": "2025-05-13 15:07:39",
+                "quantity": 3,
+                "priceUnit": 11.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16950,
+        "productName": "[MF0052] MF Pois chiches  500g",
+        "mismatchType": "false_negative",
+        "quantity": 3,
+        "reason": "Product analyzed but LLM -> 0 - client ordered 3u",
+        "classification": {
+          "category": "llm_error",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 165,
+            "orders": [
+              {
+                "orderId": 88636,
+                "orderName": "S36759",
+                "date": "2025-05-13 15:07:39",
+                "quantity": 3,
+                "priceUnit": 12
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 14924,
+        "productName": "[VID0009] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 22,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      },
+      {
+        "productId": 14925,
+        "productName": "[VID0010] Consigne casier",
+        "mismatchType": "false_negative",
+        "quantity": 132,
+        "reason": "Never ordered in previous analysis window (no history)",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        }
+      }
+    ]
+  }
+}

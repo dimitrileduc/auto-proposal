@@ -1,0 +1,30 @@
+{
+  "clientId": 71685,
+  "clientName": "CRANSHOF BENOIT",
+  "orderName": "S40052",
+  "orderDate": "2025-11-06 07:13:39",
+  "cutoffDate": "2025-11-05 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 6,
+    "fp": 11,
+    "fn": 0,
+    "precision": 0.35294117647058826,
+    "recall": 1,
+    "f1Score": 0.5217391304347826,
+    "mae": 0.8333333333333334,
+    "wmape": 45.45454545454545,
+    "mape": 41.666666666666664,
+    "bias": -45.45454545454545
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 26,
+    "promptTokens": 23025,
+    "completionTokens": 4028,
+    "totalTokens": 27053
+  }
+}

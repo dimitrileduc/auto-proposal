@@ -1,0 +1,30 @@
+{
+  "clientId": 47771,
+  "clientName": "DLL PROXY ANDRIMONT TRIUM RETA",
+  "orderName": "S40161",
+  "orderDate": "2025-11-12 10:44:14",
+  "cutoffDate": "2025-11-11 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 5,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1,
+    "f1Score": 0.6666666666666666,
+    "mae": 0.6,
+    "wmape": 30,
+    "mape": 26.666666666666664,
+    "bias": -10
+  },
+  "distribution": {
+    "exactMatch": 2,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 10019,
+    "completionTokens": 1868,
+    "totalTokens": 11887
+  }
+}

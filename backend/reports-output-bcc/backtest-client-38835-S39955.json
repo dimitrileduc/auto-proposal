@@ -1,0 +1,30 @@
+{
+  "clientId": 38835,
+  "clientName": "DLL AD THEUX THEUCO",
+  "orderName": "S39955",
+  "orderDate": "2025-10-28 10:52:27",
+  "cutoffDate": "2025-10-27 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 16,
+    "fp": 9,
+    "fn": 0,
+    "precision": 0.64,
+    "recall": 1,
+    "f1Score": 0.7804878048780487,
+    "mae": 0.4375,
+    "wmape": 28.000000000000004,
+    "mape": 28.125,
+    "bias": -12
+  },
+  "distribution": {
+    "exactMatch": 9,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 27,
+    "promptTokens": 24272,
+    "completionTokens": 4216,
+    "totalTokens": 28488
+  }
+}

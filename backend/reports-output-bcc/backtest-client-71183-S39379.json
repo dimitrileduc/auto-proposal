@@ -1,0 +1,30 @@
+{
+  "clientId": 71183,
+  "clientName": "Fromagerie Kaas",
+  "orderName": "S39379",
+  "orderDate": "2025-09-25 06:32:11",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 3,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.75,
+    "recall": 1,
+    "f1Score": 0.8571428571428571,
+    "mae": 0.6666666666666666,
+    "wmape": 33.33333333333333,
+    "mape": 44.444444444444436,
+    "bias": 33.33333333333333
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 2
+  },
+  "llmUsage": {
+    "calls": 7,
+    "promptTokens": 6130,
+    "completionTokens": 1128,
+    "totalTokens": 7258
+  }
+}

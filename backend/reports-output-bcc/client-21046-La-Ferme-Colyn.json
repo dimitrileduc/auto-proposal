@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:18:16.066Z"
+  },
+  "client": {
+    "id": 21046,
+    "name": "La Ferme Colyn"
+  },
+  "config": {
+    "analysisEndDate": "2025-10-26 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 8,
+      "llm_usage": {
+        "calls": 8,
+        "promptTokens": 7551,
+        "completionTokens": 1238,
+        "totalTokens": 8789
+      }
+    },
+    "proposalFinal": {
+      "products_count": 8,
+      "total_amount": 311.74999999999994,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 16978,
+        "product_name": "[MF0054] MF Noix de cajou - Fleur de sel 133g",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 20.62,
+        "subtotal": 61.86,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans réapprovisionnement. Bien que l'historique montre une rotation faible et irrégulière, le délai écoulé dépasse largement les cycles observés l'année précédente (environ 60 à 130 jours). En application du principe de précaution B2B, un risque de rupture est identifié pour les 30 prochains jours. La quantité retenue est de 3 unités, correspondant à la médiane et au volume de la commande la plus récente, afin de maintenir le stock sans surstockage.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-02-03 10:55:51",
+            "quantity": 4,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-12-05 07:40:53",
+            "quantity": 0,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-10-08 09:40:03",
+            "quantity": 3,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-05-23 13:46:24",
+            "quantity": 2,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-03-19 07:34:06",
+            "quantity": 1,
+            "price_unit": 20.62
+          }
+        ]
+      },
+      {
+        "product_id": 16980,
+        "product_name": "[MF0056] MF Noix de cajou - Herbes de Provence 133g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 20.62,
+        "subtotal": 41.24,
+        "confidence": "high",
+        "order_count": 6,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans activité. Bien que l'historique récent soit limité à une seule commande de 2 unités, l'historique de l'année précédente montre une commande à la même période (8 octobre 2024) pour 3 unités. En application du principe de précaution B2B et face à un cycle irrégulier, un risque de rupture est identifié pour l'horizon des 30 prochains jours. La quantité retenue est de 2 unités, correspondant à la médiane de l'historique global et à la valeur la plus basse entre les commandes récentes et N-1 pour éviter le surstockage.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-04-17 14:37:48",
+            "quantity": 3,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-12-05 07:40:53",
+            "quantity": 15,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-10-08 09:40:03",
+            "quantity": 3,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-05-23 13:46:24",
+            "quantity": 2,
+            "price_unit": 20.62
+          },
+          {
+            "date": "2024-03-19 07:34:06",
+            "quantity": 1,
+            "price_unit": 20.62
+          }
+        ]
+      },
+      {
+        "product_id": 13058,
+        "product_name": "[LV160] LV Tartinade Aubergine 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 3,
+        "quantity_source": "llm",
+        "price_unit": 12.79,
+        "subtotal": 38.37,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours. L'historique N-1 montre une commande systématique en octobre (08/10/2024) et décembre. Bien que le cycle soit irrégulier en 2025, l'absence de commande depuis juillet et la saisonnalité historique indiquent un risque de rupture imminent ou un besoin de réapprovisionnement pour la période de fin d'année. Le principe de précaution B2B s'applique. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique long terme est extrêmement stable avec des commandes de 3 unités. La commande récente de 2 unités est isolée. En suivant la règle de la médiane historique et la stabilité du produit sur N-1, la quantité de 3 unités est retenue pour couvrir le besoin.",
+          "summary": "",
+          "baseline_quantity": 3,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-19 13:32:29",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-05-23 13:46:24",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-03-19 07:34:06",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2024-01-09 15:16:31",
+            "quantity": 3,
+            "price_unit": 12.42
+          },
+          {
+            "date": "2023-12-12 13:30:35",
+            "quantity": 3,
+            "price_unit": 12.42
+          }
+        ]
+      },
+      {
+        "product_id": 13059,
+        "product_name": "[LV129] LV Tartinade Carotte Gingembre 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.04,
+        "subtotal": 13.04,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours. Bien que la rotation soit très faible et irrégulière, l'historique de l'année précédente montre une commande en octobre (08/10/2024). En application du principe de précaution B2B et pour couvrir le risque de rupture sur l'horizon des 30 prochains jours, un réapprovisionnement est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane basse des commandes récentes et à la dernière commande enregistrée, afin d'éviter un surstockage sur un produit à rotation lente.",
+          "summary": "",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-19 13:32:29",
+            "quantity": 2,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2024-05-23 13:46:24",
+            "quantity": 1,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2024-03-19 07:34:06",
+            "quantity": 3,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2024-01-09 15:16:31",
+            "quantity": 3,
+            "price_unit": 12.66
+          },
+          {
+            "date": "2023-12-12 13:30:35",
+            "quantity": 3,
+            "price_unit": 12.66
+          }
+        ]
+      },
+      {
+        "product_id": 13060,
+        "product_name": "[LV161] LV Tartinade Mangue curry 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 13.1,
+        "subtotal": 26.2,
+        "confidence": "high",
+        "order_count": 9,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours. Bien que l'historique récent soit faible, l'historique N-1 montre une commande systématique en octobre (08/10/2024). En application du principe de précaution B2B et pour éviter une rupture prolongée sur un produit à rotation lente mais régulière, un réapprovisionnement est nécessaire. La quantité retenue est de 2 unités, correspondant à la médiane la plus basse observée sur les commandes les plus récentes (2025 et fin 2024), conformément à la règle de ne pas surestimer les stocks de sécurité.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-10-08 09:40:03",
+            "quantity": 2,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-08-19 13:32:29",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-05-23 13:46:24",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-03-19 07:34:06",
+            "quantity": 3,
+            "price_unit": 12.72
+          },
+          {
+            "date": "2024-01-09 15:16:31",
+            "quantity": 3,
+            "price_unit": 12.72
+          }
+        ]
+      },
+      {
+        "product_id": 13063,
+        "product_name": "[LV132] LV Tartinade Houmous type 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 13.29,
+        "subtotal": 26.58,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande espacé mais régulier (environ tous les 2 à 3 mois). La dernière commande remontant au 18 juillet 2025 (soit plus de 100 jours), le risque de rupture est imminent pour couvrir les 30 prochains jours. Bien que la commande la plus récente soit de 1 unité, l'historique long terme (N-1) est systématiquement de 2 unités. En application du principe de précaution B2B et pour respecter la médiane historique stable, une commande de 2 unités est préconisée.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-19 13:32:29",
+            "quantity": 2,
+            "price_unit": 12.9
+          },
+          {
+            "date": "2024-05-23 13:46:24",
+            "quantity": 2,
+            "price_unit": 12.9
+          },
+          {
+            "date": "2024-03-19 07:34:06",
+            "quantity": 2,
+            "price_unit": 12.9
+          },
+          {
+            "date": "2024-01-09 15:16:31",
+            "quantity": 2,
+            "price_unit": 12.9
+          },
+          {
+            "date": "2023-12-12 13:30:35",
+            "quantity": 2,
+            "price_unit": 12.9
+          }
+        ]
+      },
+      {
+        "product_id": 13064,
+        "product_name": "[LV162] LV Tartinade Tomato Basilico 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 6,
+        "quantity_source": "llm",
+        "price_unit": 12.67,
+        "subtotal": 76.02,
+        "confidence": "high",
+        "order_count": 10,
+        "llm_prediction": {
+          "reasoning": "L'analyse de l'historique montre un cycle de commande moyen d'environ 70 à 80 jours. La dernière commande datant du 18 juillet 2025 (soit 100 jours avant la date actuelle), le délai de réapprovisionnement habituel est largement dépassé. Il existe un risque de rupture imminent ou avéré dans l'horizon des 30 jours (Replenishment Threshold). La quantité est fixée à 6 unités, ce qui correspond à la médiane constante observée sur l'ensemble des commandes de 2024 et 2025.",
+          "summary": "",
+          "baseline_quantity": 6,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-08-19 13:32:29",
+            "quantity": 6,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-05-23 13:46:24",
+            "quantity": 6,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-03-19 07:34:06",
+            "quantity": 6,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2024-01-09 15:16:31",
+            "quantity": 6,
+            "price_unit": 12.3
+          },
+          {
+            "date": "2023-12-12 13:30:35",
+            "quantity": 3,
+            "price_unit": 12.3
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 17066,
+        "product_name": "[LV345] LV Spread KIDS 200ml Organic",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 14.22,
+        "subtotal": 28.44,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 18 juillet 2025, soit plus de 100 jours sans activité pour ce produit. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter la rupture) et face à l'absence d'historique N-1, une commande est préconisée. La quantité est fixée à 2 unités, correspondant à la médiane (et valeur unique) de la commande la plus récente, respectant la règle de maintien des faibles rotations sans surestimation.",
+          "summary": "",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-07-18 08:33:34",
+            "quantity": 2,
+            "price_unit": 14.22
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 7,
+    "optional_products_count": 1,
+    "base_amount": 283.30999999999995,
+    "optional_amount": 28.44,
+    "total_amount": 311.74999999999994,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3523
+}

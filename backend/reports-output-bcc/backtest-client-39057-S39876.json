@@ -1,0 +1,30 @@
+{
+  "clientId": 39057,
+  "clientName": "SART ET CO/ITM SART-DAMES",
+  "orderName": "S39876",
+  "orderDate": "2025-10-23 11:47:42",
+  "cutoffDate": "2025-10-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 10,
+    "fp": 14,
+    "fn": 0,
+    "precision": 0.4166666666666667,
+    "recall": 1,
+    "f1Score": 0.5882352941176471,
+    "mae": 0.8,
+    "wmape": 80,
+    "mape": 80,
+    "bias": 80
+  },
+  "distribution": {
+    "exactMatch": 3,
+    "partialMatch": 7
+  },
+  "llmUsage": {
+    "calls": 25,
+    "promptTokens": 22337,
+    "completionTokens": 3700,
+    "totalTokens": 26037
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "clientId": 38934,
+  "clientName": "ITM GENADIS (SA)",
+  "orderName": "S39852",
+  "orderDate": "2025-10-22 13:38:10",
+  "cutoffDate": "2025-10-21 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 8,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.3333333333333333,
+    "recall": 1,
+    "f1Score": 0.5,
+    "mae": 0.125,
+    "wmape": 8.333333333333332,
+    "mape": 6.25,
+    "bias": -8.333333333333332
+  },
+  "distribution": {
+    "exactMatch": 7,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 25,
+    "promptTokens": 22797,
+    "completionTokens": 3849,
+    "totalTokens": 26646
+  }
+}

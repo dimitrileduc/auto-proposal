@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:28:56.914Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-04-27 00:00:00"
+    }
+  },
+  "client": {
+    "id": 67401,
+    "name": "UAB \"HOFA LOGISTICS\"",
+    "order": {
+      "name": "S36403",
+      "date": "2025-04-28 07:53:17"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 3,
+        "falsePositives": 3,
+        "falseNegatives": 0,
+        "total": 6
+      },
+      "productMetrics": {
+        "precision": 0.5,
+        "recall": 1,
+        "f1Score": 0.6666666666666666,
+        "totalPredicted": 6,
+        "totalReal": 3
+      },
+      "quantityMetrics": {
+        "mae": 22.666666666666668,
+        "wmape": 68,
+        "mape": 74.76887740453633,
+        "bias": 68,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 3
+        },
+        "rmse": 23.706539182259394
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 3,
+          "falsePositives": 3,
+          "falseNegatives": 0,
+          "total": 6
+        },
+        "productMetrics": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1Score": 0.6666666666666666,
+          "totalPredicted": 6,
+          "totalReal": 3
+        },
+        "quantityMetrics": {
+          "mae": 22.666666666666668,
+          "wmape": 68,
+          "mape": 74.76887740453633,
+          "bias": 68,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 3
+          },
+          "rmse": 23.706539182259394
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 6,
+    "promptTokens": 5260,
+    "completionTokens": 909,
+    "totalTokens": 6169
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 16753,
+        "productName": "[JF036] JF MITRAILLETTE SQUEEZE 300ML",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 56,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 30
+        },
+        "error": {
+          "absolute": 26,
+          "percent": 86.66666666666667,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 85858,
+              "orderName": "S33981",
+              "date": "2025-01-03 14:02:01",
+              "quantity": 56,
+              "priceUnit": 26.4
+            }
+          ],
+          "statistics": {
+            "mean": 56,
+            "median": 56,
+            "stdDev": 0,
+            "min": 56,
+            "max": 56,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 113.37359953703704,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16736,
+        "productName": "[JF040] JF CURRY KETCHUP SQUEEZE 300ML",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 56,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 27
+        },
+        "error": {
+          "absolute": 29,
+          "percent": 107.40740740740742,
+          "direction": "over",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 85858,
+              "orderName": "S33981",
+              "date": "2025-01-03 14:02:01",
+              "quantity": 56,
+              "priceUnit": 26.4
+            }
+          ],
+          "statistics": {
+            "mean": 56,
+            "median": 56,
+            "stdDev": 0,
+            "min": 56,
+            "max": 56,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 113.37359953703704,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 16731,
+        "productName": "[JF035] JF BURGER SQUEEZE 300ML",
+        "productUom": "TU12",
+        "prediction": {
+          "quantity": 56,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 43
+        },
+        "error": {
+          "absolute": 13,
+          "percent": 30.23255813953488,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 85858,
+              "orderName": "S33981",
+              "date": "2025-01-03 14:02:01",
+              "quantity": 56,
+              "priceUnit": 26.4
+            }
+          ],
+          "statistics": {
+            "mean": 56,
+            "median": 56,
+            "stdDev": 0,
+            "min": 56,
+            "max": 56,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 113.37359953703704,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 16824,
+        "productName": "[TVF005] TVF TARTINADE BIO AUBERGINE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 217,
+        "reason": "Predicted 217u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 113,
+            "orders": [
+              {
+                "orderId": 85858,
+                "orderName": "S33981",
+                "date": "2025-01-03 14:02:01",
+                "quantity": 217,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16833,
+        "productName": "[TVF006] TVF TARTINADE BIO TOMATE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 217,
+        "reason": "Predicted 217u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 113,
+            "orders": [
+              {
+                "orderId": 85858,
+                "orderName": "S33981",
+                "date": "2025-01-03 14:02:01",
+                "quantity": 217,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 16827,
+        "productName": "[TVF001] TVF TARTINADE BIO MANGUE 180g",
+        "mismatchType": "false_positive",
+        "quantity": 217,
+        "reason": "Predicted 217u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "high"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 113,
+            "orders": [
+              {
+                "orderId": 85858,
+                "orderName": "S33981",
+                "date": "2025-01-03 14:02:01",
+                "quantity": 217,
+                "priceUnit": 10.8
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

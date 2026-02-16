@@ -1,0 +1,30 @@
+{
+  "clientId": 17324,
+  "clientName": "CARREFOUR BELGIUM SA, Market Bastogne Esperanto",
+  "orderName": "S38812",
+  "orderDate": "2025-09-15 06:11:58",
+  "cutoffDate": "2025-09-14 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 2,
+    "fp": 16,
+    "fn": 0,
+    "precision": 0.1111111111111111,
+    "recall": 1,
+    "f1Score": 0.19999999999999998,
+    "mae": 3.5,
+    "wmape": 116.66666666666667,
+    "mape": 70,
+    "bias": 116.66666666666667
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 1
+  },
+  "llmUsage": {
+    "calls": 21,
+    "promptTokens": 18882,
+    "completionTokens": 3591,
+    "totalTokens": 22473
+  }
+}

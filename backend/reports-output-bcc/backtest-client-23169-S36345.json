@@ -1,0 +1,30 @@
+{
+  "clientId": 23169,
+  "clientName": "Die Auffüllerei GmbH",
+  "orderName": "S36345",
+  "orderDate": "2025-04-23 09:55:52",
+  "cutoffDate": "2025-04-22 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.9,
+    "recall": 1,
+    "f1Score": 0.9473684210526316,
+    "mae": 0.4444444444444444,
+    "wmape": 22.22222222222222,
+    "mape": 37.03703703703704,
+    "bias": 22.22222222222222
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 11,
+    "promptTokens": 9775,
+    "completionTokens": 1692,
+    "totalTokens": 11467
+  }
+}

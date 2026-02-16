@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2026-01-11T10:14:11.582Z"
+  },
+  "client": {
+    "id": 38705,
+    "name": "AUX DELICES DE MON ENFANCE",
+    "email": "auxdelicesdemonenfance@outlook.com"
+  },
+  "config": {
+    "analysisEndDate": "2026-01-11 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": false
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 8,
+      "llm_usage": {
+        "calls": 8,
+        "promptTokens": 7346,
+        "completionTokens": 1296,
+        "totalTokens": 8642
+      }
+    },
+    "proposalFinal": {
+      "products_count": 8,
+      "total_amount": 306.23,
+      "moq_adjustment_applied": true,
+      "adjustment_details": {
+        "original_total": 253.43,
+        "minimum_required": 300,
+        "gap_filled": 52.80000000000001,
+        "products_adjusted": 2
+      }
+    },
+    "quote": {
+      "quote_id": 92308,
+      "quote_name": "S40429",
+      "quote_state": "draft",
+      "amount_total_ht": 293.19,
+      "amount_total_ttc": 310.78,
+      "tax_total": 17.59,
+      "created_at": "2026-01-11 10:13:50",
+      "lines_count": 7,
+      "optional_products_count": 1,
+      "order_lines": [
+        {
+          "product_id": 19272,
+          "product_name": "[LV357] LV Tartinade BIO Asperge 190g",
+          "quantity": 1,
+          "price_unit": 18.6,
+          "subtotal_ht": 18.6
+        },
+        {
+          "product_id": 13091,
+          "product_name": "[LV215] LV Biscuits apéro Fromage Parmesan 100g bio ",
+          "quantity": 1,
+          "price_unit": 25.56,
+          "subtotal_ht": 25.56
+        },
+        {
+          "product_id": 16743,
+          "product_name": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+          "quantity": 5,
+          "price_unit": 25.8,
+          "subtotal_ht": 129
+        },
+        {
+          "product_id": 19354,
+          "product_name": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+          "quantity": 2,
+          "price_unit": 19.5,
+          "subtotal_ht": 39
+        },
+        {
+          "product_id": 14999,
+          "product_name": "[LV342] LV Organic Broccoli Spread 190 g",
+          "quantity": 1,
+          "price_unit": 13.53,
+          "subtotal_ht": 13.53
+        },
+        {
+          "product_id": 16790,
+          "product_name": "[JF025] JF VINAIGRETTE FH WECK 200ML",
+          "quantity": 2,
+          "price_unit": 27,
+          "subtotal_ht": 54
+        },
+        {
+          "product_id": 16776,
+          "product_name": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+          "quantity": 1,
+          "price_unit": 13.5,
+          "subtotal_ht": 13.5
+        }
+      ],
+      "optional_products": [
+        {
+          "product_id": 13059,
+          "product_name": "[LV129] LV Tartinade Carotte Gingembre 190g",
+          "quantity": 1,
+          "price_unit": 13.04,
+          "subtotal_ht": 13.04
+        }
+      ]
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 19272,
+        "product_name": "[LV357] LV Tartinade BIO Asperge 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 18.6,
+        "subtotal": 18.6,
+        "moq_adjustment": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 08/10/2025, soit 95 jours sans mouvement. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain pour éviter la rupture) et conformément à la règle des rotations faibles (maintenir 1u), une commande de 1 unité est préconisée pour reconstituer le stock.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-08 07:25:19",
+            "quantity": 1,
+            "price_unit": 18.6
+          },
+          {
+            "date": "2025-06-03 11:53:05",
+            "quantity": 1,
+            "price_unit": 18.6
+          }
+        ]
+      },
+      {
+        "product_id": 13091,
+        "product_name": "[LV215] LV Biscuits apéro Fromage Parmesan 100g bio ",
+        "product_uom": "TU9",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 25.56,
+        "subtotal": 25.56,
+        "moq_adjustment": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande remonte au 08/10/2025, soit 95 jours d'inactivité. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (incertitude sur le cycle = risque de rupture), un besoin est détecté pour couvrir les 30 prochains jours. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique récent montre une commande unique de 1 unité. Conformément aux règles pour les rotations très faibles (1-2u), on maintient la quantité minimale historique sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-08 07:25:19",
+            "quantity": 1,
+            "price_unit": 25.56
+          },
+          {
+            "date": "2025-06-03 11:53:05",
+            "quantity": 1,
+            "price_unit": 25.56
+          }
+        ]
+      },
+      {
+        "product_id": 16743,
+        "product_name": "[JF008] JF MAYONNA DU CHEF 470 ML WECK",
+        "product_uom": "TU6",
+        "quantity_recommended": 5,
+        "quantity_source": "llm",
+        "price_unit": 25.8,
+        "subtotal": 129,
+        "moq_adjustment": 1,
+        "confidence": "high",
+        "order_count": 7,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. La dernière commande remonte au 08/10/2025, soit plus de 90 jours. Bien que le cycle soit irrégulier, l'historique N-1 montre une activité sur la période fin d'année/début d'année. En application du principe de précaution B2B (doute sur le cycle = prévoir), un réapprovisionnement est nécessaire pour éviter une rupture prolongée. ÉTAPE 2 : Estimation de la quantité. L'historique récent et N-1 montre des volumes stables entre 3 et 4 unités. La médiane des commandes (3, 3, 4, 4) est de 3.5. En suivant la règle de choisir la valeur la plus haute entre la médiane et la dernière commande pour maintenir le stock sur un produit à faible rotation, ou la médiane arrondie, nous retenons 4 unités pour correspondre au dernier besoin exprimé.",
+          "summary": "Réapprovisionnement de précaution (cycle long).",
+          "baseline_quantity": 4,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-03-31 11:10:33",
+            "quantity": 2,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2025-01-13 13:37:49",
+            "quantity": 1,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2024-11-05 07:17:48",
+            "quantity": 4,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2024-10-30 13:09:31",
+            "quantity": 3,
+            "price_unit": 25.8
+          },
+          {
+            "date": "2024-05-30 09:20:23",
+            "quantity": 3,
+            "price_unit": 25.8
+          }
+        ]
+      },
+      {
+        "product_id": 19354,
+        "product_name": "[JF054] JF LEMON MAYONNAISE 250ml Weck",
+        "product_uom": "TU6",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 19.5,
+        "subtotal": 39,
+        "moq_adjustment": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 08/10/2025, soit 95 jours sans activité. Bien que le cycle soit difficile à déterminer avec une seule commande récente, le principe de précaution B2B s'applique car le délai dépasse largement les seuils de rotation standards. Le risque de rupture ou de besoin imminent est considéré comme présent. La quantité retenue correspond à la médiane (et unique valeur) de l'historique récent pour maintenir le stock sans surstockage.",
+          "summary": "Réapprovisionnement de précaution (95j sans commande)",
+          "baseline_quantity": 2,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-08 07:25:19",
+            "quantity": 2,
+            "price_unit": 19.5
+          },
+          {
+            "date": "2025-06-03 11:53:05",
+            "quantity": 1,
+            "price_unit": 19.5
+          }
+        ]
+      },
+      {
+        "product_id": 14999,
+        "product_name": "[LV342] LV Organic Broccoli Spread 190 g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.53,
+        "subtotal": 13.53,
+        "moq_adjustment": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 08/10/2025, soit 95 jours. Bien que la rotation soit très faible (1 unité), le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution et de la règle de détection du besoin en cas de cycle irrégulier ou incertain, un risque de rupture est identifié pour les 30 prochains jours. La quantité retenue est de 1 unité, correspondant à la médiane historique et à la règle de maintien pour les produits à très faible rotation.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-08 07:25:19",
+            "quantity": 1,
+            "price_unit": 13.53
+          },
+          {
+            "date": "2025-06-03 11:53:05",
+            "quantity": 1,
+            "price_unit": 13.53
+          }
+        ]
+      },
+      {
+        "product_id": 16790,
+        "product_name": "[JF025] JF VINAIGRETTE FH WECK 200ML",
+        "product_uom": "TU9",
+        "quantity_recommended": 2,
+        "quantity_source": "llm",
+        "price_unit": 27,
+        "subtotal": 54,
+        "moq_adjustment": 1,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : La dernière commande remonte au 08/10/2025, soit plus de 90 jours. Bien que la rotation soit très faible, le délai écoulé dépasse largement les cycles habituels observés entre 2024 et 2025. En application du principe de précaution B2B (détection d'un besoin incertain), un risque de rupture est identifié. ÉTAPE 2 : L'historique montre des commandes unitaires (1u en 2025) ou très faibles (2u en 2024). Conformément à la règle sur les rotations faibles, on maintient la quantité minimale de la médiane récente pour éviter le surstock.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-08 07:25:19",
+            "quantity": 1,
+            "price_unit": 27
+          },
+          {
+            "date": "2025-03-31 11:10:33",
+            "quantity": 1,
+            "price_unit": 27
+          },
+          {
+            "date": "2024-05-30 09:20:23",
+            "quantity": 2,
+            "price_unit": 27
+          }
+        ]
+      },
+      {
+        "product_id": 16776,
+        "product_name": "[JF031] JF SAUCE LIEGEOISE 380GX6",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.5,
+        "subtotal": 13.5,
+        "moq_adjustment": 0,
+        "confidence": "medium",
+        "order_count": 2,
+        "llm_prediction": {
+          "reasoning": "La dernière commande remonte au 08/10/2025, soit plus de 90 jours. Bien que la rotation soit très faible (1 unité par commande), le délai écoulé dépasse largement les cycles habituels observés. En application du principe de précaution B2B et pour éviter une rupture sur un produit à rotation lente mais constante, un réapprovisionnement est nécessaire. La quantité retenue est de 1 unité, correspondant à la médiane stricte de l'historique récent et N-1.",
+          "summary": "Réappro de précaution (rotation lente 1u)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-08 07:25:19",
+            "quantity": 1,
+            "price_unit": 13.5
+          },
+          {
+            "date": "2024-05-30 09:20:23",
+            "quantity": 1,
+            "price_unit": 13.5
+          }
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "product_id": 13059,
+        "product_name": "[LV129] LV Tartinade Carotte Gingembre 190g",
+        "product_uom": "TU6",
+        "quantity_recommended": 1,
+        "quantity_source": "llm",
+        "price_unit": 13.04,
+        "subtotal": 13.04,
+        "moq_adjustment": 0,
+        "confidence": "low",
+        "order_count": 1,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 (DÉTECTION) : La dernière commande remonte au 08/10/2025, soit 95 jours avant la date actuelle. Bien que la rotation soit très faible, le délai écoulé dépasse largement un cycle de réapprovisionnement standard en B2B. En application du principe de précaution (détection d'un besoin incertain), une commande est nécessaire pour éviter une rupture prolongée. ÉTAPE 2 (QUANTITÉ) : L'historique récent montre une commande unique de 1 unité. Conformément à la règle sur les rotations très faibles (1-2u), on maintient la quantité à 1 unité sans l'augmenter.",
+          "summary": "Réapprovisionnement de précaution (rotation faible)",
+          "baseline_quantity": 1,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2025-10-08 07:25:19",
+            "quantity": 1,
+            "price_unit": 13.04
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "base_products_count": 7,
+    "optional_products_count": 1,
+    "base_amount": 293.19,
+    "optional_amount": 13.04,
+    "total_amount": 306.23,
+    "moq_adjusted": true,
+    "moq_gap": 52.80000000000001,
+    "quote_name": "S40429",
+    "quote_id": 92308
+  },
+  "execution_time_ms": 45447
+}

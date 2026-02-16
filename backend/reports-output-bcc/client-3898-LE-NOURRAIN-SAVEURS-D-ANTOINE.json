@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:12:37.627Z"
+  },
+  "client": {
+    "id": 3898,
+    "name": "LE NOURRAIN SAVEURS D'ANTOINE"
+  },
+  "config": {
+    "analysisEndDate": "2025-08-18 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 1000,
+        "completionTokens": 224,
+        "totalTokens": 1224
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 1402.56,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 9310,
+        "product_name": "[PF0509] YVALLI GR BOUL TOMATE 2,5 KG",
+        "product_uom": "TU6",
+        "quantity_recommended": 24,
+        "quantity_source": "llm",
+        "price_unit": 58.44,
+        "subtotal": 1402.56,
+        "confidence": "high",
+        "order_count": 13,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : DÉTECTION DU BESOIN. La dernière commande enregistrée date du 04/04/2025. L'historique N-1 montre une commande récurrente début août (08/08/2024). Avec une date actuelle au 18/08/2025 et un seuil de réapprovisionnement de 30 jours, le cycle annuel indique un besoin immédiat pour couvrir la période estivale/rentrée. ÉTAPE 2 : ESTIMATION QUANTITÉ. L'historique long terme montre une stabilité forte autour de 24 unités (médiane historique). Bien que la dernière commande ponctuelle était de 36u, les règles de gestion B2B préconisent de ne pas se baser sur les pics exceptionnels et de privilégier la médiane ou la valeur la plus basse en cas de doute pour éviter le surstock. On retient donc la quantité standard de 24u.",
+          "summary": "",
+          "baseline_quantity": 24,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-04-05 09:41:13",
+            "quantity": 24,
+            "price_unit": 56.7
+          },
+          {
+            "date": "2024-02-09 09:18:02",
+            "quantity": 26,
+            "price_unit": 56.7
+          },
+          {
+            "date": "2024-01-19 10:29:55",
+            "quantity": 26,
+            "price_unit": 56.7
+          },
+          {
+            "date": "2023-11-17 09:42:38",
+            "quantity": 24,
+            "price_unit": 56.7
+          },
+          {
+            "date": "2023-10-06 08:12:05",
+            "quantity": 27,
+            "price_unit": 56.7
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 1402.56,
+    "optional_amount": 0,
+    "total_amount": 1402.56,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 3174
+}

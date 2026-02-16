@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2025-12-30T14:26:17.989Z"
+  },
+  "client": {
+    "id": 3651,
+    "name": "NIMAVERT"
+  },
+  "config": {
+    "analysisEndDate": "2025-05-21 00:00:00",
+    "replenishmentThreshold": 30,
+    "moqMinimum": 300,
+    "skipOdooQuoteGeneration": true
+  },
+  "phases": {
+    "stockAnalysis": {
+      "products_count": 1,
+      "llm_usage": {
+        "calls": 1,
+        "promptTokens": 901,
+        "completionTokens": 192,
+        "totalTokens": 1093
+      }
+    },
+    "proposalFinal": {
+      "products_count": 1,
+      "total_amount": 2851.2000000000003,
+      "moq_adjustment_applied": false
+    }
+  },
+  "products": {
+    "base": [
+      {
+        "product_id": 14923,
+        "product_name": "[PF3268] TARTINADE HOUMOUS AUX GRILLONS FUMES 190G",
+        "product_uom": "TU6",
+        "quantity_recommended": 330,
+        "quantity_source": "llm",
+        "price_unit": 8.64,
+        "subtotal": 2851.2000000000003,
+        "confidence": "medium",
+        "order_count": 3,
+        "llm_prediction": {
+          "reasoning": "ÉTAPE 1 : Détection du besoin. Aucune commande n'a été passée en 2025. L'historique N-1 montre une commande majeure en juin (02/06/2023). Avec une date actuelle au 21/05 et un seuil de réapprovisionnement de 30 jours, nous entrons dans la fenêtre critique pour couvrir la période de vente de juin. Le principe de précaution B2B impose de prévoir la commande pour éviter la rupture sur ce cycle annuel. ÉTAPE 2 : Estimation de la quantité. En l'absence d'historique récent, la référence est la commande de la même période l'année précédente. Les deux dernières commandes connues étant strictement identiques (330u), cette valeur est retenue comme volume de référence stable pour ce produit à rotation spécifique.",
+          "summary": "",
+          "baseline_quantity": 330,
+          "model": "google/gemini-3-flash-preview",
+          "provider": "ax-openrouter"
+        },
+        "recent_orders": [
+          {
+            "date": "2024-11-27 10:41:39",
+            "quantity": 330,
+            "price_unit": 8.64
+          },
+          {
+            "date": "2024-01-09 07:45:55",
+            "quantity": 330,
+            "price_unit": 8.64
+          },
+          {
+            "date": "2023-06-02 11:53:45",
+            "quantity": 330,
+            "price_unit": 8.64
+          }
+        ]
+      }
+    ],
+    "optional": []
+  },
+  "summary": {
+    "base_products_count": 1,
+    "optional_products_count": 0,
+    "base_amount": 2851.2000000000003,
+    "optional_amount": 0,
+    "total_amount": 2851.2000000000003,
+    "moq_adjusted": false
+  },
+  "execution_time_ms": 2461
+}

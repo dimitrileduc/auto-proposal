@@ -1,0 +1,870 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:28:23.527Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-01-21 00:00:00"
+    }
+  },
+  "client": {
+    "id": 58762,
+    "name": "OH GOURMAND SAS",
+    "order": {
+      "name": "S34450",
+      "date": "2025-01-22 08:35:51"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 11,
+        "falsePositives": 3,
+        "falseNegatives": 0,
+        "total": 14
+      },
+      "productMetrics": {
+        "precision": 0.7857142857142857,
+        "recall": 1,
+        "f1Score": 0.88,
+        "totalPredicted": 14,
+        "totalReal": 11
+      },
+      "quantityMetrics": {
+        "mae": 9.545454545454545,
+        "wmape": 85.36585365853658,
+        "mape": 79.47947214076247,
+        "bias": -69.10569105691057,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 11
+        },
+        "rmse": 12.58064892097094
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 1,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 1
+        },
+        "productMetrics": {
+          "precision": 1,
+          "recall": 1,
+          "f1Score": 1,
+          "totalPredicted": 1,
+          "totalReal": 1
+        },
+        "quantityMetrics": {
+          "mae": 4,
+          "wmape": 80,
+          "mape": 80,
+          "bias": -80,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 1
+          },
+          "rmse": 4
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 10,
+          "falsePositives": 3,
+          "falseNegatives": 0,
+          "total": 13
+        },
+        "productMetrics": {
+          "precision": 0.7692307692307693,
+          "recall": 1,
+          "f1Score": 0.8695652173913044,
+          "totalPredicted": 13,
+          "totalReal": 10
+        },
+        "quantityMetrics": {
+          "mae": 10.1,
+          "wmape": 85.59322033898306,
+          "mape": 79.4274193548387,
+          "bias": -68.64406779661016,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 10
+          },
+          "rmse": 13.133925536563698
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 0,
+          "falseNegatives": 0,
+          "total": 0
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 0,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12500,
+    "completionTokens": 2271,
+    "totalTokens": 14771
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 9070,
+        "productName": "[PF1695] LD FR TARTINADE BIO TOMATE 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 16,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 15
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 6.666666666666667,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 16,
+              "priceUnit": 9.6
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 8.5,
+            "median": 9,
+            "stdDev": 7.5,
+            "min": 1,
+            "max": 16,
+            "cv": 0.8823529411764706,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4705882352941177
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9181,
+        "productName": "[PF1693] LD FR TARTINAD BIO CAROTTE 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 31
+        },
+        "error": {
+          "absolute": 30,
+          "percent": 96.7741935483871,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 0,
+              "priceUnit": 0
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 0.5,
+            "median": 1,
+            "stdDev": 0.5,
+            "min": 0,
+            "max": 1,
+            "cv": 1,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9182,
+        "productName": "[PF1694] LD FR TARTINAD BIO POIVRON 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 16
+        },
+        "error": {
+          "absolute": 15,
+          "percent": 93.75,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 15,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 8,
+            "median": 8,
+            "stdDev": 7,
+            "min": 1,
+            "max": 15,
+            "cv": 0.875,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.47500000000000003
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9426,
+        "productName": "[PF2937] LD FR TARTINADE BIO POIS 200",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 15
+        },
+        "error": {
+          "absolute": 14,
+          "percent": 93.33333333333333,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 16,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 8.5,
+            "median": 9,
+            "stdDev": 7.5,
+            "min": 1,
+            "max": 16,
+            "cv": 0.8823529411764706,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4705882352941177
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9184,
+        "productName": "[PF1696] CB9012 LD FR TARTINADE BIO MANGUE 180G",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 16
+        },
+        "error": {
+          "absolute": 15,
+          "percent": 93.75,
+          "direction": "under",
+          "severity": "critical",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 15,
+              "priceUnit": 9.9
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 8,
+            "median": 8,
+            "stdDev": 7,
+            "min": 1,
+            "max": 15,
+            "cv": 0.875,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.47500000000000003
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 17509,
+        "productName": "[PF3317] CB9028 - LD FR PESTO BIO AIL DES OURS 135G",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 13,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 8,
+          "percent": 160,
+          "direction": "over",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 13,
+              "priceUnit": 13.2
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 7,
+            "median": 7,
+            "stdDev": 6,
+            "min": 1,
+            "max": 13,
+            "cv": 0.8571428571428571,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.48571428571428577
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9180,
+        "productName": "[PF1692] CB9005 LD FR AIOLI PESTO BIO 200ML",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 80,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 12,
+              "priceUnit": 10.2
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 6.5,
+            "median": 7,
+            "stdDev": 5.5,
+            "min": 1,
+            "max": 12,
+            "cv": 0.8461538461538461,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.49230769230769234
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9187,
+        "productName": "[PF1699] CB9006 LD FR VINAI CAESAR BIO PET 250ML",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 80,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 0,
+              "priceUnit": 0
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 0.5,
+            "median": 1,
+            "stdDev": 0.5,
+            "min": 0,
+            "max": 1,
+            "cv": 1,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9247,
+        "productName": "[PF1792] LD MAYONNAI TRUFFES 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 10
+        },
+        "error": {
+          "absolute": 9,
+          "percent": 90,
+          "direction": "under",
+          "severity": "high",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 0,
+              "priceUnit": 0
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 0.5,
+            "median": 1,
+            "stdDev": 0.5,
+            "min": 0,
+            "max": 1,
+            "cv": 1,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9260,
+        "productName": "[PF1805] LD SAUCE COCKTAIL 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "medium"
+        },
+        "reality": {
+          "quantity": 0
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 0,
+          "direction": "over",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 2,
+          "orders": [
+            {
+              "orderId": 85782,
+              "orderName": "S33905",
+              "date": "2024-12-13 13:00:56",
+              "quantity": 0,
+              "priceUnit": 0
+            },
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 0.5,
+            "median": 1,
+            "stdDev": 0.5,
+            "min": 0,
+            "max": 1,
+            "cv": 1,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0.4
+          },
+          "features": {
+            "quantityType": "highly_variable",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0.05832175925925926,
+            "lastOrderDaysAgo": 38.457685185185184,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      },
+      {
+        "productId": 9257,
+        "productName": "[PF1802] LD MOUTARDE MIEL 250ML WECK",
+        "productUom": "TU6",
+        "prediction": {
+          "quantity": 1,
+          "source": "llm",
+          "confidence": "low"
+        },
+        "reality": {
+          "quantity": 5
+        },
+        "error": {
+          "absolute": 4,
+          "percent": 80,
+          "direction": "under",
+          "severity": "medium",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 1,
+          "orders": [
+            {
+              "orderId": 85777,
+              "orderName": "S33900",
+              "date": "2024-12-13 11:36:57",
+              "quantity": 1,
+              "priceUnit": 0
+            }
+          ],
+          "statistics": {
+            "mean": 1,
+            "median": 1,
+            "stdDev": 0,
+            "min": 1,
+            "max": 1,
+            "cv": 0,
+            "trend": "stable",
+            "outliers": [],
+            "regularityScore": 0
+          },
+          "features": {
+            "quantityType": "fixed",
+            "orderingPattern": "irregular",
+            "avgDaysBetweenOrders": 0,
+            "lastOrderDaysAgo": 38.51600694444444,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": false
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 9430,
+        "productName": "[PF2972] LD FR TARTINADE BIO OLIVE 200",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 85782,
+                "orderName": "S33905",
+                "date": "2024-12-13 13:00:56",
+                "quantity": 16,
+                "priceUnit": 9.9
+              },
+              {
+                "orderId": 85777,
+                "orderName": "S33900",
+                "date": "2024-12-13 11:36:57",
+                "quantity": 1,
+                "priceUnit": 0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9269,
+        "productName": "[PF1815] LD VINAIGRETTE FH WECK 200ML",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 85782,
+                "orderName": "S33905",
+                "date": "2024-12-13 13:00:56",
+                "quantity": 15,
+                "priceUnit": 22.41
+              },
+              {
+                "orderId": 85777,
+                "orderName": "S33900",
+                "date": "2024-12-13 11:36:57",
+                "quantity": 1,
+                "priceUnit": 0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 9264,
+        "productName": "[PF1809] LD SAUCE BEARNAISE 250ML WECK",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 2,
+            "lastOrderDaysAgo": 38,
+            "orders": [
+              {
+                "orderId": 85782,
+                "orderName": "S33905",
+                "date": "2024-12-13 13:00:56",
+                "quantity": 12,
+                "priceUnit": 15.3
+              },
+              {
+                "orderId": 85777,
+                "orderName": "S33900",
+                "date": "2024-12-13 11:36:57",
+                "quantity": 1,
+                "priceUnit": 0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

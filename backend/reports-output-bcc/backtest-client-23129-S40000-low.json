@@ -1,0 +1,30 @@
+{
+  "clientId": 23129,
+  "clientName": "Macavrac",
+  "orderName": "S40000",
+  "orderDate": "2025-10-29 14:29:06",
+  "cutoffDate": "2025-10-28 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 1,
+    "fp": 4,
+    "fn": 0,
+    "precision": 0.2,
+    "recall": 1,
+    "f1Score": 0.33333333333333337,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 1,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 23,
+    "promptTokens": 20659,
+    "completionTokens": 3355,
+    "totalTokens": 24014
+  }
+}

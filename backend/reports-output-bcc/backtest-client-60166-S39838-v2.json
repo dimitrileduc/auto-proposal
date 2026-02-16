@@ -1,0 +1,906 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2025-12-30T14:20:30.245Z",
+    "config": {
+      "daysBeforePrediction": 1,
+      "analysisWindowDays": 365,
+      "cutoffDate": "2025-10-20 00:00:00"
+    }
+  },
+  "client": {
+    "id": 60166,
+    "name": "AU VERT G",
+    "order": {
+      "name": "S39838",
+      "date": "2025-10-21 09:26:44"
+    }
+  },
+  "metrics": {
+    "all": {
+      "counts": {
+        "truePositives": 2,
+        "falsePositives": 12,
+        "falseNegatives": 0,
+        "total": 14
+      },
+      "productMetrics": {
+        "precision": 0.14285714285714285,
+        "recall": 1,
+        "f1Score": 0.25,
+        "totalPredicted": 14,
+        "totalReal": 2
+      },
+      "quantityMetrics": {
+        "mae": 1,
+        "wmape": 16.666666666666664,
+        "mape": 16.666666666666664,
+        "bias": -16.666666666666664,
+        "distribution": {
+          "exactMatch": 0,
+          "partialMatch": 2
+        },
+        "rmse": 1
+      }
+    },
+    "byConfidence": {
+      "low": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 2,
+          "falseNegatives": 0,
+          "total": 2
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 2,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "medium": {
+        "counts": {
+          "truePositives": 0,
+          "falsePositives": 4,
+          "falseNegatives": 0,
+          "total": 4
+        },
+        "productMetrics": {
+          "precision": 0,
+          "recall": 0,
+          "f1Score": 0,
+          "totalPredicted": 4,
+          "totalReal": 0
+        },
+        "quantityMetrics": {
+          "mae": 0,
+          "wmape": 0,
+          "mape": 0,
+          "bias": 0,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 0
+          },
+          "rmse": 0
+        }
+      },
+      "high": {
+        "counts": {
+          "truePositives": 2,
+          "falsePositives": 6,
+          "falseNegatives": 0,
+          "total": 8
+        },
+        "productMetrics": {
+          "precision": 0.25,
+          "recall": 1,
+          "f1Score": 0.4,
+          "totalPredicted": 8,
+          "totalReal": 2
+        },
+        "quantityMetrics": {
+          "mae": 1,
+          "wmape": 16.666666666666664,
+          "mape": 16.666666666666664,
+          "bias": -16.666666666666664,
+          "distribution": {
+            "exactMatch": 0,
+            "partialMatch": 2
+          },
+          "rmse": 1
+        }
+      }
+    }
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12618,
+    "completionTokens": 2311,
+    "totalTokens": 14929
+  },
+  "products": {
+    "truePositives": [
+      {
+        "productId": 18344,
+        "productName": "[PAO03] PAOLA cola canette 330ml - le cola des Belges",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 16.666666666666664,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 91274,
+              "orderName": "S39397",
+              "date": "2025-09-25 12:59:50",
+              "quantity": 5,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 90471,
+              "orderName": "S38594",
+              "date": "2025-08-20 08:20:14",
+              "quantity": 5,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 89942,
+              "orderName": "S38065",
+              "date": "2025-07-15 09:35:56",
+              "quantity": 4,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 89442,
+              "orderName": "S37565",
+              "date": "2025-06-20 07:50:59",
+              "quantity": 5,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 88821,
+              "orderName": "S36944",
+              "date": "2025-05-21 08:00:06",
+              "quantity": 3,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 88797,
+              "orderName": "S36920",
+              "date": "2025-05-20 09:41:02",
+              "quantity": 4,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 87779,
+              "orderName": "S35902",
+              "date": "2025-04-10 06:40:29",
+              "quantity": 4,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86991,
+              "orderName": "S35114",
+              "date": "2025-02-27 13:11:10",
+              "quantity": 1,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86250,
+              "orderName": "S34373",
+              "date": "2025-01-17 13:08:25",
+              "quantity": 4,
+              "priceUnit": 25.2
+            }
+          ],
+          "statistics": {
+            "mean": 3.888888888888889,
+            "median": 4,
+            "stdDev": 1.1967032904743342,
+            "min": 1,
+            "max": 5,
+            "cv": 0.3077237032648288,
+            "trend": "decreasing",
+            "outliers": [
+              1
+            ],
+            "regularityScore": 0.6535530215247785
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 31.36904658564815,
+            "lastOrderDaysAgo": 24.458449074074075,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      },
+      {
+        "productId": 18346,
+        "productName": "[PAO04] PAOLA cola ZERO canette 330ml - le cola des Belges ",
+        "productUom": "TU24",
+        "prediction": {
+          "quantity": 5,
+          "source": "llm",
+          "confidence": "high"
+        },
+        "reality": {
+          "quantity": 6
+        },
+        "error": {
+          "absolute": 1,
+          "percent": 16.666666666666664,
+          "direction": "under",
+          "severity": "low",
+          "matchType": "partial"
+        },
+        "history": {
+          "orderCount": 9,
+          "orders": [
+            {
+              "orderId": 91274,
+              "orderName": "S39397",
+              "date": "2025-09-25 12:59:50",
+              "quantity": 5,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 90471,
+              "orderName": "S38594",
+              "date": "2025-08-20 08:20:14",
+              "quantity": 5,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 89942,
+              "orderName": "S38065",
+              "date": "2025-07-15 09:35:56",
+              "quantity": 3,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 89442,
+              "orderName": "S37565",
+              "date": "2025-06-20 07:50:59",
+              "quantity": 5,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 88821,
+              "orderName": "S36944",
+              "date": "2025-05-21 08:00:06",
+              "quantity": 3,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 88797,
+              "orderName": "S36920",
+              "date": "2025-05-20 09:41:02",
+              "quantity": 3,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 87779,
+              "orderName": "S35902",
+              "date": "2025-04-10 06:40:29",
+              "quantity": 3,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86991,
+              "orderName": "S35114",
+              "date": "2025-02-27 13:11:10",
+              "quantity": 1,
+              "priceUnit": 25.2
+            },
+            {
+              "orderId": 86250,
+              "orderName": "S34373",
+              "date": "2025-01-17 13:08:25",
+              "quantity": 3,
+              "priceUnit": 25.2
+            }
+          ],
+          "statistics": {
+            "mean": 3.4444444444444446,
+            "median": 3,
+            "stdDev": 1.2570787221094177,
+            "min": 1,
+            "max": 5,
+            "cv": 0.36495833867692773,
+            "trend": "decreasing",
+            "outliers": [],
+            "regularityScore": 0.6192122402775191
+          },
+          "features": {
+            "quantityType": "variable",
+            "orderingPattern": "seasonal",
+            "avgDaysBetweenOrders": 31.36904658564815,
+            "lastOrderDaysAgo": 24.458449074074075,
+            "isSeasonalProduct": false,
+            "hasRecentActivity": true
+          }
+        }
+      }
+    ],
+    "falsePositives": [
+      {
+        "productId": 18266,
+        "productName": "[BUD03] BUDDY biologische energiedrank – mango & passievrucht – 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 2,
+        "reason": "Predicted 2u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 24,
+            "orders": [
+              {
+                "orderId": 91274,
+                "orderName": "S39397",
+                "date": "2025-09-25 12:59:50",
+                "quantity": 2,
+                "priceUnit": 14.88
+              },
+              {
+                "orderId": 89942,
+                "orderName": "S38065",
+                "date": "2025-07-15 09:35:56",
+                "quantity": 2,
+                "priceUnit": 14.88
+              },
+              {
+                "orderId": 89442,
+                "orderName": "S37565",
+                "date": "2025-06-20 07:50:59",
+                "quantity": 1,
+                "priceUnit": 14.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18326,
+        "productName": "[NUT04] NUTS & BERRIES energy bar Amandes-cranberry bio 30g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 24,
+            "orders": [
+              {
+                "orderId": 91274,
+                "orderName": "S39397",
+                "date": "2025-09-25 12:59:50",
+                "quantity": 1,
+                "priceUnit": 16.05
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18353,
+        "productName": "[REB01] ReBEL chips premium & bio - sel de mer 125g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 60,
+            "orders": [
+              {
+                "orderId": 90471,
+                "orderName": "S38594",
+                "date": "2025-08-20 08:20:14",
+                "quantity": 3,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 3,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 5,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 4,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86250,
+                "orderName": "S34373",
+                "date": "2025-01-17 13:08:25",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18349,
+        "productName": "[REB02] ReBEL chips premium & bio - paprika fumé 125g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 60,
+            "orders": [
+              {
+                "orderId": 90471,
+                "orderName": "S38594",
+                "date": "2025-08-20 08:20:14",
+                "quantity": 4,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 3,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 3,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 3,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86250,
+                "orderName": "S34373",
+                "date": "2025-01-17 13:08:25",
+                "quantity": 3,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18355,
+        "productName": "[REB04] ReBEL chips premium & bio - thym/romarin125g",
+        "mismatchType": "false_positive",
+        "quantity": 3,
+        "reason": "Predicted 3u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 60,
+            "orders": [
+              {
+                "orderId": 90471,
+                "orderName": "S38594",
+                "date": "2025-08-20 08:20:14",
+                "quantity": 4,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 3,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 3,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86250,
+                "orderName": "S34373",
+                "date": "2025-01-17 13:08:25",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18356,
+        "productName": "[REB11] ReBEL chips premium & bio - truffes 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 60,
+            "orders": [
+              {
+                "orderId": 90471,
+                "orderName": "S38594",
+                "date": "2025-08-20 08:20:14",
+                "quantity": 1,
+                "priceUnit": 25.3
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 1,
+                "priceUnit": 25.3
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 1,
+                "priceUnit": 25.3
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 2,
+                "priceUnit": 25.3
+              },
+              {
+                "orderId": 86250,
+                "orderName": "S34373",
+                "date": "2025-01-17 13:08:25",
+                "quantity": 2,
+                "priceUnit": 25.3
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18351,
+        "productName": "[REB08] ReBEL chips premium & bio - piment citron 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 60,
+            "orders": [
+              {
+                "orderId": 90471,
+                "orderName": "S38594",
+                "date": "2025-08-20 08:20:14",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 2,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 2,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86250,
+                "orderName": "S34373",
+                "date": "2025-01-17 13:08:25",
+                "quantity": 2,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18265,
+        "productName": "[BUD04] BUDDY Organic Energy Drink – Pomegranate & Hibiscus – 250ml",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 3,
+            "lastOrderDaysAgo": 96,
+            "orders": [
+              {
+                "orderId": 89942,
+                "orderName": "S38065",
+                "date": "2025-07-15 09:35:56",
+                "quantity": 1,
+                "priceUnit": 14.88
+              },
+              {
+                "orderId": 89442,
+                "orderName": "S37565",
+                "date": "2025-06-20 07:50:59",
+                "quantity": 1,
+                "priceUnit": 14.88
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 1,
+                "priceUnit": 14.88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18324,
+        "productName": "[NUT06] NUTS & BERRIES Bar choco noir cerises bio 40g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 1,
+            "lastOrderDaysAgo": 96,
+            "orders": [
+              {
+                "orderId": 89942,
+                "orderName": "S38065",
+                "date": "2025-07-15 09:35:56",
+                "quantity": 1,
+                "priceUnit": 17.55
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18348,
+        "productName": "[fsv13] Pistaches grillées salées bio vrac 2,6kg ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 96,
+            "orders": [
+              {
+                "orderId": 89942,
+                "orderName": "S38065",
+                "date": "2025-07-15 09:35:56",
+                "quantity": 2,
+                "priceUnit": 52.08
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 1,
+                "priceUnit": 52.08
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 2,
+                "priceUnit": 52.08
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 2,
+                "priceUnit": 52.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18316,
+        "productName": "[fsv05] Noix de pecan nature bio vrac 2,2kg ",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 5,
+            "lastOrderDaysAgo": 121,
+            "orders": [
+              {
+                "orderId": 89442,
+                "orderName": "S37565",
+                "date": "2025-06-20 07:50:59",
+                "quantity": 1,
+                "priceUnit": 49.93
+              },
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 2,
+                "priceUnit": 49.93
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 2,
+                "priceUnit": 49.93
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 2,
+                "priceUnit": 49.93
+              },
+              {
+                "orderId": 86250,
+                "orderName": "S34373",
+                "date": "2025-01-17 13:08:25",
+                "quantity": 1,
+                "priceUnit": 49.93
+              }
+            ]
+          }
+        }
+      },
+      {
+        "productId": 18352,
+        "productName": "[REB03] ReBEL chips premium & bio - poivre noir 125g",
+        "mismatchType": "false_positive",
+        "quantity": 1,
+        "reason": "Predicted 1u but not ordered",
+        "classification": {
+          "category": "other",
+          "severity": "low"
+        },
+        "context": {
+          "history": {
+            "orderCount": 4,
+            "lastOrderDaysAgo": 152,
+            "orders": [
+              {
+                "orderId": 88797,
+                "orderName": "S36920",
+                "date": "2025-05-20 09:41:02",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 87779,
+                "orderName": "S35902",
+                "date": "2025-04-10 06:40:29",
+                "quantity": 1,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86991,
+                "orderName": "S35114",
+                "date": "2025-02-27 13:11:10",
+                "quantity": 2,
+                "priceUnit": 17.7
+              },
+              {
+                "orderId": 86250,
+                "orderName": "S34373",
+                "date": "2025-01-17 13:08:25",
+                "quantity": 1,
+                "priceUnit": 17.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "falseNegatives": []
+  }
+}

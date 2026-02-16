@@ -1,0 +1,30 @@
+{
+  "clientId": 58378,
+  "clientName": "DLL AD MALDEGEM",
+  "orderName": "S40335",
+  "orderDate": "2025-11-13 12:43:10",
+  "cutoffDate": "2025-11-12 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1Score": 0,
+    "mae": 0,
+    "wmape": 0,
+    "mape": 0,
+    "bias": 0
+  },
+  "distribution": {
+    "exactMatch": 0,
+    "partialMatch": 0
+  },
+  "llmUsage": {
+    "calls": 13,
+    "promptTokens": 11638,
+    "completionTokens": 2170,
+    "totalTokens": 13808
+  }
+}

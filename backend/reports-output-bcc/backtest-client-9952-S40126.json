@@ -1,0 +1,30 @@
+{
+  "clientId": 9952,
+  "clientName": "Chaman",
+  "orderName": "S40126",
+  "orderDate": "2025-11-14 10:21:50",
+  "cutoffDate": "2025-11-13 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 25,
+    "fn": 0,
+    "precision": 0.2647058823529412,
+    "recall": 1,
+    "f1Score": 0.4186046511627907,
+    "mae": 0.3333333333333333,
+    "wmape": 27.27272727272727,
+    "mape": 33.333333333333336,
+    "bias": 27.27272727272727
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 38,
+    "promptTokens": 34901,
+    "completionTokens": 5813,
+    "totalTokens": 40714
+  }
+}

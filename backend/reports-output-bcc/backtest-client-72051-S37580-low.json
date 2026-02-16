@@ -1,0 +1,30 @@
+{
+  "clientId": 72051,
+  "clientName": "EDEKA Rhein Ruhr Stiftung & Co. KG, Geldermann Norbert",
+  "orderName": "S37580",
+  "orderDate": "2025-06-20 10:16:40",
+  "cutoffDate": "2025-06-19 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 5,
+    "fn": 0,
+    "precision": 0.6428571428571429,
+    "recall": 1,
+    "f1Score": 0.782608695652174,
+    "mae": 0.5555555555555556,
+    "wmape": 29.411764705882355,
+    "mape": 27.77777777777778,
+    "bias": -5.88235294117647
+  },
+  "distribution": {
+    "exactMatch": 4,
+    "partialMatch": 5
+  },
+  "llmUsage": {
+    "calls": 14,
+    "promptTokens": 12225,
+    "completionTokens": 2114,
+    "totalTokens": 14339
+  }
+}

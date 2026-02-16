@@ -1,0 +1,30 @@
+{
+  "clientId": 23751,
+  "clientName": "CARREFOUR BELGIUM SA, Market Bree",
+  "orderName": "S39381",
+  "orderDate": "2025-09-25 06:28:03",
+  "cutoffDate": "2025-09-24 00:00:00",
+  "daysBeforePrediction": 1,
+  "metrics": {
+    "tp": 9,
+    "fp": 19,
+    "fn": 0,
+    "precision": 0.32142857142857145,
+    "recall": 1,
+    "f1Score": 0.4864864864864865,
+    "mae": 0.3333333333333333,
+    "wmape": 21.428571428571427,
+    "mape": 16.666666666666668,
+    "bias": -21.428571428571427
+  },
+  "distribution": {
+    "exactMatch": 6,
+    "partialMatch": 3
+  },
+  "llmUsage": {
+    "calls": 28,
+    "promptTokens": 25282,
+    "completionTokens": 4489,
+    "totalTokens": 29771
+  }
+}
