@@ -74,29 +74,28 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
     const allProducts = [...data.products.base, ...data.products.optional];
     const hasAnyMoqAdjustment = allProducts.some(p => (p.moq_adjustment ?? 0) > 0);
 
+    // No Summary column - LLM reasoning is in chatter
     if (hasAnyMoqAdjustment) {
-      sections.push(`| Product | Qty LLM | MOQ | Qty Final | Price | Subtotal | Summary |`);
-      sections.push(`|---------|--------:|----:|----------:|------:|---------:|---------|`);
+      sections.push(`| Product | Qty LLM | MOQ | Qty Final | Price | Subtotal |`);
+      sections.push(`|---------|--------:|----:|----------:|------:|---------:|`);
 
       for (const product of allProducts) {
         const baseQty = product.llm_prediction?.baseline_quantity ?? product.quantity_recommended;
         const moqAdj = product.moq_adjustment ?? 0;
         const moqStr = moqAdj > 0 ? `+${moqAdj}` : "-";
         const name = product.product_name.length > 40 ? product.product_name.slice(0, 37) + "..." : product.product_name;
-        const summary = product.llm_prediction?.summary || "-";
         sections.push(
-          `| ${name} | ${baseQty} | ${moqStr} | ${product.quantity_recommended} | ${product.price_unit.toFixed(2)}€ | ${product.subtotal.toFixed(2)}€ | ${summary} |`
+          `| ${name} | ${baseQty} | ${moqStr} | ${product.quantity_recommended} | ${product.price_unit.toFixed(2)}€ | ${product.subtotal.toFixed(2)}€ |`
         );
       }
     } else {
-      sections.push(`| Product | Qty | Price | Subtotal | Summary |`);
-      sections.push(`|---------|----:|------:|---------:|---------|`);
+      sections.push(`| Product | Qty | Price | Subtotal |`);
+      sections.push(`|---------|----:|------:|---------:|`);
 
       for (const product of allProducts) {
         const name = product.product_name.length > 40 ? product.product_name.slice(0, 37) + "..." : product.product_name;
-        const summary = product.llm_prediction?.summary || "-";
         sections.push(
-          `| ${name} | ${product.quantity_recommended} | ${product.price_unit.toFixed(2)}€ | ${product.subtotal.toFixed(2)}€ | ${summary} |`
+          `| ${name} | ${product.quantity_recommended} | ${product.price_unit.toFixed(2)}€ | ${product.subtotal.toFixed(2)}€ |`
         );
       }
     }
@@ -123,37 +122,33 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
       productMap.set(p.product_id, p);
     }
 
-    // Core products table
+    // Core products table (no Summary column - LLM reasoning is in chatter)
     if (data.phases.quote.order_lines.length > 0) {
       sections.push(`### Core Products (${data.phases.quote.lines_count})`);
       sections.push("");
-      sections.push(`| Product | Qty | Price | Subtotal | Summary |`);
-      sections.push(`|---------|----:|------:|---------:|---------|`);
+      sections.push(`| Product | Qty | Price | Subtotal |`);
+      sections.push(`|---------|----:|------:|---------:|`);
 
       for (const line of data.phases.quote.order_lines) {
         const name = line.product_name.length > 40 ? line.product_name.slice(0, 37) + "..." : line.product_name;
-        const bizProduct = productMap.get(line.product_id);
-        const summary = bizProduct?.llm_prediction?.summary || "-";
         sections.push(
-          `| ${name} | ${line.quantity} | ${line.price_unit.toFixed(2)}€ | ${line.subtotal_ht.toFixed(2)}€ | ${summary} |`
+          `| ${name} | ${line.quantity} | ${line.price_unit.toFixed(2)}€ | ${line.subtotal_ht.toFixed(2)}€ |`
         );
       }
       sections.push("");
     }
 
-    // Optional products table
+    // Optional products table (no Summary column - LLM reasoning is in chatter)
     if (data.phases.quote.optional_products.length > 0) {
       sections.push(`### Optional Products (${data.phases.quote.optional_products_count})`);
       sections.push("");
-      sections.push(`| Product | Qty | Price | Subtotal | Summary |`);
-      sections.push(`|---------|----:|------:|---------:|---------|`);
+      sections.push(`| Product | Qty | Price | Subtotal |`);
+      sections.push(`|---------|----:|------:|---------:|`);
 
       for (const opt of data.phases.quote.optional_products) {
         const name = opt.product_name.length > 40 ? opt.product_name.slice(0, 37) + "..." : opt.product_name;
-        const bizProduct = productMap.get(opt.product_id);
-        const summary = bizProduct?.llm_prediction?.summary || "-";
         sections.push(
-          `| ${name} | ${opt.quantity} | ${opt.price_unit.toFixed(2)}€ | ${opt.subtotal_ht.toFixed(2)}€ | ${summary} |`
+          `| ${name} | ${opt.quantity} | ${opt.price_unit.toFixed(2)}€ | ${opt.subtotal_ht.toFixed(2)}€ |`
         );
       }
       sections.push("");
@@ -195,6 +190,18 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
 
     if (Math.abs(diffTotal) > 0.01) {
       sections.push(`> **Note:** Price difference may be due to Odoo price list updates vs historical prices.`);
+      sections.push("");
+    }
+
+    // Chatter message section (only if message was posted successfully)
+    if (data.phases.quote.chatter_message_id) {
+      sections.push(`### Chatter Message`);
+      sections.push("");
+      sections.push(`✅ **Message ID:** ${data.phases.quote.chatter_message_id}`);
+      if (data.phases.quote.chatter_message_preview) {
+        sections.push("");
+        sections.push(`**Preview:** ${data.phases.quote.chatter_message_preview}...`);
+      }
       sections.push("");
     }
 

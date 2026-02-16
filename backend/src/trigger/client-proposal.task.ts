@@ -88,6 +88,10 @@ export const clientProposalTask = task({
       shouldGenerateReport:
         payload.config.shouldGenerateReport ??
         true,
+
+      companyId:
+        payload.config.companyId ??
+        autoProposalConfig.defaultCompanyId,
     };
 
     const result: ClientProposalResult = {
@@ -103,6 +107,7 @@ export const clientProposalTask = task({
       const stockAnalysis = await calculateReplenishmentNeeds(payload.client.id, {
         analysisEndDate: config.analysisEndDate,
         replenishmentThreshold: config.replenishmentThreshold,
+        companyId: config.companyId,
       });
 
       result.phases.stockAnalysis = stockAnalysis;
@@ -151,7 +156,7 @@ export const clientProposalTask = task({
       let reportMarkdown: string | undefined;
       let reportJSON: string | undefined;
 
-      if (config.shouldGenerateReport) {
+      if (config.shouldGenerateReport && hasProducts) {
         try {
           const jsonData = generateClientReportJSON(result, {
             analysisEndDate: config.analysisEndDate,

@@ -37,6 +37,24 @@ function generatePredictionDescription(product: ProductWithCurrentPrice): string
 }
 
 /**
+ * Format LLM reasoning as simple HTML table for Odoo chatter
+ * KISS: no fancy CSS, just basic HTML attributes
+ */
+function formatReasoningAsHtmlTable(products: ProductWithCurrentPrice[]): string {
+  const rows = products.map(p => {
+    const reasoning = p.llm_prediction?.summary ||
+      `${p.calculation_metadata.order_count} historical order(s)`;
+    return `<tr><td>${p.product_name}</td><td>${p.quantity_to_order}</td><td>${reasoning}</td></tr>`;
+  }).join('');
+
+  return `<b>🤖 Auto-Proposal - LLM Reasoning</b><br/><br/>
+<table border="1" cellpadding="5">
+<tr><th>Produit</th><th>Qté</th><th>Reasoning</th></tr>
+${rows}
+</table>`;
+}
+
+/**
  * Generates an Odoo draft quote from a prepared proposal
  *
  * Product segmentation:
@@ -111,35 +129,56 @@ export async function generateQuote(
 
   console.log(`Quote ${quoteId}: ${baseProducts.length} base products, ${optionalProducts.length} optional products`);
 
-  // 4. Create order lines for BASE products
+  // 4. Create order lines for BASE products (no custom name = Odoo uses product default)
   for (const product of baseProducts) {
-    const description = generatePredictionDescription(product);
     await odooClient.createSaleOrderLine({
       order_id: quoteId,
       product_id: product.product_id,
       product_uom_qty: product.quantity_to_order,
       price_unit: product.current_price_unit,
-      name: description,
     });
   }
 
   // 5. Create OPTIONS for OPTIONAL products (single historical order)
   for (const product of optionalProducts) {
-    const description = generatePredictionDescription(product);
     await odooClient.createSaleOrderOption({
       order_id: quoteId,
       product_id: product.product_id,
       quantity: product.quantity_to_order,
       uom_id: product.product_uom[0], // Unit of measure ID
       price_unit: product.current_price_unit,
-      name: description,
     });
   }
 
-  // 6. Retrieve complete quote with lines + taxes
+  // 6. Post LLM reasoning as internal note in chatter (not visible on PDF)
+  const allProducts = [...baseProducts, ...optionalProducts];
+  let chatterMessageId: number | null = null;
+  let chatterMessagePreview: string | null = null;
+
+  if (allProducts.length > 0) {
+    try {
+      const reasoningHtml = formatReasoningAsHtmlTable(allProducts);
+      chatterMessageId = await odooClient.postInternalNote('sale.order', quoteId, reasoningHtml);
+
+      // Verify message was created and get preview
+      if (chatterMessageId) {
+        const message = await odooClient.getMessageById(chatterMessageId);
+        if (message) {
+          // Strip HTML for preview (first 200 chars)
+          chatterMessagePreview = message.body.replace(/<[^>]*>/g, '').substring(0, 200);
+          console.log(`✅ Chatter note posted (message_id: ${chatterMessageId})`);
+        }
+      }
+    } catch (error) {
+      console.error(`⚠️ Failed to post chatter note: ${error}`);
+      // Don't fail the whole quote creation if chatter fails
+    }
+  }
+
+  // 7. Retrieve complete quote with lines + taxes
   const { order, lines } = await odooClient.getSaleOrderDetails(quoteId);
 
-  // 7. Build detailed result
+  // 8. Build detailed result
   const orderLines: QuoteLineDetails[] = lines.map((line) => ({
     line_id: line.id,
     product_id: line.product_id[0],
@@ -184,5 +223,7 @@ export async function generateQuote(
     optional_products_count: optionalProducts.length,
     tag_id: autoProposalConfig.quoteGeneration.autoProposalTagId,
     created_at: order.date_order,
+    chatter_message_id: chatterMessageId,
+    chatter_message_preview: chatterMessagePreview,
   };
 }

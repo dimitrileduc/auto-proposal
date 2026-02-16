@@ -19,26 +19,29 @@ const odooClient = createOdooClient(autoProposalConfig.odooApiType);
  * @param partnerId - Odoo partner ID (default: test client)
  * @param windowDays - History window in days (default: 730 = 2 years, includes Y-1 for seasonality)
  * @param referenceDate - Reference date for history calculation (format: "YYYY-MM-DD HH:MM:SS")
+ * @param companyId - Optional: Filter orders by selling company ID (e.g., 3 for FOODPRINT SRL)
  * @returns Order history structured by product
  * @throws Error on Odoo API failure
  *
  * @example
  * ```typescript
- * const history = await getProductOrderHistory(3, 730, "2025-10-26 00:00:00")
- * console.log(`${history.products.length} products ordered`)
+ * const history = await getProductOrderHistory(3, 730, "2025-10-26 00:00:00", 3)
+ * console.log(`${history.products.length} products ordered from FOODPRINT SRL`)
  * ```
  */
 export async function getProductOrderHistory(
   partnerId: number = autoProposalConfig.testing.defaultClientId,
   windowDays: number = 730,
-  referenceDate: string
+  referenceDate: string,
+  companyId?: number
 ): Promise<ClientOrderHistory> {
   const rawHistory = await odooClient.getOrderHistoryByPartner(
     partnerId,
     windowDays,
     referenceDate,
     autoProposalConfig.testing.includeDraftOrders,
-    autoProposalConfig.productFiltering.excludedCategoryIds
+    autoProposalConfig.productFiltering.excludedCategoryIds,
+    companyId
   );
   return transformOrderHistory(rawHistory, partnerId);
 }

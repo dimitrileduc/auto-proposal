@@ -125,13 +125,15 @@ export interface OdooClient {
    * @param dateMax Maximum date for inactivity period (format: "YYYY-MM-DD HH:MM:SS")
    * @param excludeOrderTagId Optional: Tag ID to exclude from recent orders (e.g., auto-proposal tag 82)
    * @param excludedPartnerTagId Optional: Partner tag to exclude from results (e.g., "exclude-auto-proposal")
+   * @param companyId Optional: Filter orders by selling company ID
    * @returns Array of inactive partners
    */
   getInactiveCompanyPartners(
     dateMin: string,
     dateMax: string,
     excludeOrderTagId?: number,
-    excludedPartnerTagId?: number | null
+    excludedPartnerTagId?: number | null,
+    companyId?: number
   ): Promise<OdooPartner[]>;
 
   /**
@@ -142,6 +144,7 @@ export interface OdooClient {
    * @param referenceDate - Reference date for calculation (format: "YYYY-MM-DD HH:MM:SS")
    * @param includeDraftOrders - Include draft orders
    * @param excludedCategoryIds - IDs of categories to exclude (deposits, pallets, packaging, etc.)
+   * @param companyId - Optional: Filter orders by selling company ID
    * @returns Order history (orders and lines)
    */
   getOrderHistoryByPartner(
@@ -149,7 +152,8 @@ export interface OdooClient {
     windowDays: number,
     referenceDate: string,
     includeDraftOrders: boolean,
-    excludedCategoryIds?: number[]
+    excludedCategoryIds?: number[],
+    companyId?: number
   ): Promise<OrderHistory>;
 
   /**
@@ -242,9 +246,10 @@ export interface OdooClient {
    * Fetches the last validated order for a client (for backtesting)
    *
    * @param clientId - Client ID
+   * @param companyId - Optional: Filter orders by selling company ID
    * @returns Last order with { id, name, date_order, partner_name }
    */
-  getLastClientOrder(clientId: number): Promise<{
+  getLastClientOrder(clientId: number, companyId?: number): Promise<{
     id: number;
     name: string;
     date_order: string;
@@ -256,9 +261,10 @@ export interface OdooClient {
    *
    * @param clientId - Client ID
    * @param referenceDate - Reference date (format: "YYYY-MM-DD")
+   * @param companyId - Optional: Filter orders by selling company ID
    * @returns Last order before date with { id, name, date_order, partner_name }
    */
-  getLastClientOrderBeforeDate(clientId: number, referenceDate: string): Promise<{
+  getLastClientOrderBeforeDate(clientId: number, referenceDate: string, companyId?: number): Promise<{
     id: number;
     name: string;
     date_order: string;
@@ -278,4 +284,37 @@ export interface OdooClient {
     partner_name: string;
     partner_id: number;
   }>;
+
+  /**
+   * Search partners (companies) by name
+   *
+   * @param name - Name to search for (case-insensitive, partial match)
+   * @returns Array of matching partners with { id, name, email }
+   */
+  searchPartnersByName(name: string): Promise<Array<{
+    id: number;
+    name: string;
+    email: string | null;
+  }>>;
+
+  /**
+   * Posts an internal note to a record's chatter
+   *
+   * Uses Odoo's message_post with subtype 'mail.mt_note' for internal notes
+   * that won't be visible on customer PDFs.
+   *
+   * @param model - Odoo model name, e.g., 'sale.order'
+   * @param recordId - Record ID to post the note on
+   * @param body - HTML body content
+   * @returns Created message ID (mail.message)
+   */
+  postInternalNote(model: string, recordId: number, body: string): Promise<number>;
+
+  /**
+   * Fetches a message by ID (for verification)
+   *
+   * @param messageId - Message ID (mail.message)
+   * @returns Message with id, body, and date, or null if not found
+   */
+  getMessageById(messageId: number): Promise<{ id: number; body: string; date: string } | null>;
 }
