@@ -92,6 +92,7 @@ export async function generateQuote(
       [6, 0, [autoProposalConfig.quoteGeneration.autoProposalTagId]],
     ],
     note: autoProposalConfig.quoteGeneration.noteTemplate,
+    ...(partnerInfo.user_id && { user_id: partnerInfo.user_id[0] }),
   });
 
   // 3. Separate base products (2+ orders, confidence medium/high) vs optional (1 order, confidence low)

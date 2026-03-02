@@ -45,6 +45,7 @@ export interface OrderHistory {
 export interface PartnerCompanyInfo {
   name: string;
   company_id: [number, string];
+  user_id: [number, string] | false;
 }
 
 /**
@@ -171,6 +172,7 @@ export interface OdooClient {
     company_id: number;
     tag_ids?: any[];
     note?: string;
+    user_id?: number;
   }): Promise<number>;
 
   /**

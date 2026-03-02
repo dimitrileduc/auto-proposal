@@ -186,7 +186,7 @@ export function createXmlRpcClient(): OdooClient {
         const result = await odoo.searchRead<PartnerCompanyInfo>(
           "res.partner",
           [["id", "=", partnerId]],
-          { fields: ["name", "company_id"] }
+          { fields: ["name", "company_id", "user_id"] }
         );
 
         if (result.length === 0) {
@@ -208,6 +208,7 @@ export function createXmlRpcClient(): OdooClient {
       company_id: number;
       tag_ids?: any[];
       note?: string;
+      user_id?: number;
     }): Promise<number> {
       try {
         return await odoo.create("sale.order", data);
