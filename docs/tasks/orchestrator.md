@@ -39,6 +39,7 @@ flowchart LR
 - `skipOdooQuoteGeneration: true` ← TEST mode par défaut (pas de création Odoo)
 - `forceReanalysis: false` ← Ignore les commandes avec tag 82 dans le calcul d'activité (évite de réanalyser les clients déjà proposés)
 - `generateReports: true` ← Générer markdown/JSON
+- `excludedPartnerTagId: 196` ← Tag "Exclude-Auto-Proposal" — exclut définitivement ces clients de l'analyse d'inactivité
 
 ## Résultat
 
