@@ -22,7 +22,7 @@ export const autoProposalConfig = {
     /** Analysis end date (null = today) */
     dateMax: null as string | null,
     /** Partner tag ID to permanently exclude clients from analysis */
-    excludedPartnerTagId: 195,
+    excludedPartnerTagId: 196,
   },
 
   /** Days of stock coverage threshold (25 days coverage + 5 days lead time) */

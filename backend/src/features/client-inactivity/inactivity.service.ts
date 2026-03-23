@@ -21,7 +21,7 @@ const odooClient = createOdooClient(autoProposalConfig.odooApiType);
  * @param excludeAutoProposalTagId - Optional: Tag ID to exclude from recent orders.
  *        If provided (e.g., 82), clients with ONLY orders having this tag will be considered inactive.
  *        If undefined, all clients without recent orders are inactive (normal behavior).
- * @param excludedPartnerTagId - Optional: Partner tag to permanently exclude from results (e.g., 195).
+ * @param excludedPartnerTagId - Optional: Partner tag to permanently exclude from results (e.g., 196).
  *        Clients with this tag are excluded regardless of their activity.
  * @returns List of inactive clients
  * @throws Error on Odoo API failure
@@ -34,8 +34,8 @@ const odooClient = createOdooClient(autoProposalConfig.odooApiType);
  * // Force reanalysis: include clients with ONLY orders having tag 82
  * const inactiveClients = await getInactiveClients("2025-09-26 00:00:00", "2025-10-26 00:00:00", 82)
  *
- * // With partner tag exclusion: exclude clients with tag 195
- * const inactiveClients = await getInactiveClients("2025-09-26 00:00:00", "2025-10-26 00:00:00", undefined, 195)
+ * // With partner tag exclusion: exclude clients with tag 196
+ * const inactiveClients = await getInactiveClients("2025-09-26 00:00:00", "2025-10-26 00:00:00", undefined, 196)
  * ```
  */
 export async function getInactiveClients(

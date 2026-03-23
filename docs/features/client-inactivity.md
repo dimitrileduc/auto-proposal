@@ -71,13 +71,13 @@ const inactive = await getInactiveClients({
 
 ### 3. Exclure clients permanents
 
-Exclure clients avec tag "do not contact" (e.g., tag 195):
+Exclure clients avec tag "do not contact" (e.g., tag 196):
 
 ```typescript
 const inactive = await getInactiveClients({
   dateMin: "2025-09-26",
   dateMax: "2025-10-26",
-  excludedPartnerTagId: 195
+  excludedPartnerTagId: 196
 });
 ```
 
