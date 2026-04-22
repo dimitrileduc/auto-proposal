@@ -1,0 +1,36 @@
+backend/package.json
+  66ccce3dcf88a826 29-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2",
+  "base_commit_sha": "1511dd9a6f82ac4beebf80c13be5878606e0283d",
+  "prompts": {
+    "66ccce3dcf88a826": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "97ea51ba-e741-4c5d-a6ab-f4d4cf7a2fc7",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dimitri Leduc",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 6,
+      "overriden_lines": 0
+    },
+    "ef132aaf9aae3eab": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b23084d6-29fc-47ea-a321-2d1ff1c80717",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dimitri Leduc",
+      "messages": [],
+      "total_additions": 4722,
+      "total_deletions": 50,
+      "accepted_lines": 4722,
+      "overriden_lines": 0
+    }
+  }
+}
