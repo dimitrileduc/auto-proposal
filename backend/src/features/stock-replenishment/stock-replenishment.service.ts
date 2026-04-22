@@ -33,6 +33,7 @@ export async function calculateReplenishmentNeeds(
   config?: {
     analysisEndDate?: string;
     replenishmentThreshold?: number;
+    companyId?: number;
   }
 ): Promise<StockReplenishmentResult> {
   // Hardcoded constants
@@ -42,7 +43,7 @@ export async function calculateReplenishmentNeeds(
   const analysisEndDate = config?.analysisEndDate ?? getTodayAsDateString();
 
   // Fetch ONLY full history (730d) to have Y-1
-  const fullHistory = await getProductOrderHistory(clientId, FULL_HISTORY_DAYS, analysisEndDate);
+  const fullHistory = await getProductOrderHistory(clientId, FULL_HISTORY_DAYS, analysisEndDate, config?.companyId);
 
   const cutoffDate = new Date(analysisEndDate);
   cutoffDate.setDate(cutoffDate.getDate() - ANALYSIS_WINDOW_DAYS);

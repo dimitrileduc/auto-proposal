@@ -29,7 +29,8 @@ type OdooDomain = Array<OdooDomainCondition | OdooDomainOperator>;
 export function buildRecentOrdersDomain(
   dateMin: string,
   dateMax: string,
-  excludeTagId?: number
+  excludeTagId?: number,
+  companyId?: number
 ): OdooDomainCondition[] {
   const domain: OdooDomainCondition[] = [
     ["date_order", ">=", dateMin],
@@ -38,6 +39,10 @@ export function buildRecentOrdersDomain(
 
   if (excludeTagId !== undefined) {
     domain.push(["tag_ids", "not in", [excludeTagId]]);
+  }
+
+  if (companyId !== undefined) {
+    domain.push(["company_id", "=", companyId]);
   }
 
   return domain;
@@ -93,7 +98,8 @@ export function buildPartnerOrdersDomain(
   partnerId: number,
   dateLimitStr: string,
   states: string[],
-  referenceDate?: string
+  referenceDate?: string,
+  companyId?: number
 ): OdooDomainCondition[] {
   const domain: OdooDomainCondition[] = [
     ["partner_id", "=", partnerId],
@@ -103,6 +109,10 @@ export function buildPartnerOrdersDomain(
 
   if (referenceDate) {
     domain.push(["date_order", "<", referenceDate]);
+  }
+
+  if (companyId !== undefined) {
+    domain.push(["company_id", "=", companyId]);
   }
 
   return domain;

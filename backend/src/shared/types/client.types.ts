@@ -25,6 +25,9 @@ export interface ClientProcessingConfig {
 
   /** Generate markdown reports for at-risk clients (default: true) */
   shouldGenerateReport?: boolean;
+
+  /** Company ID for multi-company filtering (e.g., 3 = FOODPRINT SRL) */
+  companyId?: number;
 }
 
 /**

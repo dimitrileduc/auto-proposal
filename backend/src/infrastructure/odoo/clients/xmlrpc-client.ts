@@ -55,14 +55,19 @@ export function createXmlRpcClient(): OdooClient {
       dateMin: string,
       dateMax: string,
       excludeOrderTagId?: number,
-      excludedPartnerTagId?: number | null
+      excludedPartnerTagId?: number | null,
+      companyId?: number
     ): Promise<OdooPartner[]> {
+      if (companyId === undefined) {
+        throw new Error(
+          "companyId is required for getInactiveCompanyPartners to prevent cross-company data leaks"
+        );
+      }
+
       try {
         const recentOrders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildRecentOrdersDomain(dateMin, dateMax, excludeOrderTagId),
-          {
-            fields: ["partner_id"],
-          }
+          buildRecentOrdersDomain(dateMin, dateMax, excludeOrderTagId, companyId),
+          { fields: ["partner_id"] }
         );
 
         const activePartnerIds = [
@@ -71,9 +76,7 @@ export function createXmlRpcClient(): OdooClient {
 
         const inactivePartners = await odoo.searchRead<OdooPartner>("res.partner",
           buildInactivePartnersDomain(activePartnerIds, excludedPartnerTagId),
-          {
-            fields: ["name", "email", "id"],
-          }
+          { fields: ["name", "email", "id"] }
         );
 
         return inactivePartners;
@@ -91,7 +94,8 @@ export function createXmlRpcClient(): OdooClient {
       windowDays: number,
       referenceDate: string,
       includeDraftOrders: boolean,
-      excludedCategoryIds?: number[]
+      excludedCategoryIds?: number[],
+      companyId?: number
     ): Promise<OrderHistory> {
       if (windowDays <= 0) {
         throw new Error("Window days must be positive");
@@ -105,7 +109,7 @@ export function createXmlRpcClient(): OdooClient {
 
       try {
         const orders = await odoo.searchRead<OdooOrder>("sale.order",
-          buildPartnerOrdersDomain(partnerId, dateStart, states, referenceDate),
+          buildPartnerOrdersDomain(partnerId, dateStart, states, referenceDate, companyId),
           {
             fields: ["id", "name", "date_order", "partner_id", "state", "order_line"],
           }

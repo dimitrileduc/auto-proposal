@@ -31,14 +31,16 @@ const odooClient = createOdooClient(autoProposalConfig.odooApiType);
 export async function getProductOrderHistory(
   partnerId: number = autoProposalConfig.testing.defaultClientId,
   windowDays: number = 730,
-  referenceDate: string
+  referenceDate: string,
+  companyId?: number
 ): Promise<ClientOrderHistory> {
   const rawHistory = await odooClient.getOrderHistoryByPartner(
     partnerId,
     windowDays,
     referenceDate,
     autoProposalConfig.testing.includeDraftOrders,
-    autoProposalConfig.productFiltering.excludedCategoryIds
+    autoProposalConfig.productFiltering.excludedCategoryIds,
+    companyId
   );
   return transformOrderHistory(rawHistory, partnerId);
 }

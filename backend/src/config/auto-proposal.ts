@@ -12,6 +12,9 @@ export const autoProposalConfig = {
   /** Odoo API protocol for backend communication */
   odooApiType: OdooApiType.XMLRPC,
 
+  /** Default company ID for multi-company filtering (FOODPRINT SRL = 3) */
+  defaultCompanyId: 3,
+
   /**
    * Client inactivity detection settings
    * Used to identify clients who haven't ordered recently

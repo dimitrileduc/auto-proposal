@@ -41,9 +41,11 @@ scripts/
 *Test*
 *TEST*
 
-# Exceptions: keep backtesting and test-data
+# Exceptions: keep backtesting, test-data, and unit tests
 !test-data/
 !src/features/backtesting/
+!*.test.ts
+!vitest.config.ts
 
 # Ignore backtest report outputs (generated files)
 reports-output/

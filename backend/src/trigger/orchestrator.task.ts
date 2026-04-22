@@ -85,11 +85,15 @@ export const orchestratorTask = task({
       excludedPartnerTagId:
         payload.config?.excludedPartnerTagId ??
         autoProposalConfig.inactivityDetection.excludedPartnerTagId,
+      companyId:
+        payload.config?.companyId ??
+        autoProposalConfig.defaultCompanyId,
     };
 
     console.log("\nAUTO-PROPOSAL ORCHESTRATOR STARTED");
     console.log(`Mode: ${config.skipOdooQuoteGeneration ? "TEST (skip Odoo quotes)" : "PRODUCTION"}`);
     console.log(`Inactivity period: ${config.dateMin} to ${config.dateMax}`);
+    console.log(`Company ID: ${config.companyId}`);
     console.log(`Force reanalysis: ${config.forceReanalysis ? "YES (include clients with tag 82)" : "NO (skip tag 82)"}\n`);
 
     try {
@@ -97,7 +101,8 @@ export const orchestratorTask = task({
         config.dateMin,
         config.dateMax,
         config.forceReanalysis ? autoProposalConfig.quoteGeneration.autoProposalTagId : undefined,
-        config.excludedPartnerTagId
+        config.excludedPartnerTagId,
+        config.companyId
       );
 
       const maxToAnalyze =
@@ -135,6 +140,7 @@ export const orchestratorTask = task({
                   moqMinimum: config.moqMinimum,
                   skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
                   shouldGenerateReport: config.generateReports,
+                  companyId: config.companyId,
                 },
               },
             };

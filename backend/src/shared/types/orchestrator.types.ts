@@ -33,6 +33,9 @@ export interface OrchestratorConfig {
 
   /** Partner tag ID to exclude from analysis (null = no filtering) */
   excludedPartnerTagId?: number | null;
+
+  /** Company ID for multi-company filtering (e.g., 3 = FOODPRINT SRL) */
+  companyId?: number;
 }
 
 /**

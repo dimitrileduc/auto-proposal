@@ -42,13 +42,15 @@ export async function getInactiveClients(
   dateMin: string,
   dateMax: string,
   excludeAutoProposalTagId?: number,
-  excludedPartnerTagId?: number | null
+  excludedPartnerTagId?: number | null,
+  companyId?: number
 ): Promise<InactiveClient[]> {
   const partners = await odooClient.getInactiveCompanyPartners(
     dateMin,
     dateMax,
     excludeAutoProposalTagId,
-    excludedPartnerTagId
+    excludedPartnerTagId,
+    companyId
   );
   return transformInactiveClients(partners);
 }

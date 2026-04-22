@@ -132,7 +132,8 @@ export interface OdooClient {
     dateMin: string,
     dateMax: string,
     excludeOrderTagId?: number,
-    excludedPartnerTagId?: number | null
+    excludedPartnerTagId?: number | null,
+    companyId?: number
   ): Promise<OdooPartner[]>;
 
   /**
@@ -150,7 +151,8 @@ export interface OdooClient {
     windowDays: number,
     referenceDate: string,
     includeDraftOrders: boolean,
-    excludedCategoryIds?: number[]
+    excludedCategoryIds?: number[],
+    companyId?: number
   ): Promise<OrderHistory>;
 
   /**
