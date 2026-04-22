@@ -1,0 +1,101 @@
+backend/src/config/auto-proposal.ts
+  dd191f19ad954696 16
+  66ccce3dcf88a826 15,17
+backend/src/shared/types/client.types.ts
+  66ccce3dcf88a826 28-30
+backend/src/shared/types/orchestrator.types.ts
+  66ccce3dcf88a826 36-38
+backend/src/features/stock-replenishment/order-history/order-history.service.ts
+  66ccce3dcf88a826 34-35,42-43
+backend/src/features/stock-replenishment/stock-replenishment.service.ts
+  66ccce3dcf88a826 36,46
+backend/src/infrastructure/odoo/clients/company-filtering.test.ts
+  ef132aaf9aae3eab 6-145
+backend/src/trigger/client-proposal.task.ts
+  66ccce3dcf88a826 91-94,110
+backend/src/trigger/orchestrator.task.ts
+  66ccce3dcf88a826 88-90,96,104-105,143
+backend/src/features/client-inactivity/inactivity.service.ts
+  66ccce3dcf88a826 45-46,52-53
+backend/.gitignore
+  66ccce3dcf88a826 44,47-48
+backend/src/infrastructure/odoo/clients/odoo-domains.ts
+  66ccce3dcf88a826 32-33,44-47,101-102,114-115
+backend/src/infrastructure/odoo/clients/odoo-client.types.ts
+  66ccce3dcf88a826 135-136,154-155
+backend/src/infrastructure/odoo/clients/xmlrpc-client.ts
+  ef132aaf9aae3eab 61-66,69-70,79
+  66ccce3dcf88a826 58-59,97-98,112
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2",
+  "base_commit_sha": "e2d104ee2d6744a0ae98a3465e5802813e7bc629",
+  "prompts": {
+    "54ba5736656e879d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22486eee-ce6f-482a-8b1e-c562042c7800",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dimitri Leduc",
+      "messages": [],
+      "total_additions": 116,
+      "total_deletions": 0,
+      "accepted_lines": 116,
+      "overriden_lines": 0
+    },
+    "63ac65849e1baa31": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7c184950-adaf-4917-b6d7-658129a1dcb7",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dimitri Leduc",
+      "messages": [],
+      "total_additions": 15,
+      "total_deletions": 0,
+      "accepted_lines": 14,
+      "overriden_lines": 0
+    },
+    "66ccce3dcf88a826": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "97ea51ba-e741-4c5d-a6ab-f4d4cf7a2fc7",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dimitri Leduc",
+      "messages": [],
+      "total_additions": 500,
+      "total_deletions": 140,
+      "accepted_lines": 60,
+      "overriden_lines": 0
+    },
+    "dd191f19ad954696": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a1b320fc-55c0-4de3-86a4-d88edb898ebe",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dimitri Leduc",
+      "messages": [],
+      "total_additions": 4734,
+      "total_deletions": 75,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    },
+    "ef132aaf9aae3eab": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b23084d6-29fc-47ea-a321-2d1ff1c80717",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dimitri Leduc",
+      "messages": [],
+      "total_additions": 4854,
+      "total_deletions": 341,
+      "accepted_lines": 4784,
+      "overriden_lines": 0
+    }
+  }
+}
