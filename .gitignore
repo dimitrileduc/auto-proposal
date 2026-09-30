@@ -1,5 +1,11 @@
 
 
+# Build output
+backend/dist/
+
+# MCP config (root)
+.mcp.json
+
 # Fichiers
 .DS_Store
 *.log
