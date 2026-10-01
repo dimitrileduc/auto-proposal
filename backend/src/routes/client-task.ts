@@ -19,7 +19,8 @@ const clientTask = new Hono();
  *
  * POST /client-task
  *
- * Triggers the Trigger.dev task to process a specific client for proposal generation.
+ * Triggers the Trigger.dev task to process a specific client: suggested products,
+ * then the "Suggestion commande" activity (reads only unless skipOdooWrite is false).
  *
  * @param clientId Client ID to process (required)
  * @param clientName Client name for display (optional)
@@ -28,8 +29,11 @@ const clientTask = new Hono();
  *   - analysisEndDate: Reference date for analysis (format: "YYYY-MM-DD HH:MM:SS", default: today)
  *   - replenishmentThreshold: Replenishment threshold in days
  *   - moqMinimum: Minimum order amount
- *   - skipOdooQuoteGeneration: Skip Odoo quote creation (default: true)
+ *   - skipOdooWrite: Test mode, no write in Odoo (default: true)
  *   - shouldGenerateReport: Generate markdown reports (default: true)
+ *   - companyId: Analysed company (default: autoProposalConfig.defaultCompanyId)
+ *   - eligibilityCheck: Re-check salesperson / open activity / recent follow-up before writing (default: true)
+ *   - runDate: Run day "YYYY-MM-DD", activity deadline (default: today Europe/Paris)
  * @returns Task ID and configuration
  */
 clientTask.post("/", async (c) => {
@@ -51,8 +55,11 @@ clientTask.post("/", async (c) => {
         analysisEndDate: config.analysisEndDate,
         replenishmentThreshold: config.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
         moqMinimum: config.moqMinimum ?? autoProposalConfig.pricing.minimumOrderAmount,
-        skipOdooQuoteGeneration: config.skipOdooQuoteGeneration ?? true,
+        skipOdooWrite: config.skipOdooWrite ?? true,
         shouldGenerateReport: config.shouldGenerateReport,
+        companyId: config.companyId,
+        eligibilityCheck: config.eligibilityCheck,
+        runDate: config.runDate,
       },
     };
 

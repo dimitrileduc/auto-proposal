@@ -1,7 +1,7 @@
 /**
  * Scheduled orchestrator task - runs every Friday at 7:00 AM Paris time
  *
- * Triggers the main orchestrator workflow on a daily schedule.
+ * Triggers the main orchestrator workflow every Friday morning.
  *
  * @module trigger/orchestrator-scheduled
  */
@@ -9,30 +9,41 @@
 import { schedules } from "@trigger.dev/sdk/v3";
 import { orchestratorTask } from "./orchestrator.task";
 import { autoProposalConfig } from "../config/auto-proposal";
+import { scheduledSkipOdooWrite } from "./scheduled-mode";
 
 /**
- * Daily scheduled orchestrator - PRODUCTION
+ * Weekly scheduled orchestrator - PRODUCTION
  *
  * Runs every Friday at 7:00 AM Europe/Paris timezone.
- * Processes inactive clients and generates Odoo quotes.
+ * Processes inactive clients and creates a "Suggestion commande" activity in Odoo
+ * for each eligible client (no quote is created). Only this task writes in Odoo, and only
+ * when it runs in the Trigger.dev production environment: in dev or staging it stays in test mode.
  */
-export const dailyOrchestratorSchedule = schedules.task({
+export const weeklyOrchestratorSchedule = schedules.task({
   id: "orchestrator-daily-7am",
   cron: {
     pattern: "0 7 * * 5",
     timezone: "Europe/Paris",
   },
-  run: async (payload) => {
+  // No retry: a retry would trigger a new orchestrator run, replay the AI for every client
+  // and report the clients already served as "activité déjà ouverte"
+  retry: {
+    maxAttempts: 1,
+  },
+  run: async (payload, { ctx }) => {
+    const skipOdooWrite = scheduledSkipOdooWrite(ctx.environment.type);
+
     console.log(`\n========================================`);
-    console.log(`SCHEDULED ORCHESTRATOR RUN - PRODUCTION`);
+    console.log(`SCHEDULED ORCHESTRATOR RUN - ${skipOdooWrite ? "TEST MODE (no write in Odoo)" : "PRODUCTION"}`);
+    console.log(`Trigger.dev environment: ${ctx.environment.type}`);
     console.log(`Time: ${payload.timestamp}`);
     console.log(`Last run: ${payload.lastTimestamp || "First run"}`);
     console.log(`========================================\n`);
 
     const result = await orchestratorTask.triggerAndWait({
       config: {
-        // PRODUCTION: All inactive clients
-        skipOdooQuoteGeneration: false,
+        // Writes in Odoo only from the production environment
+        skipOdooWrite,
         generateReports: true,
         forceReanalysis: false,
         companyId: autoProposalConfig.defaultCompanyId,
@@ -41,9 +52,12 @@ export const dailyOrchestratorSchedule = schedules.task({
 
     if (result.ok) {
       console.log(`\n✅ Orchestrator completed successfully`);
-      console.log(`   Clients processed: ${result.output.statistics.clientsProcessed}`);
-      console.log(`   Quotes generated: ${result.output.statistics.quotesGenerated}`);
-      console.log(`   Total value: ${result.output.statistics.totalValue}€`);
+      const statistics = result.output.statistics;
+      console.log(`   Clients processed: ${statistics.clientsProcessed}`);
+      console.log(`   Activities created: ${statistics.activitiesCreated}`);
+      console.log(`   Opportunities created: ${statistics.leadsCreated}`);
+      console.log(`   Clients skipped: ${statistics.clientsSkipped}`);
+      console.log(`   Errors: ${statistics.clientsFailed}`);
 
       return {
         success: true,

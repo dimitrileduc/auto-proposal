@@ -28,8 +28,8 @@ export interface OrchestratorConfig {
   /** Minimum order amount in euros (MOQ) */
   moqMinimum: number;
 
-  /** Skip Odoo quote creation (Phase 3) */
-  skipOdooQuoteGeneration: boolean;
+  /** Test mode: no write in Odoo, neither activity nor opportunity (default: true) */
+  skipOdooWrite: boolean;
 
   /** Partner tag ID to exclude from analysis (null = no filtering) */
   excludedPartnerTagId?: number | null;

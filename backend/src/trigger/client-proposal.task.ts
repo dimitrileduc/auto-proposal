@@ -1,16 +1,17 @@
 import { task } from "@trigger.dev/sdk";
 import { calculateReplenishmentNeeds } from "../features/stock-replenishment/stock-replenishment.service";
 import { prepareProposal } from "../features/proposal-preparation/proposal-preparation.service";
-import { generateQuote } from "../features/proposal-generation/proposal-generation.service";
+import { processClientSuggestion } from "../features/suggestion-activity/process-client.service";
 import { createOdooClient } from "../infrastructure/odoo/odoo.service";
 import { autoProposalConfig } from "../config/auto-proposal";
-import { getTodayAsDateString, parseUserDateInput } from "../utils/date.utils";
+import { getRunDateParis, getTodayAsDateString, parseUserDateInput } from "../utils/date.utils";
 import { generateClientReportJSON } from "../reports/client-report-json";
 import { generateClientReportMarkdown } from "../reports/client-report-md";
 import * as fs from "fs/promises";
 import * as path from "path";
 import type { ClientTaskPayload, ClientProcessingConfig } from "../shared/types";
 import type { ClientProposalResult } from "../reports/types";
+import type { SuggestionActivityOutcome } from "../features/suggestion-activity/suggestion-activity.types";
 
 const odooClient = createOdooClient(autoProposalConfig.odooApiType);
 
@@ -29,8 +30,8 @@ export interface ClientProposalTaskResult {
     hasRisk: boolean;
     productsCount: number;
     finalAmount: number;
-    quoteName?: string;
-    quoteId?: number;
+    /** "Suggestion commande" step: created, would_create, skipped or error */
+    outcome: SuggestionActivityOutcome;
   };
   report: {
     /** Business markdown report */
@@ -47,8 +48,9 @@ export interface ClientProposalTaskResult {
  * Executes the complete workflow for a single client:
  * - Phase 1 & 2: Stock Analysis + Quantity Calculation
  * - Phase 2.5: Proposal Preparation (Pricing + MOQ)
- * - Phase 3: Quote Generation (if !skipQuoteGeneration)
- * - Report generation when hasRisk=true
+ * - Phase 3: "Suggestion commande" activity: eligibility re-check right before writing,
+ *   opportunity (created if none open) and activity in Odoo; reads only if skipOdooWrite
+ * - Report generation when shouldGenerateReport
  *
  * Uses autoProposalConfig as fallback for all parameters.
  *
@@ -68,6 +70,10 @@ export const clientProposalTask = task({
 
     console.log(`Processing client: ${payload.client.name} (ID: ${payload.client.id})`);
 
+    const companyId = payload.config.companyId ?? autoProposalConfig.defaultCompanyId;
+    const eligibilityCheck = payload.config.eligibilityCheck ?? true;
+    const runDate = payload.config.runDate ?? getRunDateParis();
+
     const config: ClientProcessingConfig = {
       analysisEndDate: payload.config.analysisEndDate
         ? parseUserDateInput(payload.config.analysisEndDate)
@@ -81,17 +87,17 @@ export const clientProposalTask = task({
         payload.config.moqMinimum ??
         autoProposalConfig.pricing.minimumOrderAmount,
 
-      skipOdooQuoteGeneration:
-        payload.config.skipOdooQuoteGeneration ??
+      skipOdooWrite:
+        payload.config.skipOdooWrite ??
         true,
 
       shouldGenerateReport:
         payload.config.shouldGenerateReport ??
         true,
 
-      companyId:
-        payload.config.companyId ??
-        autoProposalConfig.defaultCompanyId,
+      companyId,
+      eligibilityCheck,
+      runDate,
     };
 
     const result: ClientProposalResult = {
@@ -142,13 +148,22 @@ export const clientProposalTask = task({
         result.moqGapFilled = 0;
       }
 
-      if (!config.skipOdooQuoteGeneration && hasProducts) {
-        const quote = await generateQuote(proposalFinal, odooClient);
+      const { outcome, activityNote } = await processClientSuggestion(
+        {
+          clientId: payload.client.id,
+          clientName: payload.client.name,
+          products: proposalFinal.products,
+          companyId,
+          runDate,
+          skipOdooWrite: config.skipOdooWrite,
+          eligibilityCheck,
+          activityTypeId: autoProposalConfig.activity.suggestionActivityTypeId,
+        },
+        odooClient
+      );
 
-        result.phases.quote = quote;
-        result.quoteName = quote.quote_name;
-        result.quoteId = quote.quote_id;
-      }
+      result.outcome = outcome;
+      result.activityNote = activityNote;
 
       result.success = true;
       result.executionTime = Date.now() - startTime;
@@ -162,7 +177,7 @@ export const clientProposalTask = task({
             analysisEndDate: config.analysisEndDate,
             replenishmentThreshold: config.replenishmentThreshold,
             moqMinimum: config.moqMinimum,
-            skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
+            skipOdooWrite: config.skipOdooWrite,
           });
 
           reportMarkdown = generateClientReportMarkdown(jsonData);
@@ -202,8 +217,7 @@ export const clientProposalTask = task({
           hasRisk: result.hasRisk,
           productsCount: result.productsCount ?? 0,
           finalAmount: result.finalAmount ?? 0,
-          quoteName: result.quoteName,
-          quoteId: result.quoteId,
+          outcome,
         },
         report: {
           markdown: reportMarkdown,

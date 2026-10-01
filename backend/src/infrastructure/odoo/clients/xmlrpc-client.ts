@@ -7,23 +7,114 @@
  */
 
 import { OdooClient as XmlRpcOdoo } from "odoo-xmlrpc-ts";
-import { calculateDateBefore } from "../../../utils/date.utils";
+import { calculateDateBefore, odooDatetimeToParisDate } from "../../../utils/date.utils";
+import { errorMessage } from "../../../utils/error.utils";
 import type {
   OdooClient,
   OdooPartner,
   OdooOrder,
   OdooOrderLine,
   OrderHistory,
-  PartnerCompanyInfo,
   OdooSaleOrder,
   OdooSaleOrderLine,
-  EmailSendResult,
+  ActivityTypeInfo,
+  PartnerSalesContext,
+  LeadSummary,
+  LeadCreateValues,
+  ActivityCreateValues,
+  OpenSuggestionActivity,
+  SuggestionTrace,
 } from "./odoo-client.types";
 import {
   buildRecentOrdersDomain,
   buildInactivePartnersDomain,
   buildPartnerOrdersDomain,
+  buildOldestOpenLeadDomain,
+  buildPartnerLeadsDomain,
+  buildOpenSuggestionActivitiesDomain,
+  buildSuggestionTracesDomain,
+  buildLastConfirmedOrderDomain,
 } from "./odoo-domains";
+
+/** Odoo many2one value as returned by read / search_read */
+type Many2one = [number, string] | false;
+
+interface PartnerSalesRow {
+  id: number;
+  name: string;
+  user_id: Many2one;
+  team_id: Many2one;
+  commercial_partner_id: Many2one;
+  is_company: boolean;
+}
+
+interface UserSalesRow {
+  id: number;
+  name: string;
+  active: boolean;
+  sale_team_id: Many2one;
+  company_ids?: number[];
+}
+
+interface ActivityRow {
+  id: number;
+  res_id: number;
+  user_id?: Many2one;
+  date_deadline?: string;
+  summary?: string | false;
+}
+
+interface TraceRow {
+  id: number;
+  res_id: number;
+  date: string;
+}
+
+function toOpenActivity(row: ActivityRow): OpenSuggestionActivity {
+  return {
+    id: row.id,
+    leadId: row.res_id,
+    userId: many2oneId(row.user_id),
+    dateDeadline: row.date_deadline,
+    summary: row.summary || undefined,
+  };
+}
+
+function toTrace(row: TraceRow): SuggestionTrace {
+  return { id: row.id, leadId: row.res_id, date: row.date };
+}
+
+/** Context that includes archived records (lost opportunities) */
+const WITH_ARCHIVED = { active_test: false };
+
+const PARTNER_SALES_FIELDS = ["name", "user_id", "team_id", "commercial_partner_id", "is_company"];
+const USER_SALES_FIELDS = ["name", "active", "sale_team_id", "company_ids"];
+
+function many2oneId(value: Many2one | undefined): number | undefined {
+  return value ? value[0] : undefined;
+}
+
+function toSalesContext(partner: PartnerSalesRow, users: Map<number, UserSalesRow>): PartnerSalesContext {
+  const userId = many2oneId(partner.user_id);
+  const user = userId !== undefined ? users.get(userId) : undefined;
+
+  return {
+    id: partner.id,
+    name: partner.name,
+    commercialPartnerId: many2oneId(partner.commercial_partner_id) ?? partner.id,
+    isCompany: partner.is_company,
+    partnerTeamId: many2oneId(partner.team_id),
+    salesperson: user
+      ? {
+          id: user.id,
+          name: user.name,
+          active: user.active,
+          teamId: many2oneId(user.sale_team_id),
+          companyIds: user.company_ids ?? [],
+        }
+      : undefined,
+  };
+}
 
 const ODOO_CONFIG = {
   url: process.env.ODOO_URL || "https://demo-food-autopilot.odoo.com",
@@ -49,6 +140,24 @@ export function createXmlRpcClient(): OdooClient {
     username: ODOO_CONFIG.username,
     password: ODOO_CONFIG.password,
   });
+
+  /**
+   * Reads records by id. Archived records are returned; missing ids are skipped by Odoo.
+   */
+  async function readRecords<T>(model: string, ids: number[], fields: string[]): Promise<T[]> {
+    if (ids.length === 0) {
+      return [];
+    }
+    return odoo.execute<T[]>(model, "read", [ids, fields]);
+  }
+
+  async function readSalespeople(partners: PartnerSalesRow[]): Promise<Map<number, UserSalesRow>> {
+    const userIds = [
+      ...new Set(partners.map((p) => many2oneId(p.user_id)).filter((id): id is number => id !== undefined)),
+    ];
+    const users = await readRecords<UserSalesRow>("res.users", userIds, USER_SALES_FIELDS);
+    return new Map(users.map((u) => [u.id, u]));
+  }
 
   return {
     async getInactiveCompanyPartners(
@@ -185,74 +294,229 @@ export function createXmlRpcClient(): OdooClient {
       }
     },
 
-    async getPartnerCompanyInfo(partnerId: number) {
+    async getActivityType(typeId: number): Promise<ActivityTypeInfo | null> {
       try {
-        const result = await odoo.searchRead<PartnerCompanyInfo>(
-          "res.partner",
-          [["id", "=", partnerId]],
-          { fields: ["name", "company_id", "user_id"] }
+        const types = await readRecords<{ id: number; name: string; res_model: string | false; active: boolean }>(
+          "mail.activity.type",
+          [typeId],
+          ["name", "res_model", "active"]
         );
-
-        if (result.length === 0) {
-          throw new Error(`Partner ${partnerId} not found`);
+        const type = types[0];
+        return type ? { id: type.id, name: type.name, resModel: type.res_model, active: type.active } : null;
+      } catch (error) {
+        // Odoo 17 raises MissingError on read of a missing id
+        if (/MissingError|does not exist/i.test(errorMessage(error))) {
+          return null;
         }
-
-        return result[0];
-      } catch (error) {
-        throw error instanceof Error
-          ? error
-          : new Error(
-              `Failed to fetch partner info for partner ${partnerId}: ${error}`
-            );
+        throw error;
       }
     },
 
-    async createSaleOrder(data: {
-      partner_id: number;
-      company_id: number;
-      tag_ids?: any[];
-      note?: string;
-      user_id?: number;
-    }): Promise<number> {
+    async getPartnerSalesContext(partnerId: number): Promise<PartnerSalesContext> {
+      const partners = await readRecords<PartnerSalesRow>("res.partner", [partnerId], PARTNER_SALES_FIELDS);
+
+      if (partners.length === 0) {
+        throw new Error(`Partner ${partnerId} not found`);
+      }
+
+      const users = await readSalespeople(partners);
+      return toSalesContext(partners[0], users);
+    },
+
+    async getSalesContexts(partnerIds: number[]): Promise<Map<number, PartnerSalesContext>> {
+      const partners = await readRecords<PartnerSalesRow>("res.partner", partnerIds, PARTNER_SALES_FIELDS);
+      const users = await readSalespeople(partners);
+
+      return new Map(partners.map((partner) => [partner.id, toSalesContext(partner, users)]));
+    },
+
+    async findOldestOpenLead(commercialPartnerId: number, companyId: number): Promise<LeadSummary | null> {
+      const leads = await odoo.searchRead<{
+        id: number;
+        name: string;
+        create_date: string;
+        user_id: Many2one;
+        team_id: Many2one;
+      }>(
+        "crm.lead",
+        buildOldestOpenLeadDomain(commercialPartnerId, companyId),
+        {
+          fields: ["id", "name", "create_date", "user_id", "team_id"],
+          order: "create_date asc, id asc",
+          limit: 1,
+        }
+      );
+
+      if (leads.length === 0) {
+        return null;
+      }
+
+      const lead = leads[0];
+      return {
+        id: lead.id,
+        name: lead.name,
+        createDate: lead.create_date,
+        userId: many2oneId(lead.user_id),
+        teamId: many2oneId(lead.team_id),
+      };
+    },
+
+    async getPartnerLeadIds(commercialPartnerId: number, companyId: number): Promise<number[]> {
+      const leads = await odoo.execute<Array<{ id: number }>>(
+        "crm.lead",
+        "search_read",
+        [buildPartnerLeadsDomain(commercialPartnerId, companyId)],
+        { fields: ["id"], context: WITH_ARCHIVED }
+      );
+
+      return leads.map((lead) => lead.id);
+    },
+
+    async findOpenSuggestionActivity(leadIds: number[], typeId: number): Promise<OpenSuggestionActivity | null> {
+      if (leadIds.length === 0) {
+        return null;
+      }
+
+      const activities = await odoo.searchRead<ActivityRow>(
+        "mail.activity",
+        buildOpenSuggestionActivitiesDomain(leadIds, typeId),
+        {
+          fields: ["id", "res_id", "user_id", "date_deadline", "summary"],
+          order: "date_deadline asc",
+          limit: 1,
+        }
+      );
+
+      return activities.length > 0 ? toOpenActivity(activities[0]) : null;
+    },
+
+    async findLastSuggestionTrace(leadIds: number[], typeId: number, since: string): Promise<SuggestionTrace | null> {
+      if (leadIds.length === 0) {
+        return null;
+      }
+
+      const traces = await odoo.searchRead<TraceRow>(
+        "mail.message",
+        buildSuggestionTracesDomain(leadIds, typeId, since),
+        { fields: ["id", "res_id", "date"], order: "date desc", limit: 1 }
+      );
+
+      return traces.length > 0 ? toTrace(traces[0]) : null;
+    },
+
+    async getLeadIdsByCommercialPartners(
+      commercialPartnerIds: number[],
+      companyId: number
+    ): Promise<Map<number, number[]>> {
+      const leadsByPartner = new Map<number, number[]>();
+
+      if (commercialPartnerIds.length === 0) {
+        return leadsByPartner;
+      }
+
+      // P3: opportunities of the clients and their contacts, archived included
+      const leads = await odoo.execute<Array<{ id: number; partner_id: Many2one }>>(
+        "crm.lead",
+        "search_read",
+        [buildPartnerLeadsDomain(commercialPartnerIds, companyId)],
+        { fields: ["id", "partner_id"], context: WITH_ARCHIVED }
+      );
+
+      // P3b: commercial partner of each opportunity partner (contact → company). The clients
+      // themselves are their own commercial partner: only the contacts need a read.
+      const commercialByPartner = new Map(commercialPartnerIds.map((id) => [id, id]));
+      const contactIds = [
+        ...new Set(leads.map((lead) => many2oneId(lead.partner_id)).filter((id): id is number => id !== undefined)),
+      ].filter((id) => !commercialByPartner.has(id));
+      const contacts = await readRecords<{ id: number; commercial_partner_id: Many2one }>(
+        "res.partner",
+        contactIds,
+        ["commercial_partner_id"]
+      );
+      for (const contact of contacts) {
+        commercialByPartner.set(contact.id, many2oneId(contact.commercial_partner_id) ?? contact.id);
+      }
+
+      for (const lead of leads) {
+        const partnerId = many2oneId(lead.partner_id);
+        const commercialPartnerId = partnerId !== undefined ? commercialByPartner.get(partnerId) : undefined;
+        if (commercialPartnerId === undefined) continue;
+
+        const ids = leadsByPartner.get(commercialPartnerId) ?? [];
+        ids.push(lead.id);
+        leadsByPartner.set(commercialPartnerId, ids);
+      }
+
+      return leadsByPartner;
+    },
+
+    async findOpenSuggestionActivities(leadIds: number[], typeId: number): Promise<OpenSuggestionActivity[]> {
+      if (leadIds.length === 0) {
+        return [];
+      }
+
+      const activities = await odoo.searchRead<ActivityRow>(
+        "mail.activity",
+        buildOpenSuggestionActivitiesDomain(leadIds, typeId),
+        { fields: ["id", "res_id"] }
+      );
+
+      return activities.map(toOpenActivity);
+    },
+
+    async findSuggestionTracesSince(leadIds: number[], typeId: number, since: string): Promise<SuggestionTrace[]> {
+      if (leadIds.length === 0) {
+        return [];
+      }
+
+      const traces = await odoo.searchRead<TraceRow>(
+        "mail.message",
+        buildSuggestionTracesDomain(leadIds, typeId, since),
+        { fields: ["res_id", "date"] }
+      );
+
+      return traces.map(toTrace);
+    },
+
+    async findLastConfirmedOrderDate(partnerId: number, companyId: number): Promise<string | null> {
+      const orders = await odoo.searchRead<{ date_order: string; name: string }>(
+        "sale.order",
+        buildLastConfirmedOrderDomain(partnerId, companyId),
+        { fields: ["date_order", "name"], order: "date_order desc", limit: 1 }
+      );
+
+      return orders.length > 0 ? odooDatetimeToParisDate(orders[0].date_order) : null;
+    },
+
+    async getTeamCompanies(teamIds: number[]): Promise<Map<number, number | false>> {
+      const teams = await readRecords<{ id: number; company_id: Many2one }>(
+        "crm.team",
+        [...new Set(teamIds)],
+        ["company_id"]
+      );
+      return new Map(teams.map((team) => [team.id, many2oneId(team.company_id) ?? false]));
+    },
+
+    async createLead(values: LeadCreateValues): Promise<number> {
       try {
-        return await odoo.create("sale.order", data);
+        return await odoo.create("crm.lead", values);
       } catch (error) {
         throw error instanceof Error
           ? error
-          : new Error(`Failed to create sale order: ${error}`);
+          : new Error(`Failed to create opportunity: ${error}`);
       }
     },
 
-    async createSaleOrderLine(data: {
-      order_id: number;
-      product_id: number;
-      product_uom_qty: number;
-      price_unit: number;
-      name?: string;
-    }): Promise<number> {
+    async createActivity(values: ActivityCreateValues): Promise<number> {
       try {
-        return await odoo.create("sale.order.line", data);
+        // default_res_model lets Odoo fill res_model_id (ir.model is not readable by the API account)
+        return await odoo.execute<number>("mail.activity", "create", [values], {
+          context: { default_res_model: "crm.lead" },
+        });
       } catch (error) {
         throw error instanceof Error
           ? error
-          : new Error(`Failed to create sale order line: ${error}`);
-      }
-    },
-
-    async createSaleOrderOption(data: {
-      order_id: number;
-      product_id: number;
-      quantity: number;
-      uom_id: number;
-      price_unit: number;
-      name?: string;
-    }): Promise<number> {
-      try {
-        return await odoo.create("sale.order.option", data);
-      } catch (error) {
-        throw error instanceof Error
-          ? error
-          : new Error(`Failed to create sale order option: ${error}`);
+          : new Error(`Failed to create activity: ${error}`);
       }
     },
 
@@ -310,87 +574,6 @@ export function createXmlRpcClient(): OdooClient {
           : new Error(
               `Failed to fetch sale order details for quote ${quoteId}: ${error}`
             );
-      }
-    },
-
-    async sendQuoteByEmail(
-      quoteId: number,
-      quoteName: string,
-      clientEmail: string,
-      testMode: boolean,
-      testEmail: string
-    ): Promise<EmailSendResult> {
-      try {
-        const templates = await odoo.searchRead<{ id: number; name: string }>(
-          "mail.template",
-          [
-            ["model", "=", "sale.order"],
-            ["name", "ilike", "Sales Order"]
-          ],
-          { fields: ["id", "name"], limit: 1 }
-        );
-
-        if (templates.length === 0) {
-          throw new Error("No email template found for sale.order");
-        }
-
-        const templateId = templates[0].id;
-
-        const emailsSentTo: string[] = [];
-        const emailsBlockedFor: string[] = [];
-
-        if (testMode) {
-          emailsSentTo.push(testEmail);
-          emailsBlockedFor.push(clientEmail);
-        } else {
-          emailsSentTo.push(clientEmail);
-        }
-
-        try {
-          let emailValues = {};
-
-          if (testMode) {
-            emailValues = {
-              email_to: testEmail,
-              partner_ids: [],
-              email_cc: '',
-            };
-          }
-
-          const mailIds = await odoo.execute("mail.template", "send_mail", [
-            templateId,
-            quoteId,
-            true,
-            false,
-            emailValues
-          ]);
-        } catch (sendError) {
-          throw new Error(`Failed to send email: ${sendError}`);
-        }
-
-        return {
-          success: true,
-          template_id: templateId,
-          email_sent_to: emailsSentTo,
-          email_blocked_for: emailsBlockedFor,
-          quote_id: quoteId,
-          quote_name: quoteName,
-          mode: testMode ? 'test' : 'production'
-        };
-
-      } catch (error: any) {
-        console.error(`   ❌ Email send failed:`, error);
-
-        return {
-          success: false,
-          template_id: 0,
-          email_sent_to: [],
-          email_blocked_for: testMode ? [clientEmail] : [],
-          quote_id: quoteId,
-          quote_name: quoteName,
-          mode: testMode ? 'test' : 'production',
-          error: error.message || String(error)
-        };
       }
     },
 

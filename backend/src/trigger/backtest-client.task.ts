@@ -190,7 +190,8 @@ export const backtestClientTask = task({
         },
         config: {
           analysisEndDate: cutoffDate,
-          skipOdooQuoteGeneration: true,
+          skipOdooWrite: true,
+          eligibilityCheck: false, // historical prediction: no follow-up rules, never any write
           shouldGenerateReport: true, // Générer le rapport client pour debug
           replenishmentThreshold: payload.config?.replenishmentThreshold ?? autoProposalConfig.replenishmentThreshold,
           moqMinimum: autoProposalConfig.pricing.minimumOrderAmount,

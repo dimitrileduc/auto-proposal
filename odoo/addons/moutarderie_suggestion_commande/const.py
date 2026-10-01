@@ -1,0 +1,1 @@
+SUGGESTION_TYPE_XMLID = "moutarderie_suggestion_commande.mail_activity_type_suggestion_commande"

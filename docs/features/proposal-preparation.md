@@ -142,11 +142,11 @@ current_price_unit = lastOrder.price_unit
 
 Utilisé par:
 - **[Client Proposal task](../tasks/client-proposal.md)** - Étape 2
-- **[Proposal Generation](./proposal-generation.md)** - Input
+- **[Suggestion Activity](./suggestion-activity.md)** - Input (produits de la description)
 
 Voir aussi:
 - **[Stock Replenishment](./stock-replenishment.md)** - Étape précédente
-- **[Proposal Generation](./proposal-generation.md)** - Étape suivante
+- **[Suggestion Activity](./suggestion-activity.md)** - Étape suivante
 
 ---
 

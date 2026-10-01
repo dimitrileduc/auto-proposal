@@ -18,7 +18,8 @@ const orchestratorTaskRoute = new Hono();
  *
  * POST /orchestrator-task
  *
- * Triggers the orchestrator to process all inactive clients for proposal generation.
+ * Triggers the orchestrator to process all inactive clients and create their
+ * "Suggestion commande" activities (reads only unless skipOdooWrite is false).
  *
  * Configuration options (all optional):
  * - dateMin: Minimum inactivity date (formats: "DDMMYY", "DD/MM/YY", "DD/MM/YYYY", "YYYY-MM-DD")
@@ -27,8 +28,10 @@ const orchestratorTaskRoute = new Hono();
  * - moqMinimum: Minimum order amount in currency (default: 300)
  * - maxClientsToAnalyze: Max clients to process or "all" for all
  * - generateReports: Generate markdown reports (default: true)
- * - skipOdooQuoteGeneration: Skip Odoo quote creation - test mode (default: true)
+ * - skipOdooWrite: Test mode, no write in Odoo (default: true)
  * - forceReanalysis: Reanalyze clients with auto-proposal tag (default: false)
+ * - excludedPartnerTagId: Partner tag excluded from detection (default: 196)
+ * - companyId: Analysed company (default: 3)
  *
  * @returns Task ID and configuration
  */

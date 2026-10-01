@@ -6,13 +6,14 @@
  * - CORE PRODUCTS section (medium/high confidence)
  * - OPTIONAL PRODUCTS section (low confidence) with warning
  * - LLM prediction details in dropdowns for each product
- * - Odoo quote section (if generated)
+ * - Phase 3: "Suggestion commande" activity (outcome, opportunity, salesperson, description)
  * - Technical details in accordions
  *
  * @module reports/client-report-md
  */
 
 import type { ClientReportJSON, BusinessProduct } from "./client-report-json";
+import { formatDateFr } from "../utils/date.utils";
 
 /**
  * Generates markdown business report from JSON client data
@@ -44,10 +45,6 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
 
   if (data.summary.moq_adjusted) {
     sections.push(`- **MOQ Adjustment:** +${data.summary.moq_gap?.toFixed(2)}€ to meet minimum of ${data.config.moqMinimum}€`);
-  }
-
-  if (data.summary.quote_name) {
-    sections.push(`- **Odoo Quote:** ${data.summary.quote_name} (ID: ${data.summary.quote_id})`);
   }
 
   sections.push("");
@@ -108,96 +105,9 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
     sections.push("");
   }
 
-  // PHASE 3 - ODOO QUOTE (right after Phase 2.5)
-  if (data.phases.quote) {
-    sections.push(`## PHASE 3 - ODOO QUOTE`);
-    sections.push("");
-    sections.push(`**Quote:** ${data.phases.quote.quote_name} (ID: ${data.phases.quote.quote_id})`);
-    sections.push(`**Status:** ${data.phases.quote.quote_state}`);
-    sections.push(`**Created:** ${new Date(data.phases.quote.created_at).toLocaleString("en-US")}`);
-    sections.push("");
-
-    // Map product_id -> BusinessProduct for summary lookup
-    const productMap = new Map<number, BusinessProduct>();
-    for (const p of [...data.products.base, ...data.products.optional]) {
-      productMap.set(p.product_id, p);
-    }
-
-    // Core products table
-    if (data.phases.quote.order_lines.length > 0) {
-      sections.push(`### Core Products (${data.phases.quote.lines_count})`);
-      sections.push("");
-      sections.push(`| Product | Qty | Price | Subtotal | Summary |`);
-      sections.push(`|---------|----:|------:|---------:|---------|`);
-
-      for (const line of data.phases.quote.order_lines) {
-        const name = line.product_name.length > 40 ? line.product_name.slice(0, 37) + "..." : line.product_name;
-        const bizProduct = productMap.get(line.product_id);
-        const summary = bizProduct?.llm_prediction?.summary || "-";
-        sections.push(
-          `| ${name} | ${line.quantity} | ${line.price_unit.toFixed(2)}€ | ${line.subtotal_ht.toFixed(2)}€ | ${summary} |`
-        );
-      }
-      sections.push("");
-    }
-
-    // Optional products table
-    if (data.phases.quote.optional_products.length > 0) {
-      sections.push(`### Optional Products (${data.phases.quote.optional_products_count})`);
-      sections.push("");
-      sections.push(`| Product | Qty | Price | Subtotal | Summary |`);
-      sections.push(`|---------|----:|------:|---------:|---------|`);
-
-      for (const opt of data.phases.quote.optional_products) {
-        const name = opt.product_name.length > 40 ? opt.product_name.slice(0, 37) + "..." : opt.product_name;
-        const bizProduct = productMap.get(opt.product_id);
-        const summary = bizProduct?.llm_prediction?.summary || "-";
-        sections.push(
-          `| ${name} | ${opt.quantity} | ${opt.price_unit.toFixed(2)}€ | ${opt.subtotal_ht.toFixed(2)}€ | ${summary} |`
-        );
-      }
-      sections.push("");
-    }
-
-    sections.push(`**Total HT:** ${data.phases.quote.amount_total_ht.toFixed(2)}€`);
-    sections.push(`**Taxes:** ${data.phases.quote.tax_total.toFixed(2)}€`);
-    sections.push(`**Total TTC:** ${data.phases.quote.amount_total_ttc.toFixed(2)}€`);
-    sections.push("");
-
-    // Comparison Phase 2.5 vs Odoo
-    const phase2Core = data.summary.base_amount;
-    const phase2Optional = data.summary.optional_amount;
-    const phase2Total = data.phases.proposalFinal.total_amount;
-
-    const phase3Core = data.phases.quote.amount_total_ht;
-    const phase3Optional = data.phases.quote.optional_products.reduce((sum, p) => sum + p.subtotal_ht, 0);
-    const phase3Total = phase3Core + phase3Optional;
-
-    const diffCore = phase3Core - phase2Core;
-    const diffOptional = phase3Optional - phase2Optional;
-    const diffTotal = phase3Total - phase2Total;
-    const diffTotalPercent = phase2Total > 0 ? ((diffTotal / phase2Total) * 100).toFixed(1) : "0.0";
-
-    sections.push(`### Phase 2.5 vs Odoo Comparison`);
-    sections.push("");
-    sections.push(`| | Phase 2.5 | Odoo | Difference |`);
-    sections.push(`|---------|----------:|-----:|-----------:|`);
-    sections.push(
-      `| **Core** | ${phase2Core.toFixed(2)}€ | ${phase3Core.toFixed(2)}€ | ${diffCore >= 0 ? "+" : ""}${diffCore.toFixed(2)}€ |`
-    );
-    sections.push(
-      `| **Optional** | ${phase2Optional.toFixed(2)}€ | ${phase3Optional.toFixed(2)}€ | ${diffOptional >= 0 ? "+" : ""}${diffOptional.toFixed(2)}€ |`
-    );
-    sections.push(
-      `| **TOTAL** | ${phase2Total.toFixed(2)}€ | ${phase3Total.toFixed(2)}€ | ${diffTotal >= 0 ? "+" : ""}${diffTotal.toFixed(2)}€ (${diffTotalPercent}%) |`
-    );
-    sections.push("");
-
-    if (Math.abs(diffTotal) > 0.01) {
-      sections.push(`> **Note:** Price difference may be due to Odoo price list updates vs historical prices.`);
-      sections.push("");
-    }
-
+  // PHASE 3 - ACTIVITÉ (right after Phase 2.5)
+  if (data.phases.activity) {
+    sections.push(renderActivityPhase(data.phases.activity));
     sections.push("---");
     sections.push("");
   }
@@ -230,7 +140,7 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
     sections.push(`## Optional Products Details`);
     sections.push("");
     sections.push(`> **⚠️ Warning:** These products have low confidence (1 order history only).`);
-    sections.push(`> They will be proposed as **options** in the Odoo quote, not included in the core total.`);
+    sections.push(`> They are listed as **optional** products in the activity description, not included in the core total.`);
     sections.push("");
     sections.push(`**${data.products.optional.length} products** to propose as options:`);
     sections.push("");
@@ -259,7 +169,8 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
   sections.push(`- **Reference Date:** ${data.config.analysisEndDate}`);
   sections.push(`- **Replenishment Threshold:** ${data.config.replenishmentThreshold} days`);
   sections.push(`- **MOQ Minimum:** ${data.config.moqMinimum}€`);
-  sections.push(`- **Mode:** ${data.config.skipOdooQuoteGeneration ? "TEST (skip Odoo)" : "PRODUCTION"}`);
+  sections.push(`- **Mode:** ${data.config.skipOdooWrite ? "TEST (no Odoo write)" : "REAL"}`);
+  sections.push(`- **skipOdooWrite:** ${data.config.skipOdooWrite}`);
   sections.push("");
 
   sections.push(`### Processing Phases`);
@@ -269,8 +180,8 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
   if (data.phases.proposalFinal.moq_adjustment_applied) {
     sections.push(`  - MOQ Adjustment: ${data.phases.proposalFinal.adjustment_details?.original_total.toFixed(2)}€ → ${data.phases.proposalFinal.total_amount.toFixed(2)}€`);
   }
-  if (data.phases.quote) {
-    sections.push(`- **Quote Generation:** Quote ${data.phases.quote.quote_name} created`);
+  if (data.phases.activity) {
+    sections.push(`- **Activity:** ${data.phases.activity.label}`);
   }
   sections.push("");
 
@@ -294,6 +205,49 @@ export function generateClientReportMarkdown(data: ClientReportJSON): string {
   sections.push(`*Report auto-generated on ${new Date(data.meta.generatedAt).toLocaleString("en-US")}*`);
 
   return sections.join("\n");
+}
+
+/**
+ * Renders the "Suggestion commande" phase: outcome, opportunity, salesperson, deadline, description
+ *
+ * @param activity - Activity phase of the JSON report
+ * @returns Formatted markdown section
+ */
+function renderActivityPhase(activity: NonNullable<ClientReportJSON["phases"]["activity"]>): string {
+  const lines: string[] = [];
+  const outcome = activity.outcome;
+
+  lines.push(`## PHASE 3 - ACTIVITÉ`);
+  lines.push("");
+  lines.push(`**Résultat :** ${activity.label}`);
+
+  if (outcome.kind === "created" || outcome.kind === "would_create") {
+    const lead = outcome.leadId !== undefined
+      ? `${outcome.leadName} (ID ${outcome.leadId})`
+      : "à créer";
+    lines.push(`**Opportunité :** ${lead} — ${outcome.leadCreated ? "nouvelle" : "existante"}`);
+    lines.push(`**Vendeur :** ${outcome.salespersonName ?? "—"}`);
+  }
+
+  if (outcome.kind === "created") {
+    lines.push(`**Échéance :** ${formatDateFr(outcome.dateDeadline)}`);
+    lines.push(`**Activité :** ID ${outcome.activityId}`);
+  }
+
+  if (outcome.kind === "error" && outcome.leadCreatedId !== undefined) {
+    lines.push(`**Opportunité créée sans activité :** ID ${outcome.leadCreatedId}`);
+  }
+
+  if (activity.description) {
+    lines.push("");
+    lines.push(`**Description :**`);
+    lines.push("");
+    lines.push(activity.description);
+  }
+
+  lines.push("");
+
+  return lines.join("\n");
 }
 
 /**
