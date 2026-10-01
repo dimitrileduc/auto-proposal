@@ -20,8 +20,8 @@ Quick Links to All Documentation:
 ## Features (Core Modules)
 - [Stock Replenishment](../docs/features/stock-replenishment.md) - LLM-powered order quantities
 - [Client Inactivity](../docs/features/client-inactivity.md) - Identify inactive clients
-- [Proposal Preparation](../docs/features/proposal-preparation.md) - Prepare quote data
-- [Proposal Generation](../docs/features/proposal-generation.md) - Generate proposals
+- [Proposal Preparation](../docs/features/proposal-preparation.md) - Pricing & MOQ of suggested products
+- [Suggestion Activity](../docs/features/suggestion-activity.md) - "Suggestion commande" activity in Odoo (replaces quotes)
 - [Backtesting](../docs/features/backtesting.md) - Validate predictions vs reality
 
 ## Tasks (Trigger.dev Workflows)

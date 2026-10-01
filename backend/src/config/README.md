@@ -2,7 +2,7 @@
 
 ## 🎯 Rôle
 
-Centralise tous les paramètres configurables du système Auto-Proposal (détection, analyse, quantité, pricing, workflow).
+Centralise tous les paramètres configurables du système Auto-Proposal (détection, analyse, quantité, pricing, activité « Suggestion commande », workflow).
 
 ---
 
@@ -24,6 +24,18 @@ export const autoProposalConfig = {
   inactivityDetection: {
     dateMin: null,  // Si null: aujourd'hui - 30 jours
     dateMax: null,  // Si null: aujourd'hui
+    excludedPartnerTagId: 196,   // Étiquette partenaire « Exclude-Auto-Proposal »
+    autoProposalOrderTagId: 82,  // Étiquette des anciens devis automatiques
+  },
+
+  // Activité « Suggestion commande »
+  activity: {
+    suggestionActivityTypeId: Number(process.env.ODOO_SUGGESTION_ACTIVITY_TYPE_ID) || 0,
+    followUpDelayDays: 21,
+    summaryPrefix: "Suggestion commande",
+    leadNamePrefix: "Suggestion commande",
+    introUsual: "Produits que ce client commande régulièrement et qu'il devrait bientôt recommander :",
+    introOptional: "Produits commandés plus rarement par ce client, à lui proposer en complément :",
   },
 
   // Stock replenishment parameters
@@ -41,12 +53,6 @@ export const autoProposalConfig = {
   // Pricing & MOQ configuration
   pricing: {
     minimumOrderAmount: 300,
-  },
-
-  // Quote generation configuration
-  quoteGeneration: {
-    autoProposalTagId: 82,
-    noteTemplate: "🤖 Proposition automatique générée par Auto-Proposal System",
   },
 
   // Product filtering configuration
@@ -100,10 +106,14 @@ odooApiType: OdooApiType.XMLRPC
 inactivityDetection: {
   dateMin: null,  // Si null: aujourd'hui - 30 jours
   dateMax: null,  // Si null: aujourd'hui
+  excludedPartnerTagId: 196,
+  autoProposalOrderTagId: 82,
 }
 ```
 
 - **Defaults:** `null` pour calcul dynamique dans `orchestrator.task.ts`
+- **`excludedPartnerTagId`:** étiquette partenaire « Exclude-Auto-Proposal » : ces clients ne sont jamais analysés
+- **`autoProposalOrderTagId`:** étiquette `crm.tag` portée par les anciens devis automatiques ; avec `forceReanalysis`, les commandes qui la portent ne comptent pas comme activité récente
 - **Calcul runtime:** `dateMin = getDateDaysAgo(30)`, `dateMax = getTodayAsDateString()`
 - **Override:** Possibilité de fournir `dateMin`/`dateMax` personnalisés via payload HTTP
 - **Avantage:** Permet des analyses rétroactives avec dates explicites
@@ -157,22 +167,28 @@ pricing: {
 - **Algorithme:** Round-robin pour augmenter les quantités jusqu'à atteindre 300€
 - **Impact:** Si total initial < 300€, le système augmente progressivement les quantités
 
-### 6. Génération de Devis
+### 6. Activité « Suggestion commande »
 
 ```typescript
-quoteGeneration: {
-  autoProposalTagId: 82,
-  noteTemplate: "🤖 Proposition automatique..."
+activity: {
+  suggestionActivityTypeId: Number(process.env.ODOO_SUGGESTION_ACTIVITY_TYPE_ID) || 0,
+  followUpDelayDays: 21,
+  summaryPrefix: "Suggestion commande",
+  leadNamePrefix: "Suggestion commande",
+  introUsual: "Produits que ce client commande régulièrement …",
+  introOptional: "Produits commandés plus rarement par ce client …",
 }
 ```
 
-- **`autoProposalTagId`:** ID du tag CRM Odoo "Auto-proposal" (doit exister dans `crm.tag`)
-- **`noteTemplate`:** Message ajouté dans le champ `note` du devis Odoo
-
-**Usage du tag:**
-
-- Identifie les devis générés automatiquement
-- Permet de filtrer les clients ayant déjà reçu une proposition (évite le spam si `forceReanalysis: false`)
+- **`suggestionActivityTypeId`:** id du type d'activité « Suggestion commande » livré par le module Odoo
+  `moutarderie_suggestion_commande`. La valeur de prod est relevée en lecture seule après l'installation
+  du module (`ir.model.data`) ; `ODOO_SUGGESTION_ACTIVITY_TYPE_ID` la remplace en local et sur staging.
+  `0` = pas encore relevée : la vérification du début de lancement (nom « Suggestion commande », modèle
+  `crm.lead`) arrête alors le lancement.
+- **`followUpDelayDays`:** nombre minimal de jours calendaires entre deux relances d'un même client (21).
+- **`summaryPrefix` / `leadNamePrefix`:** intitulé de l'activité et de l'opportunité créée, suivi du nom du client.
+- **`introUsual` / `introOptional`:** phrases qui introduisent les listes de produits habituels et
+  optionnels dans la description (à valider par la cliente).
 
 ### 7. Filtrage des Produits
 
@@ -207,8 +223,8 @@ workflow: {
 
 - **`generateReports`:** Si `false`, aucun rapport markdown n'est généré (gain de performance)
 - **`forceReanalysis`:**
-  - `false` (défaut): Exclut les clients ayant déjà un tag "Auto-proposal" (82) → évite le spam
-  - `true`: Analyse TOUS les clients inactifs, même ceux avec proposition récente
+  - `false` (défaut): un ancien devis automatique (étiquette 82) compte comme une commande récente
+  - `true`: les commandes portant l'étiquette 82 sont ignorées pour la détection
 
 **Référence code:** `backend/src/features/client-inactivity/inactivity.service.ts:29`
 
@@ -322,7 +338,7 @@ pricing: {
 **Impact:**
 
 - L'algorithme round-robin augmentera les quantités jusqu'à atteindre 500€
-- Moins de devis générés (filtrage plus strict)
+- Montants proposés plus élevés
 
 </details>
 
@@ -387,37 +403,37 @@ workflow: {
 
 **Comportement par défaut (`false`):**
 
-- Exclut les clients ayant déjà le tag "Auto-proposal" (ID: 82)
-- Évite le spam de propositions multiples
+- Un ancien devis automatique (étiquette 82) compte comme une commande récente
 
 **Avec `forceReanalysis: true`:**
 
-- Analyse TOUS les clients inactifs, même ceux avec proposition récente
-- **Risque:** Création de multiples devis pour le même client
+- Les commandes portant l'étiquette 82 sont ignorées pour la détection
+- Pas de risque de doublon : une activité déjà ouverte ou une relance de moins de 21 jours écarte le client
 
 **Référence code:** `backend/src/features/client-inactivity/inactivity.service.ts:29`
 
 </details>
 
-<details><summary>Comment changer le tag Odoo "Auto-proposal" ?</summary>
+<details><summary>Comment renseigner l'id du type d'activité « Suggestion commande » ?</summary>
 
-1. **Créer un nouveau tag** dans Odoo (CRM → Configuration → Tags)
+1. **Installer le module** `moutarderie_suggestion_commande` sur la base (local, staging ou prod).
 
-2. **Noter l'ID du tag** (visible dans l'URL ou via API)
+2. **Relever l'id en lecture seule** :
 
-3. **Modifier la config:**
-
-```typescript
-quoteGeneration: {
-  autoProposalTagId: 123, // ← Nouvel ID au lieu de 82
-  noteTemplate: "🔵 Proposition automatique v2",
-}
+```python
+env['ir.model.data'].search_read(
+    [('module', '=', 'moutarderie_suggestion_commande'),
+     ('name', '=', 'mail_activity_type_suggestion_commande')],
+    ['res_id'],
+)
 ```
 
-**Impact:**
+3. **Le reporter** :
+   - en local et sur staging : `ODOO_SUGGESTION_ACTIVITY_TYPE_ID=<id>` dans `backend/.env` ;
+   - en prod : `activity.suggestionActivityTypeId` dans `auto-proposal.ts`.
 
-- Tous les nouveaux devis seront taggés avec ce nouvel ID
-- L'ancien tag (82) ne sera plus appliqué
+**Contrôle :** au début de chaque lancement, l'orchestrateur relit ce type et s'arrête avec un message
+clair s'il n'existe pas, ne s'appelle pas « Suggestion commande » ou n'est pas réservé à `crm.lead`.
 
 </details>
 
@@ -461,13 +477,15 @@ analysisWindowDays: 60, // Fenêtre trop courte pour calculer consommation sur 7
 
 Les IDs suivants **doivent exister** dans Odoo:
 
-- `autoProposalTagId: 82` → Tag dans `crm.tag`
+- `excludedPartnerTagId: 196` → Étiquette partenaire dans `res.partner.category`
+- `autoProposalOrderTagId: 82` → Étiquette des devis dans `crm.tag`
+- `activity.suggestionActivityTypeId` → Type d'activité dans `mail.activity.type` (vérifié au début de chaque lancement)
 - `excludedCategoryIds: [8, 10, ...]` → Catégories dans `product.category`
 
 **Test:** Vérifier l'existence via XML-RPC:
 
 ```typescript
-const tagExists = await odooClient.search("crm.tag", [["id", "=", 82]]);
+const tagExists = await odoo.search("crm.tag", [["id", "=", 82]]);
 console.log("Tag exists:", tagExists.length > 0);
 ```
 
@@ -479,9 +497,8 @@ forceReanalysis: true // ⚠️ DANGER en production
 
 **Risques:**
 
-- Création de multiples devis pour le même client
-- Spam des commerciaux avec des propositions redondantes
-- Surcharge du système Odoo
+- Clients récemment servis par un ancien devis automatique de nouveau analysés
+- Appels IA supplémentaires
 
 **Recommandation:** Laisser à `false` par défaut, activer uniquement pour tests/démos.
 
@@ -508,7 +525,7 @@ generateReports: true // Coût en temps/mémoire
 - **Analyse stock:** `backend/src/features/stock-replenishment/stock-replenishment.service.ts`
 - **Calcul quantité:** `backend/src/features/stock-replenishment/utils/quantity.utils.ts`
 - **Pricing & MOQ:** `backend/src/features/proposal-preparation/moq/moq-adjustment.service.ts`
-- **Génération devis:** `backend/src/features/proposal-generation/proposal-generation.service.ts`
+- **Activité « Suggestion commande »:** `backend/src/features/suggestion-activity/`
 - **Workflow orchestrator:** `backend/src/trigger/orchestrator.task.ts`
 
 ### Documentation Associée
@@ -525,5 +542,5 @@ generateReports: true // Coût en temps/mémoire
 
 ---
 
-**Dernière mise à jour:** 2025-10-27
+**Dernière mise à jour:** 2026-09-30 (activité « Suggestion commande » à la place des devis)
 **Refactoring:** Migration vers `dateMin`/`dateMax` (remplacement de `inactivityDaysThreshold`)

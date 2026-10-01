@@ -49,7 +49,6 @@ export function prepareClientReportData(
       stockAnalysis: clientResult.phases.stockAnalysis,
       proposalInitial: clientResult.phases.proposalFinal,
       proposalFinal: clientResult.phases.proposalFinal,
-      quote: clientResult.phases.quote,
     },
     summary: {
       productsCount: clientResult.productsCount ?? 0,
@@ -57,15 +56,6 @@ export function prepareClientReportData(
       finalAmount: clientResult.finalAmount ?? 0,
       moqAdjusted: clientResult.moqAdjustmentApplied ?? false,
       moqGap: clientResult.moqGapFilled,
-      quoteName: clientResult.quoteName,
-      quoteId: clientResult.quoteId,
-      quoteState: clientResult.phases.quote?.quote_state,
-    },
-    orderHistory: [],
-    phaseTiming: {
-      stockAnalysis: 0,
-      proposalPreparation: 0,
-      quoteGeneration: 0,
     },
   };
 }

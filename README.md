@@ -1,8 +1,8 @@
 # auto-proposal
 
-Automated quote generation system for Odoo ERP.
+Automated order suggestions for Odoo ERP, delivered as CRM activities.
 
-**auto-proposal** identifies inactive clients, predicts their stock replenishment needs using AI (Google Gemini), prepares proposals with pricing and MOQ, then generates draft quotes in Odoo.
+**auto-proposal** identifies inactive clients, predicts their stock replenishment needs using AI (Google Gemini), prepares proposals with pricing and MOQ, then creates a "Suggestion commande" activity in Odoo, assigned to the client's salesperson on its oldest open opportunity. No quote is created.
 
 ## Quick Start
 
@@ -16,7 +16,7 @@ Automated quote generation system for Odoo ERP.
 flowchart LR
     A["🔍 Detect<br/>Inactive Clients"] --> B["📊 Stock<br/>Replenishment"]
     B --> C["💰 Prepare<br/>Proposals"]
-    C --> D["📋 Generate<br/>Odoo Quotes"]
+    C --> D["📋 Create<br/>Odoo Activity"]
 ```
 
 ## Core Components
@@ -24,14 +24,14 @@ flowchart LR
 - **[Client Inactivity](./docs/features/client-inactivity.md)** - Identifies clients without recent orders
 - **[Stock Replenishment](./docs/features/stock-replenishment.md)** - Predicts order quantities using LLM + fallback
 - **[Proposal Preparation](./docs/features/proposal-preparation.md)** - Adds pricing and MOQ
-- **[Proposal Generation](./docs/features/proposal-generation.md)** - Creates quotes in Odoo
+- **[Suggestion Activity](./docs/features/suggestion-activity.md)** - Creates the "Suggestion commande" activity in Odoo
 - **[Backtesting](./docs/features/backtesting.md)** - Validates prediction quality
 
 ## Stack
 
 - **Backend**: Node.js + TypeScript
 - **Task Scheduling**: Trigger.dev
-- **ERP**: Odoo (JSON2 API)
+- **ERP**: Odoo 17 (XML-RPC API) + module `moutarderie_suggestion_commande` (`odoo/`)
 - **LLM**: Google Gemini via OpenRouter + Ax framework
 
 ---

@@ -6,7 +6,7 @@
 
 import type { StockReplenishmentResult } from "../features/stock-replenishment/stock-replenishment.types";
 import type { ProposalPreparationResult } from "../features/proposal-preparation/proposal-preparation.types";
-import type { QuoteCreationResult } from "../features/proposal-generation/proposal-generation.types";
+import type { SuggestionActivityOutcome } from "../features/suggestion-activity/suggestion-activity.types";
 
 /**
  * Global workflow statistics aggregated across all processed clients
@@ -39,35 +39,20 @@ export interface GlobalWorkflowStatistics {
   /** Total proposal value across all clients */
   totalValue: number;
 
-  /** Phase 3: Quotes generated in Odoo */
-  quotesGenerated: number;
+  /** Phase 3: "Suggestion commande" activities created in Odoo */
+  activitiesCreated: number;
 
-  /** Number of clients that failed processing */
+  /** Opportunities created to carry an activity */
+  leadsCreated: number;
+
+  /** Test mode: activities that would have been created */
+  wouldCreate: number;
+
+  /** Clients skipped, with a reason (pre-filter, no product, re-check) */
+  clientsSkipped: number;
+
+  /** Clients in error (task failure or Odoo write error) */
   clientsFailed: number;
-}
-
-/**
- * Runtime options for workflow execution
- *
- * All parameters override the default config from auto-proposal.ts.
- * Can be set via Trigger.dev payload.
- */
-export interface WorkflowOptions {
-  /** Inactivity threshold in days */
-  inactivityDays?: number;
-  /** Replenishment threshold in days */
-  replenishmentThreshold?: number;
-  /** Minimum order amount (MOQ) */
-  moqMinimum?: number;
-
-  /** Max number of clients to analyze (for debugging) or "all" */
-  maxClientsToAnalyze?: number | "all";
-  /** Generate markdown reports for all clients with risk */
-  generateReports?: boolean;
-  /** Skip Odoo quote generation (test mode) */
-  skipOdooQuoteGeneration?: boolean;
-  /** Force reanalysis of all inactive clients */
-  forceReanalysis?: boolean;
 }
 
 /**
@@ -86,8 +71,8 @@ export interface WorkflowConfig {
   maxClientsToAnalyze: number | "all";
   /** Generate reports for clients */
   generateReports: boolean;
-  /** Skip Odoo quote generation */
-  skipOdooQuoteGeneration: boolean;
+  /** Test mode: no write in Odoo */
+  skipOdooWrite: boolean;
   /** Force reanalysis of inactive clients */
   forceReanalysis: boolean;
 }
@@ -137,8 +122,14 @@ export interface ClientProposalResult {
     stockAnalysis?: StockReplenishmentResult;
     proposalInitial?: ProposalPreparationResult;
     proposalFinal?: ProposalPreparationResult;
-    quote?: QuoteCreationResult;
   };
+  /**
+   * Outcome of the "Suggestion commande" step (created, would_create, skipped, error).
+   * Always filled by the orchestrator, including for clients skipped before the AI.
+   */
+  outcome?: SuggestionActivityOutcome;
+  /** HTML description of the activity (created or that would have been created) */
+  activityNote?: string;
   /** Number of products with replenishment risk */
   productsCount?: number;
   /** Proposal value before MOQ adjustment */
@@ -149,87 +140,14 @@ export interface ClientProposalResult {
   moqAdjustmentApplied?: boolean;
   /** Amount filled to meet MOQ */
   moqGapFilled?: number;
-  /** Generated quote name in Odoo */
-  quoteName?: string;
-  /** Generated quote ID in Odoo */
-  quoteId?: number;
   /** Path to generated report */
   reportPath?: string;
   /** Full markdown report content */
   reportMarkdown?: string;
-  /** Quote markdown content */
-  quoteMarkdown?: string;
   /** Error message if processing failed */
   error?: string;
   /** Execution time in milliseconds */
   executionTime?: number;
-}
-
-/**
- * Data for generating global workflow report
- */
-export interface GlobalReportData {
-  /** Workflow configuration */
-  config: WorkflowConfig;
-  /** Aggregated statistics */
-  stats: {
-    executionDate: string;
-    totalInactiveClients: number;
-    clientsToProcess: number;
-    clientsWithHistory: number;
-    clientsWithRisk: number;
-    clientsWithoutRisk: number;
-    quotesGenerated: number;
-    quotesFailed: number;
-    totalValue: number;
-    executionTime: number;
-  };
-  /** Client summary rows for report table */
-  clients: ClientTableRow[];
-  /** Processing errors by client */
-  errors: ClientError[];
-}
-
-/**
- * Client row in global report table
- */
-export interface ClientTableRow {
-  /** Client name */
-  clientName: string;
-  /** Client ID */
-  clientId: number;
-  /** Number of products with risk */
-  productsCount: number;
-  /** Risk level classification */
-  riskLevel: "urgent" | "moderate" | "ok";
-  /** Proposal value before MOQ adjustment */
-  initialAmount: number;
-  /** Proposal value after MOQ adjustment */
-  finalAmount: number;
-  /** Whether MOQ adjustment was applied */
-  moqAdjusted: boolean;
-  /** Amount to fill MOQ gap */
-  moqGap?: number;
-  /** Quote name in Odoo */
-  quoteName?: string;
-  /** Processing status */
-  status: "success" | "error";
-  /** Path to client report */
-  reportPath: string;
-}
-
-/**
- * Client processing error in global report
- */
-export interface ClientError {
-  /** Client ID */
-  clientId: number;
-  /** Client name */
-  clientName: string;
-  /** Phase where error occurred */
-  phase: "stock-analysis" | "proposal-preparation" | "quote-generation";
-  /** Error message */
-  error: string;
 }
 
 /**
@@ -253,7 +171,6 @@ export interface ClientReportData {
     stockAnalysis: StockReplenishmentResult;
     proposalInitial: ProposalPreparationResult;
     proposalFinal: ProposalPreparationResult;
-    quote?: QuoteCreationResult;
   };
   /** Summary statistics */
   summary: {
@@ -262,21 +179,5 @@ export interface ClientReportData {
     finalAmount: number;
     moqAdjusted: boolean;
     moqGap?: number;
-    quoteName?: string;
-    quoteId?: number;
-    quoteState?: string;
-  };
-  /** Client's recent order history */
-  orderHistory?: {
-    date: string;
-    orderName: string;
-    productsCount: number;
-    amountHT: number;
-  }[];
-  /** Timing for each processing phase */
-  phaseTiming: {
-    stockAnalysis: number;
-    proposalPreparation: number;
-    quoteGeneration: number;
   };
 }

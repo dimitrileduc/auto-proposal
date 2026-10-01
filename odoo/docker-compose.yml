@@ -1,0 +1,29 @@
+# Odoo 17 local pour développer et tester le module moutarderie_suggestion_commande.
+# Community uniquement : le module ne dépend d'aucun module Enterprise.
+#
+#   docker compose up -d                      # Odoo sur http://localhost:8069
+#   ODOO_HTTP_PORT=8070 docker compose up -d  # si le port 8069 est déjà pris
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  odoo:
+    image: odoo:17.0
+    depends_on:
+      - db
+    ports:
+      - "${ODOO_HTTP_PORT:-8069}:8069"
+    volumes:
+      - ./addons:/mnt/extra-addons
+      - ./config:/etc/odoo
+      - odoo-data:/var/lib/odoo
+
+volumes:
+  db-data:
+  odoo-data:

@@ -2,96 +2,73 @@
 
 ## 🎯 Rôle
 
-Génère des rapports markdown détaillés (global + par client) pour documenter l'exécution complète du workflow auto-proposal.
+Génère des rapports markdown détaillés (global + par client) pour documenter l'exécution complète du workflow auto-proposal : ce qui a été créé dans Odoo (activités « Suggestion commande », opportunités), ce qui a été écarté avec la raison, et les erreurs. Chaque client analysé figure dans une seule catégorie, et le compte rendu indique si le lancement était en mode test ou réel.
 
 ## 📦 Inventaire des Composants
 
 ### Fichier: `global-report.ts`
 
-**Description:** Génère le rapport global agrégé avec statistiques, liste des clients traités et tableau comparatif des montants.
+**Description:** Génère le compte rendu global du lancement, en français (lu par la cliente) : statistiques, mode, listes des activités créées, opportunités créées, clients écartés et erreurs, puis les exemples détaillés et, en dernier, la liste compacte des clients sans produit suggéré.
 
 <details><summary>Voir l'implémentation</summary>
 
 ```typescript
+// Listes du compte rendu, une catégorie par client, à partir de TOUS les résultats
+// (clients écartés par le pré-filtre compris)
+export function buildGlobalReportLists(results: ClientProposalResult[]): GlobalReportLists;
+// → { created, leadsCreated, skipped (hors « aucun produit suggéré »), errors, noProducts }
+
 export function generateGlobalReport(data: GlobalReportData): string {
-  const sections: string[] = [];
-
-  // En-tête avec configs
-  sections.push(title("📊 Rapport Global Auto-Proposal", 1));
-  sections.push(`**📅 Date d'exécution:** ${date.toLocaleDateString("fr-FR")}`);
-  sections.push(`**👥 Clients traités:** ${data.clients.length}`);
-  sections.push(`**⏱️ Durée totale:** ${durationStr}`);
-  sections.push(separator());
-
-  // Statistiques globales
-  sections.push(generateGlobalStatsTable(data));
-  sections.push(separator());
-
-  // Liste des exemples détaillés
-  sections.push(generateDetailedExamplesList(data));
-  sections.push(separator());
-
-  // Tableau de tous les clients avec comparaison phases
-  sections.push(generateAllClientsTable(data));
-
-  return sections.join("\n");
+  // En-tête : date (heure de Paris), clients analysés, durée, MOQ, seuil
+  // Statistiques (sans division par zéro)
+  // **Mode :** TEST (aucune écriture Odoo) | RÉEL
+  // ## Activités créées (N)       | Client | Vendeur | Opportunité | Nouvelle ? | Activité |
+  // ## Opportunités créées (N)    | Client | Opportunité (id) |
+  // ## Clients écartés (N)        | Client | Raison |
+  // ## Erreurs (N)                | Client | Message | Opportunité créée sans activité |
+  // Exemples détaillés + tableau (clients avec au moins un produit suggéré)
+  // ## Aucun produit suggéré (N)  liste simple des noms, sans tableau
 }
 ```
 
+`GlobalReportData` = `executionDate`, `totalExecutionTime`, `clients` (`ClientReportData[]`), `statistics`, `config`, `mode: "test" | "real"`, et les listes de `GlobalReportLists`.
+
 **Contenu du rapport:**
-- **Header:** Date, nb clients, durée, config (MOQ, seuil)
-- **Stats globales:** Clients inactifs, avec historique, avec risque, produits
-- **Liste détaillée:** Liens vers rapports individuels par client
-- **Tableau comparatif:** RAW vs AJUSTÉ vs ODOO pour tous les clients
+- **Header:** Date, nb clients analysés, durée, config (MOQ, seuil)
+- **Statistiques:** Clients inactifs, avec historique, avec produits suggérés, produits, activités créées (ou qui auraient été créées), opportunités créées, clients écartés, erreurs
+- **Mode:** TEST ou RÉEL ; en mode test, les titres deviennent « Activités qui auraient été créées » et « Opportunités qui auraient été créées »
+- **Listes:** activités, opportunités, écartés avec leur raison (liste fermée), erreurs
+- **Exemples détaillés et tableau:** RAW vs AJUSTÉ, limités aux clients passés par l'IA avec au moins un produit suggéré
+- **Aucun produit suggéré:** en dernier, noms séparés par des virgules (c'est la grande majorité des ~1 700 clients)
 
 </details>
 
 ---
 
-### Fichier: `client-report.ts`
+### Fichier: `statistics.ts`
 
-**Description:** Génère le rapport détaillé par client en 3 phases: Stock Analysis (RAW), Pricing+MOQ (ADJUSTED), Devis Odoo (QUOTE).
-
-<details><summary>Voir l'implémentation</summary>
+**Description:** Calcule les statistiques du lancement à partir des résultats clients.
 
 ```typescript
-export function generateClientReport(data: ClientReportData): string {
-  const sections: string[] = [];
+calculateGlobalWorkflowStatistics(allInactiveClients, clientResults): GlobalWorkflowStatistics;
+// activitiesCreated, leadsCreated, wouldCreate, clientsSkipped, clientsFailed
+// + statistiques d'analyse (historique, produits suggérés, montants)
 
-  // En-tête
-  sections.push(title(`📊 Rapport Auto-Proposal - ${data.client.name}`, 1));
-  sections.push(generateMetadataSection(data));
-  sections.push(separator());
-
-  // Phase 1 - Stock Analysis (RAW)
-  sections.push(generatePhase1Section(data));
-  sections.push(separator());
-
-  // Phase 2.5 - Pricing + MOQ (ADJUSTED)
-  sections.push(generatePhase2Section(data));
-  sections.push(separator());
-
-  // Phase 3 - Devis Odoo (si créé)
-  if (data.phases.quote) {
-    sections.push(generatePhase3Section(data));
-    sections.push(separator());
-
-    // Comparaison Phase 2.5 vs Phase 3
-    sections.push(generateComparisonSection(data));
-  }
-
-  return sections.join("\n");
-}
+outcomeOf(result): SuggestionActivityOutcome;
+// l'outcome du client ; un résultat sans outcome est une erreur
 ```
 
-**Structure du rapport:**
-- **Metadata:** Date, client ID, email, durée
-- **Phase 1 (RAW):** Produits à risque, quantités brutes, dropdowns par produit
-- **Phase 2.5 (ADJUSTED):** Pricing + ajustement MOQ, tableau détaillé
-- **Phase 3 (QUOTE):** Devis Odoo créé avec montants réels HT/TTC
-- **Comparaison:** Écart entre prix historiques et prix Odoo réels
+Invariant (testé) : `activitiesCreated + wouldCreate + clientsSkipped + clientsFailed = clientsAnalyzed`. `leadsCreated` ne compte que les activités créées dont l'opportunité a été créée. Les clients écartés avant l'IA ne comptent pas dans `clientsWithoutOrderHistory`.
 
-</details>
+---
+
+### Fichiers: `client-report-json.ts` + `client-report-md.ts`
+
+**Description:** Rapport par client (JSON structuré, puis markdown), écrit par la tâche `client-proposal` : phase 2.5 (pricing + MOQ), **PHASE 3 - ACTIVITÉ**, détails produits, détails techniques.
+
+La phase 3 reprend l'`outcome` du client et son libellé (`describeOutcome`) : opportunité (id, nom, nouvelle ou existante), vendeur, échéance, id de l'activité, et la description de l'activité convertie en markdown simple (`activityNoteToMarkdown`). Les détails techniques indiquent `skipOdooWrite`. Les clients écartés avant l'IA n'ont pas de rapport client : ils figurent dans le compte rendu global.
+
+---
 
 ---
 
@@ -172,112 +149,64 @@ export function badge(
 
 <details><summary>Comment générer un rapport global?</summary>
 
-**Créer les données de rapport**
+**Construire les données à partir des résultats clients** (comme l'orchestrateur)
 
 ```typescript
-import { generateGlobalReport } from './reports/global-report';
+import { buildGlobalReportLists, generateGlobalReport } from './reports/global-report';
 import type { GlobalReportData } from './reports/global-report';
+import { calculateGlobalWorkflowStatistics } from './reports/statistics';
+import { prepareAllClientReportData } from './reports/data-preparation';
 
+// clientResults: ClientProposalResult[] — chaque client avec son outcome,
+// y compris les clients écartés par le pré-filtre (sans phases)
 const reportData: GlobalReportData = {
   executionDate: new Date().toISOString(),
   totalExecutionTime: 125000, // ms
-  clients: [
-    // ClientReportData[] - tous les clients traités
-  ],
-  statistics: {
-    totalInactiveClients: 500,
-    clientsAnalyzed: 10,
-    clientsWithOrderHistory: 450,
-    clientsWithoutRisk: 400,
-    clientsWithRisk: 50,
-    totalProducts: 150,
-  },
+  clients: prepareAllClientReportData(clientResults, workflowConfig),
+  statistics: calculateGlobalWorkflowStatistics(allInactiveClients, clientResults),
   config: {
     replenishmentThreshold: 30,
-    targetCoverageDays: 25,
-    analysisWindowDays: 120,
     moqMinimum: 300,
   },
+  mode: "test", // ou "real"
+  ...buildGlobalReportLists(clientResults),
 };
 
 const markdown = generateGlobalReport(reportData);
 
 // Sauvegarder le rapport
 import fs from 'fs';
-fs.writeFileSync('reports-output/global-report-2025-10-27.md', markdown);
+fs.writeFileSync('reports-output/global-report-2026-10-02.md', markdown);
 ```
 
 </details>
 
 <details><summary>Comment générer un rapport par client?</summary>
 
-**Créer les données client**
+**À partir du résultat de la tâche client**
 
 ```typescript
-import { generateClientReport } from './reports/client-report';
-import type { ClientReportData } from './workflow/workflow.types';
+import { generateClientReportJSON } from './reports/client-report-json';
+import { generateClientReportMarkdown } from './reports/client-report-md';
 
-const clientData: ClientReportData = {
-  executionDate: new Date().toISOString(),
-  executionTime: 5000, // ms
-  client: {
-    id: 81,
-    name: "Restaurant Test",
-    email: "test@example.com"
-  },
-  phases: {
-    stockAnalysis: {
-      client_id: 81,
-      products: [
-        // ProductStockStatus[] - produits à risque
-      ],
-      total_products_in_history: 50,
-    },
-    proposalFinal: {
-      client_id: 81,
-      products: [
-        // ProductWithCurrentPrice[] - avec prix + MOQ
-      ],
-      total_amount: 350.00,
-      moq_adjustment_applied: true,
-      adjustment_details: {
-        original_total: 250.00,
-        minimum_required: 300.00,
-        gap_filled: 100.00,
-        products_adjusted: 3,
-      },
-    },
-    quote: {
-      quote_id: 91234,
-      quote_name: "S39812",
-      quote_state: "draft",
-      amount_total_ht: 355.50,
-      tax_total: 35.55,
-      amount_total_ttc: 391.05,
-      order_lines: [
-        // OrderLine[] - lignes du devis Odoo
-      ],
-      created_at: new Date().toISOString(),
-    },
-  },
-  summary: {
-    productsCount: 5,
-    initialAmount: 250.00,
-    finalAmount: 350.00,
-    moqAdjusted: true,
-    moqGap: 100.00,
-  },
-  config: {
-    replenishmentThreshold: 30,
-    targetCoverageDays: 25,
-    moqMinimum: 300,
-  },
-};
+// result: ClientProposalResult avec phases.stockAnalysis, phases.proposalFinal,
+// outcome (created | would_create | skipped | error) et activityNote (HTML)
+const json = generateClientReportJSON(result, {
+  analysisEndDate: "2026-10-02 00:00:00",
+  replenishmentThreshold: 30,
+  moqMinimum: 300,
+  skipOdooWrite: true,
+});
 
-const markdown = generateClientReport(clientData);
+const markdown = generateClientReportMarkdown(json);
+// → ... ## PHASE 3 - ACTIVITÉ
+//       **Résultat :** activité créée
+//       **Opportunité :** Opportunité mars (ID 55) — existante
+//       **Vendeur :** Marie
+//       **Échéance :** 02/10/2026
+//       **Description :** Dernière commande : 16/08/2026 ...
 
-// Sauvegarder
-fs.writeFileSync(`reports-output/client-${clientData.client.id}-${clientData.client.name}.md`, markdown);
+fs.writeFileSync(`reports-output/client-${result.clientId}-${result.clientName}.md`, markdown);
 ```
 
 </details>
@@ -312,31 +241,11 @@ export function formatConfidence(confidence: 'low' | 'medium' | 'high'): string 
 **Modifier la structure du rapport client**
 
 ```typescript
-// backend/src/reports/client-report.ts
-
-// Ajouter une nouvelle section
-function generatePhase4Section(data: ClientReportData): string {
-  const sections: string[] = [];
-
-  sections.push(title("📧 PHASE 4 - EMAIL ENVOYÉ", 2));
-  sections.push("");
-
-  // Votre logique ici
-
-  return sections.join("\n");
-}
-
-// L'ajouter au rapport principal
-export function generateClientReport(data: ClientReportData): string {
-  // ... sections existantes ...
-
-  if (data.phases.email) {
-    sections.push(generatePhase4Section(data));
-    sections.push(separator());
-  }
-
-  return sections.join("\n");
-}
+// backend/src/reports/client-report-md.ts : generateClientReportMarkdown(data: ClientReportJSON)
+// Ajouter une section = pousser des lignes markdown dans `sections` à l'endroit voulu,
+// à partir des données de `ClientReportJSON` (client-report-json.ts).
+sections.push(`## PHASE 4 - ...`);
+sections.push("");
 ```
 
 </details>
@@ -463,25 +372,27 @@ export default router;
 - Sauvegarde dans `reports-output/`
 - Nom de fichier: `global-report-YYYY-MM-DD.md`, `client-{id}-{name}.md`
 
-**Sections du rapport global:**
-- Header: Date, nb clients, durée, config
-- Stats globales: Tableau avec métriques
-- Liste détaillée: Liens vers rapports clients
-- Tableau comparatif: RAW vs AJUSTÉ vs ODOO
+**Sections du rapport global (français):**
+- Header: Date, nb clients analysés, durée, config
+- Statistiques: Tableau avec métriques (activités, opportunités, écartés, erreurs)
+- Mode: TEST (aucune écriture Odoo) ou RÉEL
+- Activités créées, Opportunités créées, Clients écartés (avec raison), Erreurs
+- Exemples détaillés et tableau RAW vs AJUSTÉ (clients avec produits suggérés)
+- Aucun produit suggéré: liste compacte, en dernier
 
-**Sections du rapport client:**
-- Metadata: Date, client, durée
-- Phase 1 (RAW): Produits à risque avec dropdowns détaillés
-- Phase 2.5 (ADJUSTED): Pricing + MOQ avec tableau
-- Phase 3 (QUOTE): Devis Odoo avec montants HT/TTC
-- Comparaison: Écart prix historiques vs Odoo
+**Sections du rapport client (`client-report-md.ts`):**
+- Summary: produits habituels / optionnels, montants
+- Phase 2.5 (PRICING + MOQ): tableau détaillé
+- Phase 3 (ACTIVITÉ): résultat, opportunité, vendeur, échéance, description
+- Détails produits (dropdowns LLM, historique)
+- Détails techniques: config, `skipOdooWrite`, phases, usage LLM
 
 </details>
 
 <details><summary>Dépendances externes</summary>
 
 **Formats de données:**
-- Types: `GlobalReportData`, `ClientReportData`, `ClientWorkflowStatistics`
+- Types: `GlobalReportData` / `GlobalReportLists` (`global-report.ts`), `ClientProposalResult`, `ClientReportData`, `GlobalWorkflowStatistics` (`types.ts`), `SuggestionActivityOutcome` (`features/suggestion-activity/`)
 - Source: Workflow complet (orchestrator + client tasks)
 
 **Formatters markdown:**
@@ -536,9 +447,10 @@ export default router;
 ## 🔗 Références
 
 ### Modules liés
-- **Workflow:** [Client Proposal Task](../../trigger/README.md) - Génère les données de rapport
-- **Types:** `workflow/workflow.types.ts` - Définitions TypeScript
-- **Configuration:** [Config](../../config/README.md) - Paramètres système
+- **Workflow:** [Trigger tasks](../trigger/README.md) - Génèrent les données de rapport
+- **Activité:** [Suggestion Activity](../features/suggestion-activity/README.md) - `outcome`, libellés, description
+- **Types:** `reports/types.ts` - Définitions TypeScript
+- **Configuration:** [Config](../config/README.md) - Paramètres système
 
 ### Documentation markdown
 - [GitHub Flavored Markdown](https://github.github.com/gfm/) - Spécification GFM

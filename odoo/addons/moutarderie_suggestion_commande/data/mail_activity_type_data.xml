@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Activité créée par le backend auto-proposal sur l'opportunité d'un client inactif -->
+        <record id="mail_activity_type_suggestion_commande" model="mail.activity.type">
+            <field name="name">Suggestion commande</field>
+            <field name="res_model">crm.lead</field>
+            <field name="keep_done" eval="True"/>
+            <field name="category">default</field>
+            <field name="chaining_type">suggest</field>
+            <field name="delay_count">0</field>
+            <field name="icon">fa-shopping-cart</field>
+            <field name="sequence">100</field>
+        </record>
+    </data>
+</odoo>

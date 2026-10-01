@@ -2,15 +2,17 @@
  * Generates JSON business report structure for client proposals
  *
  * Report Structure (2 parts):
- * 1. Raw Phases: stockAnalysis, proposalFinal, quote for technical traceability
+ * 1. Raw Phases: stockAnalysis, proposalFinal, activity for technical traceability
  * 2. Business View: products separated into base/optional for PO processing
  *
  * @module reports/client-report-json
  */
 
 import type { ClientProposalResult } from "./types";
+import type { SuggestionActivityOutcome } from "../features/suggestion-activity/suggestion-activity.types";
+import { describeOutcome } from "../features/suggestion-activity/outcome.utils";
+import { activityNoteToMarkdown, isOptionalProduct } from "../features/suggestion-activity/activity-note.utils";
 import type { ProductStockStatus } from "../features/stock-replenishment/stock-replenishment.types";
-import type { ProposalProduct } from "../features/proposal-preparation/proposal-preparation.types";
 
 /**
  * Enriched product data with complete business information
@@ -101,8 +103,8 @@ export interface ClientReportJSON {
     replenishmentThreshold: number;
     /** Minimum order quantity threshold in currency */
     moqMinimum: number;
-    /** Whether Odoo quote generation was skipped */
-    skipOdooQuoteGeneration: boolean;
+    /** Test mode: no write in Odoo */
+    skipOdooWrite: boolean;
   };
 
   /** Raw processing phases for technical traceability */
@@ -135,60 +137,22 @@ export interface ClientReportJSON {
         gap_filled: number;
       };
     };
-    /** Odoo quote generation results (if successful) */
-    quote?: {
-      /** Odoo quote ID */
-      quote_id: number;
-      /** Odoo quote display name */
-      quote_name: string;
-      /** Quote state in Odoo */
-      quote_state: string;
-      /** Total amount excl. tax */
-      amount_total_ht: number;
-      /** Total amount incl. tax */
-      amount_total_ttc: number;
-      /** Tax amount */
-      tax_total: number;
-      /** Quote creation timestamp (ISO 8601) */
-      created_at: string;
-      /** Count of order lines */
-      lines_count: number;
-      /** Count of optional products */
-      optional_products_count: number;
-      /** Quote line items */
-      order_lines: Array<{
-        /** Product ID */
-        product_id: number;
-        /** Product name */
-        product_name: string;
-        /** Ordered quantity */
-        quantity: number;
-        /** Unit price */
-        price_unit: number;
-        /** Line subtotal excl. tax */
-        subtotal_ht: number;
-      }>;
-      /** Optional product items */
-      optional_products: Array<{
-        /** Product ID */
-        product_id: number;
-        /** Product name */
-        product_name: string;
-        /** Quantity */
-        quantity: number;
-        /** Unit price */
-        price_unit: number;
-        /** Line subtotal excl. tax */
-        subtotal_ht: number;
-      }>;
+    /** "Suggestion commande" step (phase 3) */
+    activity?: {
+      /** created, would_create, skipped or error, with its details */
+      outcome: SuggestionActivityOutcome;
+      /** French label of the outcome */
+      label: string;
+      /** Activity description, as simple markdown */
+      description?: string;
     };
   };
 
   /** Business-organized product view */
   products: {
-    /** Core products (medium/high confidence) for main quote lines */
+    /** Core products (medium/high confidence) */
     base: BusinessProduct[];
-    /** Optional products (low confidence) for sale.order.option */
+    /** Optional products (low confidence) */
     optional: BusinessProduct[];
   };
 
@@ -208,10 +172,6 @@ export interface ClientReportJSON {
     moq_adjusted: boolean;
     /** Amount added to meet MOQ (if applied) */
     moq_gap?: number;
-    /** Generated quote name (if created) */
-    quote_name?: string;
-    /** Generated quote ID (if created) */
-    quote_id?: number;
   };
 
   /** Total execution time in milliseconds */
@@ -236,14 +196,13 @@ export function generateClientReportJSON(
     analysisEndDate?: string;
     replenishmentThreshold: number;
     moqMinimum: number;
-    skipOdooQuoteGeneration: boolean;
+    skipOdooWrite: boolean;
   }
 ): ClientReportJSON {
   const now = new Date().toISOString();
 
   const stockAnalysis = result.phases.stockAnalysis!;
   const proposalFinal = result.phases.proposalFinal!;
-  const quote = result.phases.quote;
 
   const stockProductsMap = new Map(
     stockAnalysis.products.map((p) => [p.product_id, p])
@@ -288,8 +247,8 @@ export function generateClientReportJSON(
     };
   });
 
-  const baseProducts = businessProducts.filter((p) => p.confidence !== "low");
-  const optionalProducts = businessProducts.filter((p) => p.confidence === "low");
+  const baseProducts = businessProducts.filter((p) => !isOptionalProduct(p.confidence));
+  const optionalProducts = businessProducts.filter((p) => isOptionalProduct(p.confidence));
 
   const baseAmount = baseProducts.reduce((sum, p) => sum + p.subtotal, 0);
   const optionalAmount = optionalProducts.reduce((sum, p) => sum + p.subtotal, 0);
@@ -307,7 +266,7 @@ export function generateClientReportJSON(
       analysisEndDate: config.analysisEndDate || "unknown",
       replenishmentThreshold: config.replenishmentThreshold,
       moqMinimum: config.moqMinimum,
-      skipOdooQuoteGeneration: config.skipOdooQuoteGeneration,
+      skipOdooWrite: config.skipOdooWrite,
     },
     phases: {
       stockAnalysis: {
@@ -320,31 +279,11 @@ export function generateClientReportJSON(
         moq_adjustment_applied: proposalFinal.moq_adjustment_applied,
         adjustment_details: proposalFinal.adjustment_details,
       },
-      quote: quote
+      activity: result.outcome
         ? {
-            quote_id: quote.quote_id,
-            quote_name: quote.quote_name,
-            quote_state: quote.state,
-            amount_total_ht: quote.amount_total_ht,
-            amount_total_ttc: quote.amount_total_ttc,
-            tax_total: quote.tax_total,
-            created_at: quote.created_at,
-            lines_count: quote.lines_count,
-            optional_products_count: quote.optional_products_count,
-            order_lines: quote.order_lines.map((line) => ({
-              product_id: line.product_id,
-              product_name: line.product_name,
-              quantity: line.quantity_ordered,
-              price_unit: line.price_unit,
-              subtotal_ht: line.subtotal_ht,
-            })),
-            optional_products: quote.optional_products.map((opt) => ({
-              product_id: opt.product_id,
-              product_name: opt.product_name,
-              quantity: opt.quantity_ordered,
-              price_unit: opt.price_unit,
-              subtotal_ht: opt.subtotal_ht,
-            })),
+            outcome: result.outcome,
+            label: describeOutcome(result.outcome),
+            description: result.activityNote ? activityNoteToMarkdown(result.activityNote) : undefined,
           }
         : undefined,
     },
@@ -360,8 +299,6 @@ export function generateClientReportJSON(
       total_amount: proposalFinal.total_amount,
       moq_adjusted: proposalFinal.moq_adjustment_applied,
       moq_gap: proposalFinal.adjustment_details?.gap_filled,
-      quote_name: quote?.quote_name,
-      quote_id: quote?.quote_id,
     },
     execution_time_ms: result.executionTime || 0,
   };

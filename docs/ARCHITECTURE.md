@@ -18,7 +18,7 @@ graph TB
     HTTP["API HTTP<br/>(Hono)"]
     HTTP -->|triggers| Tasks["Trigger.dev Tasks"]
     Tasks -->|calls| Features["Features Services"]
-    Features -->|reads/writes| Odoo["Odoo ERP<br/>(XML-RPC)"]
+    Features -->|reads, creates activities| Odoo["Odoo ERP<br/>(XML-RPC)"]
     Features -->|generates| LLM["Google Gemini 3<br/>(OpenRouter)"]
     Features -->|optimizes| Ax["Ax Framework<br/>(Prompt tuning)"]
     Tasks -->|generates| Reports["Reports & Output"]
@@ -35,9 +35,10 @@ backend/src/
 │   ├── client-inactivity/
 │   ├── stock-replenishment/
 │   ├── proposal-preparation/
-│   ├── proposal-generation/
+│   ├── suggestion-activity/      # activité « Suggestion commande » (remplace les devis)
 │   └── backtesting/
-├── trigger/                      # 4 Trigger.dev tasks
+├── trigger/                      # Trigger.dev tasks
+│   ├── orchestrator-scheduled.task.ts  # vendredi 7 h, seul lancement qui écrit
 │   ├── orchestrator.task.ts
 │   ├── client-proposal.task.ts
 │   ├── backtest-client.task.ts
@@ -47,6 +48,8 @@ backend/src/
 ├── reports/                      # Report generators
 ├── optimization/                 # LLM prompt optimization (Ax)
 └── utils/
+
+odoo/                             # Odoo 17 local (Docker) + module moutarderie_suggestion_commande
 ```
 
 ## Patterns
@@ -101,11 +104,12 @@ Voir [`backend/src/config/auto-proposal.ts`](../backend/src/config/auto-proposal
 ## Variables d'environnement
 
 ```bash
-# Odoo
+# Odoo (compte « Suggestions automatiques » + clé API)
 ODOO_URL=https://...
 ODOO_DB=...
-ODOO_USERNAME=...
+ODOO_USERNAME=suggestions.auto
 ODOO_PASSWORD=...
+ODOO_SUGGESTION_ACTIVITY_TYPE_ID=...   # local / staging
 
 # Trigger.dev
 TRIGGER_API_KEY=...

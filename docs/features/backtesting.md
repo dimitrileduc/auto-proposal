@@ -1,6 +1,6 @@
 # Backtesting
 
-Valide la qualité des prédictions en comparant devis générés vs commandes réelles.
+Valide la qualité des prédictions en comparant les produits suggérés aux commandes réelles.
 
 ## Objectif
 
@@ -236,7 +236,7 @@ Utilisé par:
 - **[Client Proposal task](../tasks/client-proposal.md)** - Optionnel reporting
 
 Voir aussi:
-- **[Proposal Generation](./proposal-generation.md)** - Crée les devis
+- **[Suggestion Activity](./suggestion-activity.md)** - Activité créée à partir des suggestions (désactivée en backtest : `eligibilityCheck: false`, `skipOdooWrite: true`)
 - **[Backtesting tasks](../tasks/)** - Exécution
 
 ---

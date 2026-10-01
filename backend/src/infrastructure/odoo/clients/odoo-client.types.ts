@@ -40,12 +40,110 @@ export interface OrderHistory {
 }
 
 /**
- * Partner information with company details
+ * mail.activity.type as read at run start (V1)
  */
-export interface PartnerCompanyInfo {
+export interface ActivityTypeInfo {
+  id: number;
   name: string;
-  company_id: [number, string];
-  user_id: [number, string] | false;
+  /** Model the type is restricted to (false = any model) */
+  resModel: string | false;
+  active: boolean;
+}
+
+/**
+ * Salesperson of a client (res.partner.user_id → res.users), read by id so archived users are returned
+ */
+export interface SalespersonInfo {
+  id: number;
+  name: string;
+  /** false when the user is archived */
+  active: boolean;
+  /** res.users.sale_team_id */
+  teamId?: number;
+  /** res.users.company_ids: companies the salesperson can open records of */
+  companyIds: number[];
+}
+
+/**
+ * Salesperson and team of a client (res.partner + res.users)
+ */
+export interface PartnerSalesContext {
+  id: number;
+  name: string;
+  /** Commercial partner (the company itself for a company partner) */
+  commercialPartnerId: number;
+  isCompany: boolean;
+  /** res.partner.team_id */
+  partnerTeamId?: number;
+  /** res.partner.user_id */
+  salesperson?: SalespersonInfo;
+}
+
+/**
+ * Opportunity (crm.lead) carrying the activity
+ */
+export interface LeadSummary {
+  id: number;
+  name: string;
+  /** Odoo datetime "YYYY-MM-DD HH:MM:SS" (UTC) */
+  createDate?: string;
+  userId?: number;
+  teamId?: number;
+}
+
+/**
+ * Open "Suggestion commande" activity (P4 / Q3)
+ */
+export interface OpenSuggestionActivity {
+  id: number;
+  /** Opportunity carrying the activity */
+  leadId: number;
+  userId?: number;
+  /** "YYYY-MM-DD" */
+  dateDeadline?: string;
+  summary?: string;
+}
+
+/**
+ * Follow-up trace: mail.message carrying the activity type (P5 / Q4)
+ */
+export interface SuggestionTrace {
+  /** mail.message id */
+  id: number;
+  /** Opportunity the message is posted on */
+  leadId: number;
+  /** Odoo datetime "YYYY-MM-DD HH:MM:SS" (UTC) */
+  date: string;
+}
+
+/**
+ * Values of the opportunity created when the client has none open (Q8)
+ */
+export interface LeadCreateValues {
+  name: string;
+  type: "opportunity";
+  partner_id: number;
+  user_id: number;
+  team_id: number | false;
+  company_id: number;
+}
+
+/**
+ * Values of the "Suggestion commande" activity on an opportunity (Q9)
+ *
+ * res_model_id is not sent: the dedicated account cannot read ir.model, Odoo fills it
+ * from the context default_res_model = "crm.lead".
+ */
+export interface ActivityCreateValues {
+  /** Opportunity id */
+  res_id: number;
+  activity_type_id: number;
+  summary: string;
+  /** HTML description */
+  note: string;
+  /** "YYYY-MM-DD" */
+  date_deadline: string;
+  user_id: number;
 }
 
 /**
@@ -99,21 +197,6 @@ export interface OdooSaleOrderLine {
 }
 
 /**
- * Result of quote email sending operation
- */
-export interface EmailSendResult {
-  success: boolean;
-  template_id: number;
-  email_sent_to: string[];
-  /** Emails blocked (real client in test mode) */
-  email_blocked_for: string[];
-  quote_id: number;
-  quote_name: string;
-  mode: 'test' | 'production';
-  error?: string;
-}
-
-/**
  * Odoo client interface
  *
  * Implemented by XML-RPC and JSON-2 clients.
@@ -156,59 +239,121 @@ export interface OdooClient {
   ): Promise<OrderHistory>;
 
   /**
-   * Fetches partner info with company details (required for multi-company)
+   * Reads an activity type by id (run-start check V1)
    *
-   * @param partnerId - Partner ID
-   * @returns Partner information including company
+   * @param typeId - mail.activity.type id
+   * @returns The type, or null if it does not exist
    */
-  getPartnerCompanyInfo(partnerId: number): Promise<PartnerCompanyInfo>;
+  getActivityType(typeId: number): Promise<ActivityTypeInfo | null>;
 
   /**
-   * Creates a sale order (quote)
+   * Reads the salesperson and team of a client (Q1 + Q1b)
    *
-   * @param data - Sale order creation data
-   * @returns Created order ID
+   * The salesperson is read by id, so an archived user is returned with active = false.
+   *
+   * @param partnerId - Client id
+   * @returns Sales context of the client
+   * @throws Error if the partner does not exist
    */
-  createSaleOrder(data: {
-    partner_id: number;
-    company_id: number;
-    tag_ids?: any[];
-    note?: string;
-    user_id?: number;
-  }): Promise<number>;
+  getPartnerSalesContext(partnerId: number): Promise<PartnerSalesContext>;
 
   /**
-   * Creates a sale order line
+   * Reads the salesperson and team of many clients in 2 calls (P1 + P2)
    *
-   * @param data - Order line creation data
-   * @returns Created line ID
+   * @param partnerIds - Client ids
+   * @returns Sales context by client id (missing partners are absent)
    */
-  createSaleOrderLine(data: {
-    order_id: number;
-    product_id: number;
-    product_uom_qty: number;
-    price_unit: number;
-    /** Custom description (optional) */
-    name?: string;
-  }): Promise<number>;
+  getSalesContexts(partnerIds: number[]): Promise<Map<number, PartnerSalesContext>>;
 
   /**
-   * Creates a sale order option (optional product)
+   * Finds the oldest open opportunity of a client and its contacts (Q5)
    *
-   * Client can add it to their order by clicking the cart button.
-   *
-   * @param data - Order option creation data
-   * @returns Created option ID
+   * @param commercialPartnerId - Commercial partner of the client
+   * @param companyId - Analysed company
+   * @returns The opportunity, or null if the client has none open
    */
-  createSaleOrderOption(data: {
-    order_id: number;
-    product_id: number;
-    quantity: number;
-    uom_id: number;
-    price_unit: number;
-    /** Custom description (optional) */
-    name?: string;
-  }): Promise<number>;
+  findOldestOpenLead(commercialPartnerId: number, companyId: number): Promise<LeadSummary | null>;
+
+  /**
+   * Returns all opportunity ids of a client and its contacts, archived included (Q2)
+   *
+   * @param commercialPartnerId - Commercial partner of the client
+   * @param companyId - Analysed company
+   */
+  getPartnerLeadIds(commercialPartnerId: number, companyId: number): Promise<number[]>;
+
+  /**
+   * Finds an open "Suggestion commande" activity on these opportunities (Q3)
+   *
+   * @returns The activity with the earliest deadline, or null (no call if leadIds is empty)
+   */
+  findOpenSuggestionActivity(leadIds: number[], typeId: number): Promise<OpenSuggestionActivity | null>;
+
+  /**
+   * Finds the most recent follow-up trace on these opportunities since a date (Q4)
+   *
+   * @param since - Window start "YYYY-MM-DD HH:MM:SS"
+   * @returns The most recent trace, or null (no call if leadIds is empty)
+   */
+  findLastSuggestionTrace(leadIds: number[], typeId: number, since: string): Promise<SuggestionTrace | null>;
+
+  /**
+   * Returns the opportunities of many clients, archived included, in 2 calls (P3 + P3b)
+   *
+   * An opportunity carried by a contact is attached to its company.
+   *
+   * @param commercialPartnerIds - Commercial partners of the clients
+   * @param companyId - Analysed company
+   * @returns Opportunity ids by commercial partner id
+   */
+  getLeadIdsByCommercialPartners(commercialPartnerIds: number[], companyId: number): Promise<Map<number, number[]>>;
+
+  /**
+   * Returns the open "Suggestion commande" activities of many opportunities (P4)
+   *
+   * @returns Activities (empty, no call, if leadIds is empty)
+   */
+  findOpenSuggestionActivities(leadIds: number[], typeId: number): Promise<OpenSuggestionActivity[]>;
+
+  /**
+   * Returns the follow-up traces of many opportunities since a date (P5)
+   *
+   * @returns Traces (empty, no call, if leadIds is empty)
+   */
+  findSuggestionTracesSince(leadIds: number[], typeId: number, since: string): Promise<SuggestionTrace[]>;
+
+  /**
+   * Returns the date of the last confirmed order of a client (Q6)
+   *
+   * @param partnerId - Client id
+   * @param companyId - Analysed company
+   * @returns Paris calendar day "YYYY-MM-DD", or null if the client has no confirmed order
+   */
+  findLastConfirmedOrderDate(partnerId: number, companyId: number): Promise<string | null>;
+
+  /**
+   * Returns the company of sales teams (read by id)
+   *
+   * Used before creating an opportunity: a team of another company would be refused by Odoo.
+   *
+   * @param teamIds - crm.team ids
+   * @returns Company id by team id, false for a team without company (missing teams are absent)
+   */
+  getTeamCompanies(teamIds: number[]): Promise<Map<number, number | false>>;
+
+  /**
+   * Creates an opportunity (Q8)
+   *
+   * @returns Created opportunity id
+   */
+  createLead(values: LeadCreateValues): Promise<number>;
+
+  /**
+   * Creates an activity on an opportunity (Q9)
+   *
+   * @returns Created activity id
+   */
+  createActivity(values: ActivityCreateValues): Promise<number>;
 
   /**
    * Fetches complete quote details with lines and taxes
@@ -220,27 +365,6 @@ export interface OdooClient {
     order: OdooSaleOrder;
     lines: OdooSaleOrderLine[];
   }>;
-
-  /**
-   * Sends a quote by email (TEST or PRODUCTION mode)
-   *
-   * In TEST mode: email only to testEmail (client blocked).
-   * In PRODUCTION mode: email to client + CC to testEmail.
-   *
-   * @param quoteId - Quote ID
-   * @param quoteName - Quote reference, e.g., "S39712"
-   * @param clientEmail - Client email (for logs/blocking)
-   * @param testMode - If true, blocks sending to client
-   * @param testEmail - Test/monitoring email
-   * @returns Email sending result
-   */
-  sendQuoteByEmail(
-    quoteId: number,
-    quoteName: string,
-    clientEmail: string,
-    testMode: boolean,
-    testEmail: string
-  ): Promise<EmailSendResult>;
 
   /**
    * Fetches the last validated order for a client (for backtesting)

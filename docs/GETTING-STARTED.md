@@ -23,11 +23,14 @@ cp .env.example .env  # (si existe)
 # Edit .env with your credentials:
 # ODOO_URL=...
 # ODOO_DB=...
-# ODOO_USERNAME=...
-# ODOO_PASSWORD=...
+# ODOO_USERNAME=suggestions.auto          # compte « Suggestions automatiques »
+# ODOO_PASSWORD=...                       # sa clé API (une par base)
+# ODOO_SUGGESTION_ACTIVITY_TYPE_ID=...    # id du type « Suggestion commande » (local, staging)
 # OPENROUTER_API_KEY=sk-or-v1-your-key-here
 # TRIGGER_API_KEY=...
 ```
+
+Pour travailler sans toucher la prod, utiliser l'Odoo 17 local de `odoo/` (Docker + jeu de données) : voir [Odoo Integration](./infrastructure/odoo.md#odoo-local-docker).
 
 ## Démarrage en développement
 
@@ -51,7 +54,7 @@ curl http://localhost:3000/health
 
 Trigger le task principal (orchestrator):
 ```bash
-curl -X POST http://localhost:3000/routes/orchestrator-task \
+curl -X POST http://localhost:3000/orchestrator-task \
   -H "Content-Type: application/json" \
   -d '{
     "config": {
@@ -69,7 +72,7 @@ Response:
   "statistics": {
     "totalInactiveClients": 42,
     "clientsProcessed": 5,
-    "quotesGenerated": 3,
+    "wouldCreate": 3,
     ...
   }
 }

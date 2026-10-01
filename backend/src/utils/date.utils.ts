@@ -101,3 +101,54 @@ export function calculateDateBefore(referenceDate: string, daysBefore: number): 
   return date.toISOString().split('T')[0] + ' 00:00:00'
 }
 
+
+/**
+ * Run day "YYYY-MM-DD" in Europe/Paris time
+ *
+ * Activity deadline and base of the delay between two follow-ups.
+ *
+ * @param now Reference instant (default: now)
+ * @returns Calendar day in Paris (e.g. "2026-10-02")
+ *
+ * @example
+ * ```typescript
+ * getRunDateParis(new Date("2026-10-01T22:30:00Z")) // "2026-10-02"
+ * ```
+ */
+export function getRunDateParis(now: Date = new Date()): string {
+  return PARIS_DAY_FORMAT.format(now)
+}
+
+/** "YYYY-MM-DD" in Europe/Paris (en-CA gives the year-month-day order) */
+const PARIS_DAY_FORMAT = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Europe/Paris",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+})
+
+/**
+ * Formats the date part of an Odoo date as DD/MM/YYYY, without timezone conversion
+ *
+ * @param date "YYYY-MM-DD" or "YYYY-MM-DD HH:MM:SS"
+ * @returns French date (e.g. "02/10/2026")
+ */
+export function formatDateFr(date: string): string {
+  const [year, month, day] = date.slice(0, 10).split("-")
+  return `${day}/${month}/${year}`
+}
+
+/**
+ * Converts an Odoo date to the Paris calendar day
+ *
+ * Odoo datetimes ("YYYY-MM-DD HH:MM:SS") are UTC; a plain date is returned as is.
+ *
+ * @param value "YYYY-MM-DD" or Odoo UTC datetime "YYYY-MM-DD HH:MM:SS"
+ * @returns Paris day "YYYY-MM-DD"
+ */
+export function odooDatetimeToParisDate(value: string): string {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    return value
+  }
+  return getRunDateParis(new Date(`${value.replace(" ", "T")}Z`))
+}

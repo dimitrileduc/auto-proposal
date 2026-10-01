@@ -36,7 +36,7 @@ test.get('/clients/inactive', async (c) => {
     }
 
     const excludeTagId = excludeAutoProposal
-      ? autoProposalConfig.quoteGeneration.autoProposalTagId
+      ? autoProposalConfig.inactivityDetection.autoProposalOrderTagId
       : undefined
 
     const inactiveClients = await getInactiveClients(days, excludeTagId)

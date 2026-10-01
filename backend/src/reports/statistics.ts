@@ -9,6 +9,7 @@
 
 import type { ClientProposalResult, GlobalWorkflowStatistics } from "./types";
 import type { InactiveClient } from "../features/client-inactivity/inactivity.types";
+import type { SuggestionActivityOutcome } from "../features/suggestion-activity/suggestion-activity.types";
 
 /**
  * Calculates aggregated global workflow statistics
@@ -17,7 +18,7 @@ import type { InactiveClient } from "../features/client-inactivity/inactivity.ty
  * - Phase 0: Total inactive clients identified
  * - Phase 1: Clients analyzed with order history
  * - Phase 2: Clients with stock replenishment risk
- * - Phase 3: Successful quote generation
+ * - Phase 3: "Suggestion commande" outcomes (created, would create, skipped, failed)
  *
  * @param allInactiveClients - All inactive clients identified in Phase 0
  * @param clientResults - Workflow processing results for each client
@@ -32,17 +33,14 @@ export function calculateGlobalWorkflowStatistics(
   const clientsAnalyzed = clientResults.length;
 
   const clientsWithRisk = clientResults.filter(r => r.success && r.hasRisk);
-  const clientsFailed = clientResults.filter(r => !r.success);
 
-  const clientsWithOrderHistory = clientResults.filter(
-    r => r.success && r.phases.stockAnalysis && r.phases.stockAnalysis.total_products_in_history > 0
-  ).length;
+  // Only clients that went through the stock analysis: the ones skipped before the AI have no history read
+  const analysed = clientResults.filter(r => r.success && r.phases.stockAnalysis);
+  const withHistory = analysed.filter(r => r.phases.stockAnalysis!.total_products_in_history > 0);
 
-  const clientsWithoutRisk = clientResults.filter(
-    r => r.success && r.phases.stockAnalysis && r.phases.stockAnalysis.total_products_in_history > 0 && !r.hasRisk
-  ).length;
-
-  const clientsWithoutOrderHistory = clientsAnalyzed - clientsWithOrderHistory - clientsFailed.length;
+  const clientsWithOrderHistory = withHistory.length;
+  const clientsWithoutRisk = withHistory.filter(r => !r.hasRisk).length;
+  const clientsWithoutOrderHistory = analysed.length - withHistory.length;
 
   const percentWithHistory = totalInactiveClients > 0
     ? (clientsWithOrderHistory / totalInactiveClients) * 100
@@ -59,7 +57,13 @@ export function calculateGlobalWorkflowStatistics(
     ? totalProducts / clientsWithRisk.length
     : 0;
 
-  const quotesGenerated = clientResults.filter(r => r.quoteName).length;
+  // One category per client (FR-017): created, would_create, skipped or error
+  const outcomes = clientResults.map(outcomeOf);
+  const activitiesCreated = outcomes.filter(o => o.kind === "created").length;
+  const leadsCreated = outcomes.filter(o => o.kind === "created" && o.leadCreated).length;
+  const wouldCreate = outcomes.filter(o => o.kind === "would_create").length;
+  const clientsSkipped = outcomes.filter(o => o.kind === "skipped").length;
+  const clientsFailed = outcomes.filter(o => o.kind === "error").length;
 
   return {
     totalInactiveClients,
@@ -73,7 +77,20 @@ export function calculateGlobalWorkflowStatistics(
     totalProducts,
     averageProductsPerClient,
     totalValue,
-    quotesGenerated,
-    clientsFailed: clientsFailed.length,
+    activitiesCreated,
+    leadsCreated,
+    wouldCreate,
+    clientsSkipped,
+    clientsFailed,
   };
+}
+
+/**
+ * Outcome of a client result; a result without outcome is an error
+ *
+ * @param result - Client result
+ * @returns Its "Suggestion commande" outcome
+ */
+export function outcomeOf(result: ClientProposalResult): SuggestionActivityOutcome {
+  return result.outcome ?? { kind: "error", message: result.error ?? "No outcome" };
 }
